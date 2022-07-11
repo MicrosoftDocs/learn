@@ -1,6 +1,6 @@
 Visual Studio Code enables you to create a console application by using the integrated terminal and a few short commands.
 
-In this unit, you will create a basic console app using the integrated terminal, retrieve your Azure Cosmos DB connection string from the extension, and then configure the connection from your application to Azure Cosmos DB.
+In this unit, you'll create a basic console app using the integrated terminal, retrieve your Azure Cosmos DB connection string from the extension, and then configure the connection from your application to Azure Cosmos DB.
 
 ## Create a console app
 
@@ -8,9 +8,9 @@ In this unit, you will create a basic console app using the integrated terminal,
 
 1. Create a new folder named `learning-module` in the location of your choice, and then select **Select Folder**.
 
-1. Ensure that file auto-save is enabled by selecting the **File** menu, and checking **Auto Save** if it is blank. You will be copying in several blocks of code, and this will ensure you are always operating against the latest edits of your files.
+1. Ensure that file auto-save is enabled by selecting the **File** menu, and checking **Auto Save** if it's blank. You'll be copying in several blocks of code, and this will ensure you're always operating against the latest edits of your files.
 
-1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu. Make sure you are using a Command Prompt window.
+1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu. Make sure you're using a Command Prompt window.
 
 1. In the terminal window, copy and paste the following command.
 
@@ -93,6 +93,16 @@ In this unit, you will create a basic console app using the integrated terminal,
          </appSettings>
    </configuration>
    ```
+
+1. At the top of the Explorer pane, select **learning-module.csproj** to open the file.
+
+1. Within the `<PropertyGroup>` section, delete the following line:
+
+   ```xml
+   <Nullable>enable</Nullable>
+   ```
+
+   The **Nullable** feature that protects against throwing a `System.NullReferenceException` isn't required for this module. If this line isn't removed or set to `disable`, it will generate build warnings that can be disruptive.
 
 1. At the terminal prompt, copy and paste the following command to run the program.
 
