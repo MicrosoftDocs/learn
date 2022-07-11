@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.dotnet-maui.consume-rest-services.consume-rest-web-service
+uid: learn.dot-net-maui.consume-rest-services.consume-rest-web-service
 title: Consume a REST service with HttpClient
 metadata:
   unitType: unit
