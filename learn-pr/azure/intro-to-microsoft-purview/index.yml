@@ -41,7 +41,7 @@ roles:
   - ai-engineer
 
 products:
-- azure-purview
+- microsoft-purview
 
 units:
 - learn.intro-to-microsoft-purview.introduction
