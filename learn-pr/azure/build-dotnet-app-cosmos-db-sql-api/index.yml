@@ -4,11 +4,11 @@ metadata:
   moduleType: guided-project
   title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 7/11/2022
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.date: 7/11/2022
 title: Guided project - Build an app that queries and adds data to Azure Cosmos DB SQL API
 summary: |
   TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title, include the note below; see 

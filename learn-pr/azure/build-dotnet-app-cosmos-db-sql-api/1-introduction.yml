@@ -5,11 +5,11 @@ metadata:
   unitType: introduction
   title: introduction
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 7/11/2022
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
+  ms.date: 7/11/2022
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
