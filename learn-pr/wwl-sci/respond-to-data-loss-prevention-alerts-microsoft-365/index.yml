@@ -3,9 +3,9 @@ uid: learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365
 metadata:
   title: Respond to data loss prevention alerts using Microsoft 365
   description: "Respond to data loss prevention alerts using Microsoft 365"
-  ms.date: 03/11/2022
+  ms.date: 07/05/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: Respond to data loss prevention alerts using Microsoft 365
@@ -23,11 +23,13 @@ levels:
 roles:
 - security-operations-analyst
 products:
+- defender-for-cloud-apps
 - m365
 - m365-information-protection
+- m365-compliance-center
 subjects:
-- information-protection-governance
 - compliance
+- information-protection-governance
 units:
 - learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.introduction
 - learn.wwl.respond-to-data-loss-prevention-alerts-microsoft-365.understand-dlp-alerts

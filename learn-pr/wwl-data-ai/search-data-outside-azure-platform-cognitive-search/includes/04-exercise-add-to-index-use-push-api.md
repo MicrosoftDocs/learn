@@ -70,7 +70,7 @@ This action will open the V11 folder in VS Code.
     ```json
     {
       "SearchServiceUri": "https://acs18245-search-service.search.windows.net",
-      "SearchServiceAdminApiKey": "i0eU0C4aOZxlC9jNPnA87pjRVTeWyT8ehnEtvQPQIgAzSeAAGnHH",
+      "SearchServiceAdminApiKey": "YOUR_SEARCH_SERVICE_KEY",
       "SearchIndexName": "optimize-indexing"
     }
     ```
