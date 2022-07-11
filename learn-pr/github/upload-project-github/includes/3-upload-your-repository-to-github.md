@@ -97,25 +97,25 @@ Follow the steps below to import your external repository:
 1. [Create a new repository on GitHub.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) You'll import your external Git repository to this new repository.
 2. On the command line, make a "bare" clone of the repository using the external clone URL. This creates a full copy of the data, but without a working directory for editing files, and ensures a clean, fresh export of all the old data.
 
-``` 
-    $ git clone --bare https://external-host.com/extuser/repo.git
-    #Makes a bare clone of the external repository in a local directory 
-```
+    ``` 
+        $ git clone --bare https://external-host.com/extuser/repo.git
+        #Makes a bare clone of the external repository in a local directory 
+    ```
 
 3. Push the locally cloned repository to GitHub using the "mirror" option, which ensures that all references, such as branches and tags, are copied to the imported repository.
 
-```
-   $ cd repo.git
-   $ git push --mirror https://github.com/ghuser/repo.git
-   #Pushes the mirror to the new repository on GitHub.com 
-```
+    ```
+      $ cd repo.git
+      $ git push --mirror https://github.com/ghuser/repo.git
+      #Pushes the mirror to the new repository on GitHub.com 
+    ```
 
 4. Remove the temporary local repository.
 
-``` 
-    $ cd ..
-    $ rm -rf repo.git 
-```
+    ``` 
+        $ cd ..
+        $ rm -rf repo.git 
+    ```
 
 ### Adding locally hosted code to GitHub
 
@@ -131,14 +131,15 @@ Follow the steps below to add a local repository with GitHub CLI:
 
 2. Initialize the local directory as a Git repository.
 
-  ```
-    git init -b main
-  ```
+    ```
+      git init -b main
+    ```
 
 3. Stage and commit all the files in your project.
-  ```
-    git add . && git commit -m "initial commit"
-  ```
+
+    ```
+      git add . && git commit -m "initial commit"
+    ```
 
  4. To create a repository for your project on GitHub, use the `gh repo create subcommand`. When prompted, select Push an existing local repository to GitHub and enter the desired name for your repository. If you want your project to belong to an organization instead of your user account, specify the organization name and project name with `organization-name/project-name`.
 
@@ -158,17 +159,20 @@ Follow the steps below to add a local repository using Git:
 3. Change the current working directory to your local project.
 
 4. Initialize the local directory as a Git repository.
+
     ```
       $ git init -b main
     ```
 
 5. Add the files in your new local repository. This stages them for the first commit.
+
     ```
       $ git add .
       # Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
     ```
 
 6. Commit the files that you've staged in your local repository.
+
     ```
       $ git commit -m "First commit"
       # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
@@ -178,6 +182,7 @@ Follow the steps below to add a local repository using Git:
     :::image type="content" source="../media/7-copy-remote-repository-url-quick-setup.png" alt-text="screenshot copy remote repository url quick setup":::
 
 8. In the Command prompt, [add the URL for the remote repository](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories) where your local repository will be pushed.
+
     ```
         $ git remote add origin  <REMOTE_URL> 
         # Sets the new remote
@@ -186,6 +191,7 @@ Follow the steps below to add a local repository using Git:
     ```
 
 9. [Push the changes](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) in your local repository to GitHub.com.
+
     ```
         $ git push origin main
         # Pushes the changes in your local repository up to the remote repository you specified as the origin
