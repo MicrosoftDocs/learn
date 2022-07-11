@@ -22,7 +22,7 @@ Devices of this type can be useful in scenarios where data from two or more devi
 
 A sensor is a circuit (or device) that collects a specific type of data about the physical environment. As IoT continues to evolve, the list of available sensors continues to grow, often in ways that we would not have imagined five years earlier.
 
-A **smart sensor** according to [the website](https://internetofthingsagenda.techtarget.com/definition/smart-sensor) *IoT Agenda* is "a device that takes input from the physical environment and uses built-in compute resources to perform predefined functions upon detection of specific input and then process data before passing it on." That is, the device itself processes the data to some degree before sending it to the next node in the IoT architecture.
+A **smart sensor** is essentially a device that gathers input from the physical environment and processes that information locally before communicating message data. That is, the device itself processes the data to some degree before sending it to the next node in the IoT architecture.
 
 Sensors can either be directly embedded within an IoT device, or implemented as an external piece of hardware that connects to the IoT device through a defined interface. Examples of simple sensor measurements include: Temperature, Humidity, Distance, and Light.
 
