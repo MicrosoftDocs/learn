@@ -16,7 +16,7 @@ The architecture includes:
 
 Most importantly for the current challenge is to take a model from model development to model deployment. The step in between these two loops is to package and register the model. After the data science team has trained a model, it's essential to package the model, and to register it in the Azure Machine Learning workspace. Once the model is registered, it's time to deploy the model. 
 
-There are several approaches to package the model. After reviewing some options like working with pickle files, you've decided with the data science team to work with **MLflow**. When you register the model as an MLflow model, you can opt for no-code deployment in the Azure Machine Learning workspace. A no-code deployment saves you work as you don't need to create the scoring script and environment for the deployment to work. 
+There are several approaches to package the model. After reviewing some options like working with pickle files, you've decided with the data science team to work with **MLflow**. When you register the model as an MLflow model, you can opt for no-code deployment in the Azure Machine Learning workspace. when you use no-code deployment, you don't need to create the scoring script and environment for the deployment to work. 
 
 When you want to deploy a model, you have a choice between an **online endpoint** for real-time predictions or a **batch endpoint** for batch predictions. As the model will be integrated with a web app where the practitioner will input medical data expecting to get a direct response, you choose to deploy the model to an online endpoint. 
 
