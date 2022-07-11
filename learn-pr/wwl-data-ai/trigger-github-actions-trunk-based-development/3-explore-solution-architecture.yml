@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.trigger-github-actions-trunk-based-development.explore-solution-architecture
+title: Explore the solution architecture
+metadata:
+  title: Explore the solution architecture
+  description: "Explore the solution architecture"
+  ms.date: 07/07/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-solution-architecture.md)]
