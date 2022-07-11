@@ -2,7 +2,7 @@ In this unit, you complete the *Coupon.API* project. You'll then run a script to
 
 ## Add the coupon service
 
-You can find an ASP.NET Core project for the coupon service in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory. Locate that directory in the Cloud Shell editor. Apply the following changes to the service:
+You can find an ASP.NET Core project for the coupon service in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory. Locate that directory in the explorer pane. Apply the following changes to the service:
 
 1. In *:::no-loc text="Controllers/CouponController.cs":::*, replace the comment `// Add the GetCouponByCodeAsync method` with the following code:
 
@@ -122,10 +122,10 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
                         name: coupon-cm
         ```
 
-1. Run the following command to build the coupon service project:
+1. Save all your changes. In the terminal pane you created earlier, run the following command to build the coupon service project:
 
     ```dotnetcli
-    dotnet build src/Services/Coupon/Coupon.API/
+    dotnet build ../../src/Services/Coupon/Coupon.API/
     ```
 
     The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
@@ -143,12 +143,8 @@ You can find an ASP.NET Core project for the coupon service in the *:::no-loc te
 1. Run the following script in the terminal to make additional configuration changes for the coupon service:
 
     ```bash
-    deploy/k8s/implementation-script.sh
+    ./implementation-script.sh
     ```
-
-    > [!TIP]
-    > This unit uses scripts to keep focus on the learning objectives. You can inspect the scripts to better understand the commands used.
-
     The preceding script:
 
     * Uncomments HTML markup in the *:::no-loc text="WebSPA":::* checkout and order details Angular components. This supports accepting coupon codes and displaying discount amounts, respectively. The following HTML markup in the *:::no-loc text="Web/WebSPA/Client/src/modules/orders":::* directory is uncommented:
@@ -201,12 +197,12 @@ You don't have permissions to make changes to the Container Registry of Microsof
 Run the following script in the terminal. This builds the coupon service and *:::no-loc text="WebSPA":::* app container images, and hosts them in Container Registry:
 
 ```bash
-build-to-acr.sh
+./build-to-acr.sh
 ```
 
 The preceding script builds the container images in Container Registry by using the `az acr build` command, with the provided *:::no-loc text="Dockerfile":::* files for the *:::no-loc text="Coupon.API":::* and *:::no-loc text="WebSPA":::* projects.
 
-Note that the solution isn't being built in your Cloud Shell instance. The build occurs in the cloud when the container image is sent to Container Registry. You can see build output shown in the terminal. The `az acr build` command used by the script is shown in the terminal, with the correct parameters. The command resembles the following example:
+Note that the solution isn't being built in your development container. The build occurs in the cloud when the container image is sent to Container Registry. You can see build output shown in the terminal. The `az acr build` command used by the script is shown in the terminal, with the correct parameters. The command resembles the following example:
 
 ```azurecli
 az acr build --registry eshoplearn \

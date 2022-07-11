@@ -23,12 +23,14 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
     > [!TIP]
     > If you miss the prompt to reopen in container, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
 
-1. After the project loads in the container, right-click the **TO-DO: this step to open terminal (and screenshot)**
+1. After the project loads in the container, expand the *modules* directory, then *microservices-aspnet-core*, and then finally *deploy*. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains subdirectories.) 
 
-1. Sign in to the Azure CLI.
+    ![The explorer pane in Visual Studio Code. The context menu for the k8s folder is displayed, and Open in Integrated Terminal is selected](../media/2-deploy-application/k8s-path.png)
+
+1. In the new terminal pane, sign in to the Azure CLI. If using GitHub Codespaces, include the `--use-device-code` flag. If you are using Visual Studio Code, you may optionally omit the flag.
 
     ```az-cli
-    az login
+    az login --use-device-code
     ```
 
 1. View your selcted Azure subscription. 
@@ -42,7 +44,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 1. Run the quickstart script:
 
     ```bash
-    ./modules/microservices-aspnet-core/deploy/k8s/quickstart.sh
+    ./quickstart.sh
     ```
 
     The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
@@ -51,5 +53,9 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
     * Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
     * Displays connection information upon completion.
 
+    > [!TIP]
+    > This unit uses scripts to keep focus on the learning objectives. The script outputs colored text to indicate the commands being executed. You can inspect the script and the output to better understand the commands used.
+
     The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, continue to the next unit to review the *:::no-loc text="eShopOnContainers":::* architecture.
+
 

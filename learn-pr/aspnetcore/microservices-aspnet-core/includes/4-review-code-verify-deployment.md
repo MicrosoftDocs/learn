@@ -30,11 +30,14 @@ You can begin exploring these services (when available):
 ```
 
 > [!TIP]
-> This output is stored in *modules/microservices-aspnet-core/deployment-urls.txt*.
+> This output can be found in *modules/microservices-aspnet-core/deployment-urls.txt*.
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
-1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
+1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page is designed to refresh automatically, every 10 seconds.
+
+    > [!IMPORTANT]
+    > If the WebStatus isn't automatically refreshing, it's due to an issue with the container image used for WebStatus. To work around the issue, manually refresh the WebStatus page periodically.
 
     :::image type="content" source="../media/4-review-code-verify-deployment/health-check.png" alt-text="Health check page." border="true" lightbox="../media/4-review-code-verify-deployment/health-check.png":::
 
