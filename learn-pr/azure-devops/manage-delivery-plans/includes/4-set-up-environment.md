@@ -31,5 +31,4 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 1. Select **Navigate to project** to go to your project in Azure DevOps.
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/manage-delivery-plans/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
-
+> The [Clean up your Azure DevOps environment](/learn/modules/manage-delivery-plans/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
