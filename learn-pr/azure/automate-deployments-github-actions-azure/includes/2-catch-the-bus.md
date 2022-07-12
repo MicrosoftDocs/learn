@@ -6,11 +6,11 @@ In the bus catching scenario, there are a few main requirements:
 - Notifications when a bus is close by
 - Automated deployment and scaling
 
-Whether you are seeing this scenario for the first time, or you have completed the other modules in the learning path, let's review the scenario and how the solution was constructed.
+Whether you're seeing this scenario for the first time, or you've completed the other modules in the learning path, let's review the scenario and how the solution was constructed.
 
 ## Retrieve real-time bus data
 
-Many cities provide public transportation data via General Transit Feed Specification (GTFS), that also supports a real-time feed, GTFS real-time Reference v2 (GTFS-RT). The feed is composed of a JSON document that looks like the following sample (from [King County Metro](https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources.aspx) feed):
+Many cities provide public transportation data via [General Transit Feed Specification (GTFS)](https://gtfs.org/about/), that also supports a real-time feed, GTFS real-time Reference v2 (GTFS-RT). The feed is composed of a JSON document that looks like the following sample (from [King County Metro](https://kingcounty.gov/depts/transportation/metro/travel-options/bus/app-center/developer-resources.aspx) feed):
 
 ```JSON
 {
@@ -53,21 +53,21 @@ The architecture uses several different services to minimize the amount of code 
 
 Azure SQL Database is a great fit for this scenario. Let's understand why.
 
-Azure SQL Database has native JSON support, that will help in reducing the amount of code needed to manipulate data sent and received with the database. It will also make the solution more agile and easy to be improved thanks to JSON's flexible nature. And, it will ensure that you can efficiently pass arrays of data to Azure SQL, optimize round-trips, and reduce latency.
+Azure SQL Database has native JSON support, this will help in reducing the amount of code needed to manipulate data sent and received with the database. It will also make the solution more agile and easy to be improved thanks to JSON's flexible nature. And, it will ensure that you can efficiently pass arrays of data to Azure SQL, optimize round-trips, and reduce latency.
 
-Azure SQL also provides complete geospatial support, which is a great feature as manipulating geospatial data is not the easiest of tasks. By having a fully featured geospatial engine within the database, you can avoid the complexity of integrating with external libraries, and you don't have to move data around to figure out, for example, if a bus is within a defined geofence. Since Azure SQL adheres to the Open Geospatial Consortium standards, it is easy to integrate data stored in Azure SQL with visualization libraries like OpenLayers.
+Azure SQL also provides complete geospatial support, which is a great feature as manipulating geospatial data isn't the easiest of tasks. By having a fully featured geospatial engine within the database, you can avoid the complexity of integrating with external libraries, and you don't have to move data around to figure out, for example, if a bus is within a defined geofence. Since Azure SQL adheres to the Open Geospatial Consortium standards, it's easy to integrate data stored in Azure SQL with visualization libraries like OpenLayers.
 
 The aforementioned features are built on the rock-solid foundations of the relational model, evolved through years of improvement to meet the requirements of modern applications. Azure SQL Database is scalable up to 100 TB with the Hyperscale tier or cost-effective with the Serverless tier (supports autoscaling and pause-and-resume). Azure SQL also supports columnstore indexes for blazing fast analytical queries, graph models to simplify complex object relationship management, and a state-of-the-art query optimizer that is continuously improving and can handle even the most demanding workload.
 
-With Azure SQL it is also easy to access static data, like the route information provided by the GTFS standard, that can be stored in an Azure Blob Storage account. By using the `OPENROWSET` function, importing data from a text file can be done without any other service, keeping solution complexity to a minimum.
+With Azure SQL it's also easy to access static data, like the route information provided by the GTFS standard, that can be stored in an Azure Blob Storage account. We can use the `OPENROWSET` function  in Azure SQL to import data from a text file without the need for another service.
 
 ### Build an API service with Azure Functions
 
-An API is needed to access and consume the GTFS feed, to notify a user if a bus has entered a geofence, and to serve data to a web application. Azure Functions has been selected as the service of choice due to its simplicity and serverless architecture. Azure Functions is a great service as its serverless nature autoscales to what you need, leaving almost all infrastructural aspects to Azure Functions. Azure Functions provides support for different languages, so you can choose your preferred one or the most suitable one for the task you are working on, which follows a pure microservices approach.
+An API is needed to access and consume the GTFS feed, to notify a user if a bus has entered a geofence, and to serve data to a web application. Azure Functions has been selected as the service of choice due to its simplicity and serverless architecture. Azure Functions is a great service as its serverless nature autoscales to what you need, leaving almost all infrastructural aspects to Azure Functions. Azure Functions provides support for different languages, so you can choose your preferred one or the most suitable one for the task you're working on, which follows a pure microservices approach.
 
 ### Send notifications with Azure Logic Apps
 
-To get a notification that a bus is within the geofence and you need to start to walk to the bus station, one option in Azure is to use Azure Logic Apps. Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email from your Outlook or Gmail account. What's great about Azure Logic Apps is that it is a low-code/no code platform, so setting up the notification service is easy.
+To get a notification that a bus is within the geofence and you need to start to walk to the bus station, one option in Azure is to use Azure Logic Apps. Azure Logic Apps has a large number of connectors so you can integrate with other services. For example, you can use Azure Logic Apps to send an SMS message or send an email from your Outlook or Gmail account. What's great about Azure Logic Apps is that it's a low-code/no code platform, so setting up the notification service is easy.
 
 ### Host the web application with Azure Static Web Apps
 
