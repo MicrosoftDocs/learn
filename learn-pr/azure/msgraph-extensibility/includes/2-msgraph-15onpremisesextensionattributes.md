@@ -1,88 +1,8 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-
-<!--TODO: add your topic sentences(s)-->
-
 Microsoft Graph provides four types of extensions for adding custom properties to users and storing custom data. The first type of extensions is the 15 predefined **extension attribute properties**.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-<!--TODO: add your scenario sub-task-->
-
-In the team bonding app scenario, we want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-<!--TODO: write your prose table-of-contents-->
+In the team bonding app scenario, you want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
 Here, you'll learn how to use the extension attribute properties to store the three pieces of user data about the employees.
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-<!--TODO: add a visual element-->
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-<!--## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)-->
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-<!--## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
 
 ## 15 Extension attribute properties
 
@@ -118,17 +38,39 @@ The following is a JSON representation of the **onPremisesExtensionAttributes** 
 }
 ```
 
+Therefore, because the 15 extension attributes are predefined on the **user** resource, you can't define them, assign them custom names, or delete them. You can only manage them by adding, updating, or deleting data from them.
+
 You don't need to store data in all extension attributes. You only store data based on your need and unused extension attributes can be *null*.
 
-You also don't need to use the extension attributes in their logical order. For example, you can choose to use **extensionAttribute14** only or **extensionAttribute1** and **extensionAttribute9** only. To store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag, you can choose to use **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15**.
+You also don't need to use the extension attributes in their logical order. For example, you can choose to use **extensionAttribute14** only or **extensionAttribute1** and **extensionAttribute9** only. To store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag, you can choose to use **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
 You can assign values to the extension properties when creating new users or by updating the properties for existing users. For your scenario, the employees will be updating their existing profiles through the team bonding app user interface that calls Microsoft Graph as the underlying API.
 
 #### Query capabilities supported by extension attribute properties
 
+In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** property isn't returned by default and you must therefore use a `$select` query parameter to retrieve it and read the data it stores.
+
 Extension attribute properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty.
 
 The extension attribute properties are specially indexed in Microsoft Graph for advanced querying. This means the HTTP request must include the `$count=true` query parameter and set the **ConsistencyLevel** header to `eventual`.
+
+### Other Azure AD scenarios for custom data in extension attribute properties
+
+While you'll use the extension attribute properties to store data required by the team bonding app, there are other different Azure AD use cases for this custom data in your organization.
+
+#### Dynamically add users to internal groups based on their user profile data
+
+Suppose you want to seamlessly allow employees with shared interests to communicate through one internal Teams channel and share tips or have fun. For example, you want Xbox gamers to interact with each other through Teams chats or email, share tips, plan team playoffs and have fun together.
+
+Microsoft Graph groups allow an organization to bring other users with common interests. You can create an Xbox gamers group to bring together all Xbox enthusiasts through one alias.
+
+To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through a Teams channel and can receive emails sent to the group members.
+
+#### Customize tokens using data in extension attribute properties
+
+Another Azure AD use case for the extension attribute properties and their data is customizing tokens with claims.
+
+<!--Placeholder: TO-DO See more: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims -->
 
 ### Considerations for using extension attribute properties
 
