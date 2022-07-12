@@ -27,22 +27,30 @@ Repositories and individual files are subject to size limits. For more informati
 
 Follow these steps to import a repository: 
 
-1. In the upper-right corner of any page, click +, and then click **Import repository**.<br>
-      :::image type="content" source="../media/1-import-repository.png" alt-text="screenshot import repository":::
-2. Under "Your old repository's clone URL", type the URL of the project you want to import.<br>
-      :::image type="content" source="../media/2-import-url.png" alt-text="screenshot import URL":::
-3. Choose your user account or an organization to own the repository, then type a name for the repository on GitHub.<br>
-      :::image type="content" source="../media/3-import-repo-owner-name.png" alt-text="screenshot import repo owner name"::: 
-4. Specify whether the new repository should be public or private. For more information, see "[Setting repository visibility.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)"<br>
-      :::image type="content" source="../media/4-import-public-or-private.png" alt-text="screenshot import public or private":::
-5. Review the information you entered, then click **Begin import**.<br>
-      :::image type="content" source="../media/5-begin-import-button.png" alt-text="screenshot begin import button":::
-6. If your old project was protected by a password, type your login information for that project, then click **Submit**.<br>
-      :::image type="content" source="../media/6-submit-old-credentials-importer.png" alt-text="screenshot submit old credentials importer":::
-7. If there are multiple projects hosted at your old project's clone URL, choose the project you'd like to import, then click **Submit**.<br>
-      :::image type="content" source="../media/7-choose-project-importer.png" alt-text="screenshot choose project importer"::: 
-8. If your project contains files larger than 100 MB, choose whether to import the large files using [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files), then click **Continue**.<br>
-      :::image type="content" source="../media/8-select-gitlfs-importer.png" alt-text="screenshot select gitlfs importer":::
+1. In the upper-right corner of any page, click +, and then click **Import repository**.
+
+      :::image type="content" source="../media/1-import-repository.png" alt-text="Screenshot of the import repository button.":::
+2. Under "Your old repository's clone URL", type the URL of the project you want to import.
+
+      :::image type="content" source="../media/2-import-url.png" alt-text="Screenshot of the old repository URL textbox.":::
+3. Choose your user account or an organization to own the repository, then type a name for the repository on GitHub.
+
+      :::image type="content" source="../media/3-import-repo-owner-name.png" alt-text="Screenshot of the new import repository owner name."::: 
+4. Specify whether the new repository should be public or private. For more information, see "[Setting repository visibility.](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility)"
+
+      :::image type="content" source="../media/4-import-public-or-private.png" alt-text="Screenshot of the new repository public or private options.":::
+5. Review the information you entered, then click **Begin import**.
+
+      :::image type="content" source="../media/5-begin-import-button.png" alt-text="Screenshot of the begin import button for a new repository import.":::
+6. If your old project was protected by a password, type your login information for that project, then click **Submit**.
+
+      :::image type="content" source="../media/6-submit-old-credentials-importer.png" alt-text="Screenshot of the location to input your old repository credentials importer.":::
+7. If there are multiple projects hosted at your old project's clone URL, choose the project you'd like to import, then click **Submit**.
+
+      :::image type="content" source="../media/7-choose-project-importer.png" alt-text="Screenshot of a selection of projects found at the same URL. project importer."::: 
+8. If your project contains files larger than 100 MB, choose whether to import the large files using [Git Large File Storage](https://docs.github.com/en/repositories/working-with-files/managing-large-files), then click **Continue**.
+
+      :::image type="content" source="../media/8-select-git-lfs-importer.png" alt-text="Screenshot of files suitable for Git LFS importer.":::
 
 You'll receive an email when the repository has been completely imported.
 
