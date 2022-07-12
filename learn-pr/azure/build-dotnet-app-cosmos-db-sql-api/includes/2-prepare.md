@@ -93,7 +93,7 @@ Strong lead sentence stating the required account.
 Remainder of paragraph explaining why this is needed and what it will be used for.
 Inline instructions or link to setup instructions.
 
-```azurecli-interactive
+```azurecli
 let SUFFIX=$RANDOM*$RANDOM
 
 COSMOS_RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
@@ -101,7 +101,7 @@ COSMOS_ACCOUNT_NAME="mslearn-$SUFFIX"
 COSMOS_LOCATION="westus"
 ```
 
-```azurecli-interactive
+```azurecli
 az cosmosdb create \
     --resource-group $COSMOS_RESOURCE_GROUP \
     --name $COSMOS_ACCOUNT_NAME \
@@ -110,7 +110,7 @@ az cosmosdb create \
 
 ### Get account connection string
 
-```azurecli-interactive
+```azurecli
 az cosmosdb keys list \
     --resource-group $COSMOS_RESOURCE_GROUP \
     --name $COSMOS_ACCOUNT_NAME \

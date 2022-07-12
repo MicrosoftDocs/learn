@@ -51,7 +51,7 @@ TODO: describe the end-state
 1. Change to built-in **clouddrive** directory
 
     ```bash
-    cd clouddrive
+    cd ~/clouddrive
     ```
 
     > [!NOTE]
@@ -66,7 +66,7 @@ TODO: describe the end-state
 1. <!-- Step n -->
 
     ```bash
-    cd inventorytool
+    cd ~/clouddrive/inventorytool
     ```
 
 ## (Chunk 2 heading)

@@ -48,13 +48,18 @@ TODO: describe the end-state
 <!-- Introduction paragraph -->
 1. Save connection string as environment
 
-    ```azurecli-interactive
+    ```azurecli
     COSMOS_ACCOUNT_NAME=$(az cosmosdb list --resource-group $resourceGroup --query [0].name --output tsv)
     
     COSMOS_CONNECTION_STRING=$(az cosmosdb keys list --name $COSMOS_ACCOUNT_NAME --resource-group $COSMOS_RESOURCE_GROUP --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
     ```
 
 1. <!-- Step 2 -->
+
+    ```bash
+    cd ~/clouddrive/inventorytool
+    ```
+
 1. <!-- Step n -->
 
 ## (Chunk 2 heading)
@@ -82,6 +87,11 @@ TODO: describe the end-state
 ## (Chunk n heading)
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
+
+    ```bash
+    code .
+    ```
+
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
@@ -105,8 +115,24 @@ TODO: describe the end-state
 
 ## Check your work
 <!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
+1. Open the **inventorytool.csproj** file
+
+1. Check the project file
+
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+      </PropertyGroup>
+      <ItemGroup>
+        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.29.0" />
+      </ItemGroup>
+    </Project>
+    ```
+
 1. <!-- Step n (if multiple steps are needed) -->
 Optional "exercise-solution" video
 
