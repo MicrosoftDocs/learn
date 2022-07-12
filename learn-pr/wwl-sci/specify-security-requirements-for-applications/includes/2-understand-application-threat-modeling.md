@@ -52,7 +52,6 @@ cost. For more information, see [Microsoft Threat Modeling Tool](https://www.mic
 Here are some resources:
 
 -   Toolkit for [Secure DevOps on Azure](https://azsk.azurewebsites.net/).
-
 -   [Guidance on DevOps pipeline security](https://owasp.org/www-project-devsecops-guideline/) by OWASP.
 
 #### 3- Mitigate the identified threats

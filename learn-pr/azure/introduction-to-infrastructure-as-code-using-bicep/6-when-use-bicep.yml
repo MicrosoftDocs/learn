@@ -6,8 +6,8 @@ metadata:
   title: When to use Bicep
   description: Evaluate whether Bicep is the right solution for your organization.
   ms.date: 03/12/2021  
-  author: joshuawaddell
-  ms.author: jowaddel
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 durationInMinutes: 2

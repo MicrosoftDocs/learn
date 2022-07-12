@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Experience with using the Azure at the beginner level.
   - Knowledge of cloud security at the beginner level.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-defender-for-cloud.svg
 levels:
   - beginner
 roles:

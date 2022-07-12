@@ -16,7 +16,7 @@ Azure offers four tiers of managed disks according to their performance characte
 
 :::row:::
   :::column:::
-    
+
   :::column-end:::
   :::column:::
     **Ultra SSD**
@@ -116,6 +116,5 @@ Azure offers four tiers of managed disks according to their performance characte
     2,000
   :::column-end:::
 :::row-end:::
-
 
 It is important to understand that to determine overall performance of Azure Premium Storage disks attached to an Azure VM, you not only need to calculate the cumulative throughput and IOPS of all disks, but you also need to take into account the VM I/O throughput. This means that if you, for example, mount 32 x P30 disks to a single DS14 VM you won't get 32 x the maximum throughput of a P30 disk. Instead the maximum throughput would be determined by the performance characteristics of that specific VM size, as documented in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).

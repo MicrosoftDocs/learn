@@ -36,7 +36,7 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - support-engineer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
 - azure
-- azure-purview
+- microsoft-purview
 units:
 - learn.deploy-microsoft-purview-scan-data-resources.introduction
 - learn.deploy-microsoft-purview-scan-data-resources.setup

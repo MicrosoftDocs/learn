@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-teach-sc-900-academic-programs
 metadata:
   title: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
   description: Prepare to teach SC-900 Microsoft Security, Compliance, and Identity Fundamentals in academic programs
-  ms.date: 04/13/2022
+  ms.date: 07/12/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -21,8 +21,8 @@ roles:
 products:
 - azure-security-center
 subjects:
-- identity-access
 - compliance
+- identity-access
 - security
 modules:
 - learn.wwl.introduction-microsoft-learn-educators-program
@@ -31,5 +31,7 @@ modules:
 - learn.wwl.microsoft-learn-educators-course-plan
 - learn.wwl.learn-best-practices-from-microsoft-technical-trainers
 - learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals
+- learn.wwl.prepare-for-course-delivery
+- learn.wwl.close-out-course
 trophy:
   uid: learn.wwl.prepare-teach-sc-900-academic-programs.trophy
