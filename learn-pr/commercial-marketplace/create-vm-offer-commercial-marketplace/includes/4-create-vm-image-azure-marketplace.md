@@ -23,7 +23,7 @@ Once you’ve installed your software and configured the image, you’ll need to
 
 ## Testing your VM image
 
-You should test your generalized image by deploying it on an Azure VM. To do so, you’ll run validations on the deployed image by running a certification test. For a step-by-step walk through of different approaches to testing your generalized image, reference our [article on testing a virtual machine image](/azure/marketplace/azure-vm-image-test).
+You should test your generalized image by deploying it on an Azure VM. To do so, you’ll run validations on the deployed image by running a certification test. For a step-by-step walk-through of different approaches to testing your generalized image, reference our [article on testing a virtual machine image](/azure/marketplace/azure-vm-image-test).
 
 ## Maintaining your image
 
