@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. These error codes are not related to unit tests."
     - content: "Missing functions in training scripts."
       isCorrect: false
-      explanation: "Incorrect. Functions help when creating unit tests but won't give these error codes.."
+      explanation: "Incorrect. Functions help when creating unit tests but won't give these error codes."
     - content: "Stylistic errors like missing blank lines."
       isCorrect: true
       explanation: "Correct. E302 and W292 are error and warning codes returned when running linters on code."

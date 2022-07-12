@@ -34,7 +34,7 @@ To integrate the code checks with any pull requests that target the main branch,
 2. Select **Branches**.
 3. Enable **require status checks to pass before merging** within the branch protection rule for the main branch.
 
-![Screenshot .](../media/05-01-check.png)
+![Screenshot of setting to require status checks before merging.](../media/05-01-check.png)
 
 Here, you can search and select your linters and unit tests to set them as required. Whenever you then create a pull request, you'll notice that it will trigger your GitHub Actions and only when the workflows pass successfully will you be able to merge the pull request.
 

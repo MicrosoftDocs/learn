@@ -16,7 +16,7 @@ The main goal of the MLOps architecture is to create a robust and reproducible s
 
 To move a model from development to deployment, you'll need continuous integration. During continuous integration, you'll package and register the model. Before you package a model however, you'll need to verify the code used to train the model. 
 
-Together with the data science team, you've agreed to use trunk-based development. Not only will branches protect the production code, it will also allow you to automatically verify any proposed changes before merging it with the production code.
+Together with the data science team, you've agreed to use **trunk-based development**. Not only will branches protect the production code, it will also allow you to automatically verify any proposed changes before merging it with the production code.
 
 Let's explore the workflow for a data scientist:
 

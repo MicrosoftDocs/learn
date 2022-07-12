@@ -1,4 +1,4 @@
-You can verify code quality used by Azure Machine Learning to train models automatically with GitHub Actions.
+You can verify your code used by Azure Machine Learning to train models automatically with GitHub Actions.
 
 Whenever you create your own machine learning models, you're likely to work with scripts to automate machine learning tasks. 
 
