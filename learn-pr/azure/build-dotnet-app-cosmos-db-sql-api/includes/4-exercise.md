@@ -54,11 +54,17 @@ TODO: describe the end-state
 1. Save connection string as environment
 
     ```azurecli
-    COSMOS_RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
+    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
 
-    COSMOS_ACCOUNT_NAME=$(az cosmosdb list --resource-group $COSMOS_RESOURCE_GROUP --query [0].name --output tsv)
+    accountName=$(az cosmosdb list --resource-group $resourceGroup --query [0].name --output tsv)
     
-    COSMOS_CONNECTION_STRING=$(az cosmosdb keys list --name $COSMOS_ACCOUNT_NAME --resource-group $COSMOS_RESOURCE_GROUP --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
+    connectionString=$(az cosmosdb keys list --name $accountName --resource-group $resourceGroup --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
+    ```
+
+1. Set environment variable
+
+    ```azurecli
+    export COSMOS_CONNECTION_STRING=$connectionString
     ```
 
 1. <!-- Step 2 -->
@@ -94,9 +100,21 @@ TODO: describe the end-state
 1. <!-- Step n -->
 
     ```csharp
+    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    ```
+
+1. <!-- Step n -->
+
+    ```csharp
     using CosmosClient client = new(
         connectionString: cosmosConnectionString
     );
+    ```
+
+1. <!-- Step n -->
+
+    ```csharp
+    Console.WriteLine("[Connected]");
     ```
 
 1. **Save** the **Program.cs** file.

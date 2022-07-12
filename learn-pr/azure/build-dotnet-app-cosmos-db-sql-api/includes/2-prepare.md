@@ -95,26 +95,26 @@ Remainder of paragraph explaining why this is needed and what it will be used fo
 Inline instructions or link to setup instructions.
 
 ```azurecli
-let SUFFIX=$RANDOM*$RANDOM
+let suffix=$RANDOM*$RANDOM
 
-COSMOS_RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
-COSMOS_ACCOUNT_NAME="mslearn-$SUFFIX"
-COSMOS_LOCATION="westus"
+resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+accountName="mslearn-$suffix"
+location="westus"
 ```
 
 ```azurecli
 az cosmosdb create \
-    --resource-group $COSMOS_RESOURCE_GROUP \
-    --name $COSMOS_ACCOUNT_NAME \
-    --locations regionName=$COSMOS_LOCATION
+    --resource-group $resourceGroup \
+    --name $accountName \
+    --locations regionName=$location
 ```
 
 ### Get account connection string
 
 ```azurecli
 az cosmosdb keys list \
-    --resource-group $COSMOS_RESOURCE_GROUP \
-    --name $COSMOS_ACCOUNT_NAME \
+    --resource-group $resourceGroup \
+    --name $accountName \
     --type connection-strings \
     --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
     --output tsv
