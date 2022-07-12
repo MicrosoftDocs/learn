@@ -21,6 +21,7 @@ prerequisites: |
   - Familiarity with RESTful service concepts
   - Conceptual knowledge of containers and AKS at the intermediate level
   - Access to an Azure subscription with **Owner** privilege
+  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
 levels:
   - advanced
 roles:
