@@ -21,7 +21,7 @@ prerequisites: |
   - Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
   - Conceptual knowledge of containers at the beginner level
   - Access to an Azure subscription
-  - Ability to run development containers in Visual Studio Code or Github Codespaces
+  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
 levels:
 - intermediate
 roles:
