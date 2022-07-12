@@ -4,7 +4,7 @@ The publishing process is broken down into several steps, each of which requires
 
 ### Offer setup
 
-After clicking **+ New offer** on the the commercial marketplace overview page in Partner Center, you’ll be taken to the offer setup page. This page is where you’ll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
+After clicking **+ New offer** on the commercial marketplace overview page in Partner Center, you’ll be taken to the offer setup page. This page is where you’ll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
 
 ### Configuring your offer’s properties
 
