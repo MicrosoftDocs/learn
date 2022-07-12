@@ -37,7 +37,9 @@ TODO: add your topic sentences(s)
             1. Use the Azure machine learning analytics service to analyze the text of the tweet.
             1. Based on the tweet sentiment, you'll either store the tweet in a database or email it to customer service.
 -->
+
 ## Project overview
+
 Strong lead sentence; remainder of paragraph.
 Visual (e.g. flowchart of business logic)
 
@@ -79,17 +81,43 @@ List of sub-tasks
     In that case, also remove the "Project overview" H2 (while leaving the content of that H2) to avoid a page
     containing a single H2.
 -->
+
 ## Setup
+
 Strong lead sentence stating the categories of what's needed: accounts, software, etc.
 Remainder of paragraph if needed.
-### Create (service) account (repeat as needed)
+
+### Create Azure Cosmos DB SQL API account
+
 Strong lead sentence stating the required account.
 Remainder of paragraph explaining why this is needed and what it will be used for.
 Inline instructions or link to setup instructions.
-### Install (product) (repeat as needed)
-Strong lead sentence stating the product needing installation.
-Remainder of paragraph explaining why this is needed and what it will be used for.
-Inline instructions or link to setup instructions.
+
+```azurecli-interactive
+let SUFFIX=$RANDOM*$RANDOM
+
+COSMOS_RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
+COSMOS_ACCOUNT_NAME="mslearn-$SUFFIX"
+COSMOS_LOCATION="westus"
+```
+
+```azurecli-interactive
+az cosmosdb create \
+    --resource-group $COSMOS_RESOURCE_GROUP \
+    --name $COSMOS_ACCOUNT_NAME \
+    --locations regionName=$COSMOS_LOCATION
+```
+
+### Get account connection string
+
+```azurecli-interactive
+az cosmosdb keys list \
+    --resource-group $COSMOS_RESOURCE_GROUP \
+    --name $COSMOS_ACCOUNT_NAME \
+    --type connection-strings \
+    --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
+    --output tsv
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

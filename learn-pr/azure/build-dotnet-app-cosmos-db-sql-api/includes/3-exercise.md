@@ -45,16 +45,51 @@ TODO: describe the end-state
 -->
 
 ## (Chunk 1 heading)
+
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
+
+1. Change to built-in **clouddrive** directory
+
+    ```bash
+    cd clouddrive
+    ```
+
+    > [!NOTE]
+    > Say something about this being a mounted file share.
+
+1. Create **inventorytool** directory
+
+    ```bash
+    mkdir inventorytool
+    ```
+
 1. <!-- Step n -->
 
+    ```bash
+    cd inventorytool
+    ```
+
 ## (Chunk 2 heading)
+
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+
+1. Create console app
+
+    ```dotnetcli
+    dotnet new console
+    ```
+
+1. Import Cosmos package
+
+    ```dotnetcli
+    dotnet add package Microsoft.Azure.Cosmos
+    ```
+
+1. Build project
+
+    ```dotnetcli
+    dotnet build
+    ```
 
 ## (Chunk n heading)
 <!-- Introduction paragraph -->

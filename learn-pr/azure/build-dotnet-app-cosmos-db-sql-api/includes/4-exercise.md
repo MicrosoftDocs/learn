@@ -46,15 +46,38 @@ TODO: describe the end-state
 
 ## (Chunk 1 heading)
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
+1. Save connection string as environment
+
+    ```azurecli-interactive
+    COSMOS_ACCOUNT_NAME=$(az cosmosdb list --resource-group $resourceGroup --query [0].name --output tsv)
+    
+    COSMOS_CONNECTION_STRING=$(az cosmosdb keys list --name $COSMOS_ACCOUNT_NAME --resource-group $COSMOS_RESOURCE_GROUP --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
+    ```
+
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
 ## (Chunk 2 heading)
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
+
+    ```csharp
+    using Microsoft.Azure.Cosmos;
+    ```
+
 1. <!-- Step 2 -->
+
+    ```csharp
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!
+    ```
+
 1. <!-- Step n -->
+
+    ```csharp
+    using CosmosClient client = new(
+        connectionString: cosmosConnectionString
+    );
+    ```
 
 ## (Chunk n heading)
 <!-- Introduction paragraph -->
