@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-linting-unit-test-github-actions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/12/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which trigger should be used in a GitHub Actions workflow to run code checks when a pull request is created?"
+    choices:
+    - content: "`on: workflow_dispatch`"
+      isCorrect: false
+      explanation: "Incorrect. Use `on: workflow_dispatch` to be able to manually trigger a workflow."
+    - content: "`on: [push]`"
+      isCorrect: false
+      explanation: "Incorrect. Use `on: [push]` to trigger a workflow with a push to the repo."
+    - content: "`on: [pull_request]`"
+      isCorrect: true
+      explanation: "Correct. Use `on: [pull_request]` to trigger a workflow when a pull request is opened."
+  - content: "A data scientist has updated the training script for a model and creates a pull request to merge the changes. The code checks fail and in the details it shows errors like E302 and W292. What is likely causing these errors?"
+    choices:
+    - content: "The unit tests weren't found."
+      isCorrect: false
+      explanation: "Incorrect. These error codes are not related to unit tests."
+    - content: "Missing functions in training scripts."
+      isCorrect: false
+      explanation: "Incorrect. Functions help when creating unit tests but won't give these error codes.."
+    - content: "Stylistic errors like missing blank lines."
+      isCorrect: true
+      explanation: "Correct. E302 and W292 are error and warning codes returned when running linters on code."
