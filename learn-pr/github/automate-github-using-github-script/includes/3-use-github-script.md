@@ -78,7 +78,7 @@ jobs:
 ```
 Each step includes a descriptive `name` element that also helps you track it from the Actions tab. 
 
-The `Add issue to project board` step also includes an `if` statement that specifies the issue should only be added to the project board if it is labelled `bug`.
+The `Add issue to project board` step also includes an `if` statement that specifies the issue should only be added to the project board if it is labeled `bug`.
 
 ## Use the Nod.js environment
 
@@ -128,4 +128,4 @@ jobs:
             });
 ```
 
-The GitHub Script enabled you to create comprehensive response to a new issue being opened. This response is also based on a template in the repository so it's easy to change in the future. Finally, you also included an trigger to add the issue to the project board so it can easily be triaged for future work.
+The GitHub Script enabled you to create comprehensive response to a new issue being opened. This response is also based on a template in the repository so it's easy to change in the future. Finally, you also included a trigger to add the issue to the project board so it can easily be triaged for future work.
