@@ -69,6 +69,10 @@ TODO: describe the end-state
 
 1. <!-- Step n -->
 
+    ```bash
+    code .
+    ```
+
 ## (Chunk 2 heading)
 
 <!-- Introduction paragraph -->
