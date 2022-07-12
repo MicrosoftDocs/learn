@@ -4,29 +4,28 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/17/2021
+  ms.date: 07/12/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following facial features can the Computer Vision service predict?"
+  - content: "Which of the following facial attributes can the Computer Vision service predict?"
     choices:
-    - content: "Age."
+    - content: "Location."
       isCorrect: true
-      explanation: "That's correct. The Computer Vision service predicts Age and Gender for a detected face."
+      explanation: "That's correct. The Computer Vision service predicts location for a detected face."
     - content: "Type of eye-glasses."
       isCorrect: false
-      explanation: "That's incorrect. The Computer Vision service predicts Age and Gender for a detected face."
-    - content: "Hair color."
+      explanation: "That's incorrect. The Computer Vision service predicts location for a detected face."
+    - content: "Occlusion."
       isCorrect: false
-      explanation: "That's incorrect. The Computer Vision service predicts Age and Gender for a detected face."
+      explanation: "That's incorrect. The Computer Vision service predicts location for a detected face."
   - content: "You need to create a facial recognition solution to identify named employees. Which service should you use?"
     choices:
     - content: "Computer Vision."
