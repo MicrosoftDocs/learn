@@ -11,7 +11,7 @@ metadata:
 title: Analyze video
 summary: Azure Video Analyzer for Media is a service to extract insights from video, including face identification, text recognition, object labels, scene segmentations, and more.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe Video Analyzer for Media capabilities
   - Extract custom insights
   - Use Video Analyzer for Media widgets and APIs

@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Use the Computer Vision service to extract key frames from the video."
       isCorrect: false
-      explanation: "That's incorrect. You do not need to extract frames from the video before analyzing it."
+      explanation: "That's incorrect. You don't need to extract frames from the video before analyzing it."
     - content: "Upload the video to Video Analyzer for Media and index it."
       isCorrect: true
       explanation: "That's correct. You need to index a video before analyzing it."
