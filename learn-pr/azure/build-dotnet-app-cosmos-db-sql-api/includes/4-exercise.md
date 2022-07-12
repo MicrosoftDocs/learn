@@ -103,10 +103,6 @@ TODO: describe the end-state
 
 1. <!-- Step 1 -->
 
-    ```bash
-    code .
-    ```
-
 1. <!-- Step 2 -->
 
 1. <!-- Step n -->
@@ -132,24 +128,6 @@ TODO: describe the end-state
 ## Check your work
 
 <!-- Introduction paragraph -->
-
-1. Open the **inventorytool.csproj** file
-
-1. Check the project file
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-      </PropertyGroup>
-      <ItemGroup>
-        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.29.0" />
-      </ItemGroup>
-    </Project>
-    ```
 
 1. <!-- Step n (if multiple steps are needed) -->
 
