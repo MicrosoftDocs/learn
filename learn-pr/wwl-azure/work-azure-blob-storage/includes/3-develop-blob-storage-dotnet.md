@@ -8,10 +8,13 @@ This exercise uses the Azure Blob storage client library to show you how to perf
 
 ## Prerequisites
 
-* An Azure account with an active subscription. If you don't already have one, you can sign up for a free trial at [Build in the cloud with an Azure free account](https://azure.com/free).
-* **Visual Studio Code**: You can install it from [Visual Studio Code](https://code.visualstudio.com/).
-* **Azure CLI**: You can install the Azure CLI from [How to install the Azure CLI](/cli/azure/install-azure-cli).
-* The **.NET Core 3.1 SDK**, or **.NET 5.0 SDK**. You can install from [Download .NET](https://dotnet.microsoft.com/download).
+* An Azure account with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
+
+* [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
+
+* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
+
+* The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 
 ## Setting up
 
@@ -86,39 +89,25 @@ In this section we'll create project named *az204-blob* and install the Azure Bl
     ```csharp
     using Azure.Storage.Blobs;
     using Azure.Storage.Blobs.Models;
-    using System;
-    using System.IO;
-    using System.Threading.Tasks;
 
-    namespace az204_blob
+    Console.WriteLine("Azure Blob Storage exercise\n");
+    
+    // Run the examples asynchronously, wait for the results before proceeding
+    ProcessAsync().GetAwaiter().GetResult();
+    
+    Console.WriteLine("Press enter to exit the sample application.");
+    Console.ReadLine();
+    
+    static async Task ProcessAsync()
     {
-        class Program
-        {
-            public static void Main()
-            {
-                Console.WriteLine("Azure Blob Storage exercise\n");
+        // Copy the connection string from the portal in the variable below.
+        string storageConnectionString = "CONNECTION STRING";
 
-                // Run the examples asynchronously, wait for the results before proceeding
-                ProcessAsync().GetAwaiter().GetResult();
+        // Create a client that can authenticate with a connection string
+        BlobServiceClient blobServiceClient = new BlobServiceClient(storageConnectionString);
 
-                Console.WriteLine("Press enter to exit the sample application.");
-                Console.ReadLine();
+        // COPY EXAMPLE CODE BELOW HERE
 
-            }
-
-            private static async Task ProcessAsync()
-            {
-                // Copy the connection string from the portal in the variable below.
-                string storageConnectionString = "CONNECTION STRING";
-
-                // Create a client that can authenticate with a connection string
-                BlobServiceClient blobServiceClient = new BlobServiceClient(storageConnectionString);
-
-                // EXAMPLE CODE STARTS BELOW HERE
-
-
-            }
-        }
     }
     ```
 
@@ -179,7 +168,7 @@ Console.ReadLine();
 
 ### List the blobs in a container
 
-List the blobs in the container by using the `​GetBlobsAsync` method. In this case, only one blob has been added to the container, so the listing operation returns just that one blob. 
+List the blobs in the container by using the `GetBlobsAsync` method. In this case, only one blob has been added to the container, so the listing operation returns just that one blob. 
 
 ```csharp
 // List blobs in the container
@@ -198,7 +187,7 @@ Console.ReadLine();
 
 ### Download blobs
 
-Download the blob created previously to your local file system by using the `​Download​Async` method. The example code adds a suffix of "DOWNLOADED" to the blob name so that you can see both files in local file system.
+Download the blob created previously to your local file system by using the `DownloadAsync` method. The example code adds a suffix of "DOWNLOADED" to the blob name so that you can see both files in local file system.
 
 ```csharp
 // Download the blob to a local file
@@ -215,7 +204,7 @@ using (FileStream downloadFileStream = File.OpenWrite(downloadFilePath))
     await download.Content.CopyToAsync(downloadFileStream);
     downloadFileStream.Close();
 }
-Console.WriteLine("\nLocate the local file to verify it was downloaded.");
+Console.WriteLine("\nLocate the local file in the data directory created earlier to verify it was downloaded.");
 Console.WriteLine("The next step is to delete the container and local files.");
 Console.WriteLine("Press 'Enter' to continue.");
 Console.ReadLine();
@@ -223,7 +212,7 @@ Console.ReadLine();
 
 ### Delete a container
 
-The following code cleans up the resources the app created by deleting the entire container using `​DeleteAsync`. It also deletes the local files created by the app.
+The following code cleans up the resources the app created by deleting the entire container using `DeleteAsync`. It also deletes the local files created by the app.
 
 ```csharp
 // Delete the container and clean up local files created
