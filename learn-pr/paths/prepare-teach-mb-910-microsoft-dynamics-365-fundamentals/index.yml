@@ -11,7 +11,8 @@ metadata:
 title: Prepare to teach MB-910 Microsoft Dynamics 365 Fundamentals (CRM)
 prerequisites: |
   - None
-summary: ""
+summary: |
+  Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft Dynamics 365 Fundamentals (CRM) in an academic program.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
