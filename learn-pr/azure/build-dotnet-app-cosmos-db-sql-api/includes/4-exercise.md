@@ -86,7 +86,7 @@ TODO: describe the end-state
 1. <!-- Step 2 -->
 
     ```csharp
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
     ```
 
 1. <!-- Step n -->
