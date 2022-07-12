@@ -54,7 +54,9 @@ TODO: describe the end-state
 1. Save connection string as environment
 
     ```azurecli
-    COSMOS_ACCOUNT_NAME=$(az cosmosdb list --resource-group $resourceGroup --query [0].name --output tsv)
+    COSMOS_RESOURCE_GROUP="<rgn>[sandbox resource group name]</rgn>"
+
+    COSMOS_ACCOUNT_NAME=$(az cosmosdb list --resource-group $COSMOS_RESOURCE_GROUP --query [0].name --output tsv)
     
     COSMOS_CONNECTION_STRING=$(az cosmosdb keys list --name $COSMOS_ACCOUNT_NAME --resource-group $COSMOS_RESOURCE_GROUP --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
     ```
