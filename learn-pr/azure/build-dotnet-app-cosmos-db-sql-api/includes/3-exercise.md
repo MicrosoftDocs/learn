@@ -8,7 +8,9 @@
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
+
 TODO: add your scenario sub-task
+
 TODO: add your scenario image
 
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
@@ -116,10 +118,15 @@ TODO: describe the end-state
 -->
 
 ## Check your work
+
 <!-- Introduction paragraph -->
+
 1. <!-- Step 1 (if multiple steps are needed) -->
+
 1. <!-- Step 2 (if multiple steps are needed) -->
+
 1. <!-- Step n (if multiple steps are needed) -->
+
 Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

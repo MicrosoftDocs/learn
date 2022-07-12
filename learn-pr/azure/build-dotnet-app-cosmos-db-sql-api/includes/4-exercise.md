@@ -8,7 +8,9 @@
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
+
 TODO: add your scenario sub-task
+
 TODO: add your scenario image
 
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
@@ -21,6 +23,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
+
 TODO: describe the end-state
 
 <!-- 3. Chunked steps -------------------------------------------------------------------------------------
@@ -45,7 +48,9 @@ TODO: describe the end-state
 -->
 
 ## (Chunk 1 heading)
+
 <!-- Introduction paragraph -->
+
 1. Save connection string as environment
 
     ```azurecli
@@ -63,7 +68,9 @@ TODO: describe the end-state
 1. <!-- Step n -->
 
 ## (Chunk 2 heading)
+
 <!-- Introduction paragraph -->
+
 1. <!-- Step 1 -->
 
     ```csharp
@@ -85,7 +92,9 @@ TODO: describe the end-state
     ```
 
 ## (Chunk n heading)
+
 <!-- Introduction paragraph -->
+
 1. <!-- Step 1 -->
 
     ```bash
@@ -93,6 +102,7 @@ TODO: describe the end-state
     ```
 
 1. <!-- Step 2 -->
+
 1. <!-- Step n -->
 
 <!-- 4. Validation -------------------------------------------------------------------------------------------
@@ -114,7 +124,9 @@ TODO: describe the end-state
 -->
 
 ## Check your work
+
 <!-- Introduction paragraph -->
+
 1. Open the **inventorytool.csproj** file
 
 1. Check the project file
@@ -134,6 +146,7 @@ TODO: describe the end-state
     ```
 
 1. <!-- Step n (if multiple steps are needed) -->
+
 Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->

@@ -8,6 +8,7 @@
 
     Example: "You'll be <building> a <Logic App> that <determines the sentiment of new tweets and reacts accordingly>. Here, we'll discuss the project <business logic and target behavior>. We'll also cover the <accounts and software> you'll need."
 -->
+
 TODO: add your topic sentences(s)
 
 <!-- 2. Project overview -------------------------------------------------------------------------------------
