@@ -15352,67 +15352,67 @@
     },
     {
       "source_path": "learn-pr/xamarin/consume-rest-services/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/consume-rest-services/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/consume-rest-services/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/consume-rest-services/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/consume-rest-services/includes/2-detect-network-connectivity.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/2-detect-network-connectivity",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/consume-rest-services/2-detect-network-connectivity",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/consume-rest-services/includes/3-consume-rest-service-with-httpclient.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/3-consume-rest-web-service",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/consume-rest-services/3-consume-rest-web-service",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/consume-rest-services/includes/4-exercise-consume-rest-service-with-httpclient.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/5-exercise-consume-rest-web-service",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/consume-rest-services/5-exercise-consume-rest-web-service",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/consume-rest-services/includes/5-use-platform-specific-network-features",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/4-use-platform-specific-features",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/consume-rest-services/4-use-platform-specific-features",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/consume-rest-services/includes/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/consume-rest-services/6-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/consume-rest-services/6-summary",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/build-mobile-and-desktop-apps/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/2-create-a-xf-project-in-vs.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/3-create-a-maui-project-visual-studio",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/build-mobile-and-desktop-apps/3-create-a-maui-project-visual-studio",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/3-exercise-create-your-first-xamarin-forms-application.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/4-exercise-create-your-first-maui-app",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/build-mobile-and-desktop-apps/4-exercise-create-your-first-maui-app",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/4-design-your-first-xamarin-forms-ui.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/5-add-controls-to-the-ui",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/build-mobile-and-desktop-apps/5-add-controls-to-the-ui",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/5-exercise-create-phone-number-translator-app.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/6-exercise-create-phone-number-translator-app",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/build-mobile-and-desktop-apps/6-exercise-create-phone-number-translator-app",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/build-mobile-and-desktop-apps/7-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/build-mobile-and-desktop-apps/7-summary",
       "redirect_document_id": false    
     },
     {
@@ -15462,122 +15462,122 @@
     },
     {
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/2-implement-stack-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/2-implement-flyout-navigation",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/2-implement-flyout-navigation",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/3-exercise-navigate-between-pages-using-stack-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/3-exercise-implement-flyout-navigation",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/3-exercise-implement-flyout-navigation",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/4-display-content-requiring-user-action-using-modal-pages.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/5-implement-tab-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/4-implement-tab-navigation",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/4-implement-tab-navigation",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/6-exercise-navigate-between-pages-using-tab-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/5-exercise-implement-tab-navigation",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/5-exercise-implement-tab-navigation",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/8-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/8-summary",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/2-specify-the-size-of-a-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/2-specify-size-view",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/2-specify-size-view",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/3-exercise-explore-alignment-options.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/3-exercise-explore-alignment-options",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/3-exercise-explore-alignment-options",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/4-arrange-view-with-stacklayout.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/4-arrange-views-stacklayout",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/4-arrange-views-stacklayout",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/5-exercise-use-stacklayout-to-build-a-ui.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/5-exercise-stacklayout-build-user-interface",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/5-exercise-stacklayout-build-user-interface",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/6-arrange-view-with-grid.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/6-arrange-views-grid",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/6-arrange-views-grid",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/7-exercise-use-grid-to-build-a-ui.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/7-exercise-grid-build-user-interface",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/7-exercise-grid-build-user-interface",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/8-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/customize-xaml-pages-layout/8-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/customize-xaml-pages-layout/8-summary",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/2-benefits-of-using-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/2-xaml-benefits",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/2-xaml-benefits",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/3-types-and-properties-in-xamarin-forms-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/3-types-propeties-maui-xaml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/3-types-propeties-maui-xaml",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/4-event-handling-in-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/4-event-handling-xaml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/4-event-handling-xaml",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/5-exercise-create-your-first-xaml-page.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/5-exercise-create-first-xaml-page",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/5-exercise-create-first-xaml-page",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/6-xaml-markup-extensions.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/6-xaml-markup-extensions",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/6-xaml-markup-extensions",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/7-platform-specific-values-in-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/7-platform-specific-values-xaml",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/7-platform-specific-values-xaml",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/8-exercise-add-behavior-to-your-xaml-page.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/8-exercise-add-behavior-xaml-page",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/8-exercise-add-behavior-xaml-page",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-user-interface-xaml/9-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-user-interface-xaml/9-summary",
       "redirect_document_id": false    
     },
     {
@@ -15647,57 +15647,57 @@
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/2-define-and-use-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/2-define-and-use-resources",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/2-define-and-use-resources",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/3-exercise-use-page-level-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/3-exercise-use-page-level-resources",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/3-exercise-use-page-level-resources",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/4-use-and-update-dynamic-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/4-use-and-update-dynamic-resources",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/4-use-and-update-dynamic-resources",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/5-exercise-use-dynamicresource-to-update-elements.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/5-exercise-use-dynamic-resources-to-update-element",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/5-exercise-use-dynamic-resources-to-update-element",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/6-create-consistent-ui-with-styles.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/6-create-consistent-ui-by-using-styles",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/6-create-consistent-ui-by-using-styles",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/7-exercise-create-and-apply-a-style.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/7-exercise-create-and-apply-a-style",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/7-exercise-create-and-apply-a-style",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/8-create-and-use-applicationwide-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/8-create-and-use-application-wide-resources",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/8-create-and-use-application-wide-resources",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/9-exercise-use-application-wide-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/9-exercise-use-application-wide-resources",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/9-exercise-use-application-wide-resources",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/10-apply-user-accessibility-choices-with-builtin-styles.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/11-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/use-shared-resources/11-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/use-shared-resources/11-summary",
       "redirect_document_id": false    
     },
     {
@@ -15777,47 +15777,47 @@
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/2-choose-between-split-and-pop-over-for-your-master-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/3-define-ui-for-drawer-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/4-exercise-define-drawer-navigation-ui-using-xamarin-forms.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/5-navigate-between-pages-in-a-drawer-menu.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/6-exercise-respond-to-item-selection-in-your-drawer-menu.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/7-display-a-collection-with-split-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/8-exercise-display-a-collection-with-master-detail-split-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/create-multi-page-apps/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/create-multi-page-apps/",
       "redirect_document_id": false    
     },
     {
@@ -16092,37 +16092,37 @@
     },
     {
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/1-introduction",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/store-local-data/1-introduction",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/2-compare-storage-options.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/2-compare-storage-options",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/store-local-data/2-compare-storage-options",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/3-store-data-locally-with-sqlite.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/3-store-data-locally-with-sqlite",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/store-local-data/3-store-data-locally-with-sqlite",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/4-exercise-store-data-locally-with-sqlite.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/4-exercise-store-data-locally-with-sqlite",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/store-local-data/4-exercise-store-data-locally-with-sqlite",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/5-use-sqlite-asynchronously.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/5-use-sqlite-asynchronously",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/store-local-data/5-use-sqlite-asynchronously",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/6-exercise-use-sqlite-asynchronously.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/6-exercise-use-sqlite-asynchronously",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/store-local-data/6-exercise-use-sqlite-asynchronously",
       "redirect_document_id": false    
     },
     {
       "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/dotnet-maui/store-local-data/7-summary",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/dot-net-maui/store-local-data/7-summary",
       "redirect_document_id": false    
     },
     {
