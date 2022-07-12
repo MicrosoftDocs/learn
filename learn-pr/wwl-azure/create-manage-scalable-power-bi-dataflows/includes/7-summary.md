@@ -1,4 +1,4 @@
-Power BI dataflows are an enterprise-focused data prep solution, enabling an ecosystem of data that's ready for consumption, reuse, and integration. Power BI dataflows work well for analysts who want cleanse and transform data one time in Power Query online for reuse in other reports and by other analysts. They're also a great solution to reduce the load placed on source systems to extract data. 
+Power BI dataflows are an enterprise-focused data prep solution, enabling an ecosystem of data that's ready for consumption, reuse, and integration. Power BI dataflows work well for analysts who want to cleanse and transform data one time in Power Query online for reuse in other reports and by other analysts. They're also a great solution to reduce the load placed on source systems to extract data. 
 
 ## Learn more
 
