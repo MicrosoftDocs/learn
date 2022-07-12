@@ -16514,6 +16514,16 @@
       "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
       "redirect_document_id": false    
+    },
+    {
+      "source_path": "learn-pr/paths/build-mobile-apps-with-xamarin-forms/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-apps-with-dotnet-maui/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/customize-your-xamarin-forms-apps/index.yml",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-apps-with-dotnet-maui/",
+      "redirect_document_id": false
     }
   ]
 }
