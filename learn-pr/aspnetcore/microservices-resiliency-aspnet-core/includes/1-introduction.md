@@ -7,7 +7,7 @@ This module focuses on resiliency. Resiliency is about how to make your app faul
 
 You'll modify the app to include some code-based resiliency handling policies in a microservice. You'll also reconfigure your Azure Kubernetes Service (AKS) deployment to implement an infrastructure-based solution.
 
-[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
 
 [!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
 
