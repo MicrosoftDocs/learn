@@ -931,7 +931,7 @@
                     "tr-tr",
                     "sv-se"
                 ],
-                "dotnet-maui/**/*.yml": [
+                "dot-net-maui/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
