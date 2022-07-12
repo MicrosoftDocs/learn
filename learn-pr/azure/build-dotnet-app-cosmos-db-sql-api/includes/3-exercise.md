@@ -50,6 +50,26 @@ TODO: describe the end-state
 
 <!-- Introduction paragraph -->
 
+1. Save connection string as environment
+
+    ```azurecli
+    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+
+    accountName=$(az cosmosdb list --resource-group $resourceGroup --query [0].name --output tsv)
+    
+    connectionString=$(az cosmosdb keys list --name $accountName --resource-group $resourceGroup --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
+    ```
+
+1. Set environment variable
+
+    ```azurecli
+    export COSMOS_CONNECTION_STRING=$connectionString
+    ```
+
+## (Chunk 1 heading)
+
+<!-- Introduction paragraph -->
+
 1. Change to built-in **clouddrive** directory
 
     ```bash
@@ -93,19 +113,51 @@ TODO: describe the end-state
     dotnet build
     ```
 
-## (Chunk n heading)
+## (Chunk 2 heading)
 
 <!-- Introduction paragraph -->
 
-1. <!-- Step 1 -->
+1. <!-- Step 0 -->
 
     ```bash
     code .
     ```
 
+1. Open the **Program.cs** file.
+
+1. <!-- Step 1 -->
+
+    ```csharp
+    using Microsoft.Azure.Cosmos;
+    ```
+
 1. <!-- Step 2 -->
 
+    ```csharp
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    ```
+
 1. <!-- Step n -->
+
+    ```csharp
+    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    ```
+
+1. <!-- Step n -->
+
+    ```csharp
+    using CosmosClient client = new(
+        connectionString: cosmosConnectionString
+    );
+    ```
+
+1. <!-- Step n -->
+
+    ```csharp
+    Console.WriteLine("[Client connected]");    
+    ```
+
+1. **Save** the **Program.cs** file.
 
 <!-- 4. Validation -------------------------------------------------------------------------------------------
 
@@ -129,23 +181,13 @@ TODO: describe the end-state
 
 <!-- Introduction paragraph -->
 
-1. Open the **inventorytool.csproj** file
+1. <!-- Step 1 -->
 
-1. Check the project file
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-      <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-      </PropertyGroup>
-      <ItemGroup>
-        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.29.0" />
-      </ItemGroup>
-    </Project>
+    ```bash
+    dotnet run
     ```
+
+1. Observe output.
 
 1. <!-- Step n (if multiple steps are needed) -->
 

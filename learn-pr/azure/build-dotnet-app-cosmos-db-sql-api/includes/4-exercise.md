@@ -79,53 +79,35 @@ TODO: describe the end-state
     code .
     ```
 
-## (Chunk 2 heading)
-
-<!-- Introduction paragraph -->
-
-1. Open the **Program.cs** file.
-
-1. <!-- Step 1 -->
-
-    ```csharp
-    using Microsoft.Azure.Cosmos;
-    ```
-
-1. <!-- Step 2 -->
-
-    ```csharp
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
-    ```
-
-1. <!-- Step n -->
-
-    ```csharp
-    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
-    ```
-
-1. <!-- Step n -->
-
-    ```csharp
-    using CosmosClient client = new(
-        connectionString: cosmosConnectionString
-    );
-    ```
-
-1. <!-- Step n -->
-
-    ```csharp
-    Console.WriteLine("[Connected]");
-    ```
-
-1. **Save** the **Program.cs** file.
-
 ## (Chunk n heading)
 
 <!-- Introduction paragraph -->
 
 1. <!-- Step 1 -->
 
+    ```csharp
+    Database database = await client.CreateDatabaseIfNotExistsAsync(
+        id: "AdventureWorks"
+    );
+    ```
+
+    ```csharp
+    Console.WriteLine($"[Database created]:\t{database.Id}");
+    ```
+
 1. <!-- Step 2 -->
+
+    ```csharp
+    Container container = await database.CreateContainerIfNotExistsAsync(
+        id: "Products",
+        partitionKeyPath: "/categoryId",
+        throughput: 400
+    );
+    ```
+
+    ```csharp
+    Console.WriteLine($"[Container created]:\t{container.Id}");
+    ```
 
 1. <!-- Step n -->
 
