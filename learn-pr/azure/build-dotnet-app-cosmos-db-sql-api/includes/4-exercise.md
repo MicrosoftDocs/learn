@@ -77,6 +77,8 @@ TODO: describe the end-state
 
 <!-- Introduction paragraph -->
 
+1. Open the **Program.cs** file.
+
 1. <!-- Step 1 -->
 
     ```csharp
@@ -96,6 +98,8 @@ TODO: describe the end-state
         connectionString: cosmosConnectionString
     );
     ```
+
+1. **Save** the **Program.cs** file.
 
 ## (Chunk n heading)
 
@@ -130,6 +134,10 @@ TODO: describe the end-state
 <!-- Introduction paragraph -->
 
 1. <!-- Step n (if multiple steps are needed) -->
+
+    ```dotnetcli
+    dotnet run
+    ```
 
 Optional "exercise-solution" video
 
