@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account
+metadata:
+  title: Replicate and Monitor an Azure Cosmos DB API for MongoDB account
+  description: "Learn about replication, monitoring and troubleshooting performance using Azure Cosmos DB."
+  ms.date: 07/13/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Replicate and Monitor an Azure Cosmos DB API for MongoDB account
+summary: This module will introduce replication, consistency Levels, and Azure monitoring for Azure Cosmos DB.
+abstract: |
+  *   Replication
+  *   Consistency Levels
+  *   Monitor Azure Cosmos DB
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- database
+units:
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.introduction
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.replication
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.consistency-levels
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.monitoring-using-diagnostic-logs
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.troubleshoot-query-performance
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.exercise-monitoring
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.knowledge-check
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.summary
+badge:
+  uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-for-mongodb-account.badge

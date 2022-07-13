@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/13/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Why would a 16500 exception occur?"
+    choices:
+    - content: "Because the query exceeded the memory limit."
+      isCorrect: false
+      explanation: "Incorrect. Exceeding memory limits is defined by exception 16501."
+    - content: "Because the query tried to consume more request than the provisioned rate."
+      isCorrect: true
+      explanation: "Correct. Exception 16500 occurs when the total number of request units consumed is more than the provisioned request-unit rate for the collection and has been throttled."
+    - content: "Because the query tried to insert a duplicate key."
+      isCorrect: false
+      explanation: "Incorrect. Trying to insert a duplicate shard key would raise exception 11000."
+  - content: "Where would the Azure diagnostic logs be forwarded to, if KQL will be used to query the logs?"
+    choices:
+    - content: "Stream to an event hub"
+      isCorrect: false
+      explanation: "Incorrect. Data is sent to an Event Hubs as it reaches Azure Monitor and exported to destinations located in workspace region. The stream itself is not directly queried using KQL."
+    - content: "Archive to a storage account"
+      isCorrect: false
+      explanation: "Incorrect. The format of blobs in Storage Account is in JSON lines, where each record is delimited by a newline, with no outer records array and no commas between JSON records. These blobs are not queried using KQL."
+    - content: "Sent to Log Analytics workspace"
+      isCorrect: true
+      explanation: "Correct. The diagnostic logs will be written into tables that can then be queried using KQL."
+  - content: "Which conflict resolution policy does the Azure Cosmos DB API for MongoDB use?"
+    choices:
+    - content: "First write wins."
+      isCorrect: false
+      explanation: "Incorrect. There's no such policy, the default policy would be Last Write Wins (LWW)."
+    - content: "Custom numerical property."
+      isCorrect: false
+      explanation: "Incorrect. This policy is only available for the SQL API."
+    - content: "Last Write Wins."
+      isCorrect: true
+      explanation: "Correct. This policy uses the timestamp (_ts) to determine which document wrote last. In simple terms, if multiple documents are in conflict, the document with the largest value for the _ts property will win."

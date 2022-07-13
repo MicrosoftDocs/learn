@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.replication
+title: Replication
+metadata:
+  title: Replication
+  description: "Replication"
+  ms.date: 07/13/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-replication.md)]
