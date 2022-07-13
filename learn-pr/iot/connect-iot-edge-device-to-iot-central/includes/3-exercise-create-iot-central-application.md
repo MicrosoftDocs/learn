@@ -8,8 +8,8 @@ In this unit, you'll use the Azure CLI to create an IoT Central application from
 
 When you create the device template for your IoT Edge device, you'll need the deployment manifest and an interface definition on your local machine. You can download these files by right-clicking on the following links and choosing **Save as**:
 
-- [EnvironmentalSensorManifest.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/EnvironmentalSensorManifest.json)
-- [TelemetryInterface.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/TelemetryInterface.json)
+- [EnvironmentalSensorManifest.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/EnvironmentalSensorManifest.json)
+- [TelemetryInterface.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/TelemetryInterface.json)
 
 Remember where you save these files, you'll use them later.
 

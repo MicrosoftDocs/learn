@@ -11,8 +11,6 @@ The [Azure security baseline for Azure Storage baseline](/security/benchmark/azu
 
 One of the most common ways is to use a [Shared Access Signature](/azure/storage/common/storage-sas-overview). A SAS provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
 
-A [shared access signature](/azure/storage/common/storage-sas-overview) (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
-
 - What resources the client may access.
 
 - What permissions they have to those resources.
