@@ -8,7 +8,7 @@ In this unit, you use the IoT Central REST API to add a device template to the a
 
 Typically, the device developer provides you with the device model and interface definitions for the device you're using. You can import the definitions manually in the web UI or use the REST API to add them programmatically.
 
-The device template in this unit defines a [refrigerated truck device](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/learn-rest-api/Refrigerated%20Truck.json) that sends temperature and location telemetry, has a target temperature property, and responds to a commands that request additional temperature information and reboot the device. The device template definition is stored in JSON file.
+The device template in this unit defines a [refrigerated truck device](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/learn-rest-api/Refrigerated%20Truck.json) that sends temperature and location telemetry, has a target temperature property, and responds to a commands that request additional temperature information and reboot the device. The device template definition is stored in JSON file.
 
 The format of device template JSON file is not the same as the format of a device model file. The device template file defines both cloud properties and the device model for the device.
 
@@ -16,7 +16,7 @@ Run the following commands in the Cloud Shell to add a device template in your I
 
 ```azurecli
 # Download the device template JSON file
-DEVICE_TEMPLATE=`curl https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/learn-rest-api/Refrigerated%20Truck.json`
+DEVICE_TEMPLATE=`curl https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/learn-rest-api/Refrigerated%20Truck.json`
 
 # Add the device template to your IoT Central application
 az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/deviceTemplates/dtmi:contoso:refrigerated_truck \
