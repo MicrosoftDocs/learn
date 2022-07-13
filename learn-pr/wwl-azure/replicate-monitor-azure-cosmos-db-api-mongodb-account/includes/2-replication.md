@@ -12,7 +12,7 @@ Replication in Azure Cosmos DB has the following properties:
 - The remaining consistency models are relaxed and perform asynchronous replication that provides a continuum of trade-offs between consistent data and throughput.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram of three replica sets with data replicated between them.](../media/2-replica-sets.png)
+> [![Diagram of three replica sets with data replicated between them.](../media/2-replica-sets.png)](../media/2-replica-sets.png#lightbox)
 
 > [!NOTE]
 > The direction that data flows between replica sets is contingent on whether the account is configured with a single-write region or with multi-region write enabled.
@@ -41,9 +41,9 @@ For existing Azure Cosmos DB accounts, the Replicate data globally pane is used 
 
 ## Evaluate the cost of distributing data globally
 
-When evaluating the cost of a solution that replicates across multiple regions, you should calculate the cost as a multiple of the single-region cost relative to the number of regions.
+When evaluating the cost of a database account that replicates across multiple regions, you should calculate the cost as a multiple of the single-region cost relative to the number of regions.
 
-The core formula is **RUs x \# of regions**. For example, consider a solution that uses approximately **1,000 RUs** in writes to one Azure region at any given point, and replicated to five more regions. Plugging in the numbers to the formula would be:
+The core formula is **`RUs x Number of Regions`**. For example, consider a solution that uses approximately **1,000 RUs** in writes to one Azure region at any given point, and replicated to five more regions. Plugging in the numbers to the formula would be:
 
 ``` 
     1,000 x (1+5) = 6,000

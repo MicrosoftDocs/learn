@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account
 metadata:
-  title: Replicate and Monitor an Azure Cosmos DB API for MongoDB account
+  title: Replicate and monitor an Azure Cosmos DB API for MongoDB account
   description: "Learn about replication, monitoring and troubleshooting performance using Azure Cosmos DB."
   ms.date: 07/13/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Replicate and Monitor an Azure Cosmos DB API for MongoDB account
+title: Replicate and monitor an Azure Cosmos DB API for MongoDB account
 summary: This module will introduce replication, consistency Levels, and Azure monitoring for Azure Cosmos DB.
 abstract: |
   *   Replication

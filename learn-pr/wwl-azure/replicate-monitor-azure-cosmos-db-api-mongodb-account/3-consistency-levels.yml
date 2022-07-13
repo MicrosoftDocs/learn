@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account.consistency-levels
-title: Consistency Levels
+title: Consistency levels
 metadata:
-  title: Consistency Levels
-  description: "Consistency Levels"
+  title: Consistency levels
+  description: "Consistency levels"
   ms.date: 07/13/2022
   author: wwlpublish
   ms.author: calopez
