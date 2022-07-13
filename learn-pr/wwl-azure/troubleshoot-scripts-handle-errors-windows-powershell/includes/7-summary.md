@@ -23,7 +23,7 @@ In this module, you learned about adding more troubleshooting information to scr
 - A non-terminating error occurs when Windows PowerShell determines that it's possible to continue processing after the error. 
 
 
-## Additional Reading
+## Additional reading
 
 To learn more, go through the following documents:
 
