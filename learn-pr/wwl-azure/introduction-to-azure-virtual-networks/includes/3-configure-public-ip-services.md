@@ -44,11 +44,10 @@ Standard IPs are secure by default and closed to inbound traffic. You must expli
 
 Standard IPs can be assigned to network interfaces, Standard public load balancers, application gateways, or VPN gateways. Standard IPs are zone-redundant by default and optionally zonal (they can be created zonal and guaranteed in a specific availability zone).
 
-## Create a public IP address prefix
+## Custom IP address prefix (BYOIP)
 
-You can't bring your own public IP addresses from on-premises networks into Azure. Instead, an IP address is assigned from a pool of available addresses, based on the location of the resource. Public IP addresses are allocated from a range that's unique to each region in each Azure cloud. Public IP addresses can't be moved between regions; all IP addresses are region-specific. If your business needs to have datacenters in different regions, you will have a different public IP address range for each region. You can use technology like Azure Traffic Manager to balance traffic between region-specific instances.
+Addresses from a custom IP address prefix can be used in the same way as Azure owned public IP address prefixes. Addresses from a custom IP address prefix can be associated to Azure resources, interact with internal/private IPs and virtual networks, and reach external destinations outbound from the Azure Wide Area Network.
 
-To ensure a static range of public IP addresses, you can create a public IP address prefix. You can't specify the addresses when you create the prefix, but after the prefix is created, the addresses will be fixed. The IP addresses will be a contiguous range. The advantage of a public IP address prefix is that you can specify firewall rules for these IP addresses with the knowledge that they will not change. You can assign the addresses from a public IP address prefix to any resource in Azure that supports public IP addresses.
 
 ## Check your knowledge
 
