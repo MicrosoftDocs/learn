@@ -3,8 +3,8 @@ uid: learn.wwl.design-strategy-for-securing-data
 metadata:
   title: Design a strategy for securing data
   description: "Learn how to design a cybersecurity strategy to secure data."
-  ms.date: 06/09/2022
-  author: hrasheed-msft
+  ms.date: 07/13/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -17,7 +17,7 @@ abstract: |
   - Specify an encryption standard for data at rest and in motion.
 prerequisites: |
   *  Experience with data security methods, including encryption for data at rest and in transit
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/2-design-a-strategy-for-securing-data.svg
 levels:
 - advanced
 roles:
@@ -35,6 +35,3 @@ units:
 - learn.wwl.design-strategy-for-securing-data.summary
 badge:
   uid: learn.wwl.design-strategy-for-securing-data.badge
-subjects:
-- security
-- architecture
