@@ -10,7 +10,7 @@ In this module, you learned about functions and modules. The following are the k
 
 - Dot sourcing can load from a local file or over the network by using a Universal Naming Convention (UNC) path. 
 
-## Additional Reading
+## Additional reading
 
 To learn more, go through the following documents:
 
