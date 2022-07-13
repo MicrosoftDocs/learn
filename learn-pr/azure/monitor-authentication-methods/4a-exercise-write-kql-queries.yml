@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-authentication-methods.4a-exercise-write-kql-queries
+title: Exercise - Write KQL queries
+metadata:
+  unitType: exercise
+  title: Exercise - Write KQL queries
+  description: Exercise - Write KQL queries
+  ms.date: 06/06/2022
+  author: MarkusVi
+  ms.author: markvi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 15
+content: |
+  [!include[](includes/4a-exercise-write-kql-queries.md)]

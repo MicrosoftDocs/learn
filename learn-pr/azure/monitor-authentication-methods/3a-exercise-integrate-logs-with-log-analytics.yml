@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-authentication-methods.3a-exercise-integrate-logs-with-log-analytics
+title: Exercise - Integrate logs with Log analytics
+metadata:
+  unitType: exercise
+  title: Exercise - Integrate logs with Log analytics  
+  description: Exercise - Integrate logs with Log analytics
+  ms.date: 06/06/2022
+  author: MarkusVi
+  ms.author: markvi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 25
+content: |
+  [!include[](includes/3a-exercise-integrate-logs-with-log-analytics.md)]

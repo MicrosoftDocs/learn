@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-authentication-methods.2-use-logs-get-status-information
+title: Use logs to get status information
+metadata:
+  unitType: learning-content
+  title: Use logs to get status information
+  description: Use Azure AD activity logs to get status information.
+  ms.date: 06/06/2022
+  author: MarkusVi
+  ms.author: markvi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 20
+content: |
+  [!include[](includes/2-use-logs-get-status-information.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which activity log has information about the usage of apps?'
+    choices:
+    - content: Audit
+      isCorrect: false
+      explanation: The audit log has Information about changes applied to your tenant such as users and group management or updates applied to your tenant’s resources.
+    - content: Sign-ins
+      isCorrect: true
+      explanation: The sign-ins log has information about sign-ins and how your resources are used by your users, services and apps.
+    - content: Provisioning
+      isCorrect: false
+      explanation: The provisioning log has information about activities performed by the provisioning service, such as the creation of a group in ServiceNow or a user imported from Workday.
+  - content: 'When should you access activity logs through the Azure portal?'
+    choices:
+    - content: If you need to create a long-term backup of your activity logs.
+      isCorrect: false
+      explanation: To create a long-term backup of your activity logs, you can, for example, use an Azure storage account.
+    - content: If you need to analyze data, create dashboard and alert on specific events. 
+      isCorrect: false
+      explanation: Route your activity logs to an Azure Log Analytics workspace if you need to analyze data, create dashboard and alert on specific events.
+    - content: If you need to review a small number of entries
+      isCorrect: true
+      explanation: Accessing activity logs through the Azure portal is helpful if you need to, for example, investigate a small set of sign-ins caused by a user or app over a short period.
+ 
