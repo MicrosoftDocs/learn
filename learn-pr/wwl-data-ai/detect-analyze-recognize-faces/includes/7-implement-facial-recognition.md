@@ -15,5 +15,5 @@ To train a facial recognition model with the Face service:
 The trained model is stored in your Face (or Cognitive Services) resource, and can be used by client applications to:
 
 - *Identify* individuals in images.
-- *Verify* the identify of a detected face.
+- *Verify* the identity of a detected face.
 - Analyze new images to find faces that are *similar* to a known, persisted face.
