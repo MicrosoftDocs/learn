@@ -17,9 +17,9 @@ The main goal of the MLOps architecture is to create a robust and reproducible s
 1. **Setup**: Create all necessary Azure resources for the solution.
 2. **Model development (inner loop)**: Explore and process the data to train and evaluate the model.
 3. **Continuous integration**: Package and register the model.
-4. **Model deployment (outer loop)**: Deploy and monitor the model.
-5. **Continuous deployment**: Test and deploy the model.
-6. **Monitoring**: Monitor model and compute performance.
+4. **Model deployment (outer loop)**: Deploy the model.
+5. **Continuous deployment**: Test the model and promote to production environment.
+6. **Monitoring**: Monitor model and endpoint performance.
 
 At this point in your project, the Azure Machine Learning workspace is created, the data is stored in an Azure Blob Storage, and the data science team has trained the model.
 
@@ -40,8 +40,5 @@ As part of the setup, the infrastructure team has created:
 5. An Azure Machine Learning development (dev) **workspace** that can be used by the data science team for exploration and experimentation.
 6. A **data asset** in the workspace, which refers to a folder in the Azure Blob Storage that contains the data.
 7. **Compute resources** needed to run notebooks and scripts.
-
-> [!Tip]
-> In reality it's better to use ADLS
 
 Your first task towards MLOps, is to convert the work from the data scientists, so that you can easily automate the model development. Whereas the data science team worked in a Jupyter notebook, you need to use scripts and execute them using Azure Machine Learning jobs. The input of the job will be the data asset created by the infrastructure team, which points to the data residing on the Azure Blob Storage, connected to the Azure Machine Learning workspace.
