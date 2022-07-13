@@ -56,9 +56,9 @@ In addition to using IoT Central's internal Data explorer tools, you can export 
 
 IoT Central's Data export feature can be used to continuously export filtered and enriched IoT data from your IoT Central application. Data export pushes changes in near real time to other parts of your cloud solution for warm-path insights, analytics, and storage.
 
-For example, you can:<br>
+For example, you can:
 
- -  Continuously export telemetry, property changes, device connectivity, device lifecycle, and device template lifecycle data in JSON format in near real time.<br>
+ -  Continuously export telemetry, property changes, device connectivity, device lifecycle, and device template lifecycle data in JSON format in near real time.
  -  Filter the data streams to export data that matches custom conditions.
  -  Enrich the data streams with custom values and property values from the device.
  -  Transform the data streams to modify their shape and content.
