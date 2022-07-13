@@ -1,7 +1,7 @@
 
-Now that you've registered your application with the Azure Active Directory (Azure AD), you require additional configurations to allow your app communicate with the identity platform.
+Now that you've understood how the Microsoft identity platform works, you'll create a Python web app and implement authentication and authorization logic using Azure AD.  
 
-In this exercise, you'll complete the following application-specific configurations on the Azure portal:
+In this exercise, you'll register the Python web app you create in the Azure portal. You'll also complete the following application-specific configurations on the Azure portal:
 
 - Add a redirect URI
 - Configure client credentials
@@ -10,9 +10,44 @@ In this exercise, you'll complete the following application-specific configurati
 
 After configuring these application-specific settings, you'll update your Python Flask web app to use the app registration details.
 
+## Create your Python Flask web application
+
+To complete the rest of the module, you'll need to create a Python Flask web app project. If you prefer using a completed code sample for learning, download the [Python Flask web app sample](https://github.com/Azure-Samples/msid-add-authnz-python-webapp) from GitHub. 
+
+If you prefer following the module and building the Python Flask web app by yourself, follow the steps below:
+
+1. Create a folder to host your application and name it python-flask-webapp, for example.
+1. Navigate to your project directory and create two files named app.py and default_settings.py.
+1. At the end of the module, your project's file and directory structure should look similar to this.
+
+```
+python-webapp/
+├── templates
+│   ├── 
+│   ├── 
+├── app.py
+├── default_settings.py
+│── requirements.txt
+```
+
+## Register your application in the Azure portal
+
+The Microsoft identity platform performs identity and access management (IAM) only for registered applications. Follow these steps to register your application in the Azure portal: 
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/2-portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
+1. Search for and select **Azure Active Directory**.
+1. Under **Manage**, select **App registrations** > **New registration**. 
+1. Enter a **Name** for your application, for example `python-flask-webapp`. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time and multiple app registrations can share the same name.
+1. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**
+1. Don't enter anything for Redirect URI (optional). You'll configure a redirect URI in the next section
+1. Select **Register** to complete the initial app registration.
+
+When registration finishes, the Azure portal displays the app registration's Overview pane. You see the automatically generated Application (client) ID.
+
 ## Add a redirect URI
 
-The redirect URI, also known as Reply URL, is the location where the identity platform redirects a user's client and sends security tokens after authentication. During development, this is the endpoint where you run your app locally. To add a redirect URI for your Python Flask web app, follow these steps:
+ To add a redirect URI for your Python Flask web app, follow these steps:
 
 1. In the Azure portal, in **App registrations**, select your application.
 2. Under **Manage**, select **Authentication**.
@@ -22,8 +57,6 @@ The redirect URI, also known as Reply URL, is the location where the identity pl
 6. Select **Configure**.
 
 ## Configure credentials
-
-Credentials are used by confidential client applications, such as web apps, that access a web API. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime. You can add certificates, client secrets, or federated credentials to your confidential client app registration. 
 
 In this module, you'll use a client secret, also known as an application password. This is a string value that the app can use to prove its identity when requesting a token. To add a client secret, follow these steps:
 
@@ -37,8 +70,6 @@ In this module, you'll use a client secret, also known as an application passwor
 1. Record the client secret value (not its ID) for use in your application's code. This secret value is only shown once when you create it. It will never be displayed again after you leave this page.
 
 ## Add app roles to your web application
-
-App roles defined during the app registration process are used to securely enforce authorization in your application. When using app roles, an administrator grants permissions to roles and not to individual users or groups. The administrator can then assign roles to different users and groups to control who has access to what content and functionality. 
 
 In this module, one route requires an application-defined admin app role. To add this role, follow these steps:
 
@@ -69,7 +100,7 @@ Once you've added the app roles in your application, you can assign users and gr
 
 ## Update the application to use your app registration details.
 
-Open the default_settings.py file and modify the three Azure Active Directory configuration properties using the values from your app's registration in the Azure portal.
+Open the `default_settings.py` file and modify the three Azure Active Directory configuration properties using the values from your app's registration in the Azure portal.
 
 ```Python
 # 'Application (client) ID' of app registration in Azure portal - this value is a GUID

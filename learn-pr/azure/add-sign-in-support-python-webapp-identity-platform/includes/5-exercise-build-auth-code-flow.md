@@ -124,13 +124,12 @@ def authorized():
 
 The route you create in the code snippet above isn't called by the user, but instead, Azure AD redirects the user's browser to this page when they sign in and consent to the required permissions.
 
-
 The other two routes that require a specific level of authentication and authorization are covered in the [sign in users](#sign-in-users) section of this tutorial series.
 
 ## Create a confidential client using the app registration values
 
-The first step of the sign-in process is to send a request to the `/authorize` endpoint on the identity platform. The authorize endpoint can be used to request tokens or authorization codes via the browser. To do this, we create an application instance of the MSAL Python confidential client using the app registration values, as follows:
-
+The first step of the sign-in process is to send a request to the `/authorize` endpoint on the identity platform. The authorize endpoint can be used to request tokens or authorization codes via the browser. To do this, we create an application instance of
+ the MSAL Python confidential client using the app registration values, as follows:
 
 ```python
 # Create an MSAL client using the app's configuration values and provide the token cache.
