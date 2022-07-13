@@ -9,3 +9,6 @@ In this module, you'll:
 - Read from the console and capture user input.
 - Convert between data types.
 
+## Prerequisites
+
+- Familiarity with how to [Set up your F# development environment](../../fsharp-first-steps/includes/4-set-up-development-environment.md).
