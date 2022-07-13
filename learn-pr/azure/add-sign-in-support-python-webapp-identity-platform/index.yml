@@ -17,10 +17,10 @@ abstract: |
     - Add code to support core authentication and authorization features.
     - Sign in your organizational users and fetch data from a protected web API.
 prerequisites: |
-  - An Azure Active Directory (Azure AD) tenant with permissions for managing app registrations. To create a free account, we recommend going through [Create an Azure account](/learn/modules/create-an-azure-account/) module.
+  - An Azure account with permissions to manage app registrations in an Azure Active Directory (Azure AD) tenant. If you don't have an Azure account, [create a free account](https://azure.microsoft.com/free/).
   - Familiarity with basic Python programming concepts and terminology.
   - An understanding of cloud computing concepts and services.
-  - Basic knowledge of the [Microsoft identity platform](/learn/modules/explore-microsoft-identity-platform/).
+  - Knowledge of what the Microsoft identity platform is and how it works at the beginner level.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner

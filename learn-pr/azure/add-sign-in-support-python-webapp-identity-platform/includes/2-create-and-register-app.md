@@ -2,7 +2,7 @@ The Microsoft identity platform performs identity and access management (IAM) on
 
 ## Create your Python Flask web application
 
-To complete the rest of the module, you'll need to create a Python Flask web app project. If you prefer using a completed code sample for learning, download the [Python Flask web app sample]https://github.com/Azure-Samples/msid-add-authnz-python-webapp) from GitHub. 
+To complete the rest of the module, you'll need to create a Python Flask web app project. If you prefer using a completed code sample for learning, download the [Python Flask web app sample](https://github.com/Azure-Samples/msid-add-authnz-python-webapp) from GitHub. 
 
 If you prefer following the module and building the Python Flask web app by yourself, follow the steps below:
 
