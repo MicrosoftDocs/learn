@@ -5,7 +5,7 @@ You can investigate the solution while the script continues to deploy the Docker
 Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-aspnet-core*. 
 
 > [!IMPORTANT]
-> For brevity, all directory paths described in this module are relative to the *modules/microservices-aspnet-core* directory.
+> For brevity, all directory paths described in this module are relative to the *modules/microservices-resiliency-aspnet-core* directory.
 
 The following subdirectories located in *src* contain .NET projects, each of which is containerized and deployed to AKS:
 
@@ -30,7 +30,7 @@ You can begin exploring these services (when ready):
 ```
 
 > [!TIP]
-> This output can be found in *modules/microservices-aspnet-core/deployment-urls.txt*.
+> This output can be found in *modules/microservices-resiliency-aspnet-core/deployment-urls.txt*.
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
