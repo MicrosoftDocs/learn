@@ -73,7 +73,7 @@ The first step with any Azure Function project is to get your function running l
     func start
     ```
 
-10. You might notice that if a bus enters or exits a geofence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.
+10. You might notice that if a bus enters or exits a geofence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you'll deploy and configure the Logic App to push notifications.
 
 11. Run **CTRL** + **C** in the terminal to stop the function.
 
@@ -94,13 +94,13 @@ Next, in order to publish the function to the Azure Function app you deployed in
 
 5. Select **New application setting** and add **`AzureSQLConnectionString`** with the value from your **local.settings.json** file. Select **OK**.
 
-6. Select **New application setting** and add **`LogicAppUrl`** with the value **`https://azure.com`**. You will update this value later. Select **OK**.
+6. Select **New application setting** and add **`LogicAppUrl`** with the value **`https://azure.com`**. You'll update this value later. Select **OK**.
 
 7. Select **Save** to add the new settings. Select **Continue** to confirm.
 
 8. In the **Overview** tab, select **Get publish profile** to download the publish profile for your function.
 
-9. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **New repository secret**.
+9. Navigate to your GitHub repository for this sample and select **Settings** > **Secrets** > **Actions** > **New repository secret**.
 
 10. Name the secret **AZURE_FUNCTIONAPP_PUBLISH_PROFILE** and for the *Value*, copy and paste the contents from the publish profile you downloaded.
 
@@ -143,4 +143,4 @@ Now that everything is deployed, it's time to monitor the results in the Azure p
 
 1. Review the results under the **Invocations** and **Logs** tabs. They should be similar to what you saw in the terminal when you ran the function locally.
 
-1. Just like locally, you might notice that if a bus enters or exits a geofence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you will deploy and configure the Logic App to push notifications.
+1. Just like locally, you might notice that if a bus enters or exits a geofence, there will be an error in calling the Logic App. That's OK for now. In a future exercise, you'll deploy and configure the Logic App to push notifications.
