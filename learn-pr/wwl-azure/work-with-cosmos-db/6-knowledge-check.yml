@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/14/2022
+  ms.date: 07/13/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: "String"
       isCorrect: true
-      explanation: "That's correct. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
+      explanation: "Correct. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
     - content: "Integer"
       isCorrect: false
-      explanation: "That's incorrect. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
+      explanation: "Incorrect. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
     - content: "Boolean"
       isCorrect: false
-      explanation: "That's incorrect. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
+      explanation: "Incorrect. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
   - content: "Which of the following would one use to validate properties of an item being created?"
     choices:
     - content: "Pre-trigger"
       isCorrect: true
-      explanation: "That's correct. Pre-triggers can be used to conform data before it is added to the container."
+      explanation: "Correct. Pre-triggers can be used to conform data before it's added to the container."
     - content: "Post-trigger"
       isCorrect: false
-      explanation: "That's incorrect. Post-triggers run after an item is created."
+      explanation: "Incorrect. Post-triggers run after an item is created."
     - content: "User-defined function"
       isCorrect: false
-      explanation: "That's incorrect. User-defined functions run on existing data."
+      explanation: "Incorrect. User-defined functions run on existing data."

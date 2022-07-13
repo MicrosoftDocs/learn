@@ -1,26 +1,25 @@
-In this exercise, you'll use GitHub Learning Lab to create a new repository that contains all of the necessary files for a Node.js project. Then, GitHub Learning Lab walks you through the process of using a template to create a CI workflow for the project. Finally, you'll customize the workflow.
+This exercise checks your knowledge on how to create, customize and test a continuous integration workflow for a project. 
 
-The GitHub Learning Lab is an integrated experience that's easy to use. You'll get feedback and instructions throughout the lab as you work in your GitHub repository.
+## Getting started
 
-Here are a few suggestions to make the Learning Lab exercise more enjoyable:
+When you click the _Start the exercise on GitHub_ button below, you'll be navigated to a public GitHub template repository that will prompt you to complete a series of small challenges. Before you can begin the exercise, complete the below tasks:
 
-1. GitHub Learning Lab will be installed on your account in the first step of this lab. If you're asked, be sure to *install it on all repositories*. This will not affect the organizations of which you're a member, just the personal repositories that the lab creates for you.
-1. After the install, you may be returned to their main page. To get back to your lab, just use the button on the bottom of this page again.
-1. GitHub will create a repository for you to use. Give permissions to GitHub Learning Lab.
-1. GitHub Learning Lab will set itself as a reviewer on your pull requests so that it can give you the next steps just in time. Sometimes reviewing your pull request will take a few minutes.
-1. When you are given a link for creating or editing a file or told to open a tab, **be sure to open it in another tab in your browser**. This way, you can come back to the instructions without leaving the file.
-1. Comments and instructions will continue on your pull request or in an issue on your repository.
+- Select the _Start course_ button or the _Use this template_ feature within the template repository. This will prompt you to create a new repository. We recommend creating a public repository, as private repositories will use Actions minutes.
+After you make your own repository from the template, wait about 20 seconds and refresh.
+
+- Follow the instructions in the repository's README to understand how the exercise works, its learning objectives, and how to successfully complete the exercise.
 
 When you've finished the exercise in GitHub, return here for:
 
 > [!div class="checklist"]
 > * A quick knowledge check 
 > * A summary of what you've learned
-> * To learn about your next steps
 > * To earn a badge for completing this module
 
-<!-- We discussed possibly having a video. What do you think?
-) -->
+>[!Note] 
+> You do not need to modify any of the workflow files to complete this exercise. 
+> **Altering the contents in this workflow can break the exercise's** 
+> **ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
-> [Start the learning lab on GitHub](https://lab.github.com/githubtraining/github-actions:-continuous-integration?azure-portal=true)
+> [Start the exercise on GitHub](https://github.com/skills/continuous-integration)
