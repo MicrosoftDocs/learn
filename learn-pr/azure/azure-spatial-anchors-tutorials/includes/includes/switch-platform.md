@@ -1,6 +1,6 @@
 ## [Unity 2020 + OpenXR](#tab/openxr)
 
-1. On the Unity menu, select **Window** > **Package Manager**  to open the Package Manager window. 
+1. On the menu bar, select **Window** > **Package Manager**. 
 
 1. Verify that AR Foundation version 4.1.7 is installed.
 
