@@ -99,19 +99,23 @@ Identify the subtasks of module title.
     
     This gets data about CPU usage and free space.
     
-    Step 2: Change query to last seven days.
+    Step 2: Set the time range of the query to the past seven days.
 
 1. Exercise: Add operating system information to the result step
 
-    To get a clearer picture, you want to add information about the operating system running on each of the computers.
- 
     Step 1: Look at the Heartbeat table.
+
+    You want to get a better understanding of the computers in your result set.
+    
+    Look at the Heartbeat table to see what additional information might be helpful to you:
 
     ```kusto
     Heartbeat
     ```
 
-    Step 2: Add the following lines to the previous query:  
+    Step 2: 
+    
+    To include information about the operating system running on each of the computers, add the following lines to the previous query:  
     
     ```kusto
     | join kind=inner (
@@ -139,11 +143,10 @@ Identify the subtasks of module title.
 
 1. Exercise: Analyze CPU usage
 
-    For each computer, in the past week, min, max, 99 percentile...
-    Identify computers with high CPU usage
-    
     Step 1:
-
+    
+    For each computer, you want to find the min, max, 99 percentile CPU usage in the past week. 
+    
     ```kusto    
     Perf
     | where TimeGenerated > ago(7d) and CounterName == "% Processor Time" and InstanceName == "_Total" and ObjectName == "Processor" 
@@ -152,7 +155,8 @@ Identify the subtasks of module title.
     
     Step 2:
     
-    +
+    Identify computers with high CPU usage.
+    
     ```kusto
     | where percentile_CounterValue_99 > 50
     ```
