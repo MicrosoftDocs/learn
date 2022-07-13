@@ -3,7 +3,7 @@ uid: learn.wwl.examine-components-of-azure-digital-twins-solution
 metadata:
   title: Examine the components of an Azure Digital Twins solution
   description: "This module introduces you to the Azure Digital Twins service, the features and capabilities that the service provides, and the component elements that are used to build an Azure Digital Twins environment."
-  ms.date: 07/11/2022
+  ms.date: 07/13/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
