@@ -12,7 +12,7 @@ You can use SQL database auditing to:
 - Report on database activity. You can use pre-configured reports and a dashboard to get started quickly with activity and event reporting.
 - Analyze reports. You can find suspicious events, unusual activity, and trends.
 
-Audit logs are written to Append Blobs in an Azure Blob storage account that you designate. Audit policies can be applied at the server-level or database-level. Once enabled, you can use the Azure portal to view the logs, or send them to Log Analytics or Event Hub for further processing and analysis.
+Audit logs are written to Append Blobs in an Azure Blob storage account that you designate. Audit policies can be applied at the server-level or database-level. Once enabled, you can use the Azure portal to view the logs, or send them to Log Analytics or Event Hubs for further processing and analysis.
 
 ## Auditing in practice
 
@@ -31,11 +31,11 @@ Let's look at the steps you take to set up auditing on your system.
 
 1. In the left menu pane, under **Security**, select **Auditing**.
 
-1. Auditing is turned off by default. To enable it on your database server, toggle **ON**.
+1. Auditing is turned off by default. To enable it on your database server, toggle **Enable Azure AQL Auditing** to **ON**.
 
-1. After the ON button is selected, select the **Storage** checkbox, and then select **Storage details** to define the storage account.
+1. After the ON button is selected, select the **Storage** checkbox.
 
-1. In the **Storage settings** pane, you can select an existing storage account, or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Select **Storage account**, which will then open up the **Create storage account** pane. Name the storage account `serverNNNNauditing`, replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults, and select **OK**. Back in the **Storage settings** pane, leave the defaults, and select **OK**.
+1. Select your subscription. You can select an existing storage account, or create a new storage account to store your audits. The storage account must be configured to use the same region as your server. In this case, we'll define a new storage account. Under **Storage account**, select **Create new**. The **Create storage account** pane displays. Name the storage account `serverNNNNauditing`, replacing the `NNNN` with the number from your logical server name. Leave the rest of the options at their defaults, and select **OK**. Back in the **Storage settings** pane, leave the defaults, and select **OK**.
 
 1. Select **Save** in the toolbar to save your changes and enable auditing on your database server.
 
@@ -60,13 +60,13 @@ Now let's generate some audit records and take a look at what you can expect.
 
 1. Because we enabled auditing at the server-level, you should see that it's enabled here. Select **View audit logs** in the top menu bar to view the logs.
 
-1. You should see one or more audit records with **PRINCIPAL NAME** of _ApplicationUser_ and **EVENT TYPE** of **BATCH COMPLETED**. One of them should contain the details of the query you just executed. You might also see other events such as authentication failures and success. Select any record to see the full details of the event.
+1. You should see one or more audit records with **PRINCIPAL NAME** of _ApplicationUser_ and **EVENT TYPE** of **BATCH COMPLETED**. One of them should contain the details of the query you executed. You might also see other events such as authentication failures and success. Select any record to see the full details of the event.
 
 ![An example showing an event in the audit log.](../media/5-audit-log.png)
 
 These actions configure the audits at the database server level, and will apply to all databases on the server. You can also configure auditing at a database level.
 
-Let's take a look at another feature that leverages these logs to increase the security of your database.
+Let's take a look at another feature that uses these logs to increase the security of your database.
 
 ## Advanced Data Security for Azure SQL Database
 
@@ -82,69 +82,52 @@ Let's enable ADS on our database. ADS is a server-level setting, so we'll start 
 
 1. Back in the portal, go to your SQL server. In the search bar at the top of the portal, search for **serverNNNN**, and then select the server.
 
-1. In the left menu pane, under **Security**, select **Defender for Cloud**.
+1. In the left menu pane, under **Security**, select **Microsoft Defender for Cloud**.
 
-1. Select **ON** to enable Microsoft Defender for SQL.
+1. Select **Enable Microsoft Defender for SQL**.
 
-1. In the **Vulnerability Assessment Settings** box, a default storage account appears that will be used to store the results of scans.
+1. Select **Configure** next to the message **Enabled at the subscription-level**. The **Server settings** pane displays.
 
-1. You can also turn on **periodic recurring scans** to configure Vulnerability Assessment to run automatic scans once per week. A scan result summary is sent to the email address(es) you provide. In this case, we'll leave this **OFF**. Select **Save** at the top to save your settings, and enable Vulnerability Assessment.
+1. **Periodic recurring scans** is on by default. When a weekly scan is triggered, a scan result summary is sent to the email address you provide. In this case, we'll turn this off. **Also send email notification to admins and subscription owners** is enabled by default to send the threats to the service administrators. Select **Save** at the top to save your settings.
 
-1. You can optionally define where notification emails will be delivered for both the vulnerability assessment and Advanced Threat Protection as a list of semicolon separated email addresses. **Also send email notification to admins and subscription owners** is enabled by default to send the threats to the service administrators.
+1. Under **Advanced Threat Protection Settings**, select **Add your contact details...** to open the Defender for Cloud **Email notifications** pane. Here, you can optionally define where notification emails will be delivered for both the vulnerability assessment and Advanced Threat Protection as a list of semicolon separated email addresses. **Also send email notification to admins and subscription owners** is enabled by default to send the threats to the service administrators.
 
-1. Select **Advanced Threat Protection Types** to take a quick look at those. The preferred option is All, which is the default setting.
+1. You can also select **Enable Auditing....** to turn on **Azure SQL Auditing**.
 
-    **All** represents the following values:
-    - SQL injection reports where SQL injection attacks have occurred.
-    - SQL injection vulnerability reports where the possibility of a SQL injection is likely.
-    - Anomalous client login looks at logins that are irregular and could be cause for concern, such as a potential attacker gaining access.
-
-1. Select **Save** to apply the changes and enable Advanced Data Security on your server.
-
-After ADS is enabled, you'll initiate vulnerability scans and view details and results at a database level.
+1. Select **Save** to apply the changes.
 
 You'll receive email notifications as vulnerabilities are detected. The email will outline what occurred and the actions to take.
 
-![An example notification warning from Advanced Threat Protection.](../media/5-email-with-warning.png)
+![An example notification warning from Microsoft Defender for Cloud.](../media/5-email-with-warning.png)
 
 ### Data discovery & classification
 
 1. Go to your marketplace database. In the search bar at the top of the portal, search for marketplace, and then select the database in the portal.
 
-1. In the left menu pane, under **Security**, select **Advanced Data Security**.
+1. In the left menu pane, under **Security**, select **Data Discovery & Classification**.
 
-1. Select the **Data Discovery & Classification** pane.
+The **Classification** tab shows columns within your tables that need to be protected. Some of the columns may have sensitive information or might be considered classified in different countries or regions.
 
-The Data Discovery & Classification pane shows columns within your tables that need to be protected. Some of the columns may have sensitive information or may be considered classified in different countries or regions.
+:::image type="content" source="../media/5-azure-sql-database-data-classification.png" alt-text="Screenshot that shows the Classification tab in the Data Discovery and Classification pane." lightbox="../media/5-azure-sql-database-data-classification.png":::
 
-![Data Discovery & Classification.](../media/5-data-discovery-and-classification.png)
+A message appears if any columns need protection configured. This message will be formatted like *15 columns with classification recommendations*. You can select the text to view the recommendations.
 
-A message appears if any columns need protection configured. This message will be formatted like *"We have found 10 columns with classification recommendations"*. You can select the text to view the recommendations.
-
-Select the columns that you want to classify by selecting the checkmark next to the column, or select the checkbox to the left of the schema header. Select the Accept selected recommendations options to apply the classification recommendations.
+Select the columns that you want to classify by selecting the checkmark next to the column, or select the checkbox to the left of the schema header. Select the **Accept selected recommendations** button to apply the classification recommendations.
 
 Next, you'll edit the columns and then define the information type and the sensitivity label for the database. Select **Save** to save the changes.
 
 No active recommendations should be listed once you've managed the recommendations successfully.
 
-### Vulnerability assessment
+### Security vulnerabilities
 
-Select the **Vulnerability Assessment** pane.
+In the left menu pane, under **Security**, select **Microsoft Defender for Cloud**.
 
-![Vulnerability Assessment Dashboard.](../media/5-vulnerability-assessment-dashboard.png)
+The **Recommendations** section lists configuration issues on your database and the associated risk.
 
-The Vulnerability Assessment lists configuration issues on your database and the associated risk. For example, in the image above, you can see the server-level firewall needs to be set up.
+Select a recommendation. On the recommendation pane, you'll see the details, such as the risk level, which database it applies to, a description of the vulnerability, and the recommended remediation to fix the issue. Apply the remediation to fix the issue or issues. Make sure to address all the vulnerabilities.
 
-Select the Vulnerability Assessment pane to review a full list of vulnerabilities. From here, you can select each individual vulnerability.
+### Security incidents and alerts
 
-On the vulnerability pane, you will see the details, such as the risk level, which database it applies to, a description of the vulnerability, and the recommended remediation to fix the issue. Apply the remediation to fix the issue or issues. Make sure to address all the vulnerabilities.
+This section displays a list of detected threats.
 
-### Threat detection
-
-Select the **Threat Detection** pane.
-
-This displays a list of detected threats. For example, here you can see one potential SQL injection attack listed.
-
-![Threat Detection.](../media/5-threat-detection-dashboard.png)
-
- Address any issues by following the recommendations. For issues such as the SQL injection warnings, you'll be able to look at the query and work backward to where the query is being executed in code. Once found, you should rewrite the code so it will no longer have the issue.
+Address any issues by following the recommendations. For issues such as the SQL injection warnings, you'll be able to look at the query and work backward to where the query is being executed in code. Once found, you should rewrite the code so it will no longer have the issue.

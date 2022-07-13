@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.close-out-course
 metadata:
-  title: Close out the course
+  title: Microsoft Learn for Educators student certification
   description: "Use the resources available from Microsoft to prepare to teach your course and feel confident you're providing your students the skills they need skills to pass a Microsoft Certification exam."
-  ms.date: 07/04/2022
+  ms.date: 07/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Close out the course
+title: Microsoft Learn for Educators student certification
 summary: Use the resources available from Microsoft to prepare to teach your course and feel confident you're providing your students the skills they need skills to pass a Microsoft Certification exam.
 abstract: |
   After completing this module, you should be able to:

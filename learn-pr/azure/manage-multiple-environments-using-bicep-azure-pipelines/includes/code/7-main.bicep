@@ -34,11 +34,21 @@ var environmentConfigurationMap = {
         capacity: 1
       }
     }
+    storageAccount: {
+      sku: {
+        name: 'Standard_LRS'
+      }
+    }
   }
   Test: {
     appServicePlan: {
       sku: {
         name: 'F1'
+      }
+    }
+    storageAccount: {
+      sku: {
+        name: 'Standard_GRS'
       }
     }
   }
@@ -94,9 +104,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
   name: storageAccountName
   location: location
   kind: 'StorageV2'
-  sku: {
-    name: 'Standard_LRS'
-  }
+  sku: environmentConfigurationMap[environmentType].storageAccount.sku
 }
 
 output appServiceAppHostName string = appServiceApp.properties.defaultHostName

@@ -21,7 +21,7 @@ Plan before your act. This module will help you understand what DevOps is and ho
 
 ## What is the DevOps transformation journey?
 
-The DevOps transformation journey is a series of 10 learning paths. It familiarizes you with Azure DevOps and GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.
+The DevOps transformation journey is a series of 9 learning paths. It familiarizes you with Azure DevOps and GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.
 
 ### Why should I take the DevOps learning path?
 
