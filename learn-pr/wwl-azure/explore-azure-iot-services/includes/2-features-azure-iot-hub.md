@@ -45,7 +45,7 @@ You can manage your devices connected to IoT Hub with an array of built-in funct
  -  Set device state either per-device or based on common characteristics of devices.
  -  Automatically respond to a device-reported state change with message routing integration.
 
-## Connect your devices<br>
+## Connect your devices
 
 Use the Azure IoT device SDK libraries to build applications that run on your devices and interact with IoT Hub. Supported platforms include multiple Linux distributions, Windows, and real-time operating systems. Supported languages include C, C\#, Java, Python, and Node.js. IoT Hub and the device SDKs support a wide range of protocols for connecting devices, including HTTPS, AMQP, AMQP over WebSockets, MQTT, and MQTT over WebSockets.
 
