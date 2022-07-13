@@ -58,7 +58,7 @@ curl --header "Content-Type: application/json" --request POST --data '{"inputNam
 4.  In the Visual Studio Code Debug view, you'll see the variables in the left panel.
 5.  To stop your debugging session, select the **Stop** button or press **Shift** \+ **F5**, and then run **Azure IoT Edge: Stop IoT Edge Simulator** in the command palette to stop the simulator and clean up.
 
-## Debug in attach mode with IoT Edge simulator (C\#)<br>
+## Debug in attach mode with IoT Edge simulator (C\#)
 
 Your default solution contains two modules, one is a simulated temperature sensor module and the other is the pipe module. The simulated temperature sensor sends messages to the pipe module and then the messages are piped to the IoT Hub. In the module folder you created, there are several Docker files for different container types. Use any of the files that end with the extension .debug to build your module for testing.
 
