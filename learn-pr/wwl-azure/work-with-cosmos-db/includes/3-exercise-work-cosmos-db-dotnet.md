@@ -168,27 +168,27 @@ It's time to start adding the packages and code to the project.
 
 Copy and paste the `CreateDatabaseAsync` method after the  `CosmosAsync` method. `CreateDatabaseAsync` creates a new database with ID `az204Database` if it doesn't already exist.
 
-    ```csharp
-    private async Task CreateDatabaseAsync()
-    {
-        // Create a new database using the cosmosClient
-        this.database = await this.cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
-        Console.WriteLine("Created Database: {0}\n", this.database.Id);
-    }
-    ```
+```csharp
+private async Task CreateDatabaseAsync()
+{
+    // Create a new database using the cosmosClient
+    this.database = await this.cosmosClient.CreateDatabaseIfNotExistsAsync(databaseId);
+    Console.WriteLine("Created Database: {0}\n", this.database.Id);
+}
+ ```
 
 ## Create a container
 
 Copy and paste the `CreateContainerAsync` method below the `CreateDatabaseAsync` method.
 
-    ```csharp
-    private async Task CreateContainerAsync()
-    {
-        // Create a new container
-        this.container = await this.database.CreateContainerIfNotExistsAsync(containerId, "/LastName");
-        Console.WriteLine("Created Container: {0}\n", this.container.Id);
-    }
-    ```
+```csharp
+private async Task CreateContainerAsync()
+{
+    // Create a new container
+    this.container = await this.database.CreateContainerIfNotExistsAsync(containerId, "/LastName");
+    Console.WriteLine("Created Container: {0}\n", this.container.Id);
+}
+```
 
 ## Run the application
 
