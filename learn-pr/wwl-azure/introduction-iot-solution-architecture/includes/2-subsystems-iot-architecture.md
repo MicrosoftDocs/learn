@@ -17,11 +17,11 @@ For more information about the Azure WAF, see the [Microsoft Azure Well-Architec
 
 The [IoT workload for the Microsoft Azure Well-Architected Framework](/azure/architecture/framework/iot/iot-overview) and the [Azure IoT reference architecture](/azure/architecture/reference-architectures/iot) can be used to help you design, build, and run your IoT solution according to your requirements and constraints. The services discussed in these resources work together across three components:
 
- -  Things: The physical objects, or things such as industrial equipment, devices, and sensors, that connect to the cloud persistently or intermittently.<br>
- -  Insights: The information collected by the things that's analyzed and turned into actionable knowledge either by people or AI.<br>
- -  Actions: The way people or systems respond to insights and connect them to their business, as well as the systems and tools.<br>
+ -  Things: The physical objects, or things such as industrial equipment, devices, and sensors, that connect to the cloud persistently or intermittently.
+ -  Insights: The information collected by the things that's analyzed and turned into actionable knowledge either by people or AI.
+ -  Actions: The way people or systems respond to insights and connect them to their business, as well as the systems and tools.
 
-Your architecture decisions should be driven by a set of guiding principles and use a layered approach that identifies the logical elements of an IoT solution.<br>
+Your architecture decisions should be driven by a set of guiding principles and use a layered approach that identifies the logical elements of an IoT solution.
 
 ## Core subsystems of an IoT solution
 
