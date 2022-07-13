@@ -4,8 +4,8 @@ metadata:
   title: Migrate your relational data stored in SQL Server to Azure SQL Database
   description: Plan and implement the migration of relational data from SQL Server to Azure SQL Database. Select the appropriate migration strategy for your database, and then use Data Migration Assistant to do the assessment and the migration.
   ms.date: 07/11/2022
-  author: jboeshart
-  ms.author: jaboes
+  author: rwestMSFT
+  ms.author: randolphwest
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate your relational data stored in SQL Server to Azure SQL Database
