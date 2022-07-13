@@ -19,7 +19,7 @@ The table below shows the full organizational security landscape, demonstrating 
 | Domain | Product | Capability | Details |
 |---|---|---|---|
 | Identity and Access |  |  |  |
-|  | Azure Active Directory | Cloud-based Identity, Access Management Service | Password-less & MFA, Hello for Business, Authenticator App, RDO2 Keys, Azure AD PIM, B2B & B2C |
+|  | Azure Active Directory | Cloud-based Identity, Access Management Service | Password-less & MFA, Hello for Business, Authenticator App, FIDO2 Keys, Azure AD PIM, B2B & B2C |
 |  | Identity Protection | Leaked Credential Protection | Behavioral Analytics |
 |  | Identity Governance | Identity, Access, and Privileged Access Lifecycle, Entitlement Management, Access Requests, Workflow, Policy and Role Management, Governance Enforcement | Azure AD User Provisioning, Azure AD PIM, Azure AD Reports, and Enterprise Mobility+Security |
 |  | Defender for Identity | User Behavior and Activities, Investigate Alerts, AD FS Protection, Lateral Movement Detection | AD, Azure AD, SecOps, ADFS, |
