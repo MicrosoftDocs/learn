@@ -37,7 +37,7 @@ WITH (RESUMABLE=ON, ONLINE=ON)
 GO
 ```
 
-In a query window, resume the index operation:
+In a query window, pause the index operation: 
 
 ```sql
 ALTER INDEX IX_Customer_PersonID_ModifiedDate ON Sales.Customer PAUSE

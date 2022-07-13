@@ -1,6 +1,6 @@
 After you've added users to your Intune tenant, we recommend that you grant a few users administrative permission. Microsoft Intune includes a set of admin roles that you can assign to users in your organization using the Microsoft Endpoint Manager admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. 
 
-The account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, don't use a global administrator for day-to-day management tasks. While an administrator doesn't require an Intune license to access Intune within the Microsoft Endpoint Manager admin center, in order to perform certain management tasks, such as setting up the Exchange service Connector,  an Intune license is required.
+The account you use to create your Microsoft Intune subscription is a global administrator. As a best practice, don't use a global administrator for day-to-day management tasks. While an administrator doesn't require an Intune license to access Intune within the Microsoft Endpoint Manager admin center, in order to perform certain management tasks, such as setting up the Exchange service Connector, an Intune license is required.
 
 ### Give permissions in Microsoft Endpoint Manager admin center
 
@@ -9,11 +9,11 @@ Because Intune is a part of Microsoft Endpoint Manager, you can add roles using 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?azure-portal=true&linkid=2109431) with a global administrator account > **Users** > **All users** > *the user's name*. You'll see the user's **Profile**.
 2. Select **Assigned roles** > **Add assignments**.
 3. In the **Directory roles** pane, select the roles you want to assign to the user.
-4. Click **Add**.
+4. Select **Add**.
 
 ### Give permissions in Microsoft 365 admin center
 
-You can also use the Microsoft 365 admin center to add roles. There are a number of additional roles available in the Microsoft 365 admin center that you can use with a variety of Microsoft services. The Microsoft 365 admin center also lets you manage Azure AD roles and Microsoft Intune roles. 
+You can also use the Microsoft 365 admin center to add roles. There are a number of additional roles available in the Microsoft 365 admin center that you can use with a variety of Microsoft services. The Microsoft 365 admin center also lets you manage Azure AD roles and Microsoft Intune roles.
 
 > [!TIP]
 > To access the Microsoft 365 admin center, your account must have a **Sign-in allowed** set. In the portal under **Profile**, set **Block sign in** to **No** to allow access. This status is different from having a license to the subscription. By default, all user accounts are **Allowed**. Users without administrator permissions can use the Microsoft 365 admin center to reset Intune passwords.
@@ -26,14 +26,14 @@ To grant permissions, follow these steps:
     > [!NOTE]
     > If you don't see a **Roles** section in the user pane, check whether the user has a license in the **Active users** list.
  
-3. In the **Manage admin roles** pane, choose the admin permission to grant from the list of available roles.
-4. Click **Save changes**.
+3. In the **Manage admin roles** pane, choose the admin permission(s) to grant from the list of available roles.
+4. Select **Save changes**.
 
 ### Common types of administrators
 
 Assign users one or more administrator permissions. These permissions define the administrative scope for users and the tasks they can manage. Administrator permissions are common between the different Microsoft cloud services, and some services might not support some permissions. Both the Microsoft Endpoint Manager admin center and Microsoft 365 admin center list limited administrator roles that aren't used by Intune. Common Intune administrator permissions include the following options:
 
-- **Global administrator** - (Microsoft 365 and Intune) Accesses all administrative features in Intune. By default the person who signs up for Intune becomes a Global admin. Global admins are the only admins who can assign other admin roles. You can have more than one global admin in your organization. As a best practice, we recommend that only a few people in your company have this role to reduce the risk to your business.
+- **Global administrator** - (Microsoft 365 and Intune) Accesses all administrative features in Intune. By default, the person who signs up for Intune becomes a Global admin. Global admins are the only admins who can assign other admin roles. You can have more than one global admin in your organization. As a best practice, we recommend that only a few people in your company have this role to reduce the risk to your business.
 - **Password administrator** - (Microsoft 365 and Intune) Resets passwords, manages service requests, and monitors service health. Password admins are limited to resetting passwords for non-admin users and some admin roles.
 - **Service support administrator** - (Microsoft 365 and Intune) Opens support requests with Microsoft, and views the service dashboard and message center. They have "view only" permissions except for opening support tickets and reading them.
 - **Billing administrator** - (Microsoft 365 and Intune) Makes purchases, manages subscriptions, manages support tickets, and monitors service health.
