@@ -6,8 +6,8 @@ In a distributed database system, when data replicates over a wide area network 
 
 Azure Cosmos DB offers a sliding scale of consistency with many options between the traditional strong and weak options provided by other data storage solutions.
 
-[!div class="mx-imgBorder"]
-[![Diagram of sliding scale of consistency with five options.](../media/3-sliding-scale.png)](../media/3-sliding-scale.png)
+> [!div class="mx-imgBorder"]
+> [![Diagram of sliding scale of consistency with five options.](../media/3-sliding-scale.png)](../media/3-sliding-scale.png)
 
 Each of the five consistency levels is well-defined with clear tradeoffs when compared with each other:
 
@@ -62,7 +62,7 @@ Eventual consistency is a good option for applications that don't require any li
 
 The native MongoDB doesn't provide precisely defined consistency guarantees. Instead, native MongoDB allows users to configure the following consistency guarantees: a write concern, a read concern, and the isMaster directive - to direct the read operations to either primary or secondary replicas to achieve the desired consistency level.
 
-When inserts, upserts and deletes are done in an Azure Cosmos DB API for MongoDB account, the MongoDB driver treats your write region as the primary replica and all other regions as read replicas. You can choose which region associated with your Azure Cosmos account as a primary replica.
+When inserts, upserts and deletes are done in an Azure Cosmos DB API for MongoDB account, the MongoDB driver treats your write region as the primary replica and all other regions as read replicas. You can choose which region associated with your Azure Cosmos DB account acts as a primary replica according to the MongoDB drivers.
 
 While using Azure Cosmos DB’s API for MongoDB:
 

@@ -7,7 +7,7 @@ Most applications using an Azure resource will create availability, performance,
 Cosmos DB monitors its server-side counters using:
 
 - **Azure Monitor to monitor metrics** - Azure Monitor collects Cosmos DB metrics by default. Metrics are collected every minute. The default retention period is 30 days. The collection includes throughput, storage availability, latency, consistency, and system level metrics. The dimension values for the metrics such as collection name are case-insensitive.
-- **Azure Monitor to monitor diagnostic logs** - Telemetries like events and traces are stored as logs.  For example, changing the throughput properties of a collection will be a logged event.  Queries can then be run against these logs to analyze the data collected.
+- **Azure Monitor to monitor diagnostic logs** - Telemetries such as events and traces are stored as logs.  For example, changing the throughput properties of a collection will be a logged event.  Queries can then be run against these logs to analyze the data collected.
 - **The Azure Cosmos DB portal** - The throughput, storage availability, latency, consistency, and system level metrics can be found under the **Metrics** tab of the Azure Cosmos DB account.  The default retention period for these metrics is seven days.
 
 In this module, the lesson will be limited to how Cosmos DB applies its monitoring using the Azure Monitor.  Azure Monitor for Cosmos DB can be used to:
@@ -90,6 +90,9 @@ Azure Monitor allows us to filter further by specific **CollectionName**, **Data
 ## Observe rate-limiting events
 
 Operations running in an Azure Cosmos DB API for MongoDB, might return a **16500** *status code error*. This error code, indicates that a **Request rate too large** exception has occurred. This exception means that Azure Cosmos DB requests are being rate limited.
+
+> [!NOTE]
+> In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB API for MongoDB account.
 
 When provisioned throughput is used, the request units per second (RU/s) is set for the workload.  Operations (read, writes, queries) against the service consume request units(RUs). If in any given second the operations consume more RUs than the provisioned RU/s, Azure Cosmos DB will return a 16500 exception.
 
