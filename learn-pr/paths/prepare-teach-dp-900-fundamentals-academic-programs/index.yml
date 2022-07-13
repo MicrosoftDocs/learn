@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-teach-dp-900-fundamentals-academic-programs
 metadata:
   title: DP-900
   description: Prepare to teach DP-900 Microsoft Azure Data fundamentals in academic programs
-  ms.date: 05/25/2022
+  ms.date: 07/12/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -28,5 +28,7 @@ modules:
 - learn.wwl.microsoft-learn-educators-course-plan
 - learn.wwl.learn-best-practices-from-microsoft-technical-trainers
 - learn.wwl.get-tips-tricks-teach-dp-900-microsoft-azure-data-fundamentals
+- learn.wwl.prepare-for-course-delivery
+- learn.wwl.close-out-course
 trophy:
   uid: learn.wwl.prepare-teach-dp-900-fundamentals-academic-programs.trophy
