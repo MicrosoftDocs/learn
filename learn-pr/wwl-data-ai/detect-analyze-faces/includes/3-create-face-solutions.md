@@ -1,4 +1,4 @@
-Computer vision solutions often require an artificial intelligence (AI) solution to be able to detect, analyze, or identify human faces. For example, suppose the retail company Northwind Traders has decided to implement a "smart store", in which AI services monitor the store to identify customers requiring assistance, and direct employees to help them. One way to accomplish this is to perform facial detection and analysis - in other words, determine if there are any faces in the images, and if so analyze their features.
+Computer vision solutions often require an artificial intelligence (AI) solution to be able to detect human faces. For example, suppose the retail company Northwind Traders wants to locate where customers are standing in a store to best assist them. One way to accomplish this is to determine if there are any faces in the images, and if so, to identify the bounding box coordinates around the faces.
 
 To test the capabilities of the Face service, we'll use a simple command-line application that runs in the Cloud Shell. The same principles and functionality apply in real-world solutions, such as web sites or phone apps.
 
@@ -51,6 +51,8 @@ Now that you have a custom model, you can run a simple client application that u
     ```
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
+   
+    >[!TIP] If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
@@ -91,14 +93,12 @@ Now that you have a custom model, you can run a simple client application that u
     ./find-faces.ps1 store-camera-1.jpg
     ```
 
-7. Review the details of the faces found in the image, which include:
-    - The location of the face in the image
-    - The approximate age of the person
-    - An indication of the emotional state of the person (based on proportional scores for a range of emotions)
-
-    Note that the location of a face is indicated by the top- left coordinates, and the width and height of a *bounding box*, as shown here:
+7. Review the returned information, which includes the location of the face in the image. The location of a face is indicated by the top-left coordinates, and the width and height of a *bounding box*, as shown here:
 
     ![An image of a person with their face outlined](../media/store-camera-1-face.jpg)
+
+>[!NOTE]
+>From June 21st 2022, Face service capabilities that return personally identifiable features are restricted. See https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/ for details.
 
 8. Now let's try another image:
 
