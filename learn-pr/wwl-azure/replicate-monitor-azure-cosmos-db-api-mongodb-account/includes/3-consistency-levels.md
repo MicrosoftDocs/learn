@@ -6,8 +6,8 @@ In a distributed database system, when data replicates over a wide area network 
 
 Azure Cosmos DB offers a sliding scale of consistency with many options between the traditional strong and weak options provided by other data storage solutions.
 
-> [!div class="mx-imgBorder"]
-> [![Diagram of sliding scale of consistency with five options.](../media/3-sliding-scale.png)](../media/3-sliding-scale.png#lightbox)
+[!div class="mx-imgBorder"]
+[![Diagram of sliding scale of consistency with five options.](../media/3-sliding-scale.png)](../media/3-sliding-scale.png)
 
 Each of the five consistency levels is well-defined with clear tradeoffs when compared with each other:
 
