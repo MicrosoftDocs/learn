@@ -12,7 +12,7 @@ The Azure IoT technologies and services stack provides two platform options for 
 
 Get started quickly with Azure IoT Central, a fully managed, end-to-end solution that enables powerful IoT scenarios without requiring cloud-solution expertise.
 
-The IoT Central application platform is a ready-made environment for IoT solution development. Built on trusted Azure PaaS services it reduces the burden and cost of developing, managing, and maintaining enterprise-grade IoT solutions. It delivers built-in disaster recovery, multitenancy, global availability, and a predictable cost structure.<br>
+The IoT Central application platform is a ready-made environment for IoT solution development. Built on trusted Azure PaaS services it reduces the burden and cost of developing, managing, and maintaining enterprise-grade IoT solutions. It delivers built-in disaster recovery, multitenancy, global availability, and a predictable cost structure.
 
 IoT Central's customizable web UI and API surface let you monitor and manage millions of devices and their data throughout their life cycle. Get started exploring IoT Central in minutes using your phone as an IoT device – see live telemetry, create rules, run commands from the cloud, and export your data for business analytics.
 

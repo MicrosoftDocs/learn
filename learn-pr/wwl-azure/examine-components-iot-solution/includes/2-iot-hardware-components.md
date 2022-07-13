@@ -1,4 +1,4 @@
-When planning for an IoT solution, perhaps the first area of consideration is what hardware you will need (or already have). This issue is partly driven by the fact that data is the main driver behind implementing many IoT solutions, so figuring out what data you want to collect and how you want to collect it has a primary place in your architecture.
+When you are planning for an IoT solution, perhaps the first area of consideration is what hardware you will need (or already have). This issue is partly driven by the fact that data is the main driver behind implementing many IoT solutions, so figuring out what data you want to collect and how you want to collect it has a primary place in your architecture.
 
 Although the hardware implemented in an IoT solution includes the network infrastructure devices used to provide, secure Internet communications, here we will focus on IoT device hardware.
 
