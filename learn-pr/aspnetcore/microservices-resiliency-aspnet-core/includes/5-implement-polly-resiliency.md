@@ -208,7 +208,7 @@ Complete the following steps to test the Retry policy:
 1. Replace the existing discount code with *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     The operation appears to be successful on the first try after a brief wait. The resilient BFF will handle retries transparently from the user's perspective. Notice that the 10 USD discount was applied.
-1. Return to the the **:::no-loc text="Centralized logging":::** page.
+1. Return to the **:::no-loc text="Centralized logging":::** page.
 
 1. Check the log traces. You'll see a variation of the following output:
 

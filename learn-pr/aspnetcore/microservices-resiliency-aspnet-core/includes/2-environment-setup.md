@@ -29,13 +29,13 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 1. In the new terminal pane, sign in to the Azure CLI. If using GitHub Codespaces, include the `--use-device-code` flag. If you are using Visual Studio Code, you may optionally omit the flag.
 
-    ```az-cli
+    ```azurecli
     az login --use-device-code
     ```
 
 1. View your selected Azure subscription. 
 
-    ```az-cli
+    ```azurecli
     az account show -o table
     ```
 
