@@ -12,7 +12,7 @@ In this module, you learned about various methods that allow you to accept user 
 
 - To identify the variables that will store parameter values, you use a **Param()** block. The variable names are defined between the parentheses. 
 
-## Additional Reading
+## Additional reading
 
 To learn more, go through the following documents:
 
