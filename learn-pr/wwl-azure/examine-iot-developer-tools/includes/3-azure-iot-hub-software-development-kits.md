@@ -3,7 +3,7 @@
 
  -  Develop a “future-proof” solution with minimal code: While you can use protocol libraries to communicate with Azure IoT Hub, you may regret this decision later. You may not have a chance to implement new features of IoT Hub, or you may spend time redeveloping code and functionality that you could get for free when using the SDKs. The SDKs support new features from IoT Hub, so you can incorporate them with minimal code and ensure your solution is up to date.
  -  Apply features designed for a complete software solution and focus on your specific need: The SDKs contain many libraries that address key problems and needs of IoT solutions such as security, device management, reliability, etc. You can speed up time to market by using these libraries directly so that you can focus on developing for your specific IoT scenario.
- -  Develop with your preferred language for different platform: You can develop with .NET, Java, Node, Python, or Node.js without worrying about protocol-specific intricacy. The SDKs provide out-of-box support for a range of platforms and the C SDK can be ported to new platforms.
+ -  Develop with your preferred language for different platform: You can develop with .NET, Java, C, Python, or Node.js without worrying about protocol-specific intricacy. The SDKs provide out-of-box support for a range of platforms and the C SDK can be ported to new platforms.
  -  Benefit from the flexibility of open source with support from Microsoft and community: The SDKs are available open source on GitHub and Microsoft works in the open. You can modify, adapt, and contribute to the code that will run your devices and your applications.
 
 There are two categories of software development kits (SDKs) for working with IoT Hub:
@@ -13,7 +13,7 @@ There are two categories of software development kits (SDKs) for working with Io
 
 ## Azure IoT device SDKs platform support
 
-Microsoft publishes open-source SDKs on GitHub for the following languages: .NET, Java, Node, Python, or Node.js.
+Microsoft publishes open-source SDKs on GitHub for the following languages: .NET, Java, C, Python, or Node.js.
 
 Microsoft provides SDK support in the following ways:
 
