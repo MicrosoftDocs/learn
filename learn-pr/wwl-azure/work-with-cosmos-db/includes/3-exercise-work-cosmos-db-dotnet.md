@@ -7,9 +7,12 @@ In this exercise you'll create a console app to perform the following operations
 ## Prerequisites
 
 * An Azure account with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
-* **Visual Studio Code**: You can install Visual Studio Code from [https://code.visualstudio.com](https://code.visualstudio.com/).
-* **Azure CLI**: You can install the Azure CLI from [https://docs.microsoft.com/cli/azure/install-azure-cli](/cli/azure/install-azure-cli).
-* The **.NET Core 3.1 SDK**, or **.NET 5.0 SDK**. You can install from [https://dotnet.microsoft.com/download](https://dotnet.microsoft.com/download).
+
+* [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
+
+* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
+
+* The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 
 ## Setting up
 
@@ -85,16 +88,15 @@ It's time to start adding the packages and code to the project.
     dotnet add package Microsoft.Azure.Cosmos
     ```
 
-1. Add using statements to include `Microsoft.Azure.Cosmos` and to enable async operations.
+1. Delete any existing code in the `Program.cs` file and add the `using Microsoft.Azure` statement.
 
     ```csharp
-    using System.Threading.Tasks;
     using Microsoft.Azure.Cosmos;
     ```
 
 ### Add code to connect to an Azure Cosmos DB account
 
-1. Replace the entire `class Program` with the code snippet below. The code snippet adds constants and variables into the class and adds some error checking. Be sure to replace the placeholder values for `EndpointUri` and `PrimaryKey` following the directions in the code comments.
+1. Add the code snippet below after the `using` statement. The code snippet adds constants and variables into the class and adds some error checking. Be sure to replace the placeholder values for `EndpointUri` and `PrimaryKey` following the directions in the code comments.
 
     ```csharp
     public class Program
@@ -142,22 +144,29 @@ It's time to start adding the packages and code to the project.
                 Console.ReadKey();
             }
         }
+        //The sample code below gets added below this line
     }
     ```
 
-1. Below the `Main` method, add a new asynchronous task called `CosmosAsync`, which instantiates our new `CosmosClient`. 
+1. Below the `Main` method, add a new asynchronous task called `CosmosAsync`, which instantiates our new `CosmosClient` and adds code to call the methods you'll add later to create a database and a container.
 
     ```csharp
     public async Task CosmosAsync()
     {
         // Create a new instance of the Cosmos Client
         this.cosmosClient = new CosmosClient(EndpointUri, PrimaryKey);
+
+        // Runs the CreateDatabaseAsync method
+        await this.CreateDatabaseAsync();
+
+        // Run the CreateContainerAsync method
+        await this.CreateContainerAsync();
     }
     ```
 
 ## Create a database
 
-1. Copy and paste the `CreateDatabaseAsync` method after the  `CosmosAsync` method. `CreateDatabaseAsync` creates a new database with ID `az204Database` if it doesn't already exist.
+Copy and paste the `CreateDatabaseAsync` method after the  `CosmosAsync` method. `CreateDatabaseAsync` creates a new database with ID `az204Database` if it doesn't already exist.
 
     ```csharp
     private async Task CreateDatabaseAsync()
@@ -168,16 +177,9 @@ It's time to start adding the packages and code to the project.
     }
     ```
 
-1. Add the code below at the end of the `CosmosAsync` method, it calls the `CreateDatabaseAsync` method you just added.
-
-    ```csharp
-        // Runs the CreateDatabaseAsync method
-        await this.CreateDatabaseAsync();
-    ```
-
 ## Create a container
 
-1. Copy and paste the `CreateContainerAsync` method below the `CreateDatabaseAsync` method.
+Copy and paste the `CreateContainerAsync` method below the `CreateDatabaseAsync` method.
 
     ```csharp
     private async Task CreateContainerAsync()
@@ -186,13 +188,6 @@ It's time to start adding the packages and code to the project.
         this.container = await this.database.CreateContainerIfNotExistsAsync(containerId, "/LastName");
         Console.WriteLine("Created Container: {0}\n", this.container.Id);
     }
-    ```
-
-1. Copy and paste the code below where you instantiated the `CosmosClient` to call the **CreateContainer** method you just added.
-
-    ```csharp
-    // Run the CreateContainerAsync method
-    await this.CreateContainerAsync();
     ```
 
 ## Run the application
@@ -209,7 +204,7 @@ It's time to start adding the packages and code to the project.
     End of program, press any key to exit.
     ```
 
-1. You can verify the results by opening the Azure portal, navigating to your Azure Cosmos DB resource, and use the **Data Explorer** to view the database and container.
+1. Verify the results by opening the Azure portal, navigating to your Azure Cosmos DB resource, and use the **Data Explorer** to view the database and container.
 
 ## Clean up Azure resources
 
