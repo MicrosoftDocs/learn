@@ -43,11 +43,11 @@ SecurityEvent
 
 ```
 
-Statement 1 will have Accounts for which the last activity was a login.
+Statement 1 will have Accounts for which the last activity was a Logon.
 
-The SecurityEvent table will first be summarized and return the most current row for each Account.  Then only rows with EventID equals 4624 (login) will be returned.
+The SecurityEvent table will first be summarized and return the most current row for each Account.  Then only rows with EventID equal to 4624 (Login) will be returned.
 
-Statement 2 will have the most recent login for Accounts that have logged in.
+Statement 2 will have the most recent Logon for Accounts that have logged in.
 
-The SecurityEvent table will be filtered to only include EventID = 4624. Then these results will be summarized for the most current login row by Account.
+The SecurityEvent table will be filtered to only include EventID = 4624. Then these results will be summarized for the most current Logon row by Account.
 

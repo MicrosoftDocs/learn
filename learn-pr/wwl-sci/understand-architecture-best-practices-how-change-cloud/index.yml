@@ -4,7 +4,7 @@ metadata:
   title: Understand architecture best practices and how they are changing with the Cloud
   description: "Learn best practices for cybersecurity architecture and how they have been affected by cloud computing."
   ms.date: 06/07/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -38,3 +38,6 @@ units:
 - learn.wwl.understand-architecture-best-practices-how-change-cloud.summary
 badge:
   uid: learn.wwl.understand-architecture-best-practices-how-they-are-changing-cloud.badge
+subjects:
+- security
+- architecture

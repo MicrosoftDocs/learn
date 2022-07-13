@@ -12,14 +12,14 @@ Follow these steps to make a user eligible for an Azure AD admin role.
 4.  On the Quick start page, in the left navigation, select **Roles**.
 5.  On the top menu, select **+ Add assignments.**
     
-    :::image type="content" source="../media/privileged-identity-management-assign-role-7b1aa945.png" alt-text="Screen image displaying Azure AD roles with Add assignments menu highlighted":::
+    :::image type="content" source="../media/privileged-identity-management-assign-role.png" alt-text="Screenshot of the Azure AD roles with Add assignments menu highlighted.":::
     
 6.  In the Add assignments pane, on the **Membership** tab, review the settings.
 7.  Select the **Select role** menu and then select **Compliance Administrator**. You can use the **Search role by name** filter to help located a role.
 8.  Under **Select member(s),** select **No members selected**.
 9.  In the Select a member pane, select your administrator account, and then select **Select**.
     
-    :::image type="content" source="../media/privileged-identity-management-add-role-assignment-14090937.png" alt-text="Screen image displaying the select a member pane with a selected member highlighted":::
+    :::image type="content" source="../media/privileged-identity-management-add-role-assignment.png" alt-text="Screenshot of the select a member pane with a selected member highlighted.":::
     
 10. In the Add assignments screen, select **Next**.
 11. On the **Settings** tab, under **Assignment type**, review the available options. For this task, use the default setting.
@@ -35,14 +35,14 @@ When you need to assume an Azure AD role, you can request activation by opening 
 1.  On the Privileged Identity Management screen, in the left navigation menu, select **My roles.**
 2.  In the My roles pane, review the list of eligible assignments.
     
-    :::image type="content" source="../media/my-roles-6526d712.png" alt-text="Screen image displaying My roles with eligible role assignments highlighted":::
+    :::image type="content" source="../media/my-roles.png" alt-text="Screenshot of the My roles with eligible role assignments highlighted. Pick the role you need.":::
     
 3.  In the Compliance Administrator role row, select **Activate**.
-4.  In the Activate – Compliance Administrator pane, select **Additional verification required,** and then follow the instructions to provide additional security verification. You're required to authenticate only once per session.
+4.  In the Activate – Compliance Administrator pane, select **Additional verification required,** and then follow the instructions to provide extra security verification. You're required to authenticate only once per session.
     
-    :::image type="content" source="../media/privileged-identity-management-activate-role-980b4d4b.png" alt-text="Screen image displaying a popup to activate the compliance administrator":::
+    :::image type="content" source="../media/privileged-identity-management-activate-role.png" alt-text="Screenshot of a popup to activate the compliance administrator.":::
     
-5.  After you've completed the additional security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the justification for activating this role.
+5.  After you've completed the security verification, in the Activate – Compliance Administrator pane, in the **Reason** box, enter the justification for activating this role.
 6.  Select **Activate**.
 
 ## Assign a role with restricted scope
@@ -52,20 +52,20 @@ For certain roles, the scope of the granted permissions can be restricted to a s
 1.  Browse to the Privileged Identity Management screen, and in the left navigation menu, select Azure **AD roles.**
 2.  In the Roles pane, on the top menu, select **+ Add assignments.**
 3.  In the Add assignments screen, select the **Select role** menu, and then select **User administrator.**
-4.  Select the **Scope type** menu and review the available options. For now, you will use the **Directory** scope type.
+4.  Select the **Scope type** menu and review the available options. For now, you'll use the **Directory** scope type.
     
     > [!TIP]
-    > Go to \[Manage administrative units in Azure Active Directory\](/azure/active-directory/roles/admin-units-manage) to find more information about the administrative unit scope type.
+    > Go to [Manage administrative units in Azure Active Directory](/azure/active-directory/roles/admin-units-manage) to find more information about the administrative unit scope type.
 5.  Similar to assigning a role without a restricted scope. Add members, and complete the settings options. For now, select **Cancel**.
 
 ## Update or remove an existing role assignment
 
 Follow these steps to update or remove an existing role assignment.
 
-1.  In the Open Azure AD Privileged Identity Management &gt; Azure AD roles screen, in the left navigation, select **Assignments**.
+1.  In the Open Azure AD Privileged Identity Management then Azure AD roles screen, in the left navigation, select **Assignments**.
 2.  In **Assignments** list, for Compliance Administrator, review the options in the **Action** column.
     
-    :::image type="content" source="../media/privileged-identity-management-edit-role-assignments-38830aed.png" alt-text="Screen image displaying the options listed in the action column of the Compliance Adminsitrator":::
+    :::image type="content" source="../media/privileged-identity-management-edit-role-assignments.png" alt-text="Screenshot of the options listed in the action column of the Compliance Administrator.":::
     
 3.  Select **Update** and review the options available in the Membership settings pane. When complete, close the pane.
 4.  Select **Remove**.

@@ -5,12 +5,12 @@ metadata:
   title: Plan and implement a security strategy across teams
   description: "Plan and implement a security strategy across teams"
   ms.date: 06/07/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-implement-security-strategy-across-teams.md)]

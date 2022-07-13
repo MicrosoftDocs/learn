@@ -1,27 +1,14 @@
-Organizations use Cyber Threat Intelligence to collect information
-gained from access to various signals across the Microsoft network.
-Cyber Threat Intelligence can be sourced from many places. These include,
-open-source data feeds, threat intelligence-sharing communities,
-commercial intelligence feeds, and local intelligence gathered during
-security investigations within an organization. Every second, hundreds
-of GB's worth of data is added to the Microsoft Intelligent Security
-Graph. This anonymized data comes from:
+Organizations use Cyber Threat Intelligence to collect information gained from access to various signals across the Microsoft network. Cyber Threat Intelligence can be sourced from many places. These include, open-source data feeds, threat intelligence-sharing communities, commercial intelligence feeds, and local intelligence gathered during security investigations within an organization. Every second, hundreds of GB's worth of data is added to the Microsoft Intelligent Security Graph. This anonymized data comes from:
 
 -   Over a hundred Microsoft data centers across the globe.
--   Threats faced by over 1 billion PCs updated by Windows Update each
-    month.
--   External data points are collected through extensive research and
-    partnership with industry and law enforcement. This research is
-    accomplished through Microsoft's Digital Crime Unit and
-    Cybersecurity Defense Operations Center.
+-   Threats faced by over 1 billion PCs updated by Windows Update each month.
+-   External data points are collected through extensive research and partnership with industry and law enforcement. This research is accomplished through Microsoft's Digital Crime Unit and Cybersecurity Defense Operations Center.
 
 Threat intelligence in Azure:
 
--   Consumes billions of signals ("signals" is a term meaning
-    information traffic) across the Microsoft network.
+-   Consumes billions of signals ("signals" is a term meaning information traffic) across the Microsoft network.
 -   Uses artificial intelligence and machine learning capabilities.
--   Integrates this data across different security products to address
-    different attack scenarios.
+-   Integrates this data across different security products to address different attack scenarios.
 
 The signals obtained from the Intelligent Security Graph, plus other
 third-party feeds, are fed into Microsoft's three major platforms:
@@ -44,21 +31,12 @@ indicators to help detect malicious activity observed in your
 environment and provide context to security investigators to help inform
 response decisions.
 
-Integrate threat intelligence (TI) into Microsoft Sentinel through the
-following activities:
+Integrate threat intelligence (TI) into Microsoft Sentinel through the following activities:
 
--   Import threat intelligence into Microsoft Sentinel by enabling data
-    connectors to various TI platforms and feeds.
-
--   View and manage the imported threat intelligence in Logs and the
-    Microsoft Sentinel Threat Intelligence page.
-
--   Detect threats and generate security alerts and incidents using the
-    built-in Analytics rule templates based on your imported threat
-    intelligence.
-
--   Visualize key information about your imported threat intelligence in
-    Microsoft Sentinel with the Threat Intelligence workbook.
+-   Import threat intelligence into Microsoft Sentinel by enabling data connectors to various TI platforms and feeds.
+-   View and manage the imported threat intelligence in Logs and the Microsoft Sentinel Threat Intelligence page.
+-   Detect threats and generate security alerts and incidents using the built-in Analytics rule templates based on your imported threat intelligence.
+-   Visualize key information about your imported threat intelligence in Microsoft Sentinel with the Threat Intelligence workbook.
 
 ## Threat Intelligence in Defender for Endpoint
 
@@ -108,74 +86,33 @@ and action, determining how it's matched. It's bound to a specific
 alert definition that defines how detection is displayed as an alert on
 the Microsoft 365 Defender console.
 
-Here's an example of an IOC:
-
-```
--   Type: Sha1
--   Value: 92cfceb39d57d914ed8b14d0e37643de0797ae56
--   Action: Equals
-```
-
 ## Threat Intelligence in Defender for IoT
 
-Microsoft Defender for IoT is a unified security solution for
-identifying IoT and OT devices, vulnerabilities, and threats and
+Microsoft Defender for IoT is a unified security solution for identifying IoT and OT devices, vulnerabilities, and threats and
 managing them through a central interface.
 
-Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended)
-using threat intelligence packages. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises. If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat intelligence from Sentinel.
+Defender for IoT has [native threat intelligence capabilities](/azure/sentinel/iot-solution?tabs=use-out-of-the-box-analytics-rules-recommended) using threat intelligence packages. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises. If you choose to integrate Defender for IoT with Microsoft Sentinel, you'll get threat intelligence from Defender for IoT and the enriched threat intelligence from Sentinel.
 
 ![Diagram showing an example of Defender for IoT's end-to-end coverage solution.](../media/defender-for-iot.png) 
 
-Defender for IoT has both agent-based and agentless monitoring
-solutions:
+Defender for IoT has both agent-based and agentless monitoring solutions:
 
--   **For end-user organizations**, Microsoft Defender for IoT provides
-    agentless, network-layer monitoring that integrates smoothly with
-    industrial equipment and SOC tools. You can deploy Microsoft
-    Defender for IoT in Azure-connected and hybrid environments or
-    completely on-premises.
-
--   **For IoT device builders**, Microsoft Defender for IoT also offers
-    a lightweight micro-agent that supports standard IoT operating
-    systems, such as Linux and RTOS. The Microsoft Defender device
-    builder agent helps you ensure that security is built into your
-    IoT/OT projects from the cloud. For more information, see [Microsoft
-    Defender for IoT for device builders
-    documentation](https://docs.microsoft.com/device-builders/index.md).
+-   **For end-user organizations**, Microsoft Defender for IoT provides agentless, network-layer monitoring that integrates smoothly with industrial equipment and SOC tools. You can deploy Microsoft Defender for IoT in Azure-connected and hybrid environments or completely on-premises.
+-   **For IoT device builders**, Microsoft Defender for IoT also offers a lightweight micro-agent that supports standard IoT operating systems, such as Linux and RTOS. The Microsoft Defender device builder agent helps you ensure that security is built into your IoT/OT projects from the cloud. For more information, see [Microsoft Defender for IoT for device builders    documentation](/azure/defender-for-iot/device-builders/overview).
 
 ## Threat Intelligence in Defender for Cloud
 
-Defender for Cloud's threat protection works by monitoring security
-information from your Azure resources, the network, and connected
-partner solutions. It analyzes this information, often correlating
-information from multiple sources, to identify threats. For more
-information, see [How Microsoft Defender for Cloud detects and responds
-to threats](https://docs.microsoft.com/azure/defender-for-cloud/alerts-overview#detect-threats).
+Defender for Cloud's threat protection works by monitoring security information from your Azure resources, the network, and connected partner solutions. It analyzes this information, often correlating information from multiple sources, to identify threats. For more information, see [How Microsoft Defender for Cloud detects and responds to threats](/azure/defender-for-cloud/alerts-overview#detect-threats).
 
-When Defender for Cloud identifies a threat, it triggers a [security alert](/azure/defender-for-cloud/managing-and-responding-alerts),
-containing detailed information regarding the event, including
-suggestions for remediation. To help incident response teams investigate
-and remediate threats, Defender for Cloud provides threat intelligence
-reports containing information about detected threats. The report
-includes information such as:
+When Defender for Cloud identifies a threat, it triggers a [security alert](/azure/defender-for-cloud/managing-and-responding-alerts), containing detailed information regarding the event, including suggestions for remediation. To help incident response teams investigate and remediate threats, Defender for Cloud provides threat intelligence
+reports containing information about detected threats. The report includes information such as:
 
--   Attacker's identity or associations (if this information is
-    available)
-
+-   Attacker's identity or associations (if this information is available)
 -   Attackers' objectives
-
--   Current and historical attack campaigns (if this information is
-    available)
-
+-   Current and historical attack campaigns (if this information is available)
 -   Attackers' tactics, tools, and procedures
-
--   Associated indicators of compromise (IoC) such as URLs and file
-    hashes
-
--   Victimology, which is the industry and geographic prevalence to
-    assist you in determining if your Azure resources are at risk
-
+-   Associated indicators of compromise (IoC) such as URLs and file hashes
+-   Victimology, which is the industry and geographic prevalence to assist you in determining if your Azure resources are at risk
 -   Mitigation and remediation information
 
 ## Threat Intelligence in Microsoft 365 Defender
@@ -190,14 +127,9 @@ incidents. Business decision makers and your security operations team
 can use this information to understand and respond to threats against
 your organization and protect your intellectual property.
 
-Threat investigation and response capabilities in the Microsoft 365
-Defender portal at [https://security.microsoft.com](https://security.microsoft.com/) are
-a set of tools and response workflows that include:
+Threat investigation and response capabilities in the Microsoft 365 Defender portal at [https://security.microsoft.com](https://security.microsoft.com/) are a set of tools and response workflows that include:
 
 -   [Explorer](/microsoft-365/security/office-365-security/office-365-ti?view=o365-worldwide&preserve-view=true#explorer)
-
 -   [Incidents](/microsoft-365/security/office-365-security/office-365-ti?view=o365-worldwide&preserve-view=true#incidents)
-
 -   [Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide&preserve-view=true)
-
 -   [Automated investigation and response](/microsoft-365/security/office-365-security/automated-investigation-response-office?view=o365-worldwide&preserve-view=true)

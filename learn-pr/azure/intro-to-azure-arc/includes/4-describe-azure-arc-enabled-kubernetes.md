@@ -2,10 +2,7 @@ Contoso hosts Kubernetes clusters in multiple datacenters throughout the world. 
 
 ## What is Azure Arc-enabled Kubernetes?
 
-Using Azure Arc, you can connect Kubernetes clusters located anywhere to Azure and then manage the clusters in a consistent way. Azure Arc-enabled Kubernetes lets you control the cluster configuration and workloads at scale using your git repositories as the source of truth for the clusters.  It also lets you use with your clusters the extensive management capabilities in Azure for common management needs such as inventory, monitoring, policy compliance, security, user access, and more.
-
-> [!NOTE]
-> This is true for Kubernetes clusters located anywhere: on-premises or in any cloud provider.
+Using Azure Arc, you can connect Kubernetes clusters located anywhere to Azure. You can then manage these connected clusters in a consistent way, just as you would in Azure. Azure Arc-enabled Kubernetes lets you control the cluster configuration and workloads at scale using your Git repositories as the source of truth, providing the extensive management capabilities of Azure such as inventory, monitoring, policy compliance, security, user access, and more.
 
 When you implement Azure Arc you can then start to use many Azure services to manage your clusters; these include (among others):
 
@@ -87,7 +84,7 @@ Azure Arc-enabled Kubernetes deploys several agents.
 > [!NOTE]
 > These agents run in the `azure-arc` namespace in your Kubernetes clusters.
 
-The following table describes these agents.
+The following table describes some of these agents:
 
 |Agent|Description|
 |---|---|

@@ -53,6 +53,13 @@ There are a few key technologies to be used for workflow automation in Azure:
 
 * **Microsoft Sentinel** -- Sentinel provides both automation rules and playbooks. Automation rules help you triage incidents by changing incident attributes or running playbooks. Playbooks are collections of procedures that can be run from Microsoft Sentinel in response to an alert or incident.
 
+In Microsoft 365, if your organization is using Microsoft 365 Defender, you can leverage **automated investigation and response (AIR)** capabilities. Depending on how AIR capabilities are configured for your organization, remediation actions are taken automatically or only upon approval by your security operations team. All actions, whether pending or completed, are listed in the Action center. AIR features help your security operations team by:
+
+- Determining whether a threat requires action.
+- Taking (or recommending) any necessary remediation actions.
+- Determining whether and what other investigations should occur.
+- Repeating the process as necessary for other alerts.
+
 For more information on creating automated workflows with various combinations of technologies, see the following articles:
 
 * [Creating a workflow using Defender for Cloud and Azure Logic Apps](https://docs.microsoft.com/azure/defender-for-cloud/workflow-automation#create-a-logic-app-and-define-when-it-should-automatically-run)

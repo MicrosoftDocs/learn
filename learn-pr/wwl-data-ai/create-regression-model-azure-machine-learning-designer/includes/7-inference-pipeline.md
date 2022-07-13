@@ -54,7 +54,7 @@ After creating and running a pipeline to train the model, you need a second pipe
     ![A visual inference pipeline](../media/inference-pipeline.png)
 
 11. Submit the pipeline as a new experiment named **mslearn-auto-inference** on your compute cluster. The experiment may take a while to run.
-12. When the pipeline has completed, select **Job details**. In the new window, select the **Execute Python Script** module. In the settings pane, on the **Outputs + logs** tab, select **Show data outputs**. In the Result dataset, select the **Preview Data** graph icon to see the predicted prices for the three cars in the input data.
+12. When the pipeline has completed, select **Job details**. In the new window, right click on the **Execute Python Script** module. Select **Preview data** and then **Result dataset** to see the predicted prices for the three cars in the input data.
 13. Close the visualization window.
 
 Your inference pipeline predicts prices for cars based on their features. Now you're ready to publish the pipeline so that client applications can use it.

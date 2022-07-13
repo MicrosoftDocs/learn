@@ -5,11 +5,11 @@ metadata:
   title: Zero Trust overview
   description: "Zero Trust overview"
   ms.date: 06/07/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/2-zero-trust-overview.md)]

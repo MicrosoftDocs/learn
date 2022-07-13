@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-service-types.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/13/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which cloud service type is most suited to a lift and shift migration from an on-premises datacenter to a cloud deployment?"
+    choices:
+    - content: "Infrastructure as a Service (IaaS)"
+      isCorrect: true
+      explanation: "With an IaaS service type, you can approximate your on-premises environment, making a lift-and-shift transition to the cloud relatively straightforward."
+    - content: "Platform as a Service (PaaS)"
+      isCorrect: false
+      explanation: "The PaaS service type may not provide the configuration flexibility to perform a lift-and-shift migration to the cloud. PaaS is generally better suited for deploying complete environments, like a development environment, where you want to focus on operations instead of configuration and maintenance of the underlying infrastructure."
+    - content: "Software as a Service (SaaS)"
+      isCorrect: false
+      explanation: "The SaaS service type is geared towards providing software solutions. Much of the infrastructure configuration is predetermined, preventing the configuration and control necessary for a lift-and-shift migration."
+  - content: "What type of cloud service type would a Finance and Expense tracking solution typically be in?"
+    choices:
+    - content: "Infrastructure as a Service (IaaS)"
+      isCorrect: false
+      explanation: "IaaS provides access to hardware and infrastructure to create your own custom environment."
+    - content: "Platform as a Service (PaaS)"
+      isCorrect: false
+      explanation: "PaaS provides access to platforms that have the operating system, development tools, and middleware installed and maintained by the cloud provider. It’s a middle point between IaaS and SaaS."
+    - content: "Software as a Service (SaaS)"
+      isCorrect: true
+      explanation: "SaaS provides access to software solutions, such as finance and expense tracking, email, or ticketing systems."

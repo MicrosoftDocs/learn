@@ -4,7 +4,7 @@ metadata:
   title: Evaluate a regulatory compliance strategy
   description: "Learn how to evaluate a cybersecurity strategy for regulatory compliance."
   ms.date: 06/08/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -42,3 +42,6 @@ units:
 - learn.wwl.evaluate-regulatory-compliance-strategy.summary
 badge:
   uid: learn.wwl.evaluate-regulatory-compliance-strategy.badge
+subjects:
+- security
+- architecture

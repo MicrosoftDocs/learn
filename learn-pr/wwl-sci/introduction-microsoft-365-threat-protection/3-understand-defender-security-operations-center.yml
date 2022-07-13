@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-microsoft-365-threat-protection.understand-defender-security-operations-center
+title: Understand Microsoft 365 Defender in a Security Operations Center (SOC)
+metadata:
+  title: Understand Microsoft 365 Defender in a Security Operations Center (SOC)
+  description: "Understand Microsoft 365 Defender in a Security Operations Center (SOC)"
+  ms.date: 06/23/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-defender-security-operations-center.md)]

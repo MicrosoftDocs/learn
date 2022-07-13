@@ -1,7 +1,7 @@
 
 The [Microsoft Cybersecurity Reference Architectures (MCRA)](https://docs.microsoft.com/security/cybersecurity-reference-architecture/mcra) describe Microsoft's cybersecurity capabilities. The reference architectures describe how Microsoft security capabilities integrate with Microsoft services and applications, Microsoft cloud platforms such as Azure and Microsoft 365, third party apps such as ServiceNow and Salesforce, and third party platforms such as Amazon Web Services (AWS) and Google Cloud Platform (GCP).
 
-The reference architectures are primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, zero trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, Azure native security controls, and security organizational functions.
+The reference architectures are primarily composed of detailed technical diagrams on Microsoft cybersecurity capabilities, Zero Trust user access, security operations, operational technology (OT), multi-cloud and cross-platform capabilities, attack chain coverage, Azure native security controls, and security organizational functions.
 
 The MCRA also includes an overview of Zero Trust and a Zero Trust rapid modernization plan (RaMP). Additionally, this includes other key information on security operations and key initiatives like protecting from human operated ransomware, securing privileged access, moving beyond VPN, and more.
 
@@ -19,7 +19,7 @@ The table below shows the full organizational security landscape, demonstrating 
 | Domain | Product | Capability | Details |
 |---|---|---|---|
 | Identity and Access |  |  |  |
-|  | Azure Active Directory | Cloud-based Identity, Access Management Service | Password-less & MFA, Hello for Business, Authenticator App, RDO2 Keys, Azure AD PIM, B2B & B2C |
+|  | Azure Active Directory | Cloud-based Identity, Access Management Service | Password-less & MFA, Hello for Business, Authenticator App, FIDO2 Keys, Azure AD PIM, B2B & B2C |
 |  | Identity Protection | Leaked Credential Protection | Behavioral Analytics |
 |  | Identity Governance | Identity, Access, and Privileged Access Lifecycle, Entitlement Management, Access Requests, Workflow, Policy and Role Management, Governance Enforcement | Azure AD User Provisioning, Azure AD PIM, Azure AD Reports, and Enterprise Mobility+Security |
 |  | Defender for Identity | User Behavior and Activities, Investigate Alerts, AD FS Protection, Lateral Movement Detection | AD, Azure AD, SecOps, ADFS, |
@@ -60,3 +60,5 @@ The table below shows the full organizational security landscape, demonstrating 
 For a detailed discussion of many of the Azure components in the MCRA, view the following video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q6Ft]
+
+For a full series of videos covering all aspects of the MCRA, please see [Microsoft Cybersecurity Reference Architectures (MCRA)](https://www.youtube.com/playlist?list=PLtVMyW0H7aiOQwZSsn2d-tg2z729ce1BZ).

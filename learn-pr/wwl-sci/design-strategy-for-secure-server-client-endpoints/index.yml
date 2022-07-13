@@ -4,7 +4,7 @@ metadata:
   title: Design a strategy for securing server and client endpoints
   description: "Learn how to design a cybersecurity strategy to secure server and client endpoints."
   ms.date: 06/08/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -46,3 +46,6 @@ units:
 - learn.wwl.design-strategy-for-secure-server-client-endpoints.summary
 badge:
   uid: learn.wwl.design-strategy-for-securing-server-client-endpoints.badge
+subjects:
+- security
+- architecture

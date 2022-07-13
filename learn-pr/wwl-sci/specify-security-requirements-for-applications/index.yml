@@ -4,7 +4,7 @@ metadata:
   title: Specify security requirements for applications
   description: "Learn how to specify cybersecurity requirements for applications."
   ms.date: 06/08/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -37,3 +37,6 @@ units:
 - learn.wwl.specify-security-requirements-for-applications.summary
 badge:
   uid: learn.wwl.specify-security-requirements-for-applications.badge
+subjects:
+- security
+- architecture

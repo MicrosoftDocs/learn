@@ -4,7 +4,7 @@ metadata:
   title: Design a strategy for securing data
   description: "Learn how to design a cybersecurity strategy to secure data."
   ms.date: 06/09/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -35,3 +35,6 @@ units:
 - learn.wwl.design-strategy-for-securing-data.summary
 badge:
   uid: learn.wwl.design-strategy-for-securing-data.badge
+subjects:
+- security
+- architecture

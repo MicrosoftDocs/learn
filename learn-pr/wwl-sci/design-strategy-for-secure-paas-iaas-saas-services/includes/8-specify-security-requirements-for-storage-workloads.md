@@ -16,7 +16,6 @@ configuring your Azure Storage Account:
 -   Turn on soft delete for blob data
 -   Use Azure AD to authorize access to blob data.
 -   Consider the principle of least privilege when you assign permissions to an Azure AD security principal through Azure RBAC.
--   Consider the principle of least privilege when you assign permissions to an Azure AD security principal through Azure RBAC.
 -   Use blob versioning or immutable blobs to store business-critical data.
 -   Restrict default internet access for storage accounts.
 -   Configure firewall rules to limit access to your storage account

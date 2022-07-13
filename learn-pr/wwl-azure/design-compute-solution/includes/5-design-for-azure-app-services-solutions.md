@@ -1,6 +1,6 @@
 [Azure App Service ](/azure/app-service/overview)is an HTTP-based service that lets you build and host web apps, background jobs, mobile backends, and RESTful APIs. App Service lets you use the programming language of your choice. Azure App Services offers automatic scaling and high availability. App Service enables automated deployments from GitHub, Azure DevOps, or any Git repo. 
 
-:::image type="content" source="../media/select-azure-app-service.png" alt-text="Flowchart to select Azure App Services.":::
+:::image type="content" source="../media/select-azure-app-service.png" alt-text="Flowchart to select Azure App Services. Decisions are described in the text.":::
 
 
 **Important**: Azure App Service is platform as a service (PaaS) environment. You focus on the website development and API logic. Azure handles the infrastructure to run and scale your web applications.

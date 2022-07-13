@@ -4,7 +4,7 @@ metadata:
   title: Design an identity security strategy
   description: "Learn how to design a cybersecurity strategy for identity management."
   ms.date: 06/08/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -45,3 +45,6 @@ units:
 - learn.wwl.design-identity-security-strategy.summary
 badge:
   uid: learn.wwl.design-identity-security-strategy.badge
+subjects:
+- security
+- architecture

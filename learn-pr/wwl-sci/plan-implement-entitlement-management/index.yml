@@ -2,14 +2,14 @@
 uid: learn.wwl.plan-implement-entitlement-management
 metadata:
   title: Plan and implement entitlement management
-  description: "Plan and implement entitlement management"
-  ms.date: 02/08/2022
+  description: "When new users or external users join your site, quickly assigning them access to Azure solutions is a must. Explore how to entitle users to access your site and resources."
+  ms.date: 06/24/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and implement entitlement management
-summary: When new users or external users join your site, quickly assigning them access to Azure solutions is a must.  Explore how to entitle users to access your site and resources.
+summary: When new users or external users join your site, quickly assigning them access to Azure solutions is a must. Explore how to entitle users to access your site and resources.
 abstract: |
   By the end of this module, you will be able to:
   - Define catalogs.
@@ -38,6 +38,8 @@ units:
 - learn.wwl.plan-implement-entitlement-management.plan-implement-manage-entitlements
 - learn.wwl.plan-implement-entitlement-management.implement-manage-terms-of-use
 - learn.wwl.plan-implement-entitlement-management.manage-lifecycle-of-external-users-with-azure-ad-identity-governance
+- learn.wwl.plan-implement-entitlement-management.configure-manage-connected-organizations
+- learn.wwl.plan-implement-entitlement-management.review-per-user-entitlements
 - learn.wwl.plan-implement-entitlement-management.knowledge-checks
 - learn.wwl.plan-implement-entitlement-management.summary-resources
 badge:

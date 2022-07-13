@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you set up your toy company's pull request workflows, you need to configure your environment. 
 
 In this unit, you make sure that your Azure and GitHub environments are set up so that you can complete the rest of this module successfully.
@@ -165,10 +167,10 @@ Later in this Microsoft Learn module, your pull request workflow will create res
      -Scope $subscriptionId
 
    $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
+     clientId = $servicePrincipal.AppId
+     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```

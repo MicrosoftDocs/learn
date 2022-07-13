@@ -41,6 +41,10 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
 
+1. Rename the `say-hello` job to `deploy`:
+
+   :::code language="yaml" source="code/6-workflow.yml" range="9-12" highlight="2" :::
+
 1. To remove the `placeholder` step from the workflow definition, delete the bottom two lines of the file.
 
 1. As a first step you will add a task to check out the code to the runner's file system. Add a new step at the bottom of the file:
