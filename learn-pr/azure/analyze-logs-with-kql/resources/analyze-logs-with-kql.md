@@ -55,7 +55,7 @@ Identify the subtasks of module title.
     
     You're an IT manager at Contoso, a mid-size software development firm that uses Azure Monitor to monitor the machines on which the company develops and runs its software.
     
-    You want to understand how effectively your organization is using its compute resources. Specifically, you're concerned about resources that might be under-used or over-used, in general at peak times. 
+    You want to understand how effectively your organization is using its compute resources. Specifically, you're concerned about resources that might be under-used or over-used, in general, and at peak times. 
     
     **What will we be doing?**
     
