@@ -50,7 +50,7 @@ The first step with any Azure Function project is to get your function running l
 
 ::: zone pivot="csharp"
 
-4. Under **Explorer**, navigate and open **azure-function** > **dotnet**. Review the code, specifically in **Services/BusDataManagerService.cs**.
+4. Under **Explorer**, navigate and open **azure-function** > **dotnet**. Review the code, specifically in _Services/BusDataManagerService.cs_ and _GetBusDataFunction.cs_..
 
 5. Rename **`local.settings.json.template`** to **`local.settings.json`**.
 
