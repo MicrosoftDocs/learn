@@ -8,7 +8,7 @@ For end-user organizations with IoT/OT environments, Microsoft Defender for IoT 
 
  -  Can be rapidly deployed.
  -  Integrates smoothly with diverse industrial equipment and SOC tools.
- -  Can be deployed fully on-premises or in Azure-connected and hybrid environments.<br>
+ -  Can be deployed fully on-premises or in Azure-connected and hybrid environments.
 
 For IoT device builders and IoT solutions that are built around Azure IoT Hub, Microsoft Defender for IoT also offers a lightweight micro agent that supports standard IoT operating systems, such as Linux and RTOS. The Microsoft Defender device builder agent helps ensure that security is built into your IoT/OT initiatives from the edge to the cloud. It includes source code for flexible, customizable deployment.
 
