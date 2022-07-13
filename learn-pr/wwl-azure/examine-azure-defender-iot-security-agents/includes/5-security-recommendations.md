@@ -76,7 +76,7 @@ Recommendation alerts provide insight and suggestions for actions to improve the
 :::row-end:::
 
 
-## Agent-based recommendations for IoT devices<br>
+## Agent-based recommendations for IoT devices
 
 Device recommendations provide insights and suggestions to improve device security posture.
 

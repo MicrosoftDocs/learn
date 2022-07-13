@@ -163,7 +163,7 @@ When you deploy a security agent with an installation script, a configuration fi
 
 ## Change authentication method after deployment
 
-To change authentication methods after deployment, manual editing of the configuration file is required.<br>
+To change authentication methods after deployment, manual editing of the configuration file is required.
 
 ### C\#-based security agent
 
