@@ -3,7 +3,7 @@ Your transportation company wants to set itself apart from other companies, with
 Here, you'll learn:
 
 - What considerations you need to make when creating an Azure SQL database, including:
-  - How a logical server acts as an administrative container for your databasFes.
+  - How a logical server acts as an administrative container for your databases.
   - Differences between purchasing models.
   - How elastic pools enable you to share processing power among databases.
   - How collation rules affect how data is compared and sorted.
@@ -34,7 +34,7 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
     Unlike the DTU model, which provides fixed configurations for compute, storage, and IO resources, the vCore model enables you to configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
 
-Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and IO performance, and it is also less expensive to use while you build your prototype.
+Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and IO performance, and it's also less expensive to use while you build your prototype.
 
 ## What are SQL elastic pools?
 

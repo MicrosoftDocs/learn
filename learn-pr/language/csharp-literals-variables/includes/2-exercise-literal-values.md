@@ -65,19 +65,21 @@ The term *int* is short for integer, which you may recognize from studying math.
 
 If we wanted to print a number that includes values after the decimal point, we could use a **decimal literal**.
 
-To create a decimal literal, append the letter `m` after the number. In this context, the `m` is called a *literal suffix*. The literal suffix tells the compiler you wish to work with a value of type decimal.
+To create a decimal literal, append the letter `m` after the number. In this context, the `m` is called a *literal suffix*. The literal suffix tells the compiler you wish to work with a value of type `decimal`.
 
 Add the following line of code in the code editor:
 
 ```csharp-interactive
-Console.WriteLine(12.3m);
+Console.WriteLine(12.30m);
 ```
 
 If you run the code, you'll get the following output.
 
 ```output
-12.3
+12.30
 ```
+
+Without the literal suffix `m`, the decimal number in the previous example will be treated as type `double` by the compiler and the output will be `12.3`.
 
 > [!NOTE]
 > You can use either a lower-case `m` or upper-case `M` as the literal suffix for a decimal.
