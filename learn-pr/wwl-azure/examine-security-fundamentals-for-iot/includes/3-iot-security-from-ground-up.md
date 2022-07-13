@@ -48,7 +48,7 @@ All keys used by the IoT infrastructure are stored in the cloud in secure storag
 
 By default, IoT Hub's hostnames map to a public endpoint with a publicly routable IP address over the internet. This allows different customers to share this IoT Hub public endpoint, and ensures that IoT devices connecting over wide-area networks and on-premises networks can access your hub. However, there are situations where you might want to restrict access to your Azure resources. Azure IoT solutions support both IP filtering and virtual networks to help secure access when needed.
 
-For detailed information on securing network access, see the following resources:<br>
+For detailed information on securing network access, see the following resources:
 
- -  IoT Hub IP filtering: [https://docs.microsoft.com/azure/iot-hub/iot-hub-ip-filtering](/azure/iot-hub/iot-hub-ip-filtering).<br>
- -  Virtual network support: [https://docs.microsoft.com/azure/iot-hub/virtual-network-support](/azure/iot-hub/virtual-network-support)<br>
+ -  IoT Hub IP filtering: [https://docs.microsoft.com/azure/iot-hub/iot-hub-ip-filtering](/azure/iot-hub/iot-hub-ip-filtering).
+ -  Virtual network support: [https://docs.microsoft.com/azure/iot-hub/virtual-network-support](/azure/iot-hub/virtual-network-support)

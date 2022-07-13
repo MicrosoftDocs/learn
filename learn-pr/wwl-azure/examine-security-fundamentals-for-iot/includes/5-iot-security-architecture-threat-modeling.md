@@ -44,7 +44,7 @@ In order to optimize security best practices, it is recommended that a typical I
 
 Each zone is separated by a Trust Boundary that represents a transition of data/information from one source to another. During this transition, the data/information could be subject to Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service and Elevation of Privilege (STRIDE).
 
-We can use the Azure IoT Reference Architecture to demonstrate how to think about threat modeling for IoT and how to address the threats identified. This approach identifies four main areas of focus:<br>
+We can use the Azure IoT Reference Architecture to demonstrate how to think about threat modeling for IoT and how to address the threats identified. This approach identifies four main areas of focus:
 
  -  Devices and Data Sources.
  -  Data Transport.
