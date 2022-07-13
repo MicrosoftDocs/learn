@@ -6,8 +6,6 @@ In this unit, you will:
 * Create an ACR instance and deploy the updated app to AKS.
 * Explore the system response under failure after implementing resiliency.
 
-[!INCLUDE[reconnect to Azure Cloud Shell](../../includes/microservices/reconnect-to-cloud-shell-note.md)]
-
 ## Add failure handling code using Polly
 
 In this section, you'll modify the app to automatically retry a failing operation until it succeeds. If the operation continues to fail after several attempts, the UI will display an exception.
@@ -23,15 +21,15 @@ The following sequence diagram shows the flow of events from an `HttpClient` ins
 
 :::image type="content" source="../media/5-implement-polly-resiliency/policy-http-message-handlers.png" alt-text="An HttpClient call through multiple PolicyHttpMessageHandlers." border="true" lightbox="../media/5-implement-polly-resiliency/policy-http-message-handlers.png":::
 
-Complete the following steps to implement failure handling for the coupon service as described above:
+Complete the following steps to implement failure handling for the coupon service as described above. Use the terminal you created earlier.
 
-1. Set your current location to the HTTP aggregator project directory by running the following command:
+1. Temporarily set your current location to the HTTP aggregator project directory by running the following command:
 
     ```bash
-    pushd src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/
+    pushd ../../src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/
     ```
 
-    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::*.
+    Your current location is *:::no-loc text="/workspaces/mslearn-aspnet-core/modules/microservices-resiliency-aspnet-core/src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::*.
 
 1. Run the following command:
 
@@ -72,7 +70,7 @@ Complete the following steps to implement failure handling for the coupon servic
 
     1. In the `AddApplicationServices` method, call the `AddPolicyHandler` extension method twice. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
-        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/5-servicecollectionextensions.cs" highlight="10-11":::
+        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/5-servicecollectionextensions.cs" highlight="9-11":::
 
     1. Replace the comment `// Add the using statements` with the following `using` directives:
 
@@ -115,52 +113,48 @@ Complete the following steps to deploy the changes that you've implemented:
 1. Run the following script to publish the aggregator's updated Docker image to ACR:
 
     ```bash
-    ./deploy/k8s/build-to-acr.sh --services webshoppingagg
+    ./build-to-acr.sh --services webshoppingagg
     ```
 
     The preceding script builds and publishes the updated image to the ACR instance. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build and publish the `webshoppingagg` image to the ACR instance. You'll see a variation of the following output:
 
     ```console
-    Building images to ACR
-    ======================
-    ~/clouddrive/aspnet-learn/src/deploy/k8s ~/clouddrive/aspnet-learn/src
-
-    Building and publishing docker images to eshoplearn20200729161705092.azurecr.io
-    ~/clouddrive/aspnet-learn/src ~/clouddrive/aspnet-learn/src/deploy/k8s ~/clouddrive/aspnet-learn/src
+    Building and publishing docker images to eshoplearn20220712195024315.azurecr.io
+ 
 
     Building image "webshoppingagg" for service "webshoppingagg" with "src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Dockerfile.acr"...
 
-     > az acr build -r eshoplearn20200729161705092 -t eshoplearn20200729161705092.azurecr.io/webshoppingagg:linux-latest -f src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Dockerfile.acr .
+    > az acr build -r eshoplearn20220712195024315 -t eshoplearn20220712195024315.azurecr.io/webshoppingagg:linux-net6-coupon -f src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Dockerfile.acr .
 
     Packing source code into tar to upload...
     Excluding '.gitignore' based on default ignore rules
-    Uploading archived source code from '/tmp/build_archive_1a826ecd8db64f8c846d796af13d6318.tar.gz'...
-    Sending context (7.838 MiB) to registry: eshoplearn20200729161705092...
-    Queued a build with ID: cf2
+    Uploading archived source code from '/tmp/build_archive_9255326b2fec4abb8c38d0f245918034.tar.gz'...
+    Sending context (7.875 MiB) to registry: eshoplearn20220712195024315...
+    Queued a build with ID: cj1
     Waiting for an agent...
-    2020/07/29 17:03:19 Downloading source code...
-    2020/07/29 17:03:21 Finished downloading source code
-    2020/07/29 17:03:22 Using acb_vol_faae1c90-bbea-4ea6-89e9-daa0ab059f5a as the home volume
-    2020/07/29 17:03:22 Setting up Docker configuration...
-    2020/07/29 17:03:23 Successfully set up Docker configuration
-    2020/07/29 17:03:23 Logging in to registry: eshoplearn20200729161705092.azurecr.io
-    2020/07/29 17:03:24 Successfully logged into eshoplearn20200729161705092.azurecr.io
-    2020/07/29 17:03:24 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
-    2020/07/29 17:03:24 Scanning for dependencies...
-    2020/07/29 17:03:25 Successfully scanned dependencies
-    2020/07/29 17:03:25 Launching container with name: build
+    2022/07/12 21:40:22 Downloading source code...
+    2022/07/12 21:40:24 Finished downloading source code
+    2022/07/12 21:40:24 Using acb_vol_408e7673-c944-4209-9261-763c2329ccf2 as the home volume
+    2022/07/12 21:40:24 Setting up Docker configuration...
+    2022/07/12 21:40:25 Successfully set up Docker configuration
+    2022/07/12 21:40:25 Logging in to registry: eshoplearn20220712195024315.azurecr.io
+    2022/07/12 21:40:26 Successfully logged into eshoplearn20220712195024315.azurecr.io
+    2022/07/12 21:40:26 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+    2022/07/12 21:40:26 Scanning for dependencies...
+    2022/07/12 21:40:26 Successfully scanned dependencies
+    2022/07/12 21:40:26 Launching container with name: build
     ```
 
     And this particular line once the image has been published to ACR:
 
     ```console
-    2020/07/29 17:04:57 Successfully pushed image: eshoplearn20200729161705092.azurecr.io/webshoppingagg:linux-latest
+    2020/07/29 17:04:57 Successfully pushed image: eshoplearn20200729161705092.azurecr.io/webshoppingagg:linux-net6-coupon
     ```
 
 1. Run the following command to verify the URL of your ACR instance:
 
     ```bash
-    eval $(cat ~/clouddrive/aspnet-learn/create-acr-exports.txt) && \
+    eval $(cat ../../create-acr-exports.txt) && \
         echo $ESHOP_REGISTRY
     ```
 
@@ -173,15 +167,12 @@ Complete the following steps to deploy the changes that you've implemented:
 1. Run the following script to deploy the updated image in ACR to AKS:
 
     ```bash
-    ./deploy/k8s/deploy-application.sh --registry $ESHOP_REGISTRY --charts webshoppingagg
+    ./deploy-application.sh --registry $ESHOP_REGISTRY --charts webshoppingagg
     ```
 
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You'll see a variation of the following output:
 
     ```console
-    ~/clouddrive/aspnet-learn ~/clouddrive/aspnet-learn/src/deploy/k8s
-    ~/clouddrive/aspnet-learn/src/deploy/k8s
-
     Uninstalling chart webshoppingagg...
     release "eshoplearn-webshoppingagg" uninstalled
 
@@ -217,11 +208,7 @@ Complete the following steps to test the Retry policy:
 1. Replace the existing discount code with *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     The operation appears to be successful on the first try after a brief wait. The resilient BFF will handle retries transparently from the user's perspective. Notice that the 10 USD discount was applied.
-1. Run the following command to view the logging page URL. Select the **:::no-loc text="Centralized logging":::** link.
-
-    ```bash
-    cat ../deployment-urls.txt
-    ```
+1. Return to the **:::no-loc text="Centralized logging":::** page.
 
 1. Check the log traces. You'll see a variation of the following output:
 
