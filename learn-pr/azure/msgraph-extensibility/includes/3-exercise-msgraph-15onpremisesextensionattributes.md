@@ -1,6 +1,6 @@
 Microsoft Graph provides a set of 15 extension attributes for storing custom data. In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag. Employee profiles are represented in Azure AD, Microsoft 365, and Microsoft Graph as user profiles.
 
-In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. 
+In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of the signed-in user.
 
 ## Authenticate your session
 
@@ -55,7 +55,7 @@ Content-type: application/json
 
 ## Add data to the extension attributes
 
-In this exercise, you'll store these pieces of data for the user named **Adele Vance** who is identified by user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`.
+In this exercise, you'll store these pieces of data for **Adele Vance**.
 
 ### Request
 
@@ -98,8 +98,6 @@ GET https://graph.microsoft.com/v1.0/users?$filter=onPremisesExtensionAttributes
 ConsistencyLevel: eventual
 ```
 
-The HTTP request must include the `$count=true` query parameter and set the **ConsistencyLevel** header to `eventual`. This is because the *not equals to* (`ne`) operator used in the query is a specially indexed query capability that works with Azure AD advanced queries and requires both the `$count=true` query parameter and the **ConsistencyLevel** header.
-
 #### Response
 
 The request will return all users who have shared their LinkedIn profile or their Xbox gamertag, including Adele. The following response object shows the response payload that Microsoft Graph returns to the app.
@@ -138,15 +136,13 @@ Content-type: application/json
 }
 ```
 
-Because Microsoft Graph doesn't support directly retrieving the 15 properties nested in **onPremisesExtensionAttributes**, the response object includes all 15 properties, including extensionAttribute1-12 that the team bonding app doesn't intend to use.
-
-Therefore, the team bonding app should include a logic to strip down the unrequired 12 properties and only display the data in the three properties that it requires.
+Because Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties, the team bonding app should include a logic to strip down the unrequired 12 properties and only display the data in the three properties that it requires.
 
 ### Change the value of an extension attribute property
 
-Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in app profile so colleagues can discover the new gamertag.
+Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
 
-Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph through an HTTP PATCH request.
+Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
 
 #### Request
 
@@ -168,13 +164,9 @@ If the update is successful, Microsoft Graph returns a `204 No Content` response
 HTTP/1.1 204 No Content
 ```
 
-You can implement the appropriate logic in the team bonding app to translate this successful response code to a user friendly response message in the user interface.
-
 ### Remove an existing value from an extension attribute property
 
-Suppose Adele no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile.
-
-When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph through an HTTP PATCH request. To remove the existing Skype ID from **extensionAttribute14**, the app will set the value of the property to `null`.
+Suppose Adele no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extensionAttribute14** property to `null`.
 
 Run the following request to remove the Skype ID from Adele's profile.
 
@@ -230,7 +222,7 @@ POST https://graph.microsoft.com/v1.0/groups
 
 The request returns a `201 Created` response code and a Microsoft Graph **group** object in the response body as follows.
 
->**Note:** The response object shown here might be shortened for readability. 
+>**Note:** The response object shown here might be shortened for readability.
 
 ```
 HTTP/1.1 201 Created
@@ -263,9 +255,7 @@ Content-type: application/json
 }
 ```
 
-After a few seconds to allow Azure AD to complete synchronization, the users who match the dynamic membership rule are added as members of the group and a team is also provisioned for the group.
-
-In this exercise, Adele is automatically a member of the group.
+After a few seconds to up to 24 hours of Azure AD synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group and a team is also provisioned for the group.
 
 You can confirm that Microsoft Graph works by retrieving the members of the Xboxers group as follows.
 

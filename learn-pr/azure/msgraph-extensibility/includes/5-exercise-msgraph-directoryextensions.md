@@ -1,17 +1,6 @@
 Apart from extension attribute properties, Microsoft Graph also provides **directory extensions** for storing custom data. In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag. Employee profiles are represented in Azure AD, Microsoft 365, and Microsoft Graph as user profiles.
 
-In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and create directory extension definitions and manage the directory extensions on the **user** resource.
-
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
+In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the directory extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of the signed-in user.
 
 ## Authenticate your session
 
@@ -19,15 +8,17 @@ Sign in to Graph Explorer as an administrator with the following Azure AD roles:
 
 Consent to the *User.ReadWrite.All*, *Group.ReadWrite.All*, and *Application.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
-In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permission to allow them to discover their colleagues and update their own profile information respectively.
+In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permission to allow them to discover their colleagues and update their own profile information, respectively.
 
-## Create an application
+## Create an application and a service principal
 
 Before you can use directory extensions, you must define them in an application.
 
+### Create an application
+
 In this step, you first create an application object that you'll reserve for creating directory extension definitions. This app will be your "owner app" for the directory extensions.
 
-### Request
+#### Request
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/applications
 
@@ -43,9 +34,12 @@ POST https://graph.microsoft.com/v1.0/applications
 }
 ```
 
-### Response
+#### Response
 The following is a sample response. The response object has been shortened for readability to show only few properties.
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
     "id": "da489504-01b0-4754-bf9d-8ed05422ba2f",
@@ -65,13 +59,51 @@ The following is a sample response. The response object has been shortened for r
 }
 ```
 
+### Create a service principal
+
+In this step, you'll instantiate the "Contoso extensions app".
+
+#### Request
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/servicePrincipals
+
+{
+    "appId": "5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb"
+}
+```
+
+#### Response
+The following is a sample response. The response object has been shortened for readability to show only few properties.
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals/$entity",
+    "id": "5f214ccd-3f74-41d7-b683-9a6d845eea4d",
+    "accountEnabled": true,
+    "appDisplayName": "Contoso extensions app - DO NOT DELETE",
+    "appDescription": "Contoso extensions app. Reserved for directory extensions. DO NOT DELETE. Used by Contoso for storing user data.",
+    "appId": "5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb",
+    "appOwnerOrganizationId": "f0820ba7-ce6a-4a46-9787-e0b7ed727b30",
+    "displayName": "Contoso extensions app - DO NOT DELETE",
+    "servicePrincipalNames": [
+        "5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb"
+    ],
+    "servicePrincipalType": "Application",
+    "signInAudience": "AzureADMyOrg",
+    "tags": [
+        "Extension attributes",
+        "Extensions",
+        "Directory extensions"
+    ]
+}
+```
+
 ## Create directory extension definitions
 
-Unlike the extension attribute properties in the previous unit, directory extensions can be defined and assigned custom names. In this step, you create directory extension definitions on the "Contoso extensions app" that's identified by the client object ID `da489504-01b0-4754-bf9d-8ed05422ba2f`.
-
-Directory extension definitions are managed through the **extensionProperties** relationship on an application object and the associated **extensionProperty** resource type.
-
-One directory extension definition represents only one directory extension property. To store all three values in the team bonding scenario, you must create three directory extension definitions, each with its unique name.
+In this step, you create directory extension definitions on the "Contoso extensions app".
 
 ### Request
 
@@ -91,9 +123,12 @@ POST https://graph.microsoft.com/v1.0/applications/da489504-01b0-4754-bf9d-8ed05
 
 ### Response
 
-The following is the response object from the first request. Take note that while you specified `linkedInProfile` as the extension name in the request, Microsoft Graph transforms the extension name and adds a prefix. The new extension name is `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`.
+The following is the response object from the first request. Take note that of the new extension `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`.
 
 ```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('da489504-01b0-4754-bf9d-8ed05422ba2f')/extensionProperties/$entity",
     "id": "554c66df-27ad-4852-9f37-5167f19b3e54",
@@ -108,9 +143,7 @@ The following is the response object from the first request. Take note that whil
 }
 ```
 
-Microsoft Graph directory extensions are named following the naming convention: extension_{appId-without-hyphens}_{extensionProperty-name}. Where in your response, `{appId-without-hyphens}` is the stripped version of the **appId** for the "Contoso extensions app" application. In this case, the `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb` without the hyphens. This is one way in which directory extensions are closely linked to the creating app.
-
-Running the previous request two more times with different names will give you other response objects where the ID and name property are different. Let's assume you're run the previous request two more times. To retrieve all directory extensions definitions for the app identified by ID `da489504-01b0-4754-bf9d-8ed05422ba2f`, run the following query:
+Running the previous request two more times with different names will give you other response objects. After creating all three definitions, retrieve the directory extensions definitions by running the following query:
 
 ### Request
 
@@ -123,6 +156,9 @@ GET https://graph.microsoft.com/v1.0/applications/da489504-01b0-4754-bf9d-8ed054
 The following response object shows the directory extension definitions you created.
 
 ```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications('da489504-01b0-4754-bf9d-8ed05422ba2f')/extensionProperties",
     "value": [
@@ -163,13 +199,11 @@ The following response object shows the directory extension definitions you crea
 }
 ```
 
-Now that you've defined the directory extensions, the directory extension properties to use on the user object are `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`, `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId`, and `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag`. We can use these properties to store the user's LinkedIn profile URL, Skype ID, and Xbox gamertag respectively.
+From the response object, the directory extension properties to use on the user object are `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`, `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId`, and `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag`. You'll use these properties to store the user's LinkedIn profile URL, Skype ID, and Xbox gamertag respectively.
 
-## Assign directory extension properties to users
+## Update directory extension properties for users
 
-Assume we have a user named Adele Vance identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. You'll store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new directory extension properties you created.
-
-You store data in the directory extension properties by updating the user profile using an HTTP PATCH request. You'll store Adele's public LinkedIn profile URL, Skype ID, and Xbox gamertag in `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`, `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId`, and `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag` respectively.
+Consider a user named Adele Vance identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you'll store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new directory extension properties that you created.
 
 In the team bonding app, Adele can use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
 
@@ -190,3 +224,128 @@ If the update is successful, Microsoft Graph returns a `204 No Content` response
 ```http
 HTTP/1.1 204 No Content
 ```
+
+## Use the data in the directory extension properties for your application
+
+After the data is stored in the user profile, you can now use it in your application.
+
+### Search for employees who have shared their LinkedIn profile and Xbox gamertag
+
+Suppose another employee wants to discover their colleagues who have shared their Xbox and LinkedIn profiles. This capability can be achieved through a search bar and a drop-down filter in the team bonding app to allow anyone to perform a quick discovery.
+
+#### Request
+
+When the employee uses the user interface to find colleagues who have shared their Xbox gamertag or LinkedIn profiles, the app will call Microsoft Graph as follows:
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile,extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId,extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag&$filter=extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile ne null or extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag ne null&$count=true
+ConsistencyLevel: eventual
+```
+
+#### Response
+
+The request will return all users who have shared their LinkedIn profile or their Xbox gamertag, including Adele. The following response object shows the response payload that Microsoft Graph returns to the app.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile,extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId,extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag)",
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "6e03a2db-564a-47ec-ba51-d0cd38af069a",
+            "displayName": "Adele Vance",
+            "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag": "AwesomeAdele",
+            "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId": "AdeleV",
+            "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn"
+        }
+    ]
+}
+```
+
+### Change the value of a directory extension property
+
+Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
+
+Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
+
+#### Request
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+
+{
+    "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag": "AwesomeAdele"
+}
+```
+
+#### Response
+
+If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Delete the value of a directory extension property
+
+Suppose Adele no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag** property to `null`.
+
+Run the following request to remove the Skype ID from Adele's profile.
+
+### Request
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
+
+{
+    "extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag": null
+}
+```
+
+#### Response
+
+If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
+
+```http
+HTTP/1.1 204 No Content
+```
+
+## Dynamically add users internal groups based on their user profile data
+
+Assuming you created the dynamic "Xbox gamers" group in the previous exercise. In this exercise, you update the group **membershipRule** setting to configure the rule that only users with Xbox gamer tags can be members of the group.
+
+> [!NOTE]
+> Because Adele is already a member of the Xboxers gamers group due to the previous exercise, you can choose to reset the group and remove all memberships. To achieve this:
+> 1. Update the **groupTypes** to `Unified` only, and the **membershipRuleProcessingState** and **membershipRule** to `null`.
+> 1. Remove the current group members from the Xboxers group.
+> 
+> You can alternatively choose to create a new dynamic group for this exercise.
+
+### Request
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/groups/d61efd38-0b40-488a-8e4d-ed7508504b27
+
+{
+    "membershipRule": "(user.extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag -ne null)"
+}
+```
+
+
+### Response
+
+If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
+
+```http
+HTTP/1.1 204 No Content
+```
+
+After a few seconds to allow Azure AD to complete synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group.
+
+
+### Customize tokens using data in extension attribute properties
+
+

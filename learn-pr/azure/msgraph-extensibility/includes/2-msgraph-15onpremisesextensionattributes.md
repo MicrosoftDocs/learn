@@ -40,19 +40,28 @@ The following is a JSON representation of the **onPremisesExtensionAttributes** 
 
 Therefore, because the 15 extension attributes are predefined on the **user** resource, you can't define them, assign them custom names, or delete them. You can only manage them by adding, updating, or deleting data from them.
 
-You don't need to store data in all extension attributes. You only store data based on your need and unused extension attributes can be *null*.
+### Use extension attribute properties
+
+You manage the extension attribute properties on user profiles through the same HTTP methods used to manage users.
+
++ Using a POST request, you can store data in an extension attribute property when creating a new user
++ Using a PATCH request, you can either store data in the extension attribute property, update the stored data, or delete the existing data
+    + To delete data from an extension attribute property, set its value to `null`
++ Using a GET request, you can read the directory extension properties for all users or individual users in the tenant
+
+You don't need to store data in all extension attributes. You only store data based on your need and unused extension attributes can remain *null*.
 
 You also don't need to use the extension attributes in their logical order. For example, you can choose to use **extensionAttribute14** only or **extensionAttribute1** and **extensionAttribute9** only. To store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag, you can choose to use **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
-You can assign values to the extension properties when creating new users or by updating the properties for existing users. For your scenario, the employees will be updating their existing profiles through the team bonding app user interface that calls Microsoft Graph as the underlying API.
-
 #### Query capabilities supported by extension attribute properties
 
-In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** property isn't returned by default and you must therefore use a `$select` query parameter to retrieve it and read the data it stores.
+In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** property isn't returned by default and you must therefore use the `$select` query parameter to read the property.
 
-Extension attribute properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty.
+Extension attribute properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty (`null`).
 
-The extension attribute properties are specially indexed in Microsoft Graph for advanced querying. This means the HTTP request must include the `$count=true` query parameter and set the **ConsistencyLevel** header to `eventual`.
+The extension attribute properties are specially indexed in Microsoft Graph for advanced querying. This means the HTTP request must include the `$count=true` query parameter and the **ConsistencyLevel** header set to `eventual`.
+
+While Microsoft Graph supports the `$filter` and `$select` query parameters, it doesn't support directly retrieving only a subset of the 15 properties nested in the **onPremisesExtensionAttributes** object.
 
 ### Other Azure AD scenarios for custom data in extension attribute properties
 
