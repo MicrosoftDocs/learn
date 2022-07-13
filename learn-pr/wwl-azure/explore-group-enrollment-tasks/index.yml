@@ -3,7 +3,7 @@ uid: learn.wwl.explore-group-enrollment-tasks
 metadata:
   title: Explore group enrollment tasks
   description: "Experience implementing group enrollments using X.509 certificates, using code that accesses device twin properties to initialize a device, and deprovisioning enrollments groups or individual devices from an enrollment group."
-  ms.date: 07/11/2022
+  ms.date: 07/13/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
