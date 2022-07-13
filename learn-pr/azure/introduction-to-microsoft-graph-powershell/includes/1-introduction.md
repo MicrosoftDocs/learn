@@ -10,8 +10,9 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+
+Implementing business process automation across a set of Microsoft 365 services can be challenging if the right tool isn't available. Think about all repetitive bulk administrative tasks your company needs to do: user/guest lifecycle management, App management, Exchange, Sharepoint. How do you automate tasks across all these services? Microsoft Graph PowerShell exposes the entire Microsoft Graph API set for use in PowerShell providing a powerful way to optimize your work flow.
+
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -26,8 +27,13 @@ TODO: add your visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
+
+Suppose you're the IT admin of a vendor company that develops software solutions. Your organization is using Azure Active Directory (Azure AD) and other Microsoft 365 services. You maintain a database of all devices registered in Azure AD. Due to loss, broken devices or OS reinstallations, you've stale devices in your environment. You've been tasked with finding the best tool to find and remove stale devices, so you can focus your resources on managing devices that actually require management. With your knowledge of PowerShell, you would like to know if Microsoft Graph PowerShell would be the most appropriate tool to automate this process.
+
+:::image type="content" source="../media/device-activity.png" alt-text="Device activity in the azure portal":::
+
+
+
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -42,7 +48,8 @@ TODO: add your image
 
  -->
 ## What will we be doing?
-TODO: add your activities
+
+Microsoft Graph PowerShell is PowerShell for the entire Microsoft Graph API and provides PowerShell command for all REST APIs in Microsoft Graph. We'll look at the features and benefits of the Microsoft Graph PowerShell module and how to use the module to automate different business processes.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -58,6 +65,6 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+By the end of this session, you'll be able to determine if Microsoft Graph PowerShell possesses the capabilities required to automate your business processes.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
