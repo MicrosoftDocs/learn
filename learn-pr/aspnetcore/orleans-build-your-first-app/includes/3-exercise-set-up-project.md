@@ -12,7 +12,7 @@ Your console output should look similar to the text below and should include a v
 6.0.301 [C:\Program Files\dotnet\sdk]
 ```
 
-## Cloning the completed project from GitHub
+## Clone the completed project from GitHub
 
 You can work through this module to build the URL shortener app from start to finish. Alternatively, you can also clone the completed sample project from GitHub to follow along or check your work against the completed code.
 
@@ -20,7 +20,7 @@ You can work through this module to build the URL shortener app from start to fi
 git clone https://github.com/Azure-Samples/build-your-first-orleans-app-aspnetcore
 ```
 
-## Creating the project using Visual Studio Code
+## Create the project using Visual Studio Code
 
 If you want to build the app from start to finish, create and run a new minimal API project using the steps below.
 
@@ -45,7 +45,7 @@ If you want to build the app from start to finish, create and run a new minimal 
 
     After a moment, the app should launch in your browser and display the message `Hello World!`. By the end of the module you'll expand this app to provide URL shortening capabilities.
 
-## Adding Orleans to the project
+## Add Orleans to the project
 
 Orleans is available through a collection of NuGet packages. Follow the steps below to integrate Orleans into the project you created.
 

@@ -1,6 +1,6 @@
 Orleans is a cross-platform framework designed to simplify building scalable, distributed, cloud-native applications. Orleans runs anywhere that .NET is supported and integrates well with other platform features.
 
-## Building cloud native, distributed applications
+## Build cloud native, distributed applications
 
 Suppose you work for a team that is building a set of utilities for a social platform. One of those tools includes a URL shortener web service. Users can submit a full URL to the app, which will return a shortened version they can share with others, who will then be redirected to the full site.
 
