@@ -41,7 +41,7 @@ quiz:
     - content: 'With the BYOL license model, customers have to purchase a license to use the software outside of Azure Marketplace. With the usage-based license model, customers can purchase a license to the software through Microsoft, streamlining the purchasing process.'
       isCorrect: true
       explanation: 'Correct! If you choose the BYOL license model, customers will have to purchase your software license outside of Azure Marketplace. Usage-based VM offers streamline the purchasing process for customers because they can purchase your software license through Microsoft using the same payment method they use to pay for their Azure subscription.'
-  - content: 'Which of the following criteria need to be met to provide your VM image from a shared image gallery (SIG) when completing the technical configuration in Partner Center.'
+  - content: 'Which of the following criteria need to be met to provide your VM image from a shared image gallery (SIG) when completing the technical configuration in Partner Center?'
     choices:
     - content: 'The Azure subscription that contains the SIG with your VM image must be under the same Azure tenant as your Partner Center publisher account.'
       isCorrect: true
