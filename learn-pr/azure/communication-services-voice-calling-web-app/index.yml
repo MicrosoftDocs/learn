@@ -21,7 +21,7 @@ prerequisites: |
   - Basic familiarity with JavaScript and Node.js
   - The LTS (Long Term Support) or latest version of Node.js
   - An Azure account with an active subscription and a billing address in the United States. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/communication-services-voice-calling-web-app.svg
 levels:
   - beginner
 roles:
