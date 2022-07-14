@@ -8,12 +8,10 @@ When you're ready to take your IoT Edge solution from development into productio
 IoT Edge devices can be anything from a Raspberry Pi to a laptop to a virtual machine running on a server. You may have access to the device either physically or through a virtual connection, or it may be isolated for extended periods of time. Either way, you want to make sure that it's configured to work appropriately.
 
  -  Important
-    
      -  Install production certificates.
      -  Have a device management plan.
      -  Use Moby as the container engine.
  -  Helpful
-    
      -  Choose upstream protocol.
 
 ### Install production certificates
