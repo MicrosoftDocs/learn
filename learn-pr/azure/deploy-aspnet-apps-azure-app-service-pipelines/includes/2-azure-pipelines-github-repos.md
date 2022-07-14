@@ -48,7 +48,7 @@ When you plan a pipeline, you usually begin by identifying its stages. Typically
 > [!NOTE]
 > Typically, you promote changes from one stage to the next as part of your release management strategy. Within each stage, you deploy build artifacts to the environment associated with that stage.
 
-You can execute parts of the pipeline corresponding to individual stages independently. You can invoke this execution manually or configure it to takes place automatically in response to a trigger. A trigger can be based on a predefined schedule or an event, such as a repository commit (in case of continuous integration) or successful completion of the build process (in case of continuous deployment).
+You can execute parts of the pipeline corresponding to individual stages independently. You can invoke this execution manually or configure it to take place automatically in response to a trigger. A trigger can be based on a predefined schedule or an event, such as a repository commit (in case of continuous integration) or successful completion of the build process (in case of continuous deployment).
 
 To implement individual execution steps within an Azure pipeline, you'll use tasks. A task is a packaged script or procedure that abstracts the underlying implementation details. You can choose from ready-to-use tasks built into Azure Pipelines and those available from Visual Studio Marketplace. You also have the option to create your own custom tasks. In addition, there are tasks that allow you to run arbitrary scripts, either inline or by referencing a script file. When adding a task to a pipeline, you need to provide task-specific input parameters.
 
