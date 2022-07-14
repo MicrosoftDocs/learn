@@ -30,7 +30,7 @@ Idempotency is a critical component of IaC. In scenarios more complex than the o
 
 ### IaC and Azure Pipeline stages
 
-Because IaC tasks provision infrastructure separately from artifacts that are deployed afterwards, you might consider encapsulating these tasks into a dedicated stage within an Azure pipeline. While, in general, it might make sense to still run all stages together, the multi-stage approach of IaC will simplify testing artifact deployments separately from infrastructure provisioning.
+Because IaC tasks provision infrastructure separately from artifacts that are deployed afterwards, you might consider encapsulating these tasks into a dedicated stage within an Azure pipeline. While in general it might make sense to still run all stages together, the multi-stage approach of IaC will simplify testing artifact deployments separately from infrastructure provisioning.
 
 ## Target environment
 
