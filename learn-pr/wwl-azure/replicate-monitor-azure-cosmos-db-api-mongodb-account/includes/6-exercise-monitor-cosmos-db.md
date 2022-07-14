@@ -107,6 +107,9 @@ Let's continue with the Lab, our Log Analytics tables should be ready when we ge
 
 We'll do some changes to our Cosmos DB environment to trigger 16500 exceptions.
 
+    > [!NOTE]
+    > In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB API for MongoDB account. You shouldn't have a reason to disable ***server side retries*** in a production environment, this is only done for illustration purposes.
+
 1. If you haven't done so, on the Azure portal, go to your Azure Cosmos DB account.
 
 1. Let's check if the *server side retries* setting is disabled, which should be disabled by default since we created the database programmatically. We need this feature disabled to force some 16500 exceptions, but in a production environment you might decide to enable this feature to reduce the number of 16500 exceptions encountered by your applications.
