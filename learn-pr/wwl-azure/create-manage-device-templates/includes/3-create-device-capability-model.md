@@ -2,7 +2,7 @@ A device model defines how a device interacts with your IoT Central application.
 
 A solution developer can also export a JSON file that contains the device model. A device developer can use this JSON document to understand how the device should communicate with the IoT Central application.
 
-The JSON file that defines the device model uses the Digital Twin Definition Language (DTDL) V2. IoT Central expects the JSON file to contain the device model with the interfaces defined inline, rather than in separate files.
+The JSON file that defines the device model uses the Digital Twin Definition Language (DTDL) V2. IoT Central expects the JSON file to contain the device model with the interfaces defined inline, rather than in separate files. To learn more, see the IoT Plug and Play modeling guide: [https://docs.microsoft.com/azure/iot-develop/concepts-modeling-guide](/azure/iot-develop/concepts-modeling-guide)
 
 A typical IoT device is made up of:
 
