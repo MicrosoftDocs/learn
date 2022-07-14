@@ -37,16 +37,12 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     > [!Tip]
     > If you find the large icons in your scene (for example, the large framed "T" icons) distracting, you can hide them by [switching the Gizmos toggle](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the preceding image.
 
-2. Select the **MixedRealityToolkit** object on the **Hierarchy** pane. Then use the **Add Component** button on the **Inspector** pane to add the following components:
+1. In the **Hierarchy** pane, select the **MixedRealityToolkit** object.
+1. In the **Inspector** pane, use the **Add Component** button to add the following components:
 
     * **AR Anchor Manager (Script)**
     * **DisableDiagnosticsSystem (Script)**
 
-    :::image type="content" source="../media/add-component.png" alt-text="Screenshot of adding components to the MixedRealityToolkit object." lightbox="../media/add-component.png":::
-
-    > [!Warning]
-    > There's a known issue with Azure Spatial Anchors v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Use the **Add Component** button on the **Inspector** pane to add **AR Camera Manager (Script)** and **AR Session (Script)** to the **MixedRealityToolkit** object. Be sure to disable the camera that's created automatically when you add **AR Camera Manager (Script)**, by clearing the checkbox next to the **Camera** object on the **Inspector** pane.
-    
     > [!Note]
     > When you add the **AR Anchor Manager (Script)** component, the **AR Session Origin (Script)** component is automatically added, because the **AR Anchor Manager (Script)** component requires it.
 
@@ -54,37 +50,44 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
 In this section, you'll add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and spatial anchors behave in an app.
 
-1. On the **Hierarchy** pane, expand the **ButtonParent** object and select the first child object named **StartAzureSession**. On the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+1. In the **Hierarchy** pane, expand the **ButtonParent** object and then select the first child object, **StartAzureSession**. 
+1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component. Note that it has an **On Click ()** event.
+1. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StartAzureSession ()**. This function will be executed when the event is triggered.
 
-    * Assign the **ParentAnchor** object to the **None (Object)** field.
-    * From the **No Function** dropdown list, select **AnchorModuleScript** > **StartAzureSession ()** to set this function as the action to be executed when the event is triggered.
+    :::image type="content" source="../media/add-component.png" alt-text="Unity with the StartAzureSession button's OnClick event configured." lightbox="../media/add-component.png":::
 
-    :::image type="content" source="../media/start-azure-session.png" alt-text="Screenshot of Unity with the StartAzureSession button's OnClick event configured." lightbox="../media/start-azure-session.png":::
+1. In the **Hierarchy** pane in the **ButtonParent** child list, select **StopAzureSession**
+1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
+1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
 
-2. On the **Hierarchy** pane, select the next button named **StopAzureSession**. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-    * Assign the **ParentAnchor** object to the **None (Object)** field.
-    * From the **No Function** dropdown list, select **AnchorModuleScript** > **StopAzureSession ()** to set this function as the action to be executed when the event is triggered.
+    :::image type="content" source="../media/start-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." lightbox="../media/start-azure-session.png":::
 
     :::image type="content" source="../media/stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." lightbox="../media/stop-azure-session.png":::
 
-3. On the **Hierarchy** pane, select the **CreateAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper(Script)** component's **On Click ()** event as follows:
+1. In the **Hierarchy** pane in the **ButtonParent** child list, select **CreateAzureAnchor**.
+1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
+1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor (GameObject)**.
 
-    * Assign the **ParentAnchor** object to the **None (Object)** field.
-    * From the **No Function** dropdown list, select **AnchorModuleScript** > **CreateAzureAnchor ()** to set this function as the action to be executed when the event is triggered.
+
     * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **CreateAzureAnchor ()** function.
 
     :::image type="content" source="../media/create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button's OnClick event configured." lightbox="../media/create-azure-anchor.png":::
 
-4. On the **Hierarchy** pane, select the **RemoveLocalAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+1. In the **Hierarchy** pane in the **ButtonParent** child list, select **RemoveLocalAnchor**.
+1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
+1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor (GameObject)**.
 
-    * Assign the **ParentAnchor** object to the **None (Object)** field.
-    * From the **No Function** dropdown list, select **AnchorModuleScript** > **RemoveLocalAnchor ()** to set this function as the action to be executed when the event is triggered.
-    * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **RemoveLocalAnchor ()** function.
-    
+
+1. On the **Hierarchy** pane, select the **RemoveLocalAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+
     :::image type="content" source="../media/remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." lightbox="../media/remove-local-anchor.png":::
 
-5. On the **Hierarchy** pane, select the **FindAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+1. In the **Hierarchy** pane, select the **FindAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
     * Assign the **ParentAnchor** object to the **None (Object)** field.
     * From the **No Function** dropdown list, select **AnchorModuleScript** > **FindAzureAnchor ()** to set this function as the action to be executed when the event is triggered.
