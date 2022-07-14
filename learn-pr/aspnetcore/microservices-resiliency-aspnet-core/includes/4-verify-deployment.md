@@ -2,7 +2,7 @@ You can investigate the solution while the script continues to deploy the Docker
 
 ## Review code
 
-Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-aspnet-core*. 
+Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-resiliency-aspnet-core*.
 
 > [!IMPORTANT]
 > For brevity, all directory paths described in this module are relative to the *modules/microservices-resiliency-aspnet-core* directory.
