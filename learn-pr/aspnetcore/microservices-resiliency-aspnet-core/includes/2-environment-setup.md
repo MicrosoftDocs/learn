@@ -33,7 +33,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
     az login --use-device-code
     ```
 
-1. View your selected Azure subscription. 
+1. View your selected Azure subscription.
 
     ```azurecli
     az account show -o table
