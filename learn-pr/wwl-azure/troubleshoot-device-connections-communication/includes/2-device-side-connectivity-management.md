@@ -6,6 +6,11 @@ Applying proper guidance to device-side code can help you to address the followi
  -  Switching between different network connections
  -  Reconnecting because of service transient connection errors
 
+For information on IoT Hub performance and high availability, including IoT Hub failover, see the following resources:
+
+ -  IoT Hub high availability and disaster recovery: [https://docs.microsoft.com/azure/iot-hub/iot-hub-ha-dr](/azure/iot-hub/iot-hub-ha-dr).
+ -  Tutorial - Perform manual failover for an IoT hub: [https://docs.microsoft.com/azure/iot-hub/tutorial-manual-failover](/azure/iot-hub/tutorial-manual-failover).
+
 ## Designing for resiliency
 
 IoT devices often rely on non-continuous or unstable network connections (for example, GSM or satellite). Errors can occur when devices interact with cloud-based services because of intermittent service availability and infrastructure-level or transient faults. An application that runs on a device has to manage the mechanisms for connection, reconnection, and the retry logic for sending and receiving messages. Also, the retry strategy requirements depend heavily on the device's IoT scenario, context, capabilities.
