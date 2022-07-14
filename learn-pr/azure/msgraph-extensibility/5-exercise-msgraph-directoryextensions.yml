@@ -3,7 +3,7 @@ uid: learn.msgraph-extensibility.exercise-msgraph-directoryextensions
 title: Exercise - Add custom data using directory extensions
 metadata:
   unitType: exercise
-  title: exercise
+  title: Exercise - Add custom data using directory extensions
   description: "Add custom properties to users using Microsoft Graph directory extensions"
   ms.date: 06/24/2022
   author: FaithOmbongi

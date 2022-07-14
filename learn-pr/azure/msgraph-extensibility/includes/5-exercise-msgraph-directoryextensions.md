@@ -1,6 +1,6 @@
-Apart from extension attribute properties, Microsoft Graph also provides **directory extensions** for storing custom data. In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag. Employee profiles are represented in Azure AD, Microsoft 365, and Microsoft Graph as user profiles.
+In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
-In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the directory extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of the signed-in user.
+In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the directory extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app would make on behalf of the signed-in user.
 
 ## Authenticate your session
 
@@ -8,7 +8,7 @@ Sign in to Graph Explorer as an administrator with the following Azure AD roles:
 
 Consent to the *User.ReadWrite.All*, *Group.ReadWrite.All*, and *Application.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
-In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permission to allow them to discover their colleagues and update their own profile information, respectively.
+In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions to allow them to discover their colleagues and update their own profile information.
 
 ## Create an application and a service principal
 
@@ -123,7 +123,7 @@ POST https://graph.microsoft.com/v1.0/applications/da489504-01b0-4754-bf9d-8ed05
 
 ### Response
 
-The following is the response object from the first request. Take note that of the new extension `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`.
+The following is the response object from the first request. Take note of the new extension name `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`.
 
 ```http
 HTTP/1.1 201 Created
@@ -201,7 +201,7 @@ Content-type: application/json
 
 From the response object, the directory extension properties to use on the user object are `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`, `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId`, and `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag`. You'll use these properties to store the user's LinkedIn profile URL, Skype ID, and Xbox gamertag respectively.
 
-## Update directory extension properties for users
+## Store user data in directory extension properties
 
 Consider a user named Adele Vance identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you'll store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new directory extension properties that you created.
 
@@ -225,15 +225,11 @@ If the update is successful, Microsoft Graph returns a `204 No Content` response
 HTTP/1.1 204 No Content
 ```
 
-## Use the data in the directory extension properties for your application
-
-After the data is stored in the user profile, you can now use it in your application.
-
-### Search for employees who have shared their LinkedIn profile and Xbox gamertag
+## Search for employees who have shared their LinkedIn profile and Xbox gamertag
 
 Suppose another employee wants to discover their colleagues who have shared their Xbox and LinkedIn profiles. This capability can be achieved through a search bar and a drop-down filter in the team bonding app to allow anyone to perform a quick discovery.
 
-#### Request
+### Request
 
 When the employee uses the user interface to find colleagues who have shared their Xbox gamertag or LinkedIn profiles, the app will call Microsoft Graph as follows:
 
@@ -242,7 +238,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,extension_5bfc
 ConsistencyLevel: eventual
 ```
 
-#### Response
+### Response
 
 The request will return all users who have shared their LinkedIn profile or their Xbox gamertag, including Adele. The following response object shows the response payload that Microsoft Graph returns to the app.
 
@@ -265,13 +261,13 @@ Content-type: application/json
 }
 ```
 
-### Change the value of a directory extension property
+## Update data in a directory extension property
 
 Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
 
 Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
 
-#### Request
+### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
@@ -281,7 +277,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 }
 ```
 
-#### Response
+### Response
 
 If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
 
@@ -289,7 +285,7 @@ If the update is successful, Microsoft Graph returns a `204 No Content` response
 HTTP/1.1 204 No Content
 ```
 
-### Delete the value of a directory extension property
+## Delete data from a directory extension property
 
 Suppose Adele no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag** property to `null`.
 
@@ -313,7 +309,7 @@ If the update is successful, Microsoft Graph returns a `204 No Content` response
 HTTP/1.1 204 No Content
 ```
 
-## Dynamically add users internal groups based on their user profile data
+## Dynamically add users to internal groups based on their user profile data
 
 Assuming you created the dynamic "Xbox gamers" group in the previous exercise. In this exercise, you update the group **membershipRule** setting to configure the rule that only users with Xbox gamer tags can be members of the group.
 
@@ -346,6 +342,18 @@ HTTP/1.1 204 No Content
 After a few seconds to allow Azure AD to complete synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group.
 
 
-### Customize tokens using data in extension attribute properties
+## Customize tokens using data in directory extension properties
 
 
+
+
+
+## Conclusion
+
+You have used Microsoft Graph directory extension properties to store three custom values. You've seen how to:
++ Retrieve those values or remove any values from the properties.
++ Implement a custom search so employees in the company can discover each other's external social profiles.
++ Use the directory extension values for dynamic group memberships
++ Use the directory extension values to customize claims
+
+After this exercise, Adele's profile has only the LinkedIn profile URL and Xbox gamer tag that can be discovered through the team bonding app. Other users may decide to share all three pieces of data or none. For each type of operation, you can implement the appropriate logic in the team bonding app to translate successful response codes to user-friendly response messages in the user interface.

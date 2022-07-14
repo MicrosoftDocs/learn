@@ -1,6 +1,6 @@
 Microsoft Graph provides a set of 15 extension attributes for storing custom data. In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag. Employee profiles are represented in Azure AD, Microsoft 365, and Microsoft Graph as user profiles.
 
-In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of the signed-in user.
+In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app would make on behalf of the signed-in user.
 
 ## Authenticate your session
 
@@ -8,7 +8,7 @@ Sign in to Graph Explorer as an administrator with both the *User Administrator*
 
 Consent to the *User.ReadWrite.All* and *Group.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
-In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permission to allow them to discover their colleagues and update their own profile information respectively.
+In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions to allow them to discover their colleagues and update their own profile information.
 
 ## Define the extension attributes
 
@@ -53,7 +53,7 @@ Content-type: application/json
 }
 ```
 
-## Add data to the extension attributes
+## Store user data in extension attributes
 
 In this exercise, you'll store these pieces of data for **Adele Vance**.
 
@@ -81,15 +81,11 @@ If the update is successful, Microsoft Graph returns a `204 No Content` response
 HTTP/1.1 204 No Content
 ```
 
-## Use the data in the extension attributes for your application
-
-After the data is stored in the user profile, you can now use it in your application.
-
-### Search for employees who have shared their LinkedIn profile and Xbox gamertag
+## Search for employees who have shared their LinkedIn profile and Xbox gamertag
 
 Suppose another employee wants to discover their colleagues who have shared their Xbox and LinkedIn profiles. This capability can be achieved through a search bar and a drop-down filter in the team bonding app to allow anyone to perform a quick discovery.
 
-#### Request
+### Request
 
 When the employee uses the user interface to find colleagues who have shared their Xbox gamertag or LinkedIn profiles, the app will call Microsoft Graph as follows:
 
@@ -98,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=onPremisesExtensionAttributes
 ConsistencyLevel: eventual
 ```
 
-#### Response
+### Response
 
 The request will return all users who have shared their LinkedIn profile or their Xbox gamertag, including Adele. The following response object shows the response payload that Microsoft Graph returns to the app.
 
@@ -138,13 +134,13 @@ Content-type: application/json
 
 Because Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties, the team bonding app should include a logic to strip down the unrequired 12 properties and only display the data in the three properties that it requires.
 
-### Change the value of an extension attribute property
+## Update user data in an extension attribute property
 
 Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
 
 Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
 
-#### Request
+### Request
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
@@ -156,7 +152,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 }
 ```
 
-#### Response
+### Response
 
 If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
 
@@ -164,7 +160,7 @@ If the update is successful, Microsoft Graph returns a `204 No Content` response
 HTTP/1.1 204 No Content
 ```
 
-### Remove an existing value from an extension attribute property
+## Delete user data from an extension attribute property
 
 Suppose Adele no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extensionAttribute14** property to `null`.
 
@@ -182,7 +178,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 }
 ```
 
-#### Response
+### Response
 
 If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
 
@@ -294,7 +290,7 @@ Content-type: application/json
 
 And you've confirmed that the Xboxers group is now open for collaboration!
 
-### Customize tokens using data in extension attribute properties
+## Customize tokens using data in extension attribute properties
 
 
 

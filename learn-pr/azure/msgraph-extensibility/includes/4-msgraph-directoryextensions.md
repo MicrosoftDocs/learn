@@ -1,6 +1,6 @@
 Microsoft Graph provides four types of extensions for adding custom properties to users and storing custom data. The second type of extensions is the **directory extensions**, also called **Azure AD** extensions.
 
-In the team bonding app scenario, we want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
+In the team bonding app scenario, you want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
 Here, you'll learn how to use the directory extensions to store the three pieces of user data about the employees.
 
@@ -39,7 +39,7 @@ A directory extension definition maps to *only* one directory extension property
 
 After the directory extension definition has been created, it's immediately available for use.
 
-Directory extension definitions can't be updated to avoid breaking changes when the extensions are in use. However, they can be deleted. When deleted, they immediately become inaccessible on the target object. ~They cannot be restored.~
+Directory extension definitions can't be updated to avoid breaking changes when the extensions are in use. However, they can be deleted. When deleted, they immediately become inaccessible on the target object. For more information, see the [Considerations for using directory extensions](#considerations-for-using-directory-extensions).
 
 #### Directory extensions and multi-tenant apps
 
@@ -61,19 +61,34 @@ In the Microsoft Graph `v1.0` endpoint, the directory extension properties aren'
 
 Directory extension properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
-The extension attribute properties are specially indexed in Microsoft Graph for advanced querying. 
+Directory extension properties are specially indexed in Microsoft Graph for advanced querying.
+
+### Other Azure AD scenarios for custom data in directory extension properties
+
+While you'll use the directory extension properties to store data required by the team bonding app, there are other different Azure AD use cases for this custom data in your organization.
+
+#### Dynamically add users to internal groups based on their user profile data
+
+Suppose you want to seamlessly allow employees with shared interests to communicate through one internal Teams channel and share tips or have fun. For example, you want Xbox gamers to interact with each other through Teams chats or email, share tips, plan team playoffs and have fun together.
+
+Microsoft Graph groups allow an organization to bring other users with common interests. You can create an Xbox gamers group to bring together all Xbox enthusiasts through one alias.
+
+To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through a Teams channel and can receive emails sent to the group members.
+
+#### Customize tokens using data in directory extension properties
+
+Another Azure AD use case for the directory extension properties and their data is customizing tokens with claims.
+
+<!--Placeholder: TO-DO See more: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims -->
 
 ### Considerations for using directory extensions
 
-Directory extension definitions cannot be restored once deleted. Delete any data from the associated directory extension property before deleting the definition. If you delete a definition before deleting the associated extension data on the property, the directory extension property and it's associated data become inaccessible on the resource instance
+Directory extension definitions cannot be restored once deleted. Delete any data from the associated directory extension property before deleting the definition. If you delete a definition before deleting the associated extension data on the property, the directory extension property and it's associated data become undiscoverable on the resource instance
 
-You can use up to 100 directory extensions per resource instance. When the definition object is deleted before the corresponding extension property is updated to `null`, the property will still count against the 100-limit for the instance of the target object.
+You can use up to 100 directory extensions per resource instance. When the definition object is deleted before the corresponding extension property is updated to `null`, the property will still count against the 100-limit for the instance of the target object. 
 
-<!--To validate
+When the definition is deleted before data in the associated extension property is deleted, there's no way to know the existence of the extension property via Microsoft Graph - even though the undiscoverable property counts against the 100-limit.
 
-Qs:
+Deleting an owner app deletes the associated directory extension property and all associated data for resource instances. Restoring an owner app restores the directory extension definition *but not* the directory extension properties or their associated data. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. Either create a new service principal or restore the deleted service principal to restore the directory extension properties and their associated data for resource instances.
 
-+ Does deleting an app also delete it's directory extensions data?
-+ Does restoring an app also restore the directory extensions properties and associated data on the resource instances?
-+ Can you protect an app that defines directory extensions from accidental deletion?  Restrict management of the app for example?
--->
+<!-- Q: Can you protect an app that defines directory extensions from accidental deletion?  Restrict management of the app for example?-->

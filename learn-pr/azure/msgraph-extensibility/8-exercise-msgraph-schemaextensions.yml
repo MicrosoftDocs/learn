@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.msgraph-extensibility.summary
-title: Summary
+uid: learn.msgraph-extensibility.exercise-msgraph-schemaextensions
+title: Exercise - Add custom data using schema extensions
 metadata:
-  unitType: summary
-  title: summary
+  unitType: exercise
+  title: Exercise - Add custom data using schema extensions
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 06/24/2022
+  ms.date: 14/07/2022
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: microsoft-graph-extensions-api
 durationInMinutes: 1
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/8-exercise-msgraph-schemaextensions.md)]
