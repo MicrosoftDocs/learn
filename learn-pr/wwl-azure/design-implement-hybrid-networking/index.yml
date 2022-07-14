@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-hybrid-networking
 metadata:
   title: Design and implement hybrid networking
   description: "You will learn how to design and implement hybrid networking solutions such as Site-to-Site VPN connections, Point-to-Site VPN connections, Azure Virtual WAN, and Virtual WAN hubs."
-  ms.date: 05/20/2022
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -31,6 +31,8 @@ products:
 - azure-virtual-network
 - azure-virtual-wan
 - azure-vpn-gateway
+subjects:
+- networking
 units:
 - learn.wwl.design-implement-hybrid-networking.introduction
 - learn.wwl.design-implement-hybrid-networking.design-implement-hybrid-networking
