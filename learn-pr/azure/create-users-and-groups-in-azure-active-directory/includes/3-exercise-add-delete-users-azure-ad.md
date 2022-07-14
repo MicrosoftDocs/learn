@@ -78,7 +78,7 @@ Now, let's create a user account.
     - **Name**: *Chris Green*
 
     **Password**
-    - **Show Password**, (*check*), and copy it somewhere you can refer to it later.
+    - Check the **Show Password** box and copy the password somewhere you can refer to it later.
 
 1. Select **Create**. The **All users** pane reappears for *Contoso Marketing Company - Azure Active Directory*. The user is now created and registered to your organization.
 
