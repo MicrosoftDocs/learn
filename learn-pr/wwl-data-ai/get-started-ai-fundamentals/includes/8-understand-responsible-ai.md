@@ -6,6 +6,8 @@ AI systems should treat all people fairly. For example, suppose you create a mac
 
 Azure Machine Learning includes the capability to interpret models and quantify the extent to which each feature of the data influences the model's prediction. This capability helps data scientists and developers identify and mitigate bias in the model.
 
+Another example is Microsoft's implementation of [safegaurds to the Face service](https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/), which retire facial recognition capabilities that can be used to try to infer emotional states and identity attributes. These capabilities, if misused, can subject people to stereotyping, discrimination or unfair denial of services. 
+
 For more details about considerations for fairness, watch the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vqfa]
@@ -56,4 +58,6 @@ The principles of responsible AI can help you understand some of the challenges 
 
 ## Further resources
 
-For more resources to help you put the responsible AI principles into practice, see https://www.microsoft.com/ai/responsible-ai-resources.
+For more resources to help you put the responsible AI principles into practice, see https://www.microsoft.com/ai/responsible-ai-resources. 
+
+To see these policies in action you can read about [Microsoft’s framework for building AI systems responsibly](https://blogs.microsoft.com/on-the-issues/2022/06/21/microsofts-framework-for-building-ai-systems-responsibly/). 
