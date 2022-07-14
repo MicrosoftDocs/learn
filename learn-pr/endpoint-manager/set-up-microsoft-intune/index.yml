@@ -3,7 +3,7 @@ uid: learn.set-up-microsoft-intune
 metadata:
   title: Set up Microsoft Intune
   description: After completing this module, you will have set up Microsoft Intune. Set up includes reviewing the supported configurations, signing up for Intune, adding users and groups, assigning licenses to users, and confirming the MDM authority.
-  ms.date: 04/16/2021
+  ms.date: 07/13/2022
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
