@@ -2,11 +2,11 @@ At Microsoft, AI software development is guided by a set of six principles, desi
 
 ## Fairness
 
-AI systems should treat all people fairly. For example, suppose you create a machine learning model to support a loan approval application for a bank. The model should make predictions of whether or not the loan should be approved without incorporating any bias based on gender, ethnicity, or other factors that might result in an unfair advantage or disadvantage to specific groups of applicants.
+AI systems should treat all people fairly. For example, suppose you create a machine learning model to support a loan approval application for a bank. The model should predict whether the loan should be approved or denied without bias. This bias could be based on gender, ethnicity, or other factors that result in an unfair advantage or disadvantage to specific groups of applicants.
 
 Azure Machine Learning includes the capability to interpret models and quantify the extent to which each feature of the data influences the model's prediction. This capability helps data scientists and developers identify and mitigate bias in the model.
 
-Another example is Microsoft's implementation of [safegaurds to the Face service](https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/), which retire facial recognition capabilities that can be used to try to infer emotional states and identity attributes. These capabilities, if misused, can subject people to stereotyping, discrimination or unfair denial of services. 
+Another example is Microsoft's implementation of [Responsible AI with the Face service](https://azure.microsoft.com/blog/responsible-ai-investments-and-safeguards-for-facial-recognition/), which retires facial recognition capabilities that can be used to try to infer emotional states and identity attributes. These capabilities, if misused, can subject people to stereotyping, discrimination or unfair denial of services. 
 
 For more details about considerations for fairness, watch the following video.
 
@@ -24,7 +24,7 @@ For more information about considerations for reliability and safety, watch the 
 
 ## Privacy and security
 
-AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after the models are trained and the system is in production, it uses new data to make predictions or take action that may be subject to privacy or security concerns.
+AI systems should be secure and respect privacy. The machine learning models on which AI systems are based rely on large volumes of data, which may contain personal details that must be kept private. Even after the models are trained and the system is in production, privacy and security need to be considered. As the system uses new data to make predictions or take action, both the data and decisions made from the data may be subject to privacy or security concerns.
 
 For more details about considerations for privacy and security, watch the following video.
 
