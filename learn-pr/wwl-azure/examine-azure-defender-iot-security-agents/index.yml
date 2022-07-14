@@ -3,7 +3,7 @@ uid: learn.wwl.examine-azure-defender-for-iot-security-agents
 metadata:
   title: Examine Microsoft Defender for IoT security agents
   description: "This module introduces you to Microsoft Defender for IoT security agents and how security agents can be used to extend your security monitoring capabilities to the device-side of your IoT solution."
-  ms.date: 07/13/2022
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
