@@ -17,7 +17,7 @@ Azure IoT autoprovisioning can be broken into three phases:
 
 The following diagram summarizes the sequencing of operations during device autoprovisioning:
 
-:::image type="content" source="../media/m03-l01-auto-provisioning-diagram-aac3c12a.png" alt-text="Diagram that shows the sequencing of operations during device autoprovisioning.":::
+:::image type="content" source="../media/m03-l01-auto-provisioning-diagram-aac3c12a.png" alt-text="Diagram that shows the sequencing of operations during device autoprovisioning."  lightbox="../media/m03-l01-auto-provisioning-diagram-aac3c12a.png":::
 
 
 :::row:::
