@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-teach-az-104-microsoft-azure-administrator
 metadata:
   title: AZ-104
   description: Prepare to teach AZ-104 Microsoft Azure Administrator in the classroom
-  ms.date: 05/26/2022
+  ms.date: 07/12/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -28,5 +28,7 @@ modules:
 - learn.wwl.microsoft-learn-educators-course-plan
 - learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104
 - learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator
+- learn.wwl.prepare-for-course-delivery
+- learn.wwl.close-out-course
 trophy:
   uid: learn.wwl.prepare-teach-az-104-microsoft-azure-administrator.trophy
