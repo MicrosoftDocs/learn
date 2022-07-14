@@ -3,7 +3,6 @@ The deployment manifest tells your device which modules to install and how to co
 The deployment manifest is a JSON document that describes:
 
  -  The IoT Edge agent module twin, which includes three components.
-    
      -  The container image for each module that runs on the device.
      -  The credentials to access private container registries that contain module images.
      -  Instructions for how each module should be created and managed.
