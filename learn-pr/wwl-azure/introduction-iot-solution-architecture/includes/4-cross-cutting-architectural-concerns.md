@@ -1,4 +1,4 @@
-Cross-cutting needs (or cross-cutting concerns) are aspects of the solution that affect the other subsystem within a solution and which cannot be separated from these subsystems.
+Cross-cutting needs (or cross-cutting concerns) are aspects of the solution that affect the other subsystems within a solution and which cannot be separated from those subsystems.
 
 There are multiple cross-cutting needs for IoT solutions that are critical for success, including:
 
