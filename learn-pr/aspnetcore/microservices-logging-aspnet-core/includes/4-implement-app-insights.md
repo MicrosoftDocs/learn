@@ -2,13 +2,21 @@ In this unit, you'll modify the catalog service to enable Application Insights t
 
 You will:
 
+- Review the directory structure for the code sample.
 - Create Application Insights resources for the app.
 - Enable logging to Application Insights.
 - Deploy the updated and reconfigured microservices.
 
+## Review the directory structure
+
+Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-logging-aspnet-core*.
+
+> [!IMPORTANT]
+> For brevity, all directory paths described in this module are relative to the *modules/microservices-logging-aspnet-core* directory.
+
 ## Create and configure the Application Insights resources
 
-1. In the terminal, ensure the Application Insights extension is added to Azure CLI by running this command:
+1. In the terminal you used earlier, ensure the Application Insights extension is added to Azure CLI by running this command:
 
     ```azurecli
     az extension add --name application-insights
