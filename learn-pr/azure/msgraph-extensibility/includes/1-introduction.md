@@ -3,14 +3,14 @@ Microsoft Graph provides a unified endpoint that you can use to access the treme
 
 Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves and they'll discover each other, their interests, and their social networks.
 
-The employees have expressed a need to share the following details in their app profiles:
+The employees want to share the following details in their app profiles:
 + Their public LinkedIn profile URL
 + Their Skype ID
 + Their Xbox gamertag
 
 Azure AD, Microsoft 365, and Microsoft Graph don't expose these properties natively to allow the employees to update their profiles. However, the organization also doesn't want to invest in another database.
 
-You have identified extensibility options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the available extension options, their suitability to extend user profile data in your team bonding app, and how to use them.
+You've identified extensibility options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the available extension options, their suitability to extend user profile data in your team bonding app, and how to use them.
 
 ## What will we be doing?
 

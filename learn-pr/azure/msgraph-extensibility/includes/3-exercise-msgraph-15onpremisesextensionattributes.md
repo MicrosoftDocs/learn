@@ -302,7 +302,7 @@ And you've confirmed that the Xboxers group is now open for collaboration!
 
 You have used Microsoft Graph extension attribute properties to store three custom values. You've seen how to:
 + Retrieve those values or remove any values from the properties.
-+ Implement a custom search so other employees in the company can discover the external profiles belonging to Adele and connect with Adele in the respective social platforms.
++ Implement a custom search so employees in the company can discover each other's external social profiles.
 + Use the extension attribute values for dynamic group memberships
 + Use the extension attribute values to customize claims
 
