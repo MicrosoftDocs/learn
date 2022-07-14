@@ -79,7 +79,7 @@ A priority defines whether a deployment should be applied to a targeted device r
 
 ### Labels
 
-Labels are string key/value pairs that you can use to filter and group of deployments. A deployment may have multiple labels. Labels are optional and do no impact the actual configuration of IoT Edge devices.
+Labels are string key/value pairs that you can use to filter and group deployments. A deployment may have multiple labels. Labels are optional and do no impact the actual configuration of IoT Edge devices.
 
 ### Metrics
 
@@ -140,6 +140,5 @@ Perform rollbacks in the following sequence:
 1.  Confirm that a second deployment is also targeted at the same device set. If the goal of the rollback is to remove all modules, the second deployment should not include any modules.
 2.  Modify or remove the target condition expression of the deployment you wish to roll back so that the devices no longer meet the targeting condition.
 3.  Verify that the rollback succeeded by viewing the deployment status.
-    
      -  The rolled-back deployment should no longer show status for the devices that were rolled back.
      -  The second deployment should now include deployment status for the devices that were rolled back.
