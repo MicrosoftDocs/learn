@@ -1,4 +1,4 @@
-With the build artifacts successfully generated and published into Azure Pipelines, you're ready to proceed to the next step. This step isn't dependent on the build, instead it involves provisioning of the Azure resources into which you will deploy artifacts. Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you'll now modify, as your first set of deployment steps. This deployment follows the concept of *Infrastructure as Code*.
+With the build artifacts successfully generated and published into Azure Pipelines, you're ready to proceed to the next step. This step isn't dependent on the build; instead, it involves provisioning of the Azure resources, into which you will deploy artifacts. Starting with the predefined **ASP.NET** templates simplifies generation of the YAML pipeline you'll now modify as your first set of deployment steps. This deployment follows the concept of *Infrastructure as Code*.
 
 ## What is Infrastructure as Code?
 
@@ -8,8 +8,8 @@ IaC leverages automation to set up infrastructure services and control their con
 
 There are two ways to implement IaC:
 
-- Declarative. Declarative code defines what the code should accomplish but does not define how to achieve the result. When operating in Azure, you can use such tools and techniques as Azure Resource Manager templates, Terraform, or Ansible for this purpose.
-- Imperative. Imperative code defines both what the program should accomplish and how to achieve the result. When operating in Azure, you can use such tools and techniques as Azure PowerShell, Azure CLI, or Azure SDK for this purpose.
+- **Declarative**: Declarative code defines what the code should accomplish, but does not define how to achieve the result. When operating in Azure, you can use such tools and techniques as Azure Resource Manager templates, Terraform, or Ansible for this purpose.
+- **Imperative**: Imperative code defines both what the program should accomplish and how to achieve the result. When operating in Azure, you can use such tools and techniques as Azure PowerShell, Azure CLI, or Azure SDK for this purpose.
 
 > [!NOTE]
 > You can incorporate any of these tools and techniques into Azure Pipelines.
@@ -30,7 +30,7 @@ Idempotency is a critical component of IaC. In scenarios more complex than the o
 
 ### IaC and Azure Pipeline stages
 
-Because IaC tasks provision infrastructure separately from artifacts that are deployed afterwards, you might consider encapsulating these tasks into a dedicated stage within an Azure pipeline. While, in general, it might make sense to still run all stages together, the multi-stage approach of IaC will simplify testing artifact deployments separately from infrastructure provisioning.
+Because IaC tasks provision infrastructure separately from artifacts that are deployed afterwards, you might consider encapsulating these tasks into a dedicated stage within an Azure pipeline. While in general it might make sense to still run all stages together, the multi-stage approach of IaC will simplify testing artifact deployments separately from infrastructure provisioning.
 
 ## Target environment
 
@@ -56,9 +56,9 @@ Azure Pipelines provides several different methods for providing authenticated a
 
 ### Provisioning the target environment
 
-To implement the target environment, you decided to use an Azure CLI script because you're familiar with Bash scripting. Based on your cursory overview of Azure CLI documentation, the commands to create an Azure resource group, an Azure App Service web app, and an Azure SQL database seemed straightforward. In addition, you verified that Azure Pipelines offer built-in Azure CLI tasks, which support Azure service connection and references to variable groups.
+To implement the target environment, you've decided to use an Azure CLI script, because you're familiar with Bash scripting. Based on your cursory overview of Azure CLI documentation, the commands to create an Azure resource group, an Azure App Service web app, and an Azure SQL database seemed straightforward. In addition, you verified that Azure Pipelines offer built-in Azure CLI tasks, which support Azure service connection and references to variable groups.
 
-The second of these two points is important because, to deploy an Azure logical SQL server and an Azure App Service web app, you need to assign to each a globally unique name. You can identify such names prior to the first deployment, store them by using a variable group, and reference them during pipeline execution across multiple stages.
+The second of these two points is important, because to deploy an Azure logical SQL server and an Azure App Service web app, you need to assign to each a globally unique name. You can identify such names prior to the first deployment, store them by using a variable group, and reference them during pipeline execution across multiple stages.
 
 > [!NOTE]
 > To reference a variable group from within a pipeline, you need to configure the variable group access setting and link the variable group to the pipeline. You'll step through this process in the upcoming exercise.
