@@ -11,7 +11,7 @@ Both these phases fit in seamlessly with existing manufacturing and deployment p
 
 ## Manufacturing phase
 
-This step is all about what happens on the manufacturing line, and is concerned with creating the hardware itself.
+This step is all about what happens on the device manufacturing line, and is concerned with creating the hardware itself.
 
 The Device Provisioning Service does not introduce a new step in the manufacturing process; rather, it ties into the existing step that installs the initial software and (ideally) the hardware security module (HSM) on the device. Instead of creating a device ID in this step, the device is programmed with the provisioning service information, enabling it to call the provisioning service to get its connection info/IoT solution assignment when it is switched on.
 
@@ -33,3 +33,15 @@ Provisioning means various things depending on the industry in which the term is
  -  The second part is applying the proper configuration to the device based on the specific requirements of the solution it was registered to.
 
 Once both of those two steps have been completed, we can say that the device has been fully provisioned. Some cloud services only provide the first step of the provisioning process, registering devices to the IoT solution endpoint, but do not provide the initial configuration. The Device Provisioning Service automates both steps to provide a seamless provisioning experience for the device.
+
+## IoT Plug and Play Devices
+
+IoT Plug and Play enables device developers to create devices that solution builders can integrate within their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play-enabled application (such as IoT Hub and Azure IoT Central). This model is structured as a set of elements that define:
+
+ -  Properties that represent the read-only or writable state of a device or other entity. For example, a device serial number may be a read-only property and a target temperature on a thermostat may be a writable property.
+ -  Telemetry that's the data emitted by a device, whether the data is a regular stream of sensor readings, an occasional error, or an information message.
+ -  Commands that describe a function or operation that can be done on a device. For example, a command could reboot a gateway or take a picture using a remote camera.
+
+Device developers can group these elements in interfaces to reuse across models to make collaboration easier and to speed up development.
+
+For more information about Azure IoT Plug and Play devices, see [IoT Plug and Play](/azure/iot-develop/overview-iot-plug-and-play).
