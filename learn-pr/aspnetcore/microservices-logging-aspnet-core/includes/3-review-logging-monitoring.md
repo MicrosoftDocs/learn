@@ -150,7 +150,7 @@ In this module, the following NuGet packages are added to every microservice to 
 | `Serilog.Sinks.Http`    | A Serilog sink that sends log events over HTTP. |
 | `Serilog.Sinks.Seq`     | A Serilog sink that writes events to the Seq structured log server. |
 
-Logger configuration is added in each service's *:::no-loc text="Program.cs":::* file. For example, see the catalog's logger configuration code at *:::no-loc text="src/Services/Catalog/Catalog.API/Program.cs":::*:
+Logger configuration is added in each service's *:::no-loc text="Program.cs":::* file. For example, see the catalog's logger configuration code (You can find this code in *modules/microservices-logging-aspnet-core/src/Services/Catalog/Catalog.API/Program.cs*):
 
 ```csharp
 private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
