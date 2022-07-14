@@ -47,7 +47,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
     ./quickstart.sh
     ```
 
-    The preceding command retrieves and runs a setup script from a GitHub repository. The script completes the following steps:
+    The preceding command runs a script that completes the following steps:
 
     * Provisions AKS and Azure Container Registry resources.
     * Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
