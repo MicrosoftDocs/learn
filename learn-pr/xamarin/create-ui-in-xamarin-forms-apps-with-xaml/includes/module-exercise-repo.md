@@ -1,1 +1,0 @@
-[exercise repo](https://github.com/MicrosoftDocs/mslearn-xamarin-forms-ui-with-xaml)
