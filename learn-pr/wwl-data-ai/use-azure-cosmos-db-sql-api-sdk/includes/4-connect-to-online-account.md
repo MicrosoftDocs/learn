@@ -2,7 +2,7 @@ Once the **Microsoft.Azure.Cosmos** library is imported, you can begin using the
 
 ## Import the namespace
 
-Before using the library, you should import the **Microsoft.Azure.Cosmos** namespace using a **using directive**. The using directive allows you to use types within the namespace without being forced to fully qualify each type.
+Before using the library, you should import the **Microsoft.Azure.Cosmos** namespace using a **directive**. The using directive allows you to use types within the namespace without being forced to fully qualify each type.
 
 ```csharp
 using Microsoft.Azure.Cosmos;
