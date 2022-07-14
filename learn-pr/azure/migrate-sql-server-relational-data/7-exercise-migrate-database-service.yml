@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Migrate a database with downtime by using Azure Database Migration Service
   description: Exercise - Migrate a database with downtime by using Azure Database Migration Service
   ms.date: 02/21/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: rwestMSFT
+  ms.author: randolphwest
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Migrate a database with downtime by using Azure Database Migration Service
