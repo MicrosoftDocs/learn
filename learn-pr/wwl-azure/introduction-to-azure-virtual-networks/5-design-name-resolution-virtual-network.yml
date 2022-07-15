@@ -4,7 +4,7 @@ title: Design name resolution for your virtual network
 metadata:
   title: Design name resolution for your virtual network
   description: "Design name resolution for your virtual network"
-  ms.date: 07/14/2022
+  ms.date: 07/15/2022
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -19,15 +19,15 @@ quiz:
   questions:
   - content: "What is the difference between a static public IP address and a dynamic public IP address?"
     choices:
-    - content: "A dynamic IP address remains the same over the lifespan of the resource to which it is assigned."
+    - content: "A dynamic IP address remains the same over the lifespan of the resource to which it's assigned."
       isCorrect: false
       explanation: "That is incorrect. A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM."
     - content: "A static IP address can use an IPv4 address only."
       isCorrect: false
       explanation: "That is incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address."
-    - content: "A static IP address remains the same over the lifespan of the resource to which it is assigned."
+    - content: "A static IP address remains the same over the lifespan of the resource to which it's assigned."
       isCorrect: true
-      explanation: "That is correct. A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static."
+      explanation: "That is correct. A static public IP address is an assigned address that won't change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static."
   - content: "Application owners need to use dynamic IP addresses for specific resources on their VNet. Which SKU must they choose?"
     choices:
     - content: "Basic SKU"
