@@ -16,7 +16,9 @@ DNS plays a critical role in the functionality required, since the system access
     # Create new subnet for the SQL private endpoint
     sql_subnet_name=sql
     sql_subnet_prefix=192.168.3.0/24
-    az network vnet subnet create -g $rg --vnet-name $vnet_name -n $sql_subnet_name --address-prefix $sql_subnet_prefix
+    az network vnet subnet create --resource-group $rg --vnet-name $vnet_name \
+        --name $sql_subnet_name --address-prefix $sql_subnet_prefix \
+        --disable-private-endpoint-network-policy true
     az network vnet subnet update -n $sql_subnet_name -g $rg --vnet-name $vnet_name --disable-private-endpoint-network-policies true
     # SQL Server private endpoint
     sql_endpoint_name=sqlep
