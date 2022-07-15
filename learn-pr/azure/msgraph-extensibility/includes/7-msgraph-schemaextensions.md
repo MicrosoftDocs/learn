@@ -1,21 +1,21 @@
 The third type of extensibility option available for storing custom data in Microsoft Graph is **schema extensions**.
 
-In the team bonding app scenario, you want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
+In the team bonding app scenario, you want to store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag in their user profiles.
 
-Here, you'll learn how to use the directory extensions to store the three pieces of user data about the employees.
+Here, you'll learn how to use the schema extensions to store the three pieces of user data about the employees.
 
 ## Schema extensions
 
-The Microsoft Graph schema extensions are only available for use by specific resources in Azure Active Directory (Azure AD) including the **user** resource.
+The Microsoft Graph schema extensions are only available for use by specific resources in Microsoft Graph including the **user** resource.
 
-Just like directory extensions, schema extensions are also closely tied to the application that creates them. To use schema extensions:
+Just like schema extensions, schema extensions are also closely tied to the application that creates them. To use schema extensions:
 1. First create the schema extension definition. The app that creates the definition becomes the "owner app" for the schema extension. You must also explicitly define the resource types that can be assigned the schema extension.
 1. Manage the schema extension property and its associated values on instances of the target resource objects.
 1. During the lifecycle of their use, maintain the [Considerations for using schema extensions](#considerations-for-using-schema-extensions).
 
-### Directory extension definitions
+### schema extension definitions
 
-Before you can use directory extensions, you must define them. The following are the core components of a schema extension definition.
+Before you can use schema extension, you must define them. The following are the core components of a schema extension definition.
 
 #### Extension id
 
@@ -62,7 +62,7 @@ A schema extension definition has a lifecycle that affects the use of the associ
 
 ### Manage schema extension definitions
 
-Directory extension definitions are created and managed through the **schemaExtension** resource type and its associated methods. The following is an example of a schema extension definition:
+schema extension definitions are created and managed through the **schemaExtension** resource type and its associated methods. The following is an example of a schema extension definition:
 
 ```http
 {
@@ -106,7 +106,15 @@ You manage the schema extension properties on user profiles through the same HTT
     + To update any property in the schema extension object, you must specify all properties in the request body; otherwise, Microsoft Graph will update the unspecified properties to `null`. Therefore, while you may want to update only the **xboxGamertag**, you must also specify both the **linkedInProfile** and **skypeId**  so that their values aren't deleted.
 + Using a GET request, you can read the schema extension properties for all users or individual users in the tenant
 
-#### Query capabilities supported by directory extension properties
+#### Query capabilities supported by schema extensions
+
+Schema extensions support querying at two levels: Matching against the schema extension definitions and matching against the schema extension properties.
+
+##### Query capabilities supported by schema extension definitions
+
+Schema extension properties support both `$filter` OData query parameter with the `eq` operator for matching against the **id**, **owner**, and **status** properties.
+
+##### Query capabilities supported by schema extension properties
 
 In the Microsoft Graph `v1.0` endpoint, the schema extension properties aren't returned by default and you must therefore use the `$select` query parameter to read the properties.
 
@@ -116,12 +124,7 @@ Schema extension properties are specially indexed in Microsoft Graph for advance
 
 ### Considerations for using schema extensions
 
-Deleting a schema extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
+Deleting a schema extension definition deletes the associated schema extension property and the data it stores.
 
-<!--To validate
-
-Qs:
-
-+ Can the schema extension owner app be deleted while the definition still exists? If yes, what happens to the ownership requirement?
-
--->
+<!-- This below leaves a schema extension that's references a non-existent owner??-->
+Deleting an owner app does not delete the associated schema extension definition or the schema extension property and the data it stores. The schema extension property can still be read from the resource instances. However, the values that the schema extension object stores cannot be updated.

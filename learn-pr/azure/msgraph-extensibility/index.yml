@@ -38,6 +38,8 @@ units:
 - learn.msgraph-extensibility.exercise-msgraph-directoryextensions
 - learn.msgraph-extensibility.msgraph-schemaextensions
 - learn.msgraph-extensibility.exercise-msgraph-schemaextensions
+- learn.msgraph-extensibility.msgraph-openextensions
+- learn.msgraph-extensibility.exercise-msgraph-openextensions
 - learn.msgraph-extensibility.knowledge-check
 - learn.msgraph-extensibility.summary
 badge:

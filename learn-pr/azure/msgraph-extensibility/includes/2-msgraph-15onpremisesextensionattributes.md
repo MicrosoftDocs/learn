@@ -1,6 +1,6 @@
 Microsoft Graph provides four types of extensions for adding custom properties to users and storing custom data. The first type of extensions is the 15 predefined **extension attribute properties**.
 
-In the team bonding app scenario, you want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
+In the team bonding app scenario, you want to store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag in their user profiles.
 
 Here, you'll learn how to use the extension attribute properties to store the three pieces of user data about the employees.
 

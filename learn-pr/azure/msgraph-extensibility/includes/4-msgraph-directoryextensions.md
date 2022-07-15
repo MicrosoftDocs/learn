@@ -1,6 +1,6 @@
 Microsoft Graph provides four types of extensions for adding custom properties to users and storing custom data. The second type of extensions is the **directory extensions**, also called **Azure AD** extensions.
 
-In the team bonding app scenario, you want to store user-specific data about their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
+In the team bonding app scenario, you want to store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag in their user profiles.
 
 Here, you'll learn how to use the directory extensions to store the three pieces of user data about the employees.
 
@@ -55,7 +55,15 @@ You manage the directory extension properties on user profiles through the same 
     + To delete data from the directory extension property, set its value to `null`
 + Using a GET request, you can read the directory extension properties for all users or individual users in the tenant
 
-#### Query capabilities supported by directory extension properties
+#### Query capabilities supported by directory extensions
+
+Directory extensions support querying at two levels: Matching against the directory extension definitions and matching against the directory extension properties.
+
+##### Query capabilities supported by directory extension definitions
+
+Schema extension properties support the `$select` and `$filter` OData query parameters to customize the responses. The `eq` operator for `$filter` is supported for matching against the **name** property.
+
+##### Query capabilities supported by directory extension properties
 
 In the Microsoft Graph `v1.0` endpoint, the directory extension properties aren't returned by default and you must therefore use the `$select` query parameter to read the properties.
 

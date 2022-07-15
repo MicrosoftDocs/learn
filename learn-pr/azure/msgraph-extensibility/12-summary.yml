@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.msgraph-extensibility.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: summary
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 06/24/2022
+  author: FaithOmbongi
+  ms.author: ombongifaith
+  ms.topic: interactive-tutorial
+  ms.prod: microsoft-graph-extensions-api
+durationInMinutes: 1
+content: |
+  [!include[](includes/12-summary.md)]

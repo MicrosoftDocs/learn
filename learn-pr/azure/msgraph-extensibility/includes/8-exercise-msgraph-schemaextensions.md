@@ -272,7 +272,5 @@ HTTP/1.1 204 No Content
 You have used Microsoft Graph schema extension properties to store three custom values. You've seen how to:
 + Retrieve those values or remove any values from the properties.
 + Implement a custom search so employees in the company can discover each other's external social profiles.
-+ Use the schema extension values for dynamic group memberships
-+ Use the schema extension values to customize claims
 
 After this exercise, Adele's social profiles are undiscoverable through the team bonding app. Other users may decide to share all three pieces of data or none. For each type of operation, you can implement the appropriate logic in the team bonding app to translate successful response codes to user-friendly response messages in the user interface.
