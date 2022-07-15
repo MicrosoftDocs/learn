@@ -1,0 +1,62 @@
+### YamlMime:Module
+uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities
+metadata:
+  moduleType: standard
+  title: Authenticate your Azure deployment workflow by using workload identities
+  description: Learn how to create, manage, and grant permissions to workload identities, which enable your deployment workflows to securely authenticate to Azure. 
+  ms.date: 06/13/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authenticate your Azure deployment workflow by using workload identities
+summary: |
+  Workload identities enable your deployment workflows to authenticate securely with Azure without you managing any passwords, keys, or secrets.
+  In this module, you'll learn what workload identities are, how they work, and how to create them.
+  You'll also learn how to grant them permission to your Azure resources so that your pipelines can deploy your Bicep files.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain what a workload identity is, how it works, and how it compares to a service principal and managed identity
+  - Create a workload identity and link it to a GitHub Actions deployment workflow
+  - Configure the appropriate authorization for a workload identity to deploy Azure resources
+prerequisites: |
+  You should be familiar with:
+  - Creating and deploying basic Bicep templates.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+  To follow along with the exercises in the module, you'll need:
+  - An Azure account, with the ability to create resource groups and to create Azure Active Directory applications and service principals.
+  - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
+iconUrl: /learn/achievements/bicep/learn.azure.authenticate-azure-deployment-workflow-workload-identities.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - administrator
+  - solution-architect
+languages:
+  - bicep
+products:
+  - azure
+  - azure-active-directory
+  - azure-devops
+  - azure-resource-manager
+  - github
+subjects:
+  - devops
+  - cloud-computing
+units:
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.introduction
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.understand-workload-identities
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.create-workload-identity-github-actions-workflow
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.exercise-create-workload-identity
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.grant-workload-identity-access-azure
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.exercise-authorize-workload-identity-deployments
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.knowledge-check
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.summary
+badge:
+  uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.badge
