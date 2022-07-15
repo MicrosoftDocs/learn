@@ -147,7 +147,7 @@ For local execution, the application settings need to be retrieved and stored at
 func azure functionapp fetch-app-settings $FUNCTION_APP"-p"
 ```
 
-Next, open the `Functions.java` file and replace the content with the following code:
+Next, open the `Function.java` file and replace the content with the following code:
 
 ``` Java
 package com.learn;
