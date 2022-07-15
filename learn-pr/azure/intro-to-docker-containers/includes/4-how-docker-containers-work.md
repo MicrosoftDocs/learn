@@ -8,7 +8,7 @@ In your previous unit, you looked at how a Docker image is built. Here, you'll l
 
 A Docker container has a lifecycle that you can manage and track the state of the container.
 
-:::image type="content" source="../media/4-docker-container-lifecycle-2.svg" alt-text="Diagram that shows the lifecycle of a container and the transition between the lifecycle phases.":::
+:::image type="content" source="../media/4-docker-container-lifecycle-2b.svg" alt-text="Diagram that shows the lifecycle of a container and the transition between the lifecycle phases.":::
 
 To place a container in the run state, use the run command. You can also restart a container that is already running. When restarting a container, the container receives a termination signal to enable any running processes to shut down gracefully before the container's kernel is terminated.
 
