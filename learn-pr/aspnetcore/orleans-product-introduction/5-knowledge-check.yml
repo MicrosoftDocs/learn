@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.orleans-build-first-app.knowledge-check
+uid: learn.orleans-product-introduction.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -27,31 +27,45 @@ quiz:
         - content: "Grains handle implementation details for different storage options for persistent state, such as Azure Blob Storage."
           isCorrect: false
           explanation: "Incorrect. Storage providers implement different storage services that can be utilized by grains."
-    - content: "Which of the following methods is NOT defined on the `IPersistentState` interface?"
+    - content: "Which Orleans component is responsible for creating and retrieving grains?"
       choices:
-        - content: "`WriteStateAsync`"
+        - content: "An implementation of `ISiloBuilder`."
           isCorrect: false
-          explanation: "Incorrect. `WriteStatAsync` is defined on `IPersistentState`."
-        - content: "`ReadStateAsync`"
+          explanation: "Incorrect. `ISiloBuilder` implementations are used to configure silos."
+        - content: "An implementation of `IGrainWithStringKey`."
           isCorrect: false
-          explanation: "Incorrect. `ReadStateAsync` is defined on `IPersistentState`."
-        - content: "`ClearStateAsync`"
+          explanation: "Incorrect. `IGrainWithStringKey` is used to provide an identifier for grains."
+        - content: "An implementation of `IGrainManager`."
           isCorrect: false
-          explanation: "Incorrect. `ClearStateAsync` is defined on `IPersistentState`."
-        - content: "`DeleteStateAsync`"
+          explanation: "Incorrect. `GrainManager` is not a real class in Orleans."
+        - content: "An implementation of `IGrainFactory`."
           isCorrect: true
-          explanation: "Correct. `DeleteStateAsync` isn't defined on `IPersistentState`."
-    - content: "Which attribute should be applied to a grain constructor parameter to enable saving the state of the object?"
+          explanation: "Correct. Grain factories are used to create and manage grains."
+    - content: "You would like to track and retrieve a grain using a string identifier. How would you handle this in Orleans?"
       choices:
-        - content: "`StateFactory`"
+        - content: "Add a `[StringGrain]` attribute to the class definition."
           isCorrect: false
-          explanation: "Incorrect. There's no `StateFactory` attribute available in Orleans."
-        - content: "`PersistentState`"
+          explanation: "Incorrect. This attribute does not exist in Orleans."
+        - content: "Register the grain as a string type as part of the Orleans configuration in `Program.cs`"
+          isCorrect: false
+          explanation: "Incorrect. Grain types are not registered in `Program.cs`."
+        - content: "Include a string id parameter when creating the grain using the grain factory."
+          isCorrect: false
+          explanation: "Incorrect. The grain's identifier type is not set by the grain factory."
+        - content: "Implement the `IGrainWithStringKey` interface on your grain class."
           isCorrect: true
-          explanation: "Correct. `PersistentState` is the correct attribute to store state data."
-        - content: "`IGrainWithStringKey`"
+          explanation: "Correct. `IGrainWithStringKey` defines the type of id for your grain."
+    - content: "What is an Orleans silo?"
+      choices:
+        - content: "A component used to process large sets of data."
           isCorrect: false
-          explanation: "Incorrect. `IGrainWithStringKey` is used to provide grains with a string identifier."
-        - content: "`GrainState`"
+          explanation: "Incorrect. Orleans streams are used to process large sets of data."
+        - content: "A component used to store and manage grains."
+          isCorrect: true
+          explanation: "Correct. Grains are stored in silos."
+        - content: "A class used to create and retrieve grains."
           isCorrect: false
-          explanation: "Incorrect. There's no `GrainState` attribute available in Orleans."
+          explanation: "Incorrect. Grain factories are used to create and manage grains."
+        - content: "A type of base class every grain should inherit from."
+          isCorrect: false
+          explanation: "Incorrect. Grains should inherit from the `Grain` base class."

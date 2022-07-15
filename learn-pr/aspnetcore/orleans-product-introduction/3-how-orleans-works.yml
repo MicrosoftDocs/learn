@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.orleans-build-first-app.exercise-set-up-projects
-title: Exercise - Create the sample app
+uid: learn.orleans-product-introduction.how-orleans-works
+title: How Orleans works
 metadata:
-  title: Exercise - Create the sample app
-  description: Create your first app to use Orleans.
+  title: How Orleans works
+  description: Learn how to build apps using Orleans.
   ms.date: 5/15/2022
   author: alexwolfmsft
   ms.author: alexwolf
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-dotnet
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-exercise-set-up-project.md)]
+  [!include[](includes/3-how-orleans-works.md)]

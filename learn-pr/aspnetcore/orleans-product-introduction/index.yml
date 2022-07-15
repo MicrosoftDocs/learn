@@ -1,21 +1,20 @@
 ### YamlMime:Module
-uid: learn.orleans-build-first-app
+uid: learn.orleans-product-introduction
 metadata:
-  title: Build your first Orleans app with ASP.NET Core 6.0
-  description: Learn how to build cloud native, distributed apps with Orleans.
-  ms.date: 5/10/2022
+  title: Introduction to Orleans
+  description: Learn what the Orleans framework is, the benefits it can provide, and how to integrate it with your applications.
+  ms.date: 7/15/2022
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-title: Build your first Orleans app with ASP.NET Core 6.0
-summary: Learn how to build cloud native, distributed apps with Orleans.
+title: Introduction to Orleans
+summary: Learn what Orleans is and when you might want to use it.
 abstract: |
   By the end of this module, you'll be able to:
-  - Create and set up a project to use Orleans
-  - Work with core Orleans components such as grains and silo
-  - Integrate Orleans into web service endpoints
-  - Persist and manage state with Orleans
+  - Describe what Orleans is and the core benefits it provides
+  - Understand the basics of how to implement Orleans in your application
+  - Understand the types of scenarios and projects that can benefit from Orleans
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -31,15 +30,12 @@ prerequisites: |
   - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com) with the Azure development workload installed
 units:
-- learn.orleans-build-first-app.introduction
-- learn.orleans-build-first-app.essential-concepts
-- learn.orleans-build-first-app.exercise-set-up-projects
-- learn.orleans-build-first-app.exercise-create-grains-silos
-- learn.orleans-build-first-app.exercise-create-endpoints
-- learn.orleans-build-first-app.explore-state-concepts
-- learn.orleans-build-first-app.exercise-persist-state
-- learn.orleans-build-first-app.knowledge-check
-- learn.orleans-build-first-app.summary
+- learn.orleans-product-introduction.introduction
+- learn.orleans-product-introduction.what-is-orleans
+- learn.orleans-product-introduction.how-orleans-works
+- learn.orleans-product-introduction.when-to-use-orleans
+- learn.orleans-product-introduction.knowledge-check
+- learn.orleans-product-introduction.summary
 
 badge:
-  uid: learn.orleans-build-first-app.badge
+  uid: learn.orleans-product-introduction.badge

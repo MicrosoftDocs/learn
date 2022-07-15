@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.orleans-build-first-app.essential-concepts
-title: Essential concepts
+uid: learn.orleans-product-introduction.what-is-orleans
+title: What is Orleans?
 metadata:
-  title: Essential concepts
+  title: What is Orleans?
   description: Explore the essential concepts of Orleans.
   ms.date: 5/15/2022
   author: alexwolfmsft
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-dotnet
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-essential-concepts.md)]
+  [!include[](includes/2-what-is-orleans.md)]

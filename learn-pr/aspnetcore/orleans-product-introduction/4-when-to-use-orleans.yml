@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.orleans-build-first-app.exercise-create-grains-silos
-title: Exercise - Create grains and silos
+uid: learn.orleans-product-introduction.when-to-use-orleans
+title: When to use Orleans
 metadata:
-  title: Exercise - Create grains and silos
-  description: Learn how to create grains and silos using Orleans.
+  title: When to use Orleans
+  description: Explore when to use Orleans in your projects.
   ms.date: 5/15/2022
   author: alexwolfmsft
   ms.author: alexwolf
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-dotnet
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-exercise-create-grains-silos.md)]
+  [!include[](includes/4-when-to-use-orleans.md)]
