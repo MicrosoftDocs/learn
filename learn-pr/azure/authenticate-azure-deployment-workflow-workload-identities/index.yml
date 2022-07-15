@@ -31,7 +31,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
-iconUrl: /learn/achievements/bicep/learn.azure.authenticate-azure-deployment-workflow-workload-identities.svg
+iconUrl: /learn/achievements/bicep/authenticate-azure-deployment-workflow-workload-identities.svg
 levels:
   - intermediate
 roles:
