@@ -1,4 +1,4 @@
-Orleans is designed to provide powerful features in an approachable way. Although Orleans can implemented in a variety of ways, a standard setup will generally consist of the following tasks:
+Orleans is designed to provide powerful features in an approachable way. Although Orleans can be implemented in various ways, a standard setup will generally consist of the following tasks:
 
 * Create grain classes and interfaces to represent your data or entities
 * Configure the necessary silos and storage locations in `Program.cs`
@@ -33,7 +33,7 @@ From a coding perspective, a grain is a standard C# class that usually implement
     }
     ```
 
-With these three concepts in mind, consider the following psuedo code, which represents a `ShoppingCartGrain` class implementation. The class inherits from the grain base class and implements the appropriate interfaces:
+With these three concepts in mind, consider the following pseudo code, which represents a `ShoppingCartGrain` class implementation. The class inherits from the grain base class and implements the appropriate interfaces:
 
 ```csharp
 public sealed class ShoppingCartGrain : Grain, IGrainWithStringKey, IShoppingCartGrain
@@ -56,7 +56,7 @@ You can create as many different types of grains as your application requires. G
 
 ## How are silos implemented?
 
-Clusters and silos are configured in the *Program.cs* class of your project as part of the initial Orleans setup. A silo can be configured to store grains in local memory, or to persist them in more permanent storage. Orleans supports different providers for a variety of storage options, and you can even implement your own custom solutions. The following example configures a cluster to run on localhost and persist grains in Azure Blob Storage.
+Clusters and silos are configured in the *Program.cs* class of your project as part of the initial Orleans setup. A silo can be configured to store grains in local memory, or to persist them in more permanent storage. Orleans supports different providers for various storage options, and you can even implement your own custom solutions. The following example configures a cluster to run on localhost and persist grains in Azure Blob Storage.
 
 ```csharp
 builder.Host.UseOrleans(siloBuilder =>
@@ -105,4 +105,4 @@ The preceding code accomplishes the following tasks:
 * The `OnGet` method then uses the grain factory to retrieve the correct shopping cart grain for the current user.
 * The `GetAllItemsAsync` method retrieves all of the items currently in the shopping cart and binds them to a `CartItems` property. The Razor Page could then display those items in the UI using the matching Razor syntax template.
 
-Although this example depicts a fairly standard development scenario, by using Orleans your code automatically gains several advantages. Your code will continue to work as your application scales across many instances and users without any further changes. Orleans can also handle failures or disruptions in the underlying infrastructure to preserve the state of the shopping cart for the user. In the next step you'll explore these types of advantages more closely.
+Although this example depicts a fairly standard development scenario, by using Orleans your code automatically gains several advantages. Your code will continue to work as your application scales across many instances and users without any further changes. Orleans can also handle failures or disruptions in the underlying infrastructure to preserve the state of the shopping cart for the user. In the next step you'll, explore these types of advantages more closely.
