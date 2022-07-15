@@ -1,4 +1,4 @@
-Orleans is designed to provide powerful features in an approachable way. Although Orleans can be implemented in various ways, a standard setup will generally consist of the following tasks:
+Orleans is designed to provide powerful features through approachable patterns. Although Orleans can be implemented in various ways, a standard setup will generally consist of the following tasks:
 
 * Create grain classes and interfaces to represent your data or entities
 * Configure the necessary silos and storage locations in `Program.cs`
@@ -101,7 +101,7 @@ public class CartModel : PageModel
 
 The preceding code accomplishes the following tasks:
 
-* Injects an Orleans grain factory into the constructor of the Razor Page. A default grain factory implementation is provided by Orleans and made available through the .NET Core dependency injection container.
+* Injects an Orleans grain factory into the constructor of the Razor Page. A default grain factory implementation is provided by Orleans and made available through the .NET Core dependency resolver.
 * The `OnGet` method then uses the grain factory to retrieve the correct shopping cart grain for the current user.
 * The `GetAllItemsAsync` method retrieves all of the items currently in the shopping cart and binds them to a `CartItems` property. The Razor Page could then display those items in the UI using the matching Razor syntax template.
 

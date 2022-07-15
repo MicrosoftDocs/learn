@@ -2,7 +2,7 @@ Orleans simplifies the process of building distributed, scalable applications. T
 
 ## The actor model
 
-Orleans is built around the "actor model", which is an established design pattern that has exited since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, you'll want to become familiar with this pattern as you build more complex apps.
+Orleans is built around the "actor model", which is an established design pattern that has existed since the 1970s. Although a deep understanding of the actor model isn't required for getting started with Orleans, you'll want to become familiar with this pattern as you build more complex apps.
 
 The actor model is a pattern that stores pieces of state data and corresponding behavior in lightweight, immutable objects called *actors*. Actors communicate with each other using asynchronous messages. Orleans manages and simplifies much of the parallel communication required by distributed apps for you. Orleans specifically uses a *Virtual actor* model where actors exist perpetually for whenever they need to be accessed. This architecture lends itself well to cloud native applications, which require distributed and resilient state and parallel operations.
 
@@ -34,4 +34,4 @@ Orleans supports plenty of other features for more specific or advanced scenario
 
 **ACID transactions**: Grains can have transactional state and support ACID transaction features.
 
-These capabilities can be explored as you start to build more complex apps. Next you'll create a basic application and apply some basic configurations to begin use Orleans.
+These capabilities can be explored as you start to build more complex apps. Next you'll explore the basics of how Orleans works.

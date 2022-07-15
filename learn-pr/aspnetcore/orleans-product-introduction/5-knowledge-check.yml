@@ -15,9 +15,9 @@ quiz:
   questions:
     - content: "What are grains in the context of Orleans?"
       choices:
-        - content: "Grains are streams that help developers process large series of data in real-time."
+        - content: "Grains are streams that help developers process large sets of data in near real-time."
           isCorrect: false
-          explanation: "Incorrect. Streams are a separate feature of Orleans that can utilize grains."
+          explanation: "Incorrect. Streams are a separate feature of Orleans from grains."
         - content: "Grains manage collections of silos and the communication between them."
           isCorrect: false
           explanation: "Incorrect. A collection of silos is called a cluster."
