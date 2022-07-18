@@ -10,7 +10,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. In the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
-1. On the top menu bar, select **New guest user**.
+1. On the top menu bar, select **New user**, then select **Invite external user**.
 
    :::image type="content" source="../media/7-new-guest-user.png" alt-text="Screenshot that shows the New guest user button.":::
 

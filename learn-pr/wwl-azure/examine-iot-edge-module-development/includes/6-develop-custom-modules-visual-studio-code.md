@@ -1,18 +1,18 @@
-Visual Studio Code and the Azure IoT Tools can be used to create an IoT Edge module in your preferred development language (including Azure Functions, written in C\#).
+Visual Studio Code and the Azure IoT Tools can be used to create an IoT Edge module in your preferred development language.
 
 At a high level, the process for developing a custom Edge module in Visual Studio Code will be similar to the following steps:
 
  -  Prepare the development environment with the required tools. For example, Azure IoT tools, Docker tools, and Visual Studio Code tools.
-    
      -  You will need Docker to build the module image and you will need a container registry to hold the module image. For example, Docker Community Edition on your development machine, and Azure Container Registry in Azure.
      -  Unless you're developing your module in C, you will also need the Python-based Azure IoT EdgeHub Dev Tool in order to set up your local development environment to debug, run, and test your IoT Edge solution.
  -  Use the Visual Studio Code command palette to create a solution template for your module(s).
-    
      -  The solution template provides you with a sample module and deployment.template.json file that are set up so that you can build the solution, push it to your container registry, and deploy it to a device to start testing without touching any code.
      -  The sample module is built to take input from a source (in this case, the SimulatedTemperatureSensor module that simulates data) and send it to IoT Hub.
  -  Develop and debug the business logic of your custom module(s). There are several options available for debugging, which include using the IoT Edge Simulator.
+ -  Create the JSON deployment manifest and deploy your custom module.
 
-Once you are done testing, you can create the JSON deployment manifest and deploy your custom module(s).
+> [!TIP]
+> The createOptions parameter in the deployment manifest enables you to configure the module containers at runtime. This parameter expands your control over the modules and enables tasks like allowing or restricting the module's access to the host device's resources, or configuring networking. For detailed information on using the createOptions parameter, see: [https://docs.microsoft.com/azure/iot-edge/how-to-use-create-options](/azure/iot-edge/how-to-use-create-options).
 
 ## Azure IoT Edge for Visual Studio Code
 
@@ -46,7 +46,6 @@ There are four items within the solution:
  -  A .vscode folder contains debug configurations.
  -  A modules folder has subfolders for each module. Within the folder for each module, there is a file, module.json, that controls how modules are built and deployed. This file would need to be modified to change the module deployment container registry from localhost to a remote registry. At this point, you only have one module. But you can add more in the command palette with the command Azure IoT Edge: Add IoT Edge Module.
  -  An .env file lists your environment variables. If Azure Container Registry is your registry, you'll have an Azure Container Registry username and password in it.
-    
      -  > [!NOTE]
         > The environment file is only created if you provide an image repository for the module. If you accepted the localhost defaults to test and debug locally, then you don't need to declare environment variables.
  -  A deployment.template.json file lists your new module along with a sample SimulatedTemperatureSensor module that simulates data you can use for testing.
