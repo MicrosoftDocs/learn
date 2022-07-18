@@ -38,7 +38,7 @@ Other connection security features include:
 
 ### Secure processing and storage in the cloud
 
-Using Azure Active Directory (AAD) for user authentication and authorization, Azure IoT Hub can provide a policy-based authorization model for data in the cloud, enabling easy access management that can be audited and reviewed.
+Using Azure Active Directory for user authentication and authorization, Azure IoT Hub can provide a policy-based authorization model for data in the cloud, enabling easy access management that can be audited and reviewed.
 
 Once data is in the cloud, it can be processed and stored in any user-defined workflow. Access to each part of the data is controlled with Azure Active Directory, depending on the storage service used.
 
