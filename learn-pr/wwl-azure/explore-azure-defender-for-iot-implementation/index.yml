@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-azure-defender-for-iot-implementation
 metadata:
-  title: Explore Azure Defender for IoT implementation
+  title: Explore Microsoft Defender for IoT implementation
   description: "This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns."
-  ms.date: 02/24/2022
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore Azure Defender for IoT implementation
-summary: This module provides you with experience configuring Azure Defender for IoT and implementing Azure Defender for IoT security agents to enhance your awareness of device-level security concerns.
+title: Explore Microsoft Defender for IoT implementation
+summary: This module provides you with experience configuring Microsoft Defender for IoT and implementing Microsoft Defender for IoT security agents to enhance your awareness of device-level security concerns.
 abstract: |
   After you complete this module, you will be able to:
-  - Enable Azure Defender for IoT and create a security module twin.
-  - Install a security agent on a device.
-  - Create and trigger a custom alert.
-  - Review the alert in Azure Defender for IoT.
+  *   Enable Microsoft Defender for IoT and create a security module twin.
+  *   Install a security agent on a device.
+  *   Create and trigger a custom alert.
+  *   Review the alert in Microsoft Defender for IoT.
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.

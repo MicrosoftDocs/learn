@@ -16524,6 +16524,37 @@
       "source_path": "learn-pr/paths/customize-your-xamarin-forms-apps/index.yml",
       "redirect_url": "https://docs.microsoft.com/learn/paths/build-apps-with-dotnet-maui/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/5-determine-service-endpoint-uses.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-routing-endpoints/4-determine-service-endpoint-uses",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/4-examine-routing-example.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-routing-endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/6-determine-service-endpoint-services.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-routing-endpoints/5-determine-service-endpoint-services",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/7-identify-private-link-uses.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-routing-endpoints/6-identify-private-link-uses",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-routing-endpoints/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/9-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-routing-endpoints/8-summary-resources",
+      "redirect_document_id": true
     }
+
   ]
 }
