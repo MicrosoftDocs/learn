@@ -7,7 +7,7 @@ In this exercise, you'll create an Azure Active Directory (Azure AD) group to ma
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
 
-1. On the home page, under **Azure services**, select **Azure Active Directory**.
+1. Go to the Azure Active Directory you created earlier in this module.
 
 1. In the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears for your Azure AD.
 
@@ -21,7 +21,7 @@ In this exercise, you'll create an Azure Active Directory (Azure AD) group to ma
     | Group name | Developer group |
     | Group description | Developer team |
 
-1. Select **Create**. The **Groups | All groups** pane appears, including the new group in the list of Groups.
+1. Select **Create**. The **Groups | All groups** pane appears, including the new group in the list of Groups. You might need to refresh to see your new group.
 
 ## Use direct assignment to add a user to this group
 

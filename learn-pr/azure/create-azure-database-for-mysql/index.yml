@@ -26,7 +26,7 @@ prerequisites: |
   - Experience creating and connecting to MySQL databases.
   - An Azure subscription and the ability to deploy Azure Database for MySQL.
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/mysql/create-azure-database-for-mysql.svg
 ratingEnabled: true
 levels:
 - intermediate
