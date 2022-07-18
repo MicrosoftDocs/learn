@@ -1,8 +1,150 @@
 <!-- TODO re-scope to creating app and federated credential -->
 
-Now that you understand the concept of a service principal, you might wonder how it proves its identity to Azure Active Directory (Azure AD). In this unit, you'll learn about the authentication process and credentials for service principals. You'll also learn how to create a service principal and give it a key.
+Now that you understand the concept of a workload identity, you might wonder how you create one and link it to a GitHub Actions workflow. In this unit, you'll learn about the steps required to create a workload identity and link it to a GitHub Actions deployment workflow.
 
-## Understand how service principals are authenticated
+## Create a Azure Active Directory application
+
+In the previous unit, you learned that workload identities require creating an *application registration* in Azure Active Directory (Azure AD).
+
+::: zone pivot="cli"
+
+Here's an example Azure CLI command to create a new Azure AD application:
+
+```azurecli
+az ad app create --display-name $applicationRegistrationName
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+Here's an example Azure PowerShell command to create a new Azure AD application:
+
+```azurepowershell
+New-AzADApplication -DisplayName $applicationRegistrationName
+```
+
+::: zone-end
+
+The output of the preceding command includes a few important pieces of information, including:
+
+- **Application ID**: The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You use this when your workflow needs to sign in to Azure.
+- **Object ID**: The application registration has an object IDs, which is a unique identifier assigned by Azure AD. You'll see an example of how to use an object ID later in this module.
+- **Display name**: This is a human-readable name that describes the application registrations.
+
+> [!TIP]
+> Use a clear, descriptive display name for your application registration. It's important to help your team understand what the application registration is for, so that nobody accidentally deletes it or changes its permissions.
+
+> [!CAUTION]
+> A display name isn't unique. Multiple application registrations might share the same display name. Be careful when you grant permissions to a application registrations by using its display name to identify it. You might accidentally give permissions to the wrong application registrations. It's a good practice to use one of the unique identifiers instead.
+
+When you create an application registration, you typically only set the display name. Azure assigns the other names and identifiers automatically.
+
+## Create a federated credential
+
+By itself, an application registration doesn't allow a workflow or application to sign in to Azure. You need to assign some credentials first. *Federated credentials* are one type of application credential.
+
+Federated credentials support several different scenarios. In this module, we focus on GitHub Actions deployment workflows.
+
+When you create a federated credential for a deployment workflow, you effectively tell Azure AD to trust GitHub. Then, when your workflow attempts to sign in, GitHub provides information about the workflow run so that Azure AD can decide whether to allow the sign-in attempt. The information GitHub provides during each sign-in attempt includes:
+
+- The GitHub organization name.
+- The name of the GitHub repository.
+- The branch of your repository that the workflow is currently running on.
+- The environment that your workflow job targets. You'll learn more about environments in a future module.
+- The Git tag that includes a commit.
+- Whether the workflow was triggered by the creation of a pull request.
+
+You can configure Azure AD to allow or deny a sign-in attempt from GitHub depending on the values of the proprties listed above. For example, you can enforce policies like the following:
+
+- *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization.*
+- *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization, and the branch name is _main_*.
+
+::: zone pivot="cli"
+
+When you use the Azure CLI, you specify the policy by creating a JSON file or variable. For example, look at following JSON file:
+
+```json
+{
+  "name": "MyFederatedCredential",
+  "issuer": "https://token.actions.githubusercontent.com",
+  "subject": "repo:MyGitHubOrganization/MyGitHubRepository:ref:refs/heads/main",
+  "audiences": [
+    "api://AzureADTokenExchange"
+  ]
+}
+```
+
+The preceding JSON specifies that the federated credential should only be valid when a workflow runs for the following situations: 
+
+| Field | Value |
+| - | - |
+| GitHub organization name | `MyGitHubOrganization` |
+| GitHub repository name | `MyGitHubRepository` |
+| Branch name | `main` |
+
+All of these values are specified in the `subject` property of the JSON file.
+
+After you've created a policy in JSON and saved it to a file named *policy.json*, you can use the Azure CLI to create the federated credential:
+
+```azurecli
+az ad app federated-credential create \
+    --id $applicationRegistrationObjectId \
+    --parameters @policy.json
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+When you use Azure PowerShell, you specify the policy by creating a string similar to the following:
+
+```azurepowershell
+$policy = "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
+```
+
+The preceding string specifies that the federated credential should only be valid when a workflow runs for the following situations: 
+
+| Field | Value |
+| - | - |
+| GitHub organization name | `MyGitHubOrganization` |
+| GitHub repository name | `MyGitHubRepository` |
+| Branch name | `main` |
+
+After you've created a policy string, you can use Azure PowerShell to create the federated credential:
+
+```azurepowershell
+$federatedCredential = New-AzADAppFederatedIdentityCredential `
+    -Name $federationName `
+    -ApplicationObjectId $applicationRegistrationObjectId `
+    -Issuer 'https://token.actions.githubusercontent.com' `
+    -Audience 'api://AzureADTokenExchange' `
+    -Subject $policy
+```
+
+::: zone-end
+
+## Configure your GitHub Actions workflow
+
+TODO
+
+```yaml
+# Allow the workflow to request a token from Azure Active Directory.
+permissions:
+  id-token: write
+  contents: read
+
+# Login step
+- uses: azure/login@v1
+  with:
+    client-id: ${{ secrets.AZURE_CLIENT_ID }}
+    tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+    subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+```
+
+<!-- TODO
+
+## Understand workload identity federation
 
 When a service principal needs to communicate with Azure, it signs in to Azure AD. After Azure AD verifies the service principal's identity, it issues a _token_ that the client application stores and uses when it makes any requests to Azure. 
 
@@ -94,17 +236,6 @@ You can't get this key again, so be sure to use it immediately or save it somewh
 
 Service principals have several identifiers and names that you use to identify and work with them. The identifiers that you use the most are:
 
-- **Application ID**: The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You typically use it as the username when the service principal signs in to Azure.
-- **Object ID**: The application registration and the service principal have their own separate object IDs, which are unique identifiers assigned by Azure AD. Occasionally, you need to use these object IDs when you manage a service principal.
-- **Display name**: This is a human-readable name that describes the service principal.
-
-> [!TIP]
-> Use a clear, descriptive display name for your service principal. It's important to help your team understand what the service principal is for, so that nobody accidentally deletes it or changes its permissions.
-
-> [!CAUTION]
-> A display name isn't unique. Multiple service principals might share the same display name. Be careful when you grant permissions to a service principal by using its display name to identify it. You might accidentally give permissions to the wrong service principal. It's a good practice to use the application ID instead.
-
-When you create a service principal, you typically only set the display name. Azure assigns the other names and identifiers automatically.
 
 ## Handle expired keys
 
@@ -143,19 +274,21 @@ $newKey = $newCredential.SecretText
 > [!TIP]
 > A single service principal can have multiple keys. You can safely update your application to use a new key while the old key is still valid, and then delete the old key when it's no longer in use. This technique avoids downtime from key expiration.
 
-## Manage the lifecycle of your service principal
+-->
 
-It's important to consider the whole lifecycle of each service principal that you create. When you build a service principal for a pipeline, what will happen if the pipeline is eventually deleted or is no longer used? 
+## Manage the lifecycle of your workload identity
 
-Service principals aren't removed automatically, so you need to audit and remove old service principals. It's important to remove old service principals for the same reason that you delete old user accounts: attackers might gain access to their keys. It's best not to have credentials that aren't actively used.
+It's important to consider the whole lifecycle of each service principal that you create. When you build a workload identity for a deployment workflow, what will happen if the workflow is eventually deleted or is no longer used? 
 
-It's a good practice to document your service principals in a place that you and your team can easily access. You should include the following information for each service principal:
+Workload identities aren't removed automatically, so you need to audit and remove old workload identities. Even though your deployment workflow's workload identities don't have secret credentials that could be reused, it's still best to remove them when they're no longer needed. That way, there's no chance somebody could create another GitHub repository with the same name and get access to your Azure environment.
+
+It's a good practice to document your workload identities in a place that you and your team can easily access. You should include the following information for each service principal:
 
 > [!div class="checklist"]
 > * Key identifying information, like its name and application ID.
-> * The purpose of the service principal.
-> * Who created it, who's responsible for managing it and its keys, and who might have answers if there's a problem.
+> * The purpose of the workload identity.
+> * Who created it, who's responsible for managing it, and who might have answers if there's a problem.
 > * The permissions that it needs, and a clear justification for why it needs them.
 > * What its expected lifetime is.
 
-You should regularly audit your service principals to ensure that they're still being used and that the permissions they've been assigned are still correct.
+You should regularly audit your workload identities to ensure that they're still being used and that the permissions they've been assigned are still correct.

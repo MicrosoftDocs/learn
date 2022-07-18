@@ -60,7 +60,9 @@ Azure AD has a concept of an _application_, which represents a system, piece of 
 
 When you create an application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
 
-An application registration can have *federated credentials* associated with it. Federated credentials don't require that you store any secrets. Instead, they enable an Azure AD application to be used with a supported service like GitHub. When your GitHub Actions workflow needs to authenticate, it contacts Azure AD through GitHub. GitHub tells Azure AD the name of the GitHub organization and repository, and optionally some other information too. If you've configured a federated credential matching the repository's details, Azure AD authenticates your deployment workflow and it can use the permissions that you've assigned to the application.
+An application registration can have *federated credentials* associated with it. Federated credentials don't require that you store any secrets. Instead, they enable an Azure AD application to be used with a supported service like GitHub.
+
+When your GitHub Actions workflow needs to authenticate, it contacts Azure AD through GitHub. GitHub tells Azure AD the name of the GitHub organization and repository, and optionally some other information too. If you've configured a federated credential matching the repository's details, Azure AD authenticates your deployment workflow and it can use the permissions that you've assigned to the application.
 
 > [!TIP]
 > When you look at an application registration in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. That's because, in Azure AD, applications can do many things that are beyond the scope of authentication and workflow deployments.
