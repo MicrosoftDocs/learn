@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/14/2022
+  ms.date: 07/18/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When using IoT Hub jobs for device management, which approach to device management can be implemented?"
+  - content: "When you use IoT Hub jobs for device management, which approach to device management can be implemented?"
     choices:
     - content: "Either device twins or direct methods."
       isCorrect: true
@@ -28,14 +28,14 @@ quiz:
     - content: "Only device twins."
       isCorrect: false
       explanation: "Incorrect. Direct methods can be invoked using IoT Hub jobs."
-  - content: "When using IoT Hub automatic device management, which approach to device management is implemented?"
+  - content: "When you use IoT Hub automatic device management, which approach to device management is implemented?"
     choices:
     - content: "Either device twins or direct methods."
       isCorrect: false
-      explanation: "Incorrect. IoT Hub automatic device management does not use direct methods."
+      explanation: "Incorrect. IoT Hub automatic device management doesn't use direct methods."
     - content: "Only direct methods."
       isCorrect: false
-      explanation: "Incorrect. IoT Hub automatic device management does not use direct methods."
+      explanation: "Incorrect. IoT Hub automatic device management doesn't use direct methods."
     - content: "Only device twins."
       isCorrect: true
       explanation: "Correct. IoT Hub automatic device management used device twins to manage devices at scale."
