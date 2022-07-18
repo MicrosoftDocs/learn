@@ -15,7 +15,6 @@ Referring to the Create alert rule image above:
  -  Scope details should fill automatically with the details for your instance.
  -  You will define Condition and Action group details to customize alert triggers and responses.
  -  In the Alert rule details section, enter a name and optional description for your rule. You can select the Enable alert rule upon creation checkbox if you want the alert to become active as soon as it is created.
-    
      -  This is also where you select a resource group and Severity level.
 
 For a guided walkthrough of filling out these fields, see [Overview of alerts in Microsoft Azure](/azure/azure-monitor/alerts/alerts-overview).
