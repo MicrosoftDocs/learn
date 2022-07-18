@@ -102,7 +102,7 @@ To delete a resource by using `HttpClient`, call `SendAsync` with an `HttpReques
 HttpClient client = new HttpClient();
 HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Delete, url);
 
-HttpResponseMessage response = await client.SendAsync(url);
+HttpResponseMessage response = await client.SendAsync(message);
 ```
 
 The response contains the headers, status code, and deleted object.
