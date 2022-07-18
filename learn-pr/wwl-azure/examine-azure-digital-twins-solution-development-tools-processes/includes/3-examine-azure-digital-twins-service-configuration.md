@@ -91,7 +91,7 @@ Use the following chart to see what resources should be set up before creating y
     Event Grid endpoint
   :::column-end:::
   :::column:::
-    Event Grid Topic
+    Event Grid topic
   :::column-end:::
 :::row-end:::
 :::row:::
