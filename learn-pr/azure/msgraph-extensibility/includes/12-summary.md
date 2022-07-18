@@ -109,3 +109,26 @@ TODO: describe the business impact
 + [Microsoft Graph directory extensions](/graph/api/resources/extensionproperty)
 + [Microsoft Graph open type extensions](/graph/api/resources/opentypeextension)
 + [Microsoft Graph schema extensions](/graph/api/resources/schemaextension)
+
+
+<!-- Links -->
+[user]: /graph/api/resources/user
+[group]: /graph/api/resources/group
+[contact]: /graph/api/resources/contact
+[administrativeUnit]: /graph/api/resources/administrativeunit
+[application]: /graph/api/resources/application
+[device]: /graph/api/resources/device
+[event]: /graph/api/resources/event
+[message]: /graph/api/resources/message
+[organization]: /graph/api/resources/organization
+[post]: /graph/api/resources/post
+[todoTask]: /graph/api/resources/todotask
+[todoTaskList]: /graph/api/resources/todotasklist
+[servicePrincipal]: /graph/api/resources/serviceprincipal
+[AD connect]: /azure/active-directory/hybrid/whatis-hybrid-identity?context=/azure/active-directory/enterprise-users/context/ugr-context
+[ADConnect-YES]: /azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions
+[dynamic membership rules]: /azure/active-directory/enterprise-users/groups-dynamic-membership
+[DynamicMembership-YES]: /azure/active-directory/enterprise-users/groups-dynamic-membership#extension-properties-and-custom-extension-properties
+[DirectoryExt-CustomClaims]: /azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims
+[B2CDirectoryExt]: /azure/active-directory-b2c/user-profile-attributes#extension-attributes
+[MAPI-named-property]: /office/client-developer/outlook/mapi/mapi-named-properties
