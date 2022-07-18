@@ -77,7 +77,7 @@ An event source is where the event happens. Each event source is related to one 
 
 ### Topics definition
 
-The event grid topic provides an endpoint where the source sends events. The publisher creates the event grid topic, and decides whether an event source needs one topic or more than one topic. A topic is used for a collection of related events. To respond to certain types of events, subscribers decide which topics to subscribe to.
+The Event Grid topic provides an endpoint where the source sends events. The publisher creates the Event Grid topic, and decides whether an event source needs one topic or more than one topic. A topic is used for a collection of related events. To respond to certain types of events, subscribers decide which topics to subscribe to.
 
 System topics are built-in topics provided by Azure services. You don't see system topics in your Azure subscription because the publisher owns the topics, but you can subscribe to them. To subscribe, you provide information about the resource you want to receive events from. As long as you have access to the resource, you can subscribe to its events.
 
@@ -101,7 +101,7 @@ Some additional considerations when planning to implement Event Grid include sec
 
 #### Security
 
-Event Grid provides security for subscribing to topics, and publishing topics. When subscribing, you must have adequate permissions on the resource or event grid topic. When publishing, you must have a SAS token or key authentication for the topic.
+Event Grid provides security for subscribing to topics, and publishing topics. When subscribing, you must have adequate permissions on the resource or Event Grid topic. When publishing, you must have a SAS token or key authentication for the topic.
 
 #### Event delivery
 

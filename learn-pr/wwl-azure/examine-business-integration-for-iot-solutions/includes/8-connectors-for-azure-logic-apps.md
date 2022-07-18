@@ -44,7 +44,7 @@ Built-in triggers include the following:
     Recurrence
   :::column-end:::
   :::column:::
-    Ther following apply:
+    The following apply:
 
  -  Run your logic app on a specified schedule, ranging from basic to complex recurrences, with the Recurrence trigger.
  -  Pause your logic app for a specified duration with the Delay action.
