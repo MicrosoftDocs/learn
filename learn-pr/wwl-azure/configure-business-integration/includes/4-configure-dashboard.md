@@ -19,7 +19,7 @@ Open your Dashboard page from the left pane of the IoT Central application. To c
 
 ## Add tiles to a dashboard
 
-If you're in a role with the appropriate permissions, you can customize an organization dashboard. All users can customize personal dashboards
+If you're in a role with the appropriate permissions, you can customize an organization dashboard. All users can customize personal dashboards.
 
 Open your Dashboard page from the left pane of the IoT Central application. To begin customizing the dashboard, select **Edit** at the top-left of the Dashboard page. Selecting **Edit** opens the **Edit dashboard** panel, which can be used to add and remove tiles in order to customize the dashboard. Selecting either **New dashboard** or **Copy** will also open a dashboard in edit mode.
 
@@ -27,7 +27,7 @@ You have two initial options when preparing to add a tile to your dashboard, **S
 
 For example, to add a line chart tile to track telemetry values reported by one or more devices over time:
 
-1.  Select **Start with a Visual**, Line chart, and then **Add tile**, or just drag the tile onto the canvas..
+1.  Select **Start with a Visual**, Line chart, and then **Add tile**, or just drag the tile onto the canvas.
 2.  To edit the tile, select its **pencil** button. Enter a **Title** and select a **Device Group**. In the **Devices** list, select the devices to show on the tile.
 3.  After you select all the devices to show on the tile, select **Update**.
 4.  After you finish adding and customizing tiles on the dashboard, select **Save**.
@@ -39,7 +39,7 @@ Each tile has a pre-selected graph, chart, etc. that will be displayed when the 
 
 ## Edit tiles
 
-To edit a tile on the dashboard, first select **Edit** at the top left of the page, which will open edit mode for the dashboard and all its tiles. This provides you with the following options::
+To edit a tile on the dashboard, first select **Edit** at the top left of the page, which will open edit mode for the dashboard and all its tiles. This provides you with the following options:
 
  -  The **square** button lets you resize the tile.
  -  The **pencil** button lets you edit the visualization. For example, for a line chart you can choose to show the legend and axes and choose the time range to plot.
