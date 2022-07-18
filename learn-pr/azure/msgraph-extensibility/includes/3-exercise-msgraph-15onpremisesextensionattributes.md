@@ -188,7 +188,7 @@ HTTP/1.1 204 No Content
 
 ## Dynamically add users internal groups based on their user profile data
 
-In this exercise, you create a Microsoft 365 group and specify that its membership is dynamically calculated. You configure a rule that only users with Xbox gamer tags can be members of the group. You also specify a Teams team to be provisioned when you create the group.
+In this exercise, you create a Microsoft 365 group and specify that its membership is dynamically calculated. You configure a rule that only users with Xbox gamer tags can be members of the group. You also specify a Teams team and a Yammer community to be provisioned when you create the group.
 
 ### Request
 
@@ -201,6 +201,9 @@ POST https://graph.microsoft.com/v1.0/groups
     "groupTypes": [
         "Unified",
         "DynamicMembership"
+    ],
+    "creationOptions": [
+        "YammerProvisioning"
     ],
     "mailEnabled": true,
     "mailNickname": "Xboxers",
@@ -232,6 +235,9 @@ Content-type: application/json
     "groupTypes": [
         "Unified",
         "DynamicMembership"
+    ],
+    "creationOptions": [
+        "YammerProvisioning"
     ],
     "mail": "Xboxers@M365EDU334089.onmicrosoft.com",
     "mailEnabled": true,

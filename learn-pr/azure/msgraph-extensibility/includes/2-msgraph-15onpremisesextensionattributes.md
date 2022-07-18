@@ -69,7 +69,7 @@ While you'll use the extension attribute properties to store data required by th
 
 #### Dynamically add users to internal groups based on their user profile data
 
-Suppose you want to seamlessly allow employees with shared interests to communicate through one internal Teams channel and share tips or have fun. For example, you want Xbox gamers to interact with each other through Teams chats or email, share tips, plan team playoffs and have fun together.
+Suppose you want to seamlessly allow employees with shared interests to communicate through one internal Teams channel and share tips or have fun. For example, you want Xbox gamers to interact with each other through Yammer communities, Teams chats, and email, share tips, plan team playoffs and have fun together.
 
 Microsoft Graph groups allow an organization to bring other users with common interests. You can create an Xbox gamers group to bring together all Xbox enthusiasts through one alias.
 

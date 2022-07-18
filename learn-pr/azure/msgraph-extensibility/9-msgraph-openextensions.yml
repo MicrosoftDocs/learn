@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.msgraph-extensibility.msgraph-openextensions
-title: msgraph-openextensions
+title: Choose open extensions for Microsoft Graph data
 metadata:
-  unitType: {{patternType}}
-  title: msgraph-openextensions
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 14/07/2022
+  unitType: learning-content
+  title: Choose open extensions for Microsoft Graph data
+  description: "Use Microsoft Graph open extensions to add custom data to users."
+  ms.date: 07/14/2022
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/9-msgraph-openextensions.md)]
