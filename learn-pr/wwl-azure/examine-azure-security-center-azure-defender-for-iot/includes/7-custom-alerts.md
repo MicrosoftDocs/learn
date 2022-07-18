@@ -1,10 +1,10 @@
-Using custom security groups and alerts, takes full advantage of the end-to-end security information and categorical device knowledge to ensure better security across your IoT solution.
+When you implement custom security groups and alerts, you take full advantage of your end-to-end security information and categorical device knowledge to ensure better security across your IoT solution.
 
 ## Why use custom alerts?
 
 You know your IoT devices best.
 
-For customers who fully understand their expected device behavior, Azure Defender for IoT allows you to translate this understanding into a device behavior policy and alert on any deviation from expected, normal behavior.
+For customers who fully understand their expected device behavior, Microsoft Defender for IoT allows you to translate this understanding into a device behavior policy and alert on any deviation from expected, normal behavior.
 
 ## Device security groups
 
@@ -48,4 +48,4 @@ Use security groups to group your devices into logical categories. After creatin
 4.  Select **Create custom alert rule**.
 5.  Select a custom alert from the dropdown list.
 6.  Edit the required properties, select **OK**.
-7.  Make sure to select **SAVE**. Without saving the new alert, the alert is deleted the next time you close IoT Hub.
+7.  Make sure to select **SAVE**. The alert will be deleted when you close IoT Hub if it is not saved.

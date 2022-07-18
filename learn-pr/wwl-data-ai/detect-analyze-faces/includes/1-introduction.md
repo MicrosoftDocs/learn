@@ -12,9 +12,7 @@ Moving beyond simple face detection, some algorithms can also return other infor
 
 ![facial landmarks image showing data around face characteristics](../media/landmarks-1.png)
 
-These facial landmarks can be used as features with which to train a machine learning model from which you can infer information about a person, such as their perceived age or perceived emotional state, like this:
-
-![A happy 25-year old](../media/face-attributes.png)
+These facial landmarks can be used as features with which to train a machine learning model. 
 
 ## Facial recognition
 
@@ -32,3 +30,5 @@ There are many applications for face detection, analysis, and recognition. For e
 - Advertising - analyzing faces in an image can help direct advertisements to an appropriate demographic audience.
 - Missing persons - using public cameras systems, facial recognition can be used to identify if a missing person is in the image frame.
 - Identity validation - useful at ports of entry kiosks where a person holds a special entry permit.
+
+When used responsibly, facial recognition is an important and useful technology that can improve efficiency, security, and customer experiences. Face is a building block for creating a facial recognition system.
