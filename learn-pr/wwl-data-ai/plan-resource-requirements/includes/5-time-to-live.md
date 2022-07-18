@@ -31,4 +31,4 @@ The TTL value for an item is configured by setting the ``ttl`` path of the item.
 | :--- | :--- | ---: |
 | *null* | *null* | *This item will never expire* |
 | *null* | ``-1`` |  *This item will never expire* |
-| *null*| ``2000`` | *This item will never expire* |
+| *null*| ``2000`` | *TTL is enabled. The item will expire after 2000 seconds.* |

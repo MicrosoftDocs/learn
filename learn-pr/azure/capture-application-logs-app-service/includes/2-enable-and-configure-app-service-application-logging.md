@@ -92,22 +92,23 @@ After configuring the logs, select **Save**.
 To enable app logging to the file system, run this command.
 
 ```azurecli
-az webapp log config --application-logging true --level verbose --name <app-name> --resource-group <resource-group-name>
+az webapp log config --application-logging filesystem --level verbose --name <app-name> --resource-group <resource-group-name>
 ```
 
 For example, to enable logging to the file system for an app called **contosofashions123**, capturing all messages, run this command.
 
 ```azurecli
-az webapp log config --application-logging true --level verbose --name contosofashions123 --resource-group contosofashionsRG
+az webapp log config --application-logging filesystem --level verbose --name contosofashions123 --resource-group contosofashionsRG
 ```
 
 There is currently no way to disable application logging by using Azure CLI commands; however, the following command resets file system logging to error-level only.
 
 ```azurecli
-az webapp log config --application-logging false --name <app-name> --resource-group <resource-group-name>
+az webapp log config --application-logging off --name <app-name> --resource-group <resource-group-name>
 ```
 
 To view the current logging status for an app, use this command.
+
 ```azurecli
 az webapp log show --name <app-name> --resource-group <resource-group-name>
 ```
