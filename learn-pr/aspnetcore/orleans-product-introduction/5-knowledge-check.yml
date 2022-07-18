@@ -48,7 +48,7 @@ quiz:
           explanation: "Incorrect. This attribute does not exist in Orleans."
         - content: "Register the grain as a string type as part of the Orleans configuration in `Program.cs`"
           isCorrect: false
-          explanation: "Incorrect. Grain types are not registered in `Program.cs`."
+          explanation: "Incorrect. Grain types are not registered in _Program.cs_."
         - content: "Include a string id parameter when creating the grain using the grain factory."
           isCorrect: false
           explanation: "Incorrect. The grain's identifier type is not set by the grain factory."

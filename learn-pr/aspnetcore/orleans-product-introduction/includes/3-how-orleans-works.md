@@ -1,8 +1,8 @@
 Orleans is designed to provide powerful features through approachable patterns. Although Orleans can be implemented in various ways, a standard setup will generally consist of the following tasks:
 
-* Create grain classes and interfaces to represent your data or entities
-* Configure the necessary silos and storage locations in `Program.cs`
-* Inject grain factories into your app components to create and utilize grains
+* Create grain classes and interfaces to represent your data or entities.
+* Configure the necessary silos and storage locations in _Program.cs_.
+* Inject grain factories into your app components to create and utilize grains.
 
 Let's explore each of these steps more closely.
 
@@ -10,9 +10,9 @@ Let's explore each of these steps more closely.
 
 From a coding perspective, a grain is a standard C# class that usually implements the following three concepts:
 
-1) The grain inherits the Orleans `Grain` base class, which manages various internal behaviors and integration points with the Orleans framework.
+1) The implementation inherits from the Orleans `Grain` base class, which manages various internal behaviors and integration points with Orleans.
 
-2) The grain implements one of the grain interface types listed below. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
+2) The grain implements one of the following grain interface types. Each of these interfaces defines a similar contract, but marks your class with a different data type for the identifier that Orleans uses to track the grain, such as a `string` or `integer`.
 
 - `IGrainWithGuidKey`
 - `IGrainWithIntegerKey`
@@ -25,7 +25,7 @@ From a coding perspective, a grain is a standard C# class that usually implement
     ```csharp
     public interface IShoppingCartGrain
     {
-        Task<bool> AddItemAsync(int quantity, ProductDetails product);
+        Task<bool> AddOrUpdateItemAsync(int quantity, ProductDetails product);
         Task RemoveItemAsync(ProductDetails product);
         Task<IEnumerable<CartItem>> GetAllItemsAsync();
         Task<int> GetCartItemsCount();
@@ -38,7 +38,7 @@ With these three concepts in mind, consider the following pseudo code, which rep
 ```csharp
 public sealed class ShoppingCartGrain : Grain, IGrainWithStringKey, IShoppingCartGrain
 {
-    public Task<bool> AddItemAsync(int quantity, ProductDetails product)
+    public Task<bool> AddOrUpdateItemAsync(int quantity, ProductDetails product)
     {
         // TODO: Implementation details
     }
@@ -48,7 +48,7 @@ public sealed class ShoppingCartGrain : Grain, IGrainWithStringKey, IShoppingCar
         // TODO: Implementation details
     }
 
-    // Other methods omitted
+    // Other methods were omitted for brevity...
 }
 ```
 
@@ -76,22 +76,24 @@ builder.Host.UseOrleans(siloBuilder =>
 Once your grains are created and your silos are configured, you can begin using those grains in your application. For example, consider the following Razor Page in ASP.NET Core, which uses grains to populate a shopping cart page:
 
 ```csharp
-public class CartModel : PageModel
+public sealed class CartModel : PageModel
 {
-    public IEnumerable<CartItem> CartItems { get; set; } = new IEnumerable<CartItem>();
+    public IEnumerable<CartItem> CartItems { get; set; } = new List<CartItem>();
 
-    private IGrainFactory grainFactory;
+    private readonly IGrainFactory _grainFactory;
 
     public CartModel(IGrainFactory grainFactory)
     {
-        this.grainFactory = grainFactory;
+        _grainFactory = grainFactory;
     }
 
     public async Task<IActionResult> OnGet()
     {
-        // TODO: Get the user ID
+        // TODO: Use a unique user identifier instead of
+        // their name, perhaps a claim value.
+        var userId = User.Identity.Name;
 
-        var cart = this.grainFactory.GetGrain<IShoppingCartGrain>(userId);
+        var cart = _grainFactory.GetGrain<IShoppingCartGrain>(userId);
         CartItems = await cart.GetAllItemsAsync();
         return Page();
     }
