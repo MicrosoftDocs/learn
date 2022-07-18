@@ -61,7 +61,6 @@ The solution back end operates on the device twin using the following atomic ope
  -  Replace desired properties. This operation enables the solution back end to completely overwrite all existing desired properties and substitute a new JSON document for `properties/desired`.
  -  Replace tags. This operation enables the solution back end to completely overwrite all existing tags and substitute a new JSON document for `tags`.
  -  Receive twin notifications. This operation allows the solution back end to be notified when the twin is modified. To do so, your IoT solution needs to create a route and to set the Data Source equal to twinChangeEvents. By default, no such routes pre-exist, so no twin notifications are sent. If the rate of change is too high, or for other reasons such as internal failures, the IoT Hub might send only one notification that contains all changes. Therefore, if your application needs reliable auditing and logging of all intermediate states, you should use device-to-cloud messages. The twin notification message includes properties and body.
-    
      -  Properties. The properties for a twin notification message are shown in the following table.
         
         :::row:::

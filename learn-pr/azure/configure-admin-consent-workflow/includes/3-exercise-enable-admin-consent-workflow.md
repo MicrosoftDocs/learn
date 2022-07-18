@@ -44,7 +44,7 @@ The single page application you created will submit a request to Microsoft Graph
 Locate the `var msalConfig = {}` code in the **index.html** file. The `auth` object contains three properties you need to set as follows:
 
 - `clientId`: set to the Azure AD application's ID
-- `authority`: set to **https://login.microsoftonline.com/{{DIRECTORY_ID}}**, replacing the **{{DIRECTORY_ID}}** with the Azure AD directory ID of the Azure AD application
+- `authority`: set to **`https://login.microsoftonline.com/{{DIRECTORY_ID}}`**, replacing the **{{DIRECTORY_ID}}** with the Azure AD directory ID of the Azure AD application
 - `redirectURI`: set to the Azure AD application's redirect URI: **http://localhost:3007**
 
 ## Enable admin consent workflow

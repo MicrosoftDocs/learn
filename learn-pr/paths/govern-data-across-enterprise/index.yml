@@ -3,7 +3,7 @@ uid: learn.wwl.govern-data-across-enterprise
 metadata:
   title: Govern data across an enterprise
   description: Govern data across an enterprise
-  ms.date: 06/23/2022
+  ms.date: 07/18/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -28,5 +28,6 @@ modules:
 - learn.wwl.discover-trusted-data-use-azure-purview
 - learn.wwl.catalog-data-artifacts-use-microsoft-purview
 - learn.wwl.manage-power-bi-artifacts-use-microsoft-purview
+- learn.wwl.integrate-microsoft-purview-azure-synapse-analytics
 trophy:
   uid: learn.wwl.govern-data-across-enterprise.trophy
