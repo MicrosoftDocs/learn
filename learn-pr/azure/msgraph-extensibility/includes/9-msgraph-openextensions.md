@@ -55,15 +55,18 @@ GET https://graph.microsoft.com/v1.0/users/{userId}/extensions/{extensionId}
 
 You manage open extensions for users as follows:
 + Using a POST request, you can define a new open extension and store data in the open extension for an existing user
+    + You must specify the **@odata.type** property with the value `microsoft.graph.openTypeExtension`
 + Using a PATCH request, you can either store data in the open extension property, update the stored data, or delete the existing data
     + To delete data from a property in the open extension object, set its value to `null`
-    + To delete data from *all* properties in the open extension object and effectively, the open extension, set its value to `null`
-    + To update any property in the open extension object, you must specify all properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties. Therefore, while you may want to update only the **xboxGamertag**, you must also specify both the **linkedInProfile** and **skypeId** so that the properties and their associated values aren't deleted.
+    + To update any property in the open extension object, you *must* specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties. Therefore, while you may want to update only the **xboxGamertag**, you must also specify both the **linkedInProfile** and **skypeId** so that the properties and their associated values aren't deleted.
+    + To delete a property from the open extension object, do not pass it in the PATCH request body
 + Using the DELETE method, you can delete an open extension object from the user
 
 #### Query capabilities supported by open extension properties
 
 Open extensions do not support any OData query parameters.
+
+Your app must retrieve the open extension and all it's related values then apply client-side filtering and matching to find matches in the data.
 
 ### Considerations for using open extensions
 

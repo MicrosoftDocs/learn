@@ -134,9 +134,11 @@ Content-type: application/json
 
 Because Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties, the team bonding app should include a logic to strip down the unrequired 12 properties and only display the data in the three properties that it requires.
 
-## Update user data in an extension attribute property
+## Update and delete user data in an extension attribute property
 
 Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
+
+Adele also no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extensionAttribute14** property to `null`.
 
 Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
 
@@ -147,33 +149,8 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 
 {
     "onPremisesExtensionAttributes": {
+        "extensionAttribute14": null,
         "extensionAttribute15": "AtalantaAdele"
-    }
-}
-```
-
-### Response
-
-If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
-
-```http
-HTTP/1.1 204 No Content
-```
-
-## Delete user data from an extension attribute property
-
-Suppose Adele no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extensionAttribute14** property to `null`.
-
-Run the following request to remove the Skype ID from Adele's profile.
-
-### Request
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
-
-{
-    "onPremisesExtensionAttributes": {
-        "extensionAttribute14": null
     }
 }
 ```

@@ -197,9 +197,11 @@ Content-type: application/json
 }
 ```
 
-## Update data in a schema extension property
+## Update and delete user data in a schema extension property
 
 Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
+
+Adele also no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **skypeId** property to `null`.
 
 Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
 
@@ -212,7 +214,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
     "extroow2sik_teamBondingApp": {
         "xboxGamertag": "AtalantaAdele",
         "linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn",
-        "skypeId": "AdeleV"
+        "skypeId": null
     }
 }
 ```
@@ -235,7 +237,7 @@ Content-type: application/json
             "extroow2sik_teamBondingApp": {
                 "@odata.type": "#microsoft.graph.ComplexExtensionValue",
                 "xboxGamertag": "AtalantaAdele",
-                "skypeId": "AdeleV",
+                "skypeId": null,
                 "linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn"
             }
         }
@@ -243,9 +245,9 @@ Content-type: application/json
 }
 ```
 
-## Delete data from a schema extension property
+## Delete data from a schema extension object
 
-Suppose Adele no longer wants to share the social profiles. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extroow2sik_teamBondingApp** property to `null`.
+Suppose Adele no longer wants to share all the social profiles. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extroow2sik_teamBondingApp** object to `null`.
 
 Run the following request to remove data from all the three properties of the schema extension object.
 

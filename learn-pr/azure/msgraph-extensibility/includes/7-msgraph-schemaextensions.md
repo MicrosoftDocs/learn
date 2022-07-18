@@ -13,7 +13,7 @@ Just like schema extensions, schema extensions are also closely tied to the appl
 1. Manage the schema extension property and its associated values on instances of the target resource objects.
 1. During the lifecycle of their use, maintain the [Considerations for using schema extensions](#considerations-for-using-schema-extensions).
 
-### schema extension definitions
+### Schema extension definitions
 
 Before you can use schema extension, you must define them. The following are the core components of a schema extension definition.
 
@@ -121,6 +121,10 @@ In the Microsoft Graph `v1.0` endpoint, the schema extension properties aren't r
 Schema extension properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
 Schema extension properties are specially indexed in Microsoft Graph for advanced querying.
+
+### Other Azure AD scenarios for custom data in directory extension properties
+
+Schema extensions and the data they store aren't supported by any additional Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
 
 ### Considerations for using schema extensions
 
