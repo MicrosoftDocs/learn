@@ -1,3 +1,5 @@
+<!-- TODO re-scope to creating app and federated credential -->
+
 Now that you understand the concept of a service principal, you might wonder how it proves its identity to Azure Active Directory (Azure AD). In this unit, you'll learn about the authentication process and credentials for service principals. You'll also learn how to create a service principal and give it a key.
 
 ## Understand how service principals are authenticated

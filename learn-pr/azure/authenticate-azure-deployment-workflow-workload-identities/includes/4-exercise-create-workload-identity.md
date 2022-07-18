@@ -1,3 +1,4 @@
+<!-- TODO figure out scope -->
 [!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 Before you create the deployment pipeline for your toy company's website, you need to create a service principal and grant it access to your Azure environment. In this exercise, you'll create the service principal that you'll use for your deployment pipeline.

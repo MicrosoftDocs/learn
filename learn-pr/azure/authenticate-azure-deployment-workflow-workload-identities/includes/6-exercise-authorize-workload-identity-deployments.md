@@ -1,3 +1,5 @@
+<!-- TODO figure out scope -->
+
 In the previous exercise, you created a service principal for your website's deployment pipeline, and you tested that you could sign in by using its key. Now you're ready to grant the service principal access to your Azure environment. In this exercise, you'll create a role assignment for the service principal, and then deploy a Bicep file by using the service principal.
 
 During the process, you'll:
