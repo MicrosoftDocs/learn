@@ -1,28 +1,28 @@
-In this unit, you will learn how to work with panes in the Azure portal user interface (UI).
+In this unit, you'll learn how to work with panes in the Azure portal user interface (UI).
 
 ## Activate the Azure sandbox
 
 1. Start by **activating the Azure sandbox above**.
 
-1. Once it's activated, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+1. Once it's activated, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
 
 ## Explore the Marketplace
 
-Once you are logged into the Azure portal, we can start exploring things. In these sections, you get a tour of the Azure portal, but won't actually create any Azure resources.
+Once you're logged into the Azure portal, we can start exploring things. In these sections, you'll get a tour of the Azure portal, but won't actually create any Azure resources.
 
 1. Let's start by touring how to create a resource. On the home page, select **Create a resource**.
 
-1. A pane labeled **New** appears and displays a list of categories on the left-hand side, labeled Azure Marketplace. This initial view is somewhat like a "Popular Categories" menu, with some of the most common categories visible. If you'd like, you can expand this list to see everything in the **Marketplace** pane with the **See all** link next to the heading. If you do, you can get back to the New pane by selecting the X icon in the upper right of any panes you have opened.
+1. A pane labeled **New** appears and displays a list of categories on the left-hand side, labeled Azure Marketplace. This initial view is somewhat like a "Popular Categories" menu, with some of the most common categories visible. If you'd like, you can expand this list to see everything in the **Marketplace** pane with the **See more in Marketplace** link next to the heading. If you do, you can get back to the New pane by selecting the **X** icon in the upper right of any panes you have opened.
 
-1. Selecting any of items in the Azure Marketplace list will show popular services for that category on the right of the **New** pane. This list is a subset of the entire range of computing resources available for that category. As with the Azure Marketplace, you can select on the **See all** link for a more comprehensive list. We will talk more about this list in subsequent sections.
+1. Selecting any of items in the Azure Marketplace list on the left will show popular services for that category on the right of the **New** pane. This list is a subset of the entire range of computing resources available for that category. As with the Azure Marketplace, you can select on the **See more** link for a more comprehensive list. We will talk more about this list in subsequent sections.
 
-1. Returning to the **New** pane, select on **Get started** and you should see a list on the right side of the pane that includes services such as Windows Server 2016 Datacenter, Ubuntu Server VM, SQL Database, and so on. Most of these items include a **Quickstarts + tutorials** link directly below the name. This link opens a new browser tab with the quickstart Microsoft documentation for that item.
+1. Returning to the **New** pane, select **Get started** and you should see a list on the right side of the pane that includes services such as Windows Server 2016 Datacenter, Ubuntu Server VM, SQL Database, and so on. Most of these items include an **MS Learn** link directly below the name. This link opens a new browser tab with the Microsoft Learn tutorials for that item.
 
-1. Optional: select **Quickstarts + tutorials** under **Windows Server 2016 Datacenter** and, in the new browser window, look through the Windows VM tutorials. When you are finished, close this new tab to return to the Azure portal.
+1. Optional: select **MS Learn** under any of the options and, in the new browser window, look through the tutorials. When you are finished, close this new tab to return to the Azure portal.
 
 ## View resources
 
-1. Under Azure Marketplace, select **Compute** to show more compute options on the right side of the pane, such as Red Hat Enterprise, Reserved VM Instances, Web app for Containers, and so on.
+1. Under Categories, select **Compute** to show more compute options on the right side of the pane, such as Red Hat Enterprise, Reserved VM Instances, Web app for Containers, and so on.
 
 1. To the right of **Featured**, select **See all**. The full list of available VM services now appears.
 
