@@ -1,6 +1,6 @@
 # Title
 
-Improve sign-in security by registering Azure Active Directory (Azure AD) users for Microsoft Authenticator
+Improve sign-in security by registering Microsoft Authenticator for Azure Active Directory (Azure AD) users
 
 ## Role(s)
 
@@ -17,18 +17,19 @@ Security Operations Analyst
 
 ## Prerequisites
 
+- Azure Active Directory (Azure AD) fundamentals, including multifactor authentication (MFA).
 - Your tenant needs to have enabled Azure AD MFA. We recommend using Conditional Access to enable Azure AD MFA.  
 - Have a phone that can install Microsoft Authenticator to test user access.
 
 ## Summary
 
-Prepare and run a campaign to increase usage of Microsoft Authenticator. Nudge Azure AD users to set up Microsoft Authenticator when they sign in by using MFA. Validate that users have Microsoft Authenticator as their default sign-in method. 
+Review authentication methods for Azure AD. For better sign-in security, run a campaign to have users set up Microsoft Authenticator and confirm it's their default sign-in method.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
-1. Prepare for the registration campaign
+1. Explain why Microsoft Authenticator provides better security than authentication methods like SMS or voice call. 
 1. Enable the policy to help users register Microsoft Authenticator
 1. Confirm Microsoft Authenticator is the default sign-in method
 
@@ -67,29 +68,24 @@ Identify the subtasks of module title.
       - Perform MFA as a test user 
       - Confirm Microsoft Authenticator is the new default sign-in method 
 
-1. Understand authentication methods
+1. Understand authentication methods 
 
-   While MFA provides great security, users often get frustrated with the additional security layer on top of having to remember their passwords. Passwordless authentication methods are more convenient because the password is removed and replaced with something you have, plus something you are or something you know. 
+   
+   ## What authentication and verification methods are available in Azure Active Directory?
+
+   As part of the sign-in experience for accounts in Azure Active Directory (Azure AD), users can authenticate themselves in different ways. A username and password is the most common way. With modern authentication and security features in Azure AD, that basic password should be supplemented or replaced with more secure authentication methods.
+
+   ![Diagram of the strengths and preferred authentication methods in Azure AD](media/concept-authentication-methods/authentication-methods.png)
+
+   **Microsoft Authenticator**
+
+   For flexibility and usability, Microsoft recommends that you use the Microsoft Authenticator app. This authentication method provides the best user experience. Users can sign in to any platform or browser by getting a notification to their phone, matching a number displayed on the screen to the one on their phone, and then using their biometric (touch or face) or PIN to confirm.  and multiple modes, such as passwordless, MFA push notifications, and OATH codes. 
 
    *image*
-
-   Microsoft supports a variety of passwordless protection options to meet different business and user needs:
-
-   - Windows Hello for Business
-   - Microsoft Authenticator
-   - FIDO2 security keys
-   
-   Let's learn more about each option and then determine the best way for your company to get started with passwordless protection.
 
    **Windows Hello for Business**
 
    Windows Hello for Business is ideal for information workers that have their own designated Windows PC. The biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner. With public key infrastructure (PKI) integration and built-in support for single sign-on (SSO), Windows Hello for Business provides a convenient method for seamlessly accessing corporate resources on-premises and in the cloud.
-
-   *image*
-
-   **Microsoft Authenticator**
-
-   You can also allow your employee's phone to become a passwordless authentication method. Microsoft Authenticator turns any iOS or Android phone into a strong, passwordless credential. Users can sign in to any platform or browser by getting a notification to their phone, matching a number displayed on the screen to the one on their phone, and then using their biometric (touch or face) or PIN to confirm. 
 
    *image*
 
@@ -104,25 +100,49 @@ Identify the subtasks of module title.
    FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
 
    *image*
+   
+   **OATH tokens**
+
+   OATH TOTP (Time-based One Time Password) is an open standard that specifies how one-time password (OTP) codes are generated. OATH TOTP can be implemented using either software or hardware to generate the codes. 
+
+   Software OATH tokens are typically applications such as Microsoft Authenticator and other authenticator apps. Azure AD generates the secret key, or seed, that's input into the app and used to generate each OTP. Microsoft Authenticator automatically generates codes when set up to do push notifications so a user has a backup even if their device doesn't have connectivity. 
+
+   OATH-TOTP SHA-1 hardware tokens refresh codes every 30 or 60 seconds. Customers can purchase these tokens from the vendor of their choice. OATH TOTP hardware tokens typically come with a secret key, or seed, pre-programmed in the token. These keys must be input into Azure AD.
+
+   **SMS**
+
+   SMS-based sign-in is often used by Frontline workers. With SMS-based sign-in, users don't need to know a username and password to access applications and services. The user instead enters their registered mobile phone number, receives a text message with a verification code, and enters that in the sign-in interface. SMS authentication is less secure than other methods because SMS messages are not encrypted and they can be intercepted.
+
+   **Voice call**
+
+   Users can also verify themselves using a mobile phone as secondary form of authentication. With phone call verification, an automated voice call is made to the phone number registered by the user. To complete the sign-in process, the user is prompted to press # on their keypad. Like SMS, voice calls are less secure than other authentication methods because they not encrypted and can be intercepted. 
+  
+   ## Authentication method strength and security
+
+   The following table summarizes considerations for Azure AD authentication method. Some users in your environment sign in by using SMS or voice call. Microsoft Authenticator can turn any of their iOS or Android phones into a strong, passwordless credential that is more secure than SMS or voice call. 
+
+   | Authentication method          | Security | Usability | Availability |
+   |--------------------------------|:--------:|:---------:|:------------:|
+   | Windows Hello for Business     | High     | High      | High         |
+   | Microsoft Authenticator app    | High     | High      | High         |
+   | FIDO2 security key             | High     | High      | High         |
+   | OATH hardware tokens (preview) | Medium   | Medium    | High         |
+   | OATH software tokens           | Medium   | Medium    | High         |
+   | SMS                            | Medium   | High      | Medium       |
+   | Voice                          | Medium   | Medium    | Medium       |
+   | Password                       | Low      | High      | High         |
 
    **Getting started**
 
-   After learning about different authentication methods, you need to choose a strategy to achieve company goals to improve sign-in security. To start, you decide to focus on switching employees who complete MFA by using methods like SMS and voice call to a more secure method. 
+   Budget constraints prevent some passwordless options. You can't buy new PCs with Windows Hello for Business or FIDO2 security keys. On the other hand, employees who sign-in with SMS or voice call already have phones that run either Android or iOS. Microsoft Authenticator is a free app that can turn those phones into a strong, passwordless credential that is more secure than SMS or voice call. 
 
-   Budget constraints prevent some passwordless options. You can't buy new PCs with Windows Hello for Business or FIDO2 security keys. On the other hand, employees already have phones that run either Android or iOS. Microsoft Authenticator is a free app they can set up on their phones. 
-
-   You decide to promote Microsoft Authenticator as an easy way for users to start using push notifications for sign-in today. You'll create a *registration campaign* to encourage users to set up Microsoft Authenticator whenever they sign in using another MFA method like Voice call. 
+   You decide to promote Microsoft Authenticator push notifications as an easy way to move users from less secure methods. You'll create a *registration campaign* to nudge users to set up Microsoft Authenticator whenever they sign. 
 
    You want to try out how the registration campaign works for a test user account. After you confirm it works as expected, you plan to run the campaign for the employees who sign in using methods like SMS or Voice call.  
 
-1. Prepare the Microsoft 365 environment
+1. Prepare the environment
 
-   Before enabling a registration campaign, make sure prerequisites are complete. Only users who are enabled for Azure AD MFA will be prompted to register Microsoft Authenticator, so check that Azure AD MFA is enabled for the tenant. The users also need to be enabled to use Microsoft Authenticator for authentication, and the Authentication mode must be set to **Any** or **Push**. Users who already have their Authentication mode set to **Passwordless** are exempt from the registration campaign. Add decision making 
-
-   **Exercise: Verify Azure AD MFA is enabled**
-
-   1. Sign in to the Azure portal as a Global Administrator, click **Azure Active Directory** > **Authentication methods** > **Registration campaign**.
-   1. Click **Manage Security Defaults**, and for **Enable Security defaults**, click **Yes**.
+   Before enabling a registration campaign, make sure prerequisites are complete. Only users who are enabled for Azure AD MFA will be prompted to register Microsoft Authenticator, so check that Azure AD MFA is enabled for the tenant. The users also need to be enabled to use Microsoft Authenticator for authentication, and the Authentication mode must be set to **Any** or **Push**. 
 
    **Exercise: Verify users are enabled for Microsoft Authenticator**
 
@@ -138,7 +158,7 @@ Identify the subtasks of module title.
    - Enable authentication methods for the test user 
 
 
-   There are two ways to enable the the registration campaign. You can use the Azure AD portal, or you can use Graph Explorer for automation. If you use Graph Explorer, you will need to use the Authentication Methods policy to access Graph APIs and consent to allow required permissions. The next exercises cover each option. Include Graph screenshot.
+   You can enable the the registration campaign in the Azure AD portal.
 
    The registration campaign can apply to only a single group, but it can contain other groups. 
 
@@ -154,7 +174,7 @@ Identify the subtasks of module title.
 
 1. **Exercise: Validate the Microsoft Authenticator setup**
 
-   With the registration campaign enabled, let's walk through the user experience to make sure Microsoft Authenticator setup works as expected. Let's create a test user and then sign in from a device that can install Microsoft Authenticator. 
+   With the registration campaign enabled, let's walk through the user experience to make sure Microsoft Authenticator setup works as expected. We'll create a test user and then sign in from a phone that can install Microsoft Authenticator. 
 
    **Create a test user account**
 
@@ -207,9 +227,9 @@ Identify the subtasks of module title.
 
 What types of questions will test the learning objective? [(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)
 
-- What would you use to enable the Authentication Methods policy?
-- Which authentication mode is exempt from the registration campaign?
-- What is the next step after you enable the Authentication Methods policy?
+- Which authentication method is more secure?
+- Which authentication methods are passwordless?
+- After you enable a registration campaign, how can you confirm Microsoft Authenticator is the default sign-in method?
 - What step must a user complete before they can download and set up Microsoft Authenticator?
 - How many days can a user snooze the Microsoft Authenticator setup?
 
@@ -217,12 +237,12 @@ What types of questions will test the learning objective? [(Knowledge check guid
 
    To improve sign-in security, you needed to roll out a low-cost passwordless sign-in strategy to help users move away from signing in with less secure methods like Voice calls or SMS. You chose to create a registration campaign to help users set up Microsoft Authenticator, a free app, and use it as their default method for passwordless sign-in. 
 
-   You made it easy for employees to register Microsoft Authenticator when they sign in using MFA. Now you can target the registration campaign to specific users and groups, and gradually move the company to passwordless sign-in with Microsoft Authenticator for better security. You helped your company take an important step to prevent security breaches. 
+   You made it easy for employees to register Microsoft Authenticator when they sign in using MFA. Now you can target the registration campaign to specific users who sign in using less secure methods, and move them to sign in with Microsoft Authenticator for better security. You helped your company take an important step to prevent security breaches from compromised credentials. 
 
 ## Notes
 
 Note any additional information that may be beneficial to this content such as links, reference material, and so on.
 
 [How to run a registration campaign to set up Microsoft Authenticator](https://docs.microsoft.com/en-us/azure/active-directory/authentication/how-to-mfa-registration-campaign)
-[Enable Passwordless Phone sign-in](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-phone)
-[Plan passwordless authentication](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-deployment)
+[Authentication methods](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
+[Microsoft Authenticator app](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-authenticator-app)
