@@ -24,7 +24,7 @@ The extension is identified by a unique **id** that must be defined during the "
     + In subsequent updates, you can change the **extensionName** to a different value from the **id**
     + In subsequent updates, specifying only the **id** property in the request body automatically deletes the **extensionName** property from the open extension
 
-The **id** property is the only required property in an extension property. You can therefore create an empty open extension, that is, an open extensions with only a name but no properties. For example:
+The **id** property is the only required property in an extension property. You can therefore create an empty open extension, that is, an open extension with only a name but no properties. For example:
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/me/extensions
@@ -59,20 +59,20 @@ You manage open extensions for users as follows:
 + Using a PATCH request, you can either store data in the open extension property, update the stored data, or delete the existing data
     + To delete data from a property in the open extension object, set its value to `null`
     + To update any property in the open extension object, you *must* specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties. Therefore, while you may want to update only the **xboxGamertag**, you must also specify both the **linkedInProfile** and **skypeId** so that the properties and their associated values aren't deleted.
-    + To delete a property from the open extension object, do not pass it in the PATCH request body
+    + To delete a property from the open extension object, don't pass it in the PATCH request body
 + Using the DELETE method, you can delete an open extension object from the user
 
 #### Query capabilities supported by open extension properties
 
-Open extensions do not support any OData query parameters.
+Open extensions don't support any OData query parameters.
 
 Your app must retrieve the open extension and all it's related values then apply client-side filtering and matching to find matches in the data.
 
 ### Considerations for using open extensions
 
-For users and other Microsoft Graph directory objects, you can only have two open extensions per creator app and a maximum of 2Kb of data per open extension.
+For users and other Microsoft Graph directory objects, you can only have two open extensions per creator app and a maximum of 2 Kb of data per open extension.
 
-Deleting a open extension definition does not affect accessing custom data that has been added to resource instances based on that definition.
+Deleting an open extension definition doesn't affect accessing custom data that has been added to resource instances based on that definition.
 
 <!--To validate
 Qs:

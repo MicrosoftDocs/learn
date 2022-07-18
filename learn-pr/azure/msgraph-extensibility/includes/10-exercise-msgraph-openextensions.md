@@ -37,7 +37,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('b41e9d71-0ef4-471e-b2c5-bdc9d84d57e4')/extensions/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('6e03a2db-564a-47ec-ba51-d0cd38af069a')/extensions/$entity",
     "linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn",
     "skypeId": "AdeleV",
     "xboxGamertag": "AwesomeAdele",
@@ -69,7 +69,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 
 ### Other Azure AD scenarios for custom data in directory extension properties
 
-Open extensions and the data they store aren't supported by any additional Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
+Open extensions and the data they store aren't supported by any other Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
 
 ## Conclusion
 

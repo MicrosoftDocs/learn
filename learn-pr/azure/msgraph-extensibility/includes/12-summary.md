@@ -8,7 +8,8 @@
 
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
 -->
-TODO: restate the scenario problem
+
+You want to allow the employees to share their public LinkedIn profile URL, Skype ID, and Xbox gamertag  through the team bonding app. You want to use Microsoft Graph extensions to avoid using a database system.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -27,6 +28,15 @@ TODO: restate the scenario problem
 TODO: add your lead-in sentence(s)
 TODO: add your list of techniques used to solve the scenario problem
 
+You explored the four extensibility options provided by Microsoft Graph to assess the best fit for your current and possible future data needs of the team bonding app. You identified the following patterns for working with each extensibility option:
++ Customization of extension names and properties
++ Permission requirements for users to managing their data via each extension type
++ Syntax of REST API requests for each extension type and their associated data
++ Ease of managing the extensions by grouping extension properties, applying query parameters
++ Additional Azure AD scenarios that the extension properties support
++ Considerations, limitations, and restrictions for each extension type
+
+
 <!-- 3. Describe the experience without the product ---------------------------------------------------
 
     Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)
@@ -37,6 +47,33 @@ TODO: add your list of techniques used to solve the scenario problem
 
  -->
 TODO: describe the experience without the product
+
+Microsoft Graph extensions provide you with a lightweight option to store custom user data without an external data store. The organization can choose one of the extension types that it considers easy to develop with or suitable for current and future needs. Apart from users, other Microsoft Graph resource types may support some of the extensions.
+
+The following table provides a summary of the capabilities provided by the extension options.
+
+| Capability | Extension attributes 1-15 | Directory extensions | Schema extensions | Open extensions |
+|--|--|--|--|--|
+| Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] |
+| Strongly-typed | No | Yes | Yes | No |
+| Filterable | Yes | Yes | Yes | No |
+| Managed via | Microsoft Graph <br/> Exchange admin center | Microsoft Graph | Microsoft Graph | Microsoft Graph |
+| Sync data from on-premises to extensions using [AD connect][] | Yes, for users | [Yes][ADConnect-YES] | No | No |
+| Create [dynamic membership rules][] using custom extension properties and data | [Yes][DynamicMembership-YES] | [Yes][DynamicMembership-YES] | No | No |
+| Usable for customizing token claims | Yes | [Yes][DirectoryExt-CustomClaims] | No | No |
+| Available in Azure AD B2C | Yes | [Yes][B2CDirectoryExt] | Yes | Yes |
+| Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>2</sup> <br/><li> Max. of 2Kb per open extension<sup>2</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>3</sup> |
+
+
+> [!NOTE]
+> 
+> <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
+>
+> <sup>2</sup> These limits on open extensions apply to the following directory resources: **user**, **group**, **device**, <!--**administrativeUnit**,--> and **organization**.
+>
+> <sup>3</sup> Each open extension is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. This limit applies to the following Outlook resources: **message**, **event**, and **contact**
+>
+> You can manage all extensions when you're signed in with a work or school account. Additionally, you can manage open extensions for the following resources when signed-in with a personal Microsoft account: **event**, **post**, **group**, **message**, **contact**, and **user**.
 
 <!-- 4. Describe the business impact ----------------------------------------------------
 
@@ -66,4 +103,9 @@ TODO: describe the business impact
           * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
  -->
 
-<!-- Do not include any other content -->
+## References
+
++ [Add custom data to resources using extensions](/graph/extensibility-overview)
++ [Microsoft Graph directory extensions](/graph/api/resources/extensionproperty)
++ [Microsoft Graph open type extensions](/graph/api/resources/opentypeextension)
++ [Microsoft Graph schema extensions](/graph/api/resources/schemaextension)
