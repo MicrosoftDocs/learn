@@ -34,7 +34,7 @@ Provisioning means various things depending on the industry in which the term is
 
 Once both of those two steps have been completed, we can say that the device has been fully provisioned. Some cloud services only provide the first step of the provisioning process, registering devices to the IoT solution endpoint, but do not provide the initial configuration. The Device Provisioning Service automates both steps to provide a seamless provisioning experience for the device.
 
-## IoT Plug and Play Devices
+## IoT Plug and Play devices
 
 IoT Plug and Play enables device developers to create devices that solution builders can integrate within their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play-enabled application (such as IoT Hub and Azure IoT Central). This model is structured as a set of elements that define:
 
