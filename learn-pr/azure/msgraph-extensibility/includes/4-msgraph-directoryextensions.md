@@ -2,7 +2,7 @@ Microsoft Graph provides four types of extensions for adding custom properties t
 
 In the team bonding app scenario, you want to store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag in their user profiles.
 
-Here, you'll learn how to use the directory extensions to store the three pieces of user data about the employees.
+Here, you'll learn how to use directory extensions to store the three pieces of user data about the employees.
 
 ## Directory (Azure AD) extensions
 
@@ -19,13 +19,7 @@ Before you can use directory extensions, you must define them in an application.
 
 A **directory extension definition** is a simple structure of the directory extension. The definition includes the name and return type and also explicitly allowlists the Azure AD resource types that be assigned the directory extensions. To allow directory extensions to be used to store the three custom data on the user profile, you must specify the **user** resource as a target object.
 
-Directory extension definitions are managed through the **extensionProperties** relationship on an application object and the associated **extensionProperty** resource type in Microsoft Graph. You can read the directory extension definitions in one of the following two ways:
-
-```http
-GET https://graph.microsoft.com/v1.0/applications/{applicationId}/extensionProperties
-
-GET https://graph.microsoft.com/v1.0/applications/{applicationId}?$expand=extensionProperties
-```
+Directory extension definitions are managed through the **extensionProperties** relationship on an application object and the associated **extensionProperty** resource type.
 
 When you create a directory extension definition, Microsoft Graph transforms the extension name that you specified and adds a prefix to create a new extension name. This extension name becomes the name of directory extension property on the target objects. For example, when you specify `linkedInProfile` as an extension name in the request body, the new extension name can be `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`.
 
@@ -36,6 +30,14 @@ Microsoft Graph directory extensions are named following the naming convention:
 Where `{appId-without-hyphens}` is the stripped version of the owner app's **appId** that includes only characters 0-9, A-Z. For example, if the **appId** is `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`, the `{appId-without-hyphens}` becomes `5bfc8fdacfc943a9a6de214ea9d15fd`. This is one way in which directory extensions are closely linked to the owner app.
 
 A directory extension definition maps to *only* one directory extension property with a primitive return type. Therefore, to store the three pieces of data using directory extensions, you must create three directory extension definitions, each with its unique name.
+
+You can read the directory extension definitions in one of the following two ways:
+
+```http
+GET https://graph.microsoft.com/v1.0/applications/{applicationId}/extensionProperties
+
+GET https://graph.microsoft.com/v1.0/applications/{applicationId}?$expand=extensionProperties
+```
 
 After the directory extension definition has been created, it's immediately available for use.
 

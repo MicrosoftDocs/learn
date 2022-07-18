@@ -2,7 +2,7 @@ The third type of extensibility option available for storing custom data in Micr
 
 In the team bonding app scenario, you want to store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag in their user profiles.
 
-Here, you'll learn how to use the schema extensions to store the three pieces of user data about the employees.
+Here, you'll learn how to use schema extensions to store the three pieces of user data about the employees.
 
 ## Schema extensions
 
@@ -126,5 +126,5 @@ Schema extension properties are specially indexed in Microsoft Graph for advance
 
 Deleting a schema extension definition deletes the associated schema extension property and the data it stores.
 
-<!-- This below leaves a schema extension that's references a non-existent owner??-->
+<!-- This statement below leaves a schema extension that references a non-existent owner??-->
 Deleting an owner app does not delete the associated schema extension definition or the schema extension property and the data it stores. The schema extension property can still be read from the resource instances. However, the values that the schema extension object stores cannot be updated.
