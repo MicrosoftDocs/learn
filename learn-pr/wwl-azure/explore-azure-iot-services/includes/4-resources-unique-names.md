@@ -24,7 +24,7 @@ dm210920
 
 Whenever you are expected to use your unique ID, you will see `{your-id}`. You will replace the entire string (including the `{}`) with your unique ID value.
 
-Make a note of your unique ID. If your training is conducted over muliple days, continue to use the same unique ID each day.
+Make a note of your unique ID. If your training is conducted over multiple days, continue to use the same unique ID each day.
 
 Let's review some examples of resources and the names associated with them.
 
