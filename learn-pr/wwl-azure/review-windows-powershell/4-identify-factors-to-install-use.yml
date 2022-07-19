@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-windows-powershell.identify-factors-to-install-use
+title: Identify factors to install and use Windows PowerShell
+metadata:
+  title: Identify factors to install and use Windows PowerShell
+  description: "Identify factors to install and use Windows PowerShell"
+  ms.date: 07/19/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-identify-factors-to-install-use.md)]
