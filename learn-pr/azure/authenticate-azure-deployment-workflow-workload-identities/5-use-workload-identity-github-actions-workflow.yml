@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.grant-workload-identity-access-azure
+uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.use-workload-identity-github-actions-workflow
 title: Grant a workload identity access to Azure
 metadata:
   unitType: learning-content
@@ -13,4 +13,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-grant-workload-identity-access-azure.md)]
+  [!include[](includes/5-use-workload-identity-github-actions-workflow.md)]

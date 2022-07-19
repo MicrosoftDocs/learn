@@ -53,9 +53,8 @@ units:
   - learn.azure.authenticate-azure-deployment-workflow-workload-identities.introduction
   - learn.azure.authenticate-azure-deployment-workflow-workload-identities.understand-workload-identities
   - learn.azure.authenticate-azure-deployment-workflow-workload-identities.create-workload-identity-github-actions-workflow
-  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.exercise-create-workload-identity
   - learn.azure.authenticate-azure-deployment-workflow-workload-identities.grant-workload-identity-access-azure
-  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.exercise-authorize-workload-identity-deployments
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.use-workload-identity-github-actions-workflow
   - learn.azure.authenticate-azure-deployment-workflow-workload-identities.knowledge-check
   - learn.azure.authenticate-azure-deployment-workflow-workload-identities.summary
 badge:
