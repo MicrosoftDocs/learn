@@ -1,115 +1,84 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the project and setup requirements in 1-3 sentences.
-
-    Heading: none
-
-    Pattern: "You'll be <doing> a <thing> that <goal>. Here, we'll discuss the project <big picture>. We'll also cover the <things> you'll need."
-
-    Example: "You'll be <building> a <Logic App> that <determines the sentiment of new tweets and reacts accordingly>. Here, we'll discuss the project <business logic and target behavior>. We'll also cover the <accounts and software> you'll need."
--->
-
-TODO: add your topic sentences(s)
-
-<!-- 2. Project overview -------------------------------------------------------------------------------------
-
-    Goal: Describe the end state of the project and the tasks they'll need to do in their solution. Keep the discussion at a high level and avoid implementation details.
-
-    Structure:
-        1. H2 of "Project overview"
-        1. Lead sentence summarizing project goal(s). Remainder of paragraph describing project behavior in 1-2 sentences.
-        1. One or both of the following:
-            1. Paragraph followed by conceptual diagram or flowchart that captures the conditions the finished project must satisfy.
-            1. Paragraph with a screenshot of the finished project. 
-        1. Lead sentence followed by numbered list of sub-tasks needed to complete the project. You can use the exercise-unit titles as the basis for the list.
-
-    Example:
-        "The goal of the project is to design, build, and test a Logic App that processes tweets. Your app will check Twitter periodically for new tweets about your company. You'll determine whether the sentiment of tweet is positive or negative and branch the app based on the results.
-
-        The following flowchart shows the business logic the app needs to perform:
-            <flowchart>
-
-        You'll map each business rule to a Logic Apps connector and assemble the connectors into an app. The following diagram shows the mapping:
-            <diagram>
-
-        The key tasks you'll need to do are:
-            1. Select the connectors you'll need to implement the business rules.
-            1. Create the app and add a trigger to launch the app when a new tweet is available.
-            1. Use the Azure machine learning analytics service to analyze the text of the tweet.
-            1. Based on the tweet sentiment, you'll either store the tweet in a database or email it to customer service.
--->
+You'll be building a .NET application that imports and queries data in an Azure Cosmos DB SQL API container. Here, we'll discuss the overall goals of the project and how you'll implement the import and query functionality. We'll also cover how to set up your Azure Cosmos DB SQL API account that you'll need.
 
 ## Project overview
 
-Strong lead sentence; remainder of paragraph.
-Visual (e.g. flowchart of business logic)
+This project's goal is to build and validate a .NET console application that uploads and queries items in an Azure Cosmos DB SQL API container. The .NET application will use the .NET SDK for Azure Cosmos DB SQL API to interact with a service instance in Azure. The project code will use transactional batches to create multiple related items simultaneously. The project code will also use SQL queries, represented as strings, to validate that the items were successfully uploaded.
 
-Strong lead sentence; remainder of paragraph.
-Visual (e.g. screenshot of finished project)
+The following flowchart shows the business logic the app needs to perform:
 
-Lead sentence:
-List of sub-tasks
+[![Diagram of a flowchart showing steps to authenticate the client. The flowchart then shows a batch creation step that combines the creation of four individual items. Finally, the flow chart shows the sequence to create, execute, and observe the results of a SQL query.](../media/diagram-flowchart.png)](../media/diagram-flowchart.png)
 
-<!-- 3. Setup -------------------------------------------------------------------------------------
-
-    Goal: Guide the learner though any needed setup such as required accounts or local software installations.
-
-    Structure:
-        1. H2 of "Setup"
-        2. 1 paragraph of text giving a conceptual overview of the needed setup
-        3. One H3 per setup item explaining the need and giving instructions.
-            - Use "Create <service> account" as the H3 for account creation.
-            - Use "Install <product>" as the H3 for software installation.
-            - For setup items beyond accounts and software, use an H3 that follows the "<verb> <item>" pattern.
-
-    Example:
-        "To complete the project, you'll need a Twitter account, an Azure account, and a local installation of Visual Studio Code.
-
-        ### Create Twitter account
-            Your Logic App needs to pull new tweets from Twitter using the Twitter connector. Under the hood, the Twitter connector uses the Twitter API. The Twitter API requires authentication via a username and password, which means that you'll need a Twitter account.
-            1. Go to <link> and create an account.
-            1. Record your username and password, you'll need it later.
-
-        ...
-
-        ### Install Visual Studio Code
-            You'll use Visual Studio Code to create your Logic App. All your work will be done directly in VS Code: connecting to your Azure account, selecting your Azure subscription, and building your app. This section guides you through the installation and setup of VS Code on your local machine.
-            1. Go to <link> and follow the installation steps for your platform.
-            1. Go to <link> and follow the steps to connect to your Azure account from VS Code.
-            1. Go to <link> and follow the steps to select your Azure subscription."
-
-    Note: The "Setup" section is optional. If the project doesn't require any setup, omit this entire section.
-    In that case, also remove the "Project overview" H2 (while leaving the content of that H2) to avoid a page
-    containing a single H2.
--->
+The key tasks you'll need to do are:
+    1. Create an Azure Cosmos DB account and retrieve the connection string.
+    1. Create a .NET console application and import the **Microsoft.Azure.Cosmos** SDK library.
+    1. Authenticate the SDK client using the connection string.
+    1. Create database and container resources.
+    1. Create a transactional batch to add four items.
+    1. Create, execute, and observe the results of a SQL query.
 
 ## Setup
 
-Strong lead sentence stating the categories of what's needed: accounts, software, etc.
-Remainder of paragraph if needed.
+To complete this project, you'll need an Azure Cosmos DB SQL API account.
 
 ### Create Azure Cosmos DB SQL API account
 
-Strong lead sentence stating the required account.
-Remainder of paragraph explaining why this is needed and what it will be used for.
-Inline instructions or link to setup instructions.
+The Azure Cosmos DB SQL API account will be used to store the data you create in this project and to execute queries. All your work in this project will be done directly in the Azure Cloud Shell terminal. This section guides you through the steps to creating a new account using the Azure CLI directly in the terminal.
 
-```azurecli
-let suffix=$RANDOM*$RANDOM
+1. Create a new shell variable named **suffix** with a random number and then output the number to the console.
 
-resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-accountName="mslearn-$suffix"
-location="westus"
-```
+    ```azurecli
+    let suffix=$RANDOM*$RANDOM
+    
+    echo $suffix
+    ```
 
-```azurecli
-az cosmosdb create \
-    --resource-group $resourceGroup \
-    --name $accountName \
-    --locations regionName=$location
-```
+1. Create another shell variable named **accountName** that appends the randomly generated suffix to ``mslearn-`` and then outputs the result.
+
+    ```azurecli
+    accountName="mslearn-$suffix"
+    
+    echo $accountName
+    ```
+
+1. Create two more shell variables for ``resourceGroup`` and ``location`` with the values prescribed here.
+
+    ```azurecli
+    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+    location="westus"
+    ```
+
+    > [!NOTE]
+    > The sandbox will automatically create a resource group for you with the name specified in this code sample.
+
+1. Create a new Azure Cosmos DB SQL API account using the three shell variables you created.
+
+    ```azurecli
+    az cosmosdb create \
+        --resource-group $resourceGroup \
+        --name $accountName \
+        --locations regionName=$location
+    ```
+
+1. Wait for the command to complete once the new account is created.
+
+    > [!NOTE]
+    > Creating a new account can take a couple of minutes.
 
 ### Get account connection string
+
+Now that you have an Azure Cosmos DB SQL API account, you can use the ``az cosmosdb keys list`` command from the Azure CLI to get credentials. In this section, you'll filter the output of the command to only return a single connection string.
+
+1. First, list all of the credentials available for this account. Use the ``--type`` parameter to only return connection strings.
+
+```azurecli
+az cosmosdb keys list \
+    --resource-group $resourceGroup \
+    --name $accountName \
+    --type connection-strings \
+    --output table
+```
+
+1. Now, add the ``--query`` parameter to filter to specifically the ``Primary SQL Connection String``.
 
 ```azurecli
 az cosmosdb keys list \
@@ -120,6 +89,4 @@ az cosmosdb keys list \
     --output tsv
 ```
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+1. Record the value of this connection string. You'll use the connection string later in this project.
