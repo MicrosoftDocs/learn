@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/28/2022
+  ms.date: 07/19/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "When you are designing data models for scalability, what is the most efficient approach for data transformation?"
+  - content: "What is the most efficient approach for data transformation when designing data models for scalability?"
     choices:
     - content: "Data transformation should always be done using Power Query in Power BI."
       isCorrect: false
@@ -30,15 +30,15 @@ quiz:
       explanation: "Incorrect. DAX isn't the most efficient approach for data transformation."
   - content: "Which of the following best practices for Power BI data modeling is relevant only to DirectQuery models?"
     choices:
-    - content: "Limit the number of data transformations."
+    - content: "Set relationships to enforce integrity using the assume referential integrity property on relationships."
       isCorrect: true
-      explanation: "Correct. Complex transformations in Power Query can lead to errors."
+      explanation: "Correct. Setting the assume referential integrity setting on relationships enables more efficient queries against your data source in DirectQuery."
     - content: "Use a star schema as opposed to wide tables."
       isCorrect: false
       explanation: "Incorrect. The use of a star schema isn't only relevant to DirectQuery models."
     - content: "Disable auto date/time in Power BI Desktop."
       isCorrect: false
-      explanation: "Incorrect. Disabling auto date/time isn't relevant to DirectQuery models."
+      explanation: "Incorrect. Disabling auto date/time isn't only relevant to DirectQuery models."
   - content: "What are the data model size limits on a dataset with large dataset storage format determined by?"
     choices:
     - content: "Power BI Premium 10 GB size limit."
