@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-command-syntax-windows-powershell.display-about-files-content-powershell
+title: Display the About files content in PowerShell
+metadata:
+  title: Display the About files content in PowerShell
+  description: "Display the About files content in PowerShell"
+  ms.date: 07/19/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-display-about-files-content-powershell.md)]
