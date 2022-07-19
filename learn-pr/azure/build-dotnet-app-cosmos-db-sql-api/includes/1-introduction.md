@@ -12,7 +12,7 @@ The SDK is available using the NuGet package manager and is also open-source on 
 
 Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they imported. The application you'll build will add multiple items using the .NET SDK for Azure Cosmos DB SQL API. Although the version you build in this project is the first version of the application, you'll try to use the documented best practices when using the SDK.
 
-[![Illustration of icons indicating data being uploaded to the cloud and then queried using common search techniques.](../media/project-visual.jpg)](../media/project-visual.jpg)
+[![Illustration of icons indicating data being uploaded to the cloud and then queried using common search techniques.](../media/project-visual.png)](../media/project-visual.png)
 
 ## What will we be doing?
 

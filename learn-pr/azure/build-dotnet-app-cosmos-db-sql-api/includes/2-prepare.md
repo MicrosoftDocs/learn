@@ -16,6 +16,9 @@ The key tasks you'll need to do are:
     1. Create a transactional batch to add four items.
     1. Create, execute, and observe the results of a SQL query.
 
+> [!IMPORTANT]
+> All steps in this project are designed to be completed within the Azure Cloud Shell terminal.
+
 ## Setup
 
 To complete this project, you'll need an Azure Cosmos DB SQL API account.
