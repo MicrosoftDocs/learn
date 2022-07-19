@@ -13,7 +13,6 @@ title: Monitor and report on authentication methods used in Azure AD
 summary: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."
 abstract: |
   By the end of this module, you'll be able to:
-
 - Choose the right activity logs.
 - Route your activity logs to a different endpoint.
 - Write queries to retrieve the activity data you need.
