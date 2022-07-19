@@ -15,7 +15,7 @@ summary: |
   Connect to an Azure Cosmos DB SQL API account using C# and .NET to perform common operations. Your code will create resources, coordinate multiple operations, and query items using SQL.
   
   > [!NOTE]
-  > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
+  > This module is a **_Guided Project_** where you complete an end-to-end project by following step-by-step instructions.
 abstract: |
    In this module, you'll practice how to:
     - Connect to an Azure Cosmos DB SQL API account using the .NET SDK
