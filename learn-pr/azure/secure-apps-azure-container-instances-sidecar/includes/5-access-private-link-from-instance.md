@@ -19,8 +19,6 @@ DNS plays a critical role in the functionality required, since the system access
     az network vnet subnet create --resource-group $rg --vnet-name $vnet_name \
         --name $sql_subnet_name --address-prefix $sql_subnet_prefix \
         --disable-private-endpoint-network-policies true
-    az network vnet subnet update --name $sql_subnet_name --resource-group $rg \
-        --vnet-name $vnet_name
     # SQL Server private endpoint
     sql_endpoint_name=sqlep
     sql_server_id=$(az sql server show --name $sql_server_name --resource-group $rg --output tsv --query id)
