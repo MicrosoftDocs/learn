@@ -275,7 +275,7 @@ Now that your database and GitHub repository are configured, it's time to deploy
     ```powershell
     $functionApp = New-AzFunctionApp -Name $azureFunctionName `
         -ResourceGroupName $resourceGroupName -StorageAccount $storageAccountName `
-        -FunctionsVersion 3 -RunTimeVersion 12 -Runtime node -Location $location
+        -FunctionsVersion 4 -RunTimeVersion 16 -Runtime node -Location $location
     ```
 
     ::: zone-end
