@@ -3,7 +3,7 @@ uid: learn.wwl.govern-data-across-enterprise
 metadata:
   title: Govern data across an enterprise
   description: Govern data across an enterprise
-  ms.date: 07/18/2022
+  ms.date: 07/19/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   Familiarity with the Azure data ecosystem.
 summary: |
   Use Microsoft Purview to register and scan data, catalog data artifacts, find data for reporting, and manage Power BI artifacts to improve data governance in your organization.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/govern-data-across-an-enterprise.svg
 levels:
 - intermediate
 roles:
