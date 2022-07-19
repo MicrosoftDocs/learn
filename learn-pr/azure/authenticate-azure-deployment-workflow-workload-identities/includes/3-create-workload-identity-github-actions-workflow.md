@@ -1,10 +1,16 @@
-<!-- TODO re-scope to creating app and federated credential -->
-
 Now that you understand the concept of a workload identity, you might wonder how you create one and link it to a GitHub Actions workflow. In this unit, you'll learn about the steps required to create a workload identity and link it to a GitHub Actions deployment workflow.
 
 ## Create a Azure Active Directory application
 
 In the previous unit, you learned that workload identities require creating an *application registration* in Azure Active Directory (Azure AD).
+
+When you create an application registration, you need to specify a display name. The display name is a human-readable name that describes the application registration.
+
+> [!TIP]
+> Use a clear, descriptive display name for your application registration. It's important to help your team understand what the application registration is for, so that nobody accidentally deletes it or changes its permissions.
+
+> [!CAUTION]
+> A display name isn't unique. Multiple application registrations might share the same display name. Be careful when you grant permissions to a application registrations by using its display name to identify it. You might accidentally give permissions to the wrong application registrations. It's a good practice to use one of the unique identifiers instead.
 
 ::: zone pivot="cli"
 
@@ -30,13 +36,6 @@ The output of the preceding command includes a few important pieces of informati
 
 - **Application ID**: The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You use this when your workflow needs to sign in to Azure.
 - **Object ID**: The application registration has an object IDs, which is a unique identifier assigned by Azure AD. You'll see an example of how to use an object ID later in this module.
-- **Display name**: This is a human-readable name that describes the application registrations.
-
-> [!TIP]
-> Use a clear, descriptive display name for your application registration. It's important to help your team understand what the application registration is for, so that nobody accidentally deletes it or changes its permissions.
-
-> [!CAUTION]
-> A display name isn't unique. Multiple application registrations might share the same display name. Be careful when you grant permissions to a application registrations by using its display name to identify it. You might accidentally give permissions to the wrong application registrations. It's a good practice to use one of the unique identifiers instead.
 
 When you create an application registration, you typically only set the display name. Azure assigns the other names and identifiers automatically.
 
@@ -126,14 +125,25 @@ $federatedCredential = New-AzADAppFederatedIdentityCredential `
 
 ## Configure your GitHub Actions workflow
 
-TODO
+Your GitHub Actions workflow definition needs to include two changes when you use a workload identity.
+
+First, you need to allow your workflow to request sign-in tokens from Azure AD. In your workflow definition you add the `permissions` property:
 
 ```yaml
-# Allow the workflow to request a token from Azure Active Directory.
 permissions:
   id-token: write
   contents: read
+```
 
+Next, when you need your workflow to sign in to Azure, you use the `azure/login` action as normal. But, instead of providing any secrets, you specify three properties:
+
+| Property | Description |
+|-|-|
+| `client-id` | The application ID for the application registration. Ensure you use the application ID and not the object ID. |
+| `tenant-id` | The unique identifier for your Azure AD tenant (directory). |
+| `subscription-id` | The Azure subscription ID that you'll deploy to. |
+
+```yaml
 # Login step
 - uses: azure/login@v1
   with:
@@ -141,6 +151,10 @@ permissions:
     tenant-id: ${{ secrets.AZURE_TENANT_ID }}
     subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 ```
+
+The following workflow definition shows a complete Bicep deployment workflow:
+
+TODO
 
 <!-- TODO
 
