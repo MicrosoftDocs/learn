@@ -1,82 +1,46 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
+Now you can create the various resources; such as databases, containers, and items; that you will use in your Azure Cosmos DB account. For this project, you will create a database named **cosmicworks** with a single container named **products**. You need to make sure that the code won't crash trying to re-create a container if you run this console applicaton multiple times. 
 
-    Goal: Describe the part of the scenario covered in this exercise.
+The products container will contain both the individual *product* items and special *category* items for each category. There's two cases you want to handle in this application:
 
-    Heading: none
+- If a category is empty, it's fine to just create that category's item individually. There are no related product items to create.
+- However, if a category has related products, you will want to create the category item and the related product items simultaneously.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+Right now, you have a few key requirements:
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
+1. Create a database if it doesn't already exist
+1. Create a container if it doesn't already exist
+1. Create an item individually as a single operation
+1. Use a transactional batch to create multiple related items
 
-TODO: add your scenario sub-task
+[![Illustration of icons indicating data being uploaded to the cloud.](../media/project-visual-upload.png)](../media/project-visual-upload.png)
 
-TODO: add your scenario image
+After you complete this exercise, your project will create any databases or containers it requires to execute. You will also have built the logic to create items in your container either individually, or as a batch.
 
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
+## Re-initialize your environment (optional)
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+It's possible, if you closed your Azure Cloud Shell terminal pane, for the terminal instance to no longer have access to the environment variable and code editor. Here, if needed, you will set your environment variable again and open the code editor.
 
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
+> [!NOTE]
+> You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-
-TODO: describe the end-state
-
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-
-<!-- Introduction paragraph -->
-
-1. Save connection string as environment
+1. Set the environment variable named ``COSMOS_CONNECTION_STRING`` to the value of this command which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
-    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-
-    accountName=$(az cosmosdb list --resource-group $resourceGroup --query [0].name --output tsv)
-    
-    connectionString=$(az cosmosdb keys list --name $accountName --resource-group $resourceGroup --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
+    export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
+        --name $(az cosmosdb list \
+            --resource-group <rgn>[sandbox resource group name]</rgn> \
+            --query [0].name \
+            --output tsv) \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --type connection-strings \
+        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
+        --output tsv)
     ```
 
-1. Set environment variable
-
-    ```azurecli
-    export COSMOS_CONNECTION_STRING=$connectionString
-    ```
-
-1. <!-- Step 2 -->
+1. Change to the ``~/clouddrive/inventorytool`` directory and open a code editor.
 
     ```bash
-    cd ~/clouddrive/inventorytool
-    ```
-
-1. <!-- Step n -->
-
-    ```bash
-    code .
+    cd ~/clouddrive/inventorytool && code .
     ```
 
 ## (Chunk n heading)
@@ -87,7 +51,8 @@ TODO: describe the end-state
 
     ```csharp
     Database database = await client.CreateDatabaseIfNotExistsAsync(
-        id: "AdventureWorks"
+        id: "cosmicworks",
+        throughput: 600
     );
     ```
 
@@ -99,7 +64,7 @@ TODO: describe the end-state
 
     ```csharp
     Container container = await database.CreateContainerIfNotExistsAsync(
-        id: "Products",
+        id: "products",
         partitionKeyPath: "/categoryId",
         throughput: 400
     );
@@ -109,25 +74,79 @@ TODO: describe the end-state
     Console.WriteLine($"[Container created]:\t{container.Id}");
     ```
 
+1. **Save** the **Program.cs** file.
+
 1. <!-- Step n -->
 
-<!-- 4. Validation -------------------------------------------------------------------------------------------
+## (Chunk n heading)
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
+<!-- Introduction paragraph -->
 
-    Structure:
-        1. H2 of "Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+1. <!-- Step n -->
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+    ```bash
+    touch Category.cs
+    ```
+
+1. <!-- Step n -->
+
+    ```bash
+    code .
+    ```
+
+1. <!-- Step n -->
+
+    ```csharp
+    public record Category(
+        string id,
+        string categoryId
+    );
+    ```
+
+1. <!-- Step n -->
+
+    ```bash
+    touch Product.cs
+    ```
+
+1. <!-- Step n -->
+
+    ```bash
+    code .
+    ```
+
+1. <!-- Step n -->
+
+    ```csharp
+    public record Product(
+        string id, 
+        string categoryId, 
+        string name, 
+        decimal price, 
+        bool archived, 
+        int quantity
+    );
+    ```
+
+## (Chunk n heading)
+
+<!-- Introduction paragraph -->
+
+1. <!-- Step 1 -->
+
+    ```csharp
+
+    ```
+
+## (Chunk n heading)
+
+<!-- Introduction paragraph -->
+
+1. <!-- Step 1 -->
+
+    ```csharp
+
+    ```
 
 ## Check your work
 
@@ -139,8 +158,107 @@ TODO: describe the end-state
     dotnet run
     ```
 
-Optional "exercise-solution" video
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-<!-- Do not add a unit summary or references/links -->
+
+Taking a break
+
+```csharp
+using Microsoft.Azure.Cosmos;
+
+string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+
+Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+
+using CosmosClient client = new(
+    connectionString: cosmosConnectionString
+);
+
+Console.WriteLine("[Client connected]");
+
+Database database = await client.CreateDatabaseIfNotExistsAsync(
+    id: "cosmicworks",
+    throughput: 400
+);
+
+Console.WriteLine($"[Database created]:\t{database.Id}");
+
+Container container = await database.CreateContainerIfNotExistsAsync(
+    id: "products",
+    partitionKeyPath: "/categoryId",
+    throughput: 400
+);
+
+Console.WriteLine($"[Container created]:\t{container.Id}");
+
+Category helmets = new (
+    id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
+    categoryId: "gear-climb-helmets"
+);
+
+PartitionKey helmetsKey = new ("gear-climb-helmets");
+ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
+
+Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
+
+Category tents = new (
+    id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
+    categoryId: "gear-camp-tents"
+);
+
+Product cirroa = new (
+    id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
+    categoryId: "gear-camp-tents",
+    name: "Cirroa Tent", 
+    price: 490.00m, 
+    archived: false, 
+    quantity: 15
+);
+
+Product kuloar = new (
+    id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+    categoryId: "gear-camp-tents",
+    name: "Kuloar Tent", 
+    price: 530.00m, 
+    archived: false, 
+    quantity: 8
+);
+
+Product mammatin = new (
+    id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
+    categoryId: "gear-camp-tents",
+    name: "Mammatin Tent", 
+    price: 0m, 
+    archived: true, 
+    quantity: 0
+);
+
+Product nimbolo = new (
+    id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+    categoryId: "gear-camp-tents",
+    name: "Nimbolo Tent", 
+    price: 330.00m, 
+    archived: false, 
+    quantity: 35
+);
+
+PartitionKey tentsKey = new ("gear-camp-tents");
+TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
+    .UpsertItem<Category>(tents)
+    .UpsertItem<Product>(cirroa)
+    .UpsertItem<Product>(kuloar)
+    .UpsertItem<Product>(mammatin)
+    .UpsertItem<Product>(nimbolo);
+
+Console.WriteLine("[Batch started]");
+
+using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
+
+for (int i = 0; i < batchResponse.Count; i++)
+{
+    TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
+    Console.WriteLine($"[New item created]:\t{result.Resource.id}\t(Type: {result.Resource.type})");
+}
+
+Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
+```

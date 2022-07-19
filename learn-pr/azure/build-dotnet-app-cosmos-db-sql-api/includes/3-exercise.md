@@ -162,7 +162,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
 
 ## Check your work
 
-The application is now ready to run and connect to Azure Cosmos DB SQL API. Here, you'll compare your application code to our sample. Then, you'll check that your application works as expected.
+The application is now ready to run and connect to Azure Cosmos DB SQL API. Here, you'll compare your application code to our sample. Then, you'll check that your application works as expected by running the code.
 
 1. Review the **inventorytool.csproj** project file to ensure that the project configuration matches this sample.
 

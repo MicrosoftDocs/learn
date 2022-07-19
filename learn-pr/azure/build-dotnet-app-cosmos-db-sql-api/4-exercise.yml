@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-second
-title: Enter exercise title
+title: Exercise - Create SQL API account and resources
 metadata:
   unitType: exercise
-  title: exercise
+  title: Exercise - Create SQL API account and resources
   description: |
-    TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords.
+    Create a new container and database using the Microsoft.Azure.Cosmos .NET SDK library.
   sandbox: true
   interactive: bash-editor
   author: seesharprun
