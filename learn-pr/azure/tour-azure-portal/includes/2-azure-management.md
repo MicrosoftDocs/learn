@@ -13,9 +13,9 @@ The [Azure portal](https://portal.azure.com) is a public website you can access 
 
 ![Screenshot of the Azure portal showing the left-hand navigation and suggested Azure services.](../media/2-azure-portal.png)
 
-The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles and displaying services you're interested in.
+The dashboard view provides high-level details about your Azure environment. You can customize the dashboard by moving and resizing tiles and displaying services you're interested in. We'll cover dashboards later in this module.
 
-The portal doesn't provide any way to automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time by completing the wizard for each VM. This process makes the portal approach time-consuming and error-prone for complex tasks.
+The portal doesn't provide any way to automate repetitive tasks. For example, to set up multiple VMs, you would need to create them one at a time by completing the wizard for each VM. This process makes the portal approach less ideal for complex tasks.
 
 ## Azure PowerShell
 
@@ -31,7 +31,7 @@ New-AzVM `
     ...
 ```
 
-Creating administration scripts and using automation tools is a powerful way to optimize your workflow. You can automate repetitive tasks. Once a script is verified, it runs consistently, which can reduce errors. Another scripting environment is the Azure CLI.
+Creating administration scripts and using automation tools is a powerful way to optimize your workflow. You can automate repetitive tasks. Once a script is verified, it runs consistently, which can reduce errors. 
 
 ## Azure CLI
 
@@ -104,7 +104,6 @@ The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to a
 - Connect to your virtual machines
 - Manage permissions with role-based access control (RBAC)
 - Use the Azure Cloud Shell to run saved scripts or perform ad hoc administrative tasks
-- and more...
   :::column-end:::
 :::row-end:::
 
