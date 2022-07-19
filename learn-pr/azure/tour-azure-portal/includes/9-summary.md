@@ -1,4 +1,4 @@
-We've covered lots of ground in this module.
+We've covered a lot of ground in this module.
 
 - You learned how to sign into Azure using an Azure account.
 - You reviewed the features of the Azure portal and its customization options.
