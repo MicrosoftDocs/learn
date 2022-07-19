@@ -9,7 +9,10 @@
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
 TODO: add your scenario sub-task
-TODO: add your scenario image
+
+[![Illustration of icons indicating data being queried using common search techniques.](../media/project-visual-query.png)](../media/project-visual-query.png)
+
+After you complete this exercise,
 
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-fourth
-title: Enter exercise title
+title: Exercise - Enumerate items using language-integrated query (LINQ)
 metadata:
   unitType: exercise
-  title: exercise
+  title: Exercise - Enumerate items using language-integrated query (LINQ)
   description: |
     TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords.
   sandbox: true
