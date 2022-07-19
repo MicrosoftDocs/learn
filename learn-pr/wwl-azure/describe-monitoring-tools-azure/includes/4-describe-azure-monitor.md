@@ -44,5 +44,3 @@ Once Application Insights is up and running, you can use it to monitor a broad a
  -  Performance counters from Windows or Linux server machines, such as CPU, memory, and network usage
 
 Not only does Application Insights help you monitor the performance of your application, but you can also configure it to periodically send synthetic requests to your application, allowing you to check the status and monitor your application even during periods of low activity.
-
-The following image shows a potential configuration of Application Insights monitoring a web application and providing that information to other services for analysis:
