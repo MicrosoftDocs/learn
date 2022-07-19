@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.find-commands-get-help-windows-powershell.interpret-help-file-contents-update-local-help-content-powershell
+title: Interpret the help-file contents and update the local help content in PowerShell
+metadata:
+  title: Interpret the help-file contents and update the local help content in PowerShell
+  description: "Interpret the help-file contents and update the local help content in PowerShell"
+  ms.date: 07/19/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-interpret-help-file-contents-update-local-help-content-powershell.md)]
