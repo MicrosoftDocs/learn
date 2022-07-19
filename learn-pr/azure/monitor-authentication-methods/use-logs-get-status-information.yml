@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-authentication-methods.2-use-logs-get-status-information
+uid: learn.monitor-authentication-methods.use-logs-get-status-information
 title: Use logs to get status information
 metadata:
   unitType: learning-content
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 20
 content: |
-  [!include[](includes/2-use-logs-get-status-information.md)]
+  [!include[](includes/use-logs-get-status-information.md)]
 quiz:
   title: Check your knowledge
   questions:
