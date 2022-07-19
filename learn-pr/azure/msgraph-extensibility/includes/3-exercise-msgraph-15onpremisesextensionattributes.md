@@ -273,10 +273,6 @@ Content-type: application/json
 
 And you've confirmed that the Xboxers group is now open for collaboration!
 
-## Customize tokens using data in extension attribute properties
-
-
-
 ## Conclusion
 
 You have used Microsoft Graph extension attribute properties to store three custom values. You've seen how to:

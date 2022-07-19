@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Explore Microsoft Graph extensions as a way to add custom data to Microsoft Graph that you can use to further customize your app-specific needs."
   ms.date: 06/24/2022
   author: FaithOmbongi
   ms.author: ombongifaith
@@ -28,39 +28,28 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What extension options support using the stored data for Azure AD scenarios like dynamic groups and custom claims?"
     choices:
+    - content: "15 extension attributes, directory extensions, schema extensions, and open extensions"
+      isCorrect: false
+      explanation: "Try again. Not all extension types support using their data to extend Azure AD scenarios."
+    - content: "Directory extensions and schema extensions"
+      isCorrect: false
+      explanation: "Try again. Schema extensions don't support using the data to extend Azure AD scenarios."
+    - content: "15 extension attributes and directory extensions"
+      isCorrect: true
+      explanation: "Correct. Only the 15 extension attributes and directory extensions support Azure AD scenarios."
+  - content: "Which one of the following statements is true about extension options available in Microsoft Graph?"
+    choices:
+    - content: "Extension options in Microsoft Graph support query capabilities to allow matching against the data they store."
+      isCorrect: false
+      explanation: "Try again. Open extensions don't support any query capabilities."
     - content: ""
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. "
+    - content: "Extension options in Microsoft Graph allow using custom property names that can easily identify with the custom data."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."
   - content: ""
     choices:
     - content: ""

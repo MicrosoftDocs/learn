@@ -321,12 +321,6 @@ HTTP/1.1 204 No Content
 After a few seconds to allow Azure AD to complete synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group.
 
 
-## Customize tokens using data in directory extension properties
-
-
-
-
-
 ## Conclusion
 
 You have used Microsoft Graph directory extension properties to store three custom values. You've seen how to:
