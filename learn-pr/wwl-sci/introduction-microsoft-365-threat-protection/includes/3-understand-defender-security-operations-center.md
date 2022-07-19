@@ -33,7 +33,7 @@ We'll start with handling reactive alerts – which begins with
     - **Tool Integration** - One of the most powerful time saving technologies that improved time to remediation in Microsoft’s CDOC is the integration of XDR tools together into Microsoft 365 Defender so analysts have a single console for endpoint, email, identity, and more. This integration enables analysts to rapidly discover and clean up attacker phishing emails, malware, and compromised accounts before they can do significant damage. 
     - **Focus** - These teams can't maintain their high speed of resolution for all types of technologies and scenarios, so they keep their focus narrow on a few technical areas and/or scenarios. Most often this is on user productivity, like email, endpoint AV alerts (versus EDR that goes into investigations), and first response for user reports. 
 
-### Investigation and Incident Management
+### Investigation and Incident Management (Tier 2)
 
 This team serves as escalation point for issues from Triage (Tier 1) and directly monitors alerts that indicate a more sophisticate attacker that trigger behavioral alerts, special case alerts related to business-critical assets, and monitoring for ongoing attack campaigns. Proactively, this team also periodically reviews the Triage team alert queue and may proactively hunt using XDR tools in their spare time. 
 
