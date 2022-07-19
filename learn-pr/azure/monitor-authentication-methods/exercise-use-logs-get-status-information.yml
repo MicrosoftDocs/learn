@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-authentication-methods.2a-exercise-use-logs-get-status-information
+uid: learn.monitor-authentication-methods.exercise-use-logs-get-status-information
 title: Exercise - Access sign-in logs directly
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 15
 content: |
-  [!include[](includes/2a-exercise-use-logs-get-status-information.md)]
+  [!include[](includes/exercise-use-logs-get-status-information.md)]

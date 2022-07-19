@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-authentication-methods.5a-exercise-create-azure-ad-workbook
+uid: learn.monitor-authentication-methods.exercise-create-azure-ad-workbook
 title: Exercise - Create an Azure AD workbook
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 25
 content: |
-  [!include[](includes/5a-exercise-create-azure-ad-workbook.md)]
+  [!include[](includes/exercise-create-azure-ad-workbook.md)]

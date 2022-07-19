@@ -62,5 +62,3 @@ Other common filter commands include:
 You can use many other commands to build queries. 
 
 To learn more about queries and filters, see the references at the end of this module.
-
-In the next units, you'll connect to a dataset and learn about some of the most commonly used operators. Then you'll use the operators to answer questions about a sample dataset that contains US meteorological data.

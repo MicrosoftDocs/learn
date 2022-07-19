@@ -121,16 +121,16 @@ subjects:
 ### The units will be populated automatically during scaffold generation.
 ###
 units:
-- learn.monitor-authentication-methods.1-introduction
-- learn.monitor-authentication-methods.2-use-logs-get-status-information
-- learn.monitor-authentication-methods.2a-exercise-use-logs-get-status-information
-- learn.monitor-authentication-methods.3-integrate-logs-with-log-analytics
-- learn.monitor-authentication-methods.3a-exercise-integrate-logs-with-log-analytics
-- learn.monitor-authentication-methods.4-write-kql-queries
-- learn.monitor-authentication-methods.4a-exercise-write-kql-queries
-- learn.monitor-authentication-methods.5-create-azure-ad-workbook
-- learn.monitor-authentication-methods.5a-exercise-create-azure-ad-workbook
-- learn.monitor-authentication-methods.6-knowledge-check
+- learn.monitor-authentication-methods.introduction
+- learn.monitor-authentication-methods.use-logs-get-status-information
+- learn.monitor-authentication-methods.exercise-use-logs-get-status-information
+- learn.monitor-authentication-methods.integrate-logs-with-log-analytics
+- learn.monitor-authentication-methods.exercise-integrate-logs-with-log-analytics
+- learn.monitor-authentication-methods.write-kql-queries
+- learn.monitor-authentication-methods.exercise-write-kql-queries
+- learn.monitor-authentication-methods.create-azure-ad-workbook
+- learn.monitor-authentication-methods.exercise-create-azure-ad-workbook
+- learn.monitor-authentication-methods.knowledge-check
 - learn.monitor-authentication-methods.summary
 ###########################################################################
 ###

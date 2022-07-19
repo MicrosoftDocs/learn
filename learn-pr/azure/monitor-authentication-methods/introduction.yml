@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-authentication-methods.1-introduction
+uid: learn.monitor-authentication-methods.introduction
 title: Introduction
 metadata:
   unitType: introduction
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/introduction.md)]

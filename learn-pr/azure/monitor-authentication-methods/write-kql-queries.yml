@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-authentication-methods.5-create-azure-ad-workbook
-title: Create an Azure AD workbook
+uid: learn.monitor-authentication-methods.write-kql-queries
+title: Write KQL queries
 metadata:
   unitType: learning-content
-  title: Create an Azure AD workbook
-  description: Create an Azure AD workbook
+  title: Write KQL queries
+  description: Write KQL queries
   ms.date: 06/06/2022
   author: MarkusVi
   ms.author: markvi
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 20
 content: |
-  [!include[](includes/5-create-azure-ad-workbook.md)]
+  [!include[](includes/write-kql-queries.md)]

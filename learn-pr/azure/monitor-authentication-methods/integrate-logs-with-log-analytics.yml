@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.monitor-authentication-methods.3-integrate-logs-with-log-analytics
+uid: learn.monitor-authentication-methods.integrate-logs-with-log-analytics
 title: Integrate logs with Log Analytics
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 20
 content: |
-  [!include[](includes/3-integrate-logs-with-log-analytics.md)]
+  [!include[](includes/integrate-logs-with-log-analytics.md)]
