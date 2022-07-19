@@ -36,7 +36,6 @@ languages:
 products:
   - azure
   - azure-active-directory
-  - azure-devops
   - azure-resource-manager
   - github
 subjects:
