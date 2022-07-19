@@ -62,7 +62,7 @@ Clusters and silos are configured in the *Program.cs* class of your project as p
 builder.Host.UseOrleans(siloBuilder =>
 {
     siloBuilder.UseLocalhostClustering();
-    siloBuilder.AddAzureBlobGrainStorage("urls",
+    siloBuilder.AddAzureBlobGrainStorage("shopping",
         options =>
         {
             options.ConfigureBlobServiceClient(new Uri("https://<your-account-name>.blob.core.windows.net"),
