@@ -113,8 +113,8 @@ The preceding string specifies that the federated credential should only be vali
 After you've created a policy string, you can use Azure PowerShell to create the federated credential:
 
 ```azurepowershell
-$federatedCredential = New-AzADAppFederatedIdentityCredential `
-    -Name $federationName `
+New-AzADAppFederatedIdentityCredential `
+    -Name 'MyFederatedCredential' `
     -ApplicationObjectId $applicationRegistrationObjectId `
     -Issuer 'https://token.actions.githubusercontent.com' `
     -Audience 'api://AzureADTokenExchange' `
