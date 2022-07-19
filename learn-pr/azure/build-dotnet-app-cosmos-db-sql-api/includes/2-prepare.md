@@ -73,23 +73,23 @@ Now that you have an Azure Cosmos DB SQL API account, you can use the ``az cosmo
 
 1. First, list all of the credentials available for this account. Use the ``--type`` parameter to only return connection strings.
 
-```azurecli
-az cosmosdb keys list \
-    --resource-group $resourceGroup \
-    --name $accountName \
-    --type connection-strings \
-    --output table
-```
+    ```azurecli
+    az cosmosdb keys list \
+        --resource-group $resourceGroup \
+        --name $accountName \
+        --type connection-strings \
+        --output table
+    ```
 
 1. Now, add the ``--query`` parameter to filter to specifically the ``Primary SQL Connection String``.
 
-```azurecli
-az cosmosdb keys list \
-    --resource-group $resourceGroup \
-    --name $accountName \
-    --type connection-strings \
-    --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
-    --output tsv
-```
+    ```azurecli
+    az cosmosdb keys list \
+        --resource-group $resourceGroup \
+        --name $accountName \
+        --type connection-strings \
+        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
+        --output tsv
+    ```
 
 1. Record the value of this connection string. You'll use the connection string later in this project.

@@ -1,95 +1,44 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
+TODO
 
-    Goal: Describe the part of the scenario covered in this exercise.
-
-    Heading: none
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
 TODO: add your scenario sub-task
 
 [![Illustration of icons indicating data being queried using common search techniques.](../media/project-visual-query.png)](../media/project-visual-query.png)
 
-After you complete this exercise,
+After you complete this exercise, TODO
 
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
+## Re-initialize your environment (optional)
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+It's possible, if you closed your Azure Cloud Shell terminal pane, for the terminal instance to no longer have access to the environment variable and code editor. Here, if needed, you will set your environment variable again and open the code editor.
 
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
+> [!NOTE]
+> You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. Set the environment variable named ``COSMOS_CONNECTION_STRING`` to the value of this command which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+    ```azurecli
+    export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
+        --name $(az cosmosdb list \
+            --resource-group <rgn>[sandbox resource group name]</rgn> \
+            --query [0].name \
+            --output tsv) \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --type connection-strings \
+        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
+        --output tsv)
+    ```
 
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
+1. Change to the ``~/clouddrive/inventorytool`` directory and open a code editor.
 
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    ```bash
+    cd ~/clouddrive/inventorytool && code .
+    ```
 
 ## (Chunk n heading)
+
 <!-- Introduction paragraph -->
+
 1. <!-- Step 1 -->
+
 1. <!-- Step 2 -->
+
 1. <!-- Step n -->
-
-<!-- 4. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
-
-    Structure:
-        1. H2 of "Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

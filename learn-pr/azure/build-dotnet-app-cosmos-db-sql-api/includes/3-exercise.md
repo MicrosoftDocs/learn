@@ -42,6 +42,12 @@ Here, you'll get the connection string again and store it in an *environment var
     connectionString=$(az cosmosdb keys list --name $accountName --resource-group $resourceGroup --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
     ```
 
+1. To validate, output the connection string to the terminal.
+
+    ```azurecli
+    echo $connectionString
+    ```
+
 1. Save the ``connectionString`` shell variable as a new environment variable named ``COSMOS_CONNECTION_STRING``.
 
     ```azurecli
