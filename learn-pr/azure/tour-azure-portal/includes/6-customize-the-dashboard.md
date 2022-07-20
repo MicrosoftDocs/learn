@@ -1,10 +1,10 @@
-Let's look at how to create and modify dashboards using the Azure portal, and by editing the underlying JSON file directly. In this unit, you'll learn to navigate around the portal. And in the next unit, you will try out the things you've learned.
+Let's look at how to create and modify dashboards using the Azure portal, and by editing the underlying JSON file directly. In this unit, you'll learn to effectively use dashboards. And in the next unit, you will try out the things you've learned.
 
 ## What is a dashboard?
 
-A _dashboard_ is a customizable collection of UI tiles displayed in the Azure portal. You add, remove, and position tiles to create the exact view you want, and then save that view as a dashboard. Multiple dashboards are supported, and you can switch between them as needed. You can even share your dashboards with other team members.
+A *dashboard* is a customizable collection of UI tiles displayed in the Azure portal. You can add, remove, and position tiles to create the exact view you want, and then save that view as a dashboard. Multiple dashboards are supported, and you can switch among them as needed. You can even share your dashboards with other team members.
 
-Dashboards give you considerable flexibility regarding how you manage Azure. For example, you can create dashboards for specific roles within the organization, and then use role-based access control (RBAC) to control who can access that dashboard. Hence, your database administrator would have a dashboard that contains views of the SQL database service, whereas your Azure Active Directory administrator would have views of the users and groups within Azure AD. You can even customize the portal between your production and development environments within the portal - creating a specific dashboard for each environment you are managing.
+Dashboards give you considerable flexibility in managing Azure. For example, you can create dashboards for specific roles within the organization, then use role-based access control (RBAC) to control who can access that dashboard. Hence, your database administrator would have a dashboard that contains views of the SQL database service, whereas your Azure Active Directory administrator would have views of the users and groups within Azure AD. You can even customize the portal between your production and development environments within the portal, creating a specific dashboard for each environment you are managing.
 
 Dashboards are stored as JavaScript Object Notation (JSON) files. This format means they can be uploaded and downloaded to other computers, or shared with members of the Azure directory. Azure stores dashboards within resource groups, just like virtual machines or storage accounts that you can manage within the portal.
 
@@ -30,40 +30,42 @@ These default web parts are
 
 ## Creating and managing dashboards
 
-At the top of the dashboard are the controls that enable you to create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
+At the top of the dashboard are the controls that let you create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
 
 ![Screenshot showing the Customize dashboard controls.](../media/6-customise-dashboard-controls.png)
 
 ## Select dashboard
 
-To the far left of the toolbar is the **Select Dashboard** drop-down control. Clicking this control enables you to select from dashboards that you have already defined for your account. This control makes it simple for you to define multiple dashboards for different purposes and then switch from one to another and back again, depending on what you are trying to do at the time.
+At the top of the toolbar on the far left is the **Select Dashboard** drop-down control. Clicking this control allows you to select from dashboards that you have already defined for your account. This control makes it simple for you to define multiple dashboards for different purposes and then switch from one to another and back again, depending on what you are trying to do at the time.
 
 Dashboards that you create will initially be private; that is, only you can see them. To make a dashboard available across your enterprise, you need to share it. We'll look at that option shortly.
 
 ## Create a new dashboard
 
-To create a new dashboard, click **New dashboard**. The dashboard workspace appears, with no tiles present. You can then add, remove, and adjust tiles however you like. When you are finished customizing the dashboard, click **Done customizing** to save and switch to that dashboard.
+To create a new dashboard, select **New dashboard**. If you select **Blank dashboard**, the dashboard workspace appears with no tiles present. You can then add, remove, and adjust tiles however you like. When you are finished customizing the dashboard, click **Done customizing** to save and switch to that dashboard. You can also select **New dashboard**, then select **Upload** to upload a JSON file you've customized.
 
-## Upload and Download
+## Export
 
-The **Upload** and **Download** buttons enable you to download your current dashboard as a JSON file, customize it, and then distribute it and upload it or have someone else upload that file back to the Azure portal, thereby replacing their current dashboard.
+Select **Export**, then select **Download** to download your current dashboard as a JSON file. You can then customize it, distribute it, and upload it, or have someone else upload that file back to the Azure portal, thereby replacing their current dashboard.
 
-If you click **Download**, the current dashboard downloads the JSON code as a file you can edit locally. You can then upload it back to Azure by clicking the **Upload** button. Downloading and uploading dashboards is discussed further below.
+When you select **Download**, the current dashboard downloads the JSON code as a file you can edit locally. You can then upload it back to Azure by selecting **New dashboard**, then selecting the **Upload** button. Downloading and uploading dashboards is discussed further below.
+
+You can also select **Export**, then select **Print** to print a copy of your dashboard.
 
 ## Edit a dashboard using the portal
 
 Although you can edit a dashboard by downloading the JSON file, changing values in the file, and uploading the file back to Azure, you may prefer a graphical approach to designing the user interface. To use the GUI to configure your current dashboard, you can switch to editing mode in several ways:
 
-* Click the **Edit** (pencil icon) button.
-* Right-click on the dashboard background area and select **Edit**.
-* Right-click on a tile and a menu will appear with edit options.
+* Select the **Edit** (pencil icon) button.
+* Right-click  the dashboard background area and select **Edit**.
+* Right-click  a tile and a menu will appear with edit options.
 * Hover over a tile on the dashboard - a `...` menu will appear on the top/right corner with a **Customize** option.
 
 The dashboard will switch to edit mode.
 
 ![Screenshot showing the dashboard in the Edit mode.](../media/6-edit-dashboard.png)
 
-On the left-hand side appears the **Tile Gallery**, with several possible tiles. You can filter the Tile Gallery by category and resource type.
+On the right-hand side you'll find the **Tile Gallery**, with several possible tiles. You can filter the Tile Gallery by category and resource type.
 
 Adding tiles is as easy as selecting the tile from the list on the left and then dragging it to the work area. You can then move each tile about, resize it, or change the data that it displays.
 
@@ -86,7 +88,7 @@ To create your dashboard, pull tiles from the Tile Gallery onto the workspace an
 
 ### Change tile settings
 
-Some tiles have editable settings. For example, with the clock tile, when you drag it onto the workspace, it opens the **Edit clock** tile. You can then set the time zone, which it displays, and also set whether it displays in 12- or 24-hour format.
+Some tiles have editable settings. For example, with the clock tile, you can select **Edit** to open the **Edit clock** tile. You can then set the time zone, which it displays, and also set whether it displays in 12- or 24-hour format.
 
 ![Screenshot showing the Edit clock settings for the clock tile.](../media/6-edit-clock.png)
 
@@ -94,7 +96,7 @@ For multi-national or transcontinental companies, you can add several clocks, ea
 
 ### Accepting your edits
 
-When you have arranged the tiles as you want them, either click **Done customizing** or right-click and then click **Done customizing**.
+You can select **Preview** to see your proposed edits. When you have arranged the tiles as you want them, either select **Save** or right-click anywhere in your Dashboard and select **Done customizing**.
 
 ## Edit a dashboard by changing the JSON file
 
@@ -121,7 +123,7 @@ When you have shared the template, you will see a second **Sharing + access cont
 
 ![Screenshot of the Sharing and access control pane after the dashboard is shared.](../media/6-share-dashboards-access-control.png)
 
-You can then click **Manage users** to specify the users who have access to that dashboard.
+You can then select **Manage users** to specify the users who have access to that dashboard.
 
 ### Switching to a shared dashboard
 
@@ -135,9 +137,9 @@ You will now see the **All dashboards** pane, with the names of any shared dashb
 
 ## Display a dashboard as a full screen
 
-If you want the largest dashboard real estate, click the **Full screen** button to display your current dashboard without any browser menus. If you have any tiles outside the boundaries of your screen display, slider bars will appear at the right and bottom of your screen.
+If you want the largest dashboard real estate, select the **Full screen** button to display your current dashboard without any browser menus. If you have any tiles outside the boundaries of your screen display, slider bars will appear at the right and bottom of your screen.
 
-When you have finished working in full-screen mode, press the ESC key or click **Exit Full Screen** next to the Dashboard name at the top of the screen.
+When you have finished working in full-screen mode, press the ESC key or select the **Full screen** button next to the Dashboard name at the top of the screen.
 
 ## Clone a dashboard
 
