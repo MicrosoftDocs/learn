@@ -55,7 +55,11 @@ Identify the subtasks of module title.
     
     You're an IT manager at Contoso, a mid-size software development firm that uses Azure Monitor to monitor the machines on which the company develops and runs its software.
     
-    You want to understand how effectively your organization is using its compute resources. Specifically, you're concerned about resources that might be under-used or over-used, in general, and at peak times. 
+    You want to understand how effectively your organization is using its compute resources. Specifically, you're concerned about: 
+
+    - Machines that might be under-used or over-used.
+    - Machines that might be running out free space.
+    -  
     
     **What will we be doing?**
     
@@ -72,7 +76,12 @@ Identify the subtasks of module title.
 
     **Characterize your inquiry**
     
-    To conduct a business or operational inquiry using log data, you’ll want to consider factors like:
+    To gain business or operational insights from log data, you’ll: 
+
+    - Examine the raw data you have in your logs.
+    - Identify data that is relevant to your inquiry. 
+    - Perform operations on the data, if necessary.
+
     
     - What type of insights do you want to gain from your inquiry?
     - What type of data can help you answer your question?
@@ -85,17 +94,45 @@ Identify the subtasks of module title.
 
 1. Exercise: Explore performance data
 
+    Exploring the raw data you've collected in your logs will help you understand what steps you need to take to find the answers you're looking for.
 
+    In our scenario, you want to understand the status of machines in your environment in terms of usage and free space.
+
+    To find information about machine loads and memory usage, which tables do you need to query?
+
+    **Identify relevant tables and examine logged data**
+
+    The `Perf` table holds information about the performance of hardware components operating systems and applications.
+
+    Let's run a basic example query to retrieve some data from the `Perf` table and see the type of information we can find in its logs.
+
+    In the Azure portal: 
+
+    1. Select your workspace.
+    1. Select **Logs**.
+        
+        This opens the **Queries** screen where you can search through and run example queries. 
+
+    1. Enter *Perf* in the search box and run the **What data is being collected?** query.  
+ 
+        This runs a simple example query: 
+
+        ```kusto
+        // What data is being collected? 
+        // List the collected performance counters and object types (Process, Memory, Processor). 
+        Perf
+        | summarize by ObjectName, CounterName
+        ```
+
+    - What type of insights do you want to gain from your inquiry?
+    - What type of data can help you answer your question?
+    - Which tables hold this type of data?
+    
     Step 1: Look at the last 24 hours.
 
     Run this example query to get some initial information about what kind of performance data you're collecting:
 
-    ```kusto
-    // What data is being collected? 
-    // List the collected performance counters and object types (Process, Memory, Processor). 
-    Perf
-    | summarize by ObjectName, CounterName
-    ```
+
     
     This gets data about CPU usage and free space.
     
