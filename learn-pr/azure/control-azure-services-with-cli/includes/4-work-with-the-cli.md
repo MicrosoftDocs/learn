@@ -34,7 +34,7 @@ az storage blob --help
 
 ## How to create an Azure resource
 
-When creating a new Azure resource, there are typically three steps: connect to your Azure subscription, create the resource, and verify that creation was successful. The following illustration shows a high-level overview of the process.
+When you're creating a new Azure resource, there are typically three steps: connect to your Azure subscription, create the resource, and verify that creation was successful. The following illustration shows a high-level overview of the process.
 
 ![An illustration showing the steps to create an Azure resource using the command-line interface.](../media/4-create-resources-overview.png)
 
@@ -50,7 +50,7 @@ az login
 
 The Azure CLI will typically launch your default browser to open the Azure sign-in page. If this doesn't work, follow the command-line instructions and enter an authorization code at [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
-After a successful sign in, you'll be connected to your Azure subscription.
+After a successful sign-in, you'll be connected to your Azure subscription.
 
 ### Create
 
