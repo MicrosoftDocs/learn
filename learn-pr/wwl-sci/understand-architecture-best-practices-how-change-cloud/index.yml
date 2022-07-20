@@ -3,8 +3,8 @@ uid: learn.wwl.understand-architecture-best-practices-how-change-cloud
 metadata:
   title: Understand architecture best practices and how they are changing with the Cloud
   description: "Learn best practices for cybersecurity architecture and how they have been affected by cloud computing."
-  ms.date: 06/07/2022
-  author: hrasheed-msft
+  ms.date: 07/20/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Understanding roles and responsibilities in a security organization.
   - Familiarity with security continuous improvement.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-understand-architecture-best-practices-how-change-cloud.svg
 levels:
 - advanced
 roles:
@@ -29,6 +29,9 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - microsoft-sentinel
+subjects:
+- architecture
+- security
 units:
 - learn.wwl.understand-architecture-best-practices-how-change-cloud.introduction
 - learn.wwl.understand-architecture-best-practices-how-change-cloud.plan-implement-security-strategy-across-teams
@@ -38,6 +41,3 @@ units:
 - learn.wwl.understand-architecture-best-practices-how-change-cloud.summary
 badge:
   uid: learn.wwl.understand-architecture-best-practices-how-they-are-changing-cloud.badge
-subjects:
-- security
-- architecture
