@@ -200,9 +200,150 @@ Your app now reads and queries items from the container. Here, you'll run the ap
 
 ### [Review code](#tab/review-code)
 
-1. Review the **Program.cs** code file to make sure that the code you added matches this sample.
+1. Review the **Item.cs** code file to make sure that your code matches this sample.
 
     ```csharp
+    public record Item(
+        string id,
+        string categoryId,
+        string type
+    );
+    ```
+
+1. Review the **Category.cs** code file to make sure that your code matches this sample.
+
+    ```csharp
+    public record Category(
+        string id,
+        string categoryId,
+        string type = nameof(Category)
+    ) : Item(
+        id,
+        categoryId,
+        type
+    );
+    ```
+
+1. Review the **Product.cs** code file to make sure that your code matches this sample.
+
+    ```csharp
+    public record Product(
+        string id, 
+        string categoryId, 
+        string name, 
+        decimal price, 
+        bool archived, 
+        int quantity,
+        string type = nameof(Product)
+    ) : Item(
+        id,
+        categoryId,
+        type
+    );
+    ```
+
+1. Review the **Program.cs** code file to make sure that your code matches this sample.
+
+    ```csharp
+    using Microsoft.Azure.Cosmos;
+    
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    
+    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    
+    using CosmosClient client = new(
+        connectionString: cosmosConnectionString
+    );
+    
+    Console.WriteLine("[Client connected]");
+
+    Database database = await client.CreateDatabaseIfNotExistsAsync(
+        id: "cosmicworks"
+    );
+    
+    Console.WriteLine($"[Database created]:\t{database.Id}");
+    
+    Container container = await database.CreateContainerIfNotExistsAsync(
+        id: "products",
+        partitionKeyPath: "/categoryId",
+        throughput: 400
+    );
+    
+    Console.WriteLine($"[Container created]:\t{container.Id}");
+
+    Category helmets = new (
+        id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
+        categoryId: "gear-climb-helmets"
+    );
+    
+    PartitionKey helmetsKey = new ("gear-climb-helmets");
+    
+    ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
+    
+    Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
+    
+    Category tents = new (
+        id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
+        categoryId: "gear-camp-tents"
+    );
+    
+    Product cirroa = new (
+        id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
+        categoryId: "gear-camp-tents",
+        name: "Cirroa Tent", 
+        price: 490.00m, 
+        archived: false, 
+        quantity: 15
+    );
+    
+    Product kuloar = new (
+        id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
+        categoryId: "gear-camp-tents",
+        name: "Kuloar Tent", 
+        price: 530.00m, 
+        archived: false, 
+        quantity: 8
+    );
+    
+    Product mammatin = new (
+        id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
+        categoryId: "gear-camp-tents",
+        name: "Mammatin Tent", 
+        price: 0.00m, 
+        archived: true, 
+        quantity: 0
+    );
+    
+    Product nimbolo = new (
+        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+        categoryId: "gear-camp-tents",
+        name: "Nimbolo Tent", 
+        price: 330.00m, 
+        archived: false, 
+        quantity: 35
+    );
+    
+    PartitionKey tentsKey = new ("gear-camp-tents");
+    
+    TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
+        .UpsertItem<Category>(tents)
+        .UpsertItem<Product>(cirroa)
+        .UpsertItem<Product>(kuloar)
+        .UpsertItem<Product>(mammatin)
+        .UpsertItem<Product>(nimbolo);
+    
+    Console.WriteLine("[Batch started]");
+    
+    using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
+    
+    for (int i = 0; i < batchResponse.Count; i++)
+    {
+        TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
+        Console.WriteLine($"[New item created]:\t{result.Resource.id}\t(Type: {result.Resource.type})");
+    }
+    
+    Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
+
     PartitionKey readKey = new ("gear-climb-helmets");
     
     ItemResponse<Category> readResponse = await container.ReadItemAsync<Category>(

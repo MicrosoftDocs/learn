@@ -38,7 +38,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 ## Create a database
 
-The SDK contains useful methods that will only create a new resource if it doesn't already exist. By using these methods, you can run the application multiple times without worrying about exceptions raised by conflicts. Here, you'll create a database with shared throughput
+The SDK contains useful methods that will only create a new resource if it doesn't already exist. By using these methods, you can run the application multiple times without worrying about exceptions raised by conflicts. Here, you'll create a database.
 
 1. Open the **Program.cs** file.
 
@@ -47,12 +47,10 @@ The SDK contains useful methods that will only create a new resource if it doesn
     | Parameter | Value |
     | --- | --- |
     | **id** | ``cosmicworks`` |
-    | **throughput** | ``600`` |
 
     ```csharp
     Database database = await client.CreateDatabaseIfNotExistsAsync(
-        id: "cosmicworks",
-        throughput: 600
+        id: "cosmicworks"
     );
     ```
 
@@ -236,12 +234,23 @@ Your app now creates a database and container. The methods you used to create th
     );
     ```
 
-1. Review the **Program.cs** code file to make sure that the code you added matches this sample.
+1. Review the **Program.cs** code file to make sure that your code matches this sample.
 
     ```csharp
+    using Microsoft.Azure.Cosmos;
+    
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    
+    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    
+    using CosmosClient client = new(
+        connectionString: cosmosConnectionString
+    );
+    
+    Console.WriteLine("[Client connected]");
+
     Database database = await client.CreateDatabaseIfNotExistsAsync(
-        id: "cosmicworks",
-        throughput: 600
+        id: "cosmicworks"
     );
     
     Console.WriteLine($"[Database created]:\t{database.Id}");

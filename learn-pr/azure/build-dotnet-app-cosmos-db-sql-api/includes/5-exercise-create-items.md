@@ -228,9 +228,77 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
 ### [Review code](#tab/review-code)
 
-1. Review the **Program.cs** code file to make sure that the code you added matches this sample.
+1. Review the **Item.cs** code file to make sure that your code matches this sample.
 
     ```csharp
+    public record Item(
+        string id,
+        string categoryId,
+        string type
+    );
+    ```
+
+1. Review the **Category.cs** code file to make sure that your code matches this sample.
+
+    ```csharp
+    public record Category(
+        string id,
+        string categoryId,
+        string type = nameof(Category)
+    ) : Item(
+        id,
+        categoryId,
+        type
+    );
+    ```
+
+1. Review the **Product.cs** code file to make sure that your code matches this sample.
+
+    ```csharp
+    public record Product(
+        string id, 
+        string categoryId, 
+        string name, 
+        decimal price, 
+        bool archived, 
+        int quantity,
+        string type = nameof(Product)
+    ) : Item(
+        id,
+        categoryId,
+        type
+    );
+    ```
+
+1. Review the **Program.cs** code file to make sure that your code matches this sample.
+
+    ```csharp
+    using Microsoft.Azure.Cosmos;
+    
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    
+    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    
+    using CosmosClient client = new(
+        connectionString: cosmosConnectionString
+    );
+    
+    Console.WriteLine("[Client connected]");
+
+    Database database = await client.CreateDatabaseIfNotExistsAsync(
+        id: "cosmicworks"
+    );
+    
+    Console.WriteLine($"[Database created]:\t{database.Id}");
+    
+    Container container = await database.CreateContainerIfNotExistsAsync(
+        id: "products",
+        partitionKeyPath: "/categoryId",
+        throughput: 400
+    );
+    
+    Console.WriteLine($"[Container created]:\t{container.Id}");
+
     Category helmets = new (
         id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
         categoryId: "gear-climb-helmets"
