@@ -38,7 +38,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 ## Query using LINQ expressions
 
-Your team wants a unique query that returns all *products* within the container regardless of category. Recall that we used the **type** field to seperate our category items from the individual product items. Here, we are going to create a cross-partition query using the LINQ query syntax.
+Your team wants a unique query that returns all *products* within the container regardless of category. Recall that we used the **type** field to separate our category items from the individual product items. Here, we're going to create a cross-partition query using the LINQ query syntax.
 
 > [!TIP]
 > Since we are querying across multiple categories, this will make our query cross-partition. This query could potentially use more RUs than a query that is scoped to a single logical partition key value.
@@ -67,7 +67,7 @@ Your team wants a unique query that returns all *products* within the container 
 
 ## Paginate LINQ query results
 
-Since we are querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category does not have any matching products. If we didn't return all possible pages, our application may inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you will again use a *while* and *foreach* loop in C# to iterate over *all* result pages.
+Since we're querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category doesn't have any matching products. If we didn't return all possible pages, our application may inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you'll again use a *while* and *foreach* loop in C# to iterate over *all* result pages.
 
 1. <!-- Step 1 -->
 
@@ -91,7 +91,7 @@ Since we are querying across multiple logical partitions, we need to make sure t
 
 ## Check your work
 
-Your app now uses LINQ to build a cross-partition query that your developer team natively understands. Here, you will run the application one last time to ensure that all queries return the results you expected.
+Your app now uses LINQ to build a cross-partition query that your developer team natively understands. Here, you'll run the application one last time to ensure that all queries return the results you expected.
 
 ### [Run application](#tab/run-app)
 
