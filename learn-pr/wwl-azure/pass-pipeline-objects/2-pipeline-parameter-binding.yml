@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.pass-pipeline-objects.pipeline-parameter-binding
+title: Pipeline parameter binding
+metadata:
+  title: Pipeline parameter binding
+  description: "Pipeline parameter binding"
+  ms.date: 07/20/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-pipeline-parameter-binding.md)]

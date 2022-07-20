@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.wwl.pass-pipeline-objects
+metadata:
+  title: Pass pipeline objects
+  description: "This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline."
+  ms.date: 07/20/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Pass pipeline objects
+summary: This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Describe pipeline parameter binding.
+  - Identify ByValue parameters.
+  - Pass data by using ByValue.
+  - Identify ByPropertyName parameters.
+  - Pass data ByPropertyName.
+  - Pass pipeline data ByPropertyName.
+  - Use manual parameters to override the pipeline.
+  - Use parenthetical commands.
+  - Expand property values.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation.
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.pass-pipeline-objects.introduction
+- learn.wwl.pass-pipeline-objects.pipeline-parameter-binding
+- learn.wwl.pass-pipeline-objects.identify-byvalue-parameters
+- learn.wwl.pass-pipeline-objects.pass-data-by-using-byvalue
+- learn.wwl.pass-pipeline-objects.pass-data-by-using-bypropertyname
+- learn.wwl.pass-pipeline-objects.identify-bypropertyname-parameters
+- learn.wwl.pass-pipeline-objects.use-manual-parameters-to-override-pipeline
+- learn.wwl.pass-pipeline-objects.use-parenthetical-commands
+- learn.wwl.pass-pipeline-objects.expand-property-values
+- learn.wwl.pass-pipeline-objects.knowledge-check
+- learn.wwl.pass-pipeline-objects.summary
+badge:
+  uid: learn.wwl.pass-pipeline-objects.badge

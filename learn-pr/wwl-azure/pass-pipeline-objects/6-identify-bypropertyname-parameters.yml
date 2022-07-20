@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.pass-pipeline-objects.identify-bypropertyname-parameters
+title: Identify ByPropertyName parameters
+metadata:
+  title: Identify ByPropertyName parameters
+  description: "Identify ByPropertyName parameters"
+  ms.date: 07/20/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-identify-bypropertyname-parameters.md)]
