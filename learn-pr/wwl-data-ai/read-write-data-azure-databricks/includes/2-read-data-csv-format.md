@@ -13,7 +13,7 @@ To complete this lab, you will need to deploy an Azure Databricks workspace in y
 
 ### Deploy an Azure Databricks workspace
 
-1. Click the following button to open the Azure Resource Manager Template (ARM) template in the Azure portal. [Deploy Databricks from the ARM Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.databricks%2Fdatabricks-workspace%2Fazuredeploy.json)
+1. Select the following link to open the Azure Resource Manager Template (ARM) template in the Azure portal. [Deploy Databricks from the ARM Template](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fquickstarts%2Fmicrosoft.databricks%2Fdatabricks-workspace%2Fazuredeploy.json)
 2. Provide the required values to create your Azure Databricks workspace:
    - **Subscription**: Choose the Azure Subscription in which to deploy the workspace.
    - **Resource Group**: Leave at Create new and provide a name for the new resource group.
