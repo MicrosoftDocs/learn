@@ -96,7 +96,7 @@ In situations where you need multiple items, you can use a SQL query to find and
     var parameterizedQuery = query.WithParameter("@partitionKey", "gear-camp-tents");
     ```
 
-1. Use **Container.GetItemQueryIterator<>** to retrieve an iterator for your specific SQL query.
+1. Use **Container.GetItemQueryIterator\<\>** to retrieve an iterator for your specific SQL query.
 
     ```csharp
     using FeedIterator<Product> feed = container.GetItemQueryIterator<Product>(
