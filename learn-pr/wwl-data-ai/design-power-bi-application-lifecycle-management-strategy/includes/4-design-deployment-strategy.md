@@ -15,9 +15,9 @@ You can manually create separate workspaces for your specific needs, or you can 
 
 A Power BI deployment pipeline is a separate workspace for each development, test, and production. The real value with deployment pipelines is that you can see when there's a discrepancy between the different workspaces.
 
-In the following image, you see the three workspaces for development, test, and production with a single dashboard *Human Resources Sample* in each. There's another report in the test workspace that isn't in development or production. The compare feature quickly identifies the disparity, and even allows you to remediate it from the pipeline dashboard.
+In the following image, there are three workspaces for development, test, and production with a single dashboard *Human Resources Sample* in each. There's another report in the test workspace that isn't in development or production. The compare feature quickly identifies the disparity, and even allows you to remediate it from the pipeline dashboard.
 
-![Image showing the different areas of the application lifecycle in a circle to further illustrate the cyclical nature of application development.](/media/deployment-pipelines-compare.png)
+![Image showing the different areas of the application lifecycle in a circle to further illustrate the cyclical nature of application development.](../media/deployment-pipelines-compare.png)
 
 > [!IMPORTANT]
 > Power BI deployment pipelines require a Premium or Premium Per User workspace.
