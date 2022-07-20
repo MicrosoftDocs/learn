@@ -26,9 +26,13 @@ products:
 - github
 - azure-spring-apps
 modules:
+- learn.wwl.plan-java-application-migration-azure-spring-apps
 - learn.wwl.migrate-spring-cloud-application-to-azure
 - learn.wwl.enable-monitoring-end-to-end-tracing
 - learn.wwl.secure-application-secrets-use-key-vault
 - learn.wwl.create-configure-azure-service-bus-azure-spring-apps
+- learn.wwl.configure-azure-event-hubs-azure-spring-apps
+- learn.wwl.protect-endpoints-use-web-application-firewall
+- learn.wwl.secure-mysql-database-key-vault-use-private-endpoint
 trophy:
   uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
