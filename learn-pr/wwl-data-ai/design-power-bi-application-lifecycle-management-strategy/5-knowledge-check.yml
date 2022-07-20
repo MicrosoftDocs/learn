@@ -28,21 +28,21 @@ quiz:
     choices:
     - content: "OneDrive"
       isCorrect: false
-      explanation: "Incorrect. OneDrive does not provide deployment management integration."
+      explanation: "Incorrect. OneDrive doesn't provide deployment management integration."
     - content: "SharePoint"
       isCorrect: false
-      explanation: "Incorrect. SharePoint does not provide deployment management integration."
+      explanation: "Incorrect. SharePoint doesn't provide deployment management integration."
     - content: "Azure DevOps"
       isCorrect: true
       explanation: "Correct. Azure DevOps can be configured to publish directly to Power BI deployment pipeline workspaces."
-  - content: "A new data analyst in the Finance department is creating a new report. They're connected to a single Azure SQL database through Power BI desktop to develop the dataset and report. Once finished, they need to allow testing before deploying to production workspace.Which is the best source control and deployment strategy for this scenario?"
+  - content: "A new data analyst in the Finance department is creating a new report. They're connected to a single Azure SQL database through Power BI desktop to develop the dataset and report. Once finished, they need to allow testing before deploying to production workspace. Which is the best source control and deployment strategy for this scenario?"
     choices:
     - content: "Save the *.pbix* file in a shared OneDrive folder, then use Power BI deployment pipelines for testing and production release."
       isCorrect: true
-      explanation: "Correct. This is the easiest way to have source control and use deployment pipelines for limited overhead."
+      explanation: "Correct. OneDrive and deployment pipelines is the easiest way to have source control and limited overhead."
     - content: "Save the *.pbix* file in Git repository, then publish to a development workspace and request final approval for production."
       isCorrect: false
-      explanation: "Incorrect. Git is not the best solution for binary *.pbix* files, and you add overhead with requesting approval."
+      explanation: "Incorrect. Git isn't the best solution for binary *.pbix* files, and you add overhead with requesting approval."
     - content: "Save the *.pbix* file on a network share, then publish to a development and test workspace before requesting release to production."
       isCorrect: false
       explanation: "Incorrect. The network share may not have version tracking, and manually publishing to separate workspaces is increased overhead."
