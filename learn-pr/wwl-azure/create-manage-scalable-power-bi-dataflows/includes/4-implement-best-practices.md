@@ -3,10 +3,8 @@ Dataflows can solve problems, but they can also create problems when implemented
 ## Best practices
 
 Keep the following best practices in mind when planning your dataflow implementation:
-- Start with a [properly designed data model](/learn/modules/choose-power-bi-model-framework/).
-  - Use a star schema data model.
-  - Bring in only data you need.
-  - Leverage [query folding](https://powerquery.microsoft.com/blog/introduction-to-practical-query-folding/). 
+- Bring in only data you need.
+- Leverage [query folding](https://powerquery.microsoft.com/blog/introduction-to-practical-query-folding/). 
 - [Endorse your dataflows](/power-bi/collaborate-share/service-endorsement-overview) as either promoted or certified to encourage use.
 - Use [incremental refresh](/power-bi/connect-data/incremental-refresh-overview) to control partition processing.
 - Use Power Automate for [trigger-based dataflow and dataset refresh](/power-query/dataflows/trigger-dataflows-and-power-bi-dataset-sequentially).

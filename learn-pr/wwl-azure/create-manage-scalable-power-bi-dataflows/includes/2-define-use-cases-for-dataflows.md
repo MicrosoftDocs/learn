@@ -7,6 +7,9 @@ Power BI dataflows should be used in Premium capacity for enterprise solutions, 
 > [!NOTE]
 > Dataflows are supported for Power BI Pro, Premium Per User (PPU), and Power BI Premium users. Learn more about [Premium-only features of dataflows](/power-bi/transform-model/dataflows/dataflows-premium-features).
 
+
+Data used with Power BI is stored in internal storage provided by Power BI by default. With the integration of dataflows and Azure Data Lake Storage Gen 2 (ADLS Gen2), you can [store your dataflows in your organization's Azure Data Lake Storage Gen2 account](/power-bi/transform-model/dataflows/dataflows-azure-data-lake-storage-integration). This essentially allows you to "bring your own storage" to Power BI dataflows, and establish a connection at the tenant or workspace level.
+
 ## Why use dataflows?
 
 Dataflows were designed to promote reusable ETL logic that prevents the need to create additional connections to your data source.
@@ -14,7 +17,7 @@ Dataflows were designed to promote reusable ETL logic that prevents the need to 
 Dataflows are a great choice for you if:
 - There's no data warehouse in your organization.
 - You want to extend a core dataset or data in the data warehouse with consistent data.
-- Self service users need frequent access to up-to-date subset of data from the data warehouse without having access to the data warehouse itself.
+- Self service users need frequent access to an up-to-date subset of data from the data warehouse without having access to the data warehouse itself.
 - You have slower data sources.
   - Dataflows extract data once and reuse it multiple times, which can reduce the overall data refresh time for slower data sources.
   - Computed entities may be faster than referencing queries with the enhanced compute engine.
@@ -32,6 +35,8 @@ Dataflows are a great choice for you if:
 
 ## Benefits and limitations
 
+While there are notable benefits to using dataflows in your dataset design, there are also a few limitations that users should keep in mind.
+
 Benefits:
 - Reduced load on database queries.
 - Reduced number of users accessing source data.
@@ -47,10 +52,7 @@ Limitations:
 
 ## Dataflows in Power BI Premium
 
-Power BI premium was designed for enterprise deployments. Dataflow features available in premium offer substantial benefits in both speed and ...
-
-The following features are available only with Power BI Premium:
-
+Power BI Premium was designed for enterprise deployments. Dataflow features available in premium offer substantial performance benefits and include the use of:
 - Enhanced compute engine
 - DirectQuery
 - Computed entities
@@ -63,10 +65,8 @@ The enhanced compute engine in Power BI dataflows enables you to optimize the us
 - Enabling DirectQuery connectivity over dataflows using the compute engine.
 - Achieve improved performance in the transformation steps of dataflows when entities are cached within the compute engine.
 
-!!! TODO: Need to fit bring your own data lake in here somewhere too
-
 > [!TIP]
-> Learn more about [Power BI premium features of dataflows](/power-bi/transform-model/dataflows/dataflows-premium-features).
+> Learn more about [Power BI Premium features of dataflows](/power-bi/transform-model/dataflows/dataflows-premium-features).
 
 ## Distinction between dataflows
 

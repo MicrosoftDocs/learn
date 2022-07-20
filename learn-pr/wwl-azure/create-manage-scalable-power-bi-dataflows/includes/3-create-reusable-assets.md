@@ -12,7 +12,7 @@ From within a shared workspace, select **New Dataflow**.
 
 Here you'll have the option to define new tables, link tables from other dataflows, import model, or attach a Common Data Model folder. Select **Add new tables**. 
 
-Selecting add new tables will direct you to Power Query online, where you'll **choose a data source**. 
+Selecting Add new tables will direct you to Power Query online, where you'll **choose a data source**. 
 
 ![Screenshot of the Power Query online interface where you choose a data source to get data from. Choices displayed in screenshot are Azure SQL database, Azure Synapse Analytics, A D L S Gen2, and Azure HDInsight Spark.](../media/choose-data-source.png)
 
@@ -46,6 +46,10 @@ Here you can take ownership of a dataflow, edit the data source credentials, sch
 
 ![Screenshot of Power B I service dataflow settings, with the scheduled refresh toggled to on as indicated by a red box.](../media/dataflow-configure-refresh.png)
 
+### Linked entities in dataflow refreshes
+
+Dataflows that are used in subsequent dataflows are called linked entities, and 
+
 ## Connect to a dataflow
 
 Dataflows can be consumed in three ways. Report builders can:
@@ -62,4 +66,4 @@ You can connect to a dataflow in Power BI desktop using the **Power BI dataflows
 
 ## Refining dataflow settings
 
-For dataflows in workspaces using Power BI premium capacity, you can use the Admin portal to change, or refine, how dataflows are created and how they use resources in your Power BI Premium subscription. See [refining dataflow settings](/power-bi/transform-model/dataflows/dataflows-premium-workload-configuration#refining-dataflow-settings) to learn more.
+For dataflows in workspaces using Power BI Premium capacity, you can use the Admin portal to change, or refine, how dataflows are created and how they use resources in your Power BI Premium subscription. See [refining dataflow settings](/power-bi/transform-model/dataflows/dataflows-premium-workload-configuration#refining-dataflow-settings) to learn more.
