@@ -8,7 +8,7 @@ In this module, you've learned the strategies and tools to find Windows PowerShe
  -  Learning to interpret the help-file syntax can help you to identify all capabilities of a given command.
  -  Windows PowerShell 3.0 and newer versions don't ship with help files. Instead, help files are available as an online service. Run **Update-Help** to scan your computer for all installed modules, retrieve online help locations for each, and try to download their respectvive help files.
 
-## Additional Reading
+## Additional reading
 
 To learn more, go through the following documents:
 
