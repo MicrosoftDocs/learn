@@ -6,7 +6,7 @@ Policies are applied inside the gateway which sits between the API consumer and 
 
 The policy definition is a simple XML document that describes a sequence of inbound and outbound statements. The XML can be edited directly in the definition window.
 
-The configuration is divided into `inbound`, `backend`, `outbound`, and `on-error`. The series of specified policy statement is executes in order for a request and a response.
+The configuration is divided into `inbound`, `backend`, `outbound`, and `on-error`. The series of specified policy statements is executed in order for a request and a response.
 
 ```xml
 <policies>
