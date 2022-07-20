@@ -96,7 +96,7 @@ Before you start, make sure you know:
 For purposes of demonstration, we'll use:
 
    - An external account named extuser
-   - An external Git host named https://external-host.com
+   - An external Git host named `https://external-host.com`
    - A GitHub personal user account named ghuser
    - A repository on GitHub.com named repo.git
 
