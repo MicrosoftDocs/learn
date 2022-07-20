@@ -2,7 +2,7 @@ In order to use these tactics like proactive and reactive detection to manage th
 
 Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Microsoft Sentinel as its SIEM-as-a-service offering. Microsoft Sentinel ingests all Microsoft Defender for Identity and third-party data.
 
-Microsoft Defender for , a key feed into Microsoft Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context-aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration tools, identities, and applications.
+Microsoft 365 Defender, a key feed into Microsoft Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context-aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration tools, identities, and applications.
 
 It is through this hierarchy that we enable our customers to maximize their focus. Through context-awareness and automated remediation, Microsoft 365 Defender can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft 365 Defender brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Microsoft Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
 
