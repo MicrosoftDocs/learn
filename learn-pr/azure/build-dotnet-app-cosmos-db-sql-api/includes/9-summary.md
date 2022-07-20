@@ -1,39 +1,25 @@
 Your developer team needed a .NET application that connects to Azure Cosmos DB SQL API. This application implements common operations using the SDK and illustrates best practices for your team to follow.
 
-You authored an application that created and managed databases, containers, and items. Your application also used the SQL query language and LINQ to perform queries on items in Azure Cosmos DB.
+While there's a REST API for Azure Cosmos DB, developing using the REST API can be challenging for a team that's new to use the platform. Additionally, your application would need to implement a series of common best practices including fault handling logic, retry strategies, and even logic to convert C# expressions to valid SQL API queries.
 
-TODO: add your list of techniques used to solve the scenario problem
+[![Illustration of icons indicating data being uploaded to the cloud and then queried using common search techniques.](../media/project-visual.png)](../media/project-visual.png)
 
-<!-- 3. Describe the experience without the product ---------------------------------------------------
-
-    Goal: Describe what would be required to solve the problem without using the product; be brief (1-2 sentences)
-
-    Heading: none; typically this will be a new paragraph
-
-    Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
-
- -->
-TODO: describe the experience without the product
+You authored an application that used the .NET SDK for Azure Cosmos DB. The application created and managed databases, containers, and items. Your application also used the SQL query language and LINQ method syntax to perform queries on items in Azure Cosmos DB.
 
 With the .NET SDK for Azure Cosmos DB SQL API, you were able to illustrate the best way to create, manage, and query data. The .NET SDK made it possible to share a concise sample with your development team that focused solely on the code necessary for them to be successful.
 
-<!-- 5. References (optional) ----------------------------------------------------
+## References
 
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: "## References"
-
-    Example:
-        "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-TODO: Add references
-
-<!-- Do not include any other content -->
+* Quickstart
+  * [Azure Cosmos DB SQL API client library for .NET](/azure/cosmos-db/sql/quickstart-dotnet)
+* Developer reference
+  * [Get started with Azure Cosmos DB SQL API and .NET](azure/cosmos-db/sql/how-to-dotnet-get-started)
+  * [Create a database in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-create-database)
+  * [Create a container in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-create-container)
+  * [Create an item in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-create-item)
+  * [Read an item in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-read-item)
+  * [Query items in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-query-items)
+* Samples
+  * [Examples for Azure Cosmos DB SQL API SDK for .NET](azure/cosmos-db/sql/samples-dotnet)
+* Best practices
+  * [Best practices for Azure Cosmos DB .NET SDK](azure/cosmos-db/sql/best-practice-dotnet)

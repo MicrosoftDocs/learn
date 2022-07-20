@@ -5,82 +5,113 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: |
-    TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords.
+    Knowledge check
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 7/11/2022
 durationInMinutes: 5
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
+  title: |
+    Check your knowledge
   questions:
-  - content: ""
+  - content: |
+      [!include[](includes/8-knowledge-check-question-1.md)]
     choices:
-    - content: ""
+    - content: |
+        ``CosmosClient(string)``
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: |
+        Correct.
+        This constructor only requires a single string with the full connection string.
+    - content: |
+        ``CosmosClient(string, string)``
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: |
+        Incorrect.
+        This constructor requires two strings; one for the endpoint and another for the key.
+    - content: |
+        ``CosmosClient()``
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: |
+        Incorrect.
+        This constructor is used for mock testing.
+  - content: |
+      [!include[](includes/8-knowledge-check-question-2.md)]
     choices:
-    - content: ""
+    - content: |
+        ``logicalPartitionKey``
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This parameter doesn't exist on the ``CreateContainerIfNotExistsAsync`` method. 
+    - content: |
+        ``partitionKey``
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This parameter doesn't exist on the ``CreateContainerIfNotExistsAsync`` method.
+    - content: |
+        ``partitionKeyPath``
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: |
+        Correct.
+        This parameter is used to set the path that determines the logical partition key.
+  - content: |
+      [!include[](includes/8-knowledge-check-question-3.md)]
     choices:
-    - content: ""
+    - content: |
+        ``Container.UpsertItemAsync()``
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        While this method can replace an existing item, it can also create a new item.
+    - content: |
+        ``Container.ReplaceItemAsync()``
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: |
+        Correct.
+        This method replaces an item that already exists within the container.
+    - content: |
+        ``Container.CreateItemAsync()``
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: |
+        Incorrect.
+        This method creates a new item and will throw a conflict exception if an item already exists.
+  - content: |
+      [!include[](includes/8-knowledge-check-question-4.md)]
     choices:
-    - content: ""
+    - content: |
+        ```sql
+        SELECT * 
+        FROM container c
+        ORDER BY c.partitionKey
+        ```        
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This query incorrectly orders the results using the partition key.
+    - content: |
+        ```sql
+        SELECT * 
+        FROM container c
+        WHERE c.id == 'some-category'
+        ```
+      isCorrect: false
+      explanation: |
+        Incorrect.
+        This query incorrectly filters using the unique identifier.
+    - content: |
+        ```sql
+        SELECT * 
+        FROM container c
+        WHERE c.partitionKey == 'some-category'
+        ORDER BY c.id
+        ```
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: |
+        Correct.
+        This query filters on the partition key and orders the results using the unique identifier.
