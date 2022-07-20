@@ -3,7 +3,6 @@ Microsoft Intune is available for different organization sizes and needs, from a
 Whether you added users one at a time or all at once, you must assign each user an Intune license before users can enroll their devices in Intune. The Microsoft Intune free trial provides 25 Intune licenses. For a list of licenses, see [Licenses that include Intune](/mem/intune/fundamentals/licenses?azure-portal=true).
 
 > [!NOTE]
-> 
 > If you manage devices on-premises using Microsoft Endpoint Configuration Manager, you can also add cloud-based users and assign licenses to accounts synchronized from your on-premises Active Directory to Azure AD.
 
 ## Assign an Intune license to an individual user
@@ -27,16 +26,16 @@ The following steps allow you to assign Intune licenses to multiple users all at
 
 2. Select **Azure Active Directory** > **Licenses** > **All products** to see and manage all licensable products that you have available for your organization.
 3. Select the box next to **Intune**.
-4. Click **Assign** > **Add users and groups**.
-5. If you have created a group of users, click the group to add it to the **Selected items** list. Otherwise, select individual users that you have created earlier. Click **Select** to confirm your selection.
+4. Select **Assign** > **Add users and groups**.
+5. If you have created a group of users, select the group to add it to the **Selected items** list. Otherwise, select individual users that you have created earlier. Click **Select** to confirm your selection.
 
    [ ![Screenshot of Azure AD admin center with users selected.](../media/sign-up-for-intune-15.png) ](../media/sign-up-for-intune-15.png#lightbox)
   
-6. Click **Next: Assignment options** to confirm **Microsoft Intune** is **On**.
-7. Click **Review + assign** to confirm your license assignment settings.
-10. Click **Assign** to assign the licenses to the selected users.
+6. Select **Next: Assignment options** to confirm **Microsoft Intune** is **On**.
+7. Select **Review + assign** to confirm your license assignment settings.
+10. Select **Assign** to assign the licenses to the selected users.
 
-   A notification is displayed in the upper-right corner that shows the status and outcome of the process. If the assignment to the group couldn't be completed (for example, because of pre-existing licenses in the group), you can click the notification to view details.
+   A notification is displayed in the upper-right corner that shows the status and outcome of the process. If the assignment to the group couldn't be completed (for example, because of pre-existing licenses in the group), you can select the notification to view details.
 
    The user accounts now have the permissions needed to use the service and enroll devices into management.
 

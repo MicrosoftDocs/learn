@@ -4,7 +4,7 @@ After you verify that Azure Stack HCI is suitable for hosting your workload, you
 
 General planning considerations for an Azure Stack HCI implementation include:
 
-- The number of physical servers per cluster. This number must be between 2 and 16.
+- The number of physical servers per cluster. This number must be between 1 and 16.
 - The number of fault domains per cluster. By default, each node in a Storage Spaces Direct cluster is one fault domain.
 - The number and type of processors per server. The first of these values determine the core count and the latter dictates their speed.
 - The amount and type of memory per server, including whether to use persistent memory (PMEM).

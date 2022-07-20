@@ -2,7 +2,7 @@ In addition to storing data using Azure storage services or in your device's con
 
 ## Link module storage to device storage
 
-To enable a link from module storage to the storage on the host system, create an environment variable for your module that points to a storage folder in the container. Then, use the create options to bind that storage folder to a folder on the host machine.
+To enable a link from module storage to the storage on the host system, create an environment variable for your module that points to a storage folder in the container. Then, use the createOptions parameter in the deployment manifest to bind that storage folder to a folder on the host machine.
 
 For example, if you wanted to enable the IoT Edge hub to store messages in your device's local storage and retrieve them later, you can configure the environment variables and the create options in the Azure portal in the **Configure advanced Edge Runtime settings** section.
 
@@ -12,7 +12,7 @@ For example, if you wanted to enable the IoT Edge hub to store messages in your 
 :::image type="content" source="../media/m06-l04-edge-device-configure-local-offline-storage-7f6a4284.png" alt-text="Diagram that shows how to enable the IoT Edge hub to store messages in your device's local storage.":::
 
 
-Or, you can configure the local storage directly in the deployment manifest. For example:
+Or, you can configure the local storage directly in the deployment manifest under the createOptions parameter. For example:
 
 ```json
 "systemModules": {
@@ -64,5 +64,14 @@ sudo chown 1000 <HostStoragePath>
 sudo chmod 700 <HostStoragePath>
 
 ```
+
+## Additional Host resource scenarios
+
+In addition to using the container create options to enable access to local/host storage, scenarios that come up most often when building IoT Edge solutions include:
+
+ -  Map host port to module port
+ -  Restrict module memory and CPU usage
+
+You can find detailed information for implementing these scenarios here: [https://docs.microsoft.com/azure/iot-edge/how-to-use-create-options](/azure/iot-edge/how-to-use-create-options).
 
 You can find more details about create options from docker docs [https://docs.docker.com/engine/api/v1.32/\#operation/ContainerCreate](https://docs.docker.com/engine/api/v1.32/#operation/ContainerCreate).
