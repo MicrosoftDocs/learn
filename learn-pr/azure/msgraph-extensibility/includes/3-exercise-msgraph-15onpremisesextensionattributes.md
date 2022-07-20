@@ -8,7 +8,7 @@ Sign in to Graph Explorer as an administrator with both the *User Administrator*
 
 Consent to the *User.ReadWrite.All* and *Group.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
-In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions to allow them to discover their colleagues and update their own profile information.
+In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Define the extension attributes
 
@@ -134,7 +134,7 @@ Content-type: application/json
 }
 ```
 
-Because Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties, the team bonding app should include a logic to strip down the properties it doesn't need to read and only display to the end user the data in the properties that the app requires.
+Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties. Therefore, the team bonding app should include a logic to strip down the properties it doesn't need and only display to the end user the data that the app requires.
 
 ## Update and delete user data in an extension attribute property
 

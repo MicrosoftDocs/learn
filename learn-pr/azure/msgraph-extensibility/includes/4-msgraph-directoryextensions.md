@@ -50,19 +50,19 @@ Because directory extensions are closely tied to an owner app, they are also ava
 ### Manage directory extension definitions
 
 You manage the directory extension definitions as follows.
-+ Using a POST request, you can create a new definition and its associated directory extension property
-+ Using a GET request, you can retrieve one or all directory extension definitions for an app or across the tenant
-+ Using a DELETE request, you can delete a directory extension definition
++ Use the POST method to create a new definition and its associated directory extension property
++ Use the GET method to retrieve one or all directory extension definitions for an app or across the tenant
++ Use the DELETE method to delete a directory extension definition
 
 ### Use directory extension properties
 
 After you've defined the directory extension, it's now available for use in user profiles.
 
 You manage the directory extension properties on user profiles through the same HTTP methods used to manage users.
-+ Using a POST request, you can store data in the directory extension property when creating a new user
-+ Using a PATCH request, you can either store data in the directory extension property, update the stored data, or delete the existing data
++ Use the POST method to store data in the directory extension property when creating a new user
++ Use the PATCH method to either store data in the directory extension property, update the stored data, or delete the existing data
     + To delete data from the directory extension property, set its value to `null`
-+ Using a GET request, you can read the directory extension properties for all users or individual users in the tenant
++ Use the GET method to read the directory extension properties for all users or individual users in the tenant
 
 #### Query capabilities supported by directory extensions
 

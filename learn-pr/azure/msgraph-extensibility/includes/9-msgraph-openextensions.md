@@ -53,13 +53,13 @@ GET https://graph.microsoft.com/v1.0/users/{userId}/extensions/{extensionId}
 ```
 
 You manage open extensions for users as follows:
-+ Use a POST method to define a new open extension and store data in the open extension for an existing user
++ Use the POST method to define a new open extension and store data in the open extension for an existing user
     + You must specify the **@odata.type** property with the value `microsoft.graph.openTypeExtension`
-+ Use a PATCH method to either store data in the open extension property, update the stored data, or delete the existing data
++ Use the PATCH method to either store data in the open extension property, update the stored data, or delete the existing data
     + To delete data from a property in the open extension object, set its value to `null`
     + To update any property in the open extension object, you *must* specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties. Therefore, while you may want to update only the **xboxGamertag**, you must also specify both the **linkedInProfile** and **skypeId** so that the properties and their associated values aren't deleted.
     + To delete a property from the open extension object, don't pass it in the PATCH request body
-+ Use a DELETE method to delete an open extension object from the user
++ Use the DELETE method to delete an open extension object from the user
 
 During their use, maintain the [Considerations for using open extensions](#considerations-for-using-open-extensions).
 

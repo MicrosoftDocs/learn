@@ -42,10 +42,10 @@ The following is a JSON representation of the **onPremisesExtensionAttributes** 
 
 You manage the extension attribute properties on user profiles through the same HTTP methods used to manage user objects.
 
-+ Using a POST request, you can store data in an extension attribute property when creating a new user
-+ Using a PATCH request, you can either store data in the extension attribute property, update the stored data, or delete the existing data
++ Use the POST method to store data in an extension attribute property when creating a new user
++ Use the PATCH method to  either store data in the extension attribute property, update the stored data, or delete the existing data
     + To delete data from an extension attribute property, set its value to `null`
-+ Using a GET request, you can read the directory extension properties for all users or individual users in the tenant
++ Use the GET method to  read the directory extension properties for all users or individual users in the tenant
 
 You don't need to store data in all extension attributes. You only store data based on your need and unused extension attributes can remain *null*.
 

@@ -12,7 +12,7 @@ Sign in to Graph Explorer or an app you own as an administrator with the followi
 
 Consent to the *User.ReadWrite.All* and *Application.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
-In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite.All* Microsoft Graph permissions to allow them to discover their colleagues and update their own profile information.
+In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite.All* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Create schema extension definitions
 
