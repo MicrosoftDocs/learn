@@ -92,11 +92,13 @@ Microsoft Graph groups allow an organization to bring together users with common
 
 To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Yammer, Teams, and email.
 
-#### Customize tokens using data in directory extension properties
+#### Customize tokens using data in directory extensions
 
-Another Azure AD use case for the directory extension properties and their data is customizing tokens with claims.
+Another Azure AD use case for the directory extensions is customizing tokens with custom claims.
 
-<!--Placeholder: TO-DO See more: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims -->
+An app may require some additional user information that's not available in token claims by default. For example, the app may require a user's LinkedIn profile URL in the authorization claims for redirection to the user's LinkedIn profile.
+
+Directory extensions can therefore be used in custom claims to achieve this customized configuration.
 
 ### Considerations for using directory extensions
 

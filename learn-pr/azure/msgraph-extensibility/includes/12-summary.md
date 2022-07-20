@@ -20,3 +20,4 @@ Apart from users, other Microsoft Graph resource types may support some of the e
 + [Microsoft Graph directory extensions](/graph/api/resources/extensionproperty)
 + [Microsoft Graph open type extensions](/graph/api/resources/opentypeextension)
 + [Microsoft Graph schema extensions](/graph/api/resources/schemaextension)
++ [Customize claims using directory extensions](/azure/active-directory/develop/active-directory-schema-extensions)

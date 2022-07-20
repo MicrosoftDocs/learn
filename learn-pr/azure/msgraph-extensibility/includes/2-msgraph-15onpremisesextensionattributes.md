@@ -77,9 +77,11 @@ To avoid manually updating the membership of the group, Microsoft Graph supports
 
 #### Customize tokens using data in extension attribute properties
 
-Another Azure AD use case for the extension attribute properties and their data is customizing tokens with claims.
+Another Azure AD use case for the extension attribute properties and their data is customizing tokens with custom claims.
 
-<!--Placeholder: TO-DO See more: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims#configuring-directory-extension-optional-claims -->
+An app may require some additional user information that's not available in token claims by default. For example, the app may require a user's LinkedIn profile URL in the authorization claims for redirection to the user's LinkedIn profile.
+
+Extension attributes can therefore be used in custom claims to achieve this customized configuration.
 
 ### Considerations for using extension attribute properties
 
