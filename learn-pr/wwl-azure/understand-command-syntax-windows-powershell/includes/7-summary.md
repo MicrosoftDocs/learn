@@ -5,7 +5,7 @@ In this module, you've learned about the cmdlet structure and the parameters for
  -  Tab completion is a PowerShell feature that improves the speed and ease of finding and entering cmdlets and parameters.
  -  In addition to the help content relating to commands, **About** help files contain documentation about the PowerShell scripting language, operators, and other details. This information doesn't specifically relate to a single command, but to global shell techniques and features.
 
-## Additional Reading
+## Additional reading
 
 To learn more, go through the following document:
 
