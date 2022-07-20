@@ -26,6 +26,9 @@ products:
 - github
 - azure-spring-apps
 modules:
+- learn.wwl.migrate-spring-cloud-application-to-azure
 - learn.wwl.enable-monitoring-end-to-end-tracing
+- learn.wwl.secure-application-secrets-use-key-vault
+- learn.wwl.create-configure-azure-service-bus-azure-spring-apps
 trophy:
   uid: learn.wwl.deploy-run-java-applications-azure-spring-apps.trophy
