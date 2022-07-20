@@ -10,6 +10,6 @@ metadata:
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: microsoft-graph-extensions-api
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/4-msgraph-directoryextensions.md)]

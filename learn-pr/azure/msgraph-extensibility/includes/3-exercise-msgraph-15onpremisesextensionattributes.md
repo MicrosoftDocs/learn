@@ -1,6 +1,6 @@
-Microsoft Graph provides a set of 15 extension attributes for storing custom data. In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag. Employee profiles are represented in Azure AD, Microsoft 365, and Microsoft Graph as user profiles.
+In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
-In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app would make on behalf of the signed-in user.
+In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app would make on behalf of a signed-in user.
 
 ## Authenticate your session
 
@@ -11,6 +11,8 @@ Consent to the *User.ReadWrite.All* and *Group.ReadWrite.All* Microsoft Graph pe
 In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions to allow them to discover their colleagues and update their own profile information.
 
 ## Define the extension attributes
+
+Because the extension attributes are predefined, we can only manage them. Run the following request to read them and identify the attributes that already store data.
 
 ### Request
 ```msgraph-interactive
@@ -96,7 +98,7 @@ ConsistencyLevel: eventual
 
 ### Response
 
-The request will return all users who have shared their LinkedIn profile or their Xbox gamertag, including Adele. The following response object shows the response payload that Microsoft Graph returns to the app.
+The request will return all users who have shared their LinkedIn profile or their Xbox gamertag, including Adele, as follows:
 
 ```http
 HTTP/1.1 200 OK
@@ -132,7 +134,7 @@ Content-type: application/json
 }
 ```
 
-Because Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties, the team bonding app should include a logic to strip down the unrequired 12 properties and only display the data in the three properties that it requires.
+Because Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties, the team bonding app should include a logic to strip down the properties it doesn't need to read and only display to the end user the data in the properties that the app requires.
 
 ## Update and delete user data in an extension attribute property
 
@@ -140,7 +142,7 @@ Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the mile
 
 Adele also no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extensionAttribute14** property to `null`.
 
-Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
+The app will update Adele's profile by calling Microsoft Graph as follows.
 
 ### Request
 
@@ -157,7 +159,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 
 ### Response
 
-If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
+If the update is successful, Microsoft Graph returns a `204 No Content` HTTP response code to the app with no response body.
 
 ```http
 HTTP/1.1 204 No Content
@@ -196,9 +198,9 @@ POST https://graph.microsoft.com/v1.0/groups
 
 ### Response
 
-The request returns a `201 Created` response code and a Microsoft Graph **group** object in the response body as follows.
+The request returns a `201 Created` HTTP response code and a Microsoft Graph **group** object in the response body as follows.
 
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here has been shortened for readability.
 
 ```
 HTTP/1.1 201 Created
@@ -271,7 +273,7 @@ Content-type: application/json
 }
 ```
 
-And you've confirmed that the Xboxers group is now open for collaboration!
+The Xboxers group is now open for collaboration!
 
 ## Conclusion
 
@@ -280,4 +282,4 @@ You have used Microsoft Graph extension attribute properties to store three cust
 + Implement a custom search so employees in the company can discover each other's external social profiles.
 + Use the extension attribute values for dynamic group memberships
 
-After this exercise, Adele's profile has only the LinkedIn profile URL and Xbox gamer tag that can be discovered through the team bonding app. Other users may decide to share all three pieces of data or none. For each type of operation, you can implement the appropriate logic in the team bonding app to translate successful response codes to user-friendly response messages in the user interface.
+After this exercise, Adele's profile has only the LinkedIn profile URL and Xbox gamer tag that can be discovered through the team bonding app. Other users may decide to share all three pieces of data or none. For each type of operation, you should implement the appropriate logic in the team bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.

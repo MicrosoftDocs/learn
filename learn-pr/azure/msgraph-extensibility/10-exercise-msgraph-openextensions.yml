@@ -10,6 +10,6 @@ metadata:
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/10-exercise-msgraph-openextensions.md)]

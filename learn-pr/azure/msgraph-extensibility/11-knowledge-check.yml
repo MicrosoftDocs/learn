@@ -10,7 +10,7 @@ metadata:
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: microsoft-graph-extensions-api
-durationInMinutes: 1
+durationInMinutes: 3
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -44,31 +44,20 @@ quiz:
     - content: "Extension options in Microsoft Graph support query capabilities to allow matching against the data they store."
       isCorrect: false
       explanation: "Try again. Open extensions don't support any query capabilities."
-    - content: ""
+    - content: "Each extension option is available for only specific Microsoft Graph resources."
       isCorrect: true
       explanation: "Correct. "
-    - content: "Extension options in Microsoft Graph allow using custom property names that can easily identify with the custom data."
+    - content: "Extension options in Microsoft Graph allow using custom property names that can be easily identified with the custom data."
       isCorrect: false
       explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."
-  - content: ""
+  - content: "Which one of the following statements is true about extension options available in Microsoft Graph?"
     choices:
-    - content: ""
+    - content: "Extension options in Microsoft Graph support query capabilities to allow matching against the data they store."
+      isCorrect: false
+      explanation: "Try again. Open extensions don't support any query capabilities."
+    - content: "Each extension option is available for only specific Microsoft Graph resources."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. "
+    - content: "Extension options in Microsoft Graph allow using custom property names that can be easily identified with the custom data."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."

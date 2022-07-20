@@ -3,23 +3,23 @@ uid: learn.msgraph-extensibility
 metadata:
   moduleType: standard
   title: Add custom data to your app using extensions in Microsoft Graph
-  description: "Add custom properties to Microsoft Graph resources such as users and groups using extensions. Use the extensions to store lightweight data that can also be used to customize an app's functionality for example, through token customization."
+  description: "Add custom data to Microsoft Graph resources such as users using extensions as a lightweight option instead of an external database."
   ms.date: 06/24/2022
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: microsoft-graph-extensions-api
 title: Add custom data to your app using extensions in Microsoft Graph
-summary: "Add custom properties to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom properties and their associated data to build unique experiences for your applications."
+summary: "Add custom data to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom data to build unique experiences for your applications."
 abstract: |
   By the end of this module, you'll be able to:
-    - Choose extension options for adding custom properties to Microsoft Graph
-    - Add, query, and update custom properties and their associated data through Microsoft Graph
-    - Use data in custom properties to extend your application
+    - Choose extension options for adding custom data to Microsoft Graph
+    - Add, query, and update custom data through Microsoft Graph
+    - Use data in Microsoft Graph extensions to extend your application
 prerequisites: |
   - Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
   - Basic knowledge of working with REST APIs and how to use the create, read, update, and delete (CRUD) REST API operations
-  - Basic knowledge of working with data in Azure AD and Microsoft 365 using Microsoft Graph
+  - Basic knowledge of working with user data in Azure AD and Microsoft 365 using Microsoft Graph
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate

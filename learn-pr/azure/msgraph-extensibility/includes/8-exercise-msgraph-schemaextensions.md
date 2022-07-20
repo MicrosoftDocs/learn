@@ -1,6 +1,6 @@
 In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
-In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the schema extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of the signed-in user.
+In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the schema extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of a signed-in user.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ Sign in to Graph Explorer or an app you own as an administrator with the followi
 
 Consent to the *User.ReadWrite.All* and *Application.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
-In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions to allow them to discover their colleagues and update their own profile information.
+In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite.All* Microsoft Graph permissions to allow them to discover their colleagues and update their own profile information.
 
 ## Create schema extension definitions
 
@@ -31,7 +31,7 @@ The following request creates a schema extension definition named **teamBondingA
 POST ttps://graph.microsoft.com/v1.0/schemaExtensions
 
 {
-    "id": "teamBondingApp",
+    "id": "contoso_teamBondingApp",
     "description": "Extensions for custom properties used by the team bonding app",
     "targetTypes": [
         "user"
@@ -56,15 +56,13 @@ POST ttps://graph.microsoft.com/v1.0/schemaExtensions
 
 ### Response
 
-The following is the response object from the first request. Take note of the new extension name `extroow2sik_teamBondingApp`.
-
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions/$entity",
-    "id": "extroow2sik_teamBondingApp",
+    "id": "contoso_teamBondingApp",
     "description": "Extensions for custom properties used by the team bonding app",
     "targetTypes": [
         "user"
@@ -88,53 +86,9 @@ Content-type: application/json
 }
 ```
 
-## Retrieve all schema extensions in your tenant
-
-### Request
-
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/schemaExtensions
-```
-
-### Response
-
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#schemaExtensions",
-    "value": [
-        {
-            "id": "extroow2sik_teamBondingApp",
-            "description": "Extensions for custom properties used by the team bonding app",
-            "targetTypes": [
-                "user"
-            ],
-            "status": "InDevelopment",
-            "owner": "5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb",
-            "properties": [
-                {
-                    "name": "linkedInProfile",
-                    "type": "String"
-                },
-                {
-                    "name": "skypeId",
-                    "type": "String"
-                },
-                {
-                    "name": "xboxGamertag",
-                    "type": "String"
-                }
-            ]
-        }
-    ]
-}
-```
-
 ## Store user data in schema extension properties
 
-Consider a user named Adele Vance identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you'll store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new properties of the schema extension object that's named `extroow2sik_teamBondingApp`.
+Consider a user named Adele Vance identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you'll store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new properties of the schema extension object that's named `contoso_teamBondingApp`.
 
 In the team bonding app, Adele can use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
 
@@ -143,7 +97,7 @@ In the team bonding app, Adele can use a user interface to update the three prop
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
 
 {
-    "extroow2sik_teamBondingApp": {
+    "contoso_teamBondingApp": {
         "linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn",
         "skypeId": "AdeleV",
         "xboxGamertag": "AwesomeAdele"
@@ -152,7 +106,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 ```
 
 ### Response
-If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
+If the update is successful, Microsoft Graph returns a `204 No Content` HTTP response code to the app with no response body.
 
 ```http
 HTTP/1.1 204 No Content
@@ -167,7 +121,7 @@ Suppose another employee wants to discover their colleagues who have shared thei
 When the employee uses the user interface to find colleagues who have shared their Xbox gamertag or LinkedIn profiles, the app calls Microsoft Graph as follows:
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,extroow2sik_teamBondingApp&$filter=extroow2sik_teamBondingApp/xboxGamertag ne null or extroow2sik_teamBondingApp/linkedInProfile ne null&$count=true
+GET https://graph.microsoft.com/v1.0/users?$select=id,displayName,contoso_teamBondingApp&$filter=contoso_teamBondingApp/xboxGamertag ne null or contoso_teamBondingApp/linkedInProfile ne null&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -180,13 +134,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extroow2sik_teamBondingApp)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,contoso_teamBondingApp)",
     "@odata.count": 1,
     "value": [
         {
             "id": "6e03a2db-564a-47ec-ba51-d0cd38af069a",
             "displayName": "Adele Vance",
-            "extroow2sik_teamBondingApp": {
+            "contoso_teamBondingApp": {
                 "@odata.type": "#microsoft.graph.ComplexExtensionValue",
                 "xboxGamertag": "AwesomeAdele",
                 "skypeId": "AdeleV",
@@ -203,7 +157,7 @@ Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the mile
 
 Adele also no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **skypeId** property to `null`.
 
-Through the team bonding app's user interface, Adele will change the Xbox gamertag. The app will update the user profile by calling Microsoft Graph as follows.
+The app will update Adele's profile by calling Microsoft Graph as follows.
 
 ### Request
 
@@ -211,7 +165,7 @@ Through the team bonding app's user interface, Adele will change the Xbox gamert
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
 
 {
-    "extroow2sik_teamBondingApp": {
+    "contoso_teamBondingApp": {
         "xboxGamertag": "AtalantaAdele",
         "linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn",
         "skypeId": null
@@ -221,33 +175,15 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 
 ### Response
 
-If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
+If the update is successful, Microsoft Graph returns a `204 No Content` HTTP response code to the app with no response body.
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,displayName,extroow2sik_teamBondingApp)",
-    "@odata.count": 1,
-    "value": [
-        {
-            "id": "6e03a2db-564a-47ec-ba51-d0cd38af069a",
-            "displayName": "Adele Vance",
-            "extroow2sik_teamBondingApp": {
-                "@odata.type": "#microsoft.graph.ComplexExtensionValue",
-                "xboxGamertag": "AtalantaAdele",
-                "skypeId": null,
-                "linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn"
-            }
-        }
-    ]
-}
+HTTP/1.1 204 No Content
 ```
 
 ## Delete data from a schema extension object
 
-Suppose Adele no longer wants to share all the social profiles. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extroow2sik_teamBondingApp** object to `null`.
+Suppose Adele no longer wants to share any social profiles. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **contoso_teamBondingApp** object to `null`.
 
 Run the following request to remove data from all the three properties of the schema extension object.
 
@@ -257,13 +193,13 @@ Run the following request to remove data from all the three properties of the sc
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
 
 {
-    "extroow2sik_teamBondingApp": null
+    "contoso_teamBondingApp": null
 }
 ```
 
 ### Response
 
-If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
+If the update is successful, Microsoft Graph returns a `204 No Content` HTTP response code to the app with no response body.
 
 ```http
 HTTP/1.1 204 No Content
@@ -275,4 +211,4 @@ You have used Microsoft Graph schema extension properties to store three custom 
 + Retrieve those values or remove any values from the properties.
 + Implement a custom search so employees in the company can discover each other's external social profiles.
 
-After this exercise, Adele's social profiles are undiscoverable through the team bonding app. Other users may decide to share all three pieces of data or none. For each type of operation, you can implement the appropriate logic in the team bonding app to translate successful response codes to user-friendly response messages in the user interface.
+After this exercise, Adele's social profiles are undiscoverable through the team bonding app. Other users may decide to share all three pieces of data or none. For each type of operation, you should implement the appropriate logic in the team bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.

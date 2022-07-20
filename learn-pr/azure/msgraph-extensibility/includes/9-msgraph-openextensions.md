@@ -1,4 +1,4 @@
-The fourth type of extensibility option available for storing custom data in Microsoft Graph is **open extensions**.
+The fourth type of extension option available for storing custom data in Microsoft Graph is **open extensions**.
 
 In the team bonding app scenario, you want to store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag in their user profiles.
 
@@ -8,15 +8,14 @@ Here, you'll learn how to use open extensions to store the three pieces of user 
 
 The Microsoft Graph open extensions are only available for use by specific resources in Microsoft Graph including the **user** resource.
 
-Open extensions are also tied to an application that's the "creator app". However, unlike schema and directory extensions, the identifier of the creator app is undiscoverable when using open extensions.
+Open extensions are also tied to an application that's the "creator app" through loosely coupled. However, unlike schema and directory extensions, the identifier of the creator app is undiscoverable when using open extensions.
 
-During their use, maintain the [Considerations for using open extensions](#considerations-for-using-open-extensions).
+Open extension definitions are created and managed on-the-fly on users. They're considered unique for each user and it's not required to apply a universally consistent pattern across all users. For example, in the same tenant:
++ The user object for Adele can have an open extension named **socialSettings** with three properties - **linkedInProfile**, **skypeId**, and **xboxGamertag**
++ The user object for Bruno can have no open extension property
++ The user object for Alex can have an open extension named **socialSettings** with five properties - **theme**, **color**, **language**, **font**, and **fontSize**
 
-### Use open extensions
-
-Open extension definitions are created and managed on-the-fly against resource instances. There's no need to apply a universally consistent pattern for all resource instance. For example, a user object for Adele can have an open extension with three properties while another user object for Bruno can have no open extension property.
-
-Open extension definitions and their associated data are created and managed through the **extensions** relationship of the target resource and the associated **openTypeExtension** resource type.
+Open extensions and their associated data are created and managed through the **extensions** relationship of the target resource and the associated **openTypeExtension** resource type.
 
 The extension is identified by a unique **id** that must be defined during the "Create extension" operation via one of the following ways:
 + Explicitly define the **id** property in the request body
@@ -54,13 +53,15 @@ GET https://graph.microsoft.com/v1.0/users/{userId}/extensions/{extensionId}
 ```
 
 You manage open extensions for users as follows:
-+ Using a POST request, you can define a new open extension and store data in the open extension for an existing user
++ Use a POST method to define a new open extension and store data in the open extension for an existing user
     + You must specify the **@odata.type** property with the value `microsoft.graph.openTypeExtension`
-+ Using a PATCH request, you can either store data in the open extension property, update the stored data, or delete the existing data
++ Use a PATCH method to either store data in the open extension property, update the stored data, or delete the existing data
     + To delete data from a property in the open extension object, set its value to `null`
     + To update any property in the open extension object, you *must* specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties. Therefore, while you may want to update only the **xboxGamertag**, you must also specify both the **linkedInProfile** and **skypeId** so that the properties and their associated values aren't deleted.
     + To delete a property from the open extension object, don't pass it in the PATCH request body
-+ Using the DELETE method, you can delete an open extension object from the user
++ Use a DELETE method to delete an open extension object from the user
+
+During their use, maintain the [Considerations for using open extensions](#considerations-for-using-open-extensions).
 
 #### Query capabilities supported by open extension properties
 
@@ -72,10 +73,4 @@ Your app must retrieve the open extension and all it's related values then apply
 
 For users and other Microsoft Graph directory objects, you can only have two open extensions per creator app and a maximum of 2 Kb of data per open extension.
 
-Deleting an open extension definition doesn't affect accessing custom data that has been added to resource instances based on that definition.
-
-<!--To validate
-Qs:
-+ Can the open extension owner app be deleted while the open extension still exists?
-
--->
+Deleting a creator app doesn't affect the open extension and the data it stores.
