@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-second
+uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-create-resources
 title: Exercise - Create SQL API account and resources
 metadata:
   unitType: exercise
@@ -13,6 +13,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 7/11/2022
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
-  [!include[](includes/4-exercise.md)]
+  [!include[](includes/4-exercise-create-resources.md)]

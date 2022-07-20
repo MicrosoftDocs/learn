@@ -1,20 +1,16 @@
-Now you can create the various resources; such as databases, containers, and items; that you'll use in your Azure Cosmos DB account. For this project, you'll create a database named ``cosmicworks`` with a single container named ``products``. You need to make sure that the code won't crash trying to re-create a container if you run this console application multiple times.
-
-The products container will contain both the individual *product* items and special *category* items for each category. There's two cases you want to handle in this application:
+Recall that you can create items within your container using the Azure Cosmos DB SDK for .NET. For this project, the products container will contain both the individual *product* items and special *category* items for each category. There's two cases you want to handle in this application:
 
 - If a category is empty, it's fine to just create that category's item individually. There are no related product items to create.
 - However, if a category has related products, you'll want to create the category item and the related product items simultaneously.
 
-Right now, you have a few key requirements:
+Right now, you have two key requirements:
 
-1. Create a database if it doesn't already exist
-1. Create a container if it doesn't already exist
 1. Create an item individually as a single operation
 1. Use a transactional batch to create multiple related items
 
 [![Illustration of icons indicating data being uploaded to the cloud.](../media/project-visual-upload.png)](../media/project-visual-upload.png)
 
-After you complete this exercise, your project will create any databases, or containers it requires to execute. You'll also have built the logic to create items in your container either individually, or as a batch.
+After you complete this exercise, your project will have the logic to create items in your container either individually, or as a batch.
 
 ## Reinitialize your environment (optional)
 
@@ -42,138 +38,6 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
     ```bash
     cd ~/clouddrive/inventorytool && code .
     ```
-
-## Create a database and container
-
-The SDK contains useful methods that will only create a new resource if it doesn't already exist. By using these methods, you can run the application multiple times without worrying about exceptions raised by conflicts. Here, you'll create a database with shared throughput, and a container with a specific "slice" of that throughput.
-
-1. Open the **Program.cs** file.
-
-1. Create, or get, a new database by calling ``CosmosClient.CreateDatabaseIfNotExistsAsync``. Store the result in a variable named **database**. Be sure to set these parameters:
-
-    | Parameter | Value |
-    | --- | --- |
-    | **id** | ``cosmicworks`` |
-    | **throughput** | ``600`` |
-
-    ```csharp
-    Database database = await client.CreateDatabaseIfNotExistsAsync(
-        id: "cosmicworks",
-        throughput: 600
-    );
-    ```
-
-1. Output the unique identifier for the database.
-
-    ```csharp
-    Console.WriteLine($"[Database created]:\t{database.Id}");
-    ```
-
-1. Create, or get, a new container by calling ``Database.CreateContainerIfNotExistsAsync``. Store the result in a variable named **container**. Be sure to set these parameters:
-
-    | Parameter | Value |
-    | --- | --- |
-    | **id** | ``products`` |
-    | **partitionKeyPath** | ``/categoryId`` |
-    | **throughput** | ``400`` |
-
-    ```csharp
-    Container container = await database.CreateContainerIfNotExistsAsync(
-        id: "products",
-        partitionKeyPath: "/categoryId",
-        throughput: 400
-    );
-    ```
-
-1. Now, output the unique identifier for the container.
-
-    ```csharp
-    Console.WriteLine($"[Container created]:\t{container.Id}");
-    ```
-
-1. **Save** the **Program.cs** file.
-
-## Create record types for items
-
-C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable. Records also have an easy to read syntax and are quick to create with only a few lines of code. In this section, you'll create a base type for all items and individual types for each "kind" of item.
-
-1. Using the terminal, create a new file named **Item.cs**.
-
-    ```bash
-    touch Item.cs
-    ```
-
-1. Refresh the code editor by invoking the ``code`` command again.
-
-    ```bash
-    code .
-    ```
-
-1. Open the **Item.cs** file.
-
-1. Create a base type named **Item** that carries the three properties you want to use in all items for this container: ``id``, ``categoryId``, and ``type``.
-
-    ```csharp
-    public record Item(
-        string id,
-        string categoryId,
-        string type
-    );
-    ```
-
-1. **Save** the **Item.cs** file.
-
-1. Create a new file named **Category.cs** and refresh the code editor.
-
-    ```bash
-    touch Category.cs && code .
-    ```
-
-1. Open the **Category.cs** file.
-
-1. Create a new type named **Category** that inherits from the **Item** type. Ensure the type passes its values to the base implementation, and set the **type** variable to output the name of the **Category** type.
-
-    ```csharp
-    public record Category(
-        string id,
-        string categoryId,
-        string type = nameof(Category)
-    ) : Item(
-        id,
-        categoryId,
-        type
-    );
-    ```
-
-1. **Save** the **Category.cs** file.
-
-1. Create a new file named **Product.cs** and refresh the code editor.
-
-    ```bash
-    touch Product.cs && code .
-    ```
-
-1. Open the **Product.cs** file.
-
-1. Create a new type named **Product** that inherits from **Item** and adds a few new fields: ``name``, ``price``, ``archived``, and ``quantity``.
-
-    ```csharp
-    public record Product(
-        string id, 
-        string categoryId, 
-        string name, 
-        decimal price, 
-        bool archived, 
-        int quantity,
-        string type = nameof(Product)
-    ) : Item(
-        id,
-        categoryId,
-        type
-    );
-    ```
-
-1. **Save** the **Product.cs** file.
 
 ## Add an individual item to a container
 
@@ -337,6 +201,8 @@ In this section, we'll create a transactional batch to create the *tents* catego
 
 Your app now creates multiple items and is designed to be resilient enough to be ran multiple times without causing an exception. Here, you'll run the application and check the output for the unique identifiers of each of the six newly created items.
 
+### [Run application](#tab/run-app)
+
 1. Run the .NET application in the terminal
 
     ```dotnetcli
@@ -346,10 +212,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
 1. Observe the output of running the application. The output should match the example here.
 
     ```output
-    [Connection string]:    AccountEndpoint=https://<account-name>.documents.azure.com:443/;AccountKey=<account-key>;
-    [Client connected]
-    [Database created]:     cosmicworks
-    [Container created]:    products
+    ...
     [New item created]:     91f79374-8611-4505-9c28-3bbbf1aa7df7    (Type: Category)        (RUs: 6.29)
     [Batch started]
     [New item created]:     5df21ec5-813c-423e-9ee9-1a2aaead0be4    (Type: Category)
@@ -362,3 +225,84 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
     > [!TIP]
     > The RUs shown in this example output may vary from your output.
+
+### [Review code](#tab/review-code)
+
+1. Review the **Program.cs** code file to make sure that the code you added matches this sample.
+
+    ```csharp
+    Category helmets = new (
+        id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
+        categoryId: "gear-climb-helmets"
+    );
+    
+    PartitionKey helmetsKey = new ("gear-climb-helmets");
+    
+    ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
+    
+    Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
+    
+    Category tents = new (
+        id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
+        categoryId: "gear-camp-tents"
+    );
+    
+    Product cirroa = new (
+        id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
+        categoryId: "gear-camp-tents",
+        name: "Cirroa Tent", 
+        price: 490.00m, 
+        archived: false, 
+        quantity: 15
+    );
+    
+    Product kuloar = new (
+        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+        categoryId: "gear-camp-tents",
+        name: "Kuloar Tent", 
+        price: 530.00m, 
+        archived: false, 
+        quantity: 8
+    );
+    
+    Product mammatin = new (
+        id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
+        categoryId: "gear-camp-tents",
+        name: "Mammatin Tent", 
+        price: 0.00m, 
+        archived: true, 
+        quantity: 0
+    );
+    
+    Product nimbolo = new (
+        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+        categoryId: "gear-camp-tents",
+        name: "Nimbolo Tent", 
+        price: 330.00m, 
+        archived: false, 
+        quantity: 35
+    );
+    
+    PartitionKey tentsKey = new ("gear-camp-tents");
+    
+    TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
+        .UpsertItem<Category>(tents)
+        .UpsertItem<Product>(cirroa)
+        .UpsertItem<Product>(kuloar)
+        .UpsertItem<Product>(mammatin)
+        .UpsertItem<Product>(nimbolo);
+    
+    Console.WriteLine("[Batch started]");
+    
+    using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
+    
+    for (int i = 0; i < batchResponse.Count; i++)
+    {
+        TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
+        Console.WriteLine($"[New item created]:\t{result.Resource.id}\t(Type: {result.Resource.type})");
+    }
+    
+    Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
+    ```
+
+---

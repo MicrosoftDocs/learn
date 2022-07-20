@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-fourth
+uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-linq
 title: Exercise - Enumerate items using language-integrated query (LINQ)
 metadata:
   unitType: exercise
   title: Exercise - Enumerate items using language-integrated query (LINQ)
   description: |
-    TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords.
+    Use the Microsoft.Azure.Cosmos .NET SDK library to build SQL queries using the C# LINQ query syntax.
   sandbox: true
   interactive: bash-editor
   author: seesharprun
@@ -13,6 +13,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 7/11/2022
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
-  [!include[](includes/6-exercise.md)]
+  [!include[](includes/7-exercise-linq.md)]

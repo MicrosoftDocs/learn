@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-third
+uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-read-query
 title: Exercise - Read and query items
 metadata:
   unitType: exercise
   title: Exercise - Read and query items
   description: |
-    TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords.
+    Use the Microsoft.Azure.Cosmos .NET SDK library to point read items and perform SQL queries.
   sandbox: true
   interactive: bash-editor
   author: seesharprun
@@ -13,6 +13,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 7/11/2022
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
-  [!include[](includes/5-exercise.md)]
+  [!include[](includes/6-exercise-read-query.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-first
+uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-create-app
 title: Exercise - Create .NET app and import library
 metadata:
   unitType: exercise
@@ -13,6 +13,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 7/11/2022
-durationInMinutes: 12
+durationInMinutes: 7
 content: |
-  [!include[](includes/3-exercise.md)]
+  [!include[](includes/3-exercise-create-app.md)]

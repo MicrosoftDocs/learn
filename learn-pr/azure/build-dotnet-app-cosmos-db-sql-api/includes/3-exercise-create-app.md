@@ -39,7 +39,12 @@ Here, you'll get the connection string again and store it in an *environment var
 1. Get the ``Primary SQL Connection String`` credential from the account and save it in a shell variable named ``connectionString``.
 
     ```azurecli
-    connectionString=$(az cosmosdb keys list --name $accountName --resource-group $resourceGroup --type connection-strings --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" --output tsv)
+    connectionString=$(az cosmosdb keys list \
+        --name $accountName \
+        --resource-group $resourceGroup \
+        --type connection-strings \
+        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
+        --output tsv)
     ```
 
 1. To validate, output the connection string to the terminal.
@@ -170,6 +175,23 @@ Now, the .NET project should be built and ready for you to add your own custom c
 
 The application is now ready to run and connect to Azure Cosmos DB SQL API. Here, you'll compare your application code to our sample. Then, you'll check that your application works as expected by running the code.
 
+### [Run application](#tab/run-app)
+
+1. Run the .NET application in the terminal
+
+    ```bash
+    dotnet run
+    ```
+
+1. Observe the output of running the application. The output should match the example here.
+
+    ```output
+    [Connection string]:    AccountEndpoint=https://<account-name>.documents.azure.com:443/;AccountKey=<account-key>;
+    [Client connected]
+    ```
+
+### [Review code](#tab/review-code)
+
 1. Review the **inventorytool.csproj** project file to ensure that the project configuration matches this sample.
 
     ```xml
@@ -202,15 +224,4 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
     Console.WriteLine("[Client connected]");
     ```
 
-1. Run the .NET application in the terminal
-
-    ```bash
-    dotnet run
-    ```
-
-1. Observe the output of running the application. The output should match the example here.
-
-    ```output
-    [Connection string]:    AccountEndpoint=https://<account-name>.documents.azure.com:443/;AccountKey=<account-key>;
-    [Client connected]
-    ```
+---

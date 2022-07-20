@@ -40,10 +40,11 @@ subjects:
 units:
   - learn.build-dotnet-app-cosmos-db-sql-api.introduction
   - learn.build-dotnet-app-cosmos-db-sql-api.prepare
-  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-first
-  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-second
-  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-third
-  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-fourth
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-create-app
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-create-resources
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-create-items
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-read-query
+  - learn.build-dotnet-app-cosmos-db-sql-api.exercise-linq
   - learn.build-dotnet-app-cosmos-db-sql-api.knowledge-check
   - learn.build-dotnet-app-cosmos-db-sql-api.summary
 badge:
