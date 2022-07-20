@@ -4,7 +4,7 @@ Mara installed Delivery Plans in the team's Azure DevOps organization. She then 
 
 **Mara:** After our last conversation, I looked into our options for managing delivery plans. I found an Azure DevOps extension that seems to give us everything we need.
 
-**Andy:** I'm very interested to see what you've come up with. There's a lot of stress throughout the organization about the beta slip, so anything we can do to improve schedule efficiency will be quite welcome.
+**Andy:** I'm interested to see what you've come up with. There's much stress throughout the organization about the beta slip, so anything we can do to improve schedule efficiency will be welcome.
 
 **Mara:** Okay, here it is.
 

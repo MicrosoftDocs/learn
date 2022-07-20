@@ -1,6 +1,6 @@
 As development organizations grow, they need to reorganize into smaller teams that can efficiently manage portioned units of work. These teams will usually have their work schedules, boards, and other processes that meet their unique needs within the context of the organization’s larger goals. Over time, organizations may find that they enjoy network benefits by consolidating their processes around a consistent framework.
 
-A _delivery plan_ is a visualization of one or more work schedules. It's intended to provide teams and management an overall view of what each team is planning to produce and when. This allows decisions to be made that optimize the investments across the organization.
+A _delivery plan_ is a visualization of one or more work schedules. It's intended to provide teams and management an overall view of what each team is planning to produce and when. It allows decisions to be made that optimize the investments across the organization.
 
 Teams must regularly review their delivery plans to ensure that their work schedule aligns with other teams' schedules. These reviews should address questions like:
 * Are we sure we can deliver what we've committed to on our current schedule?

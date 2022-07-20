@@ -50,7 +50,7 @@ Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many 
 
 ### Add schedule milestone markers
 
-Milestone markers can be added to the delivery plan as reference points. These help you plan work within the context of significant or external dates. Let's add a few markers now. To do so:
+Milestone markers can be added to the delivery plan as reference points. They help you plan work within the context of significant or external dates. Let's add a few markers now. To do so:
 
 1. Select your delivery plan.
 1. In the top right toolbar, select **Settings**, and then, on the **Plan settings** pane, select **Markers**.
@@ -89,4 +89,4 @@ Your final sprint plan should look similar to this:
 
 :::image type="content" source="../media/5-optimized-work-schedule.png" alt-text="Screenshot of the optimized work schedule.":::
 
-You've just completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting for dependencies to be delivered, teams will always have productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up-to-date.
+You've completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting for dependencies to be delivered, teams will always have productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up-to-date.
