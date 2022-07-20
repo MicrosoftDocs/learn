@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-windows-powershell-pipeline.review-its-output
+title: Review Windows PowerShell pipeline and its output
+metadata:
+  title: Review Windows PowerShell pipeline and its output
+  description: "Review Windows PowerShell pipeline and its output"
+  ms.date: 07/20/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-review-its-output.md)]
