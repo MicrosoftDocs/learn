@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-objects-out-of-pipeline.learn-about-comparison-operators-powershell
+title: Learn about the comparison operators in PowerShell
+metadata:
+  title: Learn about the comparison operators in PowerShell
+  description: "Learn about the comparison operators in PowerShell"
+  ms.date: 07/20/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-learn-about-comparison-operators-powershell.md)]
