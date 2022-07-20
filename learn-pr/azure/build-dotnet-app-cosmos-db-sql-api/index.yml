@@ -20,7 +20,7 @@ abstract: |
    In this module, you'll practice how to:
     - Connect to an Azure Cosmos DB SQL API account using the .NET SDK
     - Create Azure Cosmos DB SQL API database, container, and item resources
-    - Execute multiple Azure Cosmos DB SQL API .NET SDK operations either as a transaction
+    - Execute multiple Azure Cosmos DB SQL API .NET SDK operations together as a transaction
     - Query Azure Cosmos DB SQL API items and iterate through the result set
 prerequisites: |
   - Experience with Azure Cosmos DB concepts such as databases, containers, and items

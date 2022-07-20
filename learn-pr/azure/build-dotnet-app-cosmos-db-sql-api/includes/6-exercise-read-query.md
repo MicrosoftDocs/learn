@@ -184,13 +184,17 @@ Your app now reads and queries items from the container. Here, you'll run the ap
     ```output
     ...
     [Point read item]:      91f79374-8611-4505-9c28-3bbbf1aa7df7    (RUs: 1)
-    [Start SQL query]:        SELECT * FROM products p WHERE p.categoryId = @partitionKey
+    [Start SQL query]:      SELECT * FROM products p WHERE p.categoryId = @partitionKey
     [Returned item]:        5df21ec5-813c-423e-9ee9-1a2aaead0be4    (Name: )
     [Returned item]:        e8dddee4-9f43-4d15-9b08-0d7f36adcac8    (Name: Cirroa Tent)
     [Returned item]:        6e3b7275-57d4-4418-914d-14d1baca0979    (Name: Nimbolo Tent)
     [Returned item]:        f7653468-c4b8-47c9-97ff-451ee55f4fd5    (Name: Mammatin Tent)
-    [SQL query metrics]:    (RUs: 2.91)
+    [Returned item]:        e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa    (Name: Kuloar Tent)
+    [SQL query metrics]:    (RUs: 2.94)
     ```
+
+    > [!TIP]
+    > The RUs shown in this example output may vary from your output.
 
     Did you notice that your *category* item successfully deserialized into the type you use for *products*? Since the category item didn't have a **name** property, that field was left to its default value. Type checking, schema management, and serialization/deserialization are all things your application can manage entirely client-side.
 

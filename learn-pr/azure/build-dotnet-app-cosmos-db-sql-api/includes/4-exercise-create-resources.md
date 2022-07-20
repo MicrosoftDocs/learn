@@ -192,9 +192,6 @@ Your app now creates a database and container. The methods you used to create th
     [Container created]:    products
     ```
 
-    > [!TIP]
-    > The RUs shown in this example output may vary from your output.
-
 ### [Review code](#tab/review-code)
 
 1. Review the **Item.cs** code file to make sure that your code matches this sample.

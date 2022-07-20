@@ -81,7 +81,7 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
 ## Implement multiple operations as a transactional batch
 
-Now consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we will create:
+Now consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we should end up with:
 
 [![Diagram of various items in Azure Cosmos DB organized by their specific partition key illustrating how five of the items belong to the "tents" partition key value while only one item belongs to "helmets".](../media/diagram-items.png)](../media/diagram-items.png)
 
@@ -105,7 +105,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
 
     | Field | ``cirroa`` | ``kuloar`` | ``mammatin`` | ``nimbolo`` |
     | --- | --- | --- | --- | --- |
-    | **id** | ``e8dddee4-9f43-4d15-9b08-0d7f36adcac8`` | ``6e3b7275-57d4-4418-914d-14d1baca0979`` | ``f7653468-c4b8-47c9-97ff-451ee55f4fd5`` | ``6e3b7275-57d4-4418-914d-14d1baca0979`` |
+    | **id** | ``e8dddee4-9f43-4d15-9b08-0d7f36adcac8`` | ``e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa`` | ``f7653468-c4b8-47c9-97ff-451ee55f4fd5`` | ``6e3b7275-57d4-4418-914d-14d1baca0979`` |
     | **categoryId** | ``gear-camp-tents`` | ``gear-camp-tents`` | ``gear-camp-tents`` | ``gear-camp-tents`` |
     | **name** | ``Cirroa Tent`` | ``Kuloar Tent`` | ``Mammatin Tent`` | ``Nimbolo Tent`` |
     | **price** | ``490.00`` | ``530.00`` | ``0.00`` | ``330.00`` |
@@ -123,7 +123,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
     );
     
     Product kuloar = new (
-        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+        id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
         categoryId: "gear-camp-tents",
         name: "Kuloar Tent", 
         price: 530.00m, 
@@ -213,14 +213,14 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
     ```output
     ...
-    [New item created]:     91f79374-8611-4505-9c28-3bbbf1aa7df7    (Type: Category)        (RUs: 6.29)
+    [New item created]:     91f79374-8611-4505-9c28-3bbbf1aa7df7    (Type: Category)        (RUs: 10.29)
     [Batch started]
     [New item created]:     5df21ec5-813c-423e-9ee9-1a2aaead0be4    (Type: Category)
     [New item created]:     e8dddee4-9f43-4d15-9b08-0d7f36adcac8    (Type: Product)
-    [New item created]:     6e3b7275-57d4-4418-914d-14d1baca0979    (Type: Product)
+    [New item created]:     e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa    (Type: Product)
     [New item created]:     f7653468-c4b8-47c9-97ff-451ee55f4fd5    (Type: Product)
     [New item created]:     6e3b7275-57d4-4418-914d-14d1baca0979    (Type: Product)
-    [Batch completed]:      (RUs: 40.38)
+    [Batch completed]:      (RUs: 48.76)
     ```
 
     > [!TIP]
@@ -257,7 +257,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
     );
     
     Product kuloar = new (
-        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+        id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
         categoryId: "gear-camp-tents",
         name: "Kuloar Tent", 
         price: 530.00m, 

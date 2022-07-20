@@ -10,16 +10,16 @@ With the .NET SDK for Azure Cosmos DB SQL API, you were able to illustrate the b
 
 ## References
 
-* Quickstart
+* **Quickstart**
   * [Azure Cosmos DB SQL API client library for .NET](/azure/cosmos-db/sql/quickstart-dotnet)
-* Developer reference
+* **Developer reference**
   * [Get started with Azure Cosmos DB SQL API and .NET](azure/cosmos-db/sql/how-to-dotnet-get-started)
   * [Create a database in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-create-database)
   * [Create a container in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-create-container)
   * [Create an item in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-create-item)
   * [Read an item in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-read-item)
   * [Query items in Azure Cosmos DB SQL API using .NET](azure/cosmos-db/sql/how-to-dotnet-query-items)
-* Samples
+* **Samples**
   * [Examples for Azure Cosmos DB SQL API SDK for .NET](azure/cosmos-db/sql/samples-dotnet)
-* Best practices
+* **Best practices**
   * [Best practices for Azure Cosmos DB .NET SDK](azure/cosmos-db/sql/best-practice-dotnet)

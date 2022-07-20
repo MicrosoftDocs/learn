@@ -137,10 +137,14 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 
     ```output
     [Start LINQ query]
-    [Page RU charge]:       2.97
+    [Page RU charge]:       3
     [Returned item]:        Product { id = 6e3b7275-57d4-4418-914d-14d1baca0979, categoryId = gear-camp-tents, type = Product, name = Nimbolo Tent, price = 330, archived = False, quantity = 35 }
     [Returned item]:        Product { id = e8dddee4-9f43-4d15-9b08-0d7f36adcac8, categoryId = gear-camp-tents, type = Product, name = Cirroa Tent, price = 490, archived = False, quantity = 15 }
+    [Returned item]:        Product { id = e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa, categoryId = gear-camp-tents, type = Product, name = Kuloar Tent, price = 530, archived = False, quantity = 8 }
     ```
+
+    > [!TIP]
+    > The RUs shown in this example output may vary from your output.
 
 ### [Review code](#tab/review-code)
 

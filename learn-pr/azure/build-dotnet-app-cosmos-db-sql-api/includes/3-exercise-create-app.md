@@ -91,7 +91,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     dotnet new console
     ```
 
-    > [!NOTE]
+    > [!TIP]
     > Since you did not specify a project name or a directory, the command will create the new project in the current directory and name the project to match the directory's name (inventorytool).
 
 1. Import the **Microsoft.Azure.Cosmos** SDK library from NuGet.
