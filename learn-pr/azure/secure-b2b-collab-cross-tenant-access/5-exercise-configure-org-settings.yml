@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.secure-b2b-collab-cross-tenant-access.exercise-configure-org-settings
+title: Exercise: Configure organizational settings
+metadata:
+  unitType: exercise
+  title: exercise
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 7/19/2022
+  author: msmimart
+  ms.author: mimart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-configure-org-settings.md)]
