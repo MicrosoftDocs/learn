@@ -1,4 +1,4 @@
-Define your access policies for B2B collaboration with other Azure Active Directory tenants by configuring inbound and outbound cross-tenant access settings. Your default and organization-specific settings will determine the apps and resources users can access and whether multi-factor authentication (MFA) from other tenants is trusted.
+Define your inbound and outbound B2B collaboration with other Azure Active Directory tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Azure AD organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant.
 
 ## Example scenario
 
