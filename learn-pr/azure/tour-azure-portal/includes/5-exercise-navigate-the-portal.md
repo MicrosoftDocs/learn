@@ -20,7 +20,7 @@ The Azure portal has several features and services available; let's look at some
 
 1. Select the **X** in the top right-hand corner to close the **Virtual machines** pane.
 
-1. Select on **Microsoft Azure** on the top left-hand side to get back to the home page.
+1. Select **Microsoft Azure** on the top left-hand side to get back to the home page.
 
 ## Azure Cloud Shell
 
@@ -30,7 +30,7 @@ The Azure Cloud Shell allows you to use a command-line interface (CLI) to execut
 
 The Azure Cloud Shell is available in the Sandbox environment, but the Sandbox version of the shell has reduced functionality. To use all of the Azure Cloud Shell features, use your own Azure subscription.
 
-When you launch the shell, you see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at any time through the language drop-down on the left side of the shell.
+When you launch the shell, you'll see a Welcome window. You can choose either a **Bash** or **PowerShell** environment, depending on your personal preferences. You can also change the shell at any time through the language drop-down on the left side of the shell.
 
 Finally, there are a variety of management and programming tools included in the created environment.
 
@@ -69,17 +69,17 @@ Finally, there are a variety of management and programming tools included in the
 
 ![Icon representing the settings panel on the top right-hand side menu.](../media/5-settings-icon.png)
 
-1. Select the **Settings** (cog) icon to open the **Portal settings** pane, showing the **General** settings by default.
+1. Select the **Settings** (cog) icon to open the **Portal settings** pane, showing the **Directories + subscriptions** settings by default.
 
-1. Drop down the **Sign me out when inactive** setting, and select **After one hour**.
-
-1. Under **Choose a theme**, select the different colored themes and observe the changes to the portal UI. Leave it set to the one you like the best.
-
-1. Under **High contrast theme**, try the three different options.
+1. Select the **Signing out + notifications** tab at the left, then drop down the **Sign me out when inactive** setting and select **After one hour**.
 
 1. Select **Enable pop-up notifications**. When this option is checked, notifications will appear as pop-up "toast"-style notifications. They will still show up in the Notifications (bell) icon as well.
 
-1. Select the **Language & region** tab in the settings. Select **Language** and pick **Español**, and then select the **Apply** button. If a **Translate this page** dialog box appears, close the box. The whole portal is now in Spanish.
+1. Select the **Appearance + startup views** tab at the left, and under **Theme**, select the different colored themes and observe the changes to the portal UI. Leave it set to the one you like the best.
+
+1. Under **High contrast theme**, try the three different options.
+
+1. Select the **Language & region** tab at the left, Select **Language** and pick **Español**, and then select the **Apply** button. If a **Translate this page** dialog box appears, close the box. The whole portal is now in Spanish.
 
 1. To revert back to English, select the **Settings** (cog) icon in the top menu bar, and switch to the **Idioma y región** settings. Select **Idioma**, and pick **English**. Select the **Aplicar** button. The portal returns to English.
 
@@ -91,37 +91,39 @@ Finally, there are a variety of management and programming tools included in the
 
 1. Select the **Help + support** button.
 
-1. In the **Help + support** pane, under **Support**, select **New support request**. To create a new support request, you would fill in the information in each of the following sections, and then select **Create** to lodge the issue.
+1. In the **Help + support** pane, select **Create a support request**. To create a new support request, you would fill in the information in each of the following sections, and then select **Create** to lodge the issue.
 
-    - **Basics:** the issue type
-    - **Problem:** severity of the problem, a summary and description, and any additional information
-    - **Contact information:** preferred contact method and the information associated with this contact method
+    - **Problem description:** a summary of the issue and the issue type
+    - **Recommended solution:** review suggested solutions to your issue; if none apply, select **Next**
+    - **Additional details:** add more details about your issue, including your preferred contact method and contact info
+    - **Review + create:** review your information and submit your support request
 
 1. You can view the status of your support requests by selecting on **All support requests**.
 
 Support requests can only be created using an active paid subscription. Creating support requests from a free Microsoft Learn sandbox is not supported.
 
-### What's new and other information
+### Other Help information
 
-1. Select the **Help** icon and select **What's new**.
+1. Select the **Help** icon and select **View service health**.
 
-1. Review the features that have recently been released. Also note and explore the other **Help** menu options, such as:
+1. Review any current service issues or planned maintenance. 
 
-    - Azure updates
-    - Launch guided tour
-    - Keyboard shortcuts
-    - Show diagnostics
-    - Privacy statement
+1. You can also explore the other **Help** menu options, such as:
+
+    - Ask the Azure community
+    - Explore Azure documentation
+    - View billing FAQs
+    - Visit Quickstart center
 
 1. Select the **X** in the top right-hand corner to close the **Help** pane.
 
-1. Close the **What's new** pane. You should now be back to the Dashboard.
+1. Close the **Service Health** pane. You should now be back to the Dashboard.
 
 ## Feedback pane
 
 ![Icon representing the feedback panel option on the top right-hand side menu.](../media/5-feedback-icon.png)
 
-1. Select the **Feedback** (smiley face) icon to open the **Send us feedback** pane.
+1. Select the **Feedback** icon to open the **Send us feedback** pane.
 
 1. Type your impressions of Azure in the **Tell us about your experience** box, select the box that says **Microsoft can email you about your feedback**, and select **Submit Feedback**.
 
