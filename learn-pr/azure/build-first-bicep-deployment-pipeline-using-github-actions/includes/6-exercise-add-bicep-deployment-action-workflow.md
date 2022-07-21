@@ -43,7 +43,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. At the top of the file, above the `jobs:` line, add a `permissions` section:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="1-8, 13" highlight="5-7" ::: <!-- TODO -->
+   :::code language="yaml" source="code/6-workflow.yml" range="1-8, 13" highlight="5-7" :::
 
    This change allows the workflow to use a workload identity.
 

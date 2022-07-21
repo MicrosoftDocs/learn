@@ -54,14 +54,14 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="cli"
 
-1. TODO assemble subject variables
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
    ```azurecli
    githubOrganizationName='mygithubuser'
    githubRepositoryName='toy-website-workflow'
    ```
 
-1. Run the code below, which creates a workload identity:
+1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
 
    ```bash
    applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-workflow')
@@ -73,23 +73,18 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
       --parameters "{\"name\":\"toy-website-workflow\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
-
-   {"name":"todo1","issuer":"https://token.actions.githubusercontent.com","subject":"repo:gitlearndemojodowns/toy-website-workflowx:ref:refs/heads/main","audiences":["api://AzureADTokenExchange"]}
-
-   {"name":"todo2","issuer":"https://token.actions.githubusercontent.com","subject":"repo:gitlearndemojodowns/toy-website-workflowxef:refs/heads/main","audiences":["api://AzureADTokenExchange"]}
-
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. TODO assemble subject variables
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
    ```azurepowershell
    $githubOrganizationName = 'mygithubuser'
    $githubRepositoryName = 'toy-website-workflow'
    ```
 
-1. Run the code below, which creates a workload identity:
+1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-workflow'
@@ -140,9 +135,11 @@ New-AzRoleAssignment `
 
 ## Create GitHub secrets
 
+You've created a resource group and a workload identity. Next, create some secrets in GitHub Actions so that your workflow can sign in by using the workload identity.
+
 ::: zone pivot="cli"
 
-1. TODO
+1. Run the following code to show you the values you need to create as GitHub secrets:
 
    ```bash
    echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
@@ -150,13 +147,27 @@ New-AzRoleAssignment `
    echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
    ```
 
-1. TODO create secrets in GH
+1. In your browser, navigate to your GitHub repository.
+
+1. Select **Settings** > **Secrets** > **Actions**.
+
+1. Select **New repository secret**.
+
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+
+1. Name the secret *AZURE_CLIENT_ID*.
+
+1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
+
+1. Select **Add secret**. 
+
+1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. TODO
+1. Run the following code to show you the values you need to create as GitHub secrets:
 
    ```azurepowershell
    $azureContext = Get-AzContext
@@ -165,6 +176,20 @@ New-AzRoleAssignment `
    Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
    ```
 
-1. TODO create secrets in GH
+1. In your browser, navigate to your GitHub repository.
+
+1. Select **Settings** > **Secrets** > **Actions**.
+
+1. Select **New repository secret**.
+
+   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
+
+1. Name the secret *AZURE_CLIENT_ID*.
+
+1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
+
+1. Select **Add secret**. 
+
+1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
 
 ::: zone-end

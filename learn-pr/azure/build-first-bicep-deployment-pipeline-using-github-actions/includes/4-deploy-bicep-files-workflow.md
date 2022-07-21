@@ -116,4 +116,4 @@ When your workflow starts, the runner that's running your deployment steps has a
 > [!TIP]
 > Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments, and GitHub secrets for anything that is secret. Because the workflow will always use the same Bicep file, you don't need to create a variable for the path.
 
-<!-- TODO we use secrets for sub ID, client ID, tenant ID -->
+In this module, you'll use GitHub secrets to store the information the `azure/login` task needs to sign in to Azure: your Azure AD subscription and tenant ID, and the workload identity's application registration ID.
