@@ -177,13 +177,13 @@ Microsoft Sentinel is a SIEM tool that provides advanced log analysis across ent
 
 #### Stream logs to Event Hubs
 
-Routing logs to an Azure Event Hub allows you to integrate with third-party SIEM tools like Sumologic and Splunk. This integration allows you to combine Azure AD activity log data with other data managed by your SIEM, to provide richer insights into your environment. Learn how to stream logs to an Event Hub.
+Routing logs to an Azure Event Hub allows you to integrate with third-party SIEM tools like Sumologic and Splunk. This integration allows you to combine Azure AD activity log data with other data managed by your SIEM, to provide richer insights into your environment.
 
 #### Send logs to Azure Monitor logs
 
-Azure Monitor logs is a solution that consolidates monitoring data from different sources and provides a query language and analytics engine that gives you insights into the operation of your applications and resources. By sending Azure AD activity logs to Azure Monitor logs, you can quickly retrieve, monitor and alert on collected data. Learn how to send data to Azure Monitor logs.
+Azure Monitor logs is a solution that consolidates monitoring data from different sources and provides a query language and analytics engine that gives you insights into the operation of your applications and resources. By sending Azure AD activity logs to Azure Monitor logs, you can quickly retrieve, monitor and alert on collected data.
 
-You can also install the pre-built views for Azure AD activity logs to monitor common scenarios involving sign-ins and audit events. Learn how to install and use log analytics views for Azure AD activity logs.
+You can also install the pre-built views for Azure AD activity logs to monitor common scenarios involving sign-ins and audit events.
 
 
 

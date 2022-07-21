@@ -27,59 +27,39 @@ durationInMinutes: 1
 ###########################################################################
 content: |
 quiz:
+  title: Check your knowledge
   questions:
-  - content: ""
+  - content: 'Which activity log has information about the usage of apps?'
     choices:
-    - content: ""
+    - content: Audit
+      isCorrect: false
+      explanation: The audit log has Information about changes applied to your tenant such as users and group management or updates applied to your tenant’s resources.
+    - content: Sign-ins
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: The sign-ins log has information about sign-ins and how your resources are used by your users, services and apps.
+    - content: Provisioning
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: The provisioning log has information about activities performed by the provisioning service, such as the creation of a group in ServiceNow or a user imported from Workday.
+  - content: 'When should you access activity logs through the Azure portal?'
     choices:
-    - content: ""
+    - content: If you need to create a long-term backup of your activity logs.
+      isCorrect: false
+      explanation: To create a long-term backup of your activity logs, you can, for example, use an Azure storage account.
+    - content: If you need to analyze data, create dashboard and alert on specific events. 
+      isCorrect: false
+      explanation: Route your activity logs to an Azure Log Analytics workspace if you need to analyze data, create dashboard and alert on specific events.
+    - content: If you need to review a small number of entries
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Accessing activity logs through the Azure portal is helpful if you need to, for example, investigate a small set of sign-ins caused by a user or app over a short period.
+  - content: 'If you want to use your activity logs to create a rich report, you need to route your activity logs to?'
     choices:
-    - content: ""
+    - content: A storage account.
+      isCorrect: false
+      explanation: To create a long-term backup of your activity logs, you can, for example, use an Azure storage account.
+    - content: An Event Hub 
+      isCorrect: false
+      explanation: Routing logs to an Azure Event Hub allows you to integrate with third-party SIEM tools like Sumologic and Splunk.
+    - content: Azure Monitor
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Route your activity logs to an Azure Log Analytics workspace if you need to analyze data, create dashboard and alert on specific events.
+ 
