@@ -1,6 +1,7 @@
 Power BI dataflows enable you to build reusable data tables in a workspace using Power Query Online, and share them for use in other reports and with other users for reuse in other workspaces. Dataflows are objects in a workspace alongside datasets, dashboards, reports, and workbooks. When a Power BI dataflow is refreshed, behind the scenes it loads its data into files located in a data lake, Azure Data Lake Storage Gen 2 (ADLS Gen 2).
 
-![Screenshot of dataflow diagram showing data flowing from left to right. Data flows from source, through ADLS Gen2 storage, through to Power BI assets.](../media/dataflows-introduction-self-service-flow.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of dataflow diagram showing data flowing from left to right. Data flows from source, through ADLS Gen2 storage, through to Power BI assets.](../media/dataflows-introduction-self-service-flow.png)
 
 Power BI dataflows should be used in Premium capacity for enterprise solutions, to take advantage of features like advanced compute, incremental refresh, and linked and computed entities.
 
