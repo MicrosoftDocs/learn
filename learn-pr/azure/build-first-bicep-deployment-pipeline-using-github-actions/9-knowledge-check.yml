@@ -15,7 +15,7 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: |
+  - content: | # TODO check this
       When you execute your workflow you get the following error message:
       
       `Az CLI Login failed. Please check the credentials.`
