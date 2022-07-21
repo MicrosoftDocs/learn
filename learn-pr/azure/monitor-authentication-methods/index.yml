@@ -3,8 +3,8 @@ uid: learn.monitor-authentication-methods
 metadata:
   moduleType: build-your-first-using-product # Do not edit: type must be 'build-your-first-using-product'
   title: Monitor and report on authentication methods used in Azure AD                     # Title must be "(verb) your first (thing) by using (product)"
-  description: "TODO"                        # Copy your 'apply' Learning Objective here (see below)
-  ms.date: 06/06/2022                        # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  description: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."                        # Copy your 'apply' Learning Objective here (see below)
+  ms.date: 07/21/2022                        # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: MarkusVi                 # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: markvi                      # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial             # Do not edit: value must be "interactive-tutorial"

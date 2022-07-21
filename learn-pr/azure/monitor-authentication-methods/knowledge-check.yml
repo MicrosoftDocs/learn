@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 06/06/2022
+  description: Knowledge check
+  ms.date: 07/21/2022
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 10
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
