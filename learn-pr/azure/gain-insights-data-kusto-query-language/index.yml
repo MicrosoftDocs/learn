@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure subscription. Create a [free Azure account](https://azure.microsoft.com/free/)
   - Familiarity with database structures like tables, columns, and rows
   - Familiarity with Kusto Query Language operators such as count, take, project, where, and sort
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/gain-insights-in-your-data-using-kusto-query-language.svg
 levels:
   - intermediate 
 roles: 

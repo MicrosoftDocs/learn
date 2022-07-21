@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-concepts.sort-filter-data
+title: Sort and filter data
+metadata:
+  title: Sort and filter data
+  description: "Sort and filter data"
+  ms.date: 06/16/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-sort-filter-data.md)]

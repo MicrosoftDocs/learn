@@ -1,0 +1,21 @@
+## Data professionals
+
+With organizations gathering, storing, and reporting on vast quantities of information, data needs to be managed before it can be used in important decision-making processes. Various roles are necessary to support business with their data requirements. Data professionals frequently work together to achieve a satisfactory outcome:
+
+- **Database administrator** - A database administrator (DBA) has an operational role, and is responsible for the server uptime. Critical systems within a business usually depend on a database server, and a core function of the DBA is to ensure the systems are available. The DBA looks after databases by allowing access, configuring security, taking backups, and managing high availability (HA). DBAs must deal with any hardware failure or disaster. If a critical system goes down, they must bring it back up as soon as possible, usually working to the time limitation set out in a service level agreement (SLA).
+
+- **Data engineer** - Data engineers design and build data solutions that manage the flow of data around the business. This role involves developing databases, often populating them with data from internal files and data stores, and third-party systems. A data engineer integrates data from other systems. They conduct the necessary transformations so that the data is structured ready for other business users, such as data analysts and data scientists. They often work closely with the database administrator to plan and support the database servers.
+
+- **Data analyst** - The data analyst will model, query, and visualize data. Data analysts work with super users across the business to create reports and dashboards to supply each department with data that monitors performance. The analyst helps uncover patterns and trends to support the stakeholders with their decision-making.
+
+These data professionals also work alongside:
+
+- **Data scientists** - This role involves diving deeper than a data analyst. Data scientists apply statistical analysis techniques to data, and use probabilistic models to create machine learning (ML) solutions that predict outcomes. This is a relatively new role to many organizations, but its demand has grown with the increase in both the size of data collected in our digital world, and the requirement to obtain further value from it to ensure business competitiveness and success.
+
+- **Application developers** - An application developer creates software applications to enable users to interact with business data. Application developers often collaborate with a data engineer, who creates and manages the data source, the developer builds a user interface for viewing, managing, or processing the data. The solutions can be web, cloud, or desktop applications, depending on the business requirement.
+
+- **Infrastructure operators** - An infrastructure operator is responsible for managing the underlying compute, storage, and networking services. Much like the DBA role, the operator ensures systems are available, or restored as quickly as possible following failure. This can be a varied role, supporting all departments within the business to enable continuous service of systems across offices, home offices, call centers, warehouses and distribution centers, and manufacturing plants.  
+
+In this video, you will learn about the key data professions, and see how they work together to provide data solutions to a business:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4U38s]

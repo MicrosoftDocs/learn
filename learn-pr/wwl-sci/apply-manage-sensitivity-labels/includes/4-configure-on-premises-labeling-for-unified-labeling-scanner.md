@@ -85,7 +85,7 @@ Perform the following steps to fetch an Azure AD Token for the Unified Labeling 
 
 1. Within the overview page copy, the **Tenant ID** required for the next step.
 
-1. Configure the Azure AD applications for **Set-AIP Authentications** from the Windows Server computer, if your scanner service account has been granted the Log-on locally right for the installation, sign in with this account and start a PowerShell session using the **AzureInformationProtection** module.
+1. Configure the Azure AD applications for **Set-AIP Authentications** from the Windows Server computer, if your scanner service account has been granted the sign in locally right for the installation, sign in with this account and start a PowerShell session using the **AzureInformationProtection** module.
 
     ```powershell
     Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>

@@ -1,4 +1,4 @@
-You've been asked to assess ways to reduce help-desk costs in your retail organization. You've noticed that support staff spend much of their time resetting passwords for users. Users often complain about delays with this process, and these delays impact their productivity. You want to understand how you can configure Azure to enable users to manage their own passwords.
+You've been asked to assess ways to reduce help-desk costs in your retail organization. You've noticed that the support staff spends much of their time resetting passwords for users. Users often complain about delays with this process, and these delays impact their productivity. You want to understand how you can configure Azure to enable users to manage their own passwords.
 
 In this unit, you'll learn how self-service password reset (SSPR) works in Azure Active Directory (Azure AD).
 
@@ -16,7 +16,7 @@ The user initiates a password reset either by going directly to the password res
 1. **Verification**: The user enters their username and passes a captcha to ensure that it's a user and not a bot.
 1. **Authentication**: The user enters the required data to authenticate their identity. They might, for example, enter a code or answer security questions. 
 1. **Password reset**: If the user passes the authentication tests, they can enter a new password and confirm it.
-1. **Notification**: A message is usually sent to the user to confirm the reset.
+1. **Notification**: A message is sent to the user to confirm the reset.
 
 There are several ways you can customize the SSPR user experience. For example, you can add your company logo to the sign-in page so users know that they're in the right place to reset their password.
 
@@ -76,4 +76,4 @@ In a hybrid situation, where you have Active Directory on-premises and Azure AD 
 
 ## SSPR deployment options
 
-You can deploy SSPR with password writeback by using [Azure AD Connect](/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback), depending on the needs of users. Each option can be deployed side-by-side in different domains to target different sets of users. This helps existing users on-premises to writeback password changes while adding an option for users in disconnected domains because of a company merger or split. Users from an existing on-premises domain can use Azure AD Connect while new users from a merger can use use cloud sync in another domain. Cloud sync can also provide higher availability because it doesn't rely on a single instance of Azure AD Connect. For a feature comparison between the two deployment options, see [Comparison between Azure AD Connect and cloud sync](/azure/active-directory/cloud-sync/what-is-cloud-sync#how-is-azure-ad-connect-cloud-sync-different-from-azure-ad-connect-sync).
+You can deploy SSPR with password writeback by using [Azure AD Connect](/azure/active-directory/authentication/tutorial-enable-sspr-writeback) or [cloud sync](/azure/active-directory/authentication/tutorial-enable-cloud-sync-sspr-writeback), depending on the needs of users. Each option can be deployed side-by-side in different domains to target different sets of users. This helps existing users on-premises to writeback password changes while adding an option for users in disconnected domains because of a company merger or split. Users from an existing on-premises domain can use Azure AD Connect while new users from a merger can use cloud sync in another domain. Cloud sync can also provide higher availability because it doesn't rely on a single instance of Azure AD Connect. For a feature comparison between the two deployment options, see [Comparison between Azure AD Connect and cloud sync](/azure/active-directory/cloud-sync/what-is-cloud-sync#how-is-azure-ad-connect-cloud-sync-different-from-azure-ad-connect-sync).

@@ -3,17 +3,19 @@ uid: learn.wwl.implement-compliance-controls-for-sensitive-data
 metadata:
   title: Implement compliance controls for sensitive data
   description: "Implement compliance controls for sensitive data"
-  ms.date: 03/15/2022
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement compliance controls for sensitive data
-summary: Explore data classification capabilities and degrees of confidentiality. Explore and configure advanced threat protection options, including SQL injection.
+summary: Explore data classification capabilities and degrees of confidentiality. Implement security options to maintain private data safe, including Azure SQL auditing, Microsoft Defender for SQL, row-level security, Dynamic Data Masking and Azure SQL Database Ledger.
 abstract: |
   After completing this module, you will be able to:
   - Plan and implement data classification in Azure SQL Database
-  - Understand and configure Azure threat protection
+  - Understand and configure row-level security and dynamic data masking
+  - Understand the usage of Microsoft Defender for SQL
+  - Explore how Azure SQL Database Ledger works
 prerequisites: |
   - Ability to write code in the SQL language, particular the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
@@ -29,14 +31,18 @@ products:
 - azure-sql-database
 - sql-server
 subjects:
+- classification-analysis
 - database
 - threat-protection
-- classification-analysis
 units:
 - learn.wwl.implement-compliance-controls-for-sensitive-data.introduction
-- learn.wwl.implement-compliance-controls-for-sensitive-data.describe-data-classification
-- learn.wwl.implement-compliance-controls-for-sensitive-data.describe-advanced-threat-protection
-- learn.wwl.implement-compliance-controls-for-sensitive-data.describe-sql-injection
+- learn.wwl.implement-compliance-controls-for-sensitive-data.explore-data-classification
+- learn.wwl.implement-compliance-controls-for-sensitive-data.explore-server-and-database-audit
+- learn.wwl.implement-compliance-controls-for-sensitive-data.implement-dynamic-data-masking
+- learn.wwl.implement-compliance-controls-for-sensitive-data.implement-row-level-security
+- learn.wwl.implement-compliance-controls-for-sensitive-data.understand-microsoft-defender-for-sql
+- learn.wwl.implement-compliance-controls-for-sensitive-data.explore-azure-sql-database-ledger
+- learn.wwl.implement-compliance-controls-for-sensitive-data.implement-azure-purview
 - learn.wwl.implement-compliance-controls-for-sensitive-data.exercise-enable-advanced-data-security-classification
 - learn.wwl.implement-compliance-controls-for-sensitive-data.knowledge-check
 - learn.wwl.implement-compliance-controls-for-sensitive-data.summary

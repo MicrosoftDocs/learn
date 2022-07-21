@@ -66,7 +66,7 @@ successful.
 
 ## Review the cyber kill chain 
 
-In the information security lexicon, a kill chain describes the structure of an attack against an objective. The series of steps describe a cyberattacks progression from reconnaissance to data exfiltration. 
+In information security, a *kill chain* describes the structure of an attack against an objective. The series of steps describe a cyberattack's progression from reconnaissance to data exfiltration. 
 
 Understanding the intention of an attack can help you investigate and report the event more easily. Microsoft Defender for Cloud alerts includes the 'intent' field to help with these efforts. 
 
@@ -77,9 +77,7 @@ Understanding the intention of an attack can help you investigate and report the
 Cloud applications are complex, with many moving parts. Logging data can provide insights about your applications and help you: 
 
 - Troubleshoot past problems or prevent potential ones 
-
 - Improve application performance or maintainability 
-
 - Automate actions that would otherwise require manual intervention 
  
 ![Diagram that shows types of logs in Azure.](../media/security-information-event-management.png)
@@ -90,17 +88,9 @@ Azure logs are categorized into the following types:
     Manager CREATE, UPDATE, and DELETE operations. For more information,
     see [Azure activity logs](/azure/azure-monitor/essentials/platform-logs-overview).
 
--   **Data plane logs** provide information about events raised as part
-    of Azure resource usage. Examples of this type of log are the
-    Windows event system, security and application logs in a virtual
-    machine (VM), and the [diagnostics logs](/azure/azure-monitor/essentials/platform-logs-overview)
-    configured through Azure Monitor.
+-   **Data plane logs** provide information about events raised as part of Azure resource usage. Examples of this type of log are the Windows event system, security and application logs in a virtual machine (VM), and the [diagnostics logs](/azure/azure-monitor/essentials/platform-logs-overview) configured through Azure Monitor.
 
--   **Processed events** provide information about analyzed
-    events/alerts. Examples of this type are [Microsoft Defender for
-    Cloud alerts](https://docs.microsoft.com/azure/security-center/security-center-managing-and-responding-alerts), where [Microsoft
-    Defender for Cloud](https://docs.microsoft.com/azure/security-center/security-center-introduction) has processed and analyzed subscriptions and provides concise security
-    alerts.
+-   **Processed events** provide information about analyzed events/alerts. Examples of this type are [Microsoft Defender for Cloud alerts](https://docs.microsoft.com/azure/security-center/security-center-managing-and-responding-alerts), where [Microsoft Defender for Cloud](https://docs.microsoft.com/azure/security-center/security-center-introduction) has processed and analyzed subscriptions and provides concise security alerts.
 
 The following table lists the most important types of logs available in Azure:
 
@@ -115,9 +105,9 @@ The following table lists the most important types of logs available in Azure:
 | [Application insight](/azure/azure-monitor/app/app-insights-overview) | Logs, exceptions, and custom diagnostics | Provides an application performance monitoring (APM) service for web developers on multiple platforms. | REST API, [Power BI](https://powerbi.microsoft.com/documentation/powerbi-azure-and-power-bi/) |
 | [Process data / security alerts](/azure/security-center/security-center-introduction) | Microsoft Defender for Cloud alerts, Azure Monitor logs alerts | Provides security information and alerts. | REST APIs, JSON |
 
-## Using the Security Operations Frame 
+## Logging and auditing issues with common cloud services 
 
-Azure provides a wide array of configurable security auditing and logging options to help you identify gaps in your security policies and mechanisms. The tables below discuss generating, collecting, and analyzing security logs from services hosted on Azure using the Security Operations Frame for the following items: 
+Azure provides a wide array of configurable security auditing and logging options to help you identify gaps in your security policies and mechanisms. The table below provides additional information about generating, collecting, and analyzing security logs from various services hosted on Azure.
 
 | Product/Service | Article | 
 |:-:|:-:|
@@ -137,22 +127,3 @@ Azure provides a wide array of configurable security auditing and logging option
 | Web API | [Ensure that auditing and logging is enforced on Web API](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-web-api) |
 | IoT Field Gateway | [Ensure that appropriate auditing and logging is enforced on Field Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-field-gateway) |
 | IoT Cloud Gateway | [Ensure that appropriate auditing and logging is enforced on Cloud Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-cloud-gateway) |
-
-## Protect against threats 
-
-Security Center's threat protection enables you to detect and prevent threats at the Infrastructure as a Service (IaaS) layer, non-Azure servers, and Platforms as a Service (PaaS) in Azure. 
-
-Security Center's threat protection includes fusion kill-chain analysis, which automatically correlates alerts in your environment based on cyber kill-chain analysis to help you better understand the full story of an attack campaign, where it started, and what kind of impact it had on your resources. Security Center's supported kill chain intents are based on the MITRE ATT&CK™ framework. As illustrated below, the typical steps that trace the stages of a cyberattack. 
-
-![Diagram that shows stages of Cyberattack.](../media/stages-cyberattack.png)
-
-- **Reconnaissance:** The observation stage where attackers assess networks and services to identify possible targets and techniques to gain entry. 
-- **Intrusion:** Attackers use the knowledge gained in the reconnaissance phase to get access to a part of a network. This often involves exploring a flaw or security hole. 
-- **Exploitation:** This phase involves exploiting vulnerabilities and inserting malicious code onto the system to get more access. 
-- **Privilege Escalation:** Attackers often try to gain administrative access to compromised systems to get access to more critical data and move into other connected systems. 
-- **Lateral Movement:** This is the act of moving laterally to connected servers and gaining greater access to potential data. 
-- **Obfuscation / Anti-forensics:** Attackers need to cover their entry to successfully pull off a cyberattack. They will often compromise data and clear audit logs to prevent detection by any security team. 
-- **Denial of Service:** This phase involves disrupting normal access for users and systems to keep the attack from being monitored, tracked, or blocked. 
-- **Exfiltration:** The final extraction stage: getting valuable data out of the compromised systems. 
-
-Different types of attacks are associated with each stage, targeting various subsystems. 

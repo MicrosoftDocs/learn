@@ -3,7 +3,7 @@ uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations
 metadata:
   title: Implement Azure Cosmos DB SQL API point operations
   description: "Write code to create, read, update, and delete items in Azure Cosmos DB SQL API."
-  ms.date: 12/22/2021
+  ms.date: 06/21/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-As we learned in the [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It also helps you assess applications to use across [Privileged Access Workstations (PAW)](https://docs.microsoft.com/security/compass/privileged-access-devices).
+As we learned in the [Threat Modeling Security Fundamentals Learning Path](/learn/modules/tm-introduction-to-threat-modeling/), threat modeling is an effective technique to help secure your systems, applications, networks, and services. It also helps you assess applications to use across [Privileged Access Workstations (PAW)](/security/compass/privileged-access-devices).
 
 PAW is a device used for administrative functions and critical asset management tasks. Examples include:
 
@@ -30,7 +30,7 @@ The threat modeling framework is flexible and helps to identify how an applicati
 |![Elevation of privilege.](../media/threats/elevation-of-privilege-50.png)</br>**Elevation of privilege** is when you unlawfully access resources above your permission level, often through a pre-existing flaw or attack vector in the application.|![Authorization](../media/threats/authorization-50.png)</br>Use **authorization** mechanisms to ensure each user has the right (and least) number of permissions to carry out their requests, like Access Control Lists (ACL) and least-privilege access.|![Process](../media/elements/process-25.png)</br>Process|
 
 > [!TIP]
-> Visit **[Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling)** for more information on the framework.
+> Visit the [Threat Modeling Security Fundamentals learning path](/learn/modules/tm-introduction-to-threat-modeling/) for more information on the framework.
 
 ## When should I threat model an application to be used in my secured environment?
 
@@ -65,4 +65,4 @@ In this module, you'll explore the four steps in the threat modeling process for
 
 ## Prerequisites
 
-- [Threat Modeling Security Fundamentals Learning Path](https://docs.microsoft.com/learn/modules/tm-introduction-to-threat-modeling)
+- [Threat Modeling Security Fundamentals Learning Path](/learn/modules/tm-introduction-to-threat-modeling/)

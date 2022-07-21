@@ -26,7 +26,8 @@ You might see this warning when you deploy your model:
 
 This warning indicates that you don't have an even number of samples for each class of data. Although you have multiple options in this scenario, a common way to resolve unbalanced data is to use *Synthetic Minority Over-sampling Technique (SMOTE)*. SMOTE duplicates training examples from your existing training pool. 
 
-In our model, we don't see this warning, but it's something to watch for in any machine learning model.
+> [!NOTE]
+> In our model, you might not see this warning, especially if you uploaded a fraction of the dataset. The Red-tailed Hawk (Dark morph) model data subset contains less than 60 photos compared to the other models that have more than 100 photos. Using unbalanced data is something to watch for in any machine learning model.
 
 ### Overfitting the model
 

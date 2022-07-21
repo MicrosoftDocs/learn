@@ -2,6 +2,6 @@
 achievementUid: learn.languages.csharp-if-elseif-else.badge
 metadata:
   title: >-
-    Microsoft Badge: Add decision logic to your code using the if-elseif-else
-    statement in C# was issued by Microsoft
+    Microsoft Badge: Add decision logic to your code using `if`, `else`, and
+    `else if` statements in C# was issued by Microsoft
 socialImageUrl: /learn/achievements/csharp-if-elseif-else-social.png

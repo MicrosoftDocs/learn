@@ -2,11 +2,11 @@ Azure Pipelines help automate building, deploying, and maintaining your applicat
 
 To provide context, imagine that you're a member of the IT team at a mid-sized financial services company. You have a programming background, but over the last few years, you've been managing platform services and operational support of internally developed applications. Your familiarity with software development, deployment, and maintenance gives you a unique perspective, providing you insight into both aspects of DevOps.
 
-As part of the modernization of its computing environment, your company is considering migrating its ASP.NET applications and their associated database to the Azure App Service and Azure SQL Database. You welcome the change because you've learned of the benefits of Azure PaaS offerings. You're eager to experience them firsthand.
+As part of the modernization of its computing environment, your company is considering migrating its ASP.NET applications and their associated database to the Azure App Service and Azure SQL Database. You welcome the change, because you've learned of the benefits of Azure PaaS offerings. You're eager to experience them firsthand.
 
 However, you're concerned about the deployment methodology and approach to maintaining application updates. You realize that without a sensible DevOps strategy, your company won't be able to take full advantage of the cloud capabilities.
 
-To address your concerns, you decided to reach out to management. You ask them to allow you to investigate the best approach to deploying data-driven ASP.NET applications to Azure App Services. Your intention is to evaluate the role that Azure Pipelines can serve in optimizing the efficiency and the functionality of that approach.
+To address your concerns, you've decided to reach out to management. You ask them to allow you to investigate the best approach to deploying data-driven ASP.NET applications to Azure App Services. Your intention is to evaluate the role that Azure Pipelines can serve in optimizing the efficiency and the functionality of that approach.
 
 ## Learning objectives
 
@@ -30,4 +30,4 @@ To implement the exercises included in this module, you should have or be able t
 - An Azure subscription in which you have the Owner role
 - An Azure Active Directory (Azure AD) tenant in which you have the Global Administrator role
 - An Azure DevOps organization in which you are the organization owner
-- An GitHub account into which you can fork public GitHub repositories
+- A GitHub account into which you can fork public GitHub repositories

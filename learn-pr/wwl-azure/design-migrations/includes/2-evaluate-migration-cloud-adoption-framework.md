@@ -22,7 +22,7 @@ Each of the methodologies is a phase within a cloud adoption lifecycle.
 
  
 
-:::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Cloud adoption framework with strategy, plan, ready, adopt, govern, and manage.":::
+:::image type="content" source="../media/cloud-adoption-framework.png" alt-text="Diagram of cloud adoption framework with strategy, plan, ready, adopt, govern, and manage categories.":::
 
  
 
@@ -57,4 +57,4 @@ This section of the Cloud Adoption Framework explains how to maximize the return
 | Release| After workloads are replicated to the cloud, you can test, optimize, and document your migrated workloads. When satisfied, you can release these workloads to users. During this phase, ensure that you hand off the workloads to governance, operations management, and security teams for ongoing support of those workloads. |
 
 
-:::image type="content" source="../media/migrate-methodology.png" alt-text="Migration adoption with assess workloads, deploy workloads, and release workloads.":::
+:::image type="content" source="../media/migrate-methodology.png" alt-text="Diagram of migration adoption with assess workloads, deploy workloads, and release workload tasks.":::

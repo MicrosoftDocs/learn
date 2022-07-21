@@ -3,7 +3,7 @@ uid: learn.wwl.implement-security-azure-cosmos-db-sql-api
 metadata:
   title: Implement security in Azure Cosmos DB SQL API
   description: "We will learn the different security models that Azure Cosmos DB uses."
-  ms.date: 12/21/2021
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

@@ -4,13 +4,13 @@ title: Understand security operations frameworks, processes, and procedures
 metadata:
   title: Understand security operations frameworks, processes, and procedures
   description: "Understand security operations frameworks, processes, and procedures"
-  ms.date: 06/08/2022
+  ms.date: 07/21/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/8-understand-security-operations-frameworks-processes-procedures.md)]

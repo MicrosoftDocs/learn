@@ -12,6 +12,6 @@ Congratulations!
 
 ## Further your learning with other references
 
-- [Change data capture](https://docs.microsoft.com/sql/relational-databases/track-changes/about-change-data-capture-sql-server)
-- [SQL Data Sync](https://docs.microsoft.com/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database)
-- [About change tracking](https://docs.microsoft.com/sql/relational-databases/track-changes/about-change-tracking-sql-server)
+- [Change data capture](/sql/relational-databases/track-changes/about-change-data-capture-sql-server)
+- [SQL Data Sync](/azure/azure-sql/database/sql-data-sync-data-sql-server-sql-database)
+- [About change tracking](/sql/relational-databases/track-changes/about-change-tracking-sql-server)

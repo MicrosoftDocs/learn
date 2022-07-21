@@ -93,7 +93,7 @@ The following table describes the properties that are required for the **Use IoT
 
 ### Provide IoT Hub settings manually
 
-The following table describes the properties that are required for the **Use IoT Hub from available subscriptions** option:
+The following table describes the properties that are required for the **Provide IoT Hub settings manually** option:
 
 :::row:::
   :::column:::

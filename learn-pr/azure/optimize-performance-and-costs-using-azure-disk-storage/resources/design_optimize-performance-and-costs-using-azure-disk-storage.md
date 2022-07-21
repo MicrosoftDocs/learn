@@ -206,12 +206,12 @@ Selecting the appropriate disk type and right performance-scaling option can sig
 
 # Additional learning links
 
-·    [What disk types are available in Azure?](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-types)
+·    [What disk types are available in Azure?](/azure/virtual-machines/disks-types)
 
-·    [Virtual machine and disk performance - Azure Virtual Machines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/disks-performance)
+·    [Virtual machine and disk performance - Azure Virtual Machines | Microsoft Docs](/azure/virtual-machines/disks-performance)
 
-·    [Managed disk bursting - Azure Virtual Machines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/disk-bursting)
+·    [Managed disk bursting - Azure Virtual Machines | Microsoft Docs](/azure/virtual-machines/disk-bursting)
 
-·    [Performance tiers for Azure managed disks - Azure Virtual Machines | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/disks-change-performance)
+·    [Performance tiers for Azure managed disks - Azure Virtual Machines | Microsoft Docs](/azure/virtual-machines/disks-change-performance)
 
  

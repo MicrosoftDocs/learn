@@ -79,7 +79,7 @@ The JSON format isn't as formal as XML. It's closer to a key/value pair model th
 
 **YAML**
 
-*YAML Ain’t Markup Language (YAML)* is a more recently developed data serialization language. One of the benefits of using YAML is that it is easier for humans to read than some other languages. The data structure is defined by line separation and indentation. The YAML format reduces the dependency on structural characters like parentheses, commas, and brackets.
+*YAML Ain’t Markup Language (YAML)* is a more recently developed data serialization language. One of the benefits of using YAML is that it's easier for humans to read than some other languages. The data structure is defined by line separation and indentation. The YAML format reduces the dependency on structural characters like parentheses, commas, and brackets.
 
 Here's the same data expressed in YAML:
 
@@ -106,7 +106,7 @@ The following video describes semi-structured data and NoSQL data storage option
 
 ### Unstructured data
 
-The organization of unstructured data is undefined. Unstructured data often in delivered in file format, such as in photo or video files. The video file itself might have an overall structure and come with semi-structured metadata, but the data that forms the video itself is unstructured. Therefore, photos, videos, and other similar files are classified as unstructured data.
+The organization of unstructured data is undefined. Unstructured data is often delivered in file format, such as in photo or video files. The video file itself might have an overall structure and come with semi-structured metadata, but the data that forms the video itself is unstructured. Therefore, photos, videos, and other similar files are classified as unstructured data.
 
 Examples of unstructured data include:
 

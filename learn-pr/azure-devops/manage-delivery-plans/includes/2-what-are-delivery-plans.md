@@ -6,6 +6,7 @@ Teams must regularly review their delivery plans to ensure that their work sched
 * Are we sure we can deliver what we've committed to on our current schedule?
 * Are we confident that the teams we depend on will deliver what we need on their current schedule?
 * Are there lulls in our schedule that we could fill with work?
+* Are there issues with dependencies within a team or across teams? 
 
 Delivery plans add value at any point in a project's lifecycle. Because they're dynamically generated based on team backlogs, they're always up-to-date and offer the latest insights.
 
@@ -37,7 +38,7 @@ Unfortunately, more sophisticated team structures can result in gaps or lags in 
 
 **Andy:** I just wish there was a way to see these potential risks coming more easily. Our teams have so many dependencies across the company that there's no way we can attend every meeting and subscribe to every distribution group.
 
-**Mara:** We should create a delivery plan to see our team sprints side-by-side. This helps both teams to identify how our schedules affect each other. And I know the perfect Azure DevOps extension for the job.
+**Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This will help both teams more easily identify how our schedules affect each other.  
 
 ## Recommendations for managing multiple Agile teams
 

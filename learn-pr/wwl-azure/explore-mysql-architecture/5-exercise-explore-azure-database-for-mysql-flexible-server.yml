@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-mysql-architecture.exercise-explore-azure-database-for-mysql-flexible-server
+title: 'Exercise: Explore Azure Database for MySQL Flexible server'
+metadata:
+  title: 'Exercise: Explore Azure Database for MySQL Flexible server'
+  description: "Exercise: Explore Azure Database for MySQL Flexible server"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-explore-azure-database-for-mysql-flexible-server.md)]

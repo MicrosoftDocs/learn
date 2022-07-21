@@ -1,32 +1,17 @@
 Here you create a delivery plan and use it to plan a sprint in Azure DevOps.
 
-The Tailspin team is eager to see how the Delivery Plans extension is going to work. They already have two teams with sprints set up in Azure DevOps, so now they can review and optimize the work schedules.
+The Tailspin team is eager to see how Delivery Plans is going to work. They already have two teams with sprints set up in Azure DevOps, so now they can review and optimize the work schedules.
 
 To do this, you:
 
 > [!div class="checklist"]
-> * Install the Delivery Plans extension.
 > * Create a delivery plan.
 > * Add team sprints and milestones.
 > * Rearrange work items to fit the overall schedule.
 
-## Install the Marketplace extension
-
-The Delivery Plans Marketplace extension provides the features needed to create and manage delivery plans. It integrates with Azure Boards to provide a seamless experience when planning work.
-
-1. From a new browser tab, go to [marketplace.visualstudio.com](https://marketplace.visualstudio.com?azure-portal=true).
-1. On the **Azure DevOps** tab, search for "Delivery Plans".
-1. Select **Delivery Plans** from the results.
-
-    :::image type="content" source="../media/5-delivery-plans-extension.png" alt-text="Screenshot of the Delivery Plans Marketplace extension.":::
-
-1. Select **Get it Free**.
-1. Select your Azure DevOps organization from the drop-down box.
-1. Select **Install**.
-
 ## Create a delivery plan
 
-Delivery Plans adds a new **Plans** tab to Azure Boards. You can create as many delivery plans as you need to manage different aspects of your organization.
+You create a Delivery Plan from the **Delivery Plans** tab of Azure Boards. You can create as many delivery plans as you need to manage different aspects of your organization.
 
 1. From Azure DevOps, navigate to your project.
 1. Under **Boards**, select **Delivery Plans**.
@@ -89,4 +74,4 @@ Your final sprint plan should look similar to this:
 
 :::image type="content" source="../media/5-optimized-work-schedule.png" alt-text="Screenshot of the optimized work schedule.":::
 
-You've completed some invaluable work that will impact the organization in a meaningful way. Management can feel confident that work will progress without foreseeable delays. And instead of waiting for dependencies to be delivered, teams will always have productive work to take on. Sure, things might change as circumstances develop, but at least now everyone knows where to go to stay up-to-date.
+Although the team has made some adjustments, they haven't addressed all the dependency issues that are identified in the delivery plan. In the next unit, they learn more about dependencies and how to resolve the issues that can occur in the schedule.  

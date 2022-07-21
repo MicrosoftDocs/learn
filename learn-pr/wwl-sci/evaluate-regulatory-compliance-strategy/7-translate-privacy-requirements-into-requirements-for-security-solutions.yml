@@ -5,12 +5,12 @@ metadata:
   title: Translate privacy requirements into requirements for security solutions
   description: "Translate privacy requirements into requirements for security solutions"
   ms.date: 06/08/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/7-translate-privacy-requirements-into-requirements-for-security-solutions.md)]

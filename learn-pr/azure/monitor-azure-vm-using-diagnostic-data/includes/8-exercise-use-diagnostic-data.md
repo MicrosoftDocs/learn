@@ -86,7 +86,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Tick the **Email** checkbox, and enter your email address to receive the alert notification. If this pane doesn't appear, select **Edit** for the notification type.
   
-   ![Screenshot that shows the "Email/SMS/Push/Voice" pane ](../media/8-create-action-group-notifications-email.png)
+   ![Screenshot that shows the "Email/SMS/Push/Voice" pane](../media/8-create-action-group-notifications-email.png)
 
 1. Select **OK**.
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-bicep.exercise-create-bicep-templates
+title: Exercise - Create Bicep templates
+metadata:
+  title: Exercise - Create Bicep templates
+  description: "Exercise - Create Bicep templates"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: yasa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-exercise-create-bicep-templates.md)]

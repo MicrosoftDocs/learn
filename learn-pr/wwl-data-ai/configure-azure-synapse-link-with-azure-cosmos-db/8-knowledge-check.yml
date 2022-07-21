@@ -1,0 +1,71 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "You have an Azure Cosmos DB core (SQL) account and an Azure Synapse Analytics workspace. What must you do first to enable HTAP integration with Azure Synapse Analytics?"
+    choices:
+    - content: "Configure global replication in Azure Cosmos DB."
+      isCorrect: false
+      explanation: "Incorrect. Global replication helps scale Cosmos DB, but it's not required for HTAP integration with Azure Synapse Analytics."
+    - content: "Create a dedicated SQL pool in Azure Synapse Analytics."
+      isCorrect: false
+      explanation: "Incorrect. A dedicated SQL pool is used for data warehousing in Azure Synapse Analytics. It's not required for HTAP integration with Azure Cosmos DB."
+    - content: "Enable Azure Synapse Link in Azure Cosmos DB."
+      isCorrect: true
+      explanation: "Correct.  The first step in setting up HTAP integration is to enable Azure Synapse Link in Azure Cosmos DB."
+  - content: "You have an existing container in a Cosmos DB core (SQL) database. What must you do to enable analytical queries over Azure Synapse Link from Azure Synapse Analytics?"
+    choices:
+    - content: "Delete and recreate the container."
+      isCorrect: false
+      explanation: "Incorrect. You do not need to delete and recreate an existing container to enable Synapse Link integration."
+    - content: "Enable Azure Synapse Link in the container to create an analytical store."
+      isCorrect: true
+      explanation: "Correct. Before a container can be used for analytical queries, you need to enable Synapse link for the container; which creates an analytical store."
+    - content: "Add an item to the container."
+      isCorrect: false
+      explanation: "Incorrect. Adding an item to a container does not enable Synapse Link integration."
+  - content: "You plan to use a Spark pool in Azure Synapse Analytics to query an existing analytical store in Cosmos DB. What must you do?"
+    choices:
+    - content: "Create a linked service for the Cosmos DB database where the analytical store enabled container is defined."
+      isCorrect: true
+      explanation: "Correct. A linked service that connects to the Cosmos DB containing the analytical store enabled container is required."
+    - content: "Disable automatic pausing for the Spark pool in Azure Synapse Analytics."
+      isCorrect: false
+      explanation: "Incorrect. You do not need to disable automatic pausing for a Spark pool to be used with Synapse Link for Cosmos DB."
+    - content: "Install the Azure Cosmos DB SDK for Python package in the Spark pool."
+      isCorrect: false
+      explanation: "Incorrect. The Azure Cosmos DB SDK for Python is not required for Synapse Link integration."
+  - content: "You're writing PySpark code to load data from a Cosmos DB analytical store into a dataframe. What `format` should you specify?"
+    choices:
+    - content: "`cosmos.json`"
+      isCorrect: false
+      explanation: "Incorrect. `cosmos.json` isn't a valid format."
+    - content: "`cosmos.olap`"
+      isCorrect: true
+      explanation: "Correct. `cosmos.olap` is the appropriate format to read data from a Cosmos DB analytical store."
+    - content: "`cosmos.sql`"
+      isCorrect: false
+      explanation: "Incorrect. `cosmos.sql` isn't a valid format."
+  - content: "You're writing a SQL code in a serverless SQL pool to query an analytical store in Cosmos DB. What function should you use?"
+    choices:
+    - content: "`OPENDATASET`"
+      isCorrect: false
+      explanation: "Incorrect. `OPENDATASET` isn't a valid SQL function."
+    - content: "`ROW`"
+      isCorrect: false
+      explanation: "Incorrect. While `ROW` is a valid SQL function, it isn't used to query external data."
+    - content: "`OPENROWSET`"
+      isCorrect: true
+      explanation: "Correct. `OPENROWSET` is used to query external data, including analytical stores in Cosmos DB."
