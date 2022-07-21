@@ -67,8 +67,9 @@ You need to provide several pieces of information to deploy your app to App Serv
 App Service has its own data plane authentication system that it uses for deployments. The `azure/webapps-deploy` action handles the authentication process automatically for you:
 
 :::image type="content" source="../media/3-credential-exchange.png" alt-text="Diagram illustrating the credential exchange process." border="false":::
+<!-- TODO check diagram is still accurate -->
 
-The `azure/webapps-deploy` action uses the service principal that's associated with your job's active Azure session, which you signed in by using a secret:::image type="icon" source="../media/callout-01.png":::. The action creates and downloads the necessary credentials for deployment:::image type="icon" source="../media/callout-02.png":::. It then uses the deployment credentials when it communicates with the App Service data plane API:::image type="icon" source="../media/callout-03.png":::.
+The `azure/webapps-deploy` action uses the identity that's associated with your job's active Azure session, which you signed in by using a workload identity:::image type="icon" source="../media/callout-01.png":::. The action creates and downloads the necessary credentials for deployment:::image type="icon" source="../media/callout-02.png":::. It then uses the deployment credentials when it communicates with the App Service data plane API:::image type="icon" source="../media/callout-03.png":::.
 
 App Service also provides a few other deployment-related features, including *deployment slots*. Slots help you safely deploy new versions of your apps with no downtime. They also help you prepare and warm up the new version of your application before you send production traffic to it. We don't use slots in this module, but we provide a link to more information about them on the Summary page at the end of the module.
 
