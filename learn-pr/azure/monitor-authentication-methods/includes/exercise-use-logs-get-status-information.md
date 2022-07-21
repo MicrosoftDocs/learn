@@ -5,9 +5,9 @@ In this exercise, you'll:
 - Filter data to include in your sign-in logs view.
 - Review a failed user sign-in.
 
->
->
-> If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+
+
+If you want to complete this exercise but you don't have an Azure subscription or prefer not to use your own account, you can create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 ## View Azure Active Directory sign-in logs
 

@@ -65,24 +65,24 @@ The following exercise shows, how you can use this workbook template to create a
 1. Navigate to [Workbooks](https://portal.azure.com/?feature.msaljs=false#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Workbooks).
 
 2. In the **Usage** section, click **Sign-ins using Legacy Authentication**.
-    :::image type="content" source="../media/select-sign-ins-using-legacy-auehentication-workbook.png" alt-text="Screenshot that shows how to select the sign-ins using legacy authentication workbook.":::
+    :::image type="content" source="../media/select-sign-ins-using-legacy-authentication-workbook.png" alt-text="Screenshot that shows how to select the sign-ins using legacy authentication workbook.":::
 
-3. In the toolbar, click **Edit**. 
+3. In the toolbar, click **Edit**.
     :::image type="content" source="../media/select-edit-workbook.png" alt-text="Screenshot that shows how to select edit in an open workbook.":::
 
-4. At the end of the first paragraph, click **Edit**. 
+4. At the end of the first paragraph, click **Edit**.
     :::image type="content" source="../media/edit-workbook-introduction.png" alt-text="Screenshot that shows how to start the edit mode for a paragraph in a workbook.":::
 
 5. Change the title to **## My sign-ins using legacy authentication**, and then click **Done Editing**.
     :::image type="content" source="../media/change-title-in-workbook.png" alt-text="Screenshot that shows how to update the first paragraph of a workbook.":::
 
-6. In the toolbar on the top, click **Save**. 
+6. In the toolbar on the top, click **Save**.
     :::image type="content" source="../media/save-workbook-updates.png" alt-text="Screenshot that shows how to save your workbook updates.":::
 
-7. Update the **Title** to **My sign-ins using Legacy Authentication**, and then click **Save**. 
+7. Update the **Title** to **My sign-ins using Legacy Authentication**, and then click **Save**.
     :::image type="content" source="../media/save-workbook-updates-to-gallery.png" alt-text="Screenshot that shows how to save your workbook updates to the gallery.":::
 
-8. To return to the workbooks gallery, in the toolbar, click **Workbooks**. 
+8. To return to the workbooks gallery, in the toolbar, click **Workbooks**.
     :::image type="content" source="../media/return-to-workbook-gallery.png" alt-text="Screenshot that shows how to return to the workbooks gallery.":::
 
-You may have to refresh your browser window if your workbook doesn't show up. At this point, you should spend some time on reviewing your new workbook and test its capabilities. 
+You may have to refresh your browser window if your workbook doesn't show up. At this point, you should spend some time on reviewing your new workbook and test its capabilities.

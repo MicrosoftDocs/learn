@@ -9,7 +9,7 @@ metadata:
   author: MarkusVi
   ms.author: markvi
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure 
 durationInMinutes: 15
 content: |
   [!include[](includes/exercise-write-kql-queries.md)]

@@ -18,7 +18,7 @@ In this module, you will:
 - Choose the right activity logs.
 - Route your activity logs to a different endpoint.
 - Write queries to retrieve the activity data you need.
-- Create a new Azure AD workbook to generate a rich report of your activity data.
+- Create a new Azure Active Directory (Azure AD) workbook to generate a rich report of your activity data.
 - Use an existing Azure AD workbook to solve your business problem.
 
 ## Prerequisites
