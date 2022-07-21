@@ -27,7 +27,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     > [!IMPORTANT]
     > If the WebStatus isn't automatically refreshing, it's due to an issue with the container image used for WebStatus. To work around the issue, manually refresh the WebStatus page periodically.
 
-    :::image type="content" source="../media/4-review-code-verify-deployment/health-check.png" alt-text="Health check page." border="true" lightbox="../media/4-review-code-verify-deployment/health-check.png":::
+    :::image type="content" source="../media/health-checks-status-page.png" alt-text="Health check page." border="true" lightbox="../media/health-checks-status-page.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
