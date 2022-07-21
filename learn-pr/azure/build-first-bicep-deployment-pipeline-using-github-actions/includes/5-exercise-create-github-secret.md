@@ -64,14 +64,19 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. Run the code below, which creates a workload identity:
 
    ```bash
-   applicationRegistrationDetails=$(az ad app create --display-name $applicationRegistrationName)
+   applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-workflow')
    applicationRegistrationObjectId=$(echo $applicationRegistrationDetails | jq -r '.id')
    applicationRegistrationAppId=$(echo $applicationRegistrationDetails | jq -r '.appId')
 
    az ad app federated-credential create \
       --id $applicationRegistrationObjectId \
-      --parameters "{\"name\":\"$federationName\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
+      --parameters "{\"name\":\"toy-website-workflow\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
+
+
+   {"name":"todo1","issuer":"https://token.actions.githubusercontent.com","subject":"repo:gitlearndemojodowns/toy-website-workflowx:ref:refs/heads/main","audiences":["api://AzureADTokenExchange"]}
+
+   {"name":"todo2","issuer":"https://token.actions.githubusercontent.com","subject":"repo:gitlearndemojodowns/toy-website-workflowxef:refs/heads/main","audiences":["api://AzureADTokenExchange"]}
 
 ::: zone-end
 
@@ -87,10 +92,10 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. Run the code below, which creates a workload identity:
 
    ```azurepowershell
-   $applicationRegistration = New-AzADApplication -DisplayName $applicationRegistrationName
+   $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-workflow'
 
    New-AzADAppFederatedIdentityCredential `
-      -Name $federationName `
+      -Name 'toy-website-workflow' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
@@ -106,7 +111,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 To create a new resource group and grant your workload identity access to it, run this Azure CLI command in the Visual Studio Code terminal:
 
 ```bash
-resourceGroupResourceId=$(az group create --name $resourceGroupName --location $resourceGroupLocation --query id --output tsv)
+resourceGroupResourceId=$(az group create --name ToyWebsite --location westus --query id --output tsv)
 
 az ad sp create --id $applicationRegistrationObjectId --query id --output tsv
 az role assignment create \
