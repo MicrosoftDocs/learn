@@ -2,6 +2,10 @@ Imagine you're a software developer for an online retailer. Your company uses an
 
 In a microservices architecture, each service typically exposes a set of fine-grained endpoints. There are often many endpoints to manage, so it's important to develop a sound strategy. In this module, you'll learn about exposing a microservices application to the outside world. You'll explore ingress, API gateways, and the [Backend for Frontend](https://samnewman.io/patterns/architectural/bff/) (BFF) pattern.
 
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
+
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
+
 In this module, you will:
 
 - Deploy an existing ASP.NET Core microservices e-commerce app to AKS.
@@ -20,3 +24,4 @@ In this module, you will:
 - Familiarity with C# and ASP.NET Core
 - Familiarity with REST API services
 - Access to an Azure subscription with owner privileges
+- Ability to run development containers in Visual Studio Code or GitHub Codespaces
