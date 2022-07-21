@@ -4,4 +4,4 @@ Suppose you're an Enterprise Data Analyst supporting Power BI reports at a large
 
 In this module, we'll explain the value of using source control for file management and change tracking so you won't have to lose another report. We'll also introduce some options for designing a deployment strategy to organize your publishing process.
 
-By the end of this module, you'll be able to identify best solutions for source control and deployment strategies for Power BI using a combination of OneDrive, SharePoint, GitHub, and Azure DevOps.
+By the end of this module, you'll be able to identify best solutions for source control and deployment strategies for Power BI using a combination of OneDrive, SharePoint, Git, and Azure DevOps.
