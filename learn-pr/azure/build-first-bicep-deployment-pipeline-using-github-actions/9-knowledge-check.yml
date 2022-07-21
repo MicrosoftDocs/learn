@@ -15,22 +15,22 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: | # TODO check this
+  - content: |
       When you execute your workflow you get the following error message:
       
-      `Az CLI Login failed. Please check the credentials.`
+      `Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable. Please make sure to give write permissions to id-token in the workflow.`
 
       What should you do to fix this error?
     choices:
-    - content: Check your GitHub secrets. Confirm that there is a secret named `AZURE_CREDENTIALS`. Then, regenerate your service principal and paste the service principal's details into the AZURE_CREDENTIALS secret value.
-      isCorrect: true
-      explanation: Correct. The `azure/login` action makes use of the `AZURE_CREDENTIALS` secret. This secret should exist in your GitHub secret settings and should have a valid value.
     - content: Confirm the name of the resource group you are deploying to. It is probably incorrect.
       isCorrect: false
-      explanation: Incorrect. Your workflow output indicates it is not able to sign in using its credentials. You should check that the `AZURE_CREDENTIALS` secret exists, and then refresh the service principal's credentials.
-    - content: Check the runner your workflow is running on. It is not able to sign in to Azure.
+      explanation: Incorrect. Your workflow output indicates it is not able to sign in. You should add a `permissions` section to the workflow definition.
+    - content: Add the `permisions` section to the workflow definition file.
+      isCorrect: true
+      explanation: Correct. You need to specify the `permissions` section in your workflow definition so that your workflow can sign in to Azure Active Directory by using a workload identity.
+    - content: Check the runner your workflow is running on.
       isCorrect: false
-      explanation: Incorrect. Your runner only executes the `azure/login` action with the credentials you provide to it. You should check that the `AZURE_CREDENTIALS` secret exists, and then refresh the service principal's credentials.
+      explanation: Incorrect. Your runner only executes the `azure/login` action with the workflow identity you provide to it. You should add a `permissions` section to the workflow definition.
   - content: |
       Which of these situations will trigger the R&D team's workflow to run?
     choices:
