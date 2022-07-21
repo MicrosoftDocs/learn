@@ -16,6 +16,7 @@ To create a Log Analytics workspace:
 1. In the search-textbox, type **log analytics workspace**.
 1. Click **Log Analytics Workspace**.
 1. Click **Create**.
+
     :::image type="content" source="../media/create-log-analytics-workspace.png" alt-text="Screenshot that shows the option to create a Log Analytics workspace.":::
 1. On the **Create Log Analytics workspace** page:
     :::image type="content" source="../media/review-and-create-log-analytics-workspace.png" alt-text="Screenshot that shows the dialog to review and create a Log Analytics workspace.":::
