@@ -1,10 +1,1 @@
-Here's an Azure Cosmos DB SQL API query using the LINQ method syntax:
-
-```csharp
-using FeedIterator<Product> feed = container.GetItemLinqQueryable<Item>()
-    .Where(i => i.partitionKey == "some-category")
-    .OrderBy(i => i.id)
-    .ToFeedIterator();
-```
-
-What is the SQL query equivalent of this LINQ query?
+Here's an Azure Cosmos DB SQL API query: ``SELECT * FROM container c WHERE c.partitionKey == 'some-category' ORDER BY c.id``. What is the language-integrated query (LINQ) equivalent of this SQL query?

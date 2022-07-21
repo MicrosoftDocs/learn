@@ -5,7 +5,7 @@ Right now, you have a few key requirements:
 1. Create a database if it doesn't already exist
 1. Create a container if it doesn't already exist
 
-[![Illustration of icons indicating data being uploaded to the cloud.](../media/project-visual-upload.png)](../media/project-visual-upload.png)
+[![Illustration of icons indicating Azure Cosmos DB resources are created in the cloud.](../media/project-visual-resources.png)](../media/project-visual-resources.png)
 
 After you complete this exercise, your project will create any databases, or containers it requires to execute.
 

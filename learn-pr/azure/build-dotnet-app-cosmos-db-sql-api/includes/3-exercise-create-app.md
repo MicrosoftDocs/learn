@@ -4,7 +4,7 @@ As the first step to creating your project's application, you need to create a .
 1. Import the SDK library
 1. Connect using the client classes
 
-[![Illustration of icons indicating data being uploaded to the cloud.](../media/project-visual-upload.png)](../media/project-visual-upload.png)
+[![Illustration of icons of an Azure Cosmos DB account and .NET application.](../media/project-visual-app.png)](../media/project-visual-app.png)
 
 After you complete this exercise, you'll have a simple .NET application that successfully connects to your SQL API account, but doesn't perform any operations yet.
 
@@ -133,7 +133,13 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
 
 Now, the .NET project should be built and ready for you to add your own custom code. You have access to the **Microsoft.Azure.Cosmos** namespace and all of the classes necessary to connect to the SQL API. Here, you'll open the **Program.cs** file and implement code to connect to the account using the client classes of the SDK.
 
-1. Open the **Program.cs** file.
+1. Open the **Program.cs** file within the code editor for the Azure Cloud Shell.
+
+    > [!TIP]
+    > If you are not familiar with the Azure Cloud Shell's integrated editor, use the file explorer to select and open the **Program.cs** option.
+    >
+    > [![Screenshot of the Azure Cloud Shell integrated editor with the Program.cs file highlighted.](../media/cloud-shell-code-editor.png)](../media/cloud-shell-code-editor.png)
+    >
 
 1. Delete all existing code from the file.
 
@@ -189,6 +195,9 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
     [Connection string]:    AccountEndpoint=https://<account-name>.documents.azure.com:443/;AccountKey=<account-key>;
     [Client connected]
     ```
+
+> [!NOTE]
+> If building or running the .NET application results in an error, go to the **review code** section to validate that your code matches the example.
 
 ### [Review code](#tab/review-code)
 

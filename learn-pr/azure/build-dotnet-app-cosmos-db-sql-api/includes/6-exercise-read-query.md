@@ -6,7 +6,7 @@ There are three key requirements at this time:
 1. Create a SQL query using a simple query string
 1. Paginate the results of the SQL query using a feed iterator
 
-[![Illustration of icons indicating data being queried using common search techniques.](../media/project-visual-query.png)](../media/project-visual-query.png)
+[![Illustration of icons indicating data being queried using a SQL query.](../media/project-visual-query-sql.png)](../media/project-visual-query-sql.png)
 
 After you complete this exercise, your application will almost be ready. You'll have queries that can read the category and product items you previously created.
 

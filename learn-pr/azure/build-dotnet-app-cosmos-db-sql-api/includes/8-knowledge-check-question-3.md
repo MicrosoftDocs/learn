@@ -1,1 +1,1 @@
- Which method of the ``Container`` class is used to take an existing item in a container and change it to the item you provided.
+An item already exists in the Azure Cosmos DB SQL API account with a unique identifier of ``04b3038c-b966-4a86-a1f3-5d1fa5c2a47c``. Which of the following blocks of code will replace the existing item in the container with a newly created item without running the risk of creating an entirely new item.

@@ -1,5 +1,7 @@
 You'll be building a .NET application that imports and queries data in an Azure Cosmos DB SQL API container. Here, we'll discuss the overall goals of the project and how you'll implement the import and query functionality. We'll also cover how to set up the SQL API account that you'll need.
 
+[![Illustration of the icon of an Azure Cosmos DB account.](../media/project-visual-account.png)](../media/project-visual-account.png)
+
 ## Project overview
 
 This project's goal is to build and validate a .NET console application that uploads and queries items in a SQL API container. The .NET application will use the .NET SDK for Azure Cosmos DB SQL API to interact with a service instance in Azure. The project code will use transactional batches to create multiple related items simultaneously. The project code will also use SQL queries, represented as strings, to validate that the items were successfully uploaded.

@@ -5,7 +5,8 @@ There are two key requirements at this time:
 1. Build a new query using LINQ syntax
 1. Convert the query to a feed iterator to get results
 
-[![Illustration of icons indicating data being queried using common search techniques.](../media/project-visual-query.png)](../media/project-visual-query.png)
+[![Illustration of icons indicating data being queried using a LINQ expression.](../media/project-visual-query-linq.png)](../media/project-visual-query-linq.png)
+
 
 After you complete this exercise, your queries will now use the LINQ syntax to make it easier for developers to maintain your application moving forward.
 
