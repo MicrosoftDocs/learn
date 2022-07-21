@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azdo.manage-delivery-plans.6-clean-up-environment
+uid: learn.azdo.manage-delivery-plans.7-clean-up-environment
 title: Exercise - Clean up your environment
 metadata:
   title: Exercise - Clean up your environment
   description: Clean up your Azure DevOps project.
-  ms.date: 07/20/2022
-  ms.custom: devdivchpfy22
+  ms.date: 06/16/2022
   author: kathrynee
   ms.author: kaelli
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-clean-up-environment.md)]
+  [!include[](includes/7-clean-up-environment.md)]
