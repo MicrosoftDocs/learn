@@ -63,7 +63,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 1. Run the code below, which creates a workload identity:
 
-   ```azurecli
+   ```bash
    applicationRegistrationDetails=$(az ad app create --display-name $applicationRegistrationName)
    applicationRegistrationObjectId=$(echo $applicationRegistrationDetails | jq -r '.id')
    applicationRegistrationAppId=$(echo $applicationRegistrationDetails | jq -r '.appId')
@@ -105,7 +105,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 To create a new resource group and grant your workload identity access to it, run this Azure CLI command in the Visual Studio Code terminal:
 
-```azurecli
+```bash
 resourceGroupResourceId=$(az group create --name $resourceGroupName --location $resourceGroupLocation --query id --output tsv)
 
 az ad sp create --id $applicationRegistrationObjectId --query id --output tsv
@@ -135,8 +135,31 @@ New-AzRoleAssignment `
 
 ## Create GitHub secrets
 
-```azurecli
-azureSubscriptionId=$(az account show --query id --output tsv)
-azureADTenantId=$(az account show --query tenantId --output tsv)
-applicationRegistrationAppId=$(echo $applicationRegistrationDetails | jq -r '.appId')
-```
+::: zone pivot="cli"
+
+1. TODO
+
+   ```bash
+   echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
+   echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
+   echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
+   ```
+
+1. TODO create secrets in GH
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. TODO
+
+   ```azurepowershell
+   $azureContext = Get-AzContext
+   Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.ApplicationId)"
+   Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
+   Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
+   ```
+
+1. TODO create secrets in GH
+
+::: zone-end
