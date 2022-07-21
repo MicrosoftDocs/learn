@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.build-blazor-hybrid
+metadata:
+  title: Build a web app with Blazor
+  description: Learn how to set up your development environment and build your first web app with Blazor, Visual Studio Code, and C#.
+  ms.date: 05/02/2020
+  author: csharpfritz
+  ms.author: jefritz
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a web app with Blazor
+summary: Learn how to set up your development environment and build your first web app with Blazor, Visual Studio Code, and C#.
+abstract: | 
+  In this module, you will:
+  - Configure your local environment for Blazor development with Visual Studio Code
+  - Create a new Blazor project
+  - Add client-side logic to a Blazor web app
+prerequisites: |
+  - Basic knowledge of web app concepts
+  - C# .NET experience at a beginner level
+  - Local installations of the [.NET SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+  - Experience with using the command line
+iconUrl: /learn/achievements/generic.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- dotnet
+- aspnet-core
+- dotnet-core
+- blazor
+subjects:
+- development-tools
+units:
+- learn.build-blazor-hybrid.1-introduction
+- learn.build-blazor-hybrid.2-understand-blazor-webassembly
+- learn.build-blazor-hybrid.3-exercise-configure-environment
+- learn.build-blazor-hybrid.4-blazor-components
+- learn.build-blazor-hybrid.5-exercise-add-component
+- learn.build-blazor-hybrid.6-csharp-razor-binding
+- learn.build-blazor-hybrid.7-exercise-razor-binding
+- learn.build-blazor-hybrid.8-summary
+badge:
+  uid: learn.build-blazor-hybrid.badge
