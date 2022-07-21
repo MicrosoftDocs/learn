@@ -1,9 +1,9 @@
-Azure Spring Apps makes it easy to deploy Spring Boot applications to Azure without any code changes. The service manages the infrastructure of Spring Cloud applications so developers can focus on their code. Azure Spring Apps provides lifecycle management using comprehensive monitoring and diagnostics, configuration management, service discovery, and blue-green deployments.
+Azure Spring Apps makes it easy to deploy Spring Boot applications to Azure without any code changes. The service manages the infrastructure of Spring Apps applications so developers can focus on their code. Azure Spring Apps provides lifecycle management using comprehensive monitoring and diagnostics, configuration management, service discovery, and blue-green deployments.
 
 Deploying applications to Azure Spring Apps allows you to:
 
  -  Efficiently migrate existing Spring apps and manage cloud scaling and costs.
- -  Modernize apps with Spring Cloud patterns to improve agility and speed of delivery.
+ -  Modernize apps with Spring Apps patterns to improve agility and speed of delivery.
  -  Run Java at cloud scale and drive higher usage without complicated infrastructure.
  -  Develop and deploy rapidly without containerization dependencies.
  -  Monitor production workloads efficiently and effortlessly.
