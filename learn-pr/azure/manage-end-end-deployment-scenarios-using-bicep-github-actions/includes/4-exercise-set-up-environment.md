@@ -121,7 +121,7 @@ Next, create two workload identities in Azure AD: one for your test environment 
 
 1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
-   ```azurecli
+   ```bash
    githubOrganizationName='mygithubuser'
    githubRepositoryName='toy-website-end-to-end'
    ```
@@ -278,7 +278,7 @@ You've created two workload identities, and resource groups that they can deploy
 
    :::image type="content" source="../media/4-github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true"::: <!-- TODO -->
 
-1. Repeat the process to create the secrets for *AURE_CLIENT_ID_PRODUCTION*, *AZURE_TENANT_ID*, and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+1. Repeat the process to create the secrets for *AZURE_CLIENT_ID_PRODUCTION*, *AZURE_TENANT_ID*, and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
 
 1. Verify that your list of secrets now shows all four secrets.
 
