@@ -8,7 +8,7 @@ Your Bicep files are stored in your Git repository. In GitHub Actions, you need 
 
 To check out your code, you can use the `actions/checkout@v2` action:
 
-:::code language="yaml" source="code/4-workflow.yml" range="1-2, 9-15" highlight="7-9":::
+:::code language="yaml" source="code/4-workflow.yml" range="1-2, 13-19" highlight="7-9":::
 
 Notice that the workflow includes the `uses` keyword. This indicates you want to use a pre-defined action named `actions/checkout`.
 
@@ -37,11 +37,11 @@ You must ensure that your workload identity has the permissions it needs to exec
 
 ## Sign in to Azure
 
-Before your workflow can execute commands against your Azure environment, it first needs to sign in. There is an action named `azure/login` that handles the sign-in process. The action uses a workload identity to sign in without any credentials.
+Before your workflow can execute commands against your Azure environment, it first needs to sign in. There is an action named `azure/login` that handles the sign-in process. You also need to grant permission for your workflow to work with authentication tokens.
 
-:::code language="yaml" source="code/4-workflow.yml" range="1-2, 9-18" highlight="10-12"::: <!-- TODO -->
+:::code language="yaml" source="code/4-workflow.yml" range="1-8, 13-24" highlight="5-7, 16-20":::
 
-The `azure/login` action requires that you provide three pieces of information: an Azure AD application ID, your Azure AD tenant (directory) ID, and the Azure subscription ID that you want to work with.
+The `azure/login` action requires that you provide three pieces of information to use a workload identity: an Azure AD application ID, your Azure AD tenant (directory) ID, and the Azure subscription ID that you want to work with.
 
 After this action has executed, your runner will be authenticated and able to run statements against your Azure environment.
 
@@ -54,7 +54,7 @@ After your workflow signs in to Azure, it can use the workload identity to run t
 
 Here's an example of how you can configure a step to use the `azure/arm-deploy` action:
 
-:::code language="yaml" source="code/4-workflow.yml" range="1-2, 9-23" highlight="13-17":::
+:::code language="yaml" source="code/4-workflow.yml" range="1-8, 13-29" highlight="21-25":::
 
 The `azure/arm-deploy` action accepts several parameters, including:
 
