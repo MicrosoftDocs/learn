@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "TODO: this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 06/06/2022
   author: MarkusVi
   ms.author: markvi
@@ -39,7 +39,7 @@ quiz:
       explanation: The sign-ins log has information about sign-ins and how your resources are used by your users, services and apps.
     - content: Provisioning
       isCorrect: false
-      explanation: The provisioning log has information about activities performed by the provisioning service, such as the creation of a group in ServiceNow or a user imported from Workday.
+      explanation: The provisioning log has information about activities performed by the provisioning service. This includes the creation of a group in ServiceNow or a user imported from Workday.
   - content: 'When should you access activity logs through the Azure portal?'
     choices:
     - content: If you need to create a long-term backup of your activity logs.
@@ -53,12 +53,12 @@ quiz:
       explanation: Accessing activity logs through the Azure portal is helpful if you need to, for example, investigate a small set of sign-ins caused by a user or app over a short period.
   - content: 'If you want to use your activity logs to create a rich report, you need to route your activity logs to?'
     choices:
-    - content: A storage account.
+    - content: A storage account
       isCorrect: false
       explanation: To create a long-term backup of your activity logs, you can, for example, use an Azure storage account.
-    - content: An Event Hub 
+    - content: Event Hubs 
       isCorrect: false
-      explanation: Routing logs to an Azure Event Hub allows you to integrate with third-party SIEM tools like Sumologic and Splunk.
+      explanation: Routing logs to Azure Event Hubs allows you to integrate with third-party SIEM tools like Sumologic and Splunk.
     - content: Azure Monitor
       isCorrect: true
       explanation: Route your activity logs to an Azure Log Analytics workspace if you need to analyze data, create dashboard and alert on specific events.
