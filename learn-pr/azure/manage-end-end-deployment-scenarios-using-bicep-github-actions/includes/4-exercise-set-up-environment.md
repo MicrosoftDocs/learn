@@ -125,7 +125,6 @@ Next, create two workload identities in Azure AD: one for your test environment 
    githubOrganizationName='mygithubuser'
    githubRepositoryName='toy-website-end-to-end'
    ```
-   <!-- TODO scope to environment? Subject repo:abc/def:environment:envname -->
 
 1. Run the code below, which creates a workload identity for the test environment and associates it with your GitHub repository:
 
@@ -161,7 +160,6 @@ Next, create two workload identities in Azure AD: one for your test environment 
    $githubOrganizationName = 'mygithubuser'
    $githubRepositoryName = 'toy-website-end-to-end'
    ```
-   <!-- TODO scope to environment? Subject repo:abc/def:environment:envname -->
 
 1. Run the code below, which creates a workload identity for the test environment and associates it with your GitHub repository:
 
@@ -249,18 +247,36 @@ Next, create a resource group for each environment. This process also grants the
 
 ::: zone-end
 
+## Prepare GitHub secrets
+
+Run the following code to show you the values you need to create as GitHub secrets:
+
+::: zone pivot="cli"
+
+```bash
+echo "AZURE_CLIENT_ID_TEST: $testApplicationRegistrationAppId"
+echo "AZURE_CLIENT_ID_PRODUCTION: $productionApplicationRegistrationAppId"
+echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
+echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+$azureContext = Get-AzContext
+Write-Host "AZURE_CLIENT_ID_TEST: $($testApplicationRegistration.ApplicationId)"
+Write-Host "AZURE_CLIENT_ID_PRODUCTION: $($productionApplicationRegistration.ApplicationId)"
+Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
+Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
+```
+
+::: zone-end
+
 ## Create GitHub secrets
 
 You've created two workload identities, and resource groups that they can deploy to. Next, create secrets in GitHub Actions.
-
-1. Run the following code to show you the values you need to create as GitHub secrets:
-
-   ```bash
-   echo "AZURE_CLIENT_ID_TEST: $testapplicationRegistrationAppId"
-   echo "AZURE_CLIENT_ID_PRODUCTION: $productionapplicationRegistrationAppId"
-   echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
-   echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
-   ```
 
 1. In your browser, navigate to your GitHub repository.
 

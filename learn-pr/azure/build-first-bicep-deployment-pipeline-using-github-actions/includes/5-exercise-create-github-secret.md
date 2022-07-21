@@ -133,48 +133,34 @@ New-AzRoleAssignment `
 
 ::: zone-end
 
-## Create GitHub secrets
+## Prepare GitHub secrets
 
-You've created a resource group and a workload identity. Next, create some secrets in GitHub Actions so that your workflow can sign in by using the workload identity.
+Run the following code to show you the values you need to create as GitHub secrets:
 
 ::: zone pivot="cli"
 
-1. Run the following code to show you the values you need to create as GitHub secrets:
-
-   ```bash
-   echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
-   echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
-   echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
-   ```
-
-1. In your browser, navigate to your GitHub repository.
-
-1. Select **Settings** > **Secrets** > **Actions**.
-
-1. Select **New repository secret**.
-
-   :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
-
-1. Name the secret *AZURE_CLIENT_ID*.
-
-1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
-
-1. Select **Add secret**. 
-
-1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+```bash
+echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
+echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
+echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Run the following code to show you the values you need to create as GitHub secrets:
+```azurepowershell
+$azureContext = Get-AzContext
+Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.ApplicationId)"
+Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
+Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
+```
 
-   ```azurepowershell
-   $azureContext = Get-AzContext
-   Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.ApplicationId)"
-   Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
-   Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
-   ```
+::: zone-end
+
+## Create GitHub secrets
+
+You've created a resource group and a workload identity. Next, create some secrets in GitHub Actions so that your workflow can sign in by using the workload identity.
 
 1. In your browser, navigate to your GitHub repository.
 
@@ -191,5 +177,3 @@ You've created a resource group and a workload identity. Next, create some secre
 1. Select **Add secret**. 
 
 1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
-
-::: zone-end
