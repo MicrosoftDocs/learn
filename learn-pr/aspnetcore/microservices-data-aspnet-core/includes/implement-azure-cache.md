@@ -103,7 +103,7 @@ Apply the following changes in the *deploy/k8s/helm-simple* directory:
     > [!NOTE]
     > It's not recommended to store connection strings as plain text in production environments. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
 
-    1. Ensure you've saved all your changes, and then build the app. The build should complete with no errors or warnings.
+1. Ensure you've saved all your changes, and then build the app. The build should complete with no errors or warnings.
 
     ```bash
     dotnet build ../../src/Services/Basket/Basket.API/
@@ -115,13 +115,13 @@ At runtime, the connection string will be provided to the basket service as an e
 
 :::code language="csharp" source="../code/src/services/basket/basket-api/startup.cs" id="snippet_ConfigureServices" highlight="7":::
 
+The `ConfigureServices` method calls the `AddCustomHealthCheck` extension method:
+
+:::code language="csharp" source="../code/src/services/basket/basket-api/startup.cs" id="snippet_AddCustomHealthCheck" highlight="8":::
+
 ### *src/Services/Basket/Basket.API/Infrastructure/Repositories/RedisBasketRepository.cs*
 
 :::code language="csharp" source="../code/src/services/basket/basket-api/infrastructure/repositories/redisbasketrepository.cs" highlight="9,12,20":::
-
-### *src/Services/Basket/Basket.API/Startup.cs*&mdash;The `ConfigureServices` method calls the `AddCustomHealthCheck` extension method:
-
-:::code language="csharp" source="../code/src/services/basket/basket-api/startup.cs" id="snippet_AddCustomHealthCheck" highlight="8":::
 
 ## Redeploy the basket service
 
