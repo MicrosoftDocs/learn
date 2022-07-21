@@ -18,12 +18,12 @@ quiz:
     - content: "Constant Update / Constant Deployment"
       isCorrect: false
       explanation: "Incorrect. The correct answer is Continuous Integration / Continuous Deployment."
-    - content: "Continuous Integration / Continuous Deployment"
+    - content: "Continuous Integration / Continuous Delivery"
       isCorrect: true
-      explanation: "Correct. The correct answer is Continuous Integration / Continuous Deployment."
+      explanation: "Correct. The correct answer is Continuous Integration / Continuous Delivery."
     - content: "Continuous Update / Continuous Development"
       isCorrect: false
-      explanation: "Incorrect. The correct answer is Continuous Integration / Continuous Deployment."
+      explanation: "Incorrect. The correct answer is Continuous Integration / Continuous Delivery."
   - content: "If you wanted a single product to provide source control and deployment management in Power BI service, which of the following products would you choose?"
     choices:
     - content: "OneDrive"
