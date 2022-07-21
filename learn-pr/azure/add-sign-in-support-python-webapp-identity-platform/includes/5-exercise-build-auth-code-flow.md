@@ -1,4 +1,71 @@
-To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform. In this tutorial, you use the authorization code grant flow for sign-in. Add the following code to `app.py` to build the auth code flow dictionary and redirect users to Azure AD to perform the necessary authorization code flow actions.
+The sign-in flow in MSAL Python takes these high level steps: 
+
+:::image type="content" source="../media/5-webapp-authentication-flow.png" border="false" alt-text="Web app sign in authentication flow":::
+
+In this exercise, you'll add code to sign in and sign out users in a Python Flask web application that uses MSAL for Python. Follow these steps to add sign-in support:
+
+- Import the auth library
+- Import Flask modules
+- Initialize the Flask app
+- Create the authorization code flow dictionary
+- Create app routes
+- Create a confidential client
+- Add code to sign users
+- Add code to sign out users
+
+## Import the auth library
+
+Before you can sign in Azure AD users, install MSAL for Python in your application. Add the following code to `app.py`
+
+```python
+# Import Microsoft Authentication Library (MSAL) for Python
+import msal
+from msal.authority import (AuthorityBuilder, AZURE_PUBLIC)
+```
+
+## Import Flask modules
+
+Next, import Flask modules to handle render templates and session access.
+
+```python
+# Flask imports to handle render templates and session access
+from werkzeug.middleware.proxy_fix import ProxyFix
+from werkzeug.exceptions import Forbidden, Unauthorized
+from flask import Flask, render_template, session, request, redirect, url_for
+from flask_session import Session
+```
+
+## Initialize the Flask app
+
+After importing the required modules, add code to initialize your Python Flask application. You'll also load the default Flask configurations such as session configs, as shown below. 
+
+```Python
+def create_app():
+    """Configure the flask application"""
+
+    # Initialize the flask app
+    app = Flask(__name__)
+
+    # Load Flask configuration settings such as session configs
+    app.config.from_object("default_settings")
+
+    # Initialize the serverside session for the app to coordinate auth flows, store the 
+    # "user" object and store MSAL client caches (token cache and http cache)
+    Session(app)
+
+    # Support both http (localhost) and https (deployed behind a web
+    # proxy such as in most cloud deployments). See:
+    # https://flask.palletsprojects.com/en/2.0.x/deploying/wsgi-standalone/#proxy-setups
+    app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
+```
+
+In addition to the Flask-specific configurations, ` app.config.from_object("default_settings")` also gets the client id, client credential, and tenant id that will be used with the MSAL client.
+
+The `Session(app)` object initializes a server side session that is used to coordinate the authorization code flow between auth legs and store the "User" object (id token/claims). It also stores two MSAL client caches; (i) the token cache that contains access tokens and refresh tokens and (ii) the http cache that contains highly cacheable content like the metadata endpoint.
+
+## Create the authorization code flow dictionary
+
+To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform.In this tutorial, you use the authorization code grant flow for sign-in. Add the following code to `app.py` to build the auth code flow dictionary and redirect users to Azure AD to perform the necessary authorization code flow actions.
 
 ```python
 # Redirect unauthorized users through the auth code flow to sign in
@@ -128,8 +195,7 @@ The other two routes that require a specific level of authentication and authori
 
 ## Create a confidential client using the app registration values
 
-The first step of the sign-in process is to send a request to the `/authorize` endpoint on the identity platform. The authorize endpoint can be used to request tokens or authorization codes via the browser. To do this, we create an application instance of
- the MSAL Python confidential client using the app registration values, as follows:
+The first step of the sign-in process is to send a request to the `/authorize` endpoint on the identity platform. The authorize endpoint can be used to request tokens or authorization codes via the browser. To do this, we create an application instance of the MSAL Python confidential client using the app registration values, as follows:
 
 ```python
 # Create an MSAL client using the app's configuration values and provide the token cache.
@@ -179,7 +245,7 @@ def graph():
     http_cache: dict = session.get("msal_http_response_cache", {})
 ```
 
-As illustrated in the code snippet above, we start by checking whether the session contains a user entry and that the  id token is valid. If not, raise an unauthorized error to trigger the auth code flow and redirect the user to sign in. 
+As illustrated in the code snippet above, we start by checking whether the session contains a user entry and that the id token is valid. If not, raise an unauthorized error to trigger the auth code flow and redirect the user to sign in. 
 
 To create the `@app.get("/admin")` route that requires the user to have an application-defined, admin role assigned, update `app.py` with the following code.
 

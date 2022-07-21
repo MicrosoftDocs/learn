@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.add-sign-in-support-python-webapp-identity-platform.call-protected-web-api
+uid: learn.add-sign-in-support-python-webapp-identity-platform.exercise-call-protected-web-api
 title: Exercise - Call a protected web API
 metadata:
   unitType: learning-content
@@ -10,6 +10,6 @@ metadata:
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
-  [!include[](includes/6-call-protected-web-api.md)]
+  [!include[](includes/7-exercise-call-protected-web-api.md)]

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.add-sign-in-support-python-webapp-identity-platform.sign-in-azure-ad-users
-title: Exercise - Prepare the application to sign in users
+uid: learn.add-sign-in-support-python-webapp-identity-platform.summary
+title: Summary
 metadata:
-  unitType: learning-content
-  title: Exercise - Prepare the application to sign in users
+  unitType: summary
+  title: summary
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 06/14/2022
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
-  [!include[](includes/4-sign-in-azure-ad-users.md)]
+  [!include[](includes/9-summary.md)]

@@ -33,9 +33,10 @@ units:
 - learn.add-sign-in-support-python-webapp-identity-platform.introduction
 - learn.add-sign-in-support-python-webapp-identity-platform.authnz-with-identity-platform
 - learn.add-sign-in-support-python-webapp-identity-platform.exercise-prepare-app-for-auth
-- learn.add-sign-in-support-python-webapp-identity-platform.sign-in-azure-ad-users
+- learn.add-sign-in-support-python-webapp-identity-platform.msal-python-auth-code-flow
 - learn.add-sign-in-support-python-webapp-identity-platform.exercise-build-auth-code-flow
-- learn.add-sign-in-support-python-webapp-identity-platform.call-protected-web-api
+- learn.add-sign-in-support-python-webapp-identity-platform.identity-platform-permissions-and-consent
+- learn.add-sign-in-support-python-webapp-identity-platform.exercise-call-protected-web-api
 - learn.add-sign-in-support-python-webapp-identity-platform.knowledge-check
 - learn.add-sign-in-support-python-webapp-identity-platform.summary
 badge:

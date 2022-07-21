@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.add-sign-in-support-python-webapp-identity-platform.summary
-title: Summary
+uid: learn.add-sign-in-support-python-webapp-identity-platform.msal-python-auth-code-flow
+title: Authorization code flow in MSAL Python
 metadata:
-  unitType: summary
-  title: summary
+  unitType: learning-content
+  title: Authorization code flow in MSAL Python
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 06/14/2022
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
-  [!include[](includes/8-summary.md)]
+  [!include[](includes/4-msal-python-auth-code-flow.md)]

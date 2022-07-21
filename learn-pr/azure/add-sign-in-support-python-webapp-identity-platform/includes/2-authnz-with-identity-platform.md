@@ -17,12 +17,16 @@ The redirect URI, also known as Reply URL, is the location where the identity pl
 
 ### Client credentials 
 
-Credentials are used by confidential client applications, such as web apps, that access a web API. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime. You can add certificates, client secrets, or federated credentials to your confidential client app registration. 
+Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime. You can add certificates, client secrets, or federated credentials to your app registration.
+
+### Authority
+
+The authority is the full directory URL that identifies a token authority. It should in the form of `https://login.microsoftonline.com/<your_tenant>`
 
 ### App roles
 
-App roles provide a way for a resource server to govern access to its protected resources. They represent privileges that the subject has been granted. For instance, an admin role could allow email administrators to read everyone's email.
+App roles provide a way for a resource server to govern access to its protected resources. They represent privileges that the subject has been granted. 
 
-App roles defined during the app registration process are used to securely enforce authorization in your application. When using app roles, an administrator grants permissions to roles and not to individual users or groups. The administrator can then use the Azure portal to assign roles to different users and groups to control who has access to what content and functionality.  
+App roles defined during the app registration process are used to securely enforce authorization in your application. When using app roles, an administrator grants permissions to roles and not to individual users or groups. The administrator can then use the Azure portal to assign roles to different users and groups to control who has access to what content and functionality.  For instance, an admin role could allow email administrators to read everyone's email.
 
 After you register the application, you can configure it to communicate with Azure AD by implementing the authentication logic yourself or using libraries such as Microsoft Authentication Library (MSAL). The latter is recommended.

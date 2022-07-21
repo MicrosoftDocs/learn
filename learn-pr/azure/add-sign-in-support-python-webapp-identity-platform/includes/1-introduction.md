@@ -6,7 +6,7 @@ In this module, you'll learn how to add core authentication and authorization fe
 
 ## Example scenario
 
-Suppose you work at insurance company as a software developer. You're developing an insurance data solution that signs in your agency's employees and clients. The company wants the proposed solution to allow clients to access their data while enabling employees to derive insights from the customer data for decision-making processes. You need to build a confidential client application that signs in all company users and allows them to access data based on their roles in the company. 
+Suppose you work at insurance company as a software developer. You're developing an insurance data solution that signs in your agency's employees and clients. The company wants the proposed solution to allow clients to access their data while enabling employees to derive insights from the customer data for decision-making processes. You need to build an application that signs in all company users and allows them to access data based on their roles in the company. 
 
 ## What will we be doing?
 

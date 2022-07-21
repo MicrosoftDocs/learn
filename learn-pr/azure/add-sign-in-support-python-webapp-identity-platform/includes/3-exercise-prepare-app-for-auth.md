@@ -1,5 +1,4 @@
-
-Now that you've understood how the Microsoft identity platform works, you'll create a Python web app and implement authentication and authorization logic using Azure AD.  
+Now that you've understood how the Microsoft identity platform works, you'll create a Python web app and implement authentication and authorization logic using Azure AD. 
 
 In this exercise, you'll register the Python web app you create in the Azure portal. You'll also complete the following application-specific configurations on the Azure portal:
 
@@ -16,8 +15,8 @@ To complete the rest of the module, you'll need to create a Python Flask web app
 
 If you prefer following the module and building the Python Flask web app by yourself, follow the steps below:
 
-1. Create a folder to host your application and name it python-flask-webapp, for example.
-1. Navigate to your project directory and create two files named app.py and default_settings.py.
+1. Create a folder to host your application and name it `python-flask-webapp`, for example.
+1. Navigate to your project directory and create two files named app.py and `default_settings.py`.
 1. At the end of the module, your project's file and directory structure should look similar to this.
 
 ```
@@ -100,7 +99,7 @@ Once you've added the app roles in your application, you can assign users and gr
 
 ## Update the application to use your app registration details.
 
-Open the `default_settings.py` file and modify the three Azure Active Directory configuration properties using the values from your app's registration in the Azure portal.
+Open the `default_settings.py` file and add the three Azure Active Directory configuration properties using the values from your app's registration in the Azure portal.
 
 ```Python
 # 'Application (client) ID' of app registration in Azure portal - this value is a GUID
