@@ -62,4 +62,36 @@ quiz:
     - content: Azure Monitor
       isCorrect: true
       explanation: Route your activity logs to an Azure Log Analytics workspace if you need to analyze data, create dashboard and alert on specific events.
- 
+  - content: "What is the input and output data format of each operator in a Kusto query?"
+    choices:
+    - content: "String"
+      isCorrect: false
+      explanation: "False. String is just one of many data types that can be included in the tabular data."
+    - content: "Tabular"
+      isCorrect: true
+      explanation: 'True. Each operator starts with a tabular input and returns a tabular output.'
+    - content: "JSON"
+      isCorrect: false
+      explanation: "False. JSON is just one of many data types that can be included in the tabular data."
+  - content: "Which operator will return in a Kusto query a specific number of arbitrary rows of data?"
+    choices:
+    - content: "`take`"
+      isCorrect: true
+      explanation: "True. The `take` operator returns up to the specified number of arbitrary data rows."
+    - content: "`between`"
+      isCorrect: false
+      explanation: "False. The `between` operator filters a record set for data that matches the values in an inclusive range."
+    - content: "`contain`"
+      isCorrect: false
+      explanation: "False. The `contain` operator filters a record set for data that contains a case-insensitive string."
+  - content: "How can you start creating a new workbook?"
+    choices:
+    - content: "With an empty workbook only."
+      isCorrect: false
+      explanation: "False. While using am empty workbook is a valid option, there are also others."
+    - content: "With an empty workbook, or an existing template."
+      isCorrect: true
+      explanation: "True. You can either start with an empty workbook, or use an existing template."
+    - content: "You must use an existing template."
+      isCorrect: false
+      explanation: "False. While using an existing template is a valid option, there are also others."
