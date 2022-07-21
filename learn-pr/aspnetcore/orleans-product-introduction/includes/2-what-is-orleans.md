@@ -1,6 +1,6 @@
 Orleans simplifies the process of building distributed, scalable applications. There are several key concepts to understand  in order to work with Orleans effectively.
 
-## The actor model
+## The virtual actor model
 
 Orleans is built around the "actor model", which is an established design pattern that has existed since the 1970s. The actor model is a pattern that stores pieces of state data and corresponding behavior in lightweight, immutable objects called *actors*. Actors communicate with each other using asynchronous messages. Orleans manages and simplifies much of the parallel communication required by distributed apps for you. Orleans invented the *virtual actor* model, where actors exist perpetually whenever they're needed. This architecture lends itself well to cloud-native applications, which require distributed and resilient state and parallel operations.
 
