@@ -13,7 +13,7 @@ title: Authenticate your Azure deployment workflow by using workload identities
 summary: |
   Workload identities enable your deployment workflows to authenticate securely with Azure without you managing any passwords, keys, or secrets.
   In this module, you'll learn what workload identities are, how they work, and how to create them.
-  You'll also learn how to grant them permission to your Azure resources so that your pipelines can deploy your Bicep files.
+  You'll also learn how to grant them permission to your Azure resources so that your workflows can deploy your Bicep files.
 abstract: |
   After completing this module, you'll be able to:
   - Explain what a workload identity is, how it works, and how it compares to a service principal and managed identity

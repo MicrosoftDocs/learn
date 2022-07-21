@@ -2,7 +2,7 @@ Deployment workflows, applications, and software requires a special way to authe
 
 ## Why does a workflow need to authenticate?
 
-When you deploy a Bicep fuke, you effectively ask Azure Resource Manager to create or modify your Azure resources. In the example scenario, you've created a Bicep file to deploy your toy company's website. The Bicep file declares resources that include an Azure App Service plan, an app, and an Application Insights instance. 
+When you deploy a Bicep file, you effectively ask Azure Resource Manager to create or modify your Azure resources. In the example scenario, you've created a Bicep file to deploy your toy company's website. The Bicep file declares resources that include an Azure App Service plan, an app, and an Application Insights instance. 
 
 When you deploy the file, Resource Manager checks whether the resources exist. If they don't, Resource Manager creates them. If any already exist, Resource Manager ensures that their configuration matches the configuration that you specify in the Bicep file.
 

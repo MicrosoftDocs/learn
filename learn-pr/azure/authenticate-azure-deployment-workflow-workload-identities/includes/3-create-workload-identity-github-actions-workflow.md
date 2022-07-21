@@ -9,9 +9,6 @@ When you create an application registration, you need to specify a display name.
 > [!TIP]
 > Use a clear, descriptive display name for your application registration. It's important to help your team understand what the application registration is for, so that nobody accidentally deletes it or changes its permissions.
 
-> [!CAUTION]
-> A display name isn't unique. Multiple application registrations might share the same display name. Be careful when you grant permissions to a application registrations by using its display name to identify it. You might accidentally give permissions to the wrong application registrations. It's a good practice to use one of the unique identifiers instead.
-
 ::: zone pivot="cli"
 
 Here's an example Azure CLI command to create a new Azure AD application:
@@ -39,13 +36,16 @@ The output of the preceding command includes a few important pieces of informati
 
 When you create an application registration, you typically only set the display name. Azure assigns the other names and identifiers automatically.
 
+> [!CAUTION]
+> A display name isn't unique. Multiple application registrations might share the same display name. Be careful when you grant permissions to a application registrations by using its display name to identify it. You might accidentally give permissions to the wrong application registrations. It's a good practice to use one of the unique identifiers instead.
+
 ## Create a federated credential
 
-By itself, an application registration doesn't allow a workflow or application to sign in to Azure. You need to assign some credentials first. *Federated credentials* are one type of application credential.
+By itself, an application registration doesn't allow a workflow or application to sign in to Azure. You need to assign some credentials first. *Federated credentials* are one type of application credential. Unlike most credentials, federated credentials don't require that you manage any secrets like passwords or keys.
 
 Federated credentials support several different scenarios. In this module, we focus on GitHub Actions deployment workflows.
 
-When you create a federated credential for a deployment workflow, you effectively tell Azure AD to trust GitHub. Then, when your workflow attempts to sign in, GitHub provides information about the workflow run so that Azure AD can decide whether to allow the sign-in attempt. The information GitHub provides during each sign-in attempt includes:
+When you create a federated credential for a deployment workflow, you effectively tell Azure AD and GitHub to trust each other. Then, when your workflow attempts to sign in, GitHub provides information about the workflow run so that Azure AD can decide whether to allow the sign-in attempt. The information GitHub provides during each sign-in attempt includes:
 
 - The GitHub organization name.
 - The name of the GitHub repository.
@@ -54,7 +54,7 @@ When you create a federated credential for a deployment workflow, you effectivel
 - The Git tag that includes a commit.
 - Whether the workflow was triggered by the creation of a pull request.
 
-You can configure Azure AD to allow or deny a sign-in attempt from GitHub depending on the values of the proprties listed above. For example, you can enforce policies like the following:
+You can configure Azure AD to allow or deny a sign-in attempt from GitHub depending on the values of the proprties listed above. For example, you can enforce the following policies:
 
 - *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization.*
 - *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization, and the branch name is _main_*.
@@ -74,15 +74,13 @@ When you use the Azure CLI, you specify the policy by creating a JSON file or va
 }
 ```
 
-The preceding JSON specifies that the federated credential should only be valid when a workflow runs for the following situations: 
+In the preceding JSON, the `subject` property specifies that the federated credential should only be valid when a workflow runs for the following situations: 
 
 | Field | Value |
 | - | - |
 | GitHub organization name | `MyGitHubOrganization` |
 | GitHub repository name | `MyGitHubRepository` |
 | Branch name | `main` |
-
-All of these values are specified in the `subject` property of the JSON file.
 
 After you've created a policy in JSON and saved it to a file named *policy.json*, you can use the Azure CLI to create the federated credential:
 
@@ -259,9 +257,9 @@ $newKey = $newCredential.SecretText
 
 ## Manage the lifecycle of your workload identity
 
-It's important to consider the whole lifecycle of each service principal that you create. When you build a workload identity for a deployment workflow, what will happen if the workflow is eventually deleted or is no longer used? 
+It's important to consider the whole lifecycle of each workload identity that you create. When you build a workload identity for a deployment workflow, what will happen if the workflow is eventually deleted or is no longer used? 
 
-Workload identities aren't removed automatically, so you need to audit and remove old workload identities. Even though your deployment workflow's workload identities don't have secret credentials that could be reused, it's still best to remove them when they're no longer needed. That way, there's no chance somebody could create another GitHub repository with the same name and get access to your Azure environment.
+Workload identities aren't removed automatically, so you need to audit and remove old workload identities. Even though your deployment workflow's workload identities don't have secret credentials that could be reused, it's still best to remove them when they're no longer needed. That way, there's no chance somebody could create another GitHub repository with the same name and unexpectedly get access to your Azure environment.
 
 It's a good practice to document your workload identities in a place that you and your team can easily access. You should include the following information for each service principal:
 
