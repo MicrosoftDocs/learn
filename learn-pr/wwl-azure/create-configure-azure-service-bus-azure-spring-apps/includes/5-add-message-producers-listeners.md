@@ -51,8 +51,8 @@ Below is the activity flow.
     ```
 
 2.  In the ***src/main/java/org/springframework/samples/petclinic/visits/entities*** directory, add a `VisitResponse.java` class using the code below.
-    
-    ```
+3.  ```
+    package org.springframework.samples.petclinic.visits.entities;
     
     public class VisitResponse {
         Integer requestId;
@@ -101,7 +101,6 @@ Below is the activity flow.
     
     import java.util.HashMap;
     import java.util.Map;
-    
     import org.springframework.beans.factory.annotation.Value;
     import org.springframework.context.annotation.Bean;
     import org.springframework.context.annotation.Configuration;
@@ -133,8 +132,7 @@ Below is the activity flow.
     ```
 
 4.  In the **spring-petclinic-visits-service/src/main/java/org/springframework/samples/petclinic/visits/config** subdirectory, add another `QueueConfig.java` class file containing the following code:
-    
-    ```java
+5.  ```java
     package org.springframework.samples.petclinic.visits.config;
     
     import org.springframework.beans.factory.annotation.Value;
@@ -142,6 +140,7 @@ Below is the activity flow.
     public class QueueConfig {
         @Value("${spring.jms.queue.visits-requests:visits-requests}")
         private String visitsRequestsQueue;
+    
         public String getVisitsRequestsQueue() {
             return visitsRequestsQueue;
         }
@@ -206,8 +205,8 @@ Below is the activity flow.
 7.  Redeploy the **visits** microservice.
     
     ```azurecli
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
         --no-wait \
