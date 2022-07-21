@@ -8,7 +8,7 @@ In this exercise, you'll deploy the newly created Web Sales aggregator BFF to th
 
 ## Web.Sales.HttpAggregator
 
-You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGateways/Aggregators/Web.Sales.HttpAggregator* directory. Locate that directory in the Azure Cloud Shell editor. Apply the following changes to the service:
+You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGateways/Aggregators/Web.Sales.HttpAggregator* directory. Locate that directory in the file explorer pane. Apply the following changes to the service:
 
 1. In *Controllers/SalesController*, replace `// Add the GetSalesOfTodayByBrand code` with the following code:
 
