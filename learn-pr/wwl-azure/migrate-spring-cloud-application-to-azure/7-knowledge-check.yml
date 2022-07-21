@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/08/2022
+  ms.date: 07/21/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,9 +19,9 @@ quiz:
   questions:
   - content: "Which of the following is a centralized configuration service for distributed systems?"
     choices:
-    - content: "Azure Spring Cloud Config Server"
+    - content: "Azure Spring Apps Config Server"
       isCorrect: true
-      explanation: "That’s correct. Azure Spring Cloud Config Server is a centralized configuration service for distributed systems."
+      explanation: "That’s correct. Azure Spring Apps Config Server is a centralized configuration service for distributed systems."
     - content: "Azure Database Migration Service"
       isCorrect: false
       explanation: "That’s incorrect. Azure Database Migration Service is a tool that helps you simplify, guide, and automate your database migration to Azure."

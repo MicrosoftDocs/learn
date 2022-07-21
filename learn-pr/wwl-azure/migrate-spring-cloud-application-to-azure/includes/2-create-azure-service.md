@@ -10,8 +10,8 @@ Your workstation should have the following components installed:
  -  Visual Studio Code available from [Visual Studio Code Downloads](https://code.visualstudio.com/download)
  -  Git available from [Git Downloads](https://git-scm.com/downloads)
  -  Apache Maven 3.8.5 available from [Apache Maven Project downloads](https://maven.apache.org/download.cgi)
- -  Java Development Kit (JDK) available from [JD](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[K downloads](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi).
- -  To download the instructions for this module, see Deploying and Running Java apps in Azure Spring Apps.
+ -  Java Development Kit (JDK) available from [JD](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[K](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[ downloads](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi).
+ -  To download the instructions for this module, see [Deploying and Running Java apps in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-apps-in-Azure-Spring-Cloud).
 
 For Git installations, set the global configuration variables *user.email* and *user.name* by running the following commands from the Git Bash shell:
 
@@ -28,7 +28,7 @@ To install Apache Maven, extract the content of the *.zip* file by running unzip
 export PATH=~/apache-maven-3.8.5/bin:$PATH
 ```
 
-To install JDK, follow the instructions provided in [JDK Installation Guide](https://docs.oracle.com/en/java/javase/18/install/installation-jdk-microsoft-windows-platforms.html). Set the `JAVA_HOME` environment variable by running the following command from the Git Bash shell:
+To install JDK, follow the instructions provided in [J](https://docs.oracle.com/en/java/javase/18/install/installation-jdk-microsoft-windows-platforms.html)[DK Installation Guide](https://docs.oracle.com/en/java/javase/18/install/installation-jdk-microsoft-windows-platforms.html). Set the `JAVA_HOME` environment variable by running the following command from the Git Bash shell:
 
 ```Bash
 export JAVA_HOME="/c/Program Files/Java/jdk-18.0.1.1"
@@ -54,46 +54,64 @@ The following procedure uses the Azure CLI extension to deploy an instance of Az
         --name spring-cloud
     ```
 
-3.  Sign in to Azure CLI using your Azure subscription. This command will open a browser window to sign in.
+3.  Make sure that you're logged in to the right subscription for the consecutive commands.
     
     ```azurecli
-    RESOURCE_GROUP=springcloudlab_rg
-    LOCATION=westus
+    az account list -o table
+    ```
+4.  If in the above statement you don't see the right account being indicated as your default one, change your environment to the right subscription with the following command, replacing the `<subscription-id>`.
+
+```azurecli
+az account set \
+    --subscription <subscription-id>
+```
+
+6.  Run the following commands to create a resource group to contain all resources. Replace the `<azure-region>` placeholder with the name of any Azure region in which you can create a Standard SKU instance of the Azure Spring Apps service and an Azure Database for MySQL Single Server instance. See the [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=mysql%2Cspring-apps&amp;regions=all) page for services availability.
+    
+    ```azurecli
+    UNIQUEID=$(openssl rand -hex 3)
+    RESOURCE_GROUP=springappslab_rg_$UNIQUEID
+    LOCATION=<azure-region>
     az group create -g $RESOURCE_GROUP -l $LOCATION
     ```
-    
-    > [!NOTE]
-    > Next, you'll create a new instance of the Azure Spring Apps service. The name you use for your Spring Cloud service should be unique, so modify the value used in the script below.
 
-4.  To create a new instance of the Azure Spring Apps service. Wait for the provisioning to complete.
+7.  Run the commands listed below to create an instance of the standard SKU of the Azure Spring Apps service. The name of the service must be globally unique and contain only lowercase letters, numbers, and hyphens.
     
     ```azurecli
-    SPRING_CLOUD_SERVICE=springcloudlab
-    az spring-cloud create \
-        --name $SPRING_CLOUD_SERVICE \
+    SPRING_APPS_SERVICE=springappssvc$UNIQUEID
+        --name $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --location $LOCATION \
         --sku Standard
     ```
+    
+    > [!NOTE]
+    > The commands above will automatically register the Spring extension if needed. Confirm the extension installation with *Y*.
+    
+    > [!NOTE]
+    > You can also add the spring extension with az extension `add --name spring.`
+    
+    > [!NOTE]
+    > Provisioning will take approximately 5 minutes.
 
-5.  You can set your default resource group name and Spring Cloud service name. By setting these defaults, you won't need to repeat these names for the next commands.
+8.  You can set your default resource group name and Spring Apps service name. By setting these defaults, you won't need to repeat these names for the next commands.
     
     ```azurecli
-    az config set defaults.group=$RESOURCE_GROUP defaults.spring-cloud=$SPRING_CLOUD_SERVICE
+    az config set defaults.group=$RESOURCE_GROUP defaults.spring-cloud=$SPRING_APPS_SERVICE
     ```
 
-6.  In a new tab, open the [Azure portal](https://portal.azure.com/).
-7.  Use the **Search resources, services, and docs** to search for the resource group you created using ***Azure Spring Apps**.*
+9.  In a new tab, open the [Azure portal](https://portal.azure.com/).
+10. Use the **Search resources, services, and docs** to search for the resource group you created using **Azure Spring Apps**.
     
     In the resource group overview, you'll see your newly created Azure Spring Apps instance.
     
-    :::image type="content" source="../media/azure-spring-cloud-resources-f587a987.png" alt-text="Screenshot of Azure Spring Apps resource groups.":::
+    :::image type="content" source="../media/azure-spring-apps-resources1-5e209d7c.png" alt-text="Screenshot of Azure Spring Apps resource groups.":::
     
     
     > [!NOTE]
     > If you don't see the Azure Spring Apps service in the overview list of the resource group, you may need to refresh the view.
 
-8.  Select the Azure Spring Apps instance and select Apps. Notice that there are no apps deployed to the instance but will be added in the upcoming exercise.
+11. Select the Azure Spring Apps instance and select Apps. Notice that there are no apps deployed to the instance but will be added in the upcoming exercise.
     
-    :::image type="content" source="../media/service-apps-spring-cloud-80f4a288.png" alt-text="Screenshot of the apps listed for Azure Spring Apps service.":::
+    :::image type="content" source="../media/azure-spring-apps-resources2-c535ebc4.png" alt-text="Screenshot of the apps listed for Azure Spring Apps service.":::
     
