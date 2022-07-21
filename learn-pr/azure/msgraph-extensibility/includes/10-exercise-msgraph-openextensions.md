@@ -4,7 +4,7 @@ In this exercise, you'll use an API client such as [Graph Explorer](https://aka.
 
 ## Authenticate your session
 
-Sign in to Graph Explorer or another API client with the *User Administrator* Azure AD role.
+Sign in to Graph Explorer using a work or school account that has global administrator privileges in the tenant.
 
 Consent to the *User.ReadWrite.All* Microsoft Graph permission to perform the API operations in this exercise.
 

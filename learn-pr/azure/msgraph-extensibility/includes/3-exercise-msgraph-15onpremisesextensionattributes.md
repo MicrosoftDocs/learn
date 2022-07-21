@@ -4,7 +4,7 @@ In this exercise, you'll use an API client such as [Graph Explorer](https://aka.
 
 ## Authenticate your session
 
-Sign in to Graph Explorer as an administrator with both the *User Administrator* and *Groups Administrator* Azure AD role.
+Sign in to Graph Explorer using a work or school account that has global administrator privileges in the tenant.
 
 Consent to the *User.ReadWrite.All* and *Group.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 
@@ -57,7 +57,7 @@ Content-type: application/json
 
 ## Store user data in extension attributes
 
-In this exercise, you'll store these pieces of data for **Adele Vance**.
+In this exercise, you'll store these pieces of data for *Adele Vance*.
 
 ### Request
 

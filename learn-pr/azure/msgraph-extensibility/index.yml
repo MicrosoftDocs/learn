@@ -8,7 +8,7 @@ metadata:
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
-  ms.prod: microsoft-graph-extensions-api
+  ms.prod: learning-graph
 title: Add custom data to your app using extensions in Microsoft Graph
 summary: "Add custom data to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom data to build unique experiences for your applications."
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
     - Add, query, and update custom data through Microsoft Graph
     - Use data in Microsoft Graph extensions to extend your application
 prerequisites: |
-  - Access to an [Azure Active Directory tenant](/azure/active-directory/develop/quickstart-create-new-tenant) where you have the Global Administrator role for your account
+  - Access to an Azure Active Directory tenant with a work or school account that has the Global Administrator role. If you don't have an Azure AD tenant, follow the instructions on the follow the instructions on the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) site to create a developer tenant.
   - Basic knowledge of working with REST APIs and how to use the create, read, update, and delete (CRUD) REST API operations
   - Basic knowledge of working with user data in Azure AD and Microsoft 365 using Microsoft Graph
 iconUrl: /learn/achievements/generic-badge.svg
@@ -26,10 +26,11 @@ levels:
 roles:
   - developer
 products:
-- microsoft-graph-extensions-api
-- azure-active-directory
+- ms-graph
+- m365
 subjects:
   - cloud-computing
+  - development-tools
 units:
 - learn.msgraph-extensibility.introduction
 - learn.msgraph-extensibility.msgraph-15onpremisesextensionattributes

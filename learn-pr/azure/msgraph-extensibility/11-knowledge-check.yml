@@ -9,7 +9,7 @@ metadata:
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
-  ms.prod: microsoft-graph-extensions-api
+  ms.prod: learning-graph
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -46,7 +46,7 @@ quiz:
       explanation: "Try again. Open extensions don't support any query capabilities."
     - content: "Each extension option is available for only specific Microsoft Graph resources."
       isCorrect: true
-      explanation: "Correct. "
+      explanation: "Correct. Not all Microsoft Graph resources support extensions."
     - content: "Extension options in Microsoft Graph allow using custom property names that can be easily identified with the custom data."
       isCorrect: false
       explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."
@@ -57,7 +57,7 @@ quiz:
       explanation: "Try again. Open extensions don't support any query capabilities."
     - content: "Each extension option is available for only specific Microsoft Graph resources."
       isCorrect: true
-      explanation: "Correct. "
+      explanation: "Correct. Not all Microsoft Graph resources support extensions."
     - content: "Extension options in Microsoft Graph allow using custom property names that can be easily identified with the custom data."
       isCorrect: false
       explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."

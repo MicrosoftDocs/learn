@@ -8,7 +8,7 @@ Be an owner of an application and record its **appId**. You'll use this app as t
 
 ## Authenticate your session
 
-Sign in to Graph Explorer or an app you own as an administrator with the following Azure AD roles: *User Administrator* and *Application Administrator*.
+Sign in to Graph Explorer using a work or school account that has global administrator privileges in the tenant.
 
 Consent to the *User.ReadWrite.All* and *Application.ReadWrite.All* Microsoft Graph permissions to perform the API operations in this exercise.
 

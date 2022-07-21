@@ -9,7 +9,7 @@ metadata:
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
-  ms.prod: microsoft-graph-extensions-api
+  ms.prod: learning-graph
 durationInMinutes: 10
 content: |
   [!include[](includes/4-msgraph-directoryextensions.md)]

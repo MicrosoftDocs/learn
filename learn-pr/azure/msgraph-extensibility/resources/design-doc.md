@@ -12,7 +12,7 @@ intermediate
 
 ## Product(s)
 
-microsoft-graph-extensions-api
+learning-graph
 
 ## Prerequisites
 
