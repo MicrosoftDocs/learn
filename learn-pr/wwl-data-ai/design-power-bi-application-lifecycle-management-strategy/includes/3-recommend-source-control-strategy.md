@@ -31,6 +31,6 @@ Choose the best solution for each project:
 If using Git, determine if changes can be merged to the main branch automatically, or if changes need review and approval beforehand.
 
 > [!TIP]
-> Review [Git branching guidance](/azure/devops/repos/git/git-branching-guidance?view=azure-devops) for more detailed explanation of Git repository design strategies.
+> Review [Git branching guidance](/azure/devops/repos/git/git-branching-guidance) for more detailed explanation of Git repository design strategies.
 
 Regardless of your choices, deciding on an organizational process for development is invaluable. In the next module we'll discuss deployment pipelines, which help when deploying through development, test, and production workspaces, per application lifecycle management (ALM).

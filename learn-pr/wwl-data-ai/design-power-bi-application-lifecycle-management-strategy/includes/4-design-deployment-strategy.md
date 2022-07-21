@@ -43,4 +43,4 @@ By separating the datasets, you can grant access to a larger audience to create 
 Continuous Integration/Continuous Deployment (CI/CD) is a more recent concept focused on the automation from development to production. You may have noticed that deployment pipelines aren't able to track a *.bim* file, only the dataset that is associated with the *.pbix* file when published to Power BI service. Therefore it doesn't fully encapsulate a true CI/CD solution. However, if your organization desires more control, you can use Azure DevOps for Git, then use the Power BI Connector and XMLA endpoint to deploy from the repository to the deployment pipelines.
 
 > [!TIP]
-> To implement automated deployment pipelines, review the [Power BI reference documentation](/power-bi/create-reports/deployment-pipelines-automation).
+> Discover how to [Automate your deployment pipeline using APIs and Azure DevOps](/power-bi/create-reports/deployment-pipelines-automation) in your environment.
