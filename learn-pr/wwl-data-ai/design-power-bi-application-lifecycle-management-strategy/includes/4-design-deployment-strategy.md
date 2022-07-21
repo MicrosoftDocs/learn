@@ -1,4 +1,4 @@
-In the previous unit, we discussed how to secure your changes, and now we'll review options for deployment. In large organizations, you may have hundreds of reports and datasets. Application lifecycle management (ALM) dictates development, test, and then deploy, which will multiply the number of files you have in the environment. This can be an administrative nightmare, which is why creating a deployment strategy will reduce time and effort across the company.
+In the previous unit, we discussed how to secure your changes, and now we'll review options for deployment. In large organizations, you may have hundreds of reports and datasets. Application lifecycle management (ALM) suggests separate environments for development, test, and production, which multiplies your total files. This process can be an administrative nightmare, which is why creating a deployment strategy will reduce time and effort across the company.
 
 ## Consider the options
 
@@ -21,6 +21,8 @@ In the following image, there are three workspaces for development, test, and pr
 
 > [!IMPORTANT]
 > Power BI deployment pipelines require a Premium or Premium Per User workspace.
+
+We go into greater detail in the next module, [Create and manage a Power BI deployment pipeline](/learn/modules/power-bi-deployment-pipelines/).
 
 ## Combining source control and deployment pipelines
 

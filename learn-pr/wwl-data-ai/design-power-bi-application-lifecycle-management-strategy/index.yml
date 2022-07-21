@@ -3,7 +3,7 @@ uid: learn.wwl.design-power-bi-application-lifecycle-management-strategy
 metadata:
   title: Design a Power BI application lifecycle management strategy
   description: "Design a Power BI application lifecycle management strategy"
-  ms.date: 07/20/2022
+  ms.date: 07/21/2022
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
@@ -11,10 +11,9 @@ title: Design a Power BI application lifecycle management strategy
 summary: The use of OneDrive, Git repositories, and Power BI deployment pipelines allows us to follow application lifecycle management techniques. This reduces administrative overhead and provides continuity in the development process.
 abstract: |
   Upon completion of this module, the student will be able to:
-  Outline the application lifecycle process.
-  Choose a source control strategy.
-  Design a deployment strategy.
-  Implement deployment pipelines in Power BI service.
+  * Outline the application lifecycle process.
+  * Choose a source control strategy.
+  * Design a deployment strategy.
 prerequisites: |
   Experience with Power BI service.
   Awareness of application lifecycle management.
