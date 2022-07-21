@@ -4,8 +4,9 @@ This module guides you through implementing managed data services in a microserv
 
 You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected resource costs, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-configuration-aspnet-core-estimate?azure-portal=true). If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/?azure-portal=true) before you begin.
 
-> [!IMPORTANT]
-> This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
+
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
 
 In this module, you will:
 
@@ -26,3 +27,4 @@ In this module, you will:
 - Familiarity with C# and ASP.NET Core development at the beginner level
 - Familiarity with basic data management concepts
 - Access to an Azure subscription with **Owner** privilege
+- Ability to run development containers in Visual Studio Code or GitHub Codespaces

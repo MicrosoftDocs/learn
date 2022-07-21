@@ -8,22 +8,12 @@ In this unit, you will:
 - Redeploy the basket service.
 - Verify the deployment.
 
-> [!NOTE]
-> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
->
-> ```bash
-> cd ~/clouddrive/aspnet-learn/src/ && \
->   code .
-> ```
-
 ## Create an Azure Cache for Redis instance
 
-1. Run the following command:
+1. In the terminal, run the following command:
 
     ```bash
-    pushd ./deploy/k8s && \
-        ./create-azure-redis.sh && \
-        popd
+    ./create-azure-redis.sh && \
     ```
 
     The preceding command:
@@ -59,7 +49,7 @@ As implemented in the starter app, the basket service uses in-memory caching. Th
 
 In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*, apply the following changes:
 
-1. Find the following line (use <kbd>Ctrl</kbd>/<kbd>⌘</kbd>+<kbd>f</kbd> to search):
+1. Find the following line:
 
     ```csharp
     services.AddSingleton<IBasketRepository, InMemoryBasketRepository>();
@@ -100,34 +90,36 @@ In the `ConfigureServices` method of *src/Services/Basket/Basket.API/Startup.cs*
 
 In Kubernetes deployment, services store their configuration as [ConfigMap](https://kubernetes.io/docs/concepts/configuration/configmap/#configmap-object) object. So the `basket-api` config map file needs to be updated to point it to the newly created Azure Redis Cache instance.
 
-In the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor), apply the following changes in the *deploy/k8s/helm-simple* directory.
+Apply the following changes in the *deploy/k8s/helm-simple* directory:
 
-In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value from *basketdata* to the connection string from the creation script, as in the following example:
+1. In *basket/templates/configmap.yaml*, update the `ConnectionString` key's value from *basketdata* to the connection string from the creation script, as in the following example:
 
-:::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/basket/templates/configmap.yaml" highlight="10":::
 
-Save your changes. And then,
+1. In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` key's value from *basketdata* to the connection string from the creation script, as in the following example:
 
-In *signalr/templates/configmap.yaml*, update the `SignalrStoreConnectionString` key's value from *basketdata* to the connection string from the creation script, as in the following example:
+    :::code language="yaml" source="../code/deploy/k8s/helm-simple/signalr/templates/configmap.yaml" highlight="10":::
 
-:::code language="yaml" source="../code/deploy/k8s/helm-simple/signalr/templates/configmap.yaml" highlight="10":::
+    > [!NOTE]
+    > It's not recommended to store connection strings as plain text in production environments. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
 
-Save your changes.
+    1. Ensure you've saved all your changes, and then build the app. The build should complete with no errors or warnings.
 
-> [!NOTE]
-> It's not recommended to store connection strings as plain text in production environments. You can use [Azure Key Vault](/azure/key-vault/general/overview) to store secrets. For more details, refer [Configure and run the Azure Key Vault provider for the Secrets Store CSI driver on Kubernetes](/azure/key-vault/general/key-vault-integrate-kubernetes).
+    ```bash
+    dotnet build ../../src/Services/Basket/Basket.API/
+    ```
 
 At runtime, the connection string will be provided to the basket service as an environment variable. Within the code, the connection string is used in the following locations:
 
-*src/Services/Basket/Basket.API/Startup.cs*
+### *src/Services/Basket/Basket.API/Startup.cs*
 
 :::code language="csharp" source="../code/src/services/basket/basket-api/startup.cs" id="snippet_ConfigureServices" highlight="7":::
 
-*src/Services/Basket/Basket.API/Infrastructure/Repositories/RedisBasketRepository.cs*
+### *src/Services/Basket/Basket.API/Infrastructure/Repositories/RedisBasketRepository.cs*
 
 :::code language="csharp" source="../code/src/services/basket/basket-api/infrastructure/repositories/redisbasketrepository.cs" highlight="9,12,20":::
 
-*src/Services/Basket/Basket.API/Startup.cs*&mdash;The `ConfigureServices` method calls the `AddCustomHealthCheck` extension method:
+### *src/Services/Basket/Basket.API/Startup.cs*&mdash;The `ConfigureServices` method calls the `AddCustomHealthCheck` extension method:
 
 :::code language="csharp" source="../code/src/services/basket/basket-api/startup.cs" id="snippet_AddCustomHealthCheck" highlight="8":::
 
@@ -138,7 +130,7 @@ To deploy the updated *:::no-loc text="basket":::* service, follow these steps:
 1. Build and publish a new image to ACR with the following script:
 
     ```bash
-    deploy/k8s/build-to-acr.sh --services basket-api
+    ./build-to-acr.sh --services basket-api
     ```
 
     The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="basket":::* service. A variation of the following line confirms the Docker image was pushed to ACR:
@@ -150,7 +142,7 @@ To deploy the updated *:::no-loc text="basket":::* service, follow these steps:
 1. Run the following script to deploy the updated *:::no-loc text="basket":::* service to AKS:
 
     ```bash
-    deploy/k8s/deploy-application.sh --charts basket
+    ./deploy-application.sh --charts basket
     ```
 
     The preceding script uses Helm to deploy the *:::no-loc text="basket":::* Docker image from your ACR instance to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the pod of basket api. The `STATUS` and `AGE` column values indicate that the deployments were successful:
@@ -161,10 +153,10 @@ To deploy the updated *:::no-loc text="basket":::* service, follow these steps:
     basket-544bc9c7fc-wtznp           0/1    ContainerCreating    0          1s
     ```
 
-2. Run the following script to deploy the updated *:::no-loc text="Signalr":::* service to AKS:
-    
+1. Run the following script to deploy the updated *:::no-loc text="Signalr":::* service to AKS:
+
     ```bash
-    deploy/k8s/deploy-application.sh --charts signalr --registry eshoplearn
+    ./deploy-application.sh --charts signalr --registry eshoplearn
     ```
 
     The preceding script uses Helm to deploy the *:::no-loc text="signalr":::* Docker image from your eshoplearn docker registry to AKS. The script runs the `kubectl get pods` command, whose output contains entries for the pod of signalr. The `STATUS` and `AGE` column values indicate that the deployments were successful:
@@ -179,7 +171,7 @@ When all the health checks return to a healthy status, sign out of the app, then
 
 ## Verify the deployment
 
-1. Navigate to the **WebStatus** url and make sure the status of the basket service and its dependency Redis cache is healthy.
+1. Navigate to the **WebStatus** URL and make sure the status of the basket service and its dependency Redis cache is healthy.
 
     :::image type="content" source="../media/basket-api-heath-check.png" alt-text="health checks status dashboard." border="true" lightbox="../media/basket-api-heath-check.png":::
 
