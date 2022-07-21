@@ -5,7 +5,7 @@ You now have everything in place to start using the identities from Key Vault an
     > [!NOTE]
     > The lines 83 and 84 should have the following content (where, the *`<your-server-name>`* and *`<myadmin-password>`* represent the name of the Azure Database for MySQL Single Server instance and the password you assigned to the **myadmin** account during its provisioning).
 
-2.  In the same file, append the following lines to it (where the *&lt;key-vault-name&gt;* placeholder represents the name of the Azure Key Vault you provisioned earlier in this exercise):
+2.  In the same file, append the following lines to it (where the *\<key-vault-name\>* placeholder represents the name of the Azure Key Vault you provisioned earlier in this exercise):
     
     ```Bash
     cloud:
@@ -49,7 +49,7 @@ You now have everything in place to start using the identities from Key Vault an
     </dependency>
     ```
 
-2.  Add a dependency to `com.azure.spring` to the parent **pom.xml** file between the **elements**. Enter the elements within the *&lt;dependencyManagement&gt;&lt;dependencies&gt;&lt;/dependencies&gt;&lt;/dependencyManagement&gt;* section.
+2.  Add a dependency to `com.azure.spring` to the parent **pom.xml** file between the **elements**. Enter the elements within the *\<dependencyManagement\>\<dependencies\>\</dependencies\>\</dependencyManagement\>* section.
     
     ```
     
@@ -70,7 +70,7 @@ You now have everything in place to start using the identities from Key Vault an
     </dependencyManagement>
     ```
 
-3.  In the same file, add a property for `version.spring.cloud.azure`. Enter the elements within the *&lt;properties&gt;&lt;/properties&gt;* section.
+3.  In the same file, add a property for `version.spring.cloud.azure`. Enter the elements within the *\<properties\>\</properties\>* section.
     
     ```
     <version.spring.cloud.azure>4.2.0</version.spring.cloud.azure>
