@@ -68,6 +68,7 @@ The following exercise shows, how you can use this workbook template to create a
     :::image type="content" source="../media/select-sign-ins-using-legacy-authentication-workbook.png" alt-text="Screenshot that shows how to select the sign-ins using legacy authentication workbook.":::
 
 3. In the toolbar, click **Edit**.
+
     :::image type="content" source="../media/select-edit-workbook.png" alt-text="Screenshot that shows how to select edit in an open workbook.":::
 
 4. At the end of the first paragraph, click **Edit**.
