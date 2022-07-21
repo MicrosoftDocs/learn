@@ -57,8 +57,8 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. TODO assemble subject variables
 
    ```azurecli
-   githubOrganizationName='TODO'
-   githubRepositoryName='TODO'
+   githubOrganizationName='mygithubuser'
+   githubRepositoryName='toy-website-workflow'
    ```
 
 1. Run the code below, which creates a workload identity:
@@ -80,8 +80,8 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. TODO assemble subject variables
 
    ```azurepowershell
-   $githubOrganizationName = 'TODO'
-   $githubRepositoryName = 'TODO'
+   $githubOrganizationName = 'mygithubuser'
+   $githubRepositoryName = 'toy-website-workflow'
    ```
 
 1. Run the code below, which creates a workload identity:
