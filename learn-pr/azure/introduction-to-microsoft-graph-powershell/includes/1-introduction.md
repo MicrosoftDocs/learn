@@ -9,7 +9,7 @@ Suppose you're the IT admin of a vendor company that develops software solutions
 
 ## What will we be doing?
 
-Microsoft Graph PowerShell is PowerShell for the entire Microsoft Graph API and provides PowerShell command for all REST APIs in Microsoft Graph. We'll look at the features and benefits of the Microsoft Graph PowerShell module and how to use the module to automate different business processes.
+Microsoft Graph PowerShell is PowerShell for the entire Microsoft Graph API and provides PowerShell commands for all REST APIs in Microsoft Graph. We'll look at the features and benefits of the Microsoft Graph PowerShell module and how to use the module to automate different business processes.
 
 We’ll analyze different concepts of Microsoft Graph PowerShell to help you learn how and when to use them:
 
