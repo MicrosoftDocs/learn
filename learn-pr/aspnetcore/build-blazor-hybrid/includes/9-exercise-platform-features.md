@@ -1,6 +1,5 @@
 In this exercise, you'll add the ability to save and load the todo list to the file system.
 
-
 ## Add a load and save buttons
 
 1. Let's start by adding two new `<button>` elements for our load and save button under the `<h3>` and  above our list of todo items.
