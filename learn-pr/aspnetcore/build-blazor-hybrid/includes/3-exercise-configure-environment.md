@@ -14,7 +14,6 @@ The other prerequisites are required to install:
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/): `WebView2` is required on Windows when running a native app. When developing Blazor Hybrid apps with .NET MAUI and only running them in Visual Studio's emulators, `WebView2` isn't required.
 - [Enable hardware acceleration](/dotnet/maui/android/emulator/hardware-acceleration) to improve the performance of the Android emulator.
 
-
 ## Create a new Blazor Hybrid app
 
 To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
@@ -23,7 +22,7 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
 2. In the search box at the top of the "Create a new project" dialog, key in ".NET MAUI Blazor" and select ".NET MAUI Blazor App" and select "Next"
 
-	![Screenshot of Visual Studio 2022 'Create New Project' screen and the .NET MAUI Blazor App template.](../media/visual-studio-2022-create-new-project.png)
+    ![Screenshot of Visual Studio 2022 'Create New Project' screen and the .NET MAUI Blazor App template.](../media/visual-studio-2022-create-new-project.png)
 
 3. On the subsequent screen, name your project "BlazorHybridApp" and specify a location on disk with settings like the following and then select 'Next':
 
@@ -33,9 +32,9 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
 5. This command creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
 
-	You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to:
+    You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to:
 
-	![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default .NET MAUI Blazor project.](../media/visual-studio-2022-solution-explorer.png)
+    ![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default .NET MAUI Blazor project.](../media/visual-studio-2022-solution-explorer.png)
 
 ## Blazor Hybrid with .NET MAUI project structure and startup
 
@@ -55,7 +54,7 @@ The project contents include the following items for both Blazor components and 
 
 ### .NET MAUI project files
 
-- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder and define app wide colors and default styles for every built-in control of .NET MAUI. 
+- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder and define app wide colors and default styles for every built-in control of .NET MAUI.
 
 - **App.xaml.cs**. This is the code-behind for the App.xaml file. This file defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class enables you to override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`.
 
@@ -125,7 +124,6 @@ The project contents include the following items for both Blazor components and 
     }
     ```
 
- 
 ## Run the app
 
 1. In Visual Studio, select **Debug** > **Start Debugging**
