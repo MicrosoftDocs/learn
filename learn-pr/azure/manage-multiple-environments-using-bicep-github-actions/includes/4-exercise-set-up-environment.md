@@ -114,6 +114,7 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 ::: zone-end
 
 ## Create two resource groups in Azure
+<!-- TODO redo here down to use workload identities -->
 
 ::: zone pivot="cli"
 

@@ -36,7 +36,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Paste the following workflow name, trigger, inputs, and secrets into the file:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="1-14" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="1-18" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -49,7 +49,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the parameters, paste the definition of the validation job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="16-44" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="20-50" :::
 
    Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
 
@@ -58,11 +58,11 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the validation job, paste the definition of the deploy job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="46-67" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="52-75" :::
 
 1. Below the deploy job, paste the definition of the smoke test job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="69-82" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="77-90" :::
 
 1. Verify that your *deploy.yml* file now looks like the following example:
 
@@ -84,11 +84,11 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. At the bottom of the file, add the following code to deploy to the test environment:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="16-24" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="16-26" :::
 
 1. Below the code you just added, add the following code to deploy to the production environment:
 
-   :::code language="yaml" source="code/5-workflow.yml" range="26-34" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="28-38" :::
 
    Now, the workflow runs the lint job once. Then it uses the *deploy.yml* called workflow twice: once per environment. This keeps the workflow definition clear and easy to understand. Also, the comments help explain what's happening.
 

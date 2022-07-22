@@ -54,7 +54,7 @@ You can use *inputs* and *secrets* to make your called workflows easier to reuse
 
 When you create a called workflow, you can indicate its inputs and secrets at the top of the file:
 
-:::code language="yaml" source="code/3-called-workflow-inputs.yml" range="1-9" :::
+:::code language="yaml" source="code/3-called-workflow-inputs.yml" range="1-13" :::
 
 You can define as many inputs and secrets as you need. But just like Bicep parameters, try not to overuse workflow inputs. You should make it easy for someone else to reuse your workflow without having to specify too many settings.
 
@@ -70,11 +70,11 @@ In the example above, the workflow defines a mandatory string input named `envir
 
 In your workflow, you use a special syntax to refer to the value of the parameter, like in this example: 
 
-:::code language="yaml" source="code/3-called-workflow-inputs.yml" range="11-16" highlight="6" :::
+:::code language="yaml" source="code/3-called-workflow-inputs.yml" range="15-20" highlight="6" :::
 
 You pass the value for inputs to a called workflow by using the `with` keyword. You need to define the values for each input within the `with` section - you can't use the `env` keyword to refer to a workflow's environment variables. You pass secret values to a called workflow by using the `secrets` keyword.
 
-:::code language="yaml" source="code/3-caller-workflow-inputs.yml" highlight="7-10, 14-17" :::
+:::code language="yaml" source="code/3-caller-workflow-inputs.yml" highlight="7-12, 16-21" :::
 
 ## Conditions
 
@@ -82,7 +82,7 @@ You can use workflow *conditions* to specify whether a step or a job should run 
 
 For example, imagine you define a workflow that runs script steps. You plan to reuse the template for each of your environments. When you deploy your production environment, you want to run an additional step. Here's how you can achieve that by using the `if` condition on the step:
 
-:::code language="yaml" source="code/3-script-conditions.yml" range="11-20" highlight="10" :::
+:::code language="yaml" source="code/3-script-conditions.yml" range="15-24" highlight="10" :::
 
 The condition here translates to: *if the environmentType parameter's value is equal to 'Production', then run the step*.
 
