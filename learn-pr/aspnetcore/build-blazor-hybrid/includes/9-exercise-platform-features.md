@@ -22,8 +22,6 @@ In this exercise, you'll add the ability to save and load the todo list to the f
             </li>
         }
     </ul>
-
-    ...
     ```
 
 1. Add two methods in the `@code` block for `Save` and `Load` functionality:
