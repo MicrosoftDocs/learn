@@ -66,7 +66,7 @@ Inputs can have several properties, including:
 
 Secrets have names, but they don't have types or default values.
 
-In the example above, the workflow defines a mandatory string input named `environmentType`, and a mandatory secret named `AZURE_CREDENTIALS`.
+In the example above, the workflow defines a mandatory string input named `environmentType`, and three mandatory secrets named `AZURE_CLIENT_ID`, `AZURE_TENANT_ID`, and `AZURE_SUBSCRIPTION_ID`.
 
 In your workflow, you use a special syntax to refer to the value of the parameter, like in this example: 
 

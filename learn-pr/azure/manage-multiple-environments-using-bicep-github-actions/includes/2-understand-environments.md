@@ -88,15 +88,15 @@ When your workflow refers to an environment that doesn't exist, GitHub Actions a
 
 When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. 
 
-The same principle also applies to the deployment workflow. You should create separate service principals for each environment, and use separate secrets for each environment with the credentials for that environment's service principal. Following this practice adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
+The same principle also applies to the deployment workflow. You should create separate workload identities for each environment. Following this practice adds another layer of protection to ensure that your non-production deployments don't affect your production environment.
 
-Service principals should be assigned specific permissions to only deploy to the subscription and resource group used by that environment:
+Workload identities should be assigned specific permissions to only deploy to the subscription and resource group used by that environment:
 
-:::image type="content" source="../media/2-secrets.png" alt-text="Diagram that shows a secret, service principal, and Azure resource group for non-production and another set for production." border="false":::
+:::image type="content" source="../media/2-secrets.png" alt-text="Diagram that shows a workload identity and Azure resource group for non-production and another set for production." border="false":::
 
 > [!IMPORTANT]
-> Use a separate service principal for each environment that you plan to deploy to. Grant the service principal the minimum permissions that it needs to deploy to its environment, and no others.
+> Use a separate workload identity for each environment that you plan to deploy to. Grant the workload identity the minimum permissions that it needs to deploy to its environment, and no others.
 
 It's also a good idea to separate your environments in Azure. At minimum, you should create a separate resource group for each environment. In many situations, it's better to create separate Azure subscriptions for each environment. Then you can create multiple resource groups within each environment's subscription.
 
-Apply Azure role assignments so that users and service principals can access only the environments that they need to access. And be careful to limit the access to your production environment to a small set of people and the deployment service principal for that environment.
+Apply Azure role assignments so that users and workload identities can access only the environments that they need to access. And be careful to limit the access to your production environment to a small set of people and the deployment workload identity for that environment.
