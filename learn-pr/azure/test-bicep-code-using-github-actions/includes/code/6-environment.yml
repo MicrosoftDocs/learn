@@ -7,7 +7,11 @@ on:
     paths: 
       - 'deploy/**'
   workflow_dispatch:
-    
+
+permissions:
+  id-token: write
+  contents: read
+
 env: 
     AZURE_RESOURCEGROUP_NAME: ToyWebsiteTest
     ENVIRONMENT_TYPE: Test
@@ -26,7 +30,9 @@ jobs:
     - uses: actions/checkout@v2
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}    
+        AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+        AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+        AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       with:
         deploymentName: ${{ github.run_number }}
@@ -43,7 +49,9 @@ jobs:
     - uses: actions/checkout@v2
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+        AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+        AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       with:
         deploymentName: ${{ github.run_number }}

@@ -114,6 +114,8 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ## Create a resource group in Azure
 
+<!-- TODO redo from here down to use workload identity -->
+
 ::: zone pivot="cli"
 
 1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
