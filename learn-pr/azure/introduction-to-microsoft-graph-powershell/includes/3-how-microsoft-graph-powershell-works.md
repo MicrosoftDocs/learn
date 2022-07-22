@@ -8,7 +8,7 @@ To install **all** modules, run;
 Install-Module Microsoft.Graph
 ```
 
-This may take up to 5 minutes and 1 GB of disk space.
+Installation may take up to 5 minutes and 1 GB of disk space.
 
 To install specific modules - which takes less time and disk space, run;
 
@@ -30,7 +30,7 @@ Connect-MgGraph -Scopes "Device.Read.All"
 
 The **-Scopes** parameter is optional, only needed if you don't already have consent. For example, if you don't have consent for **User.Read** and you need it, specify it with **Scopes**. Next time you use Connect-MgGraph, you don't need to specify any permission scopes.
 
-Once you're signed in, you will remain signed in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
+Once you're signed in, you'll remain signed in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
 
 Use **Disconnect-MgGraph** to sign out if you have sign-in issues.
 
@@ -48,7 +48,7 @@ You can create custom environments using **Add-MgEnvironment**.
 
 ## Navigating Microsoft Graph PowerShell
 
-The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that help you in navigating and learning it. Here, we'll cover a number of cmdlets that help you navigate the SDK.
+The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that help you to navigate and learn it. Here, we'll cover a few cmdlets that help you navigate the SDK.
 
 ## Using Invoke-MgGraphRequest
 
@@ -63,11 +63,11 @@ This command works for any Graph API, if you know the REST URI, method and optio
 - The URI can be any valid Graph URI
 - You can include ODATA queries, for example $Select, $Filter
 - Specify **OutputType** to get JSON, PSObject, HTTPResponseMessage instead of the default HashTable
-- This command does not support paging. Read the **@nextlink** property from the reponse and iterate through it yourself.
+- This command doesn't support paging. Read the **@nextlink** property from the response and iterate through it yourself.
 
 ### Using Select-MgProfile
 
-By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta are not available in PowerShell by default. To change to the beta version, use **Select-MgProfile**.
+By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. To change to the beta version, use **Select-MgProfile**.
 
 ```powershell
 Select-MgProfile -Name Beta
@@ -151,7 +151,7 @@ Get-MgUser Users  GET    /users           IMicrosoftGraphUser1 {DeviceManagement
 
 The Microsoft Graph PowerShell SDK application requires users to have domain knowledge of both the semantics and syntax of Microsoft Graph API permissions used to authorize access to the API. 
 
-Find-MgGraphPermission helps you find what permissions are applicable to a certain domain. You will use these permissions to sign in to your application using the [Connect-MgGraph](#sign-in-connect-mggraph).
+Find-MgGraphPermission helps you find what permissions are applicable to a certain domain. You'll use these permissions to sign in to your application using the [Connect-MgGraph](#sign-in-connect-mggraph).
 
 To find permissions related to a given domain, run;
 
@@ -185,14 +185,14 @@ be74164b-cff1-491c-8741-e671cb536e13 Admin   Policy.ReadWrite.ApplicationConfigu
 |Parameter|Description|Notes|
 |:----|:----|:----|
 |All|Return all results|Override API paging|
-|ConsistencyLevel|Eventual or Session consistency|Eventual == AAD advanced queries|
-|CountVariable|PS variable in which to return result count| |
+|ConsistencyLevel|Eventual or Session consistency|Eventual == Azure AD advanced queries|
+|CountVariable|PowerShell variable in which to return result count| |
 |Filter|OData filter to apply to the request|Equivalent of OData $filter|
 |ExpandProperty|Expands a relationship property in a result|Equivalent of OData $expand|
-|PageSize|Override the API default page size|AAD default is 100|
+|PageSize|Override the API default page size|Azure AD default is 100|
 |Property|Project only the specified properties|Equivalent of OData $select|
-|Search|Perform content / “smart” search|For AAD requires Eventual consistency|
-|Skip|Return results after skipping first N results|Equivalent of Odata $skip|
+|Search|Perform content / “smart” search|For Azure AD requires Eventual consistency|
+|Skip|Return results after skipping first N results|Equivalent of OData $skip|
 |Sort|Server-side sort of results on a property|Equivalent of OData $sort|
 |Top|Limit the result count to N items|Equivalent of OData $top|
 
@@ -200,7 +200,7 @@ MS Graph PowerShell permissions are NOT pre-authorized and user must perform one
 
 ### Advanced queries
 
-Azure AD commands support advanced queries via the **ConsistencyLevel** parameter. This adds the ConsistencyLevel header to the Graph API request. 
+Azure AD commands support advanced queries via the **ConsistencyLevel** parameter. This parameter adds the ConsistencyLevel header to the Graph API request. 
 
 Use this parameter with *Filter* to specify advanced queries. For example,
 
