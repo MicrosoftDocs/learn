@@ -26,4 +26,4 @@ In this module, you'll:
 - Update logic in a Blazor Hybrid app.
 - Learn about event handling and data binding in Blazor components.
 - Use routing in a Blazor app.
-- Access platform features leveraging .NET MAUI
+- Access platform features leveraging .NET MAUI.

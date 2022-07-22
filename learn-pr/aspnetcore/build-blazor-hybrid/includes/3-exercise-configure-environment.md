@@ -6,8 +6,8 @@ This module uses [Visual Studio 2022](https://visualstudio.com)  for local devel
 
 To create Blazor Hybrid apps with .NET MAUI apps, you currently require Visual Studio version 17.3 Preview (the latest preview build of Visual Studio 2022) with the following workload installed:
 
-- .NET Multi-Platform App UI development
-- ASP.NET and web development
+- .NET Multi-Platform App UI development.
+- ASP.NET and web development.
 
 The other prerequisites are required to install:
 
@@ -43,7 +43,7 @@ The project contents include the following items for both Blazor components and 
 
 ### Blazor project files
 
-- **Pages**. This folder contains three `razor` files, `Counter.razor`, `FetchData.razor`, and `Index.razor` that define the Blazor user interface
+- **Pages**. This folder contains three `razor` files, `Counter.razor`, `FetchData.razor`, and `Index.razor` that define the Blazor user interface.
 
 - **Shared**. This folder contains shared Razor components including the main navigation menu of the app.
 

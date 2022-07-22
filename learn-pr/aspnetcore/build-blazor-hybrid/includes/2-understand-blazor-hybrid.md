@@ -1,6 +1,6 @@
 Companies that build web apps and clients apps commonly hire developers for different roles. Some developers create back-end, server-side logic. Some build client-side web apps. Others build native client apps for mobile and desktop platforms. These developers often use different development languages and technologies.
 
-C# and Microsoft .NET are popular choices for building server-side logic. Often client-side web apps are often built with web UI frameworks, which commonly use JavaScript. When it comes to native client apps for desktop and mobile, there are several options available including many for .NET and C#. The use of multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync.
+C# and Microsoft .NET are popular choices for building server-side logic. Often client-side web apps are often built with web UI frameworks, which commonly use JavaScript. When it comes to native client apps for desktop and mobile, there are several options available including many for .NET and C#. The use of multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync. Blazor Hybrid can simplify your development team's tasks, code, and processes by allowing you to use your existing skills and code in building web applications in C# and .NET to build client applications using these same technologies.
 
 In this unit, you'll start with an introduction to Blazor Hybrid, .NET MAUI, and Razor Components.
 
@@ -31,28 +31,7 @@ Blazor uses a .NET runtime compiled to a WebAssembly module that is downloaded w
 
 A Blazor WebAssembly app is restricted to the capabilities of the browser that executes the app. But the app can access full browser functionality via JavaScript interop.
 
-### Blazor WebAssembly supported browsers
 
-Blazor WebAssembly requires a modern desktop or mobile browser. The following browsers are currently supported:
-
-- Microsoft Edge
-- Mozilla Firefox
-- Google Chrome
-- Apple Safari
-
-### What is Blazor Server?
-
-Blazor Server provides support for hosting Razor components on the server in an ASP.NET Core app. UI updates are handled over a SignalR connection.
-
-The runtime stays on the server and handles:
-
-- Executing the app's C# code.
-- Sending UI events from the browser to the server.
-- Applying UI updates to the rendered components that are sent back by the server.
-
-The connection used by Blazor Server to communicate with the browser is also used to handle JavaScript interop calls.
-
-![Blazor Server diagram.](../media/blazor-server.png)
 
 ## What is Blazor Hybrid?
 
