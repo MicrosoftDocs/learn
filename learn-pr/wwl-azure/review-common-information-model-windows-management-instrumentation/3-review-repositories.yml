@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-common-information-model-windows-management-instrumentation.review-repositories
+title: Review repositories in CIM and WMI
+metadata:
+  title: Review repositories in CIM and WMI
+  description: "Review repositories in CIM and WMI"
+  ms.date: 07/22/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-review-repositories.md)]
