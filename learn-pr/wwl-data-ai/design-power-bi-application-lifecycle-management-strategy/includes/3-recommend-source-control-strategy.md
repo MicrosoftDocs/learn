@@ -2,7 +2,7 @@ Source control is invaluable to development in an enterprise, as it can be trick
 
 ## Consider the options
 
-TO source control Power BI asses, you can use OneDrive for Business, SharePoint, or Git. If your organization is already using one of these tools, consider who your primary Power BI users are, and which tool would be the easiest to adopt. Power BI is meant to be low- to no-code, meaning your users are probably familiar with the traditional folder structure of OneDrive or SharePoint, but may not be comfortable navigating a Git repository.
+To source control Power BI assets, you can use OneDrive for Business, SharePoint, or Git. If your organization is already using one of these tools, consider who your primary Power BI users are, and which tool would be the easiest to adopt. Power BI is meant to be low- to no-code, meaning your users are probably familiar with the traditional folder structure of OneDrive or SharePoint, but may not be comfortable navigating a Git repository.
 
 If your organization develops datasets and reports through Power BI Desktop using only the .pbix files, then using OneDrive or SharePoint is the easiest implementation. If you also use Tabular Editor or Visual Studio to create .bim files, then you can use a Git solution for the .bim files. You can also use Git for .bim files, and OneDrive or SharePoint for .pbix file tracking, although that may be more complex.
 

@@ -11,7 +11,7 @@ The *application lifecycle* is the cyclical software development process that in
 * Operate
 * Monitor and learn
 
-![Image showing the different areas of the application lifecycle in a circle to further illustrate the cyclical nature of application development.](../media/application-lifecycle.png)
+![Diagram showing the different areas of the application lifecycle in a circle to further illustrate the cyclical nature of application development.](../media/application-lifecycle.png)
 
 Application lifecycle management (ALM) specifically manages the lifecycle of an application. There are three key aspects to ALM: *governance*, *development*, and *maintenance*.
 
