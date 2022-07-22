@@ -27,9 +27,6 @@ quiz:
     - content: "Use the `Get-Member` cmdlet"
       isCorrect: false
       explanation: "Incorrect. Windows PowerShell doesn't include any help that's specific to WMI and CIM classes. Microsoft provides documentation for many WMI and CIM classes. Finding help for a specific class is often fastest by using a search engine."
-    - content: "Use the `Get-Command` cmdlet"
-      isCorrect: false
-      explanation: "Incorrect. Windows PowerShell doesn't include any help that's specific to WMI and CIM classes. Microsoft provides documentation for many WMI and CIM classes. Finding help for a specific class is often fastest by using a search engine."
   - content: "Which of the following statements are applicable to both WMI and CIM?"
     choices:
     - content: "WMI and CIM are based on industry standards that the Distributed Management Task Force (DMTF) defines."
@@ -38,6 +35,6 @@ quiz:
     - content: "WMI and CIM are based on preliminary standards and proprietary technology."
       isCorrect: false
       explanation: "Incorrect. WIM and CMI are based on industry standards that the Distributed Management Task Force (DMTF) defines. While WMI is based on preliminary standards and proprietary technology, CIM is a new technology that's based on open, cross-platform standard."
-    - content: "WMI and CIM are based on open, cross-platform standards"
+    - content: "WMI and CIM are based on open, cross-platform standards."
       isCorrect: false
       explanation: "Incorrect. WIM and CMI are based on industry standards that the Distributed Management Task Force (DMTF) defines. While WMI is based on preliminary standards and proprietary technology, CIM is a new technology that's based on open, cross-platform standard."
