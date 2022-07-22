@@ -143,8 +143,8 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
         private List<TodoItem> todos = new();
         private string? newTodo;
     
-        // ... code continues ...
-        }
+        // Omitted for brevity...
+    }
     ```
 
     Modify the `<input>` element to bind `newTodo` with the `@bind` attribute:
