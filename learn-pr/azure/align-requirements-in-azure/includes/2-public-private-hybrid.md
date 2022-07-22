@@ -31,7 +31,7 @@ Examples of why you'd use public cloud:
 - **Service consumption through on-demand or subscription model:** The on-demand or subscription model allows you to pay for the portion of CPU, storage, and other resources that you use or reserve.
 - **No up-front investment in hardware:** No requirement to purchase, manage, and maintain on-premises hardware and application infrastructure. The cloud service provider is held responsible for all management and maintenance of the system. 
 - **Automation:** Quickly provision infrastructure resources using a web portal, scripts, or automation.
-- **Geographic dispersity:** Store data near your users or in desired locations without having to maintain your own datacenters.
+- **Geographic dispersion:** Store data near your users or in desired locations without having to maintain your own datacenters.
 - **Reduced hardware maintenance:** The service provider is responsible for hardware maintenance.
 
 ## Private cloud
