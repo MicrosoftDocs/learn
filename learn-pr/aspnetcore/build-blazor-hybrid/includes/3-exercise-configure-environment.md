@@ -47,7 +47,7 @@ The project contents include the following items for both Blazor components and 
 
 - **Shared**. This folder contains shared Razor components including the main navigation menu of the app.
 
-- **wwwroot**. This folder contains infrastructure for Blazor including css, JavaScript files, and other assets.
+- **wwwroot**. This folder includes all static assets for Blazor including css, JavaScript files, and images.
 
 - `Main.razor`. This file defines the routing of the Blazor app that is displayed.
 
