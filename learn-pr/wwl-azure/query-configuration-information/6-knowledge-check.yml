@@ -21,9 +21,6 @@ quiz:
     - content: "`?`"
       isCorrect: false
       explanation: "Incorrect. When you use LIKE in a filter for CIM or WMI, the `%` character is used as the wildcard character. Typically, Windows PowerShell uses the `*` character."
-    - content: "`=`"
-      isCorrect: false
-      explanation: "Incorrect. When you use LIKE in a filter for CIM or WMI, the `%` character is used as the wildcard character. Typically, Windows PowerShell uses the `*` character."
     - content: "`*`"
       isCorrect: false
       explanation: "Incorrect. When you use LIKE in a filter for CIM or WMI, the `%` character is used as the wildcard character. Typically, Windows PowerShell uses the `*` character."
@@ -36,9 +33,6 @@ quiz:
       isCorrect: true
       explanation: "Correct. By default, the CIM cmdlets use WS-MAN for connectivity to remote computers. You can force a remote connection to use DCOM by creating a CIM session object with the DCOM setting and then using the CIM session to perform the query."
     - content: "`Get-CimInstance`"
-      isCorrect: false
-      explanation: "Incorrect. The `new-CimSession` cmdlet allows you to create a DCOM connection to query CIM objects from a remote computer. By default, the CIM cmdlets use WS-MAN for connectivity to remote computers. You can force a remote connection to use DCOM by creating a CIM session object with the DCOM setting and then using the CIM session to perform the query."
-    - content: "`Get-WmiObject`"
       isCorrect: false
       explanation: "Incorrect. The `new-CimSession` cmdlet allows you to create a DCOM connection to query CIM objects from a remote computer. By default, the CIM cmdlets use WS-MAN for connectivity to remote computers. You can force a remote connection to use DCOM by creating a CIM session object with the DCOM setting and then using the CIM session to perform the query."
     - content: "`Get-CimClass`"
