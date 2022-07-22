@@ -5,9 +5,6 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
 
 1. Create the Todo page:
 
-
-   ::: zone pivot="vstudio"
-
    In Visual Studio, you can right-click on the `Pages` folder in **Solution Explorer** and choosing **Add** > **Razor Component...** and name the component `Todo.razor`
 
    > [!IMPORTANT]

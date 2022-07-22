@@ -12,7 +12,7 @@ To create Blazor Hybrid apps with .NET MAUI apps, you currently require Visual S
 The other prerequisites are required to install:
 
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/): `WebView2` is required on Windows when running a native app. When developing Blazor Hybrid apps with .NET MAUI and only running them in Visual Studio's emulators, `WebView2` isn't required.
-- [Enable hardware acceleration](https://docs.microsoft.com/dotnet/maui/android/emulator/hardware-acceleration) to improve the performance of the Android emulator.
+- [Enable hardware acceleration](/dotnet/maui/android/emulator/hardware-acceleration) to improve the performance of the Android emulator.
 
 
 ## Create a new Blazor Hybrid app
