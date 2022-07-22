@@ -72,7 +72,7 @@ The way that you access a variable's value in your workflow depends on the type 
 
 For example, when you run a Bicep deployment, you might use secrets to specify the Azure workload identity to use, a called workflow input to specify the resource group name, and a variable to specify the value of a parameter:
 
-:::code language="yaml" source="code/6-use-variables.yml" range="15-32" highlight="10-12, 16, 18" :::
+:::code language="yaml" source="code/6-use-variables.yml" range="19-36" highlight="10-12, 16, 18" :::
 
 ## What's the best approach?
 
@@ -112,7 +112,7 @@ GitHub can automatically scan your repository for secrets that have been acciden
 
 It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a secret. The following example illustrates the combination:
 
-:::code language="yaml" source="code/6-multiple.yml" highlight="17-18, 35-37" :::
+:::code language="yaml" source="code/6-multiple.yml" highlight="17-18, 39-41" :::
 
 > [!TIP]
 > At the end of this example, the `parameters` value is provided as a YAML multiline string by using the `>` character. This makes the YAML file easier to read. It's equivalent to including the entire value on a single line.

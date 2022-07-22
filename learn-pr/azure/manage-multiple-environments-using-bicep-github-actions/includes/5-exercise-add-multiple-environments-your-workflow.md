@@ -49,7 +49,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the parameters, paste the definition of the validation job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="20-50" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="24-54" :::
 
    Notice that a condition is applied to the jobs. The preflight validation runs only for non-production environments. The what-if operation runs only for the production environment. In the previous module in the learning path, you used separate jobs for these operations, but here you combine them to simplify the workflow.
 
@@ -58,11 +58,11 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
 1. Below the validation job, paste the definition of the deploy job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="52-75" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="56-79" :::
 
 1. Below the deploy job, paste the definition of the smoke test job:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="77-90" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="81-94" :::
 
 1. Verify that your *deploy.yml* file now looks like the following example:
 
