@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-blazor-hybrid.4-blazor-components
-title: Razor components
+title: Razor components in Blazor Hybrid
 metadata:
-  title: Razor components
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/13/2021
-  author: csharpfritz
-  ms.author: jefritz
+  title: Razor components in Blazor Hybrid
+  description: What are Razor components and how do they work with Blazor Hybrid?
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
@@ -15,17 +15,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Blazor web apps use which runtime?"
+  - content: "Blazor Hybrid use which runtime?"
     choices:
     - content: "The runtime provided by the browser"
       isCorrect: false
-      explanation: "Blazor apps run in the browser or on the server on the .NET 5 runtime"
-    - content: "The .NET runtime deployed with your web app"
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
+    - content: "The .NET runtime deployed with your app"
       isCorrect: true
-      explanation: "Blazor apps run in the browser or on the server on the .NET 5 runtime"
-    - content: "The JavaScript runtime deployed with your web app"
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
+    - content: "The JavaScript runtime deployed with your app"
       isCorrect: false
-      explanation: "Blazor apps run in the browser or on the server on the .NET 5 runtime"
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
+    - content: "The WebAssembly runtime deployed with your app"
+      isCorrect: false
+      explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
   - content: "How is Blazor UI defined?"
     choices:
     - content: "As Razor pages with a mix of HTML and C#"

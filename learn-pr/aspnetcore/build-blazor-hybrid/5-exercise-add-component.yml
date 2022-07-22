@@ -3,10 +3,10 @@ uid: learn.build-blazor-hybrid.5-exercise-add-component
 title: Exercise - Add a component
 metadata:
   title: Exercise - Add a component
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/13/2021
-  author: csharpfritz
-  ms.author: jefritz
+  description: Add components to the Blazor Hybrid application.
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

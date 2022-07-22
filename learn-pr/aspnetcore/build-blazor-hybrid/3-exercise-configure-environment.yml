@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-blazor-hybrid.3-exercise-configure-environment     
-title: Exercise - Create and run a Blazor web app
+title: Exercise - Create and run a Blazor Hybrid app
 metadata:
-  title: Exercise - Create and run a Blazor web app
-  description: Build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/13/2021
-  author: csharpfritz
-  ms.author: jefritz
+  title: Exercise - Create and run a Blazor Hybrid app
+  description: Create your first Blazor Hybrid app powered by .NET MAUI and deploy it to desktop and mobile platforms.
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: vsandcode
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-configure-environment.md)]

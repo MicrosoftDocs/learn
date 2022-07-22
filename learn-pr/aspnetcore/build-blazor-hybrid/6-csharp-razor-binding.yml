@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-blazor-hybrid.6-csharp-razor-binding
-title: Data binding and events
+title: Data binding and events in Blazor Hybrid
 metadata:
-  title: Data binding and events
-  description: Build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
-  ms.date: 05/07/2020
-  author: adrianstevens
-  ms.author: adsteven
+  title: Data binding and events in Blazor Hybrid
+  description: Learn how to update the user interface of Blazor Hybrid apps with Razor data binding and events.
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 3
 content: |
   [!include[](includes/6-csharp-razor-binding.md)]

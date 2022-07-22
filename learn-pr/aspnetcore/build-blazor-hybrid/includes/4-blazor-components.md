@@ -1,4 +1,4 @@
-Now that you have your development environment set up, you'll explore the structure of a Blazor project and learn how to add new pages.
+Now that you have your development environment set up, you'll explore the structure of a Blazor Hybrid project and learn how to add new pages.
 
 ## What is Razor?
 

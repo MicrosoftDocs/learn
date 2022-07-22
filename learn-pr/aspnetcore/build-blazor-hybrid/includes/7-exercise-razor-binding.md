@@ -3,25 +3,12 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
 ## Create the ToDo page
 
 
-1. Create the ToDo page:
+1. Create the Todo page:
 
-   ::: zone pivot="vscode"
-
-   With Visual Studio Code and other text-editors, we can create the razor component at the command line with this statement:
-
-   ```dotnetcli
-   dotnet new razorcomponent -n Todo -o Pages
-   ```
-
-   The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
-
-   ::: zone-end
 
    ::: zone pivot="vstudio"
 
    In Visual Studio, you can right-click on the `Pages` folder in **Solution Explorer** and choosing **Add** > **Razor Component...** and name the component `Todo.razor`
-
-   ::: zone-end
 
    > [!IMPORTANT]
    > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
@@ -69,11 +56,13 @@ Save the `Shared/NavMenu.razor` file. The browser should refresh automatically a
 
 ## Create a Todo Item
 
-Create a new file in the root of the project (the `BlazorApp` folder) named `TodoItem.cs` to hold a C# class that represents a todo item.
+Create a new class in the `Data` folder of the project named `TodoItem.cs` to hold a C# class that represents a todo item.
 
 Use the following C# code for the `TodoItem` class. Declare the `Title` as a nullable string by using `?`.
 
 ```csharp
+namespace BlazorHybridApp.Data;
+
 public class TodoItem
 {
     public string? Title { get; set; }
@@ -81,17 +70,17 @@ public class TodoItem
 }
 ```
 
-You may need to stop and restart the `dotnet watch run` process if it does not detect the new `TodoItem` file and rebuild your project.
-
 ## Bind a list of TodoItems
 
 You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. We'll accomplish this by making the following changes in the `Pages/Todo.razor` file.
 
+- Add the using declaration for `TodoItem` with `@using BlazorHybridApp.Data`.
 - Add a field for the todo items in the `@code` block. The `Todo` component uses this field to maintain the state of the todo list.
 - Add unordered list markup and a `foreach` loop to render each todo item as a list item (`<li>`).
 
 ```cshtml
 @page "/todo"
+@using BlazorHybridApp.Data
 
 <h3>Todo</h3>
 
@@ -113,6 +102,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 
     ```razor
     @page "/todo"
+    @using BlazorHybridApp.Data
     
     <h3>Todo</h3>
     
@@ -220,7 +210,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
     <h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
     ```
 
-1. Save the `Pages/Todo.razor` file. The app is automatically rebuilt in the command shell. The page reloads in the browser after the browser reconnects to the app.
+1. Save the `Pages/Todo.razor` file and run the app again.
 
 1. Add items, edit items, and mark todo items done to test the component.
 

@@ -1,112 +1,137 @@
 Let's start by creating our first Blazor web app.
 
-This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), and [Visual Studio 2022](https://visualstudio.com) for local development. After you complete this module, you can apply its concepts using a development environment like  Visual Studio for Mac (macOS), or continue development using Visual Studio Code (Windows, Linux, & macOS) or Visual Studio.
+This module uses [Visual Studio 2022](https://visualstudio.com)  for local development. After you complete this module, you can apply its concepts using a development environment like  Visual Studio for Mac (macOS).
 
-::: zone pivot="vscode"
+## Requirements for Blazor Hybrid development
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+To create Blazor Hybrid apps with .NET MAUI apps, you currently require Visual Studio version 17.3 Preview (the latest preview build of Visual Studio 2022) with the following workload installed:
 
-## Create a new Blazor app
+- .NET Multi-Platform App UI development
+- ASP.NET and web development
 
-To set up a Blazor project to work with, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
+The other prerequisites are required to install:
 
-1. In Visual Studio Code, select **File** > **Open Folder**.
+- [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/): `WebView2` is required on Windows when running a native app. When developing Blazor Hybrid apps with .NET MAUI and only running them in Visual Studio's emulators, `WebView2` isn't required.
+- [Enable hardware acceleration](https://docs.microsoft.com/dotnet/maui/android/emulator/hardware-acceleration) to improve the performance of the Android emulator.
 
-1. Create a new folder named **BlazorApp** in the location of your choice, and then choose **Select Folder**.
 
-1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+## Create a new Blazor Hybrid app
 
-1. In the terminal window, copy and paste the following command.
-
-    ```dotnetcli
-    dotnet new blazorserver -f net6.0
-    ```
-
-    This command creates a basic Blazor server project with all required files and pages, along with a C# project file named **BlazorApp.csproj**.
-
-    You should now have access to these files.
-
-    ```bash
-    -| bin
-    -| Data
-    -| obj
-    -| Pages
-      -| _Host.cshtml
-      -| Counter.razor
-      -| Error.cshtml
-      -| Error.cshtml.cs
-      -| FetchData.razor
-      -| Index.razor
-    -| Properties
-    -| Shared
-      -| MainLayout.razor
-      -| MainLayout.razor.css
-      -| NavMenu.razor
-      -| NavMenu.razor.css
-      -| SurveyPrompt.razor
-    -| wwwroot
-    -| _Imports.razor
-    -| App.razor
-    -| appsettings.Development.json
-    -| appsettings.json
-    -| BlazorApp.csproj
-    -| Program.cs
-    ```
-
-1. If Visual Studio Code prompts you to install required assets, select **Yes**.
-
-    ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug.](../media/missing-assets-visual-studio-code.png)
-    
-## Run the app
-
-1. In the terminal window, copy and paste the following command to run the app in **watch mode**:
-
-    ```dotnetcli
-    dotnet watch run
-    ```
-
-    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
-
-    ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
-
-1. When you're ready to stop, return to the terminal in Visual Studio code, and press <kbd>Ctrl+C</kbd> to stop the app.
-
-::: zone-end
-
-::: zone pivot="vstudio"
-
-## Create a new Blazor app
-
-To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual Studio Code includes integrated templates and compiler, which makes creating and building a new project easy. 
+To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
 1. In Visual Studio 2022, select **File** > **New Project**.
 
-2. In the search box at the top of the "Create a new project" dialog, key in "Blazor Server" and select "Blazor Server App" and click "Next"
+2. In the search box at the top of the "Create a new project" dialog, key in ".NET MAUI Blazor" and select ".NET MAUI Blazor App" and select "Next"
 
-	![Screenshot of Visual Studio 2022 'Create New Project' screen and the Blazor Server template.](../media/visual-studio-2022-create-new-project.png)
+	![Screenshot of Visual Studio 2022 'Create New Project' screen and the .NET MAUI Blazor App template.](../media/visual-studio-2022-create-new-project.png)
 
-3. On the subsequent screen, name your project "BlazorApp" and specify a location on disk with settings like the following and then click 'Next':
+3. On the subsequent screen, name your project "BlazorHybridApp" and specify a location on disk with settings like the following and then select 'Next':
 
    ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
-4. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and click 'Create'
+4. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and select 'Create'
 
-5. This command creates a basic Blazor server project with all required files and pages.
+5. This command creates a basic Blazor Hybrid project powered by .NET MAUI with all required files and pages.
 
-	You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to the following:
+	You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to:
 
-	![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default Blazor Server project.](../media/visual-studio-2022-solution-explorer.png)
+	![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default .NET MAUI Blazor project.](../media/visual-studio-2022-solution-explorer.png)
+
+## Blazor Hybrid with .NET MAUI project structure and startup
+
+The project contents include the following items for both Blazor components and .NET MAUI applications:
+
+### Blazor project files
+
+- **Pages**. This folder contains three `razor` files, `Counter.razor`, `FetchData.razor`, and `Index.razor` that define the Blazor user interface
+
+- **Shared**. This folder contains shared Razor components including the main navigation menu of the app.
+
+- **wwwroot**. This folder contains infrustructor for Blazor including css, JavaScript files, and other assets.
+
+- `Main.razor`. This file defines the routing of the Blazor app that is displayed.
+
+- `_Imports.razor`. This file defines namespaces that are imported into each Razor component.
+
+### .NET MAUI project files
+
+- **App.xaml**. This file defines the application resources that the app will use in the XAML layout. The default resources are located in the `Resources` folder and define app wide colors and default styles for every built-in control of .NET MAUI. 
+
+- **App.xaml.cs**. This is the code-behind for the App.xaml file. This file defines the App class. This class represents your application at runtime. The constructor in this class creates an initial window and assigns it to the `MainPage` property; this property determines which page is displayed when the application starts running. Additionally, this class enables you to override common platform-neutral application lifecycle event handlers. Events include `OnStart`, `OnResume`, and `OnSleep`.
+
+- **MainPage.xaml**. This file contains the user interface definition. The sample app generated by the .NET MAUI Blazor App template comprises of a `BlazorWebView` that loads the `Main` component that has multiple tabs including the `Index`, `Counter`, and `FetchData`.
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:local="clr-namespace:BlazorHybridApp"
+                x:Class="BlazorHybridApp.MainPage"
+                BackgroundColor="{DynamicResource PageBackgroundColor}">
+
+        <BlazorWebView HostPage="wwwroot/index.html">
+            <BlazorWebView.RootComponents>
+                <RootComponent Selector="#app" ComponentType="{x:Type local:Main}" />
+            </BlazorWebView.RootComponents>
+        </BlazorWebView>
+
+    </ContentPage>
+    ```
+
+- **MainPage.xaml.cs**. This is the code-behind for the page. In this file, you define the logic for the various event handlers and other actions that are triggered by the .NET MAUI controls on the page. The example code in the template only has the default constructor as all of the user interface and events are located in the Blazor components.
+
+    ```csharp
+    namespace BlazorHybridApp;
+
+    public partial class MainPage : ContentPage
+    {
+      public MainPage()
+      {
+        InitializeComponent();
+      }
+    }
+    ```
+
+- **MauiProgram.cs**. Each native platform has a different starting point that creates and initializes the application. You can find this code under the **Platforms** folder in the project. This code is platform-specific, but at the end it  calls the `CreateMauiApp` method of the static `MauiProgram`class. You use the `CreateMauiApp` method to configure the application by creating an app builder object. At a minimum, you need to specify which class describes your application. You do this with the `UseMauiApp` generic method of the app builder object; the type parameter specifies the application class. The app builder also provides methods for tasks such as registering fonts, configuring services for dependency injection, registering custom handlers for controls, and more. The following code shows an example of using the app builder to register a font, registering the weather service, and adding support for Blazor Hybrid with the `AddMauiBlazorWebView` method:
+
+    ```csharp
+    using Microsoft.AspNetCore.Components.WebView.Maui;
+    using BlazorHybridApp.Data;
+
+    namespace BlazorHybridApp;
+
+    public static class MauiProgram
+    {
+      public static MauiApp CreateMauiApp()
+      {
+        var builder = MauiApp.CreateBuilder();
+        builder
+          .UseMauiApp<App>()
+          .ConfigureFonts(fonts =>
+          {
+            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+          });
+
+        builder.Services.AddMauiBlazorWebView();
+
+        #if DEBUG
+        builder.Services.AddBlazorWebViewDeveloperTools();
+        #endif
+        
+        builder.Services.AddSingleton<WeatherForecastService>();
+
+        return builder.Build();
+      }
+    }
+    ```
+
  
 ## Run the app
 
 1. In Visual Studio, select **Debug** > **Start Debugging**
 
-    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
+    This will build and start the app on Windows, and then rebuild and restart the app whenever you make code changes. The app should automatically open on Windows. You can also change the deployment target through the debug drop-down menu to deploy to Android or other platforms.
 
-    ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
+    ![Screenshot showing the default Blazor Hybrid app running on Windows and Android.](../media/hello-blazor.png)
 
-2. When you're ready to stop, return to Visual Studio 2022, and press <kbd>Shift+F5</kbd> to stop the app.
-
-::: zone-end
-
-You'll use this Blazor app in the following exercises.
+You'll use this Blazor Hybrid app in the following exercises.

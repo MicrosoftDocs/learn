@@ -1,9 +1,8 @@
 In this exercise, you'll add a Razor component to the home page of our application.
 
-Within Visual Studio Code, open the folder that contains the BlazorApp project we created in module 3.
 ## Add the Counter component to the Home page
 
-1. Expand the folders in the Visual Studio Code project explorer.
+1. Expand the folders in the Visual Studio project explorer.
 
 1. Select **Pages** to view the existing Razor pages.
 
@@ -23,13 +22,15 @@ Within Visual Studio Code, open the folder that contains the BlazorApp project w
    <Counter />
    ```
 
-Save the file and the `dotnet watch run` command you executed in the previous module will restart the app and refresh it in the browser so that the `Counter` component shows up on the Home page.
+If you still have the app running save the file, and select on the hot reload (ALT + F10) command so that the `Counter` component shows up on the Home page by clicking to another tab and returning to the Home. If you stopped debugging previous, start the app again by selecting **Debug** > **Start Debugging**.
+
+When you're ready to stop, return to Visual Studio 2022, and press <kbd>Shift+F5</kbd> to stop the app.
 
 ![Counter component on Home page.](../media/counter-homepage.png)
 
 ## Modify a component
 
-Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the Counter component for specifying how much it increments with every button click:
+Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the Counter component for specifying how much it increments with every button select:
 
 - Add a public property for `IncrementAmount` with a `[Parameter]` attribute.
 - Change the `IncrementCount` method to use the `IncrementAmount` when incrementing the value of `currentCount`.
@@ -58,7 +59,7 @@ The following code in the **Counter.razor** file shows how to achieve that.
 }
 ```
 
-In `Index.razor`, update the `<Counter>` element to add an `IncrementAmount` attribute that changes the increment amount to ten as shown by the last line in the following code:
+In `Index.razor`, update the `<Counter>` element to add an `IncrementAmount` attribute that changes the increment amount to 10 as shown by the last line in the following code:
 
 ```razor
 @page "/"
@@ -72,6 +73,8 @@ Welcome to your new app.
 <Counter IncrementAmount="10" />
 ```
 
-The `Index` component now has its own counter that increments by ten each time the **Click me** button is selected, as shown in the following image. The `Counter` component (`Counter.razor`) at `/counter` continues to increment by one.
+Start the app again by selecting **Debug** > **Start Debugging**
+
+The `Index` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image. The `Counter` component (`Counter.razor`) at `/counter` continues to increment by one.
 
 ![Home page with Counter update.](../media/counter-homepage-modify.png)
