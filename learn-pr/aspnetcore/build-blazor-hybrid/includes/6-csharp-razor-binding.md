@@ -4,7 +4,7 @@ You've defined the UI for your web app. Now explore how to add logic to the app.
 
 In Blazor, you can add C# files directly to your app project as with other .NET projects. Commonly called *code-behind*, this technique uses separate code files to store app logic. Separate files are a great strategy when your business logic is complex, is long, or has multiple classes.
 
-For simple logic, you don't always need to create new .cs files.
+For simple logic, you don't always need to create new _.cs_ files.
 
 ## C# inline in components
 
