@@ -22,7 +22,7 @@ In this exercise, you'll add a Razor component to the home page of our applicati
    <Counter />
    ```
 
-If you still have the app running save the file, and select on the hot reload (ALT + F10) command so that the `Counter` component shows up on the Home page by clicking to another tab and returning to the Home. If you stopped debugging previous, start the app again by selecting **Debug** > **Start Debugging**.
+If you still have the app running save the file, and select the hot reload (<kbd>Alt+F10</kbd>) command so that the `Counter` component shows up on the Home page by clicking to another tab and returning to the Home. If you stopped debugging previously, start the app again by selecting **Debug** > **Start Debugging**.
 
 When you're ready to stop, return to Visual Studio 2022, and press <kbd>Shift+F5</kbd> to stop the app.
 
