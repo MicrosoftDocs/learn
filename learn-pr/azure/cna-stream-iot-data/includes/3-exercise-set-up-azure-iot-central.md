@@ -158,7 +158,7 @@ In this exercise, you'll:
 
 1. In the IoT Central Application portal, in the vertical menu under **Analyze**, select **Data Explorer**.
 1. On the **Data explorer** page, in the **Device group** drop-down list, select the **Raspberry Pi - All devices** entry. In the **Telemetry** drop-down list, select **Temperature**, in the **Group by** drop-down list, select **Device ID**, and then select **Analyze**.
-1. On the **Data explorer** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window or simply select **Last 15 minutes**, and then select **Save**.
+1. On the **Data explorer** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window or select **Last 15 minutes**, and then select **Save**.
 
 1. On the **Data explorer** page, review the resulting graph.
 

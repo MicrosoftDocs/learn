@@ -1,4 +1,4 @@
-﻿This exercise provides an overview of using Azure IoT Central applications to configure rules and export IoT telemetry data. For more information about these topics, refer to:
+﻿This exercise provides an overview of using Azure IoT Central applications to configure rules and export IoT telemetry data. For more information, see:
 
 * [Configure rules](/azure/iot-central/core/howto-configure-rules?azure-portal=true)
 * [Create webhook actions on rules in Azure IoT Central](/azure/iot-central/core/howto-create-webhooks?azure-portal=true)
