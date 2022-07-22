@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.query-manipulate-repository-objects
+metadata:
+  title: Query and manipulate repository objects by using CIM and WMI methods
+  description: "This module explains how to use CIM and WMI to make changes by using methods. The methods available vary depending on the type of object. Discovering and understanding these methods is an important step in querying and manipulating the repository information."
+  ms.date: 07/22/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Query and manipulate repository objects by using CIM and WMI methods
+summary: This module explains how to use CIM and WMI to make changes by using methods. The methods available vary depending on the type of object. Discovering and understanding these methods is an important step in querying and manipulating the repository information.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Discover the methods of repository objects.
+  - Locate online documentation for methods.
+  - Locate the methods of the Win32_Service class and their documentation.
+  - Explain how to invoke methods of repository objects.
+  - Use methods for the Win32_OperatingSystem and Win32_Process classes.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.query-manipulate-repository-objects.introduction
+- learn.wwl.query-manipulate-repository-objects.discover-methods-repository-objects
+- learn.wwl.query-manipulate-repository-objects.locate-class-methods-documentation
+- learn.wwl.query-manipulate-repository-objects.invoke-methods-repository-objects
+- learn.wwl.query-manipulate-repository-objects.knowledge-check
+- learn.wwl.query-manipulate-repository-objects.summary
+badge:
+  uid: learn.wwl.query-manipulate-repository-objects-by-using-cim-wmi-methods.badge
