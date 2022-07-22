@@ -142,7 +142,7 @@ Next, create two workload identities in Azure AD: one for your test environment 
       --parameters "{\"name\":\"toy-website-end-to-end-test-branch\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
-1. Run the code below, which creates a workload environment for the production environment. Deployments against your production environment only need to work against the *Production* GitHub environment.
+1. Run the code below, which creates a similar workload identity and federated credentials for the production environment:
 
    ```bash
    productionApplicationRegistrationDetails=$(az ad app create --display-name 'toy-website-end-to-end-production')
@@ -152,6 +152,10 @@ Next, create two workload identities in Azure AD: one for your test environment 
    az ad app federated-credential create \
       --id $productionApplicationRegistrationObjectId \
       --parameters "{\"name\":\"toy-website-end-to-end-production\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:environment:Production\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
+
+   az ad app federated-credential create \
+      --id $productionApplicationRegistrationObjectId \
+      --parameters "{\"name\":\"toy-website-end-to-end-production-branch\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
 ::: zone-end
