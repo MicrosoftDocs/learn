@@ -27,7 +27,7 @@ if (accessType == NetworkAccess.Internet)
 
 ## Access platform APIs
 
-.NET MAUI platform-specifics allow you to consume specific functionality that's only available on a specific platform. For more information, see [Android platform-specifics](https://docs.microsoft.com/dotnet/maui/android/platform-specifics/), [iOS platform-specifics](https://docs.microsoft.com/dotnet/maui/ios/platform-specifics/), and [Windows platform-specifics](https://docs.microsoft.com/dotnet/maui/windows/platform-specifics/).
+.NET MAUI platform-specifics allow you to consume specific functionality that's only available on a specific platform. For more information, see [Android platform-specifics](/dotnet/maui/android/platform-specifics/), [iOS platform-specifics](/dotnet/maui/ios/platform-specifics/), and [Windows platform-specifics](/dotnet/maui/windows/platform-specifics/).
 
 In situations where .NET MAUI doesn't provide any APIs for accessing specific platform APIs, you can write your own code to access the required platform APIs. For more information, see Invoke platform code.
 
