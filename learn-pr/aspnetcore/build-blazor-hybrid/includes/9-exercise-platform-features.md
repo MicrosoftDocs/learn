@@ -33,7 +33,6 @@ In this exercise, you'll add the ability to save and load the todo list to the f
 
     private void Load()
     {
-
     }
     ```
 
