@@ -8,7 +8,8 @@ To find the top-level namespaces, run the following command:
 Get-CimInstance -Namespace root -ClassName __Namespace
 ```
 
-> **Note:** In the previous command, there are two underscores (_) in the class name of `__Namespace`.
+> [!NOTE] 
+> In the previous command, there are two underscores (_) in the class name of `__Namespace`.
 
 Some of the namespaces returned might include:
 
