@@ -1,6 +1,6 @@
 We're building hybrid apps with .NET, which means we have access to all of the .NET class libraries. In addition to these APIs, building Blazor Hybrid apps with .NET MAUI enables you to not only deploy to multiple platforms but also allows access to each platform's native APIs. This means that if you need to integrate platform capabilities of iOS, Android, macOS, or Windows, you can do it all in C#. You can access these APIs directly from your Blazor components or create shared .NET MAUI class libraries.
 
-## Platform Integration
+## Platform integration
 
 Each platform that .NET Multi-platform App UI (.NET MAUI) supports offers unique operating system and platform APIs that you can access from C#. .NET MAUI provides cross-platform APIs to access much of this platform functionality, which includes access to sensors, accessing information about the device an app is running on, checking network connectivity, storing data securely, and initiating browser-based authentication flows.
 
