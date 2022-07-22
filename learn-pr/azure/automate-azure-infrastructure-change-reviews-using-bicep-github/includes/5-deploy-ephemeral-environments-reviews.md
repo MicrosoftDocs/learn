@@ -37,12 +37,12 @@ When it's time to delete the ephemeral environment, it's easy for your workflow 
 
 ## Permissions
 
-Creating resource groups requires subscription-level permissions, and typically requires the Contributor role to be assigned to your workflow's service principal.
+Creating resource groups requires subscription-level permissions, and typically requires the Contributor role to be assigned to your workflow's workload identity.
 
-It's a good practice to use a dedicated Azure subscription for ephemeral environments. By following this approach, you can grant access to your workflow's service principal and to your team members without accidentally providing access to your other environments. 
+It's a good practice to use a dedicated Azure subscription for ephemeral environments. By following this approach, you can grant access to your workflow's workload identity and to your team members without accidentally providing access to your other environments. 
 
 > [!IMPORTANT]
-> Subscription-scoped contributors are powerful, so you need to ensure you have adequate governance around your workflow's service principal and its credentials. By using a dedicated subscription for ephemeral environments, you reduce the risk to your other environments.
+> Subscription-scoped contributors are powerful, so you need to ensure you have adequate governance around your workflow's workload identity and the changes that it can deploy. By using a dedicated subscription for ephemeral environments, you reduce the risk to your other environments.
 
 ## Cost management
 
