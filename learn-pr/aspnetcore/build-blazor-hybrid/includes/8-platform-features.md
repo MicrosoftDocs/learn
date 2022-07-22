@@ -16,9 +16,8 @@ Each platform that .NET Multi-platform App UI (.NET MAUI) supports offers unique
 If an application needed to detect if internet access was available on the device, the `Connectivity` API in `Microsoft.Maui.Networking` could be used.
 
 ```csharp
-NetworkAccess accessType = Connectivity.Current.NetworkAccess;
-
-if (accessType == NetworkAccess.Internet)
+var accessType = Connectivity.Current.NetworkAccess;
+if (accessType is NetworkAccess.Internet)
 {
     // Connection to internet is available
 }
