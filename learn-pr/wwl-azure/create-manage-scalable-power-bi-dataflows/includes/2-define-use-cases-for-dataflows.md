@@ -84,7 +84,7 @@ Data transformation should always be done as close to the source as possible. If
 | Features                   | Power BI dataflows                                                         | Data Factory wrangling dataflows         |
 |----------------------------|----------------------------------------------------------------------------|------------------------------------------|
 | Destinations               | Dataverse or Azure Data Lake Storage                                       | Many destinations                        |
-| Power Query transformation | All Power Query functions are supported                                    | A limited set of functions are supported |
+| Power Query transformation | All Power Query functions are supported                                    | A limited set of functions is supported |
 | Sources                    | Many sources are supported                                                 | Only a few sources                       |
 | Scalability                | Depends on the Premium capacity and the use of the enhanced compute engine | Highly scalable                          |
 
