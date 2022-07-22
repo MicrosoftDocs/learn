@@ -104,6 +104,8 @@ Now that you've cloned the repository locally to your computer, you will sign in
 
 ## Create a service principal
 
+<!-- TODO here down -->
+
 Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a service principal and grant it the Contributor role on your subscription.
 
 > [!WARNING]
