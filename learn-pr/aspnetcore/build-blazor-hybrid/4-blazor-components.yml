@@ -31,7 +31,7 @@ quiz:
       explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
   - content: "How is Blazor UI defined?"
     choices:
-    - content: "As Razor pages with a mix of HTML and C#"
+    - content: "As Razor components with a mix of HTML and C#"
       isCorrect: true
       explanation: "A Razor file defines components that make up portions of UI for the app" 
     - content: "As XAML pages using XML"

@@ -6,7 +6,7 @@ Razor is a markup syntax for embedding .NET based code into webpages. The Razor 
 
 ## What are Razor components?
 
-A Razor file defines components that make up a portion of the app UI. Components in Blazor are analogous to user controls in ASP.NET Web Forms.
+A Razor file defines components that make up a portion of the app UI. Components in Blazor are analogous to React and Angular components in SPA frameworks.
 
 If you explore the project, you'll see that most files are .razor files.
 
@@ -45,7 +45,7 @@ A request for `/counter` in the browser, as specified by the `@page` directive a
 
 Each time the **Click me** button is selected:
 
-- The onclick event is fired.
-- The IncrementCount method is called.
-- The currentCount is incremented.
+- The `onclick` event is fired.
+- The `IncrementCount` method is called.
+- The `currentCount` variable is incremented.
 - The component is rendered to show the updated count.
