@@ -30,7 +30,7 @@ When you're ready to stop, return to Visual Studio 2022, and press <kbd>Shift+F5
 
 ## Modify a component
 
-Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the Counter component for specifying how much it increments with every button select:
+Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the Counter component for specifying how much it increments with every button click:
 
 - Add a public property for `IncrementAmount` with a `[Parameter]` attribute.
 - Change the `IncrementCount` method to use the `IncrementAmount` when incrementing the value of `currentCount`.
