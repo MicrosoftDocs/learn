@@ -30,11 +30,11 @@ Connect-MgGraph -Scopes "Device.Read.All"
 
 The **-Scopes** parameter is optional, only needed if you don't already have consent. For example, if you don't have consent for **User.Read** and you need it, specify it with **Scopes**. Next time you use Connect-MgGraph, you don't need to specify any permission scopes.
 
-Once you're signed-in, you will remain signed-in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
+Once you're signed in, you will remain signed in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
 
-Use **Disconnect-MgGraph** to sign-out if you have sign-in issues.
+Use **Disconnect-MgGraph** to sign out if you have sign-in issues.
 
-Use **Connect-MgGraph** Command to explicitly target US Government, China or public clouds. The **-Environment** parameter default to the global public cloud. **Get-MgEnvironment** shows the list of all clouds you can choose from.
+Use **Connect-MgGraph** command to explicitly target US Government, China or public clouds. The **-Environment** parameter default to the global public cloud. **Get-MgEnvironment** shows the list of all clouds you can choose from.
 
 :::image type="content" source="../media/clouds.png" alt-text="Available clouds":::
 
@@ -48,7 +48,7 @@ You can create custom environments using **Add-MgEnvironment**.
 
 ## Navigating Microsoft Graph PowerShell
 
-The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that help you in navigating and learning it. Here we'll cover a number of cmdlets that help you navigate the SDK.
+The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that help you in navigating and learning it. Here, we'll cover a number of cmdlets that help you navigate the SDK.
 
 ## Using Invoke-MgGraphRequest
 
@@ -67,7 +67,7 @@ This command works for any Graph API, if you know the REST URI, method and optio
 
 ### Using Select-MgProfile
 
-By default the Microsoft Graph PowerShell commands target the V1.0 API version. Commands for APIs that are only available in beta are not available in PowerShell by default. To change to the beta version, use **Select-MgProfile**.
+By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta are not available in PowerShell by default. To change to the beta version, use **Select-MgProfile**.
 
 ```powershell
 Select-MgProfile -Name Beta
@@ -77,7 +77,7 @@ To switch back to using v1.0 API commands, specify **v1.0** for the name paramet
 
 ### Using Find-MgGraphCommand
 
-Find-MgGraphCommand aims to make it easy for you to discover which API path a command calls by providing a URI or a command name.
+Find-MgGraphCommand enables you to discover which API path a command calls by providing a URI or a command name.
 
 The Find-MgGraphCommand allows to;
 
@@ -151,7 +151,7 @@ Get-MgUser Users  GET    /users           IMicrosoftGraphUser1 {DeviceManagement
 
 The Microsoft Graph PowerShell SDK application requires users to have domain knowledge of both the semantics and syntax of Microsoft Graph API permissions used to authorize access to the API. 
 
-Find-MgGraphPermission helps you find what permissions are applicable to a certain domain. You will use permissions to sign in to your application using the [Connect-MgGraph](#sign-in-connect-mggraph).
+Find-MgGraphPermission helps you find what permissions are applicable to a certain domain. You will use these permissions to sign in to your application using the [Connect-MgGraph](#sign-in-connect-mggraph).
 
 To find permissions related to a given domain, run;
 
@@ -178,6 +178,7 @@ Id                                   Consent Name                               
 1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9 Admin   Application.ReadWrite.All                 Allows the app to create, read, update and delete applications and service principals without a signed-in user.  Does not allow management of consent grants.
 18a4783c-866b-4cc7-a460-3d5e5662c884 Admin   Application.ReadWrite.OwnedBy             Allows the app to create other applications, and fully manage those applications (read, update, update application secrets and delete), without a signed-in user.  It cannot update any apps that it is not an owner of.
 be74164b-cff1-491c-8741-e671cb536e13 Admin   Policy.ReadWrite.ApplicationConfiguration Allows the app to read and write your organization's application configuration policies, without a signed-in user.  This includes policies such as activityBasedTimeoutPolicy, claimsMappingPolicy, homeRealmDiscoveryPolicy, tokenIssuancePolicy  and tokenLifetimePolicy.
+```
 
 ## Common parameters
 
