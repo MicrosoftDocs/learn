@@ -36,7 +36,7 @@ In `Shared/NavMenu.razor`:
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
 
-        ...
+        <!-- ... -->
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="todo">
