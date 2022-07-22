@@ -3,19 +3,42 @@ In this unit, you'll explore the steps required to:
 - Start and stop an Azure Spatial Anchors session.
 - Create, upload, and download spatial anchors on a single device.
 
-## Create and prepare the Unity project
+As a result of completing the prerequisites for this learn module, you should already have a Unity project that's set up and configured for OpenXR and MRTK2. Open that project and continue on with the steps below.
 
-In this section, you'll create a new Unity project and get it ready for Mixed Reality Toolkit (MRTK) development.
+## Choose configuration options
 
-1. Follow the steps in our [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk) article. The steps include:
+There's one configuration option that we need to change: occlusion. MRTK2 bases its various configurations on a series of default profiles which can't be altered. In order to change an option, you must clone an existing default profile and change the option in the clone. We'll do that next.
 
-- Create the Unity project and give it a suitable name, like **MRTK Tutorials**.
-- Switch the build platform.
-- Import the Mixed Reality Toolkit and configure the Unity project.
+1. In the **Hierarchy**, select the **Mixed Reality Toolit** object. This causes the Mixed Reality Toolkit (MRTK) profile to appear in the **Inspector.**
+1. In the **Inspector**, at the top of the **MixedReality Toolkit** component, click the drop-down that displays **DefaultMixedRealityToolkitConfigurationProfile** and change that setting to **DefaultHoloLens2ConfigurationProfile**.
 
-1. In your project, give the scene a suitable name, such as **AzureSpatialAnchors**.
-1. If you haven't done so already, on the menu bar, select **Mixed Reality** > **Toolkit** > **Add to scene and configure.** This causes the Mixed Reality Toolkit (MRTK) profile to appear in the **Inspector.**
-1. In the **Inspector**, at the top of the **MixedReality Toolkit** component, click the drop-down that displays **DefaultMixedRealityToolkitConfigurationProfile** and change that setting to **DefaultHoloLens2ConfigurationProfile**. Change the display options for the spatial awareness mesh to **Occlusion**.
+    We need to change an option in the Spatial Awareness subsystem, but you'll notice that it's grayed out. To make it available, you must clone the default profile.
+
+1. Click the **Clone** button.
+1. In the **Clone Profile** window, note that in the **Profile Name** field., Unity provides a default name of **New MixedRealityToolkitconfigurationProfile**. You can change the name to anything you want, but for this learn module we'll stay with the name provided by Unity.
+
+    :::image type="content" source="../media/001-clone-profile-window.png" alt-text="Screen shot of the Clone Profile window and default clone name provided by Unity.":::
+
+1. Click the **Clone** button in the **Clone Profile** window. 
+1. Note that the **Enable Spatial Awareness System** option is now available. 
+
+    :::image type="content" source="../media/001-clone-profile-window.png" alt-text="Screen of the Enable Spatial Awareness System option now being available.":::
+
+    Select this option.
+
+1. The Spatial Awareness system has its own default profile (1). Like the earlier default profile, it can't be altered, so the **Add Spatial Observer** section is grayed out (2).
+
+    :::image type="content" source="../media/003-spatial-awareness-profile.png" alt-text="Screen of the default Spatial profile and its options grayed out.":::
+
+    You must clone this profile, too. 
+
+1. Click the **Clone** button to the right of the default profile name.
+1. In the **Clone Profile** window, click the **Clone** button to accept the clone name provided by Unity.
+1. There are now three Spatial Observers available as drop-downs. Click the first one, **XR SDK Windows Mixed Reality Spatial Mesh Observer**, to reveal its contents.
+1. This spatial observer also has its own default profile that must be cloned. Click the **Clone** button, and then in the **Clone Profile** window, click **Clone** to accept the name provided by Unity and clone the default profile.
+1. Scroll down to the last section in the profile, **Display Settings**, and then click the **Display Option** drop-down and select **Occlusion**.
+
+    :::image type="content" source="../media/004-display-options-occlusion.png" alt-text="Screen of the Spatial Observer section Display Settings with Occlusion selected.":::
 
 ## Install in-built Unity packages and import the tutorial assets
 
