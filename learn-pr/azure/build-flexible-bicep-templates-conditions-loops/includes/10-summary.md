@@ -9,8 +9,8 @@ Without the conditions and copy loops features, you would have to maintain and u
 ## Learn more
 
 - [Conditional deployment in Bicep](/azure/azure-resource-manager/bicep/conditional-resource-deployment)
-- Bicep loops
-    - [Resource iteration in Bicep](/azure/azure-resource-manager/bicep/loop-resources)
-    - [Property iteration in Bicep](/azure/azure-resource-manager/bicep/loop-properties)
-    - [Variable iteration in Bicep](/azure/azure-resource-manager/bicep/loop-variables)
-    - [Output iteration in Bicep](/azure/azure-resource-manager/bicep/loop-outputs)
+- [Bicep loops](/azure/azure-resource-manager/bicep/loops)
+- [Resources](/azure/azure-resource-manager/bicep/resource-declaration)
+- [Modules](/azure/azure-resource-manager/bicep/modules)
+- [Variables](/azure/azure-resource-manager/bicep/variables)
+- [Outputs](/azure/azure-resource-manager/bicep/outputs)
