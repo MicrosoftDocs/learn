@@ -30,14 +30,12 @@ Azure offers several types of data disks. When selecting a disk type, consider y
 
 ### Improve performance with disk caching
 
-Azure virtual machine [disk caching](/azure/virtual-machines/premium-storage-performance) is about optimizing read and write access to the virtual hard disk (VHD) files. These VHDs are attached to Azure virtual machines. Here are the recommended disk cache settings for data disks. 
+Azure virtual machine [disk caching](/azure/virtual-machines/premium-storage-performance#disk-caching) is about optimizing read and write access to the virtual hard disk (VHD) files. These VHDs are attached to Azure virtual machines. The table below shows the default cache settings for OS and data disks. 
 
-| **Disk caching setting**| **Recommendation** |
+| **Disk type**| **Default cache setting** |
 | - | - |
-| None| Use for write-only and write-heavy disks. |
-| Read only| Use for read-only and read-write disks. Provides low read latency and high read IOPS and throughput. |
-| Read & write| Use only if your application properly handles writing cached data to persistent disks. |
-
+| OS disk | ReadWrite |
+| Data disk| ReadOnly  |
 
 Warning: Disk Caching isn’t supported for disks 4 TiB and larger. When multiple disks are attached to your VM, each disk that is smaller than 4 TiB will support caching. Changing the cache setting of an Azure disk detaches and reattaches the target disk. When it’s the operating system disk, the VM is restarted. 
 
