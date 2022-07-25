@@ -15,7 +15,7 @@ If an enterprise customer receives a DSR, the DSR response occurs only in that c
 
 ### Scenario 2
 
-If a Microsoft service account creates an Azure subscription, the subscription will be handled as if it were an AAD tenant. Consequently, DSRs are scoped within the tenant as described above.
+If a Microsoft service account creates an Azure subscription, the subscription will be handled as if it were an Azure AD tenant. Consequently, DSRs are scoped within the tenant as described above.
 
 ### Scenario 3
 
