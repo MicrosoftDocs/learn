@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-configuration-information.query-repository-classes-from-remote-computers-cimsession-objects
+title: Query repository classes from remote computers by using CIMSession objects
+metadata:
+  title: Query repository classes from remote computers by using CIMSession objects
+  description: "Query repository classes from remote computers by using CIMSession objects"
+  ms.date: 07/22/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-query-repository-classes-from-remote-computers-cimsession-objects.md)]

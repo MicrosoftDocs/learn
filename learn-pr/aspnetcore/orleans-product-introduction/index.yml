@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.orleans-product-introduction
+metadata:
+  title: Introduction to Orleans
+  description: Learn what the Orleans framework is, the benefits it can provide, and how to integrate it with your applications.
+  ms.date: 7/21/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Introduction to Orleans
+summary: Learn what Orleans is and when you might want to use it.
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe what Orleans is and the core benefits it provides
+  - Understand the basics of how to implement Orleans in your application
+  - Understand the types of scenarios and projects that can benefit from Orleans
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure-app-service
+- dotnet-orleans
+subjects:
+  - development-tools
+prerequisites: |
+  - A local installation of the [.NET SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio Code](https://code.visualstudio.com) with the Azure development workload installed
+units:
+- learn.orleans-product-introduction.introduction
+- learn.orleans-product-introduction.what-is-orleans
+- learn.orleans-product-introduction.how-orleans-works
+- learn.orleans-product-introduction.when-to-use-orleans
+- learn.orleans-product-introduction.knowledge-check
+- learn.orleans-product-introduction.summary
+
+badge:
+  uid: learn.orleans-product-introduction.badge
