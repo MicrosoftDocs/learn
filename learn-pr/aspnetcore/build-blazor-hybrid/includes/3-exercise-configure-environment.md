@@ -1,6 +1,6 @@
 Let's start by creating our first Blazor web app.
 
-This module uses [Visual Studio 2022](https://visualstudio.com)  for local development. After you complete this module, you can apply its concepts using a development environment like  Visual Studio for Mac (macOS).
+This module uses Visual Studio 2022 for local development. After you complete this module, you can apply its concepts using a development environment like  Visual Studio for Mac (macOS).
 
 ## Requirements for Blazor Hybrid development
 
