@@ -47,7 +47,7 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
 - **Shared**. This folder contains shared Razor components including the main layout and navigation menu of the app.
 
-- **wwwroot**. This folder includes all static assets for Blazor including css, JavaScript files, and images.
+- **wwwroot**. This folder includes static web assets used by Blazor including HTML, CSS, JavaScript, and image files.
 
 - `Main.razor`. This file defines the routing of the Blazor app that is displayed.
 
