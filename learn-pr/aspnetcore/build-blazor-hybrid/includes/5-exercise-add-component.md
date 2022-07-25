@@ -75,6 +75,6 @@ Welcome to your new app.
 
 Start the app again by selecting **Debug** > **Start Debugging**
 
-The `Index` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image. The `Counter` component (`Counter.razor`) at `/counter` continues to increment by one.
+The `Index` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
 
 ![Home page with Counter update.](../media/counter-homepage-modify.png)
