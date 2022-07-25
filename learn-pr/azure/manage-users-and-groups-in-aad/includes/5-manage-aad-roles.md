@@ -10,7 +10,7 @@ Azure AD provides several _built-in roles_ to cover the most common security sce
 
 Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name**, **ID**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
 
-For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
+For the Owner role that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
 You can get this information using the PowerShell `Get-AzRoleDefinition Owner` cmdlet.
 
