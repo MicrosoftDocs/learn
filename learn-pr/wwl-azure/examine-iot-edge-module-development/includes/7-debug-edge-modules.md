@@ -30,7 +30,6 @@ The `edgeHubDev` container is the core of the local IoT Edge simulator. It can r
 ### Debug module in launch mode
 
 1.  Prepare your environment for debugging according to the requirements of your development language (C\# in this case), set a breakpoint in your module, and select the debug configuration to use:
-    
     1.  In the Visual Studio Code integrated terminal, change the directory to the `<your module name>` folder, and then run the following command to build .NET Core application.
         
         ```cmd
@@ -59,7 +58,7 @@ curl --header "Content-Type: application/json" --request POST --data '{"inputNam
 4.  In the Visual Studio Code Debug view, you'll see the variables in the left panel.
 5.  To stop your debugging session, select the **Stop** button or press **Shift** \+ **F5**, and then run **Azure IoT Edge: Stop IoT Edge Simulator** in the command palette to stop the simulator and clean up.
 
-## Debug in attach mode with IoT Edge simulator (C\#)<br>
+## Debug in attach mode with IoT Edge simulator (C\#)
 
 Your default solution contains two modules, one is a simulated temperature sensor module and the other is the pipe module. The simulated temperature sensor sends messages to the pipe module and then the messages are piped to the IoT Hub. In the module folder you created, there are several Docker files for different container types. Use any of the files that end with the extension .debug to build your module for testing.
 
@@ -100,11 +99,9 @@ When debugging modules using this method, your modules are running on top of the
 
 1.  In Visual Studio Code, open the `deployment.debug.template.json` file, which contains the debug version of your module images with the proper `createOptions` values set.
 2.  In the Visual Studio Code command palette:
-    
     1.  Run the command **Azure IoT Edge: Build and Push IoT Edge solution**.
     2.  Select the `deployment.debug.template.json` file for your solution.
 3.  In the **Azure IoT Hub Devices** section of the Visual Studio Code Explorer view:
-    
     1.  Right-click an IoT Edge device ID and then select **Create Deployment for Single Device**.
         
         > [!TIP]
@@ -129,7 +126,6 @@ You can skip this section if your modules are running on the same machine as Vis
 
 1.  In the Visual Studio Code Debug view, select the debug configuration file for your module. The debug option name should be similar to ***&lt;your module name&gt;* Remote Debug**.
 2.  Open the module file for your development language and add a breakpoint:
-    
      -  Azure Function (C\#): Add your breakpoint to the file `<your module name>.cs`.
      -  C\#: Add your breakpoint to the file `Program.cs`.
 3.  Select **Start Debugging** or press **F5**. Select the process to attach to.

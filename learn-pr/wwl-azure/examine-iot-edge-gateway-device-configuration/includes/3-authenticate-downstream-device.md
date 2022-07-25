@@ -107,12 +107,9 @@ You should have created a root CA certificate and an intermediate certificate.
     
     ```
 4.  Navigate to your IoT hub in the Azure portal and create a new IoT device identity with the following values:
-    
      -  Select X.509 Self-Signed as the authentication type.
      -  Paste the hexadecimal strings that you copied from your device's primary and secondary certificates.
-     -  Select Set a parent device and choose the IoT Edge gateway device that this downstream device will connect through. A parent device is required for X.509 authentication of a downstream device.
-    
-    :::image type="content" source="../media/m06-l03-edge-gateway-x509-self-signed-portal-5ce563d0.png" alt-text="Screenshot that shows how to create a device identity that uses X.509 self-signed certificate authentication.":::
+     -  Select Set a parent device and choose the IoT Edge gateway device that this downstream device will connect through. A parent device is required for X.509 authentication of a downstream device.:::image type="content" source="../media/m06-l03-edge-gateway-x509-self-signed-portal-5ce563d0.png" alt-text="Screenshot that shows how to create a device identity that uses X.509 self-signed certificate authentication.":::
     
 5.  Copy the following files to any directory on your downstream device:
     
@@ -139,11 +136,8 @@ az iot hub device-identity create -n {iothub name} -d {device ID} --pd {gateway 
 For X.509 certificate authority (CA) signed authentication, you need a root CA certificate registered in IoT Hub that you use to sign certificates for your IoT device. Any device using a certificate that was issues by the root CA certificate or any of its intermediate certificates will be permitted to authenticate.
 
 1.  Follow the instructions in the Register X.509 CA certificates to your IoT hub section of Set up X.509 security in your Azure IoT hub [https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started](/azure/iot-hub/iot-hub-security-x509-get-started). In that section, you perform the following steps:
-    
      -  Upload a root CA certificate. If you're using the certificates that you created in the transparent gateway article, upload &lt;WRKDIR&gt;/certs/azure-iot-test-only.root.ca.cert.pem as the root certificate file.
-     -  Verify that you own that root CA certificate. You can verify possession with the cert tools in &lt;WRKDIR&gt;.
-    
-    PowerShell
+     -  Verify that you own that root CA certificate. You can verify possession with the cert tools in &lt;WRKDIR&gt;.PowerShell
     
     ```PowerShell
     New-CACertsVerificationCert "<verification code from Azure portal>"
@@ -157,7 +151,6 @@ For X.509 certificate authority (CA) signed authentication, you need a root CA c
     
     ```
 2.  Follow the instructions in the Create an X.509 device for your IoT hub section of Set up X.509 security in your Azure IoT hub. In that section, you perform the following steps:
-    
      -  Add a new device. Provide a lowercase name for device ID, and choose the authentication type X.509 CA Signed.
      -  Set a parent device. For downstream devices, select Set a parent device and choose the IoT Edge gateway device that will provide the connection to IoT Hub.
 3.  Create a certificate chain for your downstream device. Use the same root CA certificate that you uploaded to IoT Hub to make this chain. Use the same lowercase device ID that you gave to your device identity in the portal. PowerShell

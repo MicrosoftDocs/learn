@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-azure-security-center-azure-defender-for-iot.examine-features-of-agent-based-implementation
-title: Examine the features of an agent-based Azure Defender for IoT implementation
+title: Examine the features of an agent-based Microsoft Defender for IoT implementation
 metadata:
-  title: Examine the features of an agent-based Azure Defender for IoT implementation
-  description: "Examine the features of an agent-based Azure Defender for IoT implementation"
-  ms.date: 02/24/2022
+  title: Examine the features of an agent-based Microsoft Defender for IoT implementation
+  description: "Examine the features of an agent-based Microsoft Defender for IoT implementation"
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
