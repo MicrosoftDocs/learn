@@ -2,7 +2,7 @@ The Microsoft Authentication Library (MSAL) enables developers to acquire tokens
 
 The diagram provides a high-level overview of the Microsoft identity platform implementation of Open ID Connect (OIDC) and OAuth 2.0 to add sign-in support and API access to a web app.
 
-:::image type="content" source="../media/5-webapp-authentication-flow.png" border="false" alt-text="Web app sign in authentication flow":::
+:::image type="content" source="../media/4-auth-code-flow.png" border="false" alt-text="Web app sign in authentication flow":::
 
 As in the preceding diagram, the authorization code grant in MSAL Python consists of two main steps. In the first leg, the application requests an authorization code which is redeemed for an access token. In the second leg, the application uses the access token to call a protected web API. 
 
