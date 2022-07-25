@@ -8,7 +8,7 @@ In this exercise, you'll add a Razor component to the home page of our applicati
 
 1. Select the **Index.razor** file to open it.
 
-1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the `Index.razor` file.
+1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the _Index.razor_ file.
 
    ```razor
    @page "/"
