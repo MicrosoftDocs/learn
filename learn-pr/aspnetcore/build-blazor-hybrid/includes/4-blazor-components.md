@@ -8,7 +8,7 @@ Razor is a markup syntax for embedding .NET based code into webpages. The Razor 
 
 A Razor component defines a reusable piece of web UI. Components in Blazor are analogous to React and Angular components in SPA frameworks.
 
-If you explore the project, you'll see that most files are .razor files.
+If you explore the project, you'll see various Razor components defined in .razor files.
 
 At compile time, each Razor component is built into a .NET class. The class includes common UI elements like state, rendering logic, lifecycle methods, and event handlers.
 
