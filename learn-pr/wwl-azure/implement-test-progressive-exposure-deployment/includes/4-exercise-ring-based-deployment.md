@@ -83,7 +83,7 @@ We start by assuming that a new feature has already been deployed to the Green s
 
 13. Right-click the **Swap sites** task and click **Clone tasks(s)**. Select the **Swap sites copy** task, change its **Display name** to **Stop staging traffic**, and set the **Inline Script** to the following:
 
-    `az webapp traffic-routing set --resource-group $(ResourceGroupName) --name $(WebsiteName) --distribution staging=0`
+`az webapp traffic-routing set --resource-group $(ResourceGroupName) --name $(WebsiteName) --distribution staging=0`
 
 14. Click **Save,** then **OK** to save your work.
 15. Click **Create release** and **Create** to start a release. Click the release link to see the progress.
