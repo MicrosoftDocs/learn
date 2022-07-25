@@ -35,7 +35,7 @@ units:
 - learn.add-sign-in-support-python-webapp-identity-platform.exercise-prepare-app-for-auth
 - learn.add-sign-in-support-python-webapp-identity-platform.msal-python-auth-code-flow
 - learn.add-sign-in-support-python-webapp-identity-platform.exercise-build-auth-code-flow
-- learn.add-sign-in-support-python-webapp-identity-platform.identity-platform-permissions-and-consent
+- learn.add-sign-in-support-python-webapp-identity-platform.permissions-consent-and-token-flows
 - learn.add-sign-in-support-python-webapp-identity-platform.exercise-call-protected-web-api
 - learn.add-sign-in-support-python-webapp-identity-platform.knowledge-check
 - learn.add-sign-in-support-python-webapp-identity-platform.summary
