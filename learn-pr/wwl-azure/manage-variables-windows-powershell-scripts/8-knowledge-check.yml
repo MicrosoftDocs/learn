@@ -14,3 +14,49 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which character is used to identify variables?"
+    choices:
+    - content: "%"
+      isCorrect: false
+      explanation: "Incorrect. In Windows PowerShell, you identify variables by including a $ at the start of the name."
+    - content: "!"
+      isCorrect: false
+      explanation: "Incorrect. In Windows PowerShell, you identify variables by including a $ at the start of the name."
+    - content: "$"
+      isCorrect: true
+      explanation: "Correct. In Windows PowerShell, you identify variables by including a $ at the start of the name."
+  - content: "Which command would you use to assign a numerical value of 20 to a variable?"
+    choices:
+    - content: "$num = 20"
+      isCorrect: true
+      explanation: "Correct. To assign a value to a variable, you must use the equal (=) operator. When you use the value 20, it's automatically interpreted as a number. If you use \"20\" as the value, it's interpreted as a string."
+    - content: "$num = \"20\""
+      isCorrect: false
+      explanation: "Incorrect. To assign a value to a variable, you must use the equal (=) operator. When you use the value 20, it's automatically interpreted as a number. If you use \"20\" as the value, it's interpreted as a string."
+    - content: "$num -eq 20"
+      isCorrect: false
+      explanation: "Incorrect. To assign a value to a variable, you must use the equal (=) operator. When you use the value 20, it's automatically interpreted as a number. If you use \"20\" as the value, it's interpreted as a string."
+  - content: "The variable $ip is a string with a value of \"10.100.4.2\". Which command would you use to divide $ip into four separate numbers?"
+    choices:
+    - content: "$ip.Divide(4)"
+      isCorrect: false
+      explanation: "Incorrect. You use the Split method to divide a string into parts. To use the split method, you need to provide the character that acts as the separator. In this case, dot \".\" is the separator."
+    - content: "$ip.Split(4)"
+      isCorrect: false
+      explanation: "Incorrect. You use the Split method to divide a string into parts. To use the split method, you need to provide the character that acts as the separator. In this case, dot \".\" is the separator."
+    - content: "$ip.Split(\".\")"
+      isCorrect: true
+      explanation: "Correct. You use the Split method to divide a string into parts. To use the split method, you need to provide the character that acts as the separator. In this case, dot \".\" is the separator."
+  - content: "Which of the following options is a method that you can use with DateTime variables?"
+    choices:
+    - content: "ToLower()"
+      isCorrect: false
+      explanation: "Incorrect. Of the given options, the ToShortDateString() method can be used with DateTime variables."
+    - content: "ToShortDateString()"
+      isCorrect: true
+      explanation: "Correct. Of the given options, the ToShortDateString() method can be used with DateTime variables."
+    - content: "DayOfWeek"
+      isCorrect: false
+      explanation: "Incorrect. Of the given options, the ToShortDateString() method can be used with DateTime variables."
