@@ -153,7 +153,7 @@ Creating a new role can be done through several mechanisms:
 
 * **Azure portal**. You can use the Azure portal to create a custom role - **Azure Active Directory > Roles and administrators > New custom role**.
 
-* **Azure PowerShell**. You can use the `New-AzADMSRoleDefinition` cmdlet to define a new role.
+* **Azure PowerShell**. You can use the `New-AzRoleDefinition` cmdlet to define a new role.
 
 * **Azure Graph API**. You can use a REST call to the Graph API to programmatically create a new role.
 
