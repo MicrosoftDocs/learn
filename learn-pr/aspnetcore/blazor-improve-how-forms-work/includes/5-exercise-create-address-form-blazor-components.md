@@ -101,9 +101,9 @@ Let's add an error message the app can show a customer if they don't enter their
     {
         var model = editContext.Model as Address;
         isSubmitting = true;
-        if (string.IsNullOrWhitespace(model?.Name) || 
-            string.IsNullOrWhitespace(model?.Line1) ||
-            string.IsNullOrWhitespace(model?.PostalCode)
+        if (string.IsNullOrWhiteSpace(model?.Name) || 
+            string.IsNullOrWhiteSpace(model?.Line1) ||
+            string.IsNullOrWhiteSpace(model?.PostalCode)
         {
             isError = true;
         } 
