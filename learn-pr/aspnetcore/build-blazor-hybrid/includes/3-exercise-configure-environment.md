@@ -85,10 +85,10 @@ The project contents include the following items for both Blazor components and 
 
     public partial class MainPage : ContentPage
     {
-      public MainPage()
-      {
-        InitializeComponent();
-      }
+        public MainPage()
+        {
+            InitializeComponent();
+        }
     }
     ```
 
