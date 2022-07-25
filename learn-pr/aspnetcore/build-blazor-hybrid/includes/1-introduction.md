@@ -7,7 +7,7 @@ Blazor Hybrid supports using Razor components with:
 
 Imagine you're building a client-side web app and already have a team of .NET developers. Also, imagine you want to deploy your app as a native multi-platform app across mobile and desktop platform including iOS, Android, macOS, and Windows. 
 
-With Blazor, developers can build front-end and back-end logic for web apps with common languages, frameworks, and tools. With .NET MAUI you will be able to build multi-platform apps from a single project, access platform-specific source code and resources for mobile and desktop platforms. Combining these two technologies together with Blazor Hybrid, developers can share that logic to build native applications leveraging shared components. Blazor Hybrid can be used for the entire native application or parts of the native application.
+With Blazor, developers can build front-end and back-end logic for web apps with common languages, frameworks, and tools. With .NET MAUI you can build multi-platform apps from a single project, access platform-specific source code and resources for mobile and desktop platforms. Combining these two technologies together with Blazor Hybrid, developers can build native client and web apps that leverage shared UI components and logic. Blazor Hybrid can be used for the entire native application or parts of the native application.
 
 Using the same language for front-end web apps, client apps, and back-end code can:
 
