@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-run-scripts-use-windows-powershell.run-scripts-set-execution-policy
+title: Run scripts and set the execution policy in Windows PowerShell
+metadata:
+  title: Run scripts and set the execution policy in Windows PowerShell
+  description: "Run scripts and set the execution policy in Windows PowerShell"
+  ms.date: 07/25/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-run-scripts-set-execution-policy.md)]
