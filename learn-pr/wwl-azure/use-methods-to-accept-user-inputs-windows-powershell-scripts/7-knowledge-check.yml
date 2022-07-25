@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/13/2022
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -14,3 +14,33 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "To accept named parameters, what do you need to add to a script?"
+    choices:
+    - content: "A Param() block with parameter names defined"
+      isCorrect: false
+      explanation: "Incorrect. To accept named parameters, you add a Param() block to the beginning of the script. Inside the Param() block, you need to add variable names. The variable names correspond to the names of the parameters that will be accepted."
+    - content: "A Param() block with variable names defined"
+      isCorrect: true
+      explanation: "Correct. To accept named parameters, you add a Param() block to the beginning of the script. Inside the Param() block, you need to add variable names. The variable names correspond to the names of the parameters that will be accepted."
+    - content: "A Parameter() block with parameter names defined"
+      isCorrect: false
+      explanation: "Incorrect. To accept named parameters, you add a Param() block to the beginning of the script. Inside the Param() block, you need to add variable names. The variable names correspond to the names of the parameters that will be accepted."
+    - content: "A function with variable names defined"
+      isCorrect: false
+      explanation: "Incorrect. To accept named parameters, you add a Param() block to the beginning of the script. Inside the Param() block, you need to add variable names. The variable names correspond to the names of the parameters that will be accepted."
+  - content: "Which cmdlet can you use to collect a username and password from a user?"
+    choices:
+    - content: "Out-GridView"
+      isCorrect: false
+      explanation: "Incorrect. When you use Get-Credential, the user is prompted to enter a username and password that can be stored in a variable."
+    - content: "Read-Host"
+      isCorrect: false
+      explanation: "Incorrect. When you use Get-Credential, the user is prompted to enter a username and password that can be stored in a variable."
+    - content: "Get-Credential"
+      isCorrect: true
+      explanation: "Correct. When you use Get-Credential, the user is prompted to enter a username and password that can be stored in a variable."
+    - content: "Import-Clixml"
+      isCorrect: false
+      explanation: "Incorrect. When you use Get-Credential, the user is prompted to enter a username and password that can be stored in a variable."

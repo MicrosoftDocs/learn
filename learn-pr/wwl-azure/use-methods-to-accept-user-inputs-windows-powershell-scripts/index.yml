@@ -3,7 +3,7 @@ uid: learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts
 metadata:
   title: Use methods to accept user inputs in Windows PowerShell scripts
   description: "This method explains multiple methods for accepting user input in a Windows PowerShell script."
-  ms.date: 07/13/2022
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -51,7 +51,7 @@ units:
 - learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.use-read-host-cmdlet
 - learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.use-get-credential-cmdlet
 - learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.use-out-gridview-cmdlet
-- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.pass-parameters-to-script
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.pass-parameters-script
 - learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.knowledge-check
 - learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.summary
 badge:
