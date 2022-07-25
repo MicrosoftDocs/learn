@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "A new project has several resources that need to be administered together. Which of the following would be a good solution?"
+  - content: "A new project has several resources that need to be administered together. Which of the following strategies would provide a good solution?"
     choices:
     - content: "Azure templates"
       isCorrect: false
@@ -42,11 +42,11 @@ quiz:
   - content: "Which of the following is true about resource groups?"
     choices:
     - content: "Resources can be in only one resource group."
-      isCorrect: false
+      isCorrect: true
       explanation: "True. Resources can be in only one resource group."
-    - content: "Role-based access control cannot be applied to a resource group"
+    - content: "Role-based access control can't be applied to a resource group"
       isCorrect: false
       explanation: "False. Role-based access control can be applied to a resource group."
     - content: "Resource groups can be nested."
-      isCorrect: true
-      explanation: "False. Resource groups cannot be nested."
+      isCorrect: false
+      explanation: "False. Resource groups can't be nested."
