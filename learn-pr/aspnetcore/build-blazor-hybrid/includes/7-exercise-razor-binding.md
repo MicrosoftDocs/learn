@@ -191,7 +191,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 1. The title text for each todo item can be made editable, and a checkbox can help the user keep track of completed items. Add a checkbox input for each todo item and bind its value to the `IsDone` property. Change `@todo.Title` to an `<input>` element bound to `todo.Title` with `@bind`:
 
     ```razor
-    <ul>
+    <ul class="list-unstyled">
         @foreach (var todo in todos)
         {
             <li>
