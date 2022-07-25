@@ -22,7 +22,7 @@ In this module, you'll:
 
 - Configure your local environment for Blazor Hybrid and .NET MAUI development with Visual Studio
 - Create a new Blazor Hybrid project powered by .NET MAUI.
-- Add a Component to a Blazor Hybrid page.
+- Add a Razor component to a Blazor Hybrid page.
 - Update logic in a Blazor Hybrid app.
 - Learn about event handling and data binding in Blazor components.
 - Use routing in a Blazor app.
