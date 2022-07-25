@@ -6,7 +6,7 @@ In this unit, you'll start with an introduction to Blazor Hybrid, .NET MAUI, and
 
 ## What is Blazor?
 
-Blazor apps are composed of reusable web UI components built using C#, HTML, and CSS. With Blazor, developers can build client and server code with C#. They can also share code and libraries with the front-end client code and back-end logic. Using C# for all code simplifies sharing data between the front end and back end, code reuse to accelerate development, and maintenance.
+Blazor apps are composed of reusable web UI components built using C#, HTML, and CSS. With Blazor, developers can build client and server code with C#. They can also share code and libraries with the front-end client code and back-end logic. Using C# for all code simplifies sharing data between the front end and back end, enables code reuse to accelerate development, and reduces maintenance.
 
 
 ## What is Blazor Hybrid?
