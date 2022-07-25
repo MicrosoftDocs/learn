@@ -26,7 +26,7 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
 
 ## Add the Todo component to the navigation bar
 
-The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component provides a cue in the app's UI when the component URL is loaded by the app.
+The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component renders an HTML anchor tag that can be styled to provide a cue in the app's UI when the app URL matches the link.
 
 In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
 
