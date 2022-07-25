@@ -2,7 +2,7 @@ To access a protected resource like email or calendar data, your application nee
 
 ## Consent
 
-One way that applications are granted permissions is through consent. Consent is a process where users or admins authorize an application to access a protected resource. For example, when a user attempts to sign into an application for the first time, the application can request permission to sign in the user, read their profile, and maintain access to the data. The user sees a consent prompt with the list of permissions the app is requesting alongside the publisher information. 
+One way that applications are granted permissions is through consent. Consent is a process where users or admins authorize an application to access a protected resource. For example, when a user attempts to sign into an application for the first time, the application can request permission to sign in the user, read their profile, and maintain access to the data. The user sees a consent prompt with the publisher information and a list of permissions the app is requesting.
 
 :::image type="content" source="../media/6-consent-to-permissions-request.png" border="false" alt-text=" Consent prompt to allow app's request for permissions":::
 
