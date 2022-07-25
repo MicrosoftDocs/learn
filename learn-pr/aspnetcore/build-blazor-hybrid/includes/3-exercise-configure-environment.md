@@ -43,7 +43,7 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
 ### Blazor project files
 
-- **Pages**. This folder contains three `razor` files, `Counter.razor`, `FetchData.razor`, and `Index.razor` that define the Blazor user interface.
+- **Pages**. This folder contains three Razor components, `Counter.razor`, `FetchData.razor`, and `Index.razor` that define the three pages that make up the Blazor user interface.
 
 - **Shared**. This folder contains shared Razor components including the main navigation menu of the app.
 
