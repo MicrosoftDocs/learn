@@ -2,7 +2,7 @@ You've defined the UI for your web app. Now explore how to add logic to the app.
 
 ## C# inline in components
 
-A common practice is to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, you'll use directives.
+A common practice is to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, you'll use Razor syntax.
 
 ## What are Razor directives?
 
