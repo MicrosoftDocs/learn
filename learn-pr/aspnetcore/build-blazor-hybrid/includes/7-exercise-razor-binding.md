@@ -157,6 +157,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 
     ```razor
     @page "/todo"
+    @using BlazorHybridApp.Data
     
     <h3>Todo</h3>
     
