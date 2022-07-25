@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-configuration-information.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/22/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "When you perform a wildcard match in a filter for a Common Information Model (CIM) or Windows Management Instrumentation (WMI) cmdlet, which character is used as the wildcard?"
+    choices:
+    - content: "`?`"
+      isCorrect: false
+      explanation: "Incorrect. When you use LIKE in a filter for CIM or WMI, the `%` character is used as the wildcard character. Typically, Windows PowerShell uses the `*` character."
+    - content: "`*`"
+      isCorrect: false
+      explanation: "Incorrect. When you use LIKE in a filter for CIM or WMI, the `%` character is used as the wildcard character. Typically, Windows PowerShell uses the `*` character."
+    - content: "`%`"
+      isCorrect: true
+      explanation: "Correct. When you use LIKE in a filter for CIM or WMI, the `%` character is used as the wildcard character. Typically, Windows PowerShell uses the `*` character."
+  - content: "Which cmdlet allows you to create a DCOM connection to query CIM objects from a remote computer?"
+    choices:
+    - content: "`New-CimSession`"
+      isCorrect: true
+      explanation: "Correct. By default, the CIM cmdlets use WS-MAN for connectivity to remote computers. You can force a remote connection to use DCOM by creating a CIM session object with the DCOM setting and then using the CIM session to perform the query."
+    - content: "`Get-CimInstance`"
+      isCorrect: false
+      explanation: "Incorrect. The `new-CimSession` cmdlet allows you to create a DCOM connection to query CIM objects from a remote computer. By default, the CIM cmdlets use WS-MAN for connectivity to remote computers. You can force a remote connection to use DCOM by creating a CIM session object with the DCOM setting and then using the CIM session to perform the query."
+    - content: "`Get-CimClass`"
+      isCorrect: false
+      explanation: "Incorrect. The `new-CimSession` cmdlet allows you to create a DCOM connection to query CIM objects from a remote computer. By default, the CIM cmdlets use WS-MAN for connectivity to remote computers. You can force a remote connection to use DCOM by creating a CIM session object with the DCOM setting and then using the CIM session to perform the query."
