@@ -22,7 +22,7 @@ The `@Page` directive is special markup that identifies a component as a page. U
 
 ## Razor data binding
 
-Within Razor components, you can data bind HTML elements to C# fields, properties, and Razor expression values. Data binding allows two-way synchronization between HTML and Microsoft .NET.
+Within Razor components, you can bind HTML elements to data in C# fields, properties, and Razor expression values. Data binding allows two-way synchronization between HTML and your code.
 
 Data is pushed from HTML to .NET when a component is rendered. Components render themselves after event-handler code executes. That's why property updates are reflected in the UI immediately after an event handler is triggered.
 
