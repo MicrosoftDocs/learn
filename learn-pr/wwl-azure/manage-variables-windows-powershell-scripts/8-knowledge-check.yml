@@ -38,7 +38,7 @@ quiz:
     - content: "$num -eq 20"
       isCorrect: false
       explanation: "Incorrect. To assign a value to a variable, you must use the equal (=) operator. When you use the value 20, it's automatically interpreted as a number. If you use \"20\" as the value, it's interpreted as a string."
-  - content: "The variable $ip is a string with a value of \"10.100.4.2\". Which command would you use to divide $ip into four separate numbers?"
+  - content: "The variable `$ip` is a string with a value of \"10.100.4.2\". Which command would you use to divide `$ip` into four separate numbers?"
     choices:
     - content: "$ip.Divide(4)"
       isCorrect: false
