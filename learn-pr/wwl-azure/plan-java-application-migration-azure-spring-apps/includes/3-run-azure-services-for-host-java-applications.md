@@ -13,7 +13,7 @@ Azure App Service is a fully managed platform as a service (PaaS) offering for d
  -  **Multiple languages and frameworks** \- App Service has first-class support for ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python. You can also run PowerShell and other scripts or executables as background services.
  -  **Managed production environment** \- App Service automatically patches and maintains the OS and language frameworks for you.
  -  **Containerization and Docker** \- Dockerize your app and host a custom Windows or Linux container in App Service. Run multi-container apps with Docker Compose. Migrate your Docker skills directly to App Service.
- -  **Global scale with high availability** \- Scale up or out manually or automatically. Host your apps anywhere in Microsoft's global datacenter infrastructure, and the App Service SLA provices high availability.
+ -  **Global scale with high availability** \- Scale up or out manually or automatically. Host your apps anywhere in Microsoft's global datacenter infrastructure, and the App Service SLA provides high availability.
  -  **Visual Studio and Visual Studio Code integration** \- Dedicated tools in Visual Studio and Visual Studio Code streamline the work of creating, deploying, and debugging.
 
 ## Azure Kubernetes Service
