@@ -8,7 +8,7 @@ The following image illustrates three scenarios in which a Microsoft customer mi
 
 ### Scenario 1
 
-If an enterprise customer receives a DSR, t he DSR response occurs only in that customer's Azure AD tenant. It won’t affect other tenants.
+If an enterprise customer receives a DSR, the DSR response occurs only in that customer's Azure AD tenant. It won’t affect other tenants.
 
 > [!NOTE]
 > It's possible that a user submitting a DSR participates in multiple tenants. If this happens, the DSR is only fulfilled in the tenant that receives the DSR.
