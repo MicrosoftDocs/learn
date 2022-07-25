@@ -1,6 +1,6 @@
 Blazor lets C# developers use their skills to build web apps with C#. Blazor Hybrid enables developers to use Blazor web UI components (called Razor components) from within native mobile and desktop client apps. Blazor Hybrid apps use a "hybrid" of web plus native client development.
 
-Blazor Hybrid supports building apps with:
+Blazor Hybrid supports using Razor components with:
 - .NET MAUI (Multi-Platform User Interface)
 - Windows Forms (WinForms)
 - Windows Presentation Foundation (WPF)
