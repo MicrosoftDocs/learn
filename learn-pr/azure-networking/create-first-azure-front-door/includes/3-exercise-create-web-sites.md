@@ -220,7 +220,7 @@ You've now created the virtual machines running the vehicle registration web app
         --resource-group $RG \
         --name vehicleAppServicePlan \
         --location eastus \
-        --sku S1
+        --sku FREE
     ```
 
 1. Lastly, create the web app and deploy the license renewal site.

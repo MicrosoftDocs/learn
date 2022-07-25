@@ -112,7 +112,7 @@ mvn archetype:generate --batch-mode \
     -DartifactId=telemetry-functions-consumer
 ```
 
-An application is created like in the last exercise. You'll delete the test files, update the `local.settings.file` with the `fetch-app-settings` command, and then replace the preexisting `Functions.java`.
+An application is created like in the last exercise. You'll delete the test files, update the `local.settings.file` with the `fetch-app-settings` command, and then replace the preexisting `Function.java`.
 
 ``` Bash
 cd telemetry-functions-consumer
@@ -125,7 +125,7 @@ Update the local settings for local execution and debugging.
 func azure functionapp fetch-app-settings $FUNCTION_APP"-c"
 ```
 
-Next, open the `Functions.java` file and replace the contents with the following code:
+Next, open the `Function.java` file and replace the contents with the following code:
 
 ``` Java
 package com.learn;

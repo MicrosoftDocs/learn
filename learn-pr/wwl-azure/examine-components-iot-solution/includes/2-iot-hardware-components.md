@@ -1,4 +1,4 @@
-When planning for an IoT solution, perhaps the first area of consideration is what hardware you will need (or already have). This issue is partly driven by the fact that data is the main driver behind implementing many IoT solutions, so figuring out what data you want to collect and how you want to collect it has a primary place in your architecture.
+When you are planning for an IoT solution, perhaps the first area of consideration is what hardware you will need (or already have). This issue is partly driven by the fact that data is the main driver behind implementing many IoT solutions, so figuring out what data you want to collect and how you want to collect it has a primary place in your architecture.
 
 Although the hardware implemented in an IoT solution includes the network infrastructure devices used to provide, secure Internet communications, here we will focus on IoT device hardware.
 
@@ -22,7 +22,7 @@ Devices of this type can be useful in scenarios where data from two or more devi
 
 A sensor is a circuit (or device) that collects a specific type of data about the physical environment. As IoT continues to evolve, the list of available sensors continues to grow, often in ways that we would not have imagined five years earlier.
 
-A **smart sensor** according to [the website](https://internetofthingsagenda.techtarget.com/definition/smart-sensor) *IoT Agenda* is "a device that takes input from the physical environment and uses built-in compute resources to perform predefined functions upon detection of specific input and then process data before passing it on." That is, the device itself processes the data to some degree before sending it to the next node in the IoT architecture.
+A **smart sensor** is essentially a device that gathers input from the physical environment and processes that information locally before communicating message data. That is, the device itself processes the data to some degree before sending it to the next node in the IoT architecture.
 
 Sensors can either be directly embedded within an IoT device, or implemented as an external piece of hardware that connects to the IoT device through a defined interface. Examples of simple sensor measurements include: Temperature, Humidity, Distance, and Light.
 
