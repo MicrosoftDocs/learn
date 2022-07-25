@@ -100,7 +100,7 @@ To show how you can download and edit a dashboard file, carry out the following 
 
 ## Delete a dashboard
 
-1. From the dashboard selection drop-down control, ensure that the **Azure AD Admin Dashbard** dashboard is selected.
+1. From the dashboard selection drop-down control, ensure that **Azure AD Admin Dashboard** is selected.
 
 1. Select the **Delete** button.
 
