@@ -27,8 +27,8 @@ Define your inbound and outbound B2B collaboration with other Azure Active Direc
 ## Learning objectives
 
 1. Design cross-tenant access policies that allow B2B collaboration by default but limit access to an application.
-1. Configure cross-tenant access settings between your organization and an external partner’s organization.
-1. Validate that with MFA trust enabled, an external partner can access a resource shared to them without having to repeat MFA.
+2. Configure cross-tenant access settings between your organization and an external partner’s organization.
+3. Validate that with MFA trust enabled, an external partner can access a resource shared to them without having to repeat MFA.
 
 ## Chunk your content into subtasks
 
@@ -36,10 +36,9 @@ Identify the subtasks of *Secure B2B collaboration by using cross-tenant access 
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Design default settings for inbound and outbound access | Define your B2B collaboration access policies for internal and external users | Exercise | 1 | Yes |
-| Add organizational settings for an external Azure AD tenant | Allow B2B collaboration by default | Exercise | 1 | Yes|
-| Add  | Limit app access to specific users in an external organization| Exercise  | 2 | Yes|
-| Contrast the sign-in experience | Different experience for blocked and allowed access | Knowledge check | 1,2,3 | Yes|
+| Configure default cross-tenant access settings | Allow inbound and outbound B2B collaboration by default, but limit access to a restricted app | Exercise | 1 | Yes |
+| Add organizational settings to allow access to an app and trust MFA | Allow users in the branch to access the restricted app via B2B collaboration and trust MFA | Exercise | 2,3 | Yes|
+| Scope access to individual apps and users in an external organization  | Allow two auditors in an external tenant to access the restricted app | Exercise  | 2 | Yes|
 
 ## Outline the units
 
