@@ -1,4 +1,4 @@
-Azure Functions Core Tools let you develop functions locally on your own computer by:
+Azure Functions Core Tools lets you develop functions locally on your own computer by:
 
 - Creating the files and folders necessary for a functions project.
 - Providing a Functions host that runs locally from the root directory of your project.
