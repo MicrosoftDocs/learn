@@ -10,7 +10,8 @@ The following table describes the three scopes and how they affect variable use.
 | Script    | The script scope is for a single script. Variables set within a script can be reviewed by all the functions within that script. If you set a variable value in the script scope that already exists in the global scope, a new variable is created in the script scope. There are then two variables of the same name in two separate scopes. At this point, when you review the value of the variable in the script, the value of the variable in the script scope is returned. |
 | Function  | The function scope is for a single function. Variables set within a function aren't shared with other functions or the script. If you set a variable value in the function scope that already exists in the global or script scope, a new variable is created in the function scope. Then, there are two variables of the same name in two separate scopes. |
 
-> **Note:** To avoid confusion, it's a best practice to avoid using the same variable names in different scopes.
+> [!NOTE]
+> To avoid confusion, it's a best practice to avoid using the same variable names in different scopes.
 
 In addition to reviewing a variable in a higher-level scope, you can also modify that variable by specifically referencing the scope of the variable when you modify it. To modify a script scope variable from a function, use the following syntax:
 
@@ -26,4 +27,5 @@ The following is an example of using **Return()** at the end of a function to pa
 Return($users) 
 ```
 
-> **Note:** Using **Return()** in a function adds the specified data to the pipeline of data being returned, but doesn't replace existing data in the pipeline. As part of script development, you need to verify exactly which data is being returned by a function.
+> [!NOTE] 
+> Using **Return()** in a function adds the specified data to the pipeline of data being returned, but doesn't replace existing data in the pipeline. As part of script development, you need to verify exactly which data is being returned by a function.

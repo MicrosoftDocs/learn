@@ -20,27 +20,21 @@ quiz:
     choices:
     - content: "C:\\Program Files\\PowerShell\\7\\Modules"
       isCorrect: false
-      explanation: "Incorect. There are multiple folders that Windows PowerShell recognizes for module storage and C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules is one of them. Modules need to be stored in a subfolder with the same name as the module file."
+      explanation: "Incorrect. There are multiple folders that Windows PowerShell recognizes for module storage and C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules is one of them. Modules need to be stored in a subfolder with the same name as the module file."
     - content: "C:\\Program Files\\PowerShell\\Modules"
       isCorrect: false
-      explanation: "Incorect. There are multiple folders that Windows PowerShell recognizes for module storage and C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules is one of them. Modules need to be stored in a subfolder with the same name as the module file."
+      explanation: "Incorrect. There are multiple folders that Windows PowerShell recognizes for module storage and C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules is one of them. Modules need to be stored in a subfolder with the same name as the module file."
     - content: "C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules\\OrgFunctions"
       isCorrect: true
-      explanation: "Corect. There are multiple folders that Windows PowerShell recognizes for module storage and C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules is one of them. Modules need to be stored in a subfolder with the same name as the module file."
-    - content: "C:\\Program Files\\WindowsPowerShell\\OrgFunctions \\"
-      isCorrect: false
-      explanation: "Incorect. There are multiple folders that Windows PowerShell recognizes for module storage and C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules is one of them. Modules need to be stored in a subfolder with the same name as the module file."
+      explanation: "Correct. There are multiple folders that Windows PowerShell recognizes for module storage and C:\\Windows\\System32\\WindowsPowerShell\\1.0\\Modules is one of them. Modules need to be stored in a subfolder with the same name as the module file."
   - content: "Which command will modify a script scope variable from a function?"
     choices:
     - content: "$script:var = \"Modified from function\""
       isCorrect: true
-      explanation: "Correct. To modify a script scope variable from a function use $script:var = \"Modified from function\"."
+      explanation: "Correct. To modify a script scope variable from a function, use $script:var = \"Modified from function\"."
     - content: "$script-var = \"Modified from function\""
       isCorrect: false
-      explanation: "Incorrect. To modify a script scope variable from a function use $script:var = \"Modified from function\"."
+      explanation: "Incorrect. To modify a script scope variable from a function, use $script:var = \"Modified from function\"."
     - content: "$script.var = \"Modified from function\""
       isCorrect: false
-      explanation: "Incorrect. To modify a script scope variable from a function use $script:var = \"Modified from function\"."
-    - content: "$script,var = \"Modified from function\""
-      isCorrect: false
-      explanation: "Incorrect. To modify a script scope variable from a function use $script:var = \"Modified from function\"."
+      explanation: "Incorrect. To modify a script scope variable from a function, use $script:var = \"Modified from function\"."
