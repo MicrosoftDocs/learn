@@ -22,4 +22,4 @@ Within Razor components, you can bind HTML elements to data in C# fields, proper
 
 Data is pushed from HTML to .NET when a component is rendered. Components render themselves after event-handler code executes. That's why property updates are reflected in the UI immediately after an event handler is triggered.
 
-Use `@bind` markup to bind a C# variable to an HTML object. You define the C# variable by name as a string in the HTML. You'll see an example of data binding in the following exercise.
+Use `@bind` markup to bind a C# variable to an HTML input. You'll see an example of data binding in the following exercise.
