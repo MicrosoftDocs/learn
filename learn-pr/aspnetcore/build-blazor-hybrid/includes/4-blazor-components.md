@@ -20,7 +20,7 @@ In the running app, navigate to the counter page by clicking the **Counter** tab
 
 Select the **Click me** button to increment the count without a page refresh. Incrementing a counter in a webpage normally requires writing JavaScript, but with Blazor you can use C#.
 
-You can find the implementation of the Counter component at `Pages/Counter.razor`.
+You can find the implementation of the `Counter` component at _Pages/Counter.razor_.
 
 ```razor
 @page "/counter"
