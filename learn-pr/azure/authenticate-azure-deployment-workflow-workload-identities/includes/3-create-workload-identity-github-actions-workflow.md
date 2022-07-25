@@ -80,7 +80,7 @@ When you use the Azure CLI, you create define a federated credential by creating
 {
   "name": "MyFederatedCredential",
   "issuer": "https://token.actions.githubusercontent.com",
-  "subject": "repo:MyGitHubOrganization/MyGitHubRepository:ref:refs/heads/main",
+  "subject": "repo:my-github-user/my-repo:ref:refs/heads/main",
   "audiences": [
     "api://AzureADTokenExchange"
   ]
@@ -91,8 +91,8 @@ In the preceding JSON, the `subject` property specifies that the federated crede
 
 | Field | Value |
 | - | - |
-| GitHub organization name | `MyGitHubOrganization` |
-| GitHub repository name | `MyGitHubRepository` |
+| GitHub organization name | `my-github-user` |
+| GitHub repository name | `my-repo` |
 | Branch name | `main` |
 
 After you've created a policy in JSON and saved it to a file named *policy.json*, you can use the Azure CLI to create the federated credential:
@@ -117,8 +117,8 @@ The preceding string specifies that the federated credential should only be vali
 
 | Field | Value |
 | - | - |
-| GitHub organization name | `MyGitHubOrganization` |
-| GitHub repository name | `MyGitHubRepository` |
+| GitHub organization name | `my-github-user` |
+| GitHub repository name | `my-repo` |
 | Branch name | `main` |
 
 After you've created a policy string, you can use Azure PowerShell to create the federated credential:
