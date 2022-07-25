@@ -11,22 +11,25 @@ The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can us
 
 In this exercise, you'll use Cloud Shell to develop your function.
 
-1. The latest version of Azure Functions require your Node.js version to be at least version ~14. Because the default version in Azure Cloud Shell is older, you first need to upgrade the Node.js version in your sandbox. Install the Node Version Manager (NVM) tool by executing the following request in your Cloud Shell.
+1. Azure Cloud Shell includes version 4.x of Azure Functions Core Tools. This version requires your Node.js version to be at least version ~14. Because the default version in Azure Cloud Shell is older, you first need to upgrade the Node.js version in your sandbox. Install the Node Version Manager (NVM) tool by executing the following request in the Cloud Shell on the right.
 
     ```bash
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     ```
 
+    You'll need to reinstall NVM every time you get a new Cloud Shell sandbox.
+
 1. Select the restart button at the top left of the Cloud Shell window to restart the shell and make NVM available.
 
-1. Use NVM to install version 14 of Node.js.
+1. Use NVM to install version 14 of Node.js in Cloud Shell.
 
     ```bash
     nvm install 14.20.0
-    nvm use 14.20.0
     ```
 
-1. In the Cloud Shell on the right, create a new directory called `loan-wizard` and go to that directory.
+    Should you need to restart Cloud Shell, you can switch back to the later version of Node.js by using the command: `nvm use 14.20.0`.
+
+1. Create a new directory called `loan-wizard` and go to that directory.
 
     ```bash
     mkdir ~/loan-wizard
@@ -109,9 +112,9 @@ The default function implementation that Core Tools created for us in **index.js
 
 ## Run the function in Cloud Shell
 
-To run our new function locally and try it out, we'll use `func start` to start the Functions runtime (func.exe) in a background process so we can use the command line while it's running. 
+To run our new function locally and try it out, we'll use `func start` to start the Functions runtime (func.exe) in a background process so we can use the command line while it's running. Then, we'll use a command-line tool, `curl`, to interact with the function. 
 
-We'll use a command-line tool, `curl`, to interact with the function. If you're using Core Tools from your own computer, you can just use `curl` from a second terminal window or a web browser, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we're limited to a single terminal, so this technique is necessary for this tutorial.
+If you're using Core Tools from your own computer, you can just use `curl` from a second terminal window or a web browser, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we're limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Run the following command to start the Functions host silently in the background.
 
@@ -121,7 +124,7 @@ We'll use a command-line tool, `curl`, to interact with the function. If you're 
 
     As with `func new`, Cloud Shell should still be in the `loan-wizard` directory.
 
-    You can ignore the output of this command. The Functions host is now writing its output to the file `~/output.txt`, and we can continue to use the command line while it's running. 
+    You can ignore the output of this command. The Functions host is now writing its output to the file `~/output.txt`, and we can continue to use the command line while it's running.
 
     Use the `ps` command to verify that the `func` process is running.
 
