@@ -14,37 +14,36 @@ Create a GitHub Action for deployment of the coupon service with the following s
 
     ```yaml
     name: eShop deploy
-
+    
     on:
       push:
         paths:
         - 'deploy/k8s/helm-simple/coupon/*'
         branches: [ main ]
-
+    
     jobs:
       deploy-to-aks:
         runs-on: ubuntu-latest
         steps:
-        - name: Azure Kubernetes set context
-          uses: Azure/aks-set-context@v1
+        - name: Azure Login
+          uses: azure/login@v1.4.5
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
+            
+        - name: Azure Kubernetes set context
+          uses: Azure/aks-set-context@v2
+          with:
             resource-group: 'eshop-learn-rg'
             cluster-name: 'eshop-learn-aks'
-
+    
         - name: Get code from the repository
-          uses: actions/checkout@v1
+          uses: actions/checkout@v3
           with:
             ref: main
-
+    
         - name: Helm tool installer
           uses: Azure/setup-helm@v1
-
-        - name: Azure Login
-          uses: Azure/login@v1.1
-          with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
+          
         - name: Deploy
           run: >
             helm upgrade 
@@ -54,16 +53,17 @@ Create a GitHub Action for deployment of the coupon service with the following s
             --set imagePullPolicy=Always 
             --set host=${{ secrets.IP_ADDRESS }} 
             --set protocol=http './deploy/k8s/helm-simple/coupon'
+    
     ```
 
     The preceding YAML defines a GitHub Action that:
 
     - Is triggered when a commit is pushed to the coupon service's Helm chart in the `main` branch.
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` runner and has five steps:
+        1. `Azure Login` logs in to Azure using the service principal credentials.
         1. `Azure Kubernetes set context` sets the AKS credentials in the runner's *:::no-loc text=".kube/config":::* file.
         1. `Get code from the repository` checks out the code from the repository.
         1. `Helm tool installer` installs [Helm](https://helm.sh/), an open-source package manager for Kubernetes.
-        1. `Azure Login` logs in to Azure using the service principal credentials.
         1. `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
 1. Replace the default workflow file name of *:::no-loc text="main.yml":::* with *:::no-loc text="deploy.yml":::*.
@@ -101,7 +101,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
     :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Screenshot that shows All workflows selected and a list of three workflows." border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
 
-1. Back in the command shell, run the following command to monitor the coupon service pods in your AKS cluster:
+1. Back in the terminal, run the following command to monitor the coupon service pods in your AKS cluster:
 
     ```bash
     kubectl get pods --selector service=coupon --watch
@@ -141,13 +141,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
 Complete the following steps to verify your change is deployed:
 
-1. Run the following command in the command shell:
-
-    ```bash
-    cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
-    ```
-
-1. Select the **:::no-loc text="Web SPA application":::** URL to launch the app.
+1. From *deployment-urls.txt*, select the **:::no-loc text="Web SPA application":::** URL to launch the app.
 1. Log in from the **:::no-loc text="LOGIN":::** page.
 1. Add your favorite products to the shopping bag by selecting the images.
 1. Select the shopping bag icon in the upper right, and select **:::no-loc text="CHECKOUT":::**.
