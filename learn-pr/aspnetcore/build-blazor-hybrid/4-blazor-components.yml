@@ -29,7 +29,7 @@ quiz:
     - content: "The WebAssembly runtime deployed with your app"
       isCorrect: false
       explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
-  - content: "How is Blazor UI defined?"
+  - content: "How is Blazor UI typically defined?"
     choices:
     - content: "As Razor components with a mix of HTML and C#"
       isCorrect: true
