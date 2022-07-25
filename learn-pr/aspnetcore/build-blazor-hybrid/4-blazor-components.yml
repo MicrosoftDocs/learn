@@ -20,7 +20,7 @@ quiz:
     - content: "The runtime provided by the browser"
       isCorrect: false
       explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
-    - content: "The .NET runtime deployed with your app"
+    - content: "The .NET runtime deployed natively with your app"
       isCorrect: true
       explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
     - content: "The JavaScript runtime deployed with your app"
