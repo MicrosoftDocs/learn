@@ -4,18 +4,17 @@ The three primary options to consider are Azure App Service, Azure Kubernetes Se
 
 ## Azure App Service
 
-Azure App Service is an Azure's Platform-as-a-Service (PaaS) offering that provides a platform for developers to build software applications on top of. Azure App Service provides cloud-based services for building, deploying and managing web, mobile and API apps for any device on Azure's platform.
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments.
 
-Azure App Service includes components for mobile apps, web apps and API apps. In short, that means that you can use Azure App Service to host web applications, REST APIs, and mobile back ends. In this course, we'll focus specifically on Azure App Service for Mobile Apps.
+App Service not only adds the benefits of Microsoft Azure to your application, such as security, load balancing, autoscaling, and automated management. You can also take advantage of its DevOps capabilities, such as continuous deployment from Azure DevOps, GitHub, Docker Hub, and other sources, package management, staging environments, custom domain, and TLS/SSL certificates.
 
-Azure App Service includes the following services:
+Azure App Service is a fully managed platform as a service (PaaS) offering for developers. Here are some key features of App Service:
 
- -  **Web Apps**: The Web App feature of App Service allows you to host websites and web apps on Azure's platform. Web Apps includes support for various languages and frameworks.
- -  **Mobile Apps**: The Mobile App feature of App Service allows you to build and deploy a mobile app backend on Azure's platform, with support for push notifications, user authentication, and offline data storage. This feature supports various platforms, including iOS, Android, Xamarin and more. Customized SDKs for each platform allow you to easily connect your client application with your mobile backend hosted on Azure. Learn more about Mobile Apps here.
- -  **API Apps**: The API App feature of App Service allows you to build and host APIs written in multiple languages on Azure's platform, with support for API authentication and more.
-
-:::image type="content" source="../media/app-service-overview-019843b5.png" alt-text="Diagram showing Azure App Service components.":::
-
+ -  **Multiple languages and frameworks** \- App Service has first-class support for ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP, or Python. You can also run PowerShell and other scripts or executables as background services.
+ -  **Managed production environment** \- App Service automatically patches and maintains the OS and language frameworks for you.
+ -  **Containerization and Docker** \- Dockerize your app and host a custom Windows or Linux container in App Service. Run multi-container apps with Docker Compose. Migrate your Docker skills directly to App Service.
+ -  **Global scale with high availability** \- Scale up or out manually or automatically. Host your apps anywhere in Microsoft's global datacenter infrastructure, and the App Service SLA provides high availability.
+ -  **Visual Studio and Visual Studio Code integration** \- Dedicated tools in Visual Studio and Visual Studio Code streamline the work of creating, deploying, and debugging.
 
 ## Azure Kubernetes Service
 
@@ -132,7 +131,7 @@ Below are suggestions for reviewing which are the most appropriate service to be
      -  Using Azure Kubernetes Service, you can enable automatic upgrades based on the channel of your choice (patch, stable, rapid, node-image). The underlying infrastructure consists of virtual machines that you provide as part of agent pools, however you don't manage them directly.
      -  With Azure Spring Apps, all tasks related to upgrading and managing the underlying infrastructure are taken care of by the platform. While Azure Spring Apps is built on top of an Azure Kubernetes Service cluster, that cluster is fully managed.
  -  Both Azure Kubernetes Service and Azure Spring Apps offer a convenient approach to implementing the microservices architecture. Additionally, they provide support for Spring Boot applications.
-     -  If you choose Azure App Service, you'll need to create a new web app instance for each microservice. Both Azure Kubernetes Service and Azure Cloud Spring require only a single instance. Additionally, Azure Kubernetes Service facilitates controlling traffic flow between microservices by using network policies.
+     -  If you choose Azure App Service, you'll need to create a new web app instance for each microservice. Both Azure Kubernetes Service and Azure Spring Apps require only a single instance. Additionally, Azure Kubernetes Service facilitates controlling traffic flow between microservices by using network policies.
  -  Azure Spring Apps Service offers an easy migration path for existing spring boot applications, which is an advantage for your existing application.
  -  Azure Spring Apps Service eliminates any administrative overhead required to run a Kubernetes cluster, which simplifies the operational model.
  -  Azure Kubernetes Service requires an extra migration step that involves containerizing all components.
@@ -144,6 +143,6 @@ Below are suggestions for reviewing which are the most appropriate service to be
 
 Given all the constraints and features listed above, the most beneficial services for supporting the Spring Petclinic application are Azure Spring Apps or Azure Kubernetes Service.
 
-For this exercise, you'll be using Azure Spring Apps as the service to be deployed for the Spring Petclinic application.
+For this exercise, you'll be using Azure Spring Apps as the service to be deployed for the Spring Petclinic application. For the activities in this learning path, you'll be using a subset of resources from the PetClinic sample application located on the [Deploying and running Java applications in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/tree/master/StarterProject) repository.
 
 For full implementation details, see our fork of [PetClinic](https://github.com/Azure-Samples/spring-petclinic-microservices). The samples reference the source code as needed.
