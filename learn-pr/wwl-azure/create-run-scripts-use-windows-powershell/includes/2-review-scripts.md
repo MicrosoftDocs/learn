@@ -2,7 +2,8 @@ You might first start using Windows PowerShell to accomplish tasks that you can'
 
 You can use scripts to standardize repetitive tasks. Standardizing a task reduces the risk of errors. If a script has been tested, you can run it multiple times without errors. However, when you manually enter a command multiple times, there's a risk of error each time. Also, if the task must be performed on a scheduled basis, you can schedule the script to run as required.
 
-> **Note:** Module 11, “Using background jobs and scheduled jobs” covers the configuration of Windows PowerShell scripts to make them run as scheduled tasks or scheduled jobs.
+> [!NOTE] 
+> Module 11, “Using background jobs and scheduled jobs” covers the configuration of Windows PowerShell scripts to make them run as scheduled tasks or scheduled jobs.
 
 You can also use scripts to accomplish more complex tasks than are practical by using a single command. While it's technically possible to make a single Windows PowerShell command that's long and complex, it's impractical to manage. Placing complex tasks in a script makes editing simpler and easier to understand.
 
