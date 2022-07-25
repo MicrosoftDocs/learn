@@ -24,7 +24,7 @@ In this exercise, you'll use Cloud Shell to develop your function.
     func init
     ```
 
-1. When prompted to select a worker runtime, enter **2** (for **node**).
+1. When prompted to select a worker runtime, enter **3** (for **node**).
 
 1. When prompted to select a language, enter **1** (for **JavaScript**).
 
@@ -44,7 +44,7 @@ Let's create our function!
 
     Remember, you're running `func new` in the `loan-wizard` project folder you created, which is important.
 
-1. When prompted to select a template, enter **8** (for **HTTP trigger**).
+1. When prompted to select a template, enter **10** (for **HTTP trigger**).
 
 1. When prompted to provide a function name for HTTP trigger, enter **simple-interest**.
 

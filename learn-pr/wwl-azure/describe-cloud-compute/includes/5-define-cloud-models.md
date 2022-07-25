@@ -14,62 +14,12 @@ A hybrid cloud is a computing environment that uses both public and private clou
 
 The following table highlights a few key comparative aspects between the cloud models.
 
-:::row:::
-  :::column:::
-    **Public cloud**
-  :::column-end:::
-  :::column:::
-    **Private cloud**
-  :::column-end:::
-  :::column:::
-    **Hybrid cloud**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    No capital expenditures to scale up
-  :::column-end:::
-  :::column:::
-    Organizations have complete control over resources and security
-  :::column-end:::
-  :::column:::
-    Provides the most flexibility
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Applications can be quickly provisioned and deprovisioned
-  :::column-end:::
-  :::column:::
-    Data is not collocated with other organizations’ data
-  :::column-end:::
-  :::column:::
-    Organizations determine where to run their applications
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Organizations pay only for what they use
-  :::column-end:::
-  :::column:::
-    Hardware must be purchased for startup and maintenance
-  :::column-end:::
-  :::column:::
-    Organizations control security, compliance, or legal requirements
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Organizations don’t have complete control over resources and security
-  :::column-end:::
-  :::column:::
-    Organizations are responsible for hardware maintenance and updates
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-
+| **Public cloud**                                                      | **Private cloud**                                                  | **Hybrid cloud**                                                  |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------- |
+| No capital expenditures to scale up                                   | Organizations have complete control over resources and security    | Provides the most flexibility                                     |
+| Applications can be quickly provisioned and deprovisioned             | Data is not collocated with other organizations’ data              | Organizations determine where to run their applications           |
+| Organizations pay only for what they use                              | Hardware must be purchased for startup and maintenance             | Organizations control security, compliance, or legal requirements |
+| Organizations don’t have complete control over resources and security | Organizations are responsible for hardware maintenance and updates |                                                                   |
 
 ## Multi-cloud
 
@@ -77,7 +27,7 @@ A fourth, and increasingly likely scenario is a multi-cloud scenario. In a multi
 
 ## Azure Arc
 
-Azure Arc is a set of technologies that helps manage your cloud environment. Azure Arc can help manage your cloud public cloud solely on Azure, a private cloud in your datacenter, a hybrid configuration, or even a multi-cloud environment running on multiple cloud providers at once.
+Azure Arc is a set of technologies that helps manage your cloud environment. Azure Arc can help manage your cloud environment, whether it's a public cloud solely on Azure, a private cloud in your datacenter, a hybrid configuration, or even a multi-cloud environment running on multiple cloud providers at once.
 
 ## Azure VMware Solution
 

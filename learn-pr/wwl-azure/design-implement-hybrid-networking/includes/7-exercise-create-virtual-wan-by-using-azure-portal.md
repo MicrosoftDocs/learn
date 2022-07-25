@@ -43,6 +43,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
      -  **Region:** West US
      -  **Name:** ContosoVirtualWANHub-WestUS
      -  **Hub private address space:** 10.60.0.0/24
+     -  **Virtual hub capacity:** 2 Routing infrastructure units
 5.  Select **Next: Site-to-site**.
 6.  On the **Site-to-site** tab, complete the following fields:
     

@@ -12,7 +12,7 @@ You'll review the:
 
 ## ASP.NET Core configuration
 
-Configuration in an ASP.NET Core project is supported by one or more .NET Core *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
+Configuration in an ASP.NET Core project is supported by one or more .NET *configuration providers*. A [configuration provider](/aspnet/core/fundamentals/configuration/#configuration-providers) is an abstraction over a specific configuration source, such as a JSON file. The configuration source's values are represented as a collection of key-value pairs.
 
 An ASP.NET Core app can register multiple configuration providers to read settings from various sources. With the default application host, several configuration providers are automatically registered. The following configuration sources are available in the order listed:
 
@@ -41,7 +41,7 @@ The :::no-loc text="ConfigMap":::'s key-value pairs are:
 
 * Stored in the `data` field of the YAML as plain text, as highlighted in the preceding snippet.
 * Presented to the containerized app as environment variables.
-* The primary mechanism to persist .NET Core configuration values in microservices apps.
+* The primary mechanism to persist .NET configuration values in microservices apps.
 
 Environment variables are a cross-platform mechanism for providing runtime configuration to apps hosted in the Kubernetes cluster.
 
@@ -51,13 +51,13 @@ A centralized configuration service is especially useful in microservices apps a
 
 App Configuration is a fully managed service that encrypts key values both at rest and in transit. Configuration values stored with it can be updated in real time without the need to redeploy or restart an app.
 
-In an ASP.NET Core app, Azure App Configuration is registered as a configuration provider. Aside from the provider registration, the app doesn't know about the App Configuration store. Configuration values can be retrieved from it via .NET Core's configuration abstraction&mdash;the `IConfiguration` interface.
+In an ASP.NET Core app, Azure App Configuration is registered as a configuration provider. Aside from the provider registration, the app doesn't know about the App Configuration store. Configuration values can be retrieved from it via .NET's configuration abstraction&mdash;the `IConfiguration` interface.
 
 ## Feature Management library
 
 The *Feature Management* library provides standardized .NET APIs for managing feature flags within apps. It's distributed via NuGet in the form of two different packages named `Microsoft.FeatureManagement` and `Microsoft.FeatureManagement.AspNetCore`. The latter package provides Tag Helpers for use in an ASP.NET Core project's Razor files. The former package is sufficient when the Tag Helpers aren't needed or when not using with an ASP.NET Core project.
 
-The library is built atop `IConfiguration`. For this reason, it's compatible with any .NET Core configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
+The library is built atop `IConfiguration`. For this reason, it's compatible with any .NET configuration provider, including the provider for Azure App Configuration. Because the library is decoupled from Azure App Configuration, integration of the two is made possible via the configuration provider. Combining this library with Azure App Configuration enables you to dynamically toggle features without implementing supporting infrastructure.
 
 ### Integration with Azure App Configuration
 
@@ -118,7 +118,7 @@ By default, the client can't access .NET's `IConfiguration` interface. To solve 
 * Enables the client to retrieve a feature's status via an HTTP request.
 * Communicates with the .NET Feature Management library to access feature flags via `IConfiguration`.
 
-You're provided with a custom middleware at *:::no-loc text="src/Web/WebSPA/Infrastructure/Middlewares/FeatureManagementMiddleware.cs":::*&mdash;a key component of the SPA's feature flag system:
+You're provided with a custom middleware at *modules/microservices-configuration-aspnet-core/src/Web/WebSPA/Infrastructure/Middlewares/FeatureManagementMiddleware.cs*&mdash;a key component of the SPA's feature flag system:
 
 :::code language="csharp" source="../code/src/web/webspa/infrastructure/middlewares/featuremanagementmiddleware.cs" id="snippet_Invoke" highlight="8":::
 

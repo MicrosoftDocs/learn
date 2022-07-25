@@ -30,7 +30,7 @@ On the diagram, **Cloud optimized** is a strategy for migrating to the cloud. Cl
 
 **Review the compute hosting options**
 
-The compute solution has three hosting options: Infrastructure as a Service, Platform as a Service, and Function as a Service? There’s also Software-as-a-Service which isn’t a compute solution. The [hosting option](/azure/security/fundamentals/shared-responsibility) determines the developer and cloud provider responsibilities. This hosting decision will influence your design. 
+The compute solution has three hosting options: Infrastructure as a Service, Platform as a Service, and Function as a Service. There’s also Software-as-a-Service which isn’t a compute solution. The [hosting option](/azure/security/fundamentals/shared-responsibility) determines the developer and cloud provider responsibilities. This hosting decision will influence your design. 
 
 :::image type="content" source="../media/host-infrastructures.png" alt-text="Diagram of responsibilities for infrastructure and platform services.":::
 

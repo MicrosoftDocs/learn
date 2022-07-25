@@ -4,8 +4,8 @@ To complete your testing, you need to validate the last steps of the process of 
 
 Now, it's time to configure the Azure Pipeline you used to provision Azure resources to deploy the sample ASP.NET web app. To start, you'll add another stage named **DeployASPNETApp**, which will contain tasks to deploy the ASP.NET into the Azure App Service web app deployed during the **DeployAzureResources** stage.
 
-1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry, on the **Pipelines** pane, select the pipeline you're using in this lab, and then select **Edit**.
-1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
+1. Within the browser window displaying the Azure DevOps portal, in the vertical menu bar along the left edge of the project page, select the **Pipelines** entry. On the **Pipelines** pane, select the pipeline you're using in this lab, then select **Edit**.
+1. On the **azure-pipelines.yml** editor pane, place the mouse cursor at the very end of the file and select the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, add the following code to create the **DeployASPNETApp** stage and job elements:
 
    ```yaml
@@ -17,9 +17,9 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
        steps:
    ```
 
-1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
+1. On the **azure-pipelines.yml** editor pane, place the mouse cursor at the very end of the file and select the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **Download build artifacts**, and in the list of results, select the **Download build artifacts** task entry.
-1. On the **Download build artifacts** pane, in the **Artifact name**, enter **drop**, and then select **Add**.
+1. On the **Download build artifacts** pane, in the **Artifact name**, enter **drop**, then select **Add**.
 
    :::image type="content" source="../media/8-download-build-artifacts-task.png" alt-text="The azure-pipelines.yml editor pane including the download build artifacts task with its parameters set.":::
 
@@ -27,19 +27,19 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 1. On the **azure-pipelines.yml** editor pane, replace the last line `downloadPath: '$(System.ArtifactsDirectory)'` of the newly added task with `downloadPath: '$(System.DefaultWorkingDirectory)'`
 
    > [!NOTE]
-   > This is necessary to match the artifact location referenced by the next task you add to the pipeline.
+   > This is necessary to match the artifact location referenced by the next task you'll add to the pipeline.
 
 1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and in the list of results, select the **Azure App Service deploy** task entry.
-1. On the **Azure App Service deploy** pane, ensure that the **labAzureSubscription** appears in the **Azure subscription** drop-down list, in the **App Service name** drop-down list, enter **$(WEBAPPNAME)**, and select **Add**.
+1. On the **Azure App Service deploy** pane, ensure that the **labAzureSubscription** appears in the **Azure subscription** drop-down list. In the **App Service name** drop-down list, enter **$(WEBAPPNAME)**, and select **Add**.
 
    > [!NOTE]
    > This is one of the variables designating the name of the Azure App Service web app that's included in the **AzureResourcesVariableGroup** you created in the previous exercise of this module.
 
 1. On the **azure-pipelines.yml** editor pane, with the newly added task selected, select the **Tab** key twice to indent it.
-1. On the **azure-pipelines.yml** editor pane, place the mouse pointer at the very end of the file and select the **Enter** key to start a new line.
+1. On the **azure-pipelines.yml** editor pane, place the mouse cursor at the very end of the file and select the **Enter** key to start a new line.
 1. On the **azure-pipelines.yml** editor pane, in the **Tasks** section, in the **Search tasks** text box, enter **App Service**, and, in the list of results, select the **Azure App Service Settings** task entry.
-1. On the **Azure App Service Settings** pane, in the **Azure subscription** drop-down list, select the **labAzureSubscription** entry. In the **App Service name** drop-down list, enter **$(WEBAPPNAME)**. In the **Resource group** drop-down list, enter **$(RESOURCEGROUPNAME)**. In the **Connection Strings** text box, enter the following text, and then select **Add**.
+1. On the **Azure App Service Settings** pane, in the **Azure subscription** drop-down list, select the **labAzureSubscription** entry. In the **App Service name** drop-down list, enter **$(WEBAPPNAME)**. In the **Resource group** drop-down list, enter **$(RESOURCEGROUPNAME)**. In the **Connection Strings** text box, enter the following text, then select **Add**.
 
    ```json
    [
@@ -173,7 +173,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
 With the new stage of the Azure Pipeline created, you can now invoke execution of its tasks. You can exclude the second stage, because the required Azure resources have already been provisioned in the previous exercise of this module.
 
 1. On the **azure-pipelines.yml** editor pane, select **Run**.
-1. On the **Run pipeline** pane, select **Stages to run**, on the **Stages to run** pane, clear the **DeployAzureResources** check box, and select **Use select stages**.
+1. On the **Run pipeline** pane, select **Stages to run**, on the **Stages to run** pane, clear the **DeployAzureResources** check box, and select **Use selected stages**.
 
    :::image type="content" source="../media/8-stages-to-run.png" alt-text="The Stages to run pane with the deployazureresources stage check box cleared.":::
 
@@ -216,7 +216,7 @@ To validate the DevOps CI/CD functionality, you'll re-enable continuous integrat
    > [!NOTE]
    > This will automatically trigger a new deployment.
 
-1. Within the browser window displaying the Azure DevOps portal, navigate back to the **Pipelines** pane, select the pipeline you're using in this lab, then select the entry representing the current pipeline run, and monitor its progress until successful completion.
+1. Within the browser window displaying the Azure DevOps portal, navigate back to the **Pipelines** pane, select the pipeline you're using in this lab, then select the entry representing the current pipeline run and monitor its progress until successful completion.
 
 ## Trigger continuous integration and continuous deployment
 
@@ -228,7 +228,6 @@ To conclude this exercise, you'll trigger integration and deployment by modifyin
 1. On the page displaying the content of **_Layout.cshtml**, select the **Edit this file** pencil-shaped icon.
 1. Change the content of line **27** from `<p>&copy; @DateTime.Now.Year - MS Learn Sample ASP.NET Application</p>` to `<p>&copy; @DateTime.Now.Year - MS Learn Sample Azure ASP.NET Application</p>` and select **Commit changes**.
 1. Switch back to the web browser tab displaying the Azure DevOps portal. In the vertical menu bar along the left edge of the project page, select the **Pipelines** entry.
-
 1. Within the browser window displaying the Azure DevOps portal, on the **Pipelines** pane, select the pipeline you're using in this lab, then select the entry representing the current pipeline run, and monitor its progress until successful completion.
 1. Within the web browser window displaying the Azure DevOps portal, switch to the web browser tab displaying the sample ASP.NET web app page.
 1. Refresh the web browser page and verify that the footer of the page changed according to the change you made in the GitHub repository.
@@ -241,7 +240,7 @@ In this exercise, you used an Azure DevOps release pipeline to deploy artifacts 
 
 ## Clean up your environment
 
-You successfully completed all exercises in this module. To clean up your lab environment, you should delete the Azure DevOps project and the Azure resources you provisioned in the first two exercises.
+You've successfully completed all exercises in this module. To clean up your lab environment, you should delete the Azure DevOps project and the Azure resources you provisioned in the first two exercises.
 
 > [!NOTE]
 > Remember to remove any Azure resources that you no longer use. Removing unused resources avoids unexpected charges.
