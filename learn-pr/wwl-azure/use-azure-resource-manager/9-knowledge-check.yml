@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/13/2022
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -39,14 +39,14 @@ quiz:
     - content: "A storage account used to temporarily store images processed in a development environment."
       isCorrect: false
       explanation: "Incorrect. A temporary resource doesn't need to be protected from accidental deletion or modification."
-  - content: "Which of the following features doesn't apply to resource groups?"
+  - content: "Which of the following is true about resource groups?"
     choices:
     - content: "Resources can be in only one resource group."
       isCorrect: false
-      explanation: "Incorrect. Resources can be in only one resource group."
-    - content: "Role-based access control can be applied to a resource group"
+      explanation: "True. Resources can be in only one resource group."
+    - content: "Role-based access control cannot be applied to a resource group"
       isCorrect: false
-      explanation: "Incorrect. Role-based access control can be applied to a resource group."
+      explanation: "False. Role-based access control can be applied to a resource group."
     - content: "Resource groups can be nested."
       isCorrect: true
-      explanation: "Correct. Resource groups cannot be nested."
+      explanation: "False. Resource groups cannot be nested."
