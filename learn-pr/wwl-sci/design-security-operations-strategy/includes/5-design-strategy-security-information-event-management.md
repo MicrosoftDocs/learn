@@ -42,7 +42,7 @@ Follow these steps:
 2.  Analyze the investigation steps and response actions.
 3.  Gradually transition to automatic approval for all devices to reduce the time to detection and response.
 
-#### Link Microsoft data connectors and relevant third-party products to Microsoft Sentinel
+#### Link Microsoft Purview data connectors and relevant third-party products to Microsoft Sentinel
 
 In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect Microsoft 365 Defender, other Microsoft data connectors, and relevant third party products to [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
   
