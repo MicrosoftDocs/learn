@@ -23,7 +23,7 @@ prerequisites: |
   - An Azure Active Directory B2C (Azure AD B2C) tenant that you manage as a Global administrator.
   - Ability to write code in JavaScript/Node at beginner level.
   - Must have [Node.js](https://nodejs.org/en/) and [Visual Studio Code](https://code.visualstudio.com/) installed on your computer.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/authenticate-users-node-web-app-use-azure-active-directory-b2c.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
