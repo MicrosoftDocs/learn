@@ -18,7 +18,7 @@ You can begin exploring these services (when available):
 ```
 
 > [!TIP]
-> This output can be found in *modules/microservices-aspnet-core/deployment-urls.txt*.
+> This output can be found in *modules/microservices-data-aspnet-core/deployment-urls.txt*.
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 

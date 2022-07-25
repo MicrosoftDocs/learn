@@ -1,0 +1,97 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-authentication-methods.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 07/21/2022
+  author: MarkusVi
+  ms.author: markvi
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 10
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which activity log has information about the usage of apps?'
+    choices:
+    - content: Audit
+      isCorrect: false
+      explanation: The audit log has Information about changes applied to your tenant such as users and group management or updates applied to your tenant’s resources.
+    - content: Sign-ins
+      isCorrect: true
+      explanation: The sign-ins log has information about sign-ins and how your resources are used by your users, services and apps.
+    - content: Provisioning
+      isCorrect: false
+      explanation: The provisioning log has information about activities performed by the provisioning service. This includes the creation of a group in ServiceNow or a user imported from Workday.
+  - content: 'When should you access activity logs through the Azure portal?'
+    choices:
+    - content: If you need to create a long-term backup of your activity logs.
+      isCorrect: false
+      explanation: To create a long-term backup of your activity logs, you can, for example, use an Azure storage account.
+    - content: If you need to analyze data, create dashboard and alert on specific events. 
+      isCorrect: false
+      explanation: Route your activity logs to an Azure Log Analytics workspace if you need to analyze data, create dashboard and alert on specific events.
+    - content: If you need to review a small number of entries
+      isCorrect: true
+      explanation: Accessing activity logs through the Azure portal is helpful if you need to, for example, investigate a small set of sign-ins caused by a user or app over a short period.
+  - content: 'If you want to use your activity logs to create a rich report, you need to route your activity logs to?'
+    choices:
+    - content: A storage account
+      isCorrect: false
+      explanation: To create a long-term backup of your activity logs, you can, for example, use an Azure storage account.
+    - content: Event Hubs 
+      isCorrect: false
+      explanation: Routing logs to Azure Event Hubs allows you to integrate with third-party SIEM tools like Sumologic and Splunk.
+    - content: Azure Monitor
+      isCorrect: true
+      explanation: Route your activity logs to an Azure Log Analytics workspace if you need to analyze data, create dashboard and alert on specific events.
+  - content: "What is the input and output data format of each operator in a Kusto query?"
+    choices:
+    - content: "String"
+      isCorrect: false
+      explanation: "False. String is just one of many data types that can be included in the tabular data."
+    - content: "Tabular"
+      isCorrect: true
+      explanation: 'True. Each operator starts with a tabular input and returns a tabular output.'
+    - content: "JSON"
+      isCorrect: false
+      explanation: "False. JSON is just one of many data types that can be included in the tabular data."
+  - content: "Which operator will return in a Kusto query a specific number of arbitrary rows of data?"
+    choices:
+    - content: "`take`"
+      isCorrect: true
+      explanation: "True. The `take` operator returns up to the specified number of arbitrary data rows."
+    - content: "`between`"
+      isCorrect: false
+      explanation: "False. The `between` operator filters a record set for data that matches the values in an inclusive range."
+    - content: "`contain`"
+      isCorrect: false
+      explanation: "False. The `contain` operator filters a record set for data that contains a case-insensitive string."
+  - content: "How can you start creating a new workbook?"
+    choices:
+    - content: "With an empty workbook only."
+      isCorrect: false
+      explanation: "False. While using am empty workbook is a valid option, there are also others."
+    - content: "With an empty workbook, or an existing template."
+      isCorrect: true
+      explanation: "True. You can either start with an empty workbook, or use an existing template."
+    - content: "You must use an existing template."
+      isCorrect: false
+      explanation: "False. While using an existing template is a valid option, there are also others."
