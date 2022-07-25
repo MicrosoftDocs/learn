@@ -103,7 +103,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
     
     <h3>Todo</h3>
     
-    <ul>
+    <ul class="list-unstyled">
         @foreach (var todo in todos)
         {
             <li>@todo.Title</li>
