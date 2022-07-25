@@ -39,7 +39,7 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
 ## Blazor Hybrid with .NET MAUI project structure and startup
 
-The project contents include the following items for both Blazor components and .NET MAUI applications:
+The project is a normal .NET MAUI project with some additional Blazor related content:
 
 ### Blazor project files
 
