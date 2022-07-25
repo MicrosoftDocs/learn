@@ -13,7 +13,7 @@ In this exercise, you'll add the ability to save and load the todo list to the f
     <button @onclick="Save">Save</button>
     <button @onclick="Load">Load</button>
 
-    <ul>
+    <ul class="list-unstyled">
         @foreach (var todo in todos)
         {
             <li>
