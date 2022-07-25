@@ -93,7 +93,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 }
 ```
 
-## Add Form Elements to Create Todos
+## Add form elements to create todos
 
 1. The app requires UI elements for adding todo items to the list. Add a text input (`<input>`) and a button (`<button>`) below the unordered list (`<ul>...</ul>`):
 
