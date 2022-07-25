@@ -14,7 +14,8 @@ $user = Get-ADUser Administrator
 $service = Get-Service W32Time
 ```
 
-> **Note:** If a command returns multiple results, then the variable becomes an array containing multiple values. You'll learn about arrays later in this module.
+> [!NOTE]
+> If a command returns multiple results, then the variable becomes an array containing multiple values. You'll learn about arrays later in this module.
 
 You can display the value of a variable by entering the variable name and then pressing the Enter key. You can also display the value as part of a command by using **Write-Host**. For example:
 
@@ -23,7 +24,8 @@ $user
 Write-Host "The location of the log file is $logFile"
 ```
 
-> **Note:** When you display a variable by using **Write-Host** and you place the variable name in double quotes ("), that variable is evaluated and its value is displayed. If you use single quotes ('), that variable is not evaluated, resulting in its name being displayed instead. 
+> [!NOTE]
+> When you display a variable by using **Write-Host** and you place the variable name in double quotes ("), that variable is evaluated and its value is displayed. If you use single quotes ('), that variable is not evaluated, resulting in its name being displayed instead. 
 
 To remove all values from a variable, you can set the variable equal to `$null`. The `$null` variable is automatically defined by Windows PowerShell as nothing. For example:
 
@@ -32,7 +34,8 @@ $num1 = $null
 $str1 = $null
 ```
 
-> **Note:** To clear a variable, you can also use **Clear-Variable**.
+> [!NOTE]
+> To clear a variable, you can also use **Clear-Variable**.
 
 You can use mathematical operators with variables, as the following example depicts:
 

@@ -25,4 +25,5 @@ You can also review the variables in memory by using the **Get-Variable** cmdlet
 Get-Variable
 ```
 
-> **Note:** Windows PowerShell includes multiple cmdlets for creating, manipulating, and reviewing variables. However, these are seldom used because you can create and manipulate variables directly, without resorting to using cmdlets. Therefore, this course only briefly mentions cmdlets for manipulating variables.
+> [!NOTE]
+> Windows PowerShell includes multiple cmdlets for creating, manipulating, and reviewing variables. However, these are seldom used because you can create and manipulate variables directly, without resorting to using cmdlets. Therefore, this course only briefly mentions cmdlets for manipulating variables.

@@ -1,18 +1,33 @@
 Use the following questions to check what you’ve learned in this module.
 
+## Knowledge check
 
+## Multiple Choice
+Which character is used to identify variables?
 
----
-### Checkbox
+( ) %{{Incorrect. In Windows PowerShell, you identify variables by including a $ at the start of the name.}}
+( ) !{{Incorrect. In Windows PowerShell, you identify variables by including a $ at the start of the name.}}
+(x) ${{Correct. In Windows PowerShell, you identify variables by including a $ at the start of the name.}}
 
-1. Which of the following options are methods that you can use with DateTime variables? (Choose three.)
+## Multiple Choice
+Which command would you use to assign a numerical value of 20 to a variable?
 
-[x] AddDays(double value){{Correct. The AddDays(double value), AddMinutes(double value), and ToShortDateString() methods can be used with DateTime variables.}}
+(x) $num = 20{{Correct. To assign a value to a variable, you must use the equal (=) operator. When you use the value 20, it's automatically interpreted as a number. If you use "20" as the value, it's interpreted as a string.}}
+( ) $num = "20"{{Incorrect. To assign a value to a variable, you must use the equal (=) operator. When you use the value 20, it's automatically interpreted as a number. If you use "20" as the value, it's interpreted as a string.}}
+( ) $num -eq 20{{Incorrect. To assign a value to a variable, you must use the equal (=) operator. When you use the value 20, it's automatically interpreted as a number. If you use "20" as the value, it's interpreted as a string.}}
 
-[x] AddMinutes(double value){{Correct. The AddDays(double value), AddMinutes(double value), and ToShortDateString() methods can be used with DateTime variables.}}
+## Multiple Choice
+The variable $ip is a string with a value of "10.100.4.2". Which command would you use to divide $ip into four separate numbers?
 
-[ ] ToLower(){{Incorrect. The AddDays(double value), AddMinutes(double value), and ToShortDateString() methods can be used with DateTime variables.}}
+( ) $ip.Divide(4){{Incorrect. You use the Split method to divide a string into parts. To use the split method, you need to provide the character that acts as the separator. In this case, dot "." is the separator.}}
+( ) $ip.Split(4){{Incorrect. You use the Split method to divide a string into parts. To use the split method, you need to provide the character that acts as the separator. In this case, dot "." is the separator.}}
+(x) $ip.Split("."){{Correct. You use the Split method to divide a string into parts. To use the split method, you need to provide the character that acts as the separator. In this case, dot "." is the separator.}}
 
-[x] ToShortDateString(){{Correct. The AddDays(double value), AddMinutes(double value), and ToShortDateString() methods can be used to with DateTime variables.}}
+## Multiple Choice
 
-[ ] DayOfWeek{{Incorrect. The AddDays(double value), AddMinutes(double value), and ToShortDateString() methods can be used with DateTime variables.}}
+Which of the following options is a method that you can use with DateTime variables? 
+
+( ) ToLower(){{Incorrect. Of the given options, the ToShortDateString() method can be used with DateTime variables.}}
+(x) ToShortDateString(){{Correct. Of the given options, the ToShortDateString() method can be used with DateTime variables.}}
+( ) DayOfWeek{{Incorrect. Of the given options, the ToShortDateString() method can be used with DateTime variables.}}
+

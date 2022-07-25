@@ -1,4 +1,4 @@
-Many scripts that you create will need to reference the current date or a previous point in time. For example, to ensure uniqueness, you might want to create a log file name based on the current date. Additionally, you might be searching for users in AD DS that haven't signed in for an extended period of time. You can use DateTime variables to accomplish these tasks.
+Many of the scripts that you create will need to reference the current date or a previous point in time. For example, to ensure uniqueness, you might want to create a log file name based on the current date. Additionally, you might be searching for users in AD DS that haven't signed in for an extended period of time. You can use DateTime variables to accomplish these tasks.
 
 ## DateTime properties
 
@@ -35,4 +35,5 @@ A DateTime variable also has many methods available that allow you to manipulate
 | **ToLongTimeString()**       | Returns the time in long format as a string.  |
 | **ToShortTimeString()**      | Returns the time in short format as a string. |
 
-> **Note:** If you need to subtract time from a DateTime variable, use one of the methods for adding time with a negative number as its parameter. An example is `$date.AddDays(-60)`.
+> [!NOTE]
+> If you need to subtract time from a DateTime variable, use one of the methods for adding time with a negative number as its parameter. An example is `$date.AddDays(-60)`.
