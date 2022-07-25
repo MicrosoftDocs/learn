@@ -31,4 +31,4 @@ Blazor Hybrid support is built into the .NET MAUI framework. .NET MAUI includes 
 
 You can build Blazor Hybrid apps by using the latest version of Visual Studio 2022 or Visual Studio 2022 for Mac. In this module, we'll be using Visual Studio 2022 to build our Blazor Hybrid application.
 
-Whatever your development environment, you need to install the **.NET MAUI** workload and the "ASP.NET and web development" workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor Hybrid apps. You'll build your first Blazor Hybrid app with Visual Studio 2022 in the next exercise.
+Whatever your development environment, you need to install the **.NET MAUI** workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor Hybrid apps. You'll build your first Blazor Hybrid app with Visual Studio 2022 in the next exercise.
