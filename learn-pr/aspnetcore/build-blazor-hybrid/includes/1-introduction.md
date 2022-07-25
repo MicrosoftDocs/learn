@@ -5,7 +5,7 @@ Blazor Hybrid supports using Razor components with:
 - Windows Forms (WinForms)
 - Windows Presentation Foundation (WPF)
 
-Imagine you're building a client-side web app and already have a team of .NET developers. Also, imagine you want to deploy your app as a native multi-platform app across mobile and desktop platform including iOS, Android, macOS, and Windows. 
+Imagine you're building a client-side web app and already have a team of .NET web developers. Also, imagine you want to deploy your app as a native multi-platform app across mobile and desktop platform including iOS, Android, macOS, and Windows. 
 
 With Blazor, developers can build front-end and back-end logic for web apps with common languages, frameworks, and tools. With .NET MAUI you can build multi-platform apps from a single project, access platform-specific source code and resources for mobile and desktop platforms. Combining these two technologies together with Blazor Hybrid, developers can build native client and web apps that leverage shared UI components and logic. Blazor Hybrid can be used for the entire native application or parts of the native application.
 
