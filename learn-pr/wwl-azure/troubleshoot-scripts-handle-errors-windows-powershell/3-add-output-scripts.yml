@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.add-output-to-scripts
+uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.add-output-scripts
 title: Add output to Windows PowerShell scripts
 metadata:
   title: Add output to Windows PowerShell scripts
   description: "Add output to Windows PowerShell scripts"
-  ms.date: 07/13/2022
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-add-output-to-scripts.md)]
+  [!include[](includes/3-add-output-scripts.md)]

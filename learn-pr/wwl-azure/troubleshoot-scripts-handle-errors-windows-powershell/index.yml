@@ -2,8 +2,8 @@
 uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell
 metadata:
   title: Troubleshoot scripts and handle errors in Windows PowerShell
-  description: "This modules covers troubleshooting PowerShell scripts and understanding error messages."
-  ms.date: 07/13/2022
+  description: "This module covers troubleshooting PowerShell scripts and understanding error messages."
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -46,7 +46,7 @@ subjects:
 units:
 - learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.introduction
 - learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.interpret-error-messages-generated-for-commands
-- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.add-output-to-scripts
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.add-output-scripts
 - learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.use-breakpoints-scripts
 - learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.interpret-error-actions-for-commands
 - learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.knowledge-check
