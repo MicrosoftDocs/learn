@@ -10,7 +10,7 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
 
 ## Add and configure the Clock Tile
 
-1. In the tile gallery, drag the clock onto the workspace. Place it on the top right of the available space.
+1. In the Tile Gallery, drag the clock onto the workspace. Place it on the top along the right side of the available space.
 
 1. Select the **Preview** button at the top of the screen, then select **Edit** in the clock tile.
 
@@ -20,49 +20,51 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
 
 1. Select **Done**, then select **Save** at the top of the screen. Select the **Edit** button at the top of the screen to return to edit mode.
 
-1. Repeat the preceding five steps, except select **Eastern Time (US & Canada)**. You should now have two clocks, one showing the time on the West Coast, the other on the East Coast.
+1. Repeat these five steps to place a new clock right below the first one. This time, select **Eastern Time (US & Canada)**. You should now have two clocks, each displaying a different time zone.
 
 ## Resize a tile
 
-1. Under **Tile Gallery**, drag an **All resources** tile and drop it onto the top left-hand side of the new dashboard workspace.
+1. In edit mode, find the **All resources** tile in the Tile Gallery. Drag and drop it in the top left-hand corner of the new dashboard workspace.
 
 1. Hover over the new **All resources** tile and select the ellipsis icon (**...**); then select the **6x6** size.
 
-1. Select the gray corner on the bottom right-hand side of the tile, and resize the tile to 3.5 squares vertically by six horizontally. When you finish resizing, the tile adjusts to 4x6.
+1. Select the gray corner on the bottom right-hand side of the tile, and drag it to resize the tile to 3.5 squares vertically by six horizontally. When you finish resizing, the tile adjusts to the closest available size, 4 x 6.
 
 1. In the Tile Gallery, drag the **Resource Groups** tile onto the workspace. Place it underneath the **All resources** tile.
 
 1. In the Tile Gallery, select the **Metrics chart** tile, and drag it onto the workspace. Place it to the right of the **All resources** tile.
 
-1. Continue to add the following tiles, rearranging them to fit:
+1. Continue to add the following tiles, rearranging them to fit as needed:
 
     - Help + support
-    - Quick Tasks
+    - Azure Active Directory quick tasks
     - Marketplace
 
-1. When you have added these tiles, select *Save**. The **Customer Dashboard** dashboard should appear.
+1. When you have added these tiles, select *Save**. The **Customer Dashboard** dashboard that you just created will appear.
 
 ## Clone a dashboard
 
-You now want to create a similar dashboard for some other customers.
+You now want to create a similar dashboard for some other customers, but with a few changes.
 
 1. Select the **Clone** button.
 
 1. Rename the dashboard from **Clone of Customer Dashboard** to **Azure AD Admin Dashboard**.
 
-1. On the **Resource Groups** tile, select the **Remove from dashboard** trash can icon to delete this tile.
+1. On the **Resource Groups** tile, select the trash can icon to delete this tile.
 
-1. From the Tile Gallery, add the following tiles:
+1. Select the **Preview** button at the top of the screen, then select **Edit**.
 
-    - Organization Identity
-    - Users and Groups
-    - User Activity Summary
+1.  From the Tile Gallery, locate and add the following tiles:
 
-1. Reposition the tiles as necessary, and then select **Done customizing**.
+    - Organization identity
+    - Users and groups
+    - User sign-in summary
+
+1. Reposition the tiles as necessary, and then select **Save**. The **Azure AD Admin Dashboard** dashboard that you just created will appear.
 
 ## Share a dashboard
 
-You now want to make this dashboard available to other users. In the sandbox environment, you won't be able to publish a shared dashboard. But you can see how you'd share a dashboard by completing the following steps.
+You now want to make this dashboard available to other users. In the sandbox environment, you won't be able to share a dashboard with other users. But you can see how you'd publish a shared dashboard by completing the following steps.
 
 1. From the Azure AD Admin dashboard, select the **Share** button at the top. The **Sharing and access control** panel that appears.
 1. To publish to a specific resource group, uncheck the **Publish to the 'dashboards' resource group** checkbox.
@@ -94,15 +96,15 @@ To show how you can download and edit a dashboard file, carry out the following 
 
 1. In the **Open** dialog box, browse to the Downloads folder, and double-click *Customer Dashboard.json*.
 
-    The clocks have resized to one row high, and the bottom clock has moved up one row.
+   When the dashboard appears, you'll see that the clocks have both been resized to one row high, and the bottom clock has moved up one row.
 
 ## Delete a dashboard
 
-1. Ensure that the **Azure AD Admin** dashboard is selected.
+1. From the dashboard selection drop-down control, ensure that the **Azure AD Admin Dashbard** dashboard is selected.
 
 1. Select the **Delete** button.
 
-1. In the **Confirmation** message box, select the checkbox to confirm that this dashboard will no longer be visible, and then select **OK**.
+1. In the **Confirmation** message box, confirm that you want to delete the dashboard, then select **OK**.
 
 ## Reset a dashboard
 
@@ -124,4 +126,4 @@ To show how you can download and edit a dashboard file, carry out the following 
 
 1. Close your browser.
 
-Congratulations! You have now created and edited dashboards, shared them, altered them as **JSON** files, and finally, reset them to the default state. You should now be able to see what powerful tools dashboards can be and how you can use them to create efficient interfaces for differing roles within an organization.
+Congratulations! You have now created and edited dashboards, shared them, altered them as **JSON** files, and finally, reset them to the default state. You now understand how to use dashboards to create efficient interfaces showing appropriate information for different roles within an organization.
