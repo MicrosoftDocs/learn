@@ -16,10 +16,6 @@ You can use `@expression()` to add a C# statement inline with HTML. If you requi
 
 You can also add an `@functions` section to the template for methods and properties. They're added to the top of the generated class, where the document can reference them.
 
-### Page directive
-
-The `@Page` directive is special markup that identifies a component as a page. Use this directive to specify a route. The route maps to an attribute route that the Blazor engine recognizes to register and access the page.
-
 ## Razor data binding
 
 Within Razor components, you can bind HTML elements to data in C# fields, properties, and Razor expression values. Data binding allows two-way synchronization between HTML and your code.
