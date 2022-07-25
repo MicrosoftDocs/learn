@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.import-data-different-formats-for-use-scripts
+metadata:
+  title: Import data in different formats for use in scripts by using Windows PowerShell cmdlets
+  description: "This module explains how to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file."
+  ms.date: 07/25/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Import data in different formats for use in scripts by using Windows PowerShell cmdlets
+summary: This module explains how to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Describe how to use Get-Content to review file data.
+  - Describe how to use Import-Csv to retrieve data.
+  - Describe how to use Import-Clixml to import XML data.
+  - Describe how to use ConvertFrom-Json to work with JSON data.
+  - Import data from text, CSV, and XML files.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.import-data-different-formats-for-use-scripts.introduction
+- learn.wwl.import-data-different-formats-for-use-scripts.use-get-content-command-scripts
+- learn.wwl.import-data-different-formats-for-use-scripts.use-import-csv-cmdlet-scripts
+- learn.wwl.import-data-different-formats-for-use-scripts.use-import-clixml-cmdlet-scripts
+- learn.wwl.import-data-different-formats-for-use-scripts.use-convertfrom-json-cmdlet-scripts
+- learn.wwl.import-data-different-formats-for-use-scripts.knowledge-check
+- learn.wwl.import-data-different-formats-for-use-scripts.summary
+badge:
+  uid: learn.wwl.import-data-different-formats-for-use-scripts-by-using-windows-powershell-cmdlet.badge
