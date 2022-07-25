@@ -27,14 +27,8 @@ quiz:
     - content: "$users[\"1\"]"
       isCorrect: false
       explanation: "Incorrect. In an array, all items have an index number, and the first index number is 0."
-    - content: "You cannot refer to items in an array by location."
-      isCorrect: false
-      explanation: "Incorrect. In an array, all items have an index number, and the first index number is 0."
   - content: "Which command would you use to update a value associated with a key named `dc1` in a hash table?"
     choices:
-    - content: "$computers(key=dc1;value=\"Domain Controller\")"
-      isCorrect: false
-      explanation: "Incorrect. When assigning a value to a key in a hash table, you use the format $hash.key = value."
     - content: "$computers.keys(\"dc1\") = \"Domain Controller\""
       isCorrect: false
       explanation: "Incorrect. When assigning a value to a key in a hash table, you use the format $hash.key = value."

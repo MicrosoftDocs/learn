@@ -7,7 +7,8 @@ $computers = "LON-DC1","LON-SRV1","LON-SRV2"
 $numbers = 228,43,102
 ```
 
-> **Note:** To create an array of strings, you put quotes around each item. If you put one set of quotes around all the items, it's treated as a single string.
+> [!NOTE]
+> To create an array of strings, you put quotes around each item. If you put one set of quotes around all the items, it's treated as a single string.
 
 You also can create an array by using the output from a command. For example:
 

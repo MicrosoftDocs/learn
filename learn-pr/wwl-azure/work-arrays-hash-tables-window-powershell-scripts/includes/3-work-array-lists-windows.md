@@ -24,7 +24,8 @@ To identify what you can do with the content in an array, use the **Get-Member**
 $files | Get-Member
 ```
 
-> **Note:** When you pipe an array containing mixed data types to **Get-Member**, results are returned for each data type. This is also a helpful way of determining which data types are in the array.
+> [!NOTE]
+> When you pipe an array containing mixed data types to **Get-Member**, results are returned for each data type. This is also a helpful way of determining which data types are in the array.
 
 To review the properties and methods available for an array rather than the items within the array, use the following syntax:
 
@@ -57,7 +58,8 @@ $computers.Add("LON-SRV2")
 $computers.Remove("LON-CL1")
 ```
 
-> **Note:** When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.
+> [!NOTE] 
+> When you remove an item from an array list, if there are multiple matching items then only the first instance is removed.
 
 If you want to remove an item from an array list based on the index number, you use the **RemoveAt()** method. For example:
 

@@ -10,7 +10,8 @@ Notice the following syntax in the previous example:
 - The keys and associated values are enclosed in braces.
 - The items are separated by a semicolon.
 
-> **Note:** The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.
+> [!NOTE]
+> The semicolon between hash table items is required in the previous example because they're all on the same line. If you place each item on a separate line, it's not necessary to use semicolons as separators.
 
 Adding or removing items from a hash table is similar to an array list. You use the methods **Add()** and **Remove()**. For example:
 
