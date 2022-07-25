@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Blazor Hybrid use which runtime?"
+  - content: "Blazor Hybrid apps use which .NET runtime?"
     choices:
     - content: "The runtime provided by the browser"
       isCorrect: false
