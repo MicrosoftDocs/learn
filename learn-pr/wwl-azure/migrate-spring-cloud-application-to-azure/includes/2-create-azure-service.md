@@ -60,13 +60,13 @@ The following procedure uses the Azure CLI extension to deploy an instance of Az
     az account list -o table
     ```
 4.  If in the above statement you don't see the right account being indicated as your default one, change your environment to the right subscription with the following command, replacing the `<subscription-id>`.
+    
+    ```azurecli
+    az account set \
+        --subscription <subscription-id>
+    ```
 
-```azurecli
-az account set \
-    --subscription <subscription-id>
-```
-
-6.  Run the following commands to create a resource group to contain all resources. Replace the `<azure-region>` placeholder with the name of any Azure region in which you can create a Standard SKU instance of the Azure Spring Apps service and an Azure Database for MySQL Single Server instance. See the [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=mysql%2Cspring-apps&amp;regions=all) page for services availability.
+5.  Run the following commands to create a resource group to contain all resources. Replace the `<azure-region>` placeholder with the name of any Azure region in which you can create a Standard SKU instance of the Azure Spring Apps service and an Azure Database for MySQL Single Server instance. See the [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=mysql%2Cspring-apps&amp;regions=all) page for services availability.
     
     ```azurecli
     UNIQUEID=$(openssl rand -hex 3)
@@ -75,7 +75,7 @@ az account set \
     az group create -g $RESOURCE_GROUP -l $LOCATION
     ```
 
-7.  Run the commands listed below to create an instance of the standard SKU of the Azure Spring Apps service. The name of the service must be globally unique and contain only lowercase letters, numbers, and hyphens.
+6.  Run the commands listed below to create an instance of the standard SKU of the Azure Spring Apps service. The name of the service must be globally unique and contain only lowercase letters, numbers, and hyphens.
     
     ```azurecli
     SPRING_APPS_SERVICE=springappssvc$UNIQUEID
@@ -94,24 +94,24 @@ az account set \
     > [!NOTE]
     > Provisioning will take approximately 5 minutes.
 
-8.  You can set your default resource group name and Spring Apps service name. By setting these defaults, you won't need to repeat these names for the next commands.
+7.  You can set your default resource group name and Spring Apps service name. By setting these defaults, you won't need to repeat these names for the next commands.
     
     ```azurecli
     az config set defaults.group=$RESOURCE_GROUP defaults.spring-cloud=$SPRING_APPS_SERVICE
     ```
 
-9.  In a new tab, open the [Azure portal](https://portal.azure.com/).
-10. Use the **Search resources, services, and docs** to search for the resource group you created using **Azure Spring Apps**.
+8.  In a new tab, open the [Azure portal](https://portal.azure.com/).
+9.  Use the **Search resources, services, and docs** to search for the resource group you created using **Azure Spring Apps**.
     
     In the resource group overview, you'll see your newly created Azure Spring Apps instance.
     
-    :::image type="content" source="../media/azure-spring-apps-resources1-5e209d7c.png" alt-text="Screenshot of Azure Spring Apps resource groups.":::
+    :::image type="content" source="../media/azure-spring-apps-resources-1-7ae31568.png" alt-text="Screenshot of Azure Spring Apps resource groups.":::
     
     
     > [!NOTE]
     > If you don't see the Azure Spring Apps service in the overview list of the resource group, you may need to refresh the view.
 
-11. Select the Azure Spring Apps instance and select Apps. Notice that there are no apps deployed to the instance but will be added in the upcoming exercise.
+10. Select the Azure Spring Apps instance and select Apps. Notice that there are no apps deployed to the instance but will be added in the upcoming exercise.
     
-    :::image type="content" source="../media/azure-spring-apps-resources2-c535ebc4.png" alt-text="Screenshot of the apps listed for Azure Spring Apps service.":::
+    :::image type="content" source="../media/azure-spring-apps-resources-2-c00c34e2.png" alt-text="Screenshot of the apps listed for Azure Spring Apps service.":::
     
