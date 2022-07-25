@@ -14,7 +14,7 @@ In the [Lab repository Extra folder](https://github.com/MicrosoftLearning/Deploy
 
 Do the following procedure to test and send messages to an Azure Service Bus.
 
-1.  As a first step you will need to clone the [Lab repository](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps). From the Git Bash window, execute the following statement.<br>
+1.  As a first step you will need to clone the [Lab repository](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps). From the Git Bash window, execute the following statement.
     
     ```azurecli
     cd ~/projects git clone https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps.git

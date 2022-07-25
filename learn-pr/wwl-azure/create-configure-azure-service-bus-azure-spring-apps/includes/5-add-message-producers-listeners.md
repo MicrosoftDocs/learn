@@ -51,7 +51,8 @@ Below is the activity flow.
     ```
 
 2.  In the ***src/main/java/org/springframework/samples/petclinic/visits/entities*** directory, add a `VisitResponse.java` class using the code below.
-3.  ```
+    
+    ```
     package org.springframework.samples.petclinic.visits.entities;
     
     public class VisitResponse {
@@ -132,18 +133,20 @@ Below is the activity flow.
     ```
 
 4.  In the **spring-petclinic-visits-service/src/main/java/org/springframework/samples/petclinic/visits/config** subdirectory, add another `QueueConfig.java` class file containing the following code:
-5.  ```java
+    
+    ```
+    
     package org.springframework.samples.petclinic.visits.config;
     
     import org.springframework.beans.factory.annotation.Value;
     
     public class QueueConfig {
-        @Value("${spring.jms.queue.visits-requests:visits-requests}")
-        private String visitsRequestsQueue;
+    @Value("${spring.jms.queue.visits-requests:visits-requests}")
+    private String visitsRequestsQueue;
     
-        public String getVisitsRequestsQueue() {
-            return visitsRequestsQueue;
-        }
+    public String getVisitsRequestsQueue() {
+    return visitsRequestsQueue;
+    }   
     }
     ```
 
