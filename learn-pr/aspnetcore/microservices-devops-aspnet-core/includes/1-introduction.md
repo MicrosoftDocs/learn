@@ -2,10 +2,6 @@ Imagine you're a software developer for an online retailer named *:::no-loc text
 
 This module guides you through the process of implementing a CI/CD pipeline using GitHub Actions. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). This new reference app version includes a discount coupon feature that can be used at checkout time in the shopping basket. The feature is supported by an ASP.NET Core web API known as the coupon service. CI/CD will be enabled for the coupon service in this module.
 
-[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
-
-## Learning objectives
-
 In this module, you will:
 
 - Authenticate GitHub Actions to a container registry.
@@ -16,9 +12,14 @@ In this module, you will:
 - Modify and commit a Helm chart to trigger a deployment.
 - Revert the microservice to a previous deployment.
 
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
+
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
+
 ## Prerequisites
 
 - Conceptual knowledge of DevOps practices at the beginner level
 - Conceptual knowledge of containers and AKS at the beginner level
 - Access to an Azure subscription with **Owner** privilege
 - Access to a GitHub account
+- Ability to run development containers in Visual Studio Code or GitHub Codespaces
