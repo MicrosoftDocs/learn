@@ -10,7 +10,7 @@ Modify the **producer.config** file in the ***/src/main/resources*** directory:
 
 Next, compile and run the producer app, which sends 100 events to your event hub. You can view the events sent to your event hub using the Azure portal.
 
-1.  From the Git Bash shell in the **projects** folder, clone the [azure-event-hubs-for-kafka on GitHub](https://github.com/Azure/azure-event-hubs-for-kafka) project.<br>
+1.  From the Git Bash shell in the **projects** folder, clone the [azure-event-hubs-for-kafka on GitHub](https://github.com/Azure/azure-event-hubs-for-kafka) project.
     
     ```
     cd ~/projects
