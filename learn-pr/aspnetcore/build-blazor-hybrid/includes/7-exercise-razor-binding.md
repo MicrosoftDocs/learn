@@ -5,7 +5,7 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
 
 1. Create the Todo page:
 
-   In Visual Studio, you can right-click on the `Pages` folder in **Solution Explorer** and choosing **Add** > **Razor Component...** and name the component `Todo.razor`
+   In Visual Studio, right-click on the `Pages` folder in **Solution Explorer** and select **Add** > **Razor Component...**. Name the component `Todo.razor`.
 
    > [!IMPORTANT]
    > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
