@@ -28,7 +28,6 @@ The difference between properties and telemetry for Azure Digital Twins models i
 
  -  Properties are expected to have backing storage (a stored and accessible value). You can read a property at any time and retrieve its value. If the property is writeable, you can also assign a value to the property.
  -  Telemetry is more like a stream of events; it’s a set of data messages that have short lifespans. If you don't monitor for a telemetry event and take actions when it happens, there is no trace of the event at a later time. You can't come back to it and read it later.
-    
      -  In C\# terms, telemetry is like a C\# event.
      -  In IoT terms, telemetry is typically a data value sent by a device at a specified time interval.
 
@@ -51,4 +50,4 @@ Consider the following example:
  -  Azure Digital Twins model - property field: Monitor temp01 telemetry field events and capture “last received” value and “last received time” value. Store values in last\_received and last\_received\_time property fields.
  -  Query model properties: Query as needed to extract most recently reported temperature and time.
 
-:::image type="content" source="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png" alt-text="Diagram that shows how property and telemetry fields are used within an Azure Digital Twins solution."  lightbox="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png":::
+:::image type="content" source="../media/m11-l02-telemetry-property-fields-twins-model-89781ba3.png" alt-text="Diagram that shows how property and telemetry fields are used within an Azure Digital Twins solution.":::

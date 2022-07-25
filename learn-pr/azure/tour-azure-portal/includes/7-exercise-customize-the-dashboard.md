@@ -1,23 +1,26 @@
-Dashboards are a flexible tool for managing different aspects of Azure services through the Portal. They make it convenient to monitor the state of your services. Because they are shareable, they help ensure that everyone on your team sees the same data and stays aware of the state of your critical components. Let's create a new dashboard and add some tiles to it.
+Dashboards are a flexible tool for managing different aspects of Azure services through the portal. They make it convenient to monitor the state of your services. Because they are shareable, they help ensure that everyone on your team sees the same data and stays aware of the state of your critical components. Let's create a new dashboard and add some tiles to it.
 
 ## Create a new dashboard
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), from the top left-hand side, select **Show portal menu** >  **Dashboard**.
-1. Select the **New Dashboard**.
 
-1. In the center pane, change **My Dashboard**  to `Customer Dashboard`.
+1. Select the **New Dashboard** button, then select **Blank dashboard**.
+
+1. At the top left, change **My Dashboard**  to `Customer Dashboard`.
 
 ## Add and configure the Clock Tile
 
 1. In the tile gallery, drag the clock onto the workspace. Place it on the top right of the available space.
 
+1. Select the **Preview** button at the top of the screen, then select **Edit** in the clock tile.
+
 1. On the **Edit clock** pane, change the Location to **Pacific Time (US & Canada)**.
 
 1. Under **Time format**, select **24 hour**.
 
-1. Select **Done**.
+1. Select **Done**, then select **Save** at the top of the screen. Select the **Edit** button at the top of the screen to return to edit mode.
 
-1. Repeat the preceding four steps, except select **Eastern Time (US & Canada)**. You should now have two clocks, one showing the time on the West Coast, the other on the East Coast.
+1. Repeat the preceding five steps, except select **Eastern Time (US & Canada)**. You should now have two clocks, one showing the time on the West Coast, the other on the East Coast.
 
 ## Resize a tile
 
@@ -37,7 +40,7 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
     - Quick Tasks
     - Marketplace
 
-1. When you have added these tiles, select **Done customizing**. The **Customer Dashboard** dashboard should appear.
+1. When you have added these tiles, select *Save**. The **Customer Dashboard** dashboard should appear.
 
 ## Clone a dashboard
 
@@ -65,14 +68,13 @@ You now want to make this dashboard available to other users. In the sandbox env
 1. To publish to a specific resource group, uncheck the **Publish to the 'dashboards' resource group** checkbox.
 1. Select the resource group <rgn>[sandbox resource group name]</rgn> from the **Resource group** dropdown.
 1. Select **Publish**.
-1. At this point in the sandbox environment, you'll receive an error. That's ok. 
 1. Close the **Sharing + access control** pane.
 
 ## Edit a dashboard.json file
 
 To show how you can download and edit a dashboard file, carry out the following steps:
 
-1. Select **Download**.
+1. Select **Export**, then select **Download**.
 
 1. Open a file explorer on your computer and navigate to where your web browser downloaded the dashboard, typically a **Downloads** folder.
 
@@ -88,7 +90,7 @@ To show how you can download and edit a dashboard file, carry out the following 
 
 1. Save the *Customer Dashboard.json* file and close your code editor.
 
-1. On the Azure dashboard, select **Upload**.
+1. On the Azure dashboard, select **New dashboard**, then select **Upload**.
 
 1. In the **Open** dialog box, browse to the Downloads folder, and double-click *Customer Dashboard.json*.
 
@@ -114,7 +116,7 @@ To show how you can download and edit a dashboard file, carry out the following 
 
     The Customer Dashboard has reset to its default tiles.
 
-1. Select **Done customizing**.
+1. Select **Save**.
 
 1. Select your name at the top right of the portal.
 
