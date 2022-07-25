@@ -18,6 +18,8 @@ The **Invoke-RestMethod** cmdlet uses the following syntax:
 $users = Invoke-RestMethod "https://hr.adatum.com/api/staff"
 ```
 
-> **Note:** The URLs used to retrieve data from a web service aren't standardized. You must review the documentation for the web service to identify the correct URLs to retrieve data.
+> [!NOTE] 
+> The URLs used to retrieve data from a web service aren't standardized. You must review the documentation for the web service to identify the correct URLs to retrieve data.
 
-> **Note:** **Invoke-RestMethod** is also capable of working with XML, RSS feeds, and ATOM feeds.
+> [!NOTE] 
+> **Invoke-RestMethod** is also capable of working with XML, RSS feeds, and ATOM feeds.
