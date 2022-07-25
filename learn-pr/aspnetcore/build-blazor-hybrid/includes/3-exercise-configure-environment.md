@@ -49,7 +49,7 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
 - **wwwroot**. This folder includes static web assets used by Blazor including HTML, CSS, JavaScript, and image files.
 
-- `Main.razor`. This file defines the routing of the Blazor app that is displayed.
+- `Main.razor`. The root Razor component for the app that sets up the Blazor router to handle page navigations within the web view.
 
 - `_Imports.razor`. This file defines namespaces that are imported into each Razor component.
 
