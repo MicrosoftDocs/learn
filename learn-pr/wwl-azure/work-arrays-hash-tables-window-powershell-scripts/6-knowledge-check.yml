@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/13/2022
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -14,3 +14,33 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "How do you refer to the first item in an array?"
+    choices:
+    - content: "$users[0]"
+      isCorrect: true
+      explanation: "Correct. In an array, all items have an index number, and the first index number is 0."
+    - content: "$users[1]"
+      isCorrect: false
+      explanation: "Incorrect. In an array, all items have an index number, and the first index number is 0."
+    - content: "$users[\"1\"]"
+      isCorrect: false
+      explanation: "Incorrect. In an array, all items have an index number, and the first index number is 0."
+    - content: "You cannot refer to items in an array by location."
+      isCorrect: false
+      explanation: "Incorrect. In an array, all items have an index number, and the first index number is 0."
+  - content: "Which command would you use to update a value associated with a key named `dc1` in a hash table?"
+    choices:
+    - content: "$computers(key=dc1;value=\"Domain Controller\")"
+      isCorrect: false
+      explanation: "Incorrect. When assigning a value to a key in a hash table, you use the format $hash.key = value."
+    - content: "$computers.keys(\"dc1\") = \"Domain Controller\""
+      isCorrect: false
+      explanation: "Incorrect. When assigning a value to a key in a hash table, you use the format $hash.key = value."
+    - content: "$computers[5] = \"Domain Controller\""
+      isCorrect: false
+      explanation: "Incorrect. When assigning a value to a key in a hash table, you use the format $hash.key = value."
+    - content: "$computers.dc1 = \"Domain Controller\""
+      isCorrect: true
+      explanation: "Correct. When assigning a value to a key in a hash table, you use the format $hash.key = value."

@@ -1,7 +1,7 @@
 In this module, you learned about arrays, array lists, and hash tables. The following are the key takeaways:
 - Use scripts to standardize repetitive tasks. Standardizing a task reduces the risk of errors. If a script has been tested, you can run it multiple times without errors. 
 - Reporting is one complex and repetitive task that you can do with Windows PowerShell. You can use Windows PowerShell to create text or HTML-based reports. 
-- Windows PowerShell scripts have a .ps1 file extension. The most basic scripts are simply Windows PowerShell commands listed in a text file that's been saved with the .ps1 file extension
+- Windows PowerShell scripts have a .ps1 file extension. The most basic scripts are simply Windows PowerShell commands listed in a text file that's been saved with the .ps1 file extension.
 
 - Microsoft provides an organized set of scripts and modules in the PowerShell Gallery. The PowerShell Gallery contains content published by Microsoft and PowerShell Gallery members. You can use modules from the PowerShell Gallery to simplify building your scripts.
 
