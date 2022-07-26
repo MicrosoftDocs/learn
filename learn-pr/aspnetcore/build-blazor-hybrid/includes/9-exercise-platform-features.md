@@ -1,6 +1,5 @@
 In this exercise, you'll add the ability to save and load the todo list to the file system.
 
-
 ## Add a load and save buttons
 
 1. Let's start by adding two new `<button>` elements for our load and save button under the `<h3>` and  above our list of todo items.
@@ -14,7 +13,7 @@ In this exercise, you'll add the ability to save and load the todo list to the f
     <button @onclick="Save">Save</button>
     <button @onclick="Load">Load</button>
 
-    <ul>
+    <ul class="list-unstyled">
         @foreach (var todo in todos)
         {
             <li>
@@ -23,8 +22,6 @@ In this exercise, you'll add the ability to save and load the todo list to the f
             </li>
         }
     </ul>
-
-    ...
     ```
 
 1. Add two methods in the `@code` block for `Save` and `Load` functionality:
@@ -32,18 +29,16 @@ In this exercise, you'll add the ability to save and load the todo list to the f
     ```csharp    
     private async Task Save()
     {
-
     }
 
     private void Load()
     {
-
     }
     ```
 
-## Save and load date to disk
+## Save and load data to disk
 
-.NET includes the `System.IO` namespace that includes the ability to load and save files to disk. .NET MAUI maps this functionality to native APIs for you automatically, all you need to do is specify where to save the file. Each platform has special locations to save user data. The file system helpers in .NET MAUI provide access to get multiple platform directories including the cache  and app data directories. It also can load files that are bundled directly into the app. Now, let's implement the `Save` method by using `System.Text.Json`, which is built into .NET.
+.NET includes the `System.IO` namespace that includes the ability to load and save files to disk. .NET MAUI maps this functionality to native APIs for you automatically; all you need to do is specify where to save the file. Each platform has special locations to save user data. The file system helpers in .NET MAUI provide access to get multiple platform directories including the cache and app data directories. It also can load files that are bundled directly into the app. Now, let's implement the `Save` method by using `System.Text.Json`, which is built into .NET.
 
 1. Add the using directive for `Microsoft.Maui.Storage`, `System.Text.Json`, and `System.IO`.
 
@@ -61,7 +56,7 @@ In this exercise, you'll add the ability to save and load the todo list to the f
     private async Task Save()
     {
         var contents = JsonSerializer.Serialize(todos);
-        var path = Path.Combine(FileSystem.AppDataDirectory, "todo.txt");
+        var path = Path.Combine(FileSystem.AppDataDirectory, "todo.json");
         File.WriteAllText(path, contents);
         await App.Current.MainPage.DisplayAlert("List Saved", $"List has been saved to {path}", "OK");
     }
@@ -74,7 +69,7 @@ In this exercise, you'll add the ability to save and load the todo list to the f
     ```csharp
     private void Load()
     {
-        var path = Path.Combine(FileSystem.AppDataDirectory, "todo.txt");
+        var path = Path.Combine(FileSystem.AppDataDirectory, "todo.json");
         if (!File.Exists(path))
             return;
         var contents = File.ReadAllText(path);

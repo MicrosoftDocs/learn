@@ -1,58 +1,13 @@
 Companies that build web apps and clients apps commonly hire developers for different roles. Some developers create back-end, server-side logic. Some build client-side web apps. Others build native client apps for mobile and desktop platforms. These developers often use different development languages and technologies.
 
-C# and Microsoft .NET are popular choices for building server-side logic. Often client-side web apps are often built with web UI frameworks, which commonly use JavaScript. When it comes to native client apps for desktop and mobile, there are several options available including many for .NET and C#. The use of multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync.
+C# and .NET are popular choices for building server-side logic. Client-side web apps are often built with web UI frameworks using JavaScript. When it comes to native client apps for desktop and mobile, there are several options available including many for .NET and C#. The use of multiple languages and toolsets requires multiple sets of skills and often requires two separate teams. Also, code to transfer and represent data must be built in both languages and kept in sync. Blazor Hybrid can simplify your development team's tasks, code, and processes by allowing you to use your existing skills and code in building web applications in C# and .NET to build native client applications using these same technologies.
 
 In this unit, you'll start with an introduction to Blazor Hybrid, .NET MAUI, and Razor Components.
 
 ## What is Blazor?
 
-Blazor apps are composed of reusable web UI components built using C#, HTML, and CSS. With Blazor, developers can build client and server code with C#. They can also share code and libraries with the front-end client code and back-end logic. Using C# for all code simplifies sharing data between the front end and back end, code reuse to accelerate development, and maintenance.
+Blazor apps are composed of reusable web UI components built using C#, HTML, and CSS. With Blazor, developers can build client and server code with C#. They can also share code and libraries with the front-end client code and back-end logic. Using C# for all code simplifies sharing data between the front end and back end, enables code reuse to accelerate development, and reduces maintenance.
 
-You can use Blazor to generate:
-
-- Server-side code that handles UI interactions over a WebSocket connection.
-- A client-side web app that runs directly in the browser via WebAssembly.
-
-## What is WebAssembly?
-
-WebAssembly (WASM) is an open binary standard. It defines a portable code format for programs designed to run in web browsers. WebAssembly is a textual assembly language with a compact binary format for fast downloads and near-native performance.
-
-WebAssembly provides a compilation target for languages such as C, C++, and Rust. It's designed to run alongside JavaScript so that both work together. WebAssembly also can generate progressive web applications to be downloaded and run offline.
-
-## What is Blazor WebAssembly?
-
-With Blazor WebAssembly, developers can run .NET code in a browser. It's a single-page app framework that uses the WebAssembly open standards without requiring plug-ins or code generation.
-
-.NET code executed via WebAssembly in a browser runs in the browser's JavaScript sandbox. The code includes all the security and protection that the sandbox provides. This inclusion helps prevent malicious actions on a client machine.
-
-![Blazor Web Assembly diagram.](../media/blazor-webassembly.png)
-
-Blazor uses a .NET runtime compiled to a WebAssembly module that is downloaded with an app. The module can execute .NET Standard code included in a Blazor app.
-
-A Blazor WebAssembly app is restricted to the capabilities of the browser that executes the app. But the app can access full browser functionality via JavaScript interop.
-
-### Blazor WebAssembly supported browsers
-
-Blazor WebAssembly requires a modern desktop or mobile browser. The following browsers are currently supported:
-
-- Microsoft Edge
-- Mozilla Firefox
-- Google Chrome
-- Apple Safari
-
-### What is Blazor Server?
-
-Blazor Server provides support for hosting Razor components on the server in an ASP.NET Core app. UI updates are handled over a SignalR connection.
-
-The runtime stays on the server and handles:
-
-- Executing the app's C# code.
-- Sending UI events from the browser to the server.
-- Applying UI updates to the rendered components that are sent back by the server.
-
-The connection used by Blazor Server to communicate with the browser is also used to handle JavaScript interop calls.
-
-![Blazor Server diagram.](../media/blazor-server.png)
 
 ## What is Blazor Hybrid?
 
@@ -76,4 +31,4 @@ Blazor Hybrid support is built into the .NET MAUI framework. .NET MAUI includes 
 
 You can build Blazor Hybrid apps by using the latest version of Visual Studio 2022 or Visual Studio 2022 for Mac. In this module, we'll be using Visual Studio 2022 to build our Blazor Hybrid application.
 
-Whatever your development environment, you need to install the **.NET MAUI** workload and the "ASP.NET and web development" workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor Hybrid apps. You'll build your first Blazor Hybrid app with Visual Studio 2022 in the next exercise.
+Whatever your development environment, you need to install the **.NET MAUI** workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor Hybrid apps. You'll build your first Blazor Hybrid app with Visual Studio 2022 in the next exercise.

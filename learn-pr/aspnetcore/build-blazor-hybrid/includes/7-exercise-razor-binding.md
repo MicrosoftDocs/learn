@@ -5,7 +5,7 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
 
 1. Create the Todo page:
 
-   In Visual Studio, you can right-click on the `Pages` folder in **Solution Explorer** and choosing **Add** > **Razor Component...** and name the component `Todo.razor`
+   In Visual Studio, right-click on the `Pages` folder in **Solution Explorer** and select **Add** > **Razor Component...**. Name the component `Todo.razor`.
 
    > [!IMPORTANT]
    > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
@@ -26,7 +26,7 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
 
 ## Add the Todo component to the navigation bar
 
-The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component provides a cue in the app's UI when the component URL is loaded by the app.
+The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component renders an HTML anchor tag that can be styled to provide a cue in the app's UI when the app URL matches the link.
 
 In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
 
@@ -36,7 +36,7 @@ In `Shared/NavMenu.razor`:
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
 
-        ...
+        <!-- ... -->
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="todo">
@@ -81,7 +81,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 
 <h3>Todo</h3>
 
-<ul>
+<ul class="list-unstyled">
     @foreach (var todo in todos)
     {
         <li>@todo.Title</li>
@@ -93,7 +93,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 }
 ```
 
-## Add Form Elements to Create Todos
+## Add form elements to create todos
 
 1. The app requires UI elements for adding todo items to the list. Add a text input (`<input>`) and a button (`<button>`) below the unordered list (`<ul>...</ul>`):
 
@@ -103,7 +103,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
     
     <h3>Todo</h3>
     
-    <ul>
+    <ul class="list-unstyled">
         @foreach (var todo in todos)
         {
             <li>@todo.Title</li>
@@ -143,8 +143,8 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
         private List<TodoItem> todos = new();
         private string? newTodo;
     
-        // ... code continues ...
-        }
+        // Omitted for brevity...
+    }
     ```
 
     Modify the `<input>` element to bind `newTodo` with the `@bind` attribute:
@@ -157,10 +157,11 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 
     ```razor
     @page "/todo"
+    @using BlazorHybridApp.Data
     
     <h3>Todo</h3>
     
-    <ul>
+    <ul class="list-unstyled">
         @foreach (var todo in todos)
         {
             <li>@todo.Title</li>
@@ -185,12 +186,12 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
     }
     ```
 
-1. Save the `Pages/Todo.razor` file. The app is automatically rebuilt in the command shell. The page reloads in the browser after the browser reconnects to the app.
+1. Save the `Pages/Todo.razor` file. Rebuild and restart the app.
 
 1. The title text for each todo item can be made editable, and a checkbox can help the user keep track of completed items. Add a checkbox input for each todo item and bind its value to the `IsDone` property. Change `@todo.Title` to an `<input>` element bound to `todo.Title` with `@bind`:
 
     ```razor
-    <ul>
+    <ul class="list-unstyled">
         @foreach (var todo in todos)
         {
             <li>

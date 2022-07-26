@@ -15,12 +15,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Blazor Hybrid use which runtime?"
+  - content: "Blazor Hybrid apps use which .NET runtime?"
     choices:
     - content: "The runtime provided by the browser"
       isCorrect: false
       explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
-    - content: "The .NET runtime deployed with your app"
+    - content: "The .NET runtime deployed natively with your app"
       isCorrect: true
       explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
     - content: "The JavaScript runtime deployed with your app"
@@ -29,9 +29,9 @@ quiz:
     - content: "The WebAssembly runtime deployed with your app"
       isCorrect: false
       explanation: "Blazor Hybrid apps run on the .NET runtime deployed with the app framework"
-  - content: "How is Blazor UI defined?"
+  - content: "How is Blazor UI typically defined?"
     choices:
-    - content: "As Razor pages with a mix of HTML and C#"
+    - content: "As Razor components with a mix of HTML and C#"
       isCorrect: true
       explanation: "A Razor file defines components that make up portions of UI for the app" 
     - content: "As XAML pages using XML"

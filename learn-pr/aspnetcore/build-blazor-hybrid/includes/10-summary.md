@@ -1,4 +1,4 @@
-In this module, you set up your development environment to create and build Blazor Hybrid app with .NET MAUI for mobile and desktop. You then:
+In this module, you set up your development environment to create and build a Blazor Hybrid app with .NET MAUI for mobile and desktop. You then:
 
 - Re-used a Razor component.
 - Added HTML and C# to the Razor file.

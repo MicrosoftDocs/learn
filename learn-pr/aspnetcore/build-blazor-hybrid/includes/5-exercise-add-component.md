@@ -8,7 +8,7 @@ In this exercise, you'll add a Razor component to the home page of our applicati
 
 1. Select the **Index.razor** file to open it.
 
-1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the `Index.razor` file.
+1. Add a `Counter` component to the page by adding a `<Counter />` element at the end of the _Index.razor_ file.
 
    ```razor
    @page "/"
@@ -22,7 +22,7 @@ In this exercise, you'll add a Razor component to the home page of our applicati
    <Counter />
    ```
 
-If you still have the app running save the file, and select on the hot reload (ALT + F10) command so that the `Counter` component shows up on the Home page by clicking to another tab and returning to the Home. If you stopped debugging previous, start the app again by selecting **Debug** > **Start Debugging**.
+If you still have the app running save the file, and select the hot reload (<kbd>Alt+F10</kbd>) command so that the `Counter` component shows up on the Home page by clicking to another tab and returning to the Home. If you stopped debugging previously, start the app again by selecting **Debug** > **Start Debugging**.
 
 When you're ready to stop, return to Visual Studio 2022, and press <kbd>Shift+F5</kbd> to stop the app.
 
@@ -30,7 +30,7 @@ When you're ready to stop, return to Visual Studio 2022, and press <kbd>Shift+F5
 
 ## Modify a component
 
-Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the Counter component for specifying how much it increments with every button select:
+Component parameters are specified using attributes or child content, which allow you to set properties on the child component. Define a parameter on the Counter component for specifying how much it increments with every button click:
 
 - Add a public property for `IncrementAmount` with a `[Parameter]` attribute.
 - Change the `IncrementCount` method to use the `IncrementAmount` when incrementing the value of `currentCount`.
@@ -75,6 +75,6 @@ Welcome to your new app.
 
 Start the app again by selecting **Debug** > **Start Debugging**
 
-The `Index` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image. The `Counter` component (`Counter.razor`) at `/counter` continues to increment by one.
+The `Index` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
 
 ![Home page with Counter update.](../media/counter-homepage-modify.png)

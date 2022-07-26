@@ -1,14 +1,8 @@
 You've defined the UI for your web app. Now explore how to add logic to the app. In a Blazor app, you can add C# code in separate .cs files or inline in your Razor components.
 
-## C# code-behind in separate files
-
-In Blazor, you can add C# files directly to your app project as with other .NET projects. Commonly called *code-behind*, this technique uses separate code files to store app logic. Separate files are a great strategy when your business logic is complex, is long, or has multiple classes.
-
-For simple logic, you don't always need to create new .cs files.
-
 ## C# inline in components
 
-A common practice is to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, you'll use directives.
+A common practice is to mix HTML and C# in a single Razor component file. For simple components with lighter code requirements, this approach works well. To add code into a Razor file, you'll use Razor syntax.
 
 ## What are Razor directives?
 
@@ -22,14 +16,10 @@ You can use `@expression()` to add a C# statement inline with HTML. If you requi
 
 You can also add an `@functions` section to the template for methods and properties. They're added to the top of the generated class, where the document can reference them.
 
-### Page directive
-
-The `@Page` directive is special markup that identifies a component as a page. Use this directive to specify a route. The route maps to an attribute route that the Blazor engine recognizes to register and access the page.
-
 ## Razor data binding
 
-Within Razor components, you can data bind HTML elements to C# fields, properties, and Razor expression values. Data binding allows two-way synchronization between HTML and Microsoft .NET.
+Within Razor components, you can bind HTML elements to data in C# fields, properties, and Razor expression values. Data binding allows two-way synchronization between HTML and your code.
 
 Data is pushed from HTML to .NET when a component is rendered. Components render themselves after event-handler code executes. That's why property updates are reflected in the UI immediately after an event handler is triggered.
 
-Use `@bind` markup to bind a C# variable to an HTML object. You define the C# variable by name as a string in the HTML. You'll see an example of data binding in the following exercise.
+Use `@bind` markup to bind a C# variable to an HTML input. You'll see an example of data binding in the following exercise.
