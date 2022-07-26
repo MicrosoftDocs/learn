@@ -23,7 +23,8 @@ To set the `$ErrorActionPreference` variable, use the following syntax:
 $ErrorActionPreference = 'Inquire'
 ```
 
-> **Note:** Be selective about using **SilentlyContinue** for `$ErrorActionPreference`. You might think that this makes your script better for users, but it could make troubleshooting difficult.
+> [!NOTE]
+> Be selective about using **SilentlyContinue** for `$ErrorActionPreference`. You might think that this makes your script better for users, but it could make troubleshooting difficult.
 
 If you intend to trap an error within your script so that you can manage the error, commands must use the **Stop** action. You can trap and manage only terminating errors.
 

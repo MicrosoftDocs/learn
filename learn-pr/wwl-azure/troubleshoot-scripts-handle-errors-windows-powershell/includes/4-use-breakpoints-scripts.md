@@ -26,7 +26,8 @@ You can use the *-Mode* parameter for variables to identify whether you want to 
 
 The default action for **Set-PSBreakPoint** is **break**, which provides the interactive prompt. However, you can use the *-Action* parameter to specify code that runs instead. This allows you to perform complex operations such as evaluating variable values and only breaking if the value is outside a specific range.
 
-> **Note:** Breakpoints are stored in memory rather than as part of the script. Breakpoints aren't shared between multiple Windows PowerShell prompts and are removed when the prompt is closed.
+> [!NOTE]
+> Breakpoints are stored in memory rather than as part of the script. Breakpoints aren't shared between multiple Windows PowerShell prompts and are removed when the prompt is closed.
 
 ## PowerShell ISE
 
