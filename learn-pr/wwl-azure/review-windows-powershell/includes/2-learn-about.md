@@ -14,7 +14,7 @@ Initially, Windows PowerShell was a platform built on the .NET Framework and onl
 
 ## A scripting language
 
-*Commands* provide PowerShell’s main functionality. There are many varieties of commands, including cmdlets (pronounced *command-lets*), functions, filters, scripts, applications, configurations, and workflows. Commands are building blocks that you piece together by using the Windows PowerShell scripting language. Using commands enables you to create custom solutions to complex administrative problems. Alternatively, you can simply run commands directly within the PowerShell console to complete a single task. The console is the CLI for PowerShell and is the primary way in which you'll interact with PowerShell.
+*Commands* provide PowerShell’s main functionality. There are many varieties of commands, including cmdlets (pronounced *command-lets*), functions, filters, scripts, applications, configurations, and workflows. Commands are building blocks that you piece together by using the Windows PowerShell scripting language. Using commands enables you to create custom solutions to complex administrative problems. Alternatively, you can run commands directly within the PowerShell console to complete a single task. The console is the CLI for PowerShell and is the primary way in which you'll interact with PowerShell.
 
 Cmdlets use a Verb-Noun naming convention. For example, you can use the **Get-Command** cmdlet to list all cmdlets and functions that are registered in the command shell. The verb identifies the action for the cmdlet to perform, and the noun identifies the resource on which the cmdlet will perform its action.
 
@@ -22,13 +22,13 @@ Microsoft server applications and cloud services provide specialized cmdlets tha
 
 ## Configuration management framework
 
-PowerShell incorporates the PowerShell Desired State Configuration (DSC) management framework. This enables you to manage enterprise infrastructure with code to help with:
+PowerShell incorporates the PowerShell Desired State Configuration (DSC) management framework. This framework enables you to manage enterprise infrastructure with code to help with:
 
 - Using declarative configurations and repeatable scripts for repeatable deployments.
 - Enforcing configurations settings and identifying when configuration drift takes place from standard requirements.
 - Deploying configuration settings using push or pull models.
 
-Applications and services with PowerShell–based administrative functions are consistent in how they work. This means that you can quickly apply the lessons you learned. Also, when you use automation scripts to administer a software application, you can reuse them among other applications.
+Applications and services with PowerShell–based administrative functions are consistent in how they work. This attribute means that you can quickly apply the lessons you learned. Also, when you use automation scripts to administer a software application, you can reuse them among other applications.
 
 ## Windows PowerShell versions
 
@@ -47,7 +47,8 @@ Windows PowerShell is an OS component, so it receives the same lifecycle support
 
 PowerShell is shipped, installed, and configured separately from Windows PowerShell. First released as PowerShell Core 6.0 in 2018, it was the first version that offered multi-platform support, extending its availability to MacOS and Linux operating systems.
 
-> **Note:** The latest version of PowerShell is PowerShell 7.2, available via Microsoft Update.
+> [!NOTE]
+> The latest version of PowerShell is PowerShell 7.2, available via Microsoft Update.
 
 PowerShell and Windows PowerShell are separately installed and you can run supported commands using either environment.
 
@@ -64,7 +65,7 @@ The following table provides a general timeline of the major PowerShell releases
 | PowerShell 7.2 | November 2021     | Built on .NET 6.0.                                           |
 | PowerShell 7.1 | November 2020     | Built on .NET 5.0.                                           |
 | PowerShell 7.0 | March 2020     | Built on .NET Core 3.1.                                      |
-| PowerShell 6.0 | September 2018    | Built on .NET Core 2.0. First release that's installable on Windows, Linux, and macOS. |
+| PowerShell 6.0 | September 2018    | Built on .NET Core 2.0. First release that's installable on Windows, Linux, and MacOS. |
 | PowerShell 5.1 | August 2016     | Released in Windows 10 Anniversary Update and Windows Server 2016 and as part of Windows Management Framework (WMF) 5.1. |
 | PowerShell 5.0 | February 2016     | Integrated in Windows 10 version 1511. Released in Windows Management Framework (WMF) 5.0. Can be installed on Windows Server 2008 R2, Windows Server 2012, Windows 10, Windows 8.1 Enterprise, Windows 8.1 Pro, and Windows 7 SP1. |
 | PowerShell 4.0 | October 2013     | Integrated in Windows 8.1 and Windows Server 2012 R2. Can be installed on Windows 7 SP1, Windows Server 2008 SP1, and Windows Server 2012. |
@@ -72,6 +73,7 @@ The following table provides a general timeline of the major PowerShell releases
 | PowerShell 2.0 | July 2009     | Integrated in Windows 7 and Windows Server 2008 R2. Can be installed on Windows XP SP3, Windows Server 2003 SP2, and Windows Vista SP1. |
 | PowerShell 1.0 | November 2006     | Installable on Windows XP SP2, Windows Server 2003 SP1, and Windows Vista. Optional component of Windows Server 2008. |
 
-> **Note:**  Throughout this module, topics will relate to both the latest Windows PowerShell and PowerShell versions (5.1 and 7.2). Most cmdlets will work using either platform. However, there'll be a note if a specific feature is only supported or relates to one specific platform.
+> [!NOTE]
+> Throughout this module, topics will relate to both the latest Windows PowerShell and PowerShell versions (5.1 and 7.2). Most cmdlets will work using either platform. However, there'll be a note if a specific feature is only supported or relates to one specific platform.
 
 > **Additional Reading:** To support more recent versions of PowerShell on down-level operating systems, you might need to install the latest version of the Windows Management Framework. For more information, refer to [Install and Configure WMF 5.1] (https://aka.ms/install-and-configure-WMF-5.1).

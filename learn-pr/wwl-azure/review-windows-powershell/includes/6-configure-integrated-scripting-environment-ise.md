@@ -14,4 +14,5 @@ Other ISE features include:
 - The ability to load add-ins created by Microsoft or by third parties that provide additional functionality.
 - Integration with Windows PowerShell’s debugging capabilities.
 
-> **Note:** The Windows PowerShell ISE is available on Windows OS, but it won't work with PowerShell 6 and newer. For a similar experience, you can use Visual Studio Code (VS Code) with the PowerShell extension. You will learn more about it in the next unit of this module. 
+> [!NOTE]
+> The Windows PowerShell ISE is available on Windows OS, but it won't work with PowerShell 6 and newer. For a similar experience, you can use Visual Studio Code (VS Code) with the PowerShell extension. You will learn more about it in the next unit of this module. 

@@ -15,4 +15,5 @@ The ISE is a Windows Presentation Foundation (WPF) application that provides ric
 
 Third parties offer other Windows PowerShell host applications. Several companies produce free and commercial Windows PowerShell scripting, editing, and console hosts. However, this module focuses on the host applications that the Windows OS provides.
 
-> **Note:** Windows PowerShell ISE only supports Windows PowerShell versions up to and including 5.1. It doesn't support subsequent versions of PowerShell (6.x or 7.x). You can use Microsoft Visual Studio Code with the PowerShell extension if you are looking for a similar scripting environment as the one that Windows PowerShell ISE provides.
+> [!NOTE]
+> Windows PowerShell ISE only supports Windows PowerShell versions up to and including 5.1. It doesn't support subsequent versions of PowerShell (6.x or 7.x). You can use Microsoft Visual Studio Code with the PowerShell extension if you are looking for a similar scripting environment as the one that Windows PowerShell ISE provides.

@@ -2,14 +2,17 @@
 uid: learn.wwl.review-windows-powershell
 metadata:
   title: Review Windows PowerShell
-  description: "This module introduces you to Windows PowerShell and its various versions. It explains how to open and configure commonly used host applications such as the Windows PowerShell console and Windows PowerShell Integrated Scripting Environment (ISE). It also explains how to use Microsoft Visual Studio Code (VS Code) to develop PowerShell scripts."
-  ms.date: 07/20/2022
+  description: "This module introduces
+you to Windows PowerShell and its versions. It discusses commonly used host
+applications. It explains how to use Microsoft Visual Studio Code (VS Code) to
+develop PowerShell scripts."
+  ms.date: 07/26/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Review Windows PowerShell
-summary: This module introduces you to Windows PowerShell and its various versions. It explains how to open and configure commonly used host applications such as the Windows PowerShell console and Windows PowerShell Integrated Scripting Environment (ISE). It also explains how to use Microsoft Visual Studio Code (VS Code) to develop PowerShell scripts.
+summary: This module introduces you to Windows PowerShell and its versions. It discusses commonly used host applications. It explains how to use Microsoft Visual Studio Code (VS Code) to develop PowerShell scripts.
 abstract: |
   Upon completion of this module, the learner will be able to:
   *   Describe Windows PowerShell and its major versions.

@@ -7,7 +7,7 @@ In this module, you were introduced to Windows PowerShell and its functionalitie
 - The Windows PowerShell ISE allows for customizing of panes and views. It is a graphical environment that provides a script editor, a debugger, an interactive console, and several auxiliary tools.
 - Visual Studio Code (VS Code) is a Microsoft script editor that provides a rich and interactive script editing experience. 
 
-## Additional Reading
+## Additional reading
 
 To learn more, go through the following documents:
 - [PowerShell Documentation](https://aka.ms/powershell-documentation)
