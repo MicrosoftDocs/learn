@@ -1,4 +1,4 @@
-In this exercise, you will use Data Migration Assistant to assess your existing Social database for any issues and to ensure that it is compatible with Azure SQL Database. A successful assessment is an important step to ensure your company's database can be successfully migrated to Azure.
+In this exercise, you'll use Data Migration Assistant to assess your existing Social database for any issues and to ensure that it's compatible with Azure SQL Database. A successful assessment is an important step to ensure your company's database can be successfully migrated to Azure.
 
 You start by installing Data Migration Assistant on your SQL Server instance.
 
@@ -86,9 +86,9 @@ In the middle of the page, look for the section **Unsupported features**. The se
 
 Look more closely at the first row, though, and you'll see the issue, **Service Broker feature is not supported in Azure SQL Database. Azure SQL Database does not support trace flags.** The information for that issue includes instructions about how to solve it. The database that you're migrating doesn't need this feature, so you can disable it without any problems.
 
-**Restart the Data migration Assistant tool.**
+**Restart the Data Migration Assistant tool.**
 
-In the left pane, select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them and you would need to resolve them before you could continue the migration.
+In the left pane, select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them, and you would need to resolve them before you could continue the migration.
 
 :::image type="content" source="../media/4-08-compatibility-issues.png" alt-text="Screenshot showing Compatibility issues." loc-scope="azure-database-migration" lightbox="../media/4-08-compatibility-issues.png":::
 
