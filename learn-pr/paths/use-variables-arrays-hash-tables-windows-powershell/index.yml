@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.use-variables-arrays-hash-tables-windows-powershell
+metadata:
+  title: Use variables, arrays, and hash tables in Windows PowerShell scripts
+  description: Use variables, arrays, and hash tables in Windows PowerShell scripts
+  ms.date: 07/26/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use variables, arrays, and hash tables in Windows PowerShell scripts
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+summary: |
+  This learning path explains how to work with variables, arrays, and hash tables in Windows PowerShell scripts.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+modules:
+- learn.wwl.manage-variables-windows-powershell-scripts
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts
+trophy:
+  uid: learn.wwl.use-variables-arrays-hash-tables-windows-powershell.trophy
