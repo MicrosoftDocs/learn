@@ -16,4 +16,5 @@ To retain more control over the amount of data that users can select, you can us
 | Single    | This value allows users to select zero rows or one row in the **Out-GridView** window. |
 | Multiple  | This value allows users to select zero rows, one row, or multiple rows in the **Out-GridView**  window. This value is equivalent to using the -PassThru  parameter. |
 
-> **Note:** Because users aren't forced to select a row in the **Out-GridView** window, you must ensure that your script properly handles the scenario where a row isn't selected.
+> [!NOTE]
+> Because users aren't forced to select a row in the **Out-GridView** window, you must ensure that your script properly handles the scenario where a row isn't selected.

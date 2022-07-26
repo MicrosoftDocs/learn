@@ -1,6 +1,6 @@
 As a best practice, administrators should have two user accounts. Each administrator should have a standard user account that's used for day-to-day activity and a second account with administrative permissions. Separating these roles helps to avoid accidental damage to computer systems and limits the potential effects of malware. The **Get-Credential** cmdlet can help you use the administrative account while you're still signed in to a standard user account.
 
-Many scripts that administrators run require elevated privileges. For example, a script that creates Active Directory Domain Services (AD DS) user accounts requires administrative privileges. Even querying event logs from a remote computer might require administrative privileges.
+Many of the scripts that administrators run require elevated privileges. For example, a script that creates Active Directory Domain Services (AD DS) user accounts requires administrative privileges. Even querying event logs from a remote computer might require administrative privileges.
 
 One way to elevate privileges when you run a script is to use the **Run as administrator** option when you open the Windows PowerShell prompt. If you use **Run as administrator**, you're prompted for credentials. So, all actions performed at that Windows PowerShell prompt use the credentials provided.
 
