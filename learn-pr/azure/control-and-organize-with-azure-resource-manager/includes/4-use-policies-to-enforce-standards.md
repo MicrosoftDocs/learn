@@ -1,14 +1,14 @@
-You're organizing your resources better in resource groups, and you've applied tags to your resources to use them in billing reports and in your monitoring solution. Resource grouping and tagging have made a difference in the existing resources, but how do you ensure that new resources follow the rules? You'll take a look at how policies can help you enforce standards in your Azure environment.
+You're organizing your resources better in resource groups, and you've applied tags to your resources to use them in billing reports and in your monitoring solution. Resource grouping and tagging have made a difference in the existing resources, but how do you ensure that new resources follow the rules? Let's take a look at how policies can help you enforce standards in your Azure environment.
 
 ## What is Azure Policy?
 
 Azure Policy is a service you can use to create, assign, and manage policies. These policies apply and enforce rules that your resources need to follow. These policies can enforce these rules when resources are created, and can be evaluated against existing resources to give visibility into compliance.
 
-Policies can enforce things such as only allowing specific types of resources to be created, or only allowing resources in specific Azure regions. You can enforce naming conventions across your Azure environment. You can also enforce that specific tags are applied to resources. You'll take a look at how policies work.
+Policies can enforce rules such as only allowing specific types of resources to be created, or only allowing resources in specific Azure regions. You can enforce naming conventions across your Azure environment. You can also enforce that specific tags are applied to resources. Let's take a look at how policies work.
 
 ## Create a policy
 
-You'd like to ensure that all resources have the **Department** tag associated with them and block creation if it doesn't exist. You'll need to create a new policy definition and then assign it to a scope; in this case the scope will be our **msftlearn-core-infrastructure-rg** resource group. Policies can be created and assigned through the Azure portal, Azure PowerShell, or Azure CLI. This exercise takes you through creating a policy in the portal.
+You'd like to ensure that all resources have the **Department** tag associated with them, and block creation if the tag doesn't exist. You'll need to create a new policy definition and then assign it to a scope; in this case, the scope will be our **msftlearn-core-infrastructure-rg** resource group. You can create and assign policies through the Azure portal, Azure PowerShell, or Azure CLI. This exercise takes you through creating a policy in the portal.
 
 ### Create the policy definition
 
@@ -16,15 +16,15 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
 1. Select the **Definitions** pane from the **Authoring** section in the left menu.
 
-1. You should see a list of built-in policies that you can use. In this case, you're going to create our own custom policy. Click **+ Policy definition** in the top menu.
+1. You should see a list of built-in policies that you can use. In this case, you're going to create your own custom policy. Click **+ Policy definition** in the top menu.
 
-1. This button brings up the **New policy definition** dialog. To set the **Definition location**, click the blue **...**. Select the subscription for the policy to be stored in, which should be the same subscription as our resource group. Click **Select**.
+1. This button brings up the **New policy definition** dialog. To set the **Definition location**, select the blue **Launch scope selector (...)** icon. Select the subscription in which the policy is stored, which should be the same subscription as our resource group. Click **Select**.
 
-1. Back on the **New policy definition** dialog, for **Name** give your policy a name of `Enforce tag on resource`.
+1. Back on the **New policy definition** dialog, enter `Enforce tag on resource` in the **Name** field.
 
 1. For the **Description**, enter `This policy enforces the existence of a tag on a resource.`
 
-1. For **Category** select **Use existing** and then select the **General** category.
+1. For **Category**, select **Use existing**, then select the **General** category.
 
 1. For the **Policy rule**, delete all text in the box and paste in the following JSON.
 
@@ -52,7 +52,7 @@ You'd like to ensure that all resources have the **Department** tag associated w
     }
     ```
 
-    Your policy definition should look like below. Click **Save** to save your policy definition.
+    Your policy definition should look like the following example. Select **Save** to save your policy definition.
 
     ![Screenshot of Azure portal showing the new policy definition dialog.](../media/4-policy-definition.PNG)
 
@@ -64,9 +64,9 @@ You've created the policy, but you haven't actually put it into effect yet. To e
 
 1. Select **Assign policy** at the top.
 
-1. In the **Assign policy** pane, you'll assign your policy to your resource group. For **Scope**, click the blue **...**. Select your subscription and the **msftlearn-core-infrastructure-rg** resource group, then click **Select**.
+1. In the **Assign policy** pane, you'll assign your policy to your resource group. For **Scope**, select the blue **Launch scope selector (...)** icon. Select your subscription and the **msftlearn-core-infrastructure-rg** resource group, then click **Select**.
 
-1. For **Policy definition**, click the blue **...**. In the **Type** drop-down, select **Custom**, select the **Enforce tag on resource** policy you created, then click **Select**.
+1. For **Policy definition**, select the blue **Launch policy definition picker (...)** icon. In the **Type** drop-down, select **Custom**, select the **Enforce tag on resource** policy you created, then click **Select**.
 
 1. Select **Next** to go to the **Parameters** pane.
 
@@ -83,13 +83,13 @@ Now that you have assigned the policy to your resource group, any attempts to cr
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Search for **Storage account** and select **Storage account** - in the results, select **Create**.
+1. Search for **Storage account** and select **Storage account**. In the results, select **Create**.
 
-1. Select your subscription, and the **msftlearn-core-infrastructure-rg** resource group.
+1. Select your subscription, then select the **msftlearn-core-infrastructure-rg** resource group.
 
 1. For **Storage account name**, give it any name of your choice, but note that it does have to be a globally unique name.
 
-1. Leave the rest of the options at their default, click **Review + create**.
+1. Leave the rest of the options at their default, then select **Review + create**.
 
     Validation of your resource creation will fail because you don't have a **Department** tag applied to the resource. If the policy has not caused a validation failure, you may need to wait a few more minutes for it to be enabled.
 
@@ -103,13 +103,13 @@ Now that you have assigned the policy to your resource group, any attempts to cr
 
     ![Screenshot of Azure portal showing a new Department tag to add during creation.](../media/4-add-department-tag.PNG)
 
-1. Now click **Review + create**. Validation should now pass, and if you click **Create** your storage account will be created.
+1. Now click **Review + create**. Validation should now pass, and if you select **Create**, your storage account will be created.
 
 ## Use policies to enforce standards
 
 You've seen how you could use policies to ensure that your resources have the tags that organize your resources. There are other ways policies can be used to our benefit.
 
-You could use policy to restrict which Azure regions you can deploy resources to. For organizations that are heavily regulated or have legal or regulatory restrictions on where data can reside, policies help to ensure that resources aren't provisioned in geographic areas that would go against these requirements.
+You could use policy to restrict to which Azure regions you can deploy resources. For organizations that are heavily regulated or have legal or regulatory restrictions on where data can reside, policies help to ensure that resources aren't provisioned in geographic areas that would go against these requirements.
 
 You could use policy to restrict which types of virtual machine sizes can be deployed. You may want to allow large VM sizes in your production subscriptions, but maybe you'd like to ensure that you keep costs minimized in your dev subscriptions. By denying the large VM sizes through policy in your dev subscriptions, you can ensure they don't get deployed in these environments.
 

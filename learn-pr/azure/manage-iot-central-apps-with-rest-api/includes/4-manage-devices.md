@@ -16,6 +16,7 @@ The device model section of a device template specifies the capabilities of a de
 - Properties, such as firmware version, that your device will report to IoT Central.
 - Properties, such as target temperature, that IoT Central will set on your device.
 - Commands, such as reboot, that IoT Central will send to your device.
+- Cloud properties, such as last service date, that IoT Central will send to your device.
 
 ![An example device template for a temperature controller device in the IoT Central UI.](../media/4-device-template.png)
 
