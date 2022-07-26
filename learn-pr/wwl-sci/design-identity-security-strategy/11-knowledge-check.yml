@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/08/2022
-  author: hrasheed-msft
+  ms.date: 07/26/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Roll out Azure AD MFA for all users and block legacy authentication using conditional access policies."
       isCorrect: true
-      explanation: "Correct!"
-    - content: "Use Azure AD MFA for only administrators."
+      explanation: "Correct. This solution can be used to enforce strong authentication"
+    - content: "Use Defender for Endpoint to enforce strong authentication."
       isCorrect: false
-      explanation: "Using MFA only for administrators would not allow you to enforce strong authentication across the entire organization."
-    - content: "Use Application Proxy to restrict access to applications."
+      explanation: "Incorrect. This solution cannot be used to enforce strong authentication."
+    - content: "Use Azure AD Identity Protection for only administrators."
       isCorrect: false
-      explanation: "Using Application proxy would only help to secure applications, but would not affect authentication across the entire organization."
+      explanation: "Incorrect. This solution cannot be used to enforce strong authentication."
   - content: "How can Tailwind Traders reduce the risk of phishing and password attacks to secure their Azure environment?"
     choices:
     - content: "Enforce Azure AD to deploy FIDO 2.0 or password-less phone sign-in to reduce the risk of phishing and password attacks."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct. This solution can be used to reduce the risk of phishing and password attacks to secure an Azure environment."
     - content: "Use ADFS to enforce authentication for legacy applications."
       isCorrect: false
-      explanation: "ADFS provides single sign-on capabilities, but does not inherently reduce the risk of phishing and password attacks."
+      explanation: "Incorrect. This solution cannot be used to reduce the risk of phishing and password attacks to secure an Azure environment."
     - content: "Enable Azure AD Hybrid Join to block access from clients."
       isCorrect: false
-      explanation: "Azure AD Hybrid has limited authentication options and does not inherently reduce the risk of phishing and password attacks."
+      explanation: "Incorrect. This solution cannot be used to reduce the risk of phishing and password attacks to secure an Azure environment."
   - content: "What solution can Tailwind Traders use to monitor for user behavior inside SaaS and modern applications?"
     choices:
     - content: "Enable Microsoft Defender for Cloud Apps integration with Identity Protection."
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct. This solution can be used to monitor user behavior inside SaaS and modern applications!"
     - content: "Use Intune to monitor for abnormal behavior with applications."
       isCorrect: false
-      explanation: "Intune does not monitor for abnormal use of applications."
+      explanation: "Incorrect. This solution cannot be used to monitor user behavior inside SaaS and modern applications."
     - content: "Enforce Azure Active Directory B2C to implement secure white-label authentication."
       isCorrect: false
-      explanation: "Azure Active Directory B2C is an authentication solution. It does not handle monitoring of user behavior."
+      explanation: "Incorrect. This solution cannot be used to monitor user behavior inside SaaS and modern applications"
