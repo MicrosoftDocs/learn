@@ -4,4 +4,5 @@ You can review a complete list of these topics by running **Get-Help about\***, 
 
 When you use wildcard characters with the **Get-Help** command, **About** help files will appear in a list when their titles contain a match for your wildcard pattern. Typically, **About** help files will appear last, after any commands whose names also matched your wildcard pattern. You can also use the *‑Category* parameter to specify a search for **About** files.
 
-**Note:** For much of this course, you'll need to refer to **About** files for additional documentation. Frequently, you must review these files to discover the steps and techniques you need to complete lab exercises.
+> [!NOTE] 
+> For much of this course, you'll need to refer to **About** files for additional documentation. You must review these files frequently to discover the steps and techniques you need to complete lab exercises.
