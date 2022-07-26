@@ -3,6 +3,7 @@ To conclude this module, you'll run the producer app to send 100 events to your 
 1.  In the Git Bash window, set the current working directory to the **extra** folder and run the TestProducer application.
     
     ```
+    cd ~/projects/azure-event-hubs-for-kafka/quickstart/java/producer
     mvn exec:java -Dexec.mainClass="TestProducer"
     ```
 
@@ -11,8 +12,8 @@ To conclude this module, you'll run the producer app to send 100 events to your 
 4.  From the same Git Bash window, run the following command to start the log stream output for the **customers-service**.
     
     ```
-    az spring-cloud app logs -f \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app logs -f \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service
     ```
