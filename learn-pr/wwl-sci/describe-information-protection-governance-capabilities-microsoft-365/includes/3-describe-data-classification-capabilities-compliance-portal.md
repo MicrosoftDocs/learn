@@ -30,6 +30,8 @@ Data classification in Microsoft Purview also supports the ability to create cus
 
 Also supported is exact data match (EDM) classification. EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information.
 
+To explore how to classify data using sensitive info types with Microsoft Purview Information Protection, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.
+
 ## Trainable classifiers
 
 Trainable classifiers use artificial intelligence and machine learning to intelligently classify your data. They're most useful classifying data unique to an organization like specific kinds of contracts, invoices, or customer records. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching).
@@ -100,7 +102,6 @@ The video below walks you through the various data classification capabilities a
 
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the video may not reflect the most recent updates.
-
 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]

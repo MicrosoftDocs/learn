@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.manage-variables-windows-powershell-scripts
+metadata:
+  title: Manage variables in Windows PowerShell scripts
+  description: "This module explains how to create variables, name them correctly, and assign the correct data type, while ensuring the data you store in variables is in the correct format and easily accessible."
+  ms.date: 07/25/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage variables in Windows PowerShell scripts
+summary: This module explains how to create variables, name them correctly, and assign the correct data type, while ensuring the data you store in variables is in the correct format and easily accessible.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain the purpose of variables.
+  - Describe the naming rules for using variables.
+  - Explain how to assign a value to a variable.
+  - Describe variable types.
+  - Explain how to assign a variable type.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.manage-variables-windows-powershell-scripts.introduction
+- learn.wwl.manage-variables-windows-powershell-scripts.define-variables
+- learn.wwl.manage-variables-windows-powershell-scripts.create-variable-names
+- learn.wwl.manage-variables-windows-powershell-scripts.assign-values-types-variables
+- learn.wwl.manage-variables-windows-powershell-scripts.identify-methods-properties-of-variables
+- learn.wwl.manage-variables-windows-powershell-scripts.use-string-variables-methods
+- learn.wwl.manage-variables-windows-powershell-scripts.use-date-variables-methods
+- learn.wwl.manage-variables-windows-powershell-scripts.knowledge-check
+- learn.wwl.manage-variables-windows-powershell-scripts.summary
+badge:
+  uid: learn.wwl.manage-variables-windows-powershell-scripts.badge
