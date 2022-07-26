@@ -22,11 +22,11 @@ To set up a Blazor Hybrid project to work with, we'll use Visual Studio 2022.
 
 2. In the search box at the top of the "Create a new project" dialog, key in ".NET MAUI Blazor" and select ".NET MAUI Blazor App" and select "Next"
 
-    ![Screenshot of Visual Studio 2022 'Create New Project' screen and the .NET MAUI Blazor App template.](../media/visual-studio-2022-create-new-project.png)
+    ![Screenshot of the Visual Studio 2022 Create New Project screen and the .NET MAUI Blazor App template.](../media/visual-studio-2022-create-new-project.png)
 
 3. On the subsequent screen, name your project "BlazorHybridApp" and specify a location on disk with settings like the following and then select 'Next':
 
-   ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
+   ![Screenshot of the Visual Studio 2022 Configure Your Project screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
 4. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and select 'Create'
 

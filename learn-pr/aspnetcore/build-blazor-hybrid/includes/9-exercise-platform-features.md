@@ -81,4 +81,4 @@ In this exercise, you'll add the ability to save and load the todo list to the f
 
 1. Add items, edit items, and mark todo items done to test the component. Select the `Save` button to save items to the disk, and then close the app or make changes and select `Load` to load the saved data.
 
-   ![Screenshot of the completed ToDo page with load and save buttons](../media/todo-complete-save-load.png)
+   ![Screenshot of the completed ToDo page with load and save buttons.](../media/todo-complete-save-load.png)

@@ -26,7 +26,7 @@ If you still have the app running save the file, and select the hot reload (Alt+
 
 When you're ready to stop, return to Visual Studio 2022, and press Shift+F5 to stop the app.
 
-![Screenshot of the counter component on the home page](../media/counter-homepage.png)
+![Screenshot of the counter component on the home page.](../media/counter-homepage.png)
 
 ## Modify a component
 
@@ -77,4 +77,4 @@ Start the app again by selecting **Debug** > **Start Debugging**
 
 The `Index` component now has its own counter that increments by 10 each time the **Click me** button is selected, as shown in the following image. The `Counter` component (_Counter.razor_) at `/counter` continues to increment by one.
 
-![Screenshot of the home page with Counter update](../media/counter-homepage-modify.png)
+![Screenshot of the home page with Counter update.](../media/counter-homepage-modify.png)
