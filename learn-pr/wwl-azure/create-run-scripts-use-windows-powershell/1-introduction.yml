@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-web-app-settings.summary
-title: Summary
+uid: learn.wwl.create-run-scripts-use-windows-powershell.introduction
+title: Introduction
 metadata:
-  title: Summary
-  description: "Summary"
+  title: Introduction
+  description: "Introduction"
   ms.date: 07/26/2022
   author: wwlpublish
-  ms.author: jeffko
+  ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/1-introduction.md)]
