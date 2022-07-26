@@ -34,7 +34,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
     - A back-end pool containing the IP addresses of the web server virtual machines.
     - A firewall that blocks malicious requests, such as those used by SQL Injection and Cross-Site Scripting attacks.
-    - A temporary listener that listens to port 8080, this will be replaced in a later step but is required for Application Gateway creation.
+    - A temporary listener that listens to port 8080. This listener will be replaced in a later step but is required for Application Gateway creation.
     - A rule that routes (and load balances) these requests to the web servers in the back-end pool.
 
     ```azurecli
@@ -56,7 +56,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     > [!NOTE]
     > This command can take several minutes to complete.
 
-1. To find the private IP addresses of  `webServer1` and `webServer2`, run the following commands. You will save these to variables to use in the next command.
+1. To find the private IP addresses of  `webServer1` and `webServer2`, run the following commands.
 
     ```azurecli
     az vm list-ip-addresses \
@@ -119,7 +119,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
 
 1. Create a health probe that tests the availability of a web server. The health probe runs every 15 seconds (`--interval 15`), and sends an HTTP GET request to the root path of the web app. If the web app doesn't respond within 10 seconds (`--timeout 10`), the probe times out. The web server is marked as unhealthy if the probe fails three times in succession (`--threshold 3`).
 
-    Because you're using App Service as one of our back-ends, you will set the host header to the name of the App Service. Without this setting, the App Service won't respond and will not show as healthy.
+    Because you're using App Service as one of our back-ends, you'll set the host header to the name of the App Service. Without this setting, the App Service won't respond and won't show as healthy.
 
     ```azurecli
     az network application-gateway probe create \
