@@ -6,7 +6,7 @@ In your first week on your new job, you've looked through the existing resources
 
 ## What are resource groups?
 
-Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription; for example, virtual machines, Application Gateways, and CosmosDB instances. All resources must be in a resource group, and a resource can only be a member of a single resource group. Many resources can be moved between resource groups, with some services having specific limitations or requirements to move. Resource groups can't be nested. Before you can provision any resource, you need a resource group in which to place it.
+Resource groups are a fundamental element of the Azure platform. A resource group is a logical container for resources deployed on Azure. These resources are anything you create in an Azure subscription; for example, virtual machines, Application Gateways, and Cosmos DB instances. All resources must be in a resource group, and a resource can only be a member of a single resource group. Many resources can be moved between resource groups, with some services having specific limitations or requirements to move. Resource groups can't be nested. Before you can provision any resource, you need a resource group in which to place it.
 
 ### Logical grouping
 
@@ -74,7 +74,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 1. On the **Overview** page, you'll find the basic information about the resource group, such as its subscription, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. The deployments link takes you to a new panel with the history of all deployments to this resource group. Anytime you create a resource, it's a deployment, and you'll see the history for each resource group here.
 
-    Using the toolbar across the top the resource group page, you can add more resources, change the columns in the list, move the resource group to another subscription, or delete it entirely.
+    Using the toolbar across the top of the resource group page, you can add more resources, change the columns in the list, move the resource group to another subscription, or delete it entirely.
 
     On the left menu, there are a number of options.
 
