@@ -49,7 +49,8 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
     --http-settings-protocol Http \
     --http-settings-port 8080 \
     --private-ip-address 10.0.0.4 \
-    --frontend-port 8080
+    --frontend-port 8080 \
+    --priority 100
     ```
 
     > [!NOTE]
@@ -64,6 +65,7 @@ In this exercise, you'll create an instance of Application Gateway with a back-e
       --query [0].virtualMachine.network.privateIpAddresses[0] \
       --output tsv
     ```
+
     ```azurecli
     az vm list-ip-addresses \
       --resource-group $RG \
@@ -180,6 +182,7 @@ Now we need to configure path-based routing for our Application gateway. We'll r
         --resource-group $RG \
         --gateway-name vehicleAppGateway \
         --name appServiceRule \
+        --priority 200 \
         --http-listener vehicleListener \
         --rule-type PathBasedRouting \
         --address-pool appServicePool \
