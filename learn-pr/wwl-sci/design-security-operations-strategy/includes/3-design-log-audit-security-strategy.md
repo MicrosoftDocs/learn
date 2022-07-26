@@ -99,7 +99,7 @@ The following table lists the most important types of logs available in Azure:
 | [Activity logs](/azure/azure-monitor/essentials/platform-logs-overview) | Control-plane events on Azure Resource Manager resources | Provides insight into the operations that were performed on resources in your subscription. | REST API, [Azure Monitor](/azure/azure-monitor/essentials/platform-logs-overview) |
 | [Azure Resource logs](/azure/azure-monitor/essentials/platform-logs-overview) | Frequent data about the operation of Azure Resource Manager resources in the subscription | Provides insight into operations that your resource itself performed. | [Azure Monitor](/azure/azure-monitor/essentials/platform-logs-overview) |
 | [Azure Active Directory reporting](/azure/active-directory/reports-monitoring/overview-reports) | Logs and reports | Reports user sign-in activities and system activity information about users and group management. | [Graph API](/azure/active-directory/develop/microsoft-graph-intro) |
-| [Virtual machines and cloud services](/azure/azure-monitor/vm/monitor-virtual-machine) | Windows Event Log service and Linux Syslog | Captures system data and logging data on the virtual machines and transfers that data into a storage account of your choice. | Windows (using Windows Azure Diagnostics [WAD](/azure/azure-monitor/agents/diagnostics-extension-overview) storage) and Linux in Azure Monitor |
+| [Virtual machines and cloud services](/azure/azure-monitor/vm/monitor-virtual-machine) | Windows Event Log service and Linux Syslog | Captures system data and logging data on the virtual machines and transfers that data into a storage account of your choice. | Windows (using Microsoft Azure Diagnostics [WAD](/azure/azure-monitor/agents/diagnostics-extension-overview) storage) and Linux in Azure Monitor |
 | [Azure Storage Analytics](/rest/api/storageservices/fileservices/storage-analytics) | Storage logging, provides metrics data for a storage account | Provides insight into trace requests, analyzes usage trends, and diagnoses issues with your storage account. | REST API or the [client library](/dotnet/api/overview/azure/storage) |
 | [Network security group (NSG) flow logs](/azure/network-watcher/network-watcher-nsg-flow-logging-overview) | JSON format, shows outbound and inbound flows on a per-rule basis | Displays information about ingress and egress IP traffic through a Network Security Group. | [Azure Network Watcher](/azure/network-watcher/network-watcher-monitoring-overview) |
 | [Application insight](/azure/azure-monitor/app/app-insights-overview) | Logs, exceptions, and custom diagnostics | Provides an application performance monitoring (APM) service for web developers on multiple platforms. | REST API, [Power BI](https://powerbi.microsoft.com/documentation/powerbi-azure-and-power-bi/) |
@@ -107,23 +107,29 @@ The following table lists the most important types of logs available in Azure:
 
 ## Logging and auditing issues with common cloud services 
 
-Azure provides a wide array of configurable security auditing and logging options to help you identify gaps in your security policies and mechanisms. The table below provides additional information about generating, collecting, and analyzing security logs from various services hosted on Azure.
+Azure provides a wide array of configurable security auditing and logging options to help you identify gaps in your security policies and mechanisms. The list below provides additional information about generating, collecting, and analyzing security logs from various services hosted on Azure.
 
-| Product/Service | Article | 
-|:-:|:-:|
-| Dynamics CRM | [Identify sensitive entities in your solution and implement change auditing](/azure/security/develop/threat-modeling-tool-auditing-and-logging#sensitive-entities) |
-| Web Application | [Ensure that auditing and logging is enforced on the application](/azure/security/develop/threat-modeling-tool-auditing-and-logging#auditing) |
-| | [Ensure that log rotation and separation are in place](/azure/security/develop/threat-modeling-tool-auditing-and-logging#log-rotation) |
-| | [Ensure that the application does not log sensitive user data](/azure/security/develop/threat-modeling-tool-auditing-and-logging#log-sensitive-data) |
-| | [Ensure that Audit and Log Files have Restricted Access](/azure/security/develop/threat-modeling-tool-auditing-and-logging#log-restricted-access) |
-| | [Ensure that User Management Events are Logged](/azure/security/develop/threat-modeling-tool-auditing-and-logging#user-management) |
-| | [Ensure that the system has inbuilt defenses against misuse](/azure/security/develop/threat-modeling-tool-auditing-and-logging#inbuilt-defenses) |
-| | [Enable diagnostics logging for web apps in Azure App Service](/azure/security/develop/threat-modeling-tool-auditing-and-logging#diagnostics-logging) |
-| Database | [Ensure that login auditing is enabled on SQL Server](/azure/security/develop/threat-modeling-tool-auditing-and-logging#identify-sensitive-entities) |
-| | [Enable Threat detection on Azure SQL](/azure/security/develop/threat-modeling-tool-auditing-and-logging#threat-detection) |
-| Azure Storage | [Use Azure Storage Analytics to audit access of Azure Storage](/azure/security/develop/threat-modeling-tool-auditing-and-logging#analytics) |
-| WCF | [Implement sufficient Logging](/azure/security/develop/threat-modeling-tool-auditing-and-logging#sufficient-logging) |
-| | [Implement sufficient Audit Failure Handling](/azure/security/develop/threat-modeling-tool-auditing-and-logging#audit-failure-handling) |
-| Web API | [Ensure that auditing and logging is enforced on Web API](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-web-api) |
-| IoT Field Gateway | [Ensure that appropriate auditing and logging is enforced on Field Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-field-gateway) |
-| IoT Cloud Gateway | [Ensure that appropriate auditing and logging is enforced on Cloud Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-cloud-gateway) |
+* Dynamics CRM 
+    * [Identify sensitive entities in your solution and implement change auditing](/azure/security/develop/threat-modeling-tool-auditing-and-logging#sensitive-entities)
+* Web Application 
+    * [Ensure that auditing and logging is enforced on the application](/azure/security/develop/threat-modeling-tool-auditing-and-logging#auditing)
+    * [Ensure that log rotation and separation are in place](/azure/security/develop/threat-modeling-tool-auditing-and-logging#log-rotation)
+    * [Ensure that the application does not log sensitive user data](/azure/security/develop/threat-modeling-tool-auditing-and-logging#log-sensitive-data)
+    * [Ensure that Audit and Log Files have Restricted Access](/azure/security/develop/threat-modeling-tool-auditing-and-logging#log-restricted-access)
+    * [Ensure that User Management Events are Logged](/azure/security/develop/threat-modeling-tool-auditing-and-logging#user-management)
+    * [Ensure that the system has inbuilt defenses against misuse](/azure/security/develop/threat-modeling-tool-auditing-and-logging#inbuilt-defenses)
+    * [Enable diagnostics logging for web apps in Azure App Service](/azure/security/develop/threat-modeling-tool-auditing-and-logging#diagnostics-logging)
+* Database
+    * [Ensure that login auditing is enabled on SQL Server](/azure/security/develop/threat-modeling-tool-auditing-and-logging#identify-sensitive-entities)
+    * [Enable Threat detection on Azure SQL](/azure/security/develop/threat-modeling-tool-auditing-and-logging#threat-detection)
+* Azure Storage
+    * [Use Azure Storage Analytics to audit access of Azure Storage](/azure/security/develop/threat-modeling-tool-auditing-and-logging#analytics)
+* Windows Communication Foundation
+    * [Implement sufficient Logging](/azure/security/develop/threat-modeling-tool-auditing-and-logging#sufficient-logging)
+    * [Implement sufficient Audit Failure Handling](/azure/security/develop/threat-modeling-tool-auditing-and-logging#audit-failure-handling)
+* Web API
+    * [Ensure that auditing and logging is enforced on Web API](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-web-api)
+* IoT Field Gateway
+    * [Ensure that appropriate auditing and logging is enforced on Field Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-field-gateway)
+* IoT Cloud Gateway
+    * [Ensure that appropriate auditing and logging is enforced on Cloud Gateway](/azure/security/develop/threat-modeling-tool-auditing-and-logging#logging-cloud-gateway)
