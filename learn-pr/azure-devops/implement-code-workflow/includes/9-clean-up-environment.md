@@ -57,7 +57,7 @@ To delete the project:
 
 To delete the repository:
 
-1. In GitHub, go to your repository, *https://github.com/username/mslearn-tailspin-spacegame-web*.
+1. In GitHub, go to your repository, `https://github.com/username/mslearn-tailspin-spacegame-web`.
 1. Select the **Settings** tab and then select **General** in the left menu.
 1. Scroll down and select **Delete this repository**.
 1. Enter the name of your repository to confirm and delete.
