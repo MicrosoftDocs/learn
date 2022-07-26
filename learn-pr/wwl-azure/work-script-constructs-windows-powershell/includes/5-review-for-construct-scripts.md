@@ -12,4 +12,5 @@ The **For** construct uses an initial state, a condition, and an action. In the 
 
 The script block inside the braces is run each time the loop is processed. In the previous example, this loop is processed 10 times.
 
-> **Note:** When you're processing an array of objects, using the **ForEach** construct is preferred because you don't need to calculate the number of items in the array before processing.
+> [!NOTE]
+> When you're processing an array of objects, using the **ForEach** construct is preferred because you don't need to calculate the number of items in the array before processing.

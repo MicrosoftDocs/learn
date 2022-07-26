@@ -18,4 +18,5 @@ If the first condition isn't true, the condition `$freeSpace -le 10GB` that's de
 
 If all conditions aren't true, then the script block for **Else** is run. **Else** is optional.
 
-> **Note:** When you're making multiple decisions based on a single variable, using multiple **ElseIf** script blocks rather than nesting multiple **If** statements is preferred.
+> [!NOTE]
+> When you're making multiple decisions based on a single variable, using multiple **ElseIf** script blocks rather than nesting multiple **If** statements is preferred.

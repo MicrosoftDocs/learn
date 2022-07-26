@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/25/2022
+  ms.date: 07/26/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,9 +18,6 @@ quiz:
   questions:
   - content: "Which construct should you use to process an array when you're not sure how many items will be in the array?"
     choices:
-    - content: "**If**"
-      isCorrect: false
-      explanation: "Incorrect. A **ForEach** loop operates once for each item in an array. You don't need to know the number of items in the array."
     - content: "**Switch**"
       isCorrect: false
       explanation: "Incorrect. A **ForEach** loop operates once for each item in an array. You don't need to know the number of items in the array."
@@ -30,3 +27,14 @@ quiz:
     - content: "**ForEach**"
       isCorrect: true
       explanation: "Correct. A **ForEach** loop operates once for each item in an array. You don't need to know the number of items in the array."
+  - content: "Which loop construct in PowerShell supports processing multiple objects simultaneously?"
+    choices:
+    - content: "**ForEach**"
+      isCorrect: true
+      explanation: "Correct. **ForEach** loops include support for the **-Parallel** parameter, which provides the ability to process multiple objects simultaneously."
+    - content: "**Do..Until**"
+      isCorrect: false
+      explanation: "Correct. **ForEach** loops include support for the **-Parallel** parameter, which provides the ability to process multiple objects simultaneously."
+    - content: "**While**"
+      isCorrect: false
+      explanation: "Incorrect. **ForEach** loops include support for the **-Parallel** parameter, which provides the ability to process multiple objects simultaneously."
