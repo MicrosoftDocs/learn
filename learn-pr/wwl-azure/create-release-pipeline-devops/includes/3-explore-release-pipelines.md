@@ -1,6 +1,6 @@
 A release pipeline takes artifacts and releases them through stages and finally into production.
 
-:::image type="content" source="../media/pipeline-7793ffc6.png" alt-text="Release Pipeline.":::
+:::image type="content" source="../media/pipeline-7793ffc6.png" alt-text="Screenshot of a release pipeline with dev, QA and production stages.":::
 
 
 Let us quickly walk through all the components step by step.
@@ -19,17 +19,17 @@ A trigger can be:
  -  A scheduled trigger, where a release is triggered based on a specific time.
  -  A continuous deployment trigger, where another event triggers a release. For example, a completed build.
 
-Another vital component of a release pipeline is stages or sometimes called environments. It's where the artifact will be eventually installed. For example, the artifact contains the compiled website installed on the webserver or somewhere in the cloud. You can have many stages (environments), and part of the release strategy is finding out the appropriate combination of stages.
+Another vital component of a release pipeline is stages or sometimes called environments. It's where the artifact will be eventually installed. For example, the artifact contains the compiled website installed on the webserver or somewhere in the cloud. You can have many stages (environments); part of the release strategy is finding the appropriate combination of stages.
 
 Another component of a release pipeline is approval.
 
-In many cases, people want to sign out a release before it's installed in the environment.
+People often want to sign a release before installing it in the environment.
 
 In more mature organizations, this manual approval process can be replaced by an automatic process that checks the quality before the components move on to the next stage.
 
 Finally, we have the tasks within the various stages. The tasks are the steps that need to be executed to install, configure, and validate the installed artifact.
 
-In this part of the module, we'll walk through all the components of the release pipeline in detail and talk about what to consider for each element.
+In this part of the module, we'll detail all the release pipeline components and talk about what to consider for each element.
 
 The components that make up the release pipeline or process are used to create a release. There's a difference between a release and the release pipeline or process. The release pipeline is the blueprint through which releases are done. We'll cover more of it when discussing the quality of releases and releases processes.
 
