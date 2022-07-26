@@ -53,7 +53,7 @@ Selecting the bell icon displays the **Notifications** pane. This pane lists the
 
 ### Settings
 
-Select the **Gear** icon to change the Azure portal settings. In the tabs at the left, you'll find:
+Select the **Gear** icon to change the Azure portal settings. In the tabs at the left, you'll find options such as:
 
 - Inactivity sign out delay
 - Default view when you first sign in
@@ -67,15 +67,15 @@ Select the **Gear** icon to change the Azure portal settings. In the tabs at the
 
 Select the **question mark** icon to show the **Help** pane. Here you choose from several options, including:
 
-- Help + Support
-- Service help
+- Help + support
+- Service health
 - Support resources
 
 #### Help and support options
 
-**Help + support** opens the main help and support area for the Azure portal and includes documentation options for a variety of common questions. One of the hidden areas here is the **Create support request** button, which is on this page. This is how you can open a support ticket with the Azure team.
+**Help + support** opens the main help and support area for the Azure portal and includes documentation options for a variety of common questions. Near the top of the page you'll see **Create a support request**. This is how you can open a support ticket with the Azure team.
 
-All Azure customers can access billing, quota, and subscription-management support. *The availability of support for other issues depends on the support plan you have*.
+All Azure customers can access support for billing, quota, and subscription management. The availability of support for other issues depends on the support plan you have.
 
 When you open a support ticket, you'll complete the form by using provided dropdown lists and text-entry fields.
 
@@ -83,10 +83,9 @@ Once you've filled out the form, select **Create** to submit your support reques
 
 You can then check the status and details of your support request, by going to **Help** > **Help +support** > **All support requests**.
 
-
 ### Feedback pane
 
-The **Feedback** icon on the top-right side of the screen opens the **Send us feedback** pane. Here, you can send feedback to Microsoft about Azure. You can decide as part of your feedback whether Microsoft can respond to your feedback by email.
+The **Feedback** icon on the top-right side of the screen opens a pane that lets you send feedback about Azure to Microsoft. You can decide whether or not to allow Microsoft to respond to your feedback by email.
 
 ### Profile settings
 
@@ -103,7 +102,6 @@ Select the "..." button on the right-hand side for options to:
 - Update your contact information
 
 If you select "..." and then **View my bill**, Azure takes you to the **Cost Management + Billing - Overview** page, which helps you analyze where Azure is generating costs.
-
 
 ### Azure Advisor
 
