@@ -1,6 +1,6 @@
 In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
-In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the directory extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app would make on behalf of a signed-in user.
+In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the directory extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of a signed-in user.
 
 ## Authenticate your session
 
@@ -162,14 +162,13 @@ HTTP/1.1 204 No Content
 
 ## Dynamically add users to internal groups based on their user profile data
 
-Assuming you created the dynamic "Xbox gamers" group in the previous exercise. In this exercise, you update the group **membershipRule** setting to configure the rule that only users with Xbox gamer tags can be members of the group.
+Assume you created the dynamic "Xbox gamers" group in the previous exercise. In this exercise, you update the group **membershipRule** setting to configure the rule that only users with Xbox gamer tags can be members of the group.
 
-> [!NOTE]
-> Because Adele is already a member of the Xboxers gamers group due to the previous exercise, you can choose to reset the group and remove all memberships. To achieve this:
-> 1. Update the **groupTypes** to `Unified` only, and the **membershipRuleProcessingState** and **membershipRule** to `null`.
-> 1. Remove the current group members from the Xboxers group.
-> 
-> You can alternatively choose to create a new dynamic group for this part of the exercise.
+Because Adele is already a member of the Xboxers gamers group due to the previous exercise, you can choose to reset the group and remove all memberships. To achieve this:
+1. Update the **groupTypes** to `Unified` only, and the **membershipRuleProcessingState** and **membershipRule** to `null`.
+1. Remove the current group members from the Xboxers group.
+
+You can alternatively choose to create a new dynamic group for this part of the exercise.
 
 ### Request
 

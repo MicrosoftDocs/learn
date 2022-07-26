@@ -1,8 +1,6 @@
-## Extension attributes
+Microsoft Graph provides four types of extensions for storing custom user data. The first type is **extension attributes**. Here, you'll learn how to use the extension attributes to store the three pieces of user data about the employees.
 
-The Microsoft Graph **user** resource provides 15 predefined extension attribute properties for adding custom data. As these are predefined generic data storage properties, you can only add, update, or delete the data they store.
-
-### How extension attributes are presented for use
+## How extension attributes are presented for use
 
 The Microsoft Graph **user** resource includes a predefined property called **onPremisesExtensionAttributes**. This property was initially intended to allow tenants to sync data from on-premises Active Directory (AD), hence the name. However, for users who aren't synced from on-premises AD, you can use Microsoft Graph to store and manage the data in this property.
 
@@ -32,7 +30,7 @@ The following is a JSON representation of the **onPremisesExtensionAttributes** 
 }
 ```
 
-### Use extension attribute properties
+## Use extension attribute properties
 
 You manage the extension attribute properties on user profiles through the same HTTP methods used to manage user objects.
 
@@ -45,7 +43,7 @@ You don't need to store data in all extension attributes. You only store data ba
 
 You also don't need to use the extension attributes in their logical order. For example, you can choose to use **extensionAttribute14** only or **extensionAttribute1** and **extensionAttribute9** only. To store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag, you can choose to use **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
-#### Query capabilities supported by extension attribute properties
+### Query capabilities supported by extension attribute properties
 
 In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** property isn't returned by default and you must therefore use the `$select` query parameter to read it.
 
@@ -55,13 +53,13 @@ Extension attribute properties are specially indexed in Microsoft Graph for adva
 
 While Microsoft Graph supports the `$filter` and `$select` query parameters, it doesn't support directly retrieving only a subset of the 15 properties nested in the **onPremisesExtensionAttributes** object.
 
-### Other Azure AD scenarios for custom data in extension attribute properties
+## Other Azure AD scenarios for the custom extension data
 
 While you'll use the extension attribute properties to store data required by the team bonding app, Azure AD also supports the following use cases for the custom data.
 + Use extensions data as rules for dynamic groups memberships
 + Use extensions data to customize claims
 
-#### Dynamically add users to internal groups based on their user profile data
+### Use extensions data to dynamically add users to internal groups
 
 Suppose you want to seamlessly bring together employees with shared interests. For example, you want Xbox gamers to interact with each other through Yammer communities, Teams chats, and email, share tips, plan team playoffs and have fun together.
 
@@ -69,7 +67,7 @@ Microsoft Graph groups allow an organization to bring together users with common
 
 To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community from the group.
 
-#### Customize tokens using data in extension attribute properties
+### Use extensions data to customize tokens
 
 Another Azure AD use case for the extension attribute properties and their data is customizing tokens with custom claims.
 
@@ -77,7 +75,7 @@ An app may require some additional user information that's not available in toke
 
 Extension attributes can therefore be used in custom claims to achieve this customized configuration.
 
-### Considerations for using extension attribute properties
+## Considerations for using extension attribute properties
 
 The **onPremisesExtensionAttributes** object can be updated only for users who aren't synced from on-premises AD.
 

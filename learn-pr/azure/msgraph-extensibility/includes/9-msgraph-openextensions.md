@@ -1,3 +1,5 @@
+You've learnt to use three types of extensions to store custom values and query the data. You've also learnt the additional scenarios that each extension option supports. Here, you'll learn to use the fourth type of extension, **open extensions**.
+
 ## Open extensions
 
 The Microsoft Graph open extensions are only available for use by specific resources in Microsoft Graph including the **user** resource.
@@ -58,13 +60,13 @@ You manage open extensions for users as follows:
 
 During their use, maintain the [Considerations for using open extensions](#considerations-for-using-open-extensions).
 
-#### Query capabilities supported by open extension properties
+### Query capabilities supported by open extension properties
 
 Open extensions don't support any OData query parameters.
 
 Your app must retrieve the open extension and all it's related values then apply client-side filtering and matching to find matches in the data.
 
-### Considerations for using open extensions
+## Considerations for using open extensions
 
 For users and other Microsoft Graph directory objects, you can only have two open extensions per creator app and a maximum of 2 Kb of data per open extension.
 

@@ -1,6 +1,6 @@
-## Directory (Azure AD) extensions
+You've learnt to use extension attributes to store custom values, query the data, and use the data to define rules for dynamic groups. Here, you'll learn to use the second type of extension, **directory extensions**.
 
-### Directory extension definitions
+## Directory extension definitions
 
 Before you can use directory extensions, you must define them in an application that becomes the directory extension "owner app".
 
@@ -30,18 +30,16 @@ After the directory extension definition has been created, it's immediately avai
 
 Directory extension definitions can't be updated to avoid breaking changes when the extensions are in use. When deleted, they immediately become inaccessible on the target object. For more information, see the [Considerations for using directory extensions](#considerations-for-using-directory-extensions).
 
-#### Directory extensions and multi-tenant apps
-
 Because directory extensions are closely tied to an owner app, they are also available for use by other tenants where the app has been consented to.
 
-### Manage directory extension definitions
+## Manage directory extension definitions
 
 You manage the directory extension definitions as follows.
 + Use POST to create a new definition and its associated directory extension property
 + Use GET to retrieve one or all directory extension definitions for an app or across the tenant
 + Use the DELETE method to delete a directory extension definition
 
-### Use directory extension properties
+## Use directory extension properties
 
 After you've defined the directory extension, it's now available for use in user profiles.
 
@@ -51,27 +49,23 @@ You manage the directory extension properties on user profiles through the same 
     + To delete data from the directory extension property, set its value to `null`
 + Use GET to read the directory extension properties for all users or individual users in the tenant
 
-#### Query capabilities supported by directory extensions
+### Query capabilities supported by directory extensions
 
 Directory extensions support querying at two levels: Matching against the directory extension definitions and matching against the directory extension properties.
 
-##### Query capabilities supported by directory extension definitions
-
 Directory extension properties support the `$select` and `$filter` OData query parameters to customize the responses. Only the `eq` operator for `$filter` is supported for matching against the **name** property.
-
-##### Query capabilities supported by directory extension properties
 
 In the Microsoft Graph `v1.0` endpoint, the directory extension properties aren't returned by default and you must therefore use the `$select` query parameter to read the properties.
 
 Directory extension properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
-### Other Azure AD scenarios for custom data in directory extension properties
+## Other Azure AD scenarios for the custom extension data
 
 While you'll use the directory extension properties to store data required by the team bonding app, Azure AD also supports the following use cases for the custom data.
 + Use extensions data as rules for dynamic groups memberships
 + Use extensions data to customize claims
 
-#### Dynamically add users to internal groups based on their user profile data
+### Use extensions data to dynamically add users to internal groups
 
 Suppose you want to seamlessly bring together employees with shared interests. For example, you want Xbox gamers to interact with each other through Yammer communities, Teams chats, and email, share tips, plan team playoffs and have fun together.
 
@@ -79,7 +73,7 @@ Microsoft Graph groups allow an organization to bring together users with common
 
 To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community from the group.
 
-#### Customize tokens using data in directory extensions
+### Use extensions data to customize tokens
 
 Another Azure AD use case for the directory extensions is customizing tokens with custom claims.
 
@@ -87,7 +81,7 @@ An app may require some additional user information that's not available in toke
 
 Directory extensions can therefore be used in custom claims to achieve this customized configuration.
 
-### Considerations for using directory extensions
+## Considerations for using directory extensions
 
 If you accidentally delete a directory extension definition, any data that's stored in the associated property becomes undiscoverable. To resolve this, create a new directory extension definition on the same owner app and with exactly the same name as the deleted definition.
 

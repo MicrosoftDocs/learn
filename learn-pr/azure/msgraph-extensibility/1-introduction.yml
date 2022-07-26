@@ -3,7 +3,7 @@ uid: learn.msgraph-extensibility.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "Explore Microsoft Graph extensions as a way to add custom data to Microsoft Graph that you can use to further customize your app-specific needs."
   ms.date: 06/24/2022
   author: FaithOmbongi

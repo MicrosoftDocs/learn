@@ -9,7 +9,7 @@ metadata:
   author: FaithOmbongi
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-graph
 durationInMinutes: 4
 content: |
   [!include[](includes/10-exercise-msgraph-openextensions.md)]
