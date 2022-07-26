@@ -27,14 +27,8 @@ quiz:
     - content: "A Parameter() block with parameter names defined"
       isCorrect: false
       explanation: "Incorrect. To accept named parameters, you add a Param() block to the beginning of the script. Inside the Param() block, you need to add variable names. The variable names correspond to the names of the parameters that will be accepted."
-    - content: "A function with variable names defined"
-      isCorrect: false
-      explanation: "Incorrect. To accept named parameters, you add a Param() block to the beginning of the script. Inside the Param() block, you need to add variable names. The variable names correspond to the names of the parameters that will be accepted."
   - content: "Which cmdlet can you use to collect a username and password from a user?"
     choices:
-    - content: "Out-GridView"
-      isCorrect: false
-      explanation: "Incorrect. When you use Get-Credential, the user is prompted to enter a username and password that can be stored in a variable."
     - content: "Read-Host"
       isCorrect: false
       explanation: "Incorrect. When you use Get-Credential, the user is prompted to enter a username and password that can be stored in a variable."
