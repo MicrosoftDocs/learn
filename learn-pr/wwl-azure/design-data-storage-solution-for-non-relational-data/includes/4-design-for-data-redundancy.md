@@ -12,7 +12,7 @@ When deciding which redundancy option is best for your scenario, consider the tr
 
 Azure Storage offers two options for how your data is replicated in the primary region.
 
-:::image type="content" source="../media/data-redundancy.png" alt-text="Diagram shwowing LRS with three copies in the data center. ZRS has three copies in different data centers.":::
+:::image type="content" source="../media/data-redundancy.png" alt-text="Diagram showing LRS with three copies in the data center. ZRS has three copies in different data centers.":::
 
 **Locally redundant storage (LRS)** is the lowest-cost redundancy option and offers the least durability compared to other options. LRS protects your data against server rack and drive failures. However, if the data center fails, all replicas of a storage account using LRS may be lost or unrecoverable. LRS is a good choice for the following scenarios:
 
@@ -32,7 +32,7 @@ For applications requiring high durability, you can choose to copy the data in y
 
 •	If the primary region becomes unavailable, you can choose to fail over to the secondary region. After the failover has completed, the secondary region becomes the primary region, and you can again read and write data.
 
-•	Data is replicated to the secondary region asynchronously A failure that affects the primary region may result in data loss if the primary region cannot be recovered.
+•	Data is replicated to the secondary region asynchronously. A failure that affects the primary region may result in data loss if the primary region cannot be recovered.
 
 •	With GRS or GZRS, the data in the secondary region isn't available for read or write access unless there is a failover to the secondary region. For read access to the secondary region, configure your storage account to use read-access geo-redundant storage (RA-GRS) or read-access geo-zone-redundant storage (RA-GZRS).
 

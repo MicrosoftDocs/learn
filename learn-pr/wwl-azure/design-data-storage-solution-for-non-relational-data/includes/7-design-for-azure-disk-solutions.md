@@ -41,7 +41,7 @@ Warning: Disk Caching isn’t supported for disks 4 TiB and larger. When multipl
 
 ### Secure your data disks with encryption
 
-There are several encryption types available for your managed disks. Encryption types includes Azure Disk Encryption (ADE), Server-Side Encryption (SSE) and encryption at host.
+There are several encryption types available for your managed disks. Encryption types include Azure Disk Encryption (ADE), Server-Side Encryption (SSE) and encryption at host.
 
 - [Azure Disk Encryption ](/azure/virtual-machines/linux/disk-encryption-overview) ADE encrypts the virtual machine's virtual hard disks (VHDs). If VHD is protected with ADE, the disk image will only be accessible by the virtual machine that owns the disk.
 
