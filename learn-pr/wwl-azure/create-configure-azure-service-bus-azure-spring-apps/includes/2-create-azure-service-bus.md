@@ -57,16 +57,18 @@ Make sure to create the Service Bus namespace with a **Premium** SKU to take adv
 
 The connection to the Service Bus needs to be stored in the `spring.jms.servicebus.connection-string`application property. You'll name your Key Vault secret `SPRING-JMS-SERVICEBUS-CONNECTIONSTRING` and add the text below in your **application.yml** file in the configuration repository. The modification will translate the secret in Key Vault to the correct application property for your microservices.
 
-```yaml
+```
 jms:
     servicebus:
         connection-string: ${spring.jms.servicebus.connectionstring}
+        idle-timeout: 60000
+        pricing-tier: premium
 ```
 
 1.  Create a new Service Bus namespace. The name you use for your namespace should be globally unique, so update the value for the environment variable. You'll need to create the namespace with the **Premium** SKU.
     
     ```Bash
-    SERVICEBUS_NAMESPACE=springcloudns$RANDOM$RANDOM
+    SERVICEBUS_NAMESPACE=springapps$RANDOM$RANDOM
     
     az servicebus namespace create \
         --resource-group $RESOURCE_GROUP \
@@ -121,9 +123,9 @@ jms:
     
     Make sure the YAML is correctly aligned. The **jms** element, and should be at the same level as the **config** and **datasource** elements.
 7.  Commit and push your changes to the remote repository.
-    
-    ```Bash
+8.  ```Bash
+    cd ~/projects/spring-petclinic-microservices-config
     git add .
-    gits commit -m 'added service bus'
+    git commit -m 'added service bus'
     git push
     ```
