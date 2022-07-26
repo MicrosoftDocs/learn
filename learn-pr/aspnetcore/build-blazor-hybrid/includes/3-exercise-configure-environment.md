@@ -126,7 +126,7 @@ The project is a normal .NET MAUI project with some additional Blazor related co
 
 ## Run the app
 
-1. In Visual Studio, select **Debug** > **Start Debugging**
+- In Visual Studio, select **Debug** > **Start Debugging**
 
     This will build and start the app on Windows, and then rebuild and restart the app whenever you make code changes. The app should automatically open on Windows. You can also change the deployment target through the debug drop-down menu to deploy to Android or other platforms.
 
