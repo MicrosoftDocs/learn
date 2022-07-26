@@ -1,8 +1,8 @@
-Windows PowerShell has extensive built-in help that typically includes examples. This makes it easier for you to learn how to use a cmdlet. As you begin working with PowerShell, finding the cmdlet that you need might be a challenge. For example, what cmdlet would you use to set an IP address on a network adapter or to disable a user account in Active Directory?
+Windows PowerShell has extensive built-in help that typically includes examples. This built-in help makes it easier for you to learn how to use a cmdlet. As you begin working with PowerShell, finding the cmdlet that you need might be a challenge. For example, what cmdlet would you use to set an IP address on a network adapter or to disable a user account in Active Directory?
 
 You can start by using what you know about the structure of cmdlet names, along with the **Get-Command** command or the **Get-Help** command. **Get-Command** retrieves information about a command, or several commands, such as the name, category, version, and even the module that contains it. **Get-Help** retrieves help content about the command.
 
-Like the **Get-Help** command, **Get-Command** accepts wildcard characters. This means that you can run the **Get-Command \*event\*** command and retrieve a list of commands that contain the text **event** in the name. **Get-Command** also has several parameters that you can use to further filter the returned results. For example, you can use the *-Noun* and *-Verb* parameters to filter out the noun and verb portions of the name, respectively.
+Like the **Get-Help** command, **Get-Command** accepts wildcard characters, which means that you can run the **Get-Command \*event\*** command and retrieve a list of commands that contain the text **event** in the name. **Get-Command** also has several parameters that you can use to further filter the returned results. For example, you can use the *-Noun* and *-Verb* parameters to filter out the noun and verb portions of the name, respectively.
 
 Both parameters accept wildcards, though in most cases you won't need to use wildcards with verbs. You can even combine the parameters to further refine the results returned. Run the **Get-Command –Noun event\*** **–Verb Get** command to get a list of commands that have nouns starting with **event** and that use the **Get** verb.
 
@@ -28,7 +28,7 @@ You're not limited to searching for cmdlets that your computer already has insta
 
 The PowerShell Gallery is a central repository for Windows PowerShell–related content, including scripts and modules. The PowerShell Gallery uses the Windows PowerShell module, **PowerShellGet**. This module is part of Windows PowerShell 5.0 and newer.
 
-**PowerShellGet** contains cmdlets for finding and installing modules, scripts, and commands from the online gallery. For example, the **Find-Command** cmdlet searches for commands, functions, and aliases. It works very similarly to the **Get-Command** cmdlet, including support for wildcards.
+**PowerShellGet** contains cmdlets for finding and installing modules, scripts, and commands from the online gallery. For example, the **Find-Command** cmdlet searches for commands, functions, and aliases. It works similar to the **Get-Command** cmdlet, including support for wildcards.
 
 You can pass the results of the **Find-Command** cmdlet to the **Install-Module** cmdlet, which the **PowerShellGet** module also contains. **Install-Module** will install the module that contains the cmdlet that you discovered.
 

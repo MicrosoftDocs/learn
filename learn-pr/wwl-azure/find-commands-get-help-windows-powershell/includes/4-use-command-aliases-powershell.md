@@ -4,7 +4,7 @@ If you have experience using the traditional Windows Command Prompt shell (**cmd
  -  **cd** for changing directories.
  -  **mkdir** for creating new directories.
 
-In many cases, you can continue to use these commands within Windows PowerShell. That's because behind the scenes, these commands are running native PowerShell cmdlets. The **dir** command runs **Get-ChildItem**, the **cd** command runs **Set-Location**, and the **mkdir** command runs **New-Item**. These commands work with PowerShell because they're *aliases* of the cmdlets that perform the equivalent action.
+In many cases, you can continue to use these commands within Windows PowerShell because, behind the scenes, these commands are running native PowerShell cmdlets. The **dir** command runs **Get-ChildItem**, the **cd** command runs **Set-Location**, and the **mkdir** command runs **New-Item**. These commands work with PowerShell because they're *aliases* of the cmdlets that perform the equivalent action.
 
 ## Aliases and parameters
 
@@ -20,7 +20,7 @@ Parameters can also have aliases. For example, the *-s* parameter is an alias fo
 
 ## New-Alias
 
-You can also create your own alias by using the **New-Alias** cmdlet. This allows you to define your own custom alias that you can map to any existing cmdlet. Keep in mind, however, that custom aliases aren't saved between Windows PowerShell sessions. You can use a Windows PowerShell profile to recreate the alias every time you open Windows PowerShell.
+You can also use the **New-Alias** cmdlet to create a custom alias that you can map to any existing cmdlet. Keep in mind, however, that custom aliases aren't saved between Windows PowerShell sessions. You can use a Windows PowerShell profile to recreate the alias every time you open Windows PowerShell.
 
 **Additional Reading:** For more information about creating and using a PowerShell profile, refer to [about\_Profiles](https://aka.ms/about-profiles).
 
