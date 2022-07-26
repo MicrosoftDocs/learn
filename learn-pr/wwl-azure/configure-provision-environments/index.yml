@@ -3,7 +3,7 @@ uid: learn.wwl.configure-provision-environments
 metadata:
   title: Provision and test environments
   description: "Provision and test environments"
-  ms.date: 06/21/2022
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -47,9 +47,9 @@ units:
 - learn.wwl.configure-provision-environments.provision-configure-target-environments
 - learn.wwl.configure-provision-environments.exercise-set-up-service-connections
 - learn.wwl.configure-provision-environments.configure-automated-integration-functional-test-automation
+- learn.wwl.configure-provision-environments.understand-shift-left
 - learn.wwl.configure-provision-environments.set-up-run-availability-tests
 - learn.wwl.configure-provision-environments.explore-azure-load-testing
-- learn.wwl.configure-provision-environments.understand-shift-left
 - learn.wwl.configure-provision-environments.set-up-run-functional-tests
 - learn.wwl.configure-provision-environments.knowledge-check
 - learn.wwl.configure-provision-environments.summary
