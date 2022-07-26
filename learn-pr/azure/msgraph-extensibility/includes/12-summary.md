@@ -12,7 +12,7 @@ From your learnings and hands-on prototyping, you can now select an option that'
 
 Microsoft Graph extensions provide you with a lightweight option to store custom user data without an external data store. Because the organization already uses Azure AD as an Identity and Access Management (IAM) solution, using extensions allows it to leverage functionality that's already available with its license at no additional cost.
 
-Apart from users, other Microsoft Graph resource types may support some of the extensions.
+Apart from the **user** resource, other Microsoft Graph resource types may support some of the extensions. For example, the **device** resource type supports all the extension options while the **group** resource type supports schema, directory, and open extensions. To learn more, visit the links below.
 
 ## References
 

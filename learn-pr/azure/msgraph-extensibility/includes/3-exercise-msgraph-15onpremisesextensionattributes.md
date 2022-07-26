@@ -1,6 +1,6 @@
 In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
 
-In this exercise, you'll use an API client such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app would make on behalf of a signed-in user.
+In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app would make on behalf of a signed-in user.
 
 ## Authenticate your session
 
@@ -12,7 +12,7 @@ In the team bonding app, the employee will sign in with their Azure AD profile a
 
 ## Define the extension attributes
 
-Because the extension attributes are predefined, we can only manage them. Run the following request to read them and identify the attributes that already store data.
+Because the extension attributes are predefined, you can only read and update their values. Run the following request to read them and identify the attributes that already store data.
 
 ### Request
 ```msgraph-interactive
@@ -57,7 +57,7 @@ Content-type: application/json
 
 ## Store user data in extension attributes
 
-In this exercise, you'll store these pieces of data for *Adele Vance*.
+In this exercise, you'll store the LinkedIn profile URL, Skype ID, and XBox gamertag for *Adele Vance* in **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
 ### Request
 
@@ -77,19 +77,15 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 
 ### Response
 
-If the update is successful, Microsoft Graph returns a `204 No Content` response code to the app with no response body.
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
 ## Search for employees who have shared their LinkedIn profile and Xbox gamertag
 
-Suppose another employee wants to discover their colleagues who have shared their Xbox and LinkedIn profiles. This capability can be achieved through a search bar and a drop-down filter in the team bonding app to allow anyone to perform a quick discovery.
+Suppose another employee wants to discover their colleagues who have shared their Xbox and LinkedIn profiles. The app calls Microsoft Graph as follows:
 
 ### Request
-
-When the employee uses the user interface to find colleagues who have shared their Xbox gamertag or LinkedIn profiles, the app will call Microsoft Graph as follows:
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users?$filter=onPremisesExtensionAttributes/extensionAttribute13 ne null or onPremisesExtensionAttributes/extensionAttribute15 ne null&$count=true&$select=id,displayName,userPrincipalName,onPremisesExtensionAttributes
@@ -97,8 +93,6 @@ ConsistencyLevel: eventual
 ```
 
 ### Response
-
-The request will return all users who have shared their LinkedIn profile or their Xbox gamertag, including Adele, as follows:
 
 ```http
 HTTP/1.1 200 OK
@@ -138,11 +132,9 @@ Microsoft Graph doesn't support retrieving a subset of the 15 extension attribut
 
 ## Update and delete user data in an extension attribute property
 
-Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
+Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in her internal profile as well so colleagues can discover the new gamertag.
 
-Adele also no longer uses the Skype app and now uses Teams instead. Adele wants to remove the Skype ID from the user profile. When Adele initiates the update from the team bonding app's user interface, the app will call Microsoft Graph and set the value of the **extensionAttribute14** property to `null`.
-
-The app will update Adele's profile by calling Microsoft Graph as follows.
+Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **extensionAttribute14** to `null`.
 
 ### Request
 
@@ -159,15 +151,13 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 
 ### Response
 
-If the update is successful, Microsoft Graph returns a `204 No Content` HTTP response code to the app with no response body.
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
 ## Dynamically add users internal groups based on their user profile data
 
-In this exercise, you create a Microsoft 365 group and specify that its membership is dynamically calculated. You configure a rule that only users with Xbox gamer tags can be members of the group. You also specify a Teams team and a Yammer community to be provisioned when you create the group.
+In this exercise, you create a Microsoft 365 group and specify that its membership is dynamically calculated. You configure a rule that only users with Xbox gamer tags can be members of the group. You also specify a Teams team to be provisioned when you create the group.
 
 ### Request
 
@@ -180,9 +170,6 @@ POST https://graph.microsoft.com/v1.0/groups
     "groupTypes": [
         "Unified",
         "DynamicMembership"
-    ],
-    "creationOptions": [
-        "YammerProvisioning"
     ],
     "mailEnabled": true,
     "mailNickname": "Xboxers",
@@ -198,8 +185,6 @@ POST https://graph.microsoft.com/v1.0/groups
 
 ### Response
 
-The request returns a `201 Created` HTTP response code and a Microsoft Graph **group** object in the response body as follows.
-
 >**Note:** The response object shown here has been shortened for readability.
 
 ```
@@ -214,9 +199,6 @@ Content-type: application/json
     "groupTypes": [
         "Unified",
         "DynamicMembership"
-    ],
-    "creationOptions": [
-        "YammerProvisioning"
     ],
     "mail": "Xboxers@M365EDU334089.onmicrosoft.com",
     "mailEnabled": true,

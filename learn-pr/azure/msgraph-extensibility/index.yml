@@ -17,9 +17,10 @@ abstract: |
     - Add, query, and update custom data through Microsoft Graph
     - Use data in Microsoft Graph extensions to extend your application
 prerequisites: |
-  - Access to an Azure Active Directory tenant with a work or school account that has the Global Administrator role. If you don't have an Azure AD tenant, follow the instructions on the follow the instructions on the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) site to create a developer tenant.
+  - Access to an Azure Active Directory tenant with a work or school account that has the Global Administrator role. Sign in to a client app such as [Graph Explorer](https://aka.ms/ge) to call Microsot Graph. If you don't have an Azure AD tenant, follow the instructions on the follow the instructions on the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) site to create a developer tenant.
   - Basic knowledge of working with REST APIs and how to use the create, read, update, and delete (CRUD) REST API operations
   - Basic knowledge of working with user data in Azure AD and Microsoft 365 using Microsoft Graph
+  - Be an owner of an application that you'll use in this module
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate

@@ -10,6 +10,6 @@ metadata:
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: learning-graph
-durationInMinutes: 13
+durationInMinutes: 10
 content: |
   [!include[](includes/7-msgraph-schemaextensions.md)]

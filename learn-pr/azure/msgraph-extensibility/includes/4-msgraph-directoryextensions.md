@@ -1,23 +1,10 @@
-Microsoft Graph provides four types of extensions for storing custom user data. The second type of extensions is the **directory extensions**, also called **Azure AD** extensions.
-
-In the team bonding app scenario, you want to store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag in their user profiles.
-
-Here, you'll learn how to use directory extensions to store the three pieces of user data about the employees.
-
 ## Directory (Azure AD) extensions
-
-The Microsoft Graph directory extensions are only available for use by specific resources in Azure Active Directory (Azure AD), including the **user** resource.
-
-Directory extensions are closely tied to the application that creates them. To use directory extensions:
-1. First create the directory extension definition in an app and explicitly define the resource types that can be assigned the directory extensions. You *can't* update the directory extension definition later. Microsoft Graph will transform the name of the directory extension to create a directory extension property.
-1. Manage the directory extension property and its associated values on instances of the target resource objects.
-1. During the lifecycle of their use, maintain the [Considerations for using directory extensions](#considerations-for-using-directory-extensions).
 
 ### Directory extension definitions
 
-Before you can use directory extensions, you must define them in an application. This app becomes the directory extension "owner app".
+Before you can use directory extensions, you must define them in an application that becomes the directory extension "owner app".
 
-A **directory extension definition** is a simple structure of the directory extension. The definition includes the name and return type and also explicitly allowlists the Azure AD resource types that be assigned the directory extensions. To allow directory extensions to be used to store the three custom data on the user profile, you must specify the **user** resource as a target object.
+A **directory extension definition** includes the name and return type and also explicitly allowlists the Azure AD resource types that be assigned the directory extension. To allow directory extensions to be used to store the three custom data on the user profile, you must specify the **user** resource as a target object.
 
 Directory extension definitions are managed through the **extensionProperties** relationship on an application object and the associated **extensionProperty** resource type.
 
@@ -39,19 +26,19 @@ GET https://graph.microsoft.com/v1.0/applications/{applicationId}/extensionPrope
 GET https://graph.microsoft.com/v1.0/applications/{applicationId}?$expand=extensionProperties
 ```
 
-After the directory extension definition has been created, it's immediately available for use.
+After the directory extension definition has been created, it's immediately available for use after a tenant admin consents for the app to be used in the tenant and a service principal is created. When you create additional directory extensions on the owner app, these extensions are immediately available in the tenant where the app is homed.
 
-Directory extension definitions can't be updated to avoid breaking changes when the extensions are in use. However, they can be deleted. When deleted, they immediately become inaccessible on the target object. For more information, see the [Considerations for using directory extensions](#considerations-for-using-directory-extensions).
+Directory extension definitions can't be updated to avoid breaking changes when the extensions are in use. When deleted, they immediately become inaccessible on the target object. For more information, see the [Considerations for using directory extensions](#considerations-for-using-directory-extensions).
 
 #### Directory extensions and multi-tenant apps
 
-Because directory extensions are closely tied to an owner app, they are also available for use by other tenants where the app has been consented to. If a multi-tenant application creates additional directory extensions in an app that has been consented to by other tenants, the associated directory extension properties become immediately available for use by the other tenants.
+Because directory extensions are closely tied to an owner app, they are also available for use by other tenants where the app has been consented to.
 
 ### Manage directory extension definitions
 
 You manage the directory extension definitions as follows.
-+ Use the POST method to create a new definition and its associated directory extension property
-+ Use the GET method to retrieve one or all directory extension definitions for an app or across the tenant
++ Use POST to create a new definition and its associated directory extension property
++ Use GET to retrieve one or all directory extension definitions for an app or across the tenant
 + Use the DELETE method to delete a directory extension definition
 
 ### Use directory extension properties
@@ -59,10 +46,10 @@ You manage the directory extension definitions as follows.
 After you've defined the directory extension, it's now available for use in user profiles.
 
 You manage the directory extension properties on user profiles through the same HTTP methods used to manage users.
-+ Use the POST method to store data in the directory extension property when creating a new user
-+ Use the PATCH method to either store data in the directory extension property, update the stored data, or delete the existing data
++ Use POST to store data in the directory extension property when creating a new user
++ Use PATCH to either store data in the directory extension property, update the stored data, or delete the existing data
     + To delete data from the directory extension property, set its value to `null`
-+ Use the GET method to read the directory extension properties for all users or individual users in the tenant
++ Use GET to read the directory extension properties for all users or individual users in the tenant
 
 #### Query capabilities supported by directory extensions
 
@@ -90,7 +77,7 @@ Suppose you want to seamlessly bring together employees with shared interests. F
 
 Microsoft Graph groups allow an organization to bring together users with common interests. You can create an Xbox gamers group to bring together all Xbox enthusiasts through one alias.
 
-To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Yammer, Teams, and email.
+To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community from the group.
 
 #### Customize tokens using data in directory extensions
 
@@ -102,13 +89,12 @@ Directory extensions can therefore be used in custom claims to achieve this cust
 
 ### Considerations for using directory extensions
 
-Directory extension definitions cannot be restored once deleted. Delete any data from the associated directory extension property before deleting the definition. If you delete a definition before deleting the data in the associated property, the directory extension property and its associated data become undiscoverable in user objects.
+If you accidentally delete a directory extension definition, any data that's stored in the associated property becomes undiscoverable. To resolve this, create a new directory extension definition on the same owner app and with exactly the same name as the deleted definition.
 
 You can use up to 100 directory extensions per user. When the definition object is deleted before the corresponding extension property is updated to `null`, the property will still count against the 100-limit for the user. 
 
 When the definition is deleted before data in the associated extension property is deleted, there's no way to know the existence of the extension property via Microsoft Graph - even though the undiscoverable property counts against the 100-limit.
 
-Deleting an owner app deletes the associated directory extension properties and the data they store for users. Restoring an owner app restores the directory extension definitions *but not* the directory extension properties or the data they store. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. Either create a new service principal or restore the deleted service principal to restore the directory extension properties and the data they store for users.
+Deleting an owner app makes the associated directory extension properties and their data undiscoverable. Restoring an owner app restores the directory extension definitions *but doesn't* make the directory extension properties or their data immediately discoverable. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. To make the directory extension properties and their data undiscoverable, either create a new service principal or restore the deleted service principal.
 
-<!-- Q: Can you protect an app that defines directory extensions from accidental deletion?  Restrict management of the app for example?
--->
+If a multi-tenant application creates additional directory extensions in an app that has been consented to by other tenants, the associated directory extension properties become immediately available for use by the other tenants.
