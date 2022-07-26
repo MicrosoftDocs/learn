@@ -14216,11 +14216,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/wwl-azure/configure-provision-environments/6-set-up-run-availability-tests.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-provision-environments/5-set-up-run-availability-tests",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/wwl-azure/configure-provision-environments/7-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-provision-environments/9-knowledge-check",
       "redirect_document_id": true
@@ -16623,6 +16618,21 @@
     {
       "source_path": "learn-pr/wwl-azure/explore-release-strategy-recommendations/14-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-release-strategy-recommendations/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-provision-environments/7-understand-shift-left.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-provision-environments/5-understand-shift-left",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-provision-environments/5-set-up-run-availability-tests.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-provision-environments/6-set-up-run-availability-tests",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-provision-environments/6-explore-azure-load-testing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-provision-environments/7-explore-azure-load-testing",
       "redirect_document_id": true
     }
 

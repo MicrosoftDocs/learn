@@ -32,11 +32,11 @@ You can also find Azure preview features in the portal as follows:
 
 Another preview area you can try is the next version of the Azure portal. Use the URL [https://preview.portal.azure.com](https://preview.portal.azure.com?azure-portal=true) (notice the **preview** prefix).
 
-Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface. It will be branded with **Microsoft Azure (Preview)** in the top bar, so you will know you are in the preview portal.
+Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface. When using the preview URL, the portal will be branded with **Microsoft Azure (Preview)** in the top bar, so you will know you are in the preview portal.
 
 ## Provide feedback on preview features
 
-If you use the preview portal or a preview feature, Microsoft wants to hear about your experience. You can provide feedback through the **Feedback** icon on the portal, or by posting ideas and suggestions on the Azure portal Feedback Forum.
+If you use the preview portal or a preview feature, Microsoft wants to hear about your experience. You can provide feedback by using the **Feedback** icon in the portal.
 
 ## Get notified about GA releases
 

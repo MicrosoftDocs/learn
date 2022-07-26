@@ -36,7 +36,7 @@ At the top of the dashboard are the controls that let you create, upload, downlo
 
 ## Select dashboard
 
-At the top of the toolbar on the far left is the **Select Dashboard** drop-down control. Clicking this control allows you to select from dashboards that you have already defined for your account. This control makes it simple for you to define multiple dashboards for different purposes and then switch from one to another and back again, depending on what you are trying to do at the time.
+At the top of the toolbar on the far left is the dashboard selection drop-down control. Clicking this control allows you to select from dashboards that you have already defined for your account. This control makes it simple for you to define multiple dashboards for different purposes and then switch from one to another and back again, depending on what you are trying to do at the time.
 
 Dashboards that you create will initially be private; that is, only you can see them. To make a dashboard available across your enterprise, you need to share it. We'll look at that option shortly.
 
@@ -65,34 +65,32 @@ The dashboard will switch to edit mode.
 
 ![Screenshot showing the dashboard in the Edit mode.](../media/6-edit-dashboard.png)
 
-On the right-hand side you'll find the **Tile Gallery**, with several possible tiles. You can filter the Tile Gallery by category and resource type.
+On the right-hand side you'll find the **Tile Gallery**, showing many different tiles you can add to your dashboard. You can filter the Tile Gallery by using the search box to show only items that match your search term.
 
-Adding tiles is as easy as selecting the tile from the list on the left and then dragging it to the work area. You can then move each tile about, resize it, or change the data that it displays.
+To add a tile to your dashboard, selecting the tile from the list and then drag it to the work area. You can then move each tile, resize it, or change the data that it displays.
 
 > [!TIP]
-> One cool feature is that you can take elements on child panes and put them on your dashboard. Just hover over the item and look for the `...` tile edit menu - this will have a "Pin to Dashboard" option which lets you quickly grab a tile from a service and put it onto the dashboard.
+> One cool feature is that you can take elements from a resource page and pin them to your dashboard. When using a service, look for the **Pin** icon. When you select it, you'll see a **Pin to dashboard** pane which allows you to select a dashboard (or create a new one) for the new tile.
 
-The work area in edit mode is divided into squares. Each tile must occupy at least one square, and tiles will snap to the nearest largest set of tile dividers. Any overlapping tiles are moved out of the way. When you make a tile smaller, the surrounding tiles will move back up against it.
+In edit mode, the dashboard work area is divided into squares. Each tile must occupy at least one square, and tiles will snap to the nearest largest set of tile dividers. Any overlapping tiles will be moved out of the way. When you make a tile smaller, the surrounding tiles will resize to move back up against it.
 
 ### Change tile sizes
 
-Some tiles have a set size, and you can edit their size only programmatically. However, you can edit tiles with a gray bottom right-hand corner by dragging the corner indicator.
+Some tiles have a set size, and you can only edit their size  programmatically. However, you can edit tiles with a gray bottom right-hand corner by dragging the corner indicator.
 
 ![Screenshot of a tile with the corner indicator highlighted.](../media/6-resizable-tile.png)
 
-Alternatively, right-click into the contextual menu and specify the size you want.
+Alternatively, right-click the tile and then specify the size you want.
 
 ![Screenshot of the tile with the context menu displaying different sizing options.](../media/6-tile-size.png)
 
-To create your dashboard, pull tiles from the Tile Gallery onto the workspace and then rearrange them.
-
 ### Change tile settings
 
-Some tiles have editable settings. For example, with the clock tile, you can select **Edit** to open the **Edit clock** tile. You can then set the time zone, which it displays, and also set whether it displays in 12- or 24-hour format.
+Some tiles have editable settings. For example, with the clock tile, you can select **Edit** to open the **Edit clock** tile. You can then set the time zone and choose whether the time displays in 12- or 24-hour format.
 
 ![Screenshot showing the Edit clock settings for the clock tile.](../media/6-edit-clock.png)
 
-For multi-national or transcontinental companies, you can add several clocks, each in a different time zone.
+For multi-national or transcontinental companies, you could add several clocks, each with a different time zone.
 
 ### Accepting your edits
 
@@ -100,13 +98,13 @@ You can select **Preview** to see your proposed edits. When you have arranged th
 
 ## Edit a dashboard by changing the JSON file
 
-You can also edit a dashboard by changing the JSON file. This approach provides more options for changing settings, but you cannot see the changes until you upload the file back into Azure. The easiest starting point is to download the dashboard JSON as previously described and edit that file.
+You can also edit a dashboard by changing the JSON file. This approach provides more options for changing settings, but you can't see the changes until you upload the file back into Azure. The easiest starting point is to download the dashboard JSON, as previously described, and then edit that file.
 
 ![Screenshot of the downloaded dashboard JSON file.](../media/6-json-code.png)
 
 As an example, in the JSON shown above, to change the size of the tile you would edit the **colSpan** and **rowSpan** variables, then save the file and upload it back to Azure.
 
-> [!Tip]
+> [!TIP]
 > You can also distribute the dashboard JSON file to other users.
 
 ## Reset a dashboard
@@ -127,17 +125,17 @@ You can then select **Manage users** to specify the users who have access to tha
 
 ### Switching to a shared dashboard
 
-To switch to a shared dashboard, you click on the list of dashboards, and then click **Browse all dashboards**.
+To switch to a shared dashboard, you select the list of dashboards, and then select **Browse all dashboards**.
 
 ![Screenshot showing a list of shared dashboards with the Browse all dashboards link highlighted.](../media/6-browse-dashboards.png)
 
-You will now see the **All dashboards** pane, with the names of any shared dashboards displayed. Just click on a dashboard to apply it to the Azure portal.
+You will now see the **All dashboards** pane, with the names of any shared dashboards displayed. Select a dashboard to apply it to the Azure portal.
 
 ![Screenshot showing the Shared dashboards in the All dashboards pane.](../media/6-select-shared-dashboard.png)
 
 ## Display a dashboard as a full screen
 
-If you want the largest dashboard real estate, select the **Full screen** button to display your current dashboard without any browser menus. If you have any tiles outside the boundaries of your screen display, slider bars will appear at the right and bottom of your screen.
+If you want the largest dashboard real estate, select the **Full screen** button to display your current dashboard without any browser menus. If any tiles are outside the boundaries of your screen display, slider bars will appear at the right and bottom of your screen.
 
 When you have finished working in full-screen mode, press the ESC key or select the **Full screen** button next to the Dashboard name at the top of the screen.
 
