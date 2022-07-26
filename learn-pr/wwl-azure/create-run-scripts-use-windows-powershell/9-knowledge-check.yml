@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/25/2022
+  ms.date: 07/26/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -27,9 +27,6 @@ quiz:
     - content: "RemoteSigned"
       isCorrect: true
       explanation: "Correct. When the execution policy is configured as RemoteSigned, only downloaded scripts must be signed."
-    - content: "Unrestricted"
-      isCorrect: false
-      explanation: "Incorrect. When the execution policy is configured as RemoteSigned, only downloaded scripts must be signed."
   - content: "Which cmdlet allows you to add a digital signature to a script?"
     choices:
     - content: "**Set-AuthenticodeSignature** cmdlet"

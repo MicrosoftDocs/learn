@@ -36,7 +36,8 @@ The options for the execution policy are:
 - **Unrestricted**. All scripts can be run, but a confirmation prompt displays when running unsigned scripts that are downloaded.
 - **Bypass**. All scripts are run without prompts.
 
-> **Note:** Setting the script execution policy provides a safety net that can prevent untrusted scripts from being run accidentally. However, the execution policy can always be overridden.
+> [!NOTE]
+> Setting the script execution policy provides a safety net that can prevent untrusted scripts from being run accidentally. However, the execution policy can always be overridden.
 
 You can set the execution policy on a computer by using the **Set-ExecutionPolicy** cmdlet. However, this setting is difficult to manage across many computers. When you configure the execution policy for many computers, you can use the **Computer Configuration\\Policies\\Administrative Templates\\Windows Components\\Windows PowerShell\\Turn on Script Execution** Group Policy setting to override the local setting.
 
