@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.manage-modularize-tasks-templates.introduction
-title: Introduction
+uid: learn.wwl.manage-modularize-tasks-templates.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: "Introduction"
+  title: Summary
+  description: "Summary"
   ms.date: 07/26/2022
   author: wwlpublish
   ms.author: lumac
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/8-summary.md)]
