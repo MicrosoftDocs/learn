@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/26/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which command will display the most recent Windows PowerShell error message?"
+    choices:
+    - content: "$Error"
+      isCorrect: false
+      explanation: "Incorrect. Errors are stored in the $Errors array. The most recent error is stored in index 0."
+    - content: "$Error[1]"
+      isCorrect: false
+      explanation: "Incorrect. Errors are stored in the $Errors array. The most recent error is stored in index 0."
+    - content: "$Error[0]"
+      isCorrect: true
+      explanation: "Correct. Errors are stored in the $Errors array. The most recent error is stored in index 0."
+  - content: "How can you pause a script while it's running to interrogate variables and investigate why the script is failing?"
+    choices:
+    - content: "Use the Set-PSBreakPoint cmdlet"
+      isCorrect: true
+      explanation: "Correct. The Set-PSBreakPoint cmdlet can be used for setting a breakpoint, which pauses the script while it's running."
+    - content: "Use the Break command"
+      isCorrect: false
+      explanation: "Incorrect. The Set-PSBreakPoint cmdlet can be used for setting a breakpoint, which pauses the script while it's running."
+    - content: "Use the Continue command"
+      isCorrect: false
+      explanation: "Incorrect. The Set-PSBreakPoint cmdlet can be used for setting a breakpoint, which pauses the script while it's running."
