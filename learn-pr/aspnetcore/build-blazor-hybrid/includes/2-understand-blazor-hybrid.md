@@ -8,20 +8,19 @@ In this unit, you'll start with an introduction to Blazor Hybrid, .NET MAUI, and
 
 Blazor apps are composed of reusable web UI components built using C#, HTML, and CSS. With Blazor, developers can build client and server code with C#. They can also share code and libraries with the front-end client code and back-end logic. Using C# for all code simplifies sharing data between the front end and back end, enables code reuse to accelerate development, and reduces maintenance.
 
-
 ## What is Blazor Hybrid?
 
 Blazor Hybrid enables developers to blend desktop and mobile native client frameworks with .NET and Blazor.
 
 In a Blazor Hybrid app, Razor components run natively on the device. Components render to an embedded Web View control through a local interop channel. Components don't run in the browser, and WebAssembly isn't involved. Razor components load and execute code quickly, and components have full access to the native capabilities of the device through the .NET platform.
 
-![Blazor Hybrid diagram.](../media/blazor-hybrid.png)
+![Diagram of Blazor Hybrid architecture](../media/blazor-hybrid.png)
 
 ## What is .NET MAUI?
 
 .NET Multi-platform App UI (.NET MAUI) is a cross-platform framework for creating native mobile and desktop apps with C# and XAML. Using .NET MAUI, you can develop apps that can run on Android, iOS, macOS, and Windows from a single shared code-base. One of the key aims of .NET MAUI is to enable you to implement as much of your app logic and UI layout as possible in a single code-base. .NET MAUI unifies Android, iOS, macOS, and Windows APIs into a single API that allows a write-once run-anywhere developer experience, while additionally providing deep access to every aspect of each native platform.
 
-![.NET MAUI architecture diagram.](../media/dotnet-maui.png)
+![Diagram of .NET MAUI architecture](../media/dotnet-maui.png)
 
 ## Blazor Hybrid apps with .NET MAUI
 

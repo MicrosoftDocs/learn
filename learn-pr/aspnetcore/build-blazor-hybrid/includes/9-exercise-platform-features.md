@@ -1,6 +1,6 @@
 In this exercise, you'll add the ability to save and load the todo list to the file system.
 
-## Add a load and save buttons
+## Add load and save buttons
 
 1. Let's start by adding two new `<button>` elements for our load and save button under the `<h3>` and  above our list of todo items.
 
@@ -62,7 +62,7 @@ In this exercise, you'll add the ability to save and load the todo list to the f
     }
     ```
 
-    > Note that we also have the capability of accessing platform pop ups. Here, we are displaying an alert when the file is saved.
+    Note that we also have the capability of accessing platform pop ups. Here, we are displaying an alert when the file is saved.
 
 1. Implement `Load` by loading the data from disk, deserializing the data, and loading items into the todo list.
 
@@ -81,4 +81,4 @@ In this exercise, you'll add the ability to save and load the todo list to the f
 
 1. Add items, edit items, and mark todo items done to test the component. Select the `Save` button to save items to the disk, and then close the app or make changes and select `Load` to load the saved data.
 
-   ![Completed Todo Page with load and save buttons.](../media/todo-complete-save-load.png)
+   ![Screenshot of the completed ToDo page with load and save buttons](../media/todo-complete-save-load.png)

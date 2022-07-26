@@ -1,4 +1,4 @@
-In this exercise, you'll create a basic to do list component inside our Blazor app.
+In this exercise, you'll create a basic todo list component inside our Blazor app.
 
 ## Create the ToDo page
 
@@ -49,7 +49,7 @@ In `Shared/NavMenu.razor`:
 
 Save the `Shared/NavMenu.razor` file. The browser should refresh automatically and now have the Todo entry on the navigation bar:
 
-![Added Todo navigation element.](../media/todo-nav.png)
+![Screenshot of the todo navigation element just added](../media/todo-nav.png)
 
 ## Create a Todo Item
 
@@ -212,4 +212,4 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
 
 1. Add items, edit items, and mark todo items done to test the component.
 
-   ![Completed Todo Page.](../media/todo-complete.png)
+   ![Screenshot of the completed ToDo page](../media/todo-complete.png)

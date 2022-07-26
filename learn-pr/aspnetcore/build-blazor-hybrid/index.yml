@@ -22,7 +22,7 @@ prerequisites: |
   - Visual Studio 2022 with the MAUI workload installed
   - Familiarity with C# and .NET
   - Basic knowledge of web app concepts
-iconUrl: /learn/achievements/generic.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -38,15 +38,15 @@ products:
 subjects:
 - development-tools
 units:
-- learn.build-blazor-hybrid.1-introduction
-- learn.build-blazor-hybrid.2-understand-blazor-hybrid
-- learn.build-blazor-hybrid.3-exercise-configure-environment
-- learn.build-blazor-hybrid.4-blazor-components
-- learn.build-blazor-hybrid.5-exercise-add-component
-- learn.build-blazor-hybrid.6-csharp-razor-binding
-- learn.build-blazor-hybrid.7-exercise-razor-binding
-- learn.build-blazor-hybrid.8-platform-features
-- learn.build-blazor-hybrid.9-exercise-platform-features
-- learn.build-blazor-hybrid.10-summary
+- learn.build-blazor-hybrid.bh-introduction
+- learn.build-blazor-hybrid.bh-understand-blazor-hybrid
+- learn.build-blazor-hybrid.bh-exercise-configure-environment
+- learn.build-blazor-hybrid.bh-blazor-components
+- learn.build-blazor-hybrid.bh-exercise-add-component
+- learn.build-blazor-hybrid.bh-csharp-razor-binding
+- learn.build-blazor-hybrid.bh-exercise-razor-binding
+- learn.build-blazor-hybrid.bh-platform-features
+- learn.build-blazor-hybrid.bh-exercise-platform-features
+- learn.build-blazor-hybrid.bh-summary
 badge:
   uid: learn.build-blazor-hybrid.badge
