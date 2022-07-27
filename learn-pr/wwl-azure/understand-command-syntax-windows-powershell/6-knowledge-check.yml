@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/26/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -18,23 +18,23 @@ quiz:
   questions:
   - content: "Which of these options is the common structure that PowerShell cmdlets use?"
     choices:
-    - content: "Verb-Noun\\{\\{Correct. The common structure that PowerShell cmdlets use is the Verb-Noun format. The verb portion of the cmdlet name indicates what the cmdlet does. The noun portion of the cmdlet name indicates what kinds of resources or objects the cmdlet affects.\\}\\}"
+    - content: "Verb-Noun"
       isCorrect: true
-      explanation: "correct choice"
-    - content: "Noun-Verb\\{\\{Incorrect. The common structure that PowerShell cmdlets use is the Verb-Noun format. The verb portion of the cmdlet name indicates what the cmdlet does. The noun portion of the cmdlet name indicates what kinds of resources or objects the cmdlet affects.\\}\\}"
+      explanation: "Correct. The common structure that PowerShell cmdlets use is the Verb-Noun format. The verb portion of the cmdlet name indicates what the cmdlet does. The noun portion of the cmdlet name indicates what kinds of resources or objects the cmdlet affects."
+    - content: "Noun-Verb"
       isCorrect: false
-      explanation: "incorrect choice"
-    - content: "There's no specific structure that PowerShell cmdlets use.\\{\\{Incorrect. The common structure that PowerShell cmdlets use is the Verb-Noun format. The verb portion of the cmdlet name indicates what the cmdlet does. The noun portion of the cmdlet name indicates what kinds of resources or objects the cmdlet affects.\\}\\}"
+      explanation: "Incorrect. The common structure that PowerShell cmdlets use is the Verb-Noun format. The verb portion of the cmdlet name indicates what the cmdlet does. The noun portion of the cmdlet name indicates what kinds of resources or objects the cmdlet affects."
+    - content: "There's no specific structure that PowerShell cmdlets use."
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. The common structure that PowerShell cmdlets use is the Verb-Noun format. The verb portion of the cmdlet name indicates what the cmdlet does. The noun portion of the cmdlet name indicates what kinds of resources or objects the cmdlet affects."
   - content: "Which key can you use to complete or suggest parameters for a PowerShell command?"
     choices:
-    - content: "Enter key\\{\\{Incorrect. You can use the Tab key to invoke Tab completion when entering a PowerShell command. This feature improves the speed and ease of finding and entering cmdlets and parameters.\\}\\}"
+    - content: "Enter key"
       isCorrect: false
-      explanation: "incorrect choice"
-    - content: "Tab key\\{\\{Correct. You can use the Tab key to invoke Tab completion when entering a PowerShell command. This feature improves the speed and ease of finding and entering cmdlets and parameters.\\}\\}"
+      explanation: "Incorrect. You can use the Tab key to invoke Tab completion when entering a PowerShell command. This feature improves the speed and ease of finding and entering cmdlets and parameters."
+    - content: "Tab key"
       isCorrect: true
-      explanation: "correct choice"
-    - content: "End key\\{\\{Incorrect. You can use the Tab key to invoke Tab completion when entering a PowerShell command. This feature improves the speed and ease of finding and entering cmdlets and parameters.\\}\\}"
+      explanation: "Correct. You can use the Tab key to invoke Tab completion when entering a PowerShell command. This feature improves the speed and ease of finding and entering cmdlets and parameters."
+    - content: "End key"
       isCorrect: false
-      explanation: "incorrect choice"
+      explanation: "Incorrect. You can use the Tab key to invoke Tab completion when entering a PowerShell command. This feature improves the speed and ease of finding and entering cmdlets and parameters."
