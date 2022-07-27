@@ -91,7 +91,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 7. Scroll back up and review the other columns, which represent the *features* that will be used to predict the label. Note that most of these columns are numeric, but each feature is on its own scale. For example, **Age** values range from 21 to 77, while **DiabetesPedigree** values range from 0.078 to 2.3016. When training a machine learning model, it is sometimes possible for larger values to dominate the resulting predictive function, reducing the influence of features that on a smaller scale. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
 8. Close the **diabetes-data result visualization** window so that you can see the dataset on the canvas like this:
 
-    ![The diabetes-data dataset on the designer canvas](../media/diabetes-data.png)
+    ![Screenshot of the diabetes-data dataset on the designer canvas.](../media/diabetes-data.png)
 
 ## Add transformations
 
@@ -103,7 +103,7 @@ Before you can train a model, you typically need to apply some preprocessing tra
 
 2. Find the **Normalize Data** module and place it on the canvas, below the **diabetes-data** dataset. Then connect the output from the bottom of the **diabetes-data** dataset to the input at the top of the **Normalize Data** module, like this:
 
-    ![A pipeline with the diabetes-data dataset connected to a Normalize Data module](../media/dataset-normalize.png)
+    ![Screenshot of a pipeline with the dataset connected to a Normalize Data module.](../media/dataset-normalize.png)
 
 3. Double-click the **Normalize Data** module to view its settings, noting that it requires you to specify the transformation method and the columns to be transformed. 
 4. Set the transformation to **MinMax** and the *Use 0 for constant columns when checked* to **True**. Edit the columns to include the following columns by name, as shown in the image:
@@ -116,7 +116,7 @@ Before you can train a model, you typically need to apply some preprocessing tra
     - **DiabetesPedigree**
     - **Age**
 
-    ![columns selected for normalization](../media/normalize-data.png)
+    ![Screenshot of the columns selected for normalization.](../media/normalize-data.png)
 
 The data transformation is normalizing the numeric columns to put them on the same scale, which should help prevent columns with large values from dominating model training. You'd usually apply a whole bunch of pre-processing transformations like this to prepare your data for training, but we'll keep things simple in this exercise.
 
@@ -146,7 +146,7 @@ It's common practice to train the model using a subset of the data, while holdin
 
 In this exercise, you're going to work through steps to extend the **Diabetes Training** pipeline as shown here:
 
-![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
+![Screenshot of how to split data, then train with logistic regression and score.](../media/train-score-pipeline.png)
 
 Follow the steps below, using the image above for reference as you add and configure the required modules.
 
@@ -188,7 +188,7 @@ The validation data you held back and used to score the model includes the known
 2. In the **Asset Library**, search for and place an **Evaluate Model** module to the canvas, under the **Score Model** module, and connect the output of the **Score Model** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
 3. Ensure your pipeline looks like this:
 
-![Evaluate Model module added to Score Model module](../media/evaluate-pipeline.png)
+![Screenshot of the Evaluate Model module added to Score Model module.](../media/evaluate-pipeline.png)
 
 4. Select **Submit**, and run the pipeline using the existing experiment named **mslearn-diabetes-training**.
 5. Wait for the experiment run to finish.
@@ -223,7 +223,7 @@ The performance of this model isn't all that great, partly because we performed 
 
     You're going to make the following changes to the inference pipeline:
 
-    ![An inference pipeline with changes indicated](../media/inference-changes.png)
+    ![Screenshot of an inference pipeline with changes indicated.](../media/inference-changes.png)
 
 - Replace the **diabetes-data** dataset with an **Enter Data Manually** module that doesn't include the label column (**Diabetic**).
 - Remove the **Evaluate Model** module.
@@ -261,7 +261,7 @@ def azureml_main(dataframe1 = None, dataframe2 = None):
 9. Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
 10. Verify that your pipeline looks similar to the following image:
 
-    ![A visual inference pipeline](../media/visual-inference.png)
+    ![Screenshot of a complete inference pipeline.](../media/visual-inference.png)
 
 11. Run the pipeline as a new experiment named **mslearn-diabetes-inference** on your compute cluster. The experiment may take a while to run.
 12. When the pipeline has completed, select **Job details**. In the new window, right click the **Execute Python Script** module. Select the **Preview Data** and select **Result dataset** to see the predicted labels and probabilities for the three patient observations in the input data.
@@ -277,7 +277,7 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 1. View the **Predict Diabetes** inference pipeline you created in the previous unit.
 2. Select **Job detail** on the left hand pane. This will open up another window. 
-    ![Screenshot of job details next to the completed job. ](../media/completed-job-inference.png)
+    ![Screenshot of job details next to the completed job.](../media/completed-job-inference.png)
 3. In the new window, select **Deploy**.
     ![Screenshot of the deploy button for your Predict Auto Price inference pipeline.](../media/deploy-screenshot.png)
 4. At the top right, select **Deploy**, and deploy a **new real-time endpoint**, using the following settings:
