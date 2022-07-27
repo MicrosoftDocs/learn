@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-regression-model-azure-machine-learning-designer.create-training-pipeline
-title: Create and run a training pipeline
+title: Understand steps for regression
 metadata:
-  title: Create and run a training pipeline
-  description: "Create and run a training pipeline"
-  ms.date: 06/15/2022
+  title: Understand steps for regression
+  description: "Understand steps for regression"
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 12
+durationInMinutes: 6
 content: |
-  [!include[](includes/5-create-training-pipeline.md)]
+  [!include[](includes/5-regression-steps.md)]
