@@ -22,7 +22,7 @@ Electricity is often reported as either Power or Energy, which are two different
 
 - Energy is the total amount of electricity used, the standard unit for Energy is Joules or J.
 
-- Power is the rate of electricity consumed per unit time; the standard unit of Energy is Watt or W. A single Watt is one Joule per second.
+- Power is the rate of electricity consumed per unit time; the standard unit of Power is Watt or W. A single Watt is one Joule per second.
 
 A common way of referring to energy consumption is _Power over a unit of Time, such as Watt-seconds or Kilowatt-hours_. For example:
 
