@@ -6,7 +6,7 @@ metadata:
 you to Windows PowerShell and its versions. It discusses commonly used host
 applications. It explains how to use Microsoft Visual Studio Code (VS Code) to
 develop PowerShell scripts."
-  ms.date: 07/26/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -43,11 +43,11 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.review-windows-powershell.introduction
-- learn.wwl.review-windows-powershell.learn-about
+- learn.wwl.review-windows-powershell.learn-about-windows-powershell
 - learn.wwl.review-windows-powershell.get-familiar-applications
-- learn.wwl.review-windows-powershell.identify-factors-to-install-use
+- learn.wwl.review-windows-powershell.identify-factors-install-use-windows-powershell
 - learn.wwl.review-windows-powershell.configure-console
-- learn.wwl.review-windows-powershell.configure-integrated-scripting-environment-ise
+- learn.wwl.review-windows-powershell.configure-integrated-scripting-environment
 - learn.wwl.review-windows-powershell.use-visual-studio-code-powershell
 - learn.wwl.review-windows-powershell.knowledge-check
 - learn.wwl.review-windows-powershell.summary
