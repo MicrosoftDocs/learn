@@ -47,15 +47,15 @@ New-ADGroup -Name FileServerAdmins -GroupScope Global
 
 ## Managing group membership
 
-As previously mentioned, you can use the ***-ADGroupMember** or the ***-ADPrincipalGroupMembership** cmdlets to manage group management in two different ways. The difference between the two is a matter of focusing on an object and modifying the groups to which it belongs, or focusing on the group and modifying the members that belong to it. Additionally, you can choose which set to use based on the decision to *pipe* a list of members to the command or provide a list of members.
+As previously mentioned, you can use the **`*-ADGroupMember`** or the **`*-ADPrincipalGroupMembership`** cmdlets to manage group management in two different ways. The difference between the two is a matter of focusing on an object and modifying the groups to which it belongs, or focusing on the group and modifying the members that belong to it. Additionally, you can choose which set to use based on the decision to *pipe* a list of members to the command or provide a list of members.
 
-***-ADGroupMember** cmdlets modify the membership of a group. For example:
+**`*-ADGroupMember`** cmdlets modify the membership of a group. For example:
 
 - You can add or remove members of a group.
 - You can pass a list of groups to these cmdlets.
 - You can't *pipe* a list of members to these cmdlets.
 
-***-ADPrincipalGroupMembership** cmdlets modify the group membership of an object such as a user. For example:
+**`*-ADPrincipalGroupMembership`** cmdlets modify the group membership of an object such as a user. For example:
 
 - You can add a user account as a member to a group.
 - You can't provide a list of groups to these cmdlets.

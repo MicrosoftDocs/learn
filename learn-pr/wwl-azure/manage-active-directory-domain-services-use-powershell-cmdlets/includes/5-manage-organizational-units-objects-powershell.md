@@ -34,7 +34,7 @@ New-ADOrganizationalUnit -Name Sales -Path "ou=marketing,dc=adatum,dc=com" -Prot
 
 You'll sometimes need to manage Active Directory objects that don't have their own management cmdlets, such as contacts. You might also want to manage multiple object types in a single operation, such as moving users and computers from one OU to another OU. The Active Directory module provides cmdlets that allow you to create, delete, and modify these objects and their properties. Because these cmdlets can manage all objects, they repeat some functionality of the cmdlets for managing users, computers, groups, and OUs.
 
-***-ADObject** cmdlets sometimes perform faster than cmdlets that are specific to object type. This is because those cmdlets add the cost of filtering the set of applicable objects to their operations. Cmdlets for changing generic Active Directory objects have the text “Object” in the noun part of the name.
+**`*-ADObject`** cmdlets sometimes perform faster than cmdlets that are specific to object type. This is because those cmdlets add the cost of filtering the set of applicable objects to their operations. Cmdlets for changing generic Active Directory objects have the text “Object” in the noun part of the name.
 
 The following table lists cmdlets that you can use to manage Active Directory objects.
 

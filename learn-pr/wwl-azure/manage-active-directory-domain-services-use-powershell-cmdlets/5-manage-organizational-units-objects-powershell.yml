@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-active-directory-domain-services-use-powershell-cmdlets.manage-organizational-units-objects-powershell
-title: Manage Organizational Units and Active Directory objects in PowerShell
+title: Manage organizational units and Active Directory objects in PowerShell
 metadata:
-  title: Manage Organizational Units and Active Directory objects in PowerShell
-  description: "Manage Organizational Units and Active Directory objects in PowerShell"
+  title: Manage organizational units and Active Directory objects in PowerShell
+  description: "Manage organizational units and Active Directory objects in PowerShell"
   ms.date: 07/27/2022
   author: wwlpublish
   ms.author: tonyj
