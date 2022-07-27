@@ -1,7 +1,8 @@
 In your first week on your new job, you've looked through the existing resources in your company's Azure subscription. There are a number of resource groups that contain many different resources, but they aren't organized into a coherent structure. You've worked on Azure before, but aren't entirely sure how resource groups work and what their role is. You've guessed (correctly) that they can play a role in how you organize your resources. Let's look at what they are, and how they can be used.
 
 [!INCLUDE [azure-free-trial-note](../../../includes/azure-free-trial-note.md)]
-<br/>
+
+
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Azure-Resource-Manager/player?format=ny]
 
 ## What are resource groups?
