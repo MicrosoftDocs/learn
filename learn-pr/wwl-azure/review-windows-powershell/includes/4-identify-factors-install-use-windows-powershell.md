@@ -31,7 +31,8 @@ If you intend to use PowerShell to perform administrative tasks on computers tha
 
 The execution policy in PowerShell is meant to minimize the possibility of a user unintentionally running PowerShell scripts. You can think of it as a safety feature that controls the conditions under which PowerShell loads configuration files and runs scripts. This feature helps prevent the execution of malicious scripts.
 
-> **Important:** The execution policy in PowerShell isn't a security system that restricts user actions. For example, if users can't run a script, they can easily bypass a policy by entering the script contents at the command line.
+> [!IMPORTANT]
+> The execution policy in PowerShell isn't a security system that restricts user actions. For example, if users can't run a script, they can easily bypass a policy by entering the script contents at the command line.
 
 To identify the effective execution policy for the current PowerShell session, use the following cmdlet:
 
