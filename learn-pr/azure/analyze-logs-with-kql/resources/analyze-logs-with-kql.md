@@ -42,7 +42,7 @@ Identify the subtasks of module title.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Prepare: Characterize the data you need and compare with the log data you have | TODO | Knowledge check | 1 | Yes |
+| Prepare: Characterize the data you need for your inquiry and compare with the log data you have | TODO | Knowledge check | 1 | Yes |
 | Exercise 1: Analyze virtual machine agent health | TODO | Exercise | 1, 2 | Yes |
 | Exercise 2: Identify machines with high and low CPU usage  | TODO | Exercise | 1, 2 | Yes |
 | Exercise 3: Summarize free space statistics by computer | TODO | Exercise | 1, 2 | Yes |
@@ -63,7 +63,7 @@ Identify the subtasks of module title.
     - Summarize free space statistics by computer. 
     
 
-1. Characterize your raw data and your data analysis needs 
+1. Characterize the data you need for your inquiry and compare with the log data you have
     
     **Characterize your inquiry**
     
