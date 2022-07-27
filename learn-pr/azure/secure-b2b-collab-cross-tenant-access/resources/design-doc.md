@@ -22,11 +22,11 @@ azure-active-directory
 
 ## Summary
 
-Define your inbound and outbound B2B collaboration with other Azure Active Directory tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Azure AD organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant.
+Define your inbound and outbound B2B collaboration with other Azure Active Directory tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Azure AD organizations by default, and then set individual policies for specific organizations. You can trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant. With an Azure Premium license, you also have granular control over who can use B2B collaboration and which applications can be accessed.
 
 ## Learning objectives
 
-1. Design cross-tenant access policies that allow B2B collaboration by default but limit access to an application.
+1. Design cross-tenant access policies that allow outbound B2B collaboration but block inbound B2B collaboration by defaul.
 2. Configure cross-tenant access settings between your organization and an external partner’s organization.
 3. Validate that with MFA trust enabled, an external partner can access a resource shared to them without having to repeat MFA.
 
@@ -36,19 +36,16 @@ Identify the subtasks of *Secure B2B collaboration by using cross-tenant access 
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Configure default cross-tenant access settings | Allow inbound and outbound B2B collaboration by default, but limit access to a restricted app | Exercise | 1 | Yes |
-| Add organizational settings to allow access to an app and trust MFA | Allow users in the branch to access the restricted app via B2B collaboration and trust MFA | Exercise | 2,3 | Yes|
-| Scope access to individual apps and users in an external organization  | Allow two auditors in an external tenant to access the restricted app | Exercise  | 2 | Yes|
+| Configure default cross-tenant access settings | Allow outbound B2B collaboration by default, but block inbound B2B collaboration to protect internal applications | Exercise | 1 | Yes |
+| Add organizational settings to allow inbound B2B collaboration from a branch organization and trust MFA | Allow users in the branch to access the restricted app via B2B collaboration and trust MFA | Exercise | 2,3 | Yes|
 
 ## Outline the units
 
-Add more units as needed for your content
-
 1. **Introduction**
 
-Suppose you're an IT admin in a financial institution. Employees in your organization regularly collaborate with partners on marketing and communications projects, so you want to allow B2B collaboration with external users. However, your accounting application contains highly sensitive data, so you want to strictly control access to this application.
+Suppose you're an IT admin in a financial institution. Employees in your organization regularly collaborate with partners on marketing and communications projects, so you want to allow outbound B2B collaboration with external users. However, your internal applications contain highly sensitive data, so you want to strictly control access to your applications.
 
-You've recently acquired a branch whose employees will need access to your accounting application. This branch is managed in a separate Azure AD tenant. You don't want these users to have to complete multi-factor authentication (MFA) repeatedly during sign-in, so you want to streamline their experience by trusting MFA from the branch tenant. In addition to these users, there are two individual auditors from an external firm who also need access to your accounting application for an upcoming audit.
+You've recently acquired a branch whose employees will need access to your internal applications. This branch is managed in a separate Azure AD tenant. You don't want these users to have to complete multi-factor authentication (MFA) repeatedly during sign-in, so you want to streamline their experience by trusting MFA from the branch tenant.
 
 2. Concept - Designing inbound and outbound settings for B2B collaboration
 
@@ -56,11 +53,11 @@ You've recently acquired a branch whose employees will need access to your accou
     - Describe cross-tenant access settings and contrast them with other B2B collaboration settings
     - Describe MFA trust settings
 
-3. Exercise - Configure default cross-tenant access settings to allow inbound and outbound access, but block an internal app
+3. Exercise - Configure default cross-tenant access settings to allow outbound access, but block internal access
 
     - Navigate to default cross-tenant access settings
     - Allow all outbound B2B collaboration
-    - Allow all inbound B2B collaboration except for a specific app (accounting app)
+    - Block all inbound B2B collaboration
 
 4. Concept - Creating organizational settings for B2B collaboration with another Azure AD tenant and trusting MFA
 
@@ -72,18 +69,8 @@ You've recently acquired a branch whose employees will need access to your accou
 
     - Add an organization (branch org)
     - Edit the inbound cross-tenant settings
-    - Allow inbound B2B collaboration scoped to a specific app (accounting app)
+    - Allow inbound B2B collaboration
     - Trust MFA from the organization
-
-6. Concept - Scoping cross-tenant access settings to specific organizations and users
-
-   - Describe how you add an organization and define the organization's inbound cross-tenant access settings to limit access to a specific app by individual users
-
-6. Exercise - Configure organizational settings to allow access to an app by individual users
-
-    - Add an organization (auditing org)
-    - Edit the inbound cross-tenant settings
-    - Allow inbound B2B collaboration scoped to a specific app and individual users
 
 7. Knowledge Check
 
@@ -93,7 +80,7 @@ You've recently acquired a branch whose employees will need access to your accou
 
 8. Summary
 
-    Our IT admin needed to employees to freely collaborate with external partners on most apps, but access to the accounting app needed to be limited to users in a branch organization and just two individuals from an auditing firm. In this module, you learned that cross-tenant access settings let you enable or block B2B collaboration with other Azure AD organizations. You can apply settings across all Azure AD organizations, or you can scope them to individual Azure AD organizations, apps, and users or groups. You also learned how to trust MFA claims so that B2B collaboration aren't required to complete MFA if they've already done so in their home tenant.
+    Our IT admin needed to allow employees to freely collaborate with external Azure AD partners on external applications. But the admin needed to block all external Azure AD organizations from being able to access internal applications, except for users in a branch organization. In this module, you learned that cross-tenant access settings let you enable or block B2B collaboration with other Azure AD organizations. You also learned how to trust MFA claims so that B2B collaboration aren't required to complete MFA if they've already done so in their home tenant.
 
 ## Notes
 

@@ -1,104 +1,60 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this exercise, we'll configure cross-tenant access settings that represent the access policies you want to apply to B2B collaboration with other Azure AD organizations. The default settings we configure will apply to all external Azure AD organizations.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Recall that in the financial firm example, outbound B2B collaboration would be allowed for all of your internal employees. Also by default, all inbound B2B collaboration would be blocked to protect your internal applications. Later, collaboration with a branch organization would be allowed only for all of their users. Here, you'll configure the default cross-tenant access settings for B2B collaboration.
 
-    Heading: none
+[Diagram of the full financial firm example, with just the default settings highlighted.]
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## Set default outbound cross-tenant access
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Here, you'll configure your default outbound settings for B2B collaboration. You'll make sure your cross-tenant access settings will allow other Azure AD organizations to invite your users to their organization for B2B collaboration.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+[Diagram showing inbound collaboration allowed for all but one application.]
 
-    Goal: Describe the part of the scenario covered in this exercise
+### Open the Azure Active Directory service in the portal
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Open a web browser.
+2. In the address bar, type https://portal.azure.com.
+3. Sign in using your Azure AD admin account.
+4. Open the Azure Active Directory service by following these steps:
+   - Under **Azure services**, select **Azure Active Directory**, or
+   - Use the search box search for "Azure Active Directory" and then select it.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+### Configure default outbound settings
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+1. On the left navigation bar, select **External Identities**.
+2. Select **Cross-tenant access settings**.
+1. Select the **Default settings** tab.
+2. Under **Outbound access settings**, select **Edit outbound defaults**.
+3. Select **B2B collaboration**.
+4. With **Users and groups** selected, make sure **Access status** is set to **Allow access**.
+5. Under **Applies to**, make sure **All &lt;your organization name&gt; users** is selected.
+6. Select **External applications**.
+7. Make sure **Access status** is set to **Allow access** and make sure **Applies to** is set to All applications.
+8. Select **Save**. You'll return to the main **Cross-tenant access settings** page. Stay on this page and go on to the next section.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+## Set default inbound cross-tenant access
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+Now, you'll configure your default inbound settings to block all inbound B2B collaboration. You'll make sure your cross-tenant access settings will block everyone in other Azure AD organizations from being invited to your organization for B2B collaboration.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+[Diagram showing inbound collaboration allowed with other Azure AD organizations.]
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. On the main **Cross-tenant access settings**, select the **Default settings** tab.
+2. Under **Inbound access settings**, select **Edit inbound defaults**.
+3. Select **B2B collaboration**.
+4. With **External users and groups** selected, make sure **Access status** is set to **Block access**.
+5. Under **Applies to**, make sure **All external users and groups** is selected.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+    ![Screenshot showing default inbound access settings.](media/cross-tenant-access-settings-b2b-collaboration/generic-inbound-applications-add.png)
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+8. Select **Save**. You'll return to the main Cross-tenant access settings page. Stay on this page to check your work in the next section.
 
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+On the main **Cross-tenant access settings** page:
 
-<!-- Do not add a unit summary or references/links -->
+- In the **Inbound access settings** section, you should see two **B2B collaboration** rows. The **External users and groups** row should have a **Status** of **All blocked**.
+- In the **Outbound access settings** section, you should see two **B2B collaboration** rows. Both of these rows should have a **Status** of **All allowed**.
+
+[Screenshot showing outbound access settings set to All allowed.]
+
+All your users can now be invited by other Azure AD organizations to use B2B collaboration, but all external Azure AD users are blocked from using B2B collaboration to access your applications.

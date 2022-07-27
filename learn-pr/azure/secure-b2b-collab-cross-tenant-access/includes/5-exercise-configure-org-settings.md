@@ -1,104 +1,64 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this exercise, we'll configure cross-tenant access settings for a specific organization. These settings will take precedence over the default cross-tenant access settings for this organization only.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Recall that in the financial firm example, the default cross-tenant access settings are configured so that outbound B2B collaboration is allowed, but inbound B2B collaboration is blocked for all external Azure AD organizations. But now that the financial firm has acquired a branch, they want to allow those branch users to access internal applications using B2B collaboration. They also want to make sure that if the user has completed multi-factor authentication in their home tenant, they won't be asked to do so again.
 
-    Heading: none
+[Diagram of the full financial firm example, with just the organizational settings highlighted.]
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+## Create organizational settings
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Here, you'll add an organization to your cross-tenant access settings. Then you'll configure the organization's inbound cross-tenant access settings to allow the organization's users to access your applications through B2B collaboration. You won't make any changes to the organization's outbound settings, which means your default settings will apply and other Azure AD organizations will be able to invite your users to their organization for B2B collaboration.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+[Diagram showing inbound collaboration allowed for all but one application.]
 
-    Goal: Describe the part of the scenario covered in this exercise
+### Open the Azure Active Directory service in the portal
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Open a web browser.
+2. In the address bar, type https://portal.azure.com.
+3. Sign in using your Azure AD admin account.
+4. Open the Azure Active Directory service with the following steps:
+   - Under **Azure services**, select **Azure Active Directory**, or
+   - Use the search box search for "Azure Active Directory" and then select it.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+## Add an organization
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+1. On the left navigation bar, select **External Identities**.
+2. Select **Cross-tenant access settings**.
+1. Select the **Organizational settings** tab.
+2. Select **Add organization**.
+3. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
+4. Select the organization in the search results, and the select **Add**.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+   Now the organization will appear in the **Organization settings** list. You'll notice that the settings in the **Inbound access** and **Outbound access** columns are all set to **Inherited from default**. Stay on this page and go to the next section to modify the inbound access settings for the organization.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+## Modify the inbound settings for the organization
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+1. In the **Organizational settings** list, find the organization in the list and select the link in the **Inbound access** column.
+3. Select **B2B collaboration**.
+3. Select **Customize settings**.
+4. Select **External users and groups**.
+5. Under **Access status**, select **Allow access**.
+6. Under **Applies to**, make sure **All &lt;organization name&gt; users and groups** is selected.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+    ![Screenshot showing inbound access settings for an organization with inbound access set to all allowed.](media/cross-tenant-access-settings-b2b-collaboration/generic-inbound-applications-add.png)
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+8. Select **Save**. You'll return to the main Cross-tenant access settings page. Stay on this page and go to the next section to configure the multi-factor trust setting.
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+## Trust multi-factor authentication from the organization
 
-    Goal: List the steps they'll do to complete the exercise.
+When you choose to trust multi-factor authentication, your Conditional Access policies will trust claims from the external organization about whether their user has completed multi-factor authentication in their home tenant. During authentication, Azure AD will check a user's credentials, and if a claim exists indicating that the user has completed multi-factor authentication, they won't be asked to do so again.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+1. In the **Organizational settings** list, find the organization in the list and select the link in the **Inbound access** column.
+1. Select the **Trust settings** tab.
+2. Select **Customize settings**.
+3. Select **Trust multi-factor authentication from Azure AD tenants**. Stay on this page to check your work in the next section.
 
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+On the main **Cross-tenant access settings** page, select the Organizational settings tab. Make sure the organization you added appears in the list and has the following settings:
 
-<!-- Do not add a unit summary or references/links -->
+- The **Inbound access settings** column should show **All allowed**.
+- The **Outbound access** column should show **Inherited from default**.
+
+[Screenshot of organizational settings showing an organization with inbound access set to All allowed and outbound access set to Inherited from default.]
+
+All users from the external organization can now be invited to your organization for B2B collaboration. And because this organization inherits outbound settings from your defaults, your users can also be invited to the external organization for B2B collaboration.

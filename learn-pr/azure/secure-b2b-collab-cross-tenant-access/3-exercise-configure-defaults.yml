@@ -4,12 +4,12 @@ title: Exercise - Configure default settings
 metadata:
   unitType: exercise
   title: exercise
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 7/19/2022
+  description: "Follow this exercise to configure your default outbound cross-tenant access settings for B2B collaboration."
+  ms.date: 7/31/2022
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-configure-defaults.md)]

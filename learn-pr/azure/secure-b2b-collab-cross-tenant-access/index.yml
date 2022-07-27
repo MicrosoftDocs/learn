@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: secure-b2b-collab-cross-tenant-access
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
-  ms.date: 7/19/2022
+  ms.date: 7/31/2022
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial
@@ -35,9 +35,7 @@ units:
 - learn.secure-b2b-collab-cross-tenant-access.3-exercise-configure-defaults
 - learn.secure-b2b-collab-cross-tenant-access.4-creating-organizational-settings
 - learn.secure-b2b-collab-cross-tenant-access.5-exercise-configure-org-settings
-- learn.secure-b2b-collab-cross-tenant-access.6-scoping-access-users
-- learn.secure-b2b-collab-cross-tenant-access.7-exercise-configure-user-access
-- learn.secure-b2b-collab-cross-tenant-access.8-knowledge-check
-- learn.secure-b2b-collab-cross-tenant-access.9-summary
+- learn.secure-b2b-collab-cross-tenant-access.6-knowledge-check
+- learn.secure-b2b-collab-cross-tenant-access.7-summary
 badge:
   uid: learn.secure-b2b-collab-cross-tenant-access.badge

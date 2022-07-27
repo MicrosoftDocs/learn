@@ -1,78 +1,29 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Sometimes organizations have different sets of B2B collaboration requirements for different partners. For example, an organization might want to block B2B collaboration with all Azure AD organizations by default, but allow collaboration with one organization. In the financial firm scenario, the IT admin needed to create organization-specific settings for the branch office and allow B2B collaboration so their users could access the main branch's applications.
 
-    Goal: briefly summarize the key skill this unit will teach
+Here, you'll learn the cross-tenant access settings you can use to create B2B collaboration settings that are specific to an organization. You'll also learn about trusting multi-factor authentication from another organization so that users don't have to complete the MFA process multiple times when signing in.
 
-    Heading: none
+[Diagram showing cross-tenant access settings and B2B collaboration.]
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Creating organization-specific settings
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+We've seen how default cross-tenant access settings apply generally to all other Azure AD organizations. But you can also create organization-specific access settings. Through your cross-tenant access settings, you have the option of adding an organization and modifying the inbound and outbound B2B collaboration settings for that organization. These organizational settings then take precedence over the default settings.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+[Diagram showing organization-specific settings.]
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+The same B2B collaboration settings that are available at the default level are also available at the organizational level. Inbound settings control whether users from the other organization can be invited to your organization, and outbound settings either allow or block your users from being invited to the other organization. The settings can apply to all users and applications, or if you have an Azure AD premium license, they can apply to specific users, groups, or applications.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+In our financial firm scenario, the main branch's internal applications contain highly sensitive data, so the IT admin blocked inbound B2B collaboration with other Azure AD organizations by default. However, the firm acquired a branch, which is managed in a separate Azure AD tenant. Because the branch employees needed access to the main applications, the IT admin wants to create an exception to allow inbound B2B collaboration for users in the branch.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+[Diagram showing the external branch's access to the main branch's applications.]
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+## Trusting multi-factor authentication from another organization
 
-    Goal: State concisely what's covered in this unit
+One of the features of cross-tenant access settings is the ability to trust an external Azure AD organization's multi-factor authentication claims. When an external user has already completed multi-factor authentication in their home Azure AD tenant, not having to complete it again in your tenant makes for more a more streamlined sign-in experience.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+This trust setting is available at both the default level and at the organizational level. This means you can choose to always trust multi-factor authentication claims from all external Azure AD organizations, and you can trust these claims for individual organizations.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+This feature is especially useful in our example scenario. Users in the newly acquired branch are considered part of the larger organization. Ideally they wouldn't be asked to perform MFA more than once while signing into their applications. To accomplish this, the IT admin can configure their branch-specific organizational settings to trust MFA claims from the branch.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+[Screenshot showing the Trust multi-factor authentication setting.]
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+Along with MFA trust settings, cross-tenant access settings also provide options for trusting device claims (compliant claims and hybrid Azure AD joined claims) from other Azure AD organizations.
