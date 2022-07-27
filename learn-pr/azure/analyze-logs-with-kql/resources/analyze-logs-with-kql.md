@@ -42,7 +42,7 @@ Identify the subtasks of module title.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Prepare: Characterize the data you need for your inquiry and compare with the log data you have | TODO | Knowledge check | 1 | Yes |
+| Prepare: Characterize the data you need for your inquiry and compare with your log data | TODO | Knowledge check | 1 | Yes |
 | Exercise 1: Analyze virtual machine agent health | TODO | Exercise | 1, 2 | Yes |
 | Exercise 2: Identify machines with high and low CPU usage  | TODO | Exercise | 1, 2 | Yes |
 | Exercise 3: Summarize free space statistics by computer | TODO | Exercise | 1, 2 | Yes |
@@ -56,14 +56,14 @@ Identify the subtasks of module title.
     
     You're a data scientist at a retail chain that uses Azure Monitor to monitor the machines in its retail stores. 
 
-    To identify, anticipate and address problems on the machines in the various locations at the end of each day, you've been asked to write queries to:
+    To anticipate and address problems with the virtual machines running in the stores, you want to:
 
     - Analyze monitoring agent health.
     - Identify machines with high CPU usage that might need to be upgraded.
     - Summarize free space statistics by computer. 
     
 
-1. Characterize the data you need for your inquiry and compare with the log data you have
+1. Characterize the data you need for your inquiry and compare with your log data
     
     **Characterize your inquiry**
     
@@ -79,14 +79,15 @@ Identify the subtasks of module title.
     - Which tables hold this type of data?
     - Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights?
     - Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources? 
-    - Is the raw data in the table sufficient to answer your question, or do you need to perform additional calculations using this data?
+    - Is the raw data in the table sufficient to answer your question, or do you need to perform other calculations using this data?
     - Do you need additional information from other tables to address your question? 
     
 
 1. Exercise: Analyze virtual machine agent health
 
-    Scenario 1A: Machines that do not send heartbeat in the past 5 minutes but did send in the past 48h (i.e. Recently active)
-    Note that we project the max_TimeGenerated because it can be used to correlate with machine logs or other environmental events that occurred around the same time which could explain the reason it stopped sending data.
+    Scenario 1A: Identify machines that haven't sent a heartbeat in the past five minutes but did send one the past 48 hours (in other words, recently active machines).
+    
+    Note: We use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating these logs can help in analyzing the reason the machined stopped sending data.
 
     ```kusto
     Heartbeat
@@ -99,8 +100,7 @@ Identify the subtasks of module title.
     | project-reorder max_TimeGenerated,Computer,AgentType,OSType
     ```
 
-     Scenario 1B:
-    Get a list of computers sending Heartbeat actively in the past 10m by the Agent version they have and OSType and AgentType:
+    Scenario 1B: List computers that sent a heartbeat in the past 10 minutes by their agent version, OSType and AgentType:
 
     ```kusto    
     Heartbeat 
@@ -114,7 +114,7 @@ Identify the subtasks of module title.
 
 1. Exercise: Identify machines with high and low CPU usage
    
-    For the percentile 99%, it means that the value we get is a value that 99% of the values are smaller\shorter then it and only 1% is higher than it
+    99th percentile means that this value is higher than 99% of all values are lower than 1% of all values.
 
     ```kusto     
     Perf
