@@ -10,7 +10,7 @@ You'll build the endpoint to create and return shortened URLs first. This method
 1) Below the existing "Hello World" `Get` endpoint, add the following code:
 
     ```csharp
-    app.MapMethods("/shorten/{*path}",
+    app.MapGet("/shorten/{*path}",
         async (IGrainFactory grains, HttpRequest request, string path) =>
     {
         return Results.Ok();
@@ -22,7 +22,7 @@ You'll build the endpoint to create and return shortened URLs first. This method
 1) Update the body of the GET method you created to match the following code:
 
     ```csharp
-    app.MapMethods("/shorten/{*path}",
+    app.MapGet("/shorten/{*path}",
     async (IGrainFactory grains, HttpRequest request, string path) =>
     {
         var shortenedRouteSegment = Guid.NewGuid().GetHashCode().ToString("X");
@@ -32,7 +32,7 @@ You'll build the endpoint to create and return shortened URLs first. This method
         {
             Path = $"/go/{shortenedRouteSegment}"
         };
-    
+
         return Results.Ok(resultBuilder.Uri);
     });
     ```
@@ -51,11 +51,11 @@ Next you need to create the endpoint that will redirect shortened URLs to the fu
 
     ```csharp
     app.MapGet("/go/{shortenedRouteSegment}",
-        async (IGrainFactory grains, string shortenedRouteSegment) =>
+    async (IGrainFactory grains, string shortenedRouteSegment) =>
     {
         var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
         var url = await shortenerGrain.GetUrl();
-    
+
         return Results.Redirect(url);
     });
     ```
