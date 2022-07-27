@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/27/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which parameter can you use with **-NetIPAddress** cmdlets to identify a network interface?"
+    choices:
+    - content: "‑InterfaceAlias"
+      isCorrect: true
+      explanation: "Correct. You can use -InterfaceAlias or -InterfaceIndex to identify a network interface when using `*‑NetIPAddress` cmdlets."
+    - content: "-DefaultGateway"
+      isCorrect: false
+      explanation: "Incorrect. You can use -InterfaceAlias or -InterfaceIndex to identify a network interface when using `*‑NetIPAddress` cmdlets."
+    - content: "-IPAddress"
+      isCorrect: false
+      explanation: "Incorrect. You can use -InterfaceAlias or -InterfaceIndex to identify a network interface when using `*‑NetIPAddress` cmdlets."
+  - content: "You need to manage firewall settings and rules with PowerShell. Which PowerShell module contains the required cmdlets?"
+    choices:
+    - content: "DNSClient module"
+      isCorrect: false
+      explanation: "Incorrect. The NetSecurity module contains the cmdlets to manage firewall rules."
+    - content: "NetTCPIP module"
+      isCorrect: false
+      explanation: "Incorrect. The NetSecurity module contains the cmdlets to manage firewall rules."
+    - content: "NetSecurity module"
+      isCorrect: true
+      explanation: "Correct. The NetSecurity module contains the cmdlets to manage firewall rules."
