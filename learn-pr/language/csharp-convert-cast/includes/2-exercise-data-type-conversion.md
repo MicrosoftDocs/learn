@@ -43,7 +43,7 @@ And this will produce the following output:
 
 Let's return to our first code example where the `result` variable is of type `int`. Why can't the C# compiler figure out that we want to treat the variable `second` containing `4` as a number, not a `string`?
 
-The C# compiler sees a potential problem in the making. The variable `second` is of type `string`, so it might be set to a different value like `"hello"`. If the C# compiler attempted to convert `"hello"` to a number that would cause an exception at runtime. To avoid this possibility, the C# compiler will not implicitly perform the conversion from `string` to `int` for you.
+The C# compiler sees a potential problem in the making. The variable `second` is of type `string`, so it might be set to a different value like `"hello"`. If the C# compiler attempted to convert `"hello"` to a number that would cause an exception at runtime. To avoid this possibility, the C# compiler won't implicitly perform the conversion from `string` to `int` for you.
 
 From the C# compiler's perspective, the safer operation would be to convert `int` into a `string` and perform concatenation instead.
 
@@ -61,7 +61,7 @@ We'll look at a few examples of these techniques for data conversion later in th
 
 ## Question 2: Is it possible, depending on the value, that attempting to change the value's data type would result in a loss of information?
 
-The term *widening conversion* means that you are attempting to convert a value **from** a data type that could hold *less* information **to** a data type that can hold *more* information. In this case, you'll lose no information. So, an example of this would be converting a value stored in a variable of type `int` and now converting that value into a variable of type `decimal`.
+The term *widening conversion* means that you're attempting to convert a value **from** a data type that could hold *less* information **to** a data type that can hold *more* information. In this case, you'll lose no information. So, an example of this would be converting a value stored in a variable of type `int` and now converting that value into a variable of type `decimal`.
 
 If you were to print out the two values, you would likely notice no difference.
 
