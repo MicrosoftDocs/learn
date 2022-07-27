@@ -12,8 +12,20 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
+  - content: What should they do to fix this error?
+    choices:
+    - content: Add the `permissions` property to the workflow definition.
+      isCorrect: true
+      explanation: Correct. The error message indicates that the workflow doesn't have permissions to work with tokens.
+    - content: Move the client ID, tenant ID, and subscription ID inputs into GitHub secrets.
+      isCorrect: false
+      explanation: Incorrect. You don't need to use GitHub secrets for the identifiers. The error message indicates that the workflow doesn't have permissions to work with tokens.
+    - content: Use a service principal and a key.
+      isCorrect: false
+      explanation: Incorrect. You don't need to use a key. The error message indicates that the workflow doesn't have permissions to work with tokens.
   - content: Which of these statements about workload identities is true?
     choices:
     - content: When you use workload identities, you must carefully manage their secrets.
@@ -35,8 +47,8 @@ quiz:
       explanation: Incorrect. Although this will work, it's not good practice to use a single workload identity for all of your environments. At the very least, you should separate production and non-production environments by using two workload identities, but a dedicated workload identity for each environment is ideal.
     - content: Create three workload identities, one per environment, and grant each access to a single resource group in a single subscription.
       isCorrect: true
-      explanation: Correct. When you work with multiple environments, it's best to use dedicated workload identities for each environment so that your pipeline can't accidentally change anything in another environment.
-  - content: You're creating a workload identity to run a pipeline. The pipeline deploys a Bicep file that creates a single storage account. Which of the following options has the least privileged access that you need for your pipeline?
+      explanation: Correct. When you work with multiple environments, it's best to use dedicated workload identities for each environment so that your deployment workflow can't accidentally change anything in another environment.
+  - content: You're creating a workload identity to run a deployment workflow. The workflow deploys a Bicep file that creates a single storage account. Which of the following options has the least privileged access that you need for your workflow?
     choices:
     - content: |
         **Role definition:** Contributor<br />
@@ -47,7 +59,7 @@ quiz:
         **Role definition:** Contributor<br />
         **Scope:** Resource group
       isCorrect: true
-      explanation: Correct. The Contributor role is a good one to use. Additionally, it's a good practice to grant it over the resource group, which is all that this pipeline needs.
+      explanation: Correct. The Contributor role is a good one to use. Additionally, it's a good practice to grant it over the resource group, which is all that this workflow needs.
     - content: |
         **Role definition:** Owner<br />
         **Scope:** Resource group
