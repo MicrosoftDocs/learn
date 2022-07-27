@@ -32,7 +32,7 @@ You'll build the endpoint to create and return shortened URLs first. This method
         {
             Path = $"/go/{shortenedRouteSegment}"
         };
-
+    
         return Results.Ok(resultBuilder.Uri);
     });
     ```
@@ -51,11 +51,11 @@ Next you need to create the endpoint that will redirect shortened URLs to the fu
 
     ```csharp
     app.MapGet("/go/{shortenedRouteSegment}",
-    async (IGrainFactory grains, string shortenedRouteSegment) =>
+        async (IGrainFactory grains, string shortenedRouteSegment) =>
     {
         var shortenerGrain = grains.GetGrain<IUrlShortenerGrain>(shortenedRouteSegment);
         var url = await shortenerGrain.GetUrl();
-
+    
         return Results.Redirect(url);
     });
     ```
