@@ -44,6 +44,6 @@ quiz:
     - content: "Directory attributes, schema extensions, extension attributes."
       isCorrect: false
       explanation: "Try again. Extension attributes have predefined names that cannot be changed."
-    - content: "Schema extensions, directory extensions, and extension attributes."
+    - content: "Schema extensions and directory extension."
       isCorrect: true
-      explanation: "Correct. Only open extensions allow custom names but don't support query capabilities."
+      explanation: "Correct. Extension attributes don't support custom names while open extensions don't support query capabilities."
