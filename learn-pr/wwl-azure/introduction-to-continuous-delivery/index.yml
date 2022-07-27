@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-continuous-delivery
 metadata:
   title: Introduction to continuous delivery
   description: "Introduction to continuous delivery"
-  ms.date: 03/02/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -48,6 +48,7 @@ units:
 - learn.wwl.introduction-to-continuous-delivery.what-continuous-delivery
 - learn.wwl.introduction-to-continuous-delivery.move-continuous-delivery
 - learn.wwl.introduction-to-continuous-delivery.understand-releases-deployments
+- learn.wwl.introduction-to-continuous-delivery.understand-release-process-versus-release
 - learn.wwl.introduction-to-continuous-delivery.knowledge-check
 - learn.wwl.introduction-to-continuous-delivery.summary
 badge:
