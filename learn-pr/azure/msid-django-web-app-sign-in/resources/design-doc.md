@@ -1,0 +1,76 @@
+# Title
+
+Enable user sign in to your Django web app using Azure AD
+
+## Role(s)
+
+- Developer
+
+## Level
+
+- intermediate
+
+## Product(s)
+
+- azure-active-directory
+- msal-python
+
+## Prerequisites
+
+- Beginner level Python 3.8+ and Django web framework.
+- An Azure account with an [active subscription](https://azure.microsoft.com/free/).
+- An Azure Active Directory B2C (Azure AD B2C) tenant that you manage as a Global administrator.
+- A user account in your own Azure AD tenant.
+
+## Summary
+
+Enable your Python Django web app to sign in users to your Azure Active Directory (Azure AD) tenant with the Microsoft identity platform.
+
+## Learning objectives
+
+Upon completion of this module/unit, the student will be able to:
+
+- Register web application in an Azure AD tenant.
+- Configure Django web application to use it's Azure AD tenant app registration details.
+- Sign-in user to a Django web application to obtain an ID token.
+
+## Chunk your content into subtasks
+
+Identify the subtasks of module title.
+
+## Outline the units
+
+1. **Introduction**
+
+Suppose you work at a banking company as a developer. Your company is looking to develop a web application to help customers access services and information. These services range from checking their account balances, making transactions and applying for loans. To ensure these services are accessed in a secure way, users need to authenticate before they can access these resources. Your company uses Python Django as the web framework to build its web apps. You have been tasked with the responsibility of building an authentication mechanism to authenticate users before they can access these resources.
+
+1. **Authenticate users in a Django web app using Azure AD.**
+
+    - Choose the Azure AD tenant where you want to create your web app
+    - Create user in tenant
+    - Register the web app
+
+1. **Exercise - Register web app in Azure AD tenant.**
+
+    - Register a web app in Azure AD tenant.
+    - Create a new client secret in Azure AD.
+
+1. **Exercise - Configure Django web application to use it's Azure AD tenant app registration details.**
+
+    - Set up development environment
+    - Configure the web app to use your app registration
+    - Sign-in user to your Django web app using Azure AD
+
+1. **Knowledge check**
+
+    - Why do you need to configure a redirect URI when registering your web app in Azure AD portal?
+    - What is the first step in signing-in a user using Azure AD?
+    - What does MSAL python library do with the authorization code after a successful sign-in attempt?
+
+1. **Summary**
+
+Our financial institution wanted to provide its customers with access to resources in a secure manner. In this module, you learnt how Azure AD enables you to quickly secure a Django web app by authenticating users during sign-in. By using Python MSAL, we were able to authenticate users in an Azure AD tenant thereby keeping resources safe. Azure AD is a robust identity provider that helps you quickly secure your app and handles your authentication logic thereby saving your business time and resources required in implementing an authentication system.
+
+## Notes
+
+[Python MSAL in Django web app reference material](https://github.com/Azure-Samples/ms-identity-python-django-tutorial/tree/main/1-Authentication/sign-in)
