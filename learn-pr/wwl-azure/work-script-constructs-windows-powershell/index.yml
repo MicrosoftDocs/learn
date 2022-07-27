@@ -3,7 +3,7 @@ uid: learn.wwl.work-script-constructs-windows-powershell
 metadata:
   title: Work with scripting constructs in Windows PowerShell
   description: "This module explains how to use scripting constructs for iteration and decision making in Windows PowerShell."
-  ms.date: 07/26/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
