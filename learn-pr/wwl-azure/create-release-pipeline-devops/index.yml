@@ -3,7 +3,7 @@ uid: learn.wwl.create-release-pipeline
 metadata:
   title: Create a release pipeline
   description: "Create a release pipeline"
-  ms.date: 06/15/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -43,7 +43,14 @@ subjects:
 units:
 - learn.wwl.create-release-pipeline.introduction
 - learn.wwl.create-release-pipeline.describe-azure-devops-capabilities
+- learn.wwl.create-release-pipeline.explore-release-pipelines
+- learn.wwl.create-release-pipeline.explore-artifact-sources
+- learn.wwl.create-release-pipeline.choose-appropriate-artifact-source
+- learn.wwl.create-release-pipeline.exercise-select-artifact-source
+- learn.wwl.create-release-pipeline.examine-considerations-for-deployment-to-stages
+- learn.wwl.create-release-pipeline.exercise-set-up-stages
 - learn.wwl.create-release-pipeline.explore-build-release-tasks
+- learn.wwl.create-release-pipeline.explore-custom-build-release-tasks
 - learn.wwl.create-release-pipeline.explore-release-jobs
 - learn.wwl.create-release-pipeline.configure-pipelines-code-with-yaml
 - learn.wwl.create-release-pipeline.knowledge-check
