@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-repository-objects.locate-class-methods-documentation
+title: Locate class methods and documentation by using CIM and WMI
+metadata:
+  title: Locate class methods and documentation by using CIM and WMI
+  description: "Locate class methods and documentation by using CIM and WMI"
+  ms.date: 07/25/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-locate-class-methods-documentation.md)]

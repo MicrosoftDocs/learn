@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.wwl.work-script-constructs-windows-powershell
+metadata:
+  title: Work with scripting constructs in Windows PowerShell
+  description: "This module explains how to use scripting constructs for iteration and decision making in Windows PowerShell."
+  ms.date: 07/27/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with scripting constructs in Windows PowerShell
+summary: This module explains how to use scripting constructs for iteration and decision making in Windows PowerShell.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Describe the syntax of the **ForEach** construct.
+  - Use the **ForEach** construct.
+  - Describe the syntax of the **If** construct.
+  - Use the **If **construct.
+  - Describe the syntax of the **Switch** construct.
+  - Use the **Switch** construct.
+  - Describe how to use the **For** construct.
+  - Describe the other loop constructs.
+  - Explain how to use **Break** and **Continue**.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.work-script-constructs-windows-powershell.introduction
+- learn.wwl.work-script-constructs-windows-powershell.review-use-foreach-loop-scripts
+- learn.wwl.work-script-constructs-windows-powershell.review-use-if-construct-scripts
+- learn.wwl.work-script-constructs-windows-powershell.review-use-switch-construct-scripts
+- learn.wwl.work-script-constructs-windows-powershell.review-for-construct-scripts
+- learn.wwl.work-script-constructs-windows-powershell.review-other-loop-scripts
+- learn.wwl.work-script-constructs-windows-powershell.review-break-continue-scripts
+- learn.wwl.work-script-constructs-windows-powershell.knowledge-check
+- learn.wwl.work-script-constructs-windows-powershell.summary
+badge:
+  uid: learn.wwl.work-scripting-constructs-windows-powershell.badge
