@@ -5,8 +5,7 @@ Guided project - Analyze logs in Azure Monitor with Kusto Query Language
 ## Role(s)
 
 - data-scientist
-- devops-engineer
-- 
+- devops-engineer- 
 
 ## Level
 
