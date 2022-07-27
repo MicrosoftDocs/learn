@@ -24,7 +24,7 @@ Guided project - Analyze logs in Azure Monitor with Kusto Query Language
 
 ## Summary
 
-Write log queries using Kusto Query Language (KQL) to gain business and operational insights from log data in Azure Monitor.
+Find and use log data in Azure Monitor to answer operational and business questions. Write KQL queries in Azure Monitor to gain insights from logs.
 
   > [!NOTE]
   >  This is a **_guided project_** module where you’ll complete an end-to-end project by following step-by-step instructions.
@@ -33,8 +33,8 @@ Write log queries using Kusto Query Language (KQL) to gain business and operatio
 
 In this module, you'll practice how to:
 
-1. Define the type of data you need for your inquiry.
-1. Write KQL queries to gain insights from your logs and answer your business or operational question.
+1. Identify and manipulate log data to answer a business or operational question.
+1. Write KQL queries in Azure Monitor.
 
 ## Chunk your content into subtasks
 
