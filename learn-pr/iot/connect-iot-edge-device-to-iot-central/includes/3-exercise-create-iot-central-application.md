@@ -64,10 +64,10 @@ The deployment manifest doesn't include information about the telemetry the devi
 
 To enable an operator to record information about each IoT Edge device, add the following **Cloud properties** to the device template:
 
-| Display name | Name | Schema |
-| ------------ | ---- | ------ |
-| Store Name | StoreName | String |
-| Service Date | ServiceDate | Date |
+| Display name | Name | Capability type | Schema |
+| ------------ | ---- | ---- | ------ |
+| Store Name | StoreName |Cloud Property| String |
+| Service Date | ServiceDate |Cloud Property| Date |
 
 :::image type="content" source="../media/3-cloud-properties.png" alt-text="Screenshot that shows the cloud properties in the device template.":::
 

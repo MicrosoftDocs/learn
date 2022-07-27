@@ -5,7 +5,7 @@ This module explains Composition Analysis, inspecting and validating code bases 
 After completing this module, students and professionals can:
 
  -  Inspect and validate code bases for compliance.
- -  Integrate security tools like WhiteSource with Azure DevOps.
+ -  Integrate security tools like Mend with Azure DevOps.
  -  Implement pipeline security validation.
  -  Interpret alerts from scanning tools.
  -  Configure GitHub Dependabot alerts and security.
