@@ -13,8 +13,8 @@ Follow these steps to change default network access in the Azure portal.
 
 1. Select **Networking**.
 
-1. To restrict traffic from selected networks, select **Selected networks**. To allow traffic from all networks, select **All networks**.
+1. To restrict access to only selected networks and IPs, select **Enabled from selected virtual networks and IP addresses**. To enable public network access for all networks, including the internet, select **Enabled from all networks**.
 
 1. To apply your changes, select **Save**.
 
-![Screenshot showing the firewall options for storage accounts.](../media/5-firewall.png)
+:::image type="content" source="../media/5-firewall.png" alt-text="Screenshot showing the firewall options for storage accounts.":::
