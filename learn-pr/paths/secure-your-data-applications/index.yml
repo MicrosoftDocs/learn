@@ -12,7 +12,7 @@ title: 'AZ-500: Secure your data and applications'
 prerequisites: |
   - None
 summary: |
-  Application running within Azure accessing access your confidential data need to be locked down. Learn to secure you applications, storage, databases, and key vaults.
+  Application running within Azure access your confidential data need to be locked down. Learn to secure your applications, storage, databases, and key vaults.
 iconUrl: /learn/achievements/security-data-applications.svg
 levels:
 - intermediate
