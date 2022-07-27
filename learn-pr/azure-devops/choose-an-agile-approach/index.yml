@@ -3,7 +3,8 @@ uid: learn.azdo.choose-an-agile-approach
 metadata:
   title: Choose an Agile approach to software development
   description: Learn with the Space Game web team how to use Azure Boards to implement Agile software practices along with DevOps transparency and collaboration.
-  ms.date: 05/20/2021
+  ms.date: 06/17/2022
+  ms.custom: devdivchpfy22
   author: kathrynee
   ms.author: kaelli
   ms.topic: interactive-tutorial
