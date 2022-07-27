@@ -19,8 +19,6 @@ Security Operations Analyst
 
 - Experience using the Azure AD portal.
 - Knowledge of Azure Active Directory (Azure AD) fundamentals, including multifactor authentication (MFA).
-- Your tenant needs to have enabled Azure AD MFA. We recommend using Conditional Access to enable Azure AD MFA.  
-- Have a phone that can install Microsoft Authenticator to test user access.
 
 ## Summary
 
@@ -133,7 +131,7 @@ Identify the subtasks of module title.
    | Voice                          | Medium   | Medium    | Medium       |
    | Password                       | Low      | High      | High         |
 
-   **Getting started**
+1. Decide which authentication methods to enable
 
    Budget constraints prevent some passwordless options. You can't buy new PCs with Windows Hello for Business or FIDO2 security keys. On the other hand, remote employees who sign in with SMS or voice call already have phones that run either Android or iOS. Microsoft Authenticator is a free app that can turn those phones into a strong  credential that is more secure than SMS or voice call and also capable for passwordless sign-in. 
 
@@ -141,11 +139,9 @@ Identify the subtasks of module title.
 
    You want to see how the registration campaign works for a test user account. After you confirm it works as expected, you plan to run the campaign for the remote employees.  
 
-1. Prepare the environment
+   **Exercise: Verify remote employees are enabled for Microsoft Authenticator**
 
    Before enabling a registration campaign, make sure prerequisites are complete. Only users who are enabled for Azure AD MFA will be prompted to register Microsoft Authenticator, so check that Azure AD MFA is enabled for the tenant. The users also need to be enabled to use Microsoft Authenticator for authentication, and the Authentication mode must be set to **Any** or **Push**. 
-
-   **Exercise: Verify users are enabled for Microsoft Authenticator**
 
    1. In the Azure AD portal, click **Security** > **Authentication methods** > **Policies**. 
    1. Click **Microsoft Authenticator**, click **Enabled**, select **Remote employees**.
@@ -158,7 +154,6 @@ Identify the subtasks of module title.
    - Create a test user account
    - Enable authentication methods for the test user 
 
-
    You can enable the the registration campaign in the Azure AD portal.
 
    The registration campaign can apply to only a single group, but it can contain other groups. 
@@ -167,13 +162,18 @@ Identify the subtasks of module title.
 
    **Exercise: Enable the registration campaign using the Azure AD portal**
 
-   We will use portal....
+   The easiest way to create the registration campaign is to use the Azure AD portal. You can also use Microsoft Graph API if you want to include the task of registering users for Microsoft Authenticator as part of any automation you have in place for adding new employees. 
 
-   1. In the Azure AD portal, sign in as either Authentication Policy Administrator or Global Administrator.
+   Your company is specifically concerned about sign-ins from users in your **Remote employees** security group. Let's use the portal to enable a registration campaign for that group. 
+
+   1. In the Azure AD portal, sign in as either authentication policy administrator or global administrator.
    1. Click **Security** > **Authentication methods** > **Registration campaign**.
-   1. Under **State**, click **Enabled**, select any users or groups to exclude from the registration campaign, and then click **Save**.
-
-1. **Exercise: Validate the Microsoft Authenticator setup**
+   1. Change **State** to **Enabled**.
+   1. For **Day allowed to snooze**, select **0 days**. Remote employees will be prompted to set up Microsoft Authenticator every time the sign in. 
+   1. Click Add users and groups, search for **Remote employees**, click the group name, and click **Select**
+   1. When you are done, click **Save**.
+   
+1. Validate the Microsoft Authenticator setup
 
    With the registration campaign enabled, let's walk through the user experience to make sure Microsoft Authenticator setup works as expected. We'll create a test user and then sign in from a phone that can install Microsoft Authenticator. 
 
@@ -211,7 +211,7 @@ Identify the subtasks of module title.
       
    1. To apply the new policy, click **Save**.
 
-   **Sign in as a test user**
+   **Excercise: Sign in as a test user**
 
    Sign in as the test user from a device that hasn't already set up Microsoft Authenticator. The device must use the phone number that you enabled for authentication.  
 
