@@ -14,7 +14,7 @@ The following table lists common cmdlets for modifying DNS client settings.
 | **Set-DnsClientServerAddress** | Sets the DNS server address for a network interface          |
 
 > [!NOTE]
-> Set-DnsClient** requires an interface that an alias or index references.
+> **Set-DnsClient** requires an interface that an alias or index references.
 
 The following command sets the connection-specific suffix for an interface:
 
