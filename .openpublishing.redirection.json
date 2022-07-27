@@ -16709,6 +16709,16 @@
       "source_path": "learn-pr/wwl-azure/create-release-pipeline-devops/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-release-pipeline-devops/14-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/automate-inspection-health/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-inspection-health/13-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/automate-inspection-health/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/automate-inspection-health/14-summary",
+      "redirect_document_id": true
     }
 
   ]
