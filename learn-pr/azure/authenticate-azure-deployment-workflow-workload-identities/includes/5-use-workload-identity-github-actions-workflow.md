@@ -16,9 +16,17 @@ Your deployment workflow uses the `azure/login` action to sign in to Azure. When
 | `tenant-id` | The unique identifier for your Azure AD tenant (directory). |
 | `subscription-id` | The Azure subscription ID that you'll deploy to. |
 
+Each of these values are globally unique identifiers (GUIDs).
+
 When you define the values, you might choose to specify them directly in your workflow definition file:
 
-TODO example
+```yaml
+- uses: azure/login@v1
+  with:
+    client-id: '697e99b3-c238-41f9-8bdd-ca18d385bc24'
+    tenant-id: 'b46a1138-5946-40ae-95fd-999d1b67e012'
+    subscription-id: 'f0750bbe-ea75-4ae5-b24d-a92ca601da2c'
+```
 
 However, some organizations treat these identifiers as secret data, or don't allow identifiers to be committed to Git repositories. You can also use GitHub secrets to specify the values:
 
