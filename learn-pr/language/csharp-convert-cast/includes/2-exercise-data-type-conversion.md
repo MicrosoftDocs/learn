@@ -259,7 +259,7 @@ When you run the code, you'll see the following output.
 
 When casting, the value of the float is truncated, meaning the value after the decimal is ignored completely. We could change the literal float to `1.999m` and the result of casting would be the same.
 
-When converting using `Convert.ToInt32()`, the literal float value is properly rounded up to `2`. If we changed the literal value to `1.499m`, it would be rounded down to `1`.
+When converting using `Convert.ToInt32()`, the literal float value is properly rounded up to `2`. If we changed the literal value to `1.499m`, it would be rounded down to `1`. Try it out by changing the values in the .NET editor.
 
 ## Recap
 
