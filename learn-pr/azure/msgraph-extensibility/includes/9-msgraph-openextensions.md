@@ -59,7 +59,7 @@ You manage open extensions for users as follows:
 
 During their use, maintain the [Considerations for using open extensions](#considerations-for-using-open-extensions).
 
-### Query capabilities supported by open extension properties
+### Supported query capabilities
 
 Open extensions don't support any OData query parameters.
 

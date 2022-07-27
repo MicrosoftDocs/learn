@@ -42,7 +42,7 @@ You don't need to store data in all extension attributes. You only store data ba
 
 You also don't need to use the extension attributes in their logical order. For example, you can choose to use **extensionAttribute14** only or **extensionAttribute1** and **extensionAttribute9** only. To store the employees' public LinkedIn profile URL, Skype ID, and Xbox gamertag, you can choose to use **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
-### Query capabilities supported by extension attribute properties
+### Supported query capabilities
 
 In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** property isn't returned by default and you must use the `$select` query parameter to read it.
 
@@ -52,13 +52,13 @@ Extension attribute properties are specially indexed in Microsoft Graph for adva
 
 While Microsoft Graph supports the `$filter` and `$select` query parameters, it doesn't support directly retrieving only a subset of the 15 properties nested in the **onPremisesExtensionAttributes** object.
 
-## Other Azure AD scenarios for the custom extension data
+## Other Azure AD scenarios for the custom data
 
 While you'll use the extension attribute properties to store data required by the team bonding app, Azure AD also supports the following use cases for the custom data.
 + Use extensions data as rules for dynamic groups memberships
 + Use extensions data to customize claims
 
-### Use extensions data to dynamically add users to internal groups
+### Dynamically add users to groups
 
 Suppose you want to seamlessly bring together employees with shared interests. For example, you want Xbox gamers to interact with each other through Yammer communities, Teams chats, and email, share tips and plan team playoffs.
 
@@ -66,7 +66,7 @@ Microsoft Graph groups allow an organization to bring together users with common
 
 To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community for the group.
 
-### Use extensions data to customize tokens
+### Customize tokens
 
 Another Azure AD use case for the extension attribute properties and their data is customizing tokens with custom claims.
 

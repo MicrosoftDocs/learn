@@ -99,7 +99,7 @@ You manage the schema extension properties on user profiles through the same HTT
     + To update any property, you must specify all properties in the request body; otherwise, Microsoft Graph will update the unspecified properties to `null`.
 + Use GET to read the schema extension properties for all users or individual users in the tenant.
 
-### Query capabilities supported by schema extensions
+### Supported query capabilities
 
 Schema extension definitions support the `$filter` OData query parameter with the `eq` operator for matching against the **id**, **owner**, and **status** properties. You can also use `startsWith` to match against the **owner** property.
 
@@ -107,7 +107,7 @@ In the Microsoft Graph `v1.0` endpoint, the schema extension properties aren't r
 
 Schema extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters.You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
-## Other Azure AD scenarios for custom data in directory extension properties
+## Other Azure AD scenarios for custom data
 
 Schema extension properties and the data they store aren't supported by any additional Azure AD scenarios. However, you can use the extensions and their data to support other app-specific scenarios for your organization.
 

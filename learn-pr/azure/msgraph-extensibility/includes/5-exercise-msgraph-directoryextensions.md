@@ -156,7 +156,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 HTTP/1.1 204 No Content
 ```
 
-## Dynamically add users to internal groups based on their user profile data
+## Dynamically add users to groups based on their extension data
 
 Assume you created the dynamic "Xbox gamers" group in the previous exercise. In this exercise, you update the group **membershipRule** setting to configure the rule that only users with Xbox gamer tags can be members of the group.
 

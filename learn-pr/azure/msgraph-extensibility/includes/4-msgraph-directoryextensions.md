@@ -48,7 +48,7 @@ You manage the directory extension properties on user profiles through the same 
 + Use PATCH to either store data in the directory extension property or update or delete the existing data. To delete data from the directory extension property, set its value to `null`.
 + Use GET to read the directory extension properties for all users or individual users in the tenant.
 
-### Query capabilities supported by directory extensions
+### Supported query capabilities
 
 Directory extensions support querying at two levels: Matching against the directory extension definitions and matching against the directory extension properties.
 
@@ -58,13 +58,13 @@ In the Microsoft Graph `v1.0` endpoint, the directory extension properties aren'
 
 Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters.You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
-## Other Azure AD scenarios for the custom extension data
+## Other Azure AD scenarios for the custom data
 
 While you'll use the directory extension properties to store data required by the team bonding app, Azure AD also supports the following use cases for the custom data.
 + Use extensions data as rules for dynamic groups memberships
 + Use extensions data to customize claims
 
-### Use extensions data to dynamically add users to internal groups
+### Dynamically add users to groups
 
 Suppose you want to seamlessly bring together employees with shared interests. For example, you want Xbox gamers to interact with each other through Yammer communities, Teams chats, and email, share tips and plan team playoffs.
 
@@ -72,7 +72,7 @@ Microsoft Graph groups allow an organization to bring together users with common
 
 To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community for the group.
 
-### Use extensions data to customize tokens
+### Customize tokens
 
 Another Azure AD use case for the directory extensions is customizing tokens with custom claims.
 

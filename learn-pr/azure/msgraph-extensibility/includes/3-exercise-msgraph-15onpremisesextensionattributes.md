@@ -151,7 +151,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 HTTP/1.1 204 No Content
 ```
 
-## Dynamically add users internal groups based on their user profile data
+## Dynamically add users to groups based on their extension data
 
 In this exercise, you create a Microsoft 365 group and specify that its membership is dynamically calculated. You configure a rule that only users with Xbox gamer tags can be members of the group. You also specify a Teams team to be provisioned when you create the group.
 
