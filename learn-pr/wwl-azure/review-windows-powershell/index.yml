@@ -2,10 +2,7 @@
 uid: learn.wwl.review-windows-powershell
 metadata:
   title: Review Windows PowerShell
-  description: "This module introduces
-you to Windows PowerShell and its versions. It discusses commonly used host
-applications. It explains how to use Microsoft Visual Studio Code (VS Code) to
-develop PowerShell scripts."
+  description: "Review Windows PowerShell"
   ms.date: 07/27/2022
   author: wwlpublish
   ms.author: tonyj
