@@ -110,7 +110,7 @@ az ad app federated-credential create \
 When you use Azure PowerShell, you define a federated credential by creating a string similar to the following:
 
 ```azurepowershell
-$policy = "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
+$policy = "repo:my-github-user/my-repo:ref:refs/heads/main"
 ```
 
 The preceding string specifies that the federated credential should only be valid when a workflow runs for the following situations: 
