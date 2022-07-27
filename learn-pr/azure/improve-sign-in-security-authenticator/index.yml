@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.improve-sign-in-security-authenticator
+metadata:
+  moduleType: standard
+  title: improve-sign-in-security-authenticator
+  description: "Improve Azure AD sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
+  ms.date: 7/27/2022
+  author: Justinha
+  ms.author: Justinha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+title: improve-sign-in-security-authenticator
+summary: "Make it easy for users who sign in with less secure methods like voice calls or SMS to set up Microsoft Authenticator. Walk through the user experience and validate that push notifications are their new default sign-in method."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles: 
+  - security-engineer
+products: 
+- azure
+subjects: 
+  - cloud-computing
+units:
+- learn.improve-sign-in-security-authenticator.introduction
+- learn.improve-sign-in-security-authenticator.learning-content
+- learn.improve-sign-in-security-authenticator.exercise
+- learn.improve-sign-in-security-authenticator.learning-content
+- learn.improve-sign-in-security-authenticator.exercise
+- learn.improve-sign-in-security-authenticator.knowledge-check
+- learn.improve-sign-in-security-authenticator.summary
+- learn.improve-sign-in-security-authenticator.resources
+badge:
+  uid: learn.improve-sign-in-security-authenticator.badge
