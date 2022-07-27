@@ -62,7 +62,7 @@ Let's issue a GET request for the URL to see if we get a response.
 
 1. Paste the URL into the address bar.
 
-1. Add a query parameter called *name* with your name to the URL; for example, `.../api/HttpTriggerCSharp1?name=Jesse`
+1. Add a query parameter called *name* with your name to the URL; for example, `https://<your-webapp-name>.azurewebsites.net/api/HttpTrigger1?name=Jesse`
 
 1. Press <kbd>Enter</kbd> to submit the request.
 
@@ -74,7 +74,7 @@ Let's issue a GET request for the URL to see if we get a response.
 
 1. Paste the URL into the address bar.
 
-1. Add a query parameter called *name* with your name to the URL; for example, `.../api/HttpTriggerCSharp1?name=Jesse`
+1. Add a query parameter called *name* with your name to the URL; for example, `https://<your-webapp-name>.azurewebsites.net/api/HttpTrigger1?name=Jesse`
 
 1. Press <kbd>Enter</kbd> to submit the request.
 
