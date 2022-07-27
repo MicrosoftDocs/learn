@@ -1,6 +1,6 @@
 You can use Windows PowerShell more easily and effectively by first understanding its background and intended use. In this module, you'll learn about PowerShell and its various versions. You'll also learn how to open and configure commonly used host applications such as the Windows PowerShell console and Windows PowerShell Integrated Scripting Environment (ISE). Finally, you'll learn to use Microsoft Visual Studio Code (VS Code) to develop PowerShell scripts.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, you'll be able to:
 
