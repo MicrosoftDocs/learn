@@ -15,9 +15,11 @@ The variable names defined in the **Param()** block are also the names of the pa
 .\GetEvent.ps1 -ComputerName LON-DC1 -EventID 5772
 ```
 
-> **Note:** Parameters are positional by default. If the parameter names aren't specified, then the parameter values are passed to the parameters in order. For example, the first value after the script name is placed in the first parameter variable.
+> [!NOTE] 
+> Parameters are positional by default. If the parameter names aren't specified, then the parameter values are passed to the parameters in order. For example, the first value after the script name is placed in the first parameter variable.
 
-> **Note:** If you don't put a **Param()** block in your script, you can still pass data into the script by using unnamed parameters. The values that are provided after the script name are available inside the script in the `$args` array.
+> [!NOTE] 
+> If you don't put a **Param()** block in your script, you can still pass data into the script by using unnamed parameters. The values that are provided after the script name are available inside the script in the `$args` array.
 
 ## Defining variable types
 
@@ -51,6 +53,7 @@ Param(
 )
 ```
 
-> **Note:** You can configure additional advanced options for parameters in a script, such as making a parameter mandatory, by using the **Parameter()** attribute in the **Param()** block.
+> [!NOTE] 
+> You can configure additional advanced options for parameters in a script, such as making a parameter mandatory, by using the **Parameter()** attribute in the **Param()** block.
 
 > **Additional reading:** For more information about the **Parameter()** attribute, refer to [about_Functions_Advanced_Parameters](https://aka.ms/about-functions-advanced-parameters).
