@@ -8,7 +8,7 @@ In this exercise, you'll:
 
 ## Prerequisites
 
-* An Azure subscription
+* An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 * A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription
 
 ## Create an Azure IoT Central application
@@ -26,7 +26,7 @@ In this exercise, you'll:
    | Application Name | Enter **adatum-iot-custom-application**. |
    | Application URL | Enter a unique name that consists of lower-case letters, digits or dashes, and starts with a letter. |
    | Application template | Select **Custom application**. |
-   | Pricing plan | Select **Free**. |
+   | Pricing plan | Select a standard pricing plan and you'll need to set a **Directory**, an **Azure subscription**, and a **Location**. To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
 
    :::image type="content" source="../media/3-create-application-iot-central-portal.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
 

@@ -13,6 +13,7 @@ To perform this exercise, you need:
 - An Azure subscription.
 - A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 - To have completed the exercise unit **Set up Azure Cosmos DB**.
+- An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
 
 ## Create an Azure IoT Central application
 
@@ -31,7 +32,7 @@ To perform this exercise, you need:
    | --- | --- |
    | Application Name | Enter **adatum-iot-sample-application**. |
    | Application URL | Enter a unique name consisting of lower-case letters, digits, or dashes, and starting with a letter. |
-   | Pricing plan | Select **Free**. |
+   | Pricing plan | Select a standard pricing plan and you'll need to set a **Directory**, an **Azure subscription**, and a **Location**. To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
 
    :::image type="content" source="../media/6-iot-new-application.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
 
