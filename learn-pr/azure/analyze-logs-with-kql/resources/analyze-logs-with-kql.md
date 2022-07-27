@@ -6,6 +6,7 @@ Guided project - Analyze logs in Azure Monitor with Kusto Query Language
 
 - data-scientist
 - devops-engineer
+- 
 
 ## Level
 
@@ -24,7 +25,7 @@ Guided project - Analyze logs in Azure Monitor with Kusto Query Language
 
 ## Summary
 
-Find and use log data in Azure Monitor to answer operational and business questions. Write KQL queries in Azure Monitor to gain insights from logs.
+Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
 
   > [!NOTE]
   >  This is a **_guided project_** module where you’ll complete an end-to-end project by following step-by-step instructions.
@@ -33,8 +34,8 @@ Find and use log data in Azure Monitor to answer operational and business questi
 
 In this module, you'll practice how to:
 
-1. Identify and manipulate log data to answer a business or operational question.
-1. Write KQL queries in Azure Monitor.
+1. Analyze log data based on specific business and operational questions.
+1. Write KQL queries to extract the data you need from logs in Azure Monitor.
 
 ## Chunk your content into subtasks
 
@@ -42,11 +43,10 @@ Identify the subtasks of module title.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Analyzing logs in Azure Monitor | TODO | Knowledge check | 1, 2 | Yes |
-| Exercise 1: Explore performance data  | TODO | Exercise | 2, 3 | Yes |
-| Exercise 2: Summarize performance data by computer  | TODO | Exercise | 3 | Yes |
-| Exercise 3: Add operating system information to the result set | TODO | Exercise | 3 | Yes |
-| Exercise 4: Identify machines with low CPU usage | TODO | Exercise | 3 | Yes |
+| Prepare: Identify the data you need for your inquiry | TODO | Knowledge check | 1 | Yes |
+| Exercise 1: Analyze virtual machine agent health | TODO | Exercise | 1, 2 | Yes |
+| Exercise 2: Identify machines with high and low CPU usage  | TODO | Exercise | 1, 2 | Yes |
+| Exercise 3: Summarize free space statistics by computer | TODO | Exercise | 1, 2 | Yes |
 | Knowledge check | TODO | Exercise | 1, 2, 3 | Yes |
 | Summary | TODO | Exercise | 1, 2, 3 | Yes |
 ## Outline the units
@@ -55,24 +55,16 @@ Identify the subtasks of module title.
 
     **Scenario**
     
-    You're an IT manager at Contoso, a mid-size software development firm that uses Azure Monitor to monitor the machines on which the company develops and runs its software.
-    
-    You want to understand how effectively your organization is using its compute resources. Specifically, you're concerned about: 
+    You're a data scientist at a retail chain that uses Azure Monitor to monitor the machines in its retail stores. 
 
-    - Machines that might be under-used or over-used.
-    - Machines that might be running out free space.
-    -  
-    
-    **What will we be doing?**
-    
-    You'll explore the Perf to find trends and insights related to the performance of machines in your cloud environment.
-    
-    **What is the main goal?**
-    
-    By the end of this session, you'll be able to create KQL queries that provide you with insights gleaned from your log data regarding the performance of machines in your cloud environment.
+    To identify, anticipate and address problems on the machines in the various locations at the end of each day, you've been asked to write queries to:
 
+    - Analyze monitoring agent health.
+    - Identify machines with high CPU usage that might need to be upgraded.
+    - Summarize free space statistics by computer. 
+    
 
-1. Analyzing logs in Azure Monitor
+1. Identify the data you need for your inquiry 
     
     Azure Monitor lets you collect logs from all your data sources, including Azure resources and on-premises and third-party resources and applications. Each data source logs data into a set of tables. All tables have a schema, or a set of columns, each of which holds a specific data type. 
 
@@ -94,112 +86,67 @@ Identify the subtasks of module title.
     - Do you need additional information from other tables to address your question? 
     
 
-1. Exercise: Explore performance data
+1. Exercise: Analyze virtual machine agent health
 
-    Exploring the raw data you've collected in your logs will help you understand what steps you need to take to find the answers you're looking for.
-
-    In our scenario, you want to understand the status of machines in your environment in terms of usage and free space.
-
-    To find information about machine loads and memory usage, which tables do you need to query?
-
-    **Identify relevant tables and examine logged data**
-
-    The `Perf` table holds information about the performance of hardware components operating systems and applications.
-
-    Let's run a basic example query to retrieve some data from the `Perf` table and see the type of information we can find in its logs.
-
-    In the Azure portal: 
-
-    1. Select your workspace.
-    1. Select **Logs**.
-        
-        This opens the **Queries** screen where you can search through and run example queries. 
-
-    1. Enter *Perf* in the search box and run the **What data is being collected?** query.  
- 
-        This runs a simple example query: 
-
-        ```kusto
-        // What data is being collected? 
-        // List the collected performance counters and object types (Process, Memory, Processor). 
-        Perf
-        | summarize by ObjectName, CounterName
-        ```
-
-    - What type of insights do you want to gain from your inquiry?
-    - What type of data can help you answer your question?
-    - Which tables hold this type of data?
-    
-    Step 1: Look at the last 24 hours.
-
-    Run this example query to get some initial information about what kind of performance data you're collecting:
-
-
-    
-    This gets data about CPU usage and free space.
-    
-    Step 2: Set the time range of the query to the past seven days.
-
-1. Exercise: Add operating system information to the result step
-
-    Step 1: Look at the Heartbeat table.
-
-    You want to get a better understanding of the computers in your result set.
-    
-    Look at the Heartbeat table to see what additional information might be helpful to you:
+    Scenario 1A: Machines that do not send heartbeat in the past 5 minutes but did send in the past 48h (i.e. Recently active)
+    Note that we project the max_TimeGenerated because it can be used to correlate with machine logs or other environmental events that occurred around the same time which could explain the reason it stopped sending data.
 
     ```kusto
     Heartbeat
+    | where TimeGenerated >ago(48h)
+    | summarize max(TimeGenerated) by Computer,AgentType=Category, OSType
+    | where max_TimeGenerated < ago(5m)
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType)
+    | order by max_TimeGenerated asc
+    | project-reorder max_TimeGenerated,Computer,AgentType,OSType
     ```
 
-    Step 2: 
-    
-    To include information about the operating system running on each of the computers, add the following lines to the previous query:  
-    
-    ```kusto
-    | join kind=inner (
-    Heartbeat
-    | where TimeGenerated > ago(1h)
-    | distinct Computer, OSType) on Computer
-    ```
+     Scenario 1B:
+    Get a list of computers sending Heartbeat actively in the past 10m by the Agent version they have and OSType and AgentType:
 
-1. Exercise: Summarize free space by computer and instance name
-
-    You decide to start by analyzing free space.
-
-    ```kusto 
-    Perf
-    | where TimeGenerated > ago(1h)
-    | where ObjectName == "LogicalDisk" or // the object name used in Windows records
-    ObjectName == "Logical Disk" // the object name used in Linux records
-    | where CounterName == "Free Megabytes"
-    | summarize arg_max(TimeGenerated, *) by Computer, InstanceName // arg_max over TimeGenerated returns the latest record
-    | project TimeGenerated, InstanceName, CounterValue, Computer, _ResourceId
-    ```    
-
-    This gets the most recent log entry related to free space and presents it by computer and instance (drive C, D, and so on).
-
-
-1. Exercise: Analyze CPU usage
-
-    Step 1:
-    
-    For each computer, you want to find the min, max, 99 percentile CPU usage in the past week. 
-    
     ```kusto    
+    Heartbeat 
+    | where TimeGenerated>ago(10m)
+    | project-rename AgentType=Category
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType)
+    | summarize ComputersList=make_set(Computer) by Version, OSType,AgentType
+    | order by AgentType desc
+    ```
+
+1. Exercise: Identify machines with high and low CPU usage
+   
+    For the percentile 99%, it means that the value we get is a value that 99% of the values are smaller\shorter then it and only 1% is higher than it
+
+    ```kusto     
     Perf
     | where TimeGenerated > ago(7d) and CounterName == "% Processor Time" and InstanceName == "_Total" and ObjectName == "Processor" 
-    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentile(CounterValue, 99) by Computer 
-    ```
-    
-    Step 2:
-    
-    Identify computers with high CPU usage.
-    
-    ```kusto
+    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), p99=percentile(CounterValue, 99) by Computer 
     | where percentile_CounterValue_99 > 50
     ```
-    
+
+1. Exercise: Summarize free space statistics by computer 
+
+    The Perf table with free disk space AND %
+
+    ```kusto
+    Perf
+    | where TimeGenerated > ago(1h)
+    | where ObjectName == "LogicalDisk" or // The object name used in Windows records
+    ObjectName == "Logical Disk" // The object name used in Linux records
+    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
+    | where InstanceName == "_Total"
+    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
+    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
+    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
+    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
+    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
+    | extend packed = pack(CounterName, CounterValue)
+    | summarize SpaceStats = make_bag(packed) by Computer
+    | where SpaceStats.["% Free Space"]<= 50
+    ```
+   
 1. Knowledge check
 
 1. Summary
