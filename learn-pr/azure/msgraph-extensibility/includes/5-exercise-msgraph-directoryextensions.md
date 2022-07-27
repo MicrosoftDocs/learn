@@ -1,5 +1,3 @@
-In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
-
 In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the directory extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of a signed-in user.
 
 ## Authenticate your session
@@ -12,7 +10,7 @@ In the team bonding app, the employee will sign in with their Azure AD profile a
 
 ## Identify the owner app
 
-Retrieve the values of **id** and **appId** of the app that you own and that has a service principal in the tenant. You will use these values in this exercise. Assume the following object represents your application.
+Retrieve the values of **id** and **appId** of the app you own and that has a service principal in the tenant. You will use these values in this exercise. Assume the following object represents your application.
 
 >**Note:** The object shown here has been shortened for readability.
 ```http
@@ -82,11 +80,9 @@ Running the previous request two more times with different names will give you o
 + `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId`
 + `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`
 
-## Store user data in directory extension properties
+## Store user data
 
 Consider a user named Adele Vance identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you'll store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new directory extension properties that you created.
-
-In the team bonding app, Adele can use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
 
 ### Request
 ```http
@@ -137,7 +133,7 @@ Content-type: application/json
 }
 ```
 
-## Update and delete user data in a directory extension property
+## Update and delete user data
 
 Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well so colleagues can discover the new gamertag.
 
@@ -180,7 +176,6 @@ PATCH https://graph.microsoft.com/v1.0/groups/d61efd38-0b40-488a-8e4d-ed7508504b
 }
 ```
 
-
 ### Response
 
 ```http
@@ -188,7 +183,6 @@ HTTP/1.1 204 No Content
 ```
 
 After a few seconds to allow Azure AD to complete synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group.
-
 
 ## Conclusion
 

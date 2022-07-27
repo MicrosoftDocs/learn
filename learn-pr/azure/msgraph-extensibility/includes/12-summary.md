@@ -10,7 +10,9 @@ You explored the four extension options provided by Microsoft Graph and identifi
 
 From your learnings and hands-on prototyping, you can now select an option that's best fit for the current needs of the team bonding app or future needs of the organization.
 
-Microsoft Graph extensions provide you with a lightweight option to store custom user data without an external data store. Because the organization already uses Azure AD as an Identity and Access Management (IAM) solution, using extensions allows it to leverage functionality that's already available with its license at no additional cost.
+Without Microsoft Graph extensions, you would need to explore alternative options to store the three pieces of data in the user's profile information. If the options are outside Azure AD and Microsoft 365, you need to integrate your app to the separate data source, learn how to query the database and to manage the data. This would require an additional management overheard for you as a developer and the organization.
+
+By using Microsoft Graph extensions, the organization leverages an existing capability of Azure AD that's available through its license at no additional cost. All the data is stored securely and availability is guaranteed in line with Microsoft's service-level agreements. In addition, the organization does not need to invest in a database system.
 
 Apart from the **user** resource, other Microsoft Graph resource types may support some of the extensions. For example, the **device** resource type supports all the extension options while the **group** resource type supports schema, directory, and open extensions. To learn more, visit the links below.
 

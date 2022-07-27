@@ -1,6 +1,6 @@
 Microsoft Graph provides four types of extensions for storing custom user data. The first type is **extension attributes**. Here, you'll learn how to use the extension attributes to store the three pieces of user data about the employees.
 
-## How extension attributes are presented for use
+## How extension attributes are presented in user objects
 
 The Microsoft Graph **user** resource includes a predefined property called **onPremisesExtensionAttributes**. This property was initially intended to allow tenants to sync data from on-premises Active Directory (AD), hence the name. However, for users who aren't synced from on-premises AD, you can use Microsoft Graph to store and manage the data in this property.
 
@@ -34,10 +34,9 @@ The following is a JSON representation of the **onPremisesExtensionAttributes** 
 
 You manage the extension attribute properties on user profiles through the same HTTP methods used to manage user objects.
 
-+ Use POST to store data in an extension attribute property when creating a new user
-+ Use PATCH to  either store data in the extension attribute property, update the stored data, or delete the existing data
-    + To delete data from an extension attribute property, set its value to `null`
-+ Use GET to  read the directory extension properties for all users or individual users in the tenant
++ Use POST to store data in an extension attribute property when creating a new user.
++ Use PATCH to either store data in the extension attribute property or update or delete the existing data. To delete data from an extension attribute property, set its value to `null`.
++ Use GET to  read the extension attributes for all users or individual users in the tenant.
 
 You don't need to store data in all extension attributes. You only store data based on your need and unused extension attributes can remain *null*.
 
@@ -45,9 +44,9 @@ You also don't need to use the extension attributes in their logical order. For 
 
 ### Query capabilities supported by extension attribute properties
 
-In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** property isn't returned by default and you must therefore use the `$select` query parameter to read it.
+In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** property isn't returned by default and you must use the `$select` query parameter to read it.
 
-Extension attribute properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty (`null`).
+Extension attribute properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific extension attributes are empty (`null`).
 
 Extension attribute properties are specially indexed in Microsoft Graph for advanced querying using `$filter`. This means that when using `$filter`, the HTTP request must include the `$count=true` query parameter and the **ConsistencyLevel** header set to `eventual`.
 
@@ -61,11 +60,11 @@ While you'll use the extension attribute properties to store data required by th
 
 ### Use extensions data to dynamically add users to internal groups
 
-Suppose you want to seamlessly bring together employees with shared interests. For example, you want Xbox gamers to interact with each other through Yammer communities, Teams chats, and email, share tips, plan team playoffs and have fun together.
+Suppose you want to seamlessly bring together employees with shared interests. For example, you want Xbox gamers to interact with each other through Yammer communities, Teams chats, and email, share tips and plan team playoffs.
 
 Microsoft Graph groups allow an organization to bring together users with common interests. You can create an Xbox gamers group to bring together all Xbox enthusiasts through one alias.
 
-To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community from the group.
+To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community for the group.
 
 ### Use extensions data to customize tokens
 
@@ -79,4 +78,4 @@ Extension attributes can therefore be used in custom claims to achieve this cust
 
 The **onPremisesExtensionAttributes** object can be updated only for users who aren't synced from on-premises AD.
 
-The 15 extension attributes are already predefined in Microsoft Graph and their property names can't be changed. Therefore, you can't use custom names such as **SkypeId** for the extension attributes. This requires you and the organization to define the extension attribute properties that are in use so that the values aren't inadvertently overwritten by other apps.
+The 15 extension attributes are already predefined in Microsoft Graph and their property names can't be changed. Therefore, you can't use custom names such as **SkypeId** for the extension attributes. This requires you and the organization to be aware of the extension attribute properties that are in use so that the values aren't inadvertently overwritten by other apps.

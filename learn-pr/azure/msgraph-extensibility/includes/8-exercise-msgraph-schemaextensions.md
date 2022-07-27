@@ -1,10 +1,8 @@
-In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
-
 In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the schema extension definitions and associated properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of a signed-in user.
 
 ## Prerequisites
 
-Be an owner of an application and record its **appId**. You'll use this app as the owner of the schema extension definition.
+Be an owner of an application and record its **appId**. This app will be the owner of the schema extension definition.
 
 ## Authenticate your session
 
@@ -16,12 +14,9 @@ In the team bonding app, the employee will sign in with their Azure AD profile a
 
 ## Create schema extension definitions
 
-### Request
+The request in this section specifies the **owner** property. If you're using Graph Explorer, you must specify in the **owner** property an **appId** for an app that you own. In this example, you own the app that's identified by **appId** `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`. If you're running this exercise while signed-in from an app that you own, you don't need to specify the **owner** property.
 
-> [!TIP]
-> The request in this section specifies the **owner** property. If you're using Graph Explorer, you must specify in the **owner** property an **appId** for an app that you own. In this example, you own the app that's identified by **appId** `5bfc8fda-cfc9-43a9-a6de-214ea9d15fdb`.
->
-> If you're running this exercise while signed-in from an app that you own, you don't need to specify the **owner** property.
+### Request
 
 ```msgraph-interactive
 POST ttps://graph.microsoft.com/v1.0/schemaExtensions
@@ -82,11 +77,9 @@ Content-type: application/json
 }
 ```
 
-## Store user data in schema extension properties
+## Store user data
 
 In this step, you'll store the LinkedIn profile URL, Skype ID, and Xbox gamertag in the three new properties of the `contoso_teamBondingApp` extension for a user Adele identified by ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`.
-
-In the team bonding app, Adele can use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
 
 ### Request
 ```http
@@ -144,7 +137,7 @@ Content-type: application/json
 }
 ```
 
-## Update and delete user data in a schema extension property
+## Update and delete user data
 
 Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
 
@@ -161,26 +154,6 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
         "linkedInProfile": "www.linkedin.com/in/adelevanceonlinkedIn",
         "skypeId": null
     }
-}
-```
-
-### Response
-
-```http
-HTTP/1.1 204 No Content
-```
-
-## Delete data from a schema extension object
-
-Suppose Adele no longer wants to share any social profiles. The app calls Microsoft Graph to set the value of **contoso_teamBondingApp** to `null`.
-
-### Request
-
-```msgraph-interactive
-PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
-
-{
-    "contoso_teamBondingApp": null
 }
 ```
 

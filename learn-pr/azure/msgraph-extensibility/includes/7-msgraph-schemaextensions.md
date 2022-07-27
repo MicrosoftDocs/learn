@@ -6,7 +6,7 @@ Before you can use schema extension, you must define them. The following are the
 
 ### Extension ID
 
-A schema extension ID is generated during the Create operation. Use one of the following two methods to define the schema extension ID.
+A schema extension ID is generated during the Create operation and can follow one of two naming conventions.
 
 + If you have a vanity `.com`,`.net`, `.gov`, `.edu` or a `.org` domain that you've verified with your tenant, use the domain name along with the schema name to define a unique ID in the format *{domainName}_{schemaName}*. For example, if your vanity domain is "contoso.com", you can define `contoso_teamBondingApp` as the ID. This option is highly recommended and makes the schema extension property more discoverable.
 + If you don't have a verified vanity domain, specify only the schema ID, for example, `teamBondingApp` in your request body. Microsoft Graph will transform this ID and prefix it in this format: *ext{8-random-alphanumeric-chars}_{schema-name}*. For example, the new schema ID may be `extkvbmkofy_teamBondingApp`.
@@ -15,11 +15,11 @@ The new schema extension ID becomes the name of schema extension property on the
 
 ### Extension owner
 
-A schema extension must have an owner app. The value of the app's **appId** is defined in the **owner** property of the definition.
+A schema extension must have an owner app. This owner app is referenced by the **owner** property that's assigned the value of the app's **appId**.
 
-The **owner** of the schema definition must either be explicitly specified during the Create and Update requests or it will be implied and auto-assigned by Azure AD as follows:
+The **owner** of the schema definition must be explicitly specified during the Create and Update operations or it will be implied and auto-assigned by Azure AD as follows:
 1. In delegated access:
-    1. The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition
+    1. The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition.
     1. If the signed-in user isn't the owner of the calling app, they must explicitly specify the **owner** property, and assign it the **appId** of an app that they own.
 1. In app-only access, the **owner** property isn't required in the request body. Instead, the calling app will be assigned ownership of the schema extension.
 
@@ -33,7 +33,7 @@ You must explicitly specify Microsoft Graph resources that can be assigned the s
 
 ### Extension properties
 
-You can define the properties of the extension in a Create operation or an Update operation. The return type can be one of `Binary`, `Boolean`, `DateTime`, `Integer` or `String`. You can't update existing properties but can add more properties through Update operations.
+You can define the properties of the extension in a Create or Update operation. The return type can be one of `Binary`, `Boolean`, `DateTime`, `Integer` or `String`. You can't update existing properties but can add more properties through Update operations.
 
 ### Extension status
 
@@ -82,34 +82,34 @@ Schema extensions are loosely coupled to their owner apps but are also available
 ## Manage schema extension definitions
 
 You manage the schema extension definitions as follows.
-+ Use POST to create a new definition and its associated schema extension property
-+ Use GET to retrieve one or all schema extension definitions for an app or across the tenant
-+ Use PATCH to update the description, status, target types, or add more properties to the schema extension definition
-+ Use the DELETE method to delete a schema extension definition
++ Use POST to create a new definition and its associated schema extension property.
++ Use GET to retrieve one or all schema extension definitions for an app or across the tenant.
++ Use PATCH to update the description, status, target types, or add more properties to the schema extension definition.
++ Use the DELETE method to delete a schema extension definition.
 
 ## Use schema extension properties
 
 Schema extension properties are presented as complex types in user objects. These properties are available for use throughout their existence and even when the definition is deleted.
 
 You manage the schema extension properties on user profiles through the same HTTP methods used to manage users.
-+ Use POST to store data in the schema extension property when creating a new user
-+ Use PATCH to either store data in the schema extension property or update or delete the stored data
-    + To delete data from a property, set its value to `null`
-    + To delete data from *all* properties, set its value to `null`. If all properties are `null`, the schema extension object is also deleted
++ Use POST to store data in the schema extension property when creating a new user.
++ Use PATCH to either store data in the schema extension property or update or delete the stored data.
+    + To delete data from a property, set its value to `null`.
+    + To delete data from *all* properties, set its value to `null`. If all properties are `null`, the schema extension object is also deleted.
     + To update any property, you must specify all properties in the request body; otherwise, Microsoft Graph will update the unspecified properties to `null`.
-+ Use GET to read the schema extension properties for all users or individual users in the tenant
++ Use GET to read the schema extension properties for all users or individual users in the tenant.
 
 ### Query capabilities supported by schema extensions
 
-Schema extension definitions support the `$filter` OData query parameter with the `eq` operators for matching against the **id**, **owner**, and **status** properties. You can also use `startsWith` to match against the **owner** property.
+Schema extension definitions support the `$filter` OData query parameter with the `eq` operator for matching against the **id**, **owner**, and **status** properties. You can also use `startsWith` to match against the **owner** property.
 
-In the Microsoft Graph `v1.0` endpoint, the schema extension properties aren't returned by default and you must therefore use the `$select` query parameter to read the properties.
+In the Microsoft Graph `v1.0` endpoint, the schema extension properties aren't returned by default and you must use the `$select` query parameter to read the properties.
 
-Schema extension properties support both the `$select` and `$filter` OData query parameters. The following operators are supported by `$filter`: `eq` and `ne` operators. You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
+Schema extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters.You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
 ## Other Azure AD scenarios for custom data in directory extension properties
 
-Schema extensions and the data they store aren't supported by any additional Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
+Schema extension properties and the data they store aren't supported by any additional Azure AD scenarios. However, you can use the extensions and their data to support other app-specific scenarios for your organization.
 
 ## Considerations for using schema extensions
 

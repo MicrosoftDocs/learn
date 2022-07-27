@@ -10,16 +10,16 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-graph
 title: Add custom data to your app using extensions in Microsoft Graph
-summary: "Add custom data to Microsoft Graph resources through Microsoft Graph extensions. Query and update the custom data to build unique experiences for your applications."
+summary: "Add custom data to Microsoft Graph resources such as users through Microsoft Graph **extensions**. Query and update the custom data to build unique experiences for your applications."
 abstract: |
   By the end of this module, you'll be able to:
     - Choose extension options for adding custom data to Microsoft Graph
     - Add, query, and update custom data through Microsoft Graph
     - Use data in Microsoft Graph extensions to extend your application
 prerequisites: |
-  - Access to an Azure Active Directory tenant with a work or school account that has the Global Administrator role. Sign in to a client app such as [Graph Explorer](https://aka.ms/ge) to call Microsot Graph. If you don't have an Azure AD tenant, follow the instructions on the follow the instructions on the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) site to create a developer tenant.
+  - Access to an Azure Active Directory tenant with a work or school account that has the Global Administrator role. If you don't have an Azure AD tenant, create a developer tenant through the [Microsoft 365 Developer Program](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
   - Basic knowledge of working with REST APIs and how to use the create, read, update, and delete (CRUD) REST API operations
-  - Basic knowledge of working with user data in Azure AD and Microsoft 365 using Microsoft Graph
+  - Basic knowledge of working with user data in Azure AD and Microsoft 365 using Microsoft Graph. Sign in to a client app such as [Graph Explorer](https://aka.ms/ge) to call Microsoft Graph.
   - Be an owner of an application that you'll use in this module
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

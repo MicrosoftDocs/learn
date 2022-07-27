@@ -1,6 +1,8 @@
 
 Microsoft Graph provides a unified endpoint to access Microsoft cloud services such as Microsoft 365, Enterprise Mobility + Security, and Windows. In addition, Microsoft Graph also supports **extensions** as a lightweight option for adding custom properties and using them to store app-specific data.
 
+## Example scenario
+
 Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves and they'll discover each other, their interests, and their social networks.
 
 The employees want to share the following details in their app profiles:
@@ -25,7 +27,6 @@ By the end of this module, you'll be able to:
 1. Choose an extension option for adding custom data to Microsoft Graph.
 2. Add, query, and update custom data through Microsoft Graph.
 3. Use the custom data to extend your application.
-
 
 > [!NOTE]
 > Microsoft Graph exposes two endpoints - `beta` and `v1.0` where `beta` retrieves the preview version of an API while `v1.0` retrieves the generally available version of an API. APIs that are generally available are recommended for production. For the exercises in this module, you'll use the generally available version of Microsoft Graph APIs.

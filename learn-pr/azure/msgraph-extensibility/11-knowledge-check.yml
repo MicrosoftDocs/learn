@@ -10,25 +10,22 @@ metadata:
   ms.author: ombongifaith
   ms.topic: interactive-tutorial
   ms.prod: learning-graph
-durationInMinutes: 3
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
+durationInMinutes: 4
 content: |
 quiz:
   questions:
-  - content: "What extension options support using the stored data for Azure AD scenarios like dynamic groups and custom claims?"
+  - content: "Which one of the following statements is true about extension options available in Microsoft Graph?"
+    choices:
+    - content: "Extension options in Microsoft Graph support query capabilities to allow matching against the data they store."
+      isCorrect: false
+      explanation: "Try again. Open extensions don't support any query capabilities."
+    - content: "Each extension option is available for only specific Microsoft Graph resources."
+      isCorrect: true
+      explanation: "Correct. Not all Microsoft Graph resources support extensions."
+    - content: "Extension options in Microsoft Graph allow using custom property names that can be easily identified with the custom data."
+      isCorrect: false
+      explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."
+  - content: "What extension options support using their associated data to configure dynamic groups and custom claims?"
     choices:
     - content: "15 extension attributes, directory extensions, schema extensions, and open extensions"
       isCorrect: false
@@ -39,25 +36,14 @@ quiz:
     - content: "15 extension attributes and directory extensions"
       isCorrect: true
       explanation: "Correct. Only the 15 extension attributes and directory extensions support Azure AD scenarios."
-  - content: "Which one of the following statements is true about extension options available in Microsoft Graph?"
+  - content: "One of the following lists shows extension options that support custom names and support query capabilities."
     choices:
-    - content: "Extension options in Microsoft Graph support query capabilities to allow matching against the data they store."
+    - content: "Extension attributes, schema extensions, open extensions."
       isCorrect: false
-      explanation: "Try again. Open extensions don't support any query capabilities."
-    - content: "Each extension option is available for only specific Microsoft Graph resources."
+      explanation: "Try again. Open extensions don't support any OData query capabilities."
+    - content: "Directory attributes, schema extensions, extension attributes."
+      isCorrect: false
+      explanation: "Try again. Extension attributes have predefined names that cannot be changed."
+    - content: "Schema extensions, directory extensions, and extension attributes."
       isCorrect: true
-      explanation: "Correct. Not all Microsoft Graph resources support extensions."
-    - content: "Extension options in Microsoft Graph allow using custom property names that can be easily identified with the custom data."
-      isCorrect: false
-      explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."
-  - content: "Which one of the following statements is true about extension options available in Microsoft Graph?"
-    choices:
-    - content: "Extension options in Microsoft Graph support query capabilities to allow matching against the data they store."
-      isCorrect: false
-      explanation: "Try again. Open extensions don't support any query capabilities."
-    - content: "Each extension option is available for only specific Microsoft Graph resources."
-      isCorrect: true
-      explanation: "Correct. Not all Microsoft Graph resources support extensions."
-    - content: "Extension options in Microsoft Graph allow using custom property names that can be easily identified with the custom data."
-      isCorrect: false
-      explanation: "Try again. The 15 extension attributes have predefined names and can't be customized."
+      explanation: "Correct. Only open extensions allow custom names but don't support query capabilities."

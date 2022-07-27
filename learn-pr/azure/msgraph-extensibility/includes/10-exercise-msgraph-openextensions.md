@@ -1,5 +1,3 @@
-In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
-
 In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the open extensions on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of a signed-in user.
 
 ## Authenticate your session
@@ -10,11 +8,9 @@ Consent to the *User.ReadWrite.All* Microsoft Graph permission to perform the AP
 
 In the team bonding app, the employee will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite* Microsoft Graph permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
-## Create and store data in an open extension object
+## Create and store data
 
-In this step, you'll create an open extension with the following properties:
-+ The identifier is `socialSettings`
-+ You'll create the open extension and store data in the open extension properties at the same time.
+In this step, you'll create an open extension called `socialSettings` with three properties and simultaneously store data in the properties.
 
 ### Request
 
@@ -44,7 +40,7 @@ Content-type: application/json
 }
 ```
 
-## Update and delete user data in an open extension attribute
+## Update and delete user data
 
 Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the gamertag in the app profile so colleagues can discover the new gamertag.
 
@@ -70,7 +66,7 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 HTTP/1.1 204 No Content
 ```
 
-### Other Azure AD scenarios for custom data in directory extension properties
+### Other Azure AD scenarios for custom data
 
 Open extensions and the data they store aren't supported by any other Azure AD scenarios. However, you can use the extensions and their data to support other custom app-specific scenarios for your organization.
 

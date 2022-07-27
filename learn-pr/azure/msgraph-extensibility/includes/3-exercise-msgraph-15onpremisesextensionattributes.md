@@ -1,6 +1,4 @@
-In the team bonding app scenario, you need to allow each employee to add their public LinkedIn profile URL, Skype ID, and Xbox gamertag.
-
-In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attribute properties on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of a signed-in user.
+In this exercise, you'll use a client app such as [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attributes on the **user** resource. The commands in this exercise emulate the API calls that the team bonding app makes on behalf of a signed-in user.
 
 ## Authenticate your session
 
@@ -55,13 +53,11 @@ Content-type: application/json
 }
 ```
 
-## Store user data in extension attributes
+## Store user data
 
 In this exercise, you'll store the LinkedIn profile URL, Skype ID, and XBox gamertag for *Adele Vance* in **extensionAttribute13**, **extensionAttribute14**, and **extensionAttribute15** respectively.
 
 ### Request
-
-In the team bonding app, Adele can use a user interface to update the three properties. The app will then call Microsoft Graph as follows:
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069a
@@ -130,9 +126,9 @@ Content-type: application/json
 
 Microsoft Graph doesn't support retrieving a subset of the 15 extension attribute properties. Therefore, the team bonding app should include a logic to strip down the properties it doesn't need and only display to the end user the data that the app requires.
 
-## Update and delete user data in an extension attribute property
+## Update and delete user data
 
-Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in her internal profile as well so colleagues can discover the new gamertag.
+Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well so colleagues can discover the new gamertag.
 
 Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **extensionAttribute14** to `null`.
 
@@ -211,51 +207,13 @@ Content-type: application/json
     "resourceProvisioningOptions": [
         "Team"
     ],
-    "renewedDateTime": "2022-07-07T10:06:47Z",
     "securityEnabled": false,
     "securityIdentifier": "S-1-12-1-3592355128-1217006400-1978486158-659247112",
     "visibility": "Public"
 }
 ```
 
-After a few seconds to up to 24 hours of Azure AD synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group and a team is also provisioned for the group.
-
-You can confirm that Microsoft Graph works by retrieving the members of the Xboxers group as follows.
-
-##### Request
-
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/d61efd38-0b40-488a-8e4d-ed7508504b27/members
-```
-
-##### Response
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.user",
-            "id": "6e03a2db-564a-47ec-ba51-d0cd38af069a",
-            "businessPhones": [],
-            "displayName": "Adele Vance",
-            "givenName": "Adele",
-            "jobTitle": "Student",
-            "mail": "AdeleV@M365EDU334089.OnMicrosoft.com",
-            "mobilePhone": null,
-            "officeLocation": null,
-            "preferredLanguage": null,
-            "surname": "Vance",
-            "userPrincipalName": "AdeleV@M365EDU334089.OnMicrosoft.com"
-        }
-    ]
-}
-```
-
-The Xboxers group is now open for collaboration!
+After a few seconds to up to 24 hours of Azure AD synchronization, the users who match the dynamic membership rule, such as Adele, are added as members of the group and a team is also provisioned for the group. The Xboxers group is now open for collaboration.
 
 ## Conclusion
 
