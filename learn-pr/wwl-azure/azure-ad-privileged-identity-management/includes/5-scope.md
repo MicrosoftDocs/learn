@@ -18,10 +18,10 @@ There's no difference in the access given to someone with a permanent versus an 
 
 Privileged Identity Management lets you assign users to common administrator roles, including:
 
- -  **Global administrator** (also known as Company administrator) has access to all administrative features. You can have more than one global admin in your organization. The person who signs up to purchase Microsoft 365 automatically becomes a global admin.
+ -  **Global administrator** (also known as a Company administrator) has access to all administrative features. You can have more than one global admin in your organization. The person who signs up to purchase Microsoft 365 automatically becomes a global admin.
  -  **Privileged role administrator** manages Azure AD PIM and updates role assignments for other users.
  -  **Billing administrator** makes purchases, manages subscriptions, manages support tickets, and monitors service health.
- -  **Password administrator** resets passwords, manages service requests, and monitors service health. Password admins are limited to resetting passwords for users.
+ -  **Password administrator** users with this role have limited ability to manage passwords. This role does not grant the ability to manage service requests or monitor service health. Whether a Password Administrator can reset a user's password depends on the user's role.
  -  **Service administrator** manages service requests and monitors service health.
     
     > [!NOTE]
