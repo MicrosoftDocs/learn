@@ -48,7 +48,7 @@ Other **Get-Help** parameters include:
 
 ### Using Get-Help to find commands
 
-The **Get-Help** command can be very useful for finding commands. It accepts wildcard characters\*,\* notably the asterisk (\*) wildcard character. When you ask for help and use wildcard characters with a partial command name, Windows PowerShell will display a list of matching help topics.
+The **Get-Help** command can be very useful for finding commands. It accepts wildcard characters (\*, \?), notably the asterisk (\*) wildcard character. When you ask for help and use wildcard characters with a partial command name, Windows PowerShell will display a list of matching help topics.
 
 By using the information you learned earlier about the verb-noun structure of cmdlets, you can use **Get-Help** as a tool to discover cmdlets even if you don't know their names. For example, if you want all cmdlets that operate on processes, you can enter the command **Get-Help \*process\*** in the console, and then press the Enter key. The results match the ones returned by the command **Get-Command \*process\***, except that **Get-Help** displays a *synopsis*. This synopsis is a short description that helps you identify the command you want.
 
