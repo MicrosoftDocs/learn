@@ -1,6 +1,6 @@
 Now that you understand the concept of a workload identity, you might wonder how you create one and link it to a GitHub Actions workflow. In this unit, you'll learn about the steps required to create a workload identity and link it to a GitHub Actions deployment workflow.
 
-## Create a Azure Active Directory application
+## Create an Azure Active Directory application
 
 In the previous unit, you learned that workload identities require creating an *application registration* in Azure Active Directory (Azure AD).
 
@@ -32,7 +32,7 @@ New-AzADApplication -DisplayName $applicationRegistrationName
 The output of the preceding command includes a few important pieces of information, including:
 
 - **Application ID**: The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You use this when your workflow needs to sign in to Azure.
-- **Object ID**: The application registration has an object IDs, which is a unique identifier assigned by Azure AD. You'll see an example of how to use an object ID later in this module.
+- **Object ID**: The application registration has a object IDs, which is a unique identifier assigned by Azure AD. You'll see an example of how to use an object ID later in this module.
 
 When you create an application registration, you typically only set the display name. Azure assigns the other names and identifiers automatically.
 
@@ -45,7 +45,7 @@ When an identity needs to communicate with Azure, it signs in to Azure AD. By it
 
 When you create a federated credential for a deployment workflow, you effectively tell Azure AD and GitHub to trust each other. This trust is called a *federation*.
 
-Then, when your workflow attempts to sign in, GitHub provides information about the workflow run so that Azure AD can decide whether to allow the sign-in attempt. The information GitHub provides during each sign-in attempt includes:
+Then, when your workflow attempts to sign in, GitHub provides information about the workflow run so that Azure AD can decide whether to allow the sign-in attempt. The information that GitHub provides to Azure AD during each sign-in attempt can include the following fields:
 
 - The GitHub user or organization name.
 - The name of the GitHub repository.
@@ -53,7 +53,7 @@ Then, when your workflow attempts to sign in, GitHub provides information about 
 - The environment that your workflow job targets. You'll learn more about environments in a future module.
 - Whether the workflow was triggered by the creation of a pull request.
 
-You can configure Azure AD to allow or deny a sign-in attempt from GitHub depending on the values of the proprties listed above. For example, you can enforce the following policies:
+You can configure Azure AD to allow or deny a sign-in attempt from GitHub depending on the values of the properties listed above. For example, you can enforce the following policies:
 
 - *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization.*
 - *Only permit sign-in attempts when a workflow runs from a specific GitHub repository within my organization, and the branch name is _main_*.

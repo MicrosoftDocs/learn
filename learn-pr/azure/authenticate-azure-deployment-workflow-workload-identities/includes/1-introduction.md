@@ -4,7 +4,7 @@ Deployment workflows need to communicate with Azure so that they can create and 
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've created a Bicep file to deploy your company's website. Until now, you've been deploying it from your own computer by using command-line tools. You've decided to move the deployment into a GitHub Actions workflow. 
 
-One of your colleagues has told you that you need to set up an identity for the deployment workflow. You need to understand what this is, and then set it up so you can deploy your company's website.
+One of your colleagues has told you that you need to set up an identity for the deployment workflow. You need to understand what an identity is, and then set one up so you can deploy your company's website.
 
 ## What will we be doing?
 

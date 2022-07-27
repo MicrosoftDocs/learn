@@ -1,4 +1,4 @@
-Deployment workflows, applications, and software requires a special way to authenticate. In this unit, you'll learn why workload identities are important for deployment workflows, how they fit into Azure's security model, and how they work.
+Deployment workflows, applications, and software require a special way to authenticate. In this unit, you'll learn why workload identities are important for deployment workflows, how they fit into Azure's security model, and how they work.
 
 ## Why does a workflow need to authenticate?
 
@@ -20,9 +20,9 @@ After you move to a GitHub Actions deployment workflow, you need to use a differ
 
 Azure Active Directory (Azure AD) is the service that manages identities for Azure. Some of the main types of identities are:
 
-- *User identities*. A user represents a human who usually signs in interactively by using a browser. Users often have additional security checks to perform when they sign in, such as multifactor authentication (MFA) and Conditional Access based on their location or network.
+- *User identities*. A user represents a human who usually signs in interactively by using a browser. Users often have extra security checks to perform when they sign in, such as multifactor authentication (MFA) and Conditional Access based on their location or network.
 - *Groups*. A group represents a collection of users. Groups don't authenticate directly, but they provide a convenient way to assign permissions to a set of users together.
-- *Workload identities*. A workload is an automated process or system that usually doesn't have a human directly running it. A workload can sign in to Azure AD, but there's no human to sign in and interact with the authentication process. Workload identities don't have MFA or similar protections, because those require a person to do something to prove their identity.
+- *Workload identities*. A workload is an automated process or system that usually doesn't have a human directly running it. A workload can sign in to Azure AD, but there's no human to sign in and interact with the authentication process. Workload identities don't have MFA or similar protections, because those features require a person to do something to prove their identity.
 
 In this module, we focus on workload identities.
 
@@ -32,9 +32,7 @@ A managed identity is associated with an Azure resource. Azure manages the crede
 
 Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Azure Key Vault.
 
-When you work with deployment workflows, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources that run your deployments. When you work with GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
-
-However, when you use a workload identity with GitHub Actions, you can get the main benefit of managed identities: you don't need to manage any credentials.
+When you work with deployment workflows, you usually can't use managed identities. Managed identities require that you own and manage the Azure resources that run your deployments. When you work with GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub. However, when you use a workload identity with GitHub Actions, you can get the main benefit of managed identities: you don't need to manage any credentials.
 
 > [!TIP]
 > In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's best to go with a managed identity. They're easier to work with and are usually more secure.
@@ -43,9 +41,9 @@ However, when you use a workload identity with GitHub Actions, you can get the m
 
 You might wonder why you need to create this whole new type of object just to authenticate a deployment workflow, when you have user accounts that work perfectly well.
 
-User accounts aren't designed for unattended use. The authentication process for a user account often checks that a human is the entity that's trying to sign in. Increasingly, organizations use additional security checks during authentication. These checks include MFA, CAPTCHA checks, and inspecting the device and network that the user is using so that they can verify the legitimacy of a request to sign in.
+User accounts aren't designed for unattended use. The authentication process for a user account often checks that a human is the entity that's trying to sign in. Increasingly, organizations use extra security checks during authentication. These checks include MFA, CAPTCHA checks, and inspecting the device and network that the user is using so that they can verify the legitimacy of a request to sign in.
 
-Workflows are designed to run your deployments even when nobody is sitting there actively running them. In fact, most of the benefits of deployment workflows come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a workflow and try to use them to sign in, they probably won't work. Even if they do seem to work, they can easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
+Workflows are designed to run your deployments even when nobody is sitting there actively running them. In fact, most of the benefits of deployment workflows come from the fact that they're completely automated and don't require human interaction. If you store your username and password in a workflow and try to use them to sign in, they probably won't work. Even if they do seem to work, they can easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
 
 > [!WARNING]
 > It's also a bad idea to save your username and password anywhere, because someone else might get access to them and then use them to impersonate you.
@@ -62,7 +60,7 @@ When you create an application and tell Azure AD about it, you create an object 
 
 An application registration can have *federated credentials* associated with it. Federated credentials don't require that you store any secrets. Instead, they enable an Azure AD application to be used with a supported service like GitHub.
 
-When your GitHub Actions workflow needs to authenticate, it contacts Azure AD through GitHub. GitHub tells Azure AD the name of the GitHub organization and repository, and optionally some other information too. If you've configured a federated credential matching the repository's details, Azure AD authenticates your deployment workflow and it can use the permissions that you've assigned to the application.
+When your GitHub Actions workflow needs to authenticate, it contacts Azure AD through GitHub. GitHub tells Azure AD the name of the GitHub organization and repository, and optionally some other information too. If you've configured a federated credential matching the repository's details, Azure AD authenticates your deployment workflow, and the workflow can use the permissions that you've assigned to the application.
 
 > [!TIP]
 > When you look at an application registration in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. That's because, in Azure AD, applications can do many things that are beyond the scope of authentication and workflow deployments.
