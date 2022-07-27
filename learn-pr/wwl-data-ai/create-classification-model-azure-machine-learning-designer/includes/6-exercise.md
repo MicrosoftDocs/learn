@@ -197,8 +197,8 @@ The validation data you held back and used to score the model includes the known
 8. Scroll down to view the *confusion matrix* for the model. Observe the predicted and actual value counts for each possible class. 
 8. Review the metrics to the left of the confusion matrix, which include:
     - **Accuracy**: In other words, what proportion of diabetes predictions did the model get right?
-    - **Precision**: In other words, out of all the patients that the model predicted as having diabetes, how many are actually diabetic?
-    - **Recall**:  In other words, out of all the patients who actually have diabetes, how many did the model identify?
+    - **Precision**: In other words, out of all the patients that *the model predicted* as having diabetes, the percentage of time the model is correct. 
+    - **Recall**:  In other words, out of all the patients *who actually have* diabetes, how many diabetic cases did the model identify correctly?
     - **F1 Score**
 
 9. Use the **Threshold** slider located above the list of metrics. Try moving the threshold slider and observe the effect on the confusion matrix. If you move it all the way to the left (0), the Recall metric becomes 1, and if you move it all the way to the right (1), the Recall metric becomes 0.
@@ -325,7 +325,7 @@ After you've created and tested an inference pipeline for real-time inferencing,
 
 The web service you created is hosted in an *Azure Container Instance*. If you don't intend to experiment with it further, you should delete the endpoint to avoid accruing unnecessary Azure usage. 
 
-1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Endpoints** tab, select the **predict-diabetes** endpoint. Then select **Delete** (&#128465;) and confirm that you want to delete the endpoint.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), on the **Endpoints** tab, select the **predict-diabetes** endpoint. Then select **Delete** and confirm that you want to delete the endpoint.
 2. On the **Compute** page, on the **Compute Instances** tab, select your compute instance and then select **Delete**.
 
 >[!NOTE]

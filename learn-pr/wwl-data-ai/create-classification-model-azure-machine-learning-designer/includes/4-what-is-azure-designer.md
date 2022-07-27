@@ -9,6 +9,8 @@ To use the Azure Machine Learning designer, you create a *pipeline*. Pipelines l
 
 A pipeline starts with the dataset from which you want to train the model. Each time you run a pipeline, the configuration of the pipeline and its results are stored in your workspace as a pipeline job.  
 
+![Screenshot of the pipelines page in Azure Machine Learning designer.](../media/pipeline-page-example.png)
+
 ## Azure Machine Learning Jobs 
 An Azure Machine Learning (ML) job executes a task against a specified compute target. Jobs also enable systematic tracking for your ML experimentation and workflows. Once a job is created, Azure ML maintains a run record for the job. All of your jobs' run records can be viewed in Azure ML studio. 
 
@@ -29,3 +31,4 @@ You can create data assets on the **Data** page from local files, a datastore, w
 An Azure Machine Learning component encapsulates one step in a machine learning pipeline. You can think of a component as a programming function and as a building block for Azure Machine Learning pipelines.
 
 You can access datasets and components from the left panel's **Asset Library** tab.
+![Screenshot of the asset library's components button in Azure Machine Learning designer.](../media/components-example.png)

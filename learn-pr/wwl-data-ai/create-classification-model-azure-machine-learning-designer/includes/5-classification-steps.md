@@ -50,10 +50,13 @@ Of these metric, *accuracy* is the most intuitive. However, you need to be caref
 
 Another term for *recall* is **True positive rate**, and it has a corresponding metric named **False positive rate**, which measures the number of negative cases incorrectly identified as positive compared the number of actual negative cases. Plotting these metrics against each other for every possible threshold value between 0 and 1 results in a curve, known as the **ROC curve** (ROC stands for *receiver operating characteristic*, but most data scientists just call it a ROC curve). In an ideal model, the curve would go all the way up the left side and across the top, so that it covers the full area of the chart. The larger the *area under the curve*, of **AUC** metric, (which can be any value from 0 to 1), the better the model is performing. 
 
+![Screenshot of the ROC curve found by previewing results from the Evaluate module.](../media/roc-curve-example.png)
+
 #### Choosing threshold 
 A classification model predicts is the probability for each possible class. In the case of this binary classification model, the predicted probability for a *positive* prediction is a value between 0 and 1. By default, a predicted probability _including or above_ 0.5 results in a class prediction of 1, while a prediction _below_ this threshold means that there's a greater probability of a *negative* prediction (remember that the probabilities for all classes add up to 1), so the predicted class would be 0. 
 
-Designer has a useful *threshold slider*. 
+Designer has a useful *threshold slider* for reviewing how the model performance would change depending on the set threshold.
+![Screenshot of the threshold slider in the results from the Evaluate module.](../media/threshold-example.png) 
 
 ## Deploy a predictive service  
 You have the ability to deploy a service that can be used in real-time. In order to automate your model into a service that makes continuous predictions, you need to create and deploy an inference pipeline.  

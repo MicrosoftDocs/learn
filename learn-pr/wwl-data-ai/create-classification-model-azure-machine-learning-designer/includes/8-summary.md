@@ -1,4 +1,4 @@
-In this module, you'll learn how to:
+In this module, you learned how to:
 
 - Identify classification machine learning scenarios.
 - Use Azure Machine Learning designer to train a classification model.
