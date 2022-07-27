@@ -4,10 +4,10 @@ Her next goal is to convince the Tailspin team to take their first DevOps steps 
 
 After completing this module, you'll be able to:
 
-- Define the term Agile
-- Begin to make recommendations for incorporating Agile practices into your organization
-- Create a project in Azure DevOps
-- Add work items to Azure Boards by using the Basic process
+- Define the term Agile.
+- Begin to make recommendations for incorporating Agile practices into your organization.
+- Create a project in Azure DevOps.
+- Add work items to Azure Boards by using the Basic process.
 
 ## Prerequisites
 
@@ -17,7 +17,7 @@ If you'd rather do only this module, go through [Introduction to Azure DevOps](/
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module:
 
 :::row:::
 
