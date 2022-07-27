@@ -129,7 +129,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     ```
 
     > [!TIP]
-    > If the `HttpRepl` tool displays a warning that says, *Unable to find an OpenAPI description*, the most likely cause is an untrusted development certificate. `HttpRepl` requires a trusted connection. Before you can continue, you need to [configure your system to trust the dev certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos) with `dotnet dev-certs https --trust`
+    > If the `HttpRepl` tool warns **Unable to find an OpenAPI description**, the most likely cause is an untrusted development certificate. `HttpRepl` requires a trusted connection. Before you can continue, you **must** [configure your system to trust the dev certificate](/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos) with `dotnet dev-certs https --trust`
 
 1. Explore available endpoints by running the following command:
 
