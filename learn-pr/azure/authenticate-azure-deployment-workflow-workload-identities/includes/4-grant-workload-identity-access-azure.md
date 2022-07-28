@@ -1,12 +1,10 @@
 By itself, a workload identity can't do anything in your Azure environment. It's just like how a user can't work with your Azure resources unless they're authorized to do so. In this unit, you'll learn how to authorize workload identities to deploy and configure Azure resources, while avoiding granting unnecessary permissions.
 
-[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
-
 ## Workload identity authorization
 
 Until now, you've focused on what workload identities are and how they can be used to prove the identity of a deployment workflow to Azure Active Directory (Azure AD). This is all about _authentication_.
 
-After Azure AD has authenticated a workload identity, the next question becomes: what can this workload identity do? This is the domain of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a workload identity access to a specific resource group, subscription, or management group.
+After Azure AD has authenticated a workload identity, the next question becomes: what can this workload identity do? This is the concept of _authorization_. It's the responsibility of the Azure role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a workload identity access to a specific resource group, subscription, or management group.
 
 > [!NOTE]
 > Everything you're doing here is using the Azure RBAC system to grant access to create and manage Azure resources, like your storage accounts, App Service plan, and virtual networks. Azure AD also has its own role system, which is sometimes called _directory roles_. You use these roles to grant permissions for workload identities to manage Azure AD. This module doesn't discuss this subject in depth, but be aware that the term _role_ can be used for both situations in some documentation.
@@ -50,7 +48,7 @@ It can be a little more work to figure out which role to assign. In Azure, there
 > [!CAUTION]
 > You should only grant workload identities the minimum permissions that they need to do their jobs. Most of the time, the Owner role is too permissive for a deployment workflow.
 
-There are also lots of specific roles that provide access just to a subset of functionality. You can even create your own _role definition_ to specify the exact list of permissions that you want to assign.
+There are also lots of specific roles that provide access just to a subset of functionality. You can even create your own _custom role definition_ to specify the exact list of permissions that you want to assign.
 
 > [!NOTE]
 > Custom role definitions can be a powerful way to grant permissions for your Azure resources, but they can be difficult to work with. It's not always easy to determine exactly which permissions you need to add to a custom role definition, and you might accidentally make the role definitions too restrictive or too permissive. If you're not sure what to do, it's best to use one of the built-in role definitions instead. Custom role definitions are beyond the scope of this module.
@@ -61,7 +59,7 @@ You need to determine how broadly you assign the role. This decision affects the
 
 - **Single resource**: You can grant access just to a specific resource. Typically, deployment workflows don't use this scope because a workflow creates resources that don't exist yet, or it reconfigures multiple resources.
 - **Resource group**: You can grant access to all resources within a resource group. Contributors and Owners can also create resources within the group. This is a good option for many deployment workflows.
-- **Subscription**: You can grant access to all resources within a subscription. If you have multiple applications, workloads, or environments in a single subscription, you can grant permissions to the subscription's scope. This is usually too permissive for a deployment workflow, though. You should instead consider scoping your role assignments to resource groups.
+- **Subscription**: You can grant access to all resources within a subscription. If you have multiple applications, workloads, or environments in a single subscription, you can grant permissions to the subscription's scope. This is usually too permissive for a deployment workflow, though. You should instead consider scoping your role assignments to resource groups, unless your deployment workflow needs to create resource groups.
 
 Remember that role assignments are inherited. If you assign a role at a subscription, the assignee will have access to every resource group and resource inside that subscription.
 
@@ -71,8 +69,8 @@ Now that you understand the components of a role assignment, you can decide the 
 
 > [!div class="checklist"]
 > * Use the least permissive role that you can. If your workflow is only going to deploy basic Bicep files and won't manage role assignments, don't use the Owner role.
-> * For many workflows, a good default option for a role assignment is the Contributor role on the resource group scope.
 > * Use the narrowest scope that you can. Most workflows only need to deploy resources to a resource group, so they shouldn't be given subscription-scoped role assignments.
+> * For many workflows, a good default option for a role assignment is the Contributor role on the resource group scope.
 > * Consider everything your workflow does, and everything it might do in the future. For example, you might consider creating a custom role definition for your website's deployment workflow and only grant permissions for App Service and Application Insights. Next month, you might need to add an Azure Cosmos DB account to your Bicep file, but the custom role will block Azure Cosmos DB resources from being created. 
 Instead, it's often better to use a built-in role, or a combination of built-in roles, to avoid having to repeatedly change your role definitions. Consider using Azure Policy to enforce your governance requirements for allowed services, SKUs, and locations.
 > * Test the workflow to verify that the role assignment works.
