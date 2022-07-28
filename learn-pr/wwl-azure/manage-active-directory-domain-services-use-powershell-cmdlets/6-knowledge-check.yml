@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-active-directory-domain-services-use-powershell-cmdlets.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/27/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You need to create a Global security group named Group1. Which type of parameter will you use to specify a Global group when using the New-ADGroup PowerShell cmdlet?"
+    choices:
+    - content: "‑GroupScope"
+      isCorrect: true
+      explanation: "Correct. You'll use the -GroupScope parameter as it defines the scope of a group as **DomainLocal**, **Global**, or **Universal**."
+    - content: "‑Name"
+      isCorrect: false
+      explanation: "Incorrect. You'll use the -GroupScope parameter as it defines the scope of a group as **DomainLocal**, **Global**, or **Universal**."
+    - content: "‑GroupCategory"
+      isCorrect: false
+      explanation: "Incorrect. You'll use the -GroupScope parameter as it defines the scope of a group as **DomainLocal**, **Global**, or **Universal**."
+  - content: "You need to use PowerShell to review the Department and email address for an Active Directory user named User1. How will you format the PowerShell command?"
+    choices:
+    - content: "`Get-ADUser -Filter * -Properties *`"
+      isCorrect: false
+      explanation: "Incorrect. The Get-ADUser cmdlet requires that you identify the user or users that you want to retrieve. You can do this by using the -Identity parameter, which accepts one of several property values, including the Security Accounts Manager (SAM) account name or distinguished name. To review properties other than the default set of properties, you'll need to use the -Properties parameter with a comma-separated list of properties or the “*” wildcard."
+    - content: "`Get-ADUser -Identity User1 -Properties Department,EmailAddress`"
+      isCorrect: true
+      explanation: "Correct. The Get-ADUser cmdlet requires that you identify the user or users that you want to retrieve. You can do this by using the -Identity parameter, which accepts one of several property values, including the Security Accounts Manager (SAM) account name or distinguished name. To review properties other than the default set of properties, you'll need to use the -Properties parameter with a comma-separated list of properties or the “*” wildcard."
+    - content: "`Get-ADUser -Identity User1 -Properties *`"
+      isCorrect: false
+      explanation: "Incorrect. The Get-ADUser cmdlet requires that you identify the user or users that you want to retrieve. You can do this by using the -Identity parameter, which accepts one of several property values, including the Security Accounts Manager (SAM) account name or distinguished name. To review properties other than the default set of properties, you'll need to use the -Properties parameter with a comma-separated list of properties or the “*” wildcard."
