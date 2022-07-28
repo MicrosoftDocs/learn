@@ -1,5 +1,3 @@
-# Introduction to application provisioning in Azure Active Directory
-
 In Azure Active Directory (Azure AD), the term *application provisioning*, or simply *app provisioning*, refers to automatically creating user identities and roles for applications. For example, you might enter new employee information in a human resources system and want those users automatically created (provisioned) in your organizations Azure AD tenant. Likewise, you might create new users in your Azure AD tenant and want those users automatically provisioned in non-Microsoft software services that your organization uses.
 
 
@@ -16,11 +14,11 @@ In Azure Active Directory (Azure AD), the term *application provisioning*, or si
     Recommended: visual like an image (preferred), table, list, etc.
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
+
 TODO: add your topic sentences(s)
 TODO: add your visual element
 
-
+-->
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -33,10 +31,12 @@ TODO: add your visual element
     Recommended: an image that visualizes the scenario
 
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
- -->
+
 ## Example scenario
 TODO: add your scenario
 TODO: add your image
+ -->
+
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -49,9 +49,10 @@ TODO: add your image
                 * **Connect**: which services can you connect to?
                 * **Branch**: what types of business logic can you add to your app?"
 
- -->
 ## What will we be doing?
 TODO: add your activities
+ -->
+
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -65,8 +66,9 @@ TODO: add your activities
 
     Example: "By the end of this session, you'll be able to decide whether Logic Apps is a good choice to automate your business processes."
 
- -->
 ## What is the main goal?
 By the end of this session, you'll be able to (TODO)
+
+ -->
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

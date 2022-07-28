@@ -37,7 +37,7 @@ title: Introduction to Application Provisioning
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
-summary: "Application Provisioning can be used to automatically create and manage user identities in your cloud apps. Describe the function Application Provisioning and determine if you can use it to provision users."
+summary: "Application Provisioning is used to automatically create and manage user identities in your cloud apps. Describe the function of Application Provisioning and determine if you can use it to provision users."
 ###########################################################################
 ###
 ### Learning Objectives

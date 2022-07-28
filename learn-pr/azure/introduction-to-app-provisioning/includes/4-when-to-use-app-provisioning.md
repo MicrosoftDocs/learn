@@ -1,5 +1,3 @@
-## Manual vs. automatic provisioning
-
 Applications in the Azure AD gallery support one of two provisioning modes:
 
 * **Manual** provisioning means there's no automatic Azure AD provisioning connector for the app yet. User accounts must be created manually. Examples are adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app, or contact the app developer to determine what mechanisms are available.
@@ -52,12 +50,14 @@ For other applications that support SCIM 2.0, you can follow guidance to configu
         * Performance
         * Conditionals
         * Connectors"
--->
+
 TODO: add your topic sentences(s)
 TODO: add your bulleted list of key things covered
 * TODO
 * TODO
 * TODO
+-->
+
 
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
@@ -74,9 +74,11 @@ TODO: add your bulleted list of key things covered
     Example:
         "Decision criteria"
          "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
--->
+
 ## Decision criteria
 TODO: add your 3 lead-in sentences
+-->
+
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
 
@@ -101,8 +103,10 @@ TODO: add your 3 lead-in sentences
         | **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops.... |
         | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
         |   |   |
--->
+
 TODO: add your topic sentences(s)
+-->
+
 
 <!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
 
@@ -122,24 +126,26 @@ TODO: add your topic sentences(s)
         H3: "Integration"
         Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
         Visual: (image preferred)
+
+### (criterion)
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+
+### (criterion)
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
+
+### (criterion)
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list, code sample, blockquote)
+Paragraph (optional)
 -->
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
 
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
 
 <!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
 
@@ -156,9 +162,11 @@ Paragraph (optional)
     Example:
         "Apply the criteria"
          "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
+
 ## Apply the criteria
 TODO: add your 3 lead-in sentences
+-->
+
 
 <!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
 
@@ -174,25 +182,27 @@ TODO: add your 3 lead-in sentences
         H3: "Should the video-archive utility use Logic Apps?"
         Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
         Visual: (image preferred)
+
+### Should (scenario subtask) use (product)?
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
+
+### Should (scenario subtask) use (product)?
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
+
+### Should (scenario subtask) use (product)?
+Strong lead sentence; remainder of paragraph.
+Paragraph (optional)
+Visual (image, table, list)
+Paragraph (optional)
 -->
 
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
 
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
 
 <!-- 6. Guidance summary (optional) ------------------------------------------------
 
