@@ -50,7 +50,7 @@ It can be a little more work to figure out which role to assign. In Azure, there
 > [!CAUTION]
 > You should only grant workload identities the minimum permissions that they need to do their jobs. Most of the time, the Owner role is too permissive for a deployment workflow.
 
-There are also lots of specific roles that provide access just to a subset of functionality. You can even create your own _role definition_ to specify the exact list of permissions that you want to assign.
+There are also lots of specific roles that provide access just to a subset of functionality. You can even create your own _custom role definition_ to specify the exact list of permissions that you want to assign.
 
 > [!NOTE]
 > Custom role definitions can be a powerful way to grant permissions for your Azure resources, but they can be difficult to work with. It's not always easy to determine exactly which permissions you need to add to a custom role definition, and you might accidentally make the role definitions too restrictive or too permissive. If you're not sure what to do, it's best to use one of the built-in role definitions instead. Custom role definitions are beyond the scope of this module.
