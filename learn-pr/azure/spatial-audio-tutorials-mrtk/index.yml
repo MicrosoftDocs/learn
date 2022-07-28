@@ -39,7 +39,9 @@ prerequisites: |
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.spatial-audio-tutorials-mrtk.1-introduction
 - learn.azure.spatial-audio-tutorials-mrtk.2-add-spatial-audio-to-your-unity-project
 - learn.azure.spatial-audio-tutorials-mrtk.3-exercise-add-spatial-audio-to-your-unity-project

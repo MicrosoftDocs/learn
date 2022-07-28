@@ -29,6 +29,8 @@ products:
 - azure-iot-dps
 - azure-iot-hub
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.explore-azure-iot-services.introduction
 - learn.wwl.explore-azure-iot-services.examine-features-of-hub

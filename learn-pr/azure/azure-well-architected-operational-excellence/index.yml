@@ -26,6 +26,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- architecture
 units:
 - learn.azure-well-architected-operational-excellence.1-introduction
 - learn.azure-well-architected-operational-excellence.2-design-build-orchestrate

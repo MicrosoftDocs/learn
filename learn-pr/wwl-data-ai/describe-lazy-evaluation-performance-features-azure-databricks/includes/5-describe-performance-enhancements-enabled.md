@@ -21,7 +21,7 @@ To carry out the shuffle operation Spark needs to:
   - The concept, if not the action, is just like the initial read "every" `DataFrame` starts with.
   - The main difference being it's the 2nd+ stage.
 
-As we will see in a moment, this amounts to a free cache from what is effectively temp files.
+As we'll see in a moment, this amounts to a free cache from what is effectively temp files.
 
 > Some actions induce in a shuffle. Good examples would include the operations `count()` and `reduce(..)`.
 
@@ -44,7 +44,7 @@ Advantages include:
 - Compactness:
   - Column values are encoded using custom encoders, not as JVM objects (as with RDDs).
   - The benefit of using Spark 2.x's custom encoders is that you get almost the same compactness as Java serialization, but significantly faster encoding/decoding speeds.
-  - Also, for custom data types, it is possible to write custom encoders from scratch.
+  - Also, for custom data types, it's possible to write custom encoders from scratch.
 - Efficiency: Spark can operate _directly out of Tungsten_, without first deserializing Tungsten data into JVM objects.
 
 ### How UnsafeRow works
@@ -142,7 +142,7 @@ It then proceeds to determine which transformation precedes this step until it i
 ### Why Work Backwards?
 
 **Question:** So what is the benefit of working backward through your action's lineage?
-**Answer:** It allows Spark to determine if it is necessary to execute every transformation.
+**Answer:** It allows Spark to determine if it's necessary to execute every transformation.
 
 Take another look at our example:
 
@@ -183,7 +183,7 @@ This saves us the initial network read and all the transformations in **Stage #1
 
 The reuse of shuffle files (also known as our temp files) is just one example of Spark optimizing queries anywhere it can.
 
-We cannot assume this will be available to us.
+We can't assume this will be available to us.
 
 Shuffle files are by definition temporary files and will eventually be removed.
 

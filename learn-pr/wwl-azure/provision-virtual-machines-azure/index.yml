@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.provision-virtual-machines-azure.introduction
 - learn.wwl.provision-virtual-machines-azure.explore-azure

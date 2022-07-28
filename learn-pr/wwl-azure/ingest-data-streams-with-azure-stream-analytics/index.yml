@@ -25,6 +25,8 @@ roles:
 - data-engineer
 products:
 - azure-stream-analytics
+subjects:
+- data-management
 units:
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.introduction
 - learn.wwl.ingest-data-streams-with-azure-stream-analytics.understand-stream-processing

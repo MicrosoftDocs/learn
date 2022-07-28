@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-in-government.introduction
 - learn-wwl.ai-strategy-in-government.ai-value-in-government-insead
 - learn-wwl.ai-strategy-in-government.government-case-study-introduction

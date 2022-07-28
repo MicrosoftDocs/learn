@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-strategy-for-secure-server-client-endpoints.secure-remote-access
+title: Design a strategy for secure remote access
+metadata:
+  title: Design a strategy for secure remote access
+  description: "Design a strategy for secure remote access"
+  ms.date: 06/08/2022
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-secure-remote-access.md)]

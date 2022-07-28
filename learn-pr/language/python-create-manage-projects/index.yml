@@ -29,6 +29,8 @@ roles:
   - student
 products:
   - vs
+subjects:
+- development-tools
 units:
   - learn.beginner-python.create-manage-projects.introduction
   - learn.beginner-python.create-manage-projects.set-up-project

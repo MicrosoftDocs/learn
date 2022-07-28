@@ -33,6 +33,8 @@ products:
 - azure-bastion
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.introduction
 - learn.wwl.troubleshoot-connectivity-issues-virtual-machines-azure.choose-between-azure-bastion-just-time-vm-access

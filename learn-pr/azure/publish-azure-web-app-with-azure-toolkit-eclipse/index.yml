@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-virtual-machines
+subjects:
+- development-tools
 units:
 - learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.introduction
 - learn.azure.publish-azure-web-app-with-azure-toolkit-eclipse.create-web-app-eclipse

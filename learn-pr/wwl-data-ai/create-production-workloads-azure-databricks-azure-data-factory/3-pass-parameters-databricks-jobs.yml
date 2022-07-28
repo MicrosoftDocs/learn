@@ -4,12 +4,13 @@ title: Pass parameters into and out of Databricks jobs in data factory
 metadata:
   title: Pass parameters into and out of Databricks jobs in data factory
   description: "Pass parameters into and out of Databricks jobs in data factory"
-  ms.date: 05/15/2020
-  author: b-dstrod
-  ms.author: b-dstrodtman
+  ms.date: 05/26/2022
+  author: wwlpublish
+  ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/3-pass-parameters-databricks-jobs.md)]

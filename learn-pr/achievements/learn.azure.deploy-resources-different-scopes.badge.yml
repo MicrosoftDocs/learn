@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.deploy-resources-different-scopes.badge
+metadata:
+  title: >-
+    Microsoft Badge: Deploy resources to subscriptions, management groups, and
+    tenants by using Bicep was issued by Microsoft
+socialImageUrl: /learn/achievements/bicep/deploy-resources-scopes-bicep-social.png

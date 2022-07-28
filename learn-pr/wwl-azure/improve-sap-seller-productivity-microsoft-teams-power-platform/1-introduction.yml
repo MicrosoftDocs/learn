@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

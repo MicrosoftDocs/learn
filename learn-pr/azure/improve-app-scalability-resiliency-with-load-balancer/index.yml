@@ -27,6 +27,8 @@ products:
 - azure
 - azure-load-balancer
 - azure-virtual-network
+subjects:
+- cloud-computing
 units:
 - learn.improve-app-scalability-resiliency-with-load-balancer.1-introduction
 - learn.improve-app-scalability-resiliency-with-load-balancer.2-load-balancer-features

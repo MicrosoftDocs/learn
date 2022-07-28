@@ -7,8 +7,7 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
 
 2. On the **Details** tab, select the algorithm name for the best model.
    
-    > [!div class="centered"]
-    > ![Select run.](../media/deploy-detail-tab.png)
+    ![Screenshot of the best model summary with a box around the algorithm name on the details tab.](../media/deploy-detail-tab.png)
 
 3. on the **Model** tab, select the **Deploy** button and use the **Deploy to web service** option to deploy the model with the following settings:
     - **Name**: predict-rentals
@@ -16,14 +15,11 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
     - **Compute type**: Azure Container Instance
     - **Enable authentication**: Selected
 
-4. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Successful**, which may take some time. You may need to select **&#8635; Refresh** periodically.
-5. In Azure Machine Learning studio, view the **Endpoints** page and select the **predict-rentals** real-time endpoint. Then select the **Consume** tab and note the following information there. If you do not see the **Consume** tab, the deployment is not completely finished - you will need to wait and refresh the page. You would need the information from the **Consume** tab to connect to your deployed service from a client application.
-  
-    - The REST endpoint for your service
-    - The primary or secondary key for your service
-
-    > [!div class="centered"]
-    > ![Review the REST endpoint and Primary Key.](../media/endpoints-2.png)
+4. Wait for the deployment to start - this may take a few seconds. Then, in the **Model summary** section, observe the **Deploy status** for the **predict-rentals** service, which should be **Running**. Wait for this status to change to **Successful**, which may take some time. You may need to select **Refresh** periodically.
+5. In Azure Machine Learning studio, on the left hand menu, select **Endpoints**. 
+    
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of location of Endpoints on the left hand menu.](../media/find-endpoints.png)
 
 ## Test the deployed service
 
@@ -61,7 +57,8 @@ Now you can test your deployed service.
 
 5. Review the test results, which include a predicted number of rentals based on the input features. The test pane took the input data and used the model you trained to return the predicted number of rentals.
 
-    > [!div class="centered"]
-    > ![Example of the results of testing the model.](../media/workaround-test.png)
+    ![Screenshot of an example of testing the model with sample data in the test tab.](../media/workaround-test.png)
 
-Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological _features_. In this case, the _labels_ are number of bicycle rentals.
+Let's review what you have done. You used a dataset of historical bicycle rental data to train a model. The model predicts the number of bicycle rentals expected on a given day, based on seasonal and meteorological _features_. In this case, the _labels_ are number of bicycle rentals. 
+
+You have just tested a service that is ready to be connected to a client application using the credentials in the **Consume** tab. We will end the lab here. You are welcome to continue to experiment with the service you just deployed.

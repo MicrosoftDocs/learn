@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-devops
+subjects:
+- collaboration
 modules:
 - learn.wwl.analyze-devops-continuous-planning-intergration
 - learn.wwl.introduce-foundation-pillars-devops

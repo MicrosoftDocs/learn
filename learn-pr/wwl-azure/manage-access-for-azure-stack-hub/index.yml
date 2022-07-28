@@ -36,6 +36,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- identity-access
 units:
 - learn.wwl.manage-access-for-azure-stack-hub.introduction
 - learn.wwl.manage-access-for-azure-stack-hub.hybrid-identity

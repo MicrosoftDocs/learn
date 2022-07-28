@@ -28,17 +28,16 @@ We used the portal to set the **Host caching** field for both the OS and data di
 First, let's store some resource names so we can use them later.
 
 In Azure Cloud Shell on the right, run the following PowerShell commands:
-
-    > [!NOTE]
-    > Switch your Cloud Shell session to **PowerShell** before trying these commands, if it isn't already.
+> [!NOTE]
+> Switch your Cloud Shell session to **PowerShell** before trying these commands, if it isn't already.
 
     ```powershell
     $myRgName = "<rgn>[sandbox resource group name]</rgn>"
     $myVMName = "fotoshareVM"
     ```
 
-    > [!TIP]
-    > You'll have to set these variables again if your Cloud Shell session times out. So, if possible, work through this entire lab in a single session.
+> [!TIP]
+> You'll have to set these variables again if your Cloud Shell session times out. So, if possible, work through this entire lab in a single session.
 
 ### Get info about our VM
 

@@ -33,6 +33,8 @@ roles:
 products:
   - azure
   - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
   - learn.advocates.cv-classify-bird-species.1-introduction
   - learn.advocates.cv-classify-bird-species.2-machine-learning-process

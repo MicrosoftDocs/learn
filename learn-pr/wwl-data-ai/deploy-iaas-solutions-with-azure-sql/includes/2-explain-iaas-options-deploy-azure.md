@@ -59,7 +59,7 @@ Reserving a virtual machine for one to three years provides another option for c
 
 When deploying to an Azure virtual machine, there are several series, or “families”, of virtual machine sizes that can be selected. Each series is a combination of memory, CPU, and storage that meets certain requirements. For example, the series that are compute optimized have a higher CPU to memory ratio. Having multiple options allows you to select an appropriate hardware configuration for the expected workload. The following six series each have various sizes available, the details of which are fully described in the Azure portal when you choose the option to select your VM size.
 
-[General purpose](/azure/virtual-machines/sizes-general) - These VMs provide a balanced ration of CPU to memory. This VM class is ideal for testing and development, small to medium-sized database servers, and web servers with a low to medium amount of traffic.
+[General purpose](/azure/virtual-machines/sizes-general) - These VMs provide a balanced ratio of CPU to memory. This VM class is ideal for testing and development, small to medium-sized database servers, and web servers with a low to medium amount of traffic.
 
 [Compute optimized](/azure/virtual-machines/sizes-compute) - Compute optimized VMs have a high CPU-to-memory ratio and are good for web servers with a medium amount of traffic, network appliances, batch processes, and application servers. These VMs can also support machine learning workloads that can't benefit from GPU-based VMs.
 
@@ -75,7 +75,7 @@ The easiest way to see the sizing options within each series is through the Azur
 
 :::image type="content" source="../media/module-22-plan-implement-final-02.png" alt-text="A Partial list of the VM sizes available through the Azure portal":::
 
-The image above shows just a small set of the series and size possibilities. For each option, you can see the number of Virtual CPUs, the amount of RAM, the number of Data disks, the Max IPS, the temporary storage provided and whether Premium storage is supported.
+The image above shows just a small set of the series and size possibilities. For each option, you can see the number of Virtual CPUs, the amount of RAM, the number of Data disks, the Max IOPS, the temporary storage provided and whether Premium storage is supported.
 
 For more information about VM size best practices, see [Best practices for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/performance-guidelines-best-practices-checklist).
 

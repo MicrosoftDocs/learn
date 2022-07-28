@@ -221,7 +221,7 @@ Azure Firewall is a managed cloud-based network security service that protects y
 :::image type="content" source="../media/vnet-security-913bb904.png" alt-text="Create virtual network - Security tab.":::
 
 
-In the **Review + create** tab, you can define tags, which can help you to organize and manage your Azure resources.
+In the **Review + create** tab, you can define Tags, which can help you to organize and manage your Azure resources.
 
 :::image type="content" source="../media/review-create-vnet-511dedf4.png" alt-text="Create virtual network - review tab.":::
 

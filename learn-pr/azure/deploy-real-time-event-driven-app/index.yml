@@ -34,6 +34,8 @@ products:
 - azure-event-hubs
 - azure-cosmos-db
 - azure-storage
+subjects:
+- data-engineering
 units:
 - learn.azure.deploy-event-driven-real-time.1-introduction
 - learn.azure.deploy-event-driven-real-time.2-event-driven-example

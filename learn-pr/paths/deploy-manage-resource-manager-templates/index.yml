@@ -35,6 +35,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- infrastructure
 modules:
 - learn.azure.create-resource-manager-template-vs-code
 - learn.azure.resource-manager-template-reuse

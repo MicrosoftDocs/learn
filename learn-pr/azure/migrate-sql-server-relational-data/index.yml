@@ -30,6 +30,9 @@ products:
 - azure
 - azure-sql-database
 - azure-migrate
+subjects:
+- migration
+- cloud-computing
 units:
 - learn.migrate-sql-server-relational-data.1-introduction
 - learn.migrate-sql-server-relational-data.2-exercise-environment-setup

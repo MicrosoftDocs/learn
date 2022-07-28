@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Python basics for creating a secret message decoder
   description: Learn some basic Python concepts and create a secret message decoder.
   ms.date: 04/14/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

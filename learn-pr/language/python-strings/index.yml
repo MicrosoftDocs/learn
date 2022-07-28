@@ -26,6 +26,8 @@ roles:
   - student
 products:
   - vs
+subjects:
+- cloud-computing
 units:
 - learn.beginner-python.use-strings.introduction
 - learn.beginner-python.use-strings.string-basics

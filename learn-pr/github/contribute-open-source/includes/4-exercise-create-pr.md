@@ -21,16 +21,16 @@ Before you submit your pull request, check the sidebar for ways to complete your
 
 Some of the labels we use in the repository for this Learn module are:
 
-- **Bug** (red): Something isn't working.
-- **Documentation** (blue): Improvements or additions to documentation.
-- **Duplicate** (gray): This issue or pull request already exists.
-- **Enhancement** (teal): New feature or request.
+- **Bug** (red): Something isn't working
+- **Documentation** (blue): Improvements or additions to documentation
+- **Duplicate** (gray): This issue or pull request already exists
+- **Enhancement** (teal): New feature or request
 
-Optionally, you can *link issues* in the sidebar, where successfully merging a pull request might close the corresponding issue. You can also customize your subscription to *notifications* on the thread. Some PRs receive, many comments, reviews, and CI/CD-related notifications. You can choose between:
+Optionally, you can *link issues* in the sidebar, where successfully merging a pull request might close the corresponding issue. You can also customize your subscription to *notifications* on the thread. Some PRs receive many comments, reviews, and CI/CD-related notifications. You can choose from:
 
-- **Not subscribed**: Only receive notifications when you participated or were @mentioned.
-- **Subscribed**: Receive all notifications for this pull request.
-- **Custom**: Only be notified for the events you select.
+- **Not subscribed:** Only receive notifications when you participated or were @mentioned
+- **Subscribed:** Receive all notifications for this pull request
+- **Custom:** Only be notified for the events you select
 
 ## Exercise
 

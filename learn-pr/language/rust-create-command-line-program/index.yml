@@ -30,6 +30,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.language.rust-create-command-line-program.introduction
 - learn.language.rust-create-command-line-program.application-outline
@@ -45,4 +47,3 @@ units:
 - learn.language.rust-create-command-line-program.summary
 badge:
   uid: learn.language.rust-create-command-line-program.badge
-

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-prebuilt-form-recognizer-models.exercise-analyze-document-use-form-recognizer
+title: Exercise - Analyze a document using Form Recognizer
+metadata:
+  title: Exercise - Analyze a document using Form Recognizer
+  description: "Exercise - Analyze a document using Form Recognizer"
+  ms.date: 06/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-analyze-document-use-form-recognizer.md)]

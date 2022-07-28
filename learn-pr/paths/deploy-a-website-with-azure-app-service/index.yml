@@ -22,6 +22,8 @@ products:
 - azure
 - azure-app-service
 - azure-portal
+subjects:
+- cloud-computing
 modules:
 - learn.prepare-azure-dev-environment
 - learn.host-a-web-application-with-azure-web-apps

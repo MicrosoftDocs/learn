@@ -25,6 +25,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- data-warehousing
 modules:
 - learn.wwl.describe-performance-monitoring
 - learn.wwl.configure-sql-server-resources-for-optimal-performance

@@ -27,6 +27,9 @@ products:
 - azure
 - azure-virtual-network
 - azure-network-watcher
+subjects:
+- infrastructure
+- networking
 units:
 - learn.troubleshoot-azure-network-infrastructure.1-introduction
 - learn.troubleshoot-azure-network-infrastructure.2-troubleshoot-networking-with-network-watcher

@@ -26,6 +26,9 @@ roles:
 products:
 - azure
 - m365
+subjects:
+- networking
+- threat-protection
 units:
 - learn.wwl.describe-network-based-threats-mitigations.introduction
 - learn.wwl.describe-network-based-threats-mitigations.describe-different-types-of-networks

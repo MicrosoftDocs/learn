@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.introduction
 - learn.wwl.explore-monitoring-requirements-of-azure-for-sap-workloads.explore-monitoring-requirements-azure-for-sap-workloads

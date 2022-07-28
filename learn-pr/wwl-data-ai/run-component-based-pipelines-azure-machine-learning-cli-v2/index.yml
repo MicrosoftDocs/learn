@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.introduction
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.create-component

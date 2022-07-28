@@ -29,7 +29,9 @@ roles:
 products:
   - azure
   - azure-sql-edge
-units:  
+subjects:
+- cloud-computing
+units:
 - learn.intro-to-azure-sql-edge.1-introduction
 - learn.intro-to-azure-sql-edge.2-what-is-azure-sql-edge
 - learn.intro-to-azure-sql-edge.3-how-azure-sql-edge-works

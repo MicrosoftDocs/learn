@@ -35,12 +35,12 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [AKS documentation on Microsoft Docs](https://docs.microsoft.com/azure/aks)
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service)
-- [Prepare an application for AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-prepare-app)
-- [Deploy an AKS cluster](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-deploy-cluster)
-- [HTTP application routing](https://docs.microsoft.com/azure/aks/http-application-routing)
-- [AKS scaling options](https://docs.microsoft.com/azure/aks/concepts-scale)
+- [AKS documentation on Microsoft Docs](/azure/aks/)
+- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
+- [Prepare an application for AKS](/azure/aks/tutorial-kubernetes-prepare-app)
+- [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)
+- [HTTP application routing](/azure/aks/http-application-routing)
+- [AKS scaling options](/azure/aks/concepts-scale)
 - [KEDA documentation](https://keda.sh)
-- [AKS cluster autoscaling](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
+- [AKS cluster autoscaling](/azure/aks/cluster-autoscaler)
 - [Kubernetes horizontal pod scaling (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale)

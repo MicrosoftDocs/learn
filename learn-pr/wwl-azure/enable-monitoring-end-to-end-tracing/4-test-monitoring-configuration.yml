@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-monitoring-end-to-end-tracing.test-monitoring-configuration
+title: Analyze application monitoring data
+metadata:
+  title: Analyze application monitoring data
+  description: "Analyze application monitoring data"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-test-monitoring-configuration.md)]

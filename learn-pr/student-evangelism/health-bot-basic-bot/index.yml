@@ -25,6 +25,8 @@ roles:
 products:
   - vs
 prerequisites: Introduction to Azure Health Bot
+subjects:
+- chatbot
 units:
   - learn.health-bot-basic-bot.1-introduction
   - learn.health-bot-basic-bot.2-get-started-with-custom-scenario

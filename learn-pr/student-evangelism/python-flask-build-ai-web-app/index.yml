@@ -29,6 +29,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- custom-app-development
+- artificial-intelligence
 units:
 - learn.student-evangelism.python-flask-build-ai-web-app.0-introduction
 - learn.student-evangelism.python-flask-build-ai-web-app.1-exercise-set-up-environment

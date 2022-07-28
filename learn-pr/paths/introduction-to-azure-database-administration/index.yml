@@ -25,6 +25,8 @@ products:
 - azure-sql-database
 - azure-sql-managed-instance
 - azure-sql-virtual-machines
+subjects:
+- database
 modules:
 - learn.wwl.prepare-to-maintain-sql-databases-azure
 trophy:

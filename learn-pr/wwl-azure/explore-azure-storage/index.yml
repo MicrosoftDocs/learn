@@ -29,6 +29,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- storage
 units:
 - learn.wwl.explore-azure-storage.introduction
 - learn.wwl.explore-azure-storage.types

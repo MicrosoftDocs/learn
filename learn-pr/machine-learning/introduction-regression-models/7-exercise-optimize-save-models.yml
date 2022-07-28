@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.introduction-regression-models.exercise-optimize-save-models
+title: Exercise - Optimize and save models
+metadata:
+  title: Exercise - Optimize and save models
+  description: In this exercise, you'll learn how to optimize and save models.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/7-exercise-optimize-save-models.ipynb
+

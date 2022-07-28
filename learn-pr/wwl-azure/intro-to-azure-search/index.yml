@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-cognitive-search
+subjects:
+- artificial-intelligence
 units:
 - learn.azure-introduction-to-azure-search.1-introduction
 - learn.azure-introduction-to-azure-search.2-what-is-azure-search

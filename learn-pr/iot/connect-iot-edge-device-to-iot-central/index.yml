@@ -37,6 +37,8 @@ products:
 - azure-iot-central
 - azure-iot-edge
 - azure-functions
+subjects:
+- device-management
 units:
 - learn.iot.connect-iot-edge-device-to-iot-central.introduction
 - learn.iot.connect-iot-edge-device-to-iot-central.implement-iot-application-with-edge-pattern

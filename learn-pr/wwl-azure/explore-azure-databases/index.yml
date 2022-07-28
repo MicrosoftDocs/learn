@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.wwl.explore-azure-databases.introduction
 - learn.wwl.explore-azure-databases.explore-database-support-of-azure-for-sap-workloads

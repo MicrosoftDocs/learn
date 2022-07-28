@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.enable-teams-for-sap-sales-cloud
+title: Enable Teams for SAP Sales Cloud
+metadata:
+  title: Enable Teams for SAP Sales Cloud
+  description: "Enable Teams for SAP Sales Cloud"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-enable-teams-for-sap-sales-cloud.md)]

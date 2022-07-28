@@ -1,0 +1,7 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.support-concurrency-blob-storage.badge
+metadata:
+  title: >-
+    Microsoft Badge: Support concurrency in Blob storage apps with ETags and
+    blob leases was issued by Microsoft
+socialImageUrl: /learn/achievements/support-concurrency-blob-storage-social.png

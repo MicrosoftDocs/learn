@@ -31,6 +31,8 @@ roles:
 products:
 - windows
 - vs-code
+subjects:
+- development-tools
 units:
 - learn-windows.get-started-with-windows-subsystem-linux.1-introduction
 - learn-windows.get-started-with-windows-subsystem-linux.2-enable-and-install

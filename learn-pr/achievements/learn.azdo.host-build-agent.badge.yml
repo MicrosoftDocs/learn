@@ -1,0 +1,8 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azdo.host-build-agent.badge
+metadata:
+  title: >-
+    Microsoft Badge: Host your own build agent in Azure Pipelines was issued by
+    Microsoft
+socialImageUrl: >-
+  /learn/achievements/azure-devops/host-your-own-build-server-in-your-build-pipeline-social.png

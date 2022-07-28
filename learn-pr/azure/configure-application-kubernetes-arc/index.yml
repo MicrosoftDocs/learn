@@ -43,6 +43,8 @@ products:
 - azure
 - azure-arc
 - azure-kubernetes-service
+subjects:
+- cloud-computing
 units:
 - learn.configure-application-kubernetes-arc.1-introduction
 - learn.configure-application-kubernetes-arc.2-prepare-lab-environment

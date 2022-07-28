@@ -24,6 +24,9 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- machine-learning
+- data-analytics
 units:
 - learn.wwl.monitor-data-drift-with-azure-machine-learning.introduction
 - learn.wwl.monitor-data-drift-with-azure-machine-learning.creating-monitor

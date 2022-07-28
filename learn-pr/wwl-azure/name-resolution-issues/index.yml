@@ -3,7 +3,7 @@ uid: learn.wwl.name-resolution-issues
 metadata:
   title: Troubleshoot name resolution issues in Microsoft Azure
   description: "Name resolution is the process of matching the name of a computer to its network address. This module looks at name resolution issues for public networks, private networks, and internal networks that connect to Azure. AZ720 AZ-720 az-720 networking"
-  ms.date: 04/15/2022
+  ms.date: 06/15/2022
   author: wwlpublish
   ms.author: lola
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Demonstrate an understanding of Azure CLI
   - Demonstrate an understanding of PowerShell
   - Know how to run Cloud Shell to run commands
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/name-resolution-issues.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,9 @@ roles:
 - support-engineer
 products:
 - azure-dns
+subjects:
+- cloud-computing
+- identity-access
 units:
 - learn.wwl.name-resolution-issues.introduction
 - learn.wwl.name-resolution-issues.name-resolution-issues

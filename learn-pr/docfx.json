@@ -124,6 +124,19 @@
                 "dest": "modules"
             },
             {
+                "src": "azure-percept",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -346,6 +359,19 @@
             },
             {
                 "src": "sports-machine-learning",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "startup",
                 "files": [
                     "**/*.yml",
                     "**/*.md"

@@ -30,6 +30,9 @@ products:
 - azure
 - azure-active-directory
 - windows-server
+subjects:
+- it-management-monitoring
+- networking
 modules:
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances
 - learn.azure.monitor-azure-vm-using-diagnostic-data

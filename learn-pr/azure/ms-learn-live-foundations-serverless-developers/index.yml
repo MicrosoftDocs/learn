@@ -63,6 +63,8 @@ roles:
 products:
 - azure-functions
 
+subjects:
+- serverless-compute
 units:
 - learn.azure.ms-learn-live-foundations-serverless-dev.1-execute-first-function-portal
 - learn.azure.ms-learn-live-foundations-serverless-dev.2-setup-local-development

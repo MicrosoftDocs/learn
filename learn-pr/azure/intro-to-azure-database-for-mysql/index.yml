@@ -28,7 +28,9 @@ roles:
 products:
   - azure
   - azure-database-mysql
-units:  
+subjects:
+- database
+units:
 - learn.intro-to-azure-database-for-mysql.1-introduction
 - learn.intro-to-azure-database-for-mysql.2-what-is-azure-database-for-mysql
 - learn.intro-to-azure-database-for-mysql.3-how-azure-database-for-mysql-works

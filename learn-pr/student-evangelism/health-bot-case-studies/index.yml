@@ -29,6 +29,9 @@ roles:
 products:
 - vs
 prerequisites: Introduction to Azure Health Bot
+subjects:
+- data-ai
+- compliance
 units:
 - learn.health-bot-case-studies.1-introduction
 - learn.health-bot-case-studies.2-usa-case-studies

@@ -39,6 +39,8 @@ roles:
 products:
 - azure
 - azure-arc
+subjects:
+- data-management
 units:
 - learn.azure.intro-to-arc-enabled-data-services.1-introduction
 - learn.azure.intro-to-arc-enabled-data-services.2-hybrid-computing

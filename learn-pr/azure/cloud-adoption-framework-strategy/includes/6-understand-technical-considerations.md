@@ -38,7 +38,7 @@ Cloud billing models and offers differ from on-premises, and they can create mea
 
 Microsoft provides frameworks and tools to help you understand your costs and continually optimize your environment:
 
-Understand and forecast your costs: Monitor your bill, set budgets, and allocate costs to teams and projects with Azure Cost Management + Billing.
+Understand and forecast your costs: Monitor your bill, set budgets, and allocate costs to teams and projects with Microsoft Cost Management.
 
 Learn more:
 

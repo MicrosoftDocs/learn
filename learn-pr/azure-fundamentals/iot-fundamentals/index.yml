@@ -29,6 +29,8 @@ products:
 - azure
 - azure-iot-central
 - azure-iot-hub
+subjects:
+- iot
 units:
 - learn.azure.iot-fundamentals.introduction
 - learn.azure.iot-fundamentals.identify-product-options

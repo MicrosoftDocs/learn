@@ -71,7 +71,7 @@ Complete the following steps to support toggling of the SPA's discount coupon fe
 
     ```dotnetcli
     pushd src/Web/WebSPA && \
-        dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.2.0 && \
+        dotnet add package Microsoft.FeatureManagement.AspNetCore --version 2.5.1 && \
         popd
     ```
 

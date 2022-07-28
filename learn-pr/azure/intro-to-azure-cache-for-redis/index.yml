@@ -28,7 +28,9 @@ roles:
 products:
   - azure
   - azure-cache-redis
-units:  
+subjects:
+- custom-app-development
+units:
 - learn.intro-to-azure-cache-for-redis.1-introduction
 - learn.intro-to-azure-cache-for-redis.2-what-is-azure-cache-for-redis
 - learn.intro-to-azure-cache-for-redis.3-how-azure-cache-for-redis-works

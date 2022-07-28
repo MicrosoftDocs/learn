@@ -29,7 +29,9 @@ roles:
 products:
   - azure
   - azure-hdinsight
-units:  
+subjects:
+- data-ai
+units:
 - learn.intro-to-azure-hdinsight.1-introduction
 - learn.intro-to-azure-hdinsight.2-what-is-azure-hdinsight
 - learn.intro-to-azure-hdinsight.3-how-azure-hdinsight-works

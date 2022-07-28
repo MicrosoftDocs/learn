@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks.introduction
 - learn.student-evangelism.analyze-climate-data-with-azure-notebooks.create-an-azure-notebook

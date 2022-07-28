@@ -6,20 +6,22 @@ In Azure Machine Learning, data for model training and other operations is usual
 
 1. View the comma-separated data at [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true) in your web browser. 
 
-2. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Datasets** page. Datasets represent specific data files or tables that you plan to work with in Azure ML.
+2. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true),expand the left pane by selecting the three lines at the top left of the screen. View the **Data** page (under **Assets**). The Data page contains specific data files or tables that you plan to work with in Azure ML. You can create datasets from this page as well.
+
 3. Create a new dataset **from web files**, using the following settings:
     * **Basic Info**:
         * **Web URL**: [https://aka.ms/bike-rentals](https://aka.ms/bike-rentals?azure-portal=true)
         * **Name**: bike-rentals
         * **Dataset type**: Tabular
         * **Description**: Bicycle rental data
+        * **Skip data validation**: _do not select_
     * **Settings and preview**:
         * **File format**: Delimited
         * **Delimiter**: Comma
         * **Encoding**: UTF-8
         * **Column headers**: Only first file has headers 
         * **Skip rows**: None
-        * **Dataset contains multi-line data**: _Do not select_ 
+        * **Dataset contains multi-line data**: _do not select_ 
     * **Schema**:
         * Include all columns other than **Path**
         * Review the automatically detected types

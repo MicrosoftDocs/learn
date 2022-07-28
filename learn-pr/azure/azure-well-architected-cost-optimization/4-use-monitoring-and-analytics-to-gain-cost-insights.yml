@@ -33,9 +33,9 @@ quiz:
 
   - content: 'Which of the following is not used to monitor your costs?'
     choices:
-    - content: 'Azure Cost Management'
+    - content: 'Microsoft Cost Management'
       isCorrect: false
-      explanation: 'Azure Cost Management is used to track and visualize your Azure costs.'
+      explanation: 'Microsoft Cost Management is used to track and visualize your Azure costs.'
     - content: 'Azure Functions'
       isCorrect: true
       explanation: 'Azure Functions is a serverless compute service and is not used to track costs.'

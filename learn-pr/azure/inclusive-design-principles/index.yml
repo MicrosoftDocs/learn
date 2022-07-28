@@ -29,6 +29,8 @@ products:
 - azure
 - m365
 - dynamics-365
+subjects:
+- accessibility
 units:
 - learn.azure.inclusive-design-principles.1-introduction
 - learn.azure.inclusive-design-principles.2-inclusive-product-design

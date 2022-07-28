@@ -34,6 +34,9 @@ roles:
 - developer
 products:
 - dotnet
+subjects:
+- container
+- custom-app-development
 units:
 - learn.languages.dotnet-deploy-microservices-kubernetes.introduction
 - learn.languages.dotnet-deploy-microservices-kubernetes.what-are-orchestrators

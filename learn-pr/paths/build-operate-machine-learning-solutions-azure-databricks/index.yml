@@ -22,6 +22,10 @@ roles:
 products:
 - azure-databricks
 - azure-machine-learning
+subjects:
+- data-analytics
+- data-lake
+- artificial-intelligence
 modules:
 - learn.wwl.get-started-azure-databricks
 - learn.wwl.work-data-azure-databricks

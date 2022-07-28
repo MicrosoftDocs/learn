@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- business-continuity
 units:
 - learn.wwl.implement-business-continuity-disaster-recovery-backup.introduction
 - learn.wwl.implement-business-continuity-disaster-recovery-backup.explore-snapshot-strategies

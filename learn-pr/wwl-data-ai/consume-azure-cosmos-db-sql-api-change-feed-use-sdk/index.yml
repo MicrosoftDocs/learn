@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- infrastructure
 units:
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.introduction
 - learn.wwl.consume-azure-cosmos-db-sql-api-change-feed-using-sdk.understand-features-sdk

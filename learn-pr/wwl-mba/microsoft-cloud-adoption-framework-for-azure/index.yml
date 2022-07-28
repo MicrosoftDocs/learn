@@ -24,6 +24,9 @@ roles:
 - business-user
 products:
 - azure
+subjects:
+- cloud-computing
+- knowledge-management
 units:
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.1-introduction
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.2-cloud-adoption-framework-overview

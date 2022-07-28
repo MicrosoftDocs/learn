@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-prebuilt-form-recognizer-models.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You have a large set of documents with varying structures that contain customer name and address information. You want to extract entities for each customer. Which prebuilt model should you use?"
+    choices:
+    - content: "Read model."
+      isCorrect: false
+      explanation: "Incorrect. The read model can extract text and identify languages but doesn't support entity extraction."
+    - content: "General document model."
+      isCorrect: true
+      explanation: "Correct. The general document model is the only one that supports entity extraction."
+    - content: "ID document model."
+      isCorrect: false
+      explanation: "Incorrect. The ID document model extracts information from US drivers' licenses and international passports and doesn't support entities."
+  - content: "You are using the prebuilt layout model to analyze a document with many checkboxes. You want to find out whether each box is checked or empty. What object should you use in the returned JSON code?"
+    choices:
+    - content: "Selection marks."
+      isCorrect: true
+      explanation: "Correct. Selection marks record checkboxes and radio buttons and include whether they're selected or not."
+    - content: "Bounding boxes."
+      isCorrect: false
+      explanation: "Incorrect. Bounding boxes record the size and position of an element in the analyzed document."
+    - content: "Confidence indicators."
+      isCorrect: false
+      explanation: "Incorrect. Confidence indicators show how reliable an extracted value is."
+  - content: "You submit a Word document to the Forms Recognizer general document model for analysis but you receive an error. The file is A4 size, contains 1 MB of data, and is not password-protected. How should you resolve the error?"
+    choices:
+    - content: "Change from the free tier to the standard tier."
+      isCorrect: false
+      explanation: "Incorrect. The free tier supports documents up to 4 MB in size. This change would not resolve the error."
+    - content: "Submit the document one page at a time."
+      isCorrect: false
+      explanation: "Incorrect. It's possible but not necessary to submit multipage documents one page at a time. This change would not resolve the error."
+    - content: "Convert the document to PDF format."
+      isCorrect: true
+      explanation: "Correct. Word documents are not supported by Forms Recognizer but PDF documents are supported. Forms Recognizer is designed to analyze scanned and photographed paper documents, not documents that are already in a digital format so you should consider using another technology to extract the data in Word documents."

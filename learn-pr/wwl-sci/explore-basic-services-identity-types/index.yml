@@ -26,6 +26,8 @@ roles:
 - student
 products:
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.introduction
 - learn.wwl.explore-basic-services-identity-types-of-azure-active-directory-azure-ad.describe-what-is

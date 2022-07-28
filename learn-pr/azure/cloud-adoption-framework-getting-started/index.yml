@@ -5,7 +5,7 @@ metadata:
   description: Use the Cloud Adoption Framework getting-started guides to unblock your organization's cloud adoption efforts.
   ms.date: 04/15/2022
   author: BrianBlanchard
-  ms.author: bblanch
+  ms.author: brblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Getting started with the Microsoft Cloud Adoption Framework for Azure
@@ -41,6 +41,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.azure.cloud-adoption-framework-getting-started.1-introduction
 - learn.azure.cloud-adoption-framework-getting-started.2-customer-narrative

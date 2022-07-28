@@ -52,17 +52,17 @@ But remember, some resources are metered and billed according to how much outgoi
 
 Keep up to date with the latest Azure customer and subscription offers, and switch to offers that provide the greatest cost-saving benefit.
 
-## Use Azure Cost Management + Billing to control spending
+## Use Microsoft Cost Management + Billing to control spending
 
-Azure Cost Management + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use.
+Cost Management is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use.
 
 The following image shows current usage broken down by service:
 
-:::image type="content" source="../media/6-cost-management.png" alt-text="A screenshot of Azure Cost Management + Billing showing usage broken down by Azure service." lightbox="../media/6-cost-management-expanded.png":::
+:::image type="content" source="../media/6-cost-management.png" alt-text="A screenshot of Cost Management showing usage broken down by Azure service." lightbox="../media/6-cost-management-expanded.png":::
 
 In this example, Azure App Service, a web application hosting service, generates the greatest cost.
 
-Azure Cost Management + Billing features include:
+Cost Management features include:
 
 + **Reporting**
 
@@ -92,13 +92,13 @@ For example, if you run several VMs for different teams, you can use tags to cat
 
 Tags make it easier to identify groups that generate the biggest Azure costs, which can help you adjust your spending accordingly.
 
-The following image shows a year's worth of usage broken down by tags on the Azure Cost Management + Billing page:
+The following image shows a year's worth of usage broken down by tags on the Cost Management page:
 
-:::image type="content" source="../media/6-cost-management-tags.png" alt-text="A screenshot of Azure Cost Management + Billing showing usage broken down by tags.":::
+:::image type="content" source="../media/6-cost-management-tags.png" alt-text="A screenshot of Cost Management showing usage broken down by tags.":::
 
 ## Resize underutilized virtual machines
 
-A common recommendation that you'll find from Azure Cost Management + Billing and Azure Advisor is to resize or shut down VMs that are underutilized or idle.
+A common recommendation that you'll find from Cost Management and Azure Advisor is to resize or shut down VMs that are underutilized or idle.
 
 As an example, say you have a VM whose size is **Standard_D4_v4**, a general-purpose VM type with four vCPUs and 16 GB of memory. You might discover that this VM is idle 90 percent of the time.
 

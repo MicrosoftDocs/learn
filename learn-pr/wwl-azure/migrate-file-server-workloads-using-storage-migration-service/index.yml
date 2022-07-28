@@ -3,7 +3,7 @@ uid: learn.wwl.migrate-file-server-workloads-using-storage-migration-service
 metadata:
   title: Migrate file server workloads using Storage Migration Service
   description: "Learn to use Storage Migration Service to migrate files and files shares from existing file server to new servers running Windows Server 2022. Configure storage migration for optimum performance of data migration."
-  ms.date: 12/09/2021
+  ms.date: 06/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience performing basic Windows Server administration tasks
   - General understanding of Windows Server file servers
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/4-migrate-file-server-workloads-using-storage-migration-service.svg
 levels:
 - intermediate
 roles:
@@ -28,6 +28,8 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- storage
 units:
 - learn.wwl.migrate-file-server-workloads-using-storage-migration-service.introduction
 - learn.wwl.migrate-file-server-workloads-using-storage-migration-service.overview-usage-scenarios

@@ -24,6 +24,10 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-lake
+- data-modeling
+- serverless-compute
 units:
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.introduction
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.transform-data-with-using-create-external-table-as-select-statement

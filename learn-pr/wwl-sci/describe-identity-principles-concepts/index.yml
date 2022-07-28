@@ -3,7 +3,7 @@ uid: learn.wwl.describe-identity-principles-concepts
 metadata:
   title: Describe identity concepts
   description: "Describe identity concepts"
-  ms.date: 04/02/2022
+  ms.date: 05/10/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure-active-directory
+subjects:
+- identity-access
 units:
 - learn.wwl.describe-identity-principles-concepts.introduction
 - learn.wwl.describe-identity-principles-concepts.define-authentication-and-authorization

@@ -30,6 +30,8 @@ products:
   - azure-vpn-gateway
 prerequisites: |
   Understanding of basic networking concepts.
+subjects:
+- networking
 units:
   - learn.azure.intro-to-azure-vpn-gateway.introduction
   - learn.azure.intro-to-azure-vpn-gateway.what-is-azure-vpn-gateway

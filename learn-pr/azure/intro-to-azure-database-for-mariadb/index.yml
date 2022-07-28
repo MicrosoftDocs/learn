@@ -28,7 +28,9 @@ roles:
 products:
   - azure
   - azure-database-mariadb
-units:  
+subjects:
+- data-warehousing
+units:
 - learn.intro-to-azure-database-for-mariadb.1-introduction
 - learn.intro-to-azure-database-for-mariadb.2-what-is-azure-database-for-mariadb
 - learn.intro-to-azure-database-for-mariadb.3-how-azure-database-for-mariadb-works

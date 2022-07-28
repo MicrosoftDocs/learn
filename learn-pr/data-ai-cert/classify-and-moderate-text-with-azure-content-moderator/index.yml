@@ -27,6 +27,8 @@ products:
 - azure
 - azure-sdks
 - azure-cognitive-services
+subjects:
+- classification-analysis
 units:
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.introduction
 - learn.data-ai.classify-and-moderate-text-with-azure-content-moderator.overview-of-text-moderation

@@ -4,7 +4,7 @@ title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB 
 metadata:
   title: 'Exercise: Paginate cross-product query results with the Azure Cosmos DB SQL API SDK'
   description: "Exercise: Paginate cross-product query results with the Azure Cosmos DB SQL API SDK"
-  ms.date: 12/22/2021
+  ms.date: 06/03/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

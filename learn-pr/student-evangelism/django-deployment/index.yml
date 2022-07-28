@@ -35,6 +35,8 @@ roles:
 products:
 - azure-app-service-web
 - vs-code
+subjects:
+- data-engineering
 units:
 - learn.django.deployment.introduction
 - learn.django.deployment.setup-exercise

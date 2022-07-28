@@ -29,6 +29,8 @@ prerequisites: |
   - Visual Studio Code installed 
   - Ability to install Visual Studio Code extensions 
   - Ability to install software on your computer, if you're not using a Windows operating system
+subjects:
+- development-tools
 units:
   - learn.powershell.intro-to-powershell.1-introduction
   - learn.powershell.intro-to-powershell.2-what-is-powershell

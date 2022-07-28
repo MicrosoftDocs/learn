@@ -23,6 +23,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- migration
 units:
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.introduction
 - learn-pr.wwl.preparing-migrate-sap-workloads-azure.strategies-migrating-sap-workloads-microsoft-azure

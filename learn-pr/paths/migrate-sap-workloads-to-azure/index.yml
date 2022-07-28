@@ -21,6 +21,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- migration
 modules:
 - learn.wwl.use-sap-workload-planning-deployment-checklist
 - learn.wwl.explore-migration-options

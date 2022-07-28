@@ -27,7 +27,9 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+units:
 - learn-wwl.ai-strategy-in-retail.introduction
 - learn-wwl.ai-strategy-in-retail.ai-value-in-retail-insead
 - learn-wwl.ai-strategy-in-retail.retail-case-study-introduction

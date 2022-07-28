@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/24/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. By creating a digitally diverse learning community with bias-free communication and inclusive design methodology what are the diverse needs being addressed?"
+    choices:
+    - content: "Content, processes, methods, and products"
+      isCorrect: false
+      explanation: "Incorrect. As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. More than 1 billion people around the world have a disability. While some disabilities may be visually apparent, others may not be, and at some point in our lives, many of us may experience a disability, whether it’s temporary or permanent. Microsoft is proudly designing technologies with [built-in accessibility tools](https://aka.ms/microsoftaccessibility) and features. We encourage you to create a digitally diverse learning community with bias-free communication and inclusive design methodology by accommodating students' diverse needs around: hearing, mobility, vision, and neurodiversity."
+    - content: "Skills, ideas, aides, and information"
+      isCorrect: false
+      explanation: "Incorrect. As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. More than 1 billion people around the world have a disability. While some disabilities may be visually apparent, others may not be, and at some point in our lives, many of us may experience a disability, whether it’s temporary or permanent. Microsoft is proudly designing technologies with [built-in accessibility tools](https://aka.ms/microsoftaccessibility) and features. We encourage you to create a digitally diverse learning community with bias-free communication and inclusive design methodology by accommodating students' diverse needs around: hearing, mobility, vision, and neurodiversity."
+    - content: "Hearing, mobility, vision, and neurodiversity"
+      isCorrect: true
+      explanation: "Correct. As we teach students worldwide about Microsoft technologies and solutions, we must include students with diverse learning needs. More than 1 billion people around the world have a disability. While some disabilities may be visually apparent, others may not be, and at some point in our lives, many of us may experience a disability, whether it’s temporary or permanent. Microsoft is proudly designing technologies with [built-in accessibility tools](https://aka.ms/microsoftaccessibility) and features."
+  - content: "What is the goal of the Microsoft ARB courses?"
+    choices:
+    - content: "To teach students basic knowledge of cloud services and the services that are provided with Azure"
+      isCorrect: false
+      explanation: "Incorrect. We want to teach the students not just the “what” but “how” to do things in Microsoft Azure so they can successfully achieve the corresponding certification exam. We want to build their skills so that they're able to do the things they're learning in a real-world environment instead of talking about what they’ve learned."
+    - content: "To teach students not just the “what” but “how” to do things in Microsoft Azure, so they can successfully achieve the corresponding certification exam."
+      isCorrect: true
+      explanation: "Correct. We want to teach the students not just the “what” but “how” to do things in Microsoft Azure so they can successfully achieve the corresponding certification exam. We want to build their skills so that they're able to do the things they're learning in a real-world environment instead of just talking about what they’ve learned."
+    - content: "To teach students advanced skills in key Microsoft Office programs"
+      isCorrect: false
+      explanation: "Incorrect. We want to teach the students not just the “what” but “how” to do things in Microsoft Azure so they can successfully achieve the corresponding certification exam. We want to build their skills so that they're able to do the things they're learning in a real-world environment instead of talking about what they’ve learned."
+  - content: "What is a typical feature of the Microsoft ARB certification exams?"
+    choices:
+    - content: "The passing score is 800"
+      isCorrect: false
+      explanation: "Incorrect. The passing score is 700 out of 1000 points. Multiple-choice questions are a typical feature of the Microsoft ARB exams and include: true or false, select one correct answer, or select multiple correct answers."
+    - content: "Case studies and labs"
+      isCorrect: true
+      explanation: "Correct. Case studies and labs are a feature of the Microsoft ARB certification exams."
+    - content: "True or false, select one correct answer, or select multiple correct answers"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft ARB certification exams only include multiple-choice questions."

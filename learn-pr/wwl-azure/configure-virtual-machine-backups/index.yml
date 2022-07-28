@@ -27,6 +27,8 @@ roles:
 products:
 - azure-backup
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-virtual-machine-backups.introduction
 - learn.wwl.configure-virtual-machine-backups.protect-data

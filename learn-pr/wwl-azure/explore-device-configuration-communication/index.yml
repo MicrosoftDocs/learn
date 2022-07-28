@@ -29,6 +29,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- device-management
 units:
 - learn.wwl.explore-device-configuration-communication.introduction
 - learn.wwl.explore-device-configuration-communication.review-device-communication-types

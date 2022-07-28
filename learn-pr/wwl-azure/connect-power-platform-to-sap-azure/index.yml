@@ -27,6 +27,8 @@ products:
 - azure
 - power-bi
 - power-platform
+subjects:
+- data-engineering
 units:
 - learn.wwl.connect-power-platform-to-sap-azure.introduction
 - learn.wwl.connect-power-platform-to-sap-azure.concepts

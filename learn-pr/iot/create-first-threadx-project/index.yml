@@ -34,6 +34,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- cloud-computing
 units:
 - learn.iot.create-first-threadx-project.introduction
 - learn.iot.create-first-threadx-project.example-threadx-project
@@ -44,4 +46,4 @@ units:
 - learn.iot.create-first-threadx-project.knowledge-check
 - learn.iot.create-first-threadx-project.summary
 badge:
-  uid: learn.iot.create-first-threadx-project.badge 
+  uid: learn.iot.create-first-threadx-project.badge

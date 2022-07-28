@@ -34,6 +34,9 @@ products:
 - aspnet-core
 - dotnet-core
 - vs-ide
+subjects:
+- development-tools
+- cloud-computing
 units:
 - learn.publish-azure-web-app-with-visual-studio.1-introduction
 - learn.publish-azure-web-app-with-visual-studio.2-install-the-necessary-workloads

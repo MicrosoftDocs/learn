@@ -16,12 +16,3 @@ Microsoft Purview provides three eDiscovery solutions: Content search, eDiscover
 Subscriptions that support eDiscovery (Standard) also support Content search. Subscriptions that support eDiscovery (Premium) also support Content search and eDiscovery (Standard).
 
 To access any of the eDiscovery-related tools, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Microsoft Purview compliance portal.
-
-### Interactive guide
-
-In this interactive guide, you'll explore some of the capabilities of eDiscovery (Standard). Select the image below to get started and follow the prompts on the screen.
-
-> [!NOTE]
-> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
-
-[![Interactive guide](../media/4-ediscovery-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/LP04M05-Describe-eDiscovery-capabilities/index.html?azure-portal=true)

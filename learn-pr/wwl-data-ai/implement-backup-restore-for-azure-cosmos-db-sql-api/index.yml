@@ -24,6 +24,10 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-engineering
+- data-management
+- business-continuity
 units:
 - learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.introduction
 - learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api.evaluate-periodic-backup

@@ -26,6 +26,8 @@ products:
 - azure-monitor
 - azure-load-balancer
 - azure-virtual-machines
+subjects:
+- cloud-computing
 modules:
 - learn.intro-to-site-reliability-engineering
 - learn.incident-response-with-alerting-on-azure

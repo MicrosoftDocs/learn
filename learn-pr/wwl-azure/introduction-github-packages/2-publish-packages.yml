@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-github-packages.publish-packages
+title: Publish packages
+metadata:
+  title: Publish packages
+  description: "Publish packages"
+  ms.date: 05/24/2022
+  author: wwlpublish
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-publish-packages.md)]

@@ -32,6 +32,9 @@ products:
   - azure
   - azure-container-registry
   - azure-kubernetes-service
+subjects:
+- serverless-compute
+- development-tools
 units:
   - learn.microservices-apigateway-aspnet-core.introduction
   - learn.microservices-apigateway-aspnet-core.environment-setup

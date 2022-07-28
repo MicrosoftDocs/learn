@@ -28,6 +28,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
+subjects:
+- cloud-computing
 units:
 - learn.azure.stage-deploy-app-service-deployment-slots.1-introduction
 - learn.azure.stage-deploy-app-service-deployment-slots.2-create-deployment-slots

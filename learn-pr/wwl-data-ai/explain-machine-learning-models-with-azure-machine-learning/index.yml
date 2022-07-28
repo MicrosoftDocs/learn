@@ -24,6 +24,8 @@ products:
 - azure
 - azure-machine-learning
 - azure-portal
+subjects:
+- machine-learning
 units:
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.introduction
 - learn.wwl.explain-machine-learning-models-with-azure-machine-learning.feature-importance

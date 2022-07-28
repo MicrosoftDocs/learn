@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.create-pipelines-in-aml.introduction
 - learn.wwl.create-pipelines-in-aml.pipelines

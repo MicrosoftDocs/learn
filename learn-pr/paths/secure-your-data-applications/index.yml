@@ -25,6 +25,10 @@ products:
 - azure-key-vault
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- information-protection-governance
+- compliance
+- identity-access
 modules:
 - learn.wwl.azure-key-vault
 - learn.wwl.application-security

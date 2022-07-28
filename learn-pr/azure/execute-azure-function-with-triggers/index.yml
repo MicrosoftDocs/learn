@@ -27,6 +27,8 @@ products:
 - azure
 - azure-functions
 - azure-portal
+subjects:
+- cloud-computing
 units:
 - learn.execute-azure-function-with-triggers.1-introduction
 - learn.execute-azure-function-with-triggers.2-determine-best-trigger

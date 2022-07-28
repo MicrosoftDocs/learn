@@ -60,7 +60,7 @@ Corporate policies establish the requirements, standards, and goals that your IT
 
 - **Avoid overspending**: Cloud deployments involve a risk for overspending, especially for self-service deployments. Any deployment must be allocated to a billing unit, with an approved budget and with a mechanism for applying budgetary limits.
 
-  **Design consideration:** In Azure, budget can be controlled with [Azure Cost Management + Billing](/azure/cost-management-billing/). [Azure Advisor](/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
+  **Design consideration:** In Azure, budget can be controlled with [Microsoft](/azure/cost-management-billing/). [Azure Advisor](/azure/advisor/advisor-cost-recommendations?azure-portal=true) can provide optimization recommendations to reduce spending per asset.
 
 - **Secure sensitive data**: Assets that interact with sensitive data might not receive sufficient protections, leading to potential data leaks or business disruptions. All assets that interact with sensitive data must be identified and reviewed by the security team to ensure that proper levels of protection are in place.
 

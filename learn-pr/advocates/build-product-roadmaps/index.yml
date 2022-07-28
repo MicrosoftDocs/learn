@@ -24,6 +24,8 @@ roles:
 - developer
 products:
 - azure
+subjects:
+- devops
 units:
 - learn.build-product-road-maps.1-introduction
 - learn.build-product-road-maps.2-what-is-a-product-road-map

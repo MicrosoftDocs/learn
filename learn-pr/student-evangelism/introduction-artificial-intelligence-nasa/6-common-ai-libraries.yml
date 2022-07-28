@@ -4,8 +4,8 @@ metadata:
   title: Common Python libraries for AI projects
   description: Learn about common AI libraries and how they're used to create AI models.
   ms.date: 04/11/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

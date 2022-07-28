@@ -26,6 +26,8 @@ roles:
 - business-user
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn-wwl.introduction-to-azure-solutions
 - learn-wwl.app-and-infra-migration-and-modernization

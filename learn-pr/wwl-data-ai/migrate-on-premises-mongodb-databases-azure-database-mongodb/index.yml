@@ -26,6 +26,8 @@ roles:
 - data-engineer
 products:
 - azure-cosmos-db
+subjects:
+- migration
 units:
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.introduction
 - learn.wwl.migrate-premises-mongodb-databases-azure-database-mongodb.mongodb-cosmos-db-migration-benefits

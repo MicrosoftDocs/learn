@@ -31,6 +31,8 @@ products:
 - azure-sql-managed-instance
 - azure-sql-virtual-machines
 - sql-server
+subjects:
+- database
 units:
 - learn.wwl.prepare-to-maintain-sql-databases-azure.introduction
 - learn.wwl.prepare-to-maintain-sql-databases-azure.describe-azure-data-platform-roles

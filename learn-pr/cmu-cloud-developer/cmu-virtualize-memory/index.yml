@@ -41,6 +41,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- cloud-computing
 units:
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.0-introduction
 - learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.1-one-level-page-map

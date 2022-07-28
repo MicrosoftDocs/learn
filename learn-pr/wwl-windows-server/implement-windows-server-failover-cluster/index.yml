@@ -30,6 +30,8 @@ roles:
 - solution-architect
 products:
 - windows-server
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.implement-windows-server-failover-clustering.introduction
 - learn.wwl.implement-windows-server-failover-clustering.define

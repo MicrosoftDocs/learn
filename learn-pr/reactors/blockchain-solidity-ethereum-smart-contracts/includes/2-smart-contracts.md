@@ -2,7 +2,7 @@ A smart contract is a program that's stored inside a blockchain. Smart contracts
 
 All of the terms and conditions of the contracts are programmatically defined. A definition specifies the rules, requirements, and rewards for the participants in the blockchain. It also specifies how digital assets are transferred between parties. Each smart contract is assigned a 20-byte address that uniquely identifies it.
 
-Smart contracts run on their own, send events which trigger state transitions, and call functions. They're perfect for blockchain technology because they allow people who don't know one another to do business in a securely specified way that requires no middleman.
+Smart contracts run on their own, send events that trigger state transitions, and call functions. They're perfect for blockchain technology because they allow people who don't know one another to do business in a securely specified way that requires no middleman.
 
 Smart contracts are most commonly used with Ethereum. Ethereum is the world's first programmable blockchain. It allows smart contracts to be defined to help facilitate the transfer of digital assets, like ether.
 
@@ -20,7 +20,7 @@ Smart contracts have these key properties and advantages:
 
 Smart contracts can benefit many industries and processes. Consider the following use cases.
 
-**Insurance**: When certain events occur, smart contracts automatically triggers a claim which simplifies and streamlines the claims process. Then, to determine the amount of compensation that users receive, claim details can be recorded on the blockchain. This functionality can reduce processing times and human errors.
+**Insurance**: When certain events occur, smart contracts automatically trigger a claim that simplifies and streamlines the claims process. Then, to determine the amount of compensation that users receive, claim details can be recorded on the blockchain. This functionality can reduce processing times and human errors.
 
 **Voting**: Smart contracts can help make voting automatic and transparent. Each contract serves as one ballot, which represents a voter's identity. Because a blockchain is immutable, meaning that it can't be changed, votes can't be tampered with.
 
@@ -41,7 +41,7 @@ Many tools can help you effectively develop smart contracts. The following secti
 
 ### Extensions
 
-- [**Blockchain Development Kit for Ethereum**](https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain&azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. In this module, we'll use the Blockchain Development Kit to write and test smart contracts.
+- [**Truffle for VS Code extension**](https://marketplace.visualstudio.com/items?itemName=trufflesuite-csi.truffle-vscode&azure-portal=true): This extension can simplify how you create, build, and deploy smart contracts on Ethereum ledgers. This extension has built-in integration with Truffle, Ganache, and more tools and services. In this module, we'll use this extension to write and test smart contracts.
 
 ### Frameworks
 

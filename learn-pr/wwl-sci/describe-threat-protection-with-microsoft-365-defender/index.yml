@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - m365-threat-protection
+subjects:
+- threat-protection
 units:
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.introduction
 - learn.wwl.describe-threat-protection-with-microsoft-365-defender.describe-services

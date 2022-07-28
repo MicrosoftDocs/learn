@@ -2,7 +2,7 @@ Enterprise-scale design comes with a set of design principles for managing the p
 
 - **Subscription democratization**: Use subscriptions as a unit of management and scale that's aligned with business needs and priorities. This approach supports business areas and portfolio owners as they accelerate application migrations and new application development.
 
-   :::image type="content" source="../media/3-subscription-democratization.svg" alt-text="Diagram that illustrates subscription democratization." lightbox="../media/3-subscription-democratization-large.png":::
+   :::image type="content" source="../media/3-subscription-democratization.png" alt-text="Diagram that illustrates subscription democratization." lightbox="../media/3-subscription-democratization-large.png":::
 
 - **Policy-driven governance**: Apply Azure Policy to provide guardrails and ensure continued compliance with your organization's platform, along with the applications that are deployed onto it.
 

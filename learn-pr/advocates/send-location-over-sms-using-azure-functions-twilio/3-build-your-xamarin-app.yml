@@ -4,9 +4,9 @@ title: Exercise - Build your Xamarin.Forms UI and application logic
 metadata:
   title: Build your Xamarin.Forms UI and application logic
   description: Build your Xamarin.Forms UI and application logic using Model-View-ViewModel (MVVM) and data binding
-  ms.date: 09/24/2018
+  ms.date: 05/06/2022
   #TODO: Update with real author name.
-  author: adrianstevens
+  author: acomfort248
   ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

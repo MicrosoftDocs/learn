@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure-app-configuration
+subjects:
+- security
 units:
 - learn.wwl.implement-azure-app-configuration.introduction
 - learn.wwl.implement-azure-app-configuration.explore-service

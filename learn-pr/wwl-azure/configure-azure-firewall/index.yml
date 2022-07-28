@@ -23,6 +23,9 @@ roles:
 - administrator
 products:
 - azure-firewall
+subjects:
+- networking
+- cloud-security
 units:
 - learn.wwl.configure-azure-firewall.introduction
 - learn.wwl.configure-azure-firewall.determine-uses

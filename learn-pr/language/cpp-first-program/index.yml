@@ -25,6 +25,8 @@ roles:
 products:
   - vs
 prerequisites: None
+subjects:
+- development-tools
 units:
   - learn.cpp-write-your-first-program.introduction
   - learn.cpp-write-your-first-program.exercise-hello-world
@@ -34,4 +36,3 @@ units:
   - learn.cpp-write-your-first-program.summary
 badge:
   uid: learn.cpp-write-your-first-program.badge
-  

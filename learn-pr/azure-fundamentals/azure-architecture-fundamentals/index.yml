@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-resource-manager
+subjects:
+- architecture
 units:
 - learn.azure.azure-architecture-fundamentals.introduction
 - learn.azure.azure-architecture-fundamentals.overview

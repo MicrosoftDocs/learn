@@ -22,7 +22,7 @@ In this task, we will create users and groups.
 5.  Review the two ways to create a user: **Create user** and **Invite user**.
 6.  Create a new user. Review **Identity**, **Groups and roles**, **Settings**, and **Job Info**.
 7.  Going back to Azure AD, under **Manage** click **Groups**.
-8.  Review the **Group types**: **Security** and **Office 365**.
+8.  Review the **Group types**: **Security** and **Microsoft 365**.
 9.  Create a new group by clicking "New Group" with the **Membership type** as **Assigned**.
 10. Add a user to the same group.
 11. Create another new group with **Membership type** as **Dynamic user**.

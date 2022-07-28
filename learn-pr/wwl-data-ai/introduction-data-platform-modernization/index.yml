@@ -34,6 +34,8 @@ products:
 - azure-sqlserver-vm
 - azure-sql-virtual-machines
 - azure-synapse-analytics
+subjects:
+- data-engineering
 units:
 - learn.wwl.introduction-data-platform-modernization.introduction
 - learn.wwl.introduction-data-platform-modernization.2-understand-data-platform-modernization

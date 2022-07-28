@@ -1,0 +1,9 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.azure.provide-disaster-recovery-replicate-storage-data.badge
+metadata:
+  title: >-
+    Microsoft Badge: Provide disaster recovery by replicating storage data
+    across regions and failing over to a secondary location was issued by
+    Microsoft
+socialImageUrl: >-
+  /learn/achievements/provide-disaster-recovery-replicate-storage-data-social.png

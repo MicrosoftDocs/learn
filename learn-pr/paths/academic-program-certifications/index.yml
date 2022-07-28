@@ -35,6 +35,8 @@ roles:
 - school-leader
 products:
 - azure
+subjects:
+- employee-engagement
 modules:
 - learn.student-evangelism.academic-program-certifications-define-requirements
 - learn.student-evangelism.academic-program-certifications-design-program-curricula

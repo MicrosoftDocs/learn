@@ -32,6 +32,8 @@ products:
 - azure
 - azure-sql-database
 - azure-sql-managed-instance
+subjects:
+- business-continuity
 units:
 - learn.azure-sql-high-availability.1-introduction
 - learn.azure-sql-high-availability.2-backup-restore

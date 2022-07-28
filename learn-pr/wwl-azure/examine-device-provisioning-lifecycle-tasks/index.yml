@@ -31,6 +31,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- device-management
 units:
 - learn.wwl.examine-device-provisioning-lifecycle-tasks.introduction
 - learn.wwl.examine-device-provisioning-lifecycle-tasks.review-device-enrollment-processes-tools

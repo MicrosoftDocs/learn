@@ -29,6 +29,8 @@ roles:
 products: 
 - azure
 - vs-code
+subjects:
+- data-ai
 units:
 - learn.student-evangelism.introduction-python-nasa.1-introduction
 - learn.student-evangelism.introduction-python-nasa.2-artemis

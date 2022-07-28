@@ -32,6 +32,8 @@ products:
 - azure-digital-twins
 - azure-monitor
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.monitor-troubleshoot-adt.introduction
 - learn.wwl.monitor-troubleshoot-adt.examine-azure-digital-twins-metrics

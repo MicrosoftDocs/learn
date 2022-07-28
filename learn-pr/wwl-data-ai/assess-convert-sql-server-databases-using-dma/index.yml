@@ -27,6 +27,8 @@ roles:
 - administrator
 products:
 - sql-server
+subjects:
+- cloud-computing
 units:
 - learn-sqlserver.assess-convert-sql-server-databases-using-dma.1-introduction
 - learn-sqlserver.assess-convert-sql-server-databases-using-dma.2-decide-dma-right-your-task

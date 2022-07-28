@@ -1,11 +1,13 @@
 > [!IMPORTANT]
-> Have access to an existing Azure DevOps project and the connected package feed from the previous demo.
+> Have access to an existing Azure DevOps project and the connected package feed from the previous demo [Create a package feed](/learn/modules/understand-package-management/10-create-package-feed).
 
 ## Steps to demonstrate the views on package feeds in Azure Artifacts
 
 1.  Go to dev.azure.com and open your team project.
-2.  Open **Artifacts** and select the feed **PartsUnlimited.Security**.
-3.  Go to **Settings** and click **Feed Settings**.
+2.  Open **Artifacts** and select the feed **PartsUnlimited**. :::image type="content" source="../media/azure-devops-feed-0c78c191.png" alt-text="Screenshot of PartsUnlimited feed from Artifacts.":::
+    
+3.  Go to **Artifacts** and click **Feed Settings**. :::image type="content" source="../media/azure-devops-feed-settings-d3fe46fe.png" alt-text="Screenshot of PartsUnlimited feed settings from Artifacts.":::
+    
 4.  Open the **Views** tab. By default, there will be three views. Local: includes all packages in the feed and all cached from upstream sources. Prerelease and Release. In the **Default view** column is a check behind Local. It's the default view that will always be used.
 
 ## Steps to use the release view instead

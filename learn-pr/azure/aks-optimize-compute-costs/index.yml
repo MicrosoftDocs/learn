@@ -35,6 +35,10 @@ products:
 - azure
 - azure-kubernetes-service
 - azure-policy
+subjects:
+- cloud-computing
+- storage
+- finance-accounting
 units:
 - learn.aks-optimize-compute-costs.introduction
 - learn.aks-optimize-compute-costs.node-pools

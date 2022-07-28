@@ -90,7 +90,7 @@ You can:
 -   Plan for the cost of an environment using the
     [Azure calculator](https://azure.microsoft.com/pricing/calculator/)
 -   Review current and projected monthly spend in the Azure portal.
--   Set up budgets in Azure Cost Management. This tool can enable you to
+-   Set up budgets in Microsoft Cost Management. This tool can enable you to
     examine your costs at different scopes including management group,
     resource group, and subscription.
 

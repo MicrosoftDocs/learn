@@ -33,6 +33,10 @@ roles:
 products:
   - azure
   - azure-virtual-network
+subjects:
+- cloud-computing
+- networking
+- virtual-machine
 units:
 - learn.azure.intro-to-azure-route-server.1-introduction
 - learn.azure.intro-to-azure-route-server.2-what-azure-route-server

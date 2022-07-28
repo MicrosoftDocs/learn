@@ -6,10 +6,12 @@ Azure helps to make these sorts of challenges easier to solve with Azure Active 
 
 In this module, you will:
 
- -  Create, configure, and manage users
- -  Create, configure, and manage groups
- -  Manage licenses
+- Create, configure, and manage users
+- Create, configure, and manage groups
+- Manage licenses
+- Explore custom security attributes and automatic provisioning 
 
 ## Prerequisites
 
-None
+- Basic understand of identity management
+- Some experience with Active Directory a plus 

@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - windows
+subjects:
+- accessibility
 units:
 - learn-windows.making-inclusive-windows-app.1-introduction
 - learn-windows.making-inclusive-windows-app.2-identify-inclusivity-issues

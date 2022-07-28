@@ -36,6 +36,8 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
 - security-engineer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
 - github
+subjects:
+- security
 units:
 - learn.github-administration-github-advanced-security.introduction
 - learn.github-administration-github-advanced-security.what-is-github-advanced-security

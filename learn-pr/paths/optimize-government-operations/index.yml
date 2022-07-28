@@ -32,6 +32,8 @@ products:
 - azure-vpn-gateway
 - azure-sql-database
 - azure-disk-encryption
+subjects:
+- cloud-computing
 modules:
 - learn.azure.discover-azure-government
 - learn.azure.introduction-data-protection-privacy

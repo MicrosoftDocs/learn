@@ -1,11 +1,11 @@
 Azure Arc enables organizations like Contoso to extend some capabilities of *Azure Policy* to computer operating systems that are in on-premises datacenters or are hosted on another cloud provider. This functionality applies to auditing the compliance of settings for the operating system, applications, and environment. Additionally, Contoso can configure the time zone on servers that are running the Windows Server operating system. 
 
-Contoso IT staff can also use Azure Policy to manage and evaluate compliance for Azure Arc enabled Kubernetes clusters. Enabling this functionality requires that IT staff install the Azure Connected Machine agent on each computer in the scope of management. 
+Contoso IT staff can also use Azure Policy to manage and evaluate compliance for Azure Arc-enabled Kubernetes clusters.
 
 > [!IMPORTANT]
 > Currently, you can only audit settings in this context. Auto-remediation is not yet available.
 
-Contoso could use *Azure Monitor* to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers.
+Contoso could use *Azure Monitor* to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers. Contoso could use Azure Monitor Container Insights to collect health and resource utilization data for their Azure Arc-enabled Kubernetes clusters.
 
 By maintaining their on-premises infrastructures, Contoso could benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, they could monitor resources such as their onboarded servers. For example, they could select **Insights** to review a map of their resources' network connections.
 
@@ -17,11 +17,10 @@ By maintaining their on-premises infrastructures, Contoso could benefit from thi
 
 For example, to simplify the management of policy definitions, Contoso could consider combining multiple policies into initiatives and then create a few initiative assignments instead of multiple policy assignments.
 
-Azure Policy functionality is grouped into four main categories:
+Azure Policy functionality for Arc-enabled servers is grouped into these main categories:
 
 - Enforcing compliance when provisioning new Azure resources
 - Auditing the compliance of existing Azure resources
-- Remediating noncompliance of existing Azure resources
 - Auditing the compliance of the OS, application configuration, and environment settings within Azure VMs
 
 > [!TIP]

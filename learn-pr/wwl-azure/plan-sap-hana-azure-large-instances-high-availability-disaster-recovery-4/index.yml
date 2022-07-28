@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- business-continuity
 units:
 - learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.introduction
 - learn.wwl.plan-sap-hana-azure-large-instances-high-availability-disaster-recovery.explore

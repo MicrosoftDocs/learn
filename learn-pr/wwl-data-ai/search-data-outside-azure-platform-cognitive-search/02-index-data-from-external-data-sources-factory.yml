@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.search-data-outside-azure-platform-cognitive-search.index-data-from-external-data-sources-factory
+title: Index data from external data sources using Azure Data Factory
+metadata:
+  title: Index data from external data sources using Azure Data Factory
+  description: "Index data from external data sources using Azure Data Factory"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/02-index-data-from-external-data-sources-factory.md)]

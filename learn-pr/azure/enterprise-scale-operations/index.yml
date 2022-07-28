@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
 units:
 - learn.azure.enterprise-scale-operations.1-introduction
 - learn.azure.enterprise-scale-operations.2-management-monitoring

@@ -31,6 +31,8 @@ roles:
 products:
 - azure
 - azure-storage
+subjects:
+- storage
 units:
 - learn.azure.secure-azure-storage-account.introduction
 - learn.azure.secure-azure-storage-account.storage-security-features

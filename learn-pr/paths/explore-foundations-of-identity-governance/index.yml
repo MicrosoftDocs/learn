@@ -20,6 +20,10 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- identity-access
+- compliance
+- cloud-computing
 modules:
 - learn.wwl.explore-identity-services
 - learn.wwl.explore-azure-remote-management

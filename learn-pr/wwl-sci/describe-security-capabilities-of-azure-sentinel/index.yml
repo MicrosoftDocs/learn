@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure-sentinel
+subjects:
+- security
 units:
 - learn.wwl.describe-security-capabilities-of-azure-sentinel.introduction
 - learn.wwl.describe-security-capabilities-of-azure-sentinel.define-concepts-of-siem,-soar,-xdr

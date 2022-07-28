@@ -3,7 +3,7 @@ uid: learn.cmu-cloud-admin.secure-cloud-resources
 metadata:
   title: Secure your cloud resources with access control
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about digital identities and how they can be managed and synchronized within an organization.
-  ms.date: 08/15/2019
+  ms.date: 06/07/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -27,6 +27,7 @@ prerequisites: |
   - Understand how cloud resource provisioning works
   - Be familiar with different approaches to organizing cloud resources
 iconUrl: /learn/achievements/cmu-cloud-admin/secure-cloud-resources.svg
+hidden: true
 levels:
 - beginner
 roles:
@@ -34,6 +35,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- identity-access
 units:
 - learn.cmu-cloud-admin.secure-cloud-resources.0-intro
 - learn.cmu-cloud-admin.secure-cloud-resources.1-cloud-identity-management

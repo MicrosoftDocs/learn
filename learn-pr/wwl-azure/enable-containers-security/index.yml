@@ -28,6 +28,8 @@ products:
 - azure
 - azure-container-registry
 - azure-kubernetes-service
+subjects:
+- container
 units:
 - learn.wwl.enable-containers-security.introduction
 - learn.wwl.enable-containers-security.explore-containers

@@ -28,6 +28,8 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- database
 units:
 - learn.wwl.configure-database-authentication-authorization.introduction
 - learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory

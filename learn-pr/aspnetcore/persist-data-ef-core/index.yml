@@ -34,6 +34,8 @@ products:
 - aspnet-core
 - dotnet-core
 - ef-core
+subjects:
+- development-tools
 units:
 - learn.persist-data-ef-core.introduction
 - learn.persist-data-ef-core.understanding-ef-core

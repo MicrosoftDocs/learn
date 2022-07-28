@@ -22,23 +22,20 @@ For all virtual machines that have two or more instances deployed in the same Av
  -  Update domains guarantee that multiple VMs are not rebooted at the same time during the planned maintenance of an Azure infrastructure. Only one VM is rebooted at a time.
  -  Fault domains guarantee that VMs are deployed on hardware components that do not share a common power source and network switch. When servers, a network switch, or a power source undergo an unplanned downtime, only one VM is affected.
 
-Considerations while setting up an Availability Set:
-
- -  Each virtual machine in an Availability Set is assigned an update domain and a fault domain by the underlying Azure platform.
- -  Each Availability Set can be configured with up to 3 fault domains and 20 update domains.
- -  When more than five virtual machines are configured within a single Availability Set, the sixth virtual machine is placed into the same update domain as the first virtual machine, the seventh in the same update domain as the second virtual machine, and so on.
- -  VMs are also aligned with disk fault domains. This alignment ensures that all the managed disks attached to a VM are within the same fault domains.
-
 Availability Sets can be used in the following scenarios in SAP systems:
 
  -  High-availability architecture for SAP application servers
  -  High-availability architecture for an SAP ASCS/SCS instance on Windows &amp; Linux
  -  High-availability DBMS instance
 
-> [!IMPORTANT]
-> -  Availability Sets can have 2 or 3 Fault domains; know when to use each (match your application topology).
-> -  Know the difference in SLA between Availability Set clusters, non-Availability Set clusters, and Availability Zones.
-> -  Be sure to understand the interplay with Proximity Placement Groups.
+Considerations while setting up an Availability Set:
+
+ -  Each virtual machine in an Availability Set is assigned an update domain and a fault domain by the underlying Azure platform.
+ -  Each Availability Sets can have 2 or 3 Fault domains; know when to use each (match your application topology). and 20 update domains.
+ -  When more than five virtual machines are configured within a single Availability Set, the sixth virtual machine is placed into the same update domain as the first virtual machine, the seventh in the same update domain as the second virtual machine, and so on.
+ -  VMs are also aligned with disk fault domains. This alignment ensures that all the managed disks attached to a VM are within the same fault domains.
+ -  Know the difference in SLA between Availability Set clusters, non-Availability Set clusters, and Availability Zones.
+ -  Be sure to understand the interplay with Proximity Placement Groups.
 
 ## Single-VM scenario
 

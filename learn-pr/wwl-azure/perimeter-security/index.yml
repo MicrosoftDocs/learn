@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-ddos-protection
+subjects:
+- security
 units:
 - learn.wwl.perimeter-security.introduction
 - learn.wwl.perimeter-security.defense-depth

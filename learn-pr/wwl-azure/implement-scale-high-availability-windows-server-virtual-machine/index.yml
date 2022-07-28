@@ -39,6 +39,8 @@ products:
 - azure-cloud-shell
 - azure-portal
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm.introduction
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm.describe-virtual-machine-scale-sets

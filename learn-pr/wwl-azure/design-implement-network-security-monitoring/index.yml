@@ -36,6 +36,9 @@ products:
 - azure-traffic-manager
 - azure-virtual-network
 - azure-web-application-firewall
+subjects:
+- networking
+- security
 units:
 - learn.wwl.design-implement-network-security-monitoring.introduction
 - learn.wwl.design-implement-network-security-monitoring.secure-your-virtual-networks-azure-portal

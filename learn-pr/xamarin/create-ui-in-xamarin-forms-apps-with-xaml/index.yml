@@ -27,6 +27,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 units:
 - learn-xamarin.create-ui-in-xamarin-forms-apps-with-xaml.1-introduction
 - learn-xamarin.create-ui-in-xamarin-forms-apps-with-xaml.2-benefits-using-xaml

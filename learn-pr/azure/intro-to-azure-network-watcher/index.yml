@@ -27,6 +27,8 @@ roles:
   - solution-architect
 products:
   - azure-network-watcher
+subjects:
+- networking
 units:
   - learn.azure.intro-to-azure-network-watcher.introduction
   - learn.azure.intro-to-azure-network-watcher.what-is-azure-network-watcher

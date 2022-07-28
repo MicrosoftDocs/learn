@@ -37,6 +37,9 @@ roles:
 products:
 - qdk
 - azure-quantum
+subjects:
+- cloud-computing
+- development-tools
 units:
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing.1-introduction
 - learn.quantum.qsharp-explore-key-concepts-quantum-computing.2-superposition-quantum-computing

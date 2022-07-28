@@ -33,6 +33,8 @@ roles:
 - data-scientist
 products: 
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.student-evangelism.install-code-tools-python-nasa.1-introduction
 - learn.student-evangelism.install-code-tools-python-nasa.2-about-programming-language

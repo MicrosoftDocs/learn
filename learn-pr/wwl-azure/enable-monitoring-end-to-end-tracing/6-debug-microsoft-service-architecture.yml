@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-monitoring-end-to-end-tracing.debug-microsoft-service-architecture
+title: Analyze logs
+metadata:
+  title: Analyze logs
+  description: "Analyze logs"
+  ms.date: 06/08/2022
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-debug-microsoft-service-architecture.md)]

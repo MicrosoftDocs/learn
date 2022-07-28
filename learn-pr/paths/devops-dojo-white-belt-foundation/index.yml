@@ -30,6 +30,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- devops
 modules:
 - learn.wwl.introduce-foundation-pillars-devops
 - learn.wwl.define-foundation-pillars

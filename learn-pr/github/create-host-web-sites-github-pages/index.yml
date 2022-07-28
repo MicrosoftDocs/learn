@@ -3,7 +3,7 @@ uid: learn.github.create-host-web-sites-github-pages
 metadata:
   title: "Create and host web sites by using GitHub Pages"
   description: Learn how to host your personal, organization, and project sites for free with GitHub Pages.
-  ms.date: 06/26/2020
+  ms.date: 05/19/2022
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -33,6 +33,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- development-tools
 units:
 - learn.github.create-host-web-sites-github-pages.1-introduction
 - learn.github.create-host-web-sites-github-pages.2-what-is-github-pages

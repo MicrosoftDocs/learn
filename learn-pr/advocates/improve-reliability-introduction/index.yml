@@ -29,6 +29,8 @@ products:
 - azure
 - azure-devops
 prerequisites: None
+subjects:
+- site-reliability-engineering
 units:
 - learn.improve-reliability-introduction.1-introduction
 - learn.improve-reliability-introduction.2-rationale

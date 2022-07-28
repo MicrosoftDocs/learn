@@ -35,6 +35,8 @@ roles:
 products:
   - azure
   - azure-functions
+subjects:
+- serverless-compute
 units:
   - learn.azure.build-api-azure-functions.1-introduction
   - learn.azure.build-api-azure-functions.2-exercise-setup-project

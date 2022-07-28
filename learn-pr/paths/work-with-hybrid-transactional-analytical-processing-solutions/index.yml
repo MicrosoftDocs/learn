@@ -20,6 +20,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-analytics
 modules:
 - learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics
 - learn.wwl.configure-azure-synapse-link-with-azure-cosmos-db

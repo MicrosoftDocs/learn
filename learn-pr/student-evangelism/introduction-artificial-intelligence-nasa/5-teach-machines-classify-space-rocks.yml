@@ -4,8 +4,8 @@ metadata:
   title: Classify space rocks by using artificial intelligence
   description: Discover the AI process that's used to teach machines how to classify space rocks by type.
   ms.date: 04/11/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

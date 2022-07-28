@@ -24,6 +24,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
 units:
 - learn.azure-well-architected-introduction.1-introduction
 - learn.azure-well-architected-introduction.2-pillars

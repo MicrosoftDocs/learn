@@ -36,6 +36,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
+subjects:
+- iot
 units:
 - learn.wwl.explore-iot-edge-offline-support.introduction
 - learn.wwl.explore-iot-edge-offline-support.configure-iot-edge-gateway-for

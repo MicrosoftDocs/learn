@@ -26,6 +26,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- virtual-machine
 units:
 - learn.wwl.examine-sap-s4hana-azure-virtual-machines.introduction
 - learn.wwl.examine-sap-s4hana-azure-virtual-machines.explore

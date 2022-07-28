@@ -30,6 +30,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- iot
 units:
 - learn.iot.threadx-event-notification.introduction
 - learn.iot.threadx-event-notification.counting-semaphore-mutex-comparison
@@ -42,4 +44,4 @@ units:
 - learn.iot.threadx-event-notification.summary
 
 badge:
-  uid: learn.iot.threadx-event-notification.badge 
+  uid: learn.iot.threadx-event-notification.badge

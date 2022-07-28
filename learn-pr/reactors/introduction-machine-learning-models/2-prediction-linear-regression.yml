@@ -5,8 +5,8 @@ metadata:
   title: 'Prediction: Linear regression'
   description: Learn how to make predictions with linear regressions in machine learning models for data science.
   ms.date: 05/19/2020
-  author: sguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-reactors
   ms.custom: team=nextgen

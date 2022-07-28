@@ -13,9 +13,9 @@ If secrets are created at the organization level, access policies can limit the 
 
 ## Creating secrets for a repository
 
-To create secrets for a repository, you must be the owner of the repository. From the repository **Settings**, choose **Secrets**, then **New Secret**.
+To create secrets for a repository, you must be the repository's owner. From the repository **Settings**, choose **Secrets**, then **New Secret**.
 
-:::image type="content" source="../media/new-secret-5ba1255e.png" alt-text="New Secret":::
+:::image type="content" source="../media/new-secret-5ba1255e.png" alt-text="Screenshot of new secret creation from settings.":::
 
 
 For more information on creating secrets, see [Encrypted secrets](https://docs.github.com/actions/security-guides/encrypted-secrets).

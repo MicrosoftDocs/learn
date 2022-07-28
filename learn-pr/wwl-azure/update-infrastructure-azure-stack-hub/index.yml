@@ -31,6 +31,8 @@ products:
 - azure
 - azure-stack
 - azure-stack-hub
+subjects:
+- cloud-computing
 units:
 - learn.wwl.update-infrastructure-for-azure-stack-hub.introduction
 - learn.wwl.update-infrastructure-for-azure-stack-hub.update

@@ -16,13 +16,13 @@ A rebuild can be either online or offline depending on the command executed or t
 
 The common guidance for index maintenance is:
 
-- **< 5% but < 30%** - Reorganize the index
+- **> 5% but < 30%** - Reorganize the index
 
 - **`>` 30%** - Rebuild the index
 
 Use these numbers as general recommendations. Depending on your workload and data, you may need to be more assertive, or in some cases you may be able to defer index maintenance for databases that mostly perform queries that seek specific pages.
 
-The SQL Server and Azure SQL platforms offer DMVs that allow you to detect fragmentation in your objects. The most commonly used DMVs for this purpose are `sys.dm_db_index_physical_stats` for b-tree indexes, and `sys.dm_db_colum_store_row_group_physical_stats` for columnstore indexes.
+The SQL Server and Azure SQL platforms offer DMVs that allow you to detect fragmentation in your objects. The most commonly used DMVs for this purpose are `sys.dm_db_index_physical_stats` for b-tree indexes, and `sys.dm_db_column_store_row_group_physical_stats` for columnstore indexes.
 
 One other thing to note is that index rebuilds cause the statistics on the index to be updated, which can further help performance. Index reorganization doesn't update statistics.
 

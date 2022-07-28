@@ -46,7 +46,7 @@ To create your DNS zone:
 
    The SOA record represents your domain, and is used when other DNS servers are searching for your domain.
 
-1. Make a note of the NS record values. You need them in the next section.
+1. Make a note of the NS record values. You'll need them in the next section.
 
 ## Create a DNS record
 
@@ -54,7 +54,7 @@ Now that the DNS zone exists, you need to create the necessary records to suppor
 
 The primary record set to create is the A record. The A record set is used to point traffic from a logical domain name to the hosting server's IP address. An A record set can have multiple records. In a record set, the domain name remains constant, while the IP addresses differ.
 
-1. On the **DNS zone** pane for *wideworldimportsXXXX.com*, in the top menu bar, select **Record set**.
+1. On the **DNS zone** pane for *wideworldimportsXXXX.com*, in the top menu bar, select **+ Record set**.
 
     :::image type="content" source="../media/4-add-a-record.png" alt-text="Screenshot of the DNS zone page, with + Record set highlighted." lightbox ="../media/4-add-a-record.png":::
 
@@ -75,11 +75,11 @@ The primary record set to create is the A record. The A record set is used to po
 
     :::image type="content" source="../media/4-arecord.png" alt-text="Screenshot of A record set." lightbox="../media/4-arecord.png":::
 
-Note that it's possible to have more than one IP address set up for your web server. In that case, you add all the associated IP addresses as records in the A record set. After it's created, you can update the record set with additional IP addresses.
+Note that it's possible to have more than one IP address set up for your web server. In that case, you'd add all the associated IP addresses as records in the A record set. After it's created, you can update the record set with additional IP addresses.
 
 ## Verify your global Azure DNS
 
-In a real-world scenario, after you create the public DNS zone, you update the NS records of the domain-name registrar to delegate the domain to Azure.
+In a real-world scenario, after you create the public DNS zone, you'll update the NS records of the domain-name registrar to delegate the domain to Azure.
 
 Even though we don't have a registered domain, it's still possible to verify that the DNS zone works as expected, by using the `nslookup` tool.
 

@@ -3,7 +3,7 @@ uid: learn.wwl.az-400-get-started-devops-transformation-journey
 metadata:
   title: 'AZ-400: Get started on a DevOps transformation journey'
   description: 'AZ-400: Get started on a DevOps transformation journey'
-  ms.date: 03/28/2022
+  ms.date: 05/26/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -35,6 +35,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 modules:
 - learn.wwl.introduction-to-devops
 - learn.wwl.choose-right-project
@@ -43,5 +45,6 @@ modules:
 - learn.wwl.introduction-to-source-control
 - learn.wwl.describe-types-of-source-control-systems
 - learn.wwl.work-azure-repos-github
+- learn.wwl.plan-agile-github-projects-azure-boards
 trophy:
   uid: learn.wwl.az-400-get-started-devops-transformation-journey.trophy

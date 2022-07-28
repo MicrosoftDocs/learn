@@ -25,6 +25,8 @@ roles:
 products:
 - azure
 - azure-security-center
+subjects:
+- threat-protection
 units:
 - learn.azure-security.identify-threats-with-azure-security-center.introduction
 - learn.azure-security.identify-threats-with-azure-security-center.security-center-tiers

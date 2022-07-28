@@ -36,6 +36,8 @@ products:
 - azure-iot
 - azure-iot-hub
 
+subjects:
+- iot
 units:
 - learn.iot.threadx-next-steps.overview
 - learn.iot.threadx-next-steps.azure-real-time-operating-system-components
@@ -43,4 +45,4 @@ units:
 - learn.iot.threadx-next-steps.threadx-online-book
 - learn.iot.threadx-next-steps.summary
 badge:
-  uid: learn.iot.threadx-next-steps.badge 
+  uid: learn.iot.threadx-next-steps.badge

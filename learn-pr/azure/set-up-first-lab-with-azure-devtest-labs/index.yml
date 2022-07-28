@@ -30,6 +30,8 @@ products:
 - azure
 - azure-devtest-labs
 - azure-portal
+subjects:
+- virtual-machine
 units:
 - learn.setup-first-lab-using-azure-devtest-labs.introduction
 - learn.setup-first-lab-using-azure-devtest-labs.configure-development-lab

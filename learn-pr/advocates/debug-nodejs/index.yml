@@ -27,6 +27,8 @@ products:
 - azure
 prerequisites: |
   - Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)
+subjects:
+- development-tools
 units:
 - learn.azure.debug-nodejs.1-introduction
 - learn.azure.debug-nodejs.2-debugger

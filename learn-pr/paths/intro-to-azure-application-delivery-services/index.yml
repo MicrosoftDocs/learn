@@ -23,6 +23,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-azure-load-balancer
 - learn.distribute-load-with-traffic-manager

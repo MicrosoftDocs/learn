@@ -3,7 +3,7 @@ uid: learn.wwl.design-migrations
 metadata:
   title: Design migrations
   description: "Azure Architects design and recommend migration solutions."
-  ms.date: 04/20/2022
+  ms.date: 06/28/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -31,6 +31,8 @@ products:
 - azure-data-box-family
 - azure-database-migration
 - azure-migrate
+subjects:
+- migration
 units:
 - learn.wwl.design-migrations.introduction
 - learn.wwl.design-migrations.evaluate-migration-cloud-adoption-framework

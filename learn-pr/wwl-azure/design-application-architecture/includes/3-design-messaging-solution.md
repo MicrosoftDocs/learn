@@ -25,7 +25,7 @@ Microsoft Azure Service Bus is a fully managed enterprise message broker with me
 
 ### What are Azure Service Bus Queues?
 
-[Azure Service Bus queues](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) is is a message broker system built on top of a dedicated messaging infrastructure. Like Azure queues, Service Bus holds messages until the target is ready to receive them. 
+[Azure Service Bus queues](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions) is a message broker system built on top of a dedicated messaging infrastructure. Like Azure queues, Service Bus holds messages until the target is ready to receive them. 
 
 :::image type="content" source="../media/service-bus-queue.png" alt-text="A graphic depicts a sender and receiver communicating through a Message Queue.":::
 
@@ -43,7 +43,7 @@ For example, suppose a user is listening to a song using a music-sharing applica
 
 ## Which messaging service should I choose?
 
-Each messaging product has a slightly different feature set. This which means you can choose one or the other or use both. It depends on the problem you’re solving.
+Each messaging product has a slightly different feature set. This means you can choose one or the other or use both. It depends on the problem you’re solving.
 
 Use Azure Queue storage if you need/have:
 
@@ -69,7 +69,7 @@ Use Azure Service Bus queues if you need/have:
 
 - To handle messages larger than 64 KB but less than 256 KB.
 
-- Queue size will not grow larger than 80 GB..
+- Queue size will not grow larger than 80 GB.
 
 - To publish and consume batches of messages.
 

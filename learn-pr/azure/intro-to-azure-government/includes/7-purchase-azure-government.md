@@ -1,6 +1,6 @@
 Azure Government is available to U.S. federal, state, local, or tribal government entities and their solution providers. If you&#39;re not ready to buy yet, you can apply for an Azure Government 90-day trial.
 
-### Azure Goverment onboarding overview
+### Azure Government onboarding overview
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2FKJG]
 
@@ -26,13 +26,13 @@ Many large organizations have multiple cloud licenses with multiple providers, a
 
 ### Pay-As-You-Go subscriptions
 
-With a Pay-As-You-Go subscription, you pay only for what you use with no minimums, scaling up or down on the fly. Pay with a credit card with easy monthly billing or invoicing and cancel anytime. To get started, request a trial. When you&#39;re ready, you can add a credit card to your account. Customers choosing a Pay-As-You-Go subscription for Azure Government gain the benefits of immediate and direct billing with no monetary commitment. Pay-As-You-Go subscriptions receive the same service level agreement (SLA) as other license types, but do not include the benefits of the Azure Enterprise Portal or the value-added services that partners can provide. You can set up multiple billing containers/separate accounts to help your agency manage spending across cost centers.
+With a Pay-As-You-Go subscription, you pay only for what you use with no minimums, scaling up or down on the fly. Pay with a credit card with easy monthly billing or invoicing and cancel anytime. To get started, request a trial. When you&#39;re ready, you can add a credit card to your account. Customers who choose a Pay-As-You-Go subscription for Azure Government gain the benefits of immediate and direct billing with no monetary commitment. Pay-As-You-Go subscriptions receive the same service level agreement (SLA) as other license types, but do not include the benefits of the Azure Enterprise Portal or the value-added services that partners can provide. You can set up multiple billing containers/separate accounts to help your agency manage spending across cost centers.
 
 ### Purchasing through a Cloud Solution Provider (CSP)
 
- With a Cloud Solution Provider (CSP), you benefit from a partner who can build custom solutions on Azure Government and provide a single bill for both your Azure Government usage and any additional value-added services. The CSP program is a great fit for the US public sector where partners already build, deploy, and manage solutions on behalf of federal, state, local, and tribal entities. You can find a current list of Azure Government CSPs at [https://docs.microsoft.com/azure/azure-government/documentation-government-csp-list](/azure/azure-government/documentation-government-csp-list).
+With a Cloud Solution Provider (CSP), you benefit from a partner who can build custom solutions on Azure Government and provide a single bill for both your Azure Government usage and any additional value-added services. The CSP program is a great fit for the US public sector where partners already build, deploy, and manage solutions on behalf of federal, state, local, and tribal entities. You can find a current list of Azure Government CSPs at [https://docs.microsoft.com/azure/azure-government/documentation-government-csp-list](/azure/azure-government/documentation-government-csp-list).
 
-Customers choosing to purchase Azure Government through a CSP gain the added value of a service provider who understands government requirements and can help you plan, build, deploy, and manage solutions. CSPs can help you navigate the purchasing process and may provide flexibility on billing that better aligns to your reporting needs.
+Customers who choose to purchase Azure Government through a CSP gain the added value of a service provider who understands government requirements and can help you plan, build, deploy, and manage solutions. CSPs can help you navigate the purchasing process and may provide flexibility on billing that better aligns to your reporting needs.
 
 If you are already working with a CSP, this channel may minimize the need for a net new procurement process. In addition, many of the CSPs in the list above offer customized support options for government customers. You can find a current list of available services through the CSP program at [https://docs.microsoft.com/azure/cloud-solution-provider/overview/azure-csp-available-services](/azure/cloud-solution-provider/overview/azure-csp-available-services).
 

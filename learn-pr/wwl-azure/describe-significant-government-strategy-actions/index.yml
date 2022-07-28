@@ -26,6 +26,9 @@ roles:
 - business-owner
 products:
 - azure-sovereign-us
+subjects:
+- cloud-computing
+- information-protection-governance
 units:
 - learn.wwl.describe-significant-government-strategy-actions.introduction
 - learn.wwl.describe-significant-government-strategy-actions.understand-e-government-act-of-2002

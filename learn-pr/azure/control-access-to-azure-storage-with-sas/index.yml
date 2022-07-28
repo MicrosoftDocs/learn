@@ -28,6 +28,9 @@ roles:
 - administrator
 products:
 - azure
+subjects:
+- storage
+- identity-access
 units:
 - learn.control-access-to-azure-storage-with-sas.1-introduction
 - learn.control-access-to-azure-storage-with-sas.2-authorization-options-azure-storage

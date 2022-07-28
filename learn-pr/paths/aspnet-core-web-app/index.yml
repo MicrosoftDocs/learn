@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.aspnet-core-web-app
+metadata:
+  title: Build web apps with ASP.NET Core for beginners
+  description: Get started with web development using ASP.NET Core. In this beginner-friendly pathway, you'll learn the basics of C#, HTML, Razor Pages, and more!
+  ms.date: 05/16/2022
+  author: katiesavage
+  ms.author: katiesavage
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Build web apps with ASP.NET Core for beginners
+summary: Get started with web development using ASP.NET Core. In this beginner-friendly pathway, you'll learn the basics of C#, HTML, Razor Pages, and more! 
+prerequisites: |
+  - Local installation of [.NET SDK](https://dotnet.microsoft.com/download)
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+  - dotnet
+  - aspnet-core
+  - vs-code
+  - azure
+subjects:
+- custom-app-development
+modules:
+- learn.languages.csharp-write-first
+- learn-windows.introduction-to-web-development
+- learn.student-evangelism.web-development-101.accessibility
+- learn.create-razor-pages-aspnet-core
+- learn.build-web-api-net-core
+- learn.publish-azure-web-app-with-visual-studio
+trophy:
+  uid: learn.aspnet-core-web-app.trophy

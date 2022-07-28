@@ -28,6 +28,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- infrastructure
 units:
 - learn.wwl.explore-azure-compute.introduction
 - learn.wwl.explore-azure-compute.plan-for-implementing-sap-solutions

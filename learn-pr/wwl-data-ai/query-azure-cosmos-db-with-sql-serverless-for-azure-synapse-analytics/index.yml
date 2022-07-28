@@ -25,6 +25,8 @@ roles:
 - data-engineer
 products:
 - azure-synapse-analytics
+subjects:
+- data-analytics
 units:
 - learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.introduction
 - learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.write-basic-queries-against-single-container

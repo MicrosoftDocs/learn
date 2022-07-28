@@ -32,6 +32,8 @@ products:
 - azure-iot-hub
 - azure-iot-sdk
 - azure-logic-apps
+subjects:
+- iot
 units:
 - learn.wwl.examine-business-integration-for-iot-solutions.introduction
 - learn.wwl.examine-business-integration-for-iot-solutions.review-contributing-roles-for

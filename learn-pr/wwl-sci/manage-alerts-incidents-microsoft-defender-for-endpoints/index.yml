@@ -24,6 +24,8 @@ roles:
 - security-operations-analyst
 products:
 - m365
+subjects:
+- security
 units:
 - learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.introduction
 - learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.understand-security-operations-endpoint

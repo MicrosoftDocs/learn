@@ -39,6 +39,8 @@ roles:
 products:
 - azure
 - vs-code
+subjects:
+- data-modeling
 units:
 - learn.language.typescript-declare-instantiate-classes.1-introduction
 - learn.language.typescript-declare-instantiate-classes.2-introduction-classes-typescript
@@ -55,4 +57,4 @@ units:
 - learn.language.typescript-declare-instantiate-classes.13-knowledge-check
 - learn.language.typescript-declare-instantiate-classes.14-summary-resources
 badge:
-  uid: learn.language.typescript-declare-instantiate-classes.badge 
+  uid: learn.language.typescript-declare-instantiate-classes.badge

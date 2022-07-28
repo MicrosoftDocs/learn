@@ -27,6 +27,8 @@ roles:
 - data-engineer
 products:
 - power-bi
+subjects:
+- data-analytics
 units:
 - learn.wwl.create-calculation-groups.introduction
 - learn.wwl.create-calculation-groups.understand

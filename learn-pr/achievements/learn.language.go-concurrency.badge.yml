@@ -1,0 +1,5 @@
+### YamlMime:AchievementDetail
+achievementUid: learn.language.go-concurrency.badge
+metadata:
+  title: 'Microsoft Badge: Learn how concurrency works in Go was issued by Microsoft'
+socialImageUrl: /learn/achievements/go/go-concurrency-social.png

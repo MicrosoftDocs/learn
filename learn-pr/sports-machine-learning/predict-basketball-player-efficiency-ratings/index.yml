@@ -32,6 +32,8 @@ roles:
 - student
 products:
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.student-evangelism.predict-basketball-player-efficiency-ratings.1-introduction
 - learn.student-evangelism.predict-basketball-player-efficiency-ratings.2-set-up-local-environment

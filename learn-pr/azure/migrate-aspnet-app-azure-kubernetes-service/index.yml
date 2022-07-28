@@ -29,6 +29,9 @@ products:
 - azure
 - azure-migrate
 - azure-kubernetes-service
+subjects:
+- container
+- migration
 units:
 - learn.azure.migrate-aspnet-app-azure-kubernetes-service.introduction
 - learn.azure.migrate-aspnet-app-azure-kubernetes-service.containerization-overview

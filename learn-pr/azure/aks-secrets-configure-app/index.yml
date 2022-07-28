@@ -34,6 +34,8 @@ products:
 - azure
 - azure-kubernetes-service
 - azure-app-configuration
+subjects:
+- security
 units:
 - learn.aks-secrets-configure-app.1-introduction
 - learn.aks-secrets-configure-app.2-concept-secrets

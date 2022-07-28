@@ -26,6 +26,8 @@ roles:
 - support-engineer
 products:
 - azure-app-service
+subjects:
+- cloud-computing
 units:
 - learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.introduction
 - learn.wwl.troubleshoot-web-app-down-scenarios-app-service-diagnostics.troubleshoot-downtimes

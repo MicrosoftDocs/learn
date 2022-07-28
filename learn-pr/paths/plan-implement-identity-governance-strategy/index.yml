@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 modules:
 - learn.wwl.plan-implement-entitlement-management
 - learn.wwl.plan-implement-manage-access-review

@@ -31,6 +31,8 @@ products:
 - azure-portal
 - azure-clis
 - azure-resource-manager
+subjects:
+- device-management
 units:
 - learn.azure.management-fundamentals.introduction
 - learn.azure.management-fundamentals.identify-product-options

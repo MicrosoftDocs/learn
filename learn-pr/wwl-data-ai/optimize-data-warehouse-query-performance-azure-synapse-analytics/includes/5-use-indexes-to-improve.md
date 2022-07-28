@@ -4,11 +4,15 @@ Dedicated SQL Pools have the following indexing options available:
 
 ## Clustered columnstore index
 
-Dedicated SQL Pools create a clustered columnstore index when no index options are specified on a table. Clustered columnstore indexes offer both the highest level of data compression as well as the best overall query performance. Clustered columnstore indexes will generally outperform clustered rowstore indexes or heap tables and are usually the best choice for large tables.
+Dedicated SQL Pools create a clustered columnstore index when no index options are specified on a table and allows for the use of adaptive caching. Clustered columnstore indexes offer both the highest level of data compression as well as the best overall query performance. Clustered columnstore indexes will generally outperform clustered rowstore indexes or heap tables and are usually the best choice for large tables.
 
-Additional compression on the data can be gained also with the index option COLUMNSTORE_ARCHIVE. These reduced sizes allow less memory to be used when accessing and using the data as well as reducing the IOPs required to retrieve data from storage.
+Columnstore works on segments of 1,048,576 rows that get compressed and optimized by column. This segmentation further helps to filter out and reduce the data accessed through leveraging metadata stored which summarizes the range and values within each segment during query optimization.
 
-Columnstore works on segments of 1,024,000 rows that get compressed and optimized by column. This segmentation further helps to filter out and reduce the data accessed through leveraging metadata stored which summarizes the range and values within each segment during query optimization.
+### Considerations for when clustered columnstore indexes may not be a good option 
+
+1. Columnstore tables do not support varchar(max), nvarchar(max), and varbinary(max). Consider heap or clustered index instead.
+2. Columnstore tables may be less efficient for transient data. Consider heap and perhaps even temporary tables.
+3. Small tables with less than 60 million rows. Consider heap tables.
 
 ## Clustered index
 

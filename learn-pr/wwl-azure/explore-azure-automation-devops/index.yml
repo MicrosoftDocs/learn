@@ -40,6 +40,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.explore-azure-automation-devops.introduction
 - learn.wwl.explore-azure-automation-devops.create-automation-accounts

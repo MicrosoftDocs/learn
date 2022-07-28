@@ -28,6 +28,8 @@ roles:
 - data-engineer
 products:
 - azure
+subjects:
+- storage
 units:
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.introduction
 - learn.wwl.explore-provision-deploy-non-relational-data-services-azure.azure-blob-storage

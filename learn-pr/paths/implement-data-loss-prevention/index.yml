@@ -24,6 +24,8 @@ roles:
 products:
 - m365
 - m365-information-protection
+subjects:
+- security
 modules:
 - learn-m365.m365-compliance-information-prevent-data-loss
 - learn.wwl.create-configure-data-loss-prevention-policies

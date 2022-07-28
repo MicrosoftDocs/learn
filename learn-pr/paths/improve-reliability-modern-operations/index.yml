@@ -26,6 +26,8 @@ roles:
 - technology-manager
 products: 
 - azure
+subjects:
+- modern-work
 modules:
 - learn.improve-reliability-introduction
 - learn.improve-reliability-monitoring

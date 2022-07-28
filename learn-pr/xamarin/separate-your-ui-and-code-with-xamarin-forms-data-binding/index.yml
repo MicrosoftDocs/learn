@@ -25,6 +25,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- development-tools
 units:
 - learn-xamarin.separate-your-ui-and-code-with-xamarin-forms-data-binding.1-introduction
 - learn-xamarin.separate-your-ui-and-code-with-xamarin-forms-data-binding.2-use-databinding-in-xamarin-forms

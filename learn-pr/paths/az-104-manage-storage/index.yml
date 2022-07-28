@@ -58,7 +58,7 @@ prerequisites:   |
   - [Azure Fundamentals Part 3: Describe core solutions and management tools on Azure](../az-900-describe-core-solutions-management-tools-azure/index.yml)
   - [Azure Fundamentals Part 4: Describe general security and network security features](../az-900-describe-general-security-network-security-features/index.yml)
   - [Azure Fundamentals Part 5: Describe identity, governance, privacy, and compliance features](../az-900-describe-identity-governance-privacy-compliance-features/index.yml)
-  - [Azure Fundamentals Part 6: Describe Azure cost management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
+  - [Azure Fundamentals Part 6: Describe Microsoft Cost Management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
   - [AZ-104: Prerequisites for Azure administrators](../az-104-administrator-prerequisites/index.yml)
 iconUrl: /learn/achievements/az-104-manage-storage.svg
 levels:
@@ -73,6 +73,8 @@ products:
 - azure-blob-storage
 - azure-files
 - azure-virtual-machines
+subjects:
+- storage
 modules:
 - learn.wwl.configure-storage-accounts
 - learn.wwl.configure-blob-storage

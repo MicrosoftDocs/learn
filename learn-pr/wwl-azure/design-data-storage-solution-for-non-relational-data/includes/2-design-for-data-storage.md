@@ -27,7 +27,7 @@ In Azure, non-relational data is contained in several different storage data obj
 :::image type="content" source="../media/non-relational-data-types.png" alt-text="Blobs, files, disks, and queues.":::
 
 
-**Azure Blob storage** is an object store used for storing vast amounts unstructured data. Blob stands for Binary Large Object, which includes objects such as images and multimedia files.
+**Azure Blob storage** is an object store used for storing vast amounts of unstructured data. Blob stands for Binary Large Object, which includes objects such as images and multimedia files.
 
 **Azure Files** is a shared storage service. You can access files with Server Message Block (SMB) on Windows or Network File Share (NFS) on Linux.
 

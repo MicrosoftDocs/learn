@@ -23,6 +23,8 @@ products:
 - azure-virtual-machines
 - azure-portal
 - azure-cloud-shell
+subjects:
+- virtual-machine
 modules:
 - learn.introduction-to-azure-virtual-machines
 - learn.create-linux-vm-in-azure

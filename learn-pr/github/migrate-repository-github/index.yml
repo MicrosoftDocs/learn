@@ -30,6 +30,8 @@ roles:
 products:
 - github
 - azure
+subjects:
+- migration
 units:
 - learn.github.migrate-repository-github.1-introduction
 - learn.github.migrate-repository-github.2-how-to-migrate-to-github

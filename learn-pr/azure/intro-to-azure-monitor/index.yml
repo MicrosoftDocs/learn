@@ -119,6 +119,8 @@ products:
 ###
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to <product>" module pattern
 ###
+subjects:
+- infrastructure
 units:
 - learn.azure.intro-to-azure-monitor.introduction
 - learn.azure.intro-to-azure-monitor.what-is-azure-monitor

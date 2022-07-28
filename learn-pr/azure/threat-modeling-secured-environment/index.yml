@@ -34,6 +34,9 @@ products:
 - azure-security-center
 - m365-security-center
 - m365-ems-cloud-app-security
+subjects:
+- threat-protection
+- virtual-machine
 units:
 - learn.azure.threat-modeling-secured-environment.1-introduction
 - learn.azure.threat-modeling-secured-environment.2-assessment-questions

@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-container-instances
+subjects:
+- container
 units:
 - learn.wwl.create-run-container-images-azure-container-instances.introduction
 - learn.wwl.create-run-container-images-azure-container-instances.explore

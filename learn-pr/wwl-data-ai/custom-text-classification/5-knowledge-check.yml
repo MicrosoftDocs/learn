@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.custom-text-classification.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/27/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want to train a model to classify book summaries by their genre, and some of your favorite books are both mystery and thriller. Which type of project should you build?"
+    choices:
+    - content: "A single label classification project"
+      isCorrect: false
+      explanation: "That answer's incorrect. Use a multiple label classification project to label books as both mystery and thriller."
+    - content: "A multiple label classification project"
+      isCorrect: true
+      explanation: "That answer's correct. Use a multiple label classification project to label books as multiple genres."
+    - content: "A varied label classification project"
+      isCorrect: false
+      explanation: "That answer's incorrect. Use a multiple label classification project to label books as both mystery and thriller."
+  - content: "You just got notification your training job is complete. What is your next step?"
+    choices:
+    - content: "Tag more data"
+      isCorrect: false
+      explanation: "That answer's incorrect. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
+    - content: "Deploy your model"
+      isCorrect: false
+      explanation: "That answer's incorrect. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
+    - content: "View your model details"
+      isCorrect: true
+      explanation: "That answer's correct. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
+  - content: "You want to submit a classification task via the API. How do you get the results of the classification?"
+    choices:
+    - content: "The result is in the response of the classification request."
+      isCorrect: false
+      explanation: "That answer's incorrect. Get the value from the `operation-location` header in the request response, and use that to retrieve the results of the classification request."
+    - content: "Call an endpoint with your deployment name to get the most recent classification."
+      isCorrect: false
+      explanation: "That answer's incorrect. Get the value from the `operation-location` header in the request response, and use that to retrieve the results of the classification request."
+    - content: "Call the URL provided in the header of the request response."
+      isCorrect: true
+      explanation: "That answer's correct. Get the value from the `operation-location` header in the request response, and use that to retrieve the results of the classification request."

@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- security
 units:
 - learn.wwl.describe-security-management-capabilities-of-azure.introduction
 - learn.wwl.describe-security-management-capabilities-of-azure.describe-cloud-security-posture-management-cspm

@@ -23,6 +23,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- identity-access
 modules:
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 - learn.wwl.implement-monitor-integration-of-enterprise-apps-for-sso

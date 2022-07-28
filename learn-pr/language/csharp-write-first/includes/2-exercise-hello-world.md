@@ -8,7 +8,7 @@ There's a long standing tradition among software developers to print the phrase 
 
 The .NET Editor and output pane provide a great in-browser experience that's perfect for this tutorial approach. The .NET Editor is located on the right-hand side of this web page. The output pane is below it.
 
-Later, you'll graduate to use either Visual Studio Code, or the full Visual Studio IDE to build larger and more interesting code examples -- even entire applications.
+Later, you'll graduate to use either Visual Studio Code, or the full Visual Studio IDE to build larger and more interesting code examples--even entire applications.
 
 Enter this code into the .NET Editor on the right:
 
@@ -90,7 +90,7 @@ Assuming you were successful in the previous steps, let's continue.
 
 ### Step 4: Comment out the previous line of code, then add new lines of code in the .NET Editor to print a new message
 
-Modify the code you wrote so that it is prefixed by a code comment using two forward slashes `// `, and add new lines of code to match the following code snippet:
+Modify the code you wrote so that it's prefixed by a code comment using two forward slashes `// `, and add new lines of code to match the following code snippet:
 
 ```csharp-interactive
 // Console.WriteLine("Hello World!");

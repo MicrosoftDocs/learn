@@ -29,6 +29,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 units:
 - learn.azure.hunt-threats-sentinel.1-introduction
 - learn.azure.hunt-threats-sentinel.2-exercise-setup

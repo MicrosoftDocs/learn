@@ -20,6 +20,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- digital-application-innovation
 modules:
 - learn.wwl.write-scripts-for-azure-cosmos-db-sql-api
 - learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api

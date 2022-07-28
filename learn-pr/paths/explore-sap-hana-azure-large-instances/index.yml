@@ -20,6 +20,10 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- data-management
+- cache
+- cloud-computing
 modules:
 - learn.wwl.identify-sap-hana-azure-large-instances-certified-offerings
 - learn.wwl.examine-sap-hana-azure-large-instances-sample-architecture

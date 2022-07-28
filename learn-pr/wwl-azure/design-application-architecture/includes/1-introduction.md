@@ -32,7 +32,7 @@ After completing this module, you’ll be able to:
 
 - Design a messaging solution.
 
-- Design an event hub messaging solution. 
+- Design an event hubs messaging solution. 
 
 - Design an event-driven solution.
 

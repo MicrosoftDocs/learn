@@ -26,6 +26,8 @@ roles:
 products:
 - azure
 - azure-vm-scalesets
+subjects:
+- virtual-machine
 units:
 - learn.introduction-to-azure-virtual-machine-scale-sets.introduction
 - learn.introduction-to-azure-virtual-machine-scale-sets.what-are-azure-virtual-machine-scale-sets

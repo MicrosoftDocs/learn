@@ -33,6 +33,8 @@ roles:
 - developer
 products:
 - azure-cognitive-services
+subjects:
+- artificial-intelligence
 units:
 - learn.wwl.build-qna-solution-qna-maker.introduction
 - learn.wwl.build-qna-solution-qna-maker.understand

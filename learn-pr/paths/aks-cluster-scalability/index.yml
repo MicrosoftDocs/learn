@@ -30,6 +30,9 @@ roles:
 - student
 products:
 - azure
+subjects:
+- development-tools
+- cloud-computing
 modules:
 - learn.aks-application-autoscaling-native
 - learn.aks-app-scaling-keda

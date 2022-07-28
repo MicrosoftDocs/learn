@@ -22,6 +22,8 @@ products:
 - azure-portal
 - azure-storage
 - azure-virtual-machines
+subjects:
+- data-engineering
 modules:
 - learn.data-ai.evolving-world-of-data
 - learn.data-ai.survey-the-azure-data-platform

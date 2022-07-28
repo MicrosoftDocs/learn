@@ -36,6 +36,8 @@ products:
 - azure-cloud-shell
 - azure-monitor
 - azure-portal
+subjects:
+- security
 modules:
 - learn.wwl.manage-hybrid-workloads-with-azure-arc
 - learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances

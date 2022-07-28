@@ -23,6 +23,8 @@ roles:
 products:
   - vs
 prerequisites: None
+subjects:
+- devops
 units:
   - learn.student-evangelism.create-git-project.introduction
   - learn.student-evangelism.create-git-project.exercise-start-project

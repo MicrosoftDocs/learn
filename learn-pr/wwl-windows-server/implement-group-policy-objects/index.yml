@@ -33,6 +33,9 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- cloud-computing
+- data-management
 units:
 - learn.wwl.implement-group-policy-objects.introduction
 - learn.wwl.implement-group-policy-objects.define-gpos

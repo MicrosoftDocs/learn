@@ -24,6 +24,8 @@ roles:
 - student
 products:
 - azure-form-recognizer
+subjects:
+- artificial-intelligence
 modules:
 - learn.wwl.read-text-images-documents-with-computer-vision-service
 - learn.wwl.work-with-form-recognizer

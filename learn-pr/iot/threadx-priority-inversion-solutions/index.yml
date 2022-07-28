@@ -31,6 +31,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- cloud-computing
 units:
 - learn.iot.threadx-priority-inversion-solutions.introduction
 - learn.iot.threadx-priority-inversion-solutions.overview
@@ -43,5 +45,4 @@ units:
 - learn.iot.threadx-priority-inversion-solutions.knowledge-check
 - learn.iot.threadx-priority-inversion-solutions.summary
 badge:
-  uid: learn.iot.threadx-priority-inversion-solutions.badge 
-
+  uid: learn.iot.threadx-priority-inversion-solutions.badge

@@ -31,15 +31,15 @@ quiz:
     - content: >
           `br:MyToyCompany/mymodule:v1.0`
       isCorrect: false
-      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName/ModuleName:Tag`.
+      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName:ModuleName:Tag`.
     - content:  >
-          `br/MyToyCompany/mymodule:v1.0`
+          `br/MyToyCompany:mymodule:v1.0`
       isCorrect: true
       explanation: Correct. This is the correct syntax to refer to a module with a registry alias.
     - content: >
           `br::MyToyCompany/mymodule:v1.0`
       isCorrect: false
-      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName/ModuleName:Tag`.
+      explanation: Incorrect. When you work with a registry alias, you need to use the format `br/AliasName:ModuleName:Tag`.
   - content: In which of these situations should you publish a new version of your module to a private registry?
     choices:
     - content: You add some comments to your module.

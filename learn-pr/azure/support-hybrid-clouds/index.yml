@@ -27,7 +27,9 @@ products:
 - azure
 - azure-stack-hub
 - azure-stack-edge
-units: 
+subjects:
+- classification-analysis
+units:
 - learn.azure.support-hybrid-clouds.1-introduction
 - learn.azure.support-hybrid-clouds.2-secure-stack-hub
 - learn.azure.support-hybrid-clouds.3-share-securely-stack

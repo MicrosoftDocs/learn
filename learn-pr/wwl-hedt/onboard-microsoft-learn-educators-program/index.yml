@@ -30,6 +30,8 @@ products:
 - azure-security-center
 - dynamics-365
 - dynamics-customer-service
+subjects:
+- modern-work
 units:
 - learn.wwl.onboard-microsoft-learn-educators-program.introduction
 - learn.wwl.onboard-microsoft-learn-educators-program.tour-microsoft-learn-educators-page

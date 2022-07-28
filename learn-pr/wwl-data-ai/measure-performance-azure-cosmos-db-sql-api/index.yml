@@ -3,7 +3,7 @@ uid: learn.wwl.measure-performance-azure-cosmos-db-sql-api
 metadata:
   title: Measure performance in Azure Cosmos DB SQL API
   description: "We will learn to use Azure Monitor to create and analyze monitoring data for Azure Cosmos DB."
-  ms.date: 01/12/2022
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -26,6 +26,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-management
 units:
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api.introduction
 - learn.wwl.measure-performance-azure-cosmos-db-sql-api.understand-azure-monitor

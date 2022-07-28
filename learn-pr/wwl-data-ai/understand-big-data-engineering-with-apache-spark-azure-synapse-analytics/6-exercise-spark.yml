@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-analytics.exercise-spark
+title: Exercise - Analyze data with Spark
+metadata:
+  title: Exercise - Analyze data with Spark
+  description: "Exercise - Analyze data with Spark"
+  ms.date: 05/31/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-spark.md)]

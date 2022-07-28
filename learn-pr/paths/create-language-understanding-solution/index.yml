@@ -25,6 +25,8 @@ roles:
 products:
 - azure-cognitive-services
 - azure-language-understanding
+subjects:
+- natural-language-processing
 modules:
 - learn.wwl.create-language-understanding-app
 - learn.wwl.publish-use-language-understanding-app

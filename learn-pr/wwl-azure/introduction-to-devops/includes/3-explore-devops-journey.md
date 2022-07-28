@@ -16,7 +16,6 @@ Remember, the goal is to shorten cycle time. Start with the release pipeline. Ho
 
 
 4.  Use Agile planning and lean project management techniques to:
-    
      -  Plan and isolate work into sprints.
      -  Manage team capacity and help teams quickly adapt to changing business needs.
      -  A DevOps Definition of Done is working software collecting telemetry against the intended business goals.

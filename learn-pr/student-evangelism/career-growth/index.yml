@@ -26,6 +26,8 @@ roles:
   - student
 products:
   - vs-code 
+subjects:
+- modern-life
 units:
 - learn.career-growth.introduction
 - learn.career-growth.networking

@@ -26,7 +26,7 @@ If you want to go through just this module, you need to set up a development env
 - An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure DevOps for free.

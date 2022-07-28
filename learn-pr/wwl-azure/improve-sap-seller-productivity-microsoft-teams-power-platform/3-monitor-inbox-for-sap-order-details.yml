@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.monitor-inbox-for-sap-order-details
+title: Monitor inbox for SAP order details
+metadata:
+  title: Monitor inbox for SAP order details
+  description: "Monitor inbox for SAP order details"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-monitor-inbox-for-sap-order-details.md)]

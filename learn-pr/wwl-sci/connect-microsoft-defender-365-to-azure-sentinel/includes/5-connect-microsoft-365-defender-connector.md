@@ -1,14 +1,7 @@
-The Microsoft 365 Defender connector lets you stream advanced hunting logs - a type of raw event data - from Microsoft 365 Defender into Microsoft Sentinel.
+Microsoft Sentinel's Microsoft 365 Defender connector with incident integration, allows you to stream all Microsoft 365 Defender incidents and alerts into Microsoft Sentinel, and keeps the incidents synchronized between both portals. Microsoft 365 Defender incidents include all their alerts, entities, and other relevant information. They're grouped together, and are enriched by, alerts from Microsoft 365 Defender's component services, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Office 365, and Microsoft Defender for Cloud Apps.
 
-With the integration of Microsoft Defender for Endpoint into the Microsoft 365 Defender security umbrella, you can collect your Microsoft Defender for Endpoint advanced hunting events using the Microsoft 365 Defender connector and stream them straight into new purpose-built tables in your Microsoft Sentinel workspace. These tables are built on the same schema that is used in the Microsoft 365 Defender portal, giving you complete access to the full set of advanced hunting logs and allowing you to do the following:
+The connector also lets you stream advanced hunting events from all of the above components into Microsoft Sentinel. This allows you to copy those Defender components' advanced hunting queries into Microsoft Sentinel, enrich Sentinel alerts with the Defender components' raw event data to provide more insights, and store the logs with increased retention in Log Analytics.
 
-- Easily copy your existing Microsoft Defender advanced hunting queries into Microsoft Sentinel.
-
-- Use the raw event logs to provide more insights for your alerts, hunting, and investigation, and correlate events with data from other data sources in Microsoft Sentinel.
-
-- Store the logs with increased retention, beyond Microsoft Defender for Endpoint or Microsoft 365 Defender’s default retention of 30 days. You can do so by configuring the retention of your workspace or by configuring per-table retention in Log Analytics.
-
-:::image type="content" source="../media/microsoft-365-defender.png" alt-text="Microsoft 365 Defender connector page." lightbox="../media/microsoft-365-defender.png":::
 
 To deploy the connector, do the following steps:
 
@@ -21,18 +14,3 @@ To deploy the connector, do the following steps:
 1. Mark the checkboxes of the event types you wish to collect.
 
 1. Select **Apply Changes**
-
-The Microsoft Defender collection options are as follows:
-
-| **Events type**| **Table name**|
-| :--- | :--- |
-| Machine information (including OS information)| DeviceInfo|
-| Network properties of machines| DeviceNetworkInfo|
-| Process creation and related events| DeviceProcessEvents|
-| Network connection and related events| DeviceNetworkEvents|
-| File creation, modification, and other file system events| DeviceFileEvents|
-| Creation and modification of registry entries| DeviceRegistryEvents|
-| Sign-ins and other authentication events| DeviceLogonEvents|
-| DLL loading events| DeviceImageLoadEvents|
-| More events types| DeviceEvents|
-

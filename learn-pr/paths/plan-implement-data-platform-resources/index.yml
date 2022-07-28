@@ -27,6 +27,9 @@ products:
 - azure
 - azure-sql-database
 - sql-server
+subjects:
+- data-engineering
+- data-management
 modules:
 - learn.wwl.deploy-iaas-solutions-with-azure-sql
 - learn.wwl.deploy-paas-solutions-with-azure-sql

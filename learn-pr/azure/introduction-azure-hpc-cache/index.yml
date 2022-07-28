@@ -30,6 +30,9 @@ roles:
 products:
   - azure
   - azure-hpc-cache
+subjects:
+- cache
+- high-performance-computing
 units:
 - learn.azure.introduction-azure-hpc-cache.introduction
 - learn.azure.introduction-azure-hpc-cache.what

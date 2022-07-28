@@ -28,6 +28,9 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- architecture
+- remote-hybrid-work
 units:
 - learn.wwl.azure-virtual-desktop-architecture.introduction
 - learn.wwl.azure-virtual-desktop-architecture.for-enterprise

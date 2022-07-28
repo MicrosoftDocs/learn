@@ -24,6 +24,9 @@ roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- machine-learning
+- cloud-computing
 units:
 - learn.wwl.work-data-azure-databricks.introduction
 - learn.wwl.work-data-azure-databricks.understand-dataframes

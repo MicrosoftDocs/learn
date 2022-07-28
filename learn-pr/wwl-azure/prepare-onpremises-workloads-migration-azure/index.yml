@@ -28,6 +28,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- migration
+- cloud-computing
 units:
 - learn.wwl.prepare-onpremises-workloads-migration-azure.introduction
 - learn.wwl.prepare-onpremises-workloads-migration-azure.choose-your-migration-approach

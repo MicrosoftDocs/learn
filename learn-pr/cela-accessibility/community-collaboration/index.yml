@@ -19,7 +19,7 @@ abstract: |
   - Demonstrate an understanding of best practice etiquette for collaborating with individuals who have disabilities.
 prerequisites: |
  - You should have some basic familiarity with playing and creating video games. 
- - You should have some familiarity with using game platforms like Xbox, PlayStation, Nintendo Switch, or Windows.
+ - You should have some familiarity with using game platforms like Xbox, Windows, and other common gaming console and PC platforms.
  - A basic understanding of foundational terms and concepts for disability and accessibility principles is helpful.
  
 iconUrl: /learn/achievements/community-collaboration.svg
@@ -29,6 +29,9 @@ roles:
 - developer
 products:
 - xbox
+subjects:
+- accessibility
+- gaming-innovation
 units:
 - learn.community-collaboration.introduction
 - learn.community-collaboration.nothing-about-us-without-us

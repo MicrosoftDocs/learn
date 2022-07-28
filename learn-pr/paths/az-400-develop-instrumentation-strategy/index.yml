@@ -38,6 +38,8 @@ products:
 - azure-functions
 - azure-kubernetes-service
 - azure-logic-apps
+subjects:
+- it-management-monitoring
 modules:
 - learn.azure.capture-application-logs-app-service
 - learn.control-and-organize-with-resource-manager

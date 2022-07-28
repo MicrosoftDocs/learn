@@ -26,6 +26,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- virtual-machine
 units:
 - learn.wwl.identify-sap-certified-configurations.introduction
 - learn.wwl.identify-sap-certified-configurations.explore-general-prerequisites-for-sap-support-public-cloud-environments

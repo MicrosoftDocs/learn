@@ -48,7 +48,7 @@ Some development teams like to show the state of the build on an external monito
 
 These settings provide a link to the image to use for it. Here's an example Azure Pipelines badge that has Succeeded:
 
-:::image type="content" source="../media/devops-continuous-integration-image-023-0eca3a2b.png" alt-text="Azure Pipelines badge button that has Succeeded.":::
+:::image type="content" source="../media/devops-continuous-integration-image-023-0eca3a2b.png" alt-text="Screenshot of Azure Pipelines badge button that has Succeeded.":::
 
 
 For more information, see [Build Pipeline Options](/azure/devops/pipelines/build/options).

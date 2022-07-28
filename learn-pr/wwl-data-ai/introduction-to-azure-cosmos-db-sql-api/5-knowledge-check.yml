@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2021
+  ms.date: 06/06/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "MongoDB API"
       isCorrect: false
-      explanation: "That's incorrect. While the MongoDB API implements the wire protocol for MongoDB, it is not the native API for Azure Cosmos DB."
+      explanation: "That's incorrect. While the MongoDB API implements the wire protocol for MongoDB, it isn't the native API for Azure Cosmos DB."
     - content: "Cassandra API"
       isCorrect: false
-      explanation: "That's incorrect. While the Cassandra API implements the much of the native Apache Cassandra wire protocol, it is not the native API for Azure Cosmos DB."
+      explanation: "That's incorrect. While the Cassandra API implements the much of the native Apache Cassandra wire protocol, it isn't the native API for Azure Cosmos DB."
     - content: "SQL API"
       isCorrect: true
       explanation: "That's correct. The SQL API is the native API for Azure Cosmos DB. All other APIs map to the SQL API in their implementations."
@@ -32,7 +32,7 @@ quiz:
       explanation: "That's correct. All containers in an Azure Cosmos DB SQL API database must have a partition key path defined."
     - content: "Time-to-live"
       isCorrect: false
-      explanation: "That's incorrect. You can create a container without a time-to-live value. The container will not expire items automatically."
+      explanation: "That's incorrect. You can create a container without a time-to-live value. The container won't expire items automatically."
     - content: "Indexing policy"
       isCorrect: false
       explanation: "That's incorrect. You can create a container without specifying an indexing policy. Azure Cosmos DB will automatically index every property of every item."

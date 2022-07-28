@@ -22,6 +22,8 @@ roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- cloud-computing
 units:
 - learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.introduction
 - learn.wwl.search-azure-cosmos-db-sql-api-data-azure-cognitive-search.create-indexer

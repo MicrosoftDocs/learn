@@ -25,6 +25,9 @@ roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-management
+- machine-learning
 units:
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.introduction
 - learn.wwl.deploy-azure-databricks-models-azure-machine-learning.describe-considerations-for-model-deployment

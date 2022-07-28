@@ -18,21 +18,21 @@ _Figure 2.9: Metering in different types of cloud services._
 
 In the chargeback model, service owners measure resource usage and charge costs back to their customers. Traditionally, the chargeback model is easy to implement for on-premises solutions since an IT department can divide its budget for each business unit that it serves and track costs for software licenses, stand-alone servers, etc. Chargeback is more challenging with cloud deployments because the CSP must factor in rates (which sometimes vary from customer to customer) and time-of-consumption.
 
-# Case Study: Azure Cost Management
+# Case Study: Microsoft Cost Management
 
-Azure Cost Management is a service that helps organizations plan their spend on cloud services and monitor that spend over time. It works with both Azure and AWS. It provides several key features to organizations that use it, including cost analysis, budgeting, and recommendations (Figure 2.10).
+Cost Management is a service that helps organizations plan their spend on cloud services and monitor that spend over time. It works with both Azure and AWS. It provides several key features to organizations that use it, including cost analysis, budgeting, and recommendations (Figure 2.10).
 
-![Figure 2.10: The Azure Cost Management portal.](../media/cost-management-portal.png)
+![Figure 2.10: The Microsoft Cost Management portal.](../media/cost-management-portal.png)
 
-_Figure 2.10: The Azure Cost Management portal<sup>[1][^1]</sup>._
+_Figure 2.10: The Microsoft Cost Management portal<sup>[1][^1]</sup>._
 
 **Cost analysis** provides tools for analyzing costs and spotting patterns, trends, and anomalies. Predefined views are provided to get users up and running quickly examining accumulated costs and cost forecasts. Customized views can also be created.
 
-**Budgeting** permits users to establish targets or limits that can subsequently be used to drive organizational accountability. In addition to providing charts and graphs comparing spends to budget targets, Azure Cost Management can be configured to generate email alerts when budget thresholds are reached for example, when the spend on a resource or set of resources reaches 90% of a \$5,000 per-month allocation.
+**Budgeting** permits users to establish targets or limits that can subsequently be used to drive organizational accountability. In addition to providing charts and graphs comparing spends to budget targets, Cost Management can be configured to generate email alerts when budget thresholds are reached for example, when the spend on a resource or set of resources reaches 90% of a \$5,000 per-month allocation.
 
 **Recommendations** help identify instances in which current resource allocations (and therefore costs) exceed what is needed to accomplish the task at hand. For example, if Azure determines that a lower database service tier would be adequate based on your usage patterns to date, it might recommend that you switch to a lower tier in order to reduce cost.
 
-Cost Management is available for all Azure subscriptions. AWS costs are incorporated by integrating with the Cost and Usage reporting feature in AWS. Reports are stored in AWS S3 storage buckets and imported into Azure Cost Management for analysis.
+Cost Management is available for all Azure subscriptions. AWS costs are incorporated by integrating with the Cost and Usage reporting feature in AWS. Reports are stored in AWS S3 storage buckets and imported into Cost Management for analysis.
 
 ### References
 

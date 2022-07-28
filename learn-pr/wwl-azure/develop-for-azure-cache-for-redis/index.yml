@@ -25,6 +25,8 @@ roles:
 - developer
 products:
 - azure-cache-redis
+subjects:
+- cache
 units:
 - learn.wwl.develop-for-azure-cache-for-redis.introduction
 - learn.wwl.develop-for-azure-cache-for-redis.explore

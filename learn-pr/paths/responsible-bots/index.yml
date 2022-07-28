@@ -27,6 +27,9 @@ roles:
 products:
 - azure-bot-service
 - azure-cognitive-services
+subjects:
+- natural-language-processing
+- chatbot
 modules:
 - learn.advocates.responsible-bots-introduction
 - learn.advocates.responsible-bots

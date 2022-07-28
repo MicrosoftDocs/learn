@@ -7,7 +7,7 @@ The circles in the diagrams below represent two result sets from the products ta
 
 :::image type="content" source="../media/intersect-colors.png" alt-text="An image of a Venn diagram showing INTERSECT results.":::
 
-**EXCEPT** Returns returns distinct rows from the left input query that aren't output by the right input query.
+**EXCEPT** Returns distinct rows from the left input query that aren't output by the right input query.
 
 :::image type="content" source="../media/except-colors.png" alt-text="An image of a Venn diagram showing EXCEPT results.":::
 

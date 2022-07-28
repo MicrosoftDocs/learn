@@ -30,6 +30,8 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
+subjects:
+- natural-language-processing
 units:
 - learn.pytorch.intro-natural-language-processing.introduction
 - learn.pytorch.intro-natural-language-processing.representing-text

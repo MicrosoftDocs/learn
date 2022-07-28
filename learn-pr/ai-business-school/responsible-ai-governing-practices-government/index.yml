@@ -27,7 +27,10 @@ products:
 - azure
 - dynamics-365
 - m365
-units: 
+subjects:
+- artificial-intelligence
+- compliance
+units:
 - learn-wwl.responsible-ai-governing-practices-government.introduction
 - learn-wwl.responsible-ai-governing-practices-government.choosing-an-organizational-model-1
 - learn-wwl.responsible-ai-governing-practices-government.government-governance-and-development

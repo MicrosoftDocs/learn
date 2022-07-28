@@ -33,6 +33,8 @@ roles:
 - ai-edge-engineer
 products:
 - azure-iot-hub
+subjects:
+- machine-learning
 units:
 - learn.oxford.train-package-azure-ml-module-iot-edge.introduction
 - learn.oxford.train-package-azure-ml-module-iot-edge.what-is-virtual-machine

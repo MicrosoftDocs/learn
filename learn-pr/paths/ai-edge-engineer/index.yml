@@ -60,6 +60,8 @@ products:
 - azure-machine-learning
 - azure-resource-manager
 - azure-virtual-machines
+subjects:
+- artificial-intelligence
 modules:
 - learn.oxford.intro-to-iot
 - learn.oxford.intro-to-iot-hub

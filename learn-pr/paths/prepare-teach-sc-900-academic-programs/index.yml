@@ -20,6 +20,10 @@ roles:
 - higher-ed-educator
 products:
 - azure-security-center
+subjects:
+- identity-access
+- compliance
+- security
 modules:
 - learn.wwl.introduction-microsoft-learn-educators-program
 - learn.wwl.onboard-microsoft-learn-educators-program

@@ -27,6 +27,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- it-management-monitoring
 units:
 - learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.introduction
 - learn.wwl.monitor-troubleshoot-sap-hana-azure-large-instances.monitor-sap-hana-large-instances

@@ -14,7 +14,7 @@ There are two service tiers available when creating an Azure SQL Managed Instanc
 
 Link feature provides hybrid capability of replicating databases from SQL Server instances to Azure SQL Managed Instance. The link feature replicates data using distributed availability groups available on Always On availability group technology. Transaction log records are replicated as part of distributed availability groups.
 
-The transaction log records on the primary instance can't be truncated until they've been replicated to the secondary instance. Regularly transaction log backups reduce the risk of running out of space on your primary instance.
+The transaction log records on the primary instance can't be truncated until they've been replicated to the secondary instance. Regular transaction log backups reduce the risk of running out of space on your primary instance.
 
 Link feature can also be used as a hybrid disaster recover solution, where you can fail over your SQL Server databases hosted anywhere to a database running on SQL Managed Instance. Likewise, you can use link feature to provide a read-only secondary database in SQL Database SQL Managed Instance to offload intensive read-only operations.
 

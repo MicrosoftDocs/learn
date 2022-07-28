@@ -7,7 +7,7 @@ You learned about:
 - Adding issues to a project board using octokit
 - Using the workflow expression syntax to filter when jobs run in a workflow
 
-GitHub Script is great for interacting with GitHub from GitHub Actions. But what if you want to interact with the API from somewhere else? Learn to [Automate DevOps processes by using GitHub Apps](/learn/modules/automate-devops-github-apps/).
+GitHub Script is great for interacting with GitHub from GitHub Actions. But what if you want to interact with the API from somewhere else? In that case, you can learn to [Automate DevOps processes by using GitHub Apps](/learn/modules/automate-devops-github-apps/).
 
 ## Learn more
 

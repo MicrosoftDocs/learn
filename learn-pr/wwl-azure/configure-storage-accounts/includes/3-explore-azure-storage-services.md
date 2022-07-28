@@ -18,7 +18,7 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 Objects in Blob storage can be accessed from anywhere in the world via HTTP or HTTPS. Users or client applications can access blobs via URLs, the Azure Storage REST API, Azure PowerShell, Azure CLI, or an Azure Storage client library. The storage client libraries are available for multiple languages, including .NET, Java, Node.js, Python, PHP, and Ruby.
 
 > [!NOTE]
-> [You can access data from Azure Blob Storage by using the NFS protocol.](/learn/modules/access-data-azure-blob-storage-multiple-protocols/4-access-data-azure-blob-storage-nfs-protocoll)
+> [You can access data from Azure Blob Storage by using the NFS protocol.](/learn/modules/access-data-azure-blob-storage-multiple-protocols/4-access-data-azure-blob-storage-nfs-protocol)
 
 
 

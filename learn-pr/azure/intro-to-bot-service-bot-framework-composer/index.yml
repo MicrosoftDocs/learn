@@ -33,6 +33,10 @@ roles:
 products:
   - azure
   - azure-bot-service
+subjects:
+- cloud-computing
+- chatbot
+- artificial-intelligence
 units:
 - learn.azure.intro-to-bot-service-bot-framework-composer.1-introduction
 - learn.azure.intro-to-bot-service-bot-framework-composer.2-what-is-azure-bot-service

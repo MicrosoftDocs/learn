@@ -27,6 +27,8 @@ products:
 - xamarin
 - dotnet
 - vs
+subjects:
+- cross-development
 units:
 - learn-xamarin.introduction-to-xamarin-ios.1-introduction
 - learn-xamarin.introduction-to-xamarin-ios.2-what-is-xamarin-ios

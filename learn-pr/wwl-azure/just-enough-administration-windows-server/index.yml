@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - windows-server
+subjects:
+- identity-access
 units:
 - learn.wwl.just-enough-administration-windows-server.introduction
 - learn.wwl.just-enough-administration-windows-server.explain-concept-of-jea

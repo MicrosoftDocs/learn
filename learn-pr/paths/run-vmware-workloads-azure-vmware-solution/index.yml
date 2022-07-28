@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.run-vmware-workloads-azure-vmware-solution
 metadata:
-  title: Run VMware workloads on Azure VMware Solution
+  title: Run VMware resources on Azure VMware Solution
   description: Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.
   brand: azure
   ms.date: 06/21/2021
@@ -13,7 +13,7 @@ metadata:
   - shkuehn-01272022
   ms.custom:
   - team=cloud_advocates
-title: Run VMware workloads on Azure VMware Solution
+title: Run VMware resources on Azure VMware Solution
 summary:  |
   Learn about Azure VMware Solution, how to deploy the resource, and how to migrate VMware virtual machines on-premises.
 prerequisites: |
@@ -28,6 +28,9 @@ roles:
 products:
 - azure
 - azure-vmware-solution
+subjects:
+- cloud-computing
+- virtual-machine
 modules:
 - learn.azure.intro-azure-vmware-solution
 - learn.deploy-azure-vmware-solution

@@ -30,6 +30,8 @@ products:
 - azure-iot
 - azure-iot-hub
 - azure-rtos
+subjects:
+- development-tools
 units:
 - learn.iot.threadx-event-chain-suspend-objects.introduction
 - learn.iot.threadx-event-chain-suspend-objects.overview
@@ -42,5 +44,4 @@ units:
 - learn.iot.threadx-event-chain-suspend-objects.knowledge-check
 - learn.iot.threadx-event-chain-suspend-objects.summary
 badge:
-  uid: learn.iot.threadx-event-chain-suspend-objects.badge 
-
+  uid: learn.iot.threadx-event-chain-suspend-objects.badge

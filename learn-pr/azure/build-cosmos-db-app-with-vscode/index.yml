@@ -32,6 +32,8 @@ products:
 - dotnet
 - aspnet-core
 - dotnet-core
+subjects:
+- database
 units:
 - learn.cosmos-db-app-with-vscode.1-introduction
 - learn.cosmos-db-app-with-vscode.2-setup-cosmosdb

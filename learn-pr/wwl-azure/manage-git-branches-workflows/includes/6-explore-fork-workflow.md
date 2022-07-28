@@ -13,11 +13,9 @@ The main advantage of the forking workflow is that contributions can be integrat
 
 Developers push to their server-side repositories, and only the project maintainer can push to the official repository.
 
-It allows the maintainer to accept commits from any developer without giving them write access to the official codebase.
+It allows the maintainer to accept commits from any developer without giving them written access to the official codebase.
 
-The forking workflow typically follows a branching model based on the Gitflow workflow.
-
-It means that complete feature branches will be intended for merging into the original project maintainer's repository.
+The forking workflow typically will be intended for merging into the original project maintainer's repository.
 
 The result is a distributed workflow that provides you a flexible way for large, organic teams (including untrusted third parties) to collaborate securely.
 

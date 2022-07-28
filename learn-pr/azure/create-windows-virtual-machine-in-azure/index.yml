@@ -29,6 +29,8 @@ products:
 - azure
 - azure-virtual-machines
 - azure-virtual-machines-windows
+subjects:
+- virtual-machine
 units:
 - learn.create-a-windows-vm-in-azure.1-introduction
 - learn.create-a-windows-vm-in-azure.2-create-a-windows-virtual-machine

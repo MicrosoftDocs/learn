@@ -31,6 +31,10 @@ roles:
 - technology-manager
 products:
 - windows-server
+subjects:
+- device-management
+- identity-access
+- threat-protection
 units:
 - learn.wwl.perform-windows-server-secure-administration.introduction
 - learn.wwl.perform-windows-server-secure-administration.define-least-privilege-administration

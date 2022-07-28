@@ -26,6 +26,9 @@ products:
 - azure-container-registry
 - azure-resource-manager
 - azure-virtual-machines
+subjects:
+- container
+- virtual-machine
 modules:
 - learn.wwl.provision-virtual-machines-azure
 - learn.wwl.create-deploy-azure-resource-manager-templates

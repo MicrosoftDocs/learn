@@ -33,7 +33,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     | **Instance Details** |
     | Name | *\<your-webapp-name\>* |
     | Publish | Code |
-    | Runtime stack | .NET Core 2.1 |
+    | Runtime stack | .NET Core 3.1 (LTS) |
     | Operating System | Windows |
     | Region | Select a region close to you |
 
@@ -92,7 +92,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     code App.config
     ```
 
-1. Uncomment the line that specifies the **ReservationsServiceURI**, and replace the value with the URL of your web app. The file should like the example that follows.
+1. Uncomment the line that specifies the **ReservationsServiceURI**, and replace the value with the URL of your web app. The file should look like the example that follows.
 
     ```text
     <?xml version="1.0" encoding="utf-8" ?>
@@ -106,6 +106,36 @@ The exercise also runs a client app that simulates a number of users issuing POS
     ```
 
     > The **NumClients** setting in this file specifies the number of simultaneous clients that will attempt to connect to the web app and perform work. The work consists of creating a reservation, and then running a query to fetch the details of a reservation – all of the data used is fake and is not actually persisted anywhere. Leave this value set to 100.
+
+1. Save the file by selecting the ellipsis in the upper right hand corner of the editor.
+
+1. In the Cloud Shell, edit the HotelReservationSystemTestClient.csproj file in this folder.
+
+    ```bash
+    code HotelReservationSystemTestClient.csproj
+    ```
+
+1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack that you selected for your web app. Change the **TargetFramework** value to `netcoreapp3.1`. The file should look like this example.
+
+    ```text
+    <Project Sdk="Microsoft.NET.Sdk">
+    
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+      </PropertyGroup>
+    
+      <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
+      </ItemGroup>
+    
+      <ItemGroup>
+        <ProjectReference Include="..\HotelReservationSystemTypes\HotelReservationSystemTypes.csproj" />
+      </ItemGroup>
+    
+    </Project>
+    ```
 
 1. Save the file by selecting the ellipsis in the upper right hand corner of the editor, and then close the code editor.
 
@@ -129,19 +159,19 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. In the Azure portal, return to your web app.
 
-1. Under **Settings**, select **Scale out (App Service plan)**, and then select **Enable autoscale**.
+1. Under **Settings**, select **Scale out (App Service plan)**, and then select **Custom autoscale**.
 
-1. In the default autoscale rule, verify that the scale mode is set to **Scale based on a metric**, and then select **Add a rule**.
+1. In the **Default** autoscale rule, verify that the scale mode is set to **Scale based on a metric**, and then select **Add a rule**.
 
     ![Screenshot of the web app in the Azure portal while configuring autoscaling.](../media/7-add-rule-annotated.png)
 
 1. Add a rule that increases the instance count by one if the average CPU utilization across all instances in the web site exceeds 50 percent in the preceding five minutes. This is a scale-out rule.
 
-    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-out rule.](../media/7-first-rule-annotated.png)
+    :::image type="content" source="../media/7-first-rule-annotated.png" alt-text="Screenshot of the web app in the Azure portal while configuring the autoscaling scale-out rule.":::
 
 1. Select **Add a rule** again. Add a rule that reduces the instance count by one if the average CPU utilization across all instances in the web site drops below 30 percent in the preceding five minutes. This is a scale-in rule. Remember that it's good practice to define scale rules in pairs.
 
-    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-in rule.](../media/7-second-rule-annotated.png)
+    :::image type="content" source="../media/7-second-rule-annotated.png" alt-text="Screenshot of the web app in the Azure portal while configuring the autoscaling scale-in rule.":::
 
 1. In the **Default** auto scale condition window, in the **Instance limits** section, set the **Maximum** instance count to five. Name the Autoscale setting **ScaleOnCPU**, and then select **Save**.
 

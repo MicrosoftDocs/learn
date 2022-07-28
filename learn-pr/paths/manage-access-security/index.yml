@@ -25,6 +25,9 @@ products:
 - azure
 - azure-virtual-desktop
 - azure-virtual-machines
+subjects:
+- cloud-security
+- identity-access
 modules:
 - learn.wwl.manage-access
 - learn.wwl.manage-security

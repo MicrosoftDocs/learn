@@ -24,6 +24,9 @@ roles:
 - business-user
 products:
 - azure
+subjects:
+- migration
+- development-tools
 units:
 - learn-wwl.app-and-infra-migration-and-modernization.1-introduction
 - learn-wwl.app-and-infra-migration-and-modernization.2-triggers-for-migration-and-modernization

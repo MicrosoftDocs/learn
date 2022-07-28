@@ -41,7 +41,9 @@ prerequisites: |
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 
 
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-1-introduction
 - learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-2-panel-of-buttons-dynamic-menus
 - learn.azure.get-started-with-object-interaction-tutorials-mrtk.5-3-exercise-panel-of-buttons-menus

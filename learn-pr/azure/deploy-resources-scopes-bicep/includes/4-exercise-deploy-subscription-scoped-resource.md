@@ -1,4 +1,4 @@
-[!INCLUDE [BYO subscription explanation](../../includes/azure-template-exercise-nosandbox-subscription.md)]
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 Project Teddybear is in full swing, and the R&D team is waiting for you to give it access to the new Azure subscription. You've created the subscription already, but before you give the team access, you need to ensure that it deploys only virtual machines that comply with the team's policies. The team has told you that it doesn't want to deploy F or G series virtual machines. 
 

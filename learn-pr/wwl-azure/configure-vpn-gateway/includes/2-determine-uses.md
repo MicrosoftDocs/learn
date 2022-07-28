@@ -2,7 +2,7 @@ A VPN gateway is a specific type of virtual network gateway that is used to send
 
 Each virtual network can have only one VPN gateway. However, you can create multiple connections to the same VPN gateway. When you create multiple connections to the same VPN gateway, all VPN tunnels share the available gateway bandwidth.
 
-:::image type="content" source="../media/virtual-gateways-5cd58717.png" alt-text="VNet1 and VNet2 have a network to network connection using VPN Gateways. VNet1 also has a site-to-site connection to an on-premises network. The connections use IPsec IKEv2 tunnels.":::
+:::image type="content" source="../media/virtual-gateways-5cd58717.png" alt-text="VNet1 and VNet2 have a network to network connection using V P N Gateways. VNet1 also has a site-to-site connection to an on-premises network. The connections use IPsec IKEv2 tunnels.":::
 
 
  -  **Site-to-site** connections connect on-premises datacenters to Azure virtual networks

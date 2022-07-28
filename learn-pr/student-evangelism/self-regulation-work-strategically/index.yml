@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+subjects:
+- modern-work
 units:
 - learn.student-evangelism.self-regulation-work-strategically.introduction
 - learn.student-evangelism.self-regulation-work-strategically.what-is-self-regulation
@@ -38,4 +40,4 @@ units:
 - learn.student-evangelism.self-regulation-work-strategically.knowledge-check
 - learn.student-evangelism.self-regulation-work-strategically.summary
 badge:
-  uid: learn.student-evangelism.self-regulation-work-strategically.badge 
+  uid: learn.student-evangelism.self-regulation-work-strategically.badge

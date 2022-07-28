@@ -1,6 +1,6 @@
 Azure Cognitive Services is a suite of more than 20 services and APIs that are backed by machine learning. Developers can use the APIs to incorporate intelligent features like facial recognition and sentiment analysis into their applications. Custom Vision is just one member of the Azure Cognitive Services family. Its purpose is to create image classification models that "learn" from labeled images you provide. Want to know whether a photo contains a picture of a flower? Train Custom Vision by using a collection of flower images. Then, it can tell you whether the next image includes a flower, or even what type of flower appears in an image.
 
-![Screenshot that shows an example of results when using the Azure Cognitive Services Custom Vision service.](../media/custom-vision.jpg)
+:::image type="content" source="../media/custom-vision.jpg" alt-text="Screenshot that shows an example of results when using the Azure Cognitive Services Custom Vision service.":::
 
 The Custom Vision service exposes two APIs: the [Custom Vision Training API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/d9a10a4a5f8549599f1ecafc435119fa/operations/58d5835bc8cb231380095be3?azure-portal=true) and the [Custom Vision Prediction API](https://southcentralus.dev.cognitive.microsoft.com/docs/services/eb68250e4e954d9bae0c2650db79c653/operations/58acd3c1ef062f0344a42814?azure-portal=true). You can build, train, and test image classification models by using the [Custom Vision portal](https://www.customvision.ai/?azure-portal=true), or you can build, train, and test the models by using the Custom Vision Training API.  After a model is trained, you can use the Custom Vision Prediction API to build apps that use the model. Both APIs are REST APIs that can be called from various programming languages.
 
@@ -19,7 +19,7 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
    1. Enter a project name and description.
    1. Next to **Resource**, select **create new** to create a new Cognitive Services resource.
 
-   ![Screenshot that shows a new project name and description, with the create new link selected.](../media/create-new-project-1.png)
+   :::image type="content" source="../media/create-new-project-1.png" alt-text="Screenshot that shows a new project name and description, and the create new link option selected.":::
 
    _Create a new Cognitive Services project_
    
@@ -28,7 +28,7 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
    1. Select your subscription.
    1. Next to **Resource Group**, select **create new** to create a new Cognitive Services resource group.
 
-   ![Screenshot that shows values to select or enter to create a new resource, with the create new link selected.](../media/create-resource-1.png)
+   :::image type="content" source="../media/create-resource-1.png" alt-text="Screenshot that shows values to select or enter to create a new resource, with the create new link selected.":::
 
    _Create a new Cognitive Services resource_
 
@@ -37,7 +37,7 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
    1. For the resource group name, enter *polar-bear-rg*.
    1. Make sure **Location** is set to *South Central US*, and then select **Create resource group**.
 
-   ![Screenshot that shows the name and location for a new resource group, with the Create resource group button selected.](../media/create-resource-group.png)
+   :::image type="content" source="../media/create-resource-group.png" alt-text="Screenshot that shows the name and location for a new resource group, with the Create resource group button selected.":::
 
    _Create a new Cognitive Services resource group_
 
@@ -45,7 +45,7 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
 
 1. In **Create New Resource**, select **Create resource**.
 
-   ![Screenshot that shows the complete settings for a Cognitive Services resource, with the Create resource button selected.](../media/create-resource-2.png)
+   :::image type="content" source="../media/create-resource-2.png" alt-text="Screenshot that shows the complete settings for a Cognitive Services resource, with the Create resource button selected.":::
 
     _Create the Cognitive Services resource_
 
@@ -59,7 +59,7 @@ You'll begin by creating a new Custom Vision project. Then, you'll upload images
     > [!NOTE]
     > A domain optimizes a model for specific types of images. For example, if your goal is to classify food images by the types of food they contain or by the ethnicity of the dishes, it's helpful to select the **Food** domain. For scenarios that don't match any of the offered domains, or if you're unsure which domain to choose, select the **General** domain.
 
-    ![Screenshot that shows settings in the Create new project dialog box.](../media/create-new-project-2.png)
+    :::image type="content" source="../media/create-new-project-2.png" alt-text="Screenshot that shows settings in the Create new project dialog box.":::
 
     _Verify your settings_
 
@@ -73,19 +73,19 @@ Now, you're ready to get the images to use in your project.
 
 1. To add the Arctic fox images to your project, select **Add images**.
 
-   ![Screenshot that shows adding images to the Custom Vision project.](../media/add-images-to-project.png)
+   :::image type="content" source="../media/add-images-to-project.png" alt-text="Screenshot that shows adding images to the Custom Vision project.":::
 
    _Add images to the Custom Vision project_
 
 1. In **Open**, select all the images of Arctic foxes found in the unzipped file folder. To choose the images, select **Open**.
 
-   ![Screenshot that shows all images selected and ready to open.](../media/open-images.png)
+   :::image type="content" source="../media/open-images.png" alt-text="Screenshot that shows all images selected and ready to open.":::
 
    _Open the images to use in the project_
 
 1. For the **My Tags** setting for the images, enter *arctic-fox*. Then, select **Upload 130 files**. Wait for the upload to finish.
 
-   ![Screenshot that shows the tag setting and the images ready to upload.](../media/add-tag-and-upload-images.png)
+   :::image type="content" source="../media/add-tag-and-upload-images.png" alt-text="Screenshot that shows the tag setting and the images ready to upload.":::
 
    _Add the image tag and upload the images to the project_
 
@@ -111,7 +111,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 
 1. To train the model, select **Train**. When you're prompted to select a training type, select **Quick Training**.
 
-   ![Screenshot that shows the Train button highlighted on the toolbar.](../media/train-model.png)
+   :::image type="content" source="../media/train-model.png" alt-text="Screenshot that shows the Train button highlighted on the toolbar.":::
 
    _Train the model_
 
@@ -120,7 +120,7 @@ Now it's time to train the model by using the images that you tagged and uploade
    > [!NOTE]
    > Each time you train the model, a new version (*iteration*) is created. Custom Vision maintains all your iterations, so you can choose which version of the model to use.
 
-   ![Screenshot that shows the results of training the model in iteration 1.](../media/training-results.png)
+   :::image type="content" source="../media/training-results.png" alt-text="Screenshot that shows the results of training the model in iteration 1.":::
 
    _Results of training the model_
 
@@ -146,7 +146,7 @@ Now it's time to train the model by using the images that you tagged and uploade
 
 1. In **Publish Model**, for **Prediction resource**, select `polar-bear-vision`, the name of your resource. Make sure you choose your resource name, not the resource *group* name. To publish the model, select **Publish**.
 
-   ![Screenshot that shows the Publish Model pane with the Publish button highlighted.](../media/publish-model.png)
+   :::image type="content" source="../media/publish-model.png" alt-text="Screenshot that shows the Publish Model pane with the Publish button highlighted.":::
 
    _Publish the model_
 
@@ -156,7 +156,7 @@ Now it's time to train the model by using the images that you tagged and uploade
    1. Under **If you have an image URL**, copy and then save the URL in your favorite text editor, so you can get it later.
    1. For **Set Prediction-Key Header to**, copy and then save the key value. This value must be passed in each call to the prediction URL.
    
-   ![Screenshot that shows the How to use the Prediction A P I pane with the image U R L, prediction key example, and the Got it button highlighted.](../media/copy-prediction-url.png)
+   :::image type="content" source="../media/copy-prediction-url.png" alt-text="Screenshot that shows the How to use the Prediction A P I pane.":::
 
    _Copy the Prediction API URL_
  

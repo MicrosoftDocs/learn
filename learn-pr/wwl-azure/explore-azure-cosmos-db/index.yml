@@ -30,6 +30,8 @@ roles:
 products:
 - azure
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.explore-azure-cosmos-db.introduction
 - learn.wwl.explore-azure-cosmos-db.identify-key-benefits-of
