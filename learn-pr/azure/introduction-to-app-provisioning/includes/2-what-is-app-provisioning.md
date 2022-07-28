@@ -1,5 +1,3 @@
-# What is application provisioning in Azure Active Directory
-
 Azure AD application provisioning refers to automatically creating user identities and roles in the applications that users need access to. In addition to creating user identities, automatic provisioning includes the maintenance and removal of user identities as status or roles change. Common scenarios include provisioning an Azure AD user into SaaS applications like Dropbox, Salesforce, ServiceNow, and many more.
 
 Azure AD also supports provisioning users into applications hosted on-premises or in a virtual machine, without having to open firewalls. If an application supports System for Cross-domain Identity Management (SCIM), or you've built a SCIM gateway to connect to your legacy application, you can use the Azure AD Provisioning agent to directly connect with your application and automate provisioning and deprovisioning. If you have legacy applications that don't support SCIM and rely on a Lightweight Directory Access Protocol (LDAP) user store or a SQL database, Azure AD can support those as well.
@@ -23,8 +21,10 @@ App provisioning lets you:
     Heading: none
 
     Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
+
 TODO: add your topic sentences(s)
+-->
+
 
 <!-- 2. Background-concept definitions (optional) ----------------------------------------
 
@@ -45,11 +45,13 @@ TODO: add your topic sentences(s)
         (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
         Heading: "What is a business process?
         Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
+
 ## What is (concept)?
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
+-->
+
 
 <!-- 3. Define the product -------------------------------------------------------------
 
@@ -68,11 +70,13 @@ TODO: Add your visual element
     Example:
         Heading: "Azure Logic Apps definition"
         Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
+
 ## (product) definition
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
+-->
+
 
 <!-- 4. Solve the scenario -------------------------------------------------------------
 
@@ -92,11 +96,13 @@ TODO: Add your visual element
     Example:
         Heading: "How to implement a Twitter monitor"
         Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
+
 ## How to (solve scenario)
 TODO: Add your lead sentence
 TODO: Add your additional text
 TODO: Add your visual element
+-->
+
 
 <!-- 5. Additional content (optional, as needed) ------------------------------------------------
 
@@ -119,15 +125,17 @@ TODO: Add your visual element
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
 -->
 
-<!-- Pattern for simple chunks (repeat as needed) -->
+<!-- Pattern for simple chunks (repeat as needed) 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
 Paragraph (optional)
+-->
 
-<!-- Pattern for complex chunks (repeat as needed) -->
+
+<!-- Pattern for complex chunks (repeat as needed) 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list, code sample, blockquote)
@@ -141,6 +149,8 @@ Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
+-->
+
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

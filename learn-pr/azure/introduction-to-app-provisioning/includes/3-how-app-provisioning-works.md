@@ -1,5 +1,3 @@
-## What is SCIM?
-
 To help automate provisioning and deprovisioning, apps expose proprietary user and group APIs. But anyone who's tried to manage users in more than one app will tell you that every app tries to perform the same actions, such as creating or updating users, adding users to groups, or deprovisioning users. Yet, all these actions are implemented slightly differently by using different endpoint paths, different methods to specify user information, and a different schema to represent each element of information.
 
 To address these challenges, the System for Cross-domain Identity Management (SCIM) specification provides a common user schema to help users move into, out of, and around apps. SCIM is becoming the de facto standard for provisioning and, when used with federation standards like Security Assertions Markup Language (SAML) or OpenID Connect (OIDC), provides administrators an end-to-end standards-based solution for access management.
@@ -22,12 +20,14 @@ To address these challenges, the System for Cross-domain Identity Management (SC
         * Connectors, triggers, actions
         * Control actions
         * Logic Apps Designer"
--->
+
 TODO: add your topic sentences(s)
 TODO: add your bulleted list of key things covered
 * TODO
 * TODO
 * TODO
+-->
+
 
 <!-- 2. Chunked content-------------------------------------------------------------------------------------
 
@@ -44,7 +44,7 @@ TODO: add your bulleted list of key things covered
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
 -->
 
-<!-- Pattern for simple topic -->
+<!-- Pattern for simple topic 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
@@ -52,7 +52,9 @@ Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
 Paragraph (optional)
 
-<!-- Pattern for complex topic -->
+-->
+
+<!-- Pattern for complex topic 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list, code sample, blockquote)
@@ -66,6 +68,7 @@ Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
+-->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
