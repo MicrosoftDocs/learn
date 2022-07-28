@@ -10,7 +10,7 @@ metadata:
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
