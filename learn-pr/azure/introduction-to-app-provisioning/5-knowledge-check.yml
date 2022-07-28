@@ -15,11 +15,11 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Application Provisioning let's you:"
+  - content: "Application Provisioning lets you:"
     choices:
     - content: "Automate the provisioning and deprovisioning of users across systems."
       isCorrect: true
-      explanation: "Application Provisioning let's you provision and deprovision users across systems."
+      explanation: "Application Provisioning lets you provision and deprovision users across systems."
     - content: "Bulk email users with important system updates."
       isCorrect: false
       explanation: "Application Provisioning is used for identity management, not for business applications."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Application Provisioning secures your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
     - content: "Easily importing a large number of users into a particular SaaS application or system."
       isCorrect: false
-      explanation: "Application Provisioning let's you easily import large numbers of users into a particular SaaS application or system."
+      explanation: "Application Provisioning lets you easily import large numbers of users into a particular SaaS application or system."
     - content: "Optimizes software updates on computers in your organization."
       isCorrect: true
       explanation: "Application Provisioning ensures that you can easily provision users between systems."
