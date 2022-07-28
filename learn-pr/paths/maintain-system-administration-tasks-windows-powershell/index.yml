@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with Windows Server administration, maintenance, and troubleshooting.
   - Familiarity with Windows PowerShell and its commands to perform specific tasks.
 summary: |
-  This learning paths covers cmdlets that are commonly used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  This learning path covers cmdlets that are commonly used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
