@@ -18,11 +18,11 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
 1. You should see a list of built-in policies that you can use. In this case, you're going to create your own custom policy. Click **+ Policy definition** in the top menu.
 
-1. This button brings up the **New policy definition** dialog. To set the **Definition location**, select the blue **Launch scope selector (...)** icon. Select the subscription in which the policy is stored, which should be the same subscription as our resource group. Click **Select**.
+1. This button brings up the **New policy definition** dialog. To set the **Definition location**, select the blue **Launch scope selector (...)**. Select the subscription in which the policy is stored, which should be the same subscription as our resource group. Click **Select**.
 
-1. Back on the **New policy definition** dialog, enter `Enforce tag on resource` in the **Name** field.
+1. Back on the **New policy definition** dialog, enter _Enforce tag on resource_ in the **Name** field.
 
-1. For the **Description**, enter `This policy enforces the existence of a tag on a resource.`
+1. For the **Description**, enter _This policy enforces the existence of a tag on a resource_.
 
 1. For **Category**, select **Use existing**, then select the **General** category.
 
@@ -54,7 +54,7 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
     Your policy definition should look like the following example. Select **Save** to save your policy definition.
 
-    ![Screenshot of Azure portal showing the new policy definition dialog.](../media/4-policy-definition.PNG)
+    :::image type="content" source="../media/4-policy-definition.png" alt-text="Screenshot of Azure portal showing the new policy definition dialog.":::
 
 ### Create a policy assignment
 
@@ -64,19 +64,19 @@ You've created the policy, but you haven't actually put it into effect yet. To e
 
 1. Select **Assign policy** at the top.
 
-1. In the **Assign policy** pane, you'll assign your policy to your resource group. For **Scope**, select the blue **Launch scope selector (...)** icon. Select your subscription and the **msftlearn-core-infrastructure-rg** resource group, then click **Select**.
+1. In the **Assign policy** pane, you'll assign your policy to your resource group. For **Scope**, select the blue **Launch scope selector (...)**. Select your subscription and the **msftlearn-core-infrastructure-rg** resource group, then click **Select**.
 
-1. For **Policy definition**, select the blue **Launch policy definition picker (...)** icon. In the **Type** drop-down, select **Custom**, select the **Enforce tag on resource** policy you created, then click **Select**.
+1. For **Policy definition**, select the blue **Launch policy definition picker (...)**. In the **Type** drop-down, select **Custom**, select the **Enforce tag on resource** policy you created, then click **Select**.
 
 1. Select **Next** to go to the **Parameters** pane.
 
-1. On the **Parameters** pane, for **Tag name** enter `Department`.
+1. On the **Parameters** pane, for **Tag name** enter _Department_.
 
 1. Select **Review + create** then select **Create** to create the assignment.
 
 ### Test out the policy
 
-Now that you have assigned the policy to your resource group, any attempts to create a resource without the **Department** tag should fail. Try this out.
+Now that you have assigned the policy to your resource group, any attempts to create a resource without the **Department** tag will fail.
 
 > [!IMPORTANT]
 > Please note that the policy assignment may take up to 30 minutes to take effect. Because of this delay, in the following steps the policy validation may succeed but the deployment will still fail. If this happens, allow for additional time and retry your deployment.
@@ -93,7 +93,7 @@ Now that you have assigned the policy to your resource group, any attempts to cr
 
     Validation of your resource creation will fail because you don't have a **Department** tag applied to the resource. If the policy has not caused a validation failure, you may need to wait a few more minutes for it to be enabled.
 
-    ![Screenshot of Azure portal showing a policy validation failure on a new storage account without a tag.](../media/4-policy-violation.PNG)
+    :::image type="content" source="../media/4-policy-violation.png" alt-text="Screenshot of Azure portal showing a policy validation failure on a new storage account without a tag.":::
 
     Fix the violation so you can successfully deploy the storage account.
 
@@ -101,9 +101,9 @@ Now that you have assigned the policy to your resource group, any attempts to cr
 
 1. Add a `Department`:`Finance` tag to the list.
 
-    ![Screenshot of Azure portal showing a new Department tag to add during creation.](../media/4-add-department-tag.PNG)
+    :::image type="content" source="../media/4-add-department-tag.png" alt-text="Screenshot of Azure portal showing a new Department tag to add during creation.":::
 
-1. Now click **Review + create**. Validation should now pass, and if you select **Create**, your storage account will be created.
+1. Now click **Review + create**. Validation will now pass, and if you select **Create**, your storage account will be created.
 
 ## Use policies to enforce standards
 

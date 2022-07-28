@@ -15,28 +15,41 @@ You'll take a look at how a resource lock works in action.
 
 Recall our **msftlearn-core-infrastructure-rg** resource group. You've now got two virtual networks and a storage account in them. You consider these resources to be critical pieces of our Azure environment and want to ensure that they aren't mistakenly deleted. To prevent the resource group and its contained resources from being deleted, apply a resource lock to the resource group.
 
-1. In a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) if you haven't already. In the search box in the top navigation bar, search for `msftlearn-core-infrastructure-rg`, and select the resource group.
+1. In a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) if you haven't already. In the search box in the top navigation bar, search for _msftlearn-core-infrastructure-rg_ and select the resource group.
 
 1. In the left menu, in the **Settings** section, select **Locks**. You should see that the resource currently has no locks. You'll add one.
 
-1. Select **+ Add**. Name the lock `BlockDeletion`, and select a **Lock type** of **Delete**. Select **OK**.
+1. Select **+ Add**. Name the lock `BlockDeletion` and select a **Lock type** of **Delete**. Select **OK**.
 
-    ![Screenshot of Azure portal showing a new delete resource lock being configured.](../media/6-add-lock.PNG)
+    :::image type="content" source="../media/6-add-lock.png" alt-text="Screenshot of Azure portal showing a new delete resource lock being configured.":::
 
     You now have a lock applied to the resource group that will prevent deletion of the resource group. This lock is inherited by all resources within the resource group. You'll try to delete one of the virtual networks to see what happens.
 
 1. Go back to **Overview**, and to view the resource, select **msftlearn-vnet1**.
 
-1. In the **Overview** pane for **msftlearn-vnet1**, at the top, select **Delete**, then to confirm, select **Yes**. You should receive an error stating that there is a lock on the resource preventing its deletion.
+1. In the **Overview** pane for **msftlearn-vnet1**, at the top, select **Delete**, then to confirm, select **Yes**. You'll receive an error stating that there's a lock on the resource that prevents its deletion.
 
-    ![Screenshot of Azure portal error showing resource is blocked from deletion.](../media/6-delete-error.PNG)
+1. In the left menu, in the **Settings** section, select **Locks**. The **msftlearn-vnet1** has a lock that is inherited from the resource group.
 
-1. In the left menu, in the **Settings** section, select **Locks**. Note that **msftlearn-vnet1** has a lock that is inherited by from the resource group.
-
-1. Navigate back to the **msftlearn-core-infrastructure-rg** resource group and bring up the **Locks** pane. You'll remove our lock so you can clean up. Select the **...** icon on the **BlockDeletion** lock, then select **Delete**.
+1. Return to the **msftlearn-core-infrastructure-rg** resource group and go to **Locks**. You'll remove the lock so you can clean up. Select **Delete** on the **BlockDeletion** lock.
 
 ## Use resource locks in practice
 
 You've seen how resource locks can protect from accidental deletion. To delete the virtual network, you needed to remove the lock. This concerted action helps ensure that you really intend to delete or modify the resource in question.
 
 Use resource locks to protect those key pieces of Azure that could have a large impact if they were removed or modified. Some examples are ExpressRoute circuits, and virtual networks, critical databases, and domain controllers. Evaluate your resources and apply locks where you'd like to have an extra layer of protection from accidental actions.
+
+## Clean up the resources
+
+Let's clean up the resources that we created. You'll need to delete the resource group you created, as well as the policy assignment and policy definition.
+
+1. Go to the [Azure portal](https://portal.azure.com/?azure-portal=true) in a web browser.
+1. In the search box in the top menu bar, search for _msftlearn-core-infrastructure-rg_ and select the resource group.
+1. In the **Overview** pane, select **Delete resource group**. Enter the _msftlearn-core-infrastructure-rg_ resource group name to confirm, then select **Delete**.
+
+    > [!NOTE]
+    > Because you deleted the assigned resources with the containing resource group, there won't be any assignments left in this policy. Normally, if you assign a policy to a resource, you could delete the assignment without deleting the underlying resource here. To do this, you would select **Assignments**, select the ellipsis (`...`) for your assignment, and select **Delete assignment**.
+
+1. In the search box, search for **Policy**, and select the **Policy** service.
+1. Select **Definitions** and search for the policy you created: _Enforce tag on resource_.
+1. Select the `...` for your definition, and select **Delete definition**.
