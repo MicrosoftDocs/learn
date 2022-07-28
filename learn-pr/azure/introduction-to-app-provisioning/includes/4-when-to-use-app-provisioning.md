@@ -3,7 +3,7 @@
 Applications in the Azure AD gallery support one of two provisioning modes:
 
 * **Manual** provisioning means there's no automatic Azure AD provisioning connector for the app yet. User accounts must be created manually. Examples are adding users directly into the app's administrative portal or uploading a spreadsheet with user account detail. Consult the documentation provided by the app, or contact the app developer to determine what mechanisms are available.
-* **Automatic** means that an Azure AD provisioning connector has been developed for this application. Follow the setup tutorial specific to setting up provisioning for the application. App tutorials can be found in [Tutorials for integrating SaaS applications with Azure Active Directory](../../active-directory/saas-apps/tutorial-list.md).
+* **Automatic** means that an Azure AD provisioning connector has been developed for this application. Follow the setup tutorial specific to setting up provisioning for the application.
 
 The provisioning mode supported by an application is also visible on the **Provisioning** tab after you've added the application to your enterprise apps.
 
@@ -19,30 +19,20 @@ Some common motivations for using automatic provisioning include:
 - Easily importing a large number of users into a particular SaaS application or system.
 - Having a single set of policies to determine who is provisioned and who can sign in to an app.
 
-Azure AD user provisioning can help address these challenges. To learn more about how customers have been using Azure AD user provisioning, read the [ASOS case study](https://aka.ms/asoscasestudy). The following video provides an overview of user provisioning in Azure AD.
-
-> [!VIDEO https://www.youtube.com/embed/_ZjARPpI6NI]
+Azure AD user provisioning can help address these challenges.
 
 ## What applications and systems can I use with Azure AD automatic user provisioning?
 
-Azure AD features pre-integrated support for many popular SaaS apps and human resources systems, and generic support for apps that implement specific parts of the [SCIM 2.0 standard](https://techcommunity.microsoft.com/t5/Identity-Standards-Blog/Provisioning-with-SCIM-getting-started/ba-p/880010).
+Azure AD features pre-integrated support for many popular SaaS apps and human resources systems, and generic support for apps that implement specific parts of the SCIM 2.0 standard.
 
-* **Pre-integrated applications (gallery SaaS apps)**: You can find all applications for which Azure AD supports a pre-integrated provisioning connector in [Tutorials for integrating SaaS applications with Azure Active Directory](../saas-apps/tutorial-list.md). The pre-integrated applications listed in the gallery generally use SCIM 2.0-based user management APIs for provisioning. 
-
-   ![Image that shows logos for DropBox, Salesforce, and others.](./media/user-provisioning/gallery-app-logos.png)
-
-   If you want to request a new application for provisioning, you can [request that your application be integrated with our app gallery](../manage-apps/v2-howto-app-gallery-listing.md). For a user provisioning request, we require the application to have a SCIM-compliant endpoint. Request that the application vendor follow the SCIM standard so we can onboard the app to our platform quickly.
-
-* **Applications that support SCIM 2.0**: For information on how to generically connect applications that implement SCIM 2.0-based user management APIs, see [Build a SCIM endpoint and configure user provisioning](use-scim-to-provision-users-and-groups.md).
+* **Pre-integrated applications (gallery SaaS apps)**: You can find all applications for which Azure AD supports a pre-integrated provisioning connector in Tutorials for integrating SaaS applications with Azure Active Directory. The pre-integrated applications listed in the gallery generally use SCIM 2.0-based user management APIs for provisioning.
 
 
 ## How do I set up automatic provisioning to an application?
 
-For pre-integrated applications listed in the gallery, step-by-step guidance is available for setting up automatic provisioning. See [Tutorials for integrating SaaS applications with Azure Active Directory](../saas-apps/tutorial-list.md). The following video demonstrates how to set up automatic user provisioning for SalesForce.
+For pre-integrated applications listed in the gallery, step-by-step guidance is available for setting up automatic provisioning. 
 
-> [!VIDEO https://www.youtube.com/embed/pKzyts6kfrw]
-
-For other applications that support SCIM 2.0, follow the steps in [Build a SCIM endpoint and configure user provisioning](use-scim-to-provision-users-and-groups.md).
+For other applications that support SCIM 2.0, you can follow guidance to configure user provisioning.
 
 
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
