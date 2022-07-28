@@ -37,7 +37,7 @@ title: Introduction to Application Provisioning
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
-summary: ""
+summary: "Application Provisioning can be used to automatically create and manage user identities in your cloud apps. Describe the function Application Provisioning and determine if you can use it to provision users."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -64,8 +64,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether (product) is appropriate to (general product use case).
-    - Describe how (features) of (product) work to (solve problem).
+    - Describe how Application Provisioning works to automatically provision users.
+    - Evaluate whether Application Provisioning is appropriate in your organization.
 ###########################################################################
 ###
 ### Prerequisites
@@ -88,9 +88,9 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - General understanding of identity concepts
+  - Basic knowledge of Azure Active Directory
+  - Familiarity with how Software as a Service (SaaS) apps work
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available
