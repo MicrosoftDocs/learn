@@ -31,7 +31,7 @@ quiz:
     - content: When you use workload identities, you must carefully manage their secrets.
       isCorrect: false
       explanation: Incorrect. Federated credentials enable deployment workflows to securely authenticate to Azure Active Directory without you storing any secrets.
-    - content: Workload identities use federated credentials to authenticate.
+    - content: Workload identities can use federated credentials to authenticate.
       isCorrect: true
       explanation: Correct. Federated credentials enable deployment workflows to securely authenticate to Azure Active Directory without you storing any secrets.
     - content: Workload identities must be created by using the Azure portal.
@@ -45,7 +45,7 @@ quiz:
     - content: Create a single workload identity and grant it access to each of the resource groups in the three subscriptions.
       isCorrect: false
       explanation: Incorrect. Although this will work, it's not good practice to use a single workload identity for all of your environments. At the very least, you should separate production and non-production environments by using two workload identities, but a dedicated workload identity for each environment is ideal.
-    - content: Create three workload identities, one per environment, and grant each access to a single resource group in a single subscription.
+    - content: Create three workload identities, one per environment, and grant each access to a single resource group in the relevant subscription.
       isCorrect: true
       explanation: Correct. When you work with multiple environments, it's best to use dedicated workload identities for each environment so that your deployment workflow can't accidentally change anything in another environment.
   - content: You're creating a workload identity to run a deployment workflow. The workflow deploys a Bicep file that creates a single storage account. Which of the following options has the least privileged access that you need for your workflow?
