@@ -9,47 +9,54 @@ metadata:
   author: kenwith
   ms.author: kenwith
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 2
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in a Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
-###
-###########################################################################
+
 content: |
 quiz:
   questions:
-  - content: "Application Provisioning can be used to automatically create users from a human resources application into Azure Active Directory."
+  - content: "Application Provisioning let's you: (select all that apply)"
     choices:
-    - content: "True"
+    - content: "Automate the provisioning of users."
+      isCorrect: true
+      explanation: "Automate provisioning: Automatically create new accounts in the right systems for new people when they join your team or organization."
+    - content: "Automate the deprovisioning of users."
+      isCorrect: true
+      explanation: "Automatically deactivate accounts in the right systems when people leave the team or organization."
+    - content: "Synchronize user data between systems."
+      isCorrect: true
+      explanation: "Ensure that the identities in your apps and systems are kept up to date based on changes in the directory or your human resources system."
+    - content: "Create new no-code business applications."
+      isCorrect: false
+      explanation: "Application Provisioning is used for identity management, not for business applications."
+  - content: "Which of the following are benefits of Application Provisioning? (select all that apply)"
+    choices:
+    - content: "Maximizing the efficiency and accuracy of provisioning processes."
       isCorrect: true
       explanation: ""
-    - content: "False"
-      isCorrect: false
-      explanation: "One of the primary purposes of app provisioning is to automatically create (provision) users from a human resources system into Azure Active Directory."
-  - content: "Application Provisioning uses System for Cross-domain Identity Management (SCIM) to provision users."
-    choices:
-    - content: "True"
+    - content: "Saving on costs associated with hosting and maintaining custom-developed provisioning solutions and scripts."
       isCorrect: true
-      explanation: "SCIM is an industry standard and used to manage identities between systems. Application Proxy uses SCIM to provision users."
-    - content: "False"
-      isCorrect: false
       explanation: ""
+    - content: "Securing your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
+      isCorrect: true
+      explanation: ""
+    - content: "Easily importing a large number of users into a particular SaaS application or system."
+      isCorrect: true
+      explanation: ""
+    - content: "Having a single set of policies to determine who is provisioned and who can sign in to an app."
+      isCorrect: true
+      explanation: ""
+  - content: "What is System for Cross-domain Identity Management (SCIM)?"
+    choices:
+    - content: "An object oriented programming languages designed for Windows."
+      isCorrect: false
+      explanation: "SCIM is a standards specification for identity management, not a programming language."
+    - content: "A database query language used in data warehouses."
+      isCorrect: false
+      explanation: "SCIM is a standards specification for identity management, not a database query language."
+    - content: "A standards specification for identity management that provides a common user schema to help move users into, out of, and around apps. For example, provisioning new users between systems."
+      isCorrect: true
+      explanation: ""
+    - content: "A specification used to browse the web."
+      isCorrect: false
+      explanation: "SCIM is a standards specification for identity management, not a specification for browsing the web."
