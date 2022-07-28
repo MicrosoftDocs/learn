@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Automate the provisioning and deprovisioning of users across systems."
       isCorrect: true
-      explanation: ""
+      explanation: "Application Provisioning let's you provision and deprovision users across systems."
     - content: "Bulk email users with important system updates."
       isCorrect: false
       explanation: "Application Provisioning is used for identity management, not for business applications."
@@ -56,7 +56,7 @@ quiz:
       explanation: "SCIM is a standards specification for identity management, not a database query language."
     - content: "A standards specification for identity management that provides a common user schema to help move users into, out of, and around apps. For example, provisioning new users between systems."
       isCorrect: true
-      explanation: ""
+      explanation: "The System for Cross-domain Identity Management (SCIM) specification provides a common user schema to help users move into, out of, and around apps. SCIM is becoming the de facto standard for provisioning and, when used with federation standards like Security Assertions Markup Language (SAML) or OpenID Connect (OIDC), provides administrators an end-to-end standards-based solution for access management."
     - content: "A specification used to browse the web."
       isCorrect: false
       explanation: "SCIM is a standards specification for identity management, not a specification for browsing the web."
