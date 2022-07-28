@@ -1,7 +1,8 @@
 The following steps guide you on how to create roles in the Microsoft 365 Defender portal. It assumes that you have already created Azure Active Directory user groups.
 
 1. Access the Microsoft 365 Defender portal using an account with a Security administrator or Global administrator role assigned.
-1. In the navigation pane, select **Settings** then select **Endpoints**.  Under the Permissions area, select **Roles**. 
+1. In the navigation pane, select **Settings** then select **Endpoints**.  Under the Permissions area, select **Roles**.
+1. Select the **Turn on roles** button.
 1. Select **+ Add item**.
 1. Enter the role name, description, and permissions you'd like to assign to the role.
 1. Select **Next** to assign the role to an Azure AD Security group.
@@ -28,11 +29,17 @@ The permission options:
 
   - Threat and vulnerability management - Exception handling - Create new exceptions and manage active exceptions
 
-  - Threat and vulnerability management - Remediation handling - Submit new remediation requests, create tickets, and manage existing remediation activities
+  - Threat and vulnerability management - Remediation handling - Submit new remediation requests, create tickets, and manage existing remediation activities  
+  
+  - Threat and vulnerability management - Application handling - Apply immediate mitigation actions by blocking vulnerable applications, and manage the blocked apps by unblocking if approved
+
+- Threat and vulnerability management – Manage security baselines assessment profiles - Create and manage profiles to assess if your devices comply with security industry baselines
 
 - Alerts investigation - Manage alerts, start automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files
 
 - Manage security settings in Security Center - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
+
+- Manage endpoint security settings in Microsoft Endpoint Manager - Full access to the "Endpoint Security" area in Microsoft Endpoint Manager, Intune "Endpoint Security Manager" role permissions, configure endpoint security and compliance features including Microsoft Defender for Endpoint onboarding, and the ability to view the "Configuration Management" page in Security Center
 
 - Live response capabilities
 

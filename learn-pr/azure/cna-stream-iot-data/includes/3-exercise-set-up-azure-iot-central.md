@@ -14,10 +14,9 @@ In this exercise, you'll:
 ## Create an Azure IoT Central application
 
 1. On a web browser, go to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
-1. On the **Welcome to IoT Central** page, select the avatar icon (next to the circle with the number 1 on the image below).
+1. On the **Welcome to IoT Central** page, select the avatar icon in the top-right corner.
 1. When prompted, sign in to access the Azure subscription you'll be using in this module.
-1. On the **Welcome to IoT Central** page, expand the vertical menu (next to the circle with the number 2 on the image below) and select the **My apps** menu (next to the circle with the number 3 in the image below) entry.
-1. On the **My apps** page, select **+ New application**.
+1. Select **Build app** in the bottom-right corner of the page.
 1. On the **Build your IoT application** page, review the available application templates, and then on the **Custom app** tile, select **Create app**.
 1. On the **New application** page, configure the following settings, and then select **Create**.
 
@@ -28,20 +27,15 @@ In this exercise, you'll:
    | Application template | Select **Custom application**. |
    | Pricing plan | Select a standard pricing plan and you'll need to set a **Directory**, an **Azure subscription**, and a **Location**. To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
 
-   :::image type="content" source="../media/3-create-application-iot-central-portal.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
-
-   > [!NOTE]
-   > This will display the **Dashboard** page.
-
-   :::image type="content" source="../media/3-iot-central-portal-dashboard.png" alt-text="Screenshot of the Dashboard page of the IoT Central Application portal.":::
+   :::image type="content" source="../media/3-azure-iot-build-app-page.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
 
 ## Create an IoT device template
 
-1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu, in the **App settings** section, select **Device templates**.
+1. In the vertical menu, under **Connect**, select **Device templates**.
 1. On the **Device templates** page, select **Create a device template**.
 1. On the **Select type** page, review the available device templates, select **IoT Device**, and then select **Next: Customize**.
 
-   :::image type="content" source="../media/3-iot-custom-application-device-template-select.png" alt-text="Screenshot of the Select type of device template page of the IoT Central Application portal.":::
+   :::image type="content" source="../media/3-azure-iot-select-device-template.png" alt-text="Screenshot of the Select type of device template page of the IoT Central Application portal.":::
 
 1. On the **Customize** page, in the **Device template name** text box, enter **Raspberry Pi**, and select **Next: Review**.
 1. On the **Review** page, select **Create**.
@@ -68,7 +62,7 @@ In this exercise, you'll:
    | Unit | **Percent** |
    | Display unit | **%** |
 
-   :::image type="content" source="../media/3-iot-custom-application-device-template-humidity.png" alt-text="Screenshot of the IoT Central Application portal, Raspberry Pi device template page, Humidity capability section.":::
+   :::image type="content" source="../media/3-azure-iot-device-template-capabilities.png" alt-text="Screenshot of the IoT Central Application portal, Raspberry Pi device template page, Humidity capability section.":::
 
 1. On the **Raspberry Pi** page, select **+ Add capability**.
 1. In the newly displayed **Capabilities** section, specify the following settings:
@@ -92,11 +86,7 @@ In this exercise, you'll:
    | Unit | **Degree Celsius** |
    | Display unit | **C** |
 
-   :::image type="content" source="../media/3-iot-custom-application-device-template-temperature.png" alt-text="Screenshot of the IoT Central Application portal, Raspberry Pi device template page, Temperature capability section.":::
-
 1. On the **Raspberry Pi** page, select **Save** to save the device template in the draft mode.
-
-   :::image type="content" source="../media/3-iot-custom-application-device-template-confgured-draft.png" alt-text="Screenshot of the IoT Central Application portal, capabilities of the Raspberry Pi device template page.":::
 
 1. On the **Raspberry Pi** page, select **Views**, and on the **Select to add a new view** pane, select **Generate default views**.
 1. In the **Select the applicable views to be generated** section, ensure that the following options are selected:
@@ -106,9 +96,11 @@ In this exercise, you'll:
 
 1. Select **Generate default dashboard view(s)**
 1. On the **Raspberry Pi** page, in the **Views** section, select **About**.
-1. On the **Raspberry Pi** page, in the **Edit view** section, in the **Telemetry** subsection, in the **Select a telemetry** drop-down list, select **humidity**, and then select **Add title** at the bottom of the page.
-1. On the **Raspberry Pi** page, in the **Edit view** section, in the **Telemetry** subsection, in the **Select a telemetry** drop-down list, select **temperature**, and then select **Add title**.
-1. On the **Raspberry Pi** page, select **Save** to save the changes to the device template **About** view.
+1. On the **Raspberry Pi** page, in the **Edit view** section, select **Start with Devices**.
+1. In the **Telemetry** subsection, in the **Select a telemetry** drop-down list, select **humidity**, and then select **Add title** at the bottom of the page.
+1. In the **Start with Devices** tab, in the **Telemetry** subsection, in the **Select a telemetry** drop-down list, select **temperature**, and then select **Add title**.
+1. Select **Save** to save the changes to the device template **About** view.
+1. Select **Back** to return to the **Raspberry Pi** page.
 1. On the **Raspberry Pi** page, select **Publish** to make the device template available for IoT device integration, and when presented with the **Publish this device template to the application** window, select **Publish** again.
 
    :::image type="content" source="../media/3-iot-custom-application-device-template-confgured-published.png" alt-text="Screenshot of the Publish this device template to the application dialog box with the Publish option available.":::
@@ -116,7 +108,7 @@ In this exercise, you'll:
 ## Integrate a simulated IoT device with an Azure IoT Central application
 
 1. On the **Raspberry Pi** page of the IoT Central Application portal, in the vertical menu, select **Devices**.
-1. On the **Devices** page, select **Create a device**.
+1. On the **Devices** page, select **New**.
 1. In the **Create a new device** window, specify the following settings, and then select **Create**:
 
    | Setting | Value |
@@ -126,16 +118,16 @@ In this exercise, you'll:
    | Device template | **Raspberry Pi** |
    | Simulate this device | **No** |
 
-   :::image type="content" source="../media/3-iot-new-device-create.png" alt-text="Screenshot of the new Raspberry Pi device window in the IoT Central Application portal.":::
+   :::image type="content" source="../media/3-azure-iot-create-new-device.png" alt-text="Screenshot of the new Raspberry Pi device window in the IoT Central Application portal.":::
 
 1. On the **Devices** page, select the **raspberrypi-1** entry.
 1. On the **raspberrypi-1** page, select **Connect**.
-1. In the **Device connection** window, record the values of **ID scope**, **Device ID**, and **Primary key** properties, and then select **Close**.
+1. In the **Device connection groups** window, record the values of **ID scope**, **Device ID**, and **Primary key** properties, and then select **Close**.
 
    > [!NOTE]
    > In general, sending keys to a third party website is not recommended, but it's done here for the sake of convenience.
 
-   :::image type="content" source="../media/3-iot-new-device-connection.png" alt-text="Screenshot of the new Raspberry Pi device connection window in the IoT Central Application portal.":::
+   :::image type="content" source="../media/3-azure-iot-connection-window.png" alt-text="Screenshot of the new Raspberry Pi device connection window in the IoT Central Application portal.":::
 
 1. Start another web browser window and navigate to the [Azure IoT Central Connection String Generator](https://dpsgen.z8.web.core.windows.net/?azure-portal=true) page.
 1. On the **Azure IoT Central Connection String Generator** page, paste the values of **Scope**, **Device ID**, and **Device Key** into their respective text boxes, and then select **Get Connection String**.
@@ -154,25 +146,23 @@ In this exercise, you'll:
 
 1. Switch back to the web browser window displaying the **About** view of the **raspberrypi-1** page and monitor the charts displaying humidity and temperature telemetry.
 
-   :::image type="content" source="../media/3-iot-raspberrypi-1-view-about.png" alt-text="Screenshot of the raspberrypi-1 device About view in the IoT Central application window.":::
+   :::image type="content" source="../media/3-azure-iot-raspberry-about-view.png" alt-text="Screenshot of the raspberrypi-1 device About view in the IoT Central application window.":::
 
 1. On the **raspberrypi-1** page, switch to the **Overview** view tab, review the chart displaying both humidity and temperature telemetry, and identify the average humidity and temperature.
 
-   :::image type="content" source="../media/3-iot-raspberrypi-1-view-overview.png" alt-text="Screenshot of the raspberrypi-1 device Overview view in the IoT Central application window.":::
+   :::image type="content" source="../media/3-azure-iot-overview-view.png" alt-text="Screenshot of the raspberrypi-1 device Overview view in the IoT Central application window.":::
 
 1. On the **raspberrypi-1** page, select the **Raw data** view tab, select the first timestamp entry, expand its content, and verify that it contains the humidity and temperature telemetry. The same values display in the **humidity** and **temperature** columns.
 
-   :::image type="content" source="../media/3-iot-raspberrypi-1-view-raw-data.png" alt-text="Screenshot of the raspberrypi-1 device telemetry in the IoT Central application window.":::
+   :::image type="content" source="../media/3-azure-iot-raw-data-view.png" alt-text="Screenshot of the raspberrypi-1 device telemetry in the IoT Central application window.":::
 
-1. In the IoT Central Application portal, in the vertical menu, select **Analytics**.
-1. On the **Analytics** page, in the **Device group** drop-down list, select the **Raspberry Pi - All devices** entry. In the **Telemetry** drop-down list, select **Temperature**, in the **Group by** drop-down list, select **Device ID**, and then select **Analyze**.
-1. On the **Analytics** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window or simply select **Last 15 minutes**, and then select **Save**.
+1. In the IoT Central Application portal, in the vertical menu under **Analyze**, select **Data Explorer**.
+1. On the **Data explorer** page, in the **Device group** drop-down list, select the **Raspberry Pi - All devices** entry. In the **Telemetry** drop-down list, select **Temperature**, in the **Group by** drop-down list, select **Device ID**, and then select **Analyze**.
+1. On the **Data explorer** page, next to the **Timeframe** label, select the calendar icon, adjust the **Start** and **End** timestamp to align with the telemetry collection window or select **Last 15 minutes**, and then select **Save**.
 
-   :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-timeframe.png" alt-text="Screenshot of the IoT Central application window, raspberrypi-1 device telemetry Analytics timeframe settings.":::
+1. On the **Data explorer** page, review the resulting graph.
 
-1. On the **Analytics** page, review the resulting graph.
-
-   :::image type="content" source="../media/3-iot-raspberrypi-1-analytics-graph.png" alt-text="Screenshot of the IoT Central application window raspberrypi-1 device telemetry Analytics page.":::
+   :::image type="content" source="../media/3-azure-iot-data-explorer-timeframe.png" alt-text="Screenshot of the IoT Central application window raspberrypi-1 device telemetry Analytics page.":::
 
 1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page and after the code pane, select **Stop**. Verify that the simulated device no longer sends messages to the Azure IoT Central application.
 1. Keep all the web browser windows open. You'll use them in the next exercise of this module.

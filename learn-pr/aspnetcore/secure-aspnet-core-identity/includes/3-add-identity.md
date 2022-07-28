@@ -149,7 +149,7 @@ The `ConnectionStrings` section in *:::no-loc text="appsettings.json":::* should
 }
 ```
 
-This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer***, change the connection string as follows. Save your changes.
+This connection string points to an instance of SQL Server Express LocalDB by default. **If you are using the *.devcontainer*, you must change the connection string as follows!** Save your changes.
 
 ```json
 "ConnectionStrings": {
@@ -207,6 +207,9 @@ Now that you've verified the connection string, you can generate and run a migra
               CONSTRAINT [PK_AspNetUsers] PRIMARY KEY ([Id])
           );
     ```
+
+    > [!TIP]
+    > Did the `ef` command throw an error about LocalDb not being supported? Make sure you've set your connection string as described above!
 
 1. The SQL Server extension was added to Visual Studio Code (if needed) when you accepted the recommended extensions. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd> to switch to the SQL Server pane.
 1. Expand the nodes under the existing database connection. Expand the **Databases** node, the **RazorPagesPizza** node, and finally the **Tables** node. Note the list of tables. This confirms the migration succeeded.

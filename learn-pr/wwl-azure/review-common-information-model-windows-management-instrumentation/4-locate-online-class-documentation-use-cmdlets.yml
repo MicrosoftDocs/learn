@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-common-information-model-windows-management-instrumentation.locate-online-class-documentation-use-cmdlets
+title: Locate online class documentation by using CIM and WMI cmdlets
+metadata:
+  title: Locate online class documentation by using CIM and WMI cmdlets
+  description: "Locate online class documentation by using CIM and WMI cmdlets"
+  ms.date: 07/22/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-locate-online-class-documentation-use-cmdlets.md)]

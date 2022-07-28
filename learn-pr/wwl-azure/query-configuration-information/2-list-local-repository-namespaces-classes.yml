@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-configuration-information.list-local-repository-namespaces-classes
+title: List local repository namespaces and classes by using CIM and WMI
+metadata:
+  title: List local repository namespaces and classes by using CIM and WMI
+  description: "List local repository namespaces and classes by using CIM and WMI"
+  ms.date: 07/22/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-list-local-repository-namespaces-classes.md)]

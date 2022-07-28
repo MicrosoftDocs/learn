@@ -158,6 +158,7 @@ Event Hubs represents the "front door" for an event pipeline, often called an *e
 9.  Commit and push your changes to the remote repository using the following commands.
     
     ```
+    cd ~/projects/spring-petclinic-microservices-config
     git add .
     git commit -m 'added event hub'
     git push
