@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.build-blazor-hybrid
+metadata:
+  title: Build a mobile and desktop app with Blazor Hybrid and .NET MAUI
+  description: Learn how to set up your development environment and build your first cross-platform hybrid app with Blazor, .NET MAUI, and C#.
+  ms.date: 07/22/2022
+  author: jamesmontemagno
+  ms.author: jamont
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a mobile and desktop app with Blazor Hybrid and .NET MAUI
+summary: Learn how to set up your development environment and build your first cross-platform hybrid app with Blazor, .NET MAUI, and C#.
+abstract: | 
+  In this module, you will:
+  - Configure your local environment for Blazor Hybrid development with Visual Studio
+  - Learn the basic architecture of a Blazor Hybrid app
+  - Create a new Blazor Hybrid project powered by .NET MAUI
+  - Add client-side logic to a Blazor Hybrid app
+  - Access platform features for mobile and desktop with .NET MAUI
+  - Deploy a Blazor Hybrid app from Visual Studio
+prerequisites: |
+  - Visual Studio 2022 with the MAUI workload installed
+  - Familiarity with C# and .NET
+  - Basic knowledge of web app concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- dotnet
+- aspnet-core
+- dotnet-core
+- blazor
+- dotnet-maui
+- vs
+subjects:
+- development-tools
+units:
+- learn.build-blazor-hybrid.bh-introduction
+- learn.build-blazor-hybrid.bh-understand-blazor-hybrid
+- learn.build-blazor-hybrid.bh-exercise-configure-environment
+- learn.build-blazor-hybrid.bh-blazor-components
+- learn.build-blazor-hybrid.bh-exercise-add-component
+- learn.build-blazor-hybrid.bh-csharp-razor-binding
+- learn.build-blazor-hybrid.bh-exercise-razor-binding
+- learn.build-blazor-hybrid.bh-platform-features
+- learn.build-blazor-hybrid.bh-exercise-platform-features
+- learn.build-blazor-hybrid.bh-summary
+badge:
+  uid: learn.build-blazor-hybrid.badge

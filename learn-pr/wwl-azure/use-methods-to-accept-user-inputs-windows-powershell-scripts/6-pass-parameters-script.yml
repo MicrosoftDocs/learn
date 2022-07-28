@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.pass-parameters-script
+title: Pass parameters to a Windows PowerShell script
+metadata:
+  title: Pass parameters to a Windows PowerShell script
+  description: "Pass parameters to a Windows PowerShell script"
+  ms.date: 07/27/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-pass-parameters-script.md)]
