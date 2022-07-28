@@ -31,18 +31,18 @@ quiz:
       explanation: "Application Provisioning is used for identity management, not for business applications."
   - content: "What is NOT one of the primary benefits of Application Provisioning?"
     choices:
-    - content: "Maximizing the efficiency and accuracy of provisioning processes."
+    - content: "Maximizing the efficiency and accuracy of the provisioning processes."
       isCorrect: false
-      explanation: ""
+      explanation: "Application Provisioning maximizes the efficiency and accuracy of the provisioning process."
     - content: "Saving on costs associated with hosting and maintaining custom-developed provisioning solutions and scripts."
       isCorrect: false
-      explanation: ""
+      explanation: "Application Provisioning saves costs associated with hosting and maintaining custom-developed provisioning solutions and scripts."
     - content: "Securing your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
       isCorrect: false
-      explanation: ""
+      explanation: "Application Provisioning secures your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
     - content: "Easily importing a large number of users into a particular SaaS application or system."
       isCorrect: false
-      explanation: ""
+      explanation: "Application Provisioning let's you easily import large numbers of users into a particular SaaS application or system."
     - content: "Optimizes software updates on computers in your organization."
       isCorrect: true
       explanation: "Application Provisioning ensures that you can easily provision users between systems."
