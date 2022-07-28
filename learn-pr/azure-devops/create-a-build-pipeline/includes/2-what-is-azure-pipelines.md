@@ -58,7 +58,7 @@ A *build agent* :::image type="icon" source="../../shared/media/callout-03.png":
 
 The final product of the pipeline is a *build artifact* :::image type="icon" source="../../shared/media/callout-04.png":::. Think of an artifact as the smallest compiled unit that we need to test or deploy the app. For example, an artifact can be:
 
-* A Java or .NET app packaged into a .jar or .zip file.
+* A Java or .NET app packaged into a *.jar* or *.zip* file.
 * A C++ or JavaScript library.
 * A virtual machine, cloud, or Docker image.
 
@@ -74,7 +74,7 @@ Now that you and the team are familiar with Azure Pipelines, let's discuss a few
 
 ### Build agents
 
-As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software, you need at least one agent. As you add more code and people, you'll eventually need more than one. Let's examine build agents in a bit more depth.
+As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software, you need at least one agent. As you add more code and people, you'll eventually need more than one agent. Let's examine build agents in a bit more depth.
 
 ### Differences between implementing hosted and private agents
 
@@ -90,7 +90,7 @@ You can install the agent on Linux, macOS, or Windows machines. You can also ins
 
 ### Agent pools
 
-Instead of managing each agent individually, you can organize agents into agent pools. An agent pool defines the sharing boundary for all agents in that pool. In Azure Pipelines, agent pools are scoped to the Azure DevOps organization, so you can share an agent pool across projects.
+Instead of managing each agent individually, you can organize agents into agent pools. An agent pool defines the sharing boundary for all agents in that pool. In Azure Pipelines, agent pools are scoped to the Azure DevOps organization, so that you can share an agent pool across projects.
 
 A project agent pool provides access to an organization agent pool. When you create a build or release pipeline, you specify which pool it uses. Pools are scoped to your project, so you can only use them across build and release pipelines within a project.
 
@@ -104,11 +104,11 @@ If you're a project team member, you can create and manage agent build queues fr
 
 Service endpoints are a way for Azure DevOps to connect to external systems or services. They're bundles of securely stored properties that include but aren't limited to:
 
-* Service name.
-* Description.
-* Server URL.
-* Certificates or tokens.
-* User names and passwords.
+* Service name
+* Description
+* Server URL
+* Certificates or tokens
+* User names and passwords
 
 Extensions are then able to access the service endpoint to get the stored details to perform the necessary operations on that service.
 
@@ -128,7 +128,7 @@ Here are some steps to take to plan for concurrent pipelines.
 
 #### Determine how many parallel jobs you need
 
-Begin by seeing if the free tier offered in your organization is enough for your teams. When you've reached the per-month limit for the free tier of Microsoft-hosted parallel jobs, you can start by buying one parallel job. As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed. A simple rule of thumb is to estimate that you'll need one parallel job for every four-to-five users in your organization.
+Begin by seeing if the free tier offered in your organization is enough for your teams. When you've reached the per-month limit for the free tier of Microsoft-hosted parallel jobs, you can start by buying one parallel job. As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed. A simple rule of thumb is to estimate that you'll need one parallel job for every four to five users in your organization.
 
 #### Think about your scenario
 
