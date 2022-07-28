@@ -4,8 +4,8 @@ title: Introduction
 metadata:
   unitType: introduction
   title: introduction
-  description: "Learn how Azure Application Provisioning works and how it can be used to automatically provision users from other applications."
-  ms.date: 6/6/2022
+  description: Understand how Azure Active Directory application provisioning works with SCIM.
+  ms.date: 7/28/2022
   author: kenwith
   ms.author: kenwith
   ms.topic: interactive-tutorial
