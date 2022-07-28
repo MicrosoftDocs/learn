@@ -10,7 +10,7 @@ Windows PowerShell superseded the Windows command-line interface (**cmd.exe**) a
 - Chaining commands that use the Pipeline feature.
 - A robust in-console help system
 
-Initially, Windows PowerShell was a platform built on the .NET Framework and only worked on Windows operating systems. However, with its recent releases, PowerShell uses the .NET Core and can run on Windows, MacOS, and Linux platforms. Due to their multi-platform support, these recent releases are referred to as PowerShell (rather than Windows PowerShell).
+Initially, Windows PowerShell was a platform built on the .NET Framework and only worked on Windows operating systems. However, with its recent releases, PowerShell uses the .NET Core and can run on Windows, macOS, and Linux platforms. Due to their multi-platform support, these recent releases are referred to as PowerShell (rather than Windows PowerShell).
 
 ## A scripting language
 
@@ -45,7 +45,7 @@ Windows PowerShell is an OS component, so it receives the same lifecycle support
 
 ### PowerShell
 
-PowerShell is shipped, installed, and configured separately from Windows PowerShell. First released as PowerShell Core 6.0 in 2018, it was the first version that offered multi-platform support, extending its availability to MacOS and Linux operating systems.
+PowerShell is shipped, installed, and configured separately from Windows PowerShell. First released as PowerShell Core 6.0 in 2018, it was the first version that offered multi-platform support, extending its availability to macOS and Linux operating systems.
 
 > [!NOTE]
 > The latest version of PowerShell is PowerShell 7.2, available via Microsoft Update.
@@ -65,7 +65,7 @@ The following table provides a general timeline of the major PowerShell releases
 | PowerShell 7.2 | November 2021     | Built on .NET 6.0.                                           |
 | PowerShell 7.1 | November 2020     | Built on .NET 5.0.                                           |
 | PowerShell 7.0 | March 2020     | Built on .NET Core 3.1.                                      |
-| PowerShell 6.0 | September 2018    | Built on .NET Core 2.0. First release that's installable on Windows, Linux, and MacOS. |
+| PowerShell 6.0 | September 2018    | Built on .NET Core 2.0. First release that's installable on Windows, Linux, and macOS. |
 | PowerShell 5.1 | August 2016     | Released in Windows 10 Anniversary Update and Windows Server 2016 and as part of Windows Management Framework (WMF) 5.1. |
 | PowerShell 5.0 | February 2016     | Integrated in Windows 10 version 1511. Released in Windows Management Framework (WMF) 5.0. Can be installed on Windows Server 2008 R2, Windows Server 2012, Windows 10, Windows 8.1 Enterprise, Windows 8.1 Pro, and Windows 7 SP1. |
 | PowerShell 4.0 | October 2013     | Integrated in Windows 8.1 and Windows Server 2012 R2. Can be installed on Windows 7 SP1, Windows Server 2008 SP1, and Windows Server 2012. |
