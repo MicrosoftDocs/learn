@@ -19,8 +19,8 @@ Guided project - Analyze logs in Azure Monitor with Kusto Query Language
 ## Prerequisites
 
 - A Log Analytics workspace with log data.
-- Familiarity with database structures like tables, columns, and rows.
-- Familiarity with Kusto Query Language operators like `summarize`, `join`, and `render`, and aggregation functions like `percentile`.
+- Knowledge of database structures like tables, columns, and rows.
+- Ability to write Kusto Query Language queries at a novice to intermediate level.
 
 ## Summary
 
@@ -56,7 +56,9 @@ Identify the subtasks of module title.
     
     You're a data scientist at a retail chain that uses Azure Monitor to monitor the machines in its retail stores. 
 
-    To anticipate and address problems with the virtual machines running in the stores, you want to:
+    The chain is expanding and the company has experienced some computer performance issues with the growing number of transactions at stores and between stores.
+
+    To identify current issues and mitigate future problems with the computers running in the stores, you want to:
 
     - Analyze monitoring agent health.
     - Identify machines with high CPU usage that might need to be upgraded.
