@@ -56,35 +56,28 @@ Identify the subtasks of module title.
     
     You're a data scientist at a retail chain that uses Azure Monitor to monitor the machines in its retail stores. 
 
-    The chain is expanding and the company has experienced some computer performance issues with the growing number of transactions at stores and between stores.
+    The chain is expanding and, with the growing number of transactions at stores and between stores, the company has experienced some computer performance issues.
 
-    To identify current issues and mitigate future problems with the computers running in the stores, you want to:
-
-    - Analyze monitoring agent health.
-    - Identify machines with high CPU usage that might need to be upgraded.
-    - Summarize free space statistics by computer. 
+    To identify current issues and mitigate future problems with the computers running in the chain's stores.
     
 
-1. Characterize the data you need for your inquiry and compare with your log data
-    
-    **Characterize your inquiry**
+1. Prepare: Characterize the data you need for your inquiry and compare with your log data
     
     To gain business or operational insights from log data, you’ll: 
 
-    - Examine the raw data you have in your logs.
-    - Identify data that is relevant to your inquiry. 
-    - Perform operations on the data, if necessary.
-
+    - Characterize your inquiry. 
+        In this step, you'll:
+        - Clearly define your questions. What type of insights do you want to gain from your inquiry?
+        - Assess what data you need to have to answer these questions. What type of data can help you answer your question?
+    - Assess your log data.
+        In this step, you'll:
+        - Examine the raw data you have in your logs. Which tables hold the data you're looking for? Is the data in one table sufficient to answer your question or do you need additional information from other tables?
+        - Identify data that is relevant to your inquiry. Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights? Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources?
+    - Use KQL to extract and transform log data to address your questions.
+        In this step, you'll write queries to: 
+        - Extract the relevant data. 
+        - Transform data by converting units of measure, changing the way you present and label data, and performing other calculations. 
     
-    - What type of insights do you want to gain from your inquiry?
-    - What type of data can help you answer your question?
-    - Which tables hold this type of data?
-    - Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights?
-    - Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources? 
-    - Is the raw data in the table sufficient to answer your question, or do you need to perform other calculations using this data?
-    - Do you need additional information from other tables to address your question? 
-    
-
 1. Exercise: Analyze virtual machine agent health
 
     Scenario 1A: Identify machines that haven't sent a heartbeat in the past five minutes but did send one the past 48 hours (in other words, recently active machines).
