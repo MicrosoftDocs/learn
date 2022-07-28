@@ -2,7 +2,7 @@
 
 ## Electricity and carbon
 
-Most people think electricity is clean. When we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through burning fossil fuels &mdash; [usually coal](https://ourworldindata.org/grapher/world-electricity-by-source) &mdash; and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.
+Most people think electricity is clean. When we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through burning fossil fuels&mdash;[usually coal](https://ourworldindata.org/grapher/world-electricity-by-source)&mdash;and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.
 
 Since we can draw a direct line from electricity to carbon emissions, electricity can be considered one of the proxies for carbon.
 
@@ -22,11 +22,11 @@ Electricity is often reported as either Power or Energy, which are two different
 
 - Energy is the total amount of electricity used, the standard unit for Energy is Joules or J.
 
-- Power is the rate of electricity consumed per unit time; the standard unit of Energy is Watt or W. A single Watt is one Joule per second.
+- Power is the rate of electricity consumed per unit time; the standard unit of Power is Watt or W. A single Watt is one Joule per second.
 
 A common way of referring to energy consumption is _Power over a unit of Time, such as Watt-seconds or Kilowatt-hours_. For example:
 
-- 20 Watt-seconds or <nobr>20 Ws</nobr> is the amount of energy you would get if <nobr>20 W</nobr> were run for one second. Since one Watt is one Joule per second, this is 20 Joules.
+- 20 Watt-seconds or <nobr>20 Ws</nobr> is the amount of energy you would get if <nobr>20 W</nobr> were run for one second. Since one Watt is one Joule per second, this value is 20 Joules.
 
 - 20 Kilowatt-hours or <nobr>20 kWh</nobr> is the amount of energy you would get if 20,000 Watts were running for one hour.
 
