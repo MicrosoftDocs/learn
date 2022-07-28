@@ -31,7 +31,7 @@ units:
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.explore-data
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.create-training-pipeline
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.evaluate-model
-- learn.wwl.create-classification-model-with-azure-machine-learning-designer.inference-pipeline
+- learn.wwl.create-classification-model-with-azure-machine-learning-designer.knowledge-check
 - learn.wwl.create-classification-model-with-azure-machine-learning-designer.summary
 badge:
   uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.badge
