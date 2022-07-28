@@ -15,6 +15,7 @@ Azure Machine Learning studio is a web portal for machine learning solutions in 
 ![Screenshot of the Azure Machine Learning studio interface.](../media/studio-home.png)
 
 ## Azure Machine Learning compute 
+
 At its core, Azure Machine Learning is a service for training and managing machine learning models, for which you need compute resources on which to run the training process. Compute targets are cloud-based resources on which you can run model training and data exploration processes.
 
 In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), you can manage the compute targets for your data science activities. There are four kinds of compute resource you can create:
