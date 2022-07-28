@@ -37,27 +37,21 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "Application Provisioning can be used to automatically provision users from a human resources application into Azure Active Directory."
+  - content: "Application Provisioning can be used to automatically create users from a human resources application into Azure Active Directory."
     choices:
-    - content: ""
+    - content: "True"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "One of the primary purposes of app provisioning is to automatically create (provision) users from a human resources system into Azure Active Directory."
+    - content: "False"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: true
       explanation: ""
   - content: "Application Provisioning uses System for Cross-domain Identity Management (SCIM) to provision users."
     choices:
-    - content: ""
+    - content: "True"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "SCIM is an industry standard and used to manage identities between systems."
+    - content: "False"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: true
       explanation: ""
   - content: ""
     choices:
