@@ -1,3 +1,11 @@
+## What is SCIM?
+
+To help automate provisioning and deprovisioning, apps expose proprietary user and group APIs. But anyone who's tried to manage users in more than one app will tell you that every app tries to perform the same actions, such as creating or updating users, adding users to groups, or deprovisioning users. Yet, all these actions are implemented slightly differently by using different endpoint paths, different methods to specify user information, and a different schema to represent each element of information.
+
+To address these challenges, the System for Cross-domain Identity Management (SCIM) specification provides a common user schema to help users move into, out of, and around apps. SCIM is becoming the de facto standard for provisioning and, when used with federation standards like Security Assertions Markup Language (SAML) or OpenID Connect (OIDC), provides administrators an end-to-end standards-based solution for access management.
+
+For detailed guidance on developing a SCIM endpoint to automate the provisioning and deprovisioning of users and groups to an application, see [Build a SCIM endpoint and configure user provisioning](use-scim-to-provision-users-and-groups.md). For pre-integrated applications in the gallery, such as Slack, Azure Databricks, and Snowflake, you can skip the developer documentation and use the tutorials provided in [Tutorials for integrating SaaS applications with Azure Active Directory](../../active-directory/saas-apps/tutorial-list.md).
+
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
