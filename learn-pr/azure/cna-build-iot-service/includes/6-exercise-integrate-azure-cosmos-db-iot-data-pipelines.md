@@ -31,7 +31,7 @@ To perform this exercise, you need:
    | --- | --- |
    | Application Name | Enter **adatum-iot-sample-application**. |
    | Application URL | Enter a unique name consisting of lower-case letters, digits, or dashes, and starting with a letter. |
-   | Pricing plan | Select one of the standard pricing plans. Select your **Directory**, **Azure subscription**, and **Location**. To learn about creating IoT Central applications, see [Create an IoT Central application](https://docs.microsoft.com/azure/iot-central/core/howto-create-iot-central-application). To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
+   | Pricing plan | Select one of the standard pricing plans. Select your **Directory**, **Azure subscription**, and **Location**. To learn about creating IoT Central applications, see [Create an IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-create-iot-central-application?view=o365-worldwide). To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
 
    :::image type="content" source="../media/6-iot-new-application.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
 
