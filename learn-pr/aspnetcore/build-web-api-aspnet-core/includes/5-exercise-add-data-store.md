@@ -31,8 +31,6 @@ In this unit, that data store is a simple local in-memory caching service. In a 
     }
     ```
 
-    [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
-
 ## Add a data service
 
 1. Run the following command to create a *Services* folder:
@@ -41,7 +39,7 @@ In this unit, that data store is a simple local in-memory caching service. In a 
     mkdir Services
     ```
 
-    Select the folder in Visual Studio Code and add a new file called *PizzaService.cs*. 
+    Select the folder in Visual Studio Code and add a new file called *PizzaService.cs*.
 
     ![Screenshot of Visual Studio Code that shows adding a new file to the Services folder.](../media/add-pizza-service-file.png)
 
@@ -95,7 +93,7 @@ In this unit, that data store is a simple local in-memory caching service. In a 
         }
     }
     ```
-    
+
     This service provides a simple in-memory data caching service with two pizzas by default. Our web API will use that service for demo purposes. When you stop and start the web API, the in-memory data cache will be reset to the two default pizzas from the constructor of `PizzaService`.
 
 ## Build the web API project
