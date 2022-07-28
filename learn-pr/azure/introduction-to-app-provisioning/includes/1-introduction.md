@@ -1,4 +1,4 @@
-In Azure Active Directory (Azure AD), the term *application provisioning*, or simply *app provisioning*, refers to automatically creating user identities and roles for applications. For example, you might enter new employee information in a human resources system and want those users automatically created (provisioned) in your organizations Azure AD tenant. Likewise, you might create new users in your Azure AD tenant and want those users automatically provisioned in non-Microsoft software services that your organization uses.
+In Azure Active Directory (Azure AD), the term *application provisioning*, or simply *app provisioning*, refers to automatically creating users. For example, you might enter new employee information in a human resources system and want the user automatically created (provisioned) in your organizations Azure AD tenant. Likewise, you might create new users in your Azure AD tenant and want the user automatically provisioned in non-Microsoft software services that your organization uses.
 
 
 

@@ -10,7 +10,7 @@ metadata:
   ms.author: kenwith
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 2
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -37,58 +37,19 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Application Provisioning can be used to automatically create users from a human resources application into Azure Active Directory."
     choices:
-    - content: ""
+    - content: "True"
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: "False"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "One of the primary purposes of app provisioning is to automatically create (provision) users from a human resources system into Azure Active Directory."
+  - content: "Application Provisioning uses System for Cross-domain Identity Management (SCIM) to provision users."
     choices:
-    - content: ""
+    - content: "True"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "SCIM is an industry standard and used to manage identities between systems. Application Proxy uses SCIM to provision users."
+    - content: "False"
       isCorrect: false
       explanation: ""

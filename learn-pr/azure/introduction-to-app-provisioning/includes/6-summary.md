@@ -14,10 +14,11 @@
     * Performance
     * Conditionals
     * Connectors"
-
--->
 TODO: 1-2 sentences restating the module's "evaluate" goal
 TODO: bulleted list of the decision criteria
+-->
+
+Application Provisioning is used to automatically create (provision) users between systems. Application Provisioning uses a standard called System for Cross-domain Identity Management (SCIM).
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -26,9 +27,11 @@ TODO: bulleted list of the decision criteria
     Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
 
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
- -->
 
 TODO: add your discussion of applying the criteria
+ -->
+
+
 
 <!-- 3. Describe the business impact ----------------------------------------------------
 
@@ -37,8 +40,10 @@ TODO: add your discussion of applying the criteria
     Heading: none; depending on length, you can put this in a separate paragraph or combine this with the previous section into a single paragraph
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
- -->
+
 TODO: describe the business impact
+ -->
+
 
 <!-- 4. References (optional) ----------------------------------------------------
 
