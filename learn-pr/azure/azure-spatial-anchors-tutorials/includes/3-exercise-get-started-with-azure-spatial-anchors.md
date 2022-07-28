@@ -3,7 +3,16 @@ In this unit, you'll explore the steps required to:
 - Start and stop an Azure Spatial Anchors session.
 - Create, upload, and download spatial anchors on a single device.
 
-As a result of completing the prerequisites for this learn module, you should already have a Unity project that's set up and configured for OpenXR and MRTK2. Open that project and continue on with the steps below.
+As a result of completing the prerequisites for this learn module, you should already have a Unity project that's set up and configured for OpenXR and MRTK2. Open that project and then check to ensure that you have the proper capabilities selected:
+
+1. Navigate to **Edit > Project Settings > Player > Publishing Settings**.
+1. Scroll down to the **Capabilities** section and select the following if they're not already selected:
+
+- **SpatialPerception**
+- **InternetClient**
+- **PrivateNetworkClientServer**
+
+When you're finished, close the **Project Settings** window and continue on with the steps below.
 
 ## Choose configuration options
 
@@ -11,38 +20,59 @@ There's one configuration option that we need to change: occlusion. MRTK2 bases 
 
 1. In the **Hierarchy**, select the **Mixed Reality Toolit** object. This causes the Mixed Reality Toolkit (MRTK) profile to appear in the **Inspector.**
 1. In the **Inspector**, at the top of the **MixedReality Toolkit** component, click the drop-down that displays **DefaultMixedRealityToolkitConfigurationProfile** and change that setting to **DefaultHoloLens2ConfigurationProfile**.
+1. In the vertical column of subsystems along the left side of the **Inspector**, select **Spatial Awareness**.
 
-    We need to change an option in the Spatial Awareness subsystem, but you'll notice that it's grayed out. To make it available, you must clone the default profile.
+    We need to change an option in the Spatial Awareness subsystem, but it's currently grayed out.
+
+    :::image type="content" source="../media/005-spatial-awareness-grayed-out.png" alt-text="Screen shot of the MRTK Spatial Awareness subsystem selected but grayed out.":::
+
+    To make it available, you must clone the default profile.
 
 1. Click the **Clone** button.
-1. In the **Clone Profile** window, note that in the **Profile Name** field., Unity provides a default name of **New MixedRealityToolkitconfigurationProfile**. You can change the name to anything you want, but for this learn module we'll stay with the name provided by Unity.
+1. In the **Clone Profile** window, note that in the **Profile Name** field, Unity provides a default name of **New MixedRealityToolkitconfigurationProfile**. You can change the name to anything you want, but for this learn module we'll stay with the name provided by Unity.
 
     :::image type="content" source="../media/001-clone-profile-window.png" alt-text="Screen shot of the Clone Profile window and default clone name provided by Unity.":::
 
 1. Click the **Clone** button in the **Clone Profile** window. 
 1. Note that the **Enable Spatial Awareness System** option is now available. 
 
-    :::image type="content" source="../media/001-clone-profile-window.png" alt-text="Screen of the Enable Spatial Awareness System option now being available.":::
+    :::image type="content" source="../media/002-enable-spatial-awareness.png" alt-text="Screen of the Enable Spatial Awareness System option now being available.":::
 
     Select this option.
 
-1. The Spatial Awareness system has its own default profile (1). Like the earlier default profile, it can't be altered, so the **Add Spatial Observer** section is grayed out (2).
+1. The Spatial Awareness system has its own default profile (see "1" in the image below). Like the earlier default profile, it can't be altered, so the **Add Spatial Observer** section is grayed out (see "2" in the image below).
 
     :::image type="content" source="../media/003-spatial-awareness-profile.png" alt-text="Screen of the default Spatial profile and its options grayed out.":::
 
-    You must clone this profile, too. 
+    You must clone this profile, too.
 
 1. Click the **Clone** button to the right of the default profile name.
 1. In the **Clone Profile** window, click the **Clone** button to accept the clone name provided by Unity.
 1. There are now three Spatial Observers available as drop-downs. Click the first one, **XR SDK Windows Mixed Reality Spatial Mesh Observer**, to reveal its contents.
 1. This spatial observer also has its own default profile that must be cloned. Click the **Clone** button, and then in the **Clone Profile** window, click **Clone** to accept the name provided by Unity and clone the default profile.
-1. Scroll down to the last section in the profile, **Display Settings**, and then click the **Display Option** drop-down and select **Occlusion**.
+1. Scroll down to the last section in the profile, **Display Settings**, then click the **Display Option** drop-down, and then select **Occlusion**.
 
     :::image type="content" source="../media/004-display-options-occlusion.png" alt-text="Screen of the Spatial Observer section Display Settings with Occlusion selected.":::
 
 ## Install in-built Unity packages and import the tutorial assets
 
-[!INCLUDE[](includes/switch-platform.md)]
+1. On the menu bar, select **Window** > **Package Manager**. 
+
+1. Verify that AR Foundation version 4.1.7 is installed.
+
+    :::image type="content" source="../../media/006-install-package.png" alt-text="Screenshot of selections for verifying the A R Foundation version for Package Manager." :::
+
+## Import the tutorial assets
+
+1. Add AzurespatialAnchors SDK V2.12, or the latest version, to your project by following [this tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+
+2. Download and import the following Unity custom packages in this order:
+
+    * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/getting-started-v2.7.2)
+    * < ASA 2.12 package with repairs from Claudio >
+
+    > [!Note]
+    > If you see any CS0618 warnings that say "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" is obsolete, you can ignore them.
 
 ## Prepare the scene
 
@@ -55,10 +85,10 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
     * **Instructions** prefabs
     * **ParentAnchor** prefabs
 
-    :::image type="content" source="../media/prefabs.png" alt-text="Screenshot of prefabs added to the Hierarchy pane." lightbox="../media/prefabs.png":::
+    :::image type="content" source="../media/007-prefabs.png" alt-text="Screenshot of prefabs added to the Hierarchy pane." :::
 
     > [!Tip]
-    > If you find the large icons in your scene (for example, the large framed "T" icons) distracting, you can hide them by [switching the Gizmos toggle](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the preceding image.
+    > If you find the large icons in your scene (for example, the large framed "T" icons) distracting, you can hide them by [opening the Gizmos drop-down](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) and turning off the display of icons for individual objects.
 
 1. In the **Hierarchy** pane, select the **MixedRealityToolkit** object.
 1. In the **Inspector** pane, use the **Add Component** button to add the following components:
@@ -78,7 +108,7 @@ In this section, you'll add scripts to the scene to create a series of button ev
 1. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
 1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StartAzureSession ()**. This function will be executed when the event is triggered.
 
-    :::image type="content" source="../media/add-component.png" alt-text="Unity with the StartAzureSession button's OnClick event configured." lightbox="../media/add-component.png":::
+    :::image type="content" source="../media/008a-start-azure-session.png" alt-text="Unity with the StartAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **StopAzureSession**
 1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
@@ -86,65 +116,55 @@ In this section, you'll add scripts to the scene to create a series of button ev
 1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
 
 
-    :::image type="content" source="../media/start-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." lightbox="../media/start-azure-session.png":::
-
-    :::image type="content" source="../media/stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." lightbox="../media/stop-azure-session.png":::
+    :::image type="content" source="../media/009-stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **CreateAzureAnchor**.
 1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
 1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
 1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor (GameObject)**.
 
-
-    * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **CreateAzureAnchor ()** function.
-
-    :::image type="content" source="../media/create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button's OnClick event configured." lightbox="../media/create-azure-anchor.png":::
+    :::image type="content" source="../media/010-create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **RemoveLocalAnchor**.
 1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
 1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor (GameObject)**.
+1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor (GameObject)**.
+
+    :::image type="content" source="../media/011-remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." lightbox="../media/012-remove-local-anchor.png":::
 
 
-1. On the **Hierarchy** pane, select the **RemoveLocalAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+1. In the **Hierarchy** pane in the **ButtonParent** child list, select **FindAzureAnchor**.
+1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
+1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **FindAzureAnchor (GameObject)**.
 
-    :::image type="content" source="../media/remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." lightbox="../media/remove-local-anchor.png":::
+     :::image type="content" source="../media/012-find-azure-anchor.png" alt-text="Screenshot of Unity with the FindAzureAnchor button's OnClick event configured." :::
 
-1. In the **Hierarchy** pane, select the **FindAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
+1. In the **Hierarchy** pane in the **ButtonParent** child list, select **DeleteAzureAnchor**.
+1. In the **Inspector** pane, navigate to the **Button Config Helper (Script)** component.
+1. In the **Hierarchy**, click the the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Click()** event's **None (Object)** field.
+1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **DeleteAzureAnchor (GameObject)**.
 
-    * Assign the **ParentAnchor** object to the **None (Object)** field.
-    * From the **No Function** dropdown list, select **AnchorModuleScript** > **FindAzureAnchor ()** to set this function as the action to be executed when the event is triggered.
-
-     :::image type="content" source="../media/find-azure-anchor.png" alt-text="Screenshot of Unity with the FindAzureAnchor button's OnClick event configured." lightbox="../media/find-azure-anchor.png":::
-
-6. On the **Hierarchy** pane, select the **DeleteAzureAnchor** button. Then on the **Inspector** pane, configure the **Button Config Helper (Script)** component's **On Click** () event as follows:
-
-    * Assign the **ParentAnchor** object to the **None (Object)** field.
-    * From the **No Function** dropdown list, select **AnchorModuleScript** > **DeleteAzureAnchor ()** to set this function as the action to be executed when the event is triggered.
-
-    :::image type="content" source="../media/delete-azure-anchor.png" alt-text="Screenshot of Unity with the DeleteAzureAnchor button's OnClick event configured." lightbox="../media/delete-azure-anchor.png":::
+    :::image type="content" source="../media/013-delete-azure-anchor.png" alt-text="Screenshot of Unity with the DeleteAzureAnchor button's OnClick event configured." :::
 
 ## Connect the scene to the Azure resource
 
-1. On the **Hierarchy** pane, select the **ParentAnchor** object. Then on the **Inspector** pane, locate the **Spatial Anchor Manager** (Script) component. 
-
+1. In the **Hierarchy** pane, select the **ParentAnchor** object. 
+1. In the **Inspector** pane, locate the **Spatial Anchor Manager** (Script) component. 
 1. Configure the **Credentials** section with the credentials from the Azure Spatial Anchors account that you created as part of the prerequisites for this tutorial series:
 
    * In the **Spatial Anchors Account ID** field, paste the **Account ID** value from your Azure Spatial Anchors account.
    * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** value from your Azure Spatial Anchors account.
    * In the **Spatial Anchors Account Domain** field, paste the **Account Domain** value from your Azure Spatial Anchors account.
 
-   :::image type="content" source="../media/spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured." lightbox="../media/spatial-anchor-manager.png":::
+   :::image type="content" source="../media/015-spatial-anchor-manager.png" alt-text="Screenshot of Unity with Spatial Anchor Manager configured." lightbox="../015-media/spatial-anchor-manager.png":::
 
 ## Try the basic behaviors of Azure Spatial Anchors
-
-> [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
 
 Azure Spatial Anchors can't run in Unity. To test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
 > [!Tip]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, see the [Building your application to HoloLens 2](/learn/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, see the [Building your application to HoloLens 2](/learn/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials) article starting at the section named "(Optional) Build and deploy the application."
 
 When the app runs on your device, follow the on-screen instructions displayed on the **Azure Spatial Anchor Tutorial Instructions** panel:
 
@@ -160,28 +180,33 @@ When the app runs on your device, follow the on-screen instructions displayed on
 10. Stop the Azure session.
 
 >[!Caution]
->Azure Spatial Anchors uses the internet to save and load the anchor data. Make sure your device is connected to the internet.
+> Azure Spatial Anchors uses the internet to save and load the anchor data. Make sure your device is connected to the internet.
 
 ## Anchor an experience
 
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. You used a cube to represent and visualize the parent game object with the attached anchor. In this section, you'll anchor an entire experience by placing it as a child of the **ParentAnchor** object.
+In the previous sections, you learned the fundamentals of Azure Spatial Anchors. You used a cube to represent and visualize the parent game object with the attached anchor. In this section, you'll anchor a Mars Rover model by placing it as a child of the **ParentAnchor** object.
 
-1. On the **Hierarchy** pane, select the **ParentAnchor** object. Then on the **Inspector** pane, configure the **Transform** components as follows:
+1. In the **Hierarchy**, select the **ParentAnchor** object. Then in the **Inspector**, make the following changes in the **Transform** component:
 
-    * Change **Scale X** to **1.1**.
-    * Change **Scale Z** to **1.1**.
+    * Change **Scale X** to **1**.
+    * Change **Scale Z** to **1**.
 
-    :::image type="content" source="../media/parent-anchor.png" alt-text="Screenshot of positioning the parent anchor." lightbox="../media/parent-anchor.png":::
+    This gives the **ParentAnchor** object a shape that lets us use it as a platform.
 
-2. On the **Project** pane, go to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder. Then drag the **RoverExplorer_Complete** prefab onto the **Hierarchy** pane to add it to the scene.
+    :::image type="content" source="../media/016-parent-anchor.png" alt-text="Screenshot of positioning the parent anchor." :::
 
-    :::image type="content" source="../media/add-object.png" alt-text="Screenshot of adding an object to the scene." lightbox="../media/add-object.png":::
+1. In the **Project** pane, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder. 
+1. Click and hold on the **RoverExplorer_Complete** prefab, and then drag it into the **Hierarchy** and drop it on the **ParentAnchor** object to make it a child of **ParentAnchor**.
 
-3. With the newly added **RoverModule_Complete** object still selected on the **Hierarchy** pane, drag it to the **ParentAnchor** object to make it a child of the **ParentAnchor** object.
+    :::image type="content" source="../media/017-add-object.png" alt-text="Screenshot of adding an object to the scene." lightbox="../media/017-add-object.png":::
 
-    :::image type="content" source="../media/rover-explorer.png" alt-text="Screenshot of Unity with the RoverExplorer_Complete object set as a child of ParentAnchor." lightbox="../media/rover-explorer.png":::
+1. In the **RoverExplorer_Complete**'s **Transform** component, click the three-dot button and then select **Reset** to move **RoverExplore_Complete** to the origin of **ParentAnchor**.
 
-    If you rebuild the project and deploy the app to your device, you can reposition the entire Rover Explorer experience by moving the resized cube.
+    :::image type="content" source="../media/019-rover-transform.png" alt-text="Screenshot of select the Reset command to mode the object to the origin of its parent." :::
 
-    >[!Tip]
-    >There's a variety of user-experience flows for repositioning. Flows include the use of a repositioning object (such as the cube used in this tutorial), the use of a button to toggle a bounds control that surrounds the experience, and the use of position and rotation gizmos.
+1. Select the Move tool, and then move **RoverExplorer_Complete** up on its Y axis so that it's sitting on top of **ParentAnchor**.
+
+    If you rebuild the project and deploy the app to your device, you can reposition the Rover Explorer model by moving the resized cube.
+
+    > [!Tip]
+    > There are several approaches that you can use for repositioning: the use of a repositioning object (such as the cube used in this tutorial), a button to toggle a bounds control that surrounds the experience, and position and rotation gizmos.
