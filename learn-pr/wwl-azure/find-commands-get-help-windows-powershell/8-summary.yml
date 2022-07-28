@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.specify-security-requirements-for-applications.summary
+uid: learn.wwl.find-commands-get-help-windows-powershell.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
   ms.date: 07/28/2022
   author: wwlpublish
-  ms.author: hrasheed
+  ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
