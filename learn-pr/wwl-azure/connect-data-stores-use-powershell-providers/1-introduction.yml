@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.intro-to-transact-sql.introduction
+uid: learn.wwl.connect-data-stores-use-powershell-providers.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 07/28/2022
   author: wwlpublish
-  ms.author: anrudduc
+  ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
