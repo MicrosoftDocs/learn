@@ -35,7 +35,7 @@ Clear-Item -Path Alias:MyAlias
 
 As with the other providers covered by earlier topics, the providers used to create these drives can have dynamic parameters or properties associated with them. The Alias provider, for example, includes the dynamic parameter *-Options*, which you can use to specify the Options property of an alias.
 
-To understand what you can do with an item that's accessible through a drive, you should review the help for the provider that's used to create the drive. In the help, you can identify any dynamic parameters or properties. You can identify the provider used to create a drive by using the **Get-PSDrive** cmdlet. The you can use the **Get-Help** cmdlet to review the help available for the provider. For example, you could use the command to review help for the Alias provider:
+To understand what you can do with an item that's accessible through a drive, you should review the help for the provider that's used to create the drive. In the help, you can identify any dynamic parameters or properties. You can identify the provider used to create a drive by using the **Get-PSDrive** cmdlet. You can use the **Get-Help** cmdlet to review the help available for the provider. For example, you could use the command to review help for the Alias provider:
 
 ```powershell
 Get-Help About_Alias_Provider
