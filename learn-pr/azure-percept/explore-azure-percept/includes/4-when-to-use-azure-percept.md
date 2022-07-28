@@ -1,10 +1,10 @@
-Now that you understand what Azure Percept is and how it works, this section helps you decide if it’s right for your edge AI needs. We highlight six industries and use cases where Azure Percept can drive value across in the manufacturing, energy, smart cities, smart buildings, connected automotive, retail, and healthcare environments. These are just a few industries where Azure Percept can drive incredible value.
+Now that you understand what Azure Percept is and how it works, this section helps you decide if it’s right for your edge AI needs. **We highlight six industries and use cases where Azure Percept can drive value** across in the manufacturing, energy, smart cities, smart buildings, connected automotive, retail, and healthcare environments. These industries are just a few in which Azure Percept can drive incredible value.
 
 :::image type="content" source="../images/azure-percept-industries.png" border="false" alt-text="Series of photos that depict industries with highlighted use cases for Azure Percept.":::
 
 ## Manufacturing
 
-Manufacturing presents many challenges where you can use edge AI, for example, often decisions must be made near real-time in areas where data connectivity isn't always ideal.
+Manufacturing presents many challenges where you can use edge AI. For example, decisions must often be made in near real-time in areas where data connectivity isn't always ideal.
 
 Here are some use cases that Azure Percept can address in the manufacturing space:
 
@@ -22,7 +22,7 @@ Here are some of the use cases that Azure Percept can address in the energy spac
 
 - **Energy management**. Control and reduce energy consumption for greater efficiency.
 
-- **Supply chain and operational efficiency**. The capability to make the most optimum use of resources (financial, human, technological or physical) to reduce operational costs and reduce time wastage.
+- **Supply chain and operational efficiency**. The capability to make optimum use of resources (financial, human, technological or physical) to reduce operational costs and reduce time wastage.
 
 - **Worker Safety**. The capability to detect dangerous zone (machinery, trench), and worker slip and fall.
 

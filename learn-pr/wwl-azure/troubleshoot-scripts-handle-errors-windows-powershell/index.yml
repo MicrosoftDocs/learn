@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell
+metadata:
+  title: Troubleshoot scripts and handle errors in Windows PowerShell
+  description: "This module covers troubleshooting PowerShell scripts and understanding error messages."
+  ms.date: 07/26/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Troubleshoot scripts and handle errors in Windows PowerShell
+summary: This module covers troubleshooting PowerShell scripts and understanding error messages.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  *   Describe how error messages are stored.
+  *   Explain how to add more troubleshooting information to scripts.
+  *   Describe how to configure breakpoints for troubleshooting.
+  *   Explain how to troubleshoot a script.
+  *   Describe error actions in Windows PowerShell.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-services
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.introduction
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.interpret-error-messages-generated-for-commands
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.add-output-scripts
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.use-breakpoints-scripts
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.interpret-error-actions-for-commands
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.knowledge-check
+- learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.summary
+badge:
+  uid: learn.wwl.troubleshoot-scripts-handle-errors-windows-powershell.badge

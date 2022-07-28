@@ -269,7 +269,7 @@ While SQL is a common language for querying structured datasets, many data analy
 12. In the new empty code cell, add the following code:
 
     ```Python
-    df_counts = df.groupby(df.Category).count()
+    df_counts = df.groupBy(df.Category).count()
     display(df_counts)
     ```
 

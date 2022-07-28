@@ -172,6 +172,10 @@ Conditional Access policies are powerful tools. We recommend excluding the follo
 
 ## Conditional Access Terms of Use (TOU)
 
+:::image type="content" source="../media/create-terms-identity-governance.png" alt-text="Screenshot of the Identity Governance dialog to create new Terms of Use for your cloud solutions.":::
+
+You can create Terms of Use (TOU) for your site in the Identity Governance tools.  Launch the identity governance app, and choose **Terms of use** from the menu.  You have to supply and PDF file with the terms for the user.  You can set up several rules like when the terms will expire, or whether the user has to open them before accepting.  Once created, you can build a custom conditional rule right in identity governance.  Or you can save the terms and use Conditional Access in Azure AD.  To create new Terms of use you fill in the above dialog.
+
 :::image type="content" source="../media/terms-of-use-conditional-access.png" alt-text="Screenshot of the Azure A D conditional access setup page that shows adding Terms-of-Use rules for being able to access resources.":::
 
 The linking of consent (accept terms before access) and conditional access is getting more and more traction. Organizations get the ability to enforce a user to consent to the terms of use. Additionally, organizations can expire the consent given or change the terms of use, and request the user attests again.

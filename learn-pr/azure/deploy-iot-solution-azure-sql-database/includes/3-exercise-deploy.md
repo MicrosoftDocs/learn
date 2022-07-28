@@ -34,7 +34,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In the Azure Cloud Shell on the right-hand side of the screen, enter `pwsh` to switch from bash to PowerShell.
 
-1. Run the following commands in Cloud Shell. Be sure to paste in the entire ssh key. Then, enter a **complex password and, at the prompt, enter your local public IP address, which you obtained in a preceding step.
+1. Run the following commands in Cloud Shell. Be sure to paste in the entire ssh key. Then, enter a **complex password** and, at the prompt, enter your local public IP address, which you obtained in a preceding step.
 
     > [!Note]
     > A **complex password** must consist of:
@@ -48,7 +48,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     ```powershell
     # Collect ssh key
-    $sshPublicKey=Read-Host "Please enter your ssh public key you just created" -MaskInput
+    $sshPublicKey = Read-Host "Please enter your ssh public key you just created" -MaskInput
     # Collect password 
     $adminSqlLogin = "cloudadmin"
     $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
@@ -76,7 +76,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $storageContainer = "iotstoragecontainer$($uniqueID)"
     $networkInterface = "iotnic$($uniqueID)"
     $vNet = "iotvnet$($uniqueID)"
-    $ipAddressName="publicip$($uniqueID)"
+    $ipAddressName = "publicip$($uniqueID)"
     Write-Host "Please note your unique ID for future exercises in this module:"  
     Write-Host $uniqueID
     Write-Host "Your resource group name is:"
@@ -141,7 +141,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     bash
     ```
 
-1. Update the code below and run the the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
+1. Update the code below and run the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
 
     ```bash
     sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d iot-db -i azure-sql-iot/sql_schema/script.sql

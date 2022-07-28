@@ -10,7 +10,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. On the Azure portal home page, under **Azure services**, select **Create a resource**.
 
-1. In **Create a resource**, in the left menu under **Categories**, select **Identity**. Under **Popular Azure services**, for **Azure Active Directory**, select **Create**.
+1. In **Create a resource**, in the left menu under **Categories**, select **Identity**. Under **Popular Azure services**, select **Create** under **Azure Active Directory**.
 
     :::image type="content" source="../media/azure-active-directory-create.png" alt-text="Screenshot that shows the create link for Azure Active Directory under Azure services.":::
 
@@ -69,7 +69,7 @@ Now, let's create a user account.
 
 1. In the Azure AD organization you created, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
-1. In the top menu bar, select **New user**. The **New user** pane appears for *Contoso Marketing Company*.
+1. In the top menu bar, select **New user**, then select **Create new user** in the drop-down. The **New user** pane appears for *Contoso Marketing Company*.
 
 1. Enter the following values for each setting.
 
@@ -78,7 +78,7 @@ Now, let's create a user account.
     - **Name**: *Chris Green*
 
     **Password**
-    - **Show Password**, (*check*), and copy it somewhere you can refer to it later.
+    - Check the **Show Password** box and copy the password somewhere you can refer to it later.
 
 1. Select **Create**. The **All users** pane reappears for *Contoso Marketing Company - Azure Active Directory*. The user is now created and registered to your organization.
 
@@ -88,7 +88,7 @@ You can delete users after they're created.
 
 1. In your **All users** pane for Azure AD organization, from the list, select **Chris Green**.
 
-1. In the top menu bar, select **Delete user**. If you don't see that option, select **More**.
+1. In the top menu bar, select **Delete**. If you don't see that option, select **More**.
 
 1. When you're prompted to confirm your deletion, select **OK**.
 
@@ -98,7 +98,7 @@ You can restore deleted users. View the list of the deleted users, and then rest
 
 1. In your **All users** pane for Azure AD organization, in the left menu pane, select **Deleted users**. You now see all of the users that were deleted within the last 30 days.
 
-1. Select **Chris Green** and in the top menu bar, select **Restore user**.
+1. Select **Chris Green** and in the top menu bar, select **Restore users**.
 
 1. To confirm, select **OK**. The **All users** pane reappears.
 

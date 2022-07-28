@@ -1,5 +1,8 @@
 For scenarios where you need to positively identify individuals, you can train a facial recognition model using face images.
 
+> [!NOTE]
+> As mentioned in the previous unit, recognition models will require getting approved through a [Limited Access policy](https://aka.ms/cog-services-limited-access).
+
 To train a facial recognition model with the Face service:
 
 1. Create a **Person Group** that defines the set of individuals you want to identify (for example, *employees*).
@@ -12,5 +15,5 @@ To train a facial recognition model with the Face service:
 The trained model is stored in your Face (or Cognitive Services) resource, and can be used by client applications to:
 
 - *Identify* individuals in images.
-- *Verify* the identify of a detected face.
+- *Verify* the identity of a detected face.
 - Analyze new images to find faces that are *similar* to a known, persisted face.

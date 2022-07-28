@@ -1,0 +1,58 @@
+### YamlMime:Module
+uid: learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts
+metadata:
+  title: Use methods to accept user inputs in Windows PowerShell scripts
+  description: "This method explains multiple methods for accepting user input in a Windows PowerShell script."
+  ms.date: 07/27/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use methods to accept user inputs in Windows PowerShell scripts
+summary: This method explains multiple methods for accepting user input in a Windows PowerShell script.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Identify values in a script that are likely to change.
+  - Explain how to use Read-Host to accept user input.
+  - Explain how to use Get-Credential to accept user credentials.
+  - Explain how to use Out-GridView to obtain user input.
+  - Obtain user input by using Read-Host, Get-Credential, and Out-GridView.
+  - Explain how to pass parameters to a script.
+  - Obtain user input by using parameters.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-services
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.introduction
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.identify-values-that-might-change
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.use-read-host-cmdlet
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.use-get-credential-cmdlet
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.use-out-gridview-cmdlet
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.pass-parameters-script
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.knowledge-check
+- learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.summary
+badge:
+  uid: learn.wwl.use-methods-to-accept-user-inputs-windows-powershell-scripts.badge
