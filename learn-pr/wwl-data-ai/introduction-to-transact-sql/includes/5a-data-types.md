@@ -217,7 +217,7 @@ Compatible data type values can be implicitly converted as required. For example
 > Implicit and explicit conversions apply to certain data types, and some conversions aren't possible. For more information, use the chart in the [Transact-SQL reference documentation](/sql/t-sql/data-types/data-type-conversion-database-engine).
 
 
-## T-SQL includes functions to help you explicitly convert between data types:
+## T-SQL includes functions to help you explicitly convert between data types
 
 ### CAST and TRY_CAST
 
