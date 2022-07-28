@@ -58,6 +58,6 @@ quiz:
     - content: "External collaboration settings"
       isCorrect: false
       explanation: "Try again. The **Trust multifactor authentication from Azure AD tenants** is one of the options available in cross-tenant access settings."
-    - content: "You can only multi-factor authentication from individual organizations"
+    - content: "You can only trust multi-factor authentication from individual organizations"
       isCorrect: false
       explanation: "Try again. You can trust multi-factor authentication by default (for all external Azure AD organizations) or for individual Azure AD organizations."

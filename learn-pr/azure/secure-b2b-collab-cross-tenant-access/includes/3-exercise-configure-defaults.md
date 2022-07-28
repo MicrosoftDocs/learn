@@ -1,8 +1,8 @@
 In this exercise, we'll configure cross-tenant access settings that represent the access policies you want to apply to B2B collaboration with other Azure AD organizations. The default settings we configure will apply to all external Azure AD organizations.
 
-Recall that in the financial firm example, outbound B2B collaboration would be allowed for all of your internal employees. Also by default, all inbound B2B collaboration would be blocked to protect your internal applications. Later, collaboration with a branch organization would be allowed only for all of their users. Here, you'll configure the default cross-tenant access settings for B2B collaboration.
+Recall that in the financial institution example, outbound B2B collaboration would be allowed for all of your internal employees. Also by default, all inbound B2B collaboration would be blocked to protect your internal applications. Later, collaboration with a branch organization would be allowed only for all of their users. Here, you'll configure the default cross-tenant access settings for B2B collaboration.
 
-[Diagram of the full financial firm example, with just the default settings highlighted.]
+[Diagram of the full financial institution example, with just the default settings highlighted.]
 
 ## Set default outbound cross-tenant access
 

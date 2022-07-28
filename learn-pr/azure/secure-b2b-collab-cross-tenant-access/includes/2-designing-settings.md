@@ -1,12 +1,10 @@
-Organizations often need to collaborate on projects with people outside of their company, but they want to make sure that only authorized people can access the resources they want to share. In the financial firm scenario, we'll use cross-tenant access settings to determine who has access to which resources. 
+With Azure AD B2B collaboration, an organization can invite external people to sign in to their applications and services. For added security, organizations can use cross-tenant access settings to create detailed policies that determine who has access to which resources. In the financial institution scenario, we'll use cross-tenant access settings to determine who has access to which resources. 
 
 Here, you'll learn the cross-tenant access settings that let you allow or block B2B collaboration with other organizations by default.
 
 [Diagram showing cross-tenant access settings and B2B collaboration.]
 
 ## Managing B2B collaboration
-
-With Azure AD B2B collaboration, an organization can invite external people to sign in to their applications and services. For added security, organizations can use cross-tenant access settings to create detailed policies that determine who has access to which resources.
 
 There are different settings that let you control your inbound and outbound B2B collaboration. The setting you use depends on who you collaborate with and what you want to manage:
 
@@ -23,7 +21,7 @@ When you use cross-tenant access settings, you're setting policies for collabora
 
 Before you've updated any cross-tenant access settings, both inbound and outbound B2B collaboration settings are "Allowed" by default. Your users can invite external guests to access your resources, and they can be invited to external organizations as guests. By default, there are no partner- or organization-specific settings, and all applications and users are allowed for B2B collaboration.
 
-As we saw in our financial firm scenario, you might want more control over who has access to your internal applications. For example, you might want to allow everyone in your organization to collaborate with external partners using the partners' applications. But if you have internal applications with data that you need to restrict access to, you can block all inbound B2B collaboration with external Azure AD organizations. All of these policies can be set using cross-tenant access settings.
+As we saw in our financial institution scenario, you might want more control over who has access to your internal applications. For example, you might want to allow everyone in your organization to collaborate with external partners using the partners' applications. But if you have internal applications with data that you need to restrict access to, you can block all inbound B2B collaboration with external Azure AD organizations. All of these policies can be set using cross-tenant access settings.
 
 [Diagram showing all the cross-tenant access settings you can configure.]
 

@@ -9,25 +9,24 @@ metadata:
   ms.author: mimart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-title: secure-b2b-collab-cross-tenant-access
+title: Secure B2B collaboration by using cross-tenant access settings
 summary: Define your inbound and outbound B2B collaboration with other Azure Active Directory tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Azure AD organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant.
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3"
+    - Design cross-tenant access policies that allow outbound B2B collaboration but block inbound B2B collaboration by default.
+    - Configure cross-tenant access settings between your organization and an external partner's organization.
+    - Trust multi-factor authentication from an external partner to streamline the sign-in experience.
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3"
+  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
+  - Basic understanding of Azure AD and B2B collaboration
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels:
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: 
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: 
 - azure
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects: 
   - cloud-computing
 units:
 - learn.secure-b2b-collab-cross-tenant-access.1-introduction
