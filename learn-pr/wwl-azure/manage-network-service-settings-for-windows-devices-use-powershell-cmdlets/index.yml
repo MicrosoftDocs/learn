@@ -3,7 +3,7 @@ uid: learn.wwl.manage-network-service-settings-for-windows-devices-use-powershel
 metadata:
   title: Manage network service settings for Windows devices using PowerShell cmdlets
   description: "This module covers the PowerShell modules and cmdlets that are used to configure network settings for Windows devices."
-  ms.date: 07/27/2022
+  ms.date: 07/28/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -42,7 +42,7 @@ subjects:
 units:
 - learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.introduction
 - learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-ip-addresses-powershell
-- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-ip-rout-powershell
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-ip-route-powershell
 - learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-dns-clients-powershell
 - learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-windows-firewall-settings-powershell
 - learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.knowledge-check
