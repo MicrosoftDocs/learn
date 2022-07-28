@@ -156,18 +156,18 @@ If the `code` command fails, you need to add Visual Studio Code to your system P
 
 Now that you have the web app, you can build and run it locally.
 
-1. In Visual Studio Code, navigate to the terminal window, and to build the app, run this `dotnet build` command:
+1. In Visual Studio Code, navigate to the terminal window, and to build the app, run the `dotnet build` command:
 
     ```dotnetcli
     dotnet build --configuration Release
     ```
 
     > [!NOTE]
-    > If the `dotnet` command isn't found, review the prerequisites at the start of this module. You may need to install the .NET SDK.
+    > If the `dotnet` command isn't found, review the prerequisites at the start of this module. You might need to install the .NET SDK.
 
     .NET projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here, you select the Release configuration just to see the web app in action.
 
-1. From the terminal window, to run the app, run this `dotnet run` command:
+1. From the terminal window, to run the app, run the `dotnet run` command:
 
     ```dotnetcli
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
@@ -196,4 +196,4 @@ You can interact with the page, including the leaderboard. When you select a pla
 
 :::image type="content" source="../media/3-space-game-leaderboard-profile.png" alt-text="Screenshot of a web browser showing the Space Game leaderboard.":::
 
-When you're finished, return to the terminal window, and to stop the running app, and select Ctrl+C.
+When you're finished, return to the terminal window, and to stop the running app select Ctrl+C.

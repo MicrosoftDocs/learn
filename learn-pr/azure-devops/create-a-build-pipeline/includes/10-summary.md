@@ -8,7 +8,7 @@ Lastly, you practiced your Git skills by pushing commits to a branch and buildin
 
 Keep in mind that this build configuration focuses on building a .NET app. The tasks you choose will depend on the kind of app you're building, the tools you use to build it, and the programming language it's written in.
 
-When you approach your own builds, it's a good idea to start by ensuring you can build the app from scratch from the terminal or from a Bash or PowerShell script. From there, you can map each command to a pipeline task that accomplishes the same thing.
+When you approach your own builds, it's a good idea to ensure building the app from scratch from the terminal, or from a Bash or PowerShell script. From there, you can map each command to a pipeline task that accomplishes the same thing.
 
 When you create your own pipeline, you have two choices: the visual designer or YAML files. If you choose the visual designer to get started, you can switch to the YAML version of your configuration to learn how each task is structured.
 
