@@ -41,48 +41,15 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "One of the primary purposes of app provisioning is to automatically create (provision) users from a human resources system into Azure Active Directory."
+      explanation: ""
     - content: "False"
       isCorrect: false
-      explanation: ""
+      explanation: "One of the primary purposes of app provisioning is to automatically create (provision) users from a human resources system into Azure Active Directory."
   - content: "Application Provisioning uses System for Cross-domain Identity Management (SCIM) to provision users."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "SCIM is an industry standard and used to manage identities between systems."
+      explanation: "SCIM is an industry standard and used to manage identities between systems. Application Proxy uses SCIM to provision users."
     - content: "False"
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
       isCorrect: false
       explanation: ""
