@@ -10,7 +10,7 @@ After you have created an Azure Machine Learning workspace, you can develop solu
 
 ## Azure Machine Learning studio 
 
-Azure Machine Learning studio is a web portal for machine learning solutions in Azure. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. To begin using the web portal, you need to assign the workspace you created in the Azure portal to Azure Machine Learning studio 
+Azure Machine Learning studio is a web portal for machine learning solutions in Azure. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. To begin using the web portal, you need to assign the workspace you created in the Azure portal to Azure Machine Learning studio. 
 
 ![Screenshot of the Azure Machine Learning studio interface.](../media/studio-home.png)
 

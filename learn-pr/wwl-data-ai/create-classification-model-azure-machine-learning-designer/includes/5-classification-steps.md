@@ -33,7 +33,7 @@ The confusion matrix shows cases where both the predicted and actual values were
 
 For a binary classification model where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **0** and **1**, similar to this:
 
-![A confusion matrix showing actual and predicted value counts for each class](../media/confusion-matrix.png)
+![Screenshot of a confusion matrix showing actual and predicted value counts.](../media/confusion-matrix.png)
 
 For a multi-class classification model (where there are more than two possible classes), the same approach is used to tabulate each possible combination of actual and predicted value counts - so a model with three possible classes would result in a 3x3 matrix with a diagonal line of cells where the predicted and actual labels match.
 
@@ -71,7 +71,7 @@ You can create an inference pipeline by selecting the menu above a completed job
 #### Deployment 
 After creating the inference pipeline, you can deploy it as an endpoint. In the endpoints page, you can view deployment details, test your pipeline service with sample data, and find credentials to connect your pipeline service to a client application. 
 
-It will take awhile for your endpoint to be deployed. The Deployment state on the **Details** tab will indicate *Healthy* when deployment is successful. 
+It will take a while for your endpoint to be deployed. The Deployment state on the **Details** tab will indicate *Healthy* when deployment is successful. 
 
 ![Screenshot of the endpoints page for a successfully deployed model.](../media/endpoints-example-1.png)
 

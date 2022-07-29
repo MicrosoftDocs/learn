@@ -175,7 +175,7 @@ Now you're ready to run the training pipeline and train the model.
 2. Wait for the experiment run to finish. This may take 5 minutes or more.
 3. When the experiment run has finished, select **Job details**. You'll be directed to another window. 
 4. On the new window, right-click (Ctrl+click on a Mac) the **Score Model** module on the canvas, and click on **Preview data**. Select **Scored dataset** to view the results.
-5. Scroll to the right, and note that next to the **Diabetic** column (which contains the known true values of the label) there is a new column named **Scored Labels**, which contains the predicted label values, and a **Scored Probabilities** columns containing a probability value between 0 and 1. This indicates the probability of a *positive* prediction, so probabilities greater than 0.5 result in a predicted label of ***1*** (diabetic), while probabilities between 0 and 0.5 result in a predicted label of ***0*** (not diabetic).
+5. Scroll to the right, and note that next to the **Diabetic** column (which contains the known true values of the label) there is a new column named **Scored Labels**, which contains the predicted label values, and a **Scored Probabilities** column containing a probability value between 0 and 1. This indicates the probability of a *positive* prediction, so probabilities greater than 0.5 result in a predicted label of ***1*** (diabetic), while probabilities between 0 and 0.5 result in a predicted label of ***0*** (not diabetic).
 6. Close the **Score Model result visualization** window.
 
 The model is predicting values for the **Diabetic** label, but how reliable are its predictions? To assess that, you need to evaluate the model.
@@ -225,11 +225,9 @@ The performance of this model isn't all that great, partly because we performed 
 
     ![Screenshot of an inference pipeline with changes indicated.](../media/inference-changes.png)
 
-- Replace the **diabetes-data** dataset with an **Enter Data Manually** module that doesn't include the label column (**Diabetic**).
-- Remove the **Evaluate Model** module.
-- Insert an **Execute Python Script** module before the web service output to return only the patient ID, predicted label value, and probability.
-
-    Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
+    - Replace the **diabetes-data** dataset with an **Enter Data Manually** module that doesn't include the label column (**Diabetic**).
+    - Remove the **Evaluate Model** module.
+    - Insert an **Execute Python Script** module before the web service output to return only the patient ID, predicted label value, and probability.
 
 5. The inference pipeline assumes that new data will match the schema of the original training data, so the **diabetes-data** dataset from the training pipeline is included. However, this input data includes the **Diabetic** label that the model predicts, which is not included in new patient data for which a diabetes prediction hasn't yet been made. Delete this module and replace it with an **Enter Data Manually** module, containing the following CSV data, which includes feature values without labels for three new patient observations:
 
@@ -246,17 +244,17 @@ The performance of this model isn't all that great, partly because we performed 
     - Delete the connection between the **Score Model** module and the **Web Service Output**.
     - Add an **Execute Python Script** module, replacing all of the default python script with the following code (which selects only the **PatientID**, **Scored Labels** and **Scored Probabilities** columns and renames them appropriately):
 
-```Python
-import pandas as pd
-
-def azureml_main(dataframe1 = None, dataframe2 = None):
-
-    scored_results = dataframe1[['PatientID', 'Scored Labels', 'Scored Probabilities']]
-    scored_results.rename(columns={'Scored Labels':'DiabetesPrediction',
-                                'Scored Probabilities':'Probability'},
-                        inplace=True)
-    return scored_results
-```
+    ```Python
+    import pandas as pd
+    
+    def azureml_main(dataframe1 = None, dataframe2 = None):
+    
+        scored_results = dataframe1[['PatientID', 'Scored Labels', 'Scored Probabilities']]
+        scored_results.rename(columns={'Scored Labels':'DiabetesPrediction',
+                                    'Scored Probabilities':'Probability'},
+                            inplace=True)
+        return scored_results
+    ```
 
 9. Connect the output from the **Score Model** module to the **Dataset1** (left-most) input of the **Execute Python Script**, and connect the output of the **Execute Python Script** module to the **Web Service Output**.
 10. Verify that your pipeline looks similar to the following image:
@@ -292,25 +290,25 @@ After you've created and tested an inference pipeline for real-time inferencing,
     ![Screenshot of the location of the Endpoints option on the left-hand pane.](../media/endpoints-screenshot.png)
 2. When the **predict-diabetes** endpoint opens, select the **Test** tab. We will use it to test our model with new data. Delete the current data under **Input data to test real-time endpoint**. Copy and paste the below data into the data section:  
 
-```JSON
-{
-  "Inputs": {
-    "WebServiceInput0":
-      [
-        { "PatientID": 1882185,
-          "Pregnancies": 9,
-          "PlasmaGlucose": 104,
-          "DiastolicBloodPressure": 51,
-          "TricepsThickness": 7,
-          "SerumInsulin": 24,
-          "BMI": 27.36983156,
-          "DiabetesPedigree": 1.3504720469999998,
-          "Age": 43 }
-        ]
-      },
-  "GlobalParameters":  {}
-}
-```
+    ```JSON
+    {
+      "Inputs": {
+        "WebServiceInput0":
+          [
+            { "PatientID": 1882185,
+              "Pregnancies": 9,
+              "PlasmaGlucose": 104,
+              "DiastolicBloodPressure": 51,
+              "TricepsThickness": 7,
+              "SerumInsulin": 24,
+              "BMI": 27.36983156,
+              "DiabetesPedigree": 1.3504720469999998,
+              "Age": 43 }
+            ]
+          },
+      "GlobalParameters":  {}
+    }
+    ```
 
 > [!NOTE]
 > The JSON above defines features for a patient, and uses the **predict-diabetes** service you created to predict a diabetes diagnosis.
