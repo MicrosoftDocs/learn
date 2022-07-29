@@ -22,7 +22,7 @@ A Zero Trust approach should extend throughout the entire digital estate and ser
 
 The Zero Trust approach can be organized around six key technological pillars:
 
-:::image type="content" source="../media/zero-trust-security.png" alt-text="Diagram showing zero trust principles." lightbox="../media/zero-trust-security.png":::
+:::image type="content" source="../media/zero-trust-security.png" alt-text="Diagram showing zero trust pillars." lightbox="../media/zero-trust-security.png":::
 
 * **Secure identity with Zero Trust** - Identities, whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow
 least privilege access principles.
