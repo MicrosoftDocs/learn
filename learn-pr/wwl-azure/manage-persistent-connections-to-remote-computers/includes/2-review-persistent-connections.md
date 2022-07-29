@@ -2,11 +2,11 @@ So far, when you were executing **Enter-PSSession** or **Invoke-Command**, Windo
 
 Windows PowerShell can create persistent connections, which are known as *sessions*, or more accurately, *PSSessions*. The PS designation signifies Windows PowerShell and differentiates these sessions from other kinds of sessions that might be present in other technologies, such as a Remote Desktop Services (RDS) session.
 
-After making a PSSession to a remote computer, you run the desired commands within the session, but you leave the PSSession running. By doing this, you can run more commands in the session.
+After making a PowerShell session to a remote computer, you run the desired commands within the session, but you leave the PowerShell session running. By doing this, you can run more commands in the session.
 
 ## Disconnected sessions
 
-In Windows PowerShell 3.0 and newer, you can also manually disconnect from sessions. This allows you to close the session in which a PSSession was established, even shut down the local computer, without disrupting commands running in the PSSession on the remote computer. This is particularly useful for running commands that take a long time to complete and provides the time and device flexibility that IT professionals need.
+In Windows PowerShell 3.0 and newer, you can also manually disconnect from sessions. This allows you to close the session in which a PowerShell session was established, even shut down the local computer, without disrupting commands running in the PowerShell session on the remote computer. This is particularly useful for running commands that take a long time to complete and provides the time and device flexibility that IT professionals need.
 
 ## Controlling sessions
 

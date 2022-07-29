@@ -1,12 +1,12 @@
-You use the **New-PSSession** command to create a persistent connection. The command contains many of the same parameters as **Invoke-Command**, including *-Credential*, *–Port*, and *–UseSSL*. This is because you're creating a similar kind of connection that **Invoke-Command** creates. However, instead of closing this connection immediately, you're leaving it running.
+You use the **New-PSSession** command to create a persistent connection. The command contains many of the same parameters as **Invoke-Command**, including *-Credential*, *–Port*, and *–UseSSL*. This is because you're creating a connection that is identical to the one **Invoke-Command** creates. However, instead of closing this connection immediately, you're leaving it running.
 
-PSSessions do have an idle timeout, after which the remote computer will close them automatically. A closed PSSession differs from a disconnected PSSession, because closed PSSessions cannot be reconnected. In this case, you can only remove the PSSession, and then recreate it.
+PowerShell sessions do have an idle timeout, after which the remote computer will close them automatically. A closed PowerShell session differs from a disconnected PowerShell session, because closed PowerShell sessions can't be reconnected. In this case, you can only remove the PowerShell session, and then recreate it.
 
-**New-PSSession** can accept multiple computer names, which causes it to create multiple PSSession objects. When you run the **New-PSSession** command, it outputs objects representing the newly created PSSessions. You can assign these PSSessions to a variable to make them easier to refer to, and to use in the future.
+**New-PSSession** can accept multiple computer names, which causes it to create multiple PowerShell session objects. When you run the **New-PSSession** command, it outputs objects representing the newly created PowerShell sessions. You can assign these PowerShell sessions to a variable to make them easier to refer to, and to use in the future.
 
-You can use a PSSession as soon as you create it. Both the **Invoke-Command** and **Enter-PSSession** commands can accept a PSSession object instead of a computer name. **Invoke-Command** can accept multiple PSSession objects. You use the commands’ *–Session* parameter for this purpose. When you do this, the commands use the existing PSSession instead of creating a new connection. When your command finishes running or you exit the PSSession, the PSSession remains running and connected, and ready for future use.
+You can use a PowerShell session as soon as you create it. Both the **Invoke-Command** and **Enter-PSSession** commands can accept a PowerShell session object instead of a computer name. **Invoke-Command** can accept multiple PowerShell session objects. You use the commands’ *–Session* parameter for this purpose. When you use this parameter, the commands use the existing PowerShell session instead of creating a new connection. When your command finishes running or you exit the PowerShell session, the PowerShell session remains running and connected, and ready for future use.
 
-For example, you can use the following commands to enter a PSSession on **LON-CL1** and then close it:
+For example, you can use the following commands to enter a PowerShell session on **LON-CL1** and then close it:
 
 ```powershell
 $client = New-PSSession –ComputerName LON-CL1
@@ -21,7 +21,7 @@ $computers = New-PSSession –ComputerName LON-CL1,LON-DC1
 Invoke-Command –Session $computers –ScriptBlock { Get-Process }
 ```
 
-For example, the following command can use the `$dc` variable to open a PSSession to **LON-DC1** within a script or code block:
+For example, the following command can use the `$dc` variable to open a PowerShell session to **LON-DC1** within a script or code block:
 
 ```powershell
 $dc = New-PSSession –ComputerName LON-DC1
