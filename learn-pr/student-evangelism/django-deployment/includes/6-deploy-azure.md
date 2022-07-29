@@ -27,7 +27,7 @@ Now that the extension is installed, you can start the installation.
 
 1. Select **Sign in** to sign in to Azure by using the same account you used to create the sandbox.
 
-1. On the **RESOURCES** bar of Azure extension, hover and select the **+** (**Create Resource**) icon.
+1. On the **RESOURCES** bar of the Azure extension, hover, and select the **+** (plus sign) icon to create a resource.
 
     ![Screenshot showing the App Service bar. The Deploy icon is highlighted.](../media/add-resource.png)
 
@@ -35,7 +35,7 @@ Now that the extension is installed, you can start the installation.
 
 1. Select **Create App Service Web App...**.
 
-    ![Screenshot showing how to create a new web app.](../media/create-new-webapp.png)
+    ![Screenshot showing how to create a new web app.](../media/create-new-database.png)
 
 1. Provide a unique name for your application.
 
@@ -63,15 +63,18 @@ Your site will now deploy!
 
 While your site is deploying, turn your attention to creating the database. You'll use PostgreSQL.
 
-1. In the **Databases** extension, select **Create server**.
+1. On the **RESOURCES** bar of the Azure extension, hover, and select the **+** (plus sign) icon to create a resource.
 
-    ![Screenshot of the Databases extension, showing the Create Server icon.](../media/databases.png)
+    ![Screenshot of the Databases extension, showing the Create Server icon.](../media/add-resource.png)
 
-1. In the dialog box, select the sandbox subscription.
+1. If prompted to choose a subscription, choose your Azure subscription.
 
-    ![Screenshot showing where to select the subscription.](../media/select-subscription.png)
+1. Select **Create App Service Web App...**.
 
-1. For the Azure Database Server, select **PostgreSQL**.
+    ![Screenshot showing how to create a new web app.](../media/create-new-database.png)
+
+
+1. For the Azure Database Server, select **PostgreSQL Flexible Server**.
 
     ![Screenshot showing a list of available database servers.](../media/database-server.png)
 
@@ -80,16 +83,16 @@ While your site is deploying, turn your attention to creating the database. You'
     > [!IMPORTANT]
     > Make a note of the name you use for your database server.
 
+1. Select the Postgres SKU and options.
+
 1. For the name of the admin user, enter *shelter_admin*.
-1. Enter a secure password, such as *86i*^z5#emSk6wu3t10nC*.
+
+1. Enter a secure password, such as "*86i*^z5#emSk6wu3t10nC*".
 
     > [!IMPORTANT]
     > When you create the password, don't use a dollar sign (`$`). This symbol can cause issues for connections from Python. Make a note of the password you use.
 
 1. Enter the password a second time to confirm it.
-1. For the firewall rule, select **Skip for now**.
-
-    ![Screenshot showing the firewall rule field. "Skip for now" is highlighted.](../media/firewall-rule.png)
 
 1. For the resource group, select **appsvc_linux_centralus**. This group was created when you deployed your web application.
 
@@ -102,7 +105,22 @@ While your site is deploying, turn your attention to creating the database. You'
     > [!IMPORTANT]
     > When you create multiple Azure resources that will communicate with one another, always place them in the same region. This collocation ensures the best performance.
 
-Your server will now be created! This process will take a few minutes.
+Your server will now be created! This process will take a few minutes. 
+
+But there's still one thing to do and that's to create a firewall rule to allow your developer environment to access the database. Wait until the database is following the next steps for creating the rule.
+
+1. Open the Visual Studio Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
+
+1. Search for "PostgreSQL: Configure Firewall" and select it.
+
+    ![Screenshot showing the firewall rule field. "Skip for now" is highlighted.](../media/create-firewall-rule.png)
+
+1. When prompted for the resource to apply the firewall to, select the Postgres database you created.
+
+1. A final dialog box asks to continue and shows the IP address it will add. Select **Yes**.
+
+It takes a few minutes to add the rule. Watch the VS Code notification window for status.
+
 
 ## Configure application settings
 
