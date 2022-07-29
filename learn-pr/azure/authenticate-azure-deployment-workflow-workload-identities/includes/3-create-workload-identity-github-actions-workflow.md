@@ -32,7 +32,7 @@ New-AzADApplication -DisplayName $applicationRegistrationName
 The output of the preceding command includes a few important pieces of information, including:
 
 - **Application ID**: The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You use this when your workflow needs to sign in to Azure.
-- **Object ID**: The application registration has a object IDs, which is a unique identifier assigned by Azure AD. You'll see an example of how to use an object ID later in this module.
+- **Object ID**: The application registration has an object ID, which is a unique identifier assigned by Azure AD. You'll see an example of how to use an object ID later in this module.
 
 When you create an application registration, you typically only set the display name. Azure assigns the other names and identifiers automatically.
 
