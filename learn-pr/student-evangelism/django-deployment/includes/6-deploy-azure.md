@@ -26,15 +26,14 @@ Now that the extension is installed, you can start the installation.
     ![Screenshot showing the Azure icon.](../media/azure-icon.png)
 
 1. Select **Sign in** to sign in to Azure by using the same account you used to create the sandbox.
-1. On the **App Service** bar, select the **Deploy** icon.
 
-    ![Screenshot showing the App Service bar. The Deploy icon is highlighted.](../media/app-service.png)
+1. On the **RESOURCES** bar of Azure extension, hover and select the **+** (**Create Resource**) icon.
 
-1. For **Select subscription**, choose your Azure subscription.
+    ![Screenshot showing the App Service bar. The Deploy icon is highlighted.](../media/app-resource.png)
 
-    ![Screenshot showing where to select a subscription.](../media/select-subscription.png)
+1. If prompted to choose a subscription, choose your Azure subscription.
 
-1. Select **Create new Web App**.
+1. Select **Create App Service Web App...**.
 
     ![Screenshot showing how to create a new web app.](../media/create-new-webapp.png)
 
@@ -42,15 +41,21 @@ Now that the extension is installed, you can start the installation.
 
     ![Screenshot showing where to provide an app name.](../media/provide-name.png)
 
-1. Select **Python 3.8** as the runtime stack.
+1. Select **Python 3.9** as the runtime stack.
 
     ![Screenshot showing the runtime stack selection.](../media/runtime-selection.png)
 
-    The extension creates your web application and begins deploying it. The process will take a few moments.
+1. Select a pricing tier.
 
-1. When you're asked whether to **Always deploy the workspace** to the application you created during the deployment, select **Yes**.
+    ![Screenshot showing the runtime stack selection.](../media/select-pricing-tier.png)
 
-    ![Screenshot showing the deployment configuration option.](../media/always-deploy.png)
+    The extension creates your web application. The process will take a few moments.
+
+1. When the web app is created, you're asked to deploy the web app to the App Service, select **Deploy**.
+
+    ![Screenshot showing the deployment configuration option.](../media/deploy-app.png)
+
+    If you miss the notice to deploy or close it, you can also deploy by finding the App Service you created, right-click it, and select **Deploy to Web App**.
 
 Your site will now deploy!
 
