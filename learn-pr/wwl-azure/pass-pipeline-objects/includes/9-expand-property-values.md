@@ -6,13 +6,13 @@ For example, you might want to list all the processes that are running on every 
 Get-ADComputer –Filter *
 ```
 
-However, this command produces objects of the type **ADComputer**. You could not use those objects directly in a parenthetical command such as the following:
+However, this command produces objects of the type **ADComputer**. You couldn't use those objects directly in a parenthetical command such as in the following command:
 
 ```powershell
 Get-Process –ComputerName (Get-ADComputer –Filter *)
 ```
 
-The **–ComputerName** parameter expects objects of the type **String**. However, the parenthetical command does not produce **String** type objects. The **–ComputerName** parameter only wants a computer name. However, the command provides it an object that contains a name, an operating system version, and several other properties.
+The **–ComputerName** parameter expects objects of the type **String**. However, the parenthetical command doesn't produce **String** type objects. The **–ComputerName** parameter only wants a computer name. However, the command provides it an object that contains a name, an operating system version, and several other properties.
 
 You could try the following command:
 
@@ -20,7 +20,7 @@ You could try the following command:
 Get-Process –ComputerName (Get-ADComputer –Filter * | Select-Object –Property Name)
 ```
 
-This command selects only the **Name** property. This property is still a member of a whole **ADComputer** object. It is the **Name** property of an object. Although the **Name** property contains a string, it is not itself a string. The **–ComputerName** parameter expects a string, not an object with a property. Therefore, that command does not work either.
+This command selects only the **Name** property. This property is still a member of a whole **ADComputer** object. It's the **Name** property of an object. Although the **Name** property contains a string, it isn't itself a string. The **–ComputerName** parameter expects a string, not an object with a property. Therefore, that command doesn't work either.
 
 The following command achieves the goal of passing the computer name as a string to the **-ComputerName** parameter:
 
@@ -28,9 +28,9 @@ The following command achieves the goal of passing the computer name as a string
 Get-Process –ComputerName (Get-ADComputer –Filter * | Select-Object –ExpandProperty Name)
 ```
 
-The –ExpandProperty parameter accepts one, and only one, property name. When you use that parameter, only the contents of the specified property are produced by Select-Object. Some people refer to this as extracting the property contents. The official description of the feature is expanding the property contents.
+The –ExpandProperty parameter accepts one, and only one, property name. When you use that parameter, only the contents of the specified property are produced by Select-Object. Some people refer to this feature as extracting the property contents. The official description of the feature is expanding the property contents.
 
-In the preceding command, the result of the parenthetical command is a collection of strings that are passed as individual strings, not an array, and that is what the **–ComputerName** parameter expects. The command will work correctly; of course, it might produce an error if one or more of the computers cannot be reached on the network.
+In the preceding command, the result of the parenthetical command is a collection of strings that are passed as individual strings, not an array, and that is what the **–ComputerName** parameter expects. The command will work correctly; however, it might produce an error if one or more of the computers can't be reached on the network.
 
 Expanding property values also works when piping output. Consider the following example:
 
@@ -38,7 +38,7 @@ Expanding property values also works when piping output. Consider the following 
 Get-ADUser Ty -Properties MemberOf | Get-ADGroup
 ```
 
-This command returns an error because Windows PowerShell cannot match the **MemberOf** property to any property of **Get-ADGroup**.
+This command returns an error because Windows PowerShell can't match the **MemberOf** property to any property of **Get-ADGroup**.
 
 However, if you expand the value of the **MemberOf** property, as in the following example, Windows PowerShell can match the resulting output to a value that 
 **Get-ADGroup** understands as valid input:

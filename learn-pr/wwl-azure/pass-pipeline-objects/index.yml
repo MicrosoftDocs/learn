@@ -3,7 +3,7 @@ uid: learn.wwl.pass-pipeline-objects
 metadata:
   title: Pass pipeline objects
   description: "This module explains how the Windows PowerShell command-line interface passes objects from one command to another in the pipeline."
-  ms.date: 07/20/2022
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -48,10 +48,10 @@ units:
 - learn.wwl.pass-pipeline-objects.introduction
 - learn.wwl.pass-pipeline-objects.pipeline-parameter-binding
 - learn.wwl.pass-pipeline-objects.identify-byvalue-parameters
-- learn.wwl.pass-pipeline-objects.pass-data-by-using-byvalue
-- learn.wwl.pass-pipeline-objects.pass-data-by-using-bypropertyname
+- learn.wwl.pass-pipeline-objects.pass-data-use-byvalue
+- learn.wwl.pass-pipeline-objects.pass-data-use-bypropertyname
 - learn.wwl.pass-pipeline-objects.identify-bypropertyname-parameters
-- learn.wwl.pass-pipeline-objects.use-manual-parameters-to-override-pipeline
+- learn.wwl.pass-pipeline-objects.use-manual-parameters-override-pipeline
 - learn.wwl.pass-pipeline-objects.use-parenthetical-commands
 - learn.wwl.pass-pipeline-objects.expand-property-values
 - learn.wwl.pass-pipeline-objects.knowledge-check
