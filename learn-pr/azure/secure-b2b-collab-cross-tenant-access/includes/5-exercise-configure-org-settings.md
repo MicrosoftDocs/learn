@@ -13,23 +13,23 @@ Here, you'll add an organization to your cross-tenant access settings. Then you'
 ### Open the Azure Active Directory service in the portal
 
 1. Open a web browser.
-2. In the address bar, type https://portal.azure.com.
-3. Sign in using your Azure AD admin account.
-4. Open the Azure Active Directory service with the following steps:
+1. In the address bar, type https://portal.azure.com.
+1. Sign in using your Azure AD admin account.
+1. Open the Azure Active Directory service with the following steps:
    - Under **Azure services**, select **Azure Active Directory**, or
    - Use the search box search for "Azure Active Directory" and then select it.
 
 ## Add an organization
 
 1. On the left navigation bar, select **External Identities**.
-2. Select **Cross-tenant access settings**.
+1. Select **Cross-tenant access settings**.
 1. Select the **Organizational settings** tab.
-2. Select **Add organization**.
+1. Select **Add organization**.
 
    ![Screenshot showing Add organization selection.](../media/5-add-organization.png)
 
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
-2. Select the organization in the search results, and the select **Add**.
+1. Select the organization in the search results, and the select **Add**.
 
    ![Screenshot showing the add organization pane with an organization selected.](../media/5-add-organization-selected.png)
 
@@ -40,15 +40,17 @@ Now the organization appears in the **Organizational settings** list. You'll not
 ## Modify the inbound settings for the organization
 
 1. In the **Organizational settings** list, find the organization in the list and select the link in the **Inbound access** column.
-2. Select **B2B collaboration**.
-3. Select **Customize settings**.
-4. Select **External users and groups**.
-5. Under **Access status**, select **Allow access**.
-6. Under **Applies to**, make sure **All &lt;organization name&gt; users and groups** is selected.
+1. Select **B2B collaboration**.
+1. Select **Customize settings**.
+1. Select **External users and groups**.
+1. Under **Access status**, select **Allow access**.
+1. Under **Applies to**, make sure **All &lt;organization name&gt; users and groups** is selected.
 
    ![Screenshot showing inbound access settings for an organization with inbound access set to all allowed.](../media/5-organizational-inbound-allowed.png)
 
-3. Select **Save**. You'll return to the main Cross-tenant access settings page. Stay on this page and go to the next section to configure the multi-factor trust setting.
+1. Select **Save**. Select **External Identities** in the breadcrumbs at the top of the page to return to the main **Cross-tenant access settings** page. Then go on to the next section.
+
+    ![Screenshot showing the External Identities breadcrumb after configuring inbound access.](../media/5-breadcrumb.png)
 
 ## Trust multi-factor authentication from the organization
 
@@ -56,12 +58,14 @@ When you choose to trust multi-factor authentication, your Conditional Access po
 
 1. In the **Organizational settings** list, find the organization in the list and select the link in the **Inbound access** column.
 1. Select the **Trust settings** tab.
-2. Select **Customize settings**.
-3. Select **Trust multi-factor authentication from Azure AD tenants**. 
+1. Select **Customize settings**.
+1. Select **Trust multi-factor authentication from Azure AD tenants**.
 
    ![Screenshot of the Trust settings page with the multi-factor authentication trust option selected.](../media/5-organizational-mfa-trust.png)
 
-Stay on this page to check your work in the next section.
+1. Select **Save**. Select **External Identities** in the breadcrumbs at the top of the page to return to the main **Cross-tenant access settings** page. Then go on to the next section.
+
+    ![Screenshot showing the External Identities breadcrumb after configuring trust settings.](../media/5-breadcrumb.png)
 
 ## Check your work
 

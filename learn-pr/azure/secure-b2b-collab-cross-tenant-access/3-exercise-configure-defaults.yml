@@ -4,6 +4,7 @@ title: Exercise - Configure default settings
 metadata:
   unitType: exercise
   title: exercise
+  description: "In this exercise, practice configuring default cross-tenant access settings."
   ms.date: 7/29/2022
   author: msmimart
   ms.author: mimart
