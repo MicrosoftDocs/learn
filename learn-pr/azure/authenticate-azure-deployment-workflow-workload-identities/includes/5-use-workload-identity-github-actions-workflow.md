@@ -16,7 +16,7 @@ Your deployment workflow uses the `azure/login` action to sign in to Azure. When
 | `tenant-id` | The unique identifier for your Azure AD tenant (directory). |
 | `subscription-id` | The Azure subscription ID that you'll deploy to. |
 
-Each of these values are globally unique identifiers (GUIDs).
+Each of these values is a globally unique identifier (GUID).
 
 When you define the values, you might choose to specify them directly in your workflow definition file:
 
