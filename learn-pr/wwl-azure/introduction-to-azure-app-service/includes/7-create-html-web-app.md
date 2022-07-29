@@ -36,7 +36,7 @@ In this section you'll use the sandbox to download the sample app and set variab
 
 ## Create the web app
 
-1. Change to the directory that contains the sample code and run the `az webapp up` command. In the following example, replace  `<myLocation>` with a region near you.
+1. Change to the directory that contains the sample code and run the `az webapp up` command.
 
     ```bash
     cd html-docs-hello-world

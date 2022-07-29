@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-compute.introduction-microsoft-azure-fundamentals
+title: Introduction to Microsoft Azure Fundamentals
+metadata:
+  title: Introduction to Microsoft Azure Fundamentals
+  description: "Introduction to Microsoft Azure Fundamentals"
+  ms.date: 07/20/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction-microsoft-azure-fundamentals.md)]

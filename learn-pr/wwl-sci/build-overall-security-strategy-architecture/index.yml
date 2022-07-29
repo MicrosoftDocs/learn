@@ -4,7 +4,7 @@ metadata:
   title: Build an overall security strategy and architecture
   description: "Learn how to build an overall security strategy and architecture with zero trust in mind."
   ms.date: 06/07/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -43,3 +43,6 @@ units:
 - learn.wwl.build-overall-security-strategy-architecture.summary
 badge:
   uid: learn.wwl.build-overall-security-strategy-architecture.badge
+subjects:
+- security
+- architecture

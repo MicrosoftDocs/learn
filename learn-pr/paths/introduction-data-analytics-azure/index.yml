@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-data-analytics-azure
 metadata:
   title: Introduction to data analytics on Azure
   description: Introduction to data analytics on Azure
-  ms.date: 03/25/2022
+  ms.date: 07/19/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -11,8 +11,10 @@ metadata:
 title: Introduction to data analytics on Azure
 prerequisites: |
   - You should be familiar with basic data concepts and terminology.
-summary: ""
-iconUrl: /learn/achievements/generic-trophy.svg
+summary: |
+  Explore Azure data services, concepts of data analytics, and what you need to implement modern analytics at scale.
+  This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/learn/certifications/exams/dp-500).
+iconUrl: /learn/achievements/introduction-to-data-analytics-on-azure.svg
 levels:
 - intermediate
 roles:

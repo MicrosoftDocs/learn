@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.prepare-for-course-delivery
+metadata:
+  title: Microsoft Learn for Educators preparing for course delivery
+  description: "Use the resources available from Microsoft to prepare to teach your course and feel confident you're providing your students the skills they need skills to be successful across various in-demand technical careers."
+  ms.date: 07/08/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Microsoft Learn for Educators preparing for course delivery
+summary: Use the resources available from Microsoft to prepare to teach your course and feel confident you're providing your students the skills they need skills to be successful across various in-demand technical careers.
+abstract: |
+  After completing this module, you should be able to:
+  * Understand the recommended steps to help you prepare to teach Microsoft Fundamentals or Advanced Role-Based curriculum in your classes
+  * Understand the recommended steps to help you wrap up the term and support your students so that they can be successful on their certification exams
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+subjects:
+- security
+units:
+- learn.wwl.prepare-for-course-delivery.introduction
+- learn.wwl.prepare-for-course-delivery.prepare-course-delivery
+- learn.wwl.prepare-for-course-delivery.get-ready-teach-checklist
+- learn.wwl.prepare-for-course-delivery.close-out-course
+- learn.wwl.prepare-for-course-delivery.knowledge-check
+- learn.wwl.prepare-for-course-delivery.summary
+badge:
+  uid: learn.wwl.prepare-for-course-delivery.badge

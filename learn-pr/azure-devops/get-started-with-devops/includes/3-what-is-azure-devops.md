@@ -12,14 +12,14 @@ Azure DevOps provides several tools you can use for better team collaboration. I
 |:::image type="icon" source="../media/azure-pipelines.png":::|[Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines?azure-portal=true). These will let us build, test, and deploy with CI/CD that works with any language, platform, and cloud.|
 |:::image type="icon" source="../media/azure-test-plans.png":::|[Azure Test Plans](https://azure.microsoft.com/services/devops/test-plans?azure-portal=true). These are manual and exploratory testing tools.|
 
-Those are the three I was thinking about using right now. There are two other services we can think about later.
+Those are the three I was thinking about using right now. There are two other services we can think about later:
 
 | Service | Description |
 |-|-|
 |:::image type="icon" source="../media/azure-repos.png":::|[Azure Repos](https://azure.microsoft.com/services/devops/repos?azure-portal=true). These provide unlimited, cloud-hosted private, and public Git repos.|
 |:::image type="icon" source="../media/azure-artifacts.png":::|[Azure Artifacts](https://azure.microsoft.com/services/devops/artifacts?azure-portal=true). These let us create, host, and share packages.|
 
-Here's a short video where Abel explains the five parts of Azure DevOps.
+Here's a short video where Abel explains the five parts of Azure DevOps:
 
 **Ask Abel**
 
@@ -31,4 +31,4 @@ Here's a short video where Abel explains the five parts of Azure DevOps.
 
 **Tim:** What do we have to do?
 
-**Mara:** It's easy. All we do is set up an account and an organization. The whole process only takes a couple minutes.
+**Mara:** It's easy. All we do is set up an account and an organization. The whole process only takes a couple of minutes.

@@ -11,6 +11,6 @@ metadata:
 title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
 durationInMinutes: 15
 interactive: bash
-sandbox: true
+sandbox: false
 content: |
   [!include[](includes/6-exercise-deploy-aks.md)]

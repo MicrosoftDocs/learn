@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/10/2021
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ quiz:
   questions:
   - content: "Which connector do you use to collect Windows security events?"
     choices:
-    - content: "Security Events"
+    - content: "Windows Security Events via AMA"
       isCorrect: true
       explanation: "Correct.  This connector will collect Windows security events."
     - content: "Common Event Format"
@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "Microsoft-Windows-Sysmon/Operational"
       isCorrect: true
-      explanation: "Correct. This is the name to enter."
+      explanation: "Correct. This is the log name to enter."
     - content: "Microsoft-Windows-Sysmon/Events"
       isCorrect: false
       explanation: "Incorrect. The Microsoft-Windows-Sysmon/Operation is the log name to use."

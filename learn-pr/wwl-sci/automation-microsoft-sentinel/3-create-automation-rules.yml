@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automation-microsoft-sentinel.create-automation-rules
+title: Create automation rules
+metadata:
+  title: Create automation rules
+  description: "Create automation rules"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-create-automation-rules.md)]

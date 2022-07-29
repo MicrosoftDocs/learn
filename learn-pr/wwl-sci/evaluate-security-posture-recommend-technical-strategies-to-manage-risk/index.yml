@@ -3,7 +3,7 @@ uid: learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manag
 metadata:
   title: Evaluate security posture and recommend technical strategies to manage risk
   description: "Learn how to evaluate an organization's security posture and recommend technical strategies to manage risk."
-  ms.date: 06/08/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ prerequisites: |
   *   Experience with security posture evaluation techniques.
   *   Experience with Azure Landing Zone.
   *   Experience with threat intelligence methodologies.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/evaluate-security-posture-recommend-technical-strategies-manage-risk.svg
 levels:
 - advanced
 roles:
@@ -33,13 +33,17 @@ products:
 - azure
 - defender-for-cloud
 - defender-for-cloud-apps
+subjects:
+- architecture
+- security
 units:
+- learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.introduction
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-benchmarks
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-microsoft-defender-for-cloud
-- learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-secure-scores
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.hygiene-of-cloud-workloads
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.design-security-for-azure-landing-zone
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.interpret-technical-threat-intelligence-recommend-risk-mitigations
+- learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.postures-use-secure-scores
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.recommend-security-capabilities-controls-to-mitigate-identified-risks
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.exercise
 - learn.wwl.evaluate-security-posture-recommend-technical-strategies-to-manage-risk.knowledge-check

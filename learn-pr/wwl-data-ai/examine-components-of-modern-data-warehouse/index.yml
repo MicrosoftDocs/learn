@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.examine-components-of-modern-data-warehouse
 metadata:
-  title: Explore fundamentals of modern data warehousing
-  description: "Explore fundamentals of modern data warehousing"
-  ms.date: 05/05/2022
+  title: Explore fundamentals of large-scale data warehousing
+  description: "Explore fundamentals of large-scale data warehousing"
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore fundamentals of modern data warehousing
+title: Explore fundamentals of large-scale data warehousing
 summary: |
   Organizations use modern data warehousing to build large scale data analytics solutions that generate insights and drive success.
   Microsoft Azure includes multiple technologies that you can combine to build a modern data warehousing solution.

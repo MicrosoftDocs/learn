@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine hosted in Azure to receive firmware updates. All the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process of migrating the resources to a Bicep file.
 
 During the process, you'll:

@@ -100,7 +100,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 1. Below the step that you just created, add a step to publish the module to the registry.
 
-   :::code language="yaml" source="code/6-workflow.yml" range="40-47" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="40-46" :::
 
    Notice that this step constructs the value of the `--target` argument dynamically. It combines the value of the registry server, the module name, and the version number.
 
@@ -110,7 +110,7 @@ Now, you can add a second job to publish the module to your container registry.
 
 1. Verify that your *storage_account_module.yml* file looks like the following example:
 
-   :::code language="yaml" source="code/6-workflow.yml" highlight="14, 19-47" :::
+   :::code language="yaml" source="code/6-workflow.yml" highlight="14, 19-46" :::
 
    If it doesn't, update it to match this example, and then save it.
 

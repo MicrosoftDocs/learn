@@ -33,10 +33,10 @@ To monitor the containerized Java web application, we'll need to create a new Ap
 
 If you had added more folders and selected the Persistent Volume option, then specify the Azure file share that should be used by Azure Migrate: App Containerization tool during the deployment process. The tool will create new directories in this Azure file share to copy over the application folders that are configured for Persistent Volume storage. During deployment, these directories will be mounted to the application container. 
 
-1. Select the option to **create new Storage Account and Azure file share**. 
+1. Select the option to **Create new Storage Account and Azure file share**. 
 2. Specify a name for storage account and select the location and SKU for the storage account. 
 3. Specify the Azure file share name as **learnappcontainerizationfileshare**. 
-4. Click **create**.
+4. Click **Create**.
 
 ## **Application deployment configuration** 
 
