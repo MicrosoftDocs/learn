@@ -1,4 +1,4 @@
-Azure Stack Hub uses a single-tenant topolog When choosing an identity provider to use with Azure Stack Hub, you should understand the important differences between the options of Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS).
+Azure Stack Hub uses a single-tenant topolog. When choosing an identity provider to use with Azure Stack Hub, you should understand the important differences between the options of Azure Active Directory (Azure AD) and Active Directory Federation Services (AD FS).
 
 ## Capabilities and limitations
 
