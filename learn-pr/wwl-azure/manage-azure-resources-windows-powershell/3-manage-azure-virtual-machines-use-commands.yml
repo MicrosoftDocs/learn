@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-resources-windows-powershell.manage-azure-virtual-machines-use-commands
+title: Manage Azure virtual machines by using Windows PowerShell commands
+metadata:
+  title: Manage Azure virtual machines by using Windows PowerShell commands
+  description: "Manage Azure virtual machines by using Windows PowerShell commands"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-manage-azure-virtual-machines-use-commands.md)]

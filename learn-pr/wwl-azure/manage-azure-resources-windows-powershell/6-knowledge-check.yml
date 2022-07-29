@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-azure-resources-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Arrange the following steps in the correct sequence to access the operating system running in an Azure VM:1. Create an Azure VM.2. Create a resource group.3. Connect to the Azure VM."
+    choices:
+    - content: "1 > 2 > 3"
+      isCorrect: false
+      explanation: "Incorrect. To access the operating system running in an Azure VM, create a resource group, then create an Azure VM and connect to the Azure VM."
+    - content: "2 > 1 > 3"
+      isCorrect: true
+      explanation: "Correct. To access the operating system running in an Azure VM, create a resource group, then create an Azure VM and connect to the Azure VM."
+    - content: "1 > 3 > 2"
+      isCorrect: false
+      explanation: "Incorrect. To access the operating system running in an Azure VM, create a resource group, then create an Azure VM and connect to the Azure VM"
+  - content: "Which command allows you to create a standard, general-purpose storage account with locally redundant storage (LRS) replication?"
+    choices:
+    - content: "**New-AzStorageAccount**"
+      isCorrect: true
+      explanation: "Correct. You can create a standard, general-purpose storage account with locally redundant storage (LRS) replication by using **New-AzStorageAccount**."
+    - content: "**Get-AzSubscription**"
+      isCorrect: false
+      explanation: "Incorrect. You can create a standard, general-purpose storage account with locally redundant storage (LRS) replication by using **New-AzStorageAccount**"
+    - content: "**Set-AzContext**"
+      isCorrect: false
+      explanation: "Incorrect. You can create a standard, general-purpose storage account with locally redundant storage (LRS) replication by using **New-AzStorageAccount**"
