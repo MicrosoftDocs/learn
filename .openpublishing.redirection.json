@@ -16859,6 +16859,46 @@
       "source_path": "learn-pr/wwl-data-ai/create-regression-model-azure-machine-learning-designer/3-what-is-azure-ml.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-regression-model-azure-machine-learning-designer/3-what-is-azure-machine-learning",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/create-workspace.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/create-training-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/deploy-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/evaluate-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/8a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/explore-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/create-compute.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/inference-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
     }
   ]
 }

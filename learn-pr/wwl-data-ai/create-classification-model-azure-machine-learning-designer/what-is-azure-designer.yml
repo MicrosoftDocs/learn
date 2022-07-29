@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.explore-data
-title: Explore data
+title: What is Azure Machine Learning designer?
 metadata:
-  title: Explore data
-  description: "Explore data"
-  ms.date: 06/23/2022
+  title: What is Azure Machine Learning designer?
+  description: "What is Azure Machine Learning designer?"
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
-  [!include[](includes/4-explore-data.md)]
+  [!include[](includes/4-what-is-azure-designer.md)]

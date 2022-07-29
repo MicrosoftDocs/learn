@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.create-training-pipeline
-title: Create and run a training pipeline
+title: Understand steps for classification
 metadata:
-  title: Create and run a training pipeline
-  description: "Create and run a training pipeline"
-  ms.date: 06/23/2022
+  title: Understand steps for classification
+  description: "Understand steps for classification"
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 12
+durationInMinutes: 8
 content: |
-  [!include[](includes/5-create-training-pipeline.md)]
+  [!include[](includes/5-classification-steps.md)]
