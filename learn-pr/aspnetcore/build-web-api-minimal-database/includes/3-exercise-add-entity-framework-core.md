@@ -216,7 +216,7 @@ app.MapPut("/pizza/{id}", async (PizzaDb db, Pizza updatepizza, int id) =>
    ``` json
    {
       "id": 1,
-      "name": "Pineapple",
+      "name": "Pineapple"
    }
    ```
 
