@@ -186,6 +186,8 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
     cd $APP_PATH
     # Activate the venv
     source /antenv/bin/activate
+    # Change directory
+    cd solution
     # Install requirements
     pip install -r requirements.txt
     # Run database migrations
