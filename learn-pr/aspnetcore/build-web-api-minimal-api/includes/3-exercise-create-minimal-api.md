@@ -9,13 +9,17 @@ You're a developer for a company, and you and your company have heard about the 
 
 First, you need to scaffold a project. You've installed .NET 6 and you're ready to go.
 
-1. Create a web API by running `dotnet new`:
+1. From a terminal, create a web API in a directory called *PizzaStore* by running `dotnet new`:
 
    ```bash
    dotnet new web -o PizzaStore -f net6.0
    ```
 
-   You should see the _PizzaStore_ directory.
+1. Switch to the new *PizzaStore* directory.
+
+    ```bash
+    cd PizzaStore
+    ```
 
 1. Run the app by calling `dotnet run`. It builds the app and hosts it on a port from 5000 to 5300. HTTPS has a port selected for it in the range of 7000 to 7300.
 
@@ -50,13 +54,20 @@ Congratulations! You've created an API by using a minimal API template.
 
 Use Swagger to ensure that you have a self-documenting API, where the docs change when you change the code.
 
+1. Press **Ctrl+C** to stop running the API.
 1. Install the Swashbuckle package:
 
     ```bash
     dotnet add package Swashbuckle.AspNetCore --version 6.2.3
     ```
 
-1. Verify the install by opening _PizzaStore.csproj_. You should have an entry that looks like this one:
+1. Open the project in Visual Studio Code:
+
+    ```bash
+    code .
+    ```
+
+1. In Visual Studio Code, in the explorer pane, open *PizzaStore.csproj*. You should have an entry that looks like this one:
 
     ```xml
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
@@ -64,12 +75,20 @@ Use Swagger to ensure that you have a self-documenting API, where the docs chang
 
 Next, configure your project to use Swagger.
 
-1. Open _Program.cs_ and add the highlighted code:
+1. Open *Program.cs* and add the highlighted code. Make sure you save your changes.
 
-   :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 18-22":::
+   :::code language="csharp" source="../code/create-minimal-api-add-swagger.cs" highlight="1, 5-9, 13-17":::
 
-1. Rerun the project and go to the app's address, *http://localhost:{PORT}/swagger*.
+1. Press **Ctrl+\`** to open a terminal in Code. In the new terminal, run the app again:
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+1. Navigate to the app's swagger endpoint, *http://localhost:{PORT}/swagger*.
 
    You should see the following output:
 
    :::image type="content" source="../media/swagger.png" alt-text="Screenshot of a Swagger UI for your API.":::
+
+You've successfully added Open API support to your minimal API using Swagger!
