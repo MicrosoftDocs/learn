@@ -56,7 +56,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 
 To store the items in the to-do list, install the `EntityFrameworkCore.InMemory` package.
 
-1. Press **Ctrl+\** to open a terminal in Visual Studio Code. In the new terminal, enter the following code to add the EF Core InMemory package:
+1. Press **Ctrl + \** to open a terminal in Visual Studio Code. In the new terminal, enter the following code to add the EF Core InMemory package:
 
    ```console
    dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0
