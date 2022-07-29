@@ -4,8 +4,7 @@ title: Exercise - Configure default settings
 metadata:
   unitType: exercise
   title: exercise
-  description: "Follow this exercise to configure your default outbound cross-tenant access settings for B2B collaboration."
-  ms.date: 7/31/2022
+  ms.date: 7/29/2022
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial
