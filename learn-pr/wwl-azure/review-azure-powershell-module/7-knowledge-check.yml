@@ -16,7 +16,7 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
-  - content: "The Az PowerShell module is a set of ___________ for managing Azure resources directly from PowerShell."
+  - content: "What is the Az PowerShell module a set of?"
     choices:
     - content: "Cmdlets"
       isCorrect: true
