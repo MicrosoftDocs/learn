@@ -54,7 +54,7 @@ You'd like to ensure that all resources have the **Department** tag associated w
 
     Your policy definition should look like the following example. Select **Save** to save your policy definition.
 
-    :::image type="content" source="../media/4-policy-definition.png" alt-text="Screenshot of Azure portal showing the new policy definition dialog.":::
+    :::image type="content" source="../media/4-add-policy-definition.png" alt-text="Screenshot of Azure portal showing the new policy definition dialog.":::
 
 ### Create a policy assignment
 
@@ -93,7 +93,7 @@ Now that you have assigned the policy to your resource group, any attempts to cr
 
     Validation of your resource creation will fail because you don't have a **Department** tag applied to the resource. If the policy has not caused a validation failure, you may need to wait a few more minutes for it to be enabled.
 
-    :::image type="content" source="../media/4-policy-violation.png" alt-text="Screenshot of Azure portal showing a policy validation failure on a new storage account without a tag.":::
+    :::image type="content" source="../media/4-policy-error-message.png" alt-text="Screenshot of Azure portal showing a policy validation failure on a new storage account without a tag.":::
 
     Fix the violation so you can successfully deploy the storage account.
 
@@ -101,7 +101,7 @@ Now that you have assigned the policy to your resource group, any attempts to cr
 
 1. Add a `Department`:`Finance` tag to the list.
 
-    :::image type="content" source="../media/4-add-department-tag.png" alt-text="Screenshot of Azure portal showing a new Department tag to add during creation.":::
+    :::image type="content" source="../media/4-add-storage-tag.png" alt-text="Screenshot of Azure portal showing a new Department tag to add during creation.":::
 
 1. Now click **Review + create**. Validation will now pass, and if you select **Create**, your storage account will be created.
 

@@ -21,7 +21,7 @@ Recall our **msftlearn-core-infrastructure-rg** resource group. You've now got t
 
 1. Select **+ Add**. Name the lock `BlockDeletion` and select a **Lock type** of **Delete**. Select **OK**.
 
-    :::image type="content" source="../media/6-add-lock.png" alt-text="Screenshot of Azure portal showing a new delete resource lock being configured.":::
+    :::image type="content" source="../media/6-add-rg-lock.png" alt-text="Screenshot of Azure portal showing a new delete resource lock being configured.":::
 
     You now have a lock applied to the resource group that will prevent deletion of the resource group. This lock is inherited by all resources within the resource group. You'll try to delete one of the virtual networks to see what happens.
 

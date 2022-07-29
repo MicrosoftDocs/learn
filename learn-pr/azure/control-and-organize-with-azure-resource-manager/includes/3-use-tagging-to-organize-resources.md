@@ -30,7 +30,7 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
 1. On the **Overview** pane of your resource group, your two virtual networks should be listed. The default view doesn't display the tags column, so you'll add that column to the list view. In the toolbar, select **Manage view**, then select **Edit columns**. On the **Edit columns** pane, select **Add Column** and then select the field to display the dropdown list. Select the Property **Tags** to add it to the columns in the list view. Select **Save** to add your changes.
 
-    :::image type="content" source="../media/3-add-tag-column.png" alt-text="Screenshot of Azure portal showing edit columns dialog with available columns on the left and selected columns on the right.":::
+    :::image type="content" source="../media/3-edit-tag-columns.png" alt-text="Screenshot of Azure portal showing edit columns dialog with available columns on the left and selected columns on the right.":::
 
     You should now have the tags column, but it will be empty since you haven't added any tags yet. You'll add the tags directly here.
 
@@ -38,19 +38,19 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
 1. Let's add a couple tags to this virtual network. The two fields on this pane remember all of the previously used tags. You can select one or create a new tag. In the **Name** box type _Department_, and in the **Value** box type _Finance_. Click **Save** to save your changes.
 
-    :::image type="content" source="../media/3-add-tag-1.png" alt-text="Screenshot of Azure portal showing the edit tags dialog with new tag name and value entered.":::
+    :::image type="content" source="../media/3-edit-tags.png" alt-text="Screenshot of Azure portal showing the edit tags dialog with new tag name and value entered.":::
 
 1. Do the same steps for the **msftlearn-vnet2** virtual network. For this virtual network, add a _Department_ tag to the resource with value _Marketing_.
 
     You should now have your tags applied to each resource.
 
-    :::image type="content" source="../media/3-tags-displayed.png" alt-text="Screenshot of Azure portal showing virtual network resources with department tags.":::
+    :::image type="content" source="../media/3-display-vnet-tags.png" alt-text="Screenshot of Azure portal showing virtual network resources with department tags.":::
 
 1. To quickly categorize resources, you can add tags to resources in bulk. In your list, select the checkbox on the left for each virtual network, and then, in the toolbar, select **Assign tags**. (If not visible, this option may be contained inside the `...` menu.) By selecting multiple resources, you can add a tag all of the selected items, making it easy to apply the same tag to multiple resources.
 
     Add the `Environment`:`Training` tag to the selected resources. You should see in the dialog that the tag will be applied to each of the virtual networks.
 
-    :::image type="content" source="../media/3-add-bulk-tag.png" alt-text="Screenshot of Azure portal showing the assign tags dialog to add tags in bulk.":::
+    :::image type="content" source="../media/3-assign-tags.png" alt-text="Screenshot of Azure portal showing the assign tags dialog to add tags in bulk.":::
 
     In the resource list, you'll now have the **Tags** column populated with multiple values. If your window width is limited, the tag text might be truncated. Hover over the title of a column and use the vertical line to resize the column. If you have an ellipsis in the far right, it indicates additional columns are available but not shown.
 

@@ -57,7 +57,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
     | **Resource details** |
     | Region | From the dropdown list, select a location close to you. |
 
-    :::image type="content" source="../media/2-create-resource-group.png" alt-text="Screenshot of Azure portal showing the resource group creation with subscription, resource group, and region entered.":::
+    :::image type="content" source="../media/2-create-rg.png" alt-text="Screenshot of Azure portal showing the resource group creation with subscription, resource group, and region entered.":::
 
 1. Select **Review + Create**, and after validation passes, select **Create** to create the resource group.
 
@@ -72,7 +72,7 @@ That's it, you've created a resource group that you can now use when you deploy 
     > [!NOTE]
     > You may also see a resource group called *NetworkWatcherRG*. You can ignore this resource group, as it's created automatically to enable Network Watcher in Azure virtual networks.
 
-    :::image type="content" source="../media/2-rg-overview.png" alt-text="Screenshot of Azure portal showing new resource group pane with no resources in it yet.":::
+    :::image type="content" source="../media/2-resource-group-overview.png" alt-text="Screenshot of Azure portal showing new resource group pane with no resources in it yet.":::
 
 1. On the **Overview** page, you'll find the basic information about the resource group, such as its subscription, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. The deployments link takes you to a new panel with the history of all deployments to this resource group. Anytime you create a resource, it's a deployment, and you'll see the history for each resource group here.
 
@@ -105,7 +105,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 1. Go back to your resource group. The two virtual networks you created should appear on the **Overview** pane.
 
-    :::image type="content" source="../media/2-rg-with-vnet.png" alt-text="Screenshot of Azure portal showing resource group overview containing two virtual network resources.":::
+    :::image type="content" source="../media/2-resource-group-vnet.png" alt-text="Screenshot of Azure portal showing resource group overview containing two virtual network resources.":::
 
 Your resource group contains two virtual network resources, because you specified the resource group when you created the resources. You could create more resources inside this resource group, or you could create more resource groups in the subscription and deploy resources into those resource groups.
 
