@@ -53,11 +53,11 @@ Recall that **Stabilize the build server** relates to fixing the team's existing
 
 To set up the work item:
 
-1. In Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
+1. In Azure DevOps, go to **Boards**, and from the menu, select **Boards**:
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
 
-1. In the **Stabilize the build server** work item, at the bottom of the card, select the down arrow. Then assign the work item to yourself.
+1. Select the **Stabilize the build server** work item in the bottom of the list, and assign this work item to yourself:
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 

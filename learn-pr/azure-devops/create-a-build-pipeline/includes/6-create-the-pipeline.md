@@ -18,14 +18,14 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. On the **Select** tab, select your **mslearn-tailspin-spacegame-web** repository.
 
-1. To install the Azure Pipelines app, you might be redirected to GitHub. If so, scroll to the bottom, and select **Approve and install**.
+1. To install the Azure Pipelines app, you might be redirected to GitHub. If so, scroll to the bottom, and select **Approve & Install**.
 
-1. On the **Configure** tab, select **ASP.NET Core**.
-
-    :::image type="content" source="../media/6-configure-app-type.png" alt-text="Screenshot of locating ASP.NET Core from the list of provided application types.":::
-
+1. On the **Configure** tab, select **ASP.NET Core**. 
+   
     > [!NOTE]
     > If you don't see this option, select **Show more**. Don't select **ASP.NET Core (.NET Framework)**.
+
+     :::image type="content" source="../media/6-configure-app-type.png" alt-text="Screenshot of locating ASP.NET Core from the list of provided application types.":::
 
 1. On the **Review** tab, note the initial build configuration.
 
@@ -61,7 +61,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 > [!NOTE]
 > You're about to run a few Git commands. Don't worry if you're new to Git. We'll show you what to do. We'll also go into more detail about Git in future modules.
 
-1. In Visual Studio Code, go to the integrated terminal.
+1. In Visual Studio Code, go to the integrated terminal. Ensure you jump to main in your repo and then execute the steps.
 
 1. To fetch the latest changes from GitHub and update your `main` branch, run this `git pull` command.
 
@@ -69,7 +69,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
     git pull origin main
     ```
 
-    You see from the output that Git fetches a file named *azure-pipelines.yml*. This is the starter pipeline configuration that Azure Pipelines created for you. When you set up the pipeline, Azure Pipelines adds this file to your GitHub repository.
+    You'll see from the output that Git fetches a file named *azure-pipelines.yml*. This is the starter pipeline configuration that Azure Pipelines created for you. When you set up the pipeline, Azure Pipelines adds this file to your GitHub repository.
 
 1. To create a branch named `build-pipeline`, run this `git checkout` command:
 
@@ -120,7 +120,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     Pushing the branch to GitHub triggers the build process in Azure Pipelines.
 
-1. In Azure Pipelines, go to your build. To do so, on the side of the page, select **Pipelines**, and then select your pipeline. You see your commit message and that the build is running using the code from the `build-pipeline` branch.
+1. In Azure Pipelines, go to your build. To do so, on the side of the page, select **Pipelines**, and then select your pipeline. Now select **Run pipeline**. You'll see your commit message and that the build is running using the code from the `build-pipeline` branch.
 
     :::image type="content" source="../media/6-build-history.png" alt-text="Screenshot of Azure Pipelines showing the run history, including the branch you recently pushed to GitHub.":::
 
