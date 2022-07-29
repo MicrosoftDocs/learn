@@ -4,7 +4,7 @@ Regression is an example of a *supervised* machine learning technique in which y
 
 ## Scenarios for regression machine learning models 
 
-Regression machine learning models are used in many industries. A few common scenarios for using regression machine learning models are: 
+Regression machine learning models are used in many industries. A few scenarios are: 
 * Using characteristics of houses, such as square footage and number of rooms, to predict home prices.
 * Using characteristics of farm conditions, such as weather and soil quality, to predict crop yield.    
 * Using characteristics of a past campaign, such as advertising logs, to predict future advertisement clicks.
