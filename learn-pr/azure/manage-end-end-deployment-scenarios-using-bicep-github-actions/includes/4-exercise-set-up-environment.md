@@ -300,13 +300,13 @@ You've created two workload identities, and resource groups that they can deploy
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../media/4-github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true"::: <!-- TODO -->
+   :::image type="content" source="../media/4-github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true"::: <!-- TODO redo screenshot -->
 
 1. Repeat the process to create the secrets for *AZURE_CLIENT_ID_PRODUCTION*, *AZURE_TENANT_ID*, and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
 
 1. Verify that your list of secrets now shows all four secrets.
 
-   :::image type="content" source="../media/4-github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true"::: <!-- TODO -->
+   :::image type="content" source="../media/4-github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true"::: <!-- TODO redo screenshot -->
 
 ## Create environments in GitHub
 

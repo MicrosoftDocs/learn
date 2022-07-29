@@ -55,6 +55,7 @@ Whatever your organization chooses as its list of environments, the goal is to i
 In your toy company, you decide to start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named *Test*:
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows two environments: test and production." border="false":::
+<!-- TODO update diagram: https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/503496 -->
 
 You'll update your workflow to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you'll deploy to your production environment.
 
