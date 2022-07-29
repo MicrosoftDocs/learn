@@ -69,7 +69,7 @@ While your site is deploying, turn your attention to creating the database. You'
 
 1. If prompted to choose a subscription, choose your Azure subscription.
 
-1. Select **Create App Service Web App...**.
+1. Select **Create Database Server...**.
 
     ![Screenshot showing how to create a new web app.](../media/create-new-database.png)
 
@@ -107,7 +107,9 @@ While your site is deploying, turn your attention to creating the database. You'
 
 Your server will now be created! This process will take a few minutes. 
 
-But there's still one thing to do and that's to create a firewall rule to allow your developer environment to access the database. Wait until the database is following the next steps for creating the rule.
+## Create a database firewall rule
+
+After the database is created, you need to create a firewall rule to allow your developer environment to access the database. Wait until the database exists before following the next steps to create the rule.
 
 1. Open the Visual Studio Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
 
@@ -139,6 +141,7 @@ While your database server is being created, configure the App Service you set u
     -----------|---------------------------------------
     DBHOST     | `<The server name you created previously>`
     DBPASS     | `<The password you created previously>`
+    DBUSER     | `shelter_admin`
     DBNAME     | `shelters`
     SECRET_KEY | `<Generate a secure password>`
 
@@ -149,9 +152,10 @@ All the necessary environmental variables are now created on your app service.
 
 ## Create the database
 
-Now that you've configured App Service and created the server, you can create the database.
+Now that you've configured App Service and created the server, you can create the database in the Postgres Database Server.
 
 1. Under **Databases**, expand the sandbox subscription.
+
 1. Right-click the name of your database server and select **Create Database**.
 
     ![Screenshot showing the Create Database selection.](../media/create-database.png)

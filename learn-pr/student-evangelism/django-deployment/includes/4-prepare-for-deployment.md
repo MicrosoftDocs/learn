@@ -59,7 +59,7 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': os.environ['DBNAME'],
             'HOST': hostname + ".postgres.database.azure.com",
-            'USER': os.environ['DBUSER'] + "@" + hostname,
+            'USER': os.environ['DBUSER'],
             'PASSWORD': os.environ['DBPASS'] 
         }
     }
@@ -67,6 +67,9 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
 
     > [!NOTE]
     > You'll set the environmental variables on Azure in a later step.
+
+    > [!NOTE]
+    > The database connection is for [PostgreSQL Flexible Server](/azure/postgresql/flexible-server/). For [PostgreSQL Single Server](/azure/postgresql/single-server/), set the `USER` value to  `os.environ['DBUSER'] + "@" + hostname`.
 
     The connection string you're using is for PostgreSQL. You provide the following information:
 
