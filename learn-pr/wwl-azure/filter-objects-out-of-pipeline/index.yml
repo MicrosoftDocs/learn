@@ -43,9 +43,9 @@ subjects:
 units:
 - learn.wwl.filter-objects-out-of-pipeline.introduction
 - learn.wwl.filter-objects-out-of-pipeline.learn-about-comparison-operators-powershell
-- learn.wwl.filter-objects-out-of-pipeline.review-basic-filtering-syntax-pipeline
-- learn.wwl.filter-objects-out-of-pipeline.review-advanced-filtering-syntax-pipeline
-- learn.wwl.filter-objects-out-of-pipeline.optimize-filtering-performance-pipeline
+- learn.wwl.filter-objects-out-of-pipeline.review-basic-filter-syntax-pipeline
+- learn.wwl.filter-objects-out-of-pipeline.review-advanced-filter-syntax-pipeline
+- learn.wwl.filter-objects-out-of-pipeline.optimize-filter-performance-pipeline
 - learn.wwl.filter-objects-out-of-pipeline.knowledge-check
 - learn.wwl.filter-objects-out-of-pipeline.summary
 badge:
