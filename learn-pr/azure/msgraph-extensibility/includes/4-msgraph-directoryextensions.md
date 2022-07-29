@@ -1,4 +1,4 @@
-You've learnt to use extension attributes to store custom values, query the data, and use the data to define rules for dynamic groups. Here, you'll learn to use the second type of extension, **directory extensions**.
+You've learned to use extension attributes to store custom values, query the data, and use the data to define rules for dynamic groups. Here, you'll learn to use the second type of extension, **directory extensions**.
 
 ## Directory extension definitions
 
@@ -8,7 +8,7 @@ A **directory extension definition** includes the name and return type and also 
 
 Directory extension definitions are managed through the **extensionProperties** relationship on an application object and the associated **extensionProperty** resource type.
 
-When you create a directory extension definition, Microsoft Graph transforms the extension name that you specified and adds a prefix to create a new extension name. This extension name becomes the name of directory extension property on the target objects. For example, when you specify `linkedInProfile` as an extension name in the request body, the new extension name can be `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`.
+When you create a directory extension definition, Microsoft Graph transforms the extension name you provided by adding a prefix to create a new extension name. This extension name becomes the name of directory extension property on the target objects. For example, when you specify `linkedInProfile` as an extension name in the request body, the new extension name can be `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`.
 
 Microsoft Graph directory extensions are named following the naming convention:
 
@@ -26,11 +26,11 @@ GET https://graph.microsoft.com/v1.0/applications/{applicationId}/extensionPrope
 GET https://graph.microsoft.com/v1.0/applications/{applicationId}?$expand=extensionProperties
 ```
 
-After the directory extension definition has been created, it's available for use after a tenant admin consents for the app to be used in the tenant and a service principal is created. When you create additional directory extensions on the owner app, these extensions are immediately available in the tenant where the app is homed.
+After the directory extension definition has been created, it's available for use after a tenant admin grants consent for the app to be used in the tenant, and a service principal is created. When you create additional directory extensions on the owner app, these extensions are immediately available in the tenant where the app is homed.
 
 To avoid breaking changes when the directory extension properties are in use, directory extension definitions can't be updated. For more information, see the [Considerations for using directory extensions](#considerations-for-using-directory-extensions).
 
-Because directory extensions are closely tied to an owner app, they are also available for use by other tenants where the app has been consented to.
+Because directory extensions are closely tied to an owner app, they're also available for use by other tenants where the app has been consented to.
 
 ## Manage directory extension definitions
 
@@ -56,7 +56,7 @@ Directory extension definitions support the `$select` and `$filter` (`eq` operat
 
 In the Microsoft Graph `v1.0` endpoint, the directory extension properties aren't returned by default and you must use the `$select` query parameter to read the properties.
 
-Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters.You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering using the `ne` operator on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
+Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering using the `ne` operator on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
 ## Other Azure AD scenarios for the custom data
 
@@ -70,7 +70,7 @@ Suppose you want to seamlessly bring together employees with shared interests. F
 
 Microsoft Graph groups allow an organization to bring together users with common interests. You can create an Xbox gamers group to bring together all Xbox enthusiasts through one alias.
 
-To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also provision a Yammer community for the group.
+To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also create a Yammer community for the group.
 
 ### Customize tokens
 
@@ -88,6 +88,6 @@ You can use up to 100 directory extensions per user. When the definition object 
 
 When the definition is deleted before data in the associated extension property is deleted, there's no way to know the existence of the extension property via Microsoft Graph - even though the undiscoverable property counts against the 100-limit.
 
-Deleting an owner app makes the associated directory extension properties and their data undiscoverable. Restoring an owner app restores the directory extension definitions *but doesn't* make the directory extension properties or their data immediately discoverable. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. To make the directory extension properties and their data discoverable, either create a new service principal or restore the deleted service principal. NO changes are made to other tenants where the app has been consented to.
+Deleting an owner app in the home tenant makes the associated directory extension properties and their data undiscoverable. Restoring an owner app restores the directory extension definitions *but doesn't* make the directory extension properties or their data immediately discoverable. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. To make the directory extension properties and their data discoverable, either create a new service principal or restore the deleted service principal. NO changes are made to other tenants where the app has been consented to.
 
 If a multi-tenant application creates additional directory extensions in an app that has been consented to by other tenants, the associated directory extension properties become immediately available for use by the other tenants.

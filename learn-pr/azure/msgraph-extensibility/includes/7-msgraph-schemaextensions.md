@@ -1,4 +1,4 @@
-You've learnt to use two types of extensions to store custom values, query the data, and use the data to define rules for dynamic groups. Here, you'll learn to use the third type of extension, **schema extensions**.
+You've learned to use two types of extensions to store custom values, query the data, and use the data to define rules for dynamic groups. Here, you'll learn to use the third type of extension, **schema extensions**.
 
 ## Schema extension definitions
 
@@ -41,7 +41,7 @@ A schema extension definition has a lifecycle that affects how the property can 
 
 |State |Lifecycle state behavior |
 |:-------------|:------------|
-| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (if the app has permissions to that resource). </li><li>For an owner app that's multi-tenant, only the instance of the owner app that's in a different directory from the home directory can extend resource instances with this schema definition (if the app has permissions to that resource), or read the extension data. </li><li>Only the owner app can update the extension definition with additive changes. </li><li>Only the owner app can delete the extension definition. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
+| InDevelopment | <ul><li>Initial state after creation. The owner app is still developing the schema extension. </li><li>In this state, any app in the same directory where the owner app is registered can extend resource instances with this schema definition (if the app has permissions to that resource). </li><li>For a multi-tenant owner app, only the instance of the owner app that's in a different directory from the home directory can extend resource instances with this schema definition (if the app has permissions to that resource), or read the extension data. </li><li>Only the owner app can update the extension definition with additive changes. </li><li>Only the owner app can delete the extension definition. </li><li>The owner app can move the extension from **InDevelopment** to the **Available** state.</li></ul> |
 | Available | <ul><li>The schema extension is available for use by all apps in any tenant. </li><li>After the owner app sets the extension to **Available**, any app can add custom data to instances of those resource types specified in the extension (if the app has permissions to that resource). The app can assign custom data when creating a new instance or updating an existing instance. </li><li>Only the owner app can update the extension definition with additive changes. No app can delete the extension definition in this state. </li><li>The owner app can move the schema extension from **Available** to the **Deprecated** state.</li></ul> |
 | Deprecated | <ul><li>The schema extension definition can no longer be read or modified. </li><li>No app can view, update, add new properties, or delete the extension. </li><li>Apps can, however, still read, update, or delete existing extension _property values_. </li></ul> |
 
@@ -105,7 +105,7 @@ Schema extension definitions support the `$filter` OData query parameter with th
 
 In the Microsoft Graph `v1.0` endpoint, the schema extension properties aren't returned by default and you must use the `$select` query parameter to read the properties.
 
-Schema extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters.You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
+Schema extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
 ## Other Azure AD scenarios for custom data
 
@@ -119,4 +119,4 @@ You can use up to 100 schema extensions per user.
 
 Deleting a schema extension definition without setting the schema extension to `null` makes the property and its associated user data undiscoverable.
 
-Deleting an owner app doesn't delete the associated schema extension definition or the property and the data it stores. The schema extension property can still be read, deleted, or updated for users. However, the schema extension definition can't be updated.
+Deleting an owner app in the home tenant doesn't delete the associated schema extension definition or the property and the data it stores. The schema extension property can still be read, deleted, or updated for users. However, the schema extension definition can't be updated.

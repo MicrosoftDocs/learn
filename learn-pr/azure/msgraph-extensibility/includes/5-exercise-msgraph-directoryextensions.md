@@ -10,7 +10,7 @@ In the team bonding app, the employee will sign in with their Azure AD profile a
 
 ## Identify the owner app
 
-Retrieve the values of **id** and **appId** of the app you own and that has a service principal in the tenant. You will use these values in this exercise. Assume the following object represents your application.
+Retrieve the values of **id** and **appId** of the app you own and that has a service principal in the tenant. You'll use these values in this exercise. Assume the following object represents your application.
 
 >**Note:** The object shown here has been shortened for readability.
 ```http
@@ -75,7 +75,7 @@ Content-type: application/json
 }
 ```
 
-Running the previous request two more times with different names will give you other response objects. Assume these are the names of the three directory extension definitions:
+Running the previous request two more times with different names will give you other response objects. Assume the following names for the three directory extension definitions:
 + `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag`
 + `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_skypeId`
 + `extension_5bfc8fdacfc943a9a6de214ea9d15fdb_linkedInProfile`

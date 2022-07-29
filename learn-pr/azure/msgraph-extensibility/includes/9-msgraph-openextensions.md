@@ -1,4 +1,4 @@
-You've learnt to use three types of extensions to store custom values and query the data. You've also learnt the additional scenarios that each extension option supports. Here, you'll learn to use the fourth type of extension, **open extensions**.
+You've learned to use three types of extensions to store custom values and query the data. You've also learned the additional scenarios that each extension option supports. Here, you'll learn to use the fourth type of extension, **open extensions**.
 
 ## Open extensions
 
@@ -53,7 +53,7 @@ You manage open extensions for users as follows:
 + Use PATCH to either store data in the open extension property, update the stored data, or delete the existing data.
     + To update any property in the open extension object, you *must* specify *all* properties in the request body; otherwise, Microsoft Graph will delete the unspecified properties. Therefore, while you may want to update only the **xboxGamertag**, you must also specify both the **linkedInProfile** and **skypeId** so that the properties and their associated values aren't deleted.
     + To delete data from a property in the open extension object, set its value to `null`.
-    + To delete a property from the open extension object, don't pass it in the PATCH request body and Microsoft Graph will delete it.
+    + To delete a property from the open extension object, don't pass it in the PATCH request body, and Microsoft Graph will delete it.
     + To delete data from all properties in the open extension object but keep the open extension object, update the values of the properties to `null`.
 + Use the DELETE method to delete an open extension object from the user.
 
