@@ -23,7 +23,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
     > [!TIP]
     > If you miss the prompt to reopen in container, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
 
-1. After the project loads in the container, expand the *modules* directory, then *microservices-logging-aspnet-core*, and then finally *deploy*. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.) 
+1. After the project loads in the container, expand the *modules* directory, then *microservices-configuration-aspnet-core*, and then finally *deploy*. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.) 
 
     ![Screenshot of the explorer pane in Visual Studio Code. The context menu for the k8s folder is displayed, and Open in Integrated Terminal is selected.](../media/2-environment-setup/k8s-path.png)
 
