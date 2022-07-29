@@ -56,7 +56,7 @@ First, you need to create a project. You've installed .NET 6 and you're ready to
 
 To store the items in the to-do list, install the `EntityFrameworkCore.InMemory` package.
 
-1. Press **Ctrl+\`** to open a terminal in Visual Studio Code. In the new terminal, enter the following code to add the EF Core InMemory package:
+1. Press **Ctrl+\** to open a terminal in Visual Studio Code. In the new terminal, enter the following code to add the EF Core InMemory package:
 
    ```console
    dotnet add package Microsoft.EntityFrameworkCore.InMemory --version 6.0
@@ -91,7 +91,7 @@ To store the items in the to-do list, install the `EntityFrameworkCore.InMemory`
 
 ## Return a list of items
 
-1. To read from a list of items in the pizza list, add the following code above the call to `app.Run();` to add a "/pizzas" route:
+- To read from a list of items in the pizza list, add the following code above the call to `app.Run();` to add a "/pizzas" route:
 
     ```csharp
     app.MapGet("/pizzas", async (PizzaDb db) => await db.Pizzas.ToListAsync());
@@ -186,7 +186,7 @@ To GET an item by `id`, add the code under the `app.MapPost` route you created e
 app.MapGet("/pizza/{id}", async (PizzaDb db, int id) => await db.Pizzas.FindAsync(id));
 ```
 
-### Testing GET by ID
+### Test GET by ID
 
 To check this out, you can either go to *https://localhost:{PORT}/pizza/1* or use the Swagger UI. Since you're using an in-memory database, the pizza you previously created won't be listed if you've restarted the application, so you'll need to enter it again.
 
@@ -206,7 +206,7 @@ app.MapPut("/pizza/{id}", async (PizzaDb db, Pizza updatepizza, int id) =>
 });
 ```
 
-### Testing PUT
+### Test PUT
 
 1. Select **PUT /pizza/{id}** in the Swagger UI.
 1. Select **Try it out**.
