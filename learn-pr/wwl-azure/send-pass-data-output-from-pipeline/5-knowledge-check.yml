@@ -16,7 +16,7 @@ content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Which cmdlet should you pipe the output of **Get-ADUser** to in order to be able to display the list of results one page at a time in the PowerShell window?"
+  - content: "Which cmdlet should a user pipe the output of **Get-ADUser** to in order to be able to display the list of results one page at a time in the PowerShell window?"
     choices:
     - content: "**Out-Host**"
       isCorrect: true

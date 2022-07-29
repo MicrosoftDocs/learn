@@ -45,8 +45,8 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.send-pass-data-output-from-pipeline.introduction
-- learn.wwl.send-pass-data-output-from-pipeline.write-pipeline-data-to-file
-- learn.wwl.send-pass-data-output-from-pipeline.convert-pipeline-objects-to-other-forms-of-data-representation-powershell
+- learn.wwl.send-pass-data-output-from-pipeline.write-pipeline-data-file
+- learn.wwl.send-pass-data-output-from-pipeline.convert-pipeline-objects-other-forms-of-data-representation-powershell
 - learn.wwl.send-pass-data-output-from-pipeline.control-additional-output-options-powershell
 - learn.wwl.send-pass-data-output-from-pipeline.knowledge-check
 - learn.wwl.send-pass-data-output-from-pipeline.summary
