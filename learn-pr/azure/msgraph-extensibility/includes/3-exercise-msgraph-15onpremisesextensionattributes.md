@@ -128,7 +128,7 @@ Microsoft Graph doesn't support retrieving a subset of the 15 extension attribut
 
 ## Update and delete user data
 
-Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well so colleagues can discover the new gamertag.
+Suppose Adele has crossed the 1,000,000 *gamerscore* mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well so colleagues can discover the new *gamertag*.
 
 Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **extensionAttribute14** to `null`.
 
@@ -162,7 +162,7 @@ POST https://graph.microsoft.com/v1.0/groups
 
 {
     "description": "Xbox gamers group - Have fun, compete, grow, build connections!",
-    "displayName": "Xbox gamers",
+    "displayName": "Xboxers",
     "groupTypes": [
         "Unified",
         "DynamicMembership"
@@ -191,7 +191,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
     "id": "d61efd38-0b40-488a-8e4d-ed7508504b27",
     "description": "Xbox gamers group - Have fun, compete, grow, build connections!",
-    "displayName": "Xbox gamers",
+    "displayName": "Xboxers",
     "groupTypes": [
         "Unified",
         "DynamicMembership"

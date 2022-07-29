@@ -70,7 +70,7 @@ Suppose you want to seamlessly bring together employees with shared interests. F
 
 Microsoft Graph groups allow an organization to bring together users with common interests. You can create an Xbox gamers group to bring together all Xbox enthusiasts through one alias.
 
-To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox gamertag. If an employee stops sharing their Xbox gamertag, they're automatically removed from the group. An employee who is a member of the Xbox gamers group will be able to interact with other gamers through Teams and email. You can also create a Yammer community for the group.
+To avoid manually updating the membership of the group, Microsoft Graph supports creating and managing groups with **dynamic membership**. You create a dynamic group for Xbox gamers within the company. The membership of the employees to the group depends on whether they've shared their Xbox *gamertag*. If an employee stops sharing their Xbox *gamertag*, they're automatically removed from the group. An employee who is a member of the *Xboxers* group will be able to interact with other gamers through Teams and email. You can also create a Yammer community for the group.
 
 ### Customize tokens
 

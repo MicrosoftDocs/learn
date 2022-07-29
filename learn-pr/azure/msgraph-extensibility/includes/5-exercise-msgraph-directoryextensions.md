@@ -135,7 +135,7 @@ Content-type: application/json
 
 ## Update and delete user data
 
-Suppose Adele has crossed the 1,000,000 gamerscore mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well so colleagues can discover the new gamertag.
+Suppose Adele has crossed the 1,000,000 *gamerscore* mark and to show off the milestone, has changed the Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change the value in the internal profile as well so colleagues can discover the new *gamertag*.
 
 Adele also no longer uses the Skype app and now uses Teams instead. The app calls Microsoft Graph to set the value of **extension_5bfc8fdacfc943a9a6de214ea9d15fdb_xboxGamertag** to `null`.
 
@@ -158,11 +158,11 @@ HTTP/1.1 204 No Content
 
 ## Dynamically add users to groups based on their extension data
 
-Assume you created the dynamic "Xbox gamers" group in the previous exercise. In this exercise, you update the group **membershipRule** setting to configure the rule that only users with Xbox gamer tags can be members of the group.
+Assume you created the dynamic *xBoxers* group in the previous exercise. In this exercise, you update the group **membershipRule** setting to configure the rule that only users with Xbox gamer tags can be members of the group.
 
-Because Adele is already a member of the Xboxers gamers group due to the previous exercise, you can choose to reset the group and remove all memberships. To achieve this:
+Because Adele is already a member of the *xBoxers* group due to the previous exercise, you can choose to reset the group and remove all memberships. To achieve this:
 1. Update the **groupTypes** to `Unified` only, and the **membershipRuleProcessingState** and **membershipRule** to `null`.
-1. Remove the current group members from the Xboxers group.
+1. Remove the current group members from the *xBoxers* group.
 
 You can alternatively choose to create a new dynamic group for this part of the exercise.
 
