@@ -91,4 +91,6 @@ Next, configure your project to use Swagger.
 
    :::image type="content" source="../media/swagger.png" alt-text="Screenshot of a Swagger UI for your API.":::
 
+1. In the terminal, press **Ctrl+C** to terminate the program.
+
 You've successfully added Open API support to your minimal API using Swagger!

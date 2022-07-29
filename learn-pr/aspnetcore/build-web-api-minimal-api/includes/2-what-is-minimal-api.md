@@ -6,43 +6,9 @@ To get started with minimal API, the main requirement is to use at least .NET 6.
 
 If you've developed a .NET web API, you've used an approach that uses controllers. The idea is to have a controller class method, which represents various HTTP verbs, perform an operation to complete a specific task. For example, `GetProducts()` would return products by using GET as an HTTP verb.
 
-What's the difference between this controller-based approach and minimal API?
+What's the difference between the controller-based approach and minimal API?
 
-- **No _Startup.cs_:** When you build a minimal API, you don't need a _Startup.cs_ file. Instead, all the tasks you're used to doing happen in _Program.cs_. Tasks you used to do include setting up routes and configuring dependency injections, security, and CORS.
-- **Top-level statements:** Because minimal API uses .NET 6, you can use top-level statements. Here's what a program looks like that doesn't use top-level statements:
-
-   ```csharp
-   using System;
-
-    namespace Application
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                Console.WriteLine("Hello World!");
-            }
-        }
-    }   
-   ```
-
-   Notice the use of a program class, a `Main()` method, and a `using` statement. With a top-level statement, all of that disappears and you're left with only this line of code:
-
-   ```csharp
-   Console.WriteLine("Hello World!");
-   ```
-
-   The minimal API uses this technique to bring down the number of lines you need to type. To create an API, you use only these lines:
-
-   ```csharp
-   var builder = WebApplication.CreateBuilder(args);
-   var app = builder.Build();
-   app.MapGet("/", () => "Hello World!");
-   app.Run();
-   ```
-
-   There's no `using` statement, `Main()` method, or class. There are only four lines of code.
-
+- **Streamlined *Program.cs*:** The template for the controller-based web API wires up the controllers using the `AddControllers` method. In addition, it wires up Swagger to provide Open API support. Minimal APIs don't have this wiring by default, though you can add Swagger if you wish.
 - **Routing looks a little different:** The routing looks slightly different compared to a controller-based web API. In a web API, for routing you write code as shown:
 
    ```csharp
@@ -75,7 +41,7 @@ With .NET 6 installed, this command example creates a minimal API project:
 dotnet new web -o PizzaStore -f net6.0
 ```
 
-The newly created _PizzaStore_ folder contains the API project.
+The newly created *PizzaStore* folder contains the API project.
 
 ### Inspect the files
 
@@ -90,7 +56,7 @@ PizzaStore.csproj
 Program.cs
 ```
 
-Inside _PizzaStore.csproj_, there's an entry like this one:
+Inside *PizzaStore.csproj*, there's an entry like this one:
 
 ```xml
 <PropertyGroup>
@@ -103,7 +69,7 @@ This code tells you that you're using .NET 6.
 
 ### Understand the code
 
-_Program.cs_ contains your API code. Let's have a closer look at a program example:
+*Program.cs* contains your API code. Let's have a closer look at a program example:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -151,7 +117,7 @@ To run your code, you start your project, like any .NET project, with `dotnet ru
 
 ## Add documentation with Swagger
 
-Documentation is something you want for your API. You want it for yourself, your colleagues, and any third-party developers who might want to use your API. It's key to keep the documentation in sync with your API as it changes. A good approach is to describe your API in a standardized way and ensure it's self-documenting. By _self-documenting_, we mean that if the code changes, the documentation changes with it.
+Documentation is something you want for your API. You want it for yourself, your colleagues, and any third-party developers who might want to use your API. It's key to keep the documentation in sync with your API as it changes. A good approach is to describe your API in a standardized way and ensure it's self-documenting. By *self-documenting*, we mean that if the code changes, the documentation changes with it.
 
 Swagger implements the Open API specification. This format describes your routes but also what data they accept and produce. Swagger UI is a collection of tools that render the Open API specification as a website and let you interact with your API via the website.
 
@@ -181,7 +147,7 @@ To use Swagger and the Swagger UI in your API, you do two things:
     });
    ```
 
-   - Add `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file _swagger.json_.
+   - Add `UseSwagger()` and `UseSwaggerUI()`. These two code lines tell the API project to use Swagger and also where to find the specification file *swagger.json*.
 
    ```csharp
    app.UseSwagger();
