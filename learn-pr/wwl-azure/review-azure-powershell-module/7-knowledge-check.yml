@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-azure-powershell-module.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "The Az PowerShell module is a set of ___________ for managing Azure resources directly from PowerShell."
+    choices:
+    - content: "Cmdlets"
+      isCorrect: true
+      explanation: "Correct. The Az PowerShell module is a set of cmdlets for managing Azure resources directly from PowerShell."
+    - content: "Functions"
+      isCorrect: false
+      explanation: "Incorrect. The Az PowerShell module is a set of cmdlets for managing Azure resources directly from PowerShell."
+    - content: "Modules"
+      isCorrect: false
+      explanation: "Incorrect. The Az PowerShell module is a set of cmdlets for managing Azure resources directly from PowerShell."
+  - content: "Which command should you invoke first before starting a container based on a Docker image that includes Azure PowerShell?"
+    choices:
+    - content: "docker run"
+      isCorrect: false
+      explanation: "Incorrect. The docker pull command needs to be run first, before starting a container based on a Docker image that includes Azure PowerShell. The docker run command starts a container, rather than performing an action that needs to take place before starting a container."
+    - content: "docker pull"
+      isCorrect: true
+      explanation: "Correct. The docker pull command needs to be run first, before starting a container based on a Docker image that includes Azure PowerShell."
+    - content: "Connect-AzAccount"
+      isCorrect: false
+      explanation: "Incorrect. The docker pull command needs to be run first, before starting a container based on a Docker image that includes Azure PowerShell. The Connect-AzAccount PowerShell cmdlet becomes available once the container is already running."
