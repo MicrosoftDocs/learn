@@ -55,9 +55,7 @@ Hyper-V Replica has the components detailed in the following table.
 > [!IMPORTANT]
 > Hyper-V replica works at the host level and is workload and application agnostic. This means that you can use Site Recovery for any operating system that Hyper-V supports, and to protect all kinds of workloads, including Windows or Linux environments such as:
 > - Microsoft SharePoint Server
-> - Microsoft Exchange Server
 > - Microsoft Dynamics CRM
 > - Microsoft SQL Server
-> - Active Directory Domain Services (AD DS)
 > - Internet Information Services (IIS)
 > - Third-party applications

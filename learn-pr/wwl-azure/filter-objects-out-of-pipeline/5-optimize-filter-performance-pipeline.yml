@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-objects-out-of-pipeline.optimize-filter-performance-pipeline
+title: Optimize the filter performance in the pipeline
+metadata:
+  title: Optimize the filter performance in the pipeline
+  description: "Optimize the filter performance in the pipeline"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-optimize-filter-performance-pipeline.md)]

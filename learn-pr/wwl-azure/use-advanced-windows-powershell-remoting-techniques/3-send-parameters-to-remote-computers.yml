@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-advanced-windows-powershell-remoting-techniques.send-parameters-to-remote-computers
+title: Send parameters to remote computers in Windows PowerShell
+metadata:
+  title: Send parameters to remote computers in Windows PowerShell
+  description: "Send parameters to remote computers in Windows PowerShell"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-send-parameters-to-remote-computers.md)]
