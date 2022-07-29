@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets
+metadata:
+  title: Manage network service settings for Windows devices using PowerShell cmdlets
+  description: "This module covers the PowerShell modules and cmdlets that are used to configure network settings for Windows devices."
+  ms.date: 07/28/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage network service settings for Windows devices using PowerShell cmdlets
+summary: This module covers the PowerShell modules and cmdlets that are used to configure network settings for Windows devices.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  *   Identify cmdlets for managing TCP/IP settings.
+  *   Describe how to manage local routing table settings.
+  *   Describe how to modify DNS client configuration.
+  *   List cmdlets for managing Windows Firewall.
+  *   Configure network settings.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.introduction
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-ip-addresses-powershell
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-ip-route-powershell
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-dns-clients-powershell
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-windows-firewall-settings-powershell
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.knowledge-check
+- learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.summary
+badge:
+  uid: learn.wwl.manage-network-service-settings-for-windows-devices-using-powershell-cmdlets.badge

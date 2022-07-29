@@ -33,8 +33,12 @@ Privacy Risk Management in Microsoft Priva also gives you the capability to set 
 - Spot and limit transfers of personal data across departments or regional borders.
 - Help users identify and reduce the amount of unused personal data that you store.
 
+To learn more about Microsoft Priva Privacy Risk Management, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.
+
 ### Priva Subject Rights Requests
 
 In accordance with certain privacy regulations around the world, individuals (or data subjects) may make requests to review or manage the personal data about themselves that companies have collected. These requests are sometimes also referred to as data subject requests (DSRs), data subject access requests (DSARs), or consumer rights requests. For companies that store large amounts of information, finding the relevant data can be a formidable task.
 
 Microsoft Priva can help you handle these inquiries through the Subject Rights Requests solution. It provides workflow, automation, and collaboration capabilities for helping you search for subject data, review your findings, collect the appropriate files, and produce reports.
+
+To learn more about Microsoft Priva Privacy Subject Rights Requests, select the interactive guide available in the Learn more section of the Summary and resources unit of this module.

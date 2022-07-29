@@ -13,77 +13,12 @@ When you create your storage account, you’ll start by picking the storage acco
  -  Geo-zone-redundant storage (GZRS)
  -  Read-access geo-zone-redundant storage (RA-GZRS)
 
-:::row:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Supported services**
-  :::column-end:::
-  :::column:::
-    **Redundancy Options**
-  :::column-end:::
-  :::column:::
-    **Usage**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Standard general-purpose v2
-  :::column-end:::
-  :::column:::
-    Blob Storage (including Data Lake Storage), Queue Storage, Table Storage, and Azure Files
-  :::column-end:::
-  :::column:::
-    LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS
-  :::column-end:::
-  :::column:::
-    Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. If you want support for network file system (NFS) in Azure Files, use the premium file shares account type.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Premium block blobs
-  :::column-end:::
-  :::column:::
-    Blob Storage (including Data Lake Storage)
-  :::column-end:::
-  :::column:::
-    LRS, ZRS
-  :::column-end:::
-  :::column:::
-    Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transaction rates or that use smaller objects or require consistently low storage latency.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Premium file shares
-  :::column-end:::
-  :::column:::
-    Azure Files
-  :::column-end:::
-  :::column:::
-    LRS, ZRS
-  :::column-end:::
-  :::column:::
-    Premium storage account type for file shares only. Recommended for enterprise or high-performance scale applications. Use this account type if you want a storage account that supports both Server Message Block (SMB) and NFS file shares.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Premium page blobs
-  :::column-end:::
-  :::column:::
-    Page blobs only
-  :::column-end:::
-  :::column:::
-    LRS
-  :::column-end:::
-  :::column:::
-    Premium storage account type for page blobs only.
-  :::column-end:::
-:::row-end:::
-
+| **Type**                    | **Supported services**                                                                    | **Redundancy Options**               | **Usage**                                                                                                                                                                                                                                    |
+| --------------------------- | ----------------------------------------------------------------------------------------- | ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Standard general-purpose v2 | Blob Storage (including Data Lake Storage), Queue Storage, Table Storage, and Azure Files | LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. If you want support for network file system (NFS) in Azure Files, use the premium file shares account type.    |
+| Premium block blobs         | Blob Storage (including Data Lake Storage)                                                | LRS, ZRS                             | Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transaction rates or that use smaller objects or require consistently low storage latency.                                                |
+| Premium file shares         | Azure Files                                                                               | LRS, ZRS                             | Premium storage account type for file shares only. Recommended for enterprise or high-performance scale applications. Use this account type if you want a storage account that supports both Server Message Block (SMB) and NFS file shares. |
+| Premium page blobs          | Page blobs only                                                                           | LRS                                  | Premium storage account type for page blobs only.                                                                                                                                                                                            |
 
 ## Storage account endpoints
 
@@ -96,51 +31,10 @@ When naming your storage account, keep these rules in mind:
 
 The following table shows the endpoint format for Azure Storage services.
 
-:::row:::
-  :::column:::
-    **Storage service**
-  :::column-end:::
-  :::column:::
-    **Endpoint**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Blob Storage
-  :::column-end:::
-  :::column:::
-    https://storage-account-name.blob.core.windows.net
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Data Lake Storage Gen2
-  :::column-end:::
-  :::column:::
-    https://storage-account-name.dfs.core.windows.net
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Files
-  :::column-end:::
-  :::column:::
-    https://storage-account-name.file.core.windows.net
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Queue Storage
-  :::column-end:::
-  :::column:::
-    https://storage-account-name.queue.core.windows.net
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Table Storage
-  :::column-end:::
-  :::column:::
-    https://storage-account-name.table.core.windows.net
-  :::column-end:::
-:::row-end:::
+| **Storage service**    | **Endpoint**                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| Blob Storage           | https://&lt;storage-account-name&gt;.blob.core.windows.net  |
+| Data Lake Storage Gen2 | https://&lt;storage-account-name&gt;.dfs.core.windows.net   |
+| Azure Files            | https://&lt;storage-account-name&gt;.file.core.windows.net  |
+| Queue Storage          | https://&lt;storage-account-name&gt;.queue.core.windows.net |
+| Table Storage          | https://&lt;storage-account-name&gt;.table.core.windows.net |
