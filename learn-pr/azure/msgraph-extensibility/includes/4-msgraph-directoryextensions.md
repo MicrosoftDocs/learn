@@ -52,11 +52,11 @@ You manage the directory extension properties on user profiles through the same 
 
 Directory extensions support querying at two levels: Matching against the directory extension definitions and matching against the directory extension properties.
 
-Directory extension properties support the `$select` and `$filter` (`eq` operator for the **name** property) OData query parameters to customize the responses.
+Directory extension definitions support the `$select` and `$filter` (`eq` operator for the **name** property) OData query parameters to customize the responses.
 
 In the Microsoft Graph `v1.0` endpoint, the directory extension properties aren't returned by default and you must use the `$select` query parameter to read the properties.
 
-Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters.You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
+Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters.You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering using the `ne` operator on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the **ConsistencyLevel** header set to `eventual`.
 
 ## Other Azure AD scenarios for the custom data
 
@@ -88,6 +88,6 @@ You can use up to 100 directory extensions per user. When the definition object 
 
 When the definition is deleted before data in the associated extension property is deleted, there's no way to know the existence of the extension property via Microsoft Graph - even though the undiscoverable property counts against the 100-limit.
 
-Deleting an owner app makes the associated directory extension properties and their data undiscoverable. Restoring an owner app restores the directory extension definitions *but doesn't* make the directory extension properties or their data immediately discoverable. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. To make the directory extension properties and their data discoverable, either create a new service principal or restore the deleted service principal.
+Deleting an owner app makes the associated directory extension properties and their data undiscoverable. Restoring an owner app restores the directory extension definitions *but doesn't* make the directory extension properties or their data immediately discoverable. This is because restoring an app doesn't automatically restore the associated service principal in the tenant. To make the directory extension properties and their data discoverable, either create a new service principal or restore the deleted service principal. NO changes are made to other tenants where the app has been consented to.
 
 If a multi-tenant application creates additional directory extensions in an app that has been consented to by other tenants, the associated directory extension properties become immediately available for use by the other tenants.
