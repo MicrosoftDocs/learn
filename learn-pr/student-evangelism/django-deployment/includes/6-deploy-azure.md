@@ -29,7 +29,7 @@ Now that the extension is installed, you can start the installation.
 
 1. On the **RESOURCES** bar of Azure extension, hover and select the **+** (**Create Resource**) icon.
 
-    ![Screenshot showing the App Service bar. The Deploy icon is highlighted.](../media/app-resource.png)
+    ![Screenshot showing the App Service bar. The Deploy icon is highlighted.](../media/add-resource.png)
 
 1. If prompted to choose a subscription, choose your Azure subscription.
 
@@ -47,7 +47,7 @@ Now that the extension is installed, you can start the installation.
 
 1. Select a pricing tier.
 
-    ![Screenshot showing the runtime stack selection.](../media/select-pricing-tier.png)
+    ![Screenshot showing the the pricing tier selection.](../media/select-pricing-tier.png)
 
     The extension creates your web application. The process will take a few moments.
 
