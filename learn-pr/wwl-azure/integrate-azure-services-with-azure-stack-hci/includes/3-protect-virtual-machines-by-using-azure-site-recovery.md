@@ -40,3 +40,8 @@ After all required infrastructure components are provisioned, you can use Window
 :::image type="content" source="../media/wac-enable-asr-virtual-machine.png" alt-text="The screenshot depicts how you can use Windows Admin Center to enable protection for individual VMs after all required infrastructure components are provisioned." border="false":::
 
 To perform the remaining configuration and management tasks, such as creating a recovery plan, performing a test, planned, or unplanned failover, and monitoring the status of protected VMs, you can use the Recovery Services vault interface in the Azure portal or Azure PowerShell.
+
+---
+
+
+---
