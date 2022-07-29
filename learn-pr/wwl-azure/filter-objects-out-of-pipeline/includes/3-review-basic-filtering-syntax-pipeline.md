@@ -14,9 +14,10 @@ If you misspell the property name, or if you provide the name of a nonexistent p
 Get-Service | Where Stat –eq Running
 ```
 
-This command produces no output, because no service object has a **Stat** property that contains the value **Running**. In fact, none of the service objects has a **Stat** property. The comparison returns False for every object, which filters out all objects from the results.
+This command produces no output, because no service object has a **Stat** property that contains the value **Running**. In fact, none of the service objects have a **Stat** property. The comparison returns False for every object, which filters out all objects from the results.
 
-> **Note:** Because of the large number of parameter sets needed to make the basic syntax functional, the help file for **Where-Object** is very long and might be difficult to review. Consider skipping the initial syntax section and going directly to the description or examples if you need help with this command.
+> [!NOTE]
+> Because of the large number of parameter sets needed to make the basic syntax functional, the help file for **Where-Object** is very long and might be difficult to review. Consider skipping the initial syntax section and going directly to the description or examples if you need help with this command.
 
 ## Limitations of the basic syntax
 

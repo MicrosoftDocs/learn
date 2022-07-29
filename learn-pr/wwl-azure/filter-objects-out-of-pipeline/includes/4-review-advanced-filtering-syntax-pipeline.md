@@ -44,7 +44,7 @@ The problem is that **'Starting'** isn't a complete comparison. It's just a stri
 
 ## Accessing properties that contain True or False
 
-Remember that the only purpose of the filter script is to produce a True or False value. Usually, you produce those values by using a comparison operator, like in the examples that you've learned up to this point. However, when a property already contains either True or False, you don't have to explicitly make a comparison. For example, the objects produced by **Get-Process** have a property named **Responding**. This property contains either True or False. This indicates whether the process represented by the object is currently responding to the operating system. To obtain a list of the processes that are responding, you can use either of the following commands:
+Remember that the only purpose of the filter script is to produce a True or False value. Usually, you produce those values by using a comparison operator, like in the examples that you've learned up to this point. However, when a property already contains either True or False, you don't have to explicitly make a comparison. For example, the objects produced by **Get-Process** have a property named **Responding**. This property contains either True or False. This value indicates whether the process represented by the object is currently responding to the operating system. To obtain a list of the processes that are responding, you can use either of the following commands:
 
 ```powershell
 Get-Process | Where { $PSItem.Responding –eq $True }
@@ -64,7 +64,7 @@ In the preceding example, the **-not** logical operator changes True to False, a
 
 ## Accessing properties without limitations
 
-Although the basic filtering syntax can access only the direct properties of the object being evaluated, the advanced syntax doesn't have that limitation. For example, to display a list of all the services that have names longer than eight characters, use this:
+Although the basic filtering syntax can access only the direct properties of the object being evaluated, the advanced syntax doesn't have that limitation. For example, to display a list of all the services that have names longer than eight characters, use this command:
 
 ```powershell
 Get-Service | Where {$PSItem.Name.Length –gt 8}

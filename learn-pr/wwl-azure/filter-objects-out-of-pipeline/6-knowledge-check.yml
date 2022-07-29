@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/20/2022
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -14,3 +14,27 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which of the following commands provides a more efficient way to produce a list of services that have names beginning with svc?"
+    choices:
+    - content: "Get-Service –Name svc\\*"
+      isCorrect: true
+      explanation: "Correct. The command Get-Service –Name svc\\* is a better approach, as it filters the names as part of the Get-Service command."
+    - content: "Get-Service | Where Name –like svc\\*"
+      isCorrect: false
+      explanation: "Incorrect. The command Get-Service –Name svc\\* is a better approach, as it filters the names as part of the Get-Service command."
+    - content: "Get-Service | Where Name -eq svc"
+      isCorrect: false
+      explanation: "Incorrect. The command Get-Service –Name svc\\* is a better approach, as it filters the names as part of the Get-Service command."
+  - content: "Of the variables `$_` and `$PSItem`, which one would many experienced Windows PowerShell users prefer to use?"
+    choices:
+    - content: "`$_`"
+      isCorrect: true
+      explanation: "Correct. Many experienced Windows PowerShell users use the `$_` variable instead of `$PSItem`, because only `$_` is allowed in Windows PowerShell 1.0 and Windows PowerShell 2.0."
+    - content: "`$PSItem`"
+      isCorrect: false
+      explanation: "Incorrect. Many experienced Windows PowerShell users use the `$_` variable instead of `$PSItem`, because only `$_` is allowed in Windows PowerShell 1.0 and Windows PowerShell 2.0."
+    - content: "Without exception, both can be used interchangeably"
+      isCorrect: false
+      explanation: "Incorrect. Many experienced Windows PowerShell users use the `$_` variable instead of `$PSItem`, because only `$_` is allowed in Windows PowerShell 1.0 and Windows PowerShell 2.0."

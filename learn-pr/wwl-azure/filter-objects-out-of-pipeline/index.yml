@@ -3,7 +3,7 @@ uid: learn.wwl.filter-objects-out-of-pipeline
 metadata:
   title: Filter objects out of the pipeline
   description: "This module explains how to filter objects out of the pipeline by using the Where-Object cmdlet to specify various criteria."
-  ms.date: 07/20/2022
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
