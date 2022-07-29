@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.select-sort-measure-objects-use-pipeline.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "What is the default behavior of the **Sort-Object** cmdlet?"
+    choices:
+    - content: "Case-insensitive sort in the descending order"
+      isCorrect: true
+      explanation: "Correct. By default, the **Sort-Object** cmdlet performs a case-insensitive and descending sort."
+    - content: "Case-insensitive sort in the ascending order"
+      isCorrect: false
+      explanation: "Incorrect. By default, the **Sort-Object** cmdlet performs a case-insensitive and descending sort."
+    - content: "Case-sensitive sort in the descending order"
+      isCorrect: false
+      explanation: "Incorrect. By default, the **Sort-Object** cmdlet performs a case-insensitive and descending sort."
+  - content: "Which of the following cmdlets allows you to specify which properties of an object passed to it by a pipeline should be displayed in its output?"
+    choices:
+    - content: "Measure-Object"
+      isCorrect: false
+      explanation: "Incorrect. The **Select-Object** cmdlet allows you to specify the properties of an object passed to it by a pipeline that should be displayed as part of its output. The **Measure-Object** cmdlet counts the number of objects in a collection and produces a measurement object that includes the count. It does not include the option to specify which properties of an object passed to it by a pipeline should be displayed in its output."
+    - content: "Select-Object"
+      isCorrect: true
+      explanation: "Correct. The **Select-Object** cmdlet allows you to specify the properties of an object passed to it by a pipeline that should be displayed as part of its output."
+    - content: "Sort-Object"
+      isCorrect: false
+      explanation: "Incorrect. The **Select-Object** cmdlet allows you to specify the properties of an object passed to it by a pipeline that should be displayed as part of its output. The **Sort-Object** cmdlet allows you to specify which properties to use for sorting, but not which properties to display."
