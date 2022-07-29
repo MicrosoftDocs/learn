@@ -9,7 +9,8 @@ The formatting cmdlets are:
 
 You can override the default output formatting by specifying any of the preceding cmdlets as part of the pipeline.
 
-> **Note:** The **Format-Custom** cmdlet requires creating custom XML configuration files that define the format. It's used infrequently and is beyond the scope of this course.
+> [!NOTE]
+> The **Format-Custom** cmdlet requires creating custom XML configuration files that define the format. It's used infrequently and is beyond the scope of this course.
 
 Each formatting cmdlet accepts the *-Property* parameter. The *-Property* parameter accepts a comma‑separated list of property names, and then it filters the list of properties that display and the order in which they display. Keep in mind that when you specify property names for this parameter, the original command must have returned those properties.
 
@@ -21,7 +22,8 @@ Some cmdlets default to passing a different set of properties for each formattin
 
 The **Format-List** cmdlet, as the name suggests, formats the output of a command as a simple list of properties, where each property displays on a new line. If the command passing output to **Format-List** returns multiple objects, a separate list of properties for each object displays. List formatting is particularly useful when a command returns a large number of properties that would be hard to review in table format.
 
-> **Note:** The alias for the **Format-List** cmdlet is **fl**.
+> [!NOTE]
+> The alias for the **Format-List** cmdlet is **fl**.
 
 To display a simple list in the console of the default properties for the processes running on the local computer, enter the following command, and then press the Enter key:
 
@@ -39,7 +41,8 @@ By default, the table includes the property names as the column headers, which a
 - *-HideTableHeaders*. This parameter removes the table headers from the output.
 - *-Wrap*. This parameter causes text that's wider than the column width to wrap to the next line.
 
-> **Note:** The alias for the **Format-Table** cmdlet is **ft**.
+> [!NOTE]
+> The alias for the **Format-Table** cmdlet is **ft**.
 
 To display the **Name**, **ObjectClass**, and **Description** properties for all Windows Server Active Directory objects as a table, with the columns set to automatically size and wrap the text, enter the following command in the console, and then press the Enter key:
 
@@ -53,7 +56,8 @@ The output of the **Format-Wide** cmdlet is a single property in a single list d
 
 By default, **Format-Wide** displays its output in two columns. You can modify the number of columns by using the *-Column* parameter. The *-AutoSize* parameter, which works the same way it does for **Format‑Table**, is also available. You can't use *-AutoSize* and *-Column* together, however. The *-Property* parameter is also available, but in the case of **Format-Wide**, it can accept only one property name.
 
-> **Note:** The alias for the **Format-Wide** cmdlet is **fw**.
+> [!NOTE]
+> The alias for the **Format-Wide** cmdlet is **fw**.
 
 To send the **DisplayName** property of all the Group Policy Objects (GPOs) in the current domain as output in three columns, enter the following command in the console, and then press the Enter key:
 

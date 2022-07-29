@@ -2,11 +2,13 @@ PowerShell can run commands in a *pipeline*, which is a chain of one or more com
 
 As you interact with Windows PowerShell in the console host application, you should think of each command line as a single pipeline. You enter a command or a series of commands and then press the Enter key to run the pipeline. The output of the last command in the pipeline displays on your screen. Another shell prompt follows that output, and you can enter commands into a new pipeline at that shell prompt.
 
-> **Note:** You can enter one logical command line over multiple physical lines in the console. For example, enter **Get-Service '**, and then press the Enter key. Windows PowerShell enters an extended prompt mode, which is indicated by the presence of two consecutive greater than signs (**>>**). This allows you to complete the command line. Select **Ctrl+C** to exit the command and return to the Windows PowerShell prompt.
+> [!NOTE]
+> You can enter one logical command line over multiple physical lines in the console. For example, enter **Get-Service '**, and then press the Enter key. Windows PowerShell enters an extended prompt mode, which is indicated by the presence of two consecutive greater than signs (**>>**). This allows you to complete the command line. Select **Ctrl+C** to exit the command and return to the Windows PowerShell prompt.
 
 Previously, you learned about common actions, or *verbs*, associated with Windows PowerShell commands. When running multiple commands as part of a single pipeline, you most commonly notice the verbs **Get** and **Set** used in combination. You use the output of a **Get-\*** command as the input for a **Set-\*** command. You often use these commands in combination with a filtering command, such as **Where** or **Select**. In that case, the output of **Get-\*** is filtered by the **Where** or **Select** command before being piped to the **Set-\*** command.
 
-> **Note:** The **Where** command is an alias for **Where-Object**, and the **Select** command is an alias for **Select-Object**. Lesson 3, “Filter objects out of the pipeline” explains filtering in more detail.
+> [!NOTE]
+> The **Where** command is an alias for **Where-Object**, and the **Select** command is an alias for **Select-Object**. Lesson 3, “Filter objects out of the pipeline” explains filtering in more detail.
 
 It helps to understand the concept of PowerShell objects and pipelines by comparing them to real-world items. For example, if we consider a car as an object, we can describe attributes of the car such as engine, car color, car size, type, make and model. In PowerShell, these would be known as properties. Properties of the object could be, in turn, objects themselves. For instance, the engine property is also an object that has attributes, such as pistons, spark plugs, crankshaft, etc.
 
