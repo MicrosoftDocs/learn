@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.send-pass-data-output-from-pipeline
+metadata:
+  title: Send and pass data as output from the pipeline
+  description: "This module explains how to send pipeline data to files and in various output formats."
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Send and pass data as output from the pipeline
+summary: This module explains how to send pipeline data to files and in various output formats.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain how to write pipeline data to a file.
+  - Explain how to convert pipeline data to the comma-separated values (CSV) format.
+  - Explain how to convert pipeline data to the XML format.
+  - Explain how to convert pipeline data to the JavaScript Object Notation (JSON) format.
+  - Explain how to convert pipeline data to the HTML format.
+  - Export data.
+  - Explain how to send pipeline data to other locations.
+  - Describe how PowerShell matches incoming pipeline data to the parameters of a cmdlet.
+prerequisites: |
+  - Familiarity with Windows networking technologies and implementation.
+  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.send-pass-data-output-from-pipeline.introduction
+- learn.wwl.send-pass-data-output-from-pipeline.write-pipeline-data-to-file
+- learn.wwl.send-pass-data-output-from-pipeline.convert-pipeline-objects-to-other-forms-of-data-representation-powershell
+- learn.wwl.send-pass-data-output-from-pipeline.control-additional-output-options-powershell
+- learn.wwl.send-pass-data-output-from-pipeline.knowledge-check
+- learn.wwl.send-pass-data-output-from-pipeline.summary
+badge:
+  uid: learn.wwl.send-pass-data-as-output-from-pipeline.badge

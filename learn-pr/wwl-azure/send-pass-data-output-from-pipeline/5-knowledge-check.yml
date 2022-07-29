@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.send-pass-data-output-from-pipeline.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which cmdlet should you pipe the output of **Get-ADUser** to in order to be able to display the list of results one page at a time in the PowerShell window?"
+    choices:
+    - content: "**Out-Host**"
+      isCorrect: true
+      explanation: "Correct. By piping the output of **Get-ADUser** cmdlet to the **Out-Host** cmdlet, you can use the **-Paging** parameter to display the output one page at a time in the PowerShell window."
+    - content: "**ConvertTo-HTML**"
+      isCorrect: false
+      explanation: "Incorrect. The **ConvertTo-HTML** cmdlet converts the output to the HTML format. It is by piping the output of **Get-ADUser** cmdlet to the **Out-Host** cmdlet, that you can use the **-Paging** parameter to display the output one page at a time in the PowerShell window."
+    - content: "**Out-File**"
+      isCorrect: false
+      explanation: "Incorrect. The **Out-File** cmdlet allows you to pipe an output of the pipeline to a file, but does not provide the option to display the output one page at a time in the PowerShell window. To do that, you must pipe the output of **Get-ADUser** cmdlet to the **Out-Host** cmdlet, and then use the **-Paging** parameter."
+  - content: "Which symbol represents the alias of the **Out-File** cmdlet that results in overwriting content of an existing file?"
+    choices:
+    - content: "`$_`"
+      isCorrect: false
+      explanation: "Incorrect. The `$_`symbol is a variable that represents `$PSItem`. It is the `>`symbol that represents the alias of the **Out-File** cmdlet that results in overwriting content of an existing file."
+    - content: "`%`"
+      isCorrect: false
+      explanation: "Incorrect. The `%` symbol represents an alias of the **ForEach-Object** cmdlet. It is the `>`symbol that represents the alias of the **Out-File** cmdlet that results in overwriting content of an existing file."
+    - content: "`>`"
+      isCorrect: true
+      explanation: "Correct. The `>`symbol represents the alias of the **Out-File** cmdlet that results in overwriting content of an existing file."
