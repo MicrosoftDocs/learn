@@ -96,7 +96,7 @@ If the guest user didn't receive the first email invitation, you can resend an i
 
 1. Select the user. The **Profile** pane for the user appears.
 
-1. Under the **Identity** section, select the **(manage)** link. The **Manage invitations** pane appears.
+1. Under the **B2B collaboration** section, select the **Manage (resend invitation / reset status)** link. The **Manage invitations** pane appears.
 
 1. Under **Email invitations** for **Resend invite**, select **Yes**, and then select **Yes** to confirm resending the invitation. The **Manage invitations** pane reappears.
 
