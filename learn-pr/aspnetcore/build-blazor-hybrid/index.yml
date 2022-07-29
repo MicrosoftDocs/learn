@@ -19,7 +19,7 @@ abstract: |
   - Access platform features for mobile and desktop with .NET MAUI
   - Deploy a Blazor Hybrid app from Visual Studio
 prerequisites: |
-  - Visual Studio 2022 with the MAUI workload installed
+  - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
   - Basic knowledge of web app concepts
 iconUrl: /learn/achievements/generic-badge.svg
