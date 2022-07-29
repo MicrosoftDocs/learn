@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.enumerate-objects-pipeline.review-basic-syntax-to
+uid: learn.wwl.enumerate-objects-pipeline.review-basic-syntax-enumerate-objects
 title: Review basic syntax to enumerate objects in the pipeline
 metadata:
   title: Review basic syntax to enumerate objects in the pipeline
   description: "Review basic syntax to enumerate objects in the pipeline"
-  ms.date: 07/20/2022
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-review-basic-syntax-to.md)]
+  [!include[](includes/3-review-basic-syntax-enumerate-objects.md)]

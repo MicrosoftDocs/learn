@@ -14,7 +14,8 @@ Get-ChildItem –Path C:\Encrypted\ -File | ForEach Encrypt
 Get-ChildItem –Path C:\Encrypted\ -File | % Encrypt
 ```
 
-> **Note:** You might not run into many scenarios that require enumeration. Each new operating system and version of PowerShell introduces new PowerShell commands. Newer operating systems typically introduce new commands which perform actions that previously required enumeration.
+> [!NOTE]
+> You might not run into many scenarios that require enumeration. Each new operating system and version of PowerShell introduces new PowerShell commands. Newer operating systems typically introduce new commands which perform actions that previously required enumeration.
 
 ## Limitations of the basic syntax
 

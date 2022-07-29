@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/20/2022
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -14,3 +14,27 @@ labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which symbol represents the range operator?"
+    choices:
+    - content: "`..`"
+      isCorrect: true
+      explanation: "Correct. The `..` symbol represents the range operator."
+    - content: "`%`"
+      isCorrect: false
+      explanation: "Incorrect. The `%` symbol represents an alias of the **ForEach-Object** cmdlet. It is the `..` symbol that represents the range operator."
+    - content: "`$_`"
+      isCorrect: false
+      explanation: "Incorrect. The `$_`symbol is a variable that represents `$PSItem`. It is the `..` symbol that represents the range operator."
+  - content: "Which symbol represents the alias of the **ForEach-Object** cmdlet?"
+    choices:
+    - content: "`$_`"
+      isCorrect: false
+      explanation: "Incorrect. The `$_`symbol is a variable that represents `$PSItem`. It is the `%` symbol that represents an alias of the **ForEach-Object** cmdlet."
+    - content: "`%`"
+      isCorrect: true
+      explanation: "Correct. The `%` symbol represents an alias of the **ForEach-Object** cmdlet."
+    - content: "`..`"
+      isCorrect: false
+      explanation: "Incorrect. The `..` symbol represents the range operator. It is the `%` symbol that represents an alias of the **ForEach-Object** cmdlet."

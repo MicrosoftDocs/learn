@@ -8,7 +8,8 @@ Get-ChildItem –Path C:\ToEncrypt\ -File | ForEach-Object –Process { $PSItem.
 
 The **ForEach-Object** command can accept any number of objects from the pipeline. It has the *-Process* parameter that accepts a script block. This script block runs one time for each object that was piped in. Every time that the script block runs, the built-in variable `$PSItem` (or `$_`) can be used to refer to the current object. In the preceding example command, the **Encrypt()** method of each file object runs.
 
-> **Note:** When used with the advanced syntax, method names are always followed by opening and closing parentheses, even when the method doesn't have any input arguments. For methods that do need input arguments, provide them as a comma-separated list inside the parentheses. Don't include a space or other characters between the method name and the opening parenthesis.
+> [!NOTE]
+> When used with the advanced syntax, method names are always followed by opening and closing parentheses, even when the method doesn't have any input arguments. For methods that do need input arguments, provide them as a comma-separated list inside the parentheses. Don't include a space or other characters between the method name and the opening parenthesis.
 
 ## Advanced techniques
 

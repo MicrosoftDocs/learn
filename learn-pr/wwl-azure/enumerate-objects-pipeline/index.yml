@@ -2,14 +2,14 @@
 uid: learn.wwl.enumerate-objects-pipeline
 metadata:
   title: Enumerate objects in the pipeline
-  description: "This modules explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation."
-  ms.date: 07/20/2022
+  description: "This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation."
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enumerate objects in the pipeline
-summary: This modules explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation.
+summary: This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Explain the purpose of enumeration.
@@ -43,8 +43,8 @@ subjects:
 units:
 - learn.wwl.enumerate-objects-pipeline.introduction
 - learn.wwl.enumerate-objects-pipeline.learn-about-enumerations-pipeline
-- learn.wwl.enumerate-objects-pipeline.review-basic-syntax-to
-- learn.wwl.enumerate-objects-pipeline.review-advanced-syntax-to
+- learn.wwl.enumerate-objects-pipeline.review-basic-syntax-enumerate-objects
+- learn.wwl.enumerate-objects-pipeline.review-advanced-syntax-enumerate-objects
 - learn.wwl.enumerate-objects-pipeline.knowledge-check
 - learn.wwl.enumerate-objects-pipeline.summary
 badge:
