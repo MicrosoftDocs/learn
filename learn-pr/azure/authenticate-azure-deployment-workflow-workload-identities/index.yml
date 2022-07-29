@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities
+metadata:
+  moduleType: standard
+  title: Authenticate your Azure deployment workflow by using workload identities
+  description: Learn how to create, manage, and grant permissions to workload identities, which enable your deployment workflows to securely authenticate to Azure. 
+  ms.date: 07/27/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Authenticate your Azure deployment workflow by using workload identities
+summary: |
+  Workload identities enable your deployment workflows to authenticate securely with Azure without you managing any passwords, keys, or secrets.
+  In this module, you'll learn what workload identities are, how they work, and how to create them.
+  You'll also learn how to grant them permission to your Azure resources so that your workflows can deploy your Bicep files.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain what a workload identity is, and several different types of workload identities: service principals, managed identities, and federated credentials
+  - Create a workload identity and link it to a GitHub Actions deployment workflow
+  - Configure the appropriate authorization for a workload identity to deploy Azure resources
+prerequisites: |
+  You should be familiar with:
+  - Creating and deploying basic Bicep templates.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - Basic GitHub Actions workflows.
+iconUrl: /learn/achievements/bicep/authenticate-azure-deployment-workflow-workload-identities.svg
+levels:
+  - intermediate
+roles:
+  - developer
+  - administrator
+  - solution-architect
+languages:
+  - bicep
+products:
+  - azure
+  - azure-active-directory
+  - azure-resource-manager
+  - github
+subjects:
+  - devops
+  - cloud-computing
+units:
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.introduction
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.understand-workload-identities
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.create-workload-identity-github-actions-workflow
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.grant-workload-identity-access-azure
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.use-workload-identity-github-actions-workflow
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.knowledge-check
+  - learn.azure.authenticate-azure-deployment-workflow-workload-identities.summary
+badge:
+  uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.badge
