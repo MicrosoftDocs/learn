@@ -16854,6 +16854,11 @@
       "source_path": "learn-pr/wwl-azure/implement-application-configuration/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/az-400-implement-secure-continuous-deployment/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-regression-model-azure-machine-learning-designer/3-what-is-azure-ml.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-regression-model-azure-machine-learning-designer/3-what-is-azure-machine-learning",
+      "redirect_document_id": true
     }
   ]
 }
