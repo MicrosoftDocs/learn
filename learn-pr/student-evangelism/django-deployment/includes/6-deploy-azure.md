@@ -186,11 +186,10 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
     cd $APP_PATH
     # Activate the venv
     source /antenv/bin/activate
-    # Change directory
-    cd solution
     # Install requirements
     pip install -r requirements.txt
     # Run database migrations
+    python manage.py makemigrations dog_shelters
     python manage.py migrate
     ```
 
@@ -201,6 +200,7 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
     ```
 
 1. Provide a **name**, **email** address, and **password** for the superuser.
+
 1. After you create your superuser, run the command `exit` to close the connection.
 
 Your database is now configured in Azure, and you have a superuser for your site.
@@ -213,8 +213,10 @@ In the **App Service** extension, right-click the name of your site, and then se
 
 ![Screenshot showing where to select Browse Website.](../media/browse-website.png)
 
-Your website now appears.
+Your website now appears. The default page shows no shelters. To add shelters, go to the Django administration part of the site adding "/admin" the website URL. You'll be asked to authenticate with the superuser name and password you created above. Add a shelter and the navigate back to the main page you'll be able to register a dog for that shelter.
 
-Because you deployed your SQLite database, your site should already contain data. If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
+If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
+
+![Screenshot showing Django admin and how to add shelters.](../media/django-admin-site.png)
 
 You've now deployed a website to Azure!
