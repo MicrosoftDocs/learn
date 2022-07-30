@@ -28,7 +28,7 @@ Define your inbound and outbound B2B collaboration with other Azure Active Direc
 
 1. Design cross-tenant access policies that allow outbound B2B collaboration but block inbound B2B collaboration by defaul.
 2. Configure cross-tenant access settings between your organization and an external partner’s organization.
-3. Validate that with MFA trust enabled, an external partner can access a resource shared to them without having to repeat MFA.
+3. Validate that with multi-factor-authentication trust enabled, an external partner can access a resource shared to them without having to repeat multi-factor-authentication.
 
 ## Chunk your content into subtasks
 
@@ -37,7 +37,7 @@ Identify the subtasks of *Secure B2B collaboration by using cross-tenant access 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
 | Configure default cross-tenant access settings | Allow outbound B2B collaboration by default, but block inbound B2B collaboration to protect internal applications | Exercise | 1 | Yes |
-| Add organizational settings to allow inbound B2B collaboration from a branch organization and trust MFA | Allow users in the branch to access the restricted app via B2B collaboration and trust MFA | Exercise | 2,3 | Yes|
+| Add organizational settings to allow inbound B2B collaboration from a branch organization and trust multi-factor-authentication | Allow users in the branch to access the restricted app via B2B collaboration and trust multi-factor-authentication | Exercise | 2,3 | Yes|
 
 ## Outline the units
 
@@ -45,13 +45,13 @@ Identify the subtasks of *Secure B2B collaboration by using cross-tenant access 
 
 Suppose you're an IT admin in a financial institution. Employees in your organization regularly collaborate with partners on marketing and communications projects, so you want to allow outbound B2B collaboration with external users. However, your internal applications contain highly sensitive data, so you want to strictly control access to your applications.
 
-You've recently acquired a branch whose employees will need access to your internal applications. This branch is managed in a separate Azure AD tenant. You don't want these users to have to complete multi-factor authentication (MFA) repeatedly during sign-in, so you want to streamline their experience by trusting MFA from the branch tenant.
+You've recently acquired a branch whose employees will need access to your internal applications. This branch is managed in a separate Azure AD tenant. You don't want these users to have to complete multi-factor authentication (multi-factor-authentication) repeatedly during sign-in, so you want to streamline their experience by trusting multi-factor-authentication from the branch tenant.
 
 2. Concept - Designing inbound and outbound settings for B2B collaboration
 
     - Define inbound and outbound B2B collaboration
     - Describe cross-tenant access settings and contrast them with other B2B collaboration settings
-    - Describe MFA trust settings
+    - Describe multi-factor-authentication trust settings
 
 3. Exercise - Configure default cross-tenant access settings to allow outbound access, but block internal access
 
@@ -59,18 +59,18 @@ You've recently acquired a branch whose employees will need access to your inter
     - Allow all outbound B2B collaboration
     - Block all inbound B2B collaboration
 
-4. Concept - Creating organizational settings for B2B collaboration with another Azure AD tenant and trusting MFA
+4. Concept - Creating organizational settings for B2B collaboration with another Azure AD tenant and trusting multi-factor-authentication
 
     - Describe how organizational settings override default settings
     - Describe how settings can be scoped to user, group, or app
-    - Review MFA trust settings and describe the sign-in experience
+    - Review multi-factor-authentication trust settings and describe the sign-in experience
   
-5. Exercise – Configure organizational settings to allow inbound access to an app and trust MFA.
+5. Exercise – Configure organizational settings to allow inbound access to an app and trust multi-factor-authentication.
 
     - Add an organization (branch org)
     - Edit the inbound cross-tenant settings
     - Allow inbound B2B collaboration
-    - Trust MFA from the organization
+    - Trust multi-factor-authentication from the organization
 
 7. Knowledge Check
 
@@ -80,7 +80,7 @@ You've recently acquired a branch whose employees will need access to your inter
 
 8. Summary
 
-    Our IT admin needed to allow employees to freely collaborate with external Azure AD partners on external applications. But the admin needed to block all external Azure AD organizations from being able to access internal applications, except for users in a branch organization. In this module, you learned that cross-tenant access settings let you enable or block B2B collaboration with other Azure AD organizations. You also learned how to trust MFA claims so that B2B collaboration aren't required to complete MFA if they've already done so in their home tenant.
+    Our IT admin needed to allow employees to freely collaborate with external Azure AD partners on external applications. But the admin needed to block all external Azure AD organizations from being able to access internal applications, except for users in a branch organization. In this module, you learned that cross-tenant access settings let you enable or block B2B collaboration with other Azure AD organizations. You also learned how to trust multi-factor-authentication claims so that B2B collaboration aren't required to complete multi-factor-authentication if they've already done so in their home tenant.
 
 ## Notes
 

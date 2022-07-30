@@ -21,6 +21,6 @@ This trust setting is available at both the default level and at the organizatio
 
 This feature is especially useful in our example scenario. Users in the newly acquired branch are considered part of the larger organization. Ideally they wouldn't be asked to perform multi-factor authentication more than once while signing into their applications. To accomplish this, the IT admin can configure their branch-specific organizational settings to trust multi-factor authentication claims from the branch.
 
-![Screenshot showing the Trust multi-factor authentication setting.](../media/4-mfa-settings.png)
+![Screenshot showing the Trust multi-factor authentication setting.](../media/4-multi-factor-authentication-settings.png)
 
 Along with multi-factor authentication trust settings, cross-tenant access settings also provide options for trusting device claims (compliant claims and hybrid Azure AD joined claims) from other Azure AD organizations.

@@ -2,7 +2,7 @@ With Azure AD B2B collaboration, an organization can invite external people to s
 
 Here, you'll learn the cross-tenant access settings that let you allow or block B2B collaboration with other organizations by default.
 
-![Diagram showing cross-tenant access settings and B2B collaboration.](../media/2-b2b-collaboration.png)
+![Diagram showing cross-tenant access settings and B2B collaboration.](../media/2-collaboration.png)
 
 ## Managing B2B collaboration
 

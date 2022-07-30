@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-b2b-collab-cross-tenant-access.5-exercise-configure-org-settings
+uid: learn.secure-collaboration-cross-tenant-access.5-exercise-configure-organizational-settings
 title: Exercise - Configure organizational settings
 metadata:
   unitType: exercise
@@ -9,7 +9,7 @@ metadata:
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure 
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-configure-org-settings.md)]
+  [!include[](includes/5-exercise-configure-organizational-settings.md)]

@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-b2b-collab-cross-tenant-access.4-creating-organizational-settings
-title: Creating organizational settings and trusting MFA
+uid: learn.secure-collaboration-cross-tenant-access.4-create-organizational-settings
+title: Create organizational settings and trusting multi-factor-authentication
 metadata:
   unitType: learning-content
   title: learning-content
@@ -9,7 +9,7 @@ metadata:
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure 
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-creating-organizational-settings.md)]
+  [!include[](includes/4-create-organizational-settings.md)]

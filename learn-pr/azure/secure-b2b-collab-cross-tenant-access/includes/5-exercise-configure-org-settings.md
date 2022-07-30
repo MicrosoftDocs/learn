@@ -61,7 +61,7 @@ When you choose to trust multi-factor authentication, your Conditional Access po
 1. Select **Customize settings**.
 1. Select **Trust multi-factor authentication from Azure AD tenants**.
 
-   ![Screenshot of the Trust settings page with the multi-factor authentication trust option selected.](../media/5-organizational-mfa-trust.png)
+   ![Screenshot of the Trust settings page with the multi-factor authentication trust option selected.](../media/5-organizational-multi-factor-authentication-trust.png)
 
 1. Select **Save**. Select **External Identities** in the breadcrumbs at the top of the page to return to the main **Cross-tenant access settings** page. Then go on to the next section.
 
