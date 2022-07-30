@@ -31,7 +31,7 @@ The extension is installed.
      ![Screenshot showing the setting the deploy subpath setting.](../media/app-service-set-subpath.png)
 
 
-Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. In Django projects where the *manage.py* file is at the root of the proejct and this step isn't needed.
+Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. In Django projects where the *manage.py* file is at the root of the project and this step isn't needed.
 
 
 ## Deploy the application
