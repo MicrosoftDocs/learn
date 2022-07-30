@@ -13,9 +13,26 @@ Start by installing the Azure App Service extension in Visual Studio Code:
     ![Screenshot showing the Extensions icon.](../media/extensions-icon.png)
 
 1. In the **Search Extensions** field, type *App Service*.
+
 1. Under **Azure App Service**, select **Install**.
 
 The extension is installed.
+
+## Set deploy from starter subfolder
+
+1. Open the VS Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
+
+1. Type "Preferences: Open Workspace Settings" and select to open up settings.
+
+1. In the **Settings** search field, enter "@id:appService.deploySubpath appser".
+
+1. In the **App Service: Deploy Subpath** field enter "starter" to tell VS Code to deploy from this folder.
+ 
+     ![Screenshot showing the setting the deploy subpath setting.](../media/app-service-set-subpath.png)
+
+
+Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. In Django projects where the *manage.py* file is at the root of the proejct and this step isn't needed.
+
 
 ## Deploy the application
 
@@ -213,7 +230,7 @@ In the **App Service** extension, right-click the name of your site, and then se
 
 ![Screenshot showing where to select Browse Website.](../media/browse-website.png)
 
-Your website now appears. The default page shows no shelters. To add shelters, go to the Django administration part of the site adding "/admin" the website URL. You'll be asked to authenticate with the superuser name and password you created above. Add a shelter and the navigate back to the main page you'll be able to register a dog for that shelter.
+Your website now appears. The default page shows no shelters. To add shelters, go to the Django administration part of the site adding "/admin" the website URL. You'll be asked to authenticate with the superuser name and password you created above. Add a shelter and navigate back to the main page you'll be able to register a dog for that shelter.
 
 If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
 
