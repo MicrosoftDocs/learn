@@ -120,6 +120,7 @@ Now that you've created the production settings file, you can update your applic
 1. Add the following code to the end of the file to override the necessary settings when the app runs in production.
 
     ```python
+    import os
     if 'WEBSITE_HOSTNAME' in os.environ: # Running on Azure
         from .azure import *
     ```
