@@ -122,7 +122,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
    githubRepositoryName='toy-website-auto-review'
    ```
 
-1. Create a workload identity for your deployments workflow. You create two federated credentials to prepare for an exercise later in this module.
+1. Create a workload identity for your deployments workflow.
 
    ```bash
    applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-auto-review')
@@ -145,7 +145,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
    $githubRepositoryName = 'toy-website-auto-review'
    ```
 
-1. Create a workload identity for your deployments workflow. You create two federated credentials to prepare for an exercise later in this module.
+1. Create a workload identity for your deployments workflow.
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-auto-review'

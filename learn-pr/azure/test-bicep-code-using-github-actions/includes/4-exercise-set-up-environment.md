@@ -135,11 +135,11 @@ Next, create a workload identity in Azure AD for your deployment workflow.
    applicationRegistrationAppId=$(echo $applicationRegistrationDetails | jq -r '.appId')
 
    az ad app federated-credential create \
-      --id $testApplicationRegistrationObjectId \
+      --id $applicationRegistrationObjectId \
       --parameters "{\"name\":\"toy-website-test\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:environment:Website\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
 
    az ad app federated-credential create \
-      --id $testApplicationRegistrationObjectId \
+      --id $applicationRegistrationObjectId \
       --parameters "{\"name\":\"toy-website-test-branch\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
@@ -160,14 +160,14 @@ Next, create a workload identity in Azure AD for your deployment workflow.
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-test'
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-website-test' `
-      -ApplicationObjectId $testApplicationRegistration.Id `
+      -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$githubOrganizationName/$githubRepositoryName:environment:Website"
 
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-website-test-branch' `
-      -ApplicationObjectId $testApplicationRegistration.Id `
+      -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
