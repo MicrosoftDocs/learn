@@ -29,12 +29,12 @@ products:
 subjects: 
   - cloud-computing
 units:
-- learn.secure-collaboration-cross-tenant-access.1-introduction
-- learn.secure-collaboration-cross-tenant-access.2-design-settings
-- learn.secure-collaboration-cross-tenant-access.3-exercise-configure-defaults
-- learn.secure-collaboration-cross-tenant-access.4-create-organizational-settings
-- learn.secure-collaboration-cross-tenant-access.5-exercise-configure-organizational-settings
-- learn.secure-collaboration-cross-tenant-access.6-knowledge-check
-- learn.secure-collaboration-cross-tenant-access.7-summary
+- learn.secure-collaboration-cross-tenant-access.introduction
+- learn.secure-collaboration-cross-tenant-access.design-settings
+- learn.secure-collaboration-cross-tenant-access.exercise-configure-defaults
+- learn.secure-collaboration-cross-tenant-access.create-organizational-settings
+- learn.secure-collaboration-cross-tenant-access.exercise-configure-organizational-settings
+- learn.secure-collaboration-cross-tenant-access.knowledge-check
+- learn.secure-collaboration-cross-tenant-access.summary
 badge:
   uid: learn.secure-collaboration-cross-tenant-access.badge
