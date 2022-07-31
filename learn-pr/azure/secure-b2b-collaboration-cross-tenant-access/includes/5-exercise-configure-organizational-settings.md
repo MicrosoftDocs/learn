@@ -71,7 +71,7 @@ When you choose to trust multi-factor authentication, your Conditional Access po
 
 On the main **Cross-tenant access settings** page, select the Organizational settings tab. Make sure the organization you added appears in the list and has the following settings:
 
-- The **Inbound access settings** column should show **All allowed**.
+- The **Inbound access** column should show **Configured**.
 - The **Outbound access** column should show **Inherited from default**.
 
 ![Screenshot of organizational settings showing an organization with inbound access set to All allowed and outbound access set to Inherited from default.](../media/5-organizational-settings-inbound-configured.png)

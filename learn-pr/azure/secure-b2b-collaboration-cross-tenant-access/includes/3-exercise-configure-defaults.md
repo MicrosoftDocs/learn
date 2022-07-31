@@ -29,7 +29,7 @@ Here, you'll configure your default outbound settings for B2B collaboration. You
    ![Screenshot highlighting the Edit outbound defaults link.](../media/3-edit-outbound-defaults.png)
 
 1. Select **B2B collaboration**.
-1. With **Users and groups** selected, make sure **Access status** is set to **Allow access**.
+1. With **Users and groups**, under **Access status**, make sure **Allow access** is selected.
 1. Under **Applies to**, make sure **All &lt;your organization name&gt; users** is selected.
 
    ![Screenshot showing users and groups settings with access allowed for all users.](../media/3-default-users-groups-allowed.png)
@@ -55,7 +55,7 @@ Now, you'll configure your default inbound settings to block all inbound B2B col
 
    ![Screenshot showing users and groups settings with access blocked for all users.](../media/3-default-users-groups-blocked.png)
 
-1. Because the users and groups setting and the applications setting needs to match, select **Applications**, and then select **Block Access**. Make sure **All external users and groups** is selected.
+1. Because the users and groups setting and the applications setting need to match, select **Applications**, and then select **Block Access**. Make sure **All applications** is selected.
 
    ![Screenshot showing applications settings with access blocked for all users.](../media/3-default-applications-blocked.png)
 
@@ -66,7 +66,7 @@ Now, you'll configure your default inbound settings to block all inbound B2B col
 
 On the main **Cross-tenant access settings** page:
 
-- In the **Inbound access settings** section, you should see two **B2B collaboration** rows. The **External users and groups** row should have a **Status** of **All blocked**.
+- In the **Inbound access settings** section, you should see two **B2B collaboration** rows. The **External users and groups** and **Applications** rows should both have a **Status** of **All blocked**.
 - In the **Outbound access settings** section, you should see two **B2B collaboration** rows. Both of these rows should have a **Status** of **All allowed**.
 
    ![Screenshot showing default settings with outbound access All allowed and inbound access All blocked.](../media/3-default-all-blocked.png)
