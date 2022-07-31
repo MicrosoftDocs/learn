@@ -179,3 +179,7 @@ You've created a resource group and a workload identity. Next, create some secre
    :::image type="content" source="../media/5-github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
 1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+
+1. Verify that your list of secrets now shows all three secrets.
+
+   :::image type="content" source="../media/5-github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets." border="true":::

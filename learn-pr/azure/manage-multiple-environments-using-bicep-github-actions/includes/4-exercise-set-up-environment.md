@@ -33,6 +33,8 @@ On the GitHub site, follow these steps to create a repository from the template:
 
    :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
 
+1. Note the name of your GitHub username or organization. In the example above, the GitHub user name is *mygithubuser*. You'll need this name soon.
+
 1. Enter a name for your new project, such as *toy-website-environments*.
 
 1. Select the **Public** option.
@@ -178,6 +180,12 @@ Next, create two workload identities in Azure AD: one for your test environment 
       -ApplicationObjectId $testApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$githubOrganizationName/$githubRepositoryName:environment:Test"
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-environments-test-branch' `
+      -ApplicationObjectId $testApplicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
    ```
 
@@ -187,6 +195,12 @@ Next, create two workload identities in Azure AD: one for your test environment 
    $productionApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-environments-production'
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-website-environments-production' `
+      -ApplicationObjectId $productionApplicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$githubOrganizationName/$githubRepositoryName:environment:Production"
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-environments-production-branch' `
       -ApplicationObjectId $productionApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
@@ -229,7 +243,7 @@ Next, create a resource group for each environment. This process also grants the
 
 ::: zone pivot="powershell"
 
-1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure CLI commands in the Visual Studio Code terminal:
+1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
    ```azurepowershell
    $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus
