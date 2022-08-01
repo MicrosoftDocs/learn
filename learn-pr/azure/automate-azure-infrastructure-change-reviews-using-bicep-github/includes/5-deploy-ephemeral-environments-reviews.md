@@ -39,10 +39,22 @@ When it's time to delete the ephemeral environment, it's easy for your workflow 
 
 Creating resource groups requires subscription-level permissions, and typically requires the Contributor role to be assigned to your workflow's workload identity.
 
-It's a good practice to use a dedicated Azure subscription for ephemeral environments. By following this approach, you can grant access to your workflow's workload identity and to your team members without accidentally providing access to your other environments. 
+It's a good practice to use a dedicated Azure subscription for ephemeral environments. By following this approach, you can grant access to your workflow's workload identity and to your team members without accidentally providing access to your other environments.
 
 > [!IMPORTANT]
 > Subscription-scoped contributors are powerful, so you need to ensure you have adequate governance around your workflow's workload identity and the changes that it can deploy. By using a dedicated subscription for ephemeral environments, you reduce the risk to your other environments.
+
+## Your workflow's identity
+
+Your deployment workflow uses a workload identity and federated credential to authenticate to Azure. When you use pull request validation workflows, you need to configure the federated credential to work with pull requests.
+
+In a previous exercise unit in this module, you ran a command to create a federated credential. The policy string looked similar to the following:
+
+```
+repo:my-github-user/my-repo:pull-request
+```
+
+The `pull-request` near the end of the string specifies that the federated credential works with pull request validaiton workflows.
 
 ## Cost management
 
