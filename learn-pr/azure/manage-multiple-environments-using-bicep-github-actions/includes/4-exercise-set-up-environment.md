@@ -7,8 +7,8 @@ To meet these objectives, you'll:
 > [!div class="checklist"]
 > * Set up a GitHub repository for this module.
 > * Clone the project's repository to your computer.
+> * Create two workload identities in Azure Active Directory.
 > * Create two resource groups in Azure.
-> * Create two service principals in Azure Active Directory.
 > * Create two secrets and environments in GitHub.
 
 ## Get the GitHub repository

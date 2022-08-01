@@ -38,6 +38,9 @@ After you create an environment you can reference it in any jobs in your workflo
 
 :::code language="yaml" source="code/6-environment.yml" range="19-60" highlight="28" :::
 
+> [!NOTE]
+> When your deployment workflow's workload identity interacts with Azure Resource Manager within an environment, it needs a federated credential that's configured with the name of the environment. You'll learn more about this in future modules. When you run the exercises for this module, you'll create the necessary federated credentials.
+
 ## Environment protection rules
 
 After you create an environment, you can define *protection rules*. Protection rules are used to verify conditions that must be met before a step can use the environment. The *required reviewers* protection rule is a type of check that requires a human to provide a manual approval.

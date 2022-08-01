@@ -5,7 +5,7 @@ Before you can deploy your toy company's website by using a workflow, you need t
 > * Create an Azure AD workload identity and grant it access to the resource group.
 > * Create GitHub secrets to prepare your workflow to use the workload identity.
 
-This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+This exercise requires that you have permissions to create applications in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
 [!include[](../../includes/cleanup-steps.md)]
 

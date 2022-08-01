@@ -9,7 +9,7 @@ To meet these objectives, you'll:
 > [!div class="checklist"]
 > * Set up a GitHub repository for this module.
 > * Clone the repository to your computer.
-> * Create a service principal in Azure Active Directory.
+> * Create a workload identity in Azure Active Directory.
 > * Create a secret in GitHub.
 
 ## Get the GitHub repository
@@ -78,7 +78,7 @@ You now have a copy of the template repository in your own account. Clone this r
 
 ## Sign in to Azure
 
-Now that you've cloned the repository locally to your computer, you will sign in to your Azure environment. You'll use your Azure account to create a service principal for your GitHub Actions workflows to use.
+Now that you've cloned the repository locally to your computer, you will sign in to your Azure environment. You'll use your Azure account to create a workload identity for your GitHub Actions workflows to use.
 
 ::: zone pivot="cli"
 
@@ -109,7 +109,7 @@ Now that you've cloned the repository locally to your computer, you will sign in
 Later in this Microsoft Learn module, your pull request workflow will create resource groups and resources in your subscription. To do this, you need to create a workload identity and grant it the Contributor role on your subscription.
 
 > [!WARNING]
-> The service principal that you create here has a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
+> The workload identity that you create here has a high level of access to your Azure subscription. To avoid any accidental issues, use a non-production subscription. Don't execute these steps in an environment that holds any of your production workloads.
 >
 > In your own pull request validation workflows, we recommend that you use a dedicated Azure subscription.
 

@@ -41,8 +41,7 @@ Here, you add a new job to your workflow that runs the what-if operation.
 
    :::image type="content" source="../media/7-environments-new-details.png" alt-text="Screenshot of the GitHub page for a new environment, with the details completed and the Configure environment button highlighted.":::
 
-<!-- TODO mention we already set up the workload identity to deploy to the environment -->
-<!-- TODO ensure preceding conceptual unit mentioned workload identity needs credential for environment -->
+In the setup steps for this module, you already created a federated credential for your workflow to use when it deploys to the environment.
 
 ## Add required reviewer protection rule to the environment
 
