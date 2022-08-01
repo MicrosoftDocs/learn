@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-windows-powershell-pipeline.control-formatting-of-pipeline-output
+title: Control the formatting of pipeline output
+metadata:
+  title: Control the formatting of pipeline output
+  description: "Control the formatting of pipeline output"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-control-formatting-of-pipeline-output.md)]

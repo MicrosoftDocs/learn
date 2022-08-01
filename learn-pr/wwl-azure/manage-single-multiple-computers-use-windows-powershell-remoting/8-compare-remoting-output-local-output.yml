@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-single-multiple-computers-use-windows-powershell-remoting.compare-remoting-output-local-output
+title: Compare remoting output with local output
+metadata:
+  title: Compare remoting output with local output
+  description: "Compare remoting output with local output"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/8-compare-remoting-output-local-output.md)]
