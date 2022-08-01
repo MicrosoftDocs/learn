@@ -39,7 +39,7 @@ You can use the **Console** feature in the Azure portal to issue commands to you
 
 1. Select your Redis cache instance.
 
-1. Check the value of the *Status* field. The cache is not ready until the status is *Running*. You might have to wait for a few minutes before proceeding.
+1. Check the value of the *Status* field. The cache isn't ready until the status is *Running*. You might have to wait for a few minutes before proceeding.
 
 1. Once the cache is running, Click the **>_ Console** button in the toolbar on the **Overview** pane for your Redis Cache. This will open a Redis console, which allows you to enter low-level Redis commands. Try some of the following commands:
 
@@ -63,9 +63,9 @@ Switch back to the **Overview** panel either through the breadcrumb bar on the t
 
 1. Select **Settings** > **Access keys**.
 
-1. Copy the **Primary connection string (StackExchange.Redis)** to a safe place, you will need it for the next exercise.
+1. Copy the **Primary connection string (StackExchange.Redis)** to a safe place, you'll need it for the next exercise.
 
-    This key includes your primary key and host name in a complete connection string for use within your application settings for the **StackExchange.Redis** package we are going to use.
+    This key includes your primary key and host name in a complete connection string for use within your application settings for the **StackExchange.Redis** package we're going to use.
 
 Next, let's learn about some of the commands we can use to interrogate the cache.
 
@@ -73,7 +73,7 @@ Next, let's learn about some of the commands we can use to interrogate the cache
 
 ::: zone pivot="javascript"
 
-For the next exercise, you will need the host name, port, and primary access key of the cache.
+For the next exercise, you'll need the host name, port, and primary access key of the cache.
 
 1. Select **Settings** > **Access keys** in the resource navigation menu.
 
