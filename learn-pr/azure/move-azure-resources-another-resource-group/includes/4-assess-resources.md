@@ -21,18 +21,17 @@ After identifying the resource types of your resources, you must investigate whe
 
 These resources can't be moved:
 
-- Azure Active Directory domain services 
+- Azure Active Directory domain services
 - Azure Backup vaults
 - Azure App Service gateways
 
-
 In your case, you'll need to move a pair of storage accounts that support the development version of an application. According to the move operation support for resources list, you can move these storage accounts between resource groups and between subscriptions, without any limitations.
 
-The list also gives links to guidance on moving specific resource types. For example, in the list you'll see that Azure App Service resources have some limitations. The move guidance for App Service states that, if you're moving a web app to another resource group in the same subscription, you can't automatically move third-party SSL certificates. 
+The list also gives links to guidance on moving specific resource types. For example, in the list you'll see that Azure App Service resources have some limitations. The move guidance for App Service states that, if you're moving a web app to another resource group in the same subscription, you can't automatically move third-party SSL certificates.
 
 Virtual machines have their own limitations you must keep in mind. Here's a summary of limitations for virtual machines:
 
-- If you want to move a virtual machine, all of its dependants must go with it.  
+- If you want to move a virtual machine, all of its dependants must go with it.
 - You can't move virtual machines with certificates in Azure Key Vault between subscriptions.
 - You can't move virtual machine scale sets with standard load balancers or a standard public IP.
 - You can't move any managed disks that are in availability zones to different subscriptions.

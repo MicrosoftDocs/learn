@@ -1,10 +1,10 @@
-Version control tools like Git give you the ability to track and manage changes to your files as you work. You can store multiple versions of the same file, view the history of the changes you've made, and collaborate with others. 
+Version control tools like Git give you the ability to track and manage changes to your files as you work. You can store multiple versions of the same file, view the history of the changes you've made, and collaborate with others.
 
 Git is one of the most popular version control tools. In this unit, you'll learn about Git and how it can help when you're writing and working with Bicep code.
 
 ## What are version control and Git?
 
-Version control is a practice by which you maintain a history of changes to your files. Many different version control systems exist, but generally they have a few core features:
+Version control is a practice by which you maintain a history of changes to your files. Many different version control systems exist, but generally they have some core features:
 
 - Track the changes you make to a file.
 - View the history of a file, and go back to an older version if you need to revert a change you've made.
@@ -28,7 +28,7 @@ Bicep code is maintained in text files, so it's a good fit for many version cont
 
 ## Where is each repository?
 
-Git is a _distributed_ version control system, which means you can have multiple copies of your Git repository across computers and servers. This makes Git an excellent choice for collaborating with team members to share and write your Bicep code together. 
+Git is a _distributed_ version control system, which means you can have multiple copies of your Git repository across computers and servers. This makes Git an excellent choice for collaborating with team members to share and write your Bicep code together.
 
 You use online services like GitHub and Azure Repos to work with your team on shared code. By using these services, you can also start to build automated deployment pipelines. You'll learn about those pipelines in a future module.
 
