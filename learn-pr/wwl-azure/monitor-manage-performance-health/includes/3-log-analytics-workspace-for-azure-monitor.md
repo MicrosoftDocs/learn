@@ -17,7 +17,6 @@ To set your resource diagnostic settings:
 To set up host pool diagnostics using the resource diagnostic settings section in the configuration workbook:
 
 1.  Under **Host pool**, check to see whether Azure Virtual Desktop diagnostics are enabled. If they aren't, an error message will appear that says "No existing diagnostic configuration was found for the selected host pool." You'll need to enable the following supported diagnostic tables:
-    
      -  Checkpoint
      -  Error
      -  Management
@@ -36,7 +35,6 @@ To set up workspace diagnostics using the resource diagnostic settings section i
 
 
 1.  Under **Workspace**, check to see whether Azure Virtual Desktop diagnostics are enabled for the Azure Virtual Desktop workspace. If they aren't, an error message will appear that says "No existing diagnostic configuration was found for the selected workspace." You'll need to enable the following supported diagnostics tables:
-    
      -  Checkpoint
      -  Error
      -  Management
