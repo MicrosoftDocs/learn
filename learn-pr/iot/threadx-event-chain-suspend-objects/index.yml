@@ -28,10 +28,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-hub
 - azure-rtos
 subjects:
-- development-tools
+- iot
 units:
 - learn.iot.threadx-event-chain-suspend-objects.introduction
 - learn.iot.threadx-event-chain-suspend-objects.overview

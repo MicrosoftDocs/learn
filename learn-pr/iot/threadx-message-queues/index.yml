@@ -28,10 +28,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-hub
 - azure-rtos
 subjects:
-- cloud-computing
+- iot
 units:
 - learn.iot.threadx-message-queues.introduction
 - learn.iot.threadx-message-queues.message-queues

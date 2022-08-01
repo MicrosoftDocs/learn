@@ -28,10 +28,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-hub
 - azure-rtos
 subjects:
-- cache
+- iot
 units:
 - learn.iot.threadx-memory-management.introduction
 - learn.iot.threadx-memory-management.threadx-overview

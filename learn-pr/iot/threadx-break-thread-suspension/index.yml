@@ -29,10 +29,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-hub
 - azure-rtos
 subjects:
-- cloud-computing
+- iot
 units:
 - learn.iot.threadx-break-thread-suspension.introduction
 - learn.iot.threadx-break-thread-suspension.overview
