@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/29/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "The ability to use Just Enough Administration (JEA)"
       isCorrect: true
-      explanation: "Correct. Just Enough Administration (JEA) is not supported when using PowerShell Remoting over SSH but it is available when using PowerShell Remoting based on WinRM."
+      explanation: "Correct. Just Enough Administration (JEA) isn't supported when using PowerShell Remoting over SSH but it's available when using PowerShell Remoting based on WinRM."
     - content: "The ability to run the Invoke-Command cmdlet"
       isCorrect: false
       explanation: "Incorrect. The Invoke-Command cmdlet is supported when using PowerShell Remoting over WinRM and SSH."
@@ -29,12 +29,12 @@ quiz:
       explanation: "Incorrect. PowerShell Remoting over SSH is supported on Windows Server operating systems."
   - content: "Which command is used to start one-to-one PowerShell remoting?"
     choices:
-    - content: "**Enter-PSSession** command without parameter"
+    - content: "The **Enter-PSSession** command without parameter"
       isCorrect: false
       explanation: "Incorrect. To start one-to-one PowerShell remoting, use the **Enter-PSSession** command combined with its *–ComputerName* parameter."
-    - content: "**Enter-PSSession** command combined with its *–ComputerName* parameter"
+    - content: "The **Enter-PSSession** command combined with its *–ComputerName* parameter"
       isCorrect: true
       explanation: "Correct. To start one-to-one PowerShell remoting, use the **Enter-PSSession** command combined with its *–ComputerName* parameter."
-    - content: "**Get-Service** command"
+    - content: "The **Get-Service** command"
       isCorrect: false
       explanation: "Incorrect. To start one-to-one PowerShell remoting, use the **Enter-PSSession** command combined with its *–ComputerName* parameter."
