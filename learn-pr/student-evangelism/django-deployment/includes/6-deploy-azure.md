@@ -18,7 +18,7 @@ Start by installing the Azure App Service extension in Visual Studio Code:
 
 The extension is installed.
 
-## Set deploy from starter subfolder
+## Set deploy from starter folder
 
 1. Open the VS Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
 
