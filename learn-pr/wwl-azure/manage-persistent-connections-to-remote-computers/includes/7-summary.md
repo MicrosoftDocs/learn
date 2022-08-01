@@ -4,7 +4,7 @@ In this module, you learned that using a persistent connection allows you to int
 
 - Use the **New-PSSession** command to create a persistent connection.
 
-- Run the **Disconnect-PSSession** command to disconnect from the PSSession.
+- Run the **Disconnect-PSSession** command to disconnect from the PowerShell session.
 
 - Implicit remoting brings a copy of a server’s Windows PowerShell tools to your local computer. 
 
