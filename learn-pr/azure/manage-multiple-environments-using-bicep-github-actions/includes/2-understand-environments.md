@@ -55,7 +55,6 @@ Whatever your organization chooses as its list of environments, the goal is to i
 In your toy company, you decide to start with a basic set of environments for your website. In addition to your production environment, you'll create one non-production environment named *Test*:
 
 :::image type="content" source="../media/2-environments.png" alt-text="Diagram that shows two environments: test and production." border="false":::
-<!-- TODO update diagram: https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/503496 -->
 
 You'll update your workflow to deploy your Bicep code to your test environment and run some basic tests against it. If that effort succeeds, you'll deploy to your production environment.
 
@@ -85,6 +84,14 @@ You create an environment by using the GitHub web interface.
 
 When your workflow refers to an environment that doesn't exist, GitHub Actions automatically creates it for you. This feature can affect the security of your GitHub repository because the new environment won't have any protection rules configured. It's best to create an environment yourself through the GitHub web interface, so that you have full control over its security.
 
+### Link a deployment job to an environment
+
+In your deployment workflow definition, you can refer to an environment by using the `environment` property:
+
+:::code language="yaml" source="code/2-environment-workflow.yml" highlight="3" :::
+
+In the example above, the job named `deploy` is linked to the `Test` environment.
+
 ## Environments and connections to Azure
 
 When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. 
@@ -101,3 +108,11 @@ Workload identities should be assigned specific permissions to only deploy to th
 It's also a good idea to separate your environments in Azure. At minimum, you should create a separate resource group for each environment. In many situations, it's better to create separate Azure subscriptions for each environment. Then you can create multiple resource groups within each environment's subscription.
 
 Apply Azure role assignments so that users and workload identities can access only the environments that they need to access. And be careful to limit the access to your production environment to a small set of people and the deployment workload identity for that environment.
+
+### Federated credentials for environments
+
+When your workload identity connects to Azure from your deployment workflow, it uses a *federated credential* to securely authenticate itself without any secrets or keys. In previous modules in this learning path, your federated credentials granted access to your deployment workflows when they deployed from the *main* branch of your Git repository.
+
+When you deploy to an environment within your workflow, you need to use a federated credential that's scoped to that environment.
+
+In this module, your workflow inludes several jobs, many of which connect and deploy to Azure. Some of the jobs use environments, and some don't. So, you create two federated credentials for each of your workload identities: one scoped to the environment and one scoped to the *main* branch.

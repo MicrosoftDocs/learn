@@ -67,7 +67,6 @@ You need to provide several pieces of information to deploy your app to App Serv
 App Service has its own data plane authentication system that it uses for deployments. The `azure/webapps-deploy` action handles the authentication process automatically for you:
 
 :::image type="content" source="../media/3-credential-exchange.png" alt-text="Diagram illustrating the credential exchange process." border="false":::
-<!-- TODO update diagram: https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/503515 -->
 
 The `azure/webapps-deploy` action uses the identity that's associated with your job's active Azure session, which you signed in by using a workload identity:::image type="icon" source="../media/callout-01.png":::. The action creates and downloads the necessary credentials for deployment:::image type="icon" source="../media/callout-02.png":::. It then uses the deployment credentials when it communicates with the App Service data plane API:::image type="icon" source="../media/callout-03.png":::.
 

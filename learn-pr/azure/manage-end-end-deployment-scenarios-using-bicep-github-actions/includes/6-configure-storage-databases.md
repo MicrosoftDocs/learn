@@ -50,7 +50,6 @@ However, network restrictions can also make it difficult for your deployment wor
 Some of the actions that help you to perform data plane operations can work around these issues. This includes the `azure/sql-action` action:
 
 :::image type="content" source="../media/6-firewall.png" alt-text="Diagram illustrating the firewall update process." border="false":::
-<!-- TODO update diagram: https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/503515 -->
 
 When you use the `azure/sql-action` action to work with an Azure SQL logical server or database, it uses your workload identity:::image type="icon" source="../media/callout-01.png"::: to connect to the control plane for the Azure SQL logical server. It updates the firewall to allow the runner to access the server from its IP address:::image type="icon" source="../media/callout-02.png":::. Then, it can successfully submit the DACPAC file or script for execution:::image type="icon" source="../media/callout-03.png":::. The action then automatically removes the firewall rule when it's done.
 

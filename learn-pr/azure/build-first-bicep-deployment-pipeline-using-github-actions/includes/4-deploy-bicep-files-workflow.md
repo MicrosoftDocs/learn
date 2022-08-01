@@ -22,13 +22,9 @@ When you deploy a Bicep file from your own computer, you use the Azure CLI or Az
 
 Deployment by workflow requires authentication, too. Because workflows run without human intervention, workflows authenticate to Azure by using a *workload identity*. GitHub and Azure Active Directory work together to securely authenticate your workflow without needing any credentials.
 
-> [!TIP]
-> In this module, you'll create a workload identity for your workflow to use. The module [Authenticate your Azure deployment workflow by using workload identities](xref:learn.azure.authenticate-azure-deployment-pipeline-service-principals) <!-- TODO --> provides a more detailed explanation of workload identities including how they work, as well as how you create them, assign them roles, and manage them.
-
 When your workflow needs to communicate with Azure, a workflow step signs in to Azure by using a workload identity. Then, the steps that are defined in the workflow use the workflow's *identity*.
 
-:::image type="content" source="../media/4-secret.png" alt-text="Diagram that shows a workflow that includes an Azure deployment step, which accesses a secret and then deploys to Azure." border="false":::
-<!-- TODO update diagram: https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/471207 -->
+:::image type="content" source="../media/4-secret.png" alt-text="Diagram that shows a workflow that includes an Azure deployment step, which accesses a secret and then deploys to Azure." border="false"::: <!-- TODO update diagram: https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/471207 -->
 
 You must ensure that your workload identity has the permissions it needs to execute your deployment steps. For example, you might need to assign the workload identity the Contributor role for the resource group it deploys your resources to.
 
