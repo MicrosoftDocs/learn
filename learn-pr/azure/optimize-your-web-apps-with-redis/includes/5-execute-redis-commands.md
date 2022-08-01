@@ -1,6 +1,6 @@
 ::: zone pivot="csharp"
 
-As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It is often used as a cache, but can be used as a formal database or even message-broker.
+As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even message-broker.
 
 It can store a variety of data types and structures, and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
 
@@ -67,7 +67,7 @@ IDatabase db = redisConnection.GetDatabase();
 
 Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions which return `Task` objects to make them compatible with the `async` and `await` keywords.
 
-Here is an example of storing a key/value in the cache:
+Here's an example of storing a key/value in the cache:
 
 ```csharp
 bool wasSet = db.StringSet("favorite:flavor", "i-love-rocky-road");
@@ -199,20 +199,21 @@ Console.WriteLine(stat.Sport); // displays "Soccer"
 ```
 
 ## Cleaning up the connection
-Once you are done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This will close all connections and shutdown the communication to the server.
+
+Once you're done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This will close all connections and shut down the communication to the server.
 
 ```csharp
 redisConnection.Dispose();
 redisConnection = null;
 ```
 
-Let's create an application and do some simple work with our Redis cache.
+Let's create an application and do some work with our Redis cache.
 
 ::: zone-end
 
 ::: zone pivot="javascript"
 
-As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It is often used as a cache, but can be used as a formal database or even message-broker.
+As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even message-broker.
 
 It can store a variety of data types and structures, and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
 
@@ -239,13 +240,13 @@ In most cases, you should avoid creating multiple `RedisClient`s. A single insta
 
 ### Working with a Redis database
 
-Redis commands are represented as methods on `RedisClient` with the name names as the commands themselves. Here's an example of storing a new value in the cache:
+Redis commands are represented as methods on `RedisClient` with the names as the commands themselves. Here's an example of storing a new value in the cache:
 
 ```javascript
 client.set("myKey", "myValue"); // executes "set myKey myValue" on the cache
 ```
 
-All of the command methods on `RedisClient` are asynchronous and support an optional callback argument that provides the result. The `redis` package does not support Promises (and thus `async`/`await` or chaining with `.then()`) out of the box. The easiest way to use `async`/`await` or `.then()` with `RedisClient` is to add Promise support to the entire client at once with the `bluebird` package's `promisifyAll` function:
+All of the command methods on `RedisClient` are asynchronous and support an optional callback argument that provides the result. The `redis` package doesn't support Promises (and thus `async`/`await` or chaining with `.then()`) out of the box. The easiest way to use `async`/`await` or `.then()` with `RedisClient` is to add Promise support to the entire client at once with the `bluebird` package's `promisifyAll` function:
 
 ```javascript
 var redis = require("redis");
@@ -262,7 +263,7 @@ var result = await client.setAsync("myKey", "myValue");
 
 ### Executing commands dynamically
 
-You can use `sendCommand()` (or `sendCommandAsync()` with bluebird) to send any string as a command to the cache. This is useful when you want to send commands dynamically (for example, if your app presents a prompt to send commands directly to the cache), or if new Redis commands are introduced that the `redis` package does not support. Command arguments must be sent as an array.
+You can use `sendCommand()` (or `sendCommandAsync()` with bluebird) to send any string as a command to the cache. This is useful when you want to send commands dynamically (for example, if your app presents a prompt to send commands directly to the cache), or if new Redis commands are introduced that the `redis` package doesn't support. Command arguments must be sent as an array.
 
 ```javascript
 // Add a key/value pair
@@ -270,12 +271,13 @@ var result = await client.sendCommandAsync("set", ["myKey", "myValue"]);
 ```
 
 ## Cleaning up the connection
-Once you are done with the Redis connection, you should close it with `quit()` (or `quitAsync()` when using bluebird):
+
+Once you're done with the Redis connection, you should close it with `quit()` (or `quitAsync()` when using bluebird):
 
 ```javascript
 await client.quitAsync();
 ```
 
-Let's create an application and do some simple work with our Redis cache.
+Let's create an application and do some work with our Redis cache.
 
 ::: zone-end
