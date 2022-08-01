@@ -8,13 +8,13 @@ The starter solution contains a fully functional tip calculator app. You'll star
 
 1. Using Visual Studio, open the starter solution in the **exercise2/TipCalculator** folder in the repo that you cloned at the start of the previous exercise.
 
-1. Build and run the app on your preferred operation system.
+1. Build and run the app on your preferred operating system.
 
 1. Enter a number into the text box and use the app to see how it works.
 
 1. Experiment with the tip amount buttons and the slider.
 
-1. When you have finished, close the app.
+1. When you've finished, close the app.
 
 1. Open **MainPage.xaml**. Notice that all the views are placed into one `VerticalStackLayout`, as shown by the following XAML markup:
 
@@ -50,7 +50,7 @@ The starter solution contains a fully functional tip calculator app. You'll star
 
 ## Fix the UI
 
-Now that you've seen the app run, you can make it look better by adding additional `HorizontalStackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
+Now that you've seen the app run, you can make it look better by adding `HorizontalStackLayout` containers. The goal is to make the app look like the screenshot at the start of the lab.
 
 1. Open the **MainPage.xaml** file.
 
