@@ -15,7 +15,7 @@ To scaffold an app, you use the `create-react-app` scaffolder. By using `npx`, y
     npx create-react-app pizza-web
     ```
 
-    What you get is a directory, _pizza-web_, that contains your scaffolded React app. 
+    What you get is a directory, _pizza-web_, that contains your scaffolded React app.
 
 1. Start the app by calling `yarn start`:
 
@@ -88,7 +88,7 @@ Create a file, _Main.js_, and give it the following content:
 
 What you have at this point are two components:
 
-- **Pizza:** This component is capable of rendering on the `Pizza` object. It also listens to changes from input and runs the `update()` function, if either text field changes. 
+- **Pizza:** This component is capable of rendering the `Pizza` object. It also listens to changes from input and runs the `update()` function, if either text field changes.
 - **Main:** This component renders the initial data, a list of pizzas.
 
 Take note of the use of the `dirty` variable. This variable keeps track of whether a user has attempted to change the input. If the input in either field has been changed, `dirty` is set to `true`, and the **Save** button is rendered. If the **Save** button is invoked, the `onSave()` method will be invoked. Ideally, this place in the code is where you want to make any calls to a back end, to notify the back end that a pizza item has been changed.
@@ -135,7 +135,6 @@ It's always great to improve the appearance of the UI. There's more than one way
     }
     
     export default App;
-    
    ```
 
 1. Run `yarn start` to run the app:
