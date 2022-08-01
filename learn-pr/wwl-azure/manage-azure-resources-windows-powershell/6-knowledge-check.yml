@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/29/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: "Arrange the following steps in the correct sequence to access the operating system running in an Azure VM:1. Create an Azure VM.2. Create a resource group.3. Connect to the Azure VM."
+  - content: "In which sequence should a user perform the following steps to access the operating system running in an Azure VM?1. Create an Azure VM.2. Create a resource group.3. Connect to the Azure VM."
     choices:
     - content: "1 > 2 > 3"
       isCorrect: false
@@ -27,7 +27,7 @@ quiz:
     - content: "1 > 3 > 2"
       isCorrect: false
       explanation: "Incorrect. To access the operating system running in an Azure VM, create a resource group, then create an Azure VM and connect to the Azure VM"
-  - content: "Which command allows you to create a standard, general-purpose storage account with locally redundant storage (LRS) replication?"
+  - content: "Which command lets a user create a standard, general-purpose storage account with locally redundant storage (LRS) replication?"
     choices:
     - content: "**New-AzStorageAccount**"
       isCorrect: true
