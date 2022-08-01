@@ -19,7 +19,7 @@ abstract:  |
   - Learn about ThreadX memory block pools
 prerequisites: |
   - Working knowledge of C or C++
-  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
 iconUrl: /learn/achievements/iot/threadx-memory-management.svg
 levels:
 - beginner

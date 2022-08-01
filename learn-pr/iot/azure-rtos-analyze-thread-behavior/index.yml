@@ -19,9 +19,9 @@ abstract:  |
   - Use an Application Timer to compute and display the total number of cycles each thread completed, the average time for each cycle, and selected values provided by the thread_performance_info_get service.
   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
 prerequisites: |
-  - [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+  - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
-  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
 iconUrl: /learn/achievements/iot/azure-rtos-analyze-thread-behavior.svg
 levels:
 - beginner
