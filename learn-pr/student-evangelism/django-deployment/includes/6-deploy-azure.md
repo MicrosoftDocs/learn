@@ -28,7 +28,7 @@ The extension is installed.
 
 1. In the **App Service: Deploy Subpath** field enter "starter" to tell VS Code to deploy from this folder.
 
-     ![Screenshot showing the setting the deploy subpath setting.](../media/app-service-set-subpath.png)
+     ![Screenshot showing the deploy subpath setting.](../media/app-service-set-subpath.png)
 
 Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. Setting the subpath isn't necessary for Django projects where the *manage.py* file is at the root of the project directory.
 
