@@ -84,7 +84,7 @@ While your site is deploying, turn your attention to creating the database. You'
 
 1. Select **Create Database Server...**.
 
-    ![Screenshot showing how to create a new web app.](../media/create-new-database.png)
+    ![Screenshot showing how to create a new database server.](../media/create-new-database.png)
 
 
 1. For the Azure Database Server, select **PostgreSQL Flexible Server**.
