@@ -41,10 +41,11 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
     import os
     ```
 
-1. Add the following code to the end of the file to override `ALLOWED_HOSTS` to allow Azure to host the application.
+1. Add the following code to the end of the file to override `ALLOWED_HOSTS` to allow Azure to host the application and to define trusted origins.
 
     ```python
     ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
+    CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
     ```
 
     > [!NOTE]
