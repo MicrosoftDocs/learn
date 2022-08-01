@@ -1,4 +1,4 @@
-This section compares storage solutions that Azure offers for Azure Virtual Desktop FSLogix user profile containers.
+This unit compares storage solutions that Azure offers for Azure Virtual Desktop FSLogix user profile containers.
 
 As mentioned in Module 2, it's best to store FSLogix profile containers on Azure Files.
 
@@ -143,5 +143,138 @@ We recommend Premium disks for Storage Spaces Direct.
   :::column-end:::
   :::column:::
     NFSv3, NFSv4.1, SMB 3.1
+  :::column-end:::
+:::row-end:::
+
+
+## Azure management details
+
+:::row:::
+  :::column:::
+    **Features**
+  :::column-end:::
+  :::column:::
+    **Azure Files**
+  :::column-end:::
+  :::column:::
+    **Azure NetApp Files**
+  :::column-end:::
+  :::column:::
+    **Storage Spaces Direct**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Access
+  :::column-end:::
+  :::column:::
+    Cloud, on-premises and hybrid (Azure file sync)
+  :::column-end:::
+  :::column:::
+    Cloud, on-premises (via ExpressRoute)
+  :::column-end:::
+  :::column:::
+    Cloud, on-premises
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Backup
+  :::column-end:::
+  :::column:::
+    Azure backup snapshot integration
+  :::column-end:::
+  :::column:::
+    Azure NetApp Files snapshots
+  :::column-end:::
+  :::column:::
+    Azure backup snapshot integration
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Security and compliance
+  :::column-end:::
+  :::column:::
+    [All Azure supported certificates](https://www.microsoft.com/trustcenter/compliance/complianceofferings)
+  :::column-end:::
+  :::column:::
+    ISO completed
+  :::column-end:::
+  :::column:::
+    [All Azure supported certificates](https://www.microsoft.com/trustcenter/compliance/complianceofferings)
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Azure Active Directory integration
+  :::column-end:::
+  :::column:::
+    [Native Active Directory and Azure Active Directory Domain Services](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/storage/files/storage-files-active-directory-overview.md)
+  :::column-end:::
+  :::column:::
+    [Azure Active Directory Domain Services and Native Active Directory](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/azure-netapp-files/faq-smb.md#does-azure-netapp-files-support-azure-active-directory)
+  :::column-end:::
+  :::column:::
+    Native Active Directory or Azure Active Directory Domain Services support only
+  :::column-end:::
+:::row-end:::
+
+
+## Azure Files tiers
+
+Azure Files offers two different tiers of storage: **premium** and **standard**. These tiers let you tailor the performance and cost of your file shares to meet your scenario's requirements.
+
+ -  **Premium file shares are backed by solid-state drives (SSDs)** and are deployed in the FileStorage storage account type. Premium file shares provide consistent high performance and low latency for input and output (IO) intensive workloads.
+ -  **Standard file shares are backed by hard disk drives (HDDs)** and are deployed in the general purpose version 2 (GPv2) storage account type. Standard file shares provide reliable performance for IO workloads that are less sensitive to performance variability, such as general-purpose file shares and dev/test environments.
+
+The following table lists our recommendations for which performance tier to use based on your workload.
+
+:::row:::
+  :::column:::
+    **Workload type**
+  :::column-end:::
+  :::column:::
+    **Recommended file tier**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Light (fewer than 200 users)
+  :::column-end:::
+  :::column:::
+    Standard file shares
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Light (more than 200 users)
+  :::column-end:::
+  :::column:::
+    Premium file shares or standard with multiple file shares
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Medium
+  :::column-end:::
+  :::column:::
+    Premium file shares
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Heavy
+  :::column-end:::
+  :::column:::
+    Premium file shares
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Power
+  :::column-end:::
+  :::column:::
+    Premium file shares
   :::column-end:::
 :::row-end:::
