@@ -22,21 +22,17 @@ The extension is installed.
 
 1. Open the VS Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
 
-1. Type "Preferences: Open Workspace Settings" and select to open up settings.
+1. Type "Preferences: Open Workspace Settings" and select it to open up settings.
 
 1. In the **Settings** search field, enter "@id:appService.deploySubpath appser".
 
 1. In the **App Service: Deploy Subpath** field enter "starter" to tell VS Code to deploy from this folder.
- 
-     ![Screenshot showing the setting the deploy subpath setting.](../media/app-service-set-subpath.png)
 
+     ![Screenshot showing the setting the deploy subpath setting.](../media/app-service-set-subpath.png)
 
 Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. In Django projects where the *manage.py* file is at the root of the project and this step isn't needed.
 
-
 ## Deploy the application
-
-Now that the extension is installed, you can start the installation.
 
 1. In **Visual Studio Code**, on the toolbar, select the **Azure** icon.
 
