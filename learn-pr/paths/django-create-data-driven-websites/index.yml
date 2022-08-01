@@ -42,5 +42,6 @@ modules:
 - learn.django.admin-site
 - learn.django.views-templates
 - learn.django.generic-views
+- learn.django.deployment
 trophy:
   uid: learn.django-create-data-driven-websites.trophy
