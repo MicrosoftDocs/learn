@@ -3,7 +3,7 @@ uid: learn.wwl.select-sort-measure-objects-use-pipeline
 metadata:
   title: Select, sort, and measure objects using the pipeline
   description: "This module explains how to manipulate objects in the pipeline by using commands that sort, select, and measure objects."
-  ms.date: 07/29/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -19,12 +19,13 @@ abstract: |
   *   Explain how to display a subset of objects in a collection.
   *   Explain how to display a customized list of objects’ properties.
   *   Select objects by using the Select-Object command.
-  *   Explain how to create calculated properties. Create custom calculated properties for display.
+  *   Explain how to create calculated properties.
+  *   Create custom calculated properties for display.
 prerequisites: |
-  - Familiarity with Windows networking technologies and implementation.
-  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
-  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
-   -Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  *   Familiarity with Windows networking technologies and implementation.
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
