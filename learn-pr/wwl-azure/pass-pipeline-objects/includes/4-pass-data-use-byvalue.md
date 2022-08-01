@@ -1,4 +1,4 @@
-When passing data by using **ByValue**, a parameter can accept complete objects from the pipeline when those objects are of the type that the parameter accepts. A single command can have more than one parameter accepting pipeline input **ByValue**, but each parameter must accept a different kind of object. 
+When data is passed using **ByValue**, a parameter can accept complete objects from the pipeline when those objects are of the type that the parameter accepts. A single command can have more than one parameter accepting pipeline input **ByValue**, but each parameter must accept a different kind of object. 
 
 For example, **Get-Service** can accept pipeline input **ByValue** on both its **–InputObject** and **–Name** parameters. Each of those parameters accepts a different kind of object. **–InputObject** accepts objects of the type ServiceController, and **–Name** accepts objects of the type **String**. Consider the following example:
 
