@@ -189,9 +189,9 @@ Next, create a resource group for your website. This process also grants the wor
    ```azurepowershell
    $resourceGroup = New-AzResourceGroup -Name ToyReusable -Location westus3
 
-   New-AzADServicePrincipal -AppId $applicationRegistrationAppId
+   New-AzADServicePrincipal -AppId $applicationRegistration.AppId
    New-AzRoleAssignment `
-      -ApplicationId $applicationRegistrationAppId `
+      -ApplicationId $applicationRegistration.AppId `
       -RoleDefinitionName Contributor `
       -Scope $resourceGroup.ResourceId
    ```
@@ -216,7 +216,7 @@ echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 
 ```azurepowershell
 $azureContext = Get-AzContext
-Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.ApplicationId)"
+Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
 Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
 Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 ```
