@@ -154,7 +154,7 @@ Next, create a workload identity in Azure AD for your deployment workflow.
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-reusable'
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-reusable-branch' `
-      -ApplicationObjectId $testApplicationRegistration.Id `
+      -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
