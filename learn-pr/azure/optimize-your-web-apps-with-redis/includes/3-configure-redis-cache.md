@@ -54,7 +54,7 @@ If you create a premium-tier Redis cache, you can deploy it to a virtual network
 
 With a premium tier Redis cache, you can implement clustering to automatically split your dataset among multiple nodes. To implement clustering, you specify the number of shards to a maximum of 10. The cost incurred is the cost of the original node multiplied by the number of shards.
 
-## Accessing the Redis instance
+## Access the Redis instance
 
 Redis supports a set of [known commands](https://redis.io/commands). A command is typically issued as `COMMAND parameter1 parameter2 parameter3`.
 
@@ -100,7 +100,7 @@ OK
 (integer)
 ```
 
-### Adding an expiration time to values
+### Add an expiration time to values
 
 Caching is important because it allows us to store commonly used values in memory. However, we also need a way to expire values when they are stale. Redis does this by applying a *time to live* (TTL) to a key.
 
@@ -124,7 +124,7 @@ OK
 (nil)
 ```
 
-## Accessing a Redis cache from a client
+## Access a Redis cache from a client
 
 To connect to an Azure Cache for Redis instance, you'll need several pieces of information. Clients need the host name, port, and an access key for the cache. You can retrieve this information in the Azure portal through the **Settings > Access Keys** page.
 
