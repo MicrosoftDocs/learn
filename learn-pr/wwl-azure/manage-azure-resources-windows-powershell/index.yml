@@ -2,10 +2,7 @@
 uid: learn.wwl.manage-azure-resources-windows-powershell
 metadata:
   title: Manage Azure resources with Windows PowerShell
-  description: "This module explains how
-to install the necessary modules for cloud services management and use PowerShell
-commands to perform simple administrative tasks on cloud resources like Azure
-virtual machines, Azure subscriptions and Azure storage accounts."
+  description: "Manage Azure resources with Windows PowerShell"
   ms.date: 08/01/2022
   author: wwlpublish
   ms.author: tonyj
