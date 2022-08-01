@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/29/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "A collection of objects"
       isCorrect: false
       explanation: "Incorrect. A pipeline is a chain of one or more commands in which the output from one command can pass as input to the next command."
-  - content: "Which formatting cmdlet would you pipe into a PowerShell command to display the output where each property displays on a new line?"
+  - content: "Which formatting cmdlet would a user pipe into a PowerShell command to display the output where each property displays on a new line?"
     choices:
     - content: "Format-Wide"
       isCorrect: false
