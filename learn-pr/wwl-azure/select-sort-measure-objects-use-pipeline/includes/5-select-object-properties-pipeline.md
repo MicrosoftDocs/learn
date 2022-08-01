@@ -14,5 +14,4 @@ Get-Process | Sort-Object –Property CPU –Descending | Select-Object –Prope
 
 Take care when specifying property names. Sometimes, the default screen display that PowerShell creates doesn't use the real property names in the table column headers. For example, the output of **Get-Process** includes a column labeled **CPU(s)**. However, the **System.Diagnostics.Process** object type doesn't have a property that has that name. The actual property name is **CPU**. You can check this by piping the output of **Get-Process** to **Get-Member**.
 
-> **Best Practice**:
-> Always review the property names in the output of **Get-Member** before you use those property names in another command. By doing this, you can help to ensure that you use the actual property names and not ones created for display purposes.
+> **Best Practice**: Always review the property names in the output of **Get-Member** before you use those property names in another command. By doing this, you can help to ensure that you use the actual property names and not ones created for display purposes.
