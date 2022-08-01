@@ -56,7 +56,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
-   ```azurecli
+   ```bash
    githubOrganizationName='mygithubuser'
    githubRepositoryName='toy-website-workflow'
    ```
@@ -94,7 +94,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
 ::: zone-end
@@ -124,9 +124,9 @@ To create a resource group and grant your workload identity access to it, run th
 ```azurepowershell
 $resourceGroup = New-AzResourceGroup -Name ToyWebsite -Location westus
 
-New-AzADServicePrincipal -AppId $applicationRegistrationAppId
+New-AzADServicePrincipal -AppId $applicationRegistration.AppId
 New-AzRoleAssignment `
-   -ApplicationId $applicationRegistrationAppId `
+   -ApplicationId $($applicationRegistration.AppId) `
    -RoleDefinitionName Contributor `
    -Scope $resourceGroup.ResourceId
 ```
@@ -140,7 +140,7 @@ Run the following code to show you the values you need to create as GitHub secre
 ::: zone pivot="cli"
 
 ```bash
-echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
+echo "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
 echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
 echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 ```

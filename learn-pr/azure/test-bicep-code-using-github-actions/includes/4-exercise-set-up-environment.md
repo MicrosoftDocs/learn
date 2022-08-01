@@ -163,14 +163,14 @@ Next, create a workload identity in Azure AD for your deployment workflow.
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:environment:Website"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Website"
 
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-website-test-branch' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
 ::: zone-end
@@ -202,9 +202,9 @@ Next, create a resource group for your website. This process also grants the wor
    ```azurepowershell
    $resourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
-   New-AzADServicePrincipal -AppId $applicationRegistration.AppId
+   New-AzADServicePrincipal -AppId $($applicationRegistration.AppId)
    New-AzRoleAssignment `
-      -ApplicationId $applicationRegistration.AppId `
+      -ApplicationId $($applicationRegistration.AppId) `
       -RoleDefinitionName Contributor `
       -Scope $resourceGroup.ResourceId
    ```
@@ -218,7 +218,7 @@ Run the following code to show you the values you need to create as GitHub secre
 ::: zone pivot="cli"
 
 ```bash
-echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
+echo "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
 echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
 echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 ```
