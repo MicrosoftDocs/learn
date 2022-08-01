@@ -11,9 +11,7 @@ Using RBAC, you can:
 
 To view access permissions, use the **Access control (IAM)** panel for the resource in the Azure portal. On this panel, you can determine who can access an area and their assigned role. Using this same panel, you can also grant or remove access.
 
-![Screenshot of Azure portal Access control - Role assignment pane showing a backup operator and billing reader roles assigned to different users.](../media/5-resource-group-access-control.png)
-
-In the above screenshot, **Alain Charon** has been assigned the **Backup Operator** role for this resource group.
+:::image type="content" source="../media/5-resource-group-access-control.png" alt-text="Screenshot of Azure portal Access control - Role assignment pane showing a backup operator and billing reader roles assigned to different users.":::
 
 ### How RBAC defines access
 

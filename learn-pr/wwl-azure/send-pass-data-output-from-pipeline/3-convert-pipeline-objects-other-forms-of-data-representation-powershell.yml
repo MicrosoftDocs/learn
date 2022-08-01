@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.send-pass-data-output-from-pipeline.convert-pipeline-objects-other-forms-of-data-representation-powershell
+title: Convert pipeline objects to other forms of data representation in PowerShell
+metadata:
+  title: Convert pipeline objects to other forms of data representation in PowerShell
+  description: "Convert pipeline objects to other forms of data representation in PowerShell"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-convert-pipeline-objects-other-forms-of-data-representation-powershell.md)]
