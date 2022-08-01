@@ -57,7 +57,6 @@ Here are some other things we recommend you do to optimize MSIX app attach perfo
 
  -  The storage solution you use for MSIX app attach should be in the same datacenter location as the session hosts.
  -  To avoid performance bottlenecks, exclude the following VHD, VHDX, and CIM files from antivirus scans:
-    
      -  &lt;MSIXAppAttachFileShare\\&gt;\\\*.VHD
      -  &lt;MSIXAppAttachFileShare\\&gt;\\\*.VHDX
      -  \\\\storageaccount.file.core.windows.net\\share\*.VHD

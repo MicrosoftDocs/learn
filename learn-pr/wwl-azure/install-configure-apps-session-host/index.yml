@@ -3,7 +3,7 @@ uid: learn.wwl.install-configure-apps-session-host
 metadata:
   title: Install and configure apps on a session host
   description: "Install and configure apps on a session host"
-  ms.date: 06/08/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -34,6 +34,7 @@ units:
 - learn.wwl.install-configure-apps-session-host.msix-app-attach
 - learn.wwl.install-configure-apps-session-host.how-msix-app-attach-works
 - learn.wwl.install-configure-apps-session-host.set-up-file-share-for-msix-app-attach
+- learn.wwl.install-configure-apps-session-host.upload-msix-images-azure-netapp-files-azure-virtual-desktop
 - learn.wwl.install-configure-apps-session-host.demonstration-for-users
 - learn.wwl.install-configure-apps-session-host.using-onedrive-sync-app-virtual-desktops
 - learn.wwl.install-configure-apps-session-host.using-microsoft-teams-azure-virtual-desktop
