@@ -1,0 +1,5 @@
+One-to-one remoting resembles the SSH tool that's used on many UNIX and Linux computers in that you use a command prompt on the remote computer. While the implementation of remoting is quite different from SSH, their use cases are fairly similar. In Windows PowerShell, you enter commands on your local computer, which then transmits them to the remote computer where they run. Results are serialized into XML and transmitted back to your computer, which then deserializes them into objects and puts them into the Windows PowerShell pipeline. Unlike SSH, one-to-one remoting isn't built on the Telnet protocol.
+
+To start one-to-one Windows PowerShell remoting, run the **Enter-PSSession** command, combined with its *–ComputerName* parameter. You can use other parameters to perform basic connection customization, which we'll cover in later topics.
+
+After you're connected, the Windows PowerShell prompt changes to indicate the computer to which you're connected. To exit the session and return to the local command prompt, run **Exit-PSSession**. If you close Windows PowerShell while connected, the connection will close on its own.
