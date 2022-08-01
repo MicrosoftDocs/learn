@@ -248,9 +248,9 @@ Next, create a resource group for each environment. This process also grants the
    ```azurepowershell
    $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
-   New-AzADServicePrincipal -AppId $testApplicationRegistrationAppId
+   New-AzADServicePrincipal -AppId $testApplicationRegistration.AppId
    New-AzRoleAssignment `
-      -ApplicationId $testApplicationRegistrationAppId `
+      -ApplicationId $testApplicationRegistration.AppId `
       -RoleDefinitionName Contributor `
       -Scope $testResourceGroup.ResourceId
    ```
@@ -260,9 +260,9 @@ Next, create a resource group for each environment. This process also grants the
    ```azurepowershell
    $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
 
-   New-AzADServicePrincipal -AppId $productionApplicationRegistrationAppId
+   New-AzADServicePrincipal -AppId $productionApplicationRegistration.AppId
    New-AzRoleAssignment `
-      -ApplicationId $productionApplicationRegistrationAppId `
+      -ApplicationId $productionApplicationRegistration.AppId `
       -RoleDefinitionName Contributor `
       -Scope $productionResourceGroup.ResourceId
    ```
@@ -288,8 +288,8 @@ echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 
 ```azurepowershell
 $azureContext = Get-AzContext
-Write-Host "AZURE_CLIENT_ID_TEST: $($testApplicationRegistration.ApplicationId)"
-Write-Host "AZURE_CLIENT_ID_PRODUCTION: $($productionApplicationRegistration.ApplicationId)"
+Write-Host "AZURE_CLIENT_ID_TEST: $($testApplicationRegistration.AppId)"
+Write-Host "AZURE_CLIENT_ID_PRODUCTION: $($productionApplicationRegistration.AppId)"
 Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
 Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 ```

@@ -151,7 +151,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-auto-review'
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-website-auto-review' `
-      -ApplicationObjectId $testApplicationRegistration.Id `
+      -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$githubOrganizationName/$githubRepositoryName:pull-request"
@@ -181,9 +181,9 @@ Next, create a resource group for your website. This process also grants the wor
 1. Run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
    ```azurepowershell
-   New-AzADServicePrincipal -AppId $applicationRegistrationAppId
+   New-AzADServicePrincipal -AppId $applicationRegistration.AppId
    New-AzRoleAssignment `
-      -ApplicationId $applicationRegistrationAppId `
+      -ApplicationId $applicationRegistration.AppId `
       -RoleDefinitionName Contributor
    ```
 
@@ -207,7 +207,7 @@ echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 
 ```azurepowershell
 $azureContext = Get-AzContext
-Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.ApplicationId)"
+Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
 Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
 Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
 ```
