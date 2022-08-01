@@ -16,7 +16,7 @@ You might need to change who's billed for resources in resource groups. You can 
 
 ## Use a consistent naming convention
 
-To help identify and organize your resource groups, use a consistent naming convention. For example, you might have a resource group named "project-infrastructure-resource-group" to denote that it's a resource group for a certain project's infrastructure.
+To help identify and organize your resource groups, use a consistent naming convention. For example, you might have a resource group named _project-infrastructure-resource-group_ to denote that it's a resource group for a certain project's infrastructure.
 
 ## Find resource groups
 
@@ -33,7 +33,7 @@ When you select a resource group, you see all the resources in it. Within the re
 
 ## Use tags to find resources
 
-Tags are name and value pairs that you apply to resources. For example, you can set the name "environment" and its value as "development" for all resources that aren't meant for production. In this way, you ensure that you can easily find related resources and keep them organized.
+Tags are name and value pairs that you apply to resources. For example, you can set the name _environment_ and its value as _development_ for all resources that aren't meant for production. In this way, you ensure that you can easily find related resources and keep them organized.
 
 Many resource types have a **Tags** page in the portal that you can use to add tags.
 
