@@ -270,15 +270,12 @@ public static class PhonewordTranslator
         {
             try
             {
-                PhoneDialer.Open(translatedNumber);
+                if (PhoneDialer.Default.IsSupported)
+                    PhoneDialer.Default.Open(translatedNumber);
             }
             catch (ArgumentNullException)
             {
                 await DisplayAlert("Unable to dial", "Phone number was not valid.", "OK");
-            }
-            catch (FeatureNotSupportedException)
-            {
-                await DisplayAlert("Unable to dial", "Phone dialing not supported.", "OK");
             }
             catch (Exception)
             {
