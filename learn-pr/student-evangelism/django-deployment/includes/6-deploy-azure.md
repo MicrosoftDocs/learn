@@ -30,7 +30,7 @@ The extension is installed.
 
      ![Screenshot showing the setting the deploy subpath setting.](../media/app-service-set-subpath.png)
 
-Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. In Django projects where the *manage.py* file is at the root of the project and this step isn't needed.
+Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. Setting the subpath isn't necessary for Django projects where the *manage.py* file is at the root of the project directory.
 
 ## Deploy the application
 
@@ -48,7 +48,7 @@ Setting the subpath signals to App Service where the *manage.py* file is so that
 
 1. Select **Create App Service Web App...**.
 
-    ![Screenshot showing how to create a new web app.](../media/create-new-database.png)
+    ![Screenshot showing how to create a new web app.](../media/create-new-webapp.png)
 
 1. Provide a unique name for your application.
 
@@ -226,10 +226,18 @@ In the **App Service** extension, right-click the name of your site, and then se
 
 ![Screenshot showing where to select Browse Website.](../media/browse-website.png)
 
-Your website now appears. The default page shows no shelters. To add shelters, go to the Django administration part of the site adding "/admin" the website URL. You'll be asked to authenticate with the superuser name and password you created above. Add a shelter and navigate back to the main page you'll be able to register a dog for that shelter.
+Your website now appears. The default page shows no shelters. To add shelters:
 
-If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
+1. Go to the Django administration part of the site by adding "/admin" the website URL. 
+
+   You'll be asked to authenticate with the superuser name and password you created above. 
+
+1. Add a shelter and navigate back to the main page and you'll be able to register a dog for that shelter.
+
+Here's an example screenshot of the site:
 
 ![Screenshot showing Django admin and how to add shelters.](../media/django-admin-site.png)
+
+If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
 
 You've now deployed a website to Azure!
