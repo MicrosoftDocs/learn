@@ -2,7 +2,7 @@ Behind your sports website is a database, which returns data by executing querie
 
 ## What is caching?
 
-Caching is the act of storing frequently accessed data in memory that is very close to the application that consumes the data. Caching is used to increase performance and reduce the load on your servers. We use Redis to create an in-memory cache that can provide excellent latency and potentially improve performance.
+Caching is the act of storing frequently accessed data in memory very close to the application that consumes the data. Caching is used to increase performance and reduce the load on your servers. We use Redis to create an in-memory cache that can provide excellent latency and potentially improve performance.
 
 ## What is a Redis cache?
 
@@ -33,7 +33,7 @@ Redis keys are also binary-safe strings. Here are some guidelines for choosing k
 
 - Avoid long keys. They take up more memory and require longer lookup times because they have to be compared byte-by-byte. If you want to use a binary blob as the key, generate a unique hash and use that as the key instead. The maximum size of a key is 512 MB, but you should *never* use a key that size.
 - Use keys that can identify the data. For example, "sport:football;date:2008-02-02" would be a better key than "fb:8-2-2". The former is more readable and the extra size is negligible. Find the balance between size and readability.
-- Use a convention. A good one is "object:id", as in "sport:football".
+- Use a convention. A good one is "object:ID", as in "sport:football".
 
 ## How is data stored in a Redis cache?
 
