@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-storage-for-azure-virtual-desktop
 metadata:
   title: Implement and manage storage for Azure Virtual Desktop
   description: "Implement and manage storage for Azure Virtual Desktop"
-  ms.date: 03/30/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -37,6 +37,7 @@ units:
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop.configure-storage-accounts
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop.create-file-shares
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop.configure-disks
+- learn.wwl.implement-manage-storage-for-azure-virtual-desktop.implement-azure-netapp-files
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop.knowledge-check
 - learn.wwl.implement-manage-storage-for-azure-virtual-desktop.summary
 badge:
