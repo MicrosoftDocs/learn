@@ -131,7 +131,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
 
    az ad app federated-credential create \
       --id $applicationRegistrationObjectId \
-      --parameters "{\"name\":\"toy-website-auto-review\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:pull-request\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
+      --parameters "{\"name\":\"toy-website-auto-review\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:pull_request\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
 ::: zone-end
@@ -154,7 +154,7 @@ Later in this Microsoft Learn module, your pull request workflow will create res
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:pull-request"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):pull_request"
    ```
 
 ::: zone-end

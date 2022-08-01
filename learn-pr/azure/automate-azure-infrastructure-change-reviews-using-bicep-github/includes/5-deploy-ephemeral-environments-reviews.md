@@ -51,7 +51,7 @@ Your deployment workflow uses a workload identity and federated credential to au
 In a previous exercise unit in this module, you ran a command to create a federated credential. The policy string looked similar to the following:
 
 ```
-repo:my-github-user/my-repo:pull-request
+repo:my-github-user/my-repo:pull_request
 ```
 
 The `pull-request` near the end of the string specifies that the federated credential works with pull request validaiton workflows.
