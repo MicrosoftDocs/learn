@@ -182,31 +182,3 @@ When the app runs on your device, follow the on-screen instructions displayed on
 >[!Caution]
 > Azure Spatial Anchors uses the internet to save and load the anchor data. Make sure your device is connected to the internet.
 
-## Anchor an experience
-
-In the previous sections, you learned the fundamentals of Azure Spatial Anchors. You used a cube to represent and visualize the parent game object with the attached anchor. In this section, you'll anchor a Mars Rover model by placing it as a child of the **ParentAnchor** object.
-
-1. In the **Hierarchy**, select the **ParentAnchor** object. Then in the **Inspector**, make the following changes in the **Transform** component:
-
-    * Change **Scale X** to **1**.
-    * Change **Scale Z** to **1**.
-
-    This gives the **ParentAnchor** object a shape that lets us use it as a platform.
-
-    :::image type="content" source="../media/016-parent-anchor.png" alt-text="Screenshot of positioning the parent anchor." :::
-
-1. In the **Project** pane, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder. 
-1. Click and hold on the **RoverExplorer_Complete** prefab, and then drag it into the **Hierarchy** and drop it on the **ParentAnchor** object to make it a child of **ParentAnchor**.
-
-    :::image type="content" source="../media/017-add-object.png" alt-text="Screenshot of adding an object to the scene." lightbox="../media/017-add-object.png":::
-
-1. In the **RoverExplorer_Complete**'s **Transform** component, click the three-dot button and then select **Reset** to move **RoverExplore_Complete** to the origin of **ParentAnchor**.
-
-    :::image type="content" source="../media/019-rover-transform.png" alt-text="Screenshot of select the Reset command to mode the object to the origin of its parent." :::
-
-1. Select the Move tool, and then move **RoverExplorer_Complete** up on its Y axis so that it's sitting on top of **ParentAnchor**.
-
-    If you rebuild the project and deploy the app to your device, you can reposition the Rover Explorer model by moving the resized cube.
-
-    > [!Tip]
-    > There are several approaches that you can use for repositioning: the use of a repositioning object (such as the cube used in this tutorial), a button to toggle a bounds control that surrounds the experience, and position and rotation gizmos.
