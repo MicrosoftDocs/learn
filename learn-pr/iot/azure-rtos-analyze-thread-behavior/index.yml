@@ -8,11 +8,8 @@ metadata:
   ms.author: pacorte
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-
 title: Azure RTOS ThreadX — Analyze thread behavior with timing facilities
-
 summary: Now that you have created your first Hello World project, have you thought about analyzing the behavior of your system? If so, this is the module you should investigate.
-
 abstract:  | 
   In this module, you will:
   - Explore the features and uses of Application Timers and the Thread Info Get services.
@@ -21,27 +18,21 @@ abstract:  |
   - Use the internal system clock function to collect timing data for each cycle of the activities performed by the two threads.
   - Use an Application Timer to compute and display the total number of cycles each thread completed, the average time for each cycle, and selected values provided by the thread_performance_info_get service.
   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
-
 prerequisites: |
-  - [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+  - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
-  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
-
+  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
 iconUrl: /learn/achievements/iot/azure-rtos-analyze-thread-behavior.svg
-
 levels:
 - beginner
-
 roles:
 - developer
-
 products:
 - azure
 - azure-iot
-- azure-iot-hub
-
+- azure-rtos
 subjects:
-- development-tools
+- iot
 units:
 - learn.iot.azure-rtos-analyze-thread-behavior.introduction
 - learn.iot.azure-rtos-analyze-thread-behavior.project-analyze
@@ -51,6 +42,5 @@ units:
 - learn.iot.azure-rtos-analyze-thread-behavior.exercise-build-debug
 - learn.iot.azure-rtos-analyze-thread-behavior.knowledge-check
 - learn.iot.azure-rtos-analyze-thread-behavior.summary
-
 badge:
   uid: learn.iot.azure-rtos-analyze-thread-behavior.badge
