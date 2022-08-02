@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-exchange-online-use-windows-powershell.connect-exchange-online
+title: Connect to Exchange Online by using Windows PowerShell
+metadata:
+  title: Connect to Exchange Online by using Windows PowerShell
+  description: "Connect to Exchange Online by using Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-connect-exchange-online.md)]

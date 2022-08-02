@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.create-run-scripts-scheduled-tasks
+title: Create and run Windows PowerShell scripts as scheduled tasks
+metadata:
+  title: Create and run Windows PowerShell scripts as scheduled tasks
+  description: "Create and run Windows PowerShell scripts as scheduled tasks"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-run-scripts-scheduled-tasks.md)]
