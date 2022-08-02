@@ -39,7 +39,7 @@ quiz:
     - content: "Use Azure resource locks."
       isCorrect: false
       explanation: "Incorrect. Azure resource locks prevent resources from being accidentally deleted or changed."
-  - content: "Which application of Microsoft Purview is used to capture metadata about enterprise data, to identify and classify sensitive data?"
+  - content: "Which application in the Microsoft Purview governance portal is used to capture metadata about enterprise data, to identify and classify sensitive data?"
     choices:
     - content: "Data Catalog."
       isCorrect: false
