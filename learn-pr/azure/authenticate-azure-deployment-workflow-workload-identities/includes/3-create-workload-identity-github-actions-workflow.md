@@ -4,6 +4,9 @@ Now that you understand the concept of a workload identity, you might wonder how
 
 In the previous unit, you learned that workload identities require creating an *application registration* in Azure Active Directory (Azure AD).
 
+> [!NOTE]
+> Creating and modifying application registrations requires that you have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
+
 When you create an application registration, you need to specify a display name. The display name is a human-readable name that describes the application registration.
 
 > [!TIP]
