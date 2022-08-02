@@ -6,7 +6,6 @@ You'll need your remote session name to identify the graphics performance counte
 
 1.  Open the Windows command prompt from your remote session.
 2.  Run the **qwinsta** command and find your session name.
-    
      -  If your session is hosted in a multi-session virtual machine (VM): Your instance of each counter is suffixed by the same number that suffixes your session name, such as "rdp-tcp 37."
      -  If your session is hosted in a VM that supports virtual Graphics Processing Units (vGPU): Your instance of each counter is stored on the server instead of in your VM. Your counter instances include the VM name instead of the number in the session name, such as "Win8 Enterprise VM."
 
