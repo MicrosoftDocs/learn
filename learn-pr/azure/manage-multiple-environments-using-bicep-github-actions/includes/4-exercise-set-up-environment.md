@@ -180,13 +180,13 @@ Next, create two workload identities in Azure AD: one for your test environment 
       -ApplicationObjectId $testApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:environment:Test"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Test"
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-website-environments-test-branch' `
       -ApplicationObjectId $testApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
 1. Run the code below, which follows a similar process for the production environment:
@@ -198,13 +198,13 @@ Next, create two workload identities in Azure AD: one for your test environment 
       -ApplicationObjectId $productionApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:environment:Production"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Production"
    New-AzADAppFederatedIdentityCredential `
       -Name 'toy-website-environments-production-branch' `
       -ApplicationObjectId $productionApplicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
-      -Subject "repo:$githubOrganizationName/$githubRepositoryName:ref:refs/heads/main"
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
 ::: zone-end
@@ -248,11 +248,11 @@ Next, create a resource group for each environment. This process also grants the
    ```azurepowershell
    $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus
 
-   New-AzADServicePrincipal -AppId $testApplicationRegistration.AppId
+   New-AzADServicePrincipal -AppId $($testApplicationRegistration.AppId)
    New-AzRoleAssignment `
-      -ApplicationId $testApplicationRegistration.AppId `
+      -ApplicationId $($testApplicationRegistration.AppId) `
       -RoleDefinitionName Contributor `
-      -Scope $testResourceGroup.ResourceId
+      -Scope $($testResourceGroup.ResourceId)
    ```
 
 1. Run a similar process to create the production environment's resource group:
@@ -260,11 +260,11 @@ Next, create a resource group for each environment. This process also grants the
    ```azurepowershell
    $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
 
-   New-AzADServicePrincipal -AppId $productionApplicationRegistration.AppId
+   New-AzADServicePrincipal -AppId $($productionApplicationRegistration.AppId)
    New-AzRoleAssignment `
-      -ApplicationId $productionApplicationRegistration.AppId `
+      -ApplicationId $($productionApplicationRegistration.AppId) `
       -RoleDefinitionName Contributor `
-      -Scope $productionResourceGroup.ResourceId
+      -Scope $($productionResourceGroup.ResourceId)
    ```
 
 ::: zone-end

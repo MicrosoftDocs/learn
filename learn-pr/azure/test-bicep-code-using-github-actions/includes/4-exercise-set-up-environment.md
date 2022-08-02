@@ -206,7 +206,7 @@ Next, create a resource group for your website. This process also grants the wor
    New-AzRoleAssignment `
       -ApplicationId $($applicationRegistration.AppId) `
       -RoleDefinitionName Contributor `
-      -Scope $resourceGroup.ResourceId
+      -Scope $($resourceGroup.ResourceId)
    ```
 
 ::: zone-end
