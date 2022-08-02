@@ -15,22 +15,22 @@ FSlogix supports four rule types:
 
 **Hiding Rule - hides the specified items using specified criteria.**
 
-:::image type="content" source="../media/manage-hiding-rules-1-35cab33b.png" alt-text="An image of Hiding Rule - hides the specified items using specified criteria.":::
+:::image type="content" source="../media/manage-hiding-rules-1-35cab33b.png" alt-text="Screenshot of Hiding Rule hiding the specified items using specified criteria.":::
 
 
 **Redirect Rule - causes the specified item to be redirected as defined.**
 
-:::image type="content" source="../media/manage-hiding-rules-2-d073dfd6.png" alt-text="An image of Redirect Rule - causes the specified item to be redirected as defined.":::
+:::image type="content" source="../media/manage-hiding-rules-2-d073dfd6.png" alt-text="Screenshot of Redirect Rule causing the specified item to be redirected as defined.":::
 
 
 **App Container Rule - redirects the specified content into a VHD.**
 
-:::image type="content" source="../media/manage-hiding-rules-3-775a14ba.png" alt-text="An image of App Container Rule - redirects the specified content into a VHD.":::
+:::image type="content" source="../media/manage-hiding-rules-3-775a14ba.png" alt-text="Screenshot of App Container Rule redirecting the specified content into a VHD.":::
 
 
 **Specify Value Rule - assigns a value for the specified item.**
 
-:::image type="content" source="../media/manage-hiding-rules-4-807083c5.png" alt-text="An image of Specify Value Rule - assigns a value for the specified item.":::
+:::image type="content" source="../media/manage-hiding-rules-4-807083c5.png" alt-text="Screenshot of Specify Value Rule assigning a value for the specified item.":::
 
 
 ## Create a new Rule Set

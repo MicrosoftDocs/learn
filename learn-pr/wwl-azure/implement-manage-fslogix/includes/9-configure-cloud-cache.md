@@ -19,51 +19,11 @@ All settings are applied to **HKLM\\SOFTWARE\\FSLogix\\Profiles.**
 
 Add or verify:
 
-:::row:::
-  :::column:::
-    **Configuring Cloud Cache for Profile Container**
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Registry Value
-  :::column-end:::
-  :::column:::
-    Type
-  :::column-end:::
-  :::column:::
-    Value
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CCDLocations
-  :::column-end:::
-  :::column:::
-    REG\_SZ / MULTI\_SZ
-  :::column-end:::
-  :::column:::
-    type=smb,connectionString=&lt;\\Location1\\Folder1&gt;;type=smb,connectionString=&lt;\\Location2\\folder2&gt;
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Enabled
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-:::row-end:::
-
+| **Configuring Cloud Cache for Profile Container** |                     |                                                                                                 |
+| ------------------------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------- |
+| Registry Value                                    | Type                | Value                                                                                           |
+| CCDLocations                                      | `REG_SZ / MULTI_SZ` | `type=smb,connectionString=<\Location1\Folder1>;type=smb,connectionString=<\Location2\folder2>` |
+| Enabled                                           | DWORD               | 1                                                                                               |
 
 Other considerations include:
 
@@ -80,43 +40,12 @@ Remove any setting for VHDLocations.
 
 Add or verify the values below:
 
-:::row:::
-  :::column:::
-    **Registry Value**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Value**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CCDLocations
-  :::column-end:::
-  :::column:::
-    REG\_SZ / MULTI\_SZ
-  :::column-end:::
-  :::column:::
-    type=smb,connectionString=&lt;\\Location1\\Folder1&gt;;type=smb,connectionString=&lt;\\Location2\\folder2&gt;
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Enabled
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-:::row-end:::
-
+| **Registry Value** | **Type**            | **Value**                                                                                       |
+| ------------------ | ------------------- | ----------------------------------------------------------------------------------------------- |
+| CCDLocations       | `REG_SZ / MULTI_SZ` | `type=smb,connectionString=<\Location1\Folder1>;type=smb,connectionString=<\Location2\folder2>` |
+| Enabled            | DWORD               | 1                                                                                               |
 
  -  `<Location for Cloud Cache Provider`
- -  Each provider is separated by `;`
 
 ## Configure Cloud Cache for page blobs
 
@@ -130,40 +59,10 @@ Remove any settings for VHDLocations.
 
 Add or verify the values below:
 
-:::row:::
-  :::column:::
-    **Registry Value**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Value**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CCDLocations
-  :::column-end:::
-  :::column:::
-    REG\_SZ / MULTI\_SZ
-  :::column-end:::
-  :::column:::
-    type=azure,connectionString="DefaultEndpointsProtocol=https;AccountName=;AccountKey=;EndpointSuffix="
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Enabled
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-:::row-end:::
-
+| **Registry Value** | **Type**            | **Value**                                                                                               |
+| ------------------ | ------------------- | ------------------------------------------------------------------------------------------------------- |
+| CCDLocations       | `REG_SZ / MULTI_SZ` | `type=Azure,connectionString="DefaultEndpointsProtocol=https;AccountName=;AccountKey=;EndpointSuffix="` |
+| Enabled            | DWORD               | 1                                                                                                       |
 
  -  `<Location for Cloud Cache Provider>`
  -  Each provider is separated by;``

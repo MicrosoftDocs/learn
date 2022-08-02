@@ -27,7 +27,7 @@ To get started, you need to set up an Azure NetApp Files account.
     az account set --subscription <subscriptionID>
     az provider register --namespace Microsoft.NetApp --wait
     ```
-6.  In the left side of the window, select **All services**. Enter *Azure NetApp Files* into the search box that appears at the top of the menu. :::image type="content" source="../media/azure-netapp-files-search-box-3f306e08.png" alt-text="Screen capture of Azure NetApp Files search.":::
+6.  In the left side of the window, select **All services**. Enter *Azure NetApp Files* into the search box that appears at the top of the menu. :::image type="content" source="../media/azure-netapp-files-search-box-3f306e08.png" alt-text="Screenshot of Azure NetApp Files search entry.":::
     
 7.  Select **Azure NetApp Files** in the search results, then select **Create**.
 8.  Select the **Add** button.

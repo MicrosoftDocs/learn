@@ -17,259 +17,34 @@ The configuration of Office Container is accomplished through registry settings 
 
 These settings are required to enable Office Container and to specify the location for the profile VHD to be stored. The minimum required settings to enable Office Container is:
 
-:::row:::
-  :::column:::
-    **Value**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Configured Value**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Enabled (required setting)
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    0: Profile Containers disabled. 1: Profile Containers enabled
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    VHDLocations (required setting)
-  :::column-end:::
-  :::column:::
-    MULTI\_SZ or REG\_SZ
-  :::column-end:::
-  :::column:::
-    &lt;Profile Path&gt;
-  :::column-end:::
-  :::column:::
-    A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one will be created in the first listed location. If the VHD path doesn't exist, it will be created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved. Variables are %username%, %userdomain%, %sid%, %osmajor%, %osminor%, %osbuild%, %osservicepack%, %profileversion%, and any environment variable available at time of use. When specified as a REG\_SZ value, multiple locations can be separated with a semi-colon.
-  :::column-end:::
-:::row-end:::
+| **Value**                       | **Type**             | **Configured Value** | **Description**                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------------- | -------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Enabled (required setting)      | DWORD                | 1                    | 0: Profile Containers disabled. 1: Profile Containers enabled                                                                                                                                                                                                                                                                                                                                              |
+| VHDLocations (required setting) | MULTI\_SZ or REG\_SZ |                      | A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one will be created in the first listed location. If the VHD path doesn't exist, it will be created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved. When specified as a REG\_SZ value, multiple locations can be separated with a semi-colon. |
+
+:::image type="content" source="../media/office-container-config-1-7b5ef71f.png" alt-text="Screenshot showing the Office Containers Registry Configuration.":::
 
 
-:::image type="content" source="../media/office-container-config-1-7b5ef71f.png":::
-
-
-These settings are often helpful when configuring Office Container but aren't required.
-
-:::row:::
-  :::column:::
-    **Value**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Configured Value**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    DeleteLocalProfileWhenVHDShouldApply
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    0: no deletion. 1: delete local profile if exists and matches the profile being loaded from VHD. NOTE: Use caution with this setting. When the FSLogix Profiles system determines a user should have a FSLogix profile, but a local profile exists, Profile Container permanently deletes the local profile. The user will then be signed in with an FSLogix profile.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    FlipFlopProfileDirectoryName
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    When set to '1' the SID folder is created as "%username%*%sid%" instead of the default "%sid%*%username%". This setting has the same effect as setting *SIDDirNamePattern* = "%username%*%sid%" and SIDDirNameMatch = "%username%*%sid%".
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    PreventLoginWithFailure
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    If set to one Profile Container will load FRXShell if there's a failure attaching to, or using an existing profile VHD(X). The user will receive the FRXShell prompt - default prompt to call support, and the users only option will be to sign out.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    PreventLoginWithTempProfile
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    If set to 1 Profile Container will load FRXShell if it's determined a temp profile has been created. The user will receive the FRXShell prompt - default prompt to call support, and the users only option will be to sign out.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeOneDrive
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    1: OneDrive cache is redirected to the container. 0: OneDrive cache isn't redirected to the container.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeOneNote
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    1: OneNote notebook files are redirected to the container. 0: OneNote notebook files aren't redirected to the container.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeOneNote\_UWP
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    1: OneNote UWP notebook files are redirected to the container. 0: OneNote UWP notebook files aren't redirected to the container.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeOutlook
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    1: Outlook data is redirected to the container. 0: Outlook data isn't redirected to the container.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeOutlookPersonalization
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    1: Outlook personalization data is redirected to the container. 0: Outlook personalization data isn't redirected to the container.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeSharepoint
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    1: Sharepoint data is redirected to the container. 0: Sharepoint data isn't redirected to the container.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeSkype
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    1
-  :::column-end:::
-  :::column:::
-    1: Skype for Business Global Address List is redirected to the container. 0: Skype for Business Global Address List isn't redirected to the container.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    IncludeTeams
-  :::column-end:::
-  :::column:::
-    DWORD
-  :::column-end:::
-  :::column:::
-    0
-  :::column-end:::
-  :::column:::
-    1: Teams data is redirected to the container. 0: Teams data isn't redirected to the container. NOTE: User will be required to sign in to teams at the beginning of each session.
-  :::column-end:::
-:::row-end:::
-
-
-## Set up Include and Exclude User Groups
+## Set up Include and Exclude User Groups<br>
 
 There are often users, such as local administrators that have profiles that should remain local. During installation, four user groups are created to manage users who's profiles are included and excluded from Profile Container and Office Container redirection.
 
-:::image type="content" source="../media/fslogix-excludegroups-3-cec6f3f2.png" alt-text="View of the exclude lists for folder containers.":::
+:::image type="content" source="../media/fslogix-excludegroups-3-cec6f3f2.png" alt-text="Screenshot of the exclude lists for folder containers.":::
 
 
 By default **Everyone** is added to the **FSLogix ODFC Include List** group.
 
-:::image type="content" source="../media/office-container-include-4-3e9f0e89.png" alt-text="View of the FSLogix include list properties for Outlook data folder containers.":::
+:::image type="content" source="../media/office-container-include-4-3e9f0e89.png" alt-text="Screenshot of the FSLogix include list properties for Outlook data folder containers.":::
 
 
 Adding a user to the **FSLogix ODFC Exclude List** group means that the FSLogix agent won't attach a FSLogix office container for the user. In the case where a user is a member of both the exclude and include groups, exclude takes priority.
 
-:::image type="content" source="../media/office-container-exclude-5-f756ec43.png" alt-text="View of the exclude list for members in the group.":::
+:::image type="content" source="../media/office-container-exclude-5-f756ec43.png" alt-text="Screenshot of the exclude list for members in the group.":::
 
 
 Office Containers is now configured and ready to be used. To verify Office Container is working, sign in as a user included in the **Include List** group. Using **File Manager**, navigate to the location specified in VHDLocations. Verify a folder, with the user name and SID has been created.
 
-:::image type="content" source="../media/validate-container-6-3c437172.png" alt-text="View of Office Container in the ProfileFolder .":::
+:::image type="content" source="../media/validate-container-6-3c437172.png" alt-text="Screenshot of the Office Container in the ProfileFolder .":::
 
 
 ## Configure third-party exclusions
@@ -280,15 +55,15 @@ When the FSLogix Office Container is used with any other profile solution, exclu
 
 Exclude profile solution (except FSLogix Profile Container) syncing for the directories (and subdirectories) seen below:
 
- -  *Users&lt;Username&gt;&lt;OneDrive folder name&gt;*
+ -  `Users<Username><OneDrive folder name>`
      -  The folder name depends on your Office 365 subscription, so it isn't a fixed name. If you have a question what this folder name is, set `HKLM\Software\FSLogix\Logging\LoggingEnabled = 2` and sign out and back on.
-     -  Look in *c:\\programdata\\fslogix\\logs\\odfc&lt;find file with todays date&gt;*. In the log file, search for "OneDrive folder is" and you'll see which folder needs to be excluded.
- -  *Users&lt;Username&gt;\\AppData\\Local\\Microsoft\\OneDrive*
+     -  Look in`c:\programdata\fslogix\logs\odfc<find file with todays date>`. In the log file, search for "OneDrive folder is" and you'll see which folder needs to be excluded.
+ -  `Users<Username>\AppData\Local\Microsoft\OneDrive`
 
-These exclusions fix the following warning found in the FSLogix Profile log when users **logon: "&lt;name&gt;** isn't your original OneDrive folder"
+These exclusions fix the following warning found in the FSLogix Profile log when users **logon: "`<name>`** isn't your original OneDrive folder"
 
 ### Outlook
 
 Exclude the directory (and subdirectories) listed below:
 
- -  **\\Users\\&lt;username&gt;\\AppData\\Local\\Microsoft\\Outlook**
+ -  `\Users\<username>\AppData\Local\Microsoft\Outlook`
