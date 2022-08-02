@@ -2,7 +2,7 @@ At this point, you can build the *Space Game* web project through the pipeline.
 
 But where do the results of the build go? Right now, the output of the build remains on the temporary build server. Mara needs a way to hand off this build to Amita so she can begin testing.
 
-You can store build artifacts in Azure Pipelines so they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up-to-date.
+You can store build artifacts in Azure Pipelines so that they're later available to others on your team after the build completes. That's what you'll do here. As a bonus, you'll also refactor the build configuration to use variables to make the configuration easier to read and keep up to date.
 
 > [!NOTE]
 > Azure Pipelines lets you automatically deploy the built app to a testing or production environment running in the cloud or in your datacenter. For now, Mara's goal is only to produce builds that she can hand off to QA by using their existing processes.
@@ -17,7 +17,7 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
     This version of *azure-pipelines.yml* looks like the previous version, but it adds two additional tasks.
 
-    The first task uses the `DotNetCoreCLI@2` task to *publish*, or package, the app's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
+    The first task uses the `DotNetCoreCLI@2` task to *publish* or package the app's build results (including its dependencies) into a folder. The `zipAfterPublish` argument specifies to add the built results to a .zip file.
 
     The second task uses the `PublishBuildArtifacts@1` task to publish the .zip file to Azure Pipelines. The `condition` argument specifies to run the task only when the previous task succeeds. `succeeded()` is the default condition, so you don't need to specify it. But we show it here to show its use.
 
@@ -36,7 +36,7 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
 1. When the pipeline completes, go back to the summary for the build.
 
-1. Under **Related** there's **1 published**.
+1. Under **Related**, there's **1 published**.
 
     :::image type="content" source="../media/7-artifacts.png" alt-text="Screenshot of the build summary. Details include the repository and version, the time started and elapsed, and a link to the published build artifact.":::
 
@@ -54,12 +54,12 @@ In .NET, you can package your app as a .zip file. You can then use the built-in 
 
 Mara steps back to examine her work. The build configuration does what she needs, but she wants to ensure Andy and others can easily help keep it up-to-date and extend it.
 
-Variables allow you to define values one time and refer to those values throughout your pipeline. Azure Pipelines replaces each variable with its current value when the pipeline runs.
+Variables allow you to define values once and refer to those values throughout your pipeline. Azure Pipelines replaces each variable with its current value when the pipeline runs.
 
 Just like in other programming languages, variables let you do things like:
 
 * Define values that might change between runs of your pipeline.
-* Store information that's repeated throughout your pipeline, like a version number or a file path, in one place. That way, you don't need to update all occurrences when your needs change.
+* Store information that's repeated throughout your pipeline, like a version number or a file path, in one place. That way, you don't need to update all occurrences when yours need to change.
 
 Azure Pipelines provides many built-in variables. These variables describe aspects of the build process, like the build identifier and the directory names where your software is built and staged.
 

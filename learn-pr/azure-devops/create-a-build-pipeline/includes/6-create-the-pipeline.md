@@ -2,7 +2,7 @@ At this point, Mara has defined a build configuration for the *Space Game* websi
 
 As you saw, Mara used a YAML file to define the build. When you create a pipeline, the process prompts you for your YAML file. The project doesn't have this file yet.
 
-When you don't provide an initial YAML file for your project, Azure Pipelines can create one for you based on your app type. Here, you'll build an ASP.NET Core app, but Azure Pipelines provides starter build configurations for other project types as well, including Java, Go, and more.
+When you don't provide an initial YAML file for your project, Azure Pipelines can create one for you based on your app type. Here, you'll build an ASP.NET Core app, but Azure Pipelines also provides starter build configurations for other project types, including Java, Go, and more.
 
 ## Create the pipeline
 
@@ -10,7 +10,7 @@ When you don't provide an initial YAML file for your project, Azure Pipelines ca
 
 1. Either from the project page or from the left pane, select **Pipelines**.
 
-1. Select **Create Pipeline**.
+1. Select **New pipeline**.
 
 1. On the **Connect** tab, select **GitHub**.
 
@@ -83,7 +83,7 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     The `demands` section beneath `pool` specifies that you need npm, the Node.js package manager, installed on the build system.
 
-    Under the `steps` section, you see the build tasks that maps to each of the script commands that we identified earlier.
+    Under the `steps` section, you see the build tasks that map to each of the script commands that we identified earlier.
 
     Azure Pipelines provides built-in build tasks that map to many common build activities. For example, the `DotNetCoreCLI@2` task maps to the `dotnet` command-line utility. The pipeline uses `DotNetCoreCLI@2` two times: one time to restore, or install, the project's dependencies, and one time to build the project.
 
@@ -97,15 +97,15 @@ In practice, you might add build tasks one at a time, push up your changes, and 
 
     These elements are built-in variables that the system provides for use in your pipelines:
 
-    * `$(Build.DefinitionName)` specifies the name of the build pipeline. For example, "SpaceGame-Web-CI."
+    * `$(Build.DefinitionName)` is the name of the build pipeline. For example, "SpaceGame-Web-CI."
     * `$(Build.BuildId)` is a numeric identifier for the completed build, like 115.
-    * `$(Build.BuildNumber)` is name of the completed build. You can configure the format, but by default the build number includes the current date followed by the build number for that day. An example build number is "20190329.1."
+    * `$(Build.BuildNumber)` is the name of the completed build. You can configure the format, but by default, the build number includes the current date followed by the build number for that day. An example build number is "20190329.1."
 
     You can also define your own variables, which you'll do soon.
 
-    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
+    You might have also noticed the `UseDotNet@2` task, which is the first build step. Mara remembered that her build script didn't install the required build tools. Although the build agent comes with several .NET SDK versions, this task lets her easily specify the version she needs to use on the build agent.
 
-1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to the steps you did earlier.
+1. From the integrated terminal, to add *azure-pipelines.yml* to the index, commit the change, and push the change up to GitHub, run the following Git commands. These steps are similar to the steps you performed earlier.
 
     > [!TIP]
     > Before you run these Git commands, remember to save *azure-pipelines.yml*.

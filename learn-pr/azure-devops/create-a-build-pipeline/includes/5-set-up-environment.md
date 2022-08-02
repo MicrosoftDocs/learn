@@ -2,7 +2,7 @@ In this section, you'll ensure that your Microsoft Azure DevOps organization is 
 
 The modules in this learning path form a progression in which you follow the Tailspin web team through its DevOps journey.
 
-This learning path also builds on the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path. There, by using the Basic process, you set up your Azure DevOps organization and created a task backlog on Azure Boards.
+This learning path also builds on the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path. There, you used the Basic process to set up your Azure DevOps organization and created a task backlog on Azure Boards.
 
 ## Get the Azure DevOps project
 
@@ -34,7 +34,7 @@ On the Azure DevOps Demo Generator site, to run the template, do these steps:
 
 ## Move the work item to Doing
 
-In this section, you'll assign a work item to yourself on Azure Boards that relates to this module. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint, or work iteration.
+In this section, you'll assign a work item to yourself on Azure Boards that relates to this module. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team the visibility into what you're working on and how much work is left. It also helps the team enforce Work in Progress limits, or WIP limits, so the team doesn't take on too much work at any given time.
 
@@ -57,7 +57,7 @@ To set up the work item:
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
 
-1. Select the **Stabilize the build server** work item in the bottom of the list, and assign this work item to yourself:
+1. Select the **Stabilize the build server** work item at the bottom of the list, and assign this work item to yourself:
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 

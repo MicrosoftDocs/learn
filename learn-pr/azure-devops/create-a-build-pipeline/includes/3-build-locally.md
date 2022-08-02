@@ -1,12 +1,12 @@
 Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
 
-Mara is going to do exactly that and, by following the procedures, you can do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run apps. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
+Mara is going to do exactly that, and by following the procedures, you can do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run apps. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
 
 ## Prepare Visual Studio Code
 
 First, you'll set up Visual Studio Code so you can build the website locally and work with source files.
 
-Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all from one place.
+Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all in one place.
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
@@ -67,7 +67,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 ### Clone your fork locally
 
-Now that you have a copy of the *Space Game* web project in your GitHub account, you can download, or *clone*, a copy to your computer so you can work with it locally.
+Now that you have a copy of the *Space Game* web project in your GitHub account, you can download or *clone* a copy to your computer so you can work with it locally.
 
 A clone, like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
 
@@ -177,7 +177,7 @@ Now that you have the web app, you can build and run it locally.
 
 ## Verify the application is running
 
-In development mode, the *Space Game* web site is configured to run on port 5000.
+In development mode, the *Space Game* website is configured to run on port 5000.
 
 From a new browser tab, to see the running app, navigate to `http://localhost:5000`.
 
@@ -196,4 +196,4 @@ You can interact with the page, including the leaderboard. When you select a pla
 
 :::image type="content" source="../media/3-space-game-leaderboard-profile.png" alt-text="Screenshot of a web browser showing the Space Game leaderboard.":::
 
-When you're finished, return to the terminal window, and to stop the running app select Ctrl+C.
+When you're finished, return to the terminal window, and to stop the running app, select Ctrl+C.

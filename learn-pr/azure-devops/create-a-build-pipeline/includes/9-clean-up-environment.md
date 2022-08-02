@@ -9,7 +9,7 @@ You'll now move the work item you assigned to yourself earlier in this module, *
 
 In practice, "Done" often means that your users have working software. Here, you'll mark this work as complete because you have a working build system on Azure Pipelines.
 
-At the end of each Sprint, or work iteration, you and your team might hold a retrospective meeting. At these meetings, you share the work you completed, what went well during the Sprint, and what could be improved.
+At the end of each Sprint or work iteration, you and your team might hold a retrospective meeting. At these meetings, you share the work you completed, what went well during the Sprint, and what could be improved.
 
 To complete the work item:
 
@@ -48,7 +48,7 @@ This option deletes your Azure DevOps project, including what's on Azure Boards 
 To delete the project:
 
 1. In Azure DevOps, go to your project. Earlier, we recommended that you name the project *Space Game - web - Pipeline*.
-1. Select **Project settings** in the lower corner.
+1. Select **Project settings** in the bottom left corner.
 1. In the **Project details** area, scroll to the bottom, and select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="Screenshot of Azure DevOps showing the location of the Delete button.":::

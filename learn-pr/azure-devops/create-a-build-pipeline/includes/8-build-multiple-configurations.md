@@ -1,4 +1,4 @@
-In the previous exercises, you implemented a pipeline that builds the *Space Game* website. You started with a script that performs each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a *.zip* file that contains the compiled web app.
+In the previous exercises, you implemented a pipeline that builds the *Space Game* website. You started with a script that performed each build action and mapped each action to its corresponding pipeline task. The output of the pipeline is a *.zip* file that contains the compiled web app.
 
 In this exercise, you'll use a template to define build tasks that can build any configuration defined in the project file. Templates let you define your logic one time and then reuse it several times. Templates combine the content of multiple YAML files into a single pipeline.
 
@@ -24,13 +24,13 @@ Consider the following tasks that build and publish the *Space Game* web project
 
 To build the Debug configuration, you might repeat these two tasks, but replace `Release` with `Debug`.
 
-Doing so would give you the result you're looking for, but what happens when your build becomes more complex or your requirements change? You'd need to manually locate and change both variations of each build task. After you added the additional build requirements, you'd also need to create two tasks, one for the Debug configuration and one for Release, to satisfy those requirements.
+Doing so would give you the result you're looking for, but what happens when your build becomes more complex, or your requirements change? You'd need to manually locate and change both variations of each build task. After you added the additional build requirements, you'd also need to create two tasks, one for the Debug configuration and one for Release, to satisfy those requirements.
 
 A better solution is to use a template.
 
 ## What are templates?
 
-A *template* lets you define common build tasks one time and reuse those tasks multiple times.
+A *template* lets you define common build tasks once and reuse those tasks multiple times.
 
 You'll call a template from the parent pipeline as a build step. You can pass parameters into a template from the parent pipeline.
 
@@ -38,7 +38,7 @@ Mara can define tasks to build and publish the app as a template, and then apply
 
 ## Define the template
 
-Remember that a template lets you to define common build tasks one time and reuse those tasks multiple times. You call a template from its parent template as a build step, and pass parameters into a template from the parent pipeline.
+Remember that a template lets you define common build tasks one time and reuse those tasks multiple times. You call a template from its parent template as a build step and pass parameters into a template from the parent pipeline.
 
 You'll now create a template that can build any configuration that's defined in the project file.
 
@@ -50,7 +50,7 @@ You'll now create a template that can build any configuration that's defined in 
 
     In practice, you can put a template file in any location. You don't need to put them in the *templates* directory.
 
-1. In Visual Studio Code, select **File > New File**. Next, to save the blank file as *build.yml* in your project's *templates* directory, select **File > Save**. (For example, *~/mslearn-tailspin-spacegame-web/templates*.)
+1. In Visual Studio Code, select **File > New File**. Next, to save the blank file as *build.yml* in your project's *templates* directory, select **File > Save**. An example would be *~/mslearn-tailspin-spacegame-web/templates*.
 
     > [!IMPORTANT]
     > As before, in Windows, in the **Save as type** list, select **YAML**.

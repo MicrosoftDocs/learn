@@ -7,8 +7,8 @@ Here are some notes that Mara collected when she talked to Andy, the dev lead:
   * npm, the package manager for Node.js
   * NuGet, the package manager for .NET
   * .NET SDK
-* The project uses Sass to make it easier to author cascading style sheets (CSS) files.
-* The project uses gulp to minify JavaScript and CSS files.
+* The project uses Syntactically Awesome Style Sheets (Sass) to make it easier to author cascading style sheets (CSS) files.
+* The project uses the gulp toolkit to minify JavaScript and CSS files.
 
 A minified asset excludes unneeded data (like whitespace) and shortens variable names to help it download faster.
 
@@ -17,7 +17,7 @@ Here are the steps that happen during the build process:
 1. To install the Node.js packages defined in `package.json`, run `npm install`.
 1. To convert Sass (.scss) files to CSS (.css) files, run `node-sass`.
 1. To minify JavaScript and CSS files, run `gulp`.
-1. To help the QA team identify the build number and date, print build info to the `wwwroot` directory.
+1. To help the QA team identify the build number and date, print build information to the `wwwroot` directory.
 1. To install the project's dependencies, run `dotnet restore`.
 1. To build the app under both Debug and Release configurations, run `dotnet build`.
 1. To package the application as a .zip file and copy the results to a network share for the QA team to pick up, run `dotnet publish`.
@@ -111,7 +111,7 @@ Mara can use one of two methods to configure her pipeline:
 
 * A YAML file: YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your app's source code.
 
-Mara considers her options. She's used YAML previously to define similar build tasks and configuration. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
+Mara considers her options. She's used YAML previously to define similar build tasks and configurations. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 
 _Pipeline as code_ refers to the concept of expressing your build definitions as code. In this short video, Abel explains the concept of pipeline as code:
 
