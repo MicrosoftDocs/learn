@@ -41,7 +41,7 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Update the *deploy-production* job to also depend on the *built* and *lint* jobs.
 
-   :::code language="yaml" source="code/5-workflow.yml" range="32-45" highlight="4-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="34-41" highlight="4-7" :::
 
    Because the production deployment depends on the test deployment, you don't strictly need to do this. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
 

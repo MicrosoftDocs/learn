@@ -129,7 +129,7 @@ You need to securely store your Azure SQL logical server's administrator passwor
 
 1. Repeat the process in the *deploy-production* definition, with the production environment's values:
 
-   :::code language="yaml" source="code/7-workflow.yml" range="36-53" highlight="11, 17" :::
+   :::code language="yaml" source="code/7-workflow.yml" range="36-53" highlight="12, 18" :::
 
 1. Save your changes to the file.
 
