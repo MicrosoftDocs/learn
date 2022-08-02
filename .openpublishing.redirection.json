@@ -16899,6 +16899,31 @@
       "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/inference-pipeline.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/8-configure-profile-containers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/10-configure-profile-containers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/9-manage-rule-sets-application-mask.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/12-manage-rule-sets-application-mask",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/13-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/14-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/7-configure-cloud-cache.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/9-configure-cloud-cache",
+      "redirect_document_id": true
     }
   ]
 }
