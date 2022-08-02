@@ -34,9 +34,9 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 
    This file will represent all of the deployment activities that run for each of your environments.
 
-1. Paste the following workflow name, trigger, inputs, and secrets into the file:
+1. Paste the following workflow name, trigger, permissions, inputs, and secrets into the file:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="1-18" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="1-22" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -47,7 +47,7 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
    > # yaml-language-server: $schema=./deploy.yml
    > ```
 
-1. Below the parameters, paste the definition of the validation job:
+1. Below the permissions, paste the definition of the validation job:
 
    :::code language="yaml" source="code/5-deploy.yml" range="24-54" :::
 
@@ -73,6 +73,8 @@ Create a reusable workflow that defines all of the jobs required to deploy each 
 ## Update the workflow definition to use the templates
 
 1. Open the *workflow.yml* file in the *.github/workflows* folder.
+
+1. Remove the `permissions` section. Your *deploy.yml* file declares the permissions your workflow needs now.
 
 1. Remove the contents of the `env:` section, including the two environment variables. You'll replace these with environment-specific variables soon.
 
