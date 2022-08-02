@@ -220,7 +220,7 @@ Next, create a resource group for each environment. This process also grants the
    ```bash
    testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus --query id --output tsv)
 
-   az ad sp create --id $testApplicationRegistrationObjectId --query id --output tsv
+   az ad sp create --id $testApplicationRegistrationObjectId
    az role assignment create \
       --assignee $testApplicationRegistrationAppId \
       --role Contributor \
@@ -232,7 +232,7 @@ Next, create a resource group for each environment. This process also grants the
    ```bash
    productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location westus --query id --output tsv)
 
-   az ad sp create --id $productionApplicationRegistrationObjectId --query id --output tsv
+   az ad sp create --id $productionApplicationRegistrationObjectId
    az role assignment create \
       --assignee $productionApplicationRegistrationAppId \
       --role Contributor \

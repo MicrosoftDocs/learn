@@ -108,7 +108,7 @@ To create a new resource group and grant your workload identity access to it, ru
 ```bash
 resourceGroupResourceId=$(az group create --name ToyWebsite --location westus --query id --output tsv)
 
-az ad sp create --id $applicationRegistrationObjectId --query id --output tsv
+az ad sp create --id $applicationRegistrationObjectId
 az role assignment create \
    --assignee $applicationRegistrationAppId \
    --role Contributor \

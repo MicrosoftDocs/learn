@@ -173,7 +173,7 @@ Next, create a resource group for your website. This process also grants the wor
    ```bash
    resourceGroupResourceId=$(az group create --name ToyReusable --location westus3 --query id --output tsv)
 
-   az ad sp create --id $applicationRegistrationObjectId --query id --output tsv
+   az ad sp create --id $applicationRegistrationObjectId
    az role assignment create \
       --assignee $applicationRegistrationAppId \
       --role Contributor \
