@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell
+metadata:
+  title: Create and manage scheduled jobs using Windows PowerShell
+  description: "This module covers how to
+use scheduled jobs. In Windows PowerShell, scheduled jobs are essentially
+scheduled tasks. They follow the same rules for actions, triggers, and other
+features, and run Windows PowerShell scripts by design."
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and manage scheduled jobs using Windows PowerShell
+summary: This module covers how to use scheduled jobs. In Windows PowerShell, scheduled jobs are essentially scheduled tasks. They follow the same rules for actions, triggers, and other features, and run Windows PowerShell scripts by design.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain how to run Windows PowerShell scripts as scheduled tasks.
+  - Create and run a Windows PowerShell script as a scheduled task.
+  - Explain the purpose and use of scheduled jobs.
+  - Create job options and triggers.
+  - Create scheduled jobs.
+  - Retrieve scheduled job results.
+  - Use scheduled jobs.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  *   Familiarity to administer remote computers with Windows PowerShell
+  *   Familiarity to manage Azure resources and Microsoft 365 services with Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.introduction
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.create-run-scripts-scheduled-tasks
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.define-scheduled-jobs
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.create-job-option-job-trigger-objects
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.create-register-scheduled-job
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.retrieve-results-from-scheduled-job
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.knowledge-check
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.summary
+badge:
+  uid: learn.wwl.create-manage-scheduled-jobs-using-windows-powershell.badge
