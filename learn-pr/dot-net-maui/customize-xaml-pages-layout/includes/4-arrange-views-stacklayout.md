@@ -26,9 +26,9 @@ public partial class MainPage : ContentPage
     {
         InitializeComponent();
 
-        var a = new BoxView { BackgroundColor = Colors.Silver, HeightRequest = 40 };
-        var b = new BoxView { BackgroundColor = Colors.Blue, HeightRequest = 40 };
-        var c = new BoxView { BackgroundColor = Colors.Gray, HeightRequest = 40 };
+        var a = new BoxView { Color = Colors.Silver, HeightRequest = 40 };
+        var b = new BoxView { Color = Colors.Blue, HeightRequest = 40 };
+        var c = new BoxView { Color = Colors.Gray, HeightRequest = 40 };
 
         stack.Children.Add(a);
         stack.Children.Add(b);

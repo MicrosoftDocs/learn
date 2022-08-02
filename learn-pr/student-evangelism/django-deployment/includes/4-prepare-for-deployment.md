@@ -41,10 +41,11 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
     import os
     ```
 
-1. Add the following code to the end of the file to override `ALLOWED_HOSTS` to allow Azure to host the application.
+1. Add the following code to the end of the file to override `ALLOWED_HOSTS` to allow Azure to host the application and to define trusted origins.
 
     ```python
     ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
+    CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['WEBSITE_HOSTNAME']] if 'WEBSITE_HOSTNAME' in os.environ else []
     ```
 
     > [!NOTE]
@@ -59,7 +60,7 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': os.environ['DBNAME'],
             'HOST': hostname + ".postgres.database.azure.com",
-            'USER': os.environ['DBUSER'] + "@" + hostname,
+            'USER': os.environ['DBUSER'],
             'PASSWORD': os.environ['DBPASS'] 
         }
     }
@@ -67,6 +68,9 @@ Now you'll create a production settings file. Then you'll update *manage.py* to 
 
     > [!NOTE]
     > You'll set the environmental variables on Azure in a later step.
+
+    > [!NOTE]
+    > The database connection is for [PostgreSQL Flexible Server](/azure/postgresql/flexible-server/). For [PostgreSQL Single Server](/azure/postgresql/single-server/), set the `USER` value to  `os.environ['DBUSER'] + "@" + hostname`.
 
     The connection string you're using is for PostgreSQL. You provide the following information:
 
@@ -117,6 +121,7 @@ Now that you've created the production settings file, you can update your applic
 1. Add the following code to the end of the file to override the necessary settings when the app runs in production.
 
     ```python
+    import os
     if 'WEBSITE_HOSTNAME' in os.environ: # Running on Azure
         from .azure import *
     ```
