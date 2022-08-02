@@ -218,7 +218,7 @@ Run the following code to show you the values you need to create as GitHub secre
 ::: zone pivot="cli"
 
 ```bash
-echo "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
+echo "AZURE_CLIENT_ID: $applicationRegistrationAppId"
 echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
 echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
 ```
