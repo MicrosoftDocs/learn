@@ -41,6 +41,8 @@ In this module, you’ll learn how to:
 
 - Design for Azure blueprints. 
 
+- Design for Azure landing zones. 
+
 ### Skills measured
 
 The content in the module will help you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:

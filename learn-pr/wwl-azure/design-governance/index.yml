@@ -3,7 +3,7 @@ uid: learn.wwl.design-governance
 metadata:
   title: Design governance
   description: "Azure Architects design and recommend governance solutions."
-  ms.date: 07/11/2022
+  ms.date: 08/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -43,6 +43,7 @@ units:
 - learn.wwl.design-governance.design-for-azure-policy
 - learn.wwl.design-governance.design-for-role-based-access-control
 - learn.wwl.design-governance.design-for-azure-blueprints
+- learn.wwl.design-governance.design-for-azure-landing-zones
 - learn.wwl.design-governance.knowledge-check
 - learn.wwl.design-governance.summary-resources
 badge:
