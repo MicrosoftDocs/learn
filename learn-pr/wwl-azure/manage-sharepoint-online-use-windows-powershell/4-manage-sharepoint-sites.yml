@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-sharepoint-online-use-windows-powershell.manage-sharepoint-sites
+title: Manage SharePoint sites by using Windows PowerShell
+metadata:
+  title: Manage SharePoint sites by using Windows PowerShell
+  description: "Manage SharePoint sites by using Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-manage-sharepoint-sites.md)]

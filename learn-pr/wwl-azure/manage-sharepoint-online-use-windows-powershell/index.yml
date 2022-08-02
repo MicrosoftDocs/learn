@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.wwl.manage-sharepoint-online-use-windows-powershell
+metadata:
+  title: Manage SharePoint Online by using Windows PowerShell
+  description: "This module describes
+SharePoint Online, which is a collaboration service that allows to store and
+share information through a web-based interface. The module explains how to
+manage SharePoint Online users and groups with PowerShell."
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage SharePoint Online by using Windows PowerShell
+summary: This module describes SharePoint Online, which is a collaboration service that allows to store and share information through a web-based interface. The module explains how to manage SharePoint Online users and groups with PowerShell.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain how to connect to SharePoint Online by using PowerShell.
+  - Explain how to manage SharePoint Online users and groups with PowerShell.
+  - Explain how to manage sites with PowerShell.
+  - Explain how to manage external user sharing with PowerShell.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  *   Familiarity to administer remote computers with Windows PowerShell
+  *   Familiarity to manage Azure resources with Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-services
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.manage-sharepoint-online-use-windows-powershell.introduction
+- learn.wwl.manage-sharepoint-online-use-windows-powershell.install-connect-sharepoint-online-management-shell
+- learn.wwl.manage-sharepoint-online-use-windows-powershell.manage-sharepoint-online-users-groups
+- learn.wwl.manage-sharepoint-online-use-windows-powershell.manage-sharepoint-sites
+- learn.wwl.manage-sharepoint-online-use-windows-powershell.manage-sharepoint-online-external-user-sharing
+- learn.wwl.manage-sharepoint-online-use-windows-powershell.knowledge-check
+- learn.wwl.manage-sharepoint-online-use-windows-powershell.summary
+badge:
+  uid: learn.wwl.manage-sharepoint-online-by-using-windows-powershell.badge
