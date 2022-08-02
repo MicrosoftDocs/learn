@@ -100,7 +100,7 @@ In this exercise, you'll start to build the .NET MAUI app for the grocery store 
 
     :::image type="content" source="../media/4-debug-using-emulator.png" alt-text="A screenshot of the Visual Studio toolbar. It shows the pixel 3 a p i 30 profile has been selected and ready to start debugging with as soon as the user presses the play button.":::
 
-1. When the app starts running on the emulator, tap the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
+1. When the app starts running on the emulator (this can take a few minutes), tap the **Click me** button and check that the app runs in exactly the same way that it did on Windows.
 
     :::image type="content" source="../media/4-android-app.png" alt-text="A screenshot of the Android version of the Phoneword application running in the selected emulator.":::
 

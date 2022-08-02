@@ -4,7 +4,7 @@ Your first project with minimal API was well received. Now, your company wants t
 
 First you need some data. To store and manage data, you'll use an in-memory store.
 
-1. Using Visual Studio Code, *Db.cs* in the project root and give it the following content:
+1. Using Visual Studio Code, create a file named *Db.cs* in the project root and give it the following content:
 
    ```csharp
     namespace PizzaStore.DB; 
