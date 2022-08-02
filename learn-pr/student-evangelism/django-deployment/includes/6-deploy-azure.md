@@ -13,28 +13,40 @@ Start by installing the Azure App Service extension in Visual Studio Code:
     ![Screenshot showing the Extensions icon.](../media/extensions-icon.png)
 
 1. In the **Search Extensions** field, type *App Service*.
+
 1. Under **Azure App Service**, select **Install**.
 
 The extension is installed.
 
-## Deploy the application
+## Set deploy from starter folder
 
-Now that the extension is installed, you can start the installation.
+1. Open the VS Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
+
+1. Type "Preferences: Open Workspace Settings" and select it to open up settings.
+
+1. In the **Settings** search field, enter "@id:appService.deploySubpath appser".
+
+1. In the **App Service: Deploy Subpath** field enter "starter" to tell VS Code to deploy from this folder.
+
+     ![Screenshot showing the deploy subpath setting.](../media/app-service-set-subpath.png)
+
+Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. Setting the subpath isn't necessary for Django projects where the *manage.py* file is at the root of the project directory.
+
+## Deploy the application
 
 1. In **Visual Studio Code**, on the toolbar, select the **Azure** icon.
 
     ![Screenshot showing the Azure icon.](../media/azure-icon.png)
 
 1. Select **Sign in** to sign in to Azure by using the same account you used to create the sandbox.
-1. On the **App Service** bar, select the **Deploy** icon.
 
-    ![Screenshot showing the App Service bar. The Deploy icon is highlighted.](../media/app-service.png)
+1. On the **RESOURCES** bar of the Azure extension, hover, and select the **+** (plus sign) icon to create a resource.
 
-1. For **Select subscription**, choose your Azure subscription.
+    ![Screenshot showing the App Service bar. The Deploy icon is highlighted.](../media/add-resource.png)
 
-    ![Screenshot showing where to select a subscription.](../media/select-subscription.png)
+1. If prompted to choose a subscription, choose your Azure subscription.
 
-1. Select **Create new Web App**.
+1. Select **Create App Service Web App...**.
 
     ![Screenshot showing how to create a new web app.](../media/create-new-webapp.png)
 
@@ -42,15 +54,21 @@ Now that the extension is installed, you can start the installation.
 
     ![Screenshot showing where to provide an app name.](../media/provide-name.png)
 
-1. Select **Python 3.8** as the runtime stack.
+1. Select **Python 3.9** as the runtime stack.
 
     ![Screenshot showing the runtime stack selection.](../media/runtime-selection.png)
 
-    The extension creates your web application and begins deploying it. The process will take a few moments.
+1. Select a pricing tier.
 
-1. When you're asked whether to **Always deploy the workspace** to the application you created during the deployment, select **Yes**.
+    ![Screenshot showing the the pricing tier selection.](../media/select-pricing-tier.png)
 
-    ![Screenshot showing the deployment configuration option.](../media/always-deploy.png)
+    The extension creates your web application. The process will take a few moments.
+
+1. When the web app is created, you're asked to deploy the web app to the App Service, select **Deploy**.
+
+    ![Screenshot showing the deployment configuration option.](../media/deploy-app.png)
+
+    If you miss the notice to deploy or close it, you can also deploy by finding the App Service you created, right-click it, and select **Deploy to Web App**.
 
 Your site will now deploy!
 
@@ -58,15 +76,18 @@ Your site will now deploy!
 
 While your site is deploying, turn your attention to creating the database. You'll use PostgreSQL.
 
-1. In the **Databases** extension, select **Create server**.
+1. On the **RESOURCES** bar of the Azure extension, hover, and select the **+** (plus sign) icon to create a resource.
 
-    ![Screenshot of the Databases extension, showing the Create Server icon.](../media/databases.png)
+    ![Screenshot of the Databases extension, showing the Create Server icon.](../media/add-resource.png)
 
-1. In the dialog box, select the sandbox subscription.
+1. If prompted to choose a subscription, choose your Azure subscription.
 
-    ![Screenshot showing where to select the subscription.](../media/select-subscription.png)
+1. Select **Create Database Server...**.
 
-1. For the Azure Database Server, select **PostgreSQL**.
+    ![Screenshot showing how to create a new database server.](../media/create-new-database.png)
+
+
+1. For the Azure Database Server, select **PostgreSQL Flexible Server**.
 
     ![Screenshot showing a list of available database servers.](../media/database-server.png)
 
@@ -75,16 +96,16 @@ While your site is deploying, turn your attention to creating the database. You'
     > [!IMPORTANT]
     > Make a note of the name you use for your database server.
 
+1. Select the Postgres SKU and options.
+
 1. For the name of the admin user, enter *shelter_admin*.
-1. Enter a secure password, such as *86i*^z5#emSk6wu3t10nC*.
+
+1. Enter a secure password, such as "*86i*^z5#emSk6wu3t10nC*".
 
     > [!IMPORTANT]
     > When you create the password, don't use a dollar sign (`$`). This symbol can cause issues for connections from Python. Make a note of the password you use.
 
 1. Enter the password a second time to confirm it.
-1. For the firewall rule, select **Skip for now**.
-
-    ![Screenshot showing the firewall rule field. "Skip for now" is highlighted.](../media/firewall-rule.png)
 
 1. For the resource group, select **appsvc_linux_centralus**. This group was created when you deployed your web application.
 
@@ -97,7 +118,24 @@ While your site is deploying, turn your attention to creating the database. You'
     > [!IMPORTANT]
     > When you create multiple Azure resources that will communicate with one another, always place them in the same region. This collocation ensures the best performance.
 
-Your server will now be created! This process will take a few minutes.
+Your server will now be created! This process will take a few minutes. 
+
+## Create a database firewall rule
+
+After the database is created, you need to create a firewall rule to allow your developer environment to access the database. Wait until the database exists before following the next steps to create the rule.
+
+1. Open the Visual Studio Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
+
+1. Search for "PostgreSQL: Configure Firewall" and select it.
+
+    ![Screenshot showing the firewall rule field. "Skip for now" is highlighted.](../media/create-firewall-rule.png)
+
+1. When prompted for the resource to apply the firewall to, select the Postgres database you created.
+
+1. A final dialog box asks to continue and shows the IP address it will add. Select **Yes**.
+
+It takes a few minutes to add the rule. Watch the VS Code notification window for status.
+
 
 ## Configure application settings
 
@@ -116,6 +154,7 @@ While your database server is being created, configure the App Service you set u
     -----------|---------------------------------------
     DBHOST     | `<The server name you created previously>`
     DBPASS     | `<The password you created previously>`
+    DBUSER     | `shelter_admin`
     DBNAME     | `shelters`
     SECRET_KEY | `<Generate a secure password>`
 
@@ -126,9 +165,10 @@ All the necessary environmental variables are now created on your app service.
 
 ## Create the database
 
-Now that you've configured App Service and created the server, you can create the database.
+Now that you've configured App Service and created the server, you can create the database in the Postgres Database Server.
 
 1. Under **Databases**, expand the sandbox subscription.
+
 1. Right-click the name of your database server and select **Create Database**.
 
     ![Screenshot showing the Create Database selection.](../media/create-database.png)
@@ -162,6 +202,7 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
     # Install requirements
     pip install -r requirements.txt
     # Run database migrations
+    python manage.py makemigrations dog_shelters
     python manage.py migrate
     ```
 
@@ -172,6 +213,7 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
     ```
 
 1. Provide a **name**, **email** address, and **password** for the superuser.
+
 1. After you create your superuser, run the command `exit` to close the connection.
 
 Your database is now configured in Azure, and you have a superuser for your site.
@@ -184,8 +226,18 @@ In the **App Service** extension, right-click the name of your site, and then se
 
 ![Screenshot showing where to select Browse Website.](../media/browse-website.png)
 
-Your website now appears.
+Your website now appears. The default page shows no shelters. To add shelters:
 
-Because you deployed your SQLite database, your site should already contain data. If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
+1. Go to the Django administration part of the site by adding "/admin" the website URL. 
+
+   You'll be asked to authenticate with the superuser name and password you created above. 
+
+1. Add a shelter and navigate back to the main page and you'll be able to register a dog for that shelter.
+
+Here's an example screenshot of the site:
+
+![Screenshot showing Django admin and how to add shelters.](../media/django-admin-site.png)
+
+If you try to go to a location that doesn't exist on your site, you'll get a generic **Not found** error because `DEBUG` is disabled.
 
 You've now deployed a website to Azure!
