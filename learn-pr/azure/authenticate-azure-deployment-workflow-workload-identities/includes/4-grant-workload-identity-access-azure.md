@@ -22,7 +22,7 @@ When you work with a workload identity, you assign roles for that workload ident
 To create a service principal, use the `az ad sp create` command and specify the application registration's app ID:
 
 ```azurecli
-az ad sp create --id b585b740-942d-44e9-9126-f1181c95d497 --query id --output tsv
+az ad sp create --id b585b740-942d-44e9-9126-f1181c95d497
 ```
 
 ::: zone-end

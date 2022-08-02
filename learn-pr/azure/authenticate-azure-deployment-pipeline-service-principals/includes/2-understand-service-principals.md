@@ -35,9 +35,9 @@ In Azure AD, a service principal is identified by an _application ID_ and a cred
 
 ### Managed identities
 
-Unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. Instead, Azure manages the credentials automatically, and it provides the credentials to the resource that needs them. 
+Unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. A managed identity is associated with an Azure resource. Azure manages the credentials automatically. When the resource needs to access something, Azure automatically signs in by using the credentials.
 
-Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Azure Key Vault.
+Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Azure Key Vault. You can also use managed identities with Azure Arc for other scenarios, too.
 
 When you work with pipelines, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources that run your deployments. When you work with Azure Pipelines, you usually rely on shared infrastructure provided by Microsoft.
 

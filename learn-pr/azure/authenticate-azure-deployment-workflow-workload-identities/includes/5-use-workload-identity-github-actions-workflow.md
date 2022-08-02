@@ -1,8 +1,8 @@
 After you create a workload identity and assign it access to your Azure environment, it's time to use it in your GitHub Actions workflow. In this unit, you learn about the two changes that you need to make to your workflow definition.
 
-## Allow the workflow to request tokens from Azure Active Directory
+## Allow the workflow to request tokens
 
-You need to allow your deployment workflow to request tokens from Azure Active Directory (Azure AD). In your workflow, add the `permissions` property:
+You need to allow your deployment workflow to request tokens. In your workflow, add the `permissions` property:
 
 :::code language="yaml" source="code/5-workflow.yml" range="5-7" :::
 
