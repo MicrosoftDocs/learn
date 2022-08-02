@@ -1,6 +1,6 @@
 In this exercise, we'll configure cross-tenant access settings for a specific organization. These settings will take precedence over the default cross-tenant access settings for this organization only.
 
-Recall that in the financial institution example, the default cross-tenant access settings are configured so that outbound B2B collaboration is allowed, but inbound B2B collaboration is blocked for all external Azure AD organizations. But now that the financial institution has acquired a branch, they want to allow those branch users to access internal applications using B2B collaboration. They also want to make sure that if the user has completed multi-factor authentication in their home tenant, they won't be asked to do so again.
+Recall that in the financial institution example, your default cross-tenant access settings allow outbound B2B collaboration and block inbound B2B collaboration for all external Azure AD organizations. Now that your financial institution has acquired a branch, you want to allow users in the branch to access your internal accounting applications using B2B collaboration. You also want to make sure that if a user has completed multi-factor authentication in the branch tenant, they won't be asked to do so again.
 
 ![Diagram of the full financial institution example, with just the organizational settings highlighted.](../media/5-scenario-organizational.png)
 
