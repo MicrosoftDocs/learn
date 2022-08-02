@@ -44,21 +44,28 @@ Identify the subtasks of module title.
 
 Suppose you work at a banking company as a developer. Your company is looking to develop a web application to help customers access services and information. These services range from checking their account balances, making transactions and applying for loans. To ensure these services are accessed in a secure way, users need to authenticate before they can access these resources. Your company uses Python Django as the web framework to build its web apps. You've been tasked with the responsibility of building an authentication mechanism to authenticate users before they can access these resources.
 
-1. **Authenticate users in a Django web app using Azure AD.**
+1. **Register web app in Azure AD tenant.**
 
+    - Authentication flow for web apps in Azure AD
     - Choose the Azure AD tenant where you want to create your web app
     - Create user in tenant
-    - Register the web app
+    - Azure AD web app registration
 
-1. **Exercise - Register web app in Azure AD tenant.**
+1. **Exercise - Register Django web app in Azure AD tenant.**
 
-    - Register a web app in Azure AD tenant.
-    - Create a new client secret in Azure AD.
+    - Create a single tenant web app registration
+    - Create a client secret in Azure AD.
 
-1. **Exercise - Configure Django web application to use it's Azure AD tenant app registration details.**
+1. **Sign in users to a Django web app using Azure AD.**
 
-    - Set up development environment
-    - Configure the web app to use your app registration
+    - Use Python MSAL library
+    - Django project structure
+    - Configure Django web app to use app registration details
+
+1. **Exercise - Sign in user to a Django web app using Azure AD.**
+
+    - Set up Django development environment
+    - Configure Django web app to use app registration details
     - Sign-in user to your Django web app using Azure AD
 
 1. **Knowledge check**
