@@ -1,6 +1,6 @@
 An Azure Compute Gallery simplifies custom image sharing across your organization. Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations.
 
-The Azure Compute Gallery lets you share your custom VM images with others in your organization, within or across regions, within an AAD tenant. Choose the images you want to share, the regions you want to make them available in, and who you want to share them with. You can create multiple galleries so that you can logically group shared images.
+The Azure Compute Gallery lets you share your custom VM images with others in your organization, within or across regions, within an Azure Active Directoy tenant. Choose the images you want to share, the regions you want to make them available in, and who you want to share them with. You can create multiple galleries so that you can logically group shared images.
 
 The gallery is a top-level resource that provides full Azure role-based access control (RBAC). Images can be versioned, and you can choose to replicate each image version to a different set of Azure regions. The gallery only works with Managed Images.
 
@@ -19,54 +19,12 @@ Use an Azure Compute Gallery as a repository for images you wan to make availabl
 
 The Azure Compute Gallery feature has multiple resource types:<br>
 
-:::row:::
-  :::column:::
-    **Resource**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Image source
-  :::column-end:::
-  :::column:::
-    A resource that can be used to create an image version in an image gallery. An image source can be an existing Azure VM that is:
-
- -  Generalized or specialized.
- -  Managed image.
- -  Snapshot, a VHD.
- -  An image version in another image gallery.
-
-
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Image gallery
-  :::column-end:::
-  :::column:::
-    Like the Azure Marketplace, an image gallery is a repository for managing and sharing images, but you control who has access.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Image definition
-  :::column-end:::
-  :::column:::
-    Image definitions are created within a gallery and carry information about the image and requirements for using it internally. Includes whether the image is Windows or Linux, release notes, and minimum and maximum memory requirements.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Image version
-  :::column-end:::
-  :::column:::
-    An image version is what you use to create a VM when using a gallery. You can have multiple versions of an image as needed for your environment. Like a managed image, when you use an image version to create a VM, the image version is used to create new disks for the VM. Image versions can be used multiple times.
-  :::column-end:::
-:::row-end:::
-
+| **Resource**     | **Description**                                                                                                                                                                                                                                                                                                           |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Image source     | A resource that can be used to create an image version in an image gallery. An image source can be an existing Azure VM that is generalized or specialized, a Managed image or a snapshot.                                                                                                                                |
+| Image gallery    | Like the Azure Marketplace, an image gallery is a repository for managing and sharing images, but you control who has access.                                                                                                                                                                                             |
+| Image definition | Image definitions are created within a gallery and carry information about the image and requirements for using it internally. Includes whether the image is Windows or Linux, release notes, and minimum and maximum memory requirements.                                                                                |
+| Image version    | An image version is what you use to create a VM when using a gallery. You can have multiple versions of an image as needed for your environment. Like a managed image, when you use an image version to create a VM, the image version is used to create new disks for the VM. Image versions can be used multiple times. |
 
 ## Image definitions
 
@@ -74,63 +32,11 @@ Image definitions are a logical grouping for versions of an image. The image def
 
 There are three parameters for each image definition that are used in combination - Publisher, Offer, and SKU to find a specific image definition. You can have image versions that share one or two, but not all three values. For example, here are three image definitions and their values:
 
-:::row:::
-  :::column:::
-    **Image Definition**
-  :::column-end:::
-  :::column:::
-    **Publisher**
-  :::column-end:::
-  :::column:::
-    **Offer**
-  :::column-end:::
-  :::column:::
-    **Sku**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    myImage1
-  :::column-end:::
-  :::column:::
-    Contoso
-  :::column-end:::
-  :::column:::
-    Finance
-  :::column-end:::
-  :::column:::
-    Backend
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    myImage2
-  :::column-end:::
-  :::column:::
-    Contoso
-  :::column-end:::
-  :::column:::
-    Finance
-  :::column-end:::
-  :::column:::
-    Frontend
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    myImage3
-  :::column-end:::
-  :::column:::
-    Testing
-  :::column-end:::
-  :::column:::
-    Finance
-  :::column-end:::
-  :::column:::
-    Frontend
-  :::column-end:::
-:::row-end:::
-
+| **Image Definition** | **Publisher** | **Offer** | **Sku**  |
+| -------------------- | ------------- | --------- | -------- |
+| myImage1             | Contoso       | Finance   | Backend  |
+| myImage2             | Contoso       | Finance   | Frontend |
+| myImage3             | Testing       | Finance   | Frontend |
 
 All three of these have unique sets of values. The format is similar to how to specify publisher, offer, and SKU for Azure Marketplace images in Azure PowerShell to find the latest version of a Marketplace image. Each image definition needs to have a unique set of these values.
 
@@ -184,45 +90,7 @@ The regions an Azure Compute Gallery version is replicated to can be updated aft
 
 The Azure Compute Gallery, Image Definition, and Image version are resources that are shared using the built-in native Azure role-based access control (RBAC) controls. Using Azure role-based access control (RBAC) you can share these resources to other users, service principals, and groups. You can even share access to individuals outside of the tenant they were created within. Once a user has access to the Azure Compute Gallery version, they can deploy a VM or a Virtual Machine Scale Set. Below is the sharing matrix that helps understand what the user gets access to:
 
-:::row:::
-  :::column:::
-    **Shared with User**
-  :::column-end:::
-  :::column:::
-    **Azure Compute Gallery**
-  :::column-end:::
-  :::column:::
-    **Image Definition**
-  :::column-end:::
-  :::column:::
-    **Image version**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Compute Gallery
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Image Definition
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
+| **Shared with User**  | **Azure Compute Gallery** | **Image Definition** | **Image version** |
+| --------------------- | ------------------------- | -------------------- | ----------------- |
+| Azure Compute Gallery | Yes                       | Yes                  | Yes               |
+| Image Definition      | No                        | Yes                  | Yes               |

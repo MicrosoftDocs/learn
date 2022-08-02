@@ -4,39 +4,11 @@ The Azure Compute Gallery lets you share custom VM images and application packag
 
 The gallery is a top-level resource that can be shared in multiple ways:
 
-:::row:::
-  :::column:::
-    **Share with:**
-  :::column-end:::
-  :::column:::
-    **Option**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    [Specific people, groups, or service principals](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-private-gallery)
-  :::column-end:::
-  :::column:::
-    Role-based access control (RBAC) lets you share resources to specific people, groups, or service principals on a granular level.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    [Subscriptions or tenants](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-direct-shared-gallery)
-  :::column-end:::
-  :::column:::
-    Direct shared gallery (preview) lets you share to everyone in a subscription or tenant.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    [Everyone](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-community-gallery)
-  :::column-end:::
-  :::column:::
-    Community gallery (preview) lets you share your entire gallery publicly, to all Azure users.
-  :::column-end:::
-:::row-end:::
-
+| **Share with:**                                                                                                                                                                  | **Option**                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [Specific people, groups, or service principals](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-private-gallery) | Role-based access control (RBAC) lets you share resources to specific people, groups, or service principals on a granular level. |
+| [Subscriptions or tenants](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-direct-shared-gallery)                 | Direct shared gallery (preview) lets you share to everyone in a subscription or tenant.                                          |
+| [Everyone](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-community-gallery)                                     | Community gallery (preview) lets you share your entire gallery publicly, to all Azure users.                                     |
 
 ## Naming
 
@@ -69,11 +41,11 @@ During the preview, you need to create a new gallery, with the property sharingP
 5.  Complete all of the details on the page.
 6.  At the bottom of the page, select **Next: Sharing method**.
     
-    :::image type="content" source="../media/create-gallery-1-b9d25a0a.png":::
+    :::image type="content" source="../media/create-gallery-1-b9d25a0a.png" alt-text="Screenshot showing the subscriptions for Azure Compute Gallery.":::
     
 7.  On the **Sharing** tab, select **RBAC + share directly**.
     
-    :::image type="content" source="../media/share-direct-2-0187f579.png":::
+    :::image type="content" source="../media/share-direct-2-0187f579.png" alt-text="Screenshot showing the roles for Compute Gallery.":::
     
 8.  When you're done, select **Review + create**.
 9.  After validation passes, select **Create**.
@@ -113,7 +85,7 @@ Making a community gallery available to all Azure users is a two-step process. F
 8.  You can type a short description of the gallery, like *My gallery for testing*.
 9.  At the bottom of the page, select **Next: Sharing method**.
     
-    :::image type="content" source="../media/create-gallery-3-0d8b6d95.png":::
+    :::image type="content" source="../media/create-gallery-3-0d8b6d95.png" alt-text="Screenshot showing the regions for the Gallery.":::
     
 10. On the **Sharing** tab, select **RBAC + share to public community gallery**.
 11. For **Community gallery prefix** type a prefix that will be appended to a GUID to create the unique name for your community gallery.

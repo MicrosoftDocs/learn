@@ -8,7 +8,7 @@ This unit tells you how to install Microsoft 365 Apps for enterprise, OneDrive, 
 
 ## Install Office in shared computer activation mode
 
-Shared computer activation lets you to deploy Microsoft 365 Apps for enterprise to a computer in your organization that is accessed by multiple users.
+Shared computer activation allows deployment of Microsoft 365 Apps for enterprise to a computer that is accessed by multiple users.
 
 Use the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) to install Office. Windows 10 Enterprise multi-session only supports the following versions of Office:
 
