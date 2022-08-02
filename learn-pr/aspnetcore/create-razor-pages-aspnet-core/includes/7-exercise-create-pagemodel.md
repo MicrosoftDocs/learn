@@ -56,15 +56,13 @@ The `IsGlutenFree` property is a boolean value. You can use a utility method to 
 ```csharp
 public string GlutenFreeText(Pizza pizza)
 {
-    if (pizza.IsGlutenFree)
-        return "Gluten Free";
-    return "Not Gluten Free";
+    return pizza.IsGlutenFree ? "Gluten Free": "Not Gluten Free";
 }
 ```
 
 ## Add an HTTP POST page handler to the `PageModel`
 
-Add the following method to the *Pages/Pizza.cshtml.cs* `PageModel` class. Save your changes.
+Add the following method to the *Pages/Pizza.cshtml.cs* `PageModel` class.
 
 ```csharp
 public IActionResult OnPost()
@@ -109,6 +107,44 @@ public IActionResult OnPostDelete(int id)
 }
 ```
 
+> [!TIP]
+> Your `PizzaModel` class should look similar to this:
+>
+> ```csharp
+> public class PizzaModel : PageModel
+> {
+>     public List<Pizza> pizzas = new();
+>     [BindProperty]
+>     public Pizza NewPizza { get; set; } = new();
+> 
+>     public void OnGet()
+>     {
+>         pizzas = PizzaService.GetAll();
+>     }
+>     
+>     public string GlutenFreeText(Pizza pizza)
+>     {
+>         return pizza.IsGlutenFree ? "Gluten Free": "Not Gluten Free";
+>     }
+> 
+>     public IActionResult OnPost()
+>     {
+>         if (!ModelState.IsValid)
+>         {
+>             return Page();
+>         }
+>         PizzaService.Add(NewPizza);
+>         return RedirectToAction("Get");
+>     }
+> 
+>     public IActionResult OnPostDelete(int id)
+>     {
+>         PizzaService.Delete(id);
+>         return RedirectToAction("Get");
+>     }
+> }
+> ```
+
 ## Link to the *Pizza* page
 
 The *Pizza* page has been created and implemented. Let's allow users to navigate to it.
@@ -125,9 +161,7 @@ The *Pizza* page has been created and implemented. Let's allow users to navigate
 
 The result will appear as follows:
 
-   [!code-cshtml[](../code/layout.cs?highlight=25)]
-
-1. Save your changes.
+   [!code-cshtml[](../code/layout.cs?highlight=24-26)]
 
 The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 
@@ -136,7 +170,7 @@ The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 
 The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.
 
-1. Run the following .NET CLI command in the command shell:
+1. Ensure you've saved all your changes, and then run the following .NET CLI command in the terminal:
 
     ```dotnetcli
     dotnet run
