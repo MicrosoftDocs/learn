@@ -24,9 +24,9 @@ You've identified extension options available in Microsoft Graph as suited for t
 
 By the end of this module, you'll be able to:
 
-1. Choose an extension option for adding custom data to Microsoft Graph.
-2. Add, query, and update custom data through Microsoft Graph.
-3. Use the custom data to extend your application.
++ Choose an extension option for adding custom data to Microsoft Graph.
++ Add, query, and update custom data through Microsoft Graph.
++ Use the custom data to extend your application.
 
 > [!NOTE]
 > Microsoft Graph exposes two endpoints - `beta` and `v1.0` where `beta` retrieves the preview version of an API while `v1.0` retrieves the generally available version of an API. APIs that are generally available are recommended for production. For the exercises in this module, you'll use the generally available version of Microsoft Graph APIs.

@@ -12,7 +12,7 @@ In the team bonding app, the employee will sign in with their Azure AD profile a
 
 Retrieve the values of **id** and **appId** of the app you own and that has a service principal in the tenant. You'll use these values in this exercise. Assume the following object represents your application.
 
->**Note:** The object shown here has been shortened for readability.
+The object shown here has been shortened for readability.
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json

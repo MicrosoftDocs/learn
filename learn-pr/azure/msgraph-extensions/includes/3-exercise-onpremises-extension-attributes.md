@@ -181,7 +181,7 @@ POST https://graph.microsoft.com/v1.0/groups
 
 ### Response
 
->**Note:** The response object shown here has been shortened for readability.
+The response object shown here has been shortened for readability.
 
 ```
 HTTP/1.1 201 Created
