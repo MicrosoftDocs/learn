@@ -30,7 +30,7 @@ Content-type: application/json
         {
             "id": "6e03a2db-564a-47ec-ba51-d0cd38af069a",
             "displayName": "Adele Vance",
-            "userPrincipalName": "AdeleV@M365EDU334089.OnMicrosoft.com",
+            "userPrincipalName": "AdeleV@contoso.com",
             "onPremisesExtensionAttributes": {
                 "extensionAttribute1": null,
                 "extensionAttribute2": null,
@@ -101,7 +101,7 @@ Content-type: application/json
         {
             "id": "6e03a2db-564a-47ec-ba51-d0cd38af069a",
             "displayName": "Adele Vance",
-            "userPrincipalName": "AdeleV@M365EDU334089.OnMicrosoft.com",
+            "userPrincipalName": "AdeleV@contoso.com",
             "onPremisesExtensionAttributes": {
                 "extensionAttribute1": null,
                 "extensionAttribute2": null,
@@ -196,13 +196,13 @@ Content-type: application/json
         "Unified",
         "DynamicMembership"
     ],
-    "mail": "Xboxers@M365EDU334089.onmicrosoft.com",
+    "mail": "Xboxers@contoso.com",
     "mailEnabled": true,
     "mailNickname": "Xboxers",
     "membershipRule": "(user.extensionAttribute15 -ne null)",
     "membershipRuleProcessingState": "On",
     "proxyAddresses": [
-        "SMTP:Xboxers@M365EDU334089.onmicrosoft.com"
+        "SMTP:Xboxers@contoso.com"
     ],
     "resourceProvisioningOptions": [
         "Team"
