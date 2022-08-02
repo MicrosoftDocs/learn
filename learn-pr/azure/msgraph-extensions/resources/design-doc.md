@@ -12,7 +12,7 @@ intermediate
 
 ## Product(s)
 
-microsoft-graph
+learning-graph
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Identify the subtasks of module title.
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Identify extension types available in Microsoft Graph | Evaluate Microsoft Graph extensibility options for storing lightweight information without an external database | Knowledge check | 1 | Yes |
+| Identify extension types available in Microsoft Graph | Evaluate Microsoft Graph extension options for storing lightweight information without an external database | Knowledge check | 1 | Yes |
 | Use Microsoft Graph extension attributes 1-15 | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2, 3 | Yes |
 | Use Microsoft Graph directory extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2, 3 | Yes |
 | Use Microsoft Graph schema extensions | Store lightweight information through Microsoft Graph without an external database | Knowledge check | 1, 2, 3 | Yes |
@@ -58,7 +58,7 @@ Add more units as needed for your content
 
     Suppose you're a developer at a multinational organization with subsidiaries and hundreds of employees across continents. Your organization uses Azure Active Directory (Azure AD) and Microsoft 365 for identity and access management, collaboration, and security. Your team wants to deploy a team bonding mobile app that will allow employees to discover each other and connect within and through their external social networks. Through the app, employees will add data about themselves and they'll discover each other, their interests, and their social networks.
 
-    The organization doesn't want to invest in another database and has identified extensibility options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the available extension options and how to use them in the team bonding app.
+    The organization doesn't want to invest in another database and has identified extension options available in Microsoft Graph as suited for the data needs of the app. You want to evaluate the available extension options and how to use them in the team bonding app.
 
 2. Choose extension attributes for Microsoft Graph data
 <!-- Conceptual unit -->
@@ -103,4 +103,4 @@ Add more units as needed for your content
 
 ## Notes
 
-+ [Add custom properties to resources using extensions](https://review.docs.microsoft.com/en-us/graph/extensibility-overview?branch=pr-en-us-17209)
++ [Add custom data to resources using extensions](https://review.docs.microsoft.com/en-us/graph/extensibility-overview?branch=pr-en-us-17209)

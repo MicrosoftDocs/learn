@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.msgraph-extensions.summary
+title: Summary - Microsoft Graph extensions
+metadata:
+  unitType: summary
+  title: Summary - Microsoft Graph extensions
+  description: "Use Microsoft Graph extensions to add custom data to Microsoft Graph that you can use to customize your app-specific needs."
+  ms.date: 04/08/2022
+  author: FaithOmbongi
+  ms.author: ombongifaith
+  ms.topic: interactive-tutorial
+  ms.prod: learning-graph
+durationInMinutes: 3
+content: |
+  [!include[](includes/11-summary.md)]
