@@ -12,7 +12,9 @@
 -->
 TODO: add your topic sentences(s)
 TODO: add a visual element
-Review security considerations for different authentication methods for Azure AD. For better sign-in security, run a campaign to have users set up Microsoft Authenticator whenever they sign in.
+You can improve sign-in security by nudging users to set up Microsoft Authenticator whenever they sign in.
+
+
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
     Goal: describe the real-world scenario this module will use to illustrate the concepts
