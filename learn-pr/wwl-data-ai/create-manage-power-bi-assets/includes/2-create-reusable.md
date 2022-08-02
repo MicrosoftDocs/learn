@@ -1,10 +1,10 @@
-When you were first introduced to Power BI, you probably learned how to get data from various sources such as SQL Server databases, Excel files, and even text files. While you may have combined all of those files in your first attempt at a Power BI report, it's a lot of work to repeat every time you want to connect to that exact dataset you created. Further, if others also want to develop reports on that exact dataset, what's your process for sharing?
+When you were first introduced to Power BI, you probably learned how to get data from various sources such as SQL Server databases, Excel files, and even text files. Creating the same or similar dataset for each report is tedious work. Further, if others also want to develop reports on that exact dataset, what's your process for sharing?
 
 ## Create reusable core assets
 
-Assets can mean datasets, dataflows, reports, and dashboards. We'll most commonly mean datasets in this module. In our example above, after you spent precious time curating the perfect dataset, you should reuse and share it. Before creating visuals, publish the file to Power BI service and effectively create a "core" dataset.
+Assets can mean datasets, dataflows, reports, and dashboards. We'll most commonly mean datasets in this module. In our example above, you spent precious time curating the perfect dataset, and now you can share and reuse it. Before creating visuals, publish the file to Power BI service and effectively create a "core" dataset.
 
-Now you open a new Power BI Desktop instance, connect to a Power BI dataset, and choose your new dataset. If you publish to a shared location, your peers can build off that same shared dataset as well. It also helps enforce data integrity by using the dataset as a single source of truth instead of having everyone creating datasets, potentially making errors, and multiplying copies of data across the organization. Even worse, we all know someone who created something and then created a second copy when they need to make updates, leaving the first copy orphaned and undeleted. Power BI is about the democratization of data however, good data stewards limit how many datasets are created for data sources and manage a trustworthy dataset.
+Next time someone needs to create a report on that dataset, they can connect to a Power BI dataset from Power BI Desktop. Publish to a shared location to allow peers to use the same dataset. A single shared dataset protects data integrity with a validated copy of data. This trustworthy dataset also prevents orphaned datasets when someone recreates a report without deleting the earlier copies. As an enterprise data analyst, it's your responsibility to be a good data steward to encourage the democratization of data rather than disparate copies of data with questionable quality.
 
 ![Screenshot from Power B I Desktop, showing the Power B I dataset connection option](../media/power-bi-datasets-connect.png)
 
@@ -12,7 +12,14 @@ Now you open a new Power BI Desktop instance, connect to a Power BI dataset, and
 
 In our introduction example, we recognized the need to reduce report size and provide targeted reports across regions. To meet these goals, we create specialized datasets. Instead of creating a single report with global data and adding filtering or row-level security to limit what regional data users can see, consider creating a new dataset with the specific regional data.
 
-To create a specialized dataset, open a new Power BI Desktop instance, connect to the core dataset, then filter in the Power Query Editor as needed. Just like you did with the core dataset, publish this new specialized dataset to a workspace, and share that dataset for report development.
+To create a specialized dataset, open a new Power BI Desktop instance, connect to the core dataset
+
+> [!NOTE]
+> In order to make changes to the model for a specialized dataset, you must enable the preview feature, [Direct-query datasets](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services).
+
+
+<<<<include screenshot of the convert feature when using pbi datasets connector>>>>
+
 
 We'll provide an exercise at the end of this module to help you visualize this concept more.
 
