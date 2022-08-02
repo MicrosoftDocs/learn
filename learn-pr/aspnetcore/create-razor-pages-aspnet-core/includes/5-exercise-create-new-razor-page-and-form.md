@@ -94,7 +94,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
     mkdir Services
     ```
 
-    Select the folder in the file explorer and add a new File called `PizzaService.cs`.
+    Select the folder in the file explorer and add a new file called `PizzaService.cs`.
 
 1. Add the following code to *Services/PizzaService.cs* to create an in-memory pizza data service. Save your changes.
 
