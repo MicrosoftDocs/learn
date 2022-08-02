@@ -70,7 +70,7 @@ SELECT TOP 1 * FROM [ReplicatedTable]
 
 ### Additional replicated table performance considerations
 
-Some additional items to consider when looking at creating a replicated table include the followng situations which will negatively impact performance:
+Some additional items to consider when looking at creating a replicated table include the following situations which will negatively impact performance:
 
 1) The table has frequent insert, update, and delete operations. The data manipulation language (DML) operations require a rebuild of the replicated table. Rebuilding frequently can cause slower performance.
 2) The SQL pool is scaled frequently. Scaling a SQL pool changes the number of Compute nodes, which incurs rebuilding the replicated table.
