@@ -1,4 +1,4 @@
-In this unit, you'll add a HTTP POST page handler for the *Pizza* Razor page form. Finally, you'll walk through the `Pizza` model and its data annotations that drive both client-side and server-side validation.
+In this unit, you'll add an HTTP POST page handler for the *Pizza* Razor page form. Finally, you'll walk through the `Pizza` model and its data annotations that drive both client-side and server-side validation.
 
 ## Examine the structure of a Razor Pages `PageModel` class
 
