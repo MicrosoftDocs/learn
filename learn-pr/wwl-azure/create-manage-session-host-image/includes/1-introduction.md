@@ -15,4 +15,4 @@ After completing this module, you'll be able to:
 ## Prerequisites
 
  -  Conceptual knowledge of Azure compute solutions.
- -  Working experience with virtual machines, containers, and app service.
+ -  Working experience with virtual machines, containers, and app service. 
