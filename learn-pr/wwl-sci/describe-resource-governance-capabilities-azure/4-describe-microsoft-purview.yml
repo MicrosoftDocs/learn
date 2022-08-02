@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-resource-governance-capabilities-azure.describe-azure-purview
-title: Describe Microsoft Purview
+title: Describe the capabilities in the Microsoft Purview governance portal
 metadata:
-  title: Describe Microsoft Purview
-  description: "Describe Microsoft Purview"
-  ms.date: 05/11/2022
+  title: Describe the capabilities in the Microsoft Purview governance portal
+  description: "Describe the capabilities in the Microsoft Purview governance portal"
+  ms.date: 08/02/2022
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
