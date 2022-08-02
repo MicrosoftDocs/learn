@@ -2,10 +2,7 @@
 uid: learn.wwl.manage-sharepoint-online-use-windows-powershell
 metadata:
   title: Manage SharePoint Online by using Windows PowerShell
-  description: "This module describes
-SharePoint Online, which is a collaboration service that allows to store and
-share information through a web-based interface. The module explains how to
-manage SharePoint Online users and groups with PowerShell."
+  description: "Manage SharePoint Online by using Windows PowerShell"
   ms.date: 08/02/2022
   author: wwlpublish
   ms.author: tonyj
