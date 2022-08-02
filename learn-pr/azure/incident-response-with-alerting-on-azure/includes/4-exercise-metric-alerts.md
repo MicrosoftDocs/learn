@@ -34,29 +34,33 @@ This VM will run a specific configuration that stresses the CPU, and generates t
 ## Create the metric alert through the Azure portal
 
 > [!Note]
-> Wait until the VM is successfully created to proceed to the next exercise. The VM creation process is complete when you see a "Finished .." message in the output.
+> Wait until the VM is successfully created before proceeding to the next exercise. The VM creation process is complete when you see the completed JSON output in the Azure Cloud Shell window.
 
 You use either the Azure portal or the CLI to create a metric alert. In this exercise we'll cover both, starting with the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The Monitor **Overview** pane appears.
+1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Monitor | Overview** pane appears.
 
-1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane appears.
+1. In the left menu pane, select **Metrics**. The **Select a scope** pane appears. The ***Monitor | Metrics** pane appears with the **Select a scope** pane open on the right.
 
-1. On the command bar, select **Create +** and select **Alert rule**. The **Create an alert rule** pane appears.
+1. Enter *virtual* in the **Search to filter items** field. You should see **vm1** appear in the **Scope** list. Select it, and then select **Apply** at the bottom of the pane.
 
     :::image type="content" source="../media/4-create-monitor-rule.png" alt-text="Screenshot that shows the 'Create alert rule' pane.":::
 
-1. Under **Scope**, select the **Select resource** link. The **Select a resource** pane appears.
+1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane appears.
 
-1. The **Filter by subscription** should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
+1. On the command bar, select **+ Create** and select **Alert rule**. The **Create an alert rule** pane appears with the **Scope** section open and the **Select a resource** pane open on the right.
 
-1. Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane.
+1. On the **Select a resource** pane, the **Filter by subscription** should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
+
+1. Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane. 
 
     :::image type="content" source="../media/4-select-resource.png" alt-text="Screenshot showing the 'Select a resource' pane.":::
 
-1. Next, you'll configure the conditional logic for this resource. From the **Create an alert rule** pane, select the **Condition** tab and select the **+ Add condition** link. The **Select a signal** pane appears.
+   The **Create an alert rule** pane reappears with the Scope target resource showing **vm1**.
+
+1. Next, you'll configure the conditional logic for this resource. Select the **Condition** tab and select the **+ Add condition** link. The **Select a signal** pane appears.
 
 1. For **Signal type**, from the dropdown list, select **Metrics**. For **Monitor service**, select **All**.
 
@@ -90,7 +94,12 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
     | Severity | Sev 2 - Warning |
     | Alert rule name | Cpu90PercentAlert |
     | Description | Virtual machine is running at or greater than 90% CPU utilization |
-    | Enable alert rule upon creation | Yes (checked) |
+
+1. Open the **Advanced options** section, and confirm the following values for each setting.
+
+    | Setting | Value |
+    |---------|---------|
+    | Enable upon creation | Yes (checked) |
     | Automatically resolve alerts | Yes (checked) |
 
     :::image type="content" source="../media/4-metric-alert-details.png" alt-text="Screenshot that shows a completed section for alert details.' pane.":::

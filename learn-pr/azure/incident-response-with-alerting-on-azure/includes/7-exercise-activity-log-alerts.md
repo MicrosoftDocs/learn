@@ -70,6 +70,12 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Description | **A VM in your resource group was deleted** |
     | Enable alert rule upon creation | **Check - Yes**
 
+1. Open the **Advanced options** section, and confirm that the following value is set.
+
+    | Setting | Value |
+    |---------|---------|
+    | Enable alert rule upon creation | **Check - Yes**
+
    <!-- ![Screenshot that shows a completed alert details section.](../media/7-all-vm-alert-details.png) -->
 
 1. Select **Review + create** to validate your input.
