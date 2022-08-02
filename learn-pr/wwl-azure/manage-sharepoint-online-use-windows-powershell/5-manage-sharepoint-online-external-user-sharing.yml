@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-sharepoint-online-use-windows-powershell.manage-sharepoint-online-external-user-sharing
+title: Manage SharePoint Online external user sharing by using Windows PowerShell
+metadata:
+  title: Manage SharePoint Online external user sharing by using Windows PowerShell
+  description: "Manage SharePoint Online external user sharing by using Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-manage-sharepoint-online-external-user-sharing.md)]
