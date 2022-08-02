@@ -42,7 +42,7 @@ Other AzureAD cmdlets that you can use to manage groups are listed in the follow
 
 ## Managing groups with Msol cmdlets
 
-You can use the **New-MsolGroup** cmdlet to create security groups. There are no Msol cmdlets to create distribution groups or mail-enabled security groups. The following example create a new security group:
+You can use the **New-MsolGroup** cmdlet to create security groups. There are no Msol cmdlets to create distribution groups or mail-enabled security groups. The following example creates a new security group:
 
 ```powershell
 New-MsolGroup -DisplayName "Marketing Group"
