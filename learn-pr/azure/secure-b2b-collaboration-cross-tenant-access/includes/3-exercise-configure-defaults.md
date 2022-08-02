@@ -1,6 +1,6 @@
-In this exercise, we'll configure cross-tenant access settings that represent the access policies you want to apply to B2B collaboration with other Azure AD organizations. The default settings we configure will apply to all external Azure AD organizations.
+In this exercise, we'll configure default cross-tenant access settings. These settings represent the B2B collaboration policies you generally want to apply to all external Azure AD organizations.
 
-Recall that in the financial institution example, outbound B2B collaboration would be allowed for all of your internal employees. Also by default, all inbound B2B collaboration would be blocked to protect your internal applications. Later, collaboration with a branch organization would be allowed only for all of their users. Here, you'll configure the default cross-tenant access settings for B2B collaboration.
+Recall that in the financial institution example, you want to allow outbound B2B collaboration for all of your internal employees. But you want to protect your internal accounting applications by blocking all inbound B2B collaboration by default. The only users you want to be able to access your internal accounting applications are users from the newly acquired branch, which we'll configure later. Right now, we'll configure your default cross-tenant access settings for B2B collaboration with other Azure AD organizations in general.
 
 ![Diagram of the full financial institution scenario with just the default settings highlighted.](../media/3-scenario-defaults.png)
 
@@ -29,8 +29,8 @@ Here, you'll configure your default outbound settings for B2B collaboration. You
    ![Screenshot highlighting the Edit outbound defaults link.](../media/3-edit-outbound-defaults.png)
 
 1. Select **B2B collaboration**.
-1. With **Users and groups**, under **Access status**, make sure **Allow access** is selected.
-1. Under **Applies to**, make sure **All &lt;your organization name&gt; users** is selected.
+1. With **Users and groups** selected, make sure **Access status** is set to **Allow access**.
+2. Under **Applies to**, make sure **All &lt;your organization name&gt; users** is selected.
 
    ![Screenshot showing users and groups settings with access allowed for all users.](../media/3-default-users-groups-allowed.png)
 
