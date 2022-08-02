@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which feature of Azure Synapse Analytics enables you to transfer data from one store to another and apply transformations to the data at scheduled intervals?"
+    choices:
+    - content: "Serverless SQL pool"
+      isCorrect: false
+      explanation: "Incorrect. Although serverless SQL pools can be used to transform data, there are not primarily a tool for transferring data between data sources."
+    - content: "Apache Spark pool"
+      isCorrect: false
+      explanation: "Incorrect. Although Apache Spark pools can be used to transform data, there are not primarily a tool for transferring data between data sources."
+    - content: "Pipelines"
+      isCorrect: true
+      explanation: "Correct. Pipelines provide a way to encapsulate one or more actions that can be applied to data as it is transferred from one data store to another."
+  - content: "You want to create a data warehouse in Azure Synapse Analytics in which the data is stored and queried in a relational data store. What kind of pool should you create?"
+    choices:
+    - content: "Serverless SQL pool"
+      isCorrect: false
+      explanation: "Incorrect. A serverless SQL pool is used to perform SQL queries on files that are stored in a data lake."
+    - content: "Dedicated SQL pool"
+      isCorrect: true
+      explanation: "Correct. A dedicated SQL pool defines a relational database in which data can be stored and queried."
+    - content: "Apache Spark pool"
+      isCorrect: false
+      explanation: "Incorrect. An Apache Spark pool is used to process data in files in a data lake."
+  - content: "A data analyst wants to analyze data by using Python code combined with text descriptions of the insights gained from the analysis. What should they use to perform the analysis?"
+    choices:
+    - content: "A notebook connected to an Apache Spark pool."
+      isCorrect: true
+      explanation: "Correct. A notebook enables you to interactively run Python code in an Apache Spark pool and embed notes using Markdown."
+    - content: "A SQL script connected to a serverless SQL pool."
+      isCorrect: false
+      explanation: "Incorrect. A serverless SQL pool can be used to run SQL code, not Python."
+    - content: "A KQL script connected to a Data Explorer pool."
+      isCorrect: false
+      explanation: "Incorrect. Data Explorer supports queries written in Kusto Query Language, but not Python."
