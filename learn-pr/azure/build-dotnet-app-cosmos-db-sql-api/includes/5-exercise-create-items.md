@@ -5,8 +5,8 @@ Recall that you can create items within your container using the Azure Cosmos DB
 
 Right now, you have two key requirements:
 
-1. Create an item individually as a single operation
-1. Use a transactional batch to create multiple related items
+01. Create an item individually as a single operation
+01. Use a transactional batch to create multiple related items
 
 :::image type="content" source="../media/project-visual-upload.png" alt-text="Illustration of icons indicating data being uploaded to the cloud." lightbox="../media/project-visual-upload.png" border="false":::
 
@@ -19,7 +19,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+01. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -33,7 +33,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
+01. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -43,11 +43,11 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 In Azure Cosmos DB, you can create, replace, or upsert items to a container. Creating an item requires that the item has a unique identifier. Replacing an item requires that the item already exists. Upsert is the best of both worlds where it will check the unique identifier, and then replace or create the item. For this project, you want to be able to run the app multiple times without errors making *upsert* a clear choice. For our first item, we'll create a category that doesn't have any associated products. Here, you'll implement a single upsert operation with a manually created category.
 
-1. Open the **Program.cs** file again.
+01. Open the **Program.cs** file again.
 
-1. Create a new **Category** instance named **helmets** with the following values:
+01. Create a new **Category** instance named **helmets** with the following values:
 
-    | Field | Value |
+    | Property | Value |
     | --- | --- |
     | **id** | `91f79374-8611-4505-9c28-3bbbf1aa7df7` |
     | **categoryId** | `gear-climb-helmets` |
@@ -59,25 +59,25 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
     );
     ```
 
-1. Create a new **PartitionKey** instance using the same value as the **categoryId** field for the **Category** instance you created.
+01. Create a new **PartitionKey** instance using the same value as the **categoryId** property for the **Category** instance you created.
 
     ```csharp
     PartitionKey helmetsKey = new ("gear-climb-helmets");
     ```
 
-1. Use the **Container.UpsertItemAsync** method to create or replace the item passing in an object for the item to create and a partition key value.
+01. Use the **Container.UpsertItemAsync** method to create or replace the item passing in an object for the item to create and a partition key value.
 
     ```csharp
     ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
     ```
 
-1. Print various properties of the response object to the console including: The unique identifier of the item, the type of the item, and the request charge in RUs.
+01. Print various properties of the response object to the console including: The unique identifier of the item, the type of the item, and the request charge in RUs.
 
     ```csharp
     Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
     ```
 
-1. **Save** the **Program.cs** file.
+01. **Save** the **Program.cs** file.
 
 ## Implement multiple operations as a transactional batch
 
@@ -87,9 +87,9 @@ Now consider a scenario where you want to create multiple products along with a 
 
 In this section, we'll create a transactional batch to create the *tents* category and related products together.
 
-1. Create a new **Category** instance named **helmets** with the following values:
+01. Create a new **Category** instance named **helmets** with the following values:
 
-    | Field | Value |
+    | Property | Value |
     | --- | --- |
     | **id** | `5df21ec5-813c-423e-9ee9-1a2aaead0be4` |
     | **categoryId** | `gear-camp-tents` |
@@ -101,9 +101,9 @@ In this section, we'll create a transactional batch to create the *tents* catego
     );
     ```
 
-1. Create four instances of the **Product** type using these values.
+01. Create four instances of the **Product** type using these values.
 
-    | Field | `cirroa` | `kuloar` | `mammatin` | `nimbolo` |
+    | Property | `cirroa` | `kuloar` | `mammatin` | `nimbolo` |
     | --- | --- | --- | --- | --- |
     | **id** | `e8dddee4-9f43-4d15-9b08-0d7f36adcac8` | `e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa` | `f7653468-c4b8-47c9-97ff-451ee55f4fd5` | `6e3b7275-57d4-4418-914d-14d1baca0979` |
     | **categoryId** | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` |
@@ -150,13 +150,13 @@ In this section, we'll create a transactional batch to create the *tents* catego
     );
     ```
 
-1. Now, create a new **PartitionKey** instance using the `gear-camp-tents` value.
+01. Now, create a new **PartitionKey** instance using the `gear-camp-tents` value.
 
     ```csharp
     PartitionKey tentsKey = new ("gear-camp-tents");
     ```
 
-1. Create a new transactional batch scoped to the `gear-camp-tents` partition key value. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
+01. Create a new transactional batch scoped to the `gear-camp-tents` partition key value. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
 
     ```csharp
     TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
@@ -167,19 +167,19 @@ In this section, we'll create a transactional batch to create the *tents* catego
         .UpsertItem<Product>(nimbolo);
     ```
 
-1. Output a message to the console to indicating that we're starting a batch operation.
+01. Output a message to the console to indicating that we're starting a batch operation.
 
     ```csharp
     Console.WriteLine("[Batch started]");
     ```
 
-1. Use the `TransactionalBatch.ExecuteAsync` method to execute the batch and return a special response type.
+01. Use the `TransactionalBatch.ExecuteAsync` method to execute the batch and return a special response type.
 
     ```csharp
     using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
     ```
 
-1. Using a for loop, iterate through all of the items in the response. First, convert each item to the type `TransactionalBatchOperationResult` using your `Item` base class as the generic. Then, print the unique identifier and type of the response object.
+01. Using a for loop, iterate through all of the items in the response. First, convert each item to the type `TransactionalBatchOperationResult` using your `Item` base class as the generic. Then, print the unique identifier and type of the response object.
 
     ```csharp
     for (int i = 0; i < batchResponse.Count; i++)
@@ -189,13 +189,13 @@ In this section, we'll create a transactional batch to create the *tents* catego
     }
     ```
 
-1. Output another message to the console indicating that the batch is complete. Include the request charge for the entire batch in this message.
+01. Output another message to the console indicating that the batch is complete. Include the request charge for the entire batch in this message.
 
     ```csharp
     Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
     ```
 
-1. **Save** the **Program.cs** file.
+01. **Save** the **Program.cs** file.
 
 ## Check your work
 
@@ -203,13 +203,13 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
 ### [Run application](#tab/run-app)
 
-1. Run the .NET application in the terminal
+01. Run the .NET application in the terminal
 
     ```dotnetcli
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+01. Observe the output of running the application. The output should match the example here.
 
     ```output
     ...
@@ -228,7 +228,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
 ### [Review code](#tab/review-code)
 
-1. Review the **Item.cs** code file to make sure that your code matches this sample.
+01. Review the **Item.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Item(
@@ -238,7 +238,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
     );
     ```
 
-1. Review the **Category.cs** code file to make sure that your code matches this sample.
+01. Review the **Category.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Category(
@@ -252,7 +252,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
     );
     ```
 
-1. Review the **Product.cs** code file to make sure that your code matches this sample.
+01. Review the **Product.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Product(
@@ -270,7 +270,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
     );
     ```
 
-1. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the **Program.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;

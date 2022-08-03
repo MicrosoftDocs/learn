@@ -2,8 +2,8 @@ Although the application already meets all of the requirements, there's still on
 
 There are two key requirements at this time:
 
-1. Build a new query using LINQ syntax
-1. Convert the query to a feed iterator to get results
+01. Build a new query using LINQ syntax
+01. Convert the query to a feed iterator to get results
 
 :::image type="content" source="../media/project-visual-query-linq.png" alt-text="Illustration of icons indicating data being queried using a LINQ expression." lightbox="../media/project-visual-query-linq.png" border="false":::
 
@@ -16,7 +16,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+01. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -30,7 +30,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
+01. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -38,26 +38,26 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 ## Query using LINQ expressions
 
-Your team wants a unique query that returns all *products* within the container regardless of category. Recall that we used the **type** field to separate our category items from the individual product items. Here, we're going to create a cross-partition query using the LINQ method syntax.
+Your team wants a unique query that returns all *products* within the container regardless of category. Recall that we used the **type** property to separate our category items from the individual product items. Here, we're going to create a cross-partition query using the LINQ method syntax.
 
 > [!TIP]
 > Since we are querying across multiple categories, this will make our query cross-partition. This query could potentially use more RUs than a query that is scoped to a single logical partition key value.
 
-1. Open the **Program.cs** file.
+01. Open the **Program.cs** file.
 
-1. At the beginning of the file, add a using directive for the **Microsoft.Azure.Cosmos.Linq** namespace.
+01. At the beginning of the file, add a using directive for the **Microsoft.Azure.Cosmos.Linq** namespace.
 
     ```csharp
     using Microsoft.Azure.Cosmos.Linq;
     ```
 
-1. Create a new LINQ queryable by using the **Container.GetItemLinqQueryable\<\>** method.
+01. Create a new LINQ queryable by using the **Container.GetItemLinqQueryable\<\>** method.
 
     ```csharp
     IOrderedQueryable<Product> queryable = container.GetItemLinqQueryable<Product>();
     ```
 
-1. Build a LINQ expression using the **Where** and **OrderBy** methods and store the expression in a new variable.
+01. Build a LINQ expression using the **Where** and **OrderBy** methods and store the expression in a new variable.
 
     ```csharp
     var matches = queryable
@@ -66,25 +66,25 @@ Your team wants a unique query that returns all *products* within the container 
         .OrderBy(p => p.price);
     ```
 
-1. Use the **IOrderedQueryable\<\>.ToFeedIterator** method to get a feed iterator from the LINQ expression.
+01. Use the **IOrderedQueryable\<\>.ToFeedIterator** method to get a feed iterator from the LINQ expression.
 
     ```csharp
     using FeedIterator<Product> linqFeed = matches.ToFeedIterator();
     ```
 
-1. Output a message to the console.
+01. Output a message to the console.
 
     ```csharp
     Console.WriteLine($"[Start LINQ query]");
     ```
 
-1. **Save** the **Program.cs** file.
+01. **Save** the **Program.cs** file.
 
 ## Paginate LINQ query results
 
 Since we're querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category doesn't have any matching products. If we didn't return all possible pages, our application may inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you'll again use a *while* and *foreach* loop in C# to iterate over *all* result pages. The code should be similar to how you used a feed iterator previously.
 
-1. Create a *while* loop that will iterate until the feed iterator doesn't have any more pages.
+01. Create a *while* loop that will iterate until the feed iterator doesn't have any more pages.
 
     ```csharp
     while (linqFeed.HasMoreResults)
@@ -93,19 +93,19 @@ Since we're querying across multiple logical partitions, we need to make sure th
     }
     ```
 
-1. Inside of the *while* loop, get a new page of results.
+01. Inside of the *while* loop, get a new page of results.
 
     ```csharp
     FeedResponse<Product> page = await linqFeed.ReadNextAsync();
     ```
 
-1. Still inside of the *while* loop, output the current page's request charge.
+01. Still inside of the *while* loop, output the current page's request charge.
 
     ```csharp
     Console.WriteLine($"[Page RU charge]:\t{page.RequestCharge}");
     ```
 
-1. Still inside of the *while* loop, create a new **foreach** loop to iterate over the page's items.
+01. Still inside of the *while* loop, create a new **foreach** loop to iterate over the page's items.
 
     ```csharp
     foreach (Product item in page)
@@ -113,13 +113,13 @@ Since we're querying across multiple logical partitions, we need to make sure th
     }
     ```
 
-1. Inside of the *foreach* loop, write the individual items to the console.
+01. Inside of the *foreach* loop, write the individual items to the console.
 
     ```csharp
     Console.WriteLine($"[Returned item]:\t{item}");
     ```
 
-1. **Save** the **Program.cs** file.
+01. **Save** the **Program.cs** file.
 
 ## Check your work
 
@@ -127,13 +127,13 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 
 ### [Run application](#tab/run-app)
 
-1. Run the .NET application in the terminal
+01. Run the .NET application in the terminal
 
     ```dotnetcli
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+01. Observe the output of running the application. The output should match the example here.
 
     ```output
     [Start LINQ query]
@@ -148,7 +148,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 
 ### [Review code](#tab/review-code)
 
-1. Review the **Item.cs** code file to make sure that your code matches this sample.
+01. Review the **Item.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Item(
@@ -158,7 +158,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     );
     ```
 
-1. Review the **Category.cs** code file to make sure that your code matches this sample.
+01. Review the **Category.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Category(
@@ -172,7 +172,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     );
     ```
 
-1. Review the **Product.cs** code file to make sure that your code matches this sample.
+01. Review the **Product.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Product(
@@ -190,7 +190,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     );
     ```
 
-1. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the **Program.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;

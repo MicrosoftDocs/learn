@@ -2,8 +2,8 @@ Now you can create the various resources; such as databases, containers, and ite
 
 Right now, you have a few key requirements:
 
-1. Create a database if it doesn't already exist
-1. Create a container if it doesn't already exist
+01. Create a database if it doesn't already exist
+01. Create a container if it doesn't already exist
 
 :::image type="content" source="../media/project-visual-resources.png" alt-text="Illustration of icons indicating Azure Cosmos DB resources are created in the cloud." lightbox="../media/project-visual-resources.png" border="false":::
 
@@ -16,7 +16,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+01. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -30,7 +30,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
+01. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -40,9 +40,9 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 The SDK contains useful methods that will only create a new resource if it doesn't already exist. By using these methods, you can run the application multiple times without worrying about exceptions raised by conflicts. Here, you'll create a database.
 
-1. Open the **Program.cs** file.
+01. Open the **Program.cs** file.
 
-1. Create, or get, a new database by calling `CosmosClient.CreateDatabaseIfNotExistsAsync`. Store the result in a variable named **database**. Be sure to set these parameters:
+01. Create, or get, a new database by calling `CosmosClient.CreateDatabaseIfNotExistsAsync`. Store the result in a variable named **database**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
@@ -54,7 +54,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
     );
     ```
 
-1. Output the unique identifier for the database.
+01. Output the unique identifier for the database.
 
     ```csharp
     Console.WriteLine($"[Database created]:\t{database.Id}");
@@ -64,7 +64,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 Here, you'll create a container with a specific "slice" of the shared throughput from the database.
 
-1. Create, or get, a new container by calling `Database.CreateContainerIfNotExistsAsync`. Store the result in a variable named **container**. Be sure to set these parameters:
+01. Create, or get, a new container by calling `Database.CreateContainerIfNotExistsAsync`. Store the result in a variable named **container**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
@@ -80,33 +80,33 @@ Here, you'll create a container with a specific "slice" of the shared throughput
     );
     ```
 
-1. Now, output the unique identifier for the container.
+01. Now, output the unique identifier for the container.
 
     ```csharp
     Console.WriteLine($"[Container created]:\t{container.Id}");
     ```
 
-1. **Save** the **Program.cs** file.
+01. **Save** the **Program.cs** file.
 
 ## Create record types for items
 
 C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable. Records also have an easy to read syntax and are quick to create with only a few lines of code. In this section, you'll create a base type for all items and individual types for each "kind" of item.
 
-1. Using the terminal, create a new file named **Item.cs**.
+01. Using the terminal, create a new file named **Item.cs**.
 
     ```bash
     touch Item.cs
     ```
 
-1. Refresh the code editor by invoking the `code` command again.
+01. Refresh the code editor by invoking the `code` command again.
 
     ```bash
     code .
     ```
 
-1. Open the **Item.cs** file.
+01. Open the **Item.cs** file.
 
-1. Create a base type named **Item** that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
+01. Create a base type named **Item** that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
 
     ```csharp
     public record Item(
@@ -116,17 +116,17 @@ C# data can be represented using various types including classes, structs, and r
     );
     ```
 
-1. **Save** the **Item.cs** file.
+01. **Save** the **Item.cs** file.
 
-1. Create a new file named **Category.cs** and refresh the code editor.
+01. Create a new file named **Category.cs** and refresh the code editor.
 
     ```bash
     touch Category.cs && code .
     ```
 
-1. Open the **Category.cs** file.
+01. Open the **Category.cs** file.
 
-1. Create a new type named **Category** that inherits from the **Item** type. Ensure the type passes its values to the base implementation, and set the **type** variable to output the name of the **Category** type.
+01. Create a new type named **Category** that inherits from the **Item** type. Ensure the type passes its values to the base implementation, and set the **type** variable to output the name of the **Category** type.
 
     ```csharp
     public record Category(
@@ -140,17 +140,17 @@ C# data can be represented using various types including classes, structs, and r
     );
     ```
 
-1. **Save** the **Category.cs** file.
+01. **Save** the **Category.cs** file.
 
-1. Create a new file named **Product.cs** and refresh the code editor.
+01. Create a new file named **Product.cs** and refresh the code editor.
 
     ```bash
     touch Product.cs && code .
     ```
 
-1. Open the **Product.cs** file.
+01. Open the **Product.cs** file.
 
-1. Create a new type named **Product** that inherits from **Item** and adds a few new fields: `name`, `price`, `archived`, and `quantity`.
+01. Create a new type named **Product** that inherits from **Item** and adds a few new properties: `name`, `price`, `archived`, and `quantity`.
 
     ```csharp
     public record Product(
@@ -168,7 +168,7 @@ C# data can be represented using various types including classes, structs, and r
     );
     ```
 
-1. **Save** the **Product.cs** file.
+01. **Save** the **Product.cs** file.
 
 ## Check your work
 
@@ -176,13 +176,13 @@ Your app now creates a database and container. The methods you used to create th
 
 ### [Run application](#tab/run-app)
 
-1. Run the .NET application in the terminal
+01. Run the .NET application in the terminal
 
     ```dotnetcli
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+01. Observe the output of running the application. The output should match the example here.
 
     ```output
     ...
@@ -192,7 +192,7 @@ Your app now creates a database and container. The methods you used to create th
 
 ### [Review code](#tab/review-code)
 
-1. Review the **Item.cs** code file to make sure that your code matches this sample.
+01. Review the **Item.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Item(
@@ -202,7 +202,7 @@ Your app now creates a database and container. The methods you used to create th
     );
     ```
 
-1. Review the **Category.cs** code file to make sure that your code matches this sample.
+01. Review the **Category.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Category(
@@ -216,7 +216,7 @@ Your app now creates a database and container. The methods you used to create th
     );
     ```
 
-1. Review the **Product.cs** code file to make sure that your code matches this sample.
+01. Review the **Product.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     public record Product(
@@ -234,7 +234,7 @@ Your app now creates a database and container. The methods you used to create th
     );
     ```
 
-1. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the **Program.cs** code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;

@@ -1,4 +1,4 @@
-The .NET SDK client library for the Azure Cosmos DB SQL API enables client applications to connect to Azure Cosmos via the SQL API endpoint. Many of the SQL API's resources, such as containers, databases, and items, can be created using the SDK. The .NET SDK is useful for business applications that need to perform common create, read, update, and delete (CRUD) operations from code. The .NET SDK also supports querying and batching of operations.
+The .NET SDK for the Azure Cosmos DB SQL API enables client applications to connect to Azure Cosmos via the SQL API endpoint. Many of the SQL API's resources, such as containers, databases, and items, can be created using the SDK. The .NET SDK is useful for business applications that need to perform common create, read, update, and delete (CRUD) operations from code. The .NET SDK also supports querying and batching of operations.
 
 ## Example scenario
 

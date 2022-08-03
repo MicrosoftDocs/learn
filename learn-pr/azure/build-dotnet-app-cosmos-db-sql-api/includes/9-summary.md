@@ -11,7 +11,7 @@ With the .NET SDK for Azure Cosmos DB SQL API, you were able to illustrate the b
 ## References
 
 * **Quickstart**
-  * [Azure Cosmos DB SQL API client library for .NET](/azure/cosmos-db/sql/quickstart-dotnet)
+  * [Azure Cosmos DB SQL API SDK for .NET](/azure/cosmos-db/sql/quickstart-dotnet)
 * **Developer reference**
   * [Get started with Azure Cosmos DB SQL API and .NET](/azure/cosmos-db/sql/how-to-dotnet-get-started)
   * [Create a database in Azure Cosmos DB SQL API using .NET](/azure/cosmos-db/sql/how-to-dotnet-create-database)
