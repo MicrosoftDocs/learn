@@ -170,11 +170,17 @@ The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 
 The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.
 
+## Test the app
+
+That's it! You've completely implemented the Pizza List page. Let's test it with the following steps:
+
 1. Ensure you've saved all your changes, and then run the following .NET CLI command in the terminal:
 
     ```dotnetcli
     dotnet run
     ```
+
+    The app builds and runs. If there are any build errors, resolve them and then attempt to run again.
 
 1. Open the app in your browser by browsing to the HTTPS URL.
 
