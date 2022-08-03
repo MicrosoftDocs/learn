@@ -82,7 +82,11 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. Select **Create**.
 
-Recipients added to the configured action group (operations team) will receive a notification when they're added to the action group, when the alert is activated, and when the alert is triggered.
+Recipients added to the configured action group (operations team) will receive a notification:
+
+- When they're added to the action group
+- When the alert is activated
+- When the alert is triggered
 
 It can take up to five minutes for an activity log alert rule to become active. In this exercise, if you delete the virtual machine before the rule has been deployed, the alert rule might not be triggered. Because of this delay, you might not see the same results in the following steps after you delete the VM.
 
@@ -98,7 +102,7 @@ To trigger an alert, you need to delete the Linux VM machine that you created in
 
 1. To confirm the deletion, select **Yes**.
 
-1. In the title bar, select the **Notifications** icon and wait until vm1 is successfully deleted.
+1. In the title bar, select the **Notifications** icon and wait until **vm1** is successfully deleted.
 
 ## View your activity log alerts in Azure Monitor
 

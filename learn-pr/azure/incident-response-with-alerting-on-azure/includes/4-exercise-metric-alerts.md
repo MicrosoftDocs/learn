@@ -33,8 +33,8 @@ This VM will run a specific configuration that stresses the CPU, and generates t
 
 ## Create the metric alert through the Azure portal
 
-> [!Note]
-> Wait until the VM is successfully created before proceeding to the next exercise. The VM creation process is complete when you see the completed JSON output in the Azure Cloud Shell window.
+> [!NOTE]
+> Wait until the VM is successfully created before proceeding with the exercise. The VM creation process is complete when you see the completed JSON output in the Azure Cloud Shell window.
 
 You use either the Azure portal or the CLI to create a metric alert. In this exercise we'll cover both, starting with the Azure portal.
 
@@ -42,11 +42,11 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Monitor | Overview** pane appears.
 
-1. In the left menu pane, select **Metrics**. The **Select a scope** pane appears. The ***Monitor | Metrics** pane appears with the **Select a scope** pane open on the right.
+1. First, you'll set the *scope* of the resources to be monitored. In the left menu pane, select **Metrics**. The ***Monitor | Metrics** pane appears with the **Select a scope** pane open on the right.
 
-1. Enter *virtual* in the **Search to filter items** field. You should see **vm1** appear in the **Scope** list. Select it, and then select **Apply** at the bottom of the pane.
+1. Enter **virtual** in the **Search to filter items** field. You should see **vm1** in the **Scope** list. Select it, and then select **Apply** at the bottom of the pane.
 
-    :::image type="content" source="../media/4-create-monitor-rule.png" alt-text="Screenshot that shows the 'Create alert rule' pane.":::
+    :::image type="content" source="../media/4-select-resource-scope.png" alt-text="Screenshot that shows the 'Select a scope' pane, with `vm1` selected.":::
 
 1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane appears.
 
@@ -102,7 +102,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
     | Enable upon creation | Yes (checked) |
     | Automatically resolve alerts | Yes (checked) |
 
-    :::image type="content" source="../media/4-metric-alert-details.png" alt-text="Screenshot that shows a completed section for alert details.' pane.":::
+    :::image type="content" source="../media/4-metric-alert-details.png" alt-text="Screenshot that shows the completed settings for the Alert rule details section.":::
 
 1. Select **Review + create** to validate your input.
 
@@ -142,7 +142,7 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 
 ## View your metric alerts in Azure Monitor
 
-In the example, you set up an Ubuntu VM, and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80 percent and 90 percent.
+In this exercise, you set up an Ubuntu VM, and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80 percent and 90 percent.
 
 It might take 10 minutes before you see the alerts show up in your portal.
 
