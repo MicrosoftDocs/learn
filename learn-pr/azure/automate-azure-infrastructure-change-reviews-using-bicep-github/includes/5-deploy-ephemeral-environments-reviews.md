@@ -54,7 +54,7 @@ In a previous exercise unit in this module, you ran a command to create a federa
 repo:my-github-user/my-repo:pull_request
 ```
 
-The `pull-request` near the end of the string specifies that the federated credential works with pull request validaiton workflows.
+The `pull-request` near the end of the string specifies that the federated credential works with pull request validation workflows.
 
 ## Cost management
 
