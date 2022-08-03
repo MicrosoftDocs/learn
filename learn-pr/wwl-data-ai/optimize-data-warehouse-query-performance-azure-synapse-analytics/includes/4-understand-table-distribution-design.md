@@ -34,7 +34,7 @@ There are performance considerations for the selection of a distribution column,
 
 When choosing a hash column it's best to choose a column that will evenly distribute the data across all distributions that will allow for approximately the same number of rows within each distribution.
 - Choose a column with a high number of unique values, for instance if your organization may operate in all 50 states within the United States, ensure that you have a good distribution of each StateID to prevent skew which impacts the time each query results is returned and impacts performance.
-- Choose a column without Null values or very few null values, this can also result in an inbalance of data on a single distribution.
+- Choose a column without Null values or very few null values, this can also result in an imbalance of data on a single distribution.
 - Don't choose a date column as all data for a specific date will land in the same place and if it's a daily report that line of business users filter using the same date, only 1 of the 60 distributions will bear the bulk of the workload.
 
 
