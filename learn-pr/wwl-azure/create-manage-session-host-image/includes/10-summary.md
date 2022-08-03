@@ -3,7 +3,7 @@ In this module, you learned how to:
  -  Create a managed VM image for an Azure Virtual Desktop-specific configuration.
  -  Modify a session host image.
  -  Plan for image update and management.
- -  Create and use a Shared Image Gallery (SIG) for Azure Virtual Desktop.
+ -  Create and use an Azure Compute Gallery for Azure Virtual Desktop.
  -  Install language packs in Azure Virtual Desktop.
 
 ## Learn more
