@@ -48,4 +48,3 @@ units:
 - learn.django.deployment.summary
 badge:
   uid: learn.django.deployment.badge
-hidden: true

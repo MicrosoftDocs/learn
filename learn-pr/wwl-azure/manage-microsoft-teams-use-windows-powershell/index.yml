@@ -1,0 +1,54 @@
+### YamlMime:Module
+uid: learn.wwl.manage-microsoft-teams-use-windows-powershell
+metadata:
+  title: Manage Microsoft Teams by using Windows PowerShell
+  description: "This module explains how to use Microsoft Teams PowerShell module to perform tasks such as creating teams and managing user permissions."
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Microsoft Teams by using Windows PowerShell
+summary: This module explains how to use Microsoft Teams PowerShell module to perform tasks such as creating teams and managing user permissions.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Describe the Microsoft Teams PowerShell module.
+  - Explain how to connect to Microsoft Teams by using PowerShell.
+  - Manage Microsoft Teams with the Microsoft Teams PowerShell module.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  *   Familiarity to administer remote computers with Windows PowerShell
+  *   Familiarity to manage Azure resources with Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-services
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.manage-microsoft-teams-use-windows-powershell.introduction
+- learn.wwl.manage-microsoft-teams-use-windows-powershell.review-powershell-module
+- learn.wwl.manage-microsoft-teams-use-windows-powershell.install-powershell-module
+- learn.wwl.manage-microsoft-teams-use-windows-powershell.manage-teams-powershell-module
+- learn.wwl.manage-microsoft-teams-use-windows-powershell.knowledge-check
+- learn.wwl.manage-microsoft-teams-use-windows-powershell.summary
+badge:
+  uid: learn.wwl.manage-microsoft-teams-by-using-windows-powershell.badge

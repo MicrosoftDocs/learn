@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.pass-pipeline-objects.use-manual-parameters-override-pipeline
+title: Use manual parameters to override the pipeline
+metadata:
+  title: Use manual parameters to override the pipeline
+  description: "Use manual parameters to override the pipeline"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-use-manual-parameters-override-pipeline.md)]
