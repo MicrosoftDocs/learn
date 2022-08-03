@@ -10,7 +10,7 @@ Your moved resources don't change location. For example, if you have a storage a
 
 Depending on the resource type, you can move your resources between subscriptions, or between resource groups within the same subscription.
 
-For our scenario, we just need to move a pair of storage accounts to a different resource group within the same subscription. If, for billing reasons, we needed to move something like an Azure web app and all its dependent resources to a different subscription, that might include more steps. As mentioned in Unit 2, you'd need to move all dependent resources into one resource group. Then, you can move those resources into a new resource group under a different subscription. The following diagram shows the steps you might need to take. This example includes a resource with one dependent resource in a separate resource group.
+For our scenario, we just need to move a pair of storage accounts to a different resource group within the same subscription. If for billing reasons, we needed to move something like an Azure web app and all its dependent resources to a different subscription, that might include more steps. As mentioned in Unit 2, you'd need to move all dependent resources into one resource group. Then, you can move those resources into a new resource group under a different subscription. The following diagram shows the steps you might need to take. This example includes a resource with one dependent resource in a separate resource group.
 
 ![Diagram that shows three steps to take when moving resources in multiple resource groups to a resource group in another subscription.](../media/6-cross-subscription-move-scenario.png)
 
