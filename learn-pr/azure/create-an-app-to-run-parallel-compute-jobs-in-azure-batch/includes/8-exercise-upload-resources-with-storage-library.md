@@ -196,19 +196,15 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
     The above code creates a SAS url with limited access (2 hours) for the task to enable it to write the converted animated GIFs to the Blob storage.
 
-1. Select the ellipses in the top-right corner of the code editor.
-
-1. Select **Close Editor**, and in the dialog select **Save**.
+1. In the code editor, right-click and select **Save**, and then select **Quit**.
 
 ## Test the file uploads
-
 
 1. In the Cloud Shell, create an InputFiles folder in your app directory. 
 
     ```bash
     mkdir InputFiles
     ```
-
 
 1. Run the following `curl` commands in the Cloud Shell to copy a set of sample pet videos from the module's GitHub repo into the local InputFiles folder.
 
@@ -241,8 +237,12 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
     Storage Name: [your storage account name], Key: [your storage key]
     Creating container [input].
     Creating container [output].
-    Uploading file ~\cutifypets\InputFiles\lick.mp4 to container [input]...
-    Uploading file ~\cutifypets\InputFiles\lick2.mp4 to container [input]...
+    Uploading file ~\cutifypets\InputFiles\3.mp4 to container [input]...
+    Uploading file ~\cutifypets\InputFiles\2.mp4 to container [input]...
+    Uploading file ~\cutifypets\InputFiles\4.mp4 to container [input]...
+    Uploading file ~\cutifypets\InputFiles\1.mp4 to container [input]...
+    Uploading file ~\cutifypets\InputFiles\5.mp4 to container [input]...
+    Uploading file ~\cutifypets\InputFiles\6.mp4 to container [input]...
     Creating pool [WinFFmpegPool]...
     ```
     <!-- TODO change output to match all the files that we are having the learner upload -->
@@ -251,12 +251,12 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
 1. Return to the Azure portal, on the left select Storage accounts, then select the storage account your created in the first exercise.
 
-    ![Screenshot of a user's storage accounts.](../media/8-storage-account.png)
+    :::image type="content" source="../media/8-storage-accounts.png" alt-text="Screenshot that shows a user's storage accounts.":::
 
-1. In the Azure portal, on the left select Blobs, then select the input folder.
+1. In the Azure portal, on the left select **Containers**, then select the input folder.
 
-    ![Screenshot of the created containers in blob storage.](../media/8-containers-created-successfully.png)
+    :::image type="content" source="../media/8-storage-account-input-container.png" alt-text="Screenshot that shows the created containers in blob storage.":::
 
 1. The folder contains the uploaded videos.
 
-    ![Screenshot of the two uploaded video files.](../media/8-videos-uploaded.png)
+    :::image type="content" source="../media/8-storage-account-uploaded-files.png" alt-text="Screenshot that shows the uploaded video files.":::

@@ -140,9 +140,7 @@ We'll be making several asynchronous calls to cloud services, so the first thing
 
 ## Test the app
 
-1. Select the ellipses in the top-right corner of the code editor.
-
-1. Select **Close Editor**, and in the dialog select **Save**.
+1. In the code editor, right-click and select **Save**, and then select **Quit**.
 
 1. In the Cloud Shell, compile and run the app with the following command.
 
