@@ -33,7 +33,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
-    cd ~/clouddrive/inventorytool && code .
+    cd ~/clouddrive/inventory && code .
     ```
 
 ## Query using LINQ expressions
@@ -148,7 +148,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 
 ### [Review code](#tab/review-code)
 
-01. Review the **Item.cs** code file to make sure that your code matches this sample.
+01. Review the *Item.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Item(
@@ -158,7 +158,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     );
     ```
 
-01. Review the **Category.cs** code file to make sure that your code matches this sample.
+01. Review the *Category.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Category(
@@ -172,7 +172,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     );
     ```
 
-01. Review the **Product.cs** code file to make sure that your code matches this sample.
+01. Review the *Product.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Product(
@@ -190,19 +190,24 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     );
     ```
 
-01. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
-    using Microsoft.Azure.Cosmos.Linq;
+    using Microsoft.Azure.Cosmos.Fluent;
     
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
     
-    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    Console.WriteLine($"[Connection string]:\t{connectionString}");
     
-    using CosmosClient client = new(
-        connectionString: cosmosConnectionString
-    );
+    CosmosSerializationOptions serializerOptions = new()
+    {
+        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+    };
+    
+    using CosmosClient client = new CosmosClientBuilder(connectionString)
+        .WithSerializerOptions(serializerOptions)
+        .Build();
     
     Console.WriteLine("[Client connected]");
 
@@ -220,59 +225,59 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     
     Console.WriteLine($"[Container created]:\t{container.Id}");
 
-    Category helmets = new (
-        id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
-        categoryId: "gear-climb-helmets"
+    Category helmets = new(
+        Id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
+        CategoryId: "gear-climb-helmets"
     );
     
-    PartitionKey helmetsKey = new ("gear-climb-helmets");
+    PartitionKey helmetsKey = new("gear-climb-helmets");
     
     ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
     
-    Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
+    Console.WriteLine($"[New item created]:\t{response.Resource.Id}\t(Type: {response.Resource.Type})\t(RUs: {response.RequestCharge})");
     
-    Category tents = new (
-        id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
-        categoryId: "gear-camp-tents"
+    Category tents = new(
+        Id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
+        CategoryId: "gear-camp-tents"
     );
     
-    Product cirroa = new (
-        id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
-        categoryId: "gear-camp-tents",
-        name: "Cirroa Tent", 
-        price: 490.00m, 
-        archived: false, 
-        quantity: 15
+    Product cirroa = new(
+        Id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
+        CategoryId: "gear-camp-tents",
+        Name: "Cirroa Tent", 
+        Price: 490.00m, 
+        Archived: false, 
+        Quantity: 15
     );
     
-    Product kuloar = new (
-        id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
-        categoryId: "gear-camp-tents",
-        name: "Kuloar Tent", 
-        price: 530.00m, 
-        archived: false, 
-        quantity: 8
+    Product kuloar = new(
+        Id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
+        CategoryId: "gear-camp-tents",
+        Name: "Kuloar Tent", 
+        Price: 530.00m, 
+        Archived: false, 
+        Quantity: 8
     );
     
-    Product mammatin = new (
-        id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
-        categoryId: "gear-camp-tents",
-        name: "Mammatin Tent", 
-        price: 0.00m, 
-        archived: true, 
-        quantity: 0
+    Product mammatin = new(
+        Id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
+        CategoryId: "gear-camp-tents",
+        Name: "Mammatin Tent", 
+        Price: 0.00m, 
+        Archived: true, 
+        Quantity: 0
     );
     
-    Product nimbolo = new (
-        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
-        categoryId: "gear-camp-tents",
-        name: "Nimbolo Tent", 
-        price: 330.00m, 
-        archived: false, 
-        quantity: 35
+    Product nimbolo = new(
+        Id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+        CategoryId: "gear-camp-tents",
+        Name: "Nimbolo Tent", 
+        Price: 330.00m, 
+        Archived: false, 
+        Quantity: 35
     );
     
-    PartitionKey tentsKey = new ("gear-camp-tents");
+    PartitionKey tentsKey = new("gear-camp-tents");
     
     TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
         .UpsertItem<Category>(tents)
@@ -288,12 +293,12 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     for (int i = 0; i < batchResponse.Count; i++)
     {
         TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
-        Console.WriteLine($"[New item created]:\t{result.Resource.id}\t(Type: {result.Resource.type})");
+        Console.WriteLine($"[New item created]:\t{result.Resource.Id}\t(Type: {result.Resource.Type})");
     }
     
     Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
 
-    PartitionKey readKey = new ("gear-climb-helmets");
+    PartitionKey readKey = new("gear-climb-helmets");
     
     ItemResponse<Category> readResponse = await container.ReadItemAsync<Category>(
         id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
@@ -332,7 +337,7 @@ Your app now uses LINQ to build a cross-partition query that your developer team
         }
     }
     
-    Console.WriteLine($"[SQL query metrics]:\t(RUs: {totalRequestCharge})");  
+    Console.WriteLine($"[SQL query metrics]:\t(RUs: {totalRequestCharge})");    
     ```
 
 ---

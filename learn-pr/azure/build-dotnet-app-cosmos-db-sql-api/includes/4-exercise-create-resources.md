@@ -33,7 +33,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
-    cd ~/clouddrive/inventorytool && code .
+    cd ~/clouddrive/inventory && code .
     ```
 
 ## Create a database
@@ -42,7 +42,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 01. Open the *Program.cs* file.
 
-01. Create, or get, a new database by calling `CosmosClient.CreateDatabaseIfNotExistsAsync`. Store the result in a variable named **database**. Be sure to set these parameters:
+01. Create, or get, a new database by calling <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync?displayProperty=fullName>. Store the result in a variable named **database**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
@@ -64,7 +64,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 Here, you'll create a container with a specific "slice" of the shared throughput from the database.
 
-01. Create, or get, a new container by calling `Database.CreateContainerIfNotExistsAsync`. Store the result in a variable named **container**. Be sure to set these parameters:
+01. Create, or get, a new container by calling <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync?displayProperty=fullName>. Store the result in a variable named **container**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
@@ -92,7 +92,7 @@ Here, you'll create a container with a specific "slice" of the shared throughput
 
 C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable. Records also have an easy to read syntax and are quick to create with only a few lines of code. In this section, you'll create a base type for all items and individual types for each "kind" of item.
 
-01. Using the terminal, create a new file named **Item.cs**.
+01. Using the terminal, create a new file named *Item.cs*.
 
     ```bash
     touch Item.cs
@@ -110,15 +110,15 @@ C# data can be represented using various types including classes, structs, and r
 
     ```csharp
     public record Item(
-        string id,
-        string categoryId,
-        string type
+        string Id,
+        string CategoryId,
+        string Type
     );
     ```
 
 01. **Save** the *Item.cs* file.
 
-01. Create a new file named **Category.cs** and refresh the code editor.
+01. Create a new file named *Category.cs* and refresh the code editor.
 
     ```bash
     touch Category.cs && code .
@@ -130,19 +130,18 @@ C# data can be represented using various types including classes, structs, and r
 
     ```csharp
     public record Category(
-        string id,
-        string categoryId,
-        string type = nameof(Category)
+        string Id,
+        string CategoryId
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Category)
     );
     ```
 
 01. **Save** the *Category.cs* file.
 
-01. Create a new file named **Product.cs** and refresh the code editor.
+01. Create a new file named *Product.cs* and refresh the code editor.
 
     ```bash
     touch Product.cs && code .
@@ -154,17 +153,16 @@ C# data can be represented using various types including classes, structs, and r
 
     ```csharp
     public record Product(
-        string id, 
-        string categoryId, 
-        string name, 
-        decimal price, 
-        bool archived, 
-        int quantity,
-        string type = nameof(Product)
+        string Id, 
+        string CategoryId, 
+        string Name, 
+        decimal Price, 
+        bool Archived, 
+        int Quantity
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Product)
     );
     ```
 
@@ -192,60 +190,64 @@ Your app now creates a database and container. The methods you used to create th
 
 ### [Review code](#tab/review-code)
 
-01. Review the **Item.cs** code file to make sure that your code matches this sample.
+01. Review the *Item.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Item(
-        string id,
-        string categoryId,
-        string type
+        string Id,
+        string CategoryId,
+        string Type
     );
     ```
 
-01. Review the **Category.cs** code file to make sure that your code matches this sample.
+01. Review the *Category.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Category(
-        string id,
-        string categoryId,
-        string type = nameof(Category)
+        string Id,
+        string CategoryId
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Category)
     );
     ```
 
-01. Review the **Product.cs** code file to make sure that your code matches this sample.
+01. Review the *Product.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Product(
-        string id, 
-        string categoryId, 
-        string name, 
-        decimal price, 
-        bool archived, 
-        int quantity,
-        string type = nameof(Product)
+        string Id, 
+        string CategoryId, 
+        string Name, 
+        decimal Price, 
+        bool Archived, 
+        int Quantity
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Product)
     );
     ```
 
-01. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
+    using Microsoft.Azure.Cosmos.Fluent;
     
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
     
-    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    Console.WriteLine($"[Connection string]:\t{connectionString}");
     
-    using CosmosClient client = new(
-        connectionString: cosmosConnectionString
-    );
+    CosmosSerializationOptions serializerOptions = new()
+    {
+        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+    };
+    
+    using CosmosClient client = new CosmosClientBuilder(connectionString)
+        .WithSerializerOptions(serializerOptions)
+        .Build();
     
     Console.WriteLine("[Client connected]");
 

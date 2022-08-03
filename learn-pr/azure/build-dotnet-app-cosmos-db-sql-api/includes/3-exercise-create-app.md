@@ -69,16 +69,16 @@ Azure Cloud Shell persists files across sessions using Azure Files. A file share
     cd ~/clouddrive
     ```
 
-01. Create a new directory named *inventorytool* to be persisted across sessions.
+01. Create a new directory named *inventory* to be persisted across sessions.
 
     ```bash
-    mkdir inventorytool
+    mkdir inventory
     ```
 
 01. Change to the newly created *clouddrive/inventory* directory.
 
     ```bash
-    cd ~/clouddrive/inventorytool
+    cd ~/clouddrive/inventory
     ```
 
 ## Create a .NET console project
@@ -92,7 +92,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     ```
 
     > [!TIP]
-    > Since you did not specify a project name or a directory, the command will create the new project in the current directory and name the project to match the directory's name (inventorytool).
+    > Since you did not specify a project name or a directory, the command will create the new project in the current directory and name the project to match the directory's name (inventory).
 
 01. Add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK from NuGet.
 
@@ -114,7 +114,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     
       Determining projects to restore...
       All projects are up-to-date for restore.
-      inventorytool -> /usr/csuser/clouddrive/inventorytool/bin/Debug/net6.0/inventorytool.dll
+      inventory -> /usr/csuser/clouddrive/inventory/bin/Debug/net6.0/inventory.dll
     
     Build succeeded.
         0 Warning(s)
@@ -131,42 +131,52 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
 
 ## Connect to the account
 
-Now, the .NET project should be built and ready for you to add your own custom code. You have access to the **Microsoft.Azure.Cosmos** namespace and all of the classes necessary to connect to the SQL API. Here, you'll open the *Program.cs* file and implement code to connect to the account using the client classes of the SDK.
+Now, the .NET project should be built and ready for you to add your own custom code. You have access to the <xref:Microsoft.Azure.Cosmos> namespace and all of the classes necessary to connect to the SQL API. Here, you'll open the *Program.cs* file and implement code to connect to the account using the client classes of the SDK.
 
 01. Open the *Program.cs* file within the code editor for the Azure Cloud Shell.
 
     > [!TIP]
-    > If you are not familiar with the Azure Cloud Shell's integrated editor, use the file explorer to select and open the **Program.cs** option.
+    > If you are not familiar with the Azure Cloud Shell's integrated editor, use the file explorer to select and open the *Program.cs* option.
     >
     > :::image type="content" source="../media/cloud-shell-code-editor.png" alt-text="Screenshot of the Azure Cloud Shell integrated editor with the Program.cs file highlighted." lightbox="../media/cloud-shell-code-editor.png":::
     >
 
 01. Delete all existing code from the file.
 
-01. Add a using directive for the **Microsoft.Azure.Cosmos** namespace.
+01. Add a using directive for the <xref:Microsoft.Azure.Cosmos> and <xref:Microsoft.Azure.Cosmos.Fluent> namespaces.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
+    using Microsoft.Azure.Cosmos.Fluent;
     ```
 
-01. Create a string variable named **cosmosConnectionString**. Set the initial value of the variable to the result of calling `Environment.GetEnvironmentVariable` passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
+01. Create a string variable named **connectionString**. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable?displayProperty=fullName> passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
 
     ```csharp
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
     ```
 
 01. Print the connection string to the console.
 
     ```csharp
-    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    Console.WriteLine($"[Connection string]:\t{connectionString}");
     ```
 
-01. Create a new instance of the **CosmosClient** class by passing in the connection string to the constructure. Wrap the class within a using statement.
+01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions?displayProperty=fullName> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy?displayProperty=fullName> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase?displayProperty=fullName> enumeration.
 
     ```csharp
-    using CosmosClient client = new(
-        connectionString: cosmosConnectionString
-    );
+    CosmosSerializationOptions serializerOptions = new()
+    {
+        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+    };
+    ```
+
+01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosClientBuilder?displayProperty=fullName> class by passing in the connection string to the constructor. Chain the <xref:Microsoft.Azure.Cosmos.CosmosClientBuilder.WithSerializerOptions?displayProperty=fullName> fluent method and set this method's parameter to `serializerOptions`. Next, chain the <xref:Microsoft.Azure.Cosmos.CosmosClientBuilder.Build?displayProperty=fullName> method to output an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient?displayProperty=fullName>. Finally, wrap the class within a using statement.
+
+    ```csharp
+    using CosmosClient client = new CosmosClientBuilder(connectionString)
+        .WithSerializerOptions(serializerOptions)
+        .Build();
     ```
 
 01. Print a message indicating that you've connected to the client.
@@ -201,7 +211,7 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
 
 ### [Review code](#tab/review-code)
 
-01. Review the **inventorytool.csproj** project file to ensure that the project configuration matches this sample.
+01. Review the **inventory.csproj** project file to ensure that the project configuration matches this sample.
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -217,20 +227,24 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
     </Project>
     ```
 
-01. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
+    using Microsoft.Azure.Cosmos.Fluent;
     
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
     
-    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    Console.WriteLine($"[Connection string]:\t{connectionString}");
     
-    using CosmosClient client = new(
-        connectionString: cosmosConnectionString
-    );
+    CosmosSerializationOptions serializerOptions = new()
+    {
+        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+    };
     
-    Console.WriteLine("[Client connected]");
+    using CosmosClient client = new CosmosClientBuilder(connectionString)
+        .WithSerializerOptions(serializerOptions)
+        .Build();
     ```
 
 ---

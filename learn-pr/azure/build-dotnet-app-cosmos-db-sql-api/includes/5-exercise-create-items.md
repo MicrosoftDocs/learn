@@ -36,7 +36,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
-    cd ~/clouddrive/inventorytool && code .
+    cd ~/clouddrive/inventory && code .
     ```
 
 ## Add an individual item to a container
@@ -45,7 +45,7 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
 01. Open the *Program.cs* file again.
 
-01. Create a new **Category** instance named **helmets** with the following values:
+01. Create a new **Category** instance named `helmets` with the following values:
 
     | Property | Value |
     | --- | --- |
@@ -53,19 +53,19 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
     | **categoryId** | `gear-climb-helmets` |
 
     ```csharp
-    Category helmets = new (
-        id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
-        categoryId: "gear-climb-helmets"
+    Category helmets = new(
+        Id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
+        CategoryId: "gear-climb-helmets"
     );
     ```
 
-01. Create a new **PartitionKey** instance using the same value as the **categoryId** property for the **Category** instance you created.
+01. Create a new <xref:Microsoft.Azure.Cosmos.PartitionKey?displayProperty=nameWithType> instance using the same value as the `categoryId` property for the **Category** instance you created earlier.
 
     ```csharp
-    PartitionKey helmetsKey = new ("gear-climb-helmets");
+    PartitionKey helmetsKey = new("gear-climb-helmets");
     ```
 
-01. Use the **Container.UpsertItemAsync** method to create or replace the item passing in an object for the item to create and a partition key value.
+01. Use the <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A?displayProperty=nameWithType> method to create or replace the item passing in an object for the item to create and a partition key value.
 
     ```csharp
     ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
@@ -83,11 +83,11 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
 Now consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we should end up with:
 
-:::image type="content" source="../media/diagram-items.png" alt-text="Diagram of various items in Azure Cosmos DB organized by their specific partition key illustrating how five of the items belong to the "tents" partition key value while only one item belongs to "helmets"." lightbox="../media/diagram-items.png" border="false":::
+:::image type="content" source="../media/diagram-items.png" alt-text="Diagram of various items in Azure Cosmos DB organized by their specific partition key. The diagram illustrates how five items belong to the \"tents\" partition key value and only one item belongs to \"helmets\"." lightbox="../media/diagram-items.png" border="false":::
 
-In this section, we'll create a transactional batch to create the *tents* category and related products together.
+In this section, we'll create a transactional batch to create the `tents` category and related products together.
 
-01. Create a new **Category** instance named **helmets** with the following values:
+01. Create a new **Category** instance named `tents` with the following values:
 
     | Property | Value |
     | --- | --- |
@@ -95,7 +95,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
     | **categoryId** | `gear-camp-tents` |
 
     ```csharp
-    Category tents = new (
+    Category tents = new(
         id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
         categoryId: "gear-camp-tents"
     );
@@ -113,7 +113,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
     | **quantity** | `15` | `8` | `0` | `35` |
 
     ```csharp
-    Product cirroa = new (
+    Product cirroa = new(
         id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
         categoryId: "gear-camp-tents",
         name: "Cirroa Tent", 
@@ -122,7 +122,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
         quantity: 15
     );
     
-    Product kuloar = new (
+    Product kuloar = new(
         id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
         categoryId: "gear-camp-tents",
         name: "Kuloar Tent", 
@@ -131,7 +131,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
         quantity: 8
     );
     
-    Product mammatin = new (
+    Product mammatin = new(
         id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
         categoryId: "gear-camp-tents",
         name: "Mammatin Tent", 
@@ -140,7 +140,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
         quantity: 0
     );
     
-    Product nimbolo = new (
+    Product nimbolo = new(
         id: "6e3b7275-57d4-4418-914d-14d1baca0979",
         categoryId: "gear-camp-tents",
         name: "Nimbolo Tent", 
@@ -150,13 +150,13 @@ In this section, we'll create a transactional batch to create the *tents* catego
     );
     ```
 
-01. Now, create a new **PartitionKey** instance using the `gear-camp-tents` value.
+01. Now, create a new <xref:Microsoft.Azure.Cosmos.PartitionKey?displayProperty=fullName> instance using the `gear-camp-tents` value.
 
     ```csharp
-    PartitionKey tentsKey = new ("gear-camp-tents");
+    PartitionKey tentsKey = new("gear-camp-tents");
     ```
 
-01. Create a new transactional batch scoped to the `gear-camp-tents` partition key value. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
+01. Create a new transactional batch scoped to the `gear-camp-tents` partition key value using the <xref:Microsoft.Azure.Cosmos.Container.CreateTransactionalBatch?displayProperty=nameWithType> method. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
 
     ```csharp
     TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
@@ -228,60 +228,64 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
 ### [Review code](#tab/review-code)
 
-01. Review the **Item.cs** code file to make sure that your code matches this sample.
+01. Review the *Item.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Item(
-        string id,
-        string categoryId,
-        string type
+        string Id,
+        string CategoryId,
+        string Type
     );
     ```
 
-01. Review the **Category.cs** code file to make sure that your code matches this sample.
+01. Review the *Category.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Category(
-        string id,
-        string categoryId,
-        string type = nameof(Category)
+       string Id,
+        string CategoryId
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Category)
     );
     ```
 
-01. Review the **Product.cs** code file to make sure that your code matches this sample.
+01. Review the *Product.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Product(
-        string id, 
-        string categoryId, 
-        string name, 
-        decimal price, 
-        bool archived, 
-        int quantity,
-        string type = nameof(Product)
+        string Id, 
+        string CategoryId, 
+        string Name, 
+        decimal Price, 
+        bool Archived, 
+        int Quantity
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Product)
     );
     ```
 
-01. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
+    using Microsoft.Azure.Cosmos.Fluent;
     
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
     
-    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    Console.WriteLine($"[Connection string]:\t{connectionString}");
     
-    using CosmosClient client = new(
-        connectionString: cosmosConnectionString
-    );
+    CosmosSerializationOptions serializerOptions = new()
+    {
+        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+    };
+    
+    using CosmosClient client = new CosmosClientBuilder(connectionString)
+        .WithSerializerOptions(serializerOptions)
+        .Build();
     
     Console.WriteLine("[Client connected]");
 
@@ -299,59 +303,59 @@ Your app now creates multiple items and is designed to be resilient enough to be
     
     Console.WriteLine($"[Container created]:\t{container.Id}");
 
-    Category helmets = new (
-        id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
-        categoryId: "gear-climb-helmets"
+    Category helmets = new(
+        Id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
+        CategoryId: "gear-climb-helmets"
     );
     
-    PartitionKey helmetsKey = new ("gear-climb-helmets");
+    PartitionKey helmetsKey = new("gear-climb-helmets");
     
     ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
     
-    Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
+    Console.WriteLine($"[New item created]:\t{response.Resource.Id}\t(Type: {response.Resource.Type})\t(RUs: {response.RequestCharge})");
     
-    Category tents = new (
-        id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
-        categoryId: "gear-camp-tents"
+    Category tents = new(
+        Id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
+        CategoryId: "gear-camp-tents"
     );
     
-    Product cirroa = new (
-        id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
-        categoryId: "gear-camp-tents",
-        name: "Cirroa Tent", 
-        price: 490.00m, 
-        archived: false, 
-        quantity: 15
+    Product cirroa = new(
+        Id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
+        CategoryId: "gear-camp-tents",
+        Name: "Cirroa Tent", 
+        Price: 490.00m, 
+        Archived: false, 
+        Quantity: 15
     );
     
-    Product kuloar = new (
-        id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
-        categoryId: "gear-camp-tents",
-        name: "Kuloar Tent", 
-        price: 530.00m, 
-        archived: false, 
-        quantity: 8
+    Product kuloar = new(
+        Id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
+        CategoryId: "gear-camp-tents",
+        Name: "Kuloar Tent", 
+        Price: 530.00m, 
+        Archived: false, 
+        Quantity: 8
     );
     
-    Product mammatin = new (
-        id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
-        categoryId: "gear-camp-tents",
-        name: "Mammatin Tent", 
-        price: 0.00m, 
-        archived: true, 
-        quantity: 0
+    Product mammatin = new(
+        Id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
+        CategoryId: "gear-camp-tents",
+        Name: "Mammatin Tent", 
+        Price: 0.00m, 
+        Archived: true, 
+        Quantity: 0
     );
     
-    Product nimbolo = new (
-        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
-        categoryId: "gear-camp-tents",
-        name: "Nimbolo Tent", 
-        price: 330.00m, 
-        archived: false, 
-        quantity: 35
+    Product nimbolo = new(
+        Id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+        CategoryId: "gear-camp-tents",
+        Name: "Nimbolo Tent", 
+        Price: 330.00m, 
+        Archived: false, 
+        Quantity: 35
     );
     
-    PartitionKey tentsKey = new ("gear-camp-tents");
+    PartitionKey tentsKey = new("gear-camp-tents");
     
     TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
         .UpsertItem<Category>(tents)
@@ -367,7 +371,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
     for (int i = 0; i < batchResponse.Count; i++)
     {
         TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
-        Console.WriteLine($"[New item created]:\t{result.Resource.id}\t(Type: {result.Resource.type})");
+        Console.WriteLine($"[New item created]:\t{result.Resource.Id}\t(Type: {result.Resource.Type})");
     }
     
     Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");

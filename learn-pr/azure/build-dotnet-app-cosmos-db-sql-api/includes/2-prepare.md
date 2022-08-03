@@ -13,7 +13,8 @@ The following flowchart shows the business logic the app needs to perform:
 The key tasks you'll need to do are:
 
 01. Create an Azure Cosmos DB account and retrieve the connection string.
-01. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.1. Create database and container resources.
+01. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.
+01. Create database and container resources.
 01. Add a single item as a simple operation.
 01. Create a transactional batch to add four items.
 01. Execute and observe the results of a SQL query.
