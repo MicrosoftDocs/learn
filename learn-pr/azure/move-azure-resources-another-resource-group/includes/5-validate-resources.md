@@ -1,10 +1,10 @@
 You've assessed all the development resources that are in the incorrect production resource group. You think they'll move without problems, but you'd like to test it first.
 
-In this unit, you'll learn how to validate that a move would be successful. You'll also see how to use the Azure REST API `validate move` operation to test and validate your moves.
+In this unit, you'll learn how to validate that a move will be successful. You'll also learn how to use the Azure REST API `validate move` operation to test and validate your moves.
 
 ## Prepare to test your move
 
-Before attempting to move a resource, you can test whether it will be successful by calling the `validate move` operation from the Azure REST API. This test is especially useful if you're trying to move resources by using, (for example, Azure PowerShell or the Azure CLI). You can use these tools to script moves, with minimal human interaction. Testing a move doesn't affect your resources. The operation only tests whether your move operation would succeed, based on the options you provide.
+Before attempting to move a resource, you can test whether it will be successful by calling the `validate move` operation from the Azure REST API. This test is especially useful if you're trying to move resources by using (for example) Azure PowerShell or the Azure CLI. You can use these tools to script moves with minimal human interaction. Testing a move doesn't affect your resources. The operation only tests whether your move operation would succeed based on the options you provide.
 
 If you're trying to move resources through the Azure portal, you don't need to validate the move before attempting it. The Azure portal does an automatic validation before allowing you to move resources.
 
@@ -16,11 +16,11 @@ az rest --method post --uri <enter the correct REST operation URI here>
 
 To formulate the correct REST URI to call, and to provide the other necessary details, you must obtain the following information:
 
-- Your Azure subscription ID.
-- The name of the resource group currently holding your resources.
-- The [resource ID](/powershell/module/az.resources/get-azresource) for each of the resources in your original resource group.
-- The [resource ID](/powershell/module/az.resources/get-azresourcegroup) for the destination resource group where you want to move your resources.
-- Your account [access token](/rest/api/azure/#acquire-an-access-token).
+- Your Azure subscription ID
+- The name of the resource group currently holding your resources
+- The [resource ID](/powershell/module/az.resources/get-azresource) for each of the resources in your original resource group
+- The [resource ID](/powershell/module/az.resources/get-azresourcegroup) for the destination resource group where you want to move your resources
+- Your account [access token](/rest/api/azure/#acquire-an-access-token)
 
 When you use the Azure CLI to call an Azure REST API operation, you don't have to provide a subscription ID or an access token. The CLI includes these values automatically.
 
@@ -29,6 +29,7 @@ When you use the Azure CLI to call an Azure REST API operation, you don't have t
 Let's have a high-level look at the process for validating a move by using the REST API.
 
 You can send a POST request with the following details:
+
 ``` http
 POST https://management.azure.com/subscriptions/<your-subscription-id>/resourceGroups/<your-source-group>/validateMoveResources?api-version=2019-05-10
 Authorization: Bearer <your-access-token>
@@ -64,9 +65,9 @@ location: https://management.azure.com/subscriptions/<your-subscription-id>/oper
 retry-after: 15
 ```
 
-At this stage, the API has only validated your request. It hasn't yet validated whether your move will be successful. This response gives you a location URL. You use this location URL to test your move. Wait for the amount of time shown in the `retry-after` value in the request validation, before attempting to test your validation. In this example, the value is 15 seconds.
+At this stage, the API has only validated your request. It hasn't yet validated whether your move will be successful. This response gives you a location URL. You'll use this location URL to test your move. Wait for the amount of time shown in the `retry-after` value in the request validation before attempting to test your validation. In this example, the value is 15 seconds.
 
-You then send a GET request to the location URL:
+You'll then send a GET request to the location URL:
 
 ``` http
 GET <location-url>
