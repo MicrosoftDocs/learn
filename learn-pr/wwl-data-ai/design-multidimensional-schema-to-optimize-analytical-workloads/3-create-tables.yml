@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.create-tables
+title: Create data warehouse tables
+metadata:
+  title: Create data warehouse tables
+  description: "Create data warehouse tables"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-create-tables.md)]

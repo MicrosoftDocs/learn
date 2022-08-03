@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-compute.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is cloud computing?"
+    choices:
+    - content: "Deliver of computing services over the internet."
+      isCorrect: true
+      explanation: "Cloud computing is the delivery of computing services over the internet."
+    - content: "Delivery of storage services over the internet."
+      isCorrect: false
+      explanation: "While storage services are a component of cloud computing, cloud computing is much broader."
+    - content: "Delivery of websites accessible via the internet."
+      isCorrect: false
+      explanation: "Web hosting can be done in the cloud, but web hosting itself doesn't capture the full meaning of cloud computing."
+  - content: "Which cloud model uses some datacenters focused on providing cloud services to anyone that wants them, and some data centers that are focused on a single customer?"
+    choices:
+    - content: "Public cloud"
+      isCorrect: false
+      explanation: "The public cloud model provides cloud services to virtually anyone interested in using the cloud services. Datacenters are dedicated to anyone consuming cloud resources instead of a single customer."
+    - content: "Hybrid cloud"
+      isCorrect: true
+      explanation: "The hybrid cloud model is a combination of public cloud and private cloud, using both datacenters dedicated solely to one customer and datacenters that are shared with the public."
+    - content: "Multi-cloud"
+      isCorrect: false
+      explanation: "The multi-cloud model leverages multiple public cloud providers to satisfy cloud needs."
+  - content: "According to the shared responsibility model, which cloud service type places the most responsibility on the customer?"
+    choices:
+    - content: "Infrastructure as a Service (IaaS)"
+      isCorrect: true
+      explanation: "IaaS places the most responsibility on the consumer, with the cloud provider being responsible for the basics of physical security, power, and connectivity."
+    - content: "Software as a Service (SaaS)"
+      isCorrect: false
+      explanation: "SaaS places most of the responsibility with the cloud provider, with the customer focused on using the provided software, but the cloud provider responsible for maintenance, security, updates, and so on."
+    - content: "Platform as a Service (PaaS)"
+      isCorrect: false
+      explanation: "PaaS rests somewhere in the middle and evenly distributes responsibility between the cloud provider and the consumer."

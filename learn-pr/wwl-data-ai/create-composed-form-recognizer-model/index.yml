@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.wwl.create-composed-form-recognizer-model
+metadata:
+  title: Create a composed Form Recognizer model
+  description: "Learn how to assemble custom models into composed solutions that can analyze different types of your own documents."
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a composed Form Recognizer model
+summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
+abstract: |
+  In this module, you will learn to:
+  -	Describe business problems that you would use custom models and composed models to solve.
+  -	Train a custom model to obtain data from forms with unusual structures.
+  -	Create a composed model that can analyze forms in multiple formats.
+prerequisites: |
+  - Basic understanding of Form Recognizer
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+products:
+- azure-cognitive-search
+- azure-form-recognizer
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.create-composed-form-recognizer-model.introduction
+- learn.wwl.create-composed-form-recognizer-model.understand-composed-models
+- learn.wwl.create-composed-form-recognizer-model.assemble-composed-models
+- learn.wwl.create-composed-form-recognizer-model.exercise-model
+- learn.wwl.create-composed-form-recognizer-model.knowledge-check
+- learn.wwl.create-composed-form-recognizer-model.summary
+badge:
+  uid: learn.wwl.create-composed-form-recognizer-model.badge

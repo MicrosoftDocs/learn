@@ -6,6 +6,7 @@ Elite performers deploy code more frequently and experience many faster lead tim
 
 Although Azure DevOps works with different kinds of source control, many developers choose Git because it's a distributed system that enables all contributors to have their own copy of the work. In this module, you use Git's branching and merging capabilities to more efficiently work with other developers. You also use GitHub, because it provides a central location for teams to host their projects and share their work.
 
+
 ## Learning objectives
 
 After completing this module, you'll be able to:

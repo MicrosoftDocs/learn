@@ -3,7 +3,7 @@ uid: learn.wwl.examine-sap-netweaver-anydb
 metadata:
   title: Examine SAP NetWeaver with AnyDB on Azure virtual machines
   description: "Examine the architecture options available when deploying SAP AnyDB workloads on Azure VMs. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 05/02/2022
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -36,4 +36,4 @@ units:
 - learn.wwl.examine-sap-netweaver-anydb.knowledge-check
 - learn.wwl.examine-sap-netweaver-anydb.summary
 badge:
-  uid: learn.wwl.examine-sap-netweaver-anydb​.badge
+  uid: learn.wwl.examine-sap-netweaver-anydb.badge

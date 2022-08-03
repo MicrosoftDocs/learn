@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 07/08/2021
-  author: johndowns
-  ms.author: jodowns
+  ms.date: 07/29/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -58,4 +58,3 @@ quiz:
     - content: "`git remote upstream add`"
       isCorrect: false
       explanation: Incorrect. Because you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.
-  

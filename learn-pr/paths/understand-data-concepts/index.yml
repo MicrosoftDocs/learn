@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.understand-data-concepts
+metadata:
+  title: Understand data concepts
+  description: Understand data concepts
+  ms.date: 06/17/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand data concepts
+prerequisites: |
+  - You should be familiar with basic computing concepts and terminology.
+summary: |
+  Data is key to most business operations and services and an understanding of data is essential in many roles. This learning path covers data concepts, data analytics, and data roles, services, and products
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- data-analyst
+- database-administrator
+products:
+- azure-database-mysql
+- azure-database-postgresql
+- azure-sql-database
+- azure-sqlserver-vm
+- sql-server
+subjects:
+- database
+modules:
+- learn.wwl.get-started-data-concepts
+- learn.wwl.get-started-data-analytics
+- learn.wwl.understand-data-roles-services-products
+trophy:
+  uid: learn.wwl.understand-data-concepts.trophy

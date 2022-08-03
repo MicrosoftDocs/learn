@@ -33,14 +33,15 @@ jobs:
            environmentType=${{ inputs.environmentType }}
          deploymentMode: Validate
      - if: inputs.environmentType == 'Production'
-       uses: Azure/cli@v1
+       uses: azure/arm-deploy@v1
        name: Run what-if
        with:
-         inlineScript: |
-             az deployment group what-if \
-               --resource-group ${{ inputs.resourceGroupName }} \
-               --template-file ./deploy/main.bicep \
-               --parameters environmentType=${{ inputs.environmentType }}
+         failOnStdErr: false
+         resourceGroupName: ${{ inputs.resourceGroupName }}
+         template: ./deploy/main.bicep
+         parameters: >
+           environmentType=${{ inputs.environmentType }}
+         additionalArguments: --what-if
  
   deploy:
     needs: validate

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.import-data-different-formats-for-use-scripts.use-get-content-command-scripts
+title: Use the Get-Content command in Windows PowerShell scripts
+metadata:
+  title: Use the Get-Content command in Windows PowerShell scripts
+  description: "Use the Get-Content command in Windows PowerShell scripts"
+  ms.date: 07/26/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-use-get-content-command-scripts.md)]

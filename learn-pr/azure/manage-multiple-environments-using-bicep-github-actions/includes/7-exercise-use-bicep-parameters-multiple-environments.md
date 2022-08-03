@@ -40,14 +40,11 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. In the `validate` job, update the steps to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="21-52" highlight="19-20, 30-32" :::
-
-   > [!IMPORTANT]
-   > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
+   :::code language="yaml" source="code/7-deploy.yml" range="21-53" highlight="19-20, 31-32" :::
 
 1. Update the `deploy` job to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="54-77" highlight="23-24" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="55-78" highlight="23-24" :::
 
 1. Save your changes to the file.
 
@@ -71,7 +68,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
-   :::code language="bicep" source="code/7-main.bicep" range="53-80" highlight="17-24" :::
+   :::code language="bicep" source="code/7-main.bicep" range="63-90" highlight="17-24" :::
 
 1. Save your changes to the file.
 

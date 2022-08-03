@@ -10,7 +10,7 @@ This module consists of four lessons:
 
 **Lesson 4** – Configure Azure Domain Name Service (DNS) 
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4XVAX] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XVAX] 
 
 ### Module 4 Tips and Tricks 
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-content-microsoft-sentinel.use-solutions-from-content-hub
+title: Use solutions from the content hub
+metadata:
+  title: Use solutions from the content hub
+  description: "Use solutions from the content hub"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-use-solutions-from-content-hub.md)]

@@ -93,7 +93,7 @@ You need to run a few commands to configure Git so that it associates your name 
 1. In the *deploy* folder, create a new file called _main.bicep_.
 
 1. Open and save the empty file so that Visual Studio Code loads the Bicep tooling.
- 
+
    You can either select **File** > **Save As** or select the keyboard shortcut <kbd>Ctrl+S</kbd> for Windows (<kbd>⌘+S</kbd> for macOS). Be sure to remember where you save the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following code into _main.bicep_.
@@ -121,13 +121,13 @@ Git monitors the repository folder for changes. You can query Git to see the lis
 
    ```output
    On branch main
-   
+
    No commits yet
-   
+
    Untracked files:
      (use "git add <file>..." to include in what will be committed)
            deploy/
-   
+
    nothing added to commit but untracked files present (use "git add" to track)
    ```
 
@@ -150,7 +150,7 @@ Git monitors the repository folder for changes. You can query Git to see the lis
 
 Visual Studio Code shows the same information that the `git status` command provides, but it integrates the information into the Visual Studio Code interface.
 
-1. In Visual Studio Code, select **View** > **SCM**, or select <kbd>Ctrl+Shift+G</kbd> on the keyboard.
+1. In Visual Studio Code, select **View** > **Source Control**, or select <kbd>Ctrl+Shift+G</kbd> on the keyboard.
 
    **Source Control** opens.
 

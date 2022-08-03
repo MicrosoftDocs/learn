@@ -72,4 +72,4 @@ Following is a complete list of all application timer services.
 - `tx_timer_performance_info_get`
 - `tx_timer_performance_system_info_get`
 
-For complete details on all ThreadX services, consult the [Azure RTOS ThreadX User Guide](https://docs.microsoft.com/azure/rtos/threadx/about-this-guide)
+For complete details on all ThreadX services, consult the [Azure RTOS ThreadX User Guide](/azure/rtos/threadx/about-this-guide)

@@ -23,7 +23,7 @@ on:
 
 ### Trigger when multiple branches change
 
-You can set up triggers to run your workflow on a specific branch or on sets of branches. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You can use branch names like *release/v1*, *release/v2*, and so on. You want to run your workflow anytime your code changes on a branch that begins with the name *release/. You can use a `**` wildcard:
+You can set up triggers to run your workflow on a specific branch or on sets of branches. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You can use branch names like *release/v1*, *release/v2*, and so on. You want to run your workflow anytime your code changes on a branch that begins with the name *release/*. You can use a `**` wildcard:
 
 ```yaml
 on:

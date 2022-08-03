@@ -1,18 +1,22 @@
 
-![Diagram of Tailwind Traders logo.](../media/tailwind-traders.png) 
+This case study exercise is designed to provide experience performing some conceptual design tasks that relate to the subjects learned in this module.
 
-Tailwind Traders is a modern commerce company. For more than 30 years, the company has been a popular retail destination. It has grown to more than 50 physical stores. Several years ago, its chief executive officer (CEO) anticipated changes in retail and bought a competing e-commerce start-up that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
+## Case study: remote access and endpoint strategy
 
-The retail innovation team reports to the company's chief technology officer (CTO), who was the CEO of the acquired e-commerce start-up. Those technology solutions are the main hub for interactions with customers. Those solutions affect 60 percent of global revenue and produce 30 percent of annual gross sales. Examples of those innovations include:
+Tailwind Traders is a fictitious home improvement retailer. It operates retail hardware stores across the globe and online. The Tailwind Traders CISO is aware of the opportunities offered by Azure, but also understands the need for strong security and solid cloud architecture. Without strong security and a great point of reference architecture, the
+company may have difficulty managing the Azure environment and costs, which are hard to track and control. The CISO is interested in understanding how Azure manages and enforces security standards.
 
-- The new CIO is focused on improving technical operations in multiple areas to fuel greater innovation throughout the company while limiting disruptions to core business operations. The cloud will play an important role in this transition. One of the key requirements for this transformation is to empower remote workers in a secure manner. The new CIO wants to ensure remote workers can connect to cloud resources without having to expose management ports on their cloud workloads and that remote branch offices can stay always connected with company's headquarter.
-- The CISO understands that in the current threat landscape, most of the attacks are targeting the endpoints. He needs to establish a new security baseline to harden all endpoints and provide a seamless experience to deploy these baselines across the clients. The CISO also wants to empower the SOC Team to perform investigations on the endpoints to better understand the root cause of an attack.
+### Requirements: remote access
 
-### Questions 
+The new CIO wants to ensure remote workers can connect to cloud resources without having to expose management ports on their cloud workloads and that remote branch offices can stay always connected with company's headquarter.
 
-1. **Remote access**: 
+The CISO understands that in the current threat landscape, most of the attacks are targeting the endpoints. He needs to establish a new security baseline to harden all endpoints and provide a seamless experience to deploy these baselines across the clients. The CISO also wants to empower the SOC Team to perform investigations on the endpoints to better understand the root cause of an attack.
+
+### Design tasks
+
+* **Remote access**: 
      - Which solution should you use to enable the CIO vision regarding the connectivity for remote workers?
      - Which solution should you use for the remote branches?
-1. **Endpoint strategy**:
+* **Endpoint strategy**:
      - Which tool should you use to deploy the security baseline?
      - How can you enable the SOC Team to perform investigation of the endpoints?

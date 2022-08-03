@@ -9,7 +9,7 @@ Select all of the code in the .NET Editor then select the `del` or backspace key
 When you're finished, the message should resemble the following output:
 
 ```output
-Hello, Bob! You have 3 in your inbox. The temperature is 34.4 celsius.
+Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.
 ```
 
 Store the following values from the output in variables:
