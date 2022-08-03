@@ -13,7 +13,7 @@ Take a deeper dive into the documentation. The following ASP.NET Core features a
 * [Dependency injection](/aspnet/core/fundamentals/dependency-injection)
 * [Make HTTP requests using a typed client pattern](/aspnet/core/fundamentals/http-requests#consumption-patterns)
 
-## Learn more with a Channel 9 video series
+## Learn more with a .NET video series
 
-* [.NET Core 101](https://channel9.msdn.com/Series/NET-Core-101/?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
-* [ASP.NET Core 101](https://channel9.msdn.com/Series/ASPNET-Core-101/?WT.mc_id=Educationaspnet-c9-niner&azure-portal=true)
+* [.NET for Beginners](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80)
+* [ASP.NET Core for Beginners](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oW8nviYduHq7bmKode-p8Wy)
