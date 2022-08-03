@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. The Microsoft Azure Marketplace is an online store that offers applications and services either built on or designed to integrate with Microsoft's Azure public cloud. The products and services sold through the Microsoft Azure Marketplace come from either Microsoft directly or its technology partners."
     - content: "Azure Compute Gallery"
       isCorrect: true
-      explanation: "Correct. Using a Azure Compute Gallery you can share your images to different users, service principals, or AD groups within and outside your organization. Shared images can be replicated to multiple regions, for quicker scaling of your deployments."
+      explanation: "Correct. Using an Azure Compute Gallery you can share your images to different users, service principals, or AD groups within and outside your organization. Shared images can be replicated to multiple regions, for quicker scaling of your deployments."
   - content: "What is the most efficient and cost-effective way to manage the language needs for users of a Windows 10 Enterprise multi-session image?"
     choices:
     - content: "Build dedicated host pools with a customized image for each language"
