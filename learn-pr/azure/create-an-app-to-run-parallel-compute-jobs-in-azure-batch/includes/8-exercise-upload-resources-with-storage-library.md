@@ -251,12 +251,12 @@ In this exercise, we'll enhance our app to upload videos to blob storage.
 
 1. Return to the Azure portal, on the left select Storage accounts, then select the storage account your created in the first exercise.
 
-    :::image type="content" source="../media/8-storage-accounts.png" alt-text="Screenshot that shows a user's storage accounts.":::
+    :::image type="content" source="../media/8-storage-accounts.png" alt-text="Screenshot that shows a user's storage accounts." lightbox="../media/8-storage-accounts.png":::
 
 1. In the Azure portal, on the left select **Containers**, then select the input folder.
 
-    :::image type="content" source="../media/8-storage-account-input-container.png" alt-text="Screenshot that shows the created containers in blob storage.":::
+    :::image type="content" source="../media/8-storage-account-input-container.png" alt-text="Screenshot that shows the created containers in blob storage." lightbox="../media/8-storage-account-input-container.png":::
 
 1. The folder contains the uploaded videos.
 
-    :::image type="content" source="../media/8-storage-account-uploaded-files.png" alt-text="Screenshot that shows the uploaded video files.":::
+    :::image type="content" source="../media/8-storage-account-uploaded-files.png" alt-text="Screenshot that shows the uploaded video files." lightbox="../media/8-storage-account-uploaded-files.png":::
