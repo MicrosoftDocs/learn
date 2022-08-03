@@ -2,7 +2,7 @@ The Azure Virtual Desktop service recommends FSLogix profile containers as a use
 
 At sign-in, this container is dynamically attached to the computing environment using natively supported Virtual Hard Disk (VHD) and Hyper-V Virtual Hard disk (VHDX). The user profile is immediately available and appears in the system exactly like a native user profile.
 
-:::image type="content" source="../media/fslogix-concept-a2405e6b.png" alt-text="Container dynamically attached to the computing environment using natively supported Virtual Hard Disk (VHD) and Hyper-V Virtual Hard disk (VHDX).":::
+:::image type="content" source="../media/fslogix-concept-a2405e6b.png" alt-text="Diagram showing how a container dynamically attached to the computing environment using natively supported Virtual Hard Disk.":::
 
 
 ## User profiles

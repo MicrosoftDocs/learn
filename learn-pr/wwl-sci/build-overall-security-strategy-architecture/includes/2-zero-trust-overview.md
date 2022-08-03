@@ -20,7 +20,9 @@ The following diagram visually illustrates the zero trust principles:
 
 A Zero Trust approach should extend throughout the entire digital estate and serve as an integrated security philosophy and end-to-end strategy. This is done by implementing Zero Trust controls and technologies across six foundational elements. Each of these is a source of signal, a control plane for enforcement, and a critical resource to be defended.
 
-The Zero Trust approach can be organized around key technological pillars:
+The Zero Trust approach can be organized around six key technological pillars:
+
+:::image type="content" source="../media/zero-trust-security.png" alt-text="Diagram showing zero trust pillars." lightbox="../media/zero-trust-security.png":::
 
 * **Secure identity with Zero Trust** - Identities, whether they represent people, services, or IoT devices—define the Zero Trust control plane. When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity. Follow
 least privilege access principles.
@@ -31,6 +33,7 @@ and on-premises workloads to cloud-hosted servers. This diversity creates a mass
 * **Secure infrastructure with Zero Trust** - Infrastructure—whether on-premises servers, cloud-based VMS, containers, or micro-services — represents a critical threat vector. Assess version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, and automatically block and flag risky behavior and take protective actions.
 * **Secure networks with Zero Trust** - All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and
 deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.
-* **Visibility, automation, and orchestration with Zero Trust** - In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each Of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction.
+
+In our Zero Trust guides, we define the approach to implement an end-to-end Zero Trust methodology across identities, endpoints and devices, data, apps, infrastructure, and network. These activities increase your visibility, which gives you better data for making trust decisions. With each Of these individual areas generating their own relevant alerts, we need an integrated capability to manage the resulting influx of data to better defend against threats and validate trust in a transaction. So we define and additional overarching capability of **Visibility, automation, and orchestration**.
 
 With Zero Trust, we move away from a trust-by-default perspective to a trust-by-exception one. An integrated capability to automatically manage those exceptions and alerts is important so you can more easily find and detect threats, respond to them, and prevent or block undesired events across your organization.
