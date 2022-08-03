@@ -54,6 +54,11 @@ Pipeline tools include secure ways to specify your service principal's applicati
 
 ::: zone pivot="cli"
 
+You can use the Azure CLI to create and manage service principals.
+
+> [!NOTE]
+> Creating and modifying service principals requires that you have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
+
 To create a service principal and a key, use the `az ad sp create-for-rbac` command. The command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
 
 ```azurecli
@@ -68,6 +73,11 @@ When you run this command, the Azure CLI returns a JSON response with a `passwor
 ::: zone-end
 
 ::: zone pivot="powershell"
+
+You can use the Azure PowerShell cmdlets to create and manage service principals.
+
+> [!NOTE]
+> Creating and modifying service principals requires that you have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
 
 To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. The command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
 

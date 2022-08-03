@@ -22,7 +22,7 @@ When you work with a workload identity, you assign roles for that workload ident
 To create a service principal, use the `az ad sp create` command and specify the application registration's app ID:
 
 ```azurecli
-az ad sp create --id b585b740-942d-44e9-9126-f1181c95d497 --query id --output tsv
+az ad sp create --id b585b740-942d-44e9-9126-f1181c95d497
 ```
 
 ::: zone-end
@@ -154,7 +154,7 @@ resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
 Let's look at each argument:
 
 - `name` is a unique identifier for the role assignment. This must be in the form of a globally unique identifier (GUID). It's a good practice to use the `guid()` function in Bicep to create a GUID, and to use the principal ID, role definition ID, and scope as the seed arguments for the function to ensure you create a name that's unique for each role assignment.
-- `principalType` should be set to `ServicePrincipal`. It can take some time for metadata to be fully registered in Azure AD, and this setting helps to avoid Azure blocking your deployment if the application's metadata isn't completely finished processing.
+- `principalType` should be set to `ServicePrincipal`.
 - `roleDefinitionId` is the fully qualified resource ID for the role definition you're assigning. Mostly you work with built-in roles, so you find the role definition ID in the [Azure built-in roles documentation](/azure/role-based-access-control/built-in-roles?azure-portal=true). For example, the _Contributor_ role has the role definition ID `b24988ac-6180-42a0-ab88-20f7382dd24c`. When you specify it in your Bicep file, you express this using a fully qualified resource ID, such as `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c`.
 - `principalId` is the service principal's object ID. Make sure you don't use the application ID or the application registration's object ID.
 - `description` is a human-readable description of the role assignment.

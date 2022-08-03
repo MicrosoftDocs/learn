@@ -4,6 +4,9 @@ Now that you understand the concept of a workload identity, you might wonder how
 
 In the previous unit, you learned that workload identities require creating an *application registration* in Azure Active Directory (Azure AD).
 
+> [!NOTE]
+> Creating and modifying application registrations requires that you have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
+
 When you create an application registration, you need to specify a display name. The display name is a human-readable name that describes the application registration.
 
 > [!TIP]
@@ -37,7 +40,7 @@ The output of the preceding command includes a few important pieces of informati
 When you create an application registration, you typically only set the display name. Azure assigns the other names and identifiers automatically.
 
 > [!CAUTION]
-> A display name isn't unique. Multiple application registrations might share the same display name. Be careful when you grant permissions to a application registrations by using its display name to identify it. You might accidentally give permissions to the wrong application registrations. It's a good practice to use one of the unique identifiers instead.
+> A display name isn't unique. Multiple application registrations might share the same display name. Be careful when you grant permissions to an application registration by using its display name to identify it. You might accidentally give permissions to the wrong application registrations. It's a good practice to use one of the unique identifiers instead.
 
 ## Federated credentials
 
@@ -74,7 +77,7 @@ The steps involved in the sign-in process are:
 
 ::: zone pivot="cli"
 
-When you use the Azure CLI, you create define a federated credential by creating a JSON file or variable. For example, look at following JSON file:
+When you use the Azure CLI, you create define a federated credential by creating a JSON file or variable. For example, look at the following JSON file:
 
 ```json
 {
