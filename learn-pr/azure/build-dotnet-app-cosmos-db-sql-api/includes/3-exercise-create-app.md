@@ -61,21 +61,21 @@ Here, you'll get the connection string again and store it in an *environment var
 
 ## Build and persist the project directory
 
-Azure Cloud Shell persists files across sessions using Azure Files. A file share is mounted to the shell's running instance in the **clouddrive** directory. Here, you'll create your project folder in that directory.
+Azure Cloud Shell persists files across sessions using Azure Files. A file share is mounted to the shell's running instance in the *clouddrive* directory. Here, you'll create your project folder in that directory.
 
-01. Change to the already mounted `clouddrive` directory.
+01. Change to the already mounted *clouddrive* directory.
 
     ```bash
     cd ~/clouddrive
     ```
 
-01. Create a new directory named `inventorytool` to be persisted across sessions.
+01. Create a new directory named *inventorytool* to be persisted across sessions.
 
     ```bash
     mkdir inventorytool
     ```
 
-01. Change to the newly created `~/clouddrive/inventorytool` directory.
+01. Change to the newly created *clouddrive/inventory* directory.
 
     ```bash
     cd ~/clouddrive/inventorytool
@@ -131,9 +131,9 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
 
 ## Connect to the account
 
-Now, the .NET project should be built and ready for you to add your own custom code. You have access to the **Microsoft.Azure.Cosmos** namespace and all of the classes necessary to connect to the SQL API. Here, you'll open the **Program.cs** file and implement code to connect to the account using the client classes of the SDK.
+Now, the .NET project should be built and ready for you to add your own custom code. You have access to the **Microsoft.Azure.Cosmos** namespace and all of the classes necessary to connect to the SQL API. Here, you'll open the *Program.cs* file and implement code to connect to the account using the client classes of the SDK.
 
-01. Open the **Program.cs** file within the code editor for the Azure Cloud Shell.
+01. Open the *Program.cs* file within the code editor for the Azure Cloud Shell.
 
     > [!TIP]
     > If you are not familiar with the Azure Cloud Shell's integrated editor, use the file explorer to select and open the **Program.cs** option.
@@ -175,7 +175,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     Console.WriteLine("[Client connected]");    
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Check your work
 

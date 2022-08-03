@@ -31,7 +31,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-01. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
+01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -41,7 +41,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 The simplest way to retrieve an item in Azure Cosmos DB is to perform a point read. Point reads use a small and predictable number of RUs as compared to queries. Here, you'll point read the *helmets* single category item you created.
 
-01. Open the **Program.cs** file.
+01. Open the *Program.cs* file.
 
 01. Create a new **PartitionKey** instance for `gear-climb-helmets`.
 
@@ -70,7 +70,7 @@ The simplest way to retrieve an item in Azure Cosmos DB is to perform a point re
     Console.WriteLine($"[Point read item]:\t{readItem.id}\t(RUs: {readResponse.RequestCharge})");    
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Execute a SQL query
 
@@ -110,7 +110,7 @@ In situations where you need multiple items, you can use a SQL query to find and
     Console.WriteLine($"[Start SQL query]:\t{sql}");
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Paginate SQL query results
 
@@ -165,7 +165,7 @@ Azure Cosmos DB will automatically break up your query results into pages that c
     > [!TIP]
     > If you are confused about what code should be inside or outside of the *while* and *foreach* loops, go to the **review code** section in [Check your work](#check-your-work).
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Check your work
 

@@ -30,7 +30,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-01. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
+01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -43,7 +43,7 @@ Your team wants a unique query that returns all *products* within the container 
 > [!TIP]
 > Since we are querying across multiple categories, this will make our query cross-partition. This query could potentially use more RUs than a query that is scoped to a single logical partition key value.
 
-01. Open the **Program.cs** file.
+01. Open the *Program.cs* file.
 
 01. At the beginning of the file, add a using directive for the **Microsoft.Azure.Cosmos.Linq** namespace.
 
@@ -78,7 +78,7 @@ Your team wants a unique query that returns all *products* within the container 
     Console.WriteLine($"[Start LINQ query]");
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Paginate LINQ query results
 
@@ -119,7 +119,7 @@ Since we're querying across multiple logical partitions, we need to make sure th
     Console.WriteLine($"[Returned item]:\t{item}");
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Check your work
 

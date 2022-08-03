@@ -33,7 +33,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-01. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
+01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -43,7 +43,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 In Azure Cosmos DB, you can create, replace, or upsert items to a container. Creating an item requires that the item has a unique identifier. Replacing an item requires that the item already exists. Upsert is the best of both worlds where it will check the unique identifier, and then replace or create the item. For this project, you want to be able to run the app multiple times without errors making *upsert* a clear choice. For our first item, we'll create a category that doesn't have any associated products. Here, you'll implement a single upsert operation with a manually created category.
 
-01. Open the **Program.cs** file again.
+01. Open the *Program.cs* file again.
 
 01. Create a new **Category** instance named **helmets** with the following values:
 
@@ -77,7 +77,7 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
     Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Implement multiple operations as a transactional batch
 
@@ -195,7 +195,7 @@ In this section, we'll create a transactional batch to create the *tents* catego
     Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Check your work
 

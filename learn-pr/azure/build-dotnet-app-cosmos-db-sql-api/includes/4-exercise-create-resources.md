@@ -30,7 +30,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-01. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
+01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -40,7 +40,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 
 The SDK contains useful methods that will only create a new resource if it doesn't already exist. By using these methods, you can run the application multiple times without worrying about exceptions raised by conflicts. Here, you'll create a database.
 
-01. Open the **Program.cs** file.
+01. Open the *Program.cs* file.
 
 01. Create, or get, a new database by calling `CosmosClient.CreateDatabaseIfNotExistsAsync`. Store the result in a variable named **database**. Be sure to set these parameters:
 
@@ -86,7 +86,7 @@ Here, you'll create a container with a specific "slice" of the shared throughput
     Console.WriteLine($"[Container created]:\t{container.Id}");
     ```
 
-01. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Create record types for items
 
@@ -104,7 +104,7 @@ C# data can be represented using various types including classes, structs, and r
     code .
     ```
 
-01. Open the **Item.cs** file.
+01. Open the *Item.cs* file.
 
 01. Create a base type named **Item** that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
 
@@ -116,7 +116,7 @@ C# data can be represented using various types including classes, structs, and r
     );
     ```
 
-01. **Save** the **Item.cs** file.
+01. **Save** the *Item.cs* file.
 
 01. Create a new file named **Category.cs** and refresh the code editor.
 
@@ -124,7 +124,7 @@ C# data can be represented using various types including classes, structs, and r
     touch Category.cs && code .
     ```
 
-01. Open the **Category.cs** file.
+01. Open the *Category.cs* file.
 
 01. Create a new type named **Category** that inherits from the **Item** type. Ensure the type passes its values to the base implementation, and set the **type** variable to output the name of the **Category** type.
 
@@ -140,7 +140,7 @@ C# data can be represented using various types including classes, structs, and r
     );
     ```
 
-01. **Save** the **Category.cs** file.
+01. **Save** the *Category.cs* file.
 
 01. Create a new file named **Product.cs** and refresh the code editor.
 
@@ -148,7 +148,7 @@ C# data can be represented using various types including classes, structs, and r
     touch Product.cs && code .
     ```
 
-01. Open the **Product.cs** file.
+01. Open the *Product.cs* file.
 
 01. Create a new type named **Product** that inherits from **Item** and adds a few new properties: `name`, `price`, `archived`, and `quantity`.
 
@@ -168,7 +168,7 @@ C# data can be represented using various types including classes, structs, and r
     );
     ```
 
-01. **Save** the **Product.cs** file.
+01. **Save** the *Product.cs* file.
 
 ## Check your work
 
