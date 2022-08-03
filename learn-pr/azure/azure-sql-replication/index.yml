@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience working with, maintaining, and developing with SQL Server.
   - Experience with Azure, such as deploying and managing resources.
-iconUrl: /learn/achievements/learn.azure-sql-replication.svg
+iconUrl: /learn/achievements/learn-azure-sql-replication.svg
 levels: 
   - beginner
 roles: 
