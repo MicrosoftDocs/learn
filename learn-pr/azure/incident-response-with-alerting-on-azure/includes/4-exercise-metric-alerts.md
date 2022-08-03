@@ -42,35 +42,19 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Monitor | Overview** pane appears.
 
-1. First, you'll set the *scope* of the resources to be monitored. In the left menu pane, select **Metrics**. The ***Monitor | Metrics** pane appears with the **Select a scope** pane open on the right.
+1. First, you'll set the *scope* of the resources to be monitored. In the left menu pane, select **Metrics**. The **Monitor | Metrics** pane appears with the **Select a scope** pane open on the right.
 
-1. Enter **virtual** in the **Search to filter items** field. You should see **vm1** in the **Scope** list. Select it, and then select **Apply** at the bottom of the pane.
+1. On the **Select a scope** pane, Enter *vm* in the **Search to filter items...** field. You should see **vm1** in the **Scope** list. Select it, and then select **Apply** at the bottom of the pane.
 
     :::image type="content" source="../media/4-select-resource-scope.png" alt-text="Screenshot that shows the 'Select a scope' pane, with `vm1` selected.":::
 
-1. In the left menu pane, select **Alerts**. The **Monitor | Alerts** pane appears.
+1. On the **Monitor | Metrics** pane, select **Percentage CPU** in the **Metric** dropdown list, and select **Max** in the **Aggregation** dropdown list.
 
-1. On the command bar, select **+ Create** and select **Alert rule**. The **Create an alert rule** pane appears with the **Scope** section open and the **Select a resource** pane open on the right.
+1. On the command bar, select **New alert rule**. The **Condition** tab of the **Create an alert rule** pane appears.
 
-1. On the **Select a resource** pane, the **Filter by subscription** should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
+1. Next, you'll configure the conditional logic for this resource. Under **Condition name**, select the **Whenever the maximum percentage cpu is greater than <logic undefined** link. The **Configure signal logic** pane appears.
 
-1. Select the **vm1** virtual machine under the **<rgn>[sandbox resource group name]</rgn>** resource group. Then, select **Done** at the bottom of the pane. 
-
-    :::image type="content" source="../media/4-select-resource.png" alt-text="Screenshot showing the 'Select a resource' pane.":::
-
-   The **Create an alert rule** pane reappears with the Scope target resource showing **vm1**.
-
-1. Next, you'll configure the conditional logic for this resource. Select the **Condition** tab and select the **+ Add condition** link. The **Select a signal** pane appears.
-
-1. For **Signal type**, from the dropdown list, select **Metrics**. For **Monitor service**, select **All**.
-
-1. The list of available signals will change depending on the selected signal type. From the list of available signal types, search for and select **Percentage CPU**.
-
-    ![Screenshot that shows the "Configure signal logic" pane.](../media/4-configure-signal-logic.png)
-
-    The **Configure signal logic** pane appears.
-
-1. Enter the following values for each setting.
+1. Enter (or confirm) the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -85,7 +69,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
 1. Select **Done**.
 
-    ![Screenshot that shows the settings for metric condition logic.](../media/4-metric-alert-logic.png)
+    :::image type="content" source="../media/4-metric-alert-logic.png" alt-text="Screenshot that shows the settings for metric condition logic.":::
 
 1. From the **Create an alert rule** pane, select the **Details** tab. Under the **Alert rule details** section, enter the following values for each setting.
 
@@ -144,7 +128,8 @@ Let's create a new metric alert similar to the one you set up in the Azure porta
 
 In this exercise, you set up an Ubuntu VM, and configured it to stress test the CPU. You also created a metric rule to detect when the maximum CPU percentage exceeds 80 percent and 90 percent.
 
-It might take 10 minutes before you see the alerts show up in your portal.
+> [!NOTE]
+> It might take 10 minutes before you see the alerts show up in your portal.
 
 1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
