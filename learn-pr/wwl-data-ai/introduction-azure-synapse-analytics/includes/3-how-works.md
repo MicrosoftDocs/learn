@@ -1,4 +1,4 @@
-To support the analytics needs of today's organizations, Azure Synapse Analytics combines a centralized service with built-in data storage and processing capabilities with an extensible architecture through which *linked services* enable you to integrate commonly used data stores, processing platforms, and visualization tools.
+To support the analytics needs of today's organizations, Azure Synapse Analytics combines a centralized service for data storage and processing with an extensible architecture through which *linked services* enable you to integrate commonly used data stores, processing platforms, and visualization tools.
 
 ## Creating and using an Azure Synapse Analytics workspace
 
