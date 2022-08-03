@@ -60,7 +60,7 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
    > [!NOTE]
    > It's a good idea to type this code yourself instead of copying and pasting it from this module. Pay attention to the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by displaying squiggly lines.
 
-1. Below the step that you just added, add a task to sign in to your Azure environment. This task uses the secrets you defined earlier to sign in by using a workload identity identity:
+1. Below the step that you just added, add a task to sign in to your Azure environment. This task uses the secrets you defined earlier to sign in by using a workload identity:
 
    :::code language="yaml" source="code/6-workflow.yml" range="13-22" highlight="6-10" :::
 
