@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-sharepoint-online-use-windows-powershell.install-connect-sharepoint-online-management-shell
+title: Install and connect to SharePoint Online Management Shell by using Windows PowerShell
+metadata:
+  title: Install and connect to SharePoint Online Management Shell by using Windows PowerShell
+  description: "Install and connect to SharePoint Online Management Shell by using Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-install-connect-sharepoint-online-management-shell.md)]
