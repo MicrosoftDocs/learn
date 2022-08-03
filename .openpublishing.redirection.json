@@ -16939,6 +16939,81 @@
       "source_path": "learn-pr/wwl-azure/create-manage-session-host-image/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-session-host-image/10-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/2-describe-database-scoped-configuration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/3-describe-intelligent-query-processing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/4-describe-query-store-azure-database-mysql-postgresql.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/3-describe-blocking-locking-sql-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/4-describe-data-file-fragmentation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/2-describe-sql-server-query-store.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/5-exercise-identify-resolve-blocking-issues.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
     }
   ]
 }
