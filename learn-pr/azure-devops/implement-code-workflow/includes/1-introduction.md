@@ -1,25 +1,25 @@
 In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true), you created a basic but complete build configuration for an ASP.NET Core web application.
 
-In this module, you extend this build configuration by implementing a code collaboration strategy that uses Git and GitHub.
+In this module, you'll extend this build configuration by implementing a code collaboration strategy that uses Git and GitHub.
 
-Elite performers deploy code more frequently and experience much faster lead times than other performers. To become elite performers, developers need a way to work with source code and share their changes with others. Collaboration is a key DevOps value, and a source control system that fosters cooperation is a great DevOps tool.
+Elite performers deploy code more frequently and experience many faster lead times than other performers. To become elite performers, developers need a way to work with source code and share their changes with others. Collaboration is a key DevOps value, and a source control system that fosters cooperation is a great DevOps tool.
 
-Although Azure DevOps works with various kinds of source control, many developers choose Git because it's a distributed system that enables all contributors to have their own copy of the work. In this module, you use Git's branching and merging capabilities to more efficiently work with other developers. You also use GitHub, because it provides a central location for teams to host their projects and share their work.
+Although Azure DevOps works with different kinds of source control, many developers choose Git because it's a distributed system that enables all contributors to have their own copy of the work. In this module, you use Git's branching and merging capabilities to more efficiently work with other developers. You also use GitHub, because it provides a central location for teams to host their projects and share their work.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-- Collaborate with others by choosing an appropriate branching and merging strategy
-- Add a badge to your GitHub repository to show the status of the latest build
-- Add a dashboard widget to help visualize your build history
-- Set up a rule on your GitHub repository to require a review
+- Collaborate with others by choosing an appropriate branching and merging strategy.
+- Add a badge to your GitHub repository to show the status of the latest build.
+- Add a dashboard widget to help visualize your build history.
+- Set up a rule on your GitHub repository to require a review.
 
 ## Prerequisites
 
 The modules in this learning path form a progression.
 
-To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+To follow the progression from the beginning, ensure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
 We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 

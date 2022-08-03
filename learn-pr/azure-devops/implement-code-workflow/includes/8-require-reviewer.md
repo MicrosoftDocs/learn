@@ -1,4 +1,4 @@
-In this unit, you set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the `main` branch. As a bonus, you'll also fix the typing error on the _Space Game_ website's home page.
+In this unit, you'll set up a rule on GitHub that requires a reviewer to approve changes before they can be merged into the `main` branch. As a bonus, you'll also fix the typing error on the _Space Game_ website's home page.
 
 Currently, the team allows anyone who makes a pull request to merge the code into the `main` branch. Because no review is required, it's possible for incorrect or unstable code to creep in.
 
@@ -14,7 +14,7 @@ Mara looks up.
 
 **Andy:** Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `main` branch. We need another pair of eyes on the code before the pull request is approved.
 
-**Mara:** I can set that up. In GitHub, there's a way to make sure that no pull request is merged before someone else reviews and approves it.
+**Mara:** I can set that up. In GitHub, there's a way to ensure that no pull request is merged before someone else reviews and approves it.
 
 ## Set up approvals
 
@@ -25,7 +25,7 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 1. In GitHub, go to your _Space Game_ project repository.
 1. Select the **Settings** tab near the top of the page.
 1. On the menu, select **Branches**.
-1. Make sure that **main** is selected as your default branch.
+1. Ensure that **main** is selected as your default branch.
 1. Select **Add rule**.
 1. Under **Branch name pattern**, enter **main**.
 1. Select the **Require pull request reviews before merging** check box.
@@ -38,9 +38,9 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 
 ### Submit the fix
 
-In this section, you submit a fix to the typing error on the home page. Recall that the word "official" is mistyped as "oficial".
+In this section, you submit a fix to the typing error on the home page. Remember that the word "official" is mistyped as "oficial".
 
- :::image type="content" source="../media/5-web-site-revised-text.png" alt-text="A screenshot of the Space Game website showing a typing error.":::
+ :::image type="content" source="../media/5-web-site-revised-text.png" alt-text="Screenshot of the Space Game website showing a typing error.":::
 
 1. In Visual Studio Code, go to the terminal.
 1. To check out the `main` branch, run `git checkout`:
@@ -99,18 +99,18 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 
 1. In GitHub, locate and select the `bugfix/home-page-typo` branch.
 
-    :::image type="content" source="../media/8-github-recent-branch.png" alt-text="A screenshot of GitHub showing the recently pushed branch.":::
+    :::image type="content" source="../media/8-github-recent-branch.png" alt-text="Screenshot of GitHub showing the recently pushed branch.":::
 
 1. To start your pull request, select **Contribute** and then **Open pull request**.
 1. Set your forked repository as the base repository.
 
-    :::image type="content" source="../media/8-github-set-base.png" alt-text="A screenshot of GitHub confirming that the branch can be merged.":::
+    :::image type="content" source="../media/8-github-set-base.png" alt-text="Screenshot of GitHub confirming that the branch can be merged.":::
 
 1. Select **Create pull request**.
 
     You can see that a human review is required before you can merge the change.
 
-    :::image type="content" source="../media/8-github-review-required.png" alt-text="A screenshot of a pull request on GitHub showing that a review is required in order to merge.":::
+    :::image type="content" source="../media/8-github-review-required.png" alt-text="Screenshot of a pull request on GitHub showing that a review is required in order to merge.":::
 
     In practice, you would assign a team member to review your change. In this unit, for learning purposes, you merge your own pull request.
 

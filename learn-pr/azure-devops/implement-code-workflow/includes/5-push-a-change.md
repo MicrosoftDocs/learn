@@ -1,4 +1,4 @@
-In this unit, you practice the complete code workflow by pushing a small change to the _Space Game_ website to GitHub.
+In this unit, you'll practice the complete code workflow by pushing a small change to the _Space Game_ website to GitHub.
 
 Mara has been given the task of changing some text on the home page of the website, *Index.cshtml*. In this unit, you'll follow along.
 
@@ -18,7 +18,7 @@ In the previous unit, you created a pull request and merged your `code-workflow`
 
 The `git pull` command fetches the latest code from the remote repository and merges it into your local repository. This way, you know you're working with the latest codebase.
 
-1. In your terminal, run `git checkout main` to switch to the `main` branch.
+1. In your terminal, run `git checkout main` to switch to the `main` branch:
 
     ```bash
     git checkout main
@@ -67,7 +67,7 @@ In a new browser tab, navigate to `http://localhost:5000` to see the running app
 
 You see this:
 
-:::image type="content" source="../media/3-space-game-top.png" alt-text="A screenshot of the Space Game website running in a web browser.":::
+:::image type="content" source="../media/3-space-game-top.png" alt-text="Screenshot of the Space Game website running in a web browser.":::
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
@@ -75,7 +75,7 @@ When you're finished, return to the terminal window and select <kbd>Ctrl+C</kbd>
 
 ## Create a feature branch
 
-In this section, you create a Git branch so that you can work on files without affecting anyone else. No one will even know you're working on those files until you push them to the remote repository.
+In this section, you'll create a Git branch so that you can work on files without affecting anyone else. No one will even know you're working on those files until you push them to the remote repository.
 
 To create a branch, you use the `git checkout` command and give your branch a name, just like you did in the previous part.
 
@@ -87,7 +87,7 @@ In your terminal, run the following `git checkout` command:
 git checkout -B feature/home-page-text
 ```
 
-Like before, the `feature/home-page-text` is based off of `main`.
+Like before, the `feature/home-page-text` is based off of the `main` branch.
 
 ## Make changes and test it locally
 
@@ -125,7 +125,7 @@ Like before, the `feature/home-page-text` is based off of `main`.
 
     You can see that the home page contains the updated text.
 
-    :::image type="content" source="../media/5-web-site-revised-text.png" alt-text="A screenshot of the Space Game website with updated text. The text contains a spelling error.":::
+    :::image type="content" source="../media/5-web-site-revised-text.png" alt-text="Screenshot of the Space Game website with updated text. The text contains a spelling error.":::
 
     When you're finished, return to the terminal window, and then press <kbd>Ctrl+C</kbd> to stop the running application.
 
@@ -133,27 +133,27 @@ Like before, the `feature/home-page-text` is based off of `main`.
 
 Here you'll stage your changes to *Index.cshtml*, commit the change to your branch, and push your branch up to GitHub.
 
-1. Run `git status` to check to see whether there are uncommitted changes on your branch.
+1. Run `git status` to check and see whether there are uncommitted changes on your branch:
 
     ```bash
     git status
     ```
 
-    You see that *Index.cshtml* has been modified. Like before, the next step is to make sure that Git is tracking this file. This is called _staging_ the file.
+    You'll see that *Index.cshtml* has been modified. Like before, the next step is to make sure that Git is tracking this file. This is called _staging_ the file.
 
-1. Run the following `git add` command to stage *Index.cshtml*.
+1. Run the following `git add` command to stage *Index.cshtml*:
 
     ```bash
     git add Tailspin.SpaceGame.Web/Views/Home/Index.cshtml
     ```
 
-1. Run the following `git commit` command to commit your staged file to the `feature/home-page-text` branch.
+1. Run the following `git commit` command to commit your staged file to the `feature/home-page-text` branch:
 
     ```bash
     git commit -m "Improve the text at the top of the home page"
     ```
 
-1. Run this `git push` command to push, or upload, the `feature/home-page-text` branch to your repository on GitHub.
+1. Run this `git push` command to push, or upload, the `feature/home-page-text` branch to your repository on GitHub:
 
     ```bash
     git push origin feature/home-page-text
@@ -161,7 +161,7 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
 
 1. Just as before, you can locate your branch on GitHub from the branch drop-down box.
 
-    :::image type="content" source="../media/5-github-recently-pushed.png" alt-text="A screenshot of GitHub showing the new branch.":::
+    :::image type="content" source="../media/5-github-recently-pushed.png" alt-text="Screenshot of GitHub showing the new branch.":::
 
 ## Watch Azure Pipelines build the application
 
@@ -171,7 +171,7 @@ As an optional step, trace the build as it moves through the pipeline, and verif
 
 ## Synchronize any changes to the main branch
 
-While you were busy working on your feature, there might have been changes made to the remote `main` branch. Before you create a pull request, it's common practice to get the latest from the remote `main` branch.
+While you were busy working on your feature, there may have been changes made to the remote `main` branch. Before you create a pull request, its common practice to get the latest from the remote `main` branch.
 
 To do this, you first check out, or switch to, the `main` branch. You then merge the remote `main` branch with your local `main` branch.
 
@@ -191,7 +191,7 @@ Let's try the process now.
     git pull origin main
     ```
 
-    Because no one actually made any changes to your `main` branch, the following command tells you that everything is already up-to-date.
+    Because no one actually made any changes to your `main` branch, the following command tells you that everything is already up to date.
 
     ```output
     From https://github.com/username/mslearn-tailspin-spacegame-web
@@ -217,7 +217,7 @@ Let's try the process now.
     Already up to date.
     ```
 
-    If you did incorporate any changes, you would want to test your application again to make sure that everything is still working.
+    If you did incorporate any changes, you would want to test your application again to ensure that everything is still working.
 
 ## Push your local branch again
 
@@ -231,7 +231,7 @@ Although you didn't incorporate any changes from the remote repository, let's pr
     git push origin feature/home-page-text
     ```
 
-    Once again, the response says that you're already up-to-date since no changes were made.
+    Once again, the response says that you're already up to date since no changes were made.
 
     ```output
     Everything up-to-date
@@ -247,7 +247,7 @@ In this section, you submit a pull request just as you did previously.
 1. To start your pull request, select **Contribute** and then **Open pull request**.
 1. Ensure that the **base** drop-down list specifies your repository and not the Microsoft repository.
 
-    :::image type="content" source="../media/5-github-set-base.png" alt-text="A screenshot of GitHub confirming that the branch can be merged.":::
+    :::image type="content" source="../media/5-github-set-base.png" alt-text="Screenshot of GitHub confirming that the branch can be merged.":::
 
     > [!IMPORTANT]
     > Again, this step is important because you can't merge your changes into the Microsoft repository.
