@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-synapse-analytics.exercise-explore-synapse-analytics
+title: Exercise - Explore Azure Synapse Analytics
+metadata:
+  title: Exercise - Explore Azure Synapse Analytics
+  description: "Exercise - Explore Azure Synapse Analytics"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 60
+content: |
+  [!include[](includes/4a-exercise-explore-synapse.md)]
