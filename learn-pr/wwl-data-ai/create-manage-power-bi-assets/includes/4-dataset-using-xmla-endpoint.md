@@ -4,27 +4,25 @@ If you've used Microsoft Analysis Services, you may be familiar with XMLA endpoi
 
 By default, endpoint connectivity is *read-only* for **datasets workload**. This setting allows data visualization tools access to the following dataset details:
 
-* model data
-* metadata
-* events
-* schema
+* Model data
+* Metadata
+* Events
+* Schema
 
 Some data visualization tools include Microsoft Excel, Power BI Report Builder, Tabular Editor, or ALM Toolkit. You can get the workspace connection URL in workspace settings. Go to **Settings** > **Premium** > **Workspace Connection**, select **Copy**.
 
-*Read-write* connectivity can be enabled and provide more operations, including dataset:
+*Read-write* connectivity can be enabled to provide more operations, including:
 
-* management
-* governance
-* advanced semantic modeling
-* debugging
-* monitoring
+* Management
+* Governance
+* Advanced semantic modeling
+* Debugging
+* Monitoring
 
 With read-write enabled, datasets have more parity with Azure Analysis Services and SQL Server Analysis Services enterprise grade tabular modeling tools and processes.
 
-
 > [!IMPORTANT]
 > In order to use XMLA endpoint for read-write operations, the dataset must reside in a Premium or Premium Per User (PPU) workspace.
-
 
 ## Enable read-write connectivity
 
@@ -40,4 +38,5 @@ To enable read-write for **Premium Per User** workspaces:
 * In the Admin portal, select **Premium Per User**.
 * Expand Dataset workload settings. In the **XMLA Endpoint** setting, select **Read Write**.
 
-For full functionality and limitations, reference the [Dataset connectivity with the XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) article.
+> [!NOTE]
+> For full functionality and limitations, reference the [Dataset connectivity with the XMLA endpoint](/power-bi/enterprise/service-premium-connect-tools) article.
