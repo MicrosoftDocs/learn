@@ -187,11 +187,11 @@ C# data can be represented using various types including classes, structs, and r
         nameof(Product)
     )
     {
-        public string Name? { get; init; }
-        public decimal Price { get; init; }
-        public bool Archived { get; init; }
-        public int Quantity { get; init; }
-    }
+        public string Name { get; init; } = default!;
+        public decimal Price { get; init; } = default;
+        public bool Archived { get; init; } = default;
+        public int Quantity { get; init; } = default;
+    };
     ```
 
 01. **Save** the *Product.cs* file.
@@ -253,11 +253,11 @@ Your app now creates a database and container. The methods you used to create th
         nameof(Product)
     )
     {
-        public string? Name { get; init; }
-        public decimal Price { get; init; }
-        public bool Archived { get; init; }
-        public int Quantity { get; init; }
-    }
+        public string Name { get; init; } = default!;
+        public decimal Price { get; init; } = default;
+        public bool Archived { get; init; } = default;
+        public int Quantity { get; init; } = default;
+    };
     ```
 
 01. Review the *Program.cs* code file to make sure that your code matches this sample.
