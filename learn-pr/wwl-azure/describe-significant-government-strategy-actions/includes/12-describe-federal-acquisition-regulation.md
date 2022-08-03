@@ -23,7 +23,7 @@ As noted on [its web site](https://www.acquisition.gov/):
 
 After a decade of developing its cloud strategy, the US Government realized that it must make key changes to the way it acquires cloud services as the existing mechanisms in FAR were not addressing key needs.
 
-In 2015, it made [the following changes to FAR section 12.301](https://www.acquisition.gov/dfars/252.239-7010-cloud-computing-services/), which addresses the acquisition of commercial items.
+In 2015, it made [the following changes to FAR section 12.301](https://www.acquisition.gov/dfars/252.239-7010-cloud-computing-services.#DFARS-252.239-7010), which addresses the acquisition of commercial items.
 
 #### Cloud services and the contracting officer
 

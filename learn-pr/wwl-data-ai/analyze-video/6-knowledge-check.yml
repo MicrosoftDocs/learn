@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/31/2021
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -18,21 +19,21 @@ quiz:
     choices:
     - content: "Use the Computer Vision service to extract key frames from the video."
       isCorrect: false
-      explanation: "That's incorrect. You do not need to extract frames from the video before analyzing it."
+      explanation: "That's incorrect. You don't need to extract frames from the video before analyzing it."
     - content: "Upload the video to Video Analyzer for Media and index it."
       isCorrect: true
       explanation: "That's correct. You need to index a video before analyzing it."
     - content: "Store the video file in an Azure blob store container."
       isCorrect: false
       explanation: "That's incorrect. You can upload the video file directly to the Video Analyzer portal."
-  - content: "You want Video Analyzer for Media to recognize colleagues in videos recorded from conference calls. What should you do?"
+  - content: "You want Video Analyzer for Media to recognize brands in videos recorded from conference calls. What should you do?"
     choices:
-    - content: "Create a custom model containing a Person for each colleague, with example images of their faces."
+    - content: "Edit the Brands model to show brands suggested by Bing, and add any new brands you want to detect."
       isCorrect: true
-      explanation: "That's correct. You can create a model of Person records with sample face images so that Video Analyzer for Media will recognize those people in your videos."
-    - content: "Edit the conference call videos to include a caption of each person's name on their first appearance."
+      explanation: "That's correct. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
+    - content: "Edit the conference call videos to include a caption of each brand seen on their first appearance."
       isCorrect: false
-      explanation: "That's incorrect. You can create a model of Person records with sample face images so that Video Analyzer for Media will recognize those people in your videos."
-    - content: "Embed the Video Analyzer for Media widgets in a custom web site that employees access using their own user credentials."
+      explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."
+    - content: "Embed the Video Analyzer for Media widgets in a custom web site that has all the brand images stored for reference."
       isCorrect: false
-      explanation: "That's incorrect. You can create a model of Person records with sample face images so that Video Analyzer for Media will recognize those people in your videos."
+      explanation: "That's incorrect. You can both detect known brands, and well as include new brands you want to detect by providing information about it."

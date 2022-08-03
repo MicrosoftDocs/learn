@@ -15,7 +15,7 @@ At this point, you have a front-end app with static data inside of the app. You 
     }];
    ```
 
-1. Create a file, _db.json_, and give it the following content:
+1. Edit the existing _db.json_ file or create one in the main folder it not, and give it the following content:
 
    ```json
    {
@@ -101,7 +101,7 @@ At this point, you have a front-end app with static data inside of the app. You 
 1. Add a proxy by opening up _package.json_ and the following entry:
 
    ```json
-   "proxy": "http://localhost:5000"    
+   "proxy": "http://localhost:5000"
    ```
 
    Any calls to */api/* will be translated as calling `http://localhost:5000`.
@@ -135,7 +135,7 @@ Suppose the back-end team has now finished building the server. To use the serve
 
 1. Open _Program.cs_, and add the following code to enable CORS (the code you need to add is highlighted):
 
-   :::code language="csharp" source="../code/minimal-spa-use-server-api.cs" highlight="6, 17-24, 33":::
+   :::code language="csharp" source="../code/minimal-spa-use-server-api.cs" highlight="6, 23-30, 39":::
 
    The changes will configure CORS. You'll be able to read and write toward the API, despite the front end and back end running on different ports.
 
@@ -143,7 +143,7 @@ Suppose the back-end team has now finished building the server. To use the serve
 
    The server runs on port 5059. Adjust the proxy in _package.json_ for the front-end app to match the port the server assumes.
 
-   Your front end should show one item with the title, *Pepperoni*.
+   Your front end should show one item with the title, _Pepperoni_.
 
 Congratulations, you've managed to create a full stack application, with both front and back ends.
 

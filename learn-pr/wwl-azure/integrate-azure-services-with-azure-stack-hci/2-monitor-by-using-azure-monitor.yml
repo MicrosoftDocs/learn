@@ -4,12 +4,13 @@ title: Monitor Azure Stack HCI by using Azure Monitor
 metadata:
   title: Monitor Azure Stack HCI by using Azure Monitor
   description: "Monitor Azure Stack HCI by using Azure Monitor"
-  ms.date: 06/09/2021
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 14
 content: |
   [!include[](includes/2-monitor-by-using-azure-monitor.md)]

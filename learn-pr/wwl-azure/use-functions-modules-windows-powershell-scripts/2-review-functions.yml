@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-functions-modules-windows-powershell-scripts.review-functions
+title: Review functions in Windows PowerShell scripts
+metadata:
+  title: Review functions in Windows PowerShell scripts
+  description: "Review functions in Windows PowerShell scripts"
+  ms.date: 07/25/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-review-functions.md)]

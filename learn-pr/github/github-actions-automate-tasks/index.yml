@@ -3,9 +3,9 @@ uid: learn.github.github-actions-automate-tasks
 metadata:
   title: "Automate development tasks by using GitHub Actions"
   description: Create a basic GitHub Action and use that action in a workflow.
-  ms.date: 05/17/2022
-  author: juliakm
-  ms.author: jukullam
+  ms.date: 07/08/2022
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Automate development tasks by using GitHub Actions"

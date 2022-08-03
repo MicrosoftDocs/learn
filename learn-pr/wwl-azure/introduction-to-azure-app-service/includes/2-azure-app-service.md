@@ -1,4 +1,4 @@
-Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments.
+Azure App Service is an HTTP-based service for hosting web applications, REST APIs, and mobile back ends. You can develop in your favorite programming language, be it .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python. Applications run and scale with ease on both Windows and Linux-based environments.
 
 ## Built-in auto scale support
 
@@ -19,7 +19,7 @@ App Service can also host web apps natively on Linux for supported application s
 The languages, and their supported versions, are updated on a regular basis. You can retrieve the current list by using the following command in the Cloud Shell.
 
 ```bash
-az webapp list-runtimes --os-type linux
+az webapp list-runtimes --linux
 ```
 
 ### Limitations

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-background-jobs-use-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which Windows PowerShell cmdlet should you use to run a background task?"
+    choices:
+    - content: "**Receive-Job**"
+      isCorrect: false
+      explanation: "Incorrect. To run a background task, use **Start-Job**. The **Receive-Job** cmdlet retrieves results of a job."
+    - content: "**Start-Job**"
+      isCorrect: true
+      explanation: "Correct. To run a background task, use **Start-Job**."
+    - content: "**Get-Job**"
+      isCorrect: false
+      explanation: "Incorrect. To run a background task, use **Start-Job**. The **Get-Job** cmdlet lists all current jobs."
+  - content: "You need to list results of a background task you invoked by using Windows PowerShell. You need to ensure that you will be able to retrieve the same job results again. What should you run?"
+    choices:
+    - content: "The **Get-Job** cmdlet with the **-Keep** parameter"
+      isCorrect: false
+      explanation: "Incorrect. The **Receive-Job** cmdlet with the **-Keep** parameter will list the results of a job without removing them from memory. The **Get-Job** cmdlet lists all current jobs."
+    - content: "The **Receive-Job** cmdlet with the **-Keep** parameter"
+      isCorrect: true
+      explanation: "Correct. The **Receive-Job** cmdlet with the **-Keep** parameter will list the results of a job without removing them from memory."
+    - content: "The **Get-Job** cmdlet with the **-IncludeChildJobs** parameter"
+      isCorrect: false
+      explanation: "Incorrect. The **Receive-Job** cmdlet with the **-Keep** parameter will list the results of a job without removing them from memory. The **Get-Job** cmdlet lists all current jobs."

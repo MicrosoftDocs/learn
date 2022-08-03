@@ -1,4 +1,4 @@
-Organizations use mobile device management (MDM) and mobile application management (MAM) to help control organization data securely, as well as help end users be as productive as possible. When evaluating an MDM/MAM solution such as Microsoft Intune and Configuration Manager, look at what the goal is, and what you want to achieve.
+Organizations use mobile device management (MDM) and mobile application management (MAM) to help control organization data securely, as well as help end users be as productive as possible. When evaluating an MDM/MAM solution such as Microsoft Intune and Configuration Manager, look at the goal and what you want to achieve.
 
 Your objectives for the end users at your organization will likely focus on one or more of the following items:
 
@@ -9,16 +9,16 @@ Your objectives for the end users at your organization will likely focus on one 
 
 ## Access organizational apps and email
 
-Users expect to work from devices using organization apps, including reading, and responding to email, updating and sharing data, and more. You must determine the different types of apps your organization uses and needs. To accomplish this objective, start by making a list of the apps your end users regularly use. Also, review the [apps that can be protected using Microsoft Intune](/mem/intune/apps/apps-supported-intune-apps?azure-portal=true). In addition, you can become more familiar with app management overall in [Intune](/mem/intune/apps/app-management?azure-portal=true) and 
+Users expect to work from devices using your organization's apps, including reading and responding to email, updating and sharing data, and more. You must determine the different types of apps your organization uses and needs. To accomplish this objective, start by making a list of the apps your end users regularly use. Also, review the [Microsoft Intune protected apps ](/mem/intune/apps/apps-supported-intune-apps?azure-portal=true). In addition, you can become more familiar with app management overall in [Intune](/mem/intune/apps/app-management?azure-portal=true) and 
 [Configuration Manager](/mem/configmgr/apps/understand/introduction-to-application-management?azure-portal=true).
 
 ## Secure access on all devices
 
-When data is stored on mobile devices, it should be protected from malicious activity. You must determine how you want to secure your devices, and minimize the impact of malicious activity. To accomplish this objective, start by determining what Anti-virus (AV) and malware, Conditional Access protection, software updates, and authentication you plan to use for both cloud-based devices and on-premises devices. 
+When data is stored on mobile devices, it should be protected from malicious activity. You must determine how you want to secure your devices and minimize the impact of malicious activity. To accomplish this objective, start by determining what Anti-virus (AV) and malware, Conditional Access protection, software updates, and authentication you plan to use for both cloud-based devices and on-premises devices.
 
 ## Distribute IT
 
-Many organizations want to give different administrators' control over locations, divisions, and so on. For example, the **Charlotte IT Administrators** group controls and monitors the policies in the Charlotte office. These Charlotte IT Administrators can only see and manage policies for the Charlotte location. They can't see and manage policies for the Redmond location. This approach is called distributed IT. You must determine how you want to distribute your rules and settings (policies and profiles). For related information, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags?azure-portal=true).
+Many organizations want to give different administrators control over locations, divisions, and so on. For example, the **Charlotte IT Administrators** group controls and monitors the policies in the Charlotte office. These Charlotte IT Administrators can only see and manage policies for the Charlotte location. They can't see and manage policies for the Redmond location. This approach is called *distributed IT*. You must determine how you want to distribute your rules and settings (policies and profiles). For related information, see [Use role-based access control (RBAC) and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags?azure-portal=true).
 
 ## Keep organization data inside the organization
 

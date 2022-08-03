@@ -94,7 +94,8 @@ Notice this line of code:
 Console.WriteLine("Second: " + value++);
 ```
 There's two steps to this line:
-1. Retrieve the current value of the variable `value` and use that in the string interpolation operation.
+
+1. Retrieve the current value of the variable `value` and use that in the string concatenation operation.
 2. Increment the value.
 
 The next line of code confirms that the value was, in fact, incremented.
@@ -111,7 +112,7 @@ Console.WriteLine("Fourth: " + (++value));
 Here, the order of operations is switched because the `++` operator is placed before the operand `value`.
 
 1. Increment the value.
-2. Retrieve the new incremented value of the variable `value` and use that in the string interpolation operation.
+2. Retrieve the new incremented value of the variable `value` and use that in the string concatenation operation.
 
 While not strictly necessary, we added parenthesis around the expression `(++value)` to improve readability.  Seeing so many `+` operators next to each other seems like it could be misunderstood by other developers.  Stylistic decisions like this are subjective.  However, since you will write the code once but read it many times, you should prioritize readability.
 

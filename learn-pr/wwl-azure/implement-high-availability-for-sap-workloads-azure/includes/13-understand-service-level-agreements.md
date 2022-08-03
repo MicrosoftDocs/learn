@@ -1,6 +1,6 @@
 In Azure, the [Service Level Agreement](https://azure.microsoft.com/support/legal/sla/) describes Microsoft's commitments for uptime and connectivity. If the SLA for a particular service is 99.9%, you should expect the service to be available 99.9% of the time. Different services have different SLAs.
 
-The Azure SLA also includes provisions for obtaining a service credit if the SLA is not met, along with specific definitions of *availability* for each service. That aspect of the SLA acts as an enforcement policy.
+The Azure SLA also provides for obtaining a service credit if the SLA isn't met, along with specific definitions of *availability* for each service. That aspect of the SLA acts as an enforcement policy.
 
 > [!NOTE]
 > The [Service Level Agreement Estimator sample app](https://github.com/mspnp/samples/tree/master/Reliability/SLAEstimator) shows how to calculate the SLA of your architecture.
@@ -26,7 +26,7 @@ The total composite SLA is:
 
 - Web app *and* (database *or* queue) = 99.95% × 99.99999% = ~99.95%
 
-There are tradeoffs to this approach. The application logic is more complex, you are paying for the queue, and you need to consider data consistency issues.
+There are tradeoffs to this approach. The application logic is more complex, you're paying for the queue, and you need to consider data consistency issues.
 
 ## SLAs for multiregion deployments
 
@@ -42,4 +42,4 @@ The expected chance that the application fails in all regions at the same time i
 - The combined SLA for two regions = (1 − (1 − 0.9995) ^ 2) = 99.999975%
 - The combined SLA for four regions = (1 − (1 − 0.9995) ^ 4) = 99.999999%
 
-The [SLA for Traffic Manager](https://azure.microsoft.com/support/legal/sla/traffic-manager/v1_0/) is also a factor. Failing over is not instantaneous in active-passive configurations, which can result in downtime during a failover. For more information, see [Traffic Manager endpoint monitoring and failover](/azure/traffic-manager/traffic-manager-monitoring).
+The [SLA for Traffic Manager](https://azure.microsoft.com/support/legal/sla/traffic-manager/v1_0/) is also a factor. Failing over isn't instantaneous in active-passive configurations, which can result in downtime during a failover. For more information, see [Traffic Manager endpoint monitoring and failover](/azure/traffic-manager/traffic-manager-monitoring).

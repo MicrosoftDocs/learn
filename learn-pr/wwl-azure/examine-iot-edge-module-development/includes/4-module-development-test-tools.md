@@ -31,74 +31,6 @@ The Azure IoT Edge extension for Visual Studio Code provides IoT Edge module tem
 
 In addition to the IoT Edge extensions, you may find it helpful to install other extensions that support code development. For example, you can use Docker Support for Visual Studio Code to manage your images, containers, and registries. Additionally, all the major supported languages have extensions for Visual Studio Code that can help when you're developing modules.
 
-#### Prerequisites
-
-The module templates for some languages and services have prerequisites that are necessary to build the project folders on your development machine with Visual Studio Code.
-
-:::row:::
-  :::column:::
-    **Module template**
-  :::column-end:::
-  :::column:::
-    **Prerequisite**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Azure Functions
-  :::column-end:::
-  :::column:::
-    .NET Core 2.1 SDK
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    C
-  :::column-end:::
-  :::column:::
-    Git
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    C\#
-  :::column-end:::
-  :::column:::
-    .NET Core 2.1 SDK
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Java
-  :::column-end:::
-  :::column:::
-    Java SE Development Kit 10
-Set the JAVA\_HOME environment variable.
-Maven
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Node.js
-  :::column-end:::
-  :::column:::
-    Node.js
-Yeoman
-Azure IoT Edge Node.js module generator.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Python
-  :::column-end:::
-  :::column:::
-    Python
-Pip
-Git
-  :::column-end:::
-:::row-end:::
-
-
 ### Visual Studio 2017/2019 extension
 
 The Azure IoT Edge tools for Visual Studio provide an IoT Edge module template built on C\# and C.
@@ -210,7 +142,7 @@ For more information, see Azure IoT Edge dev container [https://hub.docker.com/r
 
 The IoT Edge runtime in a container provides a complete runtime that takes your device connection string as an environment variable. This container enables you to test IoT Edge modules and scenarios on a system that may not support the runtime natively, like macOS. Any modules that you deploy will be started outside of the runtime container. If you want the runtime and any deployed modules to exist within the same container, consider the IoT Edge device container instead.
 
-For more information, see Running Azure IoT Edge in a container [https://github.com/Azure/iotedgedev/tree/master/docker/runtime](https://github.com/Azure/iotedgedev/tree/master/docker/runtime).
+For more information, see Running Azure IoT Edge in a container [azure-iot-edge-device-container](https://github.com/toolboc/azure-iot-edge-device-container).
 
 ### IoT Edge device container
 

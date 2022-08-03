@@ -63,11 +63,9 @@ We switch it off again and then create a hotfix. By separating deployment from t
 
  -  Does your organization need Continuous Delivery?
  -  Do you use Agile/Scrum?
-    
      -  Is everybody involved or only the Dev departments?
  -  Can you deploy your application multiple times per day? Why or why not?
  -  What is the main bottleneck for Continuous Delivery in your organization?
-    
      -  The Organization
      -  Application Architecture
      -  Skills

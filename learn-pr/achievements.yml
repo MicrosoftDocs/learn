@@ -1057,3 +1057,33 @@ achievements:
   title: Manage alerts and incidents in Microsoft Defender for Endpoint
   summary: Learn how to investigate incidents and alerts using Microsoft Defender for Endpoints.  Perform advanced hunting and consult with threat experts.
   iconUrl: /learn/achievements/manage-alerts-and-incidents-in-microsoft-defender-for-endpoints.svg
+- uid: learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.badge
+  type: badge
+  title: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics
+  summary: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics
+  iconUrl: /learn/achievements/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.svg
+- uid: learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.badge
+  type: badge
+  title: Query Azure Cosmos DB with SQL Serverless for Azure Synapse Analytics
+  summary: Query Azure Cosmos DB with SQL Serverless for Azure Synapse Analytics
+  iconUrl: /learn/achievements/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.svg
+- uid: learn.wwl.build-high-quality-release-pipeline.badge
+  type: badge
+  title: Build a high-quality release pipeline
+  summary: Build a high-quality release pipeline
+  iconUrl: /learn/achievements/3-build-high-quality-release-pipeline.svg
+- uid: learn.wwl.implement-application-configuration.badge
+  type: badge
+  title: Implement application configuration
+  summary: Implement application configuration
+  iconUrl: /learn/achievements/8-implement-application-configuration.svg
+- uid: learn.wwl.configure-databases-for-performance.badge
+  type: badge
+  title: Configure databases for performance
+  summary: Configure databases for performance
+  iconUrl: /learn/achievements/configure-databases-for-performance.svg
+- uid: learn.wwl.explore-causes-of-performance-issues.badge
+  type: badge
+  title: Explore causes of performance issues
+  summary: Explore causes of performance issues
+  iconUrl: /learn/achievements/explore-causes-of-performance-issues.svg
