@@ -25,10 +25,10 @@ In this task, you will review the infrastructure that has been configured for th
 In this task, you will test connecting from AZ500vm01 to AZ500vm02's private IP address. This connection will not work. The virtual machines are in different virtual networks.
 
 1.  Use RDP to connect to **AZ500vm01**.
-2.  In a **browser**, view the `**http://localhost.default.htm**` page.
+2.  In a **browser**, view the `http://localhost.default.htm` page.
 3.  This page should display without error.
 4.  Use RDP to connect to **AZ500vm02**
-5.  In a **browser**, view the `**http://localhost.default.htm**` page.
+5.  In a **browser**, view the `http://localhost.default.htm` page.
 6.  This page should display without error.
 7.  The above steps show that IIS is working on the virtual machines.
 8.  Return to your **AZ500vm01** RDP session.
