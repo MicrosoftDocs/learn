@@ -16,21 +16,17 @@ content: |
 quiz:
   questions:
   - content: |
-      When you execute your workflow you get the following error message:
-      
-      `Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable. Please make sure to give write permissions to id-token in the workflow.`
-
       What should you do to fix this error?
     choices:
     - content: Confirm the name of the resource group you are deploying to. It is probably incorrect.
       isCorrect: false
-      explanation: Incorrect. Your workflow output indicates it is not able to sign in. You should add a `permissions` section to the workflow definition.
-    - content: Add the `permisions` section to the workflow definition file.
+      explanation: Incorrect. The error message indicates that there's a problem locating the Bicep file.
+    - content: Add an `actions/checkout` step to the workflow definition file.
       isCorrect: true
-      explanation: Correct. You need to specify the `permissions` section in your workflow definition so that your workflow can sign in to Azure Active Directory by using a workload identity.
-    - content: Check the runner your workflow is running on.
+      explanation: Correct. By default, GitHub Actions doesn't check out the files in your repo to the runner. Adding a `checkout` step ensures that your Bicep files are available for the runner to use.
+    - content: Define a new environment variable, with the value of the Bicep file's location.
       isCorrect: false
-      explanation: Incorrect. Your runner only executes the `azure/login` action with the workflow identity you provide to it. You should add a `permissions` section to the workflow definition.
+      explanation: Incorrect. The workflow is missing an `actions/checkout` step. By default, GitHub Actions doesn't check out the files in your repo to the runner. Adding a `checkout` step ensures that your Bicep files are available for the runner to use.
   - content: |
       Which of these situations will trigger the R&D team's workflow to run?
     choices:
