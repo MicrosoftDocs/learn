@@ -150,39 +150,61 @@ Now, the .NET project should be built and ready for you to add your own custom c
     using Microsoft.Azure.Cosmos.Fluent;
     ```
 
-01. Create a string variable named **connectionString**. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable(System.String)> passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
+01. Create a new local function named **GetClient** that returns an item of type <xref:Microsoft.Azure.Cosmos.CosmosClient>.
 
     ```csharp
-    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
-    ```
-
-01. Print the connection string to the console.
-
-    ```csharp
-    Console.WriteLine($"[Connection string]:\t{connectionString}");
-    ```
-
-01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase> enumeration.
-
-    ```csharp
-    CosmosSerializationOptions serializerOptions = new()
+    static CosmosClient GetClient()
     {
-        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
-    };
+    }
     ```
 
-01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder> class by passing in the connection string to the constructor. Chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithSerializerOptions(Microsoft.Azure.Cosmos.CosmosSerializationOptions)> fluent method and set this method's parameter to `serializerOptions`. Next, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.Build> method to output an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient>. Finally, wrap the class within a using statement.
+01. Add the following lines of code within the **GetClient** local function.
+
+    01. Create a string variable named **connectionString**. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable(System.String)> passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
+
+        ```csharp
+        string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+        ```
+
+    01. Print the connection string to the console.
+
+        ```csharp
+        Console.WriteLine($"[Connection string]:\t{connectionString}");
+        ```
+
+    01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase> enumeration.
+
+        ```csharp
+        CosmosSerializationOptions serializerOptions = new()
+        {
+            PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+        };
+        ```
+
+    01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder> class by passing in the connection string to the constructor. Next, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithSerializerOptions(Microsoft.Azure.Cosmos.CosmosSerializationOptions)> fluent method and set this method's parameter to `serializerOptions`. Finally, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.Build> method to create an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient> named **output**.
+
+        ```csharp
+        CosmosClient output = new CosmosClientBuilder(connectionString)
+            .WithSerializerOptions(serializerOptions)
+            .Build();
+        ```
+
+    01. Print a message indicating that your client is ready.
+
+        ```csharp
+        Console.WriteLine("[Client ready]");    
+        ```
+
+    01. Return the **output** variable.
+
+        ```csharp
+        return output;
+        ```
+
+01. Back within the main program flow, call the **GetClient** method, store the result in a variable named **client**, and wrap this call with a using statement.
 
     ```csharp
-    using CosmosClient client = new CosmosClientBuilder(connectionString)
-        .WithSerializerOptions(serializerOptions)
-        .Build();
-    ```
-
-01. Print a message indicating that you've connected to the client.
-
-    ```csharp
-    Console.WriteLine("[Client connected]");    
+    using CosmosClient client = GetClient();
     ```
 
 01. **Save** the *Program.cs* file.
@@ -214,7 +236,7 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
 01. Review the **inventory.csproj** project file to ensure that the project configuration matches this sample.
 
     ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
+    <Project Sdk="Microsoft.NET.Sdk">    
       <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
@@ -233,18 +255,33 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     
+    using CosmosClient client = GetClient();
+    
+    static CosmosClient GetClient()
+    { 
+        // Implementation removed for brevity
+    }
+    ```
+
+01. Within the **Program.cs** code file, review the **GetClient** local function to make sure that your code matches this sample.
+
+    ```csharp
     string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
-    
+
     Console.WriteLine($"[Connection string]:\t{connectionString}");
-    
+
     CosmosSerializationOptions serializerOptions = new()
     {
         PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
     };
-    
-    using CosmosClient client = new CosmosClientBuilder(connectionString)
+
+    CosmosClient output = new CosmosClientBuilder(connectionString)
         .WithSerializerOptions(serializerOptions)
         .Build();
+
+    Console.WriteLine("[Client ready]");
+
+    return output;
     ```
 
 ---

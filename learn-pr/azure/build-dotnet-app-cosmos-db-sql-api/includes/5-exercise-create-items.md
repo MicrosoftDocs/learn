@@ -45,36 +45,84 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
 01. Open the *Program.cs* file again.
 
-01. Create a new **Category** instance named `helmets` with the following values:
-
-    | Property | Value |
-    | --- | --- |
-    | **id** | `91f79374-8611-4505-9c28-3bbbf1aa7df7` |
-    | **categoryId** | `gear-climb-helmets` |
+01. Create a new asynchronous local function named **CreateItemsAsync**.
 
     ```csharp
-    Category helmets = new(
-        Id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
-        CategoryId: "gear-climb-helmets"
-    );
+    async Task CreateItemsAsync()
+    {
+    }
     ```
 
-01. Create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the same value as the `categoryId` property for the **Category** instance you created earlier.
+01. Add the following lines of code within the **CreateItemsAsync** local function.
+
+    01. Create a new **Category** instance named `goggles` with the following values:
+
+        | Property | Value |
+        | --- | --- |
+        | **id** | `ef7fa0f1-0e9d-4435-aaaf-a778179a94ad` |
+        | **categoryId** | `gear-snow-goggles` |
+
+        ```csharp
+        Category goggles = new(
+            Id: "ef7fa0f1-0e9d-4435-aaaf-a778179a94ad",
+            CategoryId: "gear-snow-goggles"
+        );
+        ```
+
+    01. Create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the same value as the `categoryId` property for the **Category** instance you created earlier.
+
+        ```csharp
+        PartitionKey googlesKey = new("gear-snow-goggles");
+        ```
+
+    01. Use the <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A> method to create or replace the item passing in an object for the item to create and a partition key value.
+
+        ```csharp
+        Category result = await container.UpsertItemAsync(goggles, googlesKey);
+        ```
+
+    01. Print various properties of `result` to the console including: The unique identifier of the item and the type of the item.
+
+        ```csharp
+        Console.WriteLine($"[New item created]:\t{result.Id}\t(Type: {result.Type})");
+        ```
+
+    01. Create a new **Category** instance named `helmets` with the following values:
+
+        | Property | Value |
+        | --- | --- |
+        | **id** | `91f79374-8611-4505-9c28-3bbbf1aa7df7` |
+        | **categoryId** | `gear-climb-helmets` |
+
+        ```csharp
+        Category helmets = new(
+            Id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
+            CategoryId: "gear-climb-helmets"
+        );
+        ```
+
+    01. Create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the same value as the `categoryId` property for the **Category** instance you created earlier.
+
+        ```csharp
+        PartitionKey helmetsKey = new("gear-climb-helmets");
+        ```
+
+    01. Use the <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A> method to create or replace the item. Pass in an object for the item to create and a partition key value. Return an object of type <xref:Microsoft.Azure.Cosmos.ItemResponse%601>.
+
+        ```csharp
+        ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
+        ```
+
+    01. Print various properties of `response` to the console including: The unique identifier of the underlying item, the type of the underlying item, and the request charge in RUs.
+
+        ```csharp
+        Console.WriteLine($"[New item created]:\t{response.Resource.Id}\t(Type: {response.Resource.Type})\t(RUs: {response.RequestCharge})");
+        ```
+
+01. Back within the main program flow, asynchronously call the **CreateItemsAsync** method.
 
     ```csharp
-    PartitionKey helmetsKey = new("gear-climb-helmets");
-    ```
-
-01. Use the <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A> method to create or replace the item passing in an object for the item to create and a partition key value.
-
-    ```csharp
-    ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
-    ```
-
-01. Print various properties of the response object to the console including: The unique identifier of the item, the type of the item, and the request charge in RUs.
-
-    ```csharp
-    Console.WriteLine($"[New item created]:\t{response.Resource.id}\t(Type: {response.Resource.type})\t(RUs: {response.RequestCharge})");
+    await CreateItemsAsync();
     ```
 
 01. **Save** the *Program.cs* file.
@@ -89,112 +137,138 @@ Now consider a scenario where you want to create multiple products along with a 
 
 In this section, we'll create a transactional batch to create the `tents` category and related products together.
 
-01. Create a new **Category** instance named `tents` with the following values:
-
-    | Property | Value |
-    | --- | --- |
-    | **id** | `5df21ec5-813c-423e-9ee9-1a2aaead0be4` |
-    | **categoryId** | `gear-camp-tents` |
+01. Create a new asynchronous local function named **CreateItemBatchAsync**.
 
     ```csharp
-    Category tents = new(
-        id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
-        categoryId: "gear-camp-tents"
-    );
-    ```
-
-01. Create four instances of the **Product** type using these values.
-
-    | Property | `cirroa` | `kuloar` | `mammatin` | `nimbolo` |
-    | --- | --- | --- | --- | --- |
-    | **id** | `e8dddee4-9f43-4d15-9b08-0d7f36adcac8` | `e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa` | `f7653468-c4b8-47c9-97ff-451ee55f4fd5` | `6e3b7275-57d4-4418-914d-14d1baca0979` |
-    | **categoryId** | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` |
-    | **name** | `Cirroa Tent` | `Kuloar Tent` | `Mammatin Tent` | `Nimbolo Tent` |
-    | **price** | `490.00` | `530.00` | `0.00` | `330.00` |
-    | **archived** | `false` | `false` | `true` | `false` |
-    | **quantity** | `15` | `8` | `0` | `35` |
-
-    ```csharp
-    Product cirroa = new(
-        id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
-        categoryId: "gear-camp-tents",
-        name: "Cirroa Tent", 
-        price: 490.00m, 
-        archived: false, 
-        quantity: 15
-    );
-    
-    Product kuloar = new(
-        id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
-        categoryId: "gear-camp-tents",
-        name: "Kuloar Tent", 
-        price: 530.00m, 
-        archived: false, 
-        quantity: 8
-    );
-    
-    Product mammatin = new(
-        id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
-        categoryId: "gear-camp-tents",
-        name: "Mammatin Tent", 
-        price: 0.00m, 
-        archived: true, 
-        quantity: 0
-    );
-    
-    Product nimbolo = new(
-        id: "6e3b7275-57d4-4418-914d-14d1baca0979",
-        categoryId: "gear-camp-tents",
-        name: "Nimbolo Tent", 
-        price: 330.00m, 
-        archived: false, 
-        quantity: 35
-    );
-    ```
-
-01. Now, create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the `gear-camp-tents` value.
-
-    ```csharp
-    PartitionKey tentsKey = new("gear-camp-tents");
-    ```
-
-01. Create a new transactional batch scoped to the `gear-camp-tents` partition key value using the <xref:Microsoft.Azure.Cosmos.Container.CreateTransactionalBatch(Microsoft.Azure.Cosmos.PartitionKey)> method. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
-
-    ```csharp
-    TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
-        .UpsertItem<Category>(tents)
-        .UpsertItem<Product>(cirroa)
-        .UpsertItem<Product>(kuloar)
-        .UpsertItem<Product>(mammatin)
-        .UpsertItem<Product>(nimbolo);
-    ```
-
-01. Output a message to the console to indicating that we're starting a batch operation.
-
-    ```csharp
-    Console.WriteLine("[Batch started]");
-    ```
-
-01. Use the `TransactionalBatch.ExecuteAsync` method to execute the batch and return a special response type.
-
-    ```csharp
-    using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
-    ```
-
-01. Using a for loop, iterate through all of the items in the response. First, convert each item to the type `TransactionalBatchOperationResult` using your `Item` base class as the generic. Then, print the unique identifier and type of the response object.
-
-    ```csharp
-    for (int i = 0; i < batchResponse.Count; i++)
+    async Task CreateItemBatchAsync()
     {
-        TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
-        Console.WriteLine($"[New item created]:\t{result.Resource.id}\t(Type: {result.Resource.type})");
     }
     ```
 
-01. Output another message to the console indicating that the batch is complete. Include the request charge for the entire batch in this message.
+01. Add the following lines of code within the **CreateItemBatchAsync** local function.
+
+    01. Create a new **Category** instance named `tents` with the following values:
+
+        | Property | Value |
+        | --- | --- |
+        | **id** | `5df21ec5-813c-423e-9ee9-1a2aaead0be4` |
+        | **categoryId** | `gear-camp-tents` |
+
+        ```csharp
+        Category tents = new(
+            Id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
+            CategoryId: "gear-camp-tents"
+        );
+        ```
+
+    01. Create four instances of the **Product** type using these values.
+
+        | Property | `cirroa` | `kuloar` | `mammatin` | `nimbolo` |
+        | --- | --- | --- | --- | --- |
+        | **Id** | `e8dddee4-9f43-4d15-9b08-0d7f36adcac8` | `e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa` | `f7653468-c4b8-47c9-97ff-451ee55f4fd5` | `6e3b7275-57d4-4418-914d-14d1baca0979` |
+        | **CategoryId** | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` |
+        | **Name** | `Cirroa Tent` | `Kuloar Tent` | `Mammatin Tent` | `Nimbolo Tent` |
+        | **Price** | `490.00` | `530.00` | `0.00` | `330.00` |
+        | **Archived** | `false` | `false` | `true` | `false` |
+        | **Quantity** | `15` | `8` | `0` | `35` |
+
+        ```csharp
+        Product cirroa = new(
+            Id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
+            CategoryId: "gear-camp-tents"
+        ){
+            Name = "Cirroa Tent",
+            Price = 490.00m,
+            Archived = false,
+            Quantity = 15
+        };
+        ```
+
+        ```csharp
+        Product kuloar = new(
+            Id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
+            CategoryId: "gear-camp-tents"
+        ){
+            Name = "Kuloar Tent",
+            Price = 530.00m,
+            Archived = false,
+            Quantity = 8
+        };
+        ```
+
+        ```csharp
+        Product mammatin = new(
+            Id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
+            CategoryId: "gear-camp-tents"
+        ){
+            Name = "Mammatin Tent",
+            Price = 0.00m,
+            Archived = true,
+            Quantity = 0
+        };
+        ```
+
+        ```csharp
+        Product nimbolo = new(
+            Id: "6e3b7275-57d4-4418-914d-14d1baca0979",
+            CategoryId: "gear-camp-tents"
+        ){
+            Name = "Nimbolo Tent",
+            Price = 330.00m,
+            Archived = false,
+            Quantity = 35
+        };
+        ```
+
+    01. Now, create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the `gear-camp-tents` value.
+
+        ```csharp
+        PartitionKey tentsKey = new("gear-camp-tents");
+        ```
+
+    01. Create a new transactional batch scoped to the `gear-camp-tents` partition key value using the <xref:Microsoft.Azure.Cosmos.Container.CreateTransactionalBatch(Microsoft.Azure.Cosmos.PartitionKey)> method. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
+
+        ```csharp
+        TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
+            .UpsertItem<Category>(tents)
+            .UpsertItem<Product>(cirroa)
+            .UpsertItem<Product>(kuloar)
+            .UpsertItem<Product>(mammatin)
+            .UpsertItem<Product>(nimbolo);
+        ```
+
+    01. Output a message to the console to indicating that we're starting a batch operation.
+
+        ```csharp
+        Console.WriteLine("[Batch started]");
+        ```
+
+    01. Use the `TransactionalBatch.ExecuteAsync` method to execute the batch and return a special response type.
+
+        ```csharp
+        using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
+        ```
+
+    01. Using a for loop, iterate through all of the items in the response. First, convert each item to the type `TransactionalBatchOperationResult` using your `Item` base class as the generic. Then, print the unique identifier and type of the response object.
+
+        ```csharp
+        for (int i = 0; i < batchResponse.Count; i++)
+        {
+            TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
+            Console.WriteLine($"[New item created]:\t{result.Resource.Id}\t(Type: {result.Resource.Type})");
+        }
+        ```
+
+    01. Output another message to the console indicating that the batch is complete. Include the request charge for the entire batch in this message.
+
+        ```csharp
+        Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
+        ```
+
+01. Back within the main program flow, asynchronously call the **CreateItemBatchAsync** method.
 
     ```csharp
-    Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
+    await CreateItemBatchAsync();
     ```
 
 01. **Save** the *Program.cs* file.
@@ -215,6 +289,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
     ```output
     ...
+    [New item created]:     ef7fa0f1-0e9d-4435-aaaf-a778179a94ad    (Type: Category)
     [New item created]:     91f79374-8611-4505-9c28-3bbbf1aa7df7    (Type: Category)        (RUs: 10.29)
     [Batch started]
     [New item created]:     5df21ec5-813c-423e-9ee9-1a2aaead0be4    (Type: Category)
@@ -222,7 +297,7 @@ Your app now creates multiple items and is designed to be resilient enough to be
     [New item created]:     e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa    (Type: Product)
     [New item created]:     f7653468-c4b8-47c9-97ff-451ee55f4fd5    (Type: Product)
     [New item created]:     6e3b7275-57d4-4418-914d-14d1baca0979    (Type: Product)
-    [Batch completed]:      (RUs: 48.76)
+    [Batch completed]:      (RUs: 36.76)
     ```
 
     > [!TIP]
@@ -230,152 +305,134 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
 ### [Review code](#tab/review-code)
 
-01. Review the *Item.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-    public record Item(
-        string Id,
-        string CategoryId,
-        string Type
-    );
-    ```
-
-01. Review the *Category.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-    public record Category(
-       string Id,
-        string CategoryId
-    ) : Item(
-        Id,
-        CategoryId,
-        nameof(Category)
-    );
-    ```
-
-01. Review the *Product.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-    public record Product(
-        string Id, 
-        string CategoryId, 
-        string Name, 
-        decimal Price, 
-        bool Archived, 
-        int Quantity
-    ) : Item(
-        Id,
-        CategoryId,
-        nameof(Product)
-    );
-    ```
-
 01. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
     
-    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    using CosmosClient client = GetClient();
     
-    Console.WriteLine($"[Connection string]:\t{connectionString}");
-    
-    CosmosSerializationOptions serializerOptions = new()
-    {
-        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
-    };
-    
-    using CosmosClient client = new CosmosClientBuilder(connectionString)
-        .WithSerializerOptions(serializerOptions)
-        .Build();
-    
-    Console.WriteLine("[Client connected]");
+    Container container = await CreateResourcesAsync();
 
-    Database database = await client.CreateDatabaseIfNotExistsAsync(
-        id: "cosmicworks"
+    await CreateItemsAsync();
+
+    await CreateItemBatchAsync();
+    
+    static CosmosClient GetClient()
+    {
+        // Implementation removed for brevity
+    }
+    
+    async Task<Container> CreateResourcesAsync()
+    {
+        // Implementation removed for brevity
+    }
+
+    async Task CreateItemsAsync()
+    {
+        // Implementation removed for brevity
+    }
+
+    async Task CreateItemBatchAsync()
+    {
+        // Implementation removed for brevity
+    }
+    ```
+
+01. Within the **Program.cs** code file, review the **CreateItemsAsync** local function to make sure that your code matches this sample.
+
+    ```csharp
+    Category goggles = new(
+        Id: "ef7fa0f1-0e9d-4435-aaaf-a778179a94ad",
+        CategoryId: "gear-snow-goggles"
     );
-    
-    Console.WriteLine($"[Database created]:\t{database.Id}");
-    
-    Container container = await database.CreateContainerIfNotExistsAsync(
-        id: "products",
-        partitionKeyPath: "/categoryId",
-        throughput: 400
-    );
-    
-    Console.WriteLine($"[Container created]:\t{container.Id}");
+
+    PartitionKey googlesKey = new("gear-snow-goggles");
+
+    Category result = await container.UpsertItemAsync(goggles, googlesKey);
+
+    Console.WriteLine($"[New item created]:\t{result.Id}\t(Type: {result.Type})");
 
     Category helmets = new(
         Id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
         CategoryId: "gear-climb-helmets"
     );
-    
+        
     PartitionKey helmetsKey = new("gear-climb-helmets");
-    
+
     ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
-    
+
     Console.WriteLine($"[New item created]:\t{response.Resource.Id}\t(Type: {response.Resource.Type})\t(RUs: {response.RequestCharge})");
-    
+    ```
+
+01. Still within the **Program.cs** code file, review the **CreateItemBatchAsync** local function to make sure that your code matches this sample.
+
+    ```csharp
     Category tents = new(
         Id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
         CategoryId: "gear-camp-tents"
     );
-    
+
     Product cirroa = new(
         Id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
-        CategoryId: "gear-camp-tents",
-        Name: "Cirroa Tent", 
-        Price: 490.00m, 
-        Archived: false, 
-        Quantity: 15
-    );
-    
+        CategoryId: "gear-camp-tents"
+    ){
+        Name = "Cirroa Tent",
+        Price = 490.00m,
+        Archived = false,
+        Quantity = 15
+    };
+
     Product kuloar = new(
         Id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
-        CategoryId: "gear-camp-tents",
-        Name: "Kuloar Tent", 
-        Price: 530.00m, 
-        Archived: false, 
-        Quantity: 8
-    );
-    
+        CategoryId: "gear-camp-tents"
+    ){
+        Name = "Kuloar Tent",
+        Price = 530.00m,
+        Archived = false,
+        Quantity = 8
+    };
+
     Product mammatin = new(
         Id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
-        CategoryId: "gear-camp-tents",
-        Name: "Mammatin Tent", 
-        Price: 0.00m, 
-        Archived: true, 
-        Quantity: 0
-    );
-    
+        CategoryId: "gear-camp-tents"
+    ){
+        Name = "Mammatin Tent",
+        Price = 0.00m,
+        Archived = true,
+        Quantity = 0
+    };
+
     Product nimbolo = new(
         Id: "6e3b7275-57d4-4418-914d-14d1baca0979",
-        CategoryId: "gear-camp-tents",
-        Name: "Nimbolo Tent", 
-        Price: 330.00m, 
-        Archived: false, 
-        Quantity: 35
-    );
-    
+        CategoryId: "gear-camp-tents"
+    ){
+        Name = "Nimbolo Tent",
+        Price = 330.00m,
+        Archived = false,
+        Quantity = 35
+    };
+        
     PartitionKey tentsKey = new("gear-camp-tents");
-    
+
     TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
         .UpsertItem<Category>(tents)
         .UpsertItem<Product>(cirroa)
         .UpsertItem<Product>(kuloar)
         .UpsertItem<Product>(mammatin)
         .UpsertItem<Product>(nimbolo);
-    
+        
     Console.WriteLine("[Batch started]");
-    
+        
     using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
-    
+
     for (int i = 0; i < batchResponse.Count; i++)
     {
         TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
         Console.WriteLine($"[New item created]:\t{result.Resource.Id}\t(Type: {result.Resource.Type})");
     }
-    
+        
     Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
     ```
 

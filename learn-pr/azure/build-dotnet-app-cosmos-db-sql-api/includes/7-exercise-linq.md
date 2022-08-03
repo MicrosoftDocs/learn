@@ -43,7 +43,7 @@ Your team wants a unique query that returns all *products* within the container 
 > [!TIP]
 > Since we are querying across multiple categories, this will make our query cross-partition. This query could potentially use more RUs than a query that is scoped to a single logical partition key value.
 
-01. Open the *Program.cs* file.
+01. Open the *Program.cs* file again.
 
 01. At the beginning of the file, add a using directive for the **Microsoft.Azure.Cosmos.Linq** namespace.
 
@@ -51,32 +51,42 @@ Your team wants a unique query that returns all *products* within the container 
     using Microsoft.Azure.Cosmos.Linq;
     ```
 
-01. Create a new LINQ queryable by using the **Container.GetItemLinqQueryable\<\>** method.
+01. Create a new asynchronous local function named **QueryLINQAsync**.
 
     ```csharp
-    IOrderedQueryable<Product> queryable = container.GetItemLinqQueryable<Product>();
+    async Task QueryLINQAsync()
+    {
+    }
     ```
 
-01. Build a LINQ expression using the **Where** and **OrderBy** methods and store the expression in a new variable.
+01. Add the following lines of code within the **QueryLINQAsync** local function.
 
-    ```csharp
-    var matches = queryable
-        .Where(p => p.type == nameof(Product))
-        .Where(p => !p.archived)
-        .OrderBy(p => p.price);
-    ```
+    01. Create a new LINQ queryable by using the <xref:Microsoft.Azure.Cosmos.Container.GetItemLinqQueryable%2A> method.
 
-01. Use the **IOrderedQueryable\<\>.ToFeedIterator** method to get a feed iterator from the LINQ expression.
+        ```csharp
+        IOrderedQueryable<Product> queryable = container.GetItemLinqQueryable<Product>();
+        ```
 
-    ```csharp
-    using FeedIterator<Product> linqFeed = matches.ToFeedIterator();
-    ```
+    01. Build a LINQ expression using the **Where** and **OrderBy** methods and store the expression in a new variable.
 
-01. Output a message to the console.
+        ```csharp
+        var matches = queryable
+            .Where(p => p.Type == nameof(Product))
+            .Where(p => !p.Archived)
+            .OrderBy(p => p.Price);
+        ```
 
-    ```csharp
-    Console.WriteLine($"[Start LINQ query]");
-    ```
+    01. Use the **IOrderedQueryable\<\>.ToFeedIterator** method to get a feed iterator from the LINQ expression.
+
+        ```csharp
+        using FeedIterator<Product> linqFeed = matches.ToFeedIterator();
+        ```
+
+    01. Output a message to the console.
+
+        ```csharp
+        Console.WriteLine($"[Start LINQ query]");
+        ```
 
 01. **Save** the *Program.cs* file.
 
@@ -84,39 +94,46 @@ Your team wants a unique query that returns all *products* within the container 
 
 Since we're querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category doesn't have any matching products. If we didn't return all possible pages, our application may inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you'll again use a *while* and *foreach* loop in C# to iterate over *all* result pages. The code should be similar to how you used a feed iterator previously.
 
-01. Create a *while* loop that will iterate until the feed iterator doesn't have any more pages.
+01. Still within the **QueryAsync** local function, add the following lines of code.
+
+    01. Create a *while* loop that will iterate until the feed iterator doesn't have any more pages.
+
+        ```csharp
+        while (linqFeed.HasMoreResults)
+        {    
+        }
+        ```
+
+    01. Inside of the *while* loop, get a new page of results.
+
+        ```csharp
+        FeedResponse<Product> page = await linqFeed.ReadNextAsync();
+        ```
+
+    01. Still inside of the *while* loop, output the current page's request charge.
+
+        ```csharp
+        Console.WriteLine($"[Page RU charge]:\t{page.RequestCharge}");
+        ```
+
+    01. Still inside of the *while* loop, create a new **foreach** loop to iterate over the page's items.
+
+        ```csharp
+        foreach (Product item in page)
+        {
+        }
+        ```
+
+    01. Inside of the *foreach* loop, write the individual items to the console.
+
+        ```csharp
+        Console.WriteLine($"[Returned item]:\t{item}");
+        ```
+
+01. Back within the main program flow, asynchronously call the **QueryLINQAsync** method.
 
     ```csharp
-    while (linqFeed.HasMoreResults)
-    {
-
-    }
-    ```
-
-01. Inside of the *while* loop, get a new page of results.
-
-    ```csharp
-    FeedResponse<Product> page = await linqFeed.ReadNextAsync();
-    ```
-
-01. Still inside of the *while* loop, output the current page's request charge.
-
-    ```csharp
-    Console.WriteLine($"[Page RU charge]:\t{page.RequestCharge}");
-    ```
-
-01. Still inside of the *while* loop, create a new **foreach** loop to iterate over the page's items.
-
-    ```csharp
-    foreach (Product item in page)
-    {
-    }
-    ```
-
-01. Inside of the *foreach* loop, write the individual items to the console.
-
-    ```csharp
-    Console.WriteLine($"[Returned item]:\t{item}");
+    await QueryLINQAsync();
     ```
 
 01. **Save** the *Program.cs* file.
@@ -138,9 +155,9 @@ Your app now uses LINQ to build a cross-partition query that your developer team
     ```output
     [Start LINQ query]
     [Page RU charge]:       3
-    [Returned item]:        Product { id = 6e3b7275-57d4-4418-914d-14d1baca0979, categoryId = gear-camp-tents, type = Product, name = Nimbolo Tent, price = 330, archived = False, quantity = 35 }
-    [Returned item]:        Product { id = e8dddee4-9f43-4d15-9b08-0d7f36adcac8, categoryId = gear-camp-tents, type = Product, name = Cirroa Tent, price = 490, archived = False, quantity = 15 }
-    [Returned item]:        Product { id = e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa, categoryId = gear-camp-tents, type = Product, name = Kuloar Tent, price = 530, archived = False, quantity = 8 }
+    [Returned item]:        Product { Id = 6e3b7275-57d4-4418-914d-14d1baca0979, CategoryId = gear-camp-tents, Type = Product, Name = Nimbolo Tent, Price = 330, Archived = False, Quantity = 35 }
+    [Returned item]:        Product { Id = e8dddee4-9f43-4d15-9b08-0d7f36adcac8, CategoryId = gear-camp-tents, Type = Product, Name = Cirroa Tent, Price = 490, Archived = False, Quantity = 15 }
+    [Returned item]:        Product { Id = e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa, CategoryId = gear-camp-tents, Type = Product, Name = Kuloar Tent, Price = 530, Archived = False, Quantity = 8 }
     ```
 
     > [!TIP]
@@ -148,196 +165,88 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 
 ### [Review code](#tab/review-code)
 
-01. Review the *Item.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-    public record Item(
-        string id,
-        string categoryId,
-        string type
-    );
-    ```
-
-01. Review the *Category.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-    public record Category(
-        string id,
-        string categoryId,
-        string type = nameof(Category)
-    ) : Item(
-        id,
-        categoryId,
-        type
-    );
-    ```
-
-01. Review the *Product.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-    public record Product(
-        string id, 
-        string categoryId, 
-        string name, 
-        decimal price, 
-        bool archived, 
-        int quantity,
-        string type = nameof(Product)
-    ) : Item(
-        id,
-        categoryId,
-        type
-    );
-    ```
-
 01. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
     using Microsoft.Azure.Cosmos.Fluent;
+    using Microsoft.Azure.Cosmos.Linq;
     
-    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    using CosmosClient client = GetClient();
     
-    Console.WriteLine($"[Connection string]:\t{connectionString}");
-    
-    CosmosSerializationOptions serializerOptions = new()
-    {
-        PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
-    };
-    
-    using CosmosClient client = new CosmosClientBuilder(connectionString)
-        .WithSerializerOptions(serializerOptions)
-        .Build();
-    
-    Console.WriteLine("[Client connected]");
+    Container container = await CreateResourcesAsync();
 
-    Database database = await client.CreateDatabaseIfNotExistsAsync(
-        id: "cosmicworks"
-    );
-    
-    Console.WriteLine($"[Database created]:\t{database.Id}");
-    
-    Container container = await database.CreateContainerIfNotExistsAsync(
-        id: "products",
-        partitionKeyPath: "/categoryId",
-        throughput: 400
-    );
-    
-    Console.WriteLine($"[Container created]:\t{container.Id}");
+    await CreateItemsAsync();
 
-    Category helmets = new(
-        Id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
-        CategoryId: "gear-climb-helmets"
-    );
+    await CreateItemBatchAsync();
+
+    await PointReadAsync();
     
-    PartitionKey helmetsKey = new("gear-climb-helmets");
+    await QueryAsync();
+
+    await QueryLINQAsync();
     
-    ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
-    
-    Console.WriteLine($"[New item created]:\t{response.Resource.Id}\t(Type: {response.Resource.Type})\t(RUs: {response.RequestCharge})");
-    
-    Category tents = new(
-        Id: "5df21ec5-813c-423e-9ee9-1a2aaead0be4",
-        CategoryId: "gear-camp-tents"
-    );
-    
-    Product cirroa = new(
-        Id: "e8dddee4-9f43-4d15-9b08-0d7f36adcac8",
-        CategoryId: "gear-camp-tents",
-        Name: "Cirroa Tent", 
-        Price: 490.00m, 
-        Archived: false, 
-        Quantity: 15
-    );
-    
-    Product kuloar = new(
-        Id: "e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa",
-        CategoryId: "gear-camp-tents",
-        Name: "Kuloar Tent", 
-        Price: 530.00m, 
-        Archived: false, 
-        Quantity: 8
-    );
-    
-    Product mammatin = new(
-        Id: "f7653468-c4b8-47c9-97ff-451ee55f4fd5",
-        CategoryId: "gear-camp-tents",
-        Name: "Mammatin Tent", 
-        Price: 0.00m, 
-        Archived: true, 
-        Quantity: 0
-    );
-    
-    Product nimbolo = new(
-        Id: "6e3b7275-57d4-4418-914d-14d1baca0979",
-        CategoryId: "gear-camp-tents",
-        Name: "Nimbolo Tent", 
-        Price: 330.00m, 
-        Archived: false, 
-        Quantity: 35
-    );
-    
-    PartitionKey tentsKey = new("gear-camp-tents");
-    
-    TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
-        .UpsertItem<Category>(tents)
-        .UpsertItem<Product>(cirroa)
-        .UpsertItem<Product>(kuloar)
-        .UpsertItem<Product>(mammatin)
-        .UpsertItem<Product>(nimbolo);
-    
-    Console.WriteLine("[Batch started]");
-    
-    using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
-    
-    for (int i = 0; i < batchResponse.Count; i++)
+    static CosmosClient GetClient()
     {
-        TransactionalBatchOperationResult<Item> result = batchResponse.GetOperationResultAtIndex<Item>(i);
-        Console.WriteLine($"[New item created]:\t{result.Resource.Id}\t(Type: {result.Resource.Type})");
+        // Implementation removed for brevity
     }
     
-    Console.WriteLine($"[Batch completed]:\t(RUs: {batchResponse.RequestCharge})");
-
-    PartitionKey readKey = new("gear-climb-helmets");
-    
-    ItemResponse<Category> readResponse = await container.ReadItemAsync<Category>(
-        id: "91f79374-8611-4505-9c28-3bbbf1aa7df7",
-        partitionKey: readKey
-    );
-    
-    Category readItem = readResponse.Resource;
-    
-    Console.WriteLine($"[Point read item]:\t{readItem.id}\t(RUs: {readResponse.RequestCharge})");
-    
-    string sql = "SELECT * FROM products p WHERE p.categoryId = @partitionKey";
-    
-    var query = new QueryDefinition(
-        query: sql
-    );
-    
-    var parameterizedQuery = query.WithParameter("@partitionKey", "gear-camp-tents");
-    
-    using FeedIterator<Product> feed = container.GetItemQueryIterator<Product>(
-        queryDefinition: parameterizedQuery
-    );
-    
-    Console.WriteLine($"[Start SQL query]:\t{sql}");
-    
-    double totalRequestCharge = 0d;
-    
-    while (feed.HasMoreResults)
+    async Task<Container> CreateResourcesAsync()
     {
-        FeedResponse<Product> page = await feed.ReadNextAsync();
-        
-        totalRequestCharge += page.RequestCharge;
-    
+        // Implementation removed for brevity
+    }
+
+    async Task CreateItemsAsync()
+    {
+        // Implementation removed for brevity
+    }
+
+    async Task CreateItemBatchAsync()
+    {
+        // Implementation removed for brevity
+    }
+
+    async Task PointReadAsync()
+    {
+        // Implementation removed for brevity
+    }
+
+    async Task QueryAsync()
+    {
+        // Implementation removed for brevity
+    }
+
+    async Task QueryLINQAsync()
+    {
+        // Implementation removed for brevity
+    }
+    ```
+
+01. Within the **Program.cs** code file, review the **QueryLINQAsync** local function to make sure that your code matches this sample.
+
+    ```csharp
+    IOrderedQueryable<Product> queryable = container.GetItemLinqQueryable<Product>();
+
+    var matches = queryable
+        .Where(p => p.Type == nameof(Product))
+        .Where(p => !p.Archived)
+        .OrderBy(p => p.Price);
+
+    using FeedIterator<Product> linqFeed = matches.ToFeedIterator();
+
+    Console.WriteLine($"[Start LINQ query]");
+
+    while (linqFeed.HasMoreResults)
+    {    
+        FeedResponse<Product> page = await linqFeed.ReadNextAsync();
+
+        Console.WriteLine($"[Page RU charge]:\t{page.RequestCharge}");
+
         foreach (Product item in page)
         {
-            Console.WriteLine($"[Returned item]:\t{item.id}\t(Name: {item.name})");
+            Console.WriteLine($"[Returned item]:\t{item}");
         }
     }
-    
-    Console.WriteLine($"[SQL query metrics]:\t(RUs: {totalRequestCharge})");    
     ```
 
 ---
