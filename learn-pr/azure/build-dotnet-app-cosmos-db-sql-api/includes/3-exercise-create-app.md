@@ -150,7 +150,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     using Microsoft.Azure.Cosmos.Fluent;
     ```
 
-01. Create a string variable named **connectionString**. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable?displayProperty=fullName> passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
+01. Create a string variable named **connectionString**. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable(System.String)> passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
 
     ```csharp
     string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
@@ -162,7 +162,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     Console.WriteLine($"[Connection string]:\t{connectionString}");
     ```
 
-01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions?displayProperty=fullName> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy?displayProperty=fullName> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase?displayProperty=fullName> enumeration.
+01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions> class named **serializerOptions**. Set the <xref:Microsoft.Azure.Cosmos.CosmosSerializationOptions.PropertyNamingPolicy> property to the value ``CamelCase`` from the <xref:Microsoft.Azure.Cosmos.CosmosPropertyNamingPolicy.CamelCase> enumeration.
 
     ```csharp
     CosmosSerializationOptions serializerOptions = new()
@@ -171,7 +171,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     };
     ```
 
-01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.CosmosClientBuilder?displayProperty=fullName> class by passing in the connection string to the constructor. Chain the <xref:Microsoft.Azure.Cosmos.CosmosClientBuilder.WithSerializerOptions?displayProperty=fullName> fluent method and set this method's parameter to `serializerOptions`. Next, chain the <xref:Microsoft.Azure.Cosmos.CosmosClientBuilder.Build?displayProperty=fullName> method to output an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient?displayProperty=fullName>. Finally, wrap the class within a using statement.
+01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder> class by passing in the connection string to the constructor. Chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithSerializerOptions(Microsoft.Azure.Cosmos.CosmosSerializationOptions)> fluent method and set this method's parameter to `serializerOptions`. Next, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.Build> method to output an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient>. Finally, wrap the class within a using statement.
 
     ```csharp
     using CosmosClient client = new CosmosClientBuilder(connectionString)

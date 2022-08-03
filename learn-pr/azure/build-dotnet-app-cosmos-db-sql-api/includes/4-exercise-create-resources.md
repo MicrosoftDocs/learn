@@ -42,7 +42,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 01. Open the *Program.cs* file.
 
-01. Create, or get, a new database by calling <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync?displayProperty=fullName>. Store the result in a variable named **database**. Be sure to set these parameters:
+01. Create, or get, a new database by calling <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync(System.String,Microsoft.Azure.Cosmos.ThroughputProperties,Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named **database**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
@@ -64,7 +64,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 Here, you'll create a container with a specific "slice" of the shared throughput from the database.
 
-01. Create, or get, a new container by calling <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync?displayProperty=fullName>. Store the result in a variable named **container**. Be sure to set these parameters:
+01. Create, or get, a new container by calling <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync(System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named **container**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |

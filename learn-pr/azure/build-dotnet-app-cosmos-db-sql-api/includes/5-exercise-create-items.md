@@ -59,13 +59,13 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
     );
     ```
 
-01. Create a new <xref:Microsoft.Azure.Cosmos.PartitionKey?displayProperty=nameWithType> instance using the same value as the `categoryId` property for the **Category** instance you created earlier.
+01. Create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the same value as the `categoryId` property for the **Category** instance you created earlier.
 
     ```csharp
     PartitionKey helmetsKey = new("gear-climb-helmets");
     ```
 
-01. Use the <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A?displayProperty=nameWithType> method to create or replace the item passing in an object for the item to create and a partition key value.
+01. Use the <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A> method to create or replace the item passing in an object for the item to create and a partition key value.
 
     ```csharp
     ItemResponse<Category> response = await container.UpsertItemAsync(helmets, helmetsKey);
@@ -83,7 +83,9 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
 Now consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we should end up with:
 
-:::image type="content" source="../media/diagram-items.png" alt-text="Diagram of various items in Azure Cosmos DB organized by their specific partition key. The diagram illustrates how five items belong to the \"tents\" partition key value and only one item belongs to \"helmets\"." lightbox="../media/diagram-items.png" border="false":::
+:::image type="complex" source="../media/diagram-items.png" alt-text="Diagram of items in Azure Cosmos DB grouped by their partition key." lightbox="../media/diagram-items.png" border="false":::
+    Diagram of various items in Azure Cosmos DB organized by their specific partition key. The diagram illustrates how five items belong to the "tents" partition key value and only one item belongs to "helmets".
+:::image-end:::
 
 In this section, we'll create a transactional batch to create the `tents` category and related products together.
 
@@ -150,13 +152,13 @@ In this section, we'll create a transactional batch to create the `tents` catego
     );
     ```
 
-01. Now, create a new <xref:Microsoft.Azure.Cosmos.PartitionKey?displayProperty=fullName> instance using the `gear-camp-tents` value.
+01. Now, create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the `gear-camp-tents` value.
 
     ```csharp
     PartitionKey tentsKey = new("gear-camp-tents");
     ```
 
-01. Create a new transactional batch scoped to the `gear-camp-tents` partition key value using the <xref:Microsoft.Azure.Cosmos.Container.CreateTransactionalBatch?displayProperty=nameWithType> method. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
+01. Create a new transactional batch scoped to the `gear-camp-tents` partition key value using the <xref:Microsoft.Azure.Cosmos.Container.CreateTransactionalBatch(Microsoft.Azure.Cosmos.PartitionKey)> method. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
 
     ```csharp
     TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
