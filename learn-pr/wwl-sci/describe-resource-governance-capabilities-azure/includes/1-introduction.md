@@ -6,4 +6,4 @@ After completing this module, you'll be able to:
 
 - Describe Azure Policy.
 - Describe Azure Blueprints.
-- Describe Microsoft Purview.
+- Describe the capabilities in the Microsoft Purview governance portal.
