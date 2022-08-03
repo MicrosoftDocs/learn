@@ -5,8 +5,7 @@ There are two key requirements at this time:
 1. Build a new query using LINQ syntax
 1. Convert the query to a feed iterator to get results
 
-[![Illustration of icons indicating data being queried using a LINQ expression.](../media/project-visual-query-linq.png)](../media/project-visual-query-linq.png)
-
+:::image type="content" source="../media/project-visual-query-linq.png" alt-text="Illustration of icons indicating data being queried using a LINQ expression." lightbox="../media/project-visual-query-linq.png" border="false":::
 
 After you complete this exercise, your queries will now use the LINQ syntax to make it easier for developers to maintain your application moving forward.
 
@@ -17,7 +16,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named ``COSMOS_CONNECTION_STRING`` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+1. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -31,7 +30,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the ``~/clouddrive/inventorytool`` directory and open a code editor.
+1. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .

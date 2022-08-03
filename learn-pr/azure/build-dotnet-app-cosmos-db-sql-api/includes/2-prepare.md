@@ -1,6 +1,6 @@
 You'll be building a .NET application that imports and queries data in an Azure Cosmos DB SQL API container. Here, we'll discuss the overall goals of the project and how you'll implement the import and query functionality. We'll also cover how to set up the SQL API account that you'll need.
 
-[![Illustration of the icon of an Azure Cosmos DB account.](../media/project-visual-account.png)](../media/project-visual-account.png)
+:::image type="content" source="../media/project-visual-account.png" alt-text="Illustration of the icon of an Azure Cosmos DB account." lightbox="../media/project-visual-account.png" border="false":::
 
 ## Project overview
 
@@ -8,13 +8,12 @@ This project's goal is to build and validate a .NET console application that upl
 
 The following flowchart shows the business logic the app needs to perform:
 
-[![Diagram of a flowchart showing steps to authenticate the client. The flowchart then shows a batch creation step that combines the creation of four individual items. Finally, the flow chart shows the sequence to create, execute, and observe the results of a SQL query.](../media/diagram-flowchart.png)](../media/diagram-flowchart.png)
+:::image type="content" source="../media/diagram-flowchart.png" alt-text="Diagram of a flowchart showing steps to authenticate the client. The flowchart then shows a batch creation step that combines the creation of four individual items. Finally, the flow chart shows the sequence to create, execute, and observe the results of a SQL query." lightbox="../media/diagram-flowchart.png" border="false":::
 
 The key tasks you'll need to do are:
 
 1. Create an Azure Cosmos DB account and retrieve the connection string.
-1. Create a .NET console application and import the **Microsoft.Azure.Cosmos** SDK library.
-1. Authenticate the SDK client using the connection string.
+1. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.1. Authenticate the SDK client using the connection string.
 1. Create database and container resources.
 1. Add a single item as a simple operation.
 1. Create a transactional batch to add four items.
@@ -39,7 +38,7 @@ The SQL API account will be used to store the data you create in this project an
     echo $suffix
     ```
 
-1. Create another shell variable named **accountName** that appends the randomly generated suffix to ``mslearn-`` and then outputs the result.
+1. Create another shell variable named **accountName** that appends the randomly generated suffix to `mslearn-` and then outputs the result.
 
     ```azurecli
     accountName="mslearn-$suffix"
@@ -47,7 +46,7 @@ The SQL API account will be used to store the data you create in this project an
     echo $accountName
     ```
 
-1. Create two more shell variables for ``resourceGroup`` and ``location`` with the values prescribed here.
+1. Create two more shell variables for `resourceGroup` and `location` with the values prescribed here.
 
     ```azurecli
     resourceGroup="<rgn>[sandbox resource group name]</rgn>"
@@ -70,9 +69,9 @@ The SQL API account will be used to store the data you create in this project an
 
 ### Get account connection string
 
-Now that you have a SQL API account, you can use the ``az cosmosdb keys list`` command from the Azure CLI to get credentials. In this section, you'll filter the output of the command to only return a single connection string.
+Now that you have a SQL API account, you can use the `az cosmosdb keys list` command from the Azure CLI to get credentials. In this section, you'll filter the output of the command to only return a single connection string.
 
-1. First, list all of the credentials available for this account. Use the ``--type`` parameter to only return connection strings.
+1. First, list all of the credentials available for this account. Use the `--type` parameter to only return connection strings.
 
     ```azurecli
     az cosmosdb keys list \
@@ -82,7 +81,7 @@ Now that you have a SQL API account, you can use the ``az cosmosdb keys list`` c
         --output table
     ```
 
-1. Now, add the ``--query`` parameter to filter to specifically the ``Primary SQL Connection String``.
+1. Now, add the `--query` parameter to filter to specifically the `Primary SQL Connection String`.
 
     ```azurecli
     az cosmosdb keys list \

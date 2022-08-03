@@ -4,7 +4,7 @@ As the first step to creating your project's application, you need to create a .
 1. Import the SDK library
 1. Connect using the client classes
 
-[![Illustration of icons of an Azure Cosmos DB account and .NET application.](../media/project-visual-app.png)](../media/project-visual-app.png)
+:::image type="content" source="../media/project-visual-app.png" alt-text="Illustration of icons of an Azure Cosmos DB account and .NET application." lightbox="../media/project-visual-app.png" border="false":::
 
 After you complete this exercise, you'll have a simple .NET application that successfully connects to your SQL API account, but doesn't perform any operations yet.
 
@@ -12,7 +12,7 @@ After you complete this exercise, you'll have a simple .NET application that suc
 
 Here, you'll get the connection string again and store it in an *environment variable* that is accessible from your .NET application.
 
-1. Create a ``resourceGroup`` shell variable with the value prescribed here.
+1. Create a `resourceGroup` shell variable with the value prescribed here.
 
     ```azurecli
     resourceGroup="<rgn>[sandbox resource group name]</rgn>"
@@ -27,7 +27,7 @@ Here, you'll get the connection string again and store it in an *environment var
         --output tsv
     ```
 
-1. Use the same query again to save the name of the account in the ``accountName`` shell variable.
+1. Use the same query again to save the name of the account in the `accountName` shell variable.
 
     ```azurecli
     accountName=$(az cosmosdb list \
@@ -36,7 +36,7 @@ Here, you'll get the connection string again and store it in an *environment var
         --output tsv)
     ```
 
-1. Get the ``Primary SQL Connection String`` credential from the account and save it in a shell variable named ``connectionString``.
+1. Get the `Primary SQL Connection String` credential from the account and save it in a shell variable named `connectionString`.
 
     ```azurecli
     connectionString=$(az cosmosdb keys list \
@@ -53,7 +53,7 @@ Here, you'll get the connection string again and store it in an *environment var
     echo $connectionString
     ```
 
-1. Save the ``connectionString`` shell variable as a new environment variable named ``COSMOS_CONNECTION_STRING``.
+1. Save the `connectionString` shell variable as a new environment variable named `COSMOS_CONNECTION_STRING`.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$connectionString
@@ -63,19 +63,19 @@ Here, you'll get the connection string again and store it in an *environment var
 
 Azure Cloud Shell persists files across sessions using Azure Files. A file share is mounted to the shell's running instance in the **clouddrive** directory. Here, you'll create your project folder in that directory.
 
-1. Change to the already mounted ``clouddrive`` directory.
+1. Change to the already mounted `clouddrive` directory.
 
     ```bash
     cd ~/clouddrive
     ```
 
-1. Create a new directory named ``inventorytool`` to be persisted across sessions.
+1. Create a new directory named `inventorytool` to be persisted across sessions.
 
     ```bash
     mkdir inventorytool
     ```
 
-1. Change to the newly created ``~/clouddrive/inventorytool`` directory.
+1. Change to the newly created `~/clouddrive/inventorytool` directory.
 
     ```bash
     cd ~/clouddrive/inventorytool
@@ -94,7 +94,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     > [!TIP]
     > Since you did not specify a project name or a directory, the command will create the new project in the current directory and name the project to match the directory's name (inventorytool).
 
-1. Import the **Microsoft.Azure.Cosmos** SDK library from NuGet.
+1. Add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK from NuGet.
 
     ```dotnetcli
     dotnet add package Microsoft.Azure.Cosmos
@@ -123,7 +123,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     Time Elapsed 00:00:11.00
     ```
 
-1. Open the code editor using the ``code`` command in the current directory.
+1. Open the code editor using the `code` command in the current directory.
 
     ```bash
     code .
@@ -138,7 +138,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     > [!TIP]
     > If you are not familiar with the Azure Cloud Shell's integrated editor, use the file explorer to select and open the **Program.cs** option.
     >
-    > [![Screenshot of the Azure Cloud Shell integrated editor with the Program.cs file highlighted.](../media/cloud-shell-code-editor.png)](../media/cloud-shell-code-editor.png)
+    > :::image type="content" source="../media/cloud-shell-code-editor.png" alt-text="Screenshot of the Azure Cloud Shell integrated editor with the Program.cs file highlighted." lightbox="../media/cloud-shell-code-editor.png":::
     >
 
 1. Delete all existing code from the file.
@@ -149,7 +149,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     using Microsoft.Azure.Cosmos;
     ```
 
-1. Create a string variable named **cosmosConnectionString**. Set the initial value of the variable to the result of calling ``Environment.GetEnvironmentVariable`` passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
+1. Create a string variable named **cosmosConnectionString**. Set the initial value of the variable to the result of calling `Environment.GetEnvironmentVariable` passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
 
     ```csharp
     string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;

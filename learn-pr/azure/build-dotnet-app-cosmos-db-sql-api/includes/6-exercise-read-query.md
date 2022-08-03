@@ -6,7 +6,7 @@ There are three key requirements at this time:
 1. Create a SQL query using a simple query string
 1. Paginate the results of the SQL query using a feed iterator
 
-[![Illustration of icons indicating data being queried using a SQL query.](../media/project-visual-query-sql.png)](../media/project-visual-query-sql.png)
+:::image type="content" source="../media/project-visual-query-sql.png" alt-text="Illustration of icons indicating data being queried using a SQL query." lightbox="../media/project-visual-query-sql.png" border="false":::
 
 After you complete this exercise, your application will almost be ready. You'll have queries that can read the category and product items you previously created.
 
@@ -17,7 +17,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named ``COSMOS_CONNECTION_STRING`` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+1. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -31,7 +31,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the ``~/clouddrive/inventorytool`` directory and open a code editor.
+1. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -43,7 +43,7 @@ The simplest way to retrieve an item in Azure Cosmos DB is to perform a point re
 
 1. Open the **Program.cs** file.
 
-1. Create a new **PartitionKey** instance for ``gear-climb-helmets``.
+1. Create a new **PartitionKey** instance for `gear-climb-helmets`.
 
     ```csharp
     PartitionKey readKey = new ("gear-climb-helmets");
@@ -76,7 +76,7 @@ The simplest way to retrieve an item in Azure Cosmos DB is to perform a point re
 
 In situations where you need multiple items, you can use a SQL query to find and retrieve those items. Recall that we used the **categoryId** partition key field to group our items into specific categories. If we include that field in a query, we effectively build a query that's scoped to a single logical partition. Now, you'll use a SQL query to find all of the items in the *tents* category.
 
-1. Create a new string for the SQL query ``SELECT * FROM products p WHERE p.categoryId = 'gear-camp-tents'``. However, use a parameter named ``@partitionKey`` for the **categoryId** filter.
+1. Create a new string for the SQL query `SELECT * FROM products p WHERE p.categoryId = 'gear-camp-tents'`. However, use a parameter named `@partitionKey` for the **categoryId** filter.
 
     ```csharp
     string sql = "SELECT * FROM products p WHERE p.categoryId = @partitionKey";
@@ -90,7 +90,7 @@ In situations where you need multiple items, you can use a SQL query to find and
     );
     ```
 
-1. Use the fluent **WithParameter** method to assign the ``gear-camp-tents`` value to the ``@partitionKey`` parameter.
+1. Use the fluent **WithParameter** method to assign the `gear-camp-tents` value to the `@partitionKey` parameter.
 
     ```csharp
     var parameterizedQuery = query.WithParameter("@partitionKey", "gear-camp-tents");
@@ -116,7 +116,7 @@ In situations where you need multiple items, you can use a SQL query to find and
 
 Azure Cosmos DB will automatically break up your query results into pages that can be retrieves asynchronously. To manage these pages, you'll need to write your C# code in a specific way to ensure that you retrieve all pages of results that are available. Here, you'll use a *while* and *foreach* loop in C# to iterate over result pages.
 
-1. Create a new *double* variable named **totalRequestCharge** set to a value of ``0``.
+1. Create a new *double* variable named **totalRequestCharge** set to a value of `0`.
 
     ```csharp
     double totalRequestCharge = 0d;

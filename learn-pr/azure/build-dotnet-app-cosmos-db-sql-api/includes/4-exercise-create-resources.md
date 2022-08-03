@@ -1,11 +1,11 @@
-Now you can create the various resources; such as databases, containers, and items; that you'll use in your Azure Cosmos DB account. For this exercise, you'll create a database named ``cosmicworks`` with a single container named ``products``. You need to make sure that the code won't crash trying to re-create a container if you run this console application multiple times.
+Now you can create the various resources; such as databases, containers, and items; that you'll use in your Azure Cosmos DB account. For this exercise, you'll create a database named `cosmicworks` with a single container named `products`. You need to make sure that the code won't crash trying to re-create a container if you run this console application multiple times.
 
 Right now, you have a few key requirements:
 
 1. Create a database if it doesn't already exist
 1. Create a container if it doesn't already exist
 
-[![Illustration of icons indicating Azure Cosmos DB resources are created in the cloud.](../media/project-visual-resources.png)](../media/project-visual-resources.png)
+:::image type="content" source="../media/project-visual-resources.png" alt-text="Illustration of icons indicating Azure Cosmos DB resources are created in the cloud." lightbox="../media/project-visual-resources.png" border="false":::
 
 After you complete this exercise, your project will create any databases, or containers it requires to execute.
 
@@ -16,7 +16,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named ``COSMOS_CONNECTION_STRING`` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+1. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -30,7 +30,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the ``~/clouddrive/inventorytool`` directory and open a code editor.
+1. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -42,11 +42,11 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 1. Open the **Program.cs** file.
 
-1. Create, or get, a new database by calling ``CosmosClient.CreateDatabaseIfNotExistsAsync``. Store the result in a variable named **database**. Be sure to set these parameters:
+1. Create, or get, a new database by calling `CosmosClient.CreateDatabaseIfNotExistsAsync`. Store the result in a variable named **database**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
-    | **id** | ``cosmicworks`` |
+    | **id** | `cosmicworks` |
 
     ```csharp
     Database database = await client.CreateDatabaseIfNotExistsAsync(
@@ -64,13 +64,13 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 Here, you'll create a container with a specific "slice" of the shared throughput from the database.
 
-1. Create, or get, a new container by calling ``Database.CreateContainerIfNotExistsAsync``. Store the result in a variable named **container**. Be sure to set these parameters:
+1. Create, or get, a new container by calling `Database.CreateContainerIfNotExistsAsync`. Store the result in a variable named **container**. Be sure to set these parameters:
 
     | Parameter | Value |
     | --- | --- |
-    | **id** | ``products`` |
-    | **partitionKeyPath** | ``/categoryId`` |
-    | **throughput** | ``400`` |
+    | **id** | `products` |
+    | **partitionKeyPath** | `/categoryId` |
+    | **throughput** | `400` |
 
     ```csharp
     Container container = await database.CreateContainerIfNotExistsAsync(
@@ -98,7 +98,7 @@ C# data can be represented using various types including classes, structs, and r
     touch Item.cs
     ```
 
-1. Refresh the code editor by invoking the ``code`` command again.
+1. Refresh the code editor by invoking the `code` command again.
 
     ```bash
     code .
@@ -106,7 +106,7 @@ C# data can be represented using various types including classes, structs, and r
 
 1. Open the **Item.cs** file.
 
-1. Create a base type named **Item** that carries the three properties you want to use in all items for this container: ``id``, ``categoryId``, and ``type``.
+1. Create a base type named **Item** that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
 
     ```csharp
     public record Item(
@@ -150,7 +150,7 @@ C# data can be represented using various types including classes, structs, and r
 
 1. Open the **Product.cs** file.
 
-1. Create a new type named **Product** that inherits from **Item** and adds a few new fields: ``name``, ``price``, ``archived``, and ``quantity``.
+1. Create a new type named **Product** that inherits from **Item** and adds a few new fields: `name`, `price`, `archived`, and `quantity`.
 
     ```csharp
     public record Product(

@@ -8,7 +8,7 @@ Right now, you have two key requirements:
 1. Create an item individually as a single operation
 1. Use a transactional batch to create multiple related items
 
-[![Illustration of icons indicating data being uploaded to the cloud.](../media/project-visual-upload.png)](../media/project-visual-upload.png)
+:::image type="content" source="../media/project-visual-upload.png" alt-text="Illustration of icons indicating data being uploaded to the cloud." lightbox="../media/project-visual-upload.png" border="false":::
 
 After you complete this exercise, your project will have the logic to create items in your container either individually, or as a batch.
 
@@ -19,7 +19,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named ``COSMOS_CONNECTION_STRING`` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+1. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -33,7 +33,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the ``~/clouddrive/inventorytool`` directory and open a code editor.
+1. Change to the `~/clouddrive/inventorytool` directory and open a code editor.
 
     ```bash
     cd ~/clouddrive/inventorytool && code .
@@ -49,8 +49,8 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
     | Field | Value |
     | --- | --- |
-    | **id** | ``91f79374-8611-4505-9c28-3bbbf1aa7df7`` |
-    | **categoryId** | ``gear-climb-helmets`` |
+    | **id** | `91f79374-8611-4505-9c28-3bbbf1aa7df7` |
+    | **categoryId** | `gear-climb-helmets` |
 
     ```csharp
     Category helmets = new (
@@ -83,7 +83,7 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
 Now consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we should end up with:
 
-[![Diagram of various items in Azure Cosmos DB organized by their specific partition key illustrating how five of the items belong to the "tents" partition key value while only one item belongs to "helmets".](../media/diagram-items.png)](../media/diagram-items.png)
+:::image type="content" source="../media/diagram-items.png" alt-text="Diagram of various items in Azure Cosmos DB organized by their specific partition key illustrating how five of the items belong to the "tents" partition key value while only one item belongs to "helmets"." lightbox="../media/diagram-items.png" border="false":::
 
 In this section, we'll create a transactional batch to create the *tents* category and related products together.
 
@@ -91,8 +91,8 @@ In this section, we'll create a transactional batch to create the *tents* catego
 
     | Field | Value |
     | --- | --- |
-    | **id** | ``5df21ec5-813c-423e-9ee9-1a2aaead0be4`` |
-    | **categoryId** | ``gear-camp-tents`` |
+    | **id** | `5df21ec5-813c-423e-9ee9-1a2aaead0be4` |
+    | **categoryId** | `gear-camp-tents` |
 
     ```csharp
     Category tents = new (
@@ -103,14 +103,14 @@ In this section, we'll create a transactional batch to create the *tents* catego
 
 1. Create four instances of the **Product** type using these values.
 
-    | Field | ``cirroa`` | ``kuloar`` | ``mammatin`` | ``nimbolo`` |
+    | Field | `cirroa` | `kuloar` | `mammatin` | `nimbolo` |
     | --- | --- | --- | --- | --- |
-    | **id** | ``e8dddee4-9f43-4d15-9b08-0d7f36adcac8`` | ``e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa`` | ``f7653468-c4b8-47c9-97ff-451ee55f4fd5`` | ``6e3b7275-57d4-4418-914d-14d1baca0979`` |
-    | **categoryId** | ``gear-camp-tents`` | ``gear-camp-tents`` | ``gear-camp-tents`` | ``gear-camp-tents`` |
-    | **name** | ``Cirroa Tent`` | ``Kuloar Tent`` | ``Mammatin Tent`` | ``Nimbolo Tent`` |
-    | **price** | ``490.00`` | ``530.00`` | ``0.00`` | ``330.00`` |
-    | **archived** | ``false`` | ``false`` | ``true`` | ``false`` |
-    | **quantity** | ``15`` | ``8`` | ``0`` | ``35`` |
+    | **id** | `e8dddee4-9f43-4d15-9b08-0d7f36adcac8` | `e6f87b8d-8cd7-4ade-a005-14d3e2fbd1aa` | `f7653468-c4b8-47c9-97ff-451ee55f4fd5` | `6e3b7275-57d4-4418-914d-14d1baca0979` |
+    | **categoryId** | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` | `gear-camp-tents` |
+    | **name** | `Cirroa Tent` | `Kuloar Tent` | `Mammatin Tent` | `Nimbolo Tent` |
+    | **price** | `490.00` | `530.00` | `0.00` | `330.00` |
+    | **archived** | `false` | `false` | `true` | `false` |
+    | **quantity** | `15` | `8` | `0` | `35` |
 
     ```csharp
     Product cirroa = new (
@@ -150,13 +150,13 @@ In this section, we'll create a transactional batch to create the *tents* catego
     );
     ```
 
-1. Now, create a new **PartitionKey** instance using the ``gear-camp-tents`` value.
+1. Now, create a new **PartitionKey** instance using the `gear-camp-tents` value.
 
     ```csharp
     PartitionKey tentsKey = new ("gear-camp-tents");
     ```
 
-1. Create a new transactional batch scoped to the ``gear-camp-tents`` partition key value. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
+1. Create a new transactional batch scoped to the `gear-camp-tents` partition key value. Using the fluent syntax, add five *upsert* operations to create the items we need in our container for the category and all of the related products.
 
     ```csharp
     TransactionalBatch batch = container.CreateTransactionalBatch(tentsKey)
@@ -173,13 +173,13 @@ In this section, we'll create a transactional batch to create the *tents* catego
     Console.WriteLine("[Batch started]");
     ```
 
-1. Use the ``TransactionalBatch.ExecuteAsync`` method to execute the batch and return a special response type.
+1. Use the `TransactionalBatch.ExecuteAsync` method to execute the batch and return a special response type.
 
     ```csharp
     using TransactionalBatchResponse batchResponse = await batch.ExecuteAsync();
     ```
 
-1. Using a for loop, iterate through all of the items in the response. First, convert each item to the type ``TransactionalBatchOperationResult`` using your ``Item`` base class as the generic. Then, print the unique identifier and type of the response object.
+1. Using a for loop, iterate through all of the items in the response. First, convert each item to the type `TransactionalBatchOperationResult` using your `Item` base class as the generic. Then, print the unique identifier and type of the response object.
 
     ```csharp
     for (int i = 0; i < batchResponse.Count; i++)
