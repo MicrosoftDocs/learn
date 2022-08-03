@@ -50,7 +50,7 @@ To set up a .NET project to work with a web app, you'll use Visual Studio Code. 
 
 ### Compile and run the project
 
-1. Run the following .NET Core CLI command in the command shell:
+1. Run the following .NET Core CLI command in the terminal:
 
     ```dotnetcli
     dotnet run
@@ -89,6 +89,6 @@ If running this app on your own machine, you could direct a browser to the HTTPS
 
 1. Navigate to the **Privacy** page by clicking on the link in the navigation bar at the top of the page. Notice that the URL ends with *Privacy*. By convention, Razor Pages apps map page routes to the files within the *Pages* directory structure.
 
-1. Stop the application by pressing the **Ctrl+C** key combination (**Command+C** on Mac).
+1. In the terminal window, stop the application by pressing the **Ctrl+C** key combination (**Command+C** on Mac).
 
 You've verified you can successfully compile, run, and deploy the project. Let's modify it so the user can display and update a list of pizzas.
