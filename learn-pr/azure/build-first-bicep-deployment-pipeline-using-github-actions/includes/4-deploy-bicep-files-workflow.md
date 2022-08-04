@@ -20,6 +20,9 @@ After the workflow includes this action, your repository's code will be checked 
 
 When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you sign in to Azure. Usually, the tools ask you to enter your email address and password in a browser. After your credentials are verified, your permissions to deploy resources are confirmed and you can use the tools to deploy your Bicep file.
 
+> [!TIP]
+> In this module, you'll create a workload identity for your workflow to use. The module [Authenticate your Azure deployment workflow by using workload identities](xref:learn.azure.authenticate-azure-deployment-workflow-workload-identities) provides a more detailed explanation of workload identities including how they work, as well as how you create them, assign them roles, and manage them.
+
 Deployment by workflow requires authentication, too. Because workflows run without human intervention, workflows authenticate to Azure by using a *workload identity*. GitHub and Azure Active Directory work together to securely authenticate your workflow without needing any credentials.
 
 When your workflow needs to communicate with Azure, a workflow step signs in to Azure by using a workload identity. Then, the steps that are defined in the workflow use the workflow's *identity*.

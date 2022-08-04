@@ -49,8 +49,8 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ## Create a workload identity
 
-> [!NOTE]
-> You'll learn more about all of these steps in a future module.
+> [!TIP]
+> In this module, you'll create a workload identity for your workflow to use. The module [Authenticate your Azure deployment workflow by using workload identities](xref:learn.azure.authenticate-azure-deployment-workflow-workload-identities) provides a more detailed explanation of workload identities including how they work, as well as how you create them, assign them roles, and manage them.
 
 ::: zone pivot="cli"
 
