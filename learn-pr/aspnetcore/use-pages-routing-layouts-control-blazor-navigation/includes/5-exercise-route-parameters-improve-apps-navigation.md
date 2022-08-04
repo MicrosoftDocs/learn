@@ -150,9 +150,9 @@ In this exercise, you'll add a new order detail page that makes use of route par
 
 ## Restrict the route parameter to the correct data type
 
-At the moment, the app responds to requests at `[http://localhost:5000/myorders/6](http://localhost:5000/myorders/6)`. You can test this directly by changing the 6 to another number. There's nothing stopping someone from trying to use non-numeric orders.
+At the moment, the app responds to requests at `(http://localhost:5000/myorders/6)`. You can test this directly by changing the 6 to another number. There's nothing stopping someone from trying to use non-numeric orders.
 
-1. Because the app is still running, try to go to `[http://localhost:5000/myorders/a](http://localhost:5000/myorders/a)`.
+1. Because the app is still running, try to go to `(http://localhost:5000/myorders/a)`.
 
     :::image type="content" source="../media/unhandled-exception.png" alt-text="Screenshot showing that the app has crashed with an unhandled exception.":::
 
@@ -168,7 +168,7 @@ At the moment, the app responds to requests at `[http://localhost:5000/myorders/
     @page "/myorders/{orderId:int}"
     ```
 	
-1. Now if someone tries to go to`[http://localhost:5000/myorders/non-number](http://localhost:5000/myorders/non-number)`, Blazor routing won't find a match for the URL and return the page not found.
+1. Now if someone tries to go to`(http://localhost:5000/myorders/non-number)`, Blazor routing won't find a match for the URL and return the page not found.
 
     :::image type="content" source="../media/page-not-found.png" alt-text="Screenshot of the page not found screen.":::
 
