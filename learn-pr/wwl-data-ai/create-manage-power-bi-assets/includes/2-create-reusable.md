@@ -16,7 +16,7 @@ To create a specialized dataset, open a new Power BI Desktop instance and connec
 
 Once this feature is enabled, you'll need to switch to a DirectQuery connection, and can add more direct query or import connections.
 
-![Screenshot of Power B I Desktop notice that DirectQuery connection is required, after selecting the "make changes to the model" option](../media/dataset-dq.png)
+![Screenshot of Power B I Desktop notice that DirectQuery connection is required, after selecting the "make changes to the model" option](../media/dataset-direct-query.png)
 
 Now, you're able to extend the model with the "Make changes to the model" option. You can see below where there are the three SalesLT tables from the core-dataset, then there are two other tables without relationships to any other tables yet.
 
