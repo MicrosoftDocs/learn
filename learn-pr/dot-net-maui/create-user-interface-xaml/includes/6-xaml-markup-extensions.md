@@ -6,7 +6,7 @@ In this unit, you'll learn how to create and use mark-up extensions.
 
 ## What is a mark-up extension?
 
-A mark-up extension is a class that you use in XAML to access runtime values. Suppose you have a many labels defined in your XAML UI and you want to set the `FontSize` property to the same value throughout the app to ensure that the styling of all labels is consistent. You can set the `FontSize` property using XAML as shown in the example below.
+A mark-up extension is a class that you use in XAML to access runtime values. Suppose you have many labels defined in your XAML UI and you want to set the `FontSize` property to the same value throughout the app to ensure that the styling of all labels is consistent. You can set the `FontSize` property using XAML as shown in the example below.
 
 ```xml
 <Label Text="Hello, World!"
