@@ -15,14 +15,14 @@ To connect to the Windows VM, you must have the following port open on your Wind
 
 ## Connect
 
-1.  Open the Azure portal. Navigate to the virtual machine that you want to connect to, then select **Connect**. Select **Bastion** from the dropdown.:::image type="content" source="../media/azure-virtual-desktop-connect-to-bastion-71d12fde.png" alt-text="Select Bastion.":::
+1.  Open the Azure portal. Navigate to the virtual machine that you want to connect to, then select **Connect**. Select **Bastion** from the dropdown.:::image type="content" source="../media/azure-virtual-desktop-connect-to-bastion-71d12fde.png" alt-text="Screenshot showing how to connect using Bastion.":::
     
 
-2.  After you select Bastion from the dropdown, a side bar appears that has three tabs: RDP, SSH, and Bastion. Because Bastion was provisioned for the virtual network, the Bastion tab is active by default. Select **Use Bastion**.:::image type="content" source="../media/azure-virtual-desktop-activate-connection-to-bastion-2308246b.png" alt-text="Select Use Bastion.":::
+2.  After you select Bastion from the dropdown, a side bar appears that has three tabs: RDP, SSH, and Bastion. Because Bastion was provisioned for the virtual network, the Bastion tab is active by default. Select **Use Bastion**.:::image type="content" source="../media/azure-virtual-desktop-activate-connection-to-bastion-2308246b.png" alt-text="Screenshot showing how to configure Bastion for connection.":::
     
 
-3.  On the **Connect using Azure Bastion** page, enter the username and password for your virtual machine, then select **Connect**.:::image type="content" source="../media/azure-virtual-desktop-authenticate-bastion-8a50037b.png" alt-text="Connect to Bastion.":::
+3.  On the **Connect using Azure Bastion** page, enter the username and password for your virtual machine, then select **Connect**.:::image type="content" source="../media/azure-virtual-desktop-authenticate-bastion-8a50037b.png" alt-text="Screenshot showing how to connect to Bastion.":::
     
 
-4.  The RDP connection to this virtual machine via Bastion will open directly in the Azure portal (over HTML5) using port 443 and the Bastion service.:::image type="content" source="../media/azure-virtual-desktop-remote-desktop-protocol-bastion-85af324e.png" alt-text="Connect using port 443.":::
+4.  The RDP connection to this virtual machine via Bastion will open directly in the Azure portal (over HTML5) using port 443 and the Bastion service.:::image type="content" source="../media/azure-virtual-desktop-remote-desktop-protocol-bastion-85af324e.png" alt-text="Screenshot showing how to connect using port 443.":::
     

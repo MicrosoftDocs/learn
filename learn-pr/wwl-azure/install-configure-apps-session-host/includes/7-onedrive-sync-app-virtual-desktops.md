@@ -11,7 +11,7 @@ For all supported operating systems, the OneDrive sync app supports:
  -  Windows Server 2012 R2 (supports VHDX)
  -  Windows Server 2008 R2 (supports VHD)
 
-:::image type="content" source="../media/client-onedrive-9d78fce1.png" alt-text="Diagram of users signed in OneDrive files avai.able.":::
+:::image type="content" source="../media/client-onedrive-9d78fce1.png" alt-text="Diagram that shows users signed in OneDrive files available.":::
 
 
 OneDrive for Business is not supported in non-persistent RDSH or VDI environments without FSLogix profile containers.
