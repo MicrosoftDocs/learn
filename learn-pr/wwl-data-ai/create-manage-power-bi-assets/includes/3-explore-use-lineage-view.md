@@ -18,7 +18,7 @@ In the image below, we explore a single workspace *Microsoft Learn Data* in line
   - The region1-report only has a single region1-report associated with it. *This indicates that someone developed a report and dataset entirely in Power BI Desktop.*
   - The core-dataset has two related reports, specialized-report and region2-report, each flowing to the Region 1 Dashboard on the far right.
 
-![Screenshot from Power B I service, exploring a workspace in lineage view as described above.](../media/workspace-lineage-assets.png)
+[![Screenshot from Power B I service, exploring a workspace in lineage view as described above.](../media/workspace-lineage-assets.png)](../media/workspace-lineage-assets.png#lightbox)
 
 > [!NOTE]
 > Two separate SQL Server data sources are represented because the region1-report dataset and report was created separately from the core-dataset dataset.
