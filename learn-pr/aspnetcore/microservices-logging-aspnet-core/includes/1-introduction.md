@@ -2,10 +2,9 @@ Imagine you're a software developer for an online retailer named *:::no-loc text
 
 This module guides you through configuring diagnostics logging and performance monitoring with Azure Monitor features. You'll begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers)&mdash;the companion reference app for the guide [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices). Instrumentation and monitoring of three microservices and an HTTP aggregator is the focus in this module.
 
-You'll use your own Azure subscription to deploy the resources in this module. To estimate the expected resource costs, see the [preconfigured Azure Calculator estimate](https://aka.ms/microservices-logging-aspnet-core-estimate?azure-portal=true). If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/dotnet/?azure-portal=true) before you begin.
+[!INCLUDE[Use your own Azure subscription](../../includes/microservices/your-own-az-subscription.md)]
 
-> [!IMPORTANT]
-> This module uses your own Azure subscription. To avoid unnecessary charges in your Azure subscription, remember to de-provision your Azure resources when you're done with this module.
+[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
 
 ## Learning objectives
 
@@ -25,3 +24,4 @@ In this module, you will:
 - Familiarity with the Kusto query language at the beginner level
 - Conceptual knowledge of containers and Azure Kubernetes Service (AKS) at the intermediate level
 - Access to an Azure subscription with **Owner** privilege
+- Ability to run development containers in Visual Studio Code or GitHub Codespaces

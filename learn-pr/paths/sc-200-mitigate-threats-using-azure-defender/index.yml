@@ -3,9 +3,9 @@ uid: learn.wwl.sc-200-mitigate-threats-using-azure-defender
 metadata:
   title: 'SC-200: Mitigate threats using Microsoft Defender for Cloud'
   description: 'SC-200: Mitigate threats using Microsoft Defender for Cloud'
-  ms.date: 11/05/2021
+  ms.date: 07/04/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'SC-200: Mitigate threats using Microsoft Defender for Cloud'
@@ -27,9 +27,10 @@ subjects:
 - threat-protection
 modules:
 - learn.wwl.what-is-azure-defender
-- learn.wwl.understand-azure-defender-cloud-workload-protection
 - learn.wwl.connect-azure-assets-to-azure-defender
 - learn.wwl.connect-non-azure-machines-to-azure-defender
+- learn.wwl.manage-cloud-security-posture-management
+- learn.wwl.understand-azure-defender-cloud-workload-protection
 - learn.wwl.remediate-azure-defender-security-alerts
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-azure-defender.trophy

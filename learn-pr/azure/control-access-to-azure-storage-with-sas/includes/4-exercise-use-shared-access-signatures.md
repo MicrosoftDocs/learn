@@ -131,9 +131,9 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. In a browser, paste the URL that was returned by the cURL command. Make sure you include the slash (/) at the end of the address.
 
-    The URL should be in this format: https:\//gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/. 
-    
-    Sign in if you're prompted to do so. The **Lamna Healthcare** Patient Diagnostic Image System appears.
+    The URL should be in this format: `https://gateway11.northeurope.console.azure.com/n/cc-4016c848/cc-4016c848/proxy/8000/`. 
+
+    If you're prompted to sign in, refresh your browser window. The **Lamna Healthcare** Patient Diagnostic Image System appears.
 
 1. Select **Get all patients** to view a listing of all the images in the storage account.
 
@@ -202,9 +202,22 @@ Let's add code to the webpage to request the SAS for the image.
 
     ```bash
     code Pages/external.cshtml
+
     ```
 
-1. At the bottom of the file, above the `</script>` tag, add the following code:
+1. Near the end of the file, in the click listener for `#btn-submit`, modify the `$.get` line to add `+ '/secure'`:
+
+    ```javascript
+    $('#btn-submit').click(function(){
+        $('#result').empty();
+        $.get('api/PatientRecords/' + $('#patientID').val() + '/secure', function (data) {
+            var imageURL = data.imageURI + $('#sasKey').val();
+            $('#result').html('<img id="patientScan" class="alert alert-success" src="' + imageURL + '" alt="patient scan" onerror="this.classList.remove(\'alert-success\'); this.classList.add(\'alert-danger\')"//>');
+        }, 'json');
+    });
+    ```
+
+1. Below the `#btn-submit` click listener function, at the bottom of the file, above the `</script>` tag, add the following code:
 
     ```javascript
     $('#btn-getKey').click(function(){

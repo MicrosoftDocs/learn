@@ -1,6 +1,6 @@
 [Conditional access](/azure/active-directory/conditional-access/overview) is a key part of Zero Trust because it helps to ensure the right user has the right access to the right resources. Enabling Conditional Access allows Azure Active Directory to make access decisions based on computed risk and pre-configured policies. Independent software vendors can take advantage of conditional access by surfacing the option to apply conditional access policies when relevant.
 
-### Requirements
+## Requirements
 
 Every company has different requirements and security policies. When you
 create an architecture and follow this suggested framework for
@@ -16,7 +16,7 @@ For example, a company might have these requirements:
 -   No guest access is allowed.
 -   Access to cloud services must be based on password-less authentication.
 
-### Conditional Access guidance
+## Conditional access guidance
 
 This section includes the following articles:
 
@@ -26,7 +26,7 @@ This section includes the following articles:
 
 -   [Conditional Access framework and policies](/azure/architecture/guide/security/conditional-access-framework) provide specific details on how to structure and name Conditional Access policies based on the personas.
 
-### Conditional Access as a Zero Trust policy engine
+## Conditional Access as a Zero Trust policy engine
 
 The Microsoft approach to Zero Trust includes Conditional Access as the
 main policy engine. Here's an overview of that approach:
@@ -42,7 +42,7 @@ give limited access to resources, as shown here:
 
 ![Diagram showing an overview of the Conditional Access signal, decision, enforcement path.](../media/signal-decision-enforcement.png) 
 
-### Conditional Access Zero Trust architecture
+## Conditional access Zero Trust architecture
 
 You first need to choose an architecture. We recommend that considering
 either a Targeted or a Zero Trust Conditional Access architecture. This
@@ -76,7 +76,7 @@ all your cloud apps. The number of Office 365 and Azure Active Directory
 features, and your IT admins integrate various applications with Azure
 AD.
 
-### Design Conditional Access personas
+## Design conditional access personas
 
 There are many ways to structure Conditional Access policies. One
 approach is to structure policies based on the sensitivity of the
@@ -96,7 +96,7 @@ access. Understanding how enterprise assets and resources are accessed
 by various personas is integral to developing a comprehensive Zero Trust
 strategy.
 
-### Suggested Conditional Access personas from Microsoft
+## Suggested conditional access personas from Microsoft
 
 Microsoft also recommends defining a separate persona for identities that aren't part of any other persona group. This is called the Global persona. Global is meant to enforce policies for identities that aren't in a persona group and policies that should be enforced for all personas.
 
@@ -117,7 +117,7 @@ The following list describes some recommended personas.
     * Are synced to an Azure AD instance that accesses any Azure or Microsoft 365 service. Note that this scenario should be avoided.
 * `WorkloadIdentities` - This persona contains machine identities, like Azure AD service principals and managed identities. Conditional Access now supports protecting access to resources from these
 
-### Access template cards
+## Access template cards
 
 We recommend that you use access template cards to define the
 characteristics of each persona. Here's an example:
@@ -126,7 +126,7 @@ characteristics of each persona. Here's an example:
 
 The template card for each persona provides input for creating the specific Conditional Access policies for each persona.
 
-### Conditional Access framework and policies
+## Conditional access framework and policies
 
 Important factors to remember in the creation of conditional access
 policies include:

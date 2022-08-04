@@ -1,4 +1,4 @@
-Now that you understand a little about the architecture of a modern data warehousing solution, and some of the distributed processing technologies that can be used to handle large volumes of data, it's time to explore how data is ingested into an analytical data store from one or more sources.
+Now that you understand a little about the architecture of a large-scale data warehousing solution, and some of the distributed processing technologies that can be used to handle large volumes of data, it's time to explore how data is ingested into an analytical data store from one or more sources.
 
 ![A pipeline](../media/pipeline.png)
 

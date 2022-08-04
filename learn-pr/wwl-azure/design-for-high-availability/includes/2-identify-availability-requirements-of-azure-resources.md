@@ -24,7 +24,7 @@ Here are some other considerations when defining an SLA:
 
 - Think about the time window that your SLA is measured against. The smaller the window, the tighter the tolerances. It doesn't make sense to define your SLA in terms of hourly or daily uptime.
 
-- Consider the MTBF and MTTR measurements. The higher your SLA, the less frequently the service can go down and the quicker the service must recover.
+- Consider the mean time between failures (MTBF) and mean time to recover (MTTR) measurements. The higher your SLA, the less frequently the service can go down and the quicker the service must recover.
 
 - Get agreement from your customers for the availability targets of each piece of your application, and document it. Otherwise, your design may not meet the customers' expectations.
 

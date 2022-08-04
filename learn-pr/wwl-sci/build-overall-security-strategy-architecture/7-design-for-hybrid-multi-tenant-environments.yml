@@ -5,11 +5,11 @@ metadata:
   title: Design a security strategy for hybrid and multi-tenant environments
   description: "Design a security strategy for hybrid and multi-tenant environments"
   ms.date: 06/07/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/7-design-for-hybrid-multi-tenant-environments.md)]

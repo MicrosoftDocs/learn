@@ -34,12 +34,14 @@ In addition, you cannot add the following address ranges:
  -  169.254.0.0/16 (Link-local)
  -  168.63.129.16/32 (Internal DNS)
 
-Azure assigns resources in a virtual network a private IP address from the address space that you provision. For example, if you deploy a VM in a VNet with address space 10.0.0.0/16, the VM will be assigned a private IP like 10.0.0.4. it is important to note that Azure reserves 5 IP addresses within each subnet. These are x.x.x.0-x.x.x.3 and the last address of the subnet. x.x.x.1-x.x.x.3 is reserved in each subnet for Azure services.
+Azure assigns resources in a virtual network a private IP address from the address space that you provision. For example, if you deploy a VM in a VNet with subnet address space 192.168.1.0/24, the VM will be assigned a private IP like 192.168.1.4. Azure reserves the first four and last IP address for a total of 5 IP addresses within each subnet. These are x.x.x.0-x.x.x.3 and the last address of the subnet.
 
- -  x.x.x.0: Network address
- -  x.x.x.1: Reserved by Azure for the default gateway
- -  x.x.x.2, x.x.x.3: Reserved by Azure to map the Azure DNS IPs to the VNet space
- -  x.x.x.255: Network broadcast address
+For example, the IP address range of 192.168.1.0/24 has the following reserved addresses:
+
+- 192.168.1.0 : Network address
+- 192.168.1.1 : Reserved by Azure for the default gateway
+- 192.168.1.2, 192.168.1.3 : Reserved by Azure to map the Azure DNS IPs to the VNet space
+- 192.168.1.255 : Network broadcast address.
 
 When planning to implement virtual networks, you need to consider the following:
 

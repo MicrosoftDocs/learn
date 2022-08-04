@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-settings-for-local-windows-machine-use-powershell-cmdlets.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/27/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You need to use PowerShell to review system and operating system properties of the local computer. Which cmdlet should you use?"
+    choices:
+    - content: "Get-Contact"
+      isCorrect: false
+      explanation: "Incorrect. You would use the Get-ComputerInfo cmdlet as it retrieves all system and operating system properties from the computer."
+    - content: "Get-ComputerInfo"
+      isCorrect: true
+      explanation: "Correct. You would use the Get-ComputerInfo cmdlet as it retrieves all system and operating system properties from the computer."
+    - content: "Get-Content"
+      isCorrect: false
+      explanation: "Incorrect. You would use the Get-ComputerInfo cmdlet as it retrieves all system and operating system properties from the computer."
+  - content: "You want to check the level of access a user has to **C:\\\\Folder1**. Which cmdlet in the **Microsoft.PowerShell.Security** module would you use?"
+    choices:
+    - content: "Get-Acl"
+      isCorrect: true
+      explanation: "Correct. You would use the Get-Acl cmdlet which displays the security descriptor for an object. The security descriptor includes the access control lists (ACLs) of the resource. The ACL lists permissions that users and groups have to access the resource."
+    - content: "Set-Acl"
+      isCorrect: false
+      explanation: "Incorrect. You would use the Get-Acl cmdlet which displays the security descriptor for an object. The security descriptor includes the access control lists (ACLs) of the resource. The ACL lists permissions that users and groups have to access the resource."
+    - content: "Get-Credential"
+      isCorrect: false
+      explanation: "Incorrect. You would use the Get-Acl cmdlet which displays the security descriptor for an object. The security descriptor includes the access control lists (ACLs) of the resource. The ACL lists permissions that users and groups have to access the resource."

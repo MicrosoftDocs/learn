@@ -109,7 +109,8 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
     
     |       **Setting**       |         **Value**         |
     |:-----------------------:|:-------------------------:|
-    |         Source          | Select **VirtualNetwork** |
+    |         Source          | Select **Service Tag**    |
+    |     Source service tag  | Select **VirtualNetwork** |
     |   Source port ranges    |            \*             |
     |       Destination       |  Select **Service Tag**   |
     | Destination service tag |    Select **Storage**     |
@@ -238,8 +239,7 @@ To test network access to a storage account, deploy a VM to each subnet.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **VMs.json** and **VMs.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M07**.
-
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **VMs.json** and **VMs.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M07** [M07 folder](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M07). 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    ```powershell

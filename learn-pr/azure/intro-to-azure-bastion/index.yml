@@ -19,7 +19,7 @@ prerequisites: |
   - Experience performing remote administration using Remote Desktop Protocol (RDP) and Secure Shell (SSH)
   - Experience administering hosted virtual machines
   - Familiarity with remote administrative technologies and RDP/SSH protocols
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

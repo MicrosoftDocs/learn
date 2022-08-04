@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.understand-query-plans
+title: Understand query plans
+metadata:
+  title: Understand query plans
+  description: "Understand query plans"
+  ms.date: 07/13/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/5a-understand-query-plans.md)]

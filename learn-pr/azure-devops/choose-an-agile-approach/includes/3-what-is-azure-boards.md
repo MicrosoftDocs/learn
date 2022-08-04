@@ -6,11 +6,11 @@ Mara created her own project on Azure Boards using the Basic process. It shows t
 
 **Andy:** What's a work item?
 
-**Mara:** Work items help us plan and manage a project. A work item can track all kinds of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress.
+**Mara:** Work items help us plan and manage a project. A work item can track all types of activities. Maybe it's a task to do, a bug to fix, or some other issue. We can assign them to people and keep track of their progress.
 
-Perhaps it's easier to show you. Here's Azure Boards using the Basic process.
+Perhaps it's easier to show you. Here's Azure Boards using the Basic process:
 
-:::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="A screenshot of Azure Boards showing the initial three tasks. Each task is in the To Do column.":::
+:::image type="content" source="../../shared/media/build-initial-tasks.png" alt-text="Screenshot of Azure Boards showing the initial three tasks. Each task is in the To Do column.":::
 
 **Amita:** Tell us about the Basic process. Are there other options?
 
@@ -23,7 +23,7 @@ Perhaps it's easier to show you. Here's Azure Boards using the Basic process.
 
 **Amita:** OK, let's use it to get started. We can switch to something else, right?
 
-**Mara:** Right! So, let's pick a few work items we think we can fix in a couple weeks.
+**Mara:** Right! So, let's pick a few work items we think we can fix in a couple of weeks.
 
 Andy can identify with these issues, but the rest of the team has questions.
 
@@ -40,13 +40,13 @@ Andy can identify with these issues, but the rest of the team has questions.
 Each team member shares what they're working on and other concerns they have. As a brainstorming activity, they add sticky notes to a whiteboard. Their whiteboard fills up quickly.
   :::column-end:::
   :::column:::
-:::image type="content" source="../media/3-whiteboard.png" alt-text="An image of a whiteboard containing sticky notes. The contents of the sticky notes are not legible.":::
+:::image type="content" source="../media/3-whiteboard.png" alt-text="Screenshot of a whiteboard containing sticky notes. The contents of the sticky notes are not legible.":::
   :::column-end:::
 :::row-end:::
 
-Eventually the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like.
+Eventually, the team settles on seven top issues. Andy volunteers to add tasks to Azure Boards while everyone watches. Here's what the board looks like:
 
-:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Azure Boards showing a backlog of issues.":::
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Screenshot of Azure Boards showing a backlog of issues.":::
 
 **Amita:** Wow, that's a lot of problems. How are we ever going to fix all those?
 

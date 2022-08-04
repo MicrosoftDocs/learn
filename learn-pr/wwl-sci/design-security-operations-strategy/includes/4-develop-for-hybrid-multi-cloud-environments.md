@@ -1,5 +1,3 @@
-### Develop Security Operations for Hybrid and Multi-cloud Environments
-
 A hybrid cloud combines a private cloud (on-premises infrastructure)
 with a public cloud (computing services offered by third-party providers
 over the public internet). Hybrid clouds allow data and applications to
@@ -19,11 +17,17 @@ extended offline periods.
 Multi-cloud computing uses multiple cloud computing services from more
 than one cloud provider (including private and public clouds) in a
 heterogeneous environment. A multi-cloud strategy provides greater
-flexibility and mitigates risk. Choose services from different cloud
+flexibility and mitigates risk. This strategy allows you to choose services from different cloud
 providers best suited for a specific task or take advantage of services
 offered by a particular cloud provider in a specific location.
 
-#### Unified Operations
+The following video provides a good background on hybrid and multicloud strategy within the Cloud Adoption Framework:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMBdw?postJsllMsg=true]
+
+## Unified operations
+
+**Unified operations** is the intentional approach of maintaining one set of tools and processes to consistently manage each cloud provider through a common set of governance and operations management practices.
 
 The primary objective of unified operations is to create as much process
 consistency as possible across deployments. No cloud service provider
@@ -34,71 +38,35 @@ your [governance](/azure/cloud-adoption-framework/scenarios/hybrid/govern) and
 [operations management](/azure/cloud-adoption-framework/scenarios/hybrid/manage) 
 processes remain consistent.
 
-![Diagram that shows customer processes that unified operations can support.](../media/customer-processes.png) 
+![Diagram that shows customer processes that unified operations can support.](../media/unified-operations.png) 
 
 Most commonly, customers require the ability to deliver consistency
 within their defined governance and operations management processes. To
 meet long-term requirements, your unified operations solution will need
 to be able to scale to meet these common processes specified below.
 
-#### Common governance processes (tasks)
+## Common governance processes (tasks)
 
--   **Cost management:** View, manage, or optimize costs and **identify
-    and provide mitigation guidance for cloud-related IT spend risk**.
+-   **Cost management:** View, manage, or optimize costs and identify and provide mitigation guidance for cloud-related IT spend risk.
+-   **Security baseline:** Audit, apply, or automate requirements from recommended security controls and identify and provide mitigation guidance for security-related business risks.
+-   **Resource consistency:** Onboard, organize, configure resources and services, and identify and provide risk mitigation guidance for potential business risks.
+-   **Identity baseline:** Enforce authentication and authorization across user identity and access and identify and provide
+    risk-mitigation guidance for potential identity-related business  risks.
+-   **Deployment acceleration:** Drive consistency using templates, automation, and pipelines (for deployments, configuration alignment, and reusable assets), establishing policies to ensure compliant, consistent, and repeatable resource deployment and configuration.
 
--   **Security baseline:** Audit, apply, or automate requirements from
-    recommended security controls and **identify and provide mitigation
-    guidance for security-related business risks**.
+## Common operations management processes (tasks)
 
--   **Resource consistency:** Onboard, organize, configure resources and
-    services, and **identify and provide risk mitigation guidance for
-    potential business risks**.
+-   **Inventory and visibility:** Account for, and ensure reporting for all assets, and collect and monitor your inventory's run state in enterprise-grade environments.
+-   **Optimized operations:** Track, patch, and optimize supported resources and minimize business interruption risks from
+    configuration drift or vulnerabilities from inconsistent patch management.
+-   **Protection and recovery:** Backup, business continuity, and disaster recovery best practices and reduce the duration and
+    impact of unpreventable outages.
+-   **[Platform operations](/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization):** Specialized operations for common technology platforms such as SQL databases, virtual desktops, and SAP (for medium to high criticality workloads).
+-   **[Workload operations](/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization):**  Specialized operations (for high priority/mission-critical workloads) with greater operations requirements.
 
--   **Identity baseline:** Enforce authentication and authorization
-    across user identity and access and **identify and provide
-    risk-mitigation guidance for potential identity-related business
-    risks**.
+Your primary cloud platform should be able to provide the required technical capabilities and tools to automate processes and reach the goals above for governance and operations management. Your unified operations solution should enable you to extend these processes across all hybrid, multi-cloud, and edge deployments.
 
--   **Deployment acceleration:** Drive consistency using templates,
-    automation, and pipelines (for deployments, configuration alignment,
-    and reusable assets), **establishing policies to ensure compliant,
-    consistent, and repeatable resource deployment and configuration**.
-
-#### Common operations management processes (tasks)
-
--   **Inventory and visibility:** Account for, and ensure reporting for
-    all assets, and **collect and monitor your inventory's run state in
-    enterprise-grade environments**.
-
--   **Optimized operations:** Track, patch, and optimize supported
-    resources and **minimize business interruption risks from
-    configuration drift or vulnerabilities from inconsistent patch
-    management**.
-
--   **Protection and recovery:** Backup, business continuity, and
-    disaster recovery best practices and **reduce the duration and
-    impact of unpreventable outages**.
-
--   **[Platform operations](/azure/cloud-adoption-framework/manage/azure-management-guide/platform-specialization):**
-    Specialized operations for common technology platforms such as SQL
-    databases, virtual desktops, and SAP (for medium to high criticality
-    workloads).
-
--   **[Workload operations](/azure/cloud-adoption-framework/manage/azure-management-guide/workload-specialization):**
-    Specialized operations (for high priority/mission-critical
-    workloads) with greater operations requirements.
-
-Your primary cloud platform should be able to provide the required
-technical capabilities and tools to automate processes and reach the
-goals above for governance and operations management. Your unified
-operations solution should enable you to extend these processes across
-all hybrid, multi-cloud, and edge deployments.
-
-![Diagram that shows technology capabilities of Modern Security Operations.](../media/modern-security-operation.png) 
-
-![Diagram that shows security Operations functions (Tiers).](../media/security-operations-functions.png) 
-
-#### Azure Security Operation services
+## Azure Security Operation services
 
 [Azure security operations](/azure/security/fundamentals/operational-security) refer
 to the services, controls, and features available to users to protect
@@ -109,7 +77,7 @@ the Microsoft Security Development Lifecycle (SDL), the Microsoft
 Security Response Center program, and deep awareness of the
 cybersecurity threat landscape.
 
-#### Azure management services
+## Azure management services
 
 An IT operations team is responsible for managing hybrid and multi-cloud
 environments, such as data center infrastructure, applications, and
@@ -126,127 +94,39 @@ multiple services that help you manage and protect on-premises and cloud
 infrastructures. Each service provides a specific management function.
 Services can be combined to achieve different management scenarios.
 
+The following management services may be important in a unified operations architecture:
 
-#### Azure Monitor
-
-[Azure Monitor](/azure/azure-monitor/overview) collects
-data from managed sources into central data stores. This data can
-include events, performance data, or custom data provided through the
-API. After the data is collected, it is available for alerting,
-analysis, and export.
-
-Data can be consolidated from various sources and combined from Azure
-services with existing on-premises environments. Azure Monitor logs also
-clearly separate the data collection from the action taken on that data
-so that all actions are available to all kinds of data.
-
-#### Automation
-
-[Azure Automation](/azure/automation/automation-intro) provides
-a way to automate the manual, long-running, error-prone, and frequently
-repeated tasks commonly performed in a cloud and enterprise environment.
-It saves time and increases the reliability of administrative tasks. It
-even schedules these tasks to be automatically performed at regular
-intervals. Processes can be automated using runbooks or configuration
-management using Desired State Configuration.
-
-#### Backup
-
-[Azure Backup](/azure/backup/backup-overview) is
-the Azure-based service that you can use to back up (or protect) and
-restore your data in the Microsoft Cloud. Azure Backup replaces existing
-on-premises or off-site backup solutions with a cloud-based solution
-that's reliable, secure, and cost-competitive.
-
-Azure Backup offers components to download and deploy on the appropriate
-computer or server or in the cloud. The component or agent deployed
-depends on what needs to be protected. All Azure Backup components
-(whether protecting data on-premises or in the cloud) can be used to
-back up data to an Azure Recovery Services vault in Azure.
-
-For more information, see the [Azure Backup components table](/azure/backup/backup-overview#what-can-i-back-up).
-
-#### Site Recovery
-
-[Azure Site Recovery](https://azure.microsoft.com/documentation/services/site-recovery) provides
-business continuity by orchestrating the replication of on-premises
-virtual and physical machines to Azure or a secondary site. If primary
-sites are unavailable, failover to the secondary location so that users
-can keep working. Fail back when systems return to working order. Use
-Microsoft Defender for Cloud to perform more intelligent and effective
-threat detection.
-
-#### Azure Active Directory
-
-[Azure Active Directory (Azure AD)](/azure/active-directory/manage-apps/what-is-application-management) is
+- [Azure Monitor](/azure/azure-monitor/overview) - collects data from managed sources into central data stores. This data can
+include events, performance data, or custom data provided through the API. After the data is collected, it is available for alerting, analysis, and export.
+- [Azure Automation](/azure/automation/automation-intro) provides a way to automate the manual, long-running, error-prone, and frequently repeated tasks commonly performed in a cloud and enterprise environment. It saves time and increases the reliability of administrative tasks.
+- [Azure Backup](/azure/backup/backup-overview) is the Azure-based service that you can use to back up (or protect) and
+restore your data in the Microsoft Cloud. Azure Backup replaces existing on-premises or off-site backup solutions with a cloud-based solution that's reliable, secure, and cost-competitive.
+- [Azure Site Recovery](https://azure.microsoft.com/documentation/services/site-recovery) provides business continuity by orchestrating the replication of on-premises virtual and physical machines to Azure or a secondary site. If primary sites are unavailable, failover to the secondary location so that users can keep working.
+- [Azure Active Directory (Azure AD)](/azure/active-directory/manage-apps/what-is-application-management) is
 a comprehensive identity service that:
+    - Enables identity and access management (IAM) as a cloud service.
+    - Provides central access management, single sign-on (SSO), and reporting.
+    - Supports integrated access management for [thousands of applications](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.AzureActiveDirectory) in the Azure Marketplace, including Salesforce, Google Apps, Box, and Concur.
+- [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) helps prevent, detect, and respond to threats with increased visibility into (and control over) the security of your Azure resources. It provides integrated security monitoring and policy management across subscriptions. It helps detect threats that might otherwise go unnoticed, and it works with a broad ecosystem of security solutions.
 
--   Enables identity and access management (IAM) as a cloud service.
+## Example security architecture for hybrid and multicloud
 
--   Provides central access management, single sign-on (SSO), and
-    reporting.
+This reference architecture illustrates how to use Microsoft Defender for Cloud and Microsoft Sentinel to monitor the security configuration and telemetry of on-premises and Azure operating system workloads. This includes Azure Stack.
 
--   Supports integrated access management for [thousands of applications](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.AzureActiveDirectory) in
-    the Azure Marketplace, including Salesforce, Google Apps, Box, and Concur.
+:::image type="content" source="../media/hybrid-security-monitoring.png" alt-text="Diagram illustrating deployed Microsoft Monitoring Agent on on-premises systems as well as on Azure based virtual machines transferring data to Microsoft Defender for Cloud and Microsoft Sentinel" lightbox="../media/hybrid-security-monitoring.png":::
 
+### Components and workflow
 
-Azure AD also includes a full suite of 
-[identity management capabilities](/azure/security/fundamentals/identity-management-overview#security-monitoring-alerts-and-machine-learning-based-reports),
-including these:
+The architecture consists of the following workflow:
 
--   [Multi-factor authentication](/azure/active-directory/authentication/concept-mfa-howitworks)
+- **Microsoft Defender for Cloud** This reference architecture uses Microsoft Defender for Cloud to monitor on-premises systems, Azure VMs, Azure Monitor resources, and even VMs hosted by other cloud providers. To support that functionality, the **standard fee-based tier** of Microsoft Defender for Cloud is needed. We recommend that you use the 30-day free trial to validate your requirements.
+- **Microsoft Sentinel** Is a cloud-native Security Information and Event Management (SIEM) and security orchestration automated response (SOAR) solution. In this scenario, you can't use the default Defender for Cloud Log Analytics workspace with Microsoft Sentinel. You'll need to create a customized workspace. Data retention for a customized workspace is based on the workspace pricing tier.
+- **Azure Stack**. Is a portfolio of products that extend Azure services and capabilities to your environment of choice, from the datacenter to edge locations and remote offices. Systems that you integrate with Azure Stack typically utilize racks of four to sixteen servers, built by trusted hardware partners and delivered straight to your datacenter.
+- **Azure Monitor**. Collects monitoring telemetry from a variety of on-premises and Azure sources. Management tools, such as those in Microsoft Defender for Cloud and Azure Automation, also push log data to Azure Monitor.
+- **Log Analytics workspace**. Azure Monitor stores log data in a Log Analytics workspace, which is a container that includes data and configuration information.
+- **Log Analytics agent**. The Log Analytics agent collects monitoring data from the guest operating system and VM workloads in Azure, other cloud providers, and on-premises. The Log Analytics Agent supports Proxy configuration and, typically in this scenario, a Microsoft Operations Management Suite (OMS) Gateway acts as proxy.
+- **On-premises network**. This is the firewall configured to support HTTPS egress from defined systems.
+- **On-premises Windows and Linux systems**. Systems with the Log Analytics Agent installed.
+- **Azure Windows and Linux VMs**. Systems on which the Microsoft Defender for Cloud monitoring agent is installed.
 
--   [Self-service password management](https://azure.microsoft.com/resources/videos/self-service-password-reset-azure-ad/)
-
--   [Self-service group management](https://support.microsoft.com/account-billing/reset-your-work-or-school-password-using-security-info-23dde81f-08bb-4776-ba72-e6b72b9dda9e)
-
--   [Privileged account management](/azure/active-directory/privileged-identity-management/pim-configure)
-
--   [Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/overview)
-
--   [Application usage monitoring](/azure/active-directory/hybrid/whatis-hybrid-identity)
-
--   [Rich auditing](/azure/active-directory/reports-monitoring/concept-audit-logs)
-
--   [Security monitoring and alerting](/azure/security-center/security-center-managing-and-responding-alerts)
-
-With Azure Active Directory, all applications published for partners and
-customers (business or consumer) have the same identity and access
-management capabilities. This enables significant reduction in
-operational costs.
-
-#### Microsoft Defender for Cloud
-
-[Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) helps
-prevent, detect, and respond to threats with increased visibility into
-(and control over) the security of your Azure resources. It provides
-integrated security monitoring and policy management across
-subscriptions. It helps detect threats that might otherwise go
-unnoticed, and it works with a broad ecosystem of security solutions.
-
-[Safeguard virtual machine (VM) data](/azure/security-center/security-center-introduction) in
-Azure by providing visibility into virtual machines' security settings
-and monitoring for threats. Defender for Cloud can monitor your virtual
-machines for:
-
--   Operating system security settings with the recommended
-    configuration rules.
-
--   System security and critical updates that are missing.
-
--   Endpoint protection recommendations.
-
--   Disk encryption validation.
-
--   Network-based attacks.
-
-Defender for Cloud uses [Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/role-assignments-portal).
-Azure RBAC provides [built-in roles](/azure/role-based-access-control/built-in-roles) that
-can be assigned to Azure users, groups, and services.
-
-Defender for Cloud assesses the configuration resources to identify
-security issues and vulnerabilities. In Defender for Cloud, information
-related to a resource is seen only when by assigned the role of owner,
-contributor, or reader for the subscription or resource group that a
-resource belongs to.
-
+For full details on this reference architecture, see [Monitor hybrid security using Microsoft Defender for Cloud and Microsoft Sentinel](https://docs.microsoft.com/azure/architecture/hybrid/hybrid-security-monitoring)

@@ -12,7 +12,7 @@ To get started with Defender for Cloud, you must have a subscription to Microsof
 
 The Microsoft Defender for Cloud overview page opens.
 
-:::image type="content" source="../media/defender-overview.png" alt-text="Security Center Overview." lightbox="../media/defender-overview.png":::
+:::image type="content" source="../media/defender-for-cloud-overview.png" alt-text="Screenshot of Defender for Cloud Overview.":::
 
 Defender for Cloud – Overview provides a unified view into the security posture of your hybrid cloud workloads, helping you discover and assess the security of your workloads and to identify and mitigate risks.
 

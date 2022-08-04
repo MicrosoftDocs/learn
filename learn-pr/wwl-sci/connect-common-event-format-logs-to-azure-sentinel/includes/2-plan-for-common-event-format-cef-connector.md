@@ -1,18 +1,18 @@
 The CEF Connector deploys a Syslog Forwarder server to support the communication between the appliance and Microsoft Sentinel. The server consists of a dedicated Linux machine with the Log Analytics agent for Linux installed.  Many of the Microsoft Sentinel Data Connectors that are vendor-specific utilize CEF Connector.
 
-The following diagram displays the setup in the case of a Linux VM in Azure.  The on-premises Syslog sources securely send events to an Azure Linux VM.  The Linux VM with the Log Analytics agent installed then forwards the logs to the Microsoft Sentinel workspace.
+The following diagram displays the setup for a Linux VM in Azure.  The on-premises Syslog sources securely send events to an Azure Linux VM.  The Linux VM with the Log Analytics agent installed then forwards the logs to the Microsoft Sentinel workspace.
 
-:::image type="content" source="../media/learn-path5-01.png" alt-text="Azure VM hosting connector.":::
+:::image type="content" source="../media/learn-path5-01.png" alt-text="Diagram of the Azure VM hosting Syslog connector architecture.":::
 
-Alternatively, the following diagram displays the setup if you use a VM in another cloud or an on-premises machine.  The on-premises Syslog sources send securely send events to a Linux VM.  The Linux VM with the Log Analytics agent installed then securely forwards the logs to the Microsoft Sentinel workspace.
+Alternatively, the following diagram displays the setup if you use a VM in another cloud or an on-premises machine.  The on-premises Syslog sources securely send events to a Linux VM.  The Linux VM with the Log Analytics agent installed then securely forwards the logs to the Microsoft Sentinel workspace.
 
-:::image type="content" source="../media/learn-path5-02.png" alt-text="on-premises connector architecture":::
+:::image type="content" source="../media/learn-path5-02.png" alt-text="Diagram of the on-premises Syslog connector architecture.":::
 
 ## Security considerations
 
 Make sure to configure the machine's security according to your organization's security policy. For example, you can configure your network to align with your corporate network security policy and change the daemon's ports and protocols to align with your requirements.
 
-To use TLS communication between the Syslog source and the Syslog Forwarder, you will need to configure the Syslog daemon (rsyslog or syslog-ng) to communicate in TLS.
+To use TLS communication between the Syslog source and the Syslog Forwarder, you'll need to configure the Syslog daemon (rsyslog or syslog-ng) to communicate in TLS.
 
 ## Prerequisites
 

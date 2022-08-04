@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/10/2022
+  ms.date: 06/10/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
       explanation: "That's incorrect. Schedules simply specific when a runbook is executed."
     - content: "Container"
       isCorrect: false
-      explanation: "That's incorrect. Containers are not used in this context."
+      explanation: "That's incorrect. Containers aren't used in this context."
   - content: "What scope can Azure Policy be deployed to?"
     choices:
     - content: "Tenant"
@@ -38,7 +38,7 @@ quiz:
       explanation: "That's correct. A policy provides a level of governance over your Azure subscriptions which enforce rules and controls over your Azure resources."
     - content: "User"
       isCorrect: false
-      explanation: "That's incorrect. Policies can only be assigned to resources and users are not resources."
+      explanation: "That's incorrect. Policies can only be assigned to resources and users aren't resources."
   - content: "What is the name for the scope that you must define for a SQL Elastic Job?"
     choices:
     - content: "Target Group"

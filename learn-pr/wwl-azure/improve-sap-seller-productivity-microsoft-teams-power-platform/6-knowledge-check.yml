@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.improve-sap-seller-productivity-microsoft-teams-power-platform.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What new capabilities can organizations achieve by enabling Teams-SAP integration?"
+    choices:
+    - content: "Make Skype calls from within SAP apps."
+      isCorrect: false
+      explanation: "That is incorrect. But you can schedule meetings and make Teams calls from within SAP."
+    - content: "Update sales notes from within your Teams channel."
+      isCorrect: true
+      explanation: "That is correct. You can view SAP Sales Cloud notes and history within Teams and share meeting recordings, notes, and activities from Teams to SAP Sales Cloud."
+    - content: "Automate purchase order requests"
+      isCorrect: false
+      explanation: "That is incorrect. Automation requires a low-code platform like Microsoft Power Platform."
+  - content: "Which Power Automate feature allows you to use prebuilt and create custom AI solutions?"
+    choices:
+    - content: "Monitor"
+      isCorrect: false
+      explanation: "That is incorrect. Monitor in the Power Automate UI monitors flows."
+    - content: "AI Builder"
+      isCorrect: true
+      explanation: "That is correct. AI Builder is a Microsoft Power Platform capability that provides AI models that are designed to optimize your business processes."
+    - content: "Process Advisor"
+      isCorrect: false
+      explanation: "That is incorrect. Process Advisor allows you to gain a better understanding of your business processes so you can optimize them."
+  - content: "What is the purpose of a trigger in Power Automate?"
+    choices:
+    - content: "A trigger is an event that starts a cloud flow."
+      isCorrect: true
+      explanation: "That is correct. For example, the trigger that begins the flow could be an incoming email."
+    - content: "A trigger schedules a meeting in Teams"
+      isCorrect: false
+      explanation: "That is incorrect. A trigger is an event that starts the flow, not a specific action in the flow."
+    - content: "A trigger opens a Word document"
+      isCorrect: false
+      explanation: "That is incorrect. A trigger is an event that starts the flow, not a specific action in the flow."
+  - content: "Which statement best describes adaptive cards?"
+    choices:
+    - content: "Adaptive cards can be triggers in cloud flows."
+      isCorrect: false
+      explanation: "That is incorrect. Adaptive Cards are platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange."
+    - content: "Adaptive cards are platform-agnostic snippets of UI."
+      isCorrect: true
+      explanation: "That is correct. Adaptive Cards enable reuse of UI snippets, authored in JSON, between other apps and services."
+    - content: "Adaptive cards simplify spreadsheet technology in Teams."
+      isCorrect: false
+      explanation: "That is incorrect. Adaptive Cards are platform-agnostic snippets of UI, authored in JSON, that apps and services can openly exchange."
+  - content: "In this scenario described in this module, what technology is used to connect the Power Automate flow with the SAP ERP system?"
+    choices:
+    - content: "A JDBC connector"
+      isCorrect: false
+      explanation: "That is incorrect. A Java Database Connector wasn’t used in the scenario."
+    - content: "The SAP ERP connector"
+      isCorrect: true
+      explanation: "That is correct. The SAP ERP connector invokes RFC and BAPI functions using the on-premises data gateway into the SAP ERP system."
+    - content: "Microsoft Dataverse"
+      isCorrect: false
+      explanation: "That is incorrect. While Microsoft Dataverse can be used in a variety of ways with SAP, it wasn’t used in the scenario to connect the Power Automate flow to SAP."

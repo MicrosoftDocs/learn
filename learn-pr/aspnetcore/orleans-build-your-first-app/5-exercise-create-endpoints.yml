@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.orleans-build-first-app.exercise-create-endpoints
+title: Exercise - Build the API endpoints
+metadata:
+  title: Exercise - Build the API endpoints
+  description: Learn how to build endpoints that leverage Orleans grains.
+  ms.date: 5/15/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-create-endpoints.md)]

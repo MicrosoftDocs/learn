@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/28/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You want to start PowerShell 7 from the command line. Which command will you run?"
+    choices:
+    - content: "powershell.exe"
+      isCorrect: false
+      explanation: "Incorrect. You'll run the pwsh.exe command to start PowerShell 7. In Windows PowerShell, the PowerShell executable is named `powershell.exe`. In version 6 and newer, the executable is named `pwsh.exe`. The new name makes it easy to support side-by-side execution of both versions."
+    - content: "pwsh.exe"
+      isCorrect: true
+      explanation: "Correct. In Windows PowerShell, the PowerShell executable is named `powershell.exe`. In version 6 and newer, the executable is named `pwsh.exe`. The new name makes it easy to support side-by-side execution of both versions."
+    - content: "powersh.exe"
+      isCorrect: false
+      explanation: "Incorrect. You'll run the pwsh.exe command to start PowerShell 7. In Windows PowerShell, the PowerShell executable is named `powershell.exe`. In version 6 and newer, the executable is named `pwsh.exe`. The new name makes it easy to support side-by-side execution of both versions."
+  - content: "Why might you decide to use the ISE versus the console host?"
+    choices:
+    - content: "Supports richer editing capabilities and can display a wider range of fonts"
+      isCorrect: true
+      explanation: "Correct. The ISE supports richer editing capabilities and can display a wider range of fonts. It's also compatible with double-byte character sets, making it compatible with a wider variety of written languages. However, if you're simply running a few commands, the console is sufficient."
+    - content: "Essential for running even a few commands"
+      isCorrect: false
+      explanation: "Incorrect. The ISE supports richer editing capabilities and can display a wider range of fonts. It's also compatible with double-byte character sets, making it compatible with a wider variety of written languages. However, if you're simply running a few commands, the console is sufficient."
+    - content: "Both of the above"
+      isCorrect: false
+      explanation: "Incorrect. The ISE supports richer editing capabilities and can display a wider range of fonts. It's also compatible with double-byte character sets, making it compatible with a wider variety of written languages. However, if you're simply running a few commands, the console is sufficient."

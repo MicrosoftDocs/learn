@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-powershell-drives-powershell.cmdlets-powershell
+title: Use PowerShell drive cmdlets in PowerShell
+metadata:
+  title: Use PowerShell drive cmdlets in PowerShell
+  description: "Use PowerShell drive cmdlets in PowerShell"
+  ms.date: 07/28/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-cmdlets-powershell.md)]

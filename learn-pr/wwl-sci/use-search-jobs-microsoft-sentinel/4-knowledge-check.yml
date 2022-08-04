@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-search-jobs-microsoft-sentinel.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/29/2022
+  author: wwlpublish
+  ms.author: bneeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When you're restoring an archive log, what will the table suffix be?"
+    choices:
+    - content: "_RST"
+      isCorrect: true
+      explanation: "Correct.  The table will have _RST as the suffix."
+    - content: "_Restore"
+      isCorrect: false
+      explanation: "Incorrect.  The table will have _RST as the suffix"
+    - content: "_RSTR"
+      isCorrect: false
+      explanation: "Incorrect.  The table will have _RST as the suffix"
+  - content: "What is the suffix for the search result tables?"
+    choices:
+    - content: "_SR"
+      isCorrect: false
+      explanation: "Incorrect.  The table will have _SRCH as the suffix"
+    - content: "_SRCH"
+      isCorrect: true
+      explanation: "Correct.  The table will have _SRCH as the suffix."
+    - content: "_SCH"
+      isCorrect: false
+      explanation: "Incorrect.  The table will have _SRCH as the suffix"
+  - content: "Which log types are supported by Search jobs?"
+    choices:
+    - content: "Analytics logs only."
+      isCorrect: false
+      explanation: "Incorrect.  Basic logs are also supported."
+    - content: "Basic logs only."
+      isCorrect: false
+      explanation: "Incorrect.  Analytics logs are also supported."
+    - content: "Analytics logs and Basic logs."
+      isCorrect: true
+      explanation: "Correct.  Both log types are supported."

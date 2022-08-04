@@ -4,6 +4,7 @@ When designing [blob storage](/azure/storage/blobs/storage-blobs-overview), ther
 | - | - |
 | Premium blob storage | Legal hold policies |
 | Hot, cool, and archive access tiers | Time-based retention policies |
+
 ### Determine the Azure blob access tier
 
 Optimize storage costs by placing your data in the appropriate access tier. 
@@ -40,12 +41,12 @@ Optimize storage costs by placing your data in the appropriate access tier.
 
 [Immutable storage](/azure/storage/blobs/immutable-storage-overview) for Azure Blob Storage enables users to store business-critical data in a WORM (Write Once, Read Many) state. While in a WORM state, data can’t be modified or deleted for a user-specified interval. By configuring immutability policies for blob data, you can protect your data from overwrites and deletes. Policies are applied at the container level and audit logs are available. 
 
-:::image type="content" source="../media/container-policies.png" alt-text="Policies are applied at the container level.":::
+:::image type="content" source="../media/container-policies.png" alt-text="Diagram with policies applied at the container level.":::
 
 
 The next diagram shows how time-based retention policies and legal holds prevent write and delete operations.
 
-:::image type="content" source="../media/legal-hold.png" alt-text="Locked time-based retention policy vs legal hold.":::
+:::image type="content" source="../media/legal-hold.png" alt-text="Diagram showing time-based retention policy vs legal hold.":::
 
 
 Immutable storage for Azure Blob storage supports two types of immutability policies.

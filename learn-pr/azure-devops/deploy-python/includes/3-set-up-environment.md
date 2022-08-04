@@ -106,7 +106,7 @@ This solution requires several Azure resources for deployment, which you create 
       --name python-cicd-$RANDOM \
       --resource-group python-cicd-rg \
       --plan python-cicd-asp \
-      --runtime "python|3.7"
+      --runtime "PYTHON|3.9"
     ```
 
     The name must be globally unique, so here we use `$RANDOM` to append a random number to the name. In practice, you would choose a name that reflects your application. If this step fails due to a naming conflict, try running it again.
