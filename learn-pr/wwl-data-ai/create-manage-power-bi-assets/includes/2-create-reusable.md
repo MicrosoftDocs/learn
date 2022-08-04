@@ -6,7 +6,7 @@ Assets can mean datasets, dataflows, reports, and dashboards. We'll most commonl
 
 Next time someone needs to create a report on that dataset, they can connect to a Power BI dataset from Power BI Desktop. If you publish to a shared location, it allows peers to use the same dataset. A single shared dataset protects data integrity. This trustworthy dataset also prevents orphaned datasets when someone recreates a report without deleting the earlier copies. As an enterprise data analyst, it's your responsibility to be a good data steward to encourage the democratization of data rather than disparate copies of data with questionable quality.
 
-![Screenshot from Power B I Desktop, showing the Power B I dataset connection option](../media/power-bi-datasets-connect.png)
+![Screenshot from Power B.I. Desktop, showing the Power B.I. dataset connection option](../media/power-bi-datasets-connect.png)
 
 ## Create specialized datasets
 
@@ -16,7 +16,7 @@ To create a specialized dataset, open a new Power BI Desktop instance and connec
 
 Once this feature is enabled, you'll need to switch to a DirectQuery connection, and can add more direct query or import connections.
 
-![Screenshot of Power B I Desktop notice that DirectQuery connection is required, after selecting the "make changes to the model" option](../media/dataset-direct-query.png)
+![Screenshot of Power B.I. Desktop notice that DirectQuery connection is required, after selecting the "make changes to the model" option](../media/dataset-direct-query.png)
 
 Now, you're able to extend the model with the "Make changes to the model" option. You can see below where there are the three SalesLT tables from the core-dataset, then there are two other tables without relationships to any other tables yet.
 
