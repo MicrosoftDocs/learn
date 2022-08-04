@@ -1077,3 +1077,13 @@ achievements:
   title: Implement application configuration
   summary: Implement application configuration
   iconUrl: /learn/achievements/8-implement-application-configuration.svg
+- uid: learn.wwl.configure-databases-for-performance.badge
+  type: badge
+  title: Configure databases for performance
+  summary: Configure databases for performance
+  iconUrl: /learn/achievements/configure-databases-for-performance.svg
+- uid: learn.wwl.explore-causes-of-performance-issues.badge
+  type: badge
+  title: Explore causes of performance issues
+  summary: Explore causes of performance issues
+  iconUrl: /learn/achievements/explore-causes-of-performance-issues.svg
