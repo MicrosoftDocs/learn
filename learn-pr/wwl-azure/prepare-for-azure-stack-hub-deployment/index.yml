@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-for-azure-stack-hub-deployment
 metadata:
   title: Prepare for Azure Stack Hub deployment
   description: "Prepare for Azure Stack Hub deployment"
-  ms.date: 03/29/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -39,6 +39,7 @@ units:
 - learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-name-resolution-strategy
 - learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-public-internal-ip-strategy
 - learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-data-center-firewall-integration-strategy
+- learn.wwl.prepare-for-azure-stack-hub-deployment.border-connectivity-azure-stack-hub
 - learn.wwl.prepare-for-azure-stack-hub-deployment.recommend-identity-provider
 - learn.wwl.prepare-for-azure-stack-hub-deployment.validate-identity-provider-integration
 - learn.wwl.prepare-for-azure-stack-hub-deployment.configure-time-server-ntp
