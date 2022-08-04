@@ -29,7 +29,6 @@ Here's how to create a Conditional Access policy that requires multifactor authe
 8.  Under **Cloud apps or actions &gt; Include**, select **Select apps**.
 9.  Select one of the following apps based on which version of Azure Virtual Desktop you're using. Choose **Azure Virtual Desktop** (App ID 9cdead84-a844-4324-93f2-b2e6bb768d07)
 10. Go to **Conditions &gt; Client apps**, then select where you want to apply the policy to:
-    
      -  Select **Browser** if you want the policy to apply to the web client.
      -  Select **Mobile apps and desktop clients** if you want to apply the policy to other clients.
      -  Select both check boxes if you want to apply the policy to all clients.

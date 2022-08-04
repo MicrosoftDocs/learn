@@ -3,7 +3,7 @@ uid: learn.wwl.manage-security
 metadata:
   title: Manage security for Azure Virtual Desktop
   description: "Manage security for Azure Virtual Desktop"
-  ms.date: 03/15/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -37,7 +37,6 @@ units:
 - learn.wwl.manage-security.understand-conditional-access-policy-components
 - learn.wwl.manage-security.by-using-azure-security-center
 - learn.wwl.manage-security.security-posture-management-threat-protection
-- learn.wwl.manage-security.microsoft-defender-antivirus-for-session-hosts
 - learn.wwl.manage-security.knowledge-check
 - learn.wwl.manage-security.summary
 badge:

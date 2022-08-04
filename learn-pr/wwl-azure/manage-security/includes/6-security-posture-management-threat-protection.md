@@ -8,30 +8,46 @@ Microsoft Defender for Cloud provides security posture management and threat pro
  -  Just-in-time VM access.
  -  Adaptive Application Controls.
 
-Using the Microsoft Defender for Cloud portal you can view Azure Virtual Desktop host pool VMs under **Inventory**:
+Microsoft Defender for Cloud has two main goals:
 
-:::image type="content" source="../media/configure-security-center-image-1-37b7904a.png" alt-text="Image of Azure Virtual Desktop host pools.":::
+ -  Understand your current security situation
+ -  Efficiently and effectively improve your security
+
+The central feature in Defender for Cloud that enables those goals is the secure score.
+
+Defender for Cloud continually assesses your cross-cloud resources for security issues. It then aggregates all the findings into a single score so that you can tell, at a glance, your current security situation: the higher the score, the lower the identified risk level.
+
+In the Azure portal pages, the secure score is shown as a percentage value and the underlying values are also clearly presented:
+
+:::image type="content" source="../media/single-secure-score-1-7e0c01a6.png" alt-text="Screen capture of secure score as shown in the portal.":::
 
 
-Choose a specific VM to view recommendations and Severity:
+In the Azure mobile app, the secure score is shown as a percentage value and you can tap the secure score to see the details that explain the score:
 
-:::image type="content" source="../media/configure-security-center-image-2-0bdf4ed7.png" alt-text="Showing full recommendation list and as Severity level of a specific virtual machine.":::
-
-
-Security alerts can be viewed under **General** and **Security Alerts**:
-
-:::image type="content" source="../media/configure-security-center-image-3-42a81064.png" alt-text="Showing VM security findings under Threat Protection blade followed by Security Alerts.":::
+:::image type="content" source="../media/single-secure-score-2-366e7615.png":::
 
 
-Security alerts and recommendations can be consumed and managed from the Security Center portal or exported to analysis tools for remediation.
+To increase your security, review Defender for Cloud's recommendations page and remediate the recommendation by implementing the remediation instructions for each issue. Recommendations are grouped into security controls. Each control is a logical group of related security recommendations, and reflects your vulnerable attack surfaces. Your score only improves when you remediate *all* of the recommendations for a single resource within a control. To see how well your organization is securing each individual attack surface, review the scores for each security control.
 
-## Enabling Microsoft Defender for Cloud for Azure Virtual Desktop environment
+## Manage security posture
 
-Microsoft Defender for Cloud Free tier provides security recommendations and Secure Score for Azure Virtual Desktop deployments.
+On the Security posture page, you're able to see the secure score for your entire subscription, and each environment in your subscription. By default all environments are shown.
 
-To enable all protection capabilities, do the following:
+:::image type="content" source="../media/security-posture-page-3-148f6db0.png" alt-text="Screenshot of the security posture page.":::
 
-1.  Make sure you have Microsoft Defender for Cloud Standard tier (as shown below).
-2.  Enable threat protection for Virtual Machines.
 
-:::image type="content" source="../media/configure-security-center-image-4-d4677356.png" alt-text="Enabling threat protection for Virtual Machines in Azure Security Center.":::
+:::image type="content" source="../media/secure-score-5-53f8d88c.png" alt-text="Screen capture of the security posture page.":::
+
+
+The bottom half of the page allows you to view and manage viewing the individual secure scores, number of unhealthy resources and even view the recommendations for all of your individual subscriptions, accounts, and projects.
+
+You can group this section by environment by selecting the Group by Environment checkbox.
+
+:::image type="content" source="../media/secure-score-6-dcecd15d.png" alt-text="Screenshot of grouping sections by environment.":::
+
+
+## How secure score is calculated
+
+The contribution of each security control towards the overall secure score is shown on the recommendations page.
+
+:::image type="content" source="../media/security-controls-6-50a868e0.png":::
