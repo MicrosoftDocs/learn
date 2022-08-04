@@ -16,4 +16,4 @@ After completing this module, you'll be able to:
 ## Prerequisites
 
  -  Working experience with data integration solutions.
- -  Conceptual knowledge of data integration solutions. 
+ -  Conceptual knowledge of data integration solutions.

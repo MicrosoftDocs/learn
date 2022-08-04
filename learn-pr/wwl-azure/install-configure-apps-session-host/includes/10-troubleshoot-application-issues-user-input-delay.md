@@ -59,15 +59,15 @@ There are instances for each session ID, and their counters show the user input 
 
 This table shows a visual example of these instances. (You can get the same information in Perfmon by switching to the Report graph type.)
 
-| **Type of counter**          | **Instance name**                                | **Reported delay (ms)** |  |
-| ---------------------------- | ------------------------------------------------ | ----------------------- |  |
-| User Input Delay per process | 1:4232 &lt;Calculator.exe&gt; | 200                     |  |
-| User Input Delay per process | 2:1000 &lt;Calculator.exe&gt; | 16                      |  |
-| User Input Delay per process | 1:2000 &lt;Calculator.exe&gt; | 32                      |  |
-| User Input Delay per session | 1                                                | 200                     |  |
-| User Input Delay per session | 2                                                | 16                      |  |
-| User Input Delay per session | Average                                          | 108                     |  |
-| User Input Delay per session | Max                                              | 200                     |  |
+| **Type of counter**          | **Instance name**                                | **Reported delay (ms)** |
+| ---------------------------- | ------------------------------------------------ | ----------------------- |
+| User Input Delay per process | 1:4232 &lt;Calculator.exe&gt; | 200                     |
+| User Input Delay per process | 2:1000 &lt;Calculator.exe&gt; | 16                      |
+| User Input Delay per process | 1:2000 &lt;Calculator.exe&gt; | 32                      |
+| User Input Delay per session | 1                                                | 200                     |
+| User Input Delay per session | 2                                                | 16                      |
+| User Input Delay per session | Average                                          | 108                     |
+| User Input Delay per session | Max                                              | 200                     |
 
 ## Counters used in an overloaded system
 
