@@ -42,7 +42,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 01. Open the *Program.cs* file again.
 
-01. Create a new asynchronous local function named **CreateResourcesAsync** that returns an item of type <xref:Microsoft.Azure.Cosmos.Container>.
+01. Create a new asynchronous local function named `CreateResourcesAsync` that returns an item of type <xref:Microsoft.Azure.Cosmos.Container>.
 
     ```csharp
     async Task<Container> CreateResourcesAsync()
@@ -52,7 +52,7 @@ The SDK contains useful methods that will only create a new resource if it doesn
 
 01. Add the following lines of code within the **CreateResourcesAsync** local function.
 
-    01. Create, or get, a new database by calling <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync(System.String,Microsoft.Azure.Cosmos.ThroughputProperties,Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named **database**. Be sure to set these parameters:
+    01. Create, or get, a new database by calling <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync(System.String,Microsoft.Azure.Cosmos.ThroughputProperties,Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named `database`. Be sure to set these parameters:
 
         | Parameter | Value |
         | --- | --- |
@@ -132,7 +132,7 @@ C# data can be represented using various types including classes, structs, and r
 
 01. Open the *Item.cs* file.
 
-01. Create a base type named **Item** that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
+01. Create a base type named `Item` that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
 
     ```csharp
     public record Item(
@@ -188,9 +188,9 @@ C# data can be represented using various types including classes, structs, and r
     )
     {
         public string Name { get; init; } = default!;
-        public decimal Price { get; init; } = default;
-        public bool Archived { get; init; } = default;
-        public int Quantity { get; init; } = default;
+        public decimal Price { get; init; }
+        public bool Archived { get; init; }
+        public int Quantity { get; init; }
     };
     ```
 
@@ -254,9 +254,9 @@ Your app now creates a database and container. The methods you used to create th
     )
     {
         public string Name { get; init; } = default!;
-        public decimal Price { get; init; } = default;
-        public bool Archived { get; init; } = default;
-        public int Quantity { get; init; } = default;
+        public decimal Price { get; init; }
+        public bool Archived { get; init; }
+        public int Quantity { get; init; }
     };
     ```
 

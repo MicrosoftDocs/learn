@@ -158,9 +158,9 @@ Now, the .NET project should be built and ready for you to add your own custom c
     }
     ```
 
-01. Add the following lines of code within the **GetClient** local function.
+01. Add the following lines of code within the `GetClient` local function.
 
-    01. Create a string variable named **connectionString**. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable(System.String)> passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
+    01. Create a string variable named `connectionString`. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable(System.String)> passing in the name of the `COSMOS_CONNECTION_STRING` environment variable.
 
         ```csharp
         string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
@@ -181,7 +181,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
         };
         ```
 
-    01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder> class by passing in the connection string to the constructor. Next, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithSerializerOptions(Microsoft.Azure.Cosmos.CosmosSerializationOptions)> fluent method and set this method's parameter to `serializerOptions`. Finally, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.Build> method to create an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient> named **output**.
+    01. Create a new instance of the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder> class by passing in the connection string to the constructor. Next, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.WithSerializerOptions(Microsoft.Azure.Cosmos.CosmosSerializationOptions)> fluent method and set this method's parameter to `serializerOptions`. Finally, chain the <xref:Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder.Build> method to create an instance of type <xref:Microsoft.Azure.Cosmos.CosmosClient> named `output`.
 
         ```csharp
         CosmosClient output = new CosmosClientBuilder(connectionString)
@@ -195,13 +195,13 @@ Now, the .NET project should be built and ready for you to add your own custom c
         Console.WriteLine("[Client ready]");    
         ```
 
-    01. Return the **output** variable.
+    01. Return the `output` variable.
 
         ```csharp
         return output;
         ```
 
-01. Back within the main program flow, call the **GetClient** method, store the result in a variable named **client**, and wrap this call with a using statement.
+01. Back within the main program flow, call the `GetClient` method, store the result in a variable named `client`, and wrap this call with a using statement.
 
     ```csharp
     using CosmosClient client = GetClient();
@@ -233,7 +233,7 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
 
 ### [Review code](#tab/review-code)
 
-01. Review the **inventory.csproj** project file to ensure that the project configuration matches this sample.
+01. Review the *inventory.csproj* project file to ensure that the project configuration matches this sample.
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">    
@@ -263,7 +263,7 @@ The application is now ready to run and connect to Azure Cosmos DB SQL API. Here
     }
     ```
 
-01. Within the **Program.cs** code file, review the **GetClient** local function to make sure that your code matches this sample.
+01. Within the *Program.cs* code file, review the `GetClient` local function to make sure that your code matches this sample.
 
     ```csharp
     string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
