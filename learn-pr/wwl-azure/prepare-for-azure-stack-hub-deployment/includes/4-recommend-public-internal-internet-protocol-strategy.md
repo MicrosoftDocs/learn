@@ -1,4 +1,4 @@
-In the context of Azure Stack Hub, a public IP address is an IP address that's accessible from outside of Azure Stack Hub. Whether that external network is public internet routable or is on an intranet and uses private address space doesn't matter for the purposes of this unit, the steps are the same.
+In the context of Azure Stack Hub, a public IP address is an IP address that's accessible from outside of Azure Stack Hub. Whether that external network is public internet routable or is on an intranet and uses private address space doesn't matter for the purposes of this unit, the steps are the same. will need to 
 
 While you can set up multiple IP pools, you won't be able to select which one to use. Azure Stack Hub threads all IP pools as one. When you create a resource, you can't pick an IP for assignment.
 
@@ -13,7 +13,7 @@ At a high level, the process of adding a new public IP address block to Azure St
 
 ## Obtain the address block from your provider
 
-You will need to do is to obtain the address block you want to add to Azure Stack Hub. Depending on where you obtain your address block from, consider what the lead time is and manage this against the rate at which you're consuming public IP addresses in Azure Stack Hub.
+You will need to obtain the address block you want to add to Azure Stack Hub. Depending on where you obtain your address block from, consider what the lead time is and manage this against the rate at which you're consuming public IP addresses in Azure Stack Hub.
 
 Azure Stack Hub will accept any address block that you provide if it's a valid address block and doesn't overlap with an existing address range in Azure Stack Hub. Make sure you obtain a valid address block that's routable and non-overlapping with the external network to which Azure Stack Hub is connected. After you add the range to Azure Stack Hub, you can't remove it.
 
