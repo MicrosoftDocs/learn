@@ -76,7 +76,7 @@ Now, let's create the load balancer.
 
 1. When validation passes, select **Create**.
 
-    ![Enter details on the Create load balancer page.](../media/4-create-details-lb.png)
+    ![Screenshot that shows how to enter details on the Create load balancer page.](../media/4-create-details-lb.png)
 
 ## Add a back-end pool
 
