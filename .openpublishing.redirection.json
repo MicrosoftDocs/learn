@@ -17054,6 +17054,11 @@
       "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/8-publish-apps-azure-virtual-desktop.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/9-publish-apps-azure-virtual-desktop",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/6-onedrive-sync-app-virtual-desktops.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/7-onedrive-sync-app-virtual-desktops",
+      "redirect_document_id": true
     }
   ]
 }
