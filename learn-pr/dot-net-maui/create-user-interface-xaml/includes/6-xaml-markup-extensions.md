@@ -6,7 +6,7 @@ In this unit, you'll learn how to create and use mark-up extensions.
 
 ## What is a mark-up extension?
 
-A mark-up extension is a class that you use in XAML to access runtime values. Suppose you have many labels defined in your XAML UI and you want to set the `FontSize` property to the same value throughout the app to ensure that the styling of all labels is consistent. You can set the `FontSize` property using XAML as shown in the example below.
+A mark-up extension is a class that you use in XAML to access runtime values. Suppose you have many labels defined in your XAML UI and you want to set the `FontSize` property to the same value throughout the app to ensure that the styling of all labels is consistent. You can set the `FontSize` property using XAML as shown in the following example.
 
 ```xml
 <Label Text="Hello, World!"
@@ -33,7 +33,7 @@ The purpose of this method is to supply a value to your XAML mark-up. Notice tha
 
 The **serviceProvider** parameter contains contextual information about where the mark-up extension is being used in your XAML code; amongst other pieces of information it identifies the control to which the extension is being applied.
 
-The mark-up extension for the `FontSize` property can be kept simple. In the example below, the **MainPage** class exposes a `double` field named **MyFontSize**. The **GlobalFontSizeExtension** class implements the **IMarkupExtension** interface, and the **ProvideValue** method returns the value of **MyFontSize** variable:
+The mark-up extension for the `FontSize` property can be kept simple. In the following example, the **MainPage** class exposes a `double` field named **MyFontSize**. The **GlobalFontSizeExtension** class implements the **IMarkupExtension** interface, and the **ProvideValue** method returns the value of **MyFontSize** variable:
 
 ```csharp
 namespace MyMauiApp;
@@ -66,7 +66,7 @@ public class GlobalFontSizeExtension : IMarkupExtension
 
 ## Applying the mark-up extension to a control in XAML
 
-To use the mark-up extension in your XAML code, add the namespace containing the **GlobalFontSizeExtension** class to the list of namespaces in the `ContentPage` tag. In the example below, this namespace is given the alias **mycode**:
+To use the mark-up extension in your XAML code, add the namespace containing the **GlobalFontSizeExtension** class to the list of namespaces in the `ContentPage` tag. In the following example, this namespace is given the alias **mycode**:
 
 ```xml
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
