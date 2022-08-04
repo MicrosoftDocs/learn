@@ -30,7 +30,7 @@ subjects:
 - development-tools
 modules:
 - learn.visual-studio.visual-studio-intro
-- learn.visual-studio-github-push
+#- learn.visual-studio-github-push
 - learn.visual-studio-test-concepts
 - learn.visual-studio.visual-studio-test-tools
 trophy:
