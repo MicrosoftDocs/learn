@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.authenticate-azure-deployment-workflow-workload-identities.understand-workload-identities
+title: Understand workload identities
+metadata:
+  unitType: learning-content
+  title: Understand workload identities
+  description: Learn what workload identities are, how they're different from user accounts, and how they work.
+  ms.date: 07/27/2022
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-understand-workload-identities.md)]

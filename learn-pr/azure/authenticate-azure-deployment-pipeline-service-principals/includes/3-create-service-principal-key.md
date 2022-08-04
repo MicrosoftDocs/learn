@@ -41,11 +41,11 @@ When you create a service principal, you generally ask Azure to create a key at 
 
 Azure shows you the key when you create the service principal. This is the only time that Azure will ever show you the key. After that, you can't get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. Don't share the key by email or another non-secure means. If you lose the key, you must delete it and create a new one.
 
-## Manage service principals for Azure Pipelines and GitHub Actions
+## Manage service principals for Azure Pipelines
 
 When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration. That way, you avoid storing or transmitting the key unnecessarily. 
 
-Pipeline tools include secure ways to specify your service principal's application ID and key. Never store credentials of any kind in source control. Instead, use *secrets* with GitHub Actions, and use *service connections* when you work with Azure Pipelines. In this module, we only discuss how to create a service principal and key. You'll learn how to configure your pipeline with the key in a later module.
+Pipeline tools include secure ways to specify your service principal's application ID and key. Never store credentials of any kind in source control. Instead, use *service connections* when you work with Azure Pipelines. In this module, we only discuss how to create a service principal and key. You'll learn how to configure your pipeline with the key in a later module.
 
 > [!TIP]
 > Azure Pipelines can create service principals for you automatically. In this module, you'll manually create and manage your service principals so you have a better understanding of what's happening. In other modules, you'll use the automatic creation method for simplicity.
@@ -53,6 +53,11 @@ Pipeline tools include secure ways to specify your service principal's applicati
 ## Create a service principal and key
 
 ::: zone pivot="cli"
+
+You can use the Azure CLI to create and manage service principals.
+
+> [!NOTE]
+> Creating and modifying service principals requires that you have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
 
 To create a service principal and a key, use the `az ad sp create-for-rbac` command. The command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
 
@@ -68,6 +73,11 @@ When you run this command, the Azure CLI returns a JSON response with a `passwor
 ::: zone-end
 
 ::: zone pivot="powershell"
+
+You can use the Azure PowerShell cmdlets to create and manage service principals.
+
+> [!NOTE]
+> Creating and modifying service principals requires that you have permissions in Azure AD. In some organizations, you might need an administrator to perform these steps for you.
 
 To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. The command accepts several arguments and can optionally assign roles to the service principal. You'll learn about this subject later in this module. For now, here's an example that illustrates how to create a service principal without any Azure role assignments:
 

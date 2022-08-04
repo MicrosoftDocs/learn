@@ -46,7 +46,7 @@ Because you can't push changes directly to your repository's main branch, you ne
 
 1. Select **Create a pull request**.
 
-1. On the page for creating a pull request, notice that GitHub automatically used the Git commit message as the pull request title.
+1. On the page for creating a pull request, notice that Azure DevOps automatically used the Git commit message as the pull request title.
 
    Update the description to the following text:
 

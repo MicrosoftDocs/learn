@@ -1,0 +1,236 @@
+As the first step to creating your project's application, you need to create a .NET project. Recall that the .NET project should use the **Microsoft.Azure.Cosmos** SDK library to connect to the account you have already created. There are three key requirements at this time:
+
+1. Create a .NET project
+1. Import the SDK library
+1. Connect using the client classes
+
+[![Illustration of icons of an Azure Cosmos DB account and .NET application.](../media/project-visual-app.png)](../media/project-visual-app.png)
+
+After you complete this exercise, you'll have a simple .NET application that successfully connects to your SQL API account, but doesn't perform any operations yet.
+
+## Persist connection string
+
+Here, you'll get the connection string again and store it in an *environment variable* that is accessible from your .NET application.
+
+1. Create a ``resourceGroup`` shell variable with the value prescribed here.
+
+    ```azurecli
+    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
+    ```
+
+1. Query your resource group for the single Azure Cosmos DB account you created earlier in this project.
+
+    ```azurecli
+    az cosmosdb list \
+        --resource-group $resourceGroup \
+        --query [0].name \
+        --output tsv
+    ```
+
+1. Use the same query again to save the name of the account in the ``accountName`` shell variable.
+
+    ```azurecli
+    accountName=$(az cosmosdb list \
+        --resource-group $resourceGroup \
+        --query [0].name \
+        --output tsv)
+    ```
+
+1. Get the ``Primary SQL Connection String`` credential from the account and save it in a shell variable named ``connectionString``.
+
+    ```azurecli
+    connectionString=$(az cosmosdb keys list \
+        --name $accountName \
+        --resource-group $resourceGroup \
+        --type connection-strings \
+        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
+        --output tsv)
+    ```
+
+1. To validate, output the connection string to the terminal.
+
+    ```azurecli
+    echo $connectionString
+    ```
+
+1. Save the ``connectionString`` shell variable as a new environment variable named ``COSMOS_CONNECTION_STRING``.
+
+    ```azurecli
+    export COSMOS_CONNECTION_STRING=$connectionString
+    ```
+
+## Build and persist the project directory
+
+Azure Cloud Shell persists files across sessions using Azure Files. A file share is mounted to the shell's running instance in the **clouddrive** directory. Here, you'll create your project folder in that directory.
+
+1. Change to the already mounted ``clouddrive`` directory.
+
+    ```bash
+    cd ~/clouddrive
+    ```
+
+1. Create a new directory named ``inventorytool`` to be persisted across sessions.
+
+    ```bash
+    mkdir inventorytool
+    ```
+
+1. Change to the newly created ``~/clouddrive/inventorytool`` directory.
+
+    ```bash
+    cd ~/clouddrive/inventorytool
+    ```
+
+## Create a .NET console project
+
+The .NET CLI creates and manages .NET projects within a specified directory. Here, you'll use the CLI to create a new console application and import the SDK library.
+
+1. Create a new console application in the current directory.
+
+    ```dotnetcli
+    dotnet new console
+    ```
+
+    > [!TIP]
+    > Since you did not specify a project name or a directory, the command will create the new project in the current directory and name the project to match the directory's name (inventorytool).
+
+1. Import the **Microsoft.Azure.Cosmos** SDK library from NuGet.
+
+    ```dotnetcli
+    dotnet add package Microsoft.Azure.Cosmos
+    ```
+
+1. Build the .NET project to ensure you've correctly configured your project.
+
+    ```dotnetcli
+    dotnet build
+    ```
+
+    The output of the command should be similar to this example.
+
+    ```output
+    Microsoft (R) Build Engine version 17.2.0+41abc5629 for .NET
+    Copyright (C) Microsoft Corporation. All rights reserved.
+    
+      Determining projects to restore...
+      All projects are up-to-date for restore.
+      inventorytool -> /usr/csuser/clouddrive/inventorytool/bin/Debug/net6.0/inventorytool.dll
+    
+    Build succeeded.
+        0 Warning(s)
+        0 Error(s)
+    
+    Time Elapsed 00:00:11.00
+    ```
+
+1. Open the code editor using the ``code`` command in the current directory.
+
+    ```bash
+    code .
+    ```
+
+## Connect to the account
+
+Now, the .NET project should be built and ready for you to add your own custom code. You have access to the **Microsoft.Azure.Cosmos** namespace and all of the classes necessary to connect to the SQL API. Here, you'll open the **Program.cs** file and implement code to connect to the account using the client classes of the SDK.
+
+1. Open the **Program.cs** file within the code editor for the Azure Cloud Shell.
+
+    > [!TIP]
+    > If you are not familiar with the Azure Cloud Shell's integrated editor, use the file explorer to select and open the **Program.cs** option.
+    >
+    > [![Screenshot of the Azure Cloud Shell integrated editor with the Program.cs file highlighted.](../media/cloud-shell-code-editor.png)](../media/cloud-shell-code-editor.png)
+    >
+
+1. Delete all existing code from the file.
+
+1. Add a using directive for the **Microsoft.Azure.Cosmos** namespace.
+
+    ```csharp
+    using Microsoft.Azure.Cosmos;
+    ```
+
+1. Create a string variable named **cosmosConnectionString**. Set the initial value of the variable to the result of calling ``Environment.GetEnvironmentVariable`` passing in the name of the **COSMOS_CONNECTION_STRING** environment variable.
+
+    ```csharp
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    ```
+
+1. Print the connection string to the console.
+
+    ```csharp
+    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    ```
+
+1. Create a new instance of the **CosmosClient** class by passing in the connection string to the constructure. Wrap the class within a using statement.
+
+    ```csharp
+    using CosmosClient client = new(
+        connectionString: cosmosConnectionString
+    );
+    ```
+
+1. Print a message indicating that you've connected to the client.
+
+    ```csharp
+    Console.WriteLine("[Client connected]");    
+    ```
+
+1. **Save** the **Program.cs** file.
+
+## Check your work
+
+The application is now ready to run and connect to Azure Cosmos DB SQL API. Here, you'll compare your application code to our sample. Then, you'll check that your application works as expected by running the code.
+
+### [Run application](#tab/run-app)
+
+1. Run the .NET application in the terminal
+
+    ```bash
+    dotnet run
+    ```
+
+1. Observe the output of running the application. The output should match the example here.
+
+    ```output
+    [Connection string]:    AccountEndpoint=https://<account-name>.documents.azure.com:443/;AccountKey=<account-key>;
+    [Client connected]
+    ```
+
+> [!NOTE]
+> If building or running the .NET application results in an error, go to the **review code** section to validate that your code matches the example.
+
+### [Review code](#tab/review-code)
+
+1. Review the **inventorytool.csproj** project file to ensure that the project configuration matches this sample.
+
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+      </PropertyGroup>    
+      <ItemGroup>
+        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.29.0" />
+      </ItemGroup>    
+    </Project>
+    ```
+
+1. Review the **Program.cs** code file to make sure that your code matches this sample.
+
+    ```csharp
+    using Microsoft.Azure.Cosmos;
+    
+    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    
+    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    
+    using CosmosClient client = new(
+        connectionString: cosmosConnectionString
+    );
+    
+    Console.WriteLine("[Client connected]");
+    ```
+
+---

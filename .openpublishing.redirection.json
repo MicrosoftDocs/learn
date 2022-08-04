@@ -16899,6 +16899,121 @@
       "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/inference-pipeline.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-classification-model-azure-machine-learning-designer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/8-configure-profile-containers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/10-configure-profile-containers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/9-manage-rule-sets-application-mask.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/12-manage-rule-sets-application-mask",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/13-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/14-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-fslogix/7-configure-cloud-cache.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-fslogix/9-configure-cloud-cache",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-manage-session-host-image/6-install-language-packs-azure-virtual-desktop.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-session-host-image/8-install-language-packs-azure-virtual-desktop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-manage-session-host-image/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-session-host-image/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-manage-session-host-image/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-session-host-image/10-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/2-describe-database-scoped-configuration-options.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/3-describe-intelligent-query-processing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/4-describe-query-store-azure-database-mysql-postgresql.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/configure-databases-performance/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-databases-for-optimal-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/3-describe-blocking-locking-sql-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/4-describe-data-file-fragmentation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/2-describe-sql-server-query-store.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/5-exercise-identify-resolve-blocking-issues.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
+      "redirect_document_id": false
     }
   ]
 }
