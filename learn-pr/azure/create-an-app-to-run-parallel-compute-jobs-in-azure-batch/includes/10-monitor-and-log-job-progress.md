@@ -130,9 +130,7 @@ The app will check for an existing pool, and create one if it doesn't exist. The
 
 ## Test the console app
 
-1. Select the ellipses in the top-right corner of the code editor.
-
-1. Select **Close Editor**, and in the dialog select **Save**.
+1. In the code editor, right-click and select **Save**, and then select **Quit**.
 
 1. Build and run the app.
 
@@ -153,7 +151,7 @@ The app will check for an existing pool, and create one if it doesn't exist. The
     Uploading file ~\cutifypets\InputFiles\6.mp4 to container [input]...
     Creating pool [WinFFmpegPool]...
     Creating job [WinFFmpegJob]...
-    Adding 2 tasks to job [WinFFmpegJob]...
+    Adding 6 tasks to job [WinFFmpegJob]...
     Monitoring all tasks for 'Completed' state, timeout in 00:30:00...
     All tasks reached state Completed.
     Success! All tasks completed successfully. Output files uploaded to output container.
