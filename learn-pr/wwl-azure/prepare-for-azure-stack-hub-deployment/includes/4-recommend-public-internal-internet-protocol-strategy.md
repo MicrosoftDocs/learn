@@ -1,4 +1,4 @@
-In the context of Azure Stack Hub, a public IP address is an IP address that's accessible from outside of Azure Stack Hub. Whether that external network is public internet routable or is on an intranet and uses private address space doesn't matter for the purposes of this unit, the steps are the same. will need to 
+In the context of Azure Stack Hub, a public IP address is an IP address that's accessible from outside of Azure Stack Hub. Whether that external network is public internet routable or is on an intranet and uses private address space doesn't matter for the purposes of this unit, the steps are the same. 
 
 While you can set up multiple IP pools, you won't be able to select which one to use. Azure Stack Hub threads all IP pools as one. When you create a resource, you can't pick an IP for assignment.
 
