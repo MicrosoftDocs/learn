@@ -22,13 +22,13 @@ Your goal is to set up a Linux VM and create an activity log monitoring rule to 
 
 1. In the **Search by signal name** box, enter **Delete**, and then select **Delete Virtual Machine (Microsoft.Compute/virtualMachines)**.
 
-1. You want to receive alerts of all types. Leave **Alert logic** settings at their default of **All selected**.
+1. The **Create an alert rule** pane reappears. You want to receive alerts of all types, so leave **Alert logic** settings at their default of **All selected**. Leave the **Create an alert rule** pane open for the next section.
 
 ## Add an email alert action
 
 For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions enable you to send an email for notifications, to trigger an Azure function, or to call a webhook. You'll now add an email alert when VMs are deleted.
 
-1. Select the **Actions** tab, and select **Create action group**. The **Create an action group** pane appears.
+1. On the **Create an alert rule** pane, select the **Actions** tab, and select **Create action group**. The **Create an action group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -93,7 +93,7 @@ To trigger an alert, you need to delete the Linux VM machine that you created in
 
 1. Select **Delete** from the menu bar.
 
-1. To confirm the deletion, type **Yes** in the confirmation box and select **Delete**.
+1. To confirm the deletion, type **yes** in the confirmation box and select **Delete**.
 
 1. In the title bar, select the **Notifications** icon and wait until **vm1** is successfully deleted.
 

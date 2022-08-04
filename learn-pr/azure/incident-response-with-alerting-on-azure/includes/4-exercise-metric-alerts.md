@@ -67,9 +67,9 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
     | Aggregation granularity (Period) | 1 minute |
     | Frequency of evaluation | Every 1 Minute |
 
-1. Select **Done**.
-
     :::image type="content" source="../media/4-metric-alert-logic.png" alt-text="Screenshot that shows the settings for metric condition logic.":::
+
+1. Select **Done**.
 
 1. From the **Create an alert rule** pane, select the **Details** tab. Under the **Alert rule details** section, enter the following values for each setting.
 
