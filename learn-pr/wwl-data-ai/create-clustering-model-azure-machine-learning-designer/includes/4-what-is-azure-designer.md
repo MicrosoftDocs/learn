@@ -21,7 +21,7 @@ An Azure Machine Learning component encapsulates one step in a machine learning 
 You can create data assets on the **Data** page from local files, a datastore, web files, and Open Datasets. These data assets will appear along with standard sample datasets in *designer*'s **Asset Library**. 
 ![Screenshot of the Data page in Azure Machine Learning designer.](../media/data-creation-location.png)
 
-## Azure Machine Learning Jobs 
+## Azure Machine Learning jobs 
 
 An Azure Machine Learning (ML) job executes a task against a specified compute target. Jobs enable systematic tracking for your machine learning experimentation and workflows. Once a job is created, Azure ML maintains a run record for the job. All of your jobs' run records can be viewed in Azure ML studio. 
 

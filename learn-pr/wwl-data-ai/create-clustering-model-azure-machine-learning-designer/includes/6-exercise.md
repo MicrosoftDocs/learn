@@ -43,12 +43,12 @@ The compute cluster will take some time to be created. You can move onto the nex
 
 ## Create a pipeline in designer 
 
-To get started with Azure machine learning designer, first you must create a pipeline. 
+To get started with Azure Machine Learning designer, first you must create a pipeline. 
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), expand the left pane by selecting the three lines icon at the top left of the screen. View the **Designer** page (under **Author**), and select the plus sign to create a new pipeline.
 2. At the top right-hand side of the screen, select **Settings**. If the **Settings** pane is not visible, select the wheel icon next to the pipeline name at the top. 
 3. In **Settings**, you must specify a compute target on which to run the pipeline. Under **Select compute type**, select **Compute cluster**. Then under **Select Azure ML *compute-type***, select the compute cluster you created previously. 
-4. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering**
+4. In **Settings**, under **Draft Details**, change the draft name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering**.
 5. Select the *close icon* on the top right of the **Settings** pane to close the pane. 
 
     ![Screenshot of the Machine Learning Studio Settings pane.](../media/create-pipeline-help.png)

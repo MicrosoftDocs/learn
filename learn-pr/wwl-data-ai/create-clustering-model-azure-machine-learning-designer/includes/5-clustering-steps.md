@@ -10,7 +10,7 @@ Let's follow these four steps as they appear in Azure Designer.
 
 To train a clustering model, you need a dataset that includes multiple observations of the items you want to cluster, including numeric features that can be used to determine similarities between individual cases that will help separate them into clusters.
 
-Azure machine learning designer has several pre-built components that can be used to prepare data for training. These components enable you to clean data, normalize features, join tables, and more. 
+Azure Machine Learning designer has several pre-built components that can be used to prepare data for training. These components enable you to clean data, normalize features, join tables, and more. 
 ![Screenshot of designer components that can be used to prepare data.](../media/prepare-data-example.png)
 
 ## Train model 
