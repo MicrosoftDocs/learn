@@ -15,7 +15,7 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-  - content: What should they do to fix this error?
+  - content: What should your colleague do to fix this error?
     choices:
     - content: Add the `permissions` property to the workflow definition.
       isCorrect: true
@@ -34,18 +34,18 @@ quiz:
     - content: Workload identities can use federated credentials to authenticate.
       isCorrect: true
       explanation: Correct. Federated credentials enable deployment workflows to securely authenticate to Azure Active Directory without you storing any secrets.
-    - content: Workload identities must be created by using the Azure portal.
+    - content: Workload identities must be created through the Azure portal.
       isCorrect: false
-      explanation: Incorrect. Workload identities and federated credentials can be created by using the Azure CLI, Azure PowerShell, or the Azure portal.
+      explanation: Incorrect. Workload identities and federated credentials can be created through the Azure CLI, Azure PowerShell, or the Azure portal.
   - content: You need to create a deployment workflow that deploys your infrastructure to three environments - development, test, and production. Each environment is in a dedicated resource group in three different subscriptions. What should you do?
     choices:
     - content: Create a single workload identity and grant it access to the tenant root management group.
       isCorrect: false
-      explanation: Incorrect. Although this will work, it's not a good practice to use a single workload identity for all of your environments. Additionally, granting access to your tenant root management group will allow the workload identity to modify resources anywhere in your Azure environment, which is unnecessarily permissive.
+      explanation: Incorrect. Although this will work, using a single workload identity for all of your environments is not a good practice. Additionally, granting access to your tenant root management group will allow the workload identity to modify resources anywhere in your Azure environment, which is unnecessarily permissive.
     - content: Create a single workload identity and grant it access to each of the resource groups in the three subscriptions.
       isCorrect: false
-      explanation: Incorrect. Although this will work, it's not good practice to use a single workload identity for all of your environments. At the very least, you should separate production and non-production environments by using two workload identities, but a dedicated workload identity for each environment is ideal.
-    - content: Create three workload identities, one per environment, and grant each access to a single resource group in the relevant subscription.
+      explanation: Incorrect. Although this will work, using a single workload identity for all of your environments is not a good practice. At the very least, you should separate production and non-production environments by using two workload identities. But a dedicated workload identity for each environment is ideal.
+    - content: Create three workload identities, one per environment, and grant each identity access to a single resource group in the relevant subscription.
       isCorrect: true
       explanation: Correct. When you work with multiple environments, it's best to use dedicated workload identities for each environment so that your deployment workflow can't accidentally change anything in another environment.
   - content: You're creating a workload identity to run a deployment workflow. The workflow deploys a Bicep file that creates a single storage account. Which of the following options has the least privileged access that you need for your workflow?
@@ -59,7 +59,7 @@ quiz:
         **Role definition:** Contributor<br />
         **Scope:** Resource group
       isCorrect: true
-      explanation: Correct. The Contributor role is a good one to use. Additionally, it's a good practice to grant it over the resource group, which is all that this workflow needs.
+      explanation: Correct. The Contributor role is a good one to use. Granting it over the resource group is a good practice and is all that this workflow needs.
     - content: |
         **Role definition:** Owner<br />
         **Scope:** Resource group
