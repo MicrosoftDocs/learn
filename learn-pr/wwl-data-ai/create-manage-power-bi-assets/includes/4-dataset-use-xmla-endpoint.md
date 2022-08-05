@@ -24,6 +24,12 @@ With read-write enabled, datasets have more parity with Azure Analysis Services 
 > [!IMPORTANT]
 > In order to use XMLA endpoint for read-write operations, the dataset must reside in a Premium or Premium Per User (PPU) workspace.
 
+Some common uses of the XMLA endpoint in Power BI are:
+
+- Refreshing individual components of a data model.
+- Systematically exporting data from the data model.
+- Automating the use of the Best Practice Analyzer.
+
 ## Enable read-write connectivity
 
 To set XMLA endpoint connectivity setting for all workspaces and datasets assigned to a **Premium capacity**:

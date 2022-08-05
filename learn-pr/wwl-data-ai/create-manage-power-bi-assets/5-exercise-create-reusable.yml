@@ -4,13 +4,14 @@ title: 'Exercise: Create reusable Power BI assets'
 metadata:
   title: 'Exercise: Create reusable Power BI assets'
   description: "Exercise: Create reusable Power BI assets"
-  ms.date: 08/04/2022
+  ms.date: 08/05/2022
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labModal: false
-durationInMinutes: 3
+labId: 124447
+labModal: true
+durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-create-reusable.md)]
