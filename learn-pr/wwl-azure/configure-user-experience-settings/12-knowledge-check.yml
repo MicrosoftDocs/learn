@@ -38,4 +38,4 @@ quiz:
       explanation: "That's incorrect. What is multifactor authentication (MFA)? Multifactor authentication (MFA) adds a layer of protection to the sign-in process. When accessing accounts or apps, users provide additional identity verification, such as scanning a fingerprint or entering a code received by phone."
     - content: "Re-register App groups AppRemoteGR1 and AppRemoteGR2"
       isCorrect: false
-      explanation: "That's incorrect. Re-registering App groups will not prevent users from copying and pasting content. You should set the following RDP property to disable clipboard redirection: redirectclipboard:i:0."
+      explanation: "That's incorrect. Re-registering App groups won't prevent users from copying and pasting content. You should set the following RDP property to disable clipboard redirection: redirectclipboard:i:0."
