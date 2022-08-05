@@ -14,7 +14,7 @@ Measuring emitted carbon is a complex challenge, with parts of the stack that ne
 
 Because of the variability of carbon intensity and other dependencies, the total carbon emitted may change depending on the time of day or region the application is run.
 
-The same application measured at different times will result in different amounts of carbon. This change could be a good signal, especially if you are open to demand-shifting workloads, or it could be noise if you are focusing on energy optimizations.
+The same application measured at different times will result in different amounts of carbon. This change could be a good signal, especially if you're open to demand-shifting workloads, or it could be noise if you're focusing on energy optimizations.
 
 ## Energy
 
@@ -36,7 +36,7 @@ At some point, the cost of electricity and hardware is factored into most servic
 
 ## Networking
 
-The carbon-cost of networking is often not considered. Networking consumes electricity and requires hardware, so it is a proxy for carbon.
+The carbon-cost of networking is often not considered. Networking consumes electricity and requires hardware, so it's a proxy for carbon.
 
 Measuring and then reducing the amount and distance your data must travel is a good proxy for reducing carbon.
 
