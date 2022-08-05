@@ -6,7 +6,7 @@ For personal host pools, Start VM On Connect will only turn on an existing sessi
 
 The time it takes for a user to connect to a session host VM that is powered off (deallocated) increases because the VM needs time to turn on again, much like turning on a physical computer. The Remote Desktop client has an indicator that lets the user know the VM is being powered on while they're connecting.
 
-You can only configure Start VM on Connect on existing host pools. You can't enable it at the same time you create a new host pool.<br>
+You can only configure Start VM on Connect on existing host pools. You can't enable it at the same time you create a new host pool.
 
 The following Remote Desktop clients support Start VM on Connect:
 
@@ -15,7 +15,7 @@ The following Remote Desktop clients support Start VM on Connect:
  -  The Android client (version 10.0.10 or later)
  -  The macOS client (version 10.6.4 or later)
  -  The iOS client (version 10.2.5 or later)
- -  Thin clients listed in Thin client support<br>
+ -  Thin clients listed in Thin client support
 
 If you want to configure Start VM on Connect using PowerShell, you'll need to have the Az.DesktopVirtualization PowerShell module (version 2.1.0 or later) installed on the device.
 
