@@ -17104,6 +17104,26 @@
       "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/8-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/9-troubleshoot-user-profile-issues.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/10-troubleshoot-user-profile-issues",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/10-troubleshoot-azure-virtual-desktop-clients.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/11-troubleshoot-azure-virtual-desktop-clients",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/12-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/13-summary",
+      "redirect_document_id": true
     }
   ]
 }
