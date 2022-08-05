@@ -1,6 +1,6 @@
 Azure Monitor can use thresholds to monitor specific resources. In an organization, it's far more useful to be notified when the free disk space on a server is less than 5 percent, instead of being alerted every time a file is saved.
 
-As a solution architect, you want to implement regular threshold monitoring for a number of your target resources and instances. Monitoring will help to head off potential issues before they can affect your customers.
+As a solution architect, you want to implement regular threshold monitoring for many of your target resources and instances. Monitoring will help to head off potential issues before they can affect your customers.
 
 In this unit, you'll investigate the different kinds of metric alerts that Azure Monitor supports.
 
@@ -12,7 +12,7 @@ Metric alerts can be useful if, for instance, you need to know when your server 
 
 ## Composition of a metric alert
 
-As you learned in the previous unit, all alerts are governed by their rules. For metric alerts, there's an additional factor to define: the condition type. It can be static or dynamic.
+As you learned in the previous unit, all alerts are governed by their rules. For metric alerts, there's another factor to define: the condition type. It can be static or dynamic.
 
 You must define the type of statistical analysis to be used with either static or dynamic metric alerts. Example types are minimum, maximum, average, and total. In this example, you define the period of data to be assessed: the last 10 minutes. Finally, you set the frequency by which the alert conditions are checked: every 2 minutes.
 
