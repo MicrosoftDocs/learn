@@ -40,6 +40,9 @@ The company already requires MFA, but many remote employees use either a voice c
    
 You need to research the security differences between available authentication options and determine a way to help remote employees switch. Then you'll want to prepare your Microsoft 365 environment and validate the experience for users. 
 
+:::image type="content" border="true" source="./media/methods.png" alt-text="Table showing relative security of different authentication methods.":::
+
+
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
     Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
