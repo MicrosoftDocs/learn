@@ -17,7 +17,7 @@ Therefore the total carbon cost will be <nobr>320 + (0.276 \* 1760.3) = 805 kg</
 
 ## Don't waste hardware
 
-By the time you buy a computer, it's already emitted a whole load of carbon. Computers also have an expiry date; they get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Sustainable Software Engineers we must be hardware efficient if our goal is to be **carbon-efficient**.
+By the time you buy a computer, it's already emitted a whole load of carbon. Computers also have an expiry date; they get old, can't handle modern workloads, and need to be refreshed. If you think about it in this way, hardware is then a proxy for carbon, so as Sustainable Software Engineers we must be hardware efficient if our goal is to be **carbon-efficient**.
 
 You can do many things to be hardware efficient, but one thing you can do is help extend the expiry date on hardware. Computers don't wear out, there are no moving parts; they just become obsolete. They become obsolete because we are continually creating software that pushes limits.
 
