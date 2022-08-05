@@ -16,7 +16,7 @@ You use these types of logs to assess if any of your servers have exceeded their
 
 Log alerts behave in a slightly different way from other alert mechanisms. The first part of a log alert defines the log search rule. The rule defines how often it should run, the time period under evaluation, and the query to be run.
 
-When a log search evaluates as positive, an alert record is created and any associated actions are triggered.
+When a log search evaluates as positive, an alert record is created, and any associated actions are triggered.
 
 ## Composition of log search rules
 
@@ -52,4 +52,4 @@ As you can see, metric measurements greatly reduce the volume of alerts that are
 
 ## Stateless nature of log alerts
 
-One of the primary considerations when you're evaluating the use of log alerts is that they're stateless (stateful log alerts are [currently in preview](/azure/azure-monitor/alerts/alerts-types#log-alerts)). This means that a log alert will generate new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
+One of the primary considerations when you're evaluating the use of log alerts is that they're stateless (stateful log alerts are [currently in preview](/azure/azure-monitor/alerts/alerts-types#log-alerts)). A stateless log alert will generate new alerts every time the rule criteria are triggered, regardless of whether the alert was previously recorded.
