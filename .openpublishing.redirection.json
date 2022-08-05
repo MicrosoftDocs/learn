@@ -17014,6 +17014,51 @@
       "source_path": "learn-pr/wwl-data-ai/explore-causes-performance-issues/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/explore-query-performance-optimization/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-networking-azure-virtual-desktop/12-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-manage-networking-azure-virtual-desktop/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-manage-networking-azure-virtual-desktop/13-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/9-troubleshoot-application-issues-user-input-delay.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/10-troubleshoot-application-issues-user-input-delay",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/11-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/12-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/5-demonstration-configure-apps-for-users.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/6-demonstration-configure-apps-for-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/7-microsoft-teams-azure-virtual-desktop.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/8-microsoft-teams-azure-virtual-desktop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/8-publish-apps-azure-virtual-desktop.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/9-publish-apps-azure-virtual-desktop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/6-onedrive-sync-app-virtual-desktops.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/7-onedrive-sync-app-virtual-desktops",
+      "redirect_document_id": true
     }
   ]
 }

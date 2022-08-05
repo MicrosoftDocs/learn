@@ -2,7 +2,7 @@ You can configure Azure Load Balancer by using the Azure portal, PowerShell, or 
 
 In your healthcare organization, you want to load-balance client traffic to provide a consistent response based on the health of the patient portal web servers. You have two virtual machines (VMs) in an availability set to act as your healthcare portal web application.
 
-Here, you will create a load balancer resource and use it to distribute a load across the VMs.
+Here, you'll create a load balancer resource and use it to distribute a load across the VMs.
 
 ## Deploy the patient portal web application
 
@@ -13,7 +13,7 @@ First, deploy your patient portal application across two virtual machines in a s
 
 To deploy the patient portal web application:
 
-1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. You then change to the directory of the cloned repo.
+1. Run the following `git clone` command in Azure Cloud Shell. The command clones the repo that contains the source for the app and runs the setup script from GitHub. You'll then change to the directory of the cloned repo.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-improve-app-scalability-resiliency-with-load-balancer.git
@@ -52,8 +52,10 @@ Now, let's create the load balancer.
     | **Instance details** |
     | Name | Enter a unique name. For example, *Pub-LB-PatientsPortal*. |
     | Region | Select the location where the VMs were created. |
-    | Type | **Public** |
     | SKU | **Basic** |
+    | Type | **Public** |
+    | Tier | **Regional** |
+
 
 ## Add a front-end IP configuration
 
@@ -67,15 +69,14 @@ Now, let's create the load balancer.
     | Name | Enter a unique name for the front-end IP address. |
     | IP version | IPv4 |
     | Public IP address | Select **Create new** link. In the **Add a public IP address** dialog box that appears, enter a unique name for the public IP address. For example, *Pub-LB-PatientsPortal-IP*. |
-    | Assignment | **Static** |
 
 1. To close the dialog box, select **OK**. The **Add frontend IP address** pane reappears. Select **Add**.
-
-    ![Enter details on the Create load balancer page.](../media/4-create-details-lb.png)
 
 1. Select **Review + create**.
 
 1. When validation passes, select **Create**.
+
+    ![Screenshot that shows how to enter details on the Create load balancer page.](../media/4-create-details-lb.png)
 
 ## Add a back-end pool
 
