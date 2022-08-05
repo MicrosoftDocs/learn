@@ -75,7 +75,7 @@ Identify the subtasks of module title.
 
 7. Summary
 
-   Our finance team needed to notify our customers of their upcoming obligations before the due date. We need to build a Python console app that represents a confidential client app that calls Microsoft Graph as itself to read customer data from a resource. The Microsoft identity platform lets us register a Python console app to perform identity and access management (IAM). The Azure portal displays the app registration's Overview pane. We see the Application (client) ID. Also called the client ID, this value uniquely identifies our application in the Microsoft identity platform. We used Microsoft Authentication Library (MSAL) for Python to create a client confidential application. Finally, we use API model in MSAL to explicit control on how to utilize token cache and call the Microsoft Graph.
+   Our finance team needed to notify our customers of their upcoming obligations before the due date. We built a Python console app that represents a confidential client app that calls Microsoft Graph as itself to read customers data from a resource. The Microsoft identity platform lets us register a Python console app to perform identity and access management (IAM). The Azure portal displays the app registration's Overview pane. We see the Application (client) ID. Also called the client ID, this value uniquely identifies our application in the Microsoft identity platform. We used Microsoft Authentication Library (MSAL) for Python to create a client confidential application. Finally, we use API model in MSAL to explicit control on how to utilize token cache and call the Microsoft Graph.
 
 ## Notes
 
