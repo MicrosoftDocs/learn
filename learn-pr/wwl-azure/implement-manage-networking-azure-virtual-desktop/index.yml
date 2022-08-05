@@ -3,7 +3,7 @@ uid: learn.wwl.implement-manage-networking-for-azure-virtual-desktop
 metadata:
   title: Implement and manage networking for Azure Virtual Desktop
   description: "Implement and manage networking for Azure Virtual Desktop"
-  ms.date: 03/29/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -38,6 +38,10 @@ units:
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.network-security
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.configure-avd-session-hosts-using-azure-bastion
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.monitor-and-troubleshoot-network-connectivity
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.plan-implement-remote-desktop-protocol-shortpath
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.configure-remote-desktop-protocol-shortpath-managed-networks
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.configure-windows-defender-firewall-advanced-security
+- learn.wwl.implement-manage-networking-for-azure-virtual-desktop.plan-implement-quality-service-azure-virtual-desktop
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.knowledge-check
 - learn.wwl.implement-manage-networking-for-azure-virtual-desktop.Summary
 badge:

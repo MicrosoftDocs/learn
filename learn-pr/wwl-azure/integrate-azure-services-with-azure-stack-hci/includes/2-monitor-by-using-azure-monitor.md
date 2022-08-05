@@ -68,3 +68,8 @@ You can also use Windows Admin Center to onboard individual Windows servers, inc
 In this demonstration, you'll learn how to onboard an Azure Stack HCI cluster to Azure Monitor.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RWDCns]
+
+---
+
+
+---

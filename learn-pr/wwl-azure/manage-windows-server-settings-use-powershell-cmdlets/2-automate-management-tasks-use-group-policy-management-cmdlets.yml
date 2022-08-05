@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-server-settings-use-powershell-cmdlets.automate-management-tasks-use-group-policy-management-cmdlets
+title: Automate management tasks using the Group Policy management cmdlets
+metadata:
+  title: Automate management tasks using the Group Policy management cmdlets
+  description: "Automate management tasks using the Group Policy management cmdlets"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-automate-management-tasks-use-group-policy-management-cmdlets.md)]

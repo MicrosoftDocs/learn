@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.define-scheduled-jobs
+title: Define scheduled jobs in Windows PowerShell
+metadata:
+  title: Define scheduled jobs in Windows PowerShell
+  description: "Define scheduled jobs in Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-define-scheduled-jobs.md)]

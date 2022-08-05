@@ -40,8 +40,8 @@ To change the state, select **Change smart group state**.
 The states are:
 
 - **New**: The smart group has been created with a collection of alerts, but it hasn't yet been addressed.
-- **Acknowledged**: When an admin starts the resolution process, they change the state to this.
-- **Closed**: When the source of the alert is fixed, the admin changes the state to this.
+- **Acknowledged**: When an admin starts the resolution process, they change to this state.
+- **Closed**: When the source of the alert is fixed, the admin changes to this state.
 
 ![Screenshot that shows how smart groups can have states for individual alerts.](../media/8-smart-group-different-states.png)
 

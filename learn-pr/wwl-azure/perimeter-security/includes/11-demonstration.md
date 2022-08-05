@@ -4,7 +4,7 @@ An individual Azure subscription is required to perform the tasks. To subscribe,
 
 This lab requires two virtual machines.Each virtual machine should be in a different virtual network. For these instructions, we have AZ500vm01, AZ500vm02, AZ500-vnet, AZ500-vnet1, and az500-rg.
 
-To save time, you can connect to each virtual machine. Also, it might helpful to edit the default.htm page on each machine, so the page provides the virtual machine name. For example, This is AZ500vm01.
+To save time, you can connect to each virtual machine. Also, it might be helpful to edit the default.htm page on each machine, so the page provides the virtual machine name. For example, This is AZ500vm01.
 
 In this demonstration, you will configure and test VNet peering.
 
@@ -25,10 +25,10 @@ In this task, you will review the infrastructure that has been configured for th
 In this task, you will test connecting from AZ500vm01 to AZ500vm02's private IP address. This connection will not work. The virtual machines are in different virtual networks.
 
 1.  Use RDP to connect to **AZ500vm01**.
-2.  In a **browser**, view the **http://localhost.default.htm** page.
+2.  In a **browser**, view the `http://localhost.default.htm` page.
 3.  This page should display without error.
 4.  Use RDP to connect to **AZ500vm02**
-5.  In a **browser**, view the **http://localhost.default.htm** page.
+5.  In a **browser**, view the `http://localhost.default.htm` page.
 6.  This page should display without error.
 7.  The above steps show that IIS is working on the virtual machines.
 8.  Return to your **AZ500vm01** RDP session.

@@ -2,7 +2,7 @@ In this unit, you'll create a form in the *RazorPagesPizza* project using Razor 
 
 ## Create a page
 
-The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET CLI command in the command shell:
+The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET CLI command in the terminal:
 
 ```dotnetcli
 dotnet new page --name Pizza --namespace RazorPagesPizza.Pages --output Pages
@@ -21,19 +21,19 @@ Note that there's nothing magical about using the CLI to create these files. You
 
 1. Open the new *Pages/Pizza.cshtml* Razor page. Examine the file's markup:
 
-	```cshtml
-	@page
-	@model RazorPagesPizza.Pages.PizzaModel
-	@{
-	}
-	```
+    ```cshtml
+    @page
+    @model RazorPagesPizza.Pages.PizzaModel
+    @{
+    }
+    ```
 
     The preceding Razor page contains reserved Razor keywords:
 
     * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
     * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class name, prefixed with its namespace. As you recall, that class is defined in *Pages/Pizza.cshtml.cs*.
 
-## Render HTML and transition to C#
+## Render HTML and transition to C\#
 
 The following markup is an example of an `@` symbol followed by C# code. The code sets the `ViewData` collection's `Title` key value to `Create`. Razor syntax uses the `@` symbol to transition from HTML to C#. If the `@` symbol is followed by a Razor reserved keyword, it transitions into Razor-specific markup; otherwise, it transitions to C#. Razor evaluates the C# expressions and renders them in the HTML output.
 
@@ -59,7 +59,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
     mkdir Models
     ```
 
-    Select the `Models` folder in Visual Studio Code and add a new File called `Pizza.cs`.
+    Select the `Models` folder in the file explorer and add a new File called `Pizza.cs`.
 
     The project root now contains a *Models* directory with an empty *Pizza.cs* file. The directory name *Models* is a convention.
 
@@ -86,8 +86,6 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
     public enum PizzaSize { Small, Medium, Large }
     ```
 
-    [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
-
 ## Add data service
 
 1. Run the following command in your project's root directory to create a `Services` folder:
@@ -96,7 +94,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
     mkdir Services
     ```
 
-    Select the folder in Visual Studio Code and add a new File called `PizzaService.cs`.
+    Select the folder in the file explorer and add a new file called `PizzaService.cs`.
 
 1. Add the following code to *Services/PizzaService.cs* to create an in-memory pizza data service. Save your changes.
 
@@ -144,7 +142,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
             Pizzas[index] = pizza;
         }
-                    }
+    }
     ```
 
     This service provides a simple in-memory data caching service with two pizzas by default that your web app will use for demo purposes. When you stop and start the web app, the in-memory data cache will be reset to the two default pizzas from the constructor of the `PizzaService`.
@@ -208,8 +206,6 @@ Replace the contents of *Pages/Pizza.cshtml* with the following markup. Save you
 <partial name="_ValidationScriptsPartial" />
 }
 ```
-
-[!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
 The *Pizza* Razor page uses HTML and Razor to support a product creation form. The form accepts **Name** and **Price** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *Pages/Shared/_ValidationScriptsPartial.cshtml* partial view. The partial view's contents are injected into the layout page's `Scripts` section.
 
