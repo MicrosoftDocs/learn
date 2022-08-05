@@ -7,7 +7,7 @@ Use the same application model, self-service portals, and APIs with Azure Resour
 
 This unit summarizes the differences between global Azure, Azure Stack Hub, and Azure Stack HCI capabilities. It provides common scenario recommendations to help you make the best choice for delivering Microsoft cloud-based services for your organization.
 
-:::image type="content" source="../media/stack-overview-image-large-2-0cf17c6d.png" alt-text="Diagram shows Azure Stack portfolio.":::
+:::image type="content" source="../media/stack-overview-image-large-3-ed4ef000.png" alt-text="Diagram shows Azure Stack portfolio.":::
 
 
 ## Azure Stack portfolio
