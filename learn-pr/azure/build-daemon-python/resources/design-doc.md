@@ -1,6 +1,6 @@
 # Title
 
-Authenticate a Python daemon app using the Microsoft identity platform
+Build a Python daemon app calling a protected API using the Microsoft identity platform
 
 ## Role(s)
 
@@ -23,14 +23,13 @@ Intermediate
 
 ## Summary
 
-Create a Python a daemon app that authenticates using the Microsoft identity platform. You'll register an app in your Azure AD tenant, add a client secret, authenticate your app and call a protected web API.
+Create a Python a daemon app that authenticates using the Microsoft identity platform. You'll register an app in your Azure AD tenant, add a client secret, acquire token from your app and call a protected web API.
 
 ## Learning objectives
 
 By the end of this module, you'll be able to:
 
 1. Register a daemon app in an Azure AD tenant.
-1. Authenticate a Python daemon app in an Azure AD tenant.
 1. Call a protected web API from an authenticated Python daemon app.
 
 ## Chunk your content into subtasks
@@ -41,7 +40,7 @@ Identify the subtasks of module title.
 
 1. Introduction
 
-   Suppose you work at a financial technology company as a software developer. Your company is looking to develop an automated service to help customers pay their obligations on time by sending a notification before the due date. Your company uses Python to develop applications. You've been tasked with the responsibility of building an application that runs in the background to call a protected resource.
+   Suppose you work at a financial technology company as a software developer. Your company is looking to develop an automated service to help customers pay their obligations on time by sending a notification before the due date. Your company uses Python to develop applications. You've been tasked with the responsibility of building an application that runs in the background to call a protected web API.
 
 2. Authentication and authorization in Azure AD
 
