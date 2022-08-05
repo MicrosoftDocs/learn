@@ -1,6 +1,6 @@
 In this unit, you'll get a brief overview about how you can use Azure Artifacts to securely create and manage packages that your apps can consume.
 
-Let's check back in with the the team as they decide whether Azure Artifacts is the appropriate way to host their .NET package.
+Let's check back in with the team as they decide whether Azure Artifacts are the appropriate way to host their .NET package.
 
 **Mara:** It seems to me it would make sense for us to host the new Models package in Azure Artifacts. We're all part of the Microsoft Azure DevOps organization already, so authentication would be easier than trying to set it up on a different package manager.
 
@@ -12,13 +12,13 @@ Let's check back in with the the team as they decide whether Azure Artifacts is 
 
 ## How do I create a package and use it in the pipeline?
 
-**Tim:** So if I am understanding right, the app code uses packages from NuGet already. We're going to create our own package and host it in Azure Artifacts. Can you draw out the pieces and how they'll work together? I'm having a hard time picturing the whole process.
+**Tim:** So if I'm understanding right, the app code uses packages from NuGet already. We're going to create our own package and host it in Azure Artifacts. Can you draw out the pieces and how they'll work together? I'm having a hard time picturing the whole process.
 
 **Andy:** Sure. Let's go over the process of creating a package and using it in our Azure DevOps pipeline.
 
 Andy moves to the whiteboard.
 
-:::image type="content" source="../media/2-azure-artifacts-whiteboard.png" alt-text="A whiteboard diagram showing the steps to create and use a package.":::
+:::image type="content" source="../media/2-azure-artifacts-whiteboard.png" alt-text="Screenshot of a  whiteboard diagram showing the steps to create and use a package.":::
 
 ### Create the package
 
@@ -44,13 +44,13 @@ Our app might want to use this newer version of the package. In that case, we up
 
 When you use a build pipeline, packages need versions before they can be consumed and tested. However, only after you've tested the package can you know its quality. Because package versions should never be changed, it becomes challenging to choose a certain version beforehand.
 
-Azure Artifacts associates a quality level with each package in its feeds, as well as distinguishing between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include additional metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and not ready for public consumption.
+Azure Artifacts associates a quality level with each package in its feeds, and distinguishing between prerelease and release versions. Azure Artifacts offers different views on the list of packages and their versions, which separate them based on their quality level. This approach works well with semantic versioning, which is useful for predicting the intent of a particular version. Azure Artifacts also uses a descriptor to include additional metadata from the Azure Artifacts feed. A common use for views is to share package versions that have been tested, validated, or deployed but hold back packages still under development and not ready for public consumption.
 
 Feeds in Azure Artifacts have three different views by default. These views are added at the moment a new feed is created. The three views are:
 
 * Release. The @release view contains all packages that are considered official releases.
 * Prerelease. The @prerelease view contains all packages that have a label in their version number.
-* Local. The @local view contains all release and prerelease packages as well as the packages downloaded from upstream sources.
+* Local. The @local view contains all release and prerelease packages and the packages downloaded from upstream sources.
 
 You can use views to help consumers of a package feed to filter between released and unreleased versions of packages. Essentially, views allow a consumer to make a conscious decision to choose from released packages, or opt-in to prereleases of a certain quality level.
 
@@ -66,4 +66,4 @@ Feeds have four levels of access: Owners, Contributors, Collaborators, and Reade
 
 There are several tools available from third parties to help you assess the security and license rating of the software packages you use.
 
-Some of these tools scan the packages as they are included in the build or CD pipeline. During the build process, the tool scans the packages and gives instantaneous feedback. During the CD process, the tool uses the build artifacts and performs scans. Two examples of such tools are [WhiteSource Bolt](https://bolt.whitesourcesoftware.com/?azure-portal=true) and [Black Duck](https://www.blackducksoftware.com/?azure-portal=true). With Azure DevOps, you use build tasks to incorporate scanning into your pipeline.
+Some of these tools scan the packages as they're included in the build or CD pipeline. During the build process, the tool scans the packages and gives instantaneous feedback. During the CD process, the tool uses the build artifacts and performs scans. Two examples of such tools are [WhiteSource Bolt](https://bolt.whitesourcesoftware.com/?azure-portal=true) and [Black Duck](https://www.blackducksoftware.com/?azure-portal=true). With Azure DevOps, you use build tasks to incorporate scanning into your pipeline.

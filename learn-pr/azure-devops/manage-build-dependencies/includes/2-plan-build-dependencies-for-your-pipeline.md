@@ -1,4 +1,4 @@
-In this unit, you'll learn about packaging code to make it easier to share. You'll discover why you should make packages, what kinds of packages you can create, where you can host the packages, and how you access them when they are hosted. You'll also learn about package versioning.
+In this unit, you'll learn about packaging code to make it easier to share. You'll discover why you should make packages, the kinds of packages that you can create, where you can host the packages, and how you can access them when they're hosted. You'll also learn about package versioning.
 
 Codebases are always growing larger and more complex. It's unusual for a team to write all the code that their app uses. Instead, the team includes existing code written by other developers and there can be many of these packages, or dependencies, in an app. It's important to actively manage these dependencies to be able to maintain them properly and make sure they meet security requirements.
 
@@ -28,7 +28,7 @@ A _package_ contains reusable code that other developers can use in their own pr
 
 For compiled languages, a package typically contains the compiled binary code, such as .dll files in .NET, or .class files in Java. For languages that are interpreted instead of compiled, such as JavaScript or Python, a package might include source code.
 
-Either way, packages are typically compressed to ZIP or a similar format. Package systems will often define a unique file extension, such as .nupkg or .jar, to make the package's use clear. Compression can help reduce download time, and also produces a single file to make management simpler.
+Either way, packages are typically compressed to ZIP or a similar format. Package systems will often define a unique file extension, such as *.nupkg* or *.jar*, to make the package's use clear. Compression can help reduce download time, and also produces a single file to make management simpler.
 
 Packages also often contain one or more files that provide metadata, or information, about the package. This metadata might describe what the package does, specify its license terms, the author's contact information, and the package's version.
 
@@ -42,15 +42,15 @@ Packages also group related functionality into one reusable component. Depending
 
 Another reason to build a package is to provide a consistent way to build and test that package's functionality. When code is duplicated, each app might build and test that code in different ways. One set of tests might include checks that another set could benefit from.
 
-One tradeoff is that with a package, you have another codebase to test and maintain. You must also be careful when adding features. Generally speaking, a package should contain features that benefit many kinds of apps. For example, [Json.NET](https://www.newtonsoft.com/json?azure-portal=true) is an extremely popular NuGet package for .NET that enables you to work with JSON files. Json.NET is open source, so the community can propose improvements and report issues.
+One tradeoff is that with a package, you have another codebase to test and maintain. You must also be careful when adding features. Generally speaking, a package should contain features that benefit many kinds of apps. For example, [Json.NET](https://www.newtonsoft.com/json?azure-portal=true) is an popular NuGet package for .NET that enables you to work with JSON files. Json.NET is open source, so the community can propose improvements and report issues.
 
 When multiple apps can benefit from the same code, the advantages far outweigh the disadvantages. You have just one codebase, just one set of tests, and just one build process to manage.
 
 ## How can I identify dependencies?
 
-If the goal is to reorganize your code into separate components, you need to identify those pieces of your app that can be removed, packaged to be reusable, stored in a central location, and versioned. You may even want to replace your own code with third-party components that are either open source or that you license.
+If the goal is to reorganize your code into separate components, you need to identify those pieces of your app that can be removed, packaged to be made reusable, stored in a central location, and versioned. You may even want to replace your own code with third-party components that are either open source or that you license.
 
-There are a number of ways to identify the potential dependencies in your codebase. These include scanning your code for patterns of reuse, as well as analyzing the architecture of your solution. Here are some ways to identify dependencies:
+There are many ways to identify the potential dependencies in your codebase. These include scanning your code for patterns of reuse, and analyzing the architecture of your solution. Here are some ways to identify dependencies:
 
 * Duplicate code.
 
@@ -72,7 +72,7 @@ There are a number of ways to identify the potential dependencies in your codeba
 
     Whenever code and components are independent and unrelated to other parts of the system, they can potentially be isolated into separate dependencies.
 
-You can use a variety of tools to assist you in scanning and examining your codebase. These range from tools that scan for duplicate code and draw solution dependency graphs to tools that can compute metrics for coupling and cohesion.
+You can use various tools to assist you in scanning and examining your codebase. These range from tools that scan for duplicate code and draw solution dependency graphs to tools that can compute metrics for coupling and cohesion.
 
 ## What kinds of packages are there?
 

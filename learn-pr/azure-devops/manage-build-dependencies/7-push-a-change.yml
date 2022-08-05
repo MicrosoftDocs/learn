@@ -4,7 +4,8 @@ title: Exercise - Push a change to your package
 metadata:
   title: Exercise - Push a change to your package
   description: Practice the entire process by pushing a change to the package, and then updating the application to use the new package.
-  ms.date: 05/28/2021
+  ms.custom: devdivchpfy22
+  ms.date: 08/05/2022
   author: ramiMSFT
   ms.author: rabououn
   ms.topic: interactive-tutorial
