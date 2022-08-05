@@ -31,10 +31,12 @@ subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribu
   - cloud-computing
 units:
 - learn.manage-data-assets-in-microsoft-purview-data-catalog.introduction
-- learn.manage-data-assets-in-microsoft-purview-data-catalog.learning-content
-- learn.manage-data-assets-in-microsoft-purview-data-catalog.exercise
-- learn.manage-data-assets-in-microsoft-purview-data-catalog.learning-content
-- learn.manage-data-assets-in-microsoft-purview-data-catalog.exercise
+- learn.manage-data-assets-in-microsoft-purview-data-catalog.what-is-the-data-catalog
+- learn.manage-data-assets-in-microsoft-purview-data-catalog.browse-and-search-exercise
+- learn.manage-data-assets-in-microsoft-purview-data-catalog.manage-assets
+- learn.manage-data-assets-in-microsoft-purview-data-catalog.manage-assets-exercise
+- learn.manage-data-assets-in-microsoft-purview-data-catalog.business-glossary
+- learn.manage-data-assets-in-microsoft-purview-data-catalog.business-glossary-exercise
 - learn.manage-data-assets-in-microsoft-purview-data-catalog.knowledge-check
 - learn.manage-data-assets-in-microsoft-purview-data-catalog.summary
 badge:
