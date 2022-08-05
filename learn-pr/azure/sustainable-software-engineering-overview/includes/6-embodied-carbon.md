@@ -1,6 +1,6 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwTWD]
 
-The device you are reading this document on released some carbon in its creation; once it reaches the end of life, disposing of it may release more. Embodied carbon (otherwise referred to as "Embedded Carbon") is the amount of carbon pollution emitted during the creation and disposal of a device. When calculating the total carbon pollution for the computers running your software, account for both the carbon pollution to run the computer and the computer's embodied carbon.
+The device on which you are reading this document released some carbon in its creation; once it reaches the end of life, disposing of it may release more. Embodied carbon (otherwise referred to as "Embedded Carbon") is the amount of carbon pollution emitted during the creation and disposal of a device. When calculating the total carbon pollution for the computers running your software, account for both the carbon pollution to run the computer and the computer's embodied carbon.
 
 ## Embodied carbon is significant
 
@@ -12,14 +12,14 @@ Therefore the total carbon cost will be <nobr>320 + (0.276 \* 1760.3) = 805 kg</
 
 > [!NOTE]
 >
-> The embodied carbon cost is often much higher for consumer devices, sometimes more significant than the lifetime carbon cost from electricity consumption. For an example, see _[Smartphones Are Killing The Planet Faster Than Anyone Expected](https://www.fastcompany.com/90165365/smartphones-are-wrecking-the-planet-faster-than-anyone-expected)_.
+> The embodied carbon cost is often much higher for consumer devices, sometimes more significant than the lifetime carbon cost from electricity consumption. For an example, see *[Smartphones Are Killing The Planet Faster Than Anyone Expected](https://www.fastcompany.com/90165365/smartphones-are-wrecking-the-planet-faster-than-anyone-expected)*.
 >
 
 ## Don't waste hardware
 
-By the time you buy a computer, it's already emitted a whole load of carbon. They also have an expiry date, computers get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Sustainable Software Engineer, we must be hardware efficient if our goal is to be **carbon-efficient**.
+By the time you buy a computer, it's already emitted a whole load of carbon. Computers also have an expiry date; they get old, can't handle modern workloads, and need to be refreshed. If you think about it this way, hardware is then a proxy for carbon, so as Sustainable Software Engineers we must be hardware efficient if our goal is to be **carbon-efficient**.
 
-You can do many things to be hardware efficient, but one thing you can do is help extend the expiry date on hardware. Computers don't wear out, there are no moving parts, they just become obsolete. They become obsolete because we are continually creating software that pushes limits.
+You can do many things to be hardware efficient, but one thing you can do is help extend the expiry date on hardware. Computers don't wear out, there are no moving parts; they just become obsolete. They become obsolete because we are continually creating software that pushes limits.
 
 ## Extending the lifespan of hardware
 
@@ -33,4 +33,4 @@ By thinking of embodied carbon in this way, any device, even one that is not con
 
 If we apply this concept to the lifespan of the 2019 R640 Dell Server that we discussed earlier, the amortized carbon would drop from <nobr>**320 kg CO<sub>2</sub>eq/year**</nobr> to <nobr>**256 kg CO<sub>2</sub>eq/year**</nobr> if we extended its lifespan over five years instead of four.
 
-Hardware is retired either because it breaks down or because it struggles to handle modern workloads. Software cannot help with the first, however, if we focus on building applications that can run on older hardware, we can help with the second.
+Hardware is retired either because it breaks down or because it struggles to handle modern workloads. Software cannot help with the first; however, if we focus on building applications that can run on older hardware, we can help with the second.

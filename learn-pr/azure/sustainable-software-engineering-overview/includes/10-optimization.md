@@ -1,12 +1,12 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxjVW]
 
-Sustainability isn't one optimization, it's thousands. One piece of advice is to look end-to-end and take it step by step. Often putting in the effort to understand the full stack, from user experience to data center design or electricity grids yield simple solutions that significantly improve carbon efficiency.
+Sustainability isn't one optimization, it's thousands. One piece of advice is to look end-to-end and take it step by step. Often putting in the effort to understand the full stack, from user experience to data center design or electricity grids, yields simple solutions that significantly improve carbon efficiency.
 
 Weigh up the effort required to decarbonize vs. the potential rewards. Just like the broader global sustainability movement, some sectors will be harder to decarbonize than others. In computing, some application domains will be harder to decarbonize than others. Some parts of your application architecture will be harder to decarbonize than others.
 
 The key to success in optimization is to choose a measurement criterion that will give clear signals as to where best to put optimization efforts. For example, is it worthwhile to spend two weeks reducing megabytes from network communication if the database queries cause 10 times more carbon to be emitted?
 
-Rarely, can we directly measure our application's carbon cost, but if we follow a resource chain down and it eventually has a link to carbon emissions, then that is a good proxy for carbon.
+Rarely can we directly measure our application's carbon cost, but if we follow a resource chain down and it eventually has a link to carbon emissions, then that's a good proxy for carbon.
 
 ## Carbon
 
@@ -18,11 +18,11 @@ The same application measured at different times will result in different amount
 
 ## Energy
 
-The energy consumed by your application may vary every time it runs, this change may be something you want to take as an optimization signal, or it may be something you want to control for.
+The energy consumed by your application may vary every time it runs; this change may be something you want to take as an optimization signal, or it may be something you want to control.
 
 The same application run on different hardware may result in different amounts of energy consumed because of the differences in energy efficiency between the hardware components.
 
-Because of the energy proportionality principle, the same application run on the same hardware but at different times may result in different amounts of energy consumed because the utilization of the hardware is different between the two runs. That is, the hardware might be running other applications during the second run, and this changes the hardware's overall energy efficiency.
+Because of the energy proportionality principle, the same application run on the same hardware but at different times may result in different amounts of energy consumed, because the utilization of the hardware is different between the two runs. That is, the hardware might be running other applications during the second run, and this changes the hardware's overall energy efficiency.
 
 Overall, though, creating applications that consume less electricity for the same human-perceptible performance and output is a good proxy for carbon reduction.
 
