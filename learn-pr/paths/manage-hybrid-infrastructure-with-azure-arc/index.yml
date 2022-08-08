@@ -4,8 +4,8 @@ metadata:
   title: Bring Azure innovation to your hybrid environments with Azure Arc
   description: Learn how to work with Azure Arc enabled servers, data services and Kubernetes.
   ms.date: 12/14/2020
-  author: micrum
-  ms.author: micrum
+  author: JnHs
+  ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
