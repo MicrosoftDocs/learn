@@ -10,9 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-You can improve sign-in security by nudging users to set up Microsoft Authenticator whenever they sign in.
+You can improve sign-in security by helping users to set up Microsoft Authenticator whenever they sign in.
 
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
@@ -31,8 +29,6 @@ You can improve sign-in security by nudging users to set up Microsoft Authentica
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
 
 You monitor security compliance for a manufacturer that uses Microsoft 365. In response to recent supply-chain attacks, senior leadership wants to strengthen sign-in security for the company. 
 

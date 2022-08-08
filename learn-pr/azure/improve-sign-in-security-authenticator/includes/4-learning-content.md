@@ -73,6 +73,8 @@ Paragraph (optional)
 Visual (image, table, list)
 Paragraph (optional)
 
+
+You want to see how the registration campaign works for a test user account. After you confirm it works as expected, you plan to run the campaign for the remote employees.  
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->
