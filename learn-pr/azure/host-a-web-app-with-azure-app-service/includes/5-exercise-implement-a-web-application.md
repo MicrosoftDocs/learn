@@ -258,6 +258,13 @@ You can test your application locally in Azure while it was running.
 
 1. Open a second command shell session in a new browser tab  <https://shell.azure.com/>.
 
+1. From your primary command shell session (to the right), run the following commands to activate the virtual environment:
+
+    ```bash
+    cd ..
+    source venv/bin/activate
+    ``` 
+
 1. From your primary command shell session (to the right), run the following commands to start your web application.
 
     ```bash
