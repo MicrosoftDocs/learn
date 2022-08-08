@@ -1,4 +1,4 @@
-In this unit, you learn about some of the factors to consider when you're choosing a build agent. You learn about some of the benefits and limitations of using a Microsoft-hosted agent, as well as what's involved when you set up your own private build agent.
+In this unit, you learn about some of the factors to consider when you're choosing a build agent. You learn about some of the benefits and limitations of using a Microsoft-hosted agent, and what's involved when you set up your own private build agent.
 
 Let's see what's happening with the Tailspin web team. Tim, from operations, wants to learn more about how build agents work in Azure Pipelines. He starts a conversation with our developers, Andy and Mara.
 
@@ -87,7 +87,7 @@ Microsoft-hosted agents have a few limitations, which include:
 * **Interactivity**: You can't sign in to a hosted agent.
 * **File shares**: You can't drop build artifacts to Universal Naming Convention (UNC) file shares.
 
-Although hosted agents are relatively easy to set up, there are some benefits to using your own build agents, aside from the limitations we just described.
+Although hosted agents are relatively easy to set up, there are some benefits to using your own build agents, keeping aside the limitations we just described.
 
 For example, when you use hosted agents, you're sharing infrastructure with other Azure DevOps users. Although it ordinarily takes just seconds to start your build, it can take longer depending on the load on the Microsoft system.
 

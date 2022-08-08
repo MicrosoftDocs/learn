@@ -3,8 +3,9 @@ uid: learn.azdo.host-build-agent.7-summary
 title: Summary
 metadata:
   title: Summary
-  description: This unit summarizes what you've learned and provides additional learning resources.
-  ms.date: 06/04/2021
+  description: This unit summarizes what you've learned and provides more learning resources.
+  ms.custom: devdivchpfy22
+  ms.date: 08/08/2022
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial

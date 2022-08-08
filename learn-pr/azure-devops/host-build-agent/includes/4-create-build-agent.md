@@ -116,7 +116,8 @@ The ability to connect to your build agent enables you to configure it with the 
     echo $IPADDRESS
     ```
 
-1. Create an SSH connection to your VM. At the prompt, enter **yes** to continue connecting.
+1. Create an SSH connection to your VM. In place of $IPADDRESS, enter the IP address you got in 
+   the previous step . At the prompt, enter **yes** to continue connecting.
 
     ```bash
     ssh azureuser@$IPADDRESS
@@ -140,7 +141,7 @@ Recall that your existing build process uses these tools:
 These are the primary tools that the build process requires. To install them, you download and run a shell script from GitHub.
 
 > [!NOTE]
-> The build process uses other tools, such as node-sass, to convert Sass (.scss) files to CSS (.css) files. However, Node.js installs these tools when the build runs.
+> The build process uses other tools, such as node-sass, to convert Sass *(.scss)* files to CSS *(.css)* files. However, Node.js installs these tools when the build runs.
 
 Let's start by updating the Ubuntu package manager, named *apt*. This action fetches the latest information from the package repositories and is ordinarily the first thing you do when you set up a new Ubuntu system.
 
@@ -255,7 +256,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
     export AZP_URL=https://dev.azure.com/organization
     ```
 
-1. Set the `AZP_TOKEN` environment variable to specify your personal access token.
+1. Set the `AZP_TOKEN` environment variable to specify your personal access token (the long token value that you copied, to be used later). 
 
     Replace *\<token>* with your token.
 
