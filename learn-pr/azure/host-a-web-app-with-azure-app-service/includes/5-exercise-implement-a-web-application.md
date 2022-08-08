@@ -4,7 +4,7 @@ In this unit, you'll use developer tools to create the code for a starter web ap
 
 ::: zone pivot="csharp"
 
-The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this command, you will create a new ASP.NET Core web project.
+The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this command, you'll create a new ASP.NET Core web project.
 
 First, let's install the appropriate version of `dotnet` into the Cloud Shell. For this exercise, we'll be using SDK version 3.1.102.
 
@@ -112,7 +112,7 @@ To create a starter web application, we'll use Maven, a commonly used project ma
     ls
     ```
 
-You'll see a file listed called `helloworld.war`. This is the web application package that we will deploy to App Service.
+You'll see a file listed called `helloworld.war`. This is the web application package that we'll deploy to App Service.
 
 ::: zone-end
 
@@ -129,7 +129,7 @@ To create a starter Node.js web application, we'll use Node Package Manager (`np
     npm init -y
     ```
 
-This will create a new `package.json` file in the current folder. You should see it in the current folder if you enter `ls` in the terminal window. We will need a JavaScript file to run our website logic. Because this is just a basic example, we will only need one file `index.js`.
+This will create a new `package.json` file in the current folder. You should see it in the current folder if you enter `ls` in the terminal window. We'll need a JavaScript file to run our website logic. Because this is just a basic example, we'll only need one file `index.js`.
 
 1. Run the following command in the terminal to create the file.
 
@@ -181,7 +181,7 @@ This will create a new `package.json` file in the current folder. You should see
 
 ### Optionally test your web app
 
-While you are running the helloworld web app, you can verify it is running locally by opening a second command shell session. 
+While you're running the helloworld web app, you can verify it's running locally by opening a second command shell session. 
 
 1. From a new browser tab, browse to <https://shell.azure.com/>.
 
@@ -246,7 +246,7 @@ To create a starter web application, we'll use the web application framework Fla
 
 1. Save the file and exit the editor. Save your file and exit the editor by selecting the **...** menu on the top right, and then selecting **Save** > **Close Editor**, or by pressing <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+S</kbd> and <kbd>Command+Q</kbd> on macOS.
 
-1. To deploy your application to Azure, you will need to save the list of application requirements you made for it in a *requirements.txt* file. To do so, run the following command.
+1. To deploy your application to Azure, you'll need to save the list of application requirements you made for it in a *requirements.txt* file. To do so, run the following command.
 
     ```bash
     pip freeze > requirements.txt
@@ -257,6 +257,13 @@ To create a starter web application, we'll use the web application framework Fla
 You can test your application locally in Azure while it was running.
 
 1. Open a second command shell session in a new browser tab  <https://shell.azure.com/>.
+
+1. From your primary command shell session (to the right), run the following commands to activate the virtual environment:
+
+    ```bash
+    cd ..
+    source venv/bin/activate
+    ``` 
 
 1. From your primary command shell session (to the right), run the following commands to start your web application.
 
