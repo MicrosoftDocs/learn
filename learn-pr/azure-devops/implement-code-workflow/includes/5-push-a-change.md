@@ -87,7 +87,7 @@ In your terminal, run the following `git checkout` command:
 git checkout -B feature/home-page-text
 ```
 
-Like before, the `feature/home-page-text` is based off of the `main` branch.
+Like before, the `feature/home-page-text` is based on the `main` branch.
 
 ## Make changes and test it locally
 
@@ -139,7 +139,7 @@ Here you'll stage your changes to *Index.cshtml*, commit the change to your bran
     git status
     ```
 
-    You'll see that *Index.cshtml* has been modified. Like before, the next step is to make sure that Git is tracking this file. This is called _staging_ the file.
+    You'll see that *Index.cshtml* has been modified. Like before, the next step is to make sure that Git is tracking this file, , which is called _staging_ the file.
 
 1. Run the following `git add` command to stage *Index.cshtml*:
 
@@ -171,7 +171,7 @@ As an optional step, trace the build as it moves through the pipeline, and verif
 
 ## Synchronize any changes to the main branch
 
-While you were busy working on your feature, there may have been changes made to the remote `main` branch. Before you create a pull request, its common practice to get the latest from the remote `main` branch.
+While you were busy working on your feature, , changes might have been made to the remote `main` branch. Before you create a pull request, it's common practice to get the latest from the remote `main` branch.
 
 To do this, you first check out, or switch to, the `main` branch. You then merge the remote `main` branch with your local `main` branch.
 

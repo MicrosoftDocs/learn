@@ -2,9 +2,9 @@ In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-
 
 In this module, you'll extend this build configuration by implementing a code collaboration strategy that uses Git and GitHub.
 
-Elite performers deploy code more frequently and experience many faster lead times than other performers. To become elite performers, developers need a way to work with source code and share their changes with others. Collaboration is a key DevOps value, and a source control system that fosters cooperation is a great DevOps tool.
+Collaboration is a key DevOps value. Developers need a way to work with source code and share their code revisions with others. A source control system facilitates cooperation among developers and more frequent deployments to improve the product.
 
-Although Azure DevOps works with different kinds of source control, many developers choose Git because it's a distributed system that enables all contributors to have their own copy of the work. In this module, you use Git's branching and merging capabilities to more efficiently work with other developers. You also use GitHub, because it provides a central location for teams to host their projects and share their work.
+Azure DevOps works with different kinds of source control, but many Azure DevOps organizations choose to use Git. Git is a distributed system in which all contributors have their own copy of the work. In this module, you use the branching and merging capabilities of Git to more efficiently work with other developers. You also use GitHub, a central location for teams to host their projects and share their work.
 
 ## Learning objectives
 
@@ -17,13 +17,13 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-The modules in this learning path form a progression.
+The modules in this learning path form a progression. Information in one module is the basis for further learning in the next module.
 
-To follow the progression from the beginning, ensure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+To follow the progression from the beginning, first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
 We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 
-If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+If you want to complete only this module, you need to set up a development environment on your Windows, macOS, or Linux system. You'll need these prerequisites:
 
 - An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
 - A [GitHub](https://github.com/join?azure-portal=true) account
@@ -31,7 +31,7 @@ If you want to go through just this module, you need to set up a development env
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Microsoft Azure DevOps for free.
+You can get started with Azure DevOps for free.
 
 This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
@@ -39,7 +39,7 @@ This environment lets you complete the exercises in this and future modules. You
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+In earlier modules, you met the _Space Game_ web team at Tailspin Toys. The _Space Game_ web team is here again to work with you in this module:
 
 :::row:::
 

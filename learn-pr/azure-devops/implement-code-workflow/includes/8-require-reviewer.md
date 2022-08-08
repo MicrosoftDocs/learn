@@ -14,7 +14,7 @@ Mara looks up.
 
 **Andy:** Several small mistakes are making it through the build. Just today, a typing error showed up on the home page. Amita is spending too much time on these things. We need to stop them before they make it to the `main` branch. We need another pair of eyes on the code before the pull request is approved.
 
-**Mara:** I can set that up. In GitHub, there's a way to ensure that no pull request is merged before someone else reviews and approves it.
+**Mara:** I can set that up. In GitHub, there's a way to make sure that no pull request is merged before someone else reviews and approves it.
 
 ## Set up approvals
 

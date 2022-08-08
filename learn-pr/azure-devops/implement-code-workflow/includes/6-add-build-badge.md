@@ -28,7 +28,7 @@ Here's an example build badge:
 
 For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
 
-To ensure your build badge is visible:
+To check that your build badge is visible:
 
 1. In Azure DevOps, navigate to your organization.
 1. Select **Organization settings** from the bottom corner.
@@ -48,14 +48,14 @@ You need to make a similar change to your project:
 
 Up until now, you created Git branches locally to make changes to the _Space Game_ project. You can also propose changes directly through GitHub. In this section, you do that to set up your status badge.
 
-1. In Azure DevOps, in the left pane select **Pipelines**, and then select your pipeline.
+1. In Azure DevOps, in the left pane, select **Pipelines**, and then select your pipeline.
 1. Select the ellipsis (...) in the upper right, and then select **Status badge**.
 
     :::image type="content" source="../media/6-pipeline-options-menu.png" alt-text="Screenshot of Azure Pipelines showing the options menu to set the build badge.":::
 
 1. Under **Sample Markdown**, select the **Copy** button to copy the Markdown code to the clipboard.
 1. In GitHub, go to your project.
-1. Ensure you're on the `main` branch. In the files area, open the *README.md* file.
+1. Make sure you're on the `main` branch. In the files area, open the *README.md* file.
 1. Select the pencil icon to open the file in the editor.
 1. At the top of the page, add a blank line, and then paste the contents of the clipboard.
 1. Select the **Preview** tab to see your proposed changes.

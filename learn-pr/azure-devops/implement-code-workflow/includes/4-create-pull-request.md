@@ -1,22 +1,22 @@
 In this unit, you'll practice the process of submitting a pull request and merging your changes into the `main` branch so that everyone can benefit from your work.
 
-In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true), you created a Git branch named `build-pipeline`, where you defined a basic build pipeline for the _Space Game_ website. Remember that your build definition is in a file named *azure-pipelines.yml*.
+In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true), you created a Git branch named `build-pipeline`, where you defined a basic build pipeline for the _Space Game_ website. Recall that your build definition is in a file named *azure-pipelines.yml*.
 
 Although your branch produces a build artifact, that work exists only on the `build-pipeline` branch. You need to merge your branch into the `main` branch.
 
-Remember that a _pull request_ tells the other developers that you have code ready to review, if necessary, and you want your changes merged into another branch, such as the `main` branch.
+Recall that a _pull request_ tells the other developers that you have code ready to review, if necessary, and you want your changes merged into another branch, such as the `main` branch.
 
 Before we start, let's check in with Mara and Andy.
 
 **Andy:** Hi, Mara. I know you've got a build pipeline running on Azure. I'm adding a feature to the website and I want to see the build process for myself. Are we ready to do that?
 
-**Mara:** Absolutely. I created the pipeline on a branch. Why don't we set up a pull request and get it merged into `main` so that you can use the pipeline too?
+**Mara:** Absolutely. I created the pipeline on a branch. Why don't we create a pull request and get it merged into `main`, so you can use the pipeline, too?
 
 **Andy:** Sounds great. Let's take a look.
 
 ## Create a branch and add starter code
 
-Although you could use the build pipeline you built in the previous module, let's create a new branch, named `code-workflow`, that's based off of `main` so that you can practice the process from the beginning. If you completed the previous module, your branch includes a basic but complete build configuration in your *azure-pipelines.yml* file. If you haven't completed the previous module, you'll create the file.
+Although you could use the build pipeline you built in the previous module, let's create a new branch named `code-workflow`. This branch is based on `main`, so you can practice the process from the beginning. If you completed the previous module, your branch includes a basic but complete build configuration in your *azure-pipelines.yml* file. If you haven't completed the previous module, you'll create the file. 
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Switch to the `main` branch.
@@ -62,7 +62,7 @@ Here, you push your `code-workflow` branch to GitHub and watch Azure Pipelines b
     git status
     ```
 
-    You'll see that *azure-pipelines.yml* has been modified. You'll commit that to your branch shortly, but you first need to ensure that Git is tracking this file. This is called _staging_ the file.
+    You'll see that *azure-pipelines.yml* has been modified. You'll commit that to your branch shortly, but you first need to ensure that Git is tracking this file which is called _staging_ the file.
 
     Only staged changes are committed when you run `git commit`. Next, you run the `git add` command to add *azure-pipelines.yml* to the staging area, or index.
 
@@ -78,7 +78,7 @@ Here, you push your `code-workflow` branch to GitHub and watch Azure Pipelines b
     git commit -m "Add the build configuration"
     ```
 
-    The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change as well as helps future maintainers understand how the file changed over time.
+    The `-m` argument specifies the commit message. The commit message becomes part of a changed file's history. It helps reviewers understand the change, and it helps future maintainers understand how the file changed over time.
 
     > [!TIP]
     > The best commit messages complete the sentence, "If you apply this commit, you will ..."
@@ -142,7 +142,7 @@ Here, you'll create a pull request for your branch:
 
 1. To complete your pull request, select **Create pull request**.
 
-    This step does not merge any code. It tells others that you have changes that you're proposing be merged into the `main` branch.
+    This step does not merge any code. It tells others that you have proposed changes to be merged into the `main` branch.
 
     :::image type="content" source="../media/4-github-pr-details.png" alt-text="Screenshot of GitHub showing the pull request description and the location of the Create pull request button.":::
 
@@ -180,7 +180,7 @@ Here, you'll create a pull request for your branch:
 
 The answer depends on how your build configuration is defined. Azure Pipelines enables you to define _triggers_ that specify which events cause builds to happen. You can control which branches get built or even which files trigger the build.
 
-As an example, let's say that you want a build to happen when a change is pushed to GitHub on any Git branch. But you don't want the build to happen when the only changes are to files in your project's *docs* folder. You may include this `trigger` section in your build configuration:
+As an example, let's say that you want a build to happen when a change is pushed to GitHub on any Git branch. But you don't want the build to happen when the only changes are to files in your project's *docs* folder. You might want to include this `trigger` section in your build configuration:
 
 ```yml
 trigger:

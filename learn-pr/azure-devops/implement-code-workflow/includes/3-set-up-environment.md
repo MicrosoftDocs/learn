@@ -5,7 +5,7 @@ To do this, you:
 > [!div class="checklist"]
 > * Set up an Azure DevOps project for this module.
 > * Move the work item for this module on Azure Boards to the **Doing** column.
-> * Ensure your project is set up locally so that you can push changes to the pipeline.
+> * Ensure that your project is set up locally so that you can push changes to the pipeline.
 
 ## Get the Azure DevOps project
 
