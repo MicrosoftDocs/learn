@@ -140,6 +140,6 @@ The testing tools you use depend on the type of application you're building and 
 
 No matter what language your application is written in, there are many test tools available to you.
 
-For example, for Java applications, you might choose Check style to perform lint testing and JUnit to perform unit testing.
+For example, for Java applications, you might choose Checkstyle to perform lint testing and JUnit to perform unit testing.
 
 For the _Space Game_ website, which is a .NET application written in C#, Mara chooses NUnit for unit testing because it's popular in the .NET community and she and Andy have prior experience with it.
