@@ -17059,6 +17059,131 @@
       "source_path": "learn-pr/wwl-azure/install-configure-apps-session-host/6-onedrive-sync-app-virtual-desktops.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/install-configure-apps-session-host/7-onedrive-sync-app-virtual-desktops",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/2-create-workspace.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/4-explore-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/3-create-compute.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/5-create-training-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/6-evaluate-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/7-inference-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/8a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/8-deploy-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-clustering-model-azure-machine-learning-designer/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-clustering-model-azure-machine-learning-designer/8-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/9-troubleshoot-user-profile-issues.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/10-troubleshoot-user-profile-issues",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/10-troubleshoot-azure-virtual-desktop-clients.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/11-troubleshoot-azure-virtual-desktop-clients",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/12-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-user-experience-settings/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/configure-user-experience-settings/13-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/2-add-github-account.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false 
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/3-exercise-add-github-account.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/4-create-repo.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/5-exercise-create-repo.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/6-commit-changes.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/7-exercise-commit-changes.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/8-push-changes.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/9-exercise-push-changes.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/visual-studio-github-push/index.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
+      "redirect_document_id": false
     }
   ]
 }
