@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 7/27/2022
+  description: "Check how well you understand security for different authentication methods for Azure AD. Test your understanding of how to switch users to Microsoft Authenticator push notifications for better security."
+  ms.date: 8/08/2022
   author: Justinha
   ms.author: Justinha
   ms.topic: interactive-tutorial
@@ -28,58 +28,65 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which authentication method is more secure?"
     choices:
-    - content: ""
+    - content: "SMS"
+      isCorrect: false
+      explanation: "SMS messages are less secure than Microsoft Authenticator push notifications because they aren't encrypted."
+    - content: "Push notifications"
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: "Voice call"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Voice calls are less secure than Microsoft Authenticator push notifications because they can be intercepted by an adversary."
+  - content: "Which authentication method is passwordless?"
     choices:
-    - content: ""
+    - content: "FIDO2 security key"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "FIDO2 security keys, Windows Hello for Business, and Microsoft Authenticator all provide passwordless authentication."
+    - content: "SMS"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "SMS codes are used in addition to username and password but are less secure than passwordless authentication."
+    - content: "Voice call"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Voice calls are used in addition to username and password but are less secure than passwordless authentication. "
+  - content: "What step must an administrator complete before users can be prompted to set up Microsoft Authenticator?"
     choices:
-    - content: ""
+    - content: "Get user licenses."
+      isCorrect: false
+      explanation: "No licensing is required to run the registration campaign."
+    - content: "Enable users for passwordless authentication."
+      isCorrect: false
+      explanation: "Users who are enabled for passwordless authentication can't be included in the registration campaign."
+    - content: "Enable users for Push notifications."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Only users who are enabled for Push notifications are included in the registration campaign."
+  - content: "What step must a user complete before they can download and set up Microsoft Authenticator?"
     choices:
-    - content: ""
+    - content: "Consent to the registration campaign."
+      isCorrect: false
+      explanation: "No user consent is required to run the registration campaign."
+    - content: "Sign in and perform MFA."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "After a user signs in and completes MFA as they normally do, then they will get prompted to set up Microsoft Authenticator."
+    - content: "Create a Microsoft account."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "You can sign in to a work or school account by using Microsoft Authenticator. A Microsoft account works too, but it's not required."
+  - content: "How can you nudge a user to set up Microsoft Authenticator every time they sign in?"
     choices:
-    - content: ""
+    - content: "Enable the policy to be applied to every sign-in."
+      isCorrect: The policy is always applied to users who are included in the registration campaign. But they can postpone setup for up to 14 days. 
+      explanation: ""
+    - content: "Create a custom sign-in message."
+      isCorrect: false
+      explanation: "No custom message is required to nudge users. "
+    - content: "Set the snooze duration to 0."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "The snooze duration determines how many days a user can postpone the setup of Microsoft Authenticator. If you set it to 0 days, user are prompted to set up Microsoft Authenticator every time they sign in. "
+
+
+- 
+- 
+- 
+- 
+- 

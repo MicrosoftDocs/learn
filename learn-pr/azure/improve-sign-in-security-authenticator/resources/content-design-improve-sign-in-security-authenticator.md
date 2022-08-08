@@ -188,15 +188,7 @@ Identify the subtasks of module title.
    1. Leave Auto-generate password selected, and then select **Show password**. Write down the value that's displayed in the **Password** box.
    1. Select **Create**.
 
-   **Enable current authentication methods for the test user**
-
-   Your company is concerned about users who sign in with Voice call or SMS for MFA. Let's enable this test user to sign in with Voice by default as their current method for MFA.  
-
-   1. Choose the test user you created and select **Authentication methods**.
-   1. At the top of the window, select **+ Add authentication method**.
-   1. Select **Phone number** and enter a number with a valid format such as *+1 4255551234*.
-   1. Select **Add**.
-
+   
    **Enable Microsoft Authenticator**
    
    With the test user configured to sign in using Voice call, now let's enable Microsoft Authenticator as a passwordless sign-in option for the test user. You'll need to set the Authentication mode to Push. If it's set to Passwordless, the user won't get nudged to set up Authenticator.  
@@ -236,7 +228,7 @@ What types of questions will test the learning objective? [(Knowledge check guid
 
 1. Summary
 
-   To improve sign-in security, you needed to roll out a low-cost passwordless sign-in strategy to help users move away from signing in with less secure methods like Voice calls or SMS. You chose to create a registration campaign to help users set up Microsoft Authenticator, a free app, and use it as their default method for passwordless sign-in. 
+   To improve sign-in security, you needed to roll out a low-cost sign-in strategy to help users move away from signing in with less secure methods like Voice calls or SMS. You chose to create a registration campaign to help users set up Microsoft Authenticator, a free app, and use it as their default method for passwordless sign-in. 
 
    You made it easy for employees to register Microsoft Authenticator when they sign in using MFA. Now you can target the registration campaign to specific users who sign in using less secure methods, and move them to sign in with Microsoft Authenticator for better security. You helped your company take an important step to prevent security breaches from compromised credentials. 
 
