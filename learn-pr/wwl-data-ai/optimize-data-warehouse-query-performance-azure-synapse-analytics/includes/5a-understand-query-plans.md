@@ -11,7 +11,7 @@ Often Database Engineers and Database Administrators have a need to analyze and 
 > [!Warning]
 > An attacker can use **sys.dm_pdw_exec_requests** to retrieve information about specific database objects by simply having VIEW SERVER STATE permission and by not having database-specific permission.
 >
-Azure Synapse queries. which are executed are logged, ** sys.dm_pdw_exec_requests ** contains the last 10,000 queries executed. 
+Azure Synapse queries. which are executed are logged to, **sys.dm_pdw_exec_requests** which contains the last 10,000 queries executed. 
 you can use the following query to determine the top 10 longest running queries 
 ```SQL
 SELECT TOP 10 request_id, status, total_elapsed_time
@@ -93,6 +93,6 @@ WHERE request_id = 'QID####' AND step_index = 2;
 > checking the *total_elapsed_time* will help determine if a particular distribution is taking significantly longer than others for data movement.
 > for any long-running distribution, check the *rows_processed* column to derminie if it is materially larger than others. if so, this might indicate skew of your underlying data.
 
-One example of a bad operation that can cause performance problems such as data skew is distributing on a column that contains a lot of NULL values, which will cause those rose to land in the same distribution. If possible, eliminate nulls or filter them out of your query altogether to increase performance.
+One example of a bad operation that can cause performance problems such as data skew is distributing on a column that contains a lot of NULL values, which will cause those rows to land in the same distribution. If possible, eliminate nulls or filter them out of your query altogether to increase performance.
 
 To help resolve issues, refer to the sections on [Create Statistics to Improve Performance](/learn/modules/optimize-data-warehouse-query-performance-azure-synapse-analytics/7-create-statistics-to-improve), [Understand performance issues related to tables ](/learn/modules/optimize-data-warehouse-query-performance-azure-synapse-analytics/2-understand-performance-issues-related-to-tables), [understand table distribution design](/learn/modules/optimize-data-warehouse-query-performance-azure-synapse-analytics/4-understand-table-distribution-design), and [use indexes to improve performance](/learn/modules/optimize-data-warehouse-query-performance-azure-synapse-analytics/5-use-indexes-to-improve)

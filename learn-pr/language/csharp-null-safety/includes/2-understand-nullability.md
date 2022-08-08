@@ -76,7 +76,7 @@ In the preceding example:
 - `third` is `null` as the `default` value for `Nullable<int>` is `null`.
 - `fourth` is `0` as the `new()` expression calls the `Nullable<int>` constructor, and `int` is `0` by default.
 
-C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable"! You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then tries to enforce. The same `T?` syntax expresses that a reference type is intended to be nullable.
+C# 8.0 introduced _nullable reference types_, where you can express your intent that a reference type *might* be `null` or is *always* non-`null`. You may be thinking, "I thought they said all reference types are nullable!" You're not wrong, and they are. This feature allows you to express your *intent*, which the compiler then tries to enforce. The same `T?` syntax expresses that a reference type is intended to be nullable.
 
 Consider the following C# snippet:
 

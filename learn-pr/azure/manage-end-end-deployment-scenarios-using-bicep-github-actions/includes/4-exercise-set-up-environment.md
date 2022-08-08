@@ -7,9 +7,9 @@ To meet these objectives, you'll:
 > [!div class="checklist"]
 > * Set up a GitHub repository for this module.
 > * Clone the project's repository to your computer.
-> * Create two service principals in Azure Active Directory.
+> * Create two workload identities in Azure Active Directory.
 > * Create two resource groups in Azure.
-> * Create two secrets and environments in GitHub.
+> * Create secrets and environments in GitHub.
 
 ## Get the GitHub repository
 
@@ -32,6 +32,8 @@ On the GitHub site, follow these steps to create a repository from the template:
 1. Select **Use this template**. 
 
    :::image type="content" source="../media/4-template.png" alt-text="Screenshot of the GitHub interface showing the template repo, with the 'Use this template' button highlighted.":::
+
+1. Note the name of your GitHub username or organization. In the example above, the GitHub user name is *mygithubuser*. You'll need this name soon.
 
 1. Enter a name for your new project, such as *toy-website-end-to-end*.
 
@@ -113,183 +115,212 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
 ::: zone-end
 
-## Create two resource groups in Azure
+## Create two workload identities
+
+Next, create two workload identities in Azure AD: one for your test environment and another for your production environment.
 
 ::: zone pivot="cli"
 
-1. To create the test environment's resource group, run the following Azure CLI commands in the Visual Studio Code terminal:
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
-   ```azurecli
-   az group create --name ToyWebsiteTest --location westus
+   ```bash
+   githubOrganizationName='mygithubuser'
+   githubRepositoryName='toy-website-end-to-end'
    ```
 
-1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
+1. Create a workload identity for deployments to your test environment. The workload identity needs two federated credentials: one is used when the workflow runs the *validate* job, because this job isn't associated with a GitHub environment. The second is used when the workflow runs the *deploy* job, which runs against the *Test* GitHub environment.
 
-   Copy the resource group ID somewhere safe. You'll use it soon.
+   ```bash
+   testApplicationRegistrationDetails=$(az ad app create --display-name 'toy-website-end-to-end-test')
+   testApplicationRegistrationObjectId=$(echo $testApplicationRegistrationDetails | jq -r '.id')
+   testApplicationRegistrationAppId=$(echo $testApplicationRegistrationDetails | jq -r '.appId')
 
-1. Repeat the process to create the production environment's resource group:
+   az ad app federated-credential create \
+      --id $testApplicationRegistrationObjectId \
+      --parameters "{\"name\":\"toy-website-end-to-end-test\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:environment:Test\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
 
-   ```azurecli
-   az group create --name ToyWebsiteProduction --location westus
+   az ad app federated-credential create \
+      --id $testApplicationRegistrationObjectId \
+      --parameters "{\"name\":\"toy-website-end-to-end-test-branch\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
-   Copy the resource group ID for the production resource group, too.
+1. Run the code below, which creates a similar workload identity and federated credentials for the production environment:
 
-::: zone-end
+   ```bash
+   productionApplicationRegistrationDetails=$(az ad app create --display-name 'toy-website-end-to-end-production')
+   productionApplicationRegistrationObjectId=$(echo $productionApplicationRegistrationDetails | jq -r '.id')
+   productionApplicationRegistrationAppId=$(echo $productionApplicationRegistrationDetails | jq -r '.appId')
 
-::: zone pivot="powershell"
+   az ad app federated-credential create \
+      --id $productionApplicationRegistrationObjectId \
+      --parameters "{\"name\":\"toy-website-end-to-end-production\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:environment:Production\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
 
-1. To create the test environment's resource group, run the following Azure PowerShell commands in the Visual Studio Code terminal:
-
-   ```azurepowershell
-   New-AzResourceGroup -Name ToyWebsiteTest -Location westus
-   ```
-
-1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
-
-   Copy the resource group ID somewhere safe. You'll use it soon.
-
-1. Repeat the process to create the production environment's resource group:
-
-   ```azurepowershell
-   New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
-   ```
-
-   Copy the resource group ID for the production resource group, too.
-
-::: zone-end
-
-## Create two service principals and grant them access to the resource group
-
-Next, create two service principals in Azure AD: one for your test environment and another for your production environment. This process also grants the service principal the Contributor role on your resource group, which allows your workflow to deploy to the resource group.
-
-::: zone pivot="cli"
-
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID you copied in the last step.
-
-   ```azurecli
-   az ad sp create-for-rbac \
-     --name ToyWebsiteTest \
-     --role Contributor \
-     --scopes RESOURCE_GROUP_ID \
-     --sdk-auth
-   ```
-
-   [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
-
-1. Select the JSON output from the previous command. It looks like this:
-
-   ```json
-   {
-     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
-     "clientSecret": "<secret value>",
-     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
-     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304",
-     "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
-     "resourceManagerEndpointUrl": "https://management.azure.com/",
-     "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-     "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
-     "galleryEndpointUrl": "https://gallery.azure.com/",
-     "managementEndpointUrl": "https://management.core.windows.net/"
-   }
-   ```
-
-   Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
-
-1. Repeat the steps above to create another service principal for your production environment. Make sure to replace `RESOURCE_GROUP_ID` with your production resource group's resource ID.
-
-   ```azurecli
-   az ad sp create-for-rbac \
-     --name ToyWebsiteProduction \
-     --role Contributor \
-     --scopes RESOURCE_GROUP_ID \
-     --sdk-auth
+   az ad app federated-credential create \
+      --id $productionApplicationRegistrationObjectId \
+      --parameters "{\"name\":\"toy-website-end-to-end-production-branch\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
    ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the `RESOURCE_GROUP_ID` placeholder with the resource group ID you copied in the last step.
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted earlier in this exercise. Also ensure that you specify the correct GitHub repository name.
 
    ```azurepowershell
-   $resourceGroupId = 'RESOURCE_GROUP_ID'
-
-   $azureContext = Get-AzContext
-   $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsiteTest `
-     -Role Contributor `
-     -Scope $resourceGroupId
-
-   $output = @{
-     clientId = $servicePrincipal.AppId
-     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
-     subscriptionId = $azureContext.Subscription.Id
-     tenantId = $azureContext.Tenant.Id
-   }
-   $output | ConvertTo-Json
+   $githubOrganizationName = 'mygithubuser'
+   $githubRepositoryName = 'toy-website-end-to-end'
    ```
 
-1. Select the JSON output from the previous command. It looks like this:
-
-   ```json
-   {
-     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
-     "clientSecret": "<secret value>",
-     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
-     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304"
-   }
-   ```
-
-   Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
-
-1. Repeat the steps above to create another service principal for your production environment. Make sure to replace `RESOURCE_GROUP_ID` with your production resource group's resource ID.
+1. Run the code below, which creates a workload identity for the test environment and associates it with your GitHub repository:
 
    ```azurepowershell
-   $resourceGroupId = 'RESOURCE_GROUP_ID'
+   $testApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-end-to-end-test'
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-end-to-end-test' `
+      -ApplicationObjectId $testApplicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Test"
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-end-to-end-test-branch' `
+      -ApplicationObjectId $testApplicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
+   ```
 
-   $azureContext = Get-AzContext
-   $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsiteProduction `
-     -Role Contributor `
-     -Scope $resourceGroupId
+1. Run the code below, which follows a similar process for the production environment:
 
-   $output = @{
-     clientId = $servicePrincipal.AppId
-     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
-     subscriptionId = $azureContext.Subscription.Id
-     tenantId = $azureContext.Tenant.Id
-   }
-   $output | ConvertTo-Json
+   ```azurepowershell
+   $productionApplicationRegistration = New-AzADApplication -DisplayName 'toy-website-end-to-end-production'
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-end-to-end-production' `
+      -ApplicationObjectId $productionApplicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Production"
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-end-to-end-production-branch' `
+      -ApplicationObjectId $productionApplicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
    ```
 
 ::: zone-end
 
-## Create two GitHub secrets
+## Create two resource groups in Azure and grant the workload identity access
 
-You've created two resource group and the service principals that can deploy to them. Next, create secrets in GitHub Actions.
+Next, create a resource group for each environment. This process also grants the respective workload identity the Contributor role on the resource group, which allows your workflow to deploy to the resource group.
+
+::: zone pivot="cli"
+
+1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure CLI commands in the Visual Studio Code terminal:
+
+   ```bash
+   testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus --query id --output tsv)
+
+   az ad sp create --id $testApplicationRegistrationObjectId
+   az role assignment create \
+      --assignee $testApplicationRegistrationAppId \
+      --role Contributor \
+      --scope $testResourceGroupResourceId
+   ```
+
+1. Run a similar process to create the production environment's resource group:
+
+   ```bash
+   productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location westus --query id --output tsv)
+
+   az ad sp create --id $productionApplicationRegistrationObjectId
+   az role assignment create \
+      --assignee $productionApplicationRegistrationAppId \
+      --role Contributor \
+      --scope $productionResourceGroupResourceId
+   ```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure PowerShell commands in the Visual Studio Code terminal:
+
+   ```azurepowershell
+   $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+
+   New-AzADServicePrincipal -AppId $($testApplicationRegistration.AppId)
+   New-AzRoleAssignment `
+      -ApplicationId $($testApplicationRegistration.AppId) `
+      -RoleDefinitionName Contributor `
+      -Scope $($testResourceGroup.ResourceId)
+   ```
+
+1. Run a similar process to create the production environment's resource group:
+
+   ```azurepowershell
+   $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
+
+   New-AzADServicePrincipal -AppId $($productionApplicationRegistration.AppId)
+   New-AzRoleAssignment `
+      -ApplicationId $($productionApplicationRegistration.AppId) `
+      -RoleDefinitionName Contributor `
+      -Scope $($productionResourceGroup.ResourceId)
+   ```
+
+::: zone-end
+
+## Prepare GitHub secrets
+
+Run the following code to show you the values you need to create as GitHub secrets:
+
+::: zone pivot="cli"
+
+```bash
+echo "AZURE_CLIENT_ID_TEST: $testApplicationRegistrationAppId"
+echo "AZURE_CLIENT_ID_PRODUCTION: $productionApplicationRegistrationAppId"
+echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
+echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+$azureContext = Get-AzContext
+Write-Host "AZURE_CLIENT_ID_TEST: $($testApplicationRegistration.AppId)"
+Write-Host "AZURE_CLIENT_ID_PRODUCTION: $($productionApplicationRegistration.AppId)"
+Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
+Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
+```
+
+::: zone-end
+
+## Create GitHub secrets
+
+You've created two workload identities, and resource groups that they can deploy to. Next, create secrets in GitHub Actions.
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets**.
+1. Select **Settings** > **Secrets** > **Actions**.
 
 1. Select **New repository secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CREDENTIALS_TEST*.
+1. Name the secret *AZURE_CLIENT_ID_TEST*.
 
-1. In the **Value** field, paste the JSON object for the test environment that you copied in the previous section.
+1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID_TEST`, the colon, or any spaces in the value.
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../media/4-github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secret-details-test-environment.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
 
-1. Repeat the process for a new secret named *AZURE_CREDENTIALS_PRODUCTION*, and paste the value for the production environment's service principal from the previous section.
+1. Repeat the process to create the secrets for *AZURE_CLIENT_ID_PRODUCTION*, *AZURE_TENANT_ID*, and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
 
-1. Verify that your list of secrets now shows both secrets.
+1. Verify that your list of secrets now shows all four secrets.
 
-   :::image type="content" source="../media/4-github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true":::
+   :::image type="content" source="../../includes/media/github-create-repository-secrets-environments.png" alt-text="Screenshot of the GitHub interface showing the list of secrets, including both the test and production secrets." border="true":::
 
 ## Create environments in GitHub
 

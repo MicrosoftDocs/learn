@@ -42,7 +42,7 @@ subjects:
 - infrastructure
 modules:
 - learn.azure.build-first-bicep-deployment-workflow-using-github-actions
-- learn.azure.authenticate-azure-deployment-pipeline-service-principals
+- learn.azure.authenticate-azure-deployment-workflow-workload-identities
 - learn.azure.test-bicep-code-using-github-actions
 - learn.azure.manage-multiple-environments-using-bicep-github-actions
 - learn.azure.manage-end-end-deployment-scenarios-using-bicep-github-actions

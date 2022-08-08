@@ -6,7 +6,7 @@ metadata:
   unitType: exercise
   title: Exercise - Deploy resources conditionally
   description: Learn how to deploy resources conditionally, based on Boolean values and expressions.
-  ms.date: 05/09/2021
+  ms.date: 07/25/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

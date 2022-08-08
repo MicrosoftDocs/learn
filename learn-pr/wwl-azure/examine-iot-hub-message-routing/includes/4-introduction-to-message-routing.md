@@ -11,7 +11,7 @@ In addition, custom endpoints can be configured that link IoT hub to other servi
  -  Service Bus Queues
  -  Service Bus Topics
 
-IoT Hub only supports writing data to Azure Storage containers as blobs. Also Service Bus queues and Service Bus topics that have Sessions or Duplicate Detection enabled are not supported as custom endpoints.
+There are two storage services IoT Hub can route messages to: Azure Blob Storage and Azure Data Lake Storage Gen2 (ADLS Gen2) accounts. Both of these use blobs for their storage. Also Service Bus queues and Service Bus topics that have Sessions or Duplicate Detection enabled are not supported as custom endpoints.
 
 ## Routing queries
 

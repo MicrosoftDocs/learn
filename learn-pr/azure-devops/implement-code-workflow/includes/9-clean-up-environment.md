@@ -40,9 +40,9 @@ To disable the pipeline:
 
     Your pipeline will no longer process build requests.
 
-### Option 2: Delete the Azure DevOps project
+### Option 2: Delete the Azure DevOps project and GitHub repository
 
-This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Choose this option if you don't need your DevOps project for future reference.
+This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline, and your GitHub repository. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Choose this option if you don't need your DevOps project for future reference.
 
 To delete the project:
 
@@ -54,3 +54,10 @@ To delete the project:
 1. In the window that appears, enter the project name, and then select **Delete** a second time.
 
     Your project is now deleted.
+
+To delete the repository:
+
+1. In GitHub, go to your repository, `https://github.com/username/mslearn-tailspin-spacegame-web`.
+1. Select the **Settings** tab and then select **General** in the left menu.
+1. Scroll down and select **Delete this repository**.
+1. Enter the name of your repository to confirm and delete.

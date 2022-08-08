@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-configuration-information.connect-remote-computers-cmdlets
+title: Connect to remote computers by using CIM and WMI cmdlets
+metadata:
+  title: Connect to remote computers by using CIM and WMI cmdlets
+  description: "Connect to remote computers by using CIM and WMI cmdlets"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-connect-remote-computers-cmdlets.md)]

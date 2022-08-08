@@ -29,7 +29,7 @@ Each element in the HTML markup of a Blazor app supports many events. Most of th
 }
 ```
 
-Many event handler methods take a parameter that provides extra contextual information. This parameter is known as an `EventArgs` parameter. For example, the `@onclick` event passes information about which button the user clicked, or whether they pressed a button such as <kbd>Ctrl</kbd> or <kbd>Alt</kbd> at the same time as clicking the button, in a `MouseEventArgs` parameter. You don't need to provide this parameter when you call the method; it is added automatically by the Blazor runtime. You can query this parameter in the event handler. The following code increments the counter shown in the previous example by five if the user presses the <kbd>Ctrl</kbd> key at the same time as clicking the button:
+Many event handler methods take a parameter that provides extra contextual information. This parameter is known as an `EventArgs` parameter. For example, the `@onclick` event passes information about which button the user clicked, or whether they pressed a button such as <kbd>Ctrl</kbd> or <kbd>Alt</kbd> at the same time as clicking the button, in a `MouseEventArgs` parameter. You don't need to provide this parameter when you call the method; it is added automatically by the Blazor runtime. You can query this parameter in the event handler. The following code increments the counter is shown in the previous example by five if the user presses the <kbd>Ctrl</kbd> key at the same time as clicking the button:
 
 ```razor
 @page "/counter"
@@ -69,7 +69,7 @@ A traditional web application uses JavaScript to capture and process events. You
 
 <button class="btn btn-primary" onclick="incrementCount()">Click me</button>
 
-...
+<!-- Omitted for brevity -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
@@ -86,27 +86,25 @@ Besides the syntactic differences in the two versions of the event handler, you 
 
 - JavaScript does not prefix the name of the event with an `@` sign; it is not a Blazor directive.
 - In the Blazor code, you specify the name of the event handling method when you attach it to an event. In JavaScript, you write a statement that calls the event handling method; you specify round brackets and any parameters required.
-- Most importantly, the JavaScript event handler runs in the browser, on the client. If you are building a Blazor Server App, the Blazor event handler runs on the server, and only updates the browser with any changes made to the UI when the event handler completes. Additionally, the Blazor mechanism enables an event handler to access static data that is shared between sessions, the JavaScript model does not. However, handling some frequently occurring events such as `@onmousemove` can cause the user interface to become sluggish as they require a network round-trip to the server. You may prefer to handle events such as these in the browser, using JavaScript. 
+- Most importantly, the JavaScript event handler runs in the browser, on the client. If you are building a Blazor Server App, the Blazor event handler runs on the server, and only updates the browser with any changes made to the UI when the event handler completes. Additionally, the Blazor mechanism enables an event handler to access static data that is shared between sessions, the JavaScript model does not. However, handling some frequently occurring events such as `@onmousemove` can cause the user interface to become sluggish as they require a network round-trip to the server. You may prefer to handle events such as these in the browser, using JavaScript.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > You can manipulate the DOM using JavaScript code from an event handler as well as using C# Blazor code. However, Blazor maintains its own copy of the DOM which is used to refresh the user interface when required. If you use JavaScript and Blazor code to change the same elements in the DOM, you run the risk of corrupting the DOM and possibly compromising the privacy and security of the data in your web app.
 
 ## Handle events asynchronously
 
-By default, Blazor event handlers are synchronous. If an event handler performs a potentially long-running operation, such as calling a web service, the thread on which the event handler runs will be blocked until the operation completes. This can lead to poor response in the user interface. To combat this, you can designate an event handler method as asynchronous. Use the C# `async` keyword. The method must return a `Task` object. You can then use the `await` operator inside the event handler method to initiate any long-running tasks on a separate thread and free the current thread for other work. When a long-running task completes, the event handler resumes. The example event handler below runs a time-consuming method asynchronously: 
+By default, Blazor event handlers are synchronous. If an event handler performs a potentially long-running operation, such as calling a web service, the thread on which the event handler runs will be blocked until the operation completes. This can lead to poor response in the user interface. To combat this, you can designate an event handler method as asynchronous. Use the C# `async` keyword. The method must return a `Task` object. You can then use the `await` operator inside the event handler method to initiate any long-running tasks on a separate thread and free the current thread for other work. When a long-running task completes, the event handler resumes. The example event handler below runs a time-consuming method asynchronously:
 
 ```razor
 <button @onclick="DoWork">Run time-consuming operation</button>
 
-
 @code {
-
     private async Task DoWork()
     {
-        ...
         // Call a method that takes a long time to run and free the current thread
         var data = await timeConsumingOperation();
-        ...
+
+        // Omitted for brevity
     }
 }
 ```
@@ -118,9 +116,9 @@ By default, Blazor event handlers are synchronous. If an event handler performs 
 
 On an HTML page, the user can tab between elements, and the focus naturally travels in the order in which the HTML elements appear on the page. On some occasions, you may need to override this sequence and force the user to visit a specific element.
 
-The simplest way to perform this task is to use the `FocusAsync` method. This is an instance method of an `ElementReference` object. The `ElementReference` should reference the item to which you want to set the focus. You designate an element reference with the `@ref` attribute, and create a C# object with the same name in your code.
+The simplest way to perform this task is to use the `FocusAsync` method. This is an instance method of an `ElementReference` object. The `ElementReference` should reference the item to which you want to set the focus. You designate an element reference with the `@ref` attribute and create a C# object with the same name in your code.
 
-In the example below, the `@onclick` event handler for the \<button\> element sets the focus to the \<input\> element. The `@onfocus` event handler of the \<input\> element displays the message "Received focus" when the element gets the focus. The \<input\> element is referenced through the `InputField` variable in the code:
+In the example below, the `@onclick` event handler for the \<button\> element sets the focus on the \<input\> element. The `@onfocus` event handler of the \<input\> element displays the message "Received focus" when the element gets the focus. The \<input\> element is referenced through the `InputField` variable in the code:
  
 ```razor
 <button class="btn btn-primary" @onclick="ChangeFocus">Click me to change focus</button>
@@ -143,22 +141,14 @@ In the example below, the `@onclick` event handler for the \<button\> element se
 
 The following image shows the result when the user selects the button:
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/2-change-focus.png" alt-text="The web page page after the user has clicked the button to set the focus to the input element":::
-    :::column-end:::
-    :::column:::
-        
-    :::column-end:::
-:::row-end:::
-
+:::image type="content" source="../media/2-change-focus.png" alt-text="The web page page after the user has clicked the button to set the focus to the input element":::
 
 > [!NOTE]
 > An app should only direct the focus to a specific control for a specific reason, such as to ask the user to modify input after an error. Don't try and use focussing to force the user to navigate through the elements on a page in a fixed order; this can be very frustrating to the user who may want to revisit elements to change their input.  
 
 ## Write inline event handlers
 
-C# supports lambda expressions. A lambda expression enables you create an anonymous function. A lambda expression is useful if you have a simple event handler that you don't need to reuse elsewhere in a page or component. In the initial click count example shown at the start on this unit, you can remove the `IncrementCount` method, and instead replace the method call with a lambda expression that performs the same task:
+C# supports lambda expressions. A lambda expression enables you to create an anonymous function. A lambda expression is useful if you have a simple event handler that you don't need to reuse elsewhere in a page or component. In the initial click count example shown at the start of this unit, you can remove the `IncrementCount` method, and instead replace the method call with a lambda expression that performs the same task:
 
 ```razor
 @page "/counter"
@@ -177,7 +167,7 @@ C# supports lambda expressions. A lambda expression enables you create an anonym
 > [!NOTE]
 > For details on how lambda expressions work, read [Lambda expressions (C# reference)](/dotnet/csharp/language-reference/operators/lambda-expressions)
 
-This approach is also useful if you want to provide other arguments to an event handling method. In the example below, the method `HandleClick` takes a `MouseEventArgs` parameter in the same way as an ordinary click event handler, but it also accepts a string parameter. The method processes the click event as before, but also displays the message in the user has pressed the <kbd>Ctrl</kbd> key. The lambda expression calls the `HandleCLick` method, passing in the `MouseEventArgs` parameter (`mouseEvent`), and a string.
+This approach is also useful if you want to provide other arguments for an event handling method. In the example below, the method `HandleClick` takes a `MouseEventArgs` parameter in the same way as an ordinary click event handler, but it also accepts a string parameter. The method processes the click event as before, but also displays the message in the user has pressed the <kbd>Ctrl</kbd> key. The lambda expression calls the `HandleCLick` method, passing in the `MouseEventArgs` parameter (`mouseEvent`), and a string.
 
 ```razor
 @page "/counter"
@@ -234,22 +224,15 @@ Several DOM events have default actions that run when the event occurs, regardle
 }
 ```
 
-If you run this code and press the `@` key, the alert will be displayed, but the `@` character will also be added to the input. The addition of the `@` character is the default action of the event. 
+If you run this code and press the `@` key, the alert will be displayed, but the `@` character will also be added to the input. The addition of the `@` character is the default action of the event.
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/2-key-down.png" alt-text="The user input showing the @ character":::
-    :::column-end:::
-    :::column:::
-        
-    :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/2-key-down.png" alt-text="The user input showing the @ character":::
 
 If you want to suppress this character from appearing in the input box, you can override the default action with the `preventDefault` attribute of the event, like this:
 
 ```razor
 <input value=@data @onkeypress="ProcessKeyPress" @onkeypress:preventDefault />
-``` 
+```
 
 The event will still fire, but only the actions defined by the event handler will be performed.
 
@@ -269,14 +252,14 @@ Some events in a child element in the DOM can trigger events in their parent ele
 
     private async Task ProcessKeyPress(KeyboardEventArgs e)
     {
-        ...
+        // Omitted for brevity
     }
 
     private int currentCount = 0;
 
     private void IncrementCount(MouseEventArgs e)
     {
-        ...
+        // Omitted for brevity
     }
 }
 ```
@@ -286,35 +269,35 @@ When the app runs, if the user clicks any element (or empty space) in the area o
 ```razor
 <div @onclick="HandleDivClick">
     <button class="btn btn-primary" @onclick="IncrementCount" @onclick:stopPropagation>Click me</button>
-    ...
+    <!-- Omitted for brevity -->
 </div>
 ```
 
 ## Use an EventCallback to handle events across components
 
-A Blazor page can contain one or more Blazor components, and components can be nested in a parent-child relationship. An event in a child component can trigger an event handler method in a parent component by using an `EventCallback`. A callback references a method in the parent component. The child component can run the method by invoking the callback. This mechanism is similar to using a `delegate` to reference a method in a C# application. 
+A Blazor page can contain one or more Blazor components, and components can be nested in a parent-child relationship. An event in a child component can trigger an event handler method in a parent component by using an `EventCallback`. A callback references a method in the parent component. The child component can run the method by invoking the callback. This mechanism is similar to using a `delegate` to reference a method in a C# application.
 
 A callback can take a single parameter. `EventCallback` is a generic type. The type parameter specifies the type of the argument passed to the callback.
 
-As an example, consider the following scenario. You want to create a component named `TextDisplay` that enables the user to enter an input string and transform that string in some way; you might want to convert it to upper case, lower case, mixed case, filter characters from it, or perform some other type of transformation. However, when you write the code for the `TextDisplay` component you don't know what the transformation process will be, and instead want to defer this operation to another component. The code below shows the `TextDisplay` component. It provides the input string in the form of an \<input\> element that enables the user to enter a text value. 
+As an example, consider the following scenario. You want to create a component named `TextDisplay` that enables the user to enter an input string and transform that string in some way; you might want to convert it to upper case, lower case, mixed case, filter characters from it, or perform some other type of transformation. However, when you write the code for the `TextDisplay` component you don't know what the transformation process will be, and instead want to defer this operation to another component. The code below shows the `TextDisplay` component. It provides the input string in the form of an \<input\> element that enables the user to enter a text value.
 
 ```
 @* TextDisplay component *@
 @using WebApplication.Data;
 
 <p>Enter text:</p>
-<input @onkeypress="HandleKeypress" value="@data" />
+<input @onkeypress="HandleKeyPress" value="@data" />
 
 @code {
     [Parameter]
-    public EventCallback<KeyTransformation> OnKeypressCallback { get; set; }
+    public EventCallback<KeyTransformation> OnKeyPressCallback { get; set; }
 
     private string data;
 
-    private async Task HandleKeypress(KeyboardEventArgs e)
+    private async Task HandleKeyPress(KeyboardEventArgs e)
     {
         KeyTransformation t = new KeyTransformation() { Key = e.Key };
-        await OnKeypressCallback.InvokeAsync(t);
+        await OnKeyPressCallback.InvokeAsync(t);
         data += t.TransformedKey;
     }
 }
@@ -355,15 +338,7 @@ In this example, the `EventCallback` object is a component parameter, and its va
 
 The `TextTransformer` component is a Blazor page that creates an instance of the `TextDisplay` component. It populates the `OnKeypressCallback` parameter with a reference to the `TransformText` method in the code section of the page. The `TransformText` method takes the `KeyTransformation` object provided as its argument, and fills in the `TransformedKey` property with the value found in the `Key` property converted to upper case. The diagram below illustrates the flow of control when a user enters a value into the \<input\> field in the `TextDisplay` component displayed by the `TextTransformer` page:
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/2-eventcallback-flow.png" alt-text="The flow of control with an EventCallback in a child component":::
-        
-    :::column-end:::
-    :::column:::
-        
-    :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/2-eventcallback-flow.png" alt-text="The flow of control with an EventCallback in a child component":::
 
 The beauty of this approach is that you can use the `TextDisplay` component with any page that provides a callback for the `OnKeypressCallback` parameter. There is complete separation between the display and the processing. You can switch the `TransformText` method for any other callback that matches the signature of the `EventCallback` parameter in the `TextDisplay` component.
 

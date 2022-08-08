@@ -13,7 +13,7 @@ A layout panel is a .NET MAUI container that holds a collection of child views a
 
 :::image type="content" source="../media/2-layouts.png" alt-text="Illustration showing representative StackLayout, AbsoluteLayout, FlexLayout, and Grid designs.":::
 
-- `StackLayout`: arranges its child views in a single row or column. In addition to `StackLayout`, there is also a new optimized `VerticalStackLayout` and `HorizontalStackLayout` when you do not need to change orientation.
+- `StackLayout`: arranges its child views in a single row or column. In addition to `StackLayout`, there's also a new optimized `VerticalStackLayout` and `HorizontalStackLayout` when you don't need to change orientation.
 - `AbsoluteLayout`: arranges its child view by using x and y coordinates.
 - `FlexLayout`: arranges its child views like a `StackLayout` except that you can wrap them if they don't fit into a single row or column.
 - `Grid`: arranges its child views in cells that are created by rows and columns.
@@ -88,7 +88,7 @@ To solve this problem, the `View` base class defines two other properties called
 
 ## Specify the position of a view
 
-You also need to set the position of a view. For example, recall that in the sign-in page example you wanted to size the sign-in button to be half the width of the screen. Because the sign-in button isn't the full width of the screen, there is some space available to move it around. You could position it on the left side, on the right side, or in the center of the screen.
+You also need to set the position of a view. For example, recall that in the sign-in page example you wanted to size the sign-in button to be half the width of the screen. Because the sign-in button isn't the full width of the screen, there's some space available to move it around. You could position it on the left side, on the right side, or in the center of the screen.
 
 The `View` base class has two properties that you use to set the position of a view: `VerticalOptions` and `HorizontalOptions`. These settings influence how the view is positioned within the rectangle allocated for it by the layout panel. You can specify that you want the view to align to one of the four edges of the rectangle or that you want it to occupy the entire rectangle.
 

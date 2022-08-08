@@ -2,9 +2,9 @@ An individual Azure subscription is required to perform the tasks. To subscribe,
 
 ## VNet Peering
 
-This lab requires two virtual machines.Each virtual machine should be in a different virtual network. For these instructions, we have AZ500vm01, AZ500vm02, AZ500-vnet, AZ500-vnet1, and az500-rg.
+This lab requires two virtual machines. Each virtual machine should be in a different virtual network. For these instructions, we have AZ500vm01, AZ500vm02, AZ500-vnet, AZ500-vnet1, and az500-rg.
 
-To save time, you can connect to each virtual machine. Also, it might helpful to edit the default.htm page on each machine, so the page provides the virtual machine name. For example, This is AZ500vm01.
+To save time, you can connect to each virtual machine. Also, it might be helpful to edit the default.htm page on each machine, so the page provides the virtual machine name. For example, This is AZ500vm01.
 
 In this demonstration, you will configure and test VNet peering.
 
@@ -44,7 +44,6 @@ In this task, you will configure VNet peering and test the previous connection. 
 1.  In the **Portal**, navigate to the **AZ500-vnet** virtual network.
 2.  Under **Settings** select **Peerings**.
 3.  **+ Add** a virtual network peering. The page adapts as you make selections.
-    
      -  Name of the peering from az500-vnet to remote virtual network: **Peering-A-to-B**
      -  Virtual network: **AZ500-vnet1 (az500-rg)**
      -  Name of the peering from az500-vnet1 to az500-vnet: **Peering-B-to-A**
@@ -64,7 +63,6 @@ This task requires a virtual network with two subnets, Subnet1 and Jumpnet. Subn
 1.  In the **Portal**, select your virtual network.
 2.  Under **Settings**, select **Subnets**.
 3.  Click **+ Subnet** to add a new subnet for the firewall.
-    
      -  Name: **AzureFirewallSubnet**
      -  Address range: **10.0.2.0/24**
      -  There is not need for a NAT Gateway, NSG, Route table, or services.
@@ -94,7 +92,6 @@ This task requires a virtual network with two subnets, Subnet1 and Jumpnet. Subn
 6.  Navigate to the new route table.
 7.  Under **Settings**, click **Routes**.
 8.  **Add** a new route. This route will ensure traffic goes through the firewall. Discuss the different next hop types.
-    
      -  Route name: **your choice**
      -  Address prefix: **0.0.0.0/0/**
      -  Next hop type: **Virtual appliance**
@@ -123,12 +120,10 @@ This task requires a virtual network with two subnets, Subnet1 and Jumpnet. Subn
 3.  Select the **Application rule selection** tab.
 4.  Click **Add application rule collection**.
 5.  Review how application rules work and complete the required information.
-    
      -  Name: **your choice**
      -  Priority: **300**
      -  Action: **Allow**
 6.  Continue completing the rule, under **Target FQDNs**. This will allow Subnet1 IP address to traverse the firewall.
-    
      -  Name: **Allow-MSN**
      -  Source type: **IP address**
      -  Source: **10.0.0.0/24**

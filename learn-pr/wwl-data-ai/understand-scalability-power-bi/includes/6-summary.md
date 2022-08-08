@@ -1,4 +1,4 @@
-You've learned that scalability and working with large data is achievable in Power BI. The correct model framework, a proper data model, and using Power BI premium features like large dataset storage enables performant enterprise reporting in Power BI.
+You've learned that scalability and working with large data is achievable in Power BI. The correct model framework, a proper data model, and using Power BI Premium features like large dataset storage enables performant enterprise reporting in Power BI.
 
 ## Learn more
 
