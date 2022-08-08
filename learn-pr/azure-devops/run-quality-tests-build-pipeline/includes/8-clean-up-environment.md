@@ -9,7 +9,7 @@ In this part, you move the work item that you assigned to yourself earlier in th
 
 In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete because you have working unit tests and code coverage tests set up in your build pipeline.
 
-At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting, where you share the work you completed, what went well in the sprint, and what could be improved.
+At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting. Here, you share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 

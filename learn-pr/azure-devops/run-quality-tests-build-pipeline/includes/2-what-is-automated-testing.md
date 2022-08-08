@@ -60,7 +60,7 @@ When you relate testing to continuous integration and continuous delivery pipeli
 
 Continuous testing means tests are run early in the development process and as every change moves through the pipeline. Shifting left means considering software quality and testing earlier in the development process.
 
-As an example, developers often add test cases as they develop their feature and run the entire suite of tests before they submit the change to the pipeline. This approach helps ensure both that the feature they're building behaves as expected and that it doesn't break existing features.
+As an example, developers often add test cases as they develop their feature, and run the entire suite of tests before they submit the change to the pipeline. This approach helps ensure both that the feature they're building behaves as expected and that it doesn't break existing features.
 
 Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how to ensure you maintain quality in your DevOps plan.
 
@@ -92,7 +92,7 @@ In fact, many developers follow the _test-driven development_, or TDD, method by
 
 Say you have a large code base that you want to refactor to make certain parts run faster. How do you know that your refactoring efforts won't cause parts of your application to break?
 
-Automated tests serve as a type of contract. That is, you specify the inputs and the expected results. When you have a set of passing tests, you're better able to experiment and refactor your code. When you make a change, all you need to do is run your tests and verify that they continue to pass. After you've met your refactoring goals, you can submit your change to the build pipeline so that everyone can benefit, but with a lower risk of something breaking.
+Automated tests serve as a type of contract. That is, you specify the inputs and the expected results. When you have a set of passing tests, you're better able to experiment and refactor your code. When you make a change, all you need to do is run your tests, and verify that they continue to pass. After you've met your refactoring goals, you can submit your change to the build pipeline so that everyone can benefit, but with a lower risk of something breaking.
 
 ## What types of automated testing are there?
 
@@ -108,7 +108,7 @@ Unit testing verifies the most fundamental components of your program or library
 
 As an example, let's say you have a function that performs an arithmetic operation that includes division. You might specify a few values that you expect your users to enter along with edge-case values such as 0 and -1. If a certain input produces an error or exception, you can verify that the function produces the same error.
 
-Code coverage testing computes the percentage of your code that's covered by your unit tests. Code coverage testing can include conditional branches in your code to ensure that a function is completely covered.
+Code coverage testing computes the percentage of your code that's covered by your unit tests. Code coverage testing can include conditional branches in your code to ensure that a function is covered.
 
 The greater your code coverage percentage, the more confident you can be that you won't later discover a bug in code that wasn't fully tested. You don't need to reach 100 percent code coverage. In fact, when you start, you'll likely find that you have a low percentage. But that gives you a starting point from which you can add additional tests that cover problematic or frequently used code.
 
@@ -118,7 +118,7 @@ When you're learning about unit testing, you might hear terms such as _mocks_, _
 
 Recall that a unit test should verify an individual function or method, and not how multiple components interact. But if you have a function that calls a database or web server, how do you handle that?
 
-Not only does a call to an external service break isolation, but it can slow things down. If the database or web server goes down or is otherwise unavailable, the call can also disrupt your test run.
+Not only does a call to an external service break isolation, but it can slow down things. If the database or web server goes down or is otherwise unavailable, the call can also disrupt your test run.
 
 By using techniques such as mocking and dependency injection, you can create components that mimic this external functionality. You'll see an example later in this module.
 
@@ -140,6 +140,6 @@ The testing tools you use depend on the type of application you're building and 
 
 No matter what language your application is written in, there are many test tools available to you.
 
-For example, for Java applications, you might choose Checkstyle to perform lint testing and JUnit to perform unit testing.
+For example, for Java applications, you might choose Check style to perform lint testing and JUnit to perform unit testing.
 
 For the _Space Game_ website, which is a .NET application written in C#, Mara chooses NUnit for unit testing because it's popular in the .NET community and she and Andy have prior experience with it.

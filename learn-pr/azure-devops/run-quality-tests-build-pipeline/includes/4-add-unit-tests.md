@@ -161,7 +161,7 @@ Here you configure the build pipeline to run your unit tests and collect the res
 
     Notice that this task doesn't specify the `--logger trx` argument that you used when you ran the tests manually. The `publishTestResults` argument adds that for you. This argument tells the pipeline to generate the TRX file to a temporary directory, accessible through the `$(Agent.TempDirectory)` built-in variable. It also publishes the task results to the pipeline.
 
-    The `projects` argument specifies all C# projects that match *"\*\*/\*.Tests.csproj*." The *"\*\*"* part matches all directories, and the *"\*.Tests.csproj"* part matches all projects whose file name ends with *".Tests.csproj*." The `unit-tests` branch contains just one unit test project, *Tailspin.SpaceGame.Web.Tests.csproj*. But by specifying a pattern, you can run additional test projects without the need to modify your build configuration.
+    The `projects` argument specifies all C# projects that match *"\*\*/\*.Tests.csproj*." The *"\*\*"* part matches all directories, and the *"\*.Tests.csproj"* part matches all projects whose file name ends with *".Tests.csproj*." The `unit-tests` branch contains just one unit test project, *Tailspin.SpaceGame.Web.Tests.csproj*. But by specifying a pattern, you can run more test projects without the need to modify your build configuration.
 
 ## Push the branch to GitHub
 

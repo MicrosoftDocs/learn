@@ -12,15 +12,15 @@ Amita feels much better. She's seeing actual progress in catching bugs and in ea
 
 **Mara:** That's right. Eventually we can even configure the build to fail if we don't meet a given threshold. That would help keep us honest. But for now, we can just see how much is covered.
 
-**Andy:** Great. Getting reports on how much code is covered by unit tests will help us to identify code paths that aren't covered. We can increase the coverage gradually, and that will help save us from feeling overwhelmed by how much there is to do.
+**Andy:** Great. Getting reports on how much code is covered by unit tests will help us to identify code paths that aren't covered. We can increase the coverage gradually, and that will help save us from feeling overwhelmed by how much there's to do.
 
-**Amita:** I'm really excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works, and that the user has a good experience.
+**Amita:** I'm excited about the unit tests. I mostly do manual testing. I focus on the customer's perspective. I don't just look for bugs. I make sure the software does what it's specified to do, that the UI works, and that the user has a good experience.
 
 **Mara:** That perspective is so important and definitely needs a human being. Right now, Andy and I are working on automated tests, software that tests the software. We're concentrating on tests that execute as the software moves through the build pipeline.
 
-That means the two types of tests we've already talked about. The unit tests test individual components and are really fast. Code coverage tells us how much of our code has associated unit tests.
+That means the two types of tests we've already talked about. The unit tests test individual components and are fast. Code coverage tells us how much of our code has associated unit tests.
 
-**Andy:** We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors, and coding style problems really early.
+**Andy:** We should also think about doing lint testing from the command line, before the build. Lint testing can help us catch bugs, programming errors, and coding style problems early.
 
 **Amita:** What about regression tests?
 
@@ -28,7 +28,7 @@ That means the two types of tests we've already talked about. The unit tests tes
 
 **Amita:** OK, so does that leave integration testing?
 
-**Andy:** Integration testing is a bit different. We do integration testing after the build, on the server. Although unit tests help you verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests quite yet. 
+**Andy:** Integration testing is a bit different. We do integration testing after the build, on the server. Although unit tests help you to verify a single component like a function or method, integration testing verifies that multiple components work together. I don't think we're ready for integration tests yet. 
 
 But at some point we also need to think about security and compliance. We should work with the security team to figure out how we can test against their security policies. I remember that was a concern of Tim's and I'd like to bring him into the process more.
 
@@ -42,7 +42,7 @@ But at some point we also need to think about security and compliance. We should
 
 ## How is code coverage done in .NET?
 
-The way you collect code coverage depends on what programming language and frameworks you're using, as well as what code coverage tools are available.
+The way you collect code coverage depends on what programming language and frameworks you're using, and what code coverage tools are available.
 
 Mara and Andy do some investigation around code coverage for .NET applications. Here's what they find:
 
@@ -54,7 +54,7 @@ Mara and Andy do some investigation around code coverage for .NET applications. 
 
     Mara and Andy decide to try Cobertura.
 * To convert Cobertura coverage results to a format that's human-readable, they can use a tool called [ReportGenerator](https://github.com/danielpalme/ReportGenerator?azure-portal=true).
-* ReportGenerator provides a number of formats, including HTML. The HTML formats create detailed reports for each class in a .NET project.
+* ReportGenerator provides many formats, including HTML. The HTML formats create detailed reports for each class in a .NET project.
 
     Specifically, there's an HTML format called **HtmlInline_AzurePipelines**, which provides a visual appearance that matches Azure Pipelines.
 
