@@ -20,7 +20,7 @@ After you move to a GitHub Actions deployment workflow, you need to use a differ
 
 Azure Active Directory (Azure AD) is the service that manages identities for Azure. Some of the main types of identities are:
 
-- *User identities*. A user represents a human who usually signs in interactively by using a browser. Users often have extra security checks to perform when they sign in, such as multifactor authentication (MFA) and Conditional Access, based on their location or network.
+- *User identities*. A user represents a human who usually signs in interactively by using a browser. Users often have extra security checks to perform when they sign in, such as multifactor authentication (MFA), and Conditional Access based on their location or network.
 - *Groups*. A group represents a collection of users. Groups don't authenticate directly, but they provide a convenient way to assign permissions to a set of users together.
 - *Workload identities*. A workload is an automated process or system that usually doesn't have a human directly running it. A workload can sign in to Azure AD, but there's no human to sign in and interact with the authentication process. Workload identities don't have MFA or similar protections, because those features require a person to do something to prove their identity.
 
