@@ -6,6 +6,7 @@ It's important that teams regularly review their delivery plans in order to make
 * Are we sure we can deliver what we have committed to on our current schedule?
 * Are we confident that the teams we depend on will deliver what we need on their current schedule?
 * Are there lulls in our schedule that we could fill with work?
+* Are there issues with dependencies within a team or across teams? 
 
 Delivery plans add value at any point in a project's lifecycle. Since they are dynamically generated based on team backlogs, they're always up-to-date and offer the latest insights.
 
@@ -37,7 +38,7 @@ Unfortunately, more sophisticated team structures can result in gaps or lags in 
 
 **Andy:** I just wish there was a way to see these potential risks coming more easily. Our teams have so many dependencies across the company that there's no way we can attend every meeting and subscribe to every distribution group.
 
-**Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This will help both teams more easily identify how our schedules impact each other. And I know the perfect Azure DevOps extension for the job.
+**Mara:** We should create a delivery plan so that we can see our team sprints side-by-side. This will help both teams more easily identify how our schedules impact each other.  
 
 ## Recommendations for managing multiple Agile teams
 
@@ -53,4 +54,4 @@ Some teams and individuals get territorial when new processes or policies are pr
 
 ### Foster a culture of transparency
 
-Unfortunately, the term "transparency" gets a bad wrap. Nobody asks for more transparency when everything is going great. Instead, transparency (or lack thereof) is often blamed when teams are struggling. Even with all of the opportunities for transparency afforded for Agile teams, it's still subject to the honesty of individuals and teams. Emphasize that one of the reasons for transparency is to be able to identify and address potential issues before it's too late. Everyone understands that people sometimes run into circumstances that prevent them from meeting schedule deadlines. But if they don't feel safe in reporting disappointing news until the last possible moment, it can have a much more destructive impact. Building a comfort level with transparency can start with thanking people for reporting expected delays as early as possible.
+Unfortunately, the term "transparency" gets a bad rap. Nobody asks for more transparency when everything is going great. Instead, transparency (or lack thereof) is often blamed when teams are struggling. Even with all of the opportunities for transparency afforded for Agile teams, it's still subject to the honesty of individuals and teams. Emphasize that one of the reasons for transparency is to be able to identify and address potential issues before it's too late. Everyone understands that people sometimes run into circumstances that prevent them from meeting schedule deadlines. But if they don't feel safe in reporting disappointing news until the last possible moment, it can have a much more destructive impact. Building a comfort level with transparency can start with thanking people for reporting expected delays as early as possible.

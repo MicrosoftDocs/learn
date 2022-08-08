@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which PowerShell cmdlet should you use to specify that a scheduled task that you will be creating should run with elevated privileges?"
+    choices:
+    - content: "**New-ScheduledJobOption**"
+      isCorrect: true
+      explanation: "Correct. The **New-ScheduledJobOption** cmdlet supports the **-RunElevated** parameter that allows you to specify that the task to be created should run with elevated privileges."
+    - content: "**New-JobTrigger**"
+      isCorrect: false
+      explanation: "Incorrect. The **New-ScheduledJobOption** cmdlet supports the **-RunElevated** parameter that allows you to specify that the task to be created should run with elevated privileges."
+    - content: "**Register-ScheduledJob**"
+      isCorrect: false
+      explanation: "Incorrect. The **New-ScheduledJobOption** cmdlet supports the **-RunElevated** parameter that allows you to specify that the task to be created should run with elevated privileges."
+  - content: "You need to ensure that job you created will be running weekly. What PowerShell cmdlet should you use?"
+    choices:
+    - content: "**Get-Job**"
+      isCorrect: false
+      explanation: "Incorrect. The **New-JobTrigger** cmdlet creates a job trigger, including the ability to schedule the job to run weekly."
+    - content: "**New-JobTrigger**"
+      isCorrect: true
+      explanation: "Correct. The **New-JobTrigger** cmdlet creates a job trigger, including the ability to schedule the job to run weekly."
+    - content: "**New-ScheduledJobOption**"
+      isCorrect: false
+      explanation: "Incorrect. The **New-JobTrigger** cmdlet creates a job trigger, including the ability to schedule the job to run weekly."

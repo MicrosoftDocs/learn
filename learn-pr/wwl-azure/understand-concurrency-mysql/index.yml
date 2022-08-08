@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.understand-concurrency-mysql
+metadata:
+  title: Understand concurrency in MySQL
+  description: "Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools."
+  ms.date: 06/20/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand concurrency in MySQL
+summary: Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe thread concurrency
+  - Understand when to use thread pools
+  - Describe isolation levels
+  - Understand locking
+prerequisites: |
+  Demonstrate an understanding of relational databases. Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-mysql
+subjects:
+- database
+units:
+- learn.wwl.understand-concurrency-mysql.introduction
+- learn.wwl.understand-concurrency-mysql.describe-thread-concurrency
+- learn.wwl.understand-concurrency-mysql.understand-when-to-use-thread-pools
+- learn.wwl.understand-concurrency-mysql.describe-isolation-levels
+- learn.wwl.understand-concurrency-mysql.understand-lock
+- learn.wwl.understand-concurrency-mysql.exercise-understand-lock
+- learn.wwl.understand-concurrency-mysql.knowledge-check
+- learn.wwl.understand-concurrency-mysql.summary
+badge:
+  uid: learn.wwl.understand-concurrency-mysql.badge

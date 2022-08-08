@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-microsoft-365-services-use-windows-powershell
+metadata:
+  title: Manage Microsoft 365 services by using Windows PowerShell
+  description: Manage Microsoft 365 services by using Windows PowerShell
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Microsoft 365 services by using Windows PowerShell
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  *   Familiarity to administer remote computers with Windows PowerShell
+  *   Familiarity to manage Azure resources with Windows PowerShell
+summary: |
+  This learning path explains how to efficiently manage the most commonly used services in Microsoft 365, such as Microsoft Azure Active Directory (Azure AD), Microsoft Exchange Online, Microsoft SharePoint Online, and Microsoft Teams.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+modules:
+- learn.wwl.manage-users-groups-licenses-azure-active-directory-use-windows-powershell
+- learn.wwl.manage-exchange-online-use-windows-powershell
+- learn.wwl.manage-sharepoint-online-use-windows-powershell
+- learn.wwl.manage-microsoft-teams-use-windows-powershell
+trophy:
+  uid: learn.wwl.manage-microsoft-365-services-use-windows-powershell.trophy

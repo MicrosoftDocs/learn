@@ -95,6 +95,9 @@ You'll run the test toolkit on a path that contains a deployment template and fi
    > If you downloaded or cloned the tool to your *Downloads* directory, the path would look something like this: *C:\\Users\\<user\>\\Downloads\\arm-ttk\\arm-ttk\\arm-ttk.psd1*.  
 
    You're now ready to use the tool. As long as you're in the same PowerShell session, there's no need to run the import command again.
+
+   > [!NOTE]
+   > If you start a new PowerShell session, you'll need to run the `Import-Module` command again.
   
 1. Run `Test-AzTemplate` in the PowerShell terminal, to start a test run:
 
@@ -105,39 +108,87 @@ You'll run the test toolkit on a path that contains a deployment template and fi
    You see an output similar to the following in the terminal:
 
    ```output
-   Validating deploy\azuredeploy.js 
-   deploymentTemplate
-   [+] adminUsername Should Not Be A Literal (4 ms)
-   [+] apiVersions Should Be Recent (2 ms)
-   [+] artifacts parameter (1 ms)
-   [+] DependsOn Best Practices (2 ms)
-   [+] Deployment Resources Must Not Be Debug (2 ms)
-   [+] DeploymentTemplate Must Not Contain Hardcoded Uri (1 ms)
-   [+] DeploymentTemplate Schema Is Correct (1 ms)
-   [+] Dynamic Variable References Should Not Use Concat (1 ms)
-   [+] IDs Should Be Derived From ResourceIDs (3 ms)
-   [+] Location Should Not Be Hardcoded (1 ms)
-   [+] ManagedIdentityExtension must not be used (2 ms)
-   [+] Min And Max Value Are Numbers (1 ms)
-   [+] Outputs Must Not Contain Secrets (4 ms)
-   [-] Parameters Must Be Referenced (2 ms)
-       Unreferenced parameter: location
+   Validating deploy\azuredeploy.json
+     JSONFiles Should Be Valid
+       [+] JSONFiles Should Be Valid (16 ms)
+   Fail  : 0
+   Total : 1
+   Pass  : 1
 
-   [+] Parameters Property Must Exist (1 ms)
-   [+] providers apiVersions Is Not Permitted (1 ms)
-   [+] ResourceIds should not contain (1 ms)
-   [-] Resources Should Have Location (8 ms)
-       Resource Location must be an expression or 'global'
 
-   [+] Secure String Parameters Cannot Have Default (1 ms)
-   [+] Template Should Not Contain Blanks (1 ms)
-   [+] Variables Must Be Referenced (1 ms)
-   [+] Virtual Machines Should Not Be Preview (3 ms)
-   [+] VM Images Should Use Latest Version (1 ms)
-   [+] VM Size Should Be A Parameter (3 ms)
+
+     adminUsername Should Not Be A Literal
+       [+] adminUsername Should Not Be A Literal (6 ms)
+     apiVersions Should Be Recent In Reference Functions
+       [+] apiVersions Should Be Recent In Reference Functions (10 ms)
+     apiVersions Should Be Recent
+       [+] apiVersions Should Be Recent (7 ms)
+     artifacts parameter
+       [+] artifacts parameter (5 ms)
+     CommandToExecute Must Use ProtectedSettings For Secrets
+       [+] CommandToExecute Must Use ProtectedSettings For Secrets (7 ms)
+     DependsOn Best Practices
+       [+] DependsOn Best Practices (6 ms)
+     Deployment Resources Must Not Be Debug
+       [+] Deployment Resources Must Not Be Debug (5 ms)
+     DeploymentTemplate Must Not Contain Hardcoded Uri
+       [+] DeploymentTemplate Must Not Contain Hardcoded Uri (5 ms)
+     DeploymentTemplate Schema Is Correct
+       [+] DeploymentTemplate Schema Is Correct (4 ms)
+     Dynamic Variable References Should Not Use Concat
+       [+] Dynamic Variable References Should Not Use Concat (4 ms)
+     IDs Should Be Derived From ResourceIDs
+       [+] IDs Should Be Derived From ResourceIDs (6 ms)
+     deploymentTemplate
+       [-] Location Should Not Be Hardcoded (13 ms)
+           Location value of 'westus' on resource '' must be an expression or 'global'. Line: 14, Column: 9    
+
+     ManagedIdentityExtension must not be used
+       [+] ManagedIdentityExtension must not be used (5 ms)
+     Min And Max Value Are Numbers
+       [+] Min And Max Value Are Numbers (5 ms)
+     Outputs Must Not Contain Secrets
+       [+] Outputs Must Not Contain Secrets (5 ms)
+     Parameter Types Should Be Consistent
+       [+] Parameter Types Should Be Consistent (9 ms)
+     deploymentTemplate
+       [-] Parameters Must Be Referenced (6 ms)
+           Unreferenced parameter: location Line: 5, Column: 9
+
+     Password params must be secure
+       [+] Password params must be secure (11 ms)
+     providers apiVersions Is Not Permitted
+       [+] providers apiVersions Is Not Permitted (5 ms)
+     ResourceIds should not contain
+       [+] ResourceIds should not contain (5 ms)
+     deploymentTemplate
+       [-] Resources Should Have Location (5 ms)
+           Resource  Location must be an expression or 'global'
+
+     Resources Should Not Be Ambiguous
+       [+] Resources Should Not Be Ambiguous (7 ms)
+     Secure Params In Nested Deployments
+       [+] Secure Params In Nested Deployments (10 ms)
+     Secure String Parameters Cannot Have Default
+       [+] Secure String Parameters Cannot Have Default (7 ms)
+     Template Should Not Contain Blanks
+       [+] Template Should Not Contain Blanks (5 ms)
+     URIs Should Be Properly Constructed
+       [+] URIs Should Be Properly Constructed (8 ms)
+     Variables Must Be Referenced
+       [+] Variables Must Be Referenced (5 ms)
+     Virtual Machines Should Not Be Preview
+       [+] Virtual Machines Should Not Be Preview (8 ms)
+     VM Images Should Use Latest Version
+       [+] VM Images Should Use Latest Version (5 ms)
+     VM Size Should Be A Parameter
+       [+] VM Size Should Be A Parameter (5 ms)
+   Fail  : 3
+   Total : 31
+   Pass  : 28
    ```
 
-   The preceding output shows how two tests are failing: **Resources Should have Location** and  **Parameters Must Be Referenced**. The prefix `[-]` indicates a failing test.
+   The preceding output shows how three tests are failing: **Location Should Not Be Hardcoded**, **Parameters Must Be Referenced**, and **Resources Should Have Location**. The prefix `[-]` indicates a failing test.
 
    To understand what's going on, open the *azuredeploy.json* file. It should look like this:
 
@@ -199,31 +250,77 @@ The reason is twofold. Not only can the location parameter be set as a parameter
 
    ```output
    Validating deploy\azuredeploy.json
-     deploymentTemplate
-       [+] adminUsername Should Not Be A Literal (6 ms)
-       [+] apiVersions Should Be Recent (2 ms)
-       [+] artifacts parameter (1 ms)
-       [+] DependsOn Best Practices (1 ms)
-       [+] Deployment Resources Must Not Be Debug (1 ms)
-       [+] DeploymentTemplate Must Not Contain Hardcoded Uri (1 ms)
-       [+] DeploymentTemplate Schema Is Correct (1 ms)
-       [+] Dynamic Variable References Should Not Use Concat (1 ms)
-       [+] IDs Should Be Derived From ResourceIDs (4 ms)
-       [+] Location Should Not Be Hardcoded (1 ms)
-       [+] ManagedIdentityExtension must not be used (1 ms)
-       [+] Min And Max Value Are Numbers (1 ms)
-       [+] Outputs Must Not Contain Secrets (1 ms)
-       [+] Parameters Must Be Referenced (1 ms)
-       [+] Parameters Property Must Exist (1 ms)
-       [+] providers apiVersions Is Not Permitted (1 ms)
-       [+] ResourceIds should not contain (1 ms)
-       [+] Resources Should Have Location (1 ms)
-       [+] Secure String Parameters Cannot Have Default (1 ms)
-       [+] Template Should Not Contain Blanks (1 ms)
-       [+] Variables Must Be Referenced (1 ms)
-       [+] Virtual Machines Should Not Be Preview (4 ms)
-       [+] VM Images Should Use Latest Version (1 ms)
-       [+] VM Size Should Be A Parameter (4 ms)
+     JSONFiles Should Be Valid
+       [+] JSONFiles Should Be Valid (83 ms)
+   Fail  : 0
+   Total : 1
+   Pass  : 1
+
+
+
+     adminUsername Should Not Be A Literal
+       [+] adminUsername Should Not Be A Literal (36 ms)
+     apiVersions Should Be Recent In Reference Functions
+       [+] apiVersions Should Be Recent In Reference Functions (57 ms)
+     piVersions Should Be Recent
+       [+] apiVersions Should Be Recent (67 ms)
+     artifacts parameter
+       [+] artifacts parameter (19 ms)
+     CommandToExecute Must Use ProtectedSettings For Secrets
+       [+] CommandToExecute Must Use ProtectedSettings For Secrets (93 ms)
+     DependsOn Best Practices
+       [+] DependsOn Best Practices (52 ms)
+     Deployment Resources Must Not Be Debug
+       [+] Deployment Resources Must Not Be Debug (77 ms)
+     DeploymentTemplate Must Not Contain Hardcoded Uri
+       [+] DeploymentTemplate Must Not Contain Hardcoded Uri (18 ms)
+     DeploymentTemplate Schema Is Correct
+       [+] DeploymentTemplate Schema Is Correct (73 ms)
+     Dynamic Variable References Should Not Use Concat
+       [+] Dynamic Variable References Should Not Use Concat (72 ms)
+     IDs Should Be Derived From ResourceIDs
+       [+] IDs Should Be Derived From ResourceIDs (15 ms)
+     Location Should Not Be Hardcoded
+       [+] Location Should Not Be Hardcoded (24 ms)
+     ManagedIdentityExtension must not be used
+       [+] ManagedIdentityExtension must not be used (143 ms)
+     Min And Max Value Are Numbers
+       [+] Min And Max Value Are Numbers (23 ms)
+     Outputs Must Not Contain Secrets
+       [+] Outputs Must Not Contain Secrets (160 ms)
+     Parameter Types Should Be Consistent
+       [+] Parameter Types Should Be Consistent (13 ms)
+     Parameters Must Be Referenced
+       [+] Parameters Must Be Referenced (13 ms)
+     Password params must be secure
+       [+] Password params must be secure (12 ms)
+     providers apiVersions Is Not Permitted
+       [+] providers apiVersions Is Not Permitted (79 ms)
+     ResourceIds should not contain
+       [+] ResourceIds should not contain (12 ms)
+     Resources Should Have Location
+       [+] Resources Should Have Location (17 ms)
+     Resources Should Not Be Ambiguous
+       [+] Resources Should Not Be Ambiguous (17 ms)
+     Secure Params In Nested Deployments
+       [+] Secure Params In Nested Deployments (17 ms)
+     Secure String Parameters Cannot Have Default
+       [+] Secure String Parameters Cannot Have Default (16 ms)
+     Template Should Not Contain Blanks
+       [+] Template Should Not Contain Blanks (83 ms)
+     URIs Should Be Properly Constructed
+       [+] URIs Should Be Properly Constructed (108 ms)
+     Variables Must Be Referenced
+       [+] Variables Must Be Referenced (111 ms)
+     Virtual Machines Should Not Be Preview
+       [+] Virtual Machines Should Not Be Preview (16 ms)
+     VM Images Should Use Latest Version
+       [+] VM Images Should Use Latest Version (22 ms)
+     VM Size Should Be A Parameter
+       [+] VM Size Should Be A Parameter (133 ms)
+   Fail  : 0
+   Total : 31
+   Pass  : 31   
    ```
 
 Success! You've run the test tool, located errors, and fixed them.

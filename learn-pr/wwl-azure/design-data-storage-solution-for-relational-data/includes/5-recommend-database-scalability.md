@@ -30,9 +30,9 @@ There are two types of scaling you can implement in Azure SQL Database. These ar
 
 ## Design Vertical scaling solution
 
-Imagine a scenario where a small business experiences rapid growth globally and needs to maintain and scale separate Azure SQL databases for each location. However, the rates of growth and database load vary significantly, so resource requirements are unpredictable. How would you manage scaling to meet the demands of this organization?
+Imagine a scenario where a small business experiences rapid growth globally and needs to maintain and scale separate Azure SQL Databases for each location. However, the rates of growth and database load vary significantly, so resource requirements are unpredictable. How would you manage scaling to meet the demands of this organization?
 
-In this case, it is ideal to choose SQL Elastic pools, to scale, manage performance, and manage costs for a set of Azure SQL databases.
+In this case, it is ideal to choose SQL Elastic pools, to scale, manage performance, and manage costs for a set of Azure SQL Databases.
 
 :::image type="content" source="../media/elastic-pools.png" alt-text="Image shows SQL elastic pools and the scaling capability for the different service tiers.":::
 
@@ -57,13 +57,13 @@ Imagine a scenario where an application's database is accessed for OLTP for upda
 
 An easy choice here is to use the pre-provisioned read scale-out feature for certain service tiers. The read scale-out feature allows you to offload read-only workloads using the compute capacity of one of the read-only replicas, instead of running them on the read-write replica. This way, some read-only workloads can be isolated from the read-write workloads and will not affect their performance.
 
-The following table shows Read Scale-out provisioning for Azure SQL DB and Azure SQL Managed Instance:
+The following table shows Read Scale-out provisioning for Azure SQL Database and Azure SQL Managed Instance:
 
-| **Azure SQL DB Managed Instance**| **Azure SQL DB** |
+| **Azure SQL Managed Instance**| **Azure SQL Database** |
 | - | - |
 | For the basic, standard and general purpose tier, read scale-out feature is unavailable| For the basic, standard and general purpose tier, read scale-out feature is unavailable |
 | For the Business Critical tier, read scale-out is auto-provisioned| For the Premium and Business Critical tier, read scale-out is auto-provisioned |
-| Hyperscale tier is unavailable in Azure Managed Instance| Read scale-put feature is available in Hyperscale tier if atleast one secondary replica is created |
+| Hyperscale tier is unavailable in Azure Managed Instance| Read scale-out feature is available in Hyperscale tier if atleast one secondary replica is created |
 
 
  
@@ -84,7 +84,7 @@ In the image above, in Business Critical scenario, the data and log files are al
 
  
 
-The premium/business critical tier of Azure SQL DB or Azure Managed Instance has an Always On Availability Group. This group is for disaster recovery and high-availability of the application. There is a primary read-write replica and several secondary read-only replicas. The secondary replicas are provisioned with the same compute size as the primary replica. You set the connection string option to decide whether the connection is routed to the write replica or to a read-only replica.
+The premium/business critical tier of Azure SQL Database or Azure Managed Instance has an Always On Availability Group. This group is for disaster recovery and high-availability of the application. There is a primary read-write replica and several secondary read-only replicas. The secondary replicas are provisioned with the same compute size as the primary replica. You set the connection string option to decide whether the connection is routed to the write replica or to a read-only replica.
 
 You can disable and re-enable read scale-out on single databases and elastic pool databases in the Premium or Business Critical service tiers using the following methods:
 
@@ -121,6 +121,6 @@ The following table identifies key points to remember before choosing Vertical/H
 
 | **Requirement**| **Description** |
 | - | - |
-| Do you have to manage and scale multiple Azure SQL databases that have varying and unpredictable resource requirements?| **SQL elastic pools.** Vertical scale up is a good solution for this scenario. Elastic pools solve this problem by ensuring that databases get the performance resources they need when they need it. They provide a simple resource allocation mechanism within a predictable budget. There is no per-database charge for elastic pools. You are billed for each hour a pool exists at the highest eDTU or vCores, regardless of usage or whether the pool was active for less than an hour. |
+| Do you have to manage and scale multiple Azure SQL Databases that have varying and unpredictable resource requirements?| **SQL elastic pools.** Vertical scale up is a good solution for this scenario. Elastic pools solve this problem by ensuring that databases get the performance resources they need when they need it. They provide a simple resource allocation mechanism within a predictable budget. There is no per-database charge for elastic pools. You are billed for each hour a pool exists at the highest eDTU or vCores, regardless of usage or whether the pool was active for less than an hour. |
 | Do you have different sections of the database residing in different parts of the world for compliance concerns?| **Horizontal scaling by Sharding** works best. Sharding enables you to split your data into several databases and scale them independently. The shard map manager is a special database that maintains global mapping information about all shards (databases) in a shard set. The metadata allows an application to connect to the correct database, based upon the value of the sharding key. |
 | Are there dependencies such as commercial BI or data integration tools where multiple databases contribute rows into a single overall result for use in Excel, Power BI, or Tableau?| Use **Elastic database tools** and elastic query feature within it to access data spread across multiple databases. Elastic query is available on standard tier, querying can be done in T-SQL that spans multiple databases in Azure SQL Database. Cross-database queries can be executed to access remote tables, and to connect Microsoft and third-party tools (Excel, Power BI, Tableau, etc.) to query across data tiers. Using this feature, you can scale out queries to large data tiers and visualize the results in business intelligence (BI) reports. |

@@ -6,9 +6,9 @@ This Defender for Cloud plan brings threat protections for the following open-so
 - Azure Database for MySQL
 - Azure Database for MariaDB
 
-When you enable this plan, Microsoft Defender for Cloud will provide alerts when it detects anomalous database access and query patterns as well as suspicious database activities.
+When you enable this plan, Microsoft Defender for Cloud will provide alerts when it detects anomalous database access and query patterns and suspicious database activities.
 
-![alert screen with open-source database alerts.](../media/defender-alerts.png)
+:::image type="content" source="../media/defender-alerts.png" alt-text="Screenshot of alert screen with open-source database alerts.":::
 
 ### Microsoft Defender alerts for open-source relational databases
 

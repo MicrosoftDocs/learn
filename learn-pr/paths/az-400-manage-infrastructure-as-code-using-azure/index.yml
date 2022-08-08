@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-400-manage-infrastructure-as-code-using-azure
 metadata:
-  title: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
-  description: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
-  ms.date: 02/09/2022
+  title: 'AZ-400: Manage infrastructure as code using Azure and DSC'
+  description: 'AZ-400: Manage infrastructure as code using Azure and DSC'
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'AZ-400: Manage infrastructure as code using Azure, DSC, and third-party tools'
+title: 'AZ-400: Manage infrastructure as code using Azure and DSC'
 prerequisites: |
   None
 summary: |
@@ -44,8 +44,6 @@ modules:
 - learn.wwl.create-azure-resources-by-using-azure-cli
 - learn.wwl.explore-azure-automation-devops
 - learn.wwl.implement-desired-state-configuration-dsc
-- learn.wwl.introduction-to-chef-puppet
-- learn.wwl.implement-ansible
-- learn.wwl.implement-terraform
+- learn.wwl.implement-bicep
 trophy:
   uid: learn.wwl.az-400-manage-infrastructure-as-code-using-azure.trophy

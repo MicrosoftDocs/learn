@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.exercise-explore-data-warehouse
+title: Exercise - Explore a data warehouse
+metadata:
+  title: Exercise - Explore a data warehouse
+  description: "Exercise - Explore a data warehouse"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/6-exercise-explore-data-warehouse.md)]

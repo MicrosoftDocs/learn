@@ -7,8 +7,6 @@ For cloud services, prevention and response are the joint
 responsibilities of the cloud service provider and the customer. For
 more information about the latest threats to endpoints and the cloud,
 see the [Microsoft Security Intelligence Report](https://www.microsoft.com/security/operations/security-intelligence-report).
-This section can help you develop a roadmap toward closing the gaps
-between your current plans and the guidelines described here.
 
 Traditionally, organizational security was focused on the entry and exit
 points of a network as the security perimeter. However, SaaS apps and
@@ -18,6 +16,8 @@ authentication in your organization's identity layer, with users
 assigned to privileged administrative roles in control. Their access
 must be protected, whether the environment is on-premises, cloud, or a
 hybrid.
+
+## Securing privileged access
 
 Securing privileged access requires changes to:
 
@@ -44,6 +44,7 @@ and response implementation. The timelines for this roadmap are
 approximations.
 
 ![Diagram of stages of the roadmap to secure privileged access with time lines.](../media/stages.png) 
+
 - **Stage 1 (24-48 hours):** Critical items that we recommend you do
     right away
 - **Stage 2 (2-4 weeks):** Mitigate the most frequently used attack

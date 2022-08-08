@@ -1,6 +1,6 @@
 Application Insights, a feature of Azure Monitor, monitors your live applications. It will automatically detect performance anomalies, and includes powerful analytics tools to help you diagnose issues and to understand what users actually do with your app. It's designed to help you continuously improve performance and usability. Insights works on various platforms including .NET, Node.js and Java EE, hosted on-premises, hybrid, or any public cloud. It integrates with your DevOps process, and has connection points to a variety of development tools. It can monitor and analyze data from mobile apps by integrating with Visual Studio App Center.
 
-:::image type="content" source="../media/app-insights-16629887.png" alt-text="Application Insights is receiving information from web pages, client apps, and web services. The information is transferred to Alerts, Power BI, and Visual Studio.":::
+:::image type="content" source="../media/app-insights-16629887.png" alt-text="Diagram where Application Insights is receiving information from web pages, client apps, and web services. The information is transferred to Alerts, Power B I, and Visual Studio.":::
 
 
 ## Application Insights features

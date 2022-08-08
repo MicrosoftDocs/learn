@@ -23,12 +23,11 @@ For example, you might need to get your source code from GitHub. In this case, l
     
     As you can see, there are many types of service connections. You can create a connection to:
     
+    
      -  Apple App Store.
-        
-         -  Docker Registry
-            
-             -  Bitbucket.
-             -  Azure Service bus.
+     -  Docker Registry
+     -  Bitbucket.
+     -  Azure Service bus.
     
     In this case, we want to deploy a new Azure resource, so we'll use the Azure Resource Manager option.
 

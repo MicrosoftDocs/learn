@@ -15,7 +15,6 @@ Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engin
 Manage identity and access (30-35%)
 
  -  Configure secure access by using Azure AD
-    
      -  monitor privileged access for Azure AD Privileged Identity Management (PIM)
      -  configure PIM
 

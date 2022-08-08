@@ -2,14 +2,14 @@
 uid: learn.wwl.build-overall-security-strategy-architecture.design-security-for-resiliency-strategy
 title: Design security for a resiliency strategy
 metadata:
-  title: Design security for a resiliency strategy
-  description: "Design security for a resiliency strategy"
+  title: Design security for a resilience strategy
+  description: "Design security for a resilience strategy"
   ms.date: 06/07/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/6-design-security-for-resiliency-strategy.md)]

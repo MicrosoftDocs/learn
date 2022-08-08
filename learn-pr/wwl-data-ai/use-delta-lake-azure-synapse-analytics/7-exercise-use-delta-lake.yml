@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-delta-lake-azure-synapse-analytics.exercise-use-delta-lake
+title: Exercise - Use Delta Lake in Azure Synapse Analytics
+metadata:
+  title: Exercise - Use Delta Lake in Azure Synapse Analytics
+  description: "Exercise - Use Delta Lake in Azure Synapse Analytics"
+  ms.date: 07/07/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 40
+content: |
+  [!include[](includes/7-exercise-use-delta-lake.md)]

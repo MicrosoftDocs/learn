@@ -6,6 +6,7 @@ Collaboration is a key DevOps value. Developers need a way to work with source c
 
 Azure DevOps works with different kinds of source control, but many Azure DevOps organizations choose to use Git. Git is a distributed system in which all contributors have their own copy of the work. In this module, you use the branching and merging capabilities of Git to more efficiently work with other developers. You also use GitHub, a central location for teams to host their projects and share their work.
 
+
 ## Learning objectives
 
 After completing this module, you'll be able to:

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-data-warehouse-query-performance-azure-synapse-analytics.exercise-see-how-statistics-affects-query-plan
+title: Exercise - See how statistics affects a query plan
+metadata:
+  title: Exercise - See how statistics affects a query plan
+  description: "Exercise - See how statistics affects a query plan"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/10a-exercise-see-how-statistics-affects-query-plan.md)]

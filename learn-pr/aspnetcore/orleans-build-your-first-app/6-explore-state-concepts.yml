@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.orleans-build-first-app.explore-state-concepts
+title: Explore state management
+metadata:
+  title: Explore state management
+  description: Explore state management in Orleans.
+  ms.date: 5/15/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-explore-state-concepts.md)]

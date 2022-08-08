@@ -1,0 +1,47 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-cloud-resources-use-windows-powershell
+metadata:
+  title: Manage cloud resources by using Windows PowerShell
+  description: Manage cloud resources by using Windows PowerShell
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage cloud resources by using Windows PowerShell
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation.
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives.
+  *   Familiarity with CIM and WMI technologies.
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell.
+  *   Familiarity to administer remote computers with Windows PowerShell.
+summary: |
+  This learning path explains how to install the necessary modules for cloud services management and use PowerShell commands to perform simple administrative tasks on cloud resources such as Azure virtual machines, Azure storage accounts, and Azure subscriptions. The learning path also covers how to use the Azure Cloud Shell environment to perform PowerShell-based or Bash-based administration directly from the Azure portal.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-storage
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+modules:
+- learn.wwl.review-azure-powershell-module
+- learn.wwl.review-features-tools-for-azure-cloud-shell
+- learn.wwl.manage-azure-resources-windows-powershell
+trophy:
+  uid: learn.wwl.manage-cloud-resources-use-windows-powershell .trophy

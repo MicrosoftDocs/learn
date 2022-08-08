@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you start to work on your toy company's website workflow, you need to configure your environment. In this section, you make sure that your Azure and GitHub environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
@@ -186,15 +188,15 @@ To work with resource groups in Azure, sign in to your Azure account from the Vi
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-   -DisplayName ToyWebsiteTest `
-   -Role Contributor `
-   -Scope $resourceGroupId
+     -DisplayName ToyWebsiteTest `
+     -Role Contributor `
+     -Scope $resourceGroupId
 
    $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
+     clientId = $servicePrincipal.AppId
+     clientSecret = $servicePrincipal.PasswordCredentials.SecretText
+     subscriptionId = $azureContext.Subscription.Id
+     tenantId = $azureContext.Tenant.Id
    }
    $output | ConvertTo-Json
    ```

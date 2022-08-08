@@ -1,0 +1,57 @@
+### YamlMime:Module
+uid: learn.wwl.review-azure-powershell-module
+metadata:
+  title: Review Azure PowerShell module
+  description: "This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Azure Active Directory (Azure AD) by using PowerShell modules."
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Review Azure PowerShell module
+summary: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Azure Active Directory (Azure AD) by using PowerShell modules.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Describe Azure PowerShell.
+  - Describe the Azure Az PowerShell module.
+  - Install the Azure Az PowerShell module.
+  - Migrate Azure PowerShell from AzureRM to Az.
+  - Describe the Azure Active Directory Module for Windows PowerShell and Azure Active Directory PowerShell for Graph modules.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation.
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives.
+  *   Familiarity with CIM and WMI technologies.
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell.
+  *   Familiarity to administer remote computers with Windows PowerShell.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.review-azure-powershell-module.introduction
+- learn.wwl.review-azure-powershell-module.review-azure-powershell
+- learn.wwl.review-azure-powershell-module.review-benefits-of-azure-powershell-module
+- learn.wwl.review-azure-powershell-module.install-azure-powershell-module
+- learn.wwl.review-azure-powershell-module.migrate-powershell-from-azurerm-to-azure
+- learn.wwl.review-azure-powershell-module.review-microsoft-azure-active-directory-module-for-windows-powershell
+- learn.wwl.review-azure-powershell-module.knowledge-check
+- learn.wwl.review-azure-powershell-module.summary
+badge:
+  uid: learn.wwl.review-azure-powershell-module.badge

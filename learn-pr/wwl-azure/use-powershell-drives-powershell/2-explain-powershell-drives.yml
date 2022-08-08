@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-powershell-drives-powershell.explain-powershell-drives
+title: Explain PowerShell drives in PowerShell
+metadata:
+  title: Explain PowerShell drives in PowerShell
+  description: "Explain PowerShell drives in PowerShell"
+  ms.date: 07/28/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-explain-powershell-drives.md)]

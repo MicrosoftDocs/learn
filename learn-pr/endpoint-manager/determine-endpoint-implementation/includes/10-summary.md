@@ -1,14 +1,14 @@
-This module helps you determine and prepare your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans.
+This module helps you determine and prepare your endpoint-management objectives, device-inventory considerations, licensing needs, infrastructure objectives, and rollout plans.
 
-In this module, you learned about the things to consider when implementing an endpoint management deployment or migration. Specifically, you learned the following:
+In this module, you learned about the things to consider when implementing an endpoint-management deployment or migration. Specifically, you learned the following:
 
-- Determine your organization's endpoint management objectives.
-- Inventory your endpoint management devices.
-- Determine endpoint management licensing.
-- Review existing endpoint management policies and infrastructure.
-- Create an endpoint management rollout plan.
-- Determine endpoint management communication.
-- Prepare endpoint management support and help desk.
+- Determine your organization's endpoint-management objectives
+- Inventory your endpoint-management devices
+- Determine endpoint-management licensing
+- Review existing endpoint-management policies and infrastructure
+- Create an endpoint-management rollout plan
+- Determine endpoint-management communication
+- Prepare endpoint-management support and helpdesk
 
 ## Next steps
 

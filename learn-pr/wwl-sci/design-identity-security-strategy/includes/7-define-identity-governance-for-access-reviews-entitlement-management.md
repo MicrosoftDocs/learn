@@ -9,7 +9,7 @@ continued access based on suggestions from Azure AD. When an access
 review is finished, you can make changes and remove access from users
 who no longer need it.
 
-### Create and perform an access review for users
+## Create and perform an access review for users
 
 To perform an access review, you must be assigned one of the following roles:
 
@@ -42,7 +42,7 @@ Next, do the following:
 
 7. After the reviewers give input, stop the access review and apply the changes. For more information, see [Complete an access review of groups or applications](/azure/active-directory/governance/complete-access-review).
 
-### Manage guest access with Azure AD access reviews
+## Manage guest access with Azure AD access reviews
 
 With Azure Active Directory (Azure AD), you can easily enable collaboration across organizational boundaries by using the [Azure AD B2B feature](/azure/active-directory/external-identities/what-is-b2b).
 
@@ -74,7 +74,7 @@ There are a few main scenarios for delegating access governance from IT administ
 * Ask a sponsor to review a guest's access to an application - You can ask a sponsor, such as the owner of an application, to review the guest's need for continued access to the application.
 * Ask guests to review their need for access, in general - In some organizations, guests might not be aware of their group memberships.
 
-### Manage entitlement
+## Manage entitlement
 
 With applications centrally authenticating and driven from Azure AD, you can now streamline your access request, approval, and re-certification process to make sure that the right people have the right access and
 that you have a trail of why users in your organization have the access they have.

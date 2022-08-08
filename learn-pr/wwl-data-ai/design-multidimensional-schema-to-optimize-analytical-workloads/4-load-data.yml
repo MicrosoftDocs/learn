@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.load-data
+title: Load data warehouse tables
+metadata:
+  title: Load data warehouse tables
+  description: "Load data warehouse tables"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-load-data.md)]

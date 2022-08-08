@@ -25,7 +25,7 @@ Site Recovery provides the capabilities described in the following table.
 | Azure automation integration| Download, from the Azure Automation library, and integrate app-specific scripts with Site Recovery. |
 
 
-### Consider using Azure Site Recover with Azure Backup
+### Consider using Azure Site Recovery with Azure Backup
 
  
 

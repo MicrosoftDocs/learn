@@ -4,12 +4,13 @@ title: Plan your line of business application registration strategy
 metadata:
   title: Plan your line of business application registration strategy
   description: "Plan your line of business application registration strategy"
-  ms.date: 08/04/2021
+  ms.date: 07/25/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/2-plan-your-line-business-application-registration-strategy.md)]

@@ -1,4 +1,4 @@
-The externaldata operator returns a table whose schema is defined in the query itself and whose data is read from an external storage artifact, such as a blob in Azure Blob Storage or an Azure Data Lake Storage file.
+The externaldata operator returns a table whose schema is defined in the query itself. And whose data is read from an external storage artifact, such as a blob in Azure Blob Storage or an Azure Data Lake Storage file.
 
 Syntax
 

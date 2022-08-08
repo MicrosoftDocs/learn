@@ -25,8 +25,8 @@ In this section, you set up a rule on GitHub that requires at least one reviewer
 1. In GitHub, go to your _Space Game_ project repository.
 1. Select the **Settings** tab near the top of the page.
 1. On the menu, select **Branches**.
-1. Ensure that **main** is selected as your default branch.
-1. Select **Add rule**.
+1. Make sure that **main** is selected as your default branch.
+1. Select **Add branch protection rule**.
 1. Under **Branch name pattern**, enter **main**.
 1. Select the **Require pull request reviews before merging** check box.
 1. Keep the **Required approving reviews** value at **1**.
