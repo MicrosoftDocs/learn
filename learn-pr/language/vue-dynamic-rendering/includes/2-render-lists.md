@@ -38,7 +38,7 @@ If you want to display the items, you could use the following code:
 
 ```html
 <ul id="demo">
-    <li v-for="name in names">{{ name }}</div>
+    <li v-for="name in names">{{ name }}</li>
 </ul>
 ```
 
