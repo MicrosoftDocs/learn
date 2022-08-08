@@ -12,7 +12,7 @@ _Everyone looks at Amita. She has been especially frustrated lately._
 
 _Andy writes "Dependency versioning challenges for QA" on the whiteboard._
 
-**Tim:** I'd like to add operations to that frustration. We have a few teams that have unique version requirements, so we have to publish their apps on their own virtual machines just to ensure their version and component requirements don't conflict with our other apps. Besides the overhead involved in maintaining the extra set of VMs, it also costs us more than it would if those apps could run side by side.
+**Tim:** I'd like to add operations to that frustration. We have a few teams with unique version requirements, so we have to publish their apps on their own virtual machines just to ensure their version and component requirements don't conflict with our other apps. Besides the overhead involved in maintaining the extra set of VMs, it also costs us more than it would if those apps could run side by side.
 
 _Andy writes "Overhead due to solving app isolation with VMs" on the whiteboard._
 
@@ -34,7 +34,7 @@ The next morning, Andy calls a meeting to present a new idea to the team.
 
 **Amita:** What's a container? Is that like a _.zip_ file?
 
-**Andy:** Not exactly. It's more like a lightweight virtual machine designed to run directly on the host operating system. When you build your project, the output is a container that includes your software along with its dependencies. However, it's not a complete virtualized system, so it can spin up in as little as less than one second.
+**Andy:** Not exactly. It's more like a lightweight virtual machine designed to run directly on the host operating system. When you build your project, the output is a container that includes your software and its dependencies. However, it's not a complete virtualized system, so it can spin up in as little as less than one second.
 
 **Tim:** How does it handle security and isolation?
 
@@ -68,4 +68,4 @@ The Tailspin team selected Docker containers for this scenario because it met al
 
     Containers ship with manifests that automate configuration requirements, such as which ports need to be exposed.
 
-Adopting Docker containers can be a key step on the path towards a microservices architecture. We'll discuss more about that later on.
+Adopting Docker containers can be a key step towards a microservices architecture. We'll discuss more about that later on.
