@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/28/2021
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -36,9 +36,9 @@ quiz:
     - content: "One-way with selective authentication and the production forest trusting the ESAE forest"
       isCorrect: true
       explanation: "That's correct. The ESAE forest model uses one-way trust with selective authentication and the production forest trusting the ESAE forest."
-    - content: "One-way with the forest-wide authentication and the ESAE forest trusting the production forest"
+    - content: "One-way with the forest-wide authentication and the production forest trusting the ESAE forest"
       isCorrect: false
-      explanation: "That's incorrect. The ESAE forest model uses one-way trust with selective authentication and the production forest trusting the ESAE forest."
+      explanation: "That's incorrect. The ESAE forest model uses one-way trust with selective authentication. Also, the production forest trusts the ESAE forest, not the other way around."
   - content: "Which of the following tools can be used to monitor and troubleshoot AD DS replication?"
     choices:
     - content: "Nltest.exe"

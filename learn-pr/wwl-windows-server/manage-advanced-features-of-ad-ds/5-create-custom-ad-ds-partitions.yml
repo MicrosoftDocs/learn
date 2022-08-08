@@ -4,7 +4,7 @@ title: Create custom AD DS partitions
 metadata:
   title: Create custom AD DS partitions
   description: "Create custom AD DS partitions"
-  ms.date: 10/28/2021
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ durationInMinutes: 9
 content: |
   [!include[](includes/5-create-custom-ad-ds-partitions.md)]
 quiz:
-  title: "Quick review"
+  title: "Check your knowledge"
   questions:
   - content: "Which tool can be used to create, list, and delete a custom application partition?"
     choices:
