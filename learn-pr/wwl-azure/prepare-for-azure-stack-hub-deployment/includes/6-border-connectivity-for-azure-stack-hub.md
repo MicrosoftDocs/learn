@@ -1,6 +1,6 @@
 Network integration planning is an important prerequisite for successful Azure Stack Hub integrated systems deployment, operation, and management. Border connectivity planning begins by choosing if you want use dynamic routing with border gateway protocol (BGP). Planning requires assigning a 16-bit autonomous system number (ASN), public or private, or using static routing.
 
-The physical connectivity between the border devices and Azure Stack Hub's top of rack (TOR) switches require network transceivers. It's important to ensure the required module type (SR, LR, ER, or other) is discussed with the hardware solution provider prior to the onsite deployment.<br>
+The physical connectivity between the border devices and Azure Stack Hub's top of rack (TOR) switches require network transceivers. It's important to ensure the required module type (SR, LR, ER, or other) is discussed with the hardware solution provider prior to the onsite deployment.
 
 ## BGP routing
 
