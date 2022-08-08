@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-power-bi-assets.create-reusable
+title: Create reusable Power BI assets
+metadata:
+  title: Create reusable Power BI assets
+  description: "Create reusable Power BI assets"
+  ms.date: 08/05/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-create-reusable.md)]
