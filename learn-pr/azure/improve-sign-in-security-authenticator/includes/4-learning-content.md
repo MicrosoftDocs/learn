@@ -8,7 +8,6 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
 After enabling a registration campaign for Microsoft Authenticator, administrators want to validate the new sign-in experience works as expected before running the campaign production. 
 
 
@@ -21,7 +20,6 @@ After enabling a registration campaign for Microsoft Authenticator, administrato
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
-TODO: add your scenario sub-task
 You want to apply the new policy to a test user and confirm Microsoft Authenticator is the new default sign-in method. 
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
@@ -32,8 +30,7 @@ You want to apply the new policy to a test user and confirm Microsoft Authentica
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-TODO: write your prose table-of-contents
-You'll create a new user account in Azure AD and enable it for Microsoft Authenticator. Then you'll sign in, perform MFA, and set up Microsoft Authenticator. After you confirm the new user account has Microsoft Authenticator as the new default sign-in method, you will apply the policy to the remote employees group. 
+You'll create a new user account in Azure AD and enable it for Microsoft Authenticator. Then you'll sign in, perform MFA, and set up Microsoft Authenticator. After you confirm the new user account has Microsoft Authenticator as the new default sign-in method, you'll apply the policy to the remote employees group. 
 
 <!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
 
@@ -41,7 +38,8 @@ You'll create a new user account in Azure AD and enable it for Microsoft Authent
 
     Heading: none
 -->
-TODO: add a visual element
+:::image type="content" border="true" source="../media/setup.png" alt-text="Screenshot of Microsoft Authenticator setup.":::
+
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
@@ -81,13 +79,24 @@ Paragraph (optional)
 
 ## Validate the registration campaign
 
-      - Create a test user
-      - Perform MFA as a test user 
-      - Confirm Microsoft Authenticator is the new default sign-in method 
-
-
-
 You want to see how the registration campaign works for a test user account. After you confirm it works as expected, you plan to run the campaign for the remote employees.  
+
+### Create a test user
+
+
+### Perform MFA as a test user 
+
+Before users can get the prompt to set up Microsoft Authenticator, they need to perform MFA as they do normally. For remote employees in your company, they will need to sign in by using their currently preferred authentication methods: username and password with either an SMS message or voice call to complete MFA. After they perform MFA, they'll get nudged to set up Microsoft Authenticator.
+
+
+
+
+### Confirm Microsoft Authenticator is the new default sign-in method 
+
+Your goal is to switch users from SMS and voice call to Microsoft Authenticator push notifications for better security. After users install and register Microsoft Authenticator, push notifications will become their new default sign-in method. 
+
+
+
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->

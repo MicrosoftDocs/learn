@@ -8,7 +8,9 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Validate the user experience by signing in as a test user
+
+
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,8 +22,10 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+Here, you'll create an Azure AD user account for testing and enable it for Microsoft Authenticator. 
+
+:::image type="content" border="true" source="../media/phone-sign-in-microsoft-authenticator-app.png" alt-text="Screenshot of Microsoft Authenticator sign-in.":::
+
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
@@ -33,7 +37,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+You'll confirm the test user can set up Microsoft Authenticator and have push notifications as the new default sign-in method. After confirming the experience for a test user, you can apply the policy to the remote employees group for your company. 
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,23 +60,30 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
+## Create a test user account
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Create a user account for the purposes of testing the Microsoft Authenticator registration campaign.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Sign in to the Azure portal, click **Azure Active Directory** > **Manage** > **Users**.
+1. Select **New user** at the top of the pane.
+1. In the **User name** field, enter the username of the user account. For example, `contosouser1@contoso.com`. Be sure to change `contoso.com` to the name of the tenant domain.
+1. In the **Name** field, enter the name of the user of the account. For example, `contosouser1`.
+1. Leave Auto-generate password selected, and then select **Show password**. Write down the value that's displayed in the **Password** box.
+1. Select **Create**.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Exercise: Enable Microsoft Authenticator for the test user
+
+With the test user configured to sign in using Voice call, now let's enable Microsoft Authenticator push notifications as a sign-in option for the test user. You'll need to set the Authentication mode to **Push**. If it's set to **Passwordless**, the user won't get nudged to set up Authenticator.  
+
+1. In Authentication methods, click **Policies**.
+1. Under Microsoft Authenticator, choose the following options:
+   
+    - Enable - **Yes**
+    - Target - Select the test user
+    - Browse to **...** > **Configure**.
+    - For Authentication mode - **Push**. 
+      
+1. To apply the new policy, click **Save**.
 
 <!-- 5. Validation -------------------------------------------------------------------------------------------
 
@@ -94,10 +105,24 @@ TODO: describe the end-state
 
 ## Check your work
 <!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+Sign in as the test user from a device that hasn't already set up Microsoft Authenticator. The device must use the phone number that you enabled for authentication.  
+
+1. Sign in to Azure and perform MFA. 
+1. When prompted, set up the Microsoft Authenticator app to improve their sign-in experience. Only users who are allowed for the Microsoft Authenticator push notifications and do not have it currently set up will see the prompt. 
+
+   :::image type="content" border="true" source="../media/how-to-nudge-authenticator-app/user-mfa.png" alt-text="Screenshot of a user who performs multifactor authentication.":::
+
+1. Tap **Next** and step through Microsoft Authenticator setup. 
+    1. First download the app.  
+    1. See how to set up Microsoft Authenticator. 
+    1. Scan the QR Code. 
+    1. Approve the test notification.
+    1. After the notification approved, Microsoft Authenticator is successfully set up as the user’s default sign-in method.
+
+       :::image type="content" border="true" source="../media/how-to-nudge-authenticator-app/finish.png" alt-text="Screenshot of setup completion for Microsoft Authenticator.":::
+
+1. If you don't want to install Microsoft Authenticator, tap **Not now** to snooze the prompt for up to 14 days. The snooze duration can be set by an admin. 
+
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
