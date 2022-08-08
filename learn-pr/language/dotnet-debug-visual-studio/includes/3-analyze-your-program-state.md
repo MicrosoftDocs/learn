@@ -90,6 +90,12 @@ You can also right-click on variables in the **Autos** or **Locals** windows to 
 
 Another productive way to view and analyze the variable information during debugging is using DataTips.  When you are paused at the breakpoint, hover over any variable in the current scope. A DataTip appears, showing the name and current value of the variable properties. By hovering over a function parameter or a variable directly in the editor window, you can also peek at its value.
 
+### Specify Debugger Settings
+
+In Visual Studio, you can specify various settings for debugger behavior, including how variables are displayed, whether certain warnings are presented, how breakpoints are set, and how breaking affects running programs. You can also configure your project to build as a Debug or Release configuration.
+
+To configure your debugger settings use the **Tools> Options> Debugging** menu, which will provide different category of options you want. The most common options are in the General category.
+
 ### Call stack
 
 Every time your program enters a function, an entry is added to the call stack. When your application becomes complex and functions are called within other functions many times, the call stack represents the trail of those calls.
