@@ -2,7 +2,7 @@ The Windows client for Azure Virtual Desktop integrates Azure Virtual Desktop wi
 
 When you first sign in, the client asks for your username and password. The next time you sign in, the client will remember your token from your Azure Active Directory (AD) Enterprise Application. When they select **Remember me** on the prompt for credentials for the session host, your users can sign in after restarting the client without needing to reenter their credentials.
 
-:::image type="content" source="../media/multifactor-conditional-access-1-1674d6c8.png" alt-text="Image of conditional access.":::
+:::image type="content" source="../media/multifactor-conditional-access-1-1674d6c8.png" alt-text="Diagram showing how conditional access is enforced.":::
 
 
 While remembering credentials is convenient, it can also make deployments on Enterprise scenarios or personal devices less secure. To protect your users, you can make sure the client keeps asking for multifactor authentication credentials more frequently.
