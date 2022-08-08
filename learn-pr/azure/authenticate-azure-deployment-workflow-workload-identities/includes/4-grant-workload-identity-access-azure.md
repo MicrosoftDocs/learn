@@ -11,11 +11,11 @@ After Azure AD has authenticated a workload identity, the next question becomes:
 
 ## Select the right role assignment for your workflow
 
-A role assignment has three key parts: what users the role is assigned to (the *assignee*), what they can do (the *role*), and what resource or resources the role assignment applies to (the *scope*).
+A role assignment has three key parts: what users the role is assigned to (the *assignee*), what the users can do (the *role*), and what resource or resources the role assignment applies to (the *scope*).
 
 ### Assignee
 
-When you work with a workload identity, you assign roles for that workload identity. To assign a role, you need to first create a *service principal*, which enables you to grant your application roles in Azure. After you create the service principal, you can continue to work with the application registration's application ID.
+When you work with a workload identity, you assign roles for it. To assign a role, you need to first create a *service principal*, which enables you to grant your application roles in Azure. After you create the service principal, you can continue to work with the application registration's application ID.
 
 ::: zone pivot="cli"
 
@@ -48,7 +48,7 @@ It can be a little more work to figure out which role to assign. In Azure, there
 > [!CAUTION]
 > Grant workload identities only the minimum permissions that they need to do their jobs. Most of the time, the Owner role is too permissive for a deployment workflow.
 
-There are also lots of specific roles that provide access just to a subset of functionality. You can even create your own _custom role definition_ to specify the exact list of permissions that you want to assign.
+There are also lots of specific roles that provide access to just a subset of functionality. You can even create your own _custom role definition_ to specify the exact list of permissions that you want to assign.
 
 > [!NOTE]
 > Custom role definitions can be a powerful way to grant permissions for your Azure resources, but they can be difficult to work with. It's not always easy to determine exactly which permissions you need to add to a custom role definition. You might accidentally make the role definitions too restrictive or too permissive. 
@@ -86,7 +86,7 @@ You can create multiple role assignments that provide different permissions at d
 
 You likely work with multiple environments, like development, test, and production environments for your applications. The resources for each environment should be deployed to different resource groups or subscriptions.
 
-You should create separate workload identities for each environment, and grant each workload identity the minimum set of permissions that it needs for its deployments. Be especially careful to avoid mixing permissions for production deployments with those for deployments to non-production environments.
+You should create separate workload identities for each environment. Grant each workload identity the minimum set of permissions that it needs for its deployments. Be especially careful to avoid mixing permissions for production deployments with permissions for deployments to non-production environments.
 
 ## Create a role assignment for a workload identity
 
@@ -104,7 +104,7 @@ az role assignment create \
 
 Let's look at each argument:
 
-- `--assignee` specifies the workload identity. You can specify this in several ways, but to avoid ambiguity it's a good practice to use the application ID.
+- `--assignee` specifies the workload identity. You can specify this in several ways, but using the application ID is a good practice because it avoids ambiguity.
 - `--role` specifies the role. If you use a built-in role, you can specify it by name. If you use a custom role definition, specify the full role definition ID.
 - `--scope` specifies the scope. This is usually a resource ID for a single resource, a resource group, or a subscription.
 - `--description` is a human-readable description of the role assignment.
@@ -156,7 +156,7 @@ resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
 
 Let's look at each argument:
 
-- `name` is a unique identifier for the role assignment. This must be in the form of a globally unique identifier (GUID). It's a good practice to use the `guid()` function in Bicep to create a GUID. To ensure that you create a name that's unique for each role assignment, use the principal ID, role definition ID, and scope as the seed arguments for the function.
+- `name` is a globally unique identifier (GUID) for the role assignment. It's a good practice to use the `guid()` function in Bicep to create a GUID. To ensure that you create a name that's unique for each role assignment, use the principal ID, role definition ID, and scope as the seed arguments for the function.
 - `principalType` should be set to `ServicePrincipal`.
 - `roleDefinitionId` is the fully qualified resource ID for the role definition that you're assigning. You mostly work with built-in roles, so you find the role definition ID in the [Azure built-in roles documentation](/azure/role-based-access-control/built-in-roles?azure-portal=true). 
 

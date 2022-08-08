@@ -1,4 +1,4 @@
-Your colleague is using workload identities with their GitHub deployment workflow. They share the workflow definition file with you:
+Your colleague is using workload identities with a GitHub deployment workflow. They share the workflow definition file with you:
 
 ```yaml
 on:
@@ -26,6 +26,6 @@ jobs:
         template: ./deploy/main.bicep
 ```
 
-When they execute the workflow, they get the following error message:
+The workflow returns the following error message:
 
 > Error:  Unable to get ACTIONS_ID_TOKEN_REQUEST_URL env variable. Please make sure to give write permissions to id-token in the workflow.
