@@ -16,7 +16,7 @@ Let's briefly review the steps to follow to complete the task:
 
 In the previous unit, you created a pull request and merged your `code-workflow` branch into the `main` branch on GitHub. Now you need to pull the changes to `main` back to your local branch.
 
-The `git pull` command fetches the latest code from the remote repository and merges it into your local repository. This way, you know you're working with the latest codebase.
+The `git pull` command fetches the latest code from the remote repository and merges it into your local repository. This way, you know you're working with the latest code base.
 
 1. In your terminal, run `git checkout main` to switch to the `main` branch:
 

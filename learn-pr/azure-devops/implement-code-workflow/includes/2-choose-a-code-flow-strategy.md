@@ -73,7 +73,7 @@ When you feel your code is ready to be merged into the `main` branch in the cent
  :::row:::
     :::column span="8":::
 **Step 1**:
-When you begin to work on a new feature or bug fix, the first thing you want to do is ensure that you're starting with the latest stable codebase. To do this, you can synchronize your local copy of the `main` branch with the server's copy. This pulls into your local copy all other developer changes that were pushed to the `main` branch on the server since your last synch.
+When you begin to work on a new feature or bug fix, the first thing you want to do is ensure that you're starting with the latest stable code base. To do this, you can synchronize your local copy of the `main` branch with the server's copy. This pulls into your local copy all other developer changes that were pushed to the `main` branch on the server since your last synch.
 
     :::column-end:::
     :::column:::
