@@ -57,7 +57,7 @@ There are also lots of specific roles that provide access to just a subset of fu
 
 ### Scope
 
-You need to determine how broadly you assign the role. This decision affects the number of resources that workload identity can modify. Common scopes include:
+You need to determine how broadly you assign the role. This decision affects the number of resources that the workload identity can modify. Common scopes include:
 
 - **Single resource**: You can grant access to just a specific resource. Typically, deployment workflows don't use this scope because a workflow creates resources that don't exist yet, or it reconfigures multiple resources.
 - **Resource group**: You can grant access to all resources within a resource group. Contributors and Owners can also create resources within the group. This is a good option for many deployment workflows.

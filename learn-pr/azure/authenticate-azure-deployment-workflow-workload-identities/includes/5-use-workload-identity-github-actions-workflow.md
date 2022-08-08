@@ -12,11 +12,11 @@ Your deployment workflow uses the `azure/login` action to sign in to Azure. When
 
 | Input | Description |
 |-|-|
-| `client-id` | The application ID for the application registration. Ensure that you use the application ID and not the object ID. |
+| `client-id` | The application ID for the application registration. Be sure to use the application ID and not the object ID. |
 | `tenant-id` | The unique identifier for your Azure AD tenant (directory). |
 | `subscription-id` | The Azure subscription ID that you'll deploy to. |
 
-Each of these values is a globally unique identifier (GUID).
+Each of these values is a GUID.
 
 When you define the values, you might choose to specify them directly in your workflow definition file:
 

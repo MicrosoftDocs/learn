@@ -16,9 +16,9 @@ summary: |
   You'll also learn how to grant them permission to your Azure resources so that your workflows can deploy your Bicep files.
 abstract: |
   After you complete this module, you'll be able to:
-  - Explain what a workload identity is and describe three types of workload identities: service principals, managed identities, and federated credentials
-  - Create a workload identity and link it to a GitHub Actions deployment workflow
-  - Configure the appropriate authorization for a workload identity to deploy Azure resources
+  - Explain what a workload identity is and describe three types of workload identities: service principals, managed identities, and federated credentials.
+  - Create a workload identity and link it to a GitHub Actions deployment workflow.
+  - Configure the appropriate authorization for a workload identity to deploy Azure resources.
 prerequisites: |
   You should be familiar with:
   - Creating and deploying basic Bicep templates.

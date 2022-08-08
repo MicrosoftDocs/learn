@@ -1,4 +1,4 @@
-Your colleague is using workload identities with a GitHub deployment workflow. They share the workflow definition file with you:
+Your colleague is using workload identities with a GitHub deployment workflow. This is the workflow definition file:
 
 ```yaml
 on:

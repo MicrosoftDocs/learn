@@ -4,9 +4,9 @@ Deployment workflows, applications, and software require a special way to authen
 
 When you deploy a Bicep file, you effectively ask Azure Resource Manager to create or modify your Azure resources. In the example scenario, you've created a Bicep file to deploy your toy company's website. The Bicep file declares resources that include an Azure App Service plan, an app, and an Application Insights instance. 
 
-When you deploy the file, Resource Manager checks whether the resources exist. If they don't, Resource Manager creates them. If any already exist, Resource Manager ensures that their configuration matches the configuration that you specify in the Bicep file.
+When you deploy the file, Resource Manager checks whether the resources exist. If they don't, Resource Manager creates them. If any resources already exist, Resource Manager ensures that their configuration matches the configuration that you specify in the Bicep file.
 
-All of these operations require permission, because they access and modify your Azure resources. The specific permissions needed for deployment will depend on what the Bicep file contains. To deploy the example file for your toy company's website, you need to have the following permissions inside the resource group that you're deploying to:
+All of these operations require permission, because they access and modify your Azure resources. The specific permissions needed for deployment depend on what the Bicep file contains. To deploy the example file for your toy company's website, you need to have the following permissions inside the resource group that you're deploying to:
 
 - The ability to create deployments. Deployments are resources with a type of `Microsoft.Resources/deployments`.
 - The ability to create and modify App Service plans and apps.
@@ -35,7 +35,7 @@ Managed identities are available for Azure-hosted resources like virtual machine
 When you work with deployment workflows, you usually don't use managed identities. Managed identities require that you own and manage the Azure resources that run your deployments. When you work with GitHub Actions, you usually rely on shared infrastructure that Microsoft or GitHub provides. However, when you use a workload identity with GitHub Actions, you can get the main benefit of managed identities: you don't need to manage any credentials.
 
 > [!TIP]
-> In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's best to go with a managed identity. They're easier to work with and are usually more secure.
+> In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's best to go with a managed identity. Managed identities are easier to work with and are usually more secure.
 
 ## Why can't you just use your user account?
 
@@ -48,7 +48,7 @@ Workflows are designed to run your deployments even when nobody is actively runn
 If you store your username and password in a workflow and try to use them to sign in, they probably won't work. Even if they do seem to work, they can easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
 
 > [!WARNING]
-> It's also a bad idea to save your username and password anywhere, because someone else might get access to them and then use them to impersonate you.
+> It's a bad idea to save your username and password anywhere, because someone else might get access to them and then use them to impersonate you.
 
 For these reasons, the built-in GitHub Actions tasks that interact with Azure don't let you provide a user account's credentials. They require you to use a workload identity.
 
@@ -62,7 +62,7 @@ When you create an application and tell Azure AD about it, you create an object 
 
 An application registration can have *federated credentials* associated with it. Federated credentials don't require you to store any secrets. Instead, they enable an Azure AD application to be used with a supported service like GitHub.
 
-When your GitHub Actions workflow needs to authenticate, it contacts Azure AD through GitHub. GitHub tells Azure AD the name of the GitHub organization and repository, and optionally some other information. If you've configured a federated credential matching the repository's details, Azure AD authenticates your deployment workflow. The workflow can use the permissions that you've assigned to the application.
+When your GitHub Actions workflow needs to authenticate, it contacts Azure AD through GitHub. GitHub tells Azure AD the name of the GitHub organization and repository, and optionally some other information. If you've configured a federated credential that matches the repository's details, Azure AD authenticates your deployment workflow. The workflow can use the permissions that you've assigned to the application.
 
 > [!TIP]
 > When you look at an application registration in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. That's because, in Azure AD, applications can do many things that are beyond the scope of authentication and workflow deployments.
