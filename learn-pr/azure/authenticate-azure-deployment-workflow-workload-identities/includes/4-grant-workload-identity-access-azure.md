@@ -11,7 +11,7 @@ After Azure AD has authenticated a workload identity, the next question becomes:
 
 ## Select the right role assignment for your workflow
 
-A role assignment has three key parts: what users the role is assigned to (the *assignee*), what the users can do (the *role*), and what resource or resources the role assignment applies to (the *scope*).
+A role assignment has three key parts: who the role is assigned to (the *assignee*), what they can do (the *role*), and what resource or resources the role assignment applies to (the *scope*).
 
 ### Assignee
 
