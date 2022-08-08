@@ -3,7 +3,7 @@ The [Azure Backup](/azure/backup/backup-overview) service uses Azure resources f
 ### What can you do with Azure Backup?
 
 
-:::image type="content" source="../media/azure-backup-overview.png" alt-text="Azure Backup Service uses on-premises and cloud agents.":::
+:::image type="content" source="../media/azure-backup-overview.png" alt-text="Diagram of Azure Backup Service using on-premises and cloud agents.":::
 
 
 You can use Azure Backup for these backup types:
