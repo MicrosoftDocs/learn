@@ -1,6 +1,9 @@
  
 Now that your build agent is running and ready to receive build jobs, let's see it in action. In this unit, you modify a basic build configuration that we provide to build the _Space Game_ website by using your agent and not the Microsoft-hosted agent.
 
+> [!NOTE]
+> Run the steps below immediately after following the steps in the previous module [Create a build agent that runs on Azure](/learn/modules/host-build-agent/4-create-build-agent).
+
 At the end of this unit, as an optional step, you can remove the agent pool from your Microsoft Azure DevOps organization.
 
 ## Fetch the branch from GitHub
@@ -63,7 +66,9 @@ Watch the build run in the pipeline by using your build agent.
 
 1. In Azure DevOps, go to the **Space Game - web - Agent** project.
 1. On the project page or in the left pane, select **Pipelines**.
-1. Select **Builds**, and then select the running build.
+1. Select the pipeline listed under **Recently run pipelines**.
+1. Select the **Runs** listed, and then select **job**.
+1. In the **Job** screen, select **View raw log**.
 1. Trace the build through each of the steps.
 
     From the **Initialize job** task, you see that the build uses your build agent.
