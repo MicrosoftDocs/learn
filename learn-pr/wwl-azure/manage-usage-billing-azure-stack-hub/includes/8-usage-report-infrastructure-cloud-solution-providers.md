@@ -17,35 +17,8 @@ You can find out about the Azure Stack Hub meters used in Commerce and their pri
 
 The following terms and concepts are used for usage and billing in Azure Stack Hub:
 
-:::row:::
-  :::column:::
-    **Term**
-  :::column-end:::
-  :::column:::
-    **Definition**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Direct CSP partner
-  :::column-end:::
-  :::column:::
-    A direct CSP partner receives an invoice directly from Microsoft for Azure and Azure Stack Hub usage, and bills customers directly.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Indirect CSP
-  :::column-end:::
-  :::column:::
-    Indirect resellers work with an indirect provider (also known as a distributor). The resellers recruit end customers; the indirect provider holds the billing relationship with Microsoft, manages customer billing, and provides other services like product support.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    End customer
-  :::column-end:::
-  :::column:::
-    End customers are the businesses and government agencies that own the apps and other workloads that run on Azure Stack Hub.
-  :::column-end:::
-:::row-end:::
+| **Term**           | **Definition**                                                                                                                                                                                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Direct CSP partner | A direct CSP partner receives an invoice directly from Microsoft for Azure and Azure Stack Hub usage, and bills customers directly.                                                                                                      |
+| Indirect CSP       | Indirect resellers work with an indirect provider. The resellers recruit end customers; the indirect provider holds the billing relationship with Microsoft, manages customer billing, and provides other services like product support. |
+| End customer       | End customers are the businesses and government agencies that own the apps and other workloads that run on Azure Stack Hub.                                                                                                              |

@@ -4,7 +4,7 @@ As a CSP, you work with diverse customers using your Azure Stack Hub. Each custo
 
 The following figure shows the required steps to choose your shared services account, and to register the Azure account with the Azure Stack Hub account. Once registered, you can onboard your end customers:
 
-:::image type="content" source="../media/cloud-solution-provider-add-user-1-22a36b50.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/cloud-solution-provider-add-user-1-22a36b50.png" alt-text="Diagram showing normalized relational tables.":::
 
 
 ## Create a CSP or APSS subscription
@@ -32,7 +32,7 @@ To configure Azure Stack Hub so that a new tenant's resource usage is reported t
 
 Azure Stack Hub uses a feature called registration. A registration is an object stored in Azure. The registration object documents which Azure subscription(s) to use to charge for a given Azure Stack Hub. This section addresses the importance of registration.
 
-Using registration, Azure Stack Hub can:
+You can use registration in Azure Stack Hub to accomplish:
 
  -  Forward Azure Stack Hub usage data to Azure Commerce and bill an Azure subscription.
  -  Report each customer's usage on a different subscription with a multi-tenant Azure Stack Hub deployment. Multi-tenancy enables Azure Stack Hub to support different organizations on the same Azure Stack Hub instance.
