@@ -2,7 +2,7 @@ This unit describes how to add a tenant to an Azure Stack Hub deployment managed
 
 CSPs often offer services to multiple end customers (tenants) on their Azure Stack Hub deployment. Adding tenants to the Azure Stack Hub registration ensures that each tenant's usage is reported and billed to the corresponding CSP subscription. If you don't complete the steps in this unit, tenant usage is charged to the subscription used in the initial registration of Azure Stack Hub. Before you can add an end customer to Azure Stack Hub for usage tracking and to manage their tenant, you must configure Azure Stack Hub as a CSP.
 
-:::image type="content" source="../media/add-tenant-usage-and-bill-image-3-a62bd9ca.png" alt-text="Set up Cloud Solution Provider for usage tracking and to manage the end customer account.":::
+:::image type="content" source="../media/add-tenant-usage-and-bill-image-3-a62bd9ca.png" alt-text="Diagram showing how to set up Cloud Solution Provider for usage tracking and to manage the end customer account.":::
 
 
 The following figure shows the steps that a CSP needs to follow to enable a new end customer to use Azure Stack Hub, and to set up usage tracking for the customer. By adding the end customer, you're also able to manage resources in Azure Stack Hub. You have two options for managing their resources:
@@ -16,7 +16,7 @@ Before you add an end customer, you must enable multi-tenant billing on your reg
 
 ### Create a new customer in Partner Center
 
-In Partner Center, create a new Azure subscription for the customer. For instructions, see [Add a new customer](/partner-center/add-a-new-customer).
+In Partner Center, create a new Azure subscription for the customer.
 
 ### Create an Azure subscription for the end customer
 
@@ -49,47 +49,12 @@ New-AzResource -ResourceId "subscriptions/{registrationSubscriptionId}/resourceG
 
 The following section describes the parameters for the **New-AzResource** cmdlet:
 
-:::row:::
-  :::column:::
-    **Parameter**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    registrationSubscriptionID
-  :::column-end:::
-  :::column:::
-    The Azure subscription that was used for the initial registration of the Azure Stack Hub.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    customerSubscriptionID
-  :::column-end:::
-  :::column:::
-    The Azure subscription (not Azure Stack Hub) belonging to the customer to be registered. Must be created in the CSP offer. In practice, this means through Partner Center. If a customer has more than one Azure Active Directory tenant, this subscription must be created in the tenant that will be used to log into Azure Stack Hub. The customer subscription ID is case-sensitive.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    resourceGroup
-  :::column-end:::
-  :::column:::
-    The resource group in Azure in which your registration is stored.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    registrationName
-  :::column-end:::
-  :::column:::
-    The name of the registration of your Azure Stack Hub. It's an object stored in Azure.
-  :::column-end:::
-:::row-end:::
-
+| **Parameter**              | **Description**                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| registrationSubscriptionID | The Azure subscription that was used for the initial registration of the Azure Stack Hub.                                                                                                                                                                                                                                                                                                |
+| customerSubscriptionID     | The Azure subscription (not Azure Stack Hub) belonging to the customer to be registered. Must be created in the CSP offer. In practice, this means through Partner Center. If a customer has more than one Azure Active Directory tenant, this subscription must be created in the tenant that will be used to log into Azure Stack Hub. The customer subscription ID is case-sensitive. |
+| resourceGroup              | The resource group in Azure in which your registration is stored.                                                                                                                                                                                                                                                                                                                        |
+| registrationName           | The name of the registration of your Azure Stack Hub. It's an object stored in Azure.                                                                                                                                                                                                                                                                                                    |
 
 Tenants must be registered with each Azure Stack Hub they use. If you have two Azure Stack Hub deployments, and a tenant uses both of them, you must update the initial registrations of each deployment with the tenant subscription.
 
