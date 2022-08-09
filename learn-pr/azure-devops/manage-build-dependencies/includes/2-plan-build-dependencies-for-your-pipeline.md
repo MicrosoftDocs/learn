@@ -28,7 +28,7 @@ A _package_ contains reusable code that other developers can use in their own pr
 
 For compiled languages, a package typically contains the compiled binary code, such as .dll files in .NET, or .class files in Java. For languages that are interpreted instead of compiled, such as JavaScript or Python, a package might include source code.
 
-Either way, packages are typically compressed to ZIP or a similar format. Package systems will often define a unique file extension, such as *.nupkg* or *.jar*, to make the package's use clear. Compression can help reduce download time, and also produces a single file to make management simpler.
+Either way, packages are typically compressed to ZIP or a similar format. Package systems will often define a unique file extension, such as *.nupkg* or *.jar*, to make the package's use clear. Compression can help reduce download time and also produce a single file to simplify management.
 
 Packages also often contain one or more files that provide metadata, or information, about the package. This metadata might describe what the package does, specify its license terms, the author's contact information, and the package's version.
 
@@ -42,7 +42,7 @@ Packages also group related functionality into one reusable component. Depending
 
 Another reason to build a package is to provide a consistent way to build and test that package's functionality. When code is duplicated, each app might build and test that code in different ways. One set of tests might include checks that another set could benefit from.
 
-One tradeoff is that with a package, you have another codebase to test and maintain. You must also be careful when adding features. Generally speaking, a package should contain features that benefit many kinds of apps. For example, [Json.NET](https://www.newtonsoft.com/json?azure-portal=true) is a popular NuGet package for .NET that enables you to work with JSON files. Json.NET is open source, so the community can propose improvements and report issues.
+One tradeoff is that you have another codebase to test and maintain with a package. You must also be careful when adding features. Generally speaking, a package should contain features that benefit many kinds of apps. For example, [Json.NET](https://www.newtonsoft.com/json?azure-portal=true) is a popular NuGet package for .NET that enables you to work with JSON files. Json.NET is open source, so the community can propose improvements and report issues.
 
 When multiple apps can benefit from the same code, the advantages far outweigh the disadvantages. You have just one codebase, just one set of tests, and just one build process to manage.
 
