@@ -36,6 +36,5 @@ units:
 - learn.improve-sign-in-security-authenticator.exercise.practice-user-sign-in
 - learn.improve-sign-in-security-authenticator.knowledge-check
 - learn.improve-sign-in-security-authenticator.summary
-- learn.improve-sign-in-security-authenticator.resources
 badge:
   uid: learn.improve-sign-in-security-authenticator.badge

@@ -38,7 +38,7 @@ You'll create a new user account in Azure AD and enable it for Microsoft Authent
 
     Heading: none
 -->
-:::image type="content" border="true" source="../media/setup.png" alt-text="Screenshot of Microsoft Authenticator setup.":::
+:::image type="content" border="true" source="../media/how-to-nudge-authenticator-app/setup.png" alt-text="Screenshot of Microsoft Authenticator setup.":::
 
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------

@@ -36,7 +36,7 @@ The company already requires MFA, but many remote employees use either a voice c
    
 You need to research the security differences between available authentication options and determine a way to help remote employees switch. Then you'll want to prepare your Microsoft 365 environment and validate the experience for users. 
 
-:::image type="content" border="true" source="./media/methods.png" alt-text="Table showing relative security of different authentication methods.":::
+:::image type="content" border="true" source="../media/methods.png" alt-text="Table showing relative security of different authentication methods.":::
 
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
