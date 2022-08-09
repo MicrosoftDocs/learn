@@ -8,7 +8,7 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-After enabling a registration campaign for Microsoft Authenticator, administrators want to validate the new sign-in experience works as expected before running the campaign production. 
+After administrators enable a registration campaign for Microsoft Authenticator, they'll want to validate the new sign-in experience works as expected before running the campaign production. 
 
 
 
@@ -64,7 +64,7 @@ You want to see how the registration campaign works for a test user account. Aft
 
 ### Perform MFA as a test user 
 
-Before users can get the prompt to set up Microsoft Authenticator, they need to perform MFA as they do normally. For remote employees in your company, they will need to sign in by using their currently preferred authentication methods: username and password with either an SMS message or voice call to complete MFA. After they perform MFA, they'll get nudged to set up Microsoft Authenticator.
+Before users can get the prompt to set up Microsoft Authenticator, they need to perform MFA as they do normally. For remote employees in your company, they'll need to sign in by using their currently preferred authentication methods: username and password with either an SMS message or voice call to complete MFA. After they perform MFA, they'll get nudged to set up Microsoft Authenticator.
 
 
 

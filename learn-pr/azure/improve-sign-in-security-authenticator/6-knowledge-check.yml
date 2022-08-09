@@ -54,7 +54,7 @@ quiz:
       explanation: "No user consent is required to run the registration campaign."
     - content: "Sign in and perform MFA."
       isCorrect: true
-      explanation: "After a user signs in and completes MFA as they normally do, then they will get prompted to set up Microsoft Authenticator."
+      explanation: "After a user signs in and completes MFA as they normally do, then they'll get prompted to set up Microsoft Authenticator."
     - content: "Create a Microsoft account."
       isCorrect: false
       explanation: "You can sign in to a work or school account by using Microsoft Authenticator. A Microsoft account works too, but it's not required."
@@ -68,6 +68,6 @@ quiz:
       explanation: "No custom message is required to nudge users. "
     - content: "Set the snooze duration to 0."
       isCorrect: true
-      explanation: "The snooze duration determines how many days a user can postpone the setup of Microsoft Authenticator. If you set it to 0 days, user are prompted to set up Microsoft Authenticator every time they sign in. "
+      explanation: "The snooze duration determines how many days a user can postpone the setup of Microsoft Authenticator. If you set it to **0** days, users are prompted to set up Microsoft Authenticator every time they sign in. "
 
 

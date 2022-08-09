@@ -68,16 +68,14 @@ Before enabling a registration campaign, make sure prerequisites are complete. T
 
 ## Exercise: Enable the registration campaign using the Azure AD portal
 
-You can enable the the registration campaign in the Azure AD portal. 
+The easiest way to create the registration campaign is to use the Azure AD portal. You can also use Microsoft Graph API if you want to include the task of registering users for Microsoft Authenticator in any automation you use for adding new employees. 
 
-The easiest way to create the registration campaign is to use the Azure AD portal. You can also use Microsoft Graph API if you want to include the task of registering users for Microsoft Authenticator as part of any automation you have in place for adding new employees. 
-
-Your company is specifically concerned about sign-ins from users in your **Remote employees** security group. Let's use the portal to enable a registration campaign for that group. You'll want to nudge remote employees to set up Microsoft Authenticator every time they sign in, set the snooze to 0.
+Your company is concerned about sign-ins from users in your **Remote employees** security group. Let's use the portal to enable a registration campaign for that group. You'll want to nudge remote employees to set up Microsoft Authenticator every time they sign in, set the snooze to 0.
 
 1. In the Azure AD portal, sign in as either authentication policy administrator or global administrator.
 1. Click **Security** > **Authentication methods** > **Registration campaign**.
 1. Change **State** to **Enabled**.
-1. For **Day allowed to snooze**, select **0 days**. Remote employees will be prompted to set up Microsoft Authenticator every time the sign in. 
+1. For **Day allowed to snooze**, select **0 days**. Remote employees will be prompted to set up Microsoft Authenticator every time they sign in. 
 1. Click Add users and groups, search for **Remote employees**, click the group name, and click **Select**
 1. When you are done, click **Save**.
 

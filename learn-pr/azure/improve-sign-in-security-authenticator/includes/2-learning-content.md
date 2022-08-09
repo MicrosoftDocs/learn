@@ -8,7 +8,7 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-Azure AD users can satisfy multifactor authentication requirements by using a variety of different authentications methods. 
+Azure AD users can satisfy multifactor authentication requirements by using various authentications methods. 
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
