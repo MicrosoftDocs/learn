@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-sign-in-security-authenticator.learning-content
-title: Enter learning content title
+uid: learn.improve-sign-in-security-authenticator.learning-content.prepare-azure-ad-environment
+title: Prepare your Azure AD environment
 metadata:
   unitType: learning-content
   title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Review modern authentication methods and security features. Compare various methods for security, usability, and availability and decide how to switch remote employees to a more secure sign-in method."
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha

@@ -30,11 +30,11 @@ subjects:
   - cloud-computing
 units:
 - learn.improve-sign-in-security-authenticator.introduction
-- learn.improve-sign-in-security-authenticator.learning-content
-- learn.improve-sign-in-security-authenticator.exercise
-- learn.improve-sign-in-security-authenticator.learning-content
-- learn.improve-sign-in-security-authenticator.exercise
-- learn.improve-sign-in-security-authenticator.knowledge-check
+- learn.improve-sign-in-security-authenticator.learning-content.prepare-azure-ad-environment
+- learn.improve-sign-in-security-authenticator.exercise.prepare-azure-ad-environment
+- learn.improve-sign-in-security-authenticator.learning-content.validate-sign-in
+- learn.improve-sign-in-security-authenticator.exercise.practice-user-sign-in
+- learn.improve-sign-in-security-authenticator.knowledge-check.authentication
 - learn.improve-sign-in-security-authenticator.summary
 - learn.improve-sign-in-security-authenticator.resources
 badge:

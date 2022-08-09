@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-sign-in-security-authenticator.exercise
-title: Enter exercise title
+uid: learn.improve-sign-in-security-authenticator.exercise.prepare-azure-ad-environment 
+title: Practice preparing your Azure AD environment
 metadata:
   unitType: exercise
   title: exercise
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Enable remote employees for Microsoft Authenticator and enable a registration campaign to nudge them to set up Microsoft Authenticator when they sign in."
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha

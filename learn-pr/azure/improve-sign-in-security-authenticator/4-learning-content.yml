@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-sign-in-security-authenticator.learning-content
-title: Enter learning content title
+uid: learn.improve-sign-in-security-authenticator.learning-content.validate-sign-in
+title: Validate the user sign-in experience
 metadata:
   unitType: learning-content
   title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Create a new user account in Azure AD and enable it for Microsoft Authenticator. Sign in, perform MFA, and set up Microsoft Authenticator."
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.improve-sign-in-security-authenticator.exercise
-title: Enter exercise title
+uid: learn.improve-sign-in-security-authenticator.exercise.practice-user-sign-in
+title: Try the user sign-in experience
 metadata:
   unitType: exercise
   title: exercise
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Confirm the test user can set up Microsoft Authenticator and have push notifications as the new default sign-in method. After confirming the experience for a test user, apply the policy to the remote employees group for your company."
   ms.date: 7/27/2022
   author: Justinha
   ms.author: Justinha
