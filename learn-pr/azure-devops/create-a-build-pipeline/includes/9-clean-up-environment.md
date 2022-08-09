@@ -1,7 +1,7 @@
 You're all done with the tasks for this module. You'll now move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
-> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Ensure to do the cleanup steps if you ran the template earlier in this module.
+> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to do the cleanup steps if you ran the template earlier in this module.
 
 ## Move the work item to Done
 

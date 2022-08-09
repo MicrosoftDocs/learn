@@ -156,7 +156,7 @@ If the `code` command fails, you need to add Visual Studio Code to your system P
 
 Now that you have the web app, you can build and run it locally.
 
-1. In Visual Studio Code, navigate to the terminal window, and to build the app, run the `dotnet build` command:
+1. In Visual Studio Code, navigate to the terminal window, and to build the app, run this `dotnet build` command:
 
     ```dotnetcli
     dotnet build --configuration Release
@@ -167,7 +167,7 @@ Now that you have the web app, you can build and run it locally.
 
     .NET projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here, you select the Release configuration just to see the web app in action.
 
-1. From the terminal window, to run the app, run the `dotnet run` command:
+1. From the terminal window, to run the app, run this `dotnet run` command:
 
     ```dotnetcli
     dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
