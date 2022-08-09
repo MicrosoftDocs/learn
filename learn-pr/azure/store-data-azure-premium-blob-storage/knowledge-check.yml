@@ -27,3 +27,27 @@ quiz:
     - content: "IOPS"
       isCorrect: false
       explanation: "Although Premium Blob Storage offers higher IOPS in comparison to General Purpose Storage, low and consistent latency are usually the reason for picking premium for most workloads."
+
+  - content: "How does the cost per GB compare between Premium Blob Storage and General Purpose v2 Storage accounts?"
+    choices:
+    - content: "The cost per GB is lower for General Purpose v2 Storage accounts."
+      isCorrect: true
+      explanation: "The cost per GB for General Purpose v2 Storage accounts is lower compared to the cost per GB for Premium Blob Storage."
+    - content: "The cost per GB is higher for General Purpose v2 Storage accounts."
+      isCorrect: false
+      explanation: "The cost per GB for General Purpose v2 Storage accounts is lower compared to the cost per GB for Premium Blob Storage, not higher."
+    - content: "It's the same for both."
+      isCorrect: false
+      explanation: "The cost per GB for General Purpose v2 Storage accounts is lower when compared to the cost per GB for Premium Blob Storage, not the same."
+
+  - content: "How does the cost per transaction for Premium Blob Storage compare with the cost per transaction for General Purpose v2 Storage accounts?"
+    choices:
+    - content: "The cost per transaction is lower for General Purpose v2 Storage accounts."
+      isCorrect: false
+      explanation: "The cost per transaction is higher for General Purpose v2 Storage accounts when compared to Premium Blob Storage, not lower."
+    - content: "The cost per transaction is higher for General Purpose v2 Storage accounts."
+      isCorrect: true
+      explanation: "The cost per transaction for General Purpose v2 Storage accounts when compared to Azure Premium Blob Storage."
+    - content: "The cost per transaction is the same for both."
+      isCorrect: false
+      explanation: "The cost per transaction is higher for General Purpose v2 Storage accounts when compared to Premium Blob Storage, not the same."
