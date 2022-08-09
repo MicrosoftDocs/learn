@@ -10,7 +10,7 @@ We'll focus on package dependencies. A .NET project can have other types of depe
 
 How do you know if you need a package for your project? That's a complicated question that involves a few factors:
 
-- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customers' data. There are standard patterns out there and libraries that many developers use. These libraries implement features that you will probably always need, and issues are patched as they arise. You should use such libraries instead of creating your own. You're not likely to do as good a job of writing the code yourself because there are so many edge cases that you'd need to consider.  
+- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customers' data. There are standard patterns out there and libraries that many developers use. These libraries implement features that you'll probably always need, and issues are patched as they arise. You should use such libraries instead of creating your own. You're not likely to write the code as well yourself because there are so many edge cases that you'd need to consider.  
 - **Saving time**. You can probably build most things yourself, like utility or UI component libraries. But it takes time. Even if the result is comparable to what's available, it's not a good use of your time to replicate the work of writing this code if you don't have to.
 - **Maintenance**. All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and correcting bugs. Is it a good use of your time or your team's time to maintain a library? Or is it better to let an open-source software team handle it?
 
@@ -83,7 +83,7 @@ If you want a detailed list of all commands, enter `dotnet --help` in the termin
 Use the `dotnet add package <dependency name>` command to install a normal dependency that's meant to be used as part of your application.
 
 > [!NOTE]
-> You can install some packages *globally*. These packages are not meant to be imported into your project. For that reason, many global packages are CLI tools or templates. You can also install these global tools from a package repository. Install tools by using the `dotnet tool install <name of package>` command. Install templates by using the `dotnet new -i <name of package>` command.
+> You can install some packages *globally*. These packages aren't meant to be imported into your project. For that reason, many global packages are CLI tools or templates. You can also install these global tools from a package repository. Install tools by using the `dotnet tool install <name of package>` command. Install templates by using the `dotnet new -i <name of package>` command.
 
 ### After installation
 
