@@ -79,6 +79,9 @@ Your company is concerned about sign-ins from users in your **Remote employees**
 1. Click Add users and groups, search for **Remote employees**, click the group name, and click **Select**
 1. When you are done, click **Save**.
 
+   :::image type="content" border="true" source="../media/remote-employees.png" alt-text="Screenshot of adding remote employees group.":::
+
+
 <!-- 5. Validation -------------------------------------------------------------------------------------------
 
     Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.

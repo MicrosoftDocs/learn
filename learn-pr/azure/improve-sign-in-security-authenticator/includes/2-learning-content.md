@@ -102,7 +102,7 @@ Users can also verify themselves using a mobile phone as secondary form of authe
   
 ## Compare security
 
-The following table summarizes user considerations for each Azure AD authentication method. Usability refers to how easily users can sign-in with that method. For example, OATH tokens can only be used as a secondary form of verification. Availability refers to the number of environments where users can sign-in with that method. Some environments don't allow phones to be used for verification, which makes SMS ans Voice call less available. 
+The following table summarizes user considerations for each Azure AD authentication method. Usability refers to how easily users can sign-in with that method. For example, OATH tokens can only be used as a secondary form of verification. Availability refers to the number of environments where users can sign-in with that method. Some environments don't allow phones to be used for verification, which makes SMS and Voice call less available. 
 
 | Authentication method          | Security | Usability | Availability |
 |--------------------------------|:--------:|:---------:|:------------:|
