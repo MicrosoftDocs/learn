@@ -2,14 +2,14 @@
 uid: learn.azure.store-data-in-azure-premium-blob-storage
 metadata:
   title: 'Analyze performance indicators for Azure Blob Storage'
-  description: Analyze performance indicators for Azure Blob Storage.
+  description: Learn how to analyze the performance indicators for Azure Blob Storage.
   ms.date: 08/01/2022
   author: ciphertxt
   ms.author: schoag
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Analyze performance indicators for Azure Blob Storage'
-summary: Analyze performance indicators for Azure Blob Storage.
+summary: Learn how to analyze the performance indicators for Azure Blob Storage.
 abstract:  | 
   After completing this module, you'll be able to:
   - Describe the performance characteristics of Azure Blob Storage.
