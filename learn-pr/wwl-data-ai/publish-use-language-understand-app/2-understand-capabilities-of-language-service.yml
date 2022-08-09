@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.publish-use-language-understand-app.understand-capabilities-of-language-service
+title: Understand capabilities of the Language service
+metadata:
+  title: Understand capabilities of the Language service
+  description: "Understand capabilities of the Language service"
+  ms.date: 08/09/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-capabilities-of-language-service.md)]
