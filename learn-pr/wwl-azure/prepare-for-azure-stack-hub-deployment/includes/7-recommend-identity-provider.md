@@ -8,7 +8,7 @@ Deploy with AD FS allows identities in an existing Active Directory forest to au
 
 Authentication is one part of identity. To manage role-based access control (RBAC) in Azure Stack Hub, the Graph component must be configured. When access to a resource is delegated, the Graph component looks up the user account in the existing Active Directory forest using the LDAP protocol.
 
-:::image type="content" source="../media/recommend-identity-provider-1-c171dc91.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/recommend-identity-provider-1-c171dc91.png" alt-text="Diagram showing normalized relational tables.":::
 
 
 The existing AD FS is the account security token service (STS) that sends claims to the Azure Stack Hub AD FS (the resource STS). In Azure Stack Hub, automation creates the claims provider trust with the metadata endpoint for the existing AD FS.
@@ -21,31 +21,10 @@ For the Graph configuration, a service account must be provided with read permis
 
 For the last step, a new owner is configured for the default provider subscription. This account has full access to all resources when signed in to the Azure Stack Hub administrator portal.
 
-:::row:::
-  :::column:::
-    **Component**
-  :::column-end:::
-  :::column:::
-    **Requirement**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Graph
-  :::column-end:::
-  :::column:::
-    Microsoft Active Directory 2012/2012 R2/2016 2019
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    AD FS
-  :::column-end:::
-  :::column:::
-    Windows Server 2012/2012 R2/2016 2019
-  :::column-end:::
-:::row-end:::
-
+| **Component** | **Requirement**                                   |
+| ------------- | ------------------------------------------------- |
+| Graph         | Microsoft Active Directory 2012/2012 R2/2016 2019 |
+| AD FS         | Windows Server 2012/2012 R2/2016 2019             |
 
 ## Setting up Graph integration
 
@@ -53,49 +32,10 @@ Graph only supports integration with a single Active Directory forest. If multip
 
 The following information is required as inputs for the automation parameters:
 
-:::row:::
-  :::column:::
-    **Parameter**
-  :::column-end:::
-  :::column:::
-    **Deployment Worksheet Parameter**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-  :::column:::
-    **Example**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CustomADGlobalCatalog
-  :::column-end:::
-  :::column:::
-    AD FS Forest FQDN
-  :::column-end:::
-  :::column:::
-    FQDN of the target Active Directory forest that you want to integrate with.
-  :::column-end:::
-  :::column:::
-    *Contoso.com*
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CustomADAdminCredentials
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    A user with LDAP Read permission
-  :::column-end:::
-  :::column:::
-    YOURDOMAIN\\graphservice
-  :::column-end:::
-:::row-end:::
-
+| **Parameter**            | **Deployment Worksheet Parameter** | **Description**                                                             | **Example**              |
+| ------------------------ | ---------------------------------- | --------------------------------------------------------------------------- | ------------------------ |
+| CustomADGlobalCatalog    | AD FS Forest FQDN                  | FQDN of the target Active Directory forest that you want to integrate with. | Contoso.com              |
+| CustomADAdminCredentials |                                    | A user with LDAP Read permission                                            | YOURDOMAIN\\graphservice |
 
 ## Configure Active Directory Sites
 
@@ -143,31 +83,10 @@ For this procedure, use a computer in your datacenter network that can communica
 
 3.  The **Register-DirectoryService** cmdlet has optional parameters that you can use in certain scenarios where the existing Active Directory validation fails. When this cmdlet is executed, it validates that the provided domain is the root domain, a global catalog server can be reached, and that the provided account is granted read access.
     
-    :::row:::
-      :::column:::
-        **Parameter**
-      :::column-end:::
-      :::column:::
-        **Description**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        `SkipRootDomainValidation`
-      :::column-end:::
-      :::column:::
-        Specifies that a child domain must be used instead of the recommended root domain.
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        `ValidateParameters`
-      :::column-end:::
-      :::column:::
-        Bypasses all validation checks.
-      :::column-end:::
-    :::row-end:::
-    
+    | **Parameter**            | **Description**                                                                    |
+    | ------------------------ | ---------------------------------------------------------------------------------- |
+    | SkipRootDomainValidation | Specifies that a child domain must be used instead of the recommended root domain. |
+    | ValidateParameters       | Bypasses all validation checks.                                                    |
 
 ### Graph protocols and ports
 
@@ -175,58 +94,9 @@ Graph service in Azure Stack Hub uses the following protocols and ports to commu
 
 Graph service in Azure Stack Hub uses the following protocols and ports to communicate with the target Active Directory:
 
-:::row:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Port**
-  :::column-end:::
-  :::column:::
-    **Protocol**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    LDAP
-  :::column-end:::
-  :::column:::
-    389
-  :::column-end:::
-  :::column:::
-    TCP &amp; UDP
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    LDAP SSL
-  :::column-end:::
-  :::column:::
-    636
-  :::column-end:::
-  :::column:::
-    TCP
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    LDAP GC
-  :::column-end:::
-  :::column:::
-    3268
-  :::column-end:::
-  :::column:::
-    TCP
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    LDAP GC SSL
-  :::column-end:::
-  :::column:::
-    3269
-  :::column-end:::
-  :::column:::
-    TCP
-  :::column-end:::
-:::row-end:::
+| **Type**    | **Port** | **Protocol**          |
+| ----------- | -------- | --------------------- |
+| LDAP        | 389      | TCP &amp; UDP |
+| LDAP SSL    | 636      | TCP                   |
+| LDAP GC     | 3268     | TCP                   |
+| LDAP GC SSL | 3269     | TCP                   |
