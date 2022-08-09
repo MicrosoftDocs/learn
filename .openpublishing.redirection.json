@@ -17209,6 +17209,46 @@
       "source_path": "learn-pr/wwl-azure/prepare-for-azure-stack-hub-deployment/8-configure-time-server.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/prepare-for-azure-stack-hub-deployment/9-configure-time-server",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/3-set-up-usage-data-report.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/4-set-up-usage-data-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/4-view-retrieve-usage-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/5-view-retrieve-usage-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/5-usage-bill-multitenant-scenarios.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/6-usage-bill-multitenant-scenarios",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/6-add-tenant-usage-bill.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/7-add-tenant-usage-bill",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/7-usage-report-infrastructure-cloud-solution-providers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/8-usage-report-infrastructure-cloud-solution-providers",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/8-azure-stack-hub-usage-bill.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/9-azure-stack-hub-usage-bill",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/10-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/11-summary",
+      "redirect_document_id": true
     }
   ]
 }

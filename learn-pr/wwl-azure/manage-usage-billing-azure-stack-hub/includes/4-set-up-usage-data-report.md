@@ -20,7 +20,7 @@ To set up usage data reporting, you must register your Azure Stack Hub instance 
 ## Generate usage data reporting
 
  -  To test usage data reporting, create a few resources in Azure Stack Hub. For example, you can create a storage account, Windows Server virtual machine, and a Linux virtual machine with Basic and Standard SKUs to see how core usage is reported. The usage data for different types of resources are reported under different meters.
- -  Leave your resources running for a few hours. Usage information is collected approximately once every hour. After collecting, this data is transmitted to Azure and processed into the Azure commerce system. This process can take up to a few hours.
+ -  Leave your resources running for a few hours. Usage information is collected approximately once every hour. The collected data is transmitted to Azure and processed into the Azure commerce system. This process can take up to a few hours.
 
 ## View usage - CSP subscriptions
 
