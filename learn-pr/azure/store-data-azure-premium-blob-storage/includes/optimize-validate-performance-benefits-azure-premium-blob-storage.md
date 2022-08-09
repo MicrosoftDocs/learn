@@ -37,7 +37,205 @@ Using that formula, we can calculate the total transactions per second in the fo
 
 The following table illustrates the cost-effectiveness of Premium Blob Storage.
 
-:::image type="content" source="../media/4-premium-performance-data-lake-storage-cost-analysis-table.png" alt-text="Table illustrating the cost-effectiveness of Premium Blob Storage." border="false":::
+<!-- :::image type="content" source="../media/4-premium-performance-data-lake-storage-cost-analysis-table.png" alt-text="Table illustrating the cost-effectiveness of Premium Blob Storage." border="false"::: -->
+
+<table style="border-collapse:collapse; border:1px solid #999;">
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">&nbsp;</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">30K</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">100K</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">500K</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">10M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">50M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">70M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">80M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">90M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">100M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">200M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">500M</th>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">1B</th>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">0%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-723%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-704%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-612%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-111%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">22%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">34%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">38%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">41%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">43%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">54%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">60%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">63%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">10%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-723%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-706%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-621%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-125%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">18%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">31%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">35%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">38%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">41%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">53%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">60%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">62%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">20%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-724%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-709%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-631%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-141%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">13%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">27%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">32%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">35%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">38%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">51%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">59%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">62%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">30%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-725%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-711%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-641%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-160%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">7%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">23%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">28%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">32%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">35%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">50%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">59%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">62%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">40%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-726%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-714%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-651%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-182%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">-1%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">17%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">23%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">27%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">31%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">47%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">58%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">61%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">50%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-727%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-716%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-662%</td>
+		<td style="background:#faa;text-align:right;padding:5px;color:#000;border:1px solid #999;">-210%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">-11%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">9%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">16%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">21%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">25%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">45%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">57%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">60%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">60%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-727%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-719%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-673%</td>
+		<td style="background:#faa;text-align:right;padding:5px;color:#000;border:1px solid #999;">-244%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-25%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">-1%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">6%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">12%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">17%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">40%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">55%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">59%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">70%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-728%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-721%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-684%</td>
+		<td style="background:#faa;text-align:right;padding:5px;color:#000;border:1px solid #999;">-289%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-45%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">-17%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">-7%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">0%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">6%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">34%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">52%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">59%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">80%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-729%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-724%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-696%</td>
+		<td style="background:#faa;text-align:right;padding:5px;color:#000;border:1px solid #999;">-348%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-76%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-41%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-30%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">-20%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">-12%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">24%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">48%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">56%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">90%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-730%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-726%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-708%</td>
+		<td style="background:#faa;text-align:right;padding:5px;color:#000;border:1px solid #999;">-431%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-133%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-87%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-71%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-59%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-48%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">4%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">39%</td>
+		<td style="background:#6c8;text-align:right;padding:5px;color:#000;border:1px solid #999;">52%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">100%</th>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-730%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-729%</td>
+		<td style="background:#f66;text-align:right;padding:5px;color:#000;border:1px solid #999;">-720%</td>
+		<td style="background:#f88;text-align:right;padding:5px;color:#000;border:1px solid #999;">-556%</td>
+		<td style="background:#faa;text-align:right;padding:5px;color:#000;border:1px solid #999;">-266%</td>
+		<td style="background:#faa;text-align:right;padding:5px;color:#000;border:1px solid #999;">-203%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-180%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-160%</td>
+		<td style="background:#fcc;text-align:right;padding:5px;color:#000;border:1px solid #999;">-144%</td>
+		<td style="background:#fee;text-align:right;padding:5px;color:#000;border:1px solid #999;">-55%</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">12%</td>
+		<td style="background:#9da;text-align:right;padding:5px;color:#000;border:1px solid #999;">38%</td>
+	</tr>
+	<tr>
+		<th style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">TPS/TB</th>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">0.01</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">0.04</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">0.19</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">3.86</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">19.29</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">27.01</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">30.86</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">34.72</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">38.58</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">77.2</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">192.9</td>
+		<td style="background:#fff;text-align:right;padding:5px;color:#000;border:1px solid #999;">385.8</td>
+	</tr>
+</table>
 
 The table data is based on measurements derived from a Premium Blob Storage account with the Azure Data Lake Storage Gen2 hierarchical namespace enabled. Individual columns represent the total number of transactions per month and individual rows represent the percentage of read transactions for the corresponding total. Each cell in the table displays the percentage of cost reduction associated with a read transaction percentage.
 

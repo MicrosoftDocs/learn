@@ -4,6 +4,6 @@ Your recommendations also included guidance regarding the choice between the Pre
 
 #### References
 
-- [Premium block blob storage accounts](https://docs.microsoft.com/azure/storage/blobs/storage-blob-block-blob-premium)
+- [Premium block blob storage accounts](/azure/storage/blobs/storage-blob-block-blob-premium)
 
 - [Block Blob Latency Profiler](https://github.com/jcrobins/storage-blob-dotnet-latency-profiler)
