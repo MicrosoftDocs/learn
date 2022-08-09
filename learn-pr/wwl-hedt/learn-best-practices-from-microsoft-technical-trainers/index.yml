@@ -3,7 +3,7 @@ uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers
 metadata:
   title: Learn best practices from Microsoft Technical Trainers
   description: "Learn best practices from Microsoft Technical Trainers"
-  ms.date: 04/13/2022
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Explain the different approaches to curriculum integration.
   - Plan how to promote certification awareness and benefits.
   - Integrate content from Microsoft Learn into your Learning Management System.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/5-learn-best-practices-from-microsoft-technical-trainers.svg
 levels:
 - beginner
 roles:

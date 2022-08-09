@@ -60,8 +60,8 @@ Rather than thinking of isolation as being a discrete property, you should think
 
 For more information on architecture considerations for multitentant scenarios, see the following articles:
 
-* [Architectural considerations for a multitenant solution](https://docs.microsoft.com/azure/architecture/guide/multitenant/considerations/overview)
-* [Tenancy models to consider for a multitenant solution](https://docs.microsoft.com/azure/architecture/guide/multitenant/considerations/tenancy-models)
+* [Architectural considerations for a multitenant solution](/azure/architecture/guide/multitenant/considerations/overview)
+* [Tenancy models to consider for a multitenant solution](/azure/architecture/guide/multitenant/considerations/tenancy-models)
 
 ## Manage hybrid environments at scale with Azure Arc
 
