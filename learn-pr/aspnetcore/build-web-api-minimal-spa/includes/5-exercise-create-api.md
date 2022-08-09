@@ -96,7 +96,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    "proxy": "http://localhost:5000",
    ```
 
-   API calls from the front end will be proxied to `http://localhost:5000`.
+   API calls from the frontend will be proxied to `http://localhost:5000`.
 
 1. Save all your changes and start the app:
 
@@ -133,7 +133,7 @@ Suppose the back-end team has now finished building the server. To use the serve
 
    :::code language="csharp" source="../code/minimal-spa-use-server-api.cs" highlight="6, 23-30, 39":::
 
-   The changes will configure CORS. You'll be able to read and write toward the API, despite the front end and back end running on different ports.
+   The changes will configure CORS. You'll be able to read and write toward the API, despite the frontend and back end running on different ports.
 
 1. Save all your changes, and then start the API in the terminal with `dotnet run`.
 
@@ -145,8 +145,8 @@ Suppose the back-end team has now finished building the server. To use the serve
    "proxy": "http://localhost:5059",
    ```
 
-1. In the terminal running the front end app, stop the app with **Ctrl**+**C**. Restart the frontend with `yarn start`.
+1. In the terminal running the frontend app, stop the app with **Ctrl**+**C**. Restart the frontend with `yarn start`.
 
    Upon loading the app, it displays one item with the title, _Pepperoni_.
 
-Congratulations, you've created a full stack application! The React front end is reading data from a backend database via a minimal API.
+Congratulations, you've created a full stack application! The React frontend is reading data from a backend database via a minimal API.
