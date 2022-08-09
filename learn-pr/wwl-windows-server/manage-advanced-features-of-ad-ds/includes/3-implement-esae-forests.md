@@ -37,7 +37,7 @@ The ESAE forest servers need to be configured in the following ways:
  -  Installation media should be validated.
  -  Servers should run the most recent version of the Windows Server operating system.
  -  Servers should be updated automatically with security updates.
- -  Security compliance manager baselines should be used as the starting point for server configuration.
+ -  Security Compliance Manager baselines should be used as the starting point for server configuration.
  -  Servers should be configured with Secure Boot, BitLocker volume encryption, Credential Guard, and Device Guard.
  -  Servers should be configured to block USB storage.
  -  Servers should be on isolated networks. Inbound and outbound Internet connections should be blocked.
