@@ -17249,6 +17249,21 @@
       "source_path": "learn-pr/wwl-azure/manage-usage-billing-azure-stack-hub/10-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-usage-billing-azure-stack-hub/11-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-security/7-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security/7-microsoft-defender-antivirus-for-session-hosts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-security/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-security/8-summary",
+      "redirect_document_id": true
     }
   ]
 }
