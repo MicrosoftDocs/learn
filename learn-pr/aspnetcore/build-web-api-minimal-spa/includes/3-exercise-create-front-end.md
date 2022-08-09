@@ -9,7 +9,7 @@ In this exercise, you build the front-end app. You start with a scaffold, and th
 
 To scaffold an app, you use the `create-react-app` scaffolder. By using `npx`, you can call the scaffolder and have it create a working React app in a matter of seconds.
 
-1. In a command terminal (with all the prequisites installed), create the app by using `npx create-react-app`:
+1. In a command terminal (with all the prerequisites installed), create the app by using `npx create-react-app`:
 
     ```bash
     npx create-react-app pizza-web
