@@ -12,7 +12,7 @@ In most cases, workloads with a rate of more than 35 to 40 transactions per seco
 
 ### Example scenario
 
-Assume that your workload executes 700 million read operations and 300 million write operations in a 30-day month using a storage account that contains 5 TB of data. You can then calculate the resulting TPS/TB by dividing the number of operations by the number of days multiplied by the number of hours, minutes, and seconds, as illustrated by the following forumla:
+Assume that your workload executes 700 million read operations and 300 million write operations in a 30-day month using a storage account that contains 5 TB of data. You can then calculate the resulting TPS/TB by dividing the number of operations by the number of days multiplied by the number of hours, minutes, and seconds, as illustrated by the following formula:
 
 $${o = \frac{ n }{ d\ \times\ h\ \times\ m\ \times\ s }}$$
 

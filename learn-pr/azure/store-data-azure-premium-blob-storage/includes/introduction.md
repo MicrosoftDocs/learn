@@ -12,6 +12,8 @@ As a cloud administrator responsible for optimizing the use of Azure resources, 
 
 In this module, you'll explore the performance characteristics and benefits offered by Azure Premium Blob Storage and identify scenarios where these benefits are particularly relevant. You'll also review the steps in an exercise that will validate these benefits by using a custom testing application. By the end of this module, you'll be able to describe the benefits of Azure Premium Blob Storage, identify business critical workloads that can utilize these benefits, and demonstrate how to validate these benefits.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-prerequisite.md)]
+
 ## Learning objectives
 
 After completing this module, you'll be able to:

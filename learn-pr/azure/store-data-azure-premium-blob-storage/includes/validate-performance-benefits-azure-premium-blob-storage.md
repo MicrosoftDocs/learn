@@ -2,6 +2,8 @@ Now that you've reviewed the methods of optimizing and validating the performanc
 
 To simplify the implementation of this exercise, you'll run the app from Azure Cloud Shell, which eliminates the need to use an Azure virtual machine for this purpose. However, to minimize the impact of network-related latencies on the results of the test, you'll configure Azure Cloud Shell to use the virtual network isolation capability. This will allow you to ensure that the virtual machine (VM) hosting the container running your Azure Cloud Shell session resides in the same Azure region as the two storage accounts.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-note.md)]
+
 ### Task 1: Prepare the lab environment
 
 Use the following procedure to prepare the environment that you'll use to implement virtual network isolation of Azure Cloud Shell and to create the two Azure Storage accounts:
@@ -17,7 +19,7 @@ Use the following procedure to prepare the environment that you'll use to implem
 
 1. If needed, on the **Cloud Shell** pane, switch to the **PowerShell** option using the drop-down menu in the toolbar.
 
-1. On the **Cloud Shell** pane, run the following command to set the value of a variable that designates the Azure region into which you will provision resources in this exercise. To do this, replace the \<azure-region\> placeholder with the name of the Azure region in which you can deploy resources:
+1. On the **Cloud Shell** pane, run the following command to set the value of a variable that designates the Azure region into which you'll provision resources in this exercise. To do this, replace the \<azure-region\> placeholder with the name of the Azure region in which you can deploy resources:
 
     ```powershell
     $location = '<azure-region>'
@@ -47,7 +49,7 @@ Use the following procedure to prepare the environment that you'll use to implem
     New-AzResourceGroup @rg
     ```
 
-1. Set the value of a variable that designates the name of the virtual network to which you will connect the VM virtual machine running the Cloud Shell container:
+1. Set the value of a variable that designates the name of the virtual network to which you'll connect the VM virtual machine running the Cloud Shell container:
 
     ```powershell
     $vnetName = "$rgName-vnet"
@@ -289,7 +291,7 @@ Use the following procedure to create an Azure Premium Blob Storage account from
 
 ### Task 5: Upload blobs to the Azure Standard performance storage account
 
-Use the following procedure to use a custom .NET app to upload blobs to the Azure Standard performance storage account you created earlier in this exercise. You‘ll use these blobs to evaluate the latency of blob download operations later in this exercise. You will also configure storage diagnostics that will allow you to assess service-side latency.
+Use the following procedure to use a custom .NET app to upload blobs to the Azure Standard performance storage account you created earlier in this exercise. You‘ll use these blobs to evaluate the latency of blob download operations later in this exercise. You'll also configure storage diagnostics that will allow you to assess service-side latency.
 
 > [!NOTE]
 > Before you proceed with this task, verify that the storage mounting operation of the Azure Cloud Shell you initiated at the end of Task 2 completed successfully and that the provisioning of Azure Standard performance storage account you initiated in Task 3 has completed.
@@ -342,7 +344,7 @@ Use the following procedure to use a custom .NET app to upload blobs to the Azur
 
 ### Task 6: Upload blobs to the Azure Premium Blob Storage account
 
-Use the following procedure to leverage the custom .NET app to upload blobs to the Azure Premium Blob Storage account you created earlier in this exercise. You'll use these blobs to evaluate latency of blob download operations later in this exercise. Here as well you will also configure storage diagnostics that will allow you to assess service-side latency.
+Use the following procedure to leverage the custom .NET app to upload blobs to the Azure Premium Blob Storage account you created earlier in this exercise. You'll use these blobs to evaluate latency of blob download operations later in this exercise, and you'll also configure storage diagnostics that will allow you to assess service-side latency.
 
 > [!NOTE]
 > Before starting this task, verify that the provisioning of Azure Premium Blob Storage account you initiated in Task 4 has completed.

@@ -2,6 +2,8 @@ In this module, you've learned how you can use Azure Premium Blob Storage to hel
 
 Your recommendations also included guidance regarding the choice between the Premium and Standard performance tiers. This will help your company further optimize its storage strategy.
 
+[!INCLUDE[](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
+
 #### References
 
 - [Premium block blob storage accounts](/azure/storage/blobs/storage-blob-block-blob-premium)

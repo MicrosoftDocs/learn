@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.store-data-in-azure-premium-blob-storage.validate-performance-benefits-azure-premium-blob-storage 
-title: Validate the performance benefits with Azure Premium Blob Storage 
+title: Exercise - Validate the performance benefits with Azure Premium Blob Storage 
 metadata:
-  title: Validate the performance benefits with Azure Premium Blob Storage
-  description: Validate the performance benefits with Azure Premium Blob Storage.
+  title: Exercise - Validate the performance benefits with Azure Premium Blob Storage
+  description: In this exercise, you'll validate the performance benefits with Azure Premium Blob Storage.
   ms.date: 08/01/2022
   author: ciphertxt
   ms.author: schoag
