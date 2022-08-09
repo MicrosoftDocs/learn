@@ -12,7 +12,7 @@ Use the following procedure to prepare the environment that you'll use to implem
 
 1. When prompted, sign in with a user account that has the **Owner** role in the Azure subscription you'll be using in this exercise.
 
-1. In the Azure Portal, select the **Cloud Shell** icon.
+1. In the Azure portal, select the **Cloud Shell** icon.
 
     > [!NOTE]
     > If this is the first time you're using Cloud Shell and you're presented with the message **Welcome to Azure Cloud Shell**, select **PowerShell**. On the **You have no storage mounted** pane, in the **Subscription** drop-down list, select the subscription you're using in this exercise, and then select **Create storage**.
