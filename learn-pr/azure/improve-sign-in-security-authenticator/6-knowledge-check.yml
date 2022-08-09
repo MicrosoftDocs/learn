@@ -61,8 +61,8 @@ quiz:
   - content: "How can you nudge a user to set up Microsoft Authenticator every time they sign in?"
     choices:
     - content: "Enable the policy to be applied to every sign-in."
-      isCorrect: The policy is always applied to users who are included in the registration campaign. But they can postpone setup for up to 14 days. 
-      explanation: ""
+      isCorrect: false 
+      explanation: "The policy is always applied to users who are included in the registration campaign. But they can postpone setup for up to 14 days."
     - content: "Create a custom sign-in message."
       isCorrect: false
       explanation: "No custom message is required to nudge users. "
