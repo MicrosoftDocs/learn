@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.store-data-in-azure-premium-blob-storage.describe-azure-blob-storage-performance-indicators 
+title: Describe Azure Blob Storage performance indicators 
+metadata:
+  title: Describe Azure Blob Storage performance indicators 
+  description: Describe performance indicators for Azure Blob Storage.
+  ms.date: 08/01/2022
+  author: ciphertxt
+  ms.author: schoag
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/describe-azure-blob-storage-performance-indicators.md)]

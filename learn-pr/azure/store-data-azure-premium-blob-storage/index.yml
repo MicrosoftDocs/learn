@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.store-data-in-azure-premium-blob-storage
+metadata:
+  title: 'Analyze performance indicators for Azure Blob Storage'
+  description: Analyze performance indicators for Azure Blob Storage.
+  ms.date: 08/01/2022
+  author: ciphertxt
+  ms.author: schoag
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Analyze performance indicators for Azure Blob Storage'
+summary: Analyze performance indicators for Azure Blob Storage.
+abstract:  | 
+  After completing this module, you'll be able to:
+  - Describe the performance characteristics of Azure Blob Storage.
+  - Identify the use cases of Azure Premium Blob Storage and explain why the Premium tier is the optimum option for these specific workloads.
+  - Optimize and validate performance benefits with Azure Premium Blob Storage. 
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - A basic understanding of Azure Blob Storage.
+  - Familiarity with storage performance characteristics.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- data-engineer
+- student
+- technology-manager
+products:
+- azure
+- azure-blob-storage
+units:
+- learn.azure.store-data-in-azure-premium-blob-storage.introduction
+- learn.azure.store-data-in-azure-premium-blob-storage.describe-azure-blob-storage-performance-indicators
+- learn.azure.store-data-in-azure-premium-blob-storage.describe-high-performance-workloads-benefit-azure-blob-premium-storage
+- learn.azure.store-data-in-azure-premium-blob-storage.optimize-validate-performance-benefits-azure-premium-blob-storage
+- learn.azure.store-data-in-azure-premium-blob-storage.validate-performance-benefits-azure-premium-blob-storage
+- learn.azure.store-data-in-azure-premium-blob-storage.knowledge-check
+- learn.azure.store-data-in-azure-premium-blob-storage.summary
+badge:
+  uid: learn.azure.store-data-in-azure-premium-blob-storage.badge 

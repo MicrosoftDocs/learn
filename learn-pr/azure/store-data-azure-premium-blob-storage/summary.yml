@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.store-data-in-azure-premium-blob-storage.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Provide an introduction of Azure Premium Blob Storage.
+  ms.date: 08/01/2022
+  author: ciphertxt
+  ms.author: schoag
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/introduction.md)]
