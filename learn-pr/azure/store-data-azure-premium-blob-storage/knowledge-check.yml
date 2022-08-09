@@ -12,3 +12,18 @@ metadata:
 durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Choose the best response for each question. Then select Check your answers.
+  questions:
+
+  - content: "Which performance indicator most significantly distinguishes Premium Blob Storage from General Purpose Storage?"
+    choices:
+    - content: "Latency"
+      isCorrect: true
+      explanation: "Performance characteristics of Azure Premium Blob Storage make it particularly suitable for workloads that benefit from minimized latency."
+    - content: "Throughput"
+      isCorrect: false
+      explanation: "Throughput limits for Premium Blob Storage and General Purpose Storage are similar."
+    - content: "IOPS"
+      isCorrect: false
+      explanation: "Although Premium Blob Storage offers higher IOPS in comparison to General Purpose Storage, low and consistent latency are usually the reason for picking premium for most workloads."
