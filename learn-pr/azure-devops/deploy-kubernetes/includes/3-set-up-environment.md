@@ -1,4 +1,4 @@
-In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure Kubernetes Service environment that you'll deploy to.
+In this section, you ensure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure Kubernetes Service environment that you'll deploy to.
 
 To accomplish these goals, you:
 
@@ -40,7 +40,7 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Kubernetes*.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing the process to create the project.":::
+    :::image type="content" source="../media/3-create-new-project.png" border="false" alt-text="Screenshot of the Azure DevOps Demo Generator showing the process to create the project.":::
 
 1. Select **Yes, I want to import this repository** > **Authorize**.
 
@@ -72,14 +72,14 @@ To set up the work item:
 
 1. From Azure DevOps, go to **Boards**. Then, select **Boards** from the menu.
 
-    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" border="false" alt-text="Screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create multi-container version of web site orchestrated with Kubernetes** work item, select the down arrow at the bottom of the card. Then assign the work item to yourself.
 
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" border="false" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
+    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" border="false" alt-text="Screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column after you complete the task.
 
@@ -100,7 +100,7 @@ In this module, you use the Azure CLI to bring up the resources need to deploy a
 
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
-    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" border="false" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -111,7 +111,7 @@ A _region_ is one or more Azure datacenters within a geographic location. East U
 
 To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
-1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription.
+1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription:
 
     ```azurecli
     az account list-locations \
@@ -171,13 +171,13 @@ This solution requires several Azure resources for deployment, which you create 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
-1. Run the following `az group create` command to create a resource group using the name defined earlier.
+1. Run the following `az group create` command to create a resource group using the name defined earlier:
 
     ```azurecli
     az group create --name $rgName
     ```
 
-1. Run the following `az acr create` command to create an Azure Container Registry using the name defined earlier.
+1. Run the following `az acr create` command to create an Azure Container Registry using the name defined earlier:
 
     ```azurecli
     az acr create \
@@ -186,7 +186,7 @@ This solution requires several Azure resources for deployment, which you create 
       --sku Standard
     ```
 
-1. Run the following `az aks create` command to create an AKS instance using the name defined earlier.
+1. Run the following `az aks create` command to create an AKS instance using the name defined earlier:
 
     ```azurecli
     az aks create \
@@ -200,7 +200,7 @@ This solution requires several Azure resources for deployment, which you create 
    > [!NOTE]
    > It may take 10-15 minutes for the AKS deployment to complete.
 
-1. Create a variable to store the ID of the service principal configured for the AKS instance.
+1. Create a variable to store the ID of the service principal configured for the AKS instance:
 
     ```azurecli
     clientId=$(az aks show \
@@ -210,7 +210,7 @@ This solution requires several Azure resources for deployment, which you create 
       --output tsv)
     ```
 
-1. Create a variable to store the ID of the Azure Container Registry.
+1. Create a variable to store the ID of the Azure Container Registry:
 
     ```azurecli
     acrId=$(az acr show \
@@ -220,7 +220,7 @@ This solution requires several Azure resources for deployment, which you create 
       --output tsv)
     ```
 
-1. Run the following `az acr list` command to print the login server for your ACR instance.
+1. Run the following `az acr list` command to print the login server for your ACR instance:
 
     ```azurecli
     az acr list \
@@ -229,7 +229,7 @@ This solution requires several Azure resources for deployment, which you create 
      --output table
     ```
 
-    Note the login server for your container registry. You'll need this when configuring the pipeline and environment in some upcoming steps. Here's an example.
+    Note the login server for your container registry. You'll need this when configuring the pipeline and environment in some upcoming steps. Here's an example:
 
     ```output
     LoginServer                      
@@ -237,7 +237,7 @@ This solution requires several Azure resources for deployment, which you create 
     tailspinspacegame4692.azurecr.io
     ```
 
-1. Run the following `az role assignment create` command to create a role assignment to authorize the AKS cluster to connect to the Azure Container Registry.
+1. Run the following `az role assignment create` command to create a role assignment to authorize the AKS cluster to connect to the Azure Container Registry:
 
     ```azurecli
     az role assignment create \
@@ -261,7 +261,7 @@ To add the variables:
 
 1. Under **Pipelines**, select **Library**.
 
-    :::image type="content" source="../media/3-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the Library menu option.":::
+    :::image type="content" source="../media/3-pipelines-library.png" border="false" alt-text="Screenshot of Azure Pipelines showing the Library menu option.":::
 
 1. Select **+ Variable group**.
 
@@ -275,18 +275,18 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipeline showing the variable group. The group contains one variable.":::
+    :::image type="content" source="../media/3-library-variable-group.png" border="false" alt-text="Screenshot of Azure Pipeline showing the variable group. The group contains one variable.":::
 
 ## Create required service connections
 
 Here, you create service connections that enable Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. Azure Pipelines uses these service connections to push your containers, as well as to instruct your AKS cluster to pull them in to update the deployed service.
 
 > [!IMPORTANT]
-> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
+> Ensure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Kubernetes** project.
 
-1. From the bottom corner of the page, select **Project settings**.
+1. From the lower corner of the page, select **Project settings**.
 
 1. Under **Pipelines**, select **Service connections**.
 
@@ -294,7 +294,7 @@ Here, you create service connections that enable Azure Pipelines to access your 
 
 1. Near the top of the page, select **Azure Container Registry**.
 
-1. Enter the following values for each setting.
+1. Enter the following values for each setting:
 
     | Setting               | Value                                        |
     |---------------------|----------------------------------------------|
@@ -327,7 +327,7 @@ Here, you create service connections that enable Azure Pipelines to access your 
 
 1. Under **Pipelines**, select **Environments**.
 
-    :::image type="content" source="../media/3-pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the Environments menu option.":::
+    :::image type="content" source="../media/3-pipelines-environments.png" border="false" alt-text="Screenshot of Azure Pipelines showing the Environments menu option.":::
 
 1. Select **Create environment**.
 1. Under **Name**, enter *spike*.
@@ -347,7 +347,7 @@ Here you update the Kubernetes *deployment.yml* manifest to point to the contain
 
 1. Open the file at *manifests/deployment.yml* in edit mode.
 
-    :::image type="content" source="../media/3-github-edit-mode.png" alt-text="A screenshot of GitHub showing the location of the edit mode icon.":::
+    :::image type="content" source="../media/3-github-edit-mode.png" border="false" alt-text="Screenshot of GitHub showing the location of the edit mode icon.":::
 
 1. Change the container image references to use your ACR login server. The following code uses *tailspinspacegame2439.azurecr.io* as an example.
 

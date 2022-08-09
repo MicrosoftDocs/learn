@@ -16,9 +16,9 @@ Things are looking up at Tailspin. At a recent management offsite, Andy presente
 
 **Tim**: I'm not sure I like the sound of that. I'm already dealing with so many services across our environments. I don't know if I want more on my plate.
 
-**Andy**: That's an understandable concern. Fortunately, there are some great tools for managing a multitude of containers in a given environment. We have been asked to spike out a multi-container solution for our web app that is orchestrated using Kubernetes. They also want to know how it will impact our DevOps process.
+**Andy**: That's an understandable concern. Fortunately, there are some great tools for managing a multitude of containers in a given environment. We've been asked to spike out a multi-container solution for our web app that is orchestrated using Kubernetes. They also want to know how it will impact our DevOps process.
 
-**Mara**: I've been reading up on Kubernetes. Azure has great support for it through Azure Kubernetes Service, and I know there is pipeline support for it in Azure DevOps.
+**Mara**: I've been reading up on Kubernetes. Azure has great support for it through Azure Kubernetes Service, and I know there's pipeline support for it in Azure DevOps.
 
 **Amita**: This process sounds like it's going to get complex. How will it impact testing?
 
@@ -32,7 +32,7 @@ Things are looking up at Tailspin. At a recent management offsite, Andy presente
 
 **Mara**: Have you thought about what we will refactor out as the second container? I know there have been several teams asking us to make our leaderboard available through a web API.
 
-**Andy**: I'm one step ahead of you. I forked the Docker project last night and refactored the leaderboard data functionality into its own microservice. This leaves us with one container for the web site and another for a leaderboard API. Both containers are configured to have their own public endpoints that we can share with anyone who wants to use the site or API regardless of what technology stack their app uses. If the load grows substantially for either, we can scale its containers independently.
+**Andy**: I'm one step ahead of you. I forked the Docker project last night and refactored the leaderboard data functionality into its own microservice. This leaves us with one container for the website and another for a leaderboard API. Both containers are configured to have their own public endpoints that we can share with anyone who wants to use the site or API, regardless of what technology stack their app uses. If the load grows substantially for either, we can scale its containers independently.
 
 **Mara**: This project sounds awesome! Let's get started on updating the release pipeline.
 

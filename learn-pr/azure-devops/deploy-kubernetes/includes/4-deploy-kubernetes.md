@@ -6,7 +6,7 @@ In this part, you'll:
 > * Update the pipeline to support CI/CD on a commit to the main branch.
 > * Define some pipeline variables to make the build pipeline easier to maintain.
 > * Add a task to build and publish the leaderboard container to your container registry.
-> * Add a task to publish Kubernetes manifests from the **Build** stage so that they can be downloaded for use in the **Deploy** stage.
+> * Add a task to publish Kubernetes manifests from the **Build** stage to download for use in the **Deploy** stage.
 > * Add a task to create an image pull secret for use between your Kubernetes and container registry instances.
 > * Add a task to deploy updated images to a Kubernetes cluster.
 > * Save the pipeline to trigger a CI/CD workflow.
@@ -21,7 +21,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
     **Andy:** This was the build stage we had in place for the previous single-container solution. I knew it wasn't going to run properly, so I disabled it. We can start off by re-enabling CI/CD for commits to the `main` branch.
 
-1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there is a commit to the main branch.
+1. Replace the existing `trigger` line at the top of the file with the code below. This will automate runs when there's a commit to the main branch.
 
     [!code-yml[](code/4-1-azure-pipelines.yml)]
 
@@ -48,13 +48,13 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Andy:** I think we can move on to the next stage. Do you see anything missing?
 
-**Mara:** You mentioned that there were some manifest files in the source project that define the deployment and services Kubernetes will need when we deploy. We should publish those before we finish this stage.
+**Mara:** You mentioned that there were some manifest files in the source project that define the deployment, and services Kubernetes will need when we deploy. We should publish those before we finish this stage.
 
 **Andy:** Do we need to? Won't they still be on the local disk?
 
 **Mara:** They would be if we were adding the deployment tasks within the same stage as the build. However, since our deployment tasks happen in their own *Deploy* stage, it will run on a completely fresh environment, probably even on a different agent. We should be sure to publish anything this stage produces that the other stage will need.
 
-**Andy:** That's a great point. Is it easy to do? We just need to make sure the *manifests* folder is copied to the new agent.
+**Andy:** That's a great point. Is it easy to do? We just need to ensure the *manifests* folder is copied to the new agent.
 
 **Mara**: That's what the `PublishBuildArtifacts@1` task is for. It's so common that there's even a shorthand for it, `publish`.
 
@@ -64,7 +64,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 ## Replace the deploy stage
 
-**Mara:** I am going to replace our existing **Deploy** stage with one that uses a deployment job. A *deployment job* is a special kind of job that allows us to associate our deployment with the Azure DevOps environment created earlier. This will make it easier to track deployment history, which will be especially useful as our solutions get more sophisticated. Another benefit is that it helps us monitor our Kubernetes cluster with integrated features for reviewing pods, services, and more.
+**Mara:** I'm going to replace our existing **Deploy** stage with one that uses a deployment job. A *deployment job* is a special kind of job that allows us to associate our deployment with the Azure DevOps environment created earlier. This will make it easier to track deployment history, which will be especially useful as our solutions get more sophisticated. Another benefit is that it helps us monitor our Kubernetes cluster with integrated features for reviewing pods, services, and more.
 
 1. Remove the existing **Deploy** stage (everything after the build stage) and replace it with the code below. Note the highlighted code that specifies the deployment environment to use created by `(Azure DevOps environment name).(AKS namespace)`.
 
@@ -82,7 +82,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
     **Andy:** Now we need to create an image pull secret that will be shared between our ACR and AKS instances. Do you know if there's a task we can use?
 
-    **Mara:** I was just looking that up, and we are in luck. The `KubernetesManifest@0` task supports an action to create the secret needed.
+    **Mara:** I was just looking that up, and we're in luck. The `KubernetesManifest@0` task supports an action to create the secret needed.
 
 ### Kubernetes manifest task
 
@@ -96,7 +96,7 @@ The `KubernetesManifest@0` task is designed to manage all of the mainstream depl
 
 You can learn more about the flexibility of this task in the [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest?azure-portal=true) documentation.
 
-1. Add the code below to the end of the pipeline. Be sure to indent it to match the `download` step before it.
+1. Add the following code to the end of the pipeline. Be sure to indent it to match the `download` step before it.
 
     [!code-yml[](code/4-7-azure-pipelines.yml)]
 
@@ -108,13 +108,13 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 	* `imagePullSecrets` specifies the list of secrets needed to pull from the container registry.
 	* `containers` specifies the list of container images to deploy.
 
-1. Add the code below to the end of the pipeline. Be sure to indent it to match the previous task.
+1. Add the following code to the end of the pipeline. Be sure to indent it to match the previous task.
 
 	[!code-yml[](code/4-8-azure-pipelines.yml)]
 
 ## Save the pipeline to trigger a build and release
 
-1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
+1. Select **Save** from the upper right corner of the page. Confirm the **Save** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, return to the **Environments** tab in Azure DevOps.
 1. Select **spike**, the Azure DevOps environment that you created earlier.
@@ -123,12 +123,12 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 1. Select **web**. Here you see the service details and associated pods for the **web** service.
 1. Select the **Copy External IP to clipboard** button. This IP address is where the site is publicly hosted.
 
-    :::image type="content" source="../media/4-deploy-ip.png" alt-text="A screenshot showing the location of the web site IP address.":::
+    :::image type="content" source="../media/4-deploy-ip.png" border="false" alt-text="Screenshot showing the location of the web site IP address.":::
 
 1. Navigate to the copied IP address in a new browser tab.
 1. You see the site on AKS.
 
-    :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
+    :::image type="content" source="../media/4-space-game.png" border="false" alt-text="Screenshot of the Space Game web site.":::
 
 1. Return to the Azure DevOps browser tab.
 1. Use the browser **Back** button to return to the **default** namespace page.
@@ -140,7 +140,7 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 
 1. You see the raw JSON response from the leaderboard API hosted in the Kubernetes cluster.
 
-    :::image type="content" source="../media/4-leaderboard-api.png" alt-text="A screenshot of a web browser showing the JSON response from the leaderboard service.":::
+    :::image type="content" source="../media/4-leaderboard-api.png" border="false" alt-text="Screenshot of a web browser showing the JSON response from the leaderboard service.":::
 
     You now have a REST API that you can call from other applications.
 
