@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-language-understanding-model.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/09/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your app must interpret a command such as \"turn on the light\" or \"switch the light on\". What do these phrases represent in a language model?"
+    choices:
+    - content: "Intents."
+      isCorrect: false
+      explanation: "That's incorrect. An intent is a possible semantic meaning to be identified by the model."
+    - content: "Utterances."
+      isCorrect: true
+      explanation: "That's correct. Utterances are example phrases that indicate a specific intent."
+    - content: "Entities."
+      isCorrect: false
+      explanation: "That's incorrect. Entities are specific items to which an intent should be applied."
+  - content: "Your app must interpret a command to book a flight to a specified city, such as \"Book a flight to Paris.\" How should you model the city element of the command?"
+    choices:
+    - content: "As an intent."
+      isCorrect: false
+      explanation: "That's incorrect. The city is an entity to which the intent (booking a flight) should be applied."
+    - content: "As an utterance."
+      isCorrect: false
+      explanation: "That's incorrect. The city is an entity to which the intent (booking a flight) should be applied."
+    - content: "As an entity."
+      isCorrect: true
+      explanation: "That's correct. The city is an entity to which the intent (booking a flight) should be applied."
+  - content: "Your language model needs to detect an email when present in an utterance. What is the simpliest way to extract that email?"
+    choices:
+    - content: "Use Regular Expression entities."
+      isCorrect: false
+      explanation: "That's incorrect. When a language model needs to detect a common entity, use prebuilt components to have the Language service automatically detect the entity."
+    - content: "Use Prebuilt entity components."
+      isCorrect: true
+      explanation: "That's correct. When a language model needs to detect a common entity, use prebuilt components to have the Language service automatically detect the entity."
+    - content: "Use Learned entity components."
+      isCorrect: false
+      explanation: "That's incorrect. When a language model needs to detect a common entity, use prebuilt components to have the Language service automatically detect the entity."
