@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.store-data-in-azure-premium-blob-storage
+uid: learn.azure.analyze-azure-blob-storage-performance-indicators
 metadata:
   title: 'Analyze performance indicators for Azure Blob Storage'
   description: Learn how to analyze the performance indicators for Azure Blob Storage.
@@ -32,12 +32,12 @@ products:
 - azure
 - azure-blob-storage
 units:
-- learn.azure.store-data-in-azure-premium-blob-storage.introduction
-- learn.azure.store-data-in-azure-premium-blob-storage.describe-azure-blob-storage-performance-indicators
-- learn.azure.store-data-in-azure-premium-blob-storage.describe-high-performance-workloads-benefit-azure-blob-premium-storage
-- learn.azure.store-data-in-azure-premium-blob-storage.optimize-validate-performance-benefits-azure-premium-blob-storage
-- learn.azure.store-data-in-azure-premium-blob-storage.validate-performance-benefits-azure-premium-blob-storage
-- learn.azure.store-data-in-azure-premium-blob-storage.knowledge-check
-- learn.azure.store-data-in-azure-premium-blob-storage.summary
+- learn.azure.analyze-azure-blob-storage-performance-indicators.introduction
+- learn.azure.analyze-azure-blob-storage-performance-indicators.describe-azure-blob-storage-performance-indicators
+- learn.azure.analyze-azure-blob-storage-performance-indicators.describe-high-performance-workloads-benefit-azure-blob-premium-storage
+- learn.azure.analyze-azure-blob-storage-performance-indicators.optimize-validate-performance-benefits-azure-premium-blob-storage
+- learn.azure.analyze-azure-blob-storage-performance-indicators.validate-performance-benefits-azure-premium-blob-storage
+- learn.azure.analyze-azure-blob-storage-performance-indicators.knowledge-check
+- learn.azure.analyze-azure-blob-storage-performance-indicators.summary
 badge:
-  uid: learn.azure.store-data-in-azure-premium-blob-storage.badge 
+  uid: learn.azure.analyze-azure-blob-storage-performance-indicators.badge 
