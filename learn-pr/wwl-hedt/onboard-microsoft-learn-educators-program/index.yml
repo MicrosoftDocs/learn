@@ -2,8 +2,8 @@
 uid: learn.wwl.onboard-microsoft-learn-educators-program
 metadata:
   title: Onboard to Microsoft Learn for Educators program
-  description: "Joining MSLE, getting certified in the content you'll be teaching, integrating Microsoft Official Course materials, and leveraging the various benefits will help ensure your students are well prepared for today’s job opportunities. SC-900"
-  ms.date: 04/13/2022
+  description: "Joining MSLE, getting certified in the content you'll be teaching, integrating Microsoft Official Course materials, and leveraging the various benefits will help ensure your students are well prepared for today’s job opportunities."
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Understand the Microsoft Learn for Educators program benefits and offerings.
   - Understand the different MSLE program participation options.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/onboard-microsoft-learn-educators-program.svg
 levels:
 - beginner
 roles:

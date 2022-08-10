@@ -60,7 +60,7 @@ You'll create a static class to hold the values for the font color and backgroun
              ...>
     ```
 
-1. Add the `TextColor` attribute shown in the following code to the `Label` control. This mark-up uses the `x:Static` mark-up extension to retrieve the values store in the `static` fields in the **SharedResources** class:
+1. Add the `TextColor` attribute shown in the following code to the `Label` control. This mark-up uses the `x:Static` mark-up extension to retrieve the values stored in the `static` fields in the **SharedResources** class:
 
     ```xml
     <Label Text="Notes"

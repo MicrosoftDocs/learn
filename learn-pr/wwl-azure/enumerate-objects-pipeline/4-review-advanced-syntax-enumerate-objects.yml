@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enumerate-objects-pipeline.review-advanced-syntax-enumerate-objects
+title: Review advanced syntax to enumerate objects in the pipeline
+metadata:
+  title: Review advanced syntax to enumerate objects in the pipeline
+  description: "Review advanced syntax to enumerate objects in the pipeline"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-review-advanced-syntax-enumerate-objects.md)]

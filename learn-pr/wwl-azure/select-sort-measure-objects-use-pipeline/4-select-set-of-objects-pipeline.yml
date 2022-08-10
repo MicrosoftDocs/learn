@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.select-sort-measure-objects-use-pipeline.select-set-of-objects-pipeline
+title: Select a set of objects in the pipeline
+metadata:
+  title: Select a set of objects in the pipeline
+  description: "Select a set of objects in the pipeline"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-select-set-of-objects-pipeline.md)]

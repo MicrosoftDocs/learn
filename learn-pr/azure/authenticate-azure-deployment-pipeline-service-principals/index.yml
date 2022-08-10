@@ -45,7 +45,6 @@ products:
   - azure-active-directory
   - azure-devops
   - azure-resource-manager
-  - github
 subjects:
   - devops
   - cloud-computing
