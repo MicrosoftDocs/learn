@@ -65,7 +65,7 @@ As an Azure solution architect, you would use Azure Monitor to enable tightly fo
 
 ## Alert summary view
 
-By default, the alert page shows a summary of all alerts. Note that the view doesn't show classic alerts. You can apply filters to the view by using one or more of the following categories: subscriptions, alert condition, severity, or time ranges  The view includes only alerts that match these criteria. 
+By default, the alert page shows a summary of all alerts. Note that the view doesn't show classic alerts. You can apply filters to the view by using one or more of the following categories: subscriptions, alert condition, severity, or time ranges. The view includes only alerts that match these criteria.
 
 ### Understand the alert state in the resolution process
 

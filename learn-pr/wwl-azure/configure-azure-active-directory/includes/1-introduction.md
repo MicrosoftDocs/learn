@@ -12,7 +12,6 @@ Manage Azure identities and governance (15-20%)
 
 Manage Azure AD objects
 
- -  Configure Azure AD Join.
  -  Configure Self-Service Password Reset.
 
 ## Learning objectives

@@ -1,6 +1,6 @@
 Azure Active Directory (Azure AD) is Microsoft’s multi-tenant cloud-based directory and identity management service.<br>
 
-:::image type="content" source="../media/azure-active-directory-a3b1df09.png" alt-text="Windows Server AD is using Kerberos and NTLM authentication to on-premises apps.":::
+:::image type="content" source="../media/azure-active-directory-a3b1df09.png" alt-text="Diagram showing Windows Server AD using Kerberos and NTLM authentication to on-premises apps.":::
 
 
 ## Benefits and features

@@ -21,7 +21,9 @@ jobs:
       environmentType: Test
       resourceGroupName: ToyWebsiteTest
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_TEST }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_TEST }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
   # Deploy to the production environment.
   deploy-production:
@@ -31,4 +33,6 @@ jobs:
       environmentType: Production
       resourceGroupName: ToyWebsiteProduction
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_PRODUCTION }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_PRODUCTION }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-network-service-settings-for-windows-devices-use-powershel
 metadata:
   title: Manage network service settings for Windows devices using PowerShell cmdlets
   description: "This module covers the PowerShell modules and cmdlets that are used to configure network settings for Windows devices."
-  ms.date: 07/28/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

@@ -3,7 +3,7 @@ uid: learn.wwl.import-data-different-formats-for-use-scripts
 metadata:
   title: Import data in different formats for use in scripts by using Windows PowerShell cmdlets
   description: "This module explains how to import data from a text file, CSV file, XML file, and JavaScript Object Notation (JSON) file."
-  ms.date: 07/26/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
