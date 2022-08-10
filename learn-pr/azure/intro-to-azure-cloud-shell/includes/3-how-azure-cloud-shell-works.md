@@ -54,7 +54,7 @@ Another option within Cloud Shell is that if you need to manage resources (such 
 
 Here’s a list of all add-ons available to you within a Cloud Shell session:
 
-| **Category** | **Name** |
+| Category | Name |
 |---|---|
 | **Linux tools** | bash<br>zsh<br>sh<br>tmux<br>dig |
 | **Azure tools** | Azure CLI and [Azure classic CLI](https://github.com/Azure/azure-xplat-cli)<br>AzCopy<br>Azure Functions CLI<br>Service Fabric CLI<br>Batch Shipyard<br>blobxfer |

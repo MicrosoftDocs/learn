@@ -4,7 +4,7 @@ You're an IT admin for Contoso Corporation, responsible for the cloud infrastruc
 
 This module explains what Azure Cloud Shell does, how it works, and when you should choose to use Cloud Shell as a solution to meet your organization's needs.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
