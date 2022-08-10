@@ -17264,6 +17264,46 @@
       "source_path": "learn-pr/wwl-azure/manage-security/9-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-security/8-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/9-send-azure-stack-hub-diagnostic-logs-privileged-endpoint.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/10-send-azure-stack-hub-diagnostic-logs-privileged-endpoint",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/10-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/11-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/11-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/12-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/4-monitor-system-health-syslog-server.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/5-monitor-system-health-syslog-server",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/5-manage-field-replacement-repair.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/6-manage-field-replacement-repair",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/6-configure-automatic-diagnostic-log-collection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/7-configure-automatic-diagnostic-log-collection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/7-find-your-cloud-identification.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/8-find-your-cloud-identification",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/manage-system-health-azure-stack-hub/8-collect-diagnostic-logs-demand-powershell.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/manage-system-health-azure-stack-hub/9-collect-diagnostic-logs-demand-powershell",
+      "redirect_document_id": true
     }
   ]
 }
