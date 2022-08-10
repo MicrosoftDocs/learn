@@ -1,78 +1,60 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You're ready to set up your daemon app to authenticate using Azure Active Directory (Azure AD) and secure access to a protected web API. The first step to enable authentication is to register your application with Azure AD.
 
-    Goal: briefly summarize the key skill this unit will teach
+In this exercise, you'll register your application with Azure AD.
 
-    Heading: none
+## Register an application
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+Registering your application establishes a trust relationship between your application and the Identity provider which is Azure AD in this case.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Follow these steps to register your application on the Azure portal.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
+1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
+1. Search for and select **Azure Active Directory**.
+1. Under **Manage**, select **App registrations** > **New registration**.
+1. Enter a display **Name** for your application. Enter a meaningful application name that will be displayed to users of the app, for example `python-daemon-app`.
+   You can change the display name at any time and multiple app registrations can share the same name. The app registration's automatically generated **Application (client) ID**, not its display name, uniquely identifies your app within the identity platform.
+1. Specify who can use the application, sometimes called its _sign-in audience_.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+   | Supported account types                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                 |
+   | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+   | **Accounts in this organizational directory only**                           | Select this option if you're building an application for use only by users (or guests) in _your_ tenant.<br><br>Often called a _line-of-business_ (LOB) application, this app is a _single-tenant_ application in the Microsoft identity platform.                                                                                                                                          |
+   | **Accounts in any organizational directory**                                 | Select this option if you want users in _any_ Azure AD tenant to be able to use your application. This option is appropriate if, for example, you're building a software-as-a-service (SaaS) application that you intend to provide to multiple organizations.<br><br>This type of app is known as a _multitenant_ application in the Microsoft identity platform. |
+   | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>By selecting this option, you're registering a _multitenant_ application that can also support users who have personal _Microsoft accounts_.                                                                                                                                                                               |
+   | **Personal Microsoft accounts**                                              | Select this option if you're building an application only for users who have personal Microsoft accounts. Personal Microsoft accounts include Skype, Xbox, Live, and Hotmail accounts.                                                                                                                                                                                                      |
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+   Select **Accounts in this organizational directory only**.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+1. Don't enter anything for **Redirect URI (optional)**.
+1. Select **Register** to complete the initial app registration.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+When registration finishes, the Azure portal displays the app registration's **Overview** pane. You see the **Application (client) ID**. Also called the **client ID**, this value uniquely identifies your application in the Azure AD.
 
-    Goal: State concisely what's covered in this unit
+## Add credentials
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Credentials are used by confidential client applications that access a web API. Confidential client applications are apps that run on servers. They're considered difficult to access, and for that reason capable of keeping an application secret.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+Examples of confidential clients applications are web apps, web APIs, or service-type and daemon-type applications. Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+You can add both certificates and client secrets (a string) as credentials to your confidential client app registration.
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+:::image type="content" source="../media/portal-05-app-reg-04-credentials.png" alt-text="Screenshot of the Azure portal in a web browser, showing the Certificates & secrets pane.":::
 
-    Heading: none
--->
-TODO: add a visual element
+### Add a client secret
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+Sometimes called an _application password_, a client secret is a string value your app can use in place of a certificate to identity itself.
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+**Client secrets** are considered less secure than certificate credentials. Application developers sometimes use client secrets during local app development because of their ease of use. However, you should use certificate credentials for any of your applications that are running in production.
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+Complete the following steps to add **client secrets** for your app in the Azure portal:
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+1. In the Azure portal, in **App registrations**, select your application.
+1. Select **Certificates & secrets** > **Client secrets** > **New client secret**.
+1. Add a description for your client secret.
+1. Select an expiration for the secret or specify a custom lifetime.
+    - Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months.
+    - Microsoft recommends that you set an expiration value of less than 12 months.
+1. Select **Add**.
+1. _Record the secret's value_ for use in your client application code. This secret value is _never displayed again_ after you leave this page.
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+You've now successfully registered a daemon app with Azure AD.
