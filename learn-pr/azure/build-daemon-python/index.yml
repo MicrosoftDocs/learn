@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.build-daemon-python
+metadata:
+  moduleType: choose
+  title: Build a Python daemon app calling a protected API using the Microsoft identity platform
+  description: Build a Python daemon app that authenticates and acquires tokens from Azure Active Directory (Azure AD) as itself and calls a secure web API.
+  ms.date: 08/10/2022
+  author: henrymbuguakiarie
+  ms.author: henrymbugua
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: Build a Python daemon app calling a protected API using the Microsoft identity platform
+summary: Build a Python daemon app that authenticates and acquires tokens from Azure Active Directory (Azure AD) as itself and calls a secure web API.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Register a daemon app in an Azure AD tenant.
+    - Call a protected web API from an authenticated Python daemon app.
+prerequisites: |
+  - An Azure account. Learn how to create a free account in [Create an Azure account](/learn/modules/create-an-azure-account).
+  - [Python 3+](https://www.python.org/downloads/) installed on your computer.
+  - An Azure Active Directory (Azure AD) tenant that you manage as a global administrator, cloud app administrator, or app administrator.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - intermediate
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - developer
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  - azure
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - cloud-computing
+units:
+  - learn.build-daemon-python.introduction
+  - learn.build-daemon-python.azure-daemon-app-authentication-authorization
+  - learn.build-daemon-python.exercise-register-azure-ad-app
+  - learn.build-daemon-python.explore-microsoft-authentication-library
+  - learn.build-daemon-python.exercise-configure-authentication-daemon-app
+  - learn.build-daemon-python.knowledge-check
+  - learn.build-daemon-python.summary
+badge:
+  uid: learn.build-daemon-python.badge
