@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: 'Knowledge check for "Build a Python daemon app calling a protected API using the Microsoft identity platform"'
-  ms.date: 10/08/2022
+  ms.date: 08/10/2022
   author: henrymbuguakiarie
   ms.author: henrymbugua
   ms.topic: interactive-tutorial
@@ -28,58 +28,58 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
-    choices:
     - content: ""
-      isCorrect: true
-      explanation: ""
+      choices:
+        - content: ""
+          isCorrect: true
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
     - content: ""
-      isCorrect: false
-      explanation: ""
+      choices:
+        - content: ""
+          isCorrect: true
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
     - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
+      choices:
+        - content: ""
+          isCorrect: true
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
     - content: ""
-      isCorrect: true
-      explanation: ""
+      choices:
+        - content: ""
+          isCorrect: true
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
     - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      choices:
+        - content: ""
+          isCorrect: true
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
+        - content: ""
+          isCorrect: false
+          explanation: ""
