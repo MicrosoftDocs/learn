@@ -99,7 +99,8 @@ As a tradeoff, because the build infrastructure is yours, it's your responsibili
 
 A private build agent contains the software that's required to build your applications. It also contains agent software, which enables the system to connect to Azure Pipelines and receive build jobs.
 
-When you set up a private agent, you provide the infrastructure that the builds use to run on. This gives you flexibility in how you bring up and maintain your agents.
+When you set up a private agent, you provide the infrastructure that the builds use to run on. This 
+gives you flexibility in how you bring up and maintain your agents.
 
 For example, you can:
 
