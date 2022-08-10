@@ -4,95 +4,15 @@ Firmware leveling is critical for the success of the operation described in this
 
 Always consult your hardware partner's documentation when replacing hardware to ensure the applied firmware matches the OEM Version displayed in the Azure Stack Hub administrator portal.
 
-:::row:::
-  :::column:::
-    **Hardware Partner**
-  :::column-end:::
-  :::column:::
-    **Region**
-  :::column-end:::
-  :::column:::
-    **URL**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Cisco
-  :::column-end:::
-  :::column:::
-    All
-  :::column-end:::
-  :::column:::
-    Cisco Integrated System for Microsoft Azure Stack Hub Operations Guide Release Notes for Cisco Integrated System for Microsoft Azure Stack Hub
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Dell EMC
-  :::column-end:::
-  :::column:::
-    All
-  :::column-end:::
-  :::column:::
-    Cloud for Microsoft Azure Stack Hub 14G (account and sign-in required) Cloud for Microsoft Azure Stack Hub 13G (account and sign-in required)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Fujitsu
-  :::column-end:::
-  :::column:::
-    Japan
-  :::column-end:::
-  :::column:::
-    Fujitsu managed service support desk (account and sign-in required)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    EMEA
-  :::column-end:::
-  :::column:::
-    Fujitsu support IT products and systems
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    
-  :::column-end:::
-  :::column:::
-    EU
-  :::column-end:::
-  :::column:::
-    Fujitsu MySupport (account and sign-in required)
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    HPE
-  :::column-end:::
-  :::column:::
-    All
-  :::column-end:::
-  :::column:::
-    HPE ProLiant for Microsoft Azure Stack Hub
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Lenovo
-  :::column-end:::
-  :::column:::
-    All
-  :::column-end:::
-  :::column:::
-    ThinkAgile SXM Best Recipes
-  :::column-end:::
-:::row-end:::
-
+| **Hardware Partner** | **Region** | **URL**                                                                                                                                        |
+| -------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cisco                | All        | Cisco Integrated System for Microsoft Azure Stack Hub Operations Guide Release Notes for Cisco Integrated System for Microsoft Azure Stack Hub |
+| Dell EMC             | All        | Cloud for Microsoft Azure Stack Hub 14G (account and sign-in required) Cloud for Microsoft Azure Stack Hub 13G (account and sign-in required)  |
+| Fujitsu              | Japan      | Fujitsu managed service support desk (account and sign-in required)                                                                            |
+|                      | EMEA       | Fujitsu support IT products and systems                                                                                                        |
+|                      | EU         | Fujitsu MySupport (account and sign-in required)                                                                                               |
+| HPE                  | All        | HPE ProLiant for Microsoft Azure Stack Hub                                                                                                     |
+| Lenovo               | All        | ThinkAgile SXM Best Recipes                                                                                                                    |
 
 Non hot-swappable components include the following items:
 
@@ -106,7 +26,7 @@ Non hot-swappable components include the following items:
 
 The following flow diagram shows the general FRU process to replace a non hot-swappable hardware component.
 
-:::image type="content" source="../media/field-replacement-image-1-390fbb47.png" alt-text="Flow diagram showing component replacement flow":::
+:::image type="content" source="../media/field-replacement-image-1-390fbb47.png" alt-text="Diagram showing component replacement flow.":::
 
 
 > [!NOTE]
@@ -114,7 +34,7 @@ The following flow diagram shows the general FRU process to replace a non hot-sw
 
 ## Review alert information
 
-The Azure Stack Hub health and monitoring system tracks the health of network adapters and data drives controlled by Storage Spaces Direct. It doesn't track other hardware components. For all other hardware components, alerts are raised in the vendor-specific hardware monitoring solution that runs on the hardware lifecycle host.
+The Azure Stack Hub health and monitoring system track the health of network adapters and data drives controlled by Storage Spaces Direct. It doesn't track other hardware components. For all other hardware components, alerts are raised in the vendor-specific hardware monitoring solution that runs on the hardware lifecycle host.
 
 ## Component replacement process
 
