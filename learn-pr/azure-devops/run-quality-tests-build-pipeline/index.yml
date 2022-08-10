@@ -13,11 +13,11 @@ title: Run quality tests in your build pipeline by using Azure Pipelines
 summary: Set up automated testing in your pipeline to improve code quality.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain the benefits of automated testing and the kinds of testing you can use
-  - Run unit tests locally and then in Azure Pipelines
-  - Add dashboard widgets to visualize test runs over time
-  - Perform code coverage testing to see how much of your code is covered by unit tests
-  - Fix and verify test failures in your build pipeline
+  - Explain the benefits of automated testing and the kinds of testing you can use.
+  - Run unit tests locally and then in Azure Pipelines.
+  - Add dashboard widgets to visualize test runs over time.
+  - Perform code coverage testing to see how much of your code is covered by unit tests.
+  - Fix and verify test failures in your build pipeline.
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code

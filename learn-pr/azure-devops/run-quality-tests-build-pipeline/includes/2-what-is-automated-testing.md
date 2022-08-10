@@ -22,9 +22,9 @@ Mara has already taken on the first two issues and has started thinking about th
 
 **Mara:** I have an idea. You've seen the automated pipeline. I think we can add unit tests to the automated build. Unit testing is about testing a single piece of functionality, like the filtering feature, in isolation. We'd catch regression errors before they ever get to you.
 
-**Andy:** We tried unit testing a while ago but we had trouble keeping the tests up to date, so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and nothing was in place to keep us honest.
+**Andy:** We tried unit testing a while ago, but we had trouble keeping the tests up to date, so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests, and nothing was in place to keep us honest.
 
-**Mara:** If we add tests to the Azure Pipelines build, the build will fail if any tests fail. That should certainly keep us honest! Andy and I could do this and it will make life better for you, Amita.
+**Mara:** If we add tests to the Azure Pipelines build, the build will fail if any tests fail. That should certainly keep us honest! Andy and I could do this, and it will make life better for you, Amita.
 
 **Amita:** I'm all for an easier life, but you're not going to put me out of a job, are you?
 
@@ -46,7 +46,7 @@ Manual testing has its benefits. But as your code base grows in size, testing al
 
 When we think about automated testing, it's common to separate tests into layers. Mike Cohn proposes this concept, known as the _test pyramid_, in his book _Succeeding with Agile_.
 
-:::image type="content" source="../media/2-test-pyramid.png" alt-text="A diagram showing the test pyramid. The pyramid shows the unit test layer at the bottom, marked with callout 1, and UI layer tests at the top, marked with callout 2.":::
+:::image type="content" source="../media/2-test-pyramid.png" alt-text="Diagram showing the test pyramid. The pyramid shows the unit test layer marked with callout 1, and UI layer tests marked with callout 2.":::
 
 Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels of your software (callout 1 in the pyramid), such as functions, classes, and methods. You focus progressively less effort as features are combined, such as at the user interface (UI) layer (callout 2 in the pyramid). The idea is that if you can verify that each lower-level component works as expected in isolation, tests at the higher levels need only verify that multiple components work together to get the expected result.
 
@@ -58,9 +58,9 @@ It's never too late to start adding tests for code you've already written and de
 
 When you relate testing to continuous integration and continuous delivery pipelines, two concepts you'll hear about are _continuous testing_ and _shifting left_.
 
-Continuous testing means tests are run early in the development process and as every change moves through the pipeline. Shifting left means considering software quality and testing earlier in the development process.
+Continuous testing means tests are run early in the development process as every change moves through the pipeline. Shifting left means considering software quality and testing earlier in the development process.
 
-As an example, developers often add test cases as they develop their feature, and run the entire suite of tests before they submit the change to the pipeline. This approach helps ensure both that the feature they're building behaves as expected and that it doesn't break existing features.
+For example, developers often add test cases as they develop their feature, and run the entire suite of tests before they submit the change to the pipeline. This approach helps ensure that the feature they're building behaves as expected and that it doesn't break existing features.
 
 Here's a short video where Abel Wang, Cloud Advocate at Microsoft, explains how to ensure you maintain quality in your DevOps plan.
 
@@ -78,15 +78,15 @@ However, the point of automated testing is to help ensure that testers receive o
 
 ### Added benefits
 
-Documentation and the ability to more easily refactor your code are two added benefits of automated testing.
+Documentation and the ability to refactor your code more easily are two added benefits of automated testing.
 
 #### Documentation
 
 Manual test plans can serve as a type of documentation as to how software should behave and why certain features exist.
 
-Automated tests can serve the same purpose. Automated test code often uses a human-readable format. The set of inputs you provide represent values your users might enter. Each associated output specifies the result your users should expect.
+Automated tests can serve the same purpose. Automated test code often uses a human-readable format. The set of inputs you provide represents values your users might enter. Each associated output specifies the result your users should expect.
 
-In fact, many developers follow the _test-driven development_, or TDD, method by writing their test code _before_ implementing a new feature. The idea is to write a set of tests, often called _specs_, that initially fail. Then, the developer incrementally writes code to implement the feature until all tests pass. Not only do the specs document the requirements, but the TDD process helps ensure that only the necessary amount of code is written to implement the feature.
+In fact, many developers follow the _test-driven development_ or TDD method by writing their test code _before_ implementing a new feature. The idea is to write a set of tests, often called _specs_, that initially fail. Then, the developer incrementally writes code to implement the feature until all tests pass. Not only do the specs document the requirements, but the TDD process helps ensure that only the necessary amount of code is written to implement the feature.
 
 #### Refactoring
 
@@ -138,7 +138,7 @@ You'll be better able to identify a good test as you gain experience writing you
 
 The testing tools you use depend on the type of application you're building and the type of testing you want to perform. For example, you can use Selenium to perform UI testing on many types of web browsers and operating systems.
 
-No matter what language your application is written in, there are many test tools available to you.
+No matter what language your application is written in, many test tools are available to you to use.
 
 For example, for Java applications, you might choose Checkstyle to perform lint testing and JUnit to perform unit testing.
 
