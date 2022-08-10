@@ -9,7 +9,7 @@ In this section, you move the work item that you previously assigned to yourself
 
 In practice, the definition of "Done" often means that working software is in the hands of your users. In this unit, for learning purposes, you mark this work as complete, because you have a private build agent working on Azure Pipelines.
 
-At the end of each sprint, or work iteration, you and your team might hold a retrospective meeting in which you share the work you completed, what went well in the sprint, and what could be improved.
+At the end of each sprint or work iteration, you and your team might hold a retrospective meeting. In the meeting, you can share the work you completed, what went well in the sprint, and what could be improved.
 
 To complete the work item:
 
@@ -20,9 +20,9 @@ To complete the work item:
 
 ## Disable the pipeline or delete your project
 
-Each module in this learning path provides a template that you can run to create a clean environment for the duration of the module.
+Each module in this learning path provides a template that you can run to create a clean environment during the module.
 
-Running multiple templates creates multiple Azure Pipelines projects, each pointing to the same GitHub repository. This action can cause multiple pipelines to run each time you push a change to your GitHub repository. This action, in turn, can cause you to run out of free build minutes on our hosted agents. Therefore, it's important to disable or delete your pipeline before you move on to the next module.
+Running multiple templates creates multiple Azure Pipelines projects, each pointing to the same GitHub repository. This action can cause multiple pipelines to run each time you push a change to your GitHub repository. This action, in turn, can cause you to run out of free build minutes on your hosted agents. Therefore, it's important to disable or delete your pipeline before you move on to the next module.
 
 Choose either of the next two options.
 
