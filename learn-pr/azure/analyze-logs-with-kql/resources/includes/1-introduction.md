@@ -10,8 +10,9 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+Kusto Query Language (KQL) queries let you extract meaningful insights from the log data you collect in Azure Monitor Log Analytics. 
+
+<!-- TODO: add a visual element
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -29,8 +30,14 @@ TODO: add a visual element
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+
+You're a data scientist at a retail chain that uses Azure Monitor to monitor the machines in its retail stores. 
+
+The chain is expanding and, with the growing number of transactions at stores and between stores, the company has experienced some computer performance issues.
+
+To identify current issues and mitigate future problems with the computers running in the chain's stores.
+
+<!-- TODO: add a visual element
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -45,7 +52,8 @@ TODO: add a visual element
 
  -->
 ## What will we be doing?
-TODO: add your activities
+
+Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -57,6 +65,10 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+
+In this module, you'll practice how to:
+
+1. Analyze log data based on specific business and operational questions.
+1. Write KQL queries to extract the data you need from logs in Azure Monitor.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
