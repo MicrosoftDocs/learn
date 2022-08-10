@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-cloud-shell.how-azure-cloud-shell-works
+title: How does Azure Cloud Shell work?
+metadata:
+  unitType: learning-content
+  title: How does Azure Cloud Shell work?
+  description: This unit describes the key features of Azure Cloud Shell and provides an overview of how it works.
+  ms.date: 08/05/2022
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-how-azure-cloud-shell-works.md)]
