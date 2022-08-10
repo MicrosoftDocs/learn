@@ -10,6 +10,7 @@ metadata:
   ms.author: viniap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
 durationInMinutes: 6
 content: |
   [!include[](includes/3-how-azure-cloud-shell-works.md)]

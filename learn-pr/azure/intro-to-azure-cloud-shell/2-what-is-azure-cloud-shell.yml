@@ -10,6 +10,7 @@ metadata:
   ms.author: viniap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
 durationInMinutes: 10
 content: |
   [!include[](includes/2-what-is-azure-cloud-shell.md)]

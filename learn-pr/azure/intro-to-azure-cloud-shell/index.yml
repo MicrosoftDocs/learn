@@ -9,6 +9,7 @@ metadata:
   ms.author: viniap
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
 title: Introduction to Azure Cloud Shell
 summary: Describe Microsoft Azure Cloud Shell, learn how it works, and explore basic steps for its usage.
 abstract: |
