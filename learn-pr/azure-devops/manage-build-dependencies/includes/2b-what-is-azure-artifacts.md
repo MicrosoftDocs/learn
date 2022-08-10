@@ -18,7 +18,7 @@ Let's check back in with the team as they decide whether Azure Artifacts are the
 
 Andy moves to the whiteboard.
 
-:::image type="content" source="../media/2-azure-artifacts-whiteboard.png" alt-text="Screenshot of a  whiteboard diagram showing the steps to create and use a package.":::
+:::image type="content" source="../media/2-azure-artifacts-whiteboard.png" alt-text="Illustration of a  whiteboard diagram showing the steps to create and use a package.":::
 
 ### Create the package
 
