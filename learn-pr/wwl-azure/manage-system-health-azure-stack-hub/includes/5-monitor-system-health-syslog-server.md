@@ -4,7 +4,7 @@ Azure Stack Hub has an integrated syslog client that, once configured, emits sys
 
 The following diagram describes the integration of Azure Stack Hub with an external SIEM. There are two integration patterns that need to be considered: the first one (the one in blue) is the Azure Stack Hub infrastructure that encompasses the infrastructure virtual machines and the Hyper-V nodes. All the audits, security logs, and alerts from those components are centrally collected and exposed via syslog with CEF payload. This integration pattern is described in this document page. The second integration pattern is the one depicted in orange and covers the baseboard management controllers (BMCs), the hardware lifecycle host (HLH), the virtual machines, and virtual appliances that run the hardware partner monitoring and management software, and the top of rack (TOR) switches. Since these components are hardware-partner specific, contact your hardware partner for documentation on how to integrate them with an external SIEM.
 
-:::image type="content" source="../media/integrate-azure-stack-hub-field-ebbc05c9.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/integrate-azure-stack-hub-field-ebbc05c9.png" alt-text="Diagram showing normalized relational tables.":::
 
 
 ## Configuring syslog forwarding
@@ -38,178 +38,24 @@ Set-SyslogClient [-pfxBinary <Byte[]>] [-CertPassword <SecureString>] [-RemoveCe
 
 Parameters for *Set-SyslogServer* cmdlet:
 
-:::row:::
-  :::column:::
-    **Parameter**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-  :::column:::
-    **Required**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    ServerName
-  :::column-end:::
-  :::column:::
-    FQDN or IP address of the syslog server.
-  :::column-end:::
-  :::column:::
-    String
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    ServerPort
-  :::column-end:::
-  :::column:::
-    Port number the syslog server is listening on.
-  :::column-end:::
-  :::column:::
-    UInt16
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    NoEncryption
-  :::column-end:::
-  :::column:::
-    Force the client to send syslog messages in clear text.
-  :::column-end:::
-  :::column:::
-    flag
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SkipCertificateCheck
-  :::column-end:::
-  :::column:::
-    Skip validation of the certificate provided by the syslog server during initial TLS handshake.
-  :::column-end:::
-  :::column:::
-    flag
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SkipCNCheck
-  :::column-end:::
-  :::column:::
-    Skip validation of the Common Name value of the certificate provided by the syslog server during initial TLS handshake.
-  :::column-end:::
-  :::column:::
-    flag
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    UseUDP
-  :::column-end:::
-  :::column:::
-    Use syslog with UDP as transport protocol.
-  :::column-end:::
-  :::column:::
-    flag
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Remove
-  :::column-end:::
-  :::column:::
-    Remove configuration of the server from the client and stop syslog forwarding.
-  :::column-end:::
-  :::column:::
-    flag
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-
+| **Parameter**        | **Description**                                                                                                         | **Type** | **Required** |
+| -------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| ServerName           | FQDN or IP address of the syslog server.                                                                                | String   | Yes          |
+| ServerPort           | Port number the syslog server is listening on.                                                                          | UInt16   | Yes          |
+| NoEncryption         | Force the client to send syslog messages in clear text.                                                                 | flag     | No           |
+| SkipCertificateCheck | Skip validation of the certificate provided by the syslog server during initial TLS handshake.                          | flag     | No           |
+| SkipCNCheck          | Skip validation of the Common Name value of the certificate provided by the syslog server during initial TLS handshake. | flag     | No           |
+| UseUDP               | Use syslog with UDP as transport protocol.                                                                              | flag     | No           |
+| Remove               | Remove configuration of the server from the client and stop syslog forwarding.                                          | flag     | No           |
 
 Parameters for *Set-SyslogClien*t cmdlet:
 
-:::row:::
-  :::column:::
-    **Parameter**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    pfxBinary
-  :::column-end:::
-  :::column:::
-    The contents of the pfx file, piped to a Byte\[\], containing the certificate to be used by the client as identity to authenticate against the syslog server.
-  :::column-end:::
-  :::column:::
-    Byte\[\]
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    CertPassword
-  :::column-end:::
-  :::column:::
-    Password to import the private key that's associated with the pfx file.
-  :::column-end:::
-  :::column:::
-    SecureString
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    RemoveCertificate
-  :::column-end:::
-  :::column:::
-    Remove certificate from the client.
-  :::column-end:::
-  :::column:::
-    flag
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    OutputSeverity
-  :::column-end:::
-  :::column:::
-    Level of output logging. Values are Default or Verbose. Default includes severity levels: warning, critical, or error. Verbose includes all severity levels: verbose, informational, warning, critical, or error.
-  :::column-end:::
-  :::column:::
-    String
-  :::column-end:::
-:::row-end:::
-
+| **Parameter**     | **Description**                                                                                                                                                                                                   | **Type**     |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| pfxBinary         | The contents of the pfx file, piped to a Byte\[\], containing the certificate to be used by the client as identity to authenticate against the syslog server.                                                     | Byte\[\]     |
+| CertPassword      | Password to import the private key that's associated with the pfx file.                                                                                                                                           | SecureString |
+| RemoveCertificate | Remove certificate from the client.                                                                                                                                                                               | flag         |
+| OutputSeverity    | Level of output logging. Values are Default or Verbose. Default includes severity levels: warning, critical, or error. Verbose includes all severity levels: verbose, informational, warning, critical, or error. | String       |
 
 ## Configuring syslog forwarding with TCP, mutual authentication, and TLS 1.2 encryption
 
