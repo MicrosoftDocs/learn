@@ -141,7 +141,7 @@ New-AzADAppFederatedIdentityCredential `
 
 It's important to consider the whole lifecycle of each workload identity that you create. When you build a workload identity for a deployment workflow, what will happen if the workflow is eventually deleted or is no longer used? 
 
-Workload identities aren't removed automatically, so you need to audit and remove old ones. Even though your deployment workflow's workload identities don't have secret credentials that could be reused, it's still best to remove them when they're no longer needed. That way, there's no chance that somebody could create another GitHub repository with the same name and unexpectedly get access to your Azure environment.
+Workload identities and federated credentials aren't removed automatically, so you need to audit and remove old ones. Even though your deployment workflow's workload identities don't have secret credentials that could be reused, it's still best to remove them when they're no longer needed. That way, there's no chance that somebody could create another GitHub repository with the same name and unexpectedly get access to your Azure environment.
 
 It's a good practice to document your workload identities in a place that you and your team can easily access. Include the following information for each workload identity:
 

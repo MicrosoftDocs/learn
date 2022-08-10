@@ -48,7 +48,7 @@ Workflows are designed to run your deployments even when nobody is actively runn
 If you store your username and password in a workflow and try to use them to sign in, they probably won't work. Even if they do seem to work, they can easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
 
 > [!WARNING]
-> It's a bad idea to save your username and password anywhere, because someone else might get access to them and then use them to impersonate you.
+> It's also a bad idea to save your username and password anywhere, because someone else might get access to them and then use them to impersonate you.
 
 For these reasons, the built-in GitHub Actions tasks that interact with Azure don't let you provide a user account's credentials. They require you to use a workload identity.
 
