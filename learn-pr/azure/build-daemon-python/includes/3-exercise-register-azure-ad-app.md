@@ -4,7 +4,7 @@ In this exercise, you'll register your application with Azure AD.
 
 ## Register an application
 
-Registering your application establishes a trust relationship between your application and the Identity provider which is Azure AD in this case.
+Registering your application establishes a trust relationship between your application and the identity provider, which is Azure AD in this case.
 
 Follow these steps to register your application on the Azure portal.
 

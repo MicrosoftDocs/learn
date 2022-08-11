@@ -28,58 +28,36 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-    - content: ""
+    - content: John is granting permission to an application registered within the Azure Active Directory (Azure AD) tenant. Which of the following permissions will allow a console application to authenticate as itself without user interaction and call Microsoft Graph?
       choices:
-        - content: ""
+        - content: Application permissions
           isCorrect: true
-          explanation: ""
-        - content: ""
+          explanation: Correct. Application permissions are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons.
+        - content: Delegated permissions
           isCorrect: false
-          explanation: ""
-        - content: ""
+          explanation: Incorrect. Delegated permissions are used by apps that have a signed-in user present. For these apps, either the user or an administrator consents to the permissions that the app requests. The app is delegated with the permission to act as a signed-in user when it makes calls to the target resource. 
+        - content: Effective permissions
           isCorrect: false
-          explanation: ""
-    - content: ""
+          explanation: Incorrect. Effective permissions are the permissions that your app has when it makes requests to the target resource. 
+    - content: A company is adding Microsoft Authentication Library (MSAL) for Python to an existing project. Which of the following commands will install MSAL for Python?
       choices:
-        - content: ""
+        - content: pip install -r requirements.txt
+          isCorrect: false
+          explanation: Incorrect. The MSAL for Python is new library being introduced to the project and doesn't exist in the requirements.txt configuration file.
+        - content: pip install msal
           isCorrect: true
-          explanation: ""
-        - content: ""
+          explanation: Correct. Python pip is the package manager for Python packages. We can use pip to install packages that don't come with Python.
+        - content: python install msal
           isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-    - content: ""
+          explanation: Incorrect. The command is wrong and Python interpreter try to run a file.
+    - content: John is retrieving user profile from Microsoft Graph. Which of the following HTTP method will read data from a resource?
       choices:
-        - content: ""
+        - content: POST
+          isCorrect: false
+          explanation: Incorrect. POST method creates a new resource, or performs an action.
+        - content: PUT
+          isCorrect: false
+          explanation: Incorrect. PUT method replaces a resource with a new one.
+        - content: GET
           isCorrect: true
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-    - content: ""
-      choices:
-        - content: ""
-          isCorrect: true
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-    - content: ""
-      choices:
-        - content: ""
-          isCorrect: true
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
-        - content: ""
-          isCorrect: false
-          explanation: ""
+          explanation: Correct. GET method read data from a resource.

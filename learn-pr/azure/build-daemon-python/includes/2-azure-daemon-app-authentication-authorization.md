@@ -1,10 +1,10 @@
-Azure Active Directory (Azure AD) provides an authentication and authorization service. You can use Azure AD to authenticate and authorize users in your web apps, web APIs, or apps that call protected web APIs.
+Azure Active Directory (Azure AD) provides authentication and authorization service. You can use Azure AD to authenticate and authorize users in your web apps, web APIs, or apps that call protected web APIs.
 
-In this unit, you'll learn about authentication, authorization, and how it's supported in Azure Active Directory.
+In this unit, you'll learn about authentication, authorization, and how it's supported in Azure AD.
 
 ## Authentication
 
-_Authentication_ is the process of proving that you are who you say you are. You prove your identity.
+_Authentication_ is the process of proving that you're who you say you are. You prove your identity.
 
 Azure AD uses the OpenID Connect protocol to handle authentication. OpenID Connect allows applications to request and receive information about authenticated sessions and end-users.
 
@@ -12,7 +12,7 @@ Azure AD uses the OpenID Connect protocol to handle authentication. OpenID Conne
 
 _Authorization_ is the act of granting an authenticated party permission to do something. It specifies what data you're allowed to access and what you can do with that data.
 
-Azure AD uses the OAuth 2.0 protocol for handling authorization. OAuth 2.0 provides specific authorization flows for web applications, desktop applications, mobile phones, and living room devices.
+Azure AD uses the OAuth 2.0 protocol for handling authorization. OAuth 2.0 provide authorization flows for different application in Azure AD.
 
 ## Application registration
 

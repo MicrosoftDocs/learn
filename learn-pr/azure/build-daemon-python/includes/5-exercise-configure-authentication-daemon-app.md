@@ -190,3 +190,5 @@ Graph API call result: {
   "id": "12db367f-7896-437d-b7bd-f9295ea9a921"
 }
 ```
+
+You know how to acquire and use an access token to call a protected web API. You can use [Celery](https://docs.celeryq.dev/en/stable/) to run your app in the background.
