@@ -55,9 +55,7 @@ From your shell or command line:
         # 'Application (client) ID' of app registration in Azure portal - this value is a GUID
         "client_id": "",
         # Client secret 'Value' (not its ID) from 'Client secrets' in app registration in Azure portal
-        "client_secret": "",
-        # Client 'Object ID' of app registration in Azure portal - this value is a GUID
-        "client_objectid": "",
+        "client_secret": ""
     }
     
     # This app instance should be a long-lived instance because
@@ -90,7 +88,6 @@ From your shell or command line:
      - `authority` is the full URL that points to your tenant. The `tenant_id` is the **Directory (tenant) ID** for the app you registered. To find the value for the **Directory (tenant) ID**, go to the app's **Overview** pane in the Azure portal.
      - `client_id` is the **Application (client) ID** for the app that you registered. To find the value for the **Application (client) ID**, go to the app's **Overview** pane in the Azure portal.
      - `client_secret` is the `Value` for the `Client secrets` that you registered for your app in the Azure portal.
-     - `client_objectid` is the **Object ID** for the app that you registered. To find the value for the **Object ID**, go to the app's **Overview** pane in the Azure portal.
 
    The `app` section creates `ConfidentialClientApplication` instance, and reuses it during the lifecycle of the app. The `result` section checks if there's no suitable token in the cache, we send a request to Azure AD to get a new token. The `acquire_token_silent` helps to fetch the token of the current logged in identity silently. If the token expires, it sends a request, and automatically refreshes the token.
 
@@ -130,9 +127,7 @@ config = {
     # 'Application (client) ID' of app registration in Azure portal - this value is a GUID
     "client_id": "",
     # Client secret 'Value' (not its ID) from 'Client secrets' in app registration in Azure portal
-    "client_secret": "",
-    # Client 'Object ID' of app registration in Azure portal - this value is a GUID
-    "client_objectid": "",
+    "client_secret": ""
 }
 # This app instance should be a long-lived instance because
 # it maintains its own in-memory token cache (the default).
@@ -165,7 +160,7 @@ else:
 
 ### Run the daemon app
 
-Let's verify our Python daemon works. If you haven't already, change to the `cli-access-protected-api` directory and run the following command:
+Let's verify that our Python daemon works. If you haven't already, change to the `cli-access-protected-api` directory and run the following command:
 
 ```bash
 python cli.py
@@ -186,8 +181,8 @@ Graph API call result: {
   "officeLocation": null,
   "preferredLanguage": "en",
   "surname": "Kiarie",
-  "userPrincipalName": "henrymbuguakiarie_gmail.com#EXT#@henrymbuguakiariegmail.onmicrosoft.com",
-  "id": "12db367f-7896-437d-b7bd-f9295ea9a921"
+  "userPrincipalName": "henry.com#EXT#@henry.onmicrosoft.com",
+  "id": "12db367f-7896-437d-b7bd-f9295ea9b971"
 }
 ```
 

@@ -10,7 +10,7 @@ metadata:
   ms.author: henrymbugua
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 2
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -28,7 +28,7 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-    - content: John is granting permission to an application registered within the Azure Active Directory (Azure AD) tenant. Which of the following permissions will allow a console application to authenticate as itself without user interaction and call Microsoft Graph?
+    - content: John is granting permission to an application registered within the Azure Active Directory (Azure AD) tenant. Which of the following permissions will allow a daemon application to authenticate as itself without user interaction and call Microsoft Graph?
       choices:
         - content: Application permissions
           isCorrect: true
@@ -39,7 +39,7 @@ quiz:
         - content: Effective permissions
           isCorrect: false
           explanation: Incorrect. Effective permissions are the permissions that your app has when it makes requests to the target resource. 
-    - content: A company is adding Microsoft Authentication Library (MSAL) for Python to an existing project. Which of the following commands will install MSAL for Python?
+    - content: A company is adding the Microsoft Authentication Library (MSAL) for Python to an existing project. Which of the following commands will install MSAL for Python?
       choices:
         - content: pip install -r requirements.txt
           isCorrect: false
@@ -50,7 +50,7 @@ quiz:
         - content: python install msal
           isCorrect: false
           explanation: Incorrect. The command is wrong and Python interpreter try to run a file.
-    - content: John is retrieving user profile from Microsoft Graph. Which of the following HTTP method will read data from a resource?
+    - content: John is attempting to retrieve a user profile from the Microsoft Graph. Which of the following HTTP methods will read data from a resource?
       choices:
         - content: POST
           isCorrect: false

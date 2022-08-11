@@ -1,7 +1,9 @@
-Our finance team needed to notify our customers of their upcoming obligations before the due date. We built a Python daemon app that represents a confidential client app that calls Microsoft Graph as itself to read customers' data from a resource.
+Our finance team needed to notify our customers of their upcoming obligations before the due date. We built a Python daemon app that represents a confidential client app that calls Microsoft Graph as itself to read customers' data from a protected web API.
 
-The Microsoft identity platform lets us register a Python daemon app to perform identity and access management (IAM). The Azure portal displays the app registration's **Overview** pane. We see the **Application (client) ID**. Also called the client ID, this value uniquely identifies our application within the Microsoft identity platform. We used the Microsoft Authentication Library (MSAL) for Python to create a client-confidential application. Finally, we acquire an access token and call the Microsoft Graph.
+The Microsoft identity platform lets us register a Python daemon app to perform identity and access management (IAM). The Azure portal displays the app registration's **Overview** pane. We see the **Application (client) ID**. Also called the client ID, this value uniquely identifies our application within the Microsoft identity platform.
+
+We used the Microsoft Authentication Library (MSAL) for Python to create a client-confidential application instance. Finally, we acquire an access token and call the Microsoft Graph.
 
 Imagine how much work it would be to build a client-confidential application from scratch. We’d have to write code to create our own identity provider, develop a rest API service, and create a secure library to interact with our identity provider. Once all the code is ready, we would need a server to host the code.
 
-The Microsoft identity platform, the Microsoft Authentication Library (MSAL), and Microsoft Graph make it easy to create a daemon app. Building a Python daemon app took us less than an hour, and we didn’t have to set up any servers. We can now read customer data from a protected web API and notify our customers of their upcoming obligations.
+The Microsoft identity platform and the Microsoft Authentication Library (MSAL) make it easy to build a daemon app. Building a Python daemon app took us less than an hour, and we didn’t have to set up any servers. We can now read customer data from a protected web API and notify our customers of their upcoming obligations.
