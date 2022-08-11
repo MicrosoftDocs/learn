@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/10/2022
+  ms.date: 08/11/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -22,10 +22,10 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Visual Studio is not the correct tool to begin troubleshooting Power BI report visual performance."
     - content: "DAX Studio."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. DAX Studio is not the correct tool to start troubleshooting."
     - content: "Performance analyzer."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct. The Performance analyzer is a great tool to start investigating performance issues with visuals in a report."
   - content: "James has been asked to troubleshoot a report that contains a matrix visual that renders visibly slower than any other visuals on the page. After James runs the Performance analyzer, he notices the need to dig further into the DAX query for the matrix using DAX Studio to understand what's causing the trouble. That same query is running in less than a second in DAX Studio. Has James solved the problem?"
     choices:

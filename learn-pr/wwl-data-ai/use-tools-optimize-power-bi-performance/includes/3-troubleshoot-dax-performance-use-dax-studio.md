@@ -10,7 +10,7 @@ DAX queries are being processed by two engines, the *formula engine* and the *st
 
 ## Describe DAX Studio
 
-[DAX Studio](https://daxstudio.org/) is a tool for executing DAX queries against Power BI and Analysis Services models. DAX Studio is useful for:
+[DAX Studio](https://daxstudio.org/) is an open-source tool for executing DAX queries against Power BI and Analysis Services models. DAX Studio is useful for:
 - Reviewing the contents of your data model.
 - Writing and optimizing complex DAX formulas and queries.
 
@@ -44,7 +44,7 @@ From top left to bottom right, the statistics tell you how many milliseconds it 
 
 From here, you can investigate what in your measures might be causing the issues. This requires deep DAX knowledge and is sometimes a case of trial and error. 
 
-You experiment with the measures and recognize that improving the sales measure by replacing complicated `IF` statements in DAX with variables and a time intelligence function. A safe way to experiment is to comment out measures and rework them. You can comment out measures by typing two forward slashes at the beginning and end of the measure. 
+You experiment with the measures and recognize that improving the sales measure by replacing complicated `IF` statements in DAX with variables and a time intelligence function. A safe way to experiment is to comment out measures and rework them. You can comment out measures by typing two forward slashes at the beginning of a line (```//```). For multi-row comments, use ```/*``` at the beginning of the comment and ```*/``` to close the comment.
 
 After experimenting, you clear the cache and run the query again with the updates you made to the measure. You find that your updated measure performs much better, with nearly a 50% reduction in query execution time.
 

@@ -10,6 +10,6 @@ In this module you'll learn how to use tools to optimize a data model, and which
 
 After completing this module, you'll be able to:
 
-- Optimize queries using performance analyzer.
+- Optimize queries using Performance analyzer.
 - Troubleshoot DAX performance using DAX Studio.
 - Optimize a data model using Tabular Editor.
