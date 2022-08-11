@@ -189,7 +189,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     > Make sure you're in the PhotoSharingApp directory.
 
     ```bash
-    node index.js
+    node --harmony index.js
     ```
 
     > [!TIP]
