@@ -70,7 +70,7 @@ You typically define styles as resources inside a **ResourceDictionary** object.
 
 ## Apply a style
 
-You attach a style to a control by assigning the named to the **Style** property. The assignment causes each of the **Setter** objects in the style to be applied to the target control. The following code shows how to apply a button style to two buttons.
+You attach a style to a control by assigning the name to the **Style** property. The assignment causes each of the **Setter** objects in the style to be applied to the target control. The following code shows how to apply a button style to two buttons.
 
 ```XML
 <Button Text="OK" Style="{StaticResource MyButtonStyle}" />
@@ -117,7 +117,7 @@ The following code shows the previous example declared as an implicit style. Thi
 
 ## Override a style
 
-You can think of a style as providing a set default values for controls. If an existing style is close to your requirements, but contains one or two setters that you don't want, you can apply the style and then override value by setting properties directly. The explicit setting is applied after the style, so it will override the value from the style.
+You can think of a style as providing a set of default values for controls. If an existing style is close to your requirements, but contains one or two setters that you don't want, you can apply the style and then override value by setting properties directly. The explicit setting is applied after the style, so it will override the value from the style.
 
 Suppose you want to use the following style for several buttons on your page.
 
@@ -192,4 +192,4 @@ The following code shows the previous example styles refactored into a hierarchy
 </Style>
 ```
 
-The **TargetType** value of the base and derived styles must be compatible. For the styles to be compatible,* they must either have the same **TargetType** property, or the **TargetType** of the derived style is a descendent of the **TargetType** of the base style.
+The **TargetType** value of the base and derived styles must be compatible. For the styles to be compatible, they must either have the same **TargetType** property, or the **TargetType** of the derived style is a descendent of the **TargetType** of the base style.
