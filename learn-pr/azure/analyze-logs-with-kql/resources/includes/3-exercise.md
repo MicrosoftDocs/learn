@@ -44,23 +44,44 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
+## Identify recently active machines
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Chunk 2 heading)
+Scenario 1A: Identify machines that haven't sent a heartbeat in the past five minutes but did send one the past 48 hours (in other words, recently active machines).
+    
+Note: We use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating these logs can help in analyzing the reason the machined stopped sending data.
+
+```kusto
+Heartbeat
+| where TimeGenerated >ago(48h)
+| summarize max(TimeGenerated) by Computer,AgentType=Category, OSType
+| where max_TimeGenerated < ago(5m)
+| extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)
+| extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType)
+| order by max_TimeGenerated asc
+| project-reorder max_TimeGenerated,Computer,AgentType,OSType
+```
+
+## List computers that sent a heartbeat in the past 10 minutes by their agent version, OSType and AgentType
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+List computers that sent a heartbeat in the past 10 minutes by their agent version, OSType and AgentType:
+
+```kusto    
+Heartbeat 
+| where TimeGenerated>ago(10m)
+| project-rename AgentType=Category
+| extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)
+| extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType)
+| summarize ComputersList=make_set(Computer) by Version, OSType,AgentType
+| order by AgentType desc
+```
 
 <!-- 4. Validation -------------------------------------------------------------------------------------------
 

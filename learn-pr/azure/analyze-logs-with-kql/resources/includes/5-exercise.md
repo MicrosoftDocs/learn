@@ -44,23 +44,30 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
+## Summarize free space statistics by computer
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+The Perf table with free disk space AND %
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+```kusto
+Perf
+| where TimeGenerated > ago(1h)
+| where ObjectName == "LogicalDisk" or // The object name used in Windows records
+ObjectName == "Logical Disk" // The object name used in Linux records
+| where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
+| where InstanceName == "_Total"
+| summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
+| extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
+| extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
+| extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
+| extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
+| extend packed = pack(CounterName, CounterValue)
+| summarize SpaceStats = make_bag(packed) by Computer
+| where SpaceStats.["% Free Space"]<= 50
+```
 
 <!-- 4. Validation -------------------------------------------------------------------------------------------
 

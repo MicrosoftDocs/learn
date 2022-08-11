@@ -44,18 +44,24 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
+## Identify machines with high and low CPU usage
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Note that 99th percentile means that 99% of all measured values are lower than the given value.
 
+```kusto     
+Perf
+| where TimeGenerated > ago(1d) and CounterName == "% Processor Time" and InstanceName == "_Total" and ObjectName == "Processor"
+| summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer
+| where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50
+| join kind=inner (Heartbeat
+| where TimeGenerated > ago(1d)
+| distinct Computer, OSType) on Computer
+| project-away Computer1
+```
 ## (Chunk n heading)
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
