@@ -6,6 +6,6 @@ We also covered when to use Azure Function. There are many good use cases, but s
 
 To learn more about Azure Functions, below is a list of links to deepen your knowledge:
 
-- [Monitor your functions](https://docs.microsoft.com/azure/azure-functions/functions-monitoring)
-- [Learn more about the concepts Trigger and Bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
-- [Working with App Settings in Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
+- [Monitor your functions](/azure/azure-functions/functions-monitoring)
+- [Learn more about the concepts Trigger and Bindings](/azure/azure-functions/functions-triggers-bindings)
+- [Working with App Settings in Azure Functions](/azure/azure-functions/functions-how-to-use-azure-function-app-settings)
