@@ -32,38 +32,38 @@ Each rule has a description, and many of the rules also have a reference article
 
 ## Run BPA in Tabular Editor
 
-1) Install [Tabular Editor](https://github.com/TabularEditor/TabularEditor).
+1. Install [Tabular Editor](https://github.com/TabularEditor/TabularEditor).
   
    *Tabular Editor has an open-source and a paid version. This unit refers to use of the open-source version only.*
 
-2) Download the Best Practice Rules from [GitHub](https://github.com/TabularEditor/BestPracticeRules/releases).
+2. Download the Best Practice Rules from [GitHub](https://github.com/TabularEditor/BestPracticeRules/releases).
    
-3) Save the file in `C:\Users\username\AppData\Local\TabularEditor` and name it **`BPARules.json`**.
+3. Save the file in `C:\Users\username\AppData\Local\TabularEditor` and name it **`BPARules.json`**.
 
-4) In Power BI Desktop, select Tabular Editor on the External Tools tab of the ribbon.
+4. In Power BI Desktop, select Tabular Editor on the External Tools tab of the ribbon.
     
-    ![Screenshot of the external tools tab of the ribbon in Power BI Desktop displaying Tabular Editor](../media/power-bi-external-tools.png)
+    ![Screenshot of the external tools tab of the ribbon in Power BI Desktop displaying Tabular Editor.](../media/power-bi-external-tools.png)
 
    *Tabular Editor will automatically connect to the data model*
   
-5) On the Tools tab, select **Best Practice Analyzer**.
+5. On the Tools tab, select **Best Practice Analyzer**.
    
     ![Screenshot of Tabular Editor interface with Best Practice Analyzer selected on the Tools tab.](../media/launch-best-practice-analyzer.png)
 
-6) The Best Practice Analyzer window will open, displaying any violations of the Best Practice Rules. 
+6. The Best Practice Analyzer window will open, displaying any violations of the Best Practice Rules. 
  
    ![Screenshot of Best Practice Analyzer window displaying 20 objects in violation of 7 best practice rules.](../media/best-practice-analyzer-results.png)
 
      > [!NOTE] 
      > The best practice analyzer scans your model for issues whenever a change is made to the model. This is on by default but can be disabled.
 
-7) Review the objects in violation of the rules and fix them using Tabular Editor. For example, let's fix the columns violating the **Don't summarize numeric columns** rule, starting with the Weight column in the Product table.
+7. Review the objects in violation of the rules and fix them using Tabular Editor. For example, let's fix the columns violating the **Don't summarize numeric columns** rule, starting with the Weight column in the Product table.
 
-8) Double select (or right select) the object to go to the object in Tabular Editor. Change the object properties as necessary. In this case, we're changing **Summarize by** from **Sum** to **None**.
+8. Double select (or right select) the object to go to the object in Tabular Editor. Change the object properties as necessary. In this case, we're changing **Summarize by** from **Sum** to **None**.
 
     ![Screenshot of Tabular Editor displaying the object properties, with a blue highlight over Summarize by None.](../media/best-practice-analyzer-fix-object.png)
 
-9) To save your changes to back to the Model.bim file, select **Save,** or use the keyboard shortcut **ctrl + s**.
+9. To save your changes to back to the Model.bim file, select **Save,** or use the keyboard shortcut **ctrl + s**.
 
 > [!IMPORTANT]
 > Tabular Editor uses the [Tabular Object Model (TOM)](/analysis-services/tom/introduction-to-the-tabular-object-model-tom-in-analysis-services-amo) to load and save metadata to and from Model.bim files. When fixing Best Practice rule violations, saving changes in Tabular Editor pushes modifications to the connected Power BI desktop data model.

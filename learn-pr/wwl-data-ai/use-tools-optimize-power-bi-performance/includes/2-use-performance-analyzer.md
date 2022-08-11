@@ -22,9 +22,9 @@ After you start recording, take actions in the report. For example, move from on
 The Performance analyzer is looking at the time it takes for each visual to query the data model and render results. This is the time from when a user does something on the page to when the visual is rendered, in milliseconds.
 
 In the example below, three actions were taken after recording started. 
-1) Navigated to a new report page
-2) Changed a slicer value
-3) Cross highlighted a table
+1. Navigated to a new report page
+2. Changed a slicer value
+3. Cross highlighted a table
 
 ![Screenshot of performance analyzer results after three report actions.](../media/performance-analyzer-results.png)
 
