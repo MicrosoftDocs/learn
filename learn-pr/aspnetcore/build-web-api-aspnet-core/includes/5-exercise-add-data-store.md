@@ -1,8 +1,8 @@
-Before you start to implement a web API for pizza, you need to have a data store that you can perform operations on. 
+Before you start to implement a web API for pizza, you need to have a data store on which you can perform operations.
 
-You need a `model` class to represent a pizza in inventory. The model contains properties that represent the characteristics of a pizza. The model is used to pass data in the web API and to persist pizza options in the data store. 
+You need a `model` class to represent a pizza in inventory. The model contains properties that represent the characteristics of a pizza. The model is used to pass data in the web API and to persist pizza options in the data store.
 
-In this unit, that data store is a simple local in-memory caching service. In a real-world application, you would consider using a database, such as SQL Server, with Entity Framework Core. 
+In this unit, that data store is a simple local in-memory caching service. In a real-world application, you would consider using a database, such as SQL Server, with Entity Framework Core.
 
 ## Create a pizza model
 
