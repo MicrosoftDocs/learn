@@ -61,24 +61,24 @@ When a customer selects a pizza, the dialog should allow them to change the size
 1. Add this code in the `@code` block under the `List<PizzaSpecial>` variable:
 
     ```csharp
-    Pizza configuringPizza;
-    bool showingConfigureDialog;
+        Pizza configuringPizza;
+        bool showingConfigureDialog;
     ```
 
 1. Add this code to create a pizza under the `OnInitializedAsync()` method:
 
     ```csharp
-    void ShowConfigurePizzaDialog(PizzaSpecial special)
-    {
-        configuringPizza = new Pizza()
+        void ShowConfigurePizzaDialog(PizzaSpecial special)
         {
-            Special = special,
-            SpecialId = special.Id,
-            Size = Pizza.DefaultSize
-        };
-    
-        showingConfigureDialog = true;
-    }
+            configuringPizza = new Pizza()
+            {
+                Special = special,
+                SpecialId = special.Id,
+                Size = Pizza.DefaultSize
+            };
+        
+            showingConfigureDialog = true;
+        }
     ```
 
 1. Allow the webpage to call the server-side `ShowConfigurePizzaDialog` method by allowing customers to select a pizza's `<li>` tag. Replace the `<li>` line with this code:
@@ -101,56 +101,56 @@ When a customer selects a pizza, the dialog should allow them to change the size
     The whole `index.razor` file should now look like this example:
 
     ```razor
-    @page "/"
-    @inject HttpClient HttpClient
-    @inject NavigationManager NavigationManager
-
-    <div class="main">
-    <h1>Blazing Pizzas</h1>
-    <ul class="pizza-cards">
-        @if (specials != null)
-        {
-        @foreach (var special in specials)
-        {
-            <li @onclick="@(() => ShowConfigurePizzaDialog(special))" style="background-image: url('@special.ImageUrl')">
-            <div class="pizza-info">
-                <span class="title">@special.Name</span>
-                    @special.Description
-                    <span class="price">@special.GetFormattedBasePrice()</span>
-            </div>
-            </li>
-        }
-        }
-    </ul>
-    </div>
-
-    @if (showingConfigureDialog)
-    {
-        <ConfigurePizzaDialog Pizza="configuringPizza" />
-    }
-
-    @code {
-        List<PizzaSpecial> specials = new();
-        Pizza configuringPizza;
-        bool showingConfigureDialog;
-
-        protected override async Task OnInitializedAsync()
-        {
-            specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>(NavigationManager.BaseUri + "specials");
-        }
-
-        void ShowConfigurePizzaDialog(PizzaSpecial special)
-        {
-            configuringPizza = new Pizza()
-            {
-                Special = special,
-                SpecialId = special.Id,
-                Size = Pizza.DefaultSize
-            };
+        @page "/"
+        @inject HttpClient HttpClient
+        @inject NavigationManager NavigationManager
         
-            showingConfigureDialog = true;
+        <div class="main">
+          <h1>Blazing Pizzas</h1>
+          <ul class="pizza-cards">
+            @if (specials != null)
+            {
+              @foreach (var special in specials)
+              {
+                <li @onclick="@(() => ShowConfigurePizzaDialog(special))" style="background-image: url('@special.ImageUrl')">
+                  <div class="pizza-info">
+                  <span class="title">@special.Name</span>
+                  @special.Description
+                  <span class="price">@special.GetFormattedBasePrice()</span>
+                  </div>
+                </li>
+              }
+            }
+          </ul>
+        </div>
+        
+        @if (showingConfigureDialog)
+        {
+            <ConfigurePizzaDialog Pizza="configuringPizza" />
         }
-    }
+        
+        @code {
+          List<PizzaSpecial> specials = new();
+          Pizza configuringPizza;
+          bool showingConfigureDialog;
+
+          protected override async Task OnInitializedAsync()
+          {
+              specials = await HttpClient.GetFromJsonAsync<List<PizzaSpecial>>(NavigationManager.BaseUri + "specials");
+          }
+
+          void ShowConfigurePizzaDialog(PizzaSpecial special)
+          {
+              configuringPizza = new Pizza()
+              {
+                  Special = special,
+                  SpecialId = special.Id,
+                  Size = Pizza.DefaultSize
+              };
+          
+              showingConfigureDialog = true;
+          }
+        }
     ```
 
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
@@ -277,33 +277,33 @@ You might have noticed in the OrderState class two methods that we haven't used 
 1. In the `@code` block, add two new parameters:
 
     ```razor
-    @code {
+      @code {
         [Parameter] public Pizza Pizza { get; set; }
         [Parameter] public EventCallback OnCancel { get; set; }
         [Parameter] public EventCallback OnConfirm { get; set; }
-    }
+      }
     ```
 
 1. The buttons can now have `@onclick` directives added. Change the current code for the dialog buttons to this markup:
 
     ```razor
-    <div class="dialog-buttons">
-        <button class="btn btn-secondary mr-auto" @onclick="OnCancel">Cancel</button>
-        <span class="mr-center">
-            Price: <span class="price">@(Pizza.GetFormattedTotalPrice())</span>
-        </span>
-        <button class="btn btn-success ml-auto" @onclick="OnConfirm">Order ></button>
-    </div>
+      <div class="dialog-buttons">
+          <button class="btn btn-secondary mr-auto" @onclick="OnCancel">Cancel</button>
+          <span class="mr-center">
+              Price: <span class="price">@(Pizza.GetFormattedTotalPrice())</span>
+          </span>
+          <button class="btn btn-success ml-auto" @onclick="OnConfirm">Order ></button>
+      </div>
     ```
 
 1. The last step is to pass the `OrderState` methods for canceling and confirming orders. In the file explorer, expand **Pages**. Then select **Index.razor**.
 1. Change the code for the call to the `ConfigurePizzaDialog` component:
 
     ```razor
-    <ConfigurePizzaDialog
-        Pizza="OrderState.ConfiguringPizza"
-        OnCancel="OrderState.CancelConfigurePizzaDialog"
-        OnConfirm="OrderState.ConfirmConfigurePizzaDialog" />
+        <ConfigurePizzaDialog
+          Pizza="OrderState.ConfiguringPizza"
+          OnCancel="OrderState.CancelConfigurePizzaDialog"
+          OnConfirm="OrderState.ConfirmConfigurePizzaDialog" />
     ```
 
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
