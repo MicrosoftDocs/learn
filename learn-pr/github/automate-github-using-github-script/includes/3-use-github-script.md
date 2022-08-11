@@ -80,7 +80,7 @@ Each step includes a descriptive `name` element that also helps you track it fro
 
 The `Add issue to project board` step also includes an `if` statement that specifies the issue should only be added to the project board if it is labeled `bug`.
 
-## Use the Nod.js environment
+## Use the Node.js environment
 
 The GitHub Script also grants you access to a full Node.js environment. While the GitHub Script isn't recommender for writing the logic for complex actions, you can use it to add additional functionality to the octo/rest.js API. 
 
