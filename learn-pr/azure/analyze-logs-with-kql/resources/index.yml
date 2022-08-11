@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.resources
+metadata:
+  moduleType: guided-project
+  title: Guided project - Analyze logs in Azure Monitor with Kusto Query Language
+  description: "Write log queries to gain insights into your business, IT operations and performance. Use Kusto Query Language (KQL) to extract log data in Azure Monitor Log Analytics."
+  ms.date: 08/08/2022
+  author: guywi-ms
+  ms.author: guywild
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+title: Guided project - Analyze logs in Azure Monitor with Kusto Query Language
+summary: |
+  Write log queries to find answers to operational and business questions. Use Kusto Query Language (KQL) to extract insights from logs in Azure Monitor.
+  > [!NOTE]
+  > This is a **_Guided Project_** module where you complete an end-to-end project by following step-by-step instructions.
+abstract: |
+   In this module, you'll practice how to:
+    - Analyze log data based on specific business and operational questions.
+    - Write KQL queries to extract the data you need from logs in Azure Monitor.
+prerequisites: |
+  - A Log Analytics workspace with log data.
+  - Knowledge of database structures like tables, columns, and rows.
+  - Ability to write Kusto Query Language queries at a novice to intermediate level.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles:
+  - data-analyst
+  - data-scientist
+  - devops-engineer
+  - technology-manager
+products: 
+- azure-monitor
+- azure-portal
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - cloud-computing
+  - data-ai
+  - infrastructure
+units:
+- learn.resources.introduction
+- learn.resources.prepare
+- learn.resources.exercise
+- learn.resources.exercise
+- learn.resources.exercise
+- learn.resources.knowledge-check
+- learn.resources.summary
+- learn.resources.analyze-logs-with-kql.md
+badge:
+  uid: learn.resources.badge
