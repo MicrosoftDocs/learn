@@ -2,7 +2,7 @@
 uid: learn.improve-sign-in-security-authenticator
 metadata:
   moduleType: standard
-  title: improve-sign-in-security-authenticator
+  title: Improve sign-in security with Microsoft Authenticator
   description: "Improve Azure AD sign-in security by running a registration campaign to nudge users to set up Microsoft Authenticator push notifications as their default sign-in method."
   ms.date: 7/27/2022
   author: Justinha
