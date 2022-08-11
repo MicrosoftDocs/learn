@@ -44,7 +44,7 @@ This example defines the label for the button ("Click me"), and specifies that a
 
 ## Requirements for .NET MAUI development
 
-To create .NET MAUI apps, you currently require Visual Studio version 17.3 Preview (the latest preview build of Visual Studio 2022) with the following workload installed:
+To create .NET MAUI apps, you currently require [Visual Studio version 17.3 Preview](https://visualstudio.microsoft.com/vs/preview/) (the latest preview build of Visual Studio 2022) with the following workload installed:
 
 - .NET Multi-Platform App UI development
 

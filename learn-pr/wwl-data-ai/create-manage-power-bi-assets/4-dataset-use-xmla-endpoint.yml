@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-power-bi-assets.dataset-use-xmla-endpoint
+title: Manage a Power BI dataset using XMLA endpoint
+metadata:
+  title: Manage a Power BI dataset using XMLA endpoint
+  description: "Manage a Power BI dataset using XMLA endpoint"
+  ms.date: 08/05/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-dataset-use-xmla-endpoint.md)]

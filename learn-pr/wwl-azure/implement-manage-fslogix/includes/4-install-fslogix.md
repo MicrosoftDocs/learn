@@ -21,7 +21,7 @@ To install FSLogix Applications:
 3.  Click **Options** to specify an installation folder.
 4.  Accept the license agreement and click **Install.**
 5.  Microsoft FSLogix Apps will install.
-6.  To view the FSLogix Configuration Tool, check *\\Program Files\\FSLogix\\Apps\\ConfigurationTool.exe*.:::image type="content" source="../media/fslogix-config-tool-ee1b289f.png" alt-text="View of the FSLogix Configuration Tool.":::
+6.  To view the FSLogix Configuration Tool, check *\\Program Files\\FSLogix\\Apps\\ConfigurationTool.exe*.:::image type="content" source="../media/fslogix-config-tool-ee1b289f.png" alt-text="Screenshot showing the FSLogix Configuration Tool attributes.":::
     
 
 ## Application Masking Rule Editor Installation

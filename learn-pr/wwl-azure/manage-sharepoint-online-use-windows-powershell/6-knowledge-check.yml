@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-sharepoint-online-use-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "When you modify a SharePoint Online site with `Set-SPOSite`, what do you need to provide to identify which site is being modified?"
+    choices:
+    - content: "The group ID of the site"
+      isCorrect: false
+      explanation: "Incorrect. The URL for each SharePoint Online site is a unique identifier that's provided with the `-Site` parameter when running the `Set-SPOSite` cmdlet."
+    - content: "The URL of the site"
+      isCorrect: true
+      explanation: "Correct. The URL for each SharePoint Online site is a unique identifier that's provided with the `-Site` parameter when running the `Set-SPOSite` cmdlet."
+    - content: "The display name of the site"
+      isCorrect: false
+      explanation: "Incorrect. The URL for each SharePoint Online site is a unique identifier that's provided with the `-Site` parameter when running the `Set-SPOSite` cmdlet."
+  - content: "How would you directly assign permissions to a SharePoint Online site?"
+    choices:
+    - content: "Use the `Add-SPOUser` cmdlet"
+      isCorrect: false
+      explanation: "Incorrect. To assign permissions to a SharePoint Online site, you create a SharePoint group that's assigned permissions, and then use the `Add-SPOUser` cmdlet to add members to the SharePoint group."
+    - content: "Create a SharePoint group that's assigned permissions, and then use the `Add-SPOUser` cmdlet to add members to the SharePoint group"
+      isCorrect: true
+      explanation: "Correct. To assign permissions to a SharePoint Online site, you create a SharePoint group that's assigned permissions, and then use the `Add-SPOUser` cmdlet to add members to the SharePoint group."
+    - content: "Create a SharePoint group that's assigned permissions"
+      isCorrect: false
+      explanation: "Incorrect. To assign permissions to a SharePoint Online site, you create a SharePoint group that's assigned permissions, and then use the `Add-SPOUser` cmdlet to add members to the SharePoint group."

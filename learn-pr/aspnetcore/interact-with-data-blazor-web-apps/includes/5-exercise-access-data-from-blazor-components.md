@@ -76,7 +76,7 @@ In this exercise, you'll add packages to support database functionality, connect
     }
     ```
 
-    This class creates a controller that allows us to query the database for pizza specials and returns them as JSON at the [http://localhost:5000/specials](http://localhost:5000/specials) URL.
+    This class creates a controller that allows us to query the database for pizza specials and returns them as JSON at the `(http://localhost:5000/specials)` URL.
 
 1. Select <kbd>Ctrl</kbd> + <kbd>S</kbd>. In the **Save As** dialog, for **File name** enter **SpecialsController.cs**, and then select **Save**.
 
@@ -245,7 +245,7 @@ We can now replace the hard-coded pizza in the **index.razor** page.
 
     There's a runtime error when you run the app. The **JsonReader** raised an exception.
 
-1. Remember that the app should be creating JSON at [http://localhost:5000/specials](http://localhost:5000/specials). Go to that URL.
+1. Remember that the app should be creating JSON at `(http://localhost:5000/specials)`. Go to that URL.
 
    The app doesn't know how to route this request. You'll learn about routing in the module on Blazor routing. Let's fix the error now.
 1. Select <kbd>Shift</kbd> + <kbd>F5</kbd>, or select **Stop Debugging**.
@@ -270,7 +270,7 @@ We can now replace the hard-coded pizza in the **index.razor** page.
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
 
    The app should now work, but let's check that the JSON is being created correctly.
-1. Go to [http://localhost:5000/specials](http://localhost:5000/specials) to see:
+1. Go to `(http://localhost:5000/specials)` to see:
 
     :::image type="content" source="../media/5-returned-json.png" alt-text="Screenshot showing the browser that shows JSON for pizzas.":::
 

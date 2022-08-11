@@ -63,7 +63,7 @@ The following table shows Read Scale-out provisioning for Azure SQL Database and
 | - | - |
 | For the basic, standard and general purpose tier, read scale-out feature is unavailable| For the basic, standard and general purpose tier, read scale-out feature is unavailable |
 | For the Business Critical tier, read scale-out is auto-provisioned| For the Premium and Business Critical tier, read scale-out is auto-provisioned |
-| Hyperscale tier is unavailable in Azure Managed Instance| Read scale-put feature is available in Hyperscale tier if atleast one secondary replica is created |
+| Hyperscale tier is unavailable in Azure Managed Instance| Read scale-out feature is available in Hyperscale tier if atleast one secondary replica is created |
 
 
  

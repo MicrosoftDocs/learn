@@ -62,9 +62,9 @@ WHERE EXISTS
   WHERE o.CustomerID = c.CustomerID);
 ```
 
-In the first example, the subquery must count every occurrence of each *custid* found in the **Sales.Orders** table, and compare the count results to zero, simply to indicate that the customer has placed orders.
+In the first example, the subquery must count every occurrence of each *custid* found in the **Sales.SalesOrderHeader** table, and compare the count results to zero, simply to indicate that the customer has placed orders.
 
-In the second query, EXISTS returns TRUE for a **custid** as soon as a relevant order has been found in the **Sales.Orders** table. A complete accounting of each occurrence is unnecessary. Also note that with the EXISTS form, the subquery is not restricted to returning a single column. Here, we have SELECT \*. The returned columns are irrelevant because we’re only checking if any rows are returned at all, not what values are in those rows.
+In the second query, EXISTS returns TRUE for a **custid** as soon as a relevant order has been found in the **Sales.SalesOrderHeader** table. A complete accounting of each occurrence is unnecessary. Also note that with the EXISTS form, the subquery is not restricted to returning a single column. Here, we have SELECT \*. The returned columns are irrelevant because we’re only checking if any rows are returned at all, not what values are in those rows.
 
 From the perspective of logical processing, the two query forms are equivalent. From a performance perspective, the database engine may treat the queries differently as it optimizes them for execution. Consider testing each one for your own usage.
 
@@ -82,7 +82,7 @@ WHERE NOT EXISTS
    WHERE o.CustomerID = c.CustomerID);
 ```
 
-SQL Server won't have to return data about the related orders for customers who have placed orders. If a **custid** is found in the **Sales.Orders** table, NOT EXISTS evaluates to FALSE and the evaluation quickly completes.
+SQL Server won't have to return data about the related orders for customers who have placed orders. If a **custid** is found in the **Sales.SalesOrderHeader** table, NOT EXISTS evaluates to FALSE and the evaluation quickly completes.
 
 To write queries that use EXISTS with subqueries, consider the following guidelines:
 
