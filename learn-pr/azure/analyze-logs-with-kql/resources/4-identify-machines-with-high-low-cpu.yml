@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.resources.identify-machines-with-high-low-cpu
-title: Enter exercise title
+title: Identify machines with high and low CPU usage
 metadata:
   unitType: exercise
   title: exercise
