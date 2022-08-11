@@ -40,11 +40,10 @@ subjects:
 units:
 - learn.resources.introduction
 - learn.resources.prepare
-- learn.resources.exercise
-- learn.resources.exercise
-- learn.resources.exercise
+- learn.resources.analyze-virtual-machine-agent-health
+- learn.resources.identify-machines-with-high-low-cpu
+- learn.resources.summarize-free-space-by-computer
 - learn.resources.knowledge-check
 - learn.resources.summary
-- learn.resources.analyze-logs-with-kql.md
 badge:
   uid: learn.resources.badge
