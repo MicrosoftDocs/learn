@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/29/2022
+  ms.date: 08/10/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -13,11 +13,11 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/10-knowledge-check.md)]
+  [!include[](includes/11-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An Azure Stack Hub operator receives a critical alert for an Azure Event Hubs event that occurred 8 hours prior. A Microsoft support engineer requests the operator send the Event Hubs log. The request was for six hours following the alert. Which command should the operator run?"
+  - content: "An Azure Stack Hub operator receives a critical alert for an Azure Event Hubs event that occurred 8 hours prior. A Microsoft support engineer requests the operator sends the Event Hubs log. The request was for six hours following the alert. Which command should the operator run?"
     choices:
     - content: "```Get-AzureStackLog -FromDate (Get-Date). AddHours(-8) -Todate (Get-Date).AddHours(-2) -OutputSasUri `“&lt;SasUri&gt;”` -FilterByResourceProvider “EventHub”```"
       isCorrect: true
@@ -38,4 +38,4 @@ quiz:
       explanation: "Incorrect. The Azure Partner Network (MPN) number is the unique identification for an Azure Partner."
     - content: "The Azure Active Directory tenant ID"
       isCorrect: false
-      explanation: "Incorrect. The Azure Active Directory tenant ID is the trust relationship between Azure subscriptions and Azure Active Directory (AAD)."
+      explanation: "Incorrect. The Azure Active Directory tenant ID is the trust relationship between Azure subscriptions and Azure Active Directory (Azure AD)."

@@ -5,7 +5,7 @@ This unit covers how to get your Cloud ID by using the Administrator portal or t
 1.  Open the Administrator portal.
 2.  Select **Region management**.
     
-    :::image type="content" source="../media/find-cloud-identification-image-1-4036e60c.png" alt-text="Screenshot of the Dashboard":::
+    :::image type="content" source="../media/find-cloud-identification-image-1-4036e60c.png" alt-text="Screenshot showing the results on the Dashboard.":::
     
 
 3.  Select **Properties** and copy the **Stamp Cloud ID**

@@ -10,7 +10,7 @@ Log alerts use log data to assess the rule logic and, if necessary, trigger an a
 
 By its nature, log data is historical. So usage is focused on analytics and trends.
 
-You use these types of logs to assess if any of your servers have exceeded their CPU utilization by a given threshold during the last 30 minutes. Or, you can evaluate response codes issued on your web application server in the last hour.
+You use these types of logs to assess if any of your servers have exceeded their CPU utilization by a given threshold during the last 30 minutes, or you can evaluate response codes issued on your web application server in the last hour.
 
 ## How log alerts work
 
@@ -20,7 +20,7 @@ When a log search evaluates as positive, an alert record is created, and any ass
 
 ## Composition of log search rules
 
-Every log alert has an associated search rule. The composition of these rules is:
+Every log alert has an associated search rule. The composition of these rules is as follows:
 
 - **Log query**: Query that runs every time the alert rule fires.
 - **Time period**: Time range for the query.
@@ -31,7 +31,7 @@ Log search results are one of two types: number of records or metric measurement
 
 ### Number of records
 
-Consider using the number-of-records type of log search when you're working with an event or event-driven data. Examples are syslog and web app responses.
+Consider using the number-of-records type of log search when you're working with an event or event-driven data. Examples are syslog and web-app responses.
 
 This type of log search returns a single alert when the number of records in a search result reaches or exceeds the value for the number of records (threshold). For example, when the threshold for the search rule is greater or equal to five, the query results have to return five or more rows of data before the alert is triggered.
 
