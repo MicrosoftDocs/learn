@@ -15,7 +15,7 @@ In this part, you'll:
 
 Here you add a new pipeline variable to the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
-1. From Azure DevOps, navigate to **Pipelines**.
+1. From Azure DevOps, go to **Pipelines**.
 1. Select the pipeline.
 1. Select **Edit**. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
 
@@ -58,7 +58,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 **Mara**: That's what the `PublishBuildArtifacts@1` task is for. It's so common that there's even a shorthand for it, `publish`.
 
-1. Add a `publish` task that stores the *manifests* folder for a future stage as shown below. Be sure to match the indentation of the previous task.
+1. Add a `publish` task that stores the *manifests* folder for a future stage as shown in the following code snippet. Be sure to match the indentation of the previous task.
 
     [!code-yml[](code/4-4-azure-pipelines.yml?highlight=12-13)]
 
@@ -86,7 +86,7 @@ Here you add a new pipeline variable to the existing CI/CD pipeline defined in *
 
 ### Kubernetes manifest task
 
-The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined below.
+The `KubernetesManifest@0` task is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined as follows:
 
 * `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
 * `secretName` specifies the name of the secret to create.
@@ -100,7 +100,7 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 
     [!code-yml[](code/4-7-azure-pipelines.yml)]
 
-    **Andy:** The final step is to trigger the deployment of our updates images to the Kubernetes cluster. Based on the documentation, it looks like we can use the same task, but with a different action and parameters.
+    **Andy:** The final step is to trigger the deployment of our updates images to the Kubernetes cluster. Based on the documentation, it looks like we can use the same task but with a different action and parameters.
 
     * `action` indicates the feature to run. In this case, `deploy` does exactly what it sounds like.
 	* `kubernetesServiceConnection` specifies the name of the Azure Kubernetes Services connection.
@@ -114,7 +114,7 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 
 ## Save the pipeline to trigger a build and release
 
-1. Select **Save** from the upper right corner of the page. Confirm the **Save** to trigger a run.
+1. Select **Save** from the upper-right corner of the page. Confirm the **Save** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, return to the **Environments** tab in Azure DevOps.
 1. Select **spike**, the Azure DevOps environment that you created earlier.
@@ -125,7 +125,7 @@ You can learn more about the flexibility of this task in the [Kubernetes manifes
 
     :::image type="content" source="../media/4-deploy-ip.png" border="false" alt-text="Screenshot showing the location of the web site IP address.":::
 
-1. Navigate to the copied IP address in a new browser tab.
+1. Go to the copied IP address in a new browser tab.
 1. You see the site on AKS.
 
     :::image type="content" source="../media/4-space-game.png" border="false" alt-text="Screenshot of the Space Game web site.":::

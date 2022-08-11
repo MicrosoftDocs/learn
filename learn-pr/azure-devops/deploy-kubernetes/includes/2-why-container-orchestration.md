@@ -26,7 +26,7 @@ Things are looking up at Tailspin. At a recent management offsite, Andy presente
 
 **Amita**: Is it going to be hard to keep track of what environment is where?
 
-**Mara**: No, we can use Azure DevOps environments to do all of that. You'll be able to find out where each service is and how it got there by using the portal. It's all automated through the pipeline, so there will be nothing we have to manually keep track of. The only concern I have now is how much impact it will have on our development experience to build this out.
+**Mara**: No, we can use Azure DevOps environments to do all of that. You'll be able to find out where each service is and how it got there by using the portal. It's all automated through the pipeline, so there will be nothing that we have to manually keep track of. The only concern I have now is how much impact it will have on our development experience to build this.
 
 **Andy**: The good news is that the impact is minimal. Assuming we have our projects set up to build Docker containers, all we need to deploy to Kubernetes are some manifest files that describe the services and their deployments.
 

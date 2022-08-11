@@ -7,14 +7,14 @@ You're finished with the tasks for this module. Here you'll clean up your Azure 
 
 Here you delete your Azure App Service instances. The easiest way to delete the instances is to delete their parent resource group. When you delete a resource group, you delete all resources in that group.
 
-In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
+In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module, you managed Azure resources through the Azure portal. Here you tear down your deployment by using the Azure CLI through Azure CloudShell. The steps are similar to the steps that you used when you created the resources.
 
 To clean up your resource group:
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
+1. From the menu bar, select CloudShell. When prompted, select the **Bash** experience.
 
-    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" border="false" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" border="false" alt-text="Screenshot of the Azure portal showing the location of the CloudShell menu item.":::
 
 1. Run the following `az group delete` command to delete the resource group that you used, `tailspin-space-game-rg`.
 
@@ -77,8 +77,8 @@ Delete your Azure DevOps project, including the contents of Azure Boards and you
 To delete the project:
 
 1. In Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Kubernetes**.
-1. Select **Project settings** in the lower corner.
-1. In the **Project details** area, go to the bottom and select **Delete**.
+1. Select **Project settings** in the lower-left corner.
+1. In the **Project details** area, go to the lower-left corner and select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" border="false" alt-text="Screenshot of Azure Pipelines showing the location of the Delete button.":::
 

@@ -6,7 +6,7 @@ To accomplish these goals, you:
 > * Add a user to ensure Azure DevOps can connect to your Azure subscription.
 > * Set up an Azure DevOps project for this module.
 > * On Azure Boards, move the work item for this module to the **Doing** column.
-> * Create an Azure Container Registry (ACR) and Azure Kubernetes Service (AKS) cluster using the Azure CLI in Azure Cloud Shell.
+> * Create an Azure Container Registry (ACR) and Azure Kubernetes Service (AKS) cluster using the Azure CLI in Azure CloudShell.
 > * Create pipeline variables that define the names of your Azure resources.
 > * Create a service connection that enables Azure Pipelines to securely access your Azure subscription.
 > * Update the source project on GitHub to use your new ACR instance.
@@ -17,7 +17,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, then add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -89,21 +89,21 @@ Here you create the Azure Kubernetes Service resources that are required to depl
 
 In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up Azure resources through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as Azure Kubernetes Service can be tedious.
 
-In this module, you use the Azure CLI to bring up the resources need to deploy and run your app on Azure Kubernetes Service. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to bring up the resources needed to deploy and run your app on Azure Kubernetes Service. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure CloudShell. This browser-based shell experience is hosted in the cloud. In CloudShell, the Azure CLI is configured for use with your Azure subscription.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete the exercises in this module.
 
-### Bring up Cloud Shell through the Azure portal
+### Bring up CloudShell through the Azure portal
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
 
-1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
+1. From the menu, select **CloudShell**. When prompted, select the **Bash** experience.
 
-    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" border="false" alt-text="Screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" border="false" alt-text="Screenshot of the Azure portal showing the location of the CloudShell menu item.":::
 
     > [!NOTE]
-    > Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
+    > CloudShell requires an Azure storage resource to persist any files that you create in CloudShell. When you first open CloudShell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future CloudShell sessions.
 
 ### Select an Azure region
 
@@ -111,7 +111,7 @@ A _region_ is one or more Azure datacenters within a geographic location. East U
 
 To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
-1. From Cloud Shell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription:
+1. From CloudShell, run the following `az account list-locations` command to list the regions that are available from your Azure subscription:
 
     ```azurecli
     az account list-locations \
@@ -137,7 +137,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 Create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
-1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
+1. From CloudShell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
     ```bash
     resourceSuffix=$RANDOM
@@ -229,7 +229,7 @@ This solution requires several Azure resources for deployment, which you create 
      --output table
     ```
 
-    Note the login server for your container registry. You'll need this when configuring the pipeline and environment in some upcoming steps. Here's an example:
+    Note the login server for your container registry. You'll need this when configuring the pipeline and environment in upcoming steps. Here's an example:
 
     ```output
     LoginServer                      
