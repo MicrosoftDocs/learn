@@ -10,7 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
+TODO: Kusto Query Language (KQL) queries let you extract meaningful insights from the log data you collect in Azure Monitor Log Analytics.
 TODO: add a visual element
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
@@ -29,8 +29,15 @@ TODO: add a visual element
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
+
+You're a data scientist at a retail chain that uses Azure Monitor to monitor the machines in its retail stores.
+
+The chain is expanding and, with the growing number of transactions at stores and between stores, the company has experienced some computer performance issues.
+
+You want to identify current issues and mitigate future problems with the computers running in the chain's stores.
+
 TODO: add a visual element
+
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -45,7 +52,19 @@ TODO: add a visual element
 
  -->
 ## What will we be doing?
-TODO: add your activities
+
+To gain business or operational insights from log data, you’ll:
+
+- Characterize your inquiry. In this step, you'll:
+    - Clearly define your questions. What type of insights do you want to gain from your inquiry?
+    - Assess what data you need to have to answer these questions. What type of data can help you answer your question?
+- Assess your log data. In this step, you'll:
+    - Examine the raw data you have in your logs. Which tables hold the data you're looking for? Is the data in one table sufficient to answer your question or do you need - additional information from other tables?
+    - Identify data that is relevant to your inquiry. Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights? Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources?
+- Use KQL to extract and transform log data to address your questions. In this step, you'll write queries to:
+    - Extract the relevant data.
+    - Transform data by converting units of measure, changing the way you present and label data, and performing other calculations.
+
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 

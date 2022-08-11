@@ -33,7 +33,7 @@ roles:
 products: 
 - azure-monitor
 - azure-portal
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects: 
   - cloud-computing
   - data-ai
   - infrastructure
