@@ -1,6 +1,6 @@
 In this unit, you'll get the new **Tailspin.SpaceGame.Web** code that has the model classes removed. Instead of referencing the models directly, the code will reference them from the package you created in the previous unit.
 
-Here is a list of the steps:
+Here's a list of the steps:
 
 > [!div class="checklist"]
 > * Get the new code from a branch of the original **Tailspin.SpaceGame.Web** repository.

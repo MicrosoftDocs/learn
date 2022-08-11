@@ -10,14 +10,14 @@ You have multiple ways to send diagnostic logs to Microsoft Support. Depending o
 
 The flowchart below shows which option to use for sending diagnostic logs in each case. If Azure Stack Hub can connect to Azure, Microsoft recommends enabling **Proactive log collection**, which will automatically upload diagnostic logs to a Microsoft-controlled storage blob in Azure when a critical alert gets raised. You can alternatively collect logs on-demand by using **Send logs now**. If Azure Stack Hub is disconnected from Azure, you can **Save logs locally**.
 
-:::image type="content" source="../media/diagnostic-log-collection-image-1-43c3122d.png" alt-text="Flowchart shows how to send logs now to Microsoft.":::
+:::image type="content" source="../media/diagnostic-log-collection-image-1-43c3122d.png" alt-text="Diagram showing how to send logs now to Microsoft.":::
 
 
 ## Proactive log collection
 
 Proactive log collection automatically collects and sends diagnostic logs from Azure Stack Hub to Microsoft before you open a support case. These logs are only collected when a system health alert is raised and are only accessed by Microsoft Support in the context of a support case.
 
-Beginning with Azure Stack Hub version 2008, proactive log collection uses an improved algorithm that captures logs even during error conditions that aren't visible to an operator. Capture makes sure that the right diagnostic info is collected at the right time without needing any operator interaction. Microsoft support can begin troubleshooting and resolve problems sooner in some cases. Initial algorithm improvements focus on patch and update operations.
+Beginning with Azure Stack Hub version 2008, proactive log collection uses an improved algorithm that captures a log even during error conditions that aren't visible to an operator. Capture makes sure that the right diagnostic info is collected at the right time without needing any operator interaction. Microsoft support can begin troubleshooting and resolve problems sooner in some cases. Initial algorithm improvements focus on patch and update operations.
 
 Azure Stack Hub collects logs for alerts and other hidden failure events, which aren't visible to you.
 
