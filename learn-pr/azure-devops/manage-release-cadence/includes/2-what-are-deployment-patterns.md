@@ -57,7 +57,7 @@ In this deployment pattern, Mara and I build new features behind a toggle. When 
 
 For example, we could expose the feature first to a few users to see how they react. That random sample of users sees the feature, or we could just let the feature go live to everyone.
 
-But this deployment pattern might benefit Mara, and me more than anyone else. The big advantage to the feature toggles pattern is that, it helps us avoid too much branching. Merging branches can be painful.
+But this deployment pattern might benefit Mara, and me more than anyone else. An advantage to the feature toggles pattern is that, it helps us avoid too much branching. Merging branches can be painful.
 
 ## Dark launches
 
@@ -77,7 +77,7 @@ In A/B testing, we randomly show users two or more variations of a page. Then we
 
 ## Progressive-exposure deployment
 
-_Progressive-exposure deployment_ is sometimes called _ring-based deployment_. It's another way to limit how changes affect users while making sure that those changes are valid in a production environment.
+_Progressive-exposure deployment_ is sometimes called _ring-based deployment_. It's another way to limit how changes affect users while making sure those changes are valid in a production environment.
 
 Rings are basically an extension of the canary stage. The canary release, releases to a stage to measure effect. Adding another ring is essentially the same idea.
 
