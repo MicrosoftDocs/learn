@@ -102,7 +102,7 @@ HTTP/1.1 204 No Content
 
 ## Search for employees who have shared their LinkedIn profile and Xbox gamertag
 
-Suppose that another employee wants to discover company colleagues who have shared their Xbox and LinkedIn profiles. The app calls Microsoft Graph as follows.
+Suppose another employee wants to discover company colleagues who have shared their Xbox and LinkedIn profiles. The app calls Microsoft Graph as follows.
 
 ### Request
 
