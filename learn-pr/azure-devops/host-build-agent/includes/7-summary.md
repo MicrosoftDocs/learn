@@ -16,7 +16,7 @@ The Tailspin web team has finished their experiment with private build agents. L
 
 **Mara:** Good point, Tim. Because we set up that build configuration on a Git branch, those changes are isolated from the main sources. We can leave the build agent running a bit longer while you demo this to the other teams.
 
-**Tim:** Sounds good. Thanks for your help!. This was all relatively easy to set up. And now I know slightly more about how VMs work on Azure!
+**Tim:** Sounds good. Thanks for your help! This was all relatively easy to set up. And now I know a little bit more about how VMs work on Azure!
 
 ## How is the team measuring up?
 
@@ -66,9 +66,9 @@ The focus of this learning path is on building applications and receiving build 
 
 ## Continue the journey
 
-You and the team have made much progress, but the significant release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how to configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true).
+You and the team have made a lot of progress, but the big release is coming up. How will the team deploy their build artifacts to development, test, and staging environments so they can run further test and verify their work? If you want to work along with them and learn how to configure release pipelines that continuously build, test, and deploy your applications, go to [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true).
 
-For more self-paced, hands-on learning around Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
+For more self-paced, hands-on learning around Azure DevOps, check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).
 
 ## Learn more
 

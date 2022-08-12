@@ -31,7 +31,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Create Project**.
 
-    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator Create New Project screen, with the Create Project button highlighted.":::
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.":::
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.

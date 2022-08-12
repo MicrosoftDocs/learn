@@ -99,8 +99,7 @@ As a tradeoff, because the build infrastructure is yours, it's your responsibili
 
 A private build agent contains the software that's required to build your applications. It also contains agent software, which enables the system to connect to Azure Pipelines and receive build jobs.
 
-When you set up a private agent, you provide the infrastructure that the builds use to run on. This 
-gives you flexibility in how you bring up and maintain your agents.
+When you set up a private agent, you provide the infrastructure that the builds use to run on. This gives you flexibility in how you bring up and maintain your agents.
 
 For example, you can:
 
@@ -112,7 +111,7 @@ For example, you can:
 
 Manual configuration is a good way to get started, because it enables you to understand the process. It's also the fastest way to get set up when you need just one build agent.
 
-Automation is useful when you need many build agents or you need to bring up and tear down build infrastructure on a regular basis. You can move from a manual process to an automated process when you need multiple agents.
+Automation is useful when you need many build agents, or you need to bring up and tear down build infrastructure on a regular basis. You can move from a manual process to an automated process when you need multiple agents.
 
 Images are a form of automation. They can help save time because all the software is pre-configured. As a tradeoff, you might need to periodically rebuild your images to incorporate the latest OS patches and build tools. [Packer](https://www.packer.io?azure-portal=true) by HashiCorp is a popular tool for creating images.
 
@@ -122,7 +121,7 @@ Let's check back with the team.
 
 **Tim:** I think I understand some of the various approaches. I'd be interested in creating a private build agent that can build the _Space Game_ website so that I can demo it to the other teams. Would that be hard to set up?
 
-**Mara:** I think we can do it. We could use a VM from our lab or, better yet, we can use a VM that runs on Azure as our build agent. I'd bet we can set up some scripts to run to set up the VM. When we're done experimenting, we can tear down the VM so that we're no longer paying for it.
+**Mara:** I think we can do it. We could use a VM from our lab, or better yet, we can use a VM that runs on Azure as our build agent. I'd bet we can set up some scripts to run to set up the VM. When we're done experimenting, we can tear down the VM so that we're no longer paying for it.
 
 **Tim:** That sounds good. I can learn a little bit about running VMs on Azure in the process.
 
