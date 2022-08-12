@@ -6,7 +6,7 @@ The Tailspin team is starting to feel better about their build process. They hav
 
 The team is in the meeting room waiting for Irwin, the product manager, who says he wants to talk to them. They look forward to telling him about their progress. But when Irwin walks in, he doesn't look happy. He starts talking right away.
 
-**Irwin:** I had a meeting this morning with the management team. They want to know why we're taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed things up. I'm not alerting just you; I'm alerting all the teams. What can we do to help your team deploy faster?
+**Irwin:** I had a meeting this morning with the management team. They want to know why we're taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed up things. I'm not alerting just you; I'm alerting all the teams. What can we do to help your team deploy faster?
 
 Irwin looks around. Andy clears his throat.
 
@@ -38,7 +38,7 @@ Mara nods. Amita and Tim look unhappy.
 
 **Tim:** I don't really know what CD is, but if it means losing control of my production environment, I won't do it.
 
-**Amita:** If it means all the tests are automated, what am I supposed to do? It's not only about my job. I don't think we should sacrifice the user experience just to meet some arbitrary deadline.
+**Amita:** If it means all the tests are automated, what am I supposed to do? It's not only about my job. I don't think we should sacrifice the user experience to meet some arbitrary deadline.
 
 Amita starts crumbling her scone into little pieces.
 
@@ -50,7 +50,7 @@ Amita starts crumbling her scone into little pieces.
 
 **Mara:** To me, CD and DevOps are inseparable. Remember that we defined DevOps as the union of people, process, and products to enable continuous delivery of value to our end users.
 
-CD by itself is a set of processes, tools, and techniques that enable rapid, reliable, and continuous delivery of software. So CD isn't only about setting up a pipeline, although that part is important. CD is about setting up a working environment where:
+CD by itself is a set of processes, tools, and techniques that enable rapid, reliable, and continuous delivery of software. So CD isn't only about setting up a pipeline, although that part is important. CD is about setting up a working environment, where:
 
 * We have a reliable and repeatable process for releasing and deploying software.
 * We automate as much as possible.
@@ -69,7 +69,7 @@ CD helps software teams deliver reliable software updates to their customers at 
 
 Let's continue to listen in on the team as they talk this out.
 
-**Andy:** Thanks, Mara. We need CD because, as we all know, the world has changed. New features are being released faster. Updates and bug fixes need to be available right away. It isn't just our management that wants to speed up our releases. Management is simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
+**Andy:** Thanks Mara. We need CD because, as we all know, the world has changed. New features are being released faster. Updates and bug fixes need to be available right away. It isn't just our management that wants to speed up our releases. Management is simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
 
 The old way of doing things, where we all worked in our separate silos and didn't talk to each other, is too slow. And honestly, it's frustrating for all of us.
 
@@ -99,7 +99,7 @@ Many development tools provide ways to publish your application directly to some
 
 Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. But this technique has limitations.
 
-Continuous delivery provides a consistent way for you and your team to continuously test, deploy, and monitor your application each time you check in your code. When you right-click publish your application, there's no guarantee that the code was properly tested or will behave as expected under real-world usage.
+Continuous delivery provides a consistent way for you and your team to continuously test, deploy, and monitor your application each time you check in your code. When you right-click publish your application, there's no guarantee that the code was properly tested, or will behave as expected under real-world usage.
 
 In this short video, Abel Wang, Cloud Advocate at Microsoft, explains more.
 
@@ -124,7 +124,7 @@ After the meeting ends, Andy and Mara plan next steps. They use Azure Pipelines 
 **Andy:** First we need to agree on our release management tool. Let's make sure the tool we choose:
 
 * Supports our version control system.
-* Can deploy to multiple environments so we can test and validate our work.
+* Can deploy to multiple environments, so we can test and validate our work.
 * Makes it easy to define our deployment tasks.
 * Is easy to extend.
 

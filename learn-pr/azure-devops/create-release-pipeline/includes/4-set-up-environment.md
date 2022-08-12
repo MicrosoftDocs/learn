@@ -11,7 +11,7 @@ To do this, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
+Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, sign in to both your Azure subscription, and your Azure DevOps organization under the same Microsoft account.
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
@@ -258,7 +258,7 @@ Next, you'll manually trigger the pipeline to run. This step ensures that your p
 
 1. From the **Published artifacts** page, expand the **drop** folder.
 
-    You see a _.zip_ file that contains your built application and its dependencies. This is your build artifact.
+    You see a *_.zip_* file that contains your built application and its dependencies. This is your build artifact.
 
     :::image type="content" source="../../shared/media/pipeline-view-published-artifact.png" alt-text="Screenshot of Azure Pipelines showing the published artifact. The artifact includes a .zip file.":::
 

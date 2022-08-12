@@ -26,13 +26,13 @@ Andy draws a diagram on the whiteboard.
 
 **Andy:** We already have the :::image type="icon" source="../../shared/media/callout-01.png"::: build artifact. It's the _.zip_ file that our existing build pipeline creates. But how do we deploy it to a :::image type="icon" source="../../shared/media/callout-02.png"::: live environment?
 
-**Mara:** In the CD pipelines I worked with, we defined the deployment process in stages, such as building the artifact and deploying the artifact to the various testing and production environments. Each stage breaks down into one or more jobs. Each job breaks down into tasks, just like the ones we use in our existing build pipeline.
+**Mara:** In the CD pipelines that I worked with, we defined the deployment process in stages, such as building the artifact and deploying the artifact to the various testing and production environments. Each stage breaks down into one or more jobs. Each job breaks down into tasks, just like the ones we use in our existing build pipeline.
 
 ## What is a pipeline stage?
 
 A _stage_ is a part of the pipeline that can run independently and be triggered by different mechanisms. A mechanism might be the success of the previous stage, a schedule, or even a manual trigger. You'll learn more about these mechanisms in the next module.
 
-**Mara:** I think that deciding on our stages is a great start and pretty straightforward. Let's define a _stage_ as a major division in a pipeline. Every stage is independent of every other stage. We could have a stage that builds the app and another stage that runs tests. There are many possibilities. Because we want to keep it simple, how about we start with two stages?
+**Mara:** I think that deciding on our stages is a great start and straightforward. Let's define a _stage_ as a major division in a pipeline. Every stage is independent of every other stage. We could have a stage that builds the app and another stage that runs tests. There are many possibilities. Because we want to keep it simple, how about we start with two stages?
 
 Mara updates the diagram on the whiteboard.
 
@@ -53,17 +53,17 @@ Following this example, your production environment might be:
 * A managed service, such as Azure App Service.
 * A serverless environment, such as Azure Functions.
 
-An artifact is deployed to an environment. Azure Pipelines makes it easy to deploy to almost any kind of environment, whether it's on-premises or in the cloud.
+An artifact is deployed to an environment. Azure Pipelines makes it easy to deploy to almost any kind of environment, whether it's on-premises, or in the cloud.
 
 In Azure Pipelines, the term _environment_ has a second meaning. Here, an _environment_ is an abstract representation of your deployment environment, such as a Kubernetes cluster, an App Service instance, or a virtual machine.
 
 An Azure Pipelines environment records the deployment history to help you identify the source of changes. By using Azure Pipelines environments, you can also define security checks and ways to control how an artifact is promoted from one stage of a pipeline to another. What an environment includes depends on what you want to do with the artifact. An environment where you want to test the artifact will probably be defined differently than one where you want to deploy the artifact for your end users.
 
-One way to define an Azure Pipelines environment is with a YAML file. Your YAML file includes an `environment` section, which specifies the Azure Pipelines environment where you'll deploy your artifact.
+One way to define an Azure Pipelines environment is with a YAML file. Your YAML file includes an `environment` section, which specifies the Azure Pipelines environment, where you'll deploy your artifact.
 
 As you plan your release pipeline, you'll need to decide where your application or service will run. Let's listen in and see what Andy and Mara decide.
 
-**Andy:** At a high level, what type of environment do we want? Do we want to deploy on-premises or to the cloud?
+**Andy:** At a high level, what type of environment do we want? Do we want to deploy on-premises, or to the cloud?
 
 **Mara:** We could ask Tim to create a VM for us in the lab. But he's always running out of hardware. It'll be fast and easy to set up a POC ourselves if we use the cloud.
 
@@ -87,7 +87,7 @@ Andy lists these options on the whiteboard:
 
 **Andy:** I'm with you. That leaves VMs or App Service. I think VMs would be a better choice if we were moving a line-of-business app, one that requires full access to some particular environment, to the cloud. We're not doing anything that significant.
 
-**Mara:** That leaves App Service, which would be my choice. It's designed to work with Azure DevOps, and it comes with advantages. It's a platform-as-a-service (PaaS) environment for web apps, so it takes a lot of the burden off of us. We won't have to worry about infrastructure. It also comes with security features and lets us perform load balancing and automatic scaling.
+**Mara:** That leaves App Service, which would be my choice. It's designed to work with Azure DevOps, and it comes with advantages. It's a platform as a service (PaaS) environment for web apps, so it takes a lot of the burden off of us. We won't have to worry about infrastructure. It also comes with security features and lets us perform load balancing and automatic scaling.
 
 **Andy:** App Service sounds like what we need. Let's use App Service. We're creating just a proof of concept anyway. We can always change the compute option if we want to try something else later.
 
@@ -109,7 +109,7 @@ After a bit of research, Andy and Mara come up with the general steps that allow
 
 ### Download pipeline artifacts
 
-In the previous learning path, you published build artifacts to the pipeline. These artifacts were _.zip_ files that contained the _Space Game_ website as a build package. Amita manually downloaded this package and installed it in her test environment.
+In the previous learning path, you published build artifacts to the pipeline. These artifacts were _.*zip_* files that contained the _Space Game_ website as a build package. Amita manually downloaded this package and installed it in her test environment.
 
 To deploy a build artifact from the pipeline, you need a way to download it from the pipeline to the agent. You use the `DownloadPipelineArtifact@2` task to download artifacts.
 
@@ -172,7 +172,7 @@ A _job_ is a series of steps, or tasks, that run sequentially as a unit. Every p
 
 A job can run in an agent pool, on a container, or directly on the Azure DevOps server. The example job shown here runs on a Microsoft-hosted Ubuntu agent.
 
-You can specify the conditions under which each job runs. The example job shown here doesn't define any conditions. By default, a job runs if it doesn't depend on any other job or if all of the jobs that it does depend on have finished successfully.
+You can specify the conditions under which each job runs. The example job shown here doesn't define any conditions. By default, a job runs if it doesn't depend on any other job, or if all of the jobs that it does depend on have finished successfully.
 
 You can also run jobs in parallel or sequentially. Using your existing build pipeline as an example, you can use parallel jobs to build your software on Windows, Linux, and macOS agents simultaneously.
 
@@ -184,7 +184,7 @@ A _strategy_ defines how your application is rolled out. You'll learn more about
 
 ### How does Azure Pipelines connect to Azure?
 
-To deploy your app to an Azure resource, such as a virtual machine or App Service, you need a _service connection_. A service connection provides secure access to your Azure subscription by using one of two methods:
+To deploy your app to an Azure resource, such as a virtual machine or App Service, you need a _service connection_. A service connection provides secure access to your Azure subscription by using one of the two methods:
 
 * Service principal authentication
 * Managed identities for Azure resources
@@ -194,7 +194,7 @@ You can learn more about these security models at the end of this module, but in
 * A _service principal_ is an identity with a limited role that can access Azure resources. Think of a service principal as a service account that can do automated tasks on your behalf.
 * _Managed identities_ for Azure resources are a feature of Azure Active Directory (Azure AD). Managed identities simplify the process of working with service principals. Because managed identities exist on the Azure AD tenant, Azure infrastructure can automatically authenticate the service and manage the account for you.
 
-Managed identities simplify the process of working with service principals. But in this module you use service principal authentication because a service connection can automatically discover your Azure resources and assign the appropriate service principal roles for you.
+Managed identities simplify the process of working with service principals. But in this module you use service principal authentication, because a service connection can automatically discover your Azure resources and assign the appropriate service principal roles for you.
 
 ## The plan
 
