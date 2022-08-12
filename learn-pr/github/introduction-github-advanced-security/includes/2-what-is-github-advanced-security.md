@@ -97,11 +97,14 @@ You can monitor your code scanning workflow from the GitHub user interface.  Thi
 
 ### Secret scanning
 
-When applications communicate with external systems, they often need to authenticate to gain access. This authentication is performed using keys known as _secrets_. Since developers work with secrets during development, it is not uncommon for them to accidentally commit these sensitive pieces of data to repositories. However, these keys create a significant security risk if exposed. So, it is crucial that you remove secrets before you deploy your project. To prevent fraudulent use of secrets, GitHub scans your entire Git history on all branches present in your GitHub repository.
+When applications communicate with external systems, they often need to authenticate to gain access. This authentication is performed using keys known as _secrets_. Because developers work with secrets during development, it's not uncommon for them to accidentally commit these sensitive pieces of data to repositories. However, these keys create a significant security risk if exposed.
 
-Secret scanning also takes place on a very granular level. You can use a regular expression to define a pattern that the system should use to search for secrets. Here is an example of pattern definition using a regular expression:
+To prevent the exposure of secrets, GitHub lets you scan for keys and tokens in:
 
-`github_token_[a-zA-Z0-0]{15}`
+- existing code on all branches present in your GitHub repository
+- new code before it is pushed to your GitHub repository
+
+You can configure alerts for secret scanning to notify certain users if a secret has been found. Users can then take the appropriate actions, such as removing the key from the code and performing additional remediation activities. Or, in some cases, the users may choose to ignore the alert, for example, if the scan identified a false positive.
 
 ### Features behind the scenes
 
