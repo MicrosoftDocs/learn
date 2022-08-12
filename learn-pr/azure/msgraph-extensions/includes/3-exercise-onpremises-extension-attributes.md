@@ -79,9 +79,9 @@ PATCH https://graph.microsoft.com/v1.0/users/6e03a2db-564a-47ec-ba51-d0cd38af069
 HTTP/1.1 204 No Content
 ```
 
-## Search for employees who've shared their LinkedIn profile and Xbox gamertag
+## Search for employees who have shared their LinkedIn profile and Xbox gamertag
 
-Suppose another employee wants to discover colleagues who have shared their Xbox and LinkedIn profiles. The app calls Microsoft Graph, as shown in the next sections.
+Suppose that another employee wants to discover colleagues who have shared their Xbox and LinkedIn profiles. The app calls Microsoft Graph, as shown in the next sections.
 
 ### Request
 
