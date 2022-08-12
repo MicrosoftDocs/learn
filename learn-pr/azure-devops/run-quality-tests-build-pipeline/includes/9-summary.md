@@ -6,7 +6,7 @@ Remember, the process you followed was specific to .NET applications. The tools 
 
 Let's check in with the team one last time. They're having their weekly team meeting, and Mara wants to show everyone the latest updates.
 
-**Tim:** I'm glad to see you're making good progress stabilizing our builds. But that sure looks like a lot of code!
+**Tim:** I'm glad to see you're making good progress in stabilizing our builds. But that sure looks like a lot of code!
 
 **Andy:** Yes, it's a fair amount. But it's all things we do anyway. And now that parts are automated, we only need to define them one time. And because it's code, we have a common vocabulary for defining our build process and a consistent place to keep it all.
 
@@ -16,7 +16,7 @@ Let's check in with the team one last time. They're having their weekly team mee
 
 In this module, you used the `DotNetCoreCLI@2` task to run unit tests through the `dotnet test` command. If you use [Visual Studio](/visualstudio/test/getting-started-with-unit-testing?azure-portal=true) to run your tests, you can use the [Visual Studio Test task](/azure/devops/pipelines/tasks/test/vstest?azure-portal=true) in your build pipeline.
 
-If you're interested in unit testing .NET applications, here are some additional resources:
+If you're interested in unit testing .NET applications, here are some more resources:
 
 * [Unit test your code](/visualstudio/test/unit-test-your-code?azure-portal=true)
 * [Unit testing C# with NUnit and .NET Core](/dotnet/core/testing/unit-testing-with-nunit?azure-portal=true)
