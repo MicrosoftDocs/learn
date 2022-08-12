@@ -69,8 +69,6 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 
     ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
 
-1. When you're ready to stop, return to the terminal in Visual Studio code, and press <kbd>Ctrl+C</kbd> to stop the app.
-
 ::: zone-end
 
 ::: zone pivot="vstudio"
@@ -81,17 +79,17 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
 1. In Visual Studio 2022, select **File** > **New Project**.
 
-2. In the search box at the top of the "Create a new project" dialog, key in "Blazor Server" and select "Blazor Server App" and click "Next"
+1. In the search box at the top of the "Create a new project" dialog, key in "Blazor Server" and select "Blazor Server App" and click "Next"
 
 	![Screenshot of Visual Studio 2022 'Create New Project' screen and the Blazor Server template.](../media/visual-studio-2022-create-new-project.png)
 
-3. On the subsequent screen, name your project "BlazorApp" and specify a location on disk with settings like the following and then click 'Next':
+1. On the subsequent screen, name your project "BlazorApp" and specify a location on disk with settings like the following and then click 'Next':
 
    ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
-4. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and click 'Create'
+1. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and click 'Create'
 
-5. This command creates a basic Blazor server project with all required files and pages.
+1. This command creates a basic Blazor server project with all required files and pages.
 
 	You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to the following:
 
@@ -105,8 +103,8 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
     ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
 
-2. When you're ready to stop, return to Visual Studio 2022, and press <kbd>Shift+F5</kbd> to stop the app.
-
 ::: zone-end
+
+
 
 You'll use this Blazor app in the following exercises.
