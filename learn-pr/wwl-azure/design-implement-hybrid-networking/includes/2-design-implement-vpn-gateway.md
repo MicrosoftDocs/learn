@@ -114,7 +114,7 @@ The VPN gateway settings that you chose are critical to creating a successful co
 
 ### Gateway subnet
 
-VPN Gateways require a gateway subnet. You can create a Gateway subnet before you create a VPN gateway, or you can create it during the creation of the VPN Gateway. The gateway subnet contains the IP addresses that the virtual network gateway VMs and services use. When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required VPN gateway settings. Never deploy anything else (for example, additional VMs) to the gateway subnet. The gateway subnet must be named GatewaySubnet to work properly. Naming the gateway subnet GatewaySubnet tells Azure know that this is the subnet to deploy the virtual network gateway VMs and services to.
+VPN Gateways require a gateway subnet. You can create a Gateway subnet before you create a VPN gateway, or you can create it during the creation of the VPN Gateway. The gateway subnet contains the IP addresses that the virtual network gateway VMs and services use. When you create your virtual network gateway, gateway VMs are deployed to the gateway subnet and configured with the required VPN gateway settings. Never deploy anything else (for example, additional VMs) to the gateway subnet. The gateway subnet must be named GatewaySubnet to work properly. Naming the gateway subnet GatewaySubnet tells Azure that this is the subnet to deploy the virtual network gateway VMs and services to.
 
 When you create the gateway subnet, you specify the number of IP addresses that the subnet contains. The IP addresses in the gateway subnet are allocated to the gateway VMs and gateway services. Some configurations require more IP addresses than others.
 
