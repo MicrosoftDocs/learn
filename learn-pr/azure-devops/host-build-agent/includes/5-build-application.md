@@ -66,10 +66,8 @@ Watch the build run in the pipeline by using your build agent.
 
 1. In Azure DevOps, go to the **Space Game - web - Agent** project.
 1. On the project page or in the left pane, select **Pipelines**.
-1. From the dropdown menu, select **run pipeline**.
-1. Select your build-agent under **Branch/tag**.
-1. Select **Run**, and then select **job**.
-1. In the **Job** screen, trace the build through each of the steps.
+1. Select your pipeline from **Recently run pipelines**, and choose the most recent run (that was started when you updated the pipeline to use the **MyAgentPool** pool).
+1. Choose **Job** and trace the run through each of the steps.
 
    From the **Initialize job** task, you see that the build uses your build agent.
 
