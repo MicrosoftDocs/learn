@@ -4,9 +4,9 @@ In this exercise, you use client app [Graph Explorer](https://aka.ms/ge) to make
 
 1. Sign in to Graph Explorer by using a work or school account that has global administrator privileges in the tenant.
 
-1. To perform the API operations in this exercise, consent to the Microsoft Graph **User.ReadWrite.All** and **Group.ReadWrite.All** permissions.
+1. To perform the API operations in this exercise, consent to the Microsoft Graph *User.ReadWrite.All* and *Group.ReadWrite.All* permissions.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the Microsoft Graph **User.Read.All** and **User.ReadWrite** permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the Microsoft Graph *User.Read.All* and *User.ReadWrite* permissions. Granting this consent will allow them to discover their colleagues and update their own profile information.
 
 ## Define the extension attributes
 
