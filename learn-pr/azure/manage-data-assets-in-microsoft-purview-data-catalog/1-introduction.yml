@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Introduction to the Microsoft Purview Data Catalog. We will cover a proof of concept scenario where users have already deployed Microsoft Purview, scanned a source, and are ready to use the Microsoft Purview Data Catalog to manage data assets and create a business glossary."
   ms.date: 8/5/2022
   author: whhender
   ms.author: whhender
