@@ -120,7 +120,7 @@ The main tasks for this are as follows:
     > [!div class="mx-imgBorder"]
     > ![Using the Aggregate Transformation to a Mapping Data Flow in Azure Data Factory](../media/use-aggregate-transformation.png)
 
-    In the Aggregates tab, you can aggregations calculated over the specified group by columns. For every genre and year, lets get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function) and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
+    In the Aggregates tab, you can see aggregations calculated over the specified group by columns. For every genre and year, lets get the average Rotten Tomatoes rating, the highest and lowest rated movie (utilizing the windowing function) and the number of movies that are in each group. Aggregation significantly reduces the number of rows in your transformation stream and only propagates the group by and aggregate columns specified in the transformation.
 
     > [!div class="mx-imgBorder"]
     > ![Configuring the Aggregate Transformation to a Mapping Data Flow in Azure Data Factory](../media/configure-aggregate-transformation.png)
