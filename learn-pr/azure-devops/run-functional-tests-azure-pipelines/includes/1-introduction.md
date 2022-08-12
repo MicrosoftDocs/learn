@@ -1,6 +1,6 @@
 In this module, you'll add functional tests to the pipeline. These tests verify an application's behavior.
 
-In the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module, you helped the Tailspin Toys web team design and build a multistage release pipeline. The team uses the pipeline to move changes through a series of stages. Changes move through the _Dev_ stage, the _Test_ stage, and finally the _Staging_ stage, which resembles a production environment.
+In the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module, you helped the Tailspin Toys web team design and build a multistage release pipeline. The team uses the pipeline to move changes through a series of stages. Changes move through the _Dev_ stage, the _Test_ stage, and finally, the _Staging_ stage, which resembles a production environment.
 
 The stages that you and the team defined provide the overall shape of the pipeline. But you can add more to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_. In _Staging_, management reviews the new features and decides whether to make the release publicly available.
 
@@ -12,7 +12,7 @@ After completing this module, you'll be able to:
 
 - Define the role of functional tests and identify some popular kinds of tests you can run
 - Map manual testing steps to automated test cases
-- Run automated UI tests locally and in the pipeline by using Selenium
+- Run automated UI tests locally and in the pipeline using Selenium
 
 ## Prerequisites
 

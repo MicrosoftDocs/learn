@@ -4,9 +4,10 @@ title: Exercise - Run the UI tests locally and in the pipeline
 metadata:
   title: Exercise - Run the UI tests locally and in the pipeline
   description: Run the Selenium UI tests locally and then in the pipeline.
-  ms.date: 06/23/2021
+  ms.date: 08/04/2022
   author: steved0x
   ms.author: sdanie
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 13
