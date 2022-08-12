@@ -10,7 +10,7 @@ Sign in to Graph Explorer by using a work or school account that has global admi
 
 To perform the API operations in this exercise, consent to the *User.ReadWrite.All* and *Application.ReadWrite.All* Microsoft Graph permissions.
 
-In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite.All* Microsoft Graph permissions. By granting this consent, they can discover their colleagues and update their own profile information.
+In the team-bonding app, employees will sign in with their Azure AD profile and must consent to the *User.Read.All* and *User.ReadWrite.All* Microsoft Graph permissions. By granting this consent, the employees can discover their colleagues and update their own profile information.
 
 ## Create schema extension definitions
 
@@ -79,7 +79,7 @@ Content-type: application/json
 
 ## Store user data
 
-In this step, you store the LinkedIn profile URL, Skype ID, and Xbox *gamertag* in the three new properties of the `contoso_teamBondingApp` extension for user "Adele Vance," who's identified by ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`.
+In this step, you store the LinkedIn profile URL, Skype ID, and Xbox *gamertag* in the three new properties of the *contoso_teamBondingApp* extension for user "Adele Vance," who's identified by ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`.
 
 ### Request
 ```http
@@ -141,7 +141,7 @@ Content-type: application/json
 
 Suppose that Adele has crossed the 1,000,000 *gamerscore* mark and, to show off the milestone, she has changed her Xbox gamertag from `AwesomeAdele` to `AtalantaAdele`. Adele wants to change her gamertag in the app profile so that her colleagues can discover it.
 
-Adele also no longer uses the Skype app, and she now uses Teams instead. The app calls Microsoft Graph to set the value of **skypeId** to `null`.
+Adele also no longer uses the Skype app, and she now uses Teams instead. The app calls Microsoft Graph to set the value of the **skypeId** property to `null`.
 
 ### Request
 
