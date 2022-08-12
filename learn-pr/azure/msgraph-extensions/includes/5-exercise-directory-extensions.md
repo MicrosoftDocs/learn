@@ -83,7 +83,7 @@ Running the preceding request two more times with different names will give you 
 
 ## Store user data
 
-Consider a user named "Adele Vance," who's identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you store Adele Vance's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new directory extension properties that you created.
+Consider a user named "Adele Vance," who's identified by the user ID `6e03a2db-564a-47ec-ba51-d0cd38af069a`. In this step, you store Adele's LinkedIn profile URL, Skype ID, and Xbox gamertag on the three new directory extension properties that you created.
 
 ### Request
 
