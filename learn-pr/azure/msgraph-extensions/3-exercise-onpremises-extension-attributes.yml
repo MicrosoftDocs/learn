@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.msgraph-extensions.exercise-onpremises-extension-attributes
-title: Exercise - Add custom data to users using extension attributes
+title: Exercise - Add custom data by using extension attributes
 metadata:
   unitType: exercise
-  title: Exercise - Add custom data using extension attributes
-  description: "Add custom data to users using Microsoft Graph extension attributes."
+  title: Exercise - Add custom data by using extension attributes
+  description: "Add custom data to a user profile by using Microsoft Graph extension attributes."
   ms.date: 04/08/2022
   author: FaithOmbongi
   ms.author: ombongifaith
