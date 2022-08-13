@@ -29,11 +29,11 @@ products:
 subjects:
 - architecture
 units:
-- learn.azure-well-architected-introduction.1-introduction
-- learn.azure-well-architected-introduction.2-prepare
-- learn.azure-well-architected-introduction.3-exercise-1
-- learn.azure-well-architected-introduction.4-exercise-2
-- learn.azure-well-architected-introduction.5-knowledge-check
-- learn.azure-well-architected-introduction.6-summary
+- learn.azure-well-architected-mission-critical.1-introduction
+- learn.azure-well-architected-mission-critical.2-prepare
+- learn.azure-well-architected-mission-critical.3-exercise-1
+- learn.azure-well-architected-mission-critical.4-exercise-2
+- learn.azure-well-architected-mission-critical.5-knowledge-check
+- learn.azure-well-architected-mission-critical.6-summary
 badge:
-  uid: learn.azure-well-architected-introduction.badge
+  uid: learn.azure-well-architected-mission-critical.badge
