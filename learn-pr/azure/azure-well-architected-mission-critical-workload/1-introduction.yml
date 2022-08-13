@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-introduction.1-introduction
+uid: learn.azure-well-architected-mission-critical.1-introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Introduction
   ms.date: 05/19/2020
-  author: robbyatmicrosoft
-  ms.author: robbymillsap
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

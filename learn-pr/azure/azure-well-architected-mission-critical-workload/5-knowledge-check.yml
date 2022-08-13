@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-introduction.5-performance-efficiency
+uid: learn.azure-well-architected-mission-critical.5-knowledge-check
 title: Performance efficiency
 metadata:
   title: Performance efficiency
   description: Performance efficiency
   ms.date: 05/19/2020
-  author: robbyatmicrosoft
-  ms.author: robbymillsap
+  author: PageWriter-MSFT
+  ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
