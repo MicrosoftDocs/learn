@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure-well-architected-introduction
+metadata:
+  title: Challenge Project - Design a mission-critical workload with network controls
+  description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
+  ms.date: 04/22/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge Project - Build a booking requests app with Power Apps and Power Automate
+summary: You want to design a highly reliable, available, and resilient workload that uses Azure capabilities to apply tighter network security controls. The architecture is for an example workload for a fictious company. You'll be given the high-level specifications, design principles, example solutions to complete the project.
+abstract: |
+  In this module, you'll demostrate your ability to:
+   - Define key strategies for restricting network access
+   - Identify Azure networking services needed for multi-region deployment
+   - Define a network layout for the workload with network controls in place
+prerequisites: |
+  - Experience designing a workload that includes core infrastructure technology such as data storage, compute, and networking
+  - Experience designing a workload that's deployed to multiple regions
+  - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework
+iconUrl: /learn/achievements/azure-well-architected-introduction.svg
+levels:
+- advanced
+roles:
+- solution-architect
+products:
+- azure
+subjects:
+- architecture
+units:
+- learn.azure-well-architected-introduction.1-introduction
+- learn.azure-well-architected-introduction.2-prepare
+- learn.azure-well-architected-introduction.3-exercise-1
+- learn.azure-well-architected-introduction.4-exercise-2
+- learn.azure-well-architected-introduction.5-knowledge-check
+- learn.azure-well-architected-introduction.6-summary
+badge:
+  uid: learn.azure-well-architected-introduction.badge
