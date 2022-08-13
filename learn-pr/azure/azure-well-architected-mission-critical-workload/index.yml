@@ -3,18 +3,21 @@ uid: learn.azure-well-architected-mission-critical
 metadata:
   title: Challenge Project - Design a mission-critical workload with network controls
   description: Learn how using key principles in your architecture can help you design a highly-reliable workload that strives for maximize reliability and operational effectiveness.
-  ms.date: 04/22/2022
+  ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Challenge Project - Build a booking requests app with Power Apps and Power Automate
-summary: You want to design a highly reliable, available, and resilient workload that uses Azure capabilities to apply tighter network security controls. The architecture is for an example workload for a fictious company. You'll be given the high-level specifications, design principles, example solutions to complete the project.
+title: Challenge Project - Design a mission-critical workload
+summary: |
+  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities to apply tighter network security controls. The architecture is for an example workload for a fictious company. You'll be given the high-level specifications, design principles, example solutions to complete the project.
+  > [!NOTE]
+  > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions.
 abstract: |
   In this module, you'll demostrate your ability to:
-   - Define key strategies for restricting network access
-   - Identify Azure networking services needed for multi-region deployment
-   - Define a network layout for the workload with network controls in place
+   - Define key strategies for multi-region deployment
+   - Identify Azure services needed for targeting an Service Level Objectives (SLO) of 99.99%
+   - Design the architecture of the workload
 prerequisites: |
   - Experience designing a workload that includes core infrastructure technology such as data storage, compute, and networking
   - Experience designing a workload that's deployed to multiple regions
