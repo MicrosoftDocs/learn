@@ -2,7 +2,7 @@
 uid: learn.azure-well-architected-mission-critical
 metadata:
   title: Challenge Project - Design a mission-critical workload with network controls
-  description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
+  description: Learn how using key principles in your architecture can help you design a highly-reliable workload that strives for maximize reliability and operational effectiveness.
   ms.date: 04/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk

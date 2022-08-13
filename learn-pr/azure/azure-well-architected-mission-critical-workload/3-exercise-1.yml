@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-cost-optimization.md)]
+  [!include[](includes/3-exercise-1.md)]
 quiz:
   title: Check your knowledge
   questions:
