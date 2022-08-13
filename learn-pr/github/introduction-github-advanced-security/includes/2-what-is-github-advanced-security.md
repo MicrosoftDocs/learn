@@ -95,16 +95,15 @@ You can monitor your code scanning workflow from the GitHub user interface.  Thi
 - examples that model the corrected code
 - references to consult
 
-### Secret scanning
+### Secret scanning and push protection
 
-When applications communicate with external systems, they often need to authenticate to gain access. This authentication is performed using keys known as _secrets_. Because developers work with secrets during development, it's not uncommon for them to accidentally commit these sensitive pieces of data to repositories. However, these keys create a significant security risk if exposed.
+When applications communicate with external systems, they often need to authenticate to gain access. This authentication is performed using keys known as _secrets_. Because developers work with secrets as they build code, it's not uncommon for them to accidentally commit these sensitive pieces of data to repositories. However, these keys create significant security risks if exposed. GitHub Advanced Security offers two capabilities to prevent the exposure of secrets: secret scanning and push protection.
 
-To prevent the exposure of secrets, GitHub lets you scan for keys and tokens in:
+When you enable _secret scanning_, GitHub searches existing code on all branches present in your GitHub repository for keys. You can configure alerts to notify certain users if a secret has been found. Users can then take the appropriate remediation actions. For example, they can remove the key from the code and revoke and reissue the key that was compromised. Or, in some cases, the users may choose to ignore the alert, for example, if the scan identified a false positive.
 
-- existing code on all branches present in your GitHub repository
-- new code before it is pushed to your GitHub repository
+For an additional layer of security, you can enable the _push protection_ option of secret scanning. Push protection lets you find and remove secrets proactively before code is even added to your GitHub repositories. So, instead of having to clean up leaked secrets, you can prevent secrets from being exposed in your repository in the first place. 
 
-You can configure alerts for secret scanning to notify certain users if a secret has been found. Users can then take the appropriate actions, such as removing the key from the code and performing additional remediation activities. Or, in some cases, the users may choose to ignore the alert, for example, if the scan identified a false positive.
+Push protection integrates seamlessly with the command line or web UI tools your developers use. When a developer issues a 'git push' command, GitHub scans the code to be added to your repository for secrets. If the code contains a secret, GitHub blocks the code from being committed to the repository and prompts the developer to take action before the code can be added. The developer can remove the secret, identify the detected secret as a false positive or a test key, or bypass the alert. As an additional security measure, administrators can configure GitHub push protection to send alert notifications if a developer bypasses a block.
 
 ### Features behind the scenes
 
