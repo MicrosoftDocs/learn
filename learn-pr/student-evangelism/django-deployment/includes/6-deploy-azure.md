@@ -16,7 +16,7 @@ Start by installing the Azure App Service extension in Visual Studio Code.
 
 1. Under **Azure App Service**, select **Install**.
 
-If you already have the [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice), make sure it's updated to the latest version. See the last updated date on the extension page.
+If you already have the [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice), make sure it's updated to the latest version. See the last updated date on the extension page. If you are working with the latest version you should see a **RESOURCES** node with an **App Services** node.
 
 ## Deploy the application
 
