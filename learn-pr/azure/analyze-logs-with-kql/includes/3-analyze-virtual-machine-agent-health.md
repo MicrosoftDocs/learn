@@ -54,9 +54,19 @@ Scenario 1A: Identify machines that haven't sent a heartbeat in the past five mi
     
 Note: We use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating these logs can help in analyzing the reason the machined stopped sending data.
 
+AgentType can be Azure Monitor 
+
+Direct Agent is Log Analytics Agent
+
+Active in last 48 hours, inactive in the last 5 minutes.
+Machines write to heartbeat table each minute.
+
+
+
+
 ```kusto
-Heartbeat
-| where TimeGenerated >ago(48h)
+Heartbeat // The table we’re analyzing
+| where TimeGenerated >ago(48h) // Time range for the query
 | summarize max(TimeGenerated) by Computer,AgentType=Category, OSType
 | where max_TimeGenerated < ago(5m)
 | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)
@@ -75,8 +85,8 @@ List computers that sent a heartbeat in the past 10 minutes by their agent versi
 
 ```kusto    
 Heartbeat 
-| where TimeGenerated>ago(10m)
-| project-rename AgentType=Category
+| where TimeGenerated>ago(10m) // The table we’re analyzing
+| project-rename AgentType=Category // Time range for the query
 | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)
 | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType)
 | summarize ComputersList=make_set(Computer) by Version, OSType,AgentType
