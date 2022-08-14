@@ -8,7 +8,7 @@
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
+You want to gain an understanding of the active machines in your environment at a given time and identify machines with potential problems.
 TODO: add your scenario image
 
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
@@ -21,7 +21,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+Here, you'll run KQL queries to retrieve and transform data from the `heartbeat` table, providing clear insights into the status of machines in your environment.  
 
 <!-- 3. Chunked steps -------------------------------------------------------------------------------------
 
@@ -43,14 +43,37 @@ TODO: describe the end-state
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
+## Define which information you need for your analysis and examine your log data
 
-## Identify recently active machines
+
+
+
+## Identify recently active machines that have stopped logging data
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-Scenario 1A: Identify machines that haven't sent a heartbeat in the past five minutes but did send one the past 48 hours (in other words, recently active machines).
+Virtual machine agents monitor activities and operating system processes inside of a virtual machine. Azure Monitor Agent is the agent Azure Monitor uses to monitor virtual machines, but some of the machines in your environment use Log Analytics Agent, which is a legacy agent that Azure Monitor is deprecating.
+
+Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute. To identify potential problems with your virtual machines, you want to identify agents that have been active in the past 48 hours, but have not logged data in the last five minutesat the expected interval. 
+
+1. Identify machines that haven't sent a heartbeat in the past five minutes but did send one the past 48 hours (in other words, recently active machines).
+
+```kusto
+Heartbeat // The table we’re analyzing
+| where TimeGenerated >ago(48h) // Time range for the query
+| summarize max(TimeGenerated) by Computer,AgentType=Category, OSType
+| where max_TimeGenerated < ago(5m)
+| extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)
+| extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType)
+| order by max_TimeGenerated asc
+| project-reorder max_TimeGenerated,Computer,AgentType,OSType
+```
+
+
+
+Scenario 1A: 
     
 Note: We use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating these logs can help in analyzing the reason the machined stopped sending data.
 
