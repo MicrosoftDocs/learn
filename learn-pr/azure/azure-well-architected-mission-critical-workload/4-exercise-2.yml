@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-mission-critical.4-exercise-2
-title: Operational excellence
+title: Exercise - Define your scale units
 metadata:
-  title: Operational excellence
-  description: Operational excellence
-  ms.date: 05/19/2020
+  unitType: exercise
+  title: Exercise - Define your scale units
+  description: TBD
+  ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-2.md)]
 quiz:

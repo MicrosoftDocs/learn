@@ -1,10 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-mission-critical.5-knowledge-check
-title: Performance efficiency
+title: Knowledge check
 metadata:
-  title: Performance efficiency
-  description: Performance efficiency
-  ms.date: 05/19/2020
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Check your knowledge on the design principles applied to your architecture."
+  ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: interactive-tutorial

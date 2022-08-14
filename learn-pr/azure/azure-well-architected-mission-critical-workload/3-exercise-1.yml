@@ -1,15 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-mission-critical.3-exercise-1
-title: Cost optimization
+title: Exercise - Design a multi-region architecture in active-active model
 metadata:
-  title: Cost optimization
-  description: Learn about how you can design your cloud architecture to optimize for cost.
-  ms.date: 05/19/2020
+  unitType: exercise
+  title: Exercise - Design a multi-region architecture in active-active model
+  description: TBD
+  ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-1.md)]
 quiz:

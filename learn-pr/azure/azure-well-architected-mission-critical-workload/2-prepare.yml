@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-mission-critical.2-prepare
-title: Azure Well-Architected Framework pillars
+title: Prepare
 metadata:
-  title: Azure Well-Architected Framework pillars
-  description: Learn about the five pillars in the Azure Well-Architected Framework.
-  ms.date: 05/19/2020
+  title: Prepare - Define the key strategies
+  description: Project specification and setup requirements.
+  ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 1
 content: |
   [!include[](includes/2-prepare.md)]
