@@ -11,8 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
-content: |
-  [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
