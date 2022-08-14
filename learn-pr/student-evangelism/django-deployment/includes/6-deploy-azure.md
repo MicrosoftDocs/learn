@@ -16,7 +16,7 @@ Start by installing the Azure App Service extension in Visual Studio Code.
 
 1. Under **Azure App Service**, select **Install**.
 
-If you already have the [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice), make sure it is updated to the latest version. See the last updated date on the extension page.
+If you already have the [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice), make sure it's updated to the latest version. See the last updated date on the extension page.
 
 ## Deploy the application
 
@@ -189,7 +189,7 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
 
     ![Screenshot of the menu for SSH.](../media/ssh.png)
 
-    An SSH connection will be made to your web server in Azure. This process might take a few minutes. A terminal pane appears in Visual Studio Code. This terminal is the SSH connection to your web server. If you have trouble connecting see the troubleshooting steps following these steps.
+    An SSH connection will be made to your web server in Azure. This process might take a few minutes. A terminal pane appears in Visual Studio Code. This terminal is the SSH connection to your web server. If you have trouble connecting, see the troubleshooting steps following these steps.
 
     > [!IMPORTANT]
     > If you receive an error message stating you need to enable SSL for the database, ensure you created all environmental variables correctly.
@@ -216,11 +216,11 @@ Your database is now configured in Azure, and you have a superuser for your site
 
 ### Troubleshooting SSH
 
-If you could not connect to SSH from VS Code, here are some steps you can try:
+If you couldn't connect to SSH from VS Code, here are some steps you can try:
 
 * Go to the Azure portal page for the App Service and access SSH there. In VS Code, right-click the name of the App Service and select **Open in Portal**. On the portal page for the App Service, go to the **SSH** resources in the left resource pane.
 
-* Check that App Service started correctly. It there was a deployment error or coding issue, the App Service may not have started and you can't SSH into it. On the portal page for the App Service, go to the **Diagnose and solve problems** in the left resource pane.
+* Check that App Service started correctly. If there was a deployment error or coding issue, the App Service may not have started, and you can't SSH into it. On the portal page for the App Service, go to the **Diagnose and solve problems** in the left resource pane.
 
 * Read about [SSH in App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session).
 
