@@ -27,16 +27,16 @@ The following diagram shows how Application Insights instrumentation in an app s
 :::image type="content" source="../media/application-insights-spring-boot-b571e0f1.png" alt-text="Diagram showing how Application Insights instrumentation in an app sends telemetry.":::
 
 
-Spring Cloud Service uses an in-process Java Agent for Application Insights. When you initially created your service, an Application Insights resource was created for you by default.
+Spring Apps Service uses an in-process Java Agent for Application Insights. When you initially created your service, an Application Insights resource was created for you by default.
 
-You'll need to check whether an Application Insights instance is linked to your Spring Cloud Service. If the instance isn't linked, then relink Application Insights.
+You'll need to check whether an Application Insights instance is linked to your Spring Apps Service. If the instance isn't linked, then relink Application Insights.
 
-1.  Use the following command to determine whether Application Insights is linked to your Spring Cloud Service.
+1.  Use the following command to determine whether Application Insights is linked to your Spring Apps Service.
     
     ```azurecli
-    az spring-cloud app-insights show \
+    az spring app-insights show \
         -g $RESOURCE_GROUP \
-        -n $SPRING_CLOUD_SERVICE
+        -n $SPRING_APPS_SERVICE
     ```
     
     You should see output similar to what's displayed below:
@@ -44,7 +44,7 @@ You'll need to check whether an Application Insights instance is linked to your 
     ```
     {
     "appInsightsAgentVersions": {
-    "java": "3.2.8"
+    "java": "3.2.11"
     },
     "appInsightsInstrumentationKey": "InstrumentationKey=xxx-xxx-xxx;IngestionEndpoint=https://westus-0.in.applicationinsights.azure.com/;LiveEndpoint=https://westus.livediagnostics.monitor.azure.com/",
     "appInsightsSamplingRate": 10.0,
@@ -67,12 +67,12 @@ You'll need to check whether an Application Insights instance is linked to your 
     -o tsv)
     ```
 
-3.  You can use the instrumentation key to reconfigure Application Insights for your Spring Cloud Service.
+3.  You can use the instrumentation key to reconfigure Application Insights for your Spring Apps Service.
     
     ```azurecli
-    az spring-cloud app-insights update \
+    az spring app-insights update \
     -g $RESOURCE_GROUP \
-    -n $SPRING_CLOUD_SERVICE \
+    -n $SPRING_APPS_SERVICE \
         --sampling-rate 50 \
         --app-insights-key $INSTRUMENTATIONKEY
     ```
@@ -80,7 +80,7 @@ You'll need to check whether an Application Insights instance is linked to your 
 4.  You can reissue a *show* for your Application Insights config of the proper output.
     
     ```azurecli
-    az spring-cloud app-insights show \
+    az spring app-insights show \
     -g $RESOURCE_GROUP \
     -n $SPRING_CLOUD_SERVICE
     ```

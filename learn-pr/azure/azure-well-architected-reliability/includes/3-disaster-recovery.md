@@ -20,7 +20,7 @@ The first step in creating a disaster recovery plan is performing a risk analysi
 
 The risk assessment needs to consider *every* process that can't afford unlimited downtime, and every category of data that can't afford unlimited loss. When a disaster that affects multiple application components occurs, it's critical that the plan owners can use the plan to take a complete inventory of what needs attention and how to prioritize each item.
 
-Some apps may only consist of a single process or classification of data. This is still important to note, as the application will likely be one component of a larger disaster recovery plan that includes multiple applications with the organization.
+Some apps may only consist of a single process or classification of data. This is still important to note, as the application will likely be one component of a larger disaster recovery plan that includes multiple applications within the organization.
 
 ### Recovery objectives
 

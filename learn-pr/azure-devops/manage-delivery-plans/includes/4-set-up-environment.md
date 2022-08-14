@@ -7,7 +7,7 @@ To meet these objectives, you:
 
 ## Get the Azure DevOps project
 
-Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
+Here you ensure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
 The modules in this learning path are part of a progression. You follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -23,7 +23,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, enter a project name, such as *Space Game - web - Delivery plans*. Then, select your Azure DevOps organization. Then 
 
-    :::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="Screenshot of creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Create Project**.
 

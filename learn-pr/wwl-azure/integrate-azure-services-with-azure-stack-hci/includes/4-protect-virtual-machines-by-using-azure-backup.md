@@ -40,9 +40,11 @@ As the next step in evaluating Azure Backup to eliminate inefficiencies, you dec
 
 :::image type="content" source="../media/wac-enable-backup-steps.png" alt-text="The screenshot depicts how Windows Admin Center automatically provisions all required Azure components, including the target Azure Recovery Services vault, and installs the MARS agent on the protected VMs. Windows Admin Center assigns a default backup schedule and retention period, gives you the option to back up system state and individual volumes, and prompts you to specify an encryption passphrase." border="false":::
 
-> [!NOTE]
-> Just like any functionality that involves Azure-based services, you first need to register Windows Admin Center in Azure. 
-
 Windows Admin Center also allows you to identify the backup status, trigger on-demand backups following the initial scheduled backup, track backup jobs, and view recovery points and recover data. To modify the backup configuration, including the backup scope, schedule, retention period, and encryption passphrase, you can use the Azure Backup application installed locally on protected servers or Azure PowerShell. The Azure Recovery Services vault interface in the Azure portal allows you to set up backup-related alert notifications and provides a single view for inventory of all protected servers.
 
 :::image type="content" source="../media/wac-backup-configured.png" alt-text="The screenshot depicts how you can use Windows Admin Center to review the backup status, trigger on-demand backups following the initial scheduled backup, track backup jobs, as well as view recovery points and recover data." border="false":::
+
+---
+
+
+---

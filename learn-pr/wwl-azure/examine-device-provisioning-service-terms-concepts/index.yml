@@ -3,7 +3,7 @@ uid: learn.wwl.examine-device-provisioning-service-terms-concepts
 metadata:
   title: Examine Device Provisioning Service terms and concepts
   description: "This module introduces you to features of the Device Provisioning Service, enrollment types, attestation mechanisms, and the stages within the provisioning lifecycle."
-  ms.date: 07/14/2022
+  ms.date: 07/18/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

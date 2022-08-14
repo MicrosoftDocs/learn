@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.wwl.connect-data-stores-use-powershell-providers
+metadata:
+  title: Connect with data stores using PowerShell providers
+  description: "This module covers PowerShell providers that connect Windows PowerShell to data stores. They offer an easier-to-understand and consistent interface for working with data stores."
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect with data stores using PowerShell providers
+summary: This module covers PowerShell providers that connect Windows PowerShell to data stores. They offer an easier-to-understand and consistent interface for working with data stores.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  *   Explain the purpose of PowerShell providers.
+  *   Compare different PowerShell provider capabilities.
+  *   Explain how to access PowerShell provider help files.
+  *   Explain how to review a list of providers and the help options for a specific provider.
+prerequisites: |
+  - Familiarity with Windows networking technologies and implementation.
+  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+  - Familiarity with Windows PowerShell pipeline.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.connect-data-stores-use-powershell-providers.introduction
+- learn.wwl.connect-data-stores-use-powershell-providers.define-windows-powershell-providers
+- learn.wwl.connect-data-stores-use-powershell-providers.review-built-providers-powershell
+- learn.wwl.connect-data-stores-use-powershell-providers.access-provider-help-powershell
+- learn.wwl.connect-data-stores-use-powershell-providers.knowledge-check
+- learn.wwl.connect-data-stores-use-powershell-providers.summary
+badge:
+  uid: learn.wwl.connect-data-stores-using-psproviders.badge
