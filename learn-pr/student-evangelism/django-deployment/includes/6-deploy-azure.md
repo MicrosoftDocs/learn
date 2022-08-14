@@ -18,21 +18,9 @@ Start by installing the Azure App Service extension in Visual Studio Code:
 
 The extension is installed.
 
-## Set deploy from starter folder
-
-1. Open the VS Code command palette with **F1** or the key combination **Ctrl** + **Shift** + **P**.
-
-1. Type "Preferences: Open Workspace Settings" and select it to open up settings.
-
-1. In the **Settings** search field, enter "@id:appService.deploySubpath appser".
-
-1. In the **App Service: Deploy Subpath** field enter "starter" to tell VS Code to deploy from this folder.
-
-     ![Screenshot showing the deploy subpath setting.](../media/app-service-set-subpath.png)
-
-Setting the subpath signals to App Service where the *manage.py* file is so that the Django app is correctly deployed. Setting the subpath isn't necessary for Django projects where the *manage.py* file is at the root of the project directory.
-
 ## Deploy the application
+
+When you followed the steps to clone the starter repository, you should have also changed directory to the *starter* folder before opening VS Code. The *starter* directory contains the *manage.py* file that signals to App Service that you're deploying a Django web app.
 
 1. In **Visual Studio Code**, on the toolbar, select the **Azure** icon.
 
@@ -72,7 +60,7 @@ Setting the subpath signals to App Service where the *manage.py* file is so that
 
 Your site will now deploy!
 
-## Create the database
+## Create the database server
 
 While your site is deploying, turn your attention to creating the database. You'll use PostgreSQL.
 
@@ -136,8 +124,36 @@ After the database is created, you need to create a firewall rule to allow your 
 
 It takes a few minutes to add the rule. Watch the VS Code notification window for status.
 
+## Create a database on the database server
 
-## Configure application settings
+Now that you've configured App Service and created the server, you can create the database in the Postgres Database Server.
+
+1. In the **RESOURCES** of the Azure Tools extension, expand the **PostgreSQL Servers (Flexible)** node and find the server you created.
+
+1. Right-click the name of your database server and select **Create Database**.
+
+    ![Screenshot showing the Create Database selection.](../media/create-database.png)
+
+1. Enter *shelters*.
+
+Your database will be created.
+
+## Allow access to the database server
+
+In this exercise, you also need the dog shelters web app hosted in Azure App Service to connect to the Azure Database for PostgreSQL Flexible Server. When an application within Azure tries to connect to your database server, the firewall verifies that Azure connections are allowed. Above you allowed connections from your local environment. Now, you must also allow connections from App Service.
+
+1. In the **RESOURCES** of the Azure Tools extension, expand the **PostgreSQL Servers (Flexible)** node and find the server you created.
+
+1. Right-click the name of your database server and select **Open in Portal**.
+
+1. Select the **Networking** resource of the Postgres Server.
+
+1. Select **Allow public access from any Azure service within Azure to this server** option in the portal from the Networking tab and select **Save**.
+
+    ![Screenshot showing the how to allow public access to database server.](../media/postgres-server-networking.png)
+
+
+## Configure application settings for the web app
 
 While your database server is being created, configure the App Service you set up earlier. App Service uses the application settings to configure environmental variables. Settings are a convenient way to store information you shouldn't put in your code, such as database connection strings.
 
@@ -163,20 +179,6 @@ While your database server is being created, configure the App Service you set u
 
 All the necessary environmental variables are now created on your app service.
 
-## Create the database
-
-Now that you've configured App Service and created the server, you can create the database in the Postgres Database Server.
-
-1. Under **Databases**, expand the sandbox subscription.
-
-1. Right-click the name of your database server and select **Create Database**.
-
-    ![Screenshot showing the Create Database selection.](../media/create-database.png)
-
-1. Enter *shelters*.
-
-Your database will be created.
-
 ## Create the schema and superuser
 
 The last step in the deployment is to set up the database. In local development, you run `python manage.py migrate` and `python manage.py createsuperuser` to create the database schema and superuser. On Azure, you'll do the same. 
@@ -198,7 +200,7 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
     # Change to the app folder
     cd $APP_PATH
     # Activate the venv
-    source /antenv/bin/activate
+    source antenv/bin/activate
     # Install requirements
     pip install -r requirements.txt
     # Run database migrations
