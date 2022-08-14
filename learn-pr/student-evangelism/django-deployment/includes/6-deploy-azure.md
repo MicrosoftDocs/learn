@@ -183,13 +183,13 @@ All the necessary environmental variables are now created on your app service.
 
 The last step in the deployment is to set up the database. In local development, you run `python manage.py migrate` and `python manage.py createsuperuser` to create the database schema and superuser. On Azure, you'll do the same. 
 
-You'll connect to the web server in Azure by using Secure Shell (SSH). You can make the connection in Visual Studio Code.
+You'll connect to the web server in Azure by using Secure Shell (SSH). You can make the connection in Visual Studio Code as shown below.
 
 1. In the **App Service** extension, right-click your app service and then select **SSH into Web App**.
 
     ![Screenshot of the menu for SSH.](../media/ssh.png)
 
-    An SSH connection will be made to your web server in Azure. This process might take a few minutes. A terminal pane appears in Visual Studio Code. This terminal is the SSH connection to your web server.
+    An SSH connection will be made to your web server in Azure. This process might take a few minutes. A terminal pane appears in Visual Studio Code. This terminal is the SSH connection to your web server. If you have trouble connecting see the troubleshooting steps following these steps.
 
     > [!IMPORTANT]
     > If you receive an error message stating you need to enable SSL for the database, ensure you created all environmental variables correctly.
@@ -197,12 +197,6 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
 1. Inside the SSH terminal pane, run the following commands to ensure the appropriate libraries are installed and to create the database.
 
     ```bash
-    # Change to the app folder
-    cd $APP_PATH
-    # Activate the venv
-    source antenv/bin/activate
-    # Install requirements
-    pip install -r requirements.txt
     # Run database migrations
     python manage.py makemigrations dog_shelters
     python manage.py migrate
@@ -219,6 +213,16 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
 1. After you create your superuser, run the command `exit` to close the connection.
 
 Your database is now configured in Azure, and you have a superuser for your site.
+
+### Troubleshooting SSH
+
+If you could not connect to SSH from VS Code, here are some steps you can try:
+
+* Go to the Azure portal page for the App Service and access SSH there. In VS Code, right-click the name of the App Service and select **Open in Portal**. On the portal page for the App Service, go to the **SSH** resources in the left resource pane.
+
+* Check that App Service started correctly. It there was a deployment error or coding issue, the App Service may not have started and you can't SSH into it. On the portal page for the App Service, go to the **Diagnose and solve problems** in the left resource pane.
+
+* Read about [SSH in App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session).
 
 ## Go to your site
 
