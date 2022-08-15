@@ -25,7 +25,7 @@ Mapping Data Flow follows an extract, load, transform (ELT) approach and works w
 - Azure Data Lake Storage Gen2 (JSON, Avro, Text, Parquet)
 - Azure Synapse Analytics
 - Azure SQL Database
-- Azure CosmosDB
+- Azure Cosmos DB
 
 Azure Data Factory has access to over 80 native connectors. To include data from those other sources in your data flow, use the Copy Activity to load that data into one of the supported staging areas.
 
