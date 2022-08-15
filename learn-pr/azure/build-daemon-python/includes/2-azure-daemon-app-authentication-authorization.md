@@ -12,7 +12,7 @@ Azure AD uses the OpenID Connect protocol to handle authentication. OpenID Conne
 
 _Authorization_ is the act of granting an authenticated party permission to do something. It specifies what data you're allowed to access and what you can do with that data.
 
-Azure AD uses the OAuth 2.0 protocol for handling authorization. OAuth 2.0 provide authorization flows for different application in Azure AD.
+Azure AD uses the OAuth 2.0 protocol for handling authorization. OAuth 2.0 provides authorization flows for different applications in Azure AD.
 
 ## Application registration
 

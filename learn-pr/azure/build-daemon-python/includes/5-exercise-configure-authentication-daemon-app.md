@@ -147,7 +147,7 @@ if not result:
     )
 print("Could not find a cached token, so fetching a new one.")
 if "access_token" in result:
-    # Get *this* application's application object from Microsoft Graph
+    # Get users from Microsoft Graph
     response = requests.get(
         f"https://graph.microsoft.com/v1.0/users",
         headers={"Authorization": f'Bearer {result["access_token"]}'},
