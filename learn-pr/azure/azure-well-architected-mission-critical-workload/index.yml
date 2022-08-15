@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Challenge Project - Design a mission-critical workload
 summary: |
-  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities to apply tighter network security controls. The architecture is for an example workload for a fictious company. You'll be given the high-level specifications, design principles, example solutions to complete the project.
+  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities. The architecture is for an example workload for a fictious company. You'll be given the high-level specifications, design principles, example solutions to complete the project.
   > [!NOTE]
   > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions.
 abstract: |
