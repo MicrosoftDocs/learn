@@ -1,3 +1,5 @@
+[!INCLUDE [BYO subscription explanation](../../../includes/azure-exercise-subscription-prerequisite.md)]
+
 Before you start to work on your toy company's website pipeline, you need to configure your environment. In this unit, you'll make sure that your Azure and Azure DevOps environments are set up to complete the rest of this module.
 
 To meet these objectives, you'll:
@@ -56,13 +58,15 @@ On the Azure DevOps Demo Generator site, do the following:
 
     :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the 'Clone in VS Code' button highlighted.":::
 
+1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select Open.
+
 1. Create a folder to use for the repository, and then select **Select Repository Location**.
 
 1. You're using this repository for the first time, so you might be prompted to sign in.
 
-    If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+   - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 

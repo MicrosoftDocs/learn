@@ -6,9 +6,9 @@ metadata:
   unitType: exercise
   title: Exercise - Use variable and output loops
   description: Learn how to use loops with variables and outputs.
-  ms.date: 05/09/2021
-  author: akasnik
-  ms.author: akasnik
+  ms.date: 07/25/2022
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

@@ -1,4 +1,4 @@
-You've been hired as a Senior Database Administrator to help ensure the security of the Azure SQL database environment. Your company is an online sporting goods retailer that stores customer data like phone numbers, addresses, and credit cards in Azure SQL database hosted on the cloud. What solution would you implement to prevent unauthorized data access by someone that is working to support this cloud hosted database?
+You've been hired as a Senior Database Administrator to help ensure the security of the Azure SQL Database environment. Your company is an online sporting goods retailer that stores customer data like phone numbers, addresses, and credit cards in Azure SQL Database hosted on the cloud. What solution would you implement to prevent unauthorized data access by someone that is working to support this cloud hosted database?
 
 Classifying stored data by sensitivity and business impact helps organizations determine the risks associated with the data. In this unit, we will learn the different data states and encryption modes in detail.
 
@@ -25,7 +25,7 @@ Data exists in one of three basic states - data-at-rest, data-in-motion, data-in
 | **DATA STATE**| **ENCRYPTION METHOD** |
 | - | - |
 | Data-at-rest| TDE, Always Encrypted |
-| Data-in-motion| SSL/TSL, Always Encrypted |
+| Data-in-motion| SSL/TLS, Always Encrypted |
 | Data-in-process| Dynamic data masking |
 
 
@@ -38,7 +38,7 @@ Data exists in one of three basic states - data-at-rest, data-in-motion, data-in
 
 Data encryption at rest is a mandatory step toward data privacy, compliance, and data sovereignty. Encryption helps mitigate risks related to unauthorized data access. Data-at-rest needs to be protected from unauthorized or offline access to raw files or backups to an unsecured server or making a copy of all the database and transaction log files to another unsecured server.
 
-**Transparent data encryption**
+**Transparent data encryption (TDE)**
 
 TDE protects Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics against the threat of malicious offline activity by encrypting data at rest. It performs real-time encryption and decryption of the database, associated backups, and transaction log files at rest without requiring changes to the application. TDE is enabled by default to all newly deployed Azure SQL Databases. With Azure SQL Managed Instance, databases created after February 2019 have TDE enabled.
 
@@ -94,7 +94,7 @@ Dynamic data masking is a policy-based security feature that hides the sensitive
 
 - It works by obfuscating the sensitive data in the result set of a query
 
-- Data masking policy can be set up in Azure portal only for Azure SQL DB
+- Data masking policy can be set up in Azure portal only for Azure SQL Database
 
 - Dynamic data masking can be set up using PowerShell cmdlets and REST API
 
@@ -152,6 +152,6 @@ Step by step process for Always Encrypted is explained below:
 > [!IMPORTANT]
 > Always Encrypted does not work with Dynamic Data Masking. It is not possible to encrypt and mask the same column. You need to prioritize protecting data in use vs. masking the data for your app users via Dynamic Data Masking.
 
-Consider this scenario - A customer has an on-premises client application at their business location. As part of their cloud migration of their database, they are evaluating Azure SQL database. They plan to outsource the database maintenance to third parties. They worry that the sensitive data shouldn't be accessed by the third party vendors or the cloud administrators. What will you suggest?
+Consider this scenario - A customer has an on-premises client application at their business location. As part of their cloud migration of their database, they are evaluating Azure SQL Database. They plan to outsource the database maintenance to third parties. They worry that the sensitive data shouldn't be accessed by the third party vendors or the cloud administrators. What will you suggest?
 
 **Always Encrypted for data-at-rest and data-in-transit** - Always Encrypted ensures the separation of duties between database administrators and application administrators. By storing the Always Encrypted keys in a trusted key store hosted on-premises, they can ensure Microsoft cloud administrators have no access to sensitive data. Always Encrypted enables customers to confidently store sensitive data outside of their direct control.

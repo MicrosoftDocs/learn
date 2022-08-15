@@ -2,7 +2,7 @@ Moving a company's shared files into the cloud-based [Azure Files](/azure/storag
 
 ### What are Azure Files?
 
-:::image type="content" source="../media/azure-files.png" alt-text="Account, share, directories, and files.":::
+:::image type="content" source="../media/azure-files.png" alt-text="Diagram with account, share, directories, and files.":::
 
  
 

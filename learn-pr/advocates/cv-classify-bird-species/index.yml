@@ -4,8 +4,8 @@ metadata:
   title: Classify endangered bird species with Custom Vision
   description: Learn how to use Azure Cognitive Services Custom Vision to build a machine learning model that identifies the species of a bird in an image, to help with gathering data.
   ms.date: 01/19/2021
-  author: PatrickFarley
-  ms.author: pafarley
+  author: cassiebreviu
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-multidimensional-schema-to-optimize-analytical-workloads.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "In which of the following table types should an insurance company store details of customer attributes by which claims will be aggregated?"
+    choices:
+    - content: "Staging table"
+      isCorrect: false
+      explanation: "Incorrect. Staging tables are used as temporary storage for data as it is loaded into the data warehouse."
+    - content: "Dimension table"
+      isCorrect: true
+      explanation: "Correct. Attributes of an entity by which numeric measures will be aggregated are stored in a dimension table."
+    - content: "Fact table"
+      isCorrect: false
+      explanation: "Incorrect. Fact tables are used to store numeric measures that can be aggregated."
+  - content: "You create a dimension table for product data, assigning a unique numeric key for each row in a column named `ProductKey`. The `ProductKey` is only defined in the data warehouse. What kind of key is `ProductKey`?"
+    choices:
+    - content: "A surrogate key"
+      isCorrect: true
+      explanation: "Correct. A surrogate key uniquely identifies each row in a dimension table, irrespective of keys used in source systems."
+    - content: "An alternate key"
+      isCorrect: false
+      explanation: "Incorrect. An alternate key is usually based on the key that defines an entity in its source system, and can be duplicated in a slowly changing dimension."
+    - content: "A business key"
+      isCorrect: false
+      explanation: "Incorrect. A business key is based on the key that defines an entity in its source system, and is often used as an alternate key in a data warehouse."
+  - content: "What distribution option would be best for a sales fact table that will contain billions of records?"
+    choices:
+    - content: "`HASH`"
+      isCorrect: true
+      explanation: "Correct. Hash distribution provides good read performance for a large table by distributing records across compute nodes based on the hash key."
+    - content: "`ROUND_ROBIN`"
+      isCorrect: false
+      explanation: "Incorrect. Round robin distribution distributes the data evenly but does not optimize queries on commonly used distribution key fields."
+    - content: "`REPLICATE`"
+      isCorrect: false
+      explanation: "Incorrect. Replicate distribution will result in a copy of the table on each compute node, which is not optimal for a large table."
+  - content: "You need to write a query to return the total of the `UnitsProduced` numeric measure in the `FactProduction` table aggregated by the `ProductName` attribute in the `FactProduct` table. Both tables include a `ProductKey` surrogate key field. What should you do?"
+    choices:
+    - content: "Use two `SELECT` queries with a `UNION ALL` clause to combine the rows in the `FactProduction` table with those in the `FactProduct` table."
+      isCorrect: false
+      explanation: "Incorrect. A `UNION ALL` query returns a result set containing rows from both tables."
+    - content: "Use a `SELECT` query against the `FactProduction` table with a `WHERE` clause to filter out rows with a `ProductKey` that doesn't exist in the `FactProduct` table."
+      isCorrect: false
+      explanation: "Incorrect. This query would return all rows in the `FactProduction` table (assuming all production measures are related to a product)."
+    - content: "Use a `SELECT` query with a `SUM` function to total the `UnitsProduced` metric, using a `JOIN` on the `ProductKey` surrogate key to match the `FactProduction` records to the `FactProduct` records and a `GROUP BY` clause to aggregate by `ProductName`."
+      isCorrect: true
+      explanation: "Correct. To aggregate measures in a fact table by attributes in a dimension table, include an aggregate function for the measure, join the tables on the surrogate key, and group the results by the appropriate attributes."
+  - content: "You use the `RANK` function in a query to rank customers in order of the number of purchases they have made. Five customers have made the same number of purchases and are all ranked equally as 1. What rank will the customer with the next highest number of purchases be assigned?"
+    choices:
+    - content: "2"
+      isCorrect: false
+      explanation: "Incorrect. There are five customers with a higher number of purchases, and `RANK` takes these into account. A value of 2 would be returned by `DENSE_RANK`"
+    - content: "6"
+      isCorrect: true
+      explanation: "Correct. There are five customers with a higher number of purchases, and `RANK` takes these into account."
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. There are five customers with a higher number of purchases, and `RANK` takes these into account."
+  - content: "You need to compare approximate production volumes by product while optimizing query response time. Which function should you use?"
+    choices:
+    - content: "`COUNT`"
+      isCorrect: false
+      explanation: "Incorrect. The `COUNT` function will return accurate counts, but may take longer than other options."
+    - content: "`NTILE`"
+      isCorrect: false
+      explanation: "Incorrect. The `NTILE` function returns the percentile for a row in a partition based on a numeric ranking."
+    - content: "`APPROX_COUNT_DISTINCT`"
+      isCorrect: true
+      explanation: "Correct. `APPROX_COUNT_DISTINCT` returns an approximate count within 2% of the actual count while optimizing for minimal response time."

@@ -3,7 +3,7 @@ uid: learn.wwl.plan-design-integration-of-enterprise-apps-for-sso
 metadata:
   title: Plan and design the integration of enterprise apps for SSO
   description: "Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports."
-  ms.date: 04/08/2022
+  ms.date: 06/22/2022
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -29,15 +29,17 @@ products:
 - azure
 - azure-active-directory
 subjects:
-- identity-access
 - cloud-security
+- identity-access
 units:
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.introduction
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.discover-apps-by-using-mcas-adfs-app-report
+- learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.configure-connectors-apps
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.implement-access-management-for-apps
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.design-implement-app-management-roles
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.create-custom-role-to-manage-app-registration
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.configure-pre-integrated-gallery-saas-apps
+- learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.implement-manage-policies-oauth-apps
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.knowledge-check
 - learn.wwl.plan-design-integration-of-enterprise-apps-for-sso.summary-resources
 badge:

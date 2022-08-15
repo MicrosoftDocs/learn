@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.explore-identity-azure-active-directory
+metadata:
+  title: Explore identity in Azure AD
+  description: "This module will cover a wide view of the definition and available services for identity provided in the Microsoft Cloud from Azure AD to Microsoft 365. You start with the basics of authentication, authorization, and access tokens. This builds a firm foundation of what an identity is, why it is important. Then we move into governance and lifecycle management of your identities and identity solutions. The final topic opens up the term zero trust to see how it should be applied to your identity solutions."
+  ms.date: 06/09/2022
+  author: wwlpublish
+  ms.author: v-arxia
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore identity and Azure AD
+summary: This module will cover definitions and available services for identity provided in Azure AD to Microsoft 365.  You start with authentication, authorization, and access tokens then build into full identity solutions.
+abstract: |
+  By the end of this module, you will be able to:
+  - Define common identity terms and explain how they are used in the Microsoft Cloud
+  - Explore the common management tools and needs of an identity solution
+  - Review the goal of Zero Trust and how it is applied in the Microsoft Cloud
+  - Explore the available identity services in the Microsoft Cloud
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- identity-access-admin
+- security-engineer
+products:
+- azure
+- azure-active-directory
+- azure-active-directory-b2c
+- azure-active-directory-domain
+subjects:
+- architecture
+- identity-access
+- security
+units:
+- learn.wwl.explore-identity-azure-active-directory.introduction
+- learn.wwl.explore-identity-azure-active-directory.explain-identity-landscape
+- learn.wwl.explore-identity-azure-active-directory.explore-zero-trust-identity
+- learn.wwl.explore-identity-azure-active-directory.discuss-identity-as-control-plane
+- learn.wwl.explore-identity-azure-active-directory.explore-why-we-have-identity
+- learn.wwl.explore-identity-azure-active-directory.define-identity-administration
+- learn.wwl.explore-identity-azure-active-directory.contrast-decentralized-identity-central-identity-systems
+- learn.wwl.explore-identity-azure-active-directory.discuss-identity-management-solutions
+- learn.wwl.explore-identity-azure-active-directory.explain-business-to-business
+- learn.wwl.explore-identity-azure-active-directory.compare-microsoft-identity-providers
+- learn.wwl.explore-identity-azure-active-directory.define-identity-licensing
+- learn.wwl.explore-identity-azure-active-directory.explore-authentication
+- learn.wwl.explore-identity-azure-active-directory.discuss-authorization
+- learn.wwl.explore-identity-azure-active-directory.explain-auditing-identity
+- learn.wwl.explore-identity-azure-active-directory.knowledge-check
+- learn.wwl.explore-identity-azure-active-directory.summary
+badge:
+  uid: learn.wwl.explore-identity-azure-ad.badge

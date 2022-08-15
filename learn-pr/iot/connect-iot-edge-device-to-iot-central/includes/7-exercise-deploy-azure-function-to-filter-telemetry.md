@@ -33,7 +33,7 @@ ls
 Run the following command to replace the existing _FilterFunction.cs_ with an implementation that filters the machine temperature telemetry:
 
 ```azurecli
-curl -O https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/FilterFunction.cs
+curl -O https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/FilterFunction.cs
 ```
 
 Now build the image and upload it to your container registry. Expect this command to take a couple of minutes to run:
@@ -54,8 +54,8 @@ To use the new filter module on your IoT Edge device, update the deployment mani
 
 Download the new deployment manifest and interface definition to your local machine by right-clicking on the following links and choosing **Save as**:
 
-- [EnvironmentalSensorManifestFilter.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/EnvironmentalSensorManifestFilter.json)
-- [TelemetryInterfaceFilter.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/master/edge-vm-deploy/TelemetryInterfaceFilter.json)
+- [EnvironmentalSensorManifestFilter.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/EnvironmentalSensorManifestFilter.json)
+- [TelemetryInterfaceFilter.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/edge-vm-deploy/TelemetryInterfaceFilter.json)
 
 Open the _EnvironmentalSensorManifestFilter.json_ in a text editor and update it to use the filter module from your container registry:
 

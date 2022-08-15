@@ -2,6 +2,10 @@ name: MyWorkflow
 
 on: [workflow_dispatch]
 
+permissions:
+  id-token: write
+  contents: read
+
 env: 
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
@@ -15,7 +19,9 @@ jobs:
         path: repo
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       with:
         resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}

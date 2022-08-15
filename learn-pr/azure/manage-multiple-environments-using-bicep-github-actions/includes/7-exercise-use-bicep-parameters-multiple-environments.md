@@ -14,7 +14,7 @@ During the process, you'll:
 
 You decide to store the API keys in GitHub secrets, to ensure they're protected appropriately.
 
-1. In your browser, go to **Settings** > **Secrets**.
+1. In your browser, go to **Settings** > **Secrets** > **Actions**.
 
    :::image type="content" source="../media/7-secrets.png" alt-text="Screenshot of GitHub that shows the Secrets menu item under the Settings category.":::
 
@@ -34,20 +34,17 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Update the workflow trigger to include new values for the `inputs` and `secrets` settings:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="3-19" highlight="10-12, 16-17" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="3-23" highlight="10-12, 20-21" :::
 
    Notice that you include the API URLs as inputs. These aren't secret values.
 
 1. In the `validate` job, update the steps to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="21-52" highlight="19-20, 30-32" :::
-
-   > [!IMPORTANT]
-   > Be sure to add the backslash (`\`) at the end of the line that sets the `environmentType` parameter value, and on the subsequent line. The `\` character indicates that further lines are part of the same command.
+   :::code language="yaml" source="code/7-deploy.yml" range="29-63" highlight="21-22, 33-34" :::
 
 1. Update the `deploy` job to include the new deployment parameters:
 
-   :::code language="yaml" source="code/7-deploy.yml" range="54-77" highlight="23-24" :::
+   :::code language="yaml" source="code/7-deploy.yml" range="65-90" highlight="25-26" :::
 
 1. Save your changes to the file.
 
@@ -57,7 +54,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Add the `reviewApiUrl` inputs, and the `reviewApiKey` secrets, for each environment:
 
-   :::code language="yaml" source="code/7-workflow.yml" highlight="23, 26, 35, 38" :::
+   :::code language="yaml" source="code/7-workflow.yml" highlight="23, 28, 37, 42" :::
 
 1. Save your changes to the file.
 
@@ -71,7 +68,7 @@ You decide to store the API keys in GitHub secrets, to ensure they're protected 
 
 1. Update the `appServiceApp` resource definition to provide the review API URL and key to the application, so that your website's code can use them:
 
-   :::code language="bicep" source="code/7-main.bicep" range="53-80" highlight="17-24" :::
+   :::code language="bicep" source="code/7-main.bicep" range="63-90" highlight="17-24" :::
 
 1. Save your changes to the file.
 

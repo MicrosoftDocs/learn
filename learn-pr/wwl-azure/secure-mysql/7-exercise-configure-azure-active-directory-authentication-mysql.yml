@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-mysql.exercise-configure-azure-ad-authentication-mysql
+title: 'Exercise: Configure Azure AD authentication with MySQL'
+metadata:
+  title: 'Exercise: Configure Azure AD authentication with MySQL'
+  description: "Exercise: Configure Azure AD authentication with MySQL"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-configure-azure-active-directory-authentication-mysql.md)]

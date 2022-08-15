@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-access-management-for-azure-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/03/2022
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What tool is available in Azure to give administrators the ability to provide comprehensive visibility into permissions assigned to all identities – users and workloads – actions, and resources across cloud infrastructures and identity providers? It detects, right-sizes, and monitors unused and excessive permissions and enables Zero Trust security through least privilege access in Microsoft Azure, AWS, and GCP?"
+    choices:
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Azure Monitor looks at services running on Azure."
+    - content: "Microsoft Defender for Identity"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. Use this tool to protect your on-premises identities."
+    - content: "Microsoft Entra Permissions Management."
+      isCorrect: true
+      explanation: "Correct. CloudKnox was the original tool acquired by Microsoft. With permissions management you can detect and right-size permissions for your identities."
+  - content: "You want to assign the Azure role - Contributor - to a specific user; what tools can you use to make this assignment?"
+    choices:
+    - content: "Azure portal, PowerShell, and CLI"
+      isCorrect: true
+      explanation: "Correct. You can assign Azure roles via multiple options."
+    - content: "Azure portal only"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. You can also use scripting languages like PowerShell to make assigns. You can do bulk operations, or on-demand changes this way."
+    - content: "Scripting only with PowerShell and CLI"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. When you only need to assign or manage a few role assignments, you can use Azure portal."
+  - content: "You want to create a managed identity for your application.  You want the identity to be created and deleted dynamically when the resource is started and stopped.  What type of managed identity do you need to create?"
+    choices:
+    - content: "User-assigned"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. For user-assigned managed identities, the identity is managed separately from the resources that use it. The user-assigned identity exists when the assigned service isn't running."
+    - content: "System-assigned"
+      isCorrect: true
+      explanation: "Correct. The identity is tied to the lifecycle of that service instance. When the resource is deleted, Azure automatically deletes the identity for you."
+    - content: "Dynamic-assigned"
+      isCorrect: false
+      explanation: "Sorry, that's incorrect. You would want to use a System-assigned identity."

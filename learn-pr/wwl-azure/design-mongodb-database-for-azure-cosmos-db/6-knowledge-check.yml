@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/08/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "The IT team has a collection named *IotAlerts* with a shard key of *DeviceId*. The team need to add a pipeline to the aggregation to calculate the number of times each device created an alert.  What type of *aggregation pipeline stage* would be used to calculate this count?"
+    choices:
+    - content: "**$sum**"
+      isCorrect: false
+      explanation: "Incorrect. *$sum* isn't an *aggregation pipeline stage* but an *aggregation pipeline operator*. The $sum aggregation will still be used to calculate the count inside the $group pipeline (**countAlert: { $sum: 1 }**)."
+    - content: "**$group**"
+      isCorrect: true
+      explanation: "Correct. To calculate the count, the Devices will need to be grouped by the *DeviceId* property inside the *$group* stage."
+    - content: "**$unwind**"
+      isCorrect: false
+      explanation: "Incorrect. *$unwind* flattens an array, but it does no calculations."
+  - content: "When should data in the collections be embedded?"
+    choices:
+    - content: "Embed when the data needs to be read or updated independently."
+      isCorrect: false
+      explanation: "Incorrect. Data shouldn't be embedded when read or updated independently. Specially during updates, where combining the entities will result in large documents. Embedding will cause a larger cost every time the documents needed to be updated. Larger cost would occur when most properties of unrelated entities wouldn't even need to be updated."
+    - content: "Embed when the data has 1:Many relationships."
+      isCorrect: false
+      explanation: "Incorrect. Azure Cosmos DB has a maximum document size of 2 MB, so in unbounded relationships these documents could grow large and hit our document size limit."
+    - content: "Embed when the data is read or updated together."
+      isCorrect: true
+      explanation: "Correct. Data that's read or updated together is nearly always modeled as a single document. The benefit is especially true because our objective for our NoSQL model, is to reduce the number of requests to our database."
+  - content: "The customer application needs to run a query that searches by **lastName** and **firstName**. What type of index should be created that returns these documents quickly and also reduces the filtering and indexing costs?"
+    choices:
+    - content: "Wildcard."
+      isCorrect: false
+      explanation: "Incorrect. Wildcards would index all fields either under the root or under a specified subproperty. Since most likely we have more fields than **lastName** and **firstName**, wildcards will most likely not help in this case."
+    - content: "One compound index for the fields **lastName** and **firstName**."
+      isCorrect: false
+      explanation: "Incorrect. While a compound index would have the same filtering cost than single indexes per field, it would have higher indexing cost than the single indexes per field."
+    - content: "One single field index for **lastName** and one single field index for **firstName**."
+      isCorrect: true
+      explanation: "Correct. Single indexes per field would have the same filtering cost as a compound index of those fields, but would have a lower indexing cost than the indexing cost of the compound index."

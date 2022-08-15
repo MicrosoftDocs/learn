@@ -26,21 +26,23 @@ For a total of 12 vCores and 1.5 TiB of storage.
 
     |Parameter  |Value  |
     |---------|---------|
-    |**Subscription**     |  Select **Free Trial** or **your existing subscription**       |
-    |**Resource group**     | Select **Create new** and name your resource group **Hyperscale**       |
-    |         **Server name** |  **Choose a unique name**, such as payment-server-demo  |
-    |**Location**| Use a region that's close to you, or leave as default |
-    |**Compute + storage**     |  Leave as default, we'll configure this in the next step      |
-    | **Admin username**| Citus will be selected by default |
-    | **Password/Confirm Password**|  Choose a password |
+    | **Subscription**  |  Select **Free Trial** or **your existing subscription**. |
+    | **Resource group** | Select **Create new** and name your resource group *Hyperscale*. |
+    | **Server group name** |  **Choose a unique name**, such as *payment-server-demo*. |
+    | **Location**| Use a region that's close to you, or leave as default. |
+    | **Compute + storage** | Leave as default; we'll configure this in the next step. |
+    | **PostgreSQL version** | Leave as default. |
+    | **Admin username** | `citus` will be entered by default. |
+    | **Password/Confirm Password** |  Choose a password. Note the server name and password for later use. |
 
-    1. Note the server name and password down for later use.
-    1. Select **Configure server group** in the **Compute + storage** options.
+1. Select **Configure server group** in the **Compute + storage** options.
 
     :::image type="content" source="../media/3c-form.png" alt-text="Configure Hyperscale form.":::
 
-1. Increase compute and storage if you want. Next, scroll to the bottom of the page and select the blue **Save** box.
+1. Select the **Standard** tier. Increase compute and storage if you want. Next, scroll to the bottom of the page and select the blue **Save** box.
+
 1. Select the **Networking** tab at the top of the page
+
 1. Select **Add 0.0.0.0 - 255.255.255.255**, then select **Continue**.
 
     :::image type="content" source="../media/3d-firewall.png" alt-text="Configure Hyperscale firewall.":::

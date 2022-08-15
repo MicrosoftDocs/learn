@@ -1,16 +1,26 @@
 The Microsoft 365 Defender Sentinel Data Connector can populate tables with raw data collected from the Microsoft 365 Defender solutions.
 
-Microsoft Defender for Endpoint tables.
 
-| Table| Description|
+| Table name| Description|
 | :--- | :--- |
-| DeviceEvents| The miscellaneous device events table contains information about various event types, including events triggered by security controls, such as Microsoft Defender Antivirus and exploit protection.|
-| DeviceFileEvents| This table contains information about file creation, modification, and other file system events.|
-| DeviceImageLoadEvents| This table contains information about DLL loading events.|
-| DeviceInfo| This table contains information about devices in the organization, including their OS version, active users, and computer name.|
-| DeviceLogonEvents| This table contains information about user logons and other authentication events.|
-| DeviceNetworkEvents| This table contains information about network connections and related events.|
-| DeviceNetworkInfo| This table contains information about networking configuration of devices, including network adapters, IP and MAC addresses, and connected networks or domains.|
-| DeviceProcessEvents| This table contains information about process creation and related events.|
-| DeviceRegistryEvents| This table contains information about the creation and modification of registry entries.|
+| AlertEvidence| Files, IP addresses, URLs, users, or devices associated with alerts|
+| CloudAppEvents| Events involving accounts and objects in Office 365 and other cloud apps and services|
+| DeviceEvents| Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection|
+| DeviceFileCertificateInfo| Certificate information of signed files obtained from certificate verification events on endpoints|
+| DeviceFileEvents| File creation, modification, and other file system events|
+| DeviceImageLoadEvents| DLL loading events|
+| DeviceInfo| Machine information, including OS information|
+| DeviceLogonEvents| Sign-ins and other authentication events on devices|
+| DeviceNetworkEvents| Network connection and related events|
+| DeviceNetworkInfo| Network properties of devices, including physical adapters, IP and MAC addresses, as well as connected networks and domains|
+| DeviceProcessEvents| Process creation and related events|
+| DeviceRegistryEvents| Creation and modification of registry entries|
+| EmailEvents| Microsoft 365 email events, including email delivery and blocking events|
+| EmailPostDeliveryEvents| Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox|
+| EmailUrlInfo| Information about URLs on emails|
+|EmailAttachmentInfo| Information about files attached to Office 365 emails|
+| IdentityDirectoryEvents| Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events and system events on the domain controller.|
+| IdentityLogonEvents| Authentication events on Active Directory and Microsoft online services|
+| IdentityQueryEvents| Queries for Active Directory objects, such as users, groups, devices, and domains|
+
 

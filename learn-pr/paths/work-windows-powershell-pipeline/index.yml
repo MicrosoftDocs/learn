@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.work-windows-powershell-pipeline
+metadata:
+  title: Work with the Windows PowerShell pipeline
+  description: Work with the Windows PowerShell pipeline
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with the Windows PowerShell pipeline
+prerequisites: |
+  - Familiarity with Windows networking technologies and implementation.
+  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+summary: |
+  This learning path explains the purpose and use of the PowerShell pipeline and use the pipeline to sort, filter, enumerate and display output data for PowerShell cmdlets. It also explains how to pass pipeline objects.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+modules:
+- learn.wwl.understand-windows-powershell-pipeline
+- learn.wwl.select-sort-measure-objects-use-pipeline
+- learn.wwl.filter-objects-out-of-pipeline
+- learn.wwl.enumerate-objects-pipeline
+- learn.wwl.send-pass-data-output-from-pipeline
+- learn.wwl.pass-pipeline-objects
+trophy:
+  uid: learn.wwl.work-windows-powershell-pipeline.trophy

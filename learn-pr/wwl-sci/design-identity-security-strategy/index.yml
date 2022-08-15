@@ -3,7 +3,7 @@ uid: learn.wwl.design-identity-security-strategy
 metadata:
   title: Design an identity security strategy
   description: "Learn how to design a cybersecurity strategy for identity management."
-  ms.date: 06/08/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
   - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-design-an-identity-security-strategy.svg
 levels:
 - advanced
 roles:
@@ -30,6 +30,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
+- security
 units:
 - learn.wwl.design-identity-security-strategy.introduction
 - learn.wwl.design-identity-security-strategy.secure-access-to-cloud-resources

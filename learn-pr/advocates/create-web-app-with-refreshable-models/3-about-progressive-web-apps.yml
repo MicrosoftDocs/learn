@@ -3,9 +3,9 @@ uid: learn.advocates.create-web-app-with-refreshable-models.3-about-progressive-
 metadata:
   title: About Progressive Web Apps
   description: What is a Progressive Web App, or PWA?
-  author: PatrickFarley
+  author: jlooper
   ms.date: 02/10/2020
-  ms.author: pafarley
+  ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

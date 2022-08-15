@@ -22,10 +22,10 @@ quiz:
       explanation: Incorrect. The problem is unrelated to the module versioning strategy.
     - content: Publish the module manually at the command line, not in an automated workflow.
       isCorrect: false
-      explanation: Incorrect. You can publish the module from a workflow, as long as the workflow's service principal is authorized to write to the container registry.
-    - content: Grant the service principal permission to write to your container registry.
+      explanation: Incorrect. You can publish the module from a workflow, as long as the workflow's workload identity is authorized to write to the container registry.
+    - content: Grant the workload identity permission to write to your container registry.
       isCorrect: true
-      explanation: Correct. The error message indicates an authorization error, so you need to authorize the service principal to write to the container registry.
+      explanation: Correct. The error message indicates an authorization error, so you need to authorize the workload identity to write to the container registry.
   - content: You need to test the resources defined in a Bicep module. You choose to deploy the resources to your Azure subscription. Which Azure CLI command should you use?
     choices:
     - content: |

@@ -1,8 +1,5 @@
 In this exercise, you'll investigate Service Hooks.
 
-> [!NOTE]
-> Before starting this walkthrough, ensure you've done the steps in the prerequisites section and the previous walkthroughs.
-
 ## Steps
 
 Let's now look at how a release pipeline can communicate with other services by using service hooks.
