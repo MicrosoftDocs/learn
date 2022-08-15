@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-power-bi-assets.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/05/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "What feature must be enabled for you to manage Power BI datasets from external tools?"
+    choices:
+    - content: "Power BI Service API."
+      isCorrect: false
+      explanation: "Incorrect. There is not a feature called Power BI Service API."
+    - content: "Read-write XMLA endpoint."
+      isCorrect: true
+      explanation: "Correct. To do more than view, you need the read-write option enabled."
+    - content: "Read-only XMLA endpoint."
+      isCorrect: false
+      explanation: "Incorrect. Read-only will not let you make updates, only view."
+  - content: "What are the two views you can use to see the assets within a Power BI workspace?"
+    choices:
+    - content: "Line and lineage view."
+      isCorrect: true
+      explanation: "Correct. You can see line items or relationship representation with lineage view."
+    - content: "Line and relationship view."
+      isCorrect: false
+      explanation: "Incorrect. There is no relationship view."
+    - content: "File and lineage view."
+      isCorrect: false
+      explanation: "Incorrect. There is no file view."
+  - content: "If you're developing a report that relies on a global data source and you need to add more data sources for each continent, which solution below would you implement?"
+    choices:
+    - content: "Create dataset in Analysis Services with all data sources, then use row-level security to limit what data users see based on their location."
+      isCorrect: false
+      explanation: "Incorrect. While row-level security is valid to limit data, this would be cumbersome and a large dataset."
+    - content: "Create separate global and continent reports in Power BI Desktop, then use a Power BI service dashboard to highlight details for each location."
+      isCorrect: false
+      explanation: "Incorrect. This would separate the data, but would make a lot of extra work and assets to maintain. Plus dashboards are not interactive."
+    - content: "Create and publish a global dataset, then connect to the dataset through Power BI Desktop, and add other tables to create the specialized dataset for each location."
+      isCorrect: true
+      explanation: "Correct. By creating a core global dataset, you can reduce the size of continental reports and limit assets while maintaining functionality."

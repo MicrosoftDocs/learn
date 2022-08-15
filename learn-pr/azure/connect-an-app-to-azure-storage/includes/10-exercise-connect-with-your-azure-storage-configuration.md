@@ -27,7 +27,7 @@ To work with individual blob objects in your Azure Storage account, you use a `B
     blobClient.Upload(fileName, true);
     ```
 
-    The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we are specifying `true` to allow the program to be run multiple times.
+    The second argument in the `Upload` method specifies if an existing blob object with the same name can be overwritten. By default, this value is `false`. In this case, we're specifying `true` to allow the program to be run multiple times.
 
 ## List objects in an Azure Blob Storage container
 
@@ -109,7 +109,7 @@ To validate that our program worked, we'll exercise another capability of the **
 
 ## Congratulations
 
-You have learned the essentials of working with **Azure Storage Blobs** SDK package and Azure Blob Storage. If you want, explore further by creating another container, uploading additional images to your storage account or deleting an image. You can learn more at the [Azure Storage Blobs client library for .NET GitHub page](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.Blobs_12.7.0/sdk/storage/Azure.Storage.Blobs).
+You've learned the essentials of working with **Azure Storage Blobs** SDK package and Azure Blob Storage. If you want, explore further by creating another container, uploading additional images to your storage account or deleting an image. You can learn more at the [Azure Storage Blobs client library for .NET GitHub page](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.Blobs_12.7.0/sdk/storage/Azure.Storage.Blobs).
 
 ::: zone-end
 
@@ -140,7 +140,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     }
     ```
 
-    This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we have uploaded.
+    This code will print all the blobs in our Azure Blob Storage container with the date the blob was created and its size.  For our program, this code should print one row representing the single image we've uploaded.
 
 1. The final file should look like this.
 
@@ -189,11 +189,11 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     > Make sure you're in the PhotoSharingApp directory.
 
     ```bash
-    node index.js
+    node --harmony index.js
     ```
 
     > [!TIP]
-    > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
+    > If you get an error about the use of the `await` keyword, make sure you've added the `async` keyword to the `main` function definition per the final step in the previous instructions.
 
 ## Congratulations
 
