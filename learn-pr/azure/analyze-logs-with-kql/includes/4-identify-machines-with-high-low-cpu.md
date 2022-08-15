@@ -55,8 +55,8 @@ Windows and Linux agents send performance counters to the `Perf` table in Azure 
  
 1. Which data in the `Perf` table is relevant to your analysis and how do you want to transform and organize this data?
 
-    - The `ObjectName` column holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the 'Processor' instance.
-    - The `CounterName` column holds the names of all of performance counters in the table.
+    - The `ObjectName` column holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance.
+    - The `CounterName` column holds the names of all of the performance counters in the table.
     - The `InstanceName` column... 
     - The `CounterValue` column...
 

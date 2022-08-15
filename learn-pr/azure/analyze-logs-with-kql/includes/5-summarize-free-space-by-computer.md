@@ -21,7 +21,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+Here, you'll retrieve and transform data from the `Perf` table, using KQL queries, to analyze the free space of the machines logging data to your Log Analytics workspace. 
 
 <!-- 3. Chunked steps -------------------------------------------------------------------------------------
 
@@ -43,6 +43,24 @@ TODO: describe the end-state
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
+
+## Decide on the information you need for your analysis and examine your log data
+
+As we've seen the previous exercise, the `Perf` table provides information about the performance of hardware components, operating systems, and applications.
+
+1. What information will help you understand the free space usage of machines running in your IT environment?
+
+    - Total space available on the computer.
+    - Total space used.
+    - Percentage of space used.
+ 
+1. Which data in the `Perf` table is relevant to your analysis and how do you want to transform and organize this data?
+
+  - The `CounterName` column holds the names of all of the performance counters in the table. 
+      
+    Of the counters in the `CounterName` column, `% Used Space` and `Free Megabytes` are the counters relevant to your analysis.
+
+## Identify machines with high and low CPU usage
 
 ## Summarize free space statistics by computer
 <!-- Introduction paragraph -->
