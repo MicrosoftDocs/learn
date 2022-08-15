@@ -189,7 +189,7 @@ You'll connect to the web server in Azure by using Secure Shell (SSH). You can m
 
     ![Screenshot of the menu for SSH.](../media/ssh.png)
 
-    An SSH connection will be made to your web server in Azure. This process might take a few minutes. A terminal pane appears in Visual Studio Code. This terminal is the SSH connection to your web server. If you have trouble connecting, see the troubleshooting steps following these steps.
+    An SSH connection will be made to your web server in Azure. This process might take a few minutes. A terminal pane appears in Visual Studio Code. This terminal is the SSH connection to your web server. If you have trouble connecting, see the [troubleshooting steps below](#troubleshooting-ssh).
 
     > [!IMPORTANT]
     > If you receive an error message stating you need to enable SSL for the database, ensure you created all environmental variables correctly.
