@@ -8,9 +8,10 @@ To use an analogy, shared city utilities such as water, gas, and electricity are
 
 Here are a few things to think about when considering landing zones. 
 
-- **Include landing zones in your design**. Landing zones should be part of and work with your overall Azure infrastructure design. Use subscriptions as a unit of management and scale that's aligned with business needs and priorities. Apply Azure Policy to provide guardrails and ensure continued compliance with your organization's platform, along with the applications that are deployed onto it. In this diagram, there are landing zones for SAP, Corporate, and Online applications. 
-
  :::image type="content" source="../media/landing-zones.png" alt-text="Illustration of a management group and subscription organization that includes landing zones.":::
+
+
+- **Include landing zones in your design**. Landing zones should be part of and work with your overall Azure infrastructure design. Use subscriptions as a unit of management and scale that's aligned with business needs and priorities. Apply Azure Policy to provide guardrails and ensure continued compliance with your organization's platform, along with the applications that are deployed onto it. In this diagram, there are landing zones for SAP, Corporate, and Online applications. 
  
 - **Provision landing zones through code**. Landing zones are pre-provisioned through code. As your situation changes, expect that you will need to refactor the code. Use an iterative approach that maximizes learning opportunities and minimizes time to business success.  Minimize refactoring by having a central IT team to review both short term and long-term scenarios.  
 
