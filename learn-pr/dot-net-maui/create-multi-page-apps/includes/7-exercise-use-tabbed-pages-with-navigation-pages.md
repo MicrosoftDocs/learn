@@ -13,7 +13,7 @@ In the astronomy app, you've been asked to add pages that enable the user to sel
     > [!NOTE]
     > This solution contains additional pages that aren't in the version of the app you used in the previous exercises.
 
-1. In the Solution Explorer window, open the **Pages** folder. In addition to the the **MoonPhasePage**, **SunrisePage**, and **AboutPage** files, this folder contains two additional pages:
+1. In the Solution Explorer window, open the **Pages** folder. In addition to the **MoonPhasePage**, **SunrisePage**, and **AboutPage** files, this folder contains two additional pages:
 
     - **AstronomicalBodiesPage**. This page contains four buttons that enable the user to select the details for the Sun, the Moon, the Earth, or Halley's Comet. The current version of the app is simply a proof of concept. In the future, this page will enable the user to select from a much bigger list.
 
