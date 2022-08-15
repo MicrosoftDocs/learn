@@ -36,7 +36,7 @@ Now, let's create the load balancer.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search services and marketplace** search box, enter **Load Balancer**, and then press <kbd>Enter</kbd>.
+1. In the **Search services and marketplace** search box, enter *Load Balancer*, and then press <kbd>Enter</kbd>.
 
 1. From the ensuing list, select *Load Balancer - Microsoft*. Then, select **Create**.
 
@@ -55,7 +55,6 @@ Now, let's create the load balancer.
     | SKU | **Basic** |
     | Type | **Public** |
     | Tier | **Regional** |
-
 
 ## Add a front-end IP configuration
 
@@ -97,7 +96,7 @@ Now, let's create the load balancer.
 
 1. Select **Add**. The **Add IP configurations to backend pool** pane appears.
 
-1. Under **Virtual machine**, mark both virtual machines (**webVM1** and **webVM2**) and select **Add**.
+1. Under **Virtual machine**, select the **webVM1** and **webVM2** virtual machines and select **Add**.
 
    :::image type="content" source="../media/4-lb-add-IPconfig-backend-pool.png" alt-text="Screenshot that shows the settings on the Add IP configurations to backend pool pane.":::
 
@@ -145,9 +144,9 @@ Finally, let's create a rule for the load balancer.
     | Idle timeout (minutes) | Select **4** (default). This value is the time to keep a TCP or HTTP connection open without relying on clients to send keep-alive messages. |
     | Floating IP | **Disabled** (default). |
 
-1. Select **Add** to complete the load balancing rule configuration.
+   :::image type="content" source="../media/4-new-lb-rule.png" alt-text="Add a new load balancing rule.":::
 
-    ![Add a new load balancing rule.](../media/4-new-lb-rule.png)
+1. Select **Add** to complete the load balancing rule configuration.
 
 1. The **Create load balancer** screen reappears. Select **Review + create**.
 
