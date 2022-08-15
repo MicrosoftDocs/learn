@@ -8,8 +8,9 @@
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+To address performance issues, mitigate potential issues, and identify opportunities to operate more efficiently, you want to analyze the actual and used compute capacity in your IT environment. 
+
+TODO: add scenario image
 
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
 
@@ -21,7 +22,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+Here, you'll retrieve and transform data from the `Perf` table, using KQL queries, to understand which machines have reached or are nearing their total compute capacity and which machines are being underused.  
 
 <!-- 3. Chunked steps -------------------------------------------------------------------------------------
 
@@ -43,31 +44,40 @@ TODO: describe the end-state
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
+## Decide on the information you need for your analysis and examine your log data
+
+Windows and Linux agents send performance counters to the `Perf` table in Azure Monitor. The data in the `Perf` table provides insight into the performance of hardware components, operating systems, and applications.
+
+
+1. What information will help you understand the compute usage of machines running in your IT environment?
+
+    - Central processing unit (CPU) usage.
+    - Information about CPU usage of machines at peak and quiet times.
+ 
+1. Which data in the `Perf` table is relevant to your analysis and how do you want to transform and organize this data?
+
+    - The `ObjectName` column holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the 'Processor' instance.
+    - The `CounterName` column holds the names of all of performance counters in the table.
+    - The `InstanceName` column... 
+    - The `CounterValue` column...
 
 ## Identify machines with high and low CPU usage
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
 
 Note that 99th percentile means that 99% of all measured values are lower than the given value.
 
-```kusto     
-Perf
-| where TimeGenerated > ago(1d) and CounterName == "% Processor Time" and InstanceName == "_Total" and ObjectName == "Processor"
-| summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer
-| where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50
-| join kind=inner (Heartbeat
-| where TimeGenerated > ago(1d)
-| distinct Computer, OSType) on Computer
-| project-away Computer1
-```
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
+1. 
+    
+    ```kusto     
+    Perf  // The table you’re querying
+    | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
+    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counters values for each computer 
+    | where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
+    | join kind=inner (Heartbeat // Introduces data from the "Heartbeat" table to the previous query results
+    | where TimeGenerated > ago(1d) // Time range for the data added from the "Heartbeat" table
+    | distinct Computer, OSType) on Computer // Adds distinct combinations of computer and operating system 
+    | project-away Computer1 // Removes the "Computer1" column from the query results 
+    ```
+    
 <!-- 4. Validation -------------------------------------------------------------------------------------------
 
     Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
