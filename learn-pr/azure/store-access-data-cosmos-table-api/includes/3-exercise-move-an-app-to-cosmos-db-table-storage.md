@@ -74,16 +74,16 @@ Next, you will configure the lenses app with the connection string of the storag
    cd lensesapp/dotnet
    ```
 
-1. Verify the ***Azure.Data.Tables*** SDK package has been added to the project. This package enables a .NET application to access Azure Storage Tables or the Azure Cosmos DB Table API.
-
-   ```bash
-   dotnet list package   
-   ```
-
 1. Restore the packages for the project to use.
 
    ```bash
    dotnet restore
+   ```
+
+1. Verify the ***Azure.Data.Tables*** SDK package has been added to the project. This package enables a .NET application to access Azure Storage Tables or the Azure Cosmos DB Table API.
+
+   ```bash
+   dotnet list package   
    ```
 
 1. Enter the following command to start the code editor.
@@ -92,7 +92,7 @@ Next, you will configure the lenses app with the connection string of the storag
    code .
    ```
 
-1. In the code editor, in the **Files** list, double-click **appsettings.json**.
+1. In the code editor, in the **Files** list, select **appsettings.json**.
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you copied.
 
@@ -150,7 +150,7 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
-1. Select **Storage Explorer**, expand **Tables**, and then select **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
+1. Select **Storage browser**, expand **Tables**, and then select **lensestable**. The Storage browser displays the list of camera lenses, including the lens you added.
 
    ![Lenses in the Storage Account table.](../media/3-lenses-in-storage-table.png)
 
@@ -182,7 +182,7 @@ Next, you will configure the lenses app with the connection string of the storag
    code .
    ```
 
-1. In the code editor, in the **Files** list, double-click **.env**.
+1. In the code editor, in the **Files** list, select **.env**.
 
 1. Paste in the value of the connection string to the right of the equals sign on the first line.
 
@@ -305,7 +305,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
     code .
     ```
 
-1. In the code editor, in the **Files** list, double-click **appsettings.json**.
+1. In the code editor, in the **Files** list, select **appsettings.json**.
 
 1. Replace the value of the **LensesDatabase** property with the connection string that you copied.
 
@@ -338,7 +338,7 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
 
 1. Install the specified framework and/or SDK at:
 
-    - [framework](https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=2.2.0&arch=x64&rid=cbld.10-x64)
+    - [framework](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.8-windows-x64-installer)
 
 1. In the Cloud Shell, to create and populate a table, run the following command.
 
