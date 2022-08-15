@@ -40,15 +40,9 @@ Now that you've made these changes, you need to sign out and back into the Azure
 
 ### Select subscription
 
-1. Click on the Azure extension icon.
+1. Press **F1** to open the Visual Studio Code command palette.
 
-    ![Visual Studio Code Azure extension icon.](../media/serverless-app-azure-extension-icon.png)
-
-1. Under the *Functions* heading, click on **Select Subscriptions**.
-
-    ![Visual Studio Code Azure extension: Functions section.](../media/serverless-app-select-subscriptions.png)
-
-1. Next, the command palette appears. Select **Concierge Subscription** and click **OK**.
+1. Search for and select **Azure: Select Subscriptions** > **Concierge Subscription** and then **OK**.
 
     ![Visual Studio Code Azure extension: Select concierge subscription.](../media/serverless-app-select-concierge.png)
 
