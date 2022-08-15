@@ -6,7 +6,7 @@ To make your site available to the public, you'll deploy it to Azure. You'll use
 
 ## Install the Azure App Service extension
 
-Start by installing the Azure App Service extension in Visual Studio Code.
+Start by installing the Azure App Service extension in Visual Studio Code:
 
 1. In **Visual Studio Code**, select the **Extensions** icon.
 
