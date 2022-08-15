@@ -33,7 +33,7 @@ Let's start by creating an Azure Blob Storage account.
 
 1. Leave the rest of the fields as default values.
 
-    :::image type="content" source="../media/4-add-storage-account-2022.png" alt-text="Screenshot showing how to create a storage account named "streamsrc".":::
+    :::image type="content" source="../media/4-add-storage-account-2022.png" alt-text="Screenshot showing how to create a storage account named streamsrc.":::
 
 1. Select **Review**.
 

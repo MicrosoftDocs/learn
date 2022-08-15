@@ -17,7 +17,7 @@ These steps are similar to the ones you followed to create the input. Start by c
     | Storage account name | Enter the prefix **streamsink**, and add a numeric suffix. You might need to try a few combinations to find a unique name in Azure. |
     | *remaining settings* | Leave *default*. |
 
-    :::image type="content" source="../media/5-add-storage-account-output.png" alt-text="Screenshot that shows how to add the storage account name "streamsink".":::
+    :::image type="content" source="../media/5-add-storage-account-output.png" alt-text="Screenshot that shows how to add the storage account name streamsink.":::
 
 1. Select **Review**.
 
