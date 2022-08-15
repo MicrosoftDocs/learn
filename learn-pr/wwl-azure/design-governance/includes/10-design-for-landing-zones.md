@@ -1,6 +1,6 @@
 ## Design for Azure Landing Zones
 
-An [Azure landing zone](/azure/cloud-adoption-framework/ready/landing-zone/)) provides an infrastructure environment for hosting your workloads. Landing zones ensure key foundational principles are put in place before you deploy services.  
+An [Azure landing zone](/azure/cloud-adoption-framework/ready/landing-zone/) provides an infrastructure environment for hosting your workloads. Landing zones ensure key foundational principles are put in place before you deploy services.  
 
 To use an analogy, shared city utilities such as water, gas, and electricity are available to new homes before they're constructed. Likewise, for landing zones, the network, identity and access management, policies, management, and monitoring must be readily available to help streamline the application migration process before it begins.
 
@@ -24,7 +24,8 @@ Here are a few things to think about when considering landing zones.
 
 - **Consider [Transitioning existing architectures to the Azure landing zones](/azure/cloud-adoption-framework/ready/enterprise-scale/transition)**. If you already have an existing Azure architecture you can still take advantage of landing zones. Deploy the Azure landing zone accelerator into the same Azure AD tenant in parallel with the current environment. This will create a new management group structure and ensures that the existing environment is not affected by these changes.
 
-> It is recommended you conduct a [Azure Landing Zone Review](/assessments/?mode=pre-assessment&id=21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0) to host workloads that you plan to build in or migrate to the cloud. This assessment is designed for customers with two or more years' experience. If you are new to Azure, this assessment will help you identify investment areas for your adoption strategy. 
+>[!NOTE]
+>It is recommended you conduct a [Azure Landing Zone Review](/assessments/?mode=pre-assessment&id=21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0) to host workloads that you plan to build in or migrate to the cloud. This assessment is designed for customers with two or more years' experience. If you are new to Azure, this assessment will help you identify investment areas for your adoption strategy. 
 
 
 
