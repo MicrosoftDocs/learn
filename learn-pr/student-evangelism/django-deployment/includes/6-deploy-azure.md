@@ -155,7 +155,7 @@ In this exercise, you also need the dog shelters web app hosted in Azure App Ser
 
 ## Configure application settings for the web app
 
-While your database server is being created, configure the App Service you set up earlier. App Service uses the application settings to configure environmental variables. Settings are a convenient way to store information you shouldn't put in your code, such as database connection strings.
+App Service uses the application settings to configure environmental variables. Settings are a convenient way to store information you shouldn't put in your code, such as database connection strings.
 
 1. Under **App Service**, expand the sandbox subscription. Then expand your application.
 1. To create the first application setting, right-click **Application Settings** and then select **Add New Setting**.
