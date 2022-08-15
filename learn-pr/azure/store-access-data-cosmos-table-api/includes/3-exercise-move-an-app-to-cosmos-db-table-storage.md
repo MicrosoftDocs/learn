@@ -2,7 +2,7 @@ Apps that use Azure Storage tables can be moved to Azure Cosmos DB Tables API by
 
 Suppose you have decided to migrate the data for your app that manages camera lenses into Azure Cosmos DB. You want to reconfigure this app to use the new database.
 
-Here, you will create and populate a table with data in a storage table. You will see the app working in that context and then move it onto Azure Cosmos DB, with no changes to the code.
+Here, you'll create and populate a table with data in a storage table. You'll see the app working in that context and then move it onto Azure Cosmos DB, with no changes to the code.
 
 [!INCLUDE[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -58,7 +58,7 @@ The Lenses App is a sample command-line program that stores information about ca
 
 ## Configure the Lenses app with the connection string
 
-Next, you will configure the lenses app with the connection string of the storage account you created, so that it knows where to store data.
+Next, you'll configure the lenses app with the connection string of the storage account you created, so that it knows where to store data.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
@@ -160,7 +160,7 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
 
 ## Configure the Lenses app with the connection string
 
-Next, you will configure the lenses app with the connection string of the storage account you created, so that it knows where to store data.
+Next, you'll configure the lenses app with the connection string of the storage account you created, so that it knows where to store data.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the storage account you created.
 
@@ -313,7 +313,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 ## Investigate the contents of the Cosmos Database
 
-Now that you have changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
+Now that you've changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
 
 1. To display the contents of the table, run this command.
 
@@ -321,7 +321,7 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    dotnet run DisplayTable
    ```
 
-   There should be no entries in the table, because you have not yet migrated the data.
+   There should be no entries in the table, because you haven't yet migrated the data.
    
    ```
    Reading the contents of the Lenses table...
@@ -396,7 +396,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 ## Investigate the contents of the Cosmos database
 
-Now that you have changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
+Now that you've changed the app to use the Azure Cosmos DB database, let's see whether it connects and displays the correct contents.
 
 1. To display the contents of the table, run this command.
 
@@ -404,7 +404,7 @@ Now that you have changed the app to use the Azure Cosmos DB database, let's see
    node app.js DisplayTable
    ```
 
-   The app will display an error: you have not created the table in Cosmos DB yet, so there is nothing there to query.
+   The app will display an error: you haven't created the table in Cosmos DB yet, so there's nothing there to query.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, and then select the Cosmos database you created.
 
