@@ -8,6 +8,7 @@ By using service principals, you can start to build deployment pipelines that su
 
 - [Introduction to securing Azure service accounts](/azure/active-directory/fundamentals/service-accounts-introduction-azure)
 - [What are service principals and where do they come from?](/azure/active-directory/develop/active-directory-how-applications-are-added#what-are-service-principals-and-where-do-they-come-from)
+- [Application and service principal objects in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals)
 - [Securing service principals](/azure/active-directory/fundamentals/service-accounts-principal)
 - [Governing Azure AD service accounts](/azure/active-directory/fundamentals/service-accounts-governing-azure)
 - [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)

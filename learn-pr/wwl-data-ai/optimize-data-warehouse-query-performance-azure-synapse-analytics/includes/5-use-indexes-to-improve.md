@@ -112,4 +112,5 @@ A non-clustered index can be defined on a table or view with a clustered index o
 Non clustered indexes are best used when used for the columns in a join, group by statement or where clauses that return an exact match or few rows.
 
 ## Indexes best practices ##
-
+For additional information on how to ensure that the impact of indexing is impactful, follow the link below: 
+[Index best practices](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-tables-index#impact-of-index-maintenance)
