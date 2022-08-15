@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-data-azure-data-explorer.exercise-query-trends
+title: 'Exercise: Use queries to explore trends'
+metadata:
+  unitType: exercise
+  title: exercise
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 06/22/2022
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-exercise-query-trends.md)]

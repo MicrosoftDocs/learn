@@ -1,0 +1,76 @@
+When working with unfamiliar data, you need to first take a look at the data structure and general contents.
+
+Recall that in our scenario, you've come across a new dataset that contains meterological information about storms in the US. In this unit, you'll get a first look at the data itself and learn how to characterize a new dataset Azure Data Explorer.
+
+## Look at the raw data
+
+The very first thing you want to do is look at the actual data to learn about which columns exist, what type of data is in these columns, and what possible values exist. You don't need to see every line in the data table, so let's take a small selection of the whole table.
+
+1. Run the following query to take 50 arbitrary rows of data.
+
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwXBywmAMBAE0HuqmA7ixRLEAqxgIOOHxCwkqyJYvO/FiFkOYlNVY8GRRNiKZ6fjtash0YliljvKkRUWt3ZOt6r38MGZhXH4AQ7MP0VIAAAA" target="_blank">Click to run query</a>
+    
+    ```kusto
+    StormEvents
+    | take 50
+    ```
+    
+    You should get results that look like the following image, although the specific lines you see may be different: 
+    
+    :::image type="content" source="../media/4-take-50.png" alt-text="Screenshot showing results of take 50query.":::
+
+1. Look at the resulting table below the query, in what's called the **Results grid**. Scroll all the way to the right side to take note of all columns. Can you get a sense of the types of data and ranges of values in these columns? Remember that the fields shown are just a sampling of the whole table.
+
+## Sort the data on a column
+
+The results grid offers a range of built-in tools that are probably familiar actions from other environments. For example, you can sort the data based on a certain column. To sort on a specific column, select the name of that column in the results grid. The arrow that appears to the right of the column name indicates if it's sorted in ascending or descending order.
+
+1. Select the **State** column.
+
+    :::image type="content" source="../media/4-sort-by-state.png" alt-text="Screenshot showing columns sorted by state column.":::
+
+1. Take a look at the resulting list. Do you see any states appearing in multiple rows? Remember that you're looking at the 50 rows you selected above, so you shouldn't expect to see a complete list.
+
+## Group results
+
+Taking the data sorting one step further, you can group, or aggregate, results by common fields. Note that the sorted list above gave several entries for various states.
+
+1. Select the hamburger menu to the right of the column you want to sort. In this case, select the menu on the right side of the **State** column.
+1. Select **Group by State**
+1. Note that each state is followed by a count of associated entries. Select the arrow to the left of the state name to expand these entries.
+
+:::image type="content" source="../media/4-group-by-state.gif" alt-text="Screen capture showing process of selecting state and grouping by state in Azure Data Explorer web UI.":::
+
+## Select a subset of data
+
+Now that you have an idea of what kind of data exists in your table, you can select a subset of that data, for example just flooding events.
+
+1. In the **EventType** column, select the events you want to filter on. Hold down the **Shift** bar on the keyboard to select multiple events, such as **Flash Flood**, **Heavy Rain**, and **Flood**.
+1. Right-click on a selected field, and select **Add selection as filters**. Note that the query above changes to add filtered fields.
+1. Re-run the query by selecting the **Run** button. Note that all resulting events are one of the selected types.
+
+:::image type="content" source="../media/4-add-selection-as-filters.gif" alt-text="Screen capture showing selecting cells and adding selection as filters in query.":::
+
+## Filter on a value
+
+You can also filter on a single value. In this case, let's view all events that happened in the state of Ohio.
+
+1. Select the hamburger menu to the right of the **State** column.
+1. Select the funnel icon.
+1. While you could search for any type of string or integer match, we want to look for any column that contains the word **Ohio**. Note that you can also use this filter to find incomplete or empty data fields.
+
+    :::image type="content" source="../media/4-contains.png" alt-text="Screenshot of string operators dropdown.":::
+
+1. Below the type of filtering, enter the word **Ohio**. Notice that the results are immediately filtered.
+    
+    :::image type="content" source="../media/4-filter-column.gif" alt-text="Screen capture showing column filter on a string value.":::
+
+## Summarize selected cells
+
+On the bottom right corner of the results grid, selected cells are summarized. When you select integer values, you can also see a statistical summary of these values.
+
+1. Scroll over to the **DamageProperty** column in the results grid.
+1. Click and drag on a selection of cells in this column. They will be highlighted by a blue background to indicate selection.
+1. Look at the bottom right corner of the results grid. What are the maximum and minimum values displayed? Does this summary help you understand the range of data in this column?
+
+    :::image type="content" source="../media/4-statistics-selected-cells.png" alt-text="Screenshot showing statistical summary of selected integer cells.":::
