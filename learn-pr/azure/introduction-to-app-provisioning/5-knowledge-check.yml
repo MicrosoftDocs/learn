@@ -15,37 +15,37 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Application Provisioning let's you:"
+  - content: "Application provisioning let's you:"
     choices:
     - content: "Automate the provisioning and deprovisioning of users across systems."
       isCorrect: true
-      explanation: "Application Provisioning let's you provision and deprovision users across systems."
+      explanation: "Application provisioning let's you provision and deprovision users across systems."
     - content: "Bulk email users with important system updates."
       isCorrect: false
-      explanation: "Application Provisioning is used for identity management, not for business applications."
+      explanation: "Application provisioning is used for identity management, not for business applications."
     - content: "Discover the how applications communicate with each other across your network."
       isCorrect: false
-      explanation: "Application Provisioning is used for identity management, not for business applications."
+      explanation: "Application provisioning is used for identity management, not for business applications."
     - content: "Create new no-code business applications."
       isCorrect: false
-      explanation: "Application Provisioning is used for identity management, not for business applications."
-  - content: "What is NOT one of the primary benefits of Application Provisioning?"
+      explanation: "Application provisioning is used for identity management, not for business applications."
+  - content: "What is NOT one of the primary benefits of application provisioning?"
     choices:
     - content: "Maximizing the efficiency and accuracy of the provisioning processes."
       isCorrect: false
-      explanation: "Application Provisioning maximizes the efficiency and accuracy of the provisioning process."
+      explanation: "Application provisioning maximizes the efficiency and accuracy of the provisioning process."
     - content: "Saving on costs associated with hosting and maintaining custom-developed provisioning solutions and scripts."
       isCorrect: false
-      explanation: "Application Provisioning saves costs associated with hosting and maintaining custom-developed provisioning solutions and scripts."
+      explanation: "Application provisioning saves costs associated with hosting and maintaining custom-developed provisioning solutions and scripts."
     - content: "Securing your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
       isCorrect: false
-      explanation: "Application Provisioning secures your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
+      explanation: "Application provisioning secures your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
     - content: "Easily importing a large number of users into a particular SaaS application or system."
       isCorrect: false
-      explanation: "Application Provisioning let's you easily import large numbers of users into a particular SaaS application or system."
+      explanation: "Application provisioning let's you easily import large numbers of users into a particular SaaS application or system."
     - content: "Optimizes software updates on computers in your organization."
       isCorrect: true
-      explanation: "Application Provisioning ensures that you can easily provision users between systems."
+      explanation: "Application provisioning ensures that you can easily provision users between systems."
   - content: "What is System for Cross-domain Identity Management (SCIM)?"
     choices:
     - content: "An object oriented programming languages designed for Windows."
