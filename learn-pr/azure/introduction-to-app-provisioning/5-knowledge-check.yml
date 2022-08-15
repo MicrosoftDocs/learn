@@ -15,11 +15,11 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Application provisioning let's you:"
+  - content: "Application provisioning lets you:"
     choices:
     - content: "Automate the provisioning and deprovisioning of users across systems."
       isCorrect: true
-      explanation: "Application provisioning let's you provision and deprovision users across systems."
+      explanation: "Application provisioning lets you provision and deprovision users across systems."
     - content: "Bulk email users with important system updates."
       isCorrect: false
       explanation: "Application provisioning is used for identity management, not for business applications."
