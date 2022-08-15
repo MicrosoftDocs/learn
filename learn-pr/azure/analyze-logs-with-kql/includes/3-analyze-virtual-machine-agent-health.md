@@ -151,7 +151,7 @@ Understanding which agent versions are running on your machines can be useful in
 
     You now have the data you're looking for: a list of unique combinations of agent type and agent version and the set of all recently active machines that are running a specific version of each agent. 
 
-1. Manipulate the query results to present the information more clearly.
+1. Transform the query results to present the information more clearly.
     
     For instance, sort the results by agent name:  
 
