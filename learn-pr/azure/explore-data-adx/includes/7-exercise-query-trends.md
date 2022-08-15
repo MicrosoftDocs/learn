@@ -1,5 +1,5 @@
-You have had a chance to look at the raw data and structure of an unfamiliar meterological dataset in Azure Data Explorer. 
-Here, you'll use queries to find trends in the data. In particular, you'll use visualizations to see how the data is distributed.
+You have had a chance to look at the raw data and range of an unfamiliar meterological dataset. 
+In this unit, you'll use visualizations to see how the data is distributed.
 
 ## Timechart
 

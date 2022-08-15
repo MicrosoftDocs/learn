@@ -1,5 +1,3 @@
-When working with unfamiliar data, you need to first take a look at the data structure and its general contents.
-
 Recall that in our scenario, you've come across a new dataset that contains meterological information about storms in the US. In this unit, you'll get a first look at the data itself.
 
 ## Look at the raw data

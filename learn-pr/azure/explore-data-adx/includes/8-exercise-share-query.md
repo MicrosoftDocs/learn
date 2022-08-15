@@ -1,6 +1,6 @@
-You've explored the raw data, structure, and trends of an unfamiliar meterological dataset. You've been able to look at sample data, and see if the data looks complete and makes sense when grouped by location and time.
+You've explored the raw data, structure, and range of an unfamiliar meterological dataset. You've ascertained if the data looks complete and makes sense when grouped by location and time.
 
-Here, you'll share these data queries and results with other meterological data enthusiasts.
+In this unit, you'll share these data queries and results with others.
 
 ## Copy query and results
 
@@ -19,7 +19,7 @@ The simplest way to share your results is by copy-pasting the query and its resu
 
 ## Copy query results
 
-You can also copy just the contents of the results grid.
+You can also copy just the contents of the results grid for sharing with others.
 
 1. Select any range of cells in the results grid by clicking and dragging your mouse over the desired fields.
 1. Right-click anywhere in these selected cells.
