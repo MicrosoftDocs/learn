@@ -44,9 +44,9 @@ quiz:
     - content: "Sort the results grid by the desired column."
       isCorrect: false
       explanation: "Sorting by a column rearranges the rows according to the values in that column, but does not help with finding the min/max or average."
-    - content: ""
+    - content: "Use the `render` operator to plot the column and eyeball the results."
       isCorrect: false
-      explanation: ""
+      explanation: "This is not a very precise method to find the min/max or average."
     - content: "Highlight the cells and look at the summary in the bottom corner of the results grid."
       isCorrect: true
       explanation: ""
