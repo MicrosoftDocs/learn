@@ -9,28 +9,28 @@ Let's start by creating a new Azure Stream Analytics job in the Azure portal.
 
 1. In the search box, enter **Stream Analytics**, and select **Stream Analytics jobs** from the results.
 
-1. On the **Stream Analytics jobs** page, select **+ New**.
+1. On the **Stream Analytics jobs** page, select **+ Create**.
 
-    ![Screenshot showing the Stream Analytics jobs page in the Azure portal.](../media/3-add-jobs.png)
+    :::image type="content" source="../media/3-create-stream-analytics-job.png" alt-text=".Screenshot showing the Stream Analytics jobs page in the Azure portal.":::
 
     The **New Stream Analytics job** page appears.
 
-1. Enter a **Job name**, such as **SimpleTransformer**.
-
 1. In the **Resource group** field, select **Create new**, and enter **mslearn-streamanalytics**. Select **OK**.
 
-1. Note the **Location** setting. Ideally, you should create your job in the same location as any storage accounts you use as a source or destination.
+1. In the **Instance details**, enter a **Name**, such as **SimpleTransformer**.
+
+1. Note the **Region** setting. Ideally, you should create your job in the same location as any storage accounts you use as a source or destination.
 
 1. Ensure **Cloud** is selected for the **Hosting environment**.
 
 1. Set the **Streaming units** to **1** to minimize the cost for this test.
 
-1. Select **Create** to create the new job. Your job will go through validation.
+1. Select **Review + Create**. After validation completes, select **Create** to create the new job.
 
-    ![Screenshot of the new Stream Analytics job.](../media/3-create-new-job.png)
+    :::image type="content" source="../media/3-new-stream-analytics-job-create-page.png" alt-text="Screenshot of the new Stream Analytics job.":::
 
-1. After a few moments, select **Refresh** to see your new Stream Analytics job.
+1. After the deployment is complete, select **Go to resource** to see your new Stream Analytics job.
 
-    ![Screenshot of a newly created Stream Analytics job on the Stream Analytics jobs page.](../media/3-created-jobs.png)
+    :::image type="content" source="../media/3-new-stream-analytics-job.png" alt-text="Screenshot of a newly created Stream Analytics job on the Stream Analytics jobs page.":::
 
 Now that we have a Stream Analytics job, we're ready to set up the job to serve a streaming workload. We'll start with the input.

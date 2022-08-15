@@ -2,15 +2,17 @@ After a Stream Analytics job is completed, you can view the results in the Azure
 
 To see the job's results, perform the following steps.
 
-1. In the Azure portal, go to your output storage account (**streamsink**).
+1. In the Azure portal, go to your output storage account **streamsink**.
 
-1. Select **Storage Explorer (preview)**.
+1. Select **Storage browser**.
 
-1. On the right, under **BLOB CONTAINERS**, open your container (**learn-container**).
+1. On the right, under **Blob containers**, open your container (**learn-container-output**).
 
-1. Go to the **output** folder, and select **Download**.
+1. Go to the **output** folder, and select the file inside it.
 
-    ![Screenshot showing query output results.](../media/8-query-result.png)
+1. Select **Download**.
+
+    :::image type="content" source="../media/8-download-output-file.png" alt-text="Screenshot that shows the query output result and file download button.":::
 
 When you open the file, you should see something like this.
 

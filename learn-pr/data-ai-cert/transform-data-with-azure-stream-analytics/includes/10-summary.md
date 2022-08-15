@@ -8,13 +8,11 @@ To avoid unnecessary charges, you'll want to delete all the resources you create
 
 1. Select the group, and then select **Delete resource group**.
 
-    ![Screenshot showing how to delete the resource group in the Azure portal.](../media/10-cleanup.png)
-
 Because you're deleting a whole set of resources together, Azure prompts you to confirm that you want to do this.
 
 ## Learn more
 
 To learn more about creating Stream Analytics jobs and queries, use these resources:
 
-* [Supported output sinks for Stream Analytics](/azure/stream-analytics/stream-analytics-define-outputs)
-* [Stream Analytics query language](/stream-analytics-query/stream-analytics-query-language-reference)
+- [Supported output sinks for Stream Analytics](/azure/stream-analytics/stream-analytics-define-outputs)
+- [Stream Analytics query language](/stream-analytics-query/stream-analytics-query-language-reference)
