@@ -10,7 +10,7 @@ The simplest way to share your results is by copy-pasting the query and its resu
 
     :::image type="content" source="../media/7-share-query.png" alt-text="Screenshot of sharing query.":::
 
-1. You can copy a variety of different combinations. For example, you could just copy a link to the query. You could copy a link to the query as well as the text of the query itself. Or, you could copy the link to the query, the text of the query, and a table of the query output. For this example, select **Link, query, results to clipboard**.
+1. You can copy a variety of different combinations. For example, you could just copy a link to the query. You could copy a link to the query as well as the text of the query itself. Or, you could copy the link to the query, the text of the query, and a table of the query output. If the output is in the form of a visualization, this action also copies the visualization. For this example, select **Link, query, results to clipboard**.
 1. Paste the results in any editor, for example Microsoft Word.
 
     :::image type="content" source="../media/7-copy-query.png" alt-text="Screenshot of query results copied into word.":::

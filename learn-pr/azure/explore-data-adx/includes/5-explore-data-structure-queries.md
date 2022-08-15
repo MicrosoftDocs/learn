@@ -2,11 +2,11 @@ You've looked at a sample of the data and manipulated this sample to group and s
 
 ## Explore data structure
 
-Once you've answered basic questions about the data present in your dataset, you'll be able to drill down into the dataset to find trends and insights in the data. Drilling down in data is, by nature, an iterative process.
+Now that you've answered basic questions about the data present in your dataset, you can drill down into the dataset to find trends and insights in the data. Drilling down in data is, by nature, an iterative process.
 
 For example, on the first pass, you can use simple queries to define the range of the dataset. While you've qualitatively looked at the types of data, you can also use a query to investigate each column and its respective data type. You can then decide what columns you want to look at to summarize (aggregate) data. You can aggregate data by different subgroups to give counts and ranges (min/max) of certain fields. If you have dynamic data fields, you may want to expand them and see what kind of data is held within.
 
-On the second pass, you can zoom out and use queries to see what kind of useful features are in your data as a whole. You've seen in the previous exercise that you have timeseries data, data grouped by state, and data with very specific location. You'll further use queries and the built-in visualizations to explore these different kinds of series and gain insights into their completeness and distribution.
+On the second pass, you can zoom out and use queries to visualize your data as a whole. You've seen in the previous exercise that you have timeseries data, data grouped by state, and data with very specific location. You'll further use queries and the built-in visualizations to explore these different kinds of series and gain insights into their completeness and distribution.
 
 ## Share insights
 

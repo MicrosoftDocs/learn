@@ -1,4 +1,4 @@
-Azure Data Explorer web UI helps you consume and explore data. You can use Azure Data Explorer to collect, store, and analyze diverse data to gain insights and make data-informed decisions. In this module, you'll learn how to explore a new dataset in Azure Data Explorer web UI.
+Azure Data Explorer web UI helps you consume and explore data. You can use Azure Data Explorer to collect, store, and analyze diverse data to gain insights and make data-informed decisions. Here, you'll learn how to begin exploring a new dataset in Azure Data Explorer web UI.
 
 ## Example scenario
 
@@ -6,10 +6,7 @@ Suppose you're a weather enthusiast with a passion for data science. You've come
 
 ## What will we be doing?
 
-Here you'll explore an unfamiliar dataset by:
-   * characterizing the data structure
-   * characterizing the range of data
-   * sharing insights with others
+Here you'll explore an unfamiliar dataset by characterizing the dataset structure and range, visualizing the data distribution, and sharing these insights with others.
 
 While this module uses some queries in Kusto Query Language to characterize the data, writing complex queries is outside the scope of this module. To learn more about Kusto Query Language itself, see [Write your first query with Kusto Query Language](/learn/modules/write-first-query-kusto-query-language/).
 
