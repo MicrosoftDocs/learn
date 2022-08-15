@@ -216,13 +216,13 @@ Your database is now configured in Azure, and you have a superuser for your site
 
 ### Troubleshooting SSH
 
-If you couldn't connect to SSH from VS Code, here are some steps you can try:
+If you can't connect to SSH from VS Code, here are some steps you can try:
 
 * Go to the Azure portal page for the App Service and access SSH there. In VS Code, right-click the name of the App Service and select **Open in Portal**. On the portal page for the App Service, go to the **SSH** resources in the left resource pane.
 
-* Check that App Service started correctly. If there was a deployment error or coding issue, the App Service may not have started, and you can't SSH into it. On the portal page for the App Service, go to the **Diagnose and solve problems** in the left resource pane.
+* Check that App Service hosting the web app started correctly. If there was a deployment error or coding issue, the App Service may not have started, and you can't SSH into it. On the portal page for the App Service, go to the **Diagnose and solve problems** in the left resource pane to look for issues.
 
-* Read about [SSH in App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session).
+* Read more about [SSH in App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session).
 
 ## Go to your site
 
