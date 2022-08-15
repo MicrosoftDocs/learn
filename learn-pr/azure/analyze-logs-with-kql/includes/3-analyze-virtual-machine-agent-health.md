@@ -188,7 +188,7 @@ Understanding which agent versions are running on your machines can be useful in
 1. <!-- Step 1 (if multiple steps are needed) -->
 1. <!-- Step 2 (if multiple steps are needed) -->
 1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

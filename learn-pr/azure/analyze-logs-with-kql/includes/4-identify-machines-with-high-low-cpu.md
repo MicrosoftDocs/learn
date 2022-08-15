@@ -9,7 +9,6 @@
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
 To address performance issues, mitigate potential issues, and identify opportunities to operate more efficiently, you want to analyze the actual and used compute capacity in your IT environment. 
-
 TODO: add scenario image
 
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
@@ -65,19 +64,64 @@ Windows and Linux agents send performance counters to the `Perf` table in Azure 
 
 Note that 99th percentile means that 99% of all measured values are lower than the given value.
 
-1. 
+1. Retrieve all logs generated in the past day that report on % Processor Time:
     
     ```kusto     
     Perf  // The table you’re querying
     | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
-    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counters values for each computer 
+    ```
+    
+    This query retrieves all logs related to total processor time measurements from the past day. 
+
+1. Present the minimum, maximum, average, 90th and 99th percentile counter values for each computer: 
+
+    ```kusto     
+    Perf  // The table you’re querying
+    | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
+    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
+    ```
+    The result set of this query shows the minimum, maximum, average, 90th and 99th percentile % Processor Time counter values for each computer for which there's data in your Log Analytics workspace.
+
+1. Filter the query results for entries where the `% Processor Time` counter value is less than 50 in the 90th and 99th percentile range:
+    
+    ```kusto     
+    Perf  // The table you’re querying
+    | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
+    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
+    | where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
+    ```
+
+    The result set of this query consists of all computers where the top 10% and 15% of their CPU usage is below 50%.  
+
+1. To get a better understanding of your query results, you can retrieve related information from a different table and add the data to your query results using the `join` operator. 
+
+    For instance, you can add information from the `Heartbeat` table about the operating system running on each of the computers in your query results:
+    
+    ```kusto     
+    Perf  // The table you’re querying
+    | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
+    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
+    | where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
+    | join kind=inner (Heartbeat // Introduces data from the "Heartbeat" table to the previous query results
+    | where TimeGenerated > ago(1d) // Time range for the data added from the "Heartbeat" table
+    | distinct Computer, OSType) on Computer // Adds distinct combinations of computer and operating system 
+    ```
+
+    This iteration of the query adds the `Computer` and `OSType` columns from the `Heartbeat` table to the previous query results. Notice that the `Computer` column appears twice in the query results - once from the query on the `Perf` table and once from the query on the `Heartbeat` table. The `Computer` column from the `Heartbeat` table has been renamed `Computer1`, but the two tables contain identical data. Having both columns enables correlating the results from the two tables, but you can now filter away the duplicate column.
+    
+1. Remove the `Computer1` column from the query results: 
+
+    ```kusto     
+    Perf  // The table you’re querying
+    | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
+    | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
     | where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
     | join kind=inner (Heartbeat // Introduces data from the "Heartbeat" table to the previous query results
     | where TimeGenerated > ago(1d) // Time range for the data added from the "Heartbeat" table
     | distinct Computer, OSType) on Computer // Adds distinct combinations of computer and operating system 
     | project-away Computer1 // Removes the "Computer1" column from the query results 
     ```
-    
+
 <!-- 4. Validation -------------------------------------------------------------------------------------------
 
     Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
@@ -101,7 +145,6 @@ Note that 99th percentile means that 99% of all measured values are lower than t
 1. <!-- Step 1 (if multiple steps are needed) -->
 1. <!-- Step 2 (if multiple steps are needed) -->
 1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
