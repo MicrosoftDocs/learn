@@ -97,7 +97,7 @@ You can monitor your code scanning workflow from the GitHub user interface.  Thi
 
 ### Secret scanning and push protection
 
-When applications communicate with external systems, they often need to authenticate to gain access. This authentication is performed using keys known as _secrets_. Because developers work with secrets as they build code, it's not uncommon for them to accidentally commit these sensitive pieces of data to repositories. However, these keys create significant security risks if exposed. GitHub Advanced Security offers two capabilities to prevent the exposure of secrets, secret scanning and push protection:
+When applications communicate with external systems, they often need to authenticate to gain access. This authentication is performed using keys known as _secrets_. Because developers work with secrets as they build code, it's not uncommon for them to accidentally commit these sensitive pieces of data to repositories. However, these keys create significant security risks if exposed. GitHub Advanced Security offers the following capabilities to prevent the exposure of secrets:
 
 - **Secret scanning.** When you enable secret scanning, GitHub searches existing code on all branches present in your GitHub repository for keys. You can configure alerts to notify certain users if a secret has been found. Users can then take the appropriate remediation actions. For example, they can remove the key from the code and revoke and reissue the key that was compromised. Or, in some cases, the users may choose to ignore the alert, for example, if the scan identified a false positive.
 
