@@ -108,7 +108,7 @@ While your site is deploying, turn your attention to creating the database. You'
 
 Your server will now be created! This process will take a few minutes. 
 
-## Create a database firewall rule
+## Create a database firewall rule to allow access from dev environment
 
 After the database is created, you need to create a firewall rule to allow your developer environment to access the database. Wait until the database exists before following the next steps to create the rule.
 
@@ -138,7 +138,7 @@ Now that you've configured App Service and created the server, you can create th
 
 Your database will be created.
 
-## Allow access to the database server
+## Allow access to the database server from App Service
 
 In this exercise, you also need the dog shelters web app hosted in Azure App Service to connect to the Azure Database for PostgreSQL Flexible Server. When an application within Azure tries to connect to your database server, the firewall verifies that Azure connections are allowed. Above you allowed connections from your local environment. Now, you must also allow connections from App Service.
 
