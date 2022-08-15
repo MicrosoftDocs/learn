@@ -5,25 +5,11 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking).
 
     > [!NOTE]
-    > If you wish to use GitHub Codespaces, create a new codespace using the `main` branch of your newly forked repository, and then skip to step 5.
+    > If you wish to use GitHub Codespaces, create a new codespace using the `main` branch of your newly forked repository, and then skip to step 4.
 
-1. In a terminal on your development machine, run the following command to clone your forked repo for this module:
+1. From a new Visual Studio Code window, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Remote-Containers: Clone Repository in Container Volume**.
 
-    ```bash
-    git clone https://github.com/<user or org>/mslearn-microservices-devops-aspnet-core
-    ```
-
-1. Switch to the source code directory and launch Visual Studio Code:
-
-    ```bash
-    cd mslearn-microservices-devops-aspnet-core
-    code .
-    ```
-
-1. Visual Studio Code opens. When prompted, select **Reopen in Container** to open the repo in a development container.
-
-    > [!TIP]
-    > If you miss the prompt to reopen in container, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
+1. Provide your forked repository URL. Visual Studio Code creates your development container.
 
 1. After the project loads in the container, expand the *deploy/k8s* directory. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.)
 

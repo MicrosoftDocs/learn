@@ -5,7 +5,6 @@ It's likely that you've used open source or other third-party components in your
 You might also have your own app code that you can move into a library or package so that others can use it. This might be an open source project, or software that only your team can access.
 
 There are many ways to build and host your packages. The right solution depends both on the kinds of programming languages and frameworks you use and who you want to access your packages. Here, you'll continue your work with the Tailspin web team by creating a NuGet package for .NET that's hosted on Azure Artifacts.
-
 After completing this module, you'll be able to:
 
 - Create and share packages that can be used by multiple applications

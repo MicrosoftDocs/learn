@@ -125,7 +125,6 @@ Before you try to add a Universal Print printer to a user's device, ensure that:
 
  -  The user's device is connected to internet.
  -  The user's device is either:
-    
      -  Azure AD joined
      -  Azure AD registered
      -  Hybrid Azure AD joined

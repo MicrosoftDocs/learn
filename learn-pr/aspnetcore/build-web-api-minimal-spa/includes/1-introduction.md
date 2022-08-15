@@ -1,8 +1,8 @@
 As a developer, consider what it means to build a program that's meant for a web audience. Technically, you can meet this goal simply by building a static webpage, with HTML, CSS, and JavaScript.
 
-But more often than not, you're doing something more complicated than that. You're creating something that is multilayered, with one layer in HTML, CSS, and JavaScript, and another layer that's written in some other runtime. 
+But more often than not, you're doing something more complicated than that. You're creating something that is multilayered, with one layer in HTML, CSS, and JavaScript, and another layer that's written in some other runtime.
 
-In this module, you'll build one layer (sometimes referred to as a *front end*) by  using the React framework. You'll build another layer (a *back end*) by using .NET 6 and a minimal API. The combination of the two layers forms a *full stack app*.
+In this module, you'll build one layer (sometimes referred to as a *front end*) by using the React framework. You'll build another layer (a *back end*) by using .NET 6 and a minimal API. The combination of the two layers forms a *full stack app*.
 
 ## Scenario: Let's build a full stack app
 
@@ -14,4 +14,4 @@ You will learn how to create a front end for your minimal API app. You'll also l
 
 ## What is the main goal?
 
-The main goal is to build a full stack application that lets users on the web use your API, via an interface written by using React.
+The main goal is to build a full stack application that lets users on the web use your API, via an interface written using React.

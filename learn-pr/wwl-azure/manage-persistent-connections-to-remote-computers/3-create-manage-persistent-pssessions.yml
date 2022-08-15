@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-persistent-connections-to-remote-computers.create-manage-persistent-pssessions
+title: Create and manage persistent PSSessions by using Windows PowerShell
+metadata:
+  title: Create and manage persistent PSSessions by using Windows PowerShell
+  description: "Create and manage persistent PSSessions by using Windows PowerShell"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-create-manage-persistent-pssessions.md)]

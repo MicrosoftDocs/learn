@@ -1,6 +1,6 @@
-In the previous exercise, you created a web application that provides sample weather forecast data, and then interacted with it in the HTTP REPL.
+In the previous exercise, you created a web application that provides sample weather forecast data, then interacted with it in the HTTP REPL.
 
-Before you dive in to writing your own `PizzaController` class, let's look at the code in the `WeatherController` sample to understand how it works. In this unit, you'll see how `WeatherController` uses the `ControllerBase` base class and a few .NET attributes to build a functional web API in a few dozen lines of code. After you understand those concepts, you'll be ready to write your own `PizzaController` class.
+Before you dive in to writing your own `PizzaController` class, let's look at the code in the `WeatherController` sample to understand how it works. In this unit, you'll learn how `WeatherController` uses the `ControllerBase` base class and a few .NET attributes to build a functional web API in a few dozen lines of code. After you understand those concepts, you'll be ready to write your own `PizzaController` class.
 
 Here's the code for the entire `WeatherController` class. Don't worry if it doesn't make sense yet. We'll go through it step by step.
 
@@ -68,9 +68,9 @@ public class WeatherForecastController : ControllerBase
 
 ## Providing weather results with the `Get()` method
 
-`WeatherForecastController` includes a single controller action, designated by the `[HttpGet(Name = "GetWeatherForecast")]` attribute. This attribute routes HTTP `GET` requests to the `public IEnumerable<WeatherForecast> Get()` method. That's why, in the previous exercise, you saw that requests to `https://localhost:{PORT}/weatherforecast` caused the weather results to be returned. 
+`WeatherForecastController` includes a single controller action, designated by the `[HttpGet(Name = "GetWeatherForecast")]` attribute. This attribute routes HTTP `GET` requests to the `public IEnumerable<WeatherForecast> Get()` method. That's why, in the previous exercise, requests to `https://localhost:{PORT}/weatherforecast` caused the weather results to be returned.
 
-As you'll learn later in this module, other common actions are associated with a web API that performs CRUD operations (`GET`, `PUT`, `POST`, `DELETE`). But an API controller needs to implement only one controller action. 
+As you'll learn later in this module, other common actions are associated with a web API that performs CRUD operations (`GET`, `PUT`, `POST`, `DELETE`). But an API controller needs to implement only one controller action.
 
 In this case, you're getting the full list of `WeatherForecast` returned. The `GET` operation also allows for retrieving a single item by passing in an identifier. In ASP.NET, you can achieve this by using the `[HttpGet("{id}")]` attribute. You'll implement that attribute in the next exercise.
 
