@@ -23,7 +23,7 @@ quiz:
     - content: "Bulk email users with important system updates."
       isCorrect: false
       explanation: "Application provisioning is used for identity management, not for business applications."
-    - content: "Discover the how applications communicate with each other across your network."
+    - content: "Discover how applications communicate with each other across your network."
       isCorrect: false
       explanation: "Application provisioning is used for identity management, not for business applications."
     - content: "Create new no-code business applications."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Application provisioning secures your organization by instantly removing users' identities from key SaaS apps when they leave the organization."
     - content: "Easily importing a large number of users into a particular SaaS application or system."
       isCorrect: false
-      explanation: "Application provisioning let's you easily import large numbers of users into a particular SaaS application or system."
+      explanation: "Application provisioning lets you easily import large numbers of users into a particular SaaS application or system."
     - content: "Optimizes software updates on computers in your organization."
       isCorrect: true
       explanation: "Application provisioning ensures that you can easily provision users between systems."
