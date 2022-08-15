@@ -1,4 +1,5 @@
 You have had a chance to look at the raw data of an unfamiliar meterological dataset, and explore some of its properties in the results grid of Azure Data Explorer. 
+
 Here, you'll use queries to further characterize the size and variability of the data.
 
 ## Count the records
@@ -54,7 +55,7 @@ Recall in the last unit that you looked at several rows of data to infer the dat
 
 ## Unpack a dynamic field
 
-The dynamic field is essentially hiding extra data within a large field. In order to fully characterize all the available data, you expand the cell to view all information inside the dynamic field.
+The dynamic field is essentially hiding extra data within a large field. In order to fully characterize all the available data, you can expand the cell to view all information inside the dynamic field.
 
 1. Select the **Expand view** icon on the top right of the results grid.
 1. Select **Right** to view the expanded results in the right pane.

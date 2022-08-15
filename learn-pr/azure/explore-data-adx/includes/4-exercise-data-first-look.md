@@ -1,6 +1,6 @@
-When working with unfamiliar data, you need to first take a look at the data structure and general contents.
+When working with unfamiliar data, you need to first take a look at the data structure and its general contents.
 
-Recall that in our scenario, you've come across a new dataset that contains meterological information about storms in the US. In this unit, you'll get a first look at the data itself and learn how to characterize a new dataset Azure Data Explorer.
+Recall that in our scenario, you've come across a new dataset that contains meterological information about storms in the US. In this unit, you'll get a first look at the data itself.
 
 ## Look at the raw data
 
@@ -21,9 +21,13 @@ The very first thing you want to do is look at the actual data to learn about wh
 
 1. Look at the resulting table below the query, in what's called the **Results grid**. Scroll all the way to the right side to take note of all columns. Can you get a sense of the types of data and ranges of values in these columns? Remember that the fields shown are just a sampling of the whole table.
 
-## Sort the data on a column
+## Use the results grid to reorganize the data
 
-The results grid offers a range of built-in tools that are probably familiar actions from other environments. For example, you can sort the data based on a certain column. To sort on a specific column, select the name of that column in the results grid. The arrow that appears to the right of the column name indicates if it's sorted in ascending or descending order.
+The results grid offers a range of built-in tools that are probably familiar actions from other environments. For example, you can sort the data based on a certain column. 
+
+### Sort the data on a column
+
+To sort on a specific column, select the name of that column in the results grid. The arrow that appears to the right of the column name indicates if it's sorted in ascending or descending order.
 
 1. Select the **State** column.
 
@@ -31,7 +35,7 @@ The results grid offers a range of built-in tools that are probably familiar act
 
 1. Take a look at the resulting list. Do you see any states appearing in multiple rows? Remember that you're looking at the 50 rows you selected above, so you shouldn't expect to see a complete list.
 
-## Group results
+### Group results
 
 Taking the data sorting one step further, you can group, or aggregate, results by common fields. Note that the sorted list above gave several entries for various states.
 
@@ -41,7 +45,7 @@ Taking the data sorting one step further, you can group, or aggregate, results b
 
 :::image type="content" source="../media/4-group-by-state.gif" alt-text="Screen capture showing process of selecting state and grouping by state in Azure Data Explorer web UI.":::
 
-## Select a subset of data
+### Select a subset of data
 
 Now that you have an idea of what kind of data exists in your table, you can select a subset of that data, for example just flooding events.
 
@@ -51,7 +55,7 @@ Now that you have an idea of what kind of data exists in your table, you can sel
 
 :::image type="content" source="../media/4-add-selection-as-filters.gif" alt-text="Screen capture showing selecting cells and adding selection as filters in query.":::
 
-## Filter on a value
+### Filter on a value
 
 You can also filter on a single value. In this case, let's view all events that happened in the state of Ohio.
 
@@ -65,7 +69,7 @@ You can also filter on a single value. In this case, let's view all events that 
     
     :::image type="content" source="../media/4-filter-column.gif" alt-text="Screen capture showing column filter on a string value.":::
 
-## Summarize selected cells
+### Summarize selected cells
 
 On the bottom right corner of the results grid, selected cells are summarized. When you select integer values, you can also see a statistical summary of these values.
 

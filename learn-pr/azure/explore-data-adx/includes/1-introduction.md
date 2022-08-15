@@ -1,4 +1,4 @@
-Azure Data Explorer web UI helps you consume and explore data. You can use Azure Data Explorer to collect, store, and analyze diverse data to gain insights and make data-informed decisions. In this module, you'll learn how to explore your data in Azure Data Explorer.
+Azure Data Explorer web UI helps you consume and explore data. You can use Azure Data Explorer to collect, store, and analyze diverse data to gain insights and make data-informed decisions. In this module, you'll learn how to explore a new dataset in Azure Data Explorer web UI.
 
 ## Example scenario
 
