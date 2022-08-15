@@ -16,7 +16,7 @@ Start by installing the Azure App Service extension in Visual Studio Code:
 
 1. Under **Azure App Service**, select **Install**.
 
-If you already have the [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice), make sure it's updated to the latest version. See the last updated date on the extension page. If you are working with the latest version you should see a **RESOURCES** node with an **App Services** node.
+If you already have the [Azure App Service extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice), make sure it's updated to the latest version. See the last updated date on the extension page. If you're working with the latest version, you should see a **RESOURCES** node with an **App Services** node.
 
 ## Deploy the application
 
@@ -142,7 +142,7 @@ Your database will be created.
 
 In this exercise, you also need the dog shelters web app hosted in Azure App Service to connect to the Azure Database for PostgreSQL Flexible Server. When an application within Azure tries to connect to your database server, the firewall verifies that Azure connections are allowed. Above you allowed connections from your local environment. Now, you must also allow connections from App Service.
 
-1. In the **RESOURCES** of the Azure Tools extension, expand the **PostgreSQL Servers (Flexible)** node and find the server you created.
+1. In VS Code, in the **RESOURCES** of the Azure Tools extension, expand the **PostgreSQL Servers (Flexible)** node and find the server you created.
 
 1. Right-click the name of your database server and select **Open in Portal**.
 
