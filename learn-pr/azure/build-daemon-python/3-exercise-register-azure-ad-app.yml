@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.build-daemon-python.exercise-register-azure-ad-app
+title: Exercise - Register an application with Azure AD
+metadata:
+  unitType: learning-content
+  title: Exercise - Register an application with Azure AD
+  description: A step-by-step exercise to register a daemon app with an Azure AD tenant using the Azure portal.
+  ms.date: 08/10/2022
+  author: henrymbuguakiarie
+  ms.author: henrymbugua
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-register-azure-ad-app.md)]
