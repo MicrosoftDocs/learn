@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe network-based threats and mitigations
-summary: Networks form the backbone of our digitally connected world.  They also represent an entry point for cyberattacks.  In this module you will learn about threats to network security and how to mitigate those threats.
+summary: Networks form the backbone of our digitally connected world.  They also represent an entry point for cyberattacks.  In this module, you'll learn about threats to network security and how to mitigate those threats.
 abstract: |
   - Describe the basics of networks
   - Describe the threats to network security
