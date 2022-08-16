@@ -1,53 +1,55 @@
-[Resource tags ](/azure/azure-resource-manager/management/tag-resources?tabs=json)are another way to organize resources. Tags provide extra information, or metadata, about your resources. 
+[Resource tags](/azure/azure-resource-manager/management/tag-resources?tabs=json) are another way to organize resources. Tags provide extra information, or metadata, about your resources. 
 
 > [!TIP]
-> Before starting a resource tagging project, ask yourself what you want to accomplish. Will the tags be used for reporting or billing? Perhaps you will use the tags to enable more effective searching? Maybe the tags will be used in automated scripts. Be sure to clearly define your goals. 
+> Before you start a resource tagging project, ask yourself what you want to accomplish. Will the tags be used for reporting or billing? Can you use the tags to enable more effective searching for Tailwind Traders? Maybe the tags can be used in automated scripts. Be sure to clearly define your goals. 
 
 ### Things to know about resource tags
 
-- A resource tag consists of a name-value pair. For example, env: production or env: test.
+As you plan the governance strategy for Tailwind Traders, consider these characteristics of resource tags:
+
+- A resource tag consists of a name-value pair. For example, `env: production` or `env: test`.
 
 - You can assign one or more tags to each Azure resource, resource group, or subscription.
 
-- You can add, modify, or delete resource tags. These actions can be done with PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal.
+- Resource tags can be added, modified, and deleted. These actions can be done with PowerShell, the Azure CLI, Azure Resource Manager (ARM) templates, the REST API, or the Azure portal.
 
-- You can [apply tags](/azure/azure-resource-manager/management/tag-resources) to a resource group. However, tags applied to the resource group aren't inherited by the resources.
+- [Tags can be applied](/azure/azure-resource-manager/management/tag-resources) to a resource group. However, tags applied to a resource group aren't inherited by the resources in the group.
 
 ### Things to consider when creating resource tags
 
-Tailwind Traders has created their organization hierarchy and now needs to determine which resource tags to apply. 
+You've successfully created the organizational hierarchy for Tailwind Traders. Now you need to determine which resource tags to apply. 
 
-:::image type="content" source="../media/resource-tags.png" alt-text="Example hierarchy of resource tags.":::
+:::image type="content" source="../media/resource-tags.png" alt-text="Diagram that shows an example hierarchy of resource tags." border="false":::
 
-- **Consider your organization’s taxonomy.** Has your organization already defined terms for compliance or cost reporting? Aligning tags with accepted department nomenclature will make it easier to understand. For example, are office locations, confidentiality levels, and programs already defined? 
+- **Consider your organization's taxonomy.** Align your resource tags with accepted department nomenclature to make it easier to understand. Are there recognized terms for compliance or cost reporting for the Tailwind Traders organization? Add tags for office locations, confidentiality levels, or other defined policies.
 
-- **Consider whether you need IT-aligned or business-aligned tagging.** Generally, you can choose IT-aligned tagging or business-aligned tagging. A combination of the two approaches can be effective. Many organizations are shifting from IT-aligned to business-aligned tagging strategies. 
+- **Consider whether you need IT-aligned or business-aligned tagging.** Implement IT-aligned tagging or business-aligned tagging, or a combination of these approaches to be most effective.
 
-| **Tagging scheme**| **Description**| **Example** |
-| - | - | -|
-| **IT-aligned tagging**| Focuses on workload, application, function, or environment criteria. Reduces the complexity of monitoring assets. Simplifies making management decisions based on operational requirements.| Our printers are busy 80% of the time. We have five high-speed color printers and should buy more. |
-| **Business-aligned tagging**| Focuses on accounting, business ownership, cost responsibility, or business criticality. Provides improved accounting for costs and value of IT assets to the overall business. Shifts the focus from an asset’s operational cost to an asset’s business value.| Our marketing department’s promotional literature has increased sales revenue 10%. We should invest in more printing capabilities. | 
+   > [!Tip]
+   > Many organizations are shifting from IT-aligned to business-aligned tagging strategies. 
 
-**Consider the type of tagging that is required.** 
+   The following table describes the tagging options in detail.
 
-Resource tags generally fall into five categories functional, classification, accounting, partnership, and purpose. 
+   | Tag alignment | Description | Example scenario |
+   | --- | --- | ---|
+   | **IT-aligned** | The IT-aligned option is useful for tracking workload, application, function, or environment criteria. This option can reduce the complexity of monitoring assets. IT-aligned tagging simplifies making management decisions based on operational requirements. | Tailwind Traders printers are busy 80% of the time. We have five high-speed color printers and should buy more. Use IT-aligned tagging to support printer resource workload and function. |
+   | **Business-aligned** | The Business-aligned option helps to focus on accounting, business ownership, cost responsibility, and business criticality. This option provides improved accounting for costs and value of IT assets to the overall business. You can use Business-aligned tagging to shift the focus from an asset's operational cost to an asset's business value. | The Tailwind Traders Marketing department's promotional literature has increased sales revenue 10%. We should invest in more printing capabilities. Use Business-aligned tagging to support marketing resource ownership, accounting, and cost. | 
 
-| **Tag type**| **Examples**| **Description** |
-| - | - | - |
-| Functional| app = catalogsearch1  <br>tier = web  <br>webserver = apache  <br>‎env = prod, dev, staging| Categorize resources by their purpose within a workload, what environment they've been deployed to, or other functionality and operational details. |
-| Classification| confidentiality = private  <br>SLA = 24hours| Classifies a resource by how it's used and what policies apply to it. |
-| Accounting| department = finance  <br>program = business-initiative  <br>region = northamerica| Allows a resource to be associated with specific groups within an organization for billing purposes. |
-| Partnership| owner = jsmith  <br>contactalias = catsearchowners  <br>‎stakeholders = user1;user2;user3| Provides information about what people (outside of IT) are related or otherwise affected by the resource. |
-| Purpose| businessprocess = support  <br>businessimpact = moderate  <br>‎revenueimpact = high| Aligns resources to business functions to better support investment decisions. |
+- **Consider the type of tagging required.** Plan to use different types of resource tags to support the Tailwind Traders organization. Resource tags generally fall into five categories: functional, classification, accounting, partnership, and purpose. 
 
+   | Resource tag type | Description | Examples of name-value pairs |
+   | --- | --- | --- |
+   | **Functional** | Functional tags categorize resources according to their purpose within a workload. This tag shows the deployed environment for a resource, or other functionality and operational details. | `app = catalogsearch1` <br> `tier = web` <br> `webserver = apache` <br> `env = prod, dev, staging` |
+   | **Classification** | Classification tags identify a resource by how it's used and what policies apply to it. | `confidentiality = private` <br> `SLA = 24hours` |
+   | **Accounting** | Accounting tags allow a resource to be associated with specific groups within an organization for billing purposes. | `department = finance` <br> `program = business-initiative` <br> `region = northamerica` | 
+   | **Partnership** | Partnership tags provide information about the people (other than IT members) who are associated with a resource, or otherwise affected by the resource. | `owner = jsmith` <br> `contactalias = catsearchowners` <br> `stakeholders = user1;user2;user3` |
+   | **Purpose** | Purpose tags align resources to business functions to better support investment decisions. | `businessprocess = support` <br> `businessimpact = moderate` <br> `revenueimpact = high` | 
 
- 
+- **Consider starting with a few tags and then scale out.** The resource tagging approach you choose can be simple or complex. Rather than identify all the possible tags required by the Tailwind Traders organization, prototype with just a few important or critical tags. Determine how effective the tagging scheme is before you add more resource tags. 
 
-- **Consider starting with a few tags and then scaling out.** Your resource tagging approach can be simple or complex. Rather than identifying all the possible tags your organization needs, prototype using a few important or critical tags. Determine how effective the tagging is before adding more resource tags. 
+- **Consider using Azure policy to apply tags and enforce tagging rules and conventions.** Resource tagging is only effective if it's used consistently across an organization. You can use Azure policy to require that certain tags be added to new resources as they're created. You can also define rules that reapply tags that have been removed.
 
-- **Consider using Azure policy to apply tags and enforce tagging rules and conventions**. Resource tagging is only effective if it’s used consistently across an organization. You can use Azure policy to require that certain tags be added to new resources as they're provisioned. You can also define rules that reapply tags that have been removed.
-
-- **Consider which resources require tagging.** Keep in mind that you don't need to enforce that a specific tag is present on all your resources. For example, you might decide that only mission-critical resources have the Impact tag. All non-tagged resources would then not be considered as mission critical.
+- **Consider which resources require tagging.** Keep in mind that you don't need to enforce that a specific tag is present on all Tailwind Traders resources. You might decide that only mission-critical resources have the `Impact` tag. All non-tagged resources would then not be considered as mission critical.
 
 > [!NOTE]
-> You’ll need support from many different stakeholders to implement an effective resource tagging structure. 
+> To implement an effective resource tagging structure, seek input from the different stakeholders in your organization. 
