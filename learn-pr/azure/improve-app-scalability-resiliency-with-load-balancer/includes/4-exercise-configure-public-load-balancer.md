@@ -102,7 +102,7 @@ Now, let's create the load balancer.
 
 1. Under **Virtual machine**, select the **webVM1** and **webVM2** virtual machines and select **Add**.
 
-   :::image type="content" source="../media/4-lb-add-IPconfig-backend-pool.png" alt-text="Screenshot that shows the settings on the Add IP configurations to backend pool pane.":::
+   :::image type="content" source="../media/4-lb-add-ipconfig-backend-pool.png" alt-text="Screenshot that shows the settings on the Add IP configurations to backend pool pane.":::
 
 1. The **Add backend pool** screen reappears. Under **IP configurations**, select the **webVM1** and **webVM2** virtual machines and select **Save**. The **Create load balancer** screen reappears.
 
