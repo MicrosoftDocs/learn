@@ -8,7 +8,7 @@
 
     Example: "You'll be <building> a <Logic App> that <determines the sentiment of new tweets and reacts accordingly>. Here, we'll discuss the project <business logic and target behavior>. We'll also cover the <accounts and software> you'll need."
 -->
-You'll be writing KQL queries to extract, transform, and clearly present data that helps you address the IT issues your retail chain is experiencing. Here, we'll discuss the approach we'll take to translating data you've collected in Azure Monitor Logs into answers to operational questions. 
+You'll be writing KQL queries to extract, transform, and clearly present data that helps you address the IT issues your retail chain is experiencing. Here, we'll discuss the approach we'll take to making sense of data you've collected in Azure Monitor Logs and extracting answers to operational questions. 
 
 <!-- 2. Project overview -------------------------------------------------------------------------------------
 
