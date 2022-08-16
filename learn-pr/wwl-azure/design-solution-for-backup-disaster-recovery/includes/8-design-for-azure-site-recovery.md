@@ -20,9 +20,9 @@ Site Recovery provides the capabilities described in the following table.
 | Keep apps consistent over failover| By using app-consistent snapshots, you can replicate using recovery points. These snapshots capture disk data, data in memory, and all in process transactions. |
 | Testing without disruption| You can run disaster recovery tests, without affecting ongoing replication. |
 | Flexible failovers| You can run planned failovers for expected outages with no data loss. Run unplanned failovers with minimal data loss. And fail back to your primary site when it's available again. |
-| Customized recovery plans| Create recovery plans so that you can customize and sequence the failover and recovery of your multi-tier apps running on multiple VMs. You can group machines together in a recovery plan. You can then, optionally, add scripts and manual actions. You can integrate recovery plans with Azure automation runbooks. |
+| Customized recovery plans| Create recovery plans so that you can customize and sequence the failover and recovery of your multi-tier apps running on multiple VMs. You can group machines together in a recovery plan. You can then, optionally, add scripts and manual actions. You can integrate recovery plans with Azure Automation runbooks. |
 | BCDR integration| You can integrate Site Recovery with other BCDR technologies. For example, use Site Recovery to protect the SQL Server backend of your corporate workloads. Because of its native support for SQL Server AlwaysOn, you can manage the failover of availability groups. |
-| Azure automation integration| Download, from the Azure Automation library, and integrate app-specific scripts with Site Recovery. |
+| Azure Automation integration| Download, from the Azure Automation library, and integrate app-specific scripts with Site Recovery. |
 
 
 ### Consider using Azure Site Recovery with Azure Backup

@@ -24,7 +24,7 @@ Azure Backup offers multiple components that you can download and deploy on the 
 
 ### Where is the data backed up?
 
-Azure Backup organizes your backup data in a storage entity called a vault. A storage vault stores backup copies, recovery points, and backup policies.. There are two types of vaults. The primary differences in the vaults are supported data sources and supported Azure products. 
+Azure Backup organizes your backup data in a storage entity called a vault. A storage vault stores backup copies, recovery points, and backup policies. There are two types of vaults. The primary differences in the vaults are supported data sources and supported Azure products. 
 
 | Capability| Supported data sources| Supported products |
 | - | - | - |
@@ -42,4 +42,4 @@ Azure Backup organizes your backup data in a storage entity called a vault. A st
 
 - **Protect using Azure role-based access control (RBAC).** Protect and manage vault access by using Azure RBAC. 
 
-- **Design for Redundancy.** Specify how data in the vault is replicated for redundancy. Use Locally redundant storage (LRS) to protect against failure in a datacenter. LRS replicates data to a storage scale unit. Use Geo-redundant storage (GRS) to protect against region-wide outages. GRS replicates your data to a secondary region.. 
+- **Design for Redundancy.** Specify how data in the vault is replicated for redundancy. Use Locally redundant storage (LRS) to protect against failure in a datacenter. LRS replicates data to a storage scale unit. Use Geo-redundant storage (GRS) to protect against region-wide outages. GRS replicates your data to a secondary region. 
