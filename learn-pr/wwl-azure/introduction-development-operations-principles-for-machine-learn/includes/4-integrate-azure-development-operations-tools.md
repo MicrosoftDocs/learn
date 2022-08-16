@@ -67,7 +67,7 @@ To use GitHub to automate machine learning workflows, you can authenticate GitHu
 
 To create a service principal, you can use the [Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli). To work with the CLI, one option is to submit commands in the [Azure Cloud Shell](https://shell.azure.com/?portal=true).
 
-You can create a service principal named `github-aml-sp` that will be given *Contributor* access to the resource group with the following command:
+You can create a service principal named `github-aml-sp` that will be given *Contributor* access to the Azure Machine Learning workspace with the following command:
 
 ```azurecli
 az ad sp create-for-rbac --name "github-aml-sp" --role contributor \
@@ -75,7 +75,7 @@ az ad sp create-for-rbac --name "github-aml-sp" --role contributor \
                             --sdk-auth
 ```
 
-Once the service principal is created, you'll see a JSON text as output which includes the credentials GitHub will need to connect to your Azure resource group. Copy the JSON text and save it for the next step.
+Once the service principal is created, a JSON text is returned to you as output which includes the credentials GitHub will need to connect to your Azure resource group. Copy the JSON text and save it for the next step.
 
 To store these credentials in GitHub:
 
@@ -88,7 +88,7 @@ To store these credentials in GitHub:
 
 ![New secret in GitHub](../media/04-04-github-secret.png)
 
-Once the secret is added to GitHub, you can use the `AZURE_CREDENTIALS` secret whenever you need GitHub to be authenticated to work with any resources in your resource group, for example your Azure Machine Learning workspace.
+Once the secret is added to GitHub, you can use the `AZURE_CREDENTIALS` secret whenever you need GitHub to be authenticated to work with your Azure Machine Learning workspace.
 
 > [!TIP]
 > Continue your learning on integrating GitHub with Azure Machine Learning and explore how to [use GitHub Actions with Azure Machine Learning](/azure/machine-learning/how-to-github-actions-machine-learning). The tutorial uses the `AZURE_CREDENTIALS` secret to connect with Azure.

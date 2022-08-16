@@ -39,7 +39,7 @@ We won't go into many of the details about how App Service works, or the configu
     | **Instance Details** |
     | Name | Provide a unique name, such as *tailspin-space-game-1234*. This name must be unique across Azure. It becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
     | Publish  | Code |
-    | Runtime stack | .NET 5 |
+    | Runtime stack | .NET 6 |
     | Operating System | Linux |
     | Region | Select a region, preferably one close to you.|
     | **App Service Plan** |
