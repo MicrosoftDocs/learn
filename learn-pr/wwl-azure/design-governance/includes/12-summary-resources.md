@@ -14,6 +14,8 @@ In this module, you’ve learned how to design with governance in mind. You have
 
 - Design for Azure blueprints. 
 
+- Design for Azure landing zones. 
+
 ### Learn more with Azure documentation
 
 - [Governance in the Microsoft Cloud Adoption Framework for Azure - Cloud Adoption Framework | Microsoft Docs](/azure/cloud-adoption-framework/govern/)
@@ -37,6 +39,11 @@ In this module, you’ve learned how to design with governance in mind. You have
 - [Introduction to Azure Blueprints - Learn](/learn/modules/intro-to-azure-blueprints/)
 
 - [Secure your Azure resources with Azure role-based access control (Azure RBAC) - Learn](/learn/modules/secure-azure-resources-with-rbac/)
+
+- [Introduction to enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure](/learn/modules/enterprise-scale-introduction/)
+
+- [Choose the best Azure landing zone to support your requirements for cloud operations](/learn/modules/cloud-adoption-framework-ready/)
+
 
 ## Learn more with optional hands-on exercises
 
