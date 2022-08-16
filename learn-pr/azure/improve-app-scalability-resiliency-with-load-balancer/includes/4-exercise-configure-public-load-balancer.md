@@ -56,6 +56,8 @@ Now, let's create the load balancer.
     | Type | **Public** |
     | Tier | **Regional** |
 
+   :::image type="content" source="../media/4-create-details-lb.png" alt-text="Screenshot that shows the Basics tab of the Create a Load Balancer screen in the Azure portal.":::
+
 ## Add a front-end IP configuration
 
 1. Select **Next : Frontend IP configuration**.
@@ -78,6 +80,8 @@ Now, let's create the load balancer.
     | SKU | Previously set to **Basic**. |
     | Tier | Previously set to **Regional**. |
     | Assignment | Select **Static** |
+
+   :::image type="content" source="../media/4-add-frontend-ip-config.png" alt-text="Screenshot that shows the completed settings for the Add frontend IP configuration.":::
 
 1. To close the dialog box, select **OK**. The **Add frontend IP configuration** pane reappears. Select **Add**. The **Create load balancer** pane appears.
 
@@ -140,7 +144,7 @@ Finally, let's create a rule for the load balancer.
 
     | Setting | Value |
     | ----- | ----------- |
-    | Session persistence*| **None** |
+    | Session persistence*| **None** (default) |
     | Idle timeout (minutes) | Select **4** (default). This value is the time to keep a TCP or HTTP connection open without relying on clients to send keep-alive messages. |
     | Floating IP | **Disabled** (default). |
 
@@ -349,6 +353,6 @@ Let's test the load balancer setup to show how it can handle availability and he
 
 1. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both VMs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1** > **Stop**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
 
 1. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.
