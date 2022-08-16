@@ -1,4 +1,4 @@
-Oftentimes, you'll need to combine data from many different sources, including literal strings and variables containing both text and numeric data. In this module, you'll learn about two methods to accomplish this. In this unit, you'll use string concatenation to combine two or more values into a new string.
+Often, you'll need to combine data from many different sources, including literal strings and variables containing both text and numeric data. In this module, you'll learn about two methods to accomplish this. In this unit, you'll use string concatenation to combine two or more values into a new string.
 
 ## What is string concatenation?
 
