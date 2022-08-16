@@ -37,7 +37,7 @@ Next, connect the storage account as the destination for the Stream Analytics jo
 
 1. In the left nav bar, under **Job topology**, select **Outputs**.
 
-1. Select **+ Add**, and from the list, select **Blob storage**. The **Blob storage/ADLS Gen2** panel appears.
+1. Select **+ Add**, and from the list, select **Blob storage**. The **Blob storage/ADLS Gen2** panel displays.
 
     | Setting  | Value  |
     |---|---|

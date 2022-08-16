@@ -5,11 +5,11 @@ In this exercise, we'll transform the input data in a simple way to demonstrate 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account or prefer not to do the exercise in your account, just read through the instructions so you understand how to set up an input file and change the transformation query in a Stream Analytics job.
 
-Let's imagine you need to pull elements out of some census data. In this case, you want the coordinates of each city in the census data. You'll use a simple JSON file as your input. Run a transformation query to pull coordinates out of the data, and then write the results to a new file in your Blob storage.
+Let's imagine you need to pull elements out of some census data. In this case, you want the coordinates of each city in the census data. You'll use a JSON file as your input. Run a transformation query to pull coordinates out of the data, and then write the results to a new file in your Blob storage.
 
 ## Create the sample input file
 
-Start by creating a simple input file named **input.json** on your local computer. The file has these contents.
+Start by creating an input file named **input.json** on your local computer. The file has these contents.
 
 ```json
 {
@@ -34,7 +34,7 @@ Next, upload the JSON file to a Blob storage container.
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. Go to your source Blob storage account (**streamsrc**).
+1. Go to your source Blob storage account **streamsrc**.
 
     > [!TIP]
     > To find resources by name, use the Search field at the top of the Azure portal. To find related resources, use your resource group.

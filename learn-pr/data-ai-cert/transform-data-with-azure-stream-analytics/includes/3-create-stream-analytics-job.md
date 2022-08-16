@@ -11,7 +11,7 @@ Let's start by creating a new Azure Stream Analytics job in the Azure portal.
 
 1. On the **Stream Analytics jobs** page, select **+ Create**.
 
-    :::image type="content" source="../media/3-create-stream-analytics-job.png" alt-text=".Screenshot showing the Stream Analytics jobs page in the Azure portal.":::
+    :::image type="content" source="../media/3-create-stream-analytics-job.png" alt-text="Screenshot that shows the Stream Analytics jobs page in the Azure portal.":::
 
     The **New Stream Analytics job** page appears.
 
@@ -27,7 +27,7 @@ Let's start by creating a new Azure Stream Analytics job in the Azure portal.
 
 1. Select **Review + Create**. After validation completes, select **Create** to create the new job.
 
-    :::image type="content" source="../media/3-new-stream-analytics-job-create-page.png" alt-text="Screenshot of the new Stream Analytics job.":::
+    :::image type="content" source="../media/3-new-stream-analytics-job-create-page.png" alt-text="Screenshot that shows the new Stream Analytics job.":::
 
 1. After the deployment is complete, select **Go to resource** to see your new Stream Analytics job.
 

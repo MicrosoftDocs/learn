@@ -8,7 +8,7 @@ To avoid unnecessary charges, you'll want to delete all the resources you create
 
 1. Select the group, and then select **Delete resource group**.
 
-Because you're deleting a whole set of resources together, Azure prompts you to confirm that you want to do this.
+Confirm that you want to do delete all resources in the group.
 
 ## Learn more
 

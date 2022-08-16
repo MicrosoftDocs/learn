@@ -6,7 +6,7 @@ To see the job's results, perform the following steps.
 
 1. Select **Storage browser**.
 
-1. On the right, under **Blob containers**, open your container (**learn-container-output**).
+1. On the right, under **Blob containers**, open your container **learn-container-output**.
 
 1. Go to the **output** folder, and select the file inside it.
 
