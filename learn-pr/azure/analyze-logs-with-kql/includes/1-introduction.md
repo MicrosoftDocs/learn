@@ -57,7 +57,7 @@ Here, you'll use KQL to answer operational and business questions by interpretin
 
 - **Define analysis goals**: Determine what information will provide you with the insights you need.
 - **Explore and assess logs**: Examine the raw log data you've collected in your Log Analytics workspace. 
-- **Extract, transform, and summarize insights**: Use KQL to deliver clear and meaningful insights. 
+- **Extract and summarize insights**: Use KQL to deliver clear and meaningful information that answers your analysis goals. 
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
