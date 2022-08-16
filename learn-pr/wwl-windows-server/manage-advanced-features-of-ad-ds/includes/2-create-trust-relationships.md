@@ -6,16 +6,81 @@ AD DS trusts enable access to resources in a multiple-domain and multiple-forest
 
 In a multiple-domain AD DS forest, by default, domains form a tree-like structure with a two-way transitive trust relationship between directly adjacent domains. Trust transitivity implies that a path of trust exists between all the AD DS domains in the same forest. Additionally, you can create other types of trusts. The following table describes the main trust types.
 
-|Trust type|Description|Direction|Description|
-|----|--------------|------------|------------|
-|External|Nontransitive|One-way or two-way|Enable resource access with an individual AD DS domain in another forest.|
-|Realm|Transitive or nontransitive|One-way or two-way|Establish an authentication path between a Windows Server AD DS domain and a Kerberos version 5 (v5) protocol realm that implements by using a directory service other than AD DS.|
-|Forest (complete or selective)|Transitive|One-way or two-way|Allow two forests to share resources.|
-|Shortcut|Nontransitive|One-way or two-way|Reduce the time taken to authenticate between two, not directly adjacent domains in the same multiple-domain AD DS forest.|
+:::row:::
+  :::column:::
+    **Trust type**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+  :::column:::
+    **Direction**
+  :::column-end:::
+  :::column:::
+    **Description**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    External
+  :::column-end:::
+  :::column:::
+    Nontransitive
+  :::column-end:::
+  :::column:::
+    One-way or two-way
+  :::column-end:::
+  :::column:::
+    Enable resource access with an individual AD DS domain in another forest.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Realm
+  :::column-end:::
+  :::column:::
+    Transitive or nontransitive
+  :::column-end:::
+  :::column:::
+    One-way or two-way
+  :::column-end:::
+  :::column:::
+    Establish an authentication path between a Windows Server AD DS domain and a Kerberos version 5 (v5) protocol realm that implements by using a directory service other than AD DS.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Forest (complete or selective)
+  :::column-end:::
+  :::column:::
+    Transitive
+  :::column-end:::
+  :::column:::
+    One-way or two-way
+  :::column-end:::
+  :::column:::
+    Allow two forests to share resources.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Shortcut
+  :::column-end:::
+  :::column:::
+    Nontransitive
+  :::column-end:::
+  :::column:::
+    One-way or two-way
+  :::column-end:::
+  :::column:::
+    Reduce the time taken to authenticate between two, not directly adjacent domains in the same multiple-domain AD DS forest.
+  :::column-end:::
+:::row-end:::
 
-:::image type="content" source="../media/m9-shortcut-trust.png" alt-text="The shortcut trust between two child domains in the adatum.com AD DS forest." border="false":::
 
-:::image type="content" source="../media/m9-forest-trust.png" alt-text="The two-way forest trust between the Tailspintoys.com and Wideworldimporters.com AD DS forests." border="false":::
+:::image type="content" source="../media/m9-shortcut-trust-cafa4e1c.png" alt-text="The shortcut trust between two child domains in the adatum.com AD DS forest.":::
+:::image type="content" source="../media/m9-forest-trust-5cc921f4.png" alt-text="The two-way forest trust between the Tailspintoys.com and Wideworldimporters.com AD DS forests.":::
+
 
 > [!NOTE]
 > Forest trust relationships provide most flexibility from the authentication standpoint. They are also easier to establish, maintain, and administer than separate trust relationships between external, domain-level trusts and individual domains across the two forests.
@@ -24,7 +89,7 @@ In a multiple-domain AD DS forest, by default, domains form a tree-like structur
 
 If the AD DS environment contains multiple forests, it is possible to set up one-way or two-way trust relationships between any pair of forests. With a one-way forest trust, you can grant users in the trusted forest access to resources in the trusting forest. With a two-way forest trust, it becomes possible to grant users on each side of the trust access to resources in the other forest.
 
-When creating a trust, you specify the root domain of each forest. However, because forest trusts are transitive for all domains in each forest, you effectively establish a trust between each pair of domains across both forests. However, unlike trusts between multiple domains in the same forest, forest trusts are not transitive across multiple forests. This means that if you create a forest trust between Forest 1 and Forest 2 and you create a forest trust between Forest 2 and Forest 3, Forest 1 doesn't implicitly trust Forest 3.
+When creating a trust, you specify the root domain of each forest. However, because forest trusts are transitive for all domains in each forest, you effectively establish a trust between each pair of domains across both forests. However, unlike trusts between multiple domains in the same forest, forest trusts are not transitive across multiple forests. Forest trusts can only be created between two forests and can't be implicitly extended to a third forest. This means that if you create a forest trust between Forest 1 and Forest 2 and you create a forest trust between Forest 2 and Forest 3, Forest 1 doesn't implicitly trust Forest 3.
 
 Forest trusts are particularly useful in scenarios that involve cross-organization collaboration, mergers and acquisitions, or within a single organization that has more than one forest in which to isolate Active Directory data and services. Forest trusts are also useful for application service providers, for collaborative business extranets, and for organizations that want a solution for administrative autonomy.
 
@@ -42,8 +107,8 @@ By default, when you establish a forest or domain trust, you can enable a domain
 
 When you create a forest trust, you can manage the scope of authentication of trusted security principals. There are two modes of authentication for an external or forest trust:
 
-- Forest-wide authentication.
-- Selective authentication.
+ -  Forest-wide authentication.
+ -  Selective authentication.
 
 Choosing the forest-wide authentication enables all users in the trusted forest to authenticate for services and access on all computers in the trusting forest. Therefore, it is possible for resource administrators in the trusting forest to grant users from the trusted forest permissions to resources in the local forest. Additionally, all users from a trusted forest are considered Authenticated Users in the trusting forest. Effectively, any resource that grants permissions to Authenticated Users becomes accessible by users in the trusted forest.
 
@@ -56,20 +121,15 @@ If you choose selective authentication, users in the trusted forest are not cons
 
 The following video demonstrates how to:
 
-- Configure prerequisites for trust relationships.
-- Create a trust relationship.
+ -  Configure prerequisites for trust relationships.
+ -  Create a trust relationship.
 
 The main steps in the process are:
 
-1. Create two AD DS forests. Deploy two domain controllers, with each one in a separate forest. Make sure that their names don't match.
-1. Configure DNS conditional forwarding. Configure DNS conditional forwarding on each AD DS Domain controller to provide DNS name resolution across forests.
-1. Create a forest trust relationship from the first forest to the second one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the first forest to the second forest.
-1. Create a forest trust relationship from the second forest to the first one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the second forest to the first forest.
+1.  Create two AD DS forests. Deploy two domain controllers, with each one in a separate forest. Make sure that their names don't match.
+2.  Configure DNS conditional forwarding. Configure DNS conditional forwarding on each AD DS Domain controller to provide DNS name resolution across forests.
+3.  Create a forest trust relationship from the first forest to the second one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the first forest to the second forest.
+4.  Create a forest trust relationship from the second forest to the first one. Use Active Directory Domains and Trusts to establish one-way trust relationship from the second forest to the first forest.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4M7ug]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4M7ug]
 
----
-
-
-
----

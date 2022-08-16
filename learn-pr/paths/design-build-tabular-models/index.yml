@@ -3,7 +3,7 @@ uid: learn.wwl.design-build-tabular-models
 metadata:
   title: Design and build tabular models
   description: Design and build tabular models
-  ms.date: 08/12/2022
+  ms.date: 08/16/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
 summary: |
   This learning path introduces the foundational components of designing scalable tabular models using Power BI.
   This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/learn/certifications/exams/dp-500).
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/design-build-tabular-models.svg
 levels:
 - intermediate
 roles:
