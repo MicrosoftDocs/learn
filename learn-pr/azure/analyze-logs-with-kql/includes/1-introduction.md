@@ -30,7 +30,7 @@ TODO: add a visual element
  -->
 ## Example scenario
 
-You're a data scientist at a national retail chain that uses Azure Monitor to monitor its computers. Many of the computers run virtual machines.
+You're a data scientist at a national retail chain that uses Azure Monitor to monitor its computers. 
 
 The chain is expanding and, with the growing number of transactions at and between stores, the company has experienced some computer performance issues.
 
