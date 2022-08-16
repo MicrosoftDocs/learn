@@ -8,7 +8,7 @@
 
     Example: "You'll be <building> a <Logic App> that <determines the sentiment of new tweets and reacts accordingly>. Here, we'll discuss the project <business logic and target behavior>. We'll also cover the <accounts and software> you'll need."
 -->
-You'll be writing KQL queries to find insights that help you address the IT issues your retail chain is experiencing. Here, we'll discuss the approach we'll take to translating data you've collected in Azure Monitor Logs into answers to operational questions. 
+You'll be writing KQL queries to extract, transform, and clearly present data that helps you address the IT issues your retail chain is experiencing. Here, we'll discuss the approach we'll take to translating data you've collected in Azure Monitor Logs into answers to operational questions. 
 
 <!-- 2. Project overview -------------------------------------------------------------------------------------
 
@@ -38,7 +38,15 @@ You'll be writing KQL queries to find insights that help you address the IT issu
             1. Based on the tweet sentiment, you'll either store the tweet in a database or email it to customer service.
 -->
 ## Project overview
-Strong lead sentence; remainder of paragraph.
+
+The goal of the project is to translate log data into information that helps you understand how you can address and mitigate the computer performance issues in your stores. 
+
+The key tasks you'll need to perform are:
+
+1. Define your questions.
+1. Find the tables and columns that hold the log data relevant to your analysis.
+1. Write KQL queries. You'll start with a simple two or three line query and iterate, gradually processing and presenting the data clearly.
+
 Visual (e.g. flowchart of business logic)
 
 Strong lead sentence; remainder of paragraph.
@@ -80,6 +88,7 @@ List of sub-tasks
     containing a single H2.
 -->
 
+<!--
 - Characterize your inquiry. In this step, you'll:
     - Clearly define your questions. What type of insights do you want to gain from your inquiry?
     - Assess what data you need to have to answer these questions. What type of data can help you answer your question?
@@ -89,6 +98,9 @@ List of sub-tasks
 - Use KQL to extract and transform log data to address your questions. In this step, you'll write queries to:
     - Extract the relevant data.
     - Transform data by converting units of measure, changing the way you present and label data, and performing other calculations.
+-->
+
+<!--
 ## Setup
 Strong lead sentence stating the categories of what's needed: accounts, software, etc.
 Remainder of paragraph if needed.
