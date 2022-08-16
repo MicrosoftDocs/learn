@@ -53,9 +53,9 @@ TODO: add a visual element
  -->
 ## What will we be doing?
 
-Here, you'll use KQL to gain insights from the log data in Azure Monitor Log Analytics:
+Here, you'll use KQL to answer operational and business questions by interpreting and summarizing log data:
 
-- **Define analysis goals**: Determine which information you need for your inquiry.
+- **Define analysis goals**: Determine what information will provide you with the insights you need.
 - **Explore and assess logs**: Examine the raw log data you've collected in your Log Analytics workspace. 
 - **Extract, transform, and summarize insights**: Use KQL to deliver clear and meaningful insights. 
 
