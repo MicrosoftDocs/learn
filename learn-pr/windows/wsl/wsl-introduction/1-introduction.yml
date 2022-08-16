@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wsl-introduction.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: introduction
+  description: "WSL overview for students, new developers, or advanced developers assessing if running Linux on Windows will meet the needs of their app or cross-platform code project."
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

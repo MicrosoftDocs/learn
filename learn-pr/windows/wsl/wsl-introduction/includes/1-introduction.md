@@ -1,64 +1,31 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: orient the learner to the area covered in this module
-
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-
-Windows Subsystem for Linux (WSL) lets you install and run Linux distributions on Windows. Use Linux (GNU) command-line tools (like Bash), run utilities (like wget), or GUI applications (like Gimp), all directly on Windows, unmodified, and without the overhead of a traditional virtual machine or dual-boot setup.
+Windows Subsystem For Linux (WSL) is a tool provided by Microsoft to run Linux natively on Windows.
 
 ![Image of Linux penguin in Windows 11 logo](../media/wsl.png)
 
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
+## Why WSL?
 
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
+Whether you’re a seasoned developer or a student just beginning to learn code, one of the most important choices you need to make is the type of hardware, environment, and tools to invest in using.
 
-    Heading: "## Example scenario"
+As a developer, you will need to access specific coding tools, languages, and frameworks. You may want to install Python and a web development framework like Django, work with JavaScript on a NodeJS backend, or install a cross-platform project that uses React. Generally speaking, these programming languages will work on all operating systems. However, there are many scenarios that may prefer one operating system to another. Building Windows native desktop apps works best using Windows, but building a web app that will be deployed to a custom Linux server or production-ready virtual machine (VM) may be best to build and test using Linux and Bash command line tools.
 
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
+As the employee of a company or student in a school, access to productivity tools is also essential to consider. Throughout the day many of us need to use Outlook for email and calendar scheduling, Office for creating Word docs, Excel spreadsheets, and PowerPoint presentations, and then need to jump on Microsoft Teams for online meetings and chats.
 
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
+Rather than using two separate machines -- Windows to run productivity tools and Linux to run development tools, some developers choose to dual-boot. Logging in and out of operating systems every time you want to switch tasks takes a lot of time though. Some developers run Linux on a VM, but this often results in slow performance issues. Many developers also want to work both in a Linux environment with tools like Bash AND use popular Windows development tools like Visual Studio, Visual Studio Code, Windows Terminal, PowerToys, and Windows Package Manager (winget).
 
-    Optional: a "scenario video" that visualizes the scenario
+WSL enables you to run any Linux distribution, with a full Linux kernel, completely integrated with your Windows environment. The Windows and Linux integration offers highly efficient performance that enables Bash to run alongside CMD or PowerShell, use Visual Studio Code to debug project code running on a local Linux server, or even run a Linux GUI app version of the Microsoft Edge web browser alongside a Windows version of Microsoft Edge to test that your web app works well on both. It’s designed to be a seamless experience, essentially providing a full Linux shell that can interact with your Windows filesystem.
 
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+![Opening Ubuntu alongside PowerShell and CMD in Windows Terminal](../media/wsl-in-terminal.gif)
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
+## Is WSL right for me?
 
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
+In this module, you'll take an broad look at WSL and its capabilities. You'll gain a solid foundation for understanding what WSL has to offer and whether it is the right fit for your needs.
 
-    Heading: "## What will we be doing?"
+The main goals of this module are to:
 
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
+- Describe the main components and features that make WSL unique.
+- Compare the two versions of WSL architecture - WSL 1 and WSL 2, explaining why both are supported and the scenarios for using one or the other.
+- Compare WSL to a traditional VM.
+- Outline a high-level view of a WSL development environment and workflow.
+- Summarize the support for companies interested in creating custom WSL images, as well as the security and control options.
 
- -->
-## What will we be doing?
-TODO: add your activities
-
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
-
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
-
-    Heading: "## What is the main goal?"
-
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
-
- -->
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this module, you should be able to determine whether WSL is a good fit for your coding and development needs.
