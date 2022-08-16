@@ -10,7 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-Kusto Query Language (KQL) queries let you extract meaningful insights from the log data you collect in Azure Monitor Logs.
+Kusto Query Language (KQL) lets you extract meaningful insights from the log data you collect in Azure Monitor Logs.
 TODO: add a visual element
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------

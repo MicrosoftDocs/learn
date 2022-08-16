@@ -8,7 +8,7 @@
 
     Example: "You'll be <building> a <Logic App> that <determines the sentiment of new tweets and reacts accordingly>. Here, we'll discuss the project <business logic and target behavior>. We'll also cover the <accounts and software> you'll need."
 -->
-TODO: add your topic sentences(s)
+You'll be writing KQL queries to find insights that help you address the IT issues your retail chain is experiencing. Here, we'll discuss the approach we'll take to translating data you've collected in Azure Monitor Logs into answers to operational questions. 
 
 <!-- 2. Project overview -------------------------------------------------------------------------------------
 
@@ -79,6 +79,16 @@ List of sub-tasks
     In that case, also remove the "Project overview" H2 (while leaving the content of that H2) to avoid a page
     containing a single H2.
 -->
+
+- Characterize your inquiry. In this step, you'll:
+    - Clearly define your questions. What type of insights do you want to gain from your inquiry?
+    - Assess what data you need to have to answer these questions. What type of data can help you answer your question?
+- Assess your log data. In this step, you'll:
+    - Examine the raw data you have in your logs. Which tables hold the data you're looking for? Is the data in one table sufficient to answer your question or do you need additional information from other tables?
+    - Identify data that is relevant to your inquiry. Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights? Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources?
+- Use KQL to extract and transform log data to address your questions. In this step, you'll write queries to:
+    - Extract the relevant data.
+    - Transform data by converting units of measure, changing the way you present and label data, and performing other calculations.
 ## Setup
 Strong lead sentence stating the categories of what's needed: accounts, software, etc.
 Remainder of paragraph if needed.
