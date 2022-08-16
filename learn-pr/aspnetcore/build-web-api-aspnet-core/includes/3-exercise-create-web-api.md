@@ -61,7 +61,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     * Compiles the project code.
     * Hosts the web API with the ASP.NET Core Kestrel web server at both an HTTP and HTTPS endpoint.
 
-    A port from 5000 to 5300 will be selected for HTTP, and from 7000 to 7300 for HTTPS, when the project is created. The ports that you use during development can be easily changed by editing the project's *launchSettings.json* file. This module uses the secure `localhost` URL that begins with `https`.
+    A port from 5000 to 5300 will be selected for HTTP, and from 7000 to 7300 for HTTPS, when the project is created. You can easily change the ports that you use during development by editing the project's *launchSettings.json* file. This module uses the secure `localhost` URL that begins with `https`.
 
     A variation of the following output appears to indicate that your app is running:
 
@@ -80,7 +80,7 @@ To set up a .NET project to work with the web API, we'll use Visual Studio Code.
     If you're running this app on your own machine, you could direct a browser to the HTTPS link that's displayed in the output (in the preceding case, `https://localhost:7294`) to view the resulting page. Remember this port, because you'll use it throughout the module where `{PORT}` is used.
 
     > [!IMPORTANT]
-    > Check terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps you troubleshoot. As you make changes to the code, you'll need to stop the web API by selecting CTRL+C on the keyboard and rerunning the `dotnet run` command.
+    > Check the terminal output if you encounter any unexpected behavior. If the build fails or other errors occur, the log file's information helps you troubleshoot. As you make changes to the code, you'll need to stop the web API by selecting CTRL+C on the keyboard and rerunning the `dotnet run` command.
 
 1. Open a web browser and go to:
 
