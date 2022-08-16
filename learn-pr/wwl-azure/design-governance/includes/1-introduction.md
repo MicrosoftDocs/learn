@@ -20,9 +20,7 @@ Governance is most beneficial when you have:
 
 :::image type="icon" source="../media/tailwind-traders-logo.png" border="false":::
 
-Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online.
-
-Suppose you're the CTO for Tailwind Traders. You're aware of the opportunities offered by Azure and also understand the need for strong governance. Without strong governance, the company might end up with an environment that's difficult to manage, and costs that are hard to track and control. You're interested in understanding how Azure manages and enforces governance standards.
+Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online. As you work through this lesson, suppose you're the CTO for Tailwind Traders. You're aware of the opportunities offered by Azure and also understand the need for strong governance. Without strong governance, the company might end up with an environment that's difficult to manage, and costs that are hard to track and control. You're interested in understanding how Azure manages and enforces governance standards.
 
 ### Learning objectives
 

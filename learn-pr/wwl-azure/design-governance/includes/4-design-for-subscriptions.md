@@ -18,7 +18,7 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
 ### Things to consider when creating subscriptions
 
-In the last unit, you determined your strategy for the Tailwind Traders management group structure. Now you need to determine where to assign subscriptions. Here's one possible solution:
+You defined your strategy for the Tailwind Traders management group structure. Now you need to determine where to assign subscriptions. Here's one possible solution:
 
 :::image type="content" source="../media/subscriptions-example.png" alt-text="Diagram that shows subscription options for Tailwind Traders departments, such as sales, corporate, and IT." border="false":::
 
