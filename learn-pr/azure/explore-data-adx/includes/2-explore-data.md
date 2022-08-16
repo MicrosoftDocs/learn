@@ -1,6 +1,6 @@
-What happens when you get a new dataset? Before you can run complex queries and communicate insights from the data, you first need to explore the dataset itself. Characterizing the data will help you understand what information you're looking at and what you can do with it.
+What happens when you get a new dataset? In order to run complex queries and communicate insights from the data, you first need to explore the dataset itself and know what information is available to you. Characterizing the data will help you understand what kinds of questions you can ask.
 
-## Characterize the data
+## Initial exploration 
 
 Suppose you're looking at an unfamiliar table of meterological data. At first, you'll want to answer questions like:
 

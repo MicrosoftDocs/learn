@@ -43,7 +43,7 @@ units:
 - learn.azure.explore-data-azure-data-explorer.introduction
 - learn.azure.explore-data-azure-data-explorer.exercise-connect-to-resources
 - learn.azure.explore-data-azure-data-explorer.characterize-data
-- learn.azure.explore-data-azure-data-explorer.exercise-data-first-look
+- learn.azure.explore-data-azure-data-explorer.exercise-inventory-data
 - learn.azure.explore-data-azure-data-explorer.explore-data-structure-queries
 - learn.azure.explore-data-azure-data-explorer.exercise-queries-explore
 - learn.azure.explore-data-azure-data-explorer.exercise-query-trends

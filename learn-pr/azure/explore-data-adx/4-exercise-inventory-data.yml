@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.explore-data-azure-data-explorer.exercise-data-first-look
+uid: learn.azure.explore-data-azure-data-explorer.exercise-inventory-data
 title: 'Exercise: Take a first look at your data'
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-exercise-data-first-look.md)]
+  [!include[](includes/4-exercise-inventory-data.md)]

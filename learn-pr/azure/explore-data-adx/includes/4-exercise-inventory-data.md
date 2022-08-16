@@ -21,7 +21,7 @@ The very first thing you want to do is look at the actual data to learn about wh
 
 ## Use the results grid to reorganize the data
 
-The results grid offers a range of built-in tools that are probably familiar actions from other environments. For example, you can sort the data based on a certain column. 
+The results grid offers a range of built-in tools that are probably familiar actions from other environments. For example, you can sort the data based on a certain column. Each of the following examples starts with the results from the `take 50` query.
 
 ### Sort the data on a column
 
@@ -76,3 +76,14 @@ On the bottom right corner of the results grid, selected cells are summarized. W
 1. Look at the bottom right corner of the results grid. What are the maximum and minimum values displayed? Does this summary help you understand the range of data in this column?
 
     :::image type="content" source="../media/4-statistics-selected-cells.png" alt-text="Screenshot showing statistical summary of selected integer cells.":::
+
+### Expand a dynamic field
+
+Scroll all the way to the last column in the data table. Do you see the **StormSummary** column? This field contains a large amount of data, not all of which is visible. You can expand the cell to view all information inside the dynamic field.
+
+1. Select the **Expand view** icon on the top right of the results grid.
+1. Select **Right** to view the expanded results in the right pane.
+1. Scroll to the rightmost column of the table, **StormSummary**.
+1. Double-click on one of the fields in this column. The field will expand to show the contents in an easier to read format:
+
+    :::image type="content" source="../media/5-unpack-bag.gif" alt-text="Screen capture of expanding of storm summary dynamic field.":::
