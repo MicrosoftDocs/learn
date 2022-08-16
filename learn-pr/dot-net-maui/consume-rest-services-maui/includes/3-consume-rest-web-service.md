@@ -92,7 +92,7 @@ HttpResponseMessage response = await client.SendAsync(message);
 ```
 
 > [!NOTE]
-> The fundamental difference between `POST` and `PUT` is idempotency. If you repeat the same `PUT` request several times, the same resource will be updated with the same data, and the effect is the same as if the request had been sent only once. If you issues the same `POST` request several times, the result will be multiple copies of the resource being created by the REST service.
+> The fundamental difference between `POST` and `PUT` is idempotency. If you repeat the same `PUT` request several times, the same resource will be updated with the same data, and the effect is the same as if the request had been sent only once. If you issue the same `POST` request several times, the result will be multiple copies of the resource being created by the REST service.
 
 ### Delete a resource with HttpClient
 

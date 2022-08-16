@@ -12,11 +12,11 @@ Your deployment workflow uses the `azure/login` action to sign in to Azure. When
 
 | Input | Description |
 |-|-|
-| `client-id` | The application ID for the application registration. Ensure you use the application ID and not the object ID. |
+| `client-id` | The application ID for the application registration. Be sure to use the application ID and not the object ID. |
 | `tenant-id` | The unique identifier for your Azure AD tenant (directory). |
 | `subscription-id` | The Azure subscription ID that you'll deploy to. |
 
-Each of these values is a globally unique identifier (GUID).
+Each of these values is a GUID.
 
 When you define the values, you might choose to specify them directly in your workflow definition file:
 
@@ -28,7 +28,7 @@ When you define the values, you might choose to specify them directly in your wo
     subscription-id: 'f0750bbe-ea75-4ae5-b24d-a92ca601da2c'
 ```
 
-However, some organizations treat these identifiers as secret data, or don't allow identifiers to be committed to Git repositories. You can also use GitHub secrets to specify the values:
+However, some organizations treat these identifiers as secret data or don't allow identifiers to be committed to Git repositories. You can also use GitHub secrets to specify the values:
 
 :::code language="yaml" source="code/5-workflow.yml" range="16-20" :::
 

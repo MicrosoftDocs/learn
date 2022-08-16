@@ -1,10 +1,10 @@
 Let's start by creating our first Blazor web app.
 
-This module uses Visual Studio 2022 for local development. After you complete this module, you can apply its concepts using a development environment like  Visual Studio for Mac (macOS).
+This module uses Visual Studio 2022 for local development. After you complete this module, you can apply its concepts using a development environment like Visual Studio for Mac (macOS).
 
 ## Requirements for Blazor Hybrid development
 
-To create Blazor Hybrid apps with .NET MAUI apps, you currently require Visual Studio version 17.3 Preview (the latest preview build of Visual Studio 2022) with the following workload installed:
+To create Blazor Hybrid apps with .NET MAUI apps, you currently require Visual Studio version 17.3 (or Visual Studio 2022 for Mac Preview version 17.4) with the following workload installed:
 
 - .NET Multi-Platform App UI development.
 - ASP.NET and web development.
