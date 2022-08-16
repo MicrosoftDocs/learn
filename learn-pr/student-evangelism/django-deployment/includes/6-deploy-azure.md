@@ -56,13 +56,13 @@ When you followed the steps to clone the starter repository, you should have als
 
     ![Screenshot showing the deployment configuration option.](../media/deploy-app.png)
 
-    If you miss the notice to deploy or close it, you can also deploy by finding the App Service you created, right-click it, and select **Deploy to Web App**.
+    If you miss the notification to deploy the app or you close the notification, you can also deploy by finding the App Service you created, right-click it, and select **Deploy to Web App**.
 
 Your site will now deploy!
 
 ## Create the database server
 
-While your site is deploying, turn your attention to creating the database. You'll use PostgreSQL.
+Now create the PostgreSQL database.
 
 1. On the **RESOURCES** bar of the Azure extension, hover, and select the **+** (plus sign) icon to create a resource.
 
@@ -95,9 +95,11 @@ While your site is deploying, turn your attention to creating the database. You'
 
 1. Enter the password a second time to confirm it.
 
-1. For the resource group, select **appsvc_linux_centralus**. This group was created when you deployed your web application.
+1. For the resource group, select the same resource group that your web app was created in.
 
-    ![Screenshot showing how to select a resource group. The appsvc_linux_centralus option is selected.](../media/resource-group.png)
+   To find the resource group your web app was created in, find the App Service in the Azure extension, right-click the name, and select **View Properties**. In the "id" tag the resource group name is the part following "/resourceGroups/". 
+
+   You can also right-click the name of the App Service and select **Open in Portal** to find the resource group name.
 
 1. For the location for new resources, select **Central US**.
 
