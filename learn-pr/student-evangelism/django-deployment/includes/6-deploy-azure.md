@@ -97,13 +97,11 @@ Now create the PostgreSQL database.
 
 1. For the resource group, select the same resource group that your web app was created in.
 
-   To find the resource group your web app was created in, find the App Service in the Azure extension, right-click the name, and select **View Properties**. In the "id" tag the resource group name is the part following "/resourceGroups/". 
+   To find the resource group name and location used to create the web app, find the App Service in the Azure extension, right-click the name, and select **View Properties**. In the "id" key the resource group name is the part following "/resourceGroups/". The "location" key shows the location.
 
-   You can also right-click the name of the App Service and select **Open in Portal** to find the resource group name.
+   You can also right-click the name of the App Service and select **Open in Portal** to find the resource group name and location.
 
-1. For the location for new resources, select **Central US**.
-
-    ![Screenshot showing the resource location selection of Central US.](../media/region.png)
+1. For the location for new resources, select the same location of the resource group and web app.
 
     > [!IMPORTANT]
     > When you create multiple Azure resources that will communicate with one another, always place them in the same region. This collocation ensures the best performance.
