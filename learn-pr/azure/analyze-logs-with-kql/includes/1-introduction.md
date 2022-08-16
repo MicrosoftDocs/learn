@@ -69,6 +69,6 @@ Here, you'll use KQL to answer operational and business questions by interpretin
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+By the end of this session, you'll be able to run KQL queries on logs to extract and present meaningful operational and business information.  
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
