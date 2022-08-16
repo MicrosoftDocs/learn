@@ -16,7 +16,8 @@
         * Conditionals
         * Connectors"
 -->
-TODO: add your topic sentences(s)
+Many tools  are available for automation and for interaction with the Graph APIs. Here, we'll discuss how you can decide whether Microsoft Graph PowerShell is the right choice for your workflow.
+
 TODO: add your bulleted list of key things covered
 * TODO
 * TODO
@@ -38,8 +39,11 @@ TODO: add your bulleted list of key things covered
         "Decision criteria"
          "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
 -->
-## Decision criteria
-TODO: add your 3 lead-in sentences
+## Managing identities at scale
+
+Microsoft Graph PowerShell can be used when you want to connect, retrieve, update, and delete data from productivity APIs at Microsoft, for example files, drive, calendar and you don't want to have an application for it.
+
+Since Microsoft Graph PowerShell access all the Graph APIs, it allows to automation these process for any resource that has an API.
 
 <!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
 
@@ -86,23 +90,20 @@ TODO: add your topic sentences(s)
         Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
         Visual: (image preferred)
 -->
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+## Automating tasks to save time
 
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+IT admins and DevOps can automate the generation of reports and the management of systems, users, tenants among others by creating a script instead of building an application for some scenarios. PowerShell provides a richer admin experience that can lead to automation.
 
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+## Run complex functions
+
+Microsoft Graph PowerShell allows you to carry out tasks that are not necessarily available from the portal UI. The Azure portal UI provides access to common, useful administrative tasks that apply to most environments. However, to carry out more complex tasks you would need to use Microsoft Graph PowerShell.
+
+For example, for our scenario, to get all the stales devices, we'll need to use the timestamp filter and to also filter our system-managed devices. Microsoft Graph PowerShell will enable you to get the filtered list and save the returned data in a csv file.
+
+## Support for modern authentication
+
+Microsoft Graph PowerShell supports modern authetication, for example, the use of Multifactor Athentication via the Microsoft Authentication Library. You can use Passwordless sign-in experiences for your applications.
+
 
 <!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
 
