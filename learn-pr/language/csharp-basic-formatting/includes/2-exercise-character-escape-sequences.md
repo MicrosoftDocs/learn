@@ -145,7 +145,7 @@ Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");
 > [!NOTE]
 > There are several caveats here. First, some consoles like the Windows Command Prompt will not display all Unicode characters. It will replace those characters with question-mark characters instead. Also, the examples used here are UTF-16. Some characters require UTF-32, and therefore require a different escape sequence. This is a complicated subject, and this module is only aimed at showing you what's possible. Depending on your needs, you may need to spend quite a bit of time learning and working with Unicode characters in your applications.
 
-### Step 3 - Format the output of the command-line application using unicode escape characters
+### Step 3 - Format the output of the command-line application using Unicode escape characters
 
 To complete the mocked up command-line user interface, we'll add a phrase in Japanese that translates to "To generate Japanese invoices," then provide a verbatim literal string with the application executable with a flag.  We'll also add some escape sequences for formatting.
 
