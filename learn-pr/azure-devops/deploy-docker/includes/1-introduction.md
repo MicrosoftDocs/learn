@@ -10,9 +10,9 @@ While this module focuses on the core tasks that are required to build and deplo
 
 After completing this module, you'll be able to:
 
-- Create Azure resources to support a Docker container web application
-- Update a basic release pipeline to build, publish, and deploy a Docker container
-- Monitor the build, release, and deployment of your project
+- Create Azure resources to support a Docker container web application.
+- Update a basic release pipeline to build, publish, and deploy a Docker container.
+- Monitor the build, release, and deployment of your project.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ We also recommend you start at the beginning of this learning path: [Deploy appl
 
 [!include[](../../shared/includes/project-details-note.md)]
 
-This module also assumes you have basic familiarity with Docker, although that knowledge is not required to complete it. If you are new to the topic, it is recommended that you complete the [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module first.
+This module also assumes you have basic familiarity with Docker, although that knowledge isn't required to complete it. If you're new to the topic, it's recommended that you complete the [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module first.
 
 ## Meet the team
 

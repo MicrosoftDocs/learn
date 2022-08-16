@@ -7,10 +7,8 @@ You can move file shares between tiers within GPv2 storage account types (transa
 The **quota** property means something slightly different between premium and standard file shares:
 
  -  For standard file shares, it's an upper boundary of the Azure file share. The primary purpose for quota for a standard file share is budgetary: "I don't want this file share to grow beyond this point."
-    
      -  If a quota is not specified, standard file share can span up to 100 TiB.
  -  For premium file shares, quota is overloaded to mean provisioned size. The provisioned size is the amount that you will be billed. Consider the following when configuring a premium file share:
-    
      -  The future growth of the share from a space utilization perspective
      -  The IOPS required for your workload. Every provisioned GiB allows reserved and burst IOPS.
 

@@ -3,9 +3,10 @@ uid: learn.azdo.deploy-docker
 metadata:
   title: Automate Docker container deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for Docker containers.
-  ms.date: 06/23/2021
+  ms.date: 08/04/2022
   author: ramiMSFT
   ms.author: rabououn
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Docker container deployments with Azure Pipelines

@@ -40,7 +40,7 @@ A *controller* is a public class with one or more public methods known as *actio
     }
     ```
 
-    As you learned previously, this class derives from `ControllerBase`, the base class for working with HTTP requests in ASP.NET Core. It also includes the two standard attributes you've learned about, `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Because this controller class is named `PizzaController`, this controller handles requests to `https://localhost:{PORT}/pizza`.
+    As you learned previously, this class derives from `ControllerBase`, the base class for working with HTTP requests in ASP.NET Core. It also includes the two standard attributes you've learned about: `[ApiController]` and `[Route]`. As before, the `[Route]` attribute defines a mapping to the `[controller]` token. Because this controller class is named `PizzaController`, this controller handles requests to `https://localhost:{PORT}/pizza`.
 
 ## Get all pizzas
 
@@ -215,6 +215,6 @@ Each `ActionResult` instance used in the preceding action is mapped to the corre
     }
     ```
 
-1. Return to the `dotnet` terminal in the drop-down list in Visual Studio Code, and shut down the web API by selecting CTRL+C on your keyboard.
+1. Return to the `dotnet` terminal in the drop-down list in Visual Studio Code and shut down the web API by selecting CTRL+C on your keyboard.
 
 You've now finished implementing the `GET` verbs. In the next unit, you can add more actions to `PizzaController` to support CRUD operations on pizza data.
