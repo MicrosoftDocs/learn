@@ -15,7 +15,7 @@ Although you don't need an Azure subscription to work with Azure DevOps, here yo
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps, and sign in again under the Microsoft account you use, to sign in to your Azure subscription.
+Then sign out of Azure DevOps and sign in again under the Microsoft account you use to sign in to your Azure subscription.
 
 ## Get the Azure DevOps project
 
@@ -114,7 +114,7 @@ To clone the *Space Game* web project to your computer:
 1. On [GitHub](https://github.com?azure-portal=true), go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**).
 1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot  that shows how to Locate the URL and copy button from the GitHub repository.":::
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot showing how to Locate the URL and copy button from the GitHub repository.":::
 1. In Visual Studio Code, go to the terminal window.
 1. In the terminal, move to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
 
@@ -150,7 +150,7 @@ A *remote* is a Git repository where team members collaborate (like a repository
     origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
     origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
     ```
-.
+
     *Origin* specifies your repository on GitHub. When you fork code from another repository, the original remote (the one you forked from) is commonly named *upstream*.
 
 1. Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
@@ -176,7 +176,7 @@ A *remote* is a Git repository where team members collaborate (like a repository
 
 ### Open the project in the file explorer
 
-I.n Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, open the project from the file explorer.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, open the project from the file explorer.
 
 1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
 

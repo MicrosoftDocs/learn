@@ -125,13 +125,13 @@ After the meeting ends, Andy and Mara plan next steps. They use Azure Pipelines 
 **Andy:** First we need to agree on our release management tool. Let's make sure the tool we choose:
 
 * Supports our version control system.
-* Can deploy to multiple environments, so we can test and validate our work.
+* Can deploy to multiple environments, so that we can test and validate our work.
 * Makes it easy to define our deployment tasks.
 * Is easy to extend.
 
 **Mara:** Azure DevOps integrates with several other continuous integration (CI) and CD solutions. Many solutions are out there, and we're not invested in any of them. If we were, it would make sense to use that one. Popular CI and CD systems include Jenkins, Circle CI, GitLab, Travis CI, and Azure Pipelines.
 
-These tools have similarities, but each also has its particular strengths. Some of these tools are open source, some are free, and some you have to pay for. Each of them also provide built-in integrations with other software tools.
+These tools have similarities, but each of them also have particular strengths. Some of these tools are open source, some are free, and some you have to pay for. They also provide built-in integrations with other software tools.
 
 For example, Jenkins is open source. It has many plug-ins, and many companies use it. You can run Circle CI in the cloud or on-premises. I think we would need to customize it. GitLab is a single application for the entire software development life cycle. It might be bigger than we want right now. We can keep using Azure Pipelines.
 

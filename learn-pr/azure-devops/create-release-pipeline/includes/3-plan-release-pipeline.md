@@ -109,7 +109,7 @@ After a bit of research, Andy and Mara come up with the general steps that allow
 
 ### Download pipeline artifacts
 
-In the previous learning path, you published build artifacts to the pipeline. These artifacts were _.*zip_* files that contained the _Space Game_ website as a build package. Amita manually downloaded this package and installed it in her test environment.
+In the previous learning path, you published build artifacts to the pipeline. These artifacts were _zip_ files that contained the _Space Game_ website as a build package. Amita manually downloaded this package and installed it in her test environment.
 
 To deploy a build artifact from the pipeline, you need a way to download it from the pipeline to the agent. You use the `DownloadPipelineArtifact@2` task to download artifacts.
 
@@ -206,6 +206,6 @@ Andy and Mara are ready to begin. They're going to:
 
 :::image type="content" source="../media/3-whiteboard-4.png" alt-text="Screenshot of a hand-drawn illustration of a deployment pipeline that contains two stages. The deployment stage deploys the artifact to App Service.":::
 
-**Andy:** Is this drawing correct? We use :::image type="icon" source="../../shared/media/callout-01.png"::: Azure Pipelines to deploy to :::image type="icon" source="../../shared/media/callout-02.png"::: App Service. To do that, we take the :::image type="icon" source="../../shared/media/callout-03.png"::: .build artifact as the input to the :::image type="icon" source="../../shared/media/callout-04.png"::: deployment stage. The tasks in the deployment stage :::image type="icon" source="../../shared/media/callout-05.png"::: download the artifact and use a service connection to :::image type="icon" source="../../shared/media/callout-06.png"::: deploy the artifact to App Service.
+**Andy:** Is this drawing correct? We use :::image type="icon" source="../../shared/media/callout-01.png"::: Azure Pipelines to deploy to :::image type="icon" source="../../shared/media/callout-02.png"::: App Service. To do that, we take the :::image type="icon" source="../../shared/media/callout-03.png"::: build artifact as the input to the :::image type="icon" source="../../shared/media/callout-04.png"::: deployment stage. The tasks in the deployment stage :::image type="icon" source="../../shared/media/callout-05.png"::: download the artifact and use a service connection to :::image type="icon" source="../../shared/media/callout-06.png"::: deploy the artifact to App Service.
 
 **Mara:** That about sums it up. Let's get started.
