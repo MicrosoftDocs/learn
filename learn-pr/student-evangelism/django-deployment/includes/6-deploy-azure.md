@@ -222,7 +222,7 @@ If you can't connect to SSH from VS Code, here are some steps you can try:
 
 * Check that App Service hosting the web app started correctly. If there was a deployment error or coding issue, the App Service may not have started, and you can't SSH into it. On the portal page for the App Service, go to the **Diagnose and solve problems** in the left resource pane to look for issues.
 
-* Read more about [SSH in App Service](https://docs.microsoft.com/en-us/azure/app-service/configure-linux-open-ssh-session).
+* Read more about [SSH in App Service](/azure/app-service/configure-linux-open-ssh-session).
 
 ## Go to your site
 
