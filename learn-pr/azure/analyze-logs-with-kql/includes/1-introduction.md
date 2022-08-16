@@ -10,7 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: Kusto Query Language (KQL) queries let you extract meaningful insights from the log data you collect in Azure Monitor Log Analytics.
+Kusto Query Language (KQL) queries let you extract meaningful insights from the log data you collect in Azure Monitor Log Analytics.
 TODO: add a visual element
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ To gain business or operational insights from log data, you’ll:
     - Clearly define your questions. What type of insights do you want to gain from your inquiry?
     - Assess what data you need to have to answer these questions. What type of data can help you answer your question?
 - Assess your log data. In this step, you'll:
-    - Examine the raw data you have in your logs. Which tables hold the data you're looking for? Is the data in one table sufficient to answer your question or do you need - additional information from other tables?
+    - Examine the raw data you have in your logs. Which tables hold the data you're looking for? Is the data in one table sufficient to answer your question or do you need additional information from other tables?
     - Identify data that is relevant to your inquiry. Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights? Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources?
 - Use KQL to extract and transform log data to address your questions. In this step, you'll write queries to:
     - Extract the relevant data.
