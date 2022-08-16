@@ -108,7 +108,7 @@ Now create the PostgreSQL database.
 
 Your server will now be created! This process will take a few minutes. 
 
-## Create a database firewall rule to allow access from dev environment
+## Create a database firewall rule to allow access from your dev environment
 
 After the database is created, you need to create a firewall rule to allow your developer environment to access the database. Wait until the database exists before following the next steps to create the rule.
 
