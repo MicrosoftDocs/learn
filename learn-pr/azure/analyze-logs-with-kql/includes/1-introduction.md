@@ -30,9 +30,9 @@ TODO: add a visual element
  -->
 ## Example scenario
 
-You're a data scientist at a retail chain that uses Azure Monitor to monitor the machines in its retail stores.
+You're a data scientist at a national retail chain that uses Azure Monitor to monitor its computers. Many of the computers run virtual machines.
 
-The chain is expanding and, with the growing number of transactions at stores and between stores, the company has experienced some computer performance issues.
+The chain is expanding and, with the growing number of transactions at and between stores, the company has experienced some computer performance issues.
 
 You want to identify current issues and mitigate future problems with the computers running in the chain's stores.
 
@@ -53,18 +53,11 @@ TODO: add a visual element
  -->
 ## What will we be doing?
 
-To gain business or operational insights from log data, you’ll:
+Here, you'll use KQL to gain insights from the log data in Azure Monitor Log Analytics:
 
-- Characterize your inquiry. In this step, you'll:
-    - Clearly define your questions. What type of insights do you want to gain from your inquiry?
-    - Assess what data you need to have to answer these questions. What type of data can help you answer your question?
-- Assess your log data. In this step, you'll:
-    - Examine the raw data you have in your logs. Which tables hold the data you're looking for? Is the data in one table sufficient to answer your question or do you need additional information from other tables?
-    - Identify data that is relevant to your inquiry. Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights? Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources?
-- Use KQL to extract and transform log data to address your questions. In this step, you'll write queries to:
-    - Extract the relevant data.
-    - Transform data by converting units of measure, changing the way you present and label data, and performing other calculations.
-
+- **Define analysis goals**: Determine which information you need for your inquiry.
+- **Explore and assess logs**: Examine the raw log data you've collected in your Log Analytics workspace. 
+- **Extract, transform, and summarize insights**: Use KQL to deliver clear and meaningful insights. 
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
