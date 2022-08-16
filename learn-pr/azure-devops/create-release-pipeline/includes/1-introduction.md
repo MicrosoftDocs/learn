@@ -55,4 +55,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps. She's helping the team adopt a more streamlined process by using Azure DevOps.
+Mara has prior experience with DevOps. She's helping the team adopt a streamlined process by using Azure DevOps.
