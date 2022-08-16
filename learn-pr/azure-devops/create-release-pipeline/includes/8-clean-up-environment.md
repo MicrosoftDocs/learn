@@ -13,7 +13,7 @@ To clean up your resource group:
 1. Select **Resource groups** from the menu.
 1. Select your resource group, **tailspin-space-game-rg**.
 1. Select **Delete resource group**.
-1. Enter **tailspin-space-game-rg** into the text box and then select **Delete**.
+1. Enter **tailspin-space-game-rg** into the text box, and then select **Delete**.
 
     After the deletion process finishes, you return to the list of resource groups in your Azure subscription.
 
@@ -27,7 +27,7 @@ Choose one of the following options.
 
 ### Option 1: Disable the pipeline
 
-This option disables the pipeline so that it doesn't process further build requests. You can re-enable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and your build pipeline for future reference.
+This option disables the pipeline so that it doesn't process further build requests. You can re-enable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project, and your build pipeline for future reference.
 
 To disable the pipeline:
 
@@ -46,8 +46,8 @@ This option deletes your Azure DevOps project, including content on Azure Boards
 To delete the project:
 
 1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Release**.
-1. Select **Project settings** in the lower corner.
-1. At the bottom of the **Project details** area, select **Delete**.
+1. Select **Project settings** in the lower-left corner of your Azure DevOps page.
+1. In the **Project details** area, scroll down, and then select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. From the window that appears, enter the project name and select **Delete** a second time.

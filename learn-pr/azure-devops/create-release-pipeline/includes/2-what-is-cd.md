@@ -4,7 +4,7 @@ The Tailspin team is starting to feel better about their build process. They hav
 
 ## Morning meeting
 
-The team is in the meeting room waiting for Irwin, the product manager, who says he wants to talk to them. They look forward to telling him about their progress. But when Irwin walks in, he doesn't look happy. He starts talking right away.
+The team is in the meeting room waiting for Irwin, the product manager, who wants to talk to them. They look forward to telling him about their progress. But when Irwin walks in, he doesn't look happy. He starts talking right away.
 
 **Irwin:** I had a meeting this morning with the management team. They want to know why we're taking so long to release our games and websites. Our closest competitors get new features and new games out there much faster than we do. We need to speed up things. I'm not alerting just you; I'm alerting all the teams. What can we do to help your team deploy faster?
 
@@ -42,7 +42,7 @@ Mara nods. Amita and Tim look unhappy.
 
 Amita starts crumbling her scone into little pieces.
 
-**Andy:** Tim, you won't lose control over your production environment. And Amita, you're correct, we should never sacrifice the user experience. Let's talk a bit about what CD is so we all understand each other. Mara, want to try?
+**Andy:** Tim, you won't lose control over your production environment. And Amita, you're correct, we should never sacrifice the user experience. Let's talk about what CD is, so we all understand each other. Mara, want to try?
 
 **Mara:** Sure.
 
@@ -54,7 +54,8 @@ CD by itself is a set of processes, tools, and techniques that enable rapid, rel
 
 * We have a reliable and repeatable process for releasing and deploying software.
 * We automate as much as possible.
-* We don't put off doing something that's difficult or painful. Instead, we do it more often so that we figure out how to make it routine.
+* We don't put off doing something that's difficult or painful. Instead, we do it more often so that 
+  we figure out how to make it routine.
 * We keep everything in source control.
 * We all agree that *done* means *released*.
 * We build quality into the process. Quality is never an afterthought.
@@ -130,7 +131,7 @@ After the meeting ends, Andy and Mara plan next steps. They use Azure Pipelines 
 
 **Mara:** Azure DevOps integrates with several other continuous integration (CI) and CD solutions. Many solutions are out there, and we're not invested in any of them. If we were, it would make sense to use that one. Popular CI and CD systems include Jenkins, Circle CI, GitLab, Travis CI, and Azure Pipelines.
 
-These tools have similarities, but each also has its particular strengths. Some of these tools are open source, some are free, and some you have to pay for. They each also provide built-in integrations with other software tools.
+These tools have similarities, but each also has its particular strengths. Some of these tools are open source, some are free, and some you have to pay for. Each of them also provide built-in integrations with other software tools.
 
 For example, Jenkins is open source. It has many plug-ins, and many companies use it. You can run Circle CI in the cloud or on-premises. I think we would need to customize it. GitLab is a single application for the entire software development life cycle. It might be bigger than we want right now. We can keep using Azure Pipelines.
 

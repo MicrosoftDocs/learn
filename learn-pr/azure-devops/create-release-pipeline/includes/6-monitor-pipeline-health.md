@@ -1,18 +1,18 @@
 In this exercise, you examine a few of the analytics features that Azure Pipelines provides.
 
-Irwin asked the Tailspin team how they can release faster. Building an automated release pipeline is a great step toward releasing quickly and reliably. As you release more often and more rapidly, it's important to understand the health and history of your releases. Looking at health trends regularly can help you diagnose potential problems before they become critical.
+Irwin asked the Tailspin team on how they can release faster. Building an automated release pipeline is a great step toward releasing quickly and reliably. As you release more often and more rapidly, it's important to understand the health and history of your releases. Looking at health trends regularly can help you diagnose potential problems before they become critical.
 
 Before we take a look at some of your pipeline's analytics, let's listen in on the Tailspin team at their morning meeting.
 
 ## How can I track the health of my entire pipeline?
 
-It's the following morning. At the team meeting, Andy and Mara have just finished demonstrating the build and release pipeline that they set up as a POC.
+It's the following morning. At the team meeting, Andy and Mara have finished demonstrating the build and release pipeline that they set up as a POC.
 
-**Amita:** This POC is fantastic. The build pipeline was a great start, but I still had to manually install the build artifact in my lab so I could test it. If I can get these releases to my test environment on a regular schedule, I can move new features through QA much faster.
+**Amita:** This POC is fantastic. The build pipeline was a great start, but I still had to manually install the build artifact in my lab, so I could test it. If I can get these releases to my test environment on a regular schedule, I can move new features through QA much faster.
 
 **Mara:** Exactly! And remember, we can always expand our release pipeline to include more stages. The goal is to create a complete deployment workflow.
 
-**Tim:** A staging environment would be great. I could do additional stress testing before we present new features to management for final approval.
+**Tim:** A staging environment would be great. I could do more stress testing before we present new features to the management for final approval.
 
 _The team is excited to see what the new pipeline can do. They all start talking at the same time._
 
@@ -69,6 +69,6 @@ Let's examine a few of your pipeline's analytics.
 
 **Andy:** That's right. We'll collect more data as we perform more runs over time. We'll use this data to gain a greater sense of the health of the pipeline and where we can make it more efficient.
 
-**Mara:** For example, I see that the task that runs `npm install` takes the most time to finish. Do we need to fix that? Perhaps we can make it run faster by caching the Node.js packages that we use on one of our servers.
+**Mara:** For example, I see that the task that runs `npm install` takes the most time to finish. Do we need to fix that? Perhaps we can make it run faster by caching the *Node.js* packages that we use on one of our servers.
 
 **Andy:** I always appreciate your willingness to improve things. But let's hold off on that idea for now. Time will reveal where the pipeline is slow or inefficient. From there, we can decide which improvements are worth tackling.

@@ -1,20 +1,20 @@
-With a successful POC and some basic monitoring in place, the team is once again excited to see what this pipeline can do. Tim and Amita have questions for Andy and Mara. 
+With a successful POC and some basic monitoring in place, the team is excited to see what this pipeline can do. Tim and Amita have questions for Andy and Mara. 
 
-Andy glances at Mara and clears his throat.
+Andy glances at Mara, and clears his throat.
 
 **Andy:** Hold on. Let's step back and think about this setup in terms of our new Agile approach. We finished our last sprint by accomplishing two goals. We created our backlog by using Azure Boards, and we created our pipeline by using Azure Pipelines. Now we need to set up our next sprint iteration. What's our goal, and what are our tasks to accomplish it?
 
 **Amita:** Andy is right. Irwin asked us to find a way to speed up deployments. I think that should be the focus of the next sprint. Remember our value stream map?
 
-Amita points to the value stream map, which you originally saw in the [Assess your existing software development process](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true)  module.
+Amita points to the value stream map, which you originally saw in the [Assess your existing software development process](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) module.
 
-:::image type="content" source="../media/7-vsm-whiteboard1.png" alt-text="A whiteboard showing the value stream map.":::
+:::image type="content" source="../media/7-vsm-whiteboard1.png" alt-text="Screenshot of a whiteboard showing the value stream map.":::
 
 **Amita:** In several areas, we can improve by cutting down the time we spend. For example, we're still slow at running quality tests.
 
-**Tim:** Exactly. And we still have a bottleneck at deploying changes to production because management needs to approve new features before we release them.
+**Tim:** Exactly. And we still have a bottleneck at deploying changes to production, because management needs to approve new features before we release them.
 
-**Mara:** It sounds like we can start planning the tasks we'll accomplish in this sprint.
+**Mara:** It sounds like we can start planning the tasks that we'll accomplish in this sprint.
 
 The team brainstorms and comes up with these tasks:
 

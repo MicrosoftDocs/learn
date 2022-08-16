@@ -1,4 +1,4 @@
-The Tailspin team has been using a build pipeline to automate their build processes. They've decided they're ready to implement a simple CI/CD pipeline as a POC. They'll extend the build pipeline to include a deployment stage that deploys to Azure App Service.
+The Tailspin team has been using a build pipeline to automate their build processes. They've decided they're ready to implement a CI/CD pipeline as a POC. They'll extend the build pipeline to include a deployment stage that deploys to Azure App Service.
 
 Andy and Mara have taken on the job of creating the pipeline. Let's follow them and see how they achieve their first automated deployment.
 
@@ -16,9 +16,9 @@ Here you create a multistage pipeline that includes a stage named _Build_ and a 
 
 Here you create the App Service instance that hosts the website.
 
-You can bring up App Service in several ways. In this case, you'll use the Azure portal because it's a great way to explore and visualize available services. In later modules, you'll use more automated ways to bring up and manage App Service.
+You can bring up App Service in several ways. In this case, you'll use the Azure portal, because it's a great way to explore and visualize available services. In later modules, you'll use more automated ways to bring up and manage App Service.
 
-We won't go into many of the details about how App Service works or the configuration options you can select. You'll find more information about App Service at the end of this module.
+We won't go into many of the details about how App Service works, or the configuration options you can select. You'll find more information about App Service at the end of this module.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module explains how to tear down your App Service instance after you're done with it. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
@@ -166,7 +166,7 @@ Before we add the _Deploy_ stage to the pipeline, let's convert the existing bui
 
 Recall that in Azure Pipelines, an _environment_ is an abstract representation of your deployment environment. You can also define an environment through Azure Pipelines that includes specific criteria for your release. This criteria can include the pipelines that are authorized to deploy to the environment. You can also specify the human approvals that are needed to promote the release from one stage to the next.
 
-For your POC, you'll deploy to the **dev** environment. For now, your environment will define no specific release criteria. In future modules, you'll specify criteria such as human approvals which are required to sign off on changes before those changes move to the next stage.
+For your POC, you'll deploy to the **dev** environment. For now, your environment will define no specific release criteria. In future modules, you'll specify criteria such as human approvals, which are required to sign off on changes before those changes move to the next stage.
 
 Create the **dev** environment.
 
