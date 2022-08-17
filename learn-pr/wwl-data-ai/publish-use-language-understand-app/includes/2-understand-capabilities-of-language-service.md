@@ -1,4 +1,4 @@
-The Language service provides various features for understanding human language. Each one can be used by the client application to better communicate with users, or they can be combined to provide more insight into what the user is saying, intending, and asking about.
+The Language service provides various features for understanding human language. A client application can use each feature to better communicate with users, or use them together to provide more insight into what the user is saying, intending, and asking about.
 
 Language service features fall into two categories: Pre-configured features, and Learned features. Learned features require building and training a model to correctly predict appropriate labels.
 
@@ -26,7 +26,7 @@ The following features are all pre-configured.
 
 ### Summarization
 
-Summarization is available for both documents as well as conversations, and will summarize the text into key sentences that are predicted to encapsulate the input's meaning.
+Summarization is available for both documents and conversations, and will summarize the text into key sentences that are predicted to encapsulate the input's meaning.
 
 A summarization query will be sent to an endpoint similar to the following, with the task specified as `extractiveSummarizationTasks` or `ConversationalSummarizationTask`, depending on which summarization task you want.
 
@@ -41,9 +41,9 @@ A summarization query will be sent to an endpoint similar to the following, with
 
 ### Named entity recognition
 
-Named entity recognition can extract and identify entities, such as people, places, or companies, allowing your app to recognize different types of entities for improved natural language responses. For example, given the text "The ferris wheel is my favorite Seattle attraction", *Seattle* would be identified and categorized as a location.
+Named entity recognition can extract and identify entities, such as people, places, or companies, allowing your app to recognize different types of entities for improved natural language responses. For example, given the text "The waterfront pier is my favorite Seattle attraction", *Seattle* would be identified and categorized as a location.
 
-A entity recognition query will be sent to an endpoint similar to the following, with the task specified as `EntityRecognition`.
+An entity recognition query will be sent to an endpoint similar to the following, with the task specified as `EntityRecognition`.
 
 ```http
 /{ENDPOINT}/language/:analyze-text?api-version={VERSION}
@@ -71,7 +71,7 @@ A PII query will be sent to an endpoint similar to the following, with the task 
 
 ### Key phrase extraction
 
-Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the Azure Cognitive Services.", the service would extract *"Azure Cognitive Services"* and *"Text Analytics"*.
+Key phrase extraction is a feature that quickly pulls the main concepts out of the provided text. For example, given the text "Text Analytics is one of the features in Azure Cognitive Services.", the service would extract *"Azure Cognitive Services"* and *"Text Analytics"*.
 
 A key phrase extraction query will be sent to an endpoint similar to the following, with the task specified as `KeyPhraseExtraction`.
 
@@ -101,7 +101,7 @@ A sentiment analysis query will be sent to an endpoint similar to the following,
 
 ### Language detection
 
-Language detection takes one or more documents, and identifies the language for each. For example, if the text of one of the documents was "Bonjour, ca va?", the service would identify that as *French*.
+Language detection takes one or more documents, and identifies the language for each. For example, if the text of one of the documents was "Bonjour", the service would identify that as *French*.
 
 A language detection query will be sent to an endpoint similar to the following, with the task specified as `LanguageDetection`.
 
@@ -125,7 +125,7 @@ Learned features require you to label data, train, and deploy your model to make
 
 CLU is one of the core custom features offered by Azure Cognitive Services for Language. CLU helps users to build custom natural language understanding models to predict overall intent and extract important information from incoming utterances. CLU does require data to be tagged by the user to teach it how to predict intents and entities accurately.
 
-A language detection query will be sent to an endpoint similar to the following, with the task specified as `Conversation`. These custom features also require extra parameters in the JSON body, including the `projectName` and `deploymentName` of your model.
+A language detection query will be sent to an endpoint similar to the following, with the task specified as `Conversation`. These custom features require extra parameters in the JSON body, including the `projectName` and `deploymentName` of your model.
 
 ```http
 /{ENDPOINT}/language/:analyze-conversations?api-version={VERSION}
@@ -138,7 +138,7 @@ A language detection query will be sent to an endpoint similar to the following,
 
 ### Custom named entity recognition
 
-Custom entity recognition takes custom labeled data and extracts specified entities from unstructured text. For example, if you have various contract documents that you want to extract all involved parties from, you can train a model to recognize how to predict them.
+Custom entity recognition takes custom labeled data and extracts specified entities from unstructured text. For example, if you have various contract documents that you want to extract involved parties from, you can train a model to recognize how to predict them.
 
 A custom entity recognition query will be sent to an endpoint similar to the following, with the task specified as `CustomEntityRecognition`. This custom feature also require extra parameters in the JSON body, including the `projectName` and `deploymentName` of your model.
 
@@ -153,7 +153,7 @@ A custom entity recognition query will be sent to an endpoint similar to the fol
 
 ### Custom text classification
 
-Custom text classification enables users classify text or documents as custom defined groups. For example, you can train a model to look at news articles and identify the category they should fall into, such as *News* or *Entertainment*.
+Custom text classification enables users to classify text or documents as custom defined groups. For example, you can train a model to look at news articles and identify the category they should fall into, such as *News* or *Entertainment*.
 
 A custom text classification query will be sent to an endpoint similar to the following, with the task specified as `CustomMultiLabelClassification` or `CustomSingleLabelClassification` depending on if you need single or multi label classification. This custom feature also require extra parameters in the JSON body, including the `projectName` and `deploymentName` of your model.
 

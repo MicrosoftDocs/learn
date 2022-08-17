@@ -38,8 +38,8 @@ ApiKey={API_KEY}
 
 |Placeholder  |Value  |
 |---------|---------|
-|`{ENDPOINT}`     | The endpoint for submitting usage information, used for billing. This can be found in the resource **Overview** tab.   |
-|`{API_KEY}`     | The api key for the resource, found on the **Keys** tab.   |
+|`{ENDPOINT}`     | The endpoint for submitting usage information, used for billing. This value can be found in the resource **Overview** tab.   |
+|`{API_KEY}`     | The API key for the resource, found on the **Keys** tab.   |
 
 > [!NOTE]
 > The **Eula**, **Billing**, and **ApiKey** parameters are used the same way they are for any Cognitive Services container - specifying acceptance of the license agreement, the prediction endpoint to which usage data should be sent for billing, and a valid subscription key for your prediction resource.

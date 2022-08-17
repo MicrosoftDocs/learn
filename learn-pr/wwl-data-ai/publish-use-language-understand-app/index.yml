@@ -11,7 +11,7 @@ metadata:
 title: Publish and use a Language Understanding app
 summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Understand capabilities of a Language Understanding app
   - Process predictions from a Language Understanding app
   - Deploy a language understanding app in a container

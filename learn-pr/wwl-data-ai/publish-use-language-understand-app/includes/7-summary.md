@@ -1,4 +1,4 @@
-In this module, you have learned how to publish and use language understanding apps.
+In this module, you've' learned how to publish and use language understanding apps.
 
 Now that you've completed this module, you can:
 
