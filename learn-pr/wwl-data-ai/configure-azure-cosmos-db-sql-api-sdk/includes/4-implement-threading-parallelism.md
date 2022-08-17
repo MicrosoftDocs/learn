@@ -2,7 +2,7 @@ While the SDK implements thread-safe types and some degrees of parallelism, ther
 
 ## Avoid resource-related timeouts
 
-Many times request timeouts occur due to high CPU or port utilization on client machines rather than a service-side issue. It is important to monitor resource utilization on client machines and scale-out appropriately to avoid SDK errors are retries due to local resource exhaustion.
+Many times request timeouts occur due to high CPU or port utilization on client machines rather than a service-side issue. It is important to monitor resource utilization on client machines and scale-out appropriately to avoid SDK errors or retries due to local resource exhaustion.
 
 ## Use async/await in .NET
 
