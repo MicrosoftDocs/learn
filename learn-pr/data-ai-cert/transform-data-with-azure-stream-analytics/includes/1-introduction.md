@@ -1,6 +1,6 @@
 In Azure Stream Analytics, jobs are the foundation of real-time analytics. The good news is that setting up jobs is straightforward: 
 
-- Set the job inputs to ingest data. 
+- Set the job inputs to ingest data.
 - Define how to process the data.
 - Set up a job output to store or display the results.
 
