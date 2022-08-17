@@ -62,4 +62,4 @@ Defender for Cloud uses advanced analytics for virtual machines, SQL databases, 
 
 Defender for Cloud includes vulnerability scanning for your virtual machines and container registries at no extra cost. The scanners are powered by Qualys, but you don't need a Qualys license or even a Qualys account - everything's handled seamlessly inside Defender for Cloud.
 
-Review the findings from these vulnerability scanners and respond to them all from within Defender for Cloud. This capability brings Defender for Cloud closer to being the single pane of glass for all of your cloud security efforts.
+Review the findings from these vulnerability scanners and respond to them all from within Defender for Cloud. This capability brings Defender for Cloud closer to being the single pane of glass for all of your cloud security efforts. 
