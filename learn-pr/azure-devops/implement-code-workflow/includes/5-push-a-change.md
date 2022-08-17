@@ -75,7 +75,7 @@ When you're finished, return to the terminal window and select <kbd>Ctrl+C</kbd>
 
 ## Create a feature branch
 
-In this section, you'll create a Git branch so that you can work on files without affecting anyone else. No one will even know you're working on those files until you push them to the remote repository.
+In this section, you create a Git branch so that you can work on files without affecting anyone else. No one will even know you're working on those files until you push them to the remote repository.
 
 To create a branch, you use the `git checkout` command and give your branch a name, just like you did in the previous part.
 
