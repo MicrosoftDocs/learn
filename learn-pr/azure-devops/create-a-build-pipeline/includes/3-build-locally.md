@@ -67,7 +67,7 @@ Let's fork the *Space Game* web project into your GitHub account:
 
 ### Clone your fork locally
 
-Now that you have a copy of the *Space Game* web project in your GitHub account, you can download or *clone* a copy to your computer so you can work with it locally.
+Now that you have a copy of the *Space Game* web project in your GitHub account, you can download, or *clone*, a copy to your computer so you can work with it locally.
 
 A clone, like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
 
@@ -146,7 +146,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
 
-1. In Visual Studio Code, select F1 or select **View** > **Command Palette** to access the command palette.
+1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
 
 1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
 

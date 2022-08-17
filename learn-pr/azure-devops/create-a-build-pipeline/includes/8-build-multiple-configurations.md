@@ -24,7 +24,7 @@ Consider the following tasks that build and publish the *Space Game* web project
 
 To build the Debug configuration, you might repeat these two tasks, but replace `Release` with `Debug`.
 
-Doing so would give you the result you're looking for, but what happens when your build becomes more complex, or your requirements change? You'd need to manually locate and change both variations of each build task. After you added the additional build requirements, you'd also need to create two tasks, one for the Debug configuration and one for Release, to satisfy those requirements.
+Doing so would give you the result you're looking for, but what happens when your build becomes more complex or your requirements change? You'd need to manually locate and change both variations of each build task. After you added the additional build requirements, you'd also need to create two tasks, one for the Debug configuration and one for Release, to satisfy those requirements.
 
 A better solution is to use a template.
 
