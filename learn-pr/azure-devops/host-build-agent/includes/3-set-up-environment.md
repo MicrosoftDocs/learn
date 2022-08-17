@@ -64,11 +64,11 @@ To set up the work item:
 
 1. In Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
 
-    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Azure DevOps showing the location of the Boards menu.":::
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Screenshot of the Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Investigate hosted vs private build servers** work item, select the **To Do** down arrow, and then assign the work item to yourself.
 
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of the Azure Boards showing the location of the down arrow.":::
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
     :::image type="content" source="../media/3-azure-boards-wi7-doing.png" alt-text="A screenshot of Azure Boards showing the work item in the Doing column.":::
