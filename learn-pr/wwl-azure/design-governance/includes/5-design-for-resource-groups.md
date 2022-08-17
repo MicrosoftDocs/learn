@@ -36,22 +36,22 @@ Tailwind Traders has two Azure-based applications (App1 and App2). Each applicat
 
    :::image type="content" source="../media/resource-groups.png" alt-text="Diagram that shows the resource groups for the production applications." border="false":::
 
-- **Consider group by type.** Group resources by type for on-demand services that aren't associated with an app. For Tailwind Traders, you can have a resource group for the SQL databases (SQL-RG) and a separate resource group (WEB-RG) for the web services. 
+- **Consider group by type**. Group resources by type for on-demand services that aren't associated with an app. For Tailwind Traders, you can have a resource group for the SQL databases (SQL-RG) and a separate resource group (WEB-RG) for the web services. 
 
    :::image type="content" source="../media/group-type.png" alt-text="Diagram that shows separate resource groups for the database and web applications." border="false":::
 
-- **Consider group by app.** Group resources by app when all resources have the same policies and life cycle. This method can also be applied to test or prototype environments. For Tailwind Traders, App1 and App2 can have separate resource groups. Each group can have all the resources for the specific application. 
+- **Consider group by app**. Group resources by app when all resources have the same policies and life cycle. This method can also be applied to test or prototype environments. For Tailwind Traders, App1 and App2 can have separate resource groups. Each group can have all the resources for the specific application. 
 
    :::image type="content" source="../media/group-app.png" alt-text="Diagram that shows separate resource groups for App1 and App2." border="false":::
 
-- **Consider group by department, group by location (region), and group by billing (cost center).** Review other grouping strategies that aren't common but might be useful in your situation. 
+- **Consider group by department, group by location (region), and group by billing (cost center)**. Review other grouping strategies that aren't common but might be useful in your situation. 
 
-- **Consider a combination of organizational strategies.** Don't restrict your Tailwind Traders strategy to using only a single resource group option. A combination of options is best. 
+- **Consider a combination of organizational strategies**. Don't restrict your Tailwind Traders strategy to using only a single resource group option. A combination of options is best. 
 
-- **Consider resource life cycle.** Design your resource groups according to life cycle requirements. Do you want to deploy, update, and delete certain resources at the same time? If so, place these resources in the same resource group. 
+- **Consider resource life cycle**. Design your resource groups according to life cycle requirements. Do you want to deploy, update, and delete certain resources at the same time? If so, place these resources in the same resource group. 
 
-- **Consider administration overhead.** Include overhead planning in your strategy. How many resource groups would you like to manage? Does Tailwind Traders have centralized or decentralized Azure administrators?
+- **Consider administration overhead**. Include overhead planning in your strategy. How many resource groups would you like to manage? Does Tailwind Traders have centralized or decentralized Azure administrators?
 
-- **Consider resource access control.** Implement access control for your resource groups. At the resource group level, you can assign Azure policies, Azure roles, and resource locks. [Resource locks](/azure/azure-resource-manager/management/lock-resources?tabs=json) prevent unexpected changes to critical resources. 
+- **Consider resource access control**. Implement access control for your resource groups. At the resource group level, you can assign Azure policies, Azure roles, and resource locks. [Resource locks](/azure/azure-resource-manager/management/lock-resources?tabs=json) prevent unexpected changes to critical resources. 
 
-- **Consider compliance requirements.** Plan to build in support for compliance in your Tailwind Traders strategy. Do you need to ensure your resource group metadata is stored in a particular region?
+- **Consider compliance requirements**. Plan to build in support for compliance in your Tailwind Traders strategy. Do you need to ensure your resource group metadata is stored in a particular region?

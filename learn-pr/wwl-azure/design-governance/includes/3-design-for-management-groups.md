@@ -26,18 +26,18 @@ Here's a proposed management group hierarchy for your organization:
 
 :::image type="content" source="../media/management-groups.png" alt-text="Diagram of management groups for the sales, corporate, and IT departments." border="false":::
 
-- **Design management groups with governance in mind.** Use Azure policies at the management group level for all workloads that require the same security, compliance, connectivity, and feature settings.
+- **Design management groups with governance in mind**. Use Azure policies at the management group level for all workloads that require the same security, compliance, connectivity, and feature settings.
 
-- **Keep the management group hierarchy reasonably flat.** Plan the Tailwind Traders hierarchy to have no more than three or four levels of management groups. A hierarchy that's too flat doesn't provide flexibility and complexity for large organizations. A hierarchy with too many levels can be difficult to manage. 
+- **Keep the management group hierarchy reasonably flat**. Plan the Tailwind Traders hierarchy to have no more than three or four levels of management groups. A hierarchy that's too flat doesn't provide flexibility and complexity for large organizations. A hierarchy with too many levels can be difficult to manage. 
 
-- **Consider a top-level management group.** Implement a top-level management group to support common platform policy and Azure role assignments across the entire organization. A Tailwind Traders management group can be a top-level management group for all organizational-wide policies. 
+- **Consider a top-level management group**. Implement a top-level management group to support common platform policy and Azure role assignments across the entire organization. A Tailwind Traders management group can be a top-level management group for all organizational-wide policies. 
 
-- **Consider an organizational or departmental structure.** Design your management groups based on the organizational structure, to make it easy to understand. Separate the management groups for each Tailwind Traders department like Sales, Corporate, and IT. 
+- **Consider an organizational or departmental structure**. Design your management groups based on the organizational structure, to make it easy to understand. Separate the management groups for each Tailwind Traders department like Sales, Corporate, and IT. 
 
-- **Consider a geographical structure.** Build your management groups by using a geographical structure to allow for compliance policies in different regions. Allocate unique management groups for governance in the West and East sales regions for Tailwind Traders. 
+- **Consider a geographical structure**. Build your management groups by using a geographical structure to allow for compliance policies in different regions. Allocate unique management groups for governance in the West and East sales regions for Tailwind Traders. 
 
-- **Consider a production management group.** Institute a production management group to create policies that apply to all corporate products. A production management group for Tailwind Traders can provide product-specific policies for corporate applications. 
+- **Consider a production management group**. Institute a production management group to create policies that apply to all corporate products. A production management group for Tailwind Traders can provide product-specific policies for corporate applications. 
 
-- **Consider a sandbox management group.** Offer a sandbox management group for users to experiment with Azure. The sandbox provides isolation from your development, test, and production environments. Users can experiment with resources that might not yet be allowed in official Tailwind Traders production environments. 
+- **Consider a sandbox management group**. Offer a sandbox management group for users to experiment with Azure. The sandbox provides isolation from your development, test, and production environments. Users can experiment with resources that might not yet be allowed in official Tailwind Traders production environments. 
 
-- **Consider isolating sensitive information in a separate management group.** Secure sensitive data by using a corporate management group for Tailwind Traders. The separate management group provides both standard and enhanced compliance policies for the main office. 
+- **Consider isolating sensitive information in a separate management group**. Secure sensitive data by using a corporate management group for Tailwind Traders. The separate management group provides both standard and enhanced compliance policies for the main office. 

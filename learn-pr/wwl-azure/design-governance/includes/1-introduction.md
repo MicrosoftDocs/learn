@@ -34,7 +34,7 @@ In this module, you learn how to:
 
 - Design for resource groups.
 
-- Design for Azure policies.
+- Design for Azure Policy.
 
 - Design for resource tags.
 
