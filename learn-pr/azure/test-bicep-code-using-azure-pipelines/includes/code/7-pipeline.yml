@@ -6,7 +6,7 @@ trigger:
 
 variables:
   - name: deploymentDefaultLocation
-    value: westus
+    value: westus3
 
 pool:
   vmImage: ubuntu-latest
