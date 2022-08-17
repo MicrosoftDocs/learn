@@ -4,7 +4,7 @@ But before we work with the logic statements, let's start by talking about how t
 
 ## What is an expression?
 
-An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements are comprised of one or more expressions.
+An expression is any combination of values (literal or variable), operators, and methods that return a single value. A statement is a complete instruction in C#, and statements are composed of one or more expressions.
 
 There are many different categories of expressions, but when working with decision statements, we're interested in Boolean expressions. In a Boolean expression, the runtime evaluates the values, operators, and methods to return a single true or false value.
 
@@ -59,7 +59,7 @@ In some cases, this might be perfectly acceptable. However, if you need to accep
 To massage two strings before checking for equality, you should:
 
 - Make sure both strings are all upper-case or all lower-case using the `ToUpper()` or `ToLower()` helper method on any string value.
-- Remove a leading or trailing blank spaces using the `Trim()` helper method on any string value.
+- Remove leading or trailing blank spaces using the `Trim()` helper method on any string value.
 
 Let's improve the previous check for equality by chaining these two methods on both values in the following code listing:
 
