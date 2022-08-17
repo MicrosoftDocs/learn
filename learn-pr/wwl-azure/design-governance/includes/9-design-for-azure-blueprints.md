@@ -20,14 +20,14 @@ Let's take a look at some of the features of Azure Blueprints:
 
 As you plan the governance strategy for Tailwind Traders, consider how you can use Azure Blueprints to scale practices for the organization:
 
-| Resource | Implementation options | Description |
+| Resource | Implementation | Description |
 | --- | --- | --- |
 | **Resource groups** | Subscription | Create a new resource group that can be used by other artifacts within the blueprint. Placeholder resource groups enable you to organize resources exactly the way you want them structured. They provide a scope limiter for included policy and role assignment artifacts and templates. |
 | **Azure Resource Manager (ARM) Templates** | Subscription, Resource group | Use ARM templates, including nested and linked templates, to compose complex environments. Templates work great for environments like a SharePoint farm, Azure Automation State Configuration, or a Log Analytics workspace. |
 | **Policy assignment** | Subscription, Resource group | Assign a policy or initiative to the subscription that's assigned to a blueprint. The policy or initiative must be within the scope of the blueprint definition location. If the policy or initiative has parameters, these parameters are assigned at creation of the blueprint or during blueprint assignment. |
 | **Role assignment** | Subscription, Resource group | Add an existing user or group to a built-in role to make sure the correct users always have the correct access to your resources. Role assignments can be defined for the entire subscription, or nested to a specific resource group included in the blueprint. |
 
-## Use Azure Blueprints with Azure Policy
+## Integration of Azure Blueprints with Azure Policy
 
 Azure Policy is a _default allow_ and _explicit deny_ system focused on resource properties for deployment and for already existing resources. Azure Policy supports cloud governance by validating that resources within a subscription adhere to requirements and standards.
    

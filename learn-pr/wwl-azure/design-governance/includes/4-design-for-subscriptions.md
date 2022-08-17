@@ -6,7 +6,7 @@ To use Azure, you must have an Azure subscription. A subscription provides you w
 
 :::image type="content" source="../media/azure-active-directory-subscriptions.png" alt-text="Diagram of Azure Active Directory showing the subscription types - dev, test, and production." border="false":::
 
-As you plan the governance strategy for Tailwind Traders, consider these characteristics of subscription:
+As you plan the governance strategy for Tailwind Traders, consider these characteristics of subscriptions:
 
 - Subscriptions can provide separate billing environments, such as development, test, and production. 
 

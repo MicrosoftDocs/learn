@@ -1,4 +1,4 @@
-[**Resource groups**](/azure/azure-resource-manager/management/overview) are logical containers into which Azure resources are deployed and managed.​ These resources can include web apps, databases, and storage accounts. You can use resource groups to:
+[Resource groups](/azure/azure-resource-manager/management/overview) are logical containers into which Azure resources are deployed and managed.​ These resources can include web apps, databases, and storage accounts. You can use resource groups to:
 
 - Place resources of similar usage, type, or location in logical groups.
 

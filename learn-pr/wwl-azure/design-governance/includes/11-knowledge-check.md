@@ -8,4 +8,6 @@ Tailwind Traders is planning on making some significant changes to their governa
 
 - **ISO compliance**. Tailwind Traders wants to certify that it complies with the ISO 27001 standard. The standard requires resource groups, policy assignments, and templates. 
  
+### Answer the following questions
+
 Choose the best response for each of the questions below. Then select **Check your answers**.
