@@ -28,4 +28,4 @@ Microsoft Graph PowerShell has the following features and benefits:
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Password-less sign-in experiences.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 - **Uses least privilege**: Microsoft Graph PowerShell doesn't support pre-authorization and common scenarios will require consent. You'll need to request for scopes for your current needs.
-- **Advanced queries**: Microsoft Graph PowerShell supports rich Azure AD queries via eventual consistency.
+- **Advanced queries**: Microsoft Graph PowerShell supports rich advanced Azure AD queries via eventual consistency.

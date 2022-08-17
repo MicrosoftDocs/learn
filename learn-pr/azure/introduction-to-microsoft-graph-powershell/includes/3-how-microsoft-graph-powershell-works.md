@@ -2,6 +2,26 @@ Here, we'll discuss how Microsoft Graph PowerShell works. You'll learn how to in
 
 ## Installation
 
+The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph/1.11.0)
+
+PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no additional prerequisites to use the SDK with PowerShell 7 or later. 
+
+The following prerequisites are required to use the Microsoft Graph PowerShell SDK with Windows PowerShell.
+
+- Upgrade to [PowerShell 5.1 or later](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
+- Install [.NET Framework 4.7.2 or later](/dotnet/framework/install/)
+- Update **PowerShellGet** to the latest version using `Install-Module PowerShellGet -Force`
+- The PowerShell script execution policy must be set to `remote signed` or `less restrictive`. Use `Get-ExecutionPolicy` to determine the current execution policy. For more information, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
+To set the execution policy, run;
+
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
+
+> [!NOTE]
+> Installing the main module of the SDK, Microsoft.Graph, will install all 38 sub modules. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
+> Only cmdlets for the installed modules will be available for use.
+
 To install **all** modules, run:
 
 ```powershell
@@ -40,23 +60,21 @@ By default, `Connect-MgGraph` targets the global public cloud. To explicitly tar
 
 :::image type="content" source="../media/clouds.png" alt-text="Available clouds":::
 
-To specify **Environment** with USGov - subsequent commands will target the USGov environment.
+To change your environment to **USGov** run the following command. Subsequent commands will target the USGov environment.
 
 ```powershell
 Connect-MgGraph -Environment USGov
 ```
 
-You can create custom environments using **Add-MgEnvironment**.
-
 ## Navigating Microsoft Graph PowerShell
 
-The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that helps you in navigating the SDK. Here, we'll cover a number of cmdlets that help you navigate the SDK.
+The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that helps you navigate the SDK. Here, we'll cover a number of cmdlets that help you navigate the SDK.
 
 ### Using Find-MgGraphCommand
 
 `Find-MgGraphCommand` aims to make it easy for you to discover which API path a command calls by providing a URI or a command name.
 
-`Find-MgGraphCommand` allows to;
+`Find-MgGraphCommand` allows you to;
 
 - Pass a Microsoft Graph URL (relative and absolute) and get an equivalent Microsoft Graph PowerShell command.
 - Pass a command and get the URL it calls.
@@ -148,7 +166,7 @@ Id                                   Consent Name                 Description
 
 ### Using Select-MgProfile
 
-By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta are not available in PowerShell by default. 
+By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta are not available in PowerShell by default.
 
 To check your current profile, run:
 
@@ -168,7 +186,7 @@ To change to the beta version, use `Select-MgProfile`.
 Select-MgProfile -Name Beta
 ```
 
-To switch back to using v1.0 API commands, specify **v1.0** for the name parameter. 
+To switch back to using v1.0 API commands, specify **v1.0** for the name parameter.
 
 ## Using Invoke-MgGraphRequest
 
@@ -204,23 +222,42 @@ If you get stuck executing or finding the right Microsoft Graph PowerShell comma
 
 Azure AD commands support advanced queries via the **ConsistencyLevel** parameter. This adds the ConsistencyLevel header to the Graph API request.
 
-Use this parameter with *Filter* to specify advanced queries. For example,
+To get a count of all the devices in your tenant, you'll need to run the command using advanced queries.
 
 ```powershell
-$dt = (Get-Date).AddDays(-90)
-Get-MgDevice | Where {$_.ApproximateLastSignInDateTime -le $dt} 
+Get-MgDevice -Count deviceCount -ConsistencyLevel eventual
 ```
 
-Use it with *Search* to restrict the results of a request to match a search criterion. For example, to find every device with `My_PC` in the displayName, run;
+`$deviceCount` will contain the count of your devices.
+
+To clean up stale devices, you'll need to define a timeframe that is your indicator for stale devices. When defining your timeframe, factor the window noted for updating the activity timestamp into your value. For example, you shouldn't consider a timestamp that is younger than 21 days as an indicator for a stale device. There are scenarios that can make a device look like stale while it isn't. For example, the owner of the affected device can be on vacation or on a sick leave that exceeds your timeframe for stale devices.
+
+While you can clean up stales devices in the Azure portal, it's more efficient to handle the process using PowerShell. Using Microsoft Graph PowerShell, we'll use the timestamp filter and filter out system-managed devices.
+
+A typical routine consists of the following steps:
+
+1. Connect to Azure AD using `Connect-MgGraph` cmdlet
+1. Get a list of the stale devices
+1. Disable the device using the `Update-MgDevice` cmdlet (disable by using **-AccountEnabled** option).
+1. Wait for the grace period of however many days you choose before deleting the device. For this module, we'll use 30 days wait period.
+1. Remove the device using the `Remove-MgDevice` cmdlet.
+
+Using a timeframe of **90** days run the following command to get a list of all the stale devices.
 
 ```powershell
-Get-MgDevice -ConsistencyLevel eventual  -Search '"DisplayName:Desktop"'
+$timeframe = (Get-Date).AddDays(-90)
+Get-MgDevice | Where {$_.ApproximateLastSignInDateTime -le $timeframe} | export-csv stale-devices.csv
 ```
 
-```Output
-Id                                   AccountEnabled ApproximateLastSignInDateTime ComplianceExpirationDateTime 
---------------- --                                   -------------- ----------------------------- -------------
-40a0f030-1f82-42c3-8032-66c2baedef7c True           4/16/2019 9:09:25 PM                                      
-65f85070-5b3c-4bb7-b306-8383672a6c7d True           2/15/2022 10:09:22 AM                                    
-add714d9-fd8e-4238-9db7-5e3f2c14228c True           6/3/2019 3:14:39 PM                                      
-e43ccd95-c8b6-4ef4-acea-0d3e646ca74b True           11/24/2020 6:57:31 PM
+To disable the stale devices by setting **AccountEnabled** to false, run:
+
+```powershell
+$Devices = Get-MgDevice | Where {$_.ApproximateLastSignInDateTime -le $timeframe} foreach ($Device in $Devices) {Update-MgDevice -DeviceId $Device.Id -AccountEnabled $False}
+```
+
+To delete disabled devices, now inactive for 120 days, we'll get all the disabled devices and pipe the output to `Remove-MgDevice`.
+
+```powershell
+$timeframe = (Get-Date).AddDays(-120)
+$Devices = Get-MgDevice | Where {($_.ApproximateLastSignInDateTime -le $timeframe) -and $_.AccountEnabled -eq $false} foreach ($Device in $Devices) {Remove-MgDevice -DeviceId $Device.Id}
+```
