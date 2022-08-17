@@ -47,9 +47,15 @@ The key tasks you'll need to perform are:
 1. Find the tables and columns that hold the log data relevant to your analysis.
 1. Write KQL queries. You'll start with a simple two or three line query and iterate, gradually processing and presenting the data clearly.
 
-    :::image type="content" source="../media/kql-log-analysis-in-log-analytics.png" alt-text="A diagram that depicts the flow of defining questions, finding relevant log data and writing KQL queries. ":::
+The following diagram depicts the approach to log analysis you'll be following throughout this project:
 
-## Define your analysis goals
+    :::image type="content" source="../media/kql-log-analysis-log-analytics.png" alt-text="A diagram that depicts the flow of defining questions, finding relevant log data and writing KQL queries. ":::
+
+## Set analysis goals
+
+## Assess logs
+
+## Write queries
 
 <!-- 3. Setup -------------------------------------------------------------------------------------
 
