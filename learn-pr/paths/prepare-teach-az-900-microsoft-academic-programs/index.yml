@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-teach-az-900-microsoft-academic-programs
 metadata:
   title: AI-900
   description: Prepare to teach AZ-900 Microsoft Azure fundamentals in academic programs
-  ms.date: 07/12/2022
+  ms.date: 08/16/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   - None
 summary: |
   Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s Azure AI fundamentals.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/prepare-teach-az-900-microsoft-academic-programs.svg
 levels:
 - beginner
 roles:
