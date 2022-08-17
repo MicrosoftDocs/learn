@@ -10,7 +10,7 @@ As you plan the governance strategy for Tailwind Traders, consider these charact
 
    The following diagram shows landing zones for SAP, Corporate, and Online applications. 
 
-   :::image type="content" source="../media/landing-zones.png" alt-text="Diagram of a management group and subscription organization that uses landing zones." border="false" lightbox="../media/landing-zones.png":::
+   :::image type="content" source="../media/landing-zones.png" alt-text="Diagram of a management group and subscription organization that uses landing zones." border="false":::
 
 - Azure policies are associated with landing zones to ensure continued compliance with the organization platform.
 
