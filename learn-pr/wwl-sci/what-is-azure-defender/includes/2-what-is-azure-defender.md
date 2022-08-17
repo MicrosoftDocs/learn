@@ -46,7 +46,7 @@ In addition to defending your Azure environment, you can add Defender for Cloud 
 
 You'll get customized threat intelligence and prioritized alerts according to your specific environment so that you can focus on what matters the most.
 
-To extend protection to virtual machines and SQL databases in other clouds or on-premises, deploy Azure Arc and enable Defender for Cloud. Azure Arc for servers is a free service, but services used on Arc enabled servers, such as Defender for Cloud, will be charged as per the pricing for that service. Learn more in Add non-Azure machines with Azure Arc.
+To extend protection to virtual machines and SQL databases in other clouds or on-premises, deploy Azure Arc and enable Defender for Cloud. Azure Arc for servers is a free service, but services used on Arc enabled servers, such as Defender for Cloud, will be charged as per the pricing for that service. To learn more see [Add non-Azure machines with Azure Arc](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc#add-non-azure-machines-with-azure-arc).
 
 ## Microsoft Defender for Cloud security alerts
 
