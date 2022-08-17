@@ -22,7 +22,7 @@ prerequisites: |
   - Experience designing a workload that includes core infrastructure technology such as data storage, compute, and networking
   - Experience designing a workload that's deployed to multiple regions
   - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework
-iconUrl: /learn/achievements/azure-well-architected-introduction.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
 roles:
