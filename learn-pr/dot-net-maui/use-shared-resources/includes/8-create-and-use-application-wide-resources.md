@@ -9,7 +9,7 @@ The **Application** class also defines a **Resources** property. **Application**
 The following illustration shows the structure of a typical application. Each of the elements shown has a **Resources** property that can hold a resource dictionary. 
 
 > [!NOTE]
-> This diagram shows a much simplified depiction of how the items in an application are organized. In this diagram, the term *View* refers to a singleton control such as **Button** or **Label** that doesn't acts as a container for any child controls. Also, the term *Layout* implies a container that is responsible for organizing the layout of its child controls. A layout can be nested. For example a **Grid** control could be held within a **StackLayout** control.
+> This diagram shows a much simplified depiction of how the items in an application are organized. In this diagram, the term *View* refers to a singleton control such as **Button** or **Label** that doesn't act as a container for any child controls. Also, the term *Layout* implies a container that is responsible for organizing the layout of its child controls. A layout can be nested. For example a **Grid** control could be held within a **StackLayout** control.
 
 :::image type="content" source="../media/8-resource-scope.png" alt-text="A diagram of the  high-level structure of a typical .NET MAUI application.":::
 

@@ -95,12 +95,12 @@ Now that you've seen the app run, you can make it look better by adding `Horizon
 
 1. Add another `HorizontalStackLayout` to group the `Label` that says **Tip Percentage** with the `Label` named **tipPercent**.
 
-1. Set the `VerticalOptions` property of this `HorizontalStackLayout`to `EndAndExpand` and set the `Spacing` property to `10`:
+1. Set the `VerticalOptions` property of this `HorizontalStackLayout` to `End` and set the `Spacing` property to `10`:
 
 1. Set the `WidthRequest` of the **Tip Percentage** `Label` to `100`
 
     ```xml
-    <HorizontalStackLayout VerticalOptions="EndAndExpand" Spacing="10">
+    <HorizontalStackLayout VerticalOptions="End" Spacing="10">
         <Label Text="Tip Percentage" WidthRequest="100"/>
         <Label ... />
     </HorizontalStackLayout>
@@ -126,10 +126,10 @@ Now that you've seen the app run, you can make it look better by adding `Horizon
     </HorizontalStackLayout>
     ```
 
-1. On all four button controls, set the `HorizontalOptions` property to `CenterAndExpand` and the `WidthRequest` property to `150`. For example:
+1. On all four button controls, set the `HorizontalOptions` property to `Center` and the `WidthRequest` property to `150`. For example:
 
     ```xml
-    <Button Text="15%" WidthRequest="150" HorizontalOptions="CenterAndExpand" ... />
+    <Button Text="15%" WidthRequest="150" HorizontalOptions="Center" ... />
     ```
 
 The complete XAML markup for the content page should look like this:
@@ -158,7 +158,7 @@ The complete XAML markup for the content page should look like this:
             <Label x:Name="totalOutput" Text="0.00" />
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout VerticalOptions="EndAndExpand" Spacing="10">
+        <HorizontalStackLayout VerticalOptions="End" Spacing="10">
             <Label Text="Tip Percentage" WidthRequest="100"/>
             <Label x:Name="tipPercent" Text="15%" />
         </HorizontalStackLayout>
@@ -166,13 +166,13 @@ The complete XAML markup for the content page should look like this:
         <Slider x:Name="tipPercentSlider" Minimum="0" Maximum="100" Value="15" />
 
         <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
-            <Button Text="15%" Clicked="OnNormalTip" WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
-            <Button Text="20%" Clicked="OnGenerousTip"  WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
+            <Button Text="15%" Clicked="OnNormalTip" WidthRequest="150" HorizontalOptions="Center"/>
+            <Button Text="20%" Clicked="OnGenerousTip"  WidthRequest="150" HorizontalOptions="Center"/>
         </HorizontalStackLayout>
         
         <HorizontalStackLayout Margin="0,20,0,0" Spacing="10">
-            <Button x:Name="roundDown" Text="Round Down" WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
-            <Button x:Name="roundUp"   Text="Round Up" WidthRequest="150" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="roundDown" Text="Round Down" WidthRequest="150" HorizontalOptions="Center"/>
+            <Button x:Name="roundUp"   Text="Round Up" WidthRequest="150" HorizontalOptions="Center"/>
         </HorizontalStackLayout>
 
     </VerticalStackLayout>

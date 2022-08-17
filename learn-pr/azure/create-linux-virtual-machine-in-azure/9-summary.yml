@@ -29,10 +29,10 @@ quiz:
     choices:
     - content: "Neither outbound nor inbound requests are allowed."
       isCorrect: false
-      explanation: "Outbound requests are considered low risk, so they are allowed by default."
-    - content: "Outbound request are allowed. Inbound traffic is only allowed from within the virtual network."
+      explanation: "Outbound requests are considered low risk, so they're allowed by default."
+    - content: "Outbound requests are allowed. Inbound traffic is only allowed from within the virtual network."
       isCorrect: true
-      explanation: "Outbound requests are considered low risk, so they are allowed by default. Inbound traffic from within the virtual network is allowed. By placing a VM in a virtual network, the VM owner is implicitly opting-in to communication among the resources in the virtual network."
+      explanation: "Outbound requests are considered low risk, so they're allowed by default. Inbound traffic from within the virtual network is allowed. By placing a VM in a virtual network, the VM owner is implicitly opting-in to communication among the resources in the virtual network."
     - content: "There are no restrictions: all outbound and inbound requests are allowed."
       isCorrect: false
       explanation: "Unrestricted inbound traffic is too risky for the default behavior."
@@ -47,4 +47,4 @@ quiz:
       explanation: "Private-key access is more secure than a password and is a good option when you require access from a limited number of locations. However, if an attacker acquires your private key, they can use it to access your VMs."
     - content: "Private key with passphrase"
       isCorrect: true
-      explanation: "Private key access with a passphrase is the most secure option. Even if an attacker acquires your private key, they will be unable to use it without the passphrase."
+      explanation: "Private key access with a passphrase is the most secure option. Even if an attacker acquires your private key, they'll be unable to use it without the passphrase."
