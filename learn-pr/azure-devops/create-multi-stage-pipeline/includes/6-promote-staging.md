@@ -87,7 +87,7 @@ Here you modify your pipeline configuration to deploy the build to the _Staging_
 
     :::image type="content" source="../media/6-environment-staging.png" alt-text="A screenshot of Azure Pipelines showing the deployment history. The history shows one successful deployment.":::
 
-The Tailspin team gathers to discuss their progress. Amita approves changes in the _Test_ stage while the others watch.
+The Tailspin team gathers to discuss their progress. Amita approves changes in the _Test_ stage, while the others watch.
 
 **Tim:** To tell you the truth, at first I was a little nervous about automated release pipelines. But I really like this now that I see it working. Each stage can have its own environment, associated tests, and approvers. The pipeline automates many things that we had to do manually. But we still have control where we need it.
 

@@ -1,8 +1,8 @@
-Nice job. Your pipeline is taking shape. You and the Tailspin team have moved from a basic proof of concept to a realistic release pipeline. You can use this pipeline to build an artifact and test it before you give it to your users.
+Nice job! Your pipeline is taking shape. You and the Tailspin team have moved from a basic proof of concept to a realistic release pipeline. You can use this pipeline to build an artifact, and test it before you give it to your users.
 
 In this module, you learned ways to control how changes move from one stage of a pipeline to the next. Let's review the pipeline you built in this module. This image shows your pipeline's overall shape:
 
-:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="A whiteboard showing the final pipeline, which includes the Build, Dev, Test, and Staging stages.":::
+:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="A screenshot of a whiteboard showing the final pipeline, which includes the Build, Dev, Test, and Staging stages.":::
 
 The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to their own Azure App Service environment.
 
@@ -13,7 +13,7 @@ The _Dev_, _Test_, and _Staging_ stages each deploy the build artifact to their 
 
 This pipeline satisfies the requirements of the Tailspin team. Your pipeline's shape and how changes flow through it depend on the needs of your team, and of the apps and services that you build.
 
-Although the team is improving their release cadence, there's room for more improvements. For example, Amita from QA must manually test and approve builds before the team can present new features to management. In the next module, you'll work with the Tailspin team to automate additional testing so that changes can move through the pipeline even faster.
+Although the team is improving their release cadence, there's room for more improvement. For example, Amita from QA must manually test and approve builds before the team can present new features to management. In the next module, you'll work with the Tailspin team to automate additional testing so that changes can move through the pipeline even faster.
 
 ## Learn more
 

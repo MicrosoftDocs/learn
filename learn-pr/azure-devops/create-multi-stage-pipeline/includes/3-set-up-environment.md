@@ -82,7 +82,7 @@ To set up the work item:
 
 1. In the **Create a multistage pipeline** work item, at the bottom of the card, select the down arrow. Then, assign the work item to yourself.
 
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
@@ -276,7 +276,7 @@ To add the variables:
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-dev-1234* and not *tailspin-space-game-web-dev-1234.azurewebsites.net*.
 
-1. Near the top of the page, to save your variable to the pipeline, select **Save**.
+1. Earlier in the page, to save your variable to the pipeline, select **Save**.
 
     Your variable group resembles this one:
 
@@ -311,7 +311,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
-1. From the bottom corner of the page, select **Project settings**.
+1. From the lower-left corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then select **Azure Resource Manager**, and then select **Next**.
 1. Near the top of the page, **Service principal (automatic)**. Then, select **Next**.
