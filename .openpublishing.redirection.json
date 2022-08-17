@@ -17314,6 +17314,41 @@
       "source_path": "learn-pr/wwl-azure/design-governance/11-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/12-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cosmos-db-core-api/index.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-azure-cosmos-db-sql-api/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cosmos-db-core-api/1-introduction.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-azure-cosmos-db-sql-api/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cosmos-db-core-api/2-what-is-cosmos-db-core-api.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-azure-cosmos-db-sql-api/2-what-azure-cosmos-db-sql-api",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cosmos-db-core-api/3-how-does-cosmos-db-core-api-work.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-azure-cosmos-db-sql-api/3-how-does-work",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cosmos-db-core-api/4-when-should-you-use-cosmos-db-core-api.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-azure-cosmos-db-sql-api/4-when-should-you-use",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cosmos-db-core-api/5-knowledge-check.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-azure-cosmos-db-sql-api/5-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-azure-cosmos-db-core-api/6-summary.yml",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/introduction-to-azure-cosmos-db-sql-api/6-summary",
+      "redirect_document_id": true
     }
   ]
 }
