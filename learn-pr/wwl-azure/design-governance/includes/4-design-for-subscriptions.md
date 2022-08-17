@@ -1,4 +1,4 @@
-**Azure Subscriptions** are logical containers that serve as units of management and scale and billing boundaries. Limits and quotas can be applied, and each organization can use subscriptions to manage costs and resources by group.​ 
+Azure Subscriptions are logical containers that serve as units of management and scale and billing boundaries. Limits and quotas can be applied, and each organization can use subscriptions to manage costs and resources by group.​ 
 
 ### Things to know about subscriptions
 
@@ -32,7 +32,7 @@ You defined your strategy for the Tailwind Traders management group structure. N
 
 - **Consider administrative management**. Subscriptions provide a management boundary, which allows for a clear separation of concerns. Will each subscription for Tailwind Traders need a separate administrator, or can you combine subscriptions? The Corporate management group could have a single subscription for both the HR and Legal departments. 
 
-- **Consider how to assign Azure policies?** Both management groups and subscriptions serve as a boundary for the assignment of Azure policies. Workloads like those for the Payment Card Industry (PCI) typically require extra policies to achieve compliance. Rather than using a management group to group workloads that require PCI compliance, you can achieve the same isolation with a subscription. These types of decisions ensure you don't have too many Tailwind Traders management groups with only a few subscriptions. 
+- **Consider how to assign Azure policies**. Both management groups and subscriptions serve as a boundary for the assignment of Azure policies. Workloads like those for the Payment Card Industry (PCI) typically require extra policies to achieve compliance. Rather than using a management group to group workloads that require PCI compliance, you can achieve the same isolation with a subscription. These types of decisions ensure you don't have too many Tailwind Traders management groups with only a few subscriptions. 
 
 - **Consider network topologies**. Virtual networks can't be shared across subscriptions. Resources can connect across subscriptions with different technologies, such as virtual network peering or Virtual Private Networks (VPNs). Consider which Tailwind Traders workloads must communicate with each other when you decide if a new subscription is required.
 

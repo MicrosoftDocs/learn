@@ -1,4 +1,4 @@
-[**Management groups**](/azure/governance/management-groups/overview) are containers that help you manage access, policy, and compliance across **multiple subscriptions**.​ You can use management groups to:
+[Management groups](/azure/governance/management-groups/overview) are containers that help you manage access, policy, and compliance across **multiple subscriptions**.​ You can use management groups to:
 
 - Limit the regions where virtual machines can be created, across subscriptions.
 

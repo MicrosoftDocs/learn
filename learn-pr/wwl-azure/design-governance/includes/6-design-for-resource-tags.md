@@ -39,7 +39,7 @@ You created the organizational hierarchy for Tailwind Traders. Now you need to d
 
    | Tag type | Description |  Example name-value pairs |
    | --- | --- | --- |
-   | **Functional** | Functional tags categorize resources according to their purpose within a workload. This tag shows the deployed environment for a resource, or other functionality and operational details. | - `app = catalogsearch1` <br> `tier = web` <br> - `webserver = apache` <br> - `env = production, dev, staging` |
+   | **Functional** | Functional tags categorize resources according to their purpose within a workload. This tag shows the deployed environment for a resource, or other functionality and operational details. | - `app = catalogsearch1` <br> - `tier = web` <br> - `webserver = apache` <br> - `env = production, dev, staging` |
    | **Classification** | Classification tags identify a resource by how it's used and what policies apply to it. | - `confidentiality = private` <br> - `SLA = 24hours` |
    | **Accounting** | Accounting tags allow a resource to be associated with specific groups within an organization for billing purposes. | - `department = finance` <br> - `program = business-initiative` <br> - `region = northamerica` | 
    | **Partnership** | Partnership tags provide information about the people (other than IT members) who are associated with a resource, or otherwise affected by the resource. | - `owner = jsmith` <br> - `contactalias = catsearchowners` <br> - `stakeholders = user1;user2;user3` |
