@@ -2,7 +2,7 @@ You've learned to use two types of extensions to store custom values, query the 
 
 ## Schema extension definitions
 
-Before you can use schema extension, you must define it. The following are the core components of a schema extension definition.
+Before you can use a schema extension, you must define it. The following are the core components of a schema extension definition.
 
 ### Extension ID
 
