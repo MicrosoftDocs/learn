@@ -39,7 +39,7 @@ You manage the directory extension definitions as follows:
 
 After you define a directory extension, it's available for use in user profiles. 
 
-You manage the directory extension properties on user profiles through the same HTTP methods that you use to manage users.
+You manage the directory extension properties for users through the same HTTP methods that you use to manage users.
 + Use POST to store data in the directory extension property when you're creating a new user.
 + Use PATCH to either store data in the directory extension property or update or delete the existing data. To delete data from the directory extension property, set its value to `null`.
 + Use GET to read the directory extension properties for all users or individual users in the tenant.
