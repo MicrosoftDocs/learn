@@ -9,7 +9,7 @@ The Purview Data Map is a unified map of your data assets and their relationship
 
 ### Sourcing data
 
-Sourcing your data starts with a process where you register data sources. Microsoft Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. You'll register the various data sources so Microsoft Purview is aware of them. The data remains in its location and isn't migrated to any other platform.
+Sourcing your data starts with a process where you register data sources. Microsoft Purview supports an array of data sources that span on-premises, multicloud, and software-as-a-service (SaaS) options. You'll register the various data sources so Microsoft Purview is aware of them. The data remains in its location and isn't migrated to any other platform.
 
 You'll register a data source from within the Azure portal. Once you have a Microsoft Purview service configured in Azure, you'll use the Microsoft Purview governance portal to register your data sources.
 
