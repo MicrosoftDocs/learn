@@ -69,6 +69,6 @@ Let's examine a few of your pipeline's analytics.
 
 **Andy:** That's right. We'll collect more data as we perform more runs over time. We'll use this data to gain a greater sense of the health of the pipeline and where we can make it more efficient.
 
-**Mara:** For example, I see that the task that runs `npm install` takes the most time to finish. Do we need to fix that? Perhaps we can make it run faster by caching the *Node.js* packages that we use on one of our servers.
+**Mara:** For example, I see that the task that runs `npm install` takes the most time to finish. Do we need to fix that? Perhaps we can make it run faster by caching the `Node.js` packages that we use on one of our servers.
 
 **Andy:** I always appreciate your willingness to improve things. But let's hold off on that idea for now. Time will reveal where the pipeline is slow or inefficient. From there, we can decide which improvements are worth tackling.

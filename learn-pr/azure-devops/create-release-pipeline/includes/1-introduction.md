@@ -8,8 +8,8 @@ In this module, you'll continue your journey with the Tailspin team as they set 
 
 After completing this module, you'll be able to:
 
-- Define what continuous delivery is, why it's important, and what tools you can use.
-- Create a basic release pipeline in Azure Pipelines, that deploys a web application to Azure
+- Define what continuous delivery is, why it is important, and what tools you can use.
+- Create a basic release pipeline in Azure Pipelines that deploys a web application to Azure
   App Service.
 - Examine pipeline analytics to understand the health and history of your releases.
 

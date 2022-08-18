@@ -12,7 +12,7 @@ Amita points to the value stream map, which you originally saw in the [Assess yo
 
 **Amita:** In several areas, we can improve by cutting down the time we spend. For example, we're still slow at running quality tests.
 
-**Tim:** Exactly. And we still have a bottleneck at deploying changes to production, because management needs to approve new features before we release them.
+**Tim:** Exactly. And we still have a bottleneck in deploying changes to production because management needs to approve new features before we release them.
 
 **Mara:** It sounds like we can start planning the tasks that we'll accomplish in this sprint.
 

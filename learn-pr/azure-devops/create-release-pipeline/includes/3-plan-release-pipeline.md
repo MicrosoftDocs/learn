@@ -53,7 +53,7 @@ Following this example, your production environment might be:
 * A managed service, such as Azure App Service.
 * A serverless environment, such as Azure Functions.
 
-An artifact is deployed to an environment. Azure Pipelines makes it easy to deploy to almost any kind of environment, whether it's on-premises, or in the cloud.
+An artifact is deployed to an environment. Azure Pipelines makes it easy to deploy to almost any kind of environment, whether it's on-premises or in the cloud.
 
 In Azure Pipelines, the term _environment_ has a second meaning. Here, an _environment_ is an abstract representation of your deployment environment, such as a Kubernetes cluster, an App Service instance, or a virtual machine.
 
@@ -63,7 +63,7 @@ One way to define an Azure Pipelines environment is with a YAML file. Your YAML 
 
 As you plan your release pipeline, you'll need to decide where your application, or service will run. Let's listen in and see what Andy and Mara decide.
 
-**Andy:** At a high level, what type of environment do we want? Do we want to deploy on-premises, or to the cloud?
+**Andy:** At a high level, what type of environment do we want? Do we want to deploy on-premises or to the cloud?
 
 **Mara:** We could ask Tim to create a VM for us in the lab. But he's always running out of hardware. It'll be fast and easy to set up a POC ourselves if we use the cloud.
 
@@ -87,7 +87,7 @@ Andy lists these options on the whiteboard:
 
 **Andy:** I'm with you. That leaves VMs or App Service. I think VMs would be a better choice if we were moving a line-of-business app, one that requires full access to some particular environment, to the cloud. We're not doing anything that significant.
 
-**Mara:** That leaves App Service, which would be my choice. It's designed to work with Azure DevOps, and it comes with advantages. It's a platform as a service (PaaS) environment for web apps, so it takes a lot of the burden off of us. We won't have to worry about infrastructure. It also comes with security features and lets us perform load balancing and automatic scaling.
+**Mara:** That leaves App Service, which would be my choice. It's designed to work with Azure DevOps, and it comes with advantages. It's a platform as a service (PaaS) environment for web apps, so it takes a lot of the burden off us. We won't have to worry about infrastructure. It also comes with security features and lets us perform load balancing and automatic scaling.
 
 **Andy:** App Service sounds like what we need. Let's use App Service. We're creating just a proof of concept anyway. We can always change the compute option if we want to try something else later.
 
