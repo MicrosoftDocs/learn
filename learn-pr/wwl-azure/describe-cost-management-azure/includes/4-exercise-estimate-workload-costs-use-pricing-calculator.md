@@ -36,8 +36,8 @@ In practice, you would define your requirements in greater detail. But here are 
 
 Let's start with a quick tour of the Pricing calculator.
 
-1.  Go to the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true).
-2.  Notice the following tabs:
+1. Go to the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true).
+1. Notice the following tabs:
     
     :::image type="content" source="../media/price-calculator-menu-bar-4a43e988.png" alt-text="A screenshot of the Pricing calculator menu bar with the Products tab selected.":::
     
@@ -57,18 +57,30 @@ Here you add each Azure service that you need to the calculator. Then you config
 
 ### Add services to the estimate
 
-1.  On the **Products** tab, select the service from each of these categories:
+1. On the **Products** tab, select the service from each of these categories:
     
     | **Category** | **Service**             |
     | ------------ | ----------------------- |
     | Compute      | **Virtual Machines**    |
     | Databases    | **Azure SQL Database**  |
     | Networking   | **Application Gateway** |
-2.  Scroll to the bottom of the page. Each service is listed with its default configuration.
+1. Scroll to the bottom of the page. Each service is listed with its default configuration.
 
 ### Configure services to match your requirements
 
-1.  Under **Azure SQL Database**, set these values:
+1. Under **Virtual Machines**, set these values:
+    
+    | **Setting**      | **Value**             |
+    | ---------------- | --------------------- |
+    | Region           | **West US**           |
+    | Operating system | **Windows**           |
+    | Type             | **(OS Only)**         |
+    | Tier             | **Standard**          |
+    | Instance         | **D2 v3**             |
+    | Virtual machines | **2** x **730 Hours** |
+    
+    Leave the remaining settings at their current values.
+1. Under **Azure SQL Database**, set these values:
     
     | **Setting**         | **Value**           |
     | ------------------- | ------------------- |
@@ -82,7 +94,7 @@ Here you add each Azure service that you need to the calculator. Then you config
     | Instance            | **8 vCore**         |
     
     Leave the remaining settings at their current values.
-2.  Under **Application Gateway**, set these values:
+1. Under **Application Gateway**, set these values:
     
     | **Setting**            | **Value**                    |
     | ---------------------- | ---------------------------- |
