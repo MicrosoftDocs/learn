@@ -1,0 +1,48 @@
+
+Here, you'll create a dashboard from these queries and share this dashboard. Dashboards tell a story through visualizations, and are an excellent way to monitor your data and see all of your most important insights at a glance. Dashboards aren't just pictures- they are interactive and the tiles update as the underlying data changes. The visualizations you see on the dashboard are called tiles. You pin tiles to a dashboard from a query, or create new tiles within the dashboard page. 
+
+## Pin query to dashboard
+
+Start with a query that you want to pin to the dashboard. In this case, you'll share the plot of events versus time.
+
+1.  At the top right corner of the query editor, select **Share** > **Pin to dashboard**.
+
+    :::image type="content" source="../media/8-pin-query.png" alt-text="Screenshot of pin query to dashboard.":::
+
+1. In the **Pin to dashboard** pane that opens, fill in the fields as follows:
+
+    :::image type="content" source="../media/8-pin-to-dashboard.png" alt-text="Screenshot of pin to dashboard options.":::
+
+    | Field | Description |
+    |---|---|
+    |Tile name | The title for this specific tile. In this example, give it a name that describes the contents of the graph. |
+    | Data source name | The database on which the query is run. This field is auto-populated when pinning from query. |
+    | Use existing/Create new | In this example, you're creating a new dashboard.|
+    | Dashboard name | Think about all the tiles you want to add to this dashboard, and give the dashboard an appropriate name.|
+
+1. Select **Pin** to create the pin and view the dashboard.
+
+    :::image type="content" source="../media/8-dashboard-created.png" alt-text="Screenshot of new pin in dashboard.":::
+
+## Pin query to dashboard
+
+Start with a query that you want to pin to the dashboard. In this case, you'll share the plot of events versus time.
+
+1.  At the top right corner of the query editor, select **Share** > **Pin to dashboard**.
+
+    :::image type="content" source="../media/8-pin-query.png" alt-text="Screenshot of pin query to dashboard.":::
+
+1. In the **Pin to dashboard** pane that opens, fill in the fields as follows:
+
+    :::image type="content" source="../media/8-pin-to-dashboard.png" alt-text="Screenshot of pin to dashboard options.":::
+
+    | Field | Description |
+    |---|---|
+    |Tile name | The title for this specific tile. In this example, give it a name that describes the contents of the graph. |
+    | Data source name | The database on which the query is run. This field is auto-populated when pinning from query. |
+    | Use existing/Create new | In this example, you're creating a new dashboard.|
+    | Dashboard name | Think about all the tiles you want to add to this dashboard, and give the dashboard an appropriate name.|
+
+1. Select **Pin** to create the pin and view the dashboard.
+
+    :::image type="content" source="../media/8-dashboard-created.png" alt-text="Screenshot of new pin in dashboard.":::

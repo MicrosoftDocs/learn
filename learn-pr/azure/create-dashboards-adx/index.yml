@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.create-dashboards-adx
+metadata:
+  moduleType: standard
+  title: Create dashboards in Azure Data Explorer
+  description: "Learn how to create dashboards in Azure Data Explorer. You'll add tiles and visualizations, and then share the dashboard with others."
+  ms.date: 8/17/2022
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create dashboards in Azure Data Explorer
+summary: "ADD SUMMARY HERE"
+abstract: |
+  By the end of this module, you'll be able to:
+    -	Build dashboards in Azure Data Explorer.
+    -	Use dashboard parameters.
+
+prerequisites: |
+  - A Microsoft account or an Azure Active Directory user identity to connect to a free cluster. An Azure subscription isn't required. 
+  - Familiarity with database structures like tables, columns, and rows.
+  - Familiarity with Kusto Query Language (KQL) functions and operators.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - beginner
+roles: 
+- business-analyst
+- data-analyst
+- data-scientist
+- developer
+- security-operations-analyst
+products: 
+- azure
+- azure-data-explorer
+subjects: 
+- data-visualization
+units:
+- learn.create-dashboards-adx.introduction
+- learn.create-dashboards-adx.dashboards-adx
+- learn.create-dashboards-adx.exercise-create-dashboard-from-query
+- learn.create-dashboards-adx.exercise-add-new-tile
+- learn.create-dashboards-adx.dashboard-parameters
+- learn.create-dashboards-adx.share-dashboard
+- learn.create-dashboards-adx.knowledge-check
+- learn.create-dashboards-adx.summary
+badge:
+  uid: learn.create-dashboards-adx.badge
