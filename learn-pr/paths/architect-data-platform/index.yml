@@ -5,8 +5,8 @@ metadata:
   description: Learn how to architect a data platform in Azure and build solutions to store relational and NoSQL data.
   brand: azure
   ms.date: 10/22/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: seesharprun
+  ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Architect a data platform in Azure
