@@ -40,7 +40,7 @@ In this step, you create directory extension definitions on the "Contoso extensi
 
 ### Request
 
-The following request creates a directory extension definition named **linkedInProfile**. Run the request two more times, changing the name first to **skypeId** and then to **xboxGamertag**.
+The following request creates a directory extension definition named **linkedInProfile**. Run the request two more times, changing the extension name first to **skypeId** and then to **xboxGamertag**.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/applications/da489504-01b0-4754-bf9d-8ed05422ba2f/extensionProperties
