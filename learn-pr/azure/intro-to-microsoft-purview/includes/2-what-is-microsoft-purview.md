@@ -15,7 +15,7 @@ Data Estate Insights, one of the key pillars of Microsoft Purview, offers a bird
 * **Glossary insights**: A status report on the glossary to help users understand the distribution of glossary terms by status, or to view how the terms are attached to assets.
 * **Classification insights**: A report showing where classified data is located. It allows security administrators to understand the types of information found in their organization's data estate.
 * **Sensitivity insights**: This report focuses on sensitivity labels that are found during scans. Security administrators can make use of this information to ensure security is appropriate for the data estate.
-* **File extension insights**: Detailed reporting on file extensions or file types found during scans. You can use this to understand the number of files, of each type, that exist. It also indicates where these files are located and if they can be scanned for sensitive information.
+* **File extension insights**: Detailed reporting on file extensions or file types found during scans. You can use this to understand the number of files of each type that exist. It also indicates where these files are located and if they can be scanned for sensitive information.
 
 :::image type="content" source="../media/insights.png" alt-text="Depiction of a computer monitor displaying the Purview Insights graphs and data.":::
 
