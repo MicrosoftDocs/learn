@@ -1,4 +1,4 @@
-For this module, you needed to allow your company's employees to share their public LinkedIn profile URL, Skype ID, and Xbox *gamertag* through their team-bonding app. We recommended that you use Microsoft Graph extensions as a suitable option to help your organization avoid the overhead of a new database system.
+For this module, you needed to allow your company's employees to share their public LinkedIn profile URL, Skype ID, and Xbox *gamertag* through their team-bonding app. We recommended that you use Microsoft Graph extensions as a suitable option to help your organization to store lightweight data without the overhead of a new database system.
 
 You explored the four extension options provided by Microsoft Graph, and you identified the following considerations for working with each extension option:
 
