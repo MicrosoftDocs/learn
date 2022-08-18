@@ -49,7 +49,7 @@ public class Product
 }
 ```
 
-This implementation is an incredibly versatile C# class that any developer can pick and use immediately. Suppose, for any reason; you need to change the name of properties to fit you business needs. In that case, you can use property attributes to disassociate the name of the property you use in the C# code from the name of the property used in JSON and, in effect, in Azure Cosmos DB SQL API. In this example, you can use the name **InternalId** in C# code and still use the identifier **id** in JSON and Azure Cosmos DB SQL API.
+This implementation is an incredibly versatile C# class that any developer can pick and use immediately. Suppose, for any reason, you need to change the name of properties to fit your business needs. In that case, you can use property attributes to disassociate the name of the property you use in the C# code from the name of the property used in JSON and, in effect, in Azure Cosmos DB SQL API. In this example, you can use the name **InternalId** in C# code and still use the identifier **id** in JSON and Azure Cosmos DB SQL API.
 
 ```csharp
 [JsonProperty(PropertyName = "id")]
