@@ -27,7 +27,7 @@ In this unit, you'll:
 
 1. After the resource deploys, select **Go to resource**.
 
-1. In the left menu under **General**, select **Properties**.
+1. In the left menu, scroll down to **General** and select **Properties**.
 
 1. Look for the access control mode, and select **Use resource or workspace permissions**. This setting changes the access mode to use the resource-context.
 
@@ -69,15 +69,16 @@ In this unit, you'll:
 
 1. In the left menu under **Monitoring**, select **Insights** > **Enable**.
 
-1. For **Choose a Log Analytics Workspace**, select the Log Analytics workspace you created.
+1. Select the radio button for **Log Analytics agent**, then select the Log Analytics workspace you created in the **Log Analytics workspaces** drop-down.
 
-1. Select **Enable**.
+1. Select **Configure**.
 
     :::image type="content" source="../media/3-enable-azure-monitor-vms.png" alt-text="Enable Azure Monitor VM Insights after selecting the right subscription and Log Analytics workspace.":::
 
 1. Repeat the same steps for SampleVM2.
 
 1. Wait 5 to 10 minutes.
+
 1. In the left menu under **Monitoring** > **Insights**, select **Refresh** until you get results.
 
 1. Review the map, which displays dependencies like processes running, ports open, connection details, health of the virtual machine, machine properties, and Azure virtual machine properties.
@@ -102,11 +103,11 @@ In this unit, you'll:
 
 1. Experiment with different settings by moving from **Avg**, to **Min**, to **Max**, and so on. The virtual machines were created only a few minutes ago, so there might not be much data generated.
 
-1. Select **Log Events**.
+1. Select **Log Events**. You might need to expand the property panel on the right.
 
     :::image type="content" source="../media/3-log-events.png" alt-text="Screenshot of where Log Events show up within Azure Monitor VM Insights." lightbox="../media/3-log-events.png":::
 
-1. Select the **InsightsMetrics** table.
+1. Select the **InsightsMetrics** row in the table.
 
     :::image type="content" source="../media/3-azure-monitor-logs-data-summary.png" alt-text="Screenshot after selecting Log Events from the Azure Monitor VM Insights pane.":::
 

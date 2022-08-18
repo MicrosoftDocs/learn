@@ -1,11 +1,11 @@
-Now you can create the various resources; such as databases, containers, and items; that you'll use in your Azure Cosmos DB account. For this exercise, you'll create a database named ``cosmicworks`` with a single container named ``products``. You need to make sure that the code won't crash trying to re-create a container if you run this console application multiple times.
+Now you can create the various resources; such as databases, containers, and items; that you'll use in your Azure Cosmos DB account. For this exercise, you'll create a database named `cosmicworks` with a single container named `products`. You need to make sure that the code won't crash trying to re-create a container if you run this console application multiple times.
 
 Right now, you have a few key requirements:
 
-1. Create a database if it doesn't already exist
-1. Create a container if it doesn't already exist
+01. Create a database if it doesn't already exist
+01. Create a container if it doesn't already exist
 
-[![Illustration of icons indicating Azure Cosmos DB resources are created in the cloud.](../media/project-visual-resources.png)](../media/project-visual-resources.png)
+:::image type="content" source="../media/project-visual-resources.png" alt-text="Illustration of icons indicating Azure Cosmos DB resources are created in the cloud." lightbox="../media/project-visual-resources.png" border="false":::
 
 After you complete this exercise, your project will create any databases, or containers it requires to execute.
 
@@ -16,7 +16,7 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
 > [!NOTE]
 > You can safely skip this section if your terminal is already open, your environment variable is still set, and you are already editing your project in the code editor.
 
-1. Set the environment variable named ``COSMOS_CONNECTION_STRING`` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
+01. Set the environment variable named `COSMOS_CONNECTION_STRING` to the value of this command, which gets a connection string to the first Azure Cosmos DB SQL API account in your sandbox subscription.
 
     ```azurecli
     export COSMOS_CONNECTION_STRING=$(az cosmosdb keys list \
@@ -30,145 +30,171 @@ It's possible, if you closed your Azure Cloud Shell terminal pane, for the termi
         --output tsv)
     ```
 
-1. Change to the ``~/clouddrive/inventorytool`` directory and open a code editor.
+01. Change to the *clouddrive/inventory* directory and open a code editor.
 
     ```bash
-    cd ~/clouddrive/inventorytool && code .
+    cd ~/clouddrive/inventory && code .
     ```
 
 ## Create a database
 
 The SDK contains useful methods that will only create a new resource if it doesn't already exist. By using these methods, you can run the application multiple times without worrying about exceptions raised by conflicts. Here, you'll create a database.
 
-1. Open the **Program.cs** file.
+01. Open the *Program.cs* file again.
 
-1. Create, or get, a new database by calling ``CosmosClient.CreateDatabaseIfNotExistsAsync``. Store the result in a variable named **database**. Be sure to set these parameters:
-
-    | Parameter | Value |
-    | --- | --- |
-    | **id** | ``cosmicworks`` |
+01. Create a new asynchronous local function named `CreateResourcesAsync` that returns an item of type <xref:Microsoft.Azure.Cosmos.Container>.
 
     ```csharp
-    Database database = await client.CreateDatabaseIfNotExistsAsync(
-        id: "cosmicworks"
-    );
+    async Task<Container> CreateResourcesAsync()
+    {
+    }
     ```
 
-1. Output the unique identifier for the database.
+01. Add the following lines of code within the **CreateResourcesAsync** local function.
 
-    ```csharp
-    Console.WriteLine($"[Database created]:\t{database.Id}");
-    ```
+    01. Create, or get, a new database by calling <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync(System.String,Microsoft.Azure.Cosmos.ThroughputProperties,Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named `database`. Be sure to set these parameters:
+
+        | Parameter | Value |
+        | --- | --- |
+        | **id** | `cosmicworks` |
+
+        ```csharp
+        Database database = await client.CreateDatabaseIfNotExistsAsync(
+            id: "cosmicworks"
+        );
+        ```
+
+    01. Output the unique identifier for the database.
+
+        ```csharp
+        Console.WriteLine($"[Database created]:\t{database.Id}");
+        ```
+
+01. **Save** the *Program.cs* file.
 
 ## Create a container
 
 Here, you'll create a container with a specific "slice" of the shared throughput from the database.
 
-1. Create, or get, a new container by calling ``Database.CreateContainerIfNotExistsAsync``. Store the result in a variable named **container**. Be sure to set these parameters:
+01. Add the following lines of code within the **CreateResourcesAsync** local function.
 
-    | Parameter | Value |
-    | --- | --- |
-    | **id** | ``products`` |
-    | **partitionKeyPath** | ``/categoryId`` |
-    | **throughput** | ``400`` |
+    01. Create, or get, a new container by calling <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync(System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named **output**. Be sure to set these parameters:
+
+        | Parameter | Value |
+        | --- | --- |
+        | **id** | `products` |
+        | **partitionKeyPath** | `/categoryId` |
+        | **throughput** | `400` |
+
+        ```csharp
+        Container output = await database.CreateContainerIfNotExistsAsync(
+            id: "products",
+            partitionKeyPath: "/categoryId",
+            throughput: 400
+        );
+        ```
+
+    01. Now, output the unique identifier for the container.
+
+        ```csharp
+        Console.WriteLine($"[Container created]:\t{output.Id}");
+        ```
+
+    01. Return the **output** variable.
+
+        ```csharp
+        return output;
+        ```
+
+01. Back within the main program flow, asynchronously call the **CreateResourcesAsync** method and store the result in a variable named **container**.
 
     ```csharp
-    Container container = await database.CreateContainerIfNotExistsAsync(
-        id: "products",
-        partitionKeyPath: "/categoryId",
-        throughput: 400
-    );
+    Container container = await CreateResourcesAsync();
     ```
 
-1. Now, output the unique identifier for the container.
-
-    ```csharp
-    Console.WriteLine($"[Container created]:\t{container.Id}");
-    ```
-
-1. **Save** the **Program.cs** file.
+01. **Save** the *Program.cs* file.
 
 ## Create record types for items
 
-C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable. Records also have an easy to read syntax and are quick to create with only a few lines of code. In this section, you'll create a base type for all items and individual types for each "kind" of item.
+C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable by default. You still can add code to create a modified copy of a record if you need to. Records also have an easy to read syntax and are quick to create with only a few lines of code. In this section, you'll create a base type for all items and individual types for each "kind" of item.
 
-1. Using the terminal, create a new file named **Item.cs**.
+01. Using the terminal, create a new file named *Item.cs*.
 
     ```bash
     touch Item.cs
     ```
 
-1. Refresh the code editor by invoking the ``code`` command again.
+01. Refresh the code editor by invoking the `code` command again.
 
     ```bash
     code .
     ```
 
-1. Open the **Item.cs** file.
+01. Open the *Item.cs* file.
 
-1. Create a base type named **Item** that carries the three properties you want to use in all items for this container: ``id``, ``categoryId``, and ``type``.
+01. Create a base type named `Item` that carries the three properties you want to use in all items for this container: `id`, `categoryId`, and `type`.
 
     ```csharp
     public record Item(
-        string id,
-        string categoryId,
-        string type
+        string Id,
+        string CategoryId,
+        string Type
     );
     ```
 
-1. **Save** the **Item.cs** file.
+01. **Save** the *Item.cs* file.
 
-1. Create a new file named **Category.cs** and refresh the code editor.
+01. Create a new file named *Category.cs* and refresh the code editor.
 
     ```bash
     touch Category.cs && code .
     ```
 
-1. Open the **Category.cs** file.
+01. Open the *Category.cs* file.
 
-1. Create a new type named **Category** that inherits from the **Item** type. Ensure the type passes its values to the base implementation, and set the **type** variable to output the name of the **Category** type.
+01. Create a new type named **Category** that inherits from the **Item** type. Ensure the type passes its values to the base implementation, and set the **type** variable to output the name of the **Category** type.
 
     ```csharp
     public record Category(
-        string id,
-        string categoryId,
-        string type = nameof(Category)
+        string Id,
+        string CategoryId
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Category)
     );
     ```
 
-1. **Save** the **Category.cs** file.
+01. **Save** the *Category.cs* file.
 
-1. Create a new file named **Product.cs** and refresh the code editor.
+01. Create a new file named *Product.cs* and refresh the code editor.
 
     ```bash
     touch Product.cs && code .
     ```
 
-1. Open the **Product.cs** file.
+01. Open the *Product.cs* file.
 
-1. Create a new type named **Product** that inherits from **Item** and adds a few new fields: ``name``, ``price``, ``archived``, and ``quantity``.
+01. Create a new type named **Product** that inherits from **Item** and adds a few new properties: `name`, `price`, `archived`, and `quantity`.
 
     ```csharp
     public record Product(
-        string id, 
-        string categoryId, 
-        string name, 
-        decimal price, 
-        bool archived, 
-        int quantity,
-        string type = nameof(Product)
+        string Id,
+        string CategoryId
     ) : Item(
-        id,
-        categoryId,
-        type
-    );
+        Id,
+        CategoryId,
+        nameof(Product)
+    )
+    {
+        public string Name { get; init; } = default!;
+        public decimal Price { get; init; }
+        public bool Archived { get; init; }
+        public int Quantity { get; init; }
+    };
     ```
 
-1. **Save** the **Product.cs** file.
+01. **Save** the *Product.cs* file.
 
 ## Check your work
 
@@ -176,13 +202,13 @@ Your app now creates a database and container. The methods you used to create th
 
 ### [Run application](#tab/run-app)
 
-1. Run the .NET application in the terminal
+01. Run the .NET application in the terminal
 
     ```dotnetcli
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+01. Observe the output of running the application. The output should match the example here.
 
     ```output
     ...
@@ -192,76 +218,87 @@ Your app now creates a database and container. The methods you used to create th
 
 ### [Review code](#tab/review-code)
 
-1. Review the **Item.cs** code file to make sure that your code matches this sample.
+01. Review the *Item.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Item(
-        string id,
-        string categoryId,
-        string type
+        string Id,
+        string CategoryId,
+        string Type
     );
     ```
 
-1. Review the **Category.cs** code file to make sure that your code matches this sample.
+01. Review the *Category.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Category(
-        string id,
-        string categoryId,
-        string type = nameof(Category)
+        string Id,
+        string CategoryId
     ) : Item(
-        id,
-        categoryId,
-        type
+        Id,
+        CategoryId,
+        nameof(Category)
     );
     ```
 
-1. Review the **Product.cs** code file to make sure that your code matches this sample.
+01. Review the *Product.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     public record Product(
-        string id, 
-        string categoryId, 
-        string name, 
-        decimal price, 
-        bool archived, 
-        int quantity,
-        string type = nameof(Product)
+        string Id,
+        string CategoryId
     ) : Item(
-        id,
-        categoryId,
-        type
-    );
+        Id,
+        CategoryId,
+        nameof(Product)
+    )
+    {
+        public string Name { get; init; } = default!;
+        public decimal Price { get; init; }
+        public bool Archived { get; init; }
+        public int Quantity { get; init; }
+    };
     ```
 
-1. Review the **Program.cs** code file to make sure that your code matches this sample.
+01. Review the *Program.cs* code file to make sure that your code matches this sample.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
+    using Microsoft.Azure.Cosmos.Fluent;
     
-    string cosmosConnectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    using CosmosClient client = GetClient();
     
-    Console.WriteLine($"[Connection string]:\t{cosmosConnectionString}");
+    Container container = await CreateResourcesAsync();
     
-    using CosmosClient client = new(
-        connectionString: cosmosConnectionString
-    );
+    static CosmosClient GetClient()
+    {
+        // Implementation removed for brevity
+    }
     
-    Console.WriteLine("[Client connected]");
+    async Task<Container> CreateResourcesAsync()
+    {
+        // Implementation removed for brevity
+    }
+    ```
 
+01. Within the **Program.cs** code file, review the **CreateResourcesAsync** local function to make sure that your code matches this sample.
+
+    ```csharp
     Database database = await client.CreateDatabaseIfNotExistsAsync(
         id: "cosmicworks"
     );
-    
+
     Console.WriteLine($"[Database created]:\t{database.Id}");
-    
-    Container container = await database.CreateContainerIfNotExistsAsync(
+
+    Container output = await database.CreateContainerIfNotExistsAsync(
         id: "products",
         partitionKeyPath: "/categoryId",
         throughput: 400
     );
-    
-    Console.WriteLine($"[Container created]:\t{container.Id}");
+
+    Console.WriteLine($"[Container created]:\t{output.Id}");
+
+    return output;
     ```
 
 ---

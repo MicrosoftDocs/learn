@@ -4,7 +4,8 @@ title: Plan build dependencies for your pipeline
 metadata:
   title: Plan build dependencies for your pipeline
   description: Share code by using packages and consume the packages in your pipeline
-  ms.date: 05/28/2021
+  ms.custom: devdivchpfy22
+  ms.date: 08/09/2022
   author: ramiMSFT
   ms.author: rabououn
   ms.topic: interactive-tutorial
@@ -22,7 +23,7 @@ quiz:
       explanation: "You can host packages on a network share or use a web service. Authenticated users can download your package and use it in their own applications."
     - content: "A Git construct for moving a repository."
       isCorrect: false
-      explanation: "A package is not something specific to Git."
+      explanation: "A package isn't something specific to Git."
     - content: "A preview version of your library."
       isCorrect: false
       explanation: "Packages relate to both pre-release and stable versions of your library."
@@ -30,7 +31,7 @@ quiz:
     choices:
     - content: "A public hosting service, such as NuGet."
       isCorrect: true
-      explanation: "Hosting services such as NuGet make it easy for you to upload packages, as well as for others to discover and use them."
+      explanation: "Hosting services such as NuGet make it easy for you to upload packages, and for others to discover and use them."
     - content: "On a public network file share."
       isCorrect: false
       explanation: "Although this is possible, others might not be able to discover your package. It also adds responsibility on your part to ensure the network share is secure."

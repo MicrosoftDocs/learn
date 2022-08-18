@@ -10,7 +10,7 @@ Although Andy and Mara are the primary code contributors, setting up a rule on G
 
 ### Explore tools that simplify the Git and GitHub workflow
 
-In this module, you made basic changes to the _Space Game_ website. In practice, your changes will likely be much more complex. Although you can do everything you need from the command line, there are a number of tools you can use to simplify the workflow. Here are two that we recommend:
+In this module, you made basic changes to the _Space Game_ website. In practice, your changes will likely be much more complex. Although you can do everything you need from the command line, there are many tools you can use to simplify the workflow. Here are two that we recommend:
 
 * Visual Studio Code includes Git support in-the-box. Here are resources where you can learn more:
   * [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol?azure-portal=true)
@@ -19,7 +19,7 @@ In this module, you made basic changes to the _Space Game_ website. In practice,
 
 ### Learn more about Git
 
-Although you can learn Git with just a few commands, full mastery will enable you to perform more complex kinds of merges and understand the history of your code base.
+Although you can learn Git with just a few commands, full mastery will let you perform more complex types of merges and understand the history of your code base.
 
 [git-scm.com](https://git-scm.com?azure-portal=true) and the book [Pro Git](https://git-scm.com/book/en/v2?azure-portal=true) are two excellent resources for learning more about Git.
 
