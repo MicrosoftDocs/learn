@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "The training script, the dataset, the compute."
       isCorrect: false
-      explanation: "That is incorrect. It is not necessary to refer to the dataset in the job YAML file."
+      explanation: "That is incorrect. It isn't necessary to refer to the dataset in the job YAML file."
     - content: "The training script, the dataset, the environment."
       isCorrect: false
-      explanation: "That is incorrect. It is not necessary to refer to the dataset in the job YAML file."
+      explanation: "That is incorrect. It isn't necessary to refer to the dataset in the job YAML file."
     - content: "The training script, the environment, the compute."
       isCorrect: true
       explanation: "That is correct. To submit a job, you need to state what to run (training script), how to run it (environment), and where to run it (compute)."
