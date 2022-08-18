@@ -46,6 +46,8 @@ Now that you have a Cloud Shell environment, you can run a simple application th
     ```
     git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
     ```
+   
+    >[!TIP] If you already used this command in another lab to clone the *ai-900* repository, you can skip this step.
 
 2. The files are downloaded to a folder named **ai-900**. Now we want to see all of the files in your Cloud Shell storage and work with them. Type the following command into the shell: 
 
