@@ -11,7 +11,7 @@ You explored the four extension options provided by Microsoft Graph, and you ide
 
 From your learnings and hands-on prototyping, you can now select an option that best fits the current needs of your team-bonding app and the future needs of your organization.
 
-Without Microsoft Graph extensions, you would need to explore alternative options for storing the three pieces of data in the user profiles. If the options are outside Azure AD and Microsoft 365, you would need to integrate your app with the separate data source and manage the data. This alternative might introduce a needless cost overhead for you as a developer and to your organization.
+Without Microsoft Graph extensions, you would need to explore alternative options for storing the three pieces of data in the user's profile information. If the options are outside Azure AD and Microsoft 365, you would need to integrate your app with the separate data source and manage the data. This alternative might introduce a needless cost overhead for you as a developer and to your organization.
 
 By using Microsoft Graph extensions, the organization takes advantage of an existing Azure AD capability that's available through its license at no additional cost. All the data is stored securely and, in line with Microsoft service-level agreements, availability is guaranteed. In addition, your organization avoids having to invest in a database system.
 
