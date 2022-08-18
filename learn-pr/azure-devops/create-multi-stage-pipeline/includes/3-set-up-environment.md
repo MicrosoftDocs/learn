@@ -80,7 +80,7 @@ To set up the work item:
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
-1. In the **Create a multistage pipeline** work item, below in the card, select the down arrow. Then, assign the work item to yourself.
+1. In the **Create a multistage pipeline** card, select the down arrow. Then, assign the work item to yourself.
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 
@@ -271,7 +271,7 @@ To add the variables:
     | *WebAppNameTest*    | *tailspin-space-game-web-test-1234*    |
     | *WebAppNameStaging* | *tailspin-space-game-web-staging-1234* |
 
-    Be sure to replace each example value with the App Service instance that corresponds to your environment.
+    Be sure to rep.lace each example value with the App Service instance that corresponds to your environment.
 
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-dev-1234* and not *tailspin-space-game-web-dev-1234.azurewebsites.net*.
