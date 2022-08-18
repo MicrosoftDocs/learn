@@ -111,7 +111,7 @@ Schema extension definitions support the `$filter` OData query parameter with th
 
 In the Microsoft Graph `v1.0` endpoint, the schema extension properties aren't returned by default, and you must use the `$select` query parameter to read the properties.
 
-Schema extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the *ConsistencyLevel* header set to `eventual`.
+Schema extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific extension attributes are empty (`null`). Filtering using the `ne` operator or on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and set the *ConsistencyLevel* header to `eventual`.
 
 ## Other Azure AD scenarios for custom data
 
