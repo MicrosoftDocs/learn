@@ -40,7 +40,7 @@ Here, you modify your pipeline configuration to deploy the build to the _Test_ s
     :::image type="content" source="../media/5-pipeline-test-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing three completed stages: Build, Dev, and Test.":::
 
     You see that the deployment finished successfully.
-1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Test_ environment.
+1. From a web browser, go to the URL that's associated with the App Service instance for your _Test_ environment.
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the **App Service details** page.
 

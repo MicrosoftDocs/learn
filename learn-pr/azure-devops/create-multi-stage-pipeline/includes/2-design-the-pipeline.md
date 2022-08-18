@@ -51,7 +51,7 @@ Mara moves to the whiteboard and sketches the existing pipeline.
 
 ## Add the Dev stage
 
-**Andy:** I might be biased, but I think we need a _Dev_ stage. This stage should be the first stop for the artifact after it's bui4lt. Developers can't always run the entire service from their local development environment. For example, an e-commerce system might require the website, the products database, a payment system, and so on. We need a stage that includes everything the app needs.
+**Andy:** I might be biased, but I think we need a _Dev_ stage. This stage should be the first stop for the artifact after it's built. Developers can't always run the entire service from their local development environment. For example, an e-commerce system might require the website, the products database, a payment system, and so on. We need a stage that includes everything the app needs.
 
 In our case, the _Space Game_ website's leaderboard feature reads high scores from an external source. Right now, it reads fictitious scores from a file. Setting up a _Dev_ stage would give us an environment where we can integrate the web app with a real database. That database might still hold fictitious scores, but it brings us one step closer to our final app.
 

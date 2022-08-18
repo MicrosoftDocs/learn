@@ -63,7 +63,7 @@ Here, you modify your pipeline configuration to promote the build to the _Dev_ s
     :::image type="content" source="../media/4-pipeline-dev-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing the completed stages.":::
 
     You see that the deployment finished successfully.
-1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Dev_ environment.
+1. From a web browser, go to the URL that's associated with the App Service instance for your _Dev_ environment.
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the **App Service details** page.
 

@@ -76,7 +76,7 @@ Here you move the first item, **Create a multistage pipeline**, to the **Doing**
 
 To set up the work item:
 
-1. From Azure DevOps, navigate to **Boards**. Then, from the menu, select **Boards**.
+1. From Azure DevOps, go to **Boards**. Then, from the menu, select **Boards**.
 
     :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
@@ -314,7 +314,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 1. From the lower-left corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then select **Azure Resource Manager**, and then select **Next**.
-1. Near the top of the page, **Service principal (automatic)**. Then, select **Next**.
+1. At the beginning of the page, select **Service principal (automatic)**. Then, select **Next**.
 1. Fill in these fields:
 
     | Field                   | Value                                      |

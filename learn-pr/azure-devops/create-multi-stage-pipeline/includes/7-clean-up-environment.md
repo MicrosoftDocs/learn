@@ -42,7 +42,7 @@ At the end of each *sprint*, or work iteration, you and your team can hold a ret
 
 To complete the work item:
 
-1. From Azure DevOps, navigate to **Boards**, and from the menu, select **Boards**.
+1. From Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
 1. Move the **Create a multistage pipeline** work item, from the **Doing** column to the **Done** column.
 
     :::image type="content" source="../media/6-azure-boards-wi1-done.png" alt-text="A screenshot of Azure Boards, showing the card in the Done column.":::
