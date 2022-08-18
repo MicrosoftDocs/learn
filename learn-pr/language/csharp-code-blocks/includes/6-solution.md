@@ -24,7 +24,7 @@ The biggest changes to the problematic code included:
 - Initializing both the `total` and `found` variables with sensible default values
 - Removing the code blocks and extra line feeds from the `if` statements
 
-No matter how you formatted the code, when you it, you should get the following output:
+No matter how you formatted the code, when you run it, you should get the following output:
 
 ```output
 Set contains 42
