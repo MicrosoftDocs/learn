@@ -37,7 +37,7 @@ You manage the directory extension definitions as follows:
 
 ## Use directory extension properties
 
-After you've defined the directory extension, it's available for use in user profiles. 
+After you define a directory extension, it's available for use in user profiles. 
 
 You manage the directory extension properties on user profiles through the same HTTP methods that you use to manage users.
 + Use POST to store data in the directory extension property when you're creating a new user.
