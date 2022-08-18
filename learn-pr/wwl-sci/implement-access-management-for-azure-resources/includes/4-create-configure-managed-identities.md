@@ -48,4 +48,4 @@ Or within a **template**
 ```
 
 ### Value of managed identity
-As stated at the beginning of this page, when you build an app and apply you need a method to grant it access to resources. To take advantage of the concepts of **zero trust** you can use managed identities. You only assign the minimum privileges that the managed identity needs.  Then only assign access the minimum resources needed.  Least-privilege will keep your applications and data protected.
+As stated at the beginning of this page, when you build an app, you need a method to grant it access to resources. To take advantage of the concepts of **zero trust** you can use managed identities. You only assign the minimum privileges that the managed identity needs.  Then only assign access the minimum resources needed.  Least-privilege will keep your applications and data protected.
