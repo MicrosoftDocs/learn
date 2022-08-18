@@ -3,7 +3,7 @@ Creating a language understanding model is an iterative process with the followi
 ![The train, test, publish, review cycle](../media/train-test-publish-review.png)
 
 1. Train a model to learn intents and entities from sample utterances.
-2. Test the model interactively, or by submitting a batch of utterances with known intent labels and comparing the predicted intents to the known label.
+2. Test the model interactively, or by submitting a batch of utterances with known intent labels. Compare the predicted intents to the known label.
 3. Publish a trained model for consumption and use it from client applications.
 4. Review the predictions made by the model based on user input and apply *active learning* to correct misidentified intents or entities and improve the model.
 

@@ -1,4 +1,4 @@
-To use the Language Understanding service to develop an NLP solution, you will need to create a Language resource in Azure. That resource will be used for both authoring your model and processing prediction requests from client applications.
+To use the Language Understanding service to develop an NLP solution, you'll need to create a Language resource in Azure. That resource will be used for both authoring your model and processing prediction requests from client applications.
 
 The Language service has various features, including sentiment analysis, key phrase extraction, entity recognition, intent recognition, and text classification. Some of these features can be used without configuration of your Language resource, such as language detection or sentiment analysis. Other features, such as conversational language understanding and custom named entity recognition will require a model to be built for prediction.
 
@@ -7,7 +7,7 @@ The Language service has various features, including sentiment analysis, key phr
 
 ## Building your Language Understanding model
 
-For Language features that require a model for prediction, you will need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Language service what to look for.
+For Language features that require a model for prediction, you'll need to build, train and deploy that model before using it to make a prediction. This building and training will teach the Language service what to look for.
 
 First, you'll need to create your Language resource in the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
@@ -22,7 +22,7 @@ Once that resource has been created, you'll need a key and the endpoint. You can
 
 One way to build your model is through the REST API. The pattern would be to create your project, import data, train, deploy, then use your model.
 
-This is done asynchronously; you'll need to submit a request to the appropriate URI for each step, and then send another request to get the status of that job.
+These tasks are done asynchronously; you'll need to submit a request to the appropriate URI for each step, and then send another request to get the status of that job.
 
 For example, if you want to deploy a model for a conversational language understanding project, you'd submit the deployment job, and then check on the deployment job status.
 
@@ -47,7 +47,7 @@ Submit a **POST** request to the following endpoint.
 |`{ENDPOINT}`     | The endpoint of your Language resource   | `https://<your-subdomain>.cognitiveservices.azure.com` |
 |`{PROJECT-NAME}`     | The name for your project. This value is case-sensitive   | `myProject` |
 |`{DEPLOYMENT-NAME}`     | The name for your deployment. This value is case-sensitive   | `staging` |
-|`{API-VERSION}`     | The version of the API you are calling | `2022-05-01` |
+|`{API-VERSION}`     | The version of the API you're calling | `2022-05-01` |
 
 Include the following `body` with your request.
 
@@ -59,7 +59,7 @@ Include the following `body` with your request.
 
 |Placeholder  |Value  |
 |---------|-----|
-| `{MODEL-NAME}` | The model name that will be assigned to your deployment. This is case-sensitive.   |
+| `{MODEL-NAME}` | The model name that will be assigned to your deployment. This value is case-sensitive.   |
 
 Successfully submitting your request will receive a `202` response, with a response header of `location`. This header will have a URL with which to request the status, formatted like this:
 
@@ -81,7 +81,7 @@ Submit a **GET** request to the URL from the response header above. The values w
 |`{PROJECT-NAME}`     | The name for your project (case-sensitive)   |
 |`{DEPLOYMENT-NAME}`     | The name for your deployment (case-sensitive) |
 |`{JOB-ID}`     | The ID for locating your model's training status, found in the header value detailed above in the deployment request |
-|`{API-VERSION}`     | The version of the API you are calling |
+|`{API-VERSION}`     | The version of the API you're calling |
 
 The response body will give the deployment status details. The `status` field will have the value of *succeeded* when the deployment is complete.
 
@@ -99,7 +99,7 @@ For a full walkthrough of each step with example requests, see the [conversation
 
 ### Using Language Studio
 
-For a more visual method of building, training, and deploying your model, you can use [Language Studio](https://aka.ms/languageStudio) to achieve each of these steps. On the main page, you can select which type of project you want to create, then go through the same process as above to build, train, and deploy your model.
+For a more visual method of building, training, and deploying your model, you can use [Language Studio](https://aka.ms/languageStudio) to achieve each of these steps. On the main page, you can select which type of project you want to create. Once the project is created, then go through the same process as above to build, train, and deploy your model.
 
 ![Screenshot of Language Studio home page](../media/language-studio-conversational.png)
 
@@ -119,7 +119,7 @@ To query your model for a prediction, create a **POST** request to the appropria
 |Placeholder  |Value  |
 |---------|---------|
 |`{ENDPOINT}`     | The endpoint for authenticating your API request   |
-|`{API-VERSION}`     | The version of the API you are calling  |
+|`{API-VERSION}`     | The version of the API you're calling  |
 
 Within the body of that request, you must specify the `kind` parameter, which tells the service what type of language understanding you're requesting.
 
@@ -172,7 +172,7 @@ Other language features, such as the conversational language understanding discu
 |Placeholder  |Value  |
 |---------|---------|
 |`{ENDPOINT}`     | The endpoint for authenticating your API request   |
-|`{API-VERSION}`     | The version of the API you are calling  |
+|`{API-VERSION}`     | The version of the API you're calling  |
 
 That request would include a JSON body similar to the following.
 
