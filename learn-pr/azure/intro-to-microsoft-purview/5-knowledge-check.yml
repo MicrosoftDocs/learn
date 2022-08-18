@@ -39,10 +39,10 @@ quiz:
       explanation: "Correct: The Microsoft Purview governance portal is where you register your data sources."
   - content: "What aspect of Microsoft Purview is used to configure the data discovery for your data sources?"
     choices:
-    - content: "Scan rules."
+    - content: "Scan rules"
       isCorrect: true
       explanation: "Correct: In a Microsoft Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization."
-    - content: "Collections."
+    - content: "Collections"
       isCorrect: false
       explanation: "Incorrect: Collections are a container concept to help organize data sources into common groupings."
     - content: "Classifications"
