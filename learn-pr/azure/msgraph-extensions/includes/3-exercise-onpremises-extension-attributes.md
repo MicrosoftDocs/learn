@@ -225,4 +225,4 @@ You've used Microsoft Graph extension attribute properties to store three custom
 + Implement a custom search so that the company's employees can discover each other's external social profiles.
 + Use the extension attribute values for dynamic group memberships
 
-After this exercise is complete, Adele's profile has only the LinkedIn profile URL and Xbox gamertag, which can be discovered through the team-bonding app. Other users might decide to share all three pieces of data or none. For each type of operation, you should implement the appropriate logic in the team-bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.
+After you complete this exercise, Adele's profile in the team-bonding app has only the LinkedIn profile URL and Xbox gamertag. Other users might decide to share all three pieces of data or none. For each type of operation, you should implement the appropriate logic in the team-bonding app to translate successful HTTP response codes to user-friendly response messages in the user interface.
