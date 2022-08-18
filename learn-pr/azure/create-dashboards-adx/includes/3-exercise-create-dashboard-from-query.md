@@ -1,9 +1,8 @@
-
-Here, you'll create a dashboard from these queries and share this dashboard. Dashboards tell a story through visualizations, and are an excellent way to monitor your data and see all of your most important insights at a glance. Dashboards aren't just pictures- they are interactive and the tiles update as the underlying data changes. The visualizations you see on the dashboard are called tiles. You pin tiles to a dashboard from a query, or create new tiles within the dashboard page. 
+In this unit, you'll create a dashboard from a query. 
 
 ## Pin query to dashboard
 
-Start with a query that you want to pin to the dashboard. In this case, you'll share the plot of events versus time.
+Start with a query that you want to pin to the dashboard. In this case, you'll share a plot of events versus time from the publicly available help cluster.
 
 1.  At the top right corner of the query editor, select **Share** > **Pin to dashboard**.
 
