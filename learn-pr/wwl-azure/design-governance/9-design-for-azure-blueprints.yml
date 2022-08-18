@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-governance.design-for-azure-blueprints
-title: Design for Azure blueprints
+title: Design for Azure Blueprints
 metadata:
-  title: Demo-Introduction
-  description: "Design for Azure blueprints"
-  ms.date: 08/16/2022
+  title: Design for Azure Blueprints
+  description: "Design for Azure Blueprints"
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/9-design-for-azure-blueprints.md)]
