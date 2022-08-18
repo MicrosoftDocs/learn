@@ -12,7 +12,7 @@ The C# language in .NET has a series of Task-based features to asynchronously in
 Database database = await client.CreateDatabaseIfNotExistsAsync("cosmicworks");
 ```
 
-This syntax uses the **await** keyword to run the task asynchronously and return the result into the indicated variable. Using the asynchronous keywords allows the SDK to manage requests simultaneously in a efficient manner.
+This syntax uses the **await** keyword to run the task asynchronously and return the result into the indicated variable. Using the asynchronous keywords allows the SDK to manage requests simultaneously in an efficient manner.
 
 Avoid blocking the asynchronous execution using **Task.Wait** or **Task.Result** such as in the example code below.
 
