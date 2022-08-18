@@ -192,15 +192,15 @@ To switch back to using v1.0 API commands, specify **v1.0** for the name paramet
 
 Invoke-MgGraphRequest issues REST API requests to Microsoft Graph API.
 
-To get a list of all devices in the directory, run:
+To get a list of all devices in the directory using the API URI, run:
 
 ```powershell
 $devices = (Invoke-MgGraphRequest -Method GET https://graph.microsoft.com/v1.0/devices).Value
 ```
 
-This command works for any Graph API, if you know the REST URI, method and optional body parameter.
+This command works for any Graph API, if you know the REST URI, method and optional body parameter. It can be useful for accessing an API for which there isn’t an equivalent cmdlet yet.
 
-If you get stuck executing or finding the right Microsoft Graph PowerShell command,user `Invoke-MgGraphCommand`.
+If you get stuck executing or finding the right Microsoft Graph PowerShell command, use `Invoke-MgGraphCommand`.
 
 ## Common parameters
 

@@ -1,4 +1,4 @@
-Our goal was to help you evaluate whether Microsoft Graph PowerShell would be a good choice in automating your business processes. We used our example scenario to introduce the features and benefits of using Microsoft Graph PowerShell.
+Our goal was to help you evaluate whether Microsoft Graph PowerShell would be a good choice in automating your business processes. We used our example scenario to introduce the features and benefits of Microsoft Graph PowerShell.
 
 We have demonstrated that though most administrative tasks can be carried out from the Azure portal UI, Microsoft Graph PowerShell provides a rich user experience that allows you to run complex functions that are not necessarily available on the UI. Every feature that has an API in Microsoft Graph has a cmdlet in Microsoft Graph PowerShell.
 

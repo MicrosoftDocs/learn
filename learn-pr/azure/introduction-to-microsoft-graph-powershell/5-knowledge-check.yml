@@ -37,39 +37,39 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "An IT admin has recently installed Microsoft Graph PowerShell to administer various tasks in Azure AD. They are new to this module and would like to find cmdlets for different resources in the directory. What would be the BEST place for them to start?"
     choices:
-    - content: ""
+    - content: "Run `Connect-MgGraph` to connect to the Azure AD directory and type run cmdlets based on `Verb-MgResource` format."
+      isCorrect: false
+      explanation: "Connect-MgGraph helps you sign in to your directory requesting the appropriate permissions."
+    - content: "a.	Run `Find-MgGraphCommand` to discover cmdlets associated with the resource name, for example, user."
       isCorrect: true
-      explanation: ""
+      explanation: "Find-MgGraphCommand helps you find cmdlets when you pass a resource name. It will also help you discover permissions required for the particular cmdlets."
     - content: ""
       isCorrect: false
       explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+  - content: "For every feature that has an API in Microsoft Graph there should be an equivalent cmdlet in Microsoft Graph PowerShell. There are, however, instances where an API could be existing and the equivalent cmdlet is not yet available. Which cmdlet would be the most appropriate to use in such an instance?"
     choices:
-    - content: ""
+    - content: "Invoke-MgGraphRequest"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Invoke-MgGraphRequest issues REST API requests to Microsoft Graph API and can be useful for accessing an API for which there isn’t an equivalent cmdlet yet"
+    - content: "Get-MgProfile"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Microsoft Graph PowerShell targets two versions of the Microsoft Graph API and once can switch between the two versions. Get-MgProfile help you check your current profile to decide if you want to switch. "
+    - content: "Find-MgGraphPermission"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Find-MgGraphPermission helps you find permissions that are applicable to a certain domain."
+  - content: "What makes Microsoft Graph PowerShell a cross-platform (Windows, Linux, and macOS) automation tool?"
     choices:
-    - content: ""
+    - content: "Microsoft Graph PowerShell uses Microsoft Authentication Library which supports modern authentication."
+      isCorrect: false
+      explanation: "Microsoft Graph PowerShell supports modern authentication through Microsoft Authentication Library, but this does not make it a cross-platform tool."
+    - content: "Microsoft Graph PowerShell provides commands for the entire Microsoft Graph API."
+      isCorrect: false
+      explanation: "Microsoft Graph PowerShell is PowerShell for the entire set of Microsoft Graph APIs, but this does not make it a cross-platform tool."
+    - content: "Microsoft Graph PowerShell supports PowerShell 7 which is itself a cross-platform tool."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "PowerShell 7 is a cross-platform automation tool that is supported by Microsoft Graph PowerShell. This relation makes Microsoft Graph PowerShell a cross platform tool."
   - content: ""
     choices:
     - content: ""
