@@ -32,8 +32,8 @@ modules:
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn.migrate-sql-server-relational-data
 - learn.develop-app-that-queries-azure-sql
-- learn.create-cosmos-db-for-scale
-- learn.distribute-data-globally-with-cosmos-db
-- learn.access-data-with-cosmos-db-and-sql-api
+- learn.wwl.explore-azure-cosmos-db
+- learn.wwl.implement-partitioning-azure-cosmos-db
+- learn.wwl.work-with-cosmos-db
 trophy:
   uid: learn.architect-data-platform.trophy
