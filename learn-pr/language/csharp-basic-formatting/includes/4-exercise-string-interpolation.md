@@ -2,7 +2,7 @@ While string concatenation is simple and convenient, *string interpolation* is g
 
 ## What is string interpolation?
 
-String interpolation combines multiple values into a single literal string by using a "template" and one or more *interpolation expressions*.  An **interpolation expression** is a variable surrounded by an opening and closing curly brace symbol `{ }`.  The literal string becomes a template when it's prefixed by the `$` character.  
+String interpolation combines multiple values into a single literal string by using a "template" and one or more *interpolation expressions*. An **interpolation expression** is a variable surrounded by an opening and closing curly brace symbol `{ }`. The literal string becomes a template when it's prefixed by the `$` character.  
 
 In other words, instead of writing the following line of code:
 
@@ -16,7 +16,7 @@ You can write this more concise line of code instead:
 string message = $"{greeting} {firstName}!";
 ```
 
-In this simple example, you save a few keystrokes.  You can imagine how much more concise string interpolation can be in more complex operations.  Moreover, many find the string interpolation syntax cleaner and easier to read.
+In this simple example, you can save a few keystrokes. You can imagine how much more concise string interpolation can be in more complex operations. Moreover, many find the string -interpolation syntax cleaner and easier to read.
 
 In the following exercise, we'll rewrite the previous messages using string interpolation.
 
@@ -26,7 +26,7 @@ Use your mouse to highlight all of the text in the code editor, then select the 
 
 ### Step 2: Use string interpolation to combine a literal string and a variable value
 
-To interpolate two strings together, you create a literal string and prefix the string with the `$` symbol.  The literal string should contain at least one set of curly braces `{}` and inside of those characters you use the name of a variable.
+To interpolate two strings together, you'll create a literal string and prefix the string with the `$` symbol. The literal string should contain at least one set of curly braces `{}`, and inside of those characters you'll use the name of a variable.
 
 Add the following code to the code window:
 
@@ -36,7 +36,7 @@ string message = $"Hello {firstName}!";
 Console.WriteLine(message);
 ```
 
-Now, run the code.  You'll see the following result in the output console:
+Now, run the code. You'll get the following result in the output console:
 
 ```output
 Hello Bob!
@@ -55,7 +55,7 @@ string message = $"{greeting} {firstName}!";
 Console.WriteLine(message);
 ```
 
-Now, run the code.  You'll see the following result in the output console:
+Now, run the code.  You'll get the following result in the output console:
 
 ```output
 Hello Bob!
@@ -73,7 +73,7 @@ string greeting = "Hello";
 Console.WriteLine($"{greeting} {firstName}!");
 ```
 
-Now, run the code.  The result in the output console should be the same, however we simplified the code:
+Now, run the code. The result in the output console should be the same; however, we simplified the code.
 
 ```output
 Hello Bob!
@@ -81,16 +81,16 @@ Hello Bob!
 
 ### Step 5: Combine verbatim literals and string interpolation
 
-Suppose you need to use a verbatim literal in your template.  You can use both the verbatim literal prefix symbol `@` and the string interpolation `$` symbol together.  
+Suppose you need to use a verbatim literal in your template. You can use both the verbatim literal prefix symbol `@` and the string interpolation `$` symbol together.  
 
-Delete the code from the previous steps, and type the following code into the .NET Editor.
+Delete the code from the previous steps, then type the following code into the .NET Editor.
 
 ```csharp-interactive
 string projectName = "First-Project";
 Console.WriteLine($@"C:\Output\{projectName}\Data");
 ```
 
-Now, run the code and you should see the following result.
+Now, run the code and you should get the following result:
 
 ```output
 C:\Output\First-Project\Data
@@ -98,7 +98,7 @@ C:\Output\First-Project\Data
 
 ## Recap
 
-The primary ideas you should take away from this exercise:
+Here are the primary ideas you should take away from this exercise:
 
 - String interpolation provides an improvement over string concatenation by reducing the number of characters required in some situations.
 - You can combine string interpolation and verbatim literals by combining the symbols for each and using that as a prefix for the string template.

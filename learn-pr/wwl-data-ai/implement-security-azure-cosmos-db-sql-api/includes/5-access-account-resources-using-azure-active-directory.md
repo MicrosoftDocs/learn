@@ -75,7 +75,7 @@ You can define custom role definition using Azure PowerShell, Azure CLI, or Azur
 
 ## Role assignments
 
-The final component to define our data plane role base access control is our Roll Assignment. Role definitions get assigned to specific Azure Active Directory identities through role assignments. This assignment also defines the scope that the role definition applies to, the account, the database, or the container. You can define role assignments using Azure PowerShell, Azure CLI, or Azure Resource Manager templates. When creating a role assignment, you need to provide:
+The final component to define our data plane role base access control is our Role Assignment. Role definitions get assigned to specific Azure Active Directory identities through role assignments. This assignment also defines the scope that the role definition applies to, the account, the database, or the container. You can define role assignments using Azure PowerShell, Azure CLI, or Azure Resource Manager templates. When creating a role assignment, you need to provide:
 
 - The name of your Azure Cosmos DB account.
 - The resource group containing your account.
