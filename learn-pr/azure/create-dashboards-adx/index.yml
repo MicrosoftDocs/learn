@@ -36,6 +36,7 @@ subjects:
 - data-visualization
 units:
 - learn.create-dashboards-adx.introduction
+- learn.create-dashboards-adx.exercise-connect-to-resources
 - learn.create-dashboards-adx.dashboards-adx
 - learn.create-dashboards-adx.exercise-create-dashboard-from-query
 - learn.create-dashboards-adx.exercise-add-new-tile
