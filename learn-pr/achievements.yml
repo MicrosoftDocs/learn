@@ -1102,3 +1102,8 @@ achievements:
   title: Choose the appropriate API for Azure Cosmos DB
   summary: Compare the different APIs that are available in Azure Cosmos DB, highlighting and contrasting the different scenarios that would make them a good choice for a company.
   iconUrl: /learn/achievements/choose-the-appropriate-api-for-cosmos-db-storage.svg
+- uid: learn.access-data-with-cosmos-db-and-sql-api.badge
+  type: badge
+  title: Insert and query data in your Azure Cosmos DB database
+  summary: Discover the Azure Cosmos DB Data Explorer tool that enables you to add or modify data. Create stored procedures in JavaScript.
+  iconUrl: /learn/achievements/access-data-with-cosmos-db-and-sql-api.svg
