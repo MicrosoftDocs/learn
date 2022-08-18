@@ -64,4 +64,4 @@ When we invoke **Task.WhenAll**, the SDK will kick in to create batches to group
 Task.WhenAll(concurrentTasks);
 ```
 
-Once each batch is done, the SDK will translate the batches back to the results for the client-side application. This is seemless and transparent to the developer.
+Once each batch is done, the SDK will translate the batches back to the results for the client-side application. This is seamless and transparent to the developer.

@@ -106,7 +106,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 To create a new resource group and grant your workload identity access to it, run this Azure CLI command in the Visual Studio Code terminal:
 
 ```bash
-resourceGroupResourceId=$(az group create --name ToyWebsite --location westus --query id --output tsv)
+resourceGroupResourceId=$(az group create --name ToyWebsite --location westus3 --query id --output tsv)
 
 az ad sp create --id $applicationRegistrationObjectId
 az role assignment create \
@@ -122,7 +122,7 @@ az role assignment create \
 To create a resource group and grant your workload identity access to it, run this Azure PowerShell command in the Visual Studio Code terminal:
 
 ```azurepowershell
-$resourceGroup = New-AzResourceGroup -Name ToyWebsite -Location westus
+$resourceGroup = New-AzResourceGroup -Name ToyWebsite -Location westus3
 
 New-AzADServicePrincipal -AppId $applicationRegistration.AppId
 New-AzRoleAssignment `
