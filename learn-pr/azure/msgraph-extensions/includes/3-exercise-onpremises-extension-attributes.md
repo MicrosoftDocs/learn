@@ -1,4 +1,4 @@
-In this exercise, you use client app [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attributes on the *user* resource. The commands in this exercise emulate the API calls that the team-bonding app makes on behalf of a signed-in user.
+In this exercise, you use [Graph Explorer](https://aka.ms/ge) to make REST API requests to Microsoft Graph and manage the extension attributes on the *user* resource. The commands in this exercise emulate the API calls that the team-bonding app makes on behalf of a signed-in user.
 
 ## Authenticate your session
 
