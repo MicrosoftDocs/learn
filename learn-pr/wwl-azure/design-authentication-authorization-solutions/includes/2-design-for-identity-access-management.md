@@ -1,20 +1,19 @@
-Azure Architects design Identity and access management (IAM) solutions. These solutions must work for all your users, apps, and devices. There are four basic guidelines for a strong IAM solution. 
+To implement authentication and authorization, Azure Architects design identity and access management (IAM) solutions. These solutions must work for all users, applications, and devices. There are four basic guidelines for a strong IAM solution:
 
-:::image type="content" source="../media/identity-access.png" alt-text="Identity provides management and seamless experience. Access provides adaptive and simplified governance.":::
+:::image type="content" source="../media/identity-access.png" alt-text="Diagram of the four basic guidelines for a strong IAM solution." border="false":::
 
+- **Unified identity management**. Manage all your identities and access to all your applications in a central location, whether they’re in the cloud or on-premises, to improve visibility and control.
 
-- **Unified identity management**. Manage all your identities and access to all your apps in a central location, whether they’re in the cloud or on-premises, to improve visibility and control.
+- **Seamless user experience**. Provide an easy, fast sign-in experience to keep your users productive, reduce time spent managing passwords, and increase end-user productivity.
 
-- **Seamless user experience**. Provide an easy, fast sign in experience to keep your users productive, reduce time managing passwords, and increase end-user productivity.
+- **Secure adaptive access**. Protect access to resources and data by using strong authentication and risk-based adaptive access policies without compromising the user experience.
 
-- **Secure adaptive access**. Protect access to resources and data using strong authentication and risk-based adaptive access policies without compromising user experience.
+- **Simplified identity governance**. Control access to applications and data for all users and admins. Automated identity governance ensures only authorized users have access.
 
-- **Simplified identity governance**. Control access to apps and data for all users and admins. Automated identity governance to ensure only authorized users have access.
+As a first step, let's focus on designing an identity solution for Tailwind Traders. The following table lists three basic choices.
 
-Let’s first focus on the identity solution. There are three basic choices. 
-
-| If you need this | Use this |
-| - | -|
-| Provide identity and access management for employees in a cloud or hybrid environment.| [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) |
-| Collaborate with guest users and external business partners like suppliers and vendors.| [Azure AD Business to Business (B2B)](/azure/active-directory/external-identities/compare-with-b2c) |
-| Control how customers sign up, sign in, and manage their profiles when they use your applications.| [Azure AD Business to Consumer (B2C)](/azure/active-directory-b2c/overview) |
+| Technology | Example scenario |
+| --- | ---|
+| [Azure AD](https://azure.microsoft.com/services/active-directory/) | Provide an identity and access management system for your employees in a cloud or hybrid environment. |
+| [Azure AD B2B (business-to-business)](/azure/active-directory/external-identities/compare-with-b2c) | Support collaboration for guest users and external business partners, such as suppliers and vendors. |
+| [Azure AD B2C (business-to-customer)](/azure/active-directory-b2c/overview) | Control how your customers sign up, sign in, and manage their profiles when they use your applications. |

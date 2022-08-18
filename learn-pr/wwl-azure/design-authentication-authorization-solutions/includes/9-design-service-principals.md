@@ -22,11 +22,15 @@ When you work with managed identities, you should be familiar some common terms:
 - Object ID: The service principal object of the managed identity.
 - Azure Instance Metadata Service: A REST API that's enabled when Azure Resource Manager provisions a VM. The endpoint is accessible only from within the VM.
 
-Managed identities are available in all editions of Azure AD, including the Free edition included with an Azure subscription. Using it in App Service has no extra cost and requires no configuration, and it can be enabled or disabled on an app at any time.
+Managed identities are available in all editions of Azure AD, including the Free edition that comes with an Azure subscription. You can use managed identities in App Service at no extra cost, and with no required configuration. Managed identities can be enabled or disabled on an application at any time.
 
-:::image type="content" source="../media/use-managed-identities.png" alt-text="I can use managed Identities when I want to build an application using Azure App Service that access Azure Storage without having to manage any credentials.":::
+| Build your app with an Azure service | Access a target without having to <br> manage any credentials |
+| --- | --- |
+| Azure Resources <br> Azure Virtual Machines <br> Azure App Service <br> Azure Functions <br> Azure Container Instances <br> Azure Kubernetes Service <br> Azure Logic Apps <br > Azure Storage | _You can access any target that supports <br> Azure AD authentication_: <br> - Your applications <br> - Azure Services, such as Azure Key Vault, Azure Storage, Azure SQL, and so on <br><br><br> |
 
-Resources that support system assigned managed identities allow you to:
+For example, you can build an app with Azure App Service and access Azure Storage and not have to manage credentials.
+
+Resources that support system-assigned managed identities allow you to:
 
 - Enable or disable managed identities at the resource level.
 - Use RBAC roles to grant permissions.
@@ -91,10 +95,11 @@ Application objects describe the application to Azure AD and can be considered t
 
 Service principals are what govern an application connecting to Azure AD and can be considered the instance of the application in your directory. For any given application, it can have at most one application object (which is registered in a "home" directory) and one or more service principal objects representing instances of the application in every directory in which it acts.
 
-:::image type="content" source="../media/application-service-principals.png" alt-text="The diagram shows how application objects and service principals are used in Azure subscriptions.":::
-- Useful when Managed Identities cannot be used
-- Often used to authenticate external applications to Azure resources
+:::image type="content" source="../media/application-service-principals.png" alt-text="Diagram that shows how application objects and service principals are used in Azure subscriptions." border="false":::
 
+Service principals are:
+- Useful when managed identities cannot be used.
+- Often used to authenticate external applications to Azure resources.
 
 ## Design a user consent solution for applications
 The Microsoft identity platform implements the OAuth 2.0 authorization protocol. This protocol is a method that a third-party app can use to access web-hosted resources on behalf of a user. The web-hosted resources can define a set of permissions that you can use to implement functionality in smaller chunks. Developers can leverage one of two types of permissions supported by the Microsoft identity platform depending on the app scenario.

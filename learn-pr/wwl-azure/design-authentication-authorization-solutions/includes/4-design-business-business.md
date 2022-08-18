@@ -4,12 +4,12 @@ With Azure AD B2B, the partner uses their own identity management solution. Azur
 
 With Azure AD B2B, external users can use their identities to collaborate with your organization. Their identities are managed by the partner themselves, or by another external identity provider on their behalf. 
 
-:::image type="content" source="../media/external-identities.png" alt-text="Business to Business users are invited to Azure Active Directory.":::
+:::image type="content" source="../media/external-identities.png" alt-text="Diagram that shows how business to business users are invited to Azure Active Directory." border="false":::
 
 
 The following steps show how Azure AD B2B lets you collaborate with external partner users. The numbers in the diagram are explained after the diagram.
 
-:::image type="content" source="../media/business-to-business-guest-users.png" alt-text="Guest users are invited to Azure Active Directory.":::
+:::image type="content" source="../media/business-to-business-guest-users.png" alt-text="Diagram that shows how guest users are invited to Azure Active Directory." border="false":::
  
 
 1. You invite external users as guest users to your directory. For example, you fill in a form with your guest user's details and a custom invitation message.

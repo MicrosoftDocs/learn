@@ -1,6 +1,6 @@
 [Conditional Access](/azure/active-directory/conditional-access/overview) is a tool that Azure Active Directory uses to allow (or deny) access to resources. During sign-in, Conditional Access examines who the user is, where the user is, and from what device the user is requesting access. Based on these signals Conditional Access can allow access, enforce multifactor authentication, or deny access.  
 
-:::image type="content" source="../media/conditions-actions.png" alt-text="Conditions are evaluated and access is determined.":::
+:::image type="content" source="../media/conditions-actions.png" alt-text="Diagram that shows how conditions are evaluated and access is determined." border="false":::
 
 
 Here are some example conditional access situations.

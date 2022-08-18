@@ -1,13 +1,12 @@
 Over the time a user is employed by a company they may have several positions.
 
-:::image type="content" source="../media/employee-access-lifecycle.png" alt-text="Employee hired with no access, first job, second job, employee leaves the company.":::
+:::image type="content" source="../media/employee-access-lifecycle.png" alt-text="Diagram that shows identity management for an employee from their start with no access, to access defined for specific jobs, to removed access when they leave the company." border="false":::
 
+As the Tailwind Traders CTO, you ask these questions:
 
-The Tailwind Traders CTO asks,
+- As new employees join, how can we ensure they have the access they need to be productive?
 
-- As new employees join, how do we ensure they have the access they need to be productive?
-
-- As users switch teams or leave the company, how do we make sure that their old access is removed?
+- As users switch teams or leave the company, how do we make sure their old access is removed?
 
 ## Determine the purpose of the access review
 

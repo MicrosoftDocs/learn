@@ -18,7 +18,7 @@ Azure AD B2C requires an Azure AD tenant. This tenant isn’t the same your orga
 
 With your Azure AD B2C tenant in place, you must register your app. You use user flows to manage things like sign-ins and sign ups. Your Azure AD B2C tenant lets you create multiple types of user flows.
 
-:::image type="content" source="../media/application-registration.png" alt-text="Business to Customer users are registered in the Azure AD tenant.":::
+:::image type="content" source="../media/application-registration.png" alt-text="Diagram that shows how business to customer users are registered in the Azure AD tenant." border="false":::
 
 
 ## Best practices for Business to Customer

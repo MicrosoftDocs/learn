@@ -11,19 +11,19 @@ metadata:
 title: Design authentication and authorization solutions
 summary: Azure Architects design and recommend authentication and authorization solutions.
 abstract: |
-  In this module, you’ll learn how to:
-  *   Design for identity and access management.
-  *   Design for Azure Active Directory.
-  *   Design for Azure Active Directory Business to Business.
-  *   Design for Azure Active Directory Business to Customer.
-  *   Design for conditional access.
-  *   Design for identity protection.
-  *   Design for access reviews.
-  *   Design for service principals for applications
-  *   Design for Azure Key Vault
+  In this module, you learn how to:
+  - Design for identity and access management.
+  - Design for Azure Active Directory.
+  - Design for Azure Active Directory business to business (B2B)
+  - Design for Azure Active Directory B2C (business to consumer).
+  - Design for conditional access.
+  - Design for identity protection.
+  - Design for access reviews.
+  - Design for service principals for applications.
+  - Design for Azure Key Vault.
 prerequisites: |
-  * Working experience creating, assigning, and securing corporate identities.
-  * Conceptual knowledge of identity assignment solutions, role-based access control,  and identity protection methods.
+  - Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
+  - Working experience creating, assigning, and securing corporate identities.
 iconUrl: /learn/achievements/design-authentication-authorization.svg
 levels:
 - advanced
