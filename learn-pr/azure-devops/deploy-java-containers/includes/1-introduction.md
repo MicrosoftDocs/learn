@@ -8,13 +8,13 @@ While this module focuses on the core tasks that are required to build and deplo
 
 After completing this module, you'll be able to:
 
-* Explain how Azure and Azure DevOps support Java applications
-* Create a project in Azure Pipelines that builds and deploys a basic Java application to Azure
-* Trigger the pipeline and see your application be built and deployed to Azure
+* Explain how Azure and Azure DevOps support Java applications.
+* Create a project in Azure Pipelines that builds and deploys a basic Java application to Azure.
+* Trigger the pipeline and see your application be built and deployed to Azure.
 
 ## Prerequisites
 
-This module is self-contained so that you can complete it on its own. However, we strongly recommend that you familiarize yourself with how Azure DevOps works, along with the kinds of deployment environments that are available to you on Azure, such as Azure App Service. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
+This module is self-contained so that you can complete it on its own. However, we strongly recommend that you familiarize yourself with how Azure DevOps first, along with the kinds of deployment environments that are available to you on Azure, such as Azure App Service. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
