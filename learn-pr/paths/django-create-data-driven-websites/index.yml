@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: vscode-azure-extension-update-complete
+  ms.custom: vscode-azure-extension-update-completed
 title: Create data-driven websites by using the Python framework Django
 summary: |
   Use Django to create data-driven websites.

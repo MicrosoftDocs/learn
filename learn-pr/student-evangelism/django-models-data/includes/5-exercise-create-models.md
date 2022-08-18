@@ -36,6 +36,7 @@ All applications must be registered with the project in Django. It might seem a 
 
     ```python
     class DogSheltersConfig(AppConfig):
+        default_auto_field = 'django.db.models.BigAutoField'
         name = 'dog_shelters'
     ```
 

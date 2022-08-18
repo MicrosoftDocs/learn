@@ -4,7 +4,7 @@ title: 'Exercise: Store Azure Cosmos DB SQL API account keys in Azure Key Vault'
 metadata:
   title: 'Exercise: Store Azure Cosmos DB SQL API account keys in Azure Key Vault'
   description: "Exercise: Store Azure Cosmos DB SQL API account keys in Azure Key Vault"
-  ms.date: 06/22/2022
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

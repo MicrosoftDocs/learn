@@ -53,7 +53,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsite --location westus
+az group create --name ToyWebsite --location westus3
 ```
 
 ::: zone-end
@@ -63,7 +63,7 @@ az group create --name ToyWebsite --location westus
 To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsite -Location westus
+New-AzResourceGroup -Name ToyWebsite -Location westus3
 ```
 
 ::: zone-end
