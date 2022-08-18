@@ -74,7 +74,7 @@ To add the variables:
 
 ## Create required service connections
 
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You will also create a Docker Registry connection to publish your container to the Azure Container Registry.
+Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
@@ -130,13 +130,13 @@ Here you create a CI/CD pipeline that's based on a starter template. The process
 
 ### Setting up the trigger and variables  
 
-The pipeline runs whenever there is a change to the `main` branch on GitHub. Replace the contents of *azure-pipelines.yml* with this:
+The pipeline runs whenever there's a change to the `main` branch on GitHub. Replace the contents of *azure-pipelines.yml* with this:
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
 ### Pipeline variables
 
-To aid in pipeline maintenance, the default template uses variables for commonly-used parameters, such as the name of the container repository to publish the app image to. You can also import variables from pipeline libraries managed outside of the pipeline itself.
+To aid in pipeline maintenance, the default template uses variables for commonly used parameters, such as the name of the container repository to publish the app image to. You can also import variables from pipeline libraries managed outside of the pipeline itself.
 
 Add this code the to end of the pipeline:
 
@@ -191,7 +191,7 @@ Add this code to the end of the pipeline:
 The `AzureMysqlDeployment@1` task enables the pipeline to run scripts against an Azure Database for MySQL instance. In this case, the task is needed to run the initialization script that creates the database and configures sample data. It's safe to run this code every time the pipeline runs because it only makes changes when necessary.
 
 * `azureSubscription` specifies the name of the Azure service connection to use.
-* `ServerName` specifies the fully-qualified host name of the server.
+* `ServerName` specifies the fully qualified host name of the server.
 * `DatabaseName` specifies the name of the database, which is `alm` in this app.
 * `SqlUsername` specifies the username in the format *username@server*.
 * `SqlPassword` specifies the password configured earlier.
@@ -205,7 +205,7 @@ Add this code to the end of the pipeline:
 
 ### Deploying the build image
 
-The second stage of the pipeline manages deploying the solution out to Azure. It takes a dependency on the *Build* stage completing successfully and imports the variables from the **Release** library that you created earlier.
+The second stage of the pipeline manages to deploy the solution out to Azure. It takes a dependency on the *Build* stage completing successfully and imports the variables from the **Release** library that you created earlier.
 
 Add this code to the end of the pipeline:
 
@@ -244,7 +244,7 @@ Add this code to the end of the pipeline:
 
 1. Select **Save and run** from the top right corner of the page. Confirm the **Save and run** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web site's deploy task and copy the URL to view the deployed site.
+1. After the build has succeeded, select the web site's deploy task, and copy the URL to view the deployed site.
 
     :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines showing the location of the web site URL.":::
 

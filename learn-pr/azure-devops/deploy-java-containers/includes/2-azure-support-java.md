@@ -17,10 +17,10 @@ The Java app that you deploy in this module connects to a MySQL database.
 
 ## Java and Azure
 
-Azure provides first-class support for Java. This means that developers can take their existing codebase and, in most cases, deploy it to Azure without modification. As far as Azure is concerned, hosting Java solutions is comparable to hosting .NET solutions, assuming that the proper dependencies are configured. Azure also provides the means to configure environment variables for application settings, which means you can continue to load settings and secrets using standard Java mechanisms.
+Azure provides first-class support for Java. This means that developers can take their existing codebase and, in most cases, deploy it to Azure without modification. As far as Azure is concerned, hosting Java solutions is comparable to hosting .NET solutions, assuming that the proper dependencies are configured. Azure also provides the means to configure environment variables for application settings, which mean you can continue to load settings and secrets using standard Java mechanisms.
 
 Once deployed to Azure, Java applications can connect to resources within Azure, across VPN connections, and anywhere else accessible from the internet. This includes consuming databases, document stores, and all the other resources and services Java developers rely on to be successful.
 
 ## Java and Azure DevOps
 
-Java developers will find a welcoming environment in Azure DevOps. Although it provides a wide range of features for managing the entire software lifecycle, developers can optionally cherry pick the features desired to make their process as efficient as possible. If you need to build and deploy source code from GitHub or another source control system, Azure Pipelines provides variety of build, test, and deployment tasks for Java apps. And if Azure Pipelines doesn't provide the specific task that you need, you can provide scripts that fill in the gaps.
+Java developers will find a welcoming environment in Azure DevOps. Although it provides a wide range of features for managing the entire software lifecycle, developers can optionally cherry pick the features desired to make their process as efficient as possible. If you need to build and deploy source code from GitHub or another source control system, Azure Pipelines provides variety of build, test, and deployment tasks for Java apps. And if Azure Pipelines don't provide the specific task that you need, you can provide scripts that fill in the gaps.

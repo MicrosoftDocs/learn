@@ -81,7 +81,7 @@ Here, create Bash variables to make the setup process more convenient and less e
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instruct Bash to interpolate the variables using the inline syntax.
 
     ```bash
     webName="java-container-cicd-${resourceSuffix}"
@@ -123,7 +123,7 @@ This solution requires several Azure resources for deployment, which you create 
 
     The deployment can take several minutes to complete.
 
-1. By default, all incoming connections to the MySQL server are blocked, so it is necessary to add at least one rule for it to be accessible. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you are deploying) to access the server.
+1. By default, all incoming connections to the MySQL server are blocked, so it's necessary to add at least one rule for it to be accessible. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you're deploying) to access the server.
 
     ```azurecli
     az mysql server firewall-rule create \
@@ -186,7 +186,7 @@ This solution requires several Azure resources for deployment, which you create 
     java-container-cicd-18116.azurewebsites.net     Running
     ```
 
-1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance. You will need this server name when creating pipeline variables later.
+1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance. You'll need this server name when creating pipeline variables later.
 
     ```azurecli
     az acr list \
