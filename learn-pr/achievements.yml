@@ -1097,3 +1097,8 @@ achievements:
   title: Create an Azure Cosmos DB database built to scale
   summary: Learn how to create an Azure Cosmos DB account, database, and container built to scale as your application grows.
   iconUrl: /learn/achievements/create-cosmos-db-for-scale.svg
+- uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.badge
+  type: badge
+  title: Choose the appropriate API for Azure Cosmos DB
+  summary: Compare the different APIs that are available in Azure Cosmos DB, highlighting and contrasting the different scenarios that would make them a good choice for a company.
+  iconUrl: /learn/achievements/choose-the-appropriate-api-for-cosmos-db-storage.svg
