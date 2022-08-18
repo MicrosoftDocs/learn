@@ -33,7 +33,7 @@ quiz:
       explanation: "Incorrect: The overview page for the Microsoft Purview account provides information about that account only."
     - content: "In the Managed Resources tab of the Microsoft Purview account page."
       isCorrect: false
-      explanation: "Incorrect: The Managed resources tab is sued to configure and manage the resource group, storage account, and event hub resources."
+      explanation: "Incorrect: The Managed resources tab is used to configure and manage the resource group, storage account, and event hub resources."
     - content: "In the Microsoft Purview governance portal."
       isCorrect: true
       explanation: "Correct: The Microsoft Purview governance portal is where you register your data sources."
