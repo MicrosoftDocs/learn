@@ -35,7 +35,7 @@ When you want to implement a release pipeline, it's important to first identify 
 
 **Tim:** OK, I understand the idea of an automated pipeline. I like how easy it's to deploy to Azure. But where do we go from this demo? We need something we can actually use for our releases.
 
-**Amita:** Right, we need to add other stages. For example, at present, we have no place for a testing stage.
+**Amita:** Right! We need to add other stages. For example, at present, we have no place for a testing stage.
 
 **Tim:** Plus, we need a stage where we can show new features to the management. I can't send anything to production without management approval.
 
@@ -279,7 +279,7 @@ Azure Pipelines gives you the flexibility to automate some stages while manually
 
 **Tim:** I like how we can define the criteria that promote changes from one stage to the next. But we've defined some manual criteria in our pipeline. I thought DevOps was about automating everything.
 
-**Mara:** You raise a good point. DevOps is really about automating repetitive and error-prone tasks. Sometimes human intervention is necessary. For example, we get approval from management before we release new features. As we get more experience with our automated deployments, we can automate more of our manual steps to speed up the process. For example, We can automate additional quality checks in the _Test_ stage, so Amita doesn't have to approve each build.
+**Mara:** You raise a good point. DevOps is really about automating repetitive and error-prone tasks. Sometimes human intervention is necessary. For example, we get approval from management before we release new features. As we get more experience with our automated deployments, we can automate more of our manual steps to speed up the process. For example, we can automate additional quality checks in the _Test_ stage, so Amita doesn't have to approve each build.
 
 **Tim:** Sounds great. Let's go with this plan for now, and see how we can speed up the system later.
 

@@ -271,7 +271,7 @@ To add the variables:
     | *WebAppNameTest*    | *tailspin-space-game-web-test-1234*    |
     | *WebAppNameStaging* | *tailspin-space-game-web-staging-1234* |
 
-    Be sure to rep.lace each example value with the App Service instance that corresponds to your environment.
+    Be sure to replace each example value with the App Service instance that corresponds to your environment.
 
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter *tailspin-space-game-web-dev-1234* and not *tailspin-space-game-web-dev-1234.azurewebsites.net*.
