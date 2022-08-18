@@ -69,20 +69,20 @@ We won't go into many of the details about how App Service works, or the configu
 
 ## Create a service connection
 
-Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
+Here, you create a service connection that helps Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Release** project.
 
-1. From the bottom of the page, select **Project settings**.
+1. From the lower-left corner of the page, select **Project settings**.
 
 1. Under **Pipelines**, select **Service connections**.
 
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
 
-1. At the beginning of the page select **Service principal (automatic)**. Then select **Next**.
+1. Near the beginning of the page, select **Service principal (automatic)**. Then select **Next**.
 
 1. Enter the following values for each setting.
 
@@ -190,7 +190,7 @@ When you set up App Service earlier, you assigned it a name, such as *tailspin-s
 
 Although you could hard-code this name in your pipeline configuration, defining it as a variable makes your configuration more reusable.
 
-A pipeline variable enables you to define a value in Azure Pipelines and read that value from your pipeline configuration. If the name of your App Service instance changes, you can update the variable and trigger your pipeline without modifying your configuration.
+A pipeline variable helps you define a value in Azure Pipelines and read that value from your pipeline configuration. If the name of your App Service instance changes, you can update the variable and trigger your pipeline without modifying your configuration.
 
 To add the variable:
 
@@ -206,7 +206,7 @@ To add the variable:
 
 1. For the name of your variable, enter *WebAppName*. For its value, enter your App Service instance's name, such as *tailspin-space-game-web-1234*.
 
-1. Near the top of the page, select **Save** to save your variable to the pipeline.
+1. Near the beginning of the page, select **Save** to save your variable to the pipeline.
 
 ## Add the deployment stage to the pipeline
 
@@ -240,7 +240,7 @@ Here you extend your pipeline by adding a deployment stage that uses App Service
 
 When you created your App Service instance, you saw the default website that was created for you. Here you revisit your website to see the results of your deployment.
 
-1. From a web browser, navigate to the URL that's associated with your App Service instance.
+1. From a web browser, go to the URL that's associated with your App Service instance.
 
     If you still have the browser tab open, simply refresh the page. If the browser tab isn't open, you can find the URL on the App Service details page in the Azure portal.
 

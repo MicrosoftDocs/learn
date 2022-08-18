@@ -57,17 +57,17 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Prepare Visual Studio Code
 
-Set up Visual Studio Code so you can build the website locally and work with source files.
+Set up Visual Studio Code so you can build the website locally and use the source files.
 
 Visual Studio Code comes with an integrated terminal so you can edit files and work from the command line, all from one place.
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
+1. In the dropdown list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
     :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Screenshot of Visual Studio Code showing where to locate the Bash shell.":::
 
-    The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
+    Use the terminal window to choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
 
@@ -210,7 +210,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
     git checkout -B release-pipeline upstream/release-pipeline
     ```
 
-    The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
+    Use the format of this command to get the starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
 
 1. As an optional step, in Visual Studio Code, open the *azure-pipelines.yml* file and familiarize yourself with the initial configuration.
 

@@ -31,8 +31,8 @@ This option disables the pipeline so that it doesn't process further build reque
 
 To disable the pipeline:
 
-1. In Azure Pipelines, navigate to your pipeline.
-1. From the drop-down menu, select **Settings**:
+1. In Azure Pipelines, go to your pipeline.
+1. From the dropdown menu, select **Settings**:
 
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
@@ -45,7 +45,7 @@ This option deletes your Azure DevOps project, including content on Azure Boards
 
 To delete the project:
 
-1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - Release**.
+1. From Azure DevOps, go to your project. Earlier, we recommended that you name this project **Space Game - web - Release**.
 1. Select **Project settings** in the lower-left corner of your Azure DevOps page.
 1. In the **Project details** area, scroll down, and then select **Delete**.
 

@@ -48,7 +48,7 @@ Amita starts crumbling her scone into little pieces.
 
 ## What is continuous delivery?
 
-**Mara:** To me, CD and DevOps are inseparable. Remember that we defined DevOps as the union of people, process, and products to enable continuous delivery of value to our end users.
+**Mara:** To me, CD and DevOps are inseparable. Remember that we defined DevOps as the union of people, processes, and products to enable continuous delivery of value to our end users.
 
 CD by itself is a set of processes, tools, and techniques that enable rapid, reliable, and continuous delivery of software. So CD isn't only about setting up a pipeline, although that part is important. CD is about setting up a working environment, where:
 
@@ -70,7 +70,7 @@ CD helps software teams deliver reliable software updates to their customers at 
 
 Let's continue to listen in on the team as they talk this out.
 
-**Andy:** Thanks Mara. We need CD because, as we all know, the world has changed. New features are being released faster. Updates and bug fixes need to be available right away. It isn't just our management that wants to speed up our releases. Management is simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
+**Andy:** Thanks, Mara. We need CD because, as we all know, the world has changed. New features are being released faster. Updates and bug fixes need to be available right away. It isn't just our management that wants to speed up our releases. Management is simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
 
 The old way of doing things, where we all worked in our separate silos and didn't talk to each other, is too slow. And honestly, it's frustrating for all of us.
 
@@ -118,7 +118,7 @@ In the DevOps community, you might hear the terms _continuous delivery_ and _con
 
 ## What continuous delivery tools can I use?
 
-After the meeting ends, Andy and Mara plan next steps. They use Azure Pipelines to build their software. They want to consider what tools, including Azure Pipelines, are available to help them with their release process.
+After the meeting ends, Andy and Mara plan the next steps. They use Azure Pipelines to build their software. They want to consider what tools, including Azure Pipelines, are available to help them with their release process.
 
 **Mara:** Where do you want to start?
 

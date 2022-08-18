@@ -50,7 +50,7 @@ Azure DevOps also provides this information as an OData feed. Use this feed to p
 
 Let's examine a few of your pipeline's analytics.
 
-1. In Azure Pipelines, navigate to your pipeline.
+1. In Azure Pipelines, go to your pipeline.
 1. Select the **Analytics** tab.
 
     :::image type="content" source="../media/6-select-analytics-tab.png" alt-text="A screenshot of Azure Pipelines, showing the Analytics tab.":::
