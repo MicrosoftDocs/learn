@@ -1,4 +1,4 @@
-You've learned to use extension attributes to store custom values, query the data, and use the data to define rules for dynamic groups. Here, you'll learn to use the second type of extension, *directory extension*.
+You've learned to use extension attributes to store custom values, query the data, and use the data to define rules for dynamic groups. Here, you learn to use the second type of extension, *directory extension*.
 
 ## Directory extension definitions
 
