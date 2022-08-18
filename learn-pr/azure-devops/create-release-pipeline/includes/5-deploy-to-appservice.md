@@ -82,7 +82,7 @@ Here, you create a service connection that enables Azure Pipelines to access you
 
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
 
-1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
+1. At the beginning of the page select **Service principal (automatic)**. Then select **Next**.
 
 1. Enter the following values for each setting.
 
