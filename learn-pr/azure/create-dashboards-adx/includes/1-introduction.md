@@ -6,8 +6,11 @@ Suppose you're a weather enthusiast with a passion for data science, who's just 
 
 ## What will we be doing?
 
-You'll create a dashboard from a query
+You'll create a new dashboard from a query to display query visualizations. You'll add new tiles to an existing dashboard. Then, you'll create a parameter to use as a picker in a dashboard tile. Finally, you'll learn how to manage permissions and share your dashboard with others.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to build dashboards with parameters in Azure Data Explorer.
+By the end of this session, you'll be able to:
+
+* Build dashboards in Azure Data Explorer. 
+* Use parameters to interactively modify your dashboard queries.

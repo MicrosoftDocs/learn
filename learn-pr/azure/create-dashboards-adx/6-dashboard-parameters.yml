@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.exercise-create-dashboard-from-query
-title: "Exercise: Create a dashboard from a query"
+uid: learn.create-dashboards-adx.dashboard-parameters
+title: Dashboard parameters
 metadata:
-  unitType: exercise
-  title: exercise
+  unitType: learning-content
+  title: learning-content
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 8/17/2022
   author: YaelSchuster
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-exercise-create-dashboard-from-query.md)]
+  [!include[](includes/6-dashboard-parameters.md)]
