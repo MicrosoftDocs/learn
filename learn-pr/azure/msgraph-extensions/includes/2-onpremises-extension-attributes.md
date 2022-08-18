@@ -48,7 +48,7 @@ In the Microsoft Graph `v1.0` endpoint, the **onPremisesExtensionAttributes** pr
 
 Extension attribute properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific extension attributes are empty (`null`).
 
-You can index extension attribute properties in Microsoft Graph for advanced querying specially by using `$filter`. This means that when you use `$filter`, you must include the `$count=true` query parameter in the HTTP request and set the *ConsistencyLevel* header to `eventual`.
+Microsoft Graph has indexed extension attribute properties for advanced querying specially by using `$filter`. This means that when you use `$filter`, you must include the `$count=true` query parameter in the HTTP request and set the *ConsistencyLevel* header to `eventual`.
 
 Although Microsoft Graph supports the `$filter` and `$select` query parameters, it doesn't support directly retrieving only a subset of the 15 properties nested in the **onPremisesExtensionAttributes** object.
 
