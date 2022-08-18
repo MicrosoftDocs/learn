@@ -38,7 +38,7 @@ Here, you modify your pipeline configuration to promote the build to the _Dev_ s
 
     This configuration resembles the one that you built in the previous module. There, you and the team built a proof of concept for continuous deployment. But note these differences, which are highlighted in the preceding code example:
 
-    * This configuration defines variables at the top of the file. The variables are used throughout the pipeline. They define which configuration to build (`Release`). They also define the name of your release branch (`release`).
+    * This configuration defines variables at the beginning of the file. The variables are used throughout the pipeline. They define which configuration to build (`Release`). They also define the name of your release branch (`release`).
     * The **Deploy** stage from the proof of concept is now named **Dev**.
     * The **Dev** stage uses a condition that directs the system to run the stage only when the previous stage succeeds and the current branch is `release`. This setup ensures that release features are deployed only to the _Dev_ environment.
     * The deployment step uses the `WebAppNameDev` variable to deploy to the App Service instance that's associated with the _Dev_ environment.
