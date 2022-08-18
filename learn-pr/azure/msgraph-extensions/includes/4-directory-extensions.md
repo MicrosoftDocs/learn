@@ -52,7 +52,7 @@ Directory extension definitions support the `$select` and `$filter` (`eq` operat
 
 In the Microsoft Graph `v1.0` endpoint, the directory extension properties aren't returned by default, and you must use the `$select` query parameter to read the properties.
 
-Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering by using the `ne` operator on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and add the *ConsistencyLevel* header set to `eventual`.
+Directory extension properties support both the `$select` and `$filter` (`eq` and `ne` operators) OData query parameters. You can also filter the results to return only users whose specific directory extension properties are empty (`null`). Filtering by using the `ne` operator on `null` values is a specially indexed query capability that works only when you include the `$count=true` query parameter and set the *ConsistencyLevel* header to `eventual`.
 
 ## Other Azure AD scenarios for the custom data
 
