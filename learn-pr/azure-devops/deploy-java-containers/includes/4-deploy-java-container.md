@@ -12,7 +12,7 @@ In this part, you'll:
 > * Create a CI/CD pipeline to build and publish the Java container app.
 > * Save the pipeline to trigger a CI/CD workflow.
 
-## Install the Azure Pipelines extension
+### Install the Azure Pipelines extension
 
 Here you install the Azure Pipelines extension for your GitHub repository. This extension enables Azure Pipelines to access your GitHub account so that it can pull the latest source code from your repository.
 
@@ -23,7 +23,7 @@ Here you install the Azure Pipelines extension for your GitHub repository. This 
 1. Select **Only select repositories** and choose the **mslearn-java-containers** repository that you forked earlier.
 1. Select **Install**.
 
-## Set up an Azure DevOps project
+### Set up an Azure DevOps project
 
 The previous task links your GitHub repository to your Azure DevOps organization. To complete the process, you now create an Azure DevOps project.
 
@@ -39,13 +39,12 @@ The previous task links your GitHub repository to your Azure DevOps organization
 1. Under **Version control**, make sure that **Git** is selected.
 1. Select **Create**.
 
-## Create pipeline variables in Azure Pipelines
+### Create pipeline variables in Azure Pipelines
 
 Your pipeline is going to need to include some variable names that specify the resources created in the previous steps. You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
 To add the variables:
 
-1. In Azure DevOps, go to your **mslearn-java-containers** project.
 1. Under **Pipelines**, select **Library**.
 
     :::image type="content" source="../media/4-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the Library menu option.":::
@@ -53,18 +52,18 @@ To add the variables:
 1. Select **+ Variable group**.
 1. Under **Properties**, enter *Release* for the variable group name.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter *WebAppName*. For the value, enter the name of the App Service instance created above, such as *java-container-cicd-18116*.
+1. For the name of your variable, enter `WebAppName`. For the value, enter the name of the App Service instance created above, such as `java-container-cicd-18116`.
 
     > [!IMPORTANT]
-    > Set the name of the App Service instance, not its host name. In this example, you would enter *java-container-cicd-18116* and not *java-container-cicd-18116.azurewebsites.net*.
+    > Set the name of the App Service instance, not its host name. In this example, you would enter `java-container-cicd-18116` and not `java-container-cicd-18116.azurewebsites.net`.
 
-1. Repeat the process to add another variable named *RegistryName* with the value of your Azure Container Registry login server, such as *javacontainercicd18116.azurecr.io*.
-1. Repeat the process to add another variable named *MySqlServer* with the value of your MySQL server host name, such as *java-container-cicd-18116*. You should not use the fully qualified domain, just the host. If you followed the instructions as-is, then this is the same as your web app name.
-1. Repeat the process to add another variable named *MySqlUserName* with the value of the MySQL user name used to create the server, such as *sysadmin*.
-1. Repeat the process to add another variable named *MySqlPassword* with the value of the MySQL password used to create the server, such as *P\@ssw0rd*. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it will not be shown as plaintext once saved.
+1. Repeat the process to add another four variables named `RegistryName` with the following values of your Azure Container Registry login server, such as `javacontainercicd18116.azurecr.io`.
+1. Repeat the process to add another variable named `MySqlServer` with the value of your MySQL server host name, such as `java-container-cicd-18116`. You should not use the fully qualified domain, just the host. If you followed the instructions as-is, then this is the same as your web app name.
+1. Repeat the process to add another variable named `MySqlUserName` with the value of the MySQL user name used to create the server, such as `sysadmin`.
+1. Repeat the process to add another variable named `MySqlPassword` with the value of the MySQL password used to create the server, such as `P\@ssw0rd`. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it will not be shown as plaintext once saved.
 
     > [!IMPORTANT]
-    > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Valult, see [Configure and manage secrets in Azure Key Vault](/learn/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
+    > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Vault, see [Configure and manage secrets in Azure Key Vault](/learn/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
 
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
@@ -72,26 +71,25 @@ To add the variables:
 
     :::image type="content" source="../media/4-library-variable-group.png" alt-text="A screenshot of Azure Pipeline showing the variable group. The group contains five variables.":::
 
-## Create required service connections
+### Create required service connections
 
 Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
-1. In Azure DevOps, go to the project created for this module.
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **Create service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, choose **Service principal (automatic)**, then select **Next**.
+1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Choose the recommended settings as **Service principal (automatic)**, then select **Next**.
 1. Fill in these fields:
 
     | Field           | Value                                        |
     |-----------------|----------------------------------------------|
     | Scope level     | **Subscription**                             |
     | Subscription    | Your Azure subscription                      |
-    | Resource Group  | **java-containers-cicd-rg**                   |
-    | Service connection name | *Azure Connection*                           |
+    | Resource Group  | `java-containers-cicd-rg`                   |
+    | Service connection name | `Azure Connection`                           |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
@@ -101,7 +99,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
 
-1. Select **New service connection**, then choose **Docker Registry**, then select **Next**.
+1. Select **Create service connection**, then choose **Docker Registry**, then select **Next**.
 1. Near the top of the page, select **Azure Container Registry**.
 1. Fill in these fields:
 
