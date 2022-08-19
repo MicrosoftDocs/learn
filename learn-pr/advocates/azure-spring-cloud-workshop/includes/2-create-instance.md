@@ -59,7 +59,7 @@ az group create \
 And then create the Azure Spring Cloud instance:
 
 ```bash
-az spring-cloud create \
+az spring create \
     -g "$RESOURCE_GROUP_NAME" \
     -n "$SPRING_CLOUD_NAME" \
     --sku standard
@@ -71,5 +71,5 @@ For the remainder of this workshop, we will be running Azure CLI commands refere
 
 ```bash
 az configure --defaults group=${RESOURCE_GROUP_NAME}
-az configure --defaults spring-cloud=${SPRING_CLOUD_NAME}
+az configure --defaults spring=${SPRING_CLOUD_NAME}
 ```

@@ -10,7 +10,7 @@ This microservice will use Spring Data JPA to read and write data from an [Azure
 Create a specific `todo-service` application in your Azure Spring Cloud instance:
 
 ```bash
-az spring-cloud app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME" --runtime-version Java_11
+az spring app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME" --runtime-version Java_11
 ```
 
 ## Create a MySQL database
@@ -195,14 +195,14 @@ You can now build your "todo-service" project and send it to Azure Spring Cloud:
 ```bash
 cd todo-service
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --artifact-path target/demo-0.0.1-SNAPSHOT.jar
+az spring app deploy --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --artifact-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 
-If you want to check the logs of the application, in case something fails, you can use the `az spring-cloud app logs` command:
+If you want to check the logs of the application, in case something fails, you can use the `az spring app logs` command:
 
 ```bash
-az spring-cloud app logs --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" -f
+az spring app logs --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" -f
 ```
 
 ## Test the project in the cloud
@@ -210,7 +210,7 @@ az spring-cloud app logs --name todo-service --service "$SPRING_CLOUD_NAME" --re
 Now that the application is deployed, it's time to test it!
 
 1. In the Azure portal, go to **Apps** in your Azure Spring Cloud instance.
-    1. Verify **todo-service** has a **Registered Instance** that says **0/1**. This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Verify **todo-service** has a **Registration status** that says **0/1**. This shows that it is correctly registered in the Spring Cloud Service Registry.
     1. Select **todo-service** to have more information on the microservice.
 1. Copy/paste the "Test Endpoint" that is provided.
 
