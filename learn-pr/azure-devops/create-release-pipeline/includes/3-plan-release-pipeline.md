@@ -22,7 +22,7 @@ Let's follow along with Andy and Mara as they plan their POC.
 
 Andy draws a diagram on the whiteboard.
 
-:::image type="content" source="../media/3-whiteboard-1.png" alt-text="Screenshot of a hand-drawn illustration of an artifact moving to a deployment environment.":::
+:::image type="content" source="../media/3-whiteboard-1.png" alt-text="Diagram that shows a hand-drawn illustration of an artifact moving to a deployment environment.":::
 
 **Andy:** We already have the :::image type="icon" source="../../shared/media/callout-01.png"::: build artifact. It's the _.zip_ file that our existing build pipeline creates. But how do we deploy it to a :::image type="icon" source="../../shared/media/callout-02.png"::: live environment?
 
@@ -36,7 +36,7 @@ A _stage_ is a part of the pipeline that can run independently and be triggered 
 
 Mara updates the diagram on the whiteboard.
 
-:::image type="content" source="../media/3-whiteboard-3.png" alt-text="Screenshot of a hand-drawn illustration of a deployment pipeline that contains two stages, Build and Deploy.":::
+:::image type="content" source="../media/3-whiteboard-3.png" alt-text="Diagram that shows a hand-drawn illustration of a deployment pipeline that contains two stages, Build and Deploy.":::
 
 **Mara:** We've already defined the tasks for the :::image type="icon" source="../../shared/media/callout-01.png"::: build stage in our pipeline. Our :::image type="icon" source="../../shared/media/callout-02.png"::: deployment stage can be similar, including tasks that deploy the build to an environment.
 
@@ -204,7 +204,7 @@ Andy and Mara are ready to begin. They're going to:
 * Define a build stage that creates the artifact.
 * Define a deployment stage that deploys the artifact to App Service.
 
-:::image type="content" source="../media/3-whiteboard-4.png" alt-text="Screenshot of a hand-drawn illustration of a deployment pipeline that contains two stages. The deployment stage deploys the artifact to App Service.":::
+:::image type="content" source="../media/3-whiteboard-4.png" alt-text="Diagram that shows a hand-drawn illustration of a deployment pipeline that contains two stages. The deployment stage deploys the artifact to App Service.":::
 
 **Andy:** Is this drawing correct? We use :::image type="icon" source="../../shared/media/callout-01.png"::: Azure Pipelines to deploy to :::image type="icon" source="../../shared/media/callout-02.png"::: App Service. To do that, we take the :::image type="icon" source="../../shared/media/callout-03.png"::: build artifact as the input to the :::image type="icon" source="../../shared/media/callout-04.png"::: deployment stage. The tasks in the deployment stage :::image type="icon" source="../../shared/media/callout-05.png"::: download the artifact and use a service connection to :::image type="icon" source="../../shared/media/callout-06.png"::: deploy the artifact to App Service.
 

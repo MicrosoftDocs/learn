@@ -8,7 +8,7 @@ Andy glances at Mara, and clears his throat.
 
 Amita points to the value stream map, which you originally saw in the [Assess your existing software development process](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) module.
 
-:::image type="content" source="../media/7-vsm-whiteboard1.png" alt-text="Screenshot of a whiteboard showing the value stream map.":::
+:::image type="content" source="../media/7-vsm-whiteboard1.png" alt-text="Diagram of a whiteboard showing the value stream map.":::
 
 **Amita:** In several areas, we can improve by cutting down the time we spend. For example, we're still slow at running quality tests.
 
