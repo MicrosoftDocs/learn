@@ -250,12 +250,12 @@ Get-MgDevice | Where {$_.ApproximateLastSignInDateTime -le $timeframe} | export-
 To disable the stale devices by setting **AccountEnabled** to false, run:
 
 ```powershell
-$Devices = Get-MgDevice | Where {$_.ApproximateLastSignInDateTime -le $timeframe} foreach ($Device in $Devices) {Update-MgDevice -DeviceId $Device.Id -AccountEnabled $False}
+$Devices = Get-MgDevice | Where {$_.ApproximateLastSignInDateTime -le $timeframe} ForEach-Object {Update-MgDevice -DeviceId $Device.Id -AccountEnabled: $False}
 ```
 
 To delete disabled devices, now inactive for 120 days, we'll get all the disabled devices and pipe the output to `Remove-MgDevice`.
 
 ```powershell
 $timeframe = (Get-Date).AddDays(-120)
-$Devices = Get-MgDevice | Where {($_.ApproximateLastSignInDateTime -le $timeframe) -and $_.AccountEnabled -eq $false} foreach ($Device in $Devices) {Remove-MgDevice -DeviceId $Device.Id}
+$Devices = Get-MgDevice | Where {($_.ApproximateLastSignInDateTime -le $timeframe) -and $_.AccountEnabled -eq $false} ForEach-Object {Remove-MgDevice -DeviceId $Device.Id}
 ```
