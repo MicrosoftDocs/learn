@@ -228,7 +228,7 @@ Get-MgDevice -Count deviceCount -ConsistencyLevel eventual
 
 `$deviceCount` will contain the count of your devices.
 
-To clean up stale devices, you'll need to define a timeframe that is your indicator for stale devices. When defining your timeframe, factor the window noted for updating the activity timestamp into your value. For example, you shouldn't consider a timestamp that is younger than 21 days as an indicator for a stale device. There are scenarios that can make a device look like stale while it isn't. For example, the owner of the affected device can be on vacation or on a sick leave that exceeds your timeframe for stale devices.
+Using out example scenario, to clean up stale devices, you'll need to define a timeframe that is your indicator for stale devices. When defining your timeframe, factor the window noted for updating the activity timestamp into your value. For example, you shouldn't consider a timestamp that is younger than 21 days as an indicator for a stale device. There are scenarios that can make a device look like stale while it isn't. For example, the owner of the affected device can be on vacation or on a sick leave that exceeds your timeframe for stale devices.
 
 While you can clean up stales devices in the Azure portal, it's more efficient to handle the process using PowerShell. Using Microsoft Graph PowerShell, we'll use the timestamp filter and filter out system-managed devices.
 
