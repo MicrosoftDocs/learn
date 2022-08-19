@@ -10,8 +10,8 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add a visual element
+
+Microsoft identity platform helps you build applications your users and customers can sign in to. Users can sign in using accounts provisioned through Azure Active Directory (Azure AD).
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -29,8 +29,8 @@ TODO: add a visual element
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+
+Suppose you work at a banking company as a developer. Your company is looking to develop a web application to help customers access services and information. These services range from checking their account balances, making transactions and applying for loans. To ensure these services are accessed in a secure way, users need to authenticate before they can access these resources. Your company uses Python Django as the web framework to build its web apps. You've been tasked with the responsibility of building an authentication mechanism to authenticate users before they can access these resources.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -45,7 +45,12 @@ TODO: add a visual element
 
  -->
 ## What will we be doing?
-TODO: add your activities
+
+In this module. you'll create a Django web app that authenticates users using Azure AD:
+
+- Register a Django web application in an Azure AD tenant.
+- Configure a Django web application to use its tenant registration details.
+- Create a Django web app that signs in users using Azure AD.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -57,6 +62,7 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+
+By the end of this session, you'll be able to register a Django web application in an Azure AD tenant and sign in users to the Django web app using Azure AD.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
