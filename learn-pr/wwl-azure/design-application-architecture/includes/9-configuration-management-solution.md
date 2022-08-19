@@ -12,12 +12,12 @@ The following two diagrams show how Azure App Configuration works in Development
 
 #### Development
 
-:::image type="content" source="../media/app-config-development.png" alt-text="A graphic depicts the development environment consisting of Visual Studio, VSC, and Azure CLI linked to Azure AD, App configuration and Key Vault.":::
+:::image type="content" source="../media/app-config-development.png" alt-text="A graphic depicts the development environment consisting of Visual Studio, V S C, and Azure C L I linked to Azure Active Directory, App configuration and Key Vault.":::
 
 
 #### Production
 
-:::image type="content" source="../media/app-config-production.png" alt-text="A graphic depicts the production environment. This includes Azure and MSI, together with related Azure services, linked to Azure AD, App configuration and Key Vault.":::
+:::image type="content" source="../media/app-config-production.png" alt-text="A graphic depicts the production environment. This includes Azure and M S I, together with related Azure services, linked to Azure AD, App configuration and Key Vault.":::
 
 
 ## What are the benefits of App Configuration?
