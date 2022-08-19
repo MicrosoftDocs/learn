@@ -45,7 +45,7 @@ When you want to implement a release pipeline, it's important to first identify 
 
 Mara moves to the whiteboard and sketches the existing pipeline.
 
-:::image type="content" source="../media/2-build-deploy.png" alt-text="Screenshot of a whiteboard illustrating build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
+:::image type="content" source="../media/2-build-deploy.png" alt-text="Diagram of the whiteboard illustrating build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
 
 **Mara:** The _Build_ stage builds the source code and produces a package. In our case, that package is a _.zip_ file. The _Deploy_ stage installs the _.zip_ file, which is the _Space Game_ website, on an App Service instance. What's missing from our release pipeline?
 
@@ -59,13 +59,13 @@ In our case, the _Space Game_ website's leaderboard feature reads high scores fr
 
 Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to show the _Dev_ stage.
 
-:::image type="content" source="../media/2-add-dev-stage.png" alt-text="Screenshot of a whiteboard that illustrates build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
+:::image type="content" source="../media/2-add-dev-stage.png" alt-text="Diagram that shows the whiteboard illustrating build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
 
 **Andy:** You bring up an interesting point. We build the app each time we push a change to GitHub. Does that mean each build is promoted to the _Dev_ stage after it finishes?
 
 **Mara:** Building continuously gives us important feedback about our build and test health. But we want to promote to the _Dev_ stage only when we merge code into some central branch: either main or some other release branch. I'll update the drawing to show that requirement.
 
-:::image type="content" source="../media/2-add-dev-stage-trigger.png" alt-text="Screenshot of a whiteboard illustrating build and dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.":::
+:::image type="content" source="../media/2-add-dev-stage-trigger.png" alt-text="Diagram that shows whiteboard illustrating build and dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.":::
 
 **Mara:** I think this promotion will be easy to accomplish. We can define a *condition* that promotes to the _Dev_ stage only when changes happen on a release branch.
 
@@ -143,7 +143,7 @@ For a more complete description of conditions in Azure Pipelines, see [expressio
 
 Mara adds the _Test_ stage to her drawing on the whiteboard.
 
-:::image type="content" source="../media/2-add-test-stage.png" alt-text="Screenshot of a whiteboard illustrating build, dev and test stages. The Test stage deploys the build to Azure App Service.":::
+:::image type="content" source="../media/2-add-test-stage.png" alt-text="Diagram that shows the whiteboard illustrating build, dev and test stages. The Test stage deploys the build to Azure App Service.":::
 
 **Amita:** One concern I have is how often I need to test the app. An email notifies me whenever Mara or Andy makes a change. Changes happen throughout the day, and I never know when to jump in. I think I'd like to see a build once a day, maybe when I get in to the office. Can we do that?
 
@@ -153,7 +153,7 @@ Mara adds the _Test_ stage to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning.
 
-:::image type="content" source="../media/2-add-test-stage-schedule.png" alt-text="Screenshot of a whiteboard showing Build, Dev, and Test stages. The schedule promotes the change from Dev to Test at 3 A.M. each morning.":::
+:::image type="content" source="../media/2-add-test-stage-schedule.png" alt-text="Diagram that shows the whiteboard showing Build, Dev, and Test stages. The schedule promotes the change from Dev to Test at 3 A.M. each morning.":::
 
 ### What are triggers?
 
@@ -247,7 +247,7 @@ You'll see a more complete example later in this module.
 
 Mara adds _Staging_ to her drawing on the whiteboard.
 
-:::image type="content" source="../media/2-add-staging-stage.png" alt-text="Screenshot of a whiteboard showing the Build, Dev, Test, and Staging stages. The Staging stage deploys the build to Azure App Service.":::
+:::image type="content" source="../media/2-add-staging-stage.png" alt-text="Diagram where the whiteboard is showing the Build, Dev, Test, and Staging stages. The Staging stage deploys the build to Azure App Service.":::
 
 **Amita:** We use a scheduled trigger to promote changes from the _Dev_ stage to the _Test_ stage. But how will we promote changes from _Test_ to _Staging_? Does that promotion also have to happen on a schedule?
 
@@ -257,7 +257,7 @@ Mara adds _Staging_ to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from _Test_ to _Staging_ only when Amita approves it.
 
-:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Screenshot of a whiteboard showing the Build, Dev, Test, and Staging stages. Changes move from Test to Staging only after approval.":::
+:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Diagram where the whiteboard shows the Build, Dev, Test, and Staging stages. Changes move from Test to Staging only after approval.":::
 
 **Tim:** I could also imagine us using release approvals to promote from _Staging_ to _Production_ after management signs off. I can never predict how long that takes. After they sign off, I can approve the release and promote it to production manually. But how do release approvals work?
 
@@ -293,7 +293,7 @@ Let's review the Tailspin team's plan as they move toward next steps.
 
 Mara points to the whiteboard.
 
-:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Screenshot of the final whiteboard showing the Build, Dev, Test, and Staging stages.":::
+:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Diagram of the final whiteboard showing the Build, Dev, Test, and Staging stages.":::
 
 **Mara:** To summarize, our steps are to:
 
