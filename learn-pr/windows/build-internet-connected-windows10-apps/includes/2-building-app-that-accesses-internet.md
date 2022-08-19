@@ -59,7 +59,7 @@ The goal of this step is to lay out the UI components and give them a quick test
 
     ![Screen shot depicting guidelines in the designer for laying out the UI elements.](../media/wf-apod-ui-layout.png)
 
-3. Name the calendar control "MonthCalendar". We're not going to set any other properties of the calendar from the **Properties** pane, but we will be setting properties from within the code itself.
+3. Name the calendar control "MonthCalendar". We're not going to set any other properties of the calendar from the **Properties** pane, but we'll be setting properties from within the code itself.
 
     ![Screen shot depicting the calendar that will be used in the app.](../media/wf-apod-month-calendar.png)
 
@@ -1058,7 +1058,7 @@ The goal of this step is to lay out the UI components and give them a quick test
 
 ### 4. Add code to handle the UI elements
 
-Only a few of our UI elements need to have events associated with them. Let's work through them one by one. Open the MainPage.xaml.cs file.
+Only a few of our UI elements need to have events associated with them. Let's work through them one by one. Open the `MainPage.xaml.cs` file.
 
 1. Before we enter any events, lets add a few useful, global values. First, add the endpoint needed to call the NASA service, the launch date of the APOD program, and a count of images downloaded. We'll also set a couple of defaults for the range of dates available to the calendar. 
 
@@ -1087,7 +1087,7 @@ Only a few of our UI elements need to have events associated with them. Let's wo
         }
     ```
 
-2. In the design view, double-click the button we named **LaunchButton**, or, in the events for this button, select the **Click** event. Either way, the **LaunchButton_Click** method is created, and the MainPage.xaml.cs code file opens to show it.
+2. In the design view, double-click the button we named **LaunchButton**, or, in the events for this button, select the **Click** event. Either way, the **LaunchButton_Click** method is created, and the `MainPage.xaml.cs` code file opens to show it.
 
 3. Insert the body of the **LaunchButton_Click** method. This code sets the selected date of the calendar to the launch date of the APOD program, but first sets the **LimitRangeCheckBox** to **false** to ensure that the full range of dates is available in the calendar. Setting this check box to **false** just keeps things consistent. The launch date of the program should be available only if the date range available is not restricted to the current year.
 
@@ -1148,7 +1148,7 @@ Now we want to make something way more exciting than this happen when we select 
 
 ### 6. Add code to download an image
 
-1. Let's make sure that all the resources we need are available to us. Remember that we installed the Newtonsoft package, and we'll need to call some HTTP functions, too. Make sure the list of **using** statements at the top of the MainPage.xaml.cs file includes all of the following:
+1. Let's make sure that all the resources we need are available to us. Remember that we installed the Newtonsoft package, and we'll need to call some HTTP functions, too. Make sure the list of **using** statements at the top of the `MainPage.xaml.cs` file includes all of the following:
 
     ```cs
     using System;

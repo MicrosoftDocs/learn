@@ -9,7 +9,7 @@ pool:
 
 variables:
 - name: deploymentDefaultLocation
-  value: westus
+  value: westus3
 
 jobs:
 - job:

@@ -1,20 +1,21 @@
-In order to use these tactics like proactive and reactive detection to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six pillars. The tools needed to support these phases work best if converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
+In order to use these tactics like proactive and reactive detection to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six Zero Trust technology pillars. The tools needed to support these phases work best if converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
 
 Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Microsoft Sentinel as its SIEM-as-a-service offering. Microsoft Sentinel ingests all Microsoft Defender for Identity and third-party data.
 
-Microsoft Defender for , a key feed into Microsoft Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context-aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration tools, identities, and applications.
+Microsoft 365 Defender, a key feed into Microsoft Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context-aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration tools, identities, and applications.
 
 It is through this hierarchy that we enable our customers to maximize their focus. Through context-awareness and automated remediation, Microsoft 365 Defender can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft 365 Defender brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Microsoft Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
 
+:::image type="content" source="../media/modern-security-operation.png" alt-text="Diagram showing technology capabilities for modern security operations." lightbox="../media/modern-security-operation.png":::
+
 ## Visibility, automation, and orchestration Zero Trust deployment objectives
 
-When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus first on these initial deployment objectives:
-* **I. Establish visibility.**
-* **II. Enable automation.**
+When implementing an end-to-end Zero Trust framework for visibility, automation, and orchestration, we recommend you focus on these deployment objectives:
+* **Establish visibility**
+* **Enable automation**
+* **Enable additional protection and detection controls**
 
-After objective I and II are completed, focus on objective III: **Enable additional protection and detection controls**.
-
-### I. Establish visibility
+### Establish visibility
 
 The first step is to establish visibility by enabling [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection).
 
@@ -22,12 +23,10 @@ Follow these steps:
 
 1.  Sign up for one of the Microsoft 365 Defender workloads.
 2.  Enable the workloads and establish connectivity.
-3.  Configure detection on your devices and infrastructure to bring immediate visibility into activities going on in the environment.
-    This gives you the all-important "dial tone" to start the flow of critical data.
+3.  Configure detection on your devices and infrastructure to bring immediate visibility into activities going on in the environment. This gives you the all-important "dial tone" to start the flow of critical data.
 4.  Enable Microsoft 365 Defender to gain cross-workload visibility and incident detection.
 
-
-### II. Enable automation
+### Enable automation
 
 The next key step, once you have established visibility, is to enable automation.
 
@@ -43,10 +42,9 @@ Follow these steps:
 2.  Analyze the investigation steps and response actions.
 3.  Gradually transition to automatic approval for all devices to reduce the time to detection and response.
 
+#### Link Microsoft Purview Data Connectors and relevant third-party products to Microsoft Sentinel
 
-#### Link Microsoft data connectors and relevant third-party products to Microsoft Sentinel
-
-In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect Microsoft 365 Defender, other Microsoft data connectors, and relevant third party products to [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
+In order to gain visibility into the incidents that result from deploying a Zero Trust model, it is important to connect Microsoft 365 Defender, other data connectors, and relevant third party products to [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/) in order to provide a centralized platform for incident investigation and response.  
   
 As part of the data connection process, relevant analytics can be enabled to trigger incidents and workbooks can be created for a graphical representation of the data over time.
 
@@ -54,7 +52,7 @@ As part of the data connection process, relevant analytics can be enabled to tri
 
 Although machine learning and fusion analytics are provided out of the box, it is also beneficial to ingest threat intelligence data into Microsoft Sentinel to help identify events that relate to known bad entities.
 
-### III. Enable additional protection and detection controls
+### Enable additional protection and detection controls
 
 Enabling additional controls improves the signal coming in to Microsoft 365 Defender and Sentinel to improve your visibility and ability to orchestrate responses.
 
@@ -106,3 +104,7 @@ The following are best practices for network monitoring and available tools.
 Most security breaches occur when attackers gain access to an environment by stealing a user's identity. Discovering compromised identities is no easy task. Azure AD uses adaptive machine learning algorithms and heuristics to detect suspicious actions related to user accounts. Each detected suspicious action is stored in a record called risk detection. Risk detections are recorded in Azure AD security reports. For more information, read about the users at risk security report and the risky sign-ins security report. 
 
 **Monitor for suspicious actions related to your user accounts** - Monitor for [users at risk](/azure/active-directory/identity-protection/overview-identity-protection) and [risky sign-ins](/azure/active-directory/identity-protection/overview-identity-protection) by using Azure AD security reports.
+
+For more detailed guidance on unified SIEM and XDR capabilities, view the following interactive guide.
+
+[:::image type="content" source="../media/detect-respond-modern-attacks-unified-siem-xdr-capabilities.png" alt-text="Cover for an interactive guide that says Detect and respond to modern attacks with unified SIEM and XDR capabilities." border="true":::](https://mslearn.cloudguides.com/guides/Detect%20and%20respond%20to%20modern%20attacks%20with%20unified%20SIEM%20and%20XDR%20capabilities)

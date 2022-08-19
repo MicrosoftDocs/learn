@@ -34,7 +34,9 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 ## Create the HTTP GET function
 
-1. In Visual Studio, right-click the **Api** project, and then select **Add** > **New Azure Function**.
+1. In Visual Studio, right-click the **Api** project, and then select **Add** > **New Item**.
+
+1. In the **Add New Item** dialog, select **Azure Function**.
 
 1. Enter *ProductsGet.cs* as the name of the function file.
 
@@ -50,11 +52,11 @@ You just extended your Azure Functions app with a function to get your products!
 
 ### Configure the HTTP Method and route endpoint
 
-Notice the `Run` method of the newly created C# class has a `HttpTrigger` attribute on the first argument, the `HttpRequest`. This attribute defines the access level of the Function, as well as the HTTP method(s) to listen for and the route endpoint.
+Notice the `Run` method of the newly created C# class has an `HttpTrigger` attribute on the first argument, the `HttpRequest`. This attribute defines the access level of the function, the HTTP method(s) to listen for, and the route endpoint.
 
 The route endpoint will be `null` by default, meaning that the endpoint will use the value of the `FunctionName` attribute, which is `ProductsGet`. Setting the `Route` property to `"products"` will override the default behavior.
 
-Now, your function is triggered on an HTTP `GET` request to **products**. Your `Run` method should look like the following code:
+Currently, your function is triggered on an HTTP `GET` request to **products**. Your `Run` method looks like the following code:
 
 ```csharp
 [FunctionName("ProductsGet")]
@@ -65,9 +67,9 @@ public static async Task<IActionResult> Run(
 
 ### Update the route logic
 
-The body of the `Run` method is what will be executed when the Function is executed.
+The body of the `Run` method is what will be executed when the function is executed.
 
-You'll need to update the logic to get your products. There is data access logic in the `ProductData.cs` file as a class called `ProductData`, which is available via Dependency Injection as the `IProductData` interface. The interface has a method on it called `GetProducts`, which will return a `Task<IEnumerable<Product>>` that asynchronously returns a list of products.
+You'll need to update the logic to get your products. There's data access logic in the `ProductData.cs` file as a class called `ProductData`, which is available via Dependency Injection as the `IProductData` interface. The interface has a method on it called `GetProducts`, which will return a `Task<IEnumerable<Product>` that asynchronously returns a list of products.
 
 Now, change the function endpoint to return the products:
 
@@ -103,7 +105,7 @@ Now, change the function endpoint to return the products:
     }
     ```
 
-You have now turned the class from a static to an instance class, added the interface to the constructor so it can be injected by the Dependency Injection framework, and configured the Function to return the product list when called.
+You've now turned the class from a static to an instance class, added the interface to the constructor so it can be injected by the Dependency Injection framework, and configured the Function to return the product list when called.
 
 ### Configure Cross-Origin Resource Sharing (CORS) locally
 
@@ -128,7 +130,7 @@ Now, prompt Azure Functions to allow your web app to make HTTP requests to the A
     ```
 
 > [!NOTE]
-> This file is used to control how Visual Studio will launch the Azure Functions tooling. If you're wanting to use the Azure Functions command line tool, you need a *local.settings.json* file described in the [Azure Functions Core Tools docs](/azure/azure-functions/functions-run-local?tabs=windows%2ccsharp%2cbash#local-settings-file). The *local.settings.json* file is listed in the *.gitignore* file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. Also, this is why you had to create the file when you created your repo from the template.
+> This file is used to control how Visual Studio will launch the Azure Functions tooling. If you want to use the Azure Functions command line tool, you need a *local.settings.json* file described in the [Azure Functions Core Tools docs](/azure/azure-functions/functions-run-local?tabs=windows%2ccsharp%2cbash#local-settings-file). The *local.settings.json* file is listed in the *.gitignore* file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file that you would not want in GitHub. Also, this is why you had to create the file when you created your repo from the template.
 
 ### Run the API and web app
 

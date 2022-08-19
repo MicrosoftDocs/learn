@@ -41,7 +41,7 @@ Here, you add a new job definition that contains the steps required to build the
 
 1. Update the *deploy-production* job to also depend on the *built* and *lint* jobs.
 
-   :::code language="yaml" source="code/5-workflow.yml" range="32-45" highlight="4-7" :::
+   :::code language="yaml" source="code/5-workflow.yml" range="34-41" highlight="4-7" :::
 
    Because the production deployment depends on the test deployment, you don't strictly need to do this. But, it's a good practice to be explicit, to avoid your workflow running incorrectly if you reorder or remove your jobs or environments.
 
@@ -81,7 +81,7 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. In the *deploy* job's definition, add a new output for the `appServiceAppName`:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="55-62" highlight="6" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="65-72" highlight="6" :::
 
    > [!NOTE]
    > When you start to work with your YAML file in Visual Studio Code, you might see some red squiggly lines telling you there's a problem. This is because the Visual Studio Code extension for YAML files sometimes incorrectly guesses the file's schema.
@@ -96,7 +96,7 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. Below the *deploy* job definition, and above the *smoke-test* job definition, define a new job to deploy the website to App Service:
 
-   :::code language="yaml" source="code/5-deploy.yml" range="81-95" :::
+   :::code language="yaml" source="code/5-deploy.yml" range="93-109" :::
 
    > [!NOTE]
    > Be careful with the indentation of the YAML file, ensuring that the new job is indented at the same level as the `deploy` job. If you're not sure, copy the whole *deploy.yml* file contents from the example in the next step.
@@ -111,7 +111,7 @@ Now, you need to update your *deploy* job to take the value of the output from t
 
 1. Verify that your *deploy.yml* file looks like the following:
 
-   :::code language="yaml" source="code/5-deploy.yml" highlight="60, 81-95" :::
+   :::code language="yaml" source="code/5-deploy.yml" highlight="70, 93-109" :::
 
 1. Save your changes to the file.
 

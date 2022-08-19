@@ -27,7 +27,7 @@ You should be familiar with using:
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
 
-To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups and Azure Active Directory applications.
 
 You'll also need the following installed locally:
 

@@ -31,3 +31,8 @@ Keep in mind that the target Azure virtual network must exist before you can sta
 
 > [!NOTE]
 > Azure virtual network gateway provisioning might take about 30 minutes.
+
+---
+
+
+---

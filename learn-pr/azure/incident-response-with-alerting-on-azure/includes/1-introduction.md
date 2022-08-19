@@ -1,4 +1,4 @@
-Microsoft Azure provides a robust alerting and monitoring solution, called Azure Monitor. You use Azure Monitor to configure notifications and alerts for your key systems and applications. These alerts will ensure that the correct team knows when a problem arises.
+Microsoft Azure provides a robust alerting and monitoring solution called Azure Monitor. You can use Azure Monitor to configure notifications and alerts for your key systems and applications. These alerts will ensure that the correct team knows when a problem arises.
 
 You work for a large shipping company that recently deployed several web applications to the Azure platform. Due to a configuration error, the customer-facing order tracker was offline. The issue wasn't identified until customers started complaining that they couldn't track their orders. As a consequence, customer satisfaction with your service dropped.
 
@@ -6,7 +6,7 @@ As your company's Azure solution architect, you need to find a solution that det
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Explore alerts by using Azure Monitor.
 - Understand when to use metric, log, and activity log events.
@@ -15,4 +15,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- Knowledge of Azure Monitor.
+- Knowledge of Azure Monitor

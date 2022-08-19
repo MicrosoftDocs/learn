@@ -3,27 +3,15 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 ## Open the development environment and create the Azure resources
 
 > [!NOTE]
-> If you wish to use GitHub Codespaces, navigate to [your codespaces for the MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces). Create a new codespace using the `main` branch, and then skip to step 4.
+> If you wish to use GitHub Codespaces, navigate to [your codespaces for the MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces). Create a new codespace using the `main` branch, and then skip to step 3.
 
-1. In a terminal, run the following command to clone the repo for this module:
+1. From a new Visual Studio Code window, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Remote-Containers: Clone Repository in Container Volume**.
 
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-aspnet-core
-    ```
+1. Provide the following repository URL: `https://github.com/MicrosoftDocs/mslearn-aspnet-core`
 
-1. Switch to the source code directory and launch Visual Studio Code:
+    Visual Studio Code creates your development container.
 
-    ```bash
-    cd mslearn-aspnet-core
-    code .
-    ```
-
-1. Visual Studio Code opens. When prompted, select **Reopen in Container** to open the repo in a development container.
-
-    > [!TIP]
-    > If you miss the prompt to reopen in container, press **Ctrl+Shift+P** to open the command palette, and then search for and select **Remote-Containers: Reopen in Container**.
-
-1. After the project loads in the container, expand the *modules* directory, then *microservices-logging-aspnet-core*, and then finally *deploy*. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.) 
+1. After the project loads in the container, expand the *modules* directory, then *microservices-configuration-aspnet-core*, and then finally *deploy*. Right-click on the *k8s* directory and select **Open in Integrated Terminal**. This location contains the scripts you're going to use in this module. (Note: By default, Code will display *k8s* on the same line as *deploy* because *deploy* only contains the *k8s* subdirectory.) 
 
     ![Screenshot of the explorer pane in Visual Studio Code. The context menu for the k8s folder is displayed, and Open in Integrated Terminal is selected.](../media/2-environment-setup/k8s-path.png)
 

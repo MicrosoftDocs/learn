@@ -1,6 +1,6 @@
 Now that all the networking resources are available, you'll need to recreate your Azure Spring Apps service within the virtual network. Additionally, you'll need delete your previous Azure Spring Apps instance.
 
-When you recreate your Spring Cloud instance in the virtual network, you'll also need to update some of the steps from the previous exercise:
+When you recreate your Spring Apps instance in the virtual network, you'll also need to update some of the steps from the previous exercise:
 
  -  Recreate the config server setup.
  -  Recreate and redeploy all apps.
@@ -10,19 +10,19 @@ When you recreate your Spring Cloud instance in the virtual network, you'll also
 1.  Delete the existing Azure Spring Apps instance by running the following command from the Git Bash shell prompt.
     
     ```Bash
-    az spring-cloud delete \
-        --name $SPRING_CLOUD_SERVICE \
+    az spring delete \
+        --name $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP
     ```
 
 2.  Next, recreate your Azure Spring Apps instance by specifying the virtual network and subnets you created.
     
     ```Bash
-    SPRING_CLOUD_SERVICE=springcloudsvc$RANDOM$RANDOM
-    az config set defaults.group=$RESOURCE_GROUP defaults.spring-cloud=$SPRING_CLOUD_SERVICE
-    az spring-cloud create \
+    SPRING_APPS_SERVICE=springappssvc$RANDOM$RANDOM
+    az config set defaults.group=$RESOURCE_GROUP defaults.spring=$SPRING_APPS_SERVICE
+    az spring create \
         --resource-group $RESOURCE_GROUP \
-        --name $SPRING_CLOUD_SERVICE \
+        --name $SPRING_APPS_SERVICE \
         --vnet $VIRTUAL_NETWORK_NAME \
         --service-runtime-subnet service-runtime-subnet \
         --app-subnet apps-subnet \
@@ -36,8 +36,8 @@ When you recreate your Spring Cloud instance in the virtual network, you'll also
 3.  Set up the config server.
     
     ```Bash
-    az spring-cloud config-server git set
-        --name $SPRING_CLOUD_SERVICE \
+    az spring config-server git set
+        --name $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --uri $GIT_REPO \
         --label main \
@@ -45,33 +45,33 @@ When you recreate your Spring Cloud instance in the virtual network, you'll also
         --username $GIT_USERNAME
     ```
 
-4.  Recreate each of the apps in Spring Cloud, including managed identities for the `customers-service,visits-service`, and `vets-service` app.
+4.  Recreate each of the apps in Spring Apps, including managed identities for the `customers-service,visits-service`, and `vets-service` app.
     
     ```Bash
-    az spring-cloud app create \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app create \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name api-gateway
     
-    az spring-cloud app create \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app create \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name admin-service
     
-    az spring-cloud app create \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app create \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
         --assign-identity true
     
-    az spring-cloud app create \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app create \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
         --assign-identity true
     
-    az spring-cloud app create \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app create \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name vets-service \
         --assign-identity true
@@ -80,8 +80,8 @@ When you recreate your Spring Cloud instance in the virtual network, you'll also
 5.  Retrieve the managed identities of the `customers`, `visits`and `vets`apps, and grant them access to the Key Vault instance.
     
     ```Bash
-    CUSTOMERS_SERVICE_ID=$(az spring-cloud app identity show \
-        --service $SPRING_CLOUD_SERVICE \
+    CUSTOMERS_SERVICE_ID=$(az spring app identity show \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
         --output tsv \
@@ -93,8 +93,8 @@ When you recreate your Spring Cloud instance in the virtual network, you'll also
         --secret-permissions get list  \
         --object-id $CUSTOMERS_SERVICE_ID
     
-    VISITS_SERVICE_ID=$(az spring-cloud app identity show \
-        --service $SPRING_CLOUD_SERVICE \
+    VISITS_SERVICE_ID=$(az spring app identity show \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
         --output tsv \
@@ -106,8 +106,8 @@ When you recreate your Spring Cloud instance in the virtual network, you'll also
         --secret-permissions get list  \
         --object-id $VISITS_SERVICE_ID
     
-    VNETS_SERVICE_ID=$(az spring-cloud app identity show \
-        --service $SPRING_CLOUD_SERVICE \
+    VNETS_SERVICE_ID=$(az spring app identity show \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name vets-service \
         --output tsv \
@@ -123,38 +123,38 @@ When you recreate your Spring Cloud instance in the virtual network, you'll also
 6.  Redeploy each of the apps.
     
     ```Bash
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name api-gateway \
         --no-wait \
         --artifact-path spring-petclinic-api-gateway/target/spring-petclinic-api-gateway-2.6.3.jar
     
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name admin-service \
         --no-wait \
         --artifact-path spring-petclinic-admin-server/target/spring-petclinic-admin-server-2.6.3.jar
     
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
         --no-wait \
         --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.3.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name visits-service \
         --no-wait \
         --artifact-path spring-petclinic-visits-service/target/spring-petclinic-visits-service-2.6.3.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name vets-service \
         --no-wait \

@@ -8,12 +8,12 @@ You can add public IP addresses to your Azure Stack Hub system at any time after
 
 At a high level, the process of adding a new public IP address block to Azure Stack Hub looks like this:
 
-:::image type="content" source="../media/Recommend-public-IP-96022b25.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/Recommend-public-IP-96022b25.png" alt-text="Diagram showing normalized relational tables.":::
 
 
 ## Obtain the address block from your provider
 
-You will need to do is to obtain the address block you want to add to Azure Stack Hub. Depending on where you obtain your address block from, consider what the lead time is and manage this against the rate at which you're consuming public IP addresses in Azure Stack Hub.
+You need to obtain the address block you want to add to Azure Stack Hub. Depending on where you obtain your address block from, consider what the lead time is and manage this against the rate at which you're consuming public IP addresses in Azure Stack Hub.
 
 Azure Stack Hub will accept any address block that you provide if it's a valid address block and doesn't overlap with an existing address range in Azure Stack Hub. Make sure you obtain a valid address block that's routable and non-overlapping with the external network to which Azure Stack Hub is connected. After you add the range to Azure Stack Hub, you can't remove it.
 

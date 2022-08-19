@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-powershell-drives-powershell.work-other-powershell-drives
+title: Work with other PowerShell drives in PowerShell
+metadata:
+  title: Work with other PowerShell drives in PowerShell
+  description: "Work with other PowerShell drives in PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-work-other-powershell-drives.md)]

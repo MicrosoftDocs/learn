@@ -25,7 +25,7 @@ administrators: a specific set of permissions, over a specific scope,
 for a specific period of time. Avoid assigning broader roles at broader
 scopes even if it initially seems more convenient to do so. By limiting
 roles and scopes, you limit what resources are at risk if the security
-principal is ever compromised. Azure AD RBAC supports over 65 [built-in roles](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference).
+principle is ever compromised. Azure AD RBAC supports over 65 [built-in roles](/azure/active-directory/roles/permissions-reference).
 There are Azure AD roles to manage directory objects like users, groups,
 and applications, and also to manage Microsoft 365 services like
 Exchange, SharePoint, and Intune.

@@ -31,7 +31,7 @@ Your data in an Azure Storage account is always replicated to help ensure durabi
 One example of a non-regional service is Azure Active Directory (Azure AD). In other words, Azure AD may store identity data globally, except for Azure AD deployments in:
 
 - The United States, where identity data is stored solely in the United States.
-- Europe, where Azure AD keeps most of the identity data within European datacenters except as noted in the article [Identity data storage for European customers in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu).
-- Australia and New Zealand, where identity data is stored in Australia except as noted in the article [Customer data storage for Australian and New Zealand customers in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-australia-newzealand).
+- Europe, where Azure AD keeps most of the identity data within European datacenters except as noted in the article [Identity data storage for European customers in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+- Australia and New Zealand, where identity data is stored in Australia except as noted in the article [Customer data storage for Australian and New Zealand customers in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-australia-newzealand).
 
 Customers can configure certain Azure services, tiers, or plans to store customer data only in a single region, with certain exceptions. These include Azure Backup, Azure Data Factory, Azure Site Recovery, Azure Stream Analytics, and locally redundant storage (LRS).

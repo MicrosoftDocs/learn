@@ -78,7 +78,7 @@ is shown below:
     quick fix for this recommendation. They can use the View remediation
     logic button to understand what changes will be made to the system.
 
-4.  Once they few comfortable with the changes, they start a change
+4.  Once they feel comfortable with the changes, they start a change
     management process to schedule the remediation.
 
 5.  The remediation is applied on the day that was scheduled.

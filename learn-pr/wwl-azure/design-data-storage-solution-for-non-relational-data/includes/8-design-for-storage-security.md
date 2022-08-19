@@ -1,6 +1,6 @@
 Azure Storage provides a layered security model. This model enables you to secure and control the level of access to your storage accounts. In this unit, we’ll cover some best practices for storage security. 
 
-:::image type="content" source="../media/storage-security.png" alt-text="Firewall policies, customer-managed keys, and endpoints.":::
+:::image type="content" source="../media/storage-security.png" alt-text="Diagram with firewall policies, customer-managed keys, and endpoints.":::
 
 
 ### Grant limited access to Azure Storage resources 
@@ -25,7 +25,7 @@ One of the most common ways is to use a [Shared Access Signature](/azure/storage
 
 Use [virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) to provide direct connection to your Azure storage. 
 
-:::image type="content" source="../media/storage-endpoints.png" alt-text="A virtual machine uses an endpoint to access a storage account.":::
+:::image type="content" source="../media/storage-endpoints.png" alt-text="Diagram showing a virtual machine using an endpoint to access a storage account.":::
 
 
 
@@ -45,7 +45,7 @@ A [private endpoint](/azure/storage/common/storage-private-endpoints) is a speci
 
  
 
-:::image type="content" source="../media/private-links.png" alt-text="A private endpoint uses a private link to storage accounts.":::
+:::image type="content" source="../media/private-links.png" alt-text="Diagram with private endpoint using a private link to storage accounts.":::
 
 
 

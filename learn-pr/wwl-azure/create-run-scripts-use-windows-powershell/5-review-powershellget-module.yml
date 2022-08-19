@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-run-scripts-use-windows-powershell.review-powershellget-module
+title: Review the PowerShellGet module in Windows PowerShell
+metadata:
+  title: Review the PowerShellGet module in Windows PowerShell
+  description: "Review the PowerShellGet module in Windows PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-review-powershellget-module.md)]
