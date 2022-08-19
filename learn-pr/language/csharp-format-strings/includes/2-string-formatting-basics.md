@@ -133,7 +133,7 @@ decimal measurement = 123456.78912m;
 Console.WriteLine($"Measurement: {measurement:N} units");
 ```
 
-If you are viewing this from the `en-US` culture, you will get the following output:
+If you're viewing this from the `en-US` culture, you'll get the following output:
 
 ```output
 Measurement: 123,456.79 units
@@ -148,7 +148,7 @@ decimal measurement = 123456.78912m;
 Console.WriteLine($"Measurement: {measurement:N4} units");
 ```
 
-If you are viewing this from the `en-US` culture, you will get the following output:
+If you're viewing this from the `en-US` culture, you'll get the following output:
 
 ```output
 Measurement: 123,456.7891 units
