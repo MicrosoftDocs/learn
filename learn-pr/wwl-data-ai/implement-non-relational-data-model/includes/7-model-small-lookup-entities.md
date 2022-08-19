@@ -17,13 +17,13 @@ With **id** as the selected partition key this query will now be cross-partition
 
 :::image type="content" source="../media/7-product-category-model.png" alt-text="Diagram that shows the cross-partition query for listing all product categories.":::
 
-In order to coerce this small amount of data back into a single partition, we can add entity discriminator property to our schema and use this as the partition key for this container. By assigning this property a constant value for all documents of this type in the container, we ensure that we now have a single partition query. In this case, we will call the property `type` and give a constant value of `category`. Our query would now look like: `SELECT * FROM c WHERE type = ”category”`.
+In order to coerce this small amount of data back into a single partition, we can add an entity discriminator property to our schema and use this as the partition key for this container. By assigning this property a constant value for all documents of this type in the container, we ensure that we now have a single partition query. In this case, we will call the property `type` and give a constant value of `category`. Our query would now look like: `SELECT * FROM c WHERE type = ”category”`.
 
 :::image type="content" source="../media/7-product-category-model-type.png" alt-text="Diagram that shows the product category modeled with the partition key as type and the value as category.":::
 
 ## Model product tags
 
-Next up is the `ProductTag` entity. This entity is nearly identical in function to `ProductCategory` entity we discussed in the previous section. Let's take the same approach here and model the document to contain id and name properties and create an entity discriminator property called `type`, in this case with a constant value of `tag`. Let's create a new container called `ProductTag` and make `type` the new partition key.
+Next up is the `ProductTag` entity. This entity is nearly identical in function to `ProductCategory` entity we discussed in the previous section. Let's take the same approach here and model the document to contain ID and name properties and create an entity discriminator property called `type`, in this case with a constant value of `tag`. Let's create a new container called `ProductTag` and make `type` the new partition key.
 
 :::image type="content" source="../media/7-product-tag-model.png" alt-text="Diagram that shows the modeled product tag container with the partition key as type and the value as tag.":::
 
