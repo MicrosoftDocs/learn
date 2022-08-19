@@ -1,6 +1,6 @@
-At the beginning of this module, we described the scenario of working for a marketing department of a financial services company.  To promote the company's newest investment products, we'll send thousands of personalized letters to our company's existing clients.  Our job is to write C# code that will merge personalized information about the customer.  The letter will contain information like their existing portfolio and will compare their current returns to projected returns if they were to invest in using our new products.
+At the beginning of this module, we described the scenario of working for a marketing department of a financial services company. To promote the company's newest investment products, we'll send thousands of personalized letters to our company's existing clients. Our job is to write C# code that will merge personalized information about the customer. The letter will contain information like their existing portfolio, and will compare their current returns to projected returns if they were to invest in using our new products.
 
-Our writers have decided on the following example marketing copy.  Here's the desired output (using fictitious customer account data).
+Our writers have decided on the following example marketing copy. Here's the desired output, using fictitious customer account data:
 
 ```output
 Dear Mr. Jones,
@@ -16,11 +16,11 @@ Magic Yield         12.75 %   ¤55,000,000.00
 Glorious Future     13.13 %   ¤63,000,000.00  
 ```
 
-Use your new found knowledge of string formatting to build an application that can merge and format the appropriate content given the example output above.  Pay particular attention to the white space and make sure you accurately represent this exact format using C#.
+Use your newfound knowledge of string formatting to build an application that can merge and format the appropriate content given the example output above. Pay particular attention to the white space, and make sure you accurately represent this exact format using C#.
 
 Here are the rules for the challenge.
 
-1. Use the .NET Editor to generate the message given the variables and code.  Replace the code comments with your own string formatting code.
+1. Use the .NET Editor to generate the message given the variables and code. Replace the code comments with your own string formatting code.
 
 ```csharp-interactive
 string customerName = "Mr. Jones";
@@ -48,6 +48,6 @@ Console.WriteLine(comparisonMessage);
 2.  You may not delete any of the existing code except for the comments.
 
 > [!NOTE]
-> Keep in mind that the `¤` character will likely be emitted in this .NET Editor environment rather than your locale's currency character.
+> Keep in mind that the `¤` character will likely be displayed in this .NET Editor environment rather than your locale's currency character.
 
 Good luck!
