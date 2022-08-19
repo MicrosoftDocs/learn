@@ -39,17 +39,17 @@ You can use the Express Generator tool to create all the components of an Expres
 
 1. Examine the contents of the Explorer window to see the files the generator has created.
 
-    :::image type="content" source="../media/3-express-generator-files.png" alt-text="Express generated files." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-express-generator-files-vsc-update.png" alt-text="Express generated files." loc-scope="vs-code":::
 
 ## Calculate the countdown
 
 You now have a functional webapp that Node.js can run. Let's modify its code to display the countdown:
 
 1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
-1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2019 10:00`):
+1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2022 10:00`):
 
     ```JavaScript
-    let launchTime = new Date("12/29/2019 10:00").getTime();
+    let launchTime = new Date("12/29/2022 10:00").getTime();
     ```
 
 1. Locate this line of code:

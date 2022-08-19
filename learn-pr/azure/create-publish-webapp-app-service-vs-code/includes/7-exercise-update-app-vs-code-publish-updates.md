@@ -65,9 +65,9 @@ Your changes are complete. Let's deploy the finished website to Azure:
 
 1. In Visual Studio Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
 1. Select the **countdownExpressApp** folder, and then select **Deploy**.
-1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
+1. When the deployment is complete, select **Browse Website**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
-    :::image type="content" source="../media/7-deployed-webapp.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
+    :::image type="content" source="../media/7-deployed-webapp-vsc-update.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
 
 ::: zone-end
 
@@ -158,8 +158,8 @@ Your changes are complete. Let's deploy the finished website to Azure:
 
 1. In Visual Studio Code, in the **Azure** Explorer, right-click the webapp you created, and then select **Deploy to Web App**.
 1. Select the **countdownFlaskApp** folder, and then select **Deploy**.
-1. When the deployment is complete, select **Browse Website**, and then select **Open Link**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
+1. When the deployment is complete, select **Browse Website**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
-    :::image type="content" source="../media/7-deployed-webapp.png" alt-text="Python website hosted in Azure." loc-scope="other":::
+    :::image type="content" source="../media/7-deployed-webapp-vsc-update.png" alt-text="Python website hosted in Azure." loc-scope="other":::
 
 ::: zone-end
