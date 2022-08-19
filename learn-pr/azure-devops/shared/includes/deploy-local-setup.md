@@ -62,7 +62,7 @@ To clone the *Space Game* web project to your computer:
 1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**) on [GitHub](https://github.com?azure-portal=true).
 1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot that shows how locate the URL and copy button from the GitHub repository.":::
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot that shows how to locate the URL and copy button from the GitHub repository.":::
 1. In Visual Studio Code, go to the terminal window.
 1. In the terminal, move to the directory where you want to work. Choose your home directory (`~`) or a different directory if you want.
 

@@ -82,7 +82,7 @@ To set up the work item:
 
 1. In the **Create a multistage pipeline** card, select the down arrow. Then, assign the work item to yourself.
 
-    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Screenshot of Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 

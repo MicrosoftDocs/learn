@@ -247,7 +247,7 @@ You'll see a more complete example later in this module.
 
 Mara adds _Staging_ to her drawing on the whiteboard.
 
-:::image type="content" source="../media/2-add-staging-stage.png" alt-text="A screenshot of a whiteboard showing the Build, Dev, Test, and Staging stages. The Staging stage deploys the build to Azure App Service.":::
+:::image type="content" source="../media/2-add-staging-stage.png" alt-text="Screenshot of a whiteboard showing the Build, Dev, Test, and Staging stages. The Staging stage deploys the build to Azure App Service.":::
 
 **Amita:** We use a scheduled trigger to promote changes from the _Dev_ stage to the _Test_ stage. But how will we promote changes from _Test_ to _Staging_? Does that promotion also have to happen on a schedule?
 
@@ -257,7 +257,7 @@ Mara adds _Staging_ to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from _Test_ to _Staging_ only when Amita approves it.
 
-:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="A screenshot of a whiteboard showing the Build, Dev, Test, and Staging stages. Changes move from Test to Staging only after approval.":::
+:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Screenshot of a whiteboard showing the Build, Dev, Test, and Staging stages. Changes move from Test to Staging only after approval.":::
 
 **Tim:** I could also imagine us using release approvals to promote from _Staging_ to _Production_ after management signs off. I can never predict how long that takes. After they sign off, I can approve the release and promote it to production manually. But how do release approvals work?
 
@@ -293,7 +293,7 @@ Let's review the Tailspin team's plan as they move toward next steps.
 
 Mara points to the whiteboard.
 
-:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="A screenshot of the final whiteboard showing the Build, Dev, Test, and Staging stages.":::
+:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Screenshot of the final whiteboard showing the Build, Dev, Test, and Staging stages.":::
 
 **Mara:** To summarize, our steps are to:
 
