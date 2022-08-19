@@ -5,7 +5,7 @@ Write Accelerator should be used for the volumes that contain the transaction lo
 When using Write Accelerator for Azure VM disks, these restrictions apply:
 
 - **The disk caching must be set to 'None' or 'Read Only'**. All other caching modes are not supported.
-- **Snapshots are not currently supported for Write Accelerator-enabled disks**. During backup, the Azure Backup service automatically excludes Write Accelerator-enabled disks attached to the VM.
+- **Azure Disk Backup does support backup of Write Accelerator-enabled disks. However, during restore the disk will be restored as a normal disk.** Write Accelerater cache can be enabled on the restored disk after mounting it to a VM.
 - **Only smaller I/O sizes (&lt;=512 KiB) are taking the accelerated path**. In workload situations where data is getting bulk loaded or where the transaction log buffers of the different DBMS are filled to a larger degree before getting persisted to the storage, chances are that the I/O written to disk is not taking the accelerated path.
 
 In addition, it is important to note that there are limits on the number of Azure Premium Storage VHDs per VM that can be supported by Write Accelerator. At the time of authoring, the limits are:
