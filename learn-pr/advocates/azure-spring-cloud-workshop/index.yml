@@ -5,7 +5,7 @@ metadata:
   description: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Cloud (ASC).
   author: judubois
   ms.author: judubois
-  ms.date: 03/03/2020
+  ms.date: 08/19/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=cloud_advocates
