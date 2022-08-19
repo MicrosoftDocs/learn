@@ -32,9 +32,9 @@ If you want to go through just this module, you need to set up a development env
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0?azure-portal=true)
 - [Git](https://git-scm.com/downloads?azure-portal=true)
 
-You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps. Here, to deploy to Azure resources that exist in your Azure subscription, you'll use Azure DevOps.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here, to deploy to Azure resources that exist in your Azure subscription, you'll use Azure DevOps.
 
-This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+Use this environment to complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
 

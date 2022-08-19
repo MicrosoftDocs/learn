@@ -1,6 +1,6 @@
 Your release pipeline still has two stages, but they're now different than before. The stages are _Build_ and _Dev_. Every change you push to GitHub triggers the _Build_ stage to run. The _Dev_ stage runs only when the change is in the _release_ branch. Here, you add the _Test_ stage to the pipeline.
 
-Recall that promoting the build from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning, the team decided to use a scheduled trigger. To set up the scheduled trigger:
+Recall that the team decided to use a scheduled trigger to promote the build from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning. To set up the scheduled trigger:
 
 > [!div class="checklist"]
 > * Define the schedule in your build configuration.
@@ -12,7 +12,7 @@ For learning purposes, here, you define the schedule but allow the build to go d
 
 Here, you modify your pipeline configuration to deploy the build to the _Test_ stage.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as follows:
 
     [!code-yml[](code/5-azure-pipelines.yml?highlight=8-14,106-128)]
 
