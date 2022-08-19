@@ -202,21 +202,19 @@ This command works for any Graph API, if you know the REST URI, method and optio
 
 If you get stuck executing or finding the right Microsoft Graph PowerShell command, use `Invoke-MgGraphCommand`.
 
-## Common parameters
+## Common query parameters
 
-|Parameter|Description|
-|:----|:----|
-|All|Return all results|
-|ConsistencyLevel|Eventual or Session consistency|
-|CountVariable|PS variable in which to return result count|
-|Filter|OData filter to apply to the request|
-|ExpandProperty|Expands a relationship property in a result|
-|PageSize|Override the API default page size|
-|Property|Project only the specified properties|
-|Search|Perform content / “smart” search|
-|Skip|Return results after skipping first N results|
-|Sort|Server-side sort of results on a property|
-|Top|Limit the result count to N items|
+Microsoft Graph PowerShell SDK supports optional query parameters that you can use to control the amount of data returned in an output. Support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints. Microsoft Graph PowerShell cmdlets support one or more of the following OData system query options, which are only supported in the **GET** operations.
+
+|Name|Description|Example|
+|--------|----|-----|
+| -Count |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
+| -Expand | Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members \| Select -ExpandProperty members`|
+| -Filter | Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
+| -OrderBy | Orders results|`Get-MgUser -OrderBy DisplayName`|
+|-Search | Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
+|-Select | Filters properties (columns)|`Get-MgUser \| Select DisplayName, Id`|
+| -Top | Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ### Advanced queries
 

@@ -7,3 +7,4 @@ We have also looked at a toolkit of cmdlets in the Microsoft Graph PowerShell mo
 ## References
 
 - [Overview of the Microsoft Authentication Library](/azure/active-directory/develop/msal-overview)
+- [OData V4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356)

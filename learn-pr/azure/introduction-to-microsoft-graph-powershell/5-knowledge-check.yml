@@ -10,7 +10,7 @@ metadata:
   ms.author: eunicewaweru
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 4
+durationInMinutes: 5
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -44,10 +44,10 @@ quiz:
       explanation: "Connect-MgGraph helps you sign in to your directory requesting the appropriate permissions."
     - content: "Run `Find-MgGraphCommand` to discover cmdlets associated with the resource name, for example, user."
       isCorrect: true
-      explanation: "Find-MgGraphCommand helps you find cmdlets when you pass a resource name. It will also help you discover permissions required for the particular cmdlets."
-    - content: ""
+      explanation: "Find-MgGraphCommand helps you find cmdlets when you pass a resource name. It will also help you discover permissions required for the particular domain."
+    - content: "Run `Find-MgGraphPermission` to discover the cmdlets associated with the particular domain "
       isCorrect: false
-      explanation: ""
+      explanation: " The Find-MgGraphPermission cmdlet helps find permissions and not cmdlets applicable for a certain domain, for example, user."
   - content: "For every feature that has an API in Microsoft Graph there should be an equivalent cmdlet in Microsoft Graph PowerShell. There are, however, instances where an API could be existing and the equivalent cmdlet is not yet available. Which cmdlet would be the most appropriate to use in such an instance?"
     choices:
     - content: "Invoke-MgGraphRequest"
