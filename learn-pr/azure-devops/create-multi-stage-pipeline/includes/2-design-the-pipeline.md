@@ -59,7 +59,7 @@ In our case, the _Space Game_ website's leaderboard feature reads high scores fr
 
 Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to show the _Dev_ stage.
 
-:::image type="content" source="../media/2-add-dev-stage.png" alt-text="Screenshot of a whiteboard illustrating build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
+:::image type="content" source="../media/2-add-dev-stage.png" alt-text="Screenshot of a whiteboard that illustrates build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
 
 **Andy:** You bring up an interesting point. We build the app each time we push a change to GitHub. Does that mean each build is promoted to the _Dev_ stage after it finishes?
 
