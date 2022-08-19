@@ -104,3 +104,7 @@ The following are best practices for network monitoring and available tools.
 Most security breaches occur when attackers gain access to an environment by stealing a user's identity. Discovering compromised identities is no easy task. Azure AD uses adaptive machine learning algorithms and heuristics to detect suspicious actions related to user accounts. Each detected suspicious action is stored in a record called risk detection. Risk detections are recorded in Azure AD security reports. For more information, read about the users at risk security report and the risky sign-ins security report. 
 
 **Monitor for suspicious actions related to your user accounts** - Monitor for [users at risk](/azure/active-directory/identity-protection/overview-identity-protection) and [risky sign-ins](/azure/active-directory/identity-protection/overview-identity-protection) by using Azure AD security reports.
+
+For more detailed guidance on unified SIEM and XDR capabilities, view the following interactive guide.
+
+[:::image type="content" source="../media/detect-respond-modern-attacks-unified-siem-xdr-capabilities.png" alt-text="Cover for an interactive guide that says Detect and respond to modern attacks with unified SIEM and XDR capabilities." border="true":::](https://mslearn.cloudguides.com/guides/Detect%20and%20respond%20to%20modern%20attacks%20with%20unified%20SIEM%20and%20XDR%20capabilities)
