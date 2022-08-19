@@ -71,7 +71,7 @@ Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to 
 
 ## What are conditions?
 
-In Azure Pipelines, a **use a condition to run** a task or job based on the state of the pipeline. You worked with conditions in previous modules.
+In Azure Pipelines, **use a condition to run** task or job based on the state of the pipeline. You worked with conditions in previous modules.
 
 Remember, some of the conditions that you can specify are:
 
