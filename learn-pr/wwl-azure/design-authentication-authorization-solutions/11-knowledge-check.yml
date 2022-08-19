@@ -46,10 +46,10 @@ quiz:
       explanation: "Incorrect. AD Connect is used to bring in on-premises accounts."
     - content: "Ask the developers to sign in with a social identification. For example, Google, LinkedIn, or Facebook account."
       isCorrect: false
-      explanation: "Incorrect. External social accounts are used for Business to Customer applications."
+      explanation: "Incorrect. External social accounts are used for business-to-customer applications."
     - content: "Invite the developers as guest users to their directory."
       isCorrect: true
-      explanation: "Correct. In Business-to-Business scenarios guest user accounts are created. You can then apply the appropriate permissions."
+      explanation: "Correct. In business-to-business scenarios guest user accounts are created. You can then apply the appropriate permissions."
   - content: "What solution would be best for the user sign-in attempts requirement?"
     choices:
     - content: "Create a user risk policy"

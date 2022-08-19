@@ -18,10 +18,10 @@ Azure AD B2C requires an Azure AD tenant. This tenant isn’t the same your orga
 
 With your Azure AD B2C tenant in place, you must register your app. You use user flows to manage things like sign-ins and sign ups. Your Azure AD B2C tenant lets you create multiple types of user flows.
 
-:::image type="content" source="../media/application-registration.png" alt-text="Diagram that shows how business to customer users are registered in the Azure AD tenant." border="false":::
+:::image type="content" source="../media/application-registration.png" alt-text="Diagram that shows how business-to-customer users are registered in the Azure AD tenant." border="false":::
 
 
-## Best practices for Business to Customer
+## Best practices for business-to-customer scenarios
 
 - **Configure user journeys by using policies**. A user journey is the path that you want people to take in your application to achieve their goal. For example, a user might want to make a new account, or update their profile. Azure AD B2C comes with preconfigured policies called [user flows](/azure/active-directory-b2c/user-flow-overview). You can reuse the same user flows across different applications. Reusing user flows creates a consistent user journey across all applications.
 

@@ -14,8 +14,8 @@ abstract: |
   In this module, you learn how to:
   - Design for identity and access management.
   - Design for Azure Active Directory.
-  - Design for Azure Active Directory business to business (B2B)
-  - Design for Azure Active Directory B2C (business to consumer).
+  - Design for Azure Active Directory business-to-business (B2B)
+  - Design for Azure Active Directory B2C (business-to-customer).
   - Design for conditional access.
   - Design for identity protection.
   - Design for access reviews.

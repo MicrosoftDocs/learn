@@ -1,10 +1,10 @@
-Every organization needs to work with external users. [Azure AD Business to Business (B2B)](/azure/active-directory/external-identities/what-is-b2b) is a feature of Azure AD that enables you to securely collaborate with external partners. Your partner users are invited as guest users. You remain in control of what they have access to, and for how long. 
+Every organization needs to work with external users. [Azure AD business-to-business (B2B)](/azure/active-directory/external-identities/what-is-b2b) is a feature of Azure AD that enables you to securely collaborate with external partners. Your partner users are invited as guest users. You remain in control of what they have access to, and for how long. 
 
 With Azure AD B2B, the partner uses their own identity management solution. Azure AD is not required. You don't need to manage external accounts or passwords. You don't need to sync accounts or manage account lifecycles. Guest users sign in to your apps and services with their own work, school, or social identities.
 
 With Azure AD B2B, external users can use their identities to collaborate with your organization. Their identities are managed by the partner themselves, or by another external identity provider on their behalf. 
 
-:::image type="content" source="../media/external-identities.png" alt-text="Diagram that shows how business to business users are invited to Azure Active Directory." border="false":::
+:::image type="content" source="../media/external-identities.png" alt-text="Diagram that shows how business-to-business users are invited to Azure Active Directory." border="false":::
 
 
 The following steps show how Azure AD B2B lets you collaborate with external partner users. The numbers in the diagram are explained after the diagram.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-authentication-authorization-solutions.design-for-azure-ad-b2c
-title: Design for Azure Active Directory B2C (business to customer)
+title: Design for Azure Active Directory B2C (business-to-customer)
 metadata:
-  title: Design for Azure Active Directory B2C (business to customer)
-  description: "Design for Azure Active Directory B2C (business to customer)"
+  title: Design for Azure Active Directory B2C (business-to-customer)
+  description: "Design for Azure Active Directory B2C (business-to-customer)"
   ms.date: 06/21/2022
   author: wwlpublish
   ms.author: cynthist
