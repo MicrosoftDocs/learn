@@ -48,7 +48,7 @@ quiz:
       explanation: '`$` is the correct directive!'
     - content: '@'
       isCorrect: false
-      explanation: '`@` is used to create a verbatim string literal, not perform string interpolation.'
+      explanation: '`@` is used to create a verbatim string literal, not to perform string interpolation.'
     - content: '%'
       isCorrect: false
       explanation: "`%` isn't a valid directive."
