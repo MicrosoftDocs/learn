@@ -1,4 +1,4 @@
-In this module, you'll configure a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config) tharvert's entirely managed and supported by Azure Spring Cloud, to be used by Spring Boot microservices.
+In this module, you'll configure a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config) that's entirely managed and supported by Azure Spring Cloud, to be used by Spring Boot microservices.
 
 This Spring Cloud Config Server will get its configuration data from a Git repository, where Spring Boot configuration files will be stored. Storing configuration files using this mechanism has the following advantages:
 
