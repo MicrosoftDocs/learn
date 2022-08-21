@@ -11,7 +11,7 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
     - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
     - For further analysis, it's useful to know which virtual machine agent is running on each machine.
  
-1. Which data in the `Heartbeat` table is relevant to your analysis and how do you want to transform and organize this data?
+1. Which data in the `Heartbeat` table is relevant to your analysis and how can you use KQL to extract, transform, and organize the data?
     
     This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
 
@@ -80,7 +80,9 @@ To identify recently active machines that stopped logging data, write a query th
     | project-reorder max_TimeGenerated,Computer,AgentType,OSType  // Reorganizes the order of columns in the result set
     ```
 
-    You can use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating these logs can help in analyzing the reason the machined stopped sending data.
+    > [!TIP]
+    > Use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating logs in this way can help in finding the root cause of the issue you are investigating.
+    
 
 ## List the agents and agent versions running on recently active machines
 
