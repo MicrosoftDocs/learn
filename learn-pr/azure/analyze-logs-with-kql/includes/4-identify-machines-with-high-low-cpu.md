@@ -1,51 +1,11 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise.
-
-    Heading: none
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
 To address performance issues, mitigate potential issues, and identify opportunities to operate more efficiently, you want to analyze the actual and used compute capacity in your IT environment. 
 TODO: add scenario image
 
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
+Here, you'll write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity and which machines are being underused.  
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+## Assess log data based on analysis goals
 
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-Here, you'll retrieve and transform data from the `Perf` table, using KQL queries, to understand which machines have reached or are nearing their total compute capacity and which machines are being underused.  
-
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
-## Decide on the information you need for your analysis and examine your log data
-
-Windows and Linux agents send performance counters to the `Perf` table in Azure Monitor. The data in the `Perf` table provides insight into the performance of hardware components, operating systems, and applications.
+Windows and Linux agents send performance counters to the `Perf` table in Azure Monitor related to the performance of hardware components, operating systems, and applications.
 
 
 1. What information will help you understand the compute usage of machines running in your IT environment?
