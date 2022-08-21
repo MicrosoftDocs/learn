@@ -11,8 +11,6 @@
 
 Recall that one of your log analysis goals is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data, so that you can investigate and ensure have full visibility of all active virtual machines.
 
-TODO: add scenario image
-
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
 
     Goal: State concisely what they'll implement here; that is, describe the end-state after completion
@@ -62,10 +60,13 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 
     You can see that the columns that hold relevant data are:
 
-    - `TimeGenerated` - Indicates when the virtual machine generated the log. 
-    - `Computer` - Unique identifier of the machine.
-    - `Category` - The agent type - `Azure Monitor Agent` or `Direct Agent`, which represent the Log Analytics agent. The Log Analytics agent for Windows is also called OMS. The Log Analytics Agent for Linux is also called MMS. Changing the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and will facilitate further analysis, such as filtering.
-    - `OSType` - The type of operating system running on the virtual machine. 
+    | Columnn name | Description | Use in analysis |
+    | --- | --- | --- | 
+    | `TimeGenerated` | Indicates when the virtual machine generated each log. | You will use this column twice in your analysis - first, to identify machines that have been active recently, and then to find the last log generated for each machine and check whether it was generated in the last few minutes. | 
+    | `Computer` |Unique identifier of the machine. |  | 
+    | `Category` |The agent type - `Azure Monitor Agent` or `Direct Agent`, which represent the Log Analytics agent. The Log Analytics agent for Windows is also called OMS. | Changing the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and will facilitate further analysis, such as filtering. | 
+    | `OSType` | The type of operating system running on the virtual machine. | | 
+
 ## Identify recently active machines that have stopped logging data
 
 To identify recently active machines that have stopped logging data, write a query that lists the agents that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
