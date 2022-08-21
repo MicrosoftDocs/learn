@@ -7,13 +7,12 @@ Here, you'll write KQL queries to retrieve and transform data from the `Perf` ta
 
 Windows and Linux agents send performance counters to the `Perf` table in Azure Monitor related to the performance of hardware components, operating systems, and applications.
 
-
 1. What information will help you understand the compute usage of machines running in your IT environment?
 
     - Central processing unit (CPU) usage.
     - Information about CPU usage of machines at peak and quiet times.
  
-1. Which data in the `Perf` table is relevant to your analysis and how do you want to transform and organize this data?
+1. Which data in the `Perf` table is relevant to your analysis and how can you use KQL to extract, transform, and organize the data?
 
     - The `ObjectName` column holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance.
     - The `CounterName` column holds the names of all of the performance counters in the table.

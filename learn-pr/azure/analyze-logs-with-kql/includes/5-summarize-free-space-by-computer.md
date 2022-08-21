@@ -44,7 +44,7 @@ Here, you'll retrieve and transform data from the `Perf` table, using KQL querie
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## Decide on the information you need for your analysis and examine your log data
+## Assess log data based on analysis goals
 
 As we've seen the previous exercise, the `Perf` table provides information about the performance of hardware components, operating systems, and applications.
 
@@ -54,21 +54,13 @@ As we've seen the previous exercise, the `Perf` table provides information about
     - Total space used.
     - Percentage of space used.
  
-1. Which data in the `Perf` table is relevant to your analysis and how do you want to transform and organize this data?
+1. Which data in the `Perf` table is relevant to your analysis and how can you use KQL to extract, transform, and organize the data?
 
   - The `CounterName` column holds the names of all of the performance counters in the table. 
       
-    Of the counters in the `CounterName` column, `% Used Space` and `Free Megabytes` are the counters relevant to your analysis.
-
-## Identify machines with high and low CPU usage
-
 ## Summarize free space statistics by computer
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
 
-The Perf table with free disk space AND %
+1. 
 
 ```kusto
 Perf
