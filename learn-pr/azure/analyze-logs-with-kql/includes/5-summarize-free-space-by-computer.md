@@ -54,7 +54,7 @@ As we've seen the previous exercise, the `Perf` table provides information about
     - Total space used.
     - Percentage of space used.
  
-1. Which data in the `Perf` table is relevant to your analysis and how can you use KQL to extract, transform, and organize the data?
+1. Which data in the `Perf` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
 
   - The `CounterName` column holds the names of all of the performance counters in the table. 
       
