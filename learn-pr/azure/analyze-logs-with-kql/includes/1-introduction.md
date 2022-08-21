@@ -30,9 +30,9 @@ TODO: add a visual element
  -->
 ## Example scenario
 
-You're a data scientist at a national retail chain that uses Azure Monitor to monitor its computers. 
+You're a data scientist at a retail chain that uses Azure Monitor to monitor its computers. 
 
-The chain is expanding and, with the growing number of transactions at and between stores, the company has experienced some computer performance issues.
+The chain is expanding and, with the growing number of transactions at and between stores, the company has experienced some computer performance issues. Your IT team has noticed recurring issues related to virtual machines with high CPU usage and insufficient free space.
 
 You want to identify current issues and mitigate future problems with the computers running in the chain's stores.
 

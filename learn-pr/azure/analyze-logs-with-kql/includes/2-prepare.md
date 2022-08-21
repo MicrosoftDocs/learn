@@ -43,9 +43,9 @@ The goal of the project is to translate log data into information that helps you
 
 The key tasks you'll need to perform are:
 
-1. Define your questions.
+1. Set the scope of your analysis. Which questions do you want to answer and which data do you need to answer these questions?
 1. Find the tables and columns that hold the log data relevant to your analysis.
-1. Write KQL queries. You'll start with a simple two or three line query and iterate, gradually processing and presenting the data clearly.
+1. Write KQL queries to extract the data you need from your logs. 
 
 The following diagram depicts the approach to log analysis you'll be following throughout this project:
 
@@ -53,68 +53,26 @@ The following diagram depicts the approach to log analysis you'll be following t
 
 ## Set analysis goals
 
+Recall that your IT team has noticed recurring issues related to virtual machines with high CPU usage and insufficient free space. 
+
+You also want to ensure that you're getting data about all active virtual machines in your network. You need to be able to identify machines that stop sending data, so that you can investigate and ensure have full visibility of the status of your virtual machines.
+
+Therefore, for your analysis, you will need data about:
+
+- Virtual machines that stop sending data. 
+- CPU usage of virtual machines.
+- Virtual machine free space statistics.
+
 ## Assess logs
 
+Which tables hold data that's relevant to your analysis goals?
+
+| Monitoring data | Log table |
+| --- | --- |
+|  Virtual machines that stop sending data | The [Heartbeat](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat) table collects virtual machine health data from each virtual machine at one-minute intervals. |
+| CPU usage of virtual machines | The [Perf](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf) table collects data about the performance of hardware components, operating systems, and applications. |
+| Virtual machine free space statistics | The [Perf](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf) table. |
 ## Write queries
 
-<!-- 3. Setup -------------------------------------------------------------------------------------
+In the following units, you'll write queries to extract and transform data based on your analysis goals. 
 
-    Goal: Guide the learner though any needed setup such as required accounts or local software installations.
-
-    Structure:
-        1. H2 of "Setup"
-        2. 1 paragraph of text giving a conceptual overview of the needed setup
-        3. One H3 per setup item explaining the need and giving instructions.
-            - Use "Create <service> account" as the H3 for account creation.
-            - Use "Install <product>" as the H3 for software installation.
-            - For setup items beyond accounts and software, use an H3 that follows the "<verb> <item>" pattern.
-
-    Example:
-        "To complete the project, you'll need a Twitter account, an Azure account, and a local installation of Visual Studio Code.
-
-        ### Create Twitter account
-            Your Logic App needs to pull new tweets from Twitter using the Twitter connector. Under the hood, the Twitter connector uses the Twitter API. The Twitter API requires authentication via a username and password, which means that you'll need a Twitter account.
-            1. Go to <link> and create an account.
-            1. Record your username and password, you'll need it later.
-
-        ...
-
-        ### Install Visual Studio Code
-            You'll use Visual Studio Code to create your Logic App. All your work will be done directly in VS Code: connecting to your Azure account, selecting your Azure subscription, and building your app. This section guides you through the installation and setup of VS Code on your local machine.
-            1. Go to <link> and follow the installation steps for your platform.
-            1. Go to <link> and follow the steps to connect to your Azure account from VS Code.
-            1. Go to <link> and follow the steps to select your Azure subscription."
-
-    Note: The "Setup" section is optional. If the project doesn't require any setup, omit this entire section.
-    In that case, also remove the "Project overview" H2 (while leaving the content of that H2) to avoid a page
-    containing a single H2.
--->
-
-<!--
-- Characterize your inquiry. In this step, you'll:
-    - Clearly define your questions. What type of insights do you want to gain from your inquiry?
-    - Assess what data you need to have to answer these questions. What type of data can help you answer your question?
-- Assess your log data. In this step, you'll:
-    - Examine the raw data you have in your logs. Which tables hold the data you're looking for? Is the data in one table sufficient to answer your question or do you need additional information from other tables?
-    - Identify data that is relevant to your inquiry. Do you need all the data in the table, or will looking at specific fields or columns help you focus and gain insights? Which resources are within the scope of your inquiry? Do you need to look at data from all resources that send logs to the table, or just a specific subset of these resources?
-- Use KQL to extract and transform log data to address your questions. In this step, you'll write queries to:
-    - Extract the relevant data.
-    - Transform data by converting units of measure, changing the way you present and label data, and performing other calculations.
--->
-
-<!--
-## Setup
-Strong lead sentence stating the categories of what's needed: accounts, software, etc.
-Remainder of paragraph if needed.
-### Create (service) account (repeat as needed)
-Strong lead sentence stating the required account.
-Remainder of paragraph explaining why this is needed and what it will be used for.
-Inline instructions or link to setup instructions.
-### Install (product) (repeat as needed)
-Strong lead sentence stating the product needing installation.
-Remainder of paragraph explaining why this is needed and what it will be used for.
-Inline instructions or link to setup instructions.
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
