@@ -2,7 +2,7 @@ Your first log analysis goal is to ensure you're getting data about all active v
 
 Here, you'll run KQL queries to retrieve and transform data from the `heartbeat` table to obtain insights about the status of machines in your environment.  
 
-## Set analysis goals and assess log data
+## Assess log data based on analysis goals
 
 Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
 
@@ -19,12 +19,12 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 
     You can see that the columns that hold relevant data are:
 
-    | Column name | Description | Use in analysis |
+    | Column name | Description | Analysis goal |
     | --- | --- | --- | 
     | `TimeGenerated` | Indicates when the virtual machine generated each log. | You'll use this column twice in your analysis to: <ul><li>Identify machines that have been active recently (`where TimeGenerated >ago(48h)`).</li><li>Find the last log generated for each machine and check whether it was generated in the last few minutes (`max(TimeGenerated)`).</li></ul> | 
-    | `Computer` |Unique identifier of the machine. |  | 
+    | `Computer` |Unique identifier of the machine. | Summarize results by machine. | 
     | `Category` |The agent type - `Azure Monitor Agent` or `Direct Agent`, which represent the Log Analytics agent. The Log Analytics agent for Windows is also called OMS. | Change the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines to simplify the results and facilitate further analysis, such as filtering. | 
-    | `OSType` | The type of operating system running on the virtual machine. | | 
+    | `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. | 
 
 ## Identify recently active machines that have stopped logging data
 
