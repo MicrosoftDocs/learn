@@ -9,6 +9,9 @@
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
 You want to gain an understanding of the active machines in your environment at a given time and identify machines with potential problems.
+
+Recall that one of your log analysis goals is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data, so that you can investigate and ensure have full visibility of all active virtual machines.
+
 TODO: add scenario image
 
 <!-- 2. Task performed in the exercise ---------------------------------------------------------------------
@@ -43,25 +46,30 @@ Here, you'll run KQL queries to retrieve and transform data from the `heartbeat`
               3. Select the ShoeTracker logic app.
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
-## Decide on the information you need for your analysis and examine your log data
+## Set analysis goals and assess log data
 
-Virtual machine agents monitor activities and operating system processes inside of a virtual machine. Azure Monitor Agent is the agent Azure Monitor uses to monitor virtual machines. However, some of the machines in your environment use Log Analytics Agent, which is a legacy agent that Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
+Azure Monitor uses Azure Monitor Agent to monitor virtual machines. Azure Monitor Agent runs on the virtual machine and collects data about activities and operating system processes inside of the machine. However, some of the machines in your environment use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
 
+1. What information do you need to determine which machines have stopped sending data?
 
-1. What information do you need to get a good understanding of the machines running in your IT environment and the status of their health?
-
-    - All machines that have recently logged data.
-    - Machines that have recently logged data, but have stopped logging data.
-    - What version of which operating system is running on each machine.
-    - Which virtual machine agent is running on each machine.
+    - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
+    - For further analysis, it's useful to know which virtual machine agent is running on each machine.
  
 1. Which data in the `Heartbeat` table is relevant to your analysis and how do you want to transform and organize this data?
+    
+    This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
 
-    - To identify potential problems with your virtual machines, you want to identify agents that have been active in the past 48 hours, but haven't logged data in the last five minutes at the expected interval. 
+    :::image type="content" source="../media/kql-log-analytics-heartbeat-table.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted. ":::
 
+    You can see that the columns that hold relevant data are:
+
+    - `TimeGenerated` - Indicates when the virtual machine generated the log. 
+    - `Computer` - Unique identifier of the machine.
+    - `Category` - The agent type - `Azure Monitor Agent` or `Direct Agent`, which represent the Log Analytics agent. The Log Analytics agent for Windows is also called OMS. The Log Analytics Agent for Linux is also called MMS. 
+    - `OSType` - The type of operating system running on the virtual machine. 
 ## Identify recently active machines that have stopped logging data
 
-Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute. To identify potential problems with your virtual machines, you decide to look at agents that have been active in the past 48 hours, but haven't logged data in the last five minutes. 
+To identify recently active machines that have stopped logging data, write a query that lists the agents that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
 
 1. Retrieve all logs from the past 48 hours:
 
@@ -100,7 +108,7 @@ Azure Monitor Agent and Log Analytics Agent log information about virtual machin
 
     For instance, you decide to organize the logs by time generated - from the oldest to the newest - to get a sense for which computers haven't logged data the longest. 
 
-    The `Direct Agent` value in the AgentType column tells you that the Log Analytics Agent is running on the machine. The Log Analytics Agent for Windows is also called OMS. The Log Analytics Agent for Linux is also call MMS. Renaming the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and further analysis, such as filtering.
+    The `Direct Agent` value in the AgentType column tells you that the Log Analytics Agent is running on the machine. The Log Analytics Agent for Windows is also called OMS. The Log Analytics Agent for Linux is also call MMS. Renaming the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and facilitates further analysis, such as filtering.
 
     ```kusto
     Heartbeat // The table you’re querying
