@@ -21,7 +21,7 @@ TODO: add scenario image
 
     Optional: a video that shows the end-state
 -->
-Here, you'll run KQL queries to retrieve and transform data from the `heartbeat` table, providing clear insights into the status of machines in your environment.  
+Here, you'll run KQL queries to retrieve and transform data from the `heartbeat` table to obtain insights about the status of machines in your environment.  
 
 <!-- 3. Chunked steps -------------------------------------------------------------------------------------
 
@@ -115,7 +115,7 @@ Azure Monitor Agent and Log Analytics Agent log information about virtual machin
 
     You can use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating these logs can help in analyzing the reason the machined stopped sending data.
 
-## List the version numbers of the agents running on recently active machines
+## List the agents and agent versions running on recently active machines
 
 Understanding which agent versions are running on your machines can be useful in analyzing the root cause of problems and helps you decide which machines you need to update to a new agent version.
 
@@ -188,7 +188,7 @@ Understanding which agent versions are running on your machines can be useful in
 1. <!-- Step 1 (if multiple steps are needed) -->
 1. <!-- Step 2 (if multiple steps are needed) -->
 1. <!-- Step n (if multiple steps are needed) -->
-
+Optional "exercise-solution" video
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

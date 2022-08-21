@@ -67,12 +67,12 @@ Therefore, for your analysis, you will need data about:
 
 Which tables hold data that's relevant to your analysis goals?
 
-| Monitoring data | Log table |
+| Analysis goal | Log table with relevant data |
 | --- | --- |
-|  Virtual machines that stop sending data | The [Heartbeat](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat) table collects virtual machine health data from each virtual machine at one-minute intervals. |
-| CPU usage of virtual machines | The [Perf](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf) table collects data about the performance of hardware components, operating systems, and applications. |
-| Virtual machine free space statistics | The [Perf](https://docs.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf) table. |
+|  Virtual machines that stop sending data | The [Heartbeat](/azure/azure-monitor/reference/tables/heartbeat) table collects virtual machine health data from each virtual machine at one-minute intervals. |
+| CPU usage of virtual machines | The [Perf](/azure/azure-monitor/reference/tables/perf) table collects data about the performance of hardware components, operating systems, and applications. |
+| Virtual machine free space statistics | The [Perf](/azure/azure-monitor/reference/tables/perf) table. |
 ## Write queries
 
-In the following units, you'll write queries to extract and transform data based on your analysis goals. 
+In the following units, you'll write queries to extract and transform data based on the analysis goals above. 
 
