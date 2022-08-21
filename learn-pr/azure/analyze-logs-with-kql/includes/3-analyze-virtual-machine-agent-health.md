@@ -64,7 +64,7 @@ Azure Monitor uses Azure Monitor Agent to monitor virtual machines. Azure Monito
 
     - `TimeGenerated` - Indicates when the virtual machine generated the log. 
     - `Computer` - Unique identifier of the machine.
-    - `Category` - The agent type - `Azure Monitor Agent` or `Direct Agent`, which represent the Log Analytics agent. The Log Analytics agent for Windows is also called OMS. The Log Analytics Agent for Linux is also called MMS. 
+    - `Category` - The agent type - `Azure Monitor Agent` or `Direct Agent`, which represent the Log Analytics agent. The Log Analytics agent for Windows is also called OMS. The Log Analytics Agent for Linux is also called MMS. Changing the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and will facilitate further analysis, such as filtering.
     - `OSType` - The type of operating system running on the virtual machine. 
 ## Identify recently active machines that have stopped logging data
 
@@ -105,7 +105,7 @@ To identify recently active machines that have stopped logging data, write a que
 
 1. Manipulate the query results to present the information more clearly. 
 
-    For instance, you decide to organize the logs by time generated - from the oldest to the newest - to get a sense for which computers haven't logged data the longest. 
+    For instance, you decide to organize the logs by time generated - from the oldest to the newest - to see which computers have gone the longest time without logging data. 
 
     The `Direct Agent` value in the AgentType column tells you that the Log Analytics Agent is running on the machine. The Log Analytics Agent for Windows is also called OMS. The Log Analytics Agent for Linux is also call MMS. Renaming the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and facilitates further analysis, such as filtering.
 
