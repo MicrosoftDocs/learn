@@ -1,48 +1,7 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
+Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data, so that you can investigate and ensure you have full visibility of all active virtual machines.
 
-    Goal: Describe the part of the scenario covered in this exercise.
-
-    Heading: none
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-
-Recall that one of your log analysis goals is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data, so that you can investigate and ensure have full visibility of all active virtual machines.
-
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
 Here, you'll run KQL queries to retrieve and transform data from the `heartbeat` table to obtain insights about the status of machines in your environment.  
 
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
 ## Set analysis goals and assess log data
 
 Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
@@ -56,7 +15,7 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
     
     This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
 
-    :::image type="content" source="../media/kql-log-analytics-heartbeat-table.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted. ":::
+    :::image type="content" source="../media/kql-log-analytics-heartbeat-table.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table.png":::
 
     You can see that the columns that hold relevant data are:
 
