@@ -1,4 +1,4 @@
-Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data, so that you can investigate and ensure you have full visibility of all active virtual machines.
+Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data to ensure you have full visibility of all active virtual machines.
 
 Here, you'll run KQL queries to retrieve and transform data from the `heartbeat` table to obtain insights about the status of machines in your environment.  
 
