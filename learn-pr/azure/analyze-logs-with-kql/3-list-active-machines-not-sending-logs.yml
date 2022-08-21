@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.resources.analyze-virtual-machine-agent-health
-title: Exercise - Analyze virtual machine agent health
+title: Exercise - List recently active virtual machines that stopped sending logs
 metadata:
   unitType: exercise
   title: Exercise - Analyze virtual machine agent health

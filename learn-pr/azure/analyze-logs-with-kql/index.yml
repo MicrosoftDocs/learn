@@ -40,7 +40,7 @@ subjects:
 units:
 - learn.resources.introduction
 - learn.resources.prepare
-- learn.resources.analyze-virtual-machine-agent-health
+- learn.resources.list-active-machines-not-sending-logs
 - learn.resources.identify-machines-with-high-low-cpu
 - learn.resources.summarize-free-space-by-computer
 - learn.resources.knowledge-check
