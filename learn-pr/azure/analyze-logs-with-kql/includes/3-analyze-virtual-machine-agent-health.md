@@ -8,7 +8,6 @@
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-You want to gain an understanding of the active machines in your environment at a given time and identify machines with potential problems.
 
 Recall that one of your log analysis goals is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data, so that you can investigate and ensure have full visibility of all active virtual machines.
 
