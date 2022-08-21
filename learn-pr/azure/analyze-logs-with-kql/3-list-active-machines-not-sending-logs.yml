@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.resources.analyze-virtual-machine-agent-health
+uid: learn.resources.list-active-machines-not-sending-logs
 title: Exercise - List recently active virtual machines that stopped sending logs
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-analyze-virtual-machine-agent-health.md)]
+  [!include[](includes/3-list-active-machines-not-sending-logs.md)]
