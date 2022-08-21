@@ -47,7 +47,7 @@ Here, you'll run KQL queries to retrieve and transform data from the `heartbeat`
 -->
 ## Set analysis goals and assess log data
 
-Azure Monitor uses Azure Monitor Agent to monitor virtual machines. Azure Monitor Agent runs on the virtual machine and collects data about activities and operating system processes inside of the machine. However, some of the machines in your environment use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
+Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
 
 1. What information do you need to determine which machines have stopped sending data?
 
