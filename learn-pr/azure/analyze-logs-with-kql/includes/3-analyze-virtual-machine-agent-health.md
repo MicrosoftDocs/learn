@@ -19,7 +19,7 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 
     You can see that the columns that hold relevant data are:
 
-    | Columnn name | Description | Use in analysis |
+    | Column name | Description | Use in analysis |
     | --- | --- | --- | 
     | `TimeGenerated` | Indicates when the virtual machine generated each log. | You'll use this column twice in your analysis to: <ul><li>Identify machines that have been active recently (`where TimeGenerated >ago(48h)`).</li><li>Find the last log generated for each machine and check whether it was generated in the last few minutes (`max(TimeGenerated)`).</li></ul> | 
     | `Computer` |Unique identifier of the machine. |  | 
