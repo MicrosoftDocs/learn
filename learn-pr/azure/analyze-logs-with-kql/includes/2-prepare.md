@@ -74,5 +74,5 @@ Which tables hold data that's relevant to your analysis goals?
 | Virtual machine free space statistics | The [Perf](/azure/azure-monitor/reference/tables/perf) table. |
 ## Write queries
 
-In the following units, you'll write KQL queries to extract and transform data based on the analysis goals above. 
+In the following units, you'll write KQL queries to extract and transform data based on your analysis goals. 
 
