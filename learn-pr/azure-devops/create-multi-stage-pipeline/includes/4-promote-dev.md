@@ -38,7 +38,7 @@ Here, you modify your pipeline configuration to promote the build to the _Dev_ s
 
     This configuration resembles the one that you built in the previous module. There, you and the team built a proof of concept for continuous deployment. But note these differences, which are highlighted in the preceding code example:
 
-    * This configuration defines variables at the top of the file. The variables are used throughout the pipeline. They define which configuration to build (`Release`). They also define the name of your release branch (`release`).
+    * This configuration defines variables at the beginning of the file. The variables are used throughout the pipeline. They define which configuration to build (`Release`). They also define the name of your release branch (`release`).
     * The **Deploy** stage from the proof of concept is now named **Dev**.
     * The **Dev** stage uses a condition that directs the system to run the stage only when the previous stage succeeds and the current branch is `release`. This setup ensures that release features are deployed only to the _Dev_ environment.
     * The deployment step uses the `WebAppNameDev` variable to deploy to the App Service instance that's associated with the _Dev_ environment.
@@ -63,7 +63,7 @@ Here, you modify your pipeline configuration to promote the build to the _Dev_ s
     :::image type="content" source="../media/4-pipeline-dev-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing the completed stages.":::
 
     You see that the deployment finished successfully.
-1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Dev_ environment.
+1. From a web browser, go to the URL that's associated with the App Service instance for your _Dev_ environment.
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the **App Service details** page.
 
