@@ -26,9 +26,9 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
     | `Category` |The agent type - `Azure Monitor Agent` or `Direct Agent`, which represent the Log Analytics agent. The Log Analytics agent for Windows is also called OMS. | Identify the agent virtual running on the machine. Change the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines to simplify the results and facilitate further analysis, such as filtering. | <ul><li>Rename the column `AgentType` for clearer presentation (`AgentType=Category`)</li><li> Change the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines to simplify the results and facilitate further analysis, such as filtering (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)` and `AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType`).|
     | `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. | 
 
-## Identify recently active machines that have stopped logging data
+## Identify recently active machines that stopped logging data
 
-To identify recently active machines that have stopped logging data, write a query that lists the agents that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
+To identify recently active machines that stopped logging data, write a query that lists the agents that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
 
 1. Retrieve all logs from the past 48 hours:
 
