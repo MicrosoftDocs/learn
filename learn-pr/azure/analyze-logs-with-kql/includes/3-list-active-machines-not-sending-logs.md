@@ -19,7 +19,7 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 
     You can see that the columns that hold relevant data are:
 
-    | Column name | Description | Analysis goal | Required KQL operations |
+    | Column | Description | Analysis goal | Related KQL operations |
     | --- | --- | --- | --- |
     | `TimeGenerated` | Indicates when the virtual machine generated each log. | <ul><li>Identify recently active machines.</li><li>Find the last log generated for each machine and check whether it was generated in the last few minutes.</li></ul> | <ul><li>`where TimeGenerated >ago(48h)`</li><li>`max(TimeGenerated)`</li><li>`max_TimeGenerated < ago(5m)`</li></ul> For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator), [ago()](/azure/data-explorer/kusto/query/agofunction), and [max() (aggregation function)](/azure/data-explorer/kusto/query/max-aggfunction). |
     | `Computer` |Unique identifier of the machine. | Summarize results by machine. |  <ul><li>`summarize`</li></ul> For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator). | 
