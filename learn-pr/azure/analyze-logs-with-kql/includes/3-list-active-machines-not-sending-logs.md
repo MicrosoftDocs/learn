@@ -11,7 +11,7 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
     - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
     - For further analysis, it's useful to know which virtual machine agent is running on each machine.
  
-1. Which data in the `Heartbeat` table is relevant to your analysis and how can you use KQL to extract, transform, and organize the data?
+1. Which data in the `Heartbeat` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
     
     This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
 
@@ -83,82 +83,3 @@ To identify recently active machines that stopped logging data, write a query th
     > [!TIP]
     > Use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating logs in this way can help in finding the root cause of the issue you are investigating.
     
-
-## List the agents and agent versions running on recently active machines
-
-Understanding which agent versions are running on your machines can be useful in analyzing the root cause of problems and helps you decide which machines you need to update to a new agent version.
-
-1. Retrieve all logs from the past 10 minutes: 
-
-    ```kusto    
-    Heartbeat // The table you’re querying
-    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
-    ```
-
-1. Rename the `Category` column name and `Direct Agent` values:
-    
-    ```kusto    
-    Heartbeat // The table you’re querying
-    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
-    | project-rename AgentType=Category // Changes the name of the "Category" column to "AgentType"
-    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType) // Changes the AgentType value from "Direct Agent" to "MMA" for Windows machines
-    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
-    ```
-
-    The result set of this query likely includes numerous logs for each active machine.
-    
-1. Find unique combinations of agent type, agent version, and operating system type, and list all computers running each combination of agent type and agent version: 
-
-    ```kusto    
-    Heartbeat // The table you’re querying
-    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
-    | project-rename AgentType=Category // Changes the name of the "Category" column to "AgentType"
-    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType) // Changes the AgentType value from "Direct Agent" to "MMA" for Windows machines
-    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
-    | summarize ComputersList=make_set(Computer) by AgentVersion=Version, AgentType, OSType // Summarizes the result set by unique combination of agent type, agent version, and operating system, and lists the set of all machines running the specific agent version
-    ```
-
-    You now have the data you're looking for: a list of unique combinations of agent type and agent version and the set of all recently active machines that are running a specific version of each agent. 
-
-1. Transform the query results to present the information more clearly.
-    
-    For instance, sort the results by agent name:  
-
-    ```kusto    
-    Heartbeat // The table you’re querying
-    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
-    | project-rename AgentType=Category // Changes the name of the "Category" column to "AgentType"
-    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType) // Changes the AgentType value from "Direct Agent" to "MMA" for Windows machines
-    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
-    | summarize ComputersList=make_set(Computer) by AgentVersion=Version, AgentType, OSType // Summarizes the result set by unique combination of agent type, agent version, and operating system, and lists the set of all machines running the specific agent version
-    | order by AgentType desc // Sorts results by agent name in descending alphabetical order
-    ```
-
-<!-- 4. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
-
-    Structure:
-        1. H2 of "Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
