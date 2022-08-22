@@ -1,101 +1,117 @@
-It could take years to master all that Visual Studio has to offer, but here's a quick review of some highlights you might find useful.
+# Advanced Visual Studio features
+
+It could take years to master all that Visual Studio has to offer. Here's are some highlights you might find useful.
 
 ## Themes
 
-The Visual Studio IDE can switch between light themes, dark themes, and lots of variations in between. Let's try switching to a dark theme:
+The Visual Studio IDE has light themes and dark themes with lots of variation between. Try switching to a dark theme:
 
-1. On the menu bar, select **Tools** > **Options**.
+1. Click **Tools**, hover over **Theme** and select **Dark** to apply the *Dark theme*.
 
-1. On the **Environment** > **General** options page, change the **Color theme** selection to **Dark**, and then select **OK**.
+    ![Theme](../media/theme.png)
 
-Like it? If not, try some others! 
+    Visual Studio with *Dark theme*:
+
+    ![Dark theme](../media/dark-theme.png)
+
+Feel free to choose your preferred theme.
 
 ## Refactoring
 
-Visual Studio has powerful refactoring tools that let you apply changes to your source code in an intelligent way. For example, you can highlight a piece of code and then use the refactoring tool to extract it and turn it into a method. The refactoring tool is also great for renaming variables.
+Visual Studio has powerful refactoring tools that apply changes to your source code in intelligent ways. For example, you can highlight a piece of code, use the refactoring tool to extract it, and turn it into a method. The tool is also great for re-naming variables.
 
-Try it out on the project you created in the previous unit.
+Try it out in your project:
 
-1. Open the **MainPage.xaml.cs** file by selecting it in Solution Explorer.
+1. Open the **MainPage.xaml.cs** file by selecting it in the **Solution Explorer**.
 
-2. Hover over the method called `Hello()` in `MainPage()`.
+    ![Open code](../media/open-code.png)
 
-3. Right-click and select **Rename**.
+2. Hover over the method called `Hello()` nested inside of the `MainPage()` method. Right click the method and select **Rename**.
 
-4. With the **Rename** window visible, type a new name and select **Apply**. Notice how the name changes everywhere it occurs.
+    ![Rename method](../media/rename-method.png)
 
-![Renaming a method.](../media/advanced1.png)
+3. Type a new name and select **Apply**. Notice that the name changes everywhere it occurs.
+
+    ![Apply rename](../media/apply-rename.png)
 
 ## Code snippets
 
-Code snippets are predefined pieces of code that Visual Studio can add to your project. Once you get to know them, they can save you a lot of typing.
+Code snippets are pre-defined pieces of code that Visual Studio can add into your project. They save you a lot of typing once you've gotten familiar with them.
 
-Let's use a snippet to quickly add a `do/while` loop to our project.
+Use a snippet to quickly insert a `do/while` loop:
 
-1. Open the **MainPage.xaml.cs** file by selecting it in Solution Explorer.
+1. Open the **MainPage.xaml.cs** file by selecting it in *Solution Explorer*.
+
+    ![Open code](../media/open-code.png)
 
 2. Add a new line in the `MainPage()` method.
 
-3. Select Ctrl+K and then X to open the **Insert Snippet** window.
+3. Hold *Ctrl*, press *K*, and then press *X* to open the **Insert Snippet** window.
 
-4. Select **Visual C#** and then select **do** from the list.
- 
-![Using a code snippet.](../media/advanced2.png)
+    ![Insert snippet](../media/insert-snippet.png)
 
-5. Now you can enter any missing information. For example, the **do** loop requires a condition. If it's true, the loop will continue.
+4. Click **Visual C#** and select **do** from the list. Your `MainPage()` method should look like this:
+
+    ![Code snippet](../media/code-snippet.png)
+
+5. Enter missing information (the **do** loop requires a condition. The loop continues for as long as that condition is true).
 
 ## GitHub
 
-GitHub is a service and website that's used to store code projects, including projects created by Visual Studio. Here are some of the many advantages of using GitHub:
+GitHub is a service and website used to store code (including projects created in Visual Studio). It offers several benefits:
 
-* Security. Your code is stored remotely. (What if something bad happened to your computer?)
-* Source code management. GitHub uses Git, which means it's easy to "undo" or to try new ideas.
-* Sharing. Best of all, GitHub makes it easy to share and collaborate on projects, and to use other developers' code.
+- *Security*: Your code is stored remotely. (What if something bad happened to your computer?)
+- *Source code management*: GitHub uses Git (which makes it easy to "undo" changes and try new ideas).
+- *Sharing*: GitHub makes it easy to share projects, collobarate, and use code from other developers.
 
-Here's how to download a project from GitHub directly into Visual Studio:
+Download a project from GitHub directly in Visual Studio:
 
-1. Find the example project in GitHub. Select this link to [open the Windows coloring book sample](https://github.com/Microsoft/Windows-appsample-coloringbook) in GitHub.
+1. Find the example project ([Windows coloring book sample](https://github.com/Microsoft/Windows-appsample-coloringbook)) in GitHub:
 
-![Downloading a project from github.](../media/github1.png)
+    ![Windows coloring book GitHub](../media/coloring-book-repo.png)
 
-2. Look for the green **Clone or download** button and select it. The URL for the project is listed. Select the clipboard icon to copy it.
+2. Click the green **Code** button. The URL for the project is displayed. Select the **clipboard icon** to copy it.
 
-![Clone or download button.](../media/github2.png)
+    ![Clone GitHub repo in GitHub](../media/clone-repo.png)
 
-3. Open Visual Studio. In the column on the right side, select the **Team Explorer** tab.
+3. Open Visual Studio. Click **Git** and select **Clone Repository**.
 
-![Open the Team Explorer view.](../media/github3.png)
+    ![Clone GitHub repo in Visual Studio](../media/clone-repo-two.png)
 
-4. Select the **Manage Connections** icon.
+    The solution will be cloned (downloaded) to your computer.
 
-![Manage connections.](../media/github4.png)
+    > [!NOTE]
+    > When you first load a project you've cloned from GitHub, you may need to set the default project. This is due to the fact that solutions can contain multiple projects. You may need to specify *this* particular project as the one Visual Studio should build and run.
+    >
+    > You'll have to set that option manually. For this example, right-click **ColoringBook (Universal Windows)** in the *Solution Explorer* and select **Set as Startup Project**. Visual Studio will now run this project by default.
 
-5. Under **Local Git Repositories**, select **Clone**. Paste in the URL path into the upper box, where the **Enter the URL of a Git repo to clone** prompt appears.
+    ![Set startup project](../media/set-startup-project.png)
 
-![Define the repo path.](../media/github5.png)
+4. Select the **Run**(green triangle) button.
 
-6. If necessary, change the default location listed underneath the path you just entered. Your local copy of the project will be stored there.
+    ![Run app](../media/run-app.png)
 
-7. Select **Clone**.
+    Visual Studio may ask you to download additional components. After you confirm these downloads, the app will begin building. A loading screen displays:
 
-The solution will be cloned (downloaded) to your computer. Note that loading a project in this way might not set the default project. Because a Visual Studio solution can contain multiple projects, Visual Studio might need to be configured to use *this* particular project as the one that's built and run. You'll have to set that option manually.
+    ![Coloring book one](../media/coloring-book-one.png)
 
-8. Select the link to **Solutions and Folders**, and then select **ColoringBook.sln**.
+    After a few moments, a page selection screen displays:
 
-![Set the default project.](../media/github6.png)
+    ![Coloring book two](../media/coloring-book-two.PNG)
 
-9. Select the **Run** button
+### ARM, x86, or x64?
 
-Visual Studio might try to download additional components. After you confirm that these downloads are OK, the app will build.  
+Visual Studio builds apps for different types of hardware:
 
-### ARM or x86 or x64?
+- Advanced RISC Machine (ARM)-based systems.
+- Computers running the 32-bit or 64-bit version of Windows.
 
-Visual Studio can build apps for many types of hardware, including Advanced RISC Machine (ARM)-based systems, and computers running both 32-bit and 64-bit versions of Windows. When you load a project from GitHub, the default value for this system architecture might be incorrect. For example, it might default to ARM when you have an Intel-based computer. Make sure that the architecture listed beside the **Run** button matches your hardware: usually this will be set to **x86**.
+Projects loaded from GitHub may provide the incorrect default value for system architecture (for example, it may default to `ARM` if you have an Intel computer). Check that the architecture listed next to the **Run** button matches your hardware (usually **x86**).
 
 ### Other ways to use GitHub
 
-You can also download a project from GitHub as a zip file. You then un-archive it and open it directly in Visual Studio. This is a good approach if you don't think you're ever going send improvements back to the project or share versions with other developers on GitHub.
+You can download a project from GitHub as a zip file, unzip the project, and open it directly in Visual Studio. This is a good approach if you're not planning to submit changes to the project repository or share code with other developers.
 
-### Using Git on a day-to-day basis
+### Using Git on a daily basis
 
-Every developer knows that keeping track of changes in projects can be difficult. What if you try something out and then realize it was a mistake and need to go back to a previous version? Or what if you're working with a friend and you both make changes to the same files? These are exactly the kinds of situations Git can manage.
+Every developer knows that tracking changes in projects can be difficult. What if you try something out, realize it was a mistake, and need revert to a previous version? What if you're working with a friend and you both make changes to the same files? These are the kinds of issues Git was designed to address.

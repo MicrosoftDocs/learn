@@ -1,3 +1,5 @@
+# Summary
+
 In this module, you learned:
 
 - The key features of the Visual Studio IDE.
@@ -5,33 +7,31 @@ In this module, you learned:
 - How to use NuGet to import new features.
 - How to use themes, code snippets, refactoring, and GitHub.
 
-### Reference
+## Reference
 
-#### Visual Studio
+Expand your knowledge of these topics with the following resources:
 
-* Learn more [about Visual Studio](/visualstudio/ide/visual-studio-ide).
-* For information about changing the appearance of Visual Studio, see [Personalize the Visual Studio IDE and editor](/visualstudio/ide/quickstart-personalize-the-ide).
+### Visual Studio
 
-#### Debugging
+- Learn more [about Visual Studio](https://docs.microsoft.com/en-us/visualstudio/get-started/visual-studio-ide?view=vs-2022).
+- Explore how to [Personalize the Visual Studio IDE and editor](https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-personalize-the-ide?view=vs-2022).
 
-* [Debugging for absolute beginners](/visualstudio/debugger/debugging-absolute-beginners) has some great advice for beginners.
-* For more information about debugging, see [First look at the Visual Studio Debugger](/visualstudio/debugger/getting-started-with-the-debugger).
+## Debugging
 
-#### NuGet
+- [Debugging for absolute beginners](https://docs.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp) has some great advice.
+- Explore the [First look at Visual Studio Debugger](https://docs.microsoft.com/en-us/visualstudio/debugger/debugger-feature-tour?view=vs-2022) module.
 
-* Check out the [NuGet](https://www.nuget.org) homepage.
-* For more information about NuGet, see the [NuGet section](/nuget/what-is-nuget) in the docs.
+## NuGet
 
-#### Git
+- Check out the [NuGet](https://www.nuget.org/) home page.
+- Explore the [NuGet section](https://docs.microsoft.com/en-us/nuget/what-is-nuget) of the docs.
 
-* For more info about using Git in your daily development process, see [this Git tutorial](/azure/devops/repos/git/gitworkflow?view=azure-devops).
+## Other useful links
 
-#### Other useful links
+- Learn about the [Windows Community Toolkit](https://docs.microsoft.com/en-us/windows/communitytoolkit/).
 
-* The [Windows Community Toolkit](/windows/communitytoolkit/).
+## Learn more with the Channel 9
 
-### Learn more with a Channel 9 video series
-
-- [NuGet 101](https://channel9.msdn.com/Series/NuGet-101/?&WT.mc_id=EducationalNuget-c9-niner&azure-portal=true)
-- [Intro to Visual Studio](https://channel9.msdn.com/Series/Intro-to-Visual-Studio/?WT.mc_id=Educationalvside-c9-niner&azure-portal=true)
-- [Intro to Visual Studio for Mac](https://channel9.msdn.com/Series/Intro-to-Visual-Studio-for-Mac?azure-portal=true)
+- [NuGet 101](https://docs.microsoft.com/en-us/shows/nuget-101/?wt.mc_id=educationalnuget-c9-niner)
+- [Intro to Visual Studio](https://docs.microsoft.com/en-us/shows/intro-to-visual-studio/?wt.mc_id=educationalvside-c9-niner)
+- [Intro to Visual Studio for Mac](https://docs.microsoft.com/en-us/shows/intro-to-visual-studio-for-mac/)

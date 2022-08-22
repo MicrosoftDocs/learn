@@ -2,96 +2,106 @@
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MhKX]
 
-Visual Studio is a complete Integrated Development Environment (IDE) that you can use to develop applications for Windows, the web, and other platforms. It consists of a source code editor, designer, compiler, and debugger.
+Visual Studio is an *Integrated Development Environment (IDE)* used to develop apps for Windows, the web, and other platforms. It consists of a *source code editor*, *designer*, *compiler*, and *debugger*.
 
-There are three editions of Visual Studio 2017: Community, Professional, and Enterprise. Visual Studio Community is free, and it's the edition we'll use in this module. If you're using a different edition, the screen images might look slightly different.
-
-You can download and install Visual Studio directly from the [Visual Studio](https://www.visualstudio.com) website. For more complete instructions and some automated scripts to make it even easier, check out the *Introduction to Windows 10* module.
+There are three editions of Visual Studio 2022: the *Community*, *Professional*, and *Enterprise* editions. Visual Studio *Community* is free and it's the edition used throughout this module.
 
 > [!NOTE]
-> Don't confuse Visual Studio with Visual Studio Code. [Visual Studio Code](https://code.visualstudio.com) is a standalone editor.
+> The images used in this module may look different if you're using the *Professional* or *Enterprise* edition.
+
+Download and install Visual Studio from the [website](https://visualstudio.microsoft.com/). Check out the [Introduction to Windows 10](https://docs.microsoft.com/en-us/learn/modules/introduction-to-windows10-dev/) module for more detailed instructions (and some automated scripts).
+
+> [!NOTE]
+> Don't confuse *Visual Studio* with [Visual Studio Code](https://code.visualstudio.com/) (which isn't a standalone editor).
 >
-> There's also Visual Studio for Mac. This module doesn't cover Mac development, but you can view [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/) for more information.
+> Visual Studio is also available for Mac. This module doesn't cover development with Mac. You may want to visit [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
 
 ## Install or update Visual Studio
 
-Before you start this module, you need to have Visual Studio installed. If you've already installed Visual Studio, it's a good idea to make sure you're using the latest release by running the Visual Studio Installer.
+Before starting, you'll need to install Visual Studio. Check that you're using the latest version by running the Visual Studio Installer:
 
-1. On the **Start** menu, select **Visual Studio Installer**.
+1. Open the **Start** menu and select **Visual Studio Installer**.
+2. Click the **Update** button (if it appears). Visual Studio will download and install the most recent version.
 
-1. If the **Update** button appears, as in the following image, select it. Visual Studio will download and install any updates.
-
-![Visual Studio Installer.](../media/vsupdateimage.png)
+![Update Visual Studio.](../media/update-visual-studio.png)
 
 ## Some definitions
 
 ### Project
 
-Your first apps will consist of a single *project*. Your project will consist of your source code (for example, C# and XAML), any resources your app needs (images and sounds), and other Visual Studio information.
+*Projects* include source code (C# and XAML files), resources (images and sounds), and other Visual Studio information.
 
 ### Solution
 
-A *solution* can encompass more than one project. Why? Maybe your app uses another project for some key functionality. Or maybe your app runs on different types of devices and needs to be built in slightly different ways. A solution brings all these projects together into one place.
+A *Solution* can encompass more than one project. Your app could use another project for some key functionality or might run on different types of devices and need to be built in different ways. Solutions bring all of your projects together in one place.
 
 ### IntelliSense
 
-IntelliSense is a set of features that displays information about your code directly in the editor and, in some cases, writes small bits of code for you. It's like having basic documentation inline in the editor, which saves you from having to look up everything elsewhere.
+IntelliSense displays information about your code directly within the editor. It essentially provides inline documentation (removing the need to look up reference information elsewhere). In some cases, it may even write small bits of code for you.
 
 ## A quick tour of Visual Studio
 
-Here's a look at the Visual Studio UI with a solution open:
+The Visual Studio UI with a Solution open:
 
-![The Visual Studio UI.](../media/visualstudioide.png)
+![Visual Studio UI](../media/visual-studio-ui.png)
 
-*Solution Explorer* (top right) lets you view, navigate, and manage your code files. Solution Explorer can help organize your code by grouping the files into solutions and projects.
+The **Solution Explorer** (top-right) helps you view, navigate, and manage files. Organize your code by grouping files into solutions and projects.
 
-The *editor window* (center), where you'll likely spend a majority of your time, displays file contents. This is where you can edit code or design a user interface, like a window with buttons and text boxes.
+The **Editor Window** (center) is where you edit code and design user interfaces (for example, a window with buttons and text boxes). It can also be used to display the contents of files.
 
-The *Output window* (bottom center) is where Visual Studio sends notifications like debugging and error messages, compiler warnings, publishing status messages, and more. Each message source has its own tab.
+The **Output Window** (bottom-center) displays notifications from different message sources in separate tabs (including debugging and error messages, compiler warnings, publishing and status messages, and other notifications).
 
-*Team Explorer* (bottom right) lets you track work items and share code with others by using version control technologies like Git.
+The **Team Explorer** (bottom-right) allows you to track work items and share code with others using version control technologies such as [Git](https://git-scm.com/).
 
-The previous image shows C# code, but you can also design the appearance of your app in the editor window. If you select a XAML file (for example, MainPage.xaml), the editor shows something like this:
+The previous image shows an example with C# code. You can also use the **Editor Window** to design the appearance of your app. Selecting a XAML file (for example, **MainPage.xaml**) displays:
 
-![Visual Studio Design view.](../media/visualstudiodesign.png)
+![Visual Studio Design view.](../media/editor-mode.png)
 
-This view shows the preview of your UI in the upper window, and the XAML used to define it underneath. You can switch between views by using the arrow button in the border between the Design and Code views near the words **Design** and **XAML**. When you make changes in the XAML file, the preview changes, and vice versa.
+Preview your UI in the upper window along with the XAML code used to define it. You can switch between views using the **arrow button** (in the border, between the Design and Code views, near the words **Design** and **XAML**). The preview will change whenever you change the XAML file and vis versa.
 
-In this view, you can open the Toolbox (on the far left) and select controls to drag into your app's window.
+In this view, open the **Toolbox** (far left), select your desired controls, and drag them into your app window.
 
 > [!Important]
-> If you make a change to the XAML that violates formatting rules (for example, if you mistype the name of a control, or leave out a closing > symbol), Design view will display an **Invalid Markup** message and won't be able to display the preview. If you don't immediately see a way to fix the mistake, you can step back (**Edit** > **Undo**) until the preview is working again.
+> If you make changes to the XAML code that violate formatting rules (for example: misspelling the name of a control or leaving out a closing (`>`) tag), design view displays an *Invalid Markup* message. You won't be able to display a preview.
+>
+> If you don't know how to fix your mistake, you can step back (Click **Edit** and select **Undo**) until the preview works again.
 
 ## Creating a project with Visual Studio
 
-Now that you have Visual Studio ready and waiting to go, let's quickly create a project to test everything.
+Now that Visual Studio is up and running and you're familiar with the environment, let's create a project to test that everything works.
 
-1. Open Visual Studio.
+1. Open Visual Studio. A **Visual Studio 2022** window appears. Click **Create a New Project**.
 
-2. Create a new project by selecting  **File** > **New** > **Project**.
+    ![New project](../media/create-new-project.png)
 
-   ![The Visual Studio new project menu option.](../media/vs-file-new-project.png)
+2. Type *Windows Universal* in the search box, select **Blank App (Universal Windows)**, and click **Next**.
 
-3. In the list of project types, select **Installed** > **Visual C#** > **Windows Universal** > **Blank App (Universal Windows)**.
+    ![Select project type](../media/select-project-type.png)
 
-   ![Visual Studio project types.](../media/vs-new-project-types.png)
+3. In the *Configure your new project* screen; name your app *Hello World*, leave **Location** and **Solution name** set to their default values, and click **Create**.
 
-4. Enter **Hello World** for the name of your app. You don't need to change the **Location** and **Solution name** default values.
+4. Set the **Minimum Version** to *Windows 10, version 1809* or later. Click **OK**.
 
-5. Select **OK**.
+    ![Set Windows version](../media/select-min-version.png)
 
-6. You'll be asked to set a **Target version** and **Minimum version** for your app. For the exercises to come, you need to set the **Minimum version** to **Windows 10, version 1803** or later.
+    Your project has been created. Your project isn't empty – some files and settings are automatically generated for you.
 
-  ![Visual Studio versions.](../media/vs-select-version.png)
+5. Check your debug settings on the menu bar. They should be set to **Debug** and **x86**.
 
-   Your project will be created. The project won't be entirely empty: some files and settings are created for you.
+    ![Check debug settings and run App](../media/check-debug-run-app.png)
 
-7. Make sure your settings are the same as those shown in the following screenshot, and then select the green **Run** button in the middle of the menu bar to build and run your app (or select F5).
+6. Click the **Run** (green triangle) button to build and run your app (or press the *F5* key).
 
-   ![Screenshot that shows a cursor over Local Machine in the Visual Studio menu bar.](../media/vs-build.png)
+    ![Run app](../media/run-app.png)
 
-8. Soon you'll see an empty window. This is your app running. (The small black rectangle containing icons at the top of your app's window is added by Visual Studio to help debugging. It won't be in your final app.)
+7. A large, blank window displays with the text *Hello World*. This is a preview of your app when it's running.
 
-   ![Screenshot that shows a window with the words Hello World and a toolbar to help debugging.](../media/vs-running.png)
+    ![Hello world app](../media/hello-world.png)
 
-10. Stop your app by selecting the red square on the menu bar.
+    :::note
+    The blue rectangle toward the top of your app window is a Visual Studio tool that helps with debugging. It won't appear in your final app.
+    :::
+
+8. Close out of your app or click the **Stop** (red square) button on the menu bar to stop running it.
+
+    ![Stop app](../media/stop-app.png)

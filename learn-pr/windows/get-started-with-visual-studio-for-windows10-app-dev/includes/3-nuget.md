@@ -1,58 +1,95 @@
 ## NuGet and packages
 
-One way developers share code libraries and resources is to bundle their work into a *package*. Packages can be pulled into Visual Studio to provide extra functionality to projects. For example, you might use a package to add more support for JSON or add animation routines to XAML.
+Developers share libraries and resources by bundling their work into *packages*. A package can be pulled into Visual Studio to provide extra functionality to projects (for example, to add support for JSON or add animation routines to XAML).
 
-NuGet is the *package manager* for .NET (including Windows Forms and WPF) and UWP projects. With NuGet, you can browse the package catalog and install, update, or delete packages from your project. NuGet is built right into Visual Studio, so you don't even need to leave the IDE.
+NuGet is the *package manager* for .NET and UWP projects (as well as Windows Forms and WPF projects). Browse the package catalog with NuGet to install, update, or delete packages from your project. NuGet is built into Visual Studio, so you don't have to leave the IDE.
 
 ## Installing a NuGet package
 
-Let's use NuGet to install some features from the Windows Community Toolkit. Specifically, let's install some new XAML animation features.
+Let's use NuGet to install new XAML animation features from the Win2D package:
 
-1. On the menu, select **Project** > **Manage NuGet Packages**, and then select **Browse**.
- ![NuGet showing a list of packages.](../media/nuget1.png)
+1. Click **Project** and select **Manage NuGet Packages**.
 
-1. In the search box, enter **microsoft.toolkit.uwp** to get a list of the available toolkit packages. The Windows Community Toolkit is split into several packages, and we'll install only the one we need.
- ![NuGet showing the toolkit packages.](../media/nuget2.png)
+    ![NuGet](../media/nuget.png)
 
-1. Scroll down and select **Microsoft.Toolkit.Uwp.UI.Animations** from the list, and then select the arrow or **Install** button. During the installation process, you'll need to select **OK** and **Accept**.
+2. Click **Browse** (upper-left), type **Win2D** in the search box, and press *Enter*. A list of available packages is displayed.
 
-> [!NOTE]
-> If you see an error when the package is installed, your project might have defaulted to an older version of the Windows SDK when it was created. Go to **Project** > **Hello World Properties** and set the **Min version** to **Windows 10, version 1803** or later.
+    ![Search NuGet](../media/search-nuget.png)
 
-1. Now that the package is installed, we're going to call a feature directly in the XAML that defines our MainPage. Select **MainPage.xaml** in Solution Explorer to open in it Design view. You can use arrows to expand the XAML editing view.
+3. Select **Win2D.uwp** from the list and click the **Install** button. The package begins installing.
 
-1. Replace all the XAML in MainPage.xaml with this XAML:
+    ![Install package](../media/install-package.png)
 
-```XAML
-<Page
-    x:Class="Hello_World.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Hello_World"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
-    xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors">
- 
-    <Grid>
-        <Rectangle Fill="Red" Width="100" Height="100">
-            <interactivity:Interaction.Behaviors>
-                <behaviors:Rotate x:Name="RotateBehavior"
-                              Value="360"
-                              CenterX="50.0"
-                              CenterY="50.0"
-                              Duration="1000"
-                              Delay="200"
-                              EasingType="Linear"
-                              AutomaticallyStart="True"/>
-            </interactivity:Interaction.Behaviors>
-        </Rectangle>
-    </Grid>
+    With the package installed, we can call a feature directly in the XAML code to define our main page.
+
+    > [!NOTE]
+    > If you get an error during installation, you may not have set the correct minimum version.
+    >
+    > Select **Project** and click **Hello World Properties**. Change the **Min version** (use **Windows 10, version 1809** or later).
+
+4. A *Preview Changes* window appears. Click **OK**.
+
+    ![Preview changes](../media/preview-changes.png)
+
+5. A *License Acceptance* window appears. To agree to the license terms, click **I Accept**.
+
+    ![Agree license](../media/agree-license.png)
+
+6. Double click **MainPage.xaml** in the Solution Explorer to open it in design view.
+
+    ![Open editor](../media/open-editor.png)
+
+7. Use the **Arrows** button to expand the editing view.
+
+    ![Switch views](../media/switch-views.png)
+
+8. Replace *all* of the XAML code in **MainPage.xaml** with this code:
+
+    ```xml
+    <Page
+        x:Class="Hello_World.MainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+        xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml">
+        <Grid>
+            <canvas:CanvasControl Draw="CanvasControl_Draw" ClearColor="CornflowerBlue"/>
+        </Grid>
     </Page>
-```
+    ```
 
-1. This XAML includes a reference to the toolkit package. It then creates a red rectangle to which it applies the new rotation behavior. When you run the program, you'll see what happens!
+9. Replace all of the C# code in **MainPage.xaml.cs** with this code:
 
- ![NuGet at work.](../media/nuget3.png)
+    ```csharp
+    using Windows.UI;
+    using Windows.UI.Xaml.Controls;
+    using Microsoft.Graphics.Canvas.UI.Xaml;
+
+    namespace Hello_World
+    {
+        public sealed partial class MainPage : Page
+        {
+            public MainPage()
+            {
+                this.InitializeComponent();
+            }
+
+            void CanvasControl_Draw(CanvasControl sender, CanvasDrawEventArgs args)
+            {
+                args.DrawingSession.DrawEllipse(155, 115, 80, 30, Colors.White, 3);
+                args.DrawingSession.DrawText("Hello world!", 100, 100, Colors.White);
+            }
+        }
+    }
+
+    ```
+
+    This XAML code includes a reference to the package we installed earlier.
+
+10. Run your program to see the results.
+
+    ![Run app](../media/run-app.png)
+
+    You should an elipse circling the text "Hello World!" on a blue background.
+
+    ![Package example](../media/package-example.PNG)
