@@ -23,7 +23,7 @@ As you plan the solution for Tailwind Traders, review these characteristics of C
 > [!NOTE]
 > To use Conditional Access, you need an Azure AD Premium P1 or P2 license. If you have a Microsoft 365 Business Premium license, you also have access to Conditional Access features. 
 
-## Things to consider when using Conditional Access
+### Things to consider when using Conditional Access
 
 Tailwind Traders wants to implement Conditional Access into their identity solution. Review the following scenarios to determine the best options for your use of the Conditional Access tool.
 

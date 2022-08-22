@@ -10,7 +10,7 @@ Azure Key Vault can help you solve security problems for Tailwind Traders:
 
 ### Things to know about Azure Key Vault
 
-INTRO about Azure Key Vault. Tailwind Traders
+As CTO for Tailwind Traders, you'd like to know how Azure Key Vault can enhance your current strategy. Consider these characteristics of Key Vault:
 
 - Key Vault is available in two service tiers:
    - **Standard tier** lets you encrypt your data with a software key.
@@ -32,7 +32,7 @@ INTRO about Azure Key Vault. Tailwind Traders
 
 ### Things to consider when using Azure Key Vault
 
-INTRO about Azure Key Vault. Tailwind Traders
+You're on your last step in planning how to implement authentication and authorization for Tailwind Traders. Consider how Azure Key Vault can be used to manage user passwords, certificates, API keys, and other secrets.
 
 - **Consider shared access signatures for clients**. Implement shared access signatures to provide secure delegated access to resources in your Tailwind Traders storage account. With Key Vault shared access signatures, you have granular control over how clients can access your data:
    - Determine which resources the client can access.
