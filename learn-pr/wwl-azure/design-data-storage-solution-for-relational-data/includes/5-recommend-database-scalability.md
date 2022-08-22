@@ -111,7 +111,7 @@ Reasons for Sharding include:
 
 - If the transaction throughput of the overall workload exceeds capacities of an individual database
 
-- When different customers or tenents' data needs physical isolation from each other
+- When different customers or tenants' data needs physical isolation from each other
 
 - Within an organization, there is a geographical separation of data for compliance reasons
 
