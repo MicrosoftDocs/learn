@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this final exercise, you'll replace the patterns you used in the previous exercises with a dependency injection (DI) or IoC container pattern. The container will supply both the QuoteLoader and the text-to-speech engine as part of the constructor. 
 
 This exercise is a continuation of the previous exercise. Use your existing solution as the starting point for these steps. To start from here, open the completed solution from the previous **exercise2** > **final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].

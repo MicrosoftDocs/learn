@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 It's our job to update the detail content when the user makes a selection from the drawer. In this unit, we'll see how to write that code.
 
 ## Coordinate page changes

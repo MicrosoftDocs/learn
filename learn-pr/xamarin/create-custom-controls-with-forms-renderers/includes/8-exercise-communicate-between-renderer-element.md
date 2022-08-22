@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll send notifications between the renderer and the shared code without tightly coupling the element and the renderer.
 
 ## Open the solution

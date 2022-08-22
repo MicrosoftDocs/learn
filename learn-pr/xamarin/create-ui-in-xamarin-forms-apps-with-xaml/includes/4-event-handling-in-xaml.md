@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 When your XAML UI is defined, you'll add code to respond to user interaction. Xamarin.Forms notifies you of user input through standard .NET events. 
 
 With UI objects, keep in mind is that the instantiated object graph that's created by XAML is the same as the object graph that's created when you use a code-behind class. You can navigate through the relationships and code by accessing the `Content` property and by casting it to the type that you want it to be.

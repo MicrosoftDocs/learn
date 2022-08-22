@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll work with an existing list-detail app. The app has a list view that shows different country flags. The first version of the code works well on single-screen devices but does not adapt to dual-screens. You'll change the code so that it uses a dual-screen layout.
 
 ## Open the starter solution

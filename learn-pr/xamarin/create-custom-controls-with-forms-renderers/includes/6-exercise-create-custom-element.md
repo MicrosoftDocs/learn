@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll define a custom element and platform-specific renderers to create a drawing surface.
 
 The provided **Assets** folder contains a custom control for each platform. This control presents a drawing surface, responds to pointer events, and draws lines. Your job is to consume the custom control on each platform in a renderer.

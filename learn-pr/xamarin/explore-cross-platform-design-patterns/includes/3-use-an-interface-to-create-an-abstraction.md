@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 You can use abstractions to represent a platform feature that's implemented in platform-specific code. Your abstraction typically addresses anything that directly deals with the platform or its services. For example, the abstraction addresses notifications, dealing with the file system, or working with the UI thread.
 
 Let's assume you use a class to implement a platform-specific feature to display a dialog box. The code for a dialog box on iOS looks different than the code on Android. If you don't thoughtfully plan your design, you might end up with duplicate code. The solution is to create an abstraction that describes the dialog box's behavior. Then, at runtime, you can switch out the abstraction with its concrete implementation.

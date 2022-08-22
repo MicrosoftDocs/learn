@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In the previous unit, we looked at the basics of creating a Xamarin.Android app. Here we'll talk about how to create a UI for a Xamarin.Android app. This information should help you decide how much your development team needs to know about Android UI layout concepts. 
 
 ## What is an activity?

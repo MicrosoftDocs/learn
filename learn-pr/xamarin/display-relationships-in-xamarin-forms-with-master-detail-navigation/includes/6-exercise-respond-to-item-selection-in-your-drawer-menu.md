@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 For this exercise, you'll return to the **Astronomy** app. You'll update the detail view when the user selects a page from the drawer menu.
 
 ## Open the starter solution

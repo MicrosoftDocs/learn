@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Now that you have a fundamental understanding of what App Center can do, let's look at some of the services in more detail. You will be able to examine the capabilities of the App Center Build service, and decide whether it is appropriate for your apps.
 
 The App Center Build service connects the source code of your app to a secure cloud infrastructure that takes care of the build work for you. The Build service eliminates the need for building on developer machines or configuring a build server yourself. The App Center Build service also connects with other App Center services to further automate your workflow. You can automatically run automated UI tests with App Center Test and distribute your release with App Center Distribute.

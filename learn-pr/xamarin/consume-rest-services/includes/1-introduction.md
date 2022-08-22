@@ -1,5 +1,5 @@
 > [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/browse/?expanded=dotnet&products=dotnet-maui).
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
 
 Think about the applications that are installed on your phone. You might have some games, social media apps, storage apps, and so on. As an exercise, try to think of any applications that have absolutely no connection to the internet. You might come up with some, but the chances are that most of your apps have some form of connection to the internet. Users expect apps to have social aspects or cross-device experiences. Because of that, if an application doesn't have a social aspect, users won't use it.
 

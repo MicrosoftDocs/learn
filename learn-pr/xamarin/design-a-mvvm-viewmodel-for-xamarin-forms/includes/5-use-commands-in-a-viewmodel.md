@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 You've seen how to get data from your viewmodels to your UI. And you can use two-way binding to get data back from the UI to your viewmodels. You've already seen an example that saves the current `ListView` selection.
 
 Using two-way bindings like that is the preferred way to react to changes from the UI whenever *data* changes. Many things that we would handle as *events* can be handled by using two-way bindings and MVVM. Other examples are things like `Switch.IsToggled` and `Slider.Value`, which can be reflected in our viewmodel *without* having to use events.

@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Effects are platform-specific classes that modify the underlying native control used by a Xamarin.Forms element. The native controls are usually a lot more flexible and powerful than the Xamarin.Forms element. For example, the Xamarin.Forms `Entry` effect doesn't expose a drop shadow option directly, but every supported platform has some mechanism for creating one. You can access those options through effects.
 
 ![Diagram showing an Android ShadowEffect applied to an Entry control.](../media/ApplyAndroidShadowEffect.png)

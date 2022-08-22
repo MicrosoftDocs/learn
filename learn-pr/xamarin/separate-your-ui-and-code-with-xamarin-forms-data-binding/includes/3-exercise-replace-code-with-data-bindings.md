@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 You'll build a simplified version of the educational geography app that focuses on countries' flags. In this first exercise, you replace data-manipulation code with bindings.
 
 ## Open and run the starter solution

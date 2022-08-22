@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 The Surface Duo dual-screen device can report the angle between the two screens. This information can be incorporated into your app's user interface, or be part of the input for a game experience.
 
 ## Get the hinge angle

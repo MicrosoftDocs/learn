@@ -1,5 +1,5 @@
 > [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/browse/?expanded=dotnet&products=dotnet-maui).
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
 
 Modern applications typically connect to back-end services to provide social and cross-device experiences. It's rare to find applications that are isolated and have no connection to the internet.
 

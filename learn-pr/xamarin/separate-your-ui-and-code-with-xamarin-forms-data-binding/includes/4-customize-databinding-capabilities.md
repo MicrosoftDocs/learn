@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Not every data binding needs the same capabilities. You want to choose a behavior that minimizes code complexity and processor burden. There are two operations you can use:
 
 - Copy to the UI when code-behind data changes.

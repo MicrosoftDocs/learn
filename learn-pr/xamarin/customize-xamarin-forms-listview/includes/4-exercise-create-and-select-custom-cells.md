@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll work with a real version of the smart home device app. The app has a `ListView` that shows smoke detectors, smart thermostats, and video doorbells. In the first version of the code, all these devices are displayed with a simple `TextCell`. To make the app more useful and visually compelling, you'll change the code so that it uses a different cell template for each device type. Two of the cell templates have been provided. You'll create the third.
 
 ## Open the starter solution

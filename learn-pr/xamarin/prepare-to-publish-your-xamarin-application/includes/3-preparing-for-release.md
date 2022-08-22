@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 There are some steps you should take before you hit the button to create your app distribution package. For example, you should create a release build and add some icons.
 
 In this unit, you'll go through some of these final steps.

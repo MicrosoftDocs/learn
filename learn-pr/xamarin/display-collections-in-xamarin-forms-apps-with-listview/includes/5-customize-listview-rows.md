@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 When you display a list of content to your users, you'll rarely want to display only a single string value. Most applications display multiple pieces of information in each row. For example, the rows of a Twitter feed display the author's username and profile picture, the date, and the contents of the tweet.
 
 In this unit, you'll see how to customize the appearance of your `ListView` rows by including multiple controls.

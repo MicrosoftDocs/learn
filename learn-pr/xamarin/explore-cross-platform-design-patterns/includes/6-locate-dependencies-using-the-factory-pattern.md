@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 The first pattern we'll look at is the *factory pattern*. The factory pattern routes the client through an intermediary, called a *factory*, to create its dependency.
 
 ![Diagram showing a factory pattern, where a client uses a factory to create a service.](../media/6-factory-pattern.png)

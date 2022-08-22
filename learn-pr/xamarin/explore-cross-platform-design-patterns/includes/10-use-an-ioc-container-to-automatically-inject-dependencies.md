@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 The last pattern we'll look at is the *dependency injection* pattern. 
 
 Service locators work nicely for smaller projects. But they can be unwieldy when you try to reuse things across applications or when you have many interconnected services. Service locators tend to be fragile because missing dependencies can't be detected until they're requested at runtime.

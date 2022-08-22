@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Let's start implementing the design for the app by creating a project and specifying some user interface for entering the project name.
 
 ## Create a Xamarin app

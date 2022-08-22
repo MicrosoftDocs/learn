@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 E**X**tensible **A**pplication **M**arkup **L**anguage (XAML) is a markup language that you can use to build your UI instead of C# code. Using XAML, you can split up your UI and behavior code to make both easier to manage.
 
 In this unit, we'll talk about some of the benefits of using markup languages to define your UI. We'll also look at some of the benefits XAML provides to you as a Xamarin.Forms developer.

@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Previously we showed how `TwoPaneView` can be used to create a split layout, but it did not adapt well to display on a single screen.
 
 The `TwoPaneView` can be dynamically configured by responding to changes in the device and application configuration, including:

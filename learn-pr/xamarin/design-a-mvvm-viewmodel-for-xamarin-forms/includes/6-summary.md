@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this module, we explored and used the Model-View-ViewModel pattern.
 
 We mentioned that testability is a primary motivation for using the MVVM pattern. It helps testability by decoupling your user interface from the inputs and outputs that drive it. Those inputs and outputs, exposed as bindings, are more easily exercised through unit-testing frameworks.

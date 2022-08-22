@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 As the number of rows in a `ListView` increases, it gets harder for users to find a particular item. Also, a user might be interested only in a certain subset of items. For example, in a calendar app, a user might want to see only appointments on Tuesday. Or in the smart home app, a user might want to look at smoke detectors. In these situations, grouping our items can be helpful. The user can scroll quickly to the correct group and see all the relevant information.
 
 In this unit, we'll look at how to group items in a `ListView`. We'll also add a group header to provide a title.

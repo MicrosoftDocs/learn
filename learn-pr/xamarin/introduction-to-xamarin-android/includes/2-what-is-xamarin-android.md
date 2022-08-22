@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Visual Studio Tools for Xamarin is an open-source app-development platform that lets you build apps for many operating systems. Xamarin allows you to write apps that can take full advantage of the power, features, and performance of each platform with a single shared .NET code base. Xamarin.Android is a Xamarin framework you can use to create fully native Android apps by using C# in Visual Studio.
 
 ![Illustration showing Xamarin targets on all platforms.](../media/2-target-all-platforms.png)

@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Most modern applications display content that can change over time. For example, think about popular social media applications like Facebook, Twitter, and Instagram. Each of these applications displays a list of content to their users. If a user uploads a new photo, that photo is added to the list for everyone to see. In this unit, we'll look at how we can dynamically add and remove items to a Xamarin.Forms `ListView`.
 
 ## Dynamically modify a ListView control

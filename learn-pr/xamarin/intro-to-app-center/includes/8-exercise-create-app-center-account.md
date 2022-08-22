@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 To get started using Visual Studio App Center, you'll need an App Center account. By following the steps in this exercise, you'll create an App Center account and explore some of the features offered by the App Center portal.
 
 ## Navigate to App Center

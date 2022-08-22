@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll use a `Grid` to arrange the views in your UI. The first screenshot shows the starter project, and the second one shows the completed project. Your job is to use a `Grid` to turn the starter project into the completed version.
 
 ![Screenshot showing the starter solution, with all controls close together, and the completed solution, with the calculation labels spread in a grid.](../media/7-ex-grid-start-complete.png)

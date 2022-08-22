@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Now it's time to get our proof-of-concept working. We'll build a UI that takes advantage of not just Xamarin.Forms, but also the Xamarin.Essentials NuGet package that will dial the phone.
 
 The app will let the user type text into an input field, and will translate that text to numeric digits. It will use the letters that show up on a telephone keypad as the basis for translation. For example, the letters "cab" translate to "222" because the digit "2" has all three letters "abc".

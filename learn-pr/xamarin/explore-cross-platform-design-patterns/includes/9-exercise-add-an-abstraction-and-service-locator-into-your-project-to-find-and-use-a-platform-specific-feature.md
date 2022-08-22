@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll define a service to convert text to speech. Then you'll use a service locator to find the implementation of the platform-specific service. The service will allow your users to select a quote and hear the application speak it.
 
 > [!NOTE]

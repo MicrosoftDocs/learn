@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 The simplest `ListView` implementations have only a single `Label` in each row. You can give them a slightly more purpose-driven layout by using one of the built-in cell types with static layouts: `TextCell`, `EntryCell`, `SwitchCell`, or `ImageCell`.
 
 ![Screenshot illustrating the built-in cell types: TextCell with some subtext, EntryCell with input placeholder adjacent, SwitchCell with a toggle button, and ImageCell with a left-hand image and some subtext.](../media/built-in-cell-types.png)

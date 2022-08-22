@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Much of your XAML definition will be known at compile time. You often know where elements should be positioned and what colors and fonts will be used, set literal values onto the properties, or let the platform make those decisions for you. 
 
 Sometimes you want to set a property value to something that can't be determined at compile time. These values are only known when the program is running. You'll need to use an object that can provide a value to XAML at runtime. Microsoft has defined the **Markup Extension** for this purpose.

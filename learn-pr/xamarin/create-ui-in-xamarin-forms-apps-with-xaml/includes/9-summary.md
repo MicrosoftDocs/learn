@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 A coded UI makes it difficult to manage layout and behavior. It often includes layout and behavioral logic that is tightly coupled. A change in design normally causes a knock-on effect to the rest of our codebase. Maintaining a codebase where there's no clean separation of UI and behavior can be difficult. 
 
 We saw in our exercise how Xamarin.Forms allows us to define our UI using XAML. This separation allows us to focus on behavior logic in our C# code files. Our UI designers can now focus on the UI and our programmers can focus on code. XAML's extensibility allows you to create Xamarin.Forms elements, CLR types, and custom types.

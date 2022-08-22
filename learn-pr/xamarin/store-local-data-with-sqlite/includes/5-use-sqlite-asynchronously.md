@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 If you run queries on a database in a synchronous way, it can lead to performance problems. SQLite.NET has an asynchronous API that you can use to keep your application responsive.
 
 In this unit, you'll learn how to use SQLite.NET's asynchronous API to ensure that your application remains highly responsive.

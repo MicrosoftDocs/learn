@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 The `TwoPaneView` control includes adaptive features that allow you to customize the layout of the two panes, whether on phones, tablets, or desktops.
 
 The following properties affect the layout of the two panes:

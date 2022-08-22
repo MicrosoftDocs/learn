@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 To use an effect in shared Xamarin.Forms code, there needs to be an implementation in platform-specific code.
 
 In this unit, you create an effect, implement the required methods, and expose it to Xamarin.Forms.

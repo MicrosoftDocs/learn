@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Sometimes an effect doesn't need any additional information, and sometimes the element's existing properties have enough information for the effect. Earlier you saw an example of that when the drop-shadow effect responded to changes in the element's `BackgroundColor`.
 
 But often, you'd like to provide some customization options for an effect, especially if you want to share or distribute the effect. You might want the drop shadow to have a customizable radius and offset, or you might want the color to be independently controllable.

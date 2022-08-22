@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll take an existing Xamarin.Forms project and pull sharable code into the project's .NET Standard library. You'll use the [factory pattern](http://www.oodesign.com/factory-pattern.html) to instantiate dependencies. Doing so allows you to isolate the platform-specific code to read and write the storage file that displays quotes.
 
 ## Explore the application

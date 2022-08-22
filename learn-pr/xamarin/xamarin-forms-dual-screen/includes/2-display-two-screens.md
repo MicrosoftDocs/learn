@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Xamarin.Forms provides two different classes that can help display content on dual-screens:
 
 - **TwoPaneView** - a layout control that can host other controls and automatically adapt to two screens.

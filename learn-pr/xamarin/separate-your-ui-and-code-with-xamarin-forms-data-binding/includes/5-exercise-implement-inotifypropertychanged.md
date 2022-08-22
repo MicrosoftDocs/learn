@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you add change notifications to your `Flag` data-source class. Raising an event enables the bindings to update the UI immediately when your data changes.
 
 This exercise is a continuation of the previous one. You can use your existing solution or begin from the **exercise1** > **final** solution in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].

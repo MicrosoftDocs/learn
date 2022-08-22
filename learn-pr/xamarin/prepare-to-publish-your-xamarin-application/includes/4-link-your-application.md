@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Mobile device users are sensitive about mobile applications and data usage. Even users who need to download new apps or update existing apps check the size of the application first. Xamarin provides tools to manage the final binary size of your app.
 
 In this unit, you'll learn how to use the Linker to manage the final binary size of your application.

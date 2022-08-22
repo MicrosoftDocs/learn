@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, we're going to fix how the panes display on single-screens, so that the app adapts to all device types.
 
 We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise2 > start** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.

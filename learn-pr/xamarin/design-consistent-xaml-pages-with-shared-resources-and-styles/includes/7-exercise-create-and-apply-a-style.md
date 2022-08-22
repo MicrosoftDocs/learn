@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 In this exercise, you'll define and apply a page-level style in the **Tip Calculator** application.
 
 This exercise is a continuation of the previous exercise. Use your existing solution as the starting point for these steps.

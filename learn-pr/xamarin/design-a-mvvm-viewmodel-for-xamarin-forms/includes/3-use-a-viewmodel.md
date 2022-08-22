@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 You've learned the definition of the MVVM components. The model and the view were easier to define than the viewmodel, so let's explore how to use the viewmodel.
 
 ## Expose properties to the user interface

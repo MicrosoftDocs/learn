@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+
 Apps often need to display a collection of homogenous data and let the user examine the details of each item. Ideally, the user can quickly switch between items in the collection. Contacts and email programs are great examples of this navigation pattern. In our astronomy app, we might want a list of the planets where the user can pick one and see that planet's detailed information.
 
 ## What is master-detail (or split) UI?
