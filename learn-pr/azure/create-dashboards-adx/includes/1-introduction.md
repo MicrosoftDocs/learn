@@ -6,7 +6,7 @@ Suppose you're a weather enthusiast with a passion for data science, who's just 
 
 ## What will we be doing?
 
-You'll create a new dashboard from a query to display query visualizations. You'll add new tiles to an existing dashboard. Then, you'll create a parameter to use as a picker in a dashboard tile. Finally, you'll learn how to manage permissions and share your dashboard with others.
+You'll create a new dashboard from a query to display query visualizations. You'll add new tiles to an existing dashboard. Then, you'll create a parameter to use as a picker in a dashboard tile, and use this parameter in a cross-filter. Finally, you'll learn how to manage permissions and share your dashboard with others.
 
 ## What is the main goal?
 

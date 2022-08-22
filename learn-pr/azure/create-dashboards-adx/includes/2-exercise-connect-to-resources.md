@@ -19,4 +19,4 @@ You'll use the Azure Data Explorer web interface to connect to the data. You onl
 
     :::image type="content" source="../media/3-tables.png" alt-text="Screenshot of stormevents table.":::
 
-Now you're ready to explore *StormEvents* table. You'll do that in the following exercise.
+Now you're ready to explore data in the *StormEvents* table. You'll do that in the following exercise.
