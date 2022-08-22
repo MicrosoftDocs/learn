@@ -1092,3 +1092,8 @@ achievements:
   title: Get started with Git and GitHub in Visual Studio
   summary: Authenticate to GitHub and create a repository by using the Git tooling experience in Visual Studio 2022. Add and modify files, stage and commit changes, and then finally push to your remote.
   iconUrl:  /learn/achievements/visual-studio-github-push.svg
+- uid: learn.azure.intro-to-azure-cosmos-db-core-api.badge
+  type: badge
+  title: Introduction to Azure Cosmos DB SQL API
+  summary: Describe Azure Cosmos DB SQL API along with the SQL API. Determine if Azure Cosmos DB SQL API is a good fit for your application.
+  iconUrl: /learn/achievements/intro-to-azure-cosmos-db-core-api.svg
