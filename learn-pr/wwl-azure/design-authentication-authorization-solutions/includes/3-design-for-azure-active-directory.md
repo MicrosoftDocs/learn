@@ -1,5 +1,7 @@
 [Azure AD](/azure/active-directory/fundamentals/active-directory-whatis) is the Azure solution for identity and access management. Azure AD is a multitenant, cloud-based directory, and identity management service. It combines core directory services, application access management, and identity protection into a single solution. Azure AD can be used in cloud or hybrid environments. 
 
+:::image type="content" source="../media/on-premises-identities.png" alt-text="Diagram that shows how Azure AD Connect syncs Active Directory Domain Services and Azure Active Directory." border="false":::
+
 ### Things to know about Azure AD identity management
 
 As you plan the identity and access management strategy for Tailwind Traders, consider these characteristics of Azure AD:
@@ -13,8 +15,6 @@ As you plan the identity and access management strategy for Tailwind Traders, co
 - In hybrid environments, Azure AD [extends on-premises Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity) to the cloud.
 
 - With Azure AD Connect or Azure AD Connect cloud sync, you can bring on-premises identities into Azure AD. After the on-premises accounts are in Azure AD, they'll get the benefits of easy management and identity protection. 
-
-:::image type="content" source="../media/on-premises-identities.png" alt-text="Diagram that shows how Azure AD Connect syncs Active Directory Domain Services and Azure Active Directory." border="false":::
 
 ### Things to consider when using Azure AD identity management
 

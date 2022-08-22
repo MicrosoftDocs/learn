@@ -1,10 +1,10 @@
-To implement authentication and authorization, Azure Architects design identity and access management (IAM) solutions. These solutions must work for all users, applications, and devices.
+To implement authentication and authorization, Azure Architects design identity and access management (IAM) solutions. These solutions must work for all users, applications, and devices. A strong IAM solution should have unified identity management, secure adaptive access, simplified identity governance, and a seamless user experience.
+
+:::image type="content" source="../media/identity-access.png" alt-text="Diagram of the four basic guidelines for a strong IAM solution." border="false":::
 
 ### Things to know about IAM
 
-As you look at your authentication and authorization options for Tailwind Traders, review these basic guidelines for a strong IAM solution:
-
-:::image type="content" source="../media/identity-access.png" alt-text="Diagram of the four basic guidelines for a strong IAM solution." border="false":::
+As you look at your authentication and authorization options for Tailwind Traders, consider these characteristics of a strong IAM solution:
 
 - **Unified identity management**. Manage all your identities and access to all your applications in a central location, whether they’re in the cloud or on-premises, to improve visibility and control.
 

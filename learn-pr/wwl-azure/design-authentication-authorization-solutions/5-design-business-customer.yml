@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/5-design-business-customer.md)]
