@@ -1,8 +1,8 @@
-Before you can explore the meteorological data, you need to connect to a database that holds this data. You don't need an Azure account to view this publicly available data, but you will need an email that's connected to a Microsoft account.
+Before you can visualize queries from the sample meteorological data, you need to connect to its database. You don't need an Azure account to view this publicly available data, but you will need an email that's connected to a Microsoft account.
 
 ## Connect to the data
 
-You'll use the Azure Data Explorer web interface to connect to the data. You only need to connect once, and you'll continue to use this data connection for all queries in the following units.
+You'll use the Azure Data Explorer web interface to connect to the data. You only need to connect once, and you'll continue to use this data connection for all exercises in the following units.
 
 1. Use your Microsoft account to sign in to the [Azure Data Explorer web UI](https://dataexplorer.azure.com/).
 1. In the home page, select **Query** from the left menu.

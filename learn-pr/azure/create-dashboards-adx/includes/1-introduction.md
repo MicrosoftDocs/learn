@@ -14,3 +14,4 @@ By the end of this session, you'll be able to:
 
 * Build dashboards in Azure Data Explorer. 
 * Use parameters to interactively modify your dashboard queries.
+* Apply cross-filters in your dashboard.

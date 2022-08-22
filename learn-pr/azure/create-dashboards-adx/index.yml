@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Create dashboards in Azure Data Explorer
   description: "Learn how to create dashboards in Azure Data Explorer. You'll add tiles and visualizations, and then share the dashboard with others."
-  ms.date: 8/17/2022
+  ms.date: 08/21/2022
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
