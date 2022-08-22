@@ -1,6 +1,6 @@
 Understanding which agents and agent versions are running on your machines can help you analyze the root cause of problems and identify which machines you need to update to a new agent or new agent version.
 
-Here, you'll write KQL queries to retrieve and transform data from the `heartbeat` table to list all agent and agent versions in your network and group all machines by the agent that monitors them.  
+Here, you'll query the `heartbeat` table to list all agent and agent versions in your network and group all machines by the agent that monitors them.  
 
 ## Assess log data based on analysis goals
 
