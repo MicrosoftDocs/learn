@@ -6,14 +6,25 @@ Azure Web PubSub service can be used in any application type that requires real-
 
 Azure Web PubSub has a variety of applications, including but not limited to:
 
-|          |              |                  |                    |                          |                                |
-| -------- | ------------ | ---------------- | ------------------ | ------------------------ | ------------------------------ |
-| Email    | GPS app      | Live chat room   | Logistic tracking  | Events broadcasting      | Team meeting software          |
-| Voting   | Dashboard    | Social network   | Location tracking  | Social meeting apps      | On-line customer support       |
-| Polling  | Travel apps  | Live captioning  | Whiteboard apps    | Instant sales update     | Real-time shopping assistant   |
-| Auction  | Messenger    | IoT monitoring   | Video broadcasting | Real-time IoT metrics    | Live stock market dashboard    |
-| Gaming   | Translating  | Remote control   | Audio broadcasting | Financial market data    | Transportation status updates  |
-| Chat bot | In-game chat | Real-time status | News broadcasting  | Delivery status tracking | Multi-player game leader board |
+- **High frequency data updates**: gaming, voting, polling, auction.
+
+- **Live dashboards and monitoring**: company dashboard, financial market data, instant sales update, multi-player game leader board, and IoT monitoring.
+
+- **Cross-platform live chat**: live chat room, chat bot, on-line customer support, real-time shopping assistant, messenger, in-game chat, and so on.
+
+- **Real-time location on map**: logistic tracking, delivery status tracking, transportation status updates, GPS apps.
+
+- **Real-time targeted ads**: personalized real-time push ads and offers, interactive ads.
+
+- **Collaborative apps**: coauthoring, whiteboard apps and team meeting software.
+
+- **Push instant notifications**: social network, email, game, travel alert.
+
+- **Real-time broadcasting**: live audio/video broadcasting, live captioning, translating, events/news broadcasting.
+
+- **IoT and connected devices**: real-time IoT metrics, remote control, real-time status, and location tracking.
+
+- **Automation**: real-time trigger from upstream events.
 
 A few more scenarios where Azure Web PubSub is very useful:
 

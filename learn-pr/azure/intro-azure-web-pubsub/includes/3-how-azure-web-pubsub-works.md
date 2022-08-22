@@ -16,10 +16,10 @@ An illustration of how it works:
 
 :::image type="content" source="../media/workflow.png" alt-text="Workflow of Azure Web PubSub":::
 
-1. A client connects to the service `/client` endpoint using WebSocket transport. Service forward every WebSocket frame to the configured upstream(server). The WebSocket connection can connect with any custom subprotocol for the server to handle, or it can connect with the service-supported subprotocol `json.webpubsub.azure.v1`, which empowers the clients to do pub/sub directly. Details are described in [client protocol](https://docs.microsoft.com/azure/azure-web-pubsub/concept-service-internals#client_protocol).
+1. A client connects to the service `/client` endpoint using WebSocket transport. Service forward every WebSocket frame to the configured upstream(server). The WebSocket connection can connect with any custom subprotocol for the server to handle, or it can connect with the service-supported subprotocol `json.webpubsub.azure.v1`, which empowers the clients to do pub/sub directly. Details are described in [client protocol](/azure/azure-web-pubsub/concept-service-internals#client_protocol).
 
-2. The service invokes the server using CloudEvents HTTP protocol on different client events. [CloudEvents](https://github.com/cloudevents/spec/blob/v1.0.1/http-protocol-binding.md) is a standardized and protocol-agnostic definition of the structure and metadata description of events hosted by the Cloud Native Computing Foundation (CNCF). Details are described in [server protocol](https://docs.microsoft.com/azure/azure-web-pubsub/concept-service-internals#server_protocol).
+2. The service invokes the server using CloudEvents HTTP protocol on different client events. [CloudEvents](https://github.com/cloudevents/spec/blob/v1.0.1/http-protocol-binding.md) is a standardized and protocol-agnostic definition of the structure and metadata description of events hosted by the Cloud Native Computing Foundation (CNCF). Details are described in [server protocol](/azure/azure-web-pubsub/concept-service-internals#server_protocol).
 
-3. Server can invoke the service using REST API to send messages to clients or to manage the connected clients. Details are described in [server protocol](https://docs.microsoft.com/azure/azure-web-pubsub/concept-service-internals#server_protocol).
+3. Server can invoke the service using REST API to send messages to clients or to manage the connected clients. Details are described in [server protocol](/azure/azure-web-pubsub/concept-service-internals#server_protocol).
 
 In the next unit, we'll explore when to use Azure Web PubSub.
