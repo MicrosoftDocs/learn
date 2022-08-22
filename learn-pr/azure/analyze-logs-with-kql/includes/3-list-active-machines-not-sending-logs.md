@@ -22,9 +22,10 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
     | Column | Description | Analysis goal | Related KQL operations |
     | --- | --- | --- | --- |
     | `TimeGenerated` | Indicates when the virtual machine generated each log. | <ul><li>Identify recently active machines.</li><li>Find the last log generated for each machine and check whether it was generated in the last few minutes.</li></ul> | <ul><li>`where TimeGenerated >ago(48h)`</li><li>`max(TimeGenerated)`</li><li>`max_TimeGenerated < ago(5m)`</li></ul> For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator), [ago()](/azure/data-explorer/kusto/query/agofunction), and [max() (aggregation function)](/azure/data-explorer/kusto/query/max-aggfunction). |
-    | `Computer` |Unique identifier of the machine. | Summarize results by machine. |  <ul><li>`summarize`</li></ul> For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator). | 
+    | `Computer` |Unique identifier of the machine. | <ul><li>Summarize results by machine.</li><li>Group machines by distinct agent versions.</li></ul>|  <ul><li>`summarize`</li><li>`ComputersList=make_set(Computer)`</li></ul> For more information, see [make_set() (aggregation function)](/azure/data-explorer/kusto/query/makeset-aggfunction). For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator). | 
     | `Category` |The agent type: <ul><li>`Azure Monitor Agent` or </li><li>`Direct Agent`, which represents the Log Analytics agents. The Log Analytics agent for Windows is also called MMA. The Log Analytics agent for Linux is also called OMS.</li></ul> | Identify the agent virtual running on the machine. Change the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines to simplify the results and facilitate further analysis, such as filtering. | To simplify the results and facilitate further analysis, such as filtering: <ul><li>Rename the column to `AgentType` (`AgentType=Category`)</li><li> Change the `Direct Agent` value to `MMA` for Windows machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)`.</li><li> Change the `Direct Agent` value to `OMS` for Linux machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType`).</li></ul> For more information, see [iff()](/azure/data-explorer/kusto/query/ifffunction) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
     | `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. |  |
+    | `Version` | The version number of the agent monitoring the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. | Rename the column to `AgentVersion` (`AgentVersion=Version`). |
 
 ## Identify recently active machines that stopped logging data
 
@@ -48,7 +49,6 @@ To identify recently active machines that stopped logging data, write a query th
     ```
     
     In the `summarize` line, you've renamed the `Category` column to `AgentType`, which better describes the information you're looking at in the column for this analysis.
-
 
 1. Filter away all logs generated in the last five minutes:
 
@@ -82,4 +82,20 @@ To identify recently active machines that stopped logging data, write a query th
 
     > [!TIP]
     > Use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating logs in this way can help in finding the root cause of the issue you are investigating.
-    
+
+## Group machines by monitoring agent and agent version
+
+Understanding which agents and agent versions are running on your machines can help you analyze the root cause of problems and identify which machines you need to update to a new agent or new agent version.
+
+1. Find unique combinations of agent type, agent version, and operating system type, and list all computers running each combination of agent type and agent version: 
+
+    ```kusto    
+    Heartbeat // The table you’re querying
+    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
+    | project-rename AgentType=Category // Changes the name of the "Category" column to "AgentType"
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType) // Changes the AgentType value from "Direct Agent" to "MMA" for Windows machines
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
+    | summarize ComputersList=make_set(Computer) by AgentVersion=Version, AgentType, OSType // Summarizes the result set by unique combination of agent type, agent version, and operating system, and lists the set of all machines running the specific agent version
+    ```
+
+    You now have the data you're looking for: a list of unique combinations of agent type and agent version and the set of all recently active machines that are running a specific version of each agent. 
