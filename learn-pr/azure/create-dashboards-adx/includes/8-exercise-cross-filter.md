@@ -8,7 +8,7 @@ You only need to add a cross-filter on the tile you'll be selecting. All other t
 
 1. Select **Viewing** and toggle the mode to **Editing**.
 
-    :::image type="content" source="../media/8-editing mode.png":::
+    :::image type="content" source="../media/8-editing mode.png" alt-text="Screenshot of toggling to editing mode":::
 
 1. Select the **edit** icon on the visual where you want to add cross-filters. In this example, edit the tile for **Event counts by state**.
 1. In the right pane, select **Interactions**.
