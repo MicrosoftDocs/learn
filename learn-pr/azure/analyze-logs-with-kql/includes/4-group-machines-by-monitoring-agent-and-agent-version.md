@@ -4,7 +4,7 @@ Here, you'll write KQL queries to retrieve and transform data from the `heartbea
 
 ## Assess log data based on analysis goals
 
-1. What information do you need to determine which gents and agent versions are running on your active machines?
+1. What information do you need to determine which agents and agent versions are running on your active virtual machines?
 
     - All machines that have recently logged data.
     - Which virtual machine agent is running on each machine, and the agent version number.
