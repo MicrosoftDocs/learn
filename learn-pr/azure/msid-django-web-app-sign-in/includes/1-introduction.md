@@ -50,7 +50,7 @@ In this module. you'll create a Django web app that authenticates users using Az
 
 - Register a Django web application in an Azure AD tenant.
 - Configure a Django web application to use its tenant registration details.
-- Create a Django web app that signs in users using Azure AD.
+- Sign in users to a Django web app using Azure AD.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
