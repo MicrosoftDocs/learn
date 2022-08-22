@@ -46,7 +46,7 @@ The starter solution contains a fully functional tip calculator app.
 
 ## Create a Grid layout
 
-1. Change the layout panel from `VerticalStackLayout` to `Grid` with spacing of `40` units.
+1. Change the layout panel from `VerticalStackLayout` to `Grid` with padding of `40` units.
 
 1. Define seven rows and two columns for the `Grid`. Make all the rows `Auto` size except the fourth row. The fourth row should use `Star` so it will get all the remaining space available in the grid. Use `Star` sizing for both columns.
 
