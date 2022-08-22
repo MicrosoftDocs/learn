@@ -1,3 +1,6 @@
+> [!NOTE]
+> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/browse/?expanded=dotnet&products=dotnet-maui).
+
 It's rare to build applications that are completely isolated and have no connection to the internet. Users expect applications to interact with each other or provide cross-device experiences. Because REST is the most common architecture used for building web services, it's likely that you'll need to consume these services in your application.
 
 In this unit, you consume a REST web service by using `HttpClient`.
