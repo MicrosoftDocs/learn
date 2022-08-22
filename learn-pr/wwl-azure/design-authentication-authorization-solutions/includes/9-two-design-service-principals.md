@@ -1,4 +1,4 @@
-When a user or application requests access to a resource that's secured by an Azure Active Directory tenant, the user or app must be represented by a _security principal_. The security principal defines the access policy and permissions for the user or app in the Azure AD tenant. The principal supports core features like authentication for a user and app during sign-in, or authorization during resource access.
+When a user or application requests access to a resource that's secured by an Azure Active Directory tenant, the user or app must be represented by a _security principal_. The security principal defines the access policy and permissions for the user (_user principal_) or app (_service principal_) in the Azure AD tenant. The principal supports core features like authentication for a user and app during sign-in, or authorization during resource access.
 
 The Tailwind Traders organization is interested in implementing service principals for its applications. As the CTO, you need to understand the two ways an app can be represented in Azure AD: as an application object, or by a service principal.
 
@@ -22,9 +22,9 @@ There are three types of service principals that you can use for your organizati
 
    Common terms for managed identities and service principals:
 
-   - **Client ID**: Unique ID linked to the app and service principal created when you provisioned the identity.
-   - **Object ID**: Service principal object of the managed identity.
-   - **Azure Instance Metadata Service**: REST API enabled when Azure Resource Manager provisions a VM. The endpoint is accessible only from within the VM.
+   - **Client ID**: The unique ID that's linked to the app and service principal created when you provisioned the identity.
+   - **Object ID**: The service principal object of the managed identity.
+   - **Azure Instance Metadata Service**: The REST API that's enabled when Azure Resource Manager creates a VM. The endpoint is accessible only from within the VM.
 
 - **Legacy**: A legacy service principal represents a legacy app that was created before app registrations were introduced, or an app created through a legacy configuration experience. A legacy service principal can have credentials, service principal names, reply URLs, and other properties that an authorized user can edit. A legacy service principal doesn't have an associated app registration. 
 
@@ -40,15 +40,13 @@ As you continue to plan the identity strategy for Tailwind Traders, consider the
 
 - A service principal must be created in each tenant where the app is used, to establish an identity for sign-in and access to resources secured by the tenant.
 
-- A single-tenant app has only one service principal (in its home tenant) that's created and consented for use during app registration.
-
-- A multi-tenant app also has a service principal created in each tenant where a user from that tenant has consented to its use.
+- A single-tenant app has only one service principal (in its home tenant) that's created and consented for use during app registration. A multi-tenant app also has a service principal created in each tenant where a user from that tenant has consented to its use.
 
 - Managed identity service principals can be granted access and permissions, but they can't be updated or modified directly.
 
 - Legacy service principals can only be used in the tenant where they're created.
 
-### Things to consider when using managed identities and service principals
+### Things to consider when using service principals
 
 Now you're ready to review how you can use managed identities and service principals in your strategy for Tailwind Traders. 
 

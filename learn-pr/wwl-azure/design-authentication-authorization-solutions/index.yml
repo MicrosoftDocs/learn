@@ -20,8 +20,8 @@ abstract: |
   - Design for identity protection.
   - Design for access reviews.
   - Design for managed identities.
-  - Design for service principals for applications.
   - Design for Azure Key Vault.
+  - Design for service principals for applications and control user consent.
 prerequisites: |
   - Conceptual knowledge of identity assignment solutions, role-based access control, and identity protection methods.
   - Working experience creating, assigning, and securing corporate identities.

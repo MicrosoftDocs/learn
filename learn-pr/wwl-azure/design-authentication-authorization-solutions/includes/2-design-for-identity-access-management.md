@@ -1,4 +1,8 @@
-To implement authentication and authorization, Azure Architects design identity and access management (IAM) solutions. These solutions must work for all users, applications, and devices. There are four basic guidelines for a strong IAM solution:
+To implement authentication and authorization, Azure Architects design identity and access management (IAM) solutions. These solutions must work for all users, applications, and devices.
+
+### Things to know about IAM
+
+As you look at your authentication and authorization options for Tailwind Traders, review these basic guidelines for a strong IAM solution:
 
 :::image type="content" source="../media/identity-access.png" alt-text="Diagram of the four basic guidelines for a strong IAM solution." border="false":::
 
@@ -10,10 +14,12 @@ To implement authentication and authorization, Azure Architects design identity 
 
 - **Simplified identity governance**. Control access to applications and data for all users and admins. Automated identity governance ensures only authorized users have access.
 
-As a first step, let's focus on designing an identity solution for Tailwind Traders. The following table lists three basic choices.
+### Things to consider when using IAM
 
-| Technology | Example scenario |
-| --- | ---|
-| [Azure AD](https://azure.microsoft.com/services/active-directory/) | Provide an identity and access management system for your employees in a cloud or hybrid environment. |
-| [Azure AD B2B (business-to-business)](/azure/active-directory/external-identities/compare-with-b2c) | Support collaboration for guest users and external business partners, such as suppliers and vendors. |
-| [Azure AD B2C (business-to-customer)](/azure/active-directory-b2c/overview) | Control how your customers sign up, sign in, and manage their profiles when they use your applications. |
+Your first step is to determine the ideal IAM solution for Tailwind Traders. The following table lists three basic choices. We'll look closely at these options in the next units.
+
+- **Consider using Azure Active Directory**. Develop with [Azure AD](https://azure.microsoft.com/services/active-directory/) for a solution that combines core directory services, application access management, and identity protection. Azure AD provides an identity and access management system for Tailwind Traders employees that can operate in a cloud or hybrid environment.
+
+- **Consider your business-to-business (B2B) requirements**. Support collaboration for guest users and external business partners of Tailwind Traders, such as suppliers and vendors. Build your solution with [Azure AD B2B (business-to-business)](/azure/active-directory/external-identities/compare-with-b2c) to support business-to-business operations.
+
+- **Consider your business-to-customer scenarios**. Control how Tailwind Traders customers sign up, sign in, and manage their profiles when they use your apps. Use [Azure AD B2C (business-to-customer)](/azure/active-directory-b2c/overview) to develop an Azure AD solution that supports customer-focused operations.

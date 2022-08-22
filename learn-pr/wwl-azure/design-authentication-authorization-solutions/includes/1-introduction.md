@@ -44,9 +44,11 @@ In this module, you learn how to:
 
 - Design for access reviews.
 
-- Design for service principals for applications.
+- Design for managed identities.
 
 - Design for Azure Key Vault.
+
+- Design for service principals for applications and control user consent.
 
 ## Skills measured
 

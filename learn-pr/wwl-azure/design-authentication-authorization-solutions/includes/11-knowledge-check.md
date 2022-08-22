@@ -1,4 +1,4 @@
-Tailwind Traders is planning on making some significant changes to their identity and access management solution. They have asked for your assistance on some recommendations and questions. Here are the specific requirements.
+Tailwind Traders is planning on making some significant changes to their identity and access management solution. They've asked for your assistance on some recommendations and questions. Here are the specific requirements.
 
 - **Device access to company applications**. The CTO has agreed to allow some level of device access. Employees at the company’s retail stores will now be able to access certain company applications. This access, however, should be restricted to only approved devices. 
 
@@ -6,7 +6,7 @@ Tailwind Traders is planning on making some significant changes to their identit
 
 - **External developer accounts**. A new development project requires external software developers to access company data files. The IT team needs to create user accounts for approximately five developers.
 
-- **User sign-in attempts**. A recent audit of user sign-ins attempts revealed anonymous IP addresses and unusual locations. The IT team wants to require multi-factor authentication for these attempted sign-ins. 
+- **User sign-in attempts**. A recent audit of user sign-ins attempts revealed anonymous IP addresses and unusual locations. The IT team wants to require multifactor authentication for these attempted sign-ins. 
 
 ### Answer the following questions
 

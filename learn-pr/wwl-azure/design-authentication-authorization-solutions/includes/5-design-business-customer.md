@@ -1,53 +1,56 @@
-[Azure AD B2C](/azure/active-directory-b2c/overview) is a type of Azure AD tenant that you use to manage customer identities and their access to your applications. 
+[Azure AD B2C](/azure/active-directory-b2c/overview) is a type of Azure AD tenant for managing customer identities and their access to your apps. Azure AD B2C requires an Azure AD tenant, but this tenant _isn't_ the same as the Azure AD tenant for your organization.
+- The **Azure AD tenant** represents your organization.
+- The **Azure AD B2C tenant** represents the identities for your customer apps. 
 
-Use Azure AD B2C to:
-
-- Securely authenticate your customers using their preferred identity providers.
-
-- Capture sign in, preference, and conversion data for customers.
-
-- Store custom attributes about customers to be leveraged by your applications
-
-- Provide branded registration and sign in experiences.
-
-- Separate the organization account from the customer account.
-
-## How does Azure B2C work?
-
-Azure AD B2C requires an Azure AD tenant. This tenant isn’t the same your organization’s Azure AD tenant. You use an Azure AD tenant to represent an organization. Your Azure AD B2C tenant represents the identities that are used for customer applications. 
-
-With your Azure AD B2C tenant in place, you must register your app. You use user flows to manage things like sign-ins and sign ups. Your Azure AD B2C tenant lets you create multiple types of user flows.
+After you set up your Azure AD B2C tenant, you must register your app. You use user flows to manage things like user sign-ins and sign-ups. Your Azure AD B2C tenant lets you create multiple types of user flows.
 
 :::image type="content" source="../media/application-registration.png" alt-text="Diagram that shows how business-to-customer users are registered in the Azure AD tenant." border="false":::
 
+### Things to know about Azure AD B2C
 
-## Best practices for business-to-customer scenarios
+You've reviewed the B2B features of Azure AD and considered how they might be implemented in an identity solution for Tailwind Traders. Let's look at the customer features offered by Azure AD B2C.
 
-- **Configure user journeys by using policies**. A user journey is the path that you want people to take in your application to achieve their goal. For example, a user might want to make a new account, or update their profile. Azure AD B2C comes with preconfigured policies called [user flows](/azure/active-directory-b2c/user-flow-overview). You can reuse the same user flows across different applications. Reusing user flows creates a consistent user journey across all applications.
+- Azure AD B2C provides secure authentication for your customers by using their preferred identity providers.
 
-- **Use identity providers to let users sign in using their social identities**. There’s a long [list of identity providers](/azure/active-directory-b2c/add-identity-provider) and more are being added. Social providers include Amazon, Azure AD, Facebook, LinkedIn, Twitter, and Microsoft accounts. 
+- You can capture sign in, preference, and conversion data for your customers.
 
-- **Customize your user interface**. You can customize the pages in your user flow. Write your own HTML and CSS or use built-in templates called [page layout templates.](/azure/active-directory-b2c/customize-ui?pivots=b2c-user-flow)
+- Azure AD B2C stores custom attributes about customers so you can use the information in your apps.
 
-- **Integrate with external user stores**. Azure AD B2C provides a directory that can hold 100 custom attributes per user. However, you can also integrate with external systems. For example, use Azure AD B2C for authentication, but delegate to an external customer relationship management (CRM) or customer loyalty database as the source of truth for customer data.
+- You can use branded registration and custom UI sign-in experiences.
 
-- **Third-party identity verification and proofing**. Use Azure AD B2C to facilitate identity verification and proofing by collecting user data, then passing it to a third-party system to perform validation, trust scoring, and approval for user account creation.
+- The B2C option lets you separate the organization account from the customer account.
 
-> [!TIP]
-> Take a few minutes to review the [WoodGrove Groceries tutorial.](/azure/active-directory-b2c/overview) WoodGrove Groceries is a live web application created by Microsoft to demonstrate several Azure AD B2C features.
+### Things to consider when using Azure AD B2C
 
-With some basic knowledge on identity solutions, let’s review our design choices. 
+Tailwind Traders wants to investigate how to implement identity management for users who are customer of their products. Review the following points about using the Azure AD B2C solution.
 
-| Feature | Azure AD B2B| Azure AD B2C |
-| - | - | - |
-| Purpose| Collaborating with business partners from external organizations like suppliers, partners, vendors. Users appear as guest users in your directory. These users may or may not have managed IT.| Customers of your product. These users are managed in a separate Azure AD directory / tenant. |
-| Users| Partner users acting on behalf of their company or employees of the company| Customers acting as themselves. |
-| Profiles| Managed through access reviews, email verification, or access/deny lists.| Users manage their own profiles. |
-| Discoverability| Partner users are discoverable and can find other users from their organization.| Customers are invisible to other users. Privacy and content are enforced. |
-| Identity providers supported| External users can collaborate using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook.| Consumer users with local application accounts (any email address or user name), various supported social identities, and users with corporate and government-issued identities via SAML/WS-Fed based identity provider federation. |
-| External user management| External users are managed in the same directory as employees but are typically annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on.| External users are managed in the Azure AD B2C directory. They're managed separately from the organization's employee and partner directory (if any). |
-| Branding| Host/inviting organization's brand is used.| Fully customizable branding per application or organization. |
+- **Consider reusable flows for user journeys**. A user journey is the path that you want people to take in your app to achieve their goal. A Tailwind Traders user might want to make a new account, update their profile, or frequently check for other users. Azure AD B2C comes with preconfigured policies called [user flows](/azure/active-directory-b2c/user-flow-overview). You can reuse the same user flows across different apps. Reusing user flows creates a consistent user journey across all apps.
 
+- **Consider allowing users to sign in with their social identities**. Support identity providers to enable Tailwind Traders users to sign in with their existing social or enterprise accounts. There's a long [list of identity providers](/azure/active-directory-b2c/add-identity-provider) and more are being added. Social providers include Amazon, Azure AD, Facebook, LinkedIn, Twitter, and Microsoft accounts. 
+
+- **Consider a customizable user interface to support branding**. Customize the pages in your Tailwind Traders user flow. Write your own HTML and CSS or use built-in templates called [page layout templates](/azure/active-directory-b2c/customize-ui?pivots=b2c-user-flow).
+
+- **Consider integration with external user stores**. Azure AD B2C provides a directory that can hold 100 custom attributes per user. However, integration with external systems is also an option. You can use Azure AD B2C for authentication, but delegate to an external customer relationship management (CRM) or customer loyalty database as the source of truth for customer data.
+
+- **Consider third-party identity verification and proofing**. Use Azure AD B2C to facilitate identity verification and proofing for Tailwind Traders by collecting user data. Pass the data to a third-party system to perform validation, trust scoring, and approval for user account creation.
+
+## Compare B2B to B2C identity solutions
+
+Now that you have some basic knowledge about the Azure AD identity solutions, let's compare the options for Tailwind Traders.
+
+| <!-- Blank --> | Azure AD B2B | Azure AD B2C |
+| --- | --- | --- |
+| **Focus** | Tailwind Traders wants to collaborate with business partners from external organizations like suppliers, partners, and vendors. You'll support users as guest users in your directory, and they might or might not have managed IT. | Tailwind Traders wants to engage with customers of their products. You'll manage users in a separate Azure AD directory / tenant. |
+| **Users** | Your users will represent a Tailwind Traders partner company, or be employees of Tailwind Traders. | Your users will be customers of Tailwind Traders who represent themselves. |
+| **Manage profiles** | Tailwind Traders will manage partner user profiles through access reviews, email verification, or access and blocklists. | Customer users of Tailwind Traders will manage their own profiles. |
+| **Manage users** | You'll manage external users in the same directory as Tailwind Traders employees, but the external users will typically be annotated as guest users. Guest users can be managed the same way as employees, added to the same groups, and so on. | You'll manage external users in the Azure AD B2C directory. They're managed separately from the Tailwind Traders employee and partner directory (if any). |
+| **Discover users and support privacy** | Partner users of Tailwind Traders will be discoverable and they can find other users from their organization. | Customer users of Tailwind Traders will be invisible to other users. Privacy and content will be enforced. |
+| **Work with identity providers** | External users will collaborate by using work accounts, school accounts, any email address, SAML and WS-Fed based identity providers, Gmail, and Facebook. | Consumer users with local app accounts (any email address or user name), various supported social identities, and users with corporate and government-issued identities via SAML/WS-Fed based identity provider federation will access the apps. |
+| **Customize the UI** | You expect to use customized UI branding for the host or inviting organization (Tailwind Traders). | You want the branding to be fully customizable per app or organization and not specific to Tailwind Traders. |
+
+## WoodGrove Groceries tutorial
+
+We prepared a tutorial to help you in the decision making process for choosing an Azure AD identity solution. WoodGrove Groceries is a live web app created by Microsoft to demonstrate several Azure AD B2C features. Review the [WoodGrove Groceries tutorial](/azure/active-directory-b2c/overview?azure-portal=true). 
 
 > [!IMPORTANT]
-> Take a few minutes to decide if Azure B2B or Azure B2C would be required by your organization. Write down a few thoughts on how these options would be used. 
+> After you complete the WoodGrove Groceries tutorial, take a few minutes to decide if Azure B2B or Azure B2C would be required by your own organization. Write down a few thoughts on how these options would be used. 
