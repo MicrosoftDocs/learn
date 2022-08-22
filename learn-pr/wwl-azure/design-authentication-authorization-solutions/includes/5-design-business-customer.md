@@ -38,7 +38,7 @@ Tailwind Traders wants to investigate how to implement identity management for u
 
 Now that you have some basic knowledge about the Azure AD identity solutions, let's compare the options for Tailwind Traders.
 
-| <!-- Blank --> | Azure AD B2B | Azure AD B2C |
+| <!-- Blank --> | Azure AD B2B (business-to-business) | Azure AD B2C (business-to-customer) |
 | --- | --- | --- |
 | **Define your focus** | Tailwind Traders wants to collaborate with business partners from external organizations like suppliers, partners, and vendors. You'll support users as guest users in your directory, and they might or might not have managed IT. | Tailwind Traders wants to engage with customers of their products. You'll manage users in a separate Azure AD directory / tenant. |
 | **Identify your users** | Your users will represent a Tailwind Traders partner company, or be employees of Tailwind Traders. | Your users will be customers of Tailwind Traders who represent themselves. |
@@ -50,7 +50,7 @@ Now that you have some basic knowledge about the Azure AD identity solutions, le
 
 ## WoodGrove Groceries tutorial
 
-We prepared a tutorial to help you in the decision making process for choosing an Azure AD identity solution. [WoodGrove Groceries](https://woodgrovedemo.com/?azure-portal=true) is a live web app created by Microsoft to demonstrate several Azure AD B2C features. You can read about the [WoodGrove Groceries](/azure/active-directory-b2c/overview.md#example-woodgrove-groceries?azure-portal=true) configuration. Take a few minutes now to complete the tutorial demo.
+We prepared a tutorial to help you in the decision making process for choosing an Azure AD identity solution. [WoodGrove Groceries](https://woodgrovedemo.com/?azure-portal=true) is a live web app created by Microsoft to demonstrate several Azure AD B2C features. You can read about the [WoodGrove Groceries](/azure/active-directory-b2c/overview.md#example-woodgrove-groceries) configuration. Take a few minutes now to complete the tutorial demo.
 
 > [!IMPORTANT]
-> After you complete the WoodGrove Groceries tutorial, take a moment to decide if Azure B2B or Azure B2C would be required by your own organization. Write down a few thoughts on how these options would be used. 
+> After you complete the WoodGrove Groceries tutorial, take a moment to decide if Azure B2B or Azure B2C would be required by your own organization. Write down a few thoughts on how these options would be used.
