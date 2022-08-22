@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.resources.group-machines-by-monitoring-agent-and-agent-version
+title: Group machines by monitoring agent and agent version
+metadata:
+  title: Group machines by monitoring agent and agent version
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 22/08/2022
+  author: guywi-ms
+  ms.author: guywild
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-group-machines-by-monitoring-agent-and-agent-version.md)]

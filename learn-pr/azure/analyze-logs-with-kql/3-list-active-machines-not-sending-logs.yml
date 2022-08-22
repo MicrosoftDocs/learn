@@ -4,7 +4,7 @@ title: Exercise - List recently active virtual machines that stopped sending log
 metadata:
   unitType: exercise
   title: Exercise - Analyze virtual machine agent health
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Write KQL queries to retrieve and transform data from the heartbeat table in Azure Monitor Log Analytics. Obtain insights about the status of virtual machines in your Azure environment."
   ms.date: 08/08/2022
   author: guywi-ms
   ms.author: guywild

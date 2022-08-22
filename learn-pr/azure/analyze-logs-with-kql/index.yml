@@ -41,6 +41,7 @@ units:
 - learn.resources.introduction
 - learn.resources.prepare
 - learn.resources.list-active-machines-not-sending-logs
+- learn.resources.group-machines-by-monitoring-agent-and-agent-version
 - learn.resources.identify-machines-with-high-low-cpu
 - learn.resources.summarize-free-space-by-computer
 - learn.resources.knowledge-check

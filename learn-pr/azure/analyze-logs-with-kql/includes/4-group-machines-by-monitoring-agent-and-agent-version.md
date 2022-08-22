@@ -1,0 +1,77 @@
+Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data to ensure you have full visibility of all active virtual machines.
+
+Here, you'll write KQL queries to retrieve and transform data from the `heartbeat` table to obtain insights about the status of machines in your environment.  
+
+## Assess log data based on analysis goals
+
+Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
+
+1. What information do you need to determine which machines have stopped sending data?
+
+    - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
+    - For further analysis, it's useful to know which virtual machine agent is running on each machine.
+ 
+1. Which data in the `Heartbeat` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
+    
+    This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
+
+    :::image type="content" source="../media/kql-log-analytics-heartbeat-table.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table.png":::
+
+    You can see that the columns that hold relevant data are:
+
+    | Column name | Description | Analysis goal | Required KQL operations |
+    | --- | --- | --- | --- |
+    | `TimeGenerated` | Indicates when the virtual machine generated each log. | <ul><li>Identify recently active machines.</li><li>Find the last log generated for each machine and check whether it was generated in the last few minutes.</li></ul> | <ul><li>`where TimeGenerated >ago(48h)`</li><li>`max(TimeGenerated)`</li><li>`max_TimeGenerated < ago(5m)`</li></ul> |
+    | `Computer` |Unique identifier of the machine. | Summarize results by machine. |  <ul><li>`summarize`</li></ul> | 
+    | `Category` |The agent type: <ul><li>`Azure Monitor Agent` or </li><li>`Direct Agent`, which represents the Log Analytics agents. The Log Analytics agent for Windows is also called MMA. The Log Analytics agent for Linux is also called OMS.</li></ul> | Identify the agent virtual running on the machine. Change the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines to simplify the results and facilitate further analysis, such as filtering. | To simplify the results and facilitate further analysis, such as filtering: <ul><li>Rename the column to `AgentType` (`AgentType=Category`)</li><li> Change the `Direct Agent` value to `MMA` for Windows machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)`.</li><li> Change the `Direct Agent` value to `OMS` for Linux machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType`).</li></ul>|
+    | `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. |  |
+
+## List the agents and agent versions running on recently active machines
+
+Understanding which agent versions are running on your machines can be useful in analyzing the root cause of problems and helps you decide which machines you need to update to a new agent version.
+
+1. Retrieve all logs from the past 10 minutes: 
+
+    ```kusto    
+    Heartbeat // The table you’re querying
+    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
+    ```
+
+1. Rename the `Category` column name and `Direct Agent` values:
+    
+    ```kusto    
+    Heartbeat // The table you’re querying
+    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
+    | project-rename AgentType=Category // Changes the name of the "Category" column to "AgentType"
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType) // Changes the AgentType value from "Direct Agent" to "MMA" for Windows machines
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
+    ```
+
+    The result set of this query likely includes numerous logs for each active machine.
+    
+1. Find unique combinations of agent type, agent version, and operating system type, and list all computers running each combination of agent type and agent version: 
+
+    ```kusto    
+    Heartbeat // The table you’re querying
+    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
+    | project-rename AgentType=Category // Changes the name of the "Category" column to "AgentType"
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType) // Changes the AgentType value from "Direct Agent" to "MMA" for Windows machines
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
+    | summarize ComputersList=make_set(Computer) by AgentVersion=Version, AgentType, OSType // Summarizes the result set by unique combination of agent type, agent version, and operating system, and lists the set of all machines running the specific agent version
+    ```
+
+    You now have the data you're looking for: a list of unique combinations of agent type and agent version and the set of all recently active machines that are running a specific version of each agent. 
+
+1. Transform the query results to present the information more clearly.
+    
+    For instance, sort the results by agent name:  
+
+    ```kusto    
+    Heartbeat // The table you’re querying
+    | where TimeGenerated >ago(10m) // Time range for the query - in this case, logs generated in the past 10 minutes
+    | project-rename AgentType=Category // Changes the name of the "Category" column to "AgentType"
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType) // Changes the AgentType value from "Direct Agent" to "MMA" for Windows machines
+    | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
+    | summarize ComputersList=make_set(Computer) by AgentVersion=Version, AgentType, OSType // Summarizes the result set by unique combination of agent type, agent version, and operating system, and lists the set of all machines running the specific agent version
+    | order by AgentType desc // Sorts results by agent name in descending alphabetical order
+    ```
