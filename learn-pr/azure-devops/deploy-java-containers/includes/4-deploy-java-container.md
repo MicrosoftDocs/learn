@@ -229,7 +229,7 @@ The `AzureAppServiceSettings@1` task enables pipelines to update the settings of
 
 * `azureSubscription` specifies the name of the Azure connection.
 * `appName` specifies the name of the App Service instance.
-* `resourceGroupName` specifies the resource group the app service belongs to. 
+* `resourceGroupName` specifies the resource group the app service belongs to.
 * `connectionStrings` provides the JSON-formatted list of connection string settings to apply.
 
 You can learn more about the details of this task in the [Azure App Service Settings task](/azure/devops/pipelines/tasks/deploy/azure-app-service-settings?azure-portal=true) documentation.
@@ -246,12 +246,12 @@ Add this code to the end of the pipeline:
 
     :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines showing the location of the web site URL.":::
 
-1. The site is hosted under the */myshuttledev/* path on the server. Append that path to the copied URL and navigate to it in a new browser tab, such as:
+1. The site is hosted under the `/myshuttledev/` path on the server. Append that path to the copied URL and navigate to it in a new browser tab, such as:
 
     ```
     http://java-container-cicd-18116.azurewebsites.net/myshuttledev/
     ```
 
-1. You see the site running on App Service. You can log in to the site using the credentials *fred*/*fredpassword*.
+1. You see the site running on App Service. You can log in to the site using the credentials: `fred`/`fredpassword`.
 
     :::image type="content" source="../media/4-myshuttle.png" alt-text="A screenshot of the running web site.":::
