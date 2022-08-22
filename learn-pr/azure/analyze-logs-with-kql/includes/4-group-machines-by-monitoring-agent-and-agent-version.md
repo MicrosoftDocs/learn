@@ -15,7 +15,7 @@ Here, you'll write KQL queries to retrieve and transform data from the `heartbea
 
     :::image type="content" source="../media/kql-log-analytics-heartbeat-table-agent-version.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, OSType, and Version columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table.png":::
 
-    You can see that the columns that hold relevant data are the same as in the previous exercise with the addition of the `Version` column, but the operations you'll perform are a little different:
+    You can see that the columns that hold relevant data are the same as in the previous exercise with the addition of the `Version` column, but the operations you'll perform are slightly different:
 
     | Column | Description | Analysis goal | Related KQL operations |
     | --- | --- | --- | --- |
