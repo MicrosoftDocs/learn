@@ -1,15 +1,13 @@
-Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data to ensure you have full visibility of all active virtual machines.
+Understanding which agents and agent versions are running on your machines can help you analyze the root cause of problems and identify which machines you need to update to a new agent or new agent version.
 
-Here, you'll write KQL queries to retrieve and transform data from the `heartbeat` table to obtain insights about the status of machines in your environment.  
+Here, you'll write KQL queries to retrieve and transform data from the `heartbeat` table to list all agent and agent versions in your network and group all machines by the agent that monitors them.  
 
 ## Assess log data based on analysis goals
 
-Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
+1. What information do you need to determine which gents and agent versions are running on your active machines?
 
-1. What information do you need to determine which machines have stopped sending data?
-
-    - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
-    - For further analysis, it's useful to know which virtual machine agent is running on each machine.
+    - All machines that have recently logged data.
+    - Which virtual machine agent is running on each machine, and the agent version number.
  
 1. Which data in the `Heartbeat` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
     
@@ -17,7 +15,7 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 
     :::image type="content" source="../media/kql-log-analytics-heartbeat-table-agent-version.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, OSType, and Version columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table.png":::
 
-    You can see that the columns that hold relevant data are:
+    You can see that the columns that hold relevant data are the same as in the previous exercise with the addition of the `Version` column, but the operations you'll perform are a little different:
 
     | Column | Description | Analysis goal | Related KQL operations |
     | --- | --- | --- | --- |
