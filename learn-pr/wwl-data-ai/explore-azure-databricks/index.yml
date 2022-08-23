@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.explore-azure-databricks
+metadata:
+  title: Explore Azure Databricks
+  description: "Explore Azure Databricks"
+  ms.date: 08/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore Azure Databricks
+summary: Azure Databricks is a cloud service that provides a scalable platform for data analytics using Apache Spark.
+abstract: |
+  In this module, you'll learn how to:
+  - Provision an Azure Databricks workspace.
+  - Identify core workloads and personas for Azure Databricks.
+  - Describe key concepts of an Azure Databricks solution.
+prerequisites: |
+  Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+units:
+- learn.wwl.explore-azure-databricks.introduction
+- learn.wwl.explore-azure-databricks.get-started
+- learn.wwl.explore-azure-databricks.identify-workloads
+- learn.wwl.explore-azure-databricks.understand-key-concepts
+- learn.wwl.explore-azure-databricks.exercise
+- learn.wwl.explore-azure-databricks.knowledge-check
+- learn.wwl.explore-azure-databricks.summary
+badge:
+  uid: learn.wwl.explore-azure-databricks.badge
