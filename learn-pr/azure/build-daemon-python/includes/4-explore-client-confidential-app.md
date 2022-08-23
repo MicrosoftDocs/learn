@@ -1,3 +1,5 @@
+Your application will acquire a token to call a protected web API on behalf of itself (not on behalf of a user). The application uses the standard OAuth 2.0 client credentials grant.
+
 In this unit, you'll learn about confidential client application, OAuth 2.0 client credentials flow and how to grant permissions to the confidential client application itself.
 
 ## Confidential client applications
