@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Today, users expect devices to always be connected and have access to data. They use their devices for everything from checking the temperature of their home while they're on vacation to getting live updates for the arrival of a taxi or flight.
 

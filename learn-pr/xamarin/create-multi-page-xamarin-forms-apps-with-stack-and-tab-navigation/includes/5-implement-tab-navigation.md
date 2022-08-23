@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Tab navigation is a navigation pattern where a tab strip (a row of touchable controls) is permanently displayed at the top or bottom of the screen. Each tab represents a specific section or page of the app. Users select tabs within the tab strip to move between content in the application. The following illustration shows the use of tab navigation in the iOS Clock app.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Resources are great to avoid hard-coded, duplicate values in your XAML. But they can be tedious to apply. You assign each property value individually, which results in cluttered and verbose XAML. This unit shows you how to group multiple settings into a style so you can apply them all at once.
 

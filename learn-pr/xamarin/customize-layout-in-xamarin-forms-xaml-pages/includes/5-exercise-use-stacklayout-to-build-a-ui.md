@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this exercise, you'll use nested `StackLayout` containers to arrange the views in your UI. The first screenshot shows the starter project, and the second one shows the completed project. Your job is to use `StackLayout` containers and `LayoutOptions` to turn the starter project into the completed version.
 

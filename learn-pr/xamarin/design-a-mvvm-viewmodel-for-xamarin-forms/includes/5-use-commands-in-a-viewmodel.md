@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 You've seen how to get data from your viewmodels to your UI. And you can use two-way binding to get data back from the UI to your viewmodels. You've already seen an example that saves the current `ListView` selection.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Using the same fonts and colors across your entire UI creates a consistent look and feel. Xamarin.Forms provides a way to define these values in one place and look them up everywhere they're used. Reusing values guarantees consistency across your app and makes updates simple.
 

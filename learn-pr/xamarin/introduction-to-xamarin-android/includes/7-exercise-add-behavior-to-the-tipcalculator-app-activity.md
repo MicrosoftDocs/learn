@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this exercise, you'll write C# code to access and manipulate the UI of an activity. Your code will read and write the properties on several text controls. It will also subscribe to an event on a button.
 

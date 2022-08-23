@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In the previous unit, you walked through the basic steps to create a Xamarin.iOS app. Now, you learn some common terminology and the design pattern used to structure apps in iOS. This information should help you decide how much additional iOS knowledge your development team needs.
 

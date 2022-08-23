@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Forms `ListView` controls give us more than just the ability to display collections of data in predefined layouts. We can customize the structure and visual design of most elements of the `ListView`.
 

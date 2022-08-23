@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this module, we saw how to use resources and styles in our Xamarin.Forms applications. The goal was to simplify UI updates for the **TipCalculator** app whenever the corporate brand changed. We used both features to reorganize the code so updates to the UI would be fast and accurate:
 

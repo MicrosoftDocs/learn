@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Knowing how your users interact with your app can help you improve your app. You might discover places where new features might improve user workflow, or places where your app isn't delivering an ideal experience. By collecting, analyzing, and executing on your app's usage data, you can improve your app experience. Improving the experience might mean streamlining a checkout process in a retail app to improve the conversion rate and revenue, or it might mean adjusting a primary user interaction in your app to increase user engagement. You could find places to fix barriers to success in your app that lead to improved app ratings.
 

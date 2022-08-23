@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Suppose you're building a page that displays images in a 7x5 grid. It's possible to create this page with multiple horizontal and vertical `StackLayout` containers. But it would be tedious to code and could cause performance problems because of the memory and processing requirements of multiple layout panels. The `Grid` layout panel is a better choice for UIs that need both rows and columns. In this unit, you'll learn how to define a `Grid` and position views inside its cells.
 

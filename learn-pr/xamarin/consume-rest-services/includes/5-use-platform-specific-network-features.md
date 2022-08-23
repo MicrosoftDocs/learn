@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 `HttpClient` is a managed implementation, which means that it's unaware of the native platform networking stack. As a result, `HttpClient` can't use the native networking features of each platform, which makes it not as efficient and less optimized.
 

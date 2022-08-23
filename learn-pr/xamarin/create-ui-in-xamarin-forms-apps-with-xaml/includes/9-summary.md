@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 A coded UI makes it difficult to manage layout and behavior. It often includes layout and behavioral logic that is tightly coupled. A change in design normally causes a knock-on effect to the rest of our codebase. Maintaining a codebase where there's no clean separation of UI and behavior can be difficult. 
 

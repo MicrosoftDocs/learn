@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Now that you understand the aspects of App Center Build, let's see how App Center Test can run test suites against your app's user interface (UI). App Center tests are performed on your app while it is running on physical devices. Running tests against real devices gives you much more confidence in your app's ability to handle real user interactions when it is released to testers or app store users. When your app works as expected, you help avoid user frustration and poor app store ratings.
 

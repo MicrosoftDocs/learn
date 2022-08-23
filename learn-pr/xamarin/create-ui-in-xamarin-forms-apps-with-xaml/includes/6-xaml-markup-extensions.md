@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Much of your XAML definition will be known at compile time. You often know where elements should be positioned and what colors and fonts will be used, set literal values onto the properties, or let the platform make those decisions for you. 
 

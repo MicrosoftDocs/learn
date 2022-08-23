@@ -1,5 +1,4 @@
-﻿> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+﻿[!include[](../../includes/xamarin-not-maintained.md)]
 
 Let's say you've created a Xamarin application that lets your users read quotations from famous people. You currently use a device-specific storage location to store data on each platform. But you've realized that you're repeating code in each platform project. Now you want to consider options for sharing code.
 

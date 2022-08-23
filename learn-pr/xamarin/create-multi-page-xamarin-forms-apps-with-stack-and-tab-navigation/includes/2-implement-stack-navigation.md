@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 The UI of most apps is made up of multiple pages. When we use the term _navigation_, we mean the set of transitions between these pages. Navigation includes both the UI and the user actions needed to take the user from page to page.
 

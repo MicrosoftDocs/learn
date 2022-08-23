@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Now it's time to get our proof-of-concept working. We'll build a UI that takes advantage of not just Xamarin.Forms, but also the Xamarin.Essentials NuGet package that will dial the phone.
 

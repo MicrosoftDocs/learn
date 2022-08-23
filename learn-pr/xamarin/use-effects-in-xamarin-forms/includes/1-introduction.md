@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 By using Xamarin.Forms effects, app developers can customize and add functionality to Xamarin.Forms elements. Effects provide access to the underlying native platforms, such as iOS and Android. Effects work *with* renderers and are ordinarily easier to code and more reusable than building custom renderers.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Mobile devices use Wi-Fi and cellular technologies to connect to the internet. This dependency means that your users could lose their internet connection while using your application. If you don't add code to protect against this possibility, your app could stop responding and provide your users with a bad experience.
 

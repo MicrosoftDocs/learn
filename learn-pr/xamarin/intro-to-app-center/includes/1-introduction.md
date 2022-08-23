@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Delivering a quality mobile app is challenging. You not only need to know how your app is being used, you also need to be able to find and fix customer issues. When you fix those issues, you need to test and publish your app quickly to get the latest release to customers as soon as possible. How do you transition from code change to test to users quickly and automatically? You need to use a continuous integration (CI) and continuous delivery (CD) system (CI/CD system).
 

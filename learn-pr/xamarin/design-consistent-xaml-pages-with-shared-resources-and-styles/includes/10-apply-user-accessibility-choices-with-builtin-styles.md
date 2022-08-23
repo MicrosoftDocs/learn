@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Operating systems let users choose some device-wide preferences. The most common setting is text size. The following screenshots show how the user would adjust their preferences on iOS and Android.
 

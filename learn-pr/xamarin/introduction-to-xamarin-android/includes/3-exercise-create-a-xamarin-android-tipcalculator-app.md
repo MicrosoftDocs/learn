@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 This exercise walks you through creating a new Xamarin.Android project. You won't need to write any code here. The instructions will point out a few key parts of the project as you create it.
 

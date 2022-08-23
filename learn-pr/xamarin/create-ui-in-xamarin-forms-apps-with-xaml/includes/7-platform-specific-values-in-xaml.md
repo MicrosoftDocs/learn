@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 The visual experience of your app will be different on each platform. You'll often need to fine-tune your UI for each platform based on the visual elements you use. Xamarin.Forms provides a way for you to manage the layout of your app based on these device properties.
 

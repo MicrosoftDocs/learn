@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 The Xamarin.Forms element and the platform renderers share the responsibility of putting the native control on the screen and managing its behavior. Part of managing behavior is making sure data and notifications flow between the element and the native control.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 A resource is like a symbolic constant from a programming language. You define it in one place and reference it everywhere you need it. Your code will be easier to read because you use a descriptive name instead of a "magic" value. If you need to change the value, you only need to update the definition. Here, you'll see how to use resources to eliminate hard-coded values from your XAML.
 

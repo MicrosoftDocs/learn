@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this module, we replaced imperative code with bindings. We used different capabilities of bindings depending on the need of the particular control. Finally, we used value converters to create bindings between mismatched types.
 

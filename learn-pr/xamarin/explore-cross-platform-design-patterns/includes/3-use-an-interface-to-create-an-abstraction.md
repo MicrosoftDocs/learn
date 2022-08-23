@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 You can use abstractions to represent a platform feature that's implemented in platform-specific code. Your abstraction typically addresses anything that directly deals with the platform or its services. For example, the abstraction addresses notifications, dealing with the file system, or working with the UI thread.
 

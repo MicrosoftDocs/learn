@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Forms provides a way to create apps for iOS and Android devices, without having to write those apps once in Java and once in Swift. We've seen that with Xamarin.Forms, almost all the code that makes up our app, including our user interface code, can be written once and applies to both platforms.
 

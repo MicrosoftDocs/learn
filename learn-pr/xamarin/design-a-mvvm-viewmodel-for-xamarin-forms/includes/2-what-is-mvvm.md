@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Forms apps that don't use MVVM generally have more code in their *code-behind* files. The code-behind files follow this pattern: *{something}.xaml.cs*. Most code in the code-behind file usually controls the user interface (UI) behavior. *UI behavior* can include anything that happens *to* the UI, like changing a color or some text. And it can include anything that happens *because of* the UI, including button click handlers.
 

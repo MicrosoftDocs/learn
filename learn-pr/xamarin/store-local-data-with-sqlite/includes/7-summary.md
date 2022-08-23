@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Storing data locally on a mobile device can be useful for improving performance. Instead of constantly making calls to a remote server to get data, you can store the important data locally and retrieve it quickly.
 

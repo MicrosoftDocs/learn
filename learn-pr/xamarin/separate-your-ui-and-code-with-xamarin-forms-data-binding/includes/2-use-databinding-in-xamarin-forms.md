@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Most applications are driven by data. It might be user-generated or downloaded from the internet. The data might be compiled directly into the app. Even games rely heavily on data for scores, leader boards, account tokens, and so on. When your data changes, make sure that what's shown in the UI stays synchronized with what's stored in your code-behind.
 

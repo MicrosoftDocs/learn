@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this exercise, you walk through the creation of a new Xamarin.iOS application with Visual Studio 2019. You can also use Visual Studio 2017 or Visual Studio for Mac, but keep in mind that some steps might be slightly different.
 

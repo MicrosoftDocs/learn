@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 You previously looked at iOS terminology. You also learned that a view controller is created for the first screen in your app. In this unit, you learn how to create a UI and get to look at options for positioning controls in iOS.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Forms `ListView` controls are used to display a row for every element of a collection. For some apps, a simple row per element might be enough. For other apps, you might want to customize of your `ListView` controls. You might want to use rows with custom user interfaces (UI), groupings of similar elements, or headers and footers.
 

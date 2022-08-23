@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.iOS enables .NET developers to create native iOS apps. These apps can take full advantage of the power, features, and performance of the iOS platform. In this module, you learned about Xamarin.iOS, explored iOS terminology, and built an iOS application.
 

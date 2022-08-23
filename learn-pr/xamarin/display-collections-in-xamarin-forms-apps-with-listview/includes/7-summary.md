@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Our app's goal was to show a list of countries and their flags. Each row needed a thumbnail image of the flag, the name of the country, and the date the flag was adopted. We started with Xamarin.Forms `ListView`, which gave us a scrollable list. Then we added the predefined cell type `ImageCell` and used data binding to load the flag data into the rows.
 

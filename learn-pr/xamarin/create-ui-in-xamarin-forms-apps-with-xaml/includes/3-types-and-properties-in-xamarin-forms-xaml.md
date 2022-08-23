@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Recall that XAML is a declarative markup language. It's designed with the idea to simplify the process of creating your UI. The elements in XAML directly represent the instantiation of objects that you access in code-behind files.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this module, you needed to create a Xamarin.Forms app that was accessible to users. You used Xamarin.Forms automation properties to control what elements were included and what information the screen reader would read out loud. You also applied intentional content ordering to improve the screen reader and keyboard experience. 
 

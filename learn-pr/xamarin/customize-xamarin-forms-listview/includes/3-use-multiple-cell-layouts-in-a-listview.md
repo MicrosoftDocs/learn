@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 The ability to define a custom cell layout gives us a lot of power to control the user experience. But if different rows represent different types of items, we might want to have different cell templates for each of those types.
 

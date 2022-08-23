@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Whether your app release is in the hands of your testers or out on an app store in the hands of your customers, you want them to have a reliable experience. App failures are bound to happen, though, and you'll want to know as much as you can about the errors that lead to an app failure. This data can help you find the issue in your code and fix it quickly. That situation is where diagnostics data can help you.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 When building cross-platform mobile applications, you have to use platform-specific APIs. For example, to use the device's camera to take a picture, you need to use the specific APIs for that platform. This means if you wanted to build an iOS and Android camera application, you would need to write the code that uses the camera multiple times for each platform.
 

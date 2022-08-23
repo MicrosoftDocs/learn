@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Android enables .NET developers to create fully native Android apps. Developers can take full advantage of the power, features, and performance of the Android platform. In this module, you've explored Xamarin.Android and its development tools, and you've built an Android application.
 

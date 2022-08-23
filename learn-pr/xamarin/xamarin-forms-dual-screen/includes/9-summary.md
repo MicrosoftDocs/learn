@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Forms dual-screen support provides a foundation upon which to build responsive app layouts that work well on all devices, with enhanced useability on devices like the Microsoft Surface Duo.
 

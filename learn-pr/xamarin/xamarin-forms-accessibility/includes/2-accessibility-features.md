@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Designing for accessibility involves designing app user interfaces that work well with operating system features for display assistance and input assistance. These features include large type, high contrast, zoom in, screen reading (text-to-speech), visual or haptic feedback cues, and alternative input methods.
 

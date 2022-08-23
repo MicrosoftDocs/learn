@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Platform renderers are the main tool that Xamarin.Forms uses to make user interface elements work on different platforms. The elements that ship with Xamarin.Forms include renderers for all supported platforms, and you can customize them when you need more specific behavior. You can also create new elements in Xamarin.Forms and enable them to work on multiple platforms by providing renderers for those platforms.
 

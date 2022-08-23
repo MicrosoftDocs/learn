@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 You've now seen how to create a basic Xamarin.Android app. Behind the scenes, Xamarin.Android uses many of the native Android tools and libraries. Your goal in this unit is to understand enough about how Xamarin.Android uses these tools and libraries to make sure your development environment is up to date.
 

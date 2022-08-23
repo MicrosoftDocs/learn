@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 The design of your app calls for the use of custom fonts for your labels and a gradient background for your button. You use Xamarin.Forms effects to achieve those behaviors. The font effect is already created.
 

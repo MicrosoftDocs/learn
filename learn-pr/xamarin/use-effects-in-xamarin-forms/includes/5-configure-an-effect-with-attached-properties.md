@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Sometimes an effect doesn't need any additional information, and sometimes the element's existing properties have enough information for the effect. Earlier you saw an example of that when the drop-shadow effect responded to changes in the element's `BackgroundColor`.
 

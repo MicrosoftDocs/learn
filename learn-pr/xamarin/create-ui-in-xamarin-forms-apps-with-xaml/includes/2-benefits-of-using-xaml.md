@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 E**X**tensible **A**pplication **M**arkup **L**anguage (XAML) is a markup language that you can use to build your UI instead of C# code. Using XAML, you can split up your UI and behavior code to make both easier to manage.
 

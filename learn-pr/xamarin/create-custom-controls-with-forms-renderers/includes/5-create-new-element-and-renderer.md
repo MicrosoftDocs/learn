@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Deriving from existing renderers and enhancing their built-in behavior works great when there's a Xamarin.Forms element that already does most of what we need. But if we want a control that doesn't exist in Xamarin.Forms at all yet, the steps are a little different and there's a bit more work.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 All the exercises in this module relate to the prebuilt FlagFacts application. You'll modify and improve this app throughout this module. In this exercise, you'll create a `ListView` control and populate it with string data. You'll also use the `ItemTapped` event to display a details page.
 

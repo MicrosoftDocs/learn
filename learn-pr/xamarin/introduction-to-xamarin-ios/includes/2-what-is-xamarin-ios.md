@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Visual Studio Tools for Xamarin is an open-source app development platform. It lets you build apps for many operating systems from a single, shared .NET code base. Xamarin allows you to write apps that can take full advantage of the power, features, and performance of each platform. Xamarin.iOS is one of the Xamarin frameworks that you use to create fully native iOS apps using C# in Visual Studio.
 

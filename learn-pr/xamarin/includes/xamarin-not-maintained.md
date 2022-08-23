@@ -1,3 +1,2 @@
 > [!NOTE]
-> This Learn Module covers developing applications with Xamarin. It is no longer being maintained. 
-> .NET MAUI is the next evolution of Xamarin and you can learn more about [].NET MAUI in several Learn Modules](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+> This training module is for Xamarin. [.NET MAUI](/dotnet/maui/what-is-maui) is the next evolution of Xamarin and what we recommend you develop mobile and desktop apps with. For more details, see our [.NET MAUI training modules](/learn/browse/?expanded=dotnet&products=dotnet-maui). This Xamarin training module will not be maintained going forward.

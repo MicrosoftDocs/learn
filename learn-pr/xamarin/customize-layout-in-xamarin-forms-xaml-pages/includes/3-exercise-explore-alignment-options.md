@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this exercise, you'll use a Xamarin.Forms application to see the effect of the four primary layout options when applied to a view contained in a `StackLayout`. You won't be writing code in the exercise. Instead, you'll use a solution that's provided to you and select buttons to change the layout options of a label.
 

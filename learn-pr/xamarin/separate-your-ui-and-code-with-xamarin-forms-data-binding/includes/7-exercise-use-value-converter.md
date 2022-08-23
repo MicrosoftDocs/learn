@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Here, you create a value converter to translate the `ImageUrl` property on the `Flag` object into an `ImageSource` that the Xamarin.Forms image control can display. Specifically, the value converter loads images from your embedded resources located in the **FlagData** assembly.
 

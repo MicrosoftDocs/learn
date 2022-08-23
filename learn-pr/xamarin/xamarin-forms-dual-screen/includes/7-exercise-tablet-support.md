@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this exercise, we're going to adapt the display for larger screen sizes like tablets and desktops. `TwoPaneView` can set the two panes to specific widths or proportionally, and we can use the same navigation strategy as for dual-screen display.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 The goal for many developers is to ship their apps to customers. The main way to ship mobile applications is through the iOS and Android app stores. But there are many steps between code complete and submitting your app to the store.
 

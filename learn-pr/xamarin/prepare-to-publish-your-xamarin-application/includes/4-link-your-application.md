@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Mobile device users are sensitive about mobile applications and data usage. Even users who need to download new apps or update existing apps check the size of the application first. Xamarin provides tools to manage the final binary size of your app.
 

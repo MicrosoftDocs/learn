@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Now that you have a fundamental understanding of what App Center can do, let's look at some of the services in more detail. You will be able to examine the capabilities of the App Center Build service, and decide whether it is appropriate for your apps.
 

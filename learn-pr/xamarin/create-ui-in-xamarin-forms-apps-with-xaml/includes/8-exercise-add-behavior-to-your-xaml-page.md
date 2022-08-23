@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 In this exercise, you'll move the phone word logic from the original MainPage source file. You will continue working from the preceding exercise, in which you renamed the **MainPage** source file **OldMainPage**.
 

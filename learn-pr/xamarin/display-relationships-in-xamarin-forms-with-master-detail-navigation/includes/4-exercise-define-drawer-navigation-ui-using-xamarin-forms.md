@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 You'll be developing the navigation for a planetarium's **Astronomy** app. There's some starter code to get you going. Your job is to add drawer navigation by using `MasterDetailPage` to let the user switch between several pages quickly while limiting the UI space consumed for navigation.
 

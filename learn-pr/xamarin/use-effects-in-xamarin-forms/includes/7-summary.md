@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 You needed to create an app that uses features not directly available in Xamarin.Forms. Effects allow you to make platform-specific tweaks to your Xamarin.Forms user interface, taking advantage of features available in iOS and Android.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Stacking views in a vertical or horizontal list is a common design for user interfaces. Think about some common pages in applications. Examples include sign-in, register, and settings pages. All these pages typically contain stacked content. In this unit, we'll learn how to arrange views in a vertical or horizontal list by using `StackLayout`.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Suppose you work for a power utility company as a mobile developer. You're responsible for improving the company's customer facing mobile app. Currently the app's UI is built using C# code. However, you've started to notice it's becoming more difficult to manage UI updates. This additional maintenance is because the app is getting more complex. It's difficult to read the core behavior logic as it's mixed in with UI code.
 

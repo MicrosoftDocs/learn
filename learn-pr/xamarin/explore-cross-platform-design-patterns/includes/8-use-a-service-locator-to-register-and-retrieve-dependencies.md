@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 The second pattern we'll look at is the *service-locator pattern*. The service-locator pattern involves a piece of code that maintains a list of known dependencies. Typically, you'll create and register your dependencies in your platform-specific code. When any of your components needs a dependency, it consults the service locator, which then returns the registered instance.
 

@@ -1,5 +1,4 @@
-> [!NOTE]
-> This Learn Module is for Xamarin. If you're looking for Learn Modules on .NET MAUI, [please go here](/learn/browse/?expanded=dotnet&products=dotnet-maui).
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Defining resources and styles on a XAML page is a great way to reduce repeated code. There's a problem, though. Those resources and styles are available only on that specific XAML page. Page-level resource dictionaries aren't sufficient to let you avoid repeated code across an application when you have multiple pages. Let's look at how to share resources and styles across all the pages in your application.
 
