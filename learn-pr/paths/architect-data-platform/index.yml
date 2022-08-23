@@ -5,8 +5,8 @@ metadata:
   description: Learn how to architect a data platform in Azure and build solutions to store relational and NoSQL data.
   brand: azure
   ms.date: 10/22/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: seesharprun
+  ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Architect a data platform in Azure
@@ -32,8 +32,8 @@ modules:
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn.migrate-sql-server-relational-data
 - learn.develop-app-that-queries-azure-sql
-- learn.create-cosmos-db-for-scale
-- learn.distribute-data-globally-with-cosmos-db
-- learn.access-data-with-cosmos-db-and-sql-api
+- learn.wwl.explore-azure-cosmos-db
+- learn.wwl.implement-partitioning-azure-cosmos-db
+- learn.wwl.work-with-cosmos-db
 trophy:
   uid: learn.architect-data-platform.trophy
