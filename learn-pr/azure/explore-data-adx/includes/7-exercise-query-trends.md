@@ -52,14 +52,14 @@ You've seen how the number of events vary based on time and state. Recall that t
 
 1. The following query groups events by geographic cell, and counts the number of events in each cell. These results are displayed on a map, where the circle size corresponds to the number of events in that cell. Run the following query.
 
-    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA2WPsQ7CMAxEd77C6tRInRjYuiCxsfEBVQhWE2jtKnEpID4el4CoxGbd+fnOB+HY765IklZPGCKf0QlssQ20Z6o+kxU1J48RISRiobHryq9lwNLpT2cyyqSx720MDwTHI0lp4HgHb5OHGlrkZuBA0gg3ae1wwf6Cq41ZFJuZvDpDTmtH2+Ur5XzWVDmoUQZvglosP6d5xdsp1ImqY4QhoPM2CkxBPJSXoNs19HYwL2cZuBIWAQAA" target="_blank">Click to run query</a>
+    <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAA2VPOw7CMAzdOYXF1EidGNi6ILGxcYAqBKsJNHGUuJQiDo/bgihis/2+PjIlv79h4Lx6Qkx0QcOww8aFA4XyPWkWsLeYEFwOxKFr2+IDKdDh/HenoESTO+91cg8EQ13get6HatoKBacBrM4WKmiQ6khOOEx13hhcOH1rlFu1qDlqZuooMvJE0u3sUoy2qvyNFSneGaXt/LHErifCWpAkd0wQHRqrE0Pv2EJxdcKuwOuoXlm6/gQrAQAA" target="_blank">Click to run query</a>
     
     ```kusto
     StormEvents
     | project BeginLon, BeginLat
     | where isnotnull(BeginLat) and isnotnull(BeginLon)
-    | summarize count() by hash = geo_point_to_s2cell(BeginLon, BeginLat,6)
-    | project geo_s2cell_to_central_point(hash), count_
+    | summarize count_summary=count() by hash = geo_point_to_s2cell(BeginLon, BeginLat,6)
+    | project geo_s2cell_to_central_point(hash), count_summary
     | extend Events = "count"
     | render piechart with (kind = map)
     ```
