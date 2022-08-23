@@ -1092,3 +1092,53 @@ achievements:
   title: Get started with Git and GitHub in Visual Studio
   summary: Authenticate to GitHub and create a repository by using the Git tooling experience in Visual Studio 2022. Add and modify files, stage and commit changes, and then finally push to your remote.
   iconUrl:  /learn/achievements/visual-studio-github-push.svg
+- uid: learn.azure.intro-to-azure-cosmos-db-core-api.badge
+  type: badge
+  title: Introduction to Azure Cosmos DB SQL API
+  summary: Describe Azure Cosmos DB SQL API along with the SQL API. Determine if Azure Cosmos DB SQL API is a good fit for your application.
+  iconUrl: /learn/achievements/intro-to-azure-cosmos-db-core-api.svg
+- uid: learn.create-cosmos-db-for-scale.badge
+  type: badge
+  title: Create an Azure Cosmos DB database built to scale
+  summary: Learn how to create an Azure Cosmos DB account, database, and container built to scale as your application grows.
+  iconUrl: /learn/achievements/create-cosmos-db-for-scale.svg
+- uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.badge
+  type: badge
+  title: Choose the appropriate API for Azure Cosmos DB
+  summary: Compare the different APIs that are available in Azure Cosmos DB, highlighting and contrasting the different scenarios that would make them a good choice for a company.
+  iconUrl: /learn/achievements/choose-the-appropriate-api-for-cosmos-db-storage.svg
+- uid: learn.access-data-with-cosmos-db-and-sql-api.badge
+  type: badge
+  title: Insert and query data in your Azure Cosmos DB database
+  summary: Discover the Azure Cosmos DB Data Explorer tool that enables you to add or modify data. Create stored procedures in JavaScript.
+  iconUrl: /learn/achievements/access-data-with-cosmos-db-and-sql-api.svg
+- uid: learn.azure.store-access-data-cosmos-graph-api.badge
+  type: badge
+  title: Store and access graph data in Azure Cosmos DB with the Graph API
+  summary: Find out about creating an application with Azure Cosmos DB as a graph database, then retrieve, manipulate, and visualize graph data using Data Explorer.
+  iconUrl: /learn/achievements/store-and-access-data-with-cosmos-db-and-the-graph-api.svg
+- uid: learn.azure.store-access-data-cosmos-table-api.badge
+  type: badge
+  title: Store and Access NoSQL Data with Azure Cosmos DB and the Table API
+  summary: By using the Azure Cosmos DB Table API, you will benefit from the low latency, high availability, and scalability of Azure Cosmos DB in a Table storage application.
+  iconUrl: /learn/achievements/store-and-access-data-cosmos-db-table-api.svg
+- uid: learn.cosmos-db-app-with-vscode.badge
+  type: badge
+  title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
+  summary: Learn how to create a .NET Core application to store and query data in Azure Cosmos DB by using Visual Studio Code.
+  iconUrl: /learn/achievements/build-cosmos-db-app-with-vscode.svg
+- uid: learn.monitor-azure-cosmos-db.badge
+  type: badge
+  title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
+  summary: Learn how to measure the performance of your NoSQL Azure Cosmos DB database, by monitoring, partitioning, and indexing
+  iconUrl: /learn/achievements/monitor-azure-cosmos-db.svg
+- uid: learn.distribute-data-globally-with-cosmos-db.badge
+  type: badge
+  title: Distribute your data globally with Azure Cosmos DB
+  summary: Discover the benefits of writing and replicating customized data to regions around the world with Azure Cosmos DB global distribution.
+  iconUrl: /learn/achievements/distribute-data-globally-with-cosmos-db.svg
+- uid: learn.work-with-nosql-data-in-azure-cosmos-db.trophy
+  type: trophy
+  title: Work with NoSQL data in Azure Cosmos DB
+  summary: Find out how to customize NoSQL data storage and distribution with the Azure portal, Cosmos DB extension, and Cosmos DB .NET SDK.
+  iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg

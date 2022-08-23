@@ -2,4 +2,4 @@ Highly available SMB shares for SAP workloads in Azure VMs can be implemented by
 
 Azure also offers Azure Files that deliver managed SMB file sharing. However, at the time of authoring of this content, Azure Files support file-system-level permissions only in scenarios that involve Azure Active Directory Domain Services.
 
-For more information regarding the use of Scale out File Server (SOFS) on Storage Spaces Direct (S2D) for SAP deployments in Azure, see [Deploy SAP NetWeaver (Windows) for AnyDB on Azure virtual machines](/azure/architecture/reference-architectures/sap/sap-netweaver).
+For more information regarding the use of Scale out File Server (SOFS) on Storage Spaces Direct (S2D) for SAP deployments in Azure, see [Run SAP NetWeaver in Windows on Azure](/azure/architecture/reference-architectures/sap/sap-netweaver).
