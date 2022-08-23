@@ -160,7 +160,7 @@ Next we'll create some entities and perform some basic CRUD operations on the Az
             ))
     );
 
-    createUserDocumentsIfNotExist(new ArrayList(Arrays.asList(maxaxam, nelapin)));
+    createUserDocumentsIfNotExist(new ArrayList<User>(Arrays.asList(maxaxam, nelapin)));
     ```
 
 1. Build and run **CosmosApp.java** in the IDE, or run the program in the terminal by using: 
@@ -278,7 +278,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     }
     ```
 
-1. Copy and paste the following code to the end of the `basicOperations` method, after the document creation code.
+1. Copy and paste the following code to the end of the `basicOperations` method, after the document read code.
 
     ```java
     maxaxam.setLastName("Suh");
@@ -522,9 +522,8 @@ Next we'll create some entities and perform some basic CRUD operations on the Az
     Amidst the terminal output, you should see
 
     ```output
-    INFO: Database and container validation complete
-    INFO: Creating User 1
-    INFO: Creating User 2
+    INFO: Creating WebCustomer 1
+    INFO: Creating WebCustomer 2
     ```
 
 Congratulations! You've created and/or updated your first data in Azure Cosmos DB from a Java application. Let's pause and evaluate what you did here.
@@ -595,10 +594,7 @@ Now that we've demonstrated efficient async database requests with Project React
     Amidst the terminal output, you should see the following. "Read user 1" indicates that the document was retrieved.
 
     ```output
-    INFO: Database and container validation complete
-    INFO: User 1 already exists in the database
-    INFO: User 2 already exists in the database
-    INFO: Read user 1
+    INFO: Read webCustomer 1
     ```
 
 ## Delete documents
@@ -637,12 +633,7 @@ Now that we've demonstrated efficient async database requests with Project React
     Amidst the terminal output, you should see the following. "Deleted user 1" indicates that the document was deleted.
 
     ```output
-    INFO: Database and container validation complete
-    INFO: User 1 already exists in the database
-    INFO: User 2 already exists in the database
-    INFO: Read User 1
-    INFO: Replaced last name for Suh
-    INFO: Deleted User 1
+    INFO: Deleted webCustomer 1
     ```
 
 
