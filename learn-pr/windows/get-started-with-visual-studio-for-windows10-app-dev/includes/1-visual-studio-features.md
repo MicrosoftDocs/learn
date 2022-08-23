@@ -9,10 +9,10 @@ There are three editions of Visual Studio 2022: the *Community*, *Professional*,
 > [!NOTE]
 > The images used in this module may look different if you're using the *Professional* or *Enterprise* edition.
 
-Download and install Visual Studio from the [website](https://visualstudio.microsoft.com/). Check out the [Introduction to Windows 10](/learn/modules/introduction-to-windows10-dev/) module for more detailed instructions (and some automated scripts).
+[Download and install Visual Studio](https://visualstudio.microsoft.com/). Check out the [Introduction to Windows 10](/learn/modules/introduction-to-windows10-dev/) module for more detailed instructions (and some automated scripts).
 
 > [!NOTE]
-> Don't confuse *Visual Studio* with [Visual Studio Code](https://code.visualstudio.com/) (which isn't a standalone editor).
+> Don't confuse *Visual Studio* (a comprehensive IDE for .NET and C# developers) with [Visual Studio Code](https://code.visualstudio.com/) (a standalone lightweight code editor with a plug-in ecosystem that's ideal for web development).
 >
 > Visual Studio is also available for Mac. This module doesn't cover development with Mac. You may want to visit [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
 
@@ -57,7 +57,7 @@ The previous image shows an example with C# code. You can also use the **Editor 
 
 ![Visual Studio Design view.](../media/editor-mode.png)
 
-Preview your UI in the upper window along with the XAML code used to define it. You can switch between views using the **arrow button** (in the border, between the Design and Code views, near the words **Design** and **XAML**). The preview will change whenever you change the XAML file and vis versa.
+Preview your UI in the upper window along with the XAML code used to define it. You can switch between views using the **arrow button** (in the border, between the Design and Code views, near the words **Design** and **XAML**). The preview will change whenever you change the XAML file and vice versa.
 
 In this view, open the **Toolbox** (far left), select your desired controls, and drag them into your app window.
 
