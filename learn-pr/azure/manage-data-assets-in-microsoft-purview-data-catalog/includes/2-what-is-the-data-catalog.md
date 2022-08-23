@@ -38,6 +38,10 @@ While searching is great if you know what you're looking for, there are times wh
 As you're browsing, you can choose additional parameters to apply, like classification (for example: EU Phone Number, Credit Card Number, Country/Region), a specific contact, content type, or related information.
 You can also choose to filter data using an AND or OR conditions.
 
+Search and browse will only return results from collections that users have access to.
+
+Remember in the last lesson, data resources are added to collections and when a scan is performed those assets are added into those collections. Users are assigned permissions in Microsoft Purview by collection, so users will be able to freely use Microsoft Purview Data Catalog's search and browse functions, while keeping data secure and allowing teams to manage their own information.
+
 ## Asset properties
 
 Once you have selected a data asset, you can determine if the asset is what you're looking for by browsing it's properties:
