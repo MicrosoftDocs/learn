@@ -22,7 +22,7 @@ string updatedData = data.Remove(5, 20);
 Console.WriteLine(updatedData);
 ```
 
-When you run the code, you'll get the follow output:
+When you run the code, you'll get the following output:
 
 ```output
 123455000  3  
