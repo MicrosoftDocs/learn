@@ -1,4 +1,4 @@
-Organizations often want to keep their data safe from unauthenticated and unauthorized users. Developers can use Microsoft identity to add authentication to web apps to enable users to sign in. In our banking company example, users need to authenticate themselves so as to access protected data. In order for a web app to use Microsoft identity to enable users to authenticate and obtain tokens, you must register a new app with Azure AD. In this unit, you'll learn about registering web apps Azure AD tenants.
+Organizations often want to keep their data safe from unauthenticated and unauthorized users. Developers can use Microsoft identity to add authentication to web apps to enable users to sign in. In our banking company example, users need to authenticate themselves so as to access protected data. In order for a web app to use Microsoft identity to enable users to authenticate and obtain tokens, you must register a new app with Azure Active Directory (Azure AD). In this unit, you'll learn about registering web apps Azure AD tenants.
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
@@ -14,7 +14,7 @@ Organizations often want to keep their data safe from unauthenticated and unauth
 
 ## Azure AD tenants and user accounts
 
-To build apps that use the Microsoft identity platform for identity and access management, you need access to an Azure Active Directory (Azure AD) tenant. It's in the Azure AD tenant that you register and manage your apps. A tenant represents an organization.
+To build apps that use the Microsoft identity platform for identity and access management, you need access to an Azure AD tenant. It's in the Azure AD tenant that you register and manage your apps. A tenant represents an organization.
 
 Each Azure AD tenant is distinct and separate from other Azure AD tenants. It has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant can allow authentications only from accounts within your tenant (single tenant apps) or from all tenants (multi-tenant apps).
 
