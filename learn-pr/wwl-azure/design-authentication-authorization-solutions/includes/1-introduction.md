@@ -46,9 +46,9 @@ In this module, you learn how to:
 
 - Design for managed identities.
 
-- Design for Azure Key Vault.
+- Design for service principals for applications.
 
-- Design for service principals for applications and control user consent.
+- Design for Azure Key Vault.
 
 ## Skills measured
 

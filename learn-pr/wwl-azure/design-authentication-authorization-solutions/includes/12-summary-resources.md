@@ -1,6 +1,6 @@
 In this module, you learned how to design with authentication and authorization in mind. You reviewed different strategies for implementing managed identities and access control for your applications.
 
-You discovered how role-based access control and conditional access help to support identity protection. You studied the advantages of using business-to-business solutions with Azure AD B2B versus business-to-customer solutions with Azure AD B2C. You explored how service principals for applications work with managed identities and how you can control user consent. You learned how to conduct access reviews, and how to design a solution that uses Azure Key Vault.
+You discovered how role-based access control and conditional access help to support identity protection. You studied the advantages of using business-to-business solutions with Azure AD B2B versus business-to-customer solutions with Azure AD B2C. You explored how service principals for applications work with managed identities. You learned how to conduct access reviews, and how to design a solution that uses Azure Key Vault.
 
 ## Learn more with Azure documentation
 
