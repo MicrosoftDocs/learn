@@ -47,7 +47,7 @@ Taking the data sorting one step further, you can group, or aggregate, results b
 
 Now that you have an idea of what kind of data exists in your table, you can select a subset of that data, for example just flooding events.
 
-1. In the **EventType** column, select the events you want to filter on. Hold down the **Shift** bar on the keyboard to select multiple events, such as **Flash Flood**, **Heavy Rain**, and **Flood**.
+1. In the **EventType** column, select the events you want to filter on. Hold down the **Shift** key on the keyboard to select multiple events, such as **Flash Flood**, **Heavy Rain**, and **Flood**.
 1. Right-click on a selected field, and select **Add selection as filters**. Note that the query above changes to add filtered fields.
 1. Re-run the query by selecting the **Run** button. Note that all resulting events are one of the selected types.
 

@@ -1,4 +1,4 @@
-You have had a chance to look at the raw data of an unfamiliar meterological dataset, and explore some of its properties in the results grid of Azure Data Explorer. 
+You've had a chance to look at the raw data of an unfamiliar meteorological dataset and explore some of its properties in the results grid of Azure Data Explorer. 
 
 Here, you'll use queries to further characterize the size and variability of the data.
 

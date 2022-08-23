@@ -11,12 +11,12 @@ You'll use the Azure Data Explorer web interface to connect to the data. You onl
 
     The query window opens with a connection to the *help* cluster. The query window contains a tutorial, which starts with green commented-out explanations. For this module, you won't be using the built-in tutorial.
 
-1. Expand the database by selecting the **>** arrow to the next of the **Samples** database.
+1. Expand the database by selecting the arrow (**>**) next to the **Samples** database.
 
     :::image type="content" source="../media/3-query.png" alt-text="Secreenshot of query window in ADX.":::
 
-1. You can further expand the **Tables**, and the **Storm_Events** folder to see a list of tables below the database; we'll be using the *StormEvents* table.
+1. Expand the **Tables**, and the **Storm_Events** folder to see a list of tables below the database; we'll be using the *StormEvents* table.
     
     :::image type="content" source="../media/3-tables.png" alt-text="Screenshot of stormevents table.":::
 
-Now you're ready to explore *StormEvents* table. You'll do that in the following exercise.
+Now you're ready to explore the *StormEvents* table. You'll do that in the following exercise.
