@@ -1,8 +1,8 @@
-Organizations build apps to serve various use cases. For example, they may need to build apps that acquire a token for their own identities to call a protected web API. Azure Active Directory (Azure AD) lets you authenticate your app and provide authorized access to a protected web API.
+Organizations build apps to serve various use cases. While most applications require users to interact with them, there are also requirements to build applications that are secure and don't require user interaction. These apps, given that they access resources independently of users, need to prove their identity. Azure Active Directory (Azure AD) lets you authenticate your app and provide authorized access to a protected web API.
 
 ## Example scenario
 
-Suppose you work at a financial technology company as a software developer. Your company is looking to develop an automated service to help customers pay their obligations on time by sending a notification before the due date. Your company uses Python to develop applications. You've been tasked with the responsibility of building an application that runs in the background to call a protected web API.
+Suppose you work at a financial technology company as a software developer. Your company is looking to develop an application that will perform batch jobs. Your company uses Python to develop applications. You've been tasked with the responsibility of building an application that will acquire a token to call a protected web API on behalf of itself.
 
 ## What will you be doing?
 
