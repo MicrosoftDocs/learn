@@ -18,7 +18,7 @@ To build apps that use the Microsoft identity platform for identity and access m
 
 Each Azure AD tenant is distinct and separate from other Azure AD tenants. It has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant can allow authentications only from accounts within your tenant (single tenant apps) or from all tenants (multi-tenant apps).
 
-The Microsoft identity platform helps you build applications your users and customers can sign in to using their several identity types, including:
+The Microsoft identity platform helps you build applications your users and customers can sign in to using several identity types. These identities include:
 
 - Work or school accounts, provisioned through Azure AD
 - Personal Microsoft account, like Skype, Xbox, and Outlook.com
@@ -30,7 +30,7 @@ In this module, we focus on authenticating a work or school accounts provisioned
 
 ## Azure AD app registration
 
-In order for a web app to use Microsoft identity to enable users to authenticate, you must register a new app with Azure AD. This can be done on the [Azure portal](https://portal.azure.com/). Your web app should live in an Azure AD tenant. If your account is present in more than one Azure AD tenant, select your profile at the top right corner in the menu on top of the page, and then switch directory to change your portal session to the desired Azure AD tenant.
+In order for a web app to use Microsoft identity to enable users to authenticate, you must register a new app with Azure AD. This can be done on the [Azure portal](https://portal.azure.com/). Your web app should live in an Azure AD tenant.
 
 When registering a web app in Azure AD, ensure the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URL provided by the app when the authentication process is started. The authorization code will be sent to this endpoint, which means you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
 
