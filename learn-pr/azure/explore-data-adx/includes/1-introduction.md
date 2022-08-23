@@ -12,4 +12,4 @@ While this module uses some queries in Kusto Query Language to characterize the 
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to the identify the schema, range, and completeness of an unfamiliar dataset using Azure Data Explorer.
+By the end of this session, you'll be able to identify the schema, range, and completeness of an unfamiliar dataset using Azure Data Explorer.

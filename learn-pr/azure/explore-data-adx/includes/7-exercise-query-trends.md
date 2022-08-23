@@ -3,7 +3,7 @@ In this unit, you'll use visualizations to see how the data is distributed.
 
 ## Timechart
 
-In the last unit, you saw that some of the data columns were of type **datetime**, and represented start and end times for storm events. In order to see if this dataset is complete and doesn't have any gaps, you can plot a count of entries vs. time. Note that the previous unit used a subset of 50 data rows, where this unit will use the full dataset. The following query creates a timechart of the number of storm events per 8-hour bin as a function of time.
+In the last unit, you saw that some of the data columns were of type **datetime**, and represented start and end times for storm events. In order to see on which dates you have storm data events, you can plot a count of entries vs. time. Note that the previous unit used a subset of 50 data rows, where this unit will use the full dataset. The following query creates a timechart of the number of storm events per 8-hour bin as a function of time.
 
 1. Run the following query:
 
