@@ -1,4 +1,4 @@
-In this unit, you'll create a dashboard from a query. 
+You've connected to resources containing meterological data. In this unit, you'll create a dashboard from a query to visualize insights in this data. 
 
 ## Pin query to dashboard
 

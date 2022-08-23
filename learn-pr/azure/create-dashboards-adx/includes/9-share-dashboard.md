@@ -2,7 +2,7 @@ You've gained insights from an unfamiliar dataset and built a dashboard to commu
 
 ## Manage permissions and share dashboard
 
-In order to share this dashboard, you must first give access to your friend. A dashboard viewer needs the following permissions:
+In order to share this dashboard, you must first give access to your colleague. A dashboard viewer needs the following permissions:
 
 * Access to the underlying [database in the Azure Data Explorer cluster](/azure/data-explorer/manage-database-permissions). Database access can be managed in the Azure Portal.
 * Dashboard permissions

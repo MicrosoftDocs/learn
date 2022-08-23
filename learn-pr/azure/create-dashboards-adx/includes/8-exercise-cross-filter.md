@@ -1,3 +1,5 @@
+You've created dashboard parameters to filter dashboard tiles. In this unit, you'll create cross-filters to use as dashboard parameters.
+
 ## Use cross-filters as dashboard parameters
 
 Cross-filters allow you to select a value in one visual, and this value is used to filter other dashboard visuals. Instead of selecting a parameter in the list above, you select the parameter by selecting a field on a tile.
@@ -28,10 +30,9 @@ You only need to add a cross-filter on the tile you'll be selecting. All other t
 
 ## Use a cross-filter
 
-To use the cross-filter, go to the **Events count by state** and click on the bar for the state you want to select. For example, see if you can select **Ohio**. 
+1. To use the cross-filter, go to the **Events count by state** tile, and click on the bar for the state you want to select. For example, see if you can select **Ohio**. 
+1. Now look at the **Events by date** visual. Do you notice how it's changed to just show data for the state of Ohio? Your dashboard should look like the following image:
 
-Now look at the **Events by date** visual. Do you notice how it's changed to just show data for the state of Ohio? You should see tiles like the following image:
-
-:::image type="content" source="../media/8-cross-filter-selection.png" alt-text="Screenshot of cross-filter in use.":::
+    :::image type="content" source="../media/8-cross-filter-selection.png" alt-text="Screenshot of cross-filter in use.":::
 
 

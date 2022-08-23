@@ -1,3 +1,4 @@
+You've created a dashboard from a query in the Azure Data Explorer web UI. In this unit, you'll add a new tile to an existing dashboard.
 
 ## Add a new tile
 
