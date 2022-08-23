@@ -17314,6 +17314,11 @@
       "source_path": "learn-pr/wwl-azure/design-governance/11-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-governance/12-summary-resources",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principals.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/9-two-design-service-principals",
+      "redirect_document_id": true
     }
   ]
 }
