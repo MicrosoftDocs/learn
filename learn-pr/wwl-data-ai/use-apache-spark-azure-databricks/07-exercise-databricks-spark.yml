@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-apache-spark-azure-databricks.exercise-use
+title: Exercise - Use Spark in Azure Databricks
+metadata:
+  title: Exercise - Use Spark in Azure Databricks
+  description: "Exercise - Use Spark in Azure Databricks"
+  ms.date: 08/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 45
+content: |
+  [!include[](includes/07-exercise-databricks-spark.md)]
