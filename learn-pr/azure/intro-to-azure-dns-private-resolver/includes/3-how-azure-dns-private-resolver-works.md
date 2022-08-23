@@ -1,5 +1,3 @@
-## How Azure Private DNS Resolver Works
-
 Assume if you are running workloads in Azure PaaS services with private endpoint, or IaaS workload with Azure provided DNS, these workloads use Azure private DNS zone for name resolution within Azure. In a hybrid environment, when an on-premises network is required to connect these workloads through FQDN/domain name, it requires a name resolution that resolves names hosted in Azure private DNS zone.
 
 The Azure DNS private resolver that is deployed in virtual network acts as a resolver to handle the name resolution queries from on-premises to Azure and vice versa.
