@@ -144,7 +144,7 @@ else:
 
 ### Run the daemon app
 
-Let's verify that our Python daemon works. If you haven't already, change to the `cli-access-protected-api` directory and run the following command:
+Let's verify that our Python daemon app works. If you haven't already, change to the `cli-access-protected-api` directory and run the following command:
 
 ```bash
 python cli.py

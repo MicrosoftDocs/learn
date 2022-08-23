@@ -1,14 +1,14 @@
-Your application will acquire a token to call a protected web API on behalf of itself (not on behalf of a user). The application uses the standard OAuth 2.0 client credentials grant.
+Your application will acquire a token to call a protected web API on behalf of itself (not on behalf of a user). The application uses the standard OAuth 2.0 client credentials flow.
 
 In this unit, you'll learn about confidential client application, OAuth 2.0 client credentials flow and how to grant permissions to the confidential client application itself.
 
 ## Confidential client applications
 
-Confidential client applications are apps that run on servers (web apps, web API apps, or even service/daemon apps). They're considered difficult to access, and for that reason can keep an application secret. Confidential clients can hold configuration-time secrets. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract.
+Confidential client applications are apps that run on servers (service/daemon apps). They're considered difficult to access, and for that reason can keep an application secret. Confidential clients can hold configuration-time secrets. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract.
 
 ## OAuth 2.0 client credentials flow
 
-The OAuth 2.0 client credentials grant flow permits a confidential client application to use its own credentials, instead of impersonating a user, to authenticate when calling another web service. There's no user authentication involved in the process.
+The OAuth 2.0 client credentials flow permits a confidential client application to use its own credentials, instead of impersonating a user, to authenticate when calling a protected web API. There's no user authentication involved in the process.
 
 In the client credentials flow, permissions are granted directly to the application itself by an administrator. When the app presents a token to a resource, the resource enforces that the app itself has authorization to perform an action since there's no user involved in the authentication.
 
