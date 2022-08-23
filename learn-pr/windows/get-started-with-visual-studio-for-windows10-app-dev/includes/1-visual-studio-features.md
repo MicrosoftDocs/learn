@@ -9,7 +9,7 @@ There are three editions of Visual Studio 2022: the *Community*, *Professional*,
 > [!NOTE]
 > The images used in this module may look different if you're using the *Professional* or *Enterprise* edition.
 
-Download and install Visual Studio from the [website](https://visualstudio.microsoft.com/). Check out the [Introduction to Windows 10](https://docs.microsoft.com/en-us/learn/modules/introduction-to-windows10-dev/) module for more detailed instructions (and some automated scripts).
+Download and install Visual Studio from the [website](https://visualstudio.microsoft.com/). Check out the [Introduction to Windows 10](https://docs.microsoft.com/learn/modules/introduction-to-windows10-dev/) module for more detailed instructions (and some automated scripts).
 
 > [!NOTE]
 > Don't confuse *Visual Studio* with [Visual Studio Code](https://code.visualstudio.com/) (which isn't a standalone editor).

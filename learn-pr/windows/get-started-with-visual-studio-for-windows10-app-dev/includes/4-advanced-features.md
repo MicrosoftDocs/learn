@@ -8,7 +8,7 @@ The Visual Studio IDE has light themes and dark themes with lots of variation be
 
 1. Click **Tools**, hover over **Theme** and select **Dark** to apply the *Dark theme*.
 
-    ![Theme](../media/theme.png)
+    ![Visual Studio Themes](../media/theme.png)
 
     Visual Studio with *Dark theme*:
 
