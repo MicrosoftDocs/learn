@@ -45,7 +45,7 @@ Whether you get stuck and need to peek at the solution or you finish successfull
 
 In case you're not familiar with HTML, it's the markup language that is used to create all web pages. You can skip this section if you're already well versed in HTML. It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
 
-In HTML, you can define the structure of a document using tags. A tag is comprised of:
+In HTML, you can define the structure of a document using tags. A tag is composed of:
 
 - an opening angle bracket `<`
 - a closing angle bracket `>`
