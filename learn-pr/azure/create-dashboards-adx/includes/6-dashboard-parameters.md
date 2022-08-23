@@ -1,6 +1,5 @@
 You've created a dashboard to view insights into your storm events dataset. In this unit, you'll see how parameters can be used as filters on the dashboard tiles. 
 
-
 ## What are parameters?
 
 Parameters are used as building blocks for dashboard filters in Azure Data Explorer dashboards. They're managed in the dashboard scope, and can be added to queries to filter the data presented by the underlying visual. A query can use one or more parameters. This document describes the creation and use of parameters and linked filters in Azure Data Explorer dashboards. Parameters can be used to slice and dice dashboard visuals 
