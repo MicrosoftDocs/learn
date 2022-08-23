@@ -24,18 +24,18 @@ quiz:
       explanation: "That's correct. You can't restore an Azure Cosmos DB account or any of its data, only the Azure support team can do that, so a support ticket must be opened to restore the data."
     - content: "Under Azure Cosmos DB account Data Explorer, run the SQL Query **restore from \"AZUREBLOBSTORAGEPATH\"**, replace AZUREBLOBSTORAGEPATH for the URL of your backup file."
       isCorrect: false
-      explanation: "That's incorrect. Data Explorer is used to query the Azure Cosmos DB account data, the restore command does not exist."
+      explanation: "That's incorrect. Data Explorer is used to query the Azure Cosmos DB account data, the restore command doesn't exist."
   - content: "Which of the following options must you configure for continuous backup mode to work properly?"
     choices:
     - content: "Backup storage redundancy."
       isCorrect: false
-      explanation: "That's incorrect. Backup storage redundancy is a periodic backup setting, for the continuous backup mode, there is no need to configure intervals, retention, or storage redundancy."
+      explanation: "That's incorrect. Backup storage redundancy is a periodic backup setting, for the continuous backup mode, there's no need to configure intervals, retention, or storage redundancy."
     - content: "Retention period."
       isCorrect: false
-      explanation: "That's incorrect. Retention period is a periodic backup setting, for the continuous backup mode, there is no need to configure intervals, retention, or storage redundancy."
+      explanation: "That's incorrect. Retention period is a periodic backup setting, for the continuous backup mode, there's no need to configure intervals, retention, or storage redundancy."
     - content: "Continuous backup mode doesn't require any setting to be configured."
       isCorrect: true
-      explanation: "That's correct. Unlike periodic backups, there is no need to configure intervals, retention, or storage redundancy."
+      explanation: "That's correct. Unlike periodic backups, there's no need to configure intervals, retention, or storage redundancy."
   - content: "What is a limitation of using continuous backup mode?"
     choices:
     - content: "You can only restore over the existing Azure Cosmos DB account at the container level."
