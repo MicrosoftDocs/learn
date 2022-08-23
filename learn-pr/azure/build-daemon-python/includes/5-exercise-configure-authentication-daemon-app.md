@@ -1,26 +1,10 @@
 You'll use the Microsoft Authentication Library (MSAL) for Python to add authentication to a daemon app that uses its identity to get access tokens from Azure Active Directory (Azure AD).
 
-In this exercise, you'll configure application permissions for Microsoft Graph and build your daemon app.
-
-## Application permission to Microsoft Graph
-
-Configure application permissions for an application that needs to authenticate as itself without user interaction or consent. Application permissions are typically used by background services or console apps that access an API in a "headless" manner, and by web APIs that access another (downstream) API.
-
-In the following steps, you grant the registered app permission to Microsoft Graph's _User.Read.All_ permission:
-
-1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
-1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to select the tenant containing your client app's registration.
-1. Select **Azure Active Directory** > **App registrations**, and then select your client application.
-1. Select **API permissions** > **Add a permission** > **Microsoft Graph** > **Application permissions**.
-1. All permissions exposed by Microsoft Graph are shown under **Select permissions**.
-1. Select the permission or permissions you want to grant your application. In our case, we have a daemon app that needs to read users profile.
-
-    Under **Select permissions**, expand **User**, and then select the *User.Read.All* permission.
-1. Select **Add permissions**.
-
-Some permissions, like Microsoft Graph's *User.Read.All* permission, require admin consent. You grant admin consent by selecting the **Grant admin consent** button.
+In this exercise, you'll build your daemon app.
 
 ## Install the authentication library
+
+MSAL for Python allows you to sign in users or apps with Microsoft identities (Azure AD, Microsoft Accounts and Azure AD B2C accounts) and obtain tokens to call protected web API. 
 
 After activating your virtual environment, you can now install the MSAL for Python package using `pip`:
 

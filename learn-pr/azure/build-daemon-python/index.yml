@@ -29,12 +29,12 @@ products:
 subjects:
   - cloud-computing
 units:
-  - learn.build-daemon-python.introduction
-  - learn.build-daemon-python.azure-daemon-app-authentication-authorization
-  - learn.build-daemon-python.exercise-register-azure-ad-app
-  - learn.build-daemon-python.explore-microsoft-authentication-library
-  - learn.build-daemon-python.exercise-configure-authentication-daemon-app
-  - learn.build-daemon-python.knowledge-check
-  - learn.build-daemon-python.summary
+- learn.build-daemon-python.introduction
+- learn.build-daemon-python.azure-daemon-app-authentication-authorization
+- learn.build-daemon-python.exercise-register-azure-ad-app
+- learn.build-daemon-python.explore-client-confidential-app
+- learn.build-daemon-python.exercise-configure-authentication-daemon-app
+- learn.build-daemon-python.knowledge-check
+- learn.build-daemon-python.summary
 badge:
   uid: learn.build-daemon-python.badge
