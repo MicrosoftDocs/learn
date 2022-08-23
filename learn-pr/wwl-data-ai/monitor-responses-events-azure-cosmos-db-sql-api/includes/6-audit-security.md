@@ -2,9 +2,9 @@ There are several options we have to audit security on your Azure Cosmos DB Acco
 
 ## Activity Logs
 
-By using audit logging and activity logs, you can monitor your account for normal and abnormal activity. You can view what operations were done on your resources, who started the operation, when the operation occurred, the status of the operation.
+By using audit logging and activity logs, you can monitor your account for normal and abnormal activity. You can view what operations were done on your resources, who started the operation, when the operation occurred, and the status of the operation.
 
-Activity logs, which are automatically available, contain all write operations (PUT, POST, DELETE) for your Cosmos DB resources except read operations (GET). Activity logs can be used to find an error when troubleshooting or to monitor how a user in your organization modified a resource.
+Activity logs, which are automatically available, contain all write operations (PUT, POST, DELETE) for your Cosmos DB resources. Activity logs can be used to find an error when troubleshooting or to monitor how a user in your organization modified a resource.
 
 To view the Activity log, on the Azure Cosmos DB account page, select **Activity log**. 
 
