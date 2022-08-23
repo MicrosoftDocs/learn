@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "You want to connect to an Azure Databricks workspace from Azure Data Factory. What must you define in Azure Data Factory?"
+    choices:
+    - content: "A global parameter"
+      isCorrect: false
+      explanation: "Incorrect. A global parameter is used to define a parameter that can have its value assigned dynamically."
+    - content: "A linked service"
+      isCorrect: true
+      explanation: "Correct. An Azure Databricks linked service is required to connect to an Azure Databricks workspace."
+    - content: "A customer managed key"
+      isCorrect: false
+      explanation: "Incorrect. A user managed key enables you to encrypt data in your Azure data Factory by using a user-defined key."
+  - content: "You need to run a notebook in the Azure Databricks workspace referenced by a linked service. What type of activity should you add to a pipeline?"
+    choices:
+    - content: "Notebook"
+      isCorrect: true
+      explanation: "Correct. Use a Notebook activity to run an Azure Databricks notebook."
+    - content: "Python"
+      isCorrect: false
+      explanation: "Incorrect. Use a Python activity to run a Python script."
+    - content: "Jar"
+      isCorrect: false
+      explanation: "Incorrect. Use a Jar activity to run a compiled Java Archive (JAR)."
+  - content: "You need to use a parameter in a notebook. Which library should you use to define parameters with default values and get parameter values that are passed to the notebook?"
+    choices:
+    - content: "notebook"
+      isCorrect: false
+      explanation: "Incorrect. You can use the notebook library to exit the notebook and return an output value."
+    - content: "argparse"
+      isCorrect: false
+      explanation: "Incorrect. You can use argparse to read parameters in a Python script."
+    - content: "dbutils.widget"
+      isCorrect: true
+      explanation: "Correct. Use the dbutils.widget library to define and read parameters in an Azure Databricks notebook."

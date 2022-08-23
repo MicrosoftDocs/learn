@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.create-linked-service-for
+title: Create a linked service for Azure Databricks
+metadata:
+  title: Create a linked service for Azure Databricks
+  description: "Create a linked service for Azure Databricks"
+  ms.date: 08/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/03-linked-service.md)]

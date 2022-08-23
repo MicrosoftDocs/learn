@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.use-notebook-activity-pipeline
+title: Use a Notebook activity in a pipeline
+metadata:
+  title: Use a Notebook activity in a pipeline
+  description: "Use a Notebook activity in a pipeline"
+  ms.date: 08/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/04-notebook-activity.md)]

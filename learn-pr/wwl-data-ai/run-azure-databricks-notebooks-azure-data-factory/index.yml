@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory
+metadata:
+  title: Run Azure Databricks Notebooks with Azure Data Factory
+  description: "Run Azure Databricks Notebooks with Azure Data Factory"
+  ms.date: 08/23/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run Azure Databricks Notebooks with Azure Data Factory
+summary: Using pipelines in Azure Data Factory to run notebooks in Azure Databricks enables you to automate data engineering processes at cloud scale.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe how Azure Databricks notebooks can be run in a pipeline.
+  - Create an Azure Data Factory linked service for Azure Databricks.
+  - Use a Notebook activity in a pipeline.
+  - Pass parameters to a notebook.
+prerequisites: |
+  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/learn/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-data-factory
+- azure-databricks
+subjects:
+- data-engineering
+units:
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.introduction
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.understand-pipelines
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.create-linked-service-for
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.use-notebook-activity-pipeline
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.use-parameters-notebook
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.exercise-run-azure-databricks-notebook
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.knowledge-check
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory.summary
+badge:
+  uid: learn.wwl.run-azure-databricks-notebooks-azure-data-factory.badge
