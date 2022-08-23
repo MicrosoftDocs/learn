@@ -30,7 +30,7 @@ The previous task links your GitHub repository to your Azure DevOps organization
 1. Sign into your account at [dev.azure.com](https://dev.azure.com?azure-portal=true).
 1. Select **+ New project**.
 
-    The **Create new project** dialog box opens.
+    The **Create new project** dialog opens.
 1. In the **Project name** field, enter a name such as *mslearn-java-containers*.
 1. Under **Visibility**, you choose whether to make your project public or private. For now, you can choose private.
 
@@ -58,9 +58,9 @@ To add the variables:
     > Set the name of the App Service instance, not its host name. In this example, you would enter `java-container-cicd-18116` and not `java-container-cicd-18116.azurewebsites.net`.
 
 1. Repeat the process to add another four variables named `RegistryName` with the following values of your Azure Container Registry login server, such as `javacontainercicd18116.azurecr.io`.
-1. Repeat the process to add another variable named `MySqlServer` with the value of your MySQL server host name, such as `java-container-cicd-18116`. You should not use the fully qualified domain, just the host. If you followed the instructions as-is, then this is the same as your web app name.
+1. Repeat the process to add another variable named `MySqlServer` with the value of your MySQL server host name, such as `java-container-cicd-18116`. You shouldn't use the fully qualified domain, just the host. If you followed the instructions as is, then this is the same as your web app name.
 1. Repeat the process to add another variable named `MySqlUserName` with the value of the MySQL user name used to create the server, such as `sysadmin`.
-1. Repeat the process to add another variable named `MySqlPassword` with the value of the MySQL password used to create the server, such as `P\@ssw0rd`. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it will not be shown as plaintext once saved.
+1. Repeat the process to add another variable named `MySqlPassword` with the value of the MySQL password used to create the server, such as `P\@ssw0rd`. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it won't be shown as plaintext once saved.
 
     > [!IMPORTANT]
     > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Vault, see [Configure and manage secrets in Azure Key Vault](/learn/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
@@ -76,11 +76,11 @@ To add the variables:
 Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 
 > [!IMPORTANT]
-> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
+> Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account and you have owner access to the resource groups.
 
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
+1. Select **New service connection**, then select **Azure Resource Manager**, then select **Next**.
 1. Choose the recommended settings as **Service principal (automatic)**, then select **Next**.
 1. Fill in these fields:
 
@@ -242,7 +242,7 @@ Add this code to the end of the pipeline:
 
 1. Select **Save and run** from the top right corner of the page. Confirm the **Save and run** to trigger a run.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web site's deploy task, and copy the URL to view the deployed site.
+1. After the build has succeeded, select the website's deploy task, and copy the URL to view the deployed site.
 
     :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines showing the location of the web site URL.":::
 

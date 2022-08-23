@@ -1,4 +1,4 @@
-Azure and Azure DevOps support development of just about any kind of application, including Java. Azure DevOps enables you to build and deploy to just about anywhere. On Azure, you can deploy to a virtual machine, an app service, a serverless solution, or as a container. You can even deploy your application from Azure DevOps to another cloud or on-premises.
+Azure and Azure DevOps support development of just about any kind of application, including Java. Use Azure DevOps to build and deploy anywhere. On Azure, you can deploy to a virtual machine, an app service, a serverless solution, or as a container. You can even deploy your application from Azure DevOps to another cloud or on-premises.
 
 In this module, you create an automated CI/CD pipeline for a Java application that you deploy as a Docker container. You learn how a project can begin in GitHub and flow through Azure Pipelines to build, publish, and deploy to Azure App Service.
 
