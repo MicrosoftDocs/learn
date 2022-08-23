@@ -1,4 +1,4 @@
-Organizations often want to keep their data safe from unauthenticated and unauthorized users. Developers can use Microsoft identity to add authentication to web apps to enable users to sign in. In our banking company example, users need to authenticate themselves so as to access protected data. In order for a web app to use Microsoft identity to enable users to authenticate and obtain tokens, you must register a new app with Azure AD. In this unit, you'll learn how to register a web app in an Azure AD tenant and create a test user.
+Organizations often want to keep their data safe from unauthenticated and unauthorized users. Developers can use Microsoft identity to add authentication to web apps to enable users to sign in. In our banking company example, users need to authenticate themselves so as to access protected data. In order for a web app to use Microsoft identity to enable users to authenticate and obtain tokens, you must register a new app with Azure AD. In this unit, you'll learn about registering web apps Azure AD tenants.
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
