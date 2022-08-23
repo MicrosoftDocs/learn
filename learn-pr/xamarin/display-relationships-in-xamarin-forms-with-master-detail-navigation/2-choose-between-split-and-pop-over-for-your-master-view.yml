@@ -5,8 +5,8 @@ metadata:
   title: Choose between split and pop-over for your master view
   description: "Decide between displaying master-detail navigation with a drawer split, pop-over, or varying that based on the device form factor."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Display a collection by using a master-detail split view
   description: "Implement a master-detail split navigation, which shows a list of detail choices and the selected details in MasterDetailPage."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

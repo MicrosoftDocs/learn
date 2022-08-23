@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a tip calculator app
   description: "Create a tip calculator app using Visual Studio 2019."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

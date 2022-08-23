@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Manage selection by using a viewmodel
   description: "Add code to a viewmodel to help maintain selection state."
   ms.date: 05/01/2019
-  author: patridge
-  ms.author: adpatrid
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

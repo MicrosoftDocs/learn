@@ -4,8 +4,8 @@ metadata:
   title: Create accessible apps with Xamarin.Forms
   description: Learn how to enhance Xamarin.Forms apps with automation properties to improve support for screen readers to make apps more accessible.
   ms.date: 04/20/2021
-  author: jamont
-  ms.author: jamont
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Create accessible apps with Xamarin.Forms
