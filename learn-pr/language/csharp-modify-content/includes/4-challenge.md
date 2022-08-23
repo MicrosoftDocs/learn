@@ -6,7 +6,7 @@ In this challenge, you'll work with a string that contains a fragment of HTML. Y
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor then select the `del` or `backspace key` to delete it.
 
 ### Step 2: Write code in the .NET Editor to extract data, replace data, and remove data from an input string.
 
@@ -24,7 +24,7 @@ Console.WriteLine(quantity);
 Console.WriteLine(output);
 ```
 
-The following listing is the desired output once you've modified the code in the starting point.
+The following listing is the desired output once you've modified the code in the starting point:
 
 ```output
 Quantity: 5000
@@ -43,16 +43,16 @@ Whether you get stuck and need to peek at the solution or you finish successfull
 
 ### Quick HTML primer
 
-In case you're not familiar with HTML, it's the markup language that is used to create all web pages. This section can be skipped if you're already well versed in HTML. It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
+In case you're not familiar with HTML, it's the markup language that is used to create all web pages. You can skip this section if you're already well versed in HTML. It's not designed to be a comprehensive tutorial, but provides enough information to complete this challenge.
 
-In HTML, you define the structure of a document using tags. A tag is comprised of:
+In HTML, you can define the structure of a document using tags. A tag is comprised of:
 
 - an opening angle bracket `<`
 - a closing angle bracket `>`
-- a word describing the type of tag, so for example: `<div>`, `<span>`, `<h2>` etc.
+- a word describing the type of tag, so for example: `<div>`, `<span>`, `<h2>`, and so on.
 
-Each tag has a corresponding closing tag that is indicated by a forward slash character `/`. So, if you see `<div>` there should be a corresponding `</div>` tag.
+Each tag has a corresponding closing tag that's indicated by a forward slash character `/`. So, if you see `<div>`, there should be a corresponding `</div>` tag.
 
-The content between the opening and closing tag is the content of that tag. The content can include text and other tags.
+The data between the opening and closing tag is that tag's content. The content can include text and other tags.
 
-A set of tags can be embedded inside another set of tags. In fact, that is what gives an HTML document its hierarchical structure.
+You cam embed a set of tags inside another set of tags. In fact, that is what gives an HTML document its hierarchical structure.
