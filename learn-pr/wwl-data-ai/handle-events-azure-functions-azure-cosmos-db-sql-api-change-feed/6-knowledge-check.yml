@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/03/2022
+  ms.date: 08/23/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Input binding"
       isCorrect: false
-      explanation: "Incorrect. An input binding will not start the execution of a function."
+      explanation: "Incorrect. An input binding won't start the execution of a function."
     - content: "Trigger binding"
       isCorrect: true
       explanation: "Correct. A trigger binding will start executing a function when the change feed has a new batch of changes to process."
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct. The **IAsyncCollector** class contains the **AddAsync** method to add items to a container."
     - content: "``out IEnumerable<Product> items``"
       isCorrect: false
-      explanation: "Incorrect. The **IEnumerable** class does not contain the necessary methods to add items to a container."
+      explanation: "Incorrect. The **IEnumerable** class doesn't contain the necessary methods to add items to a container."
   - content: "When configuring an Azure Cosmos DB SQL API trigger, which of the following settings would be valid?"
     choices:
     - content: "Assign the **type** to `AzureCosmosDBTrigger`"
