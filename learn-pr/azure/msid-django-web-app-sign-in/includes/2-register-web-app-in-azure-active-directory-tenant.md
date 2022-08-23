@@ -1,42 +1,4 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
+Organizations often want to keep their data safe from unauthenticated and unauthorized users. Developers can use Microsoft identity to add authentication to web apps to enable users to sign in. In our banking company example, users need to authenticate themselves so as to access protected data. In order for a web app to use Microsoft identity to enable users to authenticate and obtain tokens, you must register a new app with Azure AD. In this unit, you'll learn how to register a web app in an Azure AD tenant and create a test user.
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
@@ -50,29 +12,38 @@ TODO: add a visual element
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
 -->
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+## Azure AD tenants and user accounts
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+To build apps that use the Microsoft identity platform for identity and access management, you need access to an Azure Active Directory (Azure AD) tenant. It's in the Azure AD tenant that you register and manage your apps. A tenant represents an organization.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+Each Azure AD tenant is distinct and separate from other Azure AD tenants. It has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant can allow authentications only from accounts within your tenant (single tenant apps) or from all tenants (multi-tenant apps).
 
-<!-- Do not add a unit summary or references/links -->
+The Microsoft identity platform helps you build applications your users and customers can sign in to using their several identity types, including:
+
+- Work or school accounts, provisioned through Azure AD
+- Personal Microsoft account, like Skype, Xbox, and Outlook.com
+- Social or local accounts, by using Azure AD B2C
+
+In this module, we focus on authenticating a work or school accounts provisioned through Azure AD.
+
+![Screenshot of Azure portal showing page to manage users and tenants.](../media/02-azure-active-directory-tenants-and-users.png)
+
+## Azure AD app registration
+
+In order for a web app to use Microsoft identity to enable users to authenticate, you must register a new app with Azure AD. This can be done on the [Azure portal](https://portal.azure.com/). Your web app should live in an Azure AD tenant. If your account is present in more than one Azure AD tenant, select your profile at the top right corner in the menu on top of the page, and then switch directory to change your portal session to the desired Azure AD tenant.
+
+When registering a web app in Azure AD, ensure the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URL provided by the app when the authentication process is started. The authorization code will be sent to this endpoint, which means you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
+
+A sign-out URL should also be specified so the authentication libraries and/or middleware deletes any cached tokens or other data that is only needed for signed in users.
+
+![Screenshot of Azure portal showing web app registration form.](../media/02-azure-active-directory-portal-new-app-details.png)
+
+The web app will also need a client secret to sign in with Azure AD to exchange the authorization code for an access token.
+
+![Screenshot of Azure portal showing page to create a new app secret.](../media/02-azure-active-directory-portal-new-app-secret.png)
+
+There are three things you'll need from the Azure AD app registration:
+
+- **Tenant ID**: ID of your Azure AD directory
+- **Client ID**: unique autogenerated ID of the app (this is also referred to as the application ID)
+- **Client secret**: secret you created during app registration
