@@ -22,7 +22,7 @@ The automated machine learning capability in Azure Machine Learning supports *su
 - **Regression** (predicting numeric values)
 - **Time series forecasting** (predicting numeric values at a future point in time)
 
-In Automated Machine Learning you can select from several types fo tasks: 
+In Automated Machine Learning you can select from several types of tasks: 
 ![Screenshot of portal choices in automated machine learning.](../media/choose-task-settings.png)
 
 In Automated Machine Learning, you can select configurations for the primary metric, type of model used for training, exit criteria, and concurrency limits.  

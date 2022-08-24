@@ -17689,6 +17689,11 @@
       "source_path": "learn-pr/azure/distribute-data-globally-with-cosmos-db/6-summary-cleanup.yml",
       "redirect_url": "https://docs.microsoft.com/learn/modules/work-with-cosmos-db/",
       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principals.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/9-two-design-service-principals",
+      "redirect_document_id": true
     }
   ]
 }
