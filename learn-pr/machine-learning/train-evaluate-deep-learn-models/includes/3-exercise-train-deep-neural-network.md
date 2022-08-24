@@ -43,9 +43,9 @@ If you don't already have an Azure Machine Learning workspace in your Azure subs
 
 1. When deployment completes, select **Go to resource**. Your **Machine learning** pane appears.
 
-1. Select **Launch studio**, or go to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign in using your Microsoft account. The **Microsoft Azure Machine Learning Studio** page appears.
+1. Select **Launch studio**, or go to [https://ml.azure.com](https://ml.azure.com?azure-portal=true), and sign in using your Microsoft account. The **Microsoft Azure Machine Learning studio** page appears.
 
-1. In *Azure Machine Learning Studio*, toggle the **&#9776;** icon at the top left to expane/collapse its menu pane. You can use these options to manage the resources in your workspace.
+1. In *Azure Machine Learning studio*, toggle the **&#9776;** icon at the top left to expane/collapse its menu pane. You can use these options to manage the resources in your workspace.
 
 ### Create a compute instance
 
@@ -69,7 +69,7 @@ To run the notebook used in this exercise, you will need a compute instance in y
 
 The files used in this module, and other related modules, are published in the **MicrosoftDocs/ml-basics** GitHub repository. If you haven't already done so, use the following steps to clone the repository to your Azure Machine Learning workspace:
 
-1. Select **Workspaces** in the left-hand menu of Azure Machine Learning Studio, then select the workspace you created in the list.
+1. Select **Workspaces** in the left-hand menu of Azure Machine Learning studio, then select the workspace you created in the list.
 
 1. Under the **Author** column on the left, select the **Notebooks** link to open Jupyter Notebooks. The **Notebooks** pane appears.
 
