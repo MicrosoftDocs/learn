@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-configure-azure-arc-enabled-sql-managed-instance.exercise-restore-adventureworks2019-azure-arc-enabled-sql-mi
+title: Exercise - Restore AdventureWorks2019 Azure Arc-enabled SQL Managed Instance
+metadata:
+  title: learning-content
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 8/23/2022
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-restore-adventureworks2019-azure-arc-enabled-sql-mi.md)]

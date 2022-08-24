@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-configure-azure-arc-enabled-sql-managed-instance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 8/23/2022
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Arc-enabled SQL Managed Instance provides built-in automated database backups. Which type of database is not backed up as part of this built-in service?"
+    choices:
+    - content: "Master database"
+      isCorrect: false
+      explanation: "That's incorrect. This database is automatically backed up."
+    - content: "User database in Full Recovery Model"
+      isCorrect: false
+      explanation: "That's incorrect. This database is automatically backed up."
+    - content: "User database in Simple Recovery Model"
+      isCorrect: true
+      explanation: "That's correct. Databases in the Simple Recovery Model are not supported in the automated backup."
+  - content: "Which of the following options can be provided to an Azure subscription after deploying a directly-connected Arc-enabled SQL Managed Instance?"
+    choices:
+    - content: "Log data"
+      isCorrect: true
+      explanation: "That's correct. Log data can be optionally uploaded to a subscription, where you can take advantage of the built-in capabilities of Azure to analyze your environment."
+    - content: "Metrics data"
+      isCorrect: true
+      explanation: "That's correct. Metric data can be optionally uploaded to a subscription, where you can take advantage of the built-in capabilities of Azure to analyze your environment."
+    - content: "Usage data"
+      isCorrect: false
+      explanation: "That's incorrect. Usage data is required to be uploaded for billing purposes."
+  - content: "Which of the following steps are valid for obtaining usage data through an Azure subscription when using an indirectly-connected mode Arc-enabled SQL Managed Instance?"
+    choices:
+    - content: "Create a Service Principal"
+      isCorrect: true
+      explanation: "That's correct. The Service Principal is required to upload Usage and Metric data to an Azure subscription."
+    - content: "Use az arcdata dc export to export usage type data from your data controller"
+      isCorrect: true
+      explanation: "That's correct. The CLI command enables exporting usage data from the data controller."
+    - content: "Use az arcdata dc update to update usage type data to the Azure subscription"
+      isCorrect: false
+      explanation: "That's incorrect. This command is used to update features or configurations on the data controller. Use az arcdata dc upload to upload usage type data to the Azure subscription instead."
+  - content: "Which option is correct for enabling Arc-enabled SQL MI to use readable secondaries while minimizing costs in a production environment?"
+    choices:
+    - content: "Deploying the General Purpose Tier, choosing for development use only"
+      isCorrect: false
+      explanation: "That's incorrect. General Purpose Tier does not have any additional secondaries you can use as a readable secondary. Development use is not for production use."
+    - content: "Deploying the Business Critical Tier, choosing for development use only"
+      isCorrect: false
+      explanation: "That's incorrect. Development use is not for production use."
+    - content: "Deploying the Business Critical Tier, selecting the 'I already have a SQL Server License' option"
+      isCorrect: true
+      explanation: "That's correct. Already holding a valid SQL Server License can provide a discount when enabling Arc-enabled SQL MI to use readable secondaries."
