@@ -8,6 +8,6 @@ In Azure, Azure Resource Manager and Bicep templates are two of the ways you can
 After completing this module, you'll be able to:
 
 - Identify the three most common resource types for Azure Cosmos DB SQL API accounts
-- Create and deploy an JSON Azure Resource Manager template for an Azure Cosmos DB SQL API account, database, or container
+- Create and deploy a JSON Azure Resource Manager template for an Azure Cosmos DB SQL API account, database, or container
 - Create and deploy a Bicep template for an Azure Cosmos DB SQL API account, database, or container
 - Manage throughput and index policies using JSON or Bicep templates
