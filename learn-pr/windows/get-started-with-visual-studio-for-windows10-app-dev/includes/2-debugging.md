@@ -10,7 +10,7 @@ Add `print` statements to your Universal Windows Platform (UWP) project:
 
 1. In the **Solution Explorer**, expand **MainPage.xaml** and click **MainPage.xaml.cs**.
 
-    ![Open code](../media/open-code.png)
+    :::image type="content" source="media/open-code.png" alt-text="Screenshot of the Visual Studio solution explorer. The "MainPage.xaml.cs" file is highlighted.":::
 
     The C# code here is associated with the window displayed in your app.
 
@@ -40,22 +40,22 @@ Add `print` statements to your Universal Windows Platform (UWP) project:
 
     Your **Editor Window** should look like this:
 
-    ![Print example](../media/print-example.png)
+    :::image type="content" source="media/print-example.png" alt-text="Screenshot of the editor window in Visual Studio. Sample code from the above steps is shown.":::
 
 3. Click the **Run** button (or press the *F5* key) to run your project.
 
-    ![Run app](../media/run-app.png)
+    :::image type="content" source="media/run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The run button, represented by a green triangle, is highlighted.":::
 
 4. Minimize the app window and bring Visual Studio back into view. Click **Output** to view the *Hello!* message created by your app.
 
-    ![View output](../media/view-output.png)
+    :::image type="content" source="media/view-output.png" alt-text="Screenshot showing the Visual Studio output window with the "Hello!" message shown.":::
 
     > [!NOTE]
     > You can also display debug text in *Windows Presentation Foundation (WPF)* and *Windows Forms* apps.
 
 5. Click the **Stop** button to stop the app.
 
-    ![Stop app](../media/stop-app.png)
+    :::image type="content" source="media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented red square, is highlighted.":::
 
 ## Better debugging
 
@@ -83,45 +83,45 @@ Use *breakpoints* to stop an app at specific points to find out what's going on 
 
     Your **Editor Window** should look like this:
 
-    ![Breakpoint example](../media/breakpoint-example.png)
+    :::image type="content" source="media/breakpoint-example.png" alt-text="Screenshot of the editor window in Visual Studio. Sample code from the above steps is shown.":::
 
     **Explanation**: The app wants a value of `4` to execute the `Hello()` function. Unfortunately, in this case, `a + b` does not equal `c`. Let's examine the line performing this calculation using a breakpoint.
 
 2. Click within the grey margin on the far-left of the screen, next to the line containing the code `int c = a + b;`. A red dot appears. This is your breakpoint.
 
-    ![Add a breakpoint](../media/add-breakpoint.png)
+    :::image type="content" source="media/add-breakpoint.png" alt-text="Screenshot of the Visual Studio editor window. A breakpoint (red circle) has been placed in the margin.":::
 
 3. Click the **Run** button (or press *F5*) to start your app again.
 
-    ![Run app](../media/run-app.png)
+    :::image type="content" source="media/run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The run button, represented by a green triangle, is highlighted.":::
 
     The app stops running immediately. A small **yellow arrow** appears within the margin, next to the line containing the error. The highlighted line of code is what will run next.
 
-    ![Error indication](../media/error-indication.png)
+    :::image type="content" source="media/error-indication.png" alt-text="Screenshot of the Visual Studio editor window. A yellow arrow is displayed within the breakpoint in the margin.":::
 
     With your program paused, you can step through it line by line using the **Step into**, **Step over**, and **Step out** buttons on the toolbar.
 
-    ![Step options](../media/step-options.png)
+    :::image type="content" source="media/step-options.png" alt-text="Screenshot of the Visual Studio menu bar. The step into, step over, and step out options are highlighted.":::
 
 4. Select **Step into** and watch the yellow arrow follow the flow of control.
 
-    ![Step into](../media/step-into.png)
+    :::image type="content" source="media/step-into.png" alt-text="Screenshot of the Visual Studio menu bar. The step into options is highlighted.":::
 
 5. Hover over the variable `c`.
 
-    ![Using breakpoints](../media/using-breakpoints.png)
+    :::image type="content" source="media/using-breakpoints.png" alt-text="Screenshot of the Visual Studio editor window. A pop-up displays where the mouse was hovering. It indicates c has a value of three.":::
 
     A window appears displaying the current value of the variable. As we know, it's 3, not the 4 our function expects.
 
 6. Hover near the closing braces until you see a green arrow appear.
 
-    ![Run execution](../media/run-execution.png)
+    :::image type="content" source="media/run-execution.png" alt-text="Screenshot of the Visual Studio editor window. A green arrow is displayed where the mouse was hovering.":::
 
     This breakpoint allows the app to run until the containing line is reached.
 
 7. Click the **Stop** button to stop running your app.
 
-    ![Stop app](../media/stop-app.png)
+    :::image type="content" source="media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented red square, is highlighted.":::
 
 ## The philosophy of debugging
 
