@@ -11,7 +11,7 @@ metadata:
   ms.custom: team=nextgen
 title: Create machine learning models with R and tidymodels
 summary: |
-  Learn how to explore and analyze data by using R. Get and introduction to regression models, classification models, and clustering models by using tidymodels and R.
+  Learn how to explore and analyze data by using R. Get an introduction to regression models, classification models, and clustering models by using tidymodels and R.
 
   In this learning path, you'll learn
   - Common data exploration and analysis tasks 
