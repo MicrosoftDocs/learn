@@ -23,4 +23,6 @@ In this module, you'll learn to:
 
 ## What is the main objective?
 
-The main objective is describing the Azure Functions service, what it consists of, how it works, and when to use it,
+The main objective is describing the Azure Functions service, what it consists of, how it works, and when to use it.
+
+***Produced in partnership with Dwitrisha Saha, Aditya Raman, Dishita Bhasin, Devansu Yadav, Ritvi Mishra, Nirali Sahoo - Microsoft Learn Student Ambassadors***
