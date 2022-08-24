@@ -1,6 +1,6 @@
 Once an Azure Cosmos DB SQL API account is ready to go through a release lifecycle, it's not uncommon for an operations team to attempt to automate the creation of Azure Cosmos DB resources in the cloud. Automation makes it easier to deploy new environments, restore past environments, or scale a service out.
 
-In Azure, Azure Resource Manager and Bicep templates are two of the ways you can automate the creation of Azure Cosmos Db resources. Azure Resource Manager templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your project. Bicep is an alternative template language that can be used to develop templates.
+In Azure, Azure Resource Manager and Bicep templates are two of the ways you can automate the creation of Azure Cosmos DB resources. Azure Resource Manager templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your project. Bicep is an alternative template language that can be used to develop templates.
 
 > [!NOTE]
 > For this module, we will use both the **Bicep** and **JSON** syntaxes for **Azure Resource Manager templates**. The hands-on exercise for this module will use both the **Bicep** and **JSON** syntaxes to illustrate the differences.
