@@ -1,10 +1,10 @@
 Your application will acquire a token to call a protected web API on behalf of itself (not on behalf of a user). The application uses the standard OAuth 2.0 client credentials flow.
 
-In this unit, you'll learn about confidential client application, OAuth 2.0 client credentials flow and how to grant permissions to the confidential client application itself.
+In this unit, you'll learn about the confidential client application, OAuth 2.0 client credentials flow, how to create a confidential client instance, and how to grant permissions to the confidential client application itself.
 
 ## Confidential client applications
 
-Confidential client applications are apps that run on servers (service/daemon apps). They're considered difficult to access, and for that reason can keep an application secret. Confidential clients can hold configuration-time secrets. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract.
+Confidential client applications are apps that run on servers (service/daemon apps). They're considered difficult to access, and for that reason, can keep an application secret. Confidential clients can hold configuration-time secrets. Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract.
 
 ## OAuth 2.0 client credentials flow
 
@@ -18,7 +18,7 @@ The MSAL for Python enables applications to integrate with the Microsoft identit
 
 ### Initialize the MSAL object
 
-To start using MSAL, you'll need to initialize and configure the MSAL object in your application code. Create either a **ConfidentialClientApplication** instance, and reuse it during the lifecycle of your app.
+To start using MSAL, you'll need to initialize and configure the MSAL object in your application code. Create a **ConfidentialClientApplication** instance, and reuse it during the lifecycle of your app.
 
 The following example shows a **ConfidentialClientApplication** instance:
 
@@ -33,7 +33,7 @@ app = ConfidentialClientApplication(
 ```
 
 - **client_id**: The client id is the unique **Application (client) ID** assigned to your app by Azure Active Directory (Azure AD) when the app was registered.
-- **authority**: The authority is a URL that indicates a directory that MSAL can request tokens from. It is composed of the identity provider instance and sign-in audience for the app.
+- **authority**: The authority is a URL that indicates a directory that MSAL can request tokens from. It's composed of the identity provider instance and a sign-in audience for the app.
 - **client_secret**: The client secret for the confidential client app, created when registering the app.
 
 ## Application permission to Microsoft Graph
@@ -43,13 +43,12 @@ Configure application permissions for an application that needs to authenticate 
 In the following steps, you grant the registered app permission to Microsoft Graph's _User.Read.All_ permission:
 
 1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
-1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to select the tenant containing your client app's registration.
+1. Make sure you're using the directory that contains your client app's registration:
+   a. Select the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: icon in the top menu.
+   b. On the **Portal settings | Directories + subscriptions** page, find the directory you want to use in the **Directory name** list, and select **Switch** button next to it.
+
 1. Select **Azure Active Directory** > **App registrations**, and then select your client application.
 1. Select **API permissions** > **Add a permission** > **Microsoft Graph** > **Application permissions**.
-1. All permissions exposed by Microsoft Graph are shown under **Select permissions**.
-1. Select the permission or permissions you want to grant your application. In our case, we have a daemon app that needs to read users profile.
-
-    Under **Select permissions**, expand **User**, and then select the *User.Read.All* permission.
+1. Under **Select permissions**, search and expand **User**, and then select the *User.Read.All* permission.
 1. Select **Add permissions**.
-
-Some permissions, like Microsoft Graph's *User.Read.All* permission, require admin consent. You grant admin consent by selecting the **Grant admin consent** button.
+1. Select **Grant admin consent** to grant admin consent.

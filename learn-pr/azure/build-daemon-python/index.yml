@@ -14,10 +14,10 @@ summary: Create a Python daemon app that authenticates using the Microsoft ident
 abstract: |
   By the end of this module, you'll be able to:
     - Prepare Azure AD tenant to authenticate an app.
-    - Create a Python daemon app that calls a protected web API.
+    - Configure a Python daemon app to authenticate using its own identity and call a protected web API.
     - Run and test the Python daemon app.
 prerequisites: |
-  - An Azure account with an active subscription. If you don't have an account, [Create an account for free](https://azure.microsoft.com/en-us/free/).
+  - An Azure account with an active subscription. If you don't have an account, [Create an account for free](https://azure.microsoft.com/free/).
   - Must have [Python 3+](https://www.python.org/downloads/) installed on your computer.
   - Ability to write code in Python at beginner level.
   - An Azure AD tenant that you manage as a global administrator, or a cloud app administrator, or an app administrator.
