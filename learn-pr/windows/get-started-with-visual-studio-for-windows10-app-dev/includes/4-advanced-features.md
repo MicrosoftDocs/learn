@@ -8,11 +8,11 @@ The Visual Studio IDE has light themes and dark themes with lots of variation be
 
 1. Click **Tools**, hover over **Theme** and select **Dark** to apply the *Dark theme*.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/theme.png" alt-text="Screenshot of the Visual Studio tools menu. The tools, theme, and dark options are all highlighted.":::
+    :::image type="content" source="media/media/theme.png" alt-text="Screenshot of the Visual Studio tools menu. The tools, theme, and dark options are all highlighted.":::
 
     Visual Studio with *Dark theme*:
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/dark-theme.png" alt-text="Screenshot of the Visual Studio user-interface in dark mode.":::
+    :::image type="content" source="media/media/dark-theme.png" alt-text="Screenshot of the Visual Studio user-interface in dark mode.":::
 
 Feel free to choose your preferred theme.
 
@@ -24,15 +24,15 @@ Try it out in your project:
 
 1. Open the **MainPage.xaml.cs** file by selecting it in the **Solution Explorer**.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/open-code.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml.cs file is highlighted.":::
+    :::image type="content" source="media/media/open-code.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml.cs file is highlighted.":::
 
 2. Hover over the method called `Hello()` nested inside of the `MainPage()` method. Right click the method and select **Rename**.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/rename-method.png" alt-text="Screenshot of a Visual Studio context menu after right-clicking a function. The rename option is highlighted..":::
+    :::image type="content" source="media/media/rename-method.png" alt-text="Screenshot of a Visual Studio context menu after right-clicking a function. The rename option is highlighted..":::
 
 3. Type a new name and select **Apply**. Notice that the name changes everywhere it occurs.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/apply-rename.png" alt-text="Screenshot of the Visual Studio editor window. A rename pop-up window is displayed and the apply button within it is highlighted.":::
+    :::image type="content" source="media/media/apply-rename.png" alt-text="Screenshot of the Visual Studio editor window. A rename pop-up window is displayed and the apply button within it is highlighted.":::
 
 ## Code snippets
 
@@ -42,17 +42,17 @@ Use a snippet to quickly insert a `do/while` loop:
 
 1. Open the **MainPage.xaml.cs** file by selecting it in *Solution Explorer*.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/open-code.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml.cs file is highlighted.":::
+    :::image type="content" source="media/media/open-code.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml.cs file is highlighted.":::
 
 2. Add a new line in the `MainPage()` method.
 
 3. Hold *Ctrl*, press *K*, and then press *X* to open the **Insert Snippet** window.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/insert-snippet.png" alt-text="Screenshot of a Visual Studio insert snippet selection screen after pressing and holding the ctrl key while pressing the K and then X keys.":::
+    :::image type="content" source="media/media/insert-snippet.png" alt-text="Screenshot of a Visual Studio insert snippet selection screen after pressing and holding the ctrl key while pressing the K and then X keys.":::
 
 4. Click **Visual C#** and select **do** from the list. Your `MainPage()` method should look like this:
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/code-snippet.png" alt-text="Screenshot of the editor window in Visual Studio. Sample code from the insert snippet step is shown.":::
+    :::image type="content" source="media/media/code-snippet.png" alt-text="Screenshot of the editor window in Visual Studio. Sample code from the insert snippet step is shown.":::
 
 5. Enter missing information (the **do** loop requires a condition. The loop continues for as long as that condition is true).
 
@@ -68,15 +68,15 @@ Download a project from GitHub directly in Visual Studio:
 
 1. Find the example project ([Windows coloring book sample](https://github.com/Microsoft/Windows-appsample-coloringbook)) in GitHub:
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/coloring-book-repo.png" alt-text="Screenshot of the Windows coloring book repository hosted on GitHub.":::
+    :::image type="content" source="media/media/coloring-book-repo.png" alt-text="Screenshot of the Windows coloring book repository hosted on GitHub.":::
 
 2. Click the green **Code** button. The URL for the project is displayed. Select the **clipboard icon** to copy it.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/clone-repo.png" alt-text="Screenshot of the clone repository context menu in GitHub. The copy URL icon is highlighted.":::
+    :::image type="content" source="media/media/clone-repo.png" alt-text="Screenshot of the clone repository context menu in GitHub. The copy URL icon is highlighted.":::
 
 3. Open Visual Studio. Click **Git** and select **Clone Repository**.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/clone-repo-two.png" alt-text="Screenshot of the Git menu in Visual studio. The Git menu and clone repository options are highlighted.":::
+    :::image type="content" source="media/media/clone-repo-two.png" alt-text="Screenshot of the Git menu in Visual studio. The Git menu and clone repository options are highlighted.":::
 
     The solution will be cloned (downloaded) to your computer.
 
@@ -85,19 +85,19 @@ Download a project from GitHub directly in Visual Studio:
     >
     > You'll have to set that option manually. For this example, right-click **ColoringBook (Universal Windows)** in the *Solution Explorer* and select **Set as Startup Project**. Visual Studio will now run this project by default.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/set-startup-project.png" alt-text="Screenshot of a Visual Studio context menu when a project is right-clicked. An example project is highlighted along with the correct menu option.":::
+    :::image type="content" source="media/media/set-startup-project.png" alt-text="Screenshot of a Visual Studio context menu when a project is right-clicked. An example project is highlighted along with the correct menu option.":::
 
 4. Select the **Run**(green triangle) button.
 
-    ![Run app](../media/get-started-with-visual-studio-for-windows10-app-dev/media/run-app.png)
+    ![Run app](../media/media/run-app.png)
 
     Visual Studio may ask you to download additional components. After you confirm these downloads, the app will begin building. A loading screen displays:
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/coloring-book-one.png" alt-text="Screenshot of the Windows coloring book loading screen. It displays a fully colored page.":::
+    :::image type="content" source="media/media/coloring-book-one.png" alt-text="Screenshot of the Windows coloring book loading screen. It displays a fully colored page.":::
 
     After a few moments, a page selection screen displays:
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/coloring-book-two.png" alt-text="Screenshot of the Windows coloring book page selection screen. It displays coloring book pages the user may select to color.":::
+    :::image type="content" source="media/media/coloring-book-two.png" alt-text="Screenshot of the Windows coloring book page selection screen. It displays coloring book pages the user may select to color.":::
 
 ### ARM, x86, or x64?
 
