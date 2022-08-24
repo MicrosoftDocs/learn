@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/05/2022
+  ms.date: 08/24/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
       explanation: "That answer's incorrect. Use a multiple label classification project to label books as both mystery and thriller."
   - content: "You just got notification your training job is complete. What is your next step?"
     choices:
-    - content: "Tag more data"
+    - content: "Label more data"
       isCorrect: false
       explanation: "That answer's incorrect. First view your model details to see how it scored, the classification distribution, and where it needs improvement."
     - content: "Deploy your model"

@@ -5,8 +5,8 @@ Custom text classification projects are your workspace to build, train, improve,
 [![Diagram that shows a life cycle with steps to define labels, tag data, train model, view model, improve model, deploy model, and classify text.](../media/classify-development-lifecycle.png)](../media/classify-development-lifecycle.png#lightbox)
 
 * **Define labels**: Understanding the data you want to classify, identify the possible labels you want to categorize into. In our video game example, our labels would be "Action", "Adventure", "Strategy", and so on.
-* **Tag data**: Tag your existing data, specifying the label or labels each file falls under. Tagging data is important since it's how your model will learn how to classify future files. Best practice is to have clear differences between labels to avoid ambiguity, and provide good examples of each label for the model to learn from. For example, we'd tag "Quest for the Mine Brush" would be tagged as "Adventure", and "Flight Trainer" as "Action".
-* **Train model**: Once your data is tagged, train it with the labeled data. Training will teach our model what types of video game summaries should be labeled which genre.
+* **Tag data**: Tag, or label, your existing data, specifying the label or labels each file falls under. Labeling data is important since it's how your model will learn how to classify future files. Best practice is to have clear differences between labels to avoid ambiguity, and provide good examples of each label for the model to learn from. For example, we'd label the game "Quest for the Mine Brush" as "Adventure", and "Flight Trainer" as "Action".
+* **Train model**: Train your model with the labeled data. Training will teach our model what types of video game summaries should be labeled which genre.
 * **View model**: After your model is trained, view the results of the model. Your model is scored between 0 and 1, based on the precision and recall of the data tested. Take note of which genre didn't perform well.
 * **Improve model**: Improve your model by seeing which classifications failed to evaluate to the right label, see your label distribution, and find out what data to add to improve performance. For example, you might find your model mixes up "Adventure" and "Strategy" games. Try to find more examples of each label to add to your dataset for retraining your model.
 * **Deploy model**: Once your model performs as desired, deploy your model to make it available via the API. Your model might be named "GameGenres", and once deployed can be used to classify game summaries.
@@ -14,17 +14,17 @@ Custom text classification projects are your workspace to build, train, improve,
 
 ## How to split datasets for training
 
-When tagging your data, you can specify which dataset you want each file to be:
+When labeling your data, you can specify which dataset you want each file to be:
 
-* **Training** - The training dataset is used to actually train the model; the data and tags provided are fed into the machine learning algorithm to teach your model what data should be classified to which label. The training dataset will be the larger of the two datasets, recommended to be about 80% of your tagged data.
-* **Testing** - The testing dataset is tagged data used to verify you model after it's trained. Azure will take the data in the testing dataset, submit it to the model, and compare the output to how you tagged your data to determine how well the model performed. The result of that comparison is how your model gets scored and helps you know how to improve your predictive performance.
+* **Training** - The training dataset is used to actually train the model; the data and labels provided are fed into the machine learning algorithm to teach your model what data should be classified to which label. The training dataset will be the larger of the two datasets, recommended to be about 80% of your labeled data.
+* **Testing** - The testing dataset is labeled data used to verify you model after it's trained. Azure will take the data in the testing dataset, submit it to the model, and compare the output to how you labeled your data to determine how well the model performed. The result of that comparison is how your model gets scored and helps you know how to improve your predictive performance.
 
 During the **Train model** step, there are two options for how to train your model.
 
 * **Automatic split** - Azure takes all of your data, splits it into the specified percentages randomly, and applies them in training the model. This option is best when you have a larger dataset, data is naturally more consistent, or the distribution of your data extensively covers your classes.
 * **Manual split** - Manually specify which files should be in each dataset. When you submit the training job, the Language service will tell you the split of the dataset and the distribution. This split is best used with smaller datasets to ensure the correct distribution of classes and variation in data are present to correctly train your model.
 
-To use the automatic split, put all files into the *training* dataset when tagging your data (this option is the default). To use the manual split, specify which files should be in testing versus training during the tagging of your data.
+To use the automatic split, put all files into the *training* dataset when labeling your data (this option is the default). To use the manual split, specify which files should be in testing versus training during the labeling of your data.
 
 ## Deployment options
 
