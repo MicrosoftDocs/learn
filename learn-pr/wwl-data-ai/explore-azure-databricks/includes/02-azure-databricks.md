@@ -17,7 +17,7 @@ When you create a workspace, you must specify one of the following pricing tiers
 - **Premium** - Role-based access controls and other enterprise-level features.
 - **Trial** - A 14-day free trial of a premium-level workspace
 
-![Screenshot of the Create an Azure Databricks workspace page in the Azure portal.](../media/create-a-workspace.png)
+![Screenshot of the Create an Azure Databricks workspace page in the Azure portal.](../media/create-workspace.png)
 
 ## Using the Azure Databricks portal
 
