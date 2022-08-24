@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 8/24/2022
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Through which mechanism does Arc-enabled SQL Managed Instance provide High Availability for the General Purpose service tier?"
+    choices:
+    - content: "Kubernetes"
+      isCorrect: true
+      explanation: "That's correct. With the General Purpose tier, high availability option is provided by Kubernetes."
+    - content: "Contained Availability Groups"
+      isCorrect: false
+      explanation: "That's incorrect. Kubernetes provides the ability to provide high availability for General Purpose tier deployments, while Contained Availability Groups provide high availability for Business Critical tier deployments. The service tier will impact the amount of time taken to perform a failover and be up and functional again."
+    - content: "Azure Container Instances"
+      isCorrect: false
+      explanation: "That's incorrect. With the General Purpose tier, high availability option is provided by Kubernetes."
+  - content: "Which option is valid for recovering a database prior to an issue being experienced, allowing for recovering maliciously damaged or corrupt data?"
+    choices:
+    - content: "Performing a manual failover to a secondary replica in the primary site."
+      isCorrect: false
+      explanation: "That's incorrect. This will not recover a database to a point in time prior to the identified issue."
+    - content: "Performing a point in time restore to just before the identified incident."
+      isCorrect: true
+      explanation: "That's correct. Doing so will revert the state of the data to what it was prior to the identified issue."
+    - content: "Performing a manual failover to a secondary site."
+      isCorrect: false
+      explanation: "That's incorrect. This will not recover a database to a point in time prior to the identified issue."
+  - content: "Which command performs a failover to the secondary site when the primary site Kubernetes cluster is lost?"
+    choices:
+    - content: "az sql instance-failover-group-arc update --role secondary"
+      isCorrect: false
+      explanation: "That's incorrect. This command can only be executed if the primary site kubernetes cluster is available."
+    - content: "az sql instance-failover-group-arc update --role force-primary-allow-data-loss"
+      isCorrect: true
+      explanation: "That's correct. This command forces the chosen secondary to become the primary and allows data loss to occur to bring the new primary replica online."
+    - content: "az sql mi-arc update --preferred-primary-replica"
+      isCorrect: false
+      explanation: "That's incorrect. This command is used to set the new primary replica in the primary site. This does not allow for failover to a secondary site."
