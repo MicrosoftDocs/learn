@@ -1,0 +1,52 @@
+Az arcdata is the Azure Command Line Interface (CLI) suite of commands available for you to manage and maintain your Azure Arc-enabled data services. You can execute these CLI commands in either:
+
+- **Azure Portal Cloud Shell**
+- **Azure Data Studio Terminal Window**
+
+Here is a list of all current commands available for az arcdata: 
+
+- **[az arcdata](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata)** allowing creating, deleting, and managing the various Arc-enabled resources.
+    - **[arcdata ad-connector](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-ad-connector)** provides the ability to manage and maintain Active Directory authentication for Arc-enabled data services.
+        - **[az arcdata ad-connector create](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-ad-connector#az-arcdata-ad-connector-create)**
+        - **[az arcdata ad-connector update](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-ad-connector#az-arcdata-ad-connector-update)**
+        - **[az arcdata ad-connector delete](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-ad-connector#az-arcdata-ad-connector-delete)**
+        - **[az arcdata ad-connector show](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-ad-connector#az-arcdata-ad-connector-show)**
+    - **[arcdata dc](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc)** provides the ability to create, delete, and manage Arc data controllers.
+        - **[az arcdata dc create](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-create)**
+        - **[az arcdata dc upgrade](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-upgrade)**
+        - **[az arcdata dc update](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-update)**
+        - **[az arcdata dc list-upgrades](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-list-upgrades)**
+        - **[az arcdata dc delete](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-delete)**
+        - **[az arcdata dc endpoint](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc-endpoint)**
+        - **[az arcdata dc status](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc-status)**
+        - **[az arcdata dc config](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc-config)**
+        - **[az arcdata dc debug](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc-debug)**
+        - **[az arcdata dc export](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-export)**
+        - **[az arcdata dc upload](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-upload)**
+    - **[arcdata resource-kind](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-resource-kind)** provides the ability to define and template custom resources on your Arc-enabled cluster.
+        - **[az arcdata resource-kind list](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-resource-kind#az-arcdata-resource-kind-list)**
+        - **[az arcdata resource-kind get](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-resource-kind#az-arcdata-resource-kind-get)**
+    - **[sql mi-arc](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc)** provides the ability to manage your Arc-enabled SQL Managed Instances.
+        - **[az sql mi-arc endpoint](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-endpoint)**
+        - **[az sql mi-arc create](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc#az-sql-mi-arc-create)**
+        - **[az sql mi-arc update](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc#az-sql-mi-arc-update)**
+        - **[az sql mi-arc delete](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc#az-sql-mi-arc-delete)**
+        - **[az sql mi-arc show](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc#az-sql-mi-arc-show)**
+        - **[az sql mi-arc get-mirroring-cert](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc#az-sql-mi-arc-get-mirroring-cert)**
+        - **[az sql mi-arc upgrade](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc#az-sql-mi-arc-upgrade)**
+        - **[az sql mi-arc list](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc#az-sql-mi-arc-list)**
+    - **[sql instance-failover-group-arc](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-instance-failover-group-arc)** provides the ability to create and manage the failover group associated with the Arc-enabled SQL Managed Instances.
+        - **[az sql instance-failover-group-arc create](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-instance-failover-group-arc#az-sql-instance-failover-group-arc-create)**
+        - **[az sql instance-failover-group-arc update](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-instance-failover-group-arc#az-sql-instance-failover-group-arc-update)**
+        - **[az sql instance-failover-group-arc delete](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-instance-failover-group-arc#az-sql-instance-failover-group-arc-update)**
+        - **[az sql instance-failover-group-arc show](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-instance-failover-group-arc#az-sql-instance-failover-group-arc-update)**
+    - **[sql mi-arc config](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-config)** provides the ability add and manage the Arc-enabled SQL Managed Instance configuration files.
+        - **[az sql mi-arc config init](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-config#az-sql-mi-arc-config-init)**
+        - **[az sql mi-arc config add](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-config#az-sql-mi-arc-config-add)**
+        - **[az sql mi-arc config remove](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-config#az-sql-mi-arc-config-remove)**
+        - **[az sql mi-arc config replace](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-config#az-sql-mi-arc-config-replace)**
+        - **[az sql mi-arc config patch](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-config#az-sql-mi-arc-config-patch)**
+    - **[sql mi-arc endpoint](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-endpoint)** provides the ability to list the SQL Endpoints configured with the Arc-enabled SQL Managed Instance.
+        - **[az sql mi-arc endpoint list](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-mi-arc-endpoint#az-sql-mi-arc-endpoint-list)**
+    - **[sql midb-arc](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-midb-arc)** provides the ability to restore a database to the Arc-enabled SQL Managed Instance.
+        - **[az sql midb-arc restore](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-sql-midb-arc#az-sql-midb-arc-restore)**
