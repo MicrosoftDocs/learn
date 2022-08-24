@@ -28,8 +28,8 @@ Apps using the Microsoft identity platform are registered and managed in Azure A
 1. Sign in to the [Azure portal](https://portal.azure.com/). If your account is present in more than one Azure AD tenant, select your profile at the top right corner in the menu on top of the page, and then switch directory to change your portal session to the desired Azure AD tenant.
 1. Navigate to the Microsoft identity platform for developers [App registrations page](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 1. Select **+ New registration**.
-  
-    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-page.png)
+
+    :::image type="content" source="../media/03-app-registration-page.png" alt-text="Screenshot of Azure portal showing app registrations page." :::
 
 1. In the **Register an application** page that appears, enter your application's registration information:
 
@@ -37,12 +37,12 @@ Apps using the Microsoft identity platform are registered and managed in Azure A
     - Under **Supported account types**, select *Accounts in this organizational directory only*.
     - In the **Redirect URI (optional)** section, select *Web* and enter the following redirect URI: *http://localhost:8000/auth/redirect*.
 
-    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-form.png)
+    :::image type="content" source="../media/03-app-registration-form.png" alt-text="Screenshot of Azure portal showing app registrations form." :::
 
 1. Select **Register** to create the application.
 1. In the app's registration screen, find and note the **Application (client) ID** and **Directory (tenant) ID**. You use this value in your app's configuration file(s) later in your code.
 
-    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-details.png)
+    :::image type="content" source="../media/03-app-registration-details.png" alt-text="Screenshot of Azure portal showing app ID and tenant ID." :::
 
 1. Select **Save** to save your changes.
 
@@ -53,13 +53,13 @@ The web app will also need a client secret to sign in with Azure AD to exchange 
 1. In the app's registration screen, select **Certificates & secrets** blade in the left to open the page where we can generate secrets and upload certificates.
 1. In the **Client secrets** section, select *+ New client secret*:
 
-    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-certificates-and-secrets.png)
+    :::image type="content" source="../media/03-app-certificates-and-secrets.png" alt-text="Screenshot of Azure portal showing page to create certificates and secrets." :::
 
     - Type a key description. For example, *Django web app secret*.
     - Select one of the available key durations as per your security concerns. 
     - The generated key value will be displayed when you select the *Add* button. Copy the generated value for use in the steps later. You'll need this key later in your code's configuration files. **This key value won't be displayed again**, and isn't retrievable by any other means, so make sure to note it from the Azure portal before navigating to any other screen or blade.
 
-    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-secret-value.png)
+    :::image type="content" source="../media/03-app-registration-secret-value.png" alt-text="Screenshot of Azure portal showing app secrets details." :::
 
 ## Configure Django web app to use app registration details
 <!-- Introduction paragraph -->

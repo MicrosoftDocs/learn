@@ -26,7 +26,7 @@ The Microsoft identity platform helps you build applications your users and cust
 
 In this module, we focus on authenticating a work or school accounts provisioned through Azure AD.
 
-![Screenshot of Azure portal showing page to manage users and tenants.](../media/02-azure-active-directory-tenants-and-users.png)
+:::image type="content" source="../media/02-azure-active-directory-tenants-and-users.png" alt-text="Screenshot of Azure portal showing page to manage users and tenants." :::
 
 ## Azure AD app registration
 
@@ -36,11 +36,11 @@ When registering a web app in Azure AD, ensure the redirect URI of the app point
 
 A sign-out URL should also be specified so the authentication libraries and/or middleware deletes any cached tokens or other data that is only needed for signed in users.
 
-![Screenshot of Azure portal showing web app registration form.](../media/02-azure-active-directory-portal-new-app-details.png)
+:::image type="content" source="../media/02-azure-active-directory-portal-new-app-details.png" alt-text="Screenshot of Azure portal showing web app registration form." :::
 
 The web app will also need a client secret to sign in with Azure AD to exchange the authorization code for an access token.
 
-![Screenshot of Azure portal showing page to create a new app secret.](../media/02-azure-active-directory-portal-new-app-secret.png)
+:::image type="content" source="../media/02-azure-active-directory-portal-new-app-secret.png" alt-text="Screenshot of Azure portal showing page to create a new app secret." :::
 
 There are three things you'll need from the Azure AD app registration:
 
