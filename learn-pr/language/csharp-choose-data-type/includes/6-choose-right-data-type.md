@@ -22,18 +22,18 @@ When evaluating your options, you must weigh several important considerations. O
 
 - **When in doubt, stick with the basics.** While we've looked at several considerations that often lead you to consider many different data types, as you're getting started, you should prefer a subset of basic data types for simplicity's sake, including:
 
-- `int` for most whole numbers
-- `decimal` for numbers representing money
-- `bool` for true or false values
-- `string` for alphanumeric value
+   - `int` for most whole numbers
+   - `decimal` for numbers representing money
+   - `bool` for true or false values
+   - `string` for alphanumeric value
 
 - **Choose specialty complex types for special situations.** Don't reinvent data types if they already exist for a given purpose.
 
-- `byte` for working with encoded data that comes from other computer systems or using different character sets.
-- `double` for working with geometric or scientific purposes. `double` is used frequently when building games involving motion.
-- `System.StringBuilder` to build a single string from many literals or other variables. We'll cover this in more detail in the [Modify content of strings using built-in string data type methods in C#](/learn/modules/csharp-modify-content/) module.
-- `System.DateTime` for a specific date and time value.
-- `System.TimeSpan` for a span of years/months/days/hours/minutes/seconds/milliseconds.
+   - `byte` for working with encoded data that comes from other computer systems or using different character sets.
+   - `double` for working with geometric or scientific purposes. `double` is used frequently when building games involving motion.
+   - `System.StringBuilder` to build a single string from many literals or other variables. We'll cover this in more detail in the [Modify content of strings using built-in string data type methods in C#](/learn/modules/csharp-modify-content/) module.
+   - `System.DateTime` for a specific date and time value.
+   - `System.TimeSpan` for a span of years/months/days/hours/minutes/seconds/milliseconds.
 
 ## Recap
 
