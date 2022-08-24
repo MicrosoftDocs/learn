@@ -1,39 +1,4 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
-
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise
-
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+For a web app to use Microsoft identity to enable users to authenticate, you must register a new app with Azure AD. In the banking company example, the company intends to build a Django web app to allow its customers access services. Here, you'll register a single-tenant web app in Azure AD and configure a Django app to use the registration details. You'll also create a test user for testing purposes.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,23 +21,49 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Register a single-tenant web application
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Apps using the Microsoft identity platform are registered and managed in Azure AD tenants.
 
-## (Chunk n heading)
+1. Sign in to the [Azure portal](https://portal.azure.com/). If your account is present in more than one Azure AD tenant, select your profile at the top right corner in the menu on top of the page, and then switch directory to change your portal session to the desired Azure AD tenant.
+1. Navigate to the Microsoft identity platform for developers [App registrations page](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
+1. Select **+ New registration**.
+  
+    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-page.png)
+
+1. In the **Register an application** page that appears, enter your application's registration information:
+
+    - In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example *python-django-webapp-auth*.
+    - Under **Supported account types**, select *Accounts in this organizational directory only*.
+    - In the **Redirect URI (optional)** section, select *Web* and enter the following redirect URI: *http://localhost:8000/auth/redirect*.
+
+    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-form.png)
+
+1. Select **Register** to create the application.
+1. In the app's registration screen, find and note the **Application (client) ID** and **Directory (tenant) ID**. You use this value in your app's configuration file(s) later in your code.
+
+    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-details.png)
+
+1. Select **Save** to save your changes.
+
+## Create a client secret for the app registration
+
+The web app will also need a client secret to sign in with Azure AD to exchange the authorization code for an access token.
+
+1. In the app's registration screen, select **Certificates & secrets** blade in the left to open the page where we can generate secrets and upload certificates.
+1. In the **Client secrets** section, select *+ New client secret*:
+
+    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-certificates-and-secrets.png)
+
+    - Type a key description. For example, *Django web app secret*.
+    - Select one of the available key durations as per your security concerns. 
+    - The generated key value will be displayed when you select the *Add* button. Copy the generated value for use in the steps later. You'll need this key later in your code's configuration files. **This key value won't be displayed again**, and isn't retrievable by any other means, so make sure to note it from the Azure portal before navigating to any other screen or blade.
+
+    ![Screenshot of Azure portal showing page to manage users and tenants.](../media/03-app-registration-secret-value.png)
+
+## Configure Django web app to use app registration details
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+
 
 <!-- 5. Validation -------------------------------------------------------------------------------------------
 
@@ -94,10 +85,8 @@ TODO: describe the end-state
 
 ## Check your work
 <!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+
+
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
