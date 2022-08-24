@@ -84,9 +84,9 @@ If you invoke the create operation using this pre-trigger, you should expect you
 
 ### Post-trigger
 
-Post-triggers run after an operation has completed and can have input parameters even though they are not required. They have action to the HTTP response message right before it is sent to the client. They can perform actions such as updating or creating secondary items based on changes to your original item.
+Post-triggers run after an operation has completed and can have input parameters even though they are not required. They perform actions on the HTTP response message right before it is sent to the client. They can perform actions such as updating or creating secondary items based on changes to your original item.
 
-Let's walk through a slightly different example with the same JSON file. Now, a post-trigger will be used to create a second item with a different materialized view of our data. Our goal, is to create a second item with three JSON properties; **sourceId**, **categoryId**, and **displayName**.
+Let's walk through a slightly different example with the same JSON file. Now, a post-trigger will be used to create a second item with a different materialized view of our data. Our goal is to create a second item with three JSON properties; **sourceId**, **categoryId**, and **displayName**.
 
 ```json
 {
