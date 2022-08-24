@@ -61,9 +61,71 @@ The web app will also need a client secret to sign in with Azure AD to exchange 
 
     :::image type="content" source="../media/03-app-registration-secret-value.png" alt-text="Screenshot of Azure portal showing app secrets details." :::
 
-## Configure Django web app to use app registration details
-<!-- Introduction paragraph -->
+## Create a test user
 
+We'll now create a test user account to use with our test app.
+
+
+
+## Configure Django web app to use app registration details
+
+To configure your Django web app to use the Azure AD app registration details, ensure you have a running Django project.
+
+1. Install the `ms-identity-web` library. The `ms-identity-web` library is a wrapper for MSAL python. It handles much of the required MSAL for Python configurations.
+
+    ```bash
+        pip install git+https://github.com/azure-samples/ms-identity-python-utilities@main
+    ```
+
+1. Create the Azure AD JSON config file that stores the registration details. This file is created at the base of the project. Same directory as the *manage.py* file. Name the file *aad.config.json* and add the following content.
+
+    - Find the string `{enter-your-tenant-id-here}` and replace the existing value with your Azure AD tenant ID.
+    - Find the string `{enter-your-client-id-here}` and replace the existing value with the application ID (clientId).
+    - Find the string `{enter-your-client-secret-here}` and replace the existing value with the client secret value.
+
+    ```json
+        {
+            "type": {
+                "client_type": "CONFIDENTIAL",
+                "authority_type": "SINGLE_TENANT",
+                "framework": "DJANGO"
+            },
+            "client": {
+                "client_id": "{enter-your-client-id-here}",
+                "client_credential": "{enter-your-client-secret-here}",
+                "authority": "https://login.microsoftonline.com/{enter-your-tenant-id-here}"
+            },
+            "auth_request": {
+                "redirect_uri": null,
+                "scopes": [],
+                "response_type": "code"
+            },
+            "flask": null,
+            "django": {
+                "id_web_configs": "MS_ID_WEB_CONFIGS",
+                "auth_endpoints": {
+                    "prefix": "auth",
+                    "sign_in": "sign_in",
+                    "edit_profile": "edit_profile",
+                    "redirect": "redirect",
+                    "sign_out": "sign_out",
+                    "post_sign_out": "post_sign_out"
+                }
+            }
+        }
+    ```
+
+1. In the project's settings file, add the *MsalMiddleware* class from the *ms_identity_web* library to the project's middleware. The Azure AD configuration object is created from the JSON config file. This Azure AD configuration object is used to instantiate *IdentityWebPython*. This must be named *MS_IDENTITY_WEB* as shown in the code below.
+
+    ```python
+        from ms_identity_web.configuration import AADConfig
+        from ms_identity_web import IdentityWebPython
+ 
+        AAD_CONFIG = AADConfig.parse_json(file_path='aad.config.json')
+        MS_IDENTITY_WEB = IdentityWebPython(AAD_CONFIG)
+        ERROR_TEMPLATE = 'auth/{}.html' # for rendering 401 or other errors from msal_middleware
+        MIDDLEWARE.append('ms_identity_web.django.middleware.MsalMiddleware')
+    ```
 
 <!-- 5. Validation -------------------------------------------------------------------------------------------
 
@@ -84,9 +146,14 @@ The web app will also need a client secret to sign in with Azure AD to exchange 
 -->
 
 ## Check your work
-<!-- Introduction paragraph -->
 
+At this point, we have registered a single-tenant web app in Azure AD. We have then configured our Django web app to use the app registration details.
 
+Run your Django project using the following command to confirm it's working well.
+
+```bash
+    python manage.py runserver
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
