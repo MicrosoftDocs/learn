@@ -1,4 +1,4 @@
-Here are the high-level steps to create a site-to-site VNet-to-VNet connections. The on-premises part is only needed when you are configuring Site-to-Site. We will review in detail each step.
+Here are the high-level steps to create a site-to-site virtual network connection. The on-premises part is only needed when you are configuring Site-to-Site. We will review in detail each step.
 
 :::image type="content" source="../media/gateway-steps-aebd935e.png" alt-text="Flowchart with seven steps. Each step is discussed in the content.":::
 
