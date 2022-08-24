@@ -42,6 +42,8 @@ Search and browse will only return results from collections that users have acce
 
 Remember in the last lesson, data resources are added to collections and when a scan is performed those assets are added into those collections. Users are assigned permissions in Microsoft Purview by collection, so users will be able to freely use Microsoft Purview Data Catalog's search and browse functions, while keeping data secure and allowing teams to manage their own information.
 
+Once you register your Microsoft Purview instance to an Azure Data Factory or an Azure Synapse Analytics workspace, you can search the Microsoft Purview data catalog directly from those services.
+
 ## Asset properties
 
 Once you have selected a data asset, you can determine if the asset is what you're looking for by browsing it's properties:
