@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.custom-name-entity-recognition.tag-your-data
-title: Tag your data
+title: Label your data
 metadata:
-  title: Tag your data
-  description: "Tag your data"
-  ms.date: 07/15/2022
+  title: 3-tag-your-data
+  description: "Label your data"
+  ms.date: 08/24/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial

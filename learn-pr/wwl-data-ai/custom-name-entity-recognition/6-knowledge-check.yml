@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/15/2022
+  ms.date: 08/24/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
     - content: "F1 score"
       isCorrect: false
       explanation: "That answer's incorrect. Recall indicates how well the model extracts entities, regardless of which entity that is."
-  - content: "You just finished tagging your data. How and where is that file stored to train your model?"
+  - content: "You just finished labeling your data. How and where is that file stored to train your model?"
     choices:
     - content: "JSON file, in my storage account container for the project"
       isCorrect: true
