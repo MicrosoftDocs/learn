@@ -4,9 +4,7 @@ In this exercise, you'll build your daemon app.
 
 ## Install the authentication library
 
-MSAL for Python allows you to sign in users or apps with Microsoft identities (Azure AD, Microsoft Accounts and Azure AD B2C accounts) and obtain tokens to call protected web API. 
-
-After activating your virtual environment, you can now install the MSAL for Python package using `pip`:
+From your terminal,run the following command to install the MSAL for Python package:
 
 ```bash
 pip install msal
@@ -14,15 +12,9 @@ pip install msal
 
 ## Create a Python daemon application
 
-From your shell or command line:
+1. Create a folder named `cli-access-protected-api` for your application.
 
-1. Create a folder for the application.
-
-   ```bash
-   mkdir cli-access-protected-api
-   ```
-
-1. First, change to your project directory in your terminal, create a file named `cli.py` and add the following code:
+1. Inside the `cli-access-protected-api` folder, create a new file named `cli.py` and add the following code:
 
    ```python
     import json
@@ -35,11 +27,11 @@ From your shell or command line:
     # Get the values from Azure portal > Azure Active Directory > App registrations > $YOUR_APP_NAME.
     config = {
         # Full directory URL, in the form of https://login.microsoftonline.com/<tenant_id>
-        "authority": "",
+        "authority": "https://login.microsoftonline.com/tenant_id",
         # 'Application (client) ID' of app registration in Azure portal - this value is a GUID
-        "client_id": "",
+        "client_id": "Enter_the_Application_Id_Here",
         # Client secret 'Value' (not its ID) from 'Client secrets' in app registration in Azure portal
-        "client_secret": ""
+        "client_secret": "Enter_the_Client_Secret_Here"
     }
     
     # This app instance should be a long-lived instance because
@@ -65,13 +57,13 @@ From your shell or command line:
     
    ```
 
-   In the sample code we've created, we import the required Python module for our daemon app. The `config` section contains the values required for interaction with the Azure AD.
+   In the sample code we've created, we import `json`, `requests` and `msal` module for our daemon app. The `config` section contains the values required for interaction with the Azure AD.
 
-   Modify the values in the config section as described here:
+   Replace the values in the config section as described here:
 
-     - `authority` is the full URL that points to your tenant. The `tenant_id` is the **Directory (tenant) ID** for the app you registered. To find the value for the **Directory (tenant) ID**, go to the app's **Overview** pane in the Azure portal.
-     - `client_id` is the **Application (client) ID** for the app that you registered. To find the value for the **Application (client) ID**, go to the app's **Overview** pane in the Azure portal.
-     - `client_secret` is the `Value` for the `Client secrets` that you registered for your app in the Azure portal.
+     - Replace `tenant_id` with the **Directory (tenant) ID** you recorded during your app registration.
+     - Replace `Enter_the_Application_Id_Here` with the **Application (client) ID** you recorded during your app registration.
+     - Replace `Enter_the_Client_Secret_Here` with the `Value` for the `Client secrets` that you registered for your app in the Azure portal.
 
    The `app` section creates `ConfidentialClientApplication` instance, and reuses it during the lifecycle of the app. The `result` section checks if there's no suitable token in the cache, we send a request to Azure AD to get a new token. The `acquire_token_silent` helps to fetch the token of the current logged in identity silently. If the token expires, it sends a request, and automatically refreshes the token.
 
@@ -170,4 +162,4 @@ Graph API call result: {
 }
 ```
 
-You know how to acquire and use an access token to call a protected web API. You can use [Celery](https://docs.celeryq.dev/en/stable/) to run your app in the background.
+You've successfully created a Python daemon app that uses its own identity and acquires a valid access token to call a protected web API. You can use [Celery](https://docs.celeryq.dev/en/stable/) to run your app in the background.

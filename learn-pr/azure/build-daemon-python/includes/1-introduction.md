@@ -2,13 +2,13 @@ Organizations build apps to serve various use cases. While most applications req
 
 ## Example scenario
 
-Suppose you work at a financial technology company as a software developer. Your company is looking to develop an application that will perform a batch job to generate a report that lists the users who have an upcoming monthly payment. Your company will use the report to notify the users of their monthly payment. Your company uses Python to develop applications. You've been tasked with the responsibility of building an application that will acquire a token to call a protected web API on behalf of itself.
+Suppose you work at a financial technology company as a software developer. Your company is looking to develop an application that will perform a batch job to generate a report that lists the users who have a loan. Your company will use the report to notify the users of their monthly loan repayment. Your company uses Python to develop applications. You've been tasked with the responsibility of building an application that will acquire a token to call a protected web API on behalf of itself.
 
 ## What will you be doing?
 
 In this module, you'll:
 
-- Register an application with an Azure AD tenant.
+- Prepare Azure AD tenant to authenticate an app.
 - Enable a daemon app to authenticate and acquire an access token from Azure AD.
 - Use an access token to call a protected web API.
 

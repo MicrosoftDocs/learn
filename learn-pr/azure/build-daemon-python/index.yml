@@ -2,23 +2,25 @@
 uid: learn.build-daemon-python
 metadata:
   moduleType: choose
-  title: Build a Python daemon app calling a protected API using the Microsoft identity platform
+  title: Build a Python daemon app that calls a protected API using the Microsoft identity platform
   description: Build a Python daemon app that authenticates and acquires tokens from Azure Active Directory (Azure AD) as itself and calls a secure web API.
   ms.date: 08/10/2022
   author: henrymbuguakiarie
   ms.author: henrymbugua
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a Python daemon app calling a protected API using the Microsoft identity platform
+title: Build a Python daemon app that calls a protected API using the Microsoft identity platform
 summary: Create a Python daemon app that authenticates using the Microsoft identity platform. You'll register an app in your Azure Active Directory (Azure AD) tenant, add a client secret, acquire a token from your app, and call a protected web API.
 abstract: |
   By the end of this module, you'll be able to:
-    - Register a daemon app in an Azure AD tenant.
-    - Call a protected web API from an authenticated Python daemon app.
+    - Prepare Azure AD tenant to authenticate an app.
+    - Create a Python daemon app that calls a protected web API.
+    - Run and test the Python daemon app.
 prerequisites: |
-  - An Azure account. Learn how to create a free account in [Create an Azure account](/learn/modules/create-an-azure-account).
-  - [Python 3+](https://www.python.org/downloads/) installed on your computer.
-  - An Azure AD tenant that you manage as a global administrator, cloud app administrator, or app administrator.
+  - An Azure account with an active subscription. If you don't have an account, [Create an account for free](https://azure.microsoft.com/en-us/free/).
+  - Must have [Python 3+](https://www.python.org/downloads/) installed on your computer.
+  - Ability to write code in Python at beginner level.
+  - An Azure AD tenant that you manage as a global administrator, or a cloud app administrator, or an app administrator.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate

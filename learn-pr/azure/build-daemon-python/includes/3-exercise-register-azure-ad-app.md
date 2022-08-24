@@ -13,10 +13,7 @@ Follow these steps to register your application on the Azure portal.
 1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations** > **New registration**.
 1. Enter a display **Name** for your application. Enter a meaningful application name that will be displayed to users of the app, for example `python-daemon-app`.
-   You can change the display name at any time and multiple app registrations can share the same name. The app registration's automatically generated **Application (client) ID**, not its display name, uniquely identifies your app within the identity platform.
-1. Specify who can use the application, sometimes called its _sign-in audience_.
-
-   Under **Supported account types**, select an option.
+1. Specify who can use the application, sometimes called its _sign-in audience_. Under **Supported account types**, select an option:
 
       - **Accounts in this organizational directory only**. This choice is the most common one because daemon applications are written by line-of-business (LOB) developers.
       - **Accounts in any organizational directory**. You'll make this choice if you're an Independent Software Vendor (ISV) providing a utility tool to your customers. You'll need your customers' tenant admins to approve it.
@@ -26,7 +23,7 @@ Follow these steps to register your application on the Azure portal.
 1. Don't enter anything for **Redirect URI (optional)**.
 1. Select **Register** to complete the initial app registration.
 
-When registration finishes, the Azure portal displays the app registration's **Overview** pane. You see the **Application (client) ID**. Also called the **client ID**, this value uniquely identifies your application in the Azure AD.
+When registration finishes, the Azure portal displays the app registration's **Overview** pane. Record the **Application (client) ID** and **Directory (tenant) ID** values for use in your client application code.
 
 ## Add credentials
 
@@ -50,9 +47,8 @@ Complete the following steps to add **client secrets** for your app in the Azure
 1. Select **Certificates & secrets** > **Client secrets** > **New client secret**.
 1. Add a description for your client secret.
 1. Select an expiration for the secret or specify a custom lifetime.
-    - Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months.
-    - Microsoft recommends that you set an expiration value of less than 12 months.
+    - Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months. Microsoft recommends that you set an expiration value of less than 12 months.
 1. Select **Add**.
-1. _Record the secret's value_ for use in your client application code. This secret value is _never displayed again_ after you leave this page.
+1. Record the secret's value for use in your client application code. This secret value is _never displayed again_ after you leave this page.
 
 You've now successfully registered a daemon app with Azure AD.

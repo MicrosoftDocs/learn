@@ -12,6 +12,30 @@ The OAuth 2.0 client credentials flow permits a confidential client application 
 
 In the client credentials flow, permissions are granted directly to the application itself by an administrator. When the app presents a token to a resource, the resource enforces that the app itself has authorization to perform an action since there's no user involved in the authentication.
 
+## Microsoft Authentication Library (MSAL) for Python
+
+The MSAL for Python enables applications to integrate with the Microsoft identity platform. It allows you to sign in users or apps with Microsoft identities (Azure AD, Microsoft Accounts and Azure AD B2C accounts) and obtain tokens to call Microsoft APIs such as Microsoft Graph or your own APIs registered with the Microsoft identity platform.
+
+### Initialize the MSAL object
+
+To start using MSAL, you'll need to initialize and configure the MSAL object in your application code. Create either a **ConfidentialClientApplication** instance, and reuse it during the lifecycle of your app.
+
+The following example shows a **ConfidentialClientApplication** instance:
+
+```python
+from msal import ConfidentialClientApplication
+
+app = ConfidentialClientApplication(
+    client_id="client_id",
+    authority="authority",
+    client_credential="client_secret",
+)
+```
+
+- **client_id**: The client id is the unique **Application (client) ID** assigned to your app by Azure Active Directory (Azure AD) when the app was registered.
+- **authority**: The authority is a URL that indicates a directory that MSAL can request tokens from. It is composed of the identity provider instance and sign-in audience for the app.
+- **client_secret**: The client secret for the confidential client app, created when registering the app.
+
 ## Application permission to Microsoft Graph
 
 Configure application permissions for an application that needs to authenticate as itself without user interaction or consent. Application permissions are typically used by background services or console apps that access an API in a "headless" manner, and by web APIs that access another (downstream) API.
