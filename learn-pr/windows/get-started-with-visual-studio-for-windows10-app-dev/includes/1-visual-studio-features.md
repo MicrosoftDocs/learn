@@ -23,7 +23,7 @@ Before starting, you'll need to install Visual Studio. Check that you're using t
 1. Open the **Start** menu and select **Visual Studio Installer**.
 2. Click the **Update** button (if it appears). Visual Studio will download and install the most recent version.
 
-:::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediaupdate-visual-studio.png" alt-text="Screenshot showing Visual Studio Installer. The update button is highlighted.":::
+:::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/update-visual-studio.png" alt-text="Screenshot showing Visual Studio Installer. The update button is highlighted.":::
 
 ## Some definitions
 
@@ -43,7 +43,7 @@ IntelliSense displays information about your code directly within the editor. It
 
 The Visual Studio UI with a Solution open:
 
-:::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediavisual-studio-ui.png" alt-text="Screenshot of the Visual Studio user-interface in editor view. The main features are labeled.":::
+:::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/visual-studio-ui.png" alt-text="Screenshot of the Visual Studio user-interface in editor view. The main features are labeled.":::
 
 The **Solution Explorer** (top-right) helps you view, navigate, and manage files. Organize your code by grouping files into solutions and projects.
 
@@ -55,7 +55,7 @@ The **Team Explorer** (bottom-right) allows you to track work items and share co
 
 The previous image shows an example with C# code. You can also use the **Editor Window** to design the appearance of your app. Selecting a XAML file (for example, **MainPage.xaml**) displays:
 
-:::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediaeditor-mode.png" alt-text="Screenshot of Visual Studio user-interface in design view.":::
+:::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/editor-mode.png" alt-text="Screenshot of Visual Studio user-interface in design view.":::
 
 Preview your UI in the upper window along with the XAML code used to define it. You can switch between views using the **arrow button** (in the border, between the Design and Code views, near the words **Design** and **XAML**). The preview will change whenever you change the XAML file and vice versa.
 
@@ -72,35 +72,35 @@ Now that Visual Studio is up and running and you're familiar with the environmen
 
 1. Open Visual Studio. A **Visual Studio 2022** window appears. Click **Create a New Project**.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediacreate-new-project.png" alt-text="Screenshot of the Visual Studio 2022 start window. The create a new project option is highlighted.":::
+    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/create-new-project.png" alt-text="Screenshot of the Visual Studio 2022 start window. The create a new project option is highlighted.":::
 
 2. Type *Windows Universal* in the search box, select **Blank App (Universal Windows)**, and click **Next**.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediaselect-project-type.png" alt-text="Screenshot of the create a new project window. The search bar contains the text Windows Universal and is highlighted along with the correct template.":::
+    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/select-project-type.png" alt-text="Screenshot of the create a new project window. The search bar contains the text Windows Universal and is highlighted along with the correct template.":::
 
 3. In the *Configure your new project* screen; name your app *Hello World*, leave **Location** and **Solution name** set to their default values, and click **Create**.
 
 4. Set the **Minimum Version** to *Windows 10, version 1809* or later. Click **OK**.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediaselect-min-version.png" alt-text="Screenshot of the new Windows project screen. The minimum version Windows 10, version 1809 is selected and highlighted.":::
+    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/select-min-version.png" alt-text="Screenshot of the new Windows project screen. The minimum version Windows 10, version 1809 is selected and highlighted.":::
 
     Your project has been created. Your project isn't empty – some files and settings are automatically generated for you.
 
 5. Check your debug settings on the menu bar. They should be set to **Debug** and **x86**.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediacheck-debug-run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The required debug settings are highlighted in green and the run button is highlighted in red.":::
+    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/check-debug-run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The required debug settings are highlighted in green and the run button is highlighted in red.":::
 
 6. Click the **Run** (green triangle) button to build and run your app (or press the *F5* key).
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediarun-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The run button, represented by a green triangle, is highlighted.":::
+    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The run button, represented by a green triangle, is highlighted.":::
 
 7. A large, blank window displays with the text *Hello World*. This is a preview of your app when it's running.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediahello-world.png" alt-text="Screenshot of the running Hello World app built in this unit. The debug toolbar is also shown.":::
+    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/hello-world.png" alt-text="Screenshot of the running Hello World app built in this unit. The debug toolbar is also shown.":::
 
     > [!NOTE]
     > The blue rectangle toward the top of your app window is a Visual Studio tool that helps with debugging. It won't appear in your final app.
 
 8. Close out of your app or click the **Stop** (red square) button on the menu bar to stop running it.
 
-    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/mediastop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented red square, is highlighted.":::
+    :::image type="content" source="media/get-started-with-visual-studio-for-windows10-app-dev/media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented red square, is highlighted.":::
