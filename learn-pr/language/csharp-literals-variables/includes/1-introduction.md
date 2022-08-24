@@ -10,14 +10,14 @@ By the end of this module, you'll be able to create literal values and store and
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
-- Create literal values for five basic data types
-- Declare and initialize variables
-- Retrieve and set values in variables
-- Allow the compiler to determine the data type for your variable when initializing
+- Create literal values for five basic data types.
+- Declare and initialize variables.
+- Retrieve and set values in variables.
+- Allow the compiler to determine the data type for your variable when initializing.
 
 ## Prerequisites
 
-- Must understand basic C# syntax rules
-- Must understand how to use Console.WriteLine()
+- Understanding of basic C# syntax rules
+- Understanding of how to use Console.WriteLine()

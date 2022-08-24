@@ -1,6 +1,6 @@
 Your release pipeline still has two stages, but they're now different than before. The stages are _Build_ and _Dev_. Every change you push to GitHub triggers the _Build_ stage to run. The _Dev_ stage runs only when the change is in the _release_ branch. Here, you add the _Test_ stage to the pipeline.
 
-Recall that promoting the build from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning, the team decided to use a scheduled trigger. To set up the scheduled trigger:
+Recall that the team decided to use a scheduled trigger to promote the build from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning. To set up the scheduled trigger:
 
 > [!div class="checklist"]
 > * Define the schedule in your build configuration.
@@ -12,7 +12,7 @@ For learning purposes, here, you define the schedule but allow the build to go d
 
 Here, you modify your pipeline configuration to deploy the build to the _Test_ stage.
 
-1. In Visual Studio Code, modify *azure-pipelines.yml* like this:
+1. In Visual Studio Code, modify *azure-pipelines.yml* as follows:
 
     [!code-yml[](code/5-azure-pipelines.yml?highlight=8-14,106-128)]
 
@@ -40,7 +40,7 @@ Here, you modify your pipeline configuration to deploy the build to the _Test_ s
     :::image type="content" source="../media/5-pipeline-test-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing three completed stages: Build, Dev, and Test.":::
 
     You see that the deployment finished successfully.
-1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Test_ environment.
+1. From a web browser, go to the URL that's associated with the App Service instance for your _Test_ environment.
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the **App Service details** page.
 

@@ -1,16 +1,16 @@
-Let's begin by accessing parts of a string by identifying the position of one or more characters. Once you have located the position, you can then extract a specific part of the string.
+Let's begin by accessing parts of a string by identifying the position of one or more characters. Once you've located the position, you can then extract a specific part of the string.
 
 ## Exercise - Use the string's IndexOf() and Substring() helper methods
 
-In this exercise, you'll use the `IndexOf()` method and its variants including `IndexOfAny()` and `LastIndexOf()` to locate the position of one character or string inside a larger string.
+In this exercise, you'll use the `IndexOf()` method and its variants, including `IndexOfAny()` and `LastIndexOf()`, to locate the position of one character or string inside a larger string.
 
-Once we've located the position, we can use the `Substring()` method to return the rest of the string after the position.
+Once you've located the position, you can use the `Substring()` method to return the rest of the string after the position.
 
-Or we can use an overloaded version of the `Substring()` method to set the number of characters (length) to return after the position.
+Or you can use an overloaded version of the `Substring()` method to set the number of characters (length) to return after the position.
 
 ### Step 1 - Write code to find an opening and closing parenthesis embedded in a string
 
-In the .NET Editor, add the following code.
+In the .NET Editor, add the following code:
 
 ```csharp-interactive
 string message = "Find what is (inside the parentheses)";
@@ -22,7 +22,7 @@ Console.WriteLine(openingPosition);
 Console.WriteLine(closingPosition);
 ```
 
-Run the code to view the output.
+Run the code to get the following output:
 
 ```output
 13
@@ -31,11 +31,11 @@ Run the code to view the output.
 
 In this case, the index of the `(` character is 13. Remember, these values are zero-based, so it's the 14th character in the string. The index of the `)` character is `36`.
 
-Now that we have the two indexes, we can use them as the boundaries to retrieve the value between them.
+Now that you have the two indexes, you can use them as the boundaries to retrieve the value between them.
 
 ### Step 2 - Add code to retrieve the value between two parenthesis characters
 
-Modify the code from step 1 to match the following code listing.
+Modify the code from step 1 to match the following code listing:
 
 ```csharp-interactive
 string message = "Find what is (inside the parentheses)";
@@ -50,19 +50,19 @@ int length = closingPosition - openingPosition;
 Console.WriteLine(message.Substring(openingPosition, length));
 ```
 
-When you run the code this time, you'll see the following output.
+When you run the code this time, you'll get the following output:
 
 ```output
 (inside the parentheses
 ```
 
-The `Substring()` method needs the starting position and the number of characters, or length, to retrieve. So, we calculate the length in a temporary variable called `length`, and pass it with the `openingPosition` value to retrieve the string inside of the parenthesis.
+The `Substring()` method needs the starting position and the number of characters, or length, to retrieve. So, you calculated the length in a temporary variable called `length`, and passed it with the `openingPosition` value to retrieve the string inside of the parenthesis.
 
-The result is close, however the output includes the opening parenthesis. In this particular situation, this is not desired. To fix this, we'll have to update our code to skip the index of the parenthesis itself.
+The result is close; however, the output includes the opening parenthesis. In this particular situation, this is not the desired result. To fix this, we'll have to update our code to skip the index of the parenthesis itself.
 
 ### Step 3 - Update the code to modify the starting position of the sub string
 
-Update the code from step 2 to match the following listing.
+Update the code from step 2 to match the following listing:
 
 ```csharp-interactive
 string message = "Find what is (inside the parentheses)";
@@ -76,15 +76,15 @@ int length = closingPosition - openingPosition;
 Console.WriteLine(message.Substring(openingPosition, length));
 ```
 
-Run the code to view the following output.
+Run the code to get the following output:
 
 ```output
 inside the parentheses
 ```
 
-By increasing the `openingPosition` by `1`, we skip over the opening parenthesis character.
+By increasing the `openingPosition` by `1`, you skip over the opening parenthesis character.
 
-The reason we're using the value `1` is because that is the length of the character. If we were attempting to locate a value starting after a longer string, for example, `<div>` or `---`, we would use the length of that string instead.
+The reason we're using the value `1` is because that is the length of the character. If we were attempting to locate a value starting after a longer string, for example, `<div>` or `---`, we'd use the length of that string instead.
 
 The following snippet of code shows how to find the value inside an opening and closing `<span>` tag.
 
@@ -103,13 +103,13 @@ In this case, we're adding `6` to the `openingPosition` as the offset to calcula
 
 ### Avoid magic values
 
-Hardcoded strings like `"<span>"` in the previous code listing are known as "magic strings" and hardcoded numeric values like `6` are known as "magic numbers". These "Magic" values are undesirable for a number of reasons and you should try to avoid them if possible.
+Hardcoded strings like `"<span>"` in the previous code listing are known as "magic strings", and hardcoded numeric values like `6` are known as "magic numbers". These "magic" values are undesirable for a number of reasons, and you should try to avoid them if possible.
 
-In this specific case, consider how your code might break if you hardcoded the string `"<span>"` multiple times in your code, but misspelled one instance of it as `"<sapn>"`. The compiler won't catch this at compile time because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down. Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
+In this specific case, consider how your code might break if you hardcoded the string `"<span>"` multiple times in your code, but misspelled one instance of it as `"<sapn>"`. The compiler won't catch this at compile time, because the value is in a string. The misspelling will likely cause problems at run time, and depending on the complexity of your code, it might be difficult to track down. Furthermore, if you change the string `"<span>"` to `"<div>"`, but forget to change the number `6`, then your code will produce undesirable results.
 
-Instead, you should use a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You would then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once and misspelling the `const` variable will be caught by the compiler.
+Instead, you should use a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You'd then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once, and misspelling the `const` variable will be caught by the compiler.
 
-The following code listing is a much safer way to write the same code.
+The following code listing is a much safer way to write the same code:
 
 ```csharp
 string message = "What is the value <span>between the tags</span>?";
@@ -131,7 +131,7 @@ This time, if the value of `openSpan` changes, the line of code that uses the `L
 
 Next, let's increase the complexity of the `message` variable by adding many sets of parentheses, then write code to retrieve the content inside the **last** set of parentheses.
 
-Update the code from step 3 to match the following listing.
+Update the code from step 3 to match the following listing:
 
 ```csharp-interactive
 string message = "(What if) I am (only interested) in the last (set of parentheses)?";
@@ -143,19 +143,19 @@ int length = closingPosition - openingPosition;
 Console.WriteLine(message.Substring(openingPosition, length));
 ```
 
-When you run the code you should see the following output.
+When you run the code, you should get the following output:
 
 ```output
 set of parentheses
 ```
 
-The key to this example is the use of `LastIndexOf()`, which we use to get the positions of the last opening and closing parentheses.
+The key to this example is the use of `LastIndexOf()`, which you can use to get the positions of the last opening and closing parentheses.
 
 ### Step 5 - Update the code example to retrieve any value between one or more sets of parentheses in a string
 
-This time, we'll update the `message` to have three sets of parentheses, and we'll write code to extract any text inside of them. We'll be able to reuse portions of our previous work, but will need to add a `while` statement to iterate through the string until all sets of parentheses are discovered, extracted, and displayed.
+This time, we'll update the `message` to have three sets of parentheses, and we'll write code to extract any text inside of them. We'll be able to reuse portions of our previous work, but we'll need to add a `while` statement to iterate through the string until all sets of parentheses are discovered, extracted, and displayed.
 
-Update the code from step 4 to match the following code listing.
+Update the code from step 4 to match the following code listing:
 
 ```csharp-interactive
 string message = "(What if) there are (more than) one (set of parentheses)?";
@@ -175,7 +175,7 @@ while (true)
 }
 ```
 
-When you run the code, you'll see the following output.
+When you run the code, you'll get the following output:
 
 ```output
 What if
@@ -189,7 +189,7 @@ The key to understanding this technique is the last line of code inside the `whi
 message = message.Substring(closingPosition + 1);
 ```
 
-When you use `Substring()` without specifying a length input parameter, it will return every character after the starting position you specify. We use this to our advantage, removing the first set of parentheses from the value of `message`. What remains is then processed in the next iteration of the `while` loop.
+When you use `Substring()` without specifying a length input parameter, it will return every character after the starting position you specify. We can use this to our advantage, removing the first set of parentheses from the value of `message`. What remains is then processed in the next iteration of the `while` loop.
 
 What happens during the final iteration when all that's left is the final `?` character?
 
@@ -202,15 +202,15 @@ if (openingPosition == -1) break;
 
 The `IndexOf()` method will return `-1` if it can't find the input parameter in the string. We merely check for the value `-1` and `break` out of the loop.
 
-Let's consider an even more advanced example. This time, we'll search for several different symbols -- not just a set of parentheses.
+Let's consider an even more advanced example. This time, we'll search for several different symbols, not just a set of parentheses.
 
 ### Step 6 - Update the code example to work with different types of symbol sets
 
-This time, we'll update the `message` string adding different types of symbols like square brackets and curly braces. We'll rely on `IndexOfAny()` to provide an array of characters representing the opening symbols. `IndexOfAny()` will return us the first match it finds in the string.
+This time, we'll update the `message` string, adding different types of symbols like square brackets and curly braces. We'll rely on `IndexOfAny()` to provide an array of characters representing the opening symbols. `IndexOfAny()` will return us the first match it finds in the string.
 
-Once we find a symbol, we'll need to find its matching closing symbol. Once we do that, the rest should look similar. We'll use a different tactic instead of modifying the original value of `message`. This time, we'll use the closing position of the previous iteration as the opening position of the current iteration.
+Once we find a symbol, we'll need to find its matching closing symbol. When we've done that, the rest should look similar. We'll use a different tactic instead of modifying the original value of `message`. This time, we'll use the closing position of the previous iteration as the opening position of the current iteration.
 
-Update the code from step 5 to match the following code
+Update the code from step 5 to match the following code:
 
 ```csharp-interactive
 string message = "(What if) I have [different symbols] but every {open symbol} needs a [matching closing symbol]?";
@@ -265,7 +265,7 @@ while (true)
 }
 ```
 
-When you run the code, you'll see the following output.
+When you run the code, you'll get the following output:
 
 ```output
 What if
@@ -274,7 +274,7 @@ open symbol
 matching closing symbol
 ```
 
-In this example, we've added some comments to explain what's happening. Besides using `IndexOfAny()` to locate one of several possible symbols, the key is the following line of code.
+In this example, we've added some comments to explain what's happening. Besides using `IndexOfAny()` to locate one of several possible symbols, the key is the following line of code:
 
 ```csharp
 closingPosition = message.IndexOf(matchingSymbol, openingPosition);
@@ -290,7 +290,7 @@ This is why the `closingPosition` variable is defined outside of the `while` loo
 
 ## Recap
 
-We covered a lot of ground in this unit. Here's the most important things to remember:
+We covered significant ground in this unit. Here are the most important things to remember:
 
 - `IndexOf()` gives us the first position of a character or string inside of another string.
 - `IndexOf()` returns `-1` if it can't find a match.

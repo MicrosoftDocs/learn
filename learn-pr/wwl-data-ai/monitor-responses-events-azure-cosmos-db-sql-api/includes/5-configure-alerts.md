@@ -1,4 +1,4 @@
-Azure Cosmos DB uses the Azure Monitor Service to set up and send alerts. Alerts monitor the availability and responsiveness of Azure Cosmos DB resources and send notification when monitored metrics hit specified thresholds. Alerts can take the form of emails or even execute Azure Functions when they're triggered. Alerts also monitor the activity log events of your Azure Cosmos DB account.
+Azure Cosmos DB uses the Azure Monitor Service to set up and send alerts. Alerts monitor the availability and responsiveness of Azure Cosmos DB resources and send notifications when monitored metrics hit specified thresholds. Alerts can take the form of emails or even execute Azure Functions when they're triggered. Alerts also monitor the activity log events of your Azure Cosmos DB account.
 
 Alerts can be set up from either your Azure Cosmos DB account page or from Azure Monitor.  From both places, you'll set up the alerts in similar fashions.  
 
@@ -30,7 +30,7 @@ Let's take a look at an example of setting alerts when over *one thousand* **429
 
 1. The alert needs to know what to do when the condition is met. Let's send out the email. Under *Actions*, select **Add action group**.
 
-    1. If you already had some action create, you could reuse it. We'll create a new Action, select + **Create action group**.
+    1. If you already had some actions created, you could reuse them. We'll create a new Action, select + **Create action group**.
 
     1. Under the **Basic** tab:
         1. Give the Action group a name.
@@ -61,8 +61,8 @@ Once the alert is created, it can take up to 10 minutes to activate.
 The following are some scenarios where you can use alerts:
 
 - When the keys of an Azure Cosmos account are updated.
-- When the data or index usage of a container, database, or a region exceeds a certain number of bytes.
-- When the normalized RU/s consumption is greater than certain percentage.
-- When a region is added, removed, or if it goes offline.
+- When the data or index usage of a container, database, or region exceeds a certain number of bytes.
+- When the normalized RU/s consumption is greater than a certain percentage.
+- When a region is added, removed, or goes offline.
 - When a database or a container is created, deleted, or updated.
-- When the throughput of your database or the container is changed.
+- When the throughput of your database or container is changed.
