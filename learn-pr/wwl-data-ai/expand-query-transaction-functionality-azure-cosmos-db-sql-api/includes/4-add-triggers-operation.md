@@ -19,7 +19,7 @@ Using the context object, you can invoke the ``getRequest()`` or ``getResponse()
 
 ### Pre-trigger
 
-Pre-triggers are ran before an operation and cannot have any input parameters. They can perform actions such as validate the properties of an item, or inject missing properties.
+Pre-triggers are run before an operation and cannot have any input parameters. They can perform actions such as validate the properties of an item, or inject missing properties.
 
 Let's walk through a simple example where a JSON item is ready to be created in a container.
 
