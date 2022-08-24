@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 8/23/2022
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 5
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Arc-enabled SQL Managed Instance allows which Authentication types?"
+    choices:
+    - content: "Azure Active Directory (AAD)"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Active Directory is not currently supported."
+    - content: "Active Directory (AD)"
+      isCorrect: true
+      explanation: "That's correct. Using the integrated Active Directory authentication method is supported."
+    - content: "SQL Server Authentication"
+      isCorrect: true
+      explanation: "That's correct. As with all editions of SQL, SQL Server Authentication is supported."
+  - content: "Which tool can be used to monitor the performance of an Arc-enabled SQL Managed Instance deployed to an indirectly connected Arc data controller?"
+    choices:
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "That's incorrect. Arc-enabled SQL Managed Instance in an indirectly connected mode deployment is not supported."
+    - content: "Grafana Dashboards"
+      isCorrect: true
+      explanation: "That's correct. Grafana provides local, out-of-the-box dashboards to assist in performance monitoring."
+    - content: "SQL Insights"
+      isCorrect: false
+      explanation: "That's incorrect. SQL Insights does not support Arc-enabled SQL Managed Instance."
+  - content: "An organization has an application database in its Arc-enabled SQL Managed Instance that contains sensitive data. They need to protect this sensitive data while in transit; the solution is not to reveal the encryption keys to the database engine. Which security options can be used?"
+    choices:
+    - content: "Transparent Data Encryption (TDE)"
+      isCorrect: false
+      explanation: "That's incorrect. TDE does not encrypt the data in transit."
+    - content: "Always Encrypted"
+      isCorrect: true
+      explanation: "That's correct. Use Always Encrypted to encrypt data in transit while not revealing the encyrption keys to the database engine."
+    - content: "Always Encrypted with Secure Enclaves"
+      isCorrect: false
+      explanation: "That's incorrect. Arc-enabled SQL Managed Instance does not support Always Encrypted with Secure Enclaves"
+  - content: "Where is one location that contains Kibana and Grafana endpoints for viewing the logs and metrics of an Arc-enabled SQL Managed Instance?"
+    choices:
+    - content: "Azure portal"
+      isCorrect: false
+      explanation: "That's incorrect. The Azure Portal provides no support for retrieving the endpoint details."
+    - content: "SQL Server Management Studio"
+      isCorrect: false
+      explanation: "That's incorrect. SSMS provides no support for retrieving the endpoint details."
+    - content: "Azure Data Studio"
+      isCorrect: true
+      explanation: "That's correct. From the Manage SQL Managed Instance tab."

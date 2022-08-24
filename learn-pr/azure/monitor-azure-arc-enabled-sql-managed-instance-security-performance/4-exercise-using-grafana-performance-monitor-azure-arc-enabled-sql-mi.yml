@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-mi
+title: Exercise - Using Grafana to performance monitor your Azure Arc-enabled SQL Managed Instance
+metadata:
+  title: exercise
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 8/23/2022
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-using-grafana-performance-monitor-azure-arc-enabled-sql-mi.md)]
