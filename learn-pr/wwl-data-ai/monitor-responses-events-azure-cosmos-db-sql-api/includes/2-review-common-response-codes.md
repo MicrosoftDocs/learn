@@ -1,4 +1,4 @@
-Most common request operations using the Azure Cosmos DB SQL API, will be to create, query, or manage container documents. Each request will return an HTTP status code on the status of the operation.  This code might let us know if the operation was successful. Or the code will let us know the request was unsuccessful and provides us with some insight of what might have gone wrong. In this section we'll review some of the most common HTTP status codes returned by the following types of request:
+Most common request operations using the Azure Cosmos DB SQL API, will be to create, query, or manage container documents. Each request will return an HTTP status code on the status of the operation.  This code might let us know if the operation was successful. Or the code will let us know the request was unsuccessful and provide us with some insight of what might have gone wrong. In this section we'll review some of the most common HTTP status codes returned by the following types of requests:
 
 - Create a Document
 - List Documents
@@ -10,7 +10,7 @@ Most common request operations using the Azure Cosmos DB SQL API, will be to cre
 
 ## Common Status codes for all types of operations
 
-While some status codes like 400, 403 and 404 are share among different operation types, their description varies slightly and wont be listed in this table.
+While some status codes like 400, 403, and 404 are shared among different operation types, their descriptions vary slightly and won't be listed in this table.
 
 | **Status Code** | **Name** | **Operation Type** | **Description** |
 | :--- | :--- | :--- | :--- |
@@ -48,14 +48,14 @@ The Get Document operation retrieves a document by its partition key and documen
 
 ## Replace a Document
 
-The Replace Document operation replaces the entire content of a document. Its status codes are:
+The Replace Document operation replaces the entire contents of a document. Its status codes are:
 
 | **Status Code** | **Operation Type** | **Description** |
 | :--- | :--- |  :--- |
 | **400** | Bad Request | The JSON body is invalid. Check for missing curly brackets or quotes. |
 | **404** | Not Found | The document no longer exists, that is, the document was deleted. |
 | **409** | Conflict | The `id` provided for the new document has been taken by an existing document. |
-| **413** | Entity Too Large | The document size in the request exceeded the allowable document size in a request. |
+| **413** | Entity Too Large | The document size in the request exceeded the allowable document size. |
 
 ## Patch a Document
 
@@ -81,11 +81,11 @@ You can query the collection documents using Azure Cosmos DB SQL queries. Its st
 
 | **Status Code** | **Operation Type** | **Description** |
 | :--- | :--- |  :--- |
-| **400** | Bad Request | The specified request was specified with an incorrect SQL syntax, or missing required headers. |
+| **400** | Bad Request | The request was specified with an incorrect SQL syntax or was missing required headers. |
 
 ## Other important status codes Azure Cosmos DB request could return
 
-Some failed status codes are also references as **exceptions**.  We'll discuss a couple of these status codes in more detail in the next sections, but here are a few more common status codes to review:
+Some failed status codes are also references to **exceptions**.  We'll discuss a couple of these status codes in more detail in the next sections, but here are a few more common status codes to review:
 
 | **Status Code** | **Operation Type** | **Description** |
 | :--- | :--- |  :--- |
