@@ -18,7 +18,7 @@ Azure Cosmos DB backups use by default geo-redundant blob storage that is replic
 
 ## Change the default backup interval and retention period
 
-By default, Azure Cosmos DB backups every 4 hours and keeps the last two backups at no extra cost. These settings are set at the Azure Cosmos DB account level and can be configured during or after the account creation. Currently these settings can only be changed from the Azure portal.
+By default, Azure Cosmos DB takes backups every 4 hours and keeps the last two backups at no extra cost. These settings are set at the Azure Cosmos DB account level and can be configured during or after the account creation. Currently these settings can only be changed from the Azure portal.
 
 ### Change backup options for a new account
 
@@ -60,7 +60,7 @@ Scenarios to consider:
 
 A new Azure Cosmos DB account is created to hold the data every time you restore a backup. Data *can't* be restored to an existing Azure DB account. The account created will have the *\<Azure_Cosmos_account_original_name\>-restored#* name format, where # is an incremental digit when you're doing multiple restores against the same account.
 
-If you delete the Azure Cosmos DB *account*, and wish to recover it with the same name, don't recreate it. Just ask the Azure support team to recreate it with the original name. The restored account will have the same provisioned throughput, indexing policies and it is in same region as the original account.
+If you delete the Azure Cosmos DB *account*, and wish to recover it with the same name, don't recreate it. Just ask the Azure support team to recreate it with the original name. The restored account will have the same provisioned throughput, indexing policies, and will be in the same region as the original account.
 
 If you delete an Azure Cosmos DB database, you can ask to restore the whole database, or just those containers inside the databases you wish to restore.
 
@@ -75,7 +75,7 @@ Settings that are not restored to the new account:
 
 ## Costs of Extra backups
 
-Azure Cosmos DB includes the option for the retention of two backups for free. Extra backups will be charged on a region-based backup-storing pricing. So for example, if you have a backup interval of 3 hours and you chose a retention period of two days (48 hours), and since two backups are free, you'll pay for (48/3-2) *region-based backup-storing price* backup size.
+Azure Cosmos DB includes the option for the retention of two backups for free. Extra backups will be charged using region-based backup-storing pricing. So for example, if you have a backup interval of 3 hours and you chose a retention period of two days (48 hours), and since two backups are free, you'll pay for (48/3-2) *region-based backup-storing price* backup size.
 
 ## Manage your own backups
 

@@ -28,7 +28,7 @@ By default Azure Monitor collects and stores Cosmos DB metrics automatically.  A
 To analyze Cosmos DB metrics, use the metrics explorer by opening **Metrics** from the **Azure Monitor** menu in the Azure portal. To filter out the Cosmos DB metrics, pick  *Cosmos DB standard metrics* from the *Metric Namespace* pulldown.  Other filters can be added for the collection name, database name, operation type, region, and status code dimensions.
 
 ## Analyze logs
-Azure Monitor Logs data is stored into tables.  Queries can be run against these tables to analyze their data. Azure Cosmos DB stores log data into the `AzureDiagnostics` and `AzureActivity` tables. To search the AzureDiagnostics table for Azure Cosmos DB entries, include a filter with the `resourceprovider` field equals to `MICROSOFT.DOCUMENTDB` in your queries. Additionally, Azure Cosmos DB also logs data to several resource-specific tables.
+Azure Monitor Logs data is stored into tables.  Queries can be run against these tables to analyze their data. Azure Cosmos DB stores log data into the `AzureDiagnostics` and `AzureActivity` tables. To search the AzureDiagnostics table for Azure Cosmos DB entries, include a filter with the `resourceprovider` field equal to `MICROSOFT.DOCUMENTDB` in your queries. Additionally, Azure Cosmos DB also logs data to several resource-specific tables.
 
 ## Alerts
 Azure Monitor can trigger alerts based on defined conditions.  These alerts can be set on metrics, logs, and the activity log. For example, you can get an alert when a container or a database has exceeded the provisioned throughput limit.

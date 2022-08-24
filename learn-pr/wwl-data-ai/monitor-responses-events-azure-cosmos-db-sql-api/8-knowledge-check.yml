@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2021
+  ms.date: 08/23/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 5
 quiz:
@@ -37,7 +36,7 @@ quiz:
     - content: "Activity logs."
       isCorrect: true
       explanation: "That's correct. By using audit logging and activity logs, you can monitor your account for normal and abnormal activity."
-  - content: "What should you do if your request are being rate limited because of transient service errors?"
+  - content: "What should you do if your requests are being rate limited because of transient service errors?"
     choices:
     - content: "Increasing the provisioned RU/s."
       isCorrect: false

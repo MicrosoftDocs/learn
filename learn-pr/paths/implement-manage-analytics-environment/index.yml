@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
-  ms.prod: learning-power-bi
+  ms.service: powerbi
 title: Implement and manage an analytics environment
 prerequisites: |
   Familiarity with Power BI and governance practices in a BI environment.
