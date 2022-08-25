@@ -37,7 +37,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "An IT admin has recently installed Microsoft Graph PowerShell to administer various tasks in Azure AD. They are new to this module and would like to find cmdlets for different resources in the directory. What would be the **BEST** place for them to start?"
+  - content: "An IT admin has recently installed Microsoft Graph PowerShell to administer various tasks in Azure AD. They're new to this module and would like to find cmdlets for different resources in the directory. What would be the **BEST** place for them to start?"
     choices:
     - content: "Run `Connect-MgGraph` to connect to the Azure AD directory and run cmdlets based on `Verb-MgResource` format."
       isCorrect: false
@@ -48,7 +48,7 @@ quiz:
     - content: "Run `Find-MgGraphPermission` to discover the cmdlets associated with the particular domain."
       isCorrect: false
       explanation: "Find-MgGraphPermission helps find permissions and not cmdlets applicable to a certain domain, for example, user."
-  - content: "Typically, every feature that has an API in Microsoft Graph has an equivalent cmdlet in Microsoft Graph PowerShell. There are, however, instances where an API exists but the equivalent cmdlet is not yet available. Which cmdlet would be the most appropriate to use in such an instance?"
+  - content: "Typically, every feature that has an API in Microsoft Graph has an equivalent cmdlet in Microsoft Graph PowerShell. There are, however, instances where an API exists but the equivalent cmdlet isn't yet available. Which cmdlet would be the most appropriate to use in such an instance?"
     choices:
     - content: "Invoke-MgGraphRequest"
       isCorrect: true
@@ -61,12 +61,12 @@ quiz:
       explanation: "Find-MgGraphPermission helps you find permissions that are applicable to a certain domain."
   - content: "What makes Microsoft Graph PowerShell a cross-platform (Windows, Linux, and macOS) automation tool?"
     choices:
-    - content: "Microsoft Graph PowerShell uses Microsoft Authentication Library which supports modern authentication."
+    - content: "Microsoft Graph PowerShell uses Microsoft Authentication Library that supports modern authentication."
       isCorrect: false
-      explanation: "Microsoft Graph PowerShell supports modern authentication through Microsoft Authentication Library, but this does not make it a cross-platform tool."
+      explanation: "Microsoft Graph PowerShell supports modern authentication through Microsoft Authentication Library, but this doesn't make it a cross-platform tool."
     - content: "Microsoft Graph PowerShell provides commands for the entire Microsoft Graph API."
       isCorrect: false
-      explanation: "Microsoft Graph PowerShell is PowerShell for the entire set of Microsoft Graph APIs, but this does not make it a cross-platform tool."
-    - content: "Microsoft Graph PowerShell supports PowerShell 7 which is itself a cross-platform tool."
+      explanation: "Microsoft Graph PowerShell is PowerShell for the entire set of Microsoft Graph APIs, but this doesn't make it a cross-platform tool."
+    - content: "Microsoft Graph PowerShell supports PowerShell 7, which is itself a cross-platform tool."
       isCorrect: true
       explanation: "PowerShell 7 is a cross-platform automation tool that is supported by Microsoft Graph PowerShell. This relation makes Microsoft Graph PowerShell a cross platform tool."
