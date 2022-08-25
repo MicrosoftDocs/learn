@@ -20,7 +20,7 @@ However, not having enforced relationships doesn't mean that you can't manage en
 
 Understanding how the economics of computing has changed since relational databases were first introduced can help explain why these two types of databases are so different.
 
-When relational databases were invented in 1970, the cost of storage and memory were relative to compute was high. The goal of normalizing a database model was to reduce duplicate data and thus cost within a database. The database engine would apply locks and latches to enforce strict ACID (atomicity, consistency, isolation, durability) semantics as it performed operations on all the needed pieces of data together. The locks on data ensured consistent data, but with trade-offs in concurrency, latency, and availability.
+When relational databases were invented in 1970, the costs of storage and memory were high relative to compute. The goal of normalizing a database model was to reduce duplicate data and thus cost within a database. The database engine would apply locks and latches to enforce strict ACID (atomicity, consistency, isolation, durability) semantics as it performed operations on all the needed pieces of data together. The locks on data ensured consistent data, but with trade-offs in concurrency, latency, and availability.
 
 Today, the cost of storage and memory is relatively cheap compared to compute, thus, to be cost effective we no longer need optimize for storage efficiency. With workloads requiring increasing levels of concurrency and availability and lower latencies, there was a need for a new type of database that's optimized for these requirements, and so NoSQL databases were born. 
 

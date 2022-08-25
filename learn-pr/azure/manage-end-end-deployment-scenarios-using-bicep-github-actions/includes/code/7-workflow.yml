@@ -11,15 +11,15 @@ jobs:
 
   # Build the application and database.
   build:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/build.yml@main
+    uses: ./.github/workflows/build.yml
 
   # Lint the Bicep file.
   lint:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/lint.yml@main
+    uses: ./.github/workflows/lint.yml
 
   # Deploy to the test environment.
   deploy-test:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml
     needs: [build, lint]
     with:
       environmentType: Test
@@ -27,13 +27,15 @@ jobs:
       reviewApiUrl: https://sandbox.contoso.com/reviews
       sqlServerAdministratorLogin: TestToyCompanyAdmin
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_TEST }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_TEST }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       reviewApiKey: ${{ secrets.REVIEW_API_KEY_TEST }}
       sqlServerAdministratorLoginPassword: ${{ secrets.SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST }}
 
   # Deploy to the production environment.
   deploy-production:
-    uses: YOUR_GITHUB_USERNAME/toy-website-end-to-end/.github/workflows/deploy.yml@main
+    uses: ./.github/workflows/deploy.yml
     needs:
     - lint
     - build
@@ -44,6 +46,8 @@ jobs:
       reviewApiUrl: https://api.contoso.com/reviews
       sqlServerAdministratorLogin: ToyCompanyAdmin
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_PRODUCTION }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_PRODUCTION }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       reviewApiKey: ${{ secrets.REVIEW_API_KEY_PRODUCTION }}
       sqlServerAdministratorLoginPassword: ${{ secrets.SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION }}

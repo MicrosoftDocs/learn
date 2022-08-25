@@ -26,42 +26,37 @@ Service connections are created in your Azure DevOps project. A single service c
 
 You also can set up your service connection so that it can be used only in specific pipelines. For example, when you create a service connection that deploys to your website's production environment, it's a good idea to ensure that only your website's pipeline can use this service connection. Restricting a service connection to specific pipelines stops someone else from accidentally using the same service connection for a different project and potentially causing your production website to go down.
 
-## Deploy a Bicep file by using the Azure CLI task
+## Deploy a Bicep file by using the Azure Resource Group Deployment task
 
-One of the most useful built-in tasks in Azure Pipelines is the Azure CLI task. You can use this task to execute one or more Azure CLI commands, including deploying a Bicep file.
-
-> [!NOTE] 
-> Azure Pipelines includes a task named *Azure Resource Group Deployment*. You can use this task to deploy JSON Azure Resource Manager templates. Currently, the *Azure Resource Group Deployment* task doesn't work with Bicep files.
-
-Here's an example of how to configure a step to use the Azure CLI task:
+When you need to deploy a Bicep file from a pipeline, you can use the *Azure Resource Group Deployment* task. Here's an example of how to configure a step to use the task:
 
 ```yaml
-- task: AzureCLI@2
+- task: AzureResourceManagerTemplateDeployment@3
   inputs:
-    azureSubscription: 'MyServiceConnection'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: |
-      az deployment group create \
-        --resource-group Example \
-        --template-file deploy/main.bicep
+    connectedServiceName: 'MyServiceConnection'
+    location: 'westus3'
+    resourceGroupName: Example
+    csmFile: deploy/main.bicep
+    overrideParameters: >
+        -parameterName parameterValue
 ```
 
-The first line specifies `AzureCLI@2`. It tells Azure Pipelines that the task you want to use for this step is named `AzureCLI`, and you want to use version `2` of the task.
+The first line specifies `AzureResourceManagerTemplateDeployment@3`. It tells Azure Pipelines that the task you want to use for this step is named `AzureResourceManagerTemplateDeployment`, and you want to use version `3` of the task.
 
-When you use the Azure CLI task, you specify *inputs* to tell the task what to do. Here are some inputs you might use in a task:
+When you use the Azure Resource Group Deployment task, you specify *inputs* to tell the task what to do. Here are some inputs you might specify when you use the task:
 
-* `azureSubscription` is the name of the service connection to use.
-* `scriptType` is the type of script to run the Azure CLI commands in. You can choose from multiple script types, including Bash and PowerShell.
-* `scriptLocation` specifies whether to run a script file stored in your repository or an *inline script* in which you specify the Azure CLI commands inside the YAML file. In this module, we use inline scripts.
-* `inlineScript` contains the Azure CLI commands to execute. The commands work just like they do when you run the Azure CLI from your own computer.
+* `connectedServiceName` is the name of the service connection to use.
+* `location` needs to be specified even though its value might not be used. The Azure Resource Group Deployment task can also create a resource group for you, and if it does, it needs to know the Azure region in which to create the resource group. In this module, you'll specify the `location` input value but its value isn't used.
+* `resourceGroupName` specifies the name of the resource group that the Bicep file should be deployed to.
+* `overrideParameters` contains any parameter values you want to pass into your Bicep file at deployment time.
 
-When the task starts, it uses the service connection to sign in to Azure. By the time the task runs the commands you specified, the task has authenticated. You don't need to run `az login`.
+When the task starts, it uses the service connection to sign in to Azure. By the time the task runs the deployment you specified, the task has authenticated. You don't need to run `az login`.
 
-> [!NOTE]
-> You might not have used the Azure CLI before. If you're used to PowerShell, that's OK. We use the Azure CLI task throughout this module because it provides a basic way to deploy a Bicep file.
->
-> In your own pipelines, you can use the *Azure PowerShell* task instead, or you can even mix tasks and use both types of scripts.
+## Run Azure CLI and Azure PowerShell commands
+
+Two of the most useful built-in tasks in Azure Pipelines are the Azure CLI and Azure PowerShell tasks. You can use these tasks to execute one or more Azure CLI or PowerShell commands.
+
+In future Microsoft Learn modules, you'll see how the Azure CLI command can help you to automate more parts of your deployment process from a pipeline.
 
 ## Variables
 
@@ -83,12 +78,12 @@ You can let users override a variable value when they run your pipeline manually
 
 After you create a variable, you'll use a specific syntax to refer to the variable in your pipeline's YAML file:
 
-:::code language="yaml" source="code/4-variables.yml" range="14-23" highlight="3, 8, 10":::
+:::code language="yaml" source="code/4-variables.yml" range="15-22" highlight="3-5, 8":::
 
-The Azure CLI command includes a special `$(VariableName)` syntax. You can refer to any variable by using this approach, whether it's secret or not.
+The pipeline definition file format includes a special `$(VariableName)` syntax. You can refer to any variable by using this approach, whether it's secret or not.
 
 > [!TIP]
-> The template file name isn't stored in a variable. Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments and for anything that is secret. Because the pipeline will always use the same template file, you don't need to create a variable for the path.
+> In the preceding example, notice that the Bicep file's name isn't stored in a variable. Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments and for anything that is secret. Because the pipeline will always use the same template file, you don't need to create a variable for the path.
 
 ### System variables
 
@@ -103,8 +98,8 @@ In addition to using the Azure Pipelines web interface to create variables, you 
 
 To set a variable in your YAML file, add a `variables` section:
 
-:::code language="yaml" source="code/4-variables.yml" highlight="6-9":::
+:::code language="yaml" source="code/4-variables.yml" highlight="6-10":::
 
-This pipeline example defines three variables: `ServiceConnectionName`, `EnvironmentType`, and `ResourceGroupName`.
+This pipeline example defines four variables: `ServiceConnectionName`, `EnvironmentType`, `ResourceGroupName`, and `DeploymentDefaultLocation`.
 
-In this module, we create variables only by using the Azure Pipelines web interface.
+Later in this module, you'll see how you can mix variables defined in different places together in one pipeline.

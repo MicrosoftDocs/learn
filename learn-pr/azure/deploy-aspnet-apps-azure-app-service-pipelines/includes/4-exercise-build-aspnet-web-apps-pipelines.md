@@ -32,7 +32,7 @@ You'll start by creating a GitHub account, an Azure DevOps organization, and an 
 
 ## Create a GitHub repository from a template and generate an Azure DevOps build pipeline
 
-Next, you will create your own repository from a GitHub template repository, containing the sample ASP.NET app, into your GitHub account and then generate an Azure DevOps build pipeline using it as its source.
+Next, you'll create your own repository from a GitHub template repository, containing the sample ASP.NET app, into your GitHub account and then generate an Azure DevOps build pipeline using it as its source.
 
 1. Within the browser window displaying the Azure DevOps portal, open another tab and navigate to the [repository hosting the sample ASP.NET app](https://github.com/MicrosoftDocs/mslearn-deploy-aspnet-azure-pipelines) that you'll be using throughout the exercises in this module.
 1. On the [repository hosting the sample ASP.NET app](https://github.com/MicrosoftDocs/mslearn-deploy-aspnet-azure-pipelines) page, follow instructions describing [Creating a repository from a template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).

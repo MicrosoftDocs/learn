@@ -1,15 +1,8 @@
 Now it's your opportunity to explore web app services in Azure.
 
-This exercise can be completed using a Microsoft Learn *sandbox*, which provides a temporary Azure subscription. 
+## Prerequisites
 
-+ To activate the sandbox subscription, you must sign in using a Microsoft account.  
-+ After the sandbox has been activated, there is a button to launch the Azure portal. 
-+ The sandbox subscription will be automatically deleted when you complete this module.
-
-[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
-
-> [!NOTE]
-> If you prefer, you can use your own Azure subscription. To do so, [sign into the Azure portal using credentials for your subscription](https://portal.azure.com?azure-portal=true). Ensure you are working in the directory containing your subscription - indicated at the top right under your user ID. If not, select the user icon and switch directory.
+This exercise requires an Azure account with an active subscription. If you don't already have one, you can sign up for a [free trial](https://azure.com/free). 
 
 ## Lab scenario
 
@@ -27,7 +20,7 @@ You have created a basic architecture and identified the tasks. You will be depl
 
 ## Task 1: Create an Azure web app
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the Azure portal. 
 
 1. In the Azure portal, search for and select **App services**.
 
@@ -44,7 +37,7 @@ You have created a basic architecture and identified the tasks. You will be depl
     | Runtime stack | **PHP 7.4** |
     | Operating system | **Windows** |
     | Region | use the provided region |
-    | App service plan | accept the default configuration |
+    | App service plan | select a plan that supports [staging slots](/azure/azure-resource-manager/management/azure-subscription-service-limits#app-service-limits) |
 
 1. Click **Review + create**. 
 

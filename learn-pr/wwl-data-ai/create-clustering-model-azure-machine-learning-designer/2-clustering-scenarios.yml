@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-clustering-model-azure-machine-learning-designer.create-azure-machine-learning-workspace
+title: Identify clustering machine learning scenarios
+metadata:
+  title: Identify clustering machine learning scenarios
+  description: "Identify clustering machine learning scenarios"
+  ms.date: 08/18/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-clustering-scenarios.md)]

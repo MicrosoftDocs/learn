@@ -4,8 +4,8 @@ metadata:
   title: "Introduction to App Center"
   description: Explore Azure App services to find ways to simplify creation and integration as you build, distribute, test, and analyze usage of yours apps.
   ms.date: 9/30/2019
-  author: mijacobs
-  ms.author: mijacobs
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Introduction to App Center"
@@ -28,8 +28,6 @@ products:
 - azure
 - azure-portal
 - vs-app-center
-subjects:
-- devops
 units:
 - learn.azure.intro-to-app-center.introduction
 - learn.azure.intro-to-app-center.what-is-app-center

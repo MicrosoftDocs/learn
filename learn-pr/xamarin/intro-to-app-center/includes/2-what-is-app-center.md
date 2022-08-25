@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Let's start with a few definitions of some of the concepts you'll see in App Center services.
 
 ## What is automated user interface testing?

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-settings-for-local-windows-machine-use-powershell-cmdlets.manage-windows-10
+title: Manage Windows 10 using PowerShell
+metadata:
+  title: Manage Windows 10 using PowerShell
+  description: "Manage Windows 10 using PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-manage-windows-10.md)]

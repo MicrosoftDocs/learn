@@ -6,8 +6,7 @@
 4.  On the Security blade, in the left navigation, select **Conditional access**.
 5.  On the top menu, select **New policy**.
 
-:::image type="content" source="../media/conditional-access-new-policy-8437a9fa.png" alt-text="Screen image displaying the Conditional Access blade with New policy highlighted":::
-
+     :::image type="content" source="../media/conditional-access-new-policy.png" alt-text="Screenshot of the Conditional Access blade with New policy highlighted.":::
 
 6.  In the **Name** box, enter **Sign in frequency**.
 7.  Under **Assignments**, select **Users and groups**.
@@ -22,13 +21,11 @@
 16. Select the units menu, select **Days**, and then select **Select**.
 17. Under **Enable policy**, select **Report-only**, and then select **Create**.
 
-:::image type="content" source="../media/create-session-conditional-access-policy-4e0c98ea.png" alt-text="Screen image displaying a new conditional access policy with policy settings highlighted":::
+     :::image type="content" source="../media/create-session-conditional-access-policy.png" alt-text="Screenshot of the new conditional access policy with policy settings highlighted.":::
 
-
-> [!NOTE]
-> Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:
-
- -  Conditional Access policies can be enabled in report-only mode.
- -  During sign-in, policies in report-only mode are evaluated but not enforced.
- -  Results are logged in the Conditional Access and Report-only tabs of the Sign-in log details.
- -  Customers with an Azure Monitor subscription can monitor the impact of their Conditional Access policies using the Conditional Access insights workbook.
+     > [!NOTE]
+     > Report-only mode is a new Conditional Access policy state that allows administrators to evaluate the impact of Conditional Access policies before enabling them in their environment. With the release of report-only mode:
+     > - Conditional Access policies can be enabled in report-only mode.
+     > - During sign-in, policies in report-only mode are evaluated but not enforced.
+     > - Results are logged in the Conditional Access and Report-only tabs of the Sign-in log details.
+     > - Customers with an Azure Monitor subscription can monitor the impact of their Conditional Access policies using the Conditional Access insights workbook.

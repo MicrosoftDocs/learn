@@ -13,9 +13,9 @@ Here are some examples of what you can do with Azure RBAC:
 
 ## Concepts
 
- -  **Security principal**. Object that represents something that is requesting access to resources. Examples: user, group, service principal, managed identity
- -  **Role definition**. Collection of permissions that lists the operations that can be performed. Examples: Reader, Contributor, Owner, User Access Administrator
- -  **Scope**. Boundary for the level of access that is requested. Examples: management group, subscription, resource group, resource
+ -  **Security principal**. Object that represents something that is requesting access to resources. Examples: user, group, service principal, managed identity.
+ -  **Role definition**. Collection of permissions that lists the operations that can be performed. Examples: Reader, Contributor, Owner, User Access Administrator.
+ -  **Scope**. Boundary for the level of access that is requested. Examples: management group, subscription, resource group, resource.
  -  **Assignment**. Attaching a role definition to a security principal at a particular scope. Users can grant access described in a role definition by creating an assignment. Deny assignments are currently read-only and can only be set by Azure.
 
 ## Considerations

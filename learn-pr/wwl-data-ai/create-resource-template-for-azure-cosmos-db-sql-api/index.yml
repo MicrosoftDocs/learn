@@ -3,7 +3,7 @@ uid: learn.wwl.create-resource-template-for-azure-cosmos-db-sql-api
 metadata:
   title: Create resource template for Azure Cosmos DB SQL API
   description: "Learn about automated Azure Cosmos DB SQL API resource deployments using the Azure Resource Manager with JSON and Bicep templates."
-  ms.date: 06/09/2022
+  ms.date: 08/24/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ summary: Learn about automated Azure Cosmos DB SQL API resource deployments usin
 abstract: |
   After completing this module, you'll be able to:
   - Identify the three most common resource types for Azure Cosmos DB SQL API accounts
-  - Create and deploy an JSON Azure Resource Manager template for an Azure Cosmos DB SQL API account, database, or container
+  - Create and deploy a JSON Azure Resource Manager template for an Azure Cosmos DB SQL API account, database, or container
   - Create and deploy a Bicep template for an Azure Cosmos DB SQL API account, database, or container
   - Manage throughput and index policies using JSON or Bicep templates
 prerequisites: |

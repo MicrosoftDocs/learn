@@ -7,8 +7,8 @@ metadata:
   title: Exercise - Publish a module to your registry
   description: Publish a Bicep module to your container registry.
   ms.date: 02/10/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

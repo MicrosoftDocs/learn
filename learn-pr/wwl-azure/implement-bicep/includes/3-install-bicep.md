@@ -1,4 +1,4 @@
-To start, install the Bicep CLI or the [Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep/). Having both installed will give you a great authoring experience.
+To start, install the Bicep CLI or the [Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Having both installed will give you a great authoring experience.
 
 ## Installing the VS Code extension
 

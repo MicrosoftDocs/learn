@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In the previous unit, you looked at the basics of creating a UI for a Xamarin.Android app. Here we'll talk about how to code the UI behavior for a Xamarin.Android app. This information should help you decide how much more your development team needs to know about Android code concepts.
 
 An *activity* is the basic building block of an Android application. An activity groups together the UI and the code that allows the user to do something with your app.

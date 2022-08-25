@@ -124,6 +124,19 @@
                 "dest": "modules"
             },
             {
+                "src": "azure-percept",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "cela-accessibility",
                 "files": [
                     "**/*.yml",
@@ -177,6 +190,19 @@
             },
             {
                 "src": "databricks",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "dot-net-maui",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -887,6 +913,25 @@
                     "sv-se"
                 ],
                 "databricks/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "dot-net-maui/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

@@ -10,7 +10,7 @@ This scenario is a perfect use of a message-based system. Azure offers two messa
 
 [Azure Queue storage](/azure/storage/queues/storage-queues-introduction) is a service that uses Azure Storage to store large numbers of messages. These messages can be securely accessed from anywhere in the world using a simple REST-based interface. Queues can contain millions of messages. Azure Queue storage is limited only by the capacity of the storage account that owns it. Queues generally provide increased reliability, guaranteed message delivery, and transactional support.
 
-:::image type="content" source="../media/queue-storage.png" alt-text="A storage account has two message queues.":::
+:::image type="content" source="../media/queue-storage.png" alt-text="Diagram of a storage account with two message queues.":::
 
 
 ## What is Azure Service Bus?

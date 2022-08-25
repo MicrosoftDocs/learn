@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The `TwoPaneView` control includes adaptive features that allow you to customize the layout of the two panes, whether on phones, tablets, or desktops.
 
 The following properties affect the layout of the two panes:

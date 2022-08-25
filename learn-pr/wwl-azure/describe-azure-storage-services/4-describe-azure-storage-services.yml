@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-storage-services.describe-azure-storage-services
+title: Describe Azure storage services
+metadata:
+  title: Describe Azure storage services
+  description: "Describe Azure storage services"
+  ms.date: 08/17/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-describe-azure-storage-services.md)]

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In the last exercise, you set up your `ListView` control to display your collection by calling `ToString` on each item. In this exercise, you'll customize the display with `ImageCell` to show an image and two labels.
 
 ## Define ImageCell for row visualization

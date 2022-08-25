@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-settings-for-local-windows-machine-use-powershell-cmdlets.manage-permissions-powershell
+title: Manage permissions with PowerShell
+metadata:
+  title: Manage permissions with PowerShell
+  description: "Manage permissions with PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-manage-permissions-powershell.md)]

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The visual experience of your app will be different on each platform. You'll often need to fine-tune your UI for each platform based on the visual elements you use. Xamarin.Forms provides a way for you to manage the layout of your app based on these device properties.
 
 The default behavior in an Xamarin.Forms iOS app is that content added to a page overlaps the iOS status bar. Assume you want to change this behavior. There are two ways you could fix your layout: either add a navigation bar or shift the content down in the page. The problem is that your app's design doesn't specify a navigation bar for this specific page, and the problem only manifest on iOS. Shifting content on any other operating system will show an incorrect design.

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The goal of this exercise is to make resources available across multiple pages by moving them to a resource dictionary in the **Tip Calculator** `Application` class.
 
 This exercise is a continuation of the previous exercise. Use your existing solution as the starting point for these steps.

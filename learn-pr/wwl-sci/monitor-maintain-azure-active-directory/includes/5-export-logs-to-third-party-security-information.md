@@ -10,52 +10,11 @@ We’ve continued to support customers who are using the Azure Log Integration t
 
 The table below indicates what you should do based on the SIEM tool(s) you're using and your current integration status. Only SIEM tools that were officially supported by AzLog are included below.
 
-:::row:::
-  :::column:::
-    **SIEM Tool**
-  :::column-end:::
-  :::column:::
-    **Currently using log integrator**
-  :::column-end:::
-  :::column:::
-    **Currently investigating SIEM integration options**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Splunk**
-  :::column-end:::
-  :::column:::
-    Begin migrating to the Azure Monitor Add-On for Splunk.
-  :::column-end:::
-  :::column:::
-    Use the Azure Monitor Add-On for Splunk.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **IBM QRadar**
-  :::column-end:::
-  :::column:::
-    Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website.
-  :::column-end:::
-  :::column:::
-    Use the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website. You can learn more about the integration with Azure.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **ArcSight**
-  :::column-end:::
-  :::column:::
-    The ArcSight Azure Event Hub smart connector is available as part of the ArcSight smart connector collection.
-
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-
+| SIEM Tool | Currently using log integrator | Currently investigating SIEM integration options |
+| :----- | :----- | :----- |
+| Splunk | Begin migrating to the Azure Monitor Add-On for Splunk. | Use the Azure Monitor Add-On for Splunk. |
+| IBM QRadar | Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website. | Use the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website. You can learn more about the integration with Azure. |
+| ArcSight | The ArcSight Azure Event Hub smart connector is available as part of the ArcSight smart connector collection. |  |
 
 ## Integration roadmap
 

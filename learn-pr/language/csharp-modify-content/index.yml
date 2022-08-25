@@ -3,7 +3,7 @@ uid: learn.languages.csharp-modify-content
 metadata:
   title: 'Modify the content of strings using built-in string data type methods in C#'
   description: Use built in methods to extract, remove, or replace data in strings.
-  ms.date: 11/05/2019
+  ms.date: 08/23/2022
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.describe-cloud-compute
+metadata:
+  title: Describe cloud computing
+  description: "Introduction to concepts surrounding cloud computing. Mostly platform agnostic, focused instead on general concepts."
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe cloud computing
+summary: This module introduces you to cloud computing. It covers things such as cloud concepts, deployment models, and understanding shared responsibility in the cloud.
+abstract: |
+  Upon completion of this module, you will be able to:
+  *   Define cloud computing.
+  *   Describe the shared responsibility model.
+  *   Define cloud models, including public, private, and hybrid.
+  *   Identify appropriate use cases for each cloud model.
+  *   Describe the consumption-based model.
+  *   Compare cloud pricing models.
+prerequisites: |
+  *   Basic familiarity with IT terms and concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- cloud-computing
+units:
+- learn.wwl.describe-cloud-compute.introduction-microsoft-azure-fundamentals
+- learn.wwl.describe-cloud-compute.introduction-cloud-compute
+- learn.wwl.describe-cloud-compute.what-cloud-compute
+- learn.wwl.describe-cloud-compute.describe-shared-responsibility-model
+- learn.wwl.describe-cloud-compute.define-cloud-models
+- learn.wwl.describe-cloud-compute.describe-consumption-based-model
+- learn.wwl.describe-cloud-compute.knowledge-check
+- learn.wwl.describe-cloud-compute.summary
+badge:
+  uid: learn.wwl.describe-cloud-computing.badge

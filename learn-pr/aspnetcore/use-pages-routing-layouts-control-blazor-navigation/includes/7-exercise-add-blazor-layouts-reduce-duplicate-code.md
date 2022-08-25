@@ -77,7 +77,7 @@ In this exercise, you'll create a **MainLayout** component. You'll see how you c
 
     :::image type="content" source="../media/webpage-using-blazor-main-layout.png" alt-text="Screenshot showing the new home page by using a Blazor layout.":::
 
-    The new home page will have a copyright footer for this year that automatically updates. To see what a page not using this layout looks like, select **My Orders**. Or go to an invalid page like [http://localhost:5000/help](http://localhost:5000/help). At the moment, our **404 Page not found** isn't using any of our branding.
+    The new home page will have a copyright footer for this year that automatically updates. To see what a page not using this layout looks like, select **My Orders**. Or go to an invalid page like `(http://localhost:5000/help)`. At the moment, our **404 Page not found** isn't using any of our branding.
 
     :::image type="content" source="../media/page-not-found.png" alt-text="Screenshot of the sparse not found page.":::
 
