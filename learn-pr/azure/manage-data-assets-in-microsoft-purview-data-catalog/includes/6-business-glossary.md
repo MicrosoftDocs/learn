@@ -1,13 +1,20 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+The business glossary is a definition of terms specific to a domain of knowledge that is commonly used, communicated, and shared in organizations as they are conducting business.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Why have business glossary?
 
-    Heading: none
+## What's in a term?
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Business glossary lifecycle
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
+### Term templates
+
+### Workflows
+
+## Recommendations/best practices
+
+
+
+
 TODO: add your topic sentences(s)
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
