@@ -21,7 +21,7 @@ First, you need to switch from viewing mode to editing mode.
     |**Variable name**|The name of the parameter to be used in the query.| state
     |**Data type**|The data type of the parameter values.| string
     |**Show on pages**|Select the pages where this parameter will be displayed. | Select all
-    |**Source**|**Fixed values**: Manually introduced static filter values. <br>**Query**: Dynamically introduced values using a KQL query.| [Query](#edit-query)
+    |**Source**|**Fixed values**: Manually introduced static filter values. <br>**Query**: Dynamically introduced values using a KQL query.| [Query](#edit-parameter-source-query)
     |**Default value**|The default value of the filter. | Select all
     |**Add a "Select all" value**|For single selection and multiple selection types. Used to retrieve data for all the parameter values. This value affects how the query is written. | Checked|
 
