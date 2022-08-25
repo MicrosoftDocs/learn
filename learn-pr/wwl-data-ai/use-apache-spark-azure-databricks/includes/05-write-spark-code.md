@@ -9,7 +9,7 @@ Natively, Spark uses a data structure called a *resilient distributed dataset* (
 
 ### Loading data into a dataframe
 
-Let's explore a hypothetical example to see how you can use a dataframe to work with data. Suppose you have the following data in a comma-delimited text file named **products.csv** in the **data** folder in your Databricks File System (DBFS) storage**:
+Let's explore a hypothetical example to see how you can use a dataframe to work with data. Suppose you have the following data in a comma-delimited text file named **products.csv** in the **data** folder in your Databricks File System (DBFS) storage:
 
 ```csv
 ProductID,ProductName,Category,ListPrice

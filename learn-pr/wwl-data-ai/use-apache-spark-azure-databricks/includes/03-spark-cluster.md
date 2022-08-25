@@ -1,6 +1,6 @@
 You can create one or mode clusters in your Azure Databricks workspace by using the Azure Databricks portal.
 
-![A screenshot of the Create Cluster interface in the Azure Databricks portal.](../media/create-cluster.png)
+![Screenshot of the Create Cluster interface in the Azure Databricks portal.](../media/create-cluster.png)
 
 When creating the cluster, you can specify configuration settings, including:
 
@@ -24,7 +24,7 @@ The Databricks appliance is deployed into Azure as a managed resource group with
 
 Internally, Azure Kubernetes Service (AKS) is used to run the Azure Databricks control-plane and data-planes via containers running on the latest generation of Azure hardware (Dv3 VMs), with NvMe SSDs capable of blazing 100us latency on high-performance Azure virtual machines with accelerated networking. Azure Databricks utilizes these features of Azure to further improve Spark performance. After the services within your managed resource group are ready, you can manage the Databricks cluster through the Azure Databricks UI and through features such as auto-scaling and auto-termination.
 
-![Azure Databricks architecture diagram.](../media/azure-databricks-architecture.png)
+![Diagram of Azure Databricks architecture.](../media/azure-databricks-architecture.png)
 
 > [!NOTE]
 > You also have the option of attaching your cluster to a *pool* of idle nodes to reduce cluster startup time. For more information, see [Pools](/azure/databricks/clusters/instance-pools/) in the Azure Databricks documentation.

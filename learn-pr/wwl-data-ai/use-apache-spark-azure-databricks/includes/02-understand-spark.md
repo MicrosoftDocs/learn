@@ -21,7 +21,7 @@ Spark parallelizes jobs at two levels:
   - The second level of parallelization is the *slot* - the number of which is determined by the number of cores and CPUs of each node.
 - Each executor has multiple slots to which parallelized tasks can be assigned.
 
-![Spark Physical Cluster, tasks.](../media/spark-cluster-tasks.png)
+![Diagram of Spark cluster with tasks.](../media/spark-cluster-tasks.png)
 
 The JVM is naturally multi-threaded, but a single JVM, such as the one coordinating the work on the driver, has a finite upper limit. By splitting the work into tasks, the driver can assign units of work to *slots in the executors on worker nodes for parallel execution. Additionally, the driver determines how to partition the data so that it can be distributed for parallel processing. So, the driver assigns a partition of data to each task so that each task knows which piece of data it is to process. Once started, each task will fetch the partition of data assigned to it.
 
