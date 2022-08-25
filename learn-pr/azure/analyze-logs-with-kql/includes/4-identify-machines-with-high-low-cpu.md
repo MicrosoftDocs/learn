@@ -24,20 +24,20 @@ Windows and Linux agents send performance counters to the `Perf` table in Azure 
 
     You can see that the `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` hold data that's relevant to your analysis. 
 
-    The `CounterName` column holds the names of the various performance counters Azure Monitor collects from monitored machines. The column holds lots of values, many of which appear multiple times. To clearly see the distinct values in this column and determine which counters are relevant to the current analysis, let's run this query:
+    The `ObjectName` column lists the names of all of the objects for which Azure Monitor collects data from monitored machines. The `CounterName` column holds the names of the various performance counters that Azure Monitor collects. Both of these column holds lots of values, many of which appear multiple times. To clearly see the distinct values in these columns and determine which counters are relevant to the current analysis, let's run this query:
 
     ```kusto
     Perf
-    | distinct CounterName // Lists distinct values in the CounterName column
+    | distinct ObjectName,CounterName // Lists distinct combinations of ObjectName and CounterName values
     ```
 
-    This screenshot shows the distinct values in the CounterName column in the past 24 hours:    
+    This screenshot shows the distinct combinations of `ObjectName` and `CounterName` values in the `CounterName` column in the past 24 hours:    
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table-processor-time.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Percentage Processor Time value highlighted." lightbox="../media/kql-log-analytics-perf-table-processor-time.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-table-cpu.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Percentage Processor Time value highlighted." lightbox="../media/kql-log-analytics-perf-table-cpu.png":::
 
-    The `% Processor Time` gives you an understanding of the utilization of the Central Processing Unit (CPU).
+    The `% Processor Time` counter gives you an understanding of the utilization of the processor, or Central Processing Unit (CPU).
 
-    So, the columns that hold data that's relevant for the current analysis are:
+    Now let's summarize the data that's relevant to the current analysis and decide on the KQL operations we can use to advance our analysis:
 
     | Column | Description | Analysis goal | Related KQL operations |
     | --- | --- | --- | --- |
