@@ -16859,6 +16859,36 @@
       "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/3-create-ci-cd-process.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/2-describe-ci-cd.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
     }
   ]
 }
