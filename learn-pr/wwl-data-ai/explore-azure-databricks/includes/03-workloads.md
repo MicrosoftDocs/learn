@@ -24,7 +24,7 @@ Azure Databricks supports machine learning workloads that involve data explorati
 
 Azure Databricks supports SQL-based querying for data stored in tables in a *SQL Warehouse*. This capability enables data analysts to query, aggregate, summarize, and visualize data using familiar SQL syntax and a wide range of SQL-based data analytical tools.
 
-![A screenshot of the Azure Databricks portal for machine learning.](../media/sql-portal.png)
+![A screenshot of the Azure Databricks portal for SQL.](../media/sql-portal.png)
 
 > [!NOTE]
 > SQL Warehouses are only available in *premium* Azure Databricks workspaces.
