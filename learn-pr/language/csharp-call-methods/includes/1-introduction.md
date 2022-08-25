@@ -2,7 +2,7 @@ The C# programming language is supplemented by a large library of functionality 
 
 Suppose you need to generate a few random numbers that correspond to a subset of files on your hard drive containing data so you can sample the data and return an approximate result without analyzing all the data files. How can you generate a random number? Is this supported by C#? If so, how can you write code to limit the random number, generate it, and retrieve the result?
 
-In this module, you'll write code that calls methods in the .NET Class Library. You'll learn why methods are designed and implemented differently across the .NET Class Library. Most importantly, you'll write code to pass information into methods and retrieve information returned by methods. Finally, you'll use built-in tools and online documentation to help you gather information about the methods with which you you want to work.
+In this module, you'll write code that calls methods in the .NET Class Library. You'll learn why methods are designed and implemented differently across the .NET Class Library. Most importantly, you'll write code to pass information into methods and retrieve information returned by methods. Finally, you'll use built-in tools and online documentation to help you gather information about the methods with which you want to work.
 
 By the end of this module, you'll know how to find and use methods on classes in the .NET Class Library to help you perform many common tasks.
 
