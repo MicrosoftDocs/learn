@@ -24,7 +24,7 @@ Think of a namespace as the last name, surname, or "family name" for a type. A c
 
 With so many classes and methods, how can you find what you need for your application?
 
-First of all, there's a small subset of classes you'll likely use throughout your tenure as a C# software developer. Depending on the projects on which you you work, you'll become more familiar with some parts of the .NET Class Library and less familiar with others. No one knows it all, not even people who work at Microsoft.
+First of all, there's a small subset of classes you'll likely use throughout your tenure as a C# software developer. Depending on the projects on which you work, you'll become more familiar with some parts of the .NET Class Library and less familiar with others. No one knows it all, not even people who work at Microsoft.
 
 Second, as you have a need, you'll likely use your favorite search engine to find blog posts, articles, or forums where other users have needed to do similar kinds of things you want to do. Third-party sources will give you clues and even provide some sample code you can try.
 
