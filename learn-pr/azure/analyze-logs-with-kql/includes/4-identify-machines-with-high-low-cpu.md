@@ -11,14 +11,19 @@ Windows and Linux agents send performance counters to the `Perf` table in Azure 
 
     - Central processing unit (CPU) usage.
     - Information about CPU usage of machines at peak and quiet times.
- 
-1. Which data in the `Perf` table is relevant to your analysis and how can you use KQL to extract, transform, and organize the data?
 
-    - The `ObjectName` column holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance.
-    - The `CounterName` column holds the names of all of the performance counters in the table.
-    - The `InstanceName` column... 
-    - The `CounterValue` column...
+1. Which data in the `Perf` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
 
+    This screenshot shows the result set of a simple `take 10` query on the `Perf` table (the table has other columns that are not shown in the screenshot):    
+
+    You can see that the columns that hold relevant data are:
+
+    | Column | Description | Analysis goal | Related KQL operations |
+    | --- | --- | --- | --- |
+    | `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
+    | `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
+    | `InstanceName` | xxx | xxx | xxx |
+    | `CounterValue` | xxx | xxx | xxx |
 ## Identify machines with high and low CPU usage
 
 Note that 99th percentile means that 99% of all measured values are lower than the given value.
