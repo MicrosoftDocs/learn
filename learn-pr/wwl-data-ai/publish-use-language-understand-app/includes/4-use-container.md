@@ -4,7 +4,7 @@ Like many other cognitive services, the Language Understanding service can also 
 
 The following diagram shows the steps you need to perform to use a Language understanding app in a container.
 
-![A Cognitive Services container deployed to a container host and consumed by a client application](../media/container.png)
+![A Cognitive Services container deployed to a container host and consumed by a client application.](../media/container.png)
 
 1. The container image for the specific Cognitive Services API you want to use is downloaded and deployed to a container host, such as a local Docker server, an Azure Container Instance (ACI), or Azure Kubernetes Service (AKS).
 2. Client applications submit data to the endpoint provided by the containerized service, and retrieve results just as they would from a Cognitive Services cloud resource in Azure.
