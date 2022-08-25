@@ -238,6 +238,10 @@ Add this code to the end of the pipeline:
 
 [!code-yml[](code/4-10-azure-pipelines.yml)]
 
+Take a moment to review the *azure-pipelines.yml* file, ensure indentation looks something like this:
+
+[!code-yml[](code/complete-azure-pipelines.yml)]
+
 ## Save the pipeline to trigger the build
 
 1. Select **Save and run** from the top right corner of the page. Confirm the **Save and run** to trigger a run.
