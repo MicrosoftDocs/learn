@@ -11,7 +11,7 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 To determine which machines have stopped sending data, you need information about:
 
 - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
-- For further analysis, it's useful to know which virtual machine agent is running on each machine.
+- For deeper analysis, it's useful to know which virtual machine agent is running on each machine.
 
 ## Which data in Azure Monitor Logs is relevant how will you use KQL to extract, transform, and organize the data?
     
