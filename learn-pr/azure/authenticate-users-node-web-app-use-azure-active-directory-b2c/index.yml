@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Authenticate users in a Node web app by using Azure Active Directory B2C
   description: Learn how to authenticate users into a web app by using Azure Active Directory B2C 
-  ms.date: 06/16/2022
+  ms.date: 08/22/2022
   author: kengaderdus
   ms.author: kengaderdus
   ms.topic: interactive-tutorial
