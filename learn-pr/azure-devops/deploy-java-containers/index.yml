@@ -3,7 +3,7 @@ uid: learn.azdo.deploy-java-containers
 metadata:
   title: Automate Java container deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for Java containers.
-  ms.date: 08/18/2022
+  ms.date: 08/25/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial

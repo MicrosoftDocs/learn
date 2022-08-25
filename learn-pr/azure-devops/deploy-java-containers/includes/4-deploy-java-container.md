@@ -47,41 +47,41 @@ To add the variables:
 
 1. Under **Pipelines**, select **Library**.
 
-    :::image type="content" source="../media/4-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the Library menu option.":::
+    :::image type="content" source="../media/4-pipelines-library.png" alt-text="Screenshot of Azure Pipelines showing the Library menu option.":::
 
 1. Select **+ Variable group**.
 1. Under **Properties**, enter *Release* for the variable group name.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter `WebAppName`. For the value, enter the name of the App Service instance created above, such as `java-container-cicd-18116`.
+1. For the name of your variable, enter `WebAppName`. For the value, enter the name of the App Service instance created earlier, such as `java-container-cicd-18116`.
 
     > [!IMPORTANT]
     > Set the name of the App Service instance, not its host name. In this example, you would enter `java-container-cicd-18116` and not `java-container-cicd-18116.azurewebsites.net`.
 
 1. Repeat the process to add another four variables named `RegistryName` with the following values of your Azure Container Registry login server, such as `javacontainercicd18116.azurecr.io`.
-1. Repeat the process to add another variable named `MySqlServer` with the value of your MySQL server host name, such as `java-container-cicd-18116`. You shouldn't use the fully qualified domain, just the host. If you followed the instructions as is, then this is the same as your web app name.
+1. Repeat the process to add another variable named `MySqlServer` with the value of your MySQL server host name, such as `java-container-cicd-18116`. You shouldn't use the fully qualified domain, just the host. If you followed the instructions as is, then it's the same as your web app name.
 1. Repeat the process to add another variable named `MySqlUserName` with the value of the MySQL user name used to create the server, such as `sysadmin`.
-1. Repeat the process to add another variable named `MySqlPassword` with the value of the MySQL password used to create the server, such as `P\@ssw0rd`. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it won't be shown as plaintext once saved.
+1. Repeat the process to add another variable named `MySqlPassword` with the value of the MySQL password used to create the server, such as `P\@ssw0rd`. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it won't be shown as plaintext after it's saved.
 
     > [!IMPORTANT]
     > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Vault, see [Configure and manage secrets in Azure Key Vault](/learn/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
 
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
-    Your variable group resembles this one:
+Make sure your variable group resembles like the one shown below:
 
-    :::image type="content" source="../media/4-library-variable-group.png" alt-text="A screenshot of Azure Pipeline showing the variable group. The group contains five variables.":::
+    :::image type="content" source="../media/4-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group. The group contains five variables.":::
 
 ### Create required service connections
 
-Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
+Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses the service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account and you have owner access to the resource groups.
 
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
-1. Select **New service connection**, then select **Azure Resource Manager**, then select **Next**.
-1. Choose the recommended settings as **Service principal (automatic)**, then select **Next**.
+1. Select **New service connection** > **Azure Resource Manager** > **Next**.
+1. Select the recommended settings as **Service principal (automatic)**, then select **Next**.
 1. Fill in these fields:
 
     | Field           | Value                                        |
@@ -99,7 +99,7 @@ Here you create a service connection that enables Azure Pipelines to access your
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.
 
-1. Select **Create service connection**, then choose **Docker Registry**, then select **Next**.
+1. Select **Create service connection** > **Docker Registry** > **Next**.
 1. Near the top of the page, select **Azure Container Registry**.
 1. Fill in these fields:
 
@@ -128,7 +128,7 @@ Here you create a CI/CD pipeline that's based on a starter template. The process
 
 ### Setting up the trigger and variables  
 
-The pipeline runs whenever there's a change to the `main` branch on GitHub. Replace the contents of *azure-pipelines.yml* with this:
+The pipeline runs whenever there's a change to the `main` branch on GitHub. Replace the contents of *azure-pipelines.yml* with this code:
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
@@ -136,7 +136,7 @@ The pipeline runs whenever there's a change to the `main` branch on GitHub. Repl
 
 To aid in pipeline maintenance, the default template uses variables for commonly used parameters, such as the name of the container repository to publish the app image to. You can also import variables from pipeline libraries managed outside of the pipeline itself.
 
-Add this code the to end of the pipeline:
+Add this code to the end of the pipeline:
 
 [!code-yml[](code/4-2-azure-pipelines.yml)]
 
@@ -244,7 +244,7 @@ Add this code to the end of the pipeline:
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the website's deploy task, and copy the URL to view the deployed site.
 
-    :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines showing the location of the web site URL.":::
+    :::image type="content" source="../media/4-deploy-url.png" alt-text="Screenshot of Azure Pipelines showing the location of the website URL.":::
 
 1. The site is hosted under the `/myshuttledev/` path on the server. Append that path to the copied URL and navigate to it in a new browser tab, such as:
 
@@ -252,6 +252,6 @@ Add this code to the end of the pipeline:
     http://java-container-cicd-18116.azurewebsites.net/myshuttledev/
     ```
 
-1. You see the site running on App Service. You can log in to the site using the credentials: `fred`/`fredpassword`.
+1. You see the site running on App Service. You can log in to the site by using the credentials: `fred`/`fredpassword`.
 
-    :::image type="content" source="../media/4-myshuttle.png" alt-text="A screenshot of the running web site.":::
+    :::image type="content" source="../media/4-myshuttle.png" alt-text="Screenshot of the running website.":::
