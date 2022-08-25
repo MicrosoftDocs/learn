@@ -88,11 +88,15 @@ To identify recently active machines that stopped logging data, write a query th
     > [!TIP]
     > Use `max_TimeGenerated` to correlate the last heartbeat of the machine that stopped reporting with machine logs or other environmental events that occurred around the same time. Correlating logs in this way can help in finding the root cause of the issue you are investigating.
 
-## Group machines by monitoring agent and agent version
+## Challenge: Group machines by monitoring agent and agent version
 
 Understanding which agents and agent versions are running on your machines can help you analyze the root cause of problems and identify which machines you need to update to a new agent or new agent version.
 
-You can some quick tweaks to the query above to get the information you need:
+Can you think of some quick tweaks you can make to the query you developed above to get this information? 
+
+Which additional information do you need to extract from your logs? Which KQL operation can you use to group machines by the agent version they are running? 
+
+Solution:
 
 1. Copy the first five lines from the query and add the `Version` column to the `summarize` line of the query to extract agent version information: 
 
