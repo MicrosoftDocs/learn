@@ -1,4 +1,4 @@
-The following code is one possible solution for the challenge from the previous unit.
+The following code is one possible solution for the challenge from the previous unit:
 
 ```csharp-interactive
 string customerName = "Mr. Jones";
@@ -33,7 +33,7 @@ comparisonMessage += String.Format("{0:C}", newProfit).PadRight(20);
 Console.WriteLine(comparisonMessage);
 ```
 
-This code is merely "*one possible solution*" because a lot depends on how you decided to implement the logic.  As long as you used the techniques that we covered in this module to format strings, pad strings, and so on, and the output matches the challenge output, then you did great!
+This code is merely *one possible solution*, because a lot depends on how you decided to implement the logic. As long as you used the techniques that we covered in this module to format strings, pad strings, and so on, and the output matches the challenge output, then you did great!
 
 ```output
 Dear Mr. Jones,
@@ -49,7 +49,7 @@ Magic Yield         12.75 %   ¤55,000,000.00
 Glorious Future     13.13 %   ¤63,000,000.00  
 ```
 
-If you succeeded, congratulations!  Continue on to the knowledge check in the next unit.
+If you succeeded, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

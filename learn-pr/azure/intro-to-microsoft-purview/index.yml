@@ -4,7 +4,7 @@ metadata:
   moduleType: introduction        
   title: Introduction to Microsoft Purview          
   description: "Introduction to Microsoft Purview"
-  ms.date: 5/05/2022 
+  ms.date: 08/18/2022 
   author: whhender 
   ms.author: whhender
   ms.topic: interactive-tutorial 
@@ -13,7 +13,7 @@ metadata:
 
 title: Introduction to Microsoft Purview
 
-summary: "In this module, you will evaluate whether Microsoft Purview is the right choice for your data discovery and governance needs."
+summary: "In this module, you'll evaluate whether Microsoft Purview is the right choice for your data discovery and governance needs."
 
 abstract: |
   By the end of this module, you'll be able to:
@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Microsoft Azure accounts and services
   - Knowledge of various data sources such as SQL Server, Cosmos DB, etc.
-  - Knowledge of the concepts around data governance.
+  - Knowledge of the concepts around data governance
 
 iconUrl: /learn/achievements/introduction-to-azure-purview.svg
 

@@ -21,7 +21,7 @@ function greet() {
 }
 ```
 
-Again, use the context object, you can invoke the ``getCollection()`` method to access the container using the JavaScript query API.
+Again, using the context object, you can invoke the ``getCollection()`` method to access the container using the JavaScript query API.
 
 ```javascript
 function createProduct(item) {
@@ -66,4 +66,4 @@ function createProduct(item) {
 ```
 
 > [!TIP]
-> Alternatively, you can use the ``__`` (double underline) shortcut as an equivalent to ``getContext().getCollection()``.
+> Alternatively, you can use the ``__`` (double underscore) shortcut as an equivalent to ``getContext().getCollection()``.
