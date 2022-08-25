@@ -1142,3 +1142,8 @@ achievements:
   title: Work with NoSQL data in Azure Cosmos DB
   summary: Find out how to customize NoSQL data storage and distribution with the Azure portal, Cosmos DB extension, and Cosmos DB .NET SDK.
   iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg
+- uid: learn.wwl.create-production-workloads-azure-databricks-azure-data-factory.badge
+  type: badge
+  title: Create production workloads on Azure Databricks with Azure Data Factory
+  summary: Create production workloads on Azure Databricks with Azure Data Factory
+  iconUrl: /learn/achievements/create-production-workloads-azure-databricks-azure-data-factory.svg
