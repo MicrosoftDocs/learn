@@ -113,7 +113,9 @@ SESSION_SECRET=sessionSecretHere
 
 ## Configure express server
 
-In VS Code, open the `index.js` file, add the following code:
+1. In the `auth-app` folder, create `index.js` file.
+
+1. In VS Code, open the `index.js` file, add the following code:
 
 ```javascript
     /*
