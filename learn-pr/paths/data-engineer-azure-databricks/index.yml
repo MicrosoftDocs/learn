@@ -34,7 +34,6 @@ modules:
 - learn.wwl.build-query-delta-lake
 - learn.wwl.process-streaming-data-azure-databricks-structured-streaming
 - learn.wwl.describe-azure-databricks-delta-lake-architecture
-- learn.wwl.implement-ci-cd-azure-devops
 - learn.wwl.integrate-azure-databricks-other-azure-services
 - learn.wwl.describe-azure-databricks-best-practices
 trophy:

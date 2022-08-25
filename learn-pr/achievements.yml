@@ -1147,3 +1147,8 @@ achievements:
   title: Create production workloads on Azure Databricks with Azure Data Factory
   summary: Create production workloads on Azure Databricks with Azure Data Factory
   iconUrl: /learn/achievements/create-production-workloads-azure-databricks-azure-data-factory.svg
+- uid: learn.wwl.implement-ci-cd-azure-devops.badge
+  type: badge
+  title: Implement CI/CD with Azure DevOps
+  summary: Implement CI/CD with Azure DevOps
+  iconUrl: /learn/achievements/implement-ci-cd-azure-devops.svg
