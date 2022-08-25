@@ -89,7 +89,7 @@ Download a project from GitHub directly in Visual Studio:
 
 4. Select the **Run**(green triangle) button.
 
-    ![Run app](../../media/run-app.png)
+    ![Run app](../media/run-app.png)
 
     Visual Studio may ask you to download additional components. After you confirm these downloads, the app will begin building. A loading screen displays:
 
