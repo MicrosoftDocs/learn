@@ -66,9 +66,9 @@ To identify recently active machines that stopped logging data, write a query th
 
 1. Manipulate the query results to present the information more clearly. 
 
-    For instance, you decide to organize the logs by time generated - from the oldest to the newest - to see which computers have gone the longest time without logging data. 
+    For example, you can organize the logs by time generated - from the oldest to the newest - to see which computers have gone the longest time without logging data. 
 
-    The `Direct Agent` value in the AgentType column tells you that the Log Analytics Agent is running on the machine. The Log Analytics Agent for Windows is also called OMS. The Log Analytics Agent for Linux is also call MMS. Renaming the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and facilitates further analysis, such as filtering.
+    The `Direct Agent` value in the AgentType column tells you that the Log Analytics Agent is running on the machine. Since the Log Analytics Agent for Windows is also called OMS and for Linux the agent is also call MMS, renaming the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines simplifies the results and facilitates further analysis, such as filtering.
 
     ```kusto
     Heartbeat // The table you’re querying
