@@ -1,104 +1,107 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+In this excercise, we'll use the data catalog to search and browse for data, and look at the details of an asset.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Open the data catalog
 
-    Heading: none
+1. In the [Azure portal](https://portal.azure.com/), open your Microsoft Purview account and select **Open Microsoft Purview Governance Portal**.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+    :::image type="content" source="../media/browse-and-search-exercise/azure-portal.png" alt-text="<alt text>":::
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+1. The Microsoft Purview Governance Portal opens automatically to the home page of the Microsoft Purview Data Catalog.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-homepage-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/data-catalog-homepage.png":::
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. From here you can use the search bar to search for data assets.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/search-from-home.png":::
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+1. You can also select the **Browse assets** button below the search bar, or the **Browse** tab on the left side menu to browse through your data assets.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+1. You can return to the data catalog from anywhere in the Microsoft Purview governance portal by selecting the Data Catalog icon at the top of the left side menu:
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-menu.png" alt-text="<alt text>":::
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+## Browse the data catalog
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+1. To browse the data catalog, return to the data catalog page, and select the **Browse assets** button below the search bar or the **Browse** tab on the left side menu to browse through your data assets.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+    :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. You can choose to browse the data catalog either by collection, or by source type.
 
-    Goal: List the steps they'll do to complete the exercise.
+    >[!TIP]
+    >Users can only see data sources and assets in the collections they have access to.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+    :::image type="content" source="../media/browse-and-search-exercise/browse-asset-options-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-asset-options.png":::
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+    :::image type="content" source="../media/browse-and-search-exercise/browse-asset-options-source-type-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-asset-options-source-type.png":::
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. When you browse by collection and select a collection, you'll see a list of all assets in that collection. You can narrow down results using the asset facets on the left hand menu, or return to the collection list using the collection list button at the top of the left menu.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    :::image type="content" source="../media/browse-and-search-exercise/browsing-by-collection-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browsing-by-collection.png":::
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. When you browse by data source type, you select a source type and all the sources of that type that you have access to will be listed. Selecting the source will list all the assets available in that source, and you can use the breadcrumbs above the asset lists, and at the top of the source window to return to sources or browsing.
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
+    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-list-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-by-source-type-list.png":::
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
+    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-assets-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-by-source-type-assets.png":::
 
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+## Search the data catalog
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+1. To start a search for data in the data catalog, you can use the search bar in the home page using keywords for name, data type, classification, or glossary terms.
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/search-from-home.png":::
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+1. The search bar is also available throughout the Microsoft Purview governance portal. For example, here in the data map, the data catalog search bar is in the top middle of the screen:
 
-<!-- Do not add a unit summary or references/links -->
+    :::image type="content" source="../media/browse-and-search-exercise/catalog-search-bar-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/catalog-search-bar.png":::
+
+1. Microsoft Purview will suggest results, and you can select them, but if you select the **Enter** key to enter your search or select **View search results** at the bottom of the returned results, Microsoft Purview will return a full list of data assets and glossary terms that match your keywords, and provides a more in depth search experience.
+
+    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-search-page-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/data-catalog-search-page.png":::
+
+1. In the data catalog search, you can use the asset facets on the left side menu to filter results by additional metadata, like collection, classification, and asset type. For some of these classifications, you can choose to filter options by **or** or **and** statements.
+
+    :::image type="content" source="../media/browse-and-search-exercise/and-or-options-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/and-or-options.png":::
+
+1. The data catalog also supports a light search query syntax using keywords. Keywords can be a classification, a glossary term, asset description, or an asset name. Try using these search operators to refine your search:
+
+    | Operator | Definition | Example |
+    | -------- | ---------- | ------- |
+    | OR | Specifies that an asset must have at least one of the two keywords. Must be in all caps. A white space is also an OR operator.  | The query `hive OR database` returns assets that contain 'hive' or 'database' or both. |
+    | AND | Specifies that an asset must have both keywords. Must be in all caps | The query `hive AND database` returns assets that contain both 'hive' and 'database'. |
+    | NOT | Specifies that an asset can't contain the keyword to the right of the NOT clause. Must be in all caps  | The query `hive NOT database` returns assets that contain 'hive', but not 'database'. |
+    | () | Groups a set of keywords and operators together. When combining multiple operators, parentheses specify the order of operations. | The query `hive AND (database OR warehouse)` returns assets that contain 'hive' and either 'database' or 'warehouse', or both. |
+    | "" | Specifies exact content in a phrase that the query must match to. | The query `"hive database"` returns assets that contain the phrase "hive database" in their properties |
+    | field:keyword | Searches the keyword in a specific attribute of an asset. Field search is case insensitive and is limited to the following fields at this time: <ul><li>name</li><li>description</li><li>entityType</li><li>assetType</li><li>classification</li><li>term</li><li>contact</li></ul> | The query `description: German` returns all assets that contain the word "German" in the description.<br><br>The query `term:Customer` will return all assets with glossary terms that include "Customer" and all glossary terms that match to "Customer". |
+
+    > [!TIP]
+    > Searching "*" will return all the assets and glossary terms in the catalog.
+
+## Looking at an asset
+
+When you select an asset in the data catalog, there is a lot of information to look at. Using the chart below, we'll go through some of the basics:
+
+:::image type="content" source="../media/browse-and-search-exercise/asset-view-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/asset-view.png":::
+
+1. The breadcrumbs at the top of the page will lead you back through your selections to the data catalog.
+1. Assets can be **certified** by data stewards in your Microsoft Purview account. This means the asset is endorsed by the data steward as ready to be used.
+1. The interaction bar contains several options, that users will only have access to depending on their role:
+    1. Edit - allows you to edit the fascets of the asset.
+    1. Select for bulk edit - allows you to select this asset to be updated alongside others.
+    1. Request access - if you do not have access to a data asset you need, you can request access directly in Microsoft Purview using this button.
+    1. Refresh - refresh this asset page.
+    1. Delete - delete the asset.
+1. The tabs inside the asset window provide information views for the asset:
+    1. Overview - Provides a summary of basic information about the asset. We'll discuss some of these in the next steps.
+    1. Properties - metadata bout the asset including modified time and related assets.
+    1. Schema - provides the schema of the data, like column names with their classifications, sensitivity labels, and related glossary terms.
+    1. Lineage - if the Microsoft Purview account is connected to other data processing and analytics systems, like data factory, lineage of a data asset will be displayed here so users can see where it comes from and how it is used.
+    1. Contacts - experts and owners can be assigned to a data asset, and found here under the contacts page.
+    1. Related - other data assets related to this one are listed here.
+1. Asset description is added by data stewards or owners, and should give a description of the contents.
+1. Classifications are annotations that can be used to describe an asset or a column, and can be added by data owners and stewards.
+1. Schema classifications are applied to a specific column in the asset during the scanning process.
+1. The collection path and hierarchy give context to where a data asset is stored.
+1. Glossary terms are business terms created by your organization that provide context for an asset.
