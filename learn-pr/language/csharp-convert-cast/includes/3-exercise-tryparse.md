@@ -71,7 +71,7 @@ Measurement: 102
 
 ### Step 2 - Use the parsed int later in code
 
-To demonstrate that the `result` that was declared earlier then populated by the `out` parameter is also usable later in your code, add the following line of code below the code you wrote in Step 1:
+To demonstrate that the `result` that was declared earlier, then populated by the `out` parameter is also usable later in your code, add the following line of code below the code you wrote in Step 1:
 
 ```csharp
 // Since it is defined outside of the if statement, 
