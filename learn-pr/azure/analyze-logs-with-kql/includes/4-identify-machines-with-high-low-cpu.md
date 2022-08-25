@@ -5,47 +5,48 @@ Here, you'll write KQL queries to retrieve and transform data from the `Perf` ta
 
 ## Assess log data based on analysis goals
 
-Windows and Linux agents send performance counters to the `Perf` table in Azure Monitor related to the performance of hardware components, operating systems, and applications.
+Windows and Linux agents send performance counters of hardware components, operating systems, and applications running on monitored machines to the `Perf` table in Azure Monitor.
 
-1. What information will help you understand the compute usage of machines running in your IT environment?
+### What are your analysis goals and what information do you need?
 
-    - Central processing unit (CPU) usage.
-    - Information about CPU usage of machines at peak and quiet times.
+To analyze the compute usage of machines running in your IT environment, you need information about:
 
-1. Which data in the `Perf` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
+- Central processing unit (CPU) usage of each active machine.
+- CPU usage of machines at peak and quiet times.
 
-     Let's run a simple a query on the `Perf` table to retrieve logs from the past 24 hours and get a sense of the table schema and the data the table holds:
+### Which log data and KQL operations can you use?
 
-    ```kusto
-    Perf  // The table you’re querying
-    | where TimeGenerated > ago(1d) // Filters for entries generated in the past day 
-    ```
+Let's run a simple a query on the `Perf` table to retrieve logs from the past 24 hours and get a sense of the table schema and the data the table holds:
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Heartbeat table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
+```kusto
+Perf  // The table you’re querying
+| where TimeGenerated > ago(1d) // Filters for entries generated in the past day 
+```
+:::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Heartbeat table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
 
-    You can see that the `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` columns hold data that's relevant to your analysis. 
+You can see that the `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` columns hold data that's relevant to your analysis. 
 
-    The `ObjectName` column lists the names of all of the objects for which Azure Monitor collects data from monitored machines. The `CounterName` column holds the names of the various performance counters that Azure Monitor collects. Both of these column holds lots of values, many of which appear multiple times. To clearly see the distinct values in these columns and determine which counters are relevant to the current analysis, let's run this query:
+The `ObjectName` column lists the names of all of the objects for which Azure Monitor collects data from monitored machines. The `CounterName` column holds the names of the various performance counters that Azure Monitor collects. Both of these column holds lots of values, many of which appear multiple times. To clearly see the distinct values in these columns and determine which counters are relevant to the current analysis, let's run this query:
 
-    ```kusto
-    Perf
-    | distinct ObjectName,CounterName // Lists distinct combinations of ObjectName and CounterName values
-    ```
+```kusto
+Perf
+| distinct ObjectName,CounterName // Lists distinct combinations of ObjectName and CounterName values
+```
 
-    This screenshot shows the distinct combinations of `ObjectName` and `CounterName` values in the `CounterName` column in the past 24 hours:    
+This screenshot shows the distinct combinations of `ObjectName` and `CounterName` values in the `CounterName` column in the past 24 hours:    
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table-cpu.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Percentage Processor Time value highlighted." lightbox="../media/kql-log-analytics-perf-table-cpu.png":::
+:::image type="content" source="../media/kql-log-analytics-perf-table-cpu.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Percentage Processor Time value highlighted." lightbox="../media/kql-log-analytics-perf-table-cpu.png":::
 
-    The `% Processor Time` counter gives you an understanding of the utilization of the processor, or Central Processing Unit (CPU).
+The `% Processor Time` counter gives you an understanding of the utilization of the processor, or Central Processing Unit (CPU). This is information you need!
 
-    Now let's summarize the data that's relevant to the current analysis and decide on the KQL operations we can use to advance our analysis:
+Now let's summarize the data that's relevant to the current analysis and decide on the KQL operations we can use to advance our analysis:
 
-    | Column | Description | Analysis goal | Related KQL operations |
-    | --- | --- | --- | --- |
-    | `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
-    | `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
-    | `InstanceName` | xxx | xxx | xxx |
-    | `CounterValue` | xxx | xxx | xxx |
+| Column | Description | Analysis goal | Related KQL operations |
+| --- | --- | --- | --- |
+| `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
+| `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
+| `InstanceName` | xxx | xxx | xxx |
+| `CounterValue` | xxx | xxx | xxx |
 ## Identify machines with high and low CPU usage
 
 Note that 99th percentile means that 99% of all measured values are lower than the given value.
