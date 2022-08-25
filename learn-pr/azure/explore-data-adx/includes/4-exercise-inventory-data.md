@@ -37,7 +37,7 @@ To sort on a specific column, select the name of that column in the results grid
 
 Taking the data sorting one step further, you can group, or aggregate, results by common fields. Note that the sorted list above gave several entries for various states.
 
-1. Select the hamburger menu to the right of the column you want to sort. In this case, select the menu on the right side of the **State** column.
+1. Select the menu icon to the right of the column you want to sort. In this case, select the menu on the right side of the **State** column.
 1. Select **Group by State**
 1. Note that each state is followed by a count of associated entries. Select the arrow to the left of the state name to expand these entries.
 
