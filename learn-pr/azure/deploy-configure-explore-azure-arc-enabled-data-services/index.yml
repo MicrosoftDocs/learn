@@ -4,8 +4,8 @@ metadata:
   title: Deploy, configure, and explore Azure Arc-enabled data services
   description: "Evaluate whether Azure Arc is appropriate to manage and run Azure data services on-premises, at the edge, or on any public cloud."
   ms.date: 8/22/2022
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: tchristiani
+  ms.author: terrychr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Deploy, configure, and explore Azure Arc-enabled data services

@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Using az arcdata
   description: "Project overview and setup requirements."
   ms.date: 8/22/2022
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: tchristiani
+  ms.author: terrychr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 10
