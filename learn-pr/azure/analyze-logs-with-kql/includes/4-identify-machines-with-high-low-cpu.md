@@ -14,9 +14,30 @@ Windows and Linux agents send performance counters to the `Perf` table in Azure 
 
 1. Which data in the `Perf` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
 
-    This screenshot shows the result set of a simple `take 10` query on the `Perf` table (the table has other columns that are not shown in the screenshot):    
+     Let's run a simple a query on the `Perf` table to retrieve logs from the past 24 hours and get a sense of the table schema and the data the table holds:
 
-    You can see that the columns that hold relevant data are:
+    ```kusto
+    Perf
+    ```
+
+    :::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Heartbeat table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
+
+    You can see that the `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` hold data that's relevant to your analysis. 
+
+    The `CounterName` column holds the names of the various performance counters Azure Monitor collects from monitored machines. The column holds lots of values, many of which appear multiple times. To clearly see the distinct values in this column and determine which counters are relevant to the current analysis, let's run this query:
+
+    ```kusto
+    Perf
+    | distinct CounterName // Lists distinct values in the CounterName column
+    ```
+
+    This screenshot shows the distinct values in the CounterName column in the past 24 hours:    
+
+    :::image type="content" source="../media/kql-log-analytics-perf-table-processor-time.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Percentage Processor Time value highlighted." lightbox="../media/kql-log-analytics-perf-table-processor-time.png":::
+
+    The `% Processor Time` gives you an understanding of the utilization of the Central Processing Unit (CPU).
+
+    So, the columns that hold data that's relevant for the current analysis are:
 
     | Column | Description | Analysis goal | Related KQL operations |
     | --- | --- | --- | --- |
