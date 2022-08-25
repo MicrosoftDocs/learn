@@ -11,9 +11,19 @@ As we've seen the previous exercise, the `Perf` table provides information about
 
 To analyze free space usage of machines running in your IT environment, you need information about:
 
-    - Total space available on each machine.
-    - Total space used on each machine.
-    - Percentage of space used  on each machine.
+- Total space available on each machine.
+- Total space used on each machine.
+- Percentage of space used  on each machine.
+
+Let's assess how we can use this data and which KQL operations can help extract and transform the data:
+
+| Column | Description | Analysis goal | Related KQL operations |
+| --- | --- | --- | --- |
+| `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
+| `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
+| `InstanceName` | xxx | xxx | xxx |
+| `CounterValue` | xxx | xxx | xxx |
+
 ### Which log data and KQL operations can you use?
  
 As we saw in the previous exercise, the `CounterName` column in the `Perf` table holds holds the names of the various performance counters that Azure Monitor collects.
