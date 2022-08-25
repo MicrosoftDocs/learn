@@ -22,12 +22,13 @@ Start with a query that you want to pin to the dashboard. In this case, you'll s
 
     :::image type="content" source="../media/8-pin-to-dashboard.png" alt-text="Screenshot of pin to dashboard options.":::
 
-    | Field | Description |
+    | Field | Description | Suggested value |
     |---|---|
-    |Tile name | The title for this specific tile. In this example, give it a name that describes the contents of the graph. |
-    | Data source name | The database on which the query is run. This field is auto-populated when pinning from query. |
-    | Use existing/Create new | In this example, you're creating a new dashboard.|
-    | Dashboard name | Think about all the tiles you want to add to this dashboard, and give the dashboard an appropriate name.|
+    |Tile name | The title for this specific tile. In this example, give it a name that describes the contents of the graph. | Events by date
+    | Data source name | The database on which the query is run. This field is auto-populated when pinning from query. | Samples
+    | Use existing/Create new | In this example, you're creating a new dashboard.| Create new
+    | Dashboard name | Think about all the tiles you want to add to this dashboard, and give the dashboard an appropriate name.| Share insights
+    | View dashboard after creation | Switches to dashboard view from the query view | Checked 
 
 1. Select **Pin** to create the pin and view the dashboard.
 

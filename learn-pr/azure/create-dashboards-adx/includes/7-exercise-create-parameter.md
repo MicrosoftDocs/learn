@@ -14,7 +14,7 @@ First, you need to switch from viewing mode to editing mode.
 
     :::image type="content" source="../media/9-parameter-options.png" alt-text="Screenshot of parameter options.":::
 
-    |Field  |Description | Suggested setting |
+    |Field  |Description | Suggested value |
     |---------|---------| ---|
     |**Label**|The name of the parameter shown on the dashboard or the edit card.| State
     |**Parameter type**|**Single selection**: Only one value can be selected in the filter as input for the parameter.<br>**Multiple selection**: One or more values can be selected in the filter as input(s) for the parameter.<br>**Time range**: Filter the queries and dashboards based on time.<br>**Free text**: The user can type a value or copy/paste a value to the text field. | Multiple selection
@@ -25,7 +25,9 @@ First, you need to switch from viewing mode to editing mode.
     |**Default value**|The default value of the filter. | Select all
     |**Add a "Select all" value**|For single selection and multiple selection types. Used to retrieve data for all the parameter values. This value affects how the query is written. | Checked|
 
-### Edit query
+### Edit parameter source query
+
+You need to create a list of possible values for this parameter. The parameter you are creating is called "State", and will be used to filter the results based on the state in which the event occurred. You could manually enter a list of all possible states, however, it's simpler to use a query that will return this list dynamically.
 
 1. In **Data source**, select the *Samples* database.
 1. Select **Add query**.
@@ -47,9 +49,9 @@ First, you need to switch from viewing mode to editing mode.
 
 ## Edit the tile query to include a parameter
 
-You've now created a parameter, but nothing has changed on your dashboard. That's because you need to use the parameter in the query that generates one of your visuals.
+You've now created a parameter, but nothing has changed on your dashboard. You need to use the parameter in the query that generates one of your visuals.
 
-1. In the **Events by date** tile, click on the pencil icon.
+1. In the **Events by date** tile, select the pencil icon.
 
     :::image type="content" source="../media/9-edit-tile-query.png" alt-text="Screenshot of editing the query in the tile.":::
 

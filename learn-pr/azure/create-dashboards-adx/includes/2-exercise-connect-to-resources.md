@@ -1,4 +1,4 @@
-Before you can visualize queries from the sample meteorological data, you need to connect to its database. You don't need an Azure account to view this publicly available data, but you will need an email that's connected to a Microsoft account.
+Before you can create dashboards from the sample meteorological data, you need to connect to the data itself. This data is stored in a table within a publically available database. You don't need an Azure account, but you will need an email that's connected to a Microsoft account.
 
 ## Connect to the data
 
