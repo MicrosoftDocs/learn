@@ -1,4 +1,4 @@
-Here, we'll discuss how Microsoft Graph PowerShell works. You'll learn how to install the module and the different commands that will help you find what you are looking for. This knowledge will help you decide if Microsoft Graph PowerShell is appropriate for your automation needs.
+In this unit, we'll discuss how Microsoft Graph PowerShell works. You'll learn how to install the module and the different commands that will help you find what you are looking for. This knowledge will help you decide if Microsoft Graph PowerShell is appropriate for your automation needs.
 
 ## Installation
 
@@ -19,7 +19,7 @@ To set the execution policy, run;
     ```
 
 > [!NOTE]
-> Installing the main module of the SDK, Microsoft.Graph, will install all 38 sub modules. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
+> Installing the main module of the SDK, Microsoft.Graph, will install all the 38 sub modules. Consider installing only the necessary modules, including `Microsoft.Graph.Authentication`, which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
 > Only cmdlets for the installed modules will be available for use.
 
 To install **all** modules, run:
@@ -48,7 +48,7 @@ Install-Module Microsoft.Graph -Scope AllUsers
 Connect-MgGraph -Scopes "Device.Read.All"
 ```
 
-Microsoft Graph PowerShell permissions are NOT pre-authorized and you must perform one-time request for permissions depending on needs.
+Microsoft Graph PowerShell permissions are NOT pre-authorized and you must perform one-time request for permissions depending on your needs.
 
 The **-Scopes** parameter is optional, only needed if you don't have consent. For example, if you don't have consent for **Device.Read.All** and you need it, specify it with the **-Scopes** parameter. Next time you use `Connect-MgGraph`, you don't need to specify any permission scopes.
 
@@ -68,11 +68,11 @@ Connect-MgGraph -Environment USGov
 
 ## Navigating Microsoft Graph PowerShell
 
-The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that helps you navigate the SDK. Here, we'll cover a number of cmdlets that help you navigate the SDK.
+The Microsoft Graph PowerShell SDK comes with a toolkit of cmdlets that helps you navigate the SDK. In the following section, we'll cover a number of cmdlets that help you navigate the SDK.
 
 ### Using Find-MgGraphCommand
 
-`Find-MgGraphCommand` aims to make it easy for you to discover which API path a command calls by providing a URI or a command name.
+`Find-MgGraphCommand` shows you which API path a command calls by providing a URI or a command name.
 
 `Find-MgGraphCommand` allows you to;
 
@@ -166,7 +166,7 @@ Id                                   Consent Name                 Description
 
 ### Using Select-MgProfile
 
-By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta are not available in PowerShell by default.
+By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default.
 
 To check your current profile, run:
 
@@ -198,7 +198,7 @@ To get a list of all devices in the directory using the API URI, run:
 $devices = (Invoke-MgGraphRequest -Method GET https://graph.microsoft.com/v1.0/devices).Value
 ```
 
-This command works for any Graph API, if you know the REST URI, method and optional body parameter. It can be useful for accessing an API for which there isn’t an equivalent cmdlet yet.
+This command works for any Graph API if you know the REST URI, method and optional body parameter. It can be useful for accessing an API for which there isn’t an equivalent cmdlet yet.
 
 If you get stuck executing or finding the right Microsoft Graph PowerShell command, use `Invoke-MgGraphCommand`.
 
@@ -228,19 +228,19 @@ Get-MgDevice -Count deviceCount -ConsistencyLevel eventual
 
 `$deviceCount` will contain the count of your devices.
 
-Using out example scenario, to clean up stale devices, you'll need to define a timeframe that is your indicator for stale devices. When defining your timeframe, factor the window noted for updating the activity timestamp into your value. For example, you shouldn't consider a timestamp that is younger than 21 days as an indicator for a stale device. There are scenarios that can make a device look like stale while it isn't. For example, the owner of the affected device can be on vacation or on a sick leave that exceeds your timeframe for stale devices.
+Using our example scenario, to clean up stale devices, you'll need to define a timeframe that is your indicator for stale devices. When defining your timeframe, factor in the window period noted for updating the activity timestamp into your value. For example, you shouldn't consider a timestamp that is younger than 21 days as an indicator for a stale device. There are scenarios that can make a device look like stale while it isn't. For example, the owner of the affected device can be on vacation or on a sick leave that exceeds your timeframe for stale devices.
 
-While you can clean up stales devices in the Azure portal, it's more efficient to handle the process using PowerShell. Using Microsoft Graph PowerShell, we'll use the timestamp filter and filter out system-managed devices.
+Although you can clean up stale devices in the Azure portal, it's more efficient to handle the process using PowerShell. Using Microsoft Graph PowerShell, we'll use the timestamp filter and filter out system-managed devices.
 
 A typical routine consists of the following steps:
 
 1. Connect to Azure AD using `Connect-MgGraph` cmdlet
 1. Get a list of the stale devices
 1. Disable the device using the `Update-MgDevice` cmdlet (disable by using **-AccountEnabled** option).
-1. Wait for the grace period of however many days you choose before deleting the device. For this module, we'll use 30 days wait period.
+1. Wait for the grace period to end before deleting the device. For this module, we'll use 30 days wait period.
 1. Remove the device using the `Remove-MgDevice` cmdlet.
 
-Using a timeframe of **90** days run the following command to get a list of all the stale devices.
+Using a timeframe of **90** days, run the following command to get a list of all the stale devices.
 
 ```powershell
 $timeframe = (Get-Date).AddDays(-90)
@@ -253,7 +253,7 @@ To disable the stale devices by setting **AccountEnabled** to false, run:
 $Devices = Get-MgDevice | Where {$_.ApproximateLastSignInDateTime -le $timeframe} ForEach-Object {Update-MgDevice -DeviceId $Device.Id -AccountEnabled: $False}
 ```
 
-To delete disabled devices, now inactive for 120 days, we'll get all the disabled devices and pipe the output to `Remove-MgDevice`.
+To delete disabled devices, currently inactive for 120 days, we'll get all the disabled devices and pipe the output to `Remove-MgDevice`.
 
 ```powershell
 $timeframe = (Get-Date).AddDays(-120)
