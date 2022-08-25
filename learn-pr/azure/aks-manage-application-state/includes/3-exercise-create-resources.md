@@ -125,12 +125,12 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
                   name: http
               env:
                 - name: DATABASE_MONGODB_URI
-                  value: "<your database connection string>"
+                  value: "{your database connection string}"
                 - name: DATABASE_MONGODB_DBNAME
-                  value: ship_manager
+                  value: contoso-ship-manager
     ```
 
-1. Replace the `<your database connection string>` tag with the actual connection string from Azure Cosmos DB. You can get this connection string through the following Azure CLI script:
+1. Replace the `{your database connection string}` placeholder with the actual connection string from Azure Cosmos DB. You can get this connection string through the following Azure CLI script:
 
     ```azurecli
     az cosmosdb keys list --type connection-strings -g $RESOURCE_GROUP -n $COSMOSDB_ACCOUNT_NAME --query "connectionStrings[0].connectionString" -o tsv
@@ -170,11 +170,12 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
                 - name: DATABASE_MONGODB_URI
                   value: "mongodb://YOURACCOUNTNAME:password@YOURACCOUNTNAME.documents.azure.com:PORT/?ssl=true&replicaSet=globaldb"
                 - name: DATABASE_MONGODB_DBNAME
-                  value: ship_manager
+                  value: contoso-ship-manager
     ```
 
     > [!NOTE]
     > Don't forget to add quotes `"` to the environment variables as the connection string sometimes presents invalid YAML characters.
+    > You may consider using [secrets](https://docs.microsoft.com/en-us/learn/modules/aks-secrets-configure-app/) as a secure way to store and retieve connection string in AKS.
 
 1. Save and close the file.
 
@@ -201,7 +202,7 @@ To make this application available to everyone, you'll need to create a service 
           port: 80
           targetPort: 3000
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -209,16 +210,19 @@ To make this application available to everyone, you'll need to create a service 
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: ship-manager-backend.DNS_ZONE
+        - host: ship-manager-backend.{DNS_ZONE}
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-backend
-                  servicePort: http
+                  service:
+                    name: ship-manager-backend
+                    port:
+                        number: 80
     ```
 
-1. Replace the `DNS_ZONE` placeholder with your cluster DNS zone. You can get that information by running the following AKS command:
+1. Replace the `{DNS_ZONE}` placeholder with your cluster DNS zone. You can get that information by running the following AKS command:
 
     ```azurecli
     az aks show -g $RESOURCE_GROUP -n $AKS_CLUSTER_NAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
@@ -239,7 +243,7 @@ To make this application available to everyone, you'll need to create a service 
           port: 80
           targetPort: 3000
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -251,9 +255,12 @@ To make this application available to everyone, you'll need to create a service 
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-backend
-                  servicePort: http
+                  service:
+                    name: ship-manager-backend
+                    port:
+                        number: 80
     ```
 
 1. Save and close the file.
@@ -333,12 +340,12 @@ To create the front-end interface, you'll do a similar process:
       config.js: |
         const config = (() => {
           return {
-            'VUE_APP_BACKEND_BASE_URL': 'YOUR_BACKEND_URL',
+            'VUE_APP_BACKEND_BASE_URL': 'http://{YOUR_BACKEND_URL}',
           }
         })()
     ```
 
-    Replace the `YOUR_BACKEND_URL` placeholder with the URL of the back-end API that you just put in the ingress in the previous step, adding `http://` in front of it.
+    Replace the `{YOUR_BACKEND_URL}` placeholder with the URL of the back-end API that you just put in the ingress in the previous step.
 
 1. Save and close the file.
 
@@ -365,7 +372,7 @@ Next, you'll create the networking resources that this application needs to be o
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-frontend
@@ -373,16 +380,19 @@ Next, you'll create the networking resources that this application needs to be o
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: contoso-ship-manager.DNS_ZONE
+        - host: contoso-ship-manager.{DNS_ZONE}
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-frontend
-                  servicePort: http
+                  service:
+                    name: ship-manager-frontend
+                    port:
+                        number: 80
     ```
 
-1. Replace the `DNS_ZONE` placeholder with your cluster DNS zone. You can get that information by using the following AKS command:
+1. Replace the `{DNS_ZONE}` placeholder with your cluster DNS zone. You can get that information by using the following AKS command:
 
     ```azurecli
     az aks show -g $RESOURCE_GROUP -n $AKS_CLUSTER_NAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
@@ -415,9 +425,12 @@ Next, you'll create the networking resources that this application needs to be o
           http:
             paths:
               - path: /
+                pathType: Prefix
                 backend:
-                  serviceName: ship-manager-frontend
-                  servicePort: http
+                  service:
+                    name: ship-manager-frontend
+                    port:
+                        number: 80
     ```
 
 1. Save and close the file.
