@@ -23,10 +23,10 @@ levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/m
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - data-engineer
-  - cloud-architect
+  - solution-architect
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
   - azure-arc
-  - sql-managed-instance
+  - azure-sql-managed-instance
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
 units:
