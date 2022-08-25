@@ -1,14 +1,8 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+1. What is an asset?
 
-    Goal: briefly summarize the key skill this unit will teach
+Why important to manage the lifecycle?
 
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+We'll discuss the lifecycle of an asset and in the excercise, we'll show you how to manage assets.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -51,28 +45,37 @@ TODO: add a visual element
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
+## Capture and maintain assets
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
 Paragraph (optional)
 
+### Scanning
+
+### Asset normalization
+
+### Editing assets
+Individual and bulk
+
+### Asset certification
+
 <!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
+## Classifications, sensitivity labels, and glossary
+We'll discuss the business glossary in the next section.
 Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
+### Classifications and custom classifcations
+
+### How to apply classifications
+
+### Sensitivity labels
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)
 Paragraph (optional)
 
+## Moving and deleting an asset
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->
