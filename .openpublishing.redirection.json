@@ -16889,6 +16889,41 @@
       "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/3-column-expressions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/2-describe-column-class.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/4-exercise-washingtons-marthas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }

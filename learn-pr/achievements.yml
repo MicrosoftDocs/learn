@@ -1152,3 +1152,8 @@ achievements:
   title: Implement CI/CD with Azure DevOps
   summary: Implement CI/CD with Azure DevOps
   iconUrl: /learn/achievements/implement-ci-cd-azure-devops.svg
+- uid: learn.wwl.work-dataframes-columns-azure-databricks.badge
+  type: badge
+  title: Work with DataFrames columns in Azure Databricks
+  summary: Work with DataFrames columns in Azure Databricks
+  iconUrl: /learn/achievements/work-dataframes-columns-azure-databricks.svg
