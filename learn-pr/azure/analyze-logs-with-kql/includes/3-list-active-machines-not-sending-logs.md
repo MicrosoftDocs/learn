@@ -104,7 +104,7 @@ You can some quick tweaks to the query above to get the information you need:
     | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
     ```
 
-1. Rename the the `Version` column to `AgentVersion` for clarity, find unique combinations of agent type, agent version, and operating system type, and list all computers running each combination of agent type and agent version using the KQL `make_set()` aggregate function: 
+1. Rename the the `Version` column to `AgentVersion` for clarity, and add another `summarize` line to find unique combinations of agent type, agent version, and operating system type, and list all computers running each combination of agent type and agent version using the KQL `make_set()` aggregate function: 
 
     ```kusto    
     Heartbeat // The table you’re querying
@@ -114,7 +114,5 @@ You can some quick tweaks to the query above to get the information you need:
     | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
     | summarize ComputersList=make_set(Computer) by AgentVersion=Version, AgentType, OSType // Summarizes the result set by unique combination of agent type, agent version, and operating system, and lists the set of all machines running the specific agent version
     ```
-
-    Notice that this query uses the `summarize` operator twice - to set the query scope at the beginning of query, and then together with the  to group the `make_set()` aggregation function to form computer groups.    
 
     You now have the data you're looking for: a list of unique combinations of agent type and agent version and the set of all recently active machines that are running a specific version of each agent. 
