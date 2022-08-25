@@ -49,7 +49,7 @@ The key tasks you'll need to perform are:
 
 The following diagram depicts the approach to log analysis you'll be following throughout this project:
 
-:::image type="content" source="../media/kql-log-analysis-log-analytics.png" alt-text="A diagram that depicts the flow of defining questions, finding relevant log data and writing KQL queries. ":::
+:::image type="content" source="../media/kql-log-analysis-azure-monitor-log-analytics.png" alt-text="A diagram that depicts the flow of defining questions, finding relevant log data and writing KQL queries. ":::
 
 ## Set analysis goals
 
