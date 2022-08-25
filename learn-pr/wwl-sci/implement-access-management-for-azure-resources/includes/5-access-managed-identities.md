@@ -1,7 +1,7 @@
 Managed identities for Azure resources are a feature of Azure Active Directory. Each Azure service that supports managed-identities are subject to their own timeline. Make sure you review the availability status of managed identities for your resource and known issues before you begin. After you've configured an Azure resource with a managed identity, you can give the managed identity access to another resource.
 
 ### Add access to other resources
-After you've enabled managed identity on an Azure resource, such as an Azure App Service application or and Azure virtual, you may need to grant access to more resource. Let's say you want add access to a storage account to your managed identity.
+After you've enabled managed identity on an Azure resource, such as an Azure App Service application or Azure virtual machine, you may need to grant access to more resource. Let's say you want add access to a storage account to your managed identity.
 
 1. Sign in to the Azure portal using an account associated with the Azure subscription under which you've configured the managed identity.
 
