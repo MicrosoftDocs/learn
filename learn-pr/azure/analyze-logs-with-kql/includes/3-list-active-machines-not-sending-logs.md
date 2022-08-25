@@ -6,26 +6,28 @@ Here, you'll write KQL queries to retrieve and transform data from the `Heartbea
 
 Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
 
-1. What information do you need to determine which machines have stopped sending data?
+## What are your goals and what information do you need?
 
-    - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
-    - For further analysis, it's useful to know which virtual machine agent is running on each machine.
- 
-1. Which data in the `Heartbeat` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
+To determine which machines have stopped sending data, you need information about:
+
+- All machines that have recently logged data, but have not logged data as expected in the past few minutes.
+- For further analysis, it's useful to know which virtual machine agent is running on each machine.
+
+## Which data in Azure Monitor Logs is relevant how will you use KQL to extract, transform, and organize the data?
     
-    This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
+This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
 
-    :::image type="content" source="../media/kql-log-analytics-heartbeat-table-agent-version.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table-agent-version.png":::
+:::image type="content" source="../media/kql-log-analytics-heartbeat-table-agent-version.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table-agent-version.png":::
 
-    You can see that the columns that hold relevant data are:
+You can see that the columns that hold relevant data are:
 
-    | Column | Description | Analysis goal | Related KQL operations |
-    | --- | --- | --- | --- |
-    | `TimeGenerated` | Indicates when the virtual machine generated each log. | <ul><li>Identify recently active machines.</li><li>Find the last log generated for each machine and check whether it was generated in the last few minutes.</li></ul> | <ul><li>`where TimeGenerated >ago(48h)`</li><li>`max(TimeGenerated)`</li><li>`max_TimeGenerated < ago(5m)`</li></ul> For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator), [ago()](/azure/data-explorer/kusto/query/agofunction), and [max() (aggregation function)](/azure/data-explorer/kusto/query/max-aggfunction). |
-    | `Computer` |Unique identifier of the machine. | <ul><li>Summarize results by machine.</li><li>Group machines by distinct agent versions.</li></ul>|  <ul><li>`summarize`</li><li>`summarize ComputersList=make_set(Computer)`</li></ul> For more information, see [make_set() (aggregation function)](/azure/data-explorer/kusto/query/makeset-aggfunction). For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator). | 
-    | `Category` |The agent type: <ul><li>`Azure Monitor Agent` or </li><li>`Direct Agent`, which represents the Log Analytics agents. The Log Analytics agent for Windows is also called MMA. The Log Analytics agent for Linux is also called OMS.</li></ul> | Identify the agent virtual running on the machine. Change the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines to simplify the results and facilitate further analysis, such as filtering. | To simplify the results and facilitate further analysis, such as filtering: <ul><li>Rename the column to `AgentType` (`AgentType=Category`)</li><li> Change the `Direct Agent` value to `MMA` for Windows machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)`.</li><li> Change the `Direct Agent` value to `OMS` for Linux machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType`).</li></ul> For more information, see [iff()](/azure/data-explorer/kusto/query/ifffunction) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
-    | `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. |  |
-    | `Version` | The version number of the agent monitoring the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. | Rename the column to `AgentVersion` (`AgentVersion=Version`). |
+| Column | Description | Analysis goal | Related KQL operations |
+| --- | --- | --- | --- |
+| `TimeGenerated` | Indicates when the virtual machine generated each log. | <ul><li>Identify recently active machines.</li><li>Find the last log generated for each machine and check whether it was generated in the last few minutes.</li></ul> | <ul><li>`where TimeGenerated >ago(48h)`</li><li>`max(TimeGenerated)`</li><li>`max_TimeGenerated < ago(5m)`</li></ul> For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator), [ago()](/azure/data-explorer/kusto/query/agofunction), and [max() (aggregation function)](/azure/data-explorer/kusto/query/max-aggfunction). |
+| `Computer` |Unique identifier of the machine. | <ul><li>Summarize results by machine.</li><li>Group machines by distinct agent versions.</li></ul>|  <ul><li>`summarize`</li><li>`summarize ComputersList=make_set(Computer)`</li></ul> For more information, see [make_set() (aggregation function)](/azure/data-explorer/kusto/query/makeset-aggfunction). For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator). | 
+| `Category` |The agent type: <ul><li>`Azure Monitor Agent` or </li><li>`Direct Agent`, which represents the Log Analytics agents. The Log Analytics agent for Windows is also called MMA. The Log Analytics agent for Linux is also called OMS.</li></ul> | Identify the agent virtual running on the machine. Change the `Direct Agent` value to `MMA` for Windows machines and `OMS` for Linux machines to simplify the results and facilitate further analysis, such as filtering. | To simplify the results and facilitate further analysis, such as filtering: <ul><li>Rename the column to `AgentType` (`AgentType=Category`)</li><li> Change the `Direct Agent` value to `MMA` for Windows machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Windows", "MMA", AgentType)`.</li><li> Change the `Direct Agent` value to `OMS` for Linux machines (`AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType`).</li></ul> For more information, see [iff()](/azure/data-explorer/kusto/query/ifffunction) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
+| `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. |  |
+| `Version` | The version number of the agent monitoring the virtual machine. | Identify agent type for Log Analytics agents, which are different for each OS type. | Rename the column to `AgentVersion` (`AgentVersion=Version`). |
 
 ## Identify recently active machines that stopped logging data
 
