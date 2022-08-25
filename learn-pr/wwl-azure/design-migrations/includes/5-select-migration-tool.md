@@ -82,7 +82,7 @@ After you've selected the appropriate server workloads, you're ready to begin th
 
 4. Migrate the VMs.
 
-:::image type="content" source="../media/discover-assess.png" alt-text="Discover, analyze dependencies, and assess.":::
+:::image type="content" source="../media/discover-assess.png" alt-text="Diagrem of discover, analyze dependencies, and assess tasks.":::
 
 
 ### Describe Azure Resource Mover
@@ -93,7 +93,7 @@ Azure Resource Mover is a tool that helps move your Azure resources between subs
 
 - After you migrate, to optimize your resource organization. 
 
-:::image type="content" source="../media/resource-mover.png" alt-text="Moving resources as part of the migration plan.":::
+:::image type="content" source="../media/resource-mover.png" alt-text="Diagram of moving resources as part of the migration plan.":::
 
 
 Resource Mover provides:

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 After you've created a distribution package, you'll want to publish it to an app store.
 
 In this unit, you'll learn about the different publishing options and the rules you need to follow to have your app accepted.

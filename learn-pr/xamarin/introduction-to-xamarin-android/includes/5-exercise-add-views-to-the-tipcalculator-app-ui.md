@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you'll build part of your UI manually in XML and part of it in Xamarin.Android Designer. 
 
 Both of these building approaches involve useful skills. Understanding the raw XML can help you arrange your UI exactly the way you want. Knowing how to use the Designer tool helps you build a UI more quickly than you could by coding XML by hand.

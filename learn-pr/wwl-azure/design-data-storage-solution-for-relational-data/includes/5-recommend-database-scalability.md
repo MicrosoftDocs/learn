@@ -63,7 +63,7 @@ The following table shows Read Scale-out provisioning for Azure SQL Database and
 | - | - |
 | For the basic, standard and general purpose tier, read scale-out feature is unavailable| For the basic, standard and general purpose tier, read scale-out feature is unavailable |
 | For the Business Critical tier, read scale-out is auto-provisioned| For the Premium and Business Critical tier, read scale-out is auto-provisioned |
-| Hyperscale tier is unavailable in Azure Managed Instance| Read scale-put feature is available in Hyperscale tier if atleast one secondary replica is created |
+| Hyperscale tier is unavailable in Azure Managed Instance| Read scale-out feature is available in Hyperscale tier if atleast one secondary replica is created |
 
 
  
@@ -111,7 +111,7 @@ Reasons for Sharding include:
 
 - If the transaction throughput of the overall workload exceeds capacities of an individual database
 
-- When different customers or tenents' data needs physical isolation from each other
+- When different customers or tenants' data needs physical isolation from each other
 
 - Within an organization, there is a geographical separation of data for compliance reasons
 

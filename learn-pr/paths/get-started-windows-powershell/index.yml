@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-windows-powershell
+metadata:
+  title: Get started with Windows PowerShell
+  description: Get started with Windows PowerShell
+  ms.date: 07/28/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get started with Windows PowerShell
+prerequisites: |
+  This learning path assumes you have skills and experience with the following technologies and concepts:
+  - Windows Server administration, maintenance, and troubleshooting.
+  - Windows Client administration, maintenance, and troubleshooting.
+  - Basic security best practices.
+  - Windows networking technologies and implementation.
+  - Core networking technologies such as IP addressing, name resolution, and Dynamic Host Configuration Protocol (DHCP).
+summary: |
+  This learning path introduces you to Windows PowerShell and provides an overview of the product’s functionality. It explains how to open and configure Windows PowerShell, run commands, and use its built-in Help system.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+modules:
+- learn.wwl.review-windows-powershell
+- learn.wwl.understand-command-syntax-windows-powershell
+- learn.wwl.find-commands-get-help-windows-powershell
+trophy:
+  uid: learn.wwl.get-started-windows-powershell.trophy

@@ -64,7 +64,7 @@ az vm create \
 ```
 
 > [!WARNING]
-> Your subscription tier [enforces limits](/azure/azure-subscription-service-limits) on how many resources you can create, as well as the total size of those resources. For example, you are capped to **20 virtual CPUs** with the pay-as-you-go subscription, and only **4 vCPUs** for a free tier. The Azure CLI will let you know when you exceed this limit with a **Quota Exceeded** error. If you hit this error in your own paid subscription, you can request to raise the limits associated with your paid subscription (up to 10,000 vCPUs) through a [free online request](/azure/azure-resource-manager/resource-manager-quota-errors).
+> Your subscription tier [enforces limits](/azure/azure-subscription-service-limits) on how many resources you can create, as well as the total size of those resources. Quota limits depend upon your subscription type and region. The Azure CLI will let you know when you exceed this limit with a **Quota Exceeded** error. If you hit this error in your own paid subscription, you can request to raise the limits associated with your paid subscription (up to 10,000 vCPUs) through a [free online request](/azure/azure-resource-manager/resource-manager-quota-errors).
 
 ## Resize an existing VM
 

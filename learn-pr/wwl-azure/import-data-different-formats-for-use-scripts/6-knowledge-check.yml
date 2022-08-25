@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.import-data-different-formats-for-use-scripts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which cmdlet imports data from a text file?"
+    choices:
+    - content: "Get-Content"
+      isCorrect: true
+      explanation: "Correct. The Get-Content cmdlet imports data from a text file. Each line in the text file becomes an item in an array."
+    - content: "Import-Csv"
+      isCorrect: false
+      explanation: "Incorrect. The Get-Content cmdlet imports data from a text file. Each line in the text file becomes an item in an array."
+    - content: "Import-Clixml"
+      isCorrect: false
+      explanation: "Incorrect. The Get-Content cmdlet imports data from a text file. Each line in the text file becomes an item in an array."
+  - content: "Which cmdlet retrieves data from an XML file?"
+    choices:
+    - content: "Import-Csv"
+      isCorrect: false
+      explanation: "Incorrect. The Import-Clixml cmdlets allows you to retrieve data from an XML file and creates an array of objects."
+    - content: "Import-Clixml"
+      isCorrect: true
+      explanation: "Correct. The Import-Clixml cmdlets allows you to retrieve data from an XML file and creates an array of objects."
+    - content: "ConvertFrom-Json"
+      isCorrect: false
+      explanation: "Incorrect. The Import-Clixml cmdlets allows you to retrieve data from an XML file and creates an array of objects."

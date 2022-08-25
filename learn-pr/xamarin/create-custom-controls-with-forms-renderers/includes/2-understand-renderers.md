@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Xamarin.Forms uses renderers to make controls work on every supported platform. To change control behavior or make new controls, you have to understand how renderers do their job.
 
 ## How do Xamarin.Forms renderers work?

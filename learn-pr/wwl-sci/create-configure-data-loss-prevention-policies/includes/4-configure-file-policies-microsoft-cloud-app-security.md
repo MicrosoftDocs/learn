@@ -57,3 +57,7 @@ If you want to view all files that are suspected to violate a policy, follow the
 
 1. You'll see a list of files that are currently recognized by the file policy to match the selected filters. You can use this view to see the impact your policy has before you change it to apply any Governance actions.
 
+Use the Protect and control information with Microsoft Cloud App Security interactive guide to experiment with the capabilities discussed above.
+
+[:::image type="content" source="../media/protect-information-interactive-guide.png" alt-text="Cover for an interactive guide that says Protect and control information with Microsoft Cloud App Security." border="false":::](https://mslearn.cloudguides.com/en-us/guides/Protect%20and%20control%20information%20with%20Microsoft%20Cloud%20App%20Security)
+

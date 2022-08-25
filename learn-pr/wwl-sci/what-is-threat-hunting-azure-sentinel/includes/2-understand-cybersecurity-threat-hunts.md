@@ -1,6 +1,6 @@
-The term "threat hunting" is defined differently by different people.  The most commonly used definition is the idea that you are proactively hunting through your environment for a threat or a set of activities that you have not previously detected.  The "not previously detected" part is what differentiates threat hunting from incident response or alert triage.
+The term "threat hunting" is defined differently by different people.  The most commonly used definition is the idea that you're proactively hunting through your environment for a threat or a set of activities that you haven't previously detected.  The "not previously detected" part is what differentiates threat hunting from incident response or alert triage.
 
-Other uses of the term hunting include searching for threats with newly obtained indicators.  If a Threat Intelligence Feed provides a new IP Address considered harmful, an analyst can then take the IP Address and search the logs to find if the new indicator was seen in the past.  Technically this is not threat hunting because you are using a known bad such as an IP Address. Microsoft Sentinel already provides hunting queries to facilitate this process. Next, hunt for more evidence-based threats from a current Incident or Alert as part of an Incident Analysis process.  It is vital to explore data based on evidence found in a current incident.  Both Microsoft Sentinel and Microsoft 365 Defender provide this type of hunting capability.
+Other uses of the term hunting include searching for threats with newly obtained indicators.  If a Threat Intelligence Feed provides a new IP Address considered harmful, an analyst can then take the IP Address and search the logs to find if the new indicator was seen in the past.  Technically this isn't threat hunting because you're using a known bad such as an IP Address. Microsoft Sentinel already provides hunting queries to facilitate this process. Next, hunt for more evidence-based threats from a current Incident or Alert as part of an Incident Analysis process.  It's vital to explore data based on evidence found in a current incident.  Both Microsoft Sentinel and Microsoft 365 Defender provide this type of hunting capability.
 
 All of these approaches have one thing in common: using KQL queries to find threats.
 
@@ -12,9 +12,9 @@ Why do proactive hunting?  As you hunt for "not previously detected" threats, th
 
 ## Process to hunt threats
 
-:::image type="content" source="../media/learn-plan-8.png" alt-text="Threat Hunting Process":::
+:::image type="content" source="../media/learn-plan-8.png" alt-text="Diagram of the Cyber Threat Hunting Process.":::
 
-Threat hunting should be a continual process.  We start at the top of our cycle with our Hypothesis.  Our Hypothesis helps us plan out what we are going to hunt for, which requires us to understand where we are going to hunt and how we will do it. This means we need to understand the data we have, the tools we have, the expertise we have, and how to work with them. The hunting cycle doesn't stop when we execute the hunt. There are still several phases we need to conduct throughout the life cycle, including responding to anomalies. Even if we don't find an active threat, there will be activities to perform.
+Threat hunting should be a continual process.  We start at the top of our cycle with our Hypothesis.  Our Hypothesis helps us plan out what we are going to hunt for, which requires us to understand where we're going to hunt and how we'll do it. This means we need to understand the data we have, the tools we have, the expertise we have, and how to work with them. The hunting cycle doesn't stop when we execute the hunt. There are still several phases we need to conduct throughout the life cycle, including responding to anomalies. Even if we don't find an active threat, there will be activities to perform.
 
 Routine tasks should include:
 

@@ -3,7 +3,8 @@ uid: learn.azdo.create-multi-stage-pipeline
 metadata:
   title: Create a multistage pipeline by using Azure Pipelines
   description: Design and create a realistic release pipeline that promotes changes to various testing and staging environments.
-  ms.date: 06/23/2021
+  ms.custom: devdivchpfy22
+  ms.date: 08/19/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial

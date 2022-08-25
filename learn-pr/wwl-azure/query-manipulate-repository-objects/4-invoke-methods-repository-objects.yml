@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-repository-objects.invoke-methods-repository-objects
+title: Invoke methods of repository objects by using CIM and WMI
+metadata:
+  title: Invoke methods of repository objects by using CIM and WMI
+  description: "Invoke methods of repository objects by using CIM and WMI"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-invoke-methods-repository-objects.md)]

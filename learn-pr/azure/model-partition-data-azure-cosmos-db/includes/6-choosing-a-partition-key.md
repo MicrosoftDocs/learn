@@ -24,7 +24,7 @@ In the following example, the container has a partition key of `/username`.
 
 When you're modeling data for Azure Cosmos DB, it's critically important that the partition key that you choose results in an even distribution of data and requests across partitions in your container. This is especially true when containers grow very large. 
 
-If you don't test the design for a NoSQL database under load during development, a poor choice for partition key might not be revealed until the application is in production and significant data has been written. When data is not partitioned correctly, it can result in *hot partitions*. Hot partitions prevent your database from being able to scale, and they can occur on both storage and throughput.
+If you don't test the design for a NoSQL database under load during development, a poor choice for partition key might not be revealed until the application is in production, and significant data has been written. When data isn't partitioned correctly, it can result in *hot partitions*. Hot partitions prevent your database from being able to scale, and they can occur on both storage and throughput.
 
 ### Storage hot partitions
 

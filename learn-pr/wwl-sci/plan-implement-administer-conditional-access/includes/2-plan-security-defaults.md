@@ -1,13 +1,12 @@
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults provide secure default settings that Microsoft manages on behalf of organizations to keep customers safe until organizations are ready to manage their own identity security story. Security defaults provide preconfigured security settings, such as:
 
- -  Requiring all users to register for Azure Active Directory Multi-Factor Authentication.
- -  Requiring administrators to perform multi-factor authentication.
- -  Blocking legacy authentication protocols.
- -  Requiring users to perform multi-factor authentication when necessary.
- -  Protecting privileged activities like access to the Azure portal.
+-  Requiring all users to register for Azure Active Directory Multi-Factor Authentication.
+-  Requiring administrators to perform multi-factor authentication.
+-  Blocking legacy authentication protocols.
+-  Requiring users to perform multi-factor authentication when necessary.
+-  Protecting privileged activities like access to the Azure portal.
 
-:::image type="content" source="../media/security-defaults-azure-active-directory-portal-b2772a4d.png" alt-text="Screenshot of the Azure portal with the toggle to enable security defaults":::
-
+     :::image type="content" source="../media/security-defaults-azure-active-directory-portal.png" alt-text="Screenshot of the Azure portal with the toggle to enable security defaults.":::
 
 ## Availability
 
@@ -15,34 +14,11 @@ Microsoft security defaults are available to everyone. The goal is to ensure tha
 
 ### Who's it for?
 
-:::row:::
-  :::column:::
-    **Who should use security defaults?**
-  :::column-end:::
-  :::column:::
-    **Who shouldn't use security defaults?**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    
-
- -  Organizations that want to increase their security posture but don't know how or where to start
- -  Organizations utilizing the free tier of Azure Active Directory Licensing
-
-
-  :::column-end:::
-  :::column:::
-    
-
- -  Organizations currently using Conditional Access policies to bring signals together, make decisions, and enforce organizational policies
- -  Organizations with Azure Active Directory Premium licenses
- -  Organizations with complex security requirements that warrant using Conditional Access
-
-
-  :::column-end:::
-:::row-end:::
-
+| Who should use security defaults? | Who shouldn't use security defaults? |
+| :----- | :----- |
+| Organizations that want to increase their security posture but don't know how or where to start | Organizations currently using Conditional Access policies to bring signals together, make decisions, and enforce organizational policies |
+| Organizations utilizing the free tier of Azure Active Directory Licensing | Organizations with Azure Active Directory Premium licenses |
+| | Organizations with complex security requirements that warrant using Conditional Access |
 
 ## Policies enforced
 
@@ -56,15 +32,15 @@ Users with privileged access have increased access to your environment. Due to t
 
 After registration with Azure AD Multi-Factor Authentication is finished, the following nine Azure AD administrator roles will be required to perform additional authentication every time they sign in:
 
- -  Global Administrator
- -  SharePoint Administrator
- -  Exchange Administrator
- -  Conditional Access Administrator
- -  Security Administrator
- -  Helpdesk Administrator
- -  Billing Administrator
- -  User Administrator
- -  Authentication Administrator
+- Global Administrator
+- SharePoint Administrator
+- Exchange Administrator
+- Conditional Access Administrator
+- Security Administrator
+- Helpdesk Administrator
+- Billing Administrator
+- User Administrator
+- Authentication Administrator
 
 ### Protecting all users
 
@@ -78,8 +54,8 @@ One common method to improve protection for all users is to require a stronger f
 
 To give your users easy access to your cloud apps, Azure AD supports a variety of authentication protocols, including legacy authentication. *Legacy authentication* is an authentication request made by:
 
- -  Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
- -  Client that uses mail protocols such as IMAP, SMTP, or POP3.
+- Clients that don't use modern authentication (for example, an Office 2010 client). Modern authentication encompasses clients that implement protocols, such as OAuth 2.0, to support features like multifactor authentication and smart cards. Legacy authentication typically only supports less secure mechanisms like passwords.
+- Client that uses mail protocols such as IMAP, SMTP, or POP3.
 
 Today, the majority of compromising sign-in attempts come from legacy authentication. Legacy authentication does not support multifactor authentication. Even if you have a multifactor authentication policy enabled on your directory, an attacker can authenticate by using an older protocol and bypass multifactor authentication.
 

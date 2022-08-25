@@ -987,3 +987,163 @@ achievements:
   title: Create a user interface with decentralized apps
   summary: Learn about decentralized apps and how to build your own.
   iconUrl: /learn/achievements/reactors/blockchain-create-ui-decentralized-apps.svg
+- uid: learn.wwl.ingest-data-with-apache-spark-notebooks-azure-synapse-analytics.badge
+  type: badge
+  title: Ingest data with Apache Spark notebooks in Azure Synapse Analytics
+  summary: Ingest data with Apache Spark notebooks in Azure Synapse Analytics
+  iconUrl: /learn/achievements/ingest-data-with-apache-spark-notebooks-in-azure-synapse-analytics.svg
+- uid: learn.wwl.transform-data-with-dataframes-apache-spark-pools-azure-synapse-analytics.badge
+  type: badge
+  title: Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics
+  summary: Transform data with DataFrames in Apache Spark Pools in Azure Synapse Analytics
+  iconUrl: /learn/achievements/transform-data-dataframes-apache-spark-pools-azure-synapse-analytics.svg
+- uid: learn.wwl.az-400-create-manage-containers-using-docker-kubernetes.trophy
+  type: trophy
+  title: 'AZ-400: Create and manage containers using Docker and Kubernetes'
+  summary: 'AZ-400: Create and manage containers using Docker and Kubernetes'
+  iconUrl: /learn/achievements/az-400-create-and-manage-containers-using-docker-and-kubernetes.svg
+- uid: learn.wwl.explore-kubernetes-tooling.badge
+  type: badge
+  title: Explore Kubernetes tooling
+  summary: Explore Kubernetes tooling
+  iconUrl: /learn/achievements/4-explore-kubernetes-tooling.svg
+- uid: learn.wwl.implement-azure-kubernetes-service-aks.badge
+  type: badge
+  title: Implement Azure Kubernetes Service (AKS)
+  summary: Implement Azure Kubernetes Service (AKS)
+  iconUrl: /learn/achievements/3-implement-azure-kubernetes-service-aks.svg
+- uid: learn.wwl.implement-docker-multi-stage-builds.badge
+  type: badge
+  title: Implement Docker multi-stage builds
+  summary: Implement Docker multi-stage builds
+  iconUrl: /learn/achievements/2-implement-docker-multi-stage-builds.svg
+- uid: learn.wwl.integrate-aks-pipelines.badge
+  type: badge
+  title: Integrate AKS with pipelines
+  summary: Integrate AKS with pipelines
+  iconUrl: /learn/achievements/5-integrate-aks-with-pipelines.svg
+- uid: learn.wwl.design-processes-to-capture-analyze-user-feedback.badge
+  type: badge
+  title: Design processes to capture and analyze user feedback
+  summary: Design processes to capture and analyze user feedback
+  iconUrl: /learn/achievements/6-design-processes-to-capture-and-analyze-user-feedback.svg
+- uid: learn.wwl.explore-sre-design-practices-to-measure-end-user-satisfaction.badge
+  type: badge
+  title: Explore SRE and design practices to measure end-user satisfaction
+  summary: Explore SRE and design practices to measure end-user satisfaction
+  iconUrl: /learn/achievements/5-explore-sre-design-practices-measure-end-user-satisfaction.svg
+- uid: learn.wwl.implement-ansible.badge
+  type: badge
+  title: Implement Ansible
+  summary: Implement Ansible
+  iconUrl: /learn/achievements/7-implement-ansible.svg
+- uid: learn.wwl.implement-route-for-mobile-application-crash-report-data.badge
+  type: badge
+  title: Implement route for mobile application crash report data
+  summary: Implement route for mobile application crash report data
+  iconUrl: /learn/achievements/mobile-application-crash-report.svg
+- uid: learn.wwl.implement-terraform.badge
+  type: badge
+  title: Implement Terraform
+  summary: Implement Terraform
+  iconUrl: /learn/achievements/8-implement-terraform.svg
+- uid: learn.wwl.introduction-to-chef-puppet.badge
+  type: badge
+  title: Introduction to Chef and Puppet
+  summary: Introduction to Chef and Puppet
+  iconUrl: /learn/achievements/6-introduction-to-chef-and-puppet.svg
+- uid: learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints.badge
+  type: badge
+  title: Manage alerts and incidents in Microsoft Defender for Endpoint
+  summary: Learn how to investigate incidents and alerts using Microsoft Defender for Endpoints.  Perform advanced hunting and consult with threat experts.
+  iconUrl: /learn/achievements/manage-alerts-and-incidents-in-microsoft-defender-for-endpoints.svg
+- uid: learn.wwl.query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.badge
+  type: badge
+  title: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics
+  summary: Query Azure Cosmos DB with Apache Spark for Azure Synapse Analytics
+  iconUrl: /learn/achievements/query-azure-cosmos-db-with-apache-spark-for-azure-synapse-analytics.svg
+- uid: learn.wwl.query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.badge
+  type: badge
+  title: Query Azure Cosmos DB with SQL Serverless for Azure Synapse Analytics
+  summary: Query Azure Cosmos DB with SQL Serverless for Azure Synapse Analytics
+  iconUrl: /learn/achievements/query-azure-cosmos-db-with-sql-serverless-for-azure-synapse-analytics.svg
+- uid: learn.wwl.build-high-quality-release-pipeline.badge
+  type: badge
+  title: Build a high-quality release pipeline
+  summary: Build a high-quality release pipeline
+  iconUrl: /learn/achievements/3-build-high-quality-release-pipeline.svg
+- uid: learn.wwl.implement-application-configuration.badge
+  type: badge
+  title: Implement application configuration
+  summary: Implement application configuration
+  iconUrl: /learn/achievements/8-implement-application-configuration.svg
+- uid: learn.wwl.configure-databases-for-performance.badge
+  type: badge
+  title: Configure databases for performance
+  summary: Configure databases for performance
+  iconUrl: /learn/achievements/configure-databases-for-performance.svg
+- uid: learn.wwl.explore-causes-of-performance-issues.badge
+  type: badge
+  title: Explore causes of performance issues
+  summary: Explore causes of performance issues
+  iconUrl: /learn/achievements/explore-causes-of-performance-issues.svg
+- uid: learn.visual-studio-github-push.badge
+  type: badge
+  title: Get started with Git and GitHub in Visual Studio
+  summary: Authenticate to GitHub and create a repository by using the Git tooling experience in Visual Studio 2022. Add and modify files, stage and commit changes, and then finally push to your remote.
+  iconUrl:  /learn/achievements/visual-studio-github-push.svg
+- uid: learn.azure.intro-to-azure-cosmos-db-core-api.badge
+  type: badge
+  title: Introduction to Azure Cosmos DB SQL API
+  summary: Describe Azure Cosmos DB SQL API along with the SQL API. Determine if Azure Cosmos DB SQL API is a good fit for your application.
+  iconUrl: /learn/achievements/intro-to-azure-cosmos-db-core-api.svg
+- uid: learn.create-cosmos-db-for-scale.badge
+  type: badge
+  title: Create an Azure Cosmos DB database built to scale
+  summary: Learn how to create an Azure Cosmos DB account, database, and container built to scale as your application grows.
+  iconUrl: /learn/achievements/create-cosmos-db-for-scale.svg
+- uid: learn.azure.choose-the-appropriate-api-for-cosmos-db-storage.badge
+  type: badge
+  title: Choose the appropriate API for Azure Cosmos DB
+  summary: Compare the different APIs that are available in Azure Cosmos DB, highlighting and contrasting the different scenarios that would make them a good choice for a company.
+  iconUrl: /learn/achievements/choose-the-appropriate-api-for-cosmos-db-storage.svg
+- uid: learn.access-data-with-cosmos-db-and-sql-api.badge
+  type: badge
+  title: Insert and query data in your Azure Cosmos DB database
+  summary: Discover the Azure Cosmos DB Data Explorer tool that enables you to add or modify data. Create stored procedures in JavaScript.
+  iconUrl: /learn/achievements/access-data-with-cosmos-db-and-sql-api.svg
+- uid: learn.azure.store-access-data-cosmos-graph-api.badge
+  type: badge
+  title: Store and access graph data in Azure Cosmos DB with the Graph API
+  summary: Find out about creating an application with Azure Cosmos DB as a graph database, then retrieve, manipulate, and visualize graph data using Data Explorer.
+  iconUrl: /learn/achievements/store-and-access-data-with-cosmos-db-and-the-graph-api.svg
+- uid: learn.azure.store-access-data-cosmos-table-api.badge
+  type: badge
+  title: Store and Access NoSQL Data with Azure Cosmos DB and the Table API
+  summary: By using the Azure Cosmos DB Table API, you will benefit from the low latency, high availability, and scalability of Azure Cosmos DB in a Table storage application.
+  iconUrl: /learn/achievements/store-and-access-data-cosmos-db-table-api.svg
+- uid: learn.cosmos-db-app-with-vscode.badge
+  type: badge
+  title: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
+  summary: Learn how to create a .NET Core application to store and query data in Azure Cosmos DB by using Visual Studio Code.
+  iconUrl: /learn/achievements/build-cosmos-db-app-with-vscode.svg
+- uid: learn.monitor-azure-cosmos-db.badge
+  type: badge
+  title: Optimize the performance of Azure Cosmos DB by using partitioning and indexing strategies
+  summary: Learn how to measure the performance of your NoSQL Azure Cosmos DB database, by monitoring, partitioning, and indexing
+  iconUrl: /learn/achievements/monitor-azure-cosmos-db.svg
+- uid: learn.distribute-data-globally-with-cosmos-db.badge
+  type: badge
+  title: Distribute your data globally with Azure Cosmos DB
+  summary: Discover the benefits of writing and replicating customized data to regions around the world with Azure Cosmos DB global distribution.
+  iconUrl: /learn/achievements/distribute-data-globally-with-cosmos-db.svg
+- uid: learn.work-with-nosql-data-in-azure-cosmos-db.trophy
+  type: trophy
+  title: Work with NoSQL data in Azure Cosmos DB
+  summary: Find out how to customize NoSQL data storage and distribution with the Azure portal, Cosmos DB extension, and Cosmos DB .NET SDK.
+  iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg
+- uid: learn.wwl.create-production-workloads-azure-databricks-azure-data-factory.badge
+  type: badge
+  title: Create production workloads on Azure Databricks with Azure Data Factory
+  summary: Create production workloads on Azure Databricks with Azure Data Factory
+  iconUrl: /learn/achievements/create-production-workloads-azure-databricks-azure-data-factory.svg

@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-routing-endpoints.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/15/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following statements best describes Azure routing?"
+    choices:
+    - content: "The administrator can create system routes."
+      isCorrect: false
+      explanation: "Incorrect. The administrator can't create system routes, only user routes."
+    - content: "Azure gateways are needed to route traffic between subnets."
+      isCorrect: false
+      explanation: "Incorrect. Gateways aren't needed to route traffic between subnets."
+    - content: "When the next hop type is none, traffic is dropped."
+      isCorrect: true
+      explanation: "Correct. Traffic routed to the None next hop type isn't routed outside the subnet, but is dropped."
+  - content: "When creating user-defined routes, which of the following is a valid next hop types?"
+    choices:
+    - content: "Internet"
+      isCorrect: true
+      explanation: "Correct. The valid next hop choices are virtual appliance. virtual network gateway, virtual network, internet, and none."
+    - content: "Load balancer"
+      isCorrect: false
+      explanation: "Incorrect. Load balancer isn't a valid next hop type."
+    - content: "ExpressRoute"
+      isCorrect: false
+      explanation: "Incorrect. ExpressRoute isn't a valid next hop type."
+  - content: "A company needs to extend their private address space in Azure by providing a direct connection to Azure resources. Which of the following should be implemented?"
+    choices:
+    - content: "User-defined route"
+      isCorrect: false
+      explanation: "Incorrect. User-defined routes are created so Azure Virtual Appliances can handle the traffic both between subnets and to the Internet."
+    - content: "Virtual appliance"
+      isCorrect: false
+      explanation: "Incorrect. Virtual appliances are for traffic control and high availability."
+    - content: "Virtual network endpoint"
+      isCorrect: true
+      explanation: "Correct. Virtual network endpoints extend the private address space in Azure. Endpoints restrict the flow of traffic. As service endpoints are created, Azure creates routes in the route table to direct the traffic."

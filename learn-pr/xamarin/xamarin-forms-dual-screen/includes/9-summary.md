@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Xamarin.Forms dual-screen support provides a foundation upon which to build responsive app layouts that work well on all devices, with enhanced useability on devices like the Microsoft Surface Duo.
 
 In this module, we modified an application by adding `TwoPaneView` and `DualScreenInfo` to preserve the single-screen user experience while adding dual-screen support, and responding appropriately when the app is spanned to two screens (or moved back to one).

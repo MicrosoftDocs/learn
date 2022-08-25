@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 For our exercise, we'll briefly leave behind the example of the human resources app. Instead we'll work with an application that lists famous quotes. The app already has a couple of pages and viewmodels that have some basic bindings. The two pages are a list page and a detail page. We'll  modify the selection logic so that the `ListView` and the detail page use the same viewmodel property.
 
 ## Open the starter solution

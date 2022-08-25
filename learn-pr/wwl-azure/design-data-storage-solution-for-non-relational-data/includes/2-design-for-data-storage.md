@@ -2,7 +2,7 @@
 
 To design Azure storage, you first must determine what type of data you have. 
 
-:::image type="content" source="../media/storage-classification.png" alt-text="Structure, semi-structured, and unstructured data.":::
+:::image type="content" source="../media/storage-classification.png" alt-text="Diagram showing structured, semi-structured, and unstructured data.":::
 
 
 - **Structured data** includes relational data and has a shared schema. Structured data is often stored in database tables with rows, columns, and keys. Structured data is often used for application storage like an ecommerce website.
@@ -24,12 +24,12 @@ To design Azure storage, you first must determine what type of data you have.
 
 In Azure, non-relational data is contained in several different storage data objects. There are four data storage objects we’ll focus on.
 
-:::image type="content" source="../media/non-relational-data-types.png" alt-text="Blobs, files, disks, and queues.":::
+:::image type="content" source="../media/non-relational-data-types.png" alt-text="Diagram showing blobs, files, disks, and queues.":::
 
 
 **Azure Blob storage** is an object store used for storing vast amounts of unstructured data. Blob stands for Binary Large Object, which includes objects such as images and multimedia files.
 
-**Azure Files** is a shared storage service. You can access files with Server Message Block (SMB) on Windows or Network File Share (NFS) on Linux.
+**Azure Files** provides fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and Azure Files REST API. 
 
 **Azure managed disks** are block-level storage volumes that are managed by Azure and used with Azure virtual machines. Managed disks are like a physical disk in an on-premises server but, virtualized. 
 

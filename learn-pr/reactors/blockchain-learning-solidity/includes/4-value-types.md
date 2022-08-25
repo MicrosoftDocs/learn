@@ -1,4 +1,4 @@
-In this unit, you'll learn about the main value types in Solidity. Value types are passed by value and are copied when they're used. The primary value types that you'll use when writing contracts include **integer**, **boolean**, **string literal**, **address**, and **enum**. 
+In this unit, you'll learn about the main value types in Solidity. Value types are passed by value and are copied when they're used. The primary value types that you'll use when writing contracts include **integer**, **boolean**, **:::no-loc text="string literal":::**, **address**, and **enum**. 
 
 ## Integers
 
@@ -59,7 +59,7 @@ function buy(int price) returns (bool success) {
 
 ## String literals
 
-String literals are also used in most contract files. They're characters or words surrounded by either double or single-quotes.
+:::no-loc text="String literals"::: are also used in most contract files. They're characters or words surrounded by either double or single-quotes.
 
 ```solidity
     String shipped = "shipped"; // shipped
@@ -67,7 +67,7 @@ String literals are also used in most contract files. They're characters or word
     String newItem = "newItem"; // newItem
 ```
 
-Additionally, the following escape characters can be used with string literals:
+Additionally, the following escape characters can be used with :::no-loc text="string literals":::.
 
 - `\<newline>` escapes a new line
 - `\n` new line

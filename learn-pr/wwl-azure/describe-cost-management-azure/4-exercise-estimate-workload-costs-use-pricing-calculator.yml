@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cost-management-azure.exercise-estimate-workload-costs-use-pricing-calculator
+title: Exercise - Estimate workload costs by using the Pricing calculator
+metadata:
+  title: Exercise - Estimate workload costs by using the Pricing calculator
+  description: "Exercise - Estimate workload costs by using the Pricing calculator"
+  ms.date: 08/18/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-estimate-workload-costs-use-pricing-calculator.md)]

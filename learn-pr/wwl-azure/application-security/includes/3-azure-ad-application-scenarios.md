@@ -73,12 +73,10 @@ Any application that outsources authentication to Azure AD needs to be registere
 Azure AD represents applications following a specific model that's designed to fulfill two main functions:
 
  -  Identify the app according to the authentication protocols it supports. This involves enumerating all the identifiers, URLs, secrets, and related information that Azure AD needs at authentication time. Here, Azure AD:
-    
      -  Holds all the data needed to support authentication at run time.
      -  Holds all the data for deciding which resources an app might need to access, whether it should fulfill a particular request, and under what circumstances it should fulfill the request.
      -  Supplies the infrastructure for implementing app provisioning both within the app developer's tenant and to any other Azure AD tenant.
  -  Handle user consent during token request time and facilitate the dynamic provisioning of apps across tenants. Here, Azure AD:
-    
      -  Enables users and administrators to dynamically grant or deny consent for the app to access resources on their behalf.
      -  Enables administrators to ultimately decide what apps are allowed to do, which users can use specific apps, and how directory resources are accessed.
 

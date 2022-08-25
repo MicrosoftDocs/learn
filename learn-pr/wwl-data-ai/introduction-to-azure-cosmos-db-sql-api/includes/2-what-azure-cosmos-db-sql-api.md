@@ -74,10 +74,10 @@ These capabilities make Azure Cosmos DB ideally suited for modern application de
 - Need to deliver real-time user experiences
 - Are depended upon for business continuity
 
-The Azure Cosmos DB SQL API can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. The SQL API can be accessed using SDKs for popular frameworks such as [.NET][azure/cosmos-db/sql/sql-api-sdk-dotnet-standard], [Python][azure/cosmos-db/sql/sql-api-sdk-python], [Java][azure/cosmos-db/sql/sql-api-sdk-java-v4], and [Node.js][azure/cosmos-db/sql/sql-api-sdk-node].
+The Azure Cosmos DB SQL API can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. The SQL API can be accessed using SDKs for popular frameworks such as [.NET][azure/cosmos-db/sql/sql-api-sdk-dotnet-standard], [Python][azure/cosmos-db/sql/sql-api-sdk-python], [Java][/azure/cosmos-db/sql/sql-api-sdk-java-v4], and [Node.js][azure/cosmos-db/sql/sql-api-sdk-node].
 
 [azure/cosmos-db/sql/sql-api-sdk-dotnet-standard]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-dotnet-standard
-[azure/cosmos-db/sql/sql-api-sdk-java-v4]: https://docs.microsoft.com/cosmos-db/sql/sql-api-sdk-java-v4
+[azure/cosmos-db/sql/sql-api-sdk-java-v4]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-java-v4
 [azure/cosmos-db/sql/sql-api-sdk-node]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-node
 [azure/cosmos-db/sql/sql-api-sdk-python]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-api-sdk-python
 [json.org]: https://www.json.org

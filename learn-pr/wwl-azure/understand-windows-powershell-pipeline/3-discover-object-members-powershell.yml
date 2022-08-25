@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-windows-powershell-pipeline.discover-object-members-powershell
+title: Discover object members in PowerShell
+metadata:
+  title: Discover object members in PowerShell
+  description: "Discover object members in PowerShell"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-discover-object-members-powershell.md)]

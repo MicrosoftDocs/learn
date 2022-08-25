@@ -22,7 +22,7 @@ public static void Run(IReadOnlyList<Document> changes)
 An input binding for a function can include either a single item or multiple items. Input bindings also support the ability to bind to a C# type.
 
 > [!NOTE]
-> The remaining examples for input/output bindings will assume that the function is triggered using a HTTP request.
+> The remaining examples for input/output bindings will assume that the function is triggered using an HTTP request.
 
 ### Point read input binding
 

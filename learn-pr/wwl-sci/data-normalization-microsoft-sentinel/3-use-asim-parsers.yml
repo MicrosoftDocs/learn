@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.data-normalization-microsoft-sentinel.use-asim-parsers
+title: Use ASIM Parsers
+metadata:
+  title: Use ASIM Parsers
+  description: "Use ASIM Parsers"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-use-asim-parsers.md)]

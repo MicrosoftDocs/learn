@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 After you finish developing your app, there are several steps you'll take to ensure it's ready for distribution.
 
 In this unit, you'll work through a series of steps to ensure your application is ready for publishing. Following these steps will save you time during the submission process and help you reduce the risk of your app being rejected.

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, we'll create our first Xamarin.Forms solution. We'll add to this solution later to create our custom user interface and add functionality.
 
 ## Create a new project
@@ -29,7 +31,7 @@ Explore the Xamarin.Forms solution to learn each item's purpose within a Xamarin
 
 4. **Application definition** - New Xamarin.Forms projects include a class that derives from the `Application` class. This class is responsible for presenting the UI. When you create a project in Visual Studio, this file will be named **App.xaml.cs**, and is nested under **App.xaml**.
 
-5. **Head Projects** - These are the platform-specific projects: one for each platform we're building an app for. These projects create the actual applications you deploy, and each references the shared code and the Xamarin.Forms NuGet package. Each one will call its own `Xamarin.Forms.Init` method to create the initial app screen.
+5. **Head Projects** - These are the platform-specific projects: one for each platform we are building an app for. These projects create the actual applications you deploy, and each references the shared code and the Xamarin.Forms NuGet package. Each one will call its own `Xamarin.Forms.Init` method to create the initial app screen.
 
 Open the MainPage.xaml and change "Welcome to Xamarin.Forms!" to any message you want.
 

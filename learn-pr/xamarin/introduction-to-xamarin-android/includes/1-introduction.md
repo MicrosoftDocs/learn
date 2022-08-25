@@ -1,4 +1,4 @@
-[!include[](../../includes/dotnet-maui-note.md)]
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 It's a mobile-first, cloud-first world, and users expect devices of all types to be connected and online and to generate data. They want updates on everything from their taxi or flight arrival to the temperature of their home while they're on vacation. 
 

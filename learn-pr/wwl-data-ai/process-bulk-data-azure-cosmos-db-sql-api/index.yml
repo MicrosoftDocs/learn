@@ -3,7 +3,7 @@ uid: learn.wwl.process-bulk-data-azure-cosmos-db-sql-api
 metadata:
   title: Process bulk data in Azure Cosmos DB SQL API
   description: "Perform bulk operations on Azure Cosmos DB in bulk from code using the SDK."
-  ms.date: 12/21/2021
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -23,9 +23,9 @@ roles:
 products:
 - azure-cosmos-db
 subjects:
-- data-warehousing
-- data-modeling
 - data-engineering
+- data-modeling
+- data-warehousing
 units:
 - learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.introduction
 - learn.wwl.process-bulk-data-azure-cosmos-db-sql-api.create-bulk-operations-sdk

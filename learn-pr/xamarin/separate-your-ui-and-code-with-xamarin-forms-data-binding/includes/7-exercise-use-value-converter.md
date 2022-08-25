@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Here, you create a value converter to translate the `ImageUrl` property on the `Flag` object into an `ImageSource` that the Xamarin.Forms image control can display. Specifically, the value converter loads images from your embedded resources located in the **FlagData** assembly.
 
 This exercise is a continuation of the previous one. Use your existing solution, or begin from the **exercise2** > **final** solution in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].

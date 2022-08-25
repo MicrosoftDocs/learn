@@ -28,7 +28,7 @@ Although the default time period is the past 30 days, you can customize the rang
 
 ### Alerts
 
-The Alerts tab provides a list of alerts that are associated with the URL. The table shown here is a filtered version of the alerts visible on the Alert queue screen, showing only alerts associated with the domain, their severity, status, the associated incident, classification, investigation state, and more.
+The Alerts tab provides a list of alerts that are associated with the URL. The table shown here's a filtered version of the alerts visible on the Alert queue screen, showing only alerts associated with the domain, their severity, status, the associated incident, classification, investigation state, and more.
 
 The Alerts tab can be adjusted to show more or less information by selecting Customize columns from the action menu above the column headers. The number of items displayed can also be adjusted by selecting items per page on the same menu.
 

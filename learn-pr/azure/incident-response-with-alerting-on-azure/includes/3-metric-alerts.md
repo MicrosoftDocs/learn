@@ -1,6 +1,6 @@
 Azure Monitor can use thresholds to monitor specific resources. In an organization, it's far more useful to be notified when the free disk space on a server is less than 5 percent, instead of being alerted every time a file is saved.
 
-As a solution architect, you want to implement regular threshold monitoring for a number of your target resources and instances. Monitoring will help to head off potential issues before they can affect your customers.
+As a solution architect, you want to implement regular threshold monitoring for many of your target resources and instances. Monitoring will help to head off potential issues before they can affect your customers.
 
 In this unit, you'll investigate the different kinds of metric alerts that Azure Monitor supports.
 
@@ -12,7 +12,7 @@ Metric alerts can be useful if, for instance, you need to know when your server 
 
 ## Composition of a metric alert
 
-As you learned in the previous unit, all alerts are governed by their rules. For metric alerts, there's an additional factor to define: the condition type. It can be static or dynamic.
+As you learned in the previous unit, all alerts are governed by their rules. For metric alerts, there's another factor to define: the condition type. It can be static or dynamic.
 
 You must define the type of statistical analysis to be used with either static or dynamic metric alerts. Example types are minimum, maximum, average, and total. In this example, you define the period of data to be assessed: the last 10 minutes. Finally, you set the frequency by which the alert conditions are checked: every 2 minutes.
 
@@ -24,7 +24,7 @@ In the previously defined scenario, a static alert with a threshold of 85 percen
 
 ### Use dynamic threshold metric alerts
 
-Dynamic metric alerts use machine learning tools that Azure provides to automatically improve the accuracy of the thresholds defined by the initial rule.
+Dynamic metric alerts use machine-learning tools that Azure provides to automatically improve the accuracy of the thresholds defined by the initial rule.
 
 There's no hard threshold in dynamic metrics. However, you'll need to define two more parameters:
 
@@ -36,9 +36,9 @@ There's no hard threshold in dynamic metrics. However, you'll need to define two
 
 Until now, the assessed metric alerts have focused on a single target instance. Azure Monitor supports dimensions, which enable monitoring data to be supplied from multiple target instances.
 
-You use dimensions to define one metric alert rule, and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your app. You can then receive an individual notification for each server instance when the rule conditions are triggered.
+You can use dimensions to define one metric alert rule and have it applied to multiple related instances. For example, you can monitor CPU utilization across all the servers running your app. You can then receive an individual notification for each server instance when the rule conditions are triggered.
 
-You can define the dimensions by naming each target instance specifically. Or, you can define the dimensions by using the asterisk (\*) wildcard, which will use all available instances.
+You can define the dimensions by naming each target instance specifically, or you can define the dimensions by using the asterisk (\*) wildcard, which will use all available instances.
 
 ## Scale metric alerts
 
