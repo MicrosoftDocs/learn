@@ -175,7 +175,7 @@ You need to create three main files. Let's start by creating the *deploy.yaml* f
 
     > [!NOTE]
     > Don't forget to add quotes `"` to the environment variables as the connection string sometimes presents invalid YAML characters.
-    > You may consider using [secrets](https://docs.microsoft.com/en-us/learn/modules/aks-secrets-configure-app/) as a secure way to store and retieve connection string in AKS.
+    > You may consider using [secrets](/learn/modules/aks-secrets-configure-app/) as a secure way to store and retieve connection string in AKS.
 
 1. Save and close the file.
 
