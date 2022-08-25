@@ -4,35 +4,42 @@ In this exercise, you'll add packages to support database functionality, connect
 
 ## Add packages to support database access
 
+1. Stop the app if it's still running.
 1. In Visual Studio Code, select **Terminal** > **New Terminal**.
+1. In the new terminal, set your location to the *BlazingPizza* directory.
+
+    ```powershell
+    cd BlazingPizza
+    ```
+
 1. Run these commands to add the **Microsoft.EntityFrameworkCore**, **Microsoft.EntityFrameworkCore.Sqlite** and **System.Net.Http.Json** packages:
 
     ```powershell
-    dotnet add package Microsoft.EntityFrameworkCore
-    dotnet add package Microsoft.EntityFrameworkCore.Sqlite
-    dotnet add package System.Net.Http.Json
+    dotnet add package Microsoft.EntityFrameworkCore --version 6.0.8
+    dotnet add package Microsoft.EntityFrameworkCore.Sqlite --version 6.0.8
+    dotnet add package System.Net.Http.Json --version 6.0.0
     ```
     
     These commands add package references to your BlazingPizza.csproj file:
 
     ```xml
       <ItemGroup>
-        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.1" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.8" />
         <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
       </ItemGroup>
     ```
 
-## Add a database context and controller
+## Add a database context
 
-1. In Visual Studio Code, select **File** > **New File**.
-1. For the language, select **C#**.
+1. In Visual Studio Code, create a new folder in the *BlazingPizza* folder. Name it *Data*.
+1. Create a new file in the *Data* folder. Name it *PizzaStoreContext.cs*.
 1. Enter this code for the class:
 
     ```csharp
     using Microsoft.EntityFrameworkCore;
     
-    namespace BlazingPizza;
+    namespace BlazingPizza.Data;
     
     public class PizzaStoreContext : DbContext
     {
@@ -46,16 +53,20 @@ In this exercise, you'll add packages to support database functionality, connect
 
     This class creates a database context we can use to register a database service. The context also allows us to have a controller that accesses the database.
 
-1. Select <kbd>Ctrl</kbd> + <kbd>S</kbd>. In the **Save As** dialog, for **File name** enter **PizzaStoreContext.cs**, and then select **Save**.
-1. Select **File** > **New File**.
-1. For the language, select **C#**.
+1. Save your changes.
+
+## Add a controller
+
+1. Create a new folder in the *BlazingPizza* folder. Name it *Controllers*.
+1. Create a new file in the *Controllers* folder. Name it *SpecialsController.cs*.
 1. Enter this code for the class:
 
     ```csharp
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
+    using BlazingPizza.Data;
     
-    namespace BlazingPizza;
+    namespace BlazingPizza.Controllers;
 
     [Route("specials")]
     [ApiController]
@@ -76,20 +87,19 @@ In this exercise, you'll add packages to support database functionality, connect
     }
     ```
 
-    This class creates a controller that allows us to query the database for pizza specials and returns them as JSON at the [http://localhost:5000/specials](http://localhost:5000/specials) URL.
+    This class creates a controller that allows us to query the database for pizza specials and returns them as JSON at the `(http://localhost:5000/specials)` URL.
 
-1. Select <kbd>Ctrl</kbd> + <kbd>S</kbd>. In the **Save As** dialog, for **File name** enter **SpecialsController.cs**, and then select **Save**.
+1. Save your changes.
 
 ## Load data into the database
 
 The app checks to see if there's an existing SQLite database and creates one with some premade pizzas.
 
-1. Select **File** > **New File**.
-1. For the language, select **C#**.
+1. Create a new file in the *Data* directory. Name it *SeedData.cs*.
 1. Enter this code for the class:
 
     ```csharp
-    namespace BlazingPizza;
+    namespace BlazingPizza.Data;
 
     public static class SeedData
     {
@@ -161,12 +171,11 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
     The class uses a passed database context, creates some `PizzaSpecial` objects in an array, and then saves them.
 
-1. Select <kbd>Ctrl</kbd> + <kbd>S</kbd>. In the **Save As** dialog, for **File name** enter **SeedData.cs**, and then select **Save**.
 1. In the file explorer, select **Program.cs**.
 1. At the top, add a reference to a new `PizzaStoreContext`:
 
     ```csharp
-    using BlazingPizza;
+    using BlazingPizza.Data;
     ```
 
     This statement allows the app to use the new service.
@@ -191,9 +200,7 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
     This change creates a database scope with the `PizzaStoreContext`. If there isn't a database already created, it calls the `SeedData` static class to create one.
 
-    At the moment, the app won't work because we haven't initialized the `PizzaStoreContext`. This code should be added to **Startup.cs**.
-
-1. In the `Add Services to the container` section higher in the `Program.cs` file, add this code under the current services:
+1. At the moment, the app won't work because we haven't initialized the `PizzaStoreContext`. In the `Add Services to the container` section higher in the *Program.cs* file, add this code under the current services (the lines that start `builder.Services.`):
 
     ```csharp
       builder.Services.AddHttpClient();
@@ -203,15 +210,9 @@ The app checks to see if there's an existing SQLite database and creates one wit
 
     This code registers two services. The first `AddHttpClient` statement allows the app to access HTTP commands. The app uses an HttpClient to get the JSON for pizza specials. The second statement registers the new `PizzaStoreContext` and provides the filename for the SQLite database.
 
-1. Visual Studio Code highlights `UseSqlite` as an error, so you must add a reference to the `EntityFrameworkCore` package. At the top of the file, under the existing `using` block, add:
-
-    ```csharp
-    using Microsoft.EntityFrameworkCore;
-    ```
-
 ## Use the database to display pizzas
 
-We can now replace the hard-coded pizza in the **index.razor** page.
+We can now replace the hard-coded pizza in the **Index.razor** page.
 
 1. In the file explorer, select **Index.razor**.
 1. Replace the existing `OnInitialized()` method with:
@@ -233,24 +234,16 @@ We can now replace the hard-coded pizza in the **index.razor** page.
     @inject NavigationManager NavigationManager
     ```
 
-   To fix the last error, we need to make the app aware of `GetFromJsonAsync`.
-1. In the file explorer, select **_Imports.razor**.
-1. Add this new `@using` statement at the bottom:
-
-    ```razor
-    @using System.Net.Http.Json
-    ```
-
-1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
+1. Save all your changes, and then select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
 
     There's a runtime error when you run the app. The **JsonReader** raised an exception.
 
-1. Remember that the app should be creating JSON at [http://localhost:5000/specials](http://localhost:5000/specials). Go to that URL.
+1. Remember that the app should be creating JSON at `(http://localhost:5000/specials)`. Go to that URL.
 
    The app doesn't know how to route this request. You'll learn about routing in the module on Blazor routing. Let's fix the error now.
 1. Select <kbd>Shift</kbd> + <kbd>F5</kbd>, or select **Stop Debugging**.
 1. In the file explorer, select **Program.cs**.
-1. Near the bottom of the file, after the `Configure the HTTP request pipeline` comment and the `app.UseEndpoints` block, add this endpoint:
+1. Around the middle of the file, after the lines that start `app.`, add this endpoint:
 
     ```csharp
     app.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
@@ -270,7 +263,7 @@ We can now replace the hard-coded pizza in the **index.razor** page.
 1. Select <kbd>F5</kbd> or select **Run**. Then select **Start Debugging**.
 
    The app should now work, but let's check that the JSON is being created correctly.
-1. Go to [http://localhost:5000/specials](http://localhost:5000/specials) to see:
+1. Go to `(http://localhost:5000/specials)` to see:
 
     :::image type="content" source="../media/5-returned-json.png" alt-text="Screenshot showing the browser that shows JSON for pizzas.":::
 

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.find-commands-get-help-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "How would you search for a cmdlet that retrieves a computer's properties from Active Directory?"
+    choices:
+    - content: "`Get-ComputerInfo`"
+      isCorrect: false
+      explanation: "Incorrect. This cmdlet returns information about the local operating system, rather than searching for cmdlets that retrieve a computer's properties from Active Directory."
+    - content: "`Get-Help Get-AD*`"
+      isCorrect: true
+      explanation: "Correct. You can use what you know about cmdlet name structures to help you guess a cmdlet's name. You know that Get retrieves resources so that you can work with their properties. You also know that the nouns associated with Active Directory have the prefix AD. Based on this information, you can use the Get-Help command and a wildcard value for the cmdlet name to search for possible cmdlets by running the command `Get-Help Get-AD*`. Because you're searching for the cmdlets that operate specifically on computers, you could even check if Get-Help Get-ADComputer returns results."
+    - content: "`Get-Command -ParameterName Auth*`"
+      isCorrect: false
+      explanation: "Incorrect. This command returns a list of all cmdlets that include a parameter whose name starts with `Auth`, rather than searching for cmdlets that retrieve a computer's properties from Active Directory."
+  - content: "Which of the following are groups of related PowerShell capabilities that are bundled together into a single unit?"
+    choices:
+    - content: "Parameters"
+      isCorrect: false
+      explanation: "Incorrect. *Modules* are groups of related PowerShell capabilities that are bundled together into a single unit. They help with organizing cmdlets into distributable units."
+    - content: "Aliases"
+      isCorrect: false
+      explanation: "Incorrect. *Modules* are groups of related PowerShell capabilities that are bundled together into a single unit. They help with organizing cmdlets into distributable units."
+    - content: "Modules"
+      isCorrect: true
+      explanation: "Correct. *Modules* are groups of related PowerShell capabilities that are bundled together into a single unit. They help with organizing cmdlets into distributable units."

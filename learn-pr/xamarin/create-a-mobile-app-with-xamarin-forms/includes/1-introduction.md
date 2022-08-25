@@ -1,4 +1,4 @@
-[!include[](../../includes/dotnet-maui-note.md)]
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Xamarin.Forms is a framework for creating cross-platform native mobile apps with C# and XAML, by using Visual Studio.
 

@@ -4,8 +4,8 @@ metadata:
   title: "Build dual-screen Xamarin.Forms apps by using TwoPaneView"
   description: In this module, you'll use TwoPaneView and DualScreenInfo to 
   ms.date: 08/12/2020
-  author: conceptdev
-  ms.author: crdun
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: "Build dual-screen Xamarin.Forms apps by using TwoPaneView"
@@ -28,8 +28,6 @@ products:
 - dotnet
 - vs
 - surface-duo
-subjects:
-- development-tools
 units:
 - learn-xamarin.xamarin-forms-dual-screen.1-introduction
 - learn-xamarin.xamarin-forms-dual-screen.2-display-two-screens

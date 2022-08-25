@@ -6,8 +6,8 @@ metadata:
   title: Deploy templates at various scopes
   description: Learn how to create Bicep files that deploy resources to a subscription, management group, or tenant.
   ms.date: 10/14/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

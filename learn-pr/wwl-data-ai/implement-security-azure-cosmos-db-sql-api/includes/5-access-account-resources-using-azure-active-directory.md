@@ -3,13 +3,13 @@ Azure Cosmos DB exposes a built-in role-based access control (RBAC) system that 
 - Authenticate your data requests with an Azure Active Directory (Azure AD) identity.
 - Authorize your data requests with a fine-grained, role-based permission model.
 
-To set up these roles, we'll review the permission model, role definitions ad role assignments RBAC concepts in more detail. Azure portal support for role management is'not available yet.
+To set up these roles, we'll review the RBAC concepts for the permission model, role definitions, and role assignments in more detail. Azure portal support for role management is'not available yet.
 
 :::image type="content" source="../media/5-role-assignment.png" alt-text="Diagram that shows the role-based access control options for data access.":::
 
 ## Permission model
 
-The permission model covers reading and writing data operations against a database. It won't cover management resource operations like creating, replacing, deleting databases, containers, throughput, Stored Procedures, triggers, or User-defined functions.
+The permission model covers reading and writing data operations against a database. It won't cover management resource operations like creating, replacing, and deleting databases, containers, throughput, stored procedures, triggers, or user-defined functions.
 
 The permission model will allow you to grant or deny the following actions:
 
@@ -32,7 +32,7 @@ Wildcards are also supported for both the container and item levels.
 
 ### Metadata requests
 
-Metadata requests don't return any data stored inside your Azure Cosmos DB account. Metadata requests are issued by the SDKs as read-only request during initialization and to serve specific data requests. They could return information like the partition key of a container, regions the account is in or a list of a container's partitions.
+Metadata requests don't return any data stored inside your Azure Cosmos DB account. Metadata requests are issued by the SDKs as read-only requests during initialization and to serve specific data requests. They could return information like the partition key of a container, regions the account is in or a list of a container's partitions.
 
 Metadata requests are covered by the action:
 
@@ -48,7 +48,7 @@ They can be assigned at the account, database, or container scope. The actions a
 
 ## Role definitions
 
-Role definitions, contains a list of allowed actions.  Azure Cosmos DB can use either built-in or custom role definitions, let's review those definitions further.
+Role definitions, contains a list of allowed actions.  Azure Cosmos DB can use either built-in or custom role definitions. Let's review those definitions further.
 
 ### Built-in role definitions
 
@@ -59,7 +59,7 @@ Azure Cosmos DB exposes the following two built-in roles definitions:
 | 00000000-0000-0000-0000-000000000001 | Cosmos DB Built-in Data Reader | - Microsoft.DocumentDB/databaseAccounts/readMetadata <br/> - Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/read <br/> -Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/executeQuery <br/> - Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/readChangeFeed |
 | 00000000-0000-0000-0000-000000000002 | Cosmos DB Built-in Data Contributor | -Microsoft.DocumentDB/databaseAccounts/readMetadata <br/> - Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/* <br/> - Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/* |
 
-### Custom Role definition
+### Custom Role definitions
 
 You can define custom role definition using Azure PowerShell, Azure CLI, or Azure Resource Manager templates. When creating a custom role definition, you need to provide:
 
@@ -75,7 +75,7 @@ You can define custom role definition using Azure PowerShell, Azure CLI, or Azur
 
 ## Role assignments
 
-The final component to define our data plane role base access control is our Roll Assignment. Role definitions get assigned to specific Azure Active Directory identities through role assignments. This assignment also defines the scope that the role definition applies to, the account, the database, or the container. You can define role assignments using Azure PowerShell, Azure CLI, or Azure Resource Manager templates. When creating a role assignment, you need to provide:
+The final component to define our data plane role base access control is our Role Assignment. Role definitions get assigned to specific Azure Active Directory identities through role assignments. This assignment also defines the scope that the role definition applies to: the account, the database, or the container. You can define role assignments using Azure PowerShell, Azure CLI, or Azure Resource Manager templates. When creating a role assignment, you need to provide:
 
 - The name of your Azure Cosmos DB account.
 - The resource group containing your account.

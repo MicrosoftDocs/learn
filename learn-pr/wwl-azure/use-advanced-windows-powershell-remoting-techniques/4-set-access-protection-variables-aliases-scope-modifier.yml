@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-advanced-windows-powershell-remoting-techniques.set-access-protection-variables-aliases-scope-modifier
+title: Set access protection to variables, aliases, and functions by using the scope modifier
+metadata:
+  title: Set access protection to variables, aliases, and functions by using the scope modifier
+  description: "Set access protection to variables, aliases, and functions by using the scope modifier"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-set-access-protection-variables-aliases-scope-modifier.md)]

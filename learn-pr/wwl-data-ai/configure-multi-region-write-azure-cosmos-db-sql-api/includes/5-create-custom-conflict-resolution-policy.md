@@ -13,7 +13,7 @@ Each of these four parameters is required in the function:
 | **existingItem** | The item that is already committed |
 | **incomingItem** | The item that's being inserted or updated that generated the conflict |
 | **isTombstone** | Boolean indicating if the incoming item was previously deleted |
-| **conflictingItems** | Array of all committed items in the container that conflicts with incomingItem |
+| **conflictingItems** | Array of all committed items in the container that conflict with incomingItem |
 
 An example implementation of a stored procedure to resolve conflict by using the **/metadata/sortableTimestamp** would include the following code.
 

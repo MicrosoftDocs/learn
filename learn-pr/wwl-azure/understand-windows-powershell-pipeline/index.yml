@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.wwl.understand-windows-powershell-pipeline
+metadata:
+  title: Understand the Windows PowerShell pipeline
+  description: "This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it."
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand the Windows PowerShell pipeline
+summary: This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  *   Describe the features and functionalities of the pipeline.
+  *   Use the appropriate terminology to describe the pipeline output and pipeline objects.
+  *   Explain how to discover and display object members.
+  *   Review object members.
+  *   Describe the cmdlets used to format the pipeline output for display.
+  *   Format pipeline output.
+prerequisites: |
+  - Familiarity with Windows networking technologies and implementation.
+  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+  - Familiarity with Windows PowerShell and its commands to perform specific tasks.
+  - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.understand-windows-powershell-pipeline.introduction
+- learn.wwl.understand-windows-powershell-pipeline.review-its-output
+- learn.wwl.understand-windows-powershell-pipeline.discover-object-members-powershell
+- learn.wwl.understand-windows-powershell-pipeline.control-formatting-of-pipeline-output
+- learn.wwl.understand-windows-powershell-pipeline.knowledge-check
+- learn.wwl.understand-windows-powershell-pipeline.summary
+badge:
+  uid: learn.wwl.understand-windows-powershell-pipeline.badge

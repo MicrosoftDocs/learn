@@ -3,7 +3,7 @@ uid: learn.wwl.get-tips-tricks-teach-mb-920-dynamics-365-fundamentals
 metadata:
   title: 'Get tips and tricks for teaching MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 04/12/2022
+  ms.date: 08/03/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Understand using the objective domains when preparing to teach.
   - Prepare for the exam by understanding the exam structure.
   - Prepare to teach the fundamentals courses leveraging best practices.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/get-tips-tricks-teach-mb-920-dynamics-365-fundamentals.svg
 levels:
 - beginner
 roles:

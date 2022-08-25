@@ -5,8 +5,8 @@ metadata:
   title: Review Azure infrastructure changes by using Bicep and pull requests
   description: Learn how to protect your main Git repository branch from accidental Bicep code changes, and how to use pull requests to review your team's Bicep code.
   ms.date: 02/11/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Review Azure infrastructure changes by using Bicep and pull requests

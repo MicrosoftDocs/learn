@@ -3,7 +3,7 @@ uid: learn.wwl.learn-best-practices-from-microsoft-technical-trainers-for-az-104
 metadata:
   title: Learn best practices from Microsoft Technical Trainers
   description: "Becoming familiar with the Microsoft technical training program will provide direction when preparing to implement the fundamentals course materials in your classroom."
-  ms.date: 05/24/2022
+  ms.date: 08/16/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ prerequisites: |
   *   Understand how faculty members can prepare to take a certification exam
   *   Explain the different approaches to curriculum integration
   *   Understand how to integrate content from Microsoft Learn into your Learning Management System
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/learn-best-practices-from-microsoft-technical-trainers-for-az-104.svg
 levels:
 - advanced
 roles:

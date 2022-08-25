@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-active-directory-domain-services-use-powershell-cmdlets.manage-user-accounts-powershell
+title: Manage user accounts in PowerShell
+metadata:
+  title: Manage user accounts in PowerShell
+  description: "Manage user accounts in PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-manage-user-accounts-powershell.md)]

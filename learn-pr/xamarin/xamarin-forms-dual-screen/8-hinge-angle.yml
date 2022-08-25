@@ -5,8 +5,8 @@ metadata:
   title: Detecting changes in the hinge angle
   description: Use hinge angle changes to update the user interface
   ms.date: 08/12/2020
-  author: conceptdev
-  ms.author: crdun
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
   

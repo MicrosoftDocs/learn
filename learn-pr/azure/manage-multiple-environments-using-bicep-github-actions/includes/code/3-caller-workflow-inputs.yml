@@ -3,15 +3,19 @@ on:
 
 jobs:
   job-test:
-    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
+    uses: ./.github/workflows/script.yml
     with:
       environmentType: Test
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_Test }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_TEST }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
   job-production:
-    uses: mygithubuser/myrepo/.github/workflows/script.yml@main
+    uses: ./.github/workflows/script.yml
     with:
       environmentType: Production
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_Production }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_PRODUCTION }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}

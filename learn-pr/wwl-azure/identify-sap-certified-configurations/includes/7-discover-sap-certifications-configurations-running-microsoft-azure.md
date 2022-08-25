@@ -33,7 +33,7 @@ The following tables outline Azure supported configurations and the growing list
   :::column-end:::
   :::column:::
     DS14\_v2, M32ts, M32ls, M64ls, M64s
-[SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure%23SAP%20Business%20One)
+[SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:120)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -44,8 +44,7 @@ The following tables outline Azure supported configurations and the growing list
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    Controlled Availability for GS5. Full support for M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2,
-SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure)
+    Controlled Availability for GS5. Full support for M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -56,8 +55,7 @@ SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2,
-M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure)
+    M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:125)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -68,8 +66,7 @@ M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified I
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    GS5, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2,
-M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure)
+    GS5, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:105)
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -80,14 +77,11 @@ M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified I
     Red Hat Enterprise Linux, SUSE Linux Enterprise
   :::column-end:::
   :::column:::
-    GS5, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2,
-M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances)
-[SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure)
+    GS5, M64s, M64ms, M128s, M128ms, M64ls, M32ls, M32ts, M208s\_v2, M208ms\_v2, M416s\_v2, M416ms\_v2, SAP HANA on Azure (Large instances) [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;v:105)
   :::column-end:::
 :::row-end:::
 
-
-Be aware that SAP uses the term 'clustering' in [SAP HANA Certified IaaS Platforms](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html#categories=Microsoft%20Azure) as a synonym for 'scale-out' and NOT for high availability 'clustering'.
+Be aware that SAP uses the term 'clustering' in SAP HANA Certified IaaS Platforms as a synonym for 'scale-out' and NOT for high availability 'clustering'.
 
 ## SAP NetWeaver certifications
 
@@ -164,7 +158,6 @@ Microsoft Azure is certified for the following SAP products, with full support f
   :::column-end:::
 :::row-end:::
 
-
 ## Other SAP workloads supported on Azure
 
 :::row:::
@@ -204,7 +197,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     Windows and Linux
   :::column-end:::
   :::column:::
-    
+
   :::column-end:::
   :::column:::
     All NetWeaver Certified VM types
@@ -219,7 +212,7 @@ Microsoft Azure is certified for the following SAP products, with full support f
     Windows and Linux
   :::column-end:::
   :::column:::
-    
+
   :::column-end:::
   :::column:::
     [SAP Note \#2145537](https://launchpad.support.sap.com/#/notes/2145537)
@@ -230,10 +223,10 @@ Microsoft Azure is certified for the following SAP products, with full support f
     SAP Data Services 4.2
   :::column-end:::
   :::column:::
-    
+
   :::column-end:::
   :::column:::
-    
+
   :::column-end:::
   :::column:::
     [SAP Note \#2288344](https://launchpad.support.sap.com/#/notes/2288344)
@@ -299,7 +292,6 @@ Microsoft Azure is certified for the following SAP products, with full support f
 [Hybris Documentation](https://help.sap.com/viewer/a74589c3a81a4a95bf51d87258c0ab15/1811/en-US/8c71300f866910149b40c88dfc0de431.html)
   :::column-end:::
 :::row-end:::
-
 
 > [!IMPORTANT]
 > Both Microsoft and SAP have documentation on what is certified, but SAP should be the single source of truth for their solutions configurations, which consist of combinations of SAP product, operating system, RDBMS, and Azure offerings (Azure VM SKU, SAP HANA on Azure Large Instances).

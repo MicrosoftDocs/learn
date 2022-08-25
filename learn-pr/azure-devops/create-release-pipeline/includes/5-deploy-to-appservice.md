@@ -1,4 +1,4 @@
-The Tailspin team has been using a build pipeline to automate their build processes. They've decided they're ready to implement a simple CI/CD pipeline as a POC. They'll extend the build pipeline to include a deployment stage that deploys to Azure App Service.
+The Tailspin team has been using a build pipeline to automate their build processes. They've decided they're ready to implement a CI/CD pipeline as a POC. They'll extend the build pipeline to include a deployment stage that deploys to Azure App Service.
 
 Andy and Mara have taken on the job of creating the pipeline. Let's follow them and see how they achieve their first automated deployment.
 
@@ -16,9 +16,9 @@ Here you create a multistage pipeline that includes a stage named _Build_ and a 
 
 Here you create the App Service instance that hosts the website.
 
-You can bring up App Service in several ways. In this case, you'll use the Azure portal because it's a great way to explore and visualize available services. In later modules, you'll use more automated ways to bring up and manage App Service.
+You can bring up App Service in several ways. In this case, you'll use the Azure portal, because it's a great way to explore and visualize available services. In later modules, you'll use more automated ways to bring up and manage App Service.
 
-We won't go into many of the details about how App Service works or the configuration options you can select. You'll find more information about App Service at the end of this module.
+We won't go into many of the details about how App Service works, or the configuration options you can select. You'll find more information about App Service at the end of this module.
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-release-pipeline/8-clean-up-environment?azure-portal=true) page in this module explains how to tear down your App Service instance after you're done with it. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to follow the cleanup steps even if you don't complete this module.
@@ -39,7 +39,7 @@ We won't go into many of the details about how App Service works or the configur
     | **Instance Details** |
     | Name | Provide a unique name, such as *tailspin-space-game-1234*. This name must be unique across Azure. It becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
     | Publish  | Code |
-    | Runtime stack | .NET 5 |
+    | Runtime stack | .NET 6 |
     | Operating System | Linux |
     | Region | Select a region, preferably one close to you.|
     | **App Service Plan** |
@@ -69,20 +69,20 @@ We won't go into many of the details about how App Service works or the configur
 
 ## Create a service connection
 
-Here, you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
+Here, you create a service connection that helps Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service.
 
 > [!IMPORTANT]
 > Make sure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
 
 1. In Azure DevOps, go to your **Space Game - web - Release** project.
 
-1. From the bottom of the page, select **Project settings**.
+1. From the lower-left corner of the page, select **Project settings**.
 
 1. Under **Pipelines**, select **Service connections**.
 
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
 
-1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
+1. Near the beginning of the page, select **Service principal (automatic)**. Then select **Next**.
 
 1. Enter the following values for each setting.
 
@@ -166,7 +166,7 @@ Before we add the _Deploy_ stage to the pipeline, let's convert the existing bui
 
 Recall that in Azure Pipelines, an _environment_ is an abstract representation of your deployment environment. You can also define an environment through Azure Pipelines that includes specific criteria for your release. This criteria can include the pipelines that are authorized to deploy to the environment. You can also specify the human approvals that are needed to promote the release from one stage to the next.
 
-For your POC, you'll deploy to the **dev** environment. For now, your environment will define no specific release criteria. In future modules, you'll specify criteria such as human approvals which are required to sign off on changes before those changes move to the next stage.
+For your POC, you'll deploy to the **dev** environment. For now, your environment will define no specific release criteria. In future modules, you'll specify criteria such as human approvals, which are required to sign off on changes before those changes move to the next stage.
 
 Create the **dev** environment.
 
@@ -190,7 +190,7 @@ When you set up App Service earlier, you assigned it a name, such as *tailspin-s
 
 Although you could hard-code this name in your pipeline configuration, defining it as a variable makes your configuration more reusable.
 
-A pipeline variable enables you to define a value in Azure Pipelines and read that value from your pipeline configuration. If the name of your App Service instance changes, you can update the variable and trigger your pipeline without modifying your configuration.
+A pipeline variable helps you define a value in Azure Pipelines and read that value from your pipeline configuration. If the name of your App Service instance changes, you can update the variable and trigger your pipeline without modifying your configuration.
 
 To add the variable:
 
@@ -206,7 +206,7 @@ To add the variable:
 
 1. For the name of your variable, enter *WebAppName*. For its value, enter your App Service instance's name, such as *tailspin-space-game-web-1234*.
 
-1. Near the top of the page, select **Save** to save your variable to the pipeline.
+1. Near the beginning of the page, select **Save** to save your variable to the pipeline.
 
 ## Add the deployment stage to the pipeline
 
@@ -240,7 +240,7 @@ Here you extend your pipeline by adding a deployment stage that uses App Service
 
 When you created your App Service instance, you saw the default website that was created for you. Here you revisit your website to see the results of your deployment.
 
-1. From a web browser, navigate to the URL that's associated with your App Service instance.
+1. From a web browser, go to the URL that's associated with your App Service instance.
 
     If you still have the browser tab open, simply refresh the page. If the browser tab isn't open, you can find the URL on the App Service details page in the Azure portal.
 

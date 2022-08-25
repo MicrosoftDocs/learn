@@ -35,7 +35,7 @@ quiz:
       explanation: Incorrect. Azure Monitor doesn't prohibit manual changes to resources.
     - content: Role-based access control (RBAC)
       isCorrect: true
-      explanation: Correct. You use RBAC to control who has access to your Azure resources. You can configure RBAC to disallow users to access resources and grant access to only your pipeline's service principal.
+      explanation: Correct. You use RBAC to control who has access to your Azure resources. You can configure RBAC to disallow users to access resources. Then, you can grant access to only your Azure Pipelines pipeline's service principal, or your GitHub Actions workflow's workload identity.
     - content: Resource tags
       isCorrect: false
       explanation: Incorrect. Resource tags don't prohibit manual changes to resources.

@@ -83,6 +83,17 @@ You can also apply user permissions to control the users who can manage environm
 > [!NOTE]
 > When your pipeline refers to an environment that doesn't exist yet, Azure Pipelines automatically creates it for you. This feature can affect the security of your Azure DevOps project because you'll automatically get administrative permissions to the environment. It's best to create an environment yourself through the Azure DevOps web interface, so that you have full control over its security and you don't accidentally get permissions that you don't need.
 
+### Link a deployment job to an environment
+
+In your deployment pipeline definition, you create a `deployment` property to specify a deployment job, and you specify the name of the environment the job deploys to:
+
+:::code language="yaml" source="code/2-environment-pipeline.yml" highlight="5" :::
+
+In the example above, the job named `DeployWebsite` is linked to the `Test` environment.
+
+> [!TIP]
+> Jobs also have other properties, including the *deployment strategy*, which are beyond the scope of this module. We link to more information in the summary unit.
+
 ## Environments and service connections
 
 When you use multiple environments, you should make each environment independent from the others. For example, your development environment's website shouldn't be able to access a database within your production environment. 

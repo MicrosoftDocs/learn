@@ -49,7 +49,7 @@ The bindings array can optionally have multiple input bindings within the bindin
 
 ### Point read input binding
 
-A point read input bindings uses an item's unique identifier and partition key value to perform a quick read operation. This configuration object only differs from the trigger with a few changes to the properties:
+A point read input binding uses an item's unique identifier and partition key value to perform a quick read operation. This configuration object only differs from the trigger with a few changes to the properties:
 
 | **Property** | **Description** |
 | ---: | :--- |
@@ -86,7 +86,7 @@ A SQL query input binding uses a SQL query to look up multiple items and provide
 | ---: | :--- |
 | **sqlQuery** | SQL query used to look up multiple items |
 
-Included here is an example of this type of input bindings that performs a SQL query to return a subset of items from the container with only a few fields included in the results.
+Included here is an example of this type of input binding that performs a SQL query to return a subset of items from the container with only a few fields included in the results.
 
 ```json
 {

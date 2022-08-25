@@ -4,73 +4,13 @@ To be able to access Azure Stack Hub endpoints from outside Azure Stack Hub, you
 
 You're required to provide some important information related to DNS when you deploy Azure Stack Hub.
 
-:::row:::
-  :::column:::
-    **Field**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-  :::column:::
-    **Example**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Region
-  :::column-end:::
-  :::column:::
-    The geographic location of your Azure Stack Hub deployment.
-  :::column-end:::
-  :::column:::
-    `east`
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    External Domain Name
-  :::column-end:::
-  :::column:::
-    The name of the zone you want to use for your Azure Stack Hub deployment.
-  :::column-end:::
-  :::column:::
-    `cloud.fabrikam.com`
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Internal Domain Name
-  :::column-end:::
-  :::column:::
-    The name of the internal zone that's used for infrastructure services in Azure Stack Hub. It's Directory Service-integrated and private (not reachable from outside the Azure Stack Hub deployment).
-  :::column-end:::
-  :::column:::
-    `azurestack.local`
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    DNS Forwarders
-  :::column-end:::
-  :::column:::
-    DNS servers that are used to forward DNS queries, DNS zones, and records that are hosted outside Azure Stack Hub, either on the corporate intranet or public internet. You can edit the DNS Forwarder value with the Set-AzSDnsForwarder cmdlet after deployment.
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Naming Prefix (Optional)
-  :::column-end:::
-  :::column:::
-    The naming prefix you want your Azure Stack Hub infrastructure role instance machine names to have. If not provided, the default is `azs`.
-  :::column-end:::
-  :::column:::
-    `azs`
-  :::column-end:::
-:::row-end:::
-
+| **Field**                | **Description**                                                                                                                                                                                      | **Example**          |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Region                   | The geographic location of your Azure Stack Hub deployment.                                                                                                                                          | `east`               |
+| External Domain Name     | The name of the zone you want to use for your Azure Stack Hub deployment.                                                                                                                            | `cloud.fabrikam.com` |
+| Internal Domain Name     | The name of the internal zone that's used for infrastructure services in Azure Stack Hub. It's Directory Service-integrated and private (not reachable from outside the Azure Stack Hub deployment). | `azurestack.local`   |
+| DNS Forwarders           | DNS servers that are used to forward DNS queries, DNS zones, and records that are hosted outside Azure Stack Hub, either on the corporate intranet or public internet.                               |                      |
+| Naming Prefix (Optional) | The naming prefix you want your Azure Stack Hub infrastructure role instance machine names to have. If not provided, the default is `azs`.                                                           | `azs`                |
 
 The fully qualified domain name (FQDN) of your Azure Stack Hub deployment and endpoints is the combination of the Region parameter and the External Domain Name parameter. Using the values from the examples in the previous table, the FQDN for this Azure Stack Hub deployment would be the following name:
 
@@ -111,7 +51,7 @@ There are two types of DNS servers:
 
 Azure Stack Hub includes both authoritative and recursive DNS servers. The recursive servers are used to resolve names of everything except for the internal private zone and the external public DNS zone for that Azure Stack Hub deployment.
 
-:::image type="content" source="../media/Recommend-name-resolution-1-5751a42a.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/Recommend-name-resolution-1-5751a42a.png" alt-text="Diagram showing normalized relational tables.":::
 
 
 ## Resolving external DNS names from Azure Stack Hub

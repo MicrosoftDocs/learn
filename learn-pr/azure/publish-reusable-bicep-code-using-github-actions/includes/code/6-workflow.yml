@@ -9,6 +9,10 @@ on:
     paths:
       - 'modules/storage-account/**'
 
+permissions:
+  id-token: write
+  contents: read
+
 env:
   MODULE_NAME: storage-account
   MODULE_REGISTRY_SERVER: yourregistryname.azurecr.io
@@ -31,7 +35,9 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - name: Get module version number
       run: |
         majorMinorVersionNumber=$(jq '(.version.major | tostring) + "." + (.version.minor | tostring)' ${{ env.MODULE_METADATA_FILE_PATH }} -r )
@@ -41,7 +47,6 @@ jobs:
       name: Publish module
       with:
         inlineScript: |
-          az bicep install
           az bicep publish \
             --target 'br:${{ env.MODULE_REGISTRY_SERVER }}/${{ env.MODULE_NAME }}:${{ env.MODULE_VERSION }}' \
             --file ${{ env.MODULE_FILE_PATH }}

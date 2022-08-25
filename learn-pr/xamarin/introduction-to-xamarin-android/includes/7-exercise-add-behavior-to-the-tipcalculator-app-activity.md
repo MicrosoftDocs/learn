@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you'll write C# code to access and manipulate the UI of an activity. Your code will read and write the properties on several text controls. It will also subscribe to an event on a button.
 
 You'll continue to work on the TipCalculator app. The two `TextView` controls that display the words _Tip_ and _Total_ are static, and you won't need to access them. All other views will need to be accessed from code: 

@@ -2,7 +2,7 @@ While the SDK implements thread-safe types and some degrees of parallelism, ther
 
 ## Avoid resource-related timeouts
 
-Many times request timeouts occur due to high CPU or port utilization on client machines rather than a service-side issue. It is important to monitor resource utilization on client machines and scale-out appropriately to avoid SDK errors are retries due to local resource exhaustion.
+Many times request timeouts occur due to high CPU or port utilization on client machines rather than a service-side issue. It is important to monitor resource utilization on client machines and scale-out appropriately to avoid SDK errors or retries due to local resource exhaustion.
 
 ## Use async/await in .NET
 
@@ -12,7 +12,7 @@ The C# language in .NET has a series of Task-based features to asynchronously in
 Database database = await client.CreateDatabaseIfNotExistsAsync("cosmicworks");
 ```
 
-This syntax uses the **await** keyword to run the task asynchronously and return the result into the indicated variable. Using the asynchronous keywords allows the SDK to manage requests simultaneously in a efficient manner.
+This syntax uses the **await** keyword to run the task asynchronously and return the result into the indicated variable. Using the asynchronous keywords allows the SDK to manage requests simultaneously in an efficient manner.
 
 Avoid blocking the asynchronous execution using **Task.Wait** or **Task.Result** such as in the example code below.
 
