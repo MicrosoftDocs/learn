@@ -6,14 +6,14 @@ Here, you'll write KQL queries to retrieve and transform data from the `Heartbea
 
 Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent log information about virtual machine health to the `Heartbeat` table once a minute.
 
-### What are your goals and what information do you need?
+### What are your analysis goals and what information do you need?
 
 To determine which machines have stopped sending data, you need information about:
 
 - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
 - For deeper analysis, it's useful to know which virtual machine agent is running on each machine.
 
-### Which data in Azure Monitor Logs is relevant how will you use KQL to extract, transform, and organize the data?
+## Which log data and KQL operations can you use?
     
 This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
 

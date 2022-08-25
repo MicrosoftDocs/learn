@@ -18,7 +18,7 @@ Windows and Linux agents send performance counters to the `Perf` table in Azure 
 
     ```kusto
     Perf  // The table you’re querying
-    | where TimeGenerated > ago(1d)// Filters for entries generated in the past day 
+    | where TimeGenerated > ago(1d) // Filters for entries generated in the past day 
     ```
 
     :::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Heartbeat table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
