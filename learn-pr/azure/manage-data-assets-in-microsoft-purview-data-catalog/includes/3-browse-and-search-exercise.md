@@ -87,7 +87,7 @@ When you select an asset in the data catalog, there is a lot of information to l
 
 1. The breadcrumbs at the top of the page will lead you back through your selections to the data catalog.
 1. Assets can be **certified** by data stewards in your Microsoft Purview account. This means the asset is endorsed by the data steward as ready to be used.
-1. The interaction bar contains several options, that users will only have access to depending on their role:
+1. The asset action bar contains several options, that users will only have access to depending on their role:
     1. Edit - allows you to edit the fascets of the asset.
     1. Select for bulk edit - allows you to select this asset to be updated alongside others.
     1. Request access - if you do not have access to a data asset you need, you can request access directly in Microsoft Purview using this button.
