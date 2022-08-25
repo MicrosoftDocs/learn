@@ -4,7 +4,7 @@ Suppose you're working for a pizza delivery firm on its updated customer-facing 
 
 In this unit, you'll learn how to access data and render it within HTML markup for display to the user.
 
-## Create a registered data service
+## Creating a registered data service
 
 If you want to create a dynamic website that shows changing information to users, you must write code to get that data from somewhere. For example, suppose you have a database that stores all the pizzas your company sells. Because the pizzas are always changing, it's a bad idea to hardcode them into the website HTML. Instead, use C# code and Blazor to query the database and then format the details as HTML so that the user can pick their favorite.
 
@@ -13,7 +13,7 @@ In a Blazor Server app, you can create a registered service to represent a data 
 > [!NOTE]
 > The sources of data you can use in a Blazor app include relational databases, NoSQL databases, web services, various Azure services, and many other systems. You can use .NET technologies such as Entity Framework, HTTP clients, and ODBC to query those sources. These techniques are beyond the scope of this module. Here, you'll learn how to format and use data that you obtained from one of these sources and technologies.
 
-Start to create your registered service by writing a class that defines its properties. Here's an example that you might write to represent a pizza:
+The creation of a registered service starts by writing a class that defines its properties. Here's an example that you might write to represent a pizza:
 
 ```csharp
 namespace BlazingPizza.Data;
@@ -36,7 +36,7 @@ public class Pizza
 
 The class defines the pizza's properties and data types. You must make sure these properties match the pizza schema in the data source. It makes sense to create this class in the **Data** folder of your project and use a member namespace called **Data**. If you prefer, you can choose other folders and namespaces.
 
-Next, define the service:
+Next, you would define the service:
 
 ```csharp
 namespace BlazingPizza.Data;
@@ -52,7 +52,7 @@ public class PizzaService
 
 Notice that the service uses an asynchronous call to access data and return a collection of `Pizza` objects. The data source might be remote from the server where the Blazor code is running. In that case, use an asynchronous call. Then if the data source responds slowly, other code can continue to run as you await the response.
 
-You must also register the service by adding a line to the `Add Services to the container` section in the **Program.cs** file:
+You would register the service by adding a line to the `Add Services to the container` section in the **Program.cs** file:
 
 ```csharp
 ...
@@ -64,7 +64,7 @@ builder.Services.AddSingleton<PizzaService>();
 ...
 ```
 
-## Use a service to obtain data
+## Using a service to obtain data
 
 Now you use the service you defined by calling it in a Blazor component and obtaining data. Let's suppose you have the following component code and you want to display pizzas in it:
 
@@ -76,12 +76,12 @@ Now you use the service you defined by calling it in a Blazor component and obta
 <p>We have all these delicious recipes:</p>
 ```
 
-### Inject the service
+### Injecting the service
 
-Before you can call the service from the component, you must use dependency injection to add the service. Add the following code after the `@page` directive:
+Before you can call the service from the component, you must use dependency injection to add the service. This is done by adding the following code after the `@page` directive:
 
 ```razor
-@using Blazor.Data
+@using BlazingPizza.Data
 @inject PizzaService PizzaSvc
 ```
 
@@ -111,13 +111,13 @@ protected override async Task OnInitializedAsync()
 }
 ```
 
-## Display data to the user
+## Displaying data to the user
 
-Now that you have some data from the service, display it to the user. In the pizzas example, we expect the service to return a list of pizzas that the users can choose from. Blazor includes a rich set of directives that you can use to insert this data into the page that the user sees.
+After getting some data from the service, you will want to display it to the user. In the pizzas example, we expect the service to return a list of pizzas that the users can choose from. Blazor includes a rich set of directives that you can use to insert this data into the page that the user sees.
 
-### Check for data
+### Checking for data
 
-First, let's determine what the page displays before the pizzas are loaded. We can do this by checking whether the `todaysPizzas` collection is `null`. To run conditional rendering code in a Blazor component, use the `@if` directive:
+First, determine what the page displays before the pizzas are loaded. We can do this by checking whether the `todaysPizzas` collection is `null`. To run conditional rendering code in a Blazor component, use the `@if` directive:
 
 ```razor
 @if (todaysPizzas == null)
@@ -135,9 +135,9 @@ The `@if` directive renders the markup in its first code block only if the C# ex
 > [!NOTE]
 > Blazor also includes the `@switch` directive for rendering markup based on a test that might return multiple values. The `@switch` directive works in a similar way to the C# `switch` statement.
 
-### Render a collection of objects
+### Rendering a collection of objects
 
-If Blazor executes the `else` statement in the preceding code, you know that some pizzas were obtained from the service. Your next task is to display these pizzas to the user. Let's construct a simple HTML table to display them.
+If Blazor executes the `else` statement in the preceding code, you know that some pizzas were obtained from the service. The next task is to display these pizzas to the user. Let's look at how to display these in a simple HTML table.
 
 We don't know how many pizzas will be available when we code this page. We can use the `@foreach` directive to loop through all the objects in the `todaysPizzas` collection and render a row for each one:
 
@@ -173,3 +173,5 @@ Of course, you probably want a richer display of pizzas than the plain table sho
 
 > [!NOTE]
 > Blazor includes other looping directives, such as `@for`, `@while`, and `@do while`. These directives return repeated blocks of markup. They work in a similar way to the equivalent C# `for`, `while`, and `do...while` loops.
+
+In the next unit, you'll register your own data service!

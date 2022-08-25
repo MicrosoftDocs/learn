@@ -4,9 +4,19 @@ In this exercise, you migrate the data in your database by using Azure Database 
 
 1. Open the [Azure portal](https://portal.azure.com?azure-portal=true), and under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the *Search services and marketplace* search box, enter *Azure Database Migration Service*, and press <kbd>Enter</kbd>. The **Azure Database Migration Service** pane appears.
+1. In the *Search services and marketplace* search box, enter *Azure Database Migration Service*, and press <kbd>Enter</kbd>. The **Select migration scenario and Database Migration Service** pane appears.
 
-1. Select **Create**. The **Create Migration Service** pane appears.
+1. Select the following values:
+
+    | Setting | Value |
+    | ------- | ----- |
+    | **Migration scenario** |
+    | Source server type | SQL Server |
+    | Target server type | Azure SQL Database |
+    | **Database Migration Service** |
+    | Database Migration Service | Database Migration Service |
+
+1. Select **Select**. The **Create Migration Service** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

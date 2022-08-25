@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.msgraph-extensions.exercise-directory-extensions
+title: Exercise - Add custom data by using directory extensions
+metadata:
+  unitType: exercise
+  title: Exercise - Add custom data by using directory extensions
+  description: "Add custom data to users by using Microsoft Graph directory extensions."
+  ms.date: 04/08/2022
+  author: FaithOmbongi
+  ms.author: ombongifaith
+  ms.topic: interactive-tutorial
+  ms.prod: learning-graph
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-exercise-directory-extensions.md)]

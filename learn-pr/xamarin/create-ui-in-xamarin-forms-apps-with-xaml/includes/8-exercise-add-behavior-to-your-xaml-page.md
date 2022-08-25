@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you'll move the phone word logic from the original MainPage source file. You will continue working from the preceding exercise, in which you renamed the **MainPage** source file **OldMainPage**.
 
 This exercise is a continuation of the previous one. Use your existing solution, or begin from the **exercise1** > **final** solution in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].

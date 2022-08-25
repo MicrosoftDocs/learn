@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The terms *drawer navigation* and *master-detail navigation* are often used interchangeably. They're related, but are different things that have specific uses. Let's see when to use each one and decide which style is appropriate for our application.
 
 ## What is drawer navigation?

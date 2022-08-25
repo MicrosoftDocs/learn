@@ -1,0 +1,63 @@
+### YamlMime:Module
+uid: learn.wwl.create-run-scripts-use-windows-powershell
+metadata:
+  title: Create and run scripts by using Windows PowerShell
+  description: "This module explains how to create and run scripts."
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and run scripts by using Windows PowerShell
+summary: This module explains how to create and run scripts.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Describe Windows PowerShell scripts.
+  - Explain how to find scripts and modify them.
+  - Describe how to create scripts.
+  - Describe the PowerShellGet module.
+  - Explain how to run Windows PowerShell scripts.
+  - Describe the script execution policy.
+  - Set the script execution policy.
+  - Explain how to use AppLocker to help secure Windows PowerShell scripts.
+  - Explain how to digitally sign scripts.
+  - Digitally sign a Windows PowerShell script.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.create-run-scripts-use-windows-powershell.introduction
+- learn.wwl.create-run-scripts-use-windows-powershell.review-scripts
+- learn.wwl.create-run-scripts-use-windows-powershell.modify-scripts-powershell-gallery
+- learn.wwl.create-run-scripts-use-windows-powershell.create-scripts
+- learn.wwl.create-run-scripts-use-windows-powershell.review-powershellget-module
+- learn.wwl.create-run-scripts-use-windows-powershell.run-scripts-set-execution-policy
+- learn.wwl.create-run-scripts-use-windows-powershell.review-applocker
+- learn.wwl.create-run-scripts-use-windows-powershell.sign-scripts-digitally
+- learn.wwl.create-run-scripts-use-windows-powershell.knowledge-check
+- learn.wwl.create-run-scripts-use-windows-powershell.summary
+badge:
+  uid: learn.wwl.create-run-scripts-by-using-windows-powershell.badge

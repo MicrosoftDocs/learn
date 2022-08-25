@@ -3,27 +3,29 @@ uid: learn.wwl.introduction-to-azure-synapse-analytics
 metadata:
   title: Introduction to Azure Synapse Analytics
   description: "Introduction to Azure Synapse Analytics"
-  ms.date: 01/05/2022
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Synapse Analytics
-summary: Learn the features and components that Azure Synapse Analytics provides to provide a one stop shop for all your analytical needs.
+summary: Learn about the features and capabilities of Azure Synapse Analytics - a cloud-based platform for big data processing and analysis.
 abstract: |
-  In this module, you will learn:
-  - What is Azure Synapse Analytics
-  - How Azure Synapse Analytics works
-  - When to use Azure Synapse Analytics
+  In this module, you'll learn how to:
+  - Identify the business problems that Azure Synapse Analytics addresses.
+  - Describe core capabilities of Azure Synapse Analytics.
+  - Determine when to use Azure Synapse Analytics.
 prerequisites: |
-  - Before taking this module, it is recommended that you complete Data Fundamentals.
+  Before completing this module, you should have the following prerequisite knowledge and experience:
+  - Familiarity with cloud computing concepts and Microsoft Azure.
+  - Familiarity with fundamental data concepts.
 iconUrl: /learn/achievements/introduction-to-azure-synapse-analytics.svg
 levels:
 - beginner
 roles:
+- data-analyst
 - data-engineer
 products:
-- azure
 - azure-synapse-analytics
 subjects:
 - cloud-computing
@@ -33,6 +35,7 @@ units:
 - learn.wwl.introduction-to-azure-synapse-analytics.what-is
 - learn.wwl.introduction-to-azure-synapse-analytics.how-works
 - learn.wwl.introduction-to-azure-synapse-analytics.when-to-use
+- learn.wwl.introduction-to-azure-synapse-analytics.exercise-explore-synapse-analytics
 - learn.wwl.introduction-to-azure-synapse-analytics.knowledge-check
 - learn.wwl.introduction-to-azure-synapse-analytics.summary
 badge:

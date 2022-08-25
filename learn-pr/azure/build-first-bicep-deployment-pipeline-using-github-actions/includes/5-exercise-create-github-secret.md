@@ -2,10 +2,10 @@ Before you can deploy your toy company's website by using a workflow, you need t
 
 > [!div class="checklist"]
 > * Create a resource group for your website.
-> * Create an Azure AD service principal and grant it access to the resource group.
-> * Create an GitHub secret and configure it to use the service principal's credentials.
+> * Create an Azure AD workload identity and grant it access to the resource group.
+> * Create GitHub secrets to prepare your workflow to use the workload identity.
 
-This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+This exercise requires that you have permissions to create applications in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
 [!include[](../../includes/cleanup-steps.md)]
 
@@ -13,7 +13,7 @@ This exercise requires that you have permissions to create applications and serv
 
 ::: zone pivot="cli"
 
-To work with service principals in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+To work with workload identities in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
 
 [!include[](../../includes/azure-exercise-terminal-cli.md)]
 
@@ -47,126 +47,139 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone-end
 
-## Create a resource group in Azure
+## Create a workload identity
+
+> [!TIP]
+> In this module, you'll create a workload identity for your workflow to use. The module [Authenticate your Azure deployment workflow by using workload identities](xref:learn.azure.authenticate-azure-deployment-workflow-workload-identities) provides a more detailed explanation of workload identities including how they work, as well as how you create them, assign them roles, and manage them.
 
 ::: zone pivot="cli"
 
-1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
-   ```azurecli
-   az group create --name ToyWebsite --location westus
+   ```bash
+   githubOrganizationName='mygithubuser'
+   githubRepositoryName='toy-website-workflow'
    ```
 
-1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
+1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
 
-   Copy the resource group ID somewhere safe. You'll use it soon.
+   ```bash
+   applicationRegistrationDetails=$(az ad app create --display-name 'toy-website-workflow')
+   applicationRegistrationObjectId=$(echo $applicationRegistrationDetails | jq -r '.id')
+   applicationRegistrationAppId=$(echo $applicationRegistrationDetails | jq -r '.appId')
+
+   az ad app federated-credential create \
+      --id $applicationRegistrationObjectId \
+      --parameters "{\"name\":\"toy-website-workflow\",\"issuer\":\"https://token.actions.githubusercontent.com\",\"subject\":\"repo:${githubOrganizationName}/${githubRepositoryName}:ref:refs/heads/main\",\"audiences\":[\"api://AzureADTokenExchange\"]}"
+   ```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
+1. Run the code below to define variables for your GitHub username and your repository name. Ensure that you replace `mygithubuser` with your GitHub username, which you noted in the previous exercise unit.
 
    ```azurepowershell
-   New-AzResourceGroup -Name ToyWebsite -Location westus
+   $githubOrganizationName = 'mygithubuser'
+   $githubRepositoryName = 'toy-website-workflow'
    ```
 
-1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
+1. Run the code below, which creates a workload identity and associates it with your GitHub repository:
 
-   Copy the resource group ID somewhere safe. You'll use it soon.
+   ```azurepowershell
+   $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-workflow'
+
+   New-AzADAppFederatedIdentityCredential `
+      -Name 'toy-website-workflow' `
+      -ApplicationObjectId $applicationRegistration.Id `
+      -Issuer 'https://token.actions.githubusercontent.com' `
+      -Audience 'api://AzureADTokenExchange' `
+      -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):ref:refs/heads/main"
+   ```
 
 ::: zone-end
 
-## Create a service principal and grant it access to the resource group
+## Create a resource group in Azure and grant the workload identity access
 
 ::: zone pivot="cli"
 
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
+To create a new resource group and grant your workload identity access to it, run this Azure CLI command in the Visual Studio Code terminal:
 
-   ```azurecli
-   az ad sp create-for-rbac \
-     --name ToyWebsiteWorkflow \
-     --role Contributor \
-     --scopes RESOURCE_GROUP_ID \
-     --sdk-auth
-   ```
+```bash
+resourceGroupResourceId=$(az group create --name ToyWebsite --location westus3 --query id --output tsv)
 
-   [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
-
-1. Select the JSON output from the previous command. It looks like this:
-
-   ```json
-   {
-     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
-     "clientSecret": "<secret value>",
-     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
-     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304",
-     "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
-     "resourceManagerEndpointUrl": "https://management.azure.com/",
-     "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-     "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
-     "galleryEndpointUrl": "https://gallery.azure.com/",
-     "managementEndpointUrl": "https://management.core.windows.net/"
-   }
-   ```
-
-   Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
+az ad sp create --id $applicationRegistrationObjectId
+az role assignment create \
+   --assignee $applicationRegistrationAppId \
+   --role Contributor \
+   --scope $resourceGroupResourceId
+```
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
+To create a resource group and grant your workload identity access to it, run this Azure PowerShell command in the Visual Studio Code terminal:
 
-   ```azurepowershell
-   $resourceGroupId = 'RESOURCE_GROUP_ID'
+```azurepowershell
+$resourceGroup = New-AzResourceGroup -Name ToyWebsite -Location westus3
 
-   $azureContext = Get-AzContext
-   $servicePrincipal = New-AzADServicePrincipal `
-   -DisplayName ToyWebsiteWorkflow `
-   -Role Contributor `
-   -Scope $resourceGroupId
-
-   $output = @{
-      clientId = $($servicePrincipal.ApplicationId)
-      clientSecret = $([System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password)
-      subscriptionId = $($azureContext.Subscription.Id)
-      tenantId = $($azureContext.Tenant.Id)
-   }
-   $output | ConvertTo-Json
-   ```
-
-1. Select the JSON output from the previous command. It looks like this:
-
-   ```json
-   {
-     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
-     "clientSecret": "<secret value>",
-     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
-     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304"
-   }
-   ```
-
-   Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
+New-AzADServicePrincipal -AppId $applicationRegistration.AppId
+New-AzRoleAssignment `
+   -ApplicationId $($applicationRegistration.AppId) `
+   -RoleDefinitionName Contributor `
+   -Scope $resourceGroup.ResourceId
+```
 
 ::: zone-end
 
-## Create a GitHub secret
+## Prepare GitHub secrets
 
-You've created a resource group and a service principal. Next, create a secret in GitHub Actions.
+Run the following code to show you the values you need to create as GitHub secrets:
+
+::: zone pivot="cli"
+
+```bash
+echo "AZURE_CLIENT_ID: $($applicationRegistration.AppId)"
+echo "AZURE_TENANT_ID: $(az account show --query tenantId --output tsv)"
+echo "AZURE_SUBSCRIPTION_ID: $(az account show --query id --output tsv)"
+```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+$azureContext = Get-AzContext
+Write-Host "AZURE_CLIENT_ID: $($applicationRegistration.ApplicationId)"
+Write-Host "AZURE_TENANT_ID: $($azureContext.Tenant.Id)"
+Write-Host "AZURE_SUBSCRIPTION_ID: $($azureContext.Subscription.Id)"
+```
+
+::: zone-end
+
+## Create GitHub secrets
+
+You've created a resource group and a workload identity. Next, create some secrets in GitHub Actions so that your workflow can sign in by using the workload identity.
 
 1. In your browser, navigate to your GitHub repository.
 
-1. Select **Settings** > **Secrets**.
+1. Select **Settings** > **Secrets** > **Actions**.
 
 1. Select **New repository secret**.
 
    :::image type="content" source="../../includes/media/github-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
-1. Name the secret *AZURE_CREDENTIALS*.
+1. Name the secret *AZURE_CLIENT_ID*.
 
-1. In the **Value** field, paste the JSON object that you copied in the previous section.
+1. In the **Value** field, paste the GUID from the first line of the terminal output. Don't include `AZURE_CLIENT_ID`, the colon, or any spaces in the value.
 
 1. Select **Add secret**. 
 
    :::image type="content" source="../../includes/media/github-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
+
+1. Repeat the process to create the secrets for *AZURE_TENANT_ID* and *AZURE_SUBSCRIPTION_ID*, copying the values from the corresponding fields in the terminal output.
+
+1. Verify that your list of secrets now shows all three secrets.
+
+   :::image type="content" source="../../includes/media/github-create-repository-secrets.png" alt-text="Screenshot of the GitHub interface showing the list of secrets." border="true":::

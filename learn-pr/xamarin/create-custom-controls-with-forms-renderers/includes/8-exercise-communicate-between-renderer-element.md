@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you'll send notifications between the renderer and the shared code without tightly coupling the element and the renderer.
 
 ## Open the solution

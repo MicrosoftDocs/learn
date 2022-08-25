@@ -1,10 +1,10 @@
 When using the *continuous backups* mode, backups are continuously taken in every region where the Azure Cosmos DB account exists. 
 
-The retention period for the backups is either 30 day or if the Azure Cosmos DB account was created before 30 days, up to the resource creation time. The restore can be done for any point in time timestamp within the retention period. If the Azure Cosmos DB Account is using the **strong consistency level**, the backups taken in the *write region* could be more up to date then the backups taken in the read regions.
+The retention period for the backups is either 30 day or if the Azure Cosmos DB account was created before 30 days, up to the resource creation time. The restore can be done for any point in time within the retention period. If the Azure Cosmos DB account is using the **strong consistency level**, the backups taken in the *write region* could be more up to date then the backups taken in the read regions.
 
 ## Backup storage redundancy
 
-By default, locally redundant storage accounts are used store the backups in each region. When Availability zones are enabled for a region, the backups are then stored in a Zone-Redundant storage account. This storage redundancy cannot be updated when using the continuous backup mode.
+By default, locally redundant storage accounts are used to store the backups in each region. When Availability zones are enabled for a region, the backups are then stored in a Zone-Redundant storage account. This storage redundancy cannot be updated when using the continuous backup mode.
 
 ### Change backup options for a new account
 

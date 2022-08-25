@@ -72,7 +72,7 @@ resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
 
 resource toyManualsStorageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   name: toyManualsStorageAccountName
-  location: resourceGroup().location
+  location: location
   kind: 'StorageV2'
   sku: environmentConfigurationMap[environmentType].toyManualsStorageAccount.sku
 }

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 The Xamarin.Forms element and the platform renderers share the responsibility of putting the native control on the screen and managing its behavior. Part of managing behavior is making sure data and notifications flow between the element and the native control.
 
 Earlier, we used a `BindableProperty` to allow data changes to flow from the element to the renderer and native control. But sometimes the `BindableProperty` pattern isn't appropriate because there might not be data to share or state to change. In these cases, we just want to notify other components.

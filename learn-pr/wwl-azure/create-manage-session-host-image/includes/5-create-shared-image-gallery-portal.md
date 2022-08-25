@@ -1,69 +1,99 @@
-An image gallery is the primary resource used for enabling image sharing. Allowed characters for Gallery name are uppercase or lowercase letters, digits, dots, and periods. The gallery name cannot contain dashes. Gallery names must be unique within your subscription.
+An Azure Compute Gallery simplifies sharing resources, like images and application packages, across your organization.
 
-The following example creates a gallery named *myGallery* in the *myGalleryRG* resource group.
+The Azure Compute Gallery lets you share custom VM images and application packages with others in your organization, within or across regions, within a tenant. Choose what you want to share, which regions you want to make them available in, and who you want to share them with. You can create multiple galleries so that you can logically group resources.
 
-1.  Sign in to the Azure portal.
-2.  Use the type **Shared image gallery** in the search box and select **Shared image gallery** in the results.
-3.  In the **Shared image gallery** page, click **Add**.
-4.  On the **Create shared image gallery** page, select the correct subscription.
+The gallery is a top-level resource that can be shared in multiple ways:
+
+| **Share with:**                                                                                                                                                                  | **Option**                                                                                                                       |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [Specific people, groups, or service principals](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-private-gallery) | Role-based access control (RBAC) lets you share resources to specific people, groups, or service principals on a granular level. |
+| [Subscriptions or tenants](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-direct-shared-gallery)                 | Direct shared gallery (preview) lets you share to everyone in a subscription or tenant.                                          |
+| [Everyone](/azure/virtual-machines/create-gallery?tabs=portal%2Cportaldirect%2Cportal2#create-a-community-gallery)                                     | Community gallery (preview) lets you share your entire gallery publicly, to all Azure users.                                     |
+
+## Naming
+
+Allowed characters for gallery name are uppercase or lowercase letters, digits, dots, and periods. The gallery name can't contain dashes. Gallery names must be unique within your subscription.
+
+## Create a private gallery
+
+1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
+2.  Type **Azure Compute Gallery** in the search box and select **Azure Compute Gallery** in the results.
+3.  In the **Azure Compute Gallery** page, click **Add**.
+4.  On the **Create Azure Compute Gallery** page, select the correct subscription.
+5.  In **Resource group**, select a resource group from the drop-down or select **Create new** and type a name for the new resource group.
+6.  In **Name**, type a name for the name of the gallery.
+7.  Select a **Region** from the drop-down.
+8.  You can type a short description of the gallery, like *My gallery for testing.* and then click **Review + create**.
+9.  After validation passes, select **Create**.
+10. When the deployment is finished, select **Go to resource**.
+
+## Create a direct shared gallery
+
+> [!IMPORTANT]
+> Azure Compute Gallery – direct shared gallery is currently in PREVIEW and subject to the [Preview Terms for Azure Compute Gallery](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
+During the preview, you need to create a new gallery, with the property sharingProfile.permissions set to Groups. When using the CLI to create a gallery, use the --permissions groups parameter. You can't use an existing gallery, the property can't currently be updated.
+
+1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
+2.  Type **Azure Compute Gallery** in the search box and select **Azure Compute Gallery** in the results.
+3.  In the **Azure Compute Gallery** page, click **Add**.
+4.  On the **Create Azure Compute Gallery** page, select the correct subscription.
+5.  Complete all of the details on the page.
+6.  At the bottom of the page, select **Next: Sharing method**.
+    
+    :::image type="content" source="../media/create-gallery-1-b9d25a0a.png" alt-text="Screenshot showing the subscriptions for Azure Compute Gallery.":::
+    
+7.  On the **Sharing** tab, select **RBAC + share directly**.
+    
+    :::image type="content" source="../media/share-direct-2-0187f579.png" alt-text="Screenshot showing the roles for Compute Gallery.":::
+    
+8.  When you're done, select **Review + create**.
+9.  After validation passes, select **Create**.
+10. When the deployment is finished, select **Go to resource**.
+
+## Create a community gallery
+
+A [community gallery](/azure/virtual-machines/azure-compute-gallery#community) is shared publicly with everyone. To create a community gallery, you create the gallery first, then enable it for sharing. The name of public instance of your gallery will be the prefix you provide, plus a unique GUID.
+
+During the preview, make sure that you create your gallery, image definitions, and image versions in the same region in order to share your gallery publicly.
+
+> [!IMPORTANT]
+> Azure Compute Gallery – community galleries is currently in PREVIEW and subject to the [Preview Terms for Azure Compute Gallery - community gallery](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
+When creating an image to share with the community, you'll need to provide contact information. This information will be shown **publicly**, so be careful when providing:
+
+ -  Community gallery prefix
+ -  Publisher support email
+ -  Publisher URL
+ -  Legal agreement URL
+
+Information from your image definitions will also be publicly available, like what you provide for **Publisher**, **Offer**, and **SKU**.
+
+### Considerations
+
+The owner of a subscription, or a user or service principal assigned to the Compute Gallery Sharing Admin role at the subscription or gallery level, can enable a gallery to go public to the community.
+
+Making a community gallery available to all Azure users is a two-step process. First you create the gallery with community sharing enabled, when you're ready to make it public, you share the gallery.
+
+1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
+2.  Type **Azure Compute Gallery** in the search box and select **Azure Compute Gallery** in the results.
+3.  In the **Azure Compute Gallery** page, click **Add**.
+4.  On the **Create Azure Compute Gallery** page, select the correct subscription.
 5.  In **Resource group**, select **Create new** and type *myGalleryRG* for the name.
 6.  In **Name**, type *myGallery* for the name of the gallery.
 7.  Leave the default for **Region**.
-8.  You can type a short description of the gallery, like *My image gallery for testing.* and then click **Review + create**.
-9.  After validation passes, select **Create**.
-10. When the deployment is finished, select **Go to resource**.:::image type="content" source="../media/image-gallery-3665d981.png" alt-text="Screenshot of image gallery definition.":::
+8.  You can type a short description of the gallery, like *My gallery for testing*.
+9.  At the bottom of the page, select **Next: Sharing method**.
     
-
-## Create an image definition
-
-Image definitions create a logical grouping for images. They are used to manage information about the image versions that are created within them. Image definition names can be made up of uppercase or lowercase letters, digits, dots, dashes and periods.
-
-Create the gallery image definition inside of your gallery. In this example, the gallery image is named *myImageDefinition*.
-
-1.  On the page for your new image gallery, select **Add a new image definition** from the top of the page.
-2.  In the **Add new image definition to shared image gallery**, for **Region**, select *East US*.
-3.  For **Image definition name**, type *myImageDefinition*.
-4.  For **Operating system**, select the correct option based on your source VM.
-5.  For **VM generation**, select the option based on your source VM. In most cases, this will be *Gen 1*.
-6.  For **Operating system state**, select the option based on your source VM.
-7.  For **Publisher**, type *myPublisher*.
-8.  For **Offer**, type *myOffer*.
-9.  For **SKU**, type *mySKU*.
-10. When finished, select **Review + create**.
-11. After the image definition passes validation, select **Create**.
-12. When the deployment is finished, select **Go to resource**.:::image type="content" source="../media/image-gallery-definition-5a73ced9.png" alt-text="Screenshot of gallery image definition.":::
+    :::image type="content" source="../media/create-gallery-3-0d8b6d95.png" alt-text="Screenshot showing the regions for the Gallery.":::
     
+10. On the **Sharing** tab, select **RBAC + share to public community gallery**.
+11. For **Community gallery prefix** type a prefix that will be appended to a GUID to create the unique name for your community gallery.
+12. For **Publisher email** type a valid e-mail address that can be used to communicate with you about the gallery.
+13. For **Publisher URL**, type the URL for where users can get more information about the images in your community gallery.
+14. For **Legal Agreement URL**, type the URL where end users can find legal terms for the image.
+15. When you're done, select **Review + create**.
+16. After validation passes, select **Create**.
+17. When the deployment is finished, select **Go to resource**.
 
-## Create an image version
-
-Create an image version from a managed image.
-
-When choosing target regions for replication, remember that you also have to include the *source* region as a target for replication.
-
-Allowed characters for image version are numbers and periods. Numbers must be within the range of a 32-bit integer. Format: *MajorVersion*.*MinorVersion*.*Patch*.
-
-1.  In the page for your image definition, select **Add version** from the top of the page.
-2.  In **Region**, select the region where your managed image is stored. Image versions should be created in the same region as the managed image they are created from.
-3.  For **Name**, type *1.0.0*. The image version name should follow *major*.*minor*.*patch* format using integers.
-4.  In **Source image**, select your source-managed image from the drop-down.
-5.  In **Exclude from latest**, leave the default value of *No*.
-6.  For **End of life date**, select a date from the calendar that is a couple of months in the future.
-7.  In **Replication**, leave the **Default replica count** as 1. To replicate to the source region, leave the first replica as the default and then pick a second replica region to be *East US*.
-8.  Select **Review + create**. Azure will validate the configuration.
-9.  When image version passes validation, select **Create**.
-10. When the deployment is finished, select **Go to resource**.
-
-It can take a while to replicate the image to all of the target regions.
-
-## Share the gallery
-
-We recommend that you share access at the image gallery level. The procedure below walks you through sharing the gallery that you created.
-
-1.  On the page for your new image gallery, in the menu on the left, select **Access control (IAM)**.
-2.  Under **Add a role assignment**, select **Add**. The **Add a role assignment** pane will open.
-3.  Under **Role**, select **Reader**.
-4.  Under **assign access to**, leave the default of **Azure AD user, group, or service principal**.
-5.  Under **Select**, type in the email address of the person that you would like to invite.
-6.  If the user is outside of your organization, you will see the message. This **user will be sent an email that enables them to collaborate with Microsoft.** Select the user with the email address and then select **Save**.
-
-If the user is outside of your organization, they will receive an email invitation to join the organization. The user needs to accept the invitation to be able to see the gallery and all of the image definitions and versions in their list of resources.
+To see the public name of your gallery, select **Sharing** in the left menu.

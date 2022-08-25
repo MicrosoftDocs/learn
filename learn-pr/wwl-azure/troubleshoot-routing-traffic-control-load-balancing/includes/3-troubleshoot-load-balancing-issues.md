@@ -120,7 +120,7 @@ For more information, see [Troubleshoot back-end health issues in Application Ga
 
 There are several troubleshooting steps to consider when you use Azure Load Balancer:
 
-- Started internal load balancers are secured by default, but basic internal load balancers allow connections to the internet through hidden IP addresses. This is not recommended for production workloads—Network Gateway is the recommended solution for outbound traffic.
+- Standard internal load balancers are secured by default, but basic internal load balancers allow connections to the internet through hidden IP addresses. This is not recommended for production workloads—Network Gateway is the recommended solution for outbound traffic.
 
 - When you have a health probe, the back-end port can’t be modified for load balancing. To resolve this issue, remove the health probe, reconfigure the port, and then add the health probe again.
 

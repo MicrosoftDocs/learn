@@ -4,8 +4,8 @@ metadata:
   title: Create a UI in Xamarin.Forms apps by using XAML
   description: In this module, learn how to define a UI by using Xamarin.Forms and Extensible Application Markup Language.
   ms.date: 05/01/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Create a UI in Xamarin.Forms apps by using XAML
@@ -27,8 +27,6 @@ products:
 - xamarin
 - dotnet
 - vs
-subjects:
-- development-tools
 units:
 - learn-xamarin.create-ui-in-xamarin-forms-apps-with-xaml.1-introduction
 - learn-xamarin.create-ui-in-xamarin-forms-apps-with-xaml.2-benefits-using-xaml

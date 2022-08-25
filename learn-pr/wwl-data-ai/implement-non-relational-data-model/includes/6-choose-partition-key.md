@@ -2,7 +2,7 @@ Remember that data in JSON documents is stored in Azure Cosmos DB databases with
 
 :::image type="content" source="../media/6-physical-partitions.png" alt-text="Diagram that illustrates the physical partitions in Azure Cosmos DB.":::
 
-The partition key is a required document property that ensures documents with the same partition key value are routed to and stored within a specific physical partition. A physical partition supports a fixed maximum amount of storage and throughput (RU/s). When the capacity of a logical partition, which we will introduce in the next section, gets close to the maximum storage, Azure Cosmos DB adds another physical partition to the container. Azure Cosmos DB automatically distributes the logical partitions across the available physical partitions, again using the partition key value to so in a predictable way.
+The partition key is a required document property that ensures documents with the same partition key value are routed to and stored within a specific physical partition. A physical partition supports a fixed maximum amount of storage and throughput (RU/s). When the capacity of a logical partition, which we will introduce in the next section, gets close to the maximum storage, Azure Cosmos DB adds another physical partition to the container. Azure Cosmos DB automatically distributes the logical partitions across the available physical partitions, again using the partition key value to do so in a predictable way.
 
 In this unit, you'll learn more about logical partitions and how to avoid hot partitions. This information will help us choose the appropriate partition key for the customer data in our scenario.
 
@@ -10,8 +10,8 @@ In Azure Cosmos DB, you increase storage and throughput by adding more physical 
 
 ## Logical partitions in Azure Cosmos DB
 
-“The partition key ensures documents with the same partition key value are considered to belong to the same logical partition and are routed to and stored within a specific physical partition.
-The concept of a logical partition allows for the grouping together of documents with same partition key value. Multiple logical partitions can be stored within a single physical partition and the container can have an unlimited number of logical partitions. Individual logical partitions are moved to new physical partitions as a unit as the container grows. Moving logical partitions as a unit ensures that all documents within it reside on the same physical partition. The maximum size for a logical partition is 20 GB. Using a partition key with high cardinality to allows you to avoid this 20-GB limit by spreading your data across a larger number of logical partitions.
+The partition key ensures documents with the same partition key value are considered to belong to the same logical partition and are routed to and stored within a specific physical partition.
+The concept of a logical partition allows for the grouping together of documents with the same partition key value. Multiple logical partitions can be stored within a single physical partition and the container can have an unlimited number of logical partitions. Individual logical partitions are moved to new physical partitions as a unit as the container grows. Moving logical partitions as a unit ensures that all documents within it reside on the same physical partition. The maximum size for a logical partition is 20 GB. Using a partition key with high cardinality allows you to avoid this 20-GB limit by spreading your data across a larger number of logical partitions.
 
 :::image type="content" source="../media/6-relationship-between-physical-and-logical-partitions.png" alt-text="Diagram that shows the relationship between the physical and logical partitions.":::
 
@@ -61,17 +61,17 @@ The following illustration shows a container that's partitioned by username. Thi
 
 :::image type="content" source="../media/6-in-partition-query.png" alt-text="Diagram that shows a partition query for username.":::
 
-A query that filters on a different property, such as `favoriteColor`, would "fan out" to all partitions in the container. This is also known as a *cross-partition query*. Such a query will perform as expected when the container is small and occupies only a single partition. However, as the container grows and there are increasing number of physical partitions, this query will become slower and more expensive because it will need to check every partition to get the results whether the physical partition containers data related to the query or not.
+A query that filters on a different property, such as `favoriteColor`, would "fan out" to all partitions in the container. This is also known as a *cross-partition query*. Such a query will perform as expected when the container is small and occupies only a single partition. However, as the container grows and there are increasing number of physical partitions, this query will become slower and more expensive because it will need to check every partition to get the results whether the physical partition contains data related to the query or not.
 
 :::image type="content" source="../media/6-cross-partition-query.png" alt-text="Diagram that shows a cross-partition query for favorite color.":::
 
 ## Choose a partition key for customers
 
-Now that you understand partitioning in Azure Cosmos DB, we can decide on a partition key for our customer data. As we covered earlier, we perform three operations on customers: create a customer, update a customer, and retrieve a customer. In this case, we'll retrieve the customer by their *id*. Because that operation will be called the most, it makes sense to make the customer's id the partition key for the container.
+Now that you understand partitioning in Azure Cosmos DB, we can decide on a partition key for our customer data. As we covered earlier, we perform three operations on customers: create a customer, update a customer, and retrieve a customer. In this case, we'll retrieve the customer by their *id*. Because that operation will be called the most, it makes sense to make the customer's ID the partition key for the container.
 
-:::image type="content" source="../media/6-customer-partition-key.png" alt-text="Diagram that shows the customer partition key as id.":::
+:::image type="content" source="../media/6-customer-partition-key.png" alt-text="Diagram that shows the customer partition key as ID.":::
 
-You might worry here that making the id the partition key means that we'll have as many logical partitions as there are customers, with each logical partition containing only a single document. Millions of customers would result in millions of logical partitions.
+You might worry here that making the ID the partition key means that we'll have as many logical partitions as there are customers, with each logical partition containing only a single document. Millions of customers would result in millions of logical partitions.
 
-But this is perfectly fine! Logical partitions are a virtual concept, and there's no limit to how many logical partitions you can have. Azure Cosmos DB will collocate multiple logical partitions on the same physical partition. As logical partitions in number or in size, Cosmos DB will move them to new physical partitions when needed.
+But this is perfectly fine! Logical partitions are a virtual concept, and there's no limit to how many logical partitions you can have. Azure Cosmos DB will collocate multiple logical partitions on the same physical partition. As logical partitions grow in number or in size, Cosmos DB will move them to new physical partitions when needed.
 

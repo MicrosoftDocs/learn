@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-delta-lake-azure-synapse-analytics.catalog-tables
+title: Create catalog tables
+metadata:
+  title: Create catalog tables
+  description: "Create catalog tables"
+  ms.date: 08/25/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-catalog-tables.md)]

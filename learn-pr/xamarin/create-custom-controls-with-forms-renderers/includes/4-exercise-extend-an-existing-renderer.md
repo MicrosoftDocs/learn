@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this exercise, you'll extend the provided label renderers to create a "shadowed label."
 
 ## Open the starter solution

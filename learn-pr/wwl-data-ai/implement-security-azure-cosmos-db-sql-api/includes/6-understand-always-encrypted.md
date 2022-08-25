@@ -1,6 +1,6 @@
 Always encrypted encrypts sensitive data like credit card numbers or payroll information inside client-side applications. The database receives the data already encrypted from the client side, and doesn't contain the decryption keys. This means that the database has no way to decrypt this data.  When the client requires the data, the database will send the encrypted data back and since the client has the decryption keys, the client will decrypt the data.
 
-Always Encrypted brings client-side encryption capabilities to Azure Cosmos DB. Since the data is encrypted on the client side, the Azure Cosmos DB service is never provided with the decryption keys or the unencrypted data. You own, control, and manage the decryption keys. These keys are stored in Azure Key Vault, you can apply policies to control what keys and secrets each client can access. 
+Always Encrypted brings client-side encryption capabilities to Azure Cosmos DB. Since the data is encrypted on the client side, the Azure Cosmos DB service is never provided with the decryption keys or the unencrypted data. You own, control, and manage the decryption keys. these keys are stored in Azure Key Vault, where you can apply policies to control what keys and secrets each client can access. 
 
 ## Always encrypted concepts
 
@@ -110,7 +110,7 @@ await database.RewrapClientEncryptionKeyAsync(
 
 ### Create a container with encryption policy
 
-Now that we've configured both the CMK and DEK, its time to create a new container using the .NET SDK. The following snippets show how we create the container `my-container` using the DEK `my-key` created in the previous example.  This container will have two-encryption policy on properties, `property1` and, `property2` and a partition key `partition-key`. Both properties will use the `my-key` DEK, but one will use encryption type *deterministic*, while the other will use *randomized*.
+Now that we've configured both the CMK and DEK, it's time to create a new container using the .NET SDK. The following snippets show how we create the container `my-container` using the DEK `my-key` created in the previous example.  This container will have two-encryption policy on properties, `property1` and, `property2` and a partition key `partition-key`. Both properties will use the `my-key` DEK, but one will use encryption type *deterministic*, while the other will use *randomized*.
 
 ```C#
 var path1 = new ClientEncryptionIncludedPath

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Sometimes you need to require the user to complete an action before navigating away from a page. For example, suppose the user is entering information into a form. You might want them to _save_ or _cancel_ before they leave the page.
 
 A _modal_ page is a page with restricted navigation options: the user must indicate they're finished before moving to a different page. Modal pages are a good option when you need a response from the user.

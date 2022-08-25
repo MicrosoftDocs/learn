@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-index-analyzers-tokenized-terms
+title: Improve an index with analyzers and tokenized terms
+metadata:
+  title: Improve an index with analyzers and tokenized terms
+  description: "Improve an index with analyzers and tokenized terms"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/04-improve-index-analyzers-tokenized-terms.md)]

@@ -12,10 +12,10 @@ Each virtual network is typically divided into separate subnets hosting applicat
 
 This architecture uses virtual machines running Linux for the application tier and database tier, grouped as follows:
 
- -  Application tier. Includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster. For high availability of Central Services on Azure Linux virtual machines, a highly available Network File System (NFS) service is required.<br>
- -  NFS cluster. This architecture uses an NFS server running on a Linux cluster to store data shared between SAP systems. This centralized cluster can be shared across multiple SAP systems. For high availability of the NFS service, the appropriate High Availability Extension for the selected Linux distribution is used.<br>
- -  SAP HANA. The database tier uses two or more Linux virtual machines in a cluster to achieve high availability. HANA System Replication (HSR) is used to replicate contents between primary and secondary HANA systems. Linux clustering is used to detect system failures and facilitate automatic failover. A storage-based or cloud-based fencing mechanism can be used to ensure the failed system is isolated or shut down to avoid the cluster split-brain condition.<br>
- -  Jumpbox. Also called a *bastion host*. This Azure VM runs hardened operating system instance that administrators use to connect to the other virtual machines. It can run Windows or Linux. Use a Windows jumpbox to run tools such as HANA Cockpit or HANA Studio.<br>
+- Application tier. Includes the Fiori Front-end Server pool, SAP Web Dispatcher pool, application server pool, and SAP Central Services cluster. For high availability of Central Services on Azure Linux virtual machines, a highly available Network File System (NFS) service is required.
+- NFS cluster. This architecture uses an NFS server running on a Linux cluster to store data shared between SAP systems. This centralized cluster can be shared across multiple SAP systems. For high availability of the NFS service, the appropriate High Availability Extension for the selected Linux distribution is used.
+- SAP HANA. The database tier uses two or more Linux virtual machines in a cluster to achieve high availability. HANA System Replication (HSR) is used to replicate contents between primary and secondary HANA systems. Linux clustering is used to detect system failures and facilitate automatic failover. A storage-based or cloud-based fencing mechanism can be used to ensure the failed system is isolated or shut down to avoid the cluster split-brain condition.
+- Jumpbox. Also called a *bastion host*. This Azure VM runs hardened operating system instance that administrators use to connect to the other virtual machines. It can run Windows or Linux. Use a Windows jumpbox to run tools such as HANA Cockpit or HANA Studio.
 
 ## Load balancers
 
@@ -47,11 +47,11 @@ The Web Dispatcher component is used as a load balancer for SAP traffic among th
 
 Both SAP Web Dispatcher and Azure Application Gateway solutions work as a reverse proxy, and therefore it would be tempting to use only the Application Gateway. The Web Dispatcher, however, contains unique features to understand the SAP landscape and therefore the Web Dispatcher load balancing has advantages over Application Gateway. The SAP Web Dispatcher decides whether the incoming request should be forwarded to an ABAP or Java Server and the SAP Web Dispatcher carries out the following tasks:
 
- -  Checks the session ID to pass subsequent requests for stateful sessions to the processing server (Session-Stickiness).
- -  Decides whether the request is an ABAP request (e.g. a BSP application) or a Java request (for example, a JSP or a servlet).<br>
- -  Load Balancing<br>
- -  HTTPS scheduling or end-to-end SSL<br>
- -  URL filtering<br>
+- Checks the session ID to pass subsequent requests for stateful sessions to the processing server (Session-Stickiness).
+- Decides whether the request is an ABAP request (e.g. a BSP application) or a Java request (for example, a JSP or a servlet).
+- Load Balancing
+- HTTPS scheduling or end-to-end SSL
+- URL filtering
 
 On the other hand, the Azure Application Gateway offers advanced threat detection and web application firewall, which significantly increase security of the entire landscape, especially if the system is exposed to the internet. Thus, combining both solutions is recommended.
 
@@ -60,7 +60,6 @@ On the other hand, the Azure Application Gateway offers advanced threat detectio
 The Fiori Front-end Server uses a NetWeaver Gateway (which facilitates exposing SAP application data as an OData service). For small deployments, the gateway can be loaded on the Fiori server. For large deployments, a separate server for the NetWeaver Gateway may be deployed in front of the Fiori Front-end Server pool.
 
 :::image type="content" source="../media/reference-architecture-fiori-c4084b0b.png" alt-text="Reference architecture for SAP Fiori":::
-
 
 ## SAP Central Services cluster
 

@@ -3,7 +3,7 @@ uid: learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundame
 metadata:
   title: 'Get tips and tricks for teaching SC-900: Microsoft Security, Compliance, and Identity Fundamentals'
   description: "Get tips and tricks for teaching SC-900: Microsoft Security, Compliance, and Identity Fundamentals"
-  ms.date: 04/13/2022
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Understand using the objective domains when preparing to teach.
   - Prepare for the exam by understanding the exam structure.
   - Prepare to teach the fundamentals courses leveraging best practices.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/6-sc-900-microsoft-security-compliance-and-identity-fundamentals.svg
 levels:
 - beginner
 roles:
@@ -30,8 +30,8 @@ roles:
 products:
 - azure-security-center
 subjects:
-- identity-access
 - compliance
+- identity-access
 units:
 - learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.introduction
 - learn.wwl.get-tips-tricks-teach-sc-900-security-compliance-identity-fundamentals.learn-module-best-practices

@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "$DATA"
       isCorrect: true
-      explanation: "The `$` can't be used in a variable name. Furthermore, you shouldn't use all upper case characters for a variable name."
+      explanation: "The `$` can't be used in a variable name. Furthermore, you shouldn't use all upper-case characters for a variable name."
     - content: "registrationComplete"
       isCorrect: false
       explanation: "`registrationComplete` is a valid variable name."
@@ -26,7 +26,7 @@ quiz:
       explanation: "`flag` is a valid variable name."
     - content: "yes"
       isCorrect: false
-      explanation: "Admittedly, `yes` isn't a great variable name however it's valid."
+      explanation: "Admittedly, `yes` isn't a great variable name; however, it's valid."
   - content: "What is the problem with this line of code: `var message;`"
     choices:
     - content: "`var` isn't a data type."

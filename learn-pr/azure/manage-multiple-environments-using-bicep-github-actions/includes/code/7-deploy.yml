@@ -13,10 +13,18 @@ on:
         required: true
         type: string
     secrets:
-      AZURE_CREDENTIALS:
+      AZURE_CLIENT_ID:
+        required: true
+      AZURE_TENANT_ID:
+        required: true
+      AZURE_SUBSCRIPTION_ID:
         required: true
       reviewApiKey:
         required: true
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   validate:
@@ -26,7 +34,9 @@ jobs:
      - uses: azure/login@v1
        name: Sign in to Azure
        with:
-         creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
      - if: inputs.environmentType != 'Production'
        uses: azure/arm-deploy@v1
        name: Run preflight validation
@@ -40,16 +50,17 @@ jobs:
            reviewApiKey=${{ secrets.reviewApiKey }}
          deploymentMode: Validate
      - if: inputs.environmentType == 'Production'
-       uses: Azure/cli@v1
+       uses: azure/arm-deploy@v1
        name: Run what-if
        with:
-         inlineScript: |
-             az deployment group what-if \
-               --resource-group ${{ inputs.resourceGroupName }} \
-               --template-file ./deploy/main.bicep \
-               --parameters environmentType=${{ inputs.environmentType }} \
-                            reviewApiUrl=${{ inputs.reviewApiUrl }} \
-                            reviewApiKey=${{ secrets.reviewApiKey }}
+         failOnStdErr: false
+         resourceGroupName: ${{ inputs.resourceGroupName }}
+         template: ./deploy/main.bicep
+         parameters: >
+           environmentType=${{ inputs.environmentType }}
+           reviewApiUrl=${{ inputs.reviewApiUrl }}
+           reviewApiKey=${{ secrets.reviewApiKey }}
+         additionalArguments: --what-if
  
   deploy:
     needs: validate
@@ -62,7 +73,9 @@ jobs:
     - uses: azure/login@v1
       name: Sign in to Azure
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       id: deploy
       name: Deploy Bicep file

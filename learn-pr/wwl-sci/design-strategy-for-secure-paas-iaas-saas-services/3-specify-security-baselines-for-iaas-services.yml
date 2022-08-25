@@ -4,13 +4,13 @@ title: Specify security baselines for IaaS services
 metadata:
   title: Specify security baselines for IaaS services
   description: "Specify security baselines for IaaS services"
-  ms.date: 06/08/2022
-  author: hrasheed-msft
+  ms.date: 07/06/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/3-specify-security-baselines-for-iaas-services.md)]

@@ -1,16 +1,16 @@
-Azure resources produce Azure Diagnostic Logs, which provide detailed operational data of those resources. Diagnostics settings are use to collect those resource logs.
+Azure resources produce Azure Diagnostic Logs, which provide detailed operational data of those resources. Diagnostic settings are use to collect those resource logs.
 
-While some logs like activity and platform metrics are collected automatically, diagnostic settings must be created to collect resource logs. These logs can be forwarded outside of Azure Monitor.  Enabling diagnostics settings in Azure Cosmos DB accounts can be forwarded to *Log Analytics workspaces*, *Event hubs*, and *Storage Accounts*.
+While some logs like activity and platform metrics are collected automatically, diagnostic settings must be created to collect resource logs. These logs can be forwarded outside of Azure Monitor.  Enabling diagnostic settings in Azure Cosmos DB accounts can be forwarded to *Log Analytics workspaces*, *Event hubs*, and *Storage Accounts*.
 
 Forwarding data to Log Analytics workspaces, writes the logs into tables that can be queried using the *Kusto Query Language* (*KQL*). So, to use the diagnostic data stored in these tables, knowledge on reading and writing `Kusto` queries is essential. These tables can be a generic legacy table called **Azure Diagnostics**, or the recommended **Resource-specific** tables.
 
-## Create Azure Cosmos DB diagnostics settings
+## Create Azure Cosmos DB diagnostic settings
 
-There are multiple ways to create the diagnostics settings, the Azure portal, via REST API, PowerShell or via Azure CLI.
+There are multiple ways to create the diagnostic settings, the Azure portal, via REST API, PowerShell or via Azure CLI.
 
-To create the diagnostics settings using the Azure portal, navigate to the Azure Cosmos DB account, and under the `Montoring` section, choose **Diagnostic settings**.  Either edit an existing diagnostic setting or choose **+ Add diagnostic setting** and choose the logs you wish to collect and the destinations to forward these logs to.
+To create the diagnostic settings using the Azure portal, navigate to the Azure Cosmos DB account, and under the `Monitoring` section, choose **Diagnostic settings**.  Either edit an existing diagnostic setting or choose **+ Add diagnostic setting** and choose the logs you wish to collect and the destinations to forward these logs to.
 
-:::image type="content" source="../media/5-monitor-diagnostics-settings.png" alt-text="Diagram that shows the diagnostics settings options for Azure Cosmos DB.":::
+:::image type="content" source="../media/5-monitor-diagnostics-settings.png" alt-text="Diagram that shows the diagnostic settings options for Azure Cosmos DB.":::
 
 The SQL API log tables are:
 - `DataPlaneRequests` - This table logs back-end requests for operations that execute create, update, delete, or retrieve data.
@@ -21,7 +21,7 @@ The SQL API log tables are:
 
 ## Troubleshoot issues with diagnostics queries
 
-When Azure Cosmos DB diagnostics data is sent to Log Analytics, it's sent to either the `AzureDiagnostics` table or to **Resource-specific** tables. The preferred mode is to send the data to Resource-specific tables, as such, each log chosen under the diagnostics settings options will have its own table. Choosing this mode makes it easier to work with the diagnostic data, easier to discover the schemas used, and improve performance in latency and query times. 
+When Azure Cosmos DB diagnostics data is sent to Log Analytics, it's sent to either the `AzureDiagnostics` table or to **Resource-specific** tables. The preferred mode is to send the data to Resource-specific tables, as such, each log chosen under the diagnostic settings options will have its own table. Choosing this mode makes it easier to work with the diagnostic data, easier to discover the schemas used, and improve performance in latency and query times. 
 
 ### AzureDiagnostics queries
 
@@ -37,7 +37,7 @@ AzureDiagnostics
 | order by TotalRequestCharged desc 
 ```
 
-* Create a query that returns a timechart graph for all successful (status 200) and rate limited (status 429) request in the last hour.  The requests will be aggregated every 10 minutes.
+* Create a query that returns a timechart graph for all successful (status 200) and rate limited (status 429) requests in the last hour.  The requests will be aggregated every 10 minutes.
 
 ```kusto
 AzureDiagnostics 

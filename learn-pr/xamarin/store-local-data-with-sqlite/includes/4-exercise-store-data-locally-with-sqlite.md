@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this unit, you're going to build a person repository application by using SQLite. You can use this application to insert new people into a database and retrieve them later, even after an application restart.
 
 ## Open the starter solution

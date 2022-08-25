@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.what-is-threat-hunting-azure-sentinel.explore-mitre-att-ck
+title: Explore MITRE ATT&CK
+metadata:
+  title: Explore MITRE ATT&CK
+  description: "Explore MITRE ATT&CK"
+  ms.date: 06/29/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3a-explore-mitre-att-ck.md)]

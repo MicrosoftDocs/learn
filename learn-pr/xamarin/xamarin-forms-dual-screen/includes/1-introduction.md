@@ -1,4 +1,4 @@
-[!include[](../../includes/dotnet-maui-note.md)]
+[!include[](../../includes/xamarin-not-maintained.md)]
 
 Mobile devices are becoming more varied in size and shape, such as the dual-screen Microsoft Surface Duo. Applications can take advantage of the additional space to build new features, but still need to work well on traditional devices.
 

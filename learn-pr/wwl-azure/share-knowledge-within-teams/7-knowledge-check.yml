@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/16/2022
+  ms.date: 06/23/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -39,14 +39,14 @@ quiz:
     - content: "App Stream."
       isCorrect: false
       explanation: "Incorrect. Work item integration functionality allows you to easily create work items in Azure DevOps that have relevant Application Insights data embedded in them."
-  - content: "Which of the following choices isn't an advantage of using the IT Service Management Connector (ITSMC)?"
+  - content: "Which of the following commands can you perform with the Azure Pipelines with Microsoft Teams integration?"
     choices:
-    - content: "Create entries in Application Insights and logs."
+    - content: "Subscribe."
       isCorrect: true
-      explanation: "Correct. Using the IT Service Management Connector (ITSMC) for Azure, you can create or update work-items (Event, Alert, Incident) and Pull the Incident and Change Request data from ITSM tools into Azure Log Analytics."
-    - content: "Create or update work-items (Event, Alert, Incident) in the ITSM tools based on Azure alerts."
+      explanation: "Correct. You can run the @azure pipelines subscribe [pipeline url] command to subscribe to an Azure Pipeline. Create and Unlink only works with the Azure Boards integration."
+    - content: "Create."
       isCorrect: false
-      explanation: "Incorrect. Using the IT Service Management Connector (ITSMC) for Azure, you can create or update work-items (Event, Alert, Incident) and Pull the Incident and Change Request data from ITSM tools into Azure Log Analytics."
-    - content: "Pull the Incident and Change Request data from ITSM into Azure Log Analytics."
+      explanation: "Incorrect. You can use Create with the Azure Boards integration to create a work item."
+    - content: "Unlink."
       isCorrect: false
-      explanation: "Incorrect. Using the IT Service Management Connector (ITSMC) for Azure, you can create or update work-items (Event, Alert, Incident) and Pull the Incident and Change Request data from ITSM tools into Azure Log Analytics."
+      explanation: "Incorrect. You can use Unlink with the Azure Boards integration to unlink a project from the channel."

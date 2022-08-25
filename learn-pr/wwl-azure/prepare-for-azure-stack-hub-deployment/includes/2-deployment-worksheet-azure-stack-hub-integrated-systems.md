@@ -5,7 +5,7 @@ The information required by the worksheet covers networking, security, and ident
 > [!NOTE]
 > For more information on how to complete the deployment worksheet tool, see [Datacenter integration planning considerations for Azure Stack Hub integrated systems](/azure-stack/operator/azure-stack-datacenter-integration?view=azs-2102).
 
-:::image type="content" source="../media/azure-stack-deployment-worksheet-e845d58c.png" alt-text="View of datacenter integration planning.":::
+:::image type="content" source="../media/azure-stack-deployment-worksheet-e845d58c.png" alt-text="Screenshot showing the datacenter integration planning.":::
 
 
 ## Installing the Windows PowerShell module

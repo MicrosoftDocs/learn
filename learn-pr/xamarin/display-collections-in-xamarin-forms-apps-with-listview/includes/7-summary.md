@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Our app's goal was to show a list of countries and their flags. Each row needed a thumbnail image of the flag, the name of the country, and the date the flag was adopted. We started with Xamarin.Forms `ListView`, which gave us a scrollable list. Then we added the predefined cell type `ImageCell` and used data binding to load the flag data into the rows.
 
 `ListView` displayed the rows and handled scrolling, so it did most of the work. `ImageCell` and data binding helped too. Without `ImageCell`, we would have had to define the row layout ourselves. Data binding lets you build the list UI without needing any custom code. 

@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In this module, you needed to create a Xamarin.Forms app that was accessible to users. You used Xamarin.Forms automation properties to control what elements were included and what information the screen reader would read out loud. You also applied intentional content ordering to improve the screen reader and keyboard experience. 
 
 There are many more enhancements that you can make to improve accessibility in applications. These enhancements include better layout and design of user interface elements, appropriate font sizes, and suitable color and contrast settings. For guidelines on more areas to consider, see the [accessibility checklist](/xamarin/cross-platform/app-fundamentals/accessibility#accessibility-checklist).

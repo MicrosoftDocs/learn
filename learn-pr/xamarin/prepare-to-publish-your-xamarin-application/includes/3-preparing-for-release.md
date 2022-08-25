@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 There are some steps you should take before you hit the button to create your app distribution package. For example, you should create a release build and add some icons.
 
 In this unit, you'll go through some of these final steps.

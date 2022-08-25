@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-windows-powershell.configure-console
+title: Configure the Windows PowerShell console
+metadata:
+  title: Configure the Windows PowerShell console
+  description: "Configure the Windows PowerShell console"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-configure-console.md)]

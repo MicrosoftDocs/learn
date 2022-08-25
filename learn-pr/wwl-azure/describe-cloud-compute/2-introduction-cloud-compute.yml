@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-cloud-compute.introduction-cloud-compute
+title: Introduction to cloud computing
+metadata:
+  title: Introduction to cloud computing
+  description: "Introduction to cloud computing"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-introduction-cloud-compute.md)]

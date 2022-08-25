@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Let's start implementing the design for the app by creating a project and specifying some user interface for entering the project name.
 
 ## Create a Xamarin app

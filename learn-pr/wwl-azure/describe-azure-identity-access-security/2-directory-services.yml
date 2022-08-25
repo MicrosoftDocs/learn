@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-identity-access-security.directory-services
+title: Describe Azure directory services
+metadata:
+  title: Describe Azure directory services
+  description: "Describe Azure directory services"
+  ms.date: 07/26/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-directory-services.md)]

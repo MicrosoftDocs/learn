@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-cloud-shell.what-is-azure-cloud-shell
+title: What is Azure Cloud Shell?
+metadata:
+  unitType: learning-content
+  title: What is Azure Cloud Shell?
+  description: This unit provides an overview of Azure Cloud Shell.
+  ms.date: 08/05/2022
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: team=cloud_advocates
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-what-is-azure-cloud-shell.md)]
