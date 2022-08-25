@@ -1,63 +1,35 @@
-1. What is an asset?
+In the Microsoft Purview governance portal a **data asset**, or an **asset**, is a piece of data housed in a data source. For example, a table in a SQL database, or a file in an Azure Storage account. In the exercise before these, we explored the assets available in the data catalog, and saw that these assets have many features, including:
+    - Certification
+    - Classification
+    - Security label
+    - Lineage
+    - etc...
 
-Why important to manage the lifecycle?
+In this section, we'll cover more of these aspects in detail, and talk about how we can edit and manage these aspects in the Data catalog, and the importance of maintaining and updating data assets in your environment.
 
-We'll discuss the lifecycle of an asset and in the excercise, we'll show you how to manage assets.
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
 ## Capture and maintain assets
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
 
 ### Scanning
 
+Assets are ingested into the data catalog as part of the scanning process. The data map scans your resources, and adds the metadata about these sources into the data catalog. Only the metadata is added-- data is not actually moved or copied from your sources. This metadata includes information like column name, data type, and any classifications or security labels that can be applied.
+
+Metadata can also be gathered from multiple sources about a single data asset. For example:
+A file is stored in an Azure blob storage account, and the file is consumed and transformed using Azure Data Factory. If both the Azure Storage account and Azure Data Factory are connected to Microsoft Purview, both will provide metadata about this file to give you a complete picture.
+
 ### Asset normalization
 
+Sometimes, different sources connected to Microsoft Purview update the same data asset with similar, but slightly different qualified names. For example:
+
+You scan in an Azure Blob with the qualified name https://myaccount.file.core.windows.net/myshare/folderA/folderB/my-file.parquet. 
+This blob is also consumed by an Azure Data Factory pipeline that will then add lineage information to the asset. The ADF pipeline may be configured to read the file as https://myAccount.file.core.windows.net//myshare/folderA/folderB/my-file.parquet.
+
+The names are different, but ultimately the piece of data is the same, so Microsoft Purview uses a normalization process to ensure all metadata from both Azure Storage and Azure Data Factory is included under a single data asset.
+
 ### Editing assets
-Individual and bulk
+
+Once an asset is ingested to the data catalog they can be updated and enhanced to provide information that can be used to identify useful data sources.
+
+Asset descriptions allow you to give a synposis of what the asset represents, and allows you to use right text to create useful descriptions.
 
 ### Asset certification
 
@@ -75,7 +47,4 @@ Paragraph (optional)
 Visual (image, table, list)
 Paragraph (optional)
 
-## Moving and deleting an asset
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+## Asset lifecycle
