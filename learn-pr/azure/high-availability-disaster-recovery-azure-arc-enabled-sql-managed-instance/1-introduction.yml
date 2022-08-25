@@ -5,8 +5,8 @@ metadata:
   title: introduction
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 8/24/2022
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: tchristiani
+  ms.author: terrychr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
