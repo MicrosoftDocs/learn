@@ -10,7 +10,7 @@ In this section, you'll:
 
 > [!div class="checklist"]
 > * Learn the differences between common pipeline stages, such as _Build_, _Dev_, _Test_, and _Staging_.
-> * Understand how manual, scheduled, and continuous deployment triggers enable you to control when an artifact moves to the next stage in the pipeline.
+> * Understand how to use manual, scheduled, and continuous deployment triggers to control when an artifact moves to the next stage in the pipeline.
 > * See how a *release approval* pauses the pipeline until an approver accepts or rejects the release.
 
 ## The meeting
@@ -25,7 +25,7 @@ Recall that the team decided on these five tasks for their sprint:
 - Automate performance tests.
 - Improve release cadence.
 
-The team meets to talk about the first task, *Create a multistage pipeline*. After defining the pipeline, the team can move from their basic proof of concept to a release pipeline that includes additional stages, quality checks, and approvals.
+The team meets to talk about the first task, *Create a multistage pipeline*. After the team defines the pipeline, the team can move from its basic proof of concept to a release pipeline that includes additional stages, quality checks, and approvals.
 
 Amita and Tim are watching Andy and Mara demonstrate the release pipeline a second time. They see that the artifact is built and installed on App Service.
 
@@ -33,25 +33,25 @@ Amita and Tim are watching Andy and Mara demonstrate the release pipeline a seco
 
 When you want to implement a release pipeline, it's important to first identify which stages you need. The stages you choose depend on your requirements. Let's follow along with the team as they decide on their stages.
 
-**Tim:** OK, I understand the idea of an automated pipeline. I like how easy it is to deploy to Azure. But where do we go from this demo? We need something we can actually use for our releases.
+**Tim:** OK, I understand the idea of an automated pipeline. I like how easy it's to deploy to Azure. But where do we go from this demo? We need something we can actually use for our releases.
 
-**Amita:** Right. We need to add some other stages. We currently have no place for a testing stage, for example.
+**Amita:** Right! We need to add other stages. For example, at present, we have no place for a testing stage.
 
-**Tim:** Plus, we need a stage where we can show new features to management. I can't send anything to production without management approval.
+**Tim:** Plus, we need a stage where we can show new features to the management. I can't send anything to production without management approval.
 
-**Andy:** Absolutely. Now that we're up to speed on what a release pipeline does, how do we make this pipeline do what we need?
+**Andy:** Absolutely! Now that it is up to speed on what a release pipeline does, how do we make this pipeline do what we need?
 
 **Mara:** Let's sketch out our requirements to help us plan our next steps. Let's start with what we have.
 
 Mara moves to the whiteboard and sketches the existing pipeline.
 
-:::image type="content" source="../media/2-build-deploy.png" alt-text="An image of a whiteboard showing the Build and Deploy stages. The Build stage produces a .zip file. The Deploy stage deploys the .zip file to Azure App Service.":::
+:::image type="content" source="../media/2-build-deploy.png" alt-text="Diagram of the whiteboard illustrating build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
 
 **Mara:** The _Build_ stage builds the source code and produces a package. In our case, that package is a _.zip_ file. The _Deploy_ stage installs the _.zip_ file, which is the _Space Game_ website, on an App Service instance. What's missing from our release pipeline?
 
 ## Add the Dev stage
 
-**Andy:** I might be biased, but I think we need a _Dev_ stage. This stage should be the first stop for the artifact after it's built. Developers can't always run the entire service from their local development environment. For example, an e-commerce system might require the website, the products database, a payment system, and so on. We need a stage that includes everything the app needs.
+**Andy:** I might be biased, but I think we need a _Dev_ stage. This stage should be the first stop for the artifact after it's built. Developers can't always run the entire service from their local development environment. For example, an e-commerce system might require a website, product database, and payment system. We need a stage that includes everything the app needs.
 
 In our case, the _Space Game_ website's leaderboard feature reads high scores from an external source. Right now, it reads fictitious scores from a file. Setting up a _Dev_ stage would give us an environment where we can integrate the web app with a real database. That database might still hold fictitious scores, but it brings us one step closer to our final app.
 
@@ -59,19 +59,19 @@ In our case, the _Space Game_ website's leaderboard feature reads high scores fr
 
 Mara updates her drawing on the whiteboard. She replaces "Deploy" with "Dev" to show the _Dev_ stage.
 
-:::image type="content" source="../media/2-add-dev-stage.png" alt-text="An image of a whiteboard showing the Build and Dev stages. The Build stage produces a .zip file. The Dev stage deploys the .zip file to Azure App Service.":::
+:::image type="content" source="../media/2-add-dev-stage.png" alt-text="Diagram that shows the whiteboard illustrating build and dev stages. Build stage produces .zip file. Dev stage deploys .zip file to Azure App Service.":::
 
 **Andy:** You bring up an interesting point. We build the app each time we push a change to GitHub. Does that mean each build is promoted to the _Dev_ stage after it finishes?
 
 **Mara:** Building continuously gives us important feedback about our build and test health. But we want to promote to the _Dev_ stage only when we merge code into some central branch: either main or some other release branch. I'll update the drawing to show that requirement.
 
-:::image type="content" source="../media/2-add-dev-stage-trigger.png" alt-text="An image of a whiteboard showing the Build and Dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.":::
+:::image type="content" source="../media/2-add-dev-stage-trigger.png" alt-text="Diagram that shows whiteboard illustrating build and dev stages. A condition promotes to the Dev stage only when changes happen on a release branch.":::
 
 **Mara:** I think this promotion will be easy to accomplish. We can define a *condition* that promotes to the _Dev_ stage only when changes happen on a release branch.
 
 ## What are conditions?
 
-In Azure Pipelines, a _condition_ enables you to run a task or job based on the state of the pipeline. You worked with conditions in previous modules.
+In Azure Pipelines, **use a condition to run** task or job based on the state of the pipeline. You worked with conditions in previous modules.
 
 Remember, some of the conditions that you can specify are:
 
@@ -98,7 +98,7 @@ This condition is used if you don't specify a condition:
 condition: succeeded()
 ```
 
-The `succeeded()` built-in function checks whether the previous task succeeded. If the previous task failed, this task and later tasks that use the same condition are skipped.
+The `succeeded()` built-in function checks whether the previous task succeeded. If the previous task fails, this task and later tasks that use the same condition are skipped.
 
 Here you want to build a condition that specifies:
 
@@ -133,7 +133,7 @@ You'll work with a more complete example shortly when you set up the _Dev_ stage
 
 For a more complete description of conditions in Azure Pipelines, see [expressions documentation](/azure/devops/pipelines/process/expressions?azure-portal=true#job-status-functions).
 
-**Mara:** Conditions let us control which changes are promoted to which stages. We can produce a build artifact for any change to validate our build and confirm that it's healthy. When we're ready, we can merge those changes into a release branch and promote that build to the _Dev_ stage.
+**Mara:** By using conditions, you can control which changes are promoted to which stages. We can produce a build artifact for any change to validate our build and confirm that it's healthy. When we're ready, we can merge those changes into a release branch and promote that build to the _Dev_ stage.
 
 ## Add the Test stage
 
@@ -143,7 +143,7 @@ For a more complete description of conditions in Azure Pipelines, see [expressio
 
 Mara adds the _Test_ stage to her drawing on the whiteboard.
 
-:::image type="content" source="../media/2-add-test-stage.png" alt-text="An image of a whiteboard showing the Build, Dev, and Test stages. The Test stage deploys the build to Azure App Service.":::
+:::image type="content" source="../media/2-add-test-stage.png" alt-text="Diagram that shows the whiteboard illustrating build, dev and test stages. The Test stage deploys the build to Azure App Service.":::
 
 **Amita:** One concern I have is how often I need to test the app. An email notifies me whenever Mara or Andy makes a change. Changes happen throughout the day, and I never know when to jump in. I think I'd like to see a build once a day, maybe when I get in to the office. Can we do that?
 
@@ -153,7 +153,7 @@ Mara adds the _Test_ stage to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from the _Dev_ stage to the _Test_ stage at 3 A.M. each morning.
 
-:::image type="content" source="../media/2-add-test-stage-schedule.png" alt-text="A whiteboard showing the Build, Dev, and Test stages. The schedule promotes the change from Dev to Test at 3 A.M. each morning.":::
+:::image type="content" source="../media/2-add-test-stage-schedule.png" alt-text="Diagram that shows the whiteboard showing Build, Dev, and Test stages. The schedule promotes the change from Dev to Test at 3 A.M. each morning.":::
 
 ### What are triggers?
 
@@ -166,13 +166,13 @@ Mara updates her drawing to show that the build moves from the _Dev_ stage to th
 * Scheduled trigger
 * Build completion trigger
 
-CI and PR triggers let you control which branches participate in the overall process. For example, you want to build the project when a change is made on any branch. A scheduled trigger starts a deployment at a specific time. A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully. It seems like we want a scheduled trigger.
+CI and PR triggers let you control which branches participate in the overall process. For example, you want to build the project when a change is made in any branch. A scheduled trigger starts a deployment at a specific time. A build completion trigger runs a build when another build, such as one for a dependent component, completes successfully. It seems like we want a scheduled trigger.
 
 ### What are scheduled triggers?
 
 A _scheduled trigger_ uses [cron syntax](/azure/devops/pipelines/process/scheduled-triggers?azure-portal=true&tabs=yaml#supported-cron-syntax) to cause a build to run on a defined schedule.
 
-On Unix and Linux systems, cron is a popular way to schedule jobs to run on a set time interval, or at a specific time. In Azure Pipelines, scheduled triggers use the cron syntax to define when a stage runs.
+On Unix and Linux systems, cron is a popular way to schedule jobs to run on a set time interval or at a specific time. In Azure Pipelines, scheduled triggers use the cron syntax to define when a stage runs.
 
 A cron expression includes fields that match certain time parameters. Here are the fields:
 
@@ -243,11 +243,11 @@ You'll see a more complete example later in this module.
 
 **Tim:** It's my turn. I need a stage to run additional stress tests. We also need a stage where we can demo to management to get their approval. For now, we can combine those two needs into a stage that we can call _Staging_.
 
-**Andy:** Well said, Tim. Having a _staging_, or preproduction, environment is important. This staging environment is often the last stop before a feature or bug fix reaches our users.
+**Andy:** Well said, Tim. Having a _staging_, or preproduction environment is important. This staging environment is often the last stop before a feature or bug fix reaches our users.
 
 Mara adds _Staging_ to her drawing on the whiteboard.
 
-:::image type="content" source="../media/2-add-staging-stage.png" alt-text="A whiteboard showing the Build, Dev, Test, and Staging stages. The Staging stage deploys the build to Azure App Service.":::
+:::image type="content" source="../media/2-add-staging-stage.png" alt-text="Diagram where the whiteboard is showing the Build, Dev, Test, and Staging stages. The Staging stage deploys the build to Azure App Service.":::
 
 **Amita:** We use a scheduled trigger to promote changes from the _Dev_ stage to the _Test_ stage. But how will we promote changes from _Test_ to _Staging_? Does that promotion also have to happen on a schedule?
 
@@ -257,7 +257,7 @@ Mara adds _Staging_ to her drawing on the whiteboard.
 
 Mara updates her drawing to show that the build moves from _Test_ to _Staging_ only when Amita approves it.
 
-:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="A whiteboard showing the Build, Dev, Test, and Staging stages. Changes move from Test to Staging only after approval.":::
+:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Diagram where the whiteboard shows the Build, Dev, Test, and Staging stages. Changes move from Test to Staging only after approval.":::
 
 **Tim:** I could also imagine us using release approvals to promote from _Staging_ to _Production_ after management signs off. I can never predict how long that takes. After they sign off, I can approve the release and promote it to production manually. But how do release approvals work?
 
@@ -279,7 +279,7 @@ Azure Pipelines gives you the flexibility to automate some stages while manually
 
 **Tim:** I like how we can define the criteria that promote changes from one stage to the next. But we've defined some manual criteria in our pipeline. I thought DevOps was about automating everything.
 
-**Mara:** You raise a good point. DevOps is really about automating repetitive and error-prone tasks. Sometimes human intervention is necessary. For example, we get approval from management before we release new features. As we get more experience with our automated deployments, we can automate more of our manual steps to speed up the process. We can automate additional quality checks in the _Test_ stage so Amita doesn't have to approve each build, for example.
+**Mara:** You raise a good point. DevOps is really about automating repetitive and error-prone tasks. Sometimes human intervention is necessary. For example, we get approval from management before we release new features. As we get more experience with our automated deployments, we can automate more of our manual steps to speed up the process. For example, we can automate additional quality checks in the _Test_ stage, so Amita doesn't have to approve each build.
 
 **Tim:** Sounds great. Let's go with this plan for now, and see how we can speed up the system later.
 
@@ -293,7 +293,7 @@ Let's review the Tailspin team's plan as they move toward next steps.
 
 Mara points to the whiteboard.
 
-:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="An image of the final whiteboard showing the Build, Dev, Test, and Staging stages.":::
+:::image type="content" source="../media/2-add-staging-stage-approval.png" alt-text="Diagram of the final whiteboard showing the Build, Dev, Test, and Staging stages.":::
 
 **Mara:** To summarize, our steps are to:
 
@@ -306,7 +306,7 @@ After management approves the build, we can deploy the build artifact to a produ
 
 **Amita:** Is this going to be hard to do? It seems like a lot of work.
 
-**Mara:** I don't think it will be too bad. Every stage is separate from every other stage. Stages are discrete. Each stage has its own set of tasks. What happens in the _Test_ stage, for example, stays in the _Test_ stage.
+**Mara:** I don't think it will be too bad. Every stage is separate from every other stage. Stages are discrete. Each stage has its own set of tasks. For example, what happens in the _Test_ stage stays in the _Test_ stage.
 
 Every deployment stage in our pipeline also has its own environment. For example, when we deploy the app to _Dev_ or _Test_, the environment is an App Service instance.
 
@@ -324,8 +324,8 @@ A good way to keep track of your release process quality is to create visualizat
 
 When you want to measure the quality of a release itself, you can perform all kinds of checks within the pipeline. For example, you can execute different types of tests, such as load tests and UI tests while running your pipeline.
 
-Using a quality gate is also a great way to check the quality of your release. There are many different quality gates. For example, work item gates can verify the quality of your requirements process. You can also add additional security and compliance checks. For example, do you comply with the 4-eyes principle, or do you have the proper traceability?
+Using a quality gate is also a great way to check the quality of your release. There are many different quality gates. For example, work item gates can verify the quality of your requirements process. You can also add additional security and compliance checks. For example, do you comply with the 4-eyes principle or do you have the proper traceability?
 
 As you progress through this learning path, you'll see a number of these techniques put into practice.
 
-Lastly, when you design a quality release process, think about what kind of documentation or release notes that you'll need to provide to the user. Keeping your documentation current can be difficult. You might want to consider using a tool, such as the [Azure DevOps Release Notes Generator](/samples/azure-samples/azure-devops-release-notes/azure-devops-release-notes-generator/?azure-portal=true). The generator is a function app that contains a HTTP-triggered function. It creates a Markdown file whenever a new release is created in Azure DevOps, using Azure Blob Storage.
+Lastly, when you design a quality release process, think about what kind of documentation or release notes that you'll need to provide to the user. Keeping your documentation current can be difficult. You might want to consider using a tool, such as the [Azure DevOps Release Notes Generator](/samples/azure-samples/azure-devops-release-notes/azure-devops-release-notes-generator/?azure-portal=true). The generator is a function app that contains an HTTP-triggered function. By using Azure Blob Storage, it creates a Markdown file whenever a new release is created in Azure DevOps.
