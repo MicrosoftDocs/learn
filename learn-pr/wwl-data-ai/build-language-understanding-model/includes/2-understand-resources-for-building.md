@@ -101,7 +101,7 @@ For a full walkthrough of each step with example requests, see the [conversation
 
 For a more visual method of building, training, and deploying your model, you can use [Language Studio](https://aka.ms/languageStudio) to achieve each of these steps. On the main page, you can select which type of project you want to create. Once the project is created, then go through the same process as above to build, train, and deploy your model.
 
-![Screenshot of Language Studio home page](../media/language-studio-conversational.png)
+![Screenshot of Language Studio home page.](../media/language-studio-conversational.png)
 
 The lab in this module will walk through using Language Studio to build your model. If you'd like to learn more, see the [Language Studio quickstart](/azure/cognitive-services/language-service/language-studio?azure-portal=true)
 
