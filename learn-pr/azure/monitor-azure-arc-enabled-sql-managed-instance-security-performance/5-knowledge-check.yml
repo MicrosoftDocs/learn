@@ -35,9 +35,9 @@ quiz:
     - content: "Active Directory (AD)"
       isCorrect: true
       explanation: "That's correct. Using the integrated Active Directory authentication method is supported."
-    - content: "SQL Server Authentication"
-      isCorrect: true
-      explanation: "That's correct. As with all editions of SQL, SQL Server Authentication is supported."
+    - content: "SQL Managed Instance Authentication"
+      isCorrect: false
+      explanation: "That's incorrect. There is no such authentication type. However, as with all editions of SQL, SQL Server Authentication is supported."
   - content: "Which tool can be used to monitor the performance of an Arc-enabled SQL Managed Instance deployed to an indirectly connected Arc data controller?"
     choices:
     - content: "Azure Monitor"
