@@ -39,7 +39,7 @@ This screenshot shows the distinct combinations of `ObjectName` and `CounterName
 
 The `% Processor Time` counter gives you an understanding of the utilization of the processor, or Central Processing Unit (CPU). This is information you need!
 
-Now let's summarize the data that's relevant to the current analysis and decide on the KQL operations we can use to advance our analysis:
+Let's assess how we can use this data and which KQL operations can help extract and transform the data:
 
 | Column | Description | Analysis goal | Related KQL operations |
 | --- | --- | --- | --- |

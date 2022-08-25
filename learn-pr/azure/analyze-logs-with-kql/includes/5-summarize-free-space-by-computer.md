@@ -1,62 +1,22 @@
-<!-- 1. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise.
-
-    Heading: none
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
 TODO: add your scenario sub-task
 TODO: add your scenario image
 
-<!-- 2. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the scenario sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
 Here, you'll retrieve and transform data from the `Perf` table, using KQL queries, to analyze the free space of the machines logging data to your Log Analytics workspace. 
-
-<!-- 3. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
 
 ## Assess log data based on analysis goals
 
 As we've seen the previous exercise, the `Perf` table provides information about the performance of hardware components, operating systems, and applications.
 
-1. What information will help you understand the free space usage of machines running in your IT environment?
+### What are your analysis goals and what information do you need?
 
-    - Total space available on the computer.
-    - Total space used.
-    - Percentage of space used.
+To analyze free space usage of machines running in your IT environment, you need information about:
+
+    - Total space available on each machine.
+    - Total space used on each machine.
+    - Percentage of space used  on each machine.
+### Which log data and KQL operations can you use?
  
-1. Which data in the `Perf` table is relevant to your analysis and how will you use KQL to extract, transform, and organize the data?
-
-  - The `CounterName` column holds the names of all of the performance counters in the table. 
+As we saw in the previous exercise, the `CounterName` column in the `Perf` table holds holds the names of the various performance counters that Azure Monitor collects.
       
 ## Summarize free space statistics by computer
 
@@ -79,31 +39,3 @@ ObjectName == "Logical Disk" // The object name used in Linux records
 | where SpaceStats.["% Free Space"]<= 50
 ```
 
-<!-- 4. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. This feedback is critical for learning.
-
-    Structure:
-        1. H2 of "Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
