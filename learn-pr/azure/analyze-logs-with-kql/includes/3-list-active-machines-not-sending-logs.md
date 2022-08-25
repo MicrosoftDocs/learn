@@ -13,7 +13,7 @@ To determine which machines have stopped sending data, you need information abou
 - All machines that have recently logged data, but have not logged data as expected in the past few minutes.
 - For deeper analysis, it's useful to know which virtual machine agent is running on each machine.
 
-## Which log data and KQL operations can you use?
+### Which log data and KQL operations can you use?
     
 This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
 
