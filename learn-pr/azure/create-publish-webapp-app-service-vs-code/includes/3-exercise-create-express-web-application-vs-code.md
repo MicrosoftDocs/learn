@@ -173,7 +173,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
-    ![Screenshot of project in web browser.](../media/3-python-select-interpreter.png)
+    ![Screenshot of project in web browser.](../media/3-python-select-interpreter-vsc-update.png)
 
 1. Close the integrated terminal.
 
@@ -181,7 +181,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     You should now see the command line prompt prefixed with `(env)`.
 
-    ![Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.](../media/3-python-terminal-env.png)
+    ![Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.](../media/3-python-terminal-env-vsc-update.png)
 
     > [!IMPORTANT]
     > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.
@@ -246,7 +246,7 @@ Our aim here is to:
     @app.route("/")
     def countdown():
 
-        launchTime = datetime(2020, 6, 1)
+        launchTime = datetime(2023, 6, 1)
         currentTime = datetime.now()
         diff = launchTime - currentTime
         numberOfMilliseconds = int(diff.total_seconds() * 1000)
@@ -279,7 +279,7 @@ Our aim here is to:
     @app.route("/")
     def countdown():
 
-        launchTime = datetime(2020, 6, 1)
+        launchTime = datetime(2023, 6, 1)
         currentTime = datetime.now()
         diff = launchTime - currentTime
         numberOfMilliseconds = int(diff.total_seconds() * 1000)

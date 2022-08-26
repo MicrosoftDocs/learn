@@ -84,7 +84,7 @@ In this unit, you'll modify the code and redeploy the website.
 Let's start by modifying the code, so that it calculates a whole number of days:
 
 1. Start Visual Studio Code if it is not already running.
-1. If the **countdownExpressApp** folder is not already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in macOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
+1. If the **countdownFlaskApp** folder is not already open, then in Windows on the **File** menu, select **Open Folder...** and then browse to the folder and select **Select Folder**.  Or in macOS, on the **File** menu, select **Open...** and browse to the folder, then select **Open**.
 1. In the Visual Studio Code Explorer window, select **app.py**.
 1. Locate this line of code:
 

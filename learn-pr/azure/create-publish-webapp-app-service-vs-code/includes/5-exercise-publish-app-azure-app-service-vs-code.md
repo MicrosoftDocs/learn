@@ -108,7 +108,7 @@ Now that the extension is installed, we can use it to create an instance of App 
 Now, you can deploy your Python site to Azure:
 
 1. In Visual Studio Code, in the **Azure** explorer, right-click the webapp you created, and then select **Deploy to Web App**.
-1. Click **Browse**, locate the **countdownExpressApp** folder in your home folder, and then click **Select**.
+1. Click **Browse**, locate the **countdownFlaskApp** folder in your home folder, and then click **Select**.
 1. If you are asked if you would like to update your workspace configuration, select **No, and don't show again**.
 1. If you are asked if you are sure, click **Deploy**. If you are asked if you always want to deploy this workspace to App Service, click **Yes**.
 1. When the deployment is complete, select **Browse Website**. Then Azure website is displayed in your browser. Notice that the website is hosted in the **azurewebsites.net** domain.
