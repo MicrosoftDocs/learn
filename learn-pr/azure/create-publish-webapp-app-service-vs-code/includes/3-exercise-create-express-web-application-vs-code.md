@@ -369,7 +369,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 1. Open a web browser and navigate to the address `http://localhost:5000`.
 
-:::image type="content" source="../media/3-flask-complete.png" alt-text="Screenshot of completed project in web browser.":::
+ ![Screenshot of completed project in web browser.](../media/3-flask-complete.png)
 
 1. Close the web browser. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
