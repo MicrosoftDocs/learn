@@ -14,7 +14,7 @@ Let's use NuGet to install new XAML animation features from the Win2D package:
 
 2. Click **Browse** (upper-left), type **Win2D** in the search box, and press *Enter*. A list of available packages is displayed.
 
-    :::image type="content" source="../media/search-nuget.png" alt-text="Screenshot of the NuGet package manager within Visual Studio. The search bar (and relevant package) are highlighted":::
+    :::image type="content" source="../media/search-nuget.png" alt-text="Screenshot of the NuGet package manager within Visual Studio. The search bar (and relevant package) are highlighted.":::
 
 3. Select **Win2D.uwp** from the list and click the **Install** button. The package begins installing.
 
