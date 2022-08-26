@@ -1,85 +1,65 @@
 The business glossary is a definition of terms specific to a domain of knowledge that is commonly used, communicated, and shared in organizations as they are conducting business.
 
+A glossary provides vocabulary for business users.  It consists of business terms that can be related to each other and allows them to be categorized so that they can be understood in different contexts. These terms can be then mapped to assets like a database, tables, columns etc. This helps in abstracting the technical jargon associated with the data repositories and allows the business user to discover and work with data in the vocabulary that is more familiar to them.
+
+A business glossary is a collection of terms. Each term represents an object in an organization and it is highly likely that there are multiple terms representing the same object. A customer could also be referred to as client, purchaser, or buyer. These multiple terms have a relationship with each other. The relationship between these terms could one of the following:
+
+synonyms - different terms with the same definition
+related - different name with similar definition
+The same term can also imply multiple business objects. It is important that each term is well-defined and clearly understood within the organization.
+
 ## Why have business glossary?
+
+Our data assets already have classifications and sensitivity labels-- what good is business glossary going to do for us?
+A business glossary allows you to map data assets to business practices like:
+
+- Standups, projects, and systems
+- Business meetings
+- Presentations
+- Reporting and business rules
+- Organizational language
+- Etc...
+
+Essentially, the business glossary allows users to search for and find data based on the every day language they already use, rather than having to wade through technical titles to make guesses.
+
+## Glossary vs classification vs sensitivity label vs managed attribute
+
+We already have three kinds of labels for our data assets, so what's the difference?
+
+**Business glossary** terms define the business vocabulary for an organization and helps in bridging the gap between various departments in your company.
+**Classifications** are annotations that can be assigned to entities. The flexibility of classifications enables you to use them for multiple scenarios such as understanding the nature of data stored in the data assets or defining access control policies.
+**Sensitivity labels** are a type of annotation that allows you to classify and protect your organization's data, without hindering productivity and collaboration. Sensitivity labels are used to identify the categories of classification types within your organizational data, and group the policies that you wish to apply to each category.
+**Managed attribute** A set of user-defined attributes that provide a business or organization level context to an asset. A managed attribute has a name and a value. For example, “Department” is an attribute name and “Finance” is its value.
 
 ## What's in a term?
 
-## Business glossary lifecycle
+So, now that we know what a business glossary term is, what's inside?
+Microsoft Purview supports eight out-of-the-box attributes for any business glossary term:
 
-### Term templates
+- Name (mandatory)
+- Nickname
+- Status
+- Definition
+- Stewards
+- Experts
+- Acronym
+- Synonyms
+- Related terms
+- Resources
+- Parent term
 
-### Workflows
+However, these attributes may not be sufficient to completely define a term in an organization. To solve this problem, Microsoft Purview provides a feature where you can define custom attributes for your glossary.
 
-## Recommendations/best practices
+## Term templates
 
+Term Templates provides glossary custom attributes to be logically grouped together in catalog. The feature allows you to group all the relevant custom attributes together in a template and then apply the template while creating the glossary term. For example, all finance- related custom attributes like cost center, profit center, accounting code can be grouped in a term template Finance Template and the Finance template can be used to create financial glossary terms.
 
+All the standard attributes are grouped in a system default template. Any term template that you create will contain these attributes along with any additional custom attributes created as part of template creation process.
 
+## Bulk upload and editing
 
-TODO: add your topic sentences(s)
+Data estates can be very large, so while glossary terms can be created and assigned manually through the Microsoft Purview governance portal, there are also options to operate in bulk.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+You can use a CSV template and import terms in bulk using the Microsft Purview governance portal.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+You can also edit assets in bulk and apply terms to multiple assets at the same time.
