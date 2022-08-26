@@ -21,7 +21,7 @@ Windows Subsystem for Linux supports two different versions of architectural set
 
 The original WSL, now known as "WSL 1", is a translation layer, providing a Linux-compatible kernel interface on top of the Windows kernel. It basically emulates a system call from the Linux executable file format ("unmodified ELF64 binaries").
 
-The main reason to use WSL 1 would be specific scenarios that require your project files to be stored in the Windows file system or if your project requires cross-compilation using both Windows and Linux tools on the same files. WSL 1 offers faster access to files mounted from Windows.
+The main reason to use WSL 1 would be specific scenarios that require your project files to be stored in the Windows file system or if your project requires cross-compilation using both Windows and Linux tools on the same files. WSL 1 offers faster access to files mounted from Windows, but is slower than WSL 2 for more typical use-cases and lacks some of the compatibility offered by the actual Linux kernel used in WSL 2.
 
 ## WSL 2
 
