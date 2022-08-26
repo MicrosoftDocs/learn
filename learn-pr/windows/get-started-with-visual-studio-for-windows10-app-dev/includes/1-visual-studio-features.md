@@ -12,7 +12,7 @@ There are three editions of Visual Studio 2022: the *Community*, *Professional*,
 [Download and install Visual Studio](https://visualstudio.microsoft.com/). Check out the [Introduction to Windows 10](/learn/modules/introduction-to-windows10-dev/) module for more detailed instructions (and some automated scripts).
 
 > [!NOTE]
-> Don't confuse *Visual Studio* (a comprehensive IDE for .NET and C# developers) with [Visual Studio Code](https://code.visualstudio.com/) (a standalone lightweight code editor with a plug-in ecosystem that's ideal for web development).
+> Don't confuse *Visual Studio* (a comprehensive IDE for .NET and C# development) with [Visual Studio Code](https://code.visualstudio.com/) (a standalone lightweight code editor with a plug-in ecosystem that's ideal for web development).
 >
 > Visual Studio is also available for Mac. This module doesn't cover development with Mac. You may want to visit [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
 
