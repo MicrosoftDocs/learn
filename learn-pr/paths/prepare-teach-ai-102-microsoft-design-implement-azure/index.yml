@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-teach-ai-102-microsoft-design-implement-azure
 metadata:
   title: AI-102
   description: Prepare to teach AI-102 Designing and Implementing a Microsoft Azure AI Solution in the classroom
-  ms.date: 07/12/2022
+  ms.date: 08/26/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
 summary: |
   Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s Azure AI fundamentals.
   Learn  about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft’s Azure AI solutions in the classroom.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/prepare-teach-ai-102-microsoft-design-implement-azure.svg
 levels:
 - advanced
 roles:
