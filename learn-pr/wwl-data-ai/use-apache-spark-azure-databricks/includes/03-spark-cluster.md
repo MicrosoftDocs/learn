@@ -1,4 +1,4 @@
-You can create one or mode clusters in your Azure Databricks workspace by using the Azure Databricks portal.
+You can create one or more clusters in your Azure Databricks workspace by using the Azure Databricks portal.
 
 ![Screenshot of the Create Cluster interface in the Azure Databricks portal.](../media/create-cluster.png)
 
