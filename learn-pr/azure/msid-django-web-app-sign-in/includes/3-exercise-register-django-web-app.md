@@ -67,11 +67,11 @@ We'll now create a test user account to use with our test app.
 
 1. Navigate to your tenant's overview page and select *Users* on the left navigation panel.
 
-    :::image type="content" source="../media/03-tenant-users-page.png" alt-text="Screenshot of Azure portal showing page to create certificates and secrets." :::
+    :::image type="content" source="../media/03-tenant-users-page.png" alt-text="Screenshot of Azure portal showing tenant users page." :::
 
 1. On the users page, select *+ New user*.
 
-    :::image type="content" source="../media/03-add-new-user-page.png" alt-text="Screenshot of Azure portal showing page to create certificates and secrets." :::
+    :::image type="content" source="../media/03-add-new-user-page.png" alt-text="Screenshot of Azure portal showing page to add a new user to a tenant." :::
 
 1. In the form that appears, fill in the required fields then select *Create*.
 
