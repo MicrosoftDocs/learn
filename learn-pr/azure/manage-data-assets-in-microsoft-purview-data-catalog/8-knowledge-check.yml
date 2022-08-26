@@ -28,7 +28,7 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Glossary term vs sensitivity label vs classification"
     choices:
     - content: ""
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "What's the data catalog for (vs the data map)"
     choices:
     - content: ""
       isCorrect: true
@@ -50,7 +50,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "What's a data asset?"
     choices:
     - content: ""
       isCorrect: true
@@ -61,7 +61,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "If I wanted to know more about a data asset, where could I go?"
     choices:
     - content: ""
       isCorrect: true
@@ -72,7 +72,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "What's a certified asset?"
     choices:
     - content: ""
       isCorrect: true
