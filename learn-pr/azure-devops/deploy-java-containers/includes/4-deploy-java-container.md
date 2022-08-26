@@ -12,7 +12,7 @@ In this part, you'll:
 > * Create a CI/CD pipeline to build and publish the Java container app.
 > * Save the pipeline to trigger a CI/CD workflow.
 
-### Install the Azure Pipelines extension
+## Install the Azure Pipelines extension
 
 Here you install the Azure Pipelines extension for your GitHub repository. This extension enables Azure Pipelines to access your GitHub account so that it can pull the latest source code from your repository.
 
@@ -23,7 +23,7 @@ Here you install the Azure Pipelines extension for your GitHub repository. This 
 1. Select **Only select repositories** and choose the **mslearn-java-containers** repository that you forked earlier.
 1. Select **Install**.
 
-### Set up an Azure DevOps project
+## Set up an Azure DevOps project
 
 The previous task links your GitHub repository to your Azure DevOps organization. To complete the process, you now create an Azure DevOps project.
 
@@ -39,7 +39,7 @@ The previous task links your GitHub repository to your Azure DevOps organization
 1. Under **Version control**, make sure that **Git** is selected.
 1. Select **Create**.
 
-### Create pipeline variables in Azure Pipelines
+## Create pipeline variables in Azure Pipelines
 
 Your pipeline is going to need to include some variable names that specify the resources created in the previous steps. You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Plus, if the names of your instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
@@ -71,7 +71,7 @@ Make sure your variable group resembles like the one shown below:
 
     :::image type="content" source="../media/4-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group. The group contains five variables.":::
 
-### Create required service connections
+## Create required service connections
 
 Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses the service connection to deploy the website to App Service. You created a similar service connection in the previous module. You'll also create a Docker Registry connection to publish your container to the Azure Container Registry.
 

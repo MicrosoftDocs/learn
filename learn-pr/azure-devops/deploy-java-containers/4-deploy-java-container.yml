@@ -4,7 +4,7 @@ title: Exercise - Deploy a Java container app to Azure
 metadata:
   title: Exercise - Deploy a Java container app to Azure
   description: Create a CI/CD pipeline to build and deploy a Java container app.
-  ms.date: 08/18/2022
+  ms.date: 08/26/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial

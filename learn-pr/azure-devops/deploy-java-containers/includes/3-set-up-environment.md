@@ -101,7 +101,7 @@ Here, create Bash variables to make the setup process more convenient and less e
 This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
-   > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not Internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
+   > For learning purposes, here you use the default network settings. These settings make your site accessible from the Internet. In practice, you could configure an Azure virtual network that places your website in a network that's not Internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 

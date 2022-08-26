@@ -19,7 +19,7 @@ The Java app that you deploy here connects to a MySQL database.
 
 Azure provides first-class support for Java. Developers can take their existing codebase and, in most cases, deploy it to Azure without modification. As far as Azure is concerned, hosting Java solutions is comparable to hosting .NET solutions, assuming that the proper dependencies are configured. Azure also provides the means to configure environment variables for application settings, implying you can continue to load settings and secrets using standard Java mechanisms.
 
-After you deploy to Azure, Java applications can connect to resources within Azure, across VPN connections, and anywhere else accessible from the internet including resources and services like consuming databases, document storage that Java developers rely on to be successful.
+Once deployed to Azure, Java applications can connect to resources within Azure, across VPN connections, and anywhere else accessible from the internet. This includes consuming databases, document stores, and all the other resources and services Java developers rely on to be successful.
 
 ## Java and Azure DevOps
 
