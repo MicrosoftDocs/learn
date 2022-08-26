@@ -98,10 +98,10 @@ Now that the extension is installed, we can use it to create an instance of App 
 
     :::image type="content" source="../media/5-create-new-web-app-wizard-1-of-6.png" alt-text="Create new web app." loc-scope="vs-code":::
 
-1. Select the resource group **<rgn>[sandbox resource group name]</rgn>**, select **Linux**, and then select **Python 3.8**. 
+1. Select the resource group **<rgn>[sandbox resource group name]</rgn>** and then select **Python 3.8**. 
+1. Select the **Central US** region.
 1. Select **Create new App Service plan** and name the new plan **LaunchCountDownPlan**.
-1. Select the **F1 free** tier and skip creating a new Application Insights resource.
-1. Select the **Central US** region. Visual Studio Code creates an App Service plan and webapp in your Azure subscription.
+1. Select the **Free (F1)** tier and skip creating a new Application Insights resource. Visual Studio Code creates an App Service plan and webapp in your Azure subscription.
 
 ## Deploy the Python webapp to Azure App Service
 
