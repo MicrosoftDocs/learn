@@ -23,10 +23,6 @@ products:
 subjects:
 - data-analytics
 modules:
-- learn.wwl.describe-azure-databricks
-- learn.wwl.spark-architecture-fundamentals
-- learn.wwl.read-write-data-azure-databricks
-- learn.wwl.work-dataframes-azure-databricks
 - learn.wwl.work-with-user-defined-functions
 - learn.wwl.build-query-delta-lake
 - learn.wwl.perform-machine-learning-with-azure-databricks

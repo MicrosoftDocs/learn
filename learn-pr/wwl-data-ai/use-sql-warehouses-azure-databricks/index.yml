@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.use-sql-warehouses-azure-databricks
+metadata:
+  title: Use SQL Warehouses in Azure Databricks
+  description: "Use SQL Warehouses in Azure Databricks"
+  ms.date: 08/26/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use SQL Warehouses in Azure Databricks
+summary: Azure Databricks provides SQL Warehouses that enable data analysts to work with data using familiar relational SQL queries.
+abstract: |
+  In this module, you'll learn how to:
+  - Create and configure SQL Warehouses in Azure Databricks.
+  - Create databases and tables.
+  - Create queries and dashboards.
+prerequisites: |
+  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/learn/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+subjects:
+- data-analytics
+- data-engineering
+- data-lake
+- data-warehousing
+units:
+- learn.wwl.use-sql-warehouses-azure-databricks.introduction
+- learn.wwl.use-sql-warehouses-azure-databricks.get-started
+- learn.wwl.use-sql-warehouses-azure-databricks.create-databases-tables
+- learn.wwl.use-sql-warehouses-azure-databricks.create-queries-dashboards
+- learn.wwl.use-sql-warehouses-azure-databricks.exercise-use-sql-warehouse
+- learn.wwl.use-sql-warehouses-azure-databricks.knowledge-check
+- learn.wwl.use-sql-warehouses-azure-databricks.summary
+badge:
+  uid: learn.wwl.use-sql-warehouses-azure-databricks.badge
