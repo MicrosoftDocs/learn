@@ -55,7 +55,7 @@ However, if you want to complete the deployment fast, entirely within Visual Stu
 1. Select an operating system and version for the virtual machines. The extension creates a new App Service plan and resource group to contain your web app.
 1. Select a folder that contains the source code. The extension deploys this code and starts that webapp.
 
-:::image type="content" source="../media/4-deploy-web-app-vsc-update.png" alt-text="Deploy source code to a webapp." loc-scope="vs-code":::
+   :::image type="content" source="../media/4-deploy-web-app-vsc-update.png" alt-text="Deploy source code to a webapp." loc-scope="vs-code":::
 
 ## Debug a website in Azure
 

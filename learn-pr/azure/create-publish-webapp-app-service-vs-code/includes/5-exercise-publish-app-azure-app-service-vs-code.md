@@ -41,8 +41,7 @@ Now that the extension is installed, we can use it to create an instance of App 
 1. Select the resource group **<rgn>[sandbox resource group name]</rgn>**, select **Node 14 LTS**, and then select **Linux**.
 1. Select the **Central US** region.
 1. Select **Create new App Service plan** and name the new plan **LaunchCountDownPlan**.
-1. Select the **Free (F1)** pricing tier.
-1. Skip creating a new Application Insights resource. Visual Studio Code creates an App Service plan and webapp in your Azure subscription.
+1. Select the **Free (F1)** pricing tier and skip creating a new Application Insights resource. Visual Studio Code creates an App Service plan and webapp in your Azure subscription.
 
 ## Deploy the Express.js webapp to Azure App Service
 

@@ -139,15 +139,15 @@ You must also alter the view slightly:
 1. Re-test your changes by selecting **Terminal** and then **New Terminal**.
 1. Make sure the prompt is prefixed with `(env)`, then start the development server.  In Windows, type the following at the command prompt:
 
-```command
-py -m flask run
-```
+   ```command
+   py -m flask run
+   ```
 
-In macOS, type the following at the command prompt:
+   In macOS, type the following at the command prompt:
 
-```command
-python3 -m flask run
-```
+   ```command
+   python3 -m flask run
+   ```
 
 1. Open a web browser to http://127.0.0.1:5000 and confirm that the changes function correctly.
 1. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
