@@ -4,36 +4,34 @@
 
 ## Scenario
 
-[Microsoft Teams](https://teams.microsoft.com/start) is a hub for teamwork in Microsoft 365. It allows you to manage and use all your team's chats, meetings, files, and apps together in one place. It provides software development teams with a hub for teams, conversations, content, and tools from across Microsoft 365 and Azure DevOps.
+Application Insights is an extensible Application Performance Management (APM) service for web developers on multiple platforms. You can use it to monitor your live web applications. It automatically detects performance anomalies, includes powerful analytics tools to help you diagnose issues, and helps you continuously improve performance and usability. It works for apps on various platforms, including .NET, Node.js, and Java EE, hosted on-premises, hybrid, or any public cloud. It integrates with your DevOps process with connection points available in various development tools. It also allows you to monitor and analyze telemetry from mobile apps through integration with Visual Studio App Center.
 
-In this lab, you'll implement integration scenarios between Azure DevOps and Microsoft Teams.
-
-> [!NOTE]
-> **Azure DevOps** integration with Microsoft Teams provides a comprehensive chat and collaborative experience across the development cycle. Teams can easily stay informed of important activities in your Azure DevOps team projects with notifications and alerts on work items, pull requests, code commits, and build and release events.
+In this lab, you'll learn how to add Application Insights to an existing web application and monitor the application via the Azure portal.<br>
 
 ## Objectives
 
 After completing this lab, you'll be able to:
 
- -  Integrate Microsoft Teams with Azure DevOps.
- -  Integrate Azure DevOps Kanban boards and Dashboards in Teams.
- -  Integrate Azure Pipelines with Microsoft Teams.
- -  Install the Azure Pipelines app in Microsoft Teams.
- -  Subscribe for Azure Pipelines notifications.
+ -  Deploy Azure App Service web apps.
+ -  Generate and monitor Azure web app application traffic by using Application Insights.
+ -  Investigate Azure web app performance by using Application Insights.
+ -  Track Azure web app usage by using Application Insights.
+ -  Create Azure web app alerts by using Application Insights.
 
 ## Requirements
 
- -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).
- -  **Microsoft Teams**.
- -  Set up a Microsoft 365 subscription. Create a free trial subscription from [Microsoft Teams sign-up page](https://teams.microsoft.com/start).
+ -  This lab requires **Microsoft Edge** or an [Azure DevOps-supported browser](/azure/devops/server/compatibility).<br>
+ -  **Set up an Azure DevOps organization:** If you don't already have an Azure DevOps organization that you can use for this lab, create one by following the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization).
+ -  Identify an existing Azure subscription or create a new one.
+ -  Verify that you have a Microsoft or Azure AD account with the **Owner** role in the Azure subscription and the **Global Administrator** role in the Azure AD tenant associated with the Azure subscription. For details, refer to [List Azure role assignments using the Azure portal](/azure/active-directory/roles/manage-roles-portal) and [View and assign administrator roles in Azure Active Directory](/azure/active-directory/roles/manage-roles-portal).
 
 ## Exercises
 
 During this lab, you'll complete the following exercises:
 
  -  Exercise 0: Configure the lab prerequisites.
- -  Exercise 1: Integrate Azure Boards with Microsoft Teams.
- -  Exercise 2: Integrate Azure Pipelines with Microsoft Teams.
+ -  Exercise 1: Monitor an Azure App Service web app using Azure Application Insights.
+ -  Exercise 2: Remove the Azure lab resources.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button, which will take you to the lab.":::
 ](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M09_L18_Monitoring_Application_Performance_with_Application_Insights.html)
