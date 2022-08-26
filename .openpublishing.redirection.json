@@ -16278,7 +16278,7 @@
     {
       "source_path": "learn-pr/azure/visual-studio-github-push/2-add-github-account.md",
       "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/visual-studio-github-push/3-exercise-add-github-account.md",
@@ -16826,9 +16826,104 @@
       "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principals.md",
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principals.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/9-two-design-service-principals",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/3-pass-parameters-databricks-jobs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/2-schedule-databricks-jobs-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/3-create-ci-cd-process.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/2-describe-ci-cd.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/3-column-expressions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/2-describe-column-class.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/4-exercise-washingtons-marthas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
