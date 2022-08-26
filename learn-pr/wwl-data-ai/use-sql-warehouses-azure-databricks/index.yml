@@ -3,7 +3,7 @@ uid: learn.wwl.use-sql-warehouses-azure-databricks
 metadata:
   title: Use SQL Warehouses in Azure Databricks
   description: "Use SQL Warehouses in Azure Databricks"
-  ms.date: 08/25/2022
+  ms.date: 08/26/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   - Create queries and dashboards.
 prerequisites: |
   Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/learn/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
 levels:
 - intermediate
 roles:
