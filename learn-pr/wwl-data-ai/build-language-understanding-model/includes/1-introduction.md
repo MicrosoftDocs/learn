@@ -3,7 +3,7 @@
 A common design pattern for a language understanding solution looks like this image:
 
 > [!div class="mx-imgBorder"]
-> ![An app accepts natural language input, and uses a model to determine semantic meaning before taking the appropriate action.](../media/language-understanding-app.png)
+> ![Diagram showing an app accepts natural language input, and uses a model to determine semantic meaning before taking the appropriate action.](../media/language-understanding-app.png)
 
 In this design pattern:
 

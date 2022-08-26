@@ -20,7 +20,7 @@ For example, consider the following list of intents and associated utterances:
 
 In a Language Understanding model, you must define the intents that you want your model to understand, so spend some time considering the *domain* your model must support and the kinds of actions or information that users might request. In addition to the intents that you define, every model includes a **None** intent that you should use to explicitly identify utterances that a user might submit, but for which there is no specific action required (for example, conversational greetings like "hello") or that fall outside of the scope of the domain for this model.
 
-After you've identified the intents your model must support, it's important to capture various different example utterances for each intent.  Collect utterances that you think users will enter; including utterances that mean the same thing but that are constructed in different ways. Keep these guidelines in mind:
+After you've identified the intents your model must support, it's important to capture various different example utterances for each intent.  Collect utterances that you think users will enter; including utterances meaning the same thing but that are constructed in different ways. Keep these guidelines in mind:
 
 - Capture multiple different examples, or alternative ways of saying the same thing
 - Vary the length of the utterances from short, to medium, to long
