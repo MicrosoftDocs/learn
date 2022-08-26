@@ -203,7 +203,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
     Once the pip3 utility has finished, you should see a success message similar to the following:
 
     ```output
-    Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.1 flask-1.1.2 itsdangerous-1.1.0
+    Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.2.2 click-8.1.3 colorama-0.4.5 flask-2.2.2 itsdangerous-2.1.2
     ```
 
 ## Add code files
@@ -369,7 +369,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 1. Open a web browser and navigate to the address `http://localhost:5000`.
 
-![Screenshot of completed project in web browser.](../media/3-flask-complete.png)
+:::image type="content" source="../media/3-flask-complete.png" alt-text="Screenshot of completed project in web browser.":::
 
 1. Close the web browser. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
