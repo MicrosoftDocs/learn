@@ -15,7 +15,7 @@ Your company designs new toys for release to the market, and most new toys requi
 
 You can think of infrastructure as code as being like the instruction manual for your infrastructure. The manual details the end configuration of your resources and how to reach that configuration state.
 
-Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that is similar to what is used for source code. When you create an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure as code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
+Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that is similar to what is used for source code. When you create an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure-as-code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
 
 ![Infrastructure as code.](../media/iac.svg)
 
@@ -37,11 +37,11 @@ One of the benefits of using infrastructure as code is the level of confidence y
 
 - **Consistency**: Adopting an infrastructure as code approach helps your team follow well-established processes to deploy infrastructure. By following these processes, responsibility shifts from a small group of individuals to your automation process and tooling. Infrastructure as code helps reduce human error in resource provisioning and ensure consistent deployments.
 
-- **Automated scanning**: Infrastructure as code configurations can be scanned by automated tooling that can check for errors in the code. Automated tooling also can review proposed changes to ensure that security and performance practices are followed.
+- **Automated scanning**: Infrastructure-as-code configurations can be scanned by automated tooling that can check for errors in the code. Automated tooling also can review proposed changes to ensure that security and performance practices are followed.
 
-- **Secret management**: Many solutions require secrets, like connection strings, encryption keys, client secrets, and certificates. In Azure, Azure Key Vault is the service that's used to securely store these secrets. Many infrastructure as code tools can integrate with Key Vault to access these secrets securely at deployment.
+- **Secret management**: Many solutions require secrets, like connection strings, encryption keys, client secrets, and certificates. In Azure, Azure Key Vault is the service that's used to securely store these secrets. Many infrastructure-as-code tools can integrate with Key Vault to access these secrets securely at deployment.
 
-- **Access control**: With infrastructure as code deployments, you have the option of using managed identities or service accounts to automate resource provisioning. This process ensures that cloud resources are modified only by these identities. It also helps prevent incorrect configurations deployed to production. If necessary, you can override this process by using an emergency access account (often called a _break glass account_) or by using the Azure Active Directory Privileged Identity Management feature.
+- **Access control**: With infrastructure-as-code deployments, you have the option of using managed identities or service accounts to automate resource provisioning. This process ensures that cloud resources are modified only by these identities. It also helps prevent incorrect configurations deployed to production. If necessary, you can override this process by using an emergency access account (often called a _break glass account_) or by using the Azure Active Directory Privileged Identity Management feature.
 
 - **Avoid configuration drift**: _Idempotence_ is a term that's frequently associated with infrastructure as code. When an operation is idempotent, it means that it provides the same result each time it's run. If you choose tooling that uses idempotent operations, you can avoid configuration drift.
 
@@ -73,9 +73,9 @@ Here are some of the key ways infrastructure as code can help you manage your en
 
 Infrastructure as code can help you better understand the state of your cloud resources:
 
-- **Audit trail**: Changes to your infrastructure as code configurations are version-controlled in the same way as your application source code. These changes are tracked in your tooling, like with Git's version history. This audit trail means that you can review the details of each change, who made the change, and when the change was made.
+- **Audit trail**: Changes to your infrastructure-as-code configurations are version-controlled in the same way as your application source code. These changes are tracked in your tooling, like with Git's version history. This audit trail means that you can review the details of each change, who made the change, and when the change was made.
 
-- **Documentation**: You can use many infrastructure as code configurations to add metadata, like comments, which describe the purpose of the code in your configuration. If your organization already follows a code documentation process, consider adopting these same procedures with your infrastructure code.
+- **Documentation**: You can use many infrastructure-as-code configurations to add metadata, like comments, which describe the purpose of the code in your configuration. If your organization already follows a code documentation process, consider adopting these same procedures with your infrastructure code.
 
 - **Unified system**: Many times, when a developer is working on a new feature, they must make changes to application code and infrastructure code. By using a common system, your organization can better understand the relationship between your applications and your infrastructure.
 
