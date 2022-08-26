@@ -1,9 +1,10 @@
 In the Microsoft Purview governance portal a **data asset**, or an **asset**, is a piece of data housed in a data source. For example, a table in a SQL database, or a file in an Azure Storage account. In the exercise before these, we explored the assets available in the data catalog, and saw that these assets have many features, including:
-    - Certification
-    - Classification
-    - Security label
-    - Lineage
-    - etc...
+    
+- Certification
+- Classification
+- Security label
+- Lineage
+- etc...
 
 In this section, we'll cover more of these aspects in detail, and talk about how we can edit and manage these aspects in the Data catalog, and the importance of maintaining and updating data assets in your environment.
 
@@ -27,24 +28,52 @@ The names are different, but ultimately the piece of data is the same, so Micros
 
 ### Editing assets
 
-Once an asset is ingested to the data catalog they can be updated and enhanced to provide information that can be used to identify useful data sources.
+Once an asset is ingested to the data catalog, it is not static: they can be updated and enhanced to provide information that can be used to identify useful data sources.
+Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column and later it's deleted from the source table. A scan will remove the column metadata from the asset in Microsoft Purview.
 
-Asset descriptions allow you to give a synposis of what the asset represents, and allows you to use right text to create useful descriptions.
+Both column-level and asset-level updates such as adding a description, glossary term or classification don't impact scan updates. Scans will update new columns and classifications regardless if these changes are made.
 
-### Asset certification
+If you update the name or data type of a column, subsequent scans won't update the asset schema. New columns and classifications won't be detected.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## Classifications, sensitivity labels, and glossary
-We'll discuss the business glossary in the next section.
-Visual (image, table, list)
-### Classifications and custom classifcations
+Here are the currently editable aspects of an asset:
 
-### How to apply classifications
+#### Overview
 
-### Sensitivity labels
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+:::image type="content" source="../media/manage-assets/editing-assets-overview.png" alt-text="<alt text>":::
+
+1. **Asset description** - should give a synopsis of what an asset represents. You can use rich text formatting to provide hyperlinks, bold text, lists, or tables to provide information to your users.
+1. **Classification** - identify the kind of data being represented. Classifications will be applied during the scanning process, depending on your scanning rules, but you can also add them manually, or create and add custom classifcations.
+1. **Glossary terms** - a vocabulary for business terms created by your organization that can be used to categorize and relate assets across your teams. We'll talk more about them in the next section.
+1. **Certified** - a flag that can only be added by a data curator, and should be used to mark data sources that can be trusted.
+1. **Managed attributes** - attributes created by an organization to provide additional context or information about an asset.
+
+#### Schema
+
+:::image type="content" source="../media/manage-assets/editing-assets-schema-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets/editing-assets-schema.png":::
+
+1. **Column name** - imported during the scanning process, but can be updated to a friendly name.
+1. **Column-level classifications** - Exactly like classifications applied to an asset in general, but they can be applied to a specific column of data.
+1. **Glossary terms** - glossary terms can also be directly applied to a specific data column.
+1. **Data type** - imported during the scanning process, but can be updated.
+1. **Asset description** - allows a description on the column level of the asset to provide information about use or context to improve data understanding.
+
+#### Contacts
+
+:::image type="content" source="../media/manage-assets/editing-assets-contacts-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets/editing-assets-contacts.png":::
+
+Contacts should be users that are responsible for maintaining a data asset, or know about them. These users will be contacted if a user has questions about a data asset, or needs to be granted access.
 
 ## Asset lifecycle
+
+Once data is ingested into the Microsoft Purview data catalog, it needs to be regularly updated and maintined to ensure it is useful, accurate, and findable by people in the organization.
+
+A well-maintained data catalog will not only give your organization an accurate picture of the data that is stored across the data estate, but will promote better use and security of data across the estate.
+
+1. Plan your collection structure and permissions well, so users have access to all the data they need, but only the data they need.
+1. Define and create classification rules and scan rule sets specific to your organization's needs.
+1. Review all assets that are scanned into the data catalog:
+    1. Assign individuals to own/manage these assets.
+    1. Owners should review and update metadata for accuracy and searchability.
+    1. Data should be certified as appropriate to identify good sources of information.
+1. Set a review schedule to re-scan or review scanned data, depending on the update schedule of the data itself.
+1. Delete assets when data is purged according to its retention period.
