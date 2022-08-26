@@ -1,4 +1,4 @@
-The following code is one possible solution for the challenge from the previous unit.
+The following code is one possible solution for the challenge from the previous unit:
 
 ```csharp-interactive
 string[] values = { "12.3", "45", "ABC", "11", "DEF" };
@@ -22,14 +22,14 @@ Console.WriteLine($"Message: {message}");
 Console.WriteLine($"Total: {total}");
 ```
 
-This code is merely "*one possible solution*" because there's likely several ways to solve this challenge.  The proposed solution (above) relies on TryParse(), however it's possible you have another approach that works equally well.  Just make sure your result matches the following output:
+This code is merely *one possible solution* because there's likely several ways to solve this challenge. The proposed solution (above) relies on `TryParse()`; however, it's possible you have another approach that works equally well. Just make sure your result matches the following output:
 
 ```output
 Message: ABCDEF
 Total: 68.3
 ```
 
-If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
+If you were successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge, you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

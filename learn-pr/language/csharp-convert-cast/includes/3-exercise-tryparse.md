@@ -6,6 +6,7 @@ For example, the following code:
 string name = "Bob";
 Console.WriteLine(int.Parse(name));
 ```
+
 causes the following exception:
 
 ```output
@@ -17,6 +18,7 @@ To avoid a format exception, use the TryParse() method on the target data type.
 ## Use TryParse()
 
 The TryParse() method does several things simultaneously:
+
 - It attempts to parse a string into the given numeric data type.
 - If successful, it will store the converted value in an **out parameter**.
 - It returns a bool to indicate whether the action succeeded or failed.
@@ -34,7 +36,7 @@ When calling a method with an `out` parameter, you must also use the keyword `ou
 
 ### Step 1 - TryParse() a string into an int
 
-Delete or comment out all of the code in the .NET Editor from previous exercises, and then add the following code.
+Delete or comment out all of the code in the .NET Editor from previous exercises, and then add the following code:
 
 ```csharp-interactive
 string value = "102";
@@ -48,18 +50,20 @@ else
     Console.WriteLine("Unable to report the measurement.");
 }
 ```
+
 Let's focus on this line:
 
-```
+```csharp
 if (int.TryParse(value, out result))
 ```
-The int.TryParse() method will return `true` if it successfully converted our `string` variable `value` into an `int`; otherwise, it will return `false`. So, surround the statement in an `if` statement, and then perform the decision logic, accordingly.
+
+The int.TryParse() method will return `true` if it successfully converted our `string` variable `value` into an `int`; otherwise, it will return `false`. So, surround the statement in an `if` statement, and then perform the decision logic accordingly.
 
 Note that the converted value will be stored in the `int` variable `result`. The `int` variable `result` is declared and initialized before this line of code, so it should be accessible both *inside* the code blocks that belong to the `if` and `else` statements, as well as *outside* of them.
 
 The `out` keyword instructs the compiler that the `TryParse()` method will not only return a value the traditional way (as a return value), but also will communicate an output through this two-way parameter.
 
-When you run the code, you should see the following output.
+When you run the code, you should get the following output:
 
 ```output
 Measurement: 102
@@ -67,13 +71,14 @@ Measurement: 102
 
 ### Step 2 - Use the parsed int later in code
 
-To demonstrate that the `result` that was declared earlier, then populated by the `out` parameter, is also usable later in your code, add the following line of code below the code you wrote in Step 1.
+To demonstrate that the `result` that was declared earlier, then populated by the `out` parameter is also usable later in your code, add the following line of code below the code you wrote in Step 1:
 
 ```csharp
 // Since it is defined outside of the if statement, 
 // it can be accessed later in your code.
 Console.WriteLine($"Measurement (w/ offset): {50 + result}");
 ```
+
 The entire code passage should match the following code listing:
 
 ```csharp-interactive
@@ -92,7 +97,8 @@ else
 // it can be accessed later in your code.
 Console.WriteLine($"Measurement (w/ offset): {50 + result}");
 ```
-When you run the application, you should see the following result.
+
+When you run the application, you should get the following result:
 
 ```output
 Measurement: 102
@@ -101,21 +107,22 @@ Measurement (w/ offset): 152
 
 ### Step 3 - Modify the string variable to an unparseable value
 
-Lastly, let's look at the other scenario - where we intentionally give `TryParse()` a bad value that can't be converted into an `int`.
+Lastly, let's look at the other scenario where we intentionally give `TryParse()` a bad value that can't be converted into an `int`.
 
-Modify the first line of code reinitializing the variable `value` to a different value.
+Modify the first line of code, re-initializing the variable `value` to a different value:
 
 ```csharp
 string value = "bad";
 ```
-Also, modify the last line of code to ensure that the result is greater than 0 before showing the second message.
+
+Also, modify the last line of code to ensure that the result is greater than 0 before showing the second message:
 
 ```csharp
 if (result > 0)
     Console.WriteLine($"Measurement (w/ offset): {50 + result}");
 ```
 
-The entire code example should match the following code.
+The entire code example should match the following code:
 
 ```csharp-interactive
 string value = "bad";
@@ -143,7 +150,7 @@ Unable to report the measurement.
 
 ## Recap
 
-The `TryParse()` method is a valuable tool. Here are few quick ideas to remember.
+The `TryParse()` method is a valuable tool. Here are few quick ideas to remember:
 
 - Use `TryParse()` when converting a string into a numeric data type.
 - `TryParse()` returns `true` if the conversion is successful, `false` if it's unsuccessful.

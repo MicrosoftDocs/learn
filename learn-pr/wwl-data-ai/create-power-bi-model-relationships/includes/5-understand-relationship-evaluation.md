@@ -10,7 +10,7 @@ Here's an example of a composite model.
 
 ![Screenshot of a composite model consisting of two source groups. The image is described in the following paragraph.](../media/multiple-source-groups.png)
 
-In this example, the composite model consists of two source groups: a VertiPaq source group and a DirectQuery source group. The VertiPaq source group contains three tables, and the DirectQuery source group contains two tables. One cross source group relationship exists to relate a table in the Vertipaq source group to a table in the DirectQuery source group.
+In this example, the composite model consists of two source groups: a VertiPaq source group and a DirectQuery source group. The VertiPaq source group contains three tables, and the DirectQuery source group contains two tables. One cross source group relationship exists to relate a table in the VertiPaq source group to a table in the DirectQuery source group.
 
 ## Regular relationships
 
