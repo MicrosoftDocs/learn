@@ -173,7 +173,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
-:::image type="content" source="../media/3-python-select-interpreter-vsc-update.png" alt-text="Screenshot of selecting Python interpreter in Visual Studio Code.":::
+   :::image type="content" source="../media/3-python-select-interpreter-vsc-update.png" alt-text="Screenshot of selecting Python interpreter in Visual Studio Code.":::
 
 1. Close the integrated terminal.
 
@@ -181,7 +181,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     You should now see the command line prompt prefixed with `(env)`.
 
-:::image type="content" source="../media/3-python-terminal-env-vsc-update.png" alt-text="Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.":::
+   :::image type="content" source="../media/3-python-terminal-env-vsc-update.png" alt-text="Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.":::
 
     > [!IMPORTANT]
     > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.
@@ -369,7 +369,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 1. Open a web browser and navigate to the address `http://localhost:5000`.
 
-:::image type="content" source="../media/3-flask-complete.png" alt-text="Screenshot of completed project in web browser.":::
+   :::image type="content" source="../media/3-flask-complete.png" alt-text="Screenshot of completed project in web browser.":::
 
 1. Close the web browser. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
