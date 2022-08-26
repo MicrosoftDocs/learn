@@ -8,6 +8,7 @@ metadata:
   ms.author: daberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: vscode-azure-extension-update-completed
   #ms.learn-contact: adsteven
 title: Prepare your development environment for Azure development
 summary: Set up your local development environment with several popular IDEs.
