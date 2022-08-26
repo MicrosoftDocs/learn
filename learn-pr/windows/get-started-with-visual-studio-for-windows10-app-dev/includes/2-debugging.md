@@ -4,7 +4,7 @@ It's difficult to write error-free code. Use Visual Studio to find the bugs in y
 
 ## Simple debugging
 
-Add `print` statements to your project to see how your code is being executed. Bugs are often caused by code that isn't executing effectively. Use this method for simple debugging on smaller projects. This method is *not* recommended for anything other than very simple projects.
+Add `print` statements to your project to see how your code is being executed. Bugs are often caused by code that isn't executing effectively. Use this method for simple debugging on smaller projects. This method *isn't* recommended for anything other than simple projects.
 
 Add `print` statements to your Universal Windows Platform (UWP) project:
 
@@ -85,9 +85,9 @@ Use *breakpoints* to stop an app at specific points to find out what's going on 
 
     :::image type="content" source="../media/breakpoint-example.png" alt-text="Screenshot of the editor window in Visual Studio. Sample code from the above breakpoint steps is shown.":::
 
-    **Explanation**: The app wants a value of `4` to execute the `Hello()` function. Unfortunately, in this case, `a + b` does not equal `c`. Let's examine the line performing this calculation using a breakpoint.
+    **Explanation**: The app wants a value of `4` to execute the `Hello()` function. Unfortunately, in this case, `a + b` doesn't equal `c`. Let's examine the line performing this calculation using a breakpoint.
 
-2. Click within the gray margin on the far-left of the screen, next to the line containing the code `int c = a + b;`. A red dot appears. This is your breakpoint.
+2. Click within the gray margin on the far-left of the screen, next to the line containing the code `int c = a + b;`. A red dot appears. This dot is your breakpoint.
 
     :::image type="content" source="../media/add-breakpoint.png" alt-text="Screenshot of the Visual Studio editor window. A breakpoint (red circle) has been placed in the margin.":::
 
@@ -111,9 +111,9 @@ Use *breakpoints* to stop an app at specific points to find out what's going on 
 
     :::image type="content" source="../media/using-breakpoints.png" alt-text="Screenshot of the Visual Studio editor window. A pop-up displays where the mouse was hovering. It indicates c has a value of three.":::
 
-    A window appears displaying the current value of the variable. As we know, it's 3, not the 4 our function expects.
+    A window appears to display the current value of the variable. As we know, it's 3, not the 4 our function expects.
 
-6. Hover near the closing braces until you see a green arrow appear.
+6. Hover near the closing braces until a green arrow appears.
 
     :::image type="content" source="../media/run-execution.png" alt-text="Screenshot of the Visual Studio editor window. A green arrow is displayed where the mouse was hovering.":::
 

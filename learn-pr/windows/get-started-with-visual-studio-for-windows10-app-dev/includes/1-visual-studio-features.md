@@ -29,7 +29,7 @@ Before starting, you'll need to install Visual Studio. Check that you're using t
 
 ### Project
 
-*Projects* include source code (C# and XAML files), resources (images and sounds), and other Visual Studio information.
+*Projects* include source code (C# and XAML files), resources (images and sound), and other Visual Studio information.
 
 ### Solution
 
@@ -94,7 +94,7 @@ Now that Visual Studio is up and running and you're familiar with the environmen
 
     :::image type="content" source="../media/run-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The run button, represented by a green triangle, is highlighted.":::
 
-7. A large, blank window displays with the text *Hello World*. This is a preview of your app when it's running.
+7. A large, blank window displays with the text *Hello World*. This screen is a preview of your app when it's running.
 
     :::image type="content" source="../media/hello-world.png" alt-text="Screenshot of the running Hello World app built in this unit. The debug toolbar is also shown.":::
 

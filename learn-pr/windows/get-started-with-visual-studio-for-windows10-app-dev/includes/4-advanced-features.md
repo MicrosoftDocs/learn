@@ -91,7 +91,7 @@ Download a project from GitHub directly in Visual Studio:
 
     ![Run app](../media/run-app.png)
 
-    Visual Studio may ask you to download additional components. After you confirm these downloads, the app will begin building. A loading screen displays:
+    Visual Studio may ask you to download more components. After you confirm these downloads, the app will begin building. A loading screen displays:
 
     :::image type="content" source="../media/coloring-book-one.png" alt-text="Screenshot of the Windows coloring book loading screen. It displays a fully colored page.":::
 
@@ -114,4 +114,4 @@ You can download a project from GitHub as a zip file, unzip the project, and ope
 
 ### Using Git on a daily basis
 
-Every developer knows that tracking changes in projects can be difficult. What if you try something out, realize it was a mistake, and need to revert to a previous version? What if you're working with a friend and you both make changes to the same files? These are the kinds of issues Git was designed to address.
+Every developer knows that tracking changes in projects can be difficult. What if you try out something, realize it was a mistake, and need to revert to a previous version? What if you're working with a friend and you both make changes to the same files? These are the kinds of issues Git was designed to address.
