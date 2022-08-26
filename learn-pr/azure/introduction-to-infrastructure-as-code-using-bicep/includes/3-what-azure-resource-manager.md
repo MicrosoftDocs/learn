@@ -1,4 +1,4 @@
-You've spent some time with your team learning the benefits of infrastructure as code and the different approaches that are available. Your company is growing at a rapid pace and your team knows it will be deploying a significant number of resources to Azure. As a team, you've decided that declarative infrastructure as code is the right approach to resource provisioning. The team doesn't want to maintain scripts that list every deployment step. Before beginning the process of building your first template, you need to understand how Azure Resource Manager works. Investigating the types of templates that are available to use with Azure will help you determine the next steps in your infrastructure-as-code strategy.
+You've spent some time with your team learning the benefits of infrastructure as code and the different approaches that are available. Your company is growing at a rapid pace and your team knows it will be deploying a significant number of resources to Azure. As a team, you've decided that declarative infrastructure as code is the right approach to resource provisioning. The team doesn't want to maintain scripts that list every deployment step. Before beginning the process of building your first template, you need to understand how Azure Resource Manager works. Investigating the types of templates that are available to use with Azure will help you determine the next steps in your infrastructure as code strategy.
 
 In this unit, you'll learn about Resource Manager and the two types of Resource Manager templates.
 
@@ -25,7 +25,7 @@ As you begin your cloud journey with Resource Manager, it's important to underst
 
 ### Benefits
 
-Resource Manager provides many benefits and capabilities related to infrastructure-as-code resource provisioning:
+Resource Manager provides many benefits and capabilities related to infrastructure as code resource provisioning:
 
 - You can deploy, manage, and monitor the resources in your solution as a group instead of individually.
 - You can redeploy your solution throughout the development lifecycle and have confidence that your resources are deployed in a consistent state.
