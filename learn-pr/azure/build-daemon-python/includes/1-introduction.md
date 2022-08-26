@@ -1,4 +1,4 @@
-Organizations build apps to serve various use cases. While most applications require users to interact with them, there’re also requirements to build applications that are secure and don't require user interaction. These apps, given that they access resources independently of users, need to prove their identity. Azure Active Directory (Azure AD) lets you authenticate your app and provide authorized access to a protected web API.
+Organizations build apps to serve various use cases. While most applications require users to interact with them, there are also requirements to build applications that are secure and don't require user interaction. A monthly report generation application is a perfect example of a batch job. These apps, given that they access resources independently of users, need to prove their identity. Azure Active Directory (Azure AD) lets you authenticate your app and provide authorized access to a protected web API.
 
 ## Example scenario
 
@@ -11,6 +11,10 @@ In this module, you'll:
 - Prepare Azure AD tenant to authenticate an app.
 - Configure a Python daemon app to request an access token by using its own identity.
 - Authorize a daemon app to call a protected web API.
+
+In the following flow, the app interacts directly with the Azure AD `/token` endpoint to obtain access:
+
+:::image type="icon" source="../media/convergence-scenarios-daemon.svg" border="false":::
 
 ## What is the main goal?
 

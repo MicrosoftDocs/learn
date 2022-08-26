@@ -50,14 +50,14 @@ quiz:
         - content: python install msal
           isCorrect: false
           explanation: Incorrect. The command is wrong and Python interpreter try to run a file.
-    - content: John is attempting to retrieve a user profile from the Microsoft Graph. Which of the following HTTP methods will read data from a resource?
+    - content: John is building a new confidential client application for his company. Which of the following token grant flows does a confidential client application use?
       choices:
-        - content: POST
+        - content: OAuth 2.0 authorization code flow
           isCorrect: false
-          explanation: Incorrect. POST method creates a new resource, or performs an action.
-        - content: PUT
+          explanation: Incorrect. The OAuth 2.0 authorization code grant type, or auth code flow, enables a client application to obtain authorized access to protected resources like web APIs.
+        - content: OAuth 2.0 On-Behalf-Of flow
           isCorrect: false
-          explanation: Incorrect. PUT method replaces a resource with a new one.
-        - content: GET
+          explanation: Incorrect. The OAuth 2.0 On-Behalf-Of flow (OBO) serves the use case where an application invokes a service/web API, which in turn needs to call another service/web API. The idea is to propagate the delegated user identity and permissions through the request chain.
+        - content: OAuth 2.0 client credentials flow
           isCorrect: true
-          explanation: Correct. GET method read data from a resource.
+          explanation: Correct. The OAuth 2.0 client credentials grant flow permits a web service (confidential client) to use its own credentials, instead of impersonating a user, to authenticate when calling another web service.
