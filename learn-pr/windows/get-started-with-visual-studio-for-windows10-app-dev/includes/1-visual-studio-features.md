@@ -103,4 +103,4 @@ Now that Visual Studio is up and running and you're familiar with the environmen
 
 8. Close out of your app or click the **Stop** (red square) button on the menu bar to stop running it.
 
-    :::image type="content" source="../media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented red square, is highlighted.":::
+    :::image type="content" source="../media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented by a red square, is highlighted.":::

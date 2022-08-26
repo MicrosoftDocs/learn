@@ -26,9 +26,9 @@ Try it out in your project:
 
     :::image type="content" source="../media/open-code.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml.cs file is highlighted.":::
 
-2. Hover over the method called `Hello()` nested inside of the `MainPage()` method. Right click the method and select **Rename**.
+2. Hover over the method called `Hello()` nested inside of the `MainPage()` method. Right-click the method and select **Rename**.
 
-    :::image type="content" source="../media/rename-method.png" alt-text="Screenshot of a Visual Studio context menu after right-clicking a function. The rename option is highlighted..":::
+    :::image type="content" source="../media/rename-method.png" alt-text="Screenshot of a Visual Studio context menu after right-clicking a function. The rename option is highlighted.":::
 
 3. Type a new name and select **Apply**. Notice that the name changes everywhere it occurs.
 
@@ -62,7 +62,7 @@ GitHub is a service and website used to store code (including projects created i
 
 - *Security*: Your code is stored remotely. (What if something bad happened to your computer?)
 - *Source code management*: GitHub uses Git (which makes it easy to "undo" changes and try new ideas).
-- *Sharing*: GitHub makes it easy to share projects, collabarate, and use code from other developers.
+- *Sharing*: GitHub makes it easy to share projects, collaborate, and use code from other developers.
 
 Download a project from GitHub directly in Visual Studio:
 
@@ -87,7 +87,7 @@ Download a project from GitHub directly in Visual Studio:
 
     :::image type="content" source="../media/set-startup-project.png" alt-text="Screenshot of a Visual Studio context menu when a project is right-clicked. An example project is highlighted along with the correct menu option.":::
 
-4. Select the **Run**(green triangle) button.
+4. Select the **Run** (green triangle) button.
 
     ![Run app](../media/run-app.png)
 
@@ -114,4 +114,4 @@ You can download a project from GitHub as a zip file, unzip the project, and ope
 
 ### Using Git on a daily basis
 
-Every developer knows that tracking changes in projects can be difficult. What if you try something out, realize it was a mistake, and need revert to a previous version? What if you're working with a friend and you both make changes to the same files? These are the kinds of issues Git was designed to address.
+Every developer knows that tracking changes in projects can be difficult. What if you try something out, realize it was a mistake, and need to revert to a previous version? What if you're working with a friend and you both make changes to the same files? These are the kinds of issues Git was designed to address.

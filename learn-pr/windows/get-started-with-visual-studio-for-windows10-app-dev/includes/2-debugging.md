@@ -55,7 +55,7 @@ Add `print` statements to your Universal Windows Platform (UWP) project:
 
 5. Click the **Stop** button to stop the app.
 
-    :::image type="content" source="../media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented red square, is highlighted.":::
+    :::image type="content" source="../media/stop-app.png" alt-text="Screenshot showing the Visual Studio menu bar. The stop button, represented by a red square, is highlighted.":::
 
 ## Better debugging
 
@@ -87,7 +87,7 @@ Use *breakpoints* to stop an app at specific points to find out what's going on 
 
     **Explanation**: The app wants a value of `4` to execute the `Hello()` function. Unfortunately, in this case, `a + b` does not equal `c`. Let's examine the line performing this calculation using a breakpoint.
 
-2. Click within the grey margin on the far-left of the screen, next to the line containing the code `int c = a + b;`. A red dot appears. This is your breakpoint.
+2. Click within the gray margin on the far-left of the screen, next to the line containing the code `int c = a + b;`. A red dot appears. This is your breakpoint.
 
     :::image type="content" source="../media/add-breakpoint.png" alt-text="Screenshot of the Visual Studio editor window. A breakpoint (red circle) has been placed in the margin.":::
 
@@ -105,7 +105,7 @@ Use *breakpoints* to stop an app at specific points to find out what's going on 
 
 4. Select **Step into** and watch the yellow arrow follow the flow of control.
 
-    :::image type="content" source="../media/step-into.png" alt-text="Screenshot of the Visual Studio menu bar. The step into options is highlighted.":::
+    :::image type="content" source="../media/step-into.png" alt-text="Screenshot of the Visual Studio menu bar. The step into option is highlighted.":::
 
 5. Hover over the variable `c`.
 

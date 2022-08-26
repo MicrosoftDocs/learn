@@ -14,7 +14,8 @@ Let's use NuGet to install new XAML animation features from the Win2D package:
 
 2. Click **Browse** (upper-left), type **Win2D** in the search box, and press *Enter*. A list of available packages is displayed.
 
-    :::image type="content" source="../media/search-nuget.png" alt-text="Screenshot of the NuGet package manager within Visual Studio. The search bar (and relevant package) are highlighted contains the text win2D.":::
+    :::image type="content" source="../media/search-nuget.png" alt-text="Screenshot of the NuGet package manager within Visual Studio. The search bar (and relevant package) are highlighted"
+    :::
 
 3. Select **Win2D.uwp** from the list and click the **Install** button. The package begins installing.
 
@@ -37,7 +38,7 @@ Let's use NuGet to install new XAML animation features from the Win2D package:
 
 6. Double click **MainPage.xaml** in the Solution Explorer to open it in design view.
 
-    :::image type="content" source="../media/open-editor.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml. file is highlighted.":::
+    :::image type="content" source="../media/open-editor.png" alt-text="Screenshot of the Visual Studio solution explorer. The MainPage.xaml file is highlighted.":::
 
 7. Use the **Arrows** button to expand the editing view.
 
