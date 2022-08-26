@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.use-apache-spark-azure-databricks
+metadata:
+  title: Use Apache Spark in Azure Databricks
+  description: "Use Apache Spark in Azure Databricks"
+  ms.date: 08/25/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use Apache Spark in Azure Databricks
+summary: Azure Databricks is built on Apache Spark and enables data engineers and analysts to run Spark jobs to transform, analyze and visualize data at scale.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe key elements of the Apache Spark architecture.
+  - Create and configure a Spark cluster.
+  - Describe use cases for Spark.
+  - Use Spark to process and analyze data stored in files.
+  - Use Spark to visualize data.
+prerequisites: |
+  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/learn/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-engineer
+products:
+- azure-databricks
+subjects:
+- data-analytics
+- data-engineering
+- data-visualization
+units:
+- learn.wwl.use-apache-spark-azure-databricks.introduction
+- learn.wwl.use-apache-spark-azure-databricks.get-to-know-spark
+- learn.wwl.use-apache-spark-azure-databricks.create-spark-cluster
+- learn.wwl.use-apache-spark-azure-databricks.use-spark-notebooks
+- learn.wwl.use-apache-spark-azure-databricks.use-spark-to-work-data-files
+- learn.wwl.use-apache-spark-azure-databricks.visualize-data
+- learn.wwl.use-apache-spark-azure-databricks.exercise-use
+- learn.wwl.use-apache-spark-azure-databricks.knowledge-check
+- learn.wwl.use-apache-spark-azure-databricks.summary
+badge:
+  uid: learn.wwl.use-apache-spark-azure-databricks.badge
