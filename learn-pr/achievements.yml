@@ -1202,3 +1202,8 @@ achievements:
   title: Work with DataFrames in Azure Databricks
   summary: Work with DataFrames in Azure Databricks
   iconUrl: /learn/achievements/work-dataframes-azure-databricks.svg
+- uid: learn.wwl.build-query-delta-lake.badge
+  type: badge
+  title: Build and query a Delta Lake
+  summary: Build and query a Delta Lake
+  iconUrl: /learn/achievements/build-query-delta-lake.svg
