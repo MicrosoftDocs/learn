@@ -43,7 +43,7 @@ IntelliSense displays information about your code directly within the editor. It
 
 The Visual Studio UI with a Solution open:
 
-:::image type="content" source="../media/visual-studio-ui.png" alt-text="Screenshot of the Visual Studio user-interface in editor view. The main features are labeled.":::
+:::image type="content" source="../media/visual-studio-ui.png" alt-text="Screenshot of the Visual Studio user-interface in editor view. The main features are labeled." lightbox="../media/visual-studio-ui.png":::
 
 The **Solution Explorer** (top-right) helps you view, navigate, and manage files. Organize your code by grouping files into solutions and projects.
 
