@@ -8,7 +8,7 @@ There are many reasons to choose Bicep as the main tool set for your infrastruct
 
 If you're using Azure as your cloud platform, consider these advantages of using Bicep:
 
-- **Azure-native**: With Bicep, you're using a language that is native to Azure. When new Azure resources are released or updated, Bicep will support those features on day one. When using other third-party tools, it might take some time for new features to be defined in the tool set.
+- **Azure-native**: With Bicep, you're using a language that is native to Azure. When new Azure resources are released or updated, Bicep will support those features on day one. When you use other third-party tools, it might take some time for new features to be defined in the tool set.
 
 - **Azure integration**: ARM templates, both JSON and Bicep, are fully integrated within the Azure platform. With Resource Manager-based deployments, you can monitor the progress of your deployment in the Azure portal.
 
@@ -22,6 +22,6 @@ If you're using Azure as your cloud platform, consider these advantages of using
 
 Some situations might call for another tool set. Consider the following reasons not to use Bicep as your main tool set:
 
-- **Existing tool set**: When you are determining when to use Bicep, the first question to ask is, "Does my organization already have a tool set in use?" Many tooling options are available that can be used for infrastructure as code-based resource provisioning. Sometimes, it makes sense to use existing financial and knowledge investments when you consider adopting a new process.
+- **Existing tool set**: When you're determining when to use Bicep, the first question to ask is, _Does my organization already have a tool set in use?_ Many tooling options are available that can be used for infrastructure as code-based resource provisioning. Sometimes, it makes sense to use existing financial and knowledge investments when you consider adopting a new process.
 
 - **Multi-cloud**: If your organization uses multiple cloud providers to host its infrastructure, Bicep might not be the right tool. Other cloud providers don't support Bicep as a template language. Open-source tools like Terraform can be used for multi-cloud deployments, including deployments to Azure.

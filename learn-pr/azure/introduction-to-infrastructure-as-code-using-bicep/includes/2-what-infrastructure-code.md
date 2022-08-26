@@ -15,11 +15,11 @@ Your company designs new toys for release to the market, and most new toys requi
 
 You can think of infrastructure as code as being like the instruction manual for your infrastructure. The manual details the end configuration of your resources and how to reach that configuration state.
 
-Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that is similar to what is used for source code. When creating an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure as code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
+Infrastructure as code is the process of automating your infrastructure provisioning. It uses a descriptive coding language and versioning system that is similar to what is used for source code. When you create an application, your source code generates the same result each time it's compiled. In a similar manner, infrastructure as code deployments are automated, consistent, and repeatable. Infrastructure as code can automate the deployments of your infrastructure resources, like virtual networks, virtual machines, applications, and storage.
 
 ![Infrastructure as code.](../media/iac.svg)
 
-Thinking back to the instruction manual for the new toy, there are multiple ways to write the instruction manual. One option is to detail each step of the build process. Another option is to show an exploded view of the pieces and parts needed to assemble the toy. Later in this unit, you'll learn about the differences between imperative and declarative code and how they relate to your company's instruction manuals.
+If you recall the instruction manual for the new toy, there are multiple ways to write the instruction manual. One option is to detail each step of the build process. Another option is to show an exploded view of the pieces and parts needed to assemble the toy. Later in this unit, you'll learn about the differences between imperative and declarative code and how they relate to your company's instruction manuals.
 
 ## Why use infrastructure as code?
 
@@ -53,7 +53,7 @@ az group create \
     --location eastus
 ```
 
-If you run this command a second time, you receive the exact same output. You don't receive an error or a duplicate resource group. That's because this Azure CLI command was designed to be idempotent.
+If you run this command a second time, you receive the exact same output. You don't receive an error or a duplicate resource group. The reason is because this Azure CLI command was designed to be idempotent.
 
 When you use infrastructure as code, you can redeploy your environment at each release of your solution. These releases might incorporate small configuration changes or even significant updates. This process helps avoid configuration drift. If an accidental change is made to a resource, it can be corrected by redeploying the configuration. By following this approach, you're documenting your environment by using code.
 
@@ -111,7 +111,7 @@ az storage account create \
     --https-only true
 ```
 
-The example executes two Azure CLI commands. The first command creates a resource group named `storage-resource-group` in the East US region. The second command creates a storage account named `mystorageaccount` in the `storage-resource-group` resource group, which was created in the first command. The second command also configures a couple properties for the storage account, including the kind of storage account it is and its access tier.
+The example executes two Azure CLI commands. The first command creates a resource group named `storage-resource-group` in the East US region. The second command creates a storage account named `mystorageaccount` in the `storage-resource-group` resource group, which was created in the first command. The second command also configures a couple properties for the storage account, including the kind of storage account and its access tier.
 
 You can use an imperative approach to fully automate resource provisioning, but the approach has some disadvantages. As your architecture matures, scripts can become complex to manage. Commands may be updated or deprecated, which requires reviews of existing scripts.
 
@@ -130,7 +130,7 @@ In Azure, a declarative code approach is accomplished by using  _templates_. Man
 Take a look at the following example of a Bicep template that configures a storage account. The configuration of the storage account matches the Azure CLI example:
 
 ```bicep
-resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-09-01' = {
   name: 'mystorageaccount'
   location: 'eastus'
   sku: {
