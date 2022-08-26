@@ -33,6 +33,8 @@ Microsoft Purview works to reflect the truth of the source system whenever possi
 
 Both column-level and asset-level updates such as adding a description, glossary term or classification don't impact scan updates. Scans will update new columns and classifications regardless if these changes are made.
 
+If you update a classification, Microsoft Purview will not replace this updated classification when you re-scan the data.
+
 If you update the name or data type of a column, subsequent scans won't update the asset schema. New columns and classifications won't be detected.
 
 Here are the currently editable aspects of an asset:
