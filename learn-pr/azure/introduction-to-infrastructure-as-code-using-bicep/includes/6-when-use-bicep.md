@@ -1,8 +1,8 @@
-You've found that  many tool sets are available for infrastructure as code resource deployments. You want to learn more about when Bicep might be the right tool for you and your organization to use for your deployments.
+You've found that  many tool sets are available for infrastructure-as-code resource deployments. You want to learn more about when Bicep might be the right tool for you and your organization to use for your deployments.
 
 ## Is Bicep the right tool?
 
-There are many reasons to choose Bicep as the main tool set for your infrastructure as code deployments. For Azure deployments, Bicep has some advantages, but Bicep doesn't work as a language for other cloud providers.
+There are many reasons to choose Bicep as the main tool set for your infrastructure-as-code deployments. For Azure deployments, Bicep has some advantages, but Bicep doesn't work as a language for other cloud providers.
 
 ### When is Bicep the right tool?
 
