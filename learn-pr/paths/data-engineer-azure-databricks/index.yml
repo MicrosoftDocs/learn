@@ -23,18 +23,6 @@ products:
 subjects:
 - data-engineering
 modules:
-- learn.wwl.describe-azure-databricks
-- learn.wwl.spark-architecture-fundamentals
-- learn.wwl.read-write-data-azure-databricks
-- learn.wwl.work-dataframes-azure-databricks
-- learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks
-- learn.wwl.work-dataframes-columns-azure-databricks
-- learn.wwl.work-dataframes-advanced-methods-azure-databricks
-- learn.wwl.describe-platform-architecture-security-data-protection-azure-databricks
-- learn.wwl.describe-azure-databricks-delta-lake-architecture
-- learn.wwl.implement-ci-cd-azure-devops
-- learn.wwl.integrate-azure-databricks-other-azure-services
-- learn.wwl.describe-azure-databricks-best-practices
 - learn.wwl.explore-azure-databricks
 - learn.wwl.use-apache-spark-azure-databricks
 - learn.wwl.use-delta-lake-azure-databricks
