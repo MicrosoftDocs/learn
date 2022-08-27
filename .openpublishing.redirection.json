@@ -17279,6 +17279,46 @@
       "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/4-use-display-function.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/4-describe-how-azure-databricks-manages.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/2-describe-open-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/5-exercise-use-time-machine-perform-optimization.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/3-exercise-work-basic-functionality.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
