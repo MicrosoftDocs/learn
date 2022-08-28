@@ -23,7 +23,7 @@ Perf  // The table you’re querying
 ```
 :::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Heartbeat table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
 
-You can see that the `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` columns hold data that's relevant to your analysis. 
+You can see that the `TimeGenerated`, `Computer`, `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` columns hold data that's relevant to our analysis. 
 
 The `ObjectName` column lists the names of all of the objects for which Azure Monitor collects data from monitored machines. The `CounterName` column holds the names of the various performance counters that Azure Monitor collects. Both of these column holds lots of values, many of which appear multiple times. To clearly see the distinct values in these columns and determine which counters are relevant to the current analysis, let's run this query:
 
