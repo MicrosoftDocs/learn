@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.resources.identify-machines-with-high-low-cpu
-title: Exercise - Identify machines with high and low CPU usage
+title: Exercise - Identify machines with high CPU usage
 metadata:
   unitType: exercise
-  title: Exercise - Identify machines with high and low CPU usage
+  title: Exercise - Identify machines with high CPU usage
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 08/08/2022
   author: guywi-ms
