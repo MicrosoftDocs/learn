@@ -19,6 +19,8 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 | Column | Description | Analysis goal | Related KQL operations |
 | --- | --- | --- | --- |
+| `TimeGenerated` | Indicates when the virtual machine generated each log. | Define the time scope of the analysis. | `TimeGenerated > ago(1d)` <br/>For more information, see [ago()](/azure/data-explorer/kusto/query/agofunction) and [Numerical operators](/azure/data-explorer/kusto/query/numoperators). |
+| `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. | `summarize... by Computer` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
 | `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
 | `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
 | `InstanceName` | xxx | xxx | xxx |
@@ -34,7 +36,7 @@ As we saw in the previous exercise, the `CounterName` column in the `Perf` table
 
 ```kusto
 Perf
-| where TimeGenerated > ago(1h)
+| where TimeGenerated > ago(1d)
 | where ObjectName == "LogicalDisk" or // The object name used in Windows records
 ObjectName == "Logical Disk" // The object name used in Linux records
 | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
