@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.resources.identify-machines-with-high-low-cpu
+uid: learn.resources.identify-machines-with-high-cpu
 title: Exercise - Identify machines with high CPU usage
 metadata:
   unitType: exercise
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-identify-machines-with-high-low-cpu.md)]
+  [!include[](includes/4-identify-machines-with-high-cpu.md)]

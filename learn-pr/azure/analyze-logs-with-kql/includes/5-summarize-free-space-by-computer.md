@@ -14,8 +14,12 @@ To analyze free space usage of machines running in your IT environment, you need
 - Total space used on each machine.
 - Percentage of space used on each machine.
 
-In the previous exercise, we saw that the `ObjectName` column of the `Perf` table lists the names of all of the objects for which Azure Monitor collects data from monitored machines and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. To clearly see the distinct values in these columns and determine which counters are relevant to the current analysis, let's run this query:
+In the previous exercise, we saw that: 
 
+- The `ObjectName` column of the `Perf` table lists the names of all of the objects for which Azure Monitor collects data from monitored machines. 
+- The `CounterName` column holds the names of the various performance counters that Azure Monitor collects. 
+- Both of these columns hold lots of values, many of which appear multiple times. 
+ 
 
 Let's assess how we can use this data and which KQL operations can help extract and transform the data:
 
