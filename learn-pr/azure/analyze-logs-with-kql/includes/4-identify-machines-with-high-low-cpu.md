@@ -1,5 +1,4 @@
-To address performance issues, mitigate potential issues, and identify opportunities to operate more efficiently, you want to analyze the actual and used compute capacity in your IT environment. 
-TODO: add scenario image
+To address performance issues, mitigate potential issues, and identify opportunities to operate more efficiently, you want to analyze the  CPU usage of virtual machines in your IT environment. 
 
 Here, you'll write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity and which machines are being underused.  
 
@@ -43,10 +42,12 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 | Column | Description | Analysis goal | Related KQL operations |
 | --- | --- | --- | --- |
-| `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
-| `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
-| `InstanceName` | xxx | xxx | xxx |
-| `CounterValue` | xxx | xxx | xxx |
+| `TimeGenerated` | Indicates when the virtual machine generated each log. | Define the time scope of the analysis. | `TimeGenerated > ago(1d)` For more information, see [ago()](/azure/data-explorer/kusto/query/agofunction) and [Numerical operators](/azure/data-explorer/kusto/query/numoperators). |
+| `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. || `summarize... by Computer` For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
+| `ObjectName` | Holds the names of all of the objects for which the table holds performance data.  | Analyze the performance of the processor. | `ObjectName == "Processor"` For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
+| `CounterName` | Holds the names of all of the performance counters in the table. | Monitor the `"% Processor Time"` performance counter. | `CounterName == "% Processor Time"` For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
+| `InstanceName` | xxx | xxx | `InstanceName == "_Total"` For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
+| `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for `"% Processor Time"` performance counter. | `summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99)` For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator), and the [min()](/azure/data-explorer/kusto/query/min-aggfunction), [max()](/azure/data-explorer/kusto/query/max-aggfunction), [avg()](/azure/data-explorer/kusto/query/avg-aggfunction), and [percentiles()](/azure/data-explorer/kusto/query/percentiles-aggfunction) aggregation functions. |
 ## Identify machines with high and low CPU usage
 
 Note that 99th percentile means that 99% of all measured values are lower than the given value.
