@@ -35,7 +35,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 ## Identify recently active machines that stopped logging data
 
-To identify recently active machines that stopped logging data, write a query that lists the agents that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
+Write a query that lists the machines that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
 
 1. Retrieve all logs from the past 48 hours:
 
