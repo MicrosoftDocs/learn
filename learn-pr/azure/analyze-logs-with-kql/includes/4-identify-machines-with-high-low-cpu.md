@@ -43,7 +43,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | Column | Description | Analysis goal | Related KQL operations |
 | --- | --- | --- | --- |
 | `TimeGenerated` | Indicates when the virtual machine generated each log. | Define the time scope of the analysis. | `TimeGenerated > ago(1d)` For more information, see [ago()](/azure/data-explorer/kusto/query/agofunction) and [Numerical operators](/azure/data-explorer/kusto/query/numoperators). |
-| `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. || `summarize... by Computer` For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
+| `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. | `summarize... by Computer` For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
 | `ObjectName` | Holds the names of all of the objects for which the table holds performance data.  | Analyze the performance of the processor. | `ObjectName == "Processor"` For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
 | `CounterName` | Holds the names of all of the performance counters in the table. | Monitor the `"% Processor Time"` performance counter. | `CounterName == "% Processor Time"` For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `InstanceName` | xxx | xxx | `InstanceName == "_Total"` For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
