@@ -48,7 +48,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `CounterName` | Holds the names of all of the performance counters in the table. | Monitor the `"% Processor Time"` performance counter. | `CounterName == "% Processor Time"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `InstanceName` | xxx | xxx | `InstanceName == "_Total"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for `"% Processor Time"` performance counter. | `summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99)` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator), and the [min()](/azure/data-explorer/kusto/query/min-aggfunction), [max()](/azure/data-explorer/kusto/query/max-aggfunction), [avg()](/azure/data-explorer/kusto/query/avg-aggfunction), and [percentiles()](/azure/data-explorer/kusto/query/percentiles-aggfunction) aggregation functions. |
-## Identify machines with high and low CPU usage
+## Identify machines with high CPU usage
 
 Write a query that summarizes the average, minimum and maximum CPU usage of all machines over the past day. 
 
@@ -81,9 +81,13 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
 
     The result set of this query consists of all computers for which the top 10% and 15% `% Processor Time` values are over 80.  
 
-1. To get a better understanding of your query results, you can retrieve related information from a different table and add the data to your query results using the `join` operator. 
+## Add operating system information from the Heartbeat table to the query results
 
-    For instance, you can add information from the `Heartbeat` table about the operating system running on each of the computers in your query results:
+To get a better understanding of your query results, you can correlate information from a different table to your query results using the `join` operator. For more information, see [join operator](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer). 
+
+Let's add information about the operating system running on each computer, which is available in the `Heartbeat` table, as we saw in the first exercise:
+
+1. Add information from the `Heartbeat` table about the operating system running on each of the computers in your query results:
     
     ```kusto     
     Perf  // The table you’re querying
@@ -95,7 +99,9 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
     | distinct Computer, OSType) on Computer // Adds distinct combinations of computer and operating system 
     ```
 
-    This iteration of the query adds the `Computer` and `OSType` columns from the `Heartbeat` table to the previous query results. Notice that the `Computer` column appears twice in the query results - once from the query on the `Perf` table and once from the query on the `Heartbeat` table. The `Computer` column from the `Heartbeat` table has been renamed `Computer1`, but the two tables contain identical data. Having both columns enables correlating the results from the two tables, but you can now filter away the duplicate column.
+    This iteration of the query adds the `Computer` and `OSType` columns from the `Heartbeat` table to the previous query results. 
+
+    The `Computer` column now appears twice in the query results - once from the query on the `Perf` table and once from the query on the `Heartbeat` table. The `Computer` column from the `Heartbeat` table has been renamed `Computer1`, but the two tables contain identical data. Having both columns enables correlating the results from the two tables, but you can now filter away the duplicate column.
     
 1. Remove the `Computer1` column from the query results: 
 
@@ -110,3 +116,4 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
     | project-away Computer1 // Removes the "Computer1" column from the query results 
     ```
 
+    The result set of this query contains all of the computers that reached their full CPU capacity and includes information about the operating system running on each computer, which will be helpful for further analysis.
