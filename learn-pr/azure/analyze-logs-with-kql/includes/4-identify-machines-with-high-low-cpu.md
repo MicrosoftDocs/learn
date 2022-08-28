@@ -50,9 +50,9 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for `"% Processor Time"` performance counter. | `summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99)` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator), and the [min()](/azure/data-explorer/kusto/query/min-aggfunction), [max()](/azure/data-explorer/kusto/query/max-aggfunction), [avg()](/azure/data-explorer/kusto/query/avg-aggfunction), and [percentiles()](/azure/data-explorer/kusto/query/percentiles-aggfunction) aggregation functions. |
 ## Identify machines with high and low CPU usage
 
-Note that 99th percentile means that 99% of all measured values are lower than the given value.
+Write a query that summarizes the average, minimum and maximum CPU usage of all machines over the past day. 
 
-1. Retrieve all logs generated in the past day that report on % Processor Time:
+1. Retrieve all logs generated in the past day that reported the `% Processor Time` performance counter:
     
     ```kusto     
     Perf  // The table you’re querying
@@ -61,25 +61,25 @@ Note that 99th percentile means that 99% of all measured values are lower than t
     
     This query retrieves all logs related to total processor time measurements from the past day. 
 
-1. Present the minimum, maximum, average, 90th and 99th percentile counter values for each computer: 
+1. Find the minimum, maximum and average counter values, and calculate the 90th and 99th percentile counter values for each computer: 
 
     ```kusto     
     Perf  // The table you’re querying
     | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
     | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
     ```
-    The result set of this query shows the minimum, maximum, average, 90th and 99th percentile % Processor Time counter values for each computer for which there's data in your Log Analytics workspace.
+    The result set of this query shows the minimum, maximum, average, 90th and 99th percentile `% Processor Time` counter values for each computer for which there's data in your Log Analytics workspace.
 
-1. Filter the query results for entries where the `% Processor Time` counter value is less than 50 in the 90th and 99th percentile range:
+1. Filter the query results for entries where the `% Processor Time` counter value is higher than 80 in the 90th and 99th percentile range:
     
     ```kusto     
     Perf  // The table you’re querying
     | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
     | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
-    | where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
+    | where percentile_CounterValue_90 > 80 and percentile_CounterValue_99 > 80 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 80
     ```
 
-    The result set of this query consists of all computers where the top 10% and 15% of their CPU usage is below 50%.  
+    The result set of this query consists of all computers for which the top 10% and 15% `% Processor Time` values are over 80.  
 
 1. To get a better understanding of your query results, you can retrieve related information from a different table and add the data to your query results using the `join` operator. 
 
@@ -89,7 +89,7 @@ Note that 99th percentile means that 99% of all measured values are lower than t
     Perf  // The table you’re querying
     | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
     | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
-    | where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
+    | where percentile_CounterValue_90 > 80 and percentile_CounterValue_99 > 80 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
     | join kind=inner (Heartbeat // Introduces data from the "Heartbeat" table to the previous query results
     | where TimeGenerated > ago(1d) // Time range for the data added from the "Heartbeat" table
     | distinct Computer, OSType) on Computer // Adds distinct combinations of computer and operating system 
@@ -103,7 +103,7 @@ Note that 99th percentile means that 99% of all measured values are lower than t
     Perf  // The table you’re querying
     | where TimeGenerated > ago(1d) and ObjectName == "Processor" and CounterName == "% Processor Time" and InstanceName == "_Total" // Filters for entries generated in the past day related to total processor time measurements  
     | summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99) by Computer // Presents the minimum, maximum, average, 90th and 99th percentile counter values for each computer 
-    | where percentile_CounterValue_90 > 50 and percentile_CounterValue_99 > 50 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
+    | where percentile_CounterValue_90 > 80 and percentile_CounterValue_99 > 80 // Filters previous query results for instances where the 90th and 99th percentile counters are higher than 50
     | join kind=inner (Heartbeat // Introduces data from the "Heartbeat" table to the previous query results
     | where TimeGenerated > ago(1d) // Time range for the data added from the "Heartbeat" table
     | distinct Computer, OSType) on Computer // Adds distinct combinations of computer and operating system 
