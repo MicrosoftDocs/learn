@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create dashboards in Azure Data Explorer
-summary: "ADD SUMMARY HERE"
+summary: "Create a dashboard from a query in Azure Data Explorer web UI. Add new tiles. Create dashboard parameters, and cross-filters for the parameters."
 abstract: |
   By the end of this module, you'll be able to:
     -	Build dashboards in Azure Data Explorer.
