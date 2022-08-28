@@ -92,9 +92,12 @@ To identify recently active machines that stopped logging data, write a query th
 
 Understanding which agents and agent versions are running on your machines can help you analyze the root cause of problems and identify which machines you need to update to a new agent or new agent version.
 
-Can you think of some quick tweaks you can make to the query you developed above to get this information? 
+Can you think of a couple of quick tweaks you can make to the query you developed above to get this information? 
 
-Which additional information do you need to extract from your logs? Which KQL operation can you use to group machines by the agent version they are running? 
+Consider this:
+
+- Which additional information do you need to extract from your logs? 
+- Which KQL operation can you use to group machines by the agent version they are running? 
 
 Solution:
 
