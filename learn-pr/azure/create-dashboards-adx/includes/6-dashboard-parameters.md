@@ -2,14 +2,17 @@ You've created a dashboard to view insights into your storm events dataset. Next
 
 ## What are parameters?
 
-Parameters are used as building blocks for dashboard filters in Azure Data Explorer dashboards. They're managed in the dashboard scope, and can be added to queries to filter the data presented by the underlying visual. A query can use one or more parameters. This document describes the creation and use of parameters and linked filters in Azure Data Explorer dashboards. Parameters can be used to slice and dice dashboard visuals either by selecting a value from the parameter drop-down list, or by using cross-filters.
+Parameters are used as building blocks for dashboard filters in Azure Data Explorer dashboards. They're managed in the dashboard scope, and can be added to queries to filter the data presented by the underlying visual. A query can use one or more parameters.
 
-Parameters make your dashboard interactive. They act like a filter on any tile that uses the parameter, so that choosing a value from that parameter will show you a filtered view of the connected visual.
-For example, each dashboard comes with a built-in time range parameter.
+Parameters make your dashboard interactive. They act like a filter on any tile that uses the parameter, so that choosing a value from that parameter will show you a filtered view of the connected visual. Recall that each visual is created from a query. If the parameter isn't used in the query, the filter remains disabled. Once the parameter is added to the query to filter the data, the parameter becomes active.
+
+For example: 
+
+Say you define a parameter called `state`, and then add the parameter to the query for a dashboard visual. Then, in the parameter dropdown, you choose a particular state, like Missouri. Your dashboard visual will only display results associated with the state of Missouri. Using a parameter is similar to injecting the condition as a filter in a query, but in a dynamic way that lets you change many queries at once or quickly change between filter values.
+
+Each dashboard comes with a built-in time range parameter. You can use this time range to only see data from a chosen time window.
 
 :::image type="content" source="../media/9-dashboard-time-range.png" alt-text="Screenshot showing time range parameter.":::
-
-Recall that each visual is created from a query. If the parameter isn't used in the query, the filter remains disabled. Once the parameter is added to the query, the filter becomes active. 
 
 ## What are cross-filters?
 

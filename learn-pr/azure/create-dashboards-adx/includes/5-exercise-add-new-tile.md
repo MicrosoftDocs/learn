@@ -20,7 +20,9 @@ Now, let's add another tile to this dashboard. First, you need to switch from vi
     | sort by event
     ```
 
-1. Notice that the query for the dashboard is different from the one you ran in the query editor. When adding a new tile in a dashboard, you need to add the visual aspect separately. Select **+ Add visual**.
+    Notice that the query for the dashboard is different from the one you ran in the query editor. When adding a new tile in a dashboard, you need to add the visual aspect separately.
+
+1. Select **+ Add visual**.
 
     :::image type="content" source="../media/8-add-visual.png" alt-text="Screenshot of results of query and adding visual to dashboard.":::
 
