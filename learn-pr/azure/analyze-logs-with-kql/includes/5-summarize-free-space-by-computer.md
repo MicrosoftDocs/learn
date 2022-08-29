@@ -60,7 +60,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
       
 ## Summarize free space statistics by computer
 
-1. Retrieve all logs generated in the past day that reported the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters:
+1. Retrieve all logs generated in the past day that reported the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters for the `LogicalDisk` and `Logical Disk` objects:
 
     ```kusto
     Perf
@@ -82,6 +82,8 @@ ObjectName == "Logical Disk" // The object name used in Linux records
 | where InstanceName == "_Total"
 | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
 ```
+
+
 
 ```kusto
 Perf
