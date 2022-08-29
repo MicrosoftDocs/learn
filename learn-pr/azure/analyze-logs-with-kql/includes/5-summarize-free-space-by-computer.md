@@ -14,6 +14,8 @@ To analyze free space usage of machines running in your IT environment, you need
 - Total space used on each machine.
 - Percentage of space used on each machine.
 
+### Which log data and KQL operations can you use?
+ 
 In the previous exercise, we saw that the `Perf` table's `ObjectName` column lists the names of all of the objects being monitored and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
  
 
@@ -29,10 +31,6 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
 | `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | `InstanceName == "_Total"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters.  | `where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"` |
-
-### Which log data and KQL operations can you use?
- 
-As we saw in the previous exercise, the `CounterName` column in the `Perf` table holds holds the names of the various performance counters that Azure Monitor collects.
       
 ## Summarize free space statistics by computer
 
