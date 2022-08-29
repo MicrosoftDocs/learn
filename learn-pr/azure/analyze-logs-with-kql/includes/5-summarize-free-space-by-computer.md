@@ -1,4 +1,4 @@
-Recall that your IT team has noticed recurring issues related to  insufficient free space on virtual machines. 
+Recall that your IT team has noticed recurring issues related to insufficient free space on virtual machines. 
 
 Here, you'll retrieve and transform data from the `Perf` table, using KQL queries, to analyze the free space of the machines logging data to your Log Analytics workspace. 
 
@@ -25,9 +25,11 @@ Perf  // The table you’re querying
 | distinct ObjectName // Lists distinct ObjectName values
 ```
 
-In our scenario, we're interested in analyzing virtual machines, so the objects we want to look at are `LogicalDisk` and `Logical Disk` (to monitor the memory in a physical machine, you'd look at the `memory` object). The reason there are two very similarly-named objects is that `LogicalDisk` is the object name in Windows records while `Logical Disk` is used in Linux records.
+The result set of this query includes all `ObjectName` values currently in the table:
 
 :::image type="content" source="../media/kql-log-analytics-perf-table-distinct-objectname.png" alt-text="Screenshot showing the results of the Distinct ObjectName query on the Perf table with the Logical Disk and LogicalDisk as one word values highlighted." lightbox="../media/kql-log-analytics-perf-table-distinct-objectname.png":::
+
+In our scenario, we're interested in analyzing virtual machines, so the objects we want to look at are `LogicalDisk` and `Logical Disk` (to monitor the memory in a physical machine, you'd look at the `memory` object). The reason there are two very similarly-named objects is that `LogicalDisk` is the object name in Windows records while `Logical Disk` is used in Linux records.
  
 
 To list the distinct names of the counters Azure Monitor collects for the `LogicalDisk` and `Logical Disk` objects, run:
@@ -39,9 +41,11 @@ ObjectName == "Logical Disk" // The object name used in Linux records
 | distinct CounterName // Lists distinct CounterName values
 ```
 
-From the results set of this query, you can see that the performance counters that provide information about used and free space are `% Used Space`, `% Free Space`, and `Free Megabytes`.
+The result set of this query includes all performance counters collected for the the `LogicalDisk` and `Logical Disk` objects:
 
 :::image type="content" source="../media/kql-log-analytics-perf-table-countername.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-table-countername.png":::
+
+The performance counters that provide information about used and free space are `% Used Space`, `% Free Space`, and `Free Megabytes`.
 
 Let's assess how we can use this data and which KQL operations can help extract and transform the data:
 
@@ -49,9 +53,9 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | --- | --- | --- | --- |
 | `TimeGenerated` | Indicates when the virtual machine generated each log. | Define the time scope of the analysis. | `TimeGenerated > ago(1d)` <br/>For more information, see [ago()](/azure/data-explorer/kusto/query/agofunction) and [Numerical operators](/azure/data-explorer/kusto/query/numoperators). |
 | `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. | `summarize... by Computer` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
-| `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
-| `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
-| `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | `InstanceName == "_Total"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
+| `ObjectName` | Holds the names of all of objects for which the table holds performance data. For your analysis, you're interested in the `LogicalDisk` and `Logical Disk` objects. | Monitor the logical disks in virtual machines. | `where ObjectName == "LogicalDisk" or ObjectName == "Logical Disk"` |
+| `CounterName` | Holds the names of all performance counters in the table. | Monitor counters related to free and used space. | `where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"` |
+| `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all drives on the virtual machine. | `InstanceName == "_Total"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters.  | `where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"` |
       
 ## Summarize free space statistics by computer
