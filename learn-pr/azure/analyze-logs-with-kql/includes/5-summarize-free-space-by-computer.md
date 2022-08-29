@@ -14,7 +14,7 @@ To analyze free space usage of machines running in your IT environment, you need
 - Total space used on each machine.
 - Percentage of space used on each machine.
 
-In the previous exercise, we saw that the `Perf` table's `ObjectName` column lists the names of all of the objects data and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
+In the previous exercise, we saw that the `Perf` table's `ObjectName` column lists the names of all of the objects being monitored and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
  
 
 :::image type="content" source="../media/kql-log-analytics-perf-table-countername.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-table-countername.png":::
@@ -27,7 +27,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. | `summarize... by Computer` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
 | `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
 | `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
-| `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | InstanceName == "_Total"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
+| `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | `InstanceName == "_Total"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters.  | `where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"` |
 
 ### Which log data and KQL operations can you use?
