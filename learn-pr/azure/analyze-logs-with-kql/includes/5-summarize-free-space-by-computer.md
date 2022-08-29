@@ -25,7 +25,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. | `summarize... by Computer` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
 | `ObjectName` | Holds the names of all of the objects for which the table holds performance data. For your analysis, you're interested in the `Processor` instance. | xxx | xxx |
 | `CounterName` | Holds the names of all of the performance counters in the table. | xxx | xxx |
-| `InstanceName` | xxx | xxx | xxx |
+| `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | InstanceName == "_Total"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters.  | `where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"` |
 
 ### Which log data and KQL operations can you use?
