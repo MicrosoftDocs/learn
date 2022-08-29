@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-language-understanding-model.train-test-publish-review
+title: Train, test, publish, and review a Language Understanding model
+metadata:
+  title: Train, test, publish, and review a Language Understanding model
+  description: "Train, test, publish, and review a Language Understanding model"
+  ms.date: 08/29/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-train-test-publish-review.md)]

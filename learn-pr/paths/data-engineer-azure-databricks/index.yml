@@ -3,7 +3,7 @@ uid: learn.wwl.data-engineer-azure-databricks
 metadata:
   title: Data engineering with Azure Databricks
   description: Data engineering with Azure Databricks
-  ms.date: 01/05/2022
+  ms.date: 08/29/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -23,6 +23,10 @@ products:
 subjects:
 - data-engineering
 modules:
-- learn.wwl.process-streaming-data-azure-databricks-structured-streaming
+- learn.wwl.explore-azure-databricks
+- learn.wwl.use-apache-spark-azure-databricks
+- learn.wwl.use-delta-lake-azure-databricks
+- learn.wwl.use-sql-warehouses-azure-databricks
+- learn.wwl.run-azure-databricks-notebooks-azure-data-factory
 trophy:
   uid: learn.wwl.data-engineer-azure-databricks.trophy
