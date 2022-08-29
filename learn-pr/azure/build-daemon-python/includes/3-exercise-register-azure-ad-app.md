@@ -14,11 +14,11 @@ Follow these steps to register your application on the Azure portal.
 1. Under **Manage**, select **App registrations** > **New registration**.
 1. Enter or select the following information:
 
-   | Field                            | Value                                                              |
-   |---------------------------------:|:-------------------------------------------------------------------|
-   | **Name**                         | `python-daemon-app`                                                |
-   | **Supported account types**      | **Accounts in this organizational directory only (Single tenant)** |
-   | **Platform type**                | `Leave this field blank`                                           |
+   | **Field**         | **Value**     |
+   |--------------|-----------|
+   | **Name** | `python-daemon-app`      |
+   | **Supported account types**     | **Accounts in this organizational directory only**  |
+   | **Redirect URI (optional)**     | **Leave this field blank** |
 
 1. Select **Register** to complete the initial app registration.
 

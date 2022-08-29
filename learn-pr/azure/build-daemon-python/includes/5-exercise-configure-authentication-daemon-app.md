@@ -73,7 +73,7 @@ pip install msal
 
    In the sample code we've created, we import `json`, `requests` and `msal` module for our daemon app. The `config` section contains the values required for interaction with the Azure AD.
 
-   1. Replace the values in the config section as described here:
+1. Replace the values in the config section as described here:
 
      - Replace `tenant_id` with the **Directory (tenant) ID** you recorded during your app registration.
      - Replace `Enter_the_Application_Id_Here` with the **Application (client) ID** you recorded during your app registration.
