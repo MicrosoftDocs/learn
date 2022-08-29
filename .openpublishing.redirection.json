@@ -17359,6 +17359,21 @@
       "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/4-work-time-windows.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/6-monitor-resources-for-performance-efficiency.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-solution-to-log-monitor-azure-resources/",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-solution-to-log-monitor-azure-resources/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+       "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/8-summary-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/design-solution-to-log-monitor-azure-resources/7-summary-resources",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solution-to-log-monitor-azure-resources.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/29/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which Log Analytics Workspace deployment model best supports the company need to host all logs in a single location?"
+    choices:
+    - content: "Decentralized"
+      isCorrect: false
+      explanation: "Incorrect. The decentralized model doesn't meet the need for searching across all resources."
+    - content: "Centralized"
+      isCorrect: true
+      explanation: "Correct. The centralize model meets the company needs."      
+    - content: "Hybrid"
+      isCorrect: false
+      explanation: "Incorrect. The hybrid model isn't needed based on these requirements."
+
+  - content: "What solution should be used to log user sign-in activity?"
+    choices:
+    - content: "Virtual Machines Insights"
+      isCorrect: false
+      explanation: "Incorrect. Azure Insights can be used for applications, VMs, and containers but not user sign-in activity."
+    - content: "Azure Alerts"
+      isCorrect: false
+      explanation: "Incorrect. Azure Alerts can notify you of an activity log event, but it doesn't log user sign-in activity."
+    - content: "Azure Active Directory Audit Logs"
+      isCorrect: true
+      explanation: "Correct. Azure AD audit logs contain the history of sign-in activity. The logs also contain an audit trail of tenant changes."
+      
+  - content: "What monitoring tool should be used to measure user experience and analyze user behavior for all external facing applications?"
+    choices:
+    - content: "Azure Application Insights"
+      isCorrect: true
+      explanation: "Correct. Application Insights can measure user experience and analyze user behavior."
+    - content: "Azure Monitor container insights"
+      isCorrect: false
+      explanation: "Incorrect. Container insights can show the health and performance of your Kubernetes workloads, but this choice doesn't specifically measure user experience or behavior."
+    - content: "Azure Activity log"
+      isCorrect: false
+      explanation: "Incorrect. Azure Activity log doesn't measure application user experience or behavior."
