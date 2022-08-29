@@ -1207,3 +1207,8 @@ achievements:
   title: Build and query a Delta Lake
   summary: Build and query a Delta Lake
   iconUrl: /learn/achievements/build-query-delta-lake.svg
+- uid: learn.wwl.process-streaming-data-azure-databricks-structured-streaming.badge
+  type: badge
+  title: Process streaming data with Azure Databricks structured streaming
+  summary: Process streaming data with Azure Databricks structured streaming
+  iconUrl: /learn/achievements/process-streaming-data-azure-databricks-structured-streaming.svg
