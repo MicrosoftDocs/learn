@@ -17,6 +17,8 @@ To analyze free space usage of machines running in your IT environment, you need
 In the previous exercise, we saw that the `Perf` table's `ObjectName` column lists the names of all of the objects data and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
  
 
+:::image type="content" source="../media/kql-log-analytics-perf-table-countername.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-table-countername.png":::
+
 Let's assess how we can use this data and which KQL operations can help extract and transform the data:
 
 | Column | Description | Analysis goal | Related KQL operations |
