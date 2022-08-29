@@ -24,7 +24,6 @@ subjects:
 - data-analytics
 modules:
 - learn.wwl.work-with-user-defined-functions
-- learn.wwl.build-query-delta-lake
 - learn.wwl.perform-machine-learning-with-azure-databricks
 - learn.wwl.train-machine-learning-model
 - learn.wwl.work-with-mlflow-azure-databricks
