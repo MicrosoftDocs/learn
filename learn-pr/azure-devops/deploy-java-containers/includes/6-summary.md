@@ -6,7 +6,7 @@ While this module specifically focused on a Java container app deployed to Azure
 
 In this module, you worked with Java, which is just one of the many platforms Azure supports natively. To learn about support and tutorials for different developer platforms, see [Build applications with Azure](https://azure.microsoft.com/developer/?azure-portal=true).
 
-Azure also provides a variety of resources that you can use for Java apps. To learn more about the opportunities for Java on Azure, see [Build and deploy Java apps on Azure](https://azure.microsoft.com/develop/java/?azure-portal=true).
+Azure also provides various resources that you can use for Java apps. To learn more about the opportunities for Java on Azure, see [Build and deploy Java apps on Azure](https://azure.microsoft.com/develop/java/?azure-portal=true).
 
 This module packages a Java app as a Docker container. To learn more about working with containers in Azure, see the [Administer containers in Azure](../../../paths/administer-containers-in-azure/index.yml?azure-portal=true) learning path.
 
