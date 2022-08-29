@@ -41,6 +41,7 @@ _Im_Dns
 ```
 
 The following table lists available unifying parsers:
+
 | Schema | Unifying parser|
 | :--- | :--- |
 | Authentication | imAuthentication|
@@ -62,6 +63,6 @@ Each schema has a standard set of filtering parameters documented in the relevan
 - Authentication
 - DNS
 - Network Session
-- Web Session
+- Web Session 
 
 Every schema that supports filtering parameters supports at least the starttime and enttime parameters and using them is often critical for optimizing performance.
