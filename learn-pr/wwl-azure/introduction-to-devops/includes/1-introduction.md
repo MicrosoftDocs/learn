@@ -62,7 +62,7 @@ After completing this module, students and professionals can:
 
 Successful learners will have prior knowledge and understanding of:
 
- -  Cloud computing conce include understanding of PaaS, SaaS, and IaaS implementations.
+ -  Cloud computing concepts include understanding of PaaS, SaaS, and IaaS implementations.
  -  Azure administration and Azure development with proven expertise in at least one of these areas.
  -  Version control, Agile software development, and core software development principles. It would be helpful to have experience in an organization that delivers software.
 

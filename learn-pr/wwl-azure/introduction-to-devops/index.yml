@@ -3,13 +3,13 @@ uid: learn.wwl.introduction-to-devops
 metadata:
   title: Introduction to DevOps
   description: "Introduction to DevOps"
-  ms.date: 08/26/2022
+  ms.date: 08/29/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to DevOps
-summary: This module explores the key areas that organizations must apply to start their DevOps transformation Journey, changing the team's mindset, and defining timelines and goals.
+summary: This module explores the key areas that organizations must apply to start their DevOps transformation Journey, change the team's mindset, and define timelines and goals.
 abstract: |
   By the end of this module, you'll be able to:
   *   Understand what DevOps is and the steps to accomplish it
