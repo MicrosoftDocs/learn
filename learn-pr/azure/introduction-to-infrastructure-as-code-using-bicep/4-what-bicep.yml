@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-infrastructure-code-using-bicep.what-bicep
-title: What is Bicep?  
+title: What is Bicep?
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: What is Bicep?
   description: Learn what Bicep is and how it works with Azure Resource Manager.
-  ms.date: 03/12/2021  
+  ms.date: 08/26/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?

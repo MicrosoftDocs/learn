@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-infrastructure-code-using-bicep.how-bicep-works
-title: How Bicep works  
+title: How Bicep works
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: How Bicep works # user input: module title for browser tab and search results
   description: Learn how Bicep deploys your Azure infrastructure.
-  ms.date: 03/12/2021  
+  ms.date: 08/26/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
