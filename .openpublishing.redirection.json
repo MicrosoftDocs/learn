@@ -17319,6 +17319,46 @@
       "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/2-describe.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/3-perform-stream-processing-using.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/5-process-data-from-event-hubs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/4-work-time-windows.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
