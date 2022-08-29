@@ -18,8 +18,28 @@ To analyze free space usage of machines running in your IT environment, you need
  
 In the previous exercise, we saw that the `Perf` table's `ObjectName` column lists the names of all of the objects being monitored and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
 
+Let's run a query on the `Perf` table to the list distinct `ObjectName` values:
+
+```kusto
+Perf  // The table you’re querying
+| distinct ObjectName // Lists distinct ObjectName values
+```
+
+In our scenario, we're interested in analyzing virtual machines, so the objects we want to look at are `LogicalDisk` and `Logical Disk` (to monitor the memory in a physical machine, you'd look at the `memory` object). The reason there are two very similarly-named objects is that `LogicalDisk` is the object name in Windows records while `Logical Disk` is used in Linux records.
+
 :::image type="content" source="../media/kql-log-analytics-perf-table-distinct-objectname.png" alt-text="Screenshot showing the results of the Distinct ObjectName query on the Perf table with the Logical Disk and LogicalDisk as one word values highlighted." lightbox="../media/kql-log-analytics-perf-table-distinct-objectname.png":::
  
+
+To list the distinct names of the counters Azure Monitor collects for the `LogicalDisk` and `Logical Disk` objects, run:
+
+```kusto
+Perf  // The table you’re querying  
+| where ObjectName == "LogicalDisk" or // The object name used in Windows records
+ObjectName == "Logical Disk" // The object name used in Linux records
+| distinct CounterName // Lists distinct CounterName values
+```
+
+From the results set of this query, you can see that the performance counters that provide information about used and free space are `% Used Space`, `% Free Space`, and `Free Megabytes`.
 
 :::image type="content" source="../media/kql-log-analytics-perf-table-countername.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-table-countername.png":::
 
