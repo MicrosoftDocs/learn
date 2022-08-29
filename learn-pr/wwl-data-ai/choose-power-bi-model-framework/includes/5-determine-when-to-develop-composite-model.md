@@ -47,7 +47,7 @@ Slicer visuals and filter card lists, which are often based on dimension table c
 
 When you set up an import table with incremental refresh, you can enable the **Get the latest data in real-time with DirectQuery** option.
 
-![Animated diagram shows the incremental refresh and real-time data set up, and it highlights the Get the latest data in real-time with Direct Query option.](../media/model-framework-incremental-refresh.png)
+![Animated diagram shows the incremental refresh and real-time data set up, and it highlights the Get the latest data in real-time with DirectQuery option.](../media/model-framework-incremental-refresh.png)
 
 By enabling this option, Power BI automatically creates a table partition that uses DirectQuery storage mode. In this case, the table becomes a hybrid table, meaning it has import partitions to store older data, and a single DirectQuery partition for current data.
 
