@@ -51,7 +51,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
 
 1. After you've cloned the main branch into a local repository, create a new feature branch, myFeature-1:
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git checkout -b feature/myFeature-1
@@ -62,7 +62,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     *Switched to a new branch 'feature/myFeature-1'.*
 1. Run the Git branch command to see all the branches. The branch showing up with an asterisk is the "currently-checked-out" branch:
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git branch
@@ -75,14 +75,14 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     *main*
 1. Make a change to the Program.cs file in the feature/myFeature-1 branch:
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     notepad Program.cs
     ```
 1. Stage your changes and commit locally, then publish your branch to remote:
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git status
@@ -90,9 +90,9 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *On branch feature/myFeature-1 Changes not staged for commit: (use "git add &lt;file&gt;..." to update what will be committed) (use "git checkout -- &lt;file&gt;..." to discard changes in working directory) modified: Program.cs.*
+    *On branch feature/myFeature-1 Changes not staged for commit: (use "git add &lt;file>..." to update what will be committed) (use "git checkout -- &lt;file&gt;..." to discard changes in working directory) modified: Program.cs.*
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git add .
@@ -103,7 +103,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     *\[feature/myFeature-1 70f67b2\] feature 1 added to program.cs 1 file changed, 1 insertion(+).*
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git push -u origin feature/myFeature-1
@@ -111,7 +111,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. Writing objects: 100% (3/3), 348 bytes \| 348.00 KiB/s, done. Total 3 (delta 2), reused 0 (delta 0) remote: Analyzing objects... (3/3) (10 ms) remote: Storing packfile... done (44 ms) remote: Storing index... done (62 ms) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] feature/myFeature-1 -&gt; feature/myFeature-1 Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin.*
+    *Delta compression using up to 8 threads. Compressing objects: 100% (3/3), done. Writing objects: 100% (3/3), 348 bytes \| 348.00 KiB/s, done. Total 3 (delta 2), reused 0 (delta 0) remote: Analyzing objects... (3/3) (10 ms) remote: Storing packfile... done (44 ms) remote: Storing index... done (62 ms) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] feature/myFeature-1 -> feature/myFeature-1 Branch feature/myFeature-1 set up to track remote branch feature/myFeature-1 from origin.*
     
     The remote shows the history of the changes:
     
@@ -147,7 +147,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
 1. Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git push origin origin:refs/heads/feature/myFeature-2
@@ -155,9 +155,9 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *Total 0 (delta 0), reused 0 (delta 0) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] origin/HEAD -&gt; refs/heads/feature/myFeature-2.*
+    *Total 0 (delta 0), reused 0 (delta 0) To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] origin/HEAD -> refs/heads/feature/myFeature-2.*
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git checkout feature/myFeature-2
@@ -193,7 +193,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     A critical bug is reported in production against the feature-1 release with the pull request in flight. To investigate the issue, you need to debug against the version of code currently deployed in production. To investigate the issue, create a new fof branch using the release\_feature1 tag:
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git checkout -b fof/bug-1 release_feature1
@@ -220,7 +220,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     ```
 1. Stage and commit the changes locally, then push changes to the remote repository:
     
-    ***myWebApp &gt;***
+    ***myWebApp >***
     
     ```CMD
     git add .
@@ -230,7 +230,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] fof/bug-1 -&gt; fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
+    *To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] fof/bug-1 -> fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
 1. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release\_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
     
     ```CMD
