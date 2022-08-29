@@ -16924,6 +16924,401 @@
       "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/6-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/5-databricks-runtime.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/3-security.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/4-tools-integration.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/2-workspace-admin.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/3-create-workspace-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/5-exercise-work-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/2-explain.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/4-understand-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/2-describe-difference-between-eager-lazy-execution.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/3-describe-fundamentals-how-catalyst-optimizer-works.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/5-describe-performance-enhancements-enabled.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/4-describe-azure-key-vault-databricks-security-scopes.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/2-describe-platform-architecture.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/6-describe-security.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/7-exercise-access-azure-storage-key-vault-backed-secrets.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/3-perform.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/5-secure-access-azure-iam-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/2-integrate-azure-synapse-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/3-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/7-exercises.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/2-read-data-csv-format.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/3-read-data-json-format.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/4-read-data-parquet-format.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/5-read-data-stored-tables-views.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/6-write-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/2-understand-architecture-of-azure-databricks-spark-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/3-understand-architecture-of-spark-job.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/4-exercise-deduplication-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/2-perform-date-time-manipulation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/3-use-aggregate-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/2-describe-dataframe.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/5-exercise-distinct-articles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/3-use-common-dataframe-methods.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/4-use-display-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/4-describe-how-azure-databricks-manages.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/2-describe-open-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/5-exercise-use-time-machine-perform-optimization.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/3-exercise-work-basic-functionality.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }
