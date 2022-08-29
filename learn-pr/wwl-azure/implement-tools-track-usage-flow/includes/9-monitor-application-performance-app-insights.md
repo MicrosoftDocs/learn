@@ -6,7 +6,7 @@
 
 Application Insights is an extensible Application Performance Management (APM) service for web developers on multiple platforms. You can use it to monitor your live web applications. It automatically detects performance anomalies, includes powerful analytics tools to help you diagnose issues, and helps you continuously improve performance and usability. It works for apps on various platforms, including .NET, Node.js, and Java EE, hosted on-premises, hybrid, or any public cloud. It integrates with your DevOps process with connection points available in various development tools. It also allows you to monitor and analyze telemetry from mobile apps through integration with Visual Studio App Center.
 
-In this lab, you'll learn how to add Application Insights to an existing web application and monitor the application via the Azure portal.<br>
+In this lab, you'll learn how to add Application Insights to an existing web application and monitor the application via the Azure portal.
 
 ## Objectives
 
