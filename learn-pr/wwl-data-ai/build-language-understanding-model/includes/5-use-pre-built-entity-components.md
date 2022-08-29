@@ -6,6 +6,6 @@ Using prebuilt components allows you to let the Language service automatically d
 
 To add a prebuilt component, you can create an entity in your project, then click "Add new prebuilt" to that entity to detect certain entities.
 
-![Screenshot of adding a prebuilt entity component.](../media/add-prebuilt-entity.png)
+[![Screenshot of adding a prebuilt entity component.](../media/add-prebuilt-entity.png)](../media/add-prebuilt-entity.png#lightbox)
 
 You can have up to five prebuilt components per entity. Using prebuilt model elements can significantly reduce the time it takes to develop a language understanding solution.
