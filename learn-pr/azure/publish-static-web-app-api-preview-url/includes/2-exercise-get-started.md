@@ -1,6 +1,6 @@
 In this exercise, you'll create an Azure Static Web App instance, including a GitHub Action that automatically builds and publishes your application.
 
-This module uses resources made available to you via the sandbox, which provides free, temporary access to an Azure subscription, along with the resources that you need to complete the exercises. Make sure you have activated the sandbox at the top of this page. When working through the exercises in this module, each unit is dependent on content you created in a previous exercise. For this reason, please choose one JavaScript framework and use it for all subsequent exercises.
+This module uses resources made available to you via the sandbox, which provides free, temporary access to an Azure subscription, along with the resources that you need to complete the exercises. Make sure you've activated the sandbox at the top of this page. As you work through the exercises in this module, each unit is dependent on content you created in a previous exercise. For this reason, select a JavaScript framework and use it for all subsequent exercises.
 
 ## Create a repository
 
@@ -38,7 +38,7 @@ You created your own GitHub repository named **my-static-web-app-and-api** in yo
    cd my-static-web-app-and-api
    ```
 
-1. Next, go to the directory for your preferred front-end framework. Each front end must run in the 
+1. Next, go to the directory for your preferred front-end framework. Each front end must run in the appropriate folder.
 
    ::: zone pivot="angular"
 
@@ -143,13 +143,13 @@ When the application bundle is generated and compiled, a browser tab automatical
 
 ::: zone pivot="vue"
 
-1. Local host for vue is `http://localhost:8080`.
+1. Local host for Vue is `http://localhost:8080`.
 
    :::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your Vue web app.":::
 
 ::: zone-end
 
-  - Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
+  - Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
 
 2. In the terminal session, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job. Press <kbd>y</kbd>+<kbd>enter</kbd> to confirm.
 
@@ -203,7 +203,7 @@ Now that you've created your own GitHub repository, you can create a Static Web 
  
    :::image type="content" source="../media/extension-create-button.png" alt-text="Add button on the static web app menu.":::
 
-1. Visual Studio Code verifies your login and prompts you to commit the changes that you made in your local repo. Select **Commit**, and then press <kbd>Enter</kbd>.
+1. Visual Studio Code verifies your identity and prompts you to commit the changes that you made in your local repo. Select **Commit**, and then press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-concierge-subscription-select.png" alt-text="Screenshot of dialog box prompting you to commit changes. Concierge subscription filter shows in the background.":::
 
@@ -274,7 +274,7 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
    :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config.":::
 
-   While you are configuring the build, Visual Studio Code reports the build status to you.
+   While you're configuring the build, Visual Studio Code reports the build status to you.
 
    :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment.":::
 
@@ -288,7 +288,7 @@ Now that you've created your own GitHub repository, you can create a Static Web 
 
     :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site.":::
 
-   Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
+   Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
 
 Congratulations! You've deployed your app to Azure Static Web Apps!
 
