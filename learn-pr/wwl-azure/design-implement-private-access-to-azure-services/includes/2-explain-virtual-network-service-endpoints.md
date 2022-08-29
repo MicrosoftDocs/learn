@@ -1,43 +1,15 @@
-Use virtual network Service Endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service Endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone and doesn't go out to the internet.
-
-:::image type="content" source="../media/service-endpoint-e15a99ae.png" alt-text="image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to Azure storage outside the v-net.":::
-
-
-By default, Azure services are all designed for direct internet access. All Azure resources have public IP addresses, including PaaS services, such as Azure SQL Database and Azure Storage. Because these services are exposed to the internet, anyone can potentially access your Azure services.
-
-Service Endpoints can connect certain PaaS services directly to your private address space in Azure, so they act like they’re on the same virtual network. Use your private address space to access the PaaS services directly. Adding Service Endpoints doesn't remove the public endpoint. It simply provides a redirection of traffic.
-
-Azure Service Endpoints are available for many services, such as:
-
- -  Azure Storage
- -  Azure SQL Database
- -  Azure Cosmos DB
- -  Azure Key Vault
- -  Azure Service Bus
- -  Azure Data Lake
-
-For a service like SQL Database, which can't be accessed until you add IP addresses to its firewall, Service Endpoints should still be considered. Using a Service Endpoint for SQL Database restricts access to specific virtual networks, providing greater isolation and reducing the attack surface.
+Resources deployed through some Azure PaaS services (such as Azure Storage and Azure SQL Database), can restrict network access to VNet through the use of virtual network service endpoints or Azure Private Link. In this unit you will learn about service endpoints. 
 
 ## What is a Service Endpoint?
 
-In your company, you may need connect Azure to external systems or services. This is done with a bundle of secure Azure DevOps properties known as Service Endpoints.
+In your company, you may need secure your critical Azure service resources to your virtual networks. Virtual Network (VNet) service endpoint provides secure and direct connectivity to Azure services over an optimized route over the Azure backbone network. Service Endpoints enables private IP addresses in the VNet to reach the endpoint of an Azure service without needing a public IP address on the VNet. Adding Service Endpoints doesn't remove the public endpoint, it simply provides a redirection of traffic.
+Service endpoints provide the following benefits:
+   - Improved security for your Azure service resources
+   - Optimal routing for Azure service traffic from your virtual network
+   - Simple to set up with less management overhead
 
-Service Endpoints include (but are not limited to) the following properties:
 
- -  Service name
- -  Description
- -  Server URL
- -  Certificates or tokens
- -  Usernames and passwords
-
-Once configured, extensions use the Service Endpoint to manage stored details and necessary operations on that service.
-
-How is Azure Private endpoint different from a service endpoint?
-
-Private Endpoints grant network access to specific resources behind a given service providing granular segmentation. Traffic can reach the service resource from on premises without using public endpoints.
-
-A service endpoint remains a publicly routable IP address. A private endpoint is a private IP in the address space of the virtual network where the private endpoint is configured.
-
+:::image type="content" source="../media/service-endpoint-e15a99ae.png" alt-text="image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to Azure storage outside the v-net.":::
 ## Preparing to Implement Service Endpoints
 
 To enable a Service Endpoint, you must do the following two things:

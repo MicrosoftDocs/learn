@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-language-understanding-model.understand-resources-for-building
+title: Understand resources for building a language understanding model
+metadata:
+  title: Understand resources for building a language understanding model
+  description: "Understand resources for building a language understanding model"
+  ms.date: 08/29/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-resources-for-building.md)]
