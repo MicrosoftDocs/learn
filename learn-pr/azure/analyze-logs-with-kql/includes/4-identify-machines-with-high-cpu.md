@@ -28,7 +28,7 @@ You can see that the `TimeGenerated`, `Computer`, `ObjectName`, `CounterName`, `
 The `ObjectName` column lists the names of all of the objects for which Azure Monitor collects data from monitored machines. The `CounterName` column holds the names of the various performance counters that Azure Monitor collects. Both of these columns hold lots of values, many of which appear multiple times. To clearly see the distinct values in these columns and determine which counters are relevant to the current analysis, let's run this query:
 
 ```kusto
-Perf
+Perf // The table you’re querying
 | distinct ObjectName,CounterName // Lists distinct combinations of ObjectName and CounterName values
 ```
 
@@ -42,7 +42,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 | Column | Description | Analysis goal | Related KQL operations |
 | --- | --- | --- | --- |
-| `TimeGenerated` | Indicates when the virtual machine generated each log. | Define the time scope of the analysis. | `TimeGenerated > ago(1d)` <br/>For more information, see [ago()](/azure/data-explorer/kusto/query/agofunction) and [Numerical operators](/azure/data-explorer/kusto/query/numoperators). |
+| `TimeGenerated` | Indicates when the virtual machine generated each log. | Define the time scope of the analysis. | `where TimeGenerated > ago(1d)` <br/>For more information, see [ago()](/azure/data-explorer/kusto/query/agofunction), [where operator](/azure/data-explorer/kusto/query/whereoperator), and [Numerical operators](/azure/data-explorer/kusto/query/numoperators). |
 | `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. | `summarize... by Computer` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
 | `ObjectName` | Holds the names of all of the objects for which the table holds performance data.  | Monitor the performance of the processor. | `ObjectName == "Processor"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
 | `CounterName` | Holds the names of all of the performance counters in the table. | Monitor the `% Processor Time` performance counter. | `CounterName == "% Processor Time"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
