@@ -1,4 +1,4 @@
-The following code is one possible solution for the challenge from the previous unit.
+The following code is one possible solution for the challenge from the previous unit:
 
 ```csharp-interactive
 for (int i = 1; i < 101; i++)
@@ -14,7 +14,7 @@ for (int i = 1; i < 101; i++)
 }
 ```
 
-This code is merely "*one possible solution*".
+This code is merely *one possible solution*.
 
 The `for` statement is important because it allows you to iterate through the code block 100 times.
 
@@ -129,7 +129,7 @@ The code should produce the following output from 1 to 100.
 100 - Buzz
 ```
 
-If you were successful, congratulations!  Continue on to the knowledge check in the next unit.
+If you were successful, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
-> If you had trouble completing this challenge, maybe you should review the previous units before you continue on.  All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
+> If you had trouble completing this challenge,  you should review the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.
