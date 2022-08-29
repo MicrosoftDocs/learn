@@ -18,7 +18,7 @@ In this module, you learn how to:
 
 - Design for Azure Monitor Logs (Log Analytics)
 
-- Design for Azure Workbooks and Insights
+- Design for Azure Workbooks and Azure insights
 
 - Design for Azure Data Explorer
 
