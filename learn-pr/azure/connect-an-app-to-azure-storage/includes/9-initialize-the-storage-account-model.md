@@ -14,7 +14,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
     using Azure.Storage.Blobs;
     ```
 
-    To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we will simply use the name _photos_.
+    To create and manage containers in your storage account from your .NET application, you use a `BlobContainerClient` object. To instantiate a `BlobContainerClient` object, you must provide the connection string to your storage account and the container name. The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character. For this application, we'll use the name _photos_.
 
 1. Add the following code to the Main section of your application to get the Azure Storage connection string and create the `BlobContainerClient` object.
 
@@ -42,7 +42,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
     dotnet run
     ```
 
-1. You can verify you have created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
+1. You can verify that you've created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
 
     ```azurecli
     az storage container list \
@@ -53,7 +53,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
 
 ::: zone pivot="javascript"
 
-The **Azure Storage Blob client library for JavaScript** contains a number of client objects for interacting with Azure Storage Blobs. At the top of this hierarchy is the `BlobServiceClient` object. To use this object in your JavaScript code:
+The **Azure Storage Blob client library for JavaScript** contains many client objects for interacting with Azure Storage Blobs. At the top of this hierarchy, is the `BlobServiceClient` object. To use this object in your JavaScript code:
 
 1. Open your *index.js* file in the code editor and add the following statement immediately after the `require('dotenv').config();` statement.
 
@@ -82,11 +82,11 @@ The **Azure Storage Blob client library for JavaScript** contains a number of cl
  1. Save the changes you have made to *index.js*.
 
   
-    Now let's add some code to execute an operation against our storage account. A storage account is organized into one or more containers which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
+    Now let's add some code to execute an operation against our storage account. A storage account is organized into one or more containers, which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
 
-    The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we will simply use the name  _photos_.
+    The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we'll use the name  _photos_.
 
-    To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though a container does not yet exist in our storage account, the `ContainerClient` can be used to create the container as well as manage it once it is created.
+    To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though a container doesn't yet exist in our storage account, the `ContainerClient` can be used to create the container and manage it once it's created.
 
 1. To obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object. Replace the `// Function Code here` comment line with these statements:
 
@@ -101,7 +101,7 @@ The **Azure Storage Blob client library for JavaScript** contains a number of cl
 
 1. Save the changes you made to the *index.js* file.
  
-1. In the Cloud Shell command line enter the following command to build and run your program, which creates the container in your storage account. 
+1. In the Cloud Shell command line, enter the following command to build and run your program, which creates the container in your storage account. 
 
     ```bash
     node index.js
@@ -110,9 +110,9 @@ The **Azure Storage Blob client library for JavaScript** contains a number of cl
     > [!TIP]
     > If you get an error about the use of the `await` keyword, make sure you have added the `async` keyword to the `main` function definition per the final step in the previous instructions.
 
-    The first time you run the program, you should see a message that the container was created successfully, with a status of true. The second and subsequent times you run your program, you will see a similar message with a status of false because the container already exists.
+    The first time you run the program, you should see a message that the container was created successfully, with a status of true. The second and subsequent times you run your program, you'll see a similar message with a status of false because the container already exists.
 
-1. You can verify you have created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
+1. You can verify that you've created the container by running the following Azure CLI command. Remember to replace `<name>` with the name of your storage account.
 
     ```azurecli
     az storage container list \
@@ -121,4 +121,4 @@ The **Azure Storage Blob client library for JavaScript** contains a number of cl
     
 ::: zone-end
 
-Now that our program is connecting to our Azure storage account and we have created a _photos_ container, let's have our program upload an image to it.
+Now that our program is connecting to our Azure storage account and we've created a _photos_ container, let's have our program upload an image to it.
