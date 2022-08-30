@@ -71,6 +71,18 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | where InstanceName == "_Total"  // Retrieves data related to the total usage for all drives on a virtual disk  
     ```
 
+1. Retrieve the last counter value collected for each counter for every computer: 
+
+    ```kusto
+    Perf
+    | where TimeGenerated > ago(1d)
+    | where ObjectName == "LogicalDisk" or // The object name used in Windows records
+    ObjectName == "Logical Disk" // The object name used in Linux records
+    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
+    | where InstanceName == "_Total"  // Retrieves data related to the total usage for all drives on a virtual disk  
+|   summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // 
+    ```
+
 1. 
 
 ```kusto
@@ -81,9 +93,12 @@ ObjectName == "Logical Disk" // The object name used in Linux records
 | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
 | where InstanceName == "_Total"
 | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
+| extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
+| extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
+| extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
+| extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
+| extend packed = pack(CounterName, CounterValue)
 ```
-
-
 
 ```kusto
 Perf
