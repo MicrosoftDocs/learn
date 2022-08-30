@@ -1,4 +1,4 @@
-In this module, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMesh Pro. You also learned how to add dynamic tooltip UI elements to provide the user with additional information, and you learned how to manipulate 3D objects.
+In this module, you learned how to create a basic user interface using MRTK's provided button and menu prefabs alongside Unity's TextMesh Pro. You also learned how to add dynamic tooltip UI elements to provide the user with additional information, and you learned how to manipulate 3D objects.
 
 User experience plays a vital role in any application, and you can improve the user experience of any project by making use of MRTK's UI components.
 
