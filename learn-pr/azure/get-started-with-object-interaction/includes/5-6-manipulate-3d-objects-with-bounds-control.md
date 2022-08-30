@@ -4,7 +4,7 @@ What fun would it be when you place holograms in the surrounding, but things get
 
 * **Object Manipulator(Script)**: The ObjectManipulator script makes an object movable, scalable, and rotatable using one or both hands. The object manipulator can be configured to manipulate how the item will reply to numerous inputs. The script must work with maximum sorts of interaction, including HoloLens 2 articulated hand, HoloLens 2 hand rays, HoloLens 1 gaze and gestures, and immersive headset motion controller input.
 
-* **NearInteractionGrabbable**: The NearInteractionGrabbable component helps you grab the object near his/her tracked hands.
+* **NearInteractionGrabbable**: The NearInteractionGrabbable component helps you grab the object near the tracked hands.
 
 ## Bounds control
 
