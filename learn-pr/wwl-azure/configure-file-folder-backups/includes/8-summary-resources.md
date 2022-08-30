@@ -13,4 +13,4 @@ You can learn more by reviewing the following.
 
  -  [What is the Azure Backup service?](/azure/backup/backup-overview)
  -  [About Azure file share backup](/azure/backup/azure-file-share-backup-overview)
- -  [Learn - Implement hybrid backup and recovery with Windows Server IaaS](/learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/)
+ -  [Learn - Introduction to Azure backup](/learn/modules/intro-to-azure-backup/)

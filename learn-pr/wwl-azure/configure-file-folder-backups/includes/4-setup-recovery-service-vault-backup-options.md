@@ -9,4 +9,4 @@ The Recovery Service Vault can also be used to backup on-premises files and fold
 <br>
 
 > [!NOTE]
-> Within an Azure subscription, you can create up to 25 Recovery Services vaults per region.
+> Within an Azure subscription, you can create up to 500 Recovery Services vaults per region.
