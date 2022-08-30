@@ -13,7 +13,7 @@ summary: Azure Architects design and recommend logging and monitoring solutions.
 abstract: |
   In this module, you learn how to:
   - Design for Azure Monitor data sources
-  - Design for Azure Monitor Logs (Log Analytics)
+  - Design for Azure Monitor Logs (Log Analytics) workspaces
   - Design for Azure Workbooks and Azure insights
   - Design for Azure Data Explorer
 prerequisites: |

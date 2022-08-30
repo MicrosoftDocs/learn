@@ -1,4 +1,4 @@
-Azure Monitor stores [log](/azure/azure-monitor/logs/data-platform-logs) data in a Log Analytics workspace. A workspace is an Azure resource that serves as an administrative boundary or geographic location for data storage. The workspace is also a container where you collect and aggregate data.
+Azure Monitor stores [log](/azure/azure-monitor/logs/data-platform-logs) data in an Azure Monitor Logs (Log Analytics) workspace. A workspace is an Azure resource that serves as an administrative boundary or geographic location for data storage. The workspace is also a container where you collect and aggregate data.
 
 While you can deploy one or more workspaces in your Azure subscription, there are several considerations you should understand to ensure your initial deployment follows Microsoft guidelines. The workspace should provide a cost effective, manageable, and scalable deployment that meets your organization's needs.
 
@@ -7,13 +7,13 @@ While you can deploy one or more workspaces in your Azure subscription, there ar
 | Premium Blob Storage | Legal hold policies |
 | Hot, cool, and archive access tiers | Time-based retention policies | 
 
-### Things to know about Log Analytics workspaces
+### Things to know about Azure Monitor Logs workspaces
 
-Review these characteristics of Log Analytics workspaces and consider how they can contribute to your monitoring solution for Tailwind Traders.
+Review these characteristics of Azure Monitor Logs workspaces and consider how they can contribute to your monitoring solution for Tailwind Traders.
 
 - In a workspace, you can isolate data by granting different users access rights following Microsoft recommended design strategies.
 
-- Data in a Log Analytics workspace is organized into tables. Each table stores different kinds of data and has its own unique set of properties based on the resource that's generating the data. Most data sources write to their own tables in a Log Analytics workspace.
+- Data in an Azure Monitor Logs workspace is organized into tables. Each table stores different kinds of data and has its own unique set of properties based on the resource that's generating the data. Most data sources write to their own tables in an Azure Monitor Logs workspace.
 
 - A workspace enables you to configure settings like [pricing tier](/azure/azure-monitor/logs/manage-cost-storage), [retention](/azure/azure-monitor/logs/manage-cost-storage#log-data-retention-and-archive), and [data capping](/azure/azure-monitor/logs/daily-cap) based on administrative boundaries or geographic locations.
 
@@ -21,9 +21,9 @@ Review these characteristics of Log Analytics workspaces and consider how they c
 
 - Workspaces are hosted on physical clusters. By default, the system creates and manages these clusters. If your system ingests more than 4 TB of data per day, you create your own dedicated clusters for your workspaces to support greater control and higher ingestion rate.
 
-### Things to consider when using Log Analytics workspaces
+### Things to consider when using Azure Monitor Logs workspaces
 
-Now you're ready to review considerations for designing with Log Analytics workspaces in the Tailwind Traders architecture.
+Now you're ready to review considerations for designing with Azure Monitor Logs workspaces in the Tailwind Traders architecture.
 
 - **Consider your access control strategy**. As you plan for how many workspaces to use in the Tailwind Traders organization, consider these potential requirements:
    - Is your organization a global company? Do you need log data stored in specific regions for data sovereignty or compliance reasons?
@@ -38,7 +38,7 @@ Now you're ready to review considerations for designing with Log Analytics works
    | **Decentralized** | Each team has their own workspace created in a resource group they own and manage. Log data is segregated per resource. In this scenario, the workspace can be kept secure and access control is consistent with resource access. A disadvantage of this module is that it can be difficult to cross-correlate logs. Users who need a broad view of many resources can't analyze the data in a meaningful way. |
    | **Hybrid** | A hybrid approach can be complicated by security audit compliance requirements. Many organizations implement both deployment models in parallel. The hybrid design commonly results in a complex, expensive, and hard-to-maintain configuration with gaps in logs coverage. |
 
-- **Consider access mode**. Plan for how your users can access Log Analytics workspaces and define the scope of data they can access. Tailwind Traders users have two options for accessing their data: 
+- **Consider access mode**. Plan for how your users can access Azure Monitor Logs workspaces and define the scope of data they can access. Tailwind Traders users have two options for accessing their data: 
 
    | Access mode | Description |
    | --- | --- |
@@ -51,7 +51,7 @@ Now you're ready to review considerations for designing with Log Analytics works
 
 ### Recommendations
 
-As you consider your options for implementing Logs Analytics workspaces and access control in your monitoring and logging solution, review these recommendations. This scenario shows a recommended design for a single workspace in your IT organization's subscription. 
+As you consider your options for implementing Azure Monitor Logs workspaces and access control in your monitoring and logging solution, review these recommendations. This scenario shows a recommended design for a single workspace in your IT organization's subscription. 
 
 :::image type="content" source="../media/workspace-design.png" alt-text="Diagram that shows how to design an Azure Monitor Logs deployment." lightbox="../media/workspace-design-expanded.png" border="false":::
 

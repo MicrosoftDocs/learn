@@ -17,29 +17,29 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which Log Analytics Workspace deployment model best supports the company need to host all logs in a single location?"
+  - content: "Which Log Analytics workspace deployment model **best** supports the company need to host all logs in a single location?"
     choices:
     - content: "Decentralized"
       isCorrect: false
       explanation: "Incorrect. The decentralized model doesn't meet the need for searching across all resources."
     - content: "Centralized"
       isCorrect: true
-      explanation: "Correct. The centralize model meets the company needs."      
+      explanation: "Correct. The centralized model meets the company needs."      
     - content: "Hybrid"
       isCorrect: false
-      explanation: "Incorrect. The hybrid model isn't needed based on these requirements."
+      explanation: "Incorrect. The hybrid model isn't the best approach based on the company requirements."
 
   - content: "What solution should be used to log user sign-in activity?"
     choices:
-    - content: "Virtual Machines Insights"
+    - content: "Virtual machines insights"
       isCorrect: false
-      explanation: "Incorrect. Azure Insights can be used for applications, VMs, and containers but not user sign-in activity."
-    - content: "Azure Alerts"
+      explanation: "Incorrect. Azure insights can be used for applications, VMs, and containers, but they're not available for user sign-in activity."
+    - content: "Azure Monitor alerts"
       isCorrect: false
-      explanation: "Incorrect. Azure Alerts can notify you of an activity log event, but it doesn't log user sign-in activity."
-    - content: "Azure Active Directory Audit Logs"
+      explanation: "Incorrect. Azure alerts can be used to send notifications about activity log events, but they don't log user sign-in activity."
+    - content: "Azure Active Directory audit logs"
       isCorrect: true
-      explanation: "Correct. Azure AD audit logs contain the history of sign-in activity. The logs also contain an audit trail of tenant changes."
+      explanation: "Correct. Azure AD audit logs contain the history of sign-in activity. The logs also have an audit trail of tenant changes."
       
   - content: "What monitoring tool should be used to measure user experience and analyze user behavior for all external facing applications?"
     choices:
@@ -48,7 +48,7 @@ quiz:
       explanation: "Correct. Application Insights can measure user experience and analyze user behavior."
     - content: "Azure Monitor container insights"
       isCorrect: false
-      explanation: "Incorrect. Container insights can show the health and performance of your Kubernetes workloads, but this choice doesn't specifically measure user experience or behavior."
-    - content: "Azure Activity log"
+      explanation: "Incorrect. Azure container insights can show the health and performance of your Kubernetes workloads, but these insights don't specifically measure user experience or behavior."
+    - content: "Azure Monitor activity log"
       isCorrect: false
-      explanation: "Incorrect. Azure Activity log doesn't measure application user experience or behavior."
+      explanation: "Incorrect. The Azure activity log doesn't measure application user experience or behavior."

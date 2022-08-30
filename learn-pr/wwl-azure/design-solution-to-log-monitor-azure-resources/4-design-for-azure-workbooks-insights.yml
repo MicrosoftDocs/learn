@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solution-to-log-monitor-azure-resources.design-for-azure-workbooks-insights
-title: Design for Azure Workbooks and insights
+title: Design for Azure Workbooks and Azure insights
 metadata:
-  title: Design for Azure Workbooks and insights
-  description: "Design for Azure Workbooks and insights"
+  title: Design for Azure Workbooks and Azure insights
+  description: "Design for Azure Workbooks and Azure insights"
   ms.date: 08/29/2022
   author: wwlpublish
   ms.author: jileary

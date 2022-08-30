@@ -1,4 +1,4 @@
-In this module, we explore the monitoring solutions available in Azure. We assess Azure Monitor and its features, such as Application Insights and Azure Monitor Logs to analyze infrastructure and application performance and availability.
+In this module, we explore the monitoring solutions available in Azure. We assess Azure Monitor and its features, such as Application Insights and Azure Monitor Logs (Log Analytics) to analyze infrastructure and application performance and availability.
 
 ## Meet Tailwind Traders
 
@@ -16,7 +16,7 @@ In this module, you learn how to:
 
 - Design for Azure Monitor data sources
 
-- Design for Azure Monitor Logs (Log Analytics)
+- Design for Azure Monitor Logs (Log Analytics) workspaces
 
 - Design for Azure Workbooks and Azure insights
 
