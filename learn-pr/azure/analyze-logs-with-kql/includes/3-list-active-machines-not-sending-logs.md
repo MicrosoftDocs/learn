@@ -111,7 +111,7 @@ Solution:
     | extend AgentType= iif(AgentType == "Direct Agent" and OSType =="Linux", "OMS", AgentType) // Changes the AgentType value from "Direct Agent" to "OMS" for Linux machines
     ```
 
-1. Rename the the `Version` column to `AgentVersion` for clarity, add another `summarize` line to find unique combinations of agent type, agent version, and operating system type, and list all computers running each combination of agent type and agent version using the KQL `make_set()` aggregate function: 
+1. Rename the the `Version` column to `AgentVersion` for clarity, add another `summarize` line to find unique combinations of agent type, agent version, and operating system type, and use the KQL `make_set()` aggregate function to list all computers running each combination of agent type and agent version: 
 
     ```kusto    
     Heartbeat // The table you’re querying
