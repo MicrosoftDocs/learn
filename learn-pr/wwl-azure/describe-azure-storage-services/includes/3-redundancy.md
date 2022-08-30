@@ -32,7 +32,7 @@ Microsoft recommends using ZRS in the primary region for scenarios that require 
 
 ## Redundancy in a secondary region
 
-For applications requiring high durability, you can choose to additionally copy the data in your storage account to a secondary region that is hundreds of miles away from the primary region. If your storage account is copied to a secondary region, then your data is durable even if complete regional outage or a disaster in which the primary region isn't recoverable.
+For applications requiring high durability, you can choose to additionally copy the data in your storage account to a secondary region that is hundreds of miles away from the primary region. If the data in your storage account is copied to a secondary region, then your data is durable even in the event of a catastrophic failure that prevents the data in the primary region from being recovered.
 
 When you create a storage account, you select the primary region for the account. The paired secondary region is based on Azure Region Pairs, and can't be changed.
 

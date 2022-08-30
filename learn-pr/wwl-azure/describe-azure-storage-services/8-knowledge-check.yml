@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/17/2022
+  ms.date: 08/30/2022
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Azure File Sync"
       isCorrect: true
-      explanation: "Azure File Sync maintains a bidirectional synchronization of files between your on-premises and cloud Windows servers."
+      explanation: "Azure File Sync maintains a bidirectional synchronization of files between you on-premises and cloud Windows servers."
     - content: "Azure Storage Explorer"
       isCorrect: false
       explanation: "Azure Storage Explorer lets you navigate your Azure storage account with a graphical interface, similar to Windows Explorer."
