@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-files.summary
+title: Summary
+metadata:
+  title: Summary
+  description: TBD
+  ms.date: 08/30/2022
+  author: kendownie
+  ms.author: kendownie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

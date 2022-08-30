@@ -1,0 +1,30 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-files
+metadata:
+  title: TBD
+  description: TBD
+  ms.date: 08/30/2022
+  author: kendownie
+  ms.author: kendownie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Files
+summary: TBD
+abstract: TBD
+prerequisites: TBD
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+units:
+- learn.introduction-to-azure-files.introduction
+- learn.introduction-to-azure-files.what-is-azure-files
+- learn.introduction-to-azure-files.what-is-azure-file-sync
+- learn.introduction-to-azure-files.identity-and-access-control
+- learn.introduction-to-azure-files.knowledge-check
+- learn.introduction-to-azure-files.summary
+badge:
+  uid: learn.introduction-to-azure-files-badge

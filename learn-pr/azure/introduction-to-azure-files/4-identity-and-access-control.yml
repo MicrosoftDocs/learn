@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-files.identity-and-access-control
+title: Identity and Access Control
+metadata:
+  title: Identity and Access Control
+  description: TBD
+  ms.date: 08/30/2022
+  author: kendownie
+  ms.author: kendownie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-identity-and-access-control.md)]

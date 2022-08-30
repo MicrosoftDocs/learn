@@ -1,0 +1,101 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-files.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: TBD
+  ms.date: 08/30/2022
+  author: kendownie
+  ms.author: kendownie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: How are premium file shares billed?
+    choices:
+    - content: Pay only for what you use.
+      isCorrect: false
+      explanation: "Incorrect: Premium file shares are only available in a provisioned billing model, in which you pay for that storage capacity regardless of whether you use it or not."
+    - content: Pay for as much you provision.
+      isCorrect: true
+      explanation: "Correct: Premium file shares are only available in a provisioned billing model, in which you pay for that storage capacity regardless of whether you use it or not."
+    - content: Pay as you go.
+      isCorrect: false
+      explanation: "Incorrect: Premium file shares are only available in a provisioned billing model, in which you pay for that storage capacity regardless of whether you use it or not."
+    - content: Pay per transaction.
+      isCorrect: false
+      explanation: "Incorrect: Premium file shares are only available in a provisioned billing model, in which you pay for that storage capacity regardless of whether you use it or not."
+  - content: Azure customers can switch from premium file share to hot, cool, or transaction optimized file shares at any time.
+    choices:
+    - content: True.
+      isCorrect: false
+      explanation: "Incorrect: You can’t switch between premium and standard tiers. However, if you have standard tier file shares, you can switch between hot, cool, and transaction optimized."
+    - content: False.
+      isCorrect: true
+      explanation: "Correct: You can’t switch between premium and standard tiers. However, if you have standard tier file shares, you can switch between hot, cool, and transaction optimized."
+  - content: You can’t use Azure Files without Azure File Sync.
+    choices:
+    - content: True.
+      isCorrect: false
+      explanation: "Correct: You don’t need Azure File Sync to use Azure Files."
+    - content: False.
+      isCorrect: true
+      explanation: "Correct: You don’t need Azure File Sync to use Azure Files."
+  - content: Premium file shares enable highly I/O-intensive workloads, with high throughput and low latency.
+    choices:
+    - content: True.
+      isCorrect: true
+      explanation: "Correct: Premium file shares store data on modern, high performance solid-state drives (SSDs), while the standard tier uses traditional hard disk drives (HDDs)."
+    - content: False.
+      isCorrect: false
+      explanation: "Incorrect: Premium file shares store data on modern, high performance solid-state drives (SSDs), while the standard tier uses traditional hard disk drives (HDDs)."
+  - content: NFS is supported by all tiers of Azure Files.
+    choices:
+    - content: True.
+      isCorrect: false
+      explanation: "Incorrect: NFS is only supported by premium file shares."
+    - content: False.
+      isCorrect: true
+      explanation: "Correct: NFS is only supported by premium file shares."
+  - content: What redundancies are supported by Azure Files premium tier?
+    choices:
+    - content: LRS; ZRS.
+      isCorrect: true
+      explanation: "Correct: Premium file shares are only universally available with LRS (locally redundant storage), with ZRS (zone redundant storage) available in some regions."
+    - content: LRS, ZRS, GRS.
+      isCorrect: false
+      explanation: "Incorrect: Premium file shares are only universally available with LRS (locally redundant storage), with ZRS (zone redundant storage) available in some regions."
+    - content: LRS, ZRS, GRS, GZRS.
+      isCorrect: false
+      explanation: "Incorrect: Premium file shares are only universally available with LRS (locally redundant storage), with ZRS (zone redundant storage) available in some regions."
+  - content: Which protocol supports identity-based authentication for Azure file shares?
+    choices:
+    - content: SMB.
+      isCorrect: true
+      explanation: "Correct: Identity-based authentication is only supported over SMB today."
+    - content: NFS.
+      isCorrect: false
+      explanation: "Incorrect: Identity-based authentication is only supported over SMB today."
+    - content: REST.
+      isCorrect: false
+      explanation: "Incorrect: Identity-based authentication is only supported over SMB today."
+  - content: Identity-based authentication is the most secure and recommended access mechanism for Azure file shares over SMB.
+    choices:
+    - content: True.
+      isCorrect: true
+      explanation: "Correct: Identity-based authentication is the most secure and recommended access mechanism for Azure file shares over SMB."
+    - content: False.
+      isCorrect: false
+      explanation: "Incorrect: Identity-based authentication is the most secure and recommended access mechanism for Azure file shares over SMB."
+  - content: Storage account keys can be used by anyone and recommended for organization-wide access.
+    choices:
+    - content: True.
+      isCorrect: false
+      explanation: "Incorrect: Storage account keys should only be used by administrators and are not recommended for organization wide access"
+    - content: False.
+      isCorrect: true
+      explanation: "Correct: Storage account keys should only be used by administrators and are not recommended for organization wide access."
