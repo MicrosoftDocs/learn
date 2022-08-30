@@ -1,5 +1,5 @@
 
-Design your own infrastructure architecture and flow to support a high-availability scenario for a fictional company. You'll be provided with high-level specifications on the application design, infrastructure choices, data model, and monitoring needed to complete this project.
+Build on an existing architecture to support a high-availability scenario for a fictional company. You'll be provided with high-level specifications on the application design, infrastructure choices, data model, and monitoring needed to complete this project. 
 
 ## Example scenario
 
