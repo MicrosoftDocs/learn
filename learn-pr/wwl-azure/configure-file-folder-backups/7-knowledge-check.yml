@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "It is time to backup files and folders to Azure. Which of these steps should be completed first?"
+  - content: "It's time to back up files and folders to Azure. Which of these steps should be completed first?"
     choices:
     - content: "Download the agent and credential file."
       isCorrect: false
@@ -32,18 +32,18 @@ quiz:
     choices:
     - content: "A dedicated backup server."
       isCorrect: false
-      explanation: "Incorrect. Azure Backup does not require a dedicated backup server."
+      explanation: "Incorrect. Azure Backup doesn't require a dedicated backup server."
     - content: "A recovery service vault."
       isCorrect: true
       explanation: "Correct. Azure Backup requires a recovery services vault."
     - content: "An Azure blob storage container."
       isCorrect: false
-      explanation: "Incorrect. Azure Backup does not require a blob storage container."
+      explanation: "Incorrect. Azure Backup doesn't require a blob storage container."
   - content: "The infrastructure manager wants to know more about Azure Backup. Which of the following most accurately describes Azure Backup?"
     choices:
     - content: "Azure backup has unlimited data transfer."
       isCorrect: true
-      explanation: "Correct. Azure Backup doesn't limit the amount of inbound or outbound data that is transferred. Azure Backup also does not charge for the data that's transferred."
+      explanation: "Correct. Azure Backup doesn't limit the amount of inbound or outbound data that is transferred. Azure Backup also doesn't charge for the data that's transferred."
     - content: "Azure Backup doesn't provide data encryption."
       isCorrect: false
       explanation: "Incorrect. Azure Backup provides solutions for securing data in transit and at rest."
