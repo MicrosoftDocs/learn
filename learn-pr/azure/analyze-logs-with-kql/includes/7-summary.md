@@ -69,5 +69,10 @@ Analyzing log data in Log Analytics using KQL lets you gain crucial insights and
           * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
           * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
  -->
+## References
+
+- [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview)
+- [Azure Monitor data reference](/azure/azure-monitor/logs/log-query-overview)
+- [Query quick reference guide](/azure/data-explorer/kql-quick-reference)
 
 <!-- Do not include any other content -->
