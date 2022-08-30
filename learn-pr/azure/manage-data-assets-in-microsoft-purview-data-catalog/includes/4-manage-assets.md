@@ -46,7 +46,7 @@ Here are the currently editable aspects of an asset:
 1. **Asset description** - should give a synopsis of what an asset represents. You can use rich text formatting to provide hyperlinks, bold text, lists, or tables to provide information to your users.
 1. **Classification** - identify the kind of data being represented. Classifications will be applied during the scanning process, depending on your scanning rules, but you can also add them manually, or create and add custom classifcations.
 1. **Glossary terms** - a vocabulary for business terms created by your organization that can be used to categorize and relate assets across your teams. We'll talk more about them in the next section.
-1. **Certified** - a flag that can only be added by a data curator, and should be used to mark data sources that can be trusted.
+1. **Certified** - a flag that can only be added by a data curator, and should be used to mark data sources that can be trusted. Certified assets are also boosted in results.
 1. **Managed attributes** - attributes created by an organization to provide additional context or information about an asset.
 
 #### Schema

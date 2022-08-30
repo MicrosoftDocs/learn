@@ -104,4 +104,26 @@ Now that we've made an edit to an individual asset, let's add some information a
 
 ## Asset certification
 
+1. You'll need to be a data curator to be able to certify an asset.
+
+1. Though it is not required, an asset should be reviewed, and have it's description and other aspects updated and regularly maintainted before it is certified, to verify that it is a good data source for use.
+
+1. Navigate to the asset details of your asset and select **Edit**.
+
+1. On the **Overview** page, toggle the **Certified** feild to **Yes**
+
+1. Save your changes.
+
+1. Your asset will now have a **Certified** label visible to all users.
+
 ## Moving an asset
+
+1. Open the overview page of your asset.
+
+1. Select the ellipsis next to the collection path of the asset.
+
+1. Select **Move to another collection**
+
+1. In the right side panel, choose the target collection you want to move to. You can only see collections where you have permissions, and the asset can only be added to subcollections of the data source collection.
+
+1. Select **Move**.
