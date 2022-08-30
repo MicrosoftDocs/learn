@@ -1,8 +1,8 @@
-In this challenge, you'll write code that will use a formula to convert a temperature from degrees Fahrenheit to Celsius.  You'll print the result in a formatted message to the user.
+In this challenge, you'll write code that will use a formula to convert a temperature from degrees Fahrenheit to Celsius. You'll print the result in a formatted message to the user.
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor then select the `del` or `backspace` key to delete it.
 
 ### Step 2: Write code in the .NET Editor to calculate Celsius given the current temperature in Fahrenheit.
 
@@ -23,7 +23,8 @@ When you're finished, the message should resemble the following output:
 ```output
 The temperature is 34.444444444444444444444444447 Celsius.
 ```
+
 > [!Note]
-> Admittedly, we would prefer to not see so many values after the decimal point.  Ideally the value would be formatted to a single value after the decimal point: `34.4`.  In the module "Format values for display using composite formatting and string interpolation in C#" we'll learn how to format numbers for proper display to the user.
+> Admittedly, we would prefer to not see so many values after the decimal point. Ideally the value would be formatted to a single value after the decimal point: `34.4`.  In the module [Format alphanumeric data for presentation in C#](/learn/modules/csharp-format-strings/), we'll learn how to format numbers for proper display to the user.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

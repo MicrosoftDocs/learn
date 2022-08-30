@@ -15656,871 +15656,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/xamarin/consume-rest-services/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/consume-rest-services/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/consume-rest-services/includes/2-detect-network-connectivity.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/2-detect-network-connectivity",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/consume-rest-services/includes/3-consume-rest-service-with-httpclient.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/3-consume-rest-web-service",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/consume-rest-services/includes/4-exercise-consume-rest-service-with-httpclient.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/5-exercise-consume-rest-web-service",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/consume-rest-services/includes/5-use-platform-specific-network-features",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/4-use-platform-specific-features",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/consume-rest-services/includes/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/consume-rest-services-maui/6-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/build-mobile-and-desktop-apps/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/2-create-a-xf-project-in-vs.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/build-mobile-and-desktop-apps/3-create-a-maui-project-visual-studio",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/3-exercise-create-your-first-xamarin-forms-application.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/build-mobile-and-desktop-apps/4-exercise-create-your-first-maui-app",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/4-design-your-first-xamarin-forms-ui.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/build-mobile-and-desktop-apps/5-add-controls-to-the-ui",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/5-exercise-create-phone-number-translator-app.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/build-mobile-and-desktop-apps/6-exercise-create-phone-number-translator-app",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-a-mobile-app-with-xamarin-forms/includes/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/build-mobile-and-desktop-apps/7-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/2-understand-renderers.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/3-customize-existing-elements-with-derived-renderers.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/5-create-new-element-and-renderer.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/4-exercise-extend-an-existing-renderer.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/6-exercise-create-custom-element.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/7-Send-notifications-between-renderer-element.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/8-exercise-communicate-between-renderer-element.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-custom-controls-with-forms-renderers/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/handlers/customize",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/2-implement-stack-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/2-implement-flyout-navigation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/3-exercise-navigate-between-pages-using-stack-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/3-exercise-implement-flyout-navigation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/4-display-content-requiring-user-action-using-modal-pages.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/5-implement-tab-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/4-implement-tab-navigation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/6-exercise-navigate-between-pages-using-tab-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/5-exercise-implement-tab-navigation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/8-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/2-specify-the-size-of-a-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/2-specify-size-view",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/3-exercise-explore-alignment-options.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/3-exercise-explore-alignment-options",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/4-arrange-view-with-stacklayout.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/4-arrange-views-stacklayout",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/5-exercise-use-stacklayout-to-build-a-ui.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/5-exercise-stacklayout-build-user-interface",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/6-arrange-view-with-grid.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/6-arrange-views-grid",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/7-exercise-use-grid-to-build-a-ui.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/7-exercise-grid-build-user-interface",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-layout-in-xamarin-forms-xaml-pages/includes/8-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/customize-xaml-pages-layout/8-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/2-benefits-of-using-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/2-xaml-benefits",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/3-types-and-properties-in-xamarin-forms-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/3-types-propeties-maui-xaml",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/4-event-handling-in-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/4-event-handling-xaml",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/5-exercise-create-your-first-xaml-page.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/5-exercise-create-first-xaml-page",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/6-xaml-markup-extensions.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/6-xaml-markup-extensions",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/7-platform-specific-values-in-xaml.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/7-platform-specific-values-xaml",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/8-exercise-add-behavior-to-your-xaml-page.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/8-exercise-add-behavior-xaml-page",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/create-ui-in-xamarin-forms-apps-with-xaml/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-user-interface-xaml/9-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/2-create-a-custom-cell-layout.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/3-use-multiple-cell-layouts-in-a-listview.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/4-exercise-create-and-select-custom-cells.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/5-separate-data-into-groups.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/6-exercise-group-rows-by-first-letter.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/customize-xamarin-forms-listview/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/2-what-is-mvvm.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/3-use-a-viewmodel.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/4-exercise-manage-selection-with-a-viewmodel.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/5-use-commands-in-a-viewmodel.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms/includes/6-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/2-define-and-use-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/2-define-and-use-resources",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/3-exercise-use-page-level-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/3-exercise-use-page-level-resources",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/4-use-and-update-dynamic-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/4-use-and-update-dynamic-resources",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/5-exercise-use-dynamicresource-to-update-elements.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/5-exercise-use-dynamic-resources-to-update-element",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/6-create-consistent-ui-with-styles.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/6-create-consistent-ui-by-using-styles",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/7-exercise-create-and-apply-a-style.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/7-exercise-create-and-apply-a-style",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/8-create-and-use-applicationwide-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/8-create-and-use-application-wide-resources",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/9-exercise-use-application-wide-resources.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/9-exercise-use-application-wide-resources",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/10-apply-user-accessibility-choices-with-builtin-styles.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles/includes/11-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/use-shared-resources/11-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/2-accessibility-features.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/3-exercise-enable-screen-readers.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/4-automation-properties.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/5-exercise-add-automation-properties.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/6-keyboard-accessibility.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/7-exercise-keyboard-accessibility.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-accessibility/includes/8-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/accessibility",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/2-display-collection-with-listview.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/3-exercise-display-collection-with-listview.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/4-dynamically-add-and-remove-listview-items.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/5-customize-listview-rows.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/6-exercise-customize-row-using-built-in-cell-types.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-collections-in-xamarin-forms-apps-with-listview/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/user-interface/controls/collectionview/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/2-choose-between-split-and-pop-over-for-your-master-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/3-define-ui-for-drawer-navigation.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/4-exercise-define-drawer-navigation-ui-using-xamarin-forms.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/5-navigate-between-pages-in-a-drawer-menu.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/6-exercise-respond-to-item-selection-in-your-drawer-menu.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/7-display-a-collection-with-split-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/8-exercise-display-a-collection-with-master-detail-split-view.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-multi-page-apps/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/2-share-code-using-net-standard-libraries.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/3-use-an-interface-to-create-an-abstraction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/4-use-an-abstract-class-to-create-an-abstraction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/5-use-inversion-of-control-to-manage-platform-specific-dependencies.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/6-locate-dependencies-using-the-factory-pattern.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/7-exercise-use-the-factory-pattern-to-access-a-dependency-from-shared-code.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/8-use-a-service-locator-to-register-and-retrieve-dependencies.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/9-exercise-add-an-abstraction-and-service-locator-into-your-project-to-find-and-use-a-platform-specific-feature.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/10-use-an-ioc-container-to-automatically-inject-dependencies.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/11-exercise-switch-to-an-ioc-container-and-inject-your-dependency-into-your-code.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/explore-cross-platform-design-patterns/includes/12-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/2-what-is-app-center.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/3-how-app-center-build-works.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/4-how-app-center-test-works.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/5-how-app-center-distribute-works.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/6-how-app-center-diagnostics-works.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/7-how-app-center-analytics-works.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/8-exercise-create-app-center-account.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/intro-to-app-center/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/appcenter/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/2-what-is-xamarin-android.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/3-exercise-create-a-xamarin-android-tipcalculator-app.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/4-build-a-ui-for-an-activity.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/5-exercise-add-views-to-the-tipcalculator-app-ui.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/6-write-behavior-for-an-activity.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/7-exercise-add-behavior-to-the-tipcalculator-app-activity.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/8-update-your-android-sdk.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-android/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/android/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/2-what-is-xamarin-ios.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/3-create-a-xamarin-ios-app.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/4-exercise-create-a-tip-calculator-app.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/5-explore-ios-terminology.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/6-add-views-to-your-app.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/7-add-controls-and-behavior-to-your-app.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/8-exercise-add-ui-and-behavior-to-a-tip-calculator-app.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/introduction-to-xamarin-ios/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/xamarin/ios/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/2-prepare-your-application-for-publishing.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/3-preparing-for-release.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/4-link-your-application.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/5-preserve-critical-code.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/6-publish-your-application.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/prepare-to-publish-your-xamarin-application/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/2-use-databinding-in-xamarin-forms.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/3-exercise-replace-code-with-data-bindings.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/4-customize-databinding-capabilities.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/5-exercise-implement-inotifypropertychanged.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/6-databinding-mismatched-types.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/7-exercise-use-value-converter.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding/includes/8-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/fundamentals/data-binding/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/store-local-data/1-introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/2-compare-storage-options.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/store-local-data/2-compare-storage-options",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/3-store-data-locally-with-sqlite.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/store-local-data/3-store-data-locally-with-sqlite",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/4-exercise-store-data-locally-with-sqlite.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/store-local-data/4-exercise-store-data-locally-with-sqlite",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/5-use-sqlite-asynchronously.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/store-local-data/5-use-sqlite-asynchronously",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/6-exercise-use-sqlite-asynchronously.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/store-local-data/6-exercise-use-sqlite-asynchronously",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/store-local-data-with-sqlite/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/store-local-data/7-summary",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/2-apply-an-effect-to-an-element.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/3-create-a-platform-effect.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/4-exercise-create-an-effect.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/5-configure-an-effect-with-attached-properties.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/6-exercise-add-configurable-properties-to-an-effect.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/use-effects-in-xamarin-forms/includes/7-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dotnet/maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/1-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/2-display-two-screens.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/3-exercise-add-twopaneview.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/4-span-unspan.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/5-exercise-use-dualscreeninfo.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/6-larger-screens.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/7-exercise-tablet-support.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/8-hinge-angle.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/xamarin/xamarin-forms-dual-screen/includes/9-summary.md",
-      "redirect_url": "https://docs.microsoft.com/dual-screen/xamarin/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/paths/build-mobile-apps-with-xamarin-forms/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/build-apps-with-dotnet-maui/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/paths/customize-your-xamarin-forms-apps/index.yml",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/build-apps-with-dotnet-maui/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/wwl-azure/configure-network-routing-endpoints/5-determine-service-endpoint-uses.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/configure-network-routing-endpoints/4-determine-service-endpoint-uses",
       "redirect_document_id": true
@@ -17143,7 +16278,7 @@
     {
       "source_path": "learn-pr/azure/visual-studio-github-push/2-add-github-account.md",
       "redirect_url": "https://docs.microsoft.com/visualstudio/version-control/?wt.mc_id=learnredirect_githubvscode_content_cnl_csaapp",
-      "redirect_document_id": false 
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/visual-studio-github-push/3-exercise-add-github-account.md",
@@ -17691,9 +16826,539 @@
       "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principals.md",
+      "source_path": "learn-pr/wwl-azure/design-authentication-authorization-solutions/9-design-service-principals.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-authentication-authorization-solutions/9-two-design-service-principals",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/3-pass-parameters-databricks-jobs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/2-schedule-databricks-jobs-pipeline.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-production-workloads-azure-databricks-azure-data-factory/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/run-azure-databricks-notebooks-azure-data-factory/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/3-create-ci-cd-process.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/2-describe-ci-cd.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/implement-ci-cd-azure-devops/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/dev-tools/ci-cd/ci-cd-azure-devops",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/3-column-expressions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/2-describe-column-class.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/4-exercise-washingtons-marthas.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-columns-azure-databricks/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/6-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/5-databricks-runtime.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/3-security.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/4-tools-integration.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-best-practices/2-workspace-admin.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/best-practices-index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/3-create-workspace-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/5-exercise-work-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/2-explain.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks/4-understand-notebooks.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/4-define-identify-actions-transformations.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/2-describe-difference-between-eager-lazy-execution.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/3-describe-fundamentals-how-catalyst-optimizer-works.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/5-describe-performance-enhancements-enabled.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-lazy-evaluation-performance-features-azure-databricks/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/4-describe-azure-key-vault-databricks-security-scopes.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/2-describe-platform-architecture.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/6-describe-security.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/7-exercise-access-azure-storage-key-vault-backed-secrets.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/3-perform.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/5-secure-access-azure-iam-authentication.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-platform-architecture-security-data-protection-azure-databricks/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/2-integrate-azure-synapse-analytics.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/3-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/integrate-azure-databricks-other-azure-services/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/azure/databricks/data/data-sources/azure/synapse-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/7-exercises.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/2-read-data-csv-format.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/3-read-data-json-format.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/4-read-data-parquet-format.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/5-read-data-stored-tables-views.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-write-data-azure-databricks/6-write-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/2-understand-architecture-of-azure-databricks-spark-cluster.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/spark-architecture-fundamentals/3-understand-architecture-of-spark-job.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/4-exercise-deduplication-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/2-perform-date-time-manipulation.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-advanced-methods-azure-databricks/3-use-aggregate-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/2-describe-dataframe.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/5-exercise-distinct-articles.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/3-use-common-dataframe-methods.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/work-dataframes-azure-databricks/4-use-display-function.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/4-describe-how-azure-databricks-manages.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/2-describe-open-source.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/5-exercise-use-time-machine-perform-optimization.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/3-exercise-work-basic-functionality.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-query-delta-lake/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/2-describe.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/3-perform-stream-processing-using.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/5-process-data-from-event-hubs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/process-streaming-data-azure-databricks-structured-streaming/4-work-time-windows.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-delta-lake-azure-databricks/",
+      "redirect_document_id": false
     }
   ]
 }

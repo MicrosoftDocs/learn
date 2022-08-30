@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.build-language-understanding-model.use-patterns-differentiate-similar-utterances
+title: Use patterns to differentiate similar utterances
+metadata:
+  title: Use patterns to differentiate similar utterances
+  description: "Use patterns to differentiate similar utterances"
+  ms.date: 08/29/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-use-patterns-differentiate-similar-utterances.md)]
