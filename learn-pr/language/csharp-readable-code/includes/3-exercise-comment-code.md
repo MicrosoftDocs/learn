@@ -47,7 +47,7 @@ Now, run the application. You'll get the following result in the output console:
 Bob purchased 7 widgets.
 ```
 
-Notice that we used the code comments to document the potential change being made, and to temporarily disable the old message as we test the new message. If we're satisfied with the new code, we can safely delete the old code that was commented out.  his is a safer, more methodical approach to modifying working code until we're convinced we're ready to permanently remove it.
+Notice that we used the code comments to document the potential change being made, and to temporarily disable the old message as we test the new message. If we're satisfied with the new code, we can safely delete the old code that was commented out. This is a safer, more methodical approach to modifying working code until we're convinced we're ready to permanently remove it.
 
 ### Step 3 - Delete the commented code
 
