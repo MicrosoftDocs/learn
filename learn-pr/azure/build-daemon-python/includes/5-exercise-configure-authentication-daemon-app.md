@@ -77,8 +77,6 @@ pip install msal
      - Replace `Enter_the_Application_Id_Here` with the **Application (client) ID** you recorded during your app registration.
      - Replace `Enter_the_Client_Secret_Here` with the `Value` for the `Client secrets` you recorded during your app registration.
 
-   The `app` section creates `ConfidentialClientApplication` instance, and reuses it during the lifecycle of the app. The `result` section checks if there's no suitable token in the cache, we send a request to Azure AD to get a new token. The `acquire_token_silent` helps to fetch the token of the current logged in identity silently. If the token expires, it sends a request, and automatically refreshes the token.
-
    The `app` section creates a `ConfidentialClientApplication` instance and reuses it during the lifecycle of the app. The `acquire_token_silent` helps to fetch the token of the current logged in identity silently. If the token expires, it sends a request, and automatically refreshes the token.
 
 ### Authorize access to Microsoft Graph API
