@@ -28,36 +28,26 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "What is the use of the redirect URI configured in the Azure AD tenant when registering a web app?"
+  - content: "What is the first step in the user sign-in process for a web application?"
     choices:
-    - content: ""
+    - content: "The app sends a request to the `/authorize` endpoint on Azure AD."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct"
+    - content: "The app sends an authorization code to azure AD."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Azure AD sends an authorization code to the `/redirect` endpoint after a successful sign-in attempt."
+    - content: "The user is presented with a sign-in prompt by Azure AD."
       isCorrect: false
-      explanation: ""
-  - content: "What is the first step in signing-in a user using a web app registered in Azure AD?"
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "The sign-in prompt is presented to the user after the request to the `/authorize` endpoint has been sent."
   - content: "What elements are required to create, configure and/or collect when registering an Azure AD app for use with the OAuth 2.0 authorization code grant flow in web apps?"
     choices:
-    - content: ""
+    - content: "Tenant ID, application ID, and the application secret."
+      isCorrect: false
+      explanation: "The redirect URI is also required because Azure AD needs to know where to redirect the user after a successful sign-in."
+    - content: "Tenant ID, application ID, application secret, and the redirect URI"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct"
+    - content: "Application ID, application secret, and the redirect URI."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "The tenant ID is also required when setting the authority in the Azure AD configuration."
+      
