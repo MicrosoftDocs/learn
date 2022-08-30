@@ -8,7 +8,7 @@
 
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
 -->
-TODO: restate the scenario problem
+The retail chain at which you work as a data scientist has been experiencing computer performance issues, which seem to be related to virtual machines with high CPU usage and insufficient free space.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -24,8 +24,12 @@ TODO: restate the scenario problem
         * Replaced fire-industry jargon with everyday words, which made the instructions accessible to a wider audience.
         * Replaced a comma-delimited list with a bulleted list, which made the steps to activate the fire extinguisher easier to follow."
  -->
-TODO: add your lead-in sentence(s)
-TODO: add your list of techniques used to solve the scenario problem
+You ran KQL queries in Azure Monitor Log Analytics to extract insights about your virtual machines from log data you collected. 
+You applied several techniques in your analysis, including:
+
+- Setting clear analysis goals.
+- Examining log data.
+- Assessing which KQL operations can help you use your log data to achieve your analysis goals.
 
 <!-- 3. Describe the experience without the product ---------------------------------------------------
 
@@ -36,7 +40,7 @@ TODO: add your list of techniques used to solve the scenario problem
     Example: "Fire extinguishers are critical safety equipment for both homes and businesses. Despite their importance, many customers don't read the instructions ahead of time. Confusing instructions could mean customers don't use the extinguisher correctly when they're needed. This can result in loss of property or life."
 
  -->
-TODO: describe the experience without the product
+Log analysis is critical to managing monitored resources, discovering and responding to problems, and mitigating potential issues. Raw log data contains an overwhelming amount of information that is hard to understand and correlate in meaningful ways without tools like Log Analytics and KQL.  
 
 <!-- 4. Describe the business impact ----------------------------------------------------
 
@@ -46,7 +50,7 @@ TODO: describe the experience without the product
 
     Example: "The test for effective instructions is whether customers can use your extinguishers correctly during an emergency. Users that fail might blame the instructions or the product. In either case, it's not good for business. On the other hand, successful customers are likely to share their stories and become advocates for your product."
  -->
-TODO: describe the business impact
+Analyzing log data in Log Analytics using KQL lets you gain crucial insights and manage your IT environment effectively and proactively.
 
 <!-- 5. References (optional) ----------------------------------------------------
 
