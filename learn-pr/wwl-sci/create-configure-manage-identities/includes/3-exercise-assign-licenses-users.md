@@ -7,63 +7,14 @@ You can skip creating this user if you have already created the same user in the
 1. Within the Users page, on the menu, select **New user**.
 1. Create a user using the following information:
     
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        User name
-      :::column-end:::
-      :::column:::
-        ChrisG
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Name
-      :::column-end:::
-      :::column:::
-        Chris Green
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        First name
-      :::column-end:::
-      :::column:::
-        Chris
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Last name
-      :::column-end:::
-      :::column:::
-        Green
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Password
-      :::column-end:::
-      :::column:::
-        make up a unique password
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        
-      :::column-end:::
-      :::column:::
-        
-      :::column-end:::
-    :::row-end:::
-    
+    | **Setting** | **Value**                 |
+    | ----------- | ------------------------- |
+    | User name   | ChrisG                    |
+    | Name        | Chris Green               |
+    | First name  | Chris                     |
+    | Last name   | Green                     |
+    | Password    | make up a unique password |
+    |             |                           |
 1. When complete, verify the account for Chris Green is shown in the **All users** list.
 
 ## Create a security group in Azure Active Directory
@@ -73,55 +24,13 @@ You can skip creating this user if you have already created the same user in the
 1. In the Groups blade, on the menu, select **New group**.
 1. Create a group using the following information:
     
-    :::row:::
-      :::column:::
-        **Setting**
-      :::column-end:::
-      :::column:::
-        **Value**
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Group type
-      :::column-end:::
-      :::column:::
-        Security
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Group name
-      :::column-end:::
-      :::column:::
-        Marketing
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Membership type
-      :::column-end:::
-      :::column:::
-        Assigned
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Owners
-      :::column-end:::
-      :::column:::
-        Assign your own administrator account as the group owner
-      :::column-end:::
-    :::row-end:::
-    :::row:::
-      :::column:::
-        Members
-      :::column-end:::
-      :::column:::
-        Chris Green
-      :::column-end:::
-    :::row-end:::
-    
+    | **Setting**     | **Value**                                                |
+    | --------------- | -------------------------------------------------------- |
+    | Group type      | Security                                                 |
+    | Group name      | Marketing                                                |
+    | Membership type | Assigned                                                 |
+    | Owners          | Assign your own administrator account as the group owner |
+    | Members         | Chris Green                                              |
     
     :::image type="content" source="../media/create-group-7be1cd36.png" alt-text="Screenshot of the new group creation page in Azure A D. The New Group page has the Group type, Group name, Owners, and Members highlighted. Chris Green is being added to the group as it is being created.":::
     
