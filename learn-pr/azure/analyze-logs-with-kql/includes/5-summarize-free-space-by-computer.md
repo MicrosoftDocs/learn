@@ -80,7 +80,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
     ObjectName == "Logical Disk" // The object name used in Linux records
     | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
     | where InstanceName == "_Total"  // Retrieves data related to the total usage for all drives on a virtual disk  
-|   summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // 
+    |   summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // 
     ```
 
 1. 
@@ -100,7 +100,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | extend packed = pack(CounterName, CounterValue)
     ```
 
-1. Create a property-bag (dictionary) of the last memory-relate counter values collected for each machine:
+1. Create a property-bag (dictionary), called SpaceStats, of all free space statistics collected for each machine:
 
     ```kusto
     Perf
