@@ -45,7 +45,7 @@ quiz:
     choices:
     - content: "You should reduce the amount of whitespace in your code to improve your code's speed."
       isCorrect: false
-      explanation: "This isn't true. Used judiciously, whitespace can improve the readability of your code.  It doesn't impact performance."
+      explanation: "This isn't true. When you use it judiciously, whitespace can improve the readability of your code. It doesn't impact performance."
     - content: "You should add a line of whitespace every two or three lines."
       isCorrect: false
       explanation: "Arbitrarily adding whitespace every two or three lines won't necessarily improve the readability of your code."
