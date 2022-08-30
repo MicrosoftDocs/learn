@@ -3,4 +3,4 @@ Azure DNS private resolver is a cloud-native, highly available, and DevOps-frien
 This will make your DNS infrastructure work privately and seamlessly across on-premises networks and enable key hybrid networking scenarios.  
 
 
-:::image type="content" source="../media/dns-private-resolver.png" alt-text="A graphic representing an Azure reference architecture that includes Azure DNS, a representation of an on-premises environment with two servers connected through Azure using an Express Route circuit, a hub virtual network  connected to a spoke vnet using a peering, along with two servers within the spoke vnet.":::
+:::image type="content" source="../media/dns-private-resolver.png" alt-text="An Azure architecture with an Azure DNS, an on-premises environment connected through Azure using an Express Route in a hub and spoke network design":::
