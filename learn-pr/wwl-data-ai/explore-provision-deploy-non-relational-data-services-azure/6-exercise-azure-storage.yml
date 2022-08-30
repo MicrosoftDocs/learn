@@ -4,13 +4,12 @@ title: 'Exercise: Explore Azure Storage'
 metadata:
   title: 'Exercise: Explore Azure Storage'
   description: "Exercise: Explore Azure Storage"
-  ms.date: 07/04/2022
+  ms.date: 08/30/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-environment
-azureSandbox: true
+azureSandbox: false
 labModal: false
 durationInMinutes: 15
 content: |
