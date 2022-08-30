@@ -4,7 +4,7 @@ To configure Self-Service Password Reset, you first determine who will be enable
 
 In the Password reset properties there are three options: **None**, **Selected**, and **All**.
 
-:::image type="content" source="../media/configure-password-reset-6d7cf7b8.png" alt-text="Screenshot showing password reset options.":::
+:::image type="content" source="../media/configure-password-reset-6d7cf7b8.png" alt-text="Screenshot that shows password reset options." border="false":::
 
 
 The **Selected** option is useful for creating specific groups who have self-service password reset enabled. You can create group for testing or proof of concept before deploying to a larger group. Once you are ready to deploy this functionality to all users with accounts in your AD Tenant, you can change the setting.

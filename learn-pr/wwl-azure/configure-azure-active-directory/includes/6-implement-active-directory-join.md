@@ -1,6 +1,6 @@
 Azure Active Directory (Azure AD) enables single sign-on to devices, apps, and services from anywhere. IT administrators must ensure corporate assets are protected and that devices meet standards for security and compliance.
 
-:::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="Diagram showing a device connecting to Azure AD. Azure AD is shown connecting with On-premises AD.":::
+:::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="Diagram that shows a device connecting to Azure AD. Azure AD is shown connecting with on-premises AD." border="false":::
 
 
 Azure AD Join is designed to provide access to organizational apps and resources and to simplify Windows deployments of work-owned devices. AD Join has these benefits.

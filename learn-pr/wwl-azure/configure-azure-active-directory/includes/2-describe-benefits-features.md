@@ -1,16 +1,43 @@
-Azure Active Directory (Azure AD) is Microsoft’s multi-tenant cloud-based directory and identity management service.<br>
+[Azure Active Directory (Azure AD)](/azure/active-directory/) is Microsoft's multi-tenant cloud-based directory and identity management service. Azure AD helps to support user access to resources and applications, such as:
 
-:::image type="content" source="../media/azure-active-directory-a3b1df09.png" alt-text="Diagram showing Windows Server AD using Kerberos and NTLM authentication to on-premises apps.":::
+- Internal resources and apps located on your corporate network.
 
+- External resources like Microsoft 365, the Azure portal, and SaaS applications. 
 
-## Benefits and features
+- Cloud apps developed for your organization.
 
- -  **Single sign-on to any cloud or on-premises web app**. Azure Active Directory provides secure single sign-on to cloud and on-premises applications. SSO includes Microsoft 365 and thousands of SaaS applications such as Salesforce, Workday, DocuSign, ServiceNow, and Box.
- -  **Works with iOS, macOS, Android, and Windows devices**. Users can launch applications from a personalized web-based access panel, mobile app, Microsoft 365, or custom company portals using their existing work credentials. The experience is the same on iOS, macOS, Android, and Windows devices.
- -  **Protect on-premises web applications with secure remote access**. Access your on-premises web applications from everywhere and protect with multifactor authentication, conditional access policies, and group-based access management. Users can access SaaS and on-premises web apps from the same portal.
- -  **Easily extend Active Directory to the cloud**. You can connect Active Directory and other on-premises directories to Azure Active Directory in just a few steps. This connection means a consistent set of users, groups, passwords, and devices across both environments.
- -  **Protect sensitive data and applications**. You can enhance application access security with unique identity protection capabilities. This includes a consolidated view into suspicious sign-in activities and potential vulnerabilities. You can also take advantage of advanced security reports, notifications, remediation recommendations, and risk-based policies.
- -  **Reduce costs and enhance security with self-service capabilities**. Delegate important tasks such as resetting passwords and the creation and management of groups to your employees. Providing self-service application access and password management through verification steps can reduce helpdesk calls and enhance security.
+The following diagram shows an example implementation of Azure AD. In this scenario, Windows Server AD is using [Kerberos](/windows-server/security/kerberos/kerberos-authentication-overview) and [NTLM authentication](/windows-server/security/kerberos/ntlm-overview) to on-premises applications.
 
-> [!NOTE]
-> If you are a Microsoft 365, Azure, or Dynamics CRM Online customer, you might not realize that you are already using Azure AD. Every Microsoft 365, Azure and Dynamics CRM tenant is already an Azure AD tenant. Whenever you want you can start using that tenant to manage access to thousands of other cloud applications Azure AD integrates with.
+:::image type="content" source="../media/azure-active-directory-a3b1df09.png" alt-text="Diagram that shows Windows Server Active Directory using Kerberos and NTLM authentication to on-premises apps." border="false":::
+
+## Things to know about Azure AD features
+
+Let's examine some of the prominent features of Azure AD. 
+
+| Azure&nbsp;AD&nbsp;feature | Description |
+| --- | --- |
+| **Single sign-on (SSO) access** | Azure AD provides secure single sign-on (SSO) to web apps on the cloud and to on-premises apps. Users can sign in with the same set of login credentials to access all their apps. |
+| **Ubiquitous device support** | Azure AD works with iOS, macOS, Android, and Windows devices, and offers a common experience across the devices. Users can launch apps from a personalized web-based access panel, mobile app, Microsoft 365, or custom company portals by using their existing work credentials. |
+| **Secure remote access** | Azure AD enables secure remote access for on-premises web apps. Secure access can include multifactor authentication (MFA), conditional access policies, and group-based access management. Users can access on-premises web apps from everywhere, including from the same portal. |
+| **Cloud extensibility** | Azure AD can extend to the cloud to help you manage a consistent set of users, groups, passwords, and devices across environments. |
+| **Sensitive data protection** | Azure AD offers unique identity protection capabilities to secure your sensitive data and apps. Admins can monitor for suspicious sign-in activity and potential vulnerabilities in a consolidated view of users and resources in the directory. |
+| **Self-service support** | Azure AD lets you delegate tasks to company employees that might otherwise be completed by admins with higher access privileges. Providing self-service app access and password management through verification steps can reduce helpdesk calls and enhance security. |
+
+## Things to consider when using Azure AD features
+
+Consider how the features and benefits of Azure AD can be used to support your corporate scenarios.
+
+- **Consider enabling single sign-on access**. Enable SSO access for your users to connect to the cloud or use on-premises apps. Azure AD SSO supports Microsoft 365 and thousands of SaaS apps, such as Salesforce, Workday, DocuSign, ServiceNow, and Box.
+
+- **Consider UX experience and device support**. Build a consistent user experience that works for all devices and directory access points. You can design custom company portals and personalized web-based access for your employees that lets them connect with their existing work credentials.
+
+- **Consider benefits of secure remote access**. Protect your on-premises web apps by implementing secure remote access with MFA and access policies.
+
+- **Consider advantages of cloud extensibility**. Connect Active Directory and other on-premises directories in the cloud to Azure AD in just a few steps. You can make it easier for your admins to manage the same users, groups, passwords, and devices across all supported environments.
+
+- **Consider advanced protection for sensitive data**. Enhance the security of your sensitive data and apps by using the built-in protection features of Azure AD. Your admins can utilize advanced security reports, notifications, remediation recommendations, and risk-based policies.
+
+- **Consider reduced costs, self-service options**. Take advantage of the Azure AD self-service features to help reduce costs for your organization. Delegate certain tasks like resetting passwords, or creating and managing groups to your non-admin users.
+
+> [!TIP]
+> If you're a Microsoft 365, Azure, or Dynamics CRM Online customer, you might already be using Azure AD. Every Microsoft 365, Azure, and Dynamics CRM tenant is already an Azure AD tenant. You can start using your tenant to manage access to thousands of other cloud apps that integrate with Azure AD!
