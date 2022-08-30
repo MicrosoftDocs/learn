@@ -10,7 +10,9 @@ Confidential client applications are apps that run on servers (service/daemon ap
 
 The OAuth 2.0 client credentials flow permits a confidential client application to use its own credentials, instead of impersonating a user, to authenticate when calling a protected web API. There's no user authentication involved in the process.
 
-In the client credentials flow, permissions are granted directly to the application itself by an administrator. When the app presents a token to a resource, the resource enforces that the app itself has authorization to perform an action since there's no user involved in the authentication.
+In the client credentials flow, permissions are granted directly to the application itself by an administrator.Application permissions are typically used by background services or console apps that access an API without a graphical user interface (GUI), and by web APIs that access another (downstream) API.
+
+When the app presents a token to a resource, the resource enforces that the app itself has authorization to perform an action since there's no user involved in the authentication.
 
 ## Microsoft Authentication Library (MSAL) for Python
 

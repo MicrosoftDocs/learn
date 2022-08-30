@@ -4,9 +4,7 @@ In this unit, you'll learn about authentication, authorization, and how it's sup
 
 ## Authentication
 
-_Authentication_ is the process of proving your identity.
-
-Azure AD uses the OpenID Connect protocol to handle authentication. OpenID Connect allows applications to request and receive information about authenticated sessions and end-users.
+_Authentication_ is the process of proving your identity. Azure AD uses the OpenID Connect protocol to handle authentication. OpenID Connect allows applications to request and receive information about authenticated sessions and end-users.
 
 ## Authorization
 

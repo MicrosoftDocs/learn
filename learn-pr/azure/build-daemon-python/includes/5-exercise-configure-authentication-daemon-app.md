@@ -4,8 +4,6 @@ In this exercise, you'll add application permissions to access Microsoft Graph a
 
 ## Application permission to Microsoft Graph
 
-Configure application permissions for an application that needs to authenticate as itself without user interaction or consent. Application permissions are typically used by background services or console apps that access an API without a graphical user interface (GUI), and by web APIs that access another (downstream) API.
-
 In the following steps, you grant the registered app permission to Microsoft Graph's _User.Read.All_ permission:
 
 1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
