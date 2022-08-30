@@ -17,17 +17,17 @@ quiz:
     choices:
     - content: "my-string"
       isCorrect: false
-      explanation: "A variable can't contain the dash `-` character.  Also, the name isn't descriptive of its purpose."
+      explanation: "A variable can't contain the dash `-` character. Also, the name isn't descriptive of its purpose."
     - content: "initialMessage$"
       isCorrect: false
       explanation: "A variable can't contain the dollar sign `$` character."
     - content: "msg"
       isCorrect: false
-      explanation: "While C# won't flag as an illegal variable name, you shouldn't use contractions."
+      explanation: "While C# won't flag this one as an illegal variable name, you shouldn't use contractions."
     - content: "initialMessage"
       isCorrect: true
       explanation: "Correct!"
-  - content: "Which of the following is a bad reason to use a code comment."
+  - content: "Which of the following is a bad reason to use a code comment?"
     choices:
     - content: "Describing the high-level intent of the code."
       isCorrect: false
@@ -41,11 +41,11 @@ quiz:
     - content: "Adding a TODO to your code so that you can look into a possible issue later."
       isCorrect: false
       explanation: "Adding a TODO is a good reason to add a code comment."
-  - content: "Which of the following is true about whitespace."
+  - content: "Which of the following is true about whitespace?"
     choices:
     - content: "You should reduce the amount of whitespace in your code to improve your code's speed."
       isCorrect: false
-      explanation: "This is not true.  Used judiciously, whitespace can improve the readability of your code.  It doesn't impact performance."
+      explanation: "This isn't true. Used judiciously, whitespace can improve the readability of your code.  It doesn't impact performance."
     - content: "You should add a line of whitespace every two or three lines."
       isCorrect: false
       explanation: "Arbitrarily adding whitespace every two or three lines won't necessarily improve the readability of your code."
