@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-fundamentals-of-stream-processing.exercise-analyze-streaming-data
-title: 'Exercise: Analyze streaming data'
+title: 'Exercise: Explore Azure Stream Analytics'
 metadata:
-  title: 'Exercise: Analyze streaming data'
-  description: "Exercise: Analyze streaming data"
+  title: 'Exercise: Explore Azure Stream Analytics'
+  description: "Exercise: Explore Azure Stream Analytics"
   ms.date: 08/30/2022
   author: wwlpublish
   ms.author: rcaper
