@@ -3,7 +3,7 @@ uid: learn.wwl.publish-use-language-understand-app
 metadata:
   title: Publish and use a Language Understanding app
   description: "After creating a Language Understanding app, you can publish it and consume it from client applications."
-  ms.date: 08/29/2022
+  ms.date: 08/30/2022
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
