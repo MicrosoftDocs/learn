@@ -71,7 +71,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | where InstanceName == "_Total"  // Retrieves data related to the total usage for all drives on a virtual disk  
     ```
 
-1. Retrieve the last counter value collected for each counter for every computer: 
+1. Retrieve the last counter value collected for each counter for every virtual machine: 
 
     ```kusto
     Perf
@@ -85,34 +85,36 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 1. 
 
-```kusto
-Perf
-| where TimeGenerated > ago(1d)
-| where ObjectName == "LogicalDisk" or // The object name used in Windows records
-ObjectName == "Logical Disk" // The object name used in Linux records
-| where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
-| where InstanceName == "_Total"
-| summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
-| extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
-| extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
-| extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
-| extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
-| extend packed = pack(CounterName, CounterValue)
-```
+    ```kusto
+    Perf
+    | where TimeGenerated > ago(1d)
+    | where ObjectName == "LogicalDisk" or // The object name used in Windows records
+    ObjectName == "Logical Disk" // The object name used in Linux records
+    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
+    | where InstanceName == "_Total"
+    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
+    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
+    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
+    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
+    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
+    | extend packed = pack(CounterName, CounterValue)
+    ```
 
-```kusto
-Perf
-| where TimeGenerated > ago(1d)
-| where ObjectName == "LogicalDisk" or // The object name used in Windows records
-ObjectName == "Logical Disk" // The object name used in Linux records
-| where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
-| where InstanceName == "_Total"
-| summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
-| extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
-| extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
-| extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
-| extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
-| extend packed = pack(CounterName, CounterValue)
-| summarize SpaceStats = make_bag(packed) by Computer
-| where SpaceStats.["% Free Space"]<= 50
-```
+1. Create a property-bag (dictionary) of the last memory-relate counter values collected for each machine:
+
+    ```kusto
+    Perf
+    | where TimeGenerated > ago(1d)
+    | where ObjectName == "LogicalDisk" or // The object name used in Windows records
+    ObjectName == "Logical Disk" // The object name used in Linux records
+    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
+    | where InstanceName == "_Total"
+    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
+    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
+    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
+    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
+    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
+    | extend packed = pack(CounterName, CounterValue)
+    | summarize SpaceStats = make_bag(packed) by Computer
+    | where SpaceStats.["% Free Space"]<= 50
+    ```
