@@ -18,7 +18,7 @@ To analyze free space usage of machines running in your IT environment, you need
  
 In the previous exercise, we saw that the `Perf` table's `ObjectName` column lists the names of all of the objects being monitored and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
 
-Let's run a query on the `Perf` table to the list distinct `ObjectName` values:
+Let's run a query on the `Perf` table to list distinct `ObjectName` values:
 
 ```kusto
 Perf  // The table you’re querying
