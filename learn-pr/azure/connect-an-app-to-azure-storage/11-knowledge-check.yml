@@ -51,10 +51,10 @@ quiz:
       explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
     - content: "REST Endpoint"
       isCorrect: false
-      explanation: "Possession of an access key identifies the account and grants you access. This is very similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
     - content: "Username and password"
       isCorrect: true
-      explanation: "Possession of an access key identifies the account and grants you access. This is very similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
     - content: "Cryptographic algorithm"
       isCorrect: false
-      explanation: "Possession of an access key identifies the account and grants you access. This is very similar to login credentials like a username and password."
+      explanation: "Possession of an access key identifies the account and grants you access. This is similar to login credentials like a username and password."
