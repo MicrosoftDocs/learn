@@ -22,7 +22,7 @@ In this unit, you'll create an event subscription within Azure IoT Hub to set up
 
    When you're done, the pane should look like the following example:
 
-   :::image type="content" source="./media/6-azure-iot-event-subscription.png" alt-text="Screenshot that shows the Create Event Subscription pane in the Azure portal." lightbox="../media/6-azure-iot-event-subscription.png":::
+   :::image type="content" source="../media/6-azure-iot-event-subscription.png" alt-text="Screenshot that shows the Create Event Subscription pane in the Azure portal." lightbox="../media/6-azure-iot-event-subscription.png":::
 
 ## Configure the event filter
 
