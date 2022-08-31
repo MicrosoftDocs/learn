@@ -127,12 +127,26 @@ Now that we've made an edit to an individual asset, let's add some information a
 
 ## Moving an asset
 
-1. Open the overview page of your asset.
+1. Open the details of your asset to the overview page.
 
-1. Select the ellipsis next to the collection path of the asset.
+    :::image type="content" source="../media/manage-assets-exercise/asset-details-overview-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/asset-details-overview.png":::
+
+1. Select the ellipsis button next to the **Collection path** of the asset.
+
+    :::image type="content" source="../media/manage-assets-exercise/ellipsis-button-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/ellipsis-button.png":::
 
 1. Select **Move to another collection**
 
-1. In the right side panel, choose the target collection you want to move to. You can only see collections where you have permissions, and the asset can only be added to subcollections of the data source collection.
+    :::image type="content" source="../media/manage-assets-exercise/move-to-another-collection-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/move-to-another-collection.png":::
+
+1. In the right side panel, choose the target collection you want to move to. You can only see collections where you have write permissions, and the asset can only be added to subcollections of the data source collection.
+
+    :::image type="content" source="../media/manage-assets-exercise/select-a-collection-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/select-a-collection.png":::
 
 1. Select **Move**.
+
+    :::image type="content" source="../media/manage-assets-exercise/select-move-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/select-move.png":::
+
+1. Now we can see our collection path has been modified, and our resource has been moved to the **Finance** subcollection.
+
+    :::image type="content" source="../media/manage-assets-exercise/new-collection-path-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/new-collection-path.png":::
