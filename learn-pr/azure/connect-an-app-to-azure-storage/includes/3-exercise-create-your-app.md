@@ -2,7 +2,7 @@ Recall that we're working on a photo-sharing application that will use Azure Sto
 
 ::: zone pivot="csharp"
 
-To simplify our scenario so that we can focus on the Storage APIs, we'll create a new .NET Core Console application. We'll also assume it always has network connectivity. However, you should always harden your app to ensure network failures will not impact the user experience or result in a failure of the application itself.
+To simplify our scenario so that we can focus on the Storage APIs, we'll create a new .NET Core Console application. We'll also assume it always has network connectivity. However, you should always harden your app to ensure network failures won't affect the user experience or result in a failure of the application itself.
 
 ## Create a .NET Core application
 
@@ -32,11 +32,11 @@ To simplify our scenario so that we can focus on the Storage APIs, we'll create 
 
 ::: zone pivot="javascript"
 
-To simplify our scenario so that we can focus on the Storage APIs, we'll create a new Node.js application that can run from the console. We'll also assume it always has network connectivity. However, you should always harden your app to ensure network failures will not impact the user experience, or result in a failure of the application itself.
+To simplify our scenario so that we can focus on the Storage APIs, we'll create a new Node.js application that can run from the console. We'll also assume it always has network connectivity. However, you should always harden your app to ensure network failures won't affect the user experience, or result in a failure of the application itself.
 
 ## Create a Node.js application
 
-Node.js is a popular framework for running JavaScript apps. It is most commonly used for web apps, but you can use it to run logic from the command line as well. If you have the tools installed locally, you can run the following steps from a command line. Alternatively, you can use Cloud Shell on the right side of the window to execute the following steps.
+Node.js is a popular framework for running JavaScript apps. It's most commonly used for web apps, but you can use it to run logic from the command line as well. If you have the tools installed locally, you can run the following steps from a command line. Alternatively, you can use Cloud Shell on the right side of the window to execute the following steps.
 
 1. Sign in to Cloud Shell or open a command-line session, and create a new folder named "PhotoSharingApp".
 
@@ -57,7 +57,7 @@ Node.js is a popular framework for running JavaScript apps. It is most commonly 
     touch index.js
     ```
 
-1. Open the **index.js** file with an editor. If you are using Cloud Shell, enter `code .` to open an editor.
+1. Open the **index.js** file with an editor. If you're using Cloud Shell, enter `code .` to open an editor.
 
 1. Paste the following program into the **index.js** file. Press <kbd>Ctrl+V</kbd> or right-click to paste.
 
