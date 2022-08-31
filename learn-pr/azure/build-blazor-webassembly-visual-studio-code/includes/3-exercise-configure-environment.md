@@ -1,6 +1,6 @@
 Let's start by creating our first Blazor web app.
 
-This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), and [Visual Studio 2022](https://visualstudio.com) for local development. After you complete this module, you can apply its concepts using a development environment like  Visual Studio for Mac (macOS), or continue development using Visual Studio Code (Windows, Linux, & macOS) or Visual Studio.
+This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/), [Visual Studio Code](https://code.visualstudio.com), and [Visual Studio 2022](https://visualstudio.com) for local development. After you complete this module, you can apply its concepts using a development environment like Visual Studio for Mac (macOS), or continue development using Visual Studio Code (Windows, Linux, & macOS) or Visual Studio.
 
 ::: zone pivot="vscode"
 
@@ -12,7 +12,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named **BlazorApp** in the location of your choice, and then choose **Select Folder**.
+1. Create a new folder named **BlazorApp** in the location of your choice, then choose **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
@@ -56,7 +56,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 1. If Visual Studio Code prompts you to install required assets, select **Yes**.
 
     ![Screenshot showing Visual Studio Code prompting to install assets required to build and debug.](../media/missing-assets-visual-studio-code.png)
-    
+
 ## Run the app
 
 1. In the terminal window, copy and paste the following command to run the app in **watch mode**:
@@ -65,7 +65,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
     dotnet watch run
     ```
 
-    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
+    This will build and start the app, then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
 
     ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
 
@@ -75,36 +75,34 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
 
 ## Create a new Blazor app
 
-To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual Studio Code includes integrated templates and compiler, which makes creating and building a new project easy. 
+To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual Studio Code includes integrated templates and compiler, which makes creating and building a new project easy.
 
 1. In Visual Studio 2022, select **File** > **New Project**.
 
-1. In the search box at the top of the "Create a new project" dialog, key in "Blazor Server" and select "Blazor Server App" and click "Next"
+1. In the search box at the top of the "Create a new project" dialog, key in "Blazor Server", select **Blazor Server App**, and select **Next**.
 
-	![Screenshot of Visual Studio 2022 'Create New Project' screen and the Blazor Server template.](../media/visual-studio-2022-create-new-project.png)
+  ![Screenshot of Visual Studio 2022 'Create New Project' screen and the Blazor Server template.](../media/visual-studio-2022-create-new-project.png)
 
-1. On the subsequent screen, name your project "BlazorApp" and specify a location on disk with settings like the following and then click 'Next':
+1. On the subsequent screen, name your project "BlazorApp", specify a location on disk with settings like the following, then select **Next**:
 
    ![Screenshot of Visual Studio 2022 'Configure Your Project' screen and recommended settings from step 3.](../media/visual-studio-2022-configure-project.png)  
 
-1. On the 'Additional Information' screen, select ".NET 6.0 (Long-term support)" in the Framework combobox. Leave the other settings as is and click 'Create'
+1. On the *Additional Information* screen, select **.NET 6.0 (Long-term support)** in the Framework combo box. Leave the other settings as default and select **Create**.
 
 1. This command creates a basic Blazor server project with all required files and pages.
 
-	You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to the following:
+  You should now have access to these files and your solution explorer in Visual Studio 2022 will look similar to the following:
 
-	![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default Blazor Server project.](../media/visual-studio-2022-solution-explorer.png)
- 
+  ![Screenshot of Visual Studio 2022 Solution Explorer with a list of the files in a default Blazor Server project.](../media/visual-studio-2022-solution-explorer.png)
+
 ## Run the app
 
 1. In Visual Studio, select **Debug** > **Start Debugging**
 
-    This will build and start the app, and then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
+    This will build and start the app, then rebuild and restart the app whenever you make code changes. The app should automatically open in your default browser. Your browser might warn you that the site isn't secure; it's safe to proceed.
 
     ![Screenshot showing the default Blazor app running in a browser.](../media/hello-blazor.png)
 
 ::: zone-end
-
-
 
 You'll use this Blazor app in the following exercises.
