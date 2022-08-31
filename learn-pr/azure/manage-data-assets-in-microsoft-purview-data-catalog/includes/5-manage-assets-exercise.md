@@ -101,20 +101,29 @@ Now that we've made an edit to an individual asset, let's add some information a
 
     :::image type="content" source="../media/manage-assets-exercise/bulk-edited-detail-view.png" alt-text="<alt text>" :::
 
-
 ## Asset certification
 
-1. You'll need to be a data curator to be able to certify an asset.
+1. You'll need to have the data curator role in the collection where a data asset lives in order to be able to certify an asset.
 
-1. Though it is not required, an asset should be reviewed, and have it's description and other aspects updated and regularly maintainted before it is certified, to verify that it is a good data source for use.
+    :::image type="content" source="../media/manage-assets-exercise/data-curators.png" alt-text="<alt text>" :::
 
-1. Navigate to the asset details of your asset and select **Edit**.
+1. Though it is not required, an asset should be reviewed and have its description and other aspects updated and regularly maintained before it is certified, to verify that it is a good data source for use.
 
-1. On the **Overview** page, toggle the **Certified** feild to **Yes**
+1. To mark an asset as certified, navigate to the asset details of your asset and select **Edit**.
 
-1. Save your changes.
+    :::image type="content" source="../media/manage-assets-exercise/edit-queries-by-country-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/edit-queries-by-country.png":::
+
+1. On the **Overview** page, toggle the **Certified** field to **Yes**.
+
+    :::image type="content" source="../media/manage-assets-exercise/select-certified.png" alt-text="<alt text>":::
+
+1. Select **Save** to save your changes.
+
+    :::image type="content" source="../media/manage-assets-exercise/certified-select-save.png" alt-text="<alt text>":::
 
 1. Your asset will now have a **Certified** label visible to all users.
+
+    :::image type="content" source="../media/manage-assets-exercise/certified-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets-exercise/certified.png":::
 
 ## Moving an asset
 
