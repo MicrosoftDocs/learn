@@ -25,7 +25,7 @@ Let's examine some of the prominent features of Azure AD.
 
 ## Things to consider when using Azure AD features
 
-Consider how the features and benefits of Azure AD can be used to support your corporate scenarios.
+Azure AD offers many features and benefits. Consider which features can be used to best support your corporate scenarios.
 
 - **Consider enabling single sign-on access**. Enable SSO access for your users to connect to the cloud or use on-premises apps. Azure AD SSO supports Microsoft 365 and thousands of SaaS apps, such as Salesforce, Workday, DocuSign, ServiceNow, and Box.
 

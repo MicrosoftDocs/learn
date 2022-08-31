@@ -6,15 +6,15 @@ In this module, your company is planning to implement Azure Active Directory (Az
 
 In this module, you learn how to:
 
-- Describe the features of Azure Active Directory and review use cases.
+- Define Azure AD concepts, including identities, accounts, and tenants.
 
-- Recognize the main concepts of Azure AD, such as identity, account, and tenant.
+- Describe Azure AD features to support different configurations.
 
-- Understand the differences between Azure AD and Azure Active Directory Domain Services (Azure AD DS).
+- Understand differences between Azure AD and Active Directory Domain Services (AD DS).
 
-- Choose features in supported editions of Azure AD.
+- Choose between supported editions of Azure AD.
 
-- Explain the Azure AD Join feature and describe usage scenarios.
+- Implement the Azure AD Join feature.
 
 - Use the Azure AD Self-Service Password Reset feature.
 
@@ -30,4 +30,4 @@ Manage identities and governance in Azure (15-20%)
 
 ## Prerequisites
 
-None
+None.

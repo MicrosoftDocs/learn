@@ -1,6 +1,4 @@
-To implement Azure AD in your corporate configuration, you need to understand some of the main concepts of the service.
-
-The following table describes the main concepts used in Azure AD and how they're related.
+To implement Azure AD in your corporate configuration, you need to understand the key components of the service. The following table describes the main components and concepts of Azure AD and explains how they work together to support service features. 
 
 | Azure&nbsp;AD&nbsp;concept | Description |
 | --- | --- |
