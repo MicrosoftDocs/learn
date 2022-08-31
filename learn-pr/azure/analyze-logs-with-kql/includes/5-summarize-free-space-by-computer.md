@@ -58,9 +58,9 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `TimeGenerated` | Indicates when the virtual machine generated each log. | Define the time scope of the analysis. | `where TimeGenerated > ago(1d)` <br/>For more information, see [ago()](/azure/data-explorer/kusto/query/agofunction), [where operator](/azure/data-explorer/kusto/query/whereoperator), and [Numerical operators](/azure/data-explorer/kusto/query/numoperators). |
 | `Computer` | Computer from which the event was collected. | Associate CPU usage with a specific computer. | `summarize... by Computer` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator).|
 | `ObjectName` | Holds the names of all of objects for which the table holds performance data. For your analysis, you're interested in the `LogicalDisk` and `Logical Disk` objects. | Monitor the logical disks in virtual machines. | `where ObjectName == "LogicalDisk" or ObjectName == "Logical Disk"`<br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
-| `CounterName` | Holds the names of all performance counters in the table. | Monitor counters related to free and used space. | <ul><li>`where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"`</li><li>`extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)` </li></ul>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
+| `CounterName` | Holds the names of all performance counters in the table. | <ul><li>Monitor counters related to free and used space.</li><li>Rename `% Used Space` to `% Free Space` (in parallel, convert the related `CounterValue`)</li></ul>. | <ul><li>`where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"`</li><li>`CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)` </li></ul>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
 | `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all drives on the virtual machine. | `InstanceName == "_Total"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
-| `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters.  | `where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"`<br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
+| `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters.  | <ul><li>`where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"`</li><li></li></ul>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
       
 ## Summarize free space statistics by computer
 
@@ -128,19 +128,19 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 1. Group together `CounterName, CounterValue` key-value pairs:
 
-        ```kusto
-        Perf
-        | where TimeGenerated > ago(1d)
-        | where ObjectName == "LogicalDisk" or // The object name used in Windows records
-        ObjectName == "Logical Disk" // The object name used in Linux records
-        | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
-        | where InstanceName == "_Total"
-        | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
-        | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
-        | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
-        | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
-        | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
-        | extend packed = pack(CounterName, CounterValue)
+    ```kusto
+    Perf
+    | where TimeGenerated > ago(1d)
+    | where ObjectName == "LogicalDisk" or // The object name used in Windows records
+    ObjectName == "Logical Disk" // The object name used in Linux records
+    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
+    | where InstanceName == "_Total"
+    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
+    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
+    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
+    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
+    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
+    | extend packed = pack(CounterName, CounterValue)
         ```
 
 
