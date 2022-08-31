@@ -8441,6 +8441,251 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/paths/perform-data-science-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-user-defined-functions/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-user-defined-functions/2-write.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-user-defined-functions/3-exercise-perform-extract-transform-load-operations.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-user-defined-functions/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-user-defined-functions/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-user-defined-functions/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/2-understand.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/3-exercise-train-model-create-predictions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/4-understand-data-use-exploratory-data-analysis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/5-exercise-perform-exploratory-data-analysis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/6-describe-workflows.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/7-exercise-build-evaluate-baseline-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-machine-learning-with-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/2-perform-featurization-dataset.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/3-exercise-finish-featurization-dataset.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/4-understand-regression-modelling.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/5-exercise-build-interpret-regression-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/train-machine-learning-model/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-mlflow-azure-databricks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-mlflow-azure-databricks/2-use-mlflow-track-experiments-log-metrics-compare-runs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-mlflow-azure-databricks/3-exercise-track-experiment-metrics-parameters-artifacts-models.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-mlflow-azure-databricks/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-mlflow-azure-databricks/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-mlflow-azure-databricks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-selection-with-hyperparameter-tuning/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-selection-with-hyperparameter-tuning/2-describe-model-selection.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-selection-with-hyperparameter-tuning/3-exercise-select-optimal-model-tuning-hyperparameters.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-selection-with-hyperparameter-tuning/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-selection-with-hyperparameter-tuning/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/perform-model-selection-with-hyperparameter-tuning/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-with-horovod-distributed-training/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-with-horovod-distributed-training/2-use-horovod-train-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-with-horovod-distributed-training/3-use-petastorm-read-datasets-apache-parquet-format-model-train.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-with-horovod-distributed-training/4-exercise-work-petastorm-train-deep-learn-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-with-horovod-distributed-training/5-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-with-horovod-distributed-training/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/deep-learning-with-horovod-distributed-training/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-azure-machine-learning-deploy-serving-models/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-azure-machine-learning-deploy-serving-models/2-use.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-azure-machine-learning-deploy-serving-models/3-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-azure-machine-learning-deploy-serving-models/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/databricks/work-with-azure-machine-learning-deploy-serving-models/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/build-operate-machine-learning-solutions-azure-databricks",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/build-azure-digital-twins-graph-for-chocolate-factory/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-azure-digital-twins-graph-for-chocolate-factory",
       "redirect_document_id": false
@@ -17361,18 +17606,48 @@
       "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/6-monitor-resources-for-performance-efficiency.md",
+      "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/6-monitor-resources-for-performance-efficiency.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-solution-to-log-monitor-azure-resources/",
       "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/7-knowledge-check.md",
+      "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/7-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-solution-to-log-monitor-azure-resources/6-knowledge-check",
       "redirect_document_id": false
     },
     {
-       "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/8-summary-resources.md",
+      "source_path": "learn-pr/wwl-azure/design-solution-to-log-monitor-azure-resources/8-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/design-solution-to-log-monitor-azure-resources/7-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-delta-lake-architecture/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-delta-lake-architecture/2-describe-bronze-silver-gold-architecture.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-delta-lake-architecture/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-delta-lake-architecture/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-delta-lake-architecture/3-perform-batch-stream-processing.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/describe-azure-databricks-delta-lake-architecture/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/use-apache-spark-azure-databricks/",
       "redirect_document_id": false
     }
   ]

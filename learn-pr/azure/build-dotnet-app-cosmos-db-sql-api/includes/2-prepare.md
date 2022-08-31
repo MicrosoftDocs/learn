@@ -1,6 +1,6 @@
 You'll be building a .NET application that imports and queries data in an Azure Cosmos DB SQL API container. Here, we'll discuss the overall goals of the project and how you'll implement the import and query functionality. We'll also cover how to set up the SQL API account that you'll need.
 
-:::image type="content" source="../media/project-visual-account.png" alt-text="Illustration of the icon of an Azure Cosmos DB account." lightbox="../media/project-visual-account.png" border="false":::
+:::image type="content" source="../media/project-visual-account.svg" alt-text="Illustration of the icon of an Azure Cosmos DB account." lightbox="../media/project-visual-account.svg" border="false":::
 
 ## Project overview
 
