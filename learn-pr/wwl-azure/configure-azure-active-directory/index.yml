@@ -2,22 +2,22 @@
 uid: learn.wwl.configure-azure-active-directory
 metadata:
   title: Configure Azure Active Directory
-  description: "You will learn how to configure Azure Active Directory including features like AD Join and Self-Service Password Reset."
-  ms.date: 08/08/2022
+  description: "You learn how to configure Azure Active Directory, including features like Azure AD Join and Self-Service Password Reset."
+  ms.date: 08/30/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure Active Directory
-summary: You will learn how to configure Azure Active Directory including features like AD Join and Self-Service Password Reset.
+summary: You learn how to configure Azure Active Directory, including features like Azure AD Join and Self-Service Password Reset.
 abstract: |
-  After completing this module, you will be able to:
-  - Identify the features and uses of Azure Active Directory.
-  - Define the main Azure Active Directory components such as identity, account, and tenant.
-  - Compare Azure Active Directory to Azure Directory Domain Services.
-  - Identify features of Azure Active Directory editions.
-  - Identify features and usage cases for Azure AD Join.
-  - Identify features and usage cases for Self-Service Password Reset.
+  In this module, you learn how to:
+  - Describe the features of Azure Active Directory and review use cases.
+  - Recognize the main concepts of Azure AD, such as identity, account, and tenant.
+  - Understand the differences between Azure AD and Azure Active Directory Domain Services (Azure AD DS).
+  - Choose features in supported editions of Azure AD.
+  - Explain the Azure AD Join feature and describe usage scenarios.
+  - Use the Azure AD Self-Service Password Reset feature.
 prerequisites: |
   None
 iconUrl: /learn/achievements/azure-active-directory.svg

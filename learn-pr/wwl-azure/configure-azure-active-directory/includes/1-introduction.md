@@ -12,11 +12,11 @@ In this module, you learn how to:
 
 - Understand the differences between Azure AD and Azure Active Directory Domain Services (Azure AD DS).
 
-- Examine the features available in supported editions of Azure AD.
+- Choose features in supported editions of Azure AD.
 
 - Explain the Azure AD Join feature and describe usage scenarios.
 
-- Review how to use the Azure AD Self-Service Password Reset feature.
+- Use the Azure AD Self-Service Password Reset feature.
 
 ## Skills measured
 

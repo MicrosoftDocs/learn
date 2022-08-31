@@ -1,10 +1,10 @@
-Azure AD comes in four editions: Free, Microsoft 365 Apps, Premium P1, and Premium P2. The Free edition is included with an Azure subscription. The Premium editions are available through a Microsoft Enterprise Agreement, the Open Volume License Program, and the Cloud Solution Providers program. Azure and Microsoft 365 subscribers can also buy Azure Active Directory Premium P1 and P2 online.
+Azure AD comes in four editions: **Free**, **Microsoft 365 Apps**, **Premium P1**, and **Premium P2**. The Free edition is included with an Azure subscription. The Premium editions are available through a Microsoft Enterprise Agreement, the Open Volume License Program, and the Cloud Solution Providers program. Azure and Microsoft 365 subscribers can also buy Azure Active Directory Premium P1 and P2 online.
 
 ### Things to know about Azure AD editions
 
 Consider the following characteristics that distinguish the different editions of Azure AD. After you review the descriptions, think about which edition works best for your organization.
 
-| Feature                                                         | Free      | Microsoft 365 Apps     | Premium P1     | Premium P2     |
+| Feature                                                         | **Free**  | **Microsoft 365 Apps** | **Premium P1** | **Premium P2** |
 |:--------------------------------------------------------------- |:---------:|:----------------------:|:--------------:|:--------------:|
 | Directory Objects                                               |  500,000  |       Unlimited        |   Unlimited    |   Unlimited    |
 | Single sign-on                                                  | Unlimited |       Unlimited        |   Unlimited    |   Unlimited    |
