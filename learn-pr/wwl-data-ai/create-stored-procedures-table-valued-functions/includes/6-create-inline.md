@@ -42,7 +42,7 @@ RETURNS
 AS
 BEGIN
      INSERT INTO @Results
-     SELECT CustomerID, OrderDate
+     SELECT SC.CustomerID, OrderDate
      FROM Sales.Customer AS SC 
      INNER JOIN Sales.SalesOrderHeader AS SOH 
         ON SC.CustomerID = SOH.CustomerID
