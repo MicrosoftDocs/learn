@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "The company financial controller wants to be notified whenever the company is half-way to spending the money allocated for cloud services. Which of the following anwers is the best approach to meeting this requirement?"
+  - content: "The company financial controller wants to be notified whenever the company is half-way to spending the money allocated for cloud services. Which of the following answers is the best approach to meeting this requirement?"
     choices:
     - content: "Create an Azure reservation."
       isCorrect: false
