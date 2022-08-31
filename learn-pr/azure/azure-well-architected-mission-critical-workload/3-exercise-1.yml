@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-mission-critical.3-exercise-1
-title: Exercise - Design a multi-region architecture in active-active model
+title: Exercise - Add web application health checks
 metadata:
   unitType: exercise
-  title: Exercise - Design a multi-region architecture in active-active model
+  title: Exercise - Add web application health checks
   description: TBD
   ms.date: 09/22/2022
   author: PageWriter-MSFT

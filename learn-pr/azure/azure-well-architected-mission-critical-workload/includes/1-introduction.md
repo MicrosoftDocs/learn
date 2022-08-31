@@ -10,8 +10,9 @@ Based on that experience, the organization is now committed to increase the over
 The existing application is already designed as per the quality pillars of Azure Well-Architected Framework. As an initial step, you have read through the guidance provided for [**Well-Architected mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview) but want to prioritize your efforts. You've identified enhanced system observability and resiliency as the key focus areas that will have the highest reliability impact on the system.
 
 ## What will we be doing?
+
 - Define a composite Service Level Objective (SLO) to achieve.
-- Identify failure points at the API level or one of its dependencies and surface system availability data through a dedicated health check API.
+- Identify failure points at the API level and its dependencies and visualize availability data in a dashboard.
 - Expand the solution into multiple regions to survive a regional outage.
 - Build a health model for the global solution and visualize the oberservability data through internal dashboards and for the deployment pipeline’s health-controlled rollouts.
 

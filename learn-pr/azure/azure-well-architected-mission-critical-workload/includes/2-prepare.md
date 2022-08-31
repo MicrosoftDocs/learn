@@ -3,7 +3,7 @@ You'll be adding your own enhancements to an existing architecture that meets an
 
 ## Project specification
 
-Constoso Shoes is a well-known online shoe store. The company wants to add capabilities to their solution architecture to avoid unavaialbility issues that might lead to financial loss. 
+Contoso Shoes is a well-known online shoe store. The company wants to add capabilities to their solution architecture to avoid unavailalbility issues that might lead to financial loss. 
 
 You would like to build an overall health model to make sure issues are caught early in the development cycle. Also, build resiliency checks at the API level or one of its dependencies.
 
