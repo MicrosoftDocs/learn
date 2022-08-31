@@ -4,7 +4,7 @@ This module uses resources made available to you via the sandbox, which provides
 
 ## Create a repository
 
-Let's create your repository by using a GitHub template. Azure has defined a series of GitHub repository templates, each of which contains a starter app and a collection of  front end frameworks for the starter app.
+To begin, you'll create a repository by using a GitHub template. A series of repository templates are available, which contain a starter app implemented in various front end frameworks.
 
 1. Go to the GitHub [create from template page](https://github.com/login?return_to=/MicrosoftDocs/mslearn-staticwebapp-api/generate?azure-portal=true) to open the template repository.
 
@@ -14,24 +14,26 @@ Let's create your repository by using a GitHub template. Azure has defined a ser
 
 1. Select **Create repository from template**.
 
-    GitHub builds your repository in the background.
+    As you create the project from a template, GitHub builds your repository in the background.
 
 ## Run your app locally
 
-You created your own GitHub repository named **my-static-web-app-and-api** in your GitHub account. Next, you'll clone the GitHub repo and run the code locally on your computer.
+Now you have a GitHub repository named **my-static-web-app-and-api** in your GitHub account. Next, you'll clone the GitHub repo and run the code locally on your computer.
 
 1. Open a terminal window on your computer.
 
     If you're on Windows, you can enter `cmd` in the system tray search box.
 
-1. To clone the repository to your machine, paste the following code into the command prompt window. Make sure to replace `<YOUR_GITHUB_USERNAME>` with your GitHub username.
+1. To clone the repository to your machine, paste the following code into the command prompt window.
+
+    Make sure to replace `<YOUR_GITHUB_USERNAME>` with your GitHub username.
 
    ```bash
    git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-and-api
    ```
 
    > [!NOTE]
-   > If you have trouble copying into the `Command Prompt` terminal session, right click the icon in the title bar, and in the **Properties** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is checked.
+   > If you have trouble copying into the command prompt terminal, right click the icon in the title bar, and in the **Properties** tab, ensure that **Use Ctrl+Shift+C/V as Copy/Paste** is checked.
 
 1. Change to the directory for the source code you cloned.
 
@@ -121,43 +123,43 @@ You created your own GitHub repository named **my-static-web-app-and-api** in yo
 
 ## Browse to your app
 
-When the application bundle is generated and compiled, a browser tab automatically opens to display your application running locally. Each front end application runs on a different local host port:
+When the application bundle is generated and compiled, a browser tab automatically opens to display your application running locally.
 
 ::: zone pivot="angular"
 
-1. Local host for angular is `http://localhost:4200`.
+Local host for angular is `http://localhost:4200`.
 
-   :::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="local host for your Angular web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-angular.png" alt-text="local host for your Angular web app.":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-1. Local host for react is  `http://localhost:3000`.
+Local host for react is  `http://localhost:3000`.
 
-   :::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="local host for your React web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-react.png" alt-text="local host for your React web app.":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-1. Local host for svelte is `http://localhost:5000`.
+Local host for svelte is `http://localhost:5000`.
 
-   :::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="local host for your Svelte web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-svelte.png" alt-text="local host for your Svelte web app.":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-1. Local host for Vue is `http://localhost:8080`.
+Local host for Vue is `http://localhost:8080`.
 
-   :::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your Vue web app.":::
+:::image type="content" source="../media/my-shopping-list-app-loading-vue.png" alt-text="Browsing to your Vue web app.":::
 
 ::: zone-end
 
-    Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
+Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later in this lesson.
 
-2. In the terminal session, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job. Press <kbd>y</kbd>+<kbd>Enter</kbd> to confirm.
+In the terminal, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job.
 
 Congratulations! You built your application and saw it running locally in your browser. Next you can publish your application to Azure Static Web Apps.
 
@@ -167,9 +169,43 @@ Now that you've created your own GitHub repository, you can create your own stat
 
 ### Install the Azure Static Web Apps extension for Visual Studio Code
 
-1. In Visual Studio Code menu, select Extensions, and enter **Azure Static Web Apps**.
+1. Open Visual Studio Code.
+
+1. From the top menu, select **View** > **Extensions**, and enter **Azure Static Web Apps** in the search box.
 
 1. When the extension tab loads in Visual Studio Code, select **Install**.
+
+## Open the application folder
+
+1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
+
+2. Enter **File: Open Folder...**.
+
+   ::: zone pivot="angular"
+
+3. Select the **my-static-web-app-and-api/angular-app** folder.
+
+   ::: zone-end
+
+   ::: zone pivot="react"
+
+3. Select the **my-static-web-app-and-api/react-app** folder.
+
+   ::: zone-end
+
+   ::: zone pivot="svelte"
+
+3. Select the **my-static-web-app-and-api/svelte-app** folder.
+
+   ::: zone-end
+
+   ::: zone pivot="vue"
+
+3. Select the **my-static-web-app-and-api/vue-app** folder.
+
+   ::: zone-end
+
+4. Select **Open** to open the folder in Visual Studio Code.
 
 ### Sign in to Azure in Visual Studio Code
 
@@ -180,13 +216,7 @@ Now that you've created your own GitHub repository, you can create your own stat
    > [!IMPORTANT]
    > Make sure to sign in to Azure using the same account you used to activate the in-browser sandbox. Using the same account makes Concierge Subscription available, which gives you access to free Azure resources during this tutorial.
 
-## Select your subscription
-
-1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
-
-1. Enter **File: Open Folder...** and select the **my-static-web-app-and-api** repository folder cloned to your computer.
-
-1. Select **Open** to open the folder in Visual Studio Code.
+### Select your subscription
 
 1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
 
@@ -194,7 +224,9 @@ Now that you've created your own GitHub repository, you can create your own stat
 
     :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Screenshot showing concierge subscription is selected.":::
 
-## Commit changes
+### Commit changes
+
+When you installed the application dependencies, some of the files in your project were updated in the process. In order to proceed, you need to commit those changes to the repository.
 
 1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
 
@@ -208,7 +240,7 @@ Now that you've created your own GitHub repository, you can create your own stat
 
 ### Create the static web app
 
-A current Azure and GitHub sign in are required to create a static web app. If you are not already signed in to both providers, the extension will prompt you to sign during the creation process.
+A current Azure and GitHub authenticated sessions are required to create a static web app. If you aren't already signed in to both providers, the extension will prompt you to sign during the creation process.
 
 1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
 
@@ -216,7 +248,7 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
 
-    Enter the following values for the remainder of the command pallette prompts.
+    Enter the following values for the remainder of the command palette prompts.
 
       | Prompt | Value |
       |--|--|
@@ -224,8 +256,8 @@ A current Azure and GitHub sign in are required to create a static web app. If y
       | Name | Enter **my-static-web-app-and-api**. |
       | Region | Select the region closest to you. |
       | Preset | Select **Angular**. |
-      | Application code location | Enter **/angular-app**. |
-      | Output location | Enter **/angular-app/dist/angular-app**. |
+      | Application code location | Enter **angular-app**. |
+      | Output location | Enter **dist/angular-app**. |
 
 ::: zone-end
 
@@ -233,7 +265,7 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
 
-    Enter the following values for the remainder of the command pallette prompts.
+    Enter the following values for the remainder of the command palette prompts.
 
       | Prompt | Value |
       |--|--|
@@ -241,8 +273,8 @@ A current Azure and GitHub sign in are required to create a static web app. If y
       | Name | Enter **my-static-web-app-and-api**. |
       | Region | Select the region closest to you. |
       | Preset | Select **React**. |
-      | Application code location | Enter **/react-app**. |
-      | Output location | Enter **/react-app/dist/**. |
+      | Application code location | Enter **react-app**. |
+      | Output location | Enter **dist**. |
 
 ::: zone-end
 
@@ -250,7 +282,7 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
 
-    Enter the following values for the remainder of the command pallette prompts.
+    Enter the following values for the remainder of the command palette prompts.
 
       | Prompt | Value |
       |--|--|
@@ -258,8 +290,8 @@ A current Azure and GitHub sign in are required to create a static web app. If y
       | Name | Enter **my-static-web-app-and-api**. |
       | Region | Select the region closest to you. |
       | Preset | Select **Svelte**. |
-      | Application code location | Enter **/svelte-app**. |
-      | Output location | Enter **/svelte-app/public/**. |
+      | Application code location | Enter **svelte-app**. |
+      | Output location | Enter **public**. |
 
 ::: zone-end
 
@@ -267,7 +299,7 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
 
-    Enter the following values for the remainder of the command pallette prompts.
+    Enter the following values for the remainder of the command palette prompts.
 
       | Prompt | Value |
       |--|--|
@@ -275,8 +307,8 @@ A current Azure and GitHub sign in are required to create a static web app. If y
       | Name | Enter **my-static-web-app-and-api**. |
       | Region | Select the region closest to you. |
       | Preset | Select **Vue**. |
-      | Application code location | Enter **/vue-app**. |
-      | Output location | Enter **/vue-app/dist/**. |
+      | Application code location | Enter **vue-app**. |
+      | Output location | Enter **dist**. |
 
 ::: zone-end
 
