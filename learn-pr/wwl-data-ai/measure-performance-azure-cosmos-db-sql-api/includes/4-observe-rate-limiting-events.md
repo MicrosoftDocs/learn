@@ -15,7 +15,13 @@ We'll look at each of these reasons and how to identify them.
 
 Out of the three reasons for this exception, this reason is the most common one. Azure Cosmos DB returns this exception when the RUs by operations on data exceed the provisioned RU/s.
 
-The first step to research a **429** exception, is that in the Azure portal under the Azure Cosmos DB account, under  **Insights->Request**, review the **Total Request by Status Code** charts for occurrences of the exception. Further filter the charts by *Time Range* and *Database* to your desired time span and database. For most applications, it's normal to have less than 5% of the requests with 429 exceptions.
+To investigate the possible cauese for a **429** exception: 
+
+1. Open up your Azure Cosmos DB account page in the Azure portal. 
+1. Under  **Insights->Request** menu, look at the **Total Request by Status Code** charts, and search for occurrences of the **429** exception.
+1. If needed, filter the charts by *Time Range* and *Database* to your desired time span and database. 
+
+For most applications, it's normal to have less than 5% of the requests with 429 exceptions.
 
 :::image type="content" source="../media/4-monitor-429-exception.png" alt-text="Diagram that shows the charts by Status code and Throttled Request (429 exceptions).":::
 
