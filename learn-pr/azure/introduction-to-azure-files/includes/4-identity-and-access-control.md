@@ -8,7 +8,7 @@ This section talks about how to authenticate users and provide access to Azure f
 
 ## Identity-based authentication
 
-[Azure Files](/azure/storage/files/storage-files-introduction) supports identity-based authentication only over SMB through three different methods: [on-premises Active Directory Domain Services (AD DS)](/windows-server/identity/get-started/virtual-dc/active-directory-domain-services-overview), [Azure Active Directory Domain Services (Azure AD DS),](/azure/active-directory-domain-services/overview) and Azure AD (preview – hybrid identities only). In all three cases, Azure Files uses the Kerberos protocol to authenticate. 
+[Azure Files](/azure/storage/files/storage-files-introduction) supports identity-based authentication only over SMB through three different methods: [on-premises Active Directory Domain Services (AD DS)](/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview), [Azure Active Directory Domain Services (Azure AD DS),](/azure/active-directory-domain-services/overview) and Azure AD (preview – hybrid identities only). In all three cases, Azure Files uses the Kerberos protocol to authenticate. 
 
 When an identity associated with a user or application running on a client attempts to access data in Azure file shares, the request is sent to the domain service to authenticate the identity. If authentication is successful, it returns a Kerberos token. The client sends a request that includes the Kerberos token, and Azure file shares use that token to authorize the request. Azure file shares only receive the Kerberos token, not access credentials. 
 
