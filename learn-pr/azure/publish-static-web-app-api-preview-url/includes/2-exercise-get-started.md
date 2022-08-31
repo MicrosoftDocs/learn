@@ -24,7 +24,7 @@ You created your own GitHub repository named **my-static-web-app-and-api** in yo
 
     If you're on Windows, you can enter `cmd` in the system tray search box.
 
-1. To clone the repository to your machine, paste the following code into the `Command Prompt` window. Make sure to replace `<YOUR_GITHUB_USERNAME>` with your GitHub username.
+1. To clone the repository to your machine, paste the following code into the command prompt window. Make sure to replace `<YOUR_GITHUB_USERNAME>` with your GitHub username.
 
    ```bash
    git clone https://github.com/<YOUR_GITHUB_USERNAME>/my-static-web-app-and-api
@@ -73,11 +73,13 @@ You created your own GitHub repository named **my-static-web-app-and-api** in yo
 
    ::: zone-end
 
-1. Install the application dependencies, and update to the latest by entering the following commands
+1. Install the application dependencies.
 
    ```bash
    npm install
    ```
+
+1. Ensure the latest version of each dependency is installed with the following command.
 
    ```bash
    npm audit fix
@@ -204,7 +206,7 @@ Now that you've created your own GitHub repository, you can create your own stat
 
     Don't worry about syncing your changes with the server at this point. The updates are copied up to GitHub when you publish the static web app.
 
-## Create a static web app with Visual Studio Code
+### Create the static web app
 
 A current Azure and GitHub sign in are required to create a static web app. If you are not already signed in to both providers, the extension will prompt you to sign during the creation process.
 
@@ -212,56 +214,64 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
 
-3. Select the **Concierge Subscription**.
-
-4. Enter **my-static-web-app-and-api** as the name of the static web app.
-
-5. Select a region closest to you.
+    Enter the following values for the remainder of the command pallette prompts.
 
 ::: zone pivot="angular"
 
-6. Select the **Angular** preset.
-
-7. Enter **/angular-app** as the location of your application code.
-
-8. Enter **/angular-app/dist** as the build output location.
+    | Prompt | Value |
+    |--|--|
+    | Subscription | Select the **Concierge Subscription**. |
+    | Name | Enter **my-static-web-app-and-api**. |
+    | Region | Select the region closest to you. |
+    | Preset | Select **Angular**. |
+    | Application code location | Enter **/angular-app**. |
+    | Output location | Enter **/angular-app/dist/angular-app**  |
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-6. Select the **React** preset.
-
-7. Enter **/react-app** as the location of your application code.
-
-8. Enter **/react-app/build** as the build output location.
+    | Prompt | Value |
+    |--|--|
+    | Subscription | Select the **Concierge Subscription**. |
+    | Name | Enter **my-static-web-app-and-api**. |
+    | Region | Select the region closest to you. |
+    | Preset | Select **React**. |
+    | Application code location | Enter **/react-app**. |
+    | Output location | Enter **/react-app/dist/**  |
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-6. Select the **Svelte** preset.
-
-7. Enter **/svelte-app** as the location of your application code.
-
-8. Enter **/svelte-app/public** as the build output location.
+    | Prompt | Value |
+    |--|--|
+    | Subscription | Select the **Concierge Subscription**. |
+    | Name | Enter **my-static-web-app-and-api**. |
+    | Region | Select the region closest to you. |
+    | Preset | Select **Svelte**. |
+    | Application code location | Enter **/svelte-app**. |
+    | Output location | Enter **/svelte-app/public/**  |
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-6. Select the **Vue** preset.
-
-7. Enter **/vue-app** as the location of your application code.
-
-8. Enter **/vue-app/dist** as the build output location.
+    | Prompt | Value |
+    |--|--|
+    | Subscription | Select the **Concierge Subscription**. |
+    | Name | Enter **my-static-web-app-and-api**. |
+    | Region | Select the region closest to you. |
+    | Preset | Select **Vue**. |
+    | Application code location | Enter **/vue-app**. |
+    | Output location | Enter **/vue-app/dist/**  |
 
 ::: zone-end
 
    > [!NOTE]
    > This repository differs from other projects you may have used in the past. This project contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you'd have only one app in the root of your repository and thus the default `/` for the app path location. This is a great example of how Azure Static Web Apps lets you configure locations in the first place - you have full control over how the app is built.
 
-9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+3. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
    :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config.":::
 
@@ -269,13 +279,13 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
    :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment.":::
 
-11. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
+4. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
     :::image type="content" source="../media/extension-actions.png" alt-text="GitHub Actions.":::
 
     Once the deployment is complete, you can navigate directly to your website.
 
-12. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
+5. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
     :::image type="content" source="../media/extension-browse-site.png" alt-text="Use the Visual Studio Code extension to browse the static web app.":::
 
