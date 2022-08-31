@@ -84,13 +84,13 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the *Initial throughput capacity* box, enter **1000**, and then press <kbd>Enter</kbd>.
 
-1. In the Azure Databases extension pane, verify that the **SchoolDB** database, containing the **StudentCourseGrades** container, appears.
+1. In the Resources extension pane, verify that the **SchoolDB** database, containing the **StudentCourseGrades** container, appears.
 
     :::image type="content" source="../media/3-database-and-container.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code, showing the SchoolDB database and the StudentCourseGrades container." loc-scope="vs-code":::
 
 ## Create and view documents
 
-1. In the Azure Databases extension pane, expand the **StudentCourseGrades** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
+1. In the Resources extension pane, expand the **StudentCourseGrades** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
 
 1. Right-click the **Documents** folder, and then select **Create Document**.
 
@@ -104,7 +104,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     :::image type="content" source="../media/3-new-document.png" alt-text="Screenshot of Visual Studio Code showing the newly created document." loc-scope="vs-code":::
 
-1. In the Azure Databases extension pane, right-click the **Documents** folder again, and select **Create Document**.
+1. In the Resources extension pane, right-click the **Documents** folder again, and select **Create Document**.
 
 1. In the *Enter a document ID* box, enter **S102**, and then press <kbd>Enter</kbd>. This will be the ID of another student.
 
