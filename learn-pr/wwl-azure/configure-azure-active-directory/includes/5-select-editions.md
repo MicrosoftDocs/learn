@@ -2,7 +2,7 @@ Azure Active Directory comes in four editions: **Free**, **Microsoft 365 Apps**,
 
 ### Things to know about Azure AD editions
 
-Consider the following features that distinguish the different editions of Azure AD. After you review the descriptions, think about which edition works best for your organization. In the table, an `X` indicates the feature is supported in the specified edition.
+Consider the following features that distinguish the different editions of Azure AD. After you review the features and descriptions, think about which edition works best for your organization. An `X` indicates the feature is supported.
 
 | Feature                                                         |   Free    |   Microsoft 365 Apps   |   Premium P1   |   Premium P2   |
 |:--------------------------------------------------------------- |:---------:|:----------------------:|:--------------:|:--------------:|
@@ -10,7 +10,7 @@ Consider the following features that distinguish the different editions of Azure
 | **Single Sign-on**                                              | Unlimited |       Unlimited        |   Unlimited    |   Unlimited    |
 | **Core Identity and Access Management**                         |    `X`    |          `X`           |      `X`       |      `X`       |
 | **Business-to-business Collaboration**                          |    `X`    |          `X`           |      `X`       |      `X`       |
-| **Identity and Access Management for Microsoft 365 apps**       |           |          `X`           |      `X`       |      `X`       |
+| **Identity and Access Management<br>for Microsoft 365 apps**    |           |          `X`           |      `X`       |      `X`       |
 | **Premium Features**                                            |           |                        |      `X`       |      `X`       |
 | **Hybrid Identities**                                           |           |                        |      `X`       |      `X`       |
 | **Advanced Group Access Management**                            |           |                        |      `X`       |      `X`       |
