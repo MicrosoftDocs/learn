@@ -2,7 +2,7 @@ Microsoft Azure is made up of datacenters located around the globe. These datace
 
 A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Australia East*, and *Japan West*. Azure is generally available in 60+ regions and available in 140 countries.
 
-:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="Diagram of the earth has all of the current Microsoft Azure regions marked.":::
+:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="Diagram of the earth with all of the current Microsoft Azure regions marked.":::
 
 
 ## Things to know about regions
@@ -24,7 +24,7 @@ A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Austr
  -  **Platform-provided replication**. Some services such as Geo-Redundant Storage provide automatic replication to the paired region.
  -  **Region recovery order**. During a broad outage, recovery of one region is prioritized out of every pair. Applications that are deployed across paired regions are guaranteed to have one of the regions recovered with priority.
  -  **Sequential updates**. Planned Azure system updates are rolled out to paired regions sequentially (not at the same time). Rolling updates minimizes downtime, reduces bugs, and logical failures in the rare event of a bad update.
- -  **Data residency**. A region resides within the same geography as its pair (except for Brazil South) to meet data residency requirements for tax and law enforcement jurisdiction purposes.
+ -  **Data residency**. Regions reside within the same geography as their enabled set (except for Brazil South and Singapore). Data residency helps meet requirements for tax and law enforcement jurisdiction purposes.
 
 > [!NOTE]
 > View the complete list of [region pairs](/azure/best-practices-availability-paired-regions#what-are-paired-regions).
