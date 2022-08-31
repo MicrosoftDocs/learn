@@ -1,4 +1,4 @@
-Azure Files offers fully managed file shares in the cloud. A file share is a network storage location that you can surface as local storage to your client operating system. Azure Files supports two industry-standard file sharing protocols: SMB and NFS. SMB can be used with Windows, Linux, and macOS clients. NFS can be used with Linux and macOS clients. Azure Files also has a REST API (application programming interface).
+Azure Files offers fully managed file shares in the cloud. A file share is a network storage location that you can surface as local storage to your client operating system. Azure Files supports two industry-standard file sharing protocols: Server Message Block (SMB) and Network File System (NFS). SMB can be used with Windows, Linux, and macOS clients. NFS can be used with Linux and macOS clients. Azure Files also has a REST API (application programming interface).
 
 Azure file shares can be mounted concurrently by cloud or on-premises deployments. SMB Azure file shares can also be cached on Windows servers with Azure File Sync to provide fast access near where the data is being used. 
 

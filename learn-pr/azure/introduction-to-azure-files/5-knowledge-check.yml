@@ -3,7 +3,7 @@ uid: learn.introduction-to-azure-files.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: TBD
+  description: Knowledge check
   ms.date: 08/30/2022
   author: kendownie
   ms.author: kendownie
@@ -33,18 +33,18 @@ quiz:
     choices:
     - content: True.
       isCorrect: false
-      explanation: "Incorrect: You can’t switch between premium and standard tiers. However, if you have standard tier file shares, you can switch between hot, cool, and transaction optimized."
+      explanation: "Incorrect: You can't switch between premium and standard tiers. However, if you have standard tier file shares, you can switch between hot, cool, and transaction optimized."
     - content: False.
       isCorrect: true
-      explanation: "Correct: You can’t switch between premium and standard tiers. However, if you have standard tier file shares, you can switch between hot, cool, and transaction optimized."
-  - content: You can’t use Azure Files without Azure File Sync.
+      explanation: "Correct: You can't switch between premium and standard tiers. However, if you have standard tier file shares, you can switch between hot, cool, and transaction optimized."
+  - content: You can't use Azure Files without Azure File Sync.
     choices:
     - content: True.
       isCorrect: false
-      explanation: "Correct: You don’t need Azure File Sync to use Azure Files."
+      explanation: "Correct: You don't need Azure File Sync to use Azure Files."
     - content: False.
       isCorrect: true
-      explanation: "Correct: You don’t need Azure File Sync to use Azure Files."
+      explanation: "Correct: You don't need Azure File Sync to use Azure Files."
   - content: Premium file shares enable highly I/O-intensive workloads, with high throughput and low latency.
     choices:
     - content: True.
