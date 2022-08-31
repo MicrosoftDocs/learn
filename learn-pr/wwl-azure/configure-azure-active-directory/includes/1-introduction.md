@@ -14,9 +14,9 @@ In this module, you learn how to:
 
 - Choose between supported editions of Azure AD.
 
-- Implement the Azure AD Join feature.
+- Implement the Azure AD join feature.
 
-- Use the Azure AD Self-Service Password Reset feature.
+- Use the Azure AD self-service password reset feature.
 
 ## Skills measured
 

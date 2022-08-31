@@ -1,19 +1,37 @@
-Many helpdesk calls are requests to reset passwords for users. Enabling **Self-service Password Reset** (SSPR) gives the users the ability to bypass the helpdesk and reset their own passwords.
+Many helpdesk calls are requests to reset passwords for users. The Azure Active Directory **self-service password reset** (SSPR) feature lets you give users the ability to bypass helpdesk and reset their own passwords.
 
-To configure Self-Service Password Reset, you first determine who will be enabled to use self-service password reset. From your existing Azure AD tenant, on the Azure portal under **Azure Active Directory (Users)** select **Password reset.**
+### Things to know about the Azure AD SSPR feature
 
-In the Password reset properties there are three options: **None**, **Selected**, and **All**.
+Examine the following characteristics and requirements of the SSPR feature:
 
-:::image type="content" source="../media/configure-password-reset-6d7cf7b8.png" alt-text="Screenshot that shows password reset options." border="false":::
+- All Azure AD editions support SSPR.
 
+- SSPR requires an Azure AD account with Global Administrator privileges to manage SSPR options. This account can always reset their own passwords, no matter what options are configured.
 
-The **Selected** option is useful for creating specific groups who have self-service password reset enabled. You can create group for testing or proof of concept before deploying to a larger group. Once you are ready to deploy this functionality to all users with accounts in your AD Tenant, you can change the setting.
+- SSPR uses a security group to limit the users who have SSPR privileges.
 
-**Authentication methods**
+- All user accounts in your organization must have a valid license to use SSPR.
 
-After enabling password reset for user and groups, you pick the number of authentication methods required to reset a password and the number of authentication methods available to users. At least one authentication method is required to reset a password. It is a good idea to have other methods available. You can choose from email notification, a text, or code sent to user’s mobile or office phone, or a set of security questions.
+### Things to consider when using SSPR
 
-You can require security questions to be registered for the users in your AD tenant. You can also configure how many correctly answered security questions are required for a successful password reset. Security questions can be less secure than other methods because some people might know the answers to another user's questions.
+Your organization wants to implement support for SSPR in their management solution. As you plan for your configuration, review the following points:
 
-> [!NOTE]
-> Azure Administrator accounts can always reset their passwords no matter what options are configured.
+- **Consider who can reset their passwords**. Decide which users in your organization should be enabled to use the feature.
+
+   In the Azure portal, there are three options for the SSPR feature: **None**, **Selected**, and **All**.
+
+   :::image type="content" source="../media/configure-password-reset-6d7cf7b8.png" alt-text="Screenshot that shows the self-service password reset options for an Azure AD tenant in the Azure portal.":::
+
+   The **Selected** option is useful for creating specific groups who have SSPR enabled. You can create groups for testing or proof of concept before applying the feature to a larger group. When you're ready to deploy SSPR to all user accounts in your Azure AD tenant, you can change the setting.
+
+- **Consider your authentication methods**. Determine how many authentication methods are required to reset a password, and select the authentication options for users.
+
+   - Your system must require at least one authentication method to reset a password.
+
+   - A strong SSPR plan offers multiple authentication methods for the user. Options include email notification, text message, or a security code sent to the user's mobile or office phone. You can also offer the user a set of security questions.
+
+   - You can require security questions to be registered for the users in your Azure AD tenant.
+
+   - You can configure how many correctly answered security questions are required for a successful password reset.
+
+- **Consider combining methods for stronger security**. Security questions can be less secure than other authentication methods. Some users might know the answers for a particular user's questions, or the questions might be easy to solve. If you support security questions, combine this option with other authentication methods.
