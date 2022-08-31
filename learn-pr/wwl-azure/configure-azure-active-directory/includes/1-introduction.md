@@ -6,17 +6,17 @@ In this module, your company is planning to implement Azure Active Directory (Az
 
 In this module, you learn how to:
 
- -  Describe features of Azure Active Directory and review use cases.
+- Describe the features of Azure Active Directory and review use cases.
 
- -  Work with the main components of Azure AD, such as identity, account, and tenant.
+- Recognize the main concepts of Azure AD, such as identity, account, and tenant.
 
- -  Compare differences between Azure AD and Active Directory Domain Services.
+- Understand the differences between Azure AD and Azure Active Directory Domain Services (Azure AD DS).
 
- -  Examine features in supported editions of Azure AD.
+- Examine the features available in supported editions of Azure AD.
 
- -  Explain the Azure AD Join feature and describe usage scenarios.
+- Explain the Azure AD Join feature and describe usage scenarios.
 
- -  Use the Azure AD Self-Service Password Reset feature.
+- Review how to use the Azure AD Self-Service Password Reset feature.
 
 ## Skills measured
 
@@ -24,9 +24,9 @@ The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Ad
 
 Manage identities and governance in Azure (15-20%)
 
-- Manage Azure AD objects
+- Manage Azure Active Directory objects
 
-   -  Configure Self-Service Password Reset
+   - Configure Self-Service Password Reset
 
 ## Prerequisites
 

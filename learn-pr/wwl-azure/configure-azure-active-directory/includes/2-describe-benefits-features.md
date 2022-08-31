@@ -16,7 +16,7 @@ Let's examine some of the prominent features of Azure AD.
 
 | Azure&nbsp;AD&nbsp;feature | Description |
 | --- | --- |
-| **Single sign-on (SSO) access** | Azure AD provides secure single sign-on (SSO) to web apps on the cloud and to on-premises apps. Users can sign in with the same set of login credentials to access all their apps. |
+| **Single sign-on (SSO) access** | Azure AD provides secure single sign-on (SSO) to web apps on the cloud and to on-premises apps. Users can sign in with the same set of credentials to access all their apps. |
 | **Ubiquitous device support** | Azure AD works with iOS, macOS, Android, and Windows devices, and offers a common experience across the devices. Users can launch apps from a personalized web-based access panel, mobile app, Microsoft 365, or custom company portals by using their existing work credentials. |
 | **Secure remote access** | Azure AD enables secure remote access for on-premises web apps. Secure access can include multifactor authentication (MFA), conditional access policies, and group-based access management. Users can access on-premises web apps from everywhere, including from the same portal. |
 | **Cloud extensibility** | Azure AD can extend to the cloud to help you manage a consistent set of users, groups, passwords, and devices across environments. |
@@ -39,5 +39,4 @@ Consider how the features and benefits of Azure AD can be used to support your c
 
 - **Consider reduced costs, self-service options**. Take advantage of the Azure AD self-service features to help reduce costs for your organization. Delegate certain tasks like resetting passwords, or creating and managing groups to your non-admin users.
 
-> [!TIP]
-> If you're a Microsoft 365, Azure, or Dynamics CRM Online customer, you might already be using Azure AD. Every Microsoft 365, Azure, and Dynamics CRM tenant is already an Azure AD tenant. You can start using your tenant to manage access to thousands of other cloud apps that integrate with Azure AD!
+In the next unit, we explore the Azure AD concepts that make these features possible.

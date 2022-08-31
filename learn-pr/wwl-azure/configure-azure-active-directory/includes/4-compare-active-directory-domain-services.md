@@ -1,14 +1,22 @@
-AD DS is the traditional deployment of Windows Server-based Active Directory on a physical or virtual server. Although AD DS is commonly considered to be primarily a directory service, it is only one component of the Windows Active Directory suite of technologies, which also includes Active Directory Certificate Services (AD CS), Active Directory Lightweight Directory Services (AD LDS), Active Directory Federation Services (AD FS), and Active Directory Rights Management Services (AD RMS). Although you can deploy and manage AD DS in Azure virtual machines it’s recommended you use Azure AD instead, unless you are targeting IaaS workloads that depend on AD DS specifically.
+Active Directory Domain Service (Azure AD DS) is the traditional deployment of Windows Server-based Active Directory on a physical or virtual server. Azure AD DS is commonly considered to be primarily a directory service, but it's only one component of the Windows Active Directory suite of technologies. The suite also includes Active Directory Certificate Services (AD CS), Active Directory Lightweight Directory Services (AD LS), Active Directory Federation Services (AD FS), and Active Directory Rights Management Services (AD RMS).
 
-## Azure Active Directory is different
+> [!Important]
+> You can deploy and manage Azure AD DS in Azure Virtual Machines, but unless you're targeting IaaS workloads that depend on Azure AD DS specifically, we recommend you use Azure AD.
 
-Although Azure AD has many similarities to AD DS, there are also many differences. It is important to realize that using Azure AD is different from deploying an Active Directory domain controller on an Azure virtual machine and adding it to your on-premises domain. Here are some characteristics of Azure AD that make it different.
+### Things to consider when using Azure AD rather than Azure AD DS
 
- -  **Identity solution.** Azure AD is primarily an identity solution, and it is designed for Internet-based applications by using HTTP and HTTPS communications.
- -  **REST API Querying.** Because Azure AD is HTTP/HTTPS based, it cannot be queried through LDAP. Instead, Azure AD uses the REST API over HTTP and HTTPS.
- -  **Communication Protocols.** Because Azure AD is HTTP/HTTPS based, it does not use Kerberos authentication. Instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization).
- -  **Federation Services.** Azure AD includes federation services, and many third-party services (such as Facebook).
- -  **Flat structure.** Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs).
+Azure AD is similar to Azure AD DS, but there are some significant differences. It's important to understand that using Azure AD is different from deploying an Active Directory domain controller on an Azure virtual machine and then adding it to your on-premises domain.
 
-> [!NOTE]
-> Azure AD is a managed service. You only manage the users, groups, and policies. Deploying AD DS with virtual machines using Azure means that you manage the deployment, configuration, virtual machines, patching, and other backend tasks.
+As you plan your identity strategy, consider the following characteristics that distinguish Azure AD from Azure AD DS.
+
+- **Identity solution**: Azure AD DS is primarily a directory service, while Azure AD is a full identity solution. Azure AD is designed for internet-based applications that use HTTP and HTTPS communications. The features and capabilities of Azure AD support target strong identity management.
+
+- **REST API queries**: Azure AD is based on HTTP and HTTPS protocols. Azure AD tenants can't be queried by using LDAP. Azure AD uses the REST API over HTTP and HTTPS.
+
+- **Communication protocols**: Because Azure AD is based on HTTP and HTTPS, it doesn't use Kerberos authentication. Azure AD implements HTTP and HTTPS protocols, such as SAML, WS-Federation, and OpenID Connect for authentication (and OAuth for authorization).
+
+- **Federation services**: Azure AD includes federation services, and many third-party services like Facebook.
+
+- **Flat structure**: Azure AD users and groups are created in a flat structure. There are no organizational units (OUs) or group policy objects (GPOs).
+
+- **Managed service**: Azure AD is a managed service. You manage only users, groups, and policies. If you deploy Azure AD DS with virtual machines by using Azure, you manage many other tasks, including deployment, configuration, virtual machines, patching, and other backend processes.
