@@ -28,7 +28,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
     > [!NOTE]
     > At this point, the client library has not attempted to connect to Azure or validate the connection string and access key being used. It has simply constructed a lightweight client object used to perform operations against Azure Blob Storage. Only when an operation is invoked against the storage account will a network call be made.
 
-1. Just below that, we can add code to create the _photos_ container, where we'll store our images.
+1. Just below the previous lines, add code to create the _photos_ container, where we'll store our images.
 
     ```csharp
     container.CreateIfNotExists();
@@ -36,7 +36,7 @@ To use the **Azure Storage Blobs client library for .NET** in your program, you 
 
 1. Save your file.
  
-1. Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists` method, you can run your program multiple times but the container will only be created on the first run.
+1. Now, run the application to have it create the container in the storage account. Because we used the `CreateIfNotExists` method, you can run your program multiple times, but the container will only be created on the first run.
 
     ```dotnetcli
     dotnet run
@@ -78,29 +78,32 @@ The **Azure Storage Blob client library for JavaScript** contains many client ob
      // Function code here
     }
     ```
-    
- 1. Save the changes you have made to *index.js*.
 
-  
-    Now let's add some code to execute an operation against our storage account. A storage account is organized into one or more containers, which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
+1. Save the changes you have made to *index.js*.
 
-    The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we'll use the name  _photos_.
+   Now let's add some code to execute an operation against our storage account. A storage account is organized into one or more containers, which act like folders in your storage account. The blob objects (files) you create in your storage account are stored in one of these containers. You need to create a container in your storage account to store your photos.
 
-    To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though a container doesn't yet exist in our storage account, the `ContainerClient` can be used to create the container and manage it once it's created.
+   The container name must be between 3 and 63 characters long and may only contain lowercase letters and the dash (-) character.  For this application, we'll use the name  _photos_.
+
+   To create a container in your storage account, you need to obtain a `ContainerClient` object that represents the container in the storage account. Even though a container doesn't yet exist in our storage account, the `ContainerClient` can be used to create the container and manage it once it's created.
 
 1. To obtain the `ContainerClient` object, you call the `getContainerClient` method on the `BlobServiceClient` object and provide the name of the container as a parameter. Then, to create the container in your Azure Storage account, use the `createIfNotExists` method on the **containerClient** object. Replace the `// Function Code here` comment line with these statements:
 
     ```javascript
-           // Create a container (folder) if it does not exist
-      const containerName = 'photos';
-      const containerClient = blobServiceClient.getContainerClient(containerName);
-      const createContainerResponse = await containerClient.createIfNotExists();
-      console.log(`Create container ${containerName} successfully`, createContainerResponse.succeeded);
+    // Create a container (folder) if it does not exist
+    const containerName = 'photos';
+    const containerClient = blobServiceClient.getContainerClient(containerName);
+    if ( !containerClient.exists()) {  
+        const createContainerResponse = await containerClient.createIfNotExists();
+        console.log(`Create container ${containerName} successfully`, createContainerResponse.succeeded);
+    }
+    else {
+        console.log(`Container ${containerName} already exists`);
     }
     ```
 
 1. Save the changes you made to the *index.js* file.
- 
+
 1. In the Cloud Shell command line, enter the following command to build and run your program, which creates the container in your storage account. 
 
     ```bash
@@ -118,7 +121,7 @@ The **Azure Storage Blob client library for JavaScript** contains many client ob
     az storage container list \
     --account-name <name>
     ```
-    
+
 ::: zone-end
 
 Now that our program is connecting to our Azure storage account and we've created a _photos_ container, let's have our program upload an image to it.
