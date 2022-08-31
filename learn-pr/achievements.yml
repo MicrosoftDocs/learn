@@ -1002,6 +1002,46 @@ achievements:
   title: 'AZ-400: Create and manage containers using Docker and Kubernetes'
   summary: 'AZ-400: Create and manage containers using Docker and Kubernetes'
   iconUrl: /learn/achievements/az-400-create-and-manage-containers-using-docker-and-kubernetes.svg
+- uid: learn.wwl.perform-data-science-azure-databricks.trophy
+  type: trophy
+  title: Perform data science with Azure Databricks
+  summary: Perform data science with Azure Databricks
+  iconUrl: /learn/achievements/perform-data-science-azure-databricks.svg
+- uid: learn.wwl.work-with-user-defined-functions.badge
+  type: badge
+  title: Work with user-defined functions
+  summary: Work with user-defined functions
+  iconUrl: /learn/achievements/work-with-user-defined-functions.svg
+- uid: learn.wwl.perform-machine-learning-with-azure-databricks.badge
+  type: badge
+  title: Perform machine learning with Azure Databricks
+  summary: Perform machine learning with Azure Databricks
+  iconUrl: /learn/achievements/perform-machine-learning-with-azure-databricks.svg
+- uid: learn.wwl.train-machine-learning-model.badge
+  type: badge
+  title: Train a machine learning model
+  summary: Train a machine learning model
+  iconUrl: /learn/achievements/train-machine-learning-model.svg
+- uid: learn.wwl.work-with-mlflow-azure-databricks.badge
+  type: badge
+  title: Work with MLflow in Azure Databricks
+  summary: Work with MLflow in Azure Databricks
+  iconUrl: /learn/achievements/work-with-mlflow-azure-databricks.svg
+- uid: learn.wwl.perform-model-selection-with-hyperparameter-tuning.badge
+  type: badge
+  title: Perform model selection with hyperparameter tuning
+  summary: Perform model selection with hyperparameter tuning
+  iconUrl: /learn/achievements/perform-model-selection-with-hyperparameter-tuning.svg
+- uid: learn.wwl.deep-learning-with-horovod-distributed-training.badge
+  type: badge
+  title: Deep learning with Horovod for distributed training
+  summary: Deep learning with Horovod for distributed training
+  iconUrl: /learn/achievements/deep-learning-with-horovod-distributed-training.svg
+- uid: learn.wwl.work-with-azure-machine-learning-deploy-serving-models.badge
+  type: badge
+  title: Work with Azure Machine Learning to deploy serving models
+  summary: Work with Azure Machine Learning to deploy serving models
+  iconUrl: /learn/achievements/work-with-azure-machine-learning-deploy-serving-models.svg
 - uid: learn.wwl.explore-kubernetes-tooling.badge
   type: badge
   title: Explore Kubernetes tooling
