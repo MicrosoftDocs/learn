@@ -17,36 +17,36 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "The company financial controller wants to be notified whenever the company is half-way to spending the money allocated for cloud services. Which of the following is the best approach to meeting this requirement?"
+  - content: "The company financial controller wants to be notified whenever the company is half-way to spending the money allocated for cloud services. Which of the following anwers is the best approach to meeting this requirement?"
     choices:
     - content: "Create an Azure reservation."
       isCorrect: false
-      explanation: "That's incorrect. Azure Reservations helps save money by committing to one-year or three-year plans for multiple products."
+      explanation: "Incorrect. Azure Reservations helps save money by committing to one-year or three-year plans for multiple products."
     - content: "Create a budget and a spending threshold."
       isCorrect: true
-      explanation: "That's correct. Create a budget and a spending threshold. Billing Alerts will help monitor and manage billing activity for your Azure accounts. Budget thresholds can be evaluated and will be reset automatically at the end of a period."
+      explanation: "Correct. Create a budget and a spending threshold. Billing Alerts will help monitor and manage billing activity for your Azure accounts. Budget thresholds can be evaluated and will be reset automatically at the end of a period."
     - content: "Create a management group."
       isCorrect: false
-      explanation: "That's incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
-  - content: "The company financial controller wants to identify which billing department each Azure resource belongs to. Which of the following is the best approach to meeting this requirement?"
+      explanation: "Incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
+  - content: "The company financial controller wants to identify which billing department each Azure resource belongs to. Which of the following answers is the best approach to meeting this requirement?"
     choices:
     - content: "Track resource usage in a spreadsheet."
       isCorrect: false
-      explanation: "That's incorrect. This form of tracking is manual and prone to errors. Is there a more automated way to track resource usage?"
+      explanation: "Incorrect. This form of tracking is manual and prone to errors. Is there a more automated way to track resource usage?"
     - content: "Place the resources in different regions."
       isCorrect: false
-      explanation: "That's incorrect. Is there a better solution?"
+      explanation: "Incorrect. Is there a better solution?"
     - content: "Apply a tag to each resource that includes the associated billing department."
       isCorrect: true
-      explanation: "That's correct. Tags provide extra information, or metadata, about your resources. The team might create a tag that's named BillingDept whose value would be the name of the billing department. Azure policy ensures that the proper tags are assigned when resources are provisioned."
-  - content: "Which of the following preserves data residency and offers comprehensive compliance and resiliency options?"
+      explanation: "Correct. Tags provide extra information, or metadata, about your resources. The team might create a tag that's named BillingDept whose value would be the name of the billing department. Azure policy ensures that the proper tags are assigned when resources are provisioned."
+  - content: "Which of the following answers preserves data residency and offers comprehensive compliance and resiliency options?"
     choices:
     - content: "Azure Active Directory Account"
       isCorrect: false
-      explanation: "That's incorrect. An Azure AD account is an identity created through Azure AD or another Microsoft cloud service."
+      explanation: "Incorrect. An Azure AD account is an identity created through Azure AD or another Microsoft cloud service."
     - content: "Regions"
       isCorrect: true
-      explanation: "That's correct. Regions preserve data residency and offer comprehensive compliance and resiliency options for customers."
+      explanation: "Correct. Regions preserve data residency and offer comprehensive compliance and resiliency options for customers."
     - content: "Subscriptions"
       isCorrect: false
-      explanation: "That's incorrect. An Azure subscription is a logical unit of Azure services that is linked to an Azure account."
+      explanation: "Incorrect. An Azure subscription is a logical unit of Azure services that is linked to an Azure account."

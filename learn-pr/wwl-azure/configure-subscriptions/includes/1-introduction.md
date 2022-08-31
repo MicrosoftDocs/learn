@@ -18,7 +18,7 @@ Manage subscriptions and governance
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  Determine the correct region to locate Azure services.
  -  Identify features and usage cases for Azure subscriptions.
