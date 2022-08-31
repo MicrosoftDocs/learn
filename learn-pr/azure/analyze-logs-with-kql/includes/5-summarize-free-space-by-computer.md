@@ -141,7 +141,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
     | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
     | extend packed = pack(CounterName, CounterValue)
-        ```
+    ```
 
 
 1. Create a property-bag (dictionary), called SpaceStats, of all free space statistics collected for each machine and summarize by computer and filter for machines with less than 50% free space:
