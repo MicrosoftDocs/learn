@@ -153,7 +153,7 @@ When the application bundle is generated and compiled, a browser tab automatical
 
 ::: zone-end
 
-   Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
+    Your app should say **Loading data ...** because there's no data or API yet. You'll add the API for your web app later on in this module.
 
 2. In the terminal session, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop your batch job. Press <kbd>y</kbd>+<kbd>Enter</kbd> to confirm.
 
@@ -196,7 +196,7 @@ Now that you've created your own GitHub repository, you can create your own stat
 
 1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
 
-1. Enter and select **Git Committ All**.
+1. Enter and select **Git Commit All**.
 
 1. Enter **initial commit** to the top of the file.
 
@@ -290,7 +290,7 @@ Congratulations! You've deployed your app to Azure Static Web Apps!
 
 Pull the latest changes from GitHub to bring down the workflow file that was created by Azure Static Web Apps service.
 
-1. Open the Command Palette by pressing <kbd>Ctrl+Shift+P</kbd>.
+1. Open the Command Palette by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>.
 
 1. Enter and select **Git: Pull**.
 
