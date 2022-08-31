@@ -81,7 +81,7 @@ To set up a Blazor project to work with, we'll use Visual Studio 2022. Visual St
 
 1. In the search box at the top of the "Create a new project" dialog, key in "Blazor Server", select **Blazor Server App**, and select **Next**.
 
-  ![Screenshot of Visual Studio 2022 'Create New Project' screen and the Blazor Server template.](../media/visual-studio-2022-create-new-project.png)
+   ![Screenshot of Visual Studio 2022 'Create New Project' screen and the Blazor Server template.](../media/visual-studio-2022-create-new-project.png)
 
 1. On the subsequent screen, name your project "BlazorApp", specify a location on disk with settings like the following, then select **Next**:
 
