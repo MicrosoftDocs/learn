@@ -4,9 +4,8 @@ You can configure Azure Files to provide a central location for your file shares
 
 ### Prerequisites
 
-Familiarity with creating an Azure subscription and storage account
-
-A basic understanding of file shares
+- Familiarity with creating an Azure subscription and storage account.
+- Basic understanding of file shares.
 
 ### Learning Objectives
 

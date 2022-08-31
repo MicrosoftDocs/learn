@@ -6,3 +6,4 @@ In this module, you learned about Azure Files and Azure File Sync, and how they 
 - [Introduction to Azure File Sync](/azure/storage/file-sync/file-sync-introduction)
 - [Configure storage accounts](/learn/modules/configure-storage-accounts/)
 - [Understand Azure Files billing](/azure/storage/files/understanding-billing)
+- [Create an Azure Storage account](/learn/modules/create-azure-storage-account)

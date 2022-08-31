@@ -17,8 +17,8 @@ abstract: |
   - Choose a redundancy option for your Azure file shares.
   - Understand the options for user access control and identity-based authentication.
 prerequisites: |
-  - Familiarity with creating an Azure subscription and storage account
-  - A basic understanding of file shares
+  - Familiarity with creating an Azure subscription and storage account.
+  - Basic understanding of file shares.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
