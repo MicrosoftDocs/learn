@@ -212,11 +212,11 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 1. Select <kbd>F1</kbd> to open the Visual Studio Code command palette.
 
+::: zone pivot="angular"
+
 2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
 
     Enter the following values for the remainder of the command pallette prompts.
-
-::: zone pivot="angular"
 
     | Prompt | Value |
     |--|--|
@@ -231,6 +231,10 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 ::: zone pivot="react"
 
+2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
+
+    Enter the following values for the remainder of the command pallette prompts.
+
     | Prompt | Value |
     |--|--|
     | Subscription | Select the **Concierge Subscription**. |
@@ -244,6 +248,10 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
 ::: zone pivot="svelte"
 
+2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
+
+    Enter the following values for the remainder of the command pallette prompts.
+
     | Prompt | Value |
     |--|--|
     | Subscription | Select the **Concierge Subscription**. |
@@ -256,6 +264,10 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 ::: zone-end
 
 ::: zone pivot="vue"
+
+2. Enter and select **Azure Static Web Apps: Create Static Web App...**.
+
+    Enter the following values for the remainder of the command pallette prompts.
 
     | Prompt | Value |
     |--|--|
