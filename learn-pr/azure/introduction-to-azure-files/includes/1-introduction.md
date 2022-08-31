@@ -10,7 +10,7 @@ A basic understanding of file shares
 
 ### Learning Objectives
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Identify use cases for Azure Files with and without Azure File Sync.
 - Understand the different types and tiers of Azure file shares, and when to use them.

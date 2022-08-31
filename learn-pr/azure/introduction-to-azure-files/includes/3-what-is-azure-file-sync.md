@@ -32,7 +32,8 @@ The following table will help you to better understand each of the tiers.
 Azure Files offers two billing models:  
 
 - **Provisioned model**: Using a provisioned model for storage is like buying an on-premises storage solution in that when you provision an Azure file share with a certain amount of storage capacity, you pay for that storage capacity regardless of whether you use it or not. Throughput and IOPS (input/output per second) costs are included in the provisioned storage amount, which means you’re paying for capacity and performance upfront. 
-- **Pay-as-you-go model**: In the pay-as-you-go model, you pay for what you use. Throughput and IOPS costs are not included in the storage amount; you pay for logical data stored, and then incur an additional set of transaction costs based on your usage of that data.
+
+- **Pay-as-you-go model**: In the pay-as-you-go model, you pay for what you use. Throughput and IOPS costs aren't included in the storage amount; you pay for the amount of data stored, and incur additional transaction costs based on your usage of that data.
 
 ## Redundancy
 

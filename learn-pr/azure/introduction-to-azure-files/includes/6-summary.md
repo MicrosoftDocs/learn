@@ -2,7 +2,7 @@ In this module, you learned about Azure Files and Azure File Sync, and how they 
 
 ### Learn more
 
-- [What is Azure Files?](https://docs.microsoft.com/azure/storage/files/storage-files-introduction)
-- [Introduction to Azure File Sync](https://docs.microsoft.com/azure/storage/file-sync/file-sync-introduction)
-- [Configure storage accounts](https://docs.microsoft.com/learn/modules/configure-storage-accounts/)
-- [Understand Azure Files billing](https://docs.microsoft.com/azure/storage/files/understanding-billing)
+- [What is Azure Files?](/azure/storage/files/storage-files-introduction)
+- [Introduction to Azure File Sync](/azure/storage/file-sync/file-sync-introduction)
+- [Configure storage accounts](/learn/modules/configure-storage-accounts/)
+- [Understand Azure Files billing](/azure/storage/files/understanding-billing)
