@@ -42,7 +42,7 @@ The logic app is triggered with an HTTP request. In the body of the request, we 
     > [!TIP]
     > If the **Logic Apps Designer** pane doesn't open automatically, select the **Logic app designer** link under the **Development Tools** section on the **Logic App** pane.
 
-1. The logic app we're creating will be triggered via an HTTP request that will be sent from an event grid. So, select the **When an HTTP request is received** trigger. You can find it under the **Start with a common trigger** section.
+1. The logic app we're creating will be triggered via an HTTP request that will be sent from an Event Grid. So, select the **When an HTTP request is received** trigger. You can find it under the **Start with a common trigger** section.
 
 1. The **Logic Apps Designer** surface will open with the visual designer displayed, and with the **When an HTTP request is received** trigger selected.
 
