@@ -16,9 +16,7 @@ Examine the following characteristics and requirements of the SSPR feature:
 
 Your organization wants to implement support for SSPR in their management solution. As you plan for your configuration, review the following points:
 
-- **Consider who can reset their passwords**. Decide which users in your organization should be enabled to use the feature.
-
-   In the Azure portal, there are three options for the SSPR feature: **None**, **Selected**, and **All**.
+- **Consider who can reset their passwords**. Decide which users in your organization should be enabled to use the feature. In the Azure portal, there are three options for the SSPR feature: **None**, **Selected**, and **All**.
 
    :::image type="content" source="../media/configure-password-reset-6d7cf7b8.png" alt-text="Screenshot that shows the self-service password reset options for an Azure AD tenant in the Azure portal.":::
 

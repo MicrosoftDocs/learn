@@ -49,22 +49,19 @@ quiz:
       explanation: "Incorrect. The Azure AD Microsoft 365 Apps edition doesn't provide the requested support for protecting sensitive data. Review the list of edition features, and consider the options for the Premium P2 edition."
     - content: "Active Directory Domain Services (AD DS)"
       isCorrect: false
-      explanation: "Incorrect. AD DS is only one component of the Windows Active Directory suite. It's not an identity solution."
+      explanation: "Incorrect. AD DS is only one component of the Windows Active Directory suite. It's not a comprehensive identity solution. We recommend Azure AD, unless your configuration targets IaaS workloads that depend specifically on AD DS."
     - content: "Azure Active Directory - Premium P2 edition"
       isCorrect: true
       explanation: "Correct. The Azure AD Premium P2 edition provides the support you need to meet your system requirements."
-    - content: "Hybrid approach of AD DS and Azure Active Directory"
-      isCorrect: false
-      explanation: "Incorrect. A hybrid approach isn't recommended. We recommend Azure AD, unless your configuration targets IaaS workloads that depend specifically on AD DS."
 
   - content: "Your users want to sign-in to devices, apps, and services from anywhere. Users want to sign-in by using an organizational work or school account instead of a personal account. What should you do first?"
     choices:
     - content: "Enable the device in Azure AD."
       isCorrect: false
       explanation: "Incorrect. You should first join the devices."
-    - content: "Register the device with Azure AD."
-      isCorrect: false
-      explanation: "Incorrect. Registering the device doesn't provide the features you need."
     - content: "Join the device to Azure AD."
       isCorrect: true
       explanation: "Correct. Joining the device provides the features you need."      
+    - content: "Register the device with Azure AD."
+      isCorrect: false
+      explanation: "Incorrect. Registering the device doesn't provide the features you need."
