@@ -8,7 +8,7 @@ Azure Functions is a great solution for processing data, integrating systems, wo
 
 ## Scaling function apps
 
-The context in which your functions run is called a function app. A function app is a unit if deployment, management, and scale for your functions. All function in a function app share the same setting and connections.
+The context in which your functions run is called a function app. A function app is a unit of deployment, management, and scale for your functions. All function in a function app share the same setting and connections.
 
 In the Consumption and Premium plans, Functions scales CPU and memory resources by adding more function app instances. The number of instances is determined based on the number of events that trigger a function. All functions within a function app share resource within an instance and scale at the same time.
 
