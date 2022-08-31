@@ -50,6 +50,13 @@ Microsoft Purview supports eight out-of-the-box attributes for any business glos
 
 However, these attributes may not be sufficient to completely define a term in an organization. To solve this problem, Microsoft Purview provides a feature where you can define custom attributes for your glossary.
 
+These status markers are metadata associated with the term. Currently you can set the following status on each term:
+
+Draft: This term isn't yet officially implemented.
+Approved: This term is official/standard/approved.
+Expired: This term should no longer be used.
+Alert: This term needs attention.
+
 ## Term templates
 
 Term Templates provides glossary custom attributes to be logically grouped together in catalog. The feature allows you to group all the relevant custom attributes together in a template and then apply the template while creating the glossary term. For example, all finance- related custom attributes like cost center, profit center, accounting code can be grouped in a term template Finance Template and the Finance template can be used to create financial glossary terms.
