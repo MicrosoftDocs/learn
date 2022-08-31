@@ -31,6 +31,8 @@ The names are different, but ultimately the piece of data is the same, so Micros
 Once an asset is ingested to the data catalog, it is not static: they can be updated and enhanced to provide information that can be used to identify useful data sources.
 Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column and later it's deleted from the source table. A scan will remove the column metadata from the asset in Microsoft Purview.
 
+You can also move an asset from one collection to a sub-collection of the collection where the source is house. For example, if you have an ADLS Gen 2 account, but a research team only needs access to a subset of the files, you can create a sub-collection for that team, and move the files they need into the subcollection.
+
 Both column-level and asset-level updates such as adding a description, glossary term or classification don't impact scan updates. Scans will update new columns and classifications regardless if these changes are made.
 
 If you update a classification, Microsoft Purview will not replace this updated classification when you re-scan the data.
