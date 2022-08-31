@@ -1252,3 +1252,8 @@ achievements:
   title: Process streaming data with Azure Databricks structured streaming
   summary: Process streaming data with Azure Databricks structured streaming
   iconUrl: /learn/achievements/process-streaming-data-azure-databricks-structured-streaming.svg
+- uid: learn.wwl.describe-azure-databricks-delta-lake-architecture.badge
+  type: badge
+  title: Describe Azure Databricks Delta Lake architecture
+  summary: Describe Azure Databricks Delta Lake architecture
+  iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
