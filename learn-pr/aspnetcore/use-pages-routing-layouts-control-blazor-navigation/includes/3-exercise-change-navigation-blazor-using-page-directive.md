@@ -129,7 +129,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
     </div>
     ```
 
-    When we're on this page, it would be nice to show the customers by highlighting the link. The team has already created an `active` css class, so add that.
+    When we're on this page, it would be nice to show the customers by highlighting the link. The team has already created an `active` css class, so add `active` to the `class` attribute that already contains the `nav-tab` style.
 
     ```html
     <div class="top-bar">
@@ -158,7 +158,7 @@ If you haven't created a Blazor app before, follow the [setup instructions for B
 At the moment, the checkout page doesn't allow customers to place their orders. The logic of the app needs to store the order to send to the kitchen. After the order is sent, let's redirect customers back to the home page.
 
 1. In the file explorer, expand **Pages**, and select **Checkout.razor**.
-1. Replace the button element with code to call a `PlaceOrder` method.
+1. Modify the button element with to call a `PlaceOrder` method. Add the `@onclick` and `disabled` attributes as shown:
 
     ```razor
     <button class="checkout-button btn btn-warning" @onclick="PlaceOrder" disabled=@isSubmitting>
@@ -166,7 +166,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
     </button>
     ```
 
-    We don't want customers placing duplicate orders, so disable the **Place order** button until the order is processed.
+    We don't want customers placing duplicate orders, so we disable the **Place order** button until the order is processed.
 
 1. In the `@code` block, add this code under the `Order Order => OrderState.Order;` code.
 
@@ -223,7 +223,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
 
     This code adds entity framework support for the app's order and pizza classes.
 
-1. In Visual Studio Code, on the menu, select **File** > **New File**.
+1. In Visual Studio Code, on the menu, select **File** > **New Text File**.
 1. Select the C# language, and enter this code:
 
     ```csharp
@@ -282,7 +282,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
 1. Save your changes with <kbd>Ctrl</kbd>+<kbd>S</kbd>.
 1. For the filename, use **OrderController.cs**. Make sure you save the file in the same directory as **OrderState.cs**.
 1. In the file explorer, select **OrderState.cs**.
-1. At the bottom of the class under the `RemoveConfiguredPizza` method, add this code to reset the order:
+1. At the bottom of the class under the `RemoveConfiguredPizza` method, modify `ResetOrder()` to reset the order:
 
     ```csharp
     public void ResetOrder()
@@ -295,7 +295,7 @@ At the moment, the checkout page doesn't allow customers to place their orders. 
 
 1. In Visual Studio Code, select <kbd>F5</kbd>. Or on the **Run** menu, select **Start Debugging**.
 
-    The app should compile, but then you'll see a runtime error. The error occurs because our **pizza.db** SQLLite database was created before there was support for orders and pizzas. We need to delete the file so that a new database can be created correctly.
+    The app should compile, but if you create an order and try to checkout, you'll see a runtime error. The error occurs because our **pizza.db** SQLLite database was created before there was support for orders and pizzas. We need to delete the file so that a new database can be created correctly.
 
 1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
 
@@ -409,7 +409,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
 
     By using `<a>` elements, we can manage which is the active page manually by adding the `active` css class. Let's update all the navigation to use a **NavLink** component instead.
 
-1. On all the pages with navigation, use the same Blazor code.
+1. On all three of the pages with navigation (**Index.razor**, **Checkout.razor**, and **MyOrders.razor**), use the same Blazor code for navigation:
 
     ```razor
     <div class="top-bar">
@@ -432,7 +432,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
     The `active` css class is now added automatically to pages by the **NavLink** component. You don't have to remember to do it on each page the navigation is on.
 
 1. The last step is to change `NavigationManager` to redirect to the **myorders** page after an order is placed. In the file explorer, expand **Pages**, and then select **Checkout.razor**.
-1. Change the `PlaceOrder` method to redirect to the correct page.
+1. Change the `PlaceOrder` method to redirect to the correct page by modifying passing `/myorders` to `NavigationManager.NavigateTo()`:
 
     ```razor
     async Task PlaceOrder()

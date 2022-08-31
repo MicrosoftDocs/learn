@@ -4,7 +4,7 @@ Suppose you're working on the pizza delivery company's website. You want to set 
 
 Here, you'll learn how to configure routes in Blazor by using the `@page` directive.
 
-## Use route templates
+## Using route templates
 
 When the user makes a request for a page from your web app, they can specify what they want to see with information in the URI. For example:
 
@@ -12,7 +12,7 @@ When the user makes a request for a page from your web app, they can specify wha
 
 After the protocol and website address, this URI indicates that the user wants to know about margherita pizzas. Also, the query string after the question mark shows that they're interested in an extra topping of pineapple. In Blazor, you use routing to ensure that each request is sent to the best component and that the component has all the information it needs to display what the user wants. In this case, you might want the request to be sent to the **Pizzas** component and for that component to display a margherita pizza with information about adding pineapple to it.
 
-Blazor routes requests with a specialized component called the **Router** component. Add or edit this component in the **App.razor** component and use its subtags and attributes to configure it:
+Blazor routes requests with a specialized component called the **Router** component. It's configured in **App.razor** like this:
 
 ```razor
 <Router AppAssembly="@typeof(Program).Assembly">
@@ -31,9 +31,9 @@ In the preceding code, the `<Found>` tag specifies the component that handles th
 
 In the `<Router>` component, you can also specify what is returned to the user when there isn't a matching route, by using the `<NotFound>` tag. The preceding example returns a single `<p>` paragraph, but you can render more complex HTML. For example, it might include a link to the home page or a contact page for site administrators.
 
-## Use the @page directive
+## Using the @page directive
 
-In a Blazor component, the `@page` directive specifies that the component should handle requests directly. You can specify a **RouteAttribute** in the `@page` directive by passing it as a string. For example, use this attribute to specify that the page handles requests to the **/Pizzas** route:
+In a Blazor component, the `@page` directive specifies that the component should handle requests directly. You can specify a **RouteAttribute** in the `@page` directive by passing it as a string. For example, this attribute to specifies that the page handles requests to the **/Pizzas** route:
 
 ```razor
 @page "/Pizzas"
@@ -46,7 +46,7 @@ If you want to specify more than one route to the component, use two or more `@p
 @page "/CustomPizzas"
 ```
 
-## Obtain location information and navigate with NavigationManager
+## Obtaining location information and navigating with NavigationManager
 
 Suppose you write a component to handle URIs that the user requests, such as `http://www.contoso.com/pizzas/margherita/?extratopping=pineapple`.
 
