@@ -95,7 +95,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
     1. Convert the `% Used Space` counter value to `% Free Space` (100% - `% Used Space` value = `% Free Space` value) and relabel `% Used Space` to `% Free Space`:   
     
-        <a href="xxx" target="_blank">Click to run query in Log Analytics demo environment</a>
+        <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42R0U6DMBSG7%252FcUJyQmzKCDB8CLaVyWTGci6uVS4MDqoF3a4pjx4S0lI5Rturum5%252Bt3%252FnP6giIb%252FcBujQIhoiXOkKEgClO4A5JzN0jHXX0Zf2KinkmJEIbgLHhOE1I8ULlxgAuYTCBaI3BDAWuwSmoRZfBBWcp3EgQmXKRydNoEreoPz4Kyqu4sh1z3vGIKRad7FIjwhDmJ9wqlyWYjzhUY5nVLEjxRBw28NS1boGs0Z1IRlmCHrSKuSNEAsipLIug3AhH5qiS1a23TO3R4J0WFY4j3%252BqLcVvrG6zfXJqwVstTiIQSaZW6PMzP0InoQ%252BP5N%252F82g45G4neF%252Fr70rK%252Byx9HzawZ944Frxrv1b3w8uyXyR3Fl%252B6b0XRVMwwedsNj0bXgMbPXFoDn31IM8vQBDU1y0DAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
     
         ```kusto
         Perf
@@ -110,7 +110,9 @@ Let's assess how we can use this data and which KQL operations can help extract 
         ```
     
     1. Convert total `Free Megabytes` to Gigabytes (`Free Megabytes` value * 0.001 = Free Gigabytes) and relabel `Free Megabytes` to `OverallFreeSpaceInGB`:
-    
+            
+        <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42R0U6DMBSG7%252FcUJyQmzKCDB8CLaVyWTGci6uVS4MDqoF3a4pjx4S0lI5Rturum5%252Bt3%252FnP6giIb%252FcBujQIhoiXOkKEgClO4A5JzN0jHXX0Zf2KinkmJEIbgLHhOE1I8ULlxgAuYTCBaI3BDAWuwSmoRZfBBWcp3EgQmXKRydNoEreoPz4Kyqu4sh1z3vGIKRad7FIjwhDmJ9wqlyWYjzhUY5nVLEjxRBw28NS1boGs0Z1IRlmCHrSKuSNEAsipLIug3AhH5qiS1a23TO3R4J0WFY4j3%252BqLcVvrG6zfXJqwVstTiIQSaZW6PMzP0InoQ%252BP5N%252F82g45G4neF%252Fr70rK%252Byx9HzawZ944Frxrv1b3w8uyXyR3Fl%252B6b0XRVMwwedsNj0bXgMbPXFoDn31IM8vQBDU1y0DAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
+        
         ```kusto
         Perf
         | where TimeGenerated > ago(1d)
@@ -127,6 +129,8 @@ Let's assess how we can use this data and which KQL operations can help extract 
         ```
 
 1. Group together `CounterName, CounterValue` key-value pairs:
+    
+    <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42R0U6DMBSG7%252FcUJyQmzKCDB8CLaVyWTGci6uVS4MDqoF3a4pjx4S0lI5Rturum5%252Bt3%252FnP6giIb%252FcBujQIhoiXOkKEgClO4A5JzN0jHXX0Zf2KinkmJEIbgLHhOE1I8ULlxgAuYTCBaI3BDAWuwSmoRZfBBWcp3EgQmXKRydNoEreoPz4Kyqu4sh1z3vGIKRad7FIjwhDmJ9wqlyWYjzhUY5nVLEjxRBw28NS1boGs0Z1IRlmCHrSKuSNEAsipLIug3AhH5qiS1a23TO3R4J0WFY4j3%252BqLcVvrG6zfXJqwVstTiIQSaZW6PMzP0InoQ%252BP5N%252F82g45G4neF%252Fr70rK%252Byx9HzawZ944Frxrv1b3w8uyXyR3Fl%252B6b0XRVMwwedsNj0bXgMbPXFoDn31IM8vQBDU1y0DAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
 
     ```kusto
     Perf
@@ -146,7 +150,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 1. Create a property-bag (dictionary), called SpaceStats, of all free space statistics collected for each machine and summarize by computer and filter for machines with less than 50% free space:
     
-    <a href="xxx" target="_blank">Click to run query in Log Analytics demo environment</a>
+    <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42SQU%252FCQBCF7%252FyKSROTYiqUgzfrQY2EBMUE1IMxZNoOZaXdJbtbAeOPd9uG0gVUbs3Om%252B%252B9mekTyVnrG1ZzkgQTllGfOEnUFMM1YCLcXtyu66PwgyL9iBlBEIAzFAmLML1jauGAkNDtwmROIEoV8EKWKwNiHF4Zj8VKgaRIyFi1jpOgQv3BGTKer2vKNtetyLkmWePuJRE8UILhRpMqs9kS5wxKzXiJER2pgxE8F5aVoDYacKWRR1TLphOhMS0EKs8ylOyLAGUyzXDtWtv0tg4vmObUhnBjHrJlbl68prkh0VoTjy09BMBmM7ehK2doRPSg5%252FsXzZ49xwNwNcP%252FXHtXVthD6O9p927igWvFO%252Fc7vt87JfNJcGf0afaepkWhDD7g%252FZtfwxvBwkwclB9N9GGe3ZlL7FijVqYxwwVNQ0zcCmXdt%252F57dh2dN3ur71cBXPo%252FdE%252FvKYwDAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
 
     ```kusto
     Perf
