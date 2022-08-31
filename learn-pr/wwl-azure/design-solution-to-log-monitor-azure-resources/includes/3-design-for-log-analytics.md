@@ -32,7 +32,7 @@ Now you're ready to review considerations for designing with Azure Monitor Logs 
 
 - **Consider deployment model options**. Most IT organizations use a centralized, decentralized, or hybrid model for their architecture. Consider these common workspace deployment models, and how they might work for the Tailwind Traders organization:
 
-   | Model | Description |
+   | Deployment | Description |
    | --- | --- |
    | **Centralized** | All logs are stored in a central workspace and administered by a single team. Azure Monitor provides differentiated access per-team. In this scenario, it's easy to manage, search across resources, and cross-correlate logs. The workspace can grow significantly depending on the amount of data collected from multiple resources in your subscription. Extra administrative overhead is needed to maintain access control to different users. This model is known as _hub and spoke_. |
    | **Decentralized** | Each team has their own workspace created in a resource group they own and manage. Log data is segregated per resource. In this scenario, the workspace can be kept secure and access control is consistent with resource access. A disadvantage of this module is that it can be difficult to cross-correlate logs. Users who need a broad view of many resources can't analyze the data in a meaningful way. |
@@ -40,7 +40,7 @@ Now you're ready to review considerations for designing with Azure Monitor Logs 
 
 - **Consider access mode**. Plan for how your users can access Azure Monitor Logs workspaces and define the scope of data they can access. Tailwind Traders users have two options for accessing their data: 
 
-   | Access mode | Description |
+   | Access&nbsp;mode | Description |
    | --- | --- |
    | _Workspace-context_ | A user can review all logs in the workspace for which they have permission. Queries are scoped to all data in all tables in the workspace. Logs are accessed with the workspace as the scope by selecting **Logs** from the **Azure Monitor** menu in the Azure portal. |
    | _Resource-context_ | A user accesses the workspace for a particular resource, resource group, or subscription. By selecting **Logs** from a resource menu in the Azure portal, they can view logs for only resources in all tables for which they have access. Queries are scoped to only data associated with that resource. This mode also enables granular Azure RBAC. |

@@ -4,7 +4,7 @@ As the first step to creating your project's application, you need to create a .
 01. Add a package reference to the SDK
 01. Connect using the client classes
 
-:::image type="content" source="../media/project-visual-app.png" alt-text="Illustration of icons of an Azure Cosmos DB account and .NET application." lightbox="../media/project-visual-app.png" border="false":::
+:::image type="content" source="../media/project-visual-app.svg" alt-text="Illustration of icons of an Azure Cosmos DB account and .NET application." lightbox="../media/project-visual-app.svg" border="false":::
 
 After you complete this exercise, you'll have a simple .NET application that successfully connects to your SQL API account, but doesn't perform any operations yet.
 
