@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-active-directory.compare-ad-ds-to
-title: Compare Azure Active Directory Domain Services to Azure AD
+title: Compare Active Directory Domain Services to Azure AD
 metadata:
-  title: Compare Azure Active Directory Domain Services to Azure AD
-  description: "Compare Azure Active Directory Domain Services to Azure AD"
+  title: Compare Active Directory Domain Services to Azure AD
+  description: "Compare Active Directory Domain Services to Azure AD"
   ms.date: 08/30/2022
   author: wwlpublish
   ms.author: cynthist
