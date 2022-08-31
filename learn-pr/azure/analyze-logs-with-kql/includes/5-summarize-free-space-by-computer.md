@@ -20,8 +20,10 @@ In the previous exercise, we saw that the `Perf` table's `ObjectName` column lis
 
 Let's run a query on the `Perf` table to list distinct `ObjectName` values:
 
+<a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAAwtILUpT0NdXCMlIVShJTMpJVajML33UMLMoVaGwNLWoMjMvnatGISWzuCQzL7lEwT8pKzW5xC8xNxWkyQcoXIxVsiwxpzS1GAB8NbsmXQAAAA%253D%253D/timespan/P1D" target="_blank">Click to run query in Log Analytics demo environment</a>
+
 ```kusto
-Perf  // The table you’re querying
+Perf // The table you’re querying
 | distinct ObjectName // Lists distinct ObjectName values
 ```
 
@@ -34,8 +36,10 @@ In our scenario, we're interested in analyzing virtual machines, so the objects 
 
 To list the distinct names of the counters Azure Monitor collects for the `LogicalDisk` and `Logical Disk` objects, run:
 
+<a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA33MMQ6CQBCF4d5TvHABTkClJVELE%252BuFHWEUd%252BPMrkhC4TW8nidxxWhFbN%252F8821JDshz7FpCMFVHGHx83h9CuESSgV0DLEb0LaVpUx2pDmtzJhQFstI3XJtuxXrK4OXr%252BKmCe2dRyYId9uys7xVCtReri3kJH%252BqPU7KLt58ywrIGdqla%252BugCySSm%252FzLtOn%252B9mi6SvgDYtn9E%252BQAAAA%253D%253D/timespan/P1D" target="_blank">Click to run query in Log Analytics demo environment</a>
+
 ```kusto
-Perf  // The table you’re querying  
+Perf // The table you’re querying  
 | where ObjectName == "LogicalDisk" or // The object name used in Windows records
 ObjectName == "Logical Disk" // The object name used in Linux records
 | distinct CounterName // Lists distinct CounterName values
@@ -62,6 +66,8 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 1. Retrieve all logs generated in the past day that reported the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters for the `LogicalDisk` and `Logical Disk` objects:
 
+    <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA32R3UoDMRCF7%252FsUhwVBoVB8gHqjVIT6g1a8lOlmuo1mkzKZbRV8eJNUlxaWXp9vvzl78sSyGv1gt2ZhLGzLt%252BxZSNngCtSE80tz0eePyw%252Bu9YFaxnSKah4aW5O7sfGzQhBMJlisGaFQ8BnrYhJZjzfrTdhFCNdBTBwNm7BXnfDMre%252B%252Best%252Fr%252BvQeWXpdTNhxj03tPxWjqXbMVKdoTAvG6p5IEcCXvPJPyA1mlmX8ohVgjW126ThgrTka0a9%252Fzji%252BPAYh2fGIG9w6B109D9156PmpK%252F0vghKrkJu88wqlrccYUgpDeLKk2ko3TSDaTNquPQl52DEZjx4ELZWtEuESXP%252FAsyG8IcBAgAA" target="_blank">Click to run query in Log Analytics demo environment</a>    
+
     ```kusto
     Perf
     | where TimeGenerated > ago(1d)
@@ -73,6 +79,8 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
 1. Retrieve the last counter value collected for each counter for every virtual machine: 
 
+    <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA32S3UoDMRCF732KQ0FoYaH4APVGqQj1B616Waab6Taan5Jkt6348E62dulC8XLnnJz5crLPHFYXP9iuOTDm2vIdOw6UWOEaVPnhlRp1%252BtPyk8v0SJYxmWAw85Uuydzq%252BDWADxiPMV8zfOuCy7Y6SpB2%252BNBO%252BW1E4NIHFS%252FOJ%252BEQ9U%252FOTLt616UcuW587RKHLm4amPHAFS33iWPL1rcMLtF6XjdU8hkdYnjLK%252F8MQjTVRvSIlZiT0G2kOB8suZJRHg5H9BcXOF1TgJzCae7ZjO5S9y6mrHRIi7lPZAbINC%252BcguaGIxQlkkJM%252B2TJt2wpG6UzqrjlJWOggs5270BodEi1OJTUDcjGWFtLQX8zKFQLS7th71cojvW8k6l5hOVeBnZTy6ToNdcjyySGYjpeDU0%252BLV%252FGyLsKbUZjKtedoR00HPYdoRVZO%252F4FivrG3KYCAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
+    
     ```kusto
     Perf
     | where TimeGenerated > ago(1d)
@@ -80,10 +88,12 @@ Let's assess how we can use this data and which KQL operations can help extract 
     ObjectName == "Logical Disk" // The object name used in Linux records
     | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
     | where InstanceName == "_Total"  // Retrieves data related to the total usage for all drives on a virtual disk  
-    |   summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // 
+    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // Retrieves the last counter value collected for each counter for every virtual machine
     ```
 
 1. 
+
+    <a href="xxx" target="_blank">Click to run query in Log Analytics demo environment</a>
 
     ```kusto
     Perf
@@ -101,6 +111,8 @@ Let's assess how we can use this data and which KQL operations can help extract 
     ```
 
 1. Create a property-bag (dictionary), called SpaceStats, of all free space statistics collected for each machine:
+    
+    <a href="xxx" target="_blank">Click to run query in Log Analytics demo environment</a>
 
     ```kusto
     Perf
