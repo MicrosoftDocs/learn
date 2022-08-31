@@ -70,7 +70,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 ## Create a database and container
 
-1. In the Azure Databases extension pane, right-click the database account you created, and then select **Create Database**.
+1. In the Resources extension pane, right-click the database account you created, and then select **Create Database**.
 
     :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
 
@@ -80,7 +80,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by student ID.
 
-1. Leave the *Partition key* box blank, and press <kbd>Enter</kbd>.
+1. Leave the *Enter the partition key for the collection, or leave blank for fixed size* box blank, and press <kbd>Enter</kbd>.
 
 1. In the *Initial throughput capacity* box, enter **1000**, and then press <kbd>Enter</kbd>.
 
