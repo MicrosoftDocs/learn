@@ -8,6 +8,7 @@ metadata:
   ms.author: nickwalk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: vscode-azure-extension-update-completed
 title: Build a Node.js app for Azure Cosmos DB in Visual Studio Code
 summary: Build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code and Node.js.
 abstract: | 

@@ -17,7 +17,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the **Search** box, enter **Azure Databases**, and press <kbd>Enter</kbd>.
 
-1. In the list of extensions, select the **Azure Databases** extension published by Microsoft, and then select **Download**. Install the package when the download is completed.
+1. In the list of extensions, select the **Azure Databases** extension published by Microsoft, and then select **Install**.
 
     :::image type="content" source="../media/3-install-cosmosdb-extension.png" alt-text="Screenshot of Visual Studio Code. The user has selected the Azure Databases extension." loc-scope="vs-code":::
 
@@ -27,11 +27,11 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. On the **View** menu, select **Command Palette**.
 
-1. In the command palette, enter **Azure**, and then select **Azure: Focus on Databases View**.
+1. In the command palette, enter **Azure**, and then select **Azure: Focus on Resources View**.
 
     :::image type="content" source="../media/3-command-palette-cosmosdb.png" alt-text="Screenshot of the command palette in Visual Studio Code. The user has selected the Focus on Azure Databases extension View command." loc-scope="vs-code":::
 
-    The Databases pane appears (if not already visible).
+    The Resources pane appears (if not already visible).
 
     :::image type="content" source="../media/3-cosmosdb-pane.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code." loc-scope="vs-code":::
 
@@ -39,13 +39,18 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
 
-1. In the toolbar above the Azure Databases extension pane, select **Create Server** (the **+** sign).
+1. In the Resources pane, select **Select subscriptions...**.
+
+1. Select **Concierge Subscription** and then **OK**.
+
+1. In the Resources pane, expand *Concierge Subscription*.
+
+1. Right-click **Azure CosmosDB** and then select **Create Server**.
 
     :::image type="content" source="../media/3-add-comsosdb-account.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The user has selected the **Create Account** command." loc-scope="vs-code":::
 
     A wizard starts and prompts you for the details of the new account.
 
-1. In the *Select subscription* box, select **Concierge Subscription**.
 
 1. In the *Select an Azure Database Server* box, select **Core (SQL)**.
 
@@ -59,7 +64,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     Wait while the Azure Databases extension account is created. This will take a few minutes.
 
-1. When the account has been created, in the Azure Databases extension pane, expand *Concierge Subscription*. Verify that the new Cosmos DB account appears.
+1. When the account has been created, in the Resources extension pane, expand *Concierge Subscription* and *Azure CosmosDB*. Verify that the new Cosmos DB account appears.
 
     :::image type="content" source="../media/3-new-comsosdb-account.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The new Azure Databases extension account is listed under the user's Azure account." loc-scope="vs-code":::
 
