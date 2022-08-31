@@ -218,14 +218,14 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
     Enter the following values for the remainder of the command pallette prompts.
 
-    | Prompt | Value |
-    |--|--|
-    | Subscription | Select the **Concierge Subscription**. |
-    | Name | Enter **my-static-web-app-and-api**. |
-    | Region | Select the region closest to you. |
-    | Preset | Select **Angular**. |
-    | Application code location | Enter **/angular-app**. |
-    | Output location | Enter **/angular-app/dist/angular-app**  |
+      | Prompt | Value |
+      |--|--|
+      | Subscription | Select the **Concierge Subscription**. |
+      | Name | Enter **my-static-web-app-and-api**. |
+      | Region | Select the region closest to you. |
+      | Preset | Select **Angular**. |
+      | Application code location | Enter **/angular-app**. |
+      | Output location | Enter **/angular-app/dist/angular-app**. |
 
 ::: zone-end
 
@@ -235,14 +235,14 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
     Enter the following values for the remainder of the command pallette prompts.
 
-    | Prompt | Value |
-    |--|--|
-    | Subscription | Select the **Concierge Subscription**. |
-    | Name | Enter **my-static-web-app-and-api**. |
-    | Region | Select the region closest to you. |
-    | Preset | Select **React**. |
-    | Application code location | Enter **/react-app**. |
-    | Output location | Enter **/react-app/dist/**  |
+      | Prompt | Value |
+      |--|--|
+      | Subscription | Select the **Concierge Subscription**. |
+      | Name | Enter **my-static-web-app-and-api**. |
+      | Region | Select the region closest to you. |
+      | Preset | Select **React**. |
+      | Application code location | Enter **/react-app**. |
+      | Output location | Enter **/react-app/dist/**. |
 
 ::: zone-end
 
@@ -252,14 +252,14 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
     Enter the following values for the remainder of the command pallette prompts.
 
-    | Prompt | Value |
-    |--|--|
-    | Subscription | Select the **Concierge Subscription**. |
-    | Name | Enter **my-static-web-app-and-api**. |
-    | Region | Select the region closest to you. |
-    | Preset | Select **Svelte**. |
-    | Application code location | Enter **/svelte-app**. |
-    | Output location | Enter **/svelte-app/public/**  |
+      | Prompt | Value |
+      |--|--|
+      | Subscription | Select the **Concierge Subscription**. |
+      | Name | Enter **my-static-web-app-and-api**. |
+      | Region | Select the region closest to you. |
+      | Preset | Select **Svelte**. |
+      | Application code location | Enter **/svelte-app**. |
+      | Output location | Enter **/svelte-app/public/**. |
 
 ::: zone-end
 
@@ -269,14 +269,14 @@ A current Azure and GitHub sign in are required to create a static web app. If y
 
     Enter the following values for the remainder of the command pallette prompts.
 
-    | Prompt | Value |
-    |--|--|
-    | Subscription | Select the **Concierge Subscription**. |
-    | Name | Enter **my-static-web-app-and-api**. |
-    | Region | Select the region closest to you. |
-    | Preset | Select **Vue**. |
-    | Application code location | Enter **/vue-app**. |
-    | Output location | Enter **/vue-app/dist/**  |
+      | Prompt | Value |
+      |--|--|
+      | Subscription | Select the **Concierge Subscription**. |
+      | Name | Enter **my-static-web-app-and-api**. |
+      | Region | Select the region closest to you. |
+      | Preset | Select **Vue**. |
+      | Application code location | Enter **/vue-app**. |
+      | Output location | Enter **/vue-app/dist/**. |
 
 ::: zone-end
 
