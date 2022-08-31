@@ -432,7 +432,7 @@ The app is improving. We have pizza configuration and a checkout. We want to all
     The `active` css class is now added automatically to pages by the **NavLink** component. You don't have to remember to do it on each page the navigation is on.
 
 1. The last step is to change `NavigationManager` to redirect to the **myorders** page after an order is placed. In the file explorer, expand **Pages**, and then select **Checkout.razor**.
-1. Change the `PlaceOrder` method to redirect to the correct page by modifying passing `/myorders` to `NavigationManager.NavigateTo()`:
+1. Change the `PlaceOrder` method to redirect to the correct page by passing `/myorders` to `NavigationManager.NavigateTo()`:
 
     ```razor
     async Task PlaceOrder()
