@@ -85,7 +85,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     destBlobContainer.CreateIfNotExists();
     ```
 
-    This block of code creates `BlobServiceClient` objects for the source and destination accounts. Then, it creates `BlobContainerClient` objects that you can use to access blobs in these accounts. The *sourceBlobContainer* variable is a reference to the container in the source account, containing the blobs to be moved. The *destBlobContainer* variable is a reference to the container in the destination account, where the blobs to be transferred and stored.
+    This block of code creates `BlobServiceClient` objects for the source and destination accounts. Then, it creates `BlobContainerClient` objects that you can use to access blobs in these accounts. The *sourceBlobContainer* variable is a reference to the container in the source account, containing the blobs to be moved. The *destBlobContainer* variable is a reference to the container in the destination account, where the blobs are to be transferred and stored.
 
 1. Scroll down to the method `FindMatchingBlobsAsync`.
 
@@ -159,7 +159,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     }
     ```
 
-    The parameters to this method are the list of blobs to be moved, and the source and destination containers. The code iterates through the list of blobs and uses the `StartCopyFromUriAsync` method to start copying each blob in turn. Once the copy operation has been initiated, the code queries the status of the destination blob at 0.5-second intervals, displaying the progress of the operation, until the copy is complete. When the blob has been copied, it is removed from the source container.
+    The parameters to this method are the list of blobs to be moved, and the source and destination containers. The code iterates through the list of blobs and uses the `StartCopyFromUriAsync` method to start copying each blob in turn. Once the copy operation has been initiated, the code queries the status of the destination blob at 0.5-second intervals, displaying the progress of the operation, until the copy is complete. When the blob has been copied, it's removed from the source container.
 
     The `StartCopyFromUriAsync` method call takes a URL containing a SAS token for the source object, as described in the previous unit.
 
@@ -188,20 +188,20 @@ To have some blobs with a different modified date from the batch upload time, yo
 
 1. Select **Save** to commit the changes to the blob.
 
-1. Repeat this for one or two additional blob files.
+1. Repeat this for one or two other blob files.
 
 With several blobs showing newer modification dates, you can differentiate between them when you run the .NET app.
 
 1. In the list of blobs in this container, note the modification date for the blobs. Select a date and time that is roughly in the middle of the modification date for the blobs (some blobs should have a modification time before your selected date, and others after).
 
     > [!NOTE]
-    > The Azure portal will show you times in your local time zone, but our program will expect them in [UTC time](https://www.bing.com/search?q=utc+time&PC=U316&FORM=CHROMN). Adjust your date from what the Azure portal has shown to it's UTC value. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Korean Standard Time (KST), you would need to subtract 9 hours to UTC: `6/15/2021, 01:04:27 AM`.
+    > The Azure portal will show you times in your local time zone, but our program will expect them in [UTC time](https://www.bing.com/search?q=utc+time&PC=U316&FORM=CHROMN). Adjust your date from what the Azure portal has shown to it's UTC value. For example, if your time was `6/15/2021, 10:04:27 AM` in Korean Standard Time (KST), you would need to subtract 9 hours to UTC: `6/15/2021, 01:04:27 AM`.
 
 1. Using the portal, move to your destination (cool) storage account.
 
 1. Under **Security + networking**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
-1. In the **Data storage** section, click **Containers**.
+1. In the **Data storage** section, select **Containers**.
 
 1. Select **+ Container**, and create a new container named **transfer-test**.
 
