@@ -68,25 +68,25 @@ Once configuration is complete, create a custom named entity recognition project
     - **Description**: *Enter short description*
     - **Text primary language**: English (US)
     - **Blob store container**: customNER
-    - **Are your files tagged**: No, I need to tag my files as part of this project
+    - **Are your files labeled with classes?**: No, I need to label my files as part of this project
 
-## Tag your data
+## Label your data
 
-Now that your project is created, you need to tag your data to train your model how to identity entities.
+Now that your project is created, you need to label your data to train your model how to identity entities.
 
-1. On the left, click on **Tag data**. You'll see a list of the files you uploaded to your storage account.
-2. On the right side, in the **Tagging** pane, click on **Add entity**. The files for this lab contain three you'll need to create: ItemForSale, Price, and Location
+1. On the left, click on **Label data**. You'll see a list of the files you uploaded to your storage account.
+2. On the right side, in the **Labeling** pane, click on **Add entity**. The files for this lab contain three you'll need to create: ItemForSale, Price, and Location
 
-    ![Tag data and add entity](../media/tag-data-add-entity.png#lightbox)
+    ![Label data and add entity.](../media/tag-data-add-entity.png#lightbox)
 
 3. After you've created your three entities, start by clicking on *Ad 1*. Here you can read the ad, specify the entity, and which dataset to assign it to.
 4. Assign the entities for each ad to their respective values by selecting the beginning and end, which will then highlight the entity. Specify which entity it is.
 5. Each file can specify the dataset; leave all to the default *Training* dataset.
-6. Click **Save tags**
+6. Click **Save labels**
 
 ## Train your model
 
-After you've tagged your data, you need to train your model.
+After you've labeled your data, you need to train your model.
 
 1. Select **Train model** on the left side menu
 2. Click **Start a training job**
@@ -112,7 +112,7 @@ In real world applications, it's important to evaluate and improve your model to
 
 When you're satisfied with the training of your model, it's time to deploy it, which allows you to start extracting entities through the API.
 
-1. On the left panel, select **Deploy model**
+1. On the left panel, select **Deploying model**
 2. Select **Add deployment**, then enter the name `customExtractAds` and select `ExtractAds` from the model drop-down
 3. Click **Submit** to deploy your model
 
@@ -152,7 +152,7 @@ Now that you have a custom model, you can run a client application that uses the
 2. The files are downloaded to a folder named **ai-language**. Now we want to see all of the files in your Cloud Shell storage and work with them. In the shell, enter the following commands:
 
     ```powershell
-    cd named-entity-recognition
+    cd ai-language/named-entity-recognition
     ```
 
     ```powershell

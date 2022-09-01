@@ -85,7 +85,7 @@ Whether an output binding will update one or multiple items is made by setting t
 
 First, to write only a single item to the container, the output binding’s corresponding parameter should be configured as an **out** parameter and can be any C# type.
 
-In this example, the output binding is named **output**, and the out parameter is of type **Product**. This example also illustrates
+In this example, the output binding is named **output**, and the out parameter is of type **Product**.
 
 ```csharp
 public static void Run(HttpRequest request, out Product output)

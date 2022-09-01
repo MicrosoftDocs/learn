@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Get started
   description: Get started by running and deploying a static web app
   ms.date: 06/17/2021
-  author: johnpapa
-  ms.author: jopapa
+  author: craigshoemaker
+  ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework
