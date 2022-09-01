@@ -6,5 +6,7 @@ In this module, you learned about Azure Files and Azure File Sync, and how they 
 - [Introduction to Azure File Sync](/azure/storage/file-sync/file-sync-introduction)
 - [Configure storage accounts](/learn/modules/configure-storage-accounts/)
 - [Configure Azure files and Azure File Sync](/learn/modules/configure-azure-files-file-sync)
+- [Implement a hybrid file server infrastructure](/learn/modules/implement-hybrid-file-server-infrastructure)
+- [Extend your on-premises file share capacity using Azure File Sync](/learn/modules/extend-share-capacity-with-azure-file-sync)
 - [Understand Azure Files billing](/azure/storage/files/understanding-billing)
 - [Create an Azure Storage account](/learn/modules/create-azure-storage-account)
