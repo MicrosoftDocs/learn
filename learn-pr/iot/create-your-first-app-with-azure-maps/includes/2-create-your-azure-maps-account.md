@@ -14,7 +14,7 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 1. For the **Name**, enter something appropriate, "MyAzureMaps", or similar.
 
-1. Select the region you're closest to.
+1. Select the **Region** you're closest to.
 
     :::image type="content" source="../media/2-create-azure-maps-account.png" alt-text="Screenshot showing the dialog to create an app in Azure." lightbox="../media/2-create-azure-maps-account.png":::
 
