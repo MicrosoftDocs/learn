@@ -26,7 +26,6 @@ In this task, we will review networking rules, confirm the public IP page does n
 1.  Return to the **Portal** and the **Networking** blade.
 2.  Make a note of the virtual machine's **private IP** address.
 3.  On the **Inbound port rules** tab, click **Add inbound port rule**. This rule will only allow certain IP addresses on port 80. As you go through the configuration settings, be sure to discuss each one.
-    
      -  Source: **Service Tag**
      -  Source service tag: **Internet**
      -  Destination: **IP addresses**
@@ -63,7 +62,6 @@ In this task, we will connect to a virtual machine, create an inbound deny rule,
 
 1.  Continue in the **Portal** from the **Networking** blade.
 2.  On the **Inbound port rules** tab, click **Add inbound port rule**. Add a rule that denies all inbound traffic.
-    
      -  Destination port ranges: \*
      -  Action: **Deny**
      -  Name: **Deny\_All**
@@ -83,7 +81,6 @@ In this task, we will connect to a virtual machine, create an inbound deny rule,
 7.  Click **Configure the application security groups**.
 8.  Select your new application security group, and **Save** your changes.
 9.  From the **Inbound port rules** tab, click **Add inbound rule**. This will allow the ASG.
-    
      -  Source: **Application security group**
      -  Source application security group: **your\_ASG**
      -  Destination: **IP addresses**

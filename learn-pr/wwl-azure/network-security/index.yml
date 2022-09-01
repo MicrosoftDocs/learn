@@ -3,7 +3,7 @@ uid: learn.wwl.network-security
 metadata:
   title: Configure network security
   description: "Use Azure network capabilities to secure your network and applications from external and internal attacks."
-  ms.date: 03/02/2022
+  ms.date: 09/01/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -29,8 +29,8 @@ products:
 - azure-firewall
 - azure-front-door
 subjects:
-- security
 - networking
+- security
 units:
 - learn.wwl.network-security.introduction
 - learn.wwl.network-security.groups-nsg
