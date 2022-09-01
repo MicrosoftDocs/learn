@@ -57,15 +57,29 @@ The steps for setting up a WSL development environment would typically include:
 
 *The set up for a WSL development environment is covered in more detail in a separate training module.*
 
-## A tool for development, not production
+## Using WSL in development vs production 
 
-The intent is for WSL to be used as a tool for development. It is not intended to be used for production workloads. This means that it is great for learning to work with Linux tools and great for building and testing applications, but when it comes to deploying for production, we recommend checking out [Docker Containers](https://docs.docker.com/cloud/aci-integration/) and [Azure App Service](/azure/app-service/overview), both of which work great with [WSL](/windows/wsl/tutorials/wsl-containers) and [VS Code](https://code.visualstudio.com/docs/containers/app-service).
+WSL was designed to be used as a tool for development. It is great for learning to work with Linux tools and great for building and testing applications, but when it comes to deploying for production, we recommend checking out [Docker Containers](https://docs.docker.com/cloud/aci-integration/) and [Azure App Service](/azure/app-service/overview), both of which work great with [WSL](/windows/wsl/tutorials/wsl-containers) and [VS Code](https://code.visualstudio.com/docs/containers/app-service).
+
+Some users have found ways to adopt it for production purposes, but there are reasons to exercise caution in using it for production-related scenarios as WSL differs from a regular Virtual Machine (VM) environment. A few ways that WSL differs from a regular VM environment are:
+
+- WSL has a lightweight utility VM that starts, stops and manages resources automatically.
+- The WSL VM will automatically be shut down if no file handles to Windows processes are open. If you are using WSL as a web server, SSH into it to run your server and then exit, the VM could shut down because it is detecting that users are finished using it and will clean up its resources.
+- WSL users have full access to their Linux instances. The lifetime of the VM, the registered WSL distros, etc., all are accessible by the user and can be modified by the user.
+- WSL automatically gives file access to Windows files.
+- WSL appends Windows paths to your path by default, which could cause unexpected behaviour for certain Linux applications compared to a traditional Linux environment.
+- WSL can run Windows executables from Linux, which could also lead to a different environment than a traditional Linux VM.
+WSL's Linux kernel is updated automatically with WSL
+- WSL's GPU access is done through a `/dev/dxg` device which routes GPU calls out to the Windows GPU. This setup is different than a traditional Linux set up.
+- There are other smaller differences compared to bare metal Linux, and we expect there to be more differences in the future as we prioritize the developer inner loop workflow.
+
+<!-- Consider moving this content to a more advanced-level section. Need to think through how everything fits together here and target audiences. -->
 
 ### CI/CD Inner Development Loop
 
 A common developer practice is to set up an inner development loop. An inner development loop is the process a developer takes from writing their code to committing to a version control system (like Git), getting it ready to enter "Continuous Integration" (CI) and ultimately deploying to production, or "Continuous Delivery" (CD). This is commonly called a "CI/CD pipeline." CI/CD is usually a part of "DevOps", the joining of development and operations. These are important concepts to understand as you advance in the world of professional development. Continuous Integration is the practice of integrating your code changes into the main branch of a shared source code repository early and often, automatically testing each change when you commit or merge them to see if your code works or breaks things. It helps to identify and fix any errors or security issues, as well as to avoid conflicts with others who may be contributing to code for a project. Continuous Delivery (also called Continuous Deployment) is the part after the code has been tested and built as part of the CI process and often involves automated bug testing and "deploying" code from a repository or container registry to a live production environment (often by an Operations team), where it can be used by customers. Sometimes this is "shipping" a new feature, "releasing" a new version, or maybe fixing a bug.
 
-### How WSL offers parody to live production environments
+### How WSL offers parity to live production environments
 
 WSL supports this process by letting developers test Linux-based code on their "local" machine (their laptop or desktop computer) before deploying it to the cloud, which is often running the code on a Linux-based operating system or virtual machine. Because Linux can be customized and stripped down to only use what you need, it is often a good fit for cloud-deployed apps. Using a Linux-based environment with WSL enables there to be parody between the Linux tools and operating system you're working on and what will be running your project's code in the cloud. It is always wise to preview how your code will work before pushing changes to a live environment where errors or bugs could be dangerous for security or cause outages for the end users.
 
