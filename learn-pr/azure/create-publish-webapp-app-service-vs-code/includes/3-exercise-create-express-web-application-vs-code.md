@@ -39,7 +39,7 @@ You can use the Express Generator tool to create all the components of an Expres
 
 1. Examine the contents of the Explorer window to see the files the generator has created.
 
-    :::image type="content" source="../media/3-express-generator-files-vsc-update.png" alt-text="Express generated files." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-express-generator-files.png" alt-text="Express generated files." loc-scope="vs-code":::
 
 ## Calculate the countdown
 
@@ -119,7 +119,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 1. Open a web browser and navigate to the address `http://localhost:3000`.
 
-    :::image type="content" source="../media/3-complete-webapp.png" alt-text="Browse the completed webapp." loc-scope="other":::
+    :::image type="content" source="../media/3-complete-web-app.png" alt-text="Browse the completed webapp." loc-scope="other":::
 
 1. Close the web browser. In the Code integrated terminal, press <kbd>Ctrl+C</kbd> to stop the webapp. If the prompt displays `Terminate batch job (Y/N)?`, type <kbd>Y</kbd> and press <kbd>Enter</kbd>.
 
@@ -173,7 +173,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
-   :::image type="content" source="../media/3-python-select-interpreter-vsc-update.png" alt-text="Screenshot of selecting Python interpreter in Visual Studio Code.":::
+   :::image type="content" source="../media/3-python-select-interpreter.png" alt-text="Screenshot of selecting Python interpreter in Visual Studio Code.":::
 
 1. Close the integrated terminal.
 
@@ -181,7 +181,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     You should now see the command line prompt prefixed with `(env)`.
 
-   :::image type="content" source="../media/3-python-terminal-env-vsc-update.png" alt-text="Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.":::
+   :::image type="content" source="../media/3-python-terminal-env.png" alt-text="Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.":::
 
     > [!IMPORTANT]
     > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.

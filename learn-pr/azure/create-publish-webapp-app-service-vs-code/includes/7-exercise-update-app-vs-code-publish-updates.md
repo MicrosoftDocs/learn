@@ -67,7 +67,7 @@ Your changes are complete. Let's deploy the finished website to Azure:
 1. Select the **countdownExpressApp** folder, and then select **Deploy**.
 1. When the deployment is complete, select **Browse Website**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
-    :::image type="content" source="../media/7-deployed-webapp-vsc-update.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
+    :::image type="content" source="../media/7-deployed-web-app.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
 
 ::: zone-end
 
@@ -160,6 +160,6 @@ Your changes are complete. Let's deploy the finished website to Azure:
 1. Select the **countdownFlaskApp** folder, and then select **Deploy**.
 1. When the deployment is complete, select **Browse Website**. Then Azure website is displayed in your browser. Notice that the countdown is now displayed in days.
 
-    :::image type="content" source="../media/7-deployed-webapp-vsc-update.png" alt-text="Python website hosted in Azure." loc-scope="other":::
+    :::image type="content" source="../media/7-deployed-web-app.png" alt-text="Python website hosted in Azure." loc-scope="other":::
 
 ::: zone-end

@@ -13,7 +13,7 @@ The **Azure App Service** extension is not installed by default in Visual Studio
 1. In Visual Studio Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, type **Azure App Service**, and then select the **Azure App Service** extension.
 
-    :::image type="content" source="../media/5-add-azure-app-service-extension-vsc-update.png" alt-text="Add the Azure App Service extension in Code." loc-scope="vs-code":::
+    :::image type="content" source="../media/5-add-azure-app-service-extension.png" alt-text="Add the Azure App Service extension in Code." loc-scope="vs-code":::
 
 1. Select **Install**.
 
@@ -24,7 +24,7 @@ To view and make changes in your Azure subscription, first authenticate yourself
 1. In Visual Studio Code, to open the **Azure** explorer, on the **View** menu, select **Open View...** and then select **Azure**.
 1. In the **AZURE** explorer, select **Sign in to Azure...**.
 
-    :::image type="content" source="../media/5-sign-in-to-azure-vsc-update.png" alt-text="Sign into Azure in Code." loc-scope="vs-code":::
+    :::image type="content" source="../media/5-sign-in-to-azure.png" alt-text="Sign into Azure in Code." loc-scope="vs-code":::
 
 1. Sign in with the same credentials you used to set up the sandbox and then close the browser page.
 
@@ -53,7 +53,7 @@ Now, you can deploy your Express.js site to Azure:
 1. If you are asked if you are sure, click **Deploy**. If you are asked if you always want to deploy this workspace to App Service, click **Yes**.
 1. When the deployment is complete, select **Browse Website**. Then Azure website is displayed in your browser. Notice that the website is hosted in the **azurewebsites.net** domain.
 
-    :::image type="content" source="../media/5-deployed-website-vsc-update.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
+    :::image type="content" source="../media/5-deployed-website.png" alt-text="Express.js website hosted in Azure." loc-scope="other":::
 
 ::: zone-end
 
@@ -72,7 +72,7 @@ The **Azure App Service** extension is not installed by default in Visual Studio
 1. In Visual Studio Code, on the **View** menu, select **Extensions**.
 1. In the **Search Extensions in Marketplace** textbox, type **Azure App Service**, and then select the **Azure App Service** extension.
 
-    :::image type="content" source="../media/5-add-azure-app-service-extension-vsc-update.png" alt-text="Add the Azure App Service extension in Code." loc-scope="vs-code":::
+    :::image type="content" source="../media/5-add-azure-app-service-extension.png" alt-text="Add the Azure App Service extension in Code." loc-scope="vs-code":::
 
 1. Select **Install**.
 
@@ -83,7 +83,7 @@ To view and make changes in your Azure subscription, first authenticate yourself
 1. In Visual Studio Code, to open the **Azure** explorer, on the **View** menu, select **Open View...** and then select **Azure**.
 1. In the **AZURE** explorer, select **Sign in to Azure...**.
 
-    :::image type="content" source="../media/5-sign-in-to-azure-vsc-update.png" alt-text="Sign into Azure in Code." loc-scope="vs-code":::
+    :::image type="content" source="../media/5-sign-in-to-azure.png" alt-text="Sign into Azure in Code." loc-scope="vs-code":::
 
 1. Sign in with the same credentials you used to set up the sandbox and then close the browser page.
 
@@ -112,7 +112,7 @@ Now, you can deploy your Python site to Azure:
 1. If you are asked if you are sure, click **Deploy**. If you are asked if you always want to deploy this workspace to App Service, click **Yes**.
 1. When the deployment is complete, select **Browse Website**. Then Azure website is displayed in your browser. Notice that the website is hosted in the **azurewebsites.net** domain.
 
-    :::image type="content" source="../media/5-deployed-website-vsc-update.png" alt-text="Python website hosted in Azure." loc-scope="other":::
+    :::image type="content" source="../media/5-deployed-website.png" alt-text="Python website hosted in Azure." loc-scope="other":::
 
 > [!NOTE]
 > If you see a message titled "Hey, Python developers!", you may need to refresh a couple of times while the app is compiling on the server.
