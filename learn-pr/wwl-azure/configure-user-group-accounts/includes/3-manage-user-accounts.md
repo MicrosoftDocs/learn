@@ -1,8 +1,8 @@
 There are several ways to add cloud identity user accounts in Azure Active Directory (Azure AD). A common approach is by using the Azure portal. User accounts can also be added to Azure AD through Microsoft 365 Admin Center, Microsoft Intune admin console, and the Azure CLI.
 
-### Things to know about cloud identity user accounts
+### Things to know about cloud identity accounts
 
-Let's review how cloud identity user accounts are defined in Azure AD. Here's an example of the new **User** page in the Azure portal:
+Let's review how cloud identity user accounts are defined in Azure AD. Here's an example of the new **User** page in the Azure portal. The administrator has the option to **Create** a user within the organization or **Invite** a guest user to provide access to organization resources:
 
 :::image type="content" source="../media/add-user-accounts-133b7dbf.png" alt-text="Screenshot of the User page in the Azure portal.":::
 
@@ -18,7 +18,7 @@ Let's review how cloud identity user accounts are defined in Azure AD. Here's an
 
 - Non-admin users can set some of their own profile data, but they can't change their display name or account name.
 
-### Things to consider when managing cloud identity user accounts
+### Things to consider when managing cloud identity accounts
 
 There are several points to consider about managing user accounts. As you review this list, consider how you can add cloud identity user accounts for your organization.
 

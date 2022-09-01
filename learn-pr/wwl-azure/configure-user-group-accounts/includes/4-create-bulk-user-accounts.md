@@ -1,6 +1,6 @@
 Azure Active Directory (Azure AD) supports several bulk operations, including bulk create and delete for user accounts. The most common approach for these operations is to use the Azure portal. Azure PowerShell can be used for bulk upload of user accounts.
 
-### Things to know about bulk operations for user accounts
+### Things to know about bulk account operations
 
 Let's examine some characteristics of bulk operations in the Azure portal. Here's an example that shows the **Bulk create user** option for new user accounts in Azure AD:
 
@@ -8,13 +8,13 @@ Let's examine some characteristics of bulk operations in the Azure portal. Here'
 
 - Only Global administrators or User administrators have privileges to create and delete user accounts in the Azure portal.
 
-- To complete bulk create or delete operations, the admin fills out a CSV template of the data for the user accounts.
+- To complete bulk create or delete operations, the admin fills out a comma-separated values (CSV) template of the data for the user accounts.
 
 - Bulk operation templates can be downloaded from the Azure AD portal.
 
 - Bulk lists of user accounts can be downloaded.
 
-## Things to consider when creating and deleting user accounts
+### Things to consider when creating user accounts
 
 Here are some design considerations for creating and deleting user accounts. Think about what user account conventions and processes might be required by your organization.
 
