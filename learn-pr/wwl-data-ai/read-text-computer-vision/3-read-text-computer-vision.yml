@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.read-text-computer-vision.exercise
-title: Exercise - Read text with the Computer Vision service
+title: Exercise - Explore optical character recognition
 metadata:
-  title: Exercise - Read text with the Computer Vision service
-  description: "Exercise - Read text with the Computer Vision service"
-  ms.date: 11/11/2021
+  title: Exercise - Explore optical character recognition
+  description: "Exercise - Explore optical character recognition"
+  ms.date: 09/01/2022
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
