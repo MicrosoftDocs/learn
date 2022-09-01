@@ -1,30 +1,32 @@
-## Scenario
+Transitioning workloads to the cloud involves more than just moving servers, websites, and data. Companies need to think about how to secure their resources and identify authorized users.
 
-Transitioning workloads to the cloud involves more than just moving servers, websites, and data. Companies need to think about how to secure those resources and identify authorized users. Your company plans to implement Azure Active Directory and features like Azure AD Join and Self-Service Password Reset.
-
-You need to select an Azure Active Directory edition and implement the required features.
-
-## Skills measured
-
-Managing Azure Active Directory features is a part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
-
-Manage Azure identities and governance (15-20%)
-
-Manage Azure AD objects
-
- -  Configure Self-Service Password Reset.
+In this module, your company is planning to implement Azure Active Directory (Azure AD) and features like Azure AD Join and Self-Service Password Reset. You need to understand how to choose the Azure AD edition that works best for your organization, and explore how to implement required features.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Identify the features and uses of Azure Active Directory.
- -  Define the main Azure Active Directory components such as identity, account and tenant.
- -  Compare Active Directory Domain Services to Azure Active Directory.
- -  Identify features of Azure Active Directory editions.
- -  Identify features and usage cases for Azure AD Join.
- -  Identify features and usage cases for Self-Service Password Reset.
+- Define Azure AD concepts, including identities, accounts, and tenants.
+
+- Describe Azure AD features to support different configurations.
+
+- Understand differences between Azure AD and Active Directory Domain Services (AD DS).
+
+- Choose between supported editions of Azure AD.
+
+- Implement the Azure AD join feature.
+
+- Use the Azure AD self-service password reset feature.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). The module concepts are covered in:
+
+Manage identities and governance in Azure (15-20%)
+
+- Manage Azure Active Directory objects
+   - Configure Self-Service Password Reset
 
 ## Prerequisites
 
-None
+None.
