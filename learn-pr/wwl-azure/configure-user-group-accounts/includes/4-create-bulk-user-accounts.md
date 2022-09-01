@@ -1,14 +1,25 @@
-Azure Active Directory (Azure AD) supports bulk create and delete operations for user accounts. You can also download lists of user accounts.
+Azure Active Directory (Azure AD) supports several bulk operations, including bulk create and delete for user accounts. The most common approach for these operations is to use the Azure portal. Azure PowerShell can be used for bulk upload of user accounts.
 
-Just fill out the comma-separated values (CSV) template. You can download the template from the Azure AD portal. To create users in the Azure portal, you must be signed in as a Global administrator or User administrator.
+### Things to know about bulk operations for user accounts
 
-:::image type="content" source="../media/bulk-user-accounts-224ad1b7.png" alt-text="Screenshot of a CSV file being processed for a new user and written to Azure AD.":::
+Let's examine some characteristics of bulk operations in the Azure portal. Here's an example that shows the **Bulk create user** option for new user accounts in Azure AD:
 
+:::image type="content" source="../media/bulk-user-accounts-224ad1b7.png" alt-text="Screenshot that shows the Bulk create user option for new user accounts in Azure AD.":::
 
-## Things to consider when using the template
+- Only Global administrators or User administrators have privileges to create and delete user accounts in the Azure portal.
 
- -  **Naming conventions**. Establish or implement a naming convention for usernames, display names, and aliases. For example, a user name could consist of last name, period, first name: 'Smith.John@contoso.com'.
- -  **Passwords**. Implement a convention for the initial password of the newly created user. Figure out a way for the new users to receive their password in a secure way. Methods commonly used include generating a random password and emailing it to the new user or their manager.
+- To complete bulk create or delete operations, the admin fills out a CSV template of the data for the user accounts.
 
-> [!NOTE]
-> PowerShell is also available for bulk user uploads.
+- Bulk operation templates can be downloaded from the Azure AD portal.
+
+- Bulk lists of user accounts can be downloaded.
+
+## Things to consider when creating and deleting user accounts
+
+Here are some design considerations for creating and deleting user accounts. Think about what user account conventions and processes might be required by your organization.
+
+- **Consider naming conventions**. Establish or implement a naming convention for your user accounts. Conventions can be applied to user account names, display names, and user aliases for consistency across the organization. Conventions for names and aliases can simplify the bulk create process by reducing areas of uniqueness in the CSV file.
+
+   A convention for user names might be to start with the user's last name followed by a period, and end with the user's first name, as in `Sawyer-Miller.Aran@contoso.com`.
+
+- **Consider using initial passwords**. Implement a convention for the initial password of a newly created user. Design a system to notify new users about their passwords in a secure way. You might generate a random password and email it to the new user or their manager.

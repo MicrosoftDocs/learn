@@ -18,7 +18,7 @@ quiz:
   title: ""
 
   questions:
-  - content: "Which of the following roles has full access to manage all resources but can't assign roles?"
+  - content: "Which role has full access to manage all resources, but can't assign other roles?"
     choices:
     - content: "Contributor"
       isCorrect: true
@@ -30,7 +30,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The Reader role can view all resources, but can't make any changes."
   
-  - content: "What type of user account would be created to allow an external organization easy access?"
+  - content: "What type of user account allows an external organization easy access to your resources?"
     choices:
     - content: "A Contributor user account for each member of the team."
       isCorrect: false
@@ -42,7 +42,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. A guest user account restricts users to just the access they need."
   
-  - content: "Which Azure Active Directory role allows a user to manage all the groups in your Teams tenants, and assign other administrator roles?"
+  - content: "Which Azure AD role enables a user to manage all groups in your Teams tenants, and also assign other admin roles?"
     choices:
     - content: "Global administrator"
       isCorrect: true

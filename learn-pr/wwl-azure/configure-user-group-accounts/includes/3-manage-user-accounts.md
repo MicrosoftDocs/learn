@@ -1,20 +1,29 @@
-There are multiple ways to add cloud identities to Azure AD.
+There are several ways to add cloud identity user accounts in Azure Active Directory (Azure AD). A common approach is by using the Azure portal. User accounts can also be added to Azure AD through Microsoft 365 Admin Center, Microsoft Intune admin console, and the Azure CLI.
 
-## Azure portal
+### Things to know about cloud identity user accounts
 
-You can add new users through the Azure portal. In addition to Name and User name, there is profile information like Job Title and Department.
+Let's review how cloud identity user accounts are defined in Azure AD. Here's an example of the new **User** page in the Azure portal:
 
 :::image type="content" source="../media/add-user-accounts-133b7dbf.png" alt-text="Screenshot of the User page in the Azure portal.":::
 
+- A new user account must have a display name and an associated user account name.
 
-Things to consider when managing users:
+   An example display name might be `Aran Sawyer-Miller` and the associated user account name could be `asawmill@contoso.com`.
 
- -  User profile (picture, job, contact info) is optional.
- -  Deleted users can be restored for 30 days.
- -  Sign in and audit log information is available.
+- Information and settings that describe a user are stored in the user account profile.
 
-> [!NOTE]
-> Users can also be added to Azure AD through Microsoft 365 Admin Center, Microsoft Intune admin console, and the CLI.
+- The profile can have other settings like a user's job title, and their contact email address.
 
+- A user with Global administrator or User administrator privileges can preset profile data in user accounts, such as the main phone number for the company.
 
-How do you plan to add users?
+- Non-admin users can set some of their own profile data, but they can't change their display name or account name.
+
+### Things to consider when managing cloud identity user accounts
+
+There are several points to consider about managing user accounts. As you review this list, consider how you can add cloud identity user accounts for your organization.
+
+- **Consider user profile data**. Allow users to set their profile information for their accounts, as needed. User profile data, including the user's picture, job, and contact information is optional. You can also supply certain profile settings for each user based on your organization's requirements.
+
+- **Consider restore options for deleted accounts**. Include restore scenarios in your account management plan. Restore operations for a deleted account are available up to 30 days after an account is removed. After 30 days, a deleted user account can't be restored.
+
+- **Consider gathered account data**. Collect sign-in and audit log information for user accounts. Azure AD lets you gather this data to help you analyze and improve your infrastructure.
