@@ -3,7 +3,7 @@ Azure AD allows you to define two different types of groups.
  -  **Security groups**. Security groups are used to manage member and computer access to shared resources for a group of users. For example, you can create a security group for a specific security policy. By doing it this way, you can give a set of permissions to all the members at once, instead of having to add permissions to each member individually. This option requires an Azure AD administrator.
  -  **Microsoft 365 groups**. Microsoft 365 groups provide collaboration opportunities by giving members access to a shared mailbox, calendar, files, SharePoint site, and more. You can give people outside of your organization access to the group. Both users and admins can use Microsoft 365 groups.
 
-:::image type="content" source="../media/group-accounts-378b3e22.png" alt-text="Screenshot of the Users and Groups page.":::
+:::image type="content" source="../media/group-accounts-378b3e22.png" alt-text="Screenshot of the Users and Groups page in the Azure portal.":::
 
 
 ## Adding members to groups
