@@ -16,7 +16,8 @@ To complete the rest of the module, you'll need to create a Python Flask web app
 If you prefer following the module and building the Python Flask web app by yourself, follow the steps below:
 
 1. Create a folder to host your application and name it `python-flask-webapp`, for example.
-1. Navigate to your project directory and create two files named app.py and `default_settings.py`.
+1. Navigate to your project directory and create three files named `app.py`, `default_settings.py`, and `requirements.txt`
+1. In the root of your application folder, create a sub-directory named `templates`. Flask will look for rendering templates in this directory
 1. At the end of the module, your project's file and directory structure should look similar to this.
 
 ```
@@ -34,10 +35,10 @@ python-webapp/
 The Microsoft identity platform performs identity and access management (IAM) only for registered applications. Follow these steps to register your application in the Azure portal: 
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/2-portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
+1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/2-portal-directory-subscription-filter.png" border="false"::: at the right of the top menu to switch to the tenant where you want to register the application.
 1. Search for and select **Azure Active Directory**.
-1. Under **Manage**, select **App registrations** > **New registration**. 
-1. Enter a **Name** for your application, for example `python-flask-webapp`. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time and multiple app registrations can share the same name.
+1. On the left side bar, under **Manage**, select **App registrations**, then **New registration**. 
+1. Enter a **Name** for your application, for example `python-flask-webapp`. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time.
 1. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**
 1. Don't enter anything for Redirect URI (optional). You'll configure a redirect URI in the next section
 1. Select **Register** to complete the initial app registration.
@@ -52,12 +53,12 @@ When registration finishes, the Azure portal displays the app registration's Ove
 2. Under **Manage**, select **Authentication**.
 3. Under **Platform configurations**, select **Add a platform** 
 4. Under **Configure platforms**, select **Web**.
-5. Upon selecting web as your app's platform, you'll be prompted to enter a redirect URI for your app. Add `http://localhost:5000/auth/redirect` as the redirect URI for your web app.  
+5. Upon selecting web as your app's platform, you'll be prompted to enter a redirect URI. Add `http://localhost:5000/auth/redirect` as the redirect URI for your web app.  
 6. Select **Configure**.
 
 ## Configure credentials
 
-In this module, you'll use a client secret, also known as an application password. This is a string value that the app can use to prove its identity when requesting a token. To add a client secret, follow these steps:
+In this module, you'll add a client secret, also known as an application password to your Python web app registration. The client secret is a string value that an application can use to prove its identity when requesting a token. To add a client secret, follow these steps:
 
 1. In the Azure portal, in **App registrations**, select your application.
 1. Under **Manage**, select **Certificates & secrets** 

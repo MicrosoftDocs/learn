@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.add-sign-in-support-python-webapp-identity-platform.exercise-prepare-app-for-auth
-title: Exercise - Create and register a Python web application in the Azure portal
+title: Exercise - Create, register and configure a Python web application in the Azure portal
 metadata:
   unitType: exercise
   title: Exercise - Create and register a Python web application in the Azure portal

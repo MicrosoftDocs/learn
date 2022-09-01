@@ -1,32 +1,41 @@
-The Microsoft identity platform simplifies authorization and authentication for application developers by providing identity as a service. It supports industry-standard protocols such as OpenID Connect protocol for handling authentication and OAuth 2.0 protocol for handling authorization. By leveraging the identity platform, developers can build applications that sign in all Microsoft identities, get tokens to call the Microsoft Graph API or access other APIs built by developers.
+The Microsoft identity platform simplifies authorization and authentication for application developers by providing identity as a service. It supports industry-standard protocols such as OpenID Connect protocol for handling authentication and OAuth 2.0 protocol for handling authorization. By leveraging the identity platform, developers can build applications that sign in all Microsoft identities, get tokens to call the Microsoft Graph API or access other protected APIs.
+
+As you integrate the Microsoft identity platform into your application, understanding the parties involved in the authentication and authorization flow will make the integration tasks easier.
+
+- **User**: The user is the resource owner who owns the data and has the power to allow clients to access the data or resource. Users typically request a service from the application.
+
+- **Trusted agent**: The component that the user interacts with. This trusted agent is usually a web browser.
+
+- **Web app**: The application or resource server is where the resource or data resides. It trusts the identity provider to securely authenticate and authorize the trusted agent.
+
+- **Azure Active Directory (Azure AD)**: Azure AD is the authorization server, also known as the identity provider. It securely manages anything to do with the user's information, their access, and the trust relationships between parties in a flow. It authenticates the identity of the user, grants and revokes access to resources, and issues tokens.
 
 ## Application registration
 
-To securely authenticate and authorize users into your application using the identity platform, developers must register their applications in the Azure portal. Registering your application establishes a trust relationship between your application and the identity provider, the Microsoft identity platform. 
+To securely authenticate and authorize users into your application using the identity platform, developers must register their applications in an Azure AD tenant. Registering your application establishes a trust relationship between your application and the identity provider, the Microsoft identity platform.
 
-The application registration process collects and assigns values that allow your application to communicate with Azure Active Directory (Azure AD).
+When you register an application in the Azure portal, Microsoft identity platform assigns it some values that allow your application to communicate with Azure AD. These include: 
 
-### Application (client) ID
+#### Application (client) ID
 
-The application ID, or client ID, is a value the Microsoft identity platform assigns to your application when you register it in Azure AD. The application ID is a GUID value that uniquely identifies the application and its configuration within the identity platform. You add the app ID to your application's code, and authentication libraries include the value in their requests to the identity platform at application runtime.
+The application ID, or client ID, is a GUID value that uniquely identifies the application and its configuration within the identity platform. You add the client ID to your application's code, and authentication libraries include this value in their requests to the identity platform.
 
-### Redirect URI
+#### Redirect URI
 
-The redirect URI, also known as Reply URL, is the location where the identity platform redirects a user's client and sends security tokens after authentication. During development, this is the endpoint where you run your app locally.
+The redirect URI, also known as Reply URL, is the location where the identity platform redirects a user's client and sends security tokens after authentication. During development, this is the endpoint where you run an app locally.
 
+#### Client credentials
 
-### Client credentials 
+Client credentials allow applications to request security tokens to access their own resources without requiring interaction from a user. You can use any of the three types of credentials that the Microsoft identity platform supports; certificates, client secrets, or federated credentials.
 
-Credentials allow your application to authenticate as itself, requiring no interaction from a user at runtime. You can add certificates, client secrets, or federated credentials to your app registration.
+#### Authority
 
-### Authority
+The authority is the identity provider URL (the instance) and the sign-in audience for your application. The instance and sign-in audience, when concatenated, make up the authority. It's in the form of `https://login.microsoftonline.com/<your_tenant>`
 
-The authority is the full directory URL that identifies a token authority. It should in the form of `https://login.microsoftonline.com/<your_tenant>`
+#### App roles
 
-### App roles
+App roles allow you to securely enforce authorization in your application. When using app roles, an administrator governs access to protected resources by granting permissions to roles and not to individual users or groups.
 
-App roles provide a way for a resource server to govern access to its protected resources. They represent privileges that the subject has been granted. 
-
-App roles defined during the app registration process are used to securely enforce authorization in your application. When using app roles, an administrator grants permissions to roles and not to individual users or groups. The administrator can then use the Azure portal to assign roles to different users and groups to control who has access to what content and functionality.  For instance, an admin role could allow email administrators to read everyone's email.
+The administrator can then use the Azure portal to assign roles to different users and groups to control who has access to what content and functionality. For instance, adding an *admin role* to your app registration could allow a set of employees with this role assignment to read users' profile data.
 
 After you register the application, you can configure it to communicate with Azure AD by implementing the authentication logic yourself or using libraries such as Microsoft Authentication Library (MSAL). The latter is recommended.
