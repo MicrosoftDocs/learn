@@ -9,17 +9,17 @@ When creating your custom text classification project, you can specify which pro
 
 ## Single vs. multiple label projects
 
-Beyond the ability to put files into multiple classifications, the key differences with multiple label classification projects are tagging, considerations for improving your model, and the API payload for classification tasks.
+Beyond the ability to put files into multiple classifications, the key differences with multiple label classification projects are labeling, considerations for improving your model, and the API payload for classification tasks.
 
-### Label tags
+### Labeling data
 
-In single label projects, each file is assigned one class during the tagging process; class assignment in the Language service only allows you to select one class.
+In single label projects, each file is assigned one class during the labeling process; class assignment in the Language service only allows you to select one class.
 
-When tagging multiple label projects, you can assign as many classes that you want per file. The impact of the added complexity means your data has to remain clear and provide a good distribution of possible inputs for your model to learn from.
+When labeling multiple label projects, you can assign as many classes that you want per file. The impact of the added complexity means your data has to remain clear and provide a good distribution of possible inputs for your model to learn from.
 
 [![Conceptual diagram that shows mapping of documents to labels for single label and multiple label classifications.](../media/single-multiple-graphic.png)](../media/single-multiple-graphic.png#lightbox)
 
-Tagging data correctly, especially for multiple label projects, is directly correlated with how well your model performs. The higher the quality, clarity, and variation of your data set is, the more accurate your model will be.
+Labeling data correctly, especially for multiple label projects, is directly correlated with how well your model performs. The higher the quality, clarity, and variation of your data set is, the more accurate your model will be.
 
 ### Evaluating and improving your model
 

@@ -6,7 +6,7 @@ Take a few minutes to watch this video that explains how the integration between
 
 ## Event types and schema
 
-IoT Hub publishes different types of events to Event Grid, including these:
+IoT Hub publishes different types of events to Event Grid, such as:
 
 | Event type | Description |
 | ---------- | ----------- |
@@ -18,7 +18,7 @@ IoT Hub publishes different types of events to Event Grid, including these:
 
 You can use either the Azure portal or the Azure CLI to configure which events to publish from each IoT hub.
 
-IoT Hub events contain all the information that you need to respond to changes in your device life cycle as well as telemetry conditions. You can identify an IoT Hub event by checking that the **eventType** property starts with **Microsoft.Devices**.
+IoT Hub events contain all the information that you need to respond to changes in your device life cycle and telemetry conditions. You can identify an IoT Hub event by checking that the **eventType** property starts with **Microsoft.Devices**.
 
 There are two types of schemas for IoT Hub events. One is for events related to device life cycle, and one is for telemetry events.
 
