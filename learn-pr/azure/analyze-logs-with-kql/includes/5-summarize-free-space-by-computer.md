@@ -31,7 +31,7 @@ The result set of this query includes all `ObjectName` values currently in the t
 
 :::image type="content" source="../media/kql-log-analytics-perf-table-distinct-objectname.png" alt-text="Screenshot showing the results of the Distinct ObjectName query on the Perf table with the Logical Disk and LogicalDisk as one word values highlighted." lightbox="../media/kql-log-analytics-perf-table-distinct-objectname.png":::
 
-In our scenario, we're interested in analyzing virtual machines, so the objects we want to look at are `LogicalDisk` and `Logical Disk` (to monitor the memory in a physical machine, you'd look at the `memory` object). The reason there are two very similarly-named objects is that `LogicalDisk` is the object name in Windows records while `Logical Disk` is used in Linux records.
+In our scenario, we're interested in analyzing virtual machines, so the objects we want to look at are `LogicalDisk` and `Logical Disk` (to monitor the memory in a physical machine, you'd look at the `memory` object). The reason there are two similarly-named objects is that `LogicalDisk` is the object name in Windows records while `Logical Disk` is used in Linux records.
  
 
 To list the distinct names of the counters Azure Monitor collects for the `LogicalDisk` and `Logical Disk` objects, run:
@@ -45,7 +45,7 @@ ObjectName == "Logical Disk" // The object name used in Linux records
 | distinct CounterName // Lists distinct CounterName values
 ```
 
-The result set of this query includes all performance counters collected for the the `LogicalDisk` and `Logical Disk` objects:
+The result set of this query includes all performance counters collected for the `LogicalDisk` and `Logical Disk` objects:
 
 :::image type="content" source="../media/kql-log-analytics-perf-table-countername.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-table-countername.png":::
 
@@ -74,10 +74,12 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | where ObjectName == "LogicalDisk" or // The object name used in Windows records
     ObjectName == "Logical Disk" // The object name used in Linux records
     | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
-    | where InstanceName == "_Total"  // Retrieves data related to the total usage for all drives on a virtual disk  
+    | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual disk  
     ```
 
-1. Retrieve the last counter value collected for every combination of counter and computer for every virtual machine: 
+    The result set of this query likely includes multiple records for each machine from which you collect performance counters related to free space.
+
+1. Filter for the last counter value collected for every combination of counter and computer for every virtual machine: 
 
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA32S3UoDMRCF732KQ0FoYaH4APVGqQj1B616Waab6Taan5Jkt6348E62dulC8XLnnJz5crLPHFYXP9iuOTDm2vIdOw6UWOEaVPnhlRp1%252BtPyk8v0SJYxmWAw85Uuydzq%252BDWADxiPMV8zfOuCy7Y6SpB2%252BNBO%252BW1E4NIHFS%252FOJ%252BEQ9U%252FOTLt616UcuW587RKHLm4amPHAFS33iWPL1rcMLtF6XjdU8hkdYnjLK%252F8MQjTVRvSIlZiT0G2kOB8suZJRHg5H9BcXOF1TgJzCae7ZjO5S9y6mrHRIi7lPZAbINC%252BcguaGIxQlkkJM%252B2TJt2wpG6UzqrjlJWOggs5270BodEi1OJTUDcjGWFtLQX8zKFQLS7th71cojvW8k6l5hOVeBnZTy6ToNdcjyySGYjpeDU0%252BLV%252FGyLsKbUZjKtedoR00HPYdoRVZO%252F4FivrG3KYCAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
     
@@ -87,13 +89,14 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | where ObjectName == "LogicalDisk" or // The object name used in Windows records
     ObjectName == "Logical Disk" // The object name used in Linux records
     | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
-    | where InstanceName == "_Total"  // Retrieves data related to the total usage for all drives on a virtual disk  
+    | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual disk  
     | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // Retrieves the last counter value collected for each counter for every virtual machine
     ```
-
+    You now have the last reported counter value for every free space-related counter of every machine.
+    
 1. To facilitate analysis:
 
-    1. Convert the `% Used Space` counter value to `% Free Space` (100% - `% Used Space` value = `% Free Space` value) and relabel `% Used Space` to `% Free Space`:   
+    1. Convert the `% Used Space` counter value to `% Free Space` (by subtracting the `% Used Space` value from 100%) and change the name of the `% Used Space` column to `% Free Space`:   
     
         <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42R0U6DMBSG7%252FcUJyQmzKCDB8CLaVyWTGci6uVS4MDqoF3a4pjx4S0lI5Rturum5%252Bt3%252FnP6giIb%252FcBujQIhoiXOkKEgClO4A5JzN0jHXX0Zf2KinkmJEIbgLHhOE1I8ULlxgAuYTCBaI3BDAWuwSmoRZfBBWcp3EgQmXKRydNoEreoPz4Kyqu4sh1z3vGIKRad7FIjwhDmJ9wqlyWYjzhUY5nVLEjxRBw28NS1boGs0Z1IRlmCHrSKuSNEAsipLIug3AhH5qiS1a23TO3R4J0WFY4j3%252BqLcVvrG6zfXJqwVstTiIQSaZW6PMzP0InoQ%252BP5N%252F82g45G4neF%252Fr70rK%252Byx9HzawZ944Frxrv1b3w8uyXyR3Fl%252B6b0XRVMwwedsNj0bXgMbPXFoDn31IM8vQBDU1y0DAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
     
@@ -102,13 +105,15 @@ Let's assess how we can use this data and which KQL operations can help extract 
         | where TimeGenerated > ago(1d)
         | where ObjectName == "LogicalDisk" or // The object name used in Windows records
         ObjectName == "Logical Disk" // The object name used in Linux records
-        | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
-        | where InstanceName == "_Total"
-        | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
-        | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
-        | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)   
+        | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
+        | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual disk  
+        | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // Retrieves the last counter value collected for each counter for every virtual machine
+        | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue) // Converts % Used Space to % Free Space
+        | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName) // Changes the column name from % Used Space to % Free Space
         ```
-    
+
+        The result set of this query presents the percentage of free space on Windows and Linux machines in the same way, which makes further analysis clearer and easier.     
+
     1. Convert total `Free Megabytes` to Gigabytes (`Free Megabytes` value * 0.001 = Free Gigabytes) and relabel `Free Megabytes` to `OverallFreeSpaceInGB`:
             
         <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42R0U6DMBSG7%252FcUJyQmzKCDB8CLaVyWTGci6uVS4MDqoF3a4pjx4S0lI5Rturum5%252Bt3%252FnP6giIb%252FcBujQIhoiXOkKEgClO4A5JzN0jHXX0Zf2KinkmJEIbgLHhOE1I8ULlxgAuYTCBaI3BDAWuwSmoRZfBBWcp3EgQmXKRydNoEreoPz4Kyqu4sh1z3vGIKRad7FIjwhDmJ9wqlyWYjzhUY5nVLEjxRBw28NS1boGs0Z1IRlmCHrSKuSNEAsipLIug3AhH5qiS1a23TO3R4J0WFY4j3%252BqLcVvrG6zfXJqwVstTiIQSaZW6PMzP0InoQ%252BP5N%252F82g45G4neF%252Fr70rK%252Byx9HzawZ944Frxrv1b3w8uyXyR3Fl%252B6b0XRVMwwedsNj0bXgMbPXFoDn31IM8vQBDU1y0DAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
@@ -118,15 +123,15 @@ Let's assess how we can use this data and which KQL operations can help extract 
         | where TimeGenerated > ago(1d)
         | where ObjectName == "LogicalDisk" or // The object name used in Windows records
         ObjectName == "Logical Disk" // The object name used in Linux records
-        | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
-        | where InstanceName == "_Total"
-        | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
-        | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
-        | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
-        | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
-        | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
-        | extend packed = pack(CounterName, CounterValue)
+        | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
+        | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual disk  
+        | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // Retrieves the last counter value collected for each counter for every virtual machine
+        | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue) // Converts % Used Space to % Free Space
+        | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName) // Changes the column name from % Used Space to % Free Space
+        | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue) Converts megabytes to gygabytes
+        | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName) Changes the column name fromFree Megabytes to OverallFreeSpaceInGB
         ```
+        You can now get a clear picture of the total free space on each machine in gigabytes and as a percentage of the machine's total memory. 
 
 1. Group together `CounterName, CounterValue` key-value pairs:
     
@@ -137,17 +142,17 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | where TimeGenerated > ago(1d)
     | where ObjectName == "LogicalDisk" or // The object name used in Windows records
     ObjectName == "Logical Disk" // The object name used in Linux records
-    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
-    | where InstanceName == "_Total"
-    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
-    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
-    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
-    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
-    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
-    | extend packed = pack(CounterName, CounterValue)
+    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
+    | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual disk  
+    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // Retrieves the last counter value collected for each counter for every virtual machine
+    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue) // Converts % Used Space to % Free Space
+    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName) // Changes the column name from % Used Space to % Free Space
+    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue) Converts megabytes to gygabytes
+    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName) Changes the column name fromFree Megabytes to OverallFreeSpaceInGB
+    | extend packed = pack(CounterName, CounterValue) // Groups together CounterName-CounterValue key-value pairs
     ```
-
-
+    Grouping together `CounterName, CounterValue` key-value pairs lets you group together free space statistics by computer in the next step. 
+    
 1. Create a property-bag (dictionary), called SpaceStats, of all free space statistics collected for each machine and summarize by computer and filter for machines with less than 50% free space:
     
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42SQU%252FCQBCF7%252FyKSROTYiqUgzfrQY2EBMUE1IMxZNoOZaXdJbtbAeOPd9uG0gVUbs3Om%252B%252B9mekTyVnrG1ZzkgQTllGfOEnUFMM1YCLcXtyu66PwgyL9iBlBEIAzFAmLML1jauGAkNDtwmROIEoV8EKWKwNiHF4Zj8VKgaRIyFi1jpOgQv3BGTKer2vKNtetyLkmWePuJRE8UILhRpMqs9kS5wxKzXiJER2pgxE8F5aVoDYacKWRR1TLphOhMS0EKs8ylOyLAGUyzXDtWtv0tg4vmObUhnBjHrJlbl68prkh0VoTjy09BMBmM7ehK2doRPSg5%252FsXzZ49xwNwNcP%252FXHtXVthD6O9p927igWvFO%252Fc7vt87JfNJcGf0afaepkWhDD7g%252FZtfwxvBwkwclB9N9GGe3ZlL7FijVqYxwwVNQ0zcCmXdt%252F57dh2dN3ur71cBXPo%252FdE%252FvKYwDAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
@@ -157,14 +162,18 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | where TimeGenerated > ago(1d)
     | where ObjectName == "LogicalDisk" or // The object name used in Windows records
     ObjectName == "Logical Disk" // The object name used in Linux records
-    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space"
-    | where InstanceName == "_Total"
-    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName
-    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)
-    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName)
-    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)
-    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName)
-    | extend packed = pack(CounterName, CounterValue)
-    | summarize SpaceStats = make_bag(packed) by Computer
+    | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
+    | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual disk  
+    | summarize arg_max(TimeGenerated, CounterValue) by Computer, CounterName // Retrieves the last counter value collected for each counter for every virtual machine
+    | extend CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue) // Converts % Used Space to % Free Space
+    | extend CounterName = iff(CounterName=="% Used Space", "% Free Space", CounterName) // Changes the column name from % Used Space to % Free Space
+    | extend CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue) Converts megabytes to gygabytes
+    | extend CounterName= iff(CounterName=="Free Megabytes", "OverallFreeSpaceInGB", CounterName) Changes the column name fromFree Megabytes to OverallFreeSpaceInGB
+    | extend packed = pack(CounterName, CounterValue) // Groups together CounterName-CounterValue key-value pairs
+    | summarize SpaceStats = make_bag(packed) by Computer // Summarizes free space statstics by computer
     | where SpaceStats.["% Free Space"]<= 50
     ```
+
+    The result set of this query summarizes free space statistics by machine, which was the goal of your free space analysis! 
+        
+    The last line of the query filters for machines with less that 50% free space. You might want to monitor or analyze more closely, or reconfigure them to ensure they don't run out of space.
