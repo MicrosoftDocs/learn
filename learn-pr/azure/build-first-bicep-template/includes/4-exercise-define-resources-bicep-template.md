@@ -123,7 +123,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
-   :::code language="bicep" source="code/4-template.bicep" range="13-28":::
+   :::code language="bicep" source="code/4-template.bicep" range="13-29":::
 
 1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
 

@@ -16,6 +16,7 @@ resource appServicePlan 'Microsoft.Web/serverFarms@2021-03-01' = {
   sku: {
     name: 'F1'
   }
+  properties:{}
 }
 
 resource appServiceApp 'Microsoft.Web/sites@2021-03-01' = {
