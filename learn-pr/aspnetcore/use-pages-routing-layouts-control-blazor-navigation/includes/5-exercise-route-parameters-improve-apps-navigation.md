@@ -6,8 +6,8 @@ In this exercise, you'll add a new order detail page that makes use of route par
 
 ## Create an order detail page
 
-1. In Visual Studio Code, on the menu, select **File** > **New File**.
-1. Select C# as the language.
+1. In Visual Studio Code, on the menu, select **File** > **New Text File**.
+1. Select ASP.NET Razor as the language.
 1. Create an order detail page component with this code:
 
     ```razor
@@ -142,25 +142,10 @@ In this exercise, you'll add a new order detail page that makes use of route par
 
     The existing code was already capturing `newOrderId` as the response from placing the order. You can use it now to go directly to that order.
 
-1. In Visual Studio Code, select <kbd>F5</kbd>. Or on the **Run** menu, select **Start Debugging**.
-
-    :::image type="content" source="../media/detail-order-page.png" alt-text="Screenshot showing the detail order page for a single order.":::
-
-    Go through the app, order, and checkout. You'll be taken to the detailed order screen and see the status of the order.
-
 ## Restrict the route parameter to the correct data type
 
-At the moment, the app responds to requests at `(http://localhost:5000/myorders/6)`. You can test this directly by changing the 6 to another number. There's nothing stopping someone from trying to use non-numeric orders.
+The app should only respond to requests with numeric order IDs, such as `(http://localhost:5000/myorders/6)`. There's nothing stopping someone from trying to use non-numeric orders. Let's change that.
 
-1. Because the app is still running, try to go to `(http://localhost:5000/myorders/a)`.
-
-    :::image type="content" source="../media/unhandled-exception.png" alt-text="Screenshot showing that the app has crashed with an unhandled exception.":::
-
-    The error happens because, when the **OrderDetail** component executes, it tries to pass a route parameter to the component parameter **OrderId** that's declared as an integer.
-
-    This kind of exception can give away potential information about your app to hackers. Let's fix that.
-
-1. Select <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app.
 1. In the file explorer, expand **Pages**. Then select **OrderDetail.razor**.
 1. Change the route parameter so that the component will only accept integers.
 
@@ -174,7 +159,11 @@ At the moment, the app responds to requests at `(http://localhost:5000/myorders/
 
 1. In Visual Studio Code, select <kbd>F5</kbd>. Or on the **Run** menu, select **Start Debugging**.
 
-    Try different order IDs. If you use an integer that isn't a valid order, you'll get an **Order not found** message.
+    :::image type="content" source="../media/detail-order-page.png" alt-text="Screenshot showing the detail order page for a single order.":::
+
+    Go through the app, order, and checkout. You'll be taken to the detailed order screen and see the status of the order.
+
+1. Try different order IDs. If you use an integer that isn't a valid order, you'll get an **Order not found** message.
 
     :::image type="content" source="../media/order-not-found.png" alt-text="Screenshot showing Order not found message.":::
 
@@ -187,7 +176,7 @@ At the moment, the app responds to requests at `(http://localhost:5000/myorders/
 At the moment, the **My Orders** page has links to view more detail, but the URL is wrong.
 
 1. In the file explorer, expand **Pages**. Then select **MyOrders.razor**.
-1. Replace the `<a>` element with this code:
+1. Replace the `<a href="myorders/" class="btn btn-success">` element with this code:
 
     ```razor
     <a href="myorders/@item.Order.OrderId" class="btn btn-success">
