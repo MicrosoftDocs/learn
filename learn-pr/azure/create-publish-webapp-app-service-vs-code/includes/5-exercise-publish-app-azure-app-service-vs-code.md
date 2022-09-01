@@ -34,7 +34,7 @@ Now that the extension is installed, we can use it to create an instance of App 
 
 1. In Visual Studio Code, in the **Azure** explorer, under **RESOURCES**, expand the **Concierge Subscription**.
 1. Right-click **App Services**, and then select **Create New Web App... (Advanced)**.
-1. In the first page of the **Create new web app** wizard, type a globally unique name for the app, such as **LaunchCountDown&lt;your initials&gt;**, and then press <kbd>Enter</kbd>.
+1. In the first page of the **Create new web app** wizard, type a globally unique name for the app, such as **LaunchCountDown&lt;your initials&gt;**, and then press **Enter**.
 
     :::image type="content" source="../media/5-create-new-web-app-wizard-1-of-6.png" alt-text="Create new web app." loc-scope="vs-code":::
 
