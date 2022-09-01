@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.classify-images-custom-vision.exercise
-title: Exercise - Create an image classification solution
+title: Exercise - Explore image classification
 metadata:
-  title: Exercise - Create an image classification solution
-  description: "Exercise - Create an image classification solution"
-  ms.date: 03/04/2022
+  title: Exercise - Explore image classification
+  description: "Exercise - Explore image classification"
+  ms.date: 09/01/2022
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
