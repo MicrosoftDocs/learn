@@ -252,12 +252,12 @@ A current Azure and GitHub authenticated sessions are required to create a stati
 
       | Prompt | Value |
       |--|--|
-      | Subscription | Select the **Concierge Subscription**. |
-      | Name | Enter **my-static-web-app-and-api**. |
-      | Region | Select the region closest to you. |
-      | Preset | Select **Angular**. |
-      | Application code location | Enter **angular-app**. |
-      | Output location | Enter **dist/angular-app**. |
+      | Subscription | Select the **Concierge Subscription** |
+      | Name | Enter **my-static-web-app-and-api** |
+      | Region | Select the region closest to you |
+      | Preset | Select **Angular** |
+      | Application code location | Enter **angular-app** |
+      | Output location | Enter **dist/angular-app** |
 
 ::: zone-end
 
@@ -269,12 +269,12 @@ A current Azure and GitHub authenticated sessions are required to create a stati
 
       | Prompt | Value |
       |--|--|
-      | Subscription | Select the **Concierge Subscription**. |
-      | Name | Enter **my-static-web-app-and-api**. |
-      | Region | Select the region closest to you. |
-      | Preset | Select **React**. |
-      | Application code location | Enter **react-app**. |
-      | Output location | Enter **dist**. |
+      | Subscription | Select the **Concierge Subscription** |
+      | Name | Enter **my-static-web-app-and-api** |
+      | Region | Select the region closest to you |
+      | Preset | Select **React** |
+      | Application code location | Enter **react-app** |
+      | Output location | Enter **dist** |
 
 ::: zone-end
 
@@ -286,12 +286,12 @@ A current Azure and GitHub authenticated sessions are required to create a stati
 
       | Prompt | Value |
       |--|--|
-      | Subscription | Select the **Concierge Subscription**. |
-      | Name | Enter **my-static-web-app-and-api**. |
-      | Region | Select the region closest to you. |
-      | Preset | Select **Svelte**. |
-      | Application code location | Enter **svelte-app**. |
-      | Output location | Enter **public**. |
+      | Subscription | Select the **Concierge Subscription** |
+      | Name | Enter **my-static-web-app-and-api** |
+      | Region | Select the region closest to you |
+      | Preset | Select **Svelte** |
+      | Application code location | Enter **svelte-app** |
+      | Output location | Enter **public** |
 
 ::: zone-end
 
@@ -303,12 +303,12 @@ A current Azure and GitHub authenticated sessions are required to create a stati
 
       | Prompt | Value |
       |--|--|
-      | Subscription | Select the **Concierge Subscription**. |
-      | Name | Enter **my-static-web-app-and-api**. |
-      | Region | Select the region closest to you. |
-      | Preset | Select **Vue**. |
-      | Application code location | Enter **vue-app**. |
-      | Output location | Enter **dist**. |
+      | Subscription | Select the **Concierge Subscription** |
+      | Name | Enter **my-static-web-app-and-api** |
+      | Region | Select the region closest to you |
+      | Preset | Select **Vue** |
+      | Application code location | Enter **vue-app** |
+      | Output location | Enter **dist** |
 
 ::: zone-end
 
