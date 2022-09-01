@@ -10,14 +10,14 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 
 To determine which machines have stopped sending data, you need information about:
 
-- All machines that have recently logged data, but have not logged data as expected in the past few minutes.
+- All machines that have recently logged data, but haven't logged data as expected in the past few minutes.
 - For deeper analysis, it's useful to know which virtual machine agent is running on each machine.
 
 ### Which log data and KQL operations can you use?
 
 Let's look at the `Heartbeat` table schema and the type of data each one of the columns holds.
     
-This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that are not shown in the screenshot):    
+This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that aren't shown in the screenshot):    
 
 :::image type="content" source="../media/kql-log-analytics-heartbeat-table-agent-version.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table-agent-version.png":::
 
@@ -113,7 +113,7 @@ Can you think of a couple of quick tweaks you can make to the query you develope
 Consider this:
 
 - Which additional information do you need to extract from your logs? 
-- Which KQL operation can you use to group machines by the agent version they are running? 
+- Which KQL operation can you use to group machines by the agent version they're running? 
 
 Solution:
 
@@ -131,7 +131,7 @@ Solution:
 
     :::image type="content" source="../media/kql-log-analytics-heartbeat-table-version.png" alt-text="Screenshot showing... the Heartbeat table." lightbox="../media/kql-log-analytics-heartbeat-table-version.png":::
 
-1. Rename the the `Version` column to `AgentVersion` for clarity, add another `summarize` line to find unique combinations of agent type, agent version, and operating system type, and use the KQL `make_set()` aggregate function to list all computers running each combination of agent type and agent version: 
+1. Rename the `Version` column to `AgentVersion` for clarity, add another `summarize` line to find unique combinations of agent type, agent version, and operating system type, and use the KQL `make_set()` aggregate function to list all computers running each combination of agent type and agent version: 
 
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA62SwW7bMAyG73sKwqcU8NBLD714QJEB26FBgSXYjoNsMzZRS3IlKo2HHfYae709ySjJcZJhx54EkeLHn%252BL%252FGZXjGhXD7S3segRW9YAw2fDn12%252BH8BLQTWS6dz%252FhtUcJ7EjjJzToFGMLH1RnV3f3%252FU0qlxQ4ZTqEvXXA%252FVwO74GMXMlDozyWMNjOQ7dAUhJhVJ7h7h56G5wHaeiD1srRDwStjqurxjdQT7C2egyMrnwQFu%252BmEau1JDvrphKetjFQwld0nqyJ%252Br4gO8ID%252BtRuiO0cNta1F1oEi6rpoZnZoEwLo7MHaqWOjAymFUegqm3g5V0JKooATk3tGHHybeAnz6jLhMkvDrMgGRCPjBI%252Fywei%252FWq5QlVB8ZFEI%252Bc3RcLkySRZfCPT2ldflFBsNg9yLKVpH%252Bs%252B7iJPe4Ye1BBkQc7qf%252BFsMydtb2bL1zc9GfRvIPeRTDhGsU%252Bb7ZuIjZwkNpEvpZ6tczKJfyTPlVbP%252BN0jr07hZKSEnI1SzeeFvpOZosztCZyVOvRhYBBi5ARDYvjoiZpMdondXxnjygLZFf%252F3yiBqc4vIjpRhWAYEF4yJFSk%252FYkN7aq7ZfwHUeRTk2AMAAA%253D%253D/timespan/P1D" target="_blank">Click to run query in Log Analytics demo environment</a>
 

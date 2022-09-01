@@ -15,7 +15,7 @@ To analyze the compute usage of machines running in your IT environment, you nee
 
 ### Which log data and KQL operations can you use?
 
-Let's run a simple a query on the `Perf` table to retrieve logs from the past 24 hours and get a sense of the table schema and the data the table holds:
+Let's run a simple query on the `Perf` table to retrieve logs from the past 24 hours and get a sense of the table schema and the data the table holds:
 
 <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAAz2MMQ6CQBBFe0%252FxS62IF7DEloILjNnPMgnu4uwQswmF1%252FB6ngRsaF%252Feex1tAJoG%252FUi4PCai5uX3%252BRrxWmhVUzyteI%252FcQa9P3plo4gy4QWI%252BX8Pln7c6Oa1gyAYmN2VBPFRN8P0%252FS3EEqRsDot9DdQAAAA%253D%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
 
@@ -130,4 +130,4 @@ Let's add information about the operating system running on each computer, which
     | project-away Computer1 // Removes the "Computer1" column from the query results 
     ```
 
-    The result set of this query contains all of the computers that reached their full CPU capacity and includes information about the operating system running on each computer, which will be helpful for further analysis.
+    The result set of this query contains all of the computers that reached their full CPU capacity and includes information about the operating system on each computer, which will be helpful for further analysis.
