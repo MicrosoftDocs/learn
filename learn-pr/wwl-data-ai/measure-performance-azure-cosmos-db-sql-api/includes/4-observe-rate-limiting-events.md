@@ -15,7 +15,7 @@ We'll look at each of these reasons and how to identify them.
 
 Out of the three reasons for this exception, this reason is the most common one. Azure Cosmos DB returns this exception when the RUs by operations on data exceed the provisioned RU/s.
 
-To investigate the possible cauese for a **429** exception: 
+To investigate the possible cause for a **429** exception: 
 
 1. Open up your Azure Cosmos DB account page in the Azure portal. 
 1. Under  **Insights->Request** menu, look at the **Total Request by Status Code** charts, and search for occurrences of the **429** exception.

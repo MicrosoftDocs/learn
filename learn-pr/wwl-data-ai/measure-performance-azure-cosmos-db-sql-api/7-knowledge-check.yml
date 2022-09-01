@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/31/2022
+  ms.date: 09/01/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 5
 quiz:
   questions:
-  - content: "Which Insight report will help you identify that your requests are getting **request rate to large** exceptions and that this condition is causing a problem to the databases or containers?"
+  - content: "Which Insight report will help you identify that your requests are getting **request rate too large** exceptions and that this condition is causing a problem to the databases or containers?"
     choices:
     - content: "Request->Total Requests by Operation Type"
       isCorrect: false
