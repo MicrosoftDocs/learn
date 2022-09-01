@@ -18,8 +18,6 @@ Let's examine some characteristics of bulk operations in the Azure portal. Here'
 
 Here are some design considerations for creating and deleting user accounts. Think about what user account conventions and processes might be required by your organization.
 
-- **Consider naming conventions**. Establish or implement a naming convention for your user accounts. Conventions can be applied to user account names, display names, and user aliases for consistency across the organization. Conventions for names and aliases can simplify the bulk create process by reducing areas of uniqueness in the CSV file.
-
-   A convention for user names might be to start with the user's last name followed by a period, and end with the user's first name, as in `Sawyer-Miller.Aran@contoso.com`.
+- **Consider naming conventions**. Establish or implement a naming convention for your user accounts. Apply conventions to user account names, display names, and user aliases for consistency across the organization. Conventions for names and aliases can simplify the bulk create process by reducing areas of uniqueness in the CSV file. A convention for user names could begin with the user's last name followed by a period, and end with the user's first name, as in `Sawyer-Miller.Aran@contoso.com`.
 
 - **Consider using initial passwords**. Implement a convention for the initial password of a newly created user. Design a system to notify new users about their passwords in a secure way. You might generate a random password and email it to the new user or their manager.

@@ -2,13 +2,11 @@ There are several ways to add cloud identity user accounts in Azure Active Direc
 
 ### Things to know about cloud identity accounts
 
-Let's review how cloud identity user accounts are defined in Azure AD. Here's an example of the new **User** page in the Azure portal. The administrator has the option to **Create** a user within the organization or **Invite** a guest user to provide access to organization resources:
+Let's review how cloud identity user accounts are defined in Azure AD. Here's an example of the new **User** page in the Azure portal. The administrator can **Create** a user within the organization or **Invite** a guest user to provide access to organization resources:
 
 :::image type="content" source="../media/add-user-accounts-133b7dbf.png" alt-text="Screenshot of the User page in the Azure portal.":::
 
-- A new user account must have a display name and an associated user account name.
-
-   An example display name might be `Aran Sawyer-Miller` and the associated user account name could be `asawmill@contoso.com`.
+- A new user account must have a display name and an associated user account name. An example display name is `Aran Sawyer-Miller` and the associated user account name could be `asawmill@contoso.com`.
 
 - Information and settings that describe a user are stored in the user account profile.
 

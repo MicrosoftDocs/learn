@@ -8,7 +8,7 @@ The university has a team of IT admins who work together to control resource acc
 
 Consider how a central admin role can use administrative units to support the Engineering department in our scenario:
 
-- Create a role with administrative permissions over only Azure AD users in the Engineering department administrative unit.
+- Create a role that has administrative permissions for only Azure AD users in the Engineering department administrative unit.
 
 - Create an administrative unit for the Engineering department.
 

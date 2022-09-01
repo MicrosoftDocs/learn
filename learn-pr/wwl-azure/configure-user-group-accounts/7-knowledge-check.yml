@@ -30,7 +30,7 @@ quiz:
       isCorrect: true
       explanation: "Correct. A guest user account restricts users to just the access they need."
   
-  - content: "What kind of group account can you create to let you apply the same permissions to all its members?"
+  - content: "What kind of group account can you create so you can apply the same permissions to all group members?"
     choices:
     - content: "Security group"
       isCorrect: true
