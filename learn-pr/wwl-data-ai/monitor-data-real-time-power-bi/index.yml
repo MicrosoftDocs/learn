@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Monitor data in real-time with Power BI
 summary: Describe real-time analytics in Power BI using automatic page refresh, real-time dashboards, and auto-refresh in paginated reports.
 abstract: |
