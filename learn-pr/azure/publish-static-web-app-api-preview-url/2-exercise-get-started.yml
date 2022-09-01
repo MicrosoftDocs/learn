@@ -8,6 +8,7 @@ metadata:
   ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.custom: vscode-azure-extension-update-completed
   zone_pivot_groups: dev-javascript-framework
 azureSandbox: true
 title: Exercise - Get started
