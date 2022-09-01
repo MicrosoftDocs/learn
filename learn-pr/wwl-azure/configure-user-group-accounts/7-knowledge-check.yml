@@ -16,21 +16,9 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
-  - content: "Which role has full access to manage all resources, but can't assign other roles?"
-    choices:
-    - content: "Contributor"
-      isCorrect: true
-      explanation: "Correct. The Contributor role grants full access to manage all resources, but can't assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries."
-    - content: "Owner"
-      isCorrect: false
-      explanation: "Incorrect. The Owner role grants full access to manage all resources, including the ability to assign roles in Azure RBAC."
-    - content: "Reader"
-      isCorrect: false
-      explanation: "Incorrect. The Reader role can view all resources, but can't make any changes."
-  
-  - content: "What type of user account allows an external organization easy access to your resources?"
+
+  - content: "What type of user account allows an external organization to access your resources?"
     choices:
     - content: "A Contributor user account for each member of the team."
       isCorrect: false
@@ -42,6 +30,18 @@ quiz:
       isCorrect: true
       explanation: "Correct. A guest user account restricts users to just the access they need."
   
+  - content: "What kind of group account can you create to let you apply the same permissions to all its members?"
+    choices:
+    - content: "Security group"
+      isCorrect: true
+      explanation: "Correct. You can create a security group for a specific security policy and apply the same permissions to all members of the group."
+    - content: "Azure AD bulk group"
+      isCorrect: false
+      explanation: "Incorrect. You can do bulk operations on users in Azure AD, but there's no defined 'bulk' group."
+    - content: "Microsoft 365 group"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft 365 groups give members access to a shared mailbox, calendar, files, and so on."
+    
   - content: "Which Azure AD role enables a user to manage all groups in your Teams tenants, and also assign other admin roles?"
     choices:
     - content: "Global administrator"
