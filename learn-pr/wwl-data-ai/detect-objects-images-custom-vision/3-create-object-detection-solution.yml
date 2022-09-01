@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.detect-objects-images-custom-vision.exercise
-title: Exercise - Create an object detection solution
+title: Exercise - Explore object detection
 metadata:
-  title: Exercise - Create an object detection solution
-  description: "Exercise - Create an object detection solution"
-  ms.date: 07/05/2022
+  title: Exercise - Explore object detection
+  description: "Exercise - Explore object detection"
+  ms.date: 09/01/2022
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
