@@ -1,21 +1,21 @@
-Azure Administrators must be familiar with Azure Active Directory and its features.
+Azure Administrators must be familiar with Azure Active Directory and its concepts.
 
-You should now be able to:
+In this module, you learned about Azure AD features and explored implementation scenarios. You reviewed the main components of Azure AD, including tenants, identities, and accounts, and learned how they're related. You compared Active Directory Domain Services to Azure AD, and discovered how different Azure AD editions support features. You explored the benefits of the Azure AD join and self-service password reset (SSPR) features, and considered how to implement them for your organization.
 
- -  Understand the features and uses of Azure Active Directory.
- -  Define the main Azure Active Directory components such as identity, account and tenant.
- -  Compare Active Directory Domain Services to Azure Active Directory.
- -  Identify features of Azure Active Directory editions.
- -  Identify features and usage cases for Azure AD Join.
- -  Identify features and usage cases for Self-Service Password Reset.
+## Learn more with Azure documentation
 
-## Learn more
+- Read more about [Azure Active Directory](/azure/active-directory/).
 
-You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
+- Join devices by using [Azure AD device identity](/azure/active-directory/devices/).
 
- -  [Azure Active Directory Documentation](/azure/active-directory/)
- -  [Azure AD device identity documentation](/azure/active-directory/devices/)
- -  [Azure AD self-service password reset](/azure/active-directory/authentication/concept-sspr-howitworks)
- -  [Learn - Allow users to reset their password with Azure Active Directory self-service password reset (sandbox)](/learn/modules/allow-users-reset-their-password/)
- -  [Learn - Manage device identity with Azure AD join and Enterprise State Roaming](/learn/modules/manage-device-identity-ad-join/)
- -  [Learn - Implement and manage hybrid identity](/learn/modules/implement-manage-hybrid-identity/)
+- Configure [Azure AD self-service password reset](/azure/active-directory/authentication/concept-sspr-howitworks).
+
+## Learn more with self-paced training
+
+- Manage device identity with [Azure AD join and Enterprise State Roaming](/learn/modules/manage-device-identity-ad-join/).
+
+- Implement and manage [hybrid identity](/learn/modules/implement-manage-hybrid-identity/).
+
+## Learn more with optional hands-on exercises
+
+- Allow users to reset their password with [Azure Active Directory self-service password reset (sandbox)](/learn/modules/allow-users-reset-their-password/).

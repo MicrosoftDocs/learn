@@ -1002,6 +1002,46 @@ achievements:
   title: 'AZ-400: Create and manage containers using Docker and Kubernetes'
   summary: 'AZ-400: Create and manage containers using Docker and Kubernetes'
   iconUrl: /learn/achievements/az-400-create-and-manage-containers-using-docker-and-kubernetes.svg
+- uid: learn.wwl.perform-data-science-azure-databricks.trophy
+  type: trophy
+  title: Perform data science with Azure Databricks
+  summary: Perform data science with Azure Databricks
+  iconUrl: /learn/achievements/perform-data-science-azure-databricks.svg
+- uid: learn.wwl.work-with-user-defined-functions.badge
+  type: badge
+  title: Work with user-defined functions
+  summary: Work with user-defined functions
+  iconUrl: /learn/achievements/work-with-user-defined-functions.svg
+- uid: learn.wwl.perform-machine-learning-with-azure-databricks.badge
+  type: badge
+  title: Perform machine learning with Azure Databricks
+  summary: Perform machine learning with Azure Databricks
+  iconUrl: /learn/achievements/perform-machine-learning-with-azure-databricks.svg
+- uid: learn.wwl.train-machine-learning-model.badge
+  type: badge
+  title: Train a machine learning model
+  summary: Train a machine learning model
+  iconUrl: /learn/achievements/train-machine-learning-model.svg
+- uid: learn.wwl.work-with-mlflow-azure-databricks.badge
+  type: badge
+  title: Work with MLflow in Azure Databricks
+  summary: Work with MLflow in Azure Databricks
+  iconUrl: /learn/achievements/work-with-mlflow-azure-databricks.svg
+- uid: learn.wwl.perform-model-selection-with-hyperparameter-tuning.badge
+  type: badge
+  title: Perform model selection with hyperparameter tuning
+  summary: Perform model selection with hyperparameter tuning
+  iconUrl: /learn/achievements/perform-model-selection-with-hyperparameter-tuning.svg
+- uid: learn.wwl.deep-learning-with-horovod-distributed-training.badge
+  type: badge
+  title: Deep learning with Horovod for distributed training
+  summary: Deep learning with Horovod for distributed training
+  iconUrl: /learn/achievements/deep-learning-with-horovod-distributed-training.svg
+- uid: learn.wwl.work-with-azure-machine-learning-deploy-serving-models.badge
+  type: badge
+  title: Work with Azure Machine Learning to deploy serving models
+  summary: Work with Azure Machine Learning to deploy serving models
+  iconUrl: /learn/achievements/work-with-azure-machine-learning-deploy-serving-models.svg
 - uid: learn.wwl.explore-kubernetes-tooling.badge
   type: badge
   title: Explore Kubernetes tooling
@@ -1142,3 +1182,78 @@ achievements:
   title: Work with NoSQL data in Azure Cosmos DB
   summary: Find out how to customize NoSQL data storage and distribution with the Azure portal, Cosmos DB extension, and Cosmos DB .NET SDK.
   iconUrl: /learn/achievements/work-with-nosql-data-in-azure-cosmos-db.svg
+- uid: learn.wwl.create-production-workloads-azure-databricks-azure-data-factory.badge
+  type: badge
+  title: Create production workloads on Azure Databricks with Azure Data Factory
+  summary: Create production workloads on Azure Databricks with Azure Data Factory
+  iconUrl: /learn/achievements/create-production-workloads-azure-databricks-azure-data-factory.svg
+- uid: learn.wwl.implement-ci-cd-azure-devops.badge
+  type: badge
+  title: Implement CI/CD with Azure DevOps
+  summary: Implement CI/CD with Azure DevOps
+  iconUrl: /learn/achievements/implement-ci-cd-azure-devops.svg
+- uid: learn.wwl.work-dataframes-columns-azure-databricks.badge
+  type: badge
+  title: Work with DataFrames columns in Azure Databricks
+  summary: Work with DataFrames columns in Azure Databricks
+  iconUrl: /learn/achievements/work-dataframes-columns-azure-databricks.svg
+- uid: learn.wwl.describe-azure-databricks-best-practices.badge
+  type: badge
+  title: Describe Azure Databricks best practices
+  summary: Describe Azure Databricks best practices
+  iconUrl: /learn/achievements/describe-azure-databricks-best-practices.svg
+- uid: learn.wwl.describe-azure-databricks.badge
+  type: badge
+  title: Describe Azure Databricks
+  summary: Describe Azure Databricks
+  iconUrl: /learn/achievements/describe-azure-databricks.svg
+- uid: learn.wwl.describe-lazy-evaluation-other-performance-features-azure-databricks.badge
+  type: badge
+  title: Describe lazy evaluation and other performance features in Azure Databricks
+  summary: Describe lazy evaluation and other performance features in Azure Databricks
+  iconUrl: /learn/achievements/describe-lazy-evaluation-other-performance-features-azure-databricks.svg
+- uid: learn.wwl.describe-platform-architecture-security-data-protection-azure-databricks.badge
+  type: badge
+  title: Describe platform architecture, security, and data protection in Azure Databricks
+  summary: Describe platform architecture, security, and data protection in Azure Databricks
+  iconUrl: /learn/achievements/describe-platform-architecture-security-data-protection-azure-databricks.svg
+- uid: learn.wwl.integrate-azure-databricks-other-azure-services.badge
+  type: badge
+  title: Integrate Azure Databricks with Azure Synapse
+  summary: Integrate Azure Databricks with Azure Synapse
+  iconUrl: /learn/achievements/integrate-azure-databricks-other-azure-services.svg
+- uid: learn.wwl.read-write-data-azure-databricks.badge
+  type: badge
+  title: Read and write data in Azure Databricks
+  summary: Read and write data in Azure Databricks
+  iconUrl: /learn/achievements/read-write-data-azure-databricks.svg
+- uid: learn.wwl.spark-architecture-fundamentals.badge
+  type: badge
+  title: Spark architecture fundamentals
+  summary: Spark architecture fundamentals
+  iconUrl: /learn/achievements/spark-architecture-fundamentals.svg
+- uid: learn.wwl.work-dataframes-advanced-methods-azure-databricks.badge
+  type: badge
+  title: Work with DataFrames advanced methods in Azure Databricks
+  summary: Work with DataFrames advanced methods in Azure Databricks
+  iconUrl: /learn/achievements/work-dataframes-advanced-methods-azure-databricks.svg
+- uid: learn.wwl.work-dataframes-azure-databricks.badge
+  type: badge
+  title: Work with DataFrames in Azure Databricks
+  summary: Work with DataFrames in Azure Databricks
+  iconUrl: /learn/achievements/work-dataframes-azure-databricks.svg
+- uid: learn.wwl.build-query-delta-lake.badge
+  type: badge
+  title: Build and query a Delta Lake
+  summary: Build and query a Delta Lake
+  iconUrl: /learn/achievements/build-query-delta-lake.svg
+- uid: learn.wwl.process-streaming-data-azure-databricks-structured-streaming.badge
+  type: badge
+  title: Process streaming data with Azure Databricks structured streaming
+  summary: Process streaming data with Azure Databricks structured streaming
+  iconUrl: /learn/achievements/process-streaming-data-azure-databricks-structured-streaming.svg
+- uid: learn.wwl.describe-azure-databricks-delta-lake-architecture.badge
+  type: badge
+  title: Describe Azure Databricks Delta Lake architecture
+  summary: Describe Azure Databricks Delta Lake architecture
+  iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg

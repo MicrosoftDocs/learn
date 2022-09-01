@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.build-language-understanding-model
+metadata:
+  title: Build a Language Understanding model
+  description: "The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language."
+  ms.date: 08/31/2022
+  author: wwlpublish
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a Language Understanding model
+summary: The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language.
+abstract: |
+  After completing this module, you'll be able to:
+  - Provision Azure resources for Language Understanding
+  - Define intents, utterances, and entities
+  - Use patterns to differentiate similar utterances
+  - Use pre-built entity components
+  - Train, test, publish, and review a Language Understanding model
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-services
+- azure-language-understanding
+subjects:
+- artificial-intelligence
+- cloud-computing
+- data-ai
+units:
+- learn.wwl.build-language-understanding-model.introduction
+- learn.wwl.build-language-understanding-model.understand-resources-for-building
+- learn.wwl.build-language-understanding-model.define-intents-utterances-entities
+- learn.wwl.build-language-understanding-model.use-patterns-differentiate-similar-utterances
+- learn.wwl.build-language-understanding-model.use-pre-built-entity-components
+- learn.wwl.build-language-understanding-model.train-test-publish-review
+- learn.wwl.build-language-understanding-model.exercise
+- learn.wwl.build-language-understanding-model.knowledge-check
+- learn.wwl.build-language-understanding-model.summary
+badge:
+  uid: learn.wwl.build-language-understanding-model.badge
