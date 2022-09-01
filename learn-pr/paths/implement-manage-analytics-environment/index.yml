@@ -3,18 +3,18 @@ uid: learn.wwl.implement-manage-analytics-environment
 metadata:
   title: Implement and manage an analytics environment
   description: Implement and manage an analytics environment
-  ms.date: 07/04/2022
+  ms.date: 09/01/2022
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
-  ms.service: powerbi
+  ms.prod: learning-power-bi
 title: Implement and manage an analytics environment
 prerequisites: |
   Familiarity with Power BI and governance practices in a BI environment.
 summary: |
   This learning path introduces Power BI administration at an enterprise-level, including governance, adoption, collaborating, sharing, and automation methods.
-  This learning path helps you prepare for the https://docs.microsoft.com/learn/certifications/exams/dp-500
-iconUrl: /learn/achievements/generic-trophy.svg
+  This learning path helps you prepare for the [https://docs.microsoft.com/learn/certifications/exams/dp-500](/learn/certifications/exams/dp-500)
+iconUrl: /learn/achievements/implement-manage-analytics-environment.svg
 levels:
 - intermediate
 roles:
