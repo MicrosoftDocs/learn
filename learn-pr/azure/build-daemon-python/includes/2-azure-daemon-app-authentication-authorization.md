@@ -1,4 +1,6 @@
-Applications are added to Azure Active Directory (Azure AD) to use one or more of the services it provides. You can use Azure AD to authenticate and authorize apps that call protected web APIs.
+Applications that operate without interaction with a user also need a way to access secured resources, such as web APIs. Azure Active Directory (Azure AD) supports applications to acquire a token for their own identities.
+
+In the financial company scenario, your company needs to use Azure AD to manage applications' identity and authentication journey in your Python daemon application.
 
 In this unit, you'll learn about authentication, authorization, and how it's supported in Azure AD.
 

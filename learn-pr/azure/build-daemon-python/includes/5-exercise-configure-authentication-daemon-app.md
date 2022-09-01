@@ -8,8 +8,12 @@ In the following steps, you grant the registered app permission to Microsoft Gra
 
 1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to select the tenant containing your client app's registration.
-1. Select **Azure Active Directory** > **App registrations**, and then select your client application.
-1. Select **API permissions** > **Add a permission** > **Microsoft Graph** > **Application permissions**.
+1. Select **Azure Active Directory**.
+1. Under **Manage**, select **App registrations**.
+1. Select your daemon application.
+1. Under **Manage**, Select **API permissions**.
+1. Select **Add a permission**.
+1. Select **Microsoft Graph**, and then select **Application permissions**.
 1. Under **Select permissions**, search and expand **User**, and then select the *User.Read.All* permission.
 1. Select **Add permissions**.
 1. Select **Grant admin consent** to grant admin consent.
@@ -71,7 +75,7 @@ pip install msal
 
    In the sample code we've created, we import `json`, `requests` and `msal` module for our daemon app. The `config` section contains the values required for interaction with the Azure AD.
 
-1. Replace the values in the config section as described here:
+1. Replace the values in the `config` section as described here:
 
      - Replace `tenant_id` with the **Directory (tenant) ID** you recorded during your app registration.
      - Replace `Enter_the_Application_Id_Here` with the **Application (client) ID** you recorded during your app registration.
@@ -176,4 +180,4 @@ Graph API call result: {
 }
 ```
 
-You've successfully created a Python daemon app that uses its own identity and acquires a valid access token to call a protected web API. You can use Celery to run your app in the background.
+You've successfully created a Python daemon app that uses its own identity and acquires a valid access token to call a protected web API.
