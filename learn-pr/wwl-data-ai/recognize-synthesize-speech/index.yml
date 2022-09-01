@@ -3,7 +3,7 @@ uid: learn.wwl.recognize-synthesize-speech
 metadata:
   title: Recognize and synthesize speech
   description: "Recognize and synthesize speech"
-  ms.date: 04/06/2022
+  ms.date: 09/01/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -29,8 +29,8 @@ products:
 - azure-cognitive-services
 - azure-sdks
 subjects:
-- natural-language-processing
 - artificial-intelligence
+- natural-language-processing
 units:
 - learn.wwl.recognize-synthesize-speech.introduction
 - learn.wwl.recognize-synthesize-speech.get-started-azure
