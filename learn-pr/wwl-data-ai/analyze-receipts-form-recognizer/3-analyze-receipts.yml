@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.analyze-receipts-form-recognizer.exercise
-title: Exercise - Analyze receipts with Form Recognizer
+title: Exercise - Explore form recognition
 metadata:
-  title: Exercise - Analyze receipts with Form Recognizer
-  description: "Exercise - Analyze receipts with Form Recognizer"
-  ms.date: 11/09/2021
+  title: Exercise - Explore form recognition
+  description: "Exercise - Explore form recognition"
+  ms.date: 09/01/2022
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
