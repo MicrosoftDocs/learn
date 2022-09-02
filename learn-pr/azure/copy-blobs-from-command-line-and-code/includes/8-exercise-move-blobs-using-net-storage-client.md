@@ -29,7 +29,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     cd sample/code
     ```
 
-1. Open the *TransferBlobs* project file.
+1. Open the *TransferBlobs.csproj* project file using the `Code` editor.
 
     ```bash
     code TransferBlobs/TransferBlobs.csproj
@@ -44,7 +44,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     </PropertyGroup>
     ```
 
-1. Save the file by selecting <kbd>Ctrl+S</kbd>, and close the code editor by selecting <kbd>Ctrl+Q</kbd>. 
+1. Save the file by selecting <kbd>Ctrl+S</kbd>, and close the `Code` editor by selecting <kbd>Ctrl+Q</kbd>.
 
 1. Build the sample application.
 
