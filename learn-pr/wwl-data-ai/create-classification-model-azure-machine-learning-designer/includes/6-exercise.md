@@ -5,4 +5,4 @@ In this exercise, you will create a classification model that predicts whether a
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-classification-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-classification-lab?azure-portal=true)
