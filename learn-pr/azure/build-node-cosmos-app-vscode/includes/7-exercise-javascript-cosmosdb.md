@@ -356,7 +356,7 @@ You can now create and run a test harness that verifies that your code creates s
 
 You'll now query the documents in the database directly, using the Azure Databases extension for Visual Studio Code. You'll verify that the documents created by the app have been stored in the database.
 
-1. In the **Databases** pane, expand your Concierge Subscription account, expand the **\<your name or initials\>school** SQL account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then select **Refresh**.
+1. In the Azure Resources pane, expand your Concierge Subscription account, expand the **\<your name or initials\>school** SQL account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then select **Refresh**.
 
     :::image type="content" source="../media/7-cosmosdb-refresh.png" alt-text="Screenshot of Azure DB pane in Visual Studio Code. The user has selected the Refresh command." loc-scope="vs-code":::
 
