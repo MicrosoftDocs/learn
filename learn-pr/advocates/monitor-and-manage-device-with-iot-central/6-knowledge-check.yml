@@ -1,17 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-manage-device-with-iotcentral.6-knowledge-check
 metadata:
-# Search engine metadata  
   title: Knowledge check 
   description: Knowledge check
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: adrianstevens
-  ms.author: adsteven
+  author: asergaz
+  ms.author: sergaz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Check your knowledge
-durationInMinutes: 11
+title: Knowledge check 
+durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:

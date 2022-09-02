@@ -5,9 +5,8 @@ metadata:
   title: Define the coffee machine in a device template
   description: Define the coffee machine in a device template
   ms.date: 09/24/2018
-  #TODO: Update with real author name.
-  author: adrianstevens
-  ms.author: adsteven
+  author: asergaz
+  ms.author: sergaz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12
