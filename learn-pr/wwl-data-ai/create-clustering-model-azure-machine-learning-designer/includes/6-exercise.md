@@ -5,4 +5,4 @@ In this exercise, you will create a clustering model that identifies the species
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-clustering-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-clustering-lab?azure-portal=true)
