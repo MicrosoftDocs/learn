@@ -7,7 +7,7 @@ A transient error is an error that has an underlying cause that soon resolves it
 > [!TIP]
 > Try to always use the latest version of the SDK. The retry logic that is built-in is constantly being improved in newer releases.
 
-If you are writing an application that experiences a write failure, it is up to your application code to implement retry logic is considered a best practice.
+If you are writing an application that experiences a write failure, it is up to your application code to implement retry logic which is considered a best practice.
 
 As an application developer, it's important to understand the HTTP status codes where retrying your request makes sense. These codes include, but are not limited to:
 
