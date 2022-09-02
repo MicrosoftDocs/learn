@@ -4,8 +4,8 @@ metadata:
   title: Introduction
   description: Publish an Azure Static Web App
   ms.date: 06/17/2021
-  author: johnpapa
-  ms.author: jopapa
+  author: craigshoemaker
+  ms.author: cshoe
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-javascript-framework
