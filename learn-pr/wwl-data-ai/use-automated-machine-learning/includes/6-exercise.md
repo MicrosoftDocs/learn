@@ -6,4 +6,4 @@ In this exercise, you will use a dataset of historical bicycle rental details to
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-automl-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-automl-lab?azure-portal=true)
