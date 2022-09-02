@@ -20,7 +20,7 @@ quiz:
   - content: 'How would your solution change if your API was a monolith made of up many unrelated endpoints with different runtime requirements?'
     choices:
     - content: 'Choice 1.'
-      isCorrect: false
+      isCorrect: true
       explanation: 'Explanation 1.'
     - content: 'Choice 2.'
       isCorrect: false
@@ -34,7 +34,7 @@ quiz:
       isCorrect: false
       explanation: 'Explanation 1.'
     - content: 'Choice 2.'
-      isCorrect: false
+      isCorrect: true
       explanation: 'Explanation 2.'
     - content: 'Choice 3.'
       isCorrect: false
