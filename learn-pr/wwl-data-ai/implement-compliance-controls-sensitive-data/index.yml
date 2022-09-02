@@ -3,11 +3,10 @@ uid: learn.wwl.implement-compliance-controls-for-sensitive-data
 metadata:
   title: Implement compliance controls for sensitive data
   description: "Implement compliance controls for sensitive data"
-  ms.date: 06/17/2022
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement compliance controls for sensitive data
 summary: Explore data classification capabilities and degrees of confidentiality. Implement security options to maintain private data safe, including Azure SQL auditing, Microsoft Defender for SQL, row-level security, Dynamic Data Masking and Azure SQL Database Ledger.
 abstract: |
