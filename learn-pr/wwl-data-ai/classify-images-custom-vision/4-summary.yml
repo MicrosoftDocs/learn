@@ -8,6 +8,7 @@ metadata:
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
