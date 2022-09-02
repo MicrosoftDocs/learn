@@ -16046,6 +16046,56 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/2-how-hyperscale-works.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/3-exercise-create-hyperscale.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/4-design-a-distributed-database.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/5-exercise-distributed-tables.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/6-scale-up-scale-out.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/7-exercise-scale-and-rebalance-hyperscale.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-hyperscale/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/introduction-to-azure-postgres/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/5-integrate-azure-key-vault-azure-pipelines.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-application-configuration-data/8-integrate-azure-key-vault-azure-pipelines",
       "redirect_document_id": true
