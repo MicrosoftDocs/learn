@@ -15,9 +15,9 @@ summary: |
   > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions.
 abstract: |
   In this module, you'll demostrate your ability to:
+   - Extend the current application to have a new API for health checks
    - Define key strategies for multi-region deployment
-   - Identify Azure services needed for targeting an Service Level Objectives (SLO) of 99.99%
-   - Design the architecture of the workload
+   - Design an overall health model
 prerequisites: |
   - Experience designing a workload that includes core infrastructure technology such as data storage, compute, and networking
   - Experience designing a workload that's deployed to multiple regions

@@ -11,8 +11,7 @@ The existing application is already designed as per the quality pillars of Azure
 
 ## What will we be doing?
 
-- Define a composite Service Level Objective (SLO) to achieve.
-- Identify failure points at the API level and its dependencies and visualize availability data in a dashboard.
+- Identify failure points at the API level and its dependencies.
 - Expand the solution into multiple regions to survive a regional outage.
 - Build a health model for the global solution and visualize the oberservability data through internal dashboards and for the deployment pipeline’s health-controlled rollouts.
 

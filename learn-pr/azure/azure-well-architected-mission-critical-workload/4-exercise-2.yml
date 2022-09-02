@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-mission-critical.4-exercise-2
-title: Exercise - Define your scale units
+title: Exercise - Expand your design to multiple regions
 metadata:
   unitType: exercise
-  title: Exercise - Define your scale units
-  description: TBD
+  title: Exercise - Expand your design to multiple regions
+  description: Convert the architecture to an active-active, shared-state, multi-region topology designed to withstand one faulted region.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk

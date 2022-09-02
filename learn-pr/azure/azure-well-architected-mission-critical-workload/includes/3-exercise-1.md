@@ -25,49 +25,7 @@ An operator isn't able to see the cascading impact of an issue resulting from th
 
     - Make health check data available in Azure Monitor for future needs.
 
-**Theory exercise**
-
-- Design a health model that hierarchically shows the relationship between the application components and the platform dependencies. 
-    
-    Define an overall health status that is based on aggregated historical data. Represent the status in three health states: unhealthy, degraded, and healthy.
-
 ## How to proceed with the health check API
-
-## How to proceed with health modeling
-
-Health modeling in a top-down design activity and you'll need a complete list of components used in the architecture. This includes the application components as well as the Azure services.
-
-Place those components in a dependency graph that shows a hierarchical view of solution. The top layer has the _user flows_ that track request from the end user, to the website, and flows at the application API level. The bottom layer contains the _system flows_ from the Azure services that the application has dependencies on. Also map dependencies between the Azure resources.
-
-Your graph should look something like this:
-
-![Example of a dependency graph for a health model.](../media/health-model.png)
-
-For each component, collect metrics and metric thresholds and decide the value at which the component should be considered health, degraded, and unhealthy. That decision is should be influenced by expected the performance and non-functional business requirements. 
-
-For example, 
-
-|Azure Event Hubs|Health status|
-|---|---|
-|Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Healthy
-|Queue depth < 50</br> Processing time < 200ms</br>Time in queue <1000 ms|Degraded
-|Queue depth < 50</br> Processing time > 200ms</br>Time in queue > 1000 ms|Unhealthy
-
-For each user and system flow, define an overall status. You'll need to aggregrate the health status of individual components that participate in that flow. 
-
-For example, a system flow could be composed of Azure Event Hubs and a Storage account for checkpointing. 
-
-|Azure Event Hubs|Azure Storage|Health status|
-|---|---|---|
-|Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Response Time < 100ms</br>Request_Failure_Count < 2|Healthy
-|Queue depth < 50</br> Processing time < 200ms</br>Time in queue <1000 ms|Response Time < 200ms</br>Request_Failure_Count < 5|Degraded
-|Queue depth < 50</br> Processing time > 200ms</br>Time in queue > 1000 ms|Response Time > 200ms</br>Request_Failure_Count > 5|Unhealthy
-
-The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
-
-The health score can be shown in the dependency graph in a traffic light representation.
-
-![Example of health score shown in the dependency graph.](../media/mission-critical-example-fault-states.png)
 
 
 ## Check your work
