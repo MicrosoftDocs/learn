@@ -6,7 +6,7 @@ Review the following characteristics of group accounts in Azure AD. The followin
 
 :::image type="content" source="../media/group-accounts-378b3e22.png" alt-text="Screenshot that shows a list of groups in the Azure portal, and their group and membership types.":::
 
-- Use security groups to set permissions for all group members at the same time, rather adding permissions to each member individually.
+- Use security groups to set permissions for all group members at the same time, rather than adding permissions to each member individually.
 
 - Add Microsoft 365 groups to enable group access for guest users outside your Azure AD organization.
 
