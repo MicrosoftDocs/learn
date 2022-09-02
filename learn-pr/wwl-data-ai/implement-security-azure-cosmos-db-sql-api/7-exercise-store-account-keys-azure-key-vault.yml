@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 azureSandbox: false
 labId: 107596
 labModal: true

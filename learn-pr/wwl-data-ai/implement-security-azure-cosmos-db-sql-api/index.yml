@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Implement security in Azure Cosmos DB SQL API
 summary: We will learn the different security models that Azure Cosmos DB uses.
 abstract: |
