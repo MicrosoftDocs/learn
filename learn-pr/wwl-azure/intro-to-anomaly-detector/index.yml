@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Introduction to Anomaly Detector
 summary: Discover the services available on Azure to detect anomalies in your time-series, or real-time data.
 abstract: |
