@@ -29,6 +29,23 @@ We'll start by downloading and building an existing .NET Core application. You m
     cd sample/code
     ```
 
+1. Open the *TransferBlobs* project file.
+
+    ```bash
+    code TransferBlobs/TransferBlobs.csproj
+    ```
+
+1. Change the `<TargetFramework>` value to *net6.0*.
+
+    ```C#
+    <PropertyGroup>
+      <OutputType>Exe</OutputType>
+      <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+    ```
+
+1. Save the file by selecting <kbd>Ctrl+S</kbd>, and close the code editor by selecting <kbd>Ctrl+Q</kbd>. 
+
 1. Build the sample application.
 
     ```bash
@@ -127,7 +144,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     IEnumerable<BlobClient> sourceBlobRefs = await FindMatchingBlobsAsync(sourceBlobContainer, transferBlobsModifiedSince);
     ```
 
-2. Scroll down to the `MoveMatchingBlobsAsync` method.
+1. Scroll down to the `MoveMatchingBlobsAsync` method.
 
     ```C#
     // Iterate through the list of source blobs, and transfer them to the destination container
@@ -188,7 +205,7 @@ To have some blobs with a different modified date from the batch upload time, yo
 
 1. Select **Save** to commit the changes to the blob.
 
-1. Repeat this for one or two other blob files.
+1. Repeat these steps to modify one or two other blob files.
 
 With several blobs showing newer modification dates, you can differentiate between them when you run the .NET app.
 
@@ -210,7 +227,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
     ```bash
     dotnet run "<source connection string>" specifications "<destination connection string>" transfer-test "<selected date and time>"
     ```
-    
+
     > [!NOTE]
     > If your file does not find any files to move, you may need to adjust your date from what the Azure portal has customized to your timezone to it's UTC time as it is used by the program. For example, if your time was edit date was `6/15/2021, 10:04:27 AM` in Korea Standard Time (KST), you would need to subtract 9 hours to UTC: `6/15/2021, 01:04:27 AM`.
 
