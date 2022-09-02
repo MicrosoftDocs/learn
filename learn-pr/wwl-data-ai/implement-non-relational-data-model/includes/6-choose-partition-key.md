@@ -2,7 +2,7 @@ Remember that data in JSON documents is stored in Azure Cosmos DB databases with
 
 :::image type="content" source="../media/6-physical-partitions.png" alt-text="Diagram that illustrates the physical partitions in Azure Cosmos DB.":::
 
-The partition key is a required document property that ensures documents with the same partition key value are routed to and stored within a specific physical partition. A physical partition supports a fixed maximum amount of storage and throughput (RU/s). When the capacity of a logical partition, which we will introduce in the next section, gets close to the maximum storage, Azure Cosmos DB adds another physical partition to the container. Azure Cosmos DB automatically distributes the logical partitions across the available physical partitions, again using the partition key value to do so in a predictable way.
+The partition key is a required document property that ensures documents with the same partition key value are routed to and stored within a specific physical partition. A physical partition supports a fixed maximum amount of storage and throughput (RU/s). Azure Cosmos DB automatically distributes the logical partitions across the available physical partitions, again using the partition key value to do so in a predictable way.
 
 In this unit, you'll learn more about logical partitions and how to avoid hot partitions. This information will help us choose the appropriate partition key for the customer data in our scenario.
 
