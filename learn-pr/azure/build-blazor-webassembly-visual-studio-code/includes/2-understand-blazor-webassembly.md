@@ -29,7 +29,7 @@ With Blazor WebAssembly, developers can run .NET code in a browser. It's a singl
 
 Blazor uses a .NET runtime compiled to a WebAssembly module that is downloaded with an app. The module can execute .NET Standard code included in a Blazor app.
 
-A Blazor WebAssembly app is restricted to the capabilities of the browser that executes the app. But the app can access full browser functionality via JavaScript interop.
+A Blazor WebAssembly app is restricted to the capabilities of the browser that executes the app, but the app can access full browser functionality via JavaScript interop.
 
 ### Blazor WebAssembly supported browsers
 
@@ -50,7 +50,7 @@ The runtime stays on the server and handles:
 - Sending UI events from the browser to the server.
 - Applying UI updates to the rendered components that are sent back by the server.
 
-The connection used by Blazor Server to communicate with the browser is also used to handle JavaScript interop calls.
+The connection Blazor Server uses to communicate with the browser is also used to handle JavaScript interop calls.
 
 ![Blazor Server diagram.](../media/blazor-server.png)
 
@@ -58,4 +58,4 @@ The connection used by Blazor Server to communicate with the browser is also use
 
 You can build Blazor apps by using the latest version of Visual Studio 2022, Visual Studio for Mac, or Visual Studio Code. In this module, you'll use Visual Studio Code.
 
-Whatever your development environment, you need to install the **.NET 6.0 SDK**.  If you will be working with Visual Studio 2022, you will need to include the "ASP.NET and web development" workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio.  After installation, you'll have everything you need to start building Blazor apps. You'll build your first Blazor app with Visual Studio Code or Visual Studio 2022 in the next exercise.
+Whatever your development environment, you'll need to install the **.NET 6.0 SDK**. If you'll be working with Visual Studio 2022, you'll need to include the "ASP.NET and web development" workload to ensure the .NET 6.0 SDK and tools are available in Visual Studio. After installation, you'll have everything you need to start building Blazor apps. In the next exercise, you'll build your first Blazor app with Visual Studio Code or Visual Studio 2022.

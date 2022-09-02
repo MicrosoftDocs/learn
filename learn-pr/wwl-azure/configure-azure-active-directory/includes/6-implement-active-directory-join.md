@@ -1,26 +1,32 @@
-Azure Active Directory (Azure AD) enables single sign-on to devices, apps, and services from anywhere. IT administrators must ensure corporate assets are protected and that devices meet standards for security and compliance.
+Azure Active Directory enables single sign-on (SSO) to devices, applications, and services from anywhere. To support SSO, IT admins must ensure corporate assets are protected, and devices meet standards for security and compliance.
 
-:::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="Diagram showing a device connecting to Azure AD. Azure AD is shown connecting with On-premises AD.":::
+:::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="Diagram that shows a device connecting to Azure AD. Azure AD is shown connecting with on-premises AD." border="false":::
 
+The Azure AD join feature works with SSO to provide access to organizational apps and resources, and to simplify Windows deployments of work-owned devices.
 
-Azure AD Join is designed to provide access to organizational apps and resources and to simplify Windows deployments of work-owned devices. AD Join has these benefits.
+### Things to know about the Azure AD join feature
 
- -  **Single-Sign-On (SSO)** to your Azure-managed SaaS apps and services. Your users won't have additional authentication prompts when accessing work resources. The SSO functionality is available even when users are not connected to the domain network.
- -  **Enterprise state roaming** of user settings across joined devices. With Windows 10, users gain the ability to securely synchronize their user settings and application settings data to the cloud. This reduces the time to configure a new device. 
- -  **Access to Microsoft Store for Business** using an Azure AD account. Your users can choose from an inventory of applications pre-selected by the organization.
- -  **Windows Hello** support for secure and convenient access to work resources.
- -  **Restriction of access** to apps from only devices that meet compliance policy.
- -  **Seamless access to on-premise resources** when the device has line of sight to the on-premises domain controller.
+Let's look at some of the benefits of using joined devices:
 
-## Connection options
+| Benefit | Description |
+| --- | --- |
+| **Single-Sign-On (SSO)** | Joined devices offer SSO access to your Azure-managed SaaS apps and services. Your users won't have extra authentication prompts when they access work resources. The SSO functionality is available even when users aren't connected to the domain network. |
+| **Enterprise state roaming** | Starting in Windows 10, your users can securely synchronize their user settings and app settings data to joined devices. Enterprise state roaming reduces the time to configure a new device. |
+| **Access to Microsoft Store for Business** | When your users access Microsoft Store for Business by using an Azure AD account, they can choose from an inventory of applications pre-selected by your organization. |
+| **Windows Hello** | Provide your users with secure and convenient access to work resources from joined devices. |
+| **Restriction of access** | Restrict user access to apps from only joined devices that meet your compliance policies. |
+| **Seamless access to on-premises resources** | Joined devices have seamless access to on-premises resources, when the device has line of sight to the on-premises domain controller. |
 
-To get a device under the control of Azure AD, you have two options:
+### Things to consider when using joined devices
 
- -  **Registering** a device to Azure AD enables you to manage a device’s identity. Azure AD device registration provides the device with an identity that is used to authenticate the device when a user signs-in to Azure AD. You can use the identity to enable or disable a device.
- -  **Joining** a device is an extension to registering a device. Joining provides the benefits of registering and changes the local state of a device. Changing the local state enables your users to sign-in to a device using an organizational work or school account instead of a personal account.
+Your organization is interested in using joined devices in their management strategy. As you plan for how to implement the feature, review these configuration points:
 
-> [!NOTE]
-> Registration combined with a mobile device management (MDM) solution such as Microsoft Intune, provides additional device attributes in Azure AD. You can create conditional access rules that enforce access from devices to meet your standards for security and compliance.
+-  **Consider connection options**. Connect your device to Azure AD in one of two ways:
+   
+   - **Register** your device to Azure AD so you can manage the device identity. Azure AD device registration provides the device with an identity that's used to authenticate the device when a user signs into Azure AD. You can use the identity to enable or disable the device.
+   
+   - **Join** your device, which is an extension of registering a device. Joining provides the benefits of registering, and also changes the local state of the device. Changing the local state enables your users to sign into a device by using an organizational work or school account instead of a personal account.
 
-> [!NOTE]
-> Although AD Join is intended for organizations that do not have on-premises Windows Server Active Directory infrastructure it can be used for other scenarios like branch offices.
+- **Consider combining registration with other solutions**. Combine registration with a mobile device management (MDM) solution like Microsoft Intune, to provide other device attributes in Azure AD. You can create conditional access rules that enforce access from devices to meet organization standards for security and compliance.
+
+- **Consider other implementation scenarios**. Although AD Join is intended for organizations that don't have an on-premises Windows Server Active Directory infrastructure, it can be used for other scenarios like branch offices.

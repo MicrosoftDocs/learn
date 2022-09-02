@@ -46,10 +46,10 @@ You can use the Express Generator tool to create all the components of an Expres
 You now have a functional webapp that Node.js can run. Let's modify its code to display the countdown:
 
 1. In the Visual Studio Code Explorer window, expand **routes**, and then select **index.js**. This JavaScript file defines routes for the app's homepage. We can add our code to calculate the countdown here.
-1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2019 10:00`):
+1. Add the following code, immediately after the `var router = express.Router();` line. In the first line of the inserted code, specify your own date around a month in the future, in `MM/DD/YYYY HH:MM` format (this example uses `12/29/2022 10:00`):
 
     ```JavaScript
-    let launchTime = new Date("12/29/2019 10:00").getTime();
+    let launchTime = new Date("12/29/2022 10:00").getTime();
     ```
 
 1. Locate this line of code:
@@ -119,7 +119,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 1. Open a web browser and navigate to the address `http://localhost:3000`.
 
-    :::image type="content" source="../media/3-complete-webapp.png" alt-text="Browse the completed webapp." loc-scope="other":::
+    :::image type="content" source="../media/3-complete-web-app.png" alt-text="Browse the completed webapp." loc-scope="other":::
 
 1. Close the web browser. In the Code integrated terminal, press <kbd>Ctrl+C</kbd> to stop the webapp. If the prompt displays `Terminate batch job (Y/N)?`, type <kbd>Y</kbd> and press <kbd>Enter</kbd>.
 
@@ -173,7 +173,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     Visual Studio Code displays a list of available global environments, including the virtual environment you just created.  You should see the virtual environment named `env` in the list.  Use the arrow keys to select the `env` entry and select <kbd>Enter</kbd> (or <kbd>return</kbd> on macOS).
 
-    ![Screenshot of project in web browser.](../media/3-python-select-interpreter.png)
+   :::image type="content" source="../media/3-python-select-interpreter.png" alt-text="Screenshot of selecting Python interpreter in Visual Studio Code.":::
 
 1. Close the integrated terminal.
 
@@ -181,7 +181,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
 
     You should now see the command line prompt prefixed with `(env)`.
 
-    ![Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.](../media/3-python-terminal-env.png)
+   :::image type="content" source="../media/3-python-terminal-env.png" alt-text="Screenshot of Visual Studio Code's Terminal displaying command prompt with (env) prefix.":::
 
     > [!IMPORTANT]
     > If you do not see the prefix `(env)` on your command prompt you are not working in the virtual environment.
@@ -203,7 +203,7 @@ Using a virtual environment avoids installing Flask into a global Python environ
     Once the pip3 utility has finished, you should see a success message similar to the following:
 
     ```output
-    Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.1 flask-1.1.2 itsdangerous-1.1.0
+    Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.2.2 click-8.1.3 colorama-0.4.5 flask-2.2.2 itsdangerous-2.1.2
     ```
 
 ## Add code files
@@ -246,7 +246,7 @@ Our aim here is to:
     @app.route("/")
     def countdown():
 
-        launchTime = datetime(2020, 6, 1)
+        launchTime = datetime(2023, 6, 1)
         currentTime = datetime.now()
         diff = launchTime - currentTime
         numberOfMilliseconds = int(diff.total_seconds() * 1000)
@@ -279,7 +279,7 @@ Our aim here is to:
     @app.route("/")
     def countdown():
 
-        launchTime = datetime(2020, 6, 1)
+        launchTime = datetime(2023, 6, 1)
         currentTime = datetime.now()
         diff = launchTime - currentTime
         numberOfMilliseconds = int(diff.total_seconds() * 1000)
@@ -369,7 +369,7 @@ Now the app is complete, let's run it on your local computer and see if it shows
 
 1. Open a web browser and navigate to the address `http://localhost:5000`.
 
-![Screenshot of completed project in web browser.](../media/3-flask-complete.png)
+   :::image type="content" source="../media/3-flask-complete.png" alt-text="Screenshot of completed project in web browser.":::
 
 1. Close the web browser. In the Visual Studio Code Terminal, in Windows and Linux select <kbd>Ctrl+C</kbd> to quit the development server.  On macOS, select <kbd>Command+C</kbd> to quit the development server.
 
