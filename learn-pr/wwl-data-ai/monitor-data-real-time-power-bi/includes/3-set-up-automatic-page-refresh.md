@@ -71,7 +71,7 @@ To set up APR, in the page settings, you enable the **Page refresh** setting.
 Once enabled, you can set the **Refresh type** property to one of two options:
 
 - **Auto page refresh** – Updates all page visuals based on a fixed interval, which can be from every one second to multiple days.
-- **Change detection** – Updates all page visuals providing that source data has changed since the last automatic refresh. It avoids unnecessary refreshes, which can help to reduce resource consumption for the Power BI service and the data source. This option is only supported for reports stored in a workspace that has its license mode set to **Premium per user**, **Premium per user**, or **Embedded** (known as Premium workspaces).
+- **Change detection** – Updates all page visuals providing that source data has changed since the last automatic refresh. It avoids unnecessary refreshes, which can help to reduce resource consumption for the Power BI service and the data source. This option is only supported for reports stored in a workspace that has its license mode set to **Premium**, **Premium per user**, or **Embedded** (known as Premium workspaces).
 
 > [!IMPORTANT] 
 > When using a fixed interval, consider the burden it might place on the data source. Factor in that multiple users may open the report page, and that each visual on the page results in at least one query to the data source.
