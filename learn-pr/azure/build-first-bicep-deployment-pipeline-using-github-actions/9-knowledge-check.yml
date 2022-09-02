@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 08/11/2021
+  ms.date: 07/20/2022
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
@@ -16,21 +16,17 @@ content: |
 quiz:
   questions:
   - content: |
-      When you execute your workflow you get the following error message:
-      
-      `Az CLI Login failed. Please check the credentials.`
-
       What should you do to fix this error?
     choices:
-    - content: Check your GitHub secrets. Confirm that there is a secret named `AZURE_CREDENTIALS`. Then, regenerate your service principal and paste the service principal's details into the AZURE_CREDENTIALS secret value.
-      isCorrect: true
-      explanation: Correct. The `azure/login` action makes use of the `AZURE_CREDENTIALS` secret. This secret should exist in your GitHub secret settings and should have a valid value.
     - content: Confirm the name of the resource group you are deploying to. It is probably incorrect.
       isCorrect: false
-      explanation: Incorrect. Your workflow output indicates it is not able to sign in using its credentials. You should check that the `AZURE_CREDENTIALS` secret exists, and then refresh the service principal's credentials.
-    - content: Check the runner your workflow is running on. It is not able to sign in to Azure.
+      explanation: Incorrect. The error message indicates that there's a problem locating the Bicep file.
+    - content: Add an `actions/checkout` step to the workflow definition file.
+      isCorrect: true
+      explanation: Correct. By default, GitHub Actions doesn't check out the files in your repo to the runner. Adding a `checkout` step ensures that your Bicep files are available for the runner to use.
+    - content: Define a new environment variable, with the value of the Bicep file's location.
       isCorrect: false
-      explanation: Incorrect. Your runner only executes the `azure/login` action with the credentials you provide to it. You should check that the `AZURE_CREDENTIALS` secret exists, and then refresh the service principal's credentials.
+      explanation: Incorrect. The workflow is missing an `actions/checkout` step. By default, GitHub Actions doesn't check out the files in your repo to the runner. Adding a `checkout` step ensures that your Bicep files are available for the runner to use.
   - content: |
       Which of these situations will trigger the R&D team's workflow to run?
     choices:

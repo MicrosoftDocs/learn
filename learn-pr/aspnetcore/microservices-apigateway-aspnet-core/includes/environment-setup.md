@@ -31,6 +31,8 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 1. Run the quickstart script:
 
+    [!INCLUDE[Quickstart note](../../includes/microservices/quickstart.md)]
+
     ```bash
     ./quickstart.sh
     ```

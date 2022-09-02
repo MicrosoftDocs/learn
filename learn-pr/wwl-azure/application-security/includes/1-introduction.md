@@ -15,7 +15,6 @@ Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Se
 Configure application security features (20-25%)
 
  -  Configure and manage Key Vault
-    
      -  Manage access to Key Vault
      -  Manage permissions to secrets, certificates, and keys
      -  Manage certificates

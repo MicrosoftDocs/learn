@@ -3,7 +3,7 @@ uid: learn.wwl.implement-advanced-data-visualization-techniques
 metadata:
   title: Implement advanced data visualization techniques by using Power BI
   description: Implement advanced data visualization techniques by using Power BI
-  ms.date: 06/23/2022
+  ms.date: 08/26/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
 summary: |
   This learning path takes analysts through visualizing data in Power BI. You'll learn about visuals in Power BI reports, using Power BI to visualize real-time data, and visualizing data in paginated reports.
   This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/learn/certifications/exams/dp-500).
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/implement-advanced-data-visualization-techniques.svg
 levels:
 - intermediate
 roles:

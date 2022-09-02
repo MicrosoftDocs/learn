@@ -3,7 +3,7 @@ uid: learn.wwl.manage-system-health-azure-stack-hub
 metadata:
   title: Manage system health on Azure Stack Hub
   description: "Manage system health on Azure Stack Hub"
-  ms.date: 03/29/2022
+  ms.date: 08/10/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -40,6 +40,7 @@ units:
 - learn.wwl.manage-system-health-azure-stack-hub.introduction
 - learn.wwl.manage-system-health-azure-stack-hub.monitor-health-alerts
 - learn.wwl.manage-system-health-azure-stack-hub.integrate-external-monitoring
+- learn.wwl.manage-system-health-azure-stack-hub.azure-stack-hub-operator-access-workstation
 - learn.wwl.manage-system-health-azure-stack-hub.monitor-by-using-syslog-server
 - learn.wwl.manage-system-health-azure-stack-hub.manage-field-replacement-repair
 - learn.wwl.manage-system-health-azure-stack-hub.configure-automatic-diagnostic-log-collection

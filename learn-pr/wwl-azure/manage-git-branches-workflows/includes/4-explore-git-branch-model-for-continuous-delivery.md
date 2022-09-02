@@ -49,7 +49,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
 
 ## How to do it
 
-1.  After you've cloned the main branch into a local repository, create a new feature branch, myFeature-1:
+1. After you've cloned the main branch into a local repository, create a new feature branch, myFeature-1:
     
     ***myWebApp >***
     
@@ -60,12 +60,12 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     **Output:**
     
     *Switched to a new branch 'feature/myFeature-1'.*
-2.  Run the Git branch command to see all the branches. The branch showing up with an asterisk is the "currently-checked-out" branch:
+1. Run the Git branch command to see all the branches. The branch showing up with an asterisk is the "currently-checked-out" branch:
     
     ***myWebApp >***
     
     ```CMD
-    git branch *
+    git branch
     ```
     
     **Output:**
@@ -73,14 +73,14 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     *feature/myFeature-1*
     
     *main*
-3.  Make a change to the Program.cs file in the feature/myFeature-1 branch:
+1. Make a change to the Program.cs file in the feature/myFeature-1 branch:
     
     ***myWebApp >***
     
     ```CMD
     notepad Program.cs
     ```
-4.  Stage your changes and commit locally, then publish your branch to remote:
+1. Stage your changes and commit locally, then publish your branch to remote:
     
     ***myWebApp >***
     
@@ -90,7 +90,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     **Output:**
     
-    *On branch feature/myFeature-1 Changes not staged for commit: (use "git add \<file\>..." to update what will be committed) (use "git checkout -- \<file\>..." to discard changes in working directory) modified: Program.cs.*
+    *On branch feature/myFeature-1 Changes not staged for commit: (use "git add &lt;file>..." to update what will be committed) (use "git checkout -- &lt;file&gt;..." to discard changes in working directory) modified: Program.cs.*
     
     ***myWebApp >***
     
@@ -117,12 +117,12 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     :::image type="content" source="../media/remote-history-changes-133245b4.png" alt-text="Screenshot of remote history of the changes.":::
     
-5.  Configure Azure DevOps CLI for your organization and project. Replace **organization** and **project name**:
+1. Configure Azure DevOps CLI for your organization and project. Replace **organization** and **project name**:
     
     ```CMD
     az devops configure --defaults organization=https://dev.azure.com/organization project="project name"
     ```
-6.  Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
+1. Create a new pull request (using the Azure DevOps CLI) to review the changes in the feature-1 branch:
     
     ```CMD
     az repos pr create --title "Review Feature-1 before merging to main" --work-items 38 39 `
@@ -145,7 +145,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     :::image type="content" source="../media/create-tag-example-9a81a5d0.png" alt-text="Screenshot of the creation of a tag example.":::
     
-7.  Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
+1. Start work on Feature 2. Create a branch on remote from the main branch and do the checkout locally:
     
     ***myWebApp >***
     
@@ -166,7 +166,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     **Output:**
     
     *Switched to a new branch 'feature/myFeature-2' Branch feature/myFeature-2 set up to track remote branch feature/myFeature-2 from origin.*
-8.  Modify Program.cs by changing the same comment line in the code changed in feature-1.
+1. Modify Program.cs by changing the same comment line in the code changed in feature-1.
     
     ```
     public class Program
@@ -182,7 +182,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
                 .UseStartup<Startup>()
                 .Build();
     ```
-9.  Commit the changes locally, push them to the remote repository, and then raise a pull request to merge the changes from feature/myFeature-2 to the main branch:
+1. Commit the changes locally, push them to the remote repository, and then raise a pull request to merge the changes from feature/myFeature-2 to the main branch:
     
     ```CMD
     az repos pr create --title "Review Feature-2 before merging to main" --work-items 40 42 `
@@ -202,7 +202,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     **Output:**
     
     *Switched to a new branch 'fof/bug-1'.*
-10. Modify Program.cs by changing the same line of code that was changed in the feature-1 release:
+1. Modify Program.cs by changing the same line of code that was changed in the feature-1 release:
     
     ```
     public class Program
@@ -218,7 +218,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
                 .UseStartup<Startup>()
                 .Build();
     ```
-11. Stage and commit the changes locally, then push changes to the remote repository:
+1. Stage and commit the changes locally, then push changes to the remote repository:
     
     ***myWebApp >***
     
@@ -231,7 +231,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     **Output:**
     
     *To https://dev.azure.com/Geeks/PartsUnlimited/\_git/MyWebApp \* \[new branch\] fof/bug-1 -> fof/bug-1 Branch fof/bug-1 set up to track remote branch fof/bug-1 from origin.*
-12. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release\_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
+1. Immediately after the changes have been rolled out to production, tag the fof\\bug-1 branch with the release\_bug-1 tag, then raise a pull request to merge the changes from fof/bug-1 back into the main:
     
     ```CMD
     az repos pr create --title "Review Bug-1 before merging to main" --work-items 100 `
@@ -253,7 +253,7 @@ The Azure DevOps CLI supports returning the query results in JSON, JSONC, YAML, 
     
     :::image type="content" source="../media/merge-conflicts-pull-request-84cba5e1.png" alt-text="Screenshot of merge conflicts from pull request.":::
     
-13. The Git Pull Request Merge Conflict resolution extension makes it possible to resolve merge conflicts right in the browser. Navigate to the conflicts tab and click on Program.cs to resolve the merge conflicts:
+1. The Git Pull Request Merge Conflict resolution extension makes it possible to resolve merge conflicts right in the browser. Navigate to the conflicts tab and click on Program.cs to resolve the merge conflicts:
     
     :::image type="content" source="../media/git-pr-merge-conflict-resolution-extension-0e6d8b72.png" alt-text="Screenshot of the Git pull request merge conflict resolution extension.":::
     

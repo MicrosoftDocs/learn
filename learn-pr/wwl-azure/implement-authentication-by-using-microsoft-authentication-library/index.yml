@@ -15,7 +15,7 @@ abstract: |
   *   Explain the benefits of using Microsoft Authentication Library and the application types and scenarios it supports.
   *   Instantiate both public and confidential client apps from code.
   *   Register an app with the Microsoft identity platform.
-  *   Create an app that retrieves a token by using the [MSAL.NET](http://MSAL.NET) library.
+  *   Create an app that retrieves a token by using the [MSAL.NET](/azure/active-directory/develop/msal-overview) library.
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.

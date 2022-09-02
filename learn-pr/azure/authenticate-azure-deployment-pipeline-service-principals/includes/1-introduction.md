@@ -10,6 +10,9 @@ One of your colleagues has told you that you need to set up a service principal 
 
 In this module, you'll create a service principal with a key, ready for your pipeline to use. You'll create a resource group in Azure to contain your company's website, and you'll authorize the service principal to deploy and configure your website's resources.
 
+> [!NOTE]
+> The information in this Microsoft Learn module is specific to Azure Pipelines. If you use GitHub Actions, the way your deployment workflows authenticate is different. To learn more about GitHub Actions and deployment authorization, see [Authenticate your Azure deployment workflow by using workload identities](xref:learn.azure.authenticate-azure-deployment-workflow-workload-identities).
+
 ## What is the main goal?
 
 By the end of this module, you'll have an understanding of service principals and how they relate to other Azure and Azure Active Directory (Azure AD) security concepts. You'll be able to create a service principal and manage its keys. You'll also be able to determine the best authorization policy to use for your pipeline's service principal, and configure the appropriate role assignments in Azure.

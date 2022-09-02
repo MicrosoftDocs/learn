@@ -4,13 +4,13 @@ title: Work with certificates in PowerShell
 metadata:
   title: Work with certificates in PowerShell
   description: "Work with certificates in PowerShell"
-  ms.date: 07/28/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/6-work-certificates-powershell.md)]

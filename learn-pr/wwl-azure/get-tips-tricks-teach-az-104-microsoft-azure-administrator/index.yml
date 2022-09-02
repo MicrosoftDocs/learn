@@ -3,7 +3,7 @@ uid: learn.wwl.get-tips-tricks-teach-az-104-microsoft-azure-administrator
 metadata:
   title: Get tips and tricks for teaching AZ-104 Microsoft Azure Administrator
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 06/28/2022
+  ms.date: 08/25/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ prerequisites: |
   - Understand how to utilize the built-in accessibility features
   - Understand using the objective domains when preparing to teach
   - Understand the exam structure
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/get-tips-tricks-teach-az-104-microsoft-azure-administrator.svg
 levels:
 - advanced
 roles:

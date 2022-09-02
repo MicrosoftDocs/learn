@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-learn-educators-course-preparation
 metadata:
   title: Microsoft Learn for Educators Course Preparation
   description: "Your students want skills that make them employable. Using the resources available from Microsoft will help you feel confident to teach your students the skills they need to help them pass a Microsoft Certification exam."
-  ms.date: 04/13/2022
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   *   Request practice exams and certification exam vouchers as an MSLE Educator.
   *   Access the Microsoft Learning Download Center and download content.
   *   Understand the resources available through the Microsoft curriculum and teaching materials.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/microsoft-learn-educators-course-preparation.svg
 levels:
 - beginner
 roles:

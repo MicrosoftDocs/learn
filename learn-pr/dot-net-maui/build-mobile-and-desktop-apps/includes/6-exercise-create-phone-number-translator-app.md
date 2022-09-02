@@ -1,4 +1,4 @@
-In this exercise, you'll construct the UI for the grocery store app and implement the logic behind this UI.
+In this exercise, you'll construct the UI for the phone dialer app and implement the logic behind this UI.
 
 You'll build a UI that takes advantage of the UI capabilities of .NET MAUI and the .NET MAUI Essentials package to dial the phone.
 
@@ -270,15 +270,12 @@ public static class PhonewordTranslator
         {
             try
             {
-                PhoneDialer.Open(translatedNumber);
+                if (PhoneDialer.Default.IsSupported)
+                    PhoneDialer.Default.Open(translatedNumber);
             }
             catch (ArgumentNullException)
             {
                 await DisplayAlert("Unable to dial", "Phone number was not valid.", "OK");
-            }
-            catch (FeatureNotSupportedException)
-            {
-                await DisplayAlert("Unable to dial", "Phone dialing not supported.", "OK");
             }
             catch (Exception)
             {

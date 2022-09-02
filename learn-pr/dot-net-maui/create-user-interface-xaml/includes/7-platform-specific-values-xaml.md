@@ -32,7 +32,7 @@ This code works, but it's in the code-behind file of the page. The padding is a 
 
 ## Using the OnPlatform mark-up extension
 
-.NET MAUI XAML provides the `OnPlatform` mark-up extension that enables you to detect the runtime platform from within in your XAML code. You apply this mark-up extension as part of the XAML code that sets a property value. The extension requires you to provide the type of the property, together with a series of `On Platform` blocks in which you set the value of the property according to the platform.
+.NET MAUI XAML provides the `OnPlatform` mark-up extension that enables you to detect the runtime platform from within your XAML code. You apply this mark-up extension as part of the XAML code that sets a property value. The extension requires you to provide the type of the property, together with a series of `On Platform` blocks in which you set the value of the property according to the platform.
 
 > [!NOTE]
 > The `OnPlatform` mark-up extension is generic; it takes a type parameter. The type specified by the `TypeArguments` attribute ensures the correct type of extension is used.

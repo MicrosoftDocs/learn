@@ -4,7 +4,8 @@ title: Exercise - Clean up your Azure DevOps environment
 metadata:
   title: Exercise - Clean up your Azure DevOps environment
   description: Clean up your Azure DevOps environment and disable your build pipeline.
-  ms.date: 05/26/2021
+  ms.custom: devdivchpfy22
+  ms.date: 08/10/2022
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial

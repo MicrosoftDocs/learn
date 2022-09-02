@@ -1,22 +1,24 @@
 ### YamlMime:Module
 uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake
 metadata:
-  title: Use Azure Synapse serverless SQL pools for transforming the data in the lake
-  description: "Use Azure Synapse serverless SQL pools for transforming the data in the lake"
-  ms.date: 01/05/2022
+  title: Use Azure Synapse serverless SQL pools to transform data in a data lake
+  description: "Use Azure Synapse serverless SQL pools to transform data in a data lake"
+  ms.date: 08/02/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Use Azure Synapse serverless SQL pools for transforming the data in the lake
-summary: Learn how to use  CREATE EXTERNAL TABLE AS SELECT statements to transform data and encapsulate the transformation logic in stored procedures.
+title: Use Azure Synapse serverless SQL pools to transform data in a data lake
+summary: By using a serverless SQL pool in Azure Synapse Analytics, you can use the ubiquitous SQL language to transform data in files in a data lake.
 abstract: |
-  After the completion of this module, you will be able to:
-  - Transform data with Azure Synapse serverless SQL pools using CREATE EXTERNAL TABLE AS SELECT statement
-  - Operationalize data transformation with Azure Synapse serverless SQL pools using stored procedures
-  - Use Azure Synapse serverless SQL pool stored procedures from Synapse Pipelines
+  After completing this module, you'll be able to:
+  - Use a CREATE EXTERNAL TABLE AS SELECT (CETAS) statement to transform data.
+  - Encapsulate a CETAS statement in a stored procedure.
+  - Include a data transformation stored procedure in a pipeline.
 prerequisites: |
-  It is recommended that students have completed Data Fundamentals before starting this learning path.
+  Consider completing [Use Azure Synapse serverless SQL pool to query files in a data lake](/learn/modules/query-data-lake-using-azure-synapse-serverless-sql-pools/) before starting this module. You will need the following knowledge or experience:
+  - Familiarity with Azure Synapse Analytics.
+  - Experience using Transact-SQL to query and manipulate data.
 iconUrl: /learn/achievements/use-azure-synapse-serverless-sql-pools-for-transforming-the-data-in-the-lake.svg
 levels:
 - intermediate
@@ -25,14 +27,14 @@ roles:
 products:
 - azure-synapse-analytics
 subjects:
+- data-engineering
 - data-lake
-- data-modeling
-- serverless-compute
 units:
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.introduction
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.transform-data-with-using-create-external-table-as-select-statement
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.operationalize-data-transformation-with-using-stored-procedures
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.pool-stored-procedures-from-synapse-pipelines
+- learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.exercise-transform-data
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.knowledge-check
 - learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.summary
 badge:

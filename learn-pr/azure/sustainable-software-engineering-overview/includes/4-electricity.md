@@ -2,15 +2,15 @@
 
 ## Electricity and carbon
 
-Most people think electricity is clean. When we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through burning fossil fuels&mdash;[usually coal](https://ourworldindata.org/grapher/world-electricity-by-source)&mdash;and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.
+Most people think electricity is clean. When we plug something into a wall, our hands don't become dirty, and our laptops don't need exhaust pipes. However, the truth is that most electricity is produced through burning fossil fuel ([usually coal](https://ourworldindata.org/grapher/world-electricity-by-source)) and energy supply is the [single most significant](https://www.eea.europa.eu/data-and-maps/daviz/change-of-co2-eq-emissions-2#tab-chart_4) cause of carbon emission.
 
-Since we can draw a direct line from electricity to carbon emissions, electricity can be considered one of the proxies for carbon.
+Since we can draw a direct line from electricity to carbon emissions, we can consider electricity one of the proxies for carbon.
 
-From the applications running on your smartphone to training machine learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and the subsequent emissions of carbon pollution made by our software is to make our applications more energy-efficient.
+From the applications running on your smartphone to training machine-learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and the subsequent emissions of carbon pollution made by our software is to make our applications more energy-efficient.
 
 This is why the second principle of Sustainable Software Engineering is to **build applications that are energy-efficient**.
 
-As sustainable engineers we need to understand electricity; our journey doesn't start from the computer, it starts from how the electricity that powers our computers is made.
+As sustainable engineers, we need to understand electricity. Our journey doesn't start from the computer, it starts from how the electricity that powers our computers is made.
 
 ## Energy vs. power
 

@@ -4,18 +4,18 @@ In this exercise, you move the static data from the app into a mock server, and 
 
 At this point, you have a front-end app with static data inside of the app. You want to move the static data into a mock server, while you're waiting for the back-end team to finish building the API. Performing this step will set you up nicely for using the actual API, once it's done.
 
-1. In _Main.js_, locate this part of the code and cut it out:
+1. In _Main.js_, locate and delete the following code:
 
    ```javascript
-   let pizza = [{
+   let pizzas = [{
       id: 1, name: 'Cheese pizza', description: 'very cheesy'
-    },
-    {
+   },
+   {
       id: 2, name: 'Al Tono pizza', description: 'lots of tuna'
-    }];
+   }];
    ```
 
-1. Edit the existing _db.json_ file or create one in the main folder it not, and give it the following content:
+1. Create a file named _db.json_ file in the _pizza-web_ directory. Insert the following content:
 
    ```json
    {
@@ -32,7 +32,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    }
    ```
 
-   What you're looking at is a JSON representation of your JavaScript array.
+   The above is a JSON representation of the deleted JavaScript array.
 
 1. Locate the definition of your `Main` component in _Main.js_, and change the definition of `Main` to the following content (don't change anything else):
 
@@ -44,7 +44,7 @@ At this point, you have a front-end app with static data inside of the app. You 
       }, [])
       
       function fetchData() {
-        fetch("/api/pizza")
+        fetch("/pizza")
           .then(response => response.json())
           .then(data => setPizzas(data)) 
       }
@@ -76,7 +76,7 @@ At this point, you have a front-end app with static data inside of the app. You 
 
    The method `fetchData()` has been added, and it's being invoked. This action triggers a `GET` request to `http://localhost:5000/pizzas`. Next, you need to ensure that the mock server is up and running.
 
-1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal. Running this code should bring up the mock server, and you should see an output like the following:
+1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal. Running this code starts the mock server, and output similar to the following appears:
 
    ```output
    \{^_^}/ hi!
@@ -90,118 +90,63 @@ At this point, you have a front-end app with static data inside of the app. You 
    http://localhost:5000
    ```
 
-1. In another terminal, run `yarn start`. It should bring up your React app:
-
-   ```bash
-   yarn start
-   ```
-
-   Your app should render normally at `http://localhost:3000`.
-
-1. Add a proxy by opening up _package.json_ and the following entry:
+1. Add the following property to _package.json_ :
 
    ```json
-   "proxy": "http://localhost:5000"
+   "proxy": "http://localhost:5000",
    ```
 
-   Any calls to */api/* will be translated as calling `http://localhost:5000`.
+   API calls from the frontend will be proxied to `http://localhost:5000`.
 
-1. Restart your app with `yarn start`:
+1. Save all your changes and start the app:
 
    ```bash
    yarn start
    ```
 
-   Your app should start as normal on `http://localhost:5000`.
+   Your app is now pulling data from the mock API!
 
 ## Use the server API
 
 Suppose the back-end team has now finished building the server. To use the server, you just need to fetch the code from GitHub and run it. You might need to configure CORS as well.
 
-1. Clone the back-end project by running `git clone`:
+1. In the terminal with the mock database server, press **Ctrl**+**C** to stop the server.
+1. Navigate to the parent of the _pizza-web_ directory, and then download the back-end project:
 
    ```bash
    cd ..
    git clone https://github.com/MicrosoftDocs/minimal-api-work-with-databases
-   cd minimal-api-work-with-databases
-   cd PizzaStore
    ```
 
-1. In a terminal, run `dotnet ef database` to apply the migrations that will create a database with tables.
+1. Set your location to the _PizzaStore_ subdirectory and run `dotnet ef database` to apply the migrations that will create a database with tables.
 
    ```bash
+   cd minimal-api-work-with-databases
+   cd PizzaStore
    dotnet ef database update
    ```
 
-1. Open _Program.cs_, and add the following code to enable CORS (the code you need to add is highlighted):
+   > [!NOTE]
+   > If the `dotnet ef` can't be found, install it with `dotnet tool install -g dotnet-ef` then repeat the previous command.
+
+1. In the file explorer, browse to the _PizzaStore_ directory, and open _Program.cs_. Add the following code to enable CORS (the code you need to add is highlighted):
 
    :::code language="csharp" source="../code/minimal-spa-use-server-api.cs" highlight="6, 23-30, 39":::
 
-   The changes will configure CORS. You'll be able to read and write toward the API, despite the front end and back end running on different ports.
+   The changes will configure CORS. You'll be able to read and write toward the API, despite the frontend and back end running on different ports.
 
-1. Start your API with `dotnet run` (ensure that you quit the JSON server first).
+1. Save all your changes, and then start the API in the terminal with `dotnet run`.
 
-   The server runs on port 5059. Adjust the proxy in _package.json_ for the front-end app to match the port the server assumes.
-
-   Your front end should show one item with the title, _Pepperoni_.
-
-Congratulations, you've managed to create a full stack application, with both front and back ends.
-
-## Solution for frontend app
-
-If you get lost by any of the above instructions, here's the code for _Main.js_ file for the frontend project:
-
-```javascript
-import React, { useState, useEffect } from "react";
-
-const Pizza = ({ pizza }) => {
-   const [data, setData] = useState(pizza);
-   const [dirty, setDirty] = useState(false);
+   The server runs on port 5059.
    
-   function update(value, fieldName, obj) {
-      setData({ ...obj, [fieldName] : value });
-      setDirty(true);
-   }
-   
-   function onSave() {
-      setDirty(false);
-      // make rest call
-   }
-   
-   return (<React.Fragment>
-      <div>
-      <h3>
-         <input onChange={(evt) => update(evt.target.value, 'name', data)} value={data.name} /> 
-      </h3>
-      <div>
-         <input onChange={(evt) => update(evt.target.value, 'description', data)} value={data.description} />
-      </div>
-      {dirty ? 
-      <div><button onClick={onSave}>Save</button></div> : null
-      }
-      </div>
-   </React.Fragment>);
-}
+1. Modify the proxy property in _package.json_ so the front-end app uses the correct server port:
 
-const Main = () => {
-  const [pizzas, setPizzas] = useState([]);
-  
-  useEffect(() => {
-    fetchData();
-  }, [])
+   ```
+   "proxy": "http://localhost:5059",
+   ```
 
-  function fetchData() {
-    fetch("/api/pizza")
-      .then(response => response.json())
-      .then(data => setPizzas(data)) 
-  }
+1. In the terminal running the frontend app, stop the app with **Ctrl**+**C**. Restart the frontend with `yarn start`.
 
-  const data = pizzas.map(pizza => <Pizza pizza={pizza} />)
+   Upon loading the app, it displays one item with the title, _Pepperoni_.
 
-  return (<React.Fragment>
-   {data}
-  </React.Fragment>)
-}
-
-export default Main;
-```
+Congratulations, you've created a full stack application! The React frontend is reading data from a backend database via a minimal API.

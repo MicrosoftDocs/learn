@@ -3,7 +3,7 @@ uid: learn.wwl.model-query-explore-data-for-azure-synapse
 metadata:
   title: Model, query, and explore data in Azure Synapse
   description: Model, query, and explore data in Azure Synapse
-  ms.date: 06/28/2022
+  ms.date: 08/16/2022
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
 summary: |
   Query and explore data in Azure Synapse Analytics. You'll learn how to query and visualize data in a data lake and a data warehouse.
   This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/learn/certifications/exams/dp-500).
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/model-query-explore-data-for-azure-synapse.svg
 levels:
 - intermediate
 roles:

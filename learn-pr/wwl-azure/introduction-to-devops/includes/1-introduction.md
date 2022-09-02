@@ -1,6 +1,6 @@
 **"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."** \- According to Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)
 
-The DevOps learning paths will help you prepare for a DevOps journey. You'll learn the main characteristics of the DevOps process, tools, and people involved during the lifecycle. Also, it prepares you for the Microsoft DevOps Solution certification exam. You'll see other content to ensure you have a complete picture of DevOps. The module's content consists of graphics, reference links, module review questions, and optional hands-on labs.
+The DevOps learning paths will help you prepare for a DevOps journey. You'll learn the main characteristics of the DevOps process, tools, and people involved during the lifecycle. Also, it prepares you for the Microsoft DevOps Solution certification exam. You'll see other content to ensure you have a complete picture of DevOps. The module's content includes graphics, reference links, module review questions, and optional hands-on labs.
 
 You'll learn:
 
@@ -35,7 +35,7 @@ Exam candidates must be proficient with Agile practices. They must be familiar w
 
 DevOps professionals must design and implement DevOps practices for version control, compliance, infrastructure as code, configuration management, build, release, and testing-using Azure technologies.
 
-There are seven domain areas.
+There are five domain areas.
 
 | **AZ-400 Domain Area**                            | **Weight** |
 | ------------------------------------------------- | ---------- |
@@ -62,7 +62,7 @@ After completing this module, students and professionals can:
 
 Successful learners will have prior knowledge and understanding of:
 
- -  Cloud computing concepts, including an understanding of PaaS, SaaS, and IaaS implementations.
+ -  Cloud computing concepts include understanding of PaaS, SaaS, and IaaS implementations.
  -  Azure administration and Azure development with proven expertise in at least one of these areas.
  -  Version control, Agile software development, and core software development principles. It would be helpful to have experience in an organization that delivers software.
 

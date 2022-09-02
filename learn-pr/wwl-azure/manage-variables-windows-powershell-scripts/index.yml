@@ -3,7 +3,7 @@ uid: learn.wwl.manage-variables-windows-powershell-scripts
 metadata:
   title: Manage variables in Windows PowerShell scripts
   description: "This module explains how to create variables, name them correctly, and assign the correct data type, while ensuring the data you store in variables is in the correct format and easily accessible."
-  ms.date: 07/25/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

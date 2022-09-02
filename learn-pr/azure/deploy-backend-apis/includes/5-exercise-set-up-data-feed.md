@@ -6,7 +6,7 @@ The first step with any Azure Function project is to get your function running l
 
 1. Open **Visual Studio Code** and select **File** > **Open folder** to open the folder where your forked GitHub repository is located.
 
-2. Select the **Extensions** icon on the left-hand taskbar. Install **Azurite**, an open-source Azure Storage API emulator. This extension is needed to run functions locally.
+2. Select the **Extensions** icon on the left-hand taskbar. Install [**Azurite**](https://marketplace.visualstudio.com/items?itemName=Azurite.azurite), an open-source Azure Storage API emulator. This extension is needed to run functions locally.
 
 3. Select **View** > **Command Palette...** and type **Azurite: Start**, then select **Azurite: Start**.
 

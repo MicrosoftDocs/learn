@@ -40,7 +40,7 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
     - `ls -la /`: Shows the root of the disk
     - `ps -l`: Shows all the running processes
     - `dmesg`: Lists all the kernel messages
-    - `lsblk`: Lists all the block devices - here you will see your drives
+    - `lsblk`: Lists all the block devices - here you'll see your drives
 
     The more interesting thing to observe in the list of drives is what is _missing_. Notice that our **Data** drive (`sdc`) is present but not mounted into the file system. Azure added a VHD but didn't initialize it.
 
@@ -62,7 +62,7 @@ Any additional drives you create from scratch need to be initialized and formatt
     sudo mkfs -t ext4 /dev/sdc1
     ```
 
-1. Finally, we need to mount the drive to the file system. Let's assume we will have a `data` folder. Let's create the mount point folder and mount the drive.
+1. Finally, we need to mount the drive to the file system. Let's assume we'll have a `data` folder. Let's create the mount point folder and mount the drive.
 
     ```bash
     sudo mkdir /data && sudo mount /dev/sdc1 /data
@@ -74,11 +74,11 @@ We initialized the disk, and mounted it. If you want more details on this proces
 
 As you can see, SSH enables you to work with the Linux VM just like a local computer. You can administer this VM as you would any other Linux computer: installing software, configuring roles, adjusting features, and other everyday tasks. Let's focus on installing software for a moment.
 
-You can also install software from the internet when you are connected to the VM via SSH. Azure machines are, by default, internet connected. You can use standard commands to install popular software packages directly from standard repositories. Let's use this approach to install Apache.
+You can also install software from the internet when you're connected to the VM via SSH. Azure machines are, by default, internet connected. You can use standard commands to install popular software packages directly from standard repositories. Let's use this approach to install Apache.
 
 ### Install the Apache web server
 
-Apache is available within Ubuntu's default software repositories, so we will install it using conventional package management tools:
+Apache is available within Ubuntu's default software repositories, so we'll install it using conventional package management tools:
 
 1. Start by updating the local package index to reflect the latest upstream changes.
 

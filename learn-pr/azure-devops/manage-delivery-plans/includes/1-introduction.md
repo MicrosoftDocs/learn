@@ -1,4 +1,4 @@
-Azure DevOps can help your team scale their development processes to deliver bigger and more ambitious projects. Let's rejoin the Tailspin Toys team as they tackle a common problem organizations face as they grow. Together, we'll discover what it takes to effectively manage work schedules across multiple teams.
+Azure DevOps can help your team scale their development processes to deliver bigger, more ambitious projects. Let's rejoin the Tailspin Toys team as they tackle common problems organizations face as they grow. Together, we'll discover what it takes to manage work schedules across multiple teams effectively.
 
 You met the team at Tailspin Toys earlier in this learning path. In the [previous module](/learn/modules/choose-an-agile-approach?azure-portal=true), you watched as they began to manage their work schedule through Azure Boards. Soon, word of their early success began to spread, and now other teams are exploring how they can enjoy the same benefits.
 
@@ -6,10 +6,10 @@ As more teams adopt Azure Boards, the organization begins to see the network eff
 
 After completing this module, you'll be able to:
 
-- Describe how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work 
-- Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency
-- View dependencies within work items within a team or across teams 
-- Resolve dependencies that have issues  
+- Describe how _delivery plans_ enable multiple teams to plan, schedule, and coordinate their work.
+- Create a delivery plan and adjust a team's sprint workload to optimize delivery efficiency.
+- View dependencies within work items within a team or across teams.
+- Resolve dependencies that have issues.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ If you'd rather do only this module, go through [Introduction to Azure DevOps](/
 
 ## Meet the team
 
-You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module.
+You met the _Space Game_ web team at Tailspin Toys in previous modules. As a refresher, here's who you'll work with in this module:
 
 :::row:::
 

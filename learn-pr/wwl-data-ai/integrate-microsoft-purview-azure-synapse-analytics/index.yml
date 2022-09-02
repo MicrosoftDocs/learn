@@ -27,7 +27,7 @@ roles:
 - data-analyst
 - data-engineer
 products:
-- azure-purview
+- microsoft-purview
 - azure-synapse-analytics
 subjects:
 - data-ai

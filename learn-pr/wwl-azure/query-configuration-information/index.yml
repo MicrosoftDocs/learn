@@ -3,7 +3,7 @@ uid: learn.wwl.query-configuration-information
 metadata:
   title: Query configuration information by using CIM and WMI
   description: "This module explains the structure of the namespaces that contain classes and also how to query instances of a class. It covers how to query remote computers by using ad-hoc connections and CIM sessions."
-  ms.date: 07/22/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

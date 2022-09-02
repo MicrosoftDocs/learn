@@ -26,7 +26,7 @@ There are many benefits to using templates for your resource provisioning. These
 
 [Bicep](/azure/azure-resource-manager/bicep/overview) is an Azure Resource Manager template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language, which means that it's designed for a specific scenario or domain. Bicep is used to create Azure Resource Manager templates. 
 
-:::image type="content" source="../media/bicep-to-json.png" alt-text="A graphic that depicts the process of authoring using a Bicep template via JSON template to Azure.":::
+:::image type="content" source="../media/bicep-to-json.png" alt-text="A graphic that depicts the process of authoring using a Bicep template via J S O N template to Azure.":::
 
 
 There are many reasons to choose Bicep as the main tool set for your infrastructure as code deployments. These benefits are described in the following table.

@@ -24,7 +24,7 @@ roles:
 - data-analyst
 - data-engineer
 products:
-- azure-purview
+- microsoft-purview
 - power-bi
 subjects:
 - data-analytics

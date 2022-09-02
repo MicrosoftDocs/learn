@@ -27,7 +27,9 @@ jobs:
       reviewApiUrl: https://sandbox.contoso.com/reviews
       sqlServerAdministratorLogin: TestToyCompanyAdmin
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_TEST }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_TEST }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       reviewApiKey: ${{ secrets.REVIEW_API_KEY_TEST }}
       sqlServerAdministratorLoginPassword: ${{ secrets.SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_TEST }}
 
@@ -44,6 +46,8 @@ jobs:
       reviewApiUrl: https://api.contoso.com/reviews
       sqlServerAdministratorLogin: ToyCompanyAdmin
     secrets:
-      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS_PRODUCTION }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID_PRODUCTION }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
       reviewApiKey: ${{ secrets.REVIEW_API_KEY_PRODUCTION }}
       sqlServerAdministratorLoginPassword: ${{ secrets.SQL_SERVER_ADMINISTRATOR_LOGIN_PASSWORD_PRODUCTION }}

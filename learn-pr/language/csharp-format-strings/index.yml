@@ -3,7 +3,7 @@ uid: learn.languages.csharp-format-strings
 metadata:
   title: 'Format alphanumeric data for presentation in C#'
   description: 'Use C# to format strings with white space, special characters, padding, and alignment.  Give context to numeric data like currency, percentages, and numbers with decimals.'
-  ms.date: 1/3/2020
+  ms.date: 08/19/2022
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial

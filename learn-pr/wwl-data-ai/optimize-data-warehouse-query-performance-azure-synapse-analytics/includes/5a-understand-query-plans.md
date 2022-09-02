@@ -11,7 +11,7 @@ Often Database Engineers and Database Administrators have a need to analyze and 
 > [!Warning]
 > An attacker can use **sys.dm_pdw_exec_requests** to retrieve information about specific database objects by simply having VIEW SERVER STATE permission and by not having database-specific permission.
 >
-Azure Synapse queries. which are executed are logged, ** sys.dm_pdw_exec_requests ** contains the last 10,000 queries executed. 
+Azure Synapse queries. which are executed are logged to, **sys.dm_pdw_exec_requests** which contains the last 10,000 queries executed. 
 you can use the following query to determine the top 10 longest running queries 
 ```SQL
 SELECT TOP 10 request_id, status, total_elapsed_time

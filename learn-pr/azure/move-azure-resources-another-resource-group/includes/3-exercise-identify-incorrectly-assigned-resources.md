@@ -85,7 +85,7 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 
 1. In the top menu bar, select **Assign tags**. The **Assign tags** pane appears.
 
-1. Enter the following values for each setting.
+1. Enter the following values for each setting:
 
     ![Screenshot that shows the Assign tags pane.](../media/3-assign-tags.png)
 
@@ -107,11 +107,11 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 
 Now you'll filter your resources and find your development tagged resources.
 
-1. At the top of the Azure portal, search for and select *Tags*.
+1. At the top of the Azure portal, search for and select **Tags**.
 
     ![Screenshot that shows the search for tags.](../media/3-search-tags.png)
 
-    The **Tags** pane appears.
+    The *Tags* pane appears.
 
 1. Select the **environment:development** tag.
 

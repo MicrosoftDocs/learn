@@ -50,7 +50,7 @@ Continuous integration covers the *create* and *verify* activities. The goal is 
 With MLOps, continuous integration may include:
 
 - Refactoring exploratory code in Jupyter notebooks into Python or R scripts.
-- Linting to check for any programmatic or stylistic errors in the Python or R scripts. For example, check whether the script contains fewer than 80 lines of code.
+- Linting to check for any programmatic or stylistic errors in the Python or R scripts. For example, check whether a line in your script contains fewer than 80 characters.
 - Unit testing to check the performance of the content of the scripts. For example, check whether the model generates accurate predictions on a test dataset.
 
 > [!TIP]

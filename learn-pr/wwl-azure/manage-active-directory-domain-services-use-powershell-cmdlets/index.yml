@@ -3,7 +3,7 @@ uid: learn.wwl.manage-active-directory-domain-services-use-powershell-cmdlets
 metadata:
   title: Manage Active Directory Domain Services using PowerShell cmdlets
   description: "This module covers the cmdlets that are used to administer Active Directory Domain Services."
-  ms.date: 07/27/2022
+  ms.date: 08/04/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

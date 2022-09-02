@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-authentication-authorization-solutions.design-managed-identities
+title: Design managed identities
+metadata:
+  title: Design managed identities
+  description: "Design managed identities"
+  ms.date: 08/23/2022
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-one-design-managed-identities.md)]
