@@ -23,6 +23,7 @@ roles:
 products:
 - azure
 - azure-functions
+- dotnet
 subjects:
 - serverless-compute
 modules:
