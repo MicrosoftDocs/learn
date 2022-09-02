@@ -1,30 +1,32 @@
-Contoso Shoes needs a way to detect, diagnose, and predict issues across this architecture. You would like to build an overall health model that's measurable through a health status. You'll apply the health status to all user and system flows. The goal is to identify failure points before they can cause an outage.
+Contoso Shoes needs a way to detect, diagnose, and predict issues across this architecture. You want to build a health model that's measurable through a health status applied to user and system flows. The goal is to identify failure points before they can cause an outage.
 
 ## Current state and problem
 
-So far, you’ve added a health check API and built out multi-region capabilities in your API. However, there isn't a way of getting meaningful insight into the complex topology. The SRE team needs to  quickly identify and resolve issues.
+So far, you’ve added a health check API and built out multi-region capabilities in your API. However, there isn't a way to get meaningful insight into the complex topology. The SRE team needs to quickly identify and resolve issues.
 
 In a recent incident, an operator wasn't able to see the cascading impact of an issue resulting from the API and platform dependencies. There was significant time spent on triage, which led to longer down times. 
 
 ## Specification
 
-- Design a health model that hierarchically shows the relationship between the application components and the platform dependencies. Factor in all components in the architecture, including items that exist within the request flow including the gateway, compute, databases, storage, caches, and so on. Also include components that typically exist outside of the request flow. For example, OCI artifact stores, secret stores, configuration services, logging sinks. 
+- Design a health model that hierarchically shows the relationship between the application components and the platform dependencies. Factor in all components in the architecture. Include items that exist within the request flow including the gateway, compute, databases, storage, caches, and so on. Also include components that typically exist outside of the request flow. For example, OCI artifact stores, secret stores, configuration services, logging sinks. All Azure services must be configured to send Diagnostic data.
+
+- Add a unified data sink in the architecture for collecting all monitoring data. 
     
-- Define an overall health status that is based on aggregated historical data. Represent the status in three health states: unhealthy, degraded, and healthy.
+- Define an overall health status based on aggregated historical logs and metrics. Represent the status in one of three health states: unhealthy, degraded, and healthy.
 
-- Design a unified data sink for collecting all monitoring data.
+- Visualize the health status of all components in a hierarchy. 
 
-## Start with the theoritical exercise of health modeling
+## 1. Start health modeling
 
-Health modeling in a top-down design activity and you'll need a complete list of components used in the architecture. This includes the application components as well as the Azure services.
+This is a theoritical exercise. Health modeling in a top-down design activity in which  you'll need the complete list of components used in the architecture. This includes the application components as well as the Azure services.
 
-Place those components in a dependency graph that shows a hierarchical view of solution. The top layer has the _user flows_ that track request from the end user, to the website, and flows at the application API level. The bottom layer contains the _system flows_ from the Azure services that the application has dependencies on. Also map dependencies between the Azure resources.
+Place those components in a dependency graph that shows a hierarchical view of the solution. The top layer has the _user flows_ that track request from the end user, to the website, and flows at the application API level. The bottom layer contains the _system flows_ from the Azure services. Also map the dependencies between the Azure resources.
 
 Your graph should look something like this:
 
 ![Example of a dependency graph for a health model.](../media/health-model.png)
 
-## Define the health scores
+## 2. Define the health scores
 
 For each component, collect metrics and metric thresholds and decide the value at which the component should be considered health, degraded, and unhealthy. That decision is should be influenced by expected the performance and non-functional business requirements. 
 
@@ -48,11 +50,24 @@ For example, a system flow could be composed of Azure Event Hubs and a Storage a
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
 
-## Proceed to the data sink
+## 3. Collect monitoring data
 
-## Think about the monitoring queries
+You'll need a unified data sink, in each region, which collects logs and metrics for all application and Azure services deployed as part of the regional stamp. You will also need another sink for storing metrics emitted from global resources, such as Azure Front Door and Cosmos DB. 
 
-## Visualize the health status
+**Technology choices**
+
+- Azure Application Insights is used to collect all application monitoring data. 
+- Azure Log Analytics is used as the central store for logs and metrics from all application and infrastructure components. 
+
+
+## 4. Set up queries for monitoring data
+
+Kusto Query Language (KQL) is well-integrated with Log Analytics. Implement custom KQL queries as functions to retrieve data from Log Analytics.
+
+Store the custom queries the code respository so that they are important and applied automatically as part your CI/CD pipelines. 
+
+
+## 5. Visualize the health status
 
 The dependency graph with health scores can be visualized with a traffic light representation. Use tools such as Azure Dashboards, Monitor Workbooks, or Grafana.
 
