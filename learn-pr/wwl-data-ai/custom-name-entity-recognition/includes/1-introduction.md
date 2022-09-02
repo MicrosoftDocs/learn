@@ -6,7 +6,7 @@ In this module, you'll learn how to use the Language service to extract entities
 
 After completing this module, you'll be able to:
 
-- Understand custom named entities and how they're tagged
+- Understand custom named entities and how they're labeled
 - Build a custom named entity extraction project
-- Tag data, train, and deploy an entity extraction model
+- Label data, train, and deploy an entity extraction model
 - Submit extraction tasks from your own app
