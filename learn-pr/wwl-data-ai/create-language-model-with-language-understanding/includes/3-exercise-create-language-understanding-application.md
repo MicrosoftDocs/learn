@@ -5,4 +5,4 @@ In this exercise, you'll test the capabilities of the Conversational Language Un
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-language-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-language-lab?azure-portal=true)
