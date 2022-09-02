@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-mission-critical
 metadata:
-  title: Challenge Project - Design a mission-critical workload with network controls
+  title: Challenge Project - Design a mission-critical workload
   description: Learn how using key principles in your architecture can help you design a highly-reliable workload that strives for maximize reliability and operational effectiveness.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
