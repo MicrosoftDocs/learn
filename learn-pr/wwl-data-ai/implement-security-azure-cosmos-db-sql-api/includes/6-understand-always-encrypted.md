@@ -58,7 +58,7 @@ An Azure Active Directory identity will be needed to grant the Azure Cosmos DB S
 1. Create a new Azure Active Directory application and add a client secret as described in this [quickstart][/azure/active-directory/develop/quickstart-register-app].
 1. In the Azure Key Vault instance, under **Access policies**, select **+ Add Access Policy** and add a new policy:
     1. In **Key permissions**, select **Get**, **List**, **Unwrap Key**, **Wrap Key**, **Verify, and **Sign**.
-    1. In **Select principal**, search for the AAD application you've created before.
+    1. In **Select principal**, search for the Azure AD application you've created before.
 
 [/azure/active-directory/develop/quickstart-register-app]: https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app
 
