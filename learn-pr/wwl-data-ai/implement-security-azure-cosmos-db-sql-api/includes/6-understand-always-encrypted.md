@@ -78,7 +78,7 @@ var client = new CosmosClient("<connection-string>")
 
 ### Create a data encryption key
 
-Once we created the CMK in the Azure Key Vault, its time to create our DEK in the parent database. To create this DEK, we'll use the `CreateClientEncryptionKeyAsync` method and pass the following information:
+Once we created the CMK in the Azure Key Vault, it's time to create our DEK in the parent database. To create this DEK, we'll use the `CreateClientEncryptionKeyAsync` method and pass the following information:
 
 - A string identifier that will uniquely identify the key in the database.
 - The encryption algorithm intended to be used with the key. Only one algorithm is currently supported.
