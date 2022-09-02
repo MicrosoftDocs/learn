@@ -8,15 +8,15 @@ Your company uses Azure AD, which is an identity provider, to ensure that compan
 
 ## What will you be doing?
 
-In this module, you'll:
+Azure AD is a centralized identity provider that allows a developer to build an application that acquires a token to call a web API on behalf of itself. In the following flow, the app interacts directly with the Azure AD `/token` endpoint to obtain access:
+
+:::image type="icon" source="../media/convergence-scenarios-daemon.svg" border="false":::
+
+In this module, you:
 
 - Prepare Azure AD tenant to authenticate an app.
 - Configure a Python daemon app to request an access token by using its own identity.
 - Authorize a daemon app to call a protected web API.
-
-In the following flow, the app interacts directly with the Azure AD `/token` endpoint to obtain access:
-
-:::image type="icon" source="../media/convergence-scenarios-daemon.svg" border="false":::
 
 ## What is the main goal?
 
