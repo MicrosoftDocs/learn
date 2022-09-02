@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-mission-critical.6-exercise-4
+title: Exercise - Build global application health model
+metadata:
+  unitType: exercise
+  title: Exercise - Build global application health model
+  description: Define a health model and implementation that allows you to detect, diagnose, and predict issues across this architecture.
+  ms.date: 09/22/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise-4.md)]
+
+quiz:
+  title: Check your design
+  questions:
+  - content: 'How would your solution change if your API was a monolith made of up many unrelated endpoints with different runtime requirements?'
+    choices:
+    - content: 'Choice 1.'
+      isCorrect: true
+      explanation: 'Explanation 1.'
+    - content: 'Choice 2.'
+      isCorrect: false
+      explanation: 'Explanation 2.'
+    - content: 'Choice 3.'
+      isCorrect: false
+      explanation: 'Explanation 3.'
+  - content: 'Your API is protected by App Service Authentication, how did your health check endpoint address that?'
+    choices:
+    - content: 'Choice 1.'
+      isCorrect: false
+      explanation: 'Explanation 1.'
+    - content: 'Choice 2.'
+      isCorrect: true
+      explanation: 'Explanation 2.'
+    - content: 'Choice 3.'
+      isCorrect: false
+      explanation: 'Explanation 3.'
