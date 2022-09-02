@@ -66,7 +66,7 @@ To set up APR, in the page settings, you enable the **Page refresh** setting.
 ![Screenshot of the Page refresh setting enabled.](../media/real-time-automatic-page-refresh-enabled.png)
 
 > [!NOTE]
-> This setting is only available when the report connects to a support dataset. It won’t be available, for example, when the report connects to a dataset that represents in import model.
+> This setting is only available when the report connects to a supported dataset. It won’t be available, for example, when the report connects to a dataset that represents in import model.
 
 Once enabled, you can set the **Refresh type** property to one of two options:
 

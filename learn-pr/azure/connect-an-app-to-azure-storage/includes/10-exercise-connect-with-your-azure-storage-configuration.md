@@ -59,35 +59,35 @@ To validate that our program worked, we'll exercise another capability of the **
         {
             static void Main(string[] args)
             {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json");
+                var builder = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json");
 
-            var configuration = builder.Build();
-
-            Console.WriteLine("Hello World!");
-
-            // Get a connection string to our Azure Storage account.
-            var connectionString = configuration.GetConnectionString("StorageAccount");
-
-            // Get a reference to the container client object so you can create the "photos" container
-            string containerName = "photos";
-            BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
-            container.CreateIfNotExists();
-
-            // Uploads the image to Blob storage.  If a blb already exists with this name it will be overwritten
-            string blobName = "docs-and-friends-selfie-stick";
-            string fileName = "docs-and-friends-selfie-stick.png";
-            BlobClient blobClient = container.GetBlobClient(blobName);
-            blobClient.Upload(fileName, true);
-
-            // List out all the blobs in the container
-            var blobs = container.GetBlobs();
-            foreach (var blob in blobs)
-            {
-                Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
+                var configuration = builder.Build();
+    
+                Console.WriteLine("Hello World!");
+    
+                // Get a connection string to our Azure Storage account.
+                var connectionString = configuration.GetConnectionString("StorageAccount");
+    
+                // Get a reference to the container client object so you can create the "photos" container
+                string containerName = "photos";
+                BlobContainerClient container = new BlobContainerClient(connectionString, containerName);
+                container.CreateIfNotExists();
+    
+                // Uploads the image to Blob storage.  If a blb already exists with this name it will be overwritten
+                string blobName = "docs-and-friends-selfie-stick";
+                string fileName = "docs-and-friends-selfie-stick.png";
+                BlobClient blobClient = container.GetBlobClient(blobName);
+                blobClient.Upload(fileName, true);
+    
+                // List out all the blobs in the container
+                var blobs = container.GetBlobs();
+                foreach (var blob in blobs)
+                {
+                    Console.WriteLine($"{blob.Name} --> Created On: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Size: {blob.Properties.ContentLength}");
+                }
             }
-        }
         }
     }
     ```
@@ -109,7 +109,7 @@ To validate that our program worked, we'll exercise another capability of the **
 
 ## Congratulations
 
-You've learned the essentials of working with **Azure Storage Blobs** SDK package and Azure Blob Storage. If you want, explore further by creating another container, uploading additional images to your storage account or deleting an image. You can learn more at the [Azure Storage Blobs client library for .NET GitHub page](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.Blobs_12.7.0/sdk/storage/Azure.Storage.Blobs).
+You've learned the essentials of working with **Azure Storage Blobs** SDK package and Azure Blob Storage. If you want, explore further by creating another container, uploading more images to your storage account or deleting an image. You can learn more at the [Azure Storage Blobs client library for .NET GitHub page](https://github.com/Azure/azure-sdk-for-net/tree/Azure.Storage.Blobs_12.7.0/sdk/storage/Azure.Storage.Blobs).
 
 ::: zone-end
 
@@ -197,6 +197,6 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
 ## Congratulations
 
-You have learned the essentials of working the **Azure Storage Blob Client Library for JavaScript** and Azure Blob Storage. If you want, explore further by creating another container, uploading more images to your storage account or deleting an image. The [Azure Storage Blob Client Library for JavaScript npm.js page](https://www.npmjs.com/package/@azure/storage-blob) gives many examples of how to use the library.
+You've learned the essentials of working the **Azure Storage Blob Client Library for JavaScript** and Azure Blob Storage. If you want, explore further by creating another container, uploading more images to your storage account or deleting an image. The [Azure Storage Blob Client Library for JavaScript npm.js page](https://www.npmjs.com/package/@azure/storage-blob) gives many examples of how to use the library.
 
 ::: zone-end
