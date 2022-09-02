@@ -125,26 +125,24 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
     "Lastname": "BBB",
     ```
 
-1. Right-click anywhere in the document pane, and select **Update to Cloud**.
+1. On the **File** menu, select **Save**. 
 
-    :::image type="content" source="../media/3-save-changes.png" alt-text="Screenshot of Visual Studio Code showing the edited document. The student has selected the Update to Cloud command to save the changes back to Azure." loc-scope="vs-code":::
+1. When prompted to update the entity to the cloud, select **Always upload**.
 
-    The document will be written back to Azure. The Visual Studio Code log window will appear. The final message in the log should be similar to the following example.
+    :::image type="content" source="../media/3-always-upload-message.png" alt-text="Screenshot of Visual Studio Code showing the edited document. The student has selected the Update to Cloud command to save the changes back to Azure." loc-scope="vs-code":::
 
-    ```text
-    10:51:56: Updated entity "csschool (SQL)/SchoolDB/StudentCourseGrades/Documents/S101"
-    ```
+   The document will be updated in the cloud.
 
 1. In the **Documents** list, select the **S102** document.
 
 1. Add the following fields to the document after the **id** field.
 
-1. Right-click anywhere in the document pane, and select **Update to Cloud**.
-
     ```JSON
     "Forename": "CCC",
     "Lastname": "DDD",
     ```
+
+1. On the **File** menu, select **Save**.
 
 1. In the **Documents** list, select the **S101** document again.
 
@@ -165,9 +163,9 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     This is an array field that contains the grades for each course that the student has taken. Each pair of **Course**/**Grade** fields is a subdocument. Using an array makes it possible to record the details of a variable number of courses for each student.
 
-1. Save the updated document to the cloud.
+1. Save the updated document.
 
-1. Edit the **S102** document, add the following fields, and save the updated document to the cloud.
+1. Edit the **S102** document, add the following fields, and save the updated document.
 
     ```JSON
     "CourseGrades": [
