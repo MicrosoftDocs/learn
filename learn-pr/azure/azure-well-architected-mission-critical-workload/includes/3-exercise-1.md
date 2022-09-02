@@ -61,14 +61,19 @@ The health score can be shown in the dependency graph in a traffic light represe
 
 ## Check your work
 
-| | Task |
-| ----- | ----- | 
-|:black_square_button:|Did you build a health check endpoint in the API that was compatible with Azure App service’s Health check feature?|
-|:black_square_button:|Did you include checks for runtime dependencies? And what did you use as a proxy/test for availability? </br>	Cosmos DB read/write</br>Third party API
-|:black_square_button:|Did you include checks for non-request-flow dependencies?</br>Those services are Azure Key Vault and Azure Container Registry </br>If those services were experiencing an outage, that might impact the ability to scale out or survive an app service instance restart, but wouldn’t necessarily impact API requests.
-|:black_square_button:|If checking on health was expensive for one of the components, did you cache any of the results? How long?
-|:black_square_button:|How would your solution change if your API was a monolith made of up many desperate endpoints with different runtime requirements?
-|:black_square_button:|Was your model a dedicated health service that is independently deployable or just an extension to the already-deployed code?
-|:black_square_button:|What did you log in your health checks?  Did you note successes in addition to failures?
-|:black_square_button:|Are your health check logs subject to Azure Application Insights log sampling?
-|:black_square_button:|Your API is protected by App Service Authentication, how did your health check endpoint address that?
+To validate that you have completed the work to the requirements, test your app behavior out by following these steps.
+- The health check endpoint in the API is compatible with Azure App service’s Health check feature
+- Include checks for runtime dependencies. And what did you use as a proxy/test 
+    - Cosmos DB read/write
+    - Third party API  
+- Include checks for non-request-flow dependencies. Those services are Azure Key Vault and Azure Container Registry. If those services were experiencing an outage, that might impact the ability to scale out or survive an app service instance restart, but wouldn’t necessarily impact API requests.
+- Cache the results of health checking to reduce performance overhead. 
+- Build the dedicated health service as an extension to the already-deployed code.
+- Log events in your health checks. Note the successes in addition to failures.
+- Apply Azure Application Insights log sampling to the health check logs.
+
+
+
+- How would your solution change if your API was a monolith made of up many unrelated endpoints with different runtime requirements?
+
+- Your API is protected by App Service Authentication, how did your health check endpoint address that?
