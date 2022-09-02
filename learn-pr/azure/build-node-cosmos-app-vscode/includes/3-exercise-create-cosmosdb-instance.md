@@ -39,11 +39,11 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
 
-1. In the Azure Resources pane, select **Select subscriptions**.
+1. In the Azure Resources pane, select **Select subscriptions...**.
 
 1. Select **Concierge Subscription** and then **OK**.
 
-1. In the Azure Resources pane, expand *Concierge Subscription*.
+1. In the Azure Resources pane, expand **Concierge Subscription**.
 
 1. Right-click **Azure CosmosDB** and then select **Create Server**.
 
@@ -64,7 +64,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     Wait while the Azure Databases account is created. This will take a few minutes.
 
-1. When the account has been created, in the Azure Resources pane, expand *Concierge Subscription* and *Azure CosmosDB*. Verify that the new Cosmos DB account appears.
+1. When the account has been created, in the Azure Resources pane, expand **Concierge Subscription** and **Azure CosmosDB**. Verify that the new Cosmos DB account appears.
 
     :::image type="content" source="../media/3-new-comsosdb-account.png" alt-text="Screenshot of the Azure Resources extension pane in Visual Studio Code. The new Azure Databases extension account is listed under the user's Azure account." loc-scope="vs-code":::
 
@@ -78,7 +78,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the *Enter an id for your Collection* box, enter **StudentCourseGrades**, and then press <kbd>Enter</kbd>.
 
-    This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by student ID.
+    This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student.
 
 1. Leave the *Enter the partition key for the collection, or leave blank for fixed size* box blank, and press <kbd>Enter</kbd>.
 
@@ -118,7 +118,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the JSON document that appears, move to the end of the **id** line, and press <kbd>Enter</kbd>.
 
-1. Add the following fields to the document. Don't forget to add a comma at the end of the first line, and remove it from the last line.
+1. Add the following fields to the document.
 
     ```JSON
     "Forename": "AAA",
