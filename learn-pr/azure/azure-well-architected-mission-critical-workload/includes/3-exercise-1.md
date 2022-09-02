@@ -13,12 +13,23 @@ An operator isn't able to see the cascading impact of an issue resulting from th
 
 ## Specification
 
-Introduce a health check API in your application. This new component must report the health status of the API and it's dependencies so that the application can perform its duties as expected. The health check API must be called twice a minute, by multiple sources, and should not degrade the performance of the API.
-Azure App Service should be able to use that data to make informed decisions about which App Service instances to include in the built-in Azure App Service load balancer. You also want the health check data available to you in Azure Monitor for future needs.
+**Application exercise**
 
-Design a health model that hierarchically shows the relationship between the application components and the platform dependencies. 
+- Introduce a health check API in your application. 
 
-Define an overall health status that is based on aggregated historical data. Represent the status in three health states: unhealthy, degraded, and healthy.
+    - This new component must report the health status of the API and it's dependencies so that the application can perform its duties as expected. 
+    
+    - The health check API must be called twice a minute, by multiple sources, and should not degrade the performance of the API.
+
+    - Azure App Service should be able to use that data to make informed decisions about which App Service instances to include in the built-in Azure App Service load balancer. 
+
+    - Make health check data available in Azure Monitor for future needs.
+
+**Theory exercise**
+
+- Design a health model that hierarchically shows the relationship between the application components and the platform dependencies. 
+    
+    Define an overall health status that is based on aggregated historical data. Represent the status in three health states: unhealthy, degraded, and healthy.
 
 ## How to proceed with the health check API
 
@@ -72,8 +83,3 @@ To validate that you have completed the work to the requirements, test your app 
 - Log events in your health checks. Note the successes in addition to failures.
 - Apply Azure Application Insights log sampling to the health check logs.
 
-
-
-- How would your solution change if your API was a monolith made of up many unrelated endpoints with different runtime requirements?
-
-- Your API is protected by App Service Authentication, how did your health check endpoint address that?
