@@ -5,4 +5,4 @@ In this exercise, you'll test the capabilities of the Language service. You'll u
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-text-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-text-lab?azure-portal=true)
