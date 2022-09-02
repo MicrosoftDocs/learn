@@ -1,12 +1,12 @@
 Building applications for the web is a complex effort. The ever-changing collection of JavaScript frameworks can be challenging for developers to follow and integrate with their favorite frameworks. The Blazor framework from the .NET team provides a concise, component-driven user-interface framework. Blazor allows you to build applications with C# and .NET. With Blazor, your applications can share business objects and services with the cloud-based services you already manage.
 
-![Sample Blazor Application Architecture](../media/intro-architecture.jpg)
+![Diagram showing sample Blazor Application Architecture.](../media/intro-architecture.jpg)
 
 ## Example scenario
 
 You're preparing to launch a new website for your pizza shop and want customers to easily see the collection of fresh pizza specials available to order. Customers should have a clear path to place their order and track their pizza delivery.
 
-![Pizza Shop Website built with Blazor](../media/pizza-shop.png)
+![Screenshot of pizza shop website built with Blazor.](../media/pizza-shop.png)
 
 ## What will we be doing?
 
