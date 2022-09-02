@@ -6,23 +6,47 @@ In this exercise we're going to create a term in the business glossary, update o
 
 1. Open the data catalog and select **Manage glossary** on the home page menu. Or in the left menu when you're in the data catalog, select **Glossary**
 
+    :::image type="content" source="../media/business-glossary-exercise/open-business-glossary-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/open-business-glossary.png":::
+
 1. On the glossary terms page select **+ New term**, and a page will open showing available templates.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-new-term.png" alt-text="<alt text>":::
 
 1. We'll talk about creating term templates later in this exercise, for now, let's choose the **System default** template and select **Continue**.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-default-term-template.png" alt-text="<alt text>":::
+
 1. Give your new term a name, which must be unique in the catalog, and is case sensitive.
+
+    :::image type="content" source="../media/business-glossary-exercise/give-term-a-name.png" alt-text="<alt text>":::
 
 1. Add a definition. You can use rich text in the definition to include hyperlinks or even tables.
 
-1. Set the status for the term.
+    :::image type="content" source="../media/business-glossary-exercise/add-a-definition.png" alt-text="<alt text>":::
+
+1. Set the status for the term. Set to **Draft** if you'd like to review the term before implementing it. Set the term to **Approved** if it is ready to implement.
+
+    :::image type="content" source="../media/business-glossary-exercise/set-status.png" alt-text="<alt text>":::
 
 1. Add resources, an approved Acronym, and a parent term if applicable.
 
+    :::image type="content" source="../media/business-glossary-exercise/add-parent-acronym-resources.png" alt-text="<alt text>":::
+
 1. Open the **Related** tab, and apply related terms and synonyms if applicable.
+
+    :::image type="content" source="../media/business-glossary-exercise/related.png" alt-text="<alt text>":::
 
 1. Open the **Contacts** tab to add experts and stewards to your term, if applicable.
 
+    :::image type="content" source="../media/business-glossary-exercise/contacts.png" alt-text="<alt text>":::
+
 1. Select **Create** to create your term.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-create.png" alt-text="<alt text>":::
+
+1. Now we can see our new term listed in the product glossary.
+
+    :::image type="content" source="../media/business-glossary-exercise/new-completed-term.png" alt-text="<alt text>":::
 
 ### Bulk
 
