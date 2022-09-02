@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-well-architected-mission-critical.6-exercise-4
+uid: learn.azure-well-architected-mission-critical.6-exercise-3
 title: Exercise - Build global application health model
 metadata:
   unitType: exercise
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 30
 content: |
-  [!include[](includes/6-exercise-4.md)]
+  [!include[](includes/6-exercise-3.md)]
 
 quiz:
   title: Check your design
