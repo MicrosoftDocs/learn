@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-cosmos-db-sql-api-sdk
 metadata:
   title: Configure the Azure Cosmos DB SQL API SDK
   description: "Learn how to configure the Azure Cosmos DB SQL API SDK in various ways including how to integrate with the emulator, implement parallelism, and create a custom logger."
-  ms.date: 08/18/2022
+  ms.date: 08/31/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial

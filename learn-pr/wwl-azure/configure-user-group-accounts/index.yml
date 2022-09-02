@@ -2,16 +2,16 @@
 uid: learn.wwl.configure-user-group-accounts
 metadata:
   title: Configure user and group accounts
-  description: "You will learn how to configure user and group accounts."
-  ms.date: 05/24/2022
+  description: "Learn how to configure user and group accounts."
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure user and group accounts
-summary: You will learn how to configure user and group accounts.
+summary: Learn how to configure user and group accounts.
 abstract: |
-  After completing this module, you will be able to:
+  In this module, you learn how to:
   - Configure users accounts and user account properties.
   - Create new user accounts.
   - Import bulk user accounts with a template.

@@ -25,7 +25,10 @@ The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Ad
 Manage identities and governance in Azure (15-20%)
 
 - Manage Azure Active Directory objects
-   - Configure Self-Service Password Reset
+
+   - Configure self-service password reset
+
+   - Configure Azure AD join
 
 ## Prerequisites
 
