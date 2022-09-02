@@ -5,4 +5,4 @@ In this exercise, you will test the capabilities of the Face service. You'll use
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-face-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-face-lab?azure-portal=true)
