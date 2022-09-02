@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-dns-private-resolver
+metadata:
+  moduleType: introduction        
+  title: Intro to Azure DNS Private Resolver
+  description: "Introduction to Azure DNS Private Resolver"
+  ms.date: 4/26/2022  
+  author: ricmmartins 
+  ms.author: ricmart  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure       
+title: Intro to Azure DNS Private Resolver
+summary: "This module introduces you to Azure DNS Private Resolver and describes its characteristics, capabilities, and use cases."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether Azure DNS Private Resolver is appropriate to address your naming resolution needs from on-premises to Azure.
+    - Describe how the features of Azure DNS Private Resolver work.
+prerequisites: |
+  - Knowledge of Azure Networking
+  - Knowledge of DNS
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - administrator
+  - solution-architect
+products:
+  - azure
+  - azure-virtual-network
+  - azure-dns
+units:
+- learn.intro-to-azure-dns-private-resolver.introduction
+- learn.intro-to-azure-dns-private-resolver.what-is-azure-dns-private-resolver
+- learn.intro-to-azure-dns-private-resolver.how-azure-dns-private-resolver-works
+- learn.intro-to-azure-dns-private-resolver.when-to-use-azure-dns-private-resolver
+- learn.intro-to-azure-dns-private-resolver.knowledge-check
+- learn.intro-to-azure-dns-private-resolver.summary
+badge:
+  uid: learn.intro-to-azure-dns-private-resolver.badge
