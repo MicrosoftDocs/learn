@@ -14,8 +14,8 @@ Follow these steps to register your application on the Azure portal.
 1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
 1. Search for and select **Azure Active Directory**.
-1. Under **Manage**, select **App registrations** 
-1. On the **App registrations**, select **New registration**.
+1. Under **Manage**, select **App registrations**.
+1. On the **App registrations** page, select **New registration**.
 1. Enter or select the following information:
 
    | **Field**         | **Value**     |

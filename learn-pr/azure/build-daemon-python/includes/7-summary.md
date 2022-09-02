@@ -1,4 +1,4 @@
-Your company needed to build an application that performs a batch job to generate a report that lists the users who have an upcoming monthly payment. You built a Python daemon app that represents a confidential client app that calls Microsoft Graph as itself to read users' data from a protected web API.
+Your company needed to build an application that runs as a background process to generate a report that lists the users who have an upcoming monthly payment. You built a Python daemon app that represents a confidential client app that calls Microsoft Graph as itself to read users' data from a protected web API.
 
 The Microsoft identity platform lets you register a Python daemon app to perform identity and access management (IAM). The Azure portal displays the app registration's **Overview** pane. You see, the **Application (client) ID**, also called the client ID, uniquely identifies your application within the Microsoft identity platform.
 

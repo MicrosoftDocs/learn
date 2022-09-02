@@ -1,4 +1,4 @@
-Your application will acquire a token to call a protected web API on behalf of itself (not on behalf of a user). The application uses the standard OAuth 2.0 client credentials flow.
+You configured a daemon application with Azure Active Directory (Azure AD). In the financial company scenario, the task is to build an application that acquires a token to call a protected web API on behalf of itself (not on behalf of a user).
 
 In this unit, you'll learn about the confidential client application, OAuth 2.0 client credentials flow, and how to create a confidential client instance.
 
