@@ -5,4 +5,4 @@ In this exercise, you will test the capabilities of the Form Recognizer service.
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-form-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-form-lab?azure-portal=true)
