@@ -5,4 +5,4 @@ In this exercise, you'll use a simple command-line application to see the Comput
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-computer-vision-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-computer-vision-lab?azure-portal=true)
