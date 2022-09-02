@@ -5,4 +5,4 @@ In this exercise, you will test the capabilities of the Custom Vision service wi
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-image-classification-lab)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/ai900-image-classification-lab?azure-portal=true)
