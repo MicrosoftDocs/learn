@@ -15,30 +15,35 @@ content: |
   [!include[](includes/5-exercise-3.md)]
 
 quiz:
-  title: Check your design
+  title: Knowledge check
   questions:
   - content: 'What needs to be included in your overall score that represents the overall health status of the application?'
     choices:
-    - content: 'Logs and metrics from Azure services.'
+    - content: 'Logs and metrics from the API code, Azure services, and the end-to-end solution.'
       isCorrect: true
-      explanation: 'Health of Azure services that participate in a request flow can have an impact on the application. Compute, databases, storage are some of the key components that must be considered.'
-    - content: 'Logs and metrics from services that are used b Azure services.'
+      explanation: 'Health of Azure services and platform dependencies that participate in a request flow can have an impact on the application. Compute, databases, storage are some of the key components that must be considered.'
+    - content: 'Logs and metrics from services that are used b Azure services. Solution level data points will help you understand the end-to-end flows, such as end-to-end processing time of a request.'
       isCorrect: false
       explanation: 'An Azure service will show degraded or unhealthy if any of its underlying services have issues.'
-    - content: 'Telemetry data from API code.'
-      isCorrect: true
-      explanation: 'Data points from application code, such as the exception count, is an important in troubleshooting cascading issues.'
-    - content: 'Metrics for the entire solution.'
-      isCorrect: true
-      explanation: 'Solution level data points will help you understand the end-to-end flows, such as end-to-end processing time of a request.'
+    - content: 'Telemetry data from dashboards that visualize monitoring data.'
+      isCorrect: false
+      explanation: 'Dashboards are used to visualize monitoring data and are decoupled from application components include data sinks.'
   - content: 'Which of these strategies will help the operator troubleshoot issues quickly?'
     choices:
-    - content: 'Visualizing the health status in dashboards.'
+    - content: 'Setting alerts on threshold values in dashboards.'
       isCorrect: true
-      explanation: 'The operator can identify an unhealthy component quickly by checking the health status.'
+      explanation: 'Dashboards should be used with alerts to raise immediate attention for issues.'
     - content: 'Have the operator build out a comprehensive health model of the system.'
       isCorrect: false
       explanation: 'Health modeling is an exercise that should be conducted early in the design process by the solution architect.'
-    - content: 'Set up alerts to notifiy the operator.'
+  - content: 'Which of these Azure services can be used as a unified data sink and retain data for a specified period?'
+    choices:
+    - content: 'Azure Application Insights'
+      isCorrect: false
+      explanation: 'Azure Application Insights collects logs from the application code.'
+    - content: 'Azure Monitor'
+      isCorrect: false
+      explanation: 'Azure Monitor collects data sent by Application insights and platform metrics for the Azure services.'
+    - content: 'Azure Log Analytics'
       isCorrect: true
-      explanation: 'Dashboards should be used with alerts to raise immediate attention for issues.'
+      explanation: 'Azure Log Analytics workspaces is used as the central store for logs and metrics from all application and infrastructure components.'
