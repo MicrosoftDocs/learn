@@ -17,25 +17,28 @@ content: |
 quiz:
   title: Check your design
   questions:
-  - content: 'How would your solution change if your API was a monolith made of up many unrelated endpoints with different runtime requirements?'
+  - content: 'What needs to be included in your overall score that represents the overall health status of the application?'
     choices:
-    - content: 'Choice 1.'
+    - content: 'Logs and metrics from Azure services.'
       isCorrect: true
-      explanation: 'Explanation 1.'
-    - content: 'Choice 2.'
+      explanation: 'Health of Azure services that participate in a request flow can have an impact on the application. Compute, databases, storage are some of the key components that must be considered.'
+    - content: 'Logs and metrics from services that are used b Azure services.'
       isCorrect: false
-      explanation: 'Explanation 2.'
-    - content: 'Choice 3.'
-      isCorrect: false
-      explanation: 'Explanation 3.'
-  - content: 'Your API is protected by App Service Authentication, how did your health check endpoint address that?'
+      explanation: 'An Azure service will show degraded or unhealthy if any of its underlying services have issues.'
+    - content: 'Telemetry data from API code.'
+      isCorrect: true
+      explanation: 'Data points from application code, such as the exception count, is an important in troubleshooting cascading issues.'
+    - content: 'Metrics for the entire solution.'
+      isCorrect: true
+      explanation: 'Solution level data points will help you understand the end-to-end flows, such as end-to-end processing time of a request.'
+  - content: 'Which of these strategies will help the operator troubleshoot issues quickly?'
     choices:
-    - content: 'Choice 1.'
-      isCorrect: false
-      explanation: 'Explanation 1.'
-    - content: 'Choice 2.'
+    - content: 'Visualizing the health status in dashboards.'
       isCorrect: true
-      explanation: 'Explanation 2.'
-    - content: 'Choice 3.'
+      explanation: 'The operator can identify an unhealthy component quickly by checking the health status.'
+    - content: 'Have the operator build out a comprehensive health model of the system.'
       isCorrect: false
-      explanation: 'Explanation 3.'
+      explanation: 'Health modeling is an exercise that should be conducted early in the design process by the solution architect.'
+    - content: 'Set up alerts to notifiy the operator.'
+      isCorrect: true
+      explanation: 'Dashboards should be used with alerts to raise immediate attention for issues.'

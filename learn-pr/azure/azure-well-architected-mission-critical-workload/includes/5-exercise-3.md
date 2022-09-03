@@ -2,7 +2,7 @@ Contoso Shoes needs a way to detect, diagnose, and predict issues across this ar
 
 ## Current state and problem
 
-So far, you’ve added a health check API and built out multi-region capabilities in your API. However, there isn't a way to get insight into the complex topology that inclues user and system flows. This gap is needs to be filled so that the SRE team can quickly identify and resolve issues.
+So far, you’ve added a health check API and built out multi-region capabilities in your architecture. However, there isn't a way to get insight into the complex topology that includes user and system flows. This gap is needs to be filled so that the SRE team can quickly identify and resolve issues.
 
 In a recent incident, the team wasn't able to see the cascading impact of an issue resulting from an API component and affecting its platform dependencies. There was significant time spent in troubleshooting because the unhealthy component couldn't be spotted right away. Ultimately, this gap led to longer down times causing financial loss to the company. 
 
@@ -14,7 +14,7 @@ In a recent incident, the team wasn't able to see the cascading impact of an iss
     
 - Define an overall health status based on aggregated historical logs and metrics. Represent the status in one of three health states: unhealthy, degraded, and healthy.
 
-- Visualize the health status of all components in a hierarchy that respresents all flows. 
+- Visualize the health status of all components in a hierarchy that represents all flows. 
 
 ### 1&ndash;Start health modeling
 
@@ -40,9 +40,9 @@ Here's an example of service metrics for Azure Event Hubs.
 
 |Azure Event Hubs|Health status|
 |---|---|
-|Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|<span style="color: green;">**Healthy**</span>
-|Queue depth < 50</br> Processing time < 200ms</br>Time in queue <1000 ms|<span style="color: yellow;">**Degraded**</span>
-|Queue depth < 50</br> Processing time > 200ms</br>Time in queue > 1000 ms|<span style="color: red;">**Unhealthy**</span>
+|Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|![Healthy state](../media/healthy.svg)
+|Queue depth < 50</br> Processing time < 200ms</br>Time in queue <1000 ms|![Degraded](../media/degraded.svg)
+|Queue depth < 50</br> Processing time > 200ms</br>Time in queue > 1000 ms|![Unhealthy](../media/unhealthy.svg)
 
 ### 3&ndash;Define an overall health status
 
@@ -52,9 +52,9 @@ For example, a system flow could be composed of an application component, Azure 
 
 |API|Azure Event Hubs|Azure Storage|Health status|
 |---|---|---|---|
-|Maximum latency < 30ms |Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Response Time < 100ms</br>Request_Failure_Count < 2| <span style="color: green;">**Healthy**</span>
-|Maximum latency < 30ms|Queue depth < 50</br> Processing time < 200ms</br><span style="color: yellow;">Time in queue <1000 ms</span>|<span style="color: yellow;">Response Time < 200ms</span></br>Request_Failure_Count < 5|<span style="color: yellow;">**Degraded**</span>
-|<span style="color: red;">Maximum latency > 30ms</span>|Queue depth < 50</br> <span style="color: red;">Processing time > 200ms</span></br><span style="color: red;">Time in queue > 1000 ms</span></br>|Response Time > 200ms</br><span style="color: red;">Request_Failure_Count > 5</span>|<span style="color: red;">**Unhealthy**</span>
+|Maximum latency < 30ms |Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Response Time < 100ms</br>Request_Failure_Count < 2| ![Healthy state](../media/healthy.svg)
+|Maximum latency < 30ms|Queue depth < 50</br> Processing time < 200ms</br>**Time in queue <1000 ms**|**Response Time < 200ms**</br>Request_Failure_Count < 5|![Degraded](../media/degraded.svg)
+|**Maximum latency > 30ms**|Queue depth < 50</br> **Processing time > 200ms**</br>**Time in queue > 1000 ms**</br>|Response Time > 200ms</br>**Request_Failure_Count > 5**|![Unhealthy](../media/unhealthy.svg)
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
 
@@ -71,33 +71,31 @@ You'll need a unified data sink, in each region, which collects logs and metrics
 - **Azure Log Analytics** is used as the central store for logs and metrics from all application and infrastructure components. 
 
 
-## 5&ndash;Set up queries for monitoring data
+### 5&ndash;Set up queries for monitoring data
 
 Kusto Query Language (KQL) is well-integrated with Log Analytics. Implement custom KQL queries as functions to retrieve data from Log Analytics.
 
-Store custom queries in the code repository so that they are imported and applied automatically as part of your continuous Integration/continuous Delivery (CI/CD) pipelines. 
+Store custom queries in the code repository so that they're imported and applied automatically as part of your continuous Integration/continuous Delivery (CI/CD) pipelines. 
 
 
-## 6&ndash;Visualize the health status
+### 6&ndash;Visualize the health status
 
 The dependency graph with health scores can be visualized with a traffic light representation. Use tools such as Azure Dashboards, Monitor Workbooks, or Grafana. Here's an example:
 
 ![Example of health score shown in the dependency graph.](../media/mission-critical-example-fault-states.png)
 
 ## 7&ndash;Set up alerts
-Dashboards should be used with alerts to raise immediate attention for issues.
+Dashboards should be used with alerts to raise immediate attention for issues. You can use 
 
-If the health state of a component changes to <span style="color: yellow;">**Degraded**</span> or <span style="color: red;">**Unhealthy**</span>, the operator should be immediately notified. Set the alert to the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
+If the health state of a component changes to **Degraded** or **Unhealthy**, the operator should be immediately notified. Set the alert to the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
 
 
 ## Check your work
 
-- Do you have a unified data sink for correlated analysis?
-- Did this include both application logs and infrastructure/service logs?
-- Did you include any visualizations, such as dashboards?
-- Did the solution include any threshold or AI-based alerting?
+- Do you have a unified data sink for correlated analysis.
+- Have you included application logs, platform metrics, and solution data points. 
+- Have you set up dashboards to visualize the health status of all components.
+- Did you consider failure points at each service (or part of that service) that could cause an outage or prevent you from scaling, deploying, monitoring.
+- Did  you consider Query Packs for capturing key queries that would  triage of issues faster.
 - Was your health check API helpful in this model? Did you need to alter that API to better suit the health model?
-- Did you consider what a failure at each service (or part of that service) would have on your solution? Would that outage cause a client to consider the service to be down? Would that outage prevent you from scaling, deploying, monitoring?
-- Predicting issues ahead of time that might arise across your architecture allows your SRE team engage failures quicker. Did you consider creating any Query Packs to capture key queries that would assist in fast triage of issues.
-
 
