@@ -2,9 +2,9 @@ Contoso Shoes needs a way to detect, diagnose, and predict issues across this ar
 
 ## Current state and problem
 
-So far, you’ve added a health check API and built out multi-region capabilities in your architecture. However, there isn't a way to get insight into the complex topology that includes user and system flows. This gap is needs to be filled so that the SRE team can quickly identify and resolve issues.
+So far, you’ve added a health check API and built out multi-region capabilities in your architecture. However, there isn't a way to get insight into the complex topology that includes user and system flows. This gap needs to be filled so that the SRE team can quickly identify and resolve issues.
 
-In a recent incident, the team wasn't able to see the cascading impact of an issue resulting from an API component and affecting its platform dependencies. There was significant time spent in troubleshooting because the unhealthy component couldn't be spotted right away. Ultimately, this gap led to longer down times causing financial loss to the company. 
+In a recent incident, the team wasn't able to see the cascading impact of an issue resulting from an API component affecting its platform dependencies. There was significant time spent in troubleshooting because the unhealthy component couldn't be spotted right away. Ultimately, this inefficiency led to longer down times causing financial loss to the company. 
 
 ## Specification
 
