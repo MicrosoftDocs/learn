@@ -48,7 +48,7 @@ Here's an example of service metrics for Azure Event Hubs.
 
 For each user and system flow, define an overall status. You'll need to aggregate the health status of individual components that participate in that flow. 
 
-For example, a system flow could be composed of an application component, Azure Event Hubs, a Storage account. 
+Suppose a system flow is composed of an application component, Azure Event Hubs, a Storage account. 
 
 |API|Azure Event Hubs|Azure Storage|Health status|
 |---|---|---|---|
@@ -94,12 +94,14 @@ If the health state of a component changes to **Degraded** or **Unhealthy**, the
 
 Watch this video for a demo on monitoring and health modeling.
 
+---
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE55Nd9]
 
 - Do you have a unified data sink for correlated analysis.
-- Have you included application logs, platform metrics, and solution data points. 
-- Have you set up dashboards to visualize the health status of all components.
-- Did you consider failure points at each service (or part of that service) that could cause an outage or prevent you from scaling, deploying, monitoring.
-- Did  you consider Query Packs for capturing key queries that would  triage of issues faster.
+- Have you included application logs, platform metrics, and solution data points?
+- Have you set up dashboards to visualize the health status of all components?
+- Did you consider failure points at each service (or part of that service) that could cause an outage or prevent you from scaling, deploying, monitoring?
+- Did  you consider Query Packs for capturing key queries that would  triage of issues faster?
 - Was your health check API helpful in this model? Did you need to alter that API to better suit the health model?
 
