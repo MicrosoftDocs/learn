@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-manage-device-with-iotcentral.1-create-azure-iot-central-application
-title: Create an Azure IoT Central application
+title: Exercise - Create an Azure IoT Central application
 metadata:
-  title: Create an Azure IoT Central application
+  title: Exercise - Create an Azure IoT Central application
   description: Create an Azure IoT Central application
   ms.date: 09/24/2018
   author: asergaz
@@ -10,5 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
+azureSandbox: true
 content: |
   [!include[](includes/1-create-azure-iot-central-application.md)]

@@ -190,15 +190,17 @@ A device capability model is the part of the device template that defines the te
 
 To create a device template, you can either build it from scratch in the IoT Central UI, or get started by importing a device capability model. You already have a device capability model for the coffee machine defined in a JSON file, so you'll use that.
 
-1. Navigate to the **Device templates** page of your Azure IoT Central application in Azure IoT Central and select **+ New**.
+1. Browse to the URL for your IoT application that you created in the previous exercise, such as https://coffee-maker-1234.azureiotcentral.com.
+
+1. Select the icon for **Device templates** on the home page of your Azure IoT Central application in Azure IoT Central, and then select **+ New**.
 
 1. On the **Select template type** page, select the **IoT device** tile, and then select **Next: Customize**.
 
-1. On the **Customize** page, enter _Connected Coffee Machine_ as the device template name. Then select **Next: Review**. Then select **Create**.
+1. On the **Customize** page, enter _Connected Coffee Machine_ as the device template name, then select **Next: Review**, and then select **Create**.
 
-1. Enter _Connected Coffee Machine_ as the device template name, and then press **Enter**.
+1. On the **Create a model** page, select the **Import a model** tile.
 
-1. On the **Create a model** page, select the **Import a model** tile. Then browse to and select the **CoffeeMaker.json** file you created previously, and select **Open**.
+1. Browse to the **CoffeeMaker.json** file you created previously, and select **Open**.
 
 IoT Central displays the **Connected Coffee Maker** capability model that defines the telemetry, properties, and commands that the device supports.
 
@@ -210,7 +212,7 @@ To add the cloud properties that store the ideal water temperature range for cof
 
 1. Navigate to the **Connected Coffee Machine** device template you created, and select  **Connected Coffee Maker** capability model.
 
-1. Add two cloud properties to the device template using the information in the following table:
+1. Add two cloud properties to the device template using the information in the following table; you might need to select the down icon to expand some of these values:
 
     | Display name | Name |Capability type | Semantic type | Schema | Min value | Max value | Decimal places | Unit|
     | ------------ | ---- | ------------- | ------------- | ------ | --------- | --------- | -------------- | ---- |
@@ -221,7 +223,6 @@ To add the cloud properties that store the ideal water temperature range for cof
 
     ![Connected Coffee Machine cloud properties.](../media/2-cloud-properties.png)
 
-
 ## Add views to your template
 
 To create a view that lets you visualize the telemetry from your coffee machine:
@@ -230,15 +231,17 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
 1. Add a new **Visualizing the device** view called _Telemetry_.
 
-1. Select **Start with devices**. Add a 2x1 tile called **Cup Detected** to show the last known value of the **Cup Detected** telemetry value.
+1. Select **Start with devices** and add the following tiles:
 
-1. Add a 2x1 tile called **Brewing** to show the last known value of the **Brewing** telemetry value.
+    - Add a 2x1 tile called **Cup Detected** to show the last known value of the **Cup Detected** telemetry value.
 
-1. Add a 3x3 tile called **Telemetry** that uses a line chart to plot the average values of **Water Temperature** and **Air Humidity** for the past 30 minutes.
+    - Add a 2x1 tile called **Brewing** to show the last known value of the **Brewing** telemetry value.
 
-1. Add a 1x1 tile called **Water Temperature (Min)** that displays the minimum water temperature over the past 12 hours as a KPI.
+    - Add a 3x3 tile called **Telemetry** that uses a line chart to plot the average values of **Water Temperature** and **Air Humidity** for the past 30 minutes.
 
-1. Add a 1x1 tile called **Air Humidity (avg)** that displays the maximum air humidity over the past 12 hours as a KPI.
+    - Add a 1x1 tile called **Water Temperature (Min)** that displays the minimum water temperature over the past 12 hours as a KPI.
+
+    - Add a 1x1 tile called **Air Humidity (Max)** that displays the maximum air humidity over the past 12 hours as a KPI.
 
 1. Save your changes.
 
@@ -250,7 +253,7 @@ To create a view that lets you manage the properties of your coffee machine:
 
 1. Add a new **Editing device and cloud data** form called _Properties_.
 
-1. Add a section that includes both the **Optimal Temperature** and **Device Warranty Expired** properties and the **Coffee Maker Min Temperature** and **Coffee Maker Max Temperature** cloud properties.
+1. Add a section that includes both the **Optimal Temperature** and **Device Warranty Expired** properties and the **Coffee Maker Min Temperature** and **Coffee Maker Max Temperature** cloud properties, and then select **Add section**.
 
 1. Save your changes.
 

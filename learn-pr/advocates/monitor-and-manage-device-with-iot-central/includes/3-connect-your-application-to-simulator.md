@@ -6,11 +6,13 @@ In practice, you will connect Azure IoT Central to a physical device, such as an
 
 To add your coffee machine to your application, you use the **Connected Coffee Machine** device template you created in the previous unit.
 
-1. To add a new device, first navigate to the **Devices** page in your Azure IoT Central application.
+1. To add a new device, first browse to the URL for your IoT application that you created in the previous exercise, such as https://coffee-maker-1234.azureiotcentral.com.
+
+1. Navigate to the **Devices** page in your Azure IoT Central application.
 
 1. Select **Connected Coffee Machine**, and then **+ New**.
 
-1. On the **Create a new device** form, change the device ID to _ccm-001_, and the device name to _Connected Coffee Machine - Real - 001_. Make sure that **Simulate this device** is **No**, and then select **Create**.
+1. On the **Create a new device** form, change the device name to _Connected Coffee Machine - Real - 001_, and the device ID to _ccm-001_. Make sure that **Simulate this device** is **No**, and then select **Create**.
 
 The **Connected Coffee Machine - Real - 001** device now shows in the list of **Connected Coffee Machine** devices with a status of **Registered**.
 
@@ -18,11 +20,11 @@ The **Connected Coffee Machine - Real - 001** device now shows in the list of **
 
 Your real device needs some connection information to connect securely to your IoT Central application:
 
-1. Click on **Connected Coffee Machine - Real - 001** in the list of devices to view the device details.
+1. Select **Connected Coffee Machine - Real - 001** from the list of devices to view the device details.
 
 1. Select **Connect** to open the **Device connection groups** panel.
 
-1. Either keep this page open, or make a note of the **ID scope**, **Device ID**, and **Primary key** values. You need these values later:
+1. Either keep this page open, or make a note of the **ID scope**, **Device ID**, and **Primary key** values; you'll need these values later.
 
     ![Device connection information.](../media/3-device-connection.png)
 
