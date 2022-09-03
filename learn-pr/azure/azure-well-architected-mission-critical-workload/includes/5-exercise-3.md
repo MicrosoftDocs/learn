@@ -92,6 +92,10 @@ If the health state of a component changes to **Degraded** or **Unhealthy**, the
 
 ## Check your work
 
+Watch this video for a demo on monitoring and health modeling.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE55Nd9]
+
 - Do you have a unified data sink for correlated analysis.
 - Have you included application logs, platform metrics, and solution data points. 
 - Have you set up dashboards to visualize the health status of all components.
