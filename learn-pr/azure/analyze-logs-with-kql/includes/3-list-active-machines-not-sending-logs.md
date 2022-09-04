@@ -15,7 +15,7 @@ To determine which machines have stopped sending data, you need information abou
 
 ### Which log data and KQL operations can you use?
 
-Let's look at the `Heartbeat` table schema and the type of data each one of the columns holds.
+Let's look at the columns of the `Heartbeat` table and the type of data each one of the columns holds.
     
 This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that aren't shown in the screenshot):    
 
