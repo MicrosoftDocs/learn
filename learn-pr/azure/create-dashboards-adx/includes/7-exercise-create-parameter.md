@@ -1,4 +1,4 @@
-You've created a dashboard to visualize data insights. In this unit, you'll create a parameter to filter these visualizations. 
+In this unit, you'll create a parameter to filter dashboard visualizations. 
 
 ## Create a parameter
 

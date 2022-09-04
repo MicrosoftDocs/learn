@@ -2,7 +2,7 @@ Dashboards tell a story through visualizations, and are an excellent way to moni
 
 ## Example scenario
 
-Suppose you're a weather enthusiast with a passion for data science, who's just explored an unfamiliar data set. You've used queries and visualizations to gain insights, and now you want to share this information with others. Instead of sharing one single query, you'd like to share an overall snapshot of the data insights.
+Suppose you're a weather enthusiast with a passion for data science, who's just explored an unfamiliar data set of storm data from the US. You've used queries and visualizations to gain insights into this dataset, and now you want to share this information with others. Instead of sharing one single query, you'd like to share an overall snapshot of the data insights. It turns out your colleagues are also curious amateur meteorologists, and they'd like to be able to play around and see different views of the data.
 
 ## What will we be doing?
 

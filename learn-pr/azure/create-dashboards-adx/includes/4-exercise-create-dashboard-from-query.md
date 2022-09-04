@@ -1,4 +1,6 @@
-You've connected to resources containing meterological data. In this unit, you'll create a dashboard from a query. 
+Dashboards are an excellent way to communicate data science insights visually.
+
+You've connected to resources containing a meterological dataset. In this unit, you'll create a dashboard from a query of this data. 
 
 ## Pin query to dashboard
 

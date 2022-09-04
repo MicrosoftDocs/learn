@@ -1,3 +1,5 @@
+Interacting with dashboards can allow you to easily view different insights within the same context.
+
 You've created a dashboard to view insights into your storm events dataset. Next, you'll use parameters to filter dashboard tiles. 
 
 ## What are parameters?

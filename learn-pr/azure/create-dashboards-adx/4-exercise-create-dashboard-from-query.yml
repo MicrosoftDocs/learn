@@ -4,7 +4,7 @@ title: "Exercise: Create a dashboard from a query"
 metadata:
   unitType: exercise
   title: exercise
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "In this unit you create a dashboard directly from a query in Azure Data Explorer web UI."
   ms.date: 8/17/2022
   author: YaelSchuster
   ms.author: yaschust
