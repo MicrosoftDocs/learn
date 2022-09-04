@@ -12,6 +12,5 @@ You'll create a new dashboard from a query to display query visualizations. You'
 
 By the end of this session, you'll be able to:
 
-* Build dashboards in Azure Data Explorer. 
-* Use parameters to interactively modify your dashboard queries.
-* Apply cross-filters in your dashboard.
+* Generate dashboards that display multiple insights at a glance.
+* Share dashboard insights with colleagues.
