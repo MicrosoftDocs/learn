@@ -19,4 +19,4 @@ Here, you'll use KQL to answer operational and business questions by interpretin
 
 ## What is the main goal?
 
-By the end of this session, you'll be able translate data in Azure Monitor Logs into operational and business insights using KQL queries.  
+By the end of this session, you'll be able to translate data in Azure Monitor Logs into operational and business insights using KQL queries.  
