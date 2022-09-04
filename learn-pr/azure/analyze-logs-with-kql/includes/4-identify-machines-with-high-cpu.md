@@ -23,7 +23,7 @@ Let's run a simple query on the `Perf` table to retrieve logs from the past 24 h
 Perf  // The table you’re querying
 | where TimeGenerated > ago(1d) // Filters for entries generated in the past day 
 ```
-:::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Heartbeat table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
+:::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Perf table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
 
 You can see that the `TimeGenerated`, `Computer`, `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` columns hold data that's relevant to our analysis. 
 
@@ -51,7 +51,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `ObjectName` | Holds the names of all of the objects for which the table holds performance data.  | Monitor the performance of the processor. | `where ObjectName == "Processor"` <br/>For more information, see [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
 | `CounterName` | Holds the names of all of the performance counters in the table. | Monitor the `% Processor Time` performance counter. | `where CounterName == "% Processor Time"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | `where InstanceName == "_Total"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
-| `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for `% Processor Time` performance counter. | `summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99)` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator), and the [min()](/azure/data-explorer/kusto/query/min-aggfunction), [max()](/azure/data-explorer/kusto/query/max-aggfunction), [avg()](/azure/data-explorer/kusto/query/avg-aggfunction), and [percentiles()](/azure/data-explorer/kusto/query/percentiles-aggfunction) aggregation functions. |
+| `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Processor Time` performance counter. | `summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99)` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator), and the [min()](/azure/data-explorer/kusto/query/min-aggfunction), [max()](/azure/data-explorer/kusto/query/max-aggfunction), [avg()](/azure/data-explorer/kusto/query/avg-aggfunction), and [percentiles()](/azure/data-explorer/kusto/query/percentiles-aggfunction) aggregation functions. |
 ## Identify machines with high CPU usage
 
 Write a query that summarizes the average, minimum and maximum CPU usage of all machines over the past day. 
@@ -67,6 +67,8 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
     
     This query retrieves all logs related to total processor time measurements from the past day. 
 
+    :::image type="content" source="../media/kql-log-analytics-perf-1d.png" alt-text="Screenshot showing the results of a query on the Perf table." lightbox="../media/kql-log-analytics-perf-1d.png":::
+
 1. Find the minimum, maximum and average counter values, and calculate the 90th and 99th percentile counter values for each computer: 
     
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA11QTUvDQBC9%252ByseBaGFQvWYQ70IihftoXiVaTJNtmR34%252BxuNeLBv%252BHf85c42ZSIhT0M782%252Bj9mw7IHVCtuGEWnXMnqffr6%252BhfGaWHrj6otPvDWswNZYvmfHQpEr3IBqP7%252BuFiBX4Wl34DI%252BkmWs15htxJccgpdZZm99cpFloi8xLWTVcevBhUiu5GntZesjtbMh351pVSBgrz%252FYRTEcUE9ZjEPUAh2FiIp6CLcZj16fSqCb7KLawTKFJGxVKQBaMCRrScyHUsbNT3GfqU28WIKO9Tlk6f0c6lhK1TMth3%252FUEsXVsigW2PV6B9slJYZGG%252BGQ%252FYfk6mpssll4HOio3er8Ozb5PEWhw58LytEEx8HldBkqG8VHk1%252F0z6uS3AEAAA%253D%253D" target="_blank">Click to run query in Log Analytics demo environment</a>    
@@ -78,6 +80,7 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
     ```
     The result set of this query shows the minimum, maximum, average, 90th and 99th percentile `% Processor Time` counter values for each computer for which there's data in your Log Analytics workspace.
 
+    :::image type="content" source="../media/kql-log-analytics-perf-table-min-avg-max-percentiles.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-min-avg-max-percentiles.png":::
 1. Filter the query results for entries where the `% Processor Time` counter value is higher than 80 in the 90th and 99th percentile range:
     
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA4VSzUrDQBC%252B%252BxRDQWih0Hozh3oRFC%252FaQ%252FFapsk0WdmfuLMbjXjwNXw9n8TJJqS1UIQclplvvp%252BZrMnvARYL2FQEAXeaoHXx5%252BvbE7xG8q2y5cUnvFUkhY0ydE%252BWPAYq4AawdNOrYgZoC3javVAeHtEQrFYwWXuXE7Pzk9S9ddEG8mP7EkZAYu1RD5YD2pxG2HbjAupJ5%252B9OaSFg2MsE2eAVMZSjF2UhSIAaOUCBLXjSqR6cfEIB9SgXRA4MIUdPRpgYQAJyNAa9%252BpCWstPB7jPqSLM5YFOelgy%252Bn5Zq8rnwKU38pzWHbDnPshnsWtmDqaM0ukRrT5z0O%252Beiqkw0ibh%252FYCPZyjQdqrSeLJPHQQXyXgSaTmXYDOaV1AeR8XCHoe2xs222lCteLxP7WUzWY45uUHtqlIvc%252FyGybI469AbUcEIelLts%252FwVgQEFWqpQJGUArcr%252Bs8EsKmAIAAA%253D%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
