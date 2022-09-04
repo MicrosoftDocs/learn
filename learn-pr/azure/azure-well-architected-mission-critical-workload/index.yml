@@ -37,7 +37,6 @@ units:
 - learn.azure-well-architected-mission-critical.3-exercise-1
 - learn.azure-well-architected-mission-critical.4-exercise-2
 - learn.azure-well-architected-mission-critical.5-exercise-3
-- learn.azure-well-architected-mission-critical.6-knowledge-check
-- learn.azure-well-architected-mission-critical.7-summary
+- learn.azure-well-architected-mission-critical.6-summary
 badge:
   uid: learn.azure-well-architected-mission-critical.badge

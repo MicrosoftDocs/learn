@@ -1,4 +1,4 @@
-Contoso Shoes needs a way to check the health of the web application at the API level and also its dependencies. You would like to build an overall health model that's measurable through a health status. You'll apply the health status to all user and system flows. The goal is to identify failure points before they can cause an outage.
+Contoso Shoes needs a way to check the health of the web application at the API level and also its dependencies. 
 
 ## Current state and problem
 
@@ -9,11 +9,7 @@ In the current implementation, the API logs application errors that result from:
 
 Azure App Service and the external monitoring tools don't have a way to check for health status on the API itself in order to build resiliency or make outage decisions. A lack of a dedicated health check endpoint has led to traffic being routed to unhealthy App Service instances resulting in failed requests.
 
-An operator isn't able to see the cascading impact of an issue resulting from the API and platform dependencies. In some cases, time taken to triage an issue and respond with has led to longer down times. 
-
 ## Specification
-
-**Application exercise**
 
 - Introduce a health check API in your application. 
 

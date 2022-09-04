@@ -16,11 +16,14 @@ In a recent incident, the team wasn't able to see the cascading impact of an iss
 
 - Visualize the health status of all components in a hierarchy that represents all flows. 
 
+## Recommended approach
+To get started on your design, we recommend that you follow these steps.
+
 ### 1&ndash;Start health modeling
 
 This exercise is theoretical. Health modeling in a top-down design activity in which you'll need a comprehensive list of components used in the architecture. This list should include all the application components and the Azure services.
 
-Place those components in a dependency graph that shows a hierarchical view of the solution. The top layer has the _user flows_ that track request from the end user, to the website, and flows at the application API level. The bottom layer contains the _system flows_ from the Azure services. Also map the dependencies between the Azure resources.
+Place those components in a dependency graph that shows a hierarchical view of the solution. The top layer has the _user flows_ that track request from the end user, to the website, and flows at the application API level. The bottom layer contains the _system flows_ from the Azure services. Also map dependencies between the Azure resources.
 
 Your graph should look something like this:
 
@@ -28,7 +31,7 @@ Your graph should look something like this:
 
 ### 2&ndash;Define the health scores
 
-For each component, collect metrics and metric thresholds and decide the value at which the component should be considered health, degraded, and unhealthy. That decision is should be influenced by expected the performance and non-functional business requirements. Categorize your metrics as:
+For each component, collect metrics and metric thresholds and decide the value at which the component should be considered **healthy**, **degraded**, and **unhealthy**. That decision is should be influenced by expected the performance and non-functional business requirements. Categorize your metrics as:
 
 - Application metrics&mdash;Data points from application code​, such as the exception count​.
 
@@ -92,7 +95,7 @@ If the health state of a component changes to **Degraded** or **Unhealthy**, the
 
 ## Check your work
 
-Watch this video for a demo on monitoring and health modeling.
+Watch this video for a demo on monitoring and health modeling. Did you cover all aspects in your design?
 
 ---
 
