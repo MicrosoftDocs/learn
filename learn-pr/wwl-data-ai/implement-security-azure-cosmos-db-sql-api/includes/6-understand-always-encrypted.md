@@ -53,12 +53,12 @@ Before we create our CMK, we need to create a new or use an existing Azure Key V
 1. Once the key is created, browse to its current version, and copy its full key identifier:
 `https://<my-key-vault>.vault.azure.net/keys/<key>/<version>`. If you would like to always use the latest version of the key, just omit the key version at the end of the key identifier.
 
-An Azure Active Directory identity will be needed to grant the Azure Cosmos DB SDK access to the Azure Key Vault instance. An Azure AD application or a managed instance is commonly used as a proxy between the client code and the Azure Key Vault instance. To use an AD application as the proxy use these steps:
+An Azure Active Directory identity will be needed to grant the Azure Cosmos DB SDK access to the Azure Key Vault instance. An Azure AD application or a managed identity is commonly used as a proxy between the client code and the Azure Key Vault instance. To use an AD application as the proxy use these steps:
 
 1. Create a new Azure Active Directory application and add a client secret as described in this [quickstart][/azure/active-directory/develop/quickstart-register-app].
 1. In the Azure Key Vault instance, under **Access policies**, select **+ Add Access Policy** and add a new policy:
     1. In **Key permissions**, select **Get**, **List**, **Unwrap Key**, **Wrap Key**, **Verify, and **Sign**.
-    1. In **Select principal**, search for the AAD application you've created before.
+    1. In **Select principal**, search for the Azure AD application you've created before.
 
 [/azure/active-directory/develop/quickstart-register-app]: https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app
 
@@ -78,7 +78,7 @@ var client = new CosmosClient("<connection-string>")
 
 ### Create a data encryption key
 
-Once we created the CMK in the Azure Key Vault, its time to create our DEK in the parent database. To create this DEK, we'll use the `CreateClientEncryptionKeyAsync` method and pass the following information:
+Once we created the CMK in the Azure Key Vault, it's time to create our DEK in the parent database. To create this DEK, we'll use the `CreateClientEncryptionKeyAsync` method and pass the following information:
 
 - A string identifier that will uniquely identify the key in the database.
 - The encryption algorithm intended to be used with the key. Only one algorithm is currently supported.
