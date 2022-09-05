@@ -55,9 +55,9 @@ Suppose a system flow is composed of an application component, Azure Event Hubs,
 
 |API|Azure Event Hubs|Azure Storage|Health status|
 |---|---|---|---|
-|Maximum latency < 30ms |Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Response Time < 100ms</br>Request_Failure_Count < 2| ![Healthy state](../media/healthy.svg)
-|Maximum latency < 30ms|Queue depth < 50</br> Processing time < 200ms</br>**Time in queue <1000 ms**|**Response Time < 200ms**</br>Request_Failure_Count < 5|![Degraded](../media/degraded.svg)
-|**Maximum latency > 30ms**|Queue depth < 50</br> **Processing time > 200ms**</br>**Time in queue > 1000 ms**</br>|Response Time > 200ms</br>**Request_Failure_Count > 5**|![Unhealthy](../media/unhealthy.svg)
+|Maximum latency < 30ms |Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Response Time < 100ms</br>Request_Failure_Count < 2| ![Composite healthy state.](../media/healthy.svg)
+|Maximum latency < 30ms|Queue depth < 50</br> Processing time < 200ms</br>**Time in queue <1000 ms**|**Response Time < 200ms**</br>Request_Failure_Count < 5|![Composite degraded](../media/degraded.svg)
+|**Maximum latency > 30ms**|Queue depth < 50</br> **Processing time > 200ms**</br>**Time in queue > 1000 ms**</br>|Response Time > 200ms</br>**Request_Failure_Count > 5**|![Composite unhealthy](../media/unhealthy.svg)
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
 
@@ -101,7 +101,8 @@ Watch this video for a demo on monitoring and health modeling. Did you cover all
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE55Nd9]
 
-- Do you have a unified data sink for correlated analysis.
+
+- Do you have a unified data sink for correlated analysis?
 - Have you included application logs, platform metrics, and solution data points?
 - Have you set up dashboards to visualize the health status of all components?
 - Did you consider failure points at each service (or part of that service) that could cause an outage or prevent you from scaling, deploying, monitoring?

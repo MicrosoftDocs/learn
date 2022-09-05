@@ -1,39 +1,58 @@
-Contoso Shoes needs a way to check the health of the web application at the API level and also its dependencies. 
+Contoso Shoes needs a way to check the health of the web application at the API level and also its dependencies. You want implement a dedicated health check endpoint on the application, which report the health status of the API at regular intervals. 
 
 ## Current state and problem
 
-In the current implementation, the API logs application errors that result from:
+In the current design, the application logs errors when there are  runtime issues in the API code or calls to dependent services fail, such as failed database queries. This approach is useful in troubleshooting issues after an incident has occured. 
 
-- Runtime issues in the API code
-- Dependency failures, such as failed database queries
-
-Azure App Service and the external monitoring tools don't have a way to check for health status on the API itself in order to build resiliency or make outage decisions. A lack of a dedicated health check endpoint has led to traffic being routed to unhealthy App Service instances resulting in failed requests.
+However, the approach isn't proactive. Azure App Service and the external monitoring tools don't have a way to check the health status of the application itself. This gap impacts many use cases, for instance, how load is distributed. The current implementation solely relies on the App Service plan's best effort to distribute traffic evenly across instances without ever checking the health of the application. In a reported incident, traffic was routed to unhealthy App Service instances resulting in failed requests.
 
 ## Specification
 
-- Introduce a health check API in your application. 
+Build the dedicated health service as an extension to the already-deployed code.
 
-    - This new component must report the health status of the API and it's dependencies so that the application can perform its duties as expected. 
+- Introduce a health check API in your application. The API must check the health status of the application and it's dependencies and return an indication of the status. For example, the API periodically checks the health of functional services that process a request:
+
+    - Checks read and write operations to Azure Cosmos DB. Implement those functions as separate probes so that reads and writes are checked independently.
+    - Sends a message to Azure Event Hubs.
     
-    - The health check API must be called twice a minute, by multiple sources, and should not degrade the performance of the API.
+> [!NOTE] Extend the health check to non functional services, such as Azure Key Vault and Azure Container Registry. This step is important because if those services experience an outage, you might notice an impact in the ability to scale out or withstand an App Service instance restart.
 
-    - Azure App Service should be able to use that data to make informed decisions about which App Service instances to include in the built-in Azure App Service load balancer. 
+- The health check API endpoint must be called twice a minute, by multiple sources, and should not degrade the performance of the API. For example, the Azure App Service plan must send requests to an endpoint and make to make informed decisions about which App Service instances to distribute traffic to. 
 
-    - Make health check data available in Azure Monitor for future needs.
+- Optimize the performance of the health check API by caching results in memory for 10 seconds. Not every query to the health check endpoint should result in a backend call. Some of those responses can be served from the cache.
 
-## How to proceed with the health check API
+- Make health check data available in Azure Monitor for future analysis.
 
+## Recommended approach
+To get started on your design, we recommend these configurations settings.
+
+### 1&ndash;Health checks
+
+All queries sent by the health check API must be performed asynchronously and in parallel.
+
+Send a new message to Azure Event Hubs. If it was sent successfully, report the service `Healthy`. Set an identifying property on the message to tell Event Hubs to ignore the processing of the message. Make sure that Event Hubs processing code checks for the that property.
+
+Query Azure Cosmos DB to verify that the connection can be established and the query could be performed. Your query can be as simple as:
+
+```
+SELECT GetCurrentDateTime ()
+```
+
+Attempt to write a test document to the database. Set a short `Time-to-Live` value so that Cosmos DB can automatically remove it.
+
+### 2&ndash;Caching pattern
+
+Cache the check results in memory. You can use the standard, non-distributed ASP.NET Core `MemoryCache`. Control cache expiration by setting `HealthServiceCacheDurationSeconds` to 10 seconds.
 
 ## Check your work
 
-To validate that you have completed the work to the requirements, test your app behavior out by following these steps.
-- The health check endpoint in the API is compatible with Azure App service’s Health check feature
-- Include checks for runtime dependencies. And what did you use as a proxy/test 
+Read [Application Health Service](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#application-health-service) for implementation details. Did you cover all aspects in your design?
+
+- Is the health check endpoint compatible with Azure App service’s Health check feature?
+- Did you include checks for runtime dependencies. What did you use as a proxy/test? 
     - Cosmos DB read/write
     - Third party API  
-- Include checks for non-request-flow dependencies. Those services are Azure Key Vault and Azure Container Registry. If those services were experiencing an outage, that might impact the ability to scale out or survive an app service instance restart, but wouldn’t necessarily impact API requests.
-- Cache the results of health checking to reduce performance overhead. 
-- Build the dedicated health service as an extension to the already-deployed code.
-- Log events in your health checks. Note the successes in addition to failures.
-- Apply Azure Application Insights log sampling to the health check logs.
+- Did you cache the results of health checking to reduce performance overhead? 
+- Did you log events in your health checks? Note the successes as well as the failures?
+- Have you applied Azure Application Insights log sampling to the health check logs?
 
