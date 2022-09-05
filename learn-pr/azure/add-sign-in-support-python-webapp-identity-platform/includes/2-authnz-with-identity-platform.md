@@ -1,4 +1,4 @@
-The Microsoft identity platform simplifies authorization and authentication for application developers by providing identity as a service. It supports industry-standard protocols such as OpenID Connect protocol for handling authentication and OAuth 2.0 protocol for handling authorization. By leveraging the identity platform, developers can build applications that sign in all Microsoft identities, get tokens to call the Microsoft Graph API or access other protected APIs.
+The Microsoft identity platform simplifies authorization and authentication for application developers by providing identity as a service. It supports industry-standard protocols such as OpenID Connect protocol for handling authentication and OAuth 2.0 protocol for handling authorization.By leveraging the identity platform, developers can build applications that sign in all Microsoft identities, get tokens to call the Microsoft Graph API or access other protected APIs.
 
 As you integrate the Microsoft identity platform into your application, understanding the parties involved in the authentication and authorization flow will make the integration tasks easier.
 
@@ -34,7 +34,7 @@ The authority is the identity provider URL (the instance) and the sign-in audien
 
 #### App roles
 
-App roles allow you to securely enforce authorization in your application. When using app roles, an administrator governs access to protected resources by granting permissions to roles and not to individual users or groups.
+App roles allow you to securely enforce authorization in your application. When using app roles, an administrator manages access to protected resources by granting permissions to roles and not to individual users or groups.
 
 The administrator can then use the Azure portal to assign roles to different users and groups to control who has access to what content and functionality. For instance, adding an *admin role* to your app registration could allow a set of employees with this role assignment to read users' profile data.
 
