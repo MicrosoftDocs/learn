@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/24/2022
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -17,18 +17,8 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Which of the following roles has full access to manage all resources but cannot assign roles?"
-    choices:
-    - content: "Contributor"
-      isCorrect: true
-      explanation: "Correct. Contributor grants full access to manage all resources, but cannot assign roles in Azure RBAC, manage assignments in Azure Blueprints, or share image galleries."
-    - content: "Owner"
-      isCorrect: false
-      explanation: "Incorrect. Owner grants full access to manage all resources, including the ability to assign roles in Azure RBAC."
-    - content: "Reader"
-      isCorrect: false
-      explanation: "Incorrect. Reader can view all resources, but cannot make any changes."
-  - content: "What type of user account would be created to allow an external organization easy access?"
+
+  - content: "What type of user account allows an external organization to access your resources?"
     choices:
     - content: "A Contributor user account for each member of the team."
       isCorrect: false
@@ -39,14 +29,27 @@ quiz:
     - content: "A guest user account for each member of the external team."
       isCorrect: true
       explanation: "Correct. A guest user account restricts users to just the access they need."
-  - content: "Which Azure Active Directory role will allow a user to manage all the groups in your Teams tenants and be able to assign other administrator roles? ​"
+  
+  - content: "What kind of group account can you create so you can apply the same permissions to all group members?"
     choices:
-    - content: "Global administrator​"
+    - content: "Security group"
       isCorrect: true
-      explanation: "Correct. Global Administrator manages all aspects of Azure AD and Microsoft services that use Azure AD identities. This includes managing groups across tenants and assigning other administrator roles."
-    - content: "Security administrator​"
+      explanation: "Correct. You can create a security group for a specific security policy and apply the same permissions to all members of the group."
+    - content: "Azure AD bulk group"
       isCorrect: false
-      explanation: "Incorrect. Security Administrator can read security information and reports, and manage configuration in Azure AD and Office 365."
-    - content: "User administrator​"
+      explanation: "Incorrect. You can do bulk operations on users in Azure AD, but there's no defined 'bulk' group."
+    - content: "Microsoft 365 group"
       isCorrect: false
-      explanation: "Incorrect. User Administrator can manage all aspects of users and groups, including resetting passwords for limited admins."
+      explanation: "Incorrect. Microsoft 365 groups give members access to a shared mailbox, calendar, files, and so on."
+    
+  - content: "Which Azure AD role enables a user to manage all groups in your Teams tenants, and also assign other admin roles?"
+    choices:
+    - content: "Global administrator"
+      isCorrect: true
+      explanation: "Correct. The Global Administrator role manages all aspects of Azure AD and Microsoft services that use Azure AD identities. This role can manage groups across tenants and assign other administrator roles."
+    - content: "Security administrator"
+      isCorrect: false
+      explanation: "Incorrect. The Security Administrator role can read security information and reports, and manage configuration in Azure AD and Microsoft 365."
+    - content: "User administrator"
+      isCorrect: false
+      explanation: "Incorrect. The User Administrator role can manage all aspects of users and groups, including resetting passwords for limited admins."
