@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/04/2022
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect: Adding an \"unknown\" label will not improve the accuracy of predictions for the classes you want to identify."
     - content: "Add more images to the training set."
       isCorrect: true
-      explanation: "Correct: Generally, adding more images to the project an retraining the model is likely to improve performance."
+      explanation: "Correct: Generally, adding more images to the project and retraining the model is likely to improve performance."
   - content: "You have published an image classification model. What information must you provide to developers who want to use it?"
     choices:
     - content: "Only the project ID."

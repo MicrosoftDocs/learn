@@ -12,7 +12,7 @@ Razor is a format for generating text-based content, like HTML. Razor files have
 
 Blazor is a user-interface framework built on .NET and Razor. Blazor applications can run on a server as part of an ASP.NET application, or can be deployed to run in the browser on a user's machine similar to a single-page-application.
 
-![Sample Blazor Application Architecture](../media/intro-architecture.jpg)
+![Diagram of sample Blazor Application Architecture.](../media/intro-architecture.jpg)
 
 ## What is Blazor Server?
 
