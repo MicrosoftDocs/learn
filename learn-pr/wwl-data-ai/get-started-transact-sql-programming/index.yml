@@ -11,7 +11,7 @@ metadata:
 title: Get started with Transact-SQL programming
 summary: Transact-SQL (T-SQL) provides a robust programming language with features that let you temporarily store values in variables, apply conditional execution of commands, pass parameters to stored procedures, and control the flow of your programs.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   * Describe the language elements of T-SQL used for simple programming tasks.
   * Describe batches and how they're handled by SQL Server.
   * Declare and assign variables and synonyms.
