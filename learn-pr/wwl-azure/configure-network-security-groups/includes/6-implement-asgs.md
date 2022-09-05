@@ -2,7 +2,7 @@
 
 ## When to use Application Security Groups
 
-Let’s consider a usage case for an online retailer. In this scenario, it is important to control the network traffic to the application virtual machines. Here are the requirements. 
+Let’s consider a usage case for an online retailer. In this scenario, it's important to control the network traffic to the application virtual machines. Here are the requirements. 
 
 - Shoppers access the company’s product catalog hosted on Web Servers. The Web Servers must be accessible from the internet over HTTP port 80 and HTTPS port 443. 
 
@@ -14,7 +14,7 @@ Let’s consider a usage case for an online retailer. In this scenario, it is im
 
 For this scenario, we would:
 
-Create an ASG, WebASG, that groups the Web Servers. Create another ASG, DBASG, that groups the Database Servers. Assign each ASGs to the corresponding server NICs.
+Create an ASG (WebASG) that groups the Web Servers. Create another ASG (DBASG) that groups the Database Servers. Assign the corresponding server NICs to each ASG.
 
 Inside the NSG, create following rules:
 - Priority: 100, allow access from the internet to WebASG with port 80 and 443.

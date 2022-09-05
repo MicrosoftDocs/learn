@@ -1,6 +1,6 @@
 NSGs are evaluated independently, and an “allow” rule must exist at both levels otherwise traffic will not be allowed.
 
-:::image type="content" source="../media/security-groups-7a9d5c84.png" alt-text="A NSG is shown controlling traffic to a subnet. Inside the subnet another NSG is shown controlling traffic to a virtual machine NIC.":::
+:::image type="content" source="../media/security-groups-7a9d5c84.png" alt-text="Diagram showing a NSG controlling traffic to a subnet. Inside the subnet another NSG is shown controlling traffic to a virtual machine NIC.":::
 
 
 In the above example, if there was incoming traffic on port 80, you would need to have the NSG at the subnet level ALLOW port 80. You would also need another NSG with an ALLOW rule on port 80 at the NIC level.
