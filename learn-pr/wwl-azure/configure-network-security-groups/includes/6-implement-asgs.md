@@ -10,7 +10,7 @@ Let’s consider a usage case for an online retailer. In this scenario, it's imp
 
 ## How to use Application Security Groups
 
-:::image type="content" source="../media/asgs.png" alt-text="Diagram of how ASGs and NSGs combine to protect applications.":::
+:::image type="content" source="../media/asgs.png" alt-text="Diagram of how an A S G combines with an N S G to protect applications.":::
 
 For this scenario, we would:
 

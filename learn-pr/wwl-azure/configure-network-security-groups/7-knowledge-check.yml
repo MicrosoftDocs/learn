@@ -17,7 +17,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "The infrastructure team has two NSG security rules for inbound traffic to the backend web servers. There is an allow rule with a priority of 200. And, there is a deny rule with a priority of 150. Which rule takes precedence?"
+  - content: "The infrastructure team has two NSG security rules for inbound traffic to the backend web servers. There's an allow rule with a priority of 200. And, there's a deny rule with a priority of 150. Which rule takes precedence?"
     choices:
     - content: "The allow rule takes precedence."
       isCorrect: false
@@ -35,18 +35,18 @@ quiz:
       explanation: "Correct. By default, inbound security rules allow traffic from any VM to any other VM within the virtual network."
     - content: "Allow inbound coming from a VM in another virtual network."
       isCorrect: false
-      explanation: "Incorrect. That isn't a default inbound security rule."
+      explanation: "Incorrect. That rule isn't a default inbound security rule."
     - content: "Allow traffic from any external source to any of the VMs."
       isCorrect: false
-      explanation: "Incorrect. That isn't a default inbound security rule."
+      explanation: "Incorrect. That rule isn't a default inbound security rule."
   - content: "Which of the following is a valid service tag for network security group rules?"
     choices:
     - content: "VirtualNetwork"
       isCorrect: true
       explanation: "Correct. VirtualNetwork is a valid service tag. Service tags represent a group of IP addresses. Other service tags are Internet, SQL, Storage, AzureLoadBalancer, and AzureTrafficManager."
-    - content: "VPNGateway"
+    - content: "VPN Gateway"
       isCorrect: false
-      explanation: "Incorrect. That isn't a valid service tag."
+      explanation: "Incorrect. That tag isn't a valid service tag."
     - content: "Database"
       isCorrect: false
-      explanation: "Incorrect. That isn't a valid service tag."
+      explanation: "Incorrect. That tag isn't a valid service tag."
