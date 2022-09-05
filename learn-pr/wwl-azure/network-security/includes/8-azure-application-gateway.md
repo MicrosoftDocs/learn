@@ -2,7 +2,7 @@ Azure Application Gateway is a web traffic load balancer that enables you to man
 
 Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example, URI path or host headers. For example, you can route traffic based on the incoming URL. So if /images are in the incoming URL, you can route traffic to a specific set of servers (known as a pool) configured for images. If /video is in the URL, that traffic is routed to another pool that's optimized for videos. This type of routing is known as application layer (OSI layer 7) load balancing.
 
-:::image type="content" source="../media/az500-application-gateway-routes-traffic-6f612ceb.png" alt-text="Image showing how azure application gateway routes traffic":::.
+:::image type="content" source="../media/az500-application-gateway-routes-traffic-6f612ceb.png" alt-text="Image showing how azure application gateway routes traffic.":::
 
 
 Application Gateway includes the following features:
