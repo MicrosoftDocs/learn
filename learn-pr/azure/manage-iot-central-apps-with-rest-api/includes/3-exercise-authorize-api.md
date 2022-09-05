@@ -6,7 +6,7 @@ In this unit, you'll use an Azure CLI control plane operation to create an IoT C
 
 To make the REST API calls, this module uses the `az rest` command in a sandbox environment so that you don't need to install any tools on your local machine. For each command you can see the request URL, the method (`get`, `put`, `patch`, or `delete`), and any JSON body. Some commands use the `--query` argument to format the response for readability. If you prefer, you can use your own GUI-based tool such as [Postman](https://www.postman.com/) to make the API calls.
 
-The IoT Central REST API currently has some generally available (GA) operations, and some that are in preview. If the request includes the query string `api-version=1.0`, it's a GA operation. If the request includes the query string `api-version=preview`, the operation is in preview.
+The IoT Central REST API currently has some generally available (GA) operations, and some that are in preview. All the operations shown in this module are GA and use the query string `api-version=2022-07-31` unless explicitly called out.
 
 ## Create and configure the IoT Central application
 
@@ -69,13 +69,13 @@ The following steps create an IoT Central application and generate an API token 
     ```azurecli
     # Get the admin and operator roles in the application
     ADMIN_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/roles \
-    --url-parameters api-version=1.0 \
+    --url-parameters api-version=2022-07-31 \
     --headers Authorization="$ADMIN_TOKEN" \
     --query "value[?displayName=='Administrator'].id" -o tsv`
     echo $ADMIN_ROLE_ID
 
     OPERATOR_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/roles \
-    --url-parameters api-version=1.0 \
+    --url-parameters api-version=2022-07-31 \
     --headers Authorization="$ADMIN_TOKEN" \
     --query "value[?displayName=='Operator'].id" -o tsv`
     echo $OPERATOR_ROLE_ID
@@ -85,7 +85,7 @@ The following steps create an IoT Central application and generate an API token 
 
     ```azurecli
     OPERATOR_TOKEN=`az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/apiTokens/operatortoken \
-      --url-parameters api-version=1.0 \
+      --url-parameters api-version=2022-07-31 \
       --headers Authorization="$ADMIN_TOKEN" --query "token" -o tsv --body \
     '{
       "roles": [
@@ -105,7 +105,7 @@ The two API tokens you created each have the permission set associated their rol
 
     ```azurecli
     az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/apiTokens \
-      --url-parameters api-version=1.0 \
+      --url-parameters api-version=2022-07-31 \
       --headers Authorization="$ADMIN_TOKEN"
     ```
 
@@ -113,6 +113,6 @@ The two API tokens you created each have the permission set associated their rol
 
     ```azurecli
     az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/apiTokens \
-      --url-parameters api-version=1.0 \
+      --url-parameters api-version=2022-07-31 \
       --headers Authorization="$OPERATOR_TOKEN"
     ```
