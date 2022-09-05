@@ -28,7 +28,7 @@ quiz:
     - content: "The rule that was created first takes precedence."
       isCorrect: false
       explanation: "Incorrect. Rules are processed using the priority."
-  - content: "Which of the following is a default inbound security rule?"
+  - content: "Which of the following rules is a default inbound security rule?"
     choices:
     - content: "Allow inbound coming from any VM to any other VM within the virtual network."
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
     - content: "Allow traffic from any external source to any of the VMs."
       isCorrect: false
       explanation: "Incorrect. That rule isn't a default inbound security rule."
-  - content: "Which of the following is a valid service tag for network security group rules?"
+  - content: "Which of the following tags is a valid service tag for network security group rules?"
     choices:
     - content: "VirtualNetwork"
       isCorrect: true
