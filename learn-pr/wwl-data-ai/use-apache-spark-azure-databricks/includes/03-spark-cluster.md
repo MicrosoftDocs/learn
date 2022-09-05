@@ -6,7 +6,7 @@ When creating the cluster, you can specify configuration settings, including:
 
 - A name for the cluster.
 - A *cluster mode*, which can be:
-    - *Standard*: Suitable for single-user workloads that ma require multiple worker nodes.
+    - *Standard*: Suitable for single-user workloads that require multiple worker nodes.
     - *High Concurrency*: Suitable for workloads where multiple users will be using the cluster concurrently.
     - *Single Node*: Suitable for small workloads or testing, where only a single worker node is required.
 - The version of the *Databricks Runtime* to be used in the cluster; which dictates the version of Spark and individual components such as Python, Scala, and others that get installed.
