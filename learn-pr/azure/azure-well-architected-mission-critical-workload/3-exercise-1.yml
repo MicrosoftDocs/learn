@@ -15,7 +15,7 @@ content: |
   [!include[](includes/3-exercise-1.md)]
 
 quiz:
-  title: Check your design
+  title: Knowledge check
   questions:
   - content: 'How would your solution change if your API was a monolith made of up many unrelated endpoints with different runtime requirements?'
     choices:

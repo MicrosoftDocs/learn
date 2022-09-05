@@ -47,7 +47,7 @@ Cache the check results in memory. You can use the standard, non-distributed ASP
 
 ## Check your work
 
-Read [Application Health Service](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#application-health-service) for implementation details. Did you cover all aspects in your design?
+Read the [**Application Health Service**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#application-health-service) article for the implementation details. Did you cover all aspects in your design?
 
 - Is the health check endpoint compatible with Azure App service’s Health check feature?
 - Did you include checks for runtime dependencies? What did you use as a proxy/test? 
