@@ -40,44 +40,45 @@ The following steps create an IoT Central application and generate an API token 
     --query "[].{DisplayName:displayName, Subdomain:subdomain}"
     ```
 
-1. Run the following command to sign in to your subscription. You don't usually run this command in the Cloud Shell, but here it's necessary to generate a bearer token for your IoT Central application. Follow the instructions to complete the login process:
+<!--
+- Get the admin token through the UI
+- Set an env variable with the admin token
+- Get the two role IDs (admin and operator) and save in env variables
+- Get an operator token using the API
+- Also fix API versions
+ -->
+
+1. Use the IoT Central UI to generate your first API token. Run the following command to show the URL to navigate to:
 
     ```azurecli
-    TENANT=`az account show --query homeTenantId -o tsv`
-    az login --tenant $TENANT
+    echo https://$APP_NAME.azureiotcentral.com/permissions/tokens
     ```
 
-1. Run the following commands to get the IDs of the built-in **App Administrator** and **App Operator** roles from your application. You don't yet have an API token to use, so the `--resource https://apps.azureiotcentral.com` parameter generates an authorization header with a bearer token:
+1. On the **API tokens** page, select **+New**. On the **Generate token** panel enter **AdminToken** as the token name, select **App Administrator** as the role, and select **Generate**.
+
+1. Copy the generated **AdminToken** and save it locally in a text file. If you lose a token, you'll have to delete and then recreate it.
+
+1. Create an environment variable called `ADMIN_TOKEN` and assign the token you generated. Be sure to enclose the token using `"` marks:
+
+    ```azurecli
+    ADMIN_TOKEN="{the token you generated}"
+    ```
+
+1. Run the following commands to verify your API token is valid and to retrieve two role IDs:
 
     ```azurecli
     # Get the admin and operator roles in the application
     ADMIN_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/roles \
     --url-parameters api-version=1.0 \
-    --resource https://apps.azureiotcentral.com \
+    --headers Authorization="$ADMIN_TOKEN" \
     --query "value[?displayName=='Administrator'].id" -o tsv`
     echo $ADMIN_ROLE_ID
 
     OPERATOR_ROLE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/roles \
     --url-parameters api-version=1.0 \
-    --resource https://apps.azureiotcentral.com \
+    --headers Authorization="$ADMIN_TOKEN" \
     --query "value[?displayName=='Operator'].id" -o tsv`
     echo $OPERATOR_ROLE_ID
-    ```
-
-1. Generate an API token for the **App Administrator** role. You still need to use the bearer token for this:
-
-    ```azurecli
-    ADMIN_TOKEN=`az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/apiTokens/admintoken \
-      --url-parameters api-version=1.0 \
-      --resource https://apps.azureiotcentral.com --query "token" -o tsv --body \
-    '{
-      "roles": [
-        {
-          "role": "'$ADMIN_ROLE_ID'"
-        }
-      ]
-    }'`
-    echo $ADMIN_TOKEN
     ```
 
 1. Now you can use the administrator API token to create an operator API token:
@@ -96,7 +97,7 @@ The following steps create an IoT Central application and generate an API token 
     echo $OPERATOR_TOKEN
     ```
 
-1. Copy the generated admin and operator API tokens and save them locally in a text file. If you lose the tokens, you'll have to delete and then recreate them. All the remaining commands in this module will use either the `ADMIN_TOKEN` or the `OPERATOR_TOKEN`.
+1. Copy the generated operator API token and save it locally in a text file. If you lose the token, you'll have to delete and then recreate it. All the remaining API commands in this module use either the `ADMIN_TOKEN` or the `OPERATOR_TOKEN`.
 
 The two API tokens you created each have the permission set associated their role. You can also use the REST API to create API tokens for any custom roles you created in your IoT Central application. The following two commands demonstrate that an administrator has access to API tokens, but an operator doesn't:
 
