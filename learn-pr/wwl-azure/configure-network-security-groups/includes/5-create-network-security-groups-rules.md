@@ -1,4 +1,4 @@
-It is easy to add inbound and outbound rules. You can select from a large variety of services. These services include HTTPS, RDP, FTP, and DNS.
+It's easy to add inbound and outbound rules. You can select from a large variety of services. These services include HTTPS, RDP, FTP, and DNS.
 
 :::image type="content" source="../media/add-network-security-rule-2f306d23.png" alt-text="Screenshot of the Add inbound security rule page in the Azure portal. The Advanced configuration link is highlighted.":::
 
