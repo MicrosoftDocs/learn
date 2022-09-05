@@ -40,7 +40,7 @@ quiz:
     choices:
     - content: "Retrieve the objects in the image."
       isCorrect: false
-      explanation: "Incorrect. The objects might identify buildings as buildings, but not a specific well-known landmarks."
+      explanation: "Incorrect. The objects might identify buildings as buildings, but not a specific well-known landmark."
     - content: "Retrieve the categories for the image, specifying the celebrities domain"
       isCorrect: false
       explanation: "Incorrect. The celebrities domain includes well-known people, not buildings."
