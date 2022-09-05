@@ -1,4 +1,4 @@
-The **AzCopy** command is a command-line utility specially created and optimized for moving data in and out of Azure storage. Running AzCopy, you can bulk-transfer from the local file system on an on-premises computer to the cloud.
+The **AzCopy** command is a command-line utility specially created and optimized for moving data in and out of Azure storage. Running AzCopy, you can bulk-transfer from the local file system of an on-premises computer to the cloud.
 
 In this unit, you'll learn how to run the AzCopy utility to upload, download, and transfer blob data between storage accounts.
 
@@ -18,7 +18,7 @@ From the command line, you can call AzCopy using the all lower-case name `azcopy
 azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/"
 ```
 
-The AzCopy command requires that you are authenticated and authorized to access the storage account. If your organization uses Active Directory Federation Service (ADFS), you can authenticate by running the `azcopy login` command and signing in. Alternatively, the owner of a storage account can create a Shared Access Signature (SAS) token that provides access to the storage account. The SAS token is time-limited, and can be restricted to only allow certain operations. You provide the SAS token as a query string to the Azure storage URL when you upload or download data.
+The AzCopy command requires that you're authenticated and authorized to access the storage account. If your organization uses Active Directory Federation Service (ADFS), you can authenticate by running the `azcopy login` command and signing in. Alternatively, the owner of a storage account can create a Shared Access Signature (SAS) token that provides access to the storage account. The SAS token is time-limited, and can be restricted to only allow certain operations. You provide the SAS token as a query string to the Azure storage URL when you upload or download data.
 
 ```bash
 azcopy copy "myfile.txt" "https://myaccount.blob.core.windows.net/mycontainer/?<sas token>"
@@ -32,7 +32,7 @@ azcopy copy "myfolder" "https://myaccount.blob.core.windows.net/mycontainer/?<sa
 
 ## Monitor and manage jobs
 
-Remember that AzCopy runs asynchronously. If you're transferring a large number of files, or even a small number of large files, AzCopy starts your upload and reports an initial summary. The command then continues running in the background. Run the `AzCopy jobs list` command to view the status of running and recently-completed commands. Each job has an ID, and you can view the details of a job with the `AzCopy jobs show <id>` command.
+Remember that AzCopy runs asynchronously. If you're transferring a large number of files, or even a small number of large files, AzCopy starts your upload and reports an initial summary. The command then continues running in the background. Run the `AzCopy jobs list` command to view the status of running and recently completed commands. Each job has an ID, and you can view the details of a job with the `AzCopy jobs show <id>` command.
 
 If an AzCopy transfer is interrupted, it appears in the jobs list. Restart the job by running the `azcopy jobs resume <id>` command.
 
