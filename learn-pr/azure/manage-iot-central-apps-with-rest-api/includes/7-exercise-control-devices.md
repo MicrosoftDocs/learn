@@ -167,7 +167,7 @@ The vehicle monitoring device template specified a **Get Max-Min report** comman
 }
 ```
 
-Run the following command in the Cloud Shell to send a **Get Max-Min report** command to one of the simulated devices in the application. The **Get Max-Min report** command takes a parameter that specifies the the start of the time period for the report:
+Run the following command in the Cloud Shell to send a **Get Max-Min report** command to one of the simulated devices in the application. The **Get Max-Min report** command takes a parameter that specifies the start of the time period for the report:
 
 ```azurecli
 SINCE=`date -d "now -2 hours" -Ins`
