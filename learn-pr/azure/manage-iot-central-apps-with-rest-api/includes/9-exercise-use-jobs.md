@@ -22,6 +22,9 @@ echo $DEVICE_GROUP
 
 Run the following command to create and run a job that calls the **Reboot** command on all the devices in the device group. The **Reboot** command has a parameter that specifies, in seconds, how long to wait before rebooting. The job is called `rebootjob`:
 
+
+<!-- TODO: this fails -->
+
 ```azurecli
 az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/jobs/rebootjob \
   --url-parameters api-version=2022-07-31 \
@@ -31,7 +34,7 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/jobs/rebootjob \
     {
       "path": "reboot",
       "target": "dtmi:contoso:refrigerated_truck",
-      "type": "CommandJobData",
+      "type": "command",
       "value": 10
     }
   ],
@@ -101,7 +104,7 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/jobs/targettempjob \
     {
       "path": "TargetTemperature",
       "target": "dtmi:contoso:refrigerated_truck",
-      "type": "PropertyJobData",
+      "type": "property",
       "value": 14.5
     }
   ],

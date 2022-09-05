@@ -40,14 +40,6 @@ The following steps create an IoT Central application and generate an API token 
     --query "[].{DisplayName:displayName, Subdomain:subdomain}"
     ```
 
-<!--
-- Get the admin token through the UI
-- Set an env variable with the admin token
-- Get the two role IDs (admin and operator) and save in env variables
-- Get an operator token using the API
-- Also fix API versions
- -->
-
 1. Use the IoT Central UI to generate your first API token. Run the following command to show the URL to navigate to:
 
     ```azurecli

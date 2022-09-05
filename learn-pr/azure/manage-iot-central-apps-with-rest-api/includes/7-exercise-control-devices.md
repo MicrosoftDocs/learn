@@ -19,7 +19,7 @@ TEMPLATE_ID=`az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices
 --query "template" -o tsv`
 
 az rest -m post -u https://$APP_NAME.azureiotcentral.com/api/query \
---url-parameters 2022-06-30-preview \
+--url-parameters api-version=2022-06-30-preview \
 --headers Authorization="$OPERATOR_TOKEN" Content-Type=application/json \
 --body '{
     "query": "SELECT TOP 5 $id AS device-id, $ts AS timestamp, ContentsTemperature, Location FROM '"$TEMPLATE_ID"' WHERE device-id = '"'sim-truck-001'"' ORDER BY timestamp DESC"
@@ -82,32 +82,33 @@ az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/sim-truck-00
 
 ## Set a cloud property
 
-*The cloud property REST APIs are currently in preview.*
+You use the property API to update a cloud property.
 
 The refrigerated truck device template specified a **Last maintenance date** cloud property in the solution model:
 
 ```json
 {
-  "@type": "CloudProperty",
+  "@type": [
+    "Property",
+    "Cloud",
+    "StringValue"
+  ],
   "displayName": "Last maintenance date",
   "name": "maintenancedate",
-  "schema": "string",
-  "valueDetail": {
-    "@type": "StringValueDetail"
-  }
+  "schema": "string"
 }
 ```
 
 Run the following command in the Cloud Shell to set the **Last maintenance date** to **12.5** for one of the real devices in the application:
 
 ```azurecli
-az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/cloudProperties \
+az rest -m patch -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/properties \
 --url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN" --body \
 '{
   "maintenancedate": "December 2020"
 }'
-az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/cloudProperties \
+az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/devices/real-truck-001/properties \
 --url-parameters api-version=2022-07-31 \
 --headers Authorization="$OPERATOR_TOKEN"
 
