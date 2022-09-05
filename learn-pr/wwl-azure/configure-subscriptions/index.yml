@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-subscriptions
 metadata:
   title: Configure subscriptions
-  description: "You will learn how to configure subscriptions including obtaining a subscription, implementing cost management, and applying resource tags."
-  ms.date: 06/24/2022
+  description: "You'll learn how to configure subscriptions. This module includes getting a subscription, implementing cost management, and applying resource tags."
+  ms.date: 09/02/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

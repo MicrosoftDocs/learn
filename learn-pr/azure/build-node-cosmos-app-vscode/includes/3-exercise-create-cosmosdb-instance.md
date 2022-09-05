@@ -17,7 +17,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the **Search** box, enter **Azure Databases**, and press <kbd>Enter</kbd>.
 
-1. In the list of extensions, select the **Azure Databases** extension published by Microsoft, and then select **Download**. Install the package when the download is completed.
+1. In the list of extensions, select the **Azure Databases** extension published by Microsoft, and then select **Install**.
 
     :::image type="content" source="../media/3-install-cosmosdb-extension.png" alt-text="Screenshot of Visual Studio Code. The user has selected the Azure Databases extension." loc-scope="vs-code":::
 
@@ -27,25 +27,30 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. On the **View** menu, select **Command Palette**.
 
-1. In the command palette, enter **Azure**, and then select **Azure: Focus on Databases View**.
+1. In the command palette, enter **Azure**, and then select **Azure: Focus on Resources View**.
 
     :::image type="content" source="../media/3-command-palette-cosmosdb.png" alt-text="Screenshot of the command palette in Visual Studio Code. The user has selected the Focus on Azure Databases extension View command." loc-scope="vs-code":::
 
-    The Databases pane appears (if not already visible).
+    The Azure Resources pane appears (if not already visible).
 
-    :::image type="content" source="../media/3-cosmosdb-pane.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-cosmosdb-pane.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code." loc-scope="vs-code":::
 
 1. On the **View** menu, select **Command Palette**, and then select **Azure: Sign in**.
 
 1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
 
-1. In the toolbar above the Azure Databases extension pane, select **Create Server** (the **+** sign).
+1. In the Azure Resources pane, select **Select subscriptions...**.
 
-    :::image type="content" source="../media/3-add-comsosdb-account.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The user has selected the **Create Account** command." loc-scope="vs-code":::
+1. Select **Concierge Subscription** and then **OK**.
+
+1. In the Azure Resources pane, expand **Concierge Subscription**.
+
+1. Right-click **Azure CosmosDB** and then select **Create Server**.
+
+    :::image type="content" source="../media/3-add-comsosdb-account.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code. The user has selected the **Create Account** command." loc-scope="vs-code":::
 
     A wizard starts and prompts you for the details of the new account.
 
-1. In the *Select subscription* box, select **Concierge Subscription**.
 
 1. In the *Select an Azure Database Server* box, select **Core (SQL)**.
 
@@ -57,49 +62,49 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the *Select a location for new resources* box, select a location near you.
 
-    Wait while the Azure Databases extension account is created. This will take a few minutes.
+    Wait while the Azure Databases account is created. This will take a few minutes.
 
-1. When the account has been created, in the Azure Databases extension pane, expand *Concierge Subscription*. Verify that the new Cosmos DB account appears.
+1. When the account has been created, in the Azure Resources pane, expand **Concierge Subscription** and **Azure CosmosDB**. Verify that the new Cosmos DB account appears.
 
-    :::image type="content" source="../media/3-new-comsosdb-account.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The new Azure Databases extension account is listed under the user's Azure account." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-new-comsosdb-account.png" alt-text="Screenshot of the Azure Resources extension pane in Visual Studio Code. The new Azure Databases extension account is listed under the user's Azure account." loc-scope="vs-code":::
 
 ## Create a database and container
 
-1. In the Azure Databases extension pane, right-click the database account you created, and then select **Create Database**.
+1. In the Azure Resources pane, right-click the database account you created, and then select **Create Database**.
 
-    :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
 
 1. In the *Database Name* box, enter **SchoolDB**, and then press <kbd>Enter</kbd>.
 
 1. In the *Enter an id for your Collection* box, enter **StudentCourseGrades**, and then press <kbd>Enter</kbd>.
 
-    This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student. The data will be partitioned by student ID.
+    This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student.
 
-1. Leave the *Partition key* box blank, and press <kbd>Enter</kbd>.
+1. Leave the *Enter the partition key for the collection, or leave blank for fixed size* box blank, and press <kbd>Enter</kbd>.
 
 1. In the *Initial throughput capacity* box, enter **1000**, and then press <kbd>Enter</kbd>.
 
-1. In the Azure Databases extension pane, verify that the **SchoolDB** database, containing the **StudentCourseGrades** container, appears.
+1. In the Azure Resources pane, verify that the **SchoolDB** database, containing the **StudentCourseGrades** container, appears.
 
-    :::image type="content" source="../media/3-database-and-container.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code, showing the SchoolDB database and the StudentCourseGrades container." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-database-and-container.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code, showing the SchoolDB database and the StudentCourseGrades container." loc-scope="vs-code":::
 
 ## Create and view documents
 
-1. In the Azure Databases extension pane, expand the **StudentCourseGrades** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
+1. In the Azure Resources pane, expand the **StudentCourseGrades** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
 
 1. Right-click the **Documents** folder, and then select **Create Document**.
 
-    :::image type="content" source="../media/3-create-document.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The user has selected the Create Document command in the StudentCourseGrades container." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-create-document.png" alt-text="Screenshot of the Azure Databases pane in Visual Studio Code. The user has selected the Create Document command in the StudentCourseGrades container." loc-scope="vs-code":::
 
 1. In the *Enter a document ID* box, enter **S101**, and then press <kbd>Enter</kbd>. This will be the ID of a student document.
 
 1. Leave the *Partition key* box blank, and press <kbd>Enter</kbd>.
 
-    The document will be created and appear in Visual Studio Code, in JSON format. The **id** and **StudentNumber** fields will be populated with the values you specified. The document will also contain other fields that are added automatically by Azure Databases extension for its internal use.
+    The document will be created and appear in Visual Studio Code, in JSON format. The **id** and **_partitionKey** fields will be populated with the values you specified.
 
     :::image type="content" source="../media/3-new-document.png" alt-text="Screenshot of Visual Studio Code showing the newly created document." loc-scope="vs-code":::
 
-1. In the Azure Databases extension pane, right-click the **Documents** folder again, and select **Create Document**.
+1. In the Azure Resources pane, right-click the **Documents** folder again, and select **Create Document**.
 
 1. In the *Enter a document ID* box, enter **S102**, and then press <kbd>Enter</kbd>. This will be the ID of another student.
 
@@ -111,35 +116,33 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the **Documents** list, select the **S101** document.
 
-1. In the JSON document that appears, move to the end of the **StudentNumber** line, and press <kbd>Enter</kbd>.
+1. In the JSON document that appears, move to the end of the **id** line, and press <kbd>Enter</kbd>.
 
-1. Add the following fields to the document. Don't forget to add a comma at the end of the first line, and remove it from the last line.
+1. Add the following fields to the document.
 
     ```JSON
     "Forename": "AAA",
     "Lastname": "BBB",
     ```
 
-1. Right-click anywhere in the document pane, and select **Update to Cloud**.
+1. On the **File** menu, select **Save**. 
 
-    :::image type="content" source="../media/3-save-changes.png" alt-text="Screenshot of Visual Studio Code showing the edited document. The student has selected the Update to Cloud command to save the changes back to Azure Databases extension." loc-scope="vs-code":::
+1. When prompted to update the entity to the cloud, select **Always upload**.
 
-    The document will be written back to Azure Databases extension. The Visual Studio Code log window will appear. The final message in the log should be similar to the following example.
+    :::image type="content" source="../media/3-always-upload-message.png" alt-text="Screenshot of Visual Studio Code showing the edited document. The student has selected the Update to Cloud command to save the changes back to Azure." loc-scope="vs-code":::
 
-    ```text
-    10:51:56: Updated entity "csschool (SQL)/SchoolDB/StudentCourseGrades/Documents/S101"
-    ```
+   The document will be updated in the cloud.
 
 1. In the **Documents** list, select the **S102** document.
 
-1. Add the following fields to the document after the **StudentNumber** field.
-
-1. Right-click anywhere in the document pane, and select **Update to Cloud**.
+1. Add the following fields to the document after the **id** field.
 
     ```JSON
     "Forename": "CCC",
     "Lastname": "DDD",
     ```
+
+1. On the **File** menu, select **Save**.
 
 1. In the **Documents** list, select the **S101** document again.
 
@@ -160,9 +163,9 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     This is an array field that contains the grades for each course that the student has taken. Each pair of **Course**/**Grade** fields is a subdocument. Using an array makes it possible to record the details of a variable number of courses for each student.
 
-1. Save the updated document to the cloud.
+1. Save the updated document.
 
-1. Edit the **S102** document, add the following fields, and save the updated document to the cloud.
+1. Edit the **S102** document, add the following fields, and save the updated document.
 
     ```JSON
     "CourseGrades": [

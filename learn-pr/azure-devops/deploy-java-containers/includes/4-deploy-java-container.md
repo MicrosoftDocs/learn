@@ -69,7 +69,7 @@ To add the variables:
 
 Make sure your variable group resembles like the one shown below:
 
-    :::image type="content" source="../media/4-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group. The group contains five variables.":::
+:::image type="content" source="../media/4-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group. The group contains five variables.":::
 
 ## Create required service connections
 
