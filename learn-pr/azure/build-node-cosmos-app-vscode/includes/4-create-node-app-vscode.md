@@ -40,7 +40,7 @@ You can use the native Node.js debugger (for example, `node inspect myapp`) from
 
 Before you use the Visual Studio Code debugger, you should configure it. For example, the Visual Studio Code debugger displays output in its own **Output** window in the IDE. However, this window can't handle terminal input. If your app expects to receive keyboard input, you must configure the debugger to use an external terminal.
 
-To edit the debugger configuration settings, on the **Debug** menu, select **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property, and set it to **externalTerminal**.
+To edit the debugger configuration settings, on the **Run** menu, select **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property, and set it to **externalTerminal**.
 
 ```json
 {
@@ -62,7 +62,7 @@ To edit the debugger configuration settings, on the **Debug** menu, select **Ope
 
 To begin a debug session, first, set one or more breakpoints in your application code. To do this, click in the left margin by the statement at which you want to pause execution. A red dot will appear.
 
-Next, select **Start Debugging** on the **Debug** menu. If you're using an external terminal, a new terminal window will appear. If your application expects any input, enter it into this window. Any messages output by your application will appear in this window:
+Next, select **Start Debugging** on the **Run** menu. If you're using an external terminal, a new terminal window will appear. If your application expects any input, enter it into this window. Any messages output by your application will appear in this window:
 
 :::image type="content" source="../media/4-debugger-terminal.png" alt-text="Screenshot of the debugger external terminal window." loc-scope="vs-code":::
 
