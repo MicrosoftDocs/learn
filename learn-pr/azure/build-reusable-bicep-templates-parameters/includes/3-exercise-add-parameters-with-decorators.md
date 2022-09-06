@@ -36,7 +36,7 @@ During the process, you'll:
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
-   :::code language="bicep" source="code/3-template.bicep" range="31-48" :::
+   :::code language="bicep" source="code/3-template.bicep" range="31-49" :::
 
    Notice that the resources use the values of the parameters you defined.
 
