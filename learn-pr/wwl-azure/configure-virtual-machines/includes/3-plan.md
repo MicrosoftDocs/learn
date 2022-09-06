@@ -10,7 +10,7 @@ Provisioning VMs to Azure requires planning.
 
 ## Start with the network
 
-Virtual networks (VNets) are used in Azure to provide private connectivity between Azure Virtual Machines and other Azure services. VMs and services that are part of the same virtual network can access one another. By default, services outside the virtual network cannot connect to services within the virtual network. You can, however, configure the network to allow access to the external service, including your on-premises servers.
+Virtual networks (VNets) are used in Azure to provide private connectivity between Azure Virtual Machines and other Azure services. VMs and services that are part of the same virtual network can access one another. By default, services outside the virtual network can't connect to services within the virtual network. You can, however, configure the network to allow access to the external service, including your on-premises servers.
 
 Network addresses and subnets aren't trivial to change once you have them set up. If you plan to connect your private company network to the Azure services, you'll want to make sure you consider the topology before putting any VMs into place.
 
