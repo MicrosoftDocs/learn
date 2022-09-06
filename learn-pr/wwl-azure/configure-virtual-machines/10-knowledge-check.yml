@@ -41,12 +41,12 @@ quiz:
       explanation: "Incorrect. Custom script extensions are for post deployment configuration, software installation, or any other configuration or management tasks."
   - content: "What is the effect of the default network security settings for a new virtual machine?"
     choices:
-    - content: "All outbound and inbound requests are not allowed."
+    - content: "All outbound and inbound requests aren't allowed."
       isCorrect: false
       explanation: "Incorrect. Outbound requests are allowed by default."
     - content: "Outbound requests are allowed. Inbound traffic is only allowed from within the virtual network."
       isCorrect: true
-      explanation: "Correct. Outbound requests are considered low risk, so they're allowed by default. Inbound traffic from within the virtual network is allowed. By placing a VM in a virtual network, the VM owner is implicitly opting in to communication among the resources in the virtual network."
+      explanation: "Correct. Outbound requests are considered low risk, so they're allowed by default. Inbound traffic from within the virtual network is allowed."
     - content: "There are no restrictions. All outbound and inbound requests are allowed."
       isCorrect: false
       explanation: "Incorrect. There are restrictions on inbound traffic."
