@@ -1,30 +1,48 @@
 Microsoft Azure is made up of datacenters located around the globe. These datacenters are organized and made available to end users by region. A [region](https://azure.microsoft.com/global-infrastructure/regions/) is a geographical area on the planet containing at least one, but potentially multiple datacenters. The datacenters are in close proximity and networked together with a low-latency network.
 
-A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Australia East*, and *Japan West*. Azure is generally available in 60+ regions and available in 140 countries.
+A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West.
 
-:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="Diagram of the earth with all of the current Microsoft Azure regions marked.":::
+:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="Diagram of the earth with all of the current Microsoft Azure regions marked." border="false":::
 
+### Things to know about regions
 
-## Things to know about regions
+Here are some points to consider about regions:
 
- -  Azure has more global regions than any other cloud provider.
- -  Regions provide customers the flexibility and scale needed to bring applications closer to their users.
- -  Regions preserve data residency and offer comprehensive compliance and resiliency options for customers.
- -  For most Azure services, when you deploy a resource in Azure, you choose the region where you want your resource to be deployed.
- -  Some services or virtual machine features are only available in certain regions, such as specific virtual machine sizes or storage types.
- -  Some global Azure services that don't require you to select a region. These services include Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS.
- -  Each Azure region is paired with another region within the same geography, together making a regional pair. The exception is Brazil South, which is paired with a region outside its geography.
+- Azure is generally available in more than 60 regions and available in 140 countries.
+
+- Azure has more global regions than any other cloud provider.
+
+- Regions provide customers the flexibility and scale needed to bring applications closer to their users.
+
+- Regions preserve data residency and offer comprehensive compliance and resiliency options for customers.
+
+### Things to know about regional pairs
+
+Each Azure region is paired with another region within the same geography to make a _regional pair_ (or _paired regions_). Regional pairs help to support always-on availability of Azure resources used by your infrastructure. The following table describes some prominent characteristics of paired regions:
+
+| Characteristic | Description |
+| --- | --- |
+| **Physical isolation** | Azure prefers at least 300 miles of separation between datacenters in a regional pair. This principle isn't practical or possible in all geographies. Physical datacenter separation reduces the likelihood of natural disasters, civil unrest, power outages, or physical network outages affecting both regions at once. |
+| **Platform-provided replication** | Some services like Geo-Redundant Storage provide automatic replication to the paired region. |
+| **Region recovery order** | During a broad outage, recovery of one region is prioritized out of every pair. Applications that are deployed across paired regions are guaranteed to have one of the regions recovered with priority. |
+| **Sequential updates** | Planned Azure system updates are rolled out to paired regions sequentially (not at the same time). Rolling updates minimizes downtime, reduces bugs, and logical failures in the rare event of a bad update. |
+| **Data residency** | Regions reside within the same geography as their enabled set (except for the Brazil South and Singapore regions). |
 
 > [!NOTE]
-> View the latest [Azure regions map.](https://azure.microsoft.com/global-infrastructure/regions/)
+> Check the Azure website for the most current information about region support and availability:
+> - Search the current list of available [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/).
+> - View the list of supported [paired regions](/azure/best-practices-availability-paired-regions#what-are-paired-regions) and identify exceptions.
 
-## Things to know about regional pairs
+### Things to consider when using regions and regional pairs
 
- -  **Physical isolation**. Azure prefers at least 300 miles of separation between datacenters in a regional pair. This principle isn't practical or possible in all geographies. Physical datacenter separation reduces the likelihood of natural disasters, civil unrest, power outages, or physical network outages affecting both regions at once.
- -  **Platform-provided replication**. Some services such as Geo-Redundant Storage provide automatic replication to the paired region.
- -  **Region recovery order**. During a broad outage, recovery of one region is prioritized out of every pair. Applications that are deployed across paired regions are guaranteed to have one of the regions recovered with priority.
- -  **Sequential updates**. Planned Azure system updates are rolled out to paired regions sequentially (not at the same time). Rolling updates minimizes downtime, reduces bugs, and logical failures in the rare event of a bad update.
- -  **Data residency**. Regions reside within the same geography as their enabled set (except for Brazil South and Singapore). Data residency helps meet requirements for tax and law enforcement jurisdiction purposes.
+You've reviewed the important considerations about regions and regional pairs. Now think about how you might implement regions in your organization.
 
-> [!NOTE]
-> View the complete list of [region pairs](/azure/best-practices-availability-paired-regions#what-are-paired-regions).
+- **Consider resource and region deployment**. Plan the regions where you want to deploy your resources. For most Azure services, when you deploy a resource in Azure, you choose the region where you want your resource to be deployed.
+
+- **Consider service support by region**. Research region and service availability. Some services or Azure Virtual Machines features are available only in certain regions, such as specific Virtual Machines sizes or storage types.
+
+- **Consider services that don't require regions**. Identify services that don't need region support. Some global Azure services that don't require you to select a region. These services include Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS.
+
+- **Consider exceptions to region pairing**. Check the Azure website for current region availability and exceptions. If you plan to support the Brazil South region, note this region is paired with a region outside its geography. The Singapore region also has an exception to standard regional pairing.
+
+- **Consider benefits of data residency**. Take advantage of the benefits of data residency offered by regional pairs. This feature can help you meet requirements for tax and law enforcement jurisdiction purposes. |

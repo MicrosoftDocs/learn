@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-subscriptions.implement-cost-management
-title: Implement cost management
+title: Implement Microsoft Cost Management and Billing
 metadata:
-  title: Implement cost management
-  description: "Implement cost management"
-  ms.date: 09/02/2022
+  title: Implement Microsoft Cost Management and Billing
+  description: "Implement Microsoft Cost Management and Billing"
+  ms.date: 09/07/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
