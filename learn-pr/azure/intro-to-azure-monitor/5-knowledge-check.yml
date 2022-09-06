@@ -37,12 +37,12 @@ durationInMinutes: 10
 content: |
 quiz:
   questions:
-  - content: "What parameters do you need to set, to have Azure Monitor start recording metrics on your resource?"
+  - content: "What parameters do you need to set to have Azure Monitor start recording metrics on your resource?"
     choices:
     - content: "None. Azure Monitor begins recording as soon as your resources are created."
       isCorrect: true
       explanation: "Correct. Azure Monitor will begin collecting metrics on your resources as soon as they are created."
-    - content: "You must configure at least one Alert Rule, before Azure Monitor will record metrics."
+    - content: "You must configure at least one Alert Rule before Azure Monitor will record metrics."
       isCorrect: false
       explanation: "Incorrect. You do not need to configure any alerts or alert rules for Azure Monitor to begin collecting metrics data."
     - content: "Associate the resource with a Log Analytics Workspace."
