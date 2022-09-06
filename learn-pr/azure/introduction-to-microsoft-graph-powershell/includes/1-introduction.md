@@ -3,9 +3,7 @@ Implementing business process automation across a set of Microsoft 365 services 
 
 ## Example scenario
 
-Suppose you're the IT admin of a vendor company that develops software solutions. Your organization uses Azure Active Directory (Azure AD) and other Microsoft 365 services. You maintain a database of all devices registered in Azure AD. Due to loss, broken devices or OS reinstallations, you have stale devices in your environment. You've been tasked with finding the best tool to find and remove stale devices, so you can focus your resources on managing devices that actually require management. With your knowledge of PowerShell, you would like to know if Microsoft Graph PowerShell would be the most appropriate tool to automate this process. See the following screenshot of the devices listing from the azure portal.
-
-:::image type="content" source="../media/device-activity.png" alt-text="Device activity in the azure portal":::
+Suppose you're the IT admin of a vendor company that develops software solutions. Your organization is using Azure Active Directory (Azure AD) and other Microsoft 365 services. You maintain a database of the company employees as users registered in Azure AD. As your company grows, you would like to ease the process of onboarding new employees and removing access from previous employees. You would also like, from time to time, to update user info, reset their passwords, and manage access to resources by assigning roles to users. You've been tasked with finding the best tool to to help you manage this process. With your knowledge of PowerShell, you would like to learn if Microsoft Graph PowerShell would be the most appropriate tool to automate this process.
 
 ## What will we be doing?
 

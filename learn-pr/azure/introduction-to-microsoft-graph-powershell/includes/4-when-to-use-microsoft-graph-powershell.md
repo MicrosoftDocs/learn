@@ -6,7 +6,7 @@ Microsoft Graph PowerShell exposes the entire set of Microsoft Graph APIs for us
 
 The following section explains each of these factors.
 
-### Managing identities at scale
+### Managing Microsoft 365 at scale
 
 Use Microsoft Graph PowerShell when you want to connect, retrieve, update, and delete data from productivity APIs at Microsoft, for example files, drive, calendar and you don't want to have an application for it.
 
@@ -24,4 +24,4 @@ For the example scenario, we were able to filter all stales devices using a func
 
 ### Support for modern authentication
 
-Microsoft Graph PowerShell uses the Microsoft Authentication Library (MSAL) and supports modern authentication. MSAL provides the latest authentication options, for example, Multi-Factor Athentication (MFA), Conditional Access and PasswordLess sign in experiences.
+Microsoft Graph PowerShell uses the Microsoft Authentication Library (MSAL) and supports modern authentication. MSAL provides the latest authentication options, for example, Multi-Factor Authentication (MFA), Conditional Access and PasswordLess sign-in experiences.
