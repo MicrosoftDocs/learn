@@ -216,7 +216,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
         ([Name], [GeoFence]) 
     VALUES
         ('Crossroads', 'POLYGON ((-122.14797019958493 47.6330073774962,-122.1187877655029 47.63289169873832,-122.11861610412595 47.61518983198667,-122.14891433715819 47.61542126760543,-122.14797019958493 47.6330073774962))');
+    INSERT INTO dbo.[MonitoredRoutes] (RouteId) VALUES (100113);
     INSERT INTO dbo.[MonitoredRoutes] (RouteId) VALUES (100136);
+    GO
     GO
     ```
 
