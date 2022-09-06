@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/27/2022
+  ms.date: 09/06/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct. The Azure Bastion service is a new fully platform-managed PaaS service provisioned inside a virtual network. Bastion provides secure and seamless RDP and SSH connectivity to virtual machines. The access uses the Azure portal and SSL."
     - content: "Configure a Guest configuration on the virtual machine."
       isCorrect: false
-      explanation: "Incorrect. The guest configuration is not a valid solution. Is there a better answer?"
+      explanation: "Incorrect. The guest configuration isn't a valid solution. Is there a better answer?"
     - content: "Create a custom script extension."
       isCorrect: false
       explanation: "Incorrect. Custom script extensions are for post deployment configuration, software installation, or any other configuration or management tasks."
