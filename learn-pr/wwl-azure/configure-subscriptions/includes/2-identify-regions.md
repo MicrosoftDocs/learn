@@ -1,18 +1,14 @@
-Microsoft Azure is made up of datacenters located around the globe. These datacenters are organized and made available to end users by region. A [region](https://azure.microsoft.com/global-infrastructure/regions/) is a geographical area on the planet containing at least one, but potentially multiple datacenters. The datacenters are in close proximity and networked together with a low-latency network.
-
-A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West.
-
-:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="Diagram of the earth with all of the current Microsoft Azure regions marked." border="false":::
+Microsoft Azure is made up of datacenters located around the globe. These datacenters are organized and made available to end users by region. A [region](https://azure.microsoft.com/global-infrastructure/regions/) is a geographical area on the planet containing at least one, but potentially multiple datacenters. The datacenters are in close proximity and networked together with a low-latency network. A few examples of regions are West US, Canada Central, West Europe, Australia East, and Japan West.
 
 ### Things to know about regions
 
 Here are some points to consider about regions:
 
-- Azure is generally available in more than 60 regions and available in 140 countries.
+- Azure is generally available in more than 60 regions in 140 countries.
 
 - Azure has more global regions than any other cloud provider.
 
-- Regions provide customers the flexibility and scale needed to bring applications closer to their users.
+- Regions provide you with the flexibility and scale needed to bring applications closer to your users.
 
 - Regions preserve data residency and offer comprehensive compliance and resiliency options for customers.
 
@@ -28,11 +24,6 @@ Each Azure region is paired with another region within the same geography to mak
 | **Sequential updates** | Planned Azure system updates are rolled out to paired regions sequentially (not at the same time). Rolling updates minimizes downtime, reduces bugs, and logical failures in the rare event of a bad update. |
 | **Data residency** | Regions reside within the same geography as their enabled set (except for the Brazil South and Singapore regions). |
 
-> [!NOTE]
-> Check the Azure website for the most current information about region support and availability:
-> - Search the current list of available [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/).
-> - View the list of supported [paired regions](/azure/best-practices-availability-paired-regions#what-are-paired-regions) and identify exceptions.
-
 ### Things to consider when using regions and regional pairs
 
 You've reviewed the important considerations about regions and regional pairs. Now think about how you might implement regions in your organization.
@@ -45,4 +36,15 @@ You've reviewed the important considerations about regions and regional pairs. N
 
 - **Consider exceptions to region pairing**. Check the Azure website for current region availability and exceptions. If you plan to support the Brazil South region, note this region is paired with a region outside its geography. The Singapore region also has an exception to standard regional pairing.
 
-- **Consider benefits of data residency**. Take advantage of the benefits of data residency offered by regional pairs. This feature can help you meet requirements for tax and law enforcement jurisdiction purposes. |
+- **Consider benefits of data residency**. Take advantage of the benefits of data residency offered by regional pairs. This feature can help you meet requirements for tax and law enforcement jurisdiction purposes.
+
+## Find regions for your business geography
+
+Visit the Azure global infrastructure website to find supported regions for your business geography. You can search by country name or by Microsoft product. A list of supported region pairs and exceptions is also available.
+
+:::image type="content" source="../media/azure-regions-a31968fe.png" alt-text="Screenshot of the Azure global infrastructure and Azure geographies website." border="false":::
+
+| By geography | By product | Paired regions |
+|--- | --- | --- |
+| Search [Azure regions](https://azure.microsoft.com/global-infrastructure/regions/) by geography. | Search [Azure products](https://azure.microsoft.com/global-infrastructure/regions/) by region or geography. | Search for [paired regions](/azure/best-practices-availability-paired-regions#what-are-paired-regions) and exceptions. |
+| :::image type="content" source="../media/regions-select-by-geography.png" alt-text="Screenshot that shows how to search for available regions by geographic location." lightbox="regions-select-by-geography-expanded.png" border="false"::: | :::image type="content" source="../media/regions-select-by-product.png" alt-text="Screenshot that shows how to find products available according to region or geographic location." lightbox="regions-select-by-product-expanded.png" border="false"::: | :::image type="content" source="../media/search-region-pairs.png" alt-text="Screenshot that shows how to search for regional pairs." lightbox="search-region-pairs-expanded.png" border="false"::: |
