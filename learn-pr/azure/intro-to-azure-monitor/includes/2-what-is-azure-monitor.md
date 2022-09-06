@@ -40,7 +40,7 @@ As an example, the **Contoso-web-sales Metrics** chart displayed here demonstrat
 
 ### Other monitoring considerations
 
-Interactive monitoring is just one way to utilize the features of Azure Monitor. Many situations can benefit from an strategy involving alerts. You can configure alerts that will proactively respond to critical conditions. These alerts can be sent over text message or email to have a person investigate. You may also consider configurations that can take actions based on an alert. Using **action groups**, which contain a set of recipients and actions to take, you can simplify administration across multiple rules.
+Interactive monitoring is just one way to utilize the features of Azure Monitor. Many situations can benefit from a strategy involving alerts. You can configure alerts that will proactively respond to critical conditions. These alerts can be sent over text message or email to have a person investigate. You may also consider configurations that can take actions based on an alert. Using **action groups**, which contain a set of recipients and actions to take, you can simplify administration across multiple rules.
 
 Azure Monitor has its own features for visualizing monitoring data, and uses other Azure services for publishing it to different audiences. Azure dashboards allow you to combine different kinds of data into a single pane in the Azure portal.
 
