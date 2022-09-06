@@ -34,6 +34,6 @@ app = ConfidentialClientApplication(
 )
 ```
 
-- **client_id**: The client id is the unique **Application (client) ID** assigned to your app by Azure Active Directory (Azure AD) when the app was registered.
+- **client_id**: The client id is the unique **Application (client) ID** assigned to your app by Azure AD when the app was registered.
 - **authority**: The authority is a URL that indicates a directory that MSAL can request tokens from. It's composed of the identity provider instance and a sign-in audience for the app.
 - **client_secret**: The client secret for the confidential client app, created when registering the app.
