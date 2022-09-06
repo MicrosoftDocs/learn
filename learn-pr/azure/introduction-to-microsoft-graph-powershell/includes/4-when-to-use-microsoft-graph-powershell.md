@@ -2,7 +2,7 @@ Many tools  are available for automation and for interaction with the Graph APIs
 
 ## Decision criteria
 
-Microsoft Graph PowerShell exposes the entire set of Microsoft Graph APIs for use in PowerShell. The cases where Microsoft Graph PowerShell might be the best option involve automation of repetitive business processes, handling complex functions, manipulation of data in the Microsoft 365 tenants, and integration between different Microsoft services like Outlook, SharePoint and Teams.
+Microsoft Graph PowerShell exposes the entire set of Microsoft Graph APIs for use in PowerShell. The cases where Microsoft Graph PowerShell might be the best option involve automation of repetitive business processes, handling complex functions, manipulation of data in the Microsoft 365 tenants, and integration between different Microsoft services like Outlook, SharePoint, and Teams.
 
 The following section explains each of these factors.
 

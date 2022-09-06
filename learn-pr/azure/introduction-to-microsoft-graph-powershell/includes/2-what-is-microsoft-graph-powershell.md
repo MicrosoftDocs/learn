@@ -11,7 +11,7 @@ Microsoft.Graph.Authentication is the core module, which contains the following 
 
 - `Connect-MgGraph`: to sign in to Microsoft Graph
 - `Invoke-MgGraphRequest`: to issue REST API requests for the Microsoft Graph API
-- Commands to switch between **beta** and **V1.0** versions of the SDK and access sovereign cloud Graph APIs
+- Commands to switch between **beta** and **V1.0** versions of the SDK
 - Commands to discover permissions and API-specific Graph commands in other modules
 
 Other modules are made up of thousands of commands.
@@ -28,4 +28,4 @@ Microsoft Graph PowerShell has the following features and benefits:
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) that offers more security. For example, you can use Password-less sign-in experiences.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 - **Uses least privilege**: Microsoft Graph PowerShell doesn't support pre-authorization and common scenarios will require consent. You'll need to request for scopes for your current needs.
-- **Advanced queries**: Microsoft Graph PowerShell supports rich advanced Azure AD queries via eventual consistency.
+- **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced Azure AD queries via eventual consistency.

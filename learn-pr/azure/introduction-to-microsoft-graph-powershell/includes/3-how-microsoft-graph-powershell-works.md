@@ -74,7 +74,7 @@ Find-MgGraphCommand -Command 'Get-MgUser'
 
 The Microsoft Graph PowerShell SDK application requires users to have domain knowledge of both the semantics and syntax of Microsoft Graph API permissions used to authorize access to the API.
 
-`Find-MgGraphPermission` helps you find what permissions are applicable to a certain domain. You will use permissions to sign in to your application using the [Connect-MgGraph](#sign-in-connect-mggraph).
+`Find-MgGraphPermission` helps you find what permissions are applicable to a certain domain. You'll use permissions to sign in to your application using the [Connect-MgGraph](#sign-in-connect-mggraph).
 
 To find permissions related to a given domain, run;
 
@@ -133,7 +133,7 @@ Microsoft Graph PowerShell SDK supports optional query parameters that you can u
 
 ### Advanced queries
 
-Azure AD commands support advanced queries via the **ConsistencyLevel** parameter. This adds the **-ConsistencyLevel** header to the Graph API request.
+Azure AD commands support advanced queries via the **ConsistencyLevel** parameter. These queries add the **-ConsistencyLevel** header to the Graph API request.
 
 To get a count of all the devices in your tenant, you'll need to run the command using advanced queries.
 
