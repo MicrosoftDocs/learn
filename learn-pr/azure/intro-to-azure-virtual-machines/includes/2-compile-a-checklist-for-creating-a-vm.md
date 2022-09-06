@@ -5,11 +5,11 @@ Performing a migration of on-premises servers to Azure requires planning and car
 An **Azure resource** is a manageable item in Azure. Just like a physical computer in your datacenter, VMs have several elements that are needed to do their job:
 
 - The VM itself
-- Storage account for the disks
-- Virtual network (shared with other VMs and services)
+- s for storage
+- Virtual network
 - Network interface to communicate on the network
-- Network Security Group(s) to secure the network traffic
-- Public Internet address (optional)
+- Network Security Group (NSG) to secure the network traffic
+- An IP address (public, private, or both)
 
 Azure will create all of these resources if necessary, or you can supply existing ones as part of the deployment process. Each resource needs a name that will be used to identify it. If Azure creates the resource, it will use the VM name to generate a resource name - another reason to be very consistent with your VM names!
 
@@ -22,7 +22,7 @@ Azure will create all of these resources if necessary, or you can supply existin
 Let's walk through a checklist of things to think about.
 
 - The network
-- VM name 
+- VM name
 - Location
 - The VM size
 - Disks
@@ -57,14 +57,14 @@ Once you have mapped out your communication and network requirements, you can st
 
 - Which OS is used?
 - How much disk space is in use?
-- What kind of data does this use? Are there restrictions (legal or otherwise) with not having it on-premises?
+- What kind of data does this use? Are there restrictions (legal or otherwise) around how it is stored or where it is physically located?
 - What sort of CPU, memory, and disk I/O load does the server have? Is there burst traffic to account for?
 
 We can then start to answer some of the questions Azure will have for a new virtual machine.
 
 ### VM name
 
-One piece of information people often don't put much thought into is the **name** of the VM. The VM name is used as the computer name, which is configured as part of the operating system. You can specify a name of up to 15 characters on a Windows VM and 64 characters on a Linux VM.
+One piece of information people often don't put much thought into is the **name** of the VM. The VM name is used as the computer name, which is configured as part of the operating system. You can specify a name of up to 64 characters on a Linux VM and 15 characters on a Windows VM.
 
 This name also defines a manageable **Azure resource**, and it's not trivial to change later. That means you should choose names that are meaningful and consistent, so you can easily identify what the VM does. A good convention is to include the following information in the name:
 
@@ -74,16 +74,16 @@ This name also defines a manageable **Azure resource**, and it's not trivial to 
 | Location |uw (US West), ue (US East) |Identifies the region into which the resource is deployed |
 | Instance |01, 02 |For resources that have more than one named instance (web servers, etc.) |
 | Product or Service |service |Identifies the product, application, or service that the resource supports |
-| Role |sql, web, messaging |Identifies the role of the associated resource | 
+| Role |sql, web, messaging |Identifies the role of the associated resource |
 
-For example, `devusc-webvm01` might represent the first development web server hosted in the US South Central location. 
+For example, `devusc-webvm01` might represent the first development web server hosted in the US South Central location.
 
 
 ### Decide the location for the VM
 
 Azure has datacenters all over the world filled with servers and disks. These datacenters are grouped into geographic _regions_ ('West US', 'North Europe', 'Southeast Asia', etc.) to provide redundancy and availability.
 
-When you create and deploy a virtual machine, you must select a region where you want the resources (CPU, storage, etc.) to be allocated. This lets you place your VMs as close as possible to your users to improve performance and to meet any legal, compliance, or tax requirements.
+When you create and deploy a virtual machine, you must select a region where you want the resources to be allocated. This lets you place your VMs as close as possible to your users to improve performance and to meet any legal, compliance, or tax requirements.
 
 Two other things to think about regarding the location choice. First, the location can limit your available options. Each region has different hardware available and some configurations are not available in all regions. Second, there are price differences between locations. If your workload isn't bound to a specific location, it can be very cost effective to check your required configuration in multiple regions to find the lowest price.
 
@@ -120,12 +120,10 @@ If you stop and deallocate the VM, you can then select any size available in you
 
 There are two separate costs the subscription will be charged for every VM: compute and storage. By separating these costs, you scale them independently and only pay for what you need.
 
-**Compute costs** - Compute expenses are priced on a per-hour basis but billed on a per-minute basis. For example, you are only charged for 55 minutes of usage if the VM is deployed for 55 minutes. You are not charged for compute capacity if you stop and deallocate the VM since this releases the hardware. The hourly price varies based on the VM size and OS you select. The cost for a VM includes the charge for the Windows operating system. Linux-based instances are cheaper because there is no operating system license charge.
+**Compute costs** - Compute expenses are priced on a per-hour basis but billed on a per-minute basis. For example, you are only charged for 55 minutes of usage if the VM is deployed for 55 minutes. You are not charged for compute capacity if you stop and deallocate the VM since this releases the hardware. The hourly price varies based on the VM size and OS you select. Linux-based instances are cheaper because there is no operating system license charge. For Windows, the cost for a VM includes the charge for the operating system.
 
 > [!TIP]
-> You might be able to save money by reusing existing licenses with the **Azure Hybrid benefit**.
-
-**Storage costs** - You are charged separately for the storage the VM uses. The status of the VM has no relation to the storage charges that will be incurred; even if the VM is stopped/deallocated and you aren’t billed for the running VM, you will be charged for the storage used by the disks.
+> You might be able to save money by reusing existing licenses with the **Azure Hybrid benefit** for [Linux](/azure/virtual-machines/linux/azure-hybrid-benefit-linux) or [Windows](/azure/virtual-machines/windows/hybrid-use-benefit-licensing).
 
 You're able to choose from two payment options for compute costs.
 
@@ -134,15 +132,34 @@ You're able to choose from two payment options for compute costs.
 | **Pay as you go** | With the **pay-as-you-go** option, you pay for compute capacity by the second, with no long-term commitment or upfront payments. You're able to increase or decrease compute capacity on demand as well as start or stop at any time. Prefer this option if you run applications with short-term or unpredictable workloads that cannot be interrupted. For example, if you are doing a quick test, or developing an app in a VM, this would be the appropriate option. |
 | **Reserved Virtual Machine Instances** | The Reserved Virtual Machine Instances (RI) option is an advance purchase of a virtual machine for one or three years in a specified region. The commitment is made up front, and in return, you get up to 72% price savings compared to pay-as-you-go pricing. **RIs** are flexible and can easily be exchanged or returned for an early termination fee. Prefer this option if the VM has to run continuously, or you need budget predictability, **and** you can commit to using the VM for at least a year. |
 
+**Storage costs** - You are charged separately for the storage the VM uses. The status of the VM has no relation to the storage charges that will be incurred. If the VM is stopped/deallocated and you aren’t billed for the running VM, you will still be charged for the storage used by the disks.
+
+
 ### Storage for the VM
 
-Best practice is that all Azure virtual machines will have at least two virtual hard disks (VHDs). The first disk stores the operating system, and the second is used as temporary storage. You can add additional data disks to store application data; the maximum number is determined by the VM size selection (typically two per vCPU). It's common to create one or more data disks. Separating out the data to different disks allows you to manage the disks independently.
+All Azure virtual machines will have at least two virtual hard disks (VHDs). The first disk stores the operating system, and the second is used as temporary storage. You should can add additional data disks to store application data. Separating out the data to different disks allows you to manage the disks independently. The maximum number of data disks you can attach to your VM is determined by the VM size (typically two per vCPU).
 
-Disks can be backed by either **Standard** or **Premium** Storage accounts. Azure Premium Storage leverages solid-state drives (SSDs) to enable high performance and low latency for VMs running I/O-intensive workloads. Use Azure Premium Storage for production workloads, especially those that are sensitive to performance variations or are I/O intensive. For development or testing, Standard storage is fine.
+There are five disk types, each intended to address a specific customer scenario:
 
+- [Ultra disks](/azure/virtual-machines/disks-types#ultra-disks)
+- [Premium SSD v2 (preview)](/azure/virtual-machines/disks-types#premium-ssd-v2-preview)
+- [Premium SSDs (solid-state drives)](/azure/virtual-machines/disks-types#premium-ssds)
+- [Standard SSDs](/azure/virtual-machines/disks-types#standard-ssds)
+- [Standard HDDs (hard disk drives)](/azure/virtual-machines/disks-types#standard-hdds)
+
+The following table provides a comparison of the five disk types to help you decide which to use.
+
+|         | Ultra disk | Premium SSD v2 | Premium SSD | Standard SSD | <nobr>Standard HDD</nobr> |
+| ------- | ---------- | ----------- | ------------ | ------------ | ------------ |
+| **Disk type** | SSD | SSD |SSD | SSD | HDD |
+| **Scenario**  | IO-intensive workloads such as [SAP HANA](/azure/virtual-machines/workloads/sap/hana-vm-operations-storage), top tier databases (for example, SQL, Oracle), and other transaction-heavy workloads. | Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput | Production and performance sensitive workloads | Web servers, lightly used enterprise applications and dev/test | Backup, non-critical, infrequent access |
+| **Max disk size** | 65,536 gibibyte (GiB) | 65,536 GiB |32,767 GiB | 32,767 GiB | 32,767 GiB |
+| **Max throughput** | 4,000 MB/s | 1,200 MB/s | 900 MB/s | 750 MB/s | 500 MB/s |
+| **Max IOPS** | 160,000 | 80,000 | 20,000 | 6,000 | 2,000 |
+| **Usable as OS Disk?** | No | No | Yes | Yes | Yes |
 ### Select an operating system
 
-Azure provides a variety of OS images that you can install into the VM, including several Linux distributions. The choice of OS might influence your hourly compute pricing as Azure bundles the cost of the OS license into the price.
+Azure provides a variety of OS images that you can install into the VM, including many Linux distributions. The choice of OS might influence your hourly compute pricing as Azure bundles the cost of the OS license into the price.
 
 If you are looking for more than just base OS images, you can search the Azure Marketplace for more sophisticated images that include the OS and popular software tools for specific scenarios. For example, if you needed a new WordPress site, the standard technology stack would consist of a Linux server, Apache web server, a MySQL database, and PHP. Instead of setting up and configuring each component, you can leverage a Marketplace image and install the entire stack all at once.
 

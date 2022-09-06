@@ -21,13 +21,13 @@ Let's assume you want to create a VM running a web server on Ubuntu. Setting up 
 
     ![Screenshot that shows the Create a resource page.](../media/3-create-new-resource.png)
 
-1. As you can see, there are many options to choose from. We want to create a VM, so select **Virtual machine**.
+1.  We want to create a VM, so select **Virtual machine**.
 
-1.  The **Create virtual machine** pane appears.
+1. The **Create virtual machine** pane appears.
 
 ### Configure the VM
 
-You need to configure the basic parameters of your Ubuntu virtual machine. If some of the options at this point are unfamiliar to you, that's OK. We're going to describe all of these options in a future module. You're welcome to copy the values used here.
+You need to configure the basic parameters of your virtual machine. If some of the options at this point are unfamiliar to you, that's OK. We're going to describe all of these options in a future module. You're welcome to copy the values used here.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -44,12 +44,12 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
     | Azure Spot instance | Unchecked |
     | Size | Standard D2s V3 |
     | **Administrator account** |
-    | Authentication type | Password |
+    | Authentication type | SSH public key |
     | Username | Enter a username |
     | SSH public key source | Generate a new key pair |
     | Key pair name | **test-ubuntu-cus-vm_key** |
     | **Inbound port rules** |
-    | Public inbound ports | None |
+    | Public inbound ports | SSH (22) |
 
 1. There are several other tabs you can explore to see the settings you can influence during the VM creation. After you're finished exploring, select **Review + create** to review and validate the settings.
 
@@ -69,6 +69,6 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
 
      :::image type="content" source="../media/3-public-ip-address.png" alt-text="Screenshot showing VM essentials and properties with the public IP address highlighted.":::
 
-    By default, Ubuntu Server 18.04 LTS image doesn't install any reachable public services on the public IP address. However, recall that when you enabled password authentication in an earlier step, the user interface also gave an option to enable SSH. SSH allows you to connect to your VM via the public IP using any SSH client.
+    When you enabled SSH public key authentication in an earlier step, the user interface also gave an option to enable SSH. SSH allows 
 
 Congratulations! With a few steps, you deployed a VM that runs Linux. Let's explore some other ways we could have created a VM.
