@@ -4,18 +4,18 @@ The sign-in flow in MSAL Python takes these high level steps:
 
 In this exercise, you'll add code to sign in and sign out users in a Python Flask web application that uses MSAL for Python. Follow these steps to add sign-in support:
 
-- Import the auth library
-- Import Flask modules
-- Initialize the Flask app
+- Set up the Flask application
 - Create the authorization code flow dictionary
 - Create app routes
 - Create a confidential client
 - Add code to sign users
 - Add code to sign out users
 
-## Import the auth library
+## Set up the Flask application
 
-Before you can sign in Azure AD users, install MSAL for Python in your application. Add the following code to `app.py`
+### Import the auth library
+
+For your application to sign in Azure AD users, start by importing the auth library into your application. Add the following code to `app.py` to import the MSAL Python:
 
 ```python
 # Import Microsoft Authentication Library (MSAL) for Python
@@ -23,7 +23,7 @@ import msal
 from msal.authority import (AuthorityBuilder, AZURE_PUBLIC)
 ```
 
-## Import Flask modules
+### Import Flask modules
 
 Next, import Flask modules to handle render templates and session access.
 
@@ -35,7 +35,7 @@ from flask import Flask, render_template, session, request, redirect, url_for
 from flask_session import Session
 ```
 
-## Initialize the Flask app
+### Initialize the Flask app
 
 After importing the required modules, add code to initialize your Python Flask application. You'll also load the default Flask configurations such as session configs, as shown below. 
 

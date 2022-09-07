@@ -18,8 +18,10 @@ abstract: |
     - Sign in your organizational users and fetch data from a protected web API.
 prerequisites: |
   - An Azure account with permissions to manage app registrations in an Azure Active Directory (Azure AD) tenant. If you don't have an Azure account, [create a free account](https://azure.microsoft.com/free/).
-  - Familiarity with basic Python programming concepts and terminology.
+  - An understanding of basic Python Flask terminology and concepts, such as routing and view functions.
+  - Familiarity with identity concepts such as OpenID Connect protocol, OAuth2.0 authorization framework, and security tokens.
   - Knowledge of what the Microsoft identity platform is and how it works at the beginner level.
+  - [Python 3.8 +](https://www.python.org/downloads/release/python-380/) and [Visual Studio Code](https://code.visualstudio.com/) or any other code editor installed on your device.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner

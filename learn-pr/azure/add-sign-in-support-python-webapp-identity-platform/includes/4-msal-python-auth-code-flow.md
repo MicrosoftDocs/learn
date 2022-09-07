@@ -1,8 +1,8 @@
-For a web app solution to authenticate and authorize users, you'll need to implement the authentication logic and authorization policies. 
+For a web app solution to authenticate and authorize users, you'll need to implement the authentication logic and authorization policies.
 
 In the insurance data solution scenario, your organization chooses to delegate authentication and authorization capabilities to the Microsoft identity platform. The identity platform supports several authentication flows through the Microsoft Authentication Libraries (MSAL). MSAL is available for different application architectures and platforms including .NET, JavaScript, Java, Python, Android, and iOS.
 
-Here, you'll learn how MSAL for Python enables developers to acquire security tokens from the Microsoft identity platform in order to authenticate users and access protected web APIs.
+Here, you'll learn how MSAL Python enables developers to acquire security tokens from the Microsoft identity platform in order to authenticate users and access protected web APIs.
 
 
 ## Why use MSAL Python?
@@ -22,12 +22,11 @@ The recommended calling pattern in webs apps using the authorization code flow i
 - Instantiate a client application. 
 - Acquire a token using the authorization code flow.
 
-The diagram below provides a high-level overview of the Microsoft identity platform implementation of the authorization code flow to sign in users and access a protected web API. 
+The diagram below provides a high-level overview of the Microsoft identity platform implementation of the authorization code flow to sign in users and access a protected web API.
 
 :::image type="content" source="../media/4-auth-code-flow.png" border="false" alt-text="Web app sign in authentication flow":::
 
-As in the preceding diagram, the authorization code grant in MSAL Python consists of two main steps. In the first leg, the application requests an authorization code which is redeemed for an access token. In the second leg, the application uses the access token to call a protected web API. 
-
+As in the preceding diagram, the authorization code flow in MSAL Python consists of two main steps. In the first leg, the application requests an authorization code which is redeemed for an access token. In the second leg, the application uses the access token to call a protected web API.
 
 ### Configure app instance
 
