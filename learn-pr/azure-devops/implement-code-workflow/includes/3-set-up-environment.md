@@ -5,11 +5,11 @@ To do this, you:
 > [!div class="checklist"]
 > * Set up an Azure DevOps project for this module.
 > * Move the work item for this module on Azure Boards to the **Doing** column.
-> * Make sure your project is set up locally so that you can push changes to the pipeline.
+> * Ensure that your project is set up locally so that you can push changes to the pipeline.
 
 ## Get the Azure DevOps project
 
-Here, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
+Here, you ensure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
 The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
 
@@ -24,7 +24,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Sign In**, and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization, and then enter a project name, such as *Space Game - web - Workflow*.
-1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
+1. Select **Yes, I want to fork this repository**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
     > [!IMPORTANT]
     > You need to select this option for the template to connect to your GitHub repository. Select it even if you've already forked the _Space Game_ website project. The template uses your existing fork.

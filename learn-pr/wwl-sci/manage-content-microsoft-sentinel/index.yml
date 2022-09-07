@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.manage-content-microsoft-sentinel
+metadata:
+  title: Manage content in Microsoft Sentinel
+  description: "Manage content in Microsoft Sentinel"
+  ms.date: 07/01/2022
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage content in Microsoft Sentinel
+summary: By the end of this module, you'll be able to manage _content_ in Microsoft Sentinel.
+abstract: |
+  After completing this module, you'll be able to:
+  *   Install a content hub solution in Microsoft Sentinel
+  *   Connect a github repository to Microsoft Sentinel
+prerequisites: |
+  Azure and Microsoft Sentinel experience.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- azure
+- microsoft-sentinel
+subjects:
+- security
+units:
+- learn.wwl.manage-content-microsoft-sentinel.introduction
+- learn.wwl.manage-content-microsoft-sentinel.use-solutions-from-content-hub
+- learn.wwl.manage-content-microsoft-sentinel.use-repositories-for-deployment
+- learn.wwl.manage-content-microsoft-sentinel.knowledge-check
+- learn.wwl.manage-content-microsoft-sentinel.summary-resources
+badge:
+  uid: learn.wwl.manage-content-microsoft-sentinel.badge

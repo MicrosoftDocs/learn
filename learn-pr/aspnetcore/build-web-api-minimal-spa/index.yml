@@ -30,6 +30,7 @@ products:
 prerequisites: |
   - Fundamental understanding of JavaScript.
   - Node.js installed.
+  - Yarn installed.
   - Working knowledge of the web, especially on request and responses in HTTP.
 subjects:
 - development-tools

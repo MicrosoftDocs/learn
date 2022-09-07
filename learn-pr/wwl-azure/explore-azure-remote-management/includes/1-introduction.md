@@ -8,8 +8,8 @@ You need to prepare the specifications to apply the Azure remote management comp
 
 You will:
 
- -  Consider remote management of Azure virtual machines.
- -  Set up the Azure connector for SAP Landscape Management.
- -  Explore access management.
- -  Explore Azure Bastion.
- -  Examine just-in-time virtual machine access.
+- Consider remote management of Azure virtual machines.
+- Set up the Azure connector for SAP Landscape Management.
+- Explore access management.
+- Explore Azure Bastion.
+- Examine just-in-time virtual machine access.

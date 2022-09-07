@@ -3,8 +3,8 @@ uid: learn.microservices-logging-aspnet-core
 metadata:
   title: Instrument a cloud-native ASP.NET Core microservice
   description: This module guides you through implementing logging and monitoring in an ASP.NET Core microservices app in Azure Kubernetes Service.
-  author: scottaddie
-  ms.author: scaddie
+  author: camsoper
+  ms.author: casoper
   ms.date: 10/14/2020
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
@@ -24,6 +24,7 @@ prerequisites: |
   - Familiarity with the Kusto query language at the beginner level
   - Conceptual knowledge of containers and AKS at the intermediate level
   - Access to an Azure subscription with **Owner** privilege
+  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
 levels:
   - intermediate
 roles:

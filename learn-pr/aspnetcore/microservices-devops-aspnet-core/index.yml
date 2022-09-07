@@ -3,9 +3,9 @@ uid: learn.microservices-devops-aspnet-core
 metadata:
   title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
   description: Implement GitHub Actions to build a container image and deploy to Azure Kubernetes Service.
-  ms.date: 09/16/2020
-  author: scottaddie
-  ms.author: scaddie
+  ms.date: 07/22/2022
+  author: camsoper
+  ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
@@ -24,6 +24,7 @@ prerequisites: |
   - Conceptual knowledge of containers and AKS at the beginner level
   - Access to an Azure subscription with **Owner** privilege
   - Access to a GitHub account
+  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
 levels:
   - intermediate
 roles:

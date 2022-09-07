@@ -3,7 +3,7 @@ uid: learn.wwl.secure-application-secrets-use-key-vault
 metadata:
   title: Secure application secrets using Key Vault
   description: "Secure application secrets using Key Vault"
-  ms.date: 06/08/2022
+  ms.date: 07/21/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ prerequisites: |
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   - Pull requests in GitHub, including creating, reviewing, and merging pull requests.
   - Basic GitHub Actions workflows, including triggers and secrets for connecting to your Azure environment.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/3-secure-application-secrets-using-key-vault.svg
 levels:
 - advanced
 roles:
@@ -33,8 +33,8 @@ roles:
 - developer
 products:
 - azure
-- azure-spring-apps
 - github
+- azure-spring-apps
 units:
 - learn.wwl.secure-application-secrets-use-key-vault.introduction
 - learn.wwl.secure-application-secrets-use-key-vault.create-azure-service

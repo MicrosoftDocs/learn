@@ -11,7 +11,7 @@ To do this, you:
 
 To complete this module, you need your own [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true). You can get started with Azure for free.
 
-Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
+Although you don't need a subscription to use Azure DevOps to work in it, here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, sign in to both your Azure subscription and your Azure DevOps organization under the same Microsoft account.
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
@@ -57,23 +57,23 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Prepare Visual Studio Code
 
-Set up Visual Studio Code so you can build the website locally and work with source files.
+Set up Visual Studio Code so you can build the website locally and use the source files.
 
 Visual Studio Code comes with an integrated terminal so you can edit files and work from the command line, all from one place.
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
+1. In the dropdown list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
     :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Screenshot of Visual Studio Code showing where to locate the Bash shell.":::
 
-    The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
+    Use the terminal window to choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
 
     [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
-1. Run the `cd` command to navigate to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
+1. Run the `cd` command to go to the directory you want to work from, like your *home* directory (`~`). You can choose a different directory if you want.
 
     ```bash
     cd ~
@@ -114,7 +114,7 @@ To clone the *Space Game* web project to your computer:
 1. On [GitHub](https://github.com?azure-portal=true), go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-deploy**).
 1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Screenshot that shows how to locate the URL and copy button from the GitHub repository.":::
 1. In Visual Studio Code, go to the terminal window.
 1. In the terminal, move to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
 
@@ -176,7 +176,7 @@ A *remote* is a Git repository where team members collaborate (like a repository
 
 ### Open the project in the file explorer
 
-In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, from the file explorer, you'll now open the project.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and use the files, open the project from the file explorer.
 
 1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
 
@@ -197,20 +197,20 @@ You're now set up to work with the _Space Game_ source code and your Azure Pipel
 
 ### Fetch the branch from GitHub
 
-Here you fetch the `release-pipeline` branch from GitHub and check out, or switch to, that branch.
+Here you fetch the *release-pipeline* branch from GitHub and check out, or switch to, that branch.
 
 This branch contains the _Space Game_ project that you worked with in the previous modules and an Azure Pipelines configuration to start with.
 
 1. In Visual Studio Code, open the integrated terminal.
 
-1. Run the following `git` commands to fetch a branch named `release-pipeline` from the Microsoft repository, and then switch to that branch.
+1. Run the following `git` commands to fetch a branch named *release-pipeline* from the Microsoft repository, and then switch to that branch.
 
     ```bash
     git fetch upstream release-pipeline
     git checkout -B release-pipeline upstream/release-pipeline
     ```
 
-    The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
+    Use the format of this command to get the starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
 
 1. As an optional step, in Visual Studio Code, open the *azure-pipelines.yml* file and familiarize yourself with the initial configuration.
 
@@ -224,7 +224,7 @@ At this point, you have:
 
 * A fork of the **mslearn-tailspin-spacegame-web-deploy** repository in your GitHub account.
 * The **mslearn-tailspin-spacegame-web-deploy** repository cloned locally.
-* A branch named `release-pipeline` that contains the web site source code and an initial Azure Pipelines configuration.
+* A branch named *release-pipeline* that contains the web site source code and an initial Azure Pipelines configuration.
 
 Next, you'll manually trigger the pipeline to run. This step ensures that your project is set up to build from your GitHub repository. The initial pipeline configuration builds the application and produces a builds artifact. Shortly, you'll add a stage that deploys the build artifact to Azure App Service.
 
@@ -258,7 +258,7 @@ Next, you'll manually trigger the pipeline to run. This step ensures that your p
 
 1. From the **Published artifacts** page, expand the **drop** folder.
 
-    You see a _.zip_ file that contains your built application and its dependencies. This is your build artifact.
+    You see a *_.zip_* file that contains your built application and its dependencies. This is your build artifact.
 
     :::image type="content" source="../../shared/media/pipeline-view-published-artifact.png" alt-text="Screenshot of Azure Pipelines showing the published artifact. The artifact includes a .zip file.":::
 

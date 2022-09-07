@@ -1,0 +1,55 @@
+### YamlMime:Module
+uid: learn.wwl.work-arrays-hash-tables-window-powershell-scripts
+metadata:
+  title: Work with arrays and hash tables in Window PowerShell scripts
+  description: "This module explains how to use arrays and hash tables in Windows PowerShell scripts."
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with arrays and hash tables in Window PowerShell scripts
+summary: This module explains how to use arrays and hash tables in Windows PowerShell scripts.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain the purpose of an array.
+  - Work with arrays and their contents.
+  - Work with array lists and their contents.
+  - Manipulate arrays and array lists.
+  - Explain the purpose of a hash table.
+  - Work with hash tables and their contents.
+  - Manipulate hash tables.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts.introduction
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts.define-array-windows
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts.work-array-lists-windows
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts.define-hash-tables-windows
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts.work-hash-tables-windows
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts.knowledge-check
+- learn.wwl.work-arrays-hash-tables-window-powershell-scripts.summary
+badge:
+  uid: learn.wwl.work-arrays-hash-tables-window-powershell-scripts.badge

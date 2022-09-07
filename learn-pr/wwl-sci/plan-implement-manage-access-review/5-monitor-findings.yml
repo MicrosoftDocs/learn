@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-implement-manage-access-review.monitor-findings
+title: Monitor access review findings
+metadata:
+  title: Monitor access review findings
+  description: "Monitor access review findings"
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-monitor-findings.md)]

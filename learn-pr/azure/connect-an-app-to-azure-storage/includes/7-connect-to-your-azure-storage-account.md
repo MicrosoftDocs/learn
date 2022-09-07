@@ -1,4 +1,4 @@
-You have added the required client libraries to your application and are ready to connect to your Azure storage account.
+You've added the required client libraries to your application and are ready to connect to your Azure storage account.
 
 To work with data in a storage account, your app will need two pieces of data:
 
@@ -40,7 +40,7 @@ DefaultEndpointsProtocol=https;AccountName={your-storage};
 
 ## Security
 
-Access keys are critical to providing access to your storage account, and as a result, should not be given to any system or person that you do not want to have access to your storage account. Access keys are the equivalent of a username and password to access your computer.
+Access keys are critical to providing access to your storage account, and as a result, shouldn't be given to any system or person that you don't want to have access to your storage account. Access keys are the equivalent of a username and password to access your computer.
 
 Typically, storage account connectivity information is stored within an environment variable, database, or configuration file.
 
@@ -63,4 +63,4 @@ Rotating a key will invalidate the original key value immediately and will revok
 
 Access keys are the easiest approach to authenticating access to a storage account. However they provide full access to anything in the storage account, similar to a root password on a computer.
 
-Storage accounts offer a separate authentication mechanism called _shared access signatures_ that support expiration and limited permissions for scenarios where you need to grant limited access. You should use this approach when you are allowing other users to read and write data to your storage account. There are links to our documentation on this advanced topic at the end of the module.
+Storage accounts offer a separate authentication mechanism called _shared access signatures_ that support expiration and limited permissions for scenarios where you need to grant limited access. You should use this approach when you're allowing other users to read and write data to your storage account. There are links to our documentation on this advanced topic at the end of the module.

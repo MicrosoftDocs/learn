@@ -1,6 +1,6 @@
 Now that you understand the baseline SaaS offer concepts, we’ll review some information that will help you build a SaaS offer that’s sold through Microsoft. As a reminder, an offer that’s sold through Microsoft is also referred to as a **transact offer**.
 
-The commercial marketplace leverages APIs to manage the entire life cycle of SaaS subscriptions purchased through the marketplace. Subscription activation, usages, updates, and cancellations are facilitated through a set of SaaS subscription APIs. You’ll have to integrate with these APIs to sell your SaaS offer through Microsoft.
+The commercial marketplace leverages APIs to manage the entire lifecycle of SaaS subscriptions purchased through the marketplace. Subscription activation, usages, updates, and cancellations are facilitated through a set of SaaS subscription APIs. You’ll have to integrate with these APIs to sell your SaaS offer through Microsoft.
 
 To facilitate communication about subscription statuses and events between your organization and the commercial marketplace, you’ll need to provide a **landing page URL**, a **connection webhook**, and the **Azure Active Directory identity** that your application will use when communicating with the marketplace. If you decide to use the marketplace metering service to add a consumption-based pricing element to your offer, you’ll also need to integrate with the marketplace metered billing APIs.
 
@@ -8,7 +8,7 @@ To facilitate communication about subscription statuses and events between your 
 
 ### Your offers landing page
 
-Your SaaS offer’s landing page is the URL that customers will be redirected to after getting your offer from Microsoft AppSource or Azure Marketplace. The landing page has two technical requirements:
+Your SaaS offer’s landing page is the URL to which customers will be redirected after getting your offer from Microsoft AppSource or Azure Marketplace. The landing page has two technical requirements:
 
 - It must be integrated with Azure Active Directory (Azure AD) to log customers in before using your application.
 
@@ -28,9 +28,9 @@ Your offer’s connection webhook facilitates communication between the commerci
 
 ### Azure Active Directory (Azure AD) integration
 
-Azure Active Directory (Azure AD) is the Microsoft cloud-based identity and access management service. Azure AD makes SaaS offer purchases from the commercial marketplace easier and more secure. By integrating your offer with Azure AD, you’ll be able to automate the process of provisioning users to your SaaS application.
+Azure Active Directory (Azure AD) is the Microsoft cloud-based identity- and access-management service. Azure AD makes SaaS offer purchases from the commercial marketplace easier and more secure. By integrating your offer with Azure AD, you’ll be able to automate the process of provisioning users to your SaaS application.
 
-You’ll need to provide your Azure AD tenant ID and your Azure AD application ID when you publish your offer in Partner Center. The two identities work together to provide controlled, permission-based, access to your application. You can find both required Azure AD IDs in the Azure portal. For additional details on Azure AD and where to find your tenant and application IDs, you can reference our [documentation on adding technical details for your SaaS offer](/azure/marketplace/create-new-saas-offer-technical).
+You’ll need to provide your Azure AD tenant ID and your Azure AD application ID when you publish your offer in Partner Center. The two identities work together to provide controlled, permission-based access to your application. You can find both required Azure AD IDs in the Azure portal. For additional details on Azure AD and where to find your tenant and application IDs, you can reference our [documentation on adding technical details for your SaaS offer](/azure/marketplace/create-new-saas-offer-technical).
 
 ### Marketplace metered billing API integration
 
@@ -39,7 +39,7 @@ If you decide to use the marketplace metering service to add a usage-based prici
 > [!TIP]
 > We recommend that you send meters on a cadence of no more than once per hour and no less than once per day.
 
-Metered billing also makes use of anomaly detection, which calls out usage levels that seem questionable. This analysis helps prevent customer billing errors due to a variety of causes including:
+Metered billing also makes use of anomaly detection, which calls out usage levels that seem questionable. This analysis helps prevent customer billing errors due to a variety of causes, including:
 
 - Bugs in the meter reporting
 - Configuration errors

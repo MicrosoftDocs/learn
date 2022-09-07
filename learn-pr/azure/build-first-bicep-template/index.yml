@@ -5,8 +5,8 @@ metadata:
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
   ms.date: 11/25/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build your first Bicep template

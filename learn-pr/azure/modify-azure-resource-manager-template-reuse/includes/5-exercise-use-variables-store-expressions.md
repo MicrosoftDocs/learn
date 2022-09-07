@@ -1,4 +1,4 @@
-In this exercise, you store your Azure storage account name expression in an Azure Resource Manager (ARM) template variable. You use that variable to specify the name of the storage account to create. 
+In this exercise, you'll store your Azure storage account name expression in an Azure Resource Manager (ARM) template variable. You'll use that variable to specify the name of the storage account to create. 
 
 In this exercise, you'll use the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 

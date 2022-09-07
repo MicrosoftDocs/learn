@@ -5,8 +5,8 @@ metadata:
   title: Share Bicep modules by using private registries
   description: Work with reusable Bicep modules by using Bicep registries. Create a private registry for your organization. Publish and consume modules by using your organization's registry.
   ms.date: 02/10/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Share Bicep modules by using private registries

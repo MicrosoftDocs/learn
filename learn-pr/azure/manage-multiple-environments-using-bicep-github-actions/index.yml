@@ -25,7 +25,7 @@ prerequisites: |
   - Workflows through GitHub Actions, including jobs and secrets.
   
   To work through the exercises in the module, you'll need:
-  - An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
+  - An Azure account that can create resource groups and Azure Active Directory applications.
   - A GitHub account.
   
   You'll also need the following installed locally:

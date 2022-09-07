@@ -3,7 +3,7 @@ uid: learn.wwl.manage-devices-azure-iot-central
 metadata:
   title: Manage devices in Azure IoT Central
   description: "This module introduces you to the device management capabilities provided by Azure IoT Central and how to use the Azure IoT Central UI tools to perform device management at scale with device groups and jobs."
-  ms.date: 03/15/2022
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -30,8 +30,8 @@ products:
 - azure
 - azure-iot-central
 subjects:
-- iot
 - device-management
+- iot
 units:
 - learn.wwl.manage-devices-azure-iot-central.introduction
 - learn.wwl.manage-devices-azure-iot-central.manage-your-devices

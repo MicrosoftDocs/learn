@@ -17,7 +17,7 @@ When you create your own pipeline, you have two choices: the visual designer or 
 
 ## Additional resources
 
-To further your understanding, see the following additional resources.
+To further your understanding, see the following additional resources:
 
 If you're looking for a more academic approach, [*Continuous Delivery*](https://www.oreilly.com/library/view/continuous-delivery-reliable/9780321670250?azure-portal=true) by Jez Humble and David Farley is a great starting point.
 

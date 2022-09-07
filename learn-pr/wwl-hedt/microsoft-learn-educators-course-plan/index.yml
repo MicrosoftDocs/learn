@@ -3,7 +3,7 @@ uid: learn.wwl.microsoft-learn-educators-course-plan
 metadata:
   title: Microsoft Learn for Educators course planning
   description: "As you begin to prepare for your course delivery, begin by determining the curriculum integration approach. Once you have developed an implementation plan, you can set up your LMS to integrate with Microsoft Learn for benefits such as getting details about published Microsoft Learn content and student reporting. Set certification expectations with your students, provide clarity about certification, why, when, and how; this sets your students up for success. Finally, make sure to record your course in the MSLE portal to ensure you receive updates like resources like lab seats for your class, curriculum updates, and information about student events."
-  ms.date: 04/13/2022
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   *   Understand how faculty members can prepare to take a certification exam.
   *   Request a free or discounted practice test key.
   *   Access free or discounted certification exam vouchers.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/microsoft-learn-educators-course-plan.svg
 levels:
 - beginner
 roles:

@@ -3,9 +3,9 @@ uid: learn.github.github-actions-cd
 metadata:
   title: "Build and deploy applications to Azure by using GitHub Actions"
   description: Create two deployment workflows using GitHub Actions and Microsoft Azure.
-  ms.date: 05/20/2022
-  author: juliakm
-  ms.author: jukullam
+  ms.date: 07/08/2022
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Build and deploy applications to Azure by using GitHub Actions"

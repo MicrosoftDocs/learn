@@ -1,4 +1,4 @@
-Azure Functions Core Tools let you develop functions locally on your own computer by:
+Azure Functions Core Tools lets you develop functions locally on your own computer by:
 
 - Creating the files and folders necessary for a functions project.
 - Providing a Functions host that runs locally from the root directory of your project.
@@ -11,7 +11,25 @@ The Azure Cloud Shell comes with Core Tools, Azure CLI, and an editor you can us
 
 In this exercise, you'll use Cloud Shell to develop your function.
 
-1. In the Cloud Shell on the right, create a new directory called `loan-wizard` and go to that directory.
+1. Azure Cloud Shell includes version 4.x of Azure Functions Core Tools. This version requires your Node.js version to be at least version ~14. Because the default version in Azure Cloud Shell is older, you first need to upgrade the Node.js version in your sandbox. Install the Node Version Manager (NVM) tool by executing the following request in the Cloud Shell on the right.
+
+    ```bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    ```
+
+    You'll need to reinstall NVM every time you get a new Cloud Shell sandbox.
+
+1. Select the restart button at the top left of the Cloud Shell window to restart the shell and make NVM available.
+
+1. Use NVM to install version 14 of Node.js in Cloud Shell.
+
+    ```bash
+    nvm install 14.20.0
+    ```
+
+    Should you need to restart Cloud Shell, you can switch back to the later version of Node.js by using the command: `nvm use 14.20.0`.
+
+1. Create a new directory called `loan-wizard` and go to that directory.
 
     ```bash
     mkdir ~/loan-wizard
@@ -24,7 +42,7 @@ In this exercise, you'll use Cloud Shell to develop your function.
     func init
     ```
 
-1. When prompted to select a worker runtime, enter **2** (for **node**).
+1. When prompted to select a worker runtime, enter **3** (for **node**).
 
 1. When prompted to select a language, enter **1** (for **JavaScript**).
 
@@ -44,7 +62,7 @@ Let's create our function!
 
     Remember, you're running `func new` in the `loan-wizard` project folder you created, which is important.
 
-1. When prompted to select a template, enter **8** (for **HTTP trigger**).
+1. When prompted to select a template, enter **10** (for **HTTP trigger**).
 
 1. When prompted to provide a function name for HTTP trigger, enter **simple-interest**.
 
@@ -92,26 +110,11 @@ The default function implementation that Core Tools created for us in **index.js
 
 1. Save the file by pressing <kbd>Ctrl+S</kbd>, and close the editor by pressing <kbd>Ctrl+Q</kbd>.
 
-## Run the function locally
+## Run the function in Cloud Shell
 
-To run our new function locally and try it out, we'll use `func start` to start the Function Runtime.
+To run our new function locally and try it out, we'll use `func start` to start the Functions runtime (func.exe) in a background process so we can use the command line while it's running. Then, we'll use a command-line tool, `curl`, to interact with the function. 
 
-1. Run `func start` to start the local Functions host. As with `func new`, Cloud Shell should still be in the `loan-wizard` directory.
-
-    ```bash
-    func start
-    ```
-
-    Near the end of the output, you'll see a message that lists `Functions: simple-interest:` is available as a GET or POST HTTP request `http://localhost:7071/api/simple-interest`. 
-    
-    > [!NOTE]
-    > If you see an error message, press <kbd>Ctrl+C</kbd> to stop the host, and make sure that the contents of your index.js file are the same as the sample above.
-
-    This localhost URL isn't published to the web, it's only accessible from tools running in your Cloud Shell session. 
-    
-    We're going to use a command-line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running. If you're using Core Tools from your own computer, you probably wouldn't need to restart the host--you could use `curl` from a second terminal window, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we're limited to a single terminal, so this technique is necessary for this tutorial.
-
-1. Press <kbd>Ctrl+C</kbd> to stop the Functions host. The Cloud Shell should respond **Application is shutting down**.
+If you're using Core Tools from your own computer, you can just use `curl` from a second terminal window or a web browser, and the output produced by Core Tools would appear in real time in the first terminal window. In Cloud Shell, we're limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Run the following command to start the Functions host silently in the background.
 
@@ -119,7 +122,26 @@ To run our new function locally and try it out, we'll use `func start` to start 
     func start &> ~/output.txt &
     ```
 
-    You can ignore the output of this command. The Functions host is now running exactly as before, but its output is being sent to the file `~/output.txt`, and we can continue to use the command line while it's running.
+    As with `func new`, Cloud Shell should still be in the `loan-wizard` directory.
+
+    You can ignore the output of this command. The Functions host is now writing its output to the file `~/output.txt`, and we can continue to use the command line while it's running.
+
+    Use the `ps` command to verify that the `func` process is running.
+
+1. Enter the following command to view the output log.
+
+    ```bash
+    code ~/output.txt
+    ```
+
+    Near the end of the output, you'll see a message that lists `Functions: simple-interest:` is available as a GET or POST HTTP request `http://localhost:7071/api/simple-interest`.
+
+    > [!NOTE]
+    > If you see an error message, press <kbd>Ctrl+C</kbd> to stop the host, and make sure that the contents of your index.js file are the same as the sample above.
+
+    This localhost URL isn't published to the web, it's only accessible from tools running in your Cloud Shell session.
+
+1. Close the editor by pressing <kbd>Ctrl+Q</kbd>.
 
 1. Run the following command to send an HTTP GET request to our locally running function.
 
@@ -137,15 +159,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     This time, the output is `6300`. Our function is working as expected!
 
-1. Stop the background Functions host by running the `pkill` utility.
-
-    ```bash
-    pkill func
-    ```
-
-    Press <kbd>Enter</kbd> a second time to see the confirmation that the host has stopped:  `[1]+  Done func start &> ~/output.txt`.
-
-1. Enter the following command to view the output log.
+1. Enter the following command to again view the output log.
 
     ```bash
     code ~/output.txt

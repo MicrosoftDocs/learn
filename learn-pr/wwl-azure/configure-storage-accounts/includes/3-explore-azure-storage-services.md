@@ -24,9 +24,7 @@ Objects in Blob storage can be accessed from anywhere in the world via HTTP or H
 
 ## Azure files
 
-Azure Files enables you to set up highly available network file shares. Shares can be accessed the Server Message Block (SMB) protocol and the Network File System (NFS) protocol. That means that multiple VMs can share the same files with both read and write access. You can also read the files using the REST interface or the storage client libraries.
-
-One thing that distinguishes Azure Files from files on a corporate file share is that you can access the files from anywhere in the world using a URL that points to the file and includes a shared access signature (SAS) token. You can generate SAS tokens; they allow specific access to a private asset for a specific amount of time.
+Azure Files enables you to set up highly available network file shares. Shares can be accessed the Server Message Block (SMB) protocol and the Network File System (NFS) protocol. That means that multiple VMs can share the same files with both read and write access. You can also read the files using the REST interface or the storage client libraries. 
 
 File shares can be used for many common scenarios:
 

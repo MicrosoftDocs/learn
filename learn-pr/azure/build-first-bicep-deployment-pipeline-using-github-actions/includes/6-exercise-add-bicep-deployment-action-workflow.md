@@ -41,28 +41,38 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
 
+1. At the top of the file, above the `jobs:` line, add a `permissions` section:
+
+   :::code language="yaml" source="code/6-workflow.yml" range="1-8, 13" highlight="5-7" :::
+
+   This change allows the workflow to use a workload identity.
+
+1. Rename the `say-hello` job to `deploy`:
+
+   :::code language="yaml" source="code/6-workflow.yml" range="13-14" highlight="2" :::
+
 1. To remove the `placeholder` step from the workflow definition, delete the bottom two lines of the file.
 
 1. As a first step you will add a task to check out the code to the runner's file system. Add a new step at the bottom of the file:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="9-14" highlight="5" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="13-17" highlight="5" :::
 
    > [!NOTE]
    > It's a good idea to type this code yourself instead of copying and pasting it from this module. Pay attention to the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by displaying squiggly lines.
 
-1. Below the step that you just added, add a task to sign in to your Azure environment. This task will make use of the `AZURE_CREDENTIALS` secret value you created earlier:
+1. Below the step that you just added, add a task to sign in to your Azure environment. This task uses the secrets you defined earlier to sign in by using a workload identity:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="9-17" highlight="6-8" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="13-22" highlight="6-10" :::
 
 1. Below the step that you just added, add another step to perform the Bicep deployment:
 
-   :::code language="yaml" source="code/6-workflow.yml" range="9-22" highlight="9-14" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="13-28" highlight="11-16" :::
 
    Notice that this task uses environment variables for the resource group name, and for the parameter that the Bicep file includes. It also uses the `github.run_number` default environment variable to name the deployment in Azure.
 
 1. Add these variables and their values at the top of your workflow file, below the `on: [workflow_dispatch]` trigger and above the `jobs`: 
 
-   :::code language="yaml" source="code/6-workflow.yml" range="5-8" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="1-13" highlight="9-11" :::
 
 1. Save your changes to the file. Your file should look like this example:
 

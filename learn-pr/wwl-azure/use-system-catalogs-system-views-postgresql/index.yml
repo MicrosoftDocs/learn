@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.use-system-catalogs-system-views-postgresql
+metadata:
+  title: Use system catalogs and system views in PostgreSQL
+  description: "Relational databases can store vast quantities of data, but they also need to hold information about the structure of that data. For an operational database management system (DBMS) information about the structure of tables, and all other objects, security, and concurrency, amongst many other settings and metrics, is required. This information is know as metadata and is stored in system catalogs in Azure Database for PostgreSQL. In addition to directly accessing system catalogs, you can access system views which present the data from system catalogs in more understandable or useful ways."
+  ms.date: 06/23/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use system catalogs and system views in PostgreSQL
+summary: System information is known as metadata and is stored in system catalogs in Azure Database for PostgreSQL. In addition to directly accessing system catalogs, you can access system views.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe system catalogs and system views in Azure Database for PostgreSQL.
+  - Investigate metadata in Azure Database for PostgreSQL.
+prerequisites: |
+  - Demonstrate an understanding of relational databases.
+  - Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-postgresql
+subjects:
+- database
+units:
+- learn.wwl.use-system-catalogs-system-views-postgresql.introduction
+- learn.wwl.use-system-catalogs-system-views-postgresql.overview-of-system-catalogs-views
+- learn.wwl.use-system-catalogs-system-views-postgresql.investigate-metadata
+- learn.wwl.use-system-catalogs-system-views-postgresql.exercise-investigate-metadata
+- learn.wwl.use-system-catalogs-system-views-postgresql.knowledge-check
+- learn.wwl.use-system-catalogs-system-views-postgresql.summary
+badge:
+  uid: learn.wwl.use-system-catalogs-system-views-postgres.badge

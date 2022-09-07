@@ -8,7 +8,7 @@ The three apps of your application use the database hosted by the Azure Database
 
 In this unit, you'll configure the managed identities access to your Key Vault.
 
-Assign access policy for Key Vault for each Spring Cloud app identity by running the following script.
+Assign access policy for Key Vault for each Spring Apps app identity by running the following script.
 
 ```Bash
 az keyvault set-policy \

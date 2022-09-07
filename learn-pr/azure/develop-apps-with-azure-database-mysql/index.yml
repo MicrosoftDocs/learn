@@ -22,7 +22,7 @@ prerequisites: |
   - An understanding of cloud computing and some experience with the Azure portal and CLI.
   - Basic familiarity with relational databases, the Azure Database for MySQL offering, and its features and concepts.
   - Basic knowledge of the PHP server scripting language.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/mysql/build-apps-with-azure-database-for-mysql.svg
 levels:
   - intermediate
 roles: 

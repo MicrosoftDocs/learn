@@ -17,7 +17,7 @@ If you wanted to achieve this availability in an on-premises network, you would 
 - An environmentally controlled datacenter.
 - Uninterruptible power supplies and backup generators.
 
-All these components are expensive and require skill to implement and run. They would also consume significant administrative resources. With Azure, these requirements are already solved; you just create the database, and high availability is built-in.
+All these components are expensive and require skill to implement and run. They would also consume significant administrative resources. With Azure, these requirements are already solved; you just create the database, and high availability is built in.
 
 ### Scalability
 
@@ -44,7 +44,7 @@ Azure Database for MySQL is a PaaS implementation of MySQL in the Azure cloud, b
 
 You get the following features with Azure Database for MySQL:
 
-- High availability features built-in.
+- High availability features built in.
 - Predictable performance.
 - Easy scaling that responds quickly to demand.
 - Secure data, both at rest and in motion.
@@ -99,7 +99,7 @@ The Single Server deployment option for PostgreSQL provides similar benefits as 
 Azure Database for PostgreSQL - Flexible Server provides similar benefits as MySQL Flexible Server. You can use it to provide the greatest levels of availability and convenient restarts.
 
 > [!NOTE]
-> At the time of writing, the Azure Database for PostgreSQL Flexible Server deployment option is in public preview. It's a fully functional service, but doesn't yet offer a service-level agreement (SLA).
+> At the time of writing, the Azure Database for PostgreSQL Flexible Server deployment option is in GA. It's a fully functional service, but doesn't yet offer a service-level agreement (SLA).
 
 #### Azure Database for PostgreSQL Hyperscale (Citus)
 

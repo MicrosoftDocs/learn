@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-compute-networking-services.expressroute
+title: Describe Azure ExpressRoute
+metadata:
+  title: Describe Azure ExpressRoute
+  description: "Describe Azure ExpressRoute"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/11-expressroute.md)]

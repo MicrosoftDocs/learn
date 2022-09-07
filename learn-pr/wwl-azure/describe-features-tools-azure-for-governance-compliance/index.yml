@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.describe-features-tools-azure-for-governance-compliance
+metadata:
+  title: Describe features and tools in Azure for governance and compliance
+  description: "Describe features and tools in Azure for governance and compliance"
+  ms.date: 08/11/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Describe features and tools in Azure for governance and compliance
+summary: This module introduces you to tools that can help with governance and compliance within Azure.
+abstract: |
+  - Describe the purpose of Azure Blueprints
+  - Describe the purpose of Azure Policy
+  - Describe the purpose of resource locks
+  - Describe the purpose of the Service Trust portal
+prerequisites: |
+  *  Basic familiarity with IT terms and concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- cloud-computing
+- cloud-security
+- compliance
+units:
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.introduction
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.describe-purpose-of-azure-blueprints
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.describe-purpose-of-azure-policy
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.describe-purpose-of-resource-locks
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.exercise-configure-resource-lock
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.describe-purpose-of-service-trust-portal
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.knowledge-check
+- learn.wwl.describe-features-tools-azure-for-governance-compliance.summary
+badge:
+  uid: learn.wwl.describe-features-tools-azure-for-governance-compliance.badge

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-arrays-hash-tables-window-powershell-scripts.work-array-lists-windows
+title: Work with array lists in Windows PowerShell scripts
+metadata:
+  title: Work with array lists in Windows PowerShell scripts
+  description: "Work with array lists in Windows PowerShell scripts"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-work-array-lists-windows.md)]

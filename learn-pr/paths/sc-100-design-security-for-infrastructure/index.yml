@@ -3,7 +3,7 @@ uid: learn.wwl.sc-100-design-security-for-infrastructure
 metadata:
   title: 'SC-100: Design security for infrastructure'
   description: 'SC-100: Design security for infrastructure'
-  ms.date: 06/09/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ prerequisites: |
   *   Experience with hybrid and cloud implementations.
 summary: |
   Learn how to design for infrastructure security, including architecture best practices, endpoint security and cloud security for different service models (SaaS, PaaS and IaaS).
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/sc-100-design-security-for-infrastructure.svg
 levels:
 - advanced
 roles:
@@ -25,6 +25,9 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - microsoft-sentinel
+subjects:
+- architecture
+- security
 modules:
 - learn.wwl.understand-architecture-best-practices-how-change-cloud
 - learn.wwl.design-strategy-for-secure-server-client-endpoints

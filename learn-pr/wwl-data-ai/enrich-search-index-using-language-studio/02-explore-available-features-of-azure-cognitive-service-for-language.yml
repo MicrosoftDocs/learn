@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enrich-search-index-using-language-studio.explore-available-features-of-azure-cognitive-service-for-language
+title: Explore the available features of Azure Cognitive Service for Language
+metadata:
+  title: Explore the available features of Azure Cognitive Service for Language
+  description: "Explore the available features of Azure Cognitive Service for Language"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/02-explore-available-features-of-azure-cognitive-service-for-language.md)]

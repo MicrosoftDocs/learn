@@ -5,10 +5,11 @@ metadata:
   title: Exercise - Store data locally with SQLite
   description: Exercise - Store data locally with SQLite.
   ms.date: 3/19/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-store-data-locally-with-sqlite.md)]

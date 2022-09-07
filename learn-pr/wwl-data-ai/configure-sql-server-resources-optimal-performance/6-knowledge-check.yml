@@ -4,12 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/20/2021
+  ms.date: 07/13/2022
   author: wwlpublish
-  ms.author: kadelane
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
@@ -43,7 +44,7 @@ quiz:
     - content: "Storage configuration"
       isCorrect: true
       explanation: "That's correct. The resource provider will configure your storage pool."
-    - content: "Changing max degree of parallelism"
+    - content: "Availability Groups"
       isCorrect: false
       explanation: "That's incorrect. This option is not configured by the provider."
     - content: "Maintenance plan"

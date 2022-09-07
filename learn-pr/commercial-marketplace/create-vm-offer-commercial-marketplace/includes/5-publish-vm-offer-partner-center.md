@@ -4,7 +4,7 @@ The publishing process is broken down into several steps, each of which requires
 
 ### Offer setup
 
-After clicking “+ New offer” on the the commercial marketplace overview page in Partner Center, you’ll be taken to the offer setup page. This page is where you’ll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
+After clicking **+ New offer** on the commercial marketplace overview page in Partner Center, you’ll be taken to the offer setup page. This page is where you’ll configure your CRM or HTTP endpoint to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads) from Microsoft.
 
 ### Configuring your offer’s properties
 
@@ -18,7 +18,7 @@ The properties tab is also where you’ll provide the legal terms and conditions
 
 :::image type="content" source="../media/8-vm-offer-listing.png" alt-text="Screenshot of the offer listing step of the publishing process in Partner Center.":::
 
-In the offer listing tab, you’ll provide product information that gets displayed to customers in Azure Marketplace. This information includes descriptions of your VM-based software, user instructions, links to useful product information, and support & engineering contacts for customers. This page is also where you provide media—such as logos, screenshots, and videos—that will be displayed on your products page in Azure Marketplace.
+In the offer listing tab, you’ll provide product information that gets displayed to customers in Azure Marketplace. This information includes descriptions of your VM-based software, user instructions, links to useful product information, and support & engineering contacts for customers. This page is also where you'll provide media—such as logos, screenshots, and videos—that will be displayed on your products page in Azure Marketplace.
 
 For guidance to help you complete this step, reference our documentation on [offer listing best practices](/azure/marketplace/gtm-offer-listing-best-practices) and [marketing best practices](/azure/marketplace/gtm-marketing-best-practices).
 
@@ -31,30 +31,31 @@ When you publish your offer, you’ll be able to identify a preview audience tha
 :::image type="content" source="../media/9-vm-offer-plan-overview.png" alt-text="Screenshot of the plan overview page of the publishing process in Partner Center. This step is where publishers create new plans for their offer.":::
 
 In the plan overview, you’ll create your VM offer’s plans. Remember, all VM offers must have at least one plan. Your VM offer’s plans define the pricing and availability of your product to customers.
+
 You’ll choose the Azure regions in which your plan should be available on the plan setup page. Your plan must be available in at least one of the two following Azure regions:
 
-:::image type="content" source="../media/10-vm-offer-plan-setup.png" alt-text="Screenshot of the plan setup page of the publishing process in Partner Center. This step is where publishers choose the Azure regions their plan will be available in.":::
+:::image type="content" source="../media/10-vm-offer-plan-setup.png" alt-text="Screenshot of the plan setup page of the publishing process in Partner Center. This step is where publishers choose the Azure regions in which their plan will be available.":::
 
 - **Azure Global**: Makes your plan available to customers in all Azure Global regions that have commercial marketplace integration.
 
 - **Azure Government**: Makes your plan available in the [Azure Government](/azure/azure-government/documentation-government-welcome) region, which provides controlled access for customers from US federal, state, local, or tribal entities. If you want to make your plan available to these entities, you’ll need to ensure that your company and offer meet all required compliance controls, security measures, and other Azure Government criteria.
 
-On the pricing and availability tab, you’ll choose which markets your VM offer will be available in from a list of over 140 countries. Most markets are selected by default. For additional information to help you select market availability, check out our [documentation on the topic](/azure/marketplace/azure-vm-create-plans#markets).
+On the pricing and availability tab, you’ll choose in which markets your VM offer will be available from a list of more than 140 countries. Most markets are selected by default. For additional information to help you select market availability, check out our [documentation on the topic](/azure/marketplace/azure-vm-plan-pricing-and-availability#markets).
 
 :::image type="content" source="../media/11-vm-offer-markets.png" alt-text="Screenshot of the market selection step of the publishing process in Partner Center. This step is part of the pricing and availability step of the plan creation process.":::
 
-This is also where you select your offer’s license model. As a reminder, the license model dictates whether your customers can purchase a license to use your software through Microsoft. You’ll have two licensing options:
+This is also where you'll select your offer’s license model. As a reminder, the license model dictates whether your customers can purchase a license to use your software through Microsoft. You’ll have two licensing options:
 
 - **Usage-based monthly billed plan**: Customers can purchase a license for your software from Azure Marketplace and Microsoft processes payments from customers on your behalf.
 
-- **Bring your own license (BYOL)**: Customers have to purchase a subscription to your application outside of Azure Marketplace. You’ll be responsible for validating customer subscriptions, facilitating payments, managing active subscriptions, metering usages (if applicable), and invoicing  over the life of the subscription.
+- **Bring your own license (BYOL)**: Customers have to purchase a subscription to your application outside of Azure Marketplace. You’ll be responsible for validating customer subscriptions, facilitating payments, managing active subscriptions, metering usages (if applicable), and invoicing over the life of the subscription.
 
-After picking your license model and entering pricing information, you tell us whether you want to enable free trials and whether this is a public or private plan. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers you choose.
+After selecting your license model and entering pricing information, you'll tell us whether you want to enable free trials and whether this is a public or private plan. As a refresher, public plans are made available to all customers, while private plans will only be made available to specific customers you choose.
 
 >[!TIP]
 >To publish a private plan, you'll need to know the Azure tenant IDs of your customers.
 
-For more detailed guidance on creating plans for your VM offer, reference our [documentation on VM offer plans](/azure/marketplace/azure-vm-create-plans)
+For more detailed guidance on creating plans for your VM offer, reference our [documentation on VM offer plans](/azure/marketplace/azure-vm-create-plans).
 
 ### Completing your offer’s technical configuration
 
@@ -64,11 +65,11 @@ When you get to your offer's technical configuration, you'll be prompted to prov
 
 - Your VM's operating system, either Windows or Linux
 
-- Operating system information for your VM image, including:
+- Operating-system information for your VM image, including:
 
-  - For Windows VMs, you'll select the version of Windows Server you used to create your image in the "release" field.
+  - For Windows VMs, you'll select the version of Windows Server you used to create your image in the **Release** field.
   
-  - For Linux VMs, you'll select the version of the Linux OS in the "vendor" field.
+  - For Linux VMs, you'll select the version of the Linux OS in the **Vendor** field.
   
   - An OS-friendly name for the operating system, which will be visible to customers that deploy your VM offer. As an example, if you used Ubuntu 18.04 LTS to create your base image, you could use "Ubuntu 18.04 LTS" as the OS-friendly name.
 
@@ -83,4 +84,4 @@ When you get to your offer's technical configuration, you'll be prompted to prov
 When creating your plans, you can reuse the technical configuration from another one of your offer's plans. If you choose to reuse a technical configuration from another plan, the technical configuration tab will not be shown for the plan you’re creating. The reused technical configuration, including any updates you make in the future, will be used for this plan. You won't be able to change this setting after you publish the offer.
 
 >[!NOTE]
->You should reuse the technical configuration whenever two or more of your offer's plans use the same VM image. Doing so makes it easier to keep your images up to date—just update the image once and all plans based on that technical configuration will also get updated.
+>You should reuse the technical configuration whenever two or more of your offer's plans use the same VM image. Doing so makes it easier to keep your images up to date; just update the image once and all plans based on that technical configuration will also get updated.

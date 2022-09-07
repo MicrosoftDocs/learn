@@ -1,32 +1,37 @@
-## Scenario
+Access to Azure resources is controlled through user accounts and identities that are defined in Azure Active Directory (Azure AD). Azure AD supports group accounts to help you organize user accounts for easier administration.
 
-Every user who needs access to Azure resources needs an Azure user account. A user account contains all the information needed to authenticate the user during the sign-on process. Group accounts lets you organize user accounts so administration is easier.
-
-You need to create and manage user and group accounts.
-
-## Skills measured
-
-Managing user and groups accounts is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
-
-Manage Azure identities and governance (15-20%)
-
-Manage Azure AD objects
-
- -  Create users and groups.
- -  Manage user and group properties.
- -  Manage device settings.
- -  Perform bulk user updates.
- -  Manage guest accounts.
+In this module, your company wants to take advantage of the user and group account features in Azure AD. You need to understand the concepts of user accounts and group accounts. You're looking for information about how to create, configure, and manage these accounts. Your organization needs support for bulk configuration of settings, group account organization, and managing accounts across multiple directories.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Configure users accounts and user account properties.
- -  Create new user accounts.
- -  Import bulk user accounts with a template.
- -  Configure group accounts and assignment types.
+- Configure users accounts and user account properties.
+
+- Create new user accounts.
+
+- Import bulk user accounts with a template.
+
+- Configure group accounts and assignment types.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). The module concepts are covered in:
+
+Manage identities and governance in Azure (15-20%)
+
+- Manage Azure Active Directory objects
+
+   - Create users and groups
+
+   - Manage user and group properties
+
+   - Manage device settings
+
+   - Perform bulk user updates
+   
+   - Manage guest accounts
 
 ## Prerequisites
 
-None
+None.

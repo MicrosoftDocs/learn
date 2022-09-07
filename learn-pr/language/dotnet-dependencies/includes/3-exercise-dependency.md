@@ -47,11 +47,11 @@ The terminal window displays "Hello World!" as output.
 
 ## Set up Visual Studio Code for .NET debugging
 
-Open Program.cs. The first time you open a C# file in Visual Studio Code, you get a prompt to install recommended extensions for C#. Select the **Install** button in the prompt.
+Open Program.cs. The first time you open a C# file in Visual Studio Code, you'll get a prompt to install recommended extensions for C#. Select the **Install** button in the prompt.
 
 :::image source="../media/install-recommended-extensions.png" alt-text="Screenshot of the Visual Studio Code prompt for recommended extensions.":::
 
-Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select  **Yes**.
+Visual Studio Code installs the C# extension. It shows an additional prompt to add required assets to build and debug your project. Select **Yes**.
 
 :::image source="../media/install-required-assets.png" alt-text="Screenshot of the Visual Studio Code prompt for required assets.":::
 
@@ -59,7 +59,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
 
 ## Add a NuGet package by using the .NET Core tool
 
-1. Open **Program.cs**. It should look like this.
+1. Open **Program.cs**. It should look like this:
 
     ```csharp
     Console.WriteLine("Hello, World!");
@@ -67,13 +67,13 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
 
     The preceding function is run at the start of the application and outputs a string to the console. Let's add Humanizer and manipulate data and write it to the console.
 
-1. Install the Humanizer library by running the following command.
+1. Install the Humanizer library by running the following command:
 
     ```dotnetcli
     dotnet add package Humanizer --version 2.7.9
     ```
 
-    Open the **DotNetDependencies.csproj** file and find the `ItemGroup` section. You should now have an entry that looks like this one.
+    Open the **DotNetDependencies.csproj** file and find the `ItemGroup` section. You should now have an entry that looks like this one:
 
     ```xml
     <ItemGroup>
@@ -81,7 +81,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     </ItemGroup>
     ```
 
-1. Add the following content at the top of the Program.cs file to initialize Humanizer.
+1. Add the following content at the top of the Program.cs file to initialize Humanizer:
 
     ```csharp
     using Humanizer;
@@ -95,7 +95,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     Console.WriteLine("Hello, World!");
     ```
 
-1. Add the following content to the Program.cs file to the bottom of file under the `Console.WriteLine("Hello, World!");`.
+1. Add the following content to the Program.cs file to the bottom of file under the `Console.WriteLine("Hello, World!");`:
 
     ```csharp
     static void HumanizeQuantities()
@@ -124,7 +124,7 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     HumanizeDates();
     ```
 
-1. Save the file (**File** > **Save** or <kbd>CTRL + S</kbd>). Run the application by running the following command in the terminal.
+1. Save the file (**File** > **Save** or <kbd>CTRL + S</kbd>). Run the application by running the following command in the terminal:
 
     ```dotnetcli
     dotnet run

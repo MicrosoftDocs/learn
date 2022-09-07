@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search
+metadata:
+  title: Implement advanced search features in Azure Cognitive Search
+  description: "Use more advanced features of Azure Cognitive Search to improve your existing search solutions. Learn how to change the ranking on documents, boost the most important terms to your organization, and allow searching in multiple languages."
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Implement advanced search features in Azure Cognitive Search
+summary: Use more advanced features of Azure Cognitive Search to improve your existing search solutions. Learn how to change the ranking on documents, boost terms, and allow searching in multiple languages.
+abstract: |
+  In this module, you'll learn how to:
+  - Improve the ranking of a document with term boosting
+  - Improve the relevance of results by adding scoring profiles
+  - Improve an index with analyzers and tokenized terms
+  - Enhance an index to include multiple languages
+  - Improve search experience by ordering results by distance from a given reference point
+prerequisites: |
+  - Familiarity with Microsoft Azure
+  - Application development experience with C# or Python
+  - Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search](/learn/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-cognitive-search
+subjects:
+- artificial-intelligence
+units:
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.introduction
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-ranking-of-document-term-boosting
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-relevance-of-results-add-score-profiles
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-index-analyzers-tokenized-terms
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.enhance-index-to-include-multiple-languages
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-search-experience-by-ordering-results-by-distance-from-given-reference-p
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.exercise-implement-enhancements-to-search-results
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.knowledge-check
+- learn.wwl.implement-advanced-search-features-azure-cognitive-search.summary
+badge:
+  uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.badge

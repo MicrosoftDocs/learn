@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-linting-unit-test-github-actions.run
+title: Run linting and unit testing
+metadata:
+  title: Run linting and unit testing
+  description: "Run linting and unit testing"
+  ms.date: 07/12/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-run.md)]

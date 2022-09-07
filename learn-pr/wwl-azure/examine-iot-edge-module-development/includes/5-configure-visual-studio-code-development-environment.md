@@ -8,10 +8,8 @@ You can use a computer or a virtual machine running Windows, macOS, or Linux as 
 
  -  To develop Windows modules, use a Windows computer running version 1809/build 17763 or newer.
  -  To develop Linux modules, use a Windows computer that meets the requirements for Docker Desktop.
-    
      -  Windows 10 64-bit: Pro, Enterprise, or Education (Build 15063 or later).
      -  Hyper-V and Containers Windows features must be enabled. The following hardware prerequisites are required to successfully run Client Hyper-V on Windows 10:
-        
          -  64-bit processor with Second Level Address Translation (SLAT).
          -  4 GB system RAM.
          -  BIOS-level hardware virtualization support must be enabled in the BIOS settings.
@@ -23,15 +21,14 @@ Install Visual Studio Code first and then add the following extensions:
  -  Azure IoT Tools.
  -  Docker extension.
  -  Visual Studio extension(s) specific to the language you're developing in:
-    
      -  C\#, including Azure Functions: C\# extension.
      -  Python: Python extension.
      -  Java: Java Extension Pack for Visual Studio Code.
      -  C: C/C++ extension.
 
-## Language-specific tools
+### Prerequisites
 
-You'll also need to install some other, language-specific tools to develop your module:
+The module templates for some languages and services have prerequisites that are necessary to build the project folders on your development machine with Visual Studio Code.
 
  -  C\#, including Azure Functions: .NET Core 2.1 SDK.
  -  Python: Python and Pip for installing Python packages (typically included with your Python installation).

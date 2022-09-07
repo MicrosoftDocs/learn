@@ -8,7 +8,7 @@ Let's get things set up!
 
 ## Create an Azure SQL Database
 
-1. First, let's set up some variables. Replace the following values that are shown in `[]` with values of your choice. Note that the `[password]` must have at least eight characters, and contain characters from at least three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. Save the login for use later.
+1. First, let's set up some variables. Replace the following values that are shown in `[]` with values of your choice. The `[password]` must have at least eight characters, and contain characters from at least three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. Save the login for use later.
 
     ```bash
     export ADMINLOGIN='[ServerAdmin]'
@@ -29,7 +29,7 @@ Let's get things set up!
         --admin-password $PASSWORD
     ```
 
-1. Now, run the following command to create the database called **marketplaceDb** on the logical server you just created. This will use the _AdventureWorksLT_ database as a template so we'll have some pre-populated tables to work with.
+1. Now, run the following command to create the database called **marketplaceDb** on the logical server you created. This command will use the _AdventureWorksLT_ database as a template so we'll have some pre-populated tables to work with.
 
     ```azurecli
     az sql db create --resource-group $RESOURCEGROUP \
@@ -45,7 +45,7 @@ Let's get things set up!
     az sql db show-connection-string --client sqlcmd --name marketplaceDb --server $SERVERNAME | jq -r
     ```
 
-    Your output should resemble the following example. Keep this handy as you'll need this command to connect to your database later in this module. Note the `[username]` and `[password]` placeholders in the command that you will want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
+    Your output should resemble the following example. Keep this handy as you'll need this command to connect to your database later in this module. Note the `[username]` and `[password]` placeholders in the command that you'll want to replace with the `ADMINLOGIN` and `PASSWORD` credentials you specified in variables earlier.
 
     ```output
     sqlcmd -S tcp:server12345.database.windows.net,1433 -d marketplaceDb -U '[username]' -P '[password]' -N -l 30

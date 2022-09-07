@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Xamarin.Android
   description: "Create fully native Android apps to take advantage of the power, features, and performance of the Android platform."
   ms.date: 02/17/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Introduction to Xamarin.Android
@@ -29,8 +29,6 @@ products:
 - xamarin
 - vs
 - dotnet
-subjects:
-- cloud-computing
 units:
 - learn-xamarin.introduction-to-xamarin-android.1-introduction
 - learn-xamarin.introduction-to-xamarin-android.2-what-is-xamarin-android

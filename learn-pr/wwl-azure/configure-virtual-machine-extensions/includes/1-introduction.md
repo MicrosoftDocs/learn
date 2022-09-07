@@ -1,6 +1,6 @@
 ## Scenario
 
-Your company has created numerous scripts and processes to ensure virtual machines are updated. This scripts also run various configuration tasks.
+Your company has created numerous scripts and processes to ensure virtual machines are updated. These scripts also run various configuration tasks.
 
 You need to automate the process. Virtual machine extensions will allow you to avoid configuration drift.
 

@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-machine-learn-operations
 metadata:
   title: Introduction to machine learning operations (MLOps)
   description: Introduction to machine learning operations (MLOps)
-  ms.date: 05/07/2022
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   Some familiarity with machine learning and Azure Machine Learning.
 summary: |
   Machine learning operations (MLOps) applies DevOps principles to machine learning projects. Learn about which DevOps principles help in scaling a machine learning project from experimentation to production.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/introduction-machine-learn-operations.svg
 levels:
 - beginner
 roles:

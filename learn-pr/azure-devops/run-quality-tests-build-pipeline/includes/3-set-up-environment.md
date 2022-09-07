@@ -69,6 +69,7 @@ To set up the work item:
 1. In the **Create unit tests** work item, select the **To Do** down arrow, and then assign the work item to yourself.
 
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
+
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
     :::image type="content" source="../media/3-azure-boards-wi3-doing.png" alt-text="A screenshot of Azure Boards showing the unit test card now in the Doing column.":::

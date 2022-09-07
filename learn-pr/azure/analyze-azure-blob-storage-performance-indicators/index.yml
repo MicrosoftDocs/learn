@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure.analyze-azure-blob-storage-performance-indicators
+metadata:
+  title: 'Analyze performance indicators for Azure Blob Storage'
+  description: Learn how to analyze the performance indicators for Azure Blob Storage.
+  ms.date: 08/01/2022
+  author: ciphertxt
+  ms.author: schoag
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Analyze performance indicators for Azure Blob Storage'
+summary: Learn how to analyze the performance indicators for Azure Blob Storage.
+abstract:  | 
+  After completing this module, you'll be able to:
+  - Describe the performance characteristics of Azure Blob Storage.
+  - Identify the use cases of Azure Premium Blob Storage and explain why the Premium tier is the optimum option for these specific workloads.
+  - Optimize and validate performance benefits with Azure Premium Blob Storage. 
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - A basic understanding of Azure Blob Storage.
+  - Familiarity with storage performance characteristics.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- data-engineer
+- student
+- technology-manager
+products:
+- azure
+- azure-blob-storage
+units:
+- learn.azure.analyze-azure-blob-storage-performance-indicators.introduction
+- learn.azure.analyze-azure-blob-storage-performance-indicators.describe-azure-blob-storage-performance-indicators
+- learn.azure.analyze-azure-blob-storage-performance-indicators.describe-high-performance-workloads-benefit-azure-blob-premium-storage
+- learn.azure.analyze-azure-blob-storage-performance-indicators.optimize-validate-performance-benefits-azure-premium-blob-storage
+- learn.azure.analyze-azure-blob-storage-performance-indicators.validate-performance-benefits-azure-premium-blob-storage
+- learn.azure.analyze-azure-blob-storage-performance-indicators.knowledge-check
+- learn.azure.analyze-azure-blob-storage-performance-indicators.summary
+badge:
+  uid: learn.azure.analyze-azure-blob-storage-performance-indicators.badge 

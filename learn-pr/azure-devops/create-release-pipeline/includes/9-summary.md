@@ -1,4 +1,4 @@
-Great work. You've successfully deployed the _Space Game_ website to Azure App Service by using Azure Pipelines. If you've gone through the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you know you've taken a big step. You now have a live environment! Take advantage of it and run additional tests or make it available to your users.
+Great work! You've successfully deployed the _Space Game_ website to Azure App Service by using Azure Pipelines. If you've gone through the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you know you've taken a big step. You now have a live environment! Take advantage of it and run additional tests or make it available to your users.
 
 Continuous delivery helps you release reliable software updates to your customers as rapidly as the business demands. Your customers can have the latest features and fixes as soon as you're ready to release them. By using the analytics provided by Azure Pipelines, your team can pinpoint hot spots and areas for improvement.
 

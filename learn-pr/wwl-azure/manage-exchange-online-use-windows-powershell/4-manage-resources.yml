@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-exchange-online-use-windows-powershell.manage-resources
+title: Manage resources in Exchange Online by using Windows PowerShell
+metadata:
+  title: Manage resources in Exchange Online by using Windows PowerShell
+  description: "Manage resources in Exchange Online by using Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-manage-resources.md)]

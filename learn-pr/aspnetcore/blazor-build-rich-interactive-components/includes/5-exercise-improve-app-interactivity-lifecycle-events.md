@@ -99,7 +99,7 @@ Currently, the price is correct, but the size is showing as the default 12 inche
     public int DefaultSize { get; set; } = 12;
     ```
 
-1. In the file explorer, expand **Model**, then select **Pizza.cs**.
+1. In the file explorer, expand **Model**, then select **OrderState.cs**.
 1. Change the `ShowConfigurePizzaDialog` method to access the DefaultSize after the new pizza has been created.
 
     ```csharp

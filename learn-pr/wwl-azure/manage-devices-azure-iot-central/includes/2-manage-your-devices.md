@@ -12,7 +12,11 @@ In addition to the tools that are built into the IoT Central application, you ca
  -  Set writable properties on a device.
  -  Call commands on a device.
 
-For more information on using the IoT Central REST API to manage devices, see: [How to use the IoT Central REST API to control devices](/azure/iot-central/core/howto-control-devices-with-rest-api).
+For more information on using the IoT Central REST APIs, see the following resources:
+
+ -  Use the REST API to manage devices: [https://docs.microsoft.com/azure/iot-central/core/howto-manage-devices-with-rest-api](/azure/iot-central/core/howto-manage-devices-with-rest-api).
+ -  Use the REST API to query devices: [https://docs.microsoft.com/azure/iot-central/core/howto-query-with-rest-api](/azure/iot-central/core/howto-query-with-rest-api)
+ -  General reference to the IoT Central REST API: [https://docs.microsoft.com/rest/api/iotcentral/](/rest/api/iotcentral/)
 
 ## View your devices
 

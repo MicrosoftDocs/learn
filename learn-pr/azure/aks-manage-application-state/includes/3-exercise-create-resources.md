@@ -201,7 +201,7 @@ To make this application available to everyone, you'll need to create a service 
           port: 80
           targetPort: 3000
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -239,7 +239,7 @@ To make this application available to everyone, you'll need to create a service 
           port: 80
           targetPort: 3000
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-backend
@@ -365,7 +365,7 @@ Next, you'll create the networking resources that this application needs to be o
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-frontend
@@ -403,7 +403,7 @@ Next, you'll create the networking resources that this application needs to be o
           port: 80
           targetPort: 80
     ---
-    apiVersion: networking.k8s.io/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: ship-manager-frontend

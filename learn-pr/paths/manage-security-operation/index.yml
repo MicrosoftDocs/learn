@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.manage-security-operation
 metadata:
-  title: 'AZ-500 part 4: Manage security operation'
-  description: 'AZ-500 part 4: Manage security operation'
-  ms.date: 01/04/2022
+  title: 'AZ-500: Manage security operation'
+  description: 'AZ-500: Manage security operation'
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'AZ-500 part 4: Manage security operation'
+title: 'AZ-500: Manage security operation'
 prerequisites: |
   - None
 summary: |

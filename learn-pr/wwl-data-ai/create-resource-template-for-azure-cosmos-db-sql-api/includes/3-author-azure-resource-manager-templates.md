@@ -91,7 +91,7 @@ A container object must contain, at a minimum, the following properties:
 - properties.resource.id
 - properties.resource.partitionkey.paths[]
 
-A database can also optionally contain the following properties:
+A container can also optionally contain the following properties:
 
 - properties.options.throughput
 - properties.options.autoscaleSettings.maxThroughput

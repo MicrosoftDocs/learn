@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.monitor-authentication-methods
+metadata:
+  moduleType: build-your-first-using-product 
+  title: Monitor and report on authentication methods used in Azure AD                     
+  description: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."                        # Copy your 'apply' Learning Objective here (see below)
+  ms.date: 07/21/2022                        
+  author: MarkusVi                 
+  ms.author: markvi                      
+  ms.topic: interactive-tutorial            
+  ms.prod: learning-azure                   
+title: Monitor and report on authentication methods used in Azure AD
+summary: "This module teaches you how to create an Azure AD workbook that helps you to create a report of the authentication methods used in your tenant."
+abstract: |
+   By the end of this module, you'll be able to:
+   - Choose the right activity logs.
+   - Route your activity logs to a different endpoint.
+   - Write queries to retrieve the activity data you need.
+   - Create a new Azure AD workbook to generate a rich report of your activity data.
+   - Use an existing Azure AD workbook to solve your business problem.
+
+prerequisites: |
+  - Familiarity with Azure AD
+
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+- azure
+- active-directory
+subjects:
+- cloud-computing
+units:
+- learn.monitor-authentication-methods.introduction
+- learn.monitor-authentication-methods.use-logs-get-status-information
+- learn.monitor-authentication-methods.exercise-use-logs-get-status-information
+- learn.monitor-authentication-methods.integrate-logs-with-log-analytics
+- learn.monitor-authentication-methods.exercise-integrate-logs-with-log-analytics
+- learn.monitor-authentication-methods.write-kql-queries
+- learn.monitor-authentication-methods.exercise-write-kql-queries
+- learn.monitor-authentication-methods.create-azure-ad-workbook
+- learn.monitor-authentication-methods.exercise-create-azure-ad-workbook
+- learn.monitor-authentication-methods.knowledge-check
+- learn.monitor-authentication-methods.summary
+badge:
+  uid: learn.monitor-authentication-methods.badge

@@ -3,8 +3,8 @@ uid: learn.wwl.specify-security-requirements-for-applications
 metadata:
   title: Specify security requirements for applications
   description: "Learn how to specify cybersecurity requirements for applications."
-  ms.date: 06/08/2022
-  author: hrasheed-msft
+  ms.date: 07/28/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/1-specify-security-requirements-for-applications.svg
 levels:
 - advanced
 roles:
@@ -26,6 +26,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
+- security
 units:
 - learn.wwl.specify-security-requirements-for-applications.introduction
 - learn.wwl.specify-security-requirements-for-applications.understand-application-threat-modeling
@@ -37,6 +40,3 @@ units:
 - learn.wwl.specify-security-requirements-for-applications.summary
 badge:
   uid: learn.wwl.specify-security-requirements-for-applications.badge
-subjects:
-- security
-- architecture

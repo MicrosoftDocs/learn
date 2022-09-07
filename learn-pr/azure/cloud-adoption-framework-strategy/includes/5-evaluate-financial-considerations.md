@@ -80,7 +80,7 @@ Creating a financial model that accurately represents the full business value of
 
 Return on investment (ROI) often is an important criteria for the C-suite or the board of directors. ROI is used to compare different ways to invest limited capital resources. The formula for ROI is fairly simple. The details you'll need to create each input to the formula might not be as simple, though. Essentially, ROI is the amount of return produced from an initial investment. ROI usually is represented as a percentage:
 
-:::image type="content" source="../media/formula-roi.png" alt-text="Image of a math equation that shows that R O I equals gain from investment minus cost of investment divided by cost of investment." border="false":::
+:::image type="content" source="../media/formula-roi.png" alt-text="Image of a math equation that shows that R O I equals gain from investment divided by cost of investment." border="false":::
 
 In the next sections, we'll walk through the data you'll need to calculate the initial investment and the gain from investment (earnings).
 

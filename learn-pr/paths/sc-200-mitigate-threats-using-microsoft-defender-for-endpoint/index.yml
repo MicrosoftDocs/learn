@@ -28,7 +28,6 @@ modules:
 - learn-m365.m365-security-threat-protect
 - learn.wwl.deploy-microsoft-defender-for-endpoints-environment
 - learn.wwl.implement-windows-10-security-enhancements-with-microsoft-defender-for-endpoint
-- learn.wwl.manage-alerts-incidents-microsoft-defender-for-endpoints
 - learn.wwl.perform-device-investigations-microsoft-defender-for-endpoints
 - learn.wwl.perform-actions-device-microsoft-defender-for-endpoint
 - learn.wwl.perform-evidence-entities-investigations-microsoft-defender-for-endpoint

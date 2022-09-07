@@ -75,13 +75,13 @@ To make commands easier to run, start by selecting a default region. After you s
 
 Here, create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
-1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
+1. From Cloud Shell, generate a random number, which makes it easier to create globally unique names for certain services in the next step.
 
     ```bash
     resourceSuffix=$RANDOM
     ```
 
-1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. Note that these commands use double quotes, which instructs Bash to interpolate the variables using the inline syntax.
+1. Create globally unique names for your App Service Web App, Azure Container Registry, and Azure Database for MySQL server. These commands use double quotes, which instruct Bash to interpolate the variables using the inline syntax.
 
     ```bash
     webName="java-container-cicd-${resourceSuffix}"
@@ -101,7 +101,7 @@ Here, create Bash variables to make the setup process more convenient and less e
 This solution requires several Azure resources for deployment, which you create now.
 
    > [!NOTE]
-   > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
+   > For learning purposes, here you use the default network settings. These settings make your site accessible from the Internet. In practice, you could configure an Azure virtual network that places your website in a network that's not Internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
 1. Run the following `az group create` command to create a resource group using the name defined earlier.
 
@@ -123,7 +123,7 @@ This solution requires several Azure resources for deployment, which you create 
 
     The deployment can take several minutes to complete.
 
-1. By default, all incoming connections to the MySQL server are blocked, so it is necessary to add at least one rule for it to be accessible. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you are deploying) to access the server.
+1. By default, all incoming connections to the MySQL server are blocked, so it's necessary to add at least one rule for it to be accessible. Run the following `az mysql server firewall-rule create` command to create a firewall rule to allow services hosted in Azure (like the one you're deploying) to access the server.
 
     ```azurecli
     az mysql server firewall-rule create \
@@ -186,7 +186,7 @@ This solution requires several Azure resources for deployment, which you create 
     java-container-cicd-18116.azurewebsites.net     Running
     ```
 
-1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance. You will need this server name when creating pipeline variables later.
+1. Run the following `az acr list` command to list the login server of the Azure Container Registry instance. You'll need this server name when creating pipeline variables later.
 
     ```azurecli
     az acr list \

@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.wwl.build-first-machine-operations-workflow
+metadata:
+  title: End-to-end machine learning operations (MLOps) with Azure Machine Learning
+  description: End-to-end machine learning operations (MLOps) with Azure Machine Learning
+  ms.date: 07/13/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: End-to-end machine learning operations (MLOps) with Azure Machine Learning
+prerequisites: |
+  - Programming experience with Python or R
+  - Experience developing and training machine learning models
+  - Familiarity with basic Azure Machine Learning concepts
+summary: |
+  Machine learning operations (MLOps) applies DevOps principles to machine learning projects. In this learning path, you'll learn how to implement key concepts like source control, automation, and CI/CD to build an end-to-end MLOps solution.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+- github
+subjects:
+- artificial-intelligence
+- machine-learning
+modules:
+- learn.wwl.use-azure-machine-learn-job-for-automation
+- learn.wwl.trigger-azure-machine-learn-jobs-github-actions
+- learn.wwl.trigger-github-actions-trunk-based-development
+- learn.wwl.work-linting-unit-test-github-actions
+- learn.wwl.work-environments-github-actions
+- learn.wwl.deploy-model-github-actions
+trophy:
+  uid: learn.wwl.build-first-machine-operations-mlops-workflow.trophy

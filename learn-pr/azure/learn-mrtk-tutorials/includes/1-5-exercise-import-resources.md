@@ -7,7 +7,7 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 1. After the download finishes, unzip the file and save it to your desktop.
 
     > [!NOTE]
-    > Before you can run the Mixed Reality Feature Tool, you must install the [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
+    > Before you can run the Mixed Reality Feature Tool, you must install the [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0). Though this version is no longer supported, it is the correct version for this exercise.
 
 1. In the unzipped folder, navigate to the executable file **MixedRealityFeatureTool.exe** and then use it to launch the Mixed Reality Feature Tool.
 

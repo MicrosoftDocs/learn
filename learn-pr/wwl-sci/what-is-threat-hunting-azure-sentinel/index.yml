@@ -3,9 +3,9 @@ uid: learn.wwl.what-is-threat-hunting-azure-sentinel
 metadata:
   title: Explain threat hunting concepts in Microsoft Sentinel
   description: "Explain threat hunting concepts in Microsoft Sentinel"
-  ms.date: 11/05/2021
+  ms.date: 06/29/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explain threat hunting concepts in Microsoft Sentinel
@@ -30,6 +30,7 @@ units:
 - learn.wwl.what-is-threat-hunting-azure-sentinel.introduction
 - learn.wwl.what-is-threat-hunting-azure-sentinel.understand-cybersecurity
 - learn.wwl.what-is-threat-hunting-azure-sentinel.develop-hypothesis
+- learn.wwl.what-is-threat-hunting-azure-sentinel.explore-mitre-att-ck
 - learn.wwl.what-is-threat-hunting-azure-sentinel.knowledge-check
 - learn.wwl.what-is-threat-hunting-azure-sentinel.summary-resources
 badge:

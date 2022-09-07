@@ -3,8 +3,8 @@ uid: learn.microservices-logging-aspnet-core.5-monitor-app-insights
 metadata:
   title: Exercise - Monitor Application Insights
   description: Monitor the microservices app using Application Insights.
-  author: scottaddie
-  ms.author: scaddie
+  author: camsoper
+  ms.author: casoper
   ms.date: 10/14/2020
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial

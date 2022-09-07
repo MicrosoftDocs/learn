@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.microsoft-azure-fundamentals-describe-cloud-concepts
+metadata:
+  title: 'Microsoft Azure Fundamentals: Describe cloud concepts'
+  description: 'Microsoft Azure Fundamentals: Describe cloud concepts'
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Microsoft Azure Fundamentals: Describe cloud concepts'
+prerequisites: |
+  *   Basic familiarity with IT terms and concepts
+summary: ""
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- devops-engineer
+- solution-architect
+products:
+- azure
+subjects:
+- architecture
+- cloud-computing
+- infrastructure
+modules:
+- learn.wwl.describe-cloud-compute
+- learn.wwl.describe-benefits-use-cloud-services
+- learn.wwl.describe-cloud-service-types
+trophy:
+  uid: learn.wwl.microsoft-azure-fundamentals-describe-cloud-concepts.trophy

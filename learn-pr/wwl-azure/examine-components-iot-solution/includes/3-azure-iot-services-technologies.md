@@ -1,38 +1,28 @@
-Microsoft has built a portfolio of products that supports the needs of all customers, enabling everyone to access the benefits of digital transformation.
+IoT solutions require a combination of technologies to effectively connect devices, events, and actions to cloud applications. The technologies and services you use depend on your scenario's development, deployment, and management needs.
 
-Azure IoT technologies and services provide you with options to create a wide variety of IoT solutions that enable digital transformation for your organization. For example, you can:
+The Azure IoT technologies and services stack provides two platform options for the digital transformation for your organization.
 
- -  Use Azure IoT Central, a managed IoT application platform, to build and deploy a secure, enterprise-grade IoT solution. IoT Central features a collection of industry-specific application templates, such as retail and healthcare, to accelerate your solution development process.
- -  Use Azure IoT platform services such as Azure IoT Hub and the Azure IoT device SDKs to build a custom IoT solution from scratch.
+ -  Platform as a service (PaaS) is a cloud computing model in which you tailor Azure hardware and software tools to a specific task or job function. With PaaS services, you're responsible for scaling and configuration, but the underlying infrastructure as a service (IaaS) is taken care of for you.
+ -  Application platform as a service (aPaaS) provides a cloud environment to build, manage, and deliver applications to customers. aPaaS offerings take care of scaling and most of the configuration, but they still require developer input to build out a finished solution.
 
-:::image type="content" source="../media/m01-l03-azure-iot-technologies-solutions-d6e94b3d.png" alt-text="Diagram that shows the PaaS and SaaS technologies that support IoT solutions.":::
+:::image type="content" source="../media/m01-l03-azure-iot-technologies-solutions-july2022-4e7f21bc.png" alt-text="Diagram that shows the PaaS and SaaS technologies that support IoT solutions.":::
 
 
-## Managed and prebuilt solutions
+## Managed aPaaS solutions
 
-Get started quickly with the solution accelerators or managed application platform offerings. Choose from preconfigured solution accelerators that enable common IoT scenarios, such as remote monitoring, predictive maintenance, and connected factory, to create a fully customizable solution. Or use Azure IoT Central, a fully managed, end-to-end solution that enables powerful IoT scenarios without requiring cloud-solution expertise.
+Get started quickly with Azure IoT Central, a fully managed, end-to-end solution that enables powerful IoT scenarios without requiring cloud-solution expertise.
 
-### Azure IoT Central (SaaS)
+The IoT Central application platform is a ready-made environment for IoT solution development. Built on trusted Azure PaaS services it reduces the burden and cost of developing, managing, and maintaining enterprise-grade IoT solutions. It delivers built-in disaster recovery, multitenancy, global availability, and a predictable cost structure.
 
-The IoT Central application platform reduces the burden and cost of developing, managing, and maintaining enterprise-grade IoT solutions. IoT Central's customizable web UI in lets you monitor device conditions, create rules, and manage millions of devices and their data throughout their life cycle. The API surface within IoT Central gives you programmatic access to configure and interact with your IoT solution.
+IoT Central's customizable web UI and API surface let you monitor and manage millions of devices and their data throughout their life cycle. Get started exploring IoT Central in minutes using your phone as an IoT device – see live telemetry, create rules, run commands from the cloud, and export your data for business analytics.
 
-Azure IoT Central is a fully managed application platform that you can use to create custom IoT solutions. IoT Central uses application templates to create solutions. There are templates for generic solutions and for specific industries such as energy, healthcare, government, and retail. IoT Central application templates let you deploy an IoT Central application in minutes that you can then customize with themes, dashboards, and views.
+Choose devices from the Azure Certified for IoT device catalog to quickly connect to your solution, or develop a custom device using IoT Central's device templates.
 
-Choose devices from the Azure Certified for IoT device catalog to quickly connect to your solution. Use the IoT Central web UI to monitor and manage your devices to keep them healthy and connected. Use connectors and APIs to integrate your IoT Central application with other business applications.
+## Flexible PaaS solutions
 
-As a fully managed application platform, IoT Central has a simple, predictable pricing model.
+With the most comprehensive portfolio of IoT services, Azure PaaS technologies for IoT enable you to easily create, customize, and control all aspects of your IoT solution. Establish bi-directional communications with billions of IoT devices and manage your IoT devices at scale using IoT Hub. Then integrate your IoT device data with other platform services, such as Azure Cosmos DB and Azure Stream Analytics, to enhance insights across your solution.
 
-### Connected factory solution accelerator (PaaS)
-
-The Connected Factory solution accelerator is an open-source PaaS solution that aligns with the Azure IoT Reference Architecture. The solution accelerator can be deployed in minutes using your Azure subscription and can be customized as needed.
-
-Organizations with a large number of devices or device models, and manufacturers seeking connected factory solutions, are examples of companies that can benefit from a solution accelerator.
-
-## Custom solutions (PaaS)
-
-With the most comprehensive IoT portfolio of platform services, Platform-as-a-Service (PaaS) technologies that span the Azure platform enable you to easily create, customize, and control all aspects of your IoT solution. Establish bi-directional communications with billions of IoT devices and manage your IoT devices at scale. Then integrate your IoT device data with other platform services, such as Azure Cosmos DB and Azure Time Series Insights, to enhance insights across your solution.
-
-To build an IoT solution from scratch, or extend a solution created using IoT Central or a solution accelerator, use one or more of the following Azure IoT technologies and services:
+To build an IoT solution from scratch, use one or more of the following Azure IoT technologies and services:
 
 ### Devices
 
@@ -63,6 +53,6 @@ Iot Central uses digital twins to synchronize devices and data in the real world
 
 ### Data and analytics
 
-IoT devices typically generate large amounts of time series data, such as temperature readings from sensors. Azure Time Series Insights can connect to an IoT hub, read the telemetry stream from your devices, store that data, and enable you to query and visualize it.
+IoT devices typically generate large amounts of time series data, such as temperature readings from sensors. Azure Stream Analytics and Azure Data Explorer can be used to process, query, analyze, and visualize data.
 
 Azure Maps is a collection of geospatial services that use fresh mapping data to provide accurate geographic context to web and mobile applications. You can use a REST API, a web-based JavaScript control, or an Android SDK to build your applications.

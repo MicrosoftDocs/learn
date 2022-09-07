@@ -3,9 +3,9 @@ uid: learn.microservices-configuration-aspnet-core
 metadata:
   title: Implement feature flags in a cloud-native ASP.NET Core microservices app
   description: This module guides you through implementing a feature flag in an ASP.NET Core microservices app using Azure App Configuration.
-  author: scottaddie
-  ms.author: scaddie
-  ms.date: 11/23/2020
+  author: camsoper
+  ms.author: casoper
+  ms.date: 07/14/2022
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Implement feature flags in a cloud-native ASP.NET Core microservices app
@@ -20,6 +20,7 @@ prerequisites: |
   - Familiarity with RESTful service concepts at the beginner level
   - Conceptual knowledge of containers and AKS at the intermediate level
   - Access to an Azure subscription with **Owner** privilege
+  - Ability to run development containers in Visual Studio Code or GitHub Codespaces
 levels:
   - intermediate
 roles:

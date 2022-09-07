@@ -9,14 +9,14 @@ For an alert triggered due to improper threshold setting, a resolution is to res
 
 The following alerts may indicate CPU resource problems:
 
- -  Host CPU Usage (Alert 5)
- -  Most recent savepoint operation (Alert 28)
- -  Savepoint duration (Alert 54)
+- Host CPU Usage (Alert 5)
+- Most recent savepoint operation (Alert 28)
+- Savepoint duration (Alert 54)
 
 You may notice high CPU consumption on your SAP HANA database from one of the following:
 
- -  Alert 5 (Host CPU usage) is raised for current or past CPU usage
- -  The displayed CPU usage on the overview screen
+- Alert 5 (Host CPU usage) is raised for current or past CPU usage
+- The displayed CPU usage on the overview screen
 
 The Load graph might show high CPU consumption or high consumption in the past.
 
@@ -28,8 +28,8 @@ One of the most important checks for SAP HANA on Linux is to make sure that Tran
 
 You can check if Transparent Huge Pages are enabled through the following Linux command: `cat /sys/kernel/mm/transparent_hugepage/enabled`
 
- -  If **always** is enclosed in brackets, it means that the Transparent Huge Pages are enabled: `[always] madvise never;`
- -  If **never** is enclosed in brackets, it means that the Transparent Huge Pages are disabled: `always madvise [never]`
+- If **always** is enclosed in brackets, it means that the Transparent Huge Pages are enabled: `[always] madvise never;`
+- If **never** is enclosed in brackets, it means that the Transparent Huge Pages are disabled: `always madvise [never]`
 
 The following Linux command should return nothing: `rpm -qa | grep ulimit`. If it turns out that ulimit is installed, uninstall it immediately.
 
@@ -37,26 +37,26 @@ The following Linux command should return nothing: `rpm -qa | grep ulimit`. If i
 
 You may observe that the amount of memory allocated by the SAP HANA database is higher than expected. The following alerts indicate issues with high memory usage:
 
- -  Host physical memory usage (Alert 1)
- -  Memory usage of name server (Alert 12)
- -  Total memory usage of Column Store tables (Alert 40)
- -  Memory usage of services (Alert 43)
- -  Memory usage of main storage of Column Store tables (Alert 45)
- -  Runtime dump files (Alert 46)
+- Host physical memory usage (Alert 1)
+- Memory usage of name server (Alert 12)
+- Total memory usage of Column Store tables (Alert 40)
+- Memory usage of services (Alert 43)
+- Memory usage of main storage of Column Store tables (Alert 45)
+- Runtime dump files (Alert 46)
 
-## Network<br>
+## Network
 
 Refer to [SAP Note \#2081065](https://launchpad.support.sap.com/#/notes/2081065) and perform the network troubleshooting steps in this SAP Note.
 
- -  Analyze round-trip time between server and client. Run the SQL script `HANA_Network_Clients`.
- -  Analyze internode communication. Run the SQL script `HANA_Network_Services`.
- -  Run Linux command `ifconfig`(the output shows if any packet losses are occurring).
- -  Run Linux command `tcpdump`.
+- Analyze round-trip time between server and client. Run the SQL script `HANA_Network_Clients`.
+- Analyze internode communication. Run the SQL script `HANA_Network_Services`.
+- Run Linux command `ifconfig`(the output shows if any packet losses are occurring).
+- Run Linux command `tcpdump`.
 
 Also, use the open-source IPERF tool (or similar) to measure real application network performance.
 
 [SAP Note \#2081065](https://launchpad.support.sap.com/#/notes/2081065) offers a number of SAP HANA network troubleshooting procedures that help you determine the extent to which network latency contributes to performance degradation in an SAP landscape by analyzing the round trip time (RTT) between server and client as well as internode communication.
 
-## Storage<br>
+## Storage
 
 From an end-user perspective, an application (or the system as a whole) runs sluggishly, is unresponsive, or even seems to stop responding if there are issues with I/O performance. In the Volumes tab in SAP HANA Studio, you can see the attached volumes, and what volumes are used by each service.

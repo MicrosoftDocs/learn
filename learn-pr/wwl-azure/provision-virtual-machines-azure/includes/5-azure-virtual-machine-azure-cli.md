@@ -37,6 +37,7 @@ In this exercise you'll create a Linux virtual machine by performing the followi
         --image UbuntuLTS \
         --generate-ssh-keys \
         --admin-username azureuser
+        --public-ip-sku Standard
     ```
     
     It will take a few minutes for the operation to complete. When it is finished note the `publicIpAddress` in the output, you'll use it in the next step.

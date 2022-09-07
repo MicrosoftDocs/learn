@@ -3,7 +3,8 @@ uid: learn.azdo.host-build-agent
 metadata:
   title: Host your own build agent in Azure Pipelines
   description: Work with guidance from the Space Game web team to set up your build agent running on-premises or on an Azure virtual machine running in the cloud.
-  ms.date: 06/04/2021
+  ms.custom: devdivchpfy22
+  ms.date: 08/12/2022
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial

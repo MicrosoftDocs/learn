@@ -28,7 +28,7 @@ Let’s suppose a user uploads a new song by using your mobile music-sharing app
 
 - Subscribers, which receive events.
 
-With events, receiving components generally decide in which communications they’re interested and subscribe to those events. The subscription is managed by an intermediary. The intermediary can be provided by services such as Azure Event Grid or Azure Event Hubs. When publishers send an event, the intermediary routes that event to interested. This pattern is known as a publish-subscribe architecture and is the most used. 
+With events, receiving components generally decide in which communications they’re interested and subscribe to those events. The subscription is managed by an intermediary. The intermediary can be provided by services such as Azure Event Grid or Azure Event Hubs. When publishers send an event, the intermediary routes that event to any interested parties. This pattern is known as a publish-subscribe architecture and is the most used. 
 
 Events have the following characteristics:
 

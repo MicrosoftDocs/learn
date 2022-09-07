@@ -8,7 +8,7 @@ Azure deployment and configuration cover far more than applications, virtual mac
 
 - Creating resource groups, subscriptions, and management groups to organize your resources
 - Defining and applying Azure Policy definitions, initiatives, and assignments to control how other resources should be configured
-- Assigning roles to allow users, groups, and service principals to access Azure resources
+- Assigning roles to allow users, groups, and workload identities to access Azure resources
 - Configuring monitoring, including alerts, to observe your Azure resources and ensure that they behave the way you expect
 
 When you first start defining your infrastructure as code, you might not be aware that all of these items can be defined in your templates or definitions. But as your use of automation matures, it's a good practice to define everything about your environment as code. By doing so, you can use a consistent, tested, and approved process for *all* of your Azure configuration. And because the code is versioned and tracked in a Git repository, you can review how your Azure environment has changed over time. You can use the Git repository to trace the history of each change.

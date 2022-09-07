@@ -6,14 +6,14 @@ Public IP addresses are available in two stock keeping units (SKUs), Basic and S
 
 ## Characteristics of basic SKU public IP addresses
 
- -  They support both dynamic and static allocation methods.
- -  You can assign them to network interfaces of Azure virtual machines, internet-facing Basic SKU Azure load balancers, application gateways, and VPN gateways.
- -  You can assign them to a specific zone within an Azure region, but they do not support zone-level redundancy.
- -  They facilitate assignment of IPv6 public IP addresses to internet-facing Basic SKU Azure load balancers.
+- They support both dynamic and static allocation methods.
+- You can assign them to network interfaces of Azure virtual machines, internet-facing Basic SKU Azure load balancers, application gateways, and VPN gateways.
+- You can assign them to a specific zone within an Azure region, but they do not support zone-level redundancy.
+- They facilitate assignment of IPv6 public IP addresses to internet-facing Basic SKU Azure load balancers.
 
 ## Characteristics of standard SKU public IP addresses
 
- -  They support only the static allocation method.
- -  You can assign them to network interfaces of Azure virtual machines or internet-facing Standard SKU Azure load balancers.
- -  You can assign them to a specific zone or configure them as zone redundant. You can assign both types of IP addresses to the same Standard SKU Azure load balancer.
- -  They support only IPv4 addresses.
+- They support only the static allocation method.
+- You can assign them to network interfaces of Azure virtual machines or internet-facing Standard SKU Azure load balancers.
+- You can assign them to a specific zone or configure them as zone redundant. You can assign both types of IP addresses to the same Standard SKU Azure load balancer.
+- They support only IPv4 addresses.

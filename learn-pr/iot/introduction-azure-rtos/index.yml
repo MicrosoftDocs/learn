@@ -14,7 +14,6 @@ abstract:  |
   In this module, you will:
   - Learn the basic components of an RTOS
   - Learn what an RTOS does
-
 prerequisites: |
   - None, although a working knowledge of C or C++, GitHub and Visual Studio will be most helpful.
 iconUrl: /learn/achievements/iot/introduction-azure-rtos.svg
@@ -25,7 +24,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-hub
+- azure-rtos
+subjects:
+- iot
 units:
  - learn.iot.introduction-azure-rtos.introduction
  - learn.iot.introduction-azure-rtos.set-up-environment

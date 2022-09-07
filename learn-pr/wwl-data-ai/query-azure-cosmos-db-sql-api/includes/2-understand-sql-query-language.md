@@ -1,4 +1,4 @@
-Azure Cosmos DB SQL API uses the already popular Structured Query Language (SQL) syntax to perform queries over semi-structured data. If you have performed queries in database platforms like MySQL or SQL, then you may already have some of the tools necessary to write queries in Azure Cosmos DB SQL API.
+Azure Cosmos DB SQL API uses the already popular Structured Query Language (SQL) syntax to perform queries over semi-structured data. If you have performed queries in database platforms like MySQL or SQL Server, then you may already have some of the tools necessary to write queries in Azure Cosmos DB SQL API.
 
 For this module, we will focus on a fictional container of **products** with the following structure:
 

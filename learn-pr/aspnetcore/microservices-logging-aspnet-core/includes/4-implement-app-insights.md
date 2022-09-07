@@ -2,21 +2,21 @@ In this unit, you'll modify the catalog service to enable Application Insights t
 
 You will:
 
+- Review the directory structure for the code sample.
 - Create Application Insights resources for the app.
 - Enable logging to Application Insights.
 - Deploy the updated and reconfigured microservices.
 
-> [!NOTE]
-> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
->
-> ```bash
-> cd ~/clouddrive/aspnet-learn/src/ && \
->   code .
-> ```
+## Review the directory structure
+
+Review the directories in the explorer pane in the IDE. Relative to the workspace root, the files for this module are located in *modules/microservices-logging-aspnet-core*.
+
+> [!IMPORTANT]
+> For brevity, all directory paths described in this module are relative to the *modules/microservices-logging-aspnet-core* directory.
 
 ## Create and configure the Application Insights resources
 
-1. In the Cloud Shell, ensure the Application Insights extension is added to Azure CLI by running this command:
+1. In the terminal you used earlier, ensure the Application Insights extension is added to Azure CLI by running this command:
 
     ```azurecli
     az extension add --name application-insights
@@ -63,7 +63,7 @@ You will:
     - The `Key` property represents the Application Insights instrumentation key.
     - The `Name` property represents the name of the service to which the instrumentation key belongs.
 
-1. Using the Cloud Shell editor, uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files in the *:::no-loc text="deploy/k8s/helm-simple":::* directory. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key. Save your changes.
+1. Uncomment the `APPINSIGHTS_INSTRUMENTATIONKEY` environment variable in each of the following files in the *:::no-loc text="deploy/k8s/helm-simple":::* directory. Replace the `<key>` placeholder with the appropriate Application Insights instrumentation key.
     - *:::no-loc text="catalog/templates/configmap.yaml":::*
     - *:::no-loc text="coupon/templates/configmap.yaml":::*
     - *:::no-loc text="ordering/templates/configmap.yaml":::*
@@ -82,14 +82,18 @@ You will:
 
 Logging to Application Insights has been enabled in the ordering and coupon services and the HTTP aggregator. Complete the following steps to implement Application Insights in the catalog service.
 
+1. In the terminal, temporarily set your working directory to *src/Services/Catalog/Catalog.API*:
+
+    ```bash
+    pushd ../../src/Services/Catalog/Catalog.API/
+    ```
+
 1. Install the supporting Application Insights NuGet packages:
 
     ```dotnetcli
-    pushd src/Services/Catalog/Catalog.API/ && \
-        dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.20.1 && \
-        dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 2.0.2 && \
-        dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0 && \
-        popd
+    dotnet add package Microsoft.ApplicationInsights.AspNetCore --version 2.20.0 && \
+    dotnet add package Microsoft.ApplicationInsights.Kubernetes --version 2.0.2 && \
+    dotnet add package Serilog.Sinks.ApplicationInsights --version 3.1.0
     ```
 
     The following table outlines the packages that were installed.
@@ -101,7 +105,7 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
     | `Serilog.Sinks.ApplicationInsights`        | A Serilog sink that writes events to Application Insights.                                     |
 
 1. Apply the following changes in the *:::no-loc text="src/Services/Catalog/Catalog.API":::* directory:
-    1. In *:::no-loc text="Extensions/ServiceCollectionExtensions.cs":::*, replace the comment `// Add AddAppInsights extension method` with the following extension method. Save your changes.
+    1. In *:::no-loc text="Extensions/ServiceCollectionExtensions.cs":::*, replace the comment `// Add AddAppInsights extension method` with the following extension method.
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/extensions/servicecollectionextensions.cs":::
 
@@ -110,7 +114,7 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         - The `AddApplicationInsightsTelemetry` extension method is provided by the `Microsoft.ApplicationInsights.AspNetCore` NuGet package.
         - The `AddApplicationInsightsKubernetesEnricher` extension method is provided by the `Microsoft.ApplicationInsights.Kubernetes` NuGet package.
 
-    1. In the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method. Save your changes.
+    1. In the *:::no-loc text="Startup.cs":::* file's `ConfigureServices` method, invoke the `AddAppInsights` extension method.
 
         :::code language="csharp" source="../code/src/services/catalog/catalog.api/startup.cs" highlight="3":::
 
@@ -128,12 +132,10 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
         > [!NOTE]
         > Startup logging with Application Insights [isn't supported](/aspnet/core/fundamentals/logging/#log-during-host-construction), so it must be accomplished using another logger. This example uses Serilog with the Application Insights sink, passing the instrumentation key. Although this is the simplest way to enable logging to Application Insights during startup, it can lead to losing correlation between metrics and log traces.
 
-1. Run the following commands to build the catalog service and its dependencies:
+1. Save all your changes, and then build the catalog service and its dependencies:
 
     ```dotnetcli
-    pushd src/Services/Catalog/Catalog.API && \
-        dotnet build && \
-        popd
+    dotnet build
     ```
 
     The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
@@ -142,10 +144,16 @@ Logging to Application Insights has been enabled in the ordering and coupon serv
 
 In the previous section, you modified the catalog service to enable Application Insights telemetry. The HTTP aggregator code has already been similarly instrumented. To update the production service deployments, the container images will be built and hosted on ACR.
 
+1. Return to the *deploy/k8s* directory:
+
+    ```bash
+    popd
+    ```
+
 1. Run this script to build the images for the catalog service and HTTP aggregator:
 
     ```bash
-    deploy/k8s/build-to-acr.sh --services catalog-api,webshoppingagg
+    ./build-to-acr.sh --services catalog-api,webshoppingagg
     ```
 
     The script starts [ACR quick tasks](/azure/container-registry/container-registry-tasks-overview#quick-task) for each service. Each service's container image is built independently. Variations of the following lines confirm that the catalog and HTTP aggregator Docker images were pushed to ACR:
@@ -161,7 +169,7 @@ In the previous section, you modified the catalog service to enable Application 
 1. Deploy the updated catalog service and HTTP aggregator from ACR by running the following script:
 
     ```bash
-    deploy/k8s/deploy-application.sh --charts catalog,webshoppingagg
+    ./deploy-application.sh --charts catalog,webshoppingagg
     ```
 
     The preceding script deploys the container images from ACR to AKS. The script runs the `kubectl get pods` command. The command's output contains entries for the catalog service and HTTP aggregator pods. The `STATUS` and `AGE` column values indicate that the deployments were successful:
@@ -175,7 +183,7 @@ In the previous section, you modified the catalog service to enable Application 
 1. Redeploy the coupon and ordering services configured with their new `APPINSIGHTS_INSTRUMENTATIONKEY` environment variables:
 
     ```bash
-    deploy/k8s/deploy-application.sh --registry eshoplearn --charts coupon,ordering
+    ./deploy-application.sh --registry eshoplearn --charts coupon,ordering
     ```
 
     The coupon and ordering services deployed by the setup script are already instrumented for telemetry. Since there were no code changes, the containers only need redeployment with the new configuration settings. The `--registry` parameter instructs the script to use the Docker Hub registry that hosts the unmodified images. As in the previous step, the `kubectl get pods` command is executed:
@@ -193,7 +201,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 1. Run the following command to display the various app URLs:
 
     ```bash
-    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+    cat ../../deployment-urls.txt
     ```
 
     A variation of the following output appears:
@@ -207,14 +215,17 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     - Web SPA application       : http://203.0.113.55/
     ```
 
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
+1. Select the **General application status** link in the terminal to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page is designed to refresh automatically, every 10 seconds.
+
+    > [!IMPORTANT]
+    > If the WebStatus isn't automatically refreshing, it's due to an issue with the container image used for WebStatus. To work around the issue, manually refresh the WebStatus page periodically.
 
     :::image type="content" source="../media/4-implement-app-insights/health-check.png" alt-text="health checks status dashboard." lightbox="../media/4-implement-app-insights/health-check.png":::
 
     > [!NOTE]
     > The services take several minutes to return to a healthy state.
 
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 

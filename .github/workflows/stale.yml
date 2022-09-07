@@ -25,9 +25,9 @@ jobs:
           
           Learn Team
           
-          [Need Help](https://review.docs.microsoft.com/en-us/help/contribute/help-options?branch=master)
+          [Need Help](https://review.docs.microsoft.com/en-us/help/contribute/help-options?branch=main)
           
-          [Resolve Merge Conflict](https://review.docs.microsoft.com/en-us/help/contribute/resolve-merge-conflicts?branch=master)
+          [Resolve Merge Conflict](https://review.docs.microsoft.com/en-us/help/contribute/resolve-merge-conflicts?branch=main)
         close-pr-message: >
           This pull request has been inactive for 120 days. 
           At this time, we are closing the PR.
@@ -35,6 +35,6 @@ jobs:
           
           Learn Team
           
-          [Need Help](https://review.docs.microsoft.com/en-us/help/contribute/help-options?branch=master)
+          [Need Help](https://review.docs.microsoft.com/en-us/help/contribute/help-options?branch=main)
           
-          [Resolve Merge Conflict](https://review.docs.microsoft.com/en-us/help/contribute/resolve-merge-conflicts?branch=master)
+          [Resolve Merge Conflict](https://review.docs.microsoft.com/en-us/help/contribute/resolve-merge-conflicts?branch=main)
