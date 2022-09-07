@@ -29,6 +29,8 @@ Your graph should look something like this:
 
 ![Example of a dependency graph for a health model.](../media/health-model.png)
 
+> Check your progress: [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health)
+
 ### 2&ndash;Define the health scores
 
 For each component, collect metrics and metric thresholds and decide the value at which the component should be considered **healthy**, **degraded**, and **unhealthy**. That decision is should be influenced by expected the performance and non-functional business requirements. Categorize your metrics as:
@@ -61,6 +63,8 @@ Suppose a system flow is composed of an application component, Azure Event Hubs,
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
 
+> Check your progress: [Example - Layered health model](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#example---layered-health-model)
+
 ### 4&ndash;Collect monitoring data
 
 You'll need a unified data sink, in each region, which collects logs and metrics for all application and platform services deployed as part of the regional stamp. You'll  need another sink for storing metrics emitted from global resources, such as Azure Front Door and Cosmos DB. 
@@ -73,6 +77,7 @@ You'll need a unified data sink, in each region, which collects logs and metrics
 - **Azure Monitor** collects data sent by Application insights and platform metrics for the Azure services. 
 - **Azure Log Analytics** is used as the central store for logs and metrics from all application and infrastructure components. 
 
+> Check your progress: [Monitoring](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#monitoring)
 
 ### 5&ndash;Set up queries for monitoring data
 
@@ -80,24 +85,26 @@ Kusto Query Language (KQL) is well-integrated with Log Analytics. Implement cust
 
 Store custom queries in the code repository so that they're imported and applied automatically as part of your continuous Integration/continuous Delivery (CI/CD) pipelines. 
 
-
 ### 6&ndash;Visualize the health status
 
 The dependency graph with health scores can be visualized with a traffic light representation. Use tools such as Azure Dashboards, Monitor Workbooks, or Grafana. Here's an example:
 
 ![Example of health score shown in the dependency graph.](../media/mission-critical-example-fault-states.png)
 
+> Check your progress: [Visualization](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#visualization)
+
 ## 7&ndash;Set up alerts
 Dashboards should be used with alerts to raise immediate attention for issues. You can use 
 
 If the health state of a component changes to **Degraded** or **Unhealthy**, the operator should be immediately notified. Set the alert to the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
 
+> Check your progress: [Alerting](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#alerting)
 
 ## Check your work
 
 Watch this video for a demo on monitoring and health modeling. Did you cover all aspects in your design?
 
----
+
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE55Nd9]
 

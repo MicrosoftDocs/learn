@@ -1,12 +1,22 @@
+Contoso Shoes needs a way to withstand regional outages. You want to deploy current stamp to an active-active, shared-state, and multi-region topology. The architecture must be designed to redirect traffic to another region in case a region fails.  
+
+## Current state and problem
+
+In the current design, a single region has been sufficient for the application. Redundancy is built by using Availability Zone support for all of the components within a region. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Scaling out within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
+
 ## Specification
 
-Your current architecture uses Availability Zone support on all of the components in the solution, and until recently a single region has been deemed sufficient for the application. However, a regional outage that impacted networking brought your system offline from an end-user perspective. Scaling out within the region or even deploying a new stamp in the region wouldn’t have allowed you to recover.
+- Extend the architecture to work in an active-active, multi-region topology. 
+- If there's a regional failure, traffic needs to be routed to the non-faulted region without notable impact to clients already in the non-faulted region. 
+- Clients should not be pinned to a region. 
+- Clients should not need to change URLs for contacting the API. 
 
-The team decided it was important to invest in a strategy that can survive and total regional failure of one or more components in the architecture. That added cost and complexity comes with an extended reliability perk and even a better customer experience for those clients that can now access the API geographically closer to them. Also, the cost (actual and reputational) of being down for extended periods of time is greater than the cost of running in a second region.
+## Recommended approach
+To get started on your design, we recommend that you follow these steps.
 
-Extend the architecture to work in an active-active, multi-region topology. Clients should not be pinned to a region. Clients should not need to change URLs for contacting the API.  The API currently has a DNS CNAME of api.cotososhoesorwhateveritwas.com for cotososhoesorwhateveritwasapi.azurewebsites.net. In the case of a regional failure that impacts the ability for the API to serve requests, traffic so stop attempting to flow to that faulted region and instead be redirected to the non-faulted region without notable impact to clients already in the non-faulted region.
+## 1&ndash;Global routing
 
-Convert the architecture to an active-active, shared-state, multi-region topology designed to withstand one faulted region. (For this challenge you do not need to consider the CI/CD implications as part of the deliverable.)
+## 1&ndash;Component and configuration changes
 
 ## Check your work
 - What did you use as a gateway service to ingress the client traffic for regional routing determination?

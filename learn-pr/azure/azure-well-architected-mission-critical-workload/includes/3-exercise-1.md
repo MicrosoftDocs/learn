@@ -41,6 +41,8 @@ SELECT GetCurrentDateTime ()
 
 Attempt to write a test document to the database. Set a short `Time-to-Live` value so that Cosmos DB can automatically remove it.
 
+> Check your progress: [Implementation](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#implementation)
+
 ### 2&ndash;Caching pattern
 
 Cache the check results in memory. You can use the standard, non-distributed ASP.NET Core `MemoryCache`. Control cache expiration by setting `HealthServiceCacheDurationSeconds` to 10 seconds.
