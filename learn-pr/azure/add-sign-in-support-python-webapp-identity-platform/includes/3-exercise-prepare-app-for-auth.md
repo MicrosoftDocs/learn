@@ -135,7 +135,7 @@ The first template, `graph.html` will render when all users sign in. Paste the f
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {% endblock %}
 ```
-Add a second template in the authenticated subfolder and name it `admin.html`. Your app will render this template when users with an application-defined role sign in. In our module's scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the `admin.html` template.
+Add a second template in the authenticated subfolder and name it `admin.html`. Your app will render this template when users with an application-defined role sign in. In our insurance data solution scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the `admin.html` template:
 
 ```html
 # 📁 authenticated/admin.html

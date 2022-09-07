@@ -38,9 +38,7 @@ Public client applications are apps that run on mobile devices, desktop computer
 
 - Confidential client applications
 
-Confidential client applications are apps that run on servers (web apps, web API apps, or even service/daemon apps). They're considered difficult to access and can maintain the confidentiality of their application credentials.
-
-Each instance of the client has a distinct configuration (including client ID and client secret). These values are difficult for end users to extract. A web app is the most common confidential client. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
+Confidential client applications are apps that run on servers, such as web apps, web API apps, or even service/daemon apps. They're considered difficult to access and can maintain the confidentiality of their application credentials.
 
 In this scenario, we'll create an instance of a confidential client application. The following code snippet shows how to instantiate a confidential client application object: 
 
@@ -52,7 +50,7 @@ app = msal.ConfidentialClientApplication(
         )
 ```
 
-When creating a confidential client application instance, you must add a client credential such as a certificate or client secret.
+When creating a confidential client application instance, you must add a client credential such as a certificate or client secret. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
 
 ## Security tokens in the authorization code flow
 
