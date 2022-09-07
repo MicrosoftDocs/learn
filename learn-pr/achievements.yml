@@ -1257,3 +1257,8 @@ achievements:
   title: Describe Azure Databricks Delta Lake architecture
   summary: Describe Azure Databricks Delta Lake architecture
   iconUrl: /learn/achievements/describe-azure-databricks-delta-lake-architecture.svg
+- uid: learn.intro-to-hyperscale.badge
+  type: badge
+  title: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
+  summary: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
+  iconUrl: /learn/achievements/intro-to-hyperscale.svg
