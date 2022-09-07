@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources.describe-azure-resource-manager-azure-arm-templates
+title: Describe Azure Resource Manager and Azure ARM templates
+metadata:
+  title: Describe Azure Resource Manager and Azure ARM templates
+  description: "Describe Azure Resource Manager and Azure ARM templates"
+  ms.date: 06/30/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-describe-azure-resource-manager-azure-arm-templates.md)]

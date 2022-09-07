@@ -1,4 +1,4 @@
-DevOps is the union of people, process, and products to enable continuous delivery of value to our customers. But what exactly does that mean? Let's join the team as Mara explains what DevOps is, what it isn't, and what makes elite performers successful.
+DevOps is the union of people, process, and products to enable continuous delivery of value to our customers. However, what exactly does that mean? Let's join the team as Mara explains what DevOps is, what it isn't, and what makes elite performers successful.
 
 Mara has called a short meeting with her teammates. Everyone has shown up but no one wants to be there. She's put a box of donuts on the table.
 
@@ -6,7 +6,7 @@ Mara has called a short meeting with her teammates. Everyone has shown up but no
 
 Mara's value stream map is still on the whiteboard from their previous meeting:
 
-:::image type="content" source="../media/2-vsm-whiteboard1.png" alt-text="A whiteboard showing the value stream map.":::
+:::image type="content" source="../media/2-vsm-whiteboard1.png" alt-text="Screenshot of a whiteboard showing the value stream map.":::
 
 **Mara:** Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
 
@@ -32,7 +32,7 @@ Mara's value stream map is still on the whiteboard from their previous meeting:
 
 > _DevOps is the union of people, process, and products to enable continuous delivery of value to our end users._
 
-In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our big questions. Let's see how Abel defines DevOps.
+In fact, Abel Wang, a Cloud Advocate at Microsoft, has a great set of videos with quick answers to some of our big questions. Let's see how Abel defines DevOps:
 
 **Ask Abel**
 
@@ -91,7 +91,7 @@ Outsourcing can save money and provide a flexible labor pool, but it must be use
 
 ### The bottom line
 
-DevOps is a key reason many elite performers are able to deliver value to customers, in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why you should learn more about DevOps.
+DevOps is a key reason many elite performers are able to deliver value to customers, in the form of new features and improvements, more quickly than their competitors. In this short video, Abel explains why you should learn more about DevOps:
 
 **Ask Abel**
 
@@ -99,7 +99,7 @@ DevOps is a key reason many elite performers are able to deliver value to custom
 
 ## What DevOps is not
 
-When considering what DevOps is, it's also important to make sure we understand what it's *not*. DevOps is not:
+When considering what DevOps is, it's also important to make sure we learn what it's *not*. DevOps is not:
 
 - A methodology
 - A specific piece of software

@@ -45,7 +45,7 @@ pace of change in the cloud makes adopting them an urgent priority.
 
 -   Success in either productivity or security requires both. An
     organization must focus on both security and productivity in
-    today's "innovation or become irrelevant" environment. If the
+    today's "innovate or become irrelevant" environment. If the
     organization isn't productive and driving new innovation, it could
     lose competitiveness in the marketplace that causes it to weaken
     financially or eventually fail. If the organization isn't secure

@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Foundational understanding of cloud adoption.
   - Understanding your organization's security plan and the types of workloads you'll need to secure.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/cloud-adoption-framework-security.svg
 levels:
 - beginner
 roles:

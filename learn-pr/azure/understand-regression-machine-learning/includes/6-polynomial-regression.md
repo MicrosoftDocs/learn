@@ -28,7 +28,7 @@ There are many kinds of curves, such as log curves, and logistic (s-shaped) curv
 
 ![Diagram showing polynomial, log and logistic curves.](../media/6-polynomial-vs-curves.png)
 
-A major advantage of polynomial regression is that it can be used to look at all sorts of relationships. For example, polynomial regression it can be used for relationships that a negative within a certain range of feature values, but positive within others. It can also be used where the label (y value) has no theoretical upper limit.
+A major advantage of polynomial regression is that it can be used to look at all sorts of relationships. For example, polynomial regression it can be used for relationships that are negative within a certain range of feature values, but positive within others. It can also be used where the label (y value) has no theoretical upper limit.
 
 ![Diagram showing polynomial, log and logistic curves with plot points on the polynomial curve.](../media/6-example-curves.png)
 

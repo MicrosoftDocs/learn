@@ -1,4 +1,4 @@
-Databases are the most common places to store and process data. Security for you database and the data within it is required to keep your Azure solutions safe. Using data encryption, data masking, firewalls, and auditing you can protect your database from almost any attacks.
+Databases are the most common places to store and process data. Security for your database and the data within it is required to keep your Azure solutions safe. Using data encryption, data masking, firewalls, and auditing you can protect your database from almost any attacks.
 
 ## Scenario
 
@@ -15,7 +15,6 @@ Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Se
 Secure data and applications (20-25%)
 
  -  Configure security for databases
-    
      -  enable database authentication
      -  enable database auditing
      -  configure Microsoft Defender for Cloud for SQL

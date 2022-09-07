@@ -1,4 +1,4 @@
-Today’s threat landscape is overrun by fileless malware that lives off the land, highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions are not sufficient to stop such attacks. You need artificial intelligence (AI) and machine learning (ML) backed capabilities, such as behavioral blocking and containment, included in Defender for Endpoint.
+Today’s threat landscape is overrun by fileless malware that lives off the land. Malware with highly polymorphic threats that mutate faster than traditional solutions can keep up with, and human-operated attacks that adapt to what adversaries find on compromised devices. Traditional security solutions aren't sufficient to stop such attacks. You need artificial intelligence (AI) and machine learning (ML) backed capabilities, such as behavioral blocking and containment, included in Defender for Endpoint.
 
 Behavioral blocking and containment capabilities can help identify and stop threats based on their behaviors and process trees even when the threat has already started. Next-generation protection, EDR, and Defender for Endpoint components and features work together in behavioral blocking and containment capabilities.
 
@@ -6,21 +6,21 @@ Behavioral blocking and containment capabilities work with multiple components a
 
 - Next-generation protection (which includes Microsoft Defender Antivirus) can detect threats by analyzing behaviors and stop threats that have started running.
 
-- Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
+- Endpoint detection and response (EDR) receives security signals from across your network, devices, and Operating System (OS) kernel behavior. As threats are detected, alerts are created. Multiple alerts of the same type are aggregated into incidents, which makes it easier for your security operations team to investigate and respond.
 
-- Defender for Endpoint has a wide range of optics across identities, email, data, and apps, as well as the network, endpoint, and kernel behavior signals received through EDR. A component of Microsoft 365 Defender, Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
+- Defender for Endpoint has a wide range of optics across identities, email, data, and apps. And the network, endpoint, and kernel behavior signals received through EDR. A component of Microsoft 365 Defender, Defender for Endpoint processes and correlates these signals, raises detection alerts, and connects related alerts in incidents.
 
 With these capabilities, more threats can be prevented or blocked, even if they start running. Whenever suspicious behavior is detected, the threat is contained, alerts are created, and threats are stopped in their tracks.
 
 The following image shows an example of an alert that was triggered by behavioral blocking and containment capabilities:
 
-:::image type="content" source="../media/blocked-behavior-alert.png" alt-text="Behavior block alert" lightbox="../media/blocked-behavior-alert.png":::
+:::image type="content" source="../media/blocked-behavior-alert.png" alt-text="Screen shots of the Behavior block alert." lightbox="../media/blocked-behavior-alert.png":::
 
 ## Client behavioral blocking
 
-Client behavioral blocking is a component of behavioral blocking and containment capabilities in Defender for Endpoint. As suspicious behaviors are detected on devices (also referred to as clients or endpoints), artifacts (such as files or applications) are blocked, checked, and remediated automatically.
+Client behavioral blocking is a component of behavioral blocking and containment capabilities in Defender for Endpoint. As suspicious behaviors are detected on devices, referred to as clients or endpoints, artifacts, like files or applications are blocked, checked, and remediated automatically.
 
-:::image type="content" source="../media/pre-execution-post-execution-detection-engines.png" alt-text="pre execution and post execution detection engines" lightbox="../media/pre-execution-post-execution-detection-engines.png":::
+:::image type="content" source="../media/pre-execution-post-execution-detection-engines.png" alt-text="Diagram of the pre execution and post execution detection engines process." lightbox="../media/pre-execution-post-execution-detection-engines.png":::
 
 ### How client behavioral blocking works
 
@@ -74,4 +74,4 @@ When EDR in block mode is turned on and a malicious artifact is detected, blocki
 
 The following image shows an instance of unwanted software that was detected and blocked through EDR in block mode:
 
-:::image type="content" source="../media/endpoint-detection-response-block-mode-detection.png" alt-text="EDR in Block Mode Alert" lightbox="../media/endpoint-detection-response-block-mode-detection.png":::
+:::image type="content" source="../media/endpoint-detection-response-block-mode-detection.png" alt-text="Screen shot of an E D R in Block Mode Alert." lightbox="../media/endpoint-detection-response-block-mode-detection.png":::

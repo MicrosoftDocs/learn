@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.wwl.create-manage-background-jobs-scheduled-windows-powershell
+metadata:
+  title: Create and manage background jobs and scheduled jobs in Windows PowerShell
+  description: Create and manage background jobs and scheduled jobs in Windows PowerShell
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and manage background jobs and scheduled jobs in Windows PowerShell
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  *   Familiarity to administer remote computers with Windows PowerShell
+  *   Familiarity to manage Azure resources and Microsoft 365 services with Windows PowerShell
+summary: |
+  This learning path explains the jobs feature of Windows PowerShell. Jobs are an extension point in Windows PowerShell, and there are several types of jobs. Each type works slightly differently and has distinct capabilities.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+modules:
+- learn.wwl.create-manage-background-jobs-use-windows-powershell
+- learn.wwl.create-manage-scheduled-jobs-use-windows-powershell
+trophy:
+  uid: learn.wwl.create-manage-background-jobs-scheduled-windows-powershell.trophy

@@ -18,9 +18,9 @@ abstract:  |
   - Use an application timer to compute and display the total number of cycles each thread completed, the average time for each cycle, and selected values provided by the thread_performance_info_get service.
   - Design and debug the ThreadX solution using a hands-on approach with GitHub Codespace or Visual Studio.
 prerequisites: |
-  - [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true)
+  - [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment)
   - Working knowledge of C or C++, GitHub and Visual Studio
-  - Previous modules in this [learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/?azure-portal=true)
+  - Previous modules in this [learning path](/learn/paths/azure-rtos-threadx)
 iconUrl: /learn/achievements/iot/threadx-break-thread-suspension.svg
 levels:
 - beginner
@@ -29,10 +29,9 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-hub
 - azure-rtos
 subjects:
-- cloud-computing
+- iot
 units:
 - learn.iot.threadx-break-thread-suspension.introduction
 - learn.iot.threadx-break-thread-suspension.overview

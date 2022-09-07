@@ -27,7 +27,7 @@ The result of this query consists of one or more JSON documents, as shown here:
 
 ## MongoDB API
 
-MongoDB is a popular open source database in which data is stored in Binary JSON (BSON) format. The Azure Cosmos DB MongoDB API enables developers to use MongoDB client libraries to and code to work with data in Azure Cosmos DB.
+MongoDB is a popular open source database in which data is stored in Binary JSON (BSON) format. The Azure Cosmos DB MongoDB API enables developers to use MongoDB client libraries and code to work with data in Azure Cosmos DB.
 
 MongoDB Query Language (MQL) uses a compact, object-oriented syntax in which developers use *objects* to call *methods*. For example, the following query uses the **find** method to query the **products** collection in the **db** object:
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-single-multiple-computers-use-windows-powershell-remoting.review-remoting-security-feature-of-windows-powershell
+title: Review the remoting security feature of Windows PowerShell
+metadata:
+  title: Review the remoting security feature of Windows PowerShell
+  description: "Review the remoting security feature of Windows PowerShell"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/4-review-remoting-security-feature-of-windows-powershell.md)]

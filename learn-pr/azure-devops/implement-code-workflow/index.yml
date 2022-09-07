@@ -3,9 +3,10 @@ uid: learn.azdo.implement-code-workflow
 metadata:
   title: Implement a code workflow in your build pipeline by using Git and GitHub
   description: Learn along with the Space Game web team the benefits of collaboration through Visual Studio Code and GitHub.
-  ms.date: 05/25/2021
+  ms.date: 07/29/2022
   author: juliakm
   ms.author: jukullam
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement a code workflow in your build pipeline by using Git and GitHub

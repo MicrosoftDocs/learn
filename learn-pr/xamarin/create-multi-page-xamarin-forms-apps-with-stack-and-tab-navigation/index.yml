@@ -4,8 +4,8 @@ metadata:
   title: Create multi-page Xamarin.Forms apps with stack and tab navigation
   description: This module guides you through choosing stack or tab navigation for your app, how to implement your choice, and how to use modal pages to display transitory content.
   ms.date: 05/01/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: Create multi-page Xamarin.Forms apps with stack and tab navigation
@@ -26,8 +26,6 @@ products:
 - xamarin
 - dotnet
 - vs
-subjects:
-- cloud-computing
 units:
 - learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.1-introduction
 - learn-xamarin.create-multi-page-xamarin-forms-apps-with-stack-and-tab-navigation.2-implement-stack-navigation

@@ -37,19 +37,25 @@ Next, update your pipeline definition to deploy your Bicep file to Azure by usin
 
 1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file.
 
+1. Above the `jobs:` line, add a new section to define a variable named `deploymentDefaultLocation`:
+
+   :::code language="yaml" source="code/6-pipeline.yml" range="1-10" highlight="6-8":::
+
 1. To remove the `script` step from the pipeline definition, delete the bottom two lines of the file.
 
    > [!TIP]
    > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu with suggested elements to add at your current cursor position.
 
-1. At the bottom of the file, add a task that uses the `az deployment group create` command to deploy your Bicep file:
+1. At the bottom of the file, add a task that uses the `AzureResourceManagerTemplateDeployment` task to deploy your Bicep file:
 
-   :::code language="yaml" source="code/6-pipeline.yml" range="6-20" highlight="5-15":::
-
-   This step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. The variable can help you easily see which pipeline run a deployment corresponds to.
+   :::code language="yaml" source="code/6-pipeline.yml" range="10-23" highlight="5-14":::
 
    > [!NOTE]
    > It's a good idea to type this code yourself instead of copying and pasting it from this module. Pay attention to the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by displaying squiggly lines.
+
+   This step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. The variable can help you easily see which pipeline run a deployment corresponds to.
+
+   The `location` task property is required by the `AzureResourceManagerTemplateDeployment` task. It specifies the Azure region into which a resource group should be created. In this exercise, you already created a resource group and so the location you specify here doesn't matter. But you need to provide the value anyway. Here, you set it to the value of the `deploymentDefaultLocation` variable that you set in a previous step.
 
 1. Save your changes to the file. Your file should look like this example:
 
@@ -59,7 +65,7 @@ Next, update your pipeline definition to deploy your Bicep file to Azure by usin
 
    ```bash
    git add deploy/azure-pipelines.yml
-   git commit -m 'Add Azure CLI tasks to pipeline'
+   git commit -m 'Add deployment task to pipeline'
    git push
    ```
 
@@ -148,7 +154,7 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of Azure DevOps that shows the pipeline log, with the '1 queue time variable used' item highlighted.":::
 
-   The value that you override for this pipeline's run is shown. The `DeployToyManualsStorageAccount` variable's value is *false* because you overrode the original value.
+   The overridden value for this pipeline run is shown. The `DeployToyManualsStorageAccount` variable's value is *false* because you overrode the original value.
 
 1. Inspect the rest of your pipeline output.
 

@@ -2,15 +2,15 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ## Fix this code
 
-Use what you've learned in this module to fix this poorly written code.  There are many improvements that you can make.  Good luck!
+Use what you've learned in this module to fix this poorly written code. There are many improvements that you can make. Good luck!
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise.
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
 
 ### Step 2: Rewrite and fix the problematic code in the .NET Editor
 
-Retype the following code, or use the Run button, or the copy button to add the code to the .NET Editor.
+Retype the following code, or use the **Run** button or the **Copy** button to add the code to the .NET Editor.
 
 ```csharp-interactive
 int[] numbers = { 4, 8, 15, 16, 23, 42 };
@@ -30,7 +30,7 @@ if (found)
 Console.WriteLine($"Total: {total}");
 ```
 
-Once you get it working, you should see the following output when you run the code.
+Once you get it working, you should get the following output when you run the code:
 
 ```output
 Set contains 42

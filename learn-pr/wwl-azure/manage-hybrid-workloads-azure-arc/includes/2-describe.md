@@ -76,4 +76,4 @@ Azure Arc enables you to deploy and configure the following cloud based technolo
 You can learn more by reviewing the following documents.
 
  -  [What is Azure Resource Manager?](https://aka.ms/azure-resource-manager-management-overview?azure-portal=true)
- -  [What is Azure Arc for servers (preview)?](https://aka.ms/azure-arc-servers?azure-portal=true)
+ -  [What is Azure Arc for servers?](https://aka.ms/azure-arc-servers?azure-portal=true)

@@ -4,6 +4,9 @@ Understanding how security works for agent pools helps you control sharing and u
 
 In Azure Pipelines, roles are defined on each agent pool. Membership in these roles governs what operations you can do on an agent pool.
 
+> [!NOTE]
+> There are differences between **Organization** and **Project** agent pools.
+
 :::row:::
   :::column:::
     **Role on an organization agent pool**
@@ -38,9 +41,9 @@ In Azure Pipelines, roles are defined on each agent pool. Membership in these ro
 :::row-end:::
 
 
-The All agent pools node in the Agent Pools tab is used to control the security of all organization agent pools.
+The All agent pools node in the Agent Pools tab is used to control the security of all **organization** agent pools.
 
-Role memberships for individual organization agent pools are automatically inherited from the 'All agent pools' node.
+Role memberships for individual **organization** agent pools are automatically inherited from the 'All agent pools' node.
 
 Roles are also defined on each organization's agent pool. Memberships in these roles govern what operations you can do on an agent pool.
 
@@ -78,8 +81,8 @@ Roles are also defined on each organization's agent pool. Memberships in these r
 :::row-end:::
 
 
-The All agent pools node in the Agent pools tab controls the security of all project agent pools in a project.
+The All agent pools node in the Agent pools tab controls the security of all **project** agent pools in a project.
 
-Role memberships for individual project agent pools are automatically inherited from the 'All agent pools' node.
+Role memberships for individual **project** agent pools are automatically inherited from the 'All agent pools' node.
 
 By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.

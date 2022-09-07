@@ -2,7 +2,7 @@ Azure SQL Database is a great choice for operational, transactional, and hybrid 
 
 In the bus catching scenario, Azure SQL Database was selected due to it being an enterprise database with modern capabilities, like JSON and geospatial support.
 
-Here, you will deploy Azure SQL Database using scripts, connect to it in Azure Data Studio, and set up the database for the scenario using T-SQL. You'll then explore the JSON and geospatial support as relates to catching the bus.
+Here, you'll deploy Azure SQL Database using scripts, connect to it in Azure Data Studio, and set up the database for the scenario using T-SQL. You'll then explore the JSON and geospatial support as relates to catching the bus.
 
 ## Deploy Azure SQL Database using PowerShell
 
@@ -19,7 +19,17 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!TIP]
     > If you are not on a Windows device, you need to locate your IP address with another method. In your terminal, you can run `curl ifconfig.co`.
 
-1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
+1. Run the following commands in Cloud Shell. Enter a **complex password** and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
+
+    > [!Note]
+    > A **complex password** must consist of:
+    >
+    > * 8 characters minimum and 16 characters maximum
+    > * Requires 3 out of 4 of the following:
+    >    * Lowercase characters
+    >    * Uppercase characters
+    >    * Numbers ( 0-9 )
+    >    * Symbols ( @ # $ % ^ & * - _  + = [ ] { } | \ : ‘ , . ? / ` ~ “ ( ) ; )
 
     ```powershell
     # Collect password 
@@ -81,9 +91,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
     Write-Host "Database deployed."
     ```
 
-    The script will take several minutes to complete. There are four main commands above, let's break them down. The first creates an Azure SQL Database logical server, which serves as something to connect to as well as a way for grouping metadata and policy settings for all databases assigned to that server. The next two commands create two firewall rules: one to allow your IP address to connect and one to allow other Azure services to connect. This setting will be especially useful when you set up CI/CD pipelines using Azure DevOps and/or GitHub Actions.
+    The script will take several minutes to complete. There are four main commands above, let's break them down. The first command creates an Azure SQL Database logical server, which serves as the instance to connect to and as a way for grouping metadata and policy settings for all databases assigned to that server. The next two commands create two firewall rules: one to allow your IP address to connect and one to allow other Azure services to connect. This setting will be especially useful when you set up CI/CD pipelines using Azure DevOps and/or GitHub Actions.
 
-    The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. Serverless is a great solution for the bus catching scenario as it is in development phase (not utilized 24/7) and it is unknown how popular it will be when you launch (how much compute it will need).
+    The final command deploys a database into that logical server. From the commands, you can tell the database is a General Purpose, Serverless database with a range of virtual cores between 0.5 and 4. Serverless is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless provides automatic compute scaling to simplify performance management and is billed only for the amount of compute used. Serverless also supports automatic pausing and resuming to help further price optimize. When your database is paused, you pay only for storage. Serverless is a great solution for the bus catching scenario as it's in development phase (not utilized 24/7) and it's unknown how popular it will be when you launch (how much compute it will need).
 
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
@@ -94,7 +104,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 Once your database is deployed, there are many ways that you can connect and interact with it: sqlcmd, Azure Data Studio, SSMS, the query editor in the portal, etc. Here, you'll learn how to connect to the database using Azure Data Studio.
 
-1. Open Azure Data Studio and confirm that the code repository folder is open by selecting the **Explorer** icon on the left-hand taskbar. If you do not see the code files, return to the previous exercise to configure your environment.
+1. Open Azure Data Studio and confirm that the code repository folder is open by selecting the **Explorer** icon on the left-hand taskbar. If you don't see the code files, return to the previous exercise to configure your environment.
 
 1. Select **Connections** from the left-hand taskbar. All your database connections can be created and stored here.
 
@@ -115,7 +125,7 @@ Once your database is deployed, there are many ways that you can connect and int
 
 ## Set up the database's schema with T-SQL
 
-Once you're connected to any database, you usually need to deploy the database schema and tailor the database to meet your scenario's requirements by creating tables. Using a series of T-SQL scripts in a SQL notebook in Azure Data Studio, you'll configure the database to support your application and load some initial bus-related data.
+Once you're connected to any database, you'll usually need to deploy the database schema and tailor the database to meet your scenario's requirements by creating tables. Using a series of T-SQL scripts in a SQL notebook in Azure Data Studio, you'll configure the database to support your application and load some initial bus-related data.
 
 1. In Azure Data Studio, select the **Explorer** icon in the left-hand taskbar.
 

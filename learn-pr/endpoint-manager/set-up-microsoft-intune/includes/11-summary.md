@@ -1,8 +1,8 @@
 This module provided the choices and considerations that are needed to set up the Microsoft Intune endpoint management solution. 
 
-In this module, you accomplished the following actions:
+In this module, you:
 
-- Reviewed the supported configurations, which include the supported operating systems, browsers, and network
+- Reviewed the supported Microsoft Intune configurations, which include the supported operating systems, browsers, and network
 - Signed up for the Microsoft Intune trial
 - Configured the Intune tenant domain name
 - Added users to Intune

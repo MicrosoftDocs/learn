@@ -2,11 +2,11 @@ Now that you understand the different ways that customers can find, try, buy, an
 
 ## What is Marketplace Rewards?
 
-When you publish your offer to the commercial marketplace, Microsoft provides you access to sales, technical and marketing benefits. As a publisher, one of the ways your benefits are differentiated is based on the listing option you choose.
+When you publish your offer to the commercial marketplace, Microsoft provides you access to sales, technical, and marketing benefits. As a publisher, one of the ways your benefits are differentiated is based on the listing option you choose.
 
-If you’re engaging customers through a “Contact Me” listing, Microsoft’s Marketplace Rewards team will reach out to provide guidance on how to increase the awareness of your solution.
+If you’re engaging customers through a **Contact Me** listing, Microsoft’s Marketplace Rewards team will reach out to provide guidance on how to increase the awareness of your solution.
 
-If you’re engaging customers by offering a **free trial** listing, enabling deployments through a **BYOL** offer, or making sales through a **transact** listing, Microsoft will support your growth with increasing demand generation and sales activities.
+If you’re engaging customers by offering a **Free trial** listing, enabling deployments through a **BYOL** offer, or making sales through a **transact** listing, Microsoft will support your growth with increasing demand generation and sales activities.
 
 ![Overview of Marketplace Rewards benefits increasing by investment represented by offer type.](..\media\14-more-you-engage-marketplace-rewards.png)
 
@@ -18,11 +18,11 @@ You can learn more about the benefits available through this commercial marketpl
 
 To get started with Marketplace Rewards:
 
-1. Register to become a Microsoft partner and join the Microsoft commercial marketplace at <https://aka.ms/joinmarketplace>
+1. Register to become a Microsoft partner and join the Microsoft commercial marketplace at <https://aka.ms/joinmarketplace>.
 
-2. Publish an offer in either Microsoft AppSource or Azure Marketplace through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace)
+2. Publish an offer in either Microsoft AppSource or Azure Marketplace through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace).
 
-3. Access and activate benefits directly through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace)
+3. Access and activate benefits directly through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace).
 
 ## Summary
 

@@ -3,7 +3,7 @@ uid: learn.wwl.understand-big-data-engineering-with-apache-spark-azure-synapse-a
 metadata:
   title: Analyze data with Apache Spark in Azure Synapse Analytics
   description: "Apache Spark is a core technology for large-scale data analytics. Learn how to use Spark in Azure Synapse Analytics to analyze and visualize data in a data lake."
-  ms.date: 05/31/2022
+  ms.date: 08/18/2022
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

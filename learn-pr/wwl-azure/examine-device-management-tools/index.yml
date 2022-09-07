@@ -3,7 +3,7 @@ uid: learn.wwl.examine-device-management-tools
 metadata:
   title: Examine device management tools
   description: "This module introduces you to the Azure service and coding tools that are used to implement device management tasks, and when the various approaches to device management should be applied."
-  ms.date: 02/15/2022
+  ms.date: 08/26/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

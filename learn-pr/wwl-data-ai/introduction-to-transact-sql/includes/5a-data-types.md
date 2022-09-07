@@ -203,18 +203,25 @@ The following table shows common data types supported in a SQL Server database.
   :::column-end:::
 :::row-end:::
 
-## Data type conversion
-
-Values of compatible data types can be implicitly converted as required. For example, suppose you can use the **+** operator to add an *integer* number to a *decimal* number, or to concatenate a fixed-length *char* value and a variable length *varchar* value. However, in some cases you may need to explicitly convert values from one data type to another - for example, trying to use **+** to concatenate a *varchar* value and a *decimal* value will result in an error unless you first convert the numeric value to a compatible string data type.
 
 > [!NOTE]
-> For the full list of data type conversions, see the [Transact-SQL reference documentation](/sql/t-sql/data-types/data-type-conversion-database-engine).
+> For more details on the different data types and their attributes, visit the [Transact-SQL reference documentation](/sql/t-sql/data-types/data-types-transact-sql).
 
-T-SQL includes functions to help you convert between data types:
+
+
+## Data type conversion
+
+Compatible data type values can be implicitly converted as required. For example, suppose you can use the **+** operator to add an *integer* number to a *decimal* number, or to concatenate a fixed-length *char* value and a variable length *varchar* value. However, in some cases you may need to explicitly convert values from one data type to another - for example, trying to use **+** to concatenate a *varchar* value and a *decimal* value will result in an error, unless you first convert the numeric value to a compatible string data type.
+
+> [!NOTE]
+> Implicit and explicit conversions apply to certain data types, and some conversions aren't possible. For more information, use the chart in the [Transact-SQL reference documentation](/sql/t-sql/data-types/data-type-conversion-database-engine).
+
+
+## T-SQL includes functions to help you explicitly convert between data types
 
 ### CAST and TRY_CAST
 
-The CAST function converts a value to a specified data type if the value is compatible with the target data type. If it is not compatible, an error is returned.
+The CAST function converts a value to a specified data type if the value is compatible with the target data type. An error will be returned if incompatible. 
 
 For example, the following query uses CAST to convert the *integer* values in the **ProductID** column to *varchar* values (with a maximum of 4 characters) in order to concatenate them with another character-based value:
 
@@ -356,7 +363,7 @@ Once again, this query returns the value converted to the specified data type, l
 
 Like CAST, CONVERT has a TRY_CONVERT variant that returns *NULL* for incompatible values.
 
-Another benefit of using CONVERT over CAST, is that CONVERT also includes a parameter that enables you specify a format style when converting numeric and date values to strings. For example, consider the following query:
+Another benefit of using CONVERT over CAST is that CONVERT also includes a parameter that enables you specify a format style when converting numeric and date values to strings. For example, consider the following query:
 
 ```sql
 SELECT SellStartDate,

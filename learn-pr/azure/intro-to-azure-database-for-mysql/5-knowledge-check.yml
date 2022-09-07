@@ -29,11 +29,11 @@ quiz:
   - content: "An app developer requires version 5.6 of MySQL. Which of the following options would be an appropriate hosting choice based on this requirement?"
     choices:
     - content: "Azure Database for MySQL Flexible Server"
-      isCorrect: true
-      explanation: "Correct. Azure Database for MySQL Flexible Server supports only versions 5.6, 5.7, and 8.0."
-    - content: "Azure Database for MySQL Single Server"
       isCorrect: false
-      explanation: "Incorrect. Azure Database for MySQL Single Server doesn't support version 5.6 "
+      explanation: "Incorrect. Azure Database for MySQL Flexible Server supports only versions 5.7 and 8.0."
+    - content: "Azure Database for MySQL Single Server"
+      isCorrect: true
+      explanation: "Correct. Azure Database for MySQL Single Server supports version 5.6, though this version is retired. "
   - content: "Which of the following Azure Database for MySQL SKUs is most appropriate for low-cost development and low-concurrency workloads?"
     choices:
     - content: "General Purpose"

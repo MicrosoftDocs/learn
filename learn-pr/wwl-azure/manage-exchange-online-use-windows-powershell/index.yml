@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.wwl.manage-exchange-online-use-windows-powershell
+metadata:
+  title: Manage Exchange Online by using Windows PowerShell
+  description: "This module covers managing mailboxes, resources, and admin roles in Exchange Online with PowerShell."
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage Exchange Online by using Windows PowerShell
+summary: This module covers managing mailboxes, resources, and admin roles in Exchange Online with PowerShell.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  - Explain how to connect to Exchange Online by using PowerShell.
+  - Explain how to manage mailboxes in Exchange Online.
+  - Explain how to manage resources in Exchange Online.
+  - Explain how to manage admin roles in Exchange Online.
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+  *   Familiarity with CIM and WMI technologies
+  *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
+  *   Familiarity to administer remote computers with Windows PowerShell
+  *   Familiarity to manage Azure resources with Windows PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.manage-exchange-online-use-windows-powershell.introduction
+- learn.wwl.manage-exchange-online-use-windows-powershell.connect-exchange-online
+- learn.wwl.manage-exchange-online-use-windows-powershell.manage-mailboxes
+- learn.wwl.manage-exchange-online-use-windows-powershell.manage-resources
+- learn.wwl.manage-exchange-online-use-windows-powershell.manage-admin-roles
+- learn.wwl.manage-exchange-online-use-windows-powershell.knowledge-check
+- learn.wwl.manage-exchange-online-use-windows-powershell.summary
+badge:
+  uid: learn.wwl.manage-exchange-online-by-using-windows-powershell.badge

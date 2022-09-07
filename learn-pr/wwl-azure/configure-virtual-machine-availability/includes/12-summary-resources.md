@@ -9,8 +9,8 @@ You should now be able to:
 
 ## Learn more
 
-You can learn more by reviewing the following.
+You can learn more by reviewing the following. 
 
  -  [Availability options for Azure Virtual Machines](/azure/virtual-machines/availability)
- -  [Learn - Build a scalable application with virtual machine scale sets](/learn/modules/build-app-with-scale-sets/)
+ -  [Learn - Build a scalable application with virtual machine scale sets ](/learn/modules/build-app-with-scale-sets/)
  -  [Learn - Implement scale and high availability with Windows Server VM](/learn/modules/implement-high-availability-of-windows-server-vms/)

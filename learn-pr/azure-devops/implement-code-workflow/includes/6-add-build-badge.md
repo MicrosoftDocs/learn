@@ -24,18 +24,18 @@ Most GitHub repositories include a file named *README.md*, which is a Markdown f
 
 Here's an example build badge:
 
-:::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="A screenshot of GitHub showing the build badge. The status shows that the most recent build succeeded.":::
+:::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="Screenshot of GitHub showing the build badge. The status shows that the most recent build succeeded.":::
 
 For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
 
-To make sure your build badge is visible:
+To check that your build badge is visible:
 
 1. In Azure DevOps, navigate to your organization.
 1. Select **Organization settings** from the bottom corner.
 1. Under **Pipelines**, select **Settings**.
 1. Turn off **Disable anonymous access to badges**.
 
-    :::image type="content" source="../media/6-devops-disable-anonymous-badge-access.png" alt-text="A screenshot Azure DevOps showing how to disable anonymous access to badges.":::
+    :::image type="content" source="../media/6-devops-disable-anonymous-badge-access.png" alt-text="Screenshot Azure DevOps showing how to disable anonymous access to badges.":::
 
 You need to make a similar change to your project:
 
@@ -51,7 +51,7 @@ Up until now, you created Git branches locally to make changes to the _Space Gam
 1. In Azure DevOps, in the left pane, select **Pipelines**, and then select your pipeline.
 1. Select the ellipsis (...) in the upper right, and then select **Status badge**.
 
-    :::image type="content" source="../media/6-pipeline-options-menu.png" alt-text="A screenshot of Azure Pipelines showing the options menu to set the build badge.":::
+    :::image type="content" source="../media/6-pipeline-options-menu.png" alt-text="Screenshot of Azure Pipelines showing the options menu to set the build badge.":::
 
 1. Under **Sample Markdown**, select the **Copy** button to copy the Markdown code to the clipboard.
 1. In GitHub, go to your project.
@@ -62,7 +62,7 @@ Up until now, you created Git branches locally to make changes to the _Space Gam
 
     GitHub renders the Markdown file and shows you the build badge.
 
-    :::image type="content" source="../media/6-github-preview-changes.png" alt-text="A screenshot of GitHub showing a preview of the build badge.":::
+    :::image type="content" source="../media/6-github-preview-changes.png" alt-text="Screenshot of GitHub showing a preview of the build badge.":::
 
 ## Commit your changes to main
 
@@ -70,13 +70,13 @@ In this section, you commit your changes to the `main` branch on GitHub.
 
 1. Scroll to the bottom of the page and specify a commit message, such as "Add build badge".
 
-    :::image type="content" source="../media/6-github-commit-changes.png" alt-text="A screenshot of GitHub showing the commit message.":::
+    :::image type="content" source="../media/6-github-commit-changes.png" alt-text="Screenshot of GitHub showing the commit message.":::
 
 1. Leave the **Commit directly to the `main` branch** option selected, and then select **Commit changes** to commit your changes to the `main` branch.
 
     Your badge is displayed on the *README.md* page.
 
-    :::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="The final build badge as it appears on the README page.":::
+    :::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="Screenshot of the final build badge as it appears on the README page.":::
 
     This process is a more basic way to merge code into GitHub. Instead of committing directly, you could have created a pull request with your changes for others to review.
 

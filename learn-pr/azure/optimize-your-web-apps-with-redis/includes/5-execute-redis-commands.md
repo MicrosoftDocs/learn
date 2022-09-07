@@ -1,16 +1,16 @@
 ::: zone pivot="csharp"
 
-As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It is often used as a cache, but can be used as a formal database or even message-broker. 
+As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even message-broker.
 
-It can store a variety of data types and structures and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
+It can store a variety of data types and structures, and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
 
-## Executing commands on the Redis cache
+## Execute commands on the Redis cache
 
-Typically, a client application will use a _client library_ to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the [Redis clients page](https://redis.io/clients). A popular high-performance Redis client for the .NET platform is **StackExchange.Redis**. The package is available through NuGet and can be added to your .NET code using the command line or IDE.
+Typically, a client application will use a *client library* to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the [Redis clients page](https://redis.io/clients). A popular high-performance Redis client for the .NET platform is **StackExchange.Redis**. The package is available through NuGet, and you can add it to your .NET code using the command line or IDE.
 
-### Connecting to your Redis cache with StackExchange.Redis
+### Connect to your Redis cache with StackExchange.Redis
 
-Recall that we use the host address, port number, and an access key to connect to a Redis server. Azure also offers a _connection string_ for some Redis clients which bundles this data together into a single string.
+Recall that we use the host address, port number, and an access key to connect to a Redis server. Azure also offers a *connection string* for some Redis clients, which bundles this data together into a single string.
 
 ### What is a connection string?
 
@@ -27,12 +27,12 @@ You can pass this string to **StackExchange.Redis** to create a connection the s
 
 Notice that there are two additional parameters at the end: 
 
-- **ssl** - ensures that communication is encrypted.
-- **abortConnection** - allows a connection to be created even if the server is unavailable at that moment.
+- **ssl** - ensures that communication is encrypted
+- **abortConnection** - allows a connection to be created even if the server is unavailable at that moment
 
 There are several other [optional parameters](https://github.com/StackExchange/StackExchange.Redis/blob/master/docs/Configuration.md#configuration-options) you can append to the string to configure the client library.
 
-### Creating a connection
+### Create a connection
 
 The main connection object in **StackExchange.Redis** is the `StackExchange.Redis.ConnectionMultiplexer` class. This object abstracts the process of connecting to a Redis server (or group of servers). It's optimized to manage connections efficiently and intended to be kept around while you need access to the cache.
 
@@ -48,13 +48,13 @@ var redisConnection = ConnectionMultiplexer.Connect(connectionString);
     // ^^^ store and re-use this!!!
 ```
 
-Once you have a `ConnectionMultiplexer`, there are 3 primary things you might want to do:
+Once you have a `ConnectionMultiplexer`, there are three primary things you might want to do:
 
 1. Access a Redis Database. This is what we will focus on here.
 2. Make use of the publisher/subscript features of Redis. This is outside the scope of this module.
 3. Access an individual server for maintenance or monitoring purposes.
 
-### Accessing a Redis database
+### Access a Redis database
 
 The Redis database is represented by the `IDatabase` type. You can retrieve one using the `GetDatabase()` method:
 
@@ -63,11 +63,11 @@ IDatabase db = redisConnection.GetDatabase();
 ```
 
 > [!TIP]
-> The object returned from `GetDatabase` is a lightweight object, and does not need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
+> The object returned from `GetDatabase` is a lightweight object and does not need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
 
 Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions which return `Task` objects to make them compatible with the `async` and `await` keywords.
 
-Here is an example of storing a key/value in the cache:
+Here's an example of storing a key/value in the cache:
 
 ```csharp
 bool wasSet = db.StringSet("favorite:flavor", "i-love-rocky-road");
@@ -80,9 +80,9 @@ string value = db.StringGet("favorite:flavor");
 Console.WriteLine(value); // displays: ""i-love-rocky-road""
 ```
 
-#### Getting and Setting binary values
+#### Get and Set binary values
 
-Recall that Redis keys and values are _binary safe_. These same methods can be used to store binary data. There are implicit conversion operators to work with `byte[]` types so you can work with the data naturally:
+Recall that Redis keys and values are *binary safe*. These same methods can be used to store binary data. There are implicit conversion operators to work with `byte[]` types so you can work with the data naturally:
 
 ```csharp
 byte[] key = ...;
@@ -103,20 +103,20 @@ byte[] value = db.StringGet(key);
 
 The `IDatabase` interface includes several other methods to work with the Redis cache. There are methods to work with hashes, lists, sets, and ordered sets.
 
-Here are some of the more common ones that work with single keys, you can [read the source code](https://github.com/StackExchange/StackExchange.Redis/blob/master/src/StackExchange.Redis/Interfaces/IDatabase.cs) for the interface to see the full list.
+Here are some of the more common operations that work with single keys; you can [read the source code](https://github.com/StackExchange/StackExchange.Redis/blob/master/src/StackExchange.Redis/Interfaces/IDatabase.cs) for the interface to see the full list.
 
 | Method | Description |
 |--------|-------------|
-| `CreateBatch` | Creates a _group of operations_ that will be sent to the server as a single unit, but not necessarily processed as a unit. |
-| `CreateTransaction` | Creates a group of operations that will be sent to the server as a single unit _and_ processed on the server as a single unit. |
-| `KeyDelete` | Delete the key/value. |
+| `CreateBatch` | Creates a *group of operations* that will be sent to the server as a single unit, but not necessarily processed as a unit. |
+| `CreateTransaction` | Creates a group of operations that will be sent to the server as a single unit *and* processed on the server as a single unit. |
+| `KeyDelete` | Deletes the key/value. |
 | `KeyExists` | Returns whether the given key exists in cache. |
 | `KeyExpire` | Sets a time-to-live (TTL) expiration on a key. |
 | `KeyRename` | Renames a key. |
 | `KeyTimeToLive` | Returns the TTL for a key. |
-| `KeyType` | Returns the string representation of the type of the value stored at key. The different types that can be returned are: string, list, set, zset and hash. |
+| `KeyType` | Returns the string representation of the type of the value stored at key. The different types that can be returned are: string, list, set, zset, and hash. |
        
-### Executing other commands
+### Execute other commands
 
 The `IDatabase` object has an `Execute` and `ExecuteAsync` method which can be used to pass textual commands to the Redis server. For example:
 
@@ -127,12 +127,12 @@ Console.WriteLine(result.ToString()); // displays: "PONG"
 
 The `Execute` and `ExecuteAsync` methods return a `RedisResult` object which is a data holder that includes two properties:
 
-- `Type` which returns a `string` indicating the type of the result - "STRING", "INTEGER", etc.
-- `IsNull` a true/false value to detect when the result is `null`.
+- `Type`, which returns a `string` indicating the type of the result - "STRING", "INTEGER", etc.
+- `IsNull`, a true/false value to detect when the result is `null`.
 
 You can then use `ToString()` on the `RedisResult` to get the actual return value.
 
-You can use `Execute` to perform any supported commands - for example, we can get all the clients connected to the cache ("CLIENT LIST"):
+You can use `Execute` to perform any supported commands. For example, we can get all the clients connected to the cache ("CLIENT LIST"):
 
 ```csharp
 var result = await db.ExecuteAsync("client", "list");
@@ -147,8 +147,9 @@ Result = id=9469 addr=16.183.122.154:54961 fd=18 name=DESKTOP-AAAAAA age=0 idle=
 id=9470 addr=16.183.122.155:54967 fd=13 name=DESKTOP-BBBBBB age=0 idle=0 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=0 qbuf-free=32768 obl=0 oll=0 omem=0 ow=0 owmem=0 events=r cmd=client numops=17
 ```
 
-### Storing more complex values
-Redis is oriented around binary safe strings, but you can cache off object graphs by serializing them to a textual format - typically XML or JSON. For example, perhaps for our statistics, we have a `GameStats` object which looks like:
+### Store more complex values
+
+Redis is oriented around binary safe strings, but you can cache off object graphs by serializing them to a textual format; typically XML or JSON. For example, perhaps for our statistics, we have a `GameStats` object which looks like:
 
 ```csharp
 public class GameStat
@@ -198,29 +199,30 @@ var stat = Newtonsoft.Json.JsonConvert.DeserializeObject<GameStat>(result.ToStri
 Console.WriteLine(stat.Sport); // displays "Soccer"
 ```
 
-## Cleaning up the connection
-Once you are done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This will close all connections and shutdown the communication to the server.
+## Clean up the connection
+
+Once you're done with the Redis connection, you can **Dispose** the `ConnectionMultiplexer`. This will close all connections and shut down the communication to the server.
 
 ```csharp
 redisConnection.Dispose();
 redisConnection = null;
 ```
 
-Let's create an application and do some simple work with our Redis cache.
+Let's create an application and do some work with our Redis cache.
 
 ::: zone-end
 
 ::: zone pivot="javascript"
 
-As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It is often used as a cache, but can be used as a formal database or even message-broker. 
+As mentioned earlier, Redis is an in-memory NoSQL database which can be replicated across multiple servers. It's often used as a cache, but can be used as a formal database or even message-broker.
 
-It can store a variety of data types and structures and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
+It can store a variety of data types and structures, and supports a variety of commands you can issue to retrieve cached data or query information about the cache itself. The data you work with is always stored as key/value pairs.
 
-## Executing commands on the Redis cache
+## Execute commands on the Redis cache
 
-Typically, a client application will use a _client library_ to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the [Redis clients page](https://redis.io/clients). A popular Redis client for JavaScript is the **redis** package, which you can add to a project with `npm install redis`.
+Typically, a client application will use a *client library* to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the [Redis clients page](https://redis.io/clients). A popular Redis client for JavaScript is the **redis** package, which you can add to a project with `npm install redis`.
 
-### Connecting to your Redis cache with the redis package
+### Connect to your Redis cache with the redis package
 
 Interaction with a Redis cache is achieved with the `RedisClient` class. In most scenarios, the following boilerplate code is the best way to create a `RedisClient` that connects to a Redis cache in Azure:
 
@@ -237,15 +239,15 @@ const client = redis.createClient(
 
 In most cases, you should avoid creating multiple `RedisClient`s. A single instance of `RedisClient` can be passed around and used everywhere in your code where Redis is needed.
 
-### Working with a Redis database
+### Work with a Redis database
 
-Redis commands are represented as methods on `RedisClient` with the name names as the commands themselves. Here's an example of storing a new value in the cache:
+Redis commands are represented as methods on `RedisClient` with the names as the commands themselves. Here's an example of storing a new value in the cache:
 
 ```javascript
 client.set("myKey", "myValue"); // executes "set myKey myValue" on the cache
 ```
 
-All of the command methods on `RedisClient` are asynchronous and support an optional callback argument that provides the result. The `redis` package does not support Promises (and thus `async`/`await` or chaining with `.then()`) out of the box. The easiest way to use `async`/`await` or `.then()` with `RedisClient` is to add Promise support to the entire client at once with the `bluebird` package's `promisifyAll` function:
+All of the command methods on `RedisClient` are asynchronous and support an optional callback argument that provides the result. The `redis` package doesn't support Promises (and thus `async`/`await` or chaining with `.then()`) out of the box. The easiest way to use `async`/`await` or `.then()` with `RedisClient` is to add Promise support to the entire client at once with the `bluebird` package's `promisifyAll` function:
 
 ```javascript
 var redis = require("redis");
@@ -260,22 +262,23 @@ This will add `XXXAsync` versions of all commands methods to `RedisClient` insta
 var result = await client.setAsync("myKey", "myValue");
 ```
 
-### Executing commands dynamically
+### Execute commands dynamically
 
-`sendCommand()` (or `sendCommandAsync()` with bluebird) can be used to send any string as a command to the cache. This is useful when you want to send commands dynamically (for example, if your app presents a prompt to send commands directly to the cache), or if new Redis commands are introduced that the `redis` package does not support. Command arguments must be sent as an array.
+You can use `sendCommand()` (or `sendCommandAsync()` with bluebird) to send any string as a command to the cache. This is useful when you want to send commands dynamically (for example, if your app presents a prompt to send commands directly to the cache), or if new Redis commands are introduced that the `redis` package doesn't support. Command arguments must be sent as an array.
 
 ```javascript
 // Add a key/value pair
 var result = await client.sendCommandAsync("set", ["myKey", "myValue"]);
 ```
 
-## Cleaning up the connection
-Once you are done with the Redis connection, you should close it with `quit()` (or `quitAsync()` when using bluebird):
+## Clean up the connection
+
+Once you're done with the Redis connection, you should close it with `quit()` (or `quitAsync()` when using bluebird):
 
 ```javascript
 await client.quitAsync();
 ```
 
-Let's create an application and do some simple work with our Redis cache.
+Let's create an application and do some work with our Redis cache.
 
 ::: zone-end

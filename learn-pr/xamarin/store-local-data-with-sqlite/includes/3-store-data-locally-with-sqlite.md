@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Storing data in SQLite is useful when you have relational data. For example, suppose you are building an application to manage a library. Each book in the library has one or more authors, and an author can write multiple books. This kind of relationship can be easily modeled in a SQLite database.
 
 In this unit, you'll learn how to use SQLite in a Xamarin application by using *SQLite.NET*. 

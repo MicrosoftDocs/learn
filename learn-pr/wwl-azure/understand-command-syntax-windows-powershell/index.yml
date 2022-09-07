@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.wwl.understand-command-syntax-windows-powershell
+metadata:
+  title: Understand the command syntax in Windows PowerShell
+  description: "This module covers the cmdlet structure and parameters for using Windows PowerShell cmdlets. It also explains how to use tab completion and how to display About files content."
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand the command syntax in Windows PowerShell
+summary: This module covers the cmdlet structure and parameters for using Windows PowerShell cmdlets. It also explains how to use tab completion and how to display About files content.
+abstract: |
+  Upon completion of this module, the learner will be able to:
+  *   Describe cmdlet structure.
+  *   Identify how to use Windows PowerShell parameters.
+  *   Explain how to use tab completion.
+  *   Explain how to display the About files content.
+  *   Use About files.
+prerequisites: |
+  - Familiarity with Windows networking technologies and implementation.
+  - Familiarity with Windows Server administration, maintenance, and troubleshooting.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+units:
+- learn.wwl.understand-command-syntax-windows-powershell.introduction
+- learn.wwl.understand-command-syntax-windows-powershell.discover-structure-of-powershell-cmdlets
+- learn.wwl.understand-command-syntax-windows-powershell.discover-parameters-use-powershell-cmdlets
+- learn.wwl.understand-command-syntax-windows-powershell.review-tab-completion-feature-powershell
+- learn.wwl.understand-command-syntax-windows-powershell.display-about-files-content-powershell
+- learn.wwl.understand-command-syntax-windows-powershell.knowledge-check
+- learn.wwl.understand-command-syntax-windows-powershell.summary
+badge:
+  uid: learn.wwl.understand-command-syntax-windows-powershell.badge

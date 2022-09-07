@@ -1,6 +1,6 @@
 When creating Bicep files or Azure Resource Manager templates (ARM templates), you need to understand what resource types are available, and what values to use in your template.
 
-Each of the resources available for Azure Cosmos DB is all listed under the **Microsoft.DocumentDB** resource provider:
+Each of the resources available for Azure Cosmos DB is listed under the **Microsoft.DocumentDB** resource provider:
 
 | **Resource type** | **Description** |
 | --- | --- |

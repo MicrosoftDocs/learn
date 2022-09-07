@@ -73,10 +73,8 @@ A quick way to get started with Azure Digital Twins in Postman is to import a pr
 There are currently two Azure Digital Twins data plane collections available for you to choose from:
 
  -  Azure Digital Twins Postman Collection: This collection provides a simple getting started experience for Azure Digital Twins in Postman. The requests include sample data, so you can run them with minimal edits required. Choose this collection if you want a digestible set of key API requests containing sample information.
-    
      -  To find the collection, navigate to the repo link [https://github.com/microsoft/azure-digital-twins-postman-samples](https://github.com/microsoft/azure-digital-twins-postman-samples) and open the file named postman\_collection.json.
  -  Azure Digital Twins data plane Swagger: This repo contains the complete Swagger file for the Azure Digital Twins API set, which can be downloaded and imported to Postman as a collection. This file will provide a comprehensive set of every API request, but with empty data bodies rather than sample data. Choose this collection if you want to have access to every API call and fill in all the data yourself.
-    
      -  To find the collection, navigate to the repo link [https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/data-plane/Microsoft.DigitalTwins](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/digitaltwins/data-plane/Microsoft.DigitalTwins) and choose the folder for the latest spec version. From here, open the file called digitaltwins.json.
 
 Use the following steps to download a collection to your computer, which enables you to import it into Postman.

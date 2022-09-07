@@ -3,7 +3,7 @@ Blazor can bind forms to models in your application. If you decorate those model
 
 The app correctly doesn't place orders when a client doesn't enter a name and some address fields. The team would like you to enhance the validations to include more of the fields. They'd also like to have some minimum lengths and character validation.
 
-In this exercise, you'll replace the current server-side validation to use data annotations. You'll see how to manage validation messages and improve the out of the box validation support. The last step you'll control how the form submits, only submitting a form when all fields are valid.
+In this exercise, you'll replace the current server-side validation to use data annotations. You'll see how to manage validation messages and improve the out-of-the-box validation support. In the last step, you'll control how the form submits, only submitting a form when all fields are valid.
 
 ## Add data annotations to a Blazor model
 
@@ -49,20 +49,20 @@ In this exercise, you'll replace the current server-side validation to use data 
         <ValidationSummary />
         <DataAnnotationsValidator />
       </EditForm>
-    </div>    
+    </div>
     ```
 
-1. In the EditForm tag, replace the `OnSubmit` parameter to use the valid submit. 
+1. In the EditForm tag, replace the `OnSubmit` parameter to use the valid submit.
 
     ```razor
       <EditForm Model=Order.DeliveryAddress OnValidSubmit=PlaceOrder>
     ```
 
-1. You can now delete the custom server-side logic to test the address is valid. Delete the `CheckSubmission` method in the `@code` block.
+1. You can now delete the custom server-side logic to test if the address is valid. Delete the `CheckSubmission` method in the `@code` block.
 
 ## Test the new data annotation validations
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
 
     Try to order some pizzas without entering any information. Observe the detailed error messages for each field.
 
@@ -70,7 +70,7 @@ In this exercise, you'll replace the current server-side validation to use data 
 
     This interaction improves the error checks for each field, but the error for each field would be much better next to the field it's related to.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
+1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
 
 ## Improve EditFrom error messages
 
@@ -166,13 +166,13 @@ In this exercise, you'll replace the current server-side validation to use data 
 
 ## Test the new data annotation validations
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
 
     :::image type="content" source="../media/7-active-validation-error-messages.gif" alt-text="Animated gif showing the error messages for each field being displayed when the data is invalid.":::
 
     The address form dynamically shows error message below a field that has invalid data. This interaction happens client-side and prevents customers entering bad addresses.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
+1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
 
 ## Restore the overall error message and disable the submit button
 
@@ -188,31 +188,32 @@ In this exercise, you'll replace the current server-side validation to use data 
     ```csharp
     protected void ShowError()
     {
-      isError = true;
+        isError = true;
     }     
     ```
 
-1. Change the PlaceOrder method to update the `isError` and `isSubmitting` properties.
+1. Change the `PlaceOrder` method to update the `isError` and `isSubmitting` properties.
 
     ```csharp
     async Task PlaceOrder()
     {
-      isError = false;
-      isSubmitting = true;
-      var response = await HttpClient.PostAsJsonAsync(NavigationManager.BaseUri + "orders", OrderState.Order);
-      var newOrderId= await response.Content.ReadFromJsonAsync<int>();
-      OrderState.ResetOrder();
-      NavigationManager.NavigateTo($"myorders/{newOrderId}");
+        isError = false;
+        isSubmitting = true;
+        var response = await HttpClient.PostAsJsonAsync(
+            $"{NavigationManager.BaseUri}orders", OrderState.Order);
+        var newOrderId= await response.Content.ReadFromJsonAsync<int>();
+        OrderState.ResetOrder();
+        NavigationManager.NavigateTo($"myorders/{newOrderId}");
     } 
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
 
     :::image type="content" source="../media/7-restored-generic-error-message.png" alt-text="Screenshot of the overall error message being shown.":::
 
     The error message displays if the customer tries to submit an invalid form.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
+1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
 
 ## Enable the submit button when all fields are correct
 
@@ -247,7 +248,7 @@ Would a better user experience be a customer can't submit their order until they
     }    
     ```
 
-    This code also allows links an event handler to when a field is changed. In the new handler, you can check to see if the model is valid and set the `isError` appropriately.
+    This code also allows for linking an event handler to when a field is changed. In the new handler, you can check to see if the model is valid and set the `isError` appropriately.
 
     ```csharp
         private void HandleFieldChanged(object sender, FieldChangedEventArgs e)
@@ -284,10 +285,10 @@ Would a better user experience be a customer can't submit their order until they
     }    
     ```
 
-1. In Visual Studio Code press <kbd>F5</kbd>, or in the **Run** menu select **Start Debugging**.
+1. In Visual Studio Code press <kbd>F5</kbd>, or from the **Run** menu select **Start Debugging**.
 
     :::image type="content" source="../media/7-disabled-button.gif" alt-text="Animated gif showing that the Place order button is disabled until all the fields have correct values.":::
 
     A customer is now prompted to enter information, and to begin with the Place order button is disabled. Only after all the required fields have data does the button become clickable.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app running.
+1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.

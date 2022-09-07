@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.azure-cosmos-db-api-for-mongodb
+metadata:
+  title: Azure Cosmos DB API for MongoDB
+  description: Azure Cosmos DB API for MongoDB
+  ms.date: 07/14/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Cosmos DB API for MongoDB
+prerequisites: |
+  Before starting this module, you should have experience of building cloud applications with JavaScript, Java, Python, C# or a similar programming language.
+summary: |
+  In the following modules, we will introduce the Azure Cosmos DB API for MongoDB account. We will learn how to add Azure Cosmos DB databases, collections and documents to the account. We will discuss the importance of using the proper model, sharding and indexing designs to ensure the best performance of the collections. You will also learn about the migration from and existing MongoDB database to Azure Cosmos DB. Finally, Azure Cosmos DB replication and monitoring will be covered.
+  These modules should give you a good introduction on how to design and manage an Azure Cosmos DB API for MongoDB account. Time to get started.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure-cosmos-db
+subjects:
+- database
+modules:
+- learn.wwl.get-started-mongodb-api-azure-cosmos-db
+- learn.wwl.design-mongodb-database-for-azure-cosmos-db
+- learn.wwl.migrate-mongodb-database-to-azure-cosmos-db
+- learn.wwl.replicate-monitor-azure-cosmos-db-api-mongodb-account
+trophy:
+  uid: learn.wwl.azure-cosmos-db-api-for-mongodb.trophy

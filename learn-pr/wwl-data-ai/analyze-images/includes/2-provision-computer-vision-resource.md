@@ -4,7 +4,7 @@ The **Computer Vision** service is designed to help you extract information from
 - *Object detection* - detecting the presence and location of specific objects within the image.
 - *Face detection* - detecting the presence, location, and features of human faces in the image.
 - *Image metadata, color, and type analysis* - determining the format and size of an image, its dominant color palette, and whether it contains clip art.
-- *Category identification* - identifying an appropriate categorization for the image, and if it contains any known celebrities or landmarks.
+- *Category identification* - identifying an appropriate categorization for the image, and if it contains any known landmarks.
 - *Brand detection* - detecting the presence of any known brands or logos.
 - *Moderation rating* - determine if the image includes any adult or violent content.
 - *Optical character recognition* - reading text in the image.

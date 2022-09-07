@@ -26,16 +26,14 @@ let suspiciousAccounts = datatable(account: string) [
     @"\administrator", 
     @"NT AUTHORITY\SYSTEM"
 ];
-
 SecurityEvent | where Account in (suspiciousAccounts)
 ```
+
 ```kusto
 let LowActivityAccounts =
     SecurityEvent 
     | summarize cnt = count() by Account 
     | where cnt < 1000;
-
 LowActivityAccounts | where Account contains "SQL"
-
 ```
 

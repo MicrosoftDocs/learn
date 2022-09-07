@@ -1,6 +1,6 @@
 Stream Analytics has first-class integration with Azure data streams as inputs from the following resources:
 
- -  Azure IoT Hub<br>
+ -  Azure IoT Hub
  -  Azure Event Hubs
  -  Azure Blob storage or Azure Data Lake Storage Gen2
 

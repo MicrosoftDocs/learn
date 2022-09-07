@@ -14,13 +14,14 @@ Resource Manager provides the what-if operation, which you can run on your Bicep
 
 :::image type="content" source="../media/6-stages-preview.png" alt-text="Diagram of a pipeline that includes Lint, Validate, and Preview stages. The Preview stage executes a what-if operation against Azure." border="false":::
 
-You use the `az deployment group what-if` command from within your pipeline definition to run the what-if step:
+You use the `az deployment group what-if` Azure CLI command from within your pipeline definition to run the what-if step:
 
 :::code language="yaml" source="code/6-what-if.yml" highlight="13-15" :::
 
 ::: zone pivot="powershell"
 
-If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
+> [!TIP]
+> In this module, we use the Azure CLI to run the what-if operation. If you build your own PowerShell-based pipeline, you can use the `New-AzResourceGroupDeployment` cmdlet with the `-Whatif` switch, or you can use the `Get-AzResourceGroupDeploymentWhatIfResult` cmdlet.
 
 ::: zone-end
 
@@ -38,7 +39,7 @@ In Azure Pipelines, an *environment* represents the place to which your solution
 
 As you already know, you use *jobs* to define a sequence of steps within a pipeline stage. When you include environments in your pipeline, you need to use a special kind of job called a *deployment job*. A deployment job is similar to a normal job, but it provides some extra functionality. This functionality includes defining the environment that the deployment job uses:
 
-:::code language="yaml" source="code/6-environment.yml" highlight="19-34" :::
+:::code language="yaml" source="code/6-environment.yml" highlight="23-38" :::
 
 Notice that in the YAML definition for a deployment job, there are some key differences from a normal job:
 

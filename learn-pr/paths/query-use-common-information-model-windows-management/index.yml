@@ -1,0 +1,43 @@
+### YamlMime:LearningPath
+uid: learn.wwl.query-use-common-information-model-windows-management
+metadata:
+  title: Query management information by using Common Information Model and Windows Management Instrumentation
+  description: Query management information by using Common Information Model and Windows Management Instrumentation
+  ms.date: 07/26/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Query management information by using Common Information Model and Windows Management Instrumentation
+prerequisites: |
+  *   Familiarity with Windows networking technologies and implementation
+  *   Familiarity with Windows Server administration, maintenance, and troubleshooting
+  *   Familiarity with Windows PowerShell and its commands to perform specific tasks
+  *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
+  *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
+summary: |
+  This learning path covers Windows Management Instrumentation (WMI) and Common Information Model (CIM). These technologies help to access information about a computer. Additionally, both technologies provide local and remote access to management information from the operating system, computer hardware, and installed software.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-active-directory
+- azure-cloud-shell
+- azure-powershell
+- azure-virtual-machines
+- m365
+- vs-code
+subjects:
+- architecture
+- development-tools
+- storage
+- virtual-machine
+modules:
+- learn.wwl.review-common-information-model-windows-management-instrumentation
+- learn.wwl.query-configuration-information
+- learn.wwl.query-manipulate-repository-objects
+trophy:
+  uid: learn.wwl.query-use-common-information-model-windows-management.trophy

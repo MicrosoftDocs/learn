@@ -6,8 +6,8 @@ metadata:
   title: Understand template specs
   description: Learn about template specs, their benefits, and when you might consider using them.
   ms.date: 09/30/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: arm-template-language-azure-shell-interface

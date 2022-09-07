@@ -75,7 +75,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     ![Screen shot of platform options for selecting target and minimum versions of the SDK.](../media/uwp-image-search2.png)
 
-4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and an **Image** control (for displaying the image). You can create the UI yourself, or copy the following XAML code and paste it into MainPage.xaml, replacing everything that's already there:
+4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and an **Image** control (for displaying the image). You can create the UI yourself, or copy the following XAML code and paste it into `MainPage.xaml`, replacing everything that's already there:
 
     ```XAML
     <Page
@@ -102,7 +102,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     ![Screen shot depicting the XAML file pane opened below the UI designer.](../media/uwp-image-search3.png)
 
-    Now we can work on the C# code that takes the text from the **TextBox**, sends it to the Azure service, and gets a link to an image in return.
+    Now we can work on the C# code in the `MainPage.xaml.cs` file that takes the text from the **TextBox**, sends it to the Azure service, and gets a link to an image in return.
 
 5. We'll first declare some important values and write the event handler that is called when the user enters text into the **TextBox**. The **SubscriptionKey** is very important. You'll have received it when you signed up for the Cognitive Services account. If the app doesn't work, this key is probably the reason. Be sure to add your key to the following code where it says ```your key goes here```:
 
@@ -121,7 +121,7 @@ We're now going to build the part of our English-language teaching app that focu
         public sealed partial class MainPage : Page
         {
             const string SubscriptionKey = "your key goes here";
-            const string UriBase = "https://api.cognitive.microsoft.com/bing/v7.0/images/search";
+            const string UriBase = "https://api.bing.microsoft.com/v7.0/images/search";
            
             public MainPage()
             {
@@ -216,7 +216,7 @@ We're now going to build the part of our English-language teaching app that focu
       ```
 
     - The Bing Image Search API does all the hard work of finding images and then returns a response in JSON format.
-    
+
     - The method **FindUrlOfImage(string targetString)** uses the Windows Runtime JSON API to decode the response and then extracts the first of several responses contained within the JSON.
   
     - The URL of the image is extracted and, finally, this code displays the image that the URL points to in the **Image** control:
@@ -239,7 +239,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
 
-4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and an **Image** control (for displaying the image). You can create the UI yourself, or copy the following XAML code and paste it into MainWindow.xaml, replacing everything that's already there:
+4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and an **Image** control (for displaying the image). You can create the UI yourself, or copy the following XAML code and paste it into `MainWindow.xaml`, replacing everything that's already there:
 
     ```XAML
     <Window x:Class="ShowMeAPicture.MainWindow"
@@ -264,7 +264,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     ![Screen shot depicting the XAML file pane opened below the UI designer.](../media/wpf-image-search3.png)
 
-    Now we can work on the C# code that takes the text from the **TextBox**, sends it to the Azure service, and gets a link to an image in return.
+    Now we can work on the C# code in the `MainWindow.xaml.cs` file that takes the text from the **TextBox**, sends it to the Azure service, and gets a link to an image in return.
 
 5. We'll first declare some important values and write the event handler that is called when the user enters text into the **TextBox**. The **SubscriptionKey** is very important. You'll have received it when you signed up for the Cognitive Services account. If the app doesn't work, this key is probably the reason. Be sure to add your key to the following code where it says ```your key goes here```:
 

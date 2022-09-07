@@ -2,7 +2,7 @@ To prevent any unauthorized network traffic in your Azure Virtual Desktop enviro
 
 ## What is Azure Firewall?
 
-Recall that Azure Firewall is a cloud-based security service that protects your Azure virtual network resources from incoming and outgoing threats. Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall with the hub network.
+Recall that Azure Firewall is a cloud-based security service that protects your Azure virtual network resources from incoming and outgoing threats. Azure Firewall is provisioned inside a hub virtual network. Traffic to and from the spoke virtual networks and the on-premises network traverses the firewall within the hub network.
 
 All traffic to and from the internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 

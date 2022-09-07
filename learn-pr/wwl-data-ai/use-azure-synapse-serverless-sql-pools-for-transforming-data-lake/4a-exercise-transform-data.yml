@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-synapse-serverless-sql-pools-for-transforming-data-lake.exercise-transform-data
+title: Exercise - Transform files using a serverless SQL pool
+metadata:
+  title: Exercise - Transform files using a serverless SQL pool
+  description: "Exercise - Transform files using a serverless SQL pool"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/4a-exercise-transform-data.md)]

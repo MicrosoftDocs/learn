@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Learn how to create, publish, and deploy template specs, which enable you to store and reuse templates across your organization.
   ms.date: 09/30/2021
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

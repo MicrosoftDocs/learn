@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.wwl.extract-data-from-forms-use-form-recognizer
+metadata:
+  title: Extract data from forms by using Form Recognizer
+  description: Extract data from forms by using Form Recognizer
+  ms.date: 07/06/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Extract data from forms by using Form Recognizer
+prerequisites: |
+  - None
+summary: ""
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+products:
+- azure-cognitive-services
+- azure-form-recognizer
+subjects:
+- artificial-intelligence
+modules:
+- learn.wwl.plan-form-recognizer-solution
+- learn.wwl.use-prebuilt-form-recognizer-models
+- learn.wwl.work-with-form-recognizer
+- learn.wwl.create-composed-form-recognizer-model
+- learn.wwl.build-form-recognizer-custom-skill-for-azure-cognitive-search
+trophy:
+  uid: learn.wwl.extract-data-from-forms-by-using-form-recognizer.trophy

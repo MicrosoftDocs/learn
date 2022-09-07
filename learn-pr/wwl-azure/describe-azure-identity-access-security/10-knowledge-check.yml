@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-azure-identity-access-security.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/26/2022
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which Azure Active Directory tool can vary the credentials needed to log in based on signals, such as where the user is located?"
+    choices:
+    - content: "Conditional Access"
+      isCorrect: true
+      explanation: "Conditional Access is a tool that Azure Active Directory uses to allow (or deny) access to resources based on identity signals. Conditional Access might challenge you for a second authentication factor if your sign-in signals are unusual or from an unexpected location."
+    - content: "Guest access"
+      isCorrect: false
+      explanation: "Guest access is an access method that helps enable collaboration across organizational boundaries, but isn’t an authentication method or a tool to help with authentication."
+    - content: "Passwordless"
+      isCorrect: false
+      explanation: "Passwordless is an authentication method that relies on something you have; plus something you are or something you know. For example, Windows Hello is a passwordless authentication method."
+  - content: "Which security model assumes the worst-case security scenario, and protects resources accordingly?"
+    choices:
+    - content: "Zero trust"
+      isCorrect: true
+      explanation: "Zero Trust is a security model that assumes the worst case scenario and protects resources with that expectation."
+    - content: "Defense-in-depth"
+      isCorrect: false
+      explanation: "Defense-in-depth is focused on setting up a system that prevents access to information by unauthorized parties. It’s a proactive model and builds layer upon layer to protect information."
+    - content: "Role-based access control"
+      isCorrect: false
+      explanation: "Role-based access control provides the ability to grant or deny access based on a user or services assigned role."
+  - content: "A user is simultaneously assigned multiple roles that use role-based access control. What are their actual permissions? The role permissions are: Role 1 - read || Role 2 - write || Role 3 - read and write."
+    choices:
+    - content: "Read only"
+      isCorrect: false
+      explanation: "Role-based access control works on an allow model, so they wouldn’t be limited to the permissions of only one role."
+    - content: "Write only"
+      isCorrect: false
+      explanation: "Role-based access control works on an allow model, so they wouldn’t be limited to the permissions of only one role."
+    - content: "Read and write"
+      isCorrect: true
+      explanation: "Role-based access control, using an allow model, grants all of the permissions assigned in all of the assigned roles."

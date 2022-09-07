@@ -59,13 +59,15 @@ On the Azure DevOps Demo Generator site, follow these steps:
 
     :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings and the button for cloning in Visual Studio Code.":::
 
+1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select Open.
+
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
-    If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
+   - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
@@ -80,8 +82,8 @@ On the Azure DevOps Demo Generator site, follow these steps:
 To create the two new resource groups, run the following Azure CLI commands in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteTest --location westus
-az group create --name ToyWebsiteProduction --location westus
+az group create --name ToyWebsiteTest --location westus3
+az group create --name ToyWebsiteProduction --location westus3
 ```
 
 ::: zone-end
@@ -91,8 +93,8 @@ az group create --name ToyWebsiteProduction --location westus
 To create the two new resource groups, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus
-New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
+New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
+New-AzResourceGroup -Name ToyWebsiteProduction -Location westus3
 ```
 
 ::: zone-end
@@ -155,15 +157,15 @@ Next, create two service connections in Azure Pipelines: one for your test envir
 
    :::image type="content" source="../media/4-environments-new-details-test.png" alt-text="Screenshot of the Azure DevOps page for a new environment named Test, with completed details and the Create button.":::
 
-1. Select the arrow to return to the environments list.
-
    Before a pipeline can use the environment, you must grant it permission. For simplicity, you'll allow all pipelines to access the environment. In your own pipelines, you should restrict access to environments to just the pipelines that require it.
 
 1. Select the button with three dots and select **Security**.
 
    :::image type="content" source="../media/4-environment-security.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Security item highlighted.":::
 
-1. In the section named **Pipeline permissions**, select the button with three dots. Select **Open access**.
+1. In the section named **Pipeline permissions**, if there's a button titled **Restrict permission**, select it.
+
+1. Select the button with three dots. Select **Open access**.
 
    :::image type="content" source="../media/4-environment-security-open.png" alt-text="Screenshot of the Azure DevOps page for an environment named Test, with the More Actions menu displayed and the Open access item highlighted.":::
 

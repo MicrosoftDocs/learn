@@ -3,7 +3,7 @@ uid: learn.wwl.configure-user-experience-settings
 metadata:
   title: Configure user experience settings
   description: "Configure user experience settings"
-  ms.date: 06/08/2022
+  ms.date: 08/05/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -41,6 +41,7 @@ units:
 - learn.wwl.configure-user-experience-settings.configure-session-timeout-properties
 - learn.wwl.configure-user-experience-settings.configure-device-redirections
 - learn.wwl.configure-user-experience-settings.configure-universal-print
+- learn.wwl.configure-user-experience-settings.implement-start-virtual-machine-connect-feature
 - learn.wwl.configure-user-experience-settings.troubleshoot-user-profile-issues
 - learn.wwl.configure-user-experience-settings.troubleshoot-azure-virtual-desktop-clients
 - learn.wwl.configure-user-experience-settings.knowledge-check

@@ -1,8 +1,8 @@
 In this module, the Tailspin team took their first steps towards adopting DevOps practices. You worked with them and learned how to use Azure Boards to get started with Agile work planning. A board gives you an easy way to see what's going on with a project and to manage your work. Some of the things you learned to do with Azure Boards include how to:
 
-* Create projects
-* Create work items
-* Associate work items with a sprint, or iteration
+* Create projects.
+* Create work items.
+* Associate work items with a sprint, or iteration.
 
 ## Learn more
 

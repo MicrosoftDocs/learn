@@ -11,7 +11,7 @@ In the bus-catching scenario, Azure Functions can be used with a timer trigger. 
 
 ### Determine monitored routes with Azure Functions inputs
 
-In the bus-catching scenario, a user of the solution probably doesn't want to monitor every single bus route from the real-time bus data feed. A user is probably only interested in a few routes that will help them get from where they are to where they are going.
+In the bus-catching scenario, a user of the solution probably doesn't want to monitor every single bus route from the real-time bus data feed. A user is probably only interested in a few routes that will help them get from where they're to where they're going.
 
 The first task for the Azure Function is to connect to Azure SQL Database and run a stored procedure to understand what the monitored routes are. In the previous exercise, you created a table in Azure SQL Database called `dbo.MonitoredRoutes` and inserted a single route `100113`. In production, users might have multiple or different routes that need to be monitored. In order to access this data from your Azure Function App, you must create a connection to Azure SQL Database and execute a stored procedure `web.GetMonitoredRoutes`. This stored procedure simply returns the monitored routes from the table. The Azure Function App will store it in a variable called `routes`.
 
@@ -42,7 +42,7 @@ def GetRealTimeFeed():
 
 ### Identify buses in monitored routes and activating a geofence using Azure SQL Database
 
-Next, you need to connect to Azure SQL Database and run a stored procedure to take that JSON data `busData` and store it in a table. Azure SQL Database supports JSON so this step is straightforward. The result of the stored procedure contains information about the buses that are activating a geofence, meaning they have entered or exited a geofence.
+Next, you need to connect to Azure SQL Database and run a stored procedure to take that JSON data `busData` and store it in a table. Azure SQL Database supports JSON so this step is straightforward. The result of the stored procedure contains information about the buses that are activating a geofence, meaning they've entered or exited a geofence.
 
 ### Send an email notification for each activated bus using Azure Logic Apps
 

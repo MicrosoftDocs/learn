@@ -10,7 +10,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
     </ItemGroup>
     ```
 
-1. To see installed dependencies, run this command.
+1. To see installed dependencies, run this command:
 
    ```dotnetcli
    dotnet list package
@@ -23,7 +23,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
    > Humanizer            2.7.9        2.7.9
    ```
 
-1. To see what dependencies are outdated, run this command.
+1. To see what dependencies are outdated, run this command:
 
    ```dotnetcli
    dotnet list package --outdated
@@ -38,19 +38,19 @@ Dependencies that you use in your apps can be updated often and may contain new 
       > Humanizer            2.7.9       2.7.9      2.11.10
    ```
 
-   By default, this command will check for the latest stable version. To check for pre-release packages, append `--include-prerelease` to the previous command.
+   By default, this command will check for the latest stable version. To check for pre-release packages, append `--include-prerelease` to the previous command:
 
    ```dotnetcli
    dotnet list package --outdated --include-prerelease
    ```
 
-1. You can, with some level of confidence, update to the `Latest` version. Doing so will ensure the dependencies get the latest features and patches in that major version. To install the latest version. run the following command.
+1. You can, with some level of confidence, update to the `Latest` version. Doing so will ensure the dependencies get the latest features and patches in that major version. To install the latest version, run the following command:
 
    ```dotnetcli
    dotnet add package Humanizer 
    ```
 
-   Your output should look like this output.
+   Your output should look like this:
 
    ```output
    info : PackageReference for package 'Humanizer' version '2.11.10' updated in file 'C:\Users\username\Desktop\DotNetDependencies\DotNetDependencies.csproj'.
@@ -58,7 +58,7 @@ Dependencies that you use in your apps can be updated often and may contain new 
 
    The output states that your project dependencies have been updated.
 
-   If you want to upgrade to a specific version of the dependency, you can append the `--version` parameter, and specify the specific version.
+   If you want to upgrade to a specific version of the dependency, you can append the `--version` parameter and specify the specific version.
 
    ```dotnetcli
    dotnet add package Humanizer --version 2.11.10

@@ -25,7 +25,7 @@ prerequisites: |
   - Visual Studio Code
   - .NET SDK 6.0 or greater
   - Git command-line client
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/language/csharp-null-safety.svg
 levels:
   - beginner
 roles:
@@ -34,8 +34,6 @@ roles:
 products:
   - dotnet
 
-subjects:
-- development-tools
 units:
 - learn.languages.csharp-null-safety.introduction
 - learn.languages.csharp-null-safety.understand-nullability

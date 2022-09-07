@@ -3,8 +3,8 @@ uid: learn.wwl.evaluate-regulatory-compliance-strategy
 metadata:
   title: Evaluate a regulatory compliance strategy
   description: "Learn how to evaluate a cybersecurity strategy for regulatory compliance."
-  ms.date: 06/08/2022
-  author: hrasheed-msft
+  ms.date: 07/27/2022
+  author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   *   Experience with compliance frameworks, processes and products.
   *   Experience implementing Azure Policy.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/evaluate-a-regulatory-compliance-strategy.svg
 levels:
 - advanced
 roles:
@@ -29,6 +29,9 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
+- security
 units:
 - learn.wwl.evaluate-regulatory-compliance-strategy.introduction
 - learn.wwl.evaluate-regulatory-compliance-strategy.interpret-compliance-requirements-their-technical-capabilities
@@ -42,6 +45,3 @@ units:
 - learn.wwl.evaluate-regulatory-compliance-strategy.summary
 badge:
   uid: learn.wwl.evaluate-regulatory-compliance-strategy.badge
-subjects:
-- security
-- architecture

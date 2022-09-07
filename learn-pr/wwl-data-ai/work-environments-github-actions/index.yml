@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.work-environments-github-actions
+metadata:
+  title: Work with environments in GitHub Actions
+  description: "machine learning operations, MLOps, environments"
+  ms.date: 07/11/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Work with environments in GitHub Actions
+summary: Learn how to train, test, and deploy a machine learning model by using environments as part of your machine learning operations (MLOps) strategy.
+abstract: |
+  In this module, you'll learn how to:
+  - Set up environments in GitHub.
+  - Use environments in GitHub Actions.
+  - Add approval gates to assign required reviewers before moving the model to the next environment.
+prerequisites: |
+  - Programming experience with Python or R
+  - Experience developing and training machine learning models
+  - Familiarity with basic Azure Machine Learning concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-scientist
+- devops-engineer
+products:
+- azure-machine-learning
+- github
+subjects:
+- artificial-intelligence
+- devops
+- machine-learning
+units:
+- learn.wwl.work-environments-github-actions.introduction
+- learn.wwl.work-environments-github-actions.understand-business-problem
+- learn.wwl.work-environments-github-actions.explore-solution-architecture
+- learn.wwl.work-environments-github-actions.set-up-environments
+- learn.wwl.work-environments-github-actions.exercise
+- learn.wwl.work-environments-github-actions.knowledge-check
+- learn.wwl.work-environments-github-actions.summary
+badge:
+  uid: learn.wwl.work-environments-github-actions.badge

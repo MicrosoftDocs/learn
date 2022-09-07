@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.secure-azure-database-for-postgresql
+metadata:
+  title: Secure Azure Database for PostgreSQL
+  description: "Azure Database for PostgreSQL includes comprehensive security features including encryption in transit and at rest, authentication, and granting permissions to database users. In this module you will learn about the security features of Azure Database for PostgreSQL, and how to configure them."
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Secure Azure Database for PostgreSQL
+summary: Azure Database for PostgreSQL includes comprehensive security features including encryption, authentication, and granting permissions to database users. In this module you will learn about the security features of Azure Database for PostgreSQL.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the security features of Azure Database for PostgreSQL.
+  - Create database users and grant permissions.
+  - Understand encryption in Azure Database for PostgreSQL.
+  - Configure Azure AD authentication with Azure Database for PostgreSQL.
+prerequisites: |
+  ## Prerequisites
+  - Demonstrate an understanding of relational databases.
+  - Demonstrate an understanding of basic SQL.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- database-administrator
+products:
+- azure-database-postgresql
+subjects:
+- database
+units:
+- learn.wwl.secure-azure-database-for-postgresql.introduction
+- learn.wwl.secure-azure-database-for-postgresql.describe-security
+- learn.wwl.secure-azure-database-for-postgresql.describe-built-server-roles
+- learn.wwl.secure-azure-database-for-postgresql.grant-permissions
+- learn.wwl.secure-azure-database-for-postgresql.understand-encryption
+- learn.wwl.secure-azure-database-for-postgresql.configure-azure-active-directory-authentication
+- learn.wwl.secure-azure-database-for-postgresql.exercise-configure-azure-active-directory-authentication
+- learn.wwl.secure-azure-database-for-postgresql.knowledge-check
+- learn.wwl.secure-azure-database-for-postgresql.summary
+badge:
+  uid: learn.wwl.secure-azure-database-for-postgresql.badge

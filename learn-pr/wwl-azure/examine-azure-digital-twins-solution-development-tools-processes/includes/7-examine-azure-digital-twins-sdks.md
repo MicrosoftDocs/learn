@@ -6,14 +6,12 @@ Microsoft has developed Azure Digital Twins SDKs to cover the APIs as follows:
 The supported programming languages are:
 
  -  Control plane APIs:
-    
      -  .NET (C\#)
      -  Java
      -  JavaScript
      -  Python
      -  Go
  -  Data plane APIs
-    
      -  .NET (C\#)
      -  Java
      -  JavaScript

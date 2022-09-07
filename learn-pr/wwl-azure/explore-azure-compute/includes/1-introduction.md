@@ -8,12 +8,12 @@ You need to prepare the specifications to apply the compute component to design 
 
 You will:
 
- -  Plan for implementing SAP solutions.
- -  Explore Azure virtual machines.
- -  Examine constrained vCPU capable virtual machine sizes.
- -  Scale Azure virtual machines.
- -  Examine Azure virtual machine scaling considerations.
- -  Explore network bandwidth allocation.
- -  Explore data flows.
- -  Examine Azure virtual machine compute considerations.
- -  Implement and verify high availability SAP HANA on Azure virtual machines.
+- Plan for implementing SAP solutions.
+- Explore Azure virtual machines.
+- Examine constrained vCPU capable virtual machine sizes.
+- Scale Azure virtual machines.
+- Examine Azure virtual machine scaling considerations.
+- Explore network bandwidth allocation.
+- Explore data flows.
+- Examine Azure virtual machine compute considerations.
+- Implement and verify high availability SAP HANA on Azure virtual machines.

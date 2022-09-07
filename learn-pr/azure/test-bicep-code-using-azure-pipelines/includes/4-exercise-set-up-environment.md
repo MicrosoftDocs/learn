@@ -58,13 +58,15 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
     :::image type="content" source="../media/4-clone-visual-studio-code.png" alt-text="Screenshot of Azure DevOps that shows the repository settings, with the button for cloning in Visual Studio Code highlighted.":::
 
+1. If a dialog box appears, prompting you to allow an extension to open the repository URI, select Open.
+
 1. Create a folder to use for the repository, and then choose **Select Repository Location**.
 
 1. You're using this repository for the first time, so you're prompted to sign in.
 
-    If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
+   - If you're using Windows, enter the same credentials that you used to sign in to Azure DevOps earlier in this exercise.
 
-    If you're using macOS, enter the Git username and password that you generated a few moments ago.
+   - If you're using macOS, enter the Git username and password that you generated a few moments ago.
 
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
@@ -79,7 +81,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
 ```azurecli
-az group create --name ToyWebsiteTest --location westus
+az group create --name ToyWebsiteTest --location westus3
 ```
 
 ::: zone-end
@@ -89,7 +91,7 @@ az group create --name ToyWebsiteTest --location westus
 To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
 ```azurepowershell
-New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
 ```
 
 ::: zone-end

@@ -3,7 +3,7 @@ uid: learn.wwl.prepare-teach-mb-920-microsoft-dynamics-365-fundamentals
 metadata:
   title: 'Prepare to teach MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
   description: 'Prepare to teach MB-920: Microsoft Dynamics 365 Fundamentals (ERP)'
-  ms.date: 04/13/2022
+  ms.date: 08/08/2022
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   - None
 summary: |
   Learn about the Microsoft Learn for Educators program and how to best deliver its content to your students. Prepare to deliver Microsoft Dynamics 365 Fundamentals (ERP) in an academic program.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/prepare-teach-mb-920-microsoft-dynamics-365-fundamentals.svg
 levels:
 - beginner
 roles:

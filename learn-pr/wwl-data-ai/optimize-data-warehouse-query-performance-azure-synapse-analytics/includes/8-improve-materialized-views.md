@@ -1,4 +1,4 @@
-Materialized views are prewritten queries with joins and filters whose definition is saved and the results persisted to a dedicated SQL pool. They are not supported in by serverless SQL pools.
+Materialized views are prewritten queries with joins and filters whose definition is saved and the results persisted to a dedicated SQL pool. They are not supported by default in serverless SQL pools.
 
 Materialized views results in increased performance since the data within the view can be fetched without having to resolve the underlying query to base tables. You can also further filter and supplement other queries as if it is a table also. In addition, you also can define a different table distribution within the materialized view definition that is different from the table on which it is based.
 

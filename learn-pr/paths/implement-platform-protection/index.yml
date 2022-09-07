@@ -1,18 +1,18 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.implement-platform-protection
 metadata:
-  title: 'AZ-500 part2: Implement platform protection'
-  description: 'AZ-500 part2: Implement platform protection'
-  ms.date: 01/04/2022
+  title: 'AZ-500: Implement platform protection'
+  description: 'AZ-500: Implement platform protection'
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'AZ-500 part2: Implement platform protection'
+title: 'AZ-500: Implement platform protection'
 prerequisites: |
   None.  It is beneficial to have a solid infrastructure background in networking and servers.
 summary: |
-  Security has to happen at all levels.  Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
+  Security has to happen at all levels. Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
 iconUrl: /learn/achievements/platform-implement-protection.svg
 levels:
 - intermediate

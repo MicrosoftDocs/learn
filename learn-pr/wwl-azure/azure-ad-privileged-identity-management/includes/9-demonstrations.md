@@ -2,7 +2,7 @@ These are a few try-this exercise to configure Privileged Identity Management (P
 
 ## Task 1: Azure AD PIM for roles
 
-In this task, we'll configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation.
+In this task,we'll configure PIM activation settings, add the Billing Administrator as a PIM role, activate the role, and test activation.
 
 ### Configure PIM settings
 

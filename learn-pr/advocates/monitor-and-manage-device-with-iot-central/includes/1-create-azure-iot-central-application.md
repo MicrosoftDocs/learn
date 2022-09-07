@@ -12,9 +12,13 @@ In this module, you will:
 - Validate your connection and data flow
 - Configure rules for maintenance notifications
 
+## Prerequisites
+
+An active Azure subscription. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+
 ## Create the Coffee Maker application
 
-In this unit, you sign in to IoT Central and create a new custom application. An application created using the free, 7-day pricing plan is sufficient to complete this module.
+In this unit, you sign in to IoT Central and create a new custom application. An application created using a standard pricing plan.
 
 1. Navigate to the Azure IoT Central [Build > New application](https://apps.azureiotcentral.com/build/new/custom) page.
 
@@ -25,5 +29,5 @@ In this unit, you sign in to IoT Central and create a new custom application. An
     - Enter a friendly application name, such as **Coffee Maker 01-A**.
     - Optionally edit the URL - this is required if the name you selected is already in use.
     - Select **Custom application** as the application template.
-    - Select the **Free** pricing plan.
+    - Select one of the standard pricing plans. Select your **Directory**, **Azure subscription**, and **Location**. To learn about creating IoT Central applications, see [Create an IoT Central application](https://docs.microsoft.com/azure/iot-central/core/howto-create-iot-central-application). To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/).
     - Choose **Create**.

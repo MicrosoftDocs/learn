@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.create-manage-power-bi-assets
+metadata:
+  title: Create and manage Power BI assets
+  description: "Creating shared data assets for your analytics environment provides structure and consistency. Maintaining those assets is as important, and XMLA endpoint provides additional administrative capabilities."
+  ms.date: 08/05/2022
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and manage Power BI assets
+summary: Creating shared data assets for your analytics environment provides structure and consistency. Maintaining those assets is as important, and XMLA endpoint provides additional administrative capabilities.
+abstract: |
+  Upon completion of this module, you should be able to:
+  * Create specialized datasets.
+  * Create live and DirectQuery connections.
+  * Use Power BI service lineage view.
+  * Use XMLA endpoint to connect datasets.
+prerequisites: |
+  Intermediate experience with Power BI Desktop application and service.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+products:
+- power-bi
+subjects:
+- data-ai
+- data-analytics
+- data-management
+- knowledge-management
+- productivity
+units:
+- learn.wwl.create-manage-power-bi-assets.introduction
+- learn.wwl.create-manage-power-bi-assets.create-reusable
+- learn.wwl.create-manage-power-bi-assets.explore-use-lineage-view
+- learn.wwl.create-manage-power-bi-assets.dataset-use-xmla-endpoint
+- learn.wwl.create-manage-power-bi-assets.exercise-create-reusable
+- learn.wwl.create-manage-power-bi-assets.knowledge-check
+- learn.wwl.create-manage-power-bi-assets.summary
+badge:
+  uid: learn.wwl.create-manage-power-bi-assets.badge

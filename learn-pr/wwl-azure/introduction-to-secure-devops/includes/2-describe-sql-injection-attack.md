@@ -26,12 +26,12 @@ In this tutorial, we'll simulate a SQL injection attack.
 
 ## How it works
 
-1.  Navigate to the Patients view, and in the search box, type `"'"` and hit enter. You'll see an error page with SQL exception indicating that the search box feeds the text into a SQL statement.
+1.  Navigate to the Patients view, and in the search box, type `"'"` and hit enter. You'll see an error page with an SQL exception indicating that the search box feeds the text into a SQL statement.
 
     :::image type="content" source="../media/server-error-application-syntax-f441fe7d.png" alt-text="Screenshot of server error in application. SQL syntax.":::
 
 
-    The helpful error message is enough to guess that the text in the search box is being appended into the SQL statement.
+    The helpful error message is enough to guess that the text in the search box is being appended to the SQL statement.
 
 2.  Next, try passing a SQL statement `'AND FirstName = 'Kim'--` in the search box. You'll see that the results in the list below are filtered down to only show the entry with firstname Kim.
 
@@ -43,7 +43,7 @@ In this tutorial, we'll simulate a SQL injection attack.
     :::image type="content" source="../media/patients-table-order-2f2ef7cf.png" alt-text="Screenshot of the patients table order by SSN.":::
 
 
-4.  Now for the finale, run this drop statement to drop the table that holds the information displayed on this page... `'AND 1=1; Drop Table Patients --`. Once the operation is complete, try and load the page. You'll see that the view errors out with an exception indicating that the dbo.patients table can't be found.
+4.  Now for the finale, run this drop statement to drop the table that holds the information displayed on this page... `'AND 1=1; Drop Table Patients --`. Once the operation is complete, try to load the page. You'll see that the view errors with an exception indicating that the dbo.patients table can't be found.
 
     :::image type="content" source="../media/invalid-object-name-patients-5a5dc6b9.png" alt-text="Screenshot of an invalid object name dbo.Patients.":::
 

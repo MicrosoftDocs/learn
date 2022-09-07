@@ -1,15 +1,15 @@
-To complete the steps for protecting your VMware VMs, you now need to connect instances of VMware SRM on the protected and recovery sites, and then configure a protection policy. The process of connecting VMware SRM instances is known as *site pairing*. You can configure site pairing from a Windows client VM, called a *jump box*, that’s deployed on the virtual network that has access to both Azure VMware Solution private clouds. 
+To complete the steps for protecting your VMware vSphere VMs, you now need to connect instances of VMware SRM on the protected and recovery sites, and then configure a protection policy. The process of connecting VMware SRM instances is known as *site pairing*. You can configure site pairing from a Windows client VM, called a *jump box*, that’s deployed on the virtual network that has access to both Azure VMware Solution private clouds. 
 
-## Configure site pairing in vCenter
+## Configure site pairing in vCenter Server
 
 To configure site pairing, perform the following steps:
 
 1. Ensure that the jump box device has connectivity to both Azure VMware Solution private clouds. 
 
-2. In the jump box VM, open a browser and connect to the private cloud vCenter and NSX-T Manager using credentials that you can retrieve from the **Identity** pane in your Azure VMware Solution private cloud.
+2. In the jump box VM, open a browser and connect to the private cloud vCenter Server and NSX-T Manager using credentials that you can retrieve from the **Identity** pane in your Azure VMware Solution private cloud.
 
     > [!NOTE]
-    > The first time you attempt to connect to vCenter, you’ll be prompted to use either a Flash-based vSphere web client or an HTML5-based client. We recommend you use the HTML5-based client.
+    > The first time you attempt to connect to vCenter Server, you’ll be prompted to use either a Flash-based vSphere web client or an HTML5-based client. We recommend you use the HTML5-based client.
 
 3. In the vSphere web client, select **Menu**, and then select **Site Recovery**.
 

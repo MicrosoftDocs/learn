@@ -10,7 +10,7 @@ metadata:
 title: Build mobile and desktop apps with .NET MAUI
 summary: "Learn how to use .NET MAUI to build apps that run on mobile devices and on the desktop using C# and Visual Studio. You'll learn the fundamentals of building an app with .NET MAUI and more advanced topic such as local data storage and invoking REST-based web services."
 prerequisites: | 
-  - Visual Studio 2022 with the MAUI workload installed
+  - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:

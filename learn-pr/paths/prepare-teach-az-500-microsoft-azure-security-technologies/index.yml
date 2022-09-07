@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.wwl.prepare-teach-az-500-microsoft-azure-security-technologies
+metadata:
+  title: Prepare to teach AZ-500 Microsoft Azure Security Technologies
+  description: Prepare to teach AZ-500 Microsoft Azure Security Technologies
+  ms.date: 07/06/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to teach AZ-500 Microsoft Azure Security Technologies
+prerequisites: |
+  * None
+summary: |
+  The AZ-500: Microsoft Azure Security Technologies course gives students the opportunity to learn a digital skillset that improves their career prospects. Educators can facilitate the AZ-500: Microsoft Azure Security Technologies courseware and exams as part of academic courses and programs.
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- advanced
+roles:
+- higher-ed-educator
+products:
+- azure
+subjects:
+- security
+modules:
+- learn.wwl.introduction-microsoft-learn-educators-program
+- learn.wwl.onboard-microsoft-learn-educators-program
+- learn.wwl.microsoft-learn-educators-course-preparation
+- learn.wwl.microsoft-learn-educators-course-plan
+- learn.wwl.learn-best-practices-from-microsoft-technical-trainers
+- learn.wwl.get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies
+- learn.wwl.prepare-for-course-delivery
+- learn.wwl.close-out-course
+trophy:
+  uid: learn.wwl.prepare-teach-az-500-microsoft-azure-security-technologies.trophy

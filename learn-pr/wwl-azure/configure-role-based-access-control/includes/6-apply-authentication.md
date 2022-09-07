@@ -2,5 +2,5 @@ RBAC includes many built-in roles, can be assigned at different scopes, and allo
 
 The following diagram illustrates how Azure AD Admin roles are different from Azure RBAC roles. Azure AD Admin roles are used to manage resources in Azure AD, such as users, groups, and domains. Azure RBAC roles provide more fine-grained access management to Azure resources.
 
-:::image type="content" source="../media/role-based-authentication-b3dda7ae.png" alt-text="Azure AD Admin roles and Azure RBAC roles work together to authenticate users.":::
+:::image type="content" source="../media/role-based-authentication-b3dda7ae.png" alt-text="Diagram showing Azure AD Admin roles and Azure RBAC roles working together to authenticate users.":::
 <br>
