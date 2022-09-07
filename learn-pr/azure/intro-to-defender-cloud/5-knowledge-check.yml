@@ -42,7 +42,7 @@ quiz:
       isCorrect: false
       explanation: "Your SOC team is responsible for following up on the alerts and recommendations provided by Defender for Cloud."
 
-  - content: "An online casino received an email stating that if they do not transfer $10 million dollars to a well known hacker group, that hacker group will perform a bruteforce attack against their online casino. The casino has Defender for Cloud enabled, how will Defender for Cloud let them know if such an attack occurs?"
+  - content: "An online casino received an email stating that if they do not transfer $10 million dollars to a well known hacker group, that hacker group will perform a brute force attack against their online casino. The casino has Defender for Cloud enabled, how will Defender for Cloud let them know if such an attack occurs?"
     choices:
     - content: "Defender for Cloud will use the Secure Score to alert the casino about any known attacks."
       isCorrect: false
