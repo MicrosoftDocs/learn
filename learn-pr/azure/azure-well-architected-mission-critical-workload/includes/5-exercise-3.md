@@ -93,7 +93,7 @@ The dependency graph with health scores can be visualized with a traffic light r
 
 > Check your progress: [Visualization](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#visualization)
 
-## 7&ndash;Set up alerts
+### 7&ndash;Set up alerts
 Dashboards should be used with alerts to raise immediate attention for issues. You can use 
 
 If the health state of a component changes to **Degraded** or **Unhealthy**, the operator should be immediately notified. Set the alert to the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
