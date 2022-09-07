@@ -219,7 +219,6 @@ These scripts should take three to five minutes to complete. Be sure to note you
     INSERT INTO dbo.[MonitoredRoutes] (RouteId) VALUES (100113);
     INSERT INTO dbo.[MonitoredRoutes] (RouteId) VALUES (100136);
     GO
-    GO
     ```
 
     1. Finally, select <kbd>Ctrl+C</kbd> to exit sqlcmd and run **`pwsh`** to switch back to PowerShell.
