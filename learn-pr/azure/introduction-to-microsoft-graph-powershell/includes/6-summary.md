@@ -6,6 +6,6 @@ We have also looked at a toolkit of cmdlets in the Microsoft Graph PowerShell mo
 
 ## References
 
-- [Get started with Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started?view=graph-powershell-1.0)
-- [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating?view=graph-powershell-1.0)
-- [Using authentication cmdlets](/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0)
+- [Get started with Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started)
+- [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating)
+- [Using authentication cmdlets](/powershell/microsoftgraph/authentication-commands)
