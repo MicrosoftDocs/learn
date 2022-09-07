@@ -1,4 +1,4 @@
-Before you start creating new dashboards, you'll learn a bit about how dashboards in Azure Data Explorer work. 
+Now you've connected to the data source that's been pre-loaded into Azure Data Explorer. Before you start creating new dashboards, you'll learn a bit about how dashboards in Azure Data Explorer work. 
 
 ## What are Azure Data Explorer Dashboards?
 
