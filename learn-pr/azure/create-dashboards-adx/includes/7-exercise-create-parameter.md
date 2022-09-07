@@ -18,7 +18,7 @@ First, you need to switch from viewing mode to editing mode.
     |---------|---------| ---|
     |**Label**|The name of the parameter shown on the dashboard or the edit card.| State
     |**Parameter type**|**Single selection**: Only one value can be selected in the filter as input for the parameter.<br>**Multiple selection**: One or more values can be selected in the filter as input(s) for the parameter.<br>**Time range**: Filter the queries and dashboards based on time.<br>**Free text**: The user can type a value or copy/paste a value to the text field. | Multiple selection
-    |**Variable name**|The name of the parameter to be used in the query.| state
+    |**Variable name**|The name of the parameter to be used in the query.| _state
     |**Data type**|The data type of the parameter values.| string
     |**Show on pages**|Select the pages where this parameter will be displayed. | Select all
     |**Source**|**Fixed values**: Manually introduced static filter values. <br>**Query**: Dynamically introduced values using a KQL query.| [Query](#edit-parameter-source-query)
@@ -29,6 +29,7 @@ First, you need to switch from viewing mode to editing mode.
 
 You need to create a list of possible values for this parameter. The parameter you are creating is called "State", and will be used to filter the results based on the state in which the event occurred. You could manually enter a list of all possible states, however, it's simpler to use a query that will return this list dynamically.
 
+1. In the **Query results** field, select **Add query**.
 1. In **Data source**, select the *Samples* database.
 1. Select **Add query**.
     
@@ -58,7 +59,7 @@ You've now created a parameter, but nothing has changed on your dashboard. You n
 1. You're going to use the **variable name** defined in the parameter options as a filter in the query. In this case, the variable name is *state*. Edit the query to include the following line:
 
     ```kusto
-    | where State has_any (state)
+    | where State has_any (_state)
     ```  
 
     Your query should look like the following image: 
