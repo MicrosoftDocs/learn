@@ -8,7 +8,7 @@ Azure Monitor is a service for collecting, analyzing, and acting on telemetry fr
 
 ![Diagram of Azure Monitor Architecture.](../media/3-azure-monitoring-options-01.png)
 
-Azure Monitor starts with collecting telemetry. This data includes application-layer data and infrastructure-performance data from VM guest operating systems and containers. Additionally, Azure Monitor collects directly from the Azure platform resources, and you can also ingest your own custom data using APIs. The collected data is stored in centralized and fully-managed data stores: *Azure Monitor Metrics* for numerical time-series values, and *Azure Monitor Log Analytics workspaces* for resource logs. Metrics are automatically collected and stored for Azure resources, but user configuration is required to send and store resource logs. After the data is collected, you can choose how you consume, analyze, and respond.
+Azure Monitor starts with collecting telemetry. This data includes application-layer data and infrastructure-performance data from VM guest operating systems and containers. Additionally, Azure Monitor collects directly from the Azure platform resources, and you can also ingest your own custom data using APIs. The collected data is stored in centralized and fully managed data stores: *Azure Monitor Metrics* for numerical time-series values, and *Azure Monitor Log Analytics workspaces* for resource logs. Metrics are automatically collected and stored for Azure resources, but user configuration is required to send and store resource logs. After the data is collected, you can choose how you consume, analyze, and respond.
 
 In most cases, you should start with Insights, which are guided monitoring and troubleshooting experiences for Azure resources. For example, you can use Azure Monitor for containers for your Kubernetes workloads. You may also visualize the data yourself with Azure dashboards in the Azure portal, create business views with Power BI, or create interactive reports using workbooks. Use Azure Monitor for a detailed view of your application's health, along with the health of your infrastructure on a single screen.
 
@@ -24,7 +24,7 @@ Attacks are becoming more intelligent, and the number of people with the right s
 
 ![Screenshot of Microsoft Defender for Cloud Overview.](../media/3-azure-monitoring-options-03.png)
 
-Defender for Could helps you ease the configuration of your security. Defender for Cloud is natively integrated with other Azure services, such as PaaS services like Azure SQL Database. For IaaS services, you can enable automatic provisioning in Defender for Cloud.
+Defender for Cloud helps you ease the configuration of your security. Defender for Cloud is natively integrated with other Azure services, such as PaaS services like Azure SQL Database. For IaaS services, you can enable automatic provisioning in Defender for Cloud.
 
 ![Screenshot of Microsoft Defender for Cloud automatic provisioning.](../media/3-azure-monitoring-options-04.png)
 
