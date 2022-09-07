@@ -4,7 +4,7 @@ metadata:
   moduleType: choose
   title: Build a Python daemon app that calls a protected API using the Microsoft identity platform
   description: Build a Python daemon app that authenticates and acquires tokens from Azure Active Directory (Azure AD) as itself and calls a secure web API.
-  ms.date: 08/10/2022
+  ms.date: 09/07/2022
   author: henrymbuguakiarie
   ms.author: henrymbugua
   ms.topic: interactive-tutorial
@@ -31,12 +31,12 @@ products:
 subjects:
   - cloud-computing
 units:
-- learn.build-daemon-python.introduction
-- learn.build-daemon-python.azure-daemon-app-authentication-authorization
-- learn.build-daemon-python.exercise-register-azure-ad-app
-- learn.build-daemon-python.explore-client-confidential-app
-- learn.build-daemon-python.exercise-configure-authentication-daemon-app
-- learn.build-daemon-python.knowledge-check
-- learn.build-daemon-python.summary
+  - learn.build-daemon-python.introduction
+  - learn.build-daemon-python.azure-daemon-app-authentication-authorization
+  - learn.build-daemon-python.exercise-register-azure-ad-app
+  - learn.build-daemon-python.explore-client-confidential-app
+  - learn.build-daemon-python.exercise-configure-authentication-daemon-app
+  - learn.build-daemon-python.knowledge-check
+  - learn.build-daemon-python.summary
 badge:
   uid: learn.build-daemon-python.badge
