@@ -11,6 +11,12 @@ You'll use the Azure Data Explorer web interface to connect to the data. You onl
 
     The query window opens with a connection to the *help* cluster. The query window contains a tutorial, which starts with green commented-out explanations. For this module, you won't be using the built-in tutorial.
 
+    If you are not automatically connected to the *help* cluster, use the following steps:
+
+     1. Select **+Add cluster**
+     1. In the **Connection URI**, enter *help*.
+     1. Select the blue **Add** button.
+     
 1. Expand the database by selecting the **>** arrow to the next of the **Samples** database.
 
     :::image type="content" source="../media/3-query.png" alt-text="Screenshot of query window in ADX.":::
