@@ -180,4 +180,4 @@ Graph API call result: {
 }
 ```
 
-You've successfully created a Python daemon app that uses its own identity and acquires a valid access token to call a protected web API.
+You've successfully created a Python daemon app that uses its own identity and acquires an access token to call a protected web API.

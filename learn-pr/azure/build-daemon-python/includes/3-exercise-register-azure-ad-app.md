@@ -34,7 +34,7 @@ Configure a client secret for the registered daemon application. The daemon appl
 
 1. In the left menu, under **Manage**, select **Certificates & secrets**.
 1. Select **New client secret**.
-1. In the **Description** box, enter a description for the client secret, such as, _daemon-client-secret_.
+1. In the **Description** box, enter a description for the client secret, like, _daemon-client-secret_.
 1. Under **Expires**, select a duration for which the secret is valid.
 1. Select **Add**.
 1. Record the secret's value for use in your daemon application. This secret value is _never displayed again_ after you leave this page.
