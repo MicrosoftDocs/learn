@@ -105,7 +105,7 @@ You must select a region where you want the resources (CPU, storage, etc.) to be
 
 There are two separate costs the subscription will be charged for every VM: compute and storage. By separating these costs, you scale them independently and only pay for what you need.
 
-**Compute costs** \- Compute expenses are priced on a per-hour basis but billed on a per-minute basis. For example, you're only charged for 55 minutes of usage if the VM is deployed for 55 minutes. you'ren't charged for compute capacity if you stop and deallocate the VM. The hourly price varies based on the VM size and OS you select. 
+**Compute costs** \- Compute expenses are priced on a per-hour basis but billed on a per-minute basis. For example, you're only charged for 55 minutes of usage if the VM is deployed for 55 minutes. you aren't charged for compute capacity if you stop and deallocate the VM. The hourly price varies based on the VM size and OS you select. 
 
 **Storage costs** \- you're charged separately for the storage the VM uses. The status of the VM has no relation to the storage charges. Even when a VM is stopped/deallocated, you're charged for the storage used by the disks.
 
