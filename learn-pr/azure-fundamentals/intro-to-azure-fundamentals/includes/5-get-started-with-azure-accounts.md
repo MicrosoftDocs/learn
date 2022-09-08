@@ -17,9 +17,9 @@ For more information on how to create an Azure account, see the [Create an Azure
 
 The Azure free account includes:
 
- -  Free access to popular Azure products for 12 months.
- -  A credit to spend for the first 30 days.
- -  Access to more than 25 products that are always free.
+- Free access to popular Azure products for 12 months.
+- A credit to spend for the first 30 days.
+- Access to more than 40 products that are always free.
 
 The Azure free account is an excellent way for new users to get started and explore. To sign up, you need a phone number, a credit card, and a Microsoft or GitHub account. The credit card information is used for identity verification only. You won't be charged for any services until you upgrade to a paid subscription.
 
@@ -38,3 +38,4 @@ The [Azure free student account](https://azure.microsoft.com/free/students/?azur
 Many of the Learn exercises use a technology called the sandbox, which creates a temporary subscription that's added to your Azure account. This temporary subscription allows you to create Azure resources for the duration of a Learn module. Learn automatically cleans up the temporary resources for you after you've completed the module.
 
 When you're completing a Learn module, you're welcome to use your personal subscription to complete the exercises in a module. The sandbox is the preferred method to use though, because it allows you to create and test Azure resources at no cost to you.
+
