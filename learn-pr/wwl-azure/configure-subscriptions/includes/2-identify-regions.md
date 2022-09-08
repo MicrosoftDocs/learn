@@ -14,7 +14,7 @@ Here are some points to consider about regions:
 
 ### Things to know about regional pairs
 
-Each Azure region is paired with another region within the same geography to make a _regional pair_ (or _paired regions_). Regional pairs help to support always-on availability of Azure resources used by your infrastructure. The following table describes some prominent characteristics of paired regions:
+Most Azure regions are paired with another region within the same geography to make a _regional pair_ (or _paired regions_). Regional pairs help to support always-on availability of Azure resources used by your infrastructure. The following table describes some prominent characteristics of paired regions:
 
 | Characteristic | Description |
 | --- | --- |
