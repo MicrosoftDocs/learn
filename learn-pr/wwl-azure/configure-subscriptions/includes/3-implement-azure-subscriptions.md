@@ -28,6 +28,6 @@ Consider how many subscriptions your organization needs to support the business 
 
 - **Consider multiple subscriptions**. Set up different subscriptions and payment options according to your company's departments, projects, regional offices, and so on. A user can have more than one subscription linked to their Azure account, where each subscription pertains to resources, access privileges, limits, and billing for a specific project.
 
-- **Consider shared subscriptions**. Plan for how your users can share resources allocated in a single subscription. Each user has their own Azure account, but many users can access the same shared subscription.
+- **Consider a dedicated shared services subscription**. Plan for how users can share resources allocated in a single subscription. Use a shared services subscription to ensure all common network resources are billed together and isolated from other workloads. Examples of shared services subscriptions include Azure ExpressRoute and Virtual WAN.
 
 - **Consider access to resources**. Every Azure subscription can be associated with an Azure AD. Users and services authenticate with Azure AD before they access resources. 
