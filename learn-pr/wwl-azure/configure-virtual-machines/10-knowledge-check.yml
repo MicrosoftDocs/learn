@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/27/2022
+  ms.date: 09/08/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -35,18 +35,18 @@ quiz:
       explanation: "Correct. The Azure Bastion service is a new fully platform-managed PaaS service provisioned inside a virtual network. Bastion provides secure and seamless RDP and SSH connectivity to virtual machines. The access uses the Azure portal and SSL."
     - content: "Configure a Guest configuration on the virtual machine."
       isCorrect: false
-      explanation: "Incorrect. The guest configuration is not a valid solution. Is there a better answer?"
+      explanation: "Incorrect. The guest configuration isn't a valid solution. Is there a better answer?"
     - content: "Create a custom script extension."
       isCorrect: false
       explanation: "Incorrect. Custom script extensions are for post deployment configuration, software installation, or any other configuration or management tasks."
   - content: "What is the effect of the default network security settings for a new virtual machine?"
     choices:
-    - content: "Neither outbound nor inbound requests are allowed."
+    - content: "All outbound and inbound requests aren't allowed."
       isCorrect: false
       explanation: "Incorrect. Outbound requests are allowed by default."
-    - content: "Outbound request is allowed. Inbound traffic is only allowed from within the virtual network."
+    - content: "Outbound requests are allowed. Inbound traffic is only allowed from within the virtual network."
       isCorrect: true
-      explanation: "Correct. Outbound requests are considered low risk, so they are allowed by default. Inbound traffic from within the virtual network is allowed. By placing a VM in a virtual network, the VM owner is implicitly opting in to communication among the resources in the virtual network."
-    - content: "There are no restrictions: all outbound and inbound requests are allowed."
+      explanation: "Correct. Outbound requests are considered low risk, so they're allowed by default. Inbound traffic from within the virtual network is allowed."
+    - content: "There are no restrictions. All outbound and inbound requests are allowed."
       isCorrect: false
       explanation: "Incorrect. There are restrictions on inbound traffic."
