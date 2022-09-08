@@ -23,7 +23,7 @@ Within Visual Studio Code, open the folder that contains the BlazorApp project y
    <Counter />
    ```
 
-Save the file, and the `dotnet watch run` command you executed in the previous module will restart the app and refresh it in the browser so that the `Counter` component shows up on the Home page.
+Save the file. In Visual Studio Code, run the `dotnet watch run` command you executed in the previous module; this will restart the app and refresh it in the browser so that the `Counter` component shows up on the Home page. In Visual Studio, you can select the **Hot Reload** button to restart the app.
 
 ![Counter component on Home page.](../media/counter-homepage.png)
 
