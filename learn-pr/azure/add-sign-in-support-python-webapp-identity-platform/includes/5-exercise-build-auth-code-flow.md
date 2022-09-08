@@ -2,30 +2,29 @@ The sign-in flow in MSAL Python takes these high level steps:
 
 :::image type="content" source="../media/5-webapp-authentication-flow.png" border="false" alt-text="Web app sign in authentication flow":::
 
-In this exercise, you'll add code to sign in and sign out users in a Python Flask web application that uses MSAL for Python. Follow these steps to add sign-in support:
+In this exercise, you'll add code to sign in users, grant them access to resources, and sign them out. Follow these steps to build your core application logic:
 
 - Set up the Flask application
 - Create the authorization code flow dictionary
 - Create app routes
-- Create a confidential client
+- Create a confidential client instance
 - Add code to sign users
 - Add code to sign out users
 
 ## Set up the Flask application
 
-### Import the auth library
+You're now ready to start writing your core application logic. The `app.py` file in your project directory will hold the code. 
 
-For your application to sign in Azure AD users, start by importing the auth library into your application. Add the following code to `app.py` to import the MSAL Python:
+For your application to sign in Azure AD users, start by importing the authentication library into your application. Add the following code to `app.py` to import the MSAL Python:
 
 ```python
-# Import Microsoft Authentication Library (MSAL) for Python
+# 📁 app.py
+# Import MSAL Python
 import msal
 from msal.authority import (AuthorityBuilder, AZURE_PUBLIC)
 ```
 
-### Import Flask modules
-
-Next, import Flask modules to handle render templates and session access.
+Next, import Flask modules that your application will use to handle render templates and session access by adding the snippet below to `app.py`:
 
 ```python
 # Flask imports to handle render templates and session access
@@ -35,9 +34,9 @@ from flask import Flask, render_template, session, request, redirect, url_for
 from flask_session import Session
 ```
 
-### Initialize the Flask app
+After importing the authentication library and all required modules, add code to initialize your Python Flask application. 
 
-After importing the required modules, add code to initialize your Python Flask application. You'll also load the default Flask configurations such as session configs, as shown below. 
+In the code snippet below, you use the `Flask` class to create an application instance named `app`. You also load the default Flask configurations such as session configs, as shown below: 
 
 ```Python
 def create_app():
@@ -46,45 +45,40 @@ def create_app():
     # Initialize the flask app
     app = Flask(__name__)
 
-    # Load Flask configuration settings such as session configs
+    # Load Flask configuration settings
     app.config.from_object("default_settings")
 
-    # Initialize the serverside session for the app to coordinate auth flows, store the 
-    # "user" object and store MSAL client caches (token cache and http cache)
+    # Initialize the serverside session for the app
     Session(app)
 
-    # Support both http (localhost) and https (deployed behind a web
-    # proxy such as in most cloud deployments). See:
-    # https://flask.palletsprojects.com/en/2.0.x/deploying/wsgi-standalone/#proxy-setups
+    # Support both http (localhost) and https (web proxy/cloud)deployments.
     app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 ```
 
-In addition to the Flask-specific configurations, ` app.config.from_object("default_settings")` also gets the client id, client credential, and tenant id that will be used with the MSAL client.
+In addition to the Flask-specific configurations, ` app.config.from_object("default_settings")` gets the client ID, client credential, and tenant ID that will be used with the MSAL client.
 
-The `Session(app)` object initializes a server side session that is used to coordinate the authorization code flow between auth legs and store the "User" object (id token/claims). It also stores two MSAL client caches; (i) the token cache that contains access tokens and refresh tokens and (ii) the http cache that contains highly cacheable content like the metadata endpoint.
+The `Session(app)` object initializes a server side session that is used to coordinate the authorization code flow and store the "user" object containing the id token and all associated claims. It also stores two MSAL client caches - the token cache and the http cache. The token cache contains access and refresh tokens while the http cache contains highly cacheable content like responses associated with HTTP requests.
 
 ## Create the authorization code flow dictionary
 
-To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform.In this tutorial, you use the authorization code grant flow for sign-in. Add the following code to `app.py` to build the auth code flow dictionary and redirect users to Azure AD to perform the necessary authorization code flow actions.
+The web app we build in this training module uses the authorization code grant flow. Add the following code to `app.py` to build the auth code flow dictionary using the MSAL client. 
 
 ```python
 # Redirect unauthorized users through the auth code flow to sign in
 @app.errorhandler(Unauthorized)
 def initiate_auth_code_flow(error):
     """
-    Builds the auth code flow and then redirects to Azure AD to allow the
-    user to perform authorization.
+    Builds the auth code flow and then redirects to Azure AD for user authorization.
     """
 
-    # Remove stale user from session data (if any)
+    # Remove stale user from session data, if any.
     session.pop("user", None)
 
-    # The MSAL ConfidentialClientApplication will always make an HTTP
-    # request to the metadata endpoint for your tenant upon creation.
+    # The MSAL ConfidentialClientApplication makes an HTTP request to
+    # the metadata endpoint for your tenant upon creation.
     http_cache: dict = session.get("msal_http_response_cache", {})
 
-    # The MSAL client has a method to initiate the auth code flow, so the
-    # first step is to create a MSAL client.
+    # Create an MSAL client before initiating the auth code flow.
     msal_client = msal.ConfidentialClientApplication(
         app.config.get("CLIENT_ID"),
         authority=AuthorityBuilder(AZURE_PUBLIC, app.config.get("TENANT_ID")),
@@ -97,8 +91,7 @@ def initiate_auth_code_flow(error):
         redirect_uri=url_for("authorized", _external=True),
     )
 
-    # Add a dictionary entry to store where the user should be directed to
-    # after the last leg of the auth code flow
+    # Add a dictionary entry to store a post sign-in url where users are redirected.
     auth_code_flow["post_sign_in_url"] = request.url_rule.rule
 
     # Add the auth code flow initiation to the session
@@ -111,19 +104,27 @@ def initiate_auth_code_flow(error):
     return redirect(session["auth_code_flow"]["auth_uri"])
 ```
 
+In the code snippet above, when a user attempts to navigate to a location in the application that raises an `Unauthorized` error, the error handler will redirect them through the authorization code flow where they can sign in. An alternative to this user flow would be presenting the user with a sign in page or link where they can manually initiate the authorization code flow.
+
+The first step of building the authorization code flow is creating an an MSAL client using the app registration values (client ID and tenant ID). You then use the MSAL client to build the authorization code flow dictionary. In the snippet above, we also ask the user to consent to the scope `User.Read` that our application requires. 
+
+In the authorization code flow dictionary, we'll add an entry to store the post sign in url where users are redirected after going through the authorization code flow.
+
+Next, add the authorization code flow initiation to the session and update the MSAL http response cache. You also redirect users to Azure AD, where they can perform the necessary authorization code flow actions such as logging in and consenting to the required permissions, if they haven't already. 
+
 ## Create app routes
 
-You can add several routes to your application to grant or prevent access to certain parts of your app without authorization. The web app we build in this tutorial has three routes, each requiring a different level of authentication or authorization, as follows:
+You can add several routes to your web application to grant or prevent access to certain parts of your application. For the scenario in this module, we'll add three routes to the web app we build. Each route will require a different level of authentication or authorization, as follows:
 
- - Route 1: Accessible by all users as it requires no authentication or authorization.
- - Route 2: Accessible by all authenticated users and doesn't require users to have any specific role assignments
- - Route 3: Accessible by authenticated and authorized users with an application-defined, admin role assigned.
+ - Route 1: Accessible by all users as it requires no authentication or authorization. This route will render the `public/index.html` template you created in the previous exercise.
+ - Route 2: Accessible by all authenticated users and doesn't require users to have any specific role assignments. This route will render the `authenticated/graph.html` template.
+ - Route 3: Accessible by authenticated and authorized users with an application-defined, admin role assigned.This route will render the `authenticated/admin.html` template.
 
-To create route one above that allows access for all users, unauthenticated or not, add the following code to `app.py`.
+To create route one above that allows access for all users, authenticated or not, add the following code to `app.py`.
 
 ```python
 @app.get("/")
-# This route does not require any authentication or authorization
+# This route doesn't require any authentication or authorization
 def index():
 
     # Return the "Index" view
@@ -135,9 +136,8 @@ def authorized():
     """
     Handles the redirect from Azure AD for the second leg of the auth code flow.
     """
-
     # After the user signs in and accepts the required application
-    # permissions, Azure AD #will redirect the user back to this route.
+    # permissions, Azure AD will redirect the user back to this route.
     # Pop out the auth code flow in which we started in their prior call
     # as it isn't needed that after this request is complete.
     auth_code_flow: "dict[str, Any]" = session.pop("auth_code_flow")
@@ -245,7 +245,7 @@ def graph():
     http_cache: dict = session.get("msal_http_response_cache", {})
 ```
 
-As illustrated in the code snippet above, we start by checking whether the session contains a user entry and that the id token is valid. If not, raise an unauthorized error to trigger the auth code flow and redirect the user to sign in. 
+In the code snippet above, we start by checking whether the session contains a user entry and that the id token is valid. If not, raise an unauthorized error to trigger the auth code flow and redirect the user to sign in. 
 
 To create the `@app.get("/admin")` route that requires the user to have an application-defined, admin role assigned, update `app.py` with the following code.
 
@@ -278,16 +278,12 @@ In the code sample above, you verify that the user is authenticated and that the
 
 ## Sign out users
 
-To sign out a user from your Python web app, you clear the session information about the signed-in account from the app's state. This should completely remove anything in the session that is tied to auth. 
-
-You could also redirect the user to the Microsoft identity platform logout endpoint to sign out. When your web app redirects the user to the logout endpoint, this endpoint clears the user's session from the browser. If your app didn't go to the logout endpoint, the user will still have a valid single sign-in session with the identity platform. As such, they could reauthenticate to your app without entering their credentials again.
+To sign out users from the application, clear the user's session information from the app's state. Removing the `user`, `auth_code_flow`, and `token_cache` from the dictionary clears anything in the session that is tied to auth.
 
 ```python
 @app.get("/logout")
 def logout():
-    # If we had anything in our session tied to auth, completely remove it.
-    # The msal_http_response_cache can survive this as there is nothing
-    # related to an individual authentication cached in there.
+    # Completely remove anything in the user session tied to authentication.
     session.pop("user", None)
     session.pop("auth_code_flow", None)
     session.pop("token_cache", None)
@@ -295,5 +291,4 @@ def logout():
 
 return app
 ```
-
-In this module, we didn't add an extra front-channel logout URL during the application registration process.Your web app will therefore be called back to its main URL, as shown in the `logout` code snippet above. 
+In this module, we didn't add an extra front-channel logout URL during the application registration process. Your web app will therefore be called back to its public URL, `index.html` as shown in the code snippet above. 

@@ -79,7 +79,7 @@ For the general template, create an HTML file named `layout.html` in the templat
   </body>
 </html>
 ```
-Next, create a folder named public and add an `index.html` template. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into `index.html` template.
+Next, create a folder named public and add an `index.html` template. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the `index.html` template.
 
 ```html
 # 📁 public/index.html
@@ -171,7 +171,7 @@ Add a second template in the authenticated subfolder and name it `admin.html`. Y
 
 ```
 
-You're now done creating the presentation logic for your Flask web application. Your final `templates` directory should look like this:
+You're now done creating the presentation layer for your Flask web application. Your final `templates` directory should look like this:
 
 ```md
 templates/

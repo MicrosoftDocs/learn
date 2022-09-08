@@ -17,16 +17,17 @@ MSAL Python provides multiple benefits over directly using the OAuth libraries a
 
 ## The Authorization code flow in MSAL Python
 
-The recommended calling pattern in webs apps using the authorization code flow is to:
+To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform. In this training module, we'll use the authorization code grant flow for sign-in. The recommended calling pattern in webs apps using this flow is to:
 
 - Instantiate a client application. 
 - Acquire a token using the authorization code flow.
+- Using the token, call a protected web API and fetch user data.
 
 The diagram below provides a high-level overview of the Microsoft identity platform implementation of the authorization code flow to sign in users and access a protected web API.
 
 :::image type="content" source="../media/4-auth-code-flow.png" border="false" alt-text="Web app sign in authentication flow":::
 
-As in the preceding diagram, the authorization code flow in MSAL Python consists of two main steps. In the first leg, the application requests an authorization code which is redeemed for an access token. In the second leg, the application uses the access token to call a protected web API.
+As in the preceding diagram, the authorization code flow in MSAL Python consists of two main steps. In the first leg, the application requests an authorization code that the client redeems for an access token. In the second leg, the application uses the access token to call a protected web API.
 
 ### Configure app instance
 
