@@ -4,7 +4,7 @@ Each resource tag consists of a name and a value. You could have the tag name `S
 
 Here's an example that shows how to add tags for a resource group in the Azure portal:
 
-:::image type="content" source="../media/resource-tags-357b5e1a.png" alt-text="Screenshot that shows how to add tags for a resource group in the Azure portal." border="false":::
+:::image type="content" source="../media/resource-tags-357b5e1a.png" alt-text="Screenshot that shows how to add tags for a resource group in the Azure portal.":::
 
 ### Things to know about resource tags
 

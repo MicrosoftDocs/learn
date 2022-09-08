@@ -30,5 +30,5 @@ Microsoft Cost Management can help you plan for and control your organization co
    1. Verify the new action to make sure the change has the desired effect.
 
 - **Consider exporting cost management data**. Microsoft Cost Management helps you work with your billing information. If you use external systems to access or review cost management data, you can easily export the data from Azure.
-   - You can set a daily scheduled export in comma-separated-value (CSV) format and store the data files in Azure storage.
-   - You can access your exported data from your external system.
+   - Set a daily scheduled export in comma-separated-value (CSV) format and store the data files in Azure storage.
+   - Access your exported data from your external system.

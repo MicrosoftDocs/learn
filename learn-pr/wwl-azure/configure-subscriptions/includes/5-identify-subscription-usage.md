@@ -2,8 +2,6 @@ We reviewed the ways you can obtain an Azure subscription. Now let's look at the
 
 Azure offers free and paid subscription options to meet different needs and requirements. The most common subscriptions are **Free**, **Pay-As-You-Go**, **Enterprise Agreement**, and **Student**. For your organization, you can choose a combination of procurement options and subscription choices to meet your business scenarios.
 
-For a complete list of subscription options, see the current [Microsoft Azure offers](https://azure.microsoft.com/support/legal/offer-details/).
-
 ### Things to consider when choosing Azure subscriptions
 
 As you think about which types of Azure subscriptions would work for your organization, consider these scenarios:
@@ -19,3 +17,6 @@ As you think about which types of Azure subscriptions would work for your organi
 - **Consider supporting Azure for students**. An Azure for Students subscription includes a monetary credit that can be used within the first 12 months.
   - Students can select free services without providing a credit card during the sign-up process.
   - You must verify your student status through your organizational email address.
+
+> [!Note]
+> For a complete list of Azure subscription options, see the current [Microsoft Azure offers](https://azure.microsoft.com/support/legal/offer-details/).
