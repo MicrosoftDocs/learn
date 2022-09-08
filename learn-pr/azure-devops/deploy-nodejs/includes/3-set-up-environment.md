@@ -45,7 +45,7 @@ In this module, you use the Azure CLI to spin up the Azure App Service that will
 
 ### Select an Azure region
 
-A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A *region* is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
 
 To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
@@ -106,7 +106,7 @@ This solution requires several Azure resources for deployment, which you create 
       --name nodejs-cicd-$RANDOM \
       --resource-group nodejs-cicd-rg \
       --plan nodejs-cicd-asp \
-      --runtime "node|10.10"
+      --runtime "node|16-lts"
     ```
 
     The name must be globally unique, so here we use `$RANDOM` to append a random number to the name. In practice, you would choose a name that reflects your application. If this step fails due to a naming conflict, try running it again.
@@ -128,9 +128,9 @@ This solution requires several Azure resources for deployment, which you create 
     nodejs-cicd-16353.azurewebsites.net  Running
     ```
 
-1. As an optional step, navigate your browser to the host name. Verify that it is running and that the default home page appears.
+1. As an optional step, navigate your browser to the hostname. Verify that it's running and that the default home page appears.
 
-    Here's what you see:
+    Here's what you should see:
 
     :::image type="content" source="../media/3-app-service-default.png" alt-text="A screenshot of the default home page on Azure App Service.":::
 
