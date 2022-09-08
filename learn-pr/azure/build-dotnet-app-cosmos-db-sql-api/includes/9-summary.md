@@ -8,6 +8,12 @@ You authored an application that used the .NET SDK for Azure Cosmos DB. The appl
 
 With the .NET SDK for Azure Cosmos DB SQL API, you were able to illustrate the best way to create, manage, and query data. The .NET SDK made it possible to share a concise sample with your development team that focused solely on the code necessary for them to be successful.
 
+## Get certified
+
+Earn the [Azure Cosmos DB Developer Specialty certification](/certifications/azure-cosmos-db-developer-specialty/) to prove your cloud-native app development skills with Azure Cosmos DB.
+
+Get started studying for this certification with the [official collection of training modules](/users/msftofficialcurriculum-4292/collections/1k8wcz8zooj2nx).
+
 ## References
 
 * **Quickstart**
