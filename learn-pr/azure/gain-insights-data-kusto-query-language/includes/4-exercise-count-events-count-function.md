@@ -4,7 +4,7 @@ A Kusto query can be used to explore datasets and gain insights. Recall that we 
 
 The sample database we're using has an entry for each storm event in the US in 2007, for a total of about 60 thousand records.
 
-To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregation groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example, by counting the number of results using the following query:
+To group these events into chunks of information, you'll use the `summarize` operator. `summarize` is used for all functions that aggregate groups of values of multiple rows to form a single summary value. You can summarize the whole table, for example, by counting the number of results using the following query:
 
 <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKC7NzU0syqxKVUjOL80r0dAEAIiJgN4fAAAA" target="_blank">Click to run query</a>
 
