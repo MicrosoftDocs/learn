@@ -8,7 +8,7 @@ In the following steps, you grant the registered app permission to Microsoft Gra
 
 1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to select the tenant containing your client app's registration.
-1. Select **Azure Active Directory**.
+1. Search for and select **Azure Active Directory**.
 1. Under **Manage**, select **App registrations**.
 1. Select your daemon application.
 1. Under **Manage**, Select **API permissions**.

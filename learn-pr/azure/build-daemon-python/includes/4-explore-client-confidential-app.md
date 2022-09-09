@@ -1,4 +1,4 @@
-You configured a daemon application with Azure Active Directory (Azure AD). In the financial company scenario, the task is to build an application that acquires a token to call a protected web API on behalf of itself (not on behalf of a user).
+You configured a daemon application with Azure Active Directory (Azure AD). In the financial company scenario, the task is to build an application that acquires a token to call a protected web API on behalf of itself (not on behalf of a user). Applications that acquire a token for their own identities are confidential client applications.
 
 In this unit, you'll learn about the confidential client application, OAuth 2.0 client credentials flow, and how to create a confidential client instance.
 
@@ -16,7 +16,7 @@ When the app presents a token to a resource, the resource enforces that the app 
 
 ## Microsoft Authentication Library (MSAL) for Python
 
-The MSAL for Python enables applications to integrate with the Microsoft identity platform. It allows you to sign in users or apps with Microsoft identities (Azure AD, Microsoft Accounts and Azure AD B2C accounts) and obtain tokens to call Microsoft APIs such as Microsoft Graph or your own APIs registered with the Microsoft identity platform.
+The MSAL for Python enables applications to integrate with the Microsoft identity platform. It allows you to sign in users or apps with Microsoft identities (Azure AD, Microsoft Accounts and Azure AD B2C accounts) and obtain tokens to call Microsoft APIs like Microsoft Graph or your own APIs registered with the Microsoft identity platform.
 
 ### Initialize the MSAL object
 
