@@ -41,8 +41,8 @@ In this module, you'll practice how to:
 
 The following are prerequisites required for completing this module
 - An [Azure subscription](https://azure.microsoft.com/free)
-- A familiarity with using [PowerShell](https://docs.microsoft.com/powershell/scripting/overview?view=powershell-7.2)
-- A familiarity with using [Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/).
+- A familiarity with using [PowerShell](/powershell/scripting/overview?view=powershell-7.2)
+- A familiarity with using [Hyper-V](/virtualization/hyper-v-on-windows/about/).
 - A copy of Windows Server 2019.
 - A laptop or computer with at least 32 GB of RAM and 70 GB of free hard drive space.  This will be used as the host machine for our virtual machine.
 

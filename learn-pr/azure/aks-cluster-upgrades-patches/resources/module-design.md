@@ -168,12 +168,11 @@ Identify the subtasks of **Understand, upgrade and stay up to date with the late
 
 **You have now successfully resolved that concerning email about your Azure Kubernetes Service clusters going out of support by upgrading your Kubernetes components in your Azure Kubernetes Service clusters to the latest supported Kubernetes versions.**
 
-Azure Kubernetes Services depends on Kubernetes. This means when Kubernetes releases a new version, Azure Kubernetes Service will also follow suit. These new releases can range from bug fixes  are to ensure your Kubernetes cluster have the latest security patches and updates for your core Kubernetes components such as kubectl, kube-apiserver, kubelet, kube-scheduler, kube-proxy and so on. 
+Azure Kubernetes Services depends on Kubernetes. This means when Kubernetes releases a new version, Azure Kubernetes Service will also follow suit. These new releases can range from bug fixes  are to ensure your Kubernetes cluster have the latest security patches and updates for your core Kubernetes components such as kubectl, kube-apiserver, kubelet, kube-scheduler, kube-proxy, and so on.
 
-To make sure your cluster components are up to date with the latest version releases, you have the option to manually upgrade your Azure Kubernetes Service clusters which we practiced doing during the exercise There is also the option to configure auto-upgrade for your Azure Kubernetes Services cluster upgrades. To find out more about auto-upgrade, check out the Microsoft Docs on 'Set auto-upgrade channel [https://docs.microsoft.com/en-us/azure/aks/upgrade-cluster#set-auto-upgrade-channel].
+To make sure your cluster components are up to date with the latest version releases, you have the option to manually upgrade your Azure Kubernetes Service clusters which we practiced doing during the exercise There is also the option to configure auto-upgrade for your Azure Kubernetes Services cluster upgrades. To learn more about auto-upgrade, see [Set auto-upgrade channel](/azure/aks/upgrade-cluster#set-auto-upgrade-channel).
 
-Finally, setting up a Blue/Green deployment for your Azure Kubernetes Service clusters ensures a smooth transition from your previous clusters to your upgraded clusters and allows for you to easily roll back should you encounter any issues during or after the rollout of the upgraded clusters. 
-
+Finally, setting up a Blue/Green deployment for your Azure Kubernetes Service clusters ensures a smooth transition from your previous clusters to your upgraded clusters and allows for you to easily roll back should you encounter any issues during or after the rollout of the upgraded clusters.
 
 ## Notes
 
