@@ -8,7 +8,7 @@ Consider the following characteristics of Azure management groups:
 
 - All subscriptions within a management group automatically inherit the conditions applied to that management group.
 
-- A management group tree can support up to [six levels of depth](/azure/governance/management-groups/overview).
+- A management group tree can support up to six levels of depth.
 
 - Azure role-based access control authorization for management group operations isn't enabled by default.
 

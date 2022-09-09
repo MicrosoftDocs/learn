@@ -22,7 +22,7 @@ In this module, you explored how to implement Azure policy definitions and initi
 
 - Complete the [Create a custom policy definition](/azure/governance/policy/tutorials/create-custom-policy-definition) tutorial.
 
-- Discover how to [Create and assign a policy definition programmatically](/azure/governance/policy/how-to/programmatically-create#create-and-assign-a-policy-definition) with PowerShell, the Azure CLI, or ARMClient.
+- Discover how to [Create and assign a policy definition](/azure/governance/policy/how-to/programmatically-create#create-and-assign-a-policy-definition) programmatically.
 
 - Follow the [Create a policy assignment to identify non-compliant resources](/azure/governance/policy/assign-policy-portal) quickstart.
 

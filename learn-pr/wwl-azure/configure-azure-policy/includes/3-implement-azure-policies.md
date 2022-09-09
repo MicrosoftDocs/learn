@@ -9,7 +9,7 @@ The main advantages of Azure Policy are in the areas of enforcement and complian
 | **Enforce rules and compliance** | Enable built-in policies, or build custom policies for all resource types. Support real-time policy evaluation and enforcement, and periodic or on-demand compliance evaluation. |
 | **Apply policies at scale** | Apply policies to a management group with control across your entire organization. Apply multiple policies and aggregate policy states with policy initiative. Define an exclusion scope. |
 | **Perform remediation** | Conduct real-time remediation, and remediation on your existing resources. |
-| **Exercise governance** | Support governance tasks for your environment: <br> - Support multiple engineering teams (deploying to and operating in the environment) <br> - Manage multiple subscriptions <br> - Standardize and enforce how cloud resources are configured <br> - Manage regulatory compliance, cost control, security, and design consistency |
+| **Exercise governance** | Implement governance tasks for your environment: <br> - Support multiple engineering teams (deploying to and operating in the environment) <br> - Manage multiple subscriptions <br> - Standardize and enforce how cloud resources are configured <br> - Manage regulatory compliance, cost control, security, and design consistency |
 
 ### Things to consider when using Azure Policy
 

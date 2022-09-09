@@ -1,4 +1,4 @@
-Now you have your policies defined, your initiative definition created, and your policies assigned to affected resources. The last step is to evaluate the state of compliance for your scoped resources. 
+You have your policies defined, your initiative definition created, and your policies assigned to affected resources. The last step is to evaluate the state of compliance for your scoped resources. 
 
 The following example shows how you can use the **Compliance** feature to look for non-compliant initiatives, policies, and resources.
 

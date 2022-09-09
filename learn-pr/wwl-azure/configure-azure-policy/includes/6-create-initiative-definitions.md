@@ -5,7 +5,7 @@ After you determine your policy definitions, the next step is to create an initi
 
 ## Create an initiative definition
 
-When you create an initiative definition, be sure the definition uses the specific JSON format required by Azure. For more information, see [Azure Policy definition structure](/azure/governance/policy/concepts/initiative-definition-structure).
+When you create an initiative definition, be sure the definition uses the specific JSON format required by Azure. For more information, see [Azure Policy initiative definition structure](/azure/governance/policy/concepts/initiative-definition-structure).
 
 Here's an example of how to create a new initiative definition in the Azure portal:
 
