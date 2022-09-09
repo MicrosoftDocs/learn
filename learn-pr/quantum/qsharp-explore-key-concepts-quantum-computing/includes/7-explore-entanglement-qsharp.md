@@ -354,8 +354,7 @@ Your program should behave exactly like the program you created in the previous 
 > - `Adjoint`, which creates the adjoint version of the operations 
 >
 > For more information
-> about these functors and many other Q# features, see the [Q# user
-> guide](/quantum/user-guide/).
+> about these functors and many other Q# features, see the [Q# user guide](/quantum/user-guide/).
 
 
 
