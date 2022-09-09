@@ -1,4 +1,4 @@
-Advanced cybersecurity attacks comprise of multiple complex malicious events, attributes, and contextual information. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
+Advanced cybersecurity attacks comprise multiple complex malicious events, attributes, and contextual information. Identifying and deciding which of these activities qualify as suspicious can be a challenging task. Your knowledge of known attributes and abnormal activities specific to your industry is fundamental in knowing when to call an observed behavior as suspicious.
 
 :::image type="content" source="../media/pete-attack-patterns.png" alt-text="Diagram showing common attack patterns." lightbox="../media/pete-attack-patterns.png":::
 

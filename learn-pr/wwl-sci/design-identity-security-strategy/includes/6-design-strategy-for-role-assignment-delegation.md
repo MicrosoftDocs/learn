@@ -123,7 +123,7 @@ To understand how to delegate access governance in entitlement
 management, it helps to consider an example. Suppose an organization has
 the following administrator and managers.
 
-Hana is the IT administrator. THey have contacts in each department who are responsible for
+Hana is the IT administrator. They have contacts in each department who are responsible for
 their department's resources and business critical content: Mamta in Marketing, Mark in Finance, and Joe in Legal.
 
 With entitlement management, access governance can be delegated to these
