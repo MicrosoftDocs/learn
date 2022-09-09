@@ -25,7 +25,7 @@ Use these resources to discover more.
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-- [DevOps at Microsoft](https://docs.microsoft.com/azure/devops/learn/devops-at-microsoft/)
+- [DevOps at Microsoft](/azure/devops/learn/devops-at-microsoft/)
 - [Azure Migration Center](https://azure.microsoft.com/migration/) 
 - [SmartHotel360 Demo Series](https://azure.microsoft.com/campaigns/smarthotel360/) 
-- [What are Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/)
+- [What are Containers](/virtualization/windowscontainers/about/)
