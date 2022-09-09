@@ -204,9 +204,6 @@ def graph():
     except RuntimeError as err:
         raise Unauthorized("ID Token expired or invalid") from err
 
-    # Perform a request to graph that only requires User.Read scope
-    # This scope was already requested to be granted by the user.
-
     # Get an access token containing the necessary scope for User.Read on graph. 
     # If the cached access token is expired, use the refresh token to fetch a new token.
 
@@ -214,37 +211,37 @@ def graph():
     token_cache.deserialize(session["token_cache"])
 
     http_cache: dict = session.get("msal_http_response_cache", {})
- # Create an MSAL client using the app's configuration values and provide the token cache.
-        msal_client = msal.ConfidentialClientApplication(
-            app.config.get("CLIENT_ID"),
-            authority=AuthorityBuilder(AZURE_PUBLIC, app.config.get("TENANT_ID")),
-            client_credential=app.config.get("CLIENT_CREDENTIAL"),
-            token_cache=token_cache,
-            http_cache=http_cache,
-        )
+    # Create an MSAL client using the app's configuration values and provide the token cache.
+    msal_client = msal.ConfidentialClientApplication(
+        app.config.get("CLIENT_ID"),
+        authority=AuthorityBuilder(AZURE_PUBLIC, app.config.get("TENANT_ID")),
+        client_credential=app.config.get("CLIENT_CREDENTIAL"),
+        token_cache=token_cache,
+        http_cache=http_cache,
+    )
 
-        # Invoke the acquire_token flow on the MSAL client for the requested account and scope. 
-        # Look for an existing valid token or use the refresh token to fetch a new token.
-        result: "dict[str: Any]" = msal_client.acquire_token_silent(
-            scopes=["https://graph.microsoft.com/User.Read"],
-            account=msal_client.get_accounts()[0],
-        )
+    # Invoke the acquire_token flow on the MSAL client for the requested account and scope. 
+    # Look for an existing valid token or use the refresh token to fetch a new token.
+    result: "dict[str: Any]" = msal_client.acquire_token_silent(
+        scopes=["https://graph.microsoft.com/User.Read"],
+        account=msal_client.get_accounts()[0],
+    )
 
-        # Update the session's token cache to reflect the new access and refresh token.
-        if token_cache.has_state_changed:
-            session["token_cache"] = token_cache.serialize()
-        session["msal_http_response_cache"] = http_cache
+    # Update the session's token cache to reflect the new access and refresh token.
+    if token_cache.has_state_changed:
+        session["token_cache"] = token_cache.serialize()
+    session["msal_http_response_cache"] = http_cache
 
-        # Simple HTTP Get to graph showing the usage of the retrieved access token
-        response = requests.get(
-            "https://graph.microsoft.com/v1.0/me",
-            headers={"Authorization": f"Bearer {result['access_token']}"},
-        ).json()
+    # Simple HTTP Get to graph showing the usage of the retrieved access token
+    response = requests.get(
+        "https://graph.microsoft.com/v1.0/me",
+        headers={"Authorization": f"Bearer {result['access_token']}"},
+    ).json()
 
-        # Show the "Graph" view for authenticated users
-        return render_template("authenticated/graph.html", 
-            graphCallResponse=response,
-            graphAccessTokenExpiresInSeconds=result['expires_in'])
+    # Show the "Graph" view for authenticated users
+    return render_template("authenticated/graph.html", 
+       graphCallResponse=response,
+       graphAccessTokenExpiresInSeconds=result['expires_in'])
 
 ```
 
@@ -257,9 +254,7 @@ To create the `@app.get("/admin")` route that requires the user to have an appli
 # Users should have the application-defined, admin role assigned.
 @app.get("/admin")
 def admin():
-    # If the session doesn't currently contain a "user" entry that means we
-    # haven't completed the auth code flow yet. Raise an Unauthorized error,
-    # which can be used to trigger a new auth code flow.
+    # If session doesn't contain a "user" entry, raise an unauthorized error to trigger the auth code flow.
     if not session.get("user"):
         raise Unauthorized()
 
@@ -269,9 +264,8 @@ def admin():
     except RuntimeError as err:
         raise Unauthorized("ID Token expired or invalid.") from err
 
-    # If a role check was requested, look at the user's claims for the "roles"
-    # claim. If the claim doesn't exist or does not contain "admin" as an item
-    # in it, then raise a Forbidden error.
+    # Look at the user's claims for the "roles" claim. If the claim doesn't exist 
+    # or does not contain "admin" as an item in it, then raise a Forbidden error.
     user_claims = session["user"]["id_token_claims"]
     if "roles" not in user_claims or "admin" not in user_claims["roles"]:
         raise Forbidden("User is missing a required role.")
