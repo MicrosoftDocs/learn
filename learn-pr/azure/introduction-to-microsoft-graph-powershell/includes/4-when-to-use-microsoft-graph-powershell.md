@@ -14,13 +14,11 @@ Since Microsoft Graph PowerShell provides access to all the Graph APIs, it enabl
 
 ### Automating tasks to save time
 
-IT admins and DevOps professionals can automate the generation of reports and the management of systems, users and tenants by creating a script instead of building an application for some scenarios. PowerShell provides a richer admin experience that supports automation.
+IT admins and DevOps professionals can automate the generation of reports and the management of services, users and tenants by creating a script instead of building an application for some scenarios. PowerShell provides a richer admin experience that supports automation.
 
 ### Run complex functions
 
 Microsoft Graph PowerShell allows you to carry out tasks that aren't necessarily available from the portal UI. The Azure portal UI provides access to common, useful administrative tasks that apply to most environments. However, for more complex tasks consider using Microsoft Graph PowerShell.
-
-For the example scenario, we were able to filter all stales devices using a function. This function can be used when you want to manage your devices.
 
 ### Support for modern authentication
 

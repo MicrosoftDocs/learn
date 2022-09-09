@@ -22,7 +22,7 @@ Microsoft Graph PowerShell supports two types of authentication: **delegated** a
 
 Microsoft Graph PowerShell permissions are NOT pre-authorized and you must perform one-time request for permissions depending on your needs.
 
-In delegated access, the **-Scopes** parameter is optional, only needed if you don't have consent. For example, if you don't have consent for **User.Read.All** and you need it, specify it with the **-Scopes** parameter. Next time you use `Connect-MgGraph`, you don't need to specify any permission scopes.
+In delegated access, the **-Scopes** parameter is optional, only needed if you don't have consent. For example, if you don't have consent for **User.Read.All** and you need it, specify it with the **-Scopes** parameter. Next time you use `Connect-MgGraph`, you won't need to specify the **User.Read.All** scope.
 
 ```powershell
 Connect-MgGraph -Scopes "User.Read.All"
