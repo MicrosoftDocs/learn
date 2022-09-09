@@ -1,6 +1,6 @@
-[Azure Policy](https://azure.microsoft.com/services/azure-policy/) is a service in Azure that enables you to create, assign, and manage policies to control or audit your resources. These policies enforce different rules over your resource configurations so the configurations stay compliant with corporate standards.
+[Azure Policy](https://azure.microsoft.com/services/azure-policy/) is a service in Azure that enables you to create, assign, and manage policies to control or audit your resources. These policies enforce different rules over your resource configurations so the configurations stay compliant with corporate standards. You apply the policies to your resources by using management groups.
 
-In this module, your business is subject to many regulations and compliance rules. Your company wants to ensure each department implements and deploys resources correctly. You're responsible for investigating how to use Azure Policy features to implement compliance measures.
+In this module, your business is subject to many regulations and compliance rules. Your company wants to ensure each department implements and deploys resources correctly. You're responsible for investigating how to use Azure Policy and management groups to implement compliance measures.
 
 ## Learning objectives
 
