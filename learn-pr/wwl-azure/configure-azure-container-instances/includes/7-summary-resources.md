@@ -12,6 +12,6 @@ You can learn more by reviewing the following.
 
  -  [Containers vs Virtual Machines](/virtualization/windowscontainers/about/containers-vs-vm)
  -  [Azure Container Instances documentation](/azure/container-instances/)
- -  [Learn - Introduction to Docker containers](/learn/modules/intro-to-docker-containers/)
- -  [Learn - Run Docker containers with Azure Container Instances](/learn/modules/run-docker-with-azure-container-instances/)
- -  [Learn - Build a containerized web application with Docker](/learn/modules/intro-to-containers/)
+ -  [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/)
+ -  [Run Docker containers with Azure Container Instances](/learn/modules/run-docker-with-azure-container-instances/)
+ -  [Build a containerized web application with Docker](/learn/modules/intro-to-containers/)
