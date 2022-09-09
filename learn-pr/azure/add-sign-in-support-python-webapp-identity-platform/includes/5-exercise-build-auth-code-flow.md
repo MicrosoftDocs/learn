@@ -7,7 +7,6 @@ In this exercise, you'll add code to sign in users, grant them access to resourc
 - Set up the Flask application
 - Create the authorization code flow dictionary
 - Create app routes
-- Create a confidential client instance
 - Add code to sign users
 - Add code to sign out users
 
@@ -106,7 +105,7 @@ def initiate_auth_code_flow(error):
 
 In the code snippet above, when a user attempts to navigate to a location in the application that raises an `Unauthorized` error, the error handler will redirect them through the authorization code flow where they can sign in. An alternative to this user flow would be presenting the user with a sign in page or link where they can manually initiate the authorization code flow.
 
-The first step of building the authorization code flow is creating an an MSAL client using the app registration values (client ID and tenant ID). You then use the MSAL client to build the authorization code flow dictionary. In the snippet above, we also ask the user to consent to the scope `User.Read` that our application requires. 
+The first step of building the authorization code flow is creating an MSAL client using the app registration values (client ID and tenant ID). You then use the MSAL client to build the authorization code flow dictionary. In the snippet above, we also ask the user to consent to the scope `User.Read` that our application requires. 
 
 In the authorization code flow dictionary, we'll add an entry to store the post sign in url where users are redirected after going through the authorization code flow.
 
@@ -120,7 +119,7 @@ You can add several routes to your web application to grant or prevent access to
  - Route 2: Accessible by all authenticated users and doesn't require users to have any specific role assignments. This route will render the `authenticated/graph.html` template.
  - Route 3: Accessible by authenticated and authorized users with an application-defined, admin role assigned.This route will render the `authenticated/admin.html` template.
 
-To create route one above that allows access for all users, authenticated or not, add the following code to `app.py`.
+To create route one that allows access for all users, authenticated or not, add the following code to `app.py`.
 
 ```python
 @app.get("/")
@@ -131,30 +130,25 @@ def index():
     return render_template("public/index.html")
 
 @app.get("/auth/redirect")
-# Azure AD will redirect the user back to this URL after their sign-in is complete.
+# Azure AD redirects users back to this URL after signing in
 def authorized():
     """
     Handles the redirect from Azure AD for the second leg of the auth code flow.
     """
-    # After the user signs in and accepts the required application
-    # permissions, Azure AD will redirect the user back to this route.
-    # Pop out the auth code flow in which we started in their prior call
-    # as it isn't needed that after this request is complete.
+
+    # Pop out the existing auth code flow as it isn't needed after completing this request
     auth_code_flow: "dict[str, Any]" = session.pop("auth_code_flow")
 
-    # Hydrate the existing MSAL token cache from the session or start an
-    # empty one.
+    # Hydrate the existing MSAL token cache from the session or start an empty one.
     token_cache = msal.SerializableTokenCache()
     if session.get("token_cache"):
         token_cache.deserialize(session["token_cache"])
 
-    # The MSAL ConfidentialClientApplication will always make an HTTP
-    # request to the metadata endpoint for your tenant upon creation.
-    # Using the http cache feature will optimize that process as that
-    # data is highly cacheable, and ideally would survive for the whole
-    # user's session. This shouldn't be cached across user sessions.
+    # The MSAL ConfidentialClientApplication makes an HTTP request to the metadata endpoint for 
+    # your tenant. The HTTP cache is used for data that would survive the entire user's session.
     http_cache: dict = session.get("msal_http_response_cache", {})
 
+    # Create an instance of the MSAL confidential client using the app registration values
     msal_client = msal.ConfidentialClientApplication(
         app.config.get("CLIENT_ID"),
         authority=AuthorityBuilder(AZURE_PUBLIC, app.config.get("TENANT_ID")),
@@ -175,44 +169,22 @@ def authorized():
     session["token_cache"] = token_cache.serialize()
     session["msal_http_response_cache"] = http_cache
 
-    # Our "user" session object will contain both the raw ID token and the
-    # deserialized claims. This supports easy access to the claims and
-    # easy access to check if the id_token is still valid (not expired,
-    # for example)
+    # Our "user" session object contains the raw ID token and the deserialized claims. 
+    # Access to the claims allows us to check if the id_token is still valid
     session["user"] = {
         "id_token": result["id_token"],
         "id_token_claims": result["id_token_claims"],
     }
 
-    # Send the user to their original destination, which was captured in
-    # the auth_code_flow session object.
+    # Send the user to their original destination captured in the auth_code_flow session object.
     return redirect(auth_code_flow["post_sign_in_url"])
 ```
 
 The route you create in the code snippet above isn't called by the user, but instead, Azure AD redirects the user's browser to this page when they sign in and consent to the required permissions.
 
-The other two routes that require a specific level of authentication and authorization are covered in the [sign in users](#sign-in-users) section of this tutorial series.
-
-## Create a confidential client using the app registration values
-
-The first step of the sign-in process is to send a request to the `/authorize` endpoint on the identity platform. The authorize endpoint can be used to request tokens or authorization codes via the browser. To do this, we create an application instance of the MSAL Python confidential client using the app registration values, as follows:
-
-```python
-# Create an MSAL client using the app's configuration values and provide the token cache.
-msal_client = msal.ConfidentialClientApplication(
-    app.config.get("CLIENT_ID"),
-    authority=AuthorityBuilder(AZURE_PUBLIC, app.config.get("TENANT_ID")),
-    client_credential=app.config.get("CLIENT_CREDENTIAL"),
-    token_cache=token_cache,
-    http_cache=http_cache,
-)
-```
-
-The MSAL client doesn't need a token cache as none of its interactions use or produce tokens in the initiate auth code flow process.
+The other two routes that require a specific level of authentication and authorization are covered in the next section of this unit, [sign in users](#sign-in-users).
 
 ## Sign in users
-
-This confidential client instance is leveraged to construct an `/authorize` request URL with the appropriate parameters, and the browser is redirected to this URL.
 
 To create a route that authenticates users without specific role assignments, add the following code to `app.py`.
 
@@ -220,13 +192,13 @@ To create a route that authenticates users without specific role assignments, ad
 @app.get("/graph")
 # This route requires prior authentication
 def graph():
-    # If the session doesn't currently contain a "user" entry or is missing
-    # the token cache entry, raise an Unauthorized error, which can be used to trigger a new auth code flow.
+
+    # Check whether session contains a "user" entry or the token cache entry and 
+    #raise an Unauthorized error to trigger a new auth code flow.
     if not session.get("user") or not session.get("token_cache"):
         raise Unauthorized()
 
-    # Perform additional session validation and raise an unauthorized error
-    # to trigger a new auth code flow if needed.
+    # Perform additional session validation and raise an unauthorized error, if appropriate
     try:
         msal.oauth2cli.oidc.decode_id_token(session["user"]["id_token"])
     except RuntimeError as err:
@@ -235,17 +207,48 @@ def graph():
     # Perform a request to graph that only requires User.Read scope
     # This scope was already requested to be granted by the user.
 
-    # Get an access token that contains the necessary scope for User.Read on graph. 
-    # This token will come from the cache (and if expired, will use the 
-    #refresh token found in the cache to fetch and cache a new token.
+    # Get an access token containing the necessary scope for User.Read on graph. 
+    # If the cached access token is expired, use the refresh token to fetch a new token.
 
     token_cache = msal.SerializableTokenCache()
     token_cache.deserialize(session["token_cache"])
 
     http_cache: dict = session.get("msal_http_response_cache", {})
+ # Create an MSAL client using the app's configuration values and provide the token cache.
+        msal_client = msal.ConfidentialClientApplication(
+            app.config.get("CLIENT_ID"),
+            authority=AuthorityBuilder(AZURE_PUBLIC, app.config.get("TENANT_ID")),
+            client_credential=app.config.get("CLIENT_CREDENTIAL"),
+            token_cache=token_cache,
+            http_cache=http_cache,
+        )
+
+        # Invoke the acquire_token flow on the MSAL client for the requested account and scope. 
+        # Look for an existing valid token or use the refresh token to fetch a new token.
+        result: "dict[str: Any]" = msal_client.acquire_token_silent(
+            scopes=["https://graph.microsoft.com/User.Read"],
+            account=msal_client.get_accounts()[0],
+        )
+
+        # Update the session's token cache to reflect the new access and refresh token.
+        if token_cache.has_state_changed:
+            session["token_cache"] = token_cache.serialize()
+        session["msal_http_response_cache"] = http_cache
+
+        # Simple HTTP Get to graph showing the usage of the retrieved access token
+        response = requests.get(
+            "https://graph.microsoft.com/v1.0/me",
+            headers={"Authorization": f"Bearer {result['access_token']}"},
+        ).json()
+
+        # Show the "Graph" view for authenticated users
+        return render_template("authenticated/graph.html", 
+            graphCallResponse=response,
+            graphAccessTokenExpiresInSeconds=result['expires_in'])
+
 ```
 
-In the code snippet above, we start by checking whether the session contains a user entry and that the id token is valid. If not, raise an unauthorized error to trigger the auth code flow and redirect the user to sign in. 
+In the code snippet above, we start by checking whether the session contains a user entry and that the id token is valid. If not, raise an unauthorized error to trigger the authorization code flow and redirect the user to sign in. 
 
 To create the `@app.get("/admin")` route that requires the user to have an application-defined, admin role assigned, update `app.py` with the following code.
 
@@ -272,6 +275,10 @@ def admin():
     user_claims = session["user"]["id_token_claims"]
     if "roles" not in user_claims or "admin" not in user_claims["roles"]:
         raise Forbidden("User is missing a required role.")
+
+    # Upon successful authentication, show the "Admin" view
+    return render_template(
+        "authenticated/admin.html", graphCallResponse=user_claims
 ```
 
 In the code sample above, you verify that the user is authenticated and that their session is still valid. If either of the two statements is false, raise an unauthorized error to trigger the auth code flow and redirect the user to the sign in page. After signing in, we perform a role check to verify that the user has the application-defined, admin-role assigned. If the user's claim doesn't exist or doesn't contain the `admin` role, prevent the user from accessing the page. If the required application-defined role exists, grant access to the page. 
@@ -283,7 +290,7 @@ To sign out users from the application, clear the user's session information fro
 ```python
 @app.get("/logout")
 def logout():
-    # Completely remove anything in the user session tied to authentication.
+    # Completely remove anything in the user session tied to the auth code flow
     session.pop("user", None)
     session.pop("auth_code_flow", None)
     session.pop("token_cache", None)
