@@ -10,4 +10,4 @@ For more information about the topics discussed in this module, see:
 
 - [Index data from Azure Cosmos DB using SQL API][docs.microsoft.com/azure/search/search-howto-index-cosmosdb]
 
-[docs.microsoft.com/azure/search/search-howto-index-cosmosdb]: https://docs.microsoft.com/azure/search/search-howto-index-cosmosdb
+[docs.microsoft.com/azure/search/search-howto-index-cosmosdb]: /azure/search/search-howto-index-cosmosdb
