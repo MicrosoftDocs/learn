@@ -3,7 +3,7 @@
 *ProjectEventChaining* project contains an example of a multiple object suspension system, and it contains two threads that suspend on two queues. Each thread needs to receive a message from either one of the two queues. A counting semaphore keeps a running count of how many messages are in the two queues combined. If a thread attempts to get an instance of the semaphore and suspends, then there are no messages on either of the queues. If a thread succeeds in getting an instance of the semaphore, then there is at least one message on one of the queues. The thread now needs to determine which queue has the message. Your task is to modify *ProjectEventChaining* project by adding another queue, so that two threads are accessing three queues.
 
 > [!TIP]
-> Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
+> Refer to [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 

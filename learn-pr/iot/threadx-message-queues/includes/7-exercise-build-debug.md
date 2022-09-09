@@ -3,7 +3,7 @@
 *ProjectMessageQueues.c* contains three threads and two queues, where one of the threads sends messages to the queues. The other two threads are waiting for messages from the queues, and they receive them as they're sent. You get to observe the behavior of the queues and the threads, and then modify the project by adding one thread and one queue.
 
 > [!TIP]
-> Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
+> Refer to [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 

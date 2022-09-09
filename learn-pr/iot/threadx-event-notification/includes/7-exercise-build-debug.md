@@ -3,7 +3,7 @@
 You get to conduct a little experiment in this project. You'll observe whether Producer can keep up with the demands of Consumer, or whether Producer will overwhelm Consumer by filling *StorageFacility* to capacity. You'll also get to study the result of adding a second Consumer.
 
 > [!TIP]
-> Refer to [Set up your environment](https://docs.microsoft.com/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
+> Refer to [Set up your environment](/learn/modules/introduction-azure-rtos/2-set-up-environment?azure-portal=true) before getting started on the exercises in this module.
 
 ## Use GitHub Codespaces
 
