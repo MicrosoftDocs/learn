@@ -3,7 +3,7 @@ After you determine your policy definitions, the next step is to create an initi
 > [!Tip]
 > Even if you have only a few policy definitions in your organization, we recommend creating and applying an initiative definition.
 
-## Create an initiative definition
+## Add a new initiative definition
 
 When you create an initiative definition, be sure the definition uses the specific JSON format required by Azure. For more information, see [Azure Policy initiative definition structure](/azure/governance/policy/concepts/initiative-definition-structure).
 
@@ -11,7 +11,7 @@ Here's an example of how to create a new initiative definition in the Azure port
 
 :::image type="content" source="../media/create-initiative-definition-e1198a51.png" alt-text="Screenshot that shows how to create a new initiative definition.":::
 
-## Use built-in initiative definitions
+## Use a built-in initiative definition
 
 You can create your own initiative definitions, or use built-in definitions in Azure Policy. You can sort the [list of built-in initiatives](/azure/governance/policy/samples/built-in-initiatives) by category to search for definitions for your organization.
 
