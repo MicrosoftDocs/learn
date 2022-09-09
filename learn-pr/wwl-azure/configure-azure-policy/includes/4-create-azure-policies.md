@@ -4,7 +4,7 @@ Azure Administrators use Azure Policy to create policies that define conventions
 
 There are four basic steps to create and work with policy definitions in Azure Policy.
 
-### Step 1: Choose policy definitions
+### Step 1: Create policy definitions
 
 A policy definition expresses a condition to evaluate and the actions to perform when the condition is met. You can create your own policy definitions, or choose from built-in definitions in Azure Policy. You can create a policy definition to prevent VMs in your organization from being deployed, if they're exposed to a public IP address.
 
@@ -16,6 +16,6 @@ An initiative definition is a set of policy definitions that help you track your
 
 Azure Policy lets you control how your initiative definitions are applied to resources in your organization. You can limit the scope of an initiative definition to specific management groups, subscriptions, or resource groups.
 
-### Step 4: View policy evaluation results
+### Step 4: Determine compliance
 
 After you assign an initiative definition, you can evaluate the state of compliance for all your resources. Individual resources, resource groups, and subscriptions within a scope can be exempted from having the policy rules affect it. Exclusions are handled individually for each assignment.
