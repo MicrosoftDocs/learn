@@ -2,7 +2,7 @@ Contoso Shoes needs a way to withstand regional outages. You want to deploy curr
 
 ## Current state and problem
 
-In the current design, a single region has been sufficient for the application. Redundancy is built by using Availability Zone support for all of the components within a region. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Scaling out within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
+In the current design, a single region has been sufficient for the application. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Scaling out within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
 
 ## Specification
 
@@ -16,7 +16,16 @@ To get started on your design, we recommend that you follow these steps.
 
 ## 1&ndash;Global routing
 
+In order for the clients to get transparently routed to either working region, add a global load balancer. This new component will helping in routing and managing traffic globally. Choose a native Azure service that seamlessly integrates with the existing architecture.
+
+The health checks that you added in the previous exercise should be used by the global load balancer to determine when a stamp is unhealthy.
+
 ## 1&ndash;Component and configuration changes
+You need to deploy your application into addtional azure regions. Ideally you want to move to a deployment stamp model that allows you to dynamically add and remove regions as needed, not just a list of hardcoded resources across two regions
+
+You need to update your Cosmos DB with global distribution. You need to define the best model for this.
+
+The ideal state is an active-active configuration which does not require any active failover and client requests can be served from any region. Think about what that implies for your architecture. Do you have any state that only exists inside one regional stamp?
 
 ## Check your work
 - What did you use as a gateway service to ingress the client traffic for regional routing determination?

@@ -8,6 +8,10 @@ However, the approach isn't proactive. Azure App Service and the external monito
 
 ## Specification
 
+Design health checks against the critical components like the database. Use requests that mimic real application behavior while not putting too much load on the services just from the health probes
+
+To test also write requests, you need to design a way to filter out/remove the test data in an efficient way so that it does not get mixed up with real user data.
+
 Build the dedicated health service as an extension to the already-deployed code.
 
 - Introduce a health check API in your application. The API must check the health status of the application and its dependencies and return an indication of the status. For example, the API periodically should check the health of functional services that process a request:
@@ -44,6 +48,8 @@ Attempt to write a test document to the database. Set a short `Time-to-Live` val
 > Check your progress: [Implementation](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#implementation)
 
 ### 2&ndash;Caching pattern
+
+In order to not overload the downstream services with health checks, the health check API should cache results for a configurable number of seconds. Think of possible ways to achieve this.
 
 Cache the check results in memory. You can use the standard, non-distributed ASP.NET Core `MemoryCache`. Control cache expiration by setting `HealthServiceCacheDurationSeconds` to 10 seconds.
 
