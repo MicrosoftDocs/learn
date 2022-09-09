@@ -46,7 +46,7 @@ When working with container instances, consider these security best practices.
 - **Monitor container resource activity**. Monitor your resource activity, like files, network, and other resources that your containers access. Monitoring resource activity and consumption is useful both for performance monitoring and as a security measure.
 
 > [!TIP]
-> Read more about [Security considerations for container instances - Azure Container Instances | Microsoft Docs](/azure/container-instances/container-instances-image-security)
+> Read more about [Security considerations for Azure Container Instances](/azure/container-instances/container-instances-image-security)
 
  
 
