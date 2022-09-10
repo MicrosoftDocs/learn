@@ -15,7 +15,7 @@ For physical disks, solid-state disks (SSDs) usually realize higher IOPS and thr
 
 Ultra disks provide the highest disk performance available in Azure. Choose them when you need the fastest storage performance, which includes high throughput, high IOPS, and low latency.
 
-The maximum performance of an Ultra Disk depends on the size you select, as you can see from examples in this table:
+The maximum performance of an Ultra disk depends on the size you select, as you can see from examples in this table:
 
 | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- | --- |
