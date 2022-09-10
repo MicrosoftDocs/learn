@@ -29,7 +29,7 @@ Your graph should look something like this:
 
 ![Example of a dependency graph for a health model.](../media/health-model.png)
 
-> Check your progress: [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health)
+> **Check your progress: [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health)**
 
 ### 2&ndash;Define the health scores
 
@@ -63,7 +63,7 @@ Suppose a system flow is composed of an application component, Azure Event Hubs,
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
 
-> Check your progress: [Example - Layered health model](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#example---layered-health-model)
+> **Check your progress: [Example - Layered health model](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#example---layered-health-model)**
 
 ### 4&ndash;Collect monitoring data
 
@@ -91,14 +91,14 @@ The dependency graph with health scores can be visualized with a traffic light r
 
 ![Example of health score shown in the dependency graph.](../media/mission-critical-example-fault-states.png)
 
-> Check your progress: [Visualization](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#visualization)
+> **Check your progress: [Visualization](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#visualization)**
 
 ### 7&ndash;Set up alerts
 Dashboards should be used with alerts to raise immediate attention for issues. You can use 
 
 If the health state of a component changes to **Degraded** or **Unhealthy**, the operator should be immediately notified. Set the alert to the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
 
-> Check your progress: [Alerting](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#alerting)
+> **Check your progress: [Alerting](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#alerting)**
 
 ## Check your work
 

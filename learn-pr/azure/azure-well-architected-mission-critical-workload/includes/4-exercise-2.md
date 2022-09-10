@@ -7,6 +7,7 @@ In the current design, a single region has been sufficient for the application. 
 ## Specification
 
 - Extend the architecture to work in an active-active, multi-region topology. 
+- Consider a deployment stamp model that allows you to dynamically add and remove regions as needed instead of a list of hardcoded resources across two regions.
 - If there's a regional failure, traffic needs to be routed to the non-faulted region without notable impact to clients already in the non-faulted region. 
 - Clients should not be pinned to a region. 
 - Clients should not need to change URLs for contacting the API. 
@@ -14,20 +15,46 @@ In the current design, a single region has been sufficient for the application. 
 ## Recommended approach
 To get started on your design, we recommend that you follow these steps.
 
-## 1&ndash;Global routing
+## 1&ndash;Multi-region topology
 
-In order for the clients to get transparently routed to either working region, add a global load balancer. This new component will helping in routing and managing traffic globally. Choose a native Azure service that seamlessly integrates with the existing architecture.
+The architecture must be distributed to two or more Azure regions to protect against regional outages. Consider these factors when choosing a region:
 
-The health checks that you added in the previous exercise should be used by the global load balancer to determine when a stamp is unhealthy.
+- The region must be able to withstand data center outages in that region. 
+- The Azure services and the capabilities, used in the architecture, must be supported in the region.
+- The region and the resources deployed in the region must have proximity to the end users and dependent systems to minimize network latency.
 
-## 1&ndash;Component and configuration changes
-You need to deploy your application into addtional azure regions. Ideally you want to move to a deployment stamp model that allows you to dynamically add and remove regions as needed, not just a list of hardcoded resources across two regions
+> **Check your progress: [Global distribution](/azure/architecture/framework/mission-critical/mission-critical-application-design#global-distribution)**
 
-You need to update your Cosmos DB with global distribution. You need to define the best model for this.
+## 2&ndash;Global routing
+
+In order for the clients to get transparently routed to either working region, add a global load balancer. The health checks that you added in the previous exercise should be used by the load balancer to determine when a stamp is unhealthy. 
+
+- Choose a native Azure service that seamlessly integrates with the existing architecture.
+- Make sure that network ingress path has controls in place to deny unauthorized traffic. 
+- Minimize network latency by serving end users from an edge cache. 
+
+> **Check your progress: [Global traffic routing](/azure/architecture/framework/mission-critical/mission-critical-networking-connectivity#global-traffic-routing)**
+
+## 3&ndash;Component and configuration changes
 
 The ideal state is an active-active configuration which does not require any active failover and client requests can be served from any region. Think about what that implies for your architecture. Do you have any state that only exists inside one regional stamp?
 
+Explore the reliability features of the Azure services used in the architecture. You can start with these features and explore further to maximize reliability. 
+
+|Azure service|Feature|
+|---|---|
+|Azure Cosmos DB|[Multi-region write](/azure/architecture/framework/mission-critical/mission-critical-data-platform#globally-distributed-multi-region-write-datastore)|
+|Azure Container Registry|[Geo-replication](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#container-registry)|
+|Azure Kubernetes Service|[Reliability features for the compute cluster](/azure/architecture/framework/mission-critical/mission-critical-application-platform#container-orchestration-and-kubernetes)|
+
+> **Check your progress: [Application platform](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) | [Data platform](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform)**
+
 ## Check your work
+
+Read [Application](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) and [Data](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform) platform choices in a reference architecture for the design details. Did you cover all aspects in your design?
+
+
+- The solution is deployed active-active across two or more Azure Availability Zones per Azure region to protect against datacenter outages within a region.
 - What did you use as a gateway service to ingress the client traffic for regional routing determination?
 - How did that choice support your existing DNS record?
 - What routing rules did you put in place and why?
