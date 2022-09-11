@@ -1,21 +1,21 @@
-Contoso Shoes needs a way to withstand regional outages. You want to deploy current stamp to an active-active, shared-state, and multi-region topology. The architecture must be designed to redirect traffic to another region in case a region fails.  
+Contoso Shoes needs a way to withstand regional outages. You want to deploy the current stamp to an active-active, shared-state, and multi-region topology. The architecture must be designed to redirect traffic to another region in case a region fails.  
 
 ## Current state and problem
 
-In the current design, a single region has been sufficient for the application. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Scaling out within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
+A single region has been sufficient for the application. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Scaling out within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
 
 ## Specification
 
 - Extend the architecture to work in an active-active, multi-region topology. 
 - Consider a deployment stamp model that allows you to dynamically add and remove regions as needed instead of a list of hardcoded resources across two regions.
-- If there's a regional failure, traffic needs to be routed to the non-faulted region without notable impact to clients already in the non-faulted region. 
-- Clients should not be pinned to a region. 
-- Clients should not need to change URLs for contacting the API. 
+- If there's a regional failure, traffic needs to be routed to the non-faulted region without any notable impact to clients already in the non-faulted region. 
+- Clients shouldn't be pinned to a region. 
+- Clients shouldn't need to change URLs for contacting the API. 
 
 ## Recommended approach
 To get started on your design, we recommend that you follow these steps.
 
-## 1&ndash;Multi-region topology
+### 1&ndash;Multi-region topology
 
 The architecture must be distributed to two or more Azure regions to protect against regional outages. Consider these factors when choosing a region:
 
@@ -23,25 +23,25 @@ The architecture must be distributed to two or more Azure regions to protect aga
 - The Azure services and the capabilities, used in the architecture, must be supported in the region.
 - The region and the resources deployed in the region must have proximity to the end users and dependent systems to minimize network latency.
 
-Think through a failure scenario. Suppose eastus2 gets 75% of the traffic and the other region you added gets the remaining. They are both scaled appropriately to handle that load. There's a regional outage in eastus2 and all traffic is now routed to the other region. How smooth will that transition be? Can the other region support that increased traffic load?
+Think through a failure scenario. Suppose eastus2 gets 75% of the traffic and the other region you added gets the remaining. They're both scaled appropriately to handle that load. There's a regional outage in eastus2 and all traffic is now routed to the other region. Can you make that transition smooth? Can the other region support that increased traffic load?
 
 > **Check your progress: [Global distribution](/azure/architecture/framework/mission-critical/mission-critical-application-design#global-distribution)**
 
-## 2&ndash;Global routing
+### 2&ndash;Global routing
 
-In order for the clients to get transparently routed to either working region, add a global load balancer. The health checks that you added in the previous exercise should be used by the load balancer to determine when a stamp is unhealthy. 
+In order for the clients to get transparently routed to either working region, add a global load balancer. The health checks that you added in the previous exercise should be used by the load balancer to determine whether a stamp is healthy. 
 
 - Choose a native Azure service that integrates with the existing architecture and is able to fail over quickly.
 - Make sure that network ingress path has controls in place to deny unauthorized traffic. 
 - Minimize network latency by serving end users from an edge cache.
 - Migrate the existing DNS without affecting existing clients. (TBD)
-- Have an automated way to indicate a regional failure to ensure traffic isn’t routed to the faulted region. Also, get notified  when the region is available so that load balancer can resume routing to that region.
+- Have an automated way to indicate a regional failure to ensure traffic isn’t routed to the faulted region. Also, get notified  when the region is available again so that load balancer can resume routing to that region.
 
 > **Check your progress: [Global traffic routing](/azure/architecture/framework/mission-critical/mission-critical-networking-connectivity#global-traffic-routing)**
 
-## 3&ndash;Component and configuration changes
+### 3&ndash;Component and configuration changes
 
-The ideal state is an active-active configuration which does not require any active failover and client requests can be served from any region. Think about what that implies for your architecture. Do you have any state that only exists inside one regional stamp?
+The ideal state is an active-active configuration that doesn't require any active failover and client requests can be served from any region. Think about what that implies for your architecture. For example, do you have any state that stored in the regional stamp?
 
 Explore the reliability features of the Azure services used in the architecture. You can start with these features and explore further to maximize reliability. 
 
@@ -55,16 +55,16 @@ Explore the reliability features of the Azure services used in the architecture.
 
 ## Check your work
 
-Read [Application](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) and [Data](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform) platform choices in a reference architecture for the design details. Did you cover all aspects in your design?
+Read [**Application**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) and [**Data**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform) articles for the design details. Did you cover all aspects in your design?
 
 
 - Which other Azure region did you select for your multi-region topology, and why?
 - Did you enable two or more Azure Availability Zones in each Azure region to protect against datacenter outages?
 - Did you include Web Application Firewall to control ingress traffic? What routing rules did you put in place and why?
-- How did that choice support your existing DNS record?
+- How does the load balancer support your existing DNS record?
 - How did you use your health check API from the previous exercise?
-- How have protected the application from DDoS attacks, especially preventing malicious clients from bypassing the load balancer and reaching regional instances?
+- Have you protected the application from DDoS attacks, especially preventing malicious clients from bypassing the load balancer and reaching regional instances?
 - How did you approach DNS and TLS migration?
-- Did you need to make any SKU changes to any existing component?
-- Which Azure services did you leave as singletons? How have you justified your choice? Did you make any configuration changes?
-- Did are you logging resources? Do you think that’ll impact your ability to inspect the logs for the overall system?	
+- Did make any SKU changes to the existing component to support multi-region topology?
+- Which Azure services did you leave as singletons? How have you justified your choice for each service? Did you make any configuration changes?
+- Are you logging resources? Do you think that’ll impact your ability to inspect the logs for the overall system?	

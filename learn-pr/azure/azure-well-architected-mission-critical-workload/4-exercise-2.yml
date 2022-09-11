@@ -14,7 +14,7 @@ durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-2.md)]
 quiz:
-  title: Check your knowledge
+  title: Knowledge check
   questions:
   - content: 'Which service is appropriate for global routing in this architecture?'
     choices:
@@ -23,10 +23,10 @@ quiz:
       explanation: 'Azure Application Gateway is a regional load balancer.'
     - content: 'Azure Front Door'
       isCorrect: true
-      explanation: 'Front Door is provides global load balancing and site acceleration service for web applications. A good choice for workloads with high-availability requirements. It offers fast failover, caching, and is integrated with Web Application Firewall (WAF).'
+      explanation: 'Front Door provides global load balancing and site acceleration for web applications. This is a good choice for workloads with high-availability requirements. It offers fast failover, caching, and is integrated with Web Application Firewall (WAF).'
     - content: 'Azure Traffic Manager'
       isCorrect: false
-      explanation: 'Traffic Manager is a DNS-based traffic load balancer that distributes traffic across global Azure regions. However this architecture is focused on a web workloads. Ideally, the load balancer should route HTTP(S) traffic.'
+      explanation: 'Traffic Manager is a DNS-based traffic load balancer that distributes traffic across global Azure regions. However, this architecture is focused on a web workload. Ideally, the load balancer should route HTTP(S) traffic.'
   - content: 'Which of the following is a good example of using automation to improve operational excellence?'
     choices:
     - content: 'Manually provisioning development environments every day for your development teams.'
