@@ -11,5 +11,5 @@ The visualizations you see on the dashboard are called tiles. Tiles can display 
 Azure Data Explorer dashboards provide three main advantages:
 
 * Explore the data in the Azure Data Explorer web UI. Data is hosted in the Azure Data Explorer product, and uses 
-* Natively pin queries from the Azure Data Explorer web UI to Azure Data Explorer dashboards. There's no need to export data to another service. 
+* Natively pinned queries from the Azure Data Explorer web UI to Azure Data Explorer dashboards. There's no need to export data to another service. 
 * Optimized dashboard rendering performance. Data is dynamically linked to the source, for quick rendering and data update.
