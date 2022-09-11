@@ -6,7 +6,7 @@ Dashboards tell a story through visualizations, and are an excellent way to moni
 
 The visualizations you see on the dashboard are called tiles. Tiles can display a single number, a graph, a data table, or another visualization. Tiles are dynamically linked to the source data, so they change whenever your underlying data changes. You can pin (create) tiles to a dashboard from a query, or create new tiles within a new or existing dashboard page.
 
-## What are the advantage of using the native dashboard experience?
+## What are the advantages of using the native dashboard experience?
 
 Azure Data Explorer dashboards provide three main advantages:
 
