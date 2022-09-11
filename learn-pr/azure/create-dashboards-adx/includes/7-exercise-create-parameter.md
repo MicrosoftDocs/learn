@@ -46,7 +46,7 @@ You need to create a list of possible values for this parameter. The parameter y
 
     :::image type="content" source="../media/9-edit-query.png" alt-text="Screenshot of editing query for parameter.":::
 
-1. Select **Done**
+1. Select **Done**.
 
 ## Edit the tile query to include a parameter
 
