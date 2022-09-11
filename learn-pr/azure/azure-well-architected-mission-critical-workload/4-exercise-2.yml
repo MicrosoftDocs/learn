@@ -16,20 +16,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is a good example of using testing in your environment?'
+  - content: 'Which service is appropriate for global routing in this architecture?'
     choices:
-    - content: 'Waiting for users to reach out to you with reports of errors in your application.'
+    - content: 'Azure Application Gateway'
       isCorrect: false
-      explanation: 'This is a poor practice and will result in a bad user experience.'
-    - content: 'Performing functionality tests in the development environment that are different from functionality tests in the production environment.'
-      isCorrect: false
-      explanation: 'You should perform the same functional tests between environments to ensure you are identifying issues early in your development process rather than in production.'
-    - content: 'Omitting infrastructure deployment from test plans.'
-      isCorrect: false
-      explanation: 'Infrastructure deployment should be included in test plans to avoid introducing errors or issues due to misconfigured infrastructure.'
-    - content: 'Performing regular security tests of your application code in development and production environments.'
+      explanation: 'Azure Application Gateway is a regional load balancer.'
+    - content: 'Azure Front Door'
       isCorrect: true
-      explanation: 'Regular security tests are a key element of security for your application and can help identify security defects and issues.'
+      explanation: 'Front Door is provides global load balancing and site acceleration service for web applications. A good choice for workloads with high-availability requirements. It offers fast failover, caching, and is integrated with Web Application Firewall (WAF).'
+    - content: 'Azure Traffic Manager'
+      isCorrect: false
+      explanation: 'Traffic Manager is a DNS-based traffic load balancer that distributes traffic across global Azure regions. However this architecture is focused on a web workloads. Ideally, the load balancer should route HTTP(S) traffic.'
   - content: 'Which of the following is a good example of using automation to improve operational excellence?'
     choices:
     - content: 'Manually provisioning development environments every day for your development teams.'

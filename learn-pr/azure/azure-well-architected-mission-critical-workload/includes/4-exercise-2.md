@@ -23,15 +23,19 @@ The architecture must be distributed to two or more Azure regions to protect aga
 - The Azure services and the capabilities, used in the architecture, must be supported in the region.
 - The region and the resources deployed in the region must have proximity to the end users and dependent systems to minimize network latency.
 
+Think through a failure scenario. Suppose eastus2 gets 75% of the traffic and the other region you added gets the remaining. They are both scaled appropriately to handle that load. There's a regional outage in eastus2 and all traffic is now routed to the other region. How smooth will that transition be? Can the other region support that increased traffic load?
+
 > **Check your progress: [Global distribution](/azure/architecture/framework/mission-critical/mission-critical-application-design#global-distribution)**
 
 ## 2&ndash;Global routing
 
 In order for the clients to get transparently routed to either working region, add a global load balancer. The health checks that you added in the previous exercise should be used by the load balancer to determine when a stamp is unhealthy. 
 
-- Choose a native Azure service that seamlessly integrates with the existing architecture.
+- Choose a native Azure service that integrates with the existing architecture and is able to fail over quickly.
 - Make sure that network ingress path has controls in place to deny unauthorized traffic. 
-- Minimize network latency by serving end users from an edge cache. 
+- Minimize network latency by serving end users from an edge cache.
+- Migrate the existing DNS without affecting existing clients. (TBD)
+- Have an automated way to indicate a regional failure to ensure traffic isn’t routed to the faulted region. Also, get notified  when the region is available so that load balancer can resume routing to that region.
 
 > **Check your progress: [Global traffic routing](/azure/architecture/framework/mission-critical/mission-critical-networking-connectivity#global-traffic-routing)**
 
@@ -54,20 +58,13 @@ Explore the reliability features of the Azure services used in the architecture.
 Read [Application](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) and [Data](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform) platform choices in a reference architecture for the design details. Did you cover all aspects in your design?
 
 
-- The solution is deployed active-active across two or more Azure Availability Zones per Azure region to protect against datacenter outages within a region.
-- What did you use as a gateway service to ingress the client traffic for regional routing determination?
+- Which other Azure region did you select for your multi-region topology, and why?
+- Did you enable two or more Azure Availability Zones in each Azure region to protect against datacenter outages?
+- Did you include Web Application Firewall to control ingress traffic? What routing rules did you put in place and why?
 - How did that choice support your existing DNS record?
-- What routing rules did you put in place and why?
-- Did your health check API come into play?
-- Now that you have this gateway service in place, can you see other benefits that might come from this service, such as the inclusion of Web Application Firewall?
+- How did you use your health check API from the previous exercise?
+- How have protected the application from DDoS attacks, especially preventing malicious clients from bypassing the load balancer and reaching regional instances?
 - How did you approach DNS and TLS migration?
-- Did you do anything specific to prevent a client (including malicious clients) from bypassing your gateway service and going directly to the regional instances?
-- Did you need to make any SKU changes to any component in the architecture?
-- What Azure services did you:
-    - leave as singletons in the solution, and did you make any configuration changes to them? (I.e. geo-replication features)
-    - decide to have per-region?
-    - What did you use as your deciding factors?
-•	Any specific handling for logging resources, and do you think that’ll impact your ability to inspect the logs for the system “all up?”
-•	What other region did you select, and why?
-•	Think through the problem you’ve solved for. Let’s say that eastus2 gets about 75% of the traffic and the other region you added gets the remaining (both scaled perfectly to handle that load).  Eastus2 faults, and the other region is now being asked to absorb all of that traffic. How smooth will that transition be? Can the other region support that increased traffic load?
-•	What did you use as the “region is down” signal to ensure traffic isn’t being routed there anymore? Is that automated? How will you know when the “region is back” and safe to start accepting traffic again?
+- Did you need to make any SKU changes to any existing component?
+- Which Azure services did you leave as singletons? How have you justified your choice? Did you make any configuration changes?
+- Did are you logging resources? Do you think that’ll impact your ability to inspect the logs for the overall system?	
