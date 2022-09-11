@@ -20,6 +20,8 @@ Now, let's add another tile to this dashboard. First, you need to switch from vi
     | sort by event
     ```
 
+1. Run the query by selecting the **Run** button or by pressing **Shift**+**Enter**.
+
 1. Select **+ Add visual**.
 
     :::image type="content" source="../media/8-add-visual.png" alt-text="Screenshot of results of query and adding visual to dashboard.":::
