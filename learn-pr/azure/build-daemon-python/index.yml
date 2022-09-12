@@ -21,7 +21,7 @@ prerequisites: |
   - [Python 3+](https://www.python.org/downloads/) installed on your computer.
   - Ability to write code in Python at beginner level.
   - A user account in an Azure AD tenant that's been assigned one or more of roles, or equivalent permissions. Any of the following Azure AD roles include the required permissions:
-    - Application administrator.
+    - Application Administrator.
     - Application Developer.
     - Cloud Application Administrator.
 iconUrl: /learn/achievements/build-daemon-python.svg
