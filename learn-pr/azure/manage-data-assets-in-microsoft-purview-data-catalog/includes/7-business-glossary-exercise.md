@@ -51,15 +51,33 @@ In this exercise we're going to create a term in the business glossary, update o
 ### Bulk
 
 You can also import many terms into the data catalog at one time using a .csv file. Entries to your csv should look like this:
-    - "Name","Nick Name","Status","Definition","Acronym","Resources","Related Terms;Separated by semicolons","Synonyms","Stewards","Experts","Parent Term Name","IsDefinitionRichText(True/False)","Term Template Names"
+    
+- "Name","Nick Name","Status","Definition","Acronym","Resources","Related Terms;Separated by semicolons","Synonyms","Stewards","Experts","Parent Term Name","IsDefinitionRichText(True/False)","Term Template Names"
+
+A full sample CSV will be provided in the steps below.
 
 1. To import these terms to the glossary, open the data glossary and select **Import terms** in the top menu.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-import-terms-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-import-terms.png":::
+
 1. Select the term template you want to use. For now, let's choose **System default**.
 
-1. There's a sample .csv available for you to download and edit. When you've added your terms as shown, upload the completed file to the import terms window. Then select **Ok**.
+    :::image type="content" source="../media/business-glossary-exercise/select-default-term-template-for-bulk-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-default-term-template-for-bulk.png":::
+
+1. There's a sample .csv available for you to download and edit. Download the CSV and use it as a template to complete your terms.
+
+    >![TIP]
+    >When using the sample CSV, remember to remove the first example row before uploading your CSV.
+
+    :::image type="content" source="../media/business-glossary-exercise/download-sample-csv-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/download-sample-csv.png":::
+
+1. When you've added your terms as shown, upload the completed file to the import terms window. Then select **Ok**.
+
+    :::image type="content" source="../media/business-glossary-exercise/upload-terms-and-select-okay-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/upload-terms-and-select-okay.png":::
 
 1. It may take a few minutes, but the system will upload the file and add all the terms to your glossary.
+
+    :::image type="content" source="../media/business-glossary-exercise/importing-terms-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/importing-terms.png":::
 
 ## Manage terms
 
