@@ -19,7 +19,7 @@ The VMs could also be affected by periodic updates initiated by Azure itself. Th
 > [!NOTE]
 > Microsoft does not automatically update your VMs OS or software. You have complete control and responsibility for that. However, the underlying software host and hardware are periodically patched to ensure reliability and high performance at all times.
 
-To ensure your services aren't interrupted and avoid a single point of failure, it's recommended to deploy at least two instances of each VM. This feature is called an _availability set_.
+To ensure your services aren't interrupted and avoid a single point of failure, it's recommended to deploy at least two instances of each VM. This feature is called an _availability set_.    
 
 ### What is an availability set?
 
