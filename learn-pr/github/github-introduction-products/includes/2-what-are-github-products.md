@@ -104,7 +104,7 @@ In addition to the increased minutes, you also get the following extra features 
 
 - Access control for GitHub Pages 
 - A service level agreement for 99.9% monthly uptime
-- Centralize billing options
+- Centralized billing options
 
 ## Recap
 
