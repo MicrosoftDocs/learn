@@ -19,7 +19,7 @@ At this point the app is deployed to Azure, but it isn't functioning correctly. 
 
     :::image type="content" source="../media/visual-studio-remote-debug-attach-to-process.png" alt-text="A screenshot of the attach to process features.":::
 
-7) The `OnGet` method inside of `Index.cshtml.cs` handles most of the logic for the app, so make sure to set a breakpoint on the first line of that method. However, when you set the breakpoint, the icon will display hollow with a warning symbol. When you mouse over the breakpoint, Visual Studio will display a message that the breakpoint can't be hit for optimized code when the "Just my Code" setting is enabled. Essentially Visual Studio isn't able to properly debug the app yet because the debugging symbols haven't been loaded due to certain configurations.
+7) The `OnPost` method inside of `Index.cshtml.cs` handles most of the logic for the app, so make sure to set a breakpoint on the first line of that method. However, when you set the breakpoint, the icon will display hollow with a warning symbol. When you mouse over the breakpoint, Visual Studio will display a message that the breakpoint can't be hit for optimized code when the "Just my Code" setting is enabled. Essentially Visual Studio isn't able to properly debug the app yet because the debugging symbols haven't been loaded due to certain configurations.
 
 ## Ensure symbols are loaded
 
