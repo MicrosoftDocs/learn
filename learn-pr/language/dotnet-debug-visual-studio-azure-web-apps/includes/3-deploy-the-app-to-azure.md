@@ -8,13 +8,13 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
 2) In the **Create a new project** dialog, search for **ASP.NET** and select the **ASP.NET Core Web App** option. Make sure to choose the Razor Pages project template instead of the **Model-View-Controller** option, then select **Next**.
 
-    :::image type="content" source="../media/visual-studio-create-project.png" alt-text="A screenshot of the sample app.":::
+    :::image type="content" source="../media/visual-studio-create-project.png" alt-text="A screenshot of the new project dialog in Visual Studio.":::
 
 3) On the **Configure your new project** dialog, name the project **GitHubBrowser**, leave the rest of the settings at their defaults, and then choose **Next**.
 
 4) On the **Additional information** step, make sure .NET 6.0 is selected, and then select **Create**.
 
-5) After Visual Studio creates the project, replace the contents of `Index.cshtml` with the following code:
+5) After Visual Studio creates the project, expander the `Pages` folder in the solution explorer and open the `Index.cshtml` file. Replace the contents of `Index.cshtml` with the following code:
 
     ```razor
     @page
@@ -121,7 +121,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
     
     The preceding code contains two important methods:
     * The **OnGet** method handles initially loading the search page.
-    * The **OnPost** method handles the form submission. The method pulls the GitHub API URL from the `appsettings.Development.json` file using the configuration service and makes an HTTP request using the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
+    * The **OnPost** method handles the form submission. The method pulls the GitHub API URL from the `appsettings.Development.json` file using the configuration service and makes an HTTP request with the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
 
 7) In the Visual Studio Solution Explorer, expand the arrow next to the `appsettings.json` file. Open the `appsettings.Development.json` file and replace its contents with the following code:
 
@@ -169,7 +169,7 @@ Next you need to deploy the app to Azure so others can use it to browse reposito
     | --- | --- |
     | **Name** |  Enter `GitHubBrowser123`, where `123` are three random numbers of your choosing to ensure your App Service name and domain is unique across Azure. |
     | **Subscription name** | If you are using the Learn sandbox environment, select the `Concierge Subscription`, otherwise select your own. Remember, you may need to log out and in again if you don't see the sandbox subscription as an option. |
-    | **Resource group** | Choose the <rgn>[sandbox resource group name]</rgn> if you are using the sandbox, or select **New...** to create your own new group with a name such as `mslearn-github-browser`. |
+    | **Resource group** | Choose the default <rgn>[sandbox resource group name]</rgn> if you are using the sandbox, or select **New...** to create your own new group with a name such as `mslearn-github-browser`. |
     | **Hosting plan** | If you are using the Learn sandbox, leave the default value.  If you are using your own subscription, select **New...** and enter a name of `mslearn-github-browser-plan` and choose your instance size. |
 
     :::image type="content" source="../media/visual-studio-remote-debug-create-app-service.png" alt-text="A screenshot of the create app service workflow.":::
