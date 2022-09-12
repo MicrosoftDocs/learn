@@ -31,7 +31,7 @@ Below is a breakdown of the features included with GitHub Free:
 - Dependabot alerts
 - Two-factor authentication enforcement
 - 2,000 GitHub Actions minutes (_Number of free minutes for private repositories_)
-- 500 MB GitHub Packages storage (_Number of free minutes for private repositories_)
+- 500 MB GitHub Packages storage (_Amount of free storage for private repositories_)
 
 For a more comprehensive list of features, please refer to [GitHub's pricing page](https://github.com/pricing).
 
