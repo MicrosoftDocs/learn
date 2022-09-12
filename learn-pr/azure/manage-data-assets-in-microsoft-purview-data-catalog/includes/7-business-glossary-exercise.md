@@ -83,13 +83,21 @@ A full sample CSV will be provided in the steps below.
 
 1. Open the glossary and search for a term you want to edit. You can select the check box to the right of the term name, and select the **Edit** button at the top of the page.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-term-and-edit-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-term-and-edit.png":::
+
 1. You can also open the term itself and select the **Edit** button inside the term.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-edit-inside-term-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-edit-inside-term.png":::
 
 1. From here you can update any values to the term.
 
 1. Select **Save** to make sure your edits persist.
 
+    :::image type="content" source="../media/business-glossary-exercise/save-changes-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/save-changes.png":::
+
 1. In the glossary menu you can also select multiple terms and either delete these terms or export them, using the **Delete** or **Export** buttons at the top of the page.
+
+    :::image type="content" source="../media/business-glossary-exercise/export-or-delete-bulk-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/export-or-delete-bulk.png":::
 
 ## Create a term template
 
