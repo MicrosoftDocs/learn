@@ -6,7 +6,7 @@ In this unit, we'll look at a few different ways that GitHub licenses and prices
 
 GitHub Actions is free for public repositories and self-hosted runners. For private repositories, each GitHub account receives a certain number of free minutes, depending on the product used with the account.
 
-By default, your account will have a spending limit of $0, which prevents additional usage of minutes after you reach your limit. If you increase your spending limit above the default of $0, you will be billed for any minutes beyond the limits, also called overages. GitHub charges usage to the account that owns the repository where the workflow is run.
+By default, your account will have a spending limit of `$0`, which prevents additional usage of minutes after you reach your limit. If you increase your spending limit above the default of `$0`, you will be billed for any minutes beyond the limits, also called overages. GitHub charges usage to the account that owns the repository where the workflow is run.
 
 Jobs that run on GitHub hosted Windows and macOS runners consume minutes at 2 and 10 times the rate that jobs on Linux runners consume. For example, using 1,000 Windows minutes would consume 2,000 of the minutes included in your account. Using 1,000 macOS minutes, would consume 10,000 minutes included in your account.
 
@@ -20,7 +20,7 @@ The following table compares the minute multiplier for the different operating s
 
 Finally, the free minutes reset each month.  You cannot "roll over" unused minutes from previous months.
 
-If your account's usage surpasses these limits and you have set a spending limit above $0, you will pay per-minute usage based on the operating system used by the GitHub-hosted runner. GitHub rounds the minutes each job uses up to the nearest minute.
+If your account's usage surpasses these limits and you have set a spending limit above `$0`, you will pay per-minute usage based on the operating system used by the GitHub-hosted runner. GitHub rounds the minutes each job uses up to the nearest minute.
 
 > [!NOTE]
 > For current prices, please refer to [GitHub's pricing page](https://github.com/pricing?azure-portal=true).
