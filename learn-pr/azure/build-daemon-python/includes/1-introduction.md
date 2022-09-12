@@ -2,7 +2,7 @@ Organizations build apps to serve various use cases. While most applications req
 
 ## Example scenario
 
-Suppose you work at a financial company as a software developer. The company depends on many applications that run as background processes rather than being under the direct control of an interactive user. These applications support business operations like generating loan reports, loan repayment reports, and processing payroll at the end of the month.
+Suppose you work at a financial company as a software developer. The company depends on many applications that run as background processes rather than being under the direct control of a user. These applications support business operations like generating loan reports, loan repayment reports, and processing payroll at the end of the month.
 
 Your company uses Azure AD, which is an identity provider, to ensure that company data is accessed in a secure way. You've been tasked with the responsibility of building an application that will acquire a token to call a protected web API on behalf of itself.
 
