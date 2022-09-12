@@ -8,7 +8,7 @@ Add the computed property to display a string for the selected cabin:
 1. Below the `TODO: Add computed values` comment, add the following JavaScript code to create the computed value.
 
     ```javascript
-    // TODO: Add completed values
+    // TODO: Add computed values
     computed: {
         bookingCabinDisplay() {
             const cabin = this.product.cabins[this.booking.cabinIndex];
