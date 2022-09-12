@@ -9,7 +9,7 @@ The company wants to add capabilities to their solution architecture and make it
 
 - Extend the architecture to multiple regions.
 - Improve the customer experience by serving clients faster in a region geographically closer to them. 
-- Upgrade the Azure services so that they are aligned with the Azure roadmap. 
+- Upgrade the Azure services so that they're aligned with the Azure roadmap. 
 - Build an overall health model to make sure issues are caught early in the development cycle. 
 
 ## Current architecture
@@ -28,7 +28,7 @@ All components of this architecture are deployed to a single region.
 
 - **Deployment slots** let you stage a deployment and then swap it with the production deployment. 
 
-- **Azure Container Registry** stores the containerized API code and is made available through Continuous Integration/Continuous Delivery (CI/CD) pipelines that was created and managed by your team. 
+- **Azure Container Registry** stores the containerized API code and is made available through Continuous Integration/Continuous Delivery (CI/CD) pipelines created and managed by your team. 
 
 - **Azure Cosmos DB with SQL API** stores all state related to the workload. The Cosmos DB database account has a single database that contains a few containers in the Shared throughput model. The Azure Cosmos account uses the Serverless capacity mode.
 
@@ -48,13 +48,13 @@ TODO: need to add details
 
 ## Tradeoffs
 
-However, as with everything, there are trade-offs with the current architecture. Business requirements prioritized cost optimization over reliability and operations. To keep within the cost limits, the architecture hasn't evolved. The components aren't aligned with Azure platform roadmaps and fall short in taking advantage of the reliability capabilities offered by the platform. For example, the choice of SKU for compute prevents the workload from using Availability Zones. For telemetry, an older version of Application Insights is used that isn't integrated with Log Analytics. 
+However, as with everything, there are trade-offs with the current architecture. Business requirements prioritized cost optimization over reliability and operations. To keep within the cost limits, the architecture hasn't evolved. The components fall short in taking advantage of the reliability capabilities offered by the platform. For example, the choice of SKU for compute prevents the workload from using Availability Zones. For telemetry, an older version of Application Insights is used that isn't integrated with Log Analytics. 
 
 Also, access to the workload is overly pervasive. For example, without any virtual network integration, all Azure services can be directly reached over the public internet. 
 
 ## Design improvements
 
-In an ideal architecture, you would build the most higly available and efficient environment possible. 
+In an ideal architecture, you would build the most highly available and efficient environment possible. 
 
 - Multi region - active-active
 - Scale unit architecture
@@ -63,8 +63,8 @@ In an ideal architecture, you would build the most higly available and efficient
 
 ## Setup
 - Familiarize yourself with Azure Well-Architected Framework guidance for [**mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview).
-- We recommend that you use the architecture diagramming tool that you're most comfortable with. The existing architecture diagram is available for download in both Visio and Diagramming.net (drawio) format, but you can import this into any tooling you wish.
-- You do not need an Azure subscription for this challenge if you're comfortable with the services and their features.
+- We recommend that you use the architecture diagramming tool to visualize the architecture. 
+- You don't need an Azure subscription for this challenge if you're comfortable with the services and their features.
 
 
 
