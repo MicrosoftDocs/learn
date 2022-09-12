@@ -5,13 +5,13 @@ At this point the app is deployed to Azure, but it isn't functioning correctly. 
 
 ## Configure debugging settings
 
-Before debugging an app in Azure, make sure you have completed the following steps and configurations in Visual Studio to ensure success.
+Make sure you have completed the following steps in Visual Studio before debugging an app in Azure to ensure success.
 
 1) First, make sure you have successfully built your project at least one time. A successful build ensures the source code and any necessary compiled files are ready to go. If your application is running locally, make sure to stop the app.
 
 1) Navigate to **Debug -> Options** from the top Visual Studio menu. Make sure that "Enable Just My code** is unchecked, and then select **OK**. 
 
-    Changing this setting allows Visual Studio to browse its default search locations for local symbol files that match the optimized code that was deployed to Azure. Symbol files are used by the debugger as a bridge between your compiled, executing code and the source code in Visual Studio. This is why it's important that your local source code matched the deploy app.
+    Changing this setting allows Visual Studio to browse its default search locations for local symbol files that match the optimized code that was deployed to Azure. Symbol files are used by the debugger as a bridge between your compiled, executing code and the source code in Visual Studio, which is why it's important that your local source code matched the deploy app.
 
     :::image type="content" source="../media/visual-studio-remote-debug-settings.png" alt-text="A screenshot of the Visual Studio debugging settings.":::
 
@@ -33,7 +33,7 @@ Before debugging an app in Azure, make sure you have completed the following ste
 
 1) Optionally, you can also verify that Visual Studio has loaded the symbol files for your debugging session. Navigate to **Debug > Windows > Modules** to open the modules window. This window should indicate that the symbol files were successfully loaded for the GitHub browser `.dll` file after the **Just my code** configuration changes you made earlier.
 
-    :::image type="content" source="../media/visual-studio-symbol-files.png" alt-text="A screenshot of the application settings.":::
+    :::image type="content" source="../media/visual-studio-symbol-files.png" alt-text="A screenshot of the symbol files window.":::
 
 ## Troubleshoot the bug
 
