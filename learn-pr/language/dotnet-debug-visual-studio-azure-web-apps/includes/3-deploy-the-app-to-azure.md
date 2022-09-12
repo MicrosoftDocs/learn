@@ -1,4 +1,4 @@
-In order to work through a remote debugging exercise with App Service, you'll first need to deploy an application to Azure. The Razor Pages sample app provided below allows users to search for GitHub repositories by organization. However, the app also contains a subtle bug that you will troubleshoot using Visual Studio after it has been deployed.
+In order to work through a remote debugging exercise with App Service, you'll first need to create an application and deploy it to Azure. The Razor Pages sample app you'll create allows users to search for GitHub repositories by organization. However, the app also contains a subtle bug that you will troubleshoot using Visual Studio after it has been deployed.
 
 ## Create the sample app
 
@@ -6,7 +6,9 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
 1) Inside Visual Studio, select **File > New Project**.
 
-2) In the **Create a new project** dialog, search for **ASP.NET*** and select the **ASP.NET Core Web App** option. Make sure to choose the Razor Pages project template instead of the **Model-View-Controller** option, then select **Next***.
+2) In the **Create a new project** dialog, search for **ASP.NET** and select the **ASP.NET Core Web App** option. Make sure to choose the Razor Pages project template instead of the **Model-View-Controller** option, then select **Next**.
+
+    :::image type="content" source="../media/visual-studio-create-project.png" alt-text="A screenshot of the sample app.":::
 
 3) On the **Configure your new project** dialog, name the project **GitHubBrowser**, leave the rest of the settings at their defaults, and then choose **Next**.
 
@@ -119,9 +121,9 @@ You can create the sample app for this module using Visual Studio. The sample ap
     
     The preceding code contains two important methods:
     * The **OnGet** method handles initially loading the search page.
-    * The **OnPost** method handles the form submission and sends an HTTP request to GitHub to retrieve the data.
+    * The **OnPost** method handles the form submission. The method pulls the GitHub API URL from the `appsettings.Development.json` file using the configuration service and makes an HTTP request using the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
 
-7) In the VIsual Studio Solution Explorer, expand the arrow next to the `appsettings.json` file. Open the `appsettings.Development.json` file and replace its contents with the following code:
+7) In the Visual Studio Solution Explorer, expand the arrow next to the `appsettings.json` file. Open the `appsettings.Development.json` file and replace its contents with the following code:
 
     ```json
     {
@@ -138,12 +140,9 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
     This file provides some basic configuration values for the app, including the URL of the GitHub API that is used to retrieve an organization's repositories.
 
-8) You can start the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
+8) Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
 
     :::image type="content" source="../media/visual-studio-remote-debug-app.png" alt-text="A screenshot of the sample app.":::
-
-
-Most of the relevant code for the app can be found in the `OnGet` method inside the `Index.cshtml.cs` file. The code pulls the GitHub API URL from the `appsettings.Development.json` file when the app runs and makes an HTTP request using the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
 
 ## Deploy the app to Azure
 
