@@ -45,9 +45,9 @@ Here's an example of service metrics for Azure Event Hubs.
 
 |Azure Event Hubs|Health status|
 |---|---|
-|Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|![Healthy state](../media/healthy.svg)
-|Queue depth < 50</br> Processing time < 200ms</br>Time in queue <1000 ms|![Degraded](../media/degraded.svg)
-|Queue depth < 50</br> Processing time > 200ms</br>Time in queue > 1000 ms|![Unhealthy](../media/unhealthy.svg)
+|Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|![Shows a healthy state.](../media/healthy.svg)
+|Queue depth < 50</br> Processing time < 200ms</br>Time in queue <1000 ms|![Shows a degraded state.](../media/degraded.svg)
+|Queue depth < 50</br> Processing time > 200ms</br>Time in queue > 1000 ms|![Shows an unhealthy state](../media/unhealthy.svg)
 
 ### 3&ndash;Define an overall health status
 
@@ -58,8 +58,8 @@ Suppose a system flow is composed of an application component, Azure Event Hubs,
 |API|Azure Event Hubs|Azure Storage|Health status|
 |---|---|---|---|
 |Maximum latency < 30ms |Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Response Time < 100ms</br>Request_Failure_Count < 2| ![Composite healthy state.](../media/healthy.svg)
-|Maximum latency < 30ms|Queue depth < 50</br> Processing time < 200ms</br>**Time in queue <1000 ms**|**Response Time < 200ms**</br>Request_Failure_Count < 5|![Composite degraded](../media/degraded.svg)
-|**Maximum latency > 30ms**|Queue depth < 50</br> **Processing time > 200ms**</br>**Time in queue > 1000 ms**</br>|Response Time > 200ms</br>**Request_Failure_Count > 5**|![Composite unhealthy](../media/unhealthy.svg)
+|Maximum latency < 30ms|Queue depth < 50</br> Processing time < 200ms</br>**Time in queue <1000 ms**|**Response Time < 200ms**</br>Request_Failure_Count < 5|![Composite degraded state.](../media/degraded.svg)
+|**Maximum latency > 30ms**|Queue depth < 50</br> **Processing time > 200ms**</br>**Time in queue > 1000 ms**</br>|Response Time > 200ms</br>**Request_Failure_Count > 5**|![Composite unhealthy state.](../media/unhealthy.svg)
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
 

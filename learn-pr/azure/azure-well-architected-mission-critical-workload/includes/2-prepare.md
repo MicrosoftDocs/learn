@@ -1,4 +1,3 @@
-
 You'll be adding your own enhancements to an existing architecture that meets an organization's high reliability requirements. Here, we'll discuss the things you'll need to get started.
 
 ## Project specification
@@ -24,7 +23,7 @@ All components of this architecture are deployed to a single region.
 
 - **App Service plan** Standard S2 provides the managed virtual machines (VMs) that host your app. Autoscaling is enabled. In preproduction environment, Basic B1 SKU is used.
 
-- **App Service app** provides the application platform that containerizes the API code. Authentication feature is enabled for authorization. 
+- **App Service** provides the application platform that containerizes the API code. Authentication feature is enabled for authorization. 
 
 - **Deployment slots** let you stage a deployment and then swap it with the production deployment. 
 
@@ -64,8 +63,13 @@ In an ideal architecture, you would build the most highly available and efficien
 ## Setup
 - Familiarize yourself with Azure Well-Architected Framework guidance for [**mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview).
 - We recommend that you use the architecture diagramming tool to visualize the architecture. 
-- You don't need an Azure subscription for this challenge if you're comfortable with the services and their features.
-
-
-
-
+- You don't need an Azure subscription for this challenge if you're comfortable with the services and their features. For product documentation for used services, see:
+    - [Azure App Service plan](/azure/app-service/overview-hosting-plans) 
+    - [Azure App Service](/azure/app-service/overview) 
+    - [Deployment slots](/azure/app-service/deploy-staging-slots) 
+    - [Azure Container Registry](/azure/container-registry/)
+    - [Azure Cosmos DB](/azure/cosmos-db/)
+    - [Azure Key Vault](/azure/key-vault/)
+    - [Azure Log Analytics](/azure/azure-monitor/)
+    - [Azure Application Insights](/azure/azure-monitor/)
+    - [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
