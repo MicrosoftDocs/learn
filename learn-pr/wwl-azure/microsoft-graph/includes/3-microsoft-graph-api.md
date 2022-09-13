@@ -38,7 +38,7 @@ Microsoft Graph uses the HTTP method on your request to determine what your requ
 | DELETE | Remove a resource. |                        
 
 * For the CRUD methods `GET` and `DELETE`, no request body is required.
-* The `POST`, `PATCH`, and `PUT` methods require a request body, usually specified in JSON format, that contains additional information, such as the values for properties of the resource.
+* The `POST`, `PATCH`, and `PUT` methods require a request body, specified in JSON format, that contains additional information, such as the values for properties of the resource.
 
 ## Version
 
@@ -51,7 +51,7 @@ Microsoft Graph currently supports two versions: `v1.0` and `beta`.
 
 A resource can be an entity or complex type, commonly defined with properties. Entities differ from complex types by always including an **id** property.
 
-Your URL will include the resource you are interacting with in the request, such as `me`, **user**, **group**, **drive**, and **site**. Often, top-level resources also include *relationships*, which you can use to access additional resources, like `me/messages` or `me/drive`. You can also interact with resources using *methods*; for example, to send an email, use `me/sendMail`. 
+Your URL will include the resource you are interacting with in the request, such as `me`, **user**, **group**, **drive**, and **site**. Often, top-level resources also include *relationships*, which you can use to access other resources, like `me/messages` or `me/drive`. You can also interact with resources using *methods*; for example, to send an email, use `me/sendMail`. 
 
 Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic.
 
