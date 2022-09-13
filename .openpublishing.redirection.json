@@ -4296,6 +4296,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-sci/design-strategy-for-secure-server-client-endpoints/8-understand-security-operations-frameworks-processes-procedures.md",
+      "redirect_url": "learn-pr/wwl-sci/design-security-operations-strategy/2-understand-frameworks-processes-procedures.md",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/paths/classify-images-with-vision-services/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/process-classify-images-with-azure-cognitive-vision-services",
       "redirect_document_id": false
