@@ -18,7 +18,7 @@ We encourage you to keep learning. More courses are coming soon. Meanwhile, cons
 
 **Windows Machine Learning**
 - [Windows Machine Learning API reference](/windows/ai/api-reference)
-- [Windows Machine Learning Docs]( https://docs.microsoft.com/windows/ai/)
+- [Windows Machine Learning Docs](/windows/ai/)
 - [WinMLTools](/windows/ai/convert-model-winmltools): Convert models trained in other ML frameworks into ONNX format for use with the Windows ML API.
 
 ### APIs referenced in this course

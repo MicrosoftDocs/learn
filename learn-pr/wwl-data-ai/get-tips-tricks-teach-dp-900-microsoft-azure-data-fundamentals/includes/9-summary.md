@@ -4,9 +4,9 @@ Supplemental Resources:
 
 - [Microsoft Learn](https://aka.ms/learn) 
 
-- [Microsoft Whiteboard ](https://aka.ms/whiteboard)
+- [Microsoft Whiteboard](https://aka.ms/whiteboard)
 
-- [Microsoft Technical Documentation ](https://aka.ms/docs)
+- [Microsoft Docs](/?azure-portal=true)
 
 - [Customer and Partner Success Stories](https://aka.ms/customerstories) 
 
@@ -28,7 +28,7 @@ Supplemental Resources:
 
 - [Heathrow Airport MS Customer Stories](https://aka.ms/heathrowairport) 
 
-- [Azure Blog ](https://azure.microsoft.com/blog/)
+- [Azure Blog](https://azure.microsoft.com/blog/)
 
 - [Azure Documentation](https://aka.ms/azuredocs) 
 
@@ -36,12 +36,12 @@ Supplemental Resources:
 
 - [Azure Architecture Center](https://aka.ms/azureac) 
 
-- [GitHub ](https://aka.ms/msgithub)
+- [GitHub](https://aka.ms/msgithub)
 
-- [Azure Blog and Updates ](https://aka.ms/azureblog)
+- [Azure Blog and Updates](https://aka.ms/azureblog)
 
 - [DP-900 Exam Details](https://aka.ms/DP900Exam) 
 
 - [Azure Database Blog](https://aka.ms/azureDBblog) 
 
-- [Azure Community Support ](https://azure.microsoft.com/support/community/)
+- [Azure Community Support](https://azure.microsoft.com/support/community/)

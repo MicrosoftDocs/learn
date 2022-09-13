@@ -114,11 +114,11 @@ The second way to learn about overloaded versions of the methods is to consult t
 
 To begin, use a search engine and search for the class name and method name. You may also want to include the term `C#` to make sure not to accidentally get results for other programming languages. In this case, try searching for: `C# Random.Next()`.
 
-One of the top search results should lead to a URL that begins with `https://docs.microsoft.com`. In our case, the link's title should appear as "Random.Next Method (System) | Microsoft Docs."
+One of the top search results should lead to a URL that begins with `https://docs.microsoft.com`. In our case, the link's title should appear as **Random.Next Method (System) | Microsoft Docs**.
 
 Here's the link in case you have a problem finding it using a search engine:
 
-[Random.Next Method (System) | Microsoft Docs](/dotnet/api/system.random.next?azure-portal=true)
+[Random.Next Method](/dotnet/api/system.random.next?azure-portal=true)
 
 The documentation follows a standard format for each class and method in the .NET Class Library.
 

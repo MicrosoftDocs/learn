@@ -41,7 +41,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service and GitHub Actions, see the following articles and Microsoft Learn modules:
 
-- [AKS documentation on Microsoft Docs](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
+- [AKS documentation](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Integrate Azure Container Registry with AKS](/azure/aks/cluster-container-registry-integration?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster?WT.mc_id=deploycontainerapps_summary-learn-ludossan)

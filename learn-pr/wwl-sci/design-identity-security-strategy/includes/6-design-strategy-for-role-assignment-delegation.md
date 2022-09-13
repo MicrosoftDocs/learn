@@ -66,8 +66,7 @@ following reasons:
 -   A malicious actor can compromise an account.
 -   People move teams within a company. If there's no auditing, they can amass unnecessary access over time.
 
-For information about access reviews for roles, see [Create an access review of Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review). For information about access reviews of groups that are assigned roles, see [Create an access review of groups and applications in Azure AD access
-reviews](https://docs.microsoft.com/azure/active-directory/governance/create-access-review).
+For information about access reviews for roles, see [Create an access review of Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-create-azure-ad-roles-and-resource-roles-review). For information about access reviews of groups that are assigned roles, see [Create an access review of groups and applications in Azure AD access reviews](/azure/active-directory/governance/create-access-review).
 
 ### Limit the number of global administrators to less than five
 
@@ -81,8 +80,7 @@ Microsoft recommends that you keep two break glass accounts that are
 permanently assigned to the Global Administrator role. Make sure that
 these accounts don't require the same multifactor authentication
 mechanism as your normal administrative accounts to sign in, as
-described in [Manage emergency access accounts in Azure
-AD](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
+described in [Manage emergency access accounts in Azure AD](/azure/active-directory/roles/security-emergency-access).
 
 ### Use groups for Azure AD role assignments and delegate the role assignment
 

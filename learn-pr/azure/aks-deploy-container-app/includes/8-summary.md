@@ -37,12 +37,12 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [AKS documentation on Microsoft Docs](/azure/aks/)
+- [AKS documentation](/azure/aks/)
 - [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
 - [Prepare an application for AKS](/azure/aks/tutorial-kubernetes-prepare-app)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)
 - [HTTP application routing](/azure/aks/http-application-routing)
-- [Azure CLI documentation on Microsoft Docs](/azure/aks/kubernetes-walkthrough)
+- [Azure CLI documentation](/azure/aks/kubernetes-walkthrough)
 - [Azure CLI command docs](/cli/azure/aks/#az-aks-create)
 - [AKS HTTPS ingress controller docs](/azure/aks/ingress-tls)
 - [Kubernetes ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
