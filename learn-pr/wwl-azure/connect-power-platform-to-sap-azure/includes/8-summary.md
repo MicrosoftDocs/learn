@@ -14,19 +14,19 @@ Now that you have reviewed this module, you should be able to:
 
 ### Power Platform
 
-- [Administer Power Platform documentation](https://docs.microsoft.com/power-platform/admin/admin-documentation)
+- [Administer Power Platform documentation](/power-platform/admin/admin-documentation)
 
-- [On-premises data gateway](https://docs.microsoft.com/data-integration/gateway/)
+- [On-premises data gateway](/data-integration/gateway/)
 
 ### Power BI and SAP
 
-- [Connect to SAP HANA databases in Power BI](https://docs.microsoft.com/power-bi/connect-data/desktop-sap-hana)
+- [Connect to SAP HANA databases in Power BI](/power-bi/connect-data/desktop-sap-hana)
 
-- [Use the SAP Business Warehouse (BW) Connector in Power BI Desktop](https://docs.microsoft.com/power-bi/connect-data/desktop-sap-bw-connector)
+- [Use the SAP Business Warehouse (BW) Connector in Power BI Desktop](/power-bi/connect-data/desktop-sap-bw-connector)
 
 ### Power Automate and Power Apps and SAP
 
-- [SAP ERP - Connectors documentation](https://docs.microsoft.com/connectors/saperp/)
+- [SAP ERP - Connectors documentation](/connectors/saperp/)
 
 ### Robotic Process Automation
 
@@ -36,5 +36,5 @@ Now that you have reviewed this module, you should be able to:
 
 ### Data Loss Prevention
 
-- [Overview of data loss prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
+- [Overview of data loss prevention](/microsoft-365/compliance/data-loss-prevention-policies)
 

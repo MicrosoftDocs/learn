@@ -25,8 +25,7 @@ Identity management approaches have evolved from traditional, to advanced, to op
 
 **Advanced identity approaches**
 
- -  Cloud identity federates with cloud identity systems.
- -  Conditional access policies gate access and provide remediation actions.
+ -  Conditional access policies gate access and provide remediation actions.<br>
  -  Analytics improve visibility into identity risk.
 
 **Optimal identity approaches**

@@ -51,7 +51,7 @@ The two runtime modules both have an **UpstreamProtocol** environment variable. 
 
 Configure the UpstreamProtocol variable for the IoT Edge agent in the config.yaml file on the device itself. For example, if your IoT Edge device is behind a proxy server that blocks AMQP ports, you may need to configure the IoT Edge agent to use AMQP over WebSocket (AMQPWS) to establish the initial connection to IoT Hub.
 
-Once your IoT Edge device connects, be sure to continue configuring the UpstreamProtocol variable for both runtime modules in future deployments. An example of this process is provided in Configure an IoT Edge device to communicate through a proxy server [https://docs.microsoft.com/azure/iot-edge/how-to-configure-proxy-support](/azure/iot-edge/how-to-configure-proxy-support).
+Once your IoT Edge device connects, be sure to continue configuring the UpstreamProtocol variable for both runtime modules in future deployments. An example of this process is provided in Configure an IoT Edge device to communicate through a proxy server [Configure an IoT Edge device to communicate through a proxy server](/azure/iot-edge/how-to-configure-proxy-support).
 
 ## Deployment
 

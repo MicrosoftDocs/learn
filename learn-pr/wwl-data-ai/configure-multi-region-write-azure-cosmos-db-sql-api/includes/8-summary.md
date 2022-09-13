@@ -13,6 +13,6 @@ For more information about the topics discussed in this module, see:
 - [Conflict types and resolution policies when using multiple write regions][docs.microsoft.com/azure/cosmos-db/conflict-resolution-policies]
 - [Manage conflict resolution policies in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/sql/how-to-manage-conflicts]
 
-[docs.microsoft.com/azure/cosmos-db/sql/how-to-multi-master]: https://docs.microsoft.com/azure/cosmos-db/sql/how-to-multi-master
-[docs.microsoft.com/azure/cosmos-db/conflict-resolution-policies]: https://docs.microsoft.com/azure/cosmos-db/conflict-resolution-policies
-[docs.microsoft.com/azure/cosmos-db/sql/how-to-manage-conflicts]: https://docs.microsoft.com/azure/cosmos-db/sql/how-to-manage-conflicts
+[docs.microsoft.com/azure/cosmos-db/sql/how-to-multi-master]: /azure/cosmos-db/sql/how-to-multi-master
+[docs.microsoft.com/azure/cosmos-db/conflict-resolution-policies]: /azure/cosmos-db/conflict-resolution-policies
+[docs.microsoft.com/azure/cosmos-db/sql/how-to-manage-conflicts]: /azure/cosmos-db/sql/how-to-manage-conflicts

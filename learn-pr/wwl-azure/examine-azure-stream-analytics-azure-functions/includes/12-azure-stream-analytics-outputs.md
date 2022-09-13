@@ -52,4 +52,4 @@ Service Bus queues offer a FIFO message delivery to one or more competing consum
 In contrast to queues, topics provide a one-to-many form of communication in a publish and subscribe pattern.
 
 > [!NOTE]
-> You can find additional information about job ouput types, properties, and characteristics here: [https://docs.microsoft.com/azure/stream-analytics/stream-analytics-define-outputs](/azure/stream-analytics/stream-analytics-define-outputs)
+> You can find additional information about job ouput types, properties, and characteristics here: [Outputs from Azure Stream Analytics](/azure/stream-analytics/stream-analytics-define-outputs)

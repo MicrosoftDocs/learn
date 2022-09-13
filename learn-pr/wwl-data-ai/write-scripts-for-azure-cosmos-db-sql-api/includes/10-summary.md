@@ -19,6 +19,6 @@ For more information about the topics discussed in this module, see:
 - [az cosmosdb][cli/azure/cosmosdb]
 - [az cosmosdb sql][cli/azure/cosmosdb/sql]
 
-[cli/azure/cosmosdb]: https://docs.microsoft.com/cli/azure/cosmosdb
-[cli/azure/cosmosdb/sql]: https://docs.microsoft.com/cli/azure/cosmosdb/sql
-[cli/azure/azure-cli-reference-for-cosmos-db]: https://docs.microsoft.com/cli/azure/azure-cli-reference-for-cosmos-db
+[cli/azure/cosmosdb]: /cli/azure/cosmosdb
+[cli/azure/cosmosdb/sql]: /cli/azure/cosmosdb/sql
+[cli/azure/azure-cli-reference-for-cosmos-db]: /cli/azure/azure-cli-reference-for-cosmos-db

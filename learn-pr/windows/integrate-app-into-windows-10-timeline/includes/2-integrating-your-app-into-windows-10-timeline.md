@@ -136,8 +136,7 @@ In this section, we finish most of the programming necessary for this unit, but 
     ```
 
     > [!NOTE]
-    > For full programming information on user activities, see [Windows.
-    ApplicationModel.User activities namespace](/uwp/api/windows.applicationmodel.useractivities).
+    > For full programming information on user activities, see [Windows. ApplicationModel.User activities namespace](/uwp/api/windows.applicationmodel.useractivities).
     
 
 5. Make a note of the **ActivationUri** name you entered. In this case, it's **proto**.

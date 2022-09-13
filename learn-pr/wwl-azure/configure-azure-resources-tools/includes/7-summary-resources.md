@@ -15,7 +15,7 @@ You can learn more by reviewing the following. A *sandbox* indicates a hands-on 
  -  [Azure Cloud Shell overview](/azure/cloud-shell/overview)
  -  [Azure PowerShell documentation](/powershell/azure)
  -  [Azure CLI Reference](/cli/azure/?view=azure-cli-latest).
- -  [Learn - Manage services with the Azure portal (Sandbox)](/learn/modules/tour-azure-portal/)
- -  [Learn - Introduction to PowerShell (Sandbox)](/learn/modules/introduction-to-powershell/)
- -  [Learn - Control Azure services with the CLI (Sandbox)](/learn/modules/control-azure-services-with-cli/)
- -  [Learn - Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/)
+ -  [Manage services with the Azure portal (Sandbox)](/learn/modules/tour-azure-portal/)
+ -  [Introduction to PowerShell (Sandbox)](/learn/modules/introduction-to-powershell/)
+ -  [Control Azure services with the CLI (Sandbox)](/learn/modules/control-azure-services-with-cli/)
+ -  [Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/)
