@@ -43,12 +43,13 @@ The following diagram contains a description of the thread activities with the q
 
 > [!NOTE]
 > The building blocks described in a previous unit contain tips about the modifications you need, summarized below:
-> - [Building block 1, part 2](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-1-part-2) - Add two counters, one thread, one queue, and one prototype
-> - [Building block 3, part 1](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-1) - Add one stack pointer and one queue pointer
-> - [Building block 3, part 2](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-2) - Allocate stack space, create another thread, queue space create another queue
-> - [Building block 4 `dispatcher thread entry`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-dispatcher-thread-entry) - Increment message counter, and send messages to the new queue with a sleep time of 5
-> - [Building block 4 `routine thread entry`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-routine-thread-entry) - Use the Routine entry function as a guide to create the new Important entry function with a sleep time of 21
-> - [Building block 4 `print_stats`](https://review.docs.microsoft.com/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-print-stats) - Get contents for queue Important, and add `printf` statements to include the new thread counter, message number, and queue contents
+
+> - [Building block 1, part 2](/learn/modules/threadx-message-queues/6-building-blocks#building-block-1-part-2) - Add two counters, one thread, one queue, and one prototype
+> - [Building block 3, part 1](/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-1) - Add one stack pointer and one queue pointer
+> - [Building block 3, part 2](/learn/modules/threadx-message-queues/6-building-blocks#building-block-3-part-2) - Allocate stack space, create another thread, queue space create another queue
+> - [Building block 4 `dispatcher thread entry`](/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-dispatcher-thread-entry) - Increment message counter, and send messages to the new queue with a sleep time of 5
+> - [Building block 4 `routine thread entry`](/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-routine-thread-entry) - Use the Routine entry function as a guide to create the new Important entry function with a sleep time of 21
+> - [Building block 4 `print_stats`](/learn/modules/threadx-message-queues/6-building-blocks#building-block-4-print-stats) - Get contents for queue Important, and add `printf` statements to include the new thread counter, message number, and queue contents
 
 When you finish your modifications, then build and debug *ProjectMessageQueues.c* to produce output similar to the image shown below:
 

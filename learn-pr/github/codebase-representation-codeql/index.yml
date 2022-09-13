@@ -5,7 +5,7 @@ metadata:
   description: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
   ms.date: 2/10/2022
   author: sterling463
-  ms.author: csterling 
+  ms.author: csterling
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 title: Identify security vulnerabilities in your codebase with CodeQL
