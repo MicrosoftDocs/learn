@@ -164,7 +164,7 @@ Once a user is authenticated and you are certain of their identity, you can add 
 
 ![Image showing role assignments for Azure Cosmos DB](../media/1-add-role-assignment.png)
 
-See [Role-based access control in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/role-based-access-control) for more information.
+See [Role-based access control in Azure Cosmos DB](/azure/cosmos-db/role-based-access-control) for more information.
 
 ### Encryption
 
