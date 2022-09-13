@@ -1,12 +1,12 @@
 You've created your storage account in Azure and configured the replication settings to enable RA-GRS. You're now ready to start designing the healthcare application to make use of the RA-GRS storage account. This approach helps to ensure that the application is highly available for doctors and consultants in the field, even if there's an outage in their primary region.
 
-In this unit, you look at how to design and configure an application that can handle disaster recovery and failover. You also explore the considerations that apply when you design applications for high availability.
+In this unit, you'll look at how to design and configure an application that can handle disaster recovery and failover. You'll also explore the considerations that apply when you design applications for high availability.
 
 ## How an account failover works
 
-When you configure a storage account GRS or RA-GRS, the client writes data to the primary endpoint or region. The data is then automatically replicated across to the secondary region, as shown in the following image:
+When you configure a storage account for GRS or RA-GRS, the client writes data to the primary endpoint or region. The data is then automatically replicated across to the secondary region, as shown in the following image:
 
-![The replication workflow.](../media/4-primary-secondary-replication.png)
+![Diagram of the replication workflow.](../media/4-primary-secondary-replication.png)
 
 If the primary region that hosts your geo-redundant storage becomes unavailable, you can fail over to the secondary region.
 
@@ -14,10 +14,10 @@ When failover occurs, the secondary region becomes your new primary region, and 
 
 A failure in the primary region is shown in the following image:
 
-![The replication failover process.](../media/4-primary-account-failover.png)
+![Diagram of the replication failover process.](../media/4-primary-account-failover.png)
 
 > [!IMPORTANT]
-> Failover is automatic and controlled by Microsoft. A manual failover of an Azure storage account isn't possible in a majority of the Azure regions. However, Microsoft has made a new feature available in WestUS2 and CentralUS regions, with which you can manually failover the storage account by using the following command:
+> Failover is automatic and controlled by Microsoft. A manual failover of an Azure storage account isn't possible in the majority of the Azure regions. However, Microsoft has made a new feature available in WestUS2 and CentralUS regions with which you can manually failover the storage account by using the following command:
 >
 > ```bash
 > az storage account failover --name "storageaccountname"
@@ -55,7 +55,7 @@ When you develop applications for the cloud, consider the guidelines in the next
 
 ### Retry transient failures
 
-Transient failures can be caused by a number of conditions from a disconnected database, temporary loss of network, or latency issues that cause slow response times from services. Applications must detect the faults and determine whether it's merely a blip in the service or a more severe outage. The application must have the capability to retry a service if it believes the fault is likely to be transient, before listing it as failed.
+A number of conditions can cause transient failures, from a disconnected database, temporary loss of network, or latency issues that cause slow response times from services. Applications must detect the faults and determine whether it's merely a blip in the service or a more severe outage. The application must have the capability to retry a service if it believes the fault is likely to be transient, before listing it as failed.
 
 ### Handle failed writes
 
@@ -64,12 +64,12 @@ RA-GRS replicates writes across locations. If the primary location fails, you ca
 - Temporarily return an error from all write operations until write capability is restored.
 - Buffer write operations, perhaps by using a queue, and enact them later when the write location becomes available.
 - Write updates to a different storage account in another location. Merge these changes into the storage account at the primary location when it becomes available.
-- Trigger the application to disable all write operations, and inform the user that the application is running in read-only mode. You can also use this mechanism if you need to upgrade the application and ensure that no-one is using the primary location while the upgrade is taking place.
+- Trigger the application to disable all write operations and inform the user that the application is running in read-only mode. You can also use this mechanism if you need to upgrade the application and ensure that no one is using the primary location while the upgrade is taking place.
 
 An application that uses the Azure Storage client library can set the *LocationMode* of a read request to one of the following values:
 
 - **PrimaryOnly**: The read request fails if the primary location is unavailable. This failure is the default behavior.
-- **PrimaryThenSecondary**: Try the primary location first, and then try the secondary location if the primary location is unavailable. Fail if the secondary location is also unavailable.
+- **PrimaryThenSecondary**: Try the primary location first, then try the secondary location if the primary location is unavailable. Fail if the secondary location is also unavailable.
 - **SecondaryOnly**: Try only the secondary location, and fail if it's not available.
 - **SecondaryThenPrimary**: Try the secondary location first, and then try the primary location.
 
@@ -79,15 +79,15 @@ Be prepared to handle stale data if it's read from a secondary region. As previo
 
 ### Use the Circuit Breaker pattern
 
-In distributed environments, communication between remote resources can fail because of slow network connections, resources timeouts, resources being offline, or a transmission problem corrupting data in transit. Most of the time, these issues are transient and resolve themselves. If the application retries the same operation, it often succeeds.
+In distributed environments, communication between remote resources can fail because of slow network connections, resource timeouts, resources being offline, or a transmission problem corrupting data in transit. Most of the time, these issues are transient and resolve themselves. If the application retries the same operation, it often succeeds.
 
 In some situations, when an outage is severe, it makes sense for the application to stop retrying the operation and instead start failover to a secondary site.
 
 To prevent an application from retrying operations that have failed, you can implement the Circuit Breaker pattern.
 
-The Circuit Breaker pattern forces the application to fail over to the secondary site, which allows the application to resume its normal service. At the same time, the circuit breaker continues to check on whether the resources on the primary site are back online. And when they do come online, it allows the application to reconnect to the primary site. The circuit breaker acts as a proxy. It monitors the service, and if there's a failure in the service, it prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
+The Circuit Breaker pattern forces the application to fail over to the secondary site, which allows the application to resume its normal service. At the same time, the circuit breaker continues to check whether the resources on the primary site are back online. When they do come online, it allows the application to reconnect to the primary site. The circuit breaker acts as a proxy. It monitors the service, and if there's a failure in the service, it prevents the application from retrying that endpoint and forces it to go to an alternative endpoint.
 
-The difference between the Circuit Breaker pattern and the Retry pattern is that the Retry pattern allows an application to keep retrying a connection to a resource, which might be offline. The Circuit Breaker pattern prevents this behavior and fails over the application to the secondary connection.
+The difference between the Circuit Breaker pattern and the Retry pattern is that the Retry pattern allows an application to keep retrying a connection to a resource that might be offline. The Circuit Breaker pattern prevents this behavior and fails over the application to the secondary connection.
 
 The purpose of implementing a Circuit Breaker pattern is to provide stability to your application while the system recovers from a failure.
 
@@ -95,4 +95,4 @@ Use the Circuit Breaker pattern to prevent an application from trying connection
 
 When you implement the Circuit Breaker pattern, set the *LocationMode* of read requests appropriately. Most of the time, you should set this mode to *PrimaryThenSecondary*. If the read from the primary location times out, the secondary location is used. However, this process can slow down an application if it's done repeatedly. After the circuit breaker has detected that the primary location is unavailable, it should switch the mode to *SecondaryOnly*. This action ensures that read operations don't wait for a timeout from the primary location before trying the secondary location. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the *PrimaryThenSecondary* mode.
 
-For more information, see [Circuit Breaker pattern](/azure/architecture/patterns/circuit-breaker).
+For more information, check out [Circuit Breaker pattern](/azure/architecture/patterns/circuit-breaker).
