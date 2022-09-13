@@ -64,19 +64,19 @@ We can then start to answer some of the questions Azure will have for a new virt
 
 ### VM name
 
-One piece of information people often don't put much thought into is the **name** of the VM. The VM name is used as the computer name, which is configured as part of the operating system. You can specify a name of up to 64 characters on a Linux VM and 15 characters on a Windows VM.
+The VM name is used as the computer name, which is configured as part of the operating system. You can specify a name of up to 64 characters on a Linux VM and 15 characters on a Windows VM.
 
 This name also defines a manageable **Azure resource**, and it's not trivial to change later. That means you should choose names that are meaningful and consistent, so you can easily identify what the VM does. A good convention is to include the following information in the name:
 
 | Element | Example | Notes |
 | --- | --- | --- |
 | Environment |dev, prod, QA |Identifies the environment for the resource |
-| Location |uw (US West), ue (US East) |Identifies the region into which the resource is deployed |
+| Location | `eus` for East US, `jw` for Japan West |Identifies the region into which the resource is deployed |
 | Instance |01, 02 |For resources that have more than one named instance (web servers, etc.) |
 | Product or Service |service |Identifies the product, application, or service that the resource supports |
 | Role |sql, web, messaging |Identifies the role of the associated resource |
 
-For example, `devusc-webvm01` might represent the first development web server hosted in the US South Central location.
+For example, `deveus-webvm01` might represent the first development web server hosted in the East US location.
 
 
 ### Decide the location for the VM
@@ -137,7 +137,7 @@ You're able to choose from two payment options for compute costs.
 
 ### Storage for the VM
 
-All Azure virtual machines will have at least two virtual hard disks (VHDs). The first disk stores the operating system, and the second is used as temporary storage. You should can add additional data disks to store application data. Separating out the data to different disks allows you to manage the disks independently. The maximum number of data disks you can attach to your VM is determined by the VM size (typically two per vCPU).
+All Azure virtual machines will have at least two virtual hard disks (VHDs). The first disk stores the operating system, and the second is used as temporary storage. You should add additional data disks to store application data. Separating out the data to different disks allows you to manage the disks independently. The maximum number of data disks you can attach to your VM is determined by the VM size (typically two per vCPU).
 
 There are five disk types, each intended to address a specific customer scenario:
 
