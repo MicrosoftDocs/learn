@@ -130,7 +130,7 @@ To complete the component that sends messages about sales performance, complete 
 1. To run the component that sends a message about a sale, run the following command in Cloud Shell:
 
     ```bash
-    dotnet run -p performancemessagesender
+    dotnet run --project performancemessagesender
     ```
 
 1. As the program executes, watch for notifications in Cloud Shell that indicate that a message is being sent. Each time you run the app, another message is added to the topic, and a copy becomes available for each subscription.
@@ -338,7 +338,7 @@ To create the component that retrieves messages about sales performance, complet
 1. To run the component that retrieves a message about sales performance for a subscription, run the following command:
 
     ```bash
-    dotnet run -p performancemessagereceiver
+    dotnet run --project performancemessagereceiver
     ```
 
     You'll see output similar to the following example:
