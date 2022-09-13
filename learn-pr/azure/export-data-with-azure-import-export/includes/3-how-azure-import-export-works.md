@@ -14,7 +14,7 @@ You must have the following items to support the export process:
 - A system running a supported version of Windows
 - BitLocker enabled on the Windows system
 - WAImportExport version 1 downloaded and installed from the Microsoft Download Center
-- An active account with a shipping carrier like FedEX or DHL for shipping drives to an Azure datacenter
+- An active account with a shipping carrier like FedEx or DHL for shipping drives to an Azure datacenter
 - A set of disks that you can send to an Azure datacenter on which to copy the data from Azure Storage
 
 The following diagram summarizes the export process:
@@ -57,7 +57,7 @@ Before you import data to Azure Storage, you must have the following items:
 - A system running a supported version of Windows.
 - BitLocker enabled on the Windows system.
 - The correct version of the WAImportExport tool. Install version 1 to import data to Azure Blob storage or version 2 to import to Azure Files. Download this tool from the Microsoft Download Center.
-- An active shipping carrier account like FedEX or DHL for shipping drives to an Azure datacenter.
+- An active shipping carrier account like FedEx or DHL for shipping drives to an Azure datacenter.
   
 The following diagram summarizes the steps involved to import data:
 
