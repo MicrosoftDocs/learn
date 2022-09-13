@@ -78,10 +78,10 @@ To help your colleagues in sales, marketing, and engineering, your finance team 
 - Investments for new marketing campaigns that generate customer leads from the commercial marketplace and promote awareness of your offers
 - Funding to help your engineering team integrate your solution with the commercial marketplace so customers can purchase your software and services through Microsoft
 
-When you publish a transact offer to the commercial marketplace, invoicing, collections, and [tax activities](/partner-center/tax-details-marketplace?context=%2fazure%2fmarketplace%2fcontext%2fcontext) in many countries are all processed by Microsoft. This will lead to a different cost of sales for your marketplace products, and changes to product finance and accounting processes. Your finance & operations departments should plan accordingly, starting with the following activities:
+When you publish a transact offer to the commercial marketplace, invoicing, collections, and [tax activities](/partner-center/tax-details-marketplace?context=/azure/marketplace/context/context) in many countries are all processed by Microsoft. This will lead to a different cost of sales for your marketplace products, and changes to product finance and accounting processes. Your finance & operations departments should plan accordingly, starting with the following activities:
 
 - Planning for commercial marketplace service fees charged when you sell your product through Microsoft
-- Reviewing the [billing and payout](/partner-center/payment-thresholds-methods-timeframes?context=%2fazure%2fmarketplace%2fcontext%2fcontext) processes to modify existing finance and accounting practices
+- Reviewing the [billing and payout](/partner-center/payment-thresholds-methods-timeframes?context=/azure/marketplace/context/context) processes to modify existing finance and accounting practices
 - Incorporating [commercial marketplace analytics](/azure/marketplace/partner-center-portal/analytics) and offer data into financial reports and analyses
 - Evaluating changes in your company's operational costs as you process sales through the commercial marketplace
 
