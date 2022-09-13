@@ -53,10 +53,10 @@ You're now ready to join session four! :-)
 
 ## Resources
 
-- Overview of features of Azure Storage Account settings: [docs.microsoft.com/de-de/azure/storage/common/storage-introduction#types-of-storage-accounts](/azure/storage/common/storage-introduction#types-of-storage-accounts)
-- Storage Redundancy reference: [docs.microsoft.com/de-de/azure/storage/common/storage-redundancy](/azure/storage/common/storage-redundancy)
-- Azure Storage Explorer: [azure.microsoft.com/features/storage-explorer/](https://azure.microsoft.com/features/storage-explorer/)
-- Windows.Azure.Storage.Blob NuGet: [www.nuget.org/packages/Microsoft.Azure.Storage.Blob/](https://www.nuget.org/packages/Microsoft.Azure.Storage.Blob/)
+- [Overview of features of Azure Storage Account settings](/azure/storage/common/storage-introduction#types-of-storage-accounts)
+- [Storage Redundancy reference](/azure/storage/common/storage-redundancy)
+- [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/)
+- [Windows.Azure.Storage.Blob NuGet](https://www.nuget.org/packages/Microsoft.Azure.Storage.Blob/)
 - Learn module: [Store Application Data with Azure Blob storage](/learn/modules/store-app-data-with-azure-blob-storage/)
 - Learn module: [Organize Azure Storage blobs with properties and metadata](/learn/modules/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code)
 - Learn module: [Optimize storage performance and costs using Blob storage tiers](/learn/modules/optimize-archive-costs-blob-storage/)
