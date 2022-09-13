@@ -1,21 +1,16 @@
 You'll be adding your own enhancements to an existing architecture that meets an organization's high reliability requirements. Here, we'll discuss the things you'll need to get started.
 
-## Project specification
+## Problem context
 
-Contoso Shoes wants to be ready for the next launch, which is expected to create an increase in traffic load. In the last six months, there have been several incidents causing the website to be offline for half a day. The system wasn't tested properly in the Dev/Test environment and some bugs crept into production. Troubleshooting took a long time because the operators weren't able to identify the root cause quickly. In a recent incident, West Europe experienced a regional outage. Because the workload was only  running in that region, they had to bear financial loss until the region was back up. 
+Contoso Shoes wants to be ready for the next launch, which is expected to create an increase in traffic load. In the last six months, there have been several incidents causing the website to be offline for half a day. The system wasn't tested properly in the Dev/Test environment and some bugs crept into production. Troubleshooting took a long time because the operators weren't able to identify the root cause quickly. 
 
-The company wants to add capabilities to their solution architecture and make it highly reliable. Here are the business requirements:
-
-- Extend the architecture to multiple regions.
-- Improve the customer experience by serving clients faster in a region geographically closer to them. 
-- Upgrade the Azure services so that they're aligned with the Azure roadmap. 
-- Build an overall health model to make sure issues are caught early in the development cycle. 
+There have some challenges when certain components aren't available. The scale out operations on compute were impacted when Azure Key Vault wasn't available. Also, there aren't any strategies in place for regional outages. In a recent incident, the entire West Europe region went down. Because the workload was only running in that region, they had to bear financial loss until the region was back up. 
 
 ## Current architecture
 
 For you to complete this challenge, you need to have a good understanding of the current architecture. 
 
-![Basic web app](../media/basic-architecture.png)
+![This image shows the basic architecture for a web application](../media/basic-architecture.png)
 
 ### Components
 
@@ -41,24 +36,29 @@ All components of this architecture are deployed to a single region.
 
 ### Design choices
 
-System-managed identities are used between the App Service, App Service code and Key Vault, Container Registry, and Cosmos DB.
+In the list of components, the _deployment stamp_ consists of services that participate in processing of a request. Those services include **App Services and the API code**, **Key Vault**, **Container Registry**, and **Cosmos DB**. The application also has a third-party dependency on a performance and resilience framework. System-managed identities are used between components of stamp. 
 
-TODO: need to add details
+In the stamp, App Services is configured to automatically scale based on load. 
+
+Separate environments are used for Production and Dev/Test. The Production enviroment uses App Service plan Standard SKU. This choice was made to have the capability of prewarming the application to a deployment slot before deploying it to production. In the Dev/Test environment, the SKU is lowered to Basic for cost optimization. Both enviroments have their own instances of services. Only **Container Registry** is shared between the enviroments.
+
+TODO: 
+- Talk about scaling in the slot. (TBD)
 
 ## Tradeoffs
 
-However, as with everything, there are trade-offs with the current architecture. Business requirements prioritized cost optimization over reliability and operations. To keep within the cost limits, the architecture hasn't evolved. The components fall short in taking advantage of the reliability capabilities offered by the platform. For example, the choice of SKU for compute prevents the workload from using Availability Zones. For telemetry, an older version of Application Insights is used that isn't integrated with Log Analytics. 
+However, as with everything, there are trade-offs with the current architecture. Business requirements prioritized cost optimization over reliability and operations. To keep within the cost limits, the architecture hasn't evolved. The components fall short when taking advantage of the reliability capabilities offered by the platform. For example, the choice of SKU for compute prevents the workload from using Availability Zones. For telemetry, an older version of Application Insights is used that isn't integrated with Log Analytics. 
 
-Also, access to the workload is overly pervasive. For example, without any virtual network integration, all Azure services can be directly reached over the public internet. 
+Also, access to the workload is overly pervasive. For example, without any virtual network integration, all Azure services can be directly reached over the public internet.
 
-## Design improvements
+## Project specification
 
-In an ideal architecture, you would build the most highly available and efficient environment possible. 
+The company wants to add capabilities to their solution architecture and make it highly reliable. Here are the business requirements:
 
-- Multi region - active-active
-- Scale unit architecture
-- Health model
-- Deployment and testing. Prewarming allows the application to be deployed to a slot instead of directly to production. TBD.
+- Extend the architecture to multiple regions.
+- Improve the customer experience by serving clients faster in a region geographically closer to them. 
+- Upgrade the Azure services so that they're aligned with the Azure roadmap. 
+- Build an overall health model to make sure issues are caught early in the development cycle.
 
 ## Setup
 - Familiarize yourself with Azure Well-Architected Framework guidance for [**mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview).

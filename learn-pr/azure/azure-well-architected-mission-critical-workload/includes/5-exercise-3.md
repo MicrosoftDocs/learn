@@ -41,7 +41,7 @@ For each component, collect metrics and metric thresholds and decide the value a
 
 - Solution metrics​​&mdash;Solution level data points, such as end-to-end processing time of a request.
 
-Here's an example of service metrics for Azure Event Hubs.
+Here's an example. (TBD) Note:replace with app service
 
 |Azure Event Hubs|Health status|
 |---|---|
@@ -53,7 +53,7 @@ Here's an example of service metrics for Azure Event Hubs.
 
 For each user and system flow, define an overall status. You'll need to aggregate the health status of individual components that participate in that flow. 
 
-Suppose a system flow is composed of an application component, Azure Event Hubs, a Storage account. 
+Suppose a system flow is composed of an application component and App Services. (TBD) Note:replace with app service
 
 |API|Azure Event Hubs|Azure Storage|Health status|
 |---|---|---|---|
@@ -77,7 +77,7 @@ You'll need a unified data sink, in each region, which collects logs and metrics
 - **Azure Monitor** collects data sent by Application insights and platform metrics for the Azure services. 
 - **Azure Log Analytics** is used as the central store for logs and metrics from all application and infrastructure components. 
 
-> Check your progress: [Monitoring](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#monitoring)
+> **Check your progress: [Unified data sink for correlated analysis](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis)**
 
 ### 5&ndash;Set up queries for monitoring data
 

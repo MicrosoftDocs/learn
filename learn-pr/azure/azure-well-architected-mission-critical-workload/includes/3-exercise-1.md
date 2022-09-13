@@ -8,19 +8,12 @@ However, the approach isn't proactive. Azure App Service and the external monito
 
 ## Specification
 
-Design health checks against the critical components like the database. Use requests that mimic real application behavior while not putting too much load on the services just from the health probes
-
-To test also write requests, you need to design a way to filter out/remove the test data in an efficient way so that it does not get mixed up with real user data.
-
 Build the dedicated health service as an extension to the already-deployed code.
 
-- Introduce a health check API in your application. The API must check the health status of the application and its dependencies and return an indication of the status. For example, the API periodically should check the health of functional services that process a request:
-
-    - Checks read and write operations to Azure Cosmos DB. Implement those functions as separate probes so that reads and writes are checked independently.
-    - Sends a message to Azure Event Hubs.
-    
-    > [!NOTE] 
-    > Extend the health check to non functional services, such as Azure Key Vault and Azure Container Registry. This step is important because if those services experience an outage, you might notice an impact in the ability to scale out or withstand an App Service instance restart.
+- Introduce a health check API in your application. The API must check the health status of the application and its dependencies and return an indication of the status. For example, the API periodically should check read and write operations to Azure Cosmos DB. Implement those functions as separate probes so that reads and writes are checked independently.
+   
+> [!NOTE] 
+> Extend the health check to non functional services, such as Azure Key Vault and Azure Container Registry. This step is important because if those services experience an outage, you might notice an impact in the ability to scale out or withstand an App Service instance restart.
 
 - The health check API endpoint must be called twice a minute, by multiple sources, and shouldn't degrade the performance of the API. For example, the Azure App Service plan must send requests to an endpoint and make informed decisions about which App Service instances to distribute traffic to. 
 
@@ -28,34 +21,23 @@ Build the dedicated health service as an extension to the already-deployed code.
 
 - Make health check data available in Azure Monitor for future analysis.
 
+
 ## Recommended approach
 To get started on your design, we recommend these configurations settings.
 
 ### 1&ndash;Health checks
 
-All queries sent by the health check API must be performed asynchronously and in parallel.
+All queries sent by the health check API must be performed asynchronously and in parallel. Design health checks against the critical components like the database. The API should periodically check read and write operations. Implement those functions as separate probes so that reads and writes are checked independently.
 
-Send a new message to Azure Event Hubs. If it was sent successfully, report the service `Healthy`. Set an identifying property on the message to tell Event Hubs to ignore the processing of the message. Make sure that Event Hubs processing code checks for that property.
-
-Query Azure Cosmos DB to verify that the connection can be established and the query could be performed. Your query can be as simple as:
-
-```
-SELECT GetCurrentDateTime ()
-```
-
-Attempt to write a test document to the database. Set a short `Time-to-Live` value so that Cosmos DB can automatically remove it.
-
-> Check your progress: [Implementation](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#implementation)
+Use requests that mimic real application behavior without putting too much load on the services just from the health probes. To test also write requests, you need to design a way to remove test data efficiently so that it does not get mixed up with real user data.
 
 ### 2&ndash;Caching pattern
 
-In order to not overload the downstream services with health checks, the health check API should cache results for a configurable number of seconds. Think of possible ways to achieve this.
-
-Cache the check results in memory. You can use the standard, non-distributed ASP.NET Core `MemoryCache`. Control cache expiration by setting `HealthServiceCacheDurationSeconds` to 10 seconds.
+To avoid overloading the downstream services with health checks, the health check API should cache results for a configurable number of seconds. Think of possible ways to achieve this.
 
 ## Check your work
 
-Read the [**Application Health Service**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#application-health-service) article for the implementation details. Did you cover all aspects in your design?
+Here's an example [**Application Health Service**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#application-health-service). Did you cover all aspects in your design?
 
 - Is the health check endpoint compatible with Azure App service’s Health check feature?
 - Did you include checks for runtime dependencies? What did you use as a proxy/test? 
