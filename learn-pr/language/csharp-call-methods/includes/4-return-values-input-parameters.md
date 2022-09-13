@@ -108,7 +108,7 @@ The second overloaded version of the method `2/3` informs that the `Next()` meth
 
 What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name. However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
 
-### Use docs.microsoft.com for information about overloaded methods
+### Use Microsoft Docs for information about overloaded methods
 
 The second way to learn about overloaded versions of the methods is to consult the method's documentation. The documentation will also help in understand exactly what each input parameter is intended for.
 
@@ -138,7 +138,7 @@ In the *Parameters* section, we learn that the `maxValue` input parameter is the
 
 We can also learn in the next line: "`maxValue` must be greater than or equal to 0." What happens if we ignore this statement? We can find in the *Exceptions* section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
 
-Like we described earlier, docs.microsoft.com is the source of truth for the .NET Class Library. It's important to take the time to read the documentation to understand how a given method will work.
+Like we described earlier, Microsoft Docs is the source of truth for the .NET Class Library. It's important to take the time to read the documentation to understand how a given method will work.
 
 ## Recap
 
@@ -146,4 +146,4 @@ Like we described earlier, docs.microsoft.com is the source of truth for the .NE
 - Methods may return a value when they complete their task, or they may return nothing (void).
 - Overloaded methods support several implementations of the method, each with a unique method signature (the number of input parameters and the data type of each input parameter).
 - Intellisense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their input parameters.
-- docs.microsoft.com is the "source of truth" when you want to learn how methods in the .NET Class Library work.
+- Microsoft Docs is the "source of truth" when you want to learn how methods in the .NET Class Library work.

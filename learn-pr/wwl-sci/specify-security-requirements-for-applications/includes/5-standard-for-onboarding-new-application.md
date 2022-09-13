@@ -52,25 +52,23 @@ component types:
     many forms with significant variations on who is responsible for
     security:
 
-## Onboarding New Applications
+## Onboarding new applications
 
 An Azure Active Directory (Azure AD) application registration is a
 critical part of your business application. Any misconfiguration or
 lapse in the hygiene of your application can result in downtime or
 compromise.
 
-This article describes security best practices for the following
-application registration properties.
+This article describes security best practices for the following application registration properties.
 
-| Redirect URI                            | It's important to keep Redirect URIs of your application up to date. A lapse in the ownership of one of the redirect URIs can lead to an application compromise. Ensure that all DNS records are updated and monitored periodically for changes. Along with maintaining ownership of all URIs, don't use wildcard reply URLs or insecure URI schemes such as http or URN.                                                                                                                                                     |
-|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Implicit grant flow for an access token | Scenarios that require implicit flow can now use Auth code flow to reduce the risk of compromise associated with implicit grant flow misuse. If you configured your application registration to get Access tokens using implicit flow but don't actively use it, we recommend you turn off the setting to protect it from misuse.                                                                                                                                                                                             |
-| Credential                              | Credentials are a vital part of an application registration when your application is used as a confidential client. If your app registration is used only as a Public Client App (which allows users to sign in using a public endpoint), ensure that you don't have any credentials on your application object.                                                                                                                                                                                                              |
-| AppId URI                               | Certain applications can expose resources (via WebAPI) and, as such, need to define an AppId URI that uniquely identifies the resource in a tenant. We recommend using either of the following URI schemes: API or HTTPS, and set the AppId URI in the following formats to avoid URI collisions in your organization. The AppId URI acts as the prefix for the scopes referenced in the API's code, and it must use a verified customer owned domain. For multi-tenant applications, the value must also be globally unique. |
-| Application ownership                   | Ensure app ownership is kept to a minimal set of people within the organization. It's recommended to run through the owner's list once every few months to ensure owners are still part of the organization and their charter accounts for ownership of the application registration.                                                                                                                                                                                                                                         |
-| Checklist | App developers can use the Checklist available in the Azure portal to ensure their app registration meets a high quality bar and provides guidance to integrate securely. The integration assistant highlights best practices and recommendations that help avoid common oversights when integrating with the Microsoft identity platform.                                                                                                                                                                                    |
+* Redirect URI - It's important to keep Redirect URIs of your application up to date. A lapse in the ownership of one of the redirect URIs can lead to an application compromise. Ensure that all DNS records are updated and monitored periodically for changes. Along with maintaining ownership of all URIs, don't use wildcard reply URLs or insecure URI schemes such as http or URN.
+* Implicit grant flow for an access token - Scenarios that require implicit flow can now use Auth code flow to reduce the risk of compromise associated with implicit grant flow misuse. If you configured your application registration to get Access tokens using implicit flow but don't actively use it, we recommend you turn off the setting to protect it from misuse.
+* Credential - Credentials are a vital part of an application registration when your application is used as a confidential client. If your app registration is used only as a Public Client App (which allows users to sign in using a public endpoint), ensure that you don't have any credentials on your application
+* AppId URI - Certain applications can expose resources (via WebAPI) and, as such, need to define an AppId URI that uniquely identifies the resource in a tenant. We recommend using either of the following URI schemes: API or HTTPS, and set the AppId URI in the following formats to avoid URI collisions in your organization. The AppId URI acts as the prefix for the scopes referenced in the API's code, and it must use a verified customer owned domain. For multi-tenant applications, the value must also be globally unique.
+* Application ownership - Ensure app ownership is kept to a minimal set of people within the organization. It's recommended to run through the owner's list once every few months to ensure owners are still part of the organization and their charter accounts for ownership of the application registration.
+* Checklist - App developers can use the Checklist available in the Azure portal to ensure their app registration meets a high quality bar and provides guidance to integrate securely. The integration assistant highlights best practices and recommendations that help avoid common oversights when integrating with the Microsoft identity platform.
 
-## Security Standards for Onboarding applications
+## Security standards for onboarding applications
 
 Organizations should use guidance and automation for securing
 applications in the cloud rather than starting from zero.
@@ -128,14 +126,3 @@ security impact:
     applications can create security Risks. Azure App Configuration
     provides a service to centrally manage application settings and
     feature flags, which helps mitigate this risk.
-
-## Additional information
-
-For additional information on Security Standards for applications, see the following:
-
--   [**Best Practices for Application Registration**](/azure/active-directory/develop/security-best-practices-for-app-registration)
--   [**Threat Modeling**](/azure/security/develop/threat-modeling-tool)
--   [**OWASP ASVS**](https://owasp.org/www-project-application-security-verification-standard/)
--   [**STRIDE**](/azure/security/develop/threat-modeling-tool-threats)
--   [**NIST SSDF**](https://csrc.nist.gov/publications/detail/sp/800-218/final)
--   [**Microsoft Secure DevOps using Azure**](https://azsk.azurewebsites.net/)
