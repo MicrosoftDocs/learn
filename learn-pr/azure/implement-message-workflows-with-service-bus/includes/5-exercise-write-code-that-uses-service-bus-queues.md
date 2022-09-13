@@ -187,7 +187,7 @@ You can get these values from the connection string.
     ```
 
 1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-
+2. Select the project file **privatemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
 
 ## Send a message to the queue
@@ -196,7 +196,7 @@ You can get these values from the connection string.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
-    dotnet run -p ./privatemessagesender
+    dotnet run --project ./privatemessagesender
     ```
 
     > [!NOTE]
@@ -419,7 +419,7 @@ You can get these values from the connection string.
     ```
 
 1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-
+2. Select the project file **privatemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
 
 ## Receive a message from the queue
