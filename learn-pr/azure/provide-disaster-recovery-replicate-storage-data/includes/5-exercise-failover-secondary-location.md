@@ -41,7 +41,7 @@ When failover is complete, your geo-replication map shows only one region. This 
 
 1. On the geo-replication page, in the **Replication** drop-down, select **Geo-redundant storage (GRS)**.
 
-    :::image type="content" source="../media/5-change-replication-type.png" alt-text="Screenshot of the geo-replication page page, where you can change the replication from LRS to GRS.":::
+    :::image type="content" source="../media/5-change-replication-type.png" alt-text="Screenshot of the geo-replication page, where you can change the replication from LRS to GRS.":::
 
 1. At the top of the form, select **Save**.
 
