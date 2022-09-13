@@ -129,12 +129,27 @@ A full sample CSV will be provided in the steps below.
 
 1. To add a term to a data asset, open the data catalog and search or browse for your asset.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-asset-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-asset.png":::
+
 1. Select your asset and select **Edit**
+
+    :::image type="content" source="../media/business-glossary-exercise/select-edit-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-edit.png":::
+
+    >[!TIP]
+    >You can also add a glossary term to multiple assets using bulk editing, like we discussed in the last section.
 
 1. You can add your term to an entire data asset by selecting it under **Glossary terms** on the **Overview** page.
 
+    :::image type="content" source="../media/business-glossary-exercise/add-glossary-term-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/add-glossary-term.png":::
+
 1. You can also add your term to a specific column in the data asset under **Glossary terms** for that column on the **Schema** page.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-schema-glossary-term-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-schema-glossary-term.png":::
 
 1. Select **Save** to save your changes.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-save-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-save.png":::
+
 1. Now you can see your term listed on the asset description.
+
+    :::image type="content" source="../media/business-glossary-exercise/see-added-glossary-term-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/see-added-glossary-term.png":::
