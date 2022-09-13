@@ -20,51 +20,11 @@ AssignableScopes: {/}
 
 The Actions and NotActions properties can be tailored to grant and deny the exact permissions you need. This table defines the Owner, Contributor, and Reader roles.
 
-:::row:::
-  :::column:::
-    **Built-in Role**
-  :::column-end:::
-  :::column:::
-    **Action**
-  :::column-end:::
-  :::column:::
-    **NotActions**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Owner (allow all actions)
-  :::column-end:::
-  :::column:::
-    \*
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Contributor (allow all actions except writing or deleting role assignment)
-  :::column-end:::
-  :::column:::
-    \*
-  :::column-end:::
-  :::column:::
-    Microsoft.Authorization/\*/Delete, ‎Microsoft.Authorization/\*/Write, Microsoft.Authorization/elevateAccess/Action‎
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Reader (allow all read actions)
-  :::column-end:::
-  :::column:::
-    \*/read
-  :::column-end:::
-  :::column:::
-    
-  :::column-end:::
-:::row-end:::
-
+| Built-in Role | Action | NotActions |
+| --- | --- | --- |
+| Owner (allow all actions) | \* | n/a |
+| Contributor (allow all actions except writing or deleting role assignment) | \* | - Microsoft.Authorization/\*/Delete <br> - Microsoft.Authorization/\*/Write <br> - Microsoft.Authorization/elevateAccess/Action |
+| Reader (allow all read actions) | \*/read | n/a |
 
 ## Scope your role
 
@@ -84,7 +44,7 @@ The AssignableScopes property of the role specifies the role scope. The scope ca
 Make a role available for assignment in two subscriptions.
 
 ```
-“/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e”, “/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624”
+"/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e", "/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624"
 
 ```
 
@@ -93,6 +53,6 @@ Make a role available for assignment in two subscriptions.
 Makes a role available for assignment only in the Network resource group.
 
 ```
-“/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network”
+"/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network"
 
 ```

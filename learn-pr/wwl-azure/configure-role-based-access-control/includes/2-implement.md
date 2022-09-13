@@ -6,17 +6,17 @@ Azure RBAC is an authorization system built on Azure Resource Manager that provi
 
 Here are some examples of what you can do with Azure RBAC:
 
- -  Allow an application to access all resources in a resource group
- -  Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
- -  Allow a DBA group to manage SQL databases in a subscription
- -  Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets
+- Allow an application to access all resources in a resource group
+- Allow one user to manage virtual machines in a subscription and another user to manage virtual networks
+- Allow a DBA group to manage SQL databases in a subscription
+- Allow a user to manage all resources in a resource group, such as virtual machines, websites, and subnets
 
 ## Concepts
 
- -  **Security principal**. Object that represents something that is requesting access to resources. Examples: user, group, service principal, managed identity.
- -  **Role definition**. Collection of permissions that lists the operations that can be performed. Examples: Reader, Contributor, Owner, User Access Administrator.
- -  **Scope**. Boundary for the level of access that is requested. Examples: management group, subscription, resource group, resource.
- -  **Assignment**. Attaching a role definition to a security principal at a particular scope. Users can grant access described in a role definition by creating an assignment. Deny assignments are currently read-only and can only be set by Azure.
+- **Security principal**. Object that represents something that is requesting access to resources. Examples: user, group, service principal, managed identity.
+- **Role definition**. Collection of permissions that lists the operations that can be performed. Examples: Reader, Contributor, Owner, User Access Administrator.
+- **Scope**. Boundary for the level of access that is requested. Examples: management group, subscription, resource group, resource.
+- **Assignment**. Attaching a role definition to a security principal at a particular scope. Users can grant access described in a role definition by creating an assignment. Deny assignments are currently read-only and can only be set by Azure.
 
 ## Considerations
 

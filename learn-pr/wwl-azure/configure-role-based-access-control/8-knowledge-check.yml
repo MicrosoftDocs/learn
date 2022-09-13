@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/19/2022
+  ms.date: 09/13/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,37 +16,40 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
+
   questions:
-  - content: "There are three virtual machines (VM1, VM2, and VM3) in a resource group. The Helpdesk hires a new employee. The new employee must be able to modify the settings on VM3. The employee must not be able to make changes on VM1 and VM2. Which of following meets the requirements and minimizes administrative overhead?"
+  - content: "You have three virtual machines (VM1, VM2, VM3) in a resource group. A new admin is hired, and they to be able to modify settings on VM3. They shouldn't be able to make changes to VM1 or VM2. How can you implement RBAC to minimize administrative overhead?"
     choices:
-    - content: "Assign the user to the Contributor role on the resource group."
+    - content: "Assign the admin to the Contributor role on the resource group."
       isCorrect: false
-      explanation: "Incorrect. This will give the new employee the ability to modify all of the virtual machines in the resource group."
-    - content: "Assign the user to the Contributor role on VM3."
+      explanation: "Incorrect. By assigning the Contributor role to the resource group, the admin can modify all VMs in the resource group."
+    - content: "Assign the admin to the Contributor role on VM3."
       isCorrect: true
-      explanation: "Correct. The Contributor role will allow the user to change the settings on VM3."
-    - content: "Move VM3 to a new resource group and assign the user to the Owner role on VM3."
+      explanation: "Correct. When you assign the Contributor role to the specific resource, the admin can change the settings on that resource; in this case, VM3."
+    - content: "Move VM3 to a new resource group, and then assign the admin to the Owner role on VM3."
       isCorrect: false
-      explanation: "Incorrect. The Owner role will give more permissions that what is needed."
-  - content: "What's the main difference between Azure roles and Azure Active Directory roles?"
+      explanation: "Incorrect. The Owner role gives the admin more permissions than they need. It's best to give only the permissions required."
+
+  - content: "Explain the main differences between Azure roles and Azure Active Directory (Azure AD) roles."
     choices:
     - content: "Azure roles apply to Azure resources. Azure AD roles apply to Azure AD resources such as users, groups, and domains."
       isCorrect: true
-      explanation: "Correct. Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords."
+      explanation: "Correct. Azure roles are used to manage access to VMs, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources like user accounts and passwords."
     - content: "Azure roles can be assigned at the root level."
       isCorrect: false
       explanation: "Incorrect. Azure roles can only be assigned at the management groups, subscriptions, resource groups, or resources scope."
     - content: "Azure AD roles are used to manage access to Azure resources."
       isCorrect: false
-      explanation: "Incorrect. Azure roles are used to view and manage Azure resources. Azure roles are used to manage access to virtual machines, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources such as user accounts and passwords."
-  - content: "What is included in a custom Azure role definition?"
+      explanation: "Incorrect. Azure roles are used to view and manage Azure resources. Azure roles are used to manage access to VMs, storage, and other Azure resources. Azure AD roles are used to manage access to Azure AD resources like user accounts and passwords."
+  
+  - content: "What's included in a custom Azure role definition?"
     choices:
-    - content: "Operations allowed for Azure resources and the scope of permissions"
-      isCorrect: true
-      explanation: "Correct. A custom role definition includes the operations allowed such as read, write, and delete for Azure resources and the scope of those permissions."
-    - content: "The assignment of a custom role"
+    - content: "Assignment of a custom role"
       isCorrect: false
-      explanation: "Incorrect. Role assignment isn't part of the custom role assignment."
+      explanation: "Incorrect. Role assignment isn't part of a custom role definition."
     - content: "Actions and DataActions operations scoped to the tenant level"
       isCorrect: false
-      explanation: "Incorrect. The scopes that can apply to an Azure resource are subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
+      explanation: "Incorrect. Scopes that can apply to an Azure resource are subscription, resource group, and individual resource. Azure AD roles are at the tenant scope."
+    - content: "Operations allowed for Azure resources, and scope of permissions"
+      isCorrect: true
+      explanation: "Correct. A custom role definition includes the allowed operations, such as read, write, and delete for Azure resources. The custom role definition also includes the scope of these permissions."
