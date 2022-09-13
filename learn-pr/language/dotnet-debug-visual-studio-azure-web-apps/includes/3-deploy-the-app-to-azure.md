@@ -12,9 +12,12 @@ You can create the sample app for this module using Visual Studio. The sample ap
 
 3) On the **Configure your new project** dialog, name the project **GitHubBrowser**, leave the rest of the settings at their defaults, and then choose **Next**.
 
-4) On the **Additional information** step, make sure .NET 6.0 is selected, and then select **Create**.
+> [!IMPORTANT]
+> Make sure to name your project **GitHubBrowser** for the code snippets below to work with matching namespaces. If you name your project something else, you'll need to update the namespace in the code snippets.
 
-5) After Visual Studio creates the project, expander the `Pages` folder in the solution explorer and open the `Index.cshtml` file. Replace the contents of `Index.cshtml` with the following code:
+4) On the **Additional information** step, choose .NET 6.0 and then select **Create**. This exercise can also work with earlier versions of .NET, such as .NET 5.0 or .NET Core 3.1.
+
+5) After Visual Studio creates the project, expand the `Pages` folder in the solution explorer and open the `Index.cshtml` file. Replace the contents of `Index.cshtml` with the following code:
 
     ```razor
     @page
@@ -49,7 +52,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
     </table>
     ```
 
-    This Razor code provides a basic search form to browser for GitHub organizations and displays the results in a table.
+    This Razor code provides a basic search form to browse for GitHub organizations and displays the results in a table.
 
 6) In the solution explorer, expand the arrow next to `Index.cshtml` to reveal the `Index.cshtml.cs` file. Double click the `Index.cshtml.cs` file to open it, and replace its contents with the following code:
 
@@ -84,21 +87,19 @@ You can create the sample app for this module using Visual Studio. The sample ap
             public async Task<IActionResult> OnPost()
             {
                 var client = new HttpClient();
-    
-                var githubUrl = $"{_env["GitHubUrl"]}/orgs/{SearchTerm}/repos";
-    
-                var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, githubUrl)
+
+                var githubUrl = _env["GitHubUrl"];
+                var searchUrl = $"{githubUrl}/orgs/{SearchTerm}/repos";
+                var httpRequestMessage = new HttpRequestMessage(HttpMethod.Get, searchUrl)
                 {
                     Headers =
                     {
                         { HeaderNames.UserAgent, "dotnet" }
                     }
                 };
-    
+
                 var httpResponseMessage = await client.SendAsync(httpRequestMessage);
-    
                 var content = await httpResponseMessage.Content.ReadAsStringAsync();
-    
                 Repos = JsonSerializer.Deserialize<IEnumerable<GitRepo>>(content);
     
                 return Page();
@@ -121,7 +122,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
     
     The preceding code contains two important methods:
     * The **OnGet** method handles initially loading the search page.
-    * The **OnPost** method handles the form submission. The method pulls the GitHub API URL from the `appsettings.Development.json` file using the configuration service and makes an HTTP request with the submitted search term as a parameter. The items returned from the API are then rendered using a foreach loop and a table in the `Index.cshtml` file.
+    * The **OnPost** method handles the form submission. The method pulls the GitHub API URL from the `appsettings.Development.json` file using the configuration service and makes an HTTP request with the submitted search term as a parameter. The items returned from the API are then assigned to a property and rendered using a table in the `Index.cshtml` file.
 
 7) In the Visual Studio Solution Explorer, expand the arrow next to the `appsettings.json` file. Open the `appsettings.Development.json` file and replace its contents with the following code:
 
@@ -138,7 +139,7 @@ You can create the sample app for this module using Visual Studio. The sample ap
     }
     ```
 
-    This file provides some basic configuration values for the app, including the URL of the GitHub API that is used to retrieve an organization's repositories.
+    This file provides some essential configuration values for the app, including the URL of the GitHub API that is used to retrieve an organization's repositories.
 
 8) Test the app locally by pressing the run button at the top of Visual Studio. The app should load in the browser and present a form to use for search queries. For example, search *dotnet* to browse repos for that GitHub organization to get an idea of what the results should look like.
 
