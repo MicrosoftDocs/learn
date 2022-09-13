@@ -129,4 +129,4 @@ The architecture consists of the following workflow:
 - **On-premises Windows and Linux systems**. Systems with the Log Analytics Agent installed.
 - **Azure Windows and Linux VMs**. Systems on which the Microsoft Defender for Cloud monitoring agent is installed.
 
-For full details on this reference architecture, see [Monitor hybrid security using Microsoft Defender for Cloud and Microsoft Sentinel](https://docs.microsoft.com/azure/architecture/hybrid/hybrid-security-monitoring)
+For full details on this reference architecture, see [Monitor hybrid security using Microsoft Defender for Cloud and Microsoft Sentinel](/azure/architecture/hybrid/hybrid-security-monitoring)

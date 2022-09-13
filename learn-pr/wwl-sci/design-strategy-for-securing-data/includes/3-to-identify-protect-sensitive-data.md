@@ -201,8 +201,7 @@ Automated data discovery with Defender for Cloud Apps:
     it uses. You can then go to the file investigation page
     by clicking **Investigate** > **Files** to get an overview of the files
     shared by your cloud apps, their accessibility, and their status.
-    For more information, see [Investigate
-    files](https://docs.microsoft.com/defender-cloud-apps/file-filters).
+    For more information, see [Investigate files](/defender-cloud-apps/file-filters).
 
 
 | Use an app connector               | Microsoft app connectors use the APIs supplied by app providers. They provide greater visibility into and control over the apps used in your organization. Scans are performed periodically (every 12 hours) and in real time (triggered each time a change is detected). For more information and instructions on how to add apps, see Connecting apps.                                                                                                                                            |
@@ -249,8 +248,7 @@ Monitoring and reporting is a greater emphasis in the data protection
 story with Defender for Cloud Apps.
 
 Your policies are all in place to inspect and protect your data. Now,
-you'll want to [check your
-dashboard](https://docs.microsoft.com/defender-cloud-apps/daily-activities-to-protect-your-cloud-environment#check-the-dashboard) daily
+you'll want to [check your dashboard](/defender-cloud-apps/daily-activities-to-protect-your-cloud-environment#check-the-dashboard) daily
 to see what new alerts have been triggered. It's a good place to keep
 an eye on the health of your cloud environment. Your dashboard helps you
 get a sense of what's happening and, if necessary, launch
