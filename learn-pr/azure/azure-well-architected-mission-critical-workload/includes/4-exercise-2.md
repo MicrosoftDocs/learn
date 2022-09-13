@@ -43,7 +43,7 @@ In order for the clients to get transparently routed to either working region, a
 
 The ideal state is an active-active configuration that doesn't require any active failover and client requests can be served from any region. Think about what that implies for your architecture. For example, do you have any state that stored in the regional stamp?
 
-Certain services in the current architecture have geo-replication capabilites. Consider separating the services into separate stamps. One stamp that contains global resources. The other regional stamp that shares resources in the global stamp. One of decision factors should be the lifecycle of those resources. What is the expected lifetime of the resource, relative to other resources in the architecture? Should the resource outlive or share the lifetime with the entire system or region, or should it be temporary?
+Certain services in the current architecture have geo-replication capabilities. Consider separating the services into separate stamps. One stamp that contains global resources. The other regional stamp that shares resources in the global stamp. One of decision factors should be the lifecycle of those resources. What is the expected lifetime of the resource, relative to other resources in the architecture? Should the resource outlive or share the lifetime with the entire system or region, or should it be temporary?
 
 Explore the reliability features of the Azure services used in the architecture. You can start with these features and explore further to maximize reliability. 
 
@@ -69,4 +69,4 @@ Here's are [**Application**](/azure/architecture/reference-architectures/contain
 - How did you approach DNS and TLS migration? (TBD)
 - Did make any SKU changes to the existing component to support multi-region topology?
 - Which Azure services did you leave as singletons? How have you justified your choice for each service? Did you make any configuration changes?
-- Are you logging resources? Do you think that’ll impact your ability to inspect the logs for the overall system?	
+- Are you logging resources? Do you think that will impact your ability to inspect the logs for the overall system?	

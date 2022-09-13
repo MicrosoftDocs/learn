@@ -4,7 +4,7 @@ You'll be adding your own enhancements to an existing architecture that meets an
 
 Contoso Shoes wants to be ready for the next launch, which is expected to create an increase in traffic load. In the last six months, there have been several incidents causing the website to be offline for half a day. The system wasn't tested properly in the Dev/Test environment and some bugs crept into production. Troubleshooting took a long time because the operators weren't able to identify the root cause quickly. 
 
-There have some challenges when certain components aren't available. The scale out operations on compute were impacted when Azure Key Vault wasn't available. Also, there aren't any strategies in place for regional outages. In a recent incident, the entire West Europe region went down. Because the workload was only running in that region, they had to bear financial loss until the region was back up. 
+There have some challenges when certain components aren't available. The scale-out operations on compute were impacted when Azure Key Vault wasn't available. Also, there aren't any strategies in place for regional outages. In a recent incident, the entire West Europe region went down. Because the workload was only running in that region, they had to bear financial loss until the region was back up. 
 
 ## Current architecture
 
@@ -40,7 +40,7 @@ In the list of components, the _deployment stamp_ consists of services that part
 
 In the stamp, App Services is configured to automatically scale based on load. 
 
-Separate environments are used for Production and Dev/Test. The Production enviroment uses App Service plan Standard SKU. This choice was made to have the capability of prewarming the application to a deployment slot before deploying it to production. In the Dev/Test environment, the SKU is lowered to Basic for cost optimization. Both enviroments have their own instances of services. Only **Container Registry** is shared between the enviroments.
+Separate environments are used for Production and Dev/Test. The Production environment uses App Service plan Standard SKU. This choice was made to have the capability of prewarming the application to a deployment slot before deploying it to production. In the Dev/Test environment, the SKU is lowered to Basic for cost optimization. Both environments have their own instances of services. Only **Container Registry** is shared between the environments.
 
 TODO: 
 - Talk about scaling in the slot. (TBD)

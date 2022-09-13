@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-well-architected-mission-critical.6-end-state-design
+title: Next step - Target architecture evolution
+metadata:
+  unitType: exercise
+  title: Next step - Target architecture evolution
+  description: TBD
+  ms.date: 09/22/2022
+  author: PageWriter-MSFT
+  ms.author: prwilk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-end-state-design.md)]

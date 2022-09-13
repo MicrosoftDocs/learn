@@ -2,9 +2,9 @@ Build on an existing architecture to support a high-availability scenario for a 
 
 ## Example scenario
 
-Contoso Shoes moved their on-premises deployments to the cloud two years ago. While they have seen improvements in operations, it's been challenging to keep their availability and uptime within the service level agreement (SLA). There's also an upcoming product launch that's expected to create a spike. Previous launches led to outages because the system wasn't able to meet the increase in load. It resulted in a significant financial loss. 
+Contoso Shoes moved their on-premises deployments to the cloud two years ago. While they've seen improvements in operations, it's been challenging to keep their availability and uptime within the service level agreement (SLA). There's also an upcoming product launch that's expected to create a spike. Previous launches led to outages because the system wasn't able to meet the increase in load. It resulted in a significant financial loss. 
 
-Based on that experience, the organization is now committed to increase the overall reliability of the system. They have updated the availability targets for the existing application making it _mission critical_. 
+Based on that experience, the organization is now committed to increase the overall reliability of the system. They've updated the availability targets for the existing application making it _mission critical_. 
 
 The organization needs an improved design that can survive a total regional failure of one or more components in the architecture. They've explored the possibility of adding another region. In addition to extended reliability, Contoso would like to improve the customer experience by serving clients faster in a region geographically closer to them.
 
@@ -16,7 +16,7 @@ The existing application is already designed as per the quality pillars of Azure
 
 - Design a health endpoint in the application to check the health at the API level and its dependencies.
 - Expand the solution into multiple regions to survive a regional outage.
-- Build a health model and visualize the oberservability data through internal dashboards.
+- Build a health model and visualize the observability data through internal dashboards.
 
 ## What is the main goal?
 
