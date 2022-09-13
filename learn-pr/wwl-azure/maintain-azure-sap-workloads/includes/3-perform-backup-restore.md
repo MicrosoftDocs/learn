@@ -86,7 +86,7 @@ Automated Backup v2 works with SQL Server 2016 or higher. If you are using SQL S
 
 * System databases do not have to use full recovery model. However, if you require log backups to be taken for Model or MSDB, you must use full recovery model.
 
-* Target databases must be on the either the default SQL Server instance, or a named instance installed by following the procedure described at [](/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-faq#administration)
+* Target databases must be on the either the default SQL Server instance, or a named instance installed by following the procedure described in [Frequently asked questions for SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/frequently-asked-questions-faq#administration)
 
 You can use the Azure portal or Az PowerShell to configure Automated Backup v2 during provisioning or for existing SQL Server 2016/2017 VMs.
 
