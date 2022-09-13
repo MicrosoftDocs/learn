@@ -9,8 +9,5 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Azure Cosmos DB integrated cache - Overview][docs.microsoft.com/azure/cosmos-db/integrated-cache]
-- [How to configure the Azure Cosmos DB integrated cache][docs.microsoft.com/azure/cosmos-db/how-to-configure-integrated-cache]
-
-[docs.microsoft.com/azure/cosmos-db/integrated-cache]: /azure/cosmos-db/integrated-cache
-[docs.microsoft.com/azure/cosmos-db/how-to-configure-integrated-cache]: /azure/cosmos-db/how-to-configure-integrated-cache
+- [Azure Cosmos DB integrated cache - Overview](/azure/cosmos-db/integrated-cache)
+- [How to configure the Azure Cosmos DB integrated cache](/azure/cosmos-db/how-to-configure-integrated-cache)
