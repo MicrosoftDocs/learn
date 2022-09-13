@@ -19,6 +19,9 @@ In a recent incident, the team wasn't able to see the cascading impact of an iss
 ## Recommended approach
 To get started on your design, we recommend that you follow these steps.
 
+> [!IMPORTANT] 
+> Health modeling is a comprehensive exercise. The approach given in this section is intended to help you get started. Do due dilligence in applying the model to all functional and non-functional flows in your mission critical design to get a holistic view of the system.
+
 ### 1&ndash;Start health modeling
 
 This exercise is theoretical. Health modeling in a top-down design activity in which you'll need a comprehensive list of components used in the architecture. This list should include all the application components and the Azure services.
@@ -28,6 +31,7 @@ Place those components in a dependency graph that shows a hierarchical view of t
 Your graph should look something like this:
 
 ![Example of a dependency graph for a health model.](../media/health-model.png)
+
 
 > **Check your progress: [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health)**
 

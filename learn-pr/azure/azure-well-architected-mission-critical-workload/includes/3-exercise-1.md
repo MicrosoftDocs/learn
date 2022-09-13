@@ -12,8 +12,8 @@ Build the dedicated health service as an extension to the already-deployed code.
 
 - Introduce a health check API in your application. The API must check the health status of the application and its dependencies and return an indication of the status. For example, the API periodically should check read and write operations to Azure Cosmos DB. Implement those functions as separate probes so that reads and writes are checked independently.
    
-> [!NOTE] 
-> Extend the health check to non functional services, such as Azure Key Vault and Azure Container Registry. This step is important because if those services experience an outage, you might notice an impact in the ability to scale out or withstand an App Service instance restart.
+    > [!TIP] 
+    > Extend the health check to non-functional services, such as Azure Key Vault and Azure Container Registry. This step is important because if those services experience an outage, you might notice an impact in the ability to scale out or withstand an App Service instance restart.
 
 - The health check API endpoint must be called twice a minute, by multiple sources, and shouldn't degrade the performance of the API. For example, the Azure App Service plan must send requests to an endpoint and make informed decisions about which App Service instances to distribute traffic to. 
 

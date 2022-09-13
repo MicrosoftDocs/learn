@@ -23,7 +23,7 @@ The architecture must be distributed to two or more Azure regions to protect aga
 - The Azure services and the capabilities, used in the architecture, must be supported in the region.
 - The region and the resources deployed in the region must have proximity to the end users and dependent systems to minimize network latency.
 
-Think through a failure scenario. Suppose eastus2 gets 75% of the traffic and the other region you added gets the remaining. They're both scaled appropriately to handle that load. There's a regional outage in eastus2 and all traffic is now routed to the other region. Can you make that transition smooth? Can the other region support that increased traffic load?
+Think through a failure scenario. Suppose Region 1 gets 75% of the traffic and Region 2 you added gets the remaining. They're both scaled appropriately to handle that load. There's a regional outage in Region 1 and all traffic is now routed to Region 2. Can you make that transition smooth? Can the Region 2 support that increased traffic load?
 
 > **Check your progress: [Global distribution](/azure/architecture/framework/mission-critical/mission-critical-application-design#global-distribution)**
 
@@ -43,7 +43,7 @@ In order for the clients to get transparently routed to either working region, a
 
 The ideal state is an active-active configuration that doesn't require any active failover and client requests can be served from any region. Think about what that implies for your architecture. For example, do you have any state that stored in the regional stamp?
 
-Certain services in the current architecture have geo-replication capabilities. Consider separating the services into separate stamps. One stamp that contains global resources. The other regional stamp that shares resources in the global stamp. One of decision factors should be the lifecycle of those resources. What is the expected lifetime of the resource, relative to other resources in the architecture? Should the resource outlive or share the lifetime with the entire system or region, or should it be temporary?
+Certain services in the current architecture have geo-replication capabilities. Consider separating the services into different stamps. One stamp that contains global resources. The other regional stamp that shares resources in the global stamp. One of decision factors should be the lifecycle of those resources. What is the expected lifetime of the resource, relative to other resources in the architecture? Should the resource outlive or share the lifetime with the entire system or region, or should it be temporary?
 
 Explore the reliability features of the Azure services used in the architecture. You can start with these features and explore further to maximize reliability. 
 
