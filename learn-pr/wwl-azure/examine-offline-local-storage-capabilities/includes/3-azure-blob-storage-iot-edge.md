@@ -8,7 +8,7 @@ A blob storage module is useful in the following scenarios:
  -  When you want to reduce bandwidth costs and avoid transferring terabytes of data to the cloud. You can process the data locally and send only the processed data to the cloud.
 
 > [!NOTE]
-> Azure SQL Edge is another local storage option for IoT Edge devices. Azure SQL Edge is an optimized relational database engine geared for IoT and IoT Edge deployments. You can read more about Azure SQL Edge here: [https://docs.microsoft.com/azure/azure-sql-edge/overview](/azure/azure-sql-edge/overview)
+> Azure SQL Edge is another local storage option for IoT Edge devices. Azure SQL Edge is an optimized relational database engine geared for IoT and IoT Edge deployments. You can read more about Azure SQL Edge here: [What is Azure SQL Edge?](/azure/azure-sql-edge/overview)
 
 ## Supported storage operations
 
