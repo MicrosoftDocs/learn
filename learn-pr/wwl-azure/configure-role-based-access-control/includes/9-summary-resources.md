@@ -8,8 +8,6 @@ In this module, you identified the features and use cases for RBAC. You discover
 
 - Explore [Azure custom roles](/azure/role-based-access-control/custom-roles).
 
-- Discover [cccccc](tbd).
-
 - Peruse [Azure RBAC documentation](/azure/role-based-access-control/).
 
 ## Learn more with self-paced training

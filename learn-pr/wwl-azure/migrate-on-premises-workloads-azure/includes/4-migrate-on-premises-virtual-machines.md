@@ -18,7 +18,7 @@ The replication process consists of several steps, beginning with a Start Replic
 5. On completion of initial replication, the VM snapshot is deleted, and delta replication starts.
 6. The Recovery Services agent periodically uploads replication logs to a log storage account.
 
-![Diagram of the Replication workflow. Numbered steps (1-6) show the process from the Start Replication job, to the initial replication and delta replication phases. Components that are part of the replication workflow are shown and the text in the content has an equivalent numbered list that explains each step in the process. ](../media/6654-replication-process.png)
+![Diagram of the Replication workflow. Numbered steps (1-6) show the process from the Start Replication job, to the initial replication and delta replication phases. Components that are part of the replication workflow are shown and the text in the content has an equivalent numbered list that explains each step in the process.](../media/6654-replication-process.png)
 
 ## Required components for replication
 
@@ -35,7 +35,7 @@ The resources used by Azure Migrate Server Migration are
 
 During the replication process, you can track when initial replication changes to delta replication. You can also monitor the status of the replicating machines by clicking on **Replicating servers** in **Azure Migrate: Server Migration**.
 
-![Screenshot of the Azure Migrate: Server Migration panel. Overview button and Replicating servers are highlighted with a red border. ](../media/6654-track-replication.png)
+![Screenshot of the Azure Migrate: Server Migration panel. Overview button and Replicating servers are highlighted with a red border.](../media/6654-track-replication.png)
 
 Azure Migrate Server Migration indicates the status of the replicating machines. Each Replication job has successfully completed, and three machines are now replicating. Each machine shows a status of healthy with no issues needing attention.
 
@@ -50,7 +50,7 @@ Initial replication completes when the status of each machine changes from **In 
 1. Click **Replicating machines**.
 2. Refresh occasionally until all machines show status of **Protected**.
 
-![Screenshot of the Replicating machines blade. Under overview, Replicating machines is highlighted with a red border and numbered 1. On the right side, 3 VMs are listed showing Status of Protected, and a Health status of Healthy. Test Migration status show a status of Never performed. ](../media/6654-replication-status-protected.png)
+![Screenshot of the Replicating machines blade. Under overview, Replicating machines is highlighted with a red border and numbered 1. On the right side, 3 VMs are listed showing Status of Protected, and a Health status of Healthy. Test Migration status show a status of Never performed.](../media/6654-replication-status-protected.png)
 
 ## Run a test migration
 
@@ -61,7 +61,7 @@ You can run the test migration when delta replication begins, allowing replicati
 1. **In Migration goals > Servers > Azure Migrate: Server Migration**, click **Test migrated servers**.
 2. Right-click the VM to test, and click **Test migrate**.
 
-![Screenshot of the Replicating machines blade. Under Manage, Replicating machines shows one VM in Delta sync with a Health status of Healthy and showing the Migration Phase as Test migration pending. ](../media/6654-replication-test.png)
+![Screenshot of the Replicating machines blade. Under Manage, Replicating machines shows one VM in Delta sync with a Health status of Healthy and showing the Migration Phase as Test migration pending.](../media/6654-replication-test.png)
 
 Newly-created Azure VMs are migrated to your non-production Azure VNet. You can monitor the test migration job in the portal notifications. After the test migration completes, view the migrated VMs in the Azure portal. You’ll notice that new VMs with a **-Text** suffix have been created. 
 
@@ -75,7 +75,7 @@ You can choose to have Azure Migrate shut down the on-premises VMs and run an on
 
 Like the previous phases, a migration job starts for each VM. You can track and monitor progress as before. Wait till all Planned failover jobs show a status of **Successful**.
 
-![Screenshot of the Jobs blade. Under Manage, Jobs is highlighted with a red border and numbered 1. On the right side Job status information is shown for 3 VMs. The 3 VMs are highlighted with a red border and numbered 2. The screenshot shows the VMs as going through a Planned failover that is currently in progress. ](../media/6654-migration-jobs.png)
+![Screenshot of the Jobs blade. Under Manage, Jobs is highlighted with a red border and numbered 1. On the right side Job status information is shown for 3 VMs. The 3 VMs are highlighted with a red border and numbered 2. The screenshot shows the VMs as going through a Planned failover that is currently in progress.](../media/6654-migration-jobs.png)
 
 Navigate to the resource group associated with the Azure Migrate project and verify that the VM, network interface, and disk resources have been created for each of the virtual machines being created.
 
@@ -83,7 +83,7 @@ Navigate to the resource group associated with the Azure Migrate project and ver
 
 When complete, you’ll stop the migration. Azure Migrate stops replication and cleans up replication state information for the VMs.
 
-After migrating your VMs, you want to be able to perform common tasks, like installing and configuring software. This requires enabling and running Azure virtual machine extensions. To do this, you’ll need to install an Azure Virtual Machine agent on the migrated machines. The Azure documentation provides information about the Azure VM agents for [Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-windows) and [Linux](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux).
+After migrating your VMs, you want to be able to perform common tasks, like installing and configuring software. This requires enabling and running Azure virtual machine extensions. To do this, you’ll need to install an Azure Virtual Machine agent on the migrated machines. The Azure documentation provides information about the Azure VM agents for [Windows](/azure/virtual-machines/extensions/agent-windows) and [Linux](/azure/virtual-machines/extensions/agent-linux).
 
 You didn’t migrate any databases for the pilot, but had you done so, this is the time to update any database connection strings, or web server configurations.
 

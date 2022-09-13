@@ -24,15 +24,15 @@ For more information about the topics discussed in this module, see:
 - [Create Azure Cosmos containers and databases with autoscale throughput][/azure/cosmos-db/provision-throughput-autoscale]
 - [Upgrade the API version of your Azure Cosmos DB API for MongoDB account][azure/cosmos-db/mongodb/upgrade-mongodb-version]
 
-[/azure/cosmos-db/mongodb/mongodb-introduction]: https://docs.microsoft.com/azure/cosmos-db/mongodb/mongodb-introduction
-[/azure/cosmos-db/mongodb/estimate-ru-capacity-planner]: https://docs.microsoft.com/azure/cosmos-db/mongodb/estimate-ru-capacity-planner
-[/azure/cosmos-db/mongodb/feature-support-32]: https://docs.microsoft.com/azure/cosmos-db/mongodb/feature-support-32
-[/azure/cosmos-db/mongodb/feature-support-36]: https://docs.microsoft.com/azure/cosmos-db/mongodb/feature-support-36
-[/azure/cosmos-db/mongodb/feature-support-40]: https://docs.microsoft.com/azure/cosmos-db/mongodb/feature-support-40
-[/azure/cosmos-db/mongodb/feature-support-42]: https://docs.microsoft.com/azure/cosmos-db/mongodb/feature-support-42
+[/azure/cosmos-db/mongodb/mongodb-introduction]: /azure/cosmos-db/mongodb/mongodb-introduction
+[/azure/cosmos-db/mongodb/estimate-ru-capacity-planner]: /azure/cosmos-db/mongodb/estimate-ru-capacity-planner
+[/azure/cosmos-db/mongodb/feature-support-32]: /azure/cosmos-db/mongodb/feature-support-32
+[/azure/cosmos-db/mongodb/feature-support-36]: /azure/cosmos-db/mongodb/feature-support-36
+[/azure/cosmos-db/mongodb/feature-support-40]: /azure/cosmos-db/mongodb/feature-support-40
+[/azure/cosmos-db/mongodb/feature-support-42]: /azure/cosmos-db/mongodb/feature-support-42
 [/capacitycalculator/]: https://cosmos.azure.com/capacitycalculator/
 [/azure/cosmos-db/scripts/cli/mongodb/create]: https://azure.microsoft.com/azure/cosmos-db/scripts/cli/mongodb/create
-[/azure/cosmos-db/account-databases-containers-items]: https://docs.microsoft.com/azure/cosmos-db/account-databases-containers-items
-[/azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb]: https://docs.microsoft.com/azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb
-[/azure/cosmos-db/provision-throughput-autoscale]: https://docs.microsoft.com/azure/cosmos-db/provision-throughput-autoscale
-[azure/cosmos-db/mongodb/upgrade-mongodb-version]: https://docs.microsoft.com/azure/cosmos-db/mongodb/upgrade-mongodb-version
+[/azure/cosmos-db/account-databases-containers-items]: /azure/cosmos-db/account-databases-containers-items
+[/azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb]: /azure/cosmos-db/mongodb/how-to-provision-throughput-mongodb
+[/azure/cosmos-db/provision-throughput-autoscale]: /azure/cosmos-db/provision-throughput-autoscale
+[azure/cosmos-db/mongodb/upgrade-mongodb-version]: /azure/cosmos-db/mongodb/upgrade-mongodb-version

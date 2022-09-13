@@ -15,8 +15,8 @@ You can learn more by reviewing the following. A *sandbox* indicates a hands-on 
 
  -  [Azure Virtual Machine documentation](/azure/virtual-machines/)
  -  [Linux virtual machines documentation](/azure/virtual-machines/linux/)
- -  [Learn - Introduction to Azure virtual machines (Sandbox)](/learn/modules/intro-to-azure-virtual-machines/)
- -  [Learn - Choose the right disk storage for your virtual machine workload](/learn/modules/choose-the-right-disk-storage-for-vm-workload/)
- -  [Learn - Create a Linux virtual machine in Azure (Sandbox)](/learn/modules/create-linux-virtual-machine-in-azure/)
- -  [Learn - Create a Windows virtual machine in Azure (Sandbox)](/learn/modules/create-windows-virtual-machine-in-azure/)
- -  [Learn - Connect to virtual machines through the Azure portal by using Azure Bastion](/learn/modules/connect-vm-with-azure-bastion/)
+ -  [Introduction to Azure virtual machines (Sandbox)](/learn/modules/intro-to-azure-virtual-machines/)
+ -  [Choose the right disk storage for your virtual machine workload](/learn/modules/choose-the-right-disk-storage-for-vm-workload/)
+ -  [Create a Linux virtual machine in Azure (Sandbox)](/learn/modules/create-linux-virtual-machine-in-azure/)
+ -  [Create a Windows virtual machine in Azure (Sandbox)](/learn/modules/create-windows-virtual-machine-in-azure/)
+ -  [Connect to virtual machines through the Azure portal by using Azure Bastion](/learn/modules/connect-vm-with-azure-bastion/)

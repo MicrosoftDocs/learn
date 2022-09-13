@@ -24,33 +24,33 @@ Now that you've completed this module, you should be able to:
 
 - [Azure Event Grid](https://azure.microsoft.com/services/event-grid/)
 
-- [Templates overview - Azure Resource Manager | Microsoft Docs](/azure/azure-resource-manager/templates/overview)
+- [What are Azure Resource Manager templates?](/azure/azure-resource-manager/templates/overview)
 
-- [An introduction to Azure Automation | Microsoft Docs](/azure/automation/automation-intro)
+- [What is Azure Automation?](/azure/automation/automation-intro)
 
-- [What is Azure App Configuration? | Microsoft Docs](/azure/azure-app-configuration/overview)
+- [What is Azure App Configuration?](/azure/azure-app-configuration/overview)
 
-- [Azure API Management overview and key concepts | Microsoft Docs](/azure/api-management/api-management-key-concepts)
+- [About API Management](/azure/api-management/api-management-key-concepts)
 
-- [What is Azure Cache for Redis? | Microsoft Docs](/azure/azure-cache-for-redis/cache-overview)
+- [About Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview)
 
 ## Learn more with self-paced training
 
-- [Choose a messaging model in Azure to loosely connect your services - Learn ](/learn/modules/implement-message-workflows-with-service-bus/)
+- [Choose a messaging model in Azure to loosely connect your services](/learn/modules/implement-message-workflows-with-service-bus/)
 
-- [Introduction to Azure API Management - Learn ](/learn/modules/introduction-to-azure-api-management/)
+- [Introduction to Azure API Management](/learn/modules/introduction-to-azure-api-management/)
 
-- [Introduction to Event Hubs - Learn ](/learn/modules/intro-to-event-hubs/)
+- [Introduction to Event Hubs](/learn/modules/intro-to-event-hubs/)
 
-- [Deploy Azure infrastructure by using JSON ARM templates - Learn](/learn/modules/create-azure-resource-manager-template-vs-code/)
+- [Deploy Azure infrastructure by using JSON ARM templates](/learn/modules/create-azure-resource-manager-template-vs-code/)
 
-- [Introduction to infrastructure as code using Bicep - Learn ](/learn/modules/introduction-to-infrastructure-as-code-using-bicep/)
+- [Introduction to infrastructure as code using Bicep](/learn/modules/introduction-to-infrastructure-as-code-using-bicep/)
 
-- [Message queues and stream processing - Learn ](/learn/modules/cmu-message-queues-streams/)
+- [Message queues and stream processing](/learn/modules/cmu-message-queues-streams/)
 
-- [Communicate between applications with Azure Queue storage - Learn ](/learn/modules/communicate-between-apps-with-azure-queue-storage/)
+- [Communicate between applications with Azure Queue storage](/learn/modules/communicate-between-apps-with-azure-queue-storage/)
 
-- [Introduction to Azure Cache for Redis - Learn](/learn/modules/intro-to-azure-cache-for-redis/)
+- [Introduction to Azure Cache for Redis](/learn/modules/intro-to-azure-cache-for-redis/)
 
 ## Learn more with optional hands-on exercises
 

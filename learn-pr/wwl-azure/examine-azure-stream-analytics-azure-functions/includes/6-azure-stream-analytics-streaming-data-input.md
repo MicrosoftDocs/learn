@@ -118,4 +118,4 @@ For scenarios with large quantities of unstructured data to store in the cloud, 
 Log processing is a commonly used scenario for using Blob storage inputs with Stream Analytics. In this scenario, telemetry data files have been captured from a system and need to be parsed and processed to extract meaningful data.
 
 > [!NOTE]
-> You can find additional information about streaming data inputs, including detailed information about streaming input from Event Hubs and Blob storage resources, at the follong location: [https://docs.microsoft.com/azure/stream-analytics/stream-analytics-define-inputs](/azure/stream-analytics/stream-analytics-define-inputs)
+> You can find additional information about streaming data inputs, including detailed information about streaming input from Event Hubs and Blob storage resources, at the follong location: [Stream data as input into Stream Analytics](/azure/stream-analytics/stream-analytics-define-inputs)

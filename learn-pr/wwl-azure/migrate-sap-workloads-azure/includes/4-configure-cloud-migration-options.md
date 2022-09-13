@@ -102,9 +102,7 @@ The infrastructure/hardware reduction lever consists of the following:
 |------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Oracle | SAP Note 936441 - Oracle settings for R3load based system copy |
 | DB2 | http://www.redbooks.ibm.com/abstracts/sg247774.html |
-| SQL Server | https://docs.microsoft.com/archive/blogs/saponsqlserver/sap-osdb-migration-to-sql-server-faq-v6-2-april-2017 |
-
-
+| SQL Server |  [SAP OS/DB Migration to SQL Server–FAQ v6.2 April 2017](/archive/blogs/saponsqlserver/sap-osdb-migration-to-sql-server-faq-v6-2-april-2017) |
 
 * Use the latest version of migration tool (For example, R3* and kernel).
 

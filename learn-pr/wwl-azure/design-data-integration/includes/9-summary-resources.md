@@ -38,12 +38,12 @@ In this module, you have learned about various Azure data integration and data a
 
 - [Explore concepts of data analytics](/learn/modules/explore-concepts-of-data-analytics/)
 
-- [Introduction to Azure Data Factory - Learn](/learn/modules/intro-to-azure-data-factory/)
+- [Introduction to Azure Data Factory](/learn/modules/intro-to-azure-data-factory/)
 
-- [Describe Azure Databricks - Learn](/learn/modules/describe-azure-databricks/)
+- [Describe Azure Databricks](/learn/modules/describe-azure-databricks/)
 
-- [Introduction to Azure Synapse Analytics - Learn](/learn/modules/introduction-azure-synapse-analytics/)
+- [Introduction to Azure Synapse Analytics](/learn/modules/introduction-azure-synapse-analytics/)
 
-- [Work with data streams by using Azure Stream Analytics - Learn](/learn/modules/introduction-to-data-streaming/)
+- [Work with data streams by using Azure Stream Analytics](/learn/modules/introduction-to-data-streaming/)
 
 

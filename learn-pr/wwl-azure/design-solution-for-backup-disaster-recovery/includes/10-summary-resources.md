@@ -18,7 +18,7 @@ Now that you've completed this module, you should be able to:
 
 ## Learn more with Azure documentation
 
-- [About Azure file share backup - Azure Backup | Microsoft Docs](/azure/backup/azure-file-share-backup-overview?toc=/azure/storage/files/toc.json)
+- [About Azure file share backup](/azure/backup/azure-file-share-backup-overview?toc=/azure/storage/files/toc.json)
 
 - [Azure Backup service documentation](/azure/backup?azure-portal=true)
 
@@ -38,18 +38,18 @@ Now that you've completed this module, you should be able to:
 
 ## Learn more with self-paced training
 
-- [Disaster recovery and backup - Learn | Microsoft Docs](/learn/modules/cmu-disaster-recovery-backup/)
+- [Disaster recovery and backup](/learn/modules/cmu-disaster-recovery-backup/)
 
-- [Design your site recovery solution in Azure - Learn | Microsoft Docs](/learn/modules/design-your-site-recovery-solution-in-azure/)
+- [Design your site recovery solution in Azure](/learn/modules/design-your-site-recovery-solution-in-azure/)
 
-- [Protect your virtual machines by using Azure Backup - Learn | Microsoft Docs](/learn/modules/protect-virtual-machines-with-azure-backup/)
+- [Protect your virtual machines by using Azure Backup](/learn/modules/protect-virtual-machines-with-azure-backup/)
 
-- [Design a geographically distributed application - Learn | Microsoft Docs](/learn/modules/design-a-geographically-distributed-application/)
+- [Design a geographically distributed application](/learn/modules/design-a-geographically-distributed-application/)
 
-- [Microsoft Azure Well-Architected Framework - Reliability - Learn | Microsoft Docs](/learn/modules/azure-well-architected-reliability/)
+- [Microsoft Azure Well-Architected Framework - Reliability](/learn/modules/azure-well-architected-reliability/)
 
-- [Describe high-availability and disaster-recovery strategies - Learn | Microsoft Docs](/learn/modules/describe-high-availability-disaster-recovery-strategies/)
+- [Describe high-availability and disaster-recovery strategies](/learn/modules/describe-high-availability-disaster-recovery-strategies/)
 
 ## Learn more with optional hands-on labs
 
-- [Backup and restore your Azure SQL database - Learn | Microsoft Docs](/learn/modules/backup-restore-azure-sql/)
+- [Backup and restore your Azure SQL database](/learn/modules/backup-restore-azure-sql/)

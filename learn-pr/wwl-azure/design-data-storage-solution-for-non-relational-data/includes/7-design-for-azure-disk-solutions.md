@@ -26,7 +26,7 @@ Azure offers several types of data disks. When selecting a disk type, consider y
 - **Standard HDD.** In Azure Standard HDD-managed disks, data is stored on conventional magnetic disk drives that have moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). Like Standard SSD disks, you can use Standard HDD disks for any VM.
 
 >[!TIP]
->Read more about how to [Select a disk type for Azure IaaS VMs - managed disks - Azure Virtual Machines | Microsoft Docs](/azure/virtual-machines/disks-types).
+>Read more about how to [Select a disk type for Azure IaaS VMs - managed disks](/azure/virtual-machines/disks-types).
 
 ### Improve performance with disk caching
 
