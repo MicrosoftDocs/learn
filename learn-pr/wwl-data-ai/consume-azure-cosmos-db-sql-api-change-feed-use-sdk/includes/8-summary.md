@@ -13,6 +13,6 @@ For more information about the topics discussed in this module, see:
 - [Change feed processor in Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/sql/change-feed-processor]
 - [Use the change feed estimator][docs.microsoft.com/azure/cosmos-db/sql/how-to-use-change-feed-estimator]
 
-[docs.microsoft.com/azure/cosmos-db/change-feed]: https://docs.microsoft.com/azure/cosmos-db/change-feed
-[docs.microsoft.com/azure/cosmos-db/sql/change-feed-processor]: https://docs.microsoft.com/azure/cosmos-db/sql/change-feed-processor
-[docs.microsoft.com/azure/cosmos-db/sql/how-to-use-change-feed-estimator]: https://docs.microsoft.com/azure/cosmos-db/sql/how-to-use-change-feed-estimator
+[docs.microsoft.com/azure/cosmos-db/change-feed]: /azure/cosmos-db/change-feed
+[docs.microsoft.com/azure/cosmos-db/sql/change-feed-processor]: /azure/cosmos-db/sql/change-feed-processor
+[docs.microsoft.com/azure/cosmos-db/sql/how-to-use-change-feed-estimator]: /azure/cosmos-db/sql/how-to-use-change-feed-estimator

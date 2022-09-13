@@ -6,7 +6,7 @@ Supplemental Resources:
 - [Microsoft Whiteboard](https://aka.ms/whiteboard)
 - [Microsoft Technical Documentation](https://aka.ms/docs)
 - [Customer and Partner Success Stories](https://aka.ms/customerstories)
-- [Microsoft Learn for Educators ](https://aka.ms/msle)
+- [Microsoft Learn for Educators](https://aka.ms/msle)
 - [Create an Azure Machine Learning workspace](https://aka.ms/CreateAzureWorkspace)
 - [Facial Recognition](https://aka.ms/faceapi)
 - [AI Demos](https://aka.ms/demosai)
