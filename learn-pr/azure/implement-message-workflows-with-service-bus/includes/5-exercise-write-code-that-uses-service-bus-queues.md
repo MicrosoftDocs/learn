@@ -427,7 +427,7 @@ You can get these values from the connection string.
 1. To run the component that receives a message about a sale, run this command in Cloud Shell:
 
     ```bash
-    dotnet run -p privatemessagereceiver
+    dotnet run --project privatemessagereceiver
     ```
 
 1. Check the notifications in Cloud Shell. In the Azure portal, go to your Service Bus namespace and check your **Messages** chart:
