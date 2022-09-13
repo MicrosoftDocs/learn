@@ -22,4 +22,4 @@ When you've finished the exercise in GitHub, return here for:
 > **ability to validate your actions, provide feedback, or grade the results**.
 
 > [!div class="nextstepaction"]
-> [Start the exercise on GitHub](https://github.com/skills/review-pull-requests)
+> [Start the exercise on GitHub](https://github.com/skills/communicate-using-markdown)

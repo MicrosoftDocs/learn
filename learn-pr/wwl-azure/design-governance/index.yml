@@ -17,7 +17,7 @@ abstract: |
   - Design for Azure subscriptions.
   - Design for resource groups.
   - Design for resource tagging.
-  - Design for Azure policy.
+  - Design for Azure Policy.
   - Design for Azure role-based access control.
   - Design for Azure Blueprints.
   - Design for Azure landing zones.
