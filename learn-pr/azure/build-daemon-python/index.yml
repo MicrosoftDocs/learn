@@ -17,7 +17,7 @@ abstract: |
     - Write a Python daemon app to authenticate using its own identity and call a protected web API.
     - Run and test the Python daemon app.
 prerequisites: |
-  - An Azure account with an active subscription. If you don't have an account, [Create an account for free](https://azure.microsoft.com/free/).
+  - An Azure account with an active subscription. If you don't have an account, [create an account for free](https://azure.microsoft.com/free/).
   - [Python 3+](https://www.python.org/downloads/) installed on your computer.
   - Ability to write code in Python at beginner level.
   - A user account in an Azure AD tenant that's been assigned one or more of roles, or equivalent permissions. Any of the following Azure AD roles include the required permissions:
