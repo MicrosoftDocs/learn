@@ -17,7 +17,7 @@ abstract: |
   - Share artifacts between jobs and use Git tags
   - Create and manage secrets
 prerequisites: ""
-iconUrl: /learn/achievements/8-learn-continuous-integration-with-github-actions.svg
+iconUrl: /training/achievements/8-learn-continuous-integration-with-github-actions.svg
 levels:
 - advanced
 roles:
