@@ -15,7 +15,7 @@ There are four main steps to work through, so let's get started.
 
 ### Open an existing UWP project
 
-1. Using Visual Studio 2017, open the existing project for which you want to create an adaptive card for Timeline. In this example, we use the Universal Windows Platform (UWP) version of the Astronomy Picture of the Day from an earlier module. To download the source for that project, use [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-internet-connected-Windows-apps). If you need help with GitHub, see [this module](/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/4-advanced-features).
+1. Using Visual Studio 2017, open the existing project for which you want to create an adaptive card for Timeline. In this example, we use the Universal Windows Platform (UWP) version of the Astronomy Picture of the Day from an earlier module. To download the source for that project, use [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-internet-connected-Windows-apps). If you need help with GitHub, see [this module](/training/modules/get-started-with-visual-studio-for-windows10-app-dev/4-advanced-features).
 
 2. On the **Tools** menu, select **NuGet Package Manager** > **Manage NuGet Packages for Solution**. If the **AdaptiveCards** package isn't already installed, select **Browse**. Search for **AdaptiveCards**, and then install the package.
 
