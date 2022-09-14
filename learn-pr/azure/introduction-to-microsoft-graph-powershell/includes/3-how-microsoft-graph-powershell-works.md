@@ -103,20 +103,6 @@ To switch back to using v1.0 API commands, specify **v1.0** for the **-Name** pa
 >[!NOTE]
 > Commands for APIs in the beta endpoint are subject to change. We don't recommend that you use them in your production apps.
 
-## Using Invoke-MgGraphRequest
-
-`Invoke-MgGraphRequest` issues REST API requests to Microsoft Graph API.
-
-To get a list of all users in the directory using the API URI, run:
-
-```powershell
-$users = (Invoke-MgGraphRequest -Method GET https://graph.microsoft.com/v1.0/users).value
-```
-
-This command works for any Graph API if you know the REST URI, method, and optional body parameter. It can be useful for accessing an API for which there isn’t an equivalent cmdlet yet.
-
-If you get stuck executing or finding the right Microsoft Graph PowerShell command, use `Invoke-MgGraphRequest`.
-
 ## Common query parameters
 
 Microsoft Graph PowerShell SDK supports optional query parameters that you can use to control the amount of data returned in an output. Support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints. Microsoft Graph PowerShell cmdlets support one or more of the following OData system query options, which are only supported in the **GET** operations.
@@ -131,7 +117,7 @@ Microsoft Graph PowerShell SDK supports optional query parameters that you can u
 |-Select | Filters properties (columns)|`Get-MgUser \| Select DisplayName, Id`|
 | -Top | Sets the page size of results. |`Get-MgUser -Top 10`|
 
-### Advanced queries
+## Advanced queries
 
 Azure AD commands support advanced queries via the **ConsistencyLevel** parameter. These queries add the **-ConsistencyLevel** header to the Graph API request.
 
@@ -142,5 +128,19 @@ Get-MgUser -Count userCount -ConsistencyLevel eventual
 ```
 
 `$userCount` will contain the count of your users.
+
+### Using Invoke-MgGraphRequest
+
+`Invoke-MgGraphRequest` issues REST API requests to Microsoft Graph API.
+
+To get a list of all users in the directory using the API URI, run:
+
+```powershell
+$users = (Invoke-MgGraphRequest -Method GET https://graph.microsoft.com/v1.0/users).value
+```
+
+This command works for any Graph API if you know the REST URI, method, and optional body parameter. It can be useful for accessing an API for which there isn’t an equivalent cmdlet yet.
+
+If you get stuck executing or finding the right Microsoft Graph PowerShell command, use `Invoke-MgGraphRequest`.
 
 Although you can manage users in the Azure portal, it's more efficient to handle the process using PowerShell.
