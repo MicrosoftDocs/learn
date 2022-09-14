@@ -8,4 +8,4 @@ You can learn more by reviewing the following documents:
 - [Kubernetes core concepts for Azure Kubernetes Service (AKS)](/azure/aks/concepts-clusters-workloads?azure-portal=true)
 - [Connect an Azure Arc-enabled Kubernetes cluster (Preview)](/azure/azure-arc/kubernetes/connect-cluster?azure-portal=true)
 - [Windows container version compatibility - Choose which container OS version to use](/virtualization/windowscontainers/deploy-containers/version-compatibility?tabs=windows-server-20H2%2Cwindows-10-20H2#choose-which-container-os-version-to-use?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00?azure-portal=true)
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true)

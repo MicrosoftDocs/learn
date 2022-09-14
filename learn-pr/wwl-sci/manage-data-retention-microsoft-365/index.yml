@@ -20,7 +20,7 @@ prerequisites: |
   - Basic understanding of Microsoft 365 services
   - Basic understanding of Microsoft Purview
   - Basic understanding of how to create and publish retention labels
-iconUrl: /learn/achievements/manage-data-retention-in-microsoft-365.svg
+iconUrl: /training/achievements/manage-data-retention-in-microsoft-365.svg
 levels:
 - intermediate
 roles:
