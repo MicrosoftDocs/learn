@@ -182,6 +182,6 @@ Suppose you're creating a calculator app for school and you've been able to succ
 
 There's a wide range of materials and tools out there to help make you a better tester. Check out the [testing conceptual guidance](../../visual-studio-test-concepts/resources/design-doc.md) to learn more about best practices.
 
-Ready to find out how tests can improve your entire pipeline? Check out the [automated testing module](https://docs.microsoft.com/learn/modules/run-quality-tests-build-pipeline/2-what-is-automated-testing)
+Ready to find out how tests can improve your entire pipeline? Check out the [automated testing module](https://docs.microsoft.com/training/modules/run-quality-tests-build-pipeline/2-what-is-automated-testing)
 
 For a more in-depth look at the Test Explorer and other Visual Studio testing tools, check out the [Visual Studio Testing docs](https://docs.microsoft.com/visualstudio/test).

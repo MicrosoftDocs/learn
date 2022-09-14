@@ -10,4 +10,4 @@ Now that you've reviewed this module, you should:
 ### More resources
 
 - [Language Understanding (LUIS) documentation](/azure/cognitive-services/luis)
-- [Create a language model with Language Understanding](/learn/modules/create-language-model-with-language-understanding)
+- [Create a language model with Language Understanding](/training/modules/create-language-model-with-language-understanding)
