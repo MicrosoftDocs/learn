@@ -6,7 +6,7 @@ You are responsible for deploying the new virtual machines. Your deployment task
 
 ## Skills measured
 
-Deploying virtual machine is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Deploying virtual machine is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 

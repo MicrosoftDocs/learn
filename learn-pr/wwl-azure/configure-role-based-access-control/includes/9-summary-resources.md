@@ -14,6 +14,6 @@ You should now be able to:
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise.
 
  -  [Azure RBAC documentation](/azure/role-based-access-control/)
- -  [Create custom roles for Azure resources with role-based access control](/learn/modules/create-custom-azure-roles-with-rbac/)
- -  [Manage access to an Azure subscription by using Azure role-based access control](/learn/modules/manage-subscription-access-azure-rbac/)
- -  [Secure your Azure resources with role-based access control (Sandbox)](/learn/modules/secure-azure-resources-with-rbac/)
+ -  [Create custom roles for Azure resources with role-based access control](/training/modules/create-custom-azure-roles-with-rbac/)
+ -  [Manage access to an Azure subscription by using Azure role-based access control](/training/modules/manage-subscription-access-azure-rbac/)
+ -  [Secure your Azure resources with role-based access control (Sandbox)](/training/modules/secure-azure-resources-with-rbac/)

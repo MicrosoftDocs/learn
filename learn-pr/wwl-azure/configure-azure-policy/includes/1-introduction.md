@@ -14,7 +14,7 @@ In this module, you learn how to:
 
 ## Skills measured
 
-The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). The module concepts are covered in:
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
 
 Manage identities and governance in Azure (15-20%)
 

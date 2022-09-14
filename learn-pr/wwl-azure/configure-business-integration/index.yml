@@ -22,7 +22,7 @@ prerequisites: |
   - Describe the features, capabilities, and data workflows of an IoT solution.
   - Describe the components and capabilities of Azure IoT Central.
   - Describe the features and components of a Device Template.
-iconUrl: /learn/achievements/business-configure-integration.svg
+iconUrl: /training/achievements/business-configure-integration.svg
 levels:
 - intermediate
 roles:
