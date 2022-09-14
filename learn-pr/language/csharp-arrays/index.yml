@@ -21,7 +21,7 @@ prerequisites: |
   - Experience with string interpolation to combine literal strings with variable data
   - Experience researching how to use methods from the .NET Class Library
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-arrays.svg
+iconUrl: /training/achievements/csharp-arrays.svg
 levels:
 - beginner
 roles:

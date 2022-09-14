@@ -31,7 +31,7 @@ When evaluating your options, you must weigh several important considerations. O
 
    - `byte` for working with encoded data that comes from other computer systems or using different character sets.
    - `double` for working with geometric or scientific purposes. `double` is used frequently when building games involving motion.
-   - `System.StringBuilder` to build a single string from many literals or other variables. We'll cover this in more detail in the [Modify content of strings using built-in string data type methods in C#](/learn/modules/csharp-modify-content/) module.
+   - `System.StringBuilder` to build a single string from many literals or other variables. We'll cover this in more detail in the [Modify content of strings using built-in string data type methods in C#](/training/modules/csharp-modify-content/) module.
    - `System.DateTime` for a specific date and time value.
    - `System.TimeSpan` for a span of years/months/days/hours/minutes/seconds/milliseconds.
 
