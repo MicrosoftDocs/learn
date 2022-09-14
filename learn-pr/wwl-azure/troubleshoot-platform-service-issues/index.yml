@@ -18,7 +18,7 @@ prerequisites: |
   - Demonstrate an understanding of the OSI model
   - Demonstrate an understanding of PowerShell
   - Demonstrate an understanding of Azure CLI
-iconUrl: /learn/achievements/troubleshoot-platform-as-a-service.svg
+iconUrl: /training/achievements/troubleshoot-platform-as-a-service.svg
 levels:
 - intermediate
 roles:

@@ -17,7 +17,7 @@ abstract: |
   - Optimize data loading and preprocessing.
 prerequisites: |
   Before starting this module, you should be familiar with the Azure Machine Learning service and training machine learning and deep learning models.
-iconUrl: /learn/achievements/1-preprocessing-large-datasets-with-azure-machine-learning.svg
+iconUrl: /training/achievements/1-preprocessing-large-datasets-with-azure-machine-learning.svg
 levels:
 - advanced
 roles:
