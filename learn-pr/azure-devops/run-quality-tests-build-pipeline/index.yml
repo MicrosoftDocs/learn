@@ -24,7 +24,7 @@ prerequisites: |
   - .NET 6.0 SDK
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/run-quality-tests-when-your-application-builds.svg
+iconUrl: /training/achievements/azure-devops/run-quality-tests-when-your-application-builds.svg
 ratingEnabled: true
 levels:
 - beginner
