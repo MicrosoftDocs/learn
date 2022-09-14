@@ -21,7 +21,7 @@ prerequisites: |
   - An Azure subscription
   - Basic familiarity with Azure compute services
   - Basic knowledge of high-performance computing (HPC) concepts
-iconUrl: /learn/achievements/azure-cyclecloud-high-performance-computing.svg
+iconUrl: /training/achievements/azure-cyclecloud-high-performance-computing.svg
 levels:
   - beginner
 roles:

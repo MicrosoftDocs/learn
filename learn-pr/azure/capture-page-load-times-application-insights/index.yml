@@ -25,7 +25,7 @@ abstract: |
 prerequisites: |
   - Ability to create and deploy Azure App Service web apps.
   - Basic knowledge of web application development.
-iconUrl: /learn/achievements/capture-page-load-times-application-insights.svg
+iconUrl: /training/achievements/capture-page-load-times-application-insights.svg
 levels:
 - beginner
 roles:
