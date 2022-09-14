@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with HTML
   - Knowledge of Blazor components and applications
   - Experience working with .NET Core and more recent projects
-iconUrl: /learn/achievements/blazor-build-reusable-components.svg
+iconUrl: /training/achievements/blazor-build-reusable-components.svg
 levels:
   - intermediate
 roles:
