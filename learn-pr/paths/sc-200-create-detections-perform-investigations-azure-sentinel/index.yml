@@ -14,7 +14,7 @@ prerequisites: |
   - Understand how data is connected to Microsoft Sentinel like you could learn from learning path SC-200: Connect logs to Microsoft Sentinel
 summary: |
   Detect previously uncovered threats and rapidly remediate threats with built-in orchestration and automation in Microsoft Sentinel. This learning path aligns with Exam SC-200: Security Operation Analyst.
-iconUrl: /learn/achievements/azure-sentinel-detection.svg
+iconUrl: /training/achievements/azure-sentinel-detection.svg
 levels:
 - intermediate
 roles:
