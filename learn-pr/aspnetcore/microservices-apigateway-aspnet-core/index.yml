@@ -46,6 +46,6 @@ units:
   - learn.microservices-apigateway-aspnet-core.implement-azure-application-gateway
   - learn.microservices-apigateway-aspnet-core.knowledge-check
   - learn.microservices-apigateway-aspnet-core.summary
-iconUrl: /learn/achievements/aspnetcore/microservices-apigateway-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-apigateway-aspnet-core.svg
 badge:
   uid: learn.microservices-apigateway-aspnet-core.badge

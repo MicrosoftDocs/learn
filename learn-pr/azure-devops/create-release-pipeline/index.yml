@@ -24,7 +24,7 @@ prerequisites: |
   - .NET 6.0 SDK
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/create-a-release-pipeline-with-azure-pipelines.svg
+iconUrl: /training/achievements/azure-devops/create-a-release-pipeline-with-azure-pipelines.svg
 levels:
 - beginner
 roles:
