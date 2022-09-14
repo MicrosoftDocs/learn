@@ -25,7 +25,7 @@ The DevOps transformation journey is a series of 9 learning paths. It familiariz
 
 ### Why should I take the DevOps learning path?
 
-People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [AZ-400 - Designing and Implementing Microsoft DevOps Solutions](/learn/certifications/exams/az-400) certification exam.
+People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [AZ-400 - Designing and Implementing Microsoft DevOps Solutions](/certifications/exams/az-400) certification exam.
 
 The certification exam is for DevOps professionals. Combine people, processes, and technologies to continuously deliver valuable products and services that meet end-user needs and business goals. DevOps professionals streamline delivery by optimizing practices, improving communications and collaboration, and creating automation.
 
@@ -68,18 +68,18 @@ Successful learners will have prior knowledge and understanding of:
 
 If you're new to Azure and cloud computing, consider one of the following resources:
 
- -  Free online: [Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/).
- -  Instructor-led course: [AZ-900: Azure Fundamentals](/learn/certifications/courses/az-900t01).
+ -  Free online: [Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/).
+ -  Instructor-led course: [AZ-900: Azure Fundamentals](/certifications/courses/az-900t01).
 
 If you're new to Azure Administration, consider taking:
 
- -  Free online: [Prerequisites for Azure Administrators](/learn/paths/az-104-administrator-prerequisites/).
- -  Instructor-led courses: [AZ-104: Microsoft Azure Administrator](/learn/certifications/courses/az-104t00) and [AZ-010: Azure Administration for AWS SysOps](/learn/certifications/courses/az-010t00).
+ -  Free online: [Prerequisites for Azure Administrators](/training/paths/az-104-administrator-prerequisites/).
+ -  Instructor-led courses: [AZ-104: Microsoft Azure Administrator](/certifications/courses/az-104t00) and [AZ-010: Azure Administration for AWS SysOps](/certifications/courses/az-010t00).
 
 If you're new to Azure Developer, consider taking:
 
- -  Free online: [Create serverless applications](/learn/paths/create-serverless-applications/).
- -  Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00) and [AZ-020: Microsoft Azure Solutions for AWS Developers](/learn/certifications/courses/az-020t00).
+ -  Free online: [Create serverless applications](/training/paths/create-serverless-applications/).
+ -  Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/certifications/courses/az-204t00) and [AZ-020: Microsoft Azure Solutions for AWS Developers](/certifications/courses/az-020t00).
 
 You need to create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see:
 
