@@ -19,7 +19,7 @@ abstract: |
   - Design a strategy for integrating on-premises and cloud resources
 prerequisites: |
   None
-iconUrl: /learn/achievements/4-migrate-to-devops.svg
+iconUrl: /training/achievements/4-migrate-to-devops.svg
 levels:
 - advanced
 roles:

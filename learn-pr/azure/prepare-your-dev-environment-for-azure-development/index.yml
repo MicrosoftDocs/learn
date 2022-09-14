@@ -20,7 +20,7 @@ abstract:   |
   - Set up Eclipse for Java development
   - Set up IntelliJ IDEA for Java development
 prerequisites: None
-iconUrl: /learn/achievements/prepare-your-dev-environment-for-azure-development.svg
+iconUrl: /training/achievements/prepare-your-dev-environment-for-azure-development.svg
 levels:
 - beginner
 roles:

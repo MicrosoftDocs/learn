@@ -16,7 +16,7 @@ abstract: |
   - Distinguish between using a controller-based API and using a minimal API.
   - Create routes to handle reading and writing.
   - Use features from .NET 6 to make your code as succinct as possible.
-iconUrl: /learn/achievements/build-web-api-minimal-api.svg
+iconUrl: /training/achievements/build-web-api-minimal-api.svg
 levels:
   - beginner
 roles:

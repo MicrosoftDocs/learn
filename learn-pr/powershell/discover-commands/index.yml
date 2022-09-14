@@ -15,7 +15,7 @@ abstract: |
   When you finish this module, you'll be able to:
   - Inspect commands to understand how to call them.
   - Understand what a command returns and customize what it returns. 
-iconUrl: /learn/achievements/powershell/discover-commands.svg
+iconUrl: /training/achievements/powershell/discover-commands.svg
 levels:
   - beginner
 roles:

@@ -18,7 +18,7 @@ abstract: |
   - Configure group accounts and assignment types.
 prerequisites: |
   None
-iconUrl: /learn/achievements/user-group-accounts-configure.svg
+iconUrl: /training/achievements/user-group-accounts-configure.svg
 levels:
 - intermediate
 roles:

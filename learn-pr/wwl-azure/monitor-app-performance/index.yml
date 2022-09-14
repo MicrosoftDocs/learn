@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   *   You should be familiar with developer concepts and terminology.
   *   An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/monitoring-app-performance.svg
+iconUrl: /training/achievements/monitoring-app-performance.svg
 levels:
 - intermediate
 roles:

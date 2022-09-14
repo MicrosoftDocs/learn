@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience using the Azure AD portal.
   - Knowledge of Azure Active Directory (Azure AD) fundamentals, including multifactor authentication (MFA).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
   - beginner
 roles: 

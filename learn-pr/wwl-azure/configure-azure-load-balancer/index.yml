@@ -17,7 +17,7 @@ abstract: |
   - Configure load balancer SKUs, backend pools, session persistence, and health probes.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-load-balancer-configure.svg
+iconUrl: /training/achievements/azure-load-balancer-configure.svg
 levels:
 - intermediate
 roles:

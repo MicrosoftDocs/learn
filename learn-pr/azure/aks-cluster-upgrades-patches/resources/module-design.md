@@ -15,9 +15,9 @@
 
 ## Prerequisites
 
-- A basic understanding of [containerization](/learn/modules/intro-to-docker-containers/).
+- A basic understanding of [containerization](/training/modules/intro-to-docker-containers/).
 
-- A basic understanding of [Azure Kubernetes Service](/learn/modules/intro-to-azure-kubernetes-service/).
+- A basic understanding of [Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).
 
 ## Summary
 

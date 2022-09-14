@@ -6,7 +6,7 @@ As part of a larger team, you must know what the capabilities are to query and e
 
 ## Skills measured
 
-Log Analytics querying is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Log Analytics querying is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Monitor and back up Azure resources (10–15%)
 

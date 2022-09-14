@@ -25,7 +25,7 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - Basic knowledge of Kubernetes and its concepts
   - Basic knowledge of AKS and its concepts
   - Basic knowledge of microservice concepts
-iconUrl: /learn/achievements/aks-app-scale-keda.svg
+iconUrl: /training/achievements/aks-app-scale-keda.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
   - beginner
 roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)

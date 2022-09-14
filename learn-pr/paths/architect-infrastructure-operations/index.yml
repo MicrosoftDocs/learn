@@ -12,7 +12,7 @@ metadata:
 title: Architect infrastructure operations in Azure
 summary: Learn how to monitor, analyze, and manage the ongoing operation of your infrastructure in Azure.
 prerequisites: None
-iconUrl: /learn/achievements/architect-infrastructure-operations.svg
+iconUrl: /training/achievements/architect-infrastructure-operations.svg
 levels:
 - intermediate
 roles:

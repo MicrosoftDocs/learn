@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Azure VMs
   - Ability to execute scripts with Azure CLI and PowerShell
-iconUrl: /learn/achievements/protect-vm-settings-with-dsc.svg
+iconUrl: /training/achievements/protect-vm-settings-with-dsc.svg
 badge:
   uid: learn.azure.protect-vm-settings-with-dsc.badge
 levels: 

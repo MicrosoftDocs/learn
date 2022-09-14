@@ -17,7 +17,7 @@ abstract: |
   - Use monitoring data to diagnose problems
 prerequisites: | 
   - Familiarity with virtualization and Azure virtual machines
-iconUrl: /learn/achievements/monitor-azure-vm-using-diagnostic-data.svg
+iconUrl: /training/achievements/monitor-azure-vm-using-diagnostic-data.svg
 levels:
 - beginner
 roles:

@@ -21,7 +21,7 @@ prerequisites: |
   - Familiarity with editing text and code files in any text editor
   - Beginner-level experience writing JavaScript code
   - Experience using the command line
-iconUrl: /learn/achievements/intro-to-nodejs.svg
+iconUrl: /training/achievements/intro-to-nodejs.svg
 levels:
   - beginner
 roles:

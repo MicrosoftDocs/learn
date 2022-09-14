@@ -17,7 +17,7 @@ prerequisites: |
   *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
 summary: |
   This learning path covers Windows Management Instrumentation (WMI) and Common Information Model (CIM). These technologies help to access information about a computer. Additionally, both technologies provide local and remote access to management information from the operating system, computer hardware, and installed software.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

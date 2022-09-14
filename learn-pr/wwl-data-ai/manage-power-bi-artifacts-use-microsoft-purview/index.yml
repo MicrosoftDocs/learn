@@ -17,7 +17,7 @@ abstract: |
   * Describe the schema details and data lineage tracing of Power BI data assets.
 prerequisites: |
   - Familiarity with the Azure data ecosystem.
-iconUrl: /learn/achievements/4-manage-power-bi-artifacts-by-using-azure-purview.svg
+iconUrl: /training/achievements/4-manage-power-bi-artifacts-by-using-azure-purview.svg
 levels:
 - beginner
 roles:

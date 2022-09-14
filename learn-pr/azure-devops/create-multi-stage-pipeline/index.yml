@@ -23,7 +23,7 @@ prerequisites: |
   - .NET 6.0 SDK
   - Git
   - A GitHub account
-iconUrl: /learn/achievements/azure-devops/create-multi-stage-pipeline.svg
+iconUrl: /training/achievements/azure-devops/create-multi-stage-pipeline.svg
 levels:
 - beginner
 roles:

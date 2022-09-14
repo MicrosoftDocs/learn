@@ -17,7 +17,7 @@ abstract: |
   - Customize the appearance of a `ListView` row by using built-in cell types
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/display-collections-in-xamarin-forms-apps-with-listview-badge.svg
+iconUrl: /training/achievements/xamarin/display-collections-in-xamarin-forms-apps-with-listview-badge.svg
 levels: 
 - intermediate
 roles: 

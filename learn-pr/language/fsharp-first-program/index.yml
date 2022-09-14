@@ -17,7 +17,7 @@ abstract: |
   - Output to the screen.
   - Read from the console and capture user input.
   - Convert between data types.
-iconUrl: /learn/achievements/fsharp-create-first-project.svg
+iconUrl: /training/achievements/fsharp-create-first-project.svg
 levels:
   - beginner
 roles:

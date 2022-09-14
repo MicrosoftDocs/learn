@@ -17,7 +17,7 @@ abstract: |
   - Configure Log Analytics agent to collect Sysmon events
 prerequisites: |
   Basic knowledge of operational concepts such as monitoring, logging, and alerting.
-iconUrl: /learn/achievements/connect-windows-hosts-to-azure-sentinel.svg
+iconUrl: /training/achievements/connect-windows-hosts-to-azure-sentinel.svg
 levels:
 - intermediate
 roles:

@@ -16,7 +16,7 @@ abstract: |
   - Watch a demo that shows how to modernize an application by using Azure Logic Apps
   - Recognize the value of Azure, as illustrated by these demos
 prerequisites: ""
-iconUrl: /learn/achievements/azure-in-action.svg
+iconUrl: /training/achievements/azure-in-action.svg
 levels:
 - beginner
 roles:

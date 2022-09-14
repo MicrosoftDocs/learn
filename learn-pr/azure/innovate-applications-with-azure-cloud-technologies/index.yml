@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Foundational understanding of cloud adoption 
   - Understanding of your organization's products, markets, and customers 
-iconUrl: /learn/achievements/innovate-applications-azure-cloud-technologies.svg
+iconUrl: /training/achievements/innovate-applications-azure-cloud-technologies.svg
 ratingEnabled: true
 levels:
 - intermediate

@@ -17,7 +17,7 @@ abstract: |
   - Configure and deploy web app certificates
 prerequisites: |
   - None
-iconUrl: /learn/achievements/application-security.svg
+iconUrl: /training/achievements/application-security.svg
 levels:
 - intermediate
 roles:

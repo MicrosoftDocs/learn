@@ -20,7 +20,7 @@ abstract: |
   - Read from files
   - Write to files
   - Parse data in files
-iconUrl: /learn/achievements/nodejs-files.svg
+iconUrl: /training/achievements/nodejs-files.svg
 levels:
   - beginner
 roles:

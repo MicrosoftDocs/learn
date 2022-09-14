@@ -27,7 +27,7 @@ prerequisites: |
   - Understand machine learning models for data science.
   - Know simple cloud-based machine learning models for data science.
 # placeholder icon
-iconUrl: /learn/achievements/reactors/test-azure-cognitive-services.svg
+iconUrl: /training/achievements/reactors/test-azure-cognitive-services.svg
 hidden: true
 levels:
 - beginner

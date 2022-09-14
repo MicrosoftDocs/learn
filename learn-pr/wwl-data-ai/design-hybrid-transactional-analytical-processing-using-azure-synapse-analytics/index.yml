@@ -15,8 +15,8 @@ abstract: |
   - Describe Hybrid Transactional / Analytical Processing patterns.
   - Identify Azure Synapse Link services for HTAP.
 prerequisites: |
-  Before starting this module, you should have a basic knowledge of data analytics and Azure services for data. Consider completing the [Azure Data Fundamentals](/learn/certifications/azure-data-fundamentals/?azure-portal=true) certification first.
-iconUrl: /learn/achievements/design-a-hybrid-transactional-and-analytical-processing.svg
+  Before starting this module, you should have a basic knowledge of data analytics and Azure services for data. Consider completing the [Azure Data Fundamentals](/certifications/azure-data-fundamentals/?azure-portal=true) certification first.
+iconUrl: /training/achievements/design-a-hybrid-transactional-and-analytical-processing.svg
 levels:
 - intermediate
 roles:

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Visual Studio Code with Azure extensions installed
   - Node.js installed
-iconUrl: /learn/achievements/build-node-cosmos-app-vscode.svg
+iconUrl: /training/achievements/build-node-cosmos-app-vscode.svg
 levels:
 - beginner
 roles:

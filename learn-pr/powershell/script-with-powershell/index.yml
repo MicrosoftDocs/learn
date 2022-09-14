@@ -16,7 +16,7 @@ abstract: |
   - Use variables and parameters to make your scripts flexible.
   - Apply flow-control logic to make intelligent decisions.  
   - Add robustness to your scripts by adding error management.
-iconUrl: /learn/achievements/powershell/scripting-with-powershell.svg
+iconUrl: /training/achievements/powershell/scripting-with-powershell.svg
 levels:
   - beginner
 roles:

@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Working knowledge of common Windows Server administration basics
   - Experience with managing Active Directory Domain Services
-iconUrl: /learn/achievements/9-hardening-windows-server.svg
+iconUrl: /training/achievements/9-hardening-windows-server.svg
 hidden: true
 levels:
 - intermediate

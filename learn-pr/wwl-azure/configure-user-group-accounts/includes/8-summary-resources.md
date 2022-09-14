@@ -12,8 +12,8 @@ In this module, you learned that every user who wants access to Azure resources 
 
 ## Learn more with self-paced training
 
-- Explore how to [create users and groups in Azure AD](/learn/modules/create-users-and-groups-in-azure-active-directory/).
+- Explore how to [create users and groups in Azure AD](/training/modules/create-users-and-groups-in-azure-active-directory/).
 
 ## Learn more with optional hands-on exercises
 
-- Manage users and groups in [Azure AD (sandbox)](/learn/modules/manage-users-and-groups-in-aad/).
+- Manage users and groups in [Azure AD (sandbox)](/training/modules/manage-users-and-groups-in-aad/).

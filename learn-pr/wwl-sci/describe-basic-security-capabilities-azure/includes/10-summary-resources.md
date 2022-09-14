@@ -22,4 +22,4 @@ To find out more about any of the topics covered in this module, go to:
 - [Network Security Groups](/azure/virtual-network/network-security-groups-overview)
 - [Azure Bastion](/azure/bastion/)
 - [Understanding just-in-time (JIT) VM access](/azure/defender-for-cloud/just-in-time-access-overview)
-- [Encryption](/learn/modules/intro-to-security-in-azure/4-encryption)
+- [Encryption](/training/modules/intro-to-security-in-azure/4-encryption)

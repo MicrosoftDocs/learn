@@ -20,4 +20,4 @@ In this module, you will:
 - A GitHub account
 - The ability to navigate and edit files in GitHub
 
-It is recommended that you complete [Manage software delivery by using a release based workflow on GitHub](/learn/modules/release-based-workflow-github) before beginning this module.
+It is recommended that you complete [Manage software delivery by using a release based workflow on GitHub](/training/modules/release-based-workflow-github) before beginning this module.

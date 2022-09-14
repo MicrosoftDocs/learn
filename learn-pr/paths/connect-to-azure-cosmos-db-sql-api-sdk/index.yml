@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
   Use the Microsoft.Azure.Cosmos library from NuGet to connect to an Azure Cosmos DB SQL API account from a .NET application.
-iconUrl: /learn/achievements/azure-cosmos-database-connect-sdk.svg
+iconUrl: /training/achievements/azure-cosmos-database-connect-sdk.svg
 levels:
 - intermediate
 roles:

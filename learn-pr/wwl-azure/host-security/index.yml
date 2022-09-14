@@ -19,7 +19,7 @@ abstract: |
   - Practice layered security by reviewing and implementing Security Center and Security Benchmarks
 prerequisites: |
   - None
-iconUrl: /learn/achievements/security-host.svg
+iconUrl: /training/achievements/security-host.svg
 levels:
 - intermediate
 roles:

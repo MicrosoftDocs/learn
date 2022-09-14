@@ -16,7 +16,7 @@ abstract: |
   *   Connect a github repository to Microsoft Sentinel
 prerequisites: |
   Azure and Microsoft Sentinel experience.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

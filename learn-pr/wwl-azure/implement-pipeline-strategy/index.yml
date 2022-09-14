@@ -17,7 +17,7 @@ abstract: |
   - Implement multi-agent builds
   - Use different source control types available in Azure Pipelines
 prerequisites: ""
-iconUrl: /learn/achievements/5-implement-a-pipeline-strategy.svg
+iconUrl: /training/achievements/5-implement-a-pipeline-strategy.svg
 levels:
 - advanced
 roles:

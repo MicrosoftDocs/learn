@@ -18,7 +18,7 @@ abstract: |
   *   Visualize data with serverless SQL pools
 prerequisites: |
   - It is recommended that students understand how Azure Synapse Analytics and Power BI works.
-iconUrl: /learn/achievements/azure-synapse-analytics-reports-with-pbi.svg
+iconUrl: /training/achievements/azure-synapse-analytics-reports-with-pbi.svg
 levels:
 - intermediate
 roles:

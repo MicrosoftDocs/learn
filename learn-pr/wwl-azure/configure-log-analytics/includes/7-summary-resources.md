@@ -12,6 +12,6 @@ You can learn more by reviewing the following. A sandbox indicates a hands-on ex
 
  -  [Overview of Log Analytics in Azure Monitor](/azure/azure-monitor/logs/log-analytics-overview)
  -  [Log Analytics tutorial](/azure/azure-monitor/logs/log-analytics-tutorial)
- -  [Analyze your Azure infrastructure by using Azure Monitor logs (Sandbox)](/learn/modules/analyze-infrastructure-with-azure-monitor-logs/)
- -  [Monitor performance of virtual machines by using Azure Monitor for VMs (Sandbox)](/learn/modules/monitor-performance-using-azure-monitor-for-vms/)
- -  [Write your first query with the Kusto Query Language](/learn/modules/write-first-query-kusto-query-language/)
+ -  [Analyze your Azure infrastructure by using Azure Monitor logs (Sandbox)](/training/modules/analyze-infrastructure-with-azure-monitor-logs/)
+ -  [Monitor performance of virtual machines by using Azure Monitor for VMs (Sandbox)](/training/modules/monitor-performance-using-azure-monitor-for-vms/)
+ -  [Write your first query with the Kusto Query Language](/training/modules/write-first-query-kusto-query-language/)

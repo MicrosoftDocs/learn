@@ -16,7 +16,7 @@ abstract: |
   - Learn the steps to export data from Azure
 prerequisites: |
   - Familiarity with Azure Storage and Azure Blob storage
-iconUrl: /learn/achievements/export-data-with-azure-import-export.svg
+iconUrl: /training/achievements/export-data-with-azure-import-export.svg
 levels: 
 - beginner
 roles: 

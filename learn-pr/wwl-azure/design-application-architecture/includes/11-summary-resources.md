@@ -36,22 +36,22 @@ Now that you've completed this module, you should be able to:
 
 ## Learn more with self-paced training
 
-- [Choose a messaging model in Azure to loosely connect your services](/learn/modules/implement-message-workflows-with-service-bus/)
+- [Choose a messaging model in Azure to loosely connect your services](/training/modules/implement-message-workflows-with-service-bus/)
 
-- [Introduction to Azure API Management](/learn/modules/introduction-to-azure-api-management/)
+- [Introduction to Azure API Management](/training/modules/introduction-to-azure-api-management/)
 
-- [Introduction to Event Hubs](/learn/modules/intro-to-event-hubs/)
+- [Introduction to Event Hubs](/training/modules/intro-to-event-hubs/)
 
-- [Deploy Azure infrastructure by using JSON ARM templates](/learn/modules/create-azure-resource-manager-template-vs-code/)
+- [Deploy Azure infrastructure by using JSON ARM templates](/training/modules/create-azure-resource-manager-template-vs-code/)
 
-- [Introduction to infrastructure as code using Bicep](/learn/modules/introduction-to-infrastructure-as-code-using-bicep/)
+- [Introduction to infrastructure as code using Bicep](/training/modules/introduction-to-infrastructure-as-code-using-bicep/)
 
-- [Message queues and stream processing](/learn/modules/cmu-message-queues-streams/)
+- [Message queues and stream processing](/training/modules/cmu-message-queues-streams/)
 
-- [Communicate between applications with Azure Queue storage](/learn/modules/communicate-between-apps-with-azure-queue-storage/)
+- [Communicate between applications with Azure Queue storage](/training/modules/communicate-between-apps-with-azure-queue-storage/)
 
-- [Introduction to Azure Cache for Redis](/learn/modules/intro-to-azure-cache-for-redis/)
+- [Introduction to Azure Cache for Redis](/training/modules/intro-to-azure-cache-for-redis/)
 
 ## Learn more with optional hands-on exercises
 
-- [Exercise - Implement a Service Bus topic and queue](/learn/modules/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue)
+- [Exercise - Implement a Service Bus topic and queue](/training/modules/implement-message-workflows-with-service-bus/3-exercise-implement-a-service-bus-topic-and-queue)

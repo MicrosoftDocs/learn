@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Familiarity with creating an Azure subscription and storage account.
   - Basic understanding of file shares.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

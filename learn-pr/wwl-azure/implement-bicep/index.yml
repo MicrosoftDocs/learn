@@ -17,7 +17,7 @@ abstract: |
   - Use Bicep to deploy resources to Azure
   - Deploy Bicep files in Cloud Shell and Visual Studio Code
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - advanced
 roles:

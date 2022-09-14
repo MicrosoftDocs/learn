@@ -13,7 +13,7 @@ prerequisites: |
   Some familiarity with machine learning and Azure Machine Learning.
 summary: |
   Machine learning operations (MLOps) applies DevOps principles to machine learning projects. Learn about which DevOps principles help in scaling a machine learning project from experimentation to production.
-iconUrl: /learn/achievements/introduction-machine-learn-operations.svg
+iconUrl: /training/achievements/introduction-machine-learn-operations.svg
 levels:
 - beginner
 roles:

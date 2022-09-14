@@ -23,7 +23,7 @@ prerequisites: |
   - [GitHub](https://github.com) account
   - [Visual Studio Code](https://code.visualstudio.com)
   - Beginner-level experience with Azure Functions
-iconUrl: /learn/achievements/publish-static-web-app-api-preview-url.svg
+iconUrl: /training/achievements/publish-static-web-app-api-preview-url.svg
 levels:
   - beginner
 roles:

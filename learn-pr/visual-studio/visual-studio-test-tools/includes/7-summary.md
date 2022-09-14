@@ -10,7 +10,7 @@ With tests, you can create test methods to put your app through its paces progra
 
 ## References
 
-* [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/)
+* [Introduction to software testing concepts](/training/modules/visual-studio-test-concepts/)
 * [Testing cross-platform with the command line](/dotnet/core/testing/unit-testing-with-mstest)
-* [Run tests in Azure DevOps](/learn/modules/run-functional-tests-azure-pipelines)
+* [Run tests in Azure DevOps](/training/modules/run-functional-tests-azure-pipelines)
 * [Test Explorer documentation](/visualstudio/test/run-unit-tests-with-test-explorer)

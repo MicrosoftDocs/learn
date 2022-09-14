@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   •	Conceptual knowledge of Azure compute solutions.
   •	Working experience with virtual machines, containers, and app service.
-iconUrl: /learn/achievements/design-compute-solution.svg
+iconUrl: /training/achievements/design-compute-solution.svg
 levels:
 - advanced
 roles:

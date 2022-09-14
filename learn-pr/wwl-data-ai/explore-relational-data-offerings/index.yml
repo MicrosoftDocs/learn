@@ -18,7 +18,7 @@ abstract: |
   - Identify common relational database objects
 prerequisites: |
   None
-iconUrl: /learn/achievements/explore-relational-data-offerings-azure.svg
+iconUrl: /training/achievements/explore-relational-data-offerings-azure.svg
 levels:
 - beginner
 roles:

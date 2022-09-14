@@ -21,7 +21,7 @@ prerequisites: |
   *   Familiarity to manage Azure resources with Windows PowerShell
 summary: |
   This learning path explains how to efficiently manage the most commonly used services in Microsoft 365, such as Microsoft Azure Active Directory (Azure AD), Microsoft Exchange Online, Microsoft SharePoint Online, and Microsoft Teams.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

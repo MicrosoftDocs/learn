@@ -18,7 +18,7 @@ abstract: |
   - Configure access to data in Azure Key Vault using RBAC-policy
 prerequisites: |
   None
-iconUrl: /learn/achievements/implement-access-management-for-azure-resources.svg
+iconUrl: /training/achievements/implement-access-management-for-azure-resources.svg
 levels:
 - advanced
 roles:

@@ -19,7 +19,7 @@ abstract: |
   - Map core network components to Azure networking.
 prerequisites: | 
   - Fundamentals of computer networking
-iconUrl: /learn/achievements/network-fundamentals-2.svg
+iconUrl: /training/achievements/network-fundamentals-2.svg
 levels:
 - beginner
 roles:
