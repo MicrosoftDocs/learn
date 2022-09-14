@@ -20,7 +20,7 @@ prerequisites: |
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the features, capabilities, and data workflows of an IoT solution.
   - Describe the components and capabilities of Azure IoT Central.
-iconUrl: /learn/achievements/device-template-create-manage.svg
+iconUrl: /training/achievements/device-template-create-manage.svg
 levels:
 - intermediate
 roles:

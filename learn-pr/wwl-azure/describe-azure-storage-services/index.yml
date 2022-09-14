@@ -20,7 +20,7 @@ abstract: |
   - Describe migration options, including Azure Migrate and Azure Data Box
 prerequisites: |
   * Basic familiarity with IT terms and concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
