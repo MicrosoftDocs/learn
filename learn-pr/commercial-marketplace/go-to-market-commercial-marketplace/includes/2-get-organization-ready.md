@@ -7,7 +7,7 @@ A good strategy starts with consensus among the members of your company's leader
 Consider nominating someone from your company to act as your team’s lead point of contact for the Microsoft commercial marketplace. This person can help your leadership team understand the benefits of the commercial marketplace for your company and its customers, answering questions that get raised by members of your team.
 
 > [!TIP]
-> Start educating your team by encouraging them to complete the **[Introduction to the Microsoft commercial marketplace module on Microsoft Learn](/learn/modules/intro-commercial-marketplace/)**. This brief module provides an overview of the benefits of joining the commercial marketplace for you and your customers.
+> Start educating your team by encouraging them to complete the **[Introduction to the Microsoft commercial marketplace module on Microsoft Learn](/training/modules/intro-commercial-marketplace/)**. This brief module provides an overview of the benefits of joining the commercial marketplace for you and your customers.
 
 After learning what the commercial marketplace is, your leaders will need to come to an agreement on your organization's goals for selling your products and services through the commercial marketplace. Some common benefits include:
 

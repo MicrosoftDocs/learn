@@ -18,7 +18,7 @@ Most of our training content is in the form of *modules*, which are organized in
 
 ## Browse and search for educator content
 
-Learn has thousands of modules and learning paths to help you get started with Microsoft products. To browse content, go to the [Microsoft Learn "browse all" page](/learn/browse/).
+Learn has thousands of modules and learning paths to help you get started with Microsoft products. To browse content, go to the [Microsoft Learn "browse all" page](/training/browse/).
 
 ### Search using filters
 
