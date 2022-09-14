@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Familiarity with Azure Cosmos DB concepts, like databases, containers, documents, and throughput in Request Units per second (RU/s)
   - Familiarity with using Azure Cosmos DB resources and data in the Azure portal, like using Data Explorer, running queries, and viewing query stats
-iconUrl: /learn/achievements/model-partition-data-azure-cosmos-db.svg
+iconUrl: /training/achievements/model-partition-data-azure-cosmos-db.svg
 levels: 
   - intermediate
 roles:
