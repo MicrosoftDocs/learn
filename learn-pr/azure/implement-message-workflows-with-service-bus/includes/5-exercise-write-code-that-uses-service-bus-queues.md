@@ -190,7 +190,7 @@ You can get these values from the connection string.
 2. Select the project file **privatemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 
     ```json
-    Project Sdk="Microsoft.NET.Sdk">
+    <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
@@ -433,7 +433,7 @@ You can get these values from the connection string.
 2. Select the project file **privatemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file. Aslo, remove `Microsoft.Azure.ServiceBus` entry if it exists. 
 
     ```json
-    Project Sdk="Microsoft.NET.Sdk">
+    <Project Sdk="Microsoft.NET.Sdk">
       <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net6.0</TargetFramework>
