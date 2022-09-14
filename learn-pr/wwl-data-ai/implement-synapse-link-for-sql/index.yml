@@ -16,8 +16,8 @@ abstract: |
   - Configure Azure Synapse Link for Azure SQL Database.
   - Configure Azure Synapse Link for Microsoft SQL Server.
 prerequisites: |
-  Before starting this module, you should be familiar with Azure Synapse Analytics, Azure SQL Database, and SQL Server. Consider completing [Explore relational database services in Azure](/learn/modules/explore-provision-deploy-relational-database-offerings-azure?azure-portal=true) and [Introduction to Azure Synapse Analytics](/learn/modules/introduction-azure-synapse-analytics?azure-portal=true) first.
-iconUrl: /learn/achievements/generic-badge.svg
+  Before starting this module, you should be familiar with Azure Synapse Analytics, Azure SQL Database, and SQL Server. Consider completing [Explore relational database services in Azure](/training/modules/explore-provision-deploy-relational-database-offerings-azure?azure-portal=true) and [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics?azure-portal=true) first.
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
