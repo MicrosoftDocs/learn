@@ -23,7 +23,7 @@ prerequisites: |
   - Familiarity with using Azure Cloud Shell including Bash and/or PowerShell
   - Experience running Linux workloads on-premises or in the cloud 
 hidden: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
