@@ -16,6 +16,6 @@ Azure AD uses the OAuth 2.0 protocol for handling authorization. OAuth 2.0 provi
 
 ## Application registration
 
-Azure AD requires your application to be registered before providing identity and access management services. The application registration allows you to specify the name of your application, the type of the application (like web, desktop), and the sign-in audience. The sign-in audience specifies what types of user accounts are allowed to sign-in to a given application.
+Azure AD requires your application to be registered before providing identity and access management services. The application registration allows you to specify the name and type of the application (like web, desktop), and the sign-in audience. The sign-in audience specifies what types of user accounts are allowed to sign-in to a given application.
 
 When an application registration is complete, you receive an **Application (client) ID** that uniquely identifies your application in Azure AD. This ID is used in your application code or in the authentication library as part of the requests made to Azure AD.
