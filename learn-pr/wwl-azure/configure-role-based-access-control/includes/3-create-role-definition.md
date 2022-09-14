@@ -2,17 +2,17 @@ A role definition consists of sets of permissions that are defined in a JSON fil
 
 - _Actions_ permissions identify what actions are allowed.
 
-- _NotActions_ permissions specify what actions are not allowed.
+- _NotActions_ permissions specify what actions aren't allowed.
 
 - _DataActions_ permissions indicate how data can be changed or used. 
 
 - _AssignableScopes_ permissions list the scopes where a role definition can be assigned. 
 
-The following diagram shows the built-in _Contributor_ role in Azure RBAC, which has three sets of permissions.
+The following diagram shows details for the _Contributor_ role in Azure RBAC, which has three sets of permissions.
 
 :::image type="content" source="../media/role-definition-bf297cac.png" alt-text="Diagram that shows built-in roles in Azure RBAC and custom roles. Permission sets are shown for the built-in Contributor role, including Actions, Not Actions, and Data Actions." border="false":::
 
-The _Actions_ permissions show the _Contributor_ role has all action privileges. The asterisk `"*"` wildcard means "all." The _NotActions_ permissions narrows the amount of privileges provided by the _Actions_ set, and denies three actions:
+The _Actions_ permissions show the _Contributor_ role has all action privileges. The asterisk `"*"` wildcard means "all." The _NotActions_ permissions narrow the privileges provided by the _Actions_ set, and deny three actions:
 
 - `Authorization/*/Delete`: Not authorized to delete or remove for "all."
 - `Authorization/*/Write`: Not authorized to write or change for "all."
@@ -52,7 +52,7 @@ Review the following characteristics of role definitions:
 
 Use the _Actions_ and _NotActions_ permissions together to grant and deny the exact privileges for each role. The _Actions_ permissions can provide the breadth of access and the _NotActons_ permissions can narrow the access. 
 
-The following table shows how the _Actions_ or _NotActions_ permissions are used in the definitions for three built-in roles: _Owner_, _Contributor_, and _Reader_. Starting from the _Owner_ role, the permissions are narrowed to grant more limited access for the _Contributor_, and _Reader_ roles.
+The following table shows how the _Actions_ or _NotActions_ permissions are used in the definitions for three built-in roles: _Owner_, _Contributor_, and _Reader_. The permissions are narrowed from the _Owner_ role to the _Contributor_ and _Reader_ roles to limit access.
 
 | Role&nbsp;name| Description | Actions&nbsp;permissions | NotActions&nbsp;permissions |
 | --- | --- | --- | --- |
@@ -80,7 +80,7 @@ After you define the role permissions, you use the _AssignableScopes_ permission
 
 Consider the following points about creating role definitions in Azure RBAC:
 
-- **Consider using built-in roles**. Review the list of [built-in role definitions](/azure/role-based-access-control/built-in-roles) in Azure RBAC. There are over 100 pre-defined role definitions to choose from, such as _Owner_, _Backup Operator_, _Website Contributor_, and _SQL Securiy Manager_. Built-in roles are defined for several categories of services, tasks, and users, including General, Networking, Storage, Databases, and more.
+- **Consider using built-in roles**. Review the list of [built-in role definitions](/azure/role-based-access-control/built-in-roles) in Azure RBAC. There are over 100 pre-defined role definitions to choose from, such as _Owner_, _Backup Operator_, _Website Contributor_, and _SQL Security Manager_. Built-in roles are defined for several categories of services, tasks, and users, including General, Networking, Storage, Databases, and more.
 
 - **Consider creating custom definitions**. Define your own [custom roles](/azure/role-based-access-control/custom-roles) to meet specific business scenarios for your organization. You can modify the permissions for a built-in role to meet the specific requirements for your organization. You can also create custom role definitions from scratch.
 
