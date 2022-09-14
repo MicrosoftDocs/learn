@@ -1,4 +1,4 @@
-Organizations build apps to serve various use cases. While most applications require users to interact with them, there are also requirements to build applications that run as background processes. A monthly report generation application is a perfect example of an application that can run as a background process. These apps, given that they access resources independently of users, need to prove their identity. Azure Active Directory (Azure AD) lets you authenticate your app and provide authorized access to a protected web API.
+Organizations build apps to serve various use cases. While most applications require users to interact with them, there are also requirements to build applications that run as background processes, for example, the generation of monthly reports. Because these apps access resources independently of users, the apps themselves need to prove their identity. Azure Active Directory (Azure AD) enables you to authenticate your app and provide authorized access to a protected web API.
 
 ## Example scenario
 
