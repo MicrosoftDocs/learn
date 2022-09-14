@@ -12,7 +12,7 @@ Supplemental Resources:
 
 - [GitHub](https://github.com/MicrosoftDocs/)
 
-- [Exam AI-102: Designing and Implementing a Microsoft Azure AI Solution](/learn/certifications/exams/ai-102) 
+- [Exam AI-102: Designing and Implementing a Microsoft Azure AI Solution](/certifications/exams/ai-102) 
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 
