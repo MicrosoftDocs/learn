@@ -3,7 +3,7 @@ uid: learn.caching-and-performance-azure-storage-and-disks
 metadata:
   title: Caching and performance in Azure storage disks
   description: Learn about Azure VM disk performance and how to enable caching to help optimize read and write access to storage.
-  ms.date: 09/24/2018
+  ms.date: 09/14/2022
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
