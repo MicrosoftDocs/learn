@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with Azure Files
   - Basic knowledge of Windows Server file shares
   - (Optional) Access to an Azure subscription
-iconUrl: /learn/achievements/extend-share-capacity-with-azure-file-sync.svg
+iconUrl: /training/achievements/extend-share-capacity-with-azure-file-sync.svg
 ratingEnabled: false
 levels:
 - beginner

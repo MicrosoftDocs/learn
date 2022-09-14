@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of the basic features and benefits of Application Insights
   - Ability to create and deploy Azure App Service web apps
   - Basic knowledge of web application development
-iconUrl: /learn/achievements/instrument-web-app-code-with-application-insights.svg
+iconUrl: /training/achievements/instrument-web-app-code-with-application-insights.svg
 levels:
 - beginner
 roles:
