@@ -16,7 +16,7 @@ abstract: |
   - Rollback stored procedure transactions
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-multi-item-transaction.svg
+iconUrl: /training/achievements/azure-cosmos-db-multi-item-transaction.svg
 levels:
 - intermediate
 roles:
