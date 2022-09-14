@@ -16,7 +16,7 @@ Supplemental Resources:
 
 - [Microsoft Learn](https://aka.ms/learn) 
 
-- [Microsoft Learn for Educators](/learn/educator-center/?source=mec) 
+- [Microsoft Learn for Educators](/training/educator-center/?source=mec) 
 
 - [Microsoft Technical Documentation](https://aka.ms/docs) 
 
