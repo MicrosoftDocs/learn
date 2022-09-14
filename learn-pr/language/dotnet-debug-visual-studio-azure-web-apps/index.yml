@@ -15,7 +15,7 @@ abstract: |
   - Deploy an ASP.NET Core app to Azure App Service.
   - Configure remote debugging settings.
   - Attach the Visual Studio debugger to apps running in Azure App Service.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

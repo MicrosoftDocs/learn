@@ -18,7 +18,7 @@ prerequisites: |
   - Experience using the `if-elseif-else` construct for adding branching logic
   - Experience working with variables, string interpolation, and printing output
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-switch-case.svg
+iconUrl: /training/achievements/csharp-switch-case.svg
 levels:
 - beginner
 roles:

@@ -21,7 +21,7 @@ prerequisites: |
   - Introductory experience with literal values of type `string` and `decimal`
   - Introductory experience with `Console.WriteLine()`
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-format-strings.svg
+iconUrl: /training/achievements/csharp-format-strings.svg
 levels:
 - beginner
 roles:

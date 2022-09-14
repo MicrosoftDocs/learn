@@ -21,7 +21,7 @@ prerequisites: |
   - Introductory level experience with the if statement
   - Introductory level experience with built-in methods on data types (like `string`)
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-arrays-operations.svg
+iconUrl: /training/achievements/csharp-arrays-operations.svg
 levels:
 - beginner
 roles:
