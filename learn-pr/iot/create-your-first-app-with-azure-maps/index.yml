@@ -21,7 +21,7 @@ prerequisites: |
   - Ability to navigate the Azure portal 
   - Ability to use HTML, and JavaScript, at the beginner level 
   - Experience using Visual Studio Code, at the beginner level 
-iconUrl: /learn/achievements/iot/create-your-first-app-with-azure-maps.svg
+iconUrl: /training/achievements/iot/create-your-first-app-with-azure-maps.svg
 ratingEnabled: true
 levels:
 - beginner

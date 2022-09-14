@@ -19,4 +19,4 @@ After you complete this module, you'll have the necessary knowledge to expand yo
 ## Prerequisites
 
 - Working knowledge of C or C++
-- Previous modules in this [learning path](/learn/paths/azure-rtos-threadx/?azure-portal=true)
+- Previous modules in this [learning path](/training/paths/azure-rtos-threadx/?azure-portal=true)
