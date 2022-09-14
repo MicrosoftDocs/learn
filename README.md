@@ -17,8 +17,8 @@ The content in Learn repos is developed, organized, and displayed differently th
 
 ### Home, landing, and browse pages
 
-* [Microsoft Learn home page](https://docs.microsoft.com/learn/) (*Also available via `https://microsoft.com/learn` and `https://docs.com/learn`)
-* [Browse all training resources](https://docs.microsoft.com/learn/browse/)
+* [Microsoft Learn home page](https://docs.microsoft.com/training/) (*Also available via `https://microsoft.com/learn` and `https://docs.com/learn`)
+* [Browse all training resources](https://docs.microsoft.com/training/browse/)
 
 To view all of the available landing pages, you can navigate to them from the header of the home page.
 
@@ -46,6 +46,6 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## Questions
 
-View the [Microsoft Learn FAQ](https://docs.microsoft.com/learn/support/faq).
+View the [Microsoft Learn FAQ](https://docs.microsoft.com/training/support/faq).
 
 For questions related to repo and build issues, contact: [learn-repo-managers@microsoft.com](mailto:learn-repo-managers@microsoft.com)

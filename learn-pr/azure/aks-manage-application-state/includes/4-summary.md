@@ -39,7 +39,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
+- [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/)
 - [AKS documentation](/azure/aks/)
 - [AKS production baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)

@@ -12,12 +12,12 @@ In this module, you learned how to design a solution to log and monitor Azure re
 
 ## Learn more with self-paced training
 
-- Design a [holistic monitoring strategy on Azure](/learn/modules/design-monitoring-strategy-on-azure/).
+- Design a [holistic monitoring strategy on Azure](/training/modules/design-monitoring-strategy-on-azure/).
 
-- Improve [incident response with alerting on Azure](/learn/modules/incident-response-with-alerting-on-azure/).
+- Improve [incident response with alerting on Azure](/training/modules/incident-response-with-alerting-on-azure/).
 
-- Get an [introduction to Azure Data Explorer](/learn/modules/intro-to-azure-data-explorer/intro-to-azure-data-explorer/).
+- Get an [introduction to Azure Data Explorer](/training/modules/intro-to-azure-data-explorer/intro-to-azure-data-explorer/).
 
 ## Learn more with optional hands-on exercises
 
-- Monitor, diagnose, and troubleshoot [your Azure storage](/learn/modules/monitor-diagnose-and-troubleshoot-azure-storage/).
+- Monitor, diagnose, and troubleshoot [your Azure storage](/training/modules/monitor-diagnose-and-troubleshoot-azure-storage/).

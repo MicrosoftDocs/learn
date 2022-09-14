@@ -21,7 +21,7 @@ prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Experience with an Open Source data platform, such as PostgreSQL, MySQL, or MariaDB.
   - Ability to write SQL statements at a beginner level.
-iconUrl: /learn/achievements/deploy-mariadb-mysql-and-postgresql-on-azure.svg
+iconUrl: /training/achievements/deploy-mariadb-mysql-and-postgresql-on-azure.svg
 levels:
 - intermediate
 roles:

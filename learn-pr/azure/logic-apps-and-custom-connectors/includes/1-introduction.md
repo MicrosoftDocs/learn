@@ -1,22 +1,22 @@
-Azure Logic Apps includes many connectors to integrate with Microsoft and third-party services. If you want to connect a Logic App to a Web API that is not available already as a connector, you can create a custom connector for it.
+Azure Logic Apps includes many prebuilt connectors that integrate with Microsoft, Azure, Office 365, and external services. But, if you want to connect from your logic app workflow to a Web API that's not available as a connector, you can create a custom connector for that API.
 
-You're the lead developer at a picture framing company. Some of your company’s picture frame data is only accessible through a custom-built, in-house REST API. You have plans to build many automated workflows in Azure Logic Apps that need access to this data. For example, you want a workflow that automatically quotes a price for a frame given its dimensions.
+Imagine you're the lead developer at a picture frame company. You and other developers can access some of your company's picture frame data, but only through an in-house, custom-built REST API. You plan to create many automated workflows in Azure Logic Apps and need access to this data. For example, you want to create a workflow that automatically quotes a price for a frame, based on the dimensions.
 
-You’ll need to create a custom connector for the picture framing  REST API so that you can access it in Logic Apps.
+You'll need to create a custom connector for the picture frame REST API so that you can access that API from Azure Logic Apps.
 
-In this module, you will learn about custom connectors and how they determine the schema of a Web API. Then, you'll create a custom connector and use it to call the API from a Logic App.
+In this module, you'll learn about custom connectors and how they determine the schema for a Web API. Then, you'll create a custom connector, which you'll use to call the API from a logic app workflow.
 
-By the end of this module, you will be able to call any Web API from a Logic App.
+By the end of this module, you'll have the ability to call any Web API from a logic app workflow.
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll complete the following tasks:
 
-- Create a custom Logic Apps connector
+- Create a custom Azure Logic Apps connector
 - Define the behavior of the container using an OpenAPI definition
-- Use the connector from a Logic App
+- Use the connector from a logic app workflow
 
 ## Prerequisites
 
-- Basic familiarity with the authoring and running of Logic Apps
+- Basic familiarity with the authoring and running workflows in Azure Logic Apps
 - A basic understanding of APIs and REST

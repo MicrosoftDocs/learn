@@ -14,7 +14,7 @@ abstract: |
   Learn how to use the Computer Vision cognitive service to analyze images.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/analyze-images-computer-vision.svg
+iconUrl: /training/achievements/analyze-images-computer-vision.svg
 levels:
 - beginner
 roles:

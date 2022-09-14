@@ -17,7 +17,7 @@ abstract: |
   - Delete and restore packages
   - Configure access control and visibility
 prerequisites: ""
-iconUrl: /learn/achievements/introduction-github-packages.svg
+iconUrl: /training/achievements/introduction-github-packages.svg
 levels:
 - advanced
 roles:

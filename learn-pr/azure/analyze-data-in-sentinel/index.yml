@@ -22,7 +22,7 @@ prerequisites: |
   - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
   - Azure subscription
   - Microsoft Sentinel instance in your Azure subscription
-iconUrl: /learn/achievements/analyze-data-in-sentinel.svg
+iconUrl: /training/achievements/analyze-data-in-sentinel.svg
 levels:
 - beginner
 roles:

@@ -18,7 +18,7 @@ abstract:  |
 prerequisites: |
   - Familiarity with Azure App Service  
   - Basic knowledge of networking and DNS
-iconUrl: /learn/achievements/distribute-load-with-traffic-manager.svg
+iconUrl: /training/achievements/distribute-load-with-traffic-manager.svg
 levels:
 - beginner
 roles:

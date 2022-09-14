@@ -18,7 +18,7 @@ abstract: |
   - Write queries that use derived tables
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
-iconUrl: /learn/achievements/create-tabels-views-objects.svg
+iconUrl: /training/achievements/create-tabels-views-objects.svg
 levels:
 - advanced
 roles:

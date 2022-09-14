@@ -18,7 +18,7 @@ abstract: |
   - Manage throughput and index policies using JSON or Bicep templates
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-create-resources-template.svg
+iconUrl: /training/achievements/azure-cosmos-db-create-resources-template.svg
 levels:
 - intermediate
 roles:

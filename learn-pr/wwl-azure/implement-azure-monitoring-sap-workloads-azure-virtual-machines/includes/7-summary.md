@@ -14,15 +14,15 @@ In this module, you learned how to:
 
 - [Azure Monitor for SAP Solutions is now available in preview](https://azure.microsoft.com/updates/azure-monitor-for-sap-solutions-is-now-available-in-preview/)
 
-- [Monitor performance of virtual machines by using Azure Monitor for VMs](/learn/modules/monitor-performance-using-azure-monitor-for-vms/)
+- [Monitor performance of virtual machines by using Azure Monitor for VMs](/training/modules/monitor-performance-using-azure-monitor-for-vms/)
 
-- [Monitoring options available in Azure](/learn/modules/design-monitoring-strategy-on-azure/3-azure-monitoring-options)
+- [Monitoring options available in Azure](/training/modules/design-monitoring-strategy-on-azure/3-azure-monitoring-options)
 
 - [Azure monitor for SAP solutions providers (preview)](/azure/virtual-machines/workloads/sap/azure-monitor-providers)
 
-- [Azure VM monitor considerations for SAP workloads](/learn/modules/plan-implement-sap-solutions/5-azure-vm-monitor-considerations-sap-workloads)
+- [Azure VM monitor considerations for SAP workloads](/training/modules/plan-implement-sap-solutions/5-azure-vm-monitor-considerations-sap-workloads)
 
-- [Configure the Azure Enhanced Monitoring Extension for SAP workloads](/learn/modules/implement-azure-vm-based-sap-solutions/6-configure-azure-enhanced-monitor-extension-sap-workloads)
+- [Configure the Azure Enhanced Monitoring Extension for SAP workloads](/training/modules/implement-azure-vm-based-sap-solutions/6-configure-azure-enhanced-monitor-extension-sap-workloads)
 
 - [Azure monitor for SAP solutions (preview)](/azure/virtual-machines/workloads/sap/azure-monitor-overview)
 
@@ -30,7 +30,7 @@ In this module, you learned how to:
 
 - [Deploy Azure Monitor for SAP Solutions with Azure portal](/azure/virtual-machines/workloads/sap/azure-monitor-sap-quickstart)
 
-- [Unify monitoring solutions in Azure](/learn/modules/design-monitoring-strategy-on-azure/7-unifying-monitoring-solutions)
+- [Unify monitoring solutions in Azure](/training/modules/design-monitoring-strategy-on-azure/7-unifying-monitoring-solutions)
 
 - [Azure Monitor for SAP Solutions is now in preview](https://azure.microsoft.com/blog/azure-monitor-for-sap-solutions-is-now-in-preview/)
 

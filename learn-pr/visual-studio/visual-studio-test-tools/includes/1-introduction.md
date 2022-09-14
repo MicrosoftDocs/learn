@@ -18,7 +18,7 @@ You'll start testing your program with three main tasks:
 * **Use Visual Studio to run and debug your tests**: See the output of your tests and interact with a whole suite of tests.
 * **Sharpen your test-writing skills**: Use Fluent Assertions, data-driven tests, and mocking to expand your testing skills.
 
-If you want to familiarize yourself with the basic concepts of software testing before you dive into writing tests, see [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/).
+If you want to familiarize yourself with the basic concepts of software testing before you dive into writing tests, see [Introduction to software testing concepts](/training/modules/visual-studio-test-concepts/).
 
 ## What is the main goal?
 

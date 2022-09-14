@@ -16,7 +16,7 @@ abstract: |
   - Use the .NET SDK to select a write region for operations.
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-sql-api-multi-region.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-multi-region.svg
 levels:
 - intermediate
 roles:

@@ -20,7 +20,7 @@ prerequisites: |
   - Working knowledge of common Windows Server management tools
   - Some experience of typical Windows Server workloads
   - Basic knowledge of Windows PowerShell
-iconUrl: /learn/achievements/7-troubleshoot-on-premises-and-hybrid-networking.svg
+iconUrl: /training/achievements/7-troubleshoot-on-premises-and-hybrid-networking.svg
 levels:
 - intermediate
 roles:

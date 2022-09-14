@@ -14,7 +14,7 @@ abstract: |
   Learn how to use the Language service for text analysis
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/analyze-text-with-text-analytics-service.svg
+iconUrl: /training/achievements/analyze-text-with-text-analytics-service.svg
 levels:
 - beginner
 roles:

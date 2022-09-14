@@ -24,7 +24,7 @@ prerequisites: |
   - Familiarity with C#.
   - Basic understanding of XAML.
   - Basic understanding of UWP layout, including `StackPanel` and `Grid`.
-iconUrl: /learn/achievements/windows-10-ui-and-data.svg
+iconUrl: /training/achievements/windows-10-ui-and-data.svg
 levels:
 - beginner
 roles:

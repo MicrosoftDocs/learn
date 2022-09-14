@@ -40,8 +40,8 @@ security strategy and architecture. You should now be able to:
 
 ## Learn more with self-paced training
 
--   [Plan for threat intelligence connectors](/learn/modules/connect-threat-indicators-to-azure-sentinel/2-plan-for-threat-intelligence-connectors)
+-   [Plan for threat intelligence connectors](/training/modules/connect-threat-indicators-to-azure-sentinel/2-plan-for-threat-intelligence-connectors)
 
--   [When to use Microsoft Sentinel](/learn/modules/intro-to-azure-sentinel/4-when-to-use-azure-sentinel)
+-   [When to use Microsoft Sentinel](/training/modules/intro-to-azure-sentinel/4-when-to-use-azure-sentinel)
 
--   [Connect logs to Microsoft Sentinel](/learn/paths/sc-200-connect-logs-to-azure-sentinel/)
+-   [Connect logs to Microsoft Sentinel](/training/paths/sc-200-connect-logs-to-azure-sentinel/)

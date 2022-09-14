@@ -18,7 +18,7 @@ abstract: |
   - Configure ExpressRoute to help protect your network traffic
 prerequisites: |
   - None
-iconUrl: /learn/achievements/azure-network-security.svg
+iconUrl: /training/achievements/azure-network-security.svg
 levels:
 - intermediate
 roles:

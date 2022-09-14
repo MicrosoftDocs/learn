@@ -15,7 +15,7 @@ prerequisites: |
   - Basic understanding of Microsoft Purview compliance features.
 summary: |
   Learn how to plan and implement data lifecycle and records management strategies for an organization. This learning path aligns with exam SC-400: Microsoft Information Protection Administrator.
-iconUrl: /learn/achievements/implement-information-governance.svg
+iconUrl: /training/achievements/implement-information-governance.svg
 levels:
 - intermediate
 roles:

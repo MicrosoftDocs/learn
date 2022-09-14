@@ -38,26 +38,26 @@ In this module, you have learned how to choose and recommend an Azure compute se
 
 ### Learn more with self-paced training
 
-- [Choose the best Azure service to automate your business processes](/learn/modules/choose-azure-service-to-integrate-and-automate-business-processes/)
+- [Choose the best Azure service to automate your business processes](/training/modules/choose-azure-service-to-integrate-and-automate-business-processes/)
 
-- [Align requirements with cloud types and service models in Azure](/learn/modules/align-requirements-in-azure/)
+- [Align requirements with cloud types and service models in Azure](/training/modules/align-requirements-in-azure/)
 
-- [Introduction to Azure virtual machines](/learn/modules/intro-to-azure-virtual-machines/)
+- [Introduction to Azure virtual machines](/training/modules/intro-to-azure-virtual-machines/)
 
-- [Create an Azure Batch account by using the Azure portal](/learn/modules/create-batch-account-using-azure-portal/)
+- [Create an Azure Batch account by using the Azure portal](/training/modules/create-batch-account-using-azure-portal/)
 
-- [Create serverless logic with Azure Functions](/learn/modules/create-serverless-logic-with-azure-functions/)
+- [Create serverless logic with Azure Functions](/training/modules/create-serverless-logic-with-azure-functions/)
 
-- [Introduction to Azure Logic Apps](/learn/modules/intro-to-logic-apps/)
+- [Introduction to Azure Logic Apps](/training/modules/intro-to-logic-apps/)
 
-- [Host a web application with Azure App Service](/learn/modules/host-a-web-app-with-azure-app-service/)
+- [Host a web application with Azure App Service](/training/modules/host-a-web-app-with-azure-app-service/)
 
-- [Introduction to Azure Kubernetes Service](/learn/modules/intro-to-azure-kubernetes-service/)
+- [Introduction to Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/)
 
 ## Learn more with optional hands-on exercises
 
-- [Create a web app in the Azure portal](/learn/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp)
+- [Create a web app in the Azure portal](/training/modules/host-a-web-app-with-azure-app-service/3-exercise-create-a-web-app-in-the-azure-portal?pivots=csharp)
 
-- [Create a Windows virtual machine](/learn/modules/create-windows-virtual-machine-in-azure/3-exercise-create-a-vm)
+- [Create a Windows virtual machine](/training/modules/create-windows-virtual-machine-in-azure/3-exercise-create-a-vm)
 
-- [Create the social media tracker Logic App](/learn/modules/route-and-process-data-logic-apps/4-ex-create-social-media-tracker)
+- [Create the social media tracker Logic App](/training/modules/route-and-process-data-logic-apps/4-ex-create-social-media-tracker)

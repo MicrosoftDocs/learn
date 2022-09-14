@@ -19,7 +19,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Familiarity with pull requests
-iconUrl: /learn/achievements/github/resolve-merge-conflicts-github.svg
+iconUrl: /training/achievements/github/resolve-merge-conflicts-github.svg
 ratingEnabled: true
 levels:
 - beginner

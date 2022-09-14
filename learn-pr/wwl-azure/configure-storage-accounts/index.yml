@@ -19,7 +19,7 @@ abstract: |
   - Secure storage endpoints.
 prerequisites: |
   None
-iconUrl: /learn/achievements/storage-accounts-configure.svg
+iconUrl: /training/achievements/storage-accounts-configure.svg
 levels:
 - intermediate
 roles:

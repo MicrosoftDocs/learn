@@ -19,7 +19,7 @@ prerequisites: |
   * You should be familiar with developer concepts and terminology.
   * Experience working with data solutions.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/3-work-with-azure-cosmos-db.svg
+iconUrl: /training/achievements/3-work-with-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:

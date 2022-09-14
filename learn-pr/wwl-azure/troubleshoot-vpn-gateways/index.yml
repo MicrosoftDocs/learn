@@ -20,7 +20,7 @@ prerequisites: |
   - Demonstrate an understanding of PowerShell
   - Know how to run Cloud Shell to run commands
   - Have an understanding of how to set up site-to-site VPNs
-iconUrl: /learn/achievements/vnp-gateway-troubleshoot.svg
+iconUrl: /training/achievements/vnp-gateway-troubleshoot.svg
 levels:
 - intermediate
 roles:

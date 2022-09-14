@@ -20,7 +20,7 @@ prerequisites: |
   - Basic familiarity with relational data, such as tables, rows, and database schemas
   - Basic familiarity with SQL Server administration and configuration
   - Basic familiarity with Azure SQL Database
-iconUrl: /learn/achievements/migrate-sql-server-relational-data.svg
+iconUrl: /training/achievements/migrate-sql-server-relational-data.svg
 levels:
 - beginner
 roles:

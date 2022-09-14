@@ -16,7 +16,7 @@ abstract: |
   - Create basic Azure Monitor log queries to extract information from log data
 prerequisites: | 
   - None
-iconUrl: /learn/achievements/analyze-infrastructure-with-azure-monitor-logs.svg
+iconUrl: /training/achievements/analyze-infrastructure-with-azure-monitor-logs.svg
 levels:
 - beginner
 roles:

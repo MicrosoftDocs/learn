@@ -17,7 +17,7 @@ abstract: |
   - Activate the Microsoft Defender for Office 365 connector in Microsoft Sentinel
 prerequisites: |
   Intermediate understanding of Microsoft 365.
-iconUrl: /learn/achievements/connect-microsoft-defender-365-to-azure-sentinel.svg
+iconUrl: /training/achievements/connect-microsoft-defender-365-to-azure-sentinel.svg
 levels:
 - intermediate
 roles:

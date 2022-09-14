@@ -18,7 +18,7 @@ abstract: |
   - Explain custom security attributes and automatic user provisioning
 prerequisites: |
   None
-iconUrl: /learn/achievements/create-configure-and-manage-identities.svg
+iconUrl: /training/achievements/create-configure-and-manage-identities.svg
 levels:
 - advanced
 roles:

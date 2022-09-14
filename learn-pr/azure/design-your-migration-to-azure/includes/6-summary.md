@@ -11,8 +11,8 @@ To learn more about the tools and services available to help you migrate to Azur
 
 For information on optimizing your environment, see these Microsoft Learn modules:
 
-- [Plan and manage your Azure costs](/learn/modules/plan-manage-azure-costs/)
-- [Design for efficiency and operations in Azure](/learn/modules/design-for-efficiency-and-operations-in-azure/)
+- [Plan and manage your Azure costs](/training/modules/plan-manage-azure-costs/)
+- [Design for efficiency and operations in Azure](/training/modules/design-for-efficiency-and-operations-in-azure/)
 
 For information on monitoring your environment, see these articles:
 

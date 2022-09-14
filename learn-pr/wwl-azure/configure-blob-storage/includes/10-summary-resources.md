@@ -15,5 +15,5 @@ You can learn more by reviewing the following. A *sandbox* indicates a hands-on 
  -  [Azure Blob storage documentation](/azure/storage/blobs/).
  -  [Object blob replication overview](/azure/storage/blobs/object-replication-overview)
  -  [Access tiers for Azure Blob Storage - hot, cool, and archive](/azure/storage/blobs/storage-blob-storage-tiers)
- -  [Optimize storage performance and costs using Blob storage tiers (Sandbox)](/learn/modules/optimize-archive-costs-blob-storage/)
- -  [Gather metrics from your Azure Blob Storage containers (Sandbox)](/learn/modules/gather-metrics-blob-storage/)
+ -  [Optimize storage performance and costs using Blob storage tiers (Sandbox)](/training/modules/optimize-archive-costs-blob-storage/)
+ -  [Gather metrics from your Azure Blob Storage containers (Sandbox)](/training/modules/gather-metrics-blob-storage/)

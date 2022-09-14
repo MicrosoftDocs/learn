@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - A basic understanding of how Azure role-based access control (Azure RBAC) works
   - (Optional) Access to an Azure subscription where you have the Global Administrator role for your account
-iconUrl: /learn/achievements/manage-subscription-access-azure-rbac.svg
+iconUrl: /training/achievements/manage-subscription-access-azure-rbac.svg
 levels:
 - beginner
 roles:

@@ -141,7 +141,7 @@ When you run the code, you'll get the following output:
 7
 ```
 
-We first saw the `break` keyword in the [Branch the flow of code using the switch-case construct in C#](/learn/modules/csharp-switch-case/) module. As it turns out, we can use the `break` keyword to exit out of iteration statements as well.
+We first saw the `break` keyword in the [Branch the flow of code using the switch-case construct in C#](/training/modules/csharp-switch-case/) module. As it turns out, we can use the `break` keyword to exit out of iteration statements as well.
 
 ### Step 5 - Loop through each element of an array
 
@@ -214,7 +214,7 @@ Michael
 
 Because the array isn't directly part of the iteration statement's implementation, you can change values inside of the array.
 
-Also, in this code example, you may notice we removed the curly braces because the code blocks only contained a single line of code. This is the same technique that we talked about in the [Control variable scope and logic using code blocks in C#](/learn/modules/csharp-code-blocks/) module. Some prefer this abbreviated style because it helps them write more succinctly and more expressively. If you don't like this style, feel free to always use curly braces in your code blocks.
+Also, in this code example, you may notice we removed the curly braces because the code blocks only contained a single line of code. This is the same technique that we talked about in the [Control variable scope and logic using code blocks in C#](/training/modules/csharp-code-blocks/) module. Some prefer this abbreviated style because it helps them write more succinctly and more expressively. If you don't like this style, feel free to always use curly braces in your code blocks.
 
 ## Recap
 

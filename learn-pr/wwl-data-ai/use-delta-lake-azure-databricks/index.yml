@@ -17,8 +17,8 @@ abstract: |
   - Create Spark catalog tables for Delta Lake data.
   - Use Delta Lake tables for streaming data.
 prerequisites: |
-  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/learn/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
-iconUrl: /learn/achievements/work-dataframes-azure-databricks.svg
+  Before starting this module, you should have a basic knowledge of Azure Databricks. Consider completing the previous modules in the [Data Engineering with Azure Databricks](/training/paths/data-engineer-azure-databricks?azure-portal=true) learning path before this one.
+iconUrl: /training/achievements/work-dataframes-azure-databricks.svg
 levels:
 - intermediate
 roles:

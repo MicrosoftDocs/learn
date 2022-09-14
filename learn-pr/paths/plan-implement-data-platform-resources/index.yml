@@ -17,7 +17,7 @@ prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
 summary: |
   Deploy data platform resources in Azure SQL. Explore options for deployment and migration. Calculate resource requirements and create templates.
-iconUrl: /learn/achievements/plan-and-implement-data-platform-resources.svg
+iconUrl: /training/achievements/plan-and-implement-data-platform-resources.svg
 levels:
 - intermediate
 roles:

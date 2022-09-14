@@ -26,7 +26,7 @@ prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/
   - Knowledge of GitHub Advanced Security's code scanning feature
   - Knowledge of GitHub Actions
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level)
   - advanced
 roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)

@@ -17,7 +17,7 @@ abstract: |
     - Connect to a running Linux virtual machine using SSH
     - Install software and change the network configuration on a VM using the Azure portal
 prerequisites: None
-iconUrl: /learn/achievements/create-linux-virtual-machine-in-azure.svg
+iconUrl: /training/achievements/create-linux-virtual-machine-in-azure.svg
 levels:
 - beginner
 roles:

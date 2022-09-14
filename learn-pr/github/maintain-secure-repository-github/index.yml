@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
-iconUrl: /learn/achievements/github/maintain-secure-repository-github.svg
+iconUrl: /training/achievements/github/maintain-secure-repository-github.svg
 ratingEnabled: true
 levels:
 - beginner

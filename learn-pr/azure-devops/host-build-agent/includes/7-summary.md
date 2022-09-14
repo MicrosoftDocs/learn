@@ -20,7 +20,7 @@ The Tailspin web team has finished their experiment with private build agents. L
 
 ## How is the team measuring up?
 
-In the _Assess your existing software development process_ module, Mara performed a [value stream mapping exercise](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) to help the team analyze their current release cycle process.
+In the _Assess your existing software development process_ module, Mara performed a [value stream mapping exercise](/training/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) to help the team analyze their current release cycle process.
 
 Recall that the *activity ratio*, or efficiency, is process time divided by total lead time.
 
@@ -91,4 +91,4 @@ If you're interested in creating your own VM images for use with Azure Pipelines
 
 For more hands-on practice working with virtual machines on Azure, check out the [Administer infrastructure resources in Azure](../../../paths/administer-infrastructure-resources-in-azure/index.yml?azure-portal=true) learning path.
 
-We also mentioned how you can use Bicep to automate the process of creating build agents. To learn more about Bicep, see [Deploy and manage resources in Azure by using Bicep](/learn/paths/bicep-deploy?azure-portal=true).
+We also mentioned how you can use Bicep to automate the process of creating build agents. To learn more about Bicep, see [Deploy and manage resources in Azure by using Bicep](/training/paths/bicep-deploy?azure-portal=true).

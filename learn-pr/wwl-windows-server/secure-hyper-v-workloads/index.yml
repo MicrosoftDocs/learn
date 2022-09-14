@@ -20,7 +20,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016.
   - Working with virtualization technologies.
   - Encryption technologies and concepts.
-iconUrl: /learn/achievements/secure-hyper-v-workloads.svg
+iconUrl: /training/achievements/secure-hyper-v-workloads.svg
 levels:
 - intermediate
 roles:

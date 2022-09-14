@@ -11,4 +11,4 @@ You can learn more by reviewing the following documents:
 - [Create Hyper-V VHD Set files](/windows-server/virtualization/hyper-v/manage/create-vhdset-file?azure-portal=true)
 - [Virtual Hard Disk Sharing Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn281956(v=ws.11)?azure-portal=true)
 - [Deploy a Guest Cluster Using a Shared Virtual Hard Disk](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265980(v=ws.11)?redirectedfrom=MSDN?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00?azure-portal=true)
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true)

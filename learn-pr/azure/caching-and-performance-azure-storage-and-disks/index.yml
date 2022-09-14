@@ -17,7 +17,7 @@ abstract: |
   - Enable and manage cache settings with the Azure portal
   - Enable and manage cache settings with PowerShell
 prerequisites: None
-iconUrl: /learn/achievements/caching-and-performance-azure-storage-and-disks.svg
+iconUrl: /training/achievements/caching-and-performance-azure-storage-and-disks.svg
 levels:
 - intermediate
 roles:

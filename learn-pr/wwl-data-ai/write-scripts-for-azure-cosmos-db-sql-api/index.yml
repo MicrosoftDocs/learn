@@ -19,7 +19,7 @@ abstract: |
   - Initiate failovers and manage failover regions using the CLI
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-write-scripts.svg
+iconUrl: /training/achievements/azure-cosmos-db-write-scripts.svg
 levels:
 - intermediate
 roles:

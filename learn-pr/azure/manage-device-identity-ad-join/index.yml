@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure Active Directory features such as Azure AD Connect, Azure AD Seamless Single Sign-On, and Azure AD Multi-Factor Authentication
   - Basic understanding of mobile device management software like Microsoft Intune 
-iconUrl: /learn/achievements/manage-device-identity-ad-join.svg
+iconUrl: /training/achievements/manage-device-identity-ad-join.svg
 levels:
 - intermediate
 roles:

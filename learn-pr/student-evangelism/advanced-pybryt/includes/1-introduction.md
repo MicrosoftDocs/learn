@@ -1,6 +1,6 @@
 PyBryt is an open-source Python library that aims to help the process of providing specific feedback to students without the need of instructor intervention while the student works through an assignment. It is an auto-assessment framework that examines a student's solution to some problem to determine its correctness and provide targeted messages about specific implementation details by comparing it to one or more reference implementations provided by the instructor. In this way, students can get the same helpful hints and pointers automatically rather than needing to meet with an instructor.
 
-This module is a follow-up to the [Introduction to PyBryt](/learn/modules/introduction-pybryt/) module and covers more advanced topics that build on the information presented in the first module.
+This module is a follow-up to the [Introduction to PyBryt](/training/modules/introduction-pybryt/) module and covers more advanced topics that build on the information presented in the first module.
 
 ## What will you learn?
 

@@ -12,7 +12,7 @@ summary: "Learn how to use .NET MAUI to build apps that run on mobile devices an
 prerequisites: | 
   - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:

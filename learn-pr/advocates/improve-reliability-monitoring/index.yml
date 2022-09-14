@@ -20,7 +20,7 @@ abstract: |
   - Gain a basic understanding of the applicable monitoring platform and tools available on Azure
   - Learn a practice from site reliability engineering that can immediately start to create an impact on reliability
   - Learn to craft actionable alerts to make your operational practices sustainable
-iconUrl: /learn/achievements/improve-reliability-monitoring.svg
+iconUrl: /training/achievements/improve-reliability-monitoring.svg
 levels:
 - beginner
 roles:

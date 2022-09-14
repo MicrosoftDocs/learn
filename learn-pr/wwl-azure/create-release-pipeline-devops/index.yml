@@ -16,7 +16,7 @@ abstract: |
   *   Describe what a Build and Release task is, what it can do, and some available deployment tasks
   *   Implement release jobs
 prerequisites: ""
-iconUrl: /learn/achievements/1-create-a-release-pipeline.svg
+iconUrl: /training/achievements/1-create-a-release-pipeline.svg
 levels:
 - advanced
 roles:
