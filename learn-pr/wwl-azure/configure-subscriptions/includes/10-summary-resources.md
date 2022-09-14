@@ -10,8 +10,8 @@ In this module, you learned about supported Azure regions, and how to locate Azu
 
 ## Learn more with self-paced training
 
-- Practice using [Microsoft Cost Management to analyze costs and create budgets](/learn/modules/analyze-costs-create-budgets-azure-cost-management/).
+- Practice using [Microsoft Cost Management to analyze costs and create budgets](/training/modules/analyze-costs-create-budgets-azure-cost-management/).
 
 ## Learn more with optional hands-on exercises
 
-- Plan and manage [your Azure costs (sandbox)](/learn/modules/plan-manage-azure-costs/).
+- Plan and manage [your Azure costs (sandbox)](/training/modules/plan-manage-azure-costs/).

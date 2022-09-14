@@ -12,7 +12,7 @@ title: Build web apps with ASP.NET Core for beginners
 summary: Get started with web development using ASP.NET Core. In this beginner-friendly pathway, you'll learn the basics of C#, HTML, Razor Pages, and more! 
 prerequisites: |
   - Local installation of [.NET SDK](https://dotnet.microsoft.com/download)
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
   - beginner
 roles:

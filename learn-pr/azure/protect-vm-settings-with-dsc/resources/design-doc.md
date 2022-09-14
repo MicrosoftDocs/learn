@@ -221,5 +221,5 @@ How did you solve the problem in the initial scenario with the knowledge learned
 
 ### Related modules
 
-- [Keep your VMs updated](/learn/modules/keep-your-virtual-machines-updated/1-introduction) 
-- [Design for efficiency and operations in Azure](/learn/modules/design-for-efficiency-and-operations-in-azure/4-use-automation-to-reduce-effort-and-error)
+- [Keep your VMs updated](/training/modules/keep-your-virtual-machines-updated/1-introduction) 
+- [Design for efficiency and operations in Azure](/training/modules/design-for-efficiency-and-operations-in-azure/4-use-automation-to-reduce-effort-and-error)

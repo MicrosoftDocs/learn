@@ -63,7 +63,7 @@ To add the variables:
 1. Repeat the process to add another variable named `MySqlPassword` with the value of the MySQL password used to create the server, such as `P\@ssw0rd`. Select the padlock icon that appears when you hover over the variable to *Change variable type to secret* so that it won't be shown as plaintext after it's saved.
 
     > [!IMPORTANT]
-    > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Vault, see [Configure and manage secrets in Azure Key Vault](/learn/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
+    > In a real world scenario, you may opt to use an alternative storage mechanism for credentials, such as Azure Key Vault. To learn more about Azure Key Vault, see [Configure and manage secrets in Azure Key Vault](/training/modules/configure-and-manage-azure-key-vault/?azure-portal=true).
 
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 

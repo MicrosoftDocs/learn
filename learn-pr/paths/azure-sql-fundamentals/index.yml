@@ -14,7 +14,7 @@ summary: "Learn how to translate your existing SQL Server expertise to Azure SQL
 prerequisites: |
   - Experience working with, maintaining, and developing with SQL Server
   - Experience with Azure, such as deploying and managing resources
-iconUrl: /learn/achievements/azure-sql-fundamentals.svg
+iconUrl: /training/achievements/azure-sql-fundamentals.svg
 levels: 
 - beginner
 roles: 

@@ -18,9 +18,9 @@ Cloud Shell is managed by Microsoft so it comes with popular command-line tools 
 
 Cloud Shell offers an integrated graphical text editor based on the open-source Monaco Editor. Easily create and edit configuration files by running `code .` for seamless deployment through Azure CLI or Azure PowerShell.
 
-### Integrated with docs.microsoft.com
+### Integrated with Microsoft Docs
 
-You can use Cloud Shell directly from documentation hosted on [Microsoft Docs](/?azure-portal=true). It is integrated in [Microsoft Learn](/learn/), [Azure PowerShell](/powershell/azure/overview), and [Azure CLI documentation](/cli/azure) \- click on the "Try It" button in a code snippet to open the immersive shell experience.
+You can use Cloud Shell directly from documentation hosted on [Microsoft Docs](/?azure-portal=true). It is integrated in [Microsoft Learn](/training/), [Azure PowerShell](/powershell/azure/overview), and [Azure CLI documentation](/cli/azure) \- click on the "Try It" button in a code snippet to open the immersive shell experience.
 
 ### Multiple access points
 

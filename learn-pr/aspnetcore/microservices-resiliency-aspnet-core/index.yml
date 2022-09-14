@@ -45,6 +45,6 @@ units:
   - learn.microservices-resiliency-aspnet-core.6-implement-linkerd-resiliency
   - learn.microservices-resiliency-aspnet-core.7-knowledge-check
   - learn.microservices-resiliency-aspnet-core.8-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-resiliency-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-resiliency-aspnet-core.svg
 badge:
   uid: learn.microservices-resiliency-aspnet-core.badge

@@ -6,7 +6,7 @@ The company relies on you to configure Blob storage. You use access tiers to red
 
 ## Skills measured
 
-Configuring Blob storage is part of the [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configuring Blob storage is part of the [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Implement and manage storage (15–20%)
 

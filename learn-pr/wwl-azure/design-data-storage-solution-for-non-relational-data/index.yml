@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   • Conceptual knowledge of storage accounts, blobs, files, disks, and data protection.
   • Working experience with creating and securing storage systems.
-iconUrl: /learn/achievements/data-storage-solution-non-relation-data.svg
+iconUrl: /training/achievements/data-storage-solution-non-relation-data.svg
 levels:
 - advanced
 roles:

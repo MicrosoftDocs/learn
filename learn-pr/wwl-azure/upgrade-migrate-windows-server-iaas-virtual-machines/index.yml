@@ -27,7 +27,7 @@ prerequisites: |
   - Security-related technologies such as firewalls, encryption, and multi-factor authentication.
   - Windows PowerShell scripting.
   - Automation and monitoring.
-iconUrl: /learn/achievements/upgrade-and-migrate-windows-server-iaas-virtual-machines.svg
+iconUrl: /training/achievements/upgrade-and-migrate-windows-server-iaas-virtual-machines.svg
 levels:
 - intermediate
 roles:

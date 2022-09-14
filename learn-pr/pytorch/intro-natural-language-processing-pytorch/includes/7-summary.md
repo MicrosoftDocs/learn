@@ -15,12 +15,12 @@ To extend your knowledge and get an in-depth learning on NLP, you can explore th
 
 Training such large models involves numerous efforts, and needs to be done in a distributed manner. Distributed training is another area that you need to focus on if you're planning any serious NLP projects. It's definitely worth checking out [Azure Machine Learning](../../../paths/build-ai-solutions-with-azure-ml-service/index.yml).
 
-Now that you learned some of the basics of machine learning using neural networks concepts, we invite you to proceed with [PyTorch Fundamentals Learning Path](/learn/paths/pytorch-fundamentals), and learn more:
+Now that you learned some of the basics of machine learning using neural networks concepts, we invite you to proceed with [PyTorch Fundamentals Learning Path](/training/paths/pytorch-fundamentals), and learn more:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Introduction to PyTorch](/learn/modules/intro-machine-learning-pytorch)
-* [Computer Vision with PyTorch](/learn/modules/intro-computer-vision-pytorch)
-* [Audio Classification with PyTorch](/learn/modules/intro-audio-classification-pytorch)
+* [Introduction to PyTorch](/training/modules/intro-machine-learning-pytorch)
+* [Computer Vision with PyTorch](/training/modules/intro-computer-vision-pytorch)
+* [Audio Classification with PyTorch](/training/modules/intro-audio-classification-pytorch)
 
 Happy learning!

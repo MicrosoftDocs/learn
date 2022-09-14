@@ -19,7 +19,7 @@ prerequisites: |
   - Programming experience with Python or R
   - Experience developing and training machine learning models
   - Familiarity with basic Azure Machine Learning concepts
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

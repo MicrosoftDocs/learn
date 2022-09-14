@@ -16,7 +16,7 @@ abstract: |
   *   Offline migrations
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

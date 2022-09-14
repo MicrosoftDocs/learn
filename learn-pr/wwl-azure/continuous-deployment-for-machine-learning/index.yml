@@ -15,7 +15,7 @@ abstract: |
   - How to control deployments with approval gates.
 prerequisites: |
   Some familiarity with machine learning and Azure Machine Learning.
-iconUrl: /learn/achievements/continuous-deployment-for-machine-learning.svg
+iconUrl: /training/achievements/continuous-deployment-for-machine-learning.svg
 levels:
 - beginner
 roles:

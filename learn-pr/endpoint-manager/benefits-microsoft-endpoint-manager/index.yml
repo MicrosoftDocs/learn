@@ -19,7 +19,7 @@ abstract: |
   - Learn about the benefits of co-management.  
   - Learn how Microsoft Endpoint Manager helps you maximize your return on investment.  
 prerequisites: None
-iconUrl: /learn/achievements/benefits-microsoft-endpoint-manager.svg
+iconUrl: /training/achievements/benefits-microsoft-endpoint-manager.svg
 ratingEnabled: true
 levels:
 - beginner

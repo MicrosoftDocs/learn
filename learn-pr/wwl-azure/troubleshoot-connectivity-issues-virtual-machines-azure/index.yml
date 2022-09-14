@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of Azure Bastion
   - Familiarity with server and client management concepts and tools
   - Familiarity with Microsoft Azure and cloud concepts
-iconUrl: /learn/achievements/virtual-machines-connectivity-issues.svg
+iconUrl: /training/achievements/virtual-machines-connectivity-issues.svg
 levels:
 - intermediate
 roles:

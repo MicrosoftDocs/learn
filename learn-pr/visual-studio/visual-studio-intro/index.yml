@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Some experience with beginner computer skills like installing an app from the internet.
   - Beginner familiarity with programming concepts like running code, editors, and debuggers.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

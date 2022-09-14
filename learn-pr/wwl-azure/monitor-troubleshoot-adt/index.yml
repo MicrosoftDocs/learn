@@ -22,7 +22,7 @@ prerequisites: |
   - Describe Azure Event Grid and Azure Function integration within an IoT solution.
   - Describe the components of an Azure Digital Twins solution and how to build an Azure Digital Twins graph using models and digital twins.
   - Describe how to integrate upstream and downstream services within your Azure Digital Twins solution.
-iconUrl: /learn/achievements/adt-monitor-troubleshoot.svg
+iconUrl: /training/achievements/adt-monitor-troubleshoot.svg
 levels:
 - intermediate
 roles:

@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic understanding of SSL/TLS encryption
   - Basic knowledge of networking concepts
-iconUrl: /learn/achievements/end-to-end-encryption-with-app-gateway.svg
+iconUrl: /training/achievements/end-to-end-encryption-with-app-gateway.svg
 levels:
 - intermediate
 roles:

@@ -16,7 +16,7 @@ abstract: |
   *  Plan and implement Azure roles and RBAC for Azure Virtual Desktop.
   *  Describe how to configure Azure Virtual Desktop with Intune.
 prerequisites: ""
-iconUrl: /learn/achievements/1-manage-access.svg
+iconUrl: /training/achievements/1-manage-access.svg
 levels:
 - intermediate
 roles:

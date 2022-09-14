@@ -17,7 +17,7 @@ abstract: |
   - Implement DNS zones, DNS delegation, and DNS record sets.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-dns-configure.svg
+iconUrl: /training/achievements/azure-dns-configure.svg
 levels:
 - intermediate
 roles:

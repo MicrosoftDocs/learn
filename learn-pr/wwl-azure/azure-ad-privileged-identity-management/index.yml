@@ -17,7 +17,7 @@ abstract: |
   - Evaluate the usefulness of each PIM setting as it relates to your security goals
 prerequisites: |
   - None
-iconUrl: /learn/achievements/azure-ad-privileged-identity-management.svg
+iconUrl: /training/achievements/azure-ad-privileged-identity-management.svg
 levels:
 - intermediate
 roles:

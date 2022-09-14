@@ -10,4 +10,4 @@ You can learn more by reviewing the following documents:
 - [Authorize guarded hosts using TPM-based attestation](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-tpm-trusted-attestation-capturing-hardware?azure-portal=true)
 - [Provision a shielded Linux virtual machine in the VMM fabric](/system-center/vmm/guarded-deploy-linux-vm?azure-portal=true)
 - [ConfigCI](/powershell/module/configci/?view=win10-ps?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00?azure-portal=true) 
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true) 

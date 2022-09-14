@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic familiarity with the authoring and running of Logic Apps
   - Basic understanding of APIs and REST
-iconUrl: /learn/achievements/logic-apps-and-custom-connectors.svg
+iconUrl: /training/achievements/logic-apps-and-custom-connectors.svg
 levels:
 - beginner
 roles:

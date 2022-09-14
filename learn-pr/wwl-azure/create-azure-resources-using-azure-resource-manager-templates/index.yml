@@ -18,7 +18,7 @@ abstract: |
   - Organize and modularize templates
 prerequisites: |
   None
-iconUrl: /learn/achievements/2-create-azure-resources-using-arm-templates.svg
+iconUrl: /training/achievements/2-create-azure-resources-using-arm-templates.svg
 levels:
 - advanced
 roles:

@@ -20,7 +20,7 @@ abstract: |
   - Review built-in Azure RBAC roles.
 prerequisites: |
   None
-iconUrl: /learn/achievements/roles-based-access-control.svg
+iconUrl: /training/achievements/roles-based-access-control.svg
 levels:
 - intermediate
 roles:

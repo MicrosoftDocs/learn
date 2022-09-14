@@ -105,7 +105,7 @@ We recommend the *red, green, refactor* pattern for testing:
 
 When you're writing a test, it's good to see it fail at least once so that you know it *can* fail. A common problem is believing a test covers a certain scenario, only to find a bug in production. It's no fun to realize that your test wasn't making the right calls or never correctly asserted the expected outcome.
 
-This pattern provides an easy guide as you get into a programming flow. If you're interested in learning more about different testing schools of thought, see [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/5-testing-schools-of-thought).
+This pattern provides an easy guide as you get into a programming flow. If you're interested in learning more about different testing schools of thought, see [Introduction to software testing concepts](/training/modules/visual-studio-test-concepts/5-testing-schools-of-thought).
 
 ## Assert statements
 

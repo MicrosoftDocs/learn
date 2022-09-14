@@ -24,7 +24,7 @@ prerequisites: |
   - Creating and deploying basic Bicep templates.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
   - Basic GitHub Actions workflows.
-iconUrl: /learn/achievements/bicep/authenticate-azure-deployment-workflow-workload-identities.svg
+iconUrl: /training/achievements/bicep/authenticate-azure-deployment-workflow-workload-identities.svg
 levels:
   - intermediate
 roles:

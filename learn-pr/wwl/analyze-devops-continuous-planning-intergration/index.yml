@@ -18,7 +18,7 @@ abstract: |
   - Analyze the effects of Continuous Integration on performance
 prerequisites: |
   None
-iconUrl: /learn/achievements/analyze-devops-continuous-planning-continuous-integration.svg
+iconUrl: /training/achievements/analyze-devops-continuous-planning-continuous-integration.svg
 levels:
 - beginner
 roles:

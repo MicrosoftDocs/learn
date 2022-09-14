@@ -14,7 +14,7 @@ prerequisites: |
   - Working experience with creating and securing storage systems, designing database solutions, and integrating data solutions.
 summary: |
   Design data storage solutions including non-relational storage, relational storage, and data integration.
-iconUrl: /learn/achievements/design-storage-solution.svg
+iconUrl: /training/achievements/design-storage-solution.svg
 levels:
 - advanced
 roles:

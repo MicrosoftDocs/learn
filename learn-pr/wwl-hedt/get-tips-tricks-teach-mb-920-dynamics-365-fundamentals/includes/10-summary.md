@@ -7,7 +7,7 @@ Supplemental Resources:
 
 - [Microsoft Learn for Educators](https://aka.ms/msle) 
 
-- [Learn TV](/learn/tv/?WT.mc_id=twitter-0000-learntv)  
+- [Learn TV](/training/tv/?WT.mc_id=twitter-0000-learntv)  
 
 - [Microsoft Technical Documentation](https://aka.ms/docs)
 
@@ -19,4 +19,4 @@ Supplemental Resources:
 
 - [Microsoft Dynamics 365 Blog](https://aka.ms/cloudblogs)
 
-- [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](/learn/certifications/exams/mb-920)
+- [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](/certifications/exams/mb-920)

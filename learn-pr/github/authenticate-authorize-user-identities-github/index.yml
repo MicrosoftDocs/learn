@@ -40,6 +40,6 @@ units:
 - learn.github.authenticate-authorize-user-identities-github.5-team-synchronization
 - learn.github.authenticate-authorize-user-identities-github.6-knowledge-check
 - learn.github.authenticate-authorize-user-identities-github.7-summary
-iconUrl: /learn/achievements/github/authenticate-authorize-user-identities-github.svg
+iconUrl: /training/achievements/github/authenticate-authorize-user-identities-github.svg
 badge:
   uid: learn.github.authenticate-authorize-user-identities-github.badge

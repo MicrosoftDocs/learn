@@ -15,7 +15,7 @@ prerequisites: |
   - Describe the features, capabilities, and data workflows of an IoT solution.
 summary: |
   You will learn about the Azure IoT Central application platform and the support that it provides to companies with limited budgets and technical resources who are interested in developing, managing, and maintaining IoT solutions.
-iconUrl: /learn/achievements/iot-low-touch-iot-central.svg
+iconUrl: /training/achievements/iot-low-touch-iot-central.svg
 levels:
 - intermediate
 roles:

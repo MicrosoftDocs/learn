@@ -30,20 +30,20 @@ In this module, you have learned how to design for non-relational data storage. 
 
 ### Learn more with self-paced training
 
-- [Choose the right disk storage for your virtual machine workload](/learn/modules/choose-the-right-disk-storage-for-vm-workload/)
+- [Choose the right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/)
 
-- [Configure blob storage](/learn/modules/configure-blob-storage/)
+- [Configure blob storage](/training/modules/configure-blob-storage/)
 
-- [Optimize performance and costs by using Azure Disk Storage](/learn/modules/optimize-performance-and-costs-using-azure-disk-storage/)
+- [Optimize performance and costs by using Azure Disk Storage](/training/modules/optimize-performance-and-costs-using-azure-disk-storage/)
 
-- [Caching and performance in Azure storage disks](/learn/modules/caching-and-performance-azure-storage-and-disks/)
+- [Caching and performance in Azure storage disks](/training/modules/caching-and-performance-azure-storage-and-disks/)
 
-- [Secure your Azure virtual machine disks](/learn/modules/secure-your-azure-virtual-machine-disks/)
+- [Secure your Azure virtual machine disks](/training/modules/secure-your-azure-virtual-machine-disks/)
 
-- [Introduction to securing data at rest on Azure](/learn/modules/secure-data-at-rest/)
+- [Introduction to securing data at rest on Azure](/training/modules/secure-data-at-rest/)
 
-- [Choose a data storage approach in Azure](/learn/modules/choose-storage-approach-in-azure/)
+- [Choose a data storage approach in Azure](/training/modules/choose-storage-approach-in-azure/)
 
 ## Learn more with optional hands-on exercises
 
-- [Create a storage account using the Azure portal](/learn/modules/create-azure-storage-account)
+- [Create a storage account using the Azure portal](/training/modules/create-azure-storage-account)

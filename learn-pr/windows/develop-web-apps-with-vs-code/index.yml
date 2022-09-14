@@ -22,7 +22,7 @@ prerequisites: |
  - Windows 10
  - macOS 10.9 or later
  - Ubuntu, Debian, Red Hat, Fedora, or SUSE
-iconUrl: /learn/achievements/introducing-vs-code.svg
+iconUrl: /training/achievements/introducing-vs-code.svg
 levels:
 - beginner
 roles:

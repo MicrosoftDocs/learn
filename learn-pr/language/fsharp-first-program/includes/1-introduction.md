@@ -11,4 +11,4 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Familiarity with how to set up your F# development environment, covered in [Take your first steps with F#](/learn/modules/fsharp-first-steps/?azure-portal=true).
+- Familiarity with how to set up your F# development environment, covered in [Take your first steps with F#](/training/modules/fsharp-first-steps/?azure-portal=true).

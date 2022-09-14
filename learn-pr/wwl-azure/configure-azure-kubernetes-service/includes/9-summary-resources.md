@@ -13,4 +13,4 @@ You should now be able to:
 You can learn more by reviewing the following.
 
  -  [Azure Kubernetes Service documentation](/azure/aks/intro-kubernetes)
- -  [Introduction to Kubernetes](/learn/modules/intro-to-kubernetes/)
+ -  [Introduction to Kubernetes](/training/modules/intro-to-kubernetes/)

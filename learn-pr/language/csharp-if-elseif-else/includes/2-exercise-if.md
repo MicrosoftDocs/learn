@@ -13,7 +13,7 @@ We'll use the `Random.Next()` method to simulate rolling three six-sided dice. W
 We'll add to the number of rules as we expand our understanding of the `if` statement.
 
 > [!Important]
-> We'll make extensive use of the `System.Random` class which we covered in the module [Call methods from the .NET Class Library using C#](/learn/modules/csharp-call-methods/?azure-portal=true). If you need a refresher about how `Random.Next()` works, please refer to that module.
+> We'll make extensive use of the `System.Random` class which we covered in the module [Call methods from the .NET Class Library using C#](/training/modules/csharp-call-methods/?azure-portal=true). If you need a refresher about how `Random.Next()` works, please refer to that module.
 
 ### Step 1 - Write code that generates three random numbers and displays them in output
 
@@ -112,7 +112,7 @@ Other simple Boolean expressions can be created by using operators to compare tw
 - and so on
 
 > [!NOTE]
-> We devote an entire module to Boolean expressions. We can choose from many operators to construct a Boolean expression, and we'll cover only a few of the basics here. For more information, see the module [Evaluate Boolean expressions to make decisions in C#](/learn/modules/csharp-evaluate-boolean-expressions/?azure-portal=true).
+> We devote an entire module to Boolean expressions. We can choose from many operators to construct a Boolean expression, and we'll cover only a few of the basics here. For more information, see the module [Evaluate Boolean expressions to make decisions in C#](/training/modules/csharp-evaluate-boolean-expressions/?azure-portal=true).
 
 In our example, we evaluated the Boolean expression `total > 14`. However, we could have chosen the Boolean expression `total >= 15` because in this case, they're the same. Given that the rules to our game specify "If the two dice, plus any bonuses, is 15 or greater, you win the game", we should probably prefer the latter. We'll make that change in the next step of the exercise.
 
@@ -125,7 +125,7 @@ There are code blocks at many levels in C#. In fact, .NET Editor hides the fact 
 Code blocks can contain other code blocks. We'll see that demonstrated later in this module as we nest one `if` statement inside of another.
 
 > [!NOTE]
-> We devote an entire module to code blocks. Code blocks are central to understanding code organization and structure, and they define the boundaries of variable scope. For more information, see the module [Control variable scope and logic using code blocks in C#](/learn/modules/csharp-code-blocks/?azure-portal=true).
+> We devote an entire module to code blocks. Code blocks are central to understanding code organization and structure, and they define the boundaries of variable scope. For more information, see the module [Control variable scope and logic using code blocks in C#](/training/modules/csharp-code-blocks/?azure-portal=true).
 
 ### Step 3 - Add another if statement to implement the doubles bonus
 

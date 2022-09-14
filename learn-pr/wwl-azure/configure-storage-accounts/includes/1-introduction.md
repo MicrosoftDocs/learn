@@ -6,7 +6,7 @@ You need to configure appropriate storage accounts for the data. You need to con
 
 ## Skills measured
 
-Configuring storage accounts is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configuring storage accounts is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Implement and manage storage (15–20%)
 

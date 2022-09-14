@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * You should be experienced with developer concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/azure-app-implement-configuration.svg
+iconUrl: /training/achievements/azure-app-implement-configuration.svg
 levels:
 - intermediate
 roles:

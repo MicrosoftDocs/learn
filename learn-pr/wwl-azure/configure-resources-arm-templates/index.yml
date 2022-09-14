@@ -17,7 +17,7 @@ abstract: |
   - Locate and use Azure Quickstart Templates.
 prerequisites: |
   None
-iconUrl: /learn/achievements/arm-templates-resources.svg
+iconUrl: /training/achievements/arm-templates-resources.svg
 levels:
 - beginner
 roles:

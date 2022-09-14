@@ -16,7 +16,7 @@ prerequisites: |
   - Experience creating and configuring resources using the Azure portal
 summary: |
   Implement SQL Server-based options for authentication and authorization, as well as Azure options for securing Azure SQL databases.  Explore encryption, firewalls and advanced threat protection.
-iconUrl: /learn/achievements/implement-a-secure-environment-for-a-database-service.svg
+iconUrl: /training/achievements/implement-a-secure-environment-for-a-database-service.svg
 levels:
 - intermediate
 roles:

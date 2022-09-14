@@ -11,7 +11,7 @@ You meet these goals providing scale up and down, and scale in and out. Your sca
 
 ## Skills measured
 
-App Service plans and scaling are part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+App Service plans and scaling are part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 

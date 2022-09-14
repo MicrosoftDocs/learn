@@ -25,7 +25,7 @@ prerequisites: |
   - Basic knowledge on how to use Jupyter Notebooks
   - Install Anaconda, ONLY if Jupyter Notebook & Python not already installed on your computer. See https://docs.anaconda.com/anaconda/install/index.html
   
-iconUrl: /learn/achievements/anomaly-detector-abnormal-time-series.svg
+iconUrl: /training/achievements/anomaly-detector-abnormal-time-series.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role

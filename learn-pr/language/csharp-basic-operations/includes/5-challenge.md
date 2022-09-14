@@ -25,6 +25,6 @@ The temperature is 34.444444444444444444444444447 Celsius.
 ```
 
 > [!Note]
-> Admittedly, we would prefer to not see so many values after the decimal point. Ideally the value would be formatted to a single value after the decimal point: `34.4`.  In the module [Format alphanumeric data for presentation in C#](/learn/modules/csharp-format-strings/), we'll learn how to format numbers for proper display to the user.
+> Admittedly, we would prefer to not see so many values after the decimal point. Ideally the value would be formatted to a single value after the decimal point: `34.4`.  In the module [Format alphanumeric data for presentation in C#](/training/modules/csharp-format-strings/), we'll learn how to format numbers for proper display to the user.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.

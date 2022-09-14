@@ -17,7 +17,7 @@ abstract: |
   - Implement GitHub Flow
   - Fork a repo
 prerequisites: ""
-iconUrl: /learn/achievements/2-manage-git-branches-and-workflows.svg
+iconUrl: /training/achievements/2-manage-git-branches-and-workflows.svg
 levels:
 - advanced
 roles:

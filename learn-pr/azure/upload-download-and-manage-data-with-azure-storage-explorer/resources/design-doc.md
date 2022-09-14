@@ -110,6 +110,6 @@ Identify the subtasks of *Upload, download, and manage data with Azure Storage E
 
 This module should cover the main features of Storage Explorer, go through a quick install, then exercises that demonstrate connecting to the various resources. Use a template to deploy the resources needed by Storage Explorer in Azure.
 
-- I have been using this sandbox as a base: https://docs.microsoft.com/learn/modules/access-data-with-cosmos-db-and-sql-api/2-setup-cosmosdb?source=learn
+- I have been using this sandbox as a base: https://docs.microsoft.com/training/modules/access-data-with-cosmos-db-and-sql-api/2-setup-cosmosdb?source=learn
 
 - The sandbox will need to allow Azure Storage Explorer to create in a Storage account, a Blob container, a queue, a Cosmos DB and a Data Lake.  Otherwise you won't be able complete some of the exercises.

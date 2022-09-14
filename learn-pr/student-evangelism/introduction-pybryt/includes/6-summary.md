@@ -12,4 +12,4 @@ Once you have a library of reference implementations built out, deploying PyBryt
 
 PyBryt is capable of much more than what is presented in this module. Besides providing logic for combining annotations, PyBryt can also be integrated with existing autograding pipelines such as [Otter-Grader](https://otter-grader.readthedocs.io/) and can be used for plagiarism detection.
 
-You can learn more about PyBryt in the [PyBryt advanced module](/learn/modules/advanced-pybryt/) and its [documentation](https://microsoft.github.io/pybryt/html/index.html), and you can find more examples in the [demos folder](https://github.com/microsoft/pybryt/tree/main/demo) in its GitHub repository.
+You can learn more about PyBryt in the [PyBryt advanced module](/training/modules/advanced-pybryt/) and its [documentation](https://microsoft.github.io/pybryt/html/index.html), and you can find more examples in the [demos folder](https://github.com/microsoft/pybryt/tree/main/demo) in its GitHub repository.
