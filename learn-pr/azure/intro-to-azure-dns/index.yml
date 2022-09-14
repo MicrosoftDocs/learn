@@ -18,7 +18,7 @@ abstract:  |
   - Determine whether Azure DNS meets the needs of your organization.
   - Understand the difference between Azure DNS public and private zones.
 prerequisites: Understanding of basic DNS concepts including DNS records, DNS zones, and DNS name resolution.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

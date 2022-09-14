@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of programming concepts such as conditional logic and loops
   - Basic knowledge of REST services and APIs
-iconUrl: /learn/achievements/intro-to-logic-apps.svg
+iconUrl: /training/achievements/intro-to-logic-apps.svg
 badge:
   uid: learn.azure-intro-to-logic-apps.badge
 levels:
