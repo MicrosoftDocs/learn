@@ -23,7 +23,7 @@ In this module, you will:
 
 - Intermediate knowledge of .NET.
 - Basic understanding of Raspberry Pi and Raspberry Pi OS.
-- .NET SDK 5 or later.
+- .NET SDK 6 or later.
 - The following hardware components:
   - A Raspberry Pi device (2 or greater) configured as described in the *Important* callout below.
   - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout))
