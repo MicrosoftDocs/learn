@@ -6,4 +6,4 @@ You used the Microsoft Authentication Library (MSAL) for Python to create a clie
 
 The amount of work it would take to build a client-confidential application from scratch is substantial. You’d have to write code to create your own identity provider, develop a rest API service, and create a secure library to interact with your identity provider. Once all the code is ready, you'd need a server to host the code.
 
-The Microsoft identity platform and the Microsoft Authentication Library (MSAL) make it easy to build a daemon app. Building a Python daemon app took you less than an hour, and you didn’t have to set up any servers. You can now read user data from a protected web API.
+The Microsoft identity platform and the Microsoft Authentication Library (MSAL) make it much more manageable to build a daemon app. Building a Python daemon app through taking this module meant that no servers needed to be set up and user data can be read from a protected web API.
