@@ -19,7 +19,7 @@ prerequisites: |
   *   Familiarity to use variables, arrays, and hash tables in Windows PowerShell
 summary: |
   This learning path explains how to create and modify scripts. It covers useful scripting techniques that include importing data from a file, accepting user input, and error handling.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
