@@ -16,7 +16,7 @@ prerequisites: |
   If you have no previous programming experience, we recommend you complete the Take your first steps with C# learning path before starting this one.
 summary: |
   In this learning path, you’ll learn how Azure Cosmos DB uses partitioning to scale containers and how spending some time thinking about your data model helps to meet the performance needs of your applications.
-iconUrl: /learn/achievements/data-modeling-implement.svg
+iconUrl: /training/achievements/data-modeling-implement.svg
 levels:
 - intermediate
 roles:
