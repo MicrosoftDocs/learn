@@ -14,4 +14,4 @@ In this module, you'll prepare an Azure AD tenant to authenticate an app and wri
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to create a Python daemon app that uses its own identity to get an access token to include in its requests to a protected web API.
+By the end of this module, you'll be able to create a Python daemon app that uses its own identity to get an access token. The token is then included in the app's requests to a protected web API.
