@@ -188,11 +188,22 @@ You can get these values from the connection string.
 
 1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
 2. Select the project file **privatemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
-1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
+
+    ```json
+    Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+      </PropertyGroup>
+      <ItemGroup>
+        <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.4.0" />
+      </ItemGroup>
+    </Project>      
+    ```
 
 ## Send a message to the queue
 
-1. To run the component that sends a message about a sale, run the following command in Cloud Shell. The first line ensures that you are in the correct path.
+1. In the CloudShell (bottom window of the right pane) where you see commands, run the following command to send a message about a sale. The first line ensures that you are in the correct path.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -419,8 +430,19 @@ You can get these values from the connection string.
     ```
 
 1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-2. Select the project file **privatemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
-1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
+2. Select the project file **privatemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file. Aslo, remove `Microsoft.Azure.ServiceBus` entry if it exists. 
+
+    ```json
+    Project Sdk="Microsoft.NET.Sdk">
+      <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+      </PropertyGroup>
+      <ItemGroup>
+        <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.4.0" />
+      </ItemGroup>
+    </Project>    
+    ```
 
 ## Receive a message from the queue
 
