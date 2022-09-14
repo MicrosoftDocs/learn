@@ -17,7 +17,7 @@ abstract: |
   * Monitor the effects of autoscaling.
 prerequisites: |
   * Experience using the Azure portal to create and manage App Service web apps
-iconUrl: /learn/achievements/app-service-scale-apps.svg
+iconUrl: /training/achievements/app-service-scale-apps.svg
 levels:
 - intermediate
 roles:
