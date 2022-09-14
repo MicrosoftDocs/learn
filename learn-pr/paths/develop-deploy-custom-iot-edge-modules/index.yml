@@ -19,7 +19,7 @@ prerequisites: |
   - Describe the configuration requirements for a transparent gateway device.
 summary: |
   You will learn about programming for the IoT Edge runtime environment, the tools and processes that are used to develop custom IoT Edge modules, and the support that IoT Edge provides for extended offline scenarios.
-iconUrl: /learn/achievements/iot-edge-deploy-custom-modules.svg
+iconUrl: /training/achievements/iot-edge-deploy-custom-modules.svg
 levels:
 - intermediate
 roles:

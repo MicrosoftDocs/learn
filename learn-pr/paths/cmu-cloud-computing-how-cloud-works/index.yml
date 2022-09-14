@@ -30,7 +30,7 @@ prerequisites: |
   - Know how datacenters are set up, powered, and provisioned
   - Understand how cloud resources are provisioned and metered
 showCreativeCommonsFooter: true
-iconUrl: /learn/achievements/cmu-cloud-developer/virtualization-share-cloud-resources.svg
+iconUrl: /training/achievements/cmu-cloud-developer/virtualization-share-cloud-resources.svg
 hidden: true
 levels:
 - beginner
