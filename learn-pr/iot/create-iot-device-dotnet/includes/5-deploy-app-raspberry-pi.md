@@ -65,7 +65,7 @@ Complete the following steps **in the original terminal window on your developme
     In the preceding command:
 
     - `scp` is the secure file copy command included with OpenSSH.
-    - `./bin/Debug/net6.0/linux-arm/publish/*` specifies the files to be copied. In this case, every file in the `./bin/Debug/net6.0/linux-arm/publish/` directory is included. Enter the correct path if you're using a different version of the .NET SDK or are targetting `linux-arm64`, as the path will be different.
+    - `./bin/Debug/net6.0/linux-arm/publish/*` specifies the files to be copied. In this case, every file in the `./bin/Debug/net6.0/linux-arm/publish/` directory is included. Enter the correct path if you're using a different version of the .NET SDK or are targeting `linux-arm64`, as the path will be different.
     - `pi@raspberrypi:~/cheesecave.net` is the destination.
         - `pi@raspberrypi` is the username and host name, as before.
         - `~/cheesecave.net` is the location on the Raspberry Pi where the files will be copied to.
