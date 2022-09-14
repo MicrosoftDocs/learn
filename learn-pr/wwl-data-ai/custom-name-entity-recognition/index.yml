@@ -19,7 +19,7 @@ prerequisites: |
   - The Azure portal
   - General functionality of Cognitive Services
   - General programming technique
-iconUrl: /learn/achievements/2-custom-name-entity-recognition.svg
+iconUrl: /training/achievements/2-custom-name-entity-recognition.svg
 levels:
 - intermediate
 roles:

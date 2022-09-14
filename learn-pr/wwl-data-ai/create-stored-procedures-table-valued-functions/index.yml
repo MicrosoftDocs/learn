@@ -19,7 +19,7 @@ abstract: |
   * Create simple user-defined functions and write queries against them.
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL queries to retrieve and filter data from a table in a database.
-iconUrl: /learn/achievements/create-stored-procedures-table-functions.svg
+iconUrl: /training/achievements/create-stored-procedures-table-functions.svg
 levels:
 - advanced
 roles:

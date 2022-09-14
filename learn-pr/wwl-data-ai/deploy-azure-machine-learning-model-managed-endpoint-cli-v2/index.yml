@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   *   Some familiarity with the Azure Machine Learning service.
   *   Some experience in training machine learning models using frameworks such as scikit-learn.
-iconUrl: /learn/achievements/4-deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.svg
+iconUrl: /training/achievements/4-deploy-azure-machine-learning-model-to-managed-endpoint-cli-v2.svg
 levels:
 - intermediate
 roles:

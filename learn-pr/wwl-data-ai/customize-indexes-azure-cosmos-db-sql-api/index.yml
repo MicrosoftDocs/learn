@@ -16,7 +16,7 @@ abstract: |
   - Create a cross-product query
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-sql-api-customize-indexes.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-customize-indexes.svg
 levels:
 - intermediate
 roles:
