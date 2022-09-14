@@ -18,7 +18,7 @@ abstract: |
 
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/create-ui-in-xamarin-forms-apps-with-xaml-badge.svg
+iconUrl: /training/achievements/xamarin/create-ui-in-xamarin-forms-apps-with-xaml-badge.svg
 levels:
 - beginner
 roles:
