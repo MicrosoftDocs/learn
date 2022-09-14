@@ -37,7 +37,7 @@ Let's cover the principles of what we suggest:
      -  Automate what you inspect and validate as part of pull requests.
      -  Tracks pull request completion duration and set goals to reduce the time it takes.
 
-We'll be using the myWebApp created in the previous exercises. See [Describe working with Git locally.](/learn/modules/describe-types-of-source-control-systems/7-describe-working-git-locally)
+We'll be using the myWebApp created in the previous exercises. See [Describe working with Git locally.](/training/modules/describe-types-of-source-control-systems/7-describe-working-git-locally)
 
 In this recipe, we'll be using three trendy extensions from the marketplace:
 
