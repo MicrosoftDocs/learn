@@ -31,7 +31,7 @@ In this step, we're going to create a VM.
     | Region | See the following list. Select a location close to you. |
     | Availability options | Leave as default |
     | Image | Select **Windows Server 2019 Datacenter** |
-    | VM architecture | Seelct **x64** |
+    | VM architecture | Select **x64** |
     | Size | Accept the default **Standard_DS1-v2**, which gives you a single CPU and 3.5 GB of memory. That's fine for this example. |
     | **Administrator account** |
     | Username | Enter unique username for admin account on the new VM. |
