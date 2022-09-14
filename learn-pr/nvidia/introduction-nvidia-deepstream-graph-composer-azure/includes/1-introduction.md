@@ -6,7 +6,7 @@ In this module, you'll learn how to set up and configure the NVIDIA DeepStream G
 - RTX2080, RTX3080, T4, or A100 NVIDIA graphics card
 - Familiarity with container workloads and Docker
 - Familiarity with Azure IoT Edge and Azure IoT Hub
-- Completion of the prerequisite module: [NVIDIA DeepStream development with Microsoft Azure](/learn/modules/setup-configure-nvidia-deepstream-development/)
+- Completion of the prerequisite module: [NVIDIA DeepStream development with Microsoft Azure](/training/modules/setup-configure-nvidia-deepstream-development/)
 
 :::image type="content" source="../media/composer-test1.png" alt-text="Screenshot that shows the NVIDIA DeepStream Graph Composer Test1 application example." lightbox="../media/composer-test1.png":::
 
