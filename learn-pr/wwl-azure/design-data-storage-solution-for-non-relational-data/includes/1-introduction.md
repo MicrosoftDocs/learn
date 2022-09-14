@@ -1,21 +1,26 @@
-**Meet Tailwind Traders**
+Data storage describes how different types of data are stored in your organization. The type of data storage that you implement is based on the structure of your data and the manner in which the data is accessed.
 
-:::image type="content" source="../media/tailwind-traders.png" alt-text="Screenshot of the Tailwind Traders logo.":::
+Some data is highly organized, such as machine configurations, sensitive personal information, and customer invoices. Other data can be less structured like fax images, executive presentations, and engineering white papers. Certain data is accessed by only a few individuals like administrators or file owners. Other data can be used by both all levels of users, both internal employees and external partners.
 
+## Meet Tailwind Traders
 
-The Tailwind Trader’s CTO asks, “What is our storage solution for non-relational data?” The CTO’s question is a reasonable and an area Azure Architects can help. In this module, we’ll explore different storage strategies. Storage strategies will include data types, storage accounts, blob storage, file storage, disk storage, storage security, and data protection. 
+:::image type="icon" source="../media/tailwind-traders.png" border="false":::
+
+Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online. As you work through this lesson, suppose you're the CTO for Tailwind Traders. You're investigating storage solutions for unstructured data that doesn't have clear relationships between the data fields. You're interested in how storage accounts and data types can be used with blob, file, and disk storage. You want to implement strong protection for your data storage. The company is seeking a data storage solution that balances features with strong performance and reasonable cost.
 
 ### Learning objectives
 
-In this module, you’ll learn how to:
+In this module, you learn how to:
 
 - Design for data storage.
 
-- Design for Azure storage accounts.
+- Design for Azure Storage accounts.
 
-- Design for Azure blob storage.
+- Design for Azure Blob Storage.
 
-- Design for Azure files.
+- Design for data redundancy.
+
+- Design for Azure Files.
 
 - Design an Azure disk solution.
 
@@ -23,18 +28,20 @@ In this module, you’ll learn how to:
 
 ### Skills measured
 
-The content in the module will help you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
+The content in this module helps you prepare for Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions. The module concepts are covered in:
 
-Design a data storage solution for non-relational data
+Design data storage solutions
 
-- Recommend a data storage solution to balance features, performance, and cost
+- Design a data storage solution for non-relational data
 
-- Design a data solution for protection and durability 
+   - Recommend a data storage solution to balance features, performance, and cost
 
-- Recommend access control solutions to data storage
+   - Design a data solution for protection and durability
+
+   - Recommend access control solutions for data storage
 
 ### Prerequisites
 
 - Conceptual knowledge of storage accounts, blobs, files, disks, and data protection. 
 
-- Working experience with creating and securing storage systems. 
+- Working experience with creating and securing storage systems.
