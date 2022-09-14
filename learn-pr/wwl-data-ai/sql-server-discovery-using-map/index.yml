@@ -20,7 +20,7 @@ prerequisites: |
   - Experience administering SQL Server databases
   - Knowledge of SQL Server editions and versions
   - Understanding of SQL Server configuration settings
-iconUrl: /learn/achievements/sqlserver/sql-server-discovery-using-map.svg
+iconUrl: /training/achievements/sqlserver/sql-server-discovery-using-map.svg
 levels:
 - beginner
 roles:

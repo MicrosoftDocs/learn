@@ -19,7 +19,7 @@ abstract: |
   - Measure cross-partition storage distribution throughput
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-measure-performance.svg
+iconUrl: /training/achievements/azure-cosmos-db-measure-performance.svg
 levels:
 - intermediate
 roles:
