@@ -11,6 +11,6 @@ You should be able to:
 
 Microsoft Learn provides a large number of self-paced learning paths. For this lesson, we recommend the following modules. You may search and find other modules that are of interest to you.
 
- -  [Introduction to threat modeling](/learn/modules/tm-introduction-to-threat-modeling/)
- -  [Use a framework to identify threats and find ways to reduce or eliminate risk](/learn/modules/tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk/)
- -  [Create a threat model using data-flow diagram elements](/learn/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/)
+ -  [Introduction to threat modeling](/training/modules/tm-introduction-to-threat-modeling/)
+ -  [Use a framework to identify threats and find ways to reduce or eliminate risk](/training/modules/tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk/)
+ -  [Create a threat model using data-flow diagram elements](/training/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/)
