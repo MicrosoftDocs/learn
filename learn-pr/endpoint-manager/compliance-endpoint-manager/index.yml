@@ -20,7 +20,7 @@ abstract: |
   - Learn about connector status
   - Learn about client health with co-management
 prerequisites: None
-iconUrl: /learn/achievements/compliance-endpoint-manager.svg
+iconUrl: /training/achievements/compliance-endpoint-manager.svg
 ratingEnabled: true
 levels:
 - beginner

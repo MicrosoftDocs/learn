@@ -38,7 +38,7 @@ prerequisites: |
   - Understand how cloud resources are provisioned and metered
   - Be familiar with the concept of virtualization
   - Know what the different types of virtualization are
-iconUrl: /learn/achievements/cmu-cloud-developer/virtualize-computing-power.svg
+iconUrl: /training/achievements/cmu-cloud-developer/virtualize-computing-power.svg
 hidden: true
 levels:
 - beginner
