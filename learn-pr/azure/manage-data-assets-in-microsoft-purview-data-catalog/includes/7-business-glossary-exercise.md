@@ -103,27 +103,51 @@ A full sample CSV will be provided in the steps below.
 
 1. Open the data catalog and select **Manage term templates** in the top menu.
 
+    :::image type="content" source="../media/business-glossary-exercise/manage-term-templates-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/manage-term-templates.png":::
+
 1. Select the **Custom** tab at the top of the manage term templates window.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-custom-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-custom.png":::
 
 1. Select **New term template**.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-new-term-template-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/select-new-term-template.png":::
+
 1. Give your template a name and description that will give other users enough information about how to use the term template.
+
+    :::image type="content" source="../media/business-glossary-exercise/name-and-description.png" alt-text="<alt text>":::
 
 1. Select **New attribute** to add your first attribute to your term.
 
+    :::image type="content" source="../media/business-glossary-exercise/name-and-description.png" alt-text="<alt text>":::
+
 1. Give your new attribute a name and a description as well.
 
-1. Choose wether or not you want the attribute to be required by selecting **Mark as required**.
+    :::image type="content" source="../media/business-glossary-exercise/attribute-name-and-description.png" alt-text="<alt text>":::
+
+1. Choose wether or not you want the attribute to be required to create a term by selecting **Mark as required**.
+
+    :::image type="content" source="../media/business-glossary-exercise/mark-as-required.png" alt-text="<alt text>":::
 
 1. Choose your field type.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-field-type.png" alt-text="<alt text>":::
+
 1. For Text, you can provide a default value. For single or multiple choice, provide all the values for choices you'll want.
+
+    :::image type="content" source="../media/business-glossary-exercise/complete-field.png" alt-text="<alt text>":::
 
 1. Select **Apply**
 
+    :::image type="content" source="../media/business-glossary-exercise/select-apply.png" alt-text="<alt text>":::
+
 1. Add as many other attributes as you'd like your term to have, then select **Create**.
 
+    :::image type="content" source="../media/business-glossary-exercise/select-create-for-template.png" alt-text="<alt text>":::
+
 1. Now your new term template will be available when others create terms in the business glossary. You can use these to define terms that provide the best information for your business.
+
+    :::image type="content" source="../media/business-glossary-exercise/new-term-template-created-inline.png" alt-text="<alt text>" lightbox="../media/business-glossary-exercise/new-term-template-created.png":::
 
 ## Add term to an asset
 
