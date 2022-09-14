@@ -12,5 +12,5 @@ By completing this module, you have learned how to:
 
 Use the following resources to discover more:
 
-- [Microsoft Azure Data Fundamentals: Explore core data concepts](/learn/paths/azure-data-fundamentals-explore-core-data-concepts/)
-- [Realize Integrated Analytical Solutions with Azure Synapse Analytics](/learn/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/)
+- [Microsoft Azure Data Fundamentals: Explore core data concepts](/training/paths/azure-data-fundamentals-explore-core-data-concepts/)
+- [Realize Integrated Analytical Solutions with Azure Synapse Analytics](/training/paths/realize-integrated-analytical-solutions-with-azure-synapse-analytics/)

@@ -16,7 +16,7 @@ abstract: |
   - Migrate data using Spark or Kafka
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-moving-data.svg
+iconUrl: /training/achievements/azure-cosmos-db-moving-data.svg
 levels:
 - intermediate
 roles:

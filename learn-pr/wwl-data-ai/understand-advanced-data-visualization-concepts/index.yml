@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Ability to visualize data and create reports in Power BI Desktop.
   - Understanding of reports in the Power BI Service.
-iconUrl: /learn/achievements/understand-advanced-data-visualization-concepts.svg
+iconUrl: /training/achievements/understand-advanced-data-visualization-concepts.svg
 levels:
 - intermediate
 roles:
