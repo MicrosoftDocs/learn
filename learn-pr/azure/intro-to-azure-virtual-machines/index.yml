@@ -16,7 +16,7 @@ abstract: |
   - Describe the options to create and manage virtual machines
   - Describe the additional services available to administer virtual machines
 prerequisites: None
-iconUrl: /learn/achievements/intro-to-azure-virtual-machines.svg
+iconUrl: /training/achievements/intro-to-azure-virtual-machines.svg
 levels:
 - beginner
 roles:

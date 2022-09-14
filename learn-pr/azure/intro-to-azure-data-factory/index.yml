@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Several years of experience working with data integration.
   - Several years of experience working with Azure DBaaS platforms.
-iconUrl: /learn/achievements/intro-to-azure-data-factory.svg
+iconUrl: /training/achievements/intro-to-azure-data-factory.svg
 levels:
   - beginner
 roles:
