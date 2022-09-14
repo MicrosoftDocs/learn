@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic familiarity with Azure storage and Blob objects
   - Experience in basic Azure web app development and deployment
-iconUrl: /learn/achievements/optimize-blob-storage-costs.svg
+iconUrl: /training/achievements/optimize-blob-storage-costs.svg
 levels:
 - beginner
 roles:

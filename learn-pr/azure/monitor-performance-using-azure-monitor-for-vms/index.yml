@@ -22,7 +22,7 @@ prerequisites: |
   - Experience using the Azure portal for accessing and creating resources
   - Knowledge of Azure virtual machine creation, administration, and maintenance
   - Basic familiarity with querying datasets to filter and extract information
-iconUrl: /learn/achievements/monitor-performance-using-azure-monitor-for-vms.svg
+iconUrl: /training/achievements/monitor-performance-using-azure-monitor-for-vms.svg
 badge:
   uid: learn.monitor-vm-performance-using-azure-monitor-for-vms.badge
 levels:
