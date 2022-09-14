@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience with building and deploying static websites.
   - Familiarity with how web content is requested and delivered on the internet, including basics of the Domain Name System (DNS)
-iconUrl: /learn/achievements/create-cdn-static-resources-blob-storage.svg
+iconUrl: /training/achievements/create-cdn-static-resources-blob-storage.svg
 levels:
 - beginner
 roles:
