@@ -37,8 +37,8 @@ security strategy and architecture. You should now be able to:
 
 ### Learn more with self-paced training
 
--   [Investigate roles in Azure AD](/learn/modules/azure-active-directory/4-roles-azure-active-directory)
+-   [Investigate roles in Azure AD](/training/modules/azure-active-directory/4-roles-azure-active-directory)
 
--   [Explore authentication options](/learn/modules/hybrid-identity/3-authentication-options)
+-   [Explore authentication options](/training/modules/hybrid-identity/3-authentication-options)
 
--   [Explore the zero trust model](/learn/modules/azure-ad-privileged-identity-management/2-microsofts-zero-trust-model)
+-   [Explore the zero trust model](/training/modules/azure-ad-privileged-identity-management/2-microsofts-zero-trust-model)

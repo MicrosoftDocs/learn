@@ -17,7 +17,7 @@ abstract: |
   - Optimize a data model using Tabular Editor.
 prerequisites: |
   - Experience designing and building Power BI data models.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

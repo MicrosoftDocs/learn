@@ -17,7 +17,7 @@ abstract: |
   *   Create parameterized KQL functions
 prerequisites: |
   Basic knowledge of Kusto Query Language (KQL).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:
