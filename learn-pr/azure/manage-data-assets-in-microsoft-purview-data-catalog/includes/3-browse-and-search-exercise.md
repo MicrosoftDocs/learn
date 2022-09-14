@@ -4,66 +4,66 @@ In this excercise, we'll use the data catalog to search and browse for data, and
 
 1. In the [Azure portal](https://portal.azure.com/), open your Microsoft Purview account and select **Open Microsoft Purview Governance Portal**.
 
-    :::image type="content" source="../media/browse-and-search-exercise/azure-portal.png" alt-text="<alt text>":::
+    :::image type="content" source="../media/browse-and-search-exercise/azure-portal.png" alt-text="Screenshot of Microsoft Purivew account page in the Azure portal, with the Open Microsoft Purview Governance Portal button highlighted.":::
 
 1. The Microsoft Purview Governance Portal opens automatically to the home page of the Microsoft Purview Data Catalog.
 
-    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-homepage-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/data-catalog-homepage.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-homepage-inline.png" alt-text="Screenshot of the Microsoft Purview Governance portal open to the home page, which is the data catalog." lightbox="../media/browse-and-search-exercise/data-catalog-homepage.png":::
 
 1. From here you can use the search bar to search for data assets.
 
-    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/search-from-home.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="Screenshot of the data catalog home page, with the search bar in the middle of the page highlighted." lightbox="../media/browse-and-search-exercise/search-from-home.png":::
 
 1. You can also select the **Browse assets** button below the search bar, or the **Browse** tab on the left side menu to browse through your data assets.
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="Screenshot of the data catalog page with the Browse Assets button highlighted in the middle of the page, and the browse folder highlighted in the left menu." lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
 
 1. You can return to the data catalog from anywhere in the Microsoft Purview governance portal by selecting the Data Catalog icon at the top of the left side menu:
 
-    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-menu.png" alt-text="<alt text>":::
+    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-menu.png" alt-text="Screenshot of the Microsoft Purview Left hand menu, with the top icon, the data catalog icon, highlighted.":::
 
 ## Browse the data catalog
 
 1. To browse the data catalog, return to the data catalog page, and select the **Browse assets** button below the search bar or the **Browse** tab on the left side menu to browse through your data assets.
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-from-homepage-inline.png" alt-text="Repeated screenshot of the data catalog page with the Browse Assets button highlighted in the middle of the page, and the browse folder highlighted in the left menu." lightbox="../media/browse-and-search-exercise/browse-from-homepage.png":::
 
 1. You can choose to browse the data catalog either by collection, or by source type.
 
     >[!TIP]
     >Users can only see data sources and assets in the collections they have access to.
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-asset-options-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-asset-options.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-asset-options-inline.png" alt-text="Screenshot of the browse assets page, currently shown sorted by collection with the selection menu highlighted in the middle of the page." lightbox="../media/browse-and-search-exercise/browse-asset-options.png":::
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-asset-options-source-type-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-asset-options-source-type.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-asset-options-source-type-inline.png" alt-text="Screenshot of the browse assets page, currently shown sorted by source type with the selection menu highlighted in the middle of the page." lightbox="../media/browse-and-search-exercise/browse-asset-options-source-type.png":::
 
 1. When you browse by collection and select a collection, you'll see a list of all assets in that collection. You can narrow down results using the asset facets on the left hand menu, or return to the collection list using the collection list button at the top of the left menu.
 
-    :::image type="content" source="../media/browse-and-search-exercise/browsing-by-collection-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browsing-by-collection.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browsing-by-collection-inline.png" alt-text="Screenshot of the browse assets page, showing all assets in a particular collection. The 'view collection tree' button is highlighted in the left menu." lightbox="../media/browse-and-search-exercise/browsing-by-collection.png":::
 
 1. When you browse by data source type, you select a source type and all the sources of that type that you have access to will be listed. Selecting the source will list all the assets available in that source, and you can use the breadcrumbs above the asset lists, and at the top of the source window to return to sources or browsing.
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-list-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-by-source-type-list.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-list-inline.png" alt-text="Screenshot of browsing by source types, showing all sources under the ADLS Gen 2 source type." lightbox="../media/browse-and-search-exercise/browse-by-source-type-list.png":::
 
-    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-assets-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/browse-by-source-type-assets.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browse-by-source-type-assets-inline.png" alt-text="Screenshot of browsing by source type, showing all assets under an available ADLS Gen 2 source." lightbox="../media/browse-and-search-exercise/browse-by-source-type-assets.png":::
 
 ## Search the data catalog
 
 1. To start a search for data in the data catalog, you can use the search bar in the home page using keywords for name, data type, classification, or glossary terms.
 
-    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/search-from-home.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="Screenshot of the data catalog home page, with the search bar highlighted in the middle and the search term 'country' typed in. Several results are shown." lightbox="../media/browse-and-search-exercise/search-from-home.png":::
 
 1. The search bar is also available throughout the Microsoft Purview governance portal. For example, here in the data map, the data catalog search bar is in the top middle of the screen:
 
-    :::image type="content" source="../media/browse-and-search-exercise/catalog-search-bar-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/catalog-search-bar.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/catalog-search-bar-inline.png" alt-text="Screenshot of the data map page in the Microsoft Purview governance portal, with the search catalog bar highlighted in the top middle of the page." lightbox="../media/browse-and-search-exercise/catalog-search-bar.png":::
 
 1. Microsoft Purview will suggest results, and you can select them, but if you select the **Enter** key to enter your search or select **View search results** at the bottom of the returned results, Microsoft Purview will return a full list of data assets and glossary terms that match your keywords, and provides a more in depth search experience.
 
-    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-search-page-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/data-catalog-search-page.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-search-page-inline.png" alt-text="Screenshot of a data catalog search with a full list of assets returned from a search for the keyword 'country'." lightbox="../media/browse-and-search-exercise/data-catalog-search-page.png":::
 
 1. In the data catalog search, you can use the asset facets on the left side menu to filter results by additional metadata, like collection, classification, and asset type. For some of these classifications, you can choose to filter options by **or** or **and** statements.
 
-    :::image type="content" source="../media/browse-and-search-exercise/and-or-options-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/and-or-options.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/and-or-options-inline.png" alt-text="Screenshot of the data catalog search page, with the ellipsis button pressed next to the classifications option to show the filter options.cd" lightbox="../media/browse-and-search-exercise/and-or-options.png":::
 
 1. The data catalog also supports a light search query syntax using keywords. Keywords can be a classification, a glossary term, asset description, or an asset name. Try using these search operators to refine your search:
 
@@ -83,7 +83,9 @@ In this excercise, we'll use the data catalog to search and browse for data, and
 
 When you select an asset in the data catalog, there is a lot of information to look at. Using the chart below, we'll go through some of the basics:
 
-:::image type="content" source="../media/browse-and-search-exercise/asset-view-inline.png" alt-text="<alt text>" lightbox="../media/browse-and-search-exercise/asset-view.png":::
+:::image type="content" source="../media/browse-and-search-exercise/asset-view-inline.png" alt-text="Screenshot of an asset in the Microsoft Purview Data Catalog, each of it's parts labeled." lightbox="../media/browse-and-search-exercise/asset-view.png":::
+   "1. The breadcrumb list of links at the top of the page. 2. A label that says 'certified' next to the name of the asset. 3. The asset action bar in the middle of the page. 4. Tabs for the asset window. 5. The asset description on the overview page. 6. Classifications on the overview page. 7. Schema classifications on the overview page. 8. On the right side of the page, the navigational hierarchies. 9. On the bottom right of the page, the associated glossary terms."
+:::image-end:::
 
 1. The breadcrumbs at the top of the page will lead you back through your selections to the data catalog.
 1. Assets can be **certified** by data stewards in your Microsoft Purview account. This means the asset is endorsed by the data steward as ready to be used.
