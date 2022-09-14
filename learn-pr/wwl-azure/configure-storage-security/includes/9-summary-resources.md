@@ -13,6 +13,6 @@ You can learn more by reviewing the following. A *sandbox* indicates a hands-on 
 
  -  [What is a shared access signature?](/azure/storage/common/storage-dotnet-shared-access-signature-part-1?toc=/azure/storage/blobs/toc.json).
  -  [Azure Storage encryption for data at rest](/azure/storage/common/storage-service-encryption)
- -  [Secure your Azure Storage](/learn/modules/secure-azure-storage-account/)
- -  [Control access to Azure Storage with shared access signatures (Sandbox)](/learn/modules/control-access-to-azure-storage-with-sas/)
- -  [Implement storage security](/learn/modules/storage-security/)
+ -  [Secure your Azure Storage](/training/modules/secure-azure-storage-account/)
+ -  [Control access to Azure Storage with shared access signatures (Sandbox)](/training/modules/control-access-to-azure-storage-with-sas/)
+ -  [Implement storage security](/training/modules/storage-security/)
