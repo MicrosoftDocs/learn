@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure Storage, which includes use of storage accounts and Azure blobs
   - (Optional) Access to an Azure subscription
-iconUrl:  /learn/achievements/provide-disaster-recovery-replicate-storage-data.svg
+iconUrl:  /training/achievements/provide-disaster-recovery-replicate-storage-data.svg
 levels:
 - beginner
 roles:

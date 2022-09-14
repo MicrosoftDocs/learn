@@ -18,7 +18,7 @@ abstract: |
   - Monitor a Batch job with Batch Explorer
 prerequisites: | 
   - Familiarity with Azure and the Azure CLI
-iconUrl: /learn/achievements/run-parallel-tasks-in-azure-batch-with-the-azure-cli.svg
+iconUrl: /training/achievements/run-parallel-tasks-in-azure-batch-with-the-azure-cli.svg
 levels:
 - beginner
 roles:

@@ -19,7 +19,7 @@ abstract:  |
   - Learn some basic ways to troubleshoot issues on your Azure containers
 
 prerequisites: None
-iconUrl: /learn/achievements/run-docker-with-azure-container-instances.svg
+iconUrl: /training/achievements/run-docker-with-azure-container-instances.svg
 levels:
 - intermediate
 roles:

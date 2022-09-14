@@ -17,7 +17,7 @@ abstract: |
   - View activity logs of Azure RBAC changes
 prerequisites: |
   - Knowledge of basic Azure concepts, such as the Azure portal and resource groups
-iconUrl: /learn/achievements/secure-azure-resources-with-rbac.svg
+iconUrl: /training/achievements/secure-azure-resources-with-rbac.svg
 levels: 
 - beginner
 roles: 
