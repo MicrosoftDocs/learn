@@ -6,7 +6,13 @@ In this module, you identified the features and use cases for RBAC. You discover
 
 - Get more information about [Azure RBAC](/azure/role-based-access-control/overview).
 
-- Explore [Azure custom roles](/azure/role-based-access-control/custom-roles).
+- Understand [Azure role definitions](/azure/role-based-access-control/role-definitions).
+
+- Search [Azure RBAC built-in role definitions](/azure/role-based-access-control/built-in-roles).
+
+- Explore [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference).
+
+- Define your own [Azure RBAC custom roles](/azure/role-based-access-control/custom-roles).
 
 - Peruse [Azure RBAC documentation](/azure/role-based-access-control/).
 
