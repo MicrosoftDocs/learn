@@ -22,7 +22,7 @@ When you attach a premium storage disk to your high scale VM, Azure provisions a
 IOPS is a measurement of the storage disks, however it's a _theoretical_ limit - two other factors can affect the actual application performance: **throughput** and **latency**.
 
 ### What is throughput?
-Throughput (also called "bandwidth") is the amount of data that your application is sending to the storage disks in a specified interval (typically per second). If your application is performing I/O with large blocks of data, it requires high throughput.
+Throughput is the amount of data that your application is sending to the storage disks in a specified interval (typically per second). If your application is performing I/O with large blocks of data, it requires high throughput.
 
 Azure provisions throughput in premium storage disks based on that disks' specification. For example, a **P50** disk provisions **250 MB per second** disk throughput. Each high scale VM size also has as specific _throughput limit_ that it can sustain. For example, **Standard GS5** VM has a maximum throughput of **2,000 MB per second**.
 
