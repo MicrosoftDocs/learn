@@ -13,7 +13,7 @@ prerequisites: |
   None.  It is beneficial to have a solid infrastructure background in networking and servers.
 summary: |
   Security has to happen at all levels. Learn how to lock down the infrastructure and network resources that are running in your Azure environment.
-iconUrl: /learn/achievements/platform-implement-protection.svg
+iconUrl: /training/achievements/platform-implement-protection.svg
 levels:
 - intermediate
 roles:
