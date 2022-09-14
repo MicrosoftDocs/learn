@@ -42,8 +42,8 @@ All of the required hardware components are available from various retailers. Mo
 >
 > After installing Raspberry Pi OS, use the `raspi-config` command to ensure the following two services are enabled:
 >
-> - SSH
-> - I2C
+> - `SSH`
+> - `I2C`
 >
 > For more information, see the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
 
