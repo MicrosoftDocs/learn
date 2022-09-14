@@ -22,7 +22,7 @@ You need to configure SAML SSO for a GitHub organization with the IdP you're usi
 - Shibboleth
 
 > [!NOTE]
-> GitHub offers limit support for all identity providers that implement the SAML 2.0 standard.
+> GitHub offers limited support for all identity providers that implement the SAML 2.0 standard.
 
 More access management can be accomplished when using multiple organizations. You can use organizations to create distinct groups of users within your company, such as divisions or groups working on similar projects. Public and internal repositories that belong to an organization are accessible to members of other organizations in the enterprise. Private repositories are inaccessible to anyone who isn't a member of the organization.
 
