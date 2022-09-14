@@ -24,7 +24,7 @@ After completing this module, you'll be able to:
 - The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview)
 - An Azure Quantum workspace
 
-If you haven't installed these tools, we recommend that you go through the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) and [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) modules to get set up and learn the basics.
+If you haven't installed these tools, we recommend that you go through the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) and [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) modules to get set up and learn the basics.
 
 You also need basic knowledge of linear algebra and complex numbers. To get yourself up to speed, check out the following
 Python tutorials in the form of Jupyter notebooks. You can run these notebooks locally or online. 

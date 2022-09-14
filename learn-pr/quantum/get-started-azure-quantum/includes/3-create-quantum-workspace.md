@@ -1,7 +1,7 @@
 With an active Azure subscription, you and your crew are ready to create an Azure Quantum workspace. An Azure Quantum workspace resource, or workspace for short, is a collection of assets associated with running quantum or optimization applications.
 
 > [!Tip]
-> **Free trial.** If you don’t have an Azure subscription, you can [create a free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin. For more information you can see the [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true) learning module. 
+> **Free trial.** If you don’t have an Azure subscription, you can [create a free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin. For more information you can see the [Create an Azure account](/training/modules/create-an-azure-account/?azure-portal=true) learning module. 
 
 Once you have an Azure subscription, follow these steps to create an Azure Quantum workspace:
 
