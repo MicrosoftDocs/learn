@@ -19,7 +19,7 @@ prerequisites: |
   - Visual Studio 2022 with the .NET MAUI workload installed
   - Familiarity with C# and .NET
 ratingEnabled: true
-iconUrl: /learn/achievements/customize-xaml-pages-layout.svg
+iconUrl: /training/achievements/customize-xaml-pages-layout.svg
 levels:
 - beginner
 roles:
