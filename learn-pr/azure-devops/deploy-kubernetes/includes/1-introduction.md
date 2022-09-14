@@ -1,4 +1,4 @@
-In [Automate Docker container deployments with Azure Pipelines](/learn/modules/deploy-docker?azure-portal=true), you updated a release pipeline to build and publish an ASP.NET Core app as a Docker container, which you then deployed to Azure App Service. The migration to a container-based project afforded the product team several key benefits. However, the adoption of container technologies can open new doors future innovations.
+In [Automate Docker container deployments with Azure Pipelines](/training/modules/deploy-docker?azure-portal=true), you updated a release pipeline to build and publish an ASP.NET Core app as a Docker container, which you then deployed to Azure App Service. The migration to a container-based project afforded the product team several key benefits. However, the adoption of container technologies can open new doors future innovations.
 
 As development organizations scale, so do the complexities of the solutions they deliver. Over time, different products and services take increasing dependence on each other. This can result in different development and operations requirements for different components within a given application. Refactoring those components as their own distinct microservices can improve architectural efficiency. A *microservice* is a small, autonomous service designed to be self-contained and to fulfill a specific business capability. Containers provide a great technical foundation for building and deploying these services, but this leads to a new question: how do we *manage* all of these containers floating around?
 
@@ -24,7 +24,7 @@ The modules in this learning path form a progression. To follow the progression 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Automate Docker container deployments with Azure Pipelines](/learn/modules/deploy-docker?azure-portal=true) leaves off.
+We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Automate Docker container deployments with Azure Pipelines](/training/modules/deploy-docker?azure-portal=true) leaves off.
 
 [!include[](../../shared/includes/project-details-note.md)]
 

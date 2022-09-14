@@ -16,7 +16,7 @@ abstract: |
   - Construct a front-end app by using a single-page application (SPA) framework.
   - Connect an API in ASP.NET Core to an SPA application.
   - Configure the back-end application to use cross-origin resource sharing (CORS).
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
