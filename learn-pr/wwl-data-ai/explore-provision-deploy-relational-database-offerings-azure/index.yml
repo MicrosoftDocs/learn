@@ -17,7 +17,7 @@ abstract: |
   - Provision a database service on Azure
 prerequisites: |
   Before starting this module, you should have a fundamental understanding of relational data concepts and some familiarity with Microsoft Azure and the Azure portal.
-iconUrl: /learn/achievements/explore-provision-deploy-relational-database-offerings-azure.svg
+iconUrl: /training/achievements/explore-provision-deploy-relational-database-offerings-azure.svg
 levels:
 - beginner
 roles:

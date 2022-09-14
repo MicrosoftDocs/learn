@@ -17,7 +17,7 @@ abstract: |
   - Apply good development practices to enforce Power BI model security.
 prerequisites: |
   - Experience developing Power BI data models by using Power BI Desktop.
-iconUrl: /learn/achievements/enforce-power-bi-model-security.svg
+iconUrl: /training/achievements/enforce-power-bi-model-security.svg
 levels:
 - intermediate
 roles:

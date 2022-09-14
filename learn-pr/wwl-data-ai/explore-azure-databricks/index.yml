@@ -17,7 +17,7 @@ abstract: |
   - Describe key concepts of an Azure Databricks solution.
 prerequisites: |
   Before starting this module, you should have a fundamental knowledge of data analytics concepts. Consider completing [Azure Data Fundamentals certification](/certifications/azure-data-fundamentals?azure-portal=true) before starting this module.
-iconUrl: /learn/achievements/describe-azure-databricks.svg
+iconUrl: /training/achievements/describe-azure-databricks.svg
 levels:
 - intermediate
 roles:
