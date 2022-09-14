@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-database-for-postgresql.grant-permissions
+title: Grant permissions in Azure SQL Database for PostgreSQL
+metadata:
+  title: Grant permissions in Azure SQL Database for PostgreSQL
+  description: "Grant permissions in Azure SQL Database for PostgreSQL"
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-grant-permissions.md)]

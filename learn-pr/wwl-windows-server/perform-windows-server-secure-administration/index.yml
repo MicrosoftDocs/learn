@@ -22,7 +22,7 @@ prerequisites: |
   - Basic security best practices.
   - Windows client operating systems such as Windows 10.
   - Working with command-line tools.
-iconUrl: /learn/achievements/perform-windows-server-secure-administration.svg
+iconUrl: /training/achievements/perform-windows-server-secure-administration.svg
 levels:
 - intermediate
 roles:

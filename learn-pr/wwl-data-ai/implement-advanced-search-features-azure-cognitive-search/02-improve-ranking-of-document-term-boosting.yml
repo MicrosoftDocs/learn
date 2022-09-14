@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.improve-ranking-of-document-term-boosting
+title: Improve the ranking of a document with term boosting
+metadata:
+  title: Improve the ranking of a document with term boosting
+  description: "Improve the ranking of a document with term boosting"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/02-improve-ranking-of-document-term-boosting.md)]

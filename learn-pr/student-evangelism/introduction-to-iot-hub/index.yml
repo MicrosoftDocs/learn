@@ -19,7 +19,7 @@ abstract: |
     "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
     - Basic knowledge of IoT applications and deploying applications in the Cloud
-iconUrl: /learn/achievements/student-evangelism/introduction-to-iot-hub.svg
+iconUrl: /training/achievements/student-evangelism/introduction-to-iot-hub.svg
 badge:
   uid: learn.introduction-to-iot-hub.badge
 levels:

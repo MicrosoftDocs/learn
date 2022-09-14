@@ -60,9 +60,9 @@ Let's use the Data Explorer tool to create a database and container.
 
     | Setting | Value | Description |
     |---|---|---|
-    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br>You' can enter whatever you want, but we're using *func-io-learn-db* in this module. |
+    | Database id | Select **Create new**, and enter *func-io-learn-db* for the database id | Database names can be 1 to 255 characters long, and cannot contain /, \\, #, ?, or a trailing space.<br>You can enter whatever you want, but we're using *func-io-learn-db* in this module. |
     | Database Max RU/s | 4000 |Accept the default throughput of 4000 request units per second (RU/s). To reduce latency, you can scale up the performance later. |
-    | Container id | *Bookmarks* | Container IDs have the same character requirements as database names. |
+    | Container id | *Bookmarks* | Container IDs have the same character requirements as database names. We're using *Bookmarks* in this module.|
     | Partition key | /id  | The partition key specifies how the documents in Azure Cosmos DB collections are distributed across logical data partitions. You'll use the *Partition key* setting as a convenience because you're not concerned with database performance in this module. To learn more about Azure Cosmos DB partition key strategies, explore the Microsoft Learn Azure Cosmos DB modules. |
 
     Accept the defaults for all the other settings.
@@ -262,7 +262,7 @@ Let's examine what this code is doing.
 
 1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
-1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database_DOCUMENTDB` is replaced with the name of your Cosmos DB database.
+1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database` is replaced with the name of your Cosmos DB database.
 
     ```json
     {
@@ -316,12 +316,10 @@ Let's examine what this code is doing.
     if ($bookmark) {
         $status = [HttpStatusCode]::OK
         $body = @{ url = $bookmark.url }
-        ContentType = "application/json"
     }
     else {
         $status = [HttpStatusCode]::NotFound
         $body = "No bookmarks found"
-        ContentType = "text/plain"
     }
 
     Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{
@@ -346,7 +344,7 @@ Let's examine what this code is doing.
 
 1. Select **function.json** from the dropdown list in your **`<functionapp> \ HttpTrigger2 \`** path.
 
-1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database_DOCUMENTDB` is replaced with the name of your Cosmos DB database.
+1. Modify the values for `id` and `partitionKey` so that they accept a parameter of `{id}`. Your **function.json** code should resemble the following example, where `your-database` is replaced with the name of your Cosmos DB database.
 
     ```json
     {

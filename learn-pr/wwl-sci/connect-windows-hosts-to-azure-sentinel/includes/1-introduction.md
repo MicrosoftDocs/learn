@@ -1,12 +1,12 @@
-You connect Windows devices to the Microsoft Sentinel workspace using the provided data connector.  The connector offers options to control which events to collect.
+You connect Windows devices to the Microsoft Sentinel workspace using the provided data connectors.  The connector offers options to control which events to collect.
 
 You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel.  You must collect event log data from Windows Hosts.  The hosts could be located on-premise or as a virtual machine in Azure.  
 
-Your Security Operations team relies on event data created by the Sysmon tool installed on some of the Windows Hosts.  You will configure the Windows hosts to send event data to Microsoft Sentinel.  You also need to ensure that the Sysmon events are available to be used in detection rules.  
+Your Security Operations team relies on event data created by the Sysmon tool installed on some of the Windows Hosts.  You'll configure the Windows hosts to send event data to Microsoft Sentinel.  You also need to ensure that the Sysmon events are available to be used in detection rules.  
 
 By the end of this module, you'll be able to connect Windows devices to the Microsoft Sentinel workspace using the provided data connector.
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Connect Azure Windows Virtual Machines to Microsoft Sentinel
 - Connect non-Azure Windows hosts to Microsoft Sentinel

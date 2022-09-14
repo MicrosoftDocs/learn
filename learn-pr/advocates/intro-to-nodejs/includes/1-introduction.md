@@ -6,10 +6,10 @@ In this module, you’ll learn what Node.js is and how you can use Node.js to ru
 
 By the end of this module, you'll be able to:
 
-- Explain what Node.js is.
-- Describe how Node.js works.
-- Identify when to use Node.js.
-- Create and run a Node.js script from the command line.
+- Explain what Node.js is
+- Describe how Node.js works
+- Identify when to use Node.js
+- Create and run a Node.js script from the command line
 
 ## Prerequisites
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-microsoft-teams-use-windows-powershell.manage-teams-powershell-module
+title: Manage teams with Microsoft Teams PowerShell module
+metadata:
+  title: Manage teams with Microsoft Teams PowerShell module
+  description: "Manage teams with Microsoft Teams PowerShell module"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-manage-teams-powershell-module.md)]

@@ -22,7 +22,7 @@ prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Windows Server.
   - Operating system installation procedures.
-iconUrl: /learn/achievements/deploy-windows-server.svg
+iconUrl: /training/achievements/deploy-windows-server.svg
 levels:
 - intermediate
 roles:

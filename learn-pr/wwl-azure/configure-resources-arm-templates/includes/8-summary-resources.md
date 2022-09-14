@@ -13,6 +13,6 @@ You can learn more by reviewing the following. A *sandbox* indicates a hands-on 
 
  -  [Azure Resource Manager template documentation](/azure/azure-resource-manager/templates/)
  -  [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/)
- -  [Learn - Deploy Azure infrastructure by using JSON Azure Resource Manager templates (Sandbox)](/learn/modules/build-azure-vm-templates/)
- -  [Learn - Create Azure resources using Azure Resource Manager templates](/learn/modules/create-azure-resources-using-azure-resource-manager-templates/)
- -  [Learn - Build your first Bicep template (Sandbox)](/learn/modules/build-first-bicep-template/)
+ -  [Deploy Azure infrastructure by using JSON Azure Resource Manager templates (Sandbox)](/training/modules/build-azure-vm-templates/)
+ -  [Create Azure resources using Azure Resource Manager templates](/training/modules/create-azure-resources-using-azure-resource-manager-templates/)
+ -  [Build your first Bicep template (Sandbox)](/training/modules/build-first-bicep-template/)

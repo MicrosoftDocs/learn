@@ -26,12 +26,9 @@ First, we need to create the logic app resource in Azure. For this task, we need
       | **Subscription** | Concierge Subscription |
       | **Resource Group** | From the list, select <rgn>[Sandbox resource group]</rgn> |
       | **Instance Details** |
-      | **Logic App name** | **ShoeTracker** |
-      | **Publish** | Workflow |
+      | **Logic app name** | **ShoeTracker** |
       | **Region** | Select a location nearest you. |
-      | **Plan** |
-      | **Plan type** | Consumption |
-      |||
+      | **Type** | Consumption |
   
    1. Select **Review + create**, and then select **Create**.
 
@@ -65,9 +62,10 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
    |----------|----------|-------|-------------|
    | **Connection name** | Yes | ShoeTrackerTwitterConnection | The name to give your Twitter connection |
    | **Authentication Type** | Yes | Use default shared application | The authentication type for your connection |
-   |||||
 
    *Substitution*: This step doesn't apply to the RSS trigger.
+
+1. When the Twitter **When a new tweet is posted** trigger information box appears, you've created a valid connection.
 
 1. When the authorization box appears, sign in with your Twitter account and password, select **Authorize app**, and authenticate your credentials if prompted.
 
@@ -75,7 +73,7 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
 
    *Substitution*: This step doesn't apply to the RSS trigger.
 
-   After you create a valid connection, the trigger information box appears.
+   After you create a valid connection, the trigger information box reappears. 
 
 1. Provide the following trigger information:
 
@@ -85,7 +83,6 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
    | (Interval) | Yes | 1 | The number of time units to wait until the next check. For example, an interval of **3** and a frequency of **Hour** checks for new tweets every three hours. |
    | (Frequency) | Yes | Minute | The time unit to use for the polling interval, for example, **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. |
    | **Add a new parameter** | No | None | Any parameters to add to the trigger. |
-   |||||
 
    *Substitution*: For the RSS trigger, provide the following information:
 
@@ -96,7 +93,6 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
    | (Interval) | Yes | 1 | The number of time units to wait until the next check. For example, an interval of **3** and a frequency of **Hour** checks for new articles every three hours. |
    | (Frequency) | Yes | Minute | The time unit to use for the polling interval, for example, **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. |
    | **Add a new parameter** | No | None | Any parameters to add to the trigger. |
-   |||||
 
 1. When you're done, on the designer toolbar, select **Save**.
 
@@ -104,9 +100,11 @@ Now, you'll add the Twitter trigger and provide values for all required paramete
 
    When you save your workflow, Azure automatically publishes your changes to your deployed logic app resource, which is live and running. You can either wait for the trigger to fire, or you can manually activate the trigger.
 
-1. On the designer toolbar, select **Run Trigger** > **Run**.
+   1. If you choose to wait, on the **Overview** pane, find section labeled **Trigger history** and the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked. You should see this number increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied. In our case, this number represents how many times the trigger found matching tweets.
 
-Your logic app workflow is now scanning Twitter every minute for tweets that contain your search text. If the workflow runs correctly and finishes successfully, a page similar to the designer opens but shows the status and time taken for each step in the workflow run. We'll review this page in more detail later.
+   1. To manually activate the trigger, on the designer toolbar, select **Run Trigger** > **Run**.
+
+      Your logic app workflow now checks Twitter every minute for tweets that contain your search text. If the workflow runs correctly and finishes successfully, a page similar to the designer opens but shows the status and time taken for each step in the workflow run. We'll review this page in more detail later.
 
 Now we'll review the trigger outputs and workflow's run history.
 

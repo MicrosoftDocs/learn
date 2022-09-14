@@ -63,7 +63,7 @@ Suppose your pipeline deploys your resources successfully, but your tests fail. 
 Earlier in this module, you learned that Azure Pipelines enables you to create *rollback stages* that run when a previous stage fails. You can use this approach to create a rollback stage when your test stage reports an unexpected result. You also can manually roll back your changes, or rerun your entire pipeline, if you think the failure was due to a temporary problem that has since been resolved.
 
 > [!NOTE]
-> When you submit a deployment to Azure Resource Manager, you can request that Resource Manager automatically rerun your last successful deployment if it fails. To do this, use the `--rollback-on-error` parameter when you submit the deployment by using the Azure CLI `az deployment group create` command.
+> When you submit a deployment to Azure Resource Manager, you can request that Resource Manager automatically rerun your last successful deployment if it fails. To do this, you need to use the Azure CLI step to deploy your file, and add the `--rollback-on-error` parameter when you submit the deployment by using the `az deployment group create` command.
 
 It's often challenging to work out the steps that a rollback stage should perform. Bicep deployments are generally complex, and it's not easy to roll back changes. It's especially difficult to roll back when your deployment includes other components. 
 

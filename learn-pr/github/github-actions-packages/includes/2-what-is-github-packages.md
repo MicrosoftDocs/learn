@@ -1,7 +1,7 @@
 GitHub Packages is a package-management service that makes it easy to publish public or private packages next to your source code.
 
 > [!NOTE]
-> If you are not already familiar with GitHub, check out the [Introduction to GitHub](/learn/modules/introduction-to-github/) Learn module.
+> If you are not already familiar with GitHub, check out the [Introduction to GitHub](/training/modules/introduction-to-github/) Learn module.
 
 ## GitHub Packages is a package registry
 
@@ -54,7 +54,7 @@ With GitHub Packages, you can use a single set of credentials across your source
 [GitHub Actions](https://github.com/features/actions) is another GitHub feature that allows you to automate your software workflows. You can build, test, and deploy your code right from GitHub.
 
 > [!TIP]
-> If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](/learn/modules/github-actions-ci/)* Learn module.
+> If you want to learn more about GitHub Actions, checkout *[Build continuous integration (CI) workflows by using GitHub Actions](/training/modules/github-actions-ci/)* Learn module.
 
 By combining GitHub Actions and GitHub Packages, you can build a workflow that will build and test your code, and then publish it to GitHub Packages by simply pushing code to your repository.
 

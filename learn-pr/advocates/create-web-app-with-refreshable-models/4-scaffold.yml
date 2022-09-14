@@ -3,9 +3,9 @@ uid: learn.advocates.create-web-app-with-refreshable-models.4-scaffold
 metadata:
   title: Exercise - Scaffold a web app
   description: Exercise - Scaffold a web app and create an interface for inference
-  author: PatrickFarley
+  author: jlooper
   ms.date: 02/10/2020
-  ms.author: pafarley
+  ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

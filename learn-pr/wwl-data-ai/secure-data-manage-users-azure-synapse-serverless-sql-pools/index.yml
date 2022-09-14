@@ -17,7 +17,7 @@ abstract: |
   - Manage user permissions in Azure Synapse serverless SQL pools
 prerequisites: |
   - It is recommended that students have completed Data Fundamentals before starting this learning path.
-iconUrl: /learn/achievements/secure-data-and-manage-users-in-azure-synapse-serverless-sql-pools.svg
+iconUrl: /training/achievements/secure-data-and-manage-users-in-azure-synapse-serverless-sql-pools.svg
 levels:
 - intermediate
 roles:

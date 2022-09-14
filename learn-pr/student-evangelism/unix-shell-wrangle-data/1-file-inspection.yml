@@ -3,14 +3,14 @@ uid: learn.student-evangelism.unix-shell-wrangle-data.1-file-inspection
 metadata:
   title: Perform file inspection in the UNIX shell
   description: This unit describes how you can use the UNIX shell to inspect the contents of files before you do any data wrangling.
-  ms.date: 12/09/2020
-  author: trallard
+  ms.date: 06/15/2022
+  author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Perform file inspection in the UNIX shell
-durationInMinutes: 4
+durationInMinutes: 5
 azureSandbox: true
 interactive: bash
 content: |

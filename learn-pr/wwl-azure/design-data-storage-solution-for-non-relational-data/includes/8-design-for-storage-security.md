@@ -1,6 +1,6 @@
 Azure Storage provides a layered security model. This model enables you to secure and control the level of access to your storage accounts. In this unit, we’ll cover some best practices for storage security. 
 
-:::image type="content" source="../media/storage-security.png" alt-text="Firewall policies, customer-managed keys, and endpoints.":::
+:::image type="content" source="../media/storage-security.png" alt-text="Diagram with firewall policies, customer-managed keys, and endpoints.":::
 
 
 ### Grant limited access to Azure Storage resources 
@@ -10,8 +10,6 @@ The [Azure security baseline for Azure Storage baseline](/security/benchmark/azu
 ### Use Shared Access Signatures
 
 One of the most common ways is to use a [Shared Access Signature](/azure/storage/common/storage-sas-overview). A SAS provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
-
-A [shared access signature](/azure/storage/common/storage-sas-overview) (SAS) provides secure delegated access to resources in your storage account. With a SAS, you have granular control over how a client can access your data. For example:
 
 - What resources the client may access.
 
@@ -27,7 +25,7 @@ A [shared access signature](/azure/storage/common/storage-sas-overview) (SAS) pr
 
 Use [virtual network service endpoints](/azure/virtual-network/virtual-network-service-endpoints-overview) to provide direct connection to your Azure storage. 
 
-:::image type="content" source="../media/storage-endpoints.png" alt-text="A virtual machine uses an endpoint to access a storage account.":::
+:::image type="content" source="../media/storage-endpoints.png" alt-text="Diagram showing a virtual machine using an endpoint to access a storage account.":::
 
 
 
@@ -47,7 +45,7 @@ A [private endpoint](/azure/storage/common/storage-private-endpoints) is a speci
 
  
 
-:::image type="content" source="../media/private-links.png" alt-text="A private endpoint uses a private link to storage accounts.":::
+:::image type="content" source="../media/private-links.png" alt-text="Diagram with private endpoint using a private link to storage accounts.":::
 
 
 

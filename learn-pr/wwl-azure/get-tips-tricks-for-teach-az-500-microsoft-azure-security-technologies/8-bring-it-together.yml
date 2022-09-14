@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-tips-tricks-for-teach-az-500-microsoft-azure-security-technologies.bring-it-together
+title: Bring it all together
+metadata:
+  title: Bring it all together
+  description: "Bring it all together"
+  ms.date: 07/06/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-bring-it-together.md)]

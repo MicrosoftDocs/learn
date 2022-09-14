@@ -6,7 +6,7 @@ You need to ensure the data is secured. You provide ways to grant secure access 
 
 ## Skills measured
 
-Providing secure access to Azure storage is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Providing secure access to Azure storage is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Implement and manage storage (15–20%)
 

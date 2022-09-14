@@ -12,4 +12,4 @@ You can learn more by reviewing the following. A *sandbox* indicates a hands-on 
 
  -  [VPN Gateway documentation](/azure/vpn-gateway/)
  -  [Validated VPN devices list](/azure/vpn-gateway/vpn-gateway-about-vpn-devices)
- -  [Learn - Connect your on-premises network to Azure with VPN Gateway (Sandbox)](/learn/modules/connect-on-premises-network-with-vpn-gateway/)
+ -  [Connect your on-premises network to Azure with VPN Gateway (Sandbox)](/training/modules/connect-on-premises-network-with-vpn-gateway/)

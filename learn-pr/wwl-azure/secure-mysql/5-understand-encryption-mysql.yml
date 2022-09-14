@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-mysql.understand-encryption-mysql
+title: Understand encryption in MySQL
+metadata:
+  title: Understand encryption in MySQL
+  description: "Understand encryption in MySQL"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-understand-encryption-mysql.md)]

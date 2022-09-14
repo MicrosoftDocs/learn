@@ -5,7 +5,7 @@ Here, we'll introduce GitHub Actions and workflows. You'll learn the types of ac
 GitHub is designed to help teams of developers and DevOps engineers build and deploy applications quickly. There are many features in GitHub that enable this, but they generally fall into one of two categories:
 
 - **Communication:** Consider all of the ways that GitHub makes it easy for a team of developers to communicate about the software development project: code reviews in pull requests, GitHub issues, project boards, wikis, notifications, and so on. 
-- **Automation:** GitHub Actions lets your team automate workflows at every step in the software-development process, from integration to delivery to deployment. It even lest you automate adding labels to pull requests and checking for stale issues and pull requests.
+- **Automation:** GitHub Actions lets your team automate workflows at every step in the software-development process, from integration to delivery to deployment. It even lets you automate adding labels to pull requests and checking for stale issues and pull requests.
 
 When combined, these features have allowed thousands of development teams to effectively decrease the amount of time it takes from their initial idea to deployment.
 
@@ -82,9 +82,9 @@ author: "octocat@github.com"
 
 inputs:
     MY_NAME:
-    description: "Who to greet"
-    required: true
-    default: "World"
+      description: "Who to greet"
+      required: true
+      default: "World"
 
 runs:
     uses: "docker"
@@ -97,7 +97,7 @@ branding:
 
 Notice the ```inputs``` section. Here, you're getting the value of a variable called MY_NAME. This variable will be set in the workflow that runs this action.
 
-In the ```runs``` section, notice you specify *docker* in the ```uses``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
+In the ```runs``` section, notice you specify *docker* in the ```uses``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/training/modules/intro-to-docker-containers/?azure-portal=true) module.
 
 The last section, *branding*, personalizes your action in the GitHub Marketplace if you decide to publish it there.
 

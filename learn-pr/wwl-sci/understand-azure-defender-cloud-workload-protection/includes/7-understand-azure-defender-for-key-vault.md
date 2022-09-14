@@ -10,7 +10,7 @@ When anomalous activities occur, Defender for Cloud shows alerts and optionally 
 
 ## Microsoft Defender for Key Vault alerts
 
-When you get an alert from Defender for Key Vault, we recommend investigating and responding to the alert as described in Respond to Defender for Key Vault. Defender for Key Vault protects applications and credentials, so even if you're familiar with the application or user that triggered the alert, it's important to check the situation surrounding every alert.
+When you get an alert from Defender for Key Vault, we recommend investigating and responding to the alert as described in Respond to Defender for Key Vault. Defender for Key Vault protects applications and credentials. So even if you're familiar with the application or user that triggered the alert, it's important to check the situation surrounding every alert.
 
 The alerts appear on Key Vault's Security page, the Defender for Cloud dashboard.
 

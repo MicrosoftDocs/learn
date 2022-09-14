@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-azure-powershell-module.review-benefits-of-azure-powershell-module
+title: Review the benefits of the Azure PowerShell module
+metadata:
+  title: Review the benefits of the Azure PowerShell module
+  description: "Review the benefits of the Azure PowerShell module"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-review-benefits-of-azure-powershell-module.md)]

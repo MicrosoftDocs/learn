@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tune-queries-azure-database-for-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What do you have to do to enable pg_stat_statements queries?"
+    choices:
+    - content: "Nothing. Pg_stat_statements are already enabled."
+      isCorrect: true
+      explanation: "That's correct. Pg_stat_statements are already enabled."
+    - content: "Turn on the **pg_stat_statements.track** setting."
+      isCorrect: false
+      explanation: "That's incorrect. The **pg_stat_statements.track** setting is turned on by default."
+    - content: "In **Server parameters**, enable **pg_qs.query_capture_mode**."
+      isCorrect: false
+      explanation: "That's incorrect. **pg_qs.query_capture_mode** enables the Query Store."
+  - content: "In the Query Store, how do you view the SQL syntax of queries?"
+    choices:
+    - content: "Query the **query_store.runtime_stats_view** view."
+      isCorrect: false
+      explanation: "That's incorrect. The **query_store.runtime_stats_view** view returns runtime statistics information."
+    - content: "Query the **query_store.qs_view** view."
+      isCorrect: true
+      explanation: "That's correct. The **query_store.qs_view** view includes blocks, runtime, and query text."
+    - content: "Query the **query_store.pgms_wait_sampling_view** view."
+      isCorrect: false
+      explanation: "That's incorrect. The **query_store.pgms_wait_sampling_view** view returns wait times for queries."
+  - content: "How do you view the text of a query in Query Performance Insight?"
+    choices:
+    - content: "Find the QUERY ID value for the query that you want to investigate. Query the query_store.query_texts_view using this QUERY ID."
+      isCorrect: true
+      explanation: "That's correct. Query Performance Insight doesn't display query text, but you can find the QUERY ID of each query and search query_store.query_texts_view to find the query text."
+    - content: "In Query Performance Insight, right-click the query and select **More information**."
+      isCorrect: false
+      explanation: "That's incorrect. Due to privacy concerns, Query Performance Insight doesn't display query text on this page."
+    - content: "In Query Performance Insight, select the **Query Store View** tab."
+      isCorrect: false
+      explanation: "That's incorrect. Query Performance Insight doesn't have a tab to display query text."

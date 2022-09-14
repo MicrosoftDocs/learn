@@ -8,7 +8,7 @@ You would like to improve resiliency by adding multiple web servers to its site,
 
 ## Skills measured
 
-Configure the Azure Application Gateway is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configure the Azure Application Gateway is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 

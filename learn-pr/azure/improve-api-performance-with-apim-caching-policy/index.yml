@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Experience with publishing an API in Azure API Management
   - Experience with XML syntax
-iconUrl: /learn/achievements/improve-api-performance-with-apim-caching-policy.svg
+iconUrl: /training/achievements/improve-api-performance-with-apim-caching-policy.svg
 levels:
 - beginner
 roles:

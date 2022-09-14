@@ -96,7 +96,7 @@ Once you've enabled a private endpoint, you can block public access to your data
     
     ```Bash
     MYSQL_RESOURCE_ID=$(az resource show -g ${RESOURC_GROUP} -n ${SQL_SERVER_NAME}--resource-type
-        "Microsoft.DBforMySQL/servers"
+        "Microsoft.DBforMySQL/servers" \
         --query "id" -o tsv)
     
     az network private-endpoint creates \
@@ -130,13 +130,13 @@ Once you've enabled a private endpoint, you can block public access to your data
 4.  Next, create a new A record pointing to the IP address of the newly created private endpoint.
     
     ```Bash
-    NIC_ID=$(az network private-endpoint show
-        --name pe-openlab-mysql
-        --resource-group $RESOURCE_GROUP
+    NIC_ID=$(az network private-endpoint show \
+        --name pe-openlab-mysql \
+        --resource-group $RESOURCE_GROUP \
         --query 'networkInterfaces[0].id' -o tsv)
     
-    NIC_IPADDRESS=$(az resource show
-        --ids $NIC_ID
+    NIC_IPADDRESS=$(az resource show \
+        --ids $NIC_ID \
         --api-version 2019-04-01 -o json | jq -r '.properties.ipConfigurations[0].properties.privateIPAddress')
     
     az network private-dns record-set a create \

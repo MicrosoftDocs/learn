@@ -14,7 +14,7 @@ summary: Learn how to architect a secure, flexible, network infrastructure in Az
 prerequisites: |
   - Familiarity with network concepts, such as IP addressing and routing
   - Familiarity with network connectivity methods, such as VPN
-iconUrl: /learn/achievements/architect-network-infrastructure.svg
+iconUrl: /training/achievements/architect-network-infrastructure.svg
 levels:
 - intermediate
 roles:

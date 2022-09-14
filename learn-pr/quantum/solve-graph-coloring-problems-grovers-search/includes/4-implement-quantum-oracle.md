@@ -8,7 +8,7 @@ In this part, you'll implement a quantum oracle for the graph coloring problem.
 
 ## Create the project
 
-Start by creating a Q# project as described in the module [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). To do so:
+Start by creating a Q# project as described in the module [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). To do so:
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.

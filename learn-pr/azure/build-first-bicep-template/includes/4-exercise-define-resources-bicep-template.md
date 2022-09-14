@@ -31,7 +31,10 @@ During the process, you'll:
 
    Notice that Visual Studio Code automatically suggests property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values that you can use.
 
-1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique. Make sure the name is all lowercase, without any special characters, and fewer than 24 characters.
+1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique, because every storage account needs a unique name. Make sure the name is all lowercase, without any special characters, and fewer than 24 characters.
+
+   > [!IMPORTANT]
+   > Don't skip this step. If you do, your Bicep file won't deploy successfully.
 
 1. Save the changes to the file.
 
@@ -120,7 +123,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the bottom of the file:
 
-   :::code language="bicep" source="code/4-template.bicep" range="13-28":::
+   :::code language="bicep" source="code/4-template.bicep" range="13-29":::
 
 1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
 

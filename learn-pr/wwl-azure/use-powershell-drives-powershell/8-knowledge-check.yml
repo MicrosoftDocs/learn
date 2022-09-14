@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-powershell-drives-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which of the following PowerShell drives is created by the Registry provider?"
+    choices:
+    - content: "AD"
+      isCorrect: false
+      explanation: "Incorrect. HKCU is created by the Registry provider. It connects to the HKEY_Current_User hive of the registry."
+    - content: "HKCU"
+      isCorrect: true
+      explanation: "Correct. HKCU is created by the Registry provider. It connects to the HKEY_Current_User hive of the registry."
+    - content: "C"
+      isCorrect: false
+      explanation: "Incorrect. HKCU is created by the Registry provider. It connects to the HKEY_Current_User hive of the registry."
+  - content: "Which provider is used to create PowerShell drives that are mapped to a network share?"
+    choices:
+    - content: "FileSystem"
+      isCorrect: true
+      explanation: "Correct. The FileSystem provider is used to create PowerShell drives that are mapped to a network share."
+    - content: "Function"
+      isCorrect: false
+      explanation: "Incorrect. The FileSystem provider is used to create PowerShell drives that are mapped to a network share."
+    - content: "Variable"
+      isCorrect: false
+      explanation: "Incorrect. The FileSystem provider is used to create PowerShell drives that are mapped to a network share."

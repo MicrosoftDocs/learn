@@ -17,7 +17,7 @@ abstract: |
   - Use a Workflow automation to automate a security response
 prerequisites: |
   - Basic familiarity with Microsoft Defender for Cloud
-iconUrl: /learn/achievements/resolve-threats-with-azure-security-center.svg
+iconUrl: /training/achievements/resolve-threats-with-azure-security-center.svg
 levels:
 - intermediate
 roles:

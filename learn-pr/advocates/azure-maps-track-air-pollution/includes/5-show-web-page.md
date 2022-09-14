@@ -43,7 +43,7 @@ Finally, we'll create a *home.html* file to show results.
     :::image type="content" source="../media/activate-venv-dialog.png" alt-text="Screenshot that shows the prompt to activate the virtual environment.":::
 
     > [!NOTE]
-    > If you don’t see a dialog box that asks whether you want to select the virtual environment, you can manually select the Python interpreter version. In the Visual Studio Code status bar in the lower-left corner, select the Python version. At the top of the Visual Studio Code window, the Python interpreter selection opens. Select the Python version that is in the *./.venv/bin/python* folder.
+    > If you don’t see a dialog box that asks whether you want to select the virtual environment, you can manually select the Python interpreter version. In the Visual Studio Code status bar in the lower-right corner, select the Python version. At the top of the Visual Studio Code window, the Python interpreter selection opens. Select the Python version that is in the **./.venv/Scripts/python.exe** file.
 
 1. Close the terminal by selecting the trash can icon.
 

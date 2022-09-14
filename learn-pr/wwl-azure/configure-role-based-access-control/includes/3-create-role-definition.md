@@ -1,6 +1,6 @@
 Each role is a set of properties defined in a JSON file. For example, Actions, NotActions., and DataActions. 
 
-:::image type="content" source="../media/role-definition-bf297cac.png" alt-text="The built-in Contributor role has actions, notactions, and dataactions.":::
+:::image type="content" source="../media/role-definition-bf297cac.png" alt-text="Diagram showing the built-in Contributor role with actions, notactions, and dataactions.":::
 
 
 In this next example, the Owner role means all (asterisk) actions, no denied actions, and all (/) scopes.
@@ -70,7 +70,7 @@ The Actions and NotActions properties can be tailored to grant and deny the exac
 
 After defining the Actions and NotActions properties, you must scope the role.
 
-The AssignableScopes property of the role specifies the role scope. The scope can be subscriptions, resource groups, or resources.
+The AssignableScopes property of the role specifies the role scope. The scope can be management groups, subscriptions, resource groups, or resources.
 
 ```
 * /subscriptions/[subscription id]

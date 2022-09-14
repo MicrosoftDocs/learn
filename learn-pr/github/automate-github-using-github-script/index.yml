@@ -3,9 +3,9 @@ uid: learn.github.automate-github-using-github-script
 metadata:
   title: "Automate GitHub by using GitHub Script"
   description: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
-  ms.date: 05/13/2022
-  author: tpetchel
-  ms.author: thpetche
+  ms.date: 07/08/2022
+  author: a-a-ron
+  ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Automate GitHub by using GitHub Script"
@@ -20,7 +20,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Familiarity with GitHub Actions
-iconUrl: /learn/achievements/github/automate-github-using-github-script.svg
+iconUrl: /training/achievements/github/automate-github-using-github-script.svg
 ratingEnabled: true
 levels:
 - beginner

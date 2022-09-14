@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.close-out-course.get-students-certified-advanced-role-based
+title: Get my students certified -ARB
+metadata:
+  title: Get my students certified -ARB
+  description: "Get my students certified -ARB"
+  ms.date: 07/08/2022
+  author: wwlpublish
+  ms.author: tsheppard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-get-students-certified-advanced-role-based.md)]

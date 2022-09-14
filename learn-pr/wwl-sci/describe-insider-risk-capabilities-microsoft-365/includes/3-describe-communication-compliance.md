@@ -25,8 +25,6 @@ Watch the video below for a walk-through of Microsoft Purview Communication Comp
 > [!NOTE]
 > The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the video may not reflect the most recent updates.
 
-</br>
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4xlaF]
 
 Communication compliance is a powerful tool, that can help maintain and safeguard your staff, your data and your organization.

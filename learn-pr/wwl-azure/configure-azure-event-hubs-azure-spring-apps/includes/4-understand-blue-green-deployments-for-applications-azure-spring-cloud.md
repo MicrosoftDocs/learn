@@ -1,6 +1,6 @@
 In this unit, you'll update the **customers** microservice to receive events from the **telemetry** event hub.
 
-1.  From Visual Studio Code, open the **pom.xml** file of the **spring-petclinic-customers-service** microservice. Edit to add the dependency seen below.
+1.  From Visual Studio Code, open the **pom.xml** file of the **spring-petclinic-customers-service** microservice. Add another dependency element within the `<!-- Spring Cloud -->` section of the `` ` `` element, and save the change. Edit to add the dependency seen below.
     
     ```xml
     <dependency>
@@ -18,9 +18,6 @@ In this unit, you'll update the **customers** microservice to receive events fro
     import org.slf4j.LoggerFactory;
     import org.springframework.kafka.annotation.KafkaListener;
     import org.springframework.stereotype.Service;
-    import org.apache.kafka.clients.admin.NewTopic;
-    import org.springframework.context.annotation.Bean;
-    import org.springframework.kafka.config.TopicBuilder;
     
     @Service
     public class EventHubListener {
@@ -37,20 +34,21 @@ In this unit, you'll update the **customers** microservice to receive events fro
     
     The **EventHubListener.java** class uses the ***KafkaListener*** annotation to initialize listening to an event hub. For our purposes, the ***$Default*** group of the **telemetry** event hub. All messages received are written into the log as info messages.
 
-3.  From the command prompt, navigate to the spring petclinic root folder and rebuild the application.
+3.  From the Git Bash window, navigate to the spring petclinic root folder and rebuild the application.
     
     ```azurecli
+    cd ~/projects/spring-petclinic-microservices/
     mvn clean package -DskipTests
     ```
 
 4.  Redeploy your customers microservice to Azure Spring Apps by running the lines below.
     
     ```azurecli
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
         --no-wait \
-        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.1.jar \
+        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.7.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     ```

@@ -2,33 +2,33 @@ You now have a self-signed certificate in Key Vault. Next, you'll configure a pu
 
 In this exercise, you'll create a custom domain for the **api-gateway** service only. The service will be the only one to be externally exposed.
 
-1.  As a first step you'll need to provide Azure Spring Apps the permissions to read the certificate from Key Vault. You'll need the URI to your Key Vault and the object ID of Spring Cloud service.
+1.  As a first step you'll need to provide Azure Spring Apps the permissions to read the certificate from Key Vault. You'll need the URI to your Key Vault and the object ID of Spring Apps service.
     
     ```Bash
     VAULTURI=$(az keyvault show -n $KEYVAULT_NAME -g $RESOURCE_GROUP
         --query properties.vaultUri -o tsv)
     ASCDM_OID=$(az ad sp show
-        --id 03b39d0f-4213-4864-a245-b1476ec03169
-        --query objectId
+        --id 03b39d0f-4213-4864-a245-b1476ec03169 \
+        --query objectId \
         --output tsv)
     ```
 
-2.  Once you have the Key Vault URI and the Spring Cloud object ID, you can allow this object ID access to your Key Vault.
+2.  Once you have the Key Vault URI and the Spring Apps object ID, you can allow this object ID access to your Key Vault.
     
     ```Bash
     az keyvault set-policy -g $RESOURCE_GROUP -n $KEYVAULT_NAME
-        --object-id $ASCDM_OID
-        --certificate-permissions get list
+        --object-id $ASCDM_OID \
+        --certificate-permissions get list \
         --secret-permissions get list
     ```
 
-3.  Add the custom domain and configure TLS using the certificate.
+3.  Next, configure TLS using the certificate.
     
     ```Bash
     CERT_NAME_IN_ASC=openlab-certificate
-    az spring-cloud certificate add \
+    az spring certificate add \
         --resource-group $RESOURCE_GROUP \
-        --service $SPRING_CLOUD_SERVICE \
+        --service $SPRING_APPS_SERVICE \
         --name $CERT_NAME_IN_ASC \
         --vault-certificate-name $CERT_NAME_IN_KV \
         --vault-uri $VAULTURI
@@ -38,9 +38,9 @@ In this exercise, you'll create a custom domain for the **api-gateway** service 
     
     ```Bash
     APPNAME=api-gateway
-    az spring-cloud app custom-domain bind \
+    az spring app custom-domain bind \
         --resource-group $RESOURCE_GROUP \
-        --service $SPRING_CLOUD_SERVICE \
+        --service $SPRING_APPS_SERVICE \
         --domain-name $DNS_NAME \
         --certificate $CERT_NAME_IN_ASC \
         --app $APPNAME

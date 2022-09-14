@@ -24,10 +24,6 @@ Use commands to remotely manage your device from your application. You can direc
 
 _Cloud properties_ are device metadata that's associated with the device. Use cloud properties to record information about your device in your IoT Central application. In this scenario, you use cloud properties to record the ideal water temperature range of the coffee machine. Cloud properties are stored in the IoT Central application and don't synchronize with the device. Cloud properties are not part of an interface definition.
 
-### Customizations
-
-You can customize how IoT Central uses the items defined in an interface, for example by specifying maximum and minimum temperature values and customizing how IoT Central displays values. In this scenario, you customize the temperature and air humidity telemetry types, and the optimal temperature and device warranty property types.
-
 ### Views
 
 You can customize the UI that IoT Central displays for managing and monitoring devices associated with the device template. In this scenario, you create a view to plot the telemetry values sent from the device, and create a form to manage the device properties.
@@ -38,115 +34,155 @@ A device capability model is the part of the device template that defines the te
 
 ```json
 {
-  "@context": "dtmi:dtdl:context;2",
-  "displayName": "Connected Coffee Maker",
-  "@id": "dtmi:com:example:ConnectedCoffeeMaker;1",
-  "@type": "Interface",
-  "contents": [
-    {
-      "@type": [
-        "Telemetry",
-        "Temperature"
-      ],
-      "displayName": "Water Temperature",
-      "name": "WaterTemperature",
-      "displayUnit": "Celsius",
-      "schema": "double",
-      "unit": "degreeCelsius"
+    "@id": "dtmi:com:example:ConnectedCoffeeMaker;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": [
+                "Telemetry",
+                "NumberValue",
+                "Temperature"
+            ],
+            "displayName": {
+                "en": "Water Temperature"
+            },
+            "name": "WaterTemperature",
+            "schema": "double",
+            "unit": "degreeCelsius",
+            "decimalPlaces": 1,
+            "maxValue": 100,
+            "minValue": 86
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "NumberValue",
+                "Humidity"
+            ],
+            "displayName": {
+                "en": "Air Humidity"
+            },
+            "name": "AirHumidity",
+            "schema": "integer",
+            "unit": "percent",
+            "maxValue": 100,
+            "minValue": 20
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "State"
+            ],
+            "displayName": {
+                "en": "Brewing"
+            },
+            "name": "Brewing",
+            "schema": {
+                "@type": "Enum",
+                "enumValues": [
+                    {
+                        "displayName": {
+                            "en": "Brewing"
+                        },
+                        "enumValue": "brewing",
+                        "name": "Brewing"
+                    },
+                    {
+                        "displayName": {
+                            "en": "Not Brewing"
+                        },
+                        "enumValue": "notbrewing",
+                        "name": "NotBrewing"
+                    }
+                ],
+                "valueSchema": "string"
+            }
+        },
+        {
+            "@type": [
+                "Telemetry",
+                "State"
+            ],
+            "displayName": {
+                "en": "Cup Detected"
+            },
+            "name": "CupDetected",
+            "schema": {
+                "@type": "Enum",
+                "enumValues": [
+                    {
+                        "displayName": {
+                            "en": "Detected"
+                        },
+                        "enumValue": "detected",
+                        "name": "Detected"
+                    },
+                    {
+                        "displayName": {
+                            "en": "Not Detected"
+                        },
+                        "enumValue": "notdetected",
+                        "name": "NotDetected"
+                    }
+                ],
+                "valueSchema": "string"
+            }
+        },
+        {
+            "@type": [
+                "Property",
+                "NumberValue",
+                "Initialized",
+                "Temperature"
+            ],
+            "displayName": {
+                "en": "Optimal Temperature"
+            },
+            "name": "OptimalTemperature",
+            "schema": "double",
+            "unit": "degreeCelsius",
+            "writable": true,
+            "decimalPlaces": 1,
+            "initialValue": 98,
+            "maxValue": 100,
+            "minValue": 86
+        },
+        {
+            "@type": [
+                "Property",
+                "BooleanValue"
+            ],
+            "displayName": {
+                "en": "Device Warranty Expired"
+            },
+            "name": "DeviceWarrantyExpired",
+            "schema": "boolean",
+            "writable": false
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "Set Maintenance Mode"
+            },
+            "name": "SetMaintenanceMode"
+        },
+        {
+            "@type": "Command",
+            "commandType": "synchronous",
+            "displayName": {
+                "en": "Start Brewing"
+            },
+            "name": "StartBrewing"
+        }
+    ],
+    "displayName": {
+        "en": "Connected Coffee Maker"
     },
-    {
-      "@type": [
-        "Telemetry",
-        "Humidity"
-      ],
-      "displayName": "Air Humidity",
-      "name": "AirHumidity",
-      "displayUnit": "%",
-      "schema": "integer",
-      "unit": "percent"
-    },
-    {
-      "@type": [
-        "Telemetry",
-        "State"
-      ],
-      "displayName":"Brewing",
-      "name": "Brewing",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "@type": "EnumValue",
-            "displayName": "Brewing",
-            "enumValue": "brewing",
-            "name": "Brewing"
-          },
-          {
-            "@type": "EnumValue",
-            "displayName": "Not Brewing",
-            "enumValue": "notbrewing",
-            "name": "NotBrewing"
-          }
-        ]
-      }
-    },
-    {
-      "@type": [
-        "Telemetry",
-        "State"
-      ],
-      "displayName": "Cup Detected",
-      "name": "CupDetected",
-      "schema": {
-        "@type": "Enum",
-        "valueSchema": "string",
-        "enumValues": [
-          {
-            "@type": "EnumValue",
-            "displayName": "Detected",
-            "enumValue": "detected",
-            "name": "Detected"
-          },
-          {
-            "@type": "EnumValue",
-            "displayName": "Not Detected",
-            "enumValue": "notdetected",
-            "name": "NotDetected"
-          }
-        ]
-      }
-    },
-    {
-      "@type": [
-        "Property",
-        "Temperature"
-      ],
-      "displayName": "Optimal Temperature",
-      "name": "OptimalTemperature",
-      "writable": true,
-      "schema": "double",
-      "unit": "degreeCelsius"
-    },
-    {
-      "@type": "Property",
-      "displayName": "Device Warranty Expired",
-      "name": "DeviceWarrantyExpired",
-      "schema": "boolean"
-    },
-    {
-      "@type": "Command",
-      "commandType": "synchronous",
-      "displayName": "Set Maintenance Mode",
-      "name": "SetMaintenanceMode"
-    },
-    {
-      "@type": "Command",
-      "commandType": "synchronous",
-      "displayName": "Start Brewing",
-      "name": "StartBrewing"
-    }
-  ]
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
 }
 ```
 
@@ -172,36 +208,19 @@ IoT Central displays the **Connected Coffee Maker** capability model that define
 
 To add the cloud properties that store the ideal water temperature range for coffee machine:
 
-1. Navigate to the **Connected Coffee Machine** device template you created, and select **Cloud properties**.
+1. Navigate to the **Connected Coffee Machine** device template you created, and select  **Connected Coffee Maker** capability model.
 
 1. Add two cloud properties to the device template using the information in the following table:
 
-    | Display name | Name | Semantic type | Schema | Min value | Max value | Decimal places | Unit |
-    | ------------ | ---- | ------------- | ------ | --------- | --------- | -------------- | ---- |
-    | Coffee Maker Min Temperature | CoffeeMakerMinTemperature | Temperature | Double | 88 | 92 | 1 | Degree celsius |
-    | Coffee Maker Max Temperature | CoffeeMakerMaxTemperature | Temperature | Double | 96 | 99 | 1 | Degree celsius |
+    | Display name | Name |Capability type | Semantic type | Schema | Min value | Max value | Decimal places | Unit|
+    | ------------ | ---- | ------------- | ------------- | ------ | --------- | --------- | -------------- | ---- |
+    | Coffee Maker Min Temperature | CoffeeMakerMinTemperature | Cloud Property | Temperature | Double | 88 | 92 | 1 | Degree celsius |
+    | Coffee Maker Max Temperature | CoffeeMakerMaxTemperature | Cloud Property | Temperature | Double | 96 | 99 | 1 | Degree celsius |
 
 1. Save your changes.
 
     ![Connected Coffee Machine cloud properties.](../media/2-cloud-properties.png)
 
-## Customize your template
-
-To add the customizations that control how IoT Central displays information about a coffee machine:
-
-1. Navigate to the **Connected Coffee Machine** device template you created, and select **Customize**.
-
-1. Use the information in the following table to customize the **Water Temperature** and **Air Humidity** telemetry types, and the **Optimal Temperature** property type:
-
-    | Display name | Min value | Max value | Decimal places | Initial value |
-    | ------------ | --------- | --------- | -------------- | ------------- |
-    | Water Temperature | 86   | 100       | 1              | |
-    | Air Humidity      | 20   | 100       | 0              | |
-    | Optimal Temperature | 86 | 100       | 1              | 96            |
-
-1. Save your changes.
-
-    ![Connected Coffee Machine template customizations.](../media/2-template-customizations.png)
 
 ## Add views to your template
 

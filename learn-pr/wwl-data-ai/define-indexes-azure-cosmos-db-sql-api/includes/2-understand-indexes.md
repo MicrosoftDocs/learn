@@ -78,6 +78,6 @@ You can walk through a similar traversal:
 2. Moving to the **name** property, Still, all items match.
 3. Finally, ending at the **Touring-1000 Blue** node, Only the **#1** item matches.
 
-The search results are that the #1 item (**Touring-1000 Blue**) matches, and the SQL query will return only the **name** field from this item.
+The search results are that the #1 item (**Touring-1000 Blue**) matches, and the SQL query will return only the **id** field from this item.
 
 ![Example of a search traversal of the inverted index highlighting only the name property and Touring-1000 Blue value path](../media/2-search-tree-02.png)

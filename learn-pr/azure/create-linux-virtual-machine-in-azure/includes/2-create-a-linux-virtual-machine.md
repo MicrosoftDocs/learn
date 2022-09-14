@@ -1,4 +1,4 @@
-We have an existing website running on a local Ubuntu Linux server. Our goal is to create an Azure virtual machine (VM) using the latest Ubuntu image and then migrate the site to the cloud. In this unit, you will learn about the options you will need to evaluate when creating a virtual machine in Azure.
+We have an existing website running on a local Ubuntu Linux server. Our goal is to create an Azure virtual machine (VM) using the latest Ubuntu image and then migrate the site to the cloud. In this unit, you'll learn about the options you'll need to evaluate when creating a virtual machine in Azure.
 
 ## Introduction to Azure Virtual Machines
 
@@ -10,7 +10,7 @@ Creating Linux-based VMs in Azure is easy. Microsoft has partnered with prominen
 
 ## Create an Azure VM
 
-VMs can be defined and deployed on Azure in several ways: the Azure portal, a script (using the Azure CLI or Azure PowerShell), or an Azure Resource Manager template. In all cases, you will need to supply several pieces of information that we'll cover shortly.
+VMs can be defined and deployed on Azure in several ways: the Azure portal, a script (using the Azure CLI or Azure PowerShell), or an Azure Resource Manager template. In all cases, you'll need to supply several pieces of information that we'll cover shortly.
 
 The Azure Marketplace also provides preconfigured images that include both an OS and favorite software tools installed for specific scenarios.
 
@@ -18,7 +18,7 @@ The Azure Marketplace also provides preconfigured images that include both an OS
 
 ## Resources used in a Linux VM
 
-When creating a Linux VM in Azure, you also create resources to host the VM. These resources work together to virtualize a computer and run the Linux operating system. These must exist (and be selected during VM creation), or they will be created with the VM:
+When creating a Linux VM in Azure, you also create resources to host the VM. These resources work together to virtualize a computer and run the Linux operating system. These resources must exist (and be selected during VM creation), or they'll be created with the VM:
 
 - A virtual machine that provides CPU and memory resources
 - An Azure Storage account to hold the virtual hard disks
@@ -45,7 +45,7 @@ Just as a physical machine has a certain amount of memory and CPU power, so does
 > [!WARNING]
 > There are quota limits on each subscription that can impact VM creation. If you run into these quota limits you can [open an online customer support request](/azure/azure-supportability/resource-manager-core-quotas-request) to increase your limits.
 
-VM sizes are grouped into categories, starting with the B-series for basic testing and running up to the H-series for massive computing tasks. You should select the size of the VM based on the workload you want to perform. It is possible to change the size of a VM after it's been created, but the VM must be stopped first. So, it's best to size it appropriately from the start if possible.
+VM sizes are grouped into categories, starting with the B-series for basic testing and running up to the H-series for massive computing tasks. You should select the size of the VM based on the workload you want to perform. It's possible to change the size of a VM after it's been created, but the VM must be stopped first. So, it's best to size it appropriately from the start if possible.
 
 #### Here are some guidelines based on the scenario you are targeting
 
@@ -73,7 +73,7 @@ By default, two virtual hard disks (VHDs) will be created for your Linux VM:
 
 1. The **operating system disk**: This is your primary drive, and it has a maximum capacity of 2048 GB. It will be labeled as `/dev/sda` by default.
 
-1. A **temporary disk**: This provides temporary storage for the OS or any apps. On Linux virtual machines, the disk is `/dev/sdb` and is formatted and mounted to `/mnt` by the Azure Linux Agent. It is sized based on the VM size and is used to store the swap file.
+1. A **temporary disk**: This provides temporary storage for the OS or any apps. On Linux virtual machines, the disk is `/dev/sdb` and is formatted and mounted to `/mnt` by the Azure Linux Agent. It's sized based on the VM size and is used to store the swap file.
 
 > [!WARNING]
 > The temporary disk is not persistent. You should only write data to this disk that is not critical to the system.
@@ -91,7 +91,7 @@ An interesting capability is to create a VHD image from a real disk. This allows
 
 The final storage choice you'll make is whether to use **unmanaged** or **managed** disks.
 
-With unmanaged disks, you are responsible for the storage accounts that are used to hold the VHDs that correspond to your VM disks. You pay the storage account rates for the amount of space you use. A single storage account has a fixed rate limit of 20,000 I/O operations/sec. This means that a single storage account is capable of supporting 40 standard virtual hard disks at full throttle. If you need to scale out, then you need more than one storage account, which can get complicated.
+With unmanaged disks, you're responsible for the storage accounts that are used to hold the VHDs that correspond to your VM disks. You pay the storage account rates for the amount of space you use. A single storage account has a fixed rate limit of 20,000 I/O operations/sec. This means that a single storage account is capable of supporting 40 standard virtual hard disks at full throttle. If you need to scale out, then you need more than one storage account, which can get complicated.
 
 Managed disks are the newer and recommended disk storage model. They elegantly solve this complexity by putting the burden of managing the storage accounts onto Azure. You specify the disk type (Premium or Standard) and the size of the disk, and Azure creates and manages both the disk _and_ the storage it uses. You don't have to worry about storage account limits, which makes them easier to scale out. They also offer several other benefits:
 
@@ -106,7 +106,7 @@ Virtual machines communicate with external resources using a virtual network (VN
 
 ### Plan your network
 
-When you create a new VM, you will have the option of creating a new virtual network or using an existing VNet in your region.
+When you create a new VM, you'll have the option of creating a new virtual network or using an existing VNet in your region.
 
 Having Azure create the network together with the VM is simple, but it's likely not ideal for most scenarios. It's better to plan your network requirements _up front_ for all the components in your architecture and create the VNet structure separately. Then, create the VMs and place them into the already-created VNets. We'll look more at virtual networks later in this module.
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.optimize-vacuum-azure-database-for-postgresql.exercise-configure-autovacuum-server-parameters
+title: 'Exercise: Configure autovacuum server parameters'
+metadata:
+  title: 'Exercise: Configure autovacuum server parameters'
+  description: "Exercise: Configure autovacuum server parameters"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-configure-autovacuum-server-parameters.md)]

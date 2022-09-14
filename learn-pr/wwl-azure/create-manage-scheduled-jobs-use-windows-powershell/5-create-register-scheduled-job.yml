@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell.create-register-scheduled-job
+title: Create and register a scheduled job in Windows PowerShell
+metadata:
+  title: Create and register a scheduled job in Windows PowerShell
+  description: "Create and register a scheduled job in Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-create-register-scheduled-job.md)]

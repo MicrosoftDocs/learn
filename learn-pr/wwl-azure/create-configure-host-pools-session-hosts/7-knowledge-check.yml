@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/29/2022
+  ms.date: 08/01/2022
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -36,6 +36,6 @@ quiz:
     - content: "Create a virtual machine from a managed image"
       isCorrect: false
       explanation: "That's incorrect. A managed virtual machine image contains the information necessary to create a virtual machine, including the data disks."
-    - content: "Shared Image Gallery image"
+    - content: "Azure Compute Gallery image"
       isCorrect: false
-      explanation: "That's incorrect. A shared image from the Shared Image Gallery (SIG) is custom to share across your organization. Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations."
+      explanation: "That's incorrect. A shared image from the Azure Compute Gallery is custom to share across your organization. Custom images are like marketplace images, but you create them yourself. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations."

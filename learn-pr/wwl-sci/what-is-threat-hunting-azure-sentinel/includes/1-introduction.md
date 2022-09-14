@@ -1,10 +1,10 @@
-Microsoft Sentinel provides the tools to perform Threat Hunting. Before starting the hunt, it is crucial to understand the Threat Hunting process.
+Microsoft Sentinel provides the tools to perform Threat Hunting. Before starting the hunt, it's crucial to understand the Threat Hunting process.
   
-You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel.  You want to mature your Security Operations team to proactively hunt for malicious activity in your environment.  
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel.  You want to mature your Security Operations team to proactively hunt for malicious activity in your environment.  
 
-You suggest to management to create a threat hunting team. You must explain to management the benefit, processes, and tasks of a threat hunting team. You will demonstrate how to develop a quality hypothesis for hunting.
+You suggest to management to create a threat hunting team. You must explain to management the benefit, processes, and tasks of a threat hunting team. You'll demonstrate how to develop a quality hypothesis for hunting.
 
-After completing this module, you will be able to:
+After completing this module, you'll be able to:
 
 - Describe threat hunting concepts for use with Microsoft Sentinel
 - Define a threat hunting hypothesis for use in Microsoft Sentinel

@@ -6,7 +6,7 @@ This unit describes the main benefits of using Node.js, and when to use it.
 
 ## Multi-purpose technology
 
-You can use Node.js to build a wide variety of production-ready applications. These can range from traditional lightweight, high-traffic chat applications to command-line tools and web servers. Node.js was designed from the ground up to handle a high number of concurrent requests.
+You can use Node.js to build a wide variety of production-ready applications. These apps can range from traditional lightweight, high-traffic chat programs to command-line tools and web servers. Node.js was designed from the ground up to handle a high number of concurrent requests.
 
 ## JavaScript
 
@@ -21,7 +21,7 @@ Today, many applications written outside the browser are in JavaScript or suppor
 
 ## Community
 
-The community has already built more than a million modules and libraries for Node.js and published them on the Node Package Manager (NPM). Developers can easily download and integrate these modules into their existing projects. Applications that can run on Node.js include command-line tools, frameworks, web servers, and much more.
+The community has already built more than a million modules and libraries for Node.js and published them on the Node Package Manager (npm). Developers can easily download and integrate these modules into their existing projects. Applications that can run on Node.js include command-line tools, frameworks, web servers, and much more.
 
 ## Open source
 

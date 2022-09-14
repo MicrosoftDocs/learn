@@ -1,4 +1,4 @@
-The Azure Defender for IoT service provides a reference architecture for security agents. Security agents are able to log, process, aggregate, and deliver security data through IoT Hub.
+The Microsoft Defender for IoT service provides a reference architecture for security agents. Security agents are able to log, process, aggregate, and deliver security data through IoT Hub.
 
 Security agents are designed to work in a resource-constrained IoT environment. Security agents are also highly customizable in terms of the value they provide when compared to the resources they consume.
 
@@ -9,7 +9,7 @@ Security agents support the following features:
  -  They authenticate with either an existing device identity or a dedicated module identity.
  -  They configure remotely through the use of the **azureiotsecurity** module twin.
 
-A security module is required for each device onboarded to Azure Defender for IoT in the IoT Hub. To authenticate the device, Azure Defender for IoT can use one of two methods:
+A security module is required for each device onboarded to Microsoft Defender for IoT in the IoT Hub. To authenticate the device, Microsoft Defender for IoT can use one of two methods:
 
  -  SecurityModule option.
  -  Device option.
@@ -24,7 +24,7 @@ The agent is authenticated using the security module identity independently of t
 
  -  Device authentication mode.
 
-In this method, the security agent first authenticates with the device identity. After the initial authentication, the Azure Defender for IoT agent performs a REST call to the IoT Hub using the REST API with the authentication data of the device. The Azure Defender for IoT agent then requests the security module authentication method and data from the IoT Hub. In the final step, the Azure Defender for IoT agent performs an authentication against the Azure Defender for IoT module.
+In this method, the security agent first authenticates with the device identity. After the initial authentication, the Microsoft Defender for IoT agent performs a REST call to the IoT Hub using the REST API with the authentication data of the device. The Microsoft Defender for IoT agent then requests the security module authentication method and data from the IoT Hub. In the final step, the Microsoft Defender for IoT agent performs an authentication against the Microsoft Defender for IoT module.
 
 Use this authentication type if you would like the security agent to reuse an existing device authentication method (self-signed certificate or symmetric key).
 
@@ -36,7 +36,7 @@ CA-Signed certificate is not supported by Device authentication mode.
 
 ## Security agent installation parameters
 
-When deploying a security agent, authentication details must be provided as arguments. These arguments are documented in the following table.
+When you are deploying a security agent, authentication details must be provided as arguments. These arguments are documented in the following table.
 
 :::row:::
   :::column:::
@@ -159,11 +159,9 @@ When deploying a security agent, authentication details must be provided as argu
 :::row-end:::
 
 
-When using the install security agent script, the following configuration is performed automatically. To edit the security agent authentication manually, edit the config file.
+When you deploy a security agent with an installation script, a configuration file is automatically created.
 
 ## Change authentication method after deployment
-
-When deploying a security agent with an installation script, a configuration file is automatically created.
 
 To change authentication methods after deployment, manual editing of the configuration file is required.
 

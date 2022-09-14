@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-mysql-architecture.describe-azure-database-for-mysql
+title: Describe Azure Database for MySQL
+metadata:
+  title: Describe Azure Database for MySQL
+  description: "Describe Azure Database for MySQL"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-describe-azure-database-for-mysql.md)]

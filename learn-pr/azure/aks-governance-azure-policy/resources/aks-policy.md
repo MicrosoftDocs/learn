@@ -98,7 +98,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
    1. Ensure the learner has an AKS cluster with policy enabled
    2. (using kubectl) Deploy a non-compliant pod before the policy is applied
    3. (using Azure portal) Apply the "only trusted registry policy". Use dockerhub vs mcr.microsoft.com
-   4. (using Azure portal) Apply the "[Kubernetes cluster pod security restricted standards for Linux-based workloads](https://docs.microsoft.com/en-us/azure/aks/policy-reference#initiatives) initiative". 
+   4. (using Azure portal) Apply the "[Kubernetes cluster pod security restricted standards for Linux-based workloads](/azure/aks/policy-reference#initiatives) initiative". 
    5. (using kubectl) Deploy a non-compliant pod and see effect
    6. (using kubectl) Deploy a compliant pod and see effect
    7. (using kubectl) Deploy a non-compliant deployment and see effect (the deployment and replicaset will be created, but pods will fail. Show troubleshooting steps to do kubectl describe replicaset, which shows why pods aren't getting created)
@@ -125,7 +125,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
    * Monitor cluster compliance status using Azure portal
 
  Learn more
- - [AKS Secure baseline](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
- - [Enterprise Scale for AKS](https://docs.microsoft.com/azure/cloud-adoption-framework/scenarios/aks/enterprise-scale-landing-zone)
+ - [AKS Secure baseline](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
+ - [Enterprise Scale for AKS](/azure/cloud-adoption-framework/scenarios/app-platform/aks/landing-zone-accelerator)
 
 ## Notes

@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should already have familiarity with Azure and the Azure portal, and a basic understanding of software engineering.
 summary: |
   AI Engineers design and develop intelligent solutions that encapsulate artificial intelligence (AI) capabilities. As an aspiring Azure AI Engineer, it's important to understand some of the key foundational concepts on which AI is based, and the various services in Microsoft Azure that you can use to build AI solutions.
-iconUrl: /learn/achievements/ai-prepare-for-engineering.svg
+iconUrl: /training/achievements/ai-prepare-for-engineering.svg
 levels:
 - intermediate
 roles:

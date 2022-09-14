@@ -6,7 +6,10 @@ The purpose of this module was to increase your confidence in, and the security 
 
 ## More resources
 
-- To learn more about governance of your deployment processes, see [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure).
+- Learn more about the [considerations for platform automation](/azure/cloud-adoption-framework/ready/considerations/automation).
+- To learn more about governance of your deployment processes, see:
+  - [End-to-end governance in Azure when using CI/CD](/azure/architecture/example-scenario/governance/end-to-end-governance-in-azure)
+  - [DevOps considerations](/azure/cloud-adoption-framework/ready/considerations/devops-principles-and-practices) in the Cloud Adoption Framework for Azure.
 - Learn more about [Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/).
 - For guidance on using Bicep to deploy Azure resources, see:
   - [Create Azure RBAC resources by using Bicep](/azure/azure-resource-manager/bicep/scenarios-rbac)
@@ -43,5 +46,7 @@ To learn more about securing and hardening your Azure DevOps and GitHub environm
 Azure security and governance include many elements. The following links provide more information about the topics introduced in this module:
 
 - [Break-glass accounts in Azure AD](/azure/active-directory/roles/security-emergency-access)
-- [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)
+- Azure AD Privileged Identity Management
+  - [What is Privileged Identity Management and why use it?](https://medium.com/@olafwrieden/what-is-privileged-identity-management-and-why-use-it-7f383b3b797a) (blog)
+  - [Privileged Identity Management documentation](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Microsoft Sentinel](/azure/sentinel/overview)

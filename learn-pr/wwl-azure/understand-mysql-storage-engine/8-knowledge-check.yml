@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-mysql-storage-engine.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which storage engines does Azure Database for MySQL Support?"
+    choices:
+    - content: "Blackhole and Innodb"
+      isCorrect: false
+      explanation: "Incorrect. Azure Database for MySQL doesn't support Blackhole storage engine."
+    - content: "MyISAM and Innodb"
+      isCorrect: false
+      explanation: "Incorrect. Azure Database for MySQL doesn't support the MyISAM storage engine."
+    - content: "Memory and Innodb"
+      isCorrect: true
+      explanation: "Correct. Azure Database for MySQL supports Innodb and Memory storage engines."
+  - content: "If you don't specify a storage engine when creating a table, what happens?"
+    choices:
+    - content: "The table will not be created."
+      isCorrect: false
+      explanation: "Incorrect. the table will still be created if you don't specify a storage engine."
+    - content: "The data will never be written to disk."
+      isCorrect: false
+      explanation: "Incorrect. data will still be written to disk if you don't specify a storage engine."
+    - content: "The default storage engine will be used."
+      isCorrect: true
+      explanation: "Correct. InnoDB is the default storage engine and will be used if you don't specify a storage engine."
+  - content: "Which statement should you use when specifying the storage engine for a table?"
+    choices:
+    - content: "CREATE TABLE"
+      isCorrect: true
+      explanation: "Correct. CREATE TABLE with the ENGINE = InnoDB is the correct statement for specifying the storage engine for a table."
+    - content: "CREATE ENGINE"
+      isCorrect: false
+      explanation: "Incorrect. you don't use the CREATE ENGINE statement to specify the storage engine for a table."
+    - content: "CREATE TABLESPACE"
+      isCorrect: false
+      explanation: "Incorrect. you don't use the CREATE TABLESPACE statement to specify the storage engine for a table."
+  - content: "What is best practice when creating tables in Innodb?"
+    choices:
+    - content: "All tables are created in the system tablespace."
+      isCorrect: false
+      explanation: "Incorrect. It isn't best practice for tables to be created in the system tablespace."
+    - content: "All tables are created in the file per table tablespace."
+      isCorrect: true
+      explanation: "Correct. Best practice is for tables to be created in their own file-per-table tablespace."
+    - content: "All tables are created in a custom general tablespace."
+      isCorrect: false
+      explanation: "Incorrect. It isn't best practice for tables to be created in a custom general tablespace."
+  - content: "What is the purpose of the write-ahead log (WAL)?"
+    choices:
+    - content: "To improve performance."
+      isCorrect: false
+      explanation: "Incorrect. Although write-ahead logging can improve performance, it isn't its primary purpose."
+    - content: "To recover data in the event of a crash."
+      isCorrect: true
+      explanation: "Correct. The primary purpose of the write-ahead log is to recover data in the event of a crash."
+    - content: "To group changes together and write them to disk in one batch."
+      isCorrect: false
+      explanation: "Incorrect. The write-ahead log improves performance by writing changes first to the log sequentially and only then writing changes to disk in batches, but isn't its primary purpose."

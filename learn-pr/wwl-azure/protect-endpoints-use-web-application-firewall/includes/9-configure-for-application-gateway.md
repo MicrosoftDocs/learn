@@ -23,10 +23,6 @@ In this procedure, you'll connect to your application and configure a Web Applic
 2.  You can now link this Web Application Firewall policy to the HTTP listener for the incoming requests.
     
     ```Bash
-    az network application-gateway http-listener list \
-    -g $RESOURCE_GROUP \
-        --gateway-name $APPGW_NAME -o table
-    
     az network application-gateway http-listener update \
     -g $RESOURCE_GROUP \
         --gateway-name $APPGW_NAME \

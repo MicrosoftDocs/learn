@@ -18,7 +18,7 @@ abstract:  |
   - Define a more configurable template using parameters
 prerequisites: |
   - Familiarity with the basics of running and authoring Azure Logic Apps workflows
-iconUrl: /learn/achievements/logic-apps-and-arm-templates.svg
+iconUrl: /training/achievements/logic-apps-and-arm-templates.svg
 levels:
 - beginner
 roles:

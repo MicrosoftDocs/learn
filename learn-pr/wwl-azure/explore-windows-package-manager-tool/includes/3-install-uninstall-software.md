@@ -52,7 +52,7 @@ The **winget install** has additional options that can be used to help customize
 
 | Option  | Description |
 |-------------|-------------|  
-| **-m, --manifest** |  Must be followed by the path to the manifest (YAML) file. You can use the manifest to run the install experience from a [local YAML file](https://docs.microsoft.com/windows/package-manager/winget/install#local-install). |
+| **-m, --manifest** |  Must be followed by the path to the manifest (YAML) file. You can use the manifest to run the install experience from a [local YAML file](/windows/package-manager/winget/install#local-install). |
 | **--id**    |  Limits the install to the ID of the application.   |  
 | **--name**   |  Limits the search to the name of the application. |  
 | **--moniker**   | Limits the search to the moniker listed for the application. |  
@@ -91,7 +91,7 @@ The **winget uninstall** has additional options that can be used to help customi
 
 | Option      | Description |
 |-------------|-------------|  
-| **-m, --manifest** |   Must be followed by the path to the manifest (YAML) file. You can use the manifest to run the uninstall experience from a [local YAML file](https://docs.microsoft.com/windows/package-manager/winget/install#local-install). |
+| **-m, --manifest** |   Must be followed by the path to the manifest (YAML) file. You can use the manifest to run the uninstall experience from a [local YAML file](/windows/package-manager/winget/install#local-install). |
 | **--id**    |  Limits the uninstall to the ID of the application.   |  
 | **--name**   |  Limits the search to the name of the application. |  
 | **--moniker**   | Limits the search to the moniker listed for the application. |  

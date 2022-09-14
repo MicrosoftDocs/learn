@@ -25,7 +25,7 @@ prerequisites: |
   - Basic knowledge of software development, such as what it means to run code and install a new language.
   - Docker and basic Docker knowledge (familiarity with the concept of images, containers, and registries).
   - [Git](https://git-scm.com/downloads) and basic knowledge of GitHub, such as what a repository is
-iconUrl: /learn/achievements/use-docker-container-dev-env-vs-code.svg
+iconUrl: /training/achievements/use-docker-container-dev-env-vs-code.svg
 levels:
   - beginner
 roles:

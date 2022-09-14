@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-azure-powershell-module.migrate-powershell-from-azurerm-to-azure
+title: Migrate Azure PowerShell from AzureRM to Azure
+metadata:
+  title: Migrate Azure PowerShell from AzureRM to Azure
+  description: "Migrate Azure PowerShell from AzureRM to Azure"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-migrate-powershell-from-azurerm-to-azure.md)]

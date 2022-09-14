@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/14/2022
+  ms.date: 07/08/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ quiz:
       explanation: "That's incorrect. Using IaaS you have all the management overhead of the individual servers and installations of SQL Server."
     - content: "Use a PaaS approach. For example, run a PostgreSQL database using Azure Database for PostgreSQL."
       isCorrect: true
-      explanation: "That's correct. The PaaS approach minimizes the administrative effort required. Microsoft assume responsibility for tasks such as taking backups, and ensuring the availability of your server and databases."
+      explanation: "That's correct. The PaaS approach minimizes the administrative effort required. Microsoft assumes responsibility for tasks such as taking backups, and ensuring the availability of your server and databases."
     - content: "Use either"
       isCorrect: false
       explanation: "That's incorrect. There is one approach that is better than the other."

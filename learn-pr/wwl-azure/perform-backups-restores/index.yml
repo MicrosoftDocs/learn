@@ -21,7 +21,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/3-perform-backups-and-restores.svg
+iconUrl: /training/achievements/3-perform-backups-and-restores.svg
 levels:
 - advanced
 roles:

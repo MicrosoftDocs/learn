@@ -17,7 +17,7 @@ abstract: |
   - Structure a Log Analytics query and review results.
 prerequisites: |
   None
-iconUrl: /learn/achievements/log-analytics-configure.svg
+iconUrl: /training/achievements/log-analytics-configure.svg
 levels:
 - intermediate
 roles:

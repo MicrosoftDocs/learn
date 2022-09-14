@@ -2,11 +2,11 @@ Independent software vendors (ISV) have several options when deciding how they w
 
 ## VM benefits for customers
 
- VM-based applications are popular with customers because they make it easier and faster to deploy VMs to run and manage cloud workloads. Customers don’t have to worry about managing operating systems or complicated application configurations because the ISV has already done so. Customers deploy the virtual machine image to their cloud infrastructure to start using the application.
+ VM-based applications are popular with customers because they make it easier and faster to deploy VMs to run and manage cloud workloads. Customers don’t have to worry about managing operating systems or complicated application configurations, because the ISV has already done so. Customers deploy the virtual machine image to their cloud infrastructure to start using the application.
 
 VM-based applications also provide flexibility for users to scale up or down as their business needs change. Customers can purchase a VM-based application, use it for a particular project or workload, and then decide whether they want to expand their use of the application to other workloads. Customers only pay for the virtual resources they use, which helps them control costs.
 
-VM-based applications are especially beneficial for customers that want control over the scope of software deployment and application data storage. Since customers deploy VM-based applications to their own cloud infrastructure, they have control over application data and where it’s stored. Customers also have more control over network security and application service levels because they have ultimate control over their cloud infrastructure.
+VM-based applications are especially beneficial for customers that want control over the scope of software deployment and application data storage. Since customers deploy VM-based applications to their own cloud infrastructure, they have control over application data and where it’s stored. Customers also have more control over network security and application service levels, because they have ultimate control over their cloud infrastructure.
 
 ## VM benefits for ISVs
 

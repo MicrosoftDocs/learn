@@ -4,5 +4,5 @@ In this module, you learned about Azure CDN, a service that allows you improve t
 
 - [What is a content delivery network on Azure?](/azure/cdn/cdn-overview?azure-portal=true)
 - [Comparison of Azure CDN product features](/azure/cdn/cdn-features?azure-portal=true)
-- [Create a content delivery network for your website with Azure CDN and Azure Blob Storage](/learn/modules/create-cdn-static-resources-blob-storage/)
-- [AZ-204: Integrate caching and content delivery within solutions](/learn/paths/az-204-integrate-caching-content-delivery-within-solutions/)
+- [Create a content delivery network for your website with Azure CDN and Azure Blob Storage](/training/modules/create-cdn-static-resources-blob-storage/)
+- [AZ-204: Integrate caching and content delivery within solutions](/training/paths/az-204-integrate-caching-content-delivery-within-solutions/)

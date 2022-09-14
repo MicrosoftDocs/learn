@@ -25,7 +25,6 @@ Use the following steps to create a new group:
     > If your primary role is device management, we recommend you use the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 1. Enter a **Group name** and **Group description** for the new group.
-1. Select whether Azure AD roles can be assigned to the group. If you choose **Yes**, you can assign a cloud group to Azure AD built-in roles. With this feature, you can use groups to grant admin access in Azure AD with minimal effort from your Global and Privileged role admins. Once set, the group's eligibility for role assignment is permanent.​ For more information, see [Use cloud groups to manage role assignments in Azure Active Directory](/azure/active-directory/roles/groups-concept).
 1. Select the **Membership type**. Your options include the following choices:
 
     - **Assigned**: Administrators manually assign users or devices to this group, and manually remove users or devices.

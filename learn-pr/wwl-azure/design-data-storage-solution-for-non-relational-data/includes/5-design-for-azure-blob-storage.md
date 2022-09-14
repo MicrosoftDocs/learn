@@ -4,6 +4,7 @@ When designing [blob storage](/azure/storage/blobs/storage-blobs-overview), ther
 | - | - |
 | Premium blob storage | Legal hold policies |
 | Hot, cool, and archive access tiers | Time-based retention policies |
+
 ### Determine the Azure blob access tier
 
 Optimize storage costs by placing your data in the appropriate access tier. 
@@ -21,11 +22,11 @@ Optimize storage costs by placing your data in the appropriate access tier.
 
 - **Premium blob storage.** The [premium blob storage account types](/azure/storage/blobs/storage-blob-performance-tiers) are best suited for I/O intensive workloads that require low and consistent storage latency. Premium blob storage uses solid-state drives (SSDs) for fast and consistent response times. This storage is best for workloads that perform many small transactions. An example would be a mapping app that requires frequent and fast updates. 
 
-- **Hot access tier**. By default, new storage accounts are created in the hot access tier. The hot tier is optimized for frequent reads and writes of objects in the storage account. The hot tier has higher storage costs than cool and archive tiers, but the lowest access costs. A good usage case is data that is actively being processed. 
+- **Standard Hot access tier**. By default, new storage accounts are created in the hot access tier. The hot tier is optimized for frequent reads and writes of objects in the storage account. The hot tier has higher storage costs than cool and archive tiers, but the lowest access costs. A good usage case is data that is actively being processed. 
 
-- **Cool access tier**. The cool access tier is optimized for storing large amounts of data that is infrequently accessed. This tier is intended for data that will remain in the cool tier for at least 30 days. The cool access tier has lower storage costs and higher access costs compared to hot storage. A usage case for the cool access tier is short-term backup and disaster recovery datasets and older media content. This content wouldn’t be viewed frequently but must be available immediately.
+- **Standard Cool access tier**. The cool access tier is optimized for storing large amounts of data that is infrequently accessed. This tier is intended for data that will remain in the cool tier for at least 30 days. The cool access tier has lower storage costs and higher access costs compared to hot storage. A usage case for the cool access tier is short-term backup and disaster recovery datasets and older media content. This content wouldn’t be viewed frequently but must be available immediately.
 
-- **Archive access tier**. The [archive access tier](/azure/storage/blobs/access-tiers-overview#archive-access-tier) is optimized for data that can tolerate several hours of retrieval latency. Data must remain in the archive tier for at least 180 days or be subject to an early deletion charge. The archive tier is the most cost-effective option for storing data. But, accessing that data is more expensive than accessing data in the other tiers. Data for the archive tier includes secondary backups, original raw data, and legally required compliance information.
+- **Standard Archive access tier**. The [archive access tier](/azure/storage/blobs/access-tiers-overview#archive-access-tier) is optimized for data that can tolerate several hours of retrieval latency. Data must remain in the archive tier for at least 180 days or be subject to an early deletion charge. The archive tier is the most cost-effective option for storing data. But, accessing that data is more expensive than accessing data in the other tiers. Data for the archive tier includes secondary backups, original raw data, and legally required compliance information.
 
  
 
@@ -40,12 +41,12 @@ Optimize storage costs by placing your data in the appropriate access tier.
 
 [Immutable storage](/azure/storage/blobs/immutable-storage-overview) for Azure Blob Storage enables users to store business-critical data in a WORM (Write Once, Read Many) state. While in a WORM state, data can’t be modified or deleted for a user-specified interval. By configuring immutability policies for blob data, you can protect your data from overwrites and deletes. Policies are applied at the container level and audit logs are available. 
 
-:::image type="content" source="../media/container-policies.png" alt-text="Policies are applied at the container level.":::
+:::image type="content" source="../media/container-policies.png" alt-text="Diagram with policies applied at the container level.":::
 
 
 The next diagram shows how time-based retention policies and legal holds prevent write and delete operations.
 
-:::image type="content" source="../media/legal-hold.png" alt-text="Locked time-based retention policy vs legal hold.":::
+:::image type="content" source="../media/legal-hold.png" alt-text="Diagram showing time-based retention policy vs legal hold.":::
 
 
 Immutable storage for Azure Blob storage supports two types of immutability policies.

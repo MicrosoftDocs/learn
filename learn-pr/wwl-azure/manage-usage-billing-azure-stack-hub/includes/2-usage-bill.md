@@ -10,7 +10,7 @@ If you've registered your Azure Stack Hub instance with Azure, Azure Stack Hub i
 
 The following figure shows the key components in the usage pipeline:
 
-:::image type="content" source="../media/usage-bill-1-99b17d42.png" alt-text="Image showing normalized relational tables.":::
+:::image type="content" source="../media/usage-bill-1-99b17d42.png" alt-text="Diagram showing normalized relational tables.":::
 
 
 ## How to find usage information

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.choose-storage-approach-in-azure.5-choose-the-right-azure-service-for-your-data
 metadata:
-  title: Choose a storage solution on Azure
-  description: Choose a storage solution on Azure
-  ms.date: 09/24/2018
+  title: Choose a storage solution in Azure
+  description: Choose a storage solution in Azure.
+  ms.date: 06/05/2022
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial

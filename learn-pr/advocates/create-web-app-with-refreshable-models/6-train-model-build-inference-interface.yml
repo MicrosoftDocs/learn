@@ -3,9 +3,9 @@ uid: learn.advocates.create-web-app-with-refreshable-models.6-train-model-build-
 metadata:
   title: Exercise - Train your machine learning model and build the web interface to use it
   description: Exercise - Train your machine learning model and build the web interface to use it
-  author: PatrickFarley
+  author: jlooper
   ms.date: 02/10/2020
-  ms.author: pafarley
+  ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

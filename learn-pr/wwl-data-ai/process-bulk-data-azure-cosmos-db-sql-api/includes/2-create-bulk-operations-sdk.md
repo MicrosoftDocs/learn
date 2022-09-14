@@ -21,7 +21,7 @@ CosmosClient client = new (connectionString, options);
 
 For context, how do we usually perform a single “Create Item” operation? Here, we invoke the **CreateItemAsync** method, which returns a **Task**, which is in turn immediately invoked using the **await** keyword, so we never really handle the **Task** object. It’s just a syntax shortcut to make our code easier to read.
 
-```bash
+```csharp
 await container.CreateItemAsync<Product>(product, partitionKey);
 ```
 
@@ -64,4 +64,4 @@ When we invoke **Task.WhenAll**, the SDK will kick in to create batches to group
 Task.WhenAll(concurrentTasks);
 ```
 
-Once each batch is done, the SDK will translate the batches back to the results for the client-side application. This is seemless and transparent to the developer.
+Once each batch is done, the SDK will translate the batches back to the results for the client-side application. This is seamless and transparent to the developer.

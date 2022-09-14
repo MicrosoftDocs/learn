@@ -5,7 +5,7 @@ A game is no different from the *invoice system* mentioned in a previous unit. I
 This exercise is a modeling exercise. You'll be given a problem domain description. You'll then be asked to take out the important keywords from the text and arrange them in a table.
 
 > [!TIP]
-> If you need to be reminded how to model, see the "Find objects, data, and behavior" section [in the second unit](/learn/modules/python-object-oriented-programming/2-what-is-oop). Remember, modeling starts with asking the questions *who interacts with whom* or *who does what to whom*.
+> If you need to be reminded how to model, see the "Find objects, data, and behavior" section [in the second unit](/training/modules/python-object-oriented-programming/2-what-is-oop). Remember, modeling starts with asking the questions *who interacts with whom* or *who does what to whom*.
 
 ### Problem description
 

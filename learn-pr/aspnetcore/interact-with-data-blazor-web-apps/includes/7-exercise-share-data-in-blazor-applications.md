@@ -1,4 +1,4 @@
-Now that the app is connected to a database, it's time to add the ability to order and configure a customer's pizza.
+Now that your app is connected to a database, it's time to add the ability to order and configure a customer's pizza.
 
 Blazing Pizza wants you to build the ability for customers to change the size of their special pizzas. You need to store the order, and you've chosen to store the application state in a container service.
 
@@ -6,6 +6,7 @@ In this exercise, you'll pass data to a new order configuration component and se
 
 ## Add a new order configuration dialog
 
+1. Stop the app if it's still running.
 1. In Visual Studio Code, right-click the **Shared** folder and select **New File**.
 1. Enter **ConfigurePizzaDialog.razor** as the filename.
 1. Enter this code for the UI of the new ordering component:
@@ -161,12 +162,13 @@ When a customer selects a pizza, the dialog should allow them to change the size
 
 At the moment, the app shows the configuration dialog but doesn't allow you to cancel or move on to ordering the pizza. To manage the state of the order, you'll add a new order state container service.
 
-1. Select **File** > **New File**.
-1. For the language, select **C#**.
+1. Stop the app if it's still running.
+1. Create a new folder in the *BlazingPizza* folder. Name it *Services*.
+1. Create a new file in the *Services* folder. Name it *OrderState.cs*.
 1. Enter this code for the class:
 
     ```csharp
-    namespace BlazingPizza;
+    namespace BlazingPizza.Services;
 
     public class OrderState
     {
@@ -206,9 +208,8 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 
     You'll see that there's a lot of code currently in the **index.razor** component that we can move into the new class. The next step is to make this service available in the app.
 
-1. Select <kbd>Ctrl</kbd> + <kbd>S</kbd>. In the **Save As** dialog, for **File name** enter **OrderState.cs**. Then select **Save**.
 1. In the file explorer, select **Program.cs**.
-1. In the `Add services to the container` segment, add this line at the bottom:
+1. In the part of the file with the lines that start with `builder.Services.`, add this line:
 
     ```csharp
     builder.Services.AddScoped<OrderState>();
@@ -216,14 +217,21 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 
     From the previous exercise, we added our database context here. This code adds the new `OrderState` service. With this code in place, we can now use it in the `index.razor` component.
 
+1. Add the following `using` directive to the top of the file to resolve the `OrderState` class:
+
+    ```csharp
+    using BlazingPizza.Services;
+    ```
+
 1. In the file explorer, expand **Pages** and then select **Index.razor**.
-1. At the top of the file, under the `NavigationManager`, add this code:
+1. At the top of the file, under `@inject NavigationManager NavigationManager`, add this code:
 
     ```razor
+    @using BlazingPizza.Services
     @inject OrderState OrderState
     ```
 
-    Now you can delete all the code that's in the order state. The `@code` block should look like this:
+1. Remove `configuringPizza`, `showingConfigureDialog`, and `ShowConfigurePizzaDialog()` from the `@code` block. It should now look like this:
 
     ```razor
     @code {
@@ -264,6 +272,7 @@ At the moment, the app shows the configuration dialog but doesn't allow you to c
 
 You might have noticed in the OrderState class two methods that we haven't used yet. The `CancelConfigurePizzaDialog` and `ConfirmConfigurePizzaDialog` methods close the dialog and add the pizza to an `Order` object if the customer has confirmed the order. Let's connect these methods to the configuration dialog buttons.
 
+1. Stop the app if it's still running.
 1. In the file explorer, expand **Shared**. Then select **ConfigurePizzaDialog.razor**.
 1. In the `@code` block, add two new parameters:
 

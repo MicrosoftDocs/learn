@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-sql-warehouses-azure-databricks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/26/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+quiz:
+  questions:
+  - content: "Which of the following workloads is best suited for Azure Databricks SQL?"
+    choices:
+    - content: "Running Scala code in notebooks to transform data."
+      isCorrect: false
+      explanation: "Incorrect. Using notebooks to transform data is more suited to the Azure Databricks Data Science and Engineering persona."
+    - content: "Querying and visualizing data in relational tables."
+      isCorrect: true
+      explanation: "Correct. Azure Databricks SQL is optimized for SQL-based querying and data visualization."
+    - content: "Training and deploying machine learning models."
+      isCorrect: false
+      explanation: "Incorrect. Machine learning model management is more suited to the Azure Databricks Machine Learning persona."
+  - content: "Which statement should you use to create a database in a SQL warehouse?"
+    choices:
+    - content: "CREATE VIEW"
+      isCorrect: false
+      explanation: "Incorrect. The CREATE VIEW statement is used to create a view."
+    - content: "CREATE SCHEMA"
+      isCorrect: true
+      explanation: "Correct. The CREATE SCHEMA statement is used to create a database."
+    - content: "CREATE GROUP"
+      isCorrect: false
+      explanation: "Incorrect. the CREATE GROUP statement is used to create a security group."
+  - content: "You need to share data visualizations, including charts and tables of data, with users in your organization. What should you create?"
+    choices:
+    - content: "A table"
+      isCorrect: false
+      explanation: "Incorrect. Creating a table does not enable you to share data visualizations."
+    - content: "A query"
+      isCorrect: false
+      explanation: "Incorrect. Creating a query does not enable you to share data visualizations."
+    - content: "A dashboard"
+      isCorrect: true
+      explanation: "Correct. A dashboard can be used to share data visualizations with other users."

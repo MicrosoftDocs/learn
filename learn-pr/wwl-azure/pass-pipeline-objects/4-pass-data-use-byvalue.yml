@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.pass-pipeline-objects.pass-data-use-byvalue
+title: Pass data by using ByValue
+metadata:
+  title: Pass data by using ByValue
+  description: "Pass data by using ByValue"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-pass-data-use-byvalue.md)]

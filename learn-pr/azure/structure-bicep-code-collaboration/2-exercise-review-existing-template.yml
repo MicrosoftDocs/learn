@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Review your existing Bicep template
   description: Learn how to inspect an existing Bicep template for maintainability issues.
   ms.date: 08/06/2021
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

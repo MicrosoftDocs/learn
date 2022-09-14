@@ -40,7 +40,7 @@ In Azure Data Factory, our **source** activity has a configuration JSON object t
 
 ## Write to Azure Cosmos DB
 
-In Azure Data Factory, when storing data to Azure Cosmos DB SQL API, we must configure our linked service as a **sink**. This will load out data. To configure this, we must set our write behavior. For example, we may always want to insert our data, or we may want to upsert our data and overwrite any items that may have a matching unique identifier (**id** field).
+In Azure Data Factory, when storing data to Azure Cosmos DB SQL API, we must configure our linked service as a **sink**. This will load our data. To configure this, we must set our write behavior. For example, we may always want to insert our data, or we may want to upsert our data and overwrite any items that may have a matching unique identifier (**id** field).
 
 Our **sink** activity also had a configuration JSON object:
 
