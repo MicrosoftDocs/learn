@@ -18,7 +18,7 @@ abstract: |
   - Plan and configure multi-tier application permissions
 prerequisites: |
   None
-iconUrl: /learn/achievements/implement-app-registration.svg
+iconUrl: /training/achievements/implement-app-registration.svg
 levels:
 - advanced
 roles:

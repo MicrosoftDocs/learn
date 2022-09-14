@@ -21,7 +21,7 @@ prerequisites: |
   - Windows Server 2012 or Windows Server 2016
   - Core networking technologies
   - Implementing and managing Active Directory Domain Services (AD DS)
-iconUrl: /learn/achievements/manage-advanced-features-of-ad-ds.svg
+iconUrl: /training/achievements/manage-advanced-features-of-ad-ds.svg
 levels:
 - advanced
 roles:

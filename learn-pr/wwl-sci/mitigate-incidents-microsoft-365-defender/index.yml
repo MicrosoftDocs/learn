@@ -17,7 +17,7 @@ abstract: |
   - Conduct advanced hunting in Microsoft 365 Defender
 prerequisites: |
   Intermediate understanding of Microsoft 365.
-iconUrl: /learn/achievements/mitigate-incidents-in-microsoft-365-defender.svg
+iconUrl: /training/achievements/mitigate-incidents-in-microsoft-365-defender.svg
 levels:
 - intermediate
 roles:

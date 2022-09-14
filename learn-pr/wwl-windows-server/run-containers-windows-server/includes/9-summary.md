@@ -15,4 +15,4 @@ You can learn more by reviewing the following documents:
 - [Container Base Images](/virtualization/windowscontainers/manage-containers/container-base-images?azure-portal=true)
 - [Windows container version compatibility](/virtualization/windowscontainers/deploy-containers/version-compatibility?azure-portal=true)
 - [Linux containers on Windows 10](/virtualization/windowscontainers/deploy-containers/linux-containers?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00?azure-portal=true)
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true)
