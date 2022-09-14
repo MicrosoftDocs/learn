@@ -48,9 +48,11 @@ You need to create a list of possible values for this parameter. The parameter y
 
 1. Select **Done**.
 
-## Edit the tile query to include a parameter
+## Edit both tile queries to include a parameter
 
 You've now created a parameter, but nothing has changed on your dashboard. You need to use the parameter in the query that generates a visual.
+
+### Events by date
 
 1. In the **Events by date** tile, select the pencil icon.
 
@@ -65,10 +67,26 @@ You've now created a parameter, but nothing has changed on your dashboard. You n
     Your query should look like the following image: 
 
     :::image type="content" source="../media/9-add-parameter-to-query.png" alt-text="Screenshot of editing the query to add parameter.":::
+
+1. Select **Apply changes**.
+
+### Events by state
+
+1. In the **Events by state** tile, select the pencil icon.
+1. Edit the query to include the following line:
+
+    ```kusto
+    | where State has_any (_state)
+    ```  
+
+    Your query should look like the following image: 
+
+    :::image type="content" source="../media/7-add-parameter-second-query.png" alt-text="Screenshot of query in dashboard visual including parameter.":::
+
 1. Select **Apply changes**.
 
 ## Use the parameter
 
-Select the **State** parameter, and then select one of the options on the dropdown menu, for example **TEXAS**. Notice how the visualization changes to display only data associated with the selected state.
+Select the **State** parameter, and then select one of the options on the dropdown menu, for example **TEXAS**. Notice how the visualizations change to display only data associated with the selected state.
 
 :::image type="content" source="../media/9-use-parameter.gif" alt-text="Animated gif showing how to use the parameter picker.":::

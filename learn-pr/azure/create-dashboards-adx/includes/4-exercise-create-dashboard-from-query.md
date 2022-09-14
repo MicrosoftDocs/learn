@@ -36,3 +36,8 @@ Start with a query that you want to pin to the dashboard. In this case, you'll s
 
     :::image type="content" source="../media/8-dashboard-created.png" alt-text="Screenshot of new pin in dashboard.":::
 
+## Return to your dashboard
+
+If you've exited the dashboard itself, you can return to the dashboard menu by selecting **Dashboards (Preview)** from the left pane, and then selecting the specific dashboard you wish to view.
+
+:::image type="content" source="../media/4-dashboards-access.png" alt-text="Screenshot of dashboards menu in left pane and list of dashboards.":::

@@ -24,7 +24,7 @@ You've created dashboard parameters to filter dashboard tiles. In this unit, you
 
 ## Use a cross-filter
 
-1. To use the cross-filter, go to the **Events count by state** tile, and select the bar for the state you want to select. For example, see if you can select **Ohio**. 
-1. Now look at the **Events by date** visual. Do you notice how it's changed to just show data for the state of Ohio? Your dashboard should look like the following image:
+1. To use the cross-filter, go to the **Events count by state** tile, and select the bar for the state you want to select. For example, see if you can select **MINNESOTA**. 
+1. Now look at the **Events by date** visual. Do you notice how it's changed to just show data for the state of Minnesota? Your dashboard should look like the following image:
 
     :::image type="content" source="../media/8-cross-filter-selection.png" alt-text="Screenshot of cross-filter in use.":::
