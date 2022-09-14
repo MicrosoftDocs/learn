@@ -18,7 +18,7 @@ quiz:
   title: ""
 
   questions:
-  - content: "You have three virtual machines (VM1, VM2, VM3) in a resource group. A new admin is hired, and they to be able to modify settings on VM3. They shouldn't be able to make changes to VM1 or VM2. How can you implement RBAC to minimize administrative overhead?"
+  - content: "You have three virtual machines (VM1, VM2, VM3) in a resource group. A new admin is hired, and they need to be able to modify settings on VM3. They shouldn't be able to make changes to VM1 or VM2. How can you implement RBAC to minimize administrative overhead?"
     choices:
     - content: "Assign the admin to the Contributor role on the resource group."
       isCorrect: false
