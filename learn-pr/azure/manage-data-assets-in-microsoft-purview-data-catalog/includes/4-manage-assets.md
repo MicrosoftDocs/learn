@@ -43,7 +43,7 @@ Here are the currently editable aspects of an asset:
 
 #### Overview
 
-:::image type="content" source="../media/manage-assets/editing-assets-overview.png" alt-text="<alt text>":::
+:::image type="content" source="../media/manage-assets/editing-assets-overview.png" alt-text="Screenshot of the asset editing overview page.":::
 
 1. **Asset description** - should give a synopsis of what an asset represents. You can use rich text formatting to provide hyperlinks, bold text, lists, or tables to provide information to your users.
 1. **Classification** - identify the kind of data being represented. Classifications will be applied during the scanning process, depending on your scanning rules, but you can also add them manually, or create and add custom classifcations.
@@ -53,7 +53,7 @@ Here are the currently editable aspects of an asset:
 
 #### Schema
 
-:::image type="content" source="../media/manage-assets/editing-assets-schema-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets/editing-assets-schema.png":::
+:::image type="content" source="../media/manage-assets/editing-assets-schema-inline.png" alt-text="Screenshot of the asset editing schema page." lightbox="../media/manage-assets/editing-assets-schema.png":::
 
 1. **Column name** - imported during the scanning process, but can be updated to a friendly name.
 1. **Column-level classifications** - Exactly like classifications applied to an asset in general, but they can be applied to a specific column of data.
@@ -63,7 +63,7 @@ Here are the currently editable aspects of an asset:
 
 #### Contacts
 
-:::image type="content" source="../media/manage-assets/editing-assets-contacts-inline.png" alt-text="<alt text>" lightbox="../media/manage-assets/editing-assets-contacts.png":::
+:::image type="content" source="../media/manage-assets/editing-assets-contacts-inline.png" alt-text="Screenshot of the asset editing contacts page." lightbox="../media/manage-assets/editing-assets-contacts.png":::
 
 Contacts should be users that are responsible for maintaining a data asset, or know about them. These users will be contacted if a user has questions about a data asset, or needs to be granted access.
 
