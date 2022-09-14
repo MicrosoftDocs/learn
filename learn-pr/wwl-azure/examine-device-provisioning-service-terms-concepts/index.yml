@@ -20,7 +20,7 @@ prerequisites: |
   Ability to:
   *   Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   *   Describe the role of the Azure IoT Hub Device Provisioning Service within an Azure IoT solution.
-iconUrl: /learn/achievements/provisioning-device-terms-conditions.svg
+iconUrl: /training/achievements/provisioning-device-terms-conditions.svg
 levels:
 - intermediate
 roles:

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   *   At least one year of experience developing scalable solutions through all phases of software development.
   *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-iconUrl: /learn/achievements/1-explore-api-management.svg
+iconUrl: /training/achievements/1-explore-api-management.svg
 levels:
 - intermediate
 roles:
