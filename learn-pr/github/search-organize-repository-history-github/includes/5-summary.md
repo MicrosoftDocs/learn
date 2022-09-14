@@ -6,7 +6,7 @@ You learned about:
 - Searching history to find context
 - Making connections within GitHub to help others find things
 
-Now that you're familiar with finding and organizing information on GitHub, learn to [Maintain a secure repository by using GitHub best practices](/learn/modules/maintain-secure-repository-github/).
+Now that you're familiar with finding and organizing information on GitHub, learn to [Maintain a secure repository by using GitHub best practices](/training/modules/maintain-secure-repository-github/).
 
 ## Learn more
 

@@ -20,7 +20,7 @@ abstract: |
   - Deploy a web page to GitHub Pages
 prerequisites: |
   - A GitHub account
-iconUrl: /learn/achievements/github/introduction-to-github.svg
+iconUrl: /training/achievements/github/introduction-to-github.svg
 ratingEnabled: true
 levels:
 - beginner
