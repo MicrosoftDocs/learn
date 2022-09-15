@@ -163,7 +163,7 @@ Django templates help us create html files that get loaded when an endpoint is a
         </html>
     ```
 
-    *content.html*
+    *4.b content.html*
 
     ```html
         {% extends './layout.html' %}
