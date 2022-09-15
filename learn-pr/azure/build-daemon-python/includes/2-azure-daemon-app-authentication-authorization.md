@@ -1,6 +1,6 @@
 Applications that operate without interaction with a user also need a way to access secured resources, like web APIs. Azure Active Directory (Azure AD) supports applications to acquire a token for their own identities.
 
-In the financial company scenario, your company needs to use Azure AD to manage applications' identity and authentication journey in your Python daemon application.
+In our financial company scenario, your company needs to use Azure AD to manage applications' identity and authentication journey in your Python daemon application.
 
 In this unit, you'll learn about authentication, authorization, and how it's supported in Azure AD.
 
