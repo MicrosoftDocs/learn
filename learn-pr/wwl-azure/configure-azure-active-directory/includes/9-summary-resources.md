@@ -12,10 +12,10 @@ In this module, you learned about Azure AD features and explored implementation 
 
 ## Learn more with self-paced training
 
-- Manage device identity with [Azure AD join and Enterprise State Roaming](/training/modules/manage-device-identity-ad-join/).
+- Manage device identity with [Azure AD join and Enterprise State Roaming](/learn/modules/manage-device-identity-ad-join/).
 
-- Implement and manage [hybrid identity](/training/modules/implement-manage-hybrid-identity/).
+- Implement and manage [hybrid identity](/learn/modules/implement-manage-hybrid-identity/).
 
 ## Learn more with optional hands-on exercises
 
-- Allow users to reset their password with [Azure Active Directory self-service password reset (sandbox)](/training/modules/allow-users-reset-their-password/).
+- Allow users to reset their password with [Azure Active Directory self-service password reset (sandbox)](/learn/modules/allow-users-reset-their-password/).
