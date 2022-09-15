@@ -1,12 +1,12 @@
-Data storage describes how different types of data are stored in your organization. The type of data storage that you implement is based on the structure of your data and the manner in which the data is accessed.
+Data storage describes how different data is stored and managed in your organization. The type of data storage that you implement is based on the structure of the data and how the data is accessed.
 
-Some data is highly organized, such as machine configurations, sensitive personal information, and customer invoices. Other data can be less structured like fax images, executive presentations, and engineering white papers. Certain data is accessed by only a few individuals like administrators or file owners. Other data can be used by both all levels of users, both internal employees and external partners.
+Data can be highly organized like machine configurations and customer invoices. Other data is less structured, such as fax images and engineering white papers. Some data is accessed by only specific users like system administrators or file owners. And other data is accessed by all users, including internal employees and external partners.
 
 ## Meet Tailwind Traders
 
 :::image type="icon" source="../media/tailwind-traders.png" border="false":::
 
-Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online. As you work through this lesson, suppose you're the CTO for Tailwind Traders. You're investigating storage solutions for unstructured data that doesn't have clear relationships between the data fields. You're interested in how storage accounts and data types can be used with blob, file, and disk storage. You want to implement strong protection for your data storage. The company is seeking a data storage solution that balances features with strong performance and reasonable cost.
+Tailwind Traders is a fictitious home improvement retailer. The company operates retail hardware stores across the globe and online. As you work through this lesson, suppose you're the CTO for Tailwind Traders. You're investigating storage solutions for data that's not highly organized. You're interested in how storage accounts can be used with blob, file, and disk storage for unstructured data. You want to implement strong protection for your data storage. The company is seeking a data storage solution that balances features with strong performance and reasonable cost.
 
 ### Learning objectives
 
