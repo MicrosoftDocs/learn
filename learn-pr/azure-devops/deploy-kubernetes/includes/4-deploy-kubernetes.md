@@ -11,6 +11,7 @@ In this part, you'll:
 > * Add a task to deploy updated images to a Kubernetes cluster.
 > * Save the pipeline to trigger a CI/CD workflow.
 
+
 ## Update the pipeline to support CI/CD
 
 Here you add a new pipeline variable to the existing CI/CD pipeline defined in *azure-pipelines.yml*.
