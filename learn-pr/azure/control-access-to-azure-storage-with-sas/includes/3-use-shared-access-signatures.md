@@ -75,7 +75,7 @@ sasToken = sas.ToSasQueryParameters(storageSharedKeyCredential).ToString();
 
 To reduce the potential risks of using a SAS, Microsoft provides some guidance:
 
-- To securely distribute a SAS and prevent man-in-the-middle attacks, always use HTTPS.
+- To securely distribute a SAS and help prevent man-in-the-middle attacks, always use HTTPS.
 - The most secure SAS is user delegation. Use it wherever possible because it removes the need to store your storage account key in code. Azure AD must be used to manage credentials; this option might not be possible for your solution.
 - Try to set your expiration time to the smallest useful value. If a SAS key becomes compromised, it can be exploited for only a short time.
 - Apply the rule of minimum-required privileges. Only grant the access that's required. For example, in your app, read-only access is sufficient.
