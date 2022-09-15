@@ -2,7 +2,7 @@
 uid: learn.azure-well-architected-mission-critical
 metadata:
   title: Challenge Project - Design a mission-critical workload
-  description: Learn how using key principles in your architecture can help you design a highly-reliable workload that strives for maximize reliability and operational effectiveness.
+  description: Learn to apply key principles in your architecture to achieve a highly-reliable design that strives for maximum reliability and operational effectiveness.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk

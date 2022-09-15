@@ -4,7 +4,7 @@ title: Exercise - Expand your design to multiple regions
 metadata:
   unitType: exercise
   title: Exercise - Expand your design to multiple regions
-  description: Convert the architecture to an active-active, shared-state, multi-region topology designed to withstand one faulted region.
+  description: Convert the architecture to an active-active, shared-state, multi-region topology designed to withstand a faulted region.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
@@ -26,7 +26,7 @@ quiz:
       explanation: 'Front Door provides global load balancing and site acceleration for web applications. This is a good choice for workloads with high-availability requirements. It offers fast failover, caching, and is integrated with Web Application Firewall (WAF).'
     - content: 'Azure Traffic Manager'
       isCorrect: false
-      explanation: 'Traffic Manager is a DNS-based traffic load balancer that distributes traffic across global Azure regions. However, this architecture is focused on a web workload. Ideally, the load balancer should route HTTP(S) traffic.'
+      explanation: 'Traffic Manager is a DNS-based traffic load balancer that distributes traffic across global Azure regions. However, it doesn't have the capabilities required by this architecture. For example, Web Application Firewall and the ability to fail over quickly.'
   - content: 'Which of the following is a good example of using automation to improve operational excellence?'
     choices:
     - content: 'Manually provisioning development environments every day for your development teams.'

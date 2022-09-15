@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-mission-critical.2-prepare
 title: Prepare
 metadata:
   title: Prepare - Define the key strategies
-  description: Project specification and setup requirements.
+  description: Prepare for the challenge by understanding the context of an existing architecture, the tradeoffs, and the project specification.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
@@ -12,3 +12,5 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/2-prepare.md)]
+
+

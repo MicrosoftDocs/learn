@@ -4,13 +4,15 @@ Contoso Shoes needs a way to withstand regional outages. You want to deploy the 
 
 A single region has been sufficient for the application. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Scaling out within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
 
+DNS is held by an existing registrar for `api.contososhoes.com`. The DNS record resolves to the backend App Services endpoint (http://apicontososhoes.azurewebsites.net) with time to live (TTL) period 2 days. When the solution is deployed to multiple region, DNS needs to be migrated.
+
 ## Specification
 
 - Extend the architecture to work in an active-active, multi-region topology. 
-- Consider a deployment stamp model that allows you to dynamically add and remove regions as needed instead of a list of hardcoded resources across two regions.
+- Modify the deployment stamp model that allows you to dynamically add and remove regions as needed instead of a list of hardcoded resources across two regions.
 - If there's a regional failure, traffic needs to be routed to the non-faulted region without any notable impact to clients already in the non-faulted region. 
 - Clients shouldn't be pinned to a region. 
-- Clients shouldn't need to change URLs for contacting the API. 
+- Clients shouldn't need to change URLs for contacting the API. DNS should be migrated to the global router.
 
 ## Recommended approach
 To get started on your design, we recommend that you follow these steps.
@@ -34,7 +36,7 @@ In order for the clients to get transparently routed to either working region, a
 - Choose a native Azure service that integrates with the existing architecture and is able to fail over quickly.
 - Make sure that network ingress path has controls in place to deny unauthorized traffic. 
 - Minimize network latency by serving end users from an edge cache.
-- Migrate the existing DNS without affecting existing clients. (TBD)
+- Migrate the existing DNS without affecting existing clients.
 - Have an automated way to indicate a regional failure to ensure traffic isn’t routed to the faulted region. Also, get notified  when the region is available again so that load balancer can resume routing to that region.
 
 > **Check your progress: [Global traffic routing](/azure/architecture/framework/mission-critical/mission-critical-networking-connectivity#global-traffic-routing)**
@@ -66,7 +68,7 @@ Here's are [**Application**](/azure/architecture/reference-architectures/contain
 - How does the load balancer support your existing DNS record?
 - How did you use your health check API from the previous exercise?
 - Have you protected the application from DDoS attacks, especially preventing malicious clients from bypassing the load balancer and reaching regional instances?
-- How did you approach DNS and TLS migration? (TBD)
+- How did you approach DNS migration? 
 - Did make any SKU changes to the existing component to support multi-region topology?
 - Which Azure services did you leave as singletons? How have you justified your choice for each service? Did you make any configuration changes?
 - Are you logging resources? Do you think that will impact your ability to inspect the logs for the overall system?	

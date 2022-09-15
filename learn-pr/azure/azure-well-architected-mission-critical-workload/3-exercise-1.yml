@@ -4,7 +4,7 @@ title: Exercise - Add web application health checks
 metadata:
   unitType: exercise
   title: Exercise - Add web application health checks
-  description: TBD
+  description: Implement a dedicated health check endpoint on the application, which reports the health status of the API at regular intervals. 
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
