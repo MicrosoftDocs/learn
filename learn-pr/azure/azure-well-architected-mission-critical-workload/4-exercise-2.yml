@@ -26,7 +26,7 @@ quiz:
       explanation: 'Front Door provides global load balancing and site acceleration for web applications. This is a good choice for workloads with high-availability requirements. It offers fast failover, caching, and is integrated with Web Application Firewall (WAF).'
     - content: 'Azure Traffic Manager'
       isCorrect: false
-      explanation: 'Traffic Manager is a DNS-based traffic load balancer that distributes traffic across global Azure regions. However, it doesn't have the capabilities required by this architecture. For example, Web Application Firewall and the ability to fail over quickly.'
+      explanation: 'Traffic Manager is a DNS-based global traffic load balancer but it does not have the capabitlities needed by this architecture. For example Web Application Firewall and fast fail over.'
   - content: 'Which of the following is a good example of using automation to improve operational excellence?'
     choices:
     - content: 'Manually provisioning development environments every day for your development teams.'
