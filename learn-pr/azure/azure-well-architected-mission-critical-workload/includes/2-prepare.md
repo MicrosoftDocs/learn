@@ -80,4 +80,4 @@ In this **_Challenge Project_**, you'll be taking on the role of an architect wh
     - [Azure Key Vault](/azure/key-vault/)
     - [Azure Log Analytics](/azure/azure-monitor/)
     - [Azure Application Insights](/azure/azure-monitor/)
-    - [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines?view=azure-devops)
+    - [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines)

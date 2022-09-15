@@ -2,7 +2,7 @@
 uid: learn.azure-well-architected-mission-critical
 metadata:
   title: Challenge Project - Design a mission-critical workload
-  description: Learn to apply key principles in your architecture to achieve a highly-reliable design that strives for maximum reliability and operational effectiveness.
+  description: Learn to apply key principles in your architecture to achieve a highly reliable design that strives for maximum reliability and operational effectiveness.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
@@ -10,11 +10,11 @@ metadata:
   ms.prod: learning-azure
 title: Challenge Project - Design a mission-critical workload
 summary: |
-  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities. The architecture is for an example workload for a fictious company. You'll start with an existing architecture, given the high-level specifications, design principles, example solutions to complete the project.
+  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities. The architecture is for an example workload for a fictitious company. You'll start with an existing architecture, given the high-level specifications, design principles, example solutions to complete the project.
   > [!NOTE]
-  > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation. A recommended approach is given for each exercise to make sure you are aligned with the specification of the target architecture.
+  > This module is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation. A recommended approach is given for each exercise to make sure you're aligned with the specification of the target architecture.
 abstract: |
-  In this module, you'll demostrate your ability to:
+  In this module, you'll demonstrate your ability to:
    - Extend the current application to have a new API for health checks
    - Define key strategies for multi-region deployment
    - Design an overall health model
