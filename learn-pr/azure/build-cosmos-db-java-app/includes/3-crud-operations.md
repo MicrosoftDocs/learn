@@ -352,7 +352,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
 ## Working with documents programmatically
 
-Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. All of this operations are available in Azure Cosmos DB Java SDK and are also accessible through the Spring Data programming model. In this module, we'll use Spring Data Azure Cosmos DB to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
+Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. All of these operations are available in Azure Cosmos DB Java SDK and are also accessible through the Spring Data programming model. In this module, we'll use Spring Data Azure Cosmos DB to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
 The main operations for Spring Data Azure Cosmos DB documents are basic operations in the Spring Data programming model:
 * `save` - point-write or update a document, depending on whether the document already exists.
