@@ -6,12 +6,12 @@ You've made the connection to Azure Cosmos DB. In this unit, you'll create user 
 
 Data is stored in JSON documents in Azure Cosmos DB. [Documents](/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll use the Java SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
-The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncContainer](/java/api/com.azure.cosmos.cosmosasynccontainer?view=azure-java-stable) class:
-* [createItem](/java/api/com.azure.cosmos.cosmosasynccontainer.createitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_createItem_T_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
-* [readItem](/java/api/com.azure.cosmos.cosmosasynccontainer.readitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_readItem_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_java_lang_Class_T__)
-* [replaceItem](/java/api/com.azure.cosmos.cosmosasynccontainer.replaceitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_replaceItem_T_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
-* [upsertItem](/java/api/com.azure.cosmos.cosmosasynccontainer.upsertitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_upsertItem_T_com_azure_cosmos_models_CosmosItemRequestOptions_)
-* [deleteItem](/java/api/com.azure.cosmos.cosmosasynccontainer.deleteitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer_deleteItem_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
+The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncContainer](/java/api/com.azure.cosmos.cosmosasynccontainer) class:
+* [createItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)createitem(t))
+* [readItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)readitem(java-lang-string-com-azure-cosmos-models-partitionkey-java-lang-class(t)))
+* [replaceItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)replaceitem(t-java-lang-string-com-azure-cosmos-models-partitionkey))
+* [upsertItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-(t)upsertitem(t))
+* [deleteItem](/java/api/com.azure.cosmos.CosmosAsyncContainer#com-azure-cosmos-cosmosasynccontainer-deleteitem(java-lang-string-com-azure-cosmos-models-partitionkey))
 
 Upsert performs a create or replace operation, depending on whether the document already exists.
 
