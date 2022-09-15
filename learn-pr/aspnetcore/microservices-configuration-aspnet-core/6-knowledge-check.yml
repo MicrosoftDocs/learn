@@ -3,8 +3,8 @@ uid: learn.microservices-configuration-aspnet-core.6-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  author: scottaddie
-  ms.author: scaddie
+  author: camsoper
+  ms.author: casoper
   ms.date: 11/23/2020
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial

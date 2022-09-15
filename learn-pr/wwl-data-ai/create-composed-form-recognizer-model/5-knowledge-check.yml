@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-composed-form-recognizer-model.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You have a composed model that consists of three custom models. You're writing code that sends forms to the composed model and you need to check which of the custom models was used to analyze each form. Which property should you use from the returned JSON?"
+    choices:
+    - content: "modelId."
+      isCorrect: false
+      explanation: "Incorrect. The modelId property returns the ID of the composed model, not one of the constituent models."
+    - content: "status."
+      isCorrect: false
+      explanation: "Incorrect. The status property indicates whether the submission succeeded or failed. It doesn't indicate which custom model was used for the analysis."
+    - content: "docType."
+      isCorrect: true
+      explanation: "Correct. The docType property includes the model ID of the custom model that was used to analyze the document."
+  - content: "You're trying to create a composed model but you're receiving an error. Which of the following should you check?"
+    choices:
+    - content: "That the custom models were trained with labels."
+      isCorrect: true
+      explanation: "Correct. Only custom models that have been trained with labeled example forms can be added to a composed model."
+    - content: "That the custom models all have the same model ID."
+      isCorrect: false
+      explanation: "Incorrect. The custom models must have unique model IDs and these different IDs don't prevent them from being added to a composed model."
+    - content: "That the custom models all have the same list of fields."
+      isCorrect: false
+      explanation: "Incorrect. Custom models can be added to a composed model even if they have different labeled fields."

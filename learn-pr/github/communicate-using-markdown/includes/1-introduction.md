@@ -17,4 +17,4 @@ In this module, you'll:
 - A GitHub account
 - The ability to navigate and edit files in GitHub
 
-We recommend that you complete [Introduction to GitHub](/learn/modules/introduction-to-github) before beginning this module.
+We recommend that you complete [Introduction to GitHub](/training/modules/introduction-to-github) before beginning this module.

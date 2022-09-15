@@ -9,7 +9,7 @@ continued access based on suggestions from Azure AD. When an access
 review is finished, you can make changes and remove access from users
 who no longer need it.
 
-### Create and perform an access review for users
+## Create and perform an access review for users
 
 To perform an access review, you must be assigned one of the following roles:
 
@@ -33,8 +33,7 @@ Next, do the following:
 
 3. In one of the roles listed above, go to the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade/).
 
-4. Create the access review. For more information, see [Create an access review of groups or
-    applications](https://docs.microsoft.com/azure/active-directory/governance/create-access-review).
+4. Create the access review. For more information, see [Create an access review of groups or applications](/azure/active-directory/governance/create-access-review).
 
 5. When the access review starts, ask the reviewers to give input. By default, they each receive an email from Azure AD with a link to the access panel, where they [review access to groups or applications](/azure/active-directory/governance/self-access-review).
 
@@ -42,7 +41,7 @@ Next, do the following:
 
 7. After the reviewers give input, stop the access review and apply the changes. For more information, see [Complete an access review of groups or applications](/azure/active-directory/governance/complete-access-review).
 
-### Manage guest access with Azure AD access reviews
+## Manage guest access with Azure AD access reviews
 
 With Azure Active Directory (Azure AD), you can easily enable collaboration across organizational boundaries by using the [Azure AD B2B feature](/azure/active-directory/external-identities/what-is-b2b).
 
@@ -74,7 +73,7 @@ There are a few main scenarios for delegating access governance from IT administ
 * Ask a sponsor to review a guest's access to an application - You can ask a sponsor, such as the owner of an application, to review the guest's need for continued access to the application.
 * Ask guests to review their need for access, in general - In some organizations, guests might not be aware of their group memberships.
 
-### Manage entitlement
+## Manage entitlement
 
 With applications centrally authenticating and driven from Azure AD, you can now streamline your access request, approval, and re-certification process to make sure that the right people have the right access and
 that you have a trail of why users in your organization have the access they have.
@@ -83,8 +82,7 @@ Follow these steps:
 
 1. Use Entitlement Management to [create access packages](/azure/active-directory/governance/entitlement-management-access-package-create) that users can request as they join different teams/projects and that assign them access to the associated resources (such as applications, SharePoint sites, group memberships).
 
-2. If deploying Entitlement Management isn't possible for your organization at this time, at least enable self-service paradigms in your organization by deploying [self-service group management](/azure/active-directory/users-groups-roles/groups-self-service-management) and [self-service application
-access](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-self-service-access).
+2. If deploying Entitlement Management isn't possible for your organization at this time, at least enable self-service paradigms in your organization by deploying [self-service group management](/azure/active-directory/users-groups-roles/groups-self-service-management) and [self-service application access](/azure/active-directory/manage-apps/manage-self-service-access).
 
 ### Additional information on entitlement
 

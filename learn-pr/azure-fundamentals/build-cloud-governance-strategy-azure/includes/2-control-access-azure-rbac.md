@@ -24,9 +24,9 @@ Scopes include:
 
 When you grant access at a parent scope, those permissions are inherited by all child scopes. For example:
 
- -  When you assign the [Owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#owner) role to a user at the management group scope, that user can manage everything in all subscriptions within the management group.
- -  When you assign the [Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#reader) role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
- -  When you assign the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#contributor) role to an application at the resource group scope, the application can manage resources of all types within that resource group, but not other resource groups within the subscription.
+ -  When you assign the [Owner](/azure/role-based-access-control/built-in-roles?azure-portal=true#owner) role to a user at the management group scope, that user can manage everything in all subscriptions within the management group.
+ -  When you assign the [Reader](/azure/role-based-access-control/built-in-roles?azure-portal=true#reader) role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
+ -  When you assign the [Contributor](/azure/role-based-access-control/built-in-roles?azure-portal=true#contributor) role to an application at the resource group scope, the application can manage resources of all types within that resource group, but not other resource groups within the subscription.
 
 ## When should I use Azure RBAC?
 

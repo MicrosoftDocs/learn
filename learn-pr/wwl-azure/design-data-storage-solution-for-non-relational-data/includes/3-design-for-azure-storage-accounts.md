@@ -18,7 +18,7 @@ Azure Storage offers several kinds of storage accounts. Each kind supports diffe
 
 A storage account represents a collection of settings like location, replication strategy, and subscription owner. Organizations often have multiple storage accounts so they can implement different sets of requirements. The following illustration shows two storage accounts that differ in one setting. That one difference is enough to require separate storage accounts.
 
-:::image type="content" source="../media/storage-considerations.png" alt-text="Storage account considerations like location, compliance, cost, replication, and admin.":::
+:::image type="content" source="../media/storage-considerations.png" alt-text="Diagram showing storage account considerations like location, compliance, cost, replication, and admin.":::
 
 
 ### Considerations when deciding how many storage accounts to create

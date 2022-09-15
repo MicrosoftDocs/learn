@@ -22,7 +22,7 @@ The getting-started guide on [managing cloud costs](/azure/cloud-adoption-framew
 
 ## Scenario 3: Operations support
 
-When a migration results in hosting a production workload in the cloud, the business now takes a dependency on the operations of those cloud assets. Tailwind Traders didn't account for this dependency. It was just assumed that the central operations team would use its existing tools and processes to manage operations. That assumption might prove accurate.
+When a migration results in hosting a production workload in the cloud, the business now takes a dependency on the operations of those cloud assets. Tailwind Traders didn't account for this dependency. It was just assumed that the central operations team would use its existing tools and processes to manage operations. That assumption might not prove accurate.
 
 Before operational management processes could start, the CIO asked the following basic questions. Because the team didn't have answers readily available, the CIO advised that production traffic remain with the current datacenter until the team knew the answers to those questions.
 

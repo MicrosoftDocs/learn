@@ -2,8 +2,9 @@ You should have learned how to use entity behavior analytics in Microsoft Sentin
 
 You should now be able to:
 
-- Explain User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel
+- Explain Entity Behavior Analytics in Microsoft Sentinel
 - Explore entities in Microsoft Sentinel
+- Use entity behavior in Analytical rules
 
 ## Learn more
 

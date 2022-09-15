@@ -8,6 +8,6 @@ AI has the potential to disrupt every industry and every business. AI will enabl
 2) Access to massive computing power through cloud.
 3) Access to recent breakthroughs in new AI algorithms.
 
-Microsoft has made tremendous AI advancements from our global research and data scientist teams. These AI innovations have enabled Microsoft to produced products to empower businesses, developers, and data scientists to build and deploy models faster. Using Cognitive Services, developers can easily apply Microsoft pre-trained AI models in their own applications. They can implement vision, speech, language, search, and decision-making functionality without requiring machine-learning expertise.
+Microsoft has made tremendous AI advancements from our global research and data scientist teams. These AI innovations have allowed Microsoft to produce products to empower businesses, developers, and data scientists to build and deploy models faster. Using Cognitive Services, developers can easily apply Microsoft pre-trained AI models in their own applications. They can implement vision, speech, language, search, and decision-making functionality without requiring machine-learning expertise.
 
 Next, let’s explore, at a high level, what AI is and clarify the confusion around this generalized term.

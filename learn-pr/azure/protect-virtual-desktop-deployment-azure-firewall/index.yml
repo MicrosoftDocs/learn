@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of networking concepts, like virtual networks, virtual network peering, subnets, and IP addressing
   - Familiarity with networking security concepts, like network security groups, firewall, service endpoints
   - For macOS, Linux, iOS, or Android users, remote desktop client installed, like Microsoft Remote Desktop
-iconUrl: /learn/achievements/protect-virtual-desktop-deployment-azure-firewall.svg
+iconUrl: /training/achievements/protect-virtual-desktop-deployment-azure-firewall.svg
 levels: 
   - beginner
 roles:

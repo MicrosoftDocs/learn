@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Ability to use Windows Performance Monitor to monitor system components such as CPU, I/O, network traffic.
-iconUrl: /learn/achievements/describe-performance-monitoring.svg
+iconUrl: /training/achievements/describe-performance-monitoring.svg
 levels:
 - intermediate
 roles:

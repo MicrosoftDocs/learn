@@ -59,7 +59,7 @@ In the remainder of this unit, you'll learn how to explicitly implement this map
 
 ### Step 1. Flag the correct state by applying the oracle
 
-Recall from the [module on Grover's algorithm](/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states. The good states provide a solution to the search problem.
+Recall from the [module on Grover's algorithm](/training/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) that the primary function of the oracle is to flip the sign of, or *flag*, the "good" states. The good states provide a solution to the search problem.
 
 You can do this by using the *phase kickback* trick. This trick makes use of the fact that when a controlled `X` operation is applied to the $|-\rangle$ state, the $|-\rangle$ state remains unchanged and the corresponding states of the control register receive a factor of -1.
 

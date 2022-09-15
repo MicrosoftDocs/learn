@@ -4,12 +4,13 @@ title: Implement Azure Network Adapter in Azure Stack HCI scenarios
 metadata:
   title: Implement Azure Network Adapter in Azure Stack HCI scenarios
   description: "Implement Azure Network Adapter in Azure Stack HCI scenarios"
-  ms.date: 06/09/2021
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/5-implement-azure-network-adapter-scenarios.md)]

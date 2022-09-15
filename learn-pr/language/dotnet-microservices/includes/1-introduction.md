@@ -21,4 +21,4 @@ By the end of this module, you'll be able to:
 - [.NET SDK installed](https://dotnet.microsoft.com/download)
 - [Docker Desktop installed](https://www.docker.com/products/docker-desktop)
 
-If you need to learn more about Docker, review this Learn module: [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/)
+If you need to learn more about Docker, review this Learn module: [Introduction to Docker Containers](/training/modules/intro-to-docker-containers/)

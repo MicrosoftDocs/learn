@@ -84,8 +84,7 @@ The recommended Azure cloud native segmentation control is Azure Firewall. Azure
 | Centralized logging| NSG logs for the virtual network| Aggregate NSG logs across all virtual networks| Azure Firewall logs to Azure Monitor all accepted/denied traffic that is sent via a hub |
 | Unintended open public endpoints| DevOps can accidentally open a public endpoint via incorrect NSG rules.| Same as a pattern 1| Accidentally opened public endpoint in a spoke virtual network won't enable access. The return packet will be dropped via stateful firewall (asymmetric routing). |
 | Application level protection| NSG provides network layer support only.| Same as a pattern 1| Azure Firewall supports FQDN filtering for HTTP/S and MSSQL for outbound traffic and across virtual networks. |
-| Connectivity/Routing: how each segment communicates to each other| System routing provides default connectivity to any workload in any subnet| Same as a pattern 1| No default connectivity between spoke virtual networks. A layer 3 router such as the Azure Firewall in the hub virtual network is required to enable connectivity. |
-| | | |  |
+
 
 
  

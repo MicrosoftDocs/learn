@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.models-shard-keys
+title: Models and shard keys
+metadata:
+  title: Models and shard keys
+  description: "Models and shard keys"
+  ms.date: 07/08/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-models-shard-keys.md)]

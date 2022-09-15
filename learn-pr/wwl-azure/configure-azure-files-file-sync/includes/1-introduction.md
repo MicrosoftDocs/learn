@@ -6,7 +6,7 @@ You configure Azure File shares to provide a central location for the documents.
 
 ## Skills measured
 
-Configure Azure Files and Azure File Sync is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configure Azure Files and Azure File Sync is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Implement and manage storage (15–20%)
 

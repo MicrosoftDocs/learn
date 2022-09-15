@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/16/2021
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     - content: "Minimal"
       isCorrect: true
       explanation: "Correct. Minimal is a configuration option."
-  - content: "What should you install on a new Azure Windows VM if you are not using auto provisioning?"
+  - content: "What should you install on a new Azure Windows VM if you aren't using auto provisioning?"
     choices:
     - content: "Log Analytics Agent"
       isCorrect: true
@@ -39,7 +39,7 @@ quiz:
     - content: "Windows Firewall"
       isCorrect: false
       explanation: "Incorrect.  Windows Firewall is already installed on a Windows VM"
-  - content: "Which of the following is an auto provisioning extension?"
+  - content: "Which of these selections is an auto provisioning extension?"
     choices:
     - content: "Policy Add-on for Kubernetes"
       isCorrect: true

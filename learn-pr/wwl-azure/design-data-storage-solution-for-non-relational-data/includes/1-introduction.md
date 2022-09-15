@@ -1,6 +1,6 @@
 **Meet Tailwind Traders**
 
-:::image type="content" source="../media/tailwind-traders.png" alt-text="Tailwind Traders logo.":::
+:::image type="content" source="../media/tailwind-traders.png" alt-text="Screenshot of the Tailwind Traders logo.":::
 
 
 The Tailwind Trader’s CTO asks, “What is our storage solution for non-relational data?” The CTO’s question is a reasonable and an area Azure Architects can help. In this module, we’ll explore different storage strategies. Storage strategies will include data types, storage accounts, blob storage, file storage, disk storage, storage security, and data protection. 

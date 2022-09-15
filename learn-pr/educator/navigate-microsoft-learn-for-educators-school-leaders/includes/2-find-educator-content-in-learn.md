@@ -18,7 +18,7 @@ Most of our training content is in the form of *modules*, which are organized in
 
 ## Browse and search for educator content
 
-Learn has thousands of modules and learning paths to help you get started with Microsoft products. To browse content, go to the Learn "browse all" page at [docs.microsoft.com/learn/browse/](/learn/browse/)
+Learn has thousands of modules and learning paths to help you get started with Microsoft products. To browse content, go to the [Microsoft Learn "browse all" page](/training/browse/).
 
 ### Search using filters
 
@@ -41,6 +41,6 @@ You can also search by keyword in the search bar displayed on the page.
 
 > [!CAUTION]
 > :::image type="content" source="../media/learn-search-bar.png" alt-text="Docs search bar.":::
-> The search bar displayed in the top right of the page header will search all of Docs.microsoft.com which includes more than just Learn. It includes Documentation, Certifications, Q&A, Code Samples and more.
+> The search bar displayed in the top right of the page header will search all of Microsoft Learn, which includes more than just training resources. It includes documentation, certifications, Q&A, code samples, and more.
 >
->To search just educator content, make sure to use the role filters and search bar located on the "Browse all" page shown above.
+>To search only educator content, make sure to use the role filters and search bar located on the "Browse all" page shown above.

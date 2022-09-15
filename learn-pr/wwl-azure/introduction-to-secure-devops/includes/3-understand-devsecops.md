@@ -1,4 +1,4 @@
-While the adoption of cloud computing is on the rise to support business productivity, a lack of security infrastructure can inadvertently compromise data.
+While adopting cloud computing is on the rise to support business productivity, a lack of security infrastructure can inadvertently compromise data.
 
 The 2018 Microsoft Security Intelligence Report finds that:
 
@@ -11,15 +11,15 @@ The 2018 Microsoft Security Intelligence Report finds that:
 
 ## Secure DevOps (or DevSecOps)
 
-*DevOps* is about working faster. *Security* is about-emphasizing thoroughness. Security concerns are typically addressed at the end of the cycle. It can potentially create unplanned work right at the end of the pipeline. *Secure DevOps* integrates DevOps with security into a set of practices designed to meet the goals of both DevOps and safety more effectively.
+*DevOps* is about working faster. *Security* is about-emphasizing thoroughness. Security concerns are typically addressed at the end of the cycle. It can potentially create unplanned work right at the end of the pipeline. *Secure DevOps* integrates DevOps with security into a set of practices designed to meet the goals of both DevOps and safety effectively.
 
-:::image type="content" source="../media/secure-devops-c185814f.png" alt-text="Venn Diagram with one DevOps circle and one Security circle overlapping. The overlap is labeled Secure DevOps.":::
+:::image type="content" source="../media/secure-devops-c185814f.png" alt-text="Diagram showing Venn Diagram with one DevOps circle and one Security circle overlapping. The overlap is labeled Secure DevOps.":::
 
 
 A Secure DevOps pipeline allows development teams to work fast without breaking their project by introducing unwanted security vulnerabilities.
 
 > [!NOTE]
-> Secure DevOps is also sometimes referred to as *DevSecOps*. You might encounter both terms, but each term refers to the same concept.
+> Secure DevOps is also sometimes referred to as *DevSecOps*. You might encounter both terms, but each refers to the same concept.
 
 ## Security in the context of Secure DevOps
 
@@ -37,9 +37,9 @@ Secure DevOps can show you how and where you can add security to your automation
 
 Secure DevOps addresses broader questions, such as:
 
- -  Is my pipeline consuming third-party components, and if so, are they secure?
+ -  Is my pipeline consuming third-party components, and are they secure?
  -  Are there known vulnerabilities within any of the third-party software we use?
- -  How quickly can I detect vulnerabilities (also referred to as *time to detect*)?
- -  How quickly can I remediate identified vulnerabilities (also referred to as *time to remediate*)?
+ -  How quickly can I detect vulnerabilities (also called *time to detect*)?
+ -  How quickly can I remediate identified vulnerabilities (also known as *time to remediate*)?
 
-Security practices for detecting potential security anomalies need to be as robust and fast as your DevOps pipeline's other parts. It also includes infrastructure automation and code development.
+Security practices for detecting potential security anomalies must be as robust and fast as your DevOps pipeline's other parts. It also includes infrastructure automation and code development.

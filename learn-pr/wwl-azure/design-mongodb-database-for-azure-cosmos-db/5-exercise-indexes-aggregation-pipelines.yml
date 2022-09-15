@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db.exercise-indexes-and-aggregation-pipelines
+title: Exercise – Indexes and aggregation pipelines
+metadata:
+  title: Exercise – Indexes and aggregation pipelines
+  description: "Exercise – Indexes and aggregation pipelines"
+  ms.date: 07/08/2022
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+labModal: false
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise-indexes-aggregation-pipelines.md)]
+interactive: bash

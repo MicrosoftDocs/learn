@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 sandbox: true
-notebook: /learn/modules/introduction-classification-models/notebooks/7-exercise-train-evaluate-multiclass-models.ipynb
+notebook: /training/modules/introduction-classification-models/notebooks/7-exercise-train-evaluate-multiclass-models.ipynb

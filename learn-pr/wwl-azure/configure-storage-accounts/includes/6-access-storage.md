@@ -38,7 +38,7 @@ You can configure a custom domain for accessing blob data in your Azure storage 
 
 **Intermediary mapping with *asverify*** Mapping a domain that is already in use within Azure may result in minor downtime as the domain is updated. To avoid downtime, you can use the asverify subdomain to validate the domain. By prepending asverify to your own subdomain, you permit Azure to recognize your custom domain without modifying the DNS record for the domain. After you modify the DNS record for the domain, it will be mapped to the blob endpoint with no downtime.
 
-The following examples maps a domain to the Azure storage account in DNS with the asverify intermediary domain:
+The following examples map a domain to the Azure storage account in DNS with the asverify intermediary domain:
 
 :::row:::
   :::column:::

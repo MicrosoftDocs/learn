@@ -3,20 +3,20 @@ MB-920 Microsoft Dynamics 365 Fundamentals (ERP) gives students the opportunity 
 
 Supplemental Resources: 
 
-- [Microsoft Learn ](https://aka.ms/learn)
+- [Microsoft Learn](https://aka.ms/learn)
 
-- [Microsoft Learn for Educators ](https://aka.ms/msle) 
+- [Microsoft Learn for Educators](https://aka.ms/msle) 
 
-- [Learn TV](/learn/tv/?WT.mc_id=twitter-0000-learntv)  
+- [Learn TV](/training/tv/?WT.mc_id=twitter-0000-learntv)  
 
-- [Microsoft Technical Documentation ](https://aka.ms/docs)
+- [Microsoft Technical Documentation](https://aka.ms/docs)
 
-- [Microsoft Whiteboard ](https://aka.ms/whiteboard)
+- [Microsoft Whiteboard](https://aka.ms/whiteboard)
 
-- [Microsoft Dynamics Documentation  ](https://aka.ms/dynamics365docs)
+- [Microsoft Dynamics Documentation](https://aka.ms/dynamics365docs)
 
-- [Microsoft Dynamics 365 Customer Service ](https://aka.ms/dynamics365customerservice)
+- [Microsoft Dynamics 365 Customer Service](https://aka.ms/dynamics365customerservice)
 
-- [Microsoft Dynamics 365 Blog ](https://aka.ms/cloudblogs)
+- [Microsoft Dynamics 365 Blog](https://aka.ms/cloudblogs)
 
-- [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP) - Learn | Microsoft Docs ](/learn/certifications/exams/mb-920)
+- [Exam MB-920: Microsoft Dynamics 365 Fundamentals (ERP)](/certifications/exams/mb-920)

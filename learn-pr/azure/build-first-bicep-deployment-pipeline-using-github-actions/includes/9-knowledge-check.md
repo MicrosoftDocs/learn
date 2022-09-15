@@ -14,13 +14,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        client-id: ${{ secrets.AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
     - uses: azure/arm-deploy@v1
       with:
         resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
         template: ./deploy/main.bicep
         parameters: environmentType=${{ env.ENVIRONMENT }}
+```
+
+When you execute your workflow you get the following error message:
+
+```
+ERROR: An error occurred reading file. Could not find a part of the path '/home/runner/work/myrepo/myrepo/deploy/main.bicep'.
 ```

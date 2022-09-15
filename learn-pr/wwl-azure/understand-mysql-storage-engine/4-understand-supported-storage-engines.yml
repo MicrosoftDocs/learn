@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-mysql-storage-engine.understand-supported-storage-engines
+title: Understand the supported storage engines
+metadata:
+  title: Understand the supported storage engines
+  description: "Understand the supported storage engines"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-understand-supported-storage-engines.md)]

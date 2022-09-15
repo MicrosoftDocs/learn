@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/03/2021
+  ms.date: 06/29/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -35,18 +35,18 @@ quiz:
       explanation: "Incorrect.  PowerShell execution can't be blocked with an attack surface reduction rule."
     - content: "Block process creations originating from PSExec and WMI commands"
       isCorrect: true
-      explanation: "Correct.  This option is an attack surface reduction rule that can be configured."
+      explanation: "Correct.  Blocking process creation from PSExec is an attack surface reduction rule that can be configured."
     - content: "Block content from mobile devices"
       isCorrect: false
-      explanation: "Incorrect.  This option is not an attack surface reduction rule that can be configured."
-  - content: "Which of the following is a deployment option?"
+      explanation: "Incorrect.  Not an attack surface reduction rule that can be configured."
+  - content: "Which of the following items is a deployment option?"
     choices:
     - content: "PowerShell"
       isCorrect: true
-      explanation: "Correct. This is a valid deployment option."
+      explanation: "Correct. PowerShell is a valid deployment option."
     - content: "ASRConfig.exe"
       isCorrect: false
-      explanation: "Incorrect.  This is not a valid option."
+      explanation: "Incorrect. This utility isn't a valid option."
     - content: "Microsoft Deployment System"
       isCorrect: false
-      explanation: "Incorrect. This is not a valid deployment option."
+      explanation: "Incorrect. This system isn't a valid deployment option."

@@ -18,7 +18,7 @@ prerequisites: None
 video:
   title: "Linux on Azure video"
   url: https://www.microsoft.com/videoplayer/embed/RWK1dx
-iconUrl: /learn/achievements/azure-linux.svg
+iconUrl: /training/achievements/azure-linux.svg
 levels:
 - beginner
 roles:

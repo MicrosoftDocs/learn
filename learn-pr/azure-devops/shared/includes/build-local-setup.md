@@ -1,17 +1,17 @@
 ## Set up the project locally
 
-Here, you load the _Space Game_ project in Visual Studio Code, configure Git, clone your repository locally, and set the upstream remote so that you can download starter code.
+Here, you load the _Space Game_ project in Visual Studio Code, configure Git, clone your repository locally, and set the upstream remote so that you can download the starter code.
 
 > [!NOTE]
 > If you're already set up with the [mslearn-tailspin-spacegame-web](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) project locally, you can move to the next section.
 
 ### Open the integrated terminal
 
-Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all from one place.
+Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all in one place.
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
+1. In the dropdown list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
     :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="A screenshot of Visual Studio Code showing the location of the Bash shell.":::
 

@@ -14,7 +14,7 @@ prerequisites: |
   - Knowledge of Azure fundamental concepts, and experience using the Azure portal.
 summary: |
   This learning path enables students to migrate Cassandra and MongoDB workloads to Cosmos DB.
-iconUrl: /learn/achievements/migrating-cassandra-and-mongo-db-workloads-to-cosmos-db.svg
+iconUrl: /training/achievements/migrating-cassandra-and-mongo-db-workloads-to-cosmos-db.svg
 levels:
 - intermediate
 roles:

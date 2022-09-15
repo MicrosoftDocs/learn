@@ -4,11 +4,11 @@ Now that you've initialized your Git repository, you're ready to start adding fi
 
 ## Folder structure for your repository
 
-When you work with a version control system like Git, it's important to plan how you store your files. It's a good idea to have a clear folder structure. 
+When you work with a version control system like Git, it's important to plan how you store your files. It's a good idea to have a clear folder structure.
 
-If you're building Bicep code to deploy an application or another solution, it's also a good idea to store your Bicep files in the same repository as the application code and other files. That way, anytime someone needs to add a new feature that changes both Bicep and application code, they'll be tracked together. 
+If you're building Bicep code to deploy an application or another solution, it's also a good idea to store your Bicep files in the same repository as the application code and other files. That way, anytime someone needs to add a new feature that changes both Bicep and application code, they'll be tracked together.
 
-Planning your folder structure also makes it easier to deploy your solution from a pipeline. You'll learn about that in a future module.
+Planning your folder structure also makes it easier to deploy your solution from a pipeline. You'll learn about pipelines in a future module.
 
 Different teams have different conventions for how they set up their repository folders and files. Even if you aren't working with a team, it's still a good idea to decide on a convention to follow. This will help anyone who has to work with your code in future.
 
@@ -90,6 +90,6 @@ It's also common to view the commits to a specific file. You can specify the fil
 git log deploy/main.bicep
 ```
 
-The Git CLI and the `git log` command provide many arguments that you can use to view information about your commits and files. However, it's often easier to use Visual Studio Code to view the commit history for a file. 
+The Git CLI and the `git log` command provide many arguments that you can use to view information about your commits and files. However, it's often easier to use Visual Studio Code to view the commit history for a file.
 
 In the Visual Studio Code **Explorer** pane, you can select and hold (or right-click) a file in your repository and then select **View Timeline**. The **Timeline** pane opens and shows a list of each commit that affected that file. When you select a commit, you see the exact changes to the file. You'll see how to use this information in the next exercise.

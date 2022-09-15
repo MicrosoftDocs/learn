@@ -28,69 +28,40 @@ Azure Firewall.
 
 [![Diagram showing a secure hybrid network architecture.](../media/implement-a-secure-hybrid-network.png)](../media/implement-a-secure-hybrid-network.png#lightbox) 
 
-## Use multiple online environments or tenants
+## Architecting for multitenant scenarios
 
-The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer
-Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and
-Dynamics 365 Project Service Automation) provide options for segregating
-data and user access. For most companies, adding and using multiple
-environments in a subscription provides the right mix of functionality
-and ease of management. Enterprises with separate geographic locations
-might consider using multiple tenants to separate licenses. Multiple
-environments can share users among environments; multiple tenants
-can't.
+In a multitenant architecture, you share some or all of your resources between tenants. This process means that a multitenant architecture can give you cost and operational efficiency. However, multitenancy introduces complexities, including the following:
 
-## Uses for multiple environments
+* How do you define what a tenant is, for your specific solution? Does a tenant correspond to a customer, a user, or a group of users (like a team)?
+* How will you deploy your infrastructure to support multitenancy, and how much isolation will you have between tenants?
+* What level of service do you need to provide to your tenants? Consider performance, resiliency, security, and compliance requirements, like data residency.
+* How do you plan to grow your business or solution, and will it scale to the number of tenants you expect?
+* Do any of your tenants have unusual or special requirements? For example, does your biggest customer need higher performance or stronger guarantees than others?
+* How will you monitor, manage, automate, scale, and govern your Azure environment, and how will multitenancy impact this?
 
-A typical deployment includes one tenant only. A tenant can include one
-or more environments; however, an environment is always associated with
-a single tenant.
+## Tenancy models
 
-This example uses two environments for three teams: Sales, Marketing,
-and Services:
+There are two common models:
 
-![Diagram showing a typical deployment that includes one tenant only.](../media/uses-for-multiple-environments.png)
+* **Business-to-business (B2B)**. If your customers are other organizations, you are likely to consider your tenants to be those customers. However, consider whether your customers might have divisions (teams or departments), or if they have a presence in multiple countries. You may need to consider having a single customer map to multiple tenants, if there are different requirements for these subgroups. Similarly, a customer might want to maintain two instances of your service, so they can keep their development and production environments separated from each other. Generally, a single tenant will have multiple users. For example, all of your customer's employees will be users within the same tenant.
+* **Business-to-consumer (B2C)**. If your customers are consumers, it's often more complicated to relate customers, tenants, and users. In some scenarios, each consumer could be their own tenant. However, consider whether your solution might be used by families, groups of friends, clubs, associations, or other groupings that might need to access and manage their data together. For example, a music-streaming service might support both individual users and families, and it might treat each of these account types differently, when it comes to separating them into tenants.
 
-Sales and marketing share an environment so lead information can be
-easily accessed by both. Services has their own environment, so tickets
-and warranties can be managed separately from marketing campaigns and
-other related sales events.
+## Tenant isolation
 
-Access to one or both environments can be provided easily. Sales and
-marketing users could be limited to their environment, while service
-users with extended access could update support escalations records
-related to accounts in both environments.
+One of the biggest considerations when designing a multitenant architecture is the level of isolation that each tenant needs. Isolation can mean different things:
 
-## About single tenants with multiple environments:
+* Having a single set of shared infrastructure, with separate instances of your application and separate databases for each tenant.
+* Sharing some common resources, while keeping other resources separate for each tenant.
+* Keeping data on a separate physical infrastructure. In the cloud, this might require separate Azure resources for each tenant, or it could even mean literally deploying a separate physical infrastructure, by using dedicated hosts.
 
-- Each environment within a tenant receives its own SQL database
-- Data isn't shared across environments
-- Go to [Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage) for help understanding how storage is shared across environments
-- All environments for a single customer tenant will be set up in the geography where they initially signed up for their account. Storage consumption is totaled and tracked across all the environments attached to a customer tenant
-- Separate security groups can be set up for all environments
-- A licensed user can potentially access all the environments associated with the tenant. Access is controlled by environment security group membership
-- Additional environments may be purchased through the Additional environment Add-On. Additional environments can only be added to "paid" subscriptions, and not trials or Internal Use Rights (IUR). If subscriptions are purchased through Volume Licensing, additional environments need to be purchased through a Large Account Reseller (LAR)
-- Existing trials or subscriptions can't be merged onto another environment; instead, data and customizations needed to move over
+Rather than thinking of isolation as being a discrete property, you should think about isolation as being a continuum. You can deploy components of your architecture that are more or less isolated than other components in the same architecture, depending on your requirements. The following diagram demonstrates a continuum of isolation:
 
-## Uses for multi-tenants
+:::image type="content" source="../media/isolated-shared.png" alt-text="Diagram showing the continuum of tenant isolation from fully isolated to fully shared." lightbox="../media/isolated-shared.png":::
 
-Global businesses with different regional or country models can use tenants to account for variations in approach, market size, or
-compliance with legal and regulatory constraints. 
+For more information on architecture considerations for multitentant scenarios, see the following articles:
 
-This example includes a second tenant for Contoso Japan:
-
-![Diagram showing a deployment with multiple tenants.](../media/uses-for-multi-tenants.png)
-
-User accounts, identities, security groups, subscriptions, licenses, and storage can't be shared among tenants. All tenants can have multiple environments associated with each specific tenant. Data isn't shared across environments or tenants.
-
-In a **multi-tenant scenario**, a licensed user associated with a tenant can only access one or more environments mapped to the same tenant. To access another tenant, a user would need a separate license and a unique set of sign-in credentials for that tenant.
-
-For example, suppose User A has an account to access Tenant A. In that case, their license allows them to access any and all environments created within Tenant A -- if allowed by their administrator. If User A needs to access environments within Tenant B, they will need an additional license.
-
-- Each tenant requires Microsoft Power Platform admin(s) with unique sign-in credentials, and each tenant affiliate will manage its tenant separately in the administrator console
-- Multiple environments within a tenant are visible from the interface if the administrator has access
-- Licenses can't be reassigned between tenant enrollments. An enrolled affiliate can use license reduction under one enrollment and add licenses to another enrollment to facilitate this
-- On-premises Active Directory federation can't be established with more than one tenant unless there are top-level domains that need to be federated with different tenants (for example, contoso.com and fabricam.com)
+* [Architectural considerations for a multitenant solution](/azure/architecture/guide/multitenant/considerations/overview)
+* [Tenancy models to consider for a multitenant solution](/azure/architecture/guide/multitenant/considerations/tenancy-models)
 
 ## Manage hybrid environments at scale with Azure Arc
 

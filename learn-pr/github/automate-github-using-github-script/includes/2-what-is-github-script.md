@@ -71,6 +71,7 @@ In this case, there is only one step: the GitHub Script action.
               body: "🎉 You've created this issue comment using GitHub Script!!!"
             })
 ```
+Using GitHub Actions can really help automate the events that take place in your repositories. Imagine a repository visitor opened a new issue containing information about a critical bug. You may want to thank them for bringing that to your attention, however this simple task can become overwhelming as your repository attracts more visitors. By automating an issue comment you could automate the process of thanking visitors every single time.
 
 ### Using actions/github-script@0.8.0
 

@@ -40,7 +40,6 @@ Enrichments are applied per endpoint. If you specify five enrichments to be stam
 
  -  You can add up to 10 enrichments per IoT Hub for those hubs in the standard or basic tier. For IoT Hubs in the free tier, you can add up to 2 enrichments.
  -  In some cases, if you are applying an enrichment with a value set to a tag or property in the device twin, the value will be stamped as a string value. For example, if an enrichment value is set to `$twin.tags.field`, the messages will be stamped with the string "`$twin.tags.field`" rather than the value of that field from the twin. This happens in the following cases:
-    
      -  Your IoT Hub is in the basic tier. Basic tier IoT hubs do not support device twins.
      -  Your IoT Hub is in the standard tier, but the device sending the message has no device twin.
      -  Your IoT Hub is in the standard tier, but the device twin path used for the value of the enrichment does not exist. For example, if the enrichment value is set to `$twin.tags.location`, and the device twin does not have a `location` property under `tags`, the message is stamped with the string "`$twin.tags.location`".

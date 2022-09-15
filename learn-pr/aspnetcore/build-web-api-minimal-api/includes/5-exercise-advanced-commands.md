@@ -4,7 +4,7 @@ Your first project with minimal API was well received. Now, your company wants t
 
 First you need some data. To store and manage data, you'll use an in-memory store.
 
-1. Create the file _Db.cs_ and give it the following content:
+1. Using Visual Studio Code, create a file named *Db.cs* in the project root and give it the following content:
 
    ```csharp
     namespace PizzaStore.DB; 
@@ -55,7 +55,7 @@ First you need some data. To store and manage data, you'll use an in-memory stor
 
       public static void RemovePizza(int id)
       {
-        _pizzas = _pizzas.FindAll(pizza => pizza.Id == id).ToList();
+        _pizzas = _pizzas.FindAll(pizza => pizza.Id != id).ToList();
       }
     }
    ```
@@ -64,7 +64,7 @@ Now that you have your data store, let's have the API use it next.
 
 ## Connect data to routes
 
-To connect your in-memory store to the API:
+To connect your in-memory store to the API, you will:
 
 1. **Add the namespace.** This addition is as simple as adding the proper `using` statement.
 1. **Set up the routes.** Make sure you add all the route mappings that are needed to create, read, update, and delete.
@@ -72,7 +72,7 @@ To connect your in-memory store to the API:
 
 Now, connect data in your API.
 
-1. At the top of the _Program.cs_ file, add the following line of code:
+1. At the top of the *Program.cs* file, add the following line of code:
 
    ```csharp
    using PizzaStore.DB;
@@ -88,7 +88,7 @@ Now, connect data in your API.
    app.MapDelete("/pizzas/{id}", (int id) => PizzaDB.RemovePizza(id));
    ```
 
-1. Run the app by using `dotnet run`:
+1. Make sure you've saved all your changes. In the terminal, run the app:
 
    ```bash
    dotnet run
@@ -99,3 +99,5 @@ Now, connect data in your API.
    You should see the following page rendering:
 
    :::image type="content" source="../media/swagger-crud.png" alt-text="Create, read, update and delete, Swagger":::
+
+That's it! You've fully implemented your minimal API. You can use the Swagger UI to test each of your routes.

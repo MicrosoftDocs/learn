@@ -6,7 +6,7 @@ You must ensure traffic is properly routed through the virtual appliances. You e
 
 ## Skills measured
 
-Configure routing methods and endpoints is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configure routing methods and endpoints is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 

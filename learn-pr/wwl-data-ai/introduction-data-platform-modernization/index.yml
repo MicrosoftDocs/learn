@@ -20,7 +20,7 @@ prerequisites: |
   The following prerequisites should be completed:
   * Understand on-premises SQL Server Databases
   * Understand your current workloads
-iconUrl: /learn/achievements/introduction-to-data-platform-modernization.svg
+iconUrl: /training/achievements/introduction-to-data-platform-modernization.svg
 levels:
 - beginner
 roles:

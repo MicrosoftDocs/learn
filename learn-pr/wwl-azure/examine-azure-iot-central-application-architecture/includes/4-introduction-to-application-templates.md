@@ -173,5 +173,4 @@ Azure IoT Central is an industry agnostic application platform. The following ap
   :::column-end:::
 :::row-end:::
 
-
-For more information about these templates, see the documentation at the following location: [https://docs.microsoft.com/azure/iot-central/core/overview-iot-central-admin](/azure/iot-central/core/overview-iot-central-admin)
+For more information about these templates, see the documentation at the following location: [IoT Central application administration guide](/azure/iot-central/core/overview-iot-central-admin)

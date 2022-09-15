@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-mysql.describe-authentication
+title: Describe authentication
+metadata:
+  title: Describe authentication
+  description: "Describe authentication"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-describe-authentication.md)]

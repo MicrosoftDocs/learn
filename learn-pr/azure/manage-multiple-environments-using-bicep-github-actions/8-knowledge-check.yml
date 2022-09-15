@@ -19,15 +19,15 @@ quiz:
   - content: |
       How can you improve the security of this workflow?
     choices:
-    - content: Use separate secrets for each environment.
+    - content: Use separate workload identities for each environment.
       isCorrect: true
-      explanation: Correct. It's good security practice to use separate secrets and service principals to deploy to each environment.
+      explanation: Correct. It's good security practice to use separate workload identities to deploy to each environment.
     - content: Add a condition to deploy only when the environment name is `Production`.
       isCorrect: false
       explanation: Incorrect. Your deployment workflow needs to deploy to all environments, not just to production.
     - content: Create a new Azure role definition.
       isCorrect: false
-      explanation: Incorrect. You generally don't need to define custom Azure roles for your deployments, and this won't help to resolve the issue that this workflow uses a single credential to access multiple environments.
+      explanation: Incorrect. You generally don't need to define custom Azure roles for your deployments, and this won't help to resolve the issue that this workflow uses a single identity to access multiple environments.
 
   - content: |
       You need to add a new environment named *Integration* to the workflow. Which of these actions should you take as part of adding the new environment?

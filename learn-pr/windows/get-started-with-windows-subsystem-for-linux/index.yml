@@ -23,7 +23,7 @@ abstract: |
 
 prerequisites: |
  - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
-iconUrl: /learn/achievements/get-started-with-wsl.svg
+iconUrl: /training/achievements/get-started-with-wsl.svg
 levels:
 - beginner
 roles:

@@ -6,7 +6,7 @@ Organizations can give users just-in-time (JIT) privileged access to Azure resou
 
  -  Providing **just-in-time** privileged access to Azure AD and Azure resources. IT administrators can pick an activation period between 0.5 and a role's maximum duration (max is 24 hours). They will only receive the privilege for that period of time. After the activation period admins will have to go through the activation process again.
  -  Assigning **time-bound** access to resources by using start and end dates. PIM allows you to set an end time for the role. This is particularly useful in a guest scenario. If your organization has guests that are working for a specific time the role privilege will expire automatically.
- -  Requiring **approval** to activate privileged roles. You can designate one or more approvers. These approvers will receive an email once a request is made. Approval is required to active the privilege.
+ -  Requiring **approval** to activate privileged roles. You can designate one or more approvers. These approvers will receive an email once a request is made. Approval is required to activate the privilege.
  -  Enforcing **Azure Multi-Factor Authentication** (MFA) to activate any role. If your organization already has MFA enabled, PIM will not ask the user to sign in again.
  -  Using **justification** to understand why users activate. This benefits both internal and external auditors understanding why the role was activated. You can also require a service ticket number from whatever service product you are using.
  -  Getting **notifications** when a user is assigned a privilege and when that privilege is activated.

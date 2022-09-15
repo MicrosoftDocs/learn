@@ -1,9 +1,9 @@
-In this module, you will configure a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config), that will be entirely managed and supported by Azure Spring Cloud, to be used by Spring Boot microservices.
+In this module, you'll configure a [Spring Cloud Config Server](https://cloud.spring.io/spring-cloud-config) that's entirely managed and supported by Azure Spring Cloud, to be used by Spring Boot microservices.
 
 This Spring Cloud Config Server will get its configuration data from a Git repository, where Spring Boot configuration files will be stored. Storing configuration files using this mechanism has the following advantages:
 
-- Your application's sensitive parameters (like your database password) will not be checked into your application code.
-- The Git repository storing your configuration can be specifically secured, so that only an operations team has access to it.
+- Your application's sensitive parameters (like your database password) won't be checked into your application code.
+- The Git repository storing your configuration can be secured, so that only an operations team has access to it.
 - As the configuration files are stored in Git, you can tag them or roll back them, making it easy to manage your production environment.
 - It provides a centralized place to store all your configuration data, for all your microservices.
 
@@ -37,7 +37,7 @@ git push
 
 ## Create a GitHub personal token
 
-Azure Spring Cloud can access Git repositories that are public, secured by SSH, or secured using HTTP basic authentication. We will use that last option, as it is easier to create and manage with GitHub.
+Azure Spring Cloud can access Git repositories that are public, secured by SSH, or secured using HTTP basic authentication. We'll use that last option, as it's easier to create and manage with GitHub.
 
 Follow the [GitHub guide to create a personal token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) and save your token. When asked to select scopes, check off the entire "repo" section (as shown below) and nothing else.
 
@@ -57,13 +57,13 @@ Once the token is generated, leave that tab open until the end of this section.
 
     1. Add your branch in `Label`. It defaults to `main` on GitHub, but older repositories or alternate Git providers might still use `master`.
     1. Click on **Authentication** and select **HTTP Basic**.
-    1. The __username__ is your GitHub login name.
-    1. The __password__ is the personal token we created in the previous section.
-1. Click on **Apply** and wait for the operation to succeed.
+    1. The **username** is your GitHub login name.
+    1. The **password** is the personal token we created in the previous section.
 1. Click on **Validate** and wait for the operation to succeed.
+1. Click on **Apply** and wait for the operation to succeed.
 
 ![Spring Cloud config server.](../media/3-config-server.png)
 
 ## Review
 
-We have now created a private configuration repository. We have enabled Azure Spring Cloud to create a configuration server with the configuration files from this repository.
+We've created a private configuration repository. We've also enabled Azure Spring Cloud to create a configuration server with the configuration files from this repository.

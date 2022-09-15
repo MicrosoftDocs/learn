@@ -18,7 +18,7 @@ abstract: |
   - Track incidents using workbooks, playbooks, and hunting techniques
 prerequisites: |
   - None
-iconUrl: /learn/achievements/azure-sentinel.svg
+iconUrl: /training/achievements/azure-sentinel.svg
 levels:
 - intermediate
 roles:

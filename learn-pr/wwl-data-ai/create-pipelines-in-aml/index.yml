@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Knowledge of Python
   - Experience of training models using the Azure Machine Learning SDK
-iconUrl: /learn/achievements/create-pipelines-in-aml-badge.svg
+iconUrl: /training/achievements/create-pipelines-in-aml-badge.svg
 levels:
 - beginner
 roles:

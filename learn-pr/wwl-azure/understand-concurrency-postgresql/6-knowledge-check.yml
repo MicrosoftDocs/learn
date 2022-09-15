@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concurrency-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of Multi-Version Concurrency Control (MVCC)?"
+    choices:
+    - content: "MVCC blocks read access to a table if the table needs to be dropped or truncated."
+      isCorrect: false
+      explanation: "Incorrect. ACCESS EXCLUSIVE lock mode blocks read access to a table if the table needs to be dropped or truncated."
+    - content: "MVCC allows multiple versions of PostgreSQL Flexible Server to access the same underlying database."
+      isCorrect: false
+      explanation: "Incorrect. A database is assigned to a single instance of PostgreSQL Server."
+    - content: "MVCC uses snapshots to prevent one transaction from blocking, or being blocked by, another transaction."
+      isCorrect: true
+      explanation: "Correct. MVCC uses snapshots to prevent one transaction from blocking, or being blocked by, another transaction."
+  - content: "What is the default isolation level in Azure Database for PostgreSQL?"
+    choices:
+    - content: "Read uncommitted."
+      isCorrect: false
+      explanation: "Incorrect. Read uncommitted isn't supported in Azure Database for PostgreSQL."
+    - content: "Read committed."
+      isCorrect: true
+      explanation: "Correct. Read committed is the default isolation level in Azure Database for PostgreSQL."
+    - content: "Repeatable read."
+      isCorrect: false
+      explanation: "Incorrect. To use Repeatable read, you must specify it with the TRANSACTION ISOLATION LEVEL command within a transaction."
+  - content: "Transactions with what lock type are blocked when you run a SELECT statement?"
+    choices:
+    - content: "No other lock types are blocked by SELECT statements."
+      isCorrect: false
+      explanation: "Incorrect. SELECT statements block one lock type."
+    - content: "ACCESS SHARE."
+      isCorrect: false
+      explanation: "Incorrect. SELECT statements take out ACCESS SHARE locks, they don't block other transactions with an ACCESS SHARE LOCK."
+    - content: "ACCESS EXCLUSIVE."
+      isCorrect: true
+      explanation: "Correct. SELECT statements take out ACCESS SHARE locks, which block transactions with an ACCESS EXCLUSIVE lock."

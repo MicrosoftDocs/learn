@@ -14,7 +14,7 @@ Azure Database for PostgreSQL is available in three deployment modes, with each 
 
 **Single Server** deployments are suitable for most applications that don’t require high levels of customization or low latency performance across multiple regions. Single server deployments can be scaled down to only cost a few dollars per month. Workloads could include servers used for development and enterprise applications.
 
-**Flexible Server** is an option that is in public preview. Designed to provide more control over database management and configuration settings, Flexible Servers provide better cost optimization controls. Ideal for workloads that don't need full compute capacity continuously.
+**Flexible server** is suitable for production workloads that require zone resilient HA, predictable performance, maximum control, custom maintenance window, cost optimization controls and simplified developer experience. Ideal for workloads that don't need full compute capacity continuously.
 
 :::row:::
 :::column span="3":::

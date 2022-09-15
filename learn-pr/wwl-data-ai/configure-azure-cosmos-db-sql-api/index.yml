@@ -16,7 +16,7 @@ abstract: |
   - Migrate between standard and autoscale throughput
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-database-container.svg
+iconUrl: /training/achievements/azure-cosmos-database-container.svg
 levels:
 - intermediate
 roles:

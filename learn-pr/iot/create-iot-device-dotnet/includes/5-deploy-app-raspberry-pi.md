@@ -1,7 +1,7 @@
 You've constructed the prototype device and written the console app that drives it. Now it's time to deploy your app to the device!
 
 > [!IMPORTANT]
-> Ensure your Raspberry Pi is configured as described in the introduction unit. The SSH service must be enabled for secure shell access from your development machine. The I2C service must be enabled to allow your code to access the I2C bus. Ensure your Raspberry Pi is connected to your network via WiFi or Ethernet.
+> Ensure your Raspberry Pi is configured as described in the introduction unit. The SSH service must be enabled for secure shell access from your development machine. The `I2C` service must be enabled to allow your code to access the I<sup>2</sup>C bus. Ensure your Raspberry Pi is connected to your network via WiFi or Ethernet.
 >
 > For more information about Raspberry Pi configuration, see the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md). 
 
@@ -46,23 +46,26 @@ Complete the following steps **in the original terminal window on your developme
 1. Publish the app as a self-contained app.
 
     ```dotnetcli
-    dotnet publish -r linux-arm
+    dotnet publish --runtime linux-arm --self-contained
     ```
 
-    The preceding command creates a directory with the files required for a self-contained deployment. Take note of the location of the *publish* folder.
+    > [!IMPORTANT]
+    > If you're using a 64-bit version of Raspberry Pi OS, use `--runtime linux-arm64` in the command above to target the correct OS.
+
+    The preceding command creates a directory with the files required for a self-contained deployment for the `linux-arm` runtime. Take note of the location of the *publish* folder.
 
     :::image type="content" source="../media/dotnet-publish.png" alt-text="A screenshot of a terminal session showing the output from dotnet publish." lightbox="../media/dotnet-publish.png":::
 
 1. Copy the files from the *publish* folder to the deployment location on the Raspberry Pi.
 
     ```bash
-    scp ./bin/Debug/net5.0/linux-arm/publish/* pi@raspberrypi:~/cheesecave.net
+    scp ./bin/Debug/net6.0/linux-arm/publish/* pi@raspberrypi:~/cheesecave.net
     ```
 
     In the preceding command:
 
     - `scp` is the secure file copy command included with OpenSSH.
-    - `./bin/Debug/net5.0/linux-arm/publish/*` specifies the files to be copied. In this case, every file in the `./bin/Debug/net5.0/linux-arm/publish/` directory is included. Enter the correct path if you're using a different version of the .NET SDK, as the `/net5.0/` segment will be different.
+    - `./bin/Debug/net6.0/linux-arm/publish/*` specifies the files to be copied. In this case, every file in the `./bin/Debug/net6.0/linux-arm/publish/` directory is included. Enter the correct path if you're using a different version of the .NET SDK or are targeting `linux-arm64`, as the path will be different.
     - `pi@raspberrypi:~/cheesecave.net` is the destination.
         - `pi@raspberrypi` is the username and host name, as before.
         - `~/cheesecave.net` is the location on the Raspberry Pi where the files will be copied to.

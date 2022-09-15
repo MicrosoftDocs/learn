@@ -6,11 +6,11 @@ The following challenge will force you to understand the implications of casting
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor then select the `del` or `backspace` key to delete it.
 
 ### Step 2: Write code in the .NET Editor to produce the desired output
 
-Start with the following code.
+Start with the following code:
 
 ```csharp-interactive
 int value1 = 12;
@@ -29,7 +29,7 @@ Console.WriteLine($"Divide value3 by value1, display the result as a float: {res
 
 Replace the code comments with your own code to solve the challenge.
 
-When you run your code, you should see the following output:
+When you run your code, you should get the following output:
 
 ```output
 Divide value1 by value2, display the result as an int: 2

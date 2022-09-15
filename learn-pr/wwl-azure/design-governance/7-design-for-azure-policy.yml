@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-governance.design-for-azure-policy
-title: Design for Azure policy
+title: Design for Azure Policy
 metadata:
-  title: Design for Azure policy
-  description: "Design for Azure policy"
-  ms.date: 05/26/2022
+  title: Design for Azure Policy
+  description: "Design for Azure Policy"
+  ms.date: 08/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/7-design-for-azure-policy.md)]

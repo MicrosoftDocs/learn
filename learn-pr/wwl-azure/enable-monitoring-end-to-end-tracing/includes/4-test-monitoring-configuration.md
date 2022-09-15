@@ -14,7 +14,7 @@ To analyze monitoring data, do the following procedure.
 
 1.  In your browser, navigate to the Azure portal and your resource group.
 2.  Select the **Application Insights** resource in the resource group. On the overview page you'll see data about **Failed requests, Server response time, Server requests,** and **Availability*.***
-3.  From **Investigate** section, select **Application map** to display information on the applications running in your Spring Cloud Service and their dependencies.
+3.  From **Investigate** section, select **Application map** to display information on the applications running in your Spring Apps Service and their dependencies.
 4.  Select the **api-gateway** service to display details about the application, such as **slowest requests** and **failed dependencies**.
 5.  Select **Investigate performance** to display information data on performance.
 6.  Mouse over the graph to select a specific time period.
@@ -25,7 +25,7 @@ To analyze monitoring data, do the following procedure.
     
     
      -  **\[Test name\]**: Name for your test.
-     -  **\[URL\]**: Fill out the URL to your api-gateway.
+     -  **\[URL\]**: Fill out the URL to your `api-gateway`.
      -  Select default settings for the remainder of the configuration.
 
 11. Select the **`...`** next to the newly created availability test, and select the **Open Rules (Alerts)** page.

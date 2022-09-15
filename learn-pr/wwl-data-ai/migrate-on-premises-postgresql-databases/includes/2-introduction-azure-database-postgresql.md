@@ -35,7 +35,7 @@ You can fine-tune the number of processor cores and storage that you require. Yo
 >
 > If you only change the storage size of backup options, there's no interruption in service.
 
-The pricing tier and the processing resources allocated determine the maximum number of concurrent connections the service will support. For example, if you select the General Purpose pricing tier and allocate 64 virtual cores, the service supports 1900 concurrent connections. The Basic Tier, with two virtual cores, handles up to 100 concurrent connections. Azure itself requires five of these connections to monitor the server. If you exceed the number of available connections, clients will receive the error **FATAL: sorry, too many clients already**. See [Limits in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/azure/postgresql/concepts-limits#maximum-connections) for more information.
+The pricing tier and the processing resources allocated determine the maximum number of concurrent connections the service will support. For example, if you select the General Purpose pricing tier and allocate 64 virtual cores, the service supports 1900 concurrent connections. The Basic Tier, with two virtual cores, handles up to 100 concurrent connections. Azure itself requires five of these connections to monitor the server. If you exceed the number of available connections, clients will receive the error **FATAL: sorry, too many clients already**. See [Limits in Azure Database for PostgreSQL - Single Server](/azure/postgresql/concepts-limits#maximum-connections) for more information.
 
 Prices can change. Visit the [Azure Database for PostgreSQL pricing](https://azure.microsoft.com/pricing/details/postgresql/server/) page for the latest information.
 
@@ -148,7 +148,7 @@ If you've configured read-only replicas, you must add a firewall rule to each on
 
 ### Client connection libraries
 
-If you're writing your own client applications, you must use the appropriate database driver to connect to a PostgreSQL database. Many of these libraries are programming-language dependent. They are maintained by independent third parties. Azure Database for PostgreSQL supports client libraries for Python, PHP, Node.js, Java, Ruby, Go, C# (.NET), ODBC, C, and C++. You'll find a list of the currently supported libraries online at [Connection libraries for Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/azure/postgresql/concepts-connection-libraries).
+If you're writing your own client applications, you must use the appropriate database driver to connect to a PostgreSQL database. Many of these libraries are programming-language dependent. They are maintained by independent third parties. Azure Database for PostgreSQL supports client libraries for Python, PHP, Node.js, Java, Ruby, Go, C# (.NET), ODBC, C, and C++. You'll find a list of the currently supported libraries online at [Connection libraries for Azure Database for PostgreSQL - Single Server](/azure/postgresql/concepts-connection-libraries).
 
 ### Client retry logic
 

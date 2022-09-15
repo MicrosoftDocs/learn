@@ -17,7 +17,7 @@ abstract: |
   - Explore certificate management with Azure Key Vault
   - Configure a Hardware Security Module Key-generation solution
 prerequisites: None
-iconUrl: /learn/achievements/configure-and-manage-azure-key-vault.svg
+iconUrl: /training/achievements/configure-and-manage-azure-key-vault.svg
 levels:
 - beginner
 roles:

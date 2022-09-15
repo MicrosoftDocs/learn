@@ -6,14 +6,13 @@ enterprise estate and other users with access to business-critical
 assets.
 
 Attackers frequently exploit weaknesses in privileged access security
-during [human operated ransomware
-attacks](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) and
+during [human operated ransomware attacks](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/) and
 targeted data theft. Privileged access accounts and workstations are so
 attractive to attackers because these targets allow them to rapidly gain
 broad access to the business assets in the enterprise, often resulting
 in a rapid and significant business impact.
 
-### Privileged Access should be the Top Security Priority
+## Privileged Access should be the top security priority
 
 Any compromise of these users has a high likelihood of a significant
 negative impact to the organization. Privileged users have access to
@@ -50,7 +49,7 @@ impact and likelihood using privileged access:
     target organization's vulnerability to the attacks and the
     attacker's monetization/incentive models.
 
-#### Building your privileged access strategy
+## Building your privileged access strategy
 
 A privileged access strategy is a journey that must be composed of quick
 wins and incremental progress. Each step in a privileged access strategy
@@ -58,7 +57,7 @@ must take you closer to "seal" out persistent and flexible attackers
 from privileged access, who are like water trying to seep into
 environments through any available weakness.
 
-#### Holistic practical strategy
+### Holistic practical strategy
 
 Reducing the risk from privileged access requires a thoughtful,
 holistic, and prioritized combination of risk mitigations spanning
@@ -85,8 +84,9 @@ Securing Privileged Access has two simple goals:
 * Strictly limit the ability to perform privileged actions to a few authorized pathways
 * Protect and closely monitor those pathways
 
-There are two types of pathways to accessing the systems, **user
-access** (to use the capability) and **privileged access** (to manage
+:::image type="content" source="../media/two-paths-protected-known-entry-points.png" alt-text="Diagram showing two access paths: one for normal user activities and one for privileged activities." lightbox="../media/two-paths-protected-known-entry-points.png":::
+
+There are two types of pathways to accessing the systems, **user access** (to use the capability) and **privileged access** (to manage
 the capability or access a sensitive capability):
 
 -   **User Access** - the lighter blue path on the bottom of the diagram
@@ -136,7 +136,7 @@ The privileged identity strategy is enabled by the Rapid modernization plan (RAM
     1. Ensure the application consent process disables the end user's consent to Azure AD applications. Enforcing the process establishes a centralized consent process to maintain centralized visibility and control of the applications that have access to data.
     1. Clean up accounts and sign-in risks by utilizing Azure AD Identity Protection and remediate any discovered risks. Ensure to create a process that monitors and manages user and sign-in risk.
 
-#### Execute critical strategic initiatives for privileged activity management
+### Execute critical strategic initiatives for privileged activity management
 
 The final step of building the recommended strategy for privileged activities is to execute strategic initiatives, such as:
 

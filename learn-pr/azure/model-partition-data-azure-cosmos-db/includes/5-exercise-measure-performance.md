@@ -2,7 +2,7 @@ In this exercise, you'll measure the difference for customer entities when you m
 
 ## Set up the environment
 
-In Azure Cloud Shell, copy and paste the following commands. 
+In Azure Cloud Shell, copy and paste the following commands.
 
 ```bash
 git clone https://github.com/MicrosoftDocs/mslearn-model-partition-data-azure-cosmos-db.git
@@ -17,7 +17,9 @@ These commands:
 
 1. Clone a GitHub repository.
 1. Run a script that creates a new Azure Cosmos DB account.
-1. Build and start the app that you use to populate the database and complete the exercises. 
+1. Build and start the app that you use to populate the database and complete the exercises.
+
+After pasting the commands, be sure to press <kbd>Enter</kbd> so that the final command is executed and the data is loaded.
 
 This process should take less than 10 minutes to complete.
 

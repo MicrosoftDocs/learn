@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enrich-search-index-using-language-studio.enrich-cognitive-search-index-custom-classes
+title: Enrich a cognitive search index with custom classes and Language Studio
+metadata:
+  title: Enrich a cognitive search index with custom classes and Language Studio
+  description: "Enrich a cognitive search index with custom classes and Language Studio"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/03-enrich-cognitive-search-index-custom-classes.md)]

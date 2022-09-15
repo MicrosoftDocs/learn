@@ -33,12 +33,12 @@ kafka-topics --create \
     --partitions 1
 ```
 
-The following command will start a producer so you can write three records to the inventory topic.
+The following command will start a producer so you can write three records to the prodlistener topic.
 
 ```bash
 kafka-console-producer \
     --broker-list localhost:9092 \
-    --topic hotels
+    --topic prodlistener
 ```
 
 And in the console, you can then enter these three records to the topic. Once this is done, these records will be committed to the Azure Cosmos DB SQL API container mapped to the topic (**products**).

@@ -5,11 +5,11 @@ Microsoft has an enduring commitment to protect data privacy, not as an aftertho
 
 Consider also using Azure Policy to enforce your privacy requirements. Azure Policy is deeply integrated into Azure Resource Manager, which helps your organization to enforce policy across resources. With Azure Policy you can define policies at an organizational level to manage resources and prevent developers from accidentally allocating resources in violation of those policies. You can use Azure Policy in a wide range of compliance scenarios, such as ensuring that your data is encrypted or remains in a specific region to comply with specific security regulations.
 
-## Azure's Secure Foundation
+## Azure's secure foundation
 
 When you build on Azure's secure foundation, you accelerate your move to the cloud by achieving compliance more readily, allowing you to enable privacy-sensitive cloud scenarios, such as financial and health service, with confidence. Different organizations will need different levels of privacy requirements based on the industry and compliance standards that are required to follow. Azure provides customers with strong data security, both by default on its own infrastructure, as well as for customer-enabled services.
 
-## State of the Data
+## State of the data
 
 When designing your solution to fulfill the privacy requirements, take into consideration the state of the data at a certain point of time. For example, for some scenarios it may not be enough to protect the data only when the data is at rest, you may also need to protect it while in-transit. For example, the PCI DSS requirement 4 is about *Encrypt transmission of cardholder data across open, public networks.* To fulfill this requirement your solution must encrypt data in-transit. Below you have some examples of ta protection according to the data stage:
 
@@ -20,19 +20,9 @@ When designing your solution to fulfill the privacy requirements, take into cons
 
 Microsoft Azure Services each support one or more of the encryptions at rest models. For some services, however, one or more of the encryption models may not be applicable. For services that support customer-managed key scenarios, they may support only a subset of the key types that Azure Key Vault supports for key encryption keys. Additionally, services may release support for these scenarios and key types at different schedules. This section describes the encryption at rest support at the time of this writing for each of the major Azure data storage services.
 
-## Azure disk encryption
-
-Any customer using Azure Infrastructure as a Service (IaaS) features can achieve encryption at rest for their IaaS VMs and disks through Azure Disk Encryption. For more information on Azure Disk encryption, see the Azure Disk Encryption documentation.
-
-## Azure storage
-
-All Azure Storage services (Blob storage, Queue storage, Table storage, and Azure Files) support server-side encryption at rest; some services additionally support customer-managed keys and client-side encryption.
-
-## Azure SQL Database
-
-Azure SQL Database currently supports encryption at rest for Microsoft-managed service side and client-side encryption scenarios. Support for server encryption is currently provided through the SQL feature called Transparent Data Encryption. Once an Azure SQL Database customer enables TDE key are automatically created and managed for them. Encryption at rest can be enabled at the database and server levels. As of June 2017, Transparent Data Encryption (TDE) is enabled by default on newly created databases. Azure SQL Database supports RSA 2048-bit customer-managed keys in Azure Key Vault. For more information, see Transparent Data Encryption with Bring Your Own Key support for Azure SQL Database and Data Warehouse.
-
-Client-side encryption of Azure SQL Database data is supported through the Always Encrypted feature. Always Encrypted uses a key that is created and stored by the client. Customers can store the master key in a Windows certificate store, Azure Key Vault, or a local Hardware Security Module. Using SQL Server Management Studio, SQL users choose what key they'd like to use to encrypt which column.
+* **Azure disk encryption** - Any customer using Azure Infrastructure as a Service (IaaS) features can achieve encryption at rest for their IaaS VMs and disks through Azure Disk Encryption. For more information on Azure Disk encryption, see the Azure Disk Encryption documentation.
+* **Azure storage** - All Azure Storage services (Blob storage, Queue storage, Table storage, and Azure Files) support server-side encryption at rest; some services additionally support customer-managed keys and client-side encryption.
+* **Azure SQL Database** - Azure SQL Database currently supports encryption at rest for Microsoft-managed service side and client-side encryption scenarios. Support for server encryption is currently provided through the SQL feature called Transparent Data Encryption. Once an Azure SQL Database customer enables TDE key are automatically created and managed for them. Encryption at rest can be enabled at the database and server levels. As of June 2017, Transparent Data Encryption (TDE) is enabled by default on newly created databases. Azure SQL Database supports RSA 2048-bit customer-managed keys in Azure Key Vault. For more information, see Transparent Data Encryption with Bring Your Own Key support for Azure SQL Database and Data Warehouse. Client-side encryption of Azure SQL Database data is supported through the Always Encrypted feature. Always Encrypted uses a key that is created and stored by the client. Customers can store the master key in a Windows certificate store, Azure Key Vault, or a local Hardware Security Module. Using SQL Server Management Studio, SQL users choose what key they'd like to use to encrypt which column.
 
 ## Data classification
 
@@ -40,9 +30,9 @@ The security controls that will be applied to the data will vary also according 
 
 One solution for data classification in Azure is Microsoft Purview. Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and Software as a Service (SaaS) data. Create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Enable data curators to manage and secure your data estate. Empower data consumers to find valuable, trustworthy data. Microsoft Purview provides a common platform for data producers and consumers to access common data management functions like a data catalog, data insights, and a data map. This common platform integrates with on-premises, the cloud as well as software-as-a-service applications. It also integrates with cloud data services such as Azure Synapse Analytics, SQL Server, Power BI, Azure SQL and Microsoft 365.
 
-![Diagram showing the capabilities of Microsoft Purview.](../media/microsoft-purview.png)
+:::image type="content" source="../media/microsoft-purview.png" alt-text="Diagram showing the capabilities of Microsoft Purview.":::
 
-## Identity Protection
+## Identity protection
 
 One important aspect of privacy is to ensure that you have a system to protect the user's identity. A compromised identity could lead to data compromise and directly affect the privacy requirements for your project. Consider using Azure AD Identity Protection to enhance your identity protection strategy to ensure you're fulfilling the privacy requirements.
 

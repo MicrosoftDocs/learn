@@ -91,8 +91,6 @@ Get-AzSqlDatabaseDataMaskingRule [-SchemaName <String>] [-TableName <String>] [-
 
 What the **Get-AzSqlDatabaseDataMaskingRule** cmdlet does it getting either a specific data masking rule or all of the data masking rules for an Azure SQL database.
 
-To use the cmdlet in PowerShell, you'd have to specify the following parameters to identify the database:
-
 To use this cmdlet in PowerShell, you'd have to specify the following parameters to identify the database:
 
 * *ResourceGroupName*: name of the resource group that you deployed the database in

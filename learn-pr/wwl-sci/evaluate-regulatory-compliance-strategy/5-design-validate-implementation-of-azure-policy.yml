@@ -4,13 +4,13 @@ title: Design and validate implementation of Azure Policy
 metadata:
   title: Design and validate implementation of Azure Policy
   description: "Design and validate implementation of Azure Policy"
-  ms.date: 06/08/2022
+  ms.date: 07/27/2022
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/5-design-validate-implementation-of-azure-policy.md)]

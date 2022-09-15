@@ -30,7 +30,7 @@ To counteract brute-force attacks, you can take multiple measures such as:
 - Disable the public IP address and using one of these connection methods:
   - Use a point-to-site virtual private network (VPN)
   - Create a site-to-site VPN
-  - Use Azure ExpressRoute to create secure links from your on-premise network to Azure
+  - Use Azure ExpressRoute to create secure links from your on-premises network to Azure
 
 - Require two-factor authentication
 - Increase password length and complexity
@@ -40,7 +40,7 @@ To counteract brute-force attacks, you can take multiple measures such as:
 
 This final approach is what Microsoft Defender for Cloud implements on your behalf. Management ports such as Remote Desktop and SSH only need to be open while you're connected to the VM. For example, to perform management or maintenance tasks. The enhanced security features in Microsoft Defender for Cloud support **Just-in-time (JIT) virtual machine (VM) access**. When JIT access is enabled, Defender for Cloud uses network security group (NSG) rules to restrict access to management ports when they aren't in use so they can't be targeted by attackers.
 
-## Enable JIT VM access
+## Create a policy to enable JIT VM access
 
 When you enable JIT VM access for your VMs, you can create a policy that determines:
 

@@ -5,7 +5,7 @@ metadata:
   title: Knowledge check
   description: "Knowledge check"
   ms.date: 06/08/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Azure Logic Apps could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
       isCorrect: true
-      explanation: "Azure Logic Apps could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
+      explanation: "Yes. This tool can be used to evaluate security workflows in an Azure environment."
     - content: "Azure Arc could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
       isCorrect: false
-      explanation: "Azure Arc could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
-    - content: "Azure BluePrint could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
+      explanation: "This tool cannot be used to evaluate security workflows in an Azure environment."
+    - content: "Azure Monitor could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
       isCorrect: false
-      explanation: "Azure BluePrint could be used to evaluate and run automated workflows that integrate apps, data, services, and systems."
+      explanation: "This tool cannot be used to evaluate security workflows in an Azure environment."
   - content: "How can Tailwind Traders evaluate and use Threat Intelligence to secure their Azure environment?"
     choices:
     - content: "Using Microsoft Sentinel, you can evaluate threat indicators to help detect malicious activity observed in an Azure environment and provide context to security investigators to help inform response decisions."
       isCorrect: true
-      explanation: "Using Microsoft Sentinel, you can evaluate threat indicators to help detect malicious activity observed in an Azure environment and provide context to security investigators to help inform response decisions."
+      explanation: "This tool can be used to evaluate and use Threat Intelligence to secure an Azure environment."
     - content: "Using standardized logs, you can monitor for threat indicators in an Azure environment."
       isCorrect: false
-      explanation: "Using standardized logs, you can monitor for threat indicators in an Azure environment."
+      explanation: "This tool cannot be used to evaluate and use Threat Intelligence to secure an Azure environment."
     - content: "Using Unified Operations, you can evaluate threat indicators in an Azure environment."
       isCorrect: false
-      explanation: "Using Unified Operations, you can evaluate threat indicators in an Azure environment."
+      explanation: "This tool cannot be used to evaluate and use Threat Intelligence to secure an Azure environment."
   - content: "What are some Azure logs Tailwind Traders can monitor for a security incident?"
     choices:
     - content: "You can use Activity Logs, Azure AD Reporting, and Network Security Group flow logs to monitor security incidents."
       isCorrect: true
-      explanation: "You can use Activity Logs, Azure AD Reporting, and Network Security Group flow logs to monitor security incidents."
+      explanation: "This solution can be used for monitoring a security incident."
     - content: "You can monitor storage services for performance metrics."
       isCorrect: false
-      explanation: "You can monitor storage services for performance metrics."
+      explanation: "This solution cannot be used for monitoring a security incident."
     - content: "You can monitor Azure Network watcher to monitor diagnostics conditions."
       isCorrect: false
-      explanation: "You can monitor Azure Network watcher to monitor diagnostics conditions."
+      explanation: "This solution cannot be used for monitoring a security incident."

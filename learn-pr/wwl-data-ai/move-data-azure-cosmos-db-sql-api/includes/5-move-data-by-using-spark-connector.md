@@ -1,4 +1,4 @@
-With **Azure Synapse Analytics** and **Azure Synapse Link** for **Azure Cosmos DB**, you can create a cloud-native hybrid transactional and analytical processing (HTAP) to run analytics over your data in Azure Cosmos DB SQL API. This connection makes integration over your data pipeline on both ends of your data world, Azure Cosmos DB and Azure Synapse Analytics.
+With **Azure Synapse Analytics** and **Azure Synapse Link** for **Azure Cosmos DB**, you can create a cloud-native hybrid transactional and analytical processing (HTAP) to run analytics over your data in Azure Cosmos DB SQL API. This connection enables integration over your data pipeline on both ends of your data world, Azure Cosmos DB and Azure Synapse Analytics.
 
 ## Setup
 

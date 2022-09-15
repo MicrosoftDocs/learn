@@ -5,9 +5,9 @@ The term AI tends to be thrown around a lot. Artificial Intelligence (AI), machi
 
 ![Diagram displaying the relationship between deep learning which is a subset of machine learning which is a subset of AI.](..\images\3-introduction-to-ai-technology-1.png)
 
-* Artificial Intelligence (AI) is an ability of computer program or machine exhibited or mimic human-like behavior (for example, visual senses, speech recognition, decision-making, natural language understanding, and so on).
+* Artificial Intelligence (AI) is an ability of a computer program or machine to mimic human-like behavior (for example, visual senses, speech recognition, decision-making, natural language understanding, and so on).
 
-* Machine learning is a subset of AI. Machine learning is a technique where a machine sifts through numerous of data to find patterns over time. Machine learning uses algorithms that train a machine how to learn patterns based on differentiating features about the data. The more the training data, the more accurate the predictions. Here are some examples:
+* Machine learning is a subset of AI. Machine learning is a technique where a machine sifts through numerous amounts of data to find patterns over time. Machine learning uses algorithms that train a machine to learn patterns based on differentiating features about the data. The more training data, the more accurate the predictions. Here are some examples:
   * Email spam detection. Machine learning could look at patterns where email has words like "free" or "guarantee". Email address domain is on a blocked-list. A link displayed in text doesn't match the URL behind it.
   * Credit card fraud detection. Machine learning could look at patterns like the spending in a zip code the owner doesn't usually visit; buying a big-ticket item; or a sudden shopping spree.
 * Deep learning is a subset of machine learning. Deep learning is imitating how a human brain processes information, as a connected artificial neural network. Unlike machine learning, deep learning can discover complex patterns and differentiating features about the data on its own. It normally works with unstructured data like images, text, and audio. That’s why it requires enormous amounts of data for better analysis and massive computing power for speed. For instance:

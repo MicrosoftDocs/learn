@@ -1,6 +1,6 @@
 **"DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."** \- According to Donovan Brown in [What is DevOps?](https://www.donovanbrown.com/post/what-is-devops)
 
-The DevOps learning paths will help you prepare for a DevOps journey. You'll learn the main characteristics of the DevOps process, tools, and people involved during the lifecycle. Also, it prepares you for the Microsoft DevOps Solution certification exam. You'll see other content to ensure you have a complete picture of DevOps. The module's content consists of graphics, reference links, module review questions, and optional hands-on labs.
+The DevOps learning paths will help you prepare for a DevOps journey. You'll learn the main characteristics of the DevOps process, tools, and people involved during the lifecycle. Also, it prepares you for the Microsoft DevOps Solution certification exam. You'll see other content to ensure you have a complete picture of DevOps. The module's content includes graphics, reference links, module review questions, and optional hands-on labs.
 
 You'll learn:
 
@@ -21,11 +21,11 @@ Plan before your act. This module will help you understand what DevOps is and ho
 
 ## What is the DevOps transformation journey?
 
-The DevOps transformation journey is a series of 10 learning paths. It familiarizes you with Azure DevOps and GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.
+The DevOps transformation journey is a series of 9 learning paths. It familiarizes you with Azure DevOps and GitHub. Also, learn its many services, features, and integration with tools to support your DevOps process.
 
 ### Why should I take the DevOps learning path?
 
-People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [AZ-400 - Designing and Implementing Microsoft DevOps Solutions](/learn/certifications/exams/az-400) certification exam.
+People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [AZ-400 - Designing and Implementing Microsoft DevOps Solutions](/certifications/exams/az-400) certification exam.
 
 The certification exam is for DevOps professionals. Combine people, processes, and technologies to continuously deliver valuable products and services that meet end-user needs and business goals. DevOps professionals streamline delivery by optimizing practices, improving communications and collaboration, and creating automation.
 
@@ -35,57 +35,15 @@ Exam candidates must be proficient with Agile practices. They must be familiar w
 
 DevOps professionals must design and implement DevOps practices for version control, compliance, infrastructure as code, configuration management, build, release, and testing-using Azure technologies.
 
-There are seven domain areas.
+There are five domain areas.
 
-:::row:::
-  :::column:::
-    **AZ-400 Domain Area**
-  :::column-end:::
-  :::column:::
-    **Weight**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Configure Processes and Communications.
-  :::column-end:::
-  :::column:::
-    13%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Design and Implement Source Control.
-  :::column-end:::
-  :::column:::
-    19%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Design and Implement Build and Release Pipelines.
-  :::column-end:::
-  :::column:::
-    42%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Develop a Security and Compliance Plan.
-  :::column-end:::
-  :::column:::
-    14%
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Implement an Instrumentation Strategy.
-  :::column-end:::
-  :::column:::
-    13%
-  :::column-end:::
-:::row-end:::
-
+| **AZ-400 Domain Area**                            | **Weight** |
+| ------------------------------------------------- | ---------- |
+| Configure Processes and Communications.           | 13%        |
+| Design and Implement Source Control.              | 19%        |
+| Design and Implement Build and Release Pipelines. | 42%        |
+| Develop a Security and Compliance Plan.           | 14%        |
+| Implement an Instrumentation Strategy.            | 13%        |
 
 ## Learning objectives
 
@@ -104,24 +62,24 @@ After completing this module, students and professionals can:
 
 Successful learners will have prior knowledge and understanding of:
 
- -  Cloud computing concepts, including an understanding of PaaS, SaaS, and IaaS implementations.
+ -  Cloud computing concepts include understanding of PaaS, SaaS, and IaaS implementations.
  -  Azure administration and Azure development with proven expertise in at least one of these areas.
  -  Version control, Agile software development, and core software development principles. It would be helpful to have experience in an organization that delivers software.
 
 If you're new to Azure and cloud computing, consider one of the following resources:
 
- -  Free online: [Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/).
- -  Instructor-led course: [AZ-900: Azure Fundamentals](/learn/certifications/courses/az-900t01).
+ -  Free online: [Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/).
+ -  Instructor-led course: [AZ-900: Azure Fundamentals](/certifications/courses/az-900t01).
 
 If you're new to Azure Administration, consider taking:
 
- -  Free online: [Prerequisites for Azure Administrators](/learn/paths/az-104-administrator-prerequisites/).
- -  Instructor-led courses: [AZ-104: Microsoft Azure Administrator](/learn/certifications/courses/az-104t00) and [AZ-010: Azure Administration for AWS SysOps](/learn/certifications/courses/az-010t00).
+ -  Free online: [Prerequisites for Azure Administrators](/training/paths/az-104-administrator-prerequisites/).
+ -  Instructor-led courses: [AZ-104: Microsoft Azure Administrator](/certifications/courses/az-104t00) and [AZ-010: Azure Administration for AWS SysOps](/certifications/courses/az-010t00).
 
 If you're new to Azure Developer, consider taking:
 
- -  Free online: [Create serverless applications](/learn/paths/create-serverless-applications/).
- -  Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/learn/certifications/courses/az-204t00) and [AZ-020: Microsoft Azure Solutions for AWS Developers](/learn/certifications/courses/az-020t00).
+ -  Free online: [Create serverless applications](/training/paths/create-serverless-applications/).
+ -  Instructor-led courses: [AZ-204: Developing Solutions for Microsoft Azure](/certifications/courses/az-204t00) and [AZ-020: Microsoft Azure Solutions for AWS Developers](/certifications/courses/az-020t00).
 
 You need to create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see:
 

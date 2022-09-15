@@ -3,7 +3,7 @@ uid: learn.wwl.apply-manage-sensitivity-labels
 metadata:
   title: Apply and manage sensitivity labels
   description: "Apply and manage sensitivity labels"
-  ms.date: 11/11/2021
+  ms.date: 06/17/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
   - Apply protections and restrictions to files.
 prerequisites: |
   Fundamentals knowledge of information governance in Microsoft 365.
-iconUrl: /learn/achievements/implement-and-manage-sensitivity-labels.svg
+iconUrl: /training/achievements/implement-and-manage-sensitivity-labels.svg
 levels:
 - intermediate
 roles:

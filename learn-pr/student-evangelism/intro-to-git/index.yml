@@ -19,7 +19,7 @@ abstract:  |
   - Make and track changes to code by using Git
   - Use Git to recover from simple mistakes
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/introduction-to-git-badge.svg
+iconUrl: /training/achievements/student-evangelism/introduction-to-git-badge.svg
 levels:
 - beginner
 roles:

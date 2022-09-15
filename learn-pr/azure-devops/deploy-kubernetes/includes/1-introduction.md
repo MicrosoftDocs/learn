@@ -24,7 +24,7 @@ The modules in this learning path form a progression. Information in one module 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend that you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Automate Docker container deployments with Azure Pipelines](/learn/modules/deploy-docker?azure-portal=true) leaves off.
+We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Automate Docker container deployments with Azure Pipelines](/training/modules/deploy-docker?azure-portal=true) leaves off.
 
 [!include[](../../shared/includes/project-details-note.md)]
 

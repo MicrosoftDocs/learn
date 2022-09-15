@@ -6,7 +6,7 @@ A source group is a set of model tables that relate to a data source. There are 
 - **DirectQuery** – Represents all DirectQuery storage mode tables that relate to a specific data source.
 
 > [!NOTE]
-> An import model and a DirectQuery model only comprise a single source group. When there’s more than one source group, the model framework is known as a composite model. Composite models are described in [Unit 5](/learn/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model).
+> An import model and a DirectQuery model only comprise a single source group. When there’s more than one source group, the model framework is known as a composite model. Composite models are described in [Unit 5](/training/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model).
 
 ## DirectQuery model benefits
 
@@ -34,7 +34,7 @@ Typically, DirectQuery mode supports relational database sources. That’s becau
 
 However, there’s one powerful exception. You can connect to a Power BI dataset (or Azure Analysis Services model) and convert it to a DirectQuery local model. A local model is a relative term that describes a model’s relationship to another model. In this case, the original dataset is a remote model, and the new dataset is the local model. These models are chained, which is term used to describe related models. You can chain up to three models in this way.
 
-This capability to chain models supports the potential to personalize and/or extend a remote model. The simplest thing you can do is rename objects, like tables or columns, or add measures to the local model. You can also extend the model with calculated columns or calculated tables, or add new import or DirectQuery tables. However, these extensions result in the creation of new source groups, which means the model becomes a composite model. That scenario is described in [Unit 5](/learn/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model).
+This capability to chain models supports the potential to personalize and/or extend a remote model. The simplest thing you can do is rename objects, like tables or columns, or add measures to the local model. You can also extend the model with calculated columns or calculated tables, or add new import or DirectQuery tables. However, these extensions result in the creation of new source groups, which means the model becomes a composite model. That scenario is described in [Unit 5](/training/modules/choose-power-bi-model-framework/5-determine-when-to-develop-composite-model).
 
 For more information, see [Using DirectQuery for Power BI datasets and Azure Analysis Services](/power-bi/connect-data/desktop-directquery-datasets-azure-analysis-services).
 
