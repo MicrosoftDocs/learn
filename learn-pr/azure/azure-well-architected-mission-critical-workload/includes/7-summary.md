@@ -2,11 +2,11 @@ Contoso Shoes is an online shoe store that wants to be highly available during a
 
 The previous architecture, the application was deployed in a single region and wasn't able to withstand a regional outage. Azure App Service and the external monitoring tools didn't have a way to check the health status of the application itself. This gap led to traffic being routed to unhealthy App Service instances resulting in failed requests.
 
-By completing this challenge you've explored a mission critical design at a high level. You've applied your  experience by using the exercises to meet Contoso's needs: 
+By completing this challenge, you've explored a mission critical design at a high level. You've applied your  experience by using the exercises to meet Contoso's needs: 
 
-The improved design detect the degraded performance of **one or more components** that might lead to a full outage. Now that the solution is deployed in multiple regions in an active-active model, it **withstand a complete regional outage** while giving more system health insights to their operations. Contoso has also improved the customer experience by **serving clients faster in a region geographically closer to them**.
+The improved design detects the degraded performance of **one or more components** that might lead to a full outage. Now that the solution is deployed in multiple regions in an active-active model, it **withstand a complete regional outage** while giving more system health insights to their operations. Contoso has also improved the customer experience by **serving clients faster in a region geographically closer to them**.
 
-Congratulations on completing this Challenge Project and validating yours skills in applying the learnings to your an example mission-critical solution.
+Congratulations on completing this Challenge Project and validating yours skills in applying the learnings to an example mission-critical solution.
 
 ## Learn more
 
