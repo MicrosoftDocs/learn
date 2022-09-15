@@ -1,78 +1,42 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Now that you've understood why you need to register an application with Azure Active Directory (Azure AD), you need to configure Azure AD to support a Python daemon application.
 
-    Goal: briefly summarize the key skill this unit will teach
+In this exercise, you complete the following tasks:
 
-    Heading: none
+- Register a daemon application in your Azure AD tenant.
+- Configure a client secret for the registered daemon application.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+## Register an application
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Registering your application establishes a trust relationship between your application and the identity provider, which is Azure AD in this case.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Follow these steps to register your application on the Azure portal.
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
+1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
+1. Search for and select **Azure Active Directory**.
+1. Under **Manage**, select **App registrations**.
+1. On the **App registrations** page, select **New registration**.
+1. Enter or select the following information:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+   | **Field**         | **Value**     |
+   |--------------|-----------|
+   | **Name** | `python-daemon-app`      |
+   | **Supported account types**     | **Accounts in this organizational directory only** |
+   | **Redirect URI (optional)**     | **Leave this field blank** |
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+1. Select **Register** to complete the initial app registration.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+When registration finishes, the Azure portal displays the app registration's **Overview** pane. Record the **Application (client) ID** and **Directory (tenant) ID** values for use in your client application code.
 
-    Goal: State concisely what's covered in this unit
+## Add a client secret
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Configure a client secret for the registered daemon application. The daemon application uses the client secret to prove its identity when it requests tokens.
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+1. In the left menu, under **Manage**, select **Certificates & secrets**.
+1. Select **New client secret**.
+1. In the **Description** box, enter a description for the client secret, like, _daemon-client-secret_.
+1. Under **Expires**, select a duration for which the secret is valid.
+1. Select **Add**.
+1. Record the secret's value for use in your daemon application. This secret value is _never displayed again_ after you leave this page.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+You've now successfully registered and configured your app with Azure AD.

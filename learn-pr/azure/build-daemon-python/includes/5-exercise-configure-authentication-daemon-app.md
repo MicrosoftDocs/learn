@@ -1,78 +1,183 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You'll use the Microsoft Authentication Library (MSAL) for Python to add authentication to a daemon app that uses its identity to get access tokens from Azure Active Directory (Azure AD).
 
-    Goal: briefly summarize the key skill this unit will teach
+In this exercise, you'll add application permissions to access Microsoft Graph and build your daemon app.
 
-    Heading: none
+## Application permission to Microsoft Graph
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+In the following steps, you grant the registered app permission to Microsoft Graph's _User.Read.All_ permission:
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Azure portal</a>.
+1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/portal-directory-subscription-filter.png" border="false"::: in the top menu to select the tenant containing your client app's registration.
+1. Search for and select **Azure Active Directory**.
+1. Under **Manage**, select **App registrations**.
+1. Select your daemon application.
+1. Under **Manage**, Select **API permissions**.
+1. Select **Add a permission**.
+1. Select **Microsoft Graph**, and then select **Application permissions**.
+1. Under **Select permissions**, search and expand **User**, and then select the *User.Read.All* permission.
+1. Select **Add permissions**.
+1. Select **Grant admin consent** to grant admin consent.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Install the authentication library
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+From your terminal, run the following command to install the MSAL for Python package:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+```bash
+pip install msal
+```
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+## Create a Python daemon application
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+1. Create a folder named `cli-access-protected-api` for your application.
 
-    Goal: State concisely what's covered in this unit
+1. Inside the `cli-access-protected-api` folder, create a new file named `cli.py` and add the following code:
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+   ```python
+    import json
+    import requests
+    
+    # import the required MSAL for Python module(s)
+    from msal import ConfidentialClientApplication
+    
+    # MSAL requires these values for interaction with the Microsoft identity platform.
+    # Get the values from Azure portal > Azure Active Directory > App registrations > $YOUR_APP_NAME.
+    config = {
+        # Full directory URL, in the form of https://login.microsoftonline.com/<tenant_id>
+        "authority": "https://login.microsoftonline.com/tenant_id",
+        # 'Application (client) ID' of app registration in Azure portal - this value is a GUID
+        "client_id": "Enter_the_Application_Id_Here",
+        # Client secret 'Value' (not its ID) from 'Client secrets' in app registration in Azure portal
+        "client_secret": "Enter_the_Client_Secret_Here"
+    }
+    
+    # This app instance should be a long-lived instance because
+    # it maintains its own in-memory token cache (the default).
+    app = ConfidentialClientApplication(
+        client_id=config["client_id"],
+        authority=config["authority"],
+        client_credential=config["client_secret"],
+    )
+    
+    # First, check for a token in the cache, refreshing it if needed
+    result = app.acquire_token_silent(
+        scopes=["https://graph.microsoft.com/.default"], account=None
+    )
+    
+    # If no token was found in the cache or the token refresh failed, get a new one
+    if not result:
+        result = app.acquire_token_for_client(
+            scopes=["https://graph.microsoft.com/.default"]
+        )
+    
+    print("Could not find a cached token, so fetching a new one.")
+    
+   ```
 
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
+   In the sample code we've created, we import `json`, `requests` and `msal` module for our daemon app. The `config` section contains the values required for interaction with the Azure AD.
 
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
+1. Replace the values in the `config` section as described here:
 
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
+     - Replace `tenant_id` with the **Directory (tenant) ID** you recorded during your app registration.
+     - Replace `Enter_the_Application_Id_Here` with the **Application (client) ID** you recorded during your app registration.
+     - Replace `Enter_the_Client_Secret_Here` with the `Value` for the `Client secrets` you recorded during your app registration.
 
-    Heading: none
--->
-TODO: add a visual element
+   The `app` section creates a `ConfidentialClientApplication` instance and reuses it during the lifecycle of the app. The `acquire_token_silent` helps to fetch the token of the current logged in identity silently. If the token expires, it sends a request, and automatically refreshes the token.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
+### Authorize access to Microsoft Graph API
 
-    Goal: Provide all the information the learner needs to perform this sub-task.
+Now, let's update the daemon app to register support for calling Microsoft Graph.
 
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
+Underneath the `if not result` section, add the following code snippet:
 
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
+```python
+if "access_token" in result:
+    # Get *this* application's application object from Microsoft Graph
+    response = requests.get(
+        f"https://graph.microsoft.com/v1.0/users",
+        headers={"Authorization": f'Bearer {result["access_token"]}'},
+    ).json()
+    print(f"Graph API call result: {json.dumps(response, indent=2)}")
+else:
+    print("Error encountered when requesting access token: " f"{result.get('error')}")
+    print(result.get("error_description"))
+```
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+Once we get a valid access token, we send it in the request authorization header in order to gain access to the Microsoft Graph API.
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+## Complete code snippet
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+Your final source code should look like the following snippet:
 
-<!-- Do not add a unit summary or references/links -->
+```python
+import json
+import requests
+# import the required MSAL for Python module(s)
+from msal import ConfidentialClientApplication
+# MSAL requires these values for interaction with the Microsoft identity platform.
+# Get the values from Azure portal > Azure Active Directory > App registrations > $YOUR_APP_NAME.
+config = {
+    # Full directory URL, in the form of https://login.microsoftonline.com/<tenant_id>
+    "authority": "https://login.microsoftonline.com/tenant_id",
+    # 'Application (client) ID' of app registration in Azure portal - this value is a GUID
+    "client_id": "Enter_the_Application_Id_Here",
+    # Client secret 'Value' (not its ID) from 'Client secrets' in app registration in Azure portal
+    "client_secret": "Enter_the_Client_Secret_Here"
+}
+# This app instance should be a long-lived instance because
+# it maintains its own in-memory token cache (the default).
+app = ConfidentialClientApplication(
+    client_id=config["client_id"],
+    authority=config["authority"],
+    client_credential=config["client_secret"],
+)
+# First, check for a token in the cache, refreshing it if needed
+result = app.acquire_token_silent(
+    scopes=["https://graph.microsoft.com/.default"], account=None
+)
+# If no token was found in the cache or the token refresh failed, get a new one
+if not result:
+    result = app.acquire_token_for_client(
+        scopes=["https://graph.microsoft.com/.default"]
+    )
+print("Could not find a cached token, so fetching a new one.")
+if "access_token" in result:
+    # Get users from Microsoft Graph
+    response = requests.get(
+        f"https://graph.microsoft.com/v1.0/users",
+        headers={"Authorization": f'Bearer {result["access_token"]}'},
+    ).json()
+    print(f"Graph API call result: {json.dumps(response, indent=2)}")
+else:
+    print("Error encountered when requesting access token: " f"{result.get('error')}")
+    print(result.get("error_description"))
+```
+
+### Run the daemon app
+
+Let's verify that our Python daemon app works. If you haven't already, change to the `cli-access-protected-api` directory and run the following command:
+
+```bash
+python cli.py
+```
+
+If your Python daemon runs successfully, you’ll see the following similar output on the command line:
+
+```json
+Could not find a cached token, so fetching a new one.
+Graph API call result: {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "businessPhones": [],
+  "displayName": "Henry Kiarie",
+  "givenName": "Henry",
+  "jobTitle": null,
+  "mail": null,
+  "mobilePhone": null,
+  "officeLocation": null,
+  "preferredLanguage": "en",
+  "surname": "Kiarie",
+  "userPrincipalName": "henry.com#EXT#@henry.onmicrosoft.com",
+  "id": "12db367f-7896-437d-b7bd-f9295ea9b971"
+}
+```
+
+You've successfully created a Python daemon app that uses its own identity and acquires an access token to call a protected web API.
