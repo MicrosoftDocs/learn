@@ -251,7 +251,7 @@ Ensure you register this context processor in your settings file.
 
 ## Check your work
 
-To check whether your app is working well, in the root of your project folder, run the following commands:
+To check whether your app is working well, run the following commands in the root of your project folder:
 
 ```bash
     python manage.py collectstatic
