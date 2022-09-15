@@ -6,7 +6,7 @@ metadata:
   title: Exercise - Add web application health checks
   description: Implement a dedicated health check endpoint on the application, which reports the health status of the API at regular intervals. 
   ms.date: 09/22/2022
-  author: PageWriter-MSFT
+  author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

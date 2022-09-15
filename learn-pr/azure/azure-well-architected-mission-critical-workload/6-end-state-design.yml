@@ -6,7 +6,7 @@ metadata:
   title: Next step - Target architecture evolution
   description: Evolve the design further by exploring the key value areas of a typical mission critical workload. 
   ms.date: 09/22/2022
-  author: PageWriter-MSFT
+  author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

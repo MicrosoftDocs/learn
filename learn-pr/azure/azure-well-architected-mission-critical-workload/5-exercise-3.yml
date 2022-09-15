@@ -6,7 +6,7 @@ metadata:
   title: Exercise - Build an application health model
   description: Define a health model and implementation that allows you to detect, diagnose, and predict issues across this architecture.
   ms.date: 09/22/2022
-  author: PageWriter-MSFT
+  author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

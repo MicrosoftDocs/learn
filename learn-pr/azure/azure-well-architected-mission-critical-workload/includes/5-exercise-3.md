@@ -45,25 +45,25 @@ For each component, collect metrics and metric thresholds and decide the value a
 
 - Solution metrics​​&mdash;Solution level data points, such as end-to-end processing time of a request.
 
-Here's an example. (TBD) Note:replace with app service
+Here's an example for Azure App Services
 
-|Azure Event Hubs|Health status|
+|App Services|Health status|
 |---|---|
-|Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|![Shows a healthy state.](../media/healthy.svg)
-|Queue depth < 50</br> Processing time < 200ms</br>Time in queue <1000 ms|![Shows a degraded state.](../media/degraded.svg)
-|Queue depth < 50</br> Processing time > 200ms</br>Time in queue > 1000 ms|![Shows an unhealthy state](../media/unhealthy.svg)
+|Response Time < 200ms</br>HTTP Server Errors < 2|![Shows a healthy green state.](../media/healthy.svg)
+|Response Time < 500ms</br>HTTP Server Errors < 2|![Shows a degraded yellow state.](../media/degraded.svg)
+|Response Time > 500ms</br>HTTP Server Errors > 2|![Shows an unhealthy red state](../media/unhealthy.svg)
 
 ### 3&ndash;Define an overall health status
 
 For each user and system flow, define an overall status. You'll need to aggregate the health status of individual components that participate in that flow. 
 
-Suppose a system flow is composed of an application component and App Services. (TBD) Note:replace with app service
+Suppose a system flow is composed of an application component, Azure App Service plan, and App Services.  Note:replace with app service
 
-|API|Azure Event Hubs|Azure Storage|Health status|
+|API|App Service plan|App Services|Health status|
 |---|---|---|---|
-|Maximum latency < 30ms |Queue depth < 10</br> Processing time < 100ms</br>Time in queue <200 ms|Response Time < 100ms</br>Request_Failure_Count < 2| ![Composite healthy state.](../media/healthy.svg)
-|Maximum latency < 30ms|Queue depth < 50</br> Processing time < 200ms</br>**Time in queue <1000 ms**|**Response Time < 200ms**</br>Request_Failure_Count < 5|![Composite degraded state.](../media/degraded.svg)
-|**Maximum latency > 30ms**|Queue depth < 50</br> **Processing time > 200ms**</br>**Time in queue > 1000 ms**</br>|Response Time > 200ms</br>**Request_Failure_Count > 5**|![Composite unhealthy state.](../media/unhealthy.svg)
+|Maximum latency < 30ms |CPU % < 70%</br> HTTP Queue Length < 5|Response Time < 200ms</br>HTTP Server Errors < 2| ![Composite healthy state shown as green.](../media/healthy.svg)
+|Maximum latency < 30ms|CPU % < 90%</br> HTTP Queue Length < 5|**Response Time < 500ms**</br>HTTP Server Errors < 2|![Composite degraded state shown as yellow.](../media/degraded.svg)
+|**Maximum latency > 30ms**|CPU % > 90%</br> **HTTP Queue Length > 5**</br>|Response Time > 500ms</br>**HTTP Server Errors > 2**|![Composite unhealthy state shown as red.](../media/unhealthy.svg)
 
 The health score for a user flow should be represented by the lowest score across all mapped components. For system flows, apply appropriate weights based on business criticality. Between the two flows, financially significant or customer-facing user flows should be prioritized.
 

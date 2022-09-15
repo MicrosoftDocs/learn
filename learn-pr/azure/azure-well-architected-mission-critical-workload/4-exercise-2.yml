@@ -7,7 +7,7 @@ metadata:
   description: Convert the architecture to an active-active, shared-state, multi-region topology designed to withstand a faulted region.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
-  ms.author: prwilk
+  ms.author: msimecek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 30
