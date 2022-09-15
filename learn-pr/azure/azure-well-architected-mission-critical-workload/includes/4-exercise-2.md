@@ -53,7 +53,7 @@ Explore the reliability features of the Azure services used in the architecture.
 |---|---|
 |Azure Cosmos DB|[Multi-region write](/azure/architecture/framework/mission-critical/mission-critical-data-platform#globally-distributed-multi-region-write-datastore)|
 |Azure Container Registry|[Geo-replication](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#container-registry)|
-|Azure App Service plan]|[Availability zone support](/azure/availability-zones/migrate-app-service)|
+|Azure App Service plan|[Availability zone support](/azure/availability-zones/migrate-app-service)|
 
 > **Check your progress: [Application platform](/azure/architecture/framework/mission-critical/mission-critical-application-platform) | [Data platform](/azure/architecture/framework/mission-critical/mission-critical-data-platform)**
 

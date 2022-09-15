@@ -2,7 +2,7 @@ Contoso Shoes needs a way to check the health of the web application at the API 
 
 ## Current state and problem
 
-In the current design, the application logs errors when there are  runtime issues in the API code or calls to dependent services fail, such as failed database queries. This approach is useful in troubleshooting issues after an incident has occurred. 
+In the current design, the application logs errors when there are runtime issues in the API code or calls to dependent services fail, such as failed database queries. This approach is useful in troubleshooting issues after an incident has occurred. 
 
 However, the approach isn't proactive. Azure App Service and the external monitoring tools don't have a way to check the health status of the application itself. This gap impacts many use cases, for instance, how load is distributed. The current implementation solely relies on the App Service plan's best effort to distribute traffic evenly across instances without ever checking the health of the application. In a reported incident, traffic was routed to unhealthy App Service instances resulting in failed requests.
 
