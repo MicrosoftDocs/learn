@@ -43,7 +43,7 @@ When a user navigates to */auth/sign_in* and completes a sign-in attempt, the re
 
 ## MSAL Python
 
-The Microsoft identity web Python library uses MSAL for Python library under the hood. At a minimum, following parameters need to be provided to the MSAL for Python library:
+The Microsoft identity web Python library uses MSAL for Python library under the hood. At a minimum, the following parameters need to be provided to the MSAL for Python library:
 
 - The **Client ID** of the app.
 - The **Client Credential**, which is a requirement for a Web (Confidential Client) Application.
