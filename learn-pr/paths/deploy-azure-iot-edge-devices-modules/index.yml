@@ -17,7 +17,7 @@ prerequisites: |
   - Describe how Azure Stream Analytics can be used in an IoT solution.
 summary: |
   You will learn about the benefits provided by Azure IoT Edge, the IoT Edge runtime environment, IoT Edge device deployments, and IoT Edge gateway device patterns and capabilities.
-iconUrl: /learn/achievements/iot-edge-deploy-devices-modules.svg
+iconUrl: /training/achievements/iot-edge-deploy-devices-modules.svg
 levels:
 - intermediate
 roles:

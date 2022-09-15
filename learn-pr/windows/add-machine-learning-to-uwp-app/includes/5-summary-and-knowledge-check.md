@@ -11,8 +11,8 @@ We reviewed these basics:
 
 We encourage you to keep learning. More courses are coming soon. Meanwhile, consider these related courses on how to build your own machine learning models:
 
-- [Classify images with the Microsoft Custom Vision Service](/learn/modules/classify-images-with-custom-vision-service/)
-- [Process images with the Computer Vision Service](/learn/modules/create-computer-vision-service-to-classify-images/index)
+- [Classify images with the Microsoft Custom Vision Service](/training/modules/classify-images-with-custom-vision-service/)
+- [Process images with the Computer Vision Service](/training/modules/create-computer-vision-service-to-classify-images/index)
 
 ## Additional resources
 

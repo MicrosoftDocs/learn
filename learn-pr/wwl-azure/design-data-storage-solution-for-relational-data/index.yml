@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Working experience with database solutions.
   - Conceptual knowledge of SQL Server.
-iconUrl: /learn/achievements/design-data-storage-relational-data.svg
+iconUrl: /training/achievements/design-data-storage-relational-data.svg
 levels:
 - advanced
 roles:

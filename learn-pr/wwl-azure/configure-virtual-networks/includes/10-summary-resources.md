@@ -16,5 +16,5 @@ You can learn more by reviewing the following.A *sandbox* indicates a hands-on e
  -  [Virtual Network Documentation](/azure/virtual-network/)
  -  [Public IP Addresses](/azure/virtual-network/public-ip-addresses)
  -  [Private IP Addresses](/azure/virtual-network/private-ip-addresses)
- -  [Design an IP addressing schema for your Azure deployment (Sandbox)](/learn/modules/design-ip-addressing-for-azure/)
- -  [Implement Windows Server IaaS VM IP addressing and routing](/learn/modules/implement-windows-server-iaas-virtual-machine-ip-addressing-routing/)
+ -  [Design an IP addressing schema for your Azure deployment (Sandbox)](/training/modules/design-ip-addressing-for-azure/)
+ -  [Implement Windows Server IaaS VM IP addressing and routing](/training/modules/implement-windows-server-iaas-virtual-machine-ip-addressing-routing/)

@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to create a knowledge base with an Azure Bot Service bot.
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
+iconUrl: /training/achievements/build-faq-chatbot-qna-maker-azure-bot-service.svg
 levels:
 - beginner
 roles:

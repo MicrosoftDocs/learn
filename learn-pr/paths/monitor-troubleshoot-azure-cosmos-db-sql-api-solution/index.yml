@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
   Review the common Cosmos DB administrative tasks of monitor, performance metrics, backup and security used in Azure.
-iconUrl: /learn/achievements/azure-cosmos-db-sql-api-monitor-troubleshoot-solution.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-monitor-troubleshoot-solution.svg
 levels:
 - intermediate
 roles:

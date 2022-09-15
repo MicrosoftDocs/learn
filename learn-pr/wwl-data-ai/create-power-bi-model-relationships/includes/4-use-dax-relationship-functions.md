@@ -5,7 +5,7 @@ There are several DAX functions that are relevant to model relationships.
 The [RELATED](/dax/related-function-dax) function retrieves the value from "one" side of a relationship. It’s useful when involving calculations from different tables that are evaluated in row context.
 
 > [!TIP]
-> To learn more about row context, work through the [Add calculated tables and columns to Power BI Desktop models](/learn/modules/dax-power-bi-add-calculated-tables/) module. While this module describes adding model calculations, it includes a unit that introduces and describes row context.
+> To learn more about row context, work through the [Add calculated tables and columns to Power BI Desktop models](/training/modules/dax-power-bi-add-calculated-tables/) module. While this module describes adding model calculations, it includes a unit that introduces and describes row context.
 
 ## RELATEDTABLE
 

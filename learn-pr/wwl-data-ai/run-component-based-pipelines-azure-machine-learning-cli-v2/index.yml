@@ -17,7 +17,7 @@ abstract: |
   - Create a component-based pipeline with the Designer in the Azure Machine Learning studio.
 prerequisites: |
   You should have some familiarity with the Azure Machine Learning service.
-iconUrl: /learn/achievements/machine-learning-component-pipelines.svg
+iconUrl: /training/achievements/machine-learning-component-pipelines.svg
 levels:
 - intermediate
 roles:

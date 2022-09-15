@@ -21,7 +21,7 @@ prerequisites: |
   - Experience using arrays and the `foreach` iteration statement
   - Experience using string interpolation to combine variable and literal values for output
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-convert-cast.svg
+iconUrl: /training/achievements/csharp-convert-cast.svg
 levels:
 - beginner
 roles:

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage.
   - Familiarity with Azure virtual machines and virtual networking.
-iconUrl: /learn/achievements/connect-azure-assets-to-azure-defender.svg
+iconUrl: /training/achievements/connect-azure-assets-to-azure-defender.svg
 levels:
 - intermediate
 roles:

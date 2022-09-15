@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of Azure virtual machines
   - Basic knowledge of disk storage for virtual machines
-iconUrl: /learn/achievements/protect-virtual-machines-with-azure-backup.svg
+iconUrl: /training/achievements/protect-virtual-machines-with-azure-backup.svg
 levels:
 - beginner
 roles:

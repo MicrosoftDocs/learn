@@ -17,7 +17,7 @@ abstract: |
   *   Configure functional test automation and run availability tests
   *   Setup test infrastructure
 prerequisites: ""
-iconUrl: /learn/achievements/2-configure-and-provision-environments.svg
+iconUrl: /training/achievements/2-configure-and-provision-environments.svg
 levels:
 - advanced
 roles:

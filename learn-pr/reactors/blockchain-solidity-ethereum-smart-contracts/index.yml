@@ -26,7 +26,7 @@ prerequisites: |
   - Visual Studio Code installed
   - Knowledge about how to download programs from the internet
   - Knowledge about how to use command-line tools
-iconUrl: /learn/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
+iconUrl: /training/achievements/reactors/blockchain-solidity-ethereum-smart-contracts.svg
 levels:
 - beginner
 roles:

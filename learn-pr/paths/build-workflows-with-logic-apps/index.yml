@@ -12,7 +12,7 @@ metadata:
 title: Build automated workflows to integrate data and apps with Azure Logic Apps
 summary: Azure Logic Apps is a cloud service that automates the execution of your business processes. Learn how to leverage logic apps to create serverless workflows that run automatically when data is available.
 prerequisites: None
-iconUrl: /learn/achievements/build-workflows-with-logic-apps.svg
+iconUrl: /training/achievements/build-workflows-with-logic-apps.svg
 levels: 
 - beginner
 - intermediate

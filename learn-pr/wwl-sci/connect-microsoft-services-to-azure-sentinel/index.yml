@@ -16,7 +16,7 @@ abstract: |
   - Explain how connectors auto-create incidents in Microsoft Sentinel
 prerequisites: |
   Basic experience with Azure services
-iconUrl: /learn/achievements/connect-microsoft-services-to-azure-sentinel.svg
+iconUrl: /training/achievements/connect-microsoft-services-to-azure-sentinel.svg
 levels:
 - intermediate
 roles:

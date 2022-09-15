@@ -1,7 +1,7 @@
 If your organization relies on open-source languages like R and Python, you can write scripts to transform data and create visualizations. Using R and Python visuals in Power BI extends the opportunity to collaborate with Data Scientists in your organization, and enables the use of visuals your data team may already be using.
 
 > [!NOTE]
-> This module won't go in-depth for creating R and Python visuals, however you can review the [Add an R or Python visual](/learn/modules/visuals-power-bi/6-python-visual) Microsoft Learn unit for more detail.
+> This module won't go in-depth for creating R and Python visuals, however you can review the [Add an R or Python visual](/training/modules/visuals-power-bi/6-python-visual) Microsoft Learn unit for more detail.
 
 ## R visuals
 

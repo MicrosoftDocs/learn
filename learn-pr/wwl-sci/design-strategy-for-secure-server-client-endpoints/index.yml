@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - Familiarity with security baselines.
   - Familiarity with requirements for server and client endpoints.
-iconUrl: /learn/achievements/2-design-a-strategy-for-securing-server-and-client-endpoints.svg
+iconUrl: /training/achievements/2-design-a-strategy-for-securing-server-and-client-endpoints.svg
 levels:
 - advanced
 roles:

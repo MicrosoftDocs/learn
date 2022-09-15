@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - A GitHub Enterprise Cloud or Enterprise Server account with GitHub Advanced Security
   - Working knowledge of GitHub Actions and workflows
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

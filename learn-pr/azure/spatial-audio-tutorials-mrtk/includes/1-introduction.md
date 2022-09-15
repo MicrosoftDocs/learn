@@ -18,6 +18,6 @@ Through this module series, you'll learn how to use head-related transfer functi
 * A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
 * Windows 10 SDK 10.0.18362.0 or later
 * Unity Hub with Unity 2020.3.X or 2019.4.X installed and the Universal Windows Platform Build Support module added
-* [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+* [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
 * [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
 * Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene

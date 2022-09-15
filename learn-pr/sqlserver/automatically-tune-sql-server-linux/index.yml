@@ -24,7 +24,7 @@ prerequisites: |
   - Be able to install and configure SQL Server 2019 on a Linux server.
   - Be able to write Transact-SQL queries.
   - Understand Dynamic Management Views (DMVs) in SQL Server.
-iconUrl: /learn/achievements/sqlserver/automatically-tune-sql-server-on-linux.svg
+iconUrl: /training/achievements/sqlserver/automatically-tune-sql-server-on-linux.svg
 levels:
 - beginner
 roles:

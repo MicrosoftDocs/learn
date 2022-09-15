@@ -9,4 +9,4 @@ You can learn more by reviewing the following documents.
 - [Windows Server 2019 System Requirements](/windows-server/get-started-19/sys-reqs-19?azure-portal=true).
 - [Microsoft Assessment and Planning Toolkit](/previous-versions/bb977556(v=technet.10)?azure-portal=true).
 - [Windows Deployment Services Getting Started Guide for Windows Server 2012.](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj648426(v=ws.11)?azure-portal=true)
-- [Course WS-011T00-A: Windows Server 2019 Administration](/learn/certifications/courses/ws-011t00?azure-portal=true).
+- [Course WS-011T00-A: Windows Server 2019 Administration](/certifications/courses/ws-011t00?azure-portal=true).

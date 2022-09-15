@@ -10,5 +10,5 @@ You should now be able to:
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Azure Storage documentation](/azure/storage/).
- -  [Create an Azure Storage account (Sandbox)](/learn/modules/create-azure-storage-account/)
- -  [Provide disaster recovery by replicating storage data across regions and failing over to secondary location](/learn/modules/provide-disaster-recovery-replicate-storage-data/)
+ -  [Create an Azure Storage account (Sandbox)](/training/modules/create-azure-storage-account/)
+ -  [Provide disaster recovery by replicating storage data across regions and failing over to secondary location](/training/modules/provide-disaster-recovery-replicate-storage-data/)

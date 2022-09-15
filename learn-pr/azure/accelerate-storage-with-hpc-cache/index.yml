@@ -22,7 +22,7 @@ prerequisites: |
   - Familiarity with NFS storage concepts like mount, export, and namespace.
   - Familiarity with networking concepts like subnet, DNS, and TCP/UDP ports.
   - Familiarity with creating virtual machines in the Azure portal.
-iconUrl: /learn/achievements/accelerate-storage-with-hpc-cache.svg
+iconUrl: /training/achievements/accelerate-storage-with-hpc-cache.svg
 levels:
   - beginner
 roles:

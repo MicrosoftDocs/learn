@@ -16,10 +16,10 @@ abstract: |
   - Describe database templates in Azure Synapse Analytics
   - Create a lake database
 prerequisites: |
-  Consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
+  Consider completing the [Explore data analytics in Azure](/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
   - Analytical data workloads in Microsoft Azure
   - Querying data with Transact-SQL
-iconUrl: /learn/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools.svg
+iconUrl: /training/achievements/create-metadata-objects-in-azure-synapse-serverless-sql-pools.svg
 levels:
 - intermediate
 roles:

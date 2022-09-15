@@ -18,7 +18,7 @@ abstract: |
   - Identify important next steps to manage your repository and add community involvement
 prerequisites: |
   - A GitHub account
-iconUrl: /learn/achievements/github/upload-project-github.svg
+iconUrl: /training/achievements/github/upload-project-github.svg
 ratingEnabled: true
 levels:
 - beginner

@@ -22,7 +22,7 @@ prerequisites: |
   - Experience using string interpolation to combine variables in string templates
   - Experience using code comments to comment out unused code
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-choose-data-type.svg
+iconUrl: /training/achievements/csharp-choose-data-type.svg
 levels:
 - beginner
 roles:

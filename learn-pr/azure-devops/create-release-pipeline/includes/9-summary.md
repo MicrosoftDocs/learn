@@ -12,7 +12,7 @@ Here are some additional resources you can use to learn more about Azure resourc
 
 In this module, you deployed a website to App Service. You can use Azure Pipelines to deploy to just about any kind of environment, including a virtual machine or containerized environment.
 
-The [Explore Azure compute services](/learn/modules/azure-compute-fundamentals/?azure-portal=true) module goes into further detail about the kinds of compute options Azure provides.
+The [Explore Azure compute services](/training/modules/azure-compute-fundamentals/?azure-portal=true) module goes into further detail about the kinds of compute options Azure provides.
 
 You'll work more with App Service in the modules that follow. You can also learn about App Service in the [Deploy a website to Azure with Azure App Service](../../../paths/deploy-a-website-with-azure-app-service/index.yml?azure-portal=true) learning path.
 
@@ -42,8 +42,8 @@ These resources provide more information about some of the topics in this module
 * [Jobs](/azure/devops/pipelines/process/phases?azure-portal=true&tabs=yaml)
 * [Deployment jobs](/azure/devops/pipelines/process/deployment-jobs?azure-portal=true)
 * [Environments](/azure/devops/pipelines/process/environments?azure-portal=true)
-* [Design for security in Azure](/learn/modules/design-for-security-in-azure/?azure-portal=true)
-* [Secure your Azure resources with RBAC](/learn/modules/secure-azure-resources-with-rbac/?azure-portal=true)
+* [Design for security in Azure](/training/modules/design-for-security-in-azure/?azure-portal=true)
+* [Secure your Azure resources with RBAC](/training/modules/secure-azure-resources-with-rbac/?azure-portal=true)
 * [Service connections](/azure/devops/pipelines/library/service-endpoints?azure-portal=true&tabs=yaml)
 * [Pipeline reports](/azure/devops/pipelines/reports/pipelinereport?azure-portal=true)
 * [Explore the Analytics OData metadata](/azure/devops/report/extend-analytics/analytics-metadata?azure-portal=true)

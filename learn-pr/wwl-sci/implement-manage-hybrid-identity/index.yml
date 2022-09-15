@@ -22,7 +22,7 @@ abstract: |
   - Implement and manage Azure Active Directory Connect Health
 prerequisites: |
   None
-iconUrl: /learn/achievements/implement-and-manage-hybrid-identity.svg
+iconUrl: /training/achievements/implement-and-manage-hybrid-identity.svg
 levels:
 - advanced
 roles:

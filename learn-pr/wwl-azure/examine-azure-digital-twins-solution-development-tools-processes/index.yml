@@ -23,7 +23,7 @@ prerequisites: |
   - Describe the features, capabilities, and data workflows of an IoT solution.
   - Describe the features and capabilities of IoT Hub, including IoT Hub endpoints.
   - Describe the components of an Azure Digital Twins solution and how to build an Azure Digital Twins graph using models and digital twins.
-iconUrl: /learn/achievements/azure-digital-twins-solution-development.svg
+iconUrl: /training/achievements/azure-digital-twins-solution-development.svg
 levels:
 - intermediate
 roles:

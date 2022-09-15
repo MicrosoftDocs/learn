@@ -17,7 +17,7 @@ abstract: |
   - Implement pipeline security
   - Understand threat modeling
 prerequisites: ""
-iconUrl: /learn/achievements/1-understand-security-in-the-pipeline.svg
+iconUrl: /training/achievements/1-understand-security-in-the-pipeline.svg
 levels:
 - advanced
 roles:

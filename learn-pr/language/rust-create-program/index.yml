@@ -19,7 +19,7 @@ abstract:  |
   - Discover how to print output from your program
 prerequisites: | 
   - Have your [Rust environment ready for development](../rust-set-up-environment/index.yml?azure-portal=true)
-iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
+iconUrl: /training/achievements/rust-understand-common-concepts.svg 
 levels:
 - beginner
 roles:

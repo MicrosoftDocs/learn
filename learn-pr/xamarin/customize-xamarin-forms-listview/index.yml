@@ -17,7 +17,7 @@ abstract: |
   - Group cells into sections
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/customize-xamarin-forms-listview-badge.svg
+iconUrl: /training/achievements/xamarin/customize-xamarin-forms-listview-badge.svg
 levels:
 - intermediate
 roles:

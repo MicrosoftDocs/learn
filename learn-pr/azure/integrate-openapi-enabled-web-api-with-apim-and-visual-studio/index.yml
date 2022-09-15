@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience developing basic ASP.NET Core Web API apps
   - Experience using Swashbuckle to create an OpenAPI document
-iconUrl: /learn/achievements/integrate-openapi-enabled-web-api-with-apim-and-visual-studio.svg
+iconUrl: /training/achievements/integrate-openapi-enabled-web-api-with-apim-and-visual-studio.svg
 levels:
 - beginner
 roles:

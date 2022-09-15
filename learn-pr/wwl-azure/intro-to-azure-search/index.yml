@@ -17,7 +17,7 @@ abstract: |
     - Import data to the index
     - Query the Azure Cognitive Search index
 prerequisites: ""
-iconUrl: /learn/achievements/azure-introduction-to-azure-search.svg
+iconUrl: /training/achievements/azure-introduction-to-azure-search.svg
 levels:
 - beginner
 roles:

@@ -21,7 +21,7 @@ abstract: |
   - Explore the Manage hub
 prerequisites: |
   * Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/explore-azure-synapse-studio.svg
+iconUrl: /training/achievements/explore-azure-synapse-studio.svg
 levels:
 - beginner
 roles:

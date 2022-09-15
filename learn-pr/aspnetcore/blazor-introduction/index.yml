@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to write HTML at a novice level
   - Familiarity with C# and Razor templates from ASP.NET or ASP.NET Core
   - Familiarity with web server and browser interactions
-iconUrl: /learn/achievements/intro-to-blazor.svg
+iconUrl: /training/achievements/intro-to-blazor.svg
 levels:
   - beginner
 roles:

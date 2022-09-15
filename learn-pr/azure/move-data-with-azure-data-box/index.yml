@@ -17,7 +17,7 @@ abstract: |
   - Learn the steps to import data by using Azure Data Box Disk
 prerequisites: | 
   - Familiarity with Azure Storage and Azure Blob storage
-iconUrl: /learn/achievements/move-data-with-azure-data-box.svg
+iconUrl: /training/achievements/move-data-with-azure-data-box.svg
 levels:
 - beginner
 roles:

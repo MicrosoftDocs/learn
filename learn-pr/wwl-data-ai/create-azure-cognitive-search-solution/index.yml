@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Familiarity with with Microsoft Azure
   - Application development experience with C# or Python
-iconUrl: /learn/achievements/create-an-azure-cognitive-search-solution.svg
+iconUrl: /training/achievements/create-an-azure-cognitive-search-solution.svg
 levels:
 - intermediate
 roles:

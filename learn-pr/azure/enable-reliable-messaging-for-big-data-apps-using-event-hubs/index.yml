@@ -19,7 +19,7 @@ prerequisites: |
   - Experience creating and managing resources using the Azure portal
   - Experience with using Azure CLI to sign into Azure, and to create resources
   - Knowledge of basic big data concepts such as streaming and event processing
-iconUrl: /learn/achievements/enable-reliable-messaging-for-big-data-apps-using-azure-event-hubs.svg
+iconUrl: /training/achievements/enable-reliable-messaging-for-big-data-apps-using-azure-event-hubs.svg
 levels:
 - beginner
 roles:

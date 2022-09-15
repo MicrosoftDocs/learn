@@ -21,7 +21,7 @@ prerequisites: |
   - Experience using `Console.WriteLine()` to output messages to a console
   - Experience using the `if` and `else if` statement
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-readable-code.svg
+iconUrl: /training/achievements/csharp-readable-code.svg
 levels:
 - beginner
 roles:

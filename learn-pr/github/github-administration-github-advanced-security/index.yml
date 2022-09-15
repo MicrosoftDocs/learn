@@ -27,7 +27,7 @@ prerequisites: |
   - Familiarity with managing GitHub administrative settings
   - Knowledge of GitHub Actions
 ratingEnabled: true
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
 - advanced
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role

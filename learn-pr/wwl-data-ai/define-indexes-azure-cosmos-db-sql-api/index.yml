@@ -17,7 +17,7 @@ abstract: |
   - Use built-in functions in a query
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-sql-api-define-indexes.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-define-indexes.svg
 levels:
 - intermediate
 roles:

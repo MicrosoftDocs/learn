@@ -1,7 +1,7 @@
 Now that you know how the cluster autoscaler works, it's time to implement it.
 
 > [!IMPORTANT]
-> If you haven't deployed the example cluster, please refer back to [the introduction](/learn/modules/aks-cluster-autoscaling/1-introduction).
+> If you haven't deployed the example cluster, please refer back to [the introduction](/training/modules/aks-cluster-autoscaling/1-introduction).
 
 ## Enable the cluster autoscaler on an existing cluster
 

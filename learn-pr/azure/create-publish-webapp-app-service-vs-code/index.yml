@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with web app concepts
   - Beginner-level programming knowledge
   - Local installations of Visual Studio Code and either Node.js or Python
-iconUrl: /learn/achievements/publish-express-node-app-service-vscode.svg
+iconUrl: /training/achievements/publish-express-node-app-service-vscode.svg
 levels:
 - beginner
 roles:

@@ -18,7 +18,7 @@ abstract: |
   - Create an interactive report with Power BI Desktop
 prerequisites: |
   - None
-iconUrl: /learn/achievements/5-explore-fundamentals-of-data-visualization.svg
+iconUrl: /training/achievements/5-explore-fundamentals-of-data-visualization.svg
 levels:
 - beginner
 roles:

@@ -17,7 +17,7 @@ abstract: |
   -	Analyze forms by using financial, ID, and tax prebuilt models
 prerequisites: |
   - Basic understanding of Form Recognizer
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

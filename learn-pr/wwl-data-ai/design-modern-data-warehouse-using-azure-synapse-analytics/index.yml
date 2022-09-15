@@ -21,7 +21,7 @@ abstract: |
   - Serve data for analysis with Azure Synapse Analytics
 prerequisites: |
   * Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/design-a-modern-data-warehouse-using-azure-synapse-analytics.svg
+iconUrl: /training/achievements/design-a-modern-data-warehouse-using-azure-synapse-analytics.svg
 levels:
 - beginner
 roles:

@@ -18,7 +18,7 @@ abstract: |
   - Import your project to GitHub
 prerequisites: |
   - A GitHub account
-iconUrl: /learn/achievements/github/migrate-repository-github.svg
+iconUrl: /training/achievements/github/migrate-repository-github.svg
 ratingEnabled: true
 levels:
 - beginner

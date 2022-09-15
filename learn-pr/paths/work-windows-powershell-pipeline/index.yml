@@ -16,7 +16,7 @@ prerequisites: |
   - Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration.
 summary: |
   This learning path explains the purpose and use of the PowerShell pipeline and use the pipeline to sort, filter, enumerate and display output data for PowerShell cmdlets. It also explains how to pass pipeline objects.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

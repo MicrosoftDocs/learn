@@ -20,6 +20,6 @@ Here are some great resources to learn more about microservices with .NET:
 
 - [Microservices Explained | Build your first microservice with .NET (Video)](https://youtu.be/DFDbh1c9zyE)
 - [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices/)
-- [Create and deploy a cloud-native ASP.NET Core microservice](/learn/modules/microservices-aspnet-core/)
-- [Introduction to Docker containers](/learn/modules/intro-to-docker-containers/)
-- [Introduction to Kubernetes](/learn/modules/intro-to-kubernetes/)
+- [Create and deploy a cloud-native ASP.NET Core microservice](/training/modules/microservices-aspnet-core/)
+- [Introduction to Docker containers](/training/modules/intro-to-docker-containers/)
+- [Introduction to Kubernetes](/training/modules/intro-to-kubernetes/)

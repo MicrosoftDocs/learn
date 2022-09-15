@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Learn the concepts of event processing and streaming data and how this applies to Azure Stream Analytics. You will then set up a stream analytics job to stream data, and learn how to manage and monitor a running job.
-iconUrl: /learn/achievements/data-ai/implement-data-streaming-with-asa-trophy.svg
+iconUrl: /training/achievements/data-ai/implement-data-streaming-with-asa-trophy.svg
 levels:
 - beginner
 roles:

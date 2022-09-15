@@ -19,7 +19,7 @@ prerequisites: |
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
 summary: |
   This learning path covers remoting mainly in its default configuration, using HTTP on port 5985\. It describes how to configure remoting to allow for—or require—encryption based on Secure Sockets Layer (SSL).
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
