@@ -34,25 +34,25 @@ In this module, you’ve learned how to design a data storage solution for datab
 
 - [Scaling out with Azure SQL Database](/azure/azure-sql/database/elastic-scale-introduction).
 
-- [Introduction to Azure Cosmos DB | Microsoft Docs](/azure/cosmos-db/introduction)
+- [Welcome to Azure Cosmos DB](/azure/cosmos-db/introduction)
 
-- [Frequently asked questions about the Table API in Azure Cosmos DB | Microsoft Docs](/azure/cosmos-db/table/table-api-faq) 
+- [Frequently asked questions about the Table API in Azure Cosmos DB](/azure/cosmos-db/table/table-api-faq) 
 
 
  
 
 ## Learn more with self-paced training
 
-- [Introduction to securing data at rest on Azure - Learn | Microsoft Docs](/learn/modules/secure-data-at-rest/)
+- [Introduction to securing data at rest on Azure](/training/modules/secure-data-at-rest/)
 
-- [Choose the appropriate API for Azure Cosmos DB - Learn | Microsoft Docs](/learn/modules/choose-api-for-cosmos-db/)
+- [Choose the appropriate API for Azure Cosmos DB](/training/modules/choose-api-for-cosmos-db/)
 
-- [Explore Azure database and analytics services - Learn](/learn/modules/azure-database-fundamentals/)
+- [Explore Azure database and analytics services](/training/modules/azure-database-fundamentals/)
 
-- [Explore provisioning and deploying relational database services in Azure - Learn](/learn/modules/explore-provision-deploy-relational-database-offerings-azure/)
+- [Explore provisioning and deploying relational database services in Azure](/training/modules/explore-provision-deploy-relational-database-offerings-azure/)
 
-- [Introduction to Azure SQL Edge - Learn](/learn/modules/intro-to-azure-sql-edge/)
+- [Introduction to Azure SQL Edge](/training/modules/intro-to-azure-sql-edge/)
 
 ## Learn more with optional hands-on exercises
 
-- [Create a SQL database](/learn/modules/azure-database-fundamentals/exercise-create-sql-database)
+- [Create a SQL database](/training/modules/azure-database-fundamentals/exercise-create-sql-database)

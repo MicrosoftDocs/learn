@@ -6,7 +6,7 @@ You use Azure Resource Manager templates to deploy resources including virtual m
 
 ## Skills measured
 
-Deploying resources using Azure Resource Manager templates is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Deploying resources using Azure Resource Manager templates is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 

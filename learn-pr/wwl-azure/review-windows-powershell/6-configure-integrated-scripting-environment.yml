@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.review-windows-powershell.configure-integrated-scripting-environment
+title: Configure the Windows PowerShell Integrated Scripting Environment (ISE)
+metadata:
+  title: Configure the Windows PowerShell Integrated Scripting Environment (ISE)
+  description: "Configure the Windows PowerShell Integrated Scripting Environment (ISE)"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-configure-integrated-scripting-environment.md)]

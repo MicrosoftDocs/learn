@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-initial-configuration-of-azure-active-directory.configure-tenant-wide-setting
+title: Configure tenant-wide setting
+metadata:
+  title: Configure tenant-wide setting
+  description: "Configure tenant-wide setting"
+  ms.date: 06/14/2022
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-configure-tenant-wide-options.md)]

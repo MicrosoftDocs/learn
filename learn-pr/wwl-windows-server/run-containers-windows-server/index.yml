@@ -23,7 +23,7 @@ prerequisites: |
   To get the best learning experience from this module, you should have knowledge and experience of:
   - Windows Server.
   - Working with virtualization technologies.
-iconUrl: /learn/achievements/run-containers-on-windows-server.svg
+iconUrl: /training/achievements/run-containers-on-windows-server.svg
 levels:
 - intermediate
 roles:

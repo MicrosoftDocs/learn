@@ -1,4 +1,4 @@
-Before we can create a Linux virtual machine in Azure, we will need to think about remote access. We want to be able to sign in to our Linux web server to configure the software and perform maintenance. The default approach to administering Linux VMs hosted in Azure is SSH.
+Before we can create a Linux virtual machine in Azure, we'll need to think about remote access. We want to be able to sign in to our Linux web server to configure the software and perform maintenance. The default approach to administering Linux VMs hosted in Azure is SSH.
 
 ## What is SSH?
 
@@ -12,7 +12,7 @@ With an SSH key pair, you can sign in to Linux-based Azure virtual machines with
 
 * The public key is placed on your Linux VM or any other service that you wish to use with public-key cryptography. This can be shared with anyone.
 
-* The **private key** is what you present to verify your identity to your Linux VM when you make an SSH connection. Consider this confidential information and protect this like you would a password or any other private data.
+* The **private key** is what you present to verify your identity to your Linux VM when you make an SSH connection. Consider this confidential information and protect it like you would a password or any other private data.
 
 You can use the same single public-private key pair to access multiple Azure VMs and services.
 
@@ -22,9 +22,9 @@ On Windows 10, Linux, and macOS, you can use the built-in `ssh-keygen` command t
 
 Windows 10 includes an SSH client with the **Fall Creators Update**. Earlier versions of Windows require additional software to use SSH; [check the documentation for full details](/azure/virtual-machines/linux/ssh-from-windows). Alternatively, you can install the Linux subsystem for Windows and get the same functionality.
 
-We will use Azure Cloud Shell, which stores the generated keys in Azure in your private storage account. You can also type these commands directly into your local shell if you prefer. You will need to adjust the instructions throughout this module to reflect a local session if you take this approach.
+We'll use Azure Cloud Shell, which stores the generated keys in Azure in your private storage account. You can also type these commands directly into your local shell if you prefer. You'll need to adjust the instructions throughout this module to reflect a local session if you take this approach.
 
-Here is the minimum command necessary to generate the key pair for an Azure VM. This creates an SSH protocol 2 (SSH-2) RSA public-private key pair. The minimum length is 2048, but for the sake of this learning module we will use 4096.
+Here's the minimum command necessary to generate the key pair for an Azure VM. This creates an SSH protocol 2 (SSH-2) RSA public-private key pair. The minimum length is 2048, but for the sake of this learning module we'll use 4096.
 
 1. Run the following command in Cloud Shell.
 
@@ -40,11 +40,11 @@ There are various options you can use to provide the file name or a passphrase t
 
 ### Private key passphrase
 
-You can provide a passphrase while generating your private key. This is a password you must enter when you use the key. This passphrase is used to access the private SSH key file and is not the user account password.
+You can provide a passphrase while generating your private key. This is a password you must enter when you use the key. This passphrase is used to access the private SSH key file and isn't the user account password.
 
 When you add a passphrase to your SSH key, it encrypts the private key using 128-bit AES so that the private key is useless without the passphrase to decrypt it.
 
-We strongly recommended that you add a passphrase. If an attacker stole your private key and that key did not have a passphrase, they would be able to use that private key to log in to any servers that have the corresponding public key. If a passphrase protects a private key, it cannot be used by that attacker. This provides an additional layer of security for your infrastructure on Azure.
+We strongly recommended that you add a passphrase. If an attacker stole your private key and that key didn't have a passphrase, they would be able to use that private key to log in to any servers that have the corresponding public key. If a passphrase protects a private key, it can't be used by that attacker. This provides an additional layer of security for your infrastructure on Azure.
 
 ## Use the SSH key pair with an Azure Linux VM
 
@@ -56,7 +56,7 @@ You can view the contents of the file in Cloud Shell by running the following co
 cat ~/.ssh/id_rsa.pub
 ```
 
-It'll look something like the following output:
+It will look something like the following output:
 
 ```output
 ssh-rsa XXXXXXXXXXc2EAAAADAXABAAABAXC5Am7+fGZ+5zXBGgXS6GUvmsXCLGc7tX7/rViXk3+eShZzaXnt75gUmT1I2f75zFn2hlAIDGKWf4g12KWcZxy81TniUOTjUsVlwPymXUXxESL/UfJKfbdstBhTOdy5EG9rYWA0K43SJmwPhH28BpoLfXXXXXGX/ilsXXXXXKgRLiJ2W19MzXHp8z3Lxw7r9wx3HaVlP4XiFv9U4hGcp8RMI1MP1nNesFlOBpG4pV2bJRBTXNXeY4l6F8WZ3C4kuf8XxOo08mXaTpvZ3T1841altmNTZCcPkXuMrBjYSJbA8npoXAXNwiivyoe3X2KMXXXXXdXXXXXXXXXXCXXXXX/ azureuser@myserver
@@ -66,11 +66,11 @@ Copy this value, so you can use it in the next exercise.
 
 ### Use the SSH key when creating a Linux VM
 
-To apply the SSH key while creating a new Linux VM, you will need to copy the contents of the public key and supply it to the Azure portal, _or_ supply the public key file to the Azure CLI or Azure PowerShell command. We'll use this approach when we create our Linux VM.
+To apply the SSH key while creating a new Linux VM, copy the contents of the public key and supply it to the Azure portal, _or_ supply the public key file to the Azure CLI or Azure PowerShell command. We'll use this approach when we create our Linux VM.
 
 ### Add the SSH key to an existing Linux VM
 
-If you have already created a VM, you can install the public key onto your Linux VM with the `ssh-copy-id` command. After the key has been authorized for SSH, it grants access to the server without a password, though you will still be prompted for the passphrase on the key if you set one.
+If you've already created a VM, you can install the public key onto your Linux VM with the `ssh-copy-id` command. After the key has been authorized for SSH, it grants access to the server without a password, though you'll still be prompted for the passphrase on the key if you set one.
 
 For example, if we had a Linux VM named *myserver* with a user *azureuser*, we could run the following command to install the public key file, and authorize the user with the key.
 

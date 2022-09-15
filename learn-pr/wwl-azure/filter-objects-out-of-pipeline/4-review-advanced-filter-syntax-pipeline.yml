@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.filter-objects-out-of-pipeline.review-advanced-filter-syntax-pipeline
+title: Review advanced filter syntax in the pipeline
+metadata:
+  title: Review advanced filter syntax in the pipeline
+  description: "Review advanced filter syntax in the pipeline"
+  ms.date: 07/29/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-review-advanced-filter-syntax-pipeline.md)]

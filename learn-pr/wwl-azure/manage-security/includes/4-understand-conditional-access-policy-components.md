@@ -2,7 +2,7 @@ Conditional Access policies are if-then statements: If an assignment is met, the
 
 When configuring Conditional Access policies, conditions are called *assignments*. Conditional Access policies allow you to enforce access controls on your organization’s apps based on certain assignments.
 
-:::image type="content" source="../media/understand-conditional-access-04a5e2d3.png" alt-text="Create a policy screen.":::
+:::image type="content" source="../media/understand-conditional-access-04a5e2d3.png" alt-text="Screenshot showing how to create a policy.":::
 
 
 Assignments define the following:

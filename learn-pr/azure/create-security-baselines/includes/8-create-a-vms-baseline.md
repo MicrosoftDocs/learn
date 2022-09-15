@@ -1,88 +1,77 @@
-Azure Policy is a service in Azure to create, assign, and manage policies. These policies enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service level agreements. Azure Policy meets this need by evaluating your resources for non-compliance with assigned policies. For example, you can have a policy to allow only a certain SKU size of virtual machines (VMs) in your environment. After this policy is implemented, new and existing resources are evaluated for compliance. With the right type of policy, existing resources can be brought into compliance.
+Azure Policy is an Azure service you can use to create, assign, and manage policies. The policies you create enforce different rules and effects over your resources, so those resources stay compliant with your corporate standards and service-level agreements. Azure Policy meets this need by evaluating your resources for noncompliance with assigned policies. For example, you can have a policy to allow only a certain SKU size of VM in your environment. After this policy is implemented, new and existing resources are evaluated for compliance. With the right type of policy, existing resources can be brought into compliance.
 
-## Azure networking security recommendations
+## Azure VM security recommendations
 
-See the following security recommendations that you should follow to set VM policies on your Azure subscription. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps with your own subscription using your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+The following sections describe the Azure VM security recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
-### Enable and install a VM agent for data collection for Microsoft Defender for Cloud - Level 1
+### Enable and install a VM agent for Microsoft Defender for Cloud data collection - Level 1
 
-Microsoft Defender for Cloud enables you to see which VMs require a VM agent. Defender for Cloud then recommends that you enable an agent on those VMs. The agent is installed by default for VMs that are deployed from the Azure Marketplace. Data is needed to assess the VM security state, provide security recommendations, and alert on host-based threats.
+Microsoft Defender for Cloud lets you know when a VM requires a VM agent. The agent is installed by default for VMs that are deployed from Azure Marketplace. Data is needed to assess the VM security state, provide security recommendations, and alert on host-based threats.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Microsoft Defender for Cloud*. The **Microsoft Defender for Cloud | Overview** pane displays.
+1. In the left menu under **Management**, select **Environment settings**.
 
-1. In the left menu pane, under **Management**, select **Environment settings**. The **Environment settings** pane for Microsoft Defender for Cloud displays.
+1. In the **Environment settings** pane, select your subscription.
 
-1. Select your subscription.
+1. In the left menu under **Settings**, select **Auto provisioning**.
 
-1. In the left menu pane, under **Settings**, select **Auto provisioning**.
+1. For the VM agent you want to use, select **On**. Select a workspace to use.
 
-1. Select the VM agent you want to use, and slide the slider to **On**.
+1. If you change any settings, in the menu bar, select **Save**.
 
-1. Select a workspace to use.
-
-1. On the top menu bar, select **Save**.
-
-:::image type="content" source="../media/8-create-a-vms-baseline/defender-for-cloud-auto-provisioning.png" alt-text="Screenshot that shows the auto provisioning extension pane, with Log Analytics agent for Azure VMs selected." lightbox="../media/8-create-a-vms-baseline/defender-for-cloud-auto-provisioning.png":::
+:::image type="content" source="../media/azure-virtual-machines/defender-for-cloud-auto-provisioning.png" alt-text="Screenshot that shows the auto provisioning extension pane, with Log Analytics agent for Azure VMs selected." lightbox="../media/azure-virtual-machines/defender-for-cloud-auto-provisioning.png":::
 
 ### Ensure that OS disk are encrypted - Level 1
 
-Azure Disk Encryption helps protect and safeguard your data to meet your organizational security and compliance commitments.
+Azure Disk Encryption helps protect and safeguard your data to meet your organization's security and compliance commitments. Azure Disk Encryption:
 
-- It uses the BitLocker feature of Windows and the DM-Crypt feature of Linux to provide volume encryption for the OS and data disks of Azure virtual machines (VMs).
-- It integrates with Azure Key Vault to help you control and manage the disk encryption keys and secrets.
-- It ensures that all data on the VM disks are encrypted at rest while in Azure storage.
+- Uses the BitLocker feature of Windows and the DM-Crypt feature of Linux to provide volume encryption for the OS and data disks of Azure VMs.
+- Integrates with Azure Key Vault to help you control and manage disk encryption keys and secrets.
+- Ensures that all data on the VM disks is encrypted at rest when it is in Azure storage.
 
 Azure Disk Encryption for Windows and Linux VMs is in General Availability in all Azure public regions and Azure Government regions for Standard VMs and VMs with Azure Premium Storage.
 
-If you use Microsoft Defender for Cloud (recommended), you're alerted if you have VMs that aren't encrypted.
+If you use Microsoft Defender for Cloud (recommended), you're alerted if you have VMs that aren't encrypted. Complete the following steps for each VM in your Azure subscription.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Virtual machines**.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Virtual machines*. The **Virtual machines** pane displays.
+1. In the left menu under **Settings**, select **Disks**.
 
-1. For each VM, in the middle menu pane, under **Settings**, select **Disks**. The **Disks** pane displays for your VM.
+1. Under **OS disk**, ensure that the OS disk has an encryption type set.
 
-1. Ensure that the **OS disk** has an **Encryption** type set.
+1. Under **Data disks**, ensure that each disk has an encryption type set.
 
-1. Ensure that each disk under **Data disks** has an **Encryption** type set.
+1. If you change any settings, in the menu bar, select **Save**.
 
-:::image type="content" source="../media/8-create-a-vms-baseline/azure-virtual-machines-disk-encryption.png" alt-text="Screenshot that shows the Disks pane for virtual machines with the encryption type highlighted." lightbox="../media/8-create-a-vms-baseline/azure-virtual-machines-disk-encryption.png":::
+:::image type="content" source="../media/azure-virtual-machines/disk-encryption.png" alt-text="Screenshot that shows the Disks pane for virtual machines with the encryption type highlighted." lightbox="../media/azure-virtual-machines/disk-encryption.png":::
 
-### Ensure only approved extensions are installed - Level 1
+### Ensure that only approved VM extensions are installed - Level 1
 
-Azure virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script inside of it, a VM extension can be used. Azure VM extensions can be run with the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new VM deployment, or run against any existing system.
+Azure VM extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a VM requires software installation or antivirus protection or if the VM needs to run a script, you can use a VM extension. You can run an Azure VM extension by using the Azure CLI, PowerShell, an Azure Resource Manager template, or the Azure portal. You can bundle extensions with a new VM deployment or run them against any existing system. To use the Azure portal to ensure that only approved extensions are installed on your VMs, complete the following steps for each VM in your Azure subscription.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Virtual machines**.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Virtual machines*. The **Virtual machines** pane displays.
+1. In the left menu under **Settings**, select **Extensions + applications**.
 
-1. For each VM, in the middle menu pane, under **Settings**, select **Extensions + applications**. The **Extensions + applications** pane displays for your VM.
+1. In the **Extensions + applications** pane, ensure that the extensions that are listed are approved for use.
 
-1. Ensure that the listed extensions are approved for use.
-
-:::image type="content" source="../media/8-create-a-vms-baseline/azure-virtual-machines-extensions-applications.png" alt-text="Screenshot that shows the Extensions + applications pane.":::
+:::image type="content" source="../media/azure-virtual-machines/extensions.png" alt-text="Screenshot that shows V M extensions in the Extensions + applications pane.":::
 
 ### Ensure that the OS patches for the VMs are applied - Level 1
 
-Microsoft Defender for Cloud monitors daily Windows and Linux VMs and computers for missing operating system updates. Defender for Cloud retrieves a list of available security and critical updates from *Windows Update* or *Windows Server Update Services (WSUS)* The updates you receive depend on which service you configure on the Windows computer. Defender for Cloud also checks for the latest updates in Linux systems. If your VM or computer is missing a system update, Defender for Cloud will recommend that you apply system updates.
+Microsoft Defender for Cloud daily monitors Windows and Linux VMs and computers for missing operating system updates. Defender for Cloud retrieves a list of available security and critical updates from *Windows Update* or *Windows Server Update Services (WSUS)*. The updates you receive depend on which service you configure on the Windows computer. Defender for Cloud also checks for the latest updates in Linux systems. If your VM or computer is missing a system update, Defender for Cloud recommends that you apply system updates.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Microsoft Defender for Cloud**.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Defender for Cloud*. The **Defender for Cloud | Overview** pane displays.
+1. In the left menu under **General**, select **Recommendations**.
 
-1. In the left menu pane, under **General**, select **Recommendations**. The **Recommendations** pane for Defender for Cloud displays.
+1. In **Recommendations**, ensure that there are no recommendations for **Apply system updates**.
 
-1. Ensure that there are no recommendations for **Apply system updates**.
+:::image type="content" source="../media/azure-virtual-machines/defender-for-cloud-recommend.png" alt-text="Screenshot of the Microsoft Defender for Cloud Recommendations pane.":::
 
-![Screenshot of Defender for Cloud Recommendations pane.](../media/8-asc-recommend.png)
+### Ensure that VMs have an endpoint protection solution installed and running - Level 1
 
-### Ensure that VMs have an installed and running endpoint protection solution - Level 1
+Microsoft Defender for Cloud monitors the status of antimalware protection. It reports this status in the **Endpoint protection issues** pane. Defender for Cloud highlights issues like detected threats and insufficient protection, which can make your VMs and computers vulnerable to antimalware threats. By using the information in **Endpoint protection issues**, you can begin to create a plan to address any issues that are identified.
 
-Microsoft Defender for Cloud monitors the status of antimalware protection and reports this status under the **Endpoint protection issues** pane. Defender for Cloud highlights issues, such as detected threats and insufficient protection, which can make your VMs and computers vulnerable to antimalware threats. By using the information under Endpoint protection issues, you can identify a plan to address any issues identified.
-
-Use the same process as described in the previous recommendation.
-
-> [!TIP]
-> Remember to select **Save** if you make changes to any of the settings.
+Use the same process as described in the preceding recommendation.

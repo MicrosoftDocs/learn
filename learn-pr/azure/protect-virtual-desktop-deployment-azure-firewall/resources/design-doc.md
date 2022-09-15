@@ -79,7 +79,7 @@ Identify the subtasks of *module title*
 
 1. **Plan Azure Firewall deployment**
 
-   - Planning considerations - reference content covered in this module that applies to next exercise: [Introduction to Azure Firewall](https://docs.microsoft.com/learn/modules/introduction-azure-firewall/3-how-azure-firewall-works)
+   - Planning considerations - reference content covered in this module that applies to next exercise: [Introduction to Azure Firewall](https://docs.microsoft.com/training/modules/introduction-azure-firewall/3-how-azure-firewall-works)
    - Rule types (overview)
    - Deployment options (overview)
    - Overview of general steps to deploy Azure Firewall and context with WVD. See below.
@@ -154,7 +154,7 @@ Identify the subtasks of *module title*
 
 Related modules:
 
-- [Introduction to Azure Firewall](https://docs.microsoft.com/learn/modules/introduction-azure-firewall/3-how-azure-firewall-works)
-- https://docs.microsoft.com/learn/modules/hub-and-spoke-network-architecture/
-- https://docs.microsoft.com/learn/modules/intro-to-azure-networking/
-- https://docs.microsoft.com/learn/modules/network-fundamentals-2/4-firewalls-network-security
+- [Introduction to Azure Firewall](https://docs.microsoft.com/training/modules/introduction-azure-firewall/3-how-azure-firewall-works)
+- https://docs.microsoft.com/training/modules/hub-and-spoke-network-architecture/
+- https://docs.microsoft.com/training/modules/intro-to-azure-networking/
+- https://docs.microsoft.com/training/modules/network-fundamentals-2/4-firewalls-network-security

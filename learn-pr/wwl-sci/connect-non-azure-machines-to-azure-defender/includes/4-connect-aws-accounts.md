@@ -18,8 +18,7 @@ Onboarding your AWS account into Microsoft Defender for Cloud, integrates AWS Se
 
 In the screenshot below, you can see AWS accounts displayed in Security Center's overview dashboard.
 
->[!div class="mx-imgBorder"]
->![aws account overview.](../media/aws-account-overview.png)
+:::image type="content" source="../media/aws-account-overview.png" alt-text="Screenshot of the A W S account overview settings.":::
 
 
 ## Follow the steps below to create your AWS cloud connector.
@@ -32,7 +31,7 @@ To view security recommendations for multiple regions, repeat the following step
 
 1. Enable AWS Security Hub.
 
-1. Verify that there is data flowing to the Security Hub.
+1. Verify that there's data flowing to the Security Hub.
 
 When you first enable Security Hub, it might take several hours for data to be available.
 
@@ -102,7 +101,7 @@ Configure the options in the AWS authentication tab:
 
 1. Enter a Display name for the connector.
 
-1. Confirm that the subscription is correct. It is the subscription that will include the connector and AWS Security Hub recommendations.
+1. Confirm that the subscription is correct. It's the subscription that will include the connector and AWS Security Hub recommendations.
 
 1. Depending on the authentication option, you chose in Step 2. Set up authentication for Security Center in AWS:
 
@@ -132,7 +131,7 @@ Configure the options in the AWS authentication tab:
 
 ### Confirmation
 
-When the connector is successfully created and AWS Security Hub has been configured properly:
+After the connector is successfully created and AWS Security Hub has been configured properly:
 
 - Defender for Cloud scans the environment for AWS EC2 instances, onboarding them to Azure Arc, enabling it to install the Log Analytics agent and providing threat protection and security recommendations.
 

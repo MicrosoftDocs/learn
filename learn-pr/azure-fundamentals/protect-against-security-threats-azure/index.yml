@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-iconUrl: /learn/achievements/review-security-tools-features.svg
+iconUrl: /training/achievements/review-security-tools-features.svg
 levels:
 - beginner
 roles:

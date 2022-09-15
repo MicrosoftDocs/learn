@@ -2,7 +2,7 @@ There are many scenarios where you wish to log the HTTP requests that the Azure 
 
 ## Client builder
 
-The **Microsoft.Azure.Cosmos.Fluent.CosmosClient** class is a builder class that fluently configures a new client instance. It comes with multiple methods that are used as an alternative to the **CosmosClientOptions** class including, but not limited to:
+The **Microsoft.Azure.Cosmos.Fluent.CosmosClientBuilder** class is a builder class that fluently configures a new client instance. It comes with multiple methods that are used as an alternative to the **CosmosClientOptions** class including, but not limited to:
 
 | **Method** | **Description** |
 | --- | --- |

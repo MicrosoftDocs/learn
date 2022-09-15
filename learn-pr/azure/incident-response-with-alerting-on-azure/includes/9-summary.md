@@ -19,4 +19,4 @@ For more info about Azure Monitor, each of the alert types, and smart groups, se
 - [Metric alerts](/azure/azure-monitor/alerts/alerts-types#metric-alerts)
 - [Log alerts](/azure/azure-monitor/alerts/alerts-types#log-alerts)
 - [Activity log alerts](/azure/azure-monitor/alerts/alerts-types#activity-log-alerts)
-- [Smart groups](/azure/azure-monitor/platform/alerts-smartgroups-overview)
+- [Smart groups](/azure/azure-monitor/alerts/alerts-types#smart-detection-alerts)

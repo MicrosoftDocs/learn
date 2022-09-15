@@ -18,7 +18,7 @@ abstract:  |
 prerequisites: |
   - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
-iconUrl: /learn/achievements/azure-well-architected-cost-optimization.svg
+iconUrl: /training/achievements/azure-well-architected-cost-optimization.svg
 levels:
 - intermediate
 roles:

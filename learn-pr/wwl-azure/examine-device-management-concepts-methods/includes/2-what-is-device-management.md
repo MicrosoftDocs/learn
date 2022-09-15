@@ -10,7 +10,6 @@ IoT solutions come with a unique set of device management challenges and every e
  -  **Scale and automation**: IoT solutions require simple tools that can automate routine tasks and enable a relatively small operations staff to manage millions of devices. Day-to-day, operators expect to handle device operations remotely, in bulk, and to only be alerted when issues arise that require their direct attention.
  -  **Openness and compatibility**: The device ecosystem is extraordinarily diverse. Management tools must be tailored to accommodate a multitude of device classes, platforms, and protocols. Operators must be able to support many types of devices, from the most constrained embedded single-process chips, to powerful, and fully functional computers.
  -  **Context awareness**: IoT environments are dynamic and ever-changing. Service reliability is paramount. Device management operations must take into account the following factors to ensure that maintenance downtime doesn't affect critical business operations or create dangerous conditions:
-    
      -  SLA maintenance windows
      -  Network and power states
      -  In-use conditions

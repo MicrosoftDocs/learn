@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-bicep.what-bicep
+title: What is Bicep?
+metadata:
+  title: What is Bicep?
+  description: "What is Bicep?"
+  ms.date: 06/28/2022
+  author: wwlpublish
+  ms.author: yasa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-what-bicep.md)]

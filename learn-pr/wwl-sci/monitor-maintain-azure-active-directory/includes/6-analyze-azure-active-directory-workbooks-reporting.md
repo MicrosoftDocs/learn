@@ -1,25 +1,24 @@
 With the usage and insights report, you can get an application-centric view of your sign-in data. You can find answers to the following questions:
 
- -  What are the most used applications in my organization?
- -  What applications have the most failed sign-ins?
- -  What are the top sign-in errors for each application?
+- What are the most used applications in my organization?
+- What applications have the most failed sign-ins?
+- What are the top sign-in errors for each application?
 
 ## Prerequisites
 
 To access the data from the usage and insights report, you need:
 
- -  An Azure AD tenant.
- -  An Azure AD premium (P1/P2) license to view the sign-in data.
- -  A user in the Global Administrator, Security Administrator, Security Reader or Report Reader roles. In addition, any user (non-admins) can access their own sign-ins.
+- An Azure AD tenant.
+- An Azure AD premium (P1/P2) license to view the sign-in data.
+- A user in the Global Administrator, Security Administrator, Security Reader or Report Reader roles. In addition, any user (non-admins) can access their own sign-ins.
 
 ## Access the usage and insights report
 
-1.  Navigate to the Azure portal.
-2.  Select the right directory, then select **Azure Active Directory** and choose **Enterprise applications**.
-3.  From the **Activity** section, select **Usage &amp; insights** to open the report.
+1. Navigate to the Azure portal.
+2. Select the right directory, then select **Azure Active Directory** and choose **Enterprise applications**.
+3. From the **Activity** section, select **Usage and insights** to open the report.
     
-    :::image type="content" source="../media/main-menu-5cb9ed56.png" alt-text="Screenshot shows Usage and Insights selected from the Activity section.":::
-    
+   :::image type="content" source="../media/main-menu.png" alt-text="Screenshot of the Usage and Insights selected from the Activity section. Use the logs to find the data you need.":::
 
 ## Use the report
 
@@ -31,4 +30,4 @@ You can also set the focus on a specific application. Select **view sign-in acti
 
 When you select a day in the application usage graph, you get a detailed list of the sign-in activities for the application.
 
-:::image type="content" source="../media/usage-insights-report-5c57d35b.png" alt-text="Screenshot shows Usage and Insights for Application activity where you can select a range and view sign-in activity for different apps." lightbox="../media/usage-insights-report-5c57d35b.png":::
+:::image type="content" source="../media/usage-insights-report.png" alt-text="Screenshot of Usage and Insights for Application activity where you can select a range and view sign-in activity for different apps.":::

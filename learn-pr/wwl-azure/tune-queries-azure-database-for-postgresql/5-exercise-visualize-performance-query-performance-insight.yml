@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tune-queries-azure-database-for-postgresql.exercise-visualize-performance-query-performance-insight
+title: 'Exercise: Visualize performance with Query Performance Insight'
+metadata:
+  title: 'Exercise: Visualize performance with Query Performance Insight'
+  description: "Exercise: Visualize performance with Query Performance Insight"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-visualize-performance-query-performance-insight.md)]

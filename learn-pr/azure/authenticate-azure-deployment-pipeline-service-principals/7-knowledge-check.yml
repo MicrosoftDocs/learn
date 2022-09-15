@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 06/30/2021
+  ms.date: 06/13/2022
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ quiz:
     - content: Create a single service principal and grant it access to each of the resource groups in the three subscriptions.
       isCorrect: false
       explanation: Incorrect. Although this will work, it's not good practice to use a single service principal for all of your environments. At the very least, you should separate production and non-production environments by using two service principals, but a dedicated service principal for each environment is ideal.
-    - content: Create three service principals, one per environment, and grant each access to a single resource group in a single subscription.
+    - content: Create three service principals, one per environment, and grant each access to a single resource group in the relevant subscription.
       isCorrect: true
       explanation: Correct. When you work with multiple environments, it's best to use dedicated service principals for each environment so that your pipeline can't accidentally change anything in another environment.
   - content: You create a service principal with a key, and you set the key to expire 30 days in the future. What happens after that time?

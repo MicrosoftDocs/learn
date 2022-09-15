@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-mysql.describe-built-azure-mysql-database-roles
+title: Describe built-in Azure MySQL database roles
+metadata:
+  title: Describe built-in Azure MySQL database roles
+  description: "Describe built-in Azure MySQL database roles"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-describe-built-azure-mysql-database-roles.md)]

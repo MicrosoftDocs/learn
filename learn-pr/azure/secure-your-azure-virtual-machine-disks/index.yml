@@ -17,7 +17,7 @@ abstract: |
   - Encrypt existing virtual machine disks using PowerShell
   - Modify Azure Resource Manager templates to automate disk encryption on new VMs
 prerequisites: None
-iconUrl: /learn/achievements/secure-your-azure-virtual-machine-disks.svg
+iconUrl: /training/achievements/secure-your-azure-virtual-machine-disks.svg
 levels:
 - intermediate
 roles:

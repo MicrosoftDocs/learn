@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-advanced-search-features-azure-cognitive-search.exercise-implement-enhancements-to-search-results
+title: 'Exercise: Implement enhancements to search results'
+metadata:
+  title: 'Exercise: Implement enhancements to search results'
+  description: "Exercise: Implement enhancements to search results"
+  ms.date: 07/04/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/07-exercise-implement-enhancements-to-search-results.md)]

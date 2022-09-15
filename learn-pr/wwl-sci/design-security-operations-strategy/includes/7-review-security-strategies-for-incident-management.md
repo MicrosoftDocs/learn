@@ -1,8 +1,6 @@
-### Review Security Strategies for Incident Management 
-
 A security incident is a confirmed breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to customer data or personal data. For example, unauthorized access to infrastructure and exfiltration of customer data would constitute a security incident, while compliance events that don't affect the confidentiality, integrity, or availability of services or customer data aren't considered security incidents. 
 
-#### Responding to Security Incidents 
+## Responding to security incidents 
 
 Whenever there's a security incident, an organization should respond quickly and effectively to protect its services and customer data. An incident response strategy should be designed to investigate, contain, and remove security threats quickly and efficiently. 
 
@@ -12,7 +10,7 @@ When suspicious activity is detected and escalated, Security Response teams shou
 
 After an incident is resolved, service teams should strive to implement any lessons learned from the incident to better prevent, detect, and respond to similar incidents in the future. Security incidents, especially those incidents that are customer-impacting or result in a data breach, should undergo a full incident post-mortem. The post-mortem process should be designed to identify technical lapses, procedural failures, manual errors, and other process flaws that might have contributed to the incident or been identified during the incident response process. Improvements identified during the post-mortem should be implemented with coordination from Security Response teams to help prevent future incidents and improve detection and response capabilities. 
 
-#### Incident Management Process 
+## Incident management process 
 
 Security Response teams and the various service teams should work jointly and take the same approach to security incidents: 
 
@@ -26,7 +24,7 @@ Security Response teams and the various service teams should work jointly and ta
 
 ![Diagram showing incident management process.](../media/incident-management-process.png) 
 
-#### Preparation 
+### Preparation 
 
 Preparation enables rapid response when an incident occurs and may even prevent incidents in the first place. Azure dedicates significant resources to preparing for security incidents. 
 
@@ -47,8 +45,7 @@ The appropriate employees should receive refresher training on security annually
 - Where to find more information about security and privacy, and escalation contacts 
 - Any other security focus areas that may be relevant each year 
 
-
-#### Detection and Analysis 
+### Detection and analysis 
 
 Organizations should use a centralized audit logging and analysis to detect anomalous or suspicious activity. Log files from Azure services should be collected and stored in a central, consolidated database. Centralized log analysis will allow the Security Response teams to comprehensively monitor the environment and correlate log entries from different services. 
 
@@ -66,29 +63,29 @@ At the beginning of the investigation, the Security Response team should record 
 - Any evidence gathered during the incident response process 
 - Recommended next steps and actions 
 
-#### Containment, Eradication, and Recovery 
+### Containment, eradication, and recovery 
 
 Based on the analysis coordinated by the Security Response team, an appropriate containment and recovery plan should be developed to minimize the impact of the security incident and remove the threat from the environment. Relevant service teams should implement the plan with support from the Security Response team to ensure the threat is successfully eliminated and the impacted services undergo a complete recovery. 
 
-##### Containment 
+#### Containment 
 
 The primary goal of containment is to limit harm to systems, applications, customers, and customer data. During this phase, the Security Response team should work with affected service teams to limit the impact of the security incident and prevent further damage. All automated response solutions within Azure should help the team contain the incident. 
 
 The data collection and analysis should continue through the containment phase to ensure that the incident's root cause has been correctly identified and that all impacted services and tenants are included in the eradication and recovery plan. Successfully tracing all impacted services makes full eradication and recovery possible. 
 
-##### Eradication 
+#### Eradication 
 
 Eradication is the process of eliminating the root cause of the security incident with a high degree of confidence. The goal of eradication is twofold: to evict the adversary completely from the environment and mitigate any vulnerabilities that contributed to the incident or could enable the adversary to reenter the environment. 
 
 Eradication steps to evict the adversary and mitigate vulnerabilities are based on the analysis performed in the previous incident response phases. The Security Response team should coordinate with affected service teams to ensure the threat is successfully removed from the environment. Recovery isn't possible until the threat has been removed and its underlying causes have been resolved. 
 
-##### Recovery 
+#### Recovery 
 
 When the Security Response team is confident the adversary has been evicted from the environment, and known vulnerabilities have been remediated, the team should work with affected service teams to initiate recovery. Recovery brings affected services to a known secure configuration. The recovery process includes identifying the last known good state of the service, restoring from backups to this state, and confirming the restored state mitigates the vulnerabilities that contributed to the incident. 
 
 A key aspect of the recovery process is enhanced detection controls to validate that the recovery plan has been successfully executed and that no signs of breach remain within the environment. Examples of additional detection controls include increased network-level monitoring, targeted alerting for attack vectors identified during the incident response process, and additional security team vigilance for critical resources. Enhanced monitoring helps to ensure that eradication was successful and that the adversary is unable to reenter the environment. 
 
-##### Post-Incident Activity 
+### Post-Incident Activity 
 
 After the incident has been resolved, select security incidents, especially customer-impacting or resulting in a data breach, undergo a full incident post-mortem. The post-mortem process should be designed to identify technical lapses, procedural failures, manual errors, and other process flaws that might have contributed to the incident or been identified during the incident response process. The process should include the following: 
 
@@ -102,8 +99,8 @@ Recording any findings as ticketed work items or bugs to be addressed by product
 
 Discussing the results of the completed post-mortem in monthly security incident review meetings conducted by senior management. 
 
-#### Continuous Improvement 
+### Continuous Improvement
 
-Lessons learned from the security incident should be implemented with coordination from the Security Response team to help prevent future incidents and improve detection and response capabilities. Continuous improvement is paramount for effective and efficient incident response. Post-incident activities ensure that lessons learned from the security incident are successfully implemented across the enterprise to defend organizations and their customers against evolving threats. 
+:::image type="content" source="../media/security-operations-continuous-improvement.png" alt-text="Diagram showing continuous improvement for incident management." lightbox="../media/security-operations-continuous-improvement.png":::
 
- 
+Lessons learned from the security incident should be implemented with coordination from the Security Response team to help prevent future incidents and improve detection and response capabilities. Continuous improvement is paramount for effective and efficient incident response. Post-incident activities ensure that lessons learned from the security incident are successfully implemented across the enterprise to defend organizations and their customers against evolving threats.

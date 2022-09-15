@@ -1,7 +1,10 @@
-In this lesson, you have explored how Azure Synapse Analytics solves the issue of having a single service to fulfill the broad range of analytics requirements that organizations face today. 
+Azure Synapse Analytics provides an integrated cloud-based platform for big data processing and analysis. You can use it to build descriptive, diagnostic, predictive, and prescriptive analytics solutions.
 
-In this lesson, you have learned:
+In this module, you learned how to:
 
-- What is Azure Synapse Analytics
-- How Azure Synapse Analytics work
-- When to use Azure Synapse Analytics
+- Identify the business problems that Azure Synapse Analytics addresses.
+- Describe core capabilities of Azure Synapse Analytics.
+- Determine when to use Azure Synapse Analytics.
+
+> [!TIP]
+> To learn more about the capabilities of Azure Synapse Analytics, see [What is Azure Synapse Analytics?](/azure/synapse-analytics/overview-what-is) in the Azure Synapse Analytics documentation.

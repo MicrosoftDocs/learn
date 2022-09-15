@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-mysql-storage-engine.exercise-compare-options
+title: 'Exercise: Compare storage engine options'
+metadata:
+  title: 'Exercise: Compare storage engine options'
+  description: "Exercise: Compare storage engine options"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-exercise-compare-options.md)]

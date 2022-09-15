@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-azure-machine-learn-job-for-automation.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/12/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Several files are stored in a private container in an Azure Blob Storage. An existing registered Azure Machine Learning data asset points to the folder containing the files. To use the files in the folder as input for a machine learning job, which prefix should be used when defining the `path` in the job YAML file?"
+    choices:
+    - content: "`https:`"
+      isCorrect: false
+      explanation: "Incorrect. Use `https:` when referring to a URI of a publicly accessible cloud path."
+    - content: "`wasbs:`"
+      isCorrect: false
+      explanation: "Incorrect. Use `wasbs:` when referring to a URI of a publicly accessible Azure Blob Storage container."
+    - content: "`azureml:`"
+      isCorrect: true
+      explanation: "Correct. Use `azureml:` when referring to an existing registered data asset."
+  - content: "If you want to execute a workflow that consists of multiple Python scripts, which need to run sequentially, what type of job should you specify in the job YAML file?"
+    choices:
+    - content: "Command"
+      isCorrect: false
+      explanation: "Incorrect. Use a command job to execute one script."
+    - content: "Pipeline"
+      isCorrect: true
+      explanation: "Correct. Use a pipeline job to execute multiple scripts that are grouped together in a workflow."
+    - content: "Sweep"
+      isCorrect: false
+      explanation: "Incorrect. Use a sweep job for hyperparameter tuning."

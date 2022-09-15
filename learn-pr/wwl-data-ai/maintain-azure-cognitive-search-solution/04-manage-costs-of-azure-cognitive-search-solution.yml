@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.maintain-azure-cognitive-search-solution.manage-costs-of-azure-cognitive-search-solution
+title: Manage costs of an Azure Cognitive Search solution
+metadata:
+  title: Manage costs of an Azure Cognitive Search solution
+  description: "Manage costs of an Azure Cognitive Search solution"
+  ms.date: 06/27/2022
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/04-manage-costs-of-azure-cognitive-search-solution.md)]

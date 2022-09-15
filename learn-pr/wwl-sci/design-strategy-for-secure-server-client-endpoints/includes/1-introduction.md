@@ -5,7 +5,7 @@ ensure their security posture is up to date while ensuring that there
 are tools in places to obtain enterprise-wide visibility into attack
 dynamics.
 
-### Learning Objectives 
+## Learning Objectives 
 
 In this module, you'll learn how to:
 
@@ -17,3 +17,5 @@ In this module, you'll learn how to:
 - Design a strategy for secure remote access
 - Understand security operations frameworks, processes, and procedures
 - Understand deep forensics procedures by resource type
+
+The content in the module will help you prepare for exam SC-100: Microsoft Cybersecurity Architect.

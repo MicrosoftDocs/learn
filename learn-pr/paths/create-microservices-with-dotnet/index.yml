@@ -15,7 +15,7 @@ prerequisites: |
   - Familiarity with command-line based applications.
   - Familiarity with basic Docker concepts.
   - Experience writing C# at the beginner level
-iconUrl: /learn/achievements/create-microservices-with-dotnet.svg
+iconUrl: /training/achievements/create-microservices-with-dotnet.svg
 levels:
 - beginner
 - intermediate

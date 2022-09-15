@@ -7,7 +7,7 @@ To access your files, you will need a storage account. After the storage account
 
 You can connect to your Azure file share with Windows or Windows Server. Just select **Connect** from your virtual machine page.
 
-:::image type="content" source="../media/map-file-shares-windows-a1aa8f59.png" alt-text="Screenshot of This PC page. Map a Network Drive is highlighted.":::
+:::image type="content" source="../media/map-file-shares-windows-a1aa8f59.png" alt-text="Screenshot of This P C page. Map a Network Drive is highlighted.":::
 
 
 > [!NOTE]

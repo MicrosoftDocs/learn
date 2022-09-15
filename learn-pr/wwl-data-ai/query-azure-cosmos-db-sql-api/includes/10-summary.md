@@ -9,8 +9,5 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Getting started with SQL queries][docs.microsoft.com/azure/cosmos-db/sql/sql-query-getting-started]
-- [System functions (Azure Cosmos DB)][docs.microsoft.com/azure/cosmos-db/sql/sql-query-system-functions]
-
-[docs.microsoft.com/azure/cosmos-db/sql/sql-query-getting-started]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-query-getting-started
-[docs.microsoft.com/azure/cosmos-db/sql/sql-query-system-functions]: https://docs.microsoft.com/azure/cosmos-db/sql/sql-query-system-functions
+- [Getting started with SQL queries](/azure/cosmos-db/sql/sql-query-getting-started)
+- [System functions (Azure Cosmos DB)](/azure/cosmos-db/sql/sql-query-system-functions)

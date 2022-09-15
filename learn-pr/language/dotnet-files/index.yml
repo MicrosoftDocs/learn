@@ -28,7 +28,7 @@ prerequisites: |
   - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
-iconUrl: /learn/achievements/dotnet-files.svg
+iconUrl: /training/achievements/dotnet-files.svg
 levels:
 - beginner
 roles:

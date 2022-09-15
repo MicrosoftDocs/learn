@@ -31,7 +31,7 @@ The exercise also runs a client app that simulates several users issuing POST an
     | **Instance Details** |
     | Name | *See Note above table.* Enter a unique name that you can remember for later in this exercise |
     | Publish | Code |
-    | Runtime stack | .NET Core 3.1 (LTS)|
+    | Runtime stack | .NET 6 (LTS)|
     | Operating System | Windows |
     | Region | Accept *default* |
     | **App Service Plan** |
@@ -119,14 +119,14 @@ The exercise also runs a client app that simulates several users issuing POST an
     code HotelReservationSystemTestClient.csproj
     ```
 
-1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack that you selected for your web app. Change the **TargetFramework** value to `netcoreapp3.1`. The file should look like this example.
+1. Edit the line that specifies the **TargetFramework**, so that it matches the Runtime stack that you selected for your web app. Change the **TargetFramework** value to `netcoreapp6.0`. The file should look like this example.
 
     ```text
     <Project Sdk="Microsoft.NET.Sdk">
     
       <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>netcoreapp6.0</TargetFramework>
       </PropertyGroup>
     
       <ItemGroup>
@@ -170,7 +170,7 @@ The exercise also runs a client app that simulates several users issuing POST an
    - Select **Add metric**, and under the **Metric** dropdown list, select **Http 4xx**. For **Aggregation**, select **Sum**.
    - Select **Add metric**, and under the **Metric** dropdown list, select **Response Time**. For **Aggregation**, select **Avg**.
 
-1. In the right menu bar, select **Pin to dashboard**. The **Pin to dashboard** pane appears.
+1. In the right menu bar, select **Pin to dashboard**. The **Pin to dashboard** pane appears; select the **Create New** tab.
 
 1. In the **Dashboard name** dropdown list, enter your web app name, and then select **Create and pin**.
 

@@ -14,36 +14,36 @@ In this module, you have learned how to design for non-relational data storage. 
 
 ### Learn more with Azure documentation
 
-- [Introduction to Azure Storage - Cloud storage on Azure | Microsoft Docs](/azure/storage/common/storage-introduction?toc=/azure/storage/blobs/toc.json)
+- [Introduction to Azure Storage](/azure/storage/common/storage-introduction?toc=/azure/storage/blobs/toc.json)
 
-- [Review your storage options - Cloud Adoption Framework | Microsoft Docs](/azure/cloud-adoption-framework/ready/considerations/storage-options)
+- [Review your storage options](/azure/cloud-adoption-framework/ready/considerations/storage-options)
 
-- [About Blob (object) storage - Azure Storage | Microsoft Docs](/azure/storage/blobs/storage-blobs-overview)
+- [What is Azure Blob storage?](/azure/storage/blobs/storage-blobs-overview)
 
-- [Introduction to Azure Files | Microsoft Docs](/azure/storage/files/storage-files-introduction)
+- [What is Azure Files?](/azure/storage/files/storage-files-introduction)
 
-- [Azure Disk Storage overview - Azure Virtual Machines | Microsoft Docs](/azure/virtual-machines/managed-disks-overview)
+- [Azure Disk Storage overview](/azure/virtual-machines/managed-disks-overview)
 
-- [Azure security baseline for Azure Storage | Microsoft Docs](/security/benchmark/azure/baselines/storage-security-baseline)
+- [Azure security baseline for Azure Storage](/security/benchmark/azure/baselines/storage-security-baseline)
 
-- [What is Azure NetApp Files | Microsoft Docs](/azure/azure-netapp-files/azure-netapp-files-introduction)
+- [What is Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-introduction)
 
 ### Learn more with self-paced training
 
-- [Choose the right disk storage for your virtual machine workload - Learn | Microsoft Docs](/learn/modules/choose-the-right-disk-storage-for-vm-workload/)
+- [Choose the right disk storage for your virtual machine workload](/training/modules/choose-the-right-disk-storage-for-vm-workload/)
 
-- [Configure blob storage - Learn | Microsoft Docs](/learn/modules/configure-blob-storage/)
+- [Configure blob storage](/training/modules/configure-blob-storage/)
 
-- [Optimize performance and costs by using Azure Disk Storage - Learn | Microsoft Docs](/learn/modules/optimize-performance-and-costs-using-azure-disk-storage/)
+- [Optimize performance and costs by using Azure Disk Storage](/training/modules/optimize-performance-and-costs-using-azure-disk-storage/)
 
-- [Caching and performance in Azure storage disks - Learn | Microsoft Docs](/learn/modules/caching-and-performance-azure-storage-and-disks/)
+- [Caching and performance in Azure storage disks](/training/modules/caching-and-performance-azure-storage-and-disks/)
 
-- [Secure your Azure virtual machine disks - Learn | Microsoft Docs](/learn/modules/secure-your-azure-virtual-machine-disks/)
+- [Secure your Azure virtual machine disks](/training/modules/secure-your-azure-virtual-machine-disks/)
 
-- [Introduction to securing data at rest on Azure - Learn | Microsoft Docs](/learn/modules/secure-data-at-rest/)
+- [Introduction to securing data at rest on Azure](/training/modules/secure-data-at-rest/)
 
-- [Choose a data storage approach in Azure - Learn](/learn/modules/choose-storage-approach-in-azure/)
+- [Choose a data storage approach in Azure](/training/modules/choose-storage-approach-in-azure/)
 
 ## Learn more with optional hands-on exercises
 
-- [Create a storage account using the Azure portal](/learn/modules/create-azure-storage-account)
+- [Create a storage account using the Azure portal](/training/modules/create-azure-storage-account)

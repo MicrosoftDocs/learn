@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic understanding of Azure Virtual Machines
   - Experience using command-line tools to automate tasks
-iconUrl: /learn/achievements/automate-virtual-machine-software-installation-configuration.svg
+iconUrl: /training/achievements/automate-virtual-machine-software-installation-configuration.svg
 levels:
 - beginner
 roles:

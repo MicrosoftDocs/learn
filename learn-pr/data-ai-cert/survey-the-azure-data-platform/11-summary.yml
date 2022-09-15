@@ -40,14 +40,14 @@ quiz:
       isCorrect: true
       explanation: "Correct. Azure Storage offers a massively scalable object store for data objects and file system services for the cloud. If you create a Blob storage account, you can't directly query the data."
 
-  - content: "Which Azure service is the best choice to store documentation about a data source?"
+  - content: "Which Azure service is the best choice to manage and govern your data?"
     choices: 
     - content: "Azure Data Factory"
       isCorrect: false
       explanation: "Azure Data Factory is a cloud-integration service that orchestrates the movement of data between data stores."
     - content: "Azure Purview"
       isCorrect: true
-      explanation: "Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud and software-as-a-service (SaaS) data."
+      explanation: "Correct. Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud and software-as-a-service (SaaS) data."
     - content: "Azure Data Lake Storage"
       isCorrect: false
       explanation: "Azure Data Lake Storage is a Hadoop-compatible data repository that can store any size or type of data."

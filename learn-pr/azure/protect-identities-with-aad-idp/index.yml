@@ -16,7 +16,7 @@ abstract: |
   - Describe the investigation and remediation features of Azure Active Directory Identity Protection.
 prerequisites: | 
   - Basic familiarity with Azure Active Directory
-iconUrl: /learn/achievements/protect-identities-with-aad-idp.svg
+iconUrl: /training/achievements/protect-identities-with-aad-idp.svg
 levels:
 - intermediate
 roles:

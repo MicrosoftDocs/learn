@@ -1,25 +1,25 @@
 From the point of view of the location of SAP landscape, there are two basic high-level infrastructure designs to consider:
 
- -  **Cross-premises** \- a single or multiple Azure IaaS–hosted SAP workloads with the requirement of being fully integrated into the existing on-premises SAP environment
- -  **Cloud-only** \- the complete SAP landscape runs on Azure IaaS (typically with the customer's on-premises infrastructure extended into Azure).
+- **Cross-premises** \- a single or multiple Azure IaaS–hosted SAP workloads with the requirement of being fully integrated into the existing on-premises SAP environment
+- **Cloud-only** \- the complete SAP landscape runs on Azure IaaS (typically with the customer's on-premises infrastructure extended into Azure).
 
 It's important to note that in cross-premises scenarios between Azure and on-premises customers’ environments, SAP systems must reside entirely in either one of the two environments. In particular, the following deployments aren't supported in cross-premises scenarios:
 
- -  **Running different layers of SAP applications in different deployment methods**. For example, running the DBMS layer on-premises, but the SAP application layer in VMs deployed as Azure VMs or vice versa.
- -  **Some components of an SAP layer in Azure and some on-premises**. For example, splitting Instances of the SAP application layer between on-premises and Azure VMs.
- -  **Distribution of VMs running SAP instances of one system over multiple Azure regions isn't supported**.
+- **Running different layers of SAP applications in different deployment methods**. For example, running the DBMS layer on-premises, but the SAP application layer in VMs deployed as Azure VMs or vice versa.
+- **Some components of an SAP layer in Azure and some on-premises**. For example, splitting Instances of the SAP application layer between on-premises and Azure VMs.
+- **Distribution of VMs running SAP instances of one system over multiple Azure regions isn't supported**.
 
 The reason for these restrictions is the requirement for a low latency high-performance network within one SAP system, especially between the application instances and the DBMS layer of an SAP system.
 
 Special planning of the systems and regions must occur when using multiple SAP systems that are highly integrated. Make sure to deploy these systems as close as possible to each other to minimize network latency. Examples of highly integrated SAP systems are:
 
- -  SAP BW reading data from SAP OLTP systems like ERP or CRM or SRM; or
- -  SAP SLT being used to replicate data between multiple SPA systems or even between SAP and non-SAP systems; or SAP S/4 connected to an SAP ERP system
+- SAP BW reading data from SAP OLTP systems like ERP or CRM or SRM; or
+- SAP SLT being used to replicate data between multiple SPA systems or even between SAP and non-SAP systems; or SAP S/4 connected to an SAP ERP system
 
 When connecting Microsoft Azure Virtual Networks back to the enterprise, there are two high-level options:
 
- -  **Connect through public endpoints of Azure VMs**
- -  **Connect through a VPN or Azure ExpressRoute**
+- **Connect through public endpoints of Azure VMs**
+- **Connect through a VPN or Azure ExpressRoute**
 
 Site-to-site connectivity via VPN or ExpressRoute is necessary for production scenarios. This type of connection is also needed for non-production scenarios that feed into production scenarios where SAP software is being used.
 
@@ -31,14 +31,14 @@ Traffic that flows between a hub VNet and spoke VNet using Azure VNet peering is
 
 For SAP enterprise applications, there are few use cases where they can function in an isolated network environment (perhaps a training landscape or sandbox), however, the reality is that such applications require on-premises network connectivity for many reasons, including:
 
- -  SAPGUI / RFC traffic
- -  SAP transports
- -  SAP Solution Manager / OSS connectivity
- -  SAP System Interfaces
- -  Connectivity to other SAP solutions
- -  Printing
- -  Backups
- -  Monitoring
+- SAPGUI / RFC traffic
+- SAP transports
+- SAP Solution Manager / OSS connectivity
+- SAP System Interfaces
+- Connectivity to other SAP solutions
+- Printing
+- Backups
+- Monitoring
 
 The fact that part of the SAP components is running on Azure shouldn't be perceivable to end users. Hence SAP Transport Correction System (STMS), RFC Communication, Printing, and Security (such as SSO) need to operate seamlessly when SAP systems reside in Azure.
 

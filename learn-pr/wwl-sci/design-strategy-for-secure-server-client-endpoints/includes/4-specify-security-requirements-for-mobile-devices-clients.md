@@ -12,7 +12,7 @@ When you specify security requirements for mobile devices, most of your focus wi
 
 #### App isolation and control
 
-When dealing with mobile devices that will also have corporate date, you need to ensure that corporate data and apps are isolated and can be managed separately from the user's owned apps.
+When dealing with mobile devices that will also have corporate data, you need to ensure that corporate data and apps are isolated and can be managed separately from the user's owned apps.
 
 ![Diagram that shows App isolation and control.](../media/app-isolation-control.png)
 

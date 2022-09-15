@@ -22,7 +22,7 @@ Let's examine more closely the differences in features:
 - MySQL version:
 
   - All deployment options support versions 5.7 and 8.0.
-  - Flexible Server deployment also supports version 5.6.
+  - Single Server deployment currently supports version 5.6 (though this version is retired).
   - MySQL on Azure VMs supports any MySQL version you want to install.
 - Compute scaling. All options can scale as necessary to accommodate load changes.
 - Network connectivity:

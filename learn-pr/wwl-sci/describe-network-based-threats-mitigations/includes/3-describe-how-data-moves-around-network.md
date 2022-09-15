@@ -26,7 +26,7 @@ The DNS holds a table that has the name of the website, for instance [microsoft.
 
 :::image type="content" source="../media/dns-lookup-table.png" alt-text="Diagram that shows a simplified representation of a DNS lookup table, where the domain microsoft.com has been found and gives the corresponding IP address.":::
 
-Each time your device connects to the internet, it uses a local DNS server to find the name of the website you're looking for. If the DNS can’t find the site, it checks other DNS servers. If the site can't be found, or the request times out, you'll get an message you've probably encountered before: the 404 page not found error.
+Each time your device connects to the internet, it uses a local DNS server to find the name of the website you're looking for. If the DNS can’t find the site, it checks other DNS servers. If the site can't be found, or the request times out, you'll get an error message such as "DNS server not responding".
 
 ### Routing
 

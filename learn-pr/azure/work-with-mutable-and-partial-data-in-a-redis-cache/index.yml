@@ -23,7 +23,7 @@ prerequisites: |
   - Experience using data in apps
   - Basic understanding of Azure Cache for Redis
   - Basic .NET knowledge
-iconUrl: /learn/achievements/work-with-mutable-and-partial-data-in-a-redis-cache.svg
+iconUrl: /training/achievements/work-with-mutable-and-partial-data-in-a-redis-cache.svg
 levels:
 - intermediate
 roles:

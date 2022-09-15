@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/26/2022
+  ms.date: 07/26/2022
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -32,21 +32,21 @@ quiz:
     choices:
     - content: "SonarCloud."
       isCorrect: false
-      explanation: "Incorrect. WhiteSource Bolt can be used to assess open-source security and licensing compliance."
-    - content: "WhiteSource Bolt."
+      explanation: "Incorrect. Mend Bolt can be used to assess open-source security and licensing compliance."
+    - content: "Mend Bolt."
       isCorrect: true
-      explanation: "Correct. WhiteSource Bolt can be used to assess open-source security and licensing compliance."
+      explanation: "Correct. Mend Bolt can be used to assess open-source security and licensing compliance."
     - content: "OWASP."
       isCorrect: false
-      explanation: "Incorrect. WhiteSource Bolt can be used to assess open-source security and licensing compliance."
+      explanation: "Incorrect. Mend Bolt can be used to assess open-source security and licensing compliance."
   - content: "Which of the following situations GitHub Dependabot detects vulnerable dependencies and send Dependabot alerts about them?"
     choices:
     - content: "A new vulnerability is added to the GitHub Advisory database."
       isCorrect: true
-      explanation: "Correct. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from WhiteSource is processed, Dependency graph for a repository changes."
+      explanation: "Correct. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from Mend is processed, Dependency graph for a repository changes."
     - content: "A new code is committed to the repository."
       isCorrect: false
-      explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from WhiteSource is processed, Dependency graph for a repository changes."
+      explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from Mend is processed, Dependency graph for a repository changes."
     - content: "A deployment succeeds."
       isCorrect: false
-      explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from WhiteSource is processed, Dependency graph for a repository changes."
+      explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from Mend is processed, Dependency graph for a repository changes."

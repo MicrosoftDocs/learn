@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-manipulate-repository-objects.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which property returned by the Get-CimClass cmdlet lists the methods supported by that class?"
+    choices:
+    - content: "CimClassProperties"
+      isCorrect: false
+      explanation: "Incorrect. The CimClassMethods property contains a list of methods that can be invoked for the object class."
+    - content: "CimClassQualifiers"
+      isCorrect: false
+      explanation: "Incorrect. The CimClassMethods property contains a list of methods that can be invoked for the object class."
+    - content: "CimClassMethods"
+      isCorrect: true
+      explanation: "Correct. The CimClassMethods property contains a list of methods that can be invoked for the object class."
+  - content: "Which of the following cmdlets uses direct invocation on an object?"
+    choices:
+    - content: "Invoke-WmiMethod cmdlet"
+      isCorrect: true
+      explanation: "Correct. You can use the Invoke-WmiMethod cmdlet to invoke methods directly."
+    - content: "Get-Member cmdlet"
+      isCorrect: false
+      explanation: "Incorrect. You can use the Invoke-WmiMethod cmdlet to invoke methods directly."
+    - content: "Get-CimInstance cmdlet"
+      isCorrect: false
+      explanation: "Incorrect. You can use the Invoke-WmiMethod cmdlet to invoke methods directly."

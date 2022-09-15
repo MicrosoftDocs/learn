@@ -5,11 +5,6 @@ Microsoft Purview Compliance Manager is a feature in the Microsoft Purview compl
 
 The following video provides a quick overview of Compliance Manager.
 
-> [!NOTE]
-> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the video may not reflect the most recent updates.
-
-</br>
-
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
 
 Compliance Manager helps simplify compliance and reduce risk by providing:
@@ -64,8 +59,5 @@ Compliance Manager provides many benefits, including:
 ### Interactive guide
 
 In this interactive guide, you’ll explore Compliance Manager. Select the image below to get started and follow the prompts on the screen.
-
-> [!NOTE]
-> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
 
 [![Interactive guide - Explore Compliance Manager](../media/5-compliance-manager-interactive-guide.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/explore-compliance-manager/index.html?azure-portal=true)

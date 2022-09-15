@@ -27,7 +27,7 @@ prerequisites: |
   - Know the technologies that enable cloud computing
   - Understand how cloud service providers pay for and bill for the cloud
   - Know what datacenters are and why they exist
-iconUrl: /learn/achievements/cmu-cloud-developer/design-a-data-center.svg
+iconUrl: /training/achievements/cmu-cloud-developer/design-a-data-center.svg
 hidden: true
 levels:
 - beginner

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-powershell-drives-powershell.manage-file-system-powershell
+title: Manage the file system in PowerShell
+metadata:
+  title: Manage the file system in PowerShell
+  description: "Manage the file system in PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-manage-file-system-powershell.md)]

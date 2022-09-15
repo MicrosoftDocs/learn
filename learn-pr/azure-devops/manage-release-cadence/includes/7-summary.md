@@ -8,7 +8,7 @@ As a bonus, in this module you also learned how to roll forward an unintended ch
 
 ## How is the team measuring up?
 
-In the _Assess your existing software development process_ module, Mara did a [value-stream mapping exercise](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true). The exercise helped the team analyze their current release-cycle process.
+In the _Assess your existing software development process_ module, Mara did a [value-stream mapping exercise](/training/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true). The exercise helped the team analyze their current release-cycle process.
 
 Recall that the *activity ratio*, or efficiency, is *process time* divided by *total lead time*: 
 
@@ -56,5 +56,5 @@ Use these additional resources to learn more about App Service, deployment slots
 
 * [App Service documentation](/azure/app-service?azure-portal=true)
 * [Deploy a website to Azure by using App Service](../../../paths/deploy-a-website-with-azure-app-service/index.yml?azure-portal=true)
-* [Stage a web app deployment for testing and rollback by using App Service deployment slots](/learn/modules/stage-deploy-app-service-deployment-slots?azure-portal=true)
+* [Stage a web app deployment for testing and rollback by using App Service deployment slots](/training/modules/stage-deploy-app-service-deployment-slots?azure-portal=true)
 * [Set up staging environments in App Service](/azure/app-service/deploy-staging-slots?azure-portal=true)

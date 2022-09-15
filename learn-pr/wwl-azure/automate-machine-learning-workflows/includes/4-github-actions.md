@@ -3,7 +3,7 @@ When you want to automate workflows with GitHub, you use **GitHub Actions**.
 GitHub is primarily used to host code projects. When you host your machine learning code in a GitHub repository (repo), you can create GitHub Actions to automatically build, test, and deploy your code.
 
 > [!Note]
-> To use GitHub Actions with Azure Machine Learning pipelines, you need to [allow your GitHub repo to access your Azure Machine Learning workspace through a **secure connection**](/learn/modules/introduction-development-operations-principles-for-machine-learn/4-integrate-azure-development-operations-tools).
+> To use GitHub Actions with Azure Machine Learning pipelines, you need to [allow your GitHub repo to access your Azure Machine Learning workspace through a **secure connection**](/training/modules/introduction-development-operations-principles-for-machine-learn/4-integrate-azure-development-operations-tools).
 
 You'll learn how to use GitHub Actions to run an Azure Machine Learning pipeline.
 

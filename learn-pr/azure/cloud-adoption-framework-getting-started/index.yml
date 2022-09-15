@@ -17,7 +17,7 @@ abstract: |
   - Get started on the proper course of action by using shared guidance and related Learn modules.
 prerequisites: |
   - A general understanding of your current cloud adoption plan and an understanding of the roadblocks that might prevent your organization from being successful.
-iconUrl: /learn/achievements/cloud-adoption-framework-getting-started.svg
+iconUrl: /training/achievements/cloud-adoption-framework-getting-started.svg
 ratingEnabled: true
 levels:
 - beginner

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-exchange-online-use-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which cmdlet can you use to connect to Exchange Online and manage mailboxes?"
+    choices:
+    - content: "`Connect-SPOTenant`"
+      isCorrect: false
+      explanation: "Incorrect. After you install the ExchangeManagement module, you can use `Connect-ExchangeOnline` to connect to Exchange Online and manage mailboxes."
+    - content: "`Connect-MSOnline`"
+      isCorrect: false
+      explanation: "Incorrect. After you install the ExchangeManagement module, you can use `Connect-ExchangeOnline` to connect to Exchange Online and manage mailboxes."
+    - content: "`Connect-ExchangeOnline`"
+      isCorrect: true
+      explanation: "Correct. After you install the ExchangeManagement module, you can use `Connect-ExchangeOnline` to connect to Exchange Online and manage mailboxes."
+  - content: "Which cmdlet should you use to configure autoaccept settings for a resource mailbox?"
+    choices:
+    - content: "`Set-CalendarProcessing`"
+      isCorrect: true
+      explanation: "Correct. After you create a resource mailbox, you can use the `Set-CalendarProcessing` cmdlet to configure the settings that control when meeting requests are automatically accepted."
+    - content: "`Set-AzureADUser`"
+      isCorrect: false
+      explanation: "Incorrect. After you create a resource mailbox, you can use the `Set-CalendarProcessing` cmdlet to configure the settings that control when meeting requests are automatically accepted."
+    - content: "`Set-MailboxFolderPermission`"
+      isCorrect: false
+      explanation: "Incorrect. After you create a resource mailbox, you can use the `Set-CalendarProcessing` cmdlet to configure the settings that control when meeting requests are automatically accepted."

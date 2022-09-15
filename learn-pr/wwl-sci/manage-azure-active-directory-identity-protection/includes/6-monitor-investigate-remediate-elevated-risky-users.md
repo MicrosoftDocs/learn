@@ -6,7 +6,7 @@ All three reports allow for downloading of events in .CSV format for further ana
 
 Organizations can take advantage of the Microsoft Graph API integrations to aggregate data with other sources they may have access to as an organization.
 
-You can find the three reports in the **Azure portal** &gt; **Azure Active Directory** &gt; **Security**.
+You can find the three reports in the **Azure portal**, then **Azure Active Directory**, and then **Security**.
 
 ### Navigating the reports
 
@@ -16,25 +16,24 @@ Selecting individual entries may enable additional entries at the top of the rep
 
 Selecting individual entries expands a details window below the detections. The details view allows administrators to investigate and perform actions on each detection.
 
-:::image type="content" source="../media/identity-protection-risky-sign-ins-report-ced1cd00.png" alt-text="Example Identity Protection report showing risky sign-ins and details":::
-
+:::image type="content" source="../media/identity-protection-risky-sign-ins-report.png" alt-text="Screenshot of the Identity Protection report showing risky sign-ins and details.":::
 
 ### Risky users
 
 With the information provided by the risky users report, administrators can find:
 
- -  Which users are at risk, have had risk remediated, or have had risk dismissed?
- -  Details about detections.
- -  History of all risky sign-ins.
- -  Risk history.
+- Which users are at risk, have had risk remediated, or have had risk dismissed?
+- Details about detections.
+- History of all risky sign-ins.
+- Risk history.
 
 Administrators can then choose to take action on these events. They can choose to:
 
- -  Reset the user password.
- -  Confirm user compromise.
- -  Dismiss user risk.
- -  Block user from signing in.
- -  Investigate further using Azure ATP.
+- Reset the user password.
+- Confirm user compromise.
+- Dismiss user risk.
+- Block user from signing in.
+- Investigate further using Azure ATP.
 
 ### Risky sign-ins
 
@@ -42,19 +41,19 @@ The risky sign-ins report contains filterable data for up to the past 30 days (o
 
 With the information provided by the risky sign-ins report, administrators can find:
 
- -  Which sign-ins are classified as at risk, confirmed compromised, confirmed safe, dismissed, or remediated.
- -  Real-time and aggregate risk levels associated with sign-in attempts.
- -  Detection types triggered.
- -  Conditional Access policies applied.
- -  MFA details.
- -  Device information.
- -  Application information.
- -  Location information.
+- Which sign-ins are classified as at risk, confirmed compromised, confirmed safe, dismissed, or remediated.
+- Real-time and aggregate risk levels associated with sign-in attempts.
+- Detection types triggered.
+- Conditional Access policies applied.
+- MFA details.
+- Device information.
+- Application information.
+- Location information.
 
 Administrators can then choose to take action on these events. Administrators can choose to:
 
- -  Confirm sign-in compromise.
- -  Confirm sign-in safe.
+- Confirm sign-in compromise.
+- Confirm sign-in safe.
 
 ### Risk detections
 
@@ -62,9 +61,9 @@ The risk detections report contains filterable data for up to the past 90 days (
 
 With the information provided by the risk detections report, administrators can find:
 
- -  Information about each risk detection including type.
- -  Other risks triggered at the same time.
- -  Sign-in attempt location.
+- Information about each risk detection including type.
+- Other risks triggered at the same time.
+- Sign-in attempt location.
 
 Administrators can then choose to return to the user's risk or sign-ins report to take actions based on information gathered.
 
@@ -75,7 +74,7 @@ The risk detection report also provides a clickable link to the detection in the
 
 ## Remediate risks and unblock users
 
-After completing your investigation, you will want to take action to remediate the risk or unblock users. Organizations also have the option to enable automated remediation using their risk policies. Organizations should try to close all risk detections that they are presented with in a time period your organization is comfortable with. Microsoft recommends closing events as soon as possible because time matters when working with risk.
+After completing your investigation, you'll want to take action to remediate the risk or unblock users. Organizations also have the option to enable automated remediation using their risk policies. Organizations should try to close all risk detections that they're presented with in a time period your organization is comfortable with. Microsoft recommends closing events as soon as possible because time matters when working with risk.
 
 ### Remediation
 
@@ -85,10 +84,10 @@ Some risk detections may be marked by Identity Protection as "Closed (system)" b
 
 Administrators have the following options to remediate:
 
- -  Self-remediation with risk policy.
- -  Manual password reset.
- -  Dismiss user risk.
- -  Close individual risk detections manually.
+- Self-remediation with risk policy.
+- Manual password reset.
+- Dismiss user risk.
+- Close individual risk detections manually.
 
 ### Self-remediation with risk policy
 
@@ -98,30 +97,30 @@ Some detections may not raise risk to the level where a user self-remediation wo
 
 ### Manual password reset
 
-If requiring a password reset using a user risk policy is not an option, administrators can close all risk detections for a user with a manual password reset.
+If requiring a password reset using a user risk policy isn't an option, administrators can close all risk detections for a user with a manual password reset.
 
 Administrators are given two options when resetting a password for their users:
 
-**Generate a temporary password** \- By generating a temporary password, you can immediately bring an identity back into a safe state. This method requires contacting the affected users since they need to know what the temporary password is. Because the password is temporary, the user is prompted to change the password to something new during the next sign-in.
+**Generate a temporary password** - By generating a temporary password, you can immediately bring an identity back into a safe state. This method requires contacting the affected users since they need to know what the temporary password is. Because the password is temporary, the user is prompted to change the password to something new during the next sign-in.
 
-**Require the user to reset password** \- Requiring the users to reset passwords enables self-recovery without contacting help desk or an administrator. This method only applies to users who are registered for Azure AD MFA and SSPR. For users who have not been registered, this option isn't available.
+**Require the user to reset password** - Requiring the users to reset passwords enables self-recovery without contacting help desk or an administrator. This method only applies to users who are registered for Azure AD MFA and SSPR. For users who haven't been registered, this option isn't available.
 
 ### Dismiss user risk
 
-If a password reset is not an option for you because, for example, the user has been deleted, you can choose to dismiss user risk detections.
+If a password reset isn't an option for you because, for example, the user has been deleted, you can choose to dismiss user risk detections.
 
-When you click **Dismiss user risk**, all events are closed and the affected user is no longer at risk. However, because this method doesn't have an impact on the existing password, it doesn't bring the related identity back into a safe state.
+When you select **Dismiss user risk**, all events are closed and the affected user is no longer at risk. However, because this method doesn't affect the existing password, it doesn't bring the related identity back into a safe state.
 
 ### Close individual risk detections manually
 
-By closing individual risk detections manually, you can lower the user risk level. Typically, risk detections are closed manually in response to a related investigation, such as when talking to a user reveals that an active risk detection is not required anymore.
+By closing individual risk detections manually, you can lower the user risk level. Typically, risk detections are closed manually in response to a related investigation, such as when talking to a user reveals that an active risk detection isn't required anymore.
 
 When closing risk detections manually, you can choose to take any of the following actions to change the status of a risk detection:
 
- -  Confirm user compromised.
- -  Dismiss user risk.
- -  Confirm sign-in safe.
- -  Confirm sign-in compromised.
+- Confirm user compromised.
+- Dismiss user risk.
+- Confirm sign-in safe.
+- Confirm sign-in compromised.
 
 ### Unblocking users
 
@@ -131,34 +130,34 @@ An administrator may choose to block a sign-in based on their risk policy or inv
 
 To unblock an account blocked due to user risk, administrators have the following options:
 
- -  **Reset password** \- You can reset the user's password.
- -  **Dismiss user risk** \- The user risk policy blocks a user if the configured user risk level for blocking access has been reached. You can reduce a user's risk level by dismissing user risk or manually closing reported risk detections.
- -  **Exclude the user from policy** \- If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
- -  **Disable policy** \- If you think that your policy configuration is causing issues for all your users, you can disable the policy.
+- **Reset password** - You can reset the user's password.
+- **Dismiss user risk** - The user risk policy blocks a user if the configured user risk level for blocking access has been reached. You can reduce a user's risk level by dismissing user risk or manually closing reported risk detections.
+- **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
+- **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
 
 ### Unblocking based on sign-in risk
 
 To unblock an account based on sign-in risk, administrators have the following options:
 
- -  **Sign in from a familiar location or device** \- A common reason for blocked suspicious sign-ins are sign-in attempts from unfamiliar locations or devices. Your users can quickly determine whether this reason is the blocking reason by trying to sign in from a familiar location or device.
- -  **Exclude the user from policy** \- If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
- -  **Disable policy** \- If you think that your policy configuration is causing issues for all your users, you can disable the policy.
+- **Sign in from a familiar location or device** - A common reason for blocked suspicious sign-ins are sign-in attempts from unfamiliar locations or devices. Your users can quickly determine whether this reason is the blocking reason by trying to sign in from a familiar location or device.
+- **Exclude the user from policy** - If you think that the current configuration of your sign-in policy is causing issues for specific users, you can exclude the users from it.
+- **Disable policy** - If you think that your policy configuration is causing issues for all your users, you can disable the policy.
 
 ### PowerShell preview
 
-Using the Microsoft Graph PowerShell SDK Preview module, organizations can manage risk using PowerShell. The preview modules and sample code are located in the Azure AD GitHub repo (https://github.com/AzureAD/IdentityProtectionTools).
+Using the Microsoft Graph PowerShell SDK Preview module, organizations can manage risk using PowerShell. The preview modules and sample code are located in the [Azure AD GitHub repo](https://github.com/AzureAD/IdentityProtectionTools).
 
 ## Use the Microsoft Graph API
 
-Microsoft Graph is the Microsoft unified API endpoint and the home of Azure Active Directory Identity Protection APIs. There are three APIs that expose information about risky users and sign-ins: riskDetection, riskyUsers, and signIn.
+Microsoft Graph is the Microsoft unified API endpoint and the home of Azure Active Directory Identity Protection APIs. There are three APIs that expose information about risky users and sign-ins: `riskDetection, riskyUsers, and signIn`.
 
-**riskDetection** allows you to query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection.
+**`riskDetection`** allows you to query Microsoft Graph for a list of both user and sign-in linked risk detections and associated information about the detection.
 
-**riskyUsers** allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky.
+**`riskyUsers`** allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky.
 
-**signIn** allows you to query Microsoft Graph for information on Azure AD sign-ins with specific properties related to risk state, detail, and level.
+**`signIn`** allows you to query Microsoft Graph for information on Azure AD sign-ins with specific properties related to risk state, detail, and level.
 
-This section gets you started with connecting to the Microsoft Graph and querying these APIs. For an in-depth introduction, full documentation, and access to the Graph Explorer, see the Microsoft Graph site (https://graph.microsoft.io/) or the specific reference documentation for the riskDetection, riskyUsers, and signIn APIs.
+This section gets you started with connecting to the Microsoft Graph and querying these APIs. For an in-depth introduction, full documentation, and access to the Graph Explorer, see the Microsoft Graph site (https://graph.microsoft.io/) or the specific reference documentation for the `riskDetection, riskyUsers, and signIn` APIs.
 
 ### Connect to Microsoft Graph
 
@@ -167,12 +166,12 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 ### Retrieve your domain name
 
 1.  Sign in to the Azure portal.
-2.  Browse to **Azure Active Directory** &gt; **Custom domain names**.
-3.  Take note of the .onmicrosoft.com domain. You will need this information in a later step.
+2.  Browse to **Azure Active Directory**, then **Custom domain names**.
+3.  Take note of the .onmicrosoft.com domain. You'll need this information in a later step.
 
 ### Create a new app registration
 
-1.  In the Azure portal, browse to **Azure Active Directory** &gt; **App registrations**.
+1.  In the Azure portal, browse to **Azure Active Directory**, then **App registrations**.
 2.  Select **New registration**.
 3.  On the **Create** page, perform the following steps:
     
@@ -184,9 +183,9 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 ### Configure API permissions
 
 1.  From the **Application** you created, select **API permissions**.
-2.  On the **Configured permissions** page, in the toolbar on the top, click **Add a permission**.
-3.  On the **Add API access** page, click **Select an API**.
-4.  On the **Select an API** page, select **Microsoft Graph**, and then click **Select**.
+2.  On the **Configured permissions** page, in the toolbar on the top, select **Add a permission**.
+3.  On the **Add API access** page, choose **Select an API**.
+4.  On the **Select an API** page, select **Microsoft Graph**, and then select **Select**.
 5.  On the **Request API permissions** page:
     
     1.  Select **Application permissions**.
@@ -196,41 +195,40 @@ There are four steps to accessing Identity Protection data through Microsoft Gra
 
 ### Configure a valid credential
 
-1.  From the **Application** you created, select **Certificates &amp; secrets**.
+1.  From the **Application** you created, select **Certificates and secrets**.
 2.  Under **Client secrets**, select **New client secret**.
     
     1.  Give the client secret a **Description** and set the expiration time period according to your organizational policies.
     2.  Select **Add**.
 
-> [!NOTE]
-> If you lose this key, you will have to return to this section and create a new key. Keep this key a secret: Anyone who has it can access your data.
+         > [!NOTE]
+         > If you lose this key, you'll have to return to this section and create a new key. Keep this key a secret: Anyone who has it can access your data.
 
 ### Authenticate to Microsoft Graph and query the Identity Protection risk detections API
 
 At this point, you should have:
 
- -  The name of your tenant's domain
- -  The Application (client) ID
- -  The client secret or certificate
+- The name of your tenant's domain
+- The Application (client) ID
+- The client secret or certificate
 
 To authenticate, send a post request to `https://login.microsoft.com` with the following parameters in the body:
 
- -  grant\_type: “**client\_credentials**”
- -  resource: `https://graph.microsoft.com`
- -  client\_id:
- -  client\_secret:
+- grant_type: “**client_credentials**”
+- resource: `https://graph.microsoft.com`
+- client_id:
+- client_secret:
 
-If successful, this request returns an authentication token.To call the API, create a header with the following parameter:
+If successful, this request returns an authentication token. To call the API, create a header with the following parameter:
 
 ```http
-`Authorization`="<token_type> <access_token>"
-
+Authorization`="<token_type> <access_token>"
 
 ```
 
 When authenticating, you can find the token type and access token in the returned token.
 
-Send this header as a request to the following API URL: https://graph.microsoft.com/v1.0/identityProtection/riskDetections
+Send this header as a request to the following API URL: `https://graph.microsoft.com/v1.0/identityProtection/riskDetections`.
 
 The response, if successful, is a collection of identity risk detections and associated data in the OData JSON format, which can be parsed and handled as you see fit.
 
@@ -241,7 +239,7 @@ This sample shows the use of a shared secret to authenticate. In a production en
 Here’s sample code for authenticating and calling the API using PowerShell. Just add your client ID, the secret key, and the tenant domain.
 
 ```powershell
-$ClientID      = "<your client ID here>"        # Should be a ~36 hex character string; insert your info here
+    $ClientID      = "<your client ID here>"        # Should be a ~36 hex character string; insert your info here
 
     $ClientSecret  = "<your client secret here>"    # Should be a ~44 character string; insert your info here
 
@@ -251,9 +249,9 @@ $ClientID      = "<your client ID here>"        # Should be a ~36 hex character 
 
     $resource      = "https://graph.microsoft.com"
 
-    $body      = @{grant_type="client_credentials";resource=$resource;client_id=$ClientID;client_secret=$ClientSecret}
+    $body          = @{grant_type="client_credentials";resource=$resource;client_id=$ClientID;client_secret=$ClientSecret}
 
-    $oauth      = Invoke-RestMethod -Method Post -Uri $loginURL/$tenantdomain/oauth2/token?api-version=1.0 -Body $body
+    $oauth         = Invoke-RestMethod -Method Post -Uri $loginURL/$tenantdomain/oauth2/token?api-version=1.0 -Body $body
 
     Write-Output $oauth
 
@@ -282,22 +280,20 @@ $ClientID      = "<your client ID here>"        # Should be a ~36 hex character 
 
 ```
 
-### Get all of the offline risk detections (riskDetection API)
+### Get all of the offline risk detections (`riskDetection` API)
 
-With Identity Protection sign-in risk policies, you can apply conditions when risk is detected in real time. But what about detections that are discovered offline? To understand what detections occurred offline and, thus, would not have triggered the sign-in risk policy, you can query the riskDetection API.
+With Identity Protection sign-in risk policies, you can apply conditions when risk is detected in real time. But what about detections that are discovered offline? To understand what detections occurred offline and, thus, wouldn't have triggered the sign-in risk policy, you can query the `riskDetection` API.
 
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskDetections?$filter=detectionTimingType eq 'offline'
 
-
 ```
 
-### Get all of the users who successfully passed an MFA challenge triggered by risky sign-ins policy (riskyUsers API)
+### Get all of the users who successfully passed an MFA challenge triggered by risky sign-ins policy (`riskyUsers` API)
 
-To understand the impact Identity Protection risk-based policies have on your organization, you can query all of the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information can help you understand which users Identity Protection may have falsely detected as a risk and which of your legitimate users may be performing actions that the AI deems risky.
+To understand the value Identity Protection risk-based policies have on your organization, you can query all of the users who successfully passed an MFA challenge triggered by a risky sign-ins policy. This information can help you understand which users Identity Protection may have falsely detected as a risk and which of your legitimate users may be performing actions that the AI deems risky.
 
 ```http
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
-
 
 ```

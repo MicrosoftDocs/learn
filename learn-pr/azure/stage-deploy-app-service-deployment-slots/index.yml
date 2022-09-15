@@ -18,7 +18,7 @@ abstract: |
   - Swap slots to deploy a web app or roll back a deployment.
 prerequisites: |
   - Basic experience deploying apps to App Service
-iconUrl: /learn/achievements/stage-deploy-app-service-deployment-slots.svg
+iconUrl: /training/achievements/stage-deploy-app-service-deployment-slots.svg
 levels:
 - beginner
 roles:

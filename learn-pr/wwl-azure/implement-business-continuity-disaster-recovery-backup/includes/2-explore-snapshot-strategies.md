@@ -2,11 +2,11 @@ The frequency of snapshots for the different types depends on whether you use th
 
 In the considerations and recommendations that follow, the assumption is that you do not use the disaster recovery functionality that SAP HANA Large Instances offers. Instead, you use the storage snapshots to have backups and be able to provide point-in-time recovery for the last 30 days. Given the limitations of the number of snapshots and space, consider the following requirements:
 
- -  The recovery time for point-in-time recovery.
- -  The space used.
- -  The recovery point and recovery time objectives for potential recovery from a disaster.
- -  The eventual execution of SAP HANA full-database backups against disks. Whenever a full-database backup against disks or the Backint interface is performed, the execution of the storage snapshots fails. If you plan to run full-database backups on top of storage snapshots, make sure that the execution of the storage snapshots is disabled during this time.
- -  The number of snapshots per volume. Although the hardware can sustain 255 snapshots per volume, you should stay well below this number. The recommendation is 250 or less.
+- The recovery time for point-in-time recovery.
+- The space used.
+- The recovery point and recovery time objectives for potential recovery from a disaster.
+- The eventual execution of SAP HANA full-database backups against disks. Whenever a full-database backup against disks or the Backint interface is performed, the execution of the storage snapshots fails. If you plan to run full-database backups on top of storage snapshots, make sure that the execution of the storage snapshots is disabled during this time.
+- The number of snapshots per volume. Although the hardware can sustain 255 snapshots per volume, you should stay well below this number. The recommendation is 250 or less.
 
 If you don't use the disaster recovery functionality of SAP HANA Large Instances, the snapshot period is less frequent. In such cases, perform the combined snapshots on **/hana/data** and **/hana/shared**, which includes **/usr/sap**, in 12-hour or 24-hour periods. Keep the snapshots for a month. The same is true for the snapshots of the log backup volume. The execution of SAP HANA transaction log backups against the log backup volume occurs in 5-minute to 15-minute periods.
 
@@ -24,7 +24,6 @@ The following example shows a cron schedule in /etc/crontab:
 22 12 * * * ./azure_hana_backup --type=logs --prefix=dailylogback --frequency=3min --retention=28
 
 30 00 * * * ./azure_hana_backup --type=boot --boottype=TypeI --prefix=dailyboot --frequency=15min --retention=28
-
 ```
 
 In the previous example, an hourly combined snapshot covers the volumes that contain the **/hana/data** and **/hana/shared/SID**, which includes **/usr/sap**, locations. Use this type of snapshot for a faster point-in-time recovery within the past two days. There's also a daily snapshot on those volumes. So, you have two days of coverage by hourly snapshots plus four weeks of coverage by daily snapshots. The transaction log backup volume also is backed up daily. These backups are kept for four weeks.
@@ -43,7 +42,6 @@ The snapshot of the transaction log backup volume is performed with a 2-minute d
 2,7,12,17,22,27,32,37,42,47,52,57 * * * * ./azure_hana_backup --type=logs --prefix=logback --frequency=3min --retention=48
 
 30 00 * * * ./azure_hana_backup --type=boot --boottype=TypeII --prefix=dailyboot --frequency=15min --retention=28
-
 ```
 
 SAP HANA performs regular writes against the **/hana/log** volume to document the committed changes to the database. On a regular basis, SAP HANA writes a savepoint to the **/hana/data** volume. As specified in crontab, an SAP HANA transaction log backup runs every 5 minutes.
@@ -55,8 +53,8 @@ You also see that an SAP HANA snapshot runs every hour as a result of triggering
 
 If you've set a commitment to users of a point-in-time recovery of 30 days, you need to:
 
- -  Access a combined storage snapshot over **/hana/data** and **/hana/shared/SID** that's 30 days old, in extreme cases.
- -  Have contiguous transaction log backups that cover the time between any of the combined storage snapshots. So, the oldest snapshot of the transaction log backup volume needs to be 30 days old. This isn't the case if you copy the transaction log backups to another NFS share that's located on Azure Storage. In that case, you might pull old transaction log backups from that NFS share.
+- Access a combined storage snapshot over **/hana/data** and **/hana/shared/SID** that's 30 days old, in extreme cases.
+- Have contiguous transaction log backups that cover the time between any of the combined storage snapshots. So, the oldest snapshot of the transaction log backup volume needs to be 30 days old. This isn't the case if you copy the transaction log backups to another NFS share that's located on Azure Storage. In that case, you might pull old transaction log backups from that NFS share.
 
 To benefit from storage snapshots and the eventual storage replication of transaction log backups, change the location to which SAP HANA writes the transaction log backups. You can make this change in SAP HANA Studio.
 
@@ -70,9 +68,9 @@ If the database has never been backed up, the final step is to perform a file-ba
 
 On a specific storage volume, you can monitor the number of snapshots and the storage consumption of those snapshots. The ls command doesn't show the snapshot directory or files. The Linux OS command du shows details about those storage snapshots because they're stored on the same volumes. Use the command with the following options:
 
- -  **du –sh .snapshot**: This option provides a total of all the snapshots within the snapshot directory.
- -  **du –sh --max-depth=1**: This option lists all the snapshots that are saved in the .snapshot folder and the size of each snapshot.
- -  **du –hc**: This option provides the total size used by all the snapshots.
+- **du –sh .snapshot**: This option provides a total of all the snapshots within the snapshot directory.
+- **du –sh --max-depth=1**: This option lists all the snapshots that are saved in the .snapshot folder and the size of each snapshot.
+- **du –hc**: This option provides the total size used by all the snapshots.
 
 Use these commands to make sure that the snapshots that are taken and stored don't consume all the storage on the volumes.
 
@@ -83,14 +81,14 @@ Use these commands to make sure that the snapshots that are taken and stored don
 
 To get more details on snapshots, use the script azure\_hana\_snapshot\_details. You can run this script in either location if there's an active server in the disaster recovery location. The script provides the following output, broken down by each volume that contains snapshots:
 
- -  The size of total snapshots in a volume
- -  The following details in each snapshot in that volume:
-    
-     -  Snapshot name
-     -  Create time
-     -  Size of the snapshot
-     -  Frequency of the snapshot
-     -  SAP HANA Backup ID associated with that snapshot, if relevant
+- The size of total snapshots in a volume
+- The following details in each snapshot in that volume:
+
+  - Snapshot name
+  - Create time
+  - Size of the snapshot
+  - Frequency of the snapshot
+  - SAP HANA Backup ID associated with that snapshot, if relevant
 
 ## Reduce the number of snapshots on a server
 
@@ -98,14 +96,12 @@ As previously explained, you can reduce the number of certain labels of snapshot
 
 ```bash
 ./azure_hana_backup --type=hana --prefix=dailyhana --frequency=15min --retention=28
-
 ```
 
 In the previous example, the snapshot label is dailyhana. The number of snapshots with this label to be kept is 28. As you respond to disk space consumption, you might want to reduce the number of stored snapshots. An easy way to reduce the number of snapshots to 15, for example, is to run the script with the last parameter set to 15:
 
 ```bash
 ./azure_hana_backup --type=hana --prefix=dailyhana --frequency=15min --retention=15
-
 ```
 
 If you run the script with this setting, the number of snapshots, which includes the new storage snapshot, is 15. The 15 most recent snapshots are kept, and the 15 older snapshots are deleted.
@@ -139,14 +135,14 @@ Before you send the request, you need to prepare. The SAP HANA on Azure team can
 
 To prepare for the request, follow these steps.
 
-1.  **Decide which snapshot to restore**. Only the **hana/data** volume is restored unless you instruct otherwise.
-2.  **Shut down the SAP HANA instance**.
-3.  **Unmount the data volumes on each SAP HANA database node**. If the data volumes are still mounted to the operating system, the restoration of the snapshot fails.
-4.  Open an Azure support request, and include instructions about the restoration of a specific snapshot:
-    
-     -  **During the restoration**: SAP HANA on Azure Service might ask you to attend a conference call to coordinate, verify, and confirm that the correct storage snapshot is restored.
-     -  **After the restoration**: SAP HANA on Azure Service notifies you when the storage snapshot is restored.
-5.  After the restoration process is complete, remount all the data volumes.
+1. **Decide which snapshot to restore**. Only the **hana/data** volume is restored unless you instruct otherwise.
+2. **Shut down the SAP HANA instance**.
+3. **Unmount the data volumes on each SAP HANA database node**. If the data volumes are still mounted to the operating system, the restoration of the snapshot fails.
+4. Open an Azure support request, and include instructions about the restoration of a specific snapshot:
+
+     - **During the restoration**: SAP HANA on Azure Service might ask you to attend a conference call to coordinate, verify, and confirm that the correct storage snapshot is restored.
+     - **After the restoration**: SAP HANA on Azure Service notifies you when the storage snapshot is restored.
+5. After the restoration process is complete, remount all the data volumes.
 
 ## Recover to another point in time
 

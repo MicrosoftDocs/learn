@@ -12,7 +12,6 @@ IoT Hub gives you a secure communication channel for your devices to send data.
  -  You have complete control over device access and can control connections at the per-device level.
  -  The IoT Hub Device Provisioning Service automatically provisions devices to the correct IoT hub when the device first boots up.
  -  Multiple authentication types support different device capabilities:
-    
      -  SAS token-based authentication to quickly get started with your IoT solution.
      -  Individual X.509 certificate authentication for secure, standards-based authentication.
      -  X.509 CA authentication for simple, standards-based enrollment.
@@ -46,7 +45,7 @@ You can manage your devices connected to IoT Hub with an array of built-in funct
  -  Set device state either per-device or based on common characteristics of devices.
  -  Automatically respond to a device-reported state change with message routing integration.
 
-## Connect your devices<br>
+## Connect your devices
 
 Use the Azure IoT device SDK libraries to build applications that run on your devices and interact with IoT Hub. Supported platforms include multiple Linux distributions, Windows, and real-time operating systems. Supported languages include C, C\#, Java, Python, and Node.js. IoT Hub and the device SDKs support a wide range of protocols for connecting devices, including HTTPS, AMQP, AMQP over WebSockets, MQTT, and MQTT over WebSockets.
 

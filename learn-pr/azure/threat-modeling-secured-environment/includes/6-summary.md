@@ -9,6 +9,6 @@ In this module, you:
 
 Additional Reading:
 
-- Learn more about [privileged access workstations](https://docs.microsoft.com/security/compass/overview).
+- Learn more about [privileged access workstations](/security/compass/overview).
 - Check out how Microsoft protects [high-risk environments](https://www.microsoft.com/itshowcase/protecting-high-risk-environments-with-secure-admin-workstations) with privileged access workstations.
 - See how an engineering group reduces risk with [privileged access workstations](https://www.microsoft.com/itshowcase/improving-security-by-protecting-elevated-privilege-accounts-at-microsoft).
