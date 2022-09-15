@@ -6,7 +6,7 @@ In this part, you'll:
 > * Update the pipeline to support CI/CD on a commit to the main branch.
 > * Define some pipeline variables to make the build pipeline easier to maintain.
 > * Add a task to build and publish the leaderboard container to your container registry.
-> * Add a task to publish Kubernetes manifests from the **Build** stage to download for use in the **Deploy** stage.
+> * Add a task to publish Kubernetes manifests from the **Build** stage so that they can be downloaded for use in the **Deploy** stage.
 > * Add a task to create an image pull secret for use between your Kubernetes and container registry instances.
 > * Add a task to deploy updated images to a Kubernetes cluster.
 > * Save the pipeline to trigger a CI/CD workflow.
