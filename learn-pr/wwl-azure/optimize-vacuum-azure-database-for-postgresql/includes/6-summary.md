@@ -7,4 +7,4 @@ Now that you've completed this module, you can:
 
 For more information about the topics covered in this module, see:
 
-- [Optimize autovacuum on an Azure Database for PostgreSQL - Single Server](/azure/postgresql/howto-optimize-autovacuum)
+- [Optimize autovacuum - Azure Database for PostgreSQL - Single Server | Microsoft Docs](/azure/postgresql/howto-optimize-autovacuum)
