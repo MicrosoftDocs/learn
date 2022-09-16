@@ -22,6 +22,6 @@ It's highly recommended that dev/test environments shouldn't share resources wit
 
 Using the blue/green deployment strategy is preferred for mission-critical workloads. This approach requires atleast two identical deployments running in parallel. Blue or the existing deployment serves user traffic while green or the new deployment is created, tested, and  prepared to receive traffic. If the green deployment is successful, it becomes the primary production environment and the blue deployment is decommissioned.
 
-> **Learn more: [Ephemeral blue/green deployments](s/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#ephemeral-bluegreen-deployments)**
+> **Learn more: [Ephemeral blue/green deployments](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#ephemeral-bluegreen-deployments)**
 
 
