@@ -27,15 +27,7 @@ quiz:
       explanation: 'An Azure service will show degraded or unhealthy if any of its underlying services have issues.'
     - content: 'Telemetry data from dashboards that visualize monitoring data.'
       isCorrect: false
-      explanation: 'Dashboards are used to visualize monitoring data and are decoupled from application components include data sinks.'
-  - content: 'Which of these strategies will help the operator troubleshoot issues quickly?'
-    choices:
-    - content: 'Setting alerts on threshold values on the dashboards.'
-      isCorrect: true
-      explanation: 'Dashboards should be used with alerts to raise immediate attention for issues.'
-    - content: 'Have the operator build out a comprehensive health model of the system.'
-      isCorrect: false
-      explanation: 'Health modeling is an exercise that should be conducted early in the design process by the solution architect.'
+      explanation: 'Dashboards are used to visualize monitoring data and are decoupled from application components.'
   - content: 'Which of these Azure services can be used as a unified data sink and retain data for a specified period?'
     choices:
     - content: 'Azure Application Insights'

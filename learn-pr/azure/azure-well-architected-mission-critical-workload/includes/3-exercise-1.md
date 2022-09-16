@@ -29,11 +29,11 @@ To get started on your design, we recommend these configurations settings.
 
 All queries sent by the health check API must be performed asynchronously and in parallel. Design health checks against the critical components like the database. The API should periodically check read and write operations. Implement those functions as separate probes so that reads and writes are checked independently.
 
-Use requests that mimic real application behavior without putting too much load on the services just from the health probes. To test also write requests, you need to design a way to remove test data efficiently so that it does not get mixed up with real user data.
+Use requests that mimic real application behavior without putting too much load on the services just from the health probes. To test also write requests, you need to design a way to remove test data efficiently so that it doesn't get mixed up with real user data.
 
 ### 2&ndash;Caching pattern
 
-To avoid overloading the downstream services with health checks, the health check API should cache results for a configurable number of seconds. Think of possible ways to achieve this.
+To avoid overloading the downstream services with health checks, the health check API should cache results for a configurable number of seconds. Think of possible ways to achieve this goal.
 
 ## Check your work
 
@@ -44,6 +44,6 @@ Here's an example [**Application Health Service**](/azure/architecture/reference
     - Cosmos DB read/write
     - Third party API  
 - Did you cache the results of health checking to reduce performance overhead? 
-- Did you log events in your health checks? Note the successes as well as the failures?
+- Did you log events in your health checks? Note the successes and the failures?
 - Have you applied Azure Application Insights log sampling to the health check logs?
 

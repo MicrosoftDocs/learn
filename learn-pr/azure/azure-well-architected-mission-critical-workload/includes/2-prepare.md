@@ -18,19 +18,19 @@ All components of this architecture are deployed to a single region.
 
 - **App Service plan** Standard S2 provides the compute platform that hosts the app. Autoscaling is enabled. In the development environment, Basic B1 SKU is used.
 
-- **App Service** provides the application platform that runs the containerized the API code. The App Service Authentication feature is enabled for authorization. 
+- **App Service** provides the application platform that runs the API code in a container. The App Service Authentication feature is enabled for authorization. 
 
-- **Deployment slots** let you stage a deployment and then swap it with the production deployment. They are used in production only.
+- **Deployment slots** let you stage a deployment and then swap it with the production deployment. They're used in production only.
 
 - **Azure Container Registry** stores the containerized API code and is pushed through Continuous Integration/Continuous Delivery (CI/CD) pipelines created and managed by the workload team. The container registry is used by both production and dev/test environments. 
 
-- **Azure Cosmos DB with SQL API** stores all state related to the workload. The Cosmos DB database account has a single database that contains a few containers in the Shared throughput model. The Azure Cosmos account uses the Serverless capacity mode. There is one instance for production and one for dev/test.
+- **Azure Cosmos DB with SQL API** stores all state related to the workload. The Cosmos DB database account has a single database that contains a few containers in the Shared throughput model. The Azure Cosmos account uses the Serverless capacity mode. There's one instance for production and one for dev/test.
 
-- **Azure Key Vault** stores secrets needed for the API to make an HTTP POST call to an external, 3rd-party API as part of one request flow. The application accesses the secrets through a Key Vault reference in the Azure App Service’s app configuration. There is one Key Vault for production and one for dev/test.
+- **Azure Key Vault** stores secrets needed for the API to make an HTTP POST call to an external, 3rd-party API as part of one request flow. The application accesses the secrets through a Key Vault reference in the Azure App Service’s app configuration. There's one Key Vault for production and one for dev/test.
 
-- **Azure Log Analytics** is used as a unified sink to store logs and metrics for all Azure Diagnostics settings for all components used in the solution. There is one workspace for production and one for dev/test.
+- **Azure Log Analytics** is used as a unified sink to store logs and metrics for all Azure Diagnostics settings for all components used in the solution. There's one workspace for production and one for dev/test.
 
-- **Application Insights** is used for capturing telemetry and logs from the API. Application Insights uses the self-contained mode, not writing to a dedicated log analytics workspace. Production and dev/test do not share a common instance.
+- **Application Insights** is used for capturing telemetry and logs from the API. Application Insights uses the self-contained mode, not writing to a dedicated log analytics workspace. Production and dev/test don't share a common instance.
 
 - **Azure Pipelines** is used for CI/CD that builds, tests, and deploys the workload in preproduction and production environments. The pipelines are managed by the workload team, which also manages all of the infrastructure in their solution. Bicep is the choice of technology for Infrastructure-as-Code (IaC).
 
@@ -42,7 +42,7 @@ In the stamp, App Services is configured to automatically scale based on load.
 
 Separate environments are used for Production and Dev/Test. The Production environment uses App Service plan Standard SKU. This choice was made to have the capability of prewarming the application to a slot before deploying it to production. In the Dev/Test environment, the SKU is lowered to the Basic SKU for cost optimization. Both environments have their own instances of services. Only **Container Registry** is shared between the environments.
 
-The containerized API code is delivered in a single container image, that runs in App Service. The API has multiple HTTP endpoints that are used by various frontends for both reads and writes. The frontends are out of scope for this module. However, they are in scope in the big picture for the mission critical status of this solution. The code was instrumented with Application Insights to capture some basic telemetry. The development team of this code also manages the CI/CD pipeline for the API container image and the CI/CD pipelines.
+The containerized API code is delivered in a single container image, that runs in App Service. The API has multiple HTTP endpoints that are used by various frontends for both reads and writes. The frontends are out of scope for this module. However, they're in scope in the big picture for the mission critical status of this solution. The code was instrumented with Application Insights to capture some basic telemetry. The development team of this code also manages the CI/CD pipeline for the API container image and the CI/CD pipelines.
 
 ## Tradeoffs
 
@@ -50,7 +50,7 @@ However, as with everything, there are tradeoffs with the current architecture. 
 
 Also, access to the workload is overly pervasive. For example, without any virtual network integration, all Azure services can be directly reached over the public internet.
 
-When the solution was developed, the app development team used a single Azure Subscription, colocating dev/test and production in the the same subscription. The choice was made to make tooling easy for the DevOps teams. But,  production resources and dev/test resources aren't completely isolated. Some resources are shared between the two environments. They did get an isolated subscription from the rest of the solutions from Contoso Shoes.
+When the solution was developed, the app development team used a single Azure Subscription, colocating dev/test and production in the same subscription. The choice was made to make tooling easy for the DevOps teams. But,  production resources and dev/test resources aren't completely isolated. Some resources are shared between the two environments. They did get an isolated subscription from the rest of the solutions from Contoso Shoes.
 	
 Also, the dev/test environment is a single environment that is shared across all members of the development and QA team. The choice was justified given the size of the teams and coordination between them didn't need a higher degree of isolation. As the team and solution evolved, the single dev/test environment increasingly caused integration complexity as workstream lifecycles collide. The churn and its impact on reliability have been expensive.
 

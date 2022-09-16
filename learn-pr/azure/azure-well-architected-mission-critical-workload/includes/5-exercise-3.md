@@ -57,7 +57,7 @@ Here's an example for Azure App Services
 
 For each user and system flow, define an overall status. You'll need to aggregate the health status of individual components that participate in that flow. 
 
-Suppose a system flow is composed of an application component, Azure App Service plan, and App Services.  Note:replace with app service
+Suppose a system flow is composed of an application component, Azure App Service plan, and App Services.  
 
 |API|App Service plan|App Services|Health status|
 |---|---|---|---|
