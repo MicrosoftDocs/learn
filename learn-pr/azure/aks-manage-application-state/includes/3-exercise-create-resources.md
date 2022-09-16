@@ -1,6 +1,6 @@
 Now that you understand the basic concepts of external states and how to deal with them by using Kubernetes, let's create the resources that will support the application and then create the application itself.
 
-## Activate the Azure sandbox
+## Create a resource group
 
 >[!NOTE]
 > The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
@@ -84,7 +84,7 @@ Now you're going to deploy the AKS cluster so you can push your application imag
    az aks get-credentials --name $AKS_CLUSTER_NAME --resource-group $RESOURCE_GROUP
    ```
 
-   If you receive any messages about existing clusters, like the following:
+   If you receive any messages about existing clusters, for example:
 
    ```output
    A different object named ship-manager-cluster already exists in your kubeconfig file.
