@@ -42,7 +42,7 @@ For applications that require high durability, you can choose to copy the data i
 
 - With GRS or GZRS, the data in the secondary region isn't available for read or write access unless there's a failover to the secondary region. For read access to the secondary region, configure your storage account to use read-access geo-redundant storage (RA-GRS) or read-access geo-zone-redundant storage (RA-GZRS).
 
-### Things to consider when implementing redundancy support
+### Things to consider when using data redundancy
 
 You've reviewed the different options for implementing replication. Data redundancy is accomplished through a primary region and paired secondary region. As you plan the storage accounts and redundancy settings for Tailwind Traders, consider the following factor.
 

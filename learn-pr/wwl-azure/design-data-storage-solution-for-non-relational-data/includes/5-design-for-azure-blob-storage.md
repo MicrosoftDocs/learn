@@ -4,7 +4,7 @@ There are four access options: Premium Blob Storage, and the Hot, Cool, and Arch
 
 The four access options for Azure Blob Storage offer a range of features and support levels to help you optimize your storage costs. 
 
-| Feature | Premium Blob Storage | Hot tier | Cool tier | Archive tier |
+| Feature | Premium Blob Storage | Hot access tier | Cool access tier | Archive access tier |
 | --- | --- | --- | --- | ---|
 | **Availability** | 99.9% | 99.9% | 99% | Offline |
 | **Availability (RA-GRS reads)** | N/A | 99.99% | 99.9% | Offline |
