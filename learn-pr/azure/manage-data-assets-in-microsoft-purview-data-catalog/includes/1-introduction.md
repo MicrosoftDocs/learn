@@ -1,4 +1,4 @@
-Microsoft Purview (formerly Azure Purview) is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS), and multi-cloud data. The Microsoft Purview Data Catalog is an application within Microsoft Purview that enables your users to quickly find relevant data using a search experience with filters based on lenses such as glossary terms, classifications, sensitivity labels and more.
+Microsoft Purview (formerly Azure Purview) is a unified data governance service that helps you manage and govern your on-premises, software-as-a-service (SaaS), and multicloud data. The Microsoft Purview Data Catalog is an application within Microsoft Purview that enables your users to quickly find relevant data using a search experience with filters based on lenses such as glossary terms, classifications, sensitivity labels and more.
 
 :::image type="complex" source="../media/microsoft-purview.png" alt-text="Diagram showing the Microsoft Purview governance portal architecture.":::
    "In the Microsoft Purview governance portal architecture, on-premises, cloud, and S A A S data sources are flowing into the Data Map, which is at the bottom of the stack inside the Microsoft Purview governance portal. Data Catalog and Data Estate Insights sit on top of the data map, and on top of those are Data producers and consumers. Azure Synapse Analytics, SQL Server, Power BI, and Azure SQL are all shown extracting data from all levels of the Microsoft Purview governance portal stack."
@@ -8,12 +8,11 @@ The Microsoft Purview Data Catalog is one of two main pillars in Microsoft Purvi
 
 ## Scenario
 
-The Fabrikam Corp shoe company has expanded rapidly over the last year, going from a handful of employees and a single data lake, to a multi-regional business with data across several platforms. They've created a Microsoft Purivew proof of concept where they've scanned one of their data sources, and they need to know how to use the data catalog to see what kind of information Microsoft Purview has discovered and how they can customize and use this information.
-
+The Fabrikam Corp shoe company has expanded rapidly over the last year, going from a handful of employees and a single data lake, to a multi-regional business with data across several platforms. They've created a Microsoft Purview proof of concept where they've scanned one of their data sources, and they need to know how to use the data catalog to see what kind of information Microsoft Purview has discovered and how they can customize, organize, and use this information.
 
 ## What will we be doing?
 
-In this module we'll be exploring the Microsoft Purview Data Catalog and using it's main features:
+In this module we'll be exploring the Microsoft Purview Data Catalog and using its main features:
 
 - Search and browse data assets
 - Manage data assets

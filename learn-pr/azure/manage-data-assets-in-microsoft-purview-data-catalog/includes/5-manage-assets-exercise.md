@@ -8,24 +8,24 @@ You can edit assets both individually and in bulk. We'll do both in this example
 
 1. In the [Azure portal](https://portal.azure.com/), open your Microsoft Purview account and select **Open Microsoft Purview Governance Portal**.
 
-    :::image type="content" source="../media/manage-assets-exercise/azure-portal.png" alt-text="Screenshot of Microsoft Purivew account page in the Azure portal, with the Open Microsoft Purview Governance Portal button highlighted.":::
+    :::image type="content" source="../media/manage-assets-exercise/azure-portal.png" alt-text="Screenshot of Microsoft Purview account page in the Azure portal, with the Open Microsoft Purview Governance Portal button highlighted.":::
 
 1. The Microsoft Purview Governance Portal opens automatically to the home page of the Microsoft Purview Data Catalog.
 
-    :::image type="content" source="../media/manage-assets-exercise/data-catalog-homepage-inline.png" alt-text="Screenshot of the Microsoft Purview Governance portal open to the home page, which is the data catalog." lightbox="../media/manage-assets-exercise/data-catalog-homepage.png":::
+    :::image type="content" source="../media/manage-assets-exercise/data-catalog-homepage-inline.png" alt-text="Screenshot of the Microsoft Purview governance portal open to the home page, which is the data catalog." lightbox="../media/manage-assets-exercise/data-catalog-homepage.png":::
 
-1. Search for one of your data assets. If you completed the 'Deploy Microsoft Purview and Scan ADLS Gen 2' excercise before this one, and uploaded the dataset, you can use the same one as we're using in our example. We searched for the keyword 'country' and will select the **Queries by Country** asset.
+1. Search for one of your data assets. If you completed the 'Deploy Microsoft Purview and Scan ADLS Gen 2' exercise before this one, and uploaded the dataset, you can use the same one as we're using in our example. We searched for the keyword 'country' and will select the **Queries by Country** asset.
 
-1. Once you have opened your data asset, select the **Edit** option in the asset action bar.
+1. Once you've opened your data asset, select the **Edit** option in the asset action bar.
 
     :::image type="content" source="../media/manage-assets-exercise/edit-queries-by-country-inline.png" alt-text="Screenshot of an asset in Microsoft Purview with the edit button highlighted in the action menu." lightbox="../media/manage-assets-exercise/edit-queries-by-country.png":::
 
-1. From this menu we will be able to edit all the basic aspects of an asset. From the **Overview** page, you can:
+1. From this menu, we'll be able to edit all the basic aspects of an asset. From the **Overview** page, you can:
     1. Update the name to a friendlier name
     1. Add a description to your asset
     1. Add classifications to the entire asset
     1. Add glossary terms to the entire asset
-    1. If you are a **data curator** you can certify your data asset
+    1. If you're a **data curator** you can certify your data asset
     1. Add managed attributes to your asset.
 
     :::image type="content" source="../media/manage-assets-exercise/edit-asset-inline.png" alt-text="Screenshot of the edit asset page with the Overview tab highlighted." lightbox="../media/manage-assets-exercise/edit-asset.png":::
@@ -75,7 +75,7 @@ Now that we've made an edit to an individual asset, let's add some information a
 
     :::image type="content" source="../media/manage-assets-exercise/view-selected-inline.png" alt-text="Screenshot of the same returned results, with the view selected button highlighted at the bottom of the page." lightbox="../media/manage-assets-exercise/view-selected.png":::
 
-1. Here we can see all the assets we've selected listed with some additional details about them. We can deselect any we don't want in the list, we can close the list to select more, we can close and deselect all these assets, or we can select **Bulk edit** at the top of the page. Let's select **Bulk edit** at the top of the page.
+1. Here we can see all the assets we've selected listed with some other details about them. We can deselect any we don't want in the list, we can close the list to select more, we can close and deselect all these assets, or we can select **Bulk edit** at the top of the page. Let's select **Bulk edit** at the top of the page.
 
     :::image type="content" source="../media/manage-assets-exercise/select-bulk-edit-inline.png" alt-text="Screenshot of the selected assets page with the bulk edit button highlighted at the top." lightbox="../media/manage-assets-exercise/select-bulk-edit.png":::
 
@@ -109,7 +109,7 @@ Now that we've made an edit to an individual asset, let's add some information a
 
     :::image type="content" source="../media/manage-assets-exercise/data-curators.png" alt-text="Screenshot of a collection in Microsoft Purview with data curators shown in the role assignments menu." :::
 
-1. Though it is not required, an asset should be reviewed and have its description and other aspects updated and regularly maintained before it is certified, to verify that it is a good data source for use.
+1. Though it isn't required, an asset should be reviewed and have its description and other aspects updated and regularly maintained before it's certified, to verify that it's a good data source for use.
 
 1. To mark an asset as certified, navigate to the asset details of your asset and select **Edit**.
 

@@ -1,4 +1,4 @@
-In this exercise we're going to create a term in the business glossary, update our term, create a term template, and add a term to an asset.
+In this exercise we're going to, create a term in the business glossary, update our term, create a term template, and add a term to an asset.
 
 ## Create terms
 
@@ -24,7 +24,7 @@ In this exercise we're going to create a term in the business glossary, update o
 
     :::image type="content" source="../media/business-glossary-exercise/add-a-definition.png" alt-text="Screenshot of new term page with the definition box highlighted.":::
 
-1. Set the status for the term. Set to **Draft** if you'd like to review the term before implementing it. Set the term to **Approved** if it is ready to implement.
+1. Set the status for the term. Set to **Draft** if you'd like to review the term before implementing it. Set the term to **Approved** if it's ready to implement.
 
     :::image type="content" source="../media/business-glossary-exercise/set-status.png" alt-text="Screenshot of the new term page with the status dropdown menu open, showing all options.":::
 
@@ -64,7 +64,7 @@ A full sample CSV will be provided in the steps below.
 
 1. Select the term template you want to use. For now, let's choose **System default**.
 
-    :::image type="content" source="../media/business-glossary-exercise/select-default-term-template-for-bulk-inline.png" alt-text="Screenshot of the import terms page with the continue button highlighted at the bottom." lightbox="../media/business-glossary-exercise/select-default-term-template-for-bulk.png":::
+    :::image type="content" source="../media/business-glossary-exercise/select-default-term-template-for-bulk-inline.png" alt-text="Screenshot of the import terms page with the **Continue** button highlighted at the bottom." lightbox="../media/business-glossary-exercise/select-default-term-template-for-bulk.png":::
 
 1. There's a sample .csv available for you to download and edit. Download the CSV and use it as a template to complete your terms.
 
@@ -127,7 +127,7 @@ A full sample CSV will be provided in the steps below.
 
     :::image type="content" source="../media/business-glossary-exercise/attribute-name-and-description.png" alt-text="Screenshot of new attribute page with the name and description buttons highlighted.":::
 
-1. Choose wether or not you want the attribute to be required to create a term by selecting **Mark as required**.
+1. Choose whether or not you want the attribute to be required to create a term by selecting **Mark as required**.
 
     :::image type="content" source="../media/business-glossary-exercise/mark-as-required.png" alt-text="Screenshot of new attribute page with mark as required check button highlighted.":::
 
