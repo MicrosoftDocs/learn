@@ -1,12 +1,19 @@
 Now that you understand the basic concepts of external states and how to deal with them by using Kubernetes, let's create the resources that will support the application and then create the application itself.
 
-## Activate the Azure sandbox
+## Create a resource group
 
 >[!NOTE]
 > The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
 
-1. Start by **activating the Azure sandbox above.**
-1. Once it's activated, sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+1. Sign into [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
+
+1. Select **Resource groups** on the left.
+
+1. Select **Create** to open the **Create a resource group** pane.
+
+1. Enter *rg-ship-manager* for the **Resource group** name. Leave the default selections for **Subscription** and **Region**.
+  
+1. Select **Review + create**, and then **Create**.
 
 ## Create the state
 
@@ -17,10 +24,10 @@ To solve that problem, we'll externalize the state to an application that specia
 > [!NOTE]
 > Although we're creating an Azure Cosmos DB instance as part of the required resources to run the application, Azure Kubernetes Service (AKS) and Azure Cosmos DB are *not* related to one another.
 
-1. Create Bash variables to store important information like the account name and resource group name:
+1. Create Bash variables to store important information like the Azure Cosmos DB account name and the resource group name:
 
     ```bash
-    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+    export RESOURCE_GROUP=rg-ship-manager
     export COSMOSDB_ACCOUNT_NAME=contoso-ship-manager-$RANDOM
     ```
 
@@ -73,9 +80,18 @@ Now you're going to deploy the AKS cluster so you can push your application imag
 
 1. Download the kubectl configuration:
 
-    ```azurecli
-    az aks get-credentials --name $AKS_CLUSTER_NAME --resource-group $RESOURCE_GROUP
-    ```
+   ```azurecli
+   az aks get-credentials --name $AKS_CLUSTER_NAME --resource-group $RESOURCE_GROUP
+   ```
+
+   If you receive any messages about existing clusters, for example:
+
+   ```output
+   A different object named ship-manager-cluster already exists in your kubeconfig file.
+    Overwrite? (y/n):
+   ```
+
+   Enter `y` to overwrite.
 
 1. Test the configuration:
 
