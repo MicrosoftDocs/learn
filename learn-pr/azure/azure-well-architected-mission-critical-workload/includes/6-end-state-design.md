@@ -5,7 +5,7 @@ The exercises you've completed are a great start but they don't cover all aspect
 
 You must fully validate the health of both the application code and infrastructure. The scope must cover the requirements set of reliability, performance, availability, security, quality, and scale. 
 
-[!VIDEO fc7842c3-7c7a-44dc-ad87-838aa51d0000]
+> [!VIDEO fc7842c3-7c7a-44dc-ad87-838aa51d0000]
 
 > **Learn more: [Continuous validation and testing](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#continuous-validation-and-testing)**
 
