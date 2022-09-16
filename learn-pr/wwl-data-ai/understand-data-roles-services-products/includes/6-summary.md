@@ -4,9 +4,9 @@ The Microsoft Azure cloud platform enables you to take analytics to another leve
 
 By completing this module, you have learned how to:
 
-- Describe data systems.
-- Understand the fundamentals of Azure Data Services.
-- Describe the role and purpose of a data professional.
+ -  Describe data systems.
+ -  Understand the fundamentals of Azure Data Services.
+ -  Describe the role and purpose of a data professional.
 
 ## Resources
 
