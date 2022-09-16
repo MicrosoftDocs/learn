@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure-well-architected-mission-critical
+uid: learn.azure-mission-critical
 metadata:
   title: Challenge Project - Design a mission-critical workload
   description: Learn to apply key principles in your architecture to achieve a highly reliable design that strives for maximum reliability and operational effectiveness.
@@ -32,12 +32,12 @@ products:
 subjects:
 - architecture
 units:
-- learn.azure-well-architected-mission-critical.1-introduction
-- learn.azure-well-architected-mission-critical.2-prepare
-- learn.azure-well-architected-mission-critical.3-exercise-1
-- learn.azure-well-architected-mission-critical.4-exercise-2
-- learn.azure-well-architected-mission-critical.5-exercise-3
-- learn.azure-well-architected-mission-critical.6-end-state-design
-- learn.azure-well-architected-mission-critical.7-summary
+- learn.azure-mission-critical.1-introduction
+- learn.azure-mission-critical.2-prepare
+- learn.azure-mission-critical.3-exercise-1
+- learn.azure-mission-critical.4-exercise-2
+- learn.azure-mission-critical.5-exercise-3
+- learn.azure-mission-critical.6-end-state-design
+- learn.azure-mission-critical.7-summary
 badge:
-  uid: learn.azure-well-architected-mission-critical.badge
+  uid: learn.azure-mission-critical.badge
