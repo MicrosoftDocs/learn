@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
   Use the command line and Azure Resource Manager to automate common management tasks for Azure Cosmos DB SQL API.
-iconUrl: /learn/achievements/azure-cosmos-db-devops-practice.svg
+iconUrl: /training/achievements/azure-cosmos-db-devops-practice.svg
 levels:
 - intermediate
 roles:

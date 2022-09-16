@@ -1,4 +1,4 @@
-In the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) learning path, you built a basic release pipeline that deployed an ASP.NET Core application to Azure App Service. Although that scenario works for a single application, modern solutions often require a combination of applications, services, and other components. This module shows you how to build a more complicated pipeline.
+In the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) learning path, you built a basic release pipeline that deployed an ASP.NET Core application to Azure App Service. Although that scenario works for a single application, modern solutions often require a combination of applications, services, and other components. This module shows you how to build a more complicated pipeline.
 
 One of the unique benefits of cloud computing is the broad array of *serverless* application options. With *serverless* applications, the execution and resources are dynamically allocated by the cloud provider. As a result, they are never dependent on, nor constrained by, a specific configuration of servers. Although serverless applications technically still run on servers, the development model is drastically simplified by automatically provisioning, scaling, and managing the required infrastructure.
 
@@ -21,7 +21,7 @@ The modules in this learning path form a progression. Be sure to first complete 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module extends the knowledge you gained from the [Create a release pipeline in Azure Pipelines](/learn/modules/create-release-pipeline/?azure-portal=true) learning path.
+We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module extends the knowledge you gained from the [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline/?azure-portal=true) learning path.
 
 [!INCLUDE [](../../shared/includes/project-details-note.md)]
 

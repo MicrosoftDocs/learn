@@ -88,7 +88,7 @@ In Language Studio, in your project, select Data labeling. You'll see all your d
 
 ### Create search index
 
-There isn't anything specific you need to do to create a search index that will be enriched by a custom text classification model. Follow the steps in [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/). You'll be updating the index, indexer, and custom skill after you've created a function app.
+There isn't anything specific you need to do to create a search index that will be enriched by a custom text classification model. Follow the steps in [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/). You'll be updating the index, indexer, and custom skill after you've created a function app.
 
 ### Create an Azure function app
 

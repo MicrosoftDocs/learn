@@ -15,7 +15,7 @@ abstract: |
   - Evaluate various requirements of your application
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/resource-requirements-plan.svg
+iconUrl: /training/achievements/resource-requirements-plan.svg
 levels:
 - intermediate
 roles:

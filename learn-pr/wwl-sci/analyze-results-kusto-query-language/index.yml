@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Familiarity with security operations in an organization.
   - Basic experience with Azure services.
-iconUrl: /learn/achievements/analyze-results-in-kql.svg
+iconUrl: /training/achievements/analyze-results-in-kql.svg
 levels:
 - intermediate
 roles:

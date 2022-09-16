@@ -169,8 +169,7 @@ Use Privileged identity Management with Azure AD administrator roles to
 manage, control, and monitor access to Azure resources. Using PIM
 protects by lowering the exposure time of privileges and increasing your
 visibility into their use through reports and alerts. For more
-information, see [What is Azure AD Privileged Identity
-Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure).
+information, see [What is Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure).
 
 ### Stage 4: Continue building defenses
 

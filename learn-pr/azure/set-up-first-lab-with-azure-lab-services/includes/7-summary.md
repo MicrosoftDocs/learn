@@ -14,5 +14,5 @@ Delete the resource group that contains the lab plan and lab to clean up your su
 
 ## References
 
-- [Introduction to Azure Lab Services](/learn/modules/intro-to-azure-lab-services/)
+- [Introduction to Azure Lab Services](/training/modules/intro-to-azure-lab-services/)
 - [Azure Lab Services documentation](/azure/lab-services)

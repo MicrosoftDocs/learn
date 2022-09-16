@@ -18,7 +18,7 @@ prerequisites: |
   *   Familiarity with CIM and WMI technologies
 summary: |
   This learning path explains how to work with variables, arrays, and hash tables in Windows PowerShell scripts.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience in basic web app development and deployment.
   - Knowledge of how to use web apps in Azure App Service.
-iconUrl: /learn/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
+iconUrl: /training/achievements/azure-diagnose-application-startup-errors-with-kudu-console.svg
 levels:
 - intermediate
 roles:

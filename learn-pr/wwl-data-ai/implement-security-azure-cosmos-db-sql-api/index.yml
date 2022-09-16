@@ -18,7 +18,7 @@ abstract: |
   - Understand Always Encrypted
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-security.svg
+iconUrl: /training/achievements/azure-cosmos-db-security.svg
 levels:
 - intermediate
 roles:

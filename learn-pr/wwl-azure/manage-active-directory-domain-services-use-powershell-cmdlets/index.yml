@@ -23,7 +23,7 @@ prerequisites: |
   *   Familiarity with Windows networking technologies and implementation
   *   Familiarity with Windows Server administration, maintenance, and troubleshooting
   *   Familiarity with Windows PowerShell and its commands to perform specific tasks
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

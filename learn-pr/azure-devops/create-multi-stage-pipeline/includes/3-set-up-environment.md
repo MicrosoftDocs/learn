@@ -55,7 +55,7 @@ From the Azure DevOps Demo Generator site, to run the template, follow these ste
 1. To go to your project in Azure DevOps, select **Navigate to project**.
 
 > [!IMPORTANT]
-> In this module, the [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Even if you don't complete this module, be sure to follow the cleanup steps.
+> In this module, the [Clean up your Azure DevOps environment](/training/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Even if you don't complete this module, be sure to follow the cleanup steps.
 
 [!include[](../../shared/includes/project-visibility.md)]
 
@@ -96,7 +96,7 @@ At the end of this module, you'll move the card to the **Done** column, after yo
 
 Here, you create the environments that define the pipeline stages. You create one App Service instance for each stage: _Dev_, _Test_, and _Staging_.
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you brought up App Service through the Azure portal. Although the portal is a great way to explore what's available on Azure or to do basic tasks, bringing up components such as App Service can be tedious.
 
 In this module, you use the Azure CLI to bring up three App Service instances. You can access the Azure CLI from a terminal or through Visual Studio Code. Here, you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
@@ -246,11 +246,11 @@ To create your App Service instances, follow these steps:
     :::image type="content" source="../../shared/media/app-service-default.png" alt-text="A screenshot of a web browser showing the default home page on Azure App Service.":::
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
+> The [Clean up your Azure DevOps environment](/training/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
 
 ## Create pipeline variables in Azure Pipelines
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. But this time, you add one variable for each App Service instance that corresponds to a _Dev_, _Test_, or _Staging_ stage in your pipeline.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you added a variable to your pipeline that stores the name of your web app in App Service. Here you do the same. But this time, you add one variable for each App Service instance that corresponds to a _Dev_, _Test_, or _Staging_ stage in your pipeline.
 
 You could hard-code these names in your pipeline configuration, but if you define them as variables, your configuration will be more reusable. Additionally, if the names of your App Service instances change, you can update the variables and trigger your pipeline without modifying your configuration.
 
@@ -284,7 +284,7 @@ To add the variables:
 
 ## Create the dev and test environments
 
-In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you'll repeat the process for both the **dev** and **test** environments. Later, you'll set up the **staging** environment, which includes additional criteria.
+In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you'll repeat the process for both the **dev** and **test** environments. Later, you'll set up the **staging** environment, which includes additional criteria.
 
 To create the **dev** and **test** environments:
 

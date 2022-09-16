@@ -18,7 +18,7 @@ abstract: |
   - Create a bot with the Bot Framework Composer
 prerequisites: |
   Before you start this module, you should be familiar with bot concepts.
-iconUrl: /learn/achievements/create-a-bot-with-the-bot-framework-composer.svg
+iconUrl: /training/achievements/create-a-bot-with-the-bot-framework-composer.svg
 levels:
 - intermediate
 roles:

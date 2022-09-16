@@ -16,7 +16,7 @@ abstract: |
   - Describe how the components of Docker containers support compute container implementations
 prerequisites: | 
   - Familiarity with command-line based applications
-iconUrl: /learn/achievements/intro-to-docker-containers-social.png
+iconUrl: /training/achievements/intro-to-docker-containers-social.png
 levels:
 - beginner
 roles:

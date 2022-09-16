@@ -30,20 +30,20 @@ Now that you've completed this module, you should be able to:
 
 - [Get started with the Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started?azure-portal=true).
 
-- [Implement a hybrid file server infrastructure](/learn/modules/implement-hybrid-file-server-infrastructure?azure-portal=true).
+- [Implement a hybrid file server infrastructure](/training/modules/implement-hybrid-file-server-infrastructure?azure-portal=true).
 
 ### Learn more with self-paced training
 
-- [Design your migration to Azure - Learn | Microsoft Docs](/learn/modules/design-your-migration-to-azure/)
+- [Design your migration to Azure](/training/modules/design-your-migration-to-azure/)
 
-- [Accelerate your migration journey to Azure - Learn | Microsoft Docs](/learn/modules/accelerate-azure-migration-journey/)
+- [Accelerate your migration journey to Azure](/training/modules/accelerate-azure-migration-journey/)
 
-- [Applications and infrastructure migration and modernization - Learn | Microsoft Docs](/learn/modules/app-and-infra-migration-and-modernization/)
+- [Applications and infrastructure migration and modernization](/training/modules/app-and-infra-migration-and-modernization/)
 
-- [Migrate your relational data stored in SQL Server to Azure SQL Database - Learn | Microsoft Docs](/learn/modules/migrate-sql-server-relational-data/)
+- [Migrate your relational data stored in SQL Server to Azure SQL Database](/training/modules/migrate-sql-server-relational-data/)
 
-- [Prepare on-premises workloads for migration to Azure - Learn | Microsoft Docs](/learn/modules/prepare-onpremises-workloads-migration-azure/)
+- [Prepare on-premises workloads for migration to Azure](/training/modules/prepare-onpremises-workloads-migration-azure/)
 
-- [Migrate on-premises workloads to Azure - Learn | Microsoft Docs](/learn/modules/migrate-on-premises-workloads-azure/)
+- [Migrate on-premises workloads to Azure](/training/modules/migrate-on-premises-workloads-azure/)
 
-- [Set up Azure Migrate for server migration - Learn | Microsoft Docs](/learn/modules/m365-azure-migrate-set-up/)
+- [Set up Azure Migrate for server migration](/training/modules/m365-azure-migrate-set-up/)

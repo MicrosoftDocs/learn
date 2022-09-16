@@ -19,7 +19,7 @@ abstract: |
 prerequisites:  |
   - Familiarity with developing and running Java applications
   - Beginner-level experience with cloud infrastructure
-iconUrl: /learn/achievements/java-target-destinations.svg
+iconUrl: /training/achievements/java-target-destinations.svg
 levels:
 - beginner
 roles:

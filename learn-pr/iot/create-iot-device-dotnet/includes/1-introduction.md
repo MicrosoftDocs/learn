@@ -23,7 +23,7 @@ In this module, you will:
 
 - Intermediate knowledge of .NET.
 - Basic understanding of Raspberry Pi and Raspberry Pi OS.
-- .NET SDK 5 or later.
+- .NET SDK 6 or later.
 - The following hardware components:
   - A Raspberry Pi device (2 or greater) configured as described in the *Important* callout below.
   - BME280 humidity/barometric pressure/temperature sensor breakout ([example](https://learn.adafruit.com/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout))
@@ -42,8 +42,8 @@ All of the required hardware components are available from various retailers. Mo
 >
 > After installing Raspberry Pi OS, use the `raspi-config` command to ensure the following two services are enabled:
 >
-> - SSH
-> - I2C
+> - `SSH`
+> - `I2C`
 >
 > For more information, see the [Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/raspi-config.md).
 

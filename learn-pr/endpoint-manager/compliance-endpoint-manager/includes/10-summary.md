@@ -15,7 +15,7 @@ In this module, you've learned about the possible migration path to Microsoft En
 ## Next steps
 
 To learn more about Microsoft Endpoint Manager, continue to the next learning module in this series:
-- [Benefits of Microsoft Endpoint Manager](/learn/modules/benefits-microsoft-endpoint-manager/)
+- [Benefits of Microsoft Endpoint Manager](/training/modules/benefits-microsoft-endpoint-manager/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)

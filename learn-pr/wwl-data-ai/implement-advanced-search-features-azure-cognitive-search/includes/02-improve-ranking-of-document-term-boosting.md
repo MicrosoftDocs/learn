@@ -4,7 +4,7 @@ Here, you'll explore how to write more complex Lucene queries. You'll then impro
 
 ### Search an index
 
-Azure Cognitive Search lets you query an index using a REST endpoint or inside the Azure portal with the search explorer tool. If you want a quick recap of the stages of query processing, see the *search index* unit in [Create an Azure Cognitive Search solution](/learn/modules/create-azure-cognitive-search-solution/5-search-index).
+Azure Cognitive Search lets you query an index using a REST endpoint or inside the Azure portal with the search explorer tool. If you want a quick recap of the stages of query processing, see the *search index* unit in [Create an Azure Cognitive Search solution](/training/modules/create-azure-cognitive-search-solution/5-search-index).
 
 :::image type="content" source="../media/query-processing.png" alt-text="A diagram showing the four stages of query processing." border="false":::
 

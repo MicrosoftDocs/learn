@@ -16,7 +16,7 @@ prerequisites: |
   If you have no previous programming experience, we recommend you complete the Take your first steps with C# learning path before starting this one.
 summary: |
   Learn about the Azure Cosmos DB SQL API and how to get started with your first account, database, and container.
-iconUrl: /learn/achievements/azure-cosmos-db-get-started.svg
+iconUrl: /training/achievements/azure-cosmos-db-get-started.svg
 levels:
 - intermediate
 roles:

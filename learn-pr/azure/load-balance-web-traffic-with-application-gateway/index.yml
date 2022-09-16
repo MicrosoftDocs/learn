@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of basic networking concepts
   - Familiarity with Azure virtual machines and Azure App Service
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/load-balance-web-traffic-with-application-gateway.svg
+iconUrl: /training/achievements/load-balance-web-traffic-with-application-gateway.svg
 levels:
 - beginner
 roles:

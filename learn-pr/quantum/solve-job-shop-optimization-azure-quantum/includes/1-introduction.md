@@ -22,8 +22,7 @@ After completing this module, you'll be able to:
 - [Jupyter Notebook](https://jupyter.org/install.html?azure-portal=true)
 - An Azure Quantum workspace
 
-If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
+If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/training/modules/get-started-azure-quantum/?azure-portal=true) module first.
 
 > [!NOTE]
 > This module makes use of paid services on Azure Quantum. The first compute hour on Microsoft QIO solvers is free. For reference, this module should roughly consume 2 compute seconds. You can refer to the [Microsoft QIO pricing page](https://azure.microsoft.com/pricing/details/azure-quantum/) for more details.
-

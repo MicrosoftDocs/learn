@@ -15,13 +15,14 @@ abstract: |
   - Write code that calls stateless methods in the .NET Class Library 
   - Create a new instance of .NET Class Library classes to call methods that maintain state
   - Use Intellisense to learn more about a method, its overloaded versions, its return value data type, and its input parameter data types
-  - Use docs.microsoft.com to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more
+  - Use Microsoft Docs to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more
+  - Use Microsoft Docs to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more
 prerequisites: |
   - Experience declaring, initializing, setting, and retrieving values in variables
   - Experience using the basic C# data types including `int` and `string`
   - Experience using the method `Console.WriteLine()`
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-call-methods.svg
+iconUrl: /training/achievements/csharp-call-methods.svg
 levels:
 - beginner
 roles:

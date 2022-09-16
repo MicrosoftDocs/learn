@@ -58,8 +58,7 @@ where the Fix button is grey out.
 
 For this reason, workload owners must be able to receive notifications
 when there are open security recommendations for them to remediate. In
-Defender for Cloud you can use the [Workflow
-Automation](https://docs.microsoft.com/azure/defender-for-cloud/workflow-automation)
+Defender for Cloud you can use the [Workflow Automation](/azure/defender-for-cloud/workflow-automation)
 capability to activate actions such as sending an email to the resource
 owner, when a recommendation is triggered. An example of this workflow
 is shown below:

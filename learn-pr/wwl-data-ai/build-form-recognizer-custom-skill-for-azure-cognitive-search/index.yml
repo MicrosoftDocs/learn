@@ -16,7 +16,7 @@ abstract: |
   -	Build a custom skill that calls an Azure Forms Analyzer solution to obtain data from forms.
 prerequisites: |
   - Basic understanding of Azure Cognitive Search
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

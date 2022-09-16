@@ -15,7 +15,7 @@ prerequisites: |
   - Familiarity with basic Azure Machine Learning concepts
 summary: |
   Machine learning operations (MLOps) applies DevOps principles to machine learning projects. In this learning path, you'll learn how to implement key concepts like source control, automation, and CI/CD to build an end-to-end MLOps solution.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

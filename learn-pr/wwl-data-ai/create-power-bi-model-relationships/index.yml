@@ -18,7 +18,7 @@ abstract: |
   - Understand relationship evaluation.
 prerequisites: |
   - Experience developing Power BI data models by using Power BI Desktop.
-iconUrl: /learn/achievements/create-power-bi-model-relationships.svg
+iconUrl: /training/achievements/create-power-bi-model-relationships.svg
 levels:
 - intermediate
 roles:

@@ -16,7 +16,7 @@ abstract: |
   - Learn how to use the Speech cognitive service in Azure
 prerequisites: |
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/convert-speech-to-text.svg
+iconUrl: /training/achievements/convert-speech-to-text.svg
 levels:
 - intermediate
 roles:

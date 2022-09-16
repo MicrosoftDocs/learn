@@ -20,7 +20,7 @@ summary: |
   - Work with MySQL storage engines
   - Secure your Azure Database for MySQL server
   - Understand concurrency in MySQL
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

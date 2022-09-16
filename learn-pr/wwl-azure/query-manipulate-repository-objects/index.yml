@@ -23,7 +23,7 @@ prerequisites: |
   *   Familiarity with Windows PowerShell and its commands to perform specific tasks
   *   Familiarity with PowerShell cmdlets used for system administration tasks related to Active Directory, network configuration, server administration, and Windows 10 device administration
   *   Familiarity with Windows PowerShell pipeline, PowerShell providers, and PowerShell drives
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

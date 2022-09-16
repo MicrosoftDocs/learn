@@ -24,7 +24,7 @@ prerequisites: |
     - Azure, including the Azure portal, subscriptions, resource groups, and resources.
     - Git for managing your code, including branches and pull requests.
     - Automated deployments through either GitHub Actions or Azure Pipelines.
-iconUrl: /learn/achievements/bicep/control-govern-azure-environment-deploying-infrastructure-code.svg
+iconUrl: /training/achievements/bicep/control-govern-azure-environment-deploying-infrastructure-code.svg
 levels:
   - advanced
 roles:

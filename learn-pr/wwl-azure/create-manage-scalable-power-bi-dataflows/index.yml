@@ -17,8 +17,8 @@ abstract: |
   - Create and consume Power BI dataflows.
 prerequisites: |
   *   You'll need knowledge of Power BI data model design including star schema design basics.
-  *   Consider completing the [Model data in Power BI](/learn/paths/model-power-bi/) learning path.
-iconUrl: /learn/achievements/generic-badge.svg
+  *   Consider completing the [Model data in Power BI](/training/paths/model-power-bi/) learning path.
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

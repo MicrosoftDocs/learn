@@ -21,7 +21,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Experience creating and configuring resources using the Azure portal.
   - Familiarly with Open Source database systems on Azure.
-iconUrl: /learn/achievements/manage-azure-paas-resources-using-automated-methods.svg
+iconUrl: /training/achievements/manage-azure-paas-resources-using-automated-methods.svg
 levels:
 - intermediate
 roles:

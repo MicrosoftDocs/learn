@@ -35,8 +35,8 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [AKS documentation on Microsoft Docs](/azure/aks/)
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
+- [AKS documentation](/azure/aks/)
+- [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/)
 - [Prepare an application for AKS](/azure/aks/tutorial-kubernetes-prepare-app)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)
 - [HTTP application routing](/azure/aks/http-application-routing)

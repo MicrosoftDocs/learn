@@ -22,7 +22,7 @@ prerequisites: |
   - Experience with the `if-elseif-else` statement
   - Experience calling methods of classes in the .NET Class Library
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-code-blocks.svg
+iconUrl: /training/achievements/csharp-code-blocks.svg
 levels:
 - beginner
 roles:

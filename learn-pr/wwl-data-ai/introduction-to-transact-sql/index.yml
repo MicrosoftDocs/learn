@@ -20,7 +20,7 @@ abstract: |
   - Handle NULLs
 prerequisites: |
   Before starting this module, it is helpful to have experience of working with tables with data; for example in a spreadsheet.
-iconUrl: /learn/achievements/explore-sql-server-and-query-tools.svg
+iconUrl: /training/achievements/explore-sql-server-and-query-tools.svg
 levels:
 - beginner
 roles:

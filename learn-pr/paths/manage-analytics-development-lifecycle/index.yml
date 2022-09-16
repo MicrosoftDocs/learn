@@ -15,7 +15,7 @@ prerequisites: |
 summary: |
   This learning path introduces the foundational components of implementing lifecycle management techniques for Power BI assets.
   This learning path helps you prepare for the [Azure Enterprise Data Analyst Certification](/certifications/exams/dp-500).
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:

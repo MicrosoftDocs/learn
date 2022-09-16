@@ -12,6 +12,6 @@ Now that you've completed this module, you're able to:
 
 For more information about the topics discussed in this module, see:
 
-- [Limitations - Azure Database for MySQL | Microsoft Docs](/azure/mysql/concepts-limits)
-- [MySQL server operational best practices - Azure Database for MySQL | Microsoft Docs](/azure/mysql/concept-operation-excellence-best-practices)
-- [Performance best practices - Azure Database for MySQL | Microsoft Docs](/azure/mysql/concept-performance-best-practices)
+- [Limitations in Azure Database for MySQL](/azure/mysql/concepts-limits)
+- [Best practices for server operations on Azure Database for MySQL](/azure/mysql/concept-operation-excellence-best-practices)
+- [Best practices for optimal performance of your Azure Database for MySQL server](/azure/mysql/concept-performance-best-practices)

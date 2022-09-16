@@ -16,7 +16,7 @@ Finally, use a [*composite model*](/power-bi/connect-data/service-dataset-modes-
 Composite models combine data from more than one DirectQuery source or  combine DirectQuery with import data. 
 
 > [!Important]
-> Review the [Choose a Power BI model framework](/learn/modules/choose-power-bi-model-framework/) module for more information on using import, DirectQuery, or composite models.
+> Review the [Choose a Power BI model framework](/training/modules/choose-power-bi-model-framework/) module for more information on using import, DirectQuery, or composite models.
 
 ## Implement data modeling best practices
 
@@ -77,4 +77,3 @@ Most importantly, you want to do as much data preparation work as possible **bef
 There's also a tool you can use as you're developing tabular models that will alert you of modeling missteps or changes that would improve model design and performance. The [Best Practice Analyzer within Tabular Editor](https://powerbi.microsoft.com/blog/best-practice-rules-to-improve-your-models-performance/) was designed to help you design models that adhere to modeling best practices.
 
 In the next unit, you'll learn how to configure the large dataset storage format using Power BI Premium.
-

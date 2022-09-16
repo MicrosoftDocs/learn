@@ -72,7 +72,7 @@ Let's create our function!
     code .
     ```
 
-    ![Screenshot showing the simple-interest folder with the function.json file open in Cloud Shell code editor.](../media/3-functions-project-view.png)
+    :::image type="content" source="../media/3-functions-project-view.png" alt-text="Screenshot showing the simple-interest folder with the function.json file open in Cloud Shell code editor.":::
 
     The wizard has created a new folder in our functions project called **simple-interest**, and created two files **index.js** and **function.json**, both with default content. Take a moment now to explore the project files using the editor. The screenshot above shows the expanded folder with the **function.json** file open in the editor.
 

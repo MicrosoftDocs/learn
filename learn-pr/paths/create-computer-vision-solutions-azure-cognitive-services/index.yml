@@ -13,10 +13,10 @@ prerequisites: |
   Before starting this learning path, you should already have:
   - Familiarity with Azure and the Azure portal.
   - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path before starting this one.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
   Computer vision is an area of artificial intelligence that deals with visual perception. Azure Cognitive Services include multiple services that support common computer vision scenarios.
-iconUrl: /learn/achievements/cognitive-services-computer-vision.svg
+iconUrl: /training/achievements/cognitive-services-computer-vision.svg
 levels:
 - intermediate
 roles:

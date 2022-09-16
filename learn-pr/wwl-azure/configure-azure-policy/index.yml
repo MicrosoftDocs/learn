@@ -17,7 +17,7 @@ abstract: |
   - Scope Azure policies and determine compliance.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-policy-configure.svg
+iconUrl: /training/achievements/azure-policy-configure.svg
 levels:
 - intermediate
 roles:

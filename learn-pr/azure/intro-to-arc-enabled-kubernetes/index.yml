@@ -26,7 +26,7 @@ prerequisites: |
   - Azure Policy
   - Azure command-line interface (CLI)
   - GitOps principles
-iconUrl: /learn/achievements/intro-to-arc-enabled-kubernetes.svg
+iconUrl: /training/achievements/intro-to-arc-enabled-kubernetes.svg
 levels:
 - beginner
 roles:

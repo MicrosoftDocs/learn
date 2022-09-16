@@ -10,7 +10,7 @@ To complete the exercise, you'll need:
 - An Azure Machine Learning workspace with a compute instance and the **ml-basics** repository cloned.
 
 > [!NOTE]
-> This module makes use of an Azure Machine Learning workspace. If you are completing this module in preparation for the [Azure Data Scientist](/learn/certifications/azure-data-scientist?azure-portal=true) certification, consider creating the workspace once, and reusing it in other modules. After completing the exercise, be sure to follow the **Clean Up** instructions to stop compute resources, and retain the workspace if you plan to reuse it.
+> This module makes use of an Azure Machine Learning workspace. If you are completing this module in preparation for the [Azure Data Scientist](/certifications/azure-data-scientist?azure-portal=true) certification, consider creating the workspace once, and reusing it in other modules. After completing the exercise, be sure to follow the **Clean Up** instructions to stop compute resources, and retain the workspace if you plan to reuse it.
 
 ### Create an Azure Machine Learning workspace
 

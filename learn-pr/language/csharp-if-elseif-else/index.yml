@@ -22,7 +22,7 @@ prerequisites: |
   - Experience with string interpolation to combine variables into literal strings.
   - Experience working with the `System.Random` class to generate random numbers.
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-if-elseif-else.svg
+iconUrl: /training/achievements/csharp-if-elseif-else.svg
 levels:
 - beginner
 roles:

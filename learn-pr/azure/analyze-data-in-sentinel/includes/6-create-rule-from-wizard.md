@@ -42,7 +42,7 @@ AzureActivity
 ```
 
 > [!Tip]
-> For assistance with KQL query language, see the Query Language Reference at [**https://docs.microsoft.com/en-us/azure/kusto/query/**](/azure/kusto/query/).
+> For assistance with KQL query language, see the [Kusto Query Language (KQL) overview](/azure/kusto/query/).
 
 ### Alert enrichment (Preview)
 

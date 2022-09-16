@@ -19,7 +19,7 @@ abstract: |
   - Choose an appropriate Power BI model framework.
 prerequisites: |
   - Experience developing Power BI data models, reports, and dashboards.
-iconUrl: /learn/achievements/choose-power-bi-model-framework.svg
+iconUrl: /training/achievements/choose-power-bi-model-framework.svg
 levels:
 - intermediate
 roles:

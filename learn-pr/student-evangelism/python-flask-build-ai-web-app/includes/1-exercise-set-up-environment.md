@@ -27,7 +27,7 @@ To complete this unit, you must have Python 3.6 or later installed on your compu
 python --version
 ```
 
-If Python is installed, the output shows the Python version number. If you need to install Python, follow the steps in the [Install Python 3](/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true&WT.mc_id=python-11210-chrhar) documentation for Visual Studio Code. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
+If Python is installed, the output shows the Python version number. If you need to install Python, follow the steps in the [Install Python 3](/training/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true&WT.mc_id=python-11210-chrhar) documentation for Visual Studio Code. At the top of the article, choose the instructions for your configuration: Windows, Linux, or Mac.
 
 > [!IMPORTANT]
 > If you're using Windows, make sure that the folder location where you installed Python is added to your PATH environment variable. If you miss this step you'll receive an error message "Python isn't found", even after performing the installation.

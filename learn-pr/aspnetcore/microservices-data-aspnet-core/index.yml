@@ -47,6 +47,6 @@ units:
   - learn.microservices-data-aspnet-core.implement-cosmos-db
   - learn.microservices-data-aspnet-core.knowledge-check
   - learn.microservices-data-aspnet-core.summary
-iconUrl: /learn/achievements/aspnetcore/microservices-data-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-data-aspnet-core.svg
 badge:
   uid: learn.microservices-data-aspnet-core.badge

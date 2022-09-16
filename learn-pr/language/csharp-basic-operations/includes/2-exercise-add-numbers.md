@@ -41,7 +41,7 @@ Bob sold 7 widgets.
 In this case, the C# compiler understands that we want to use the `+` symbol to concatenate the two operands. It deduces this because the `+` symbol is surrounded by operands of `string` and `int` data types. So, it attempts to implicitly convert the `int` variable `widgetsSold` into a `string` temporarily so it can concatenate it to the rest of the string. The C# compiler tries to help you when it can, but ideally, you'd be explicit about your intentions.
 
 > [!Note]
-> There's a lot more to converting one data type into another. The [Convert data types using casting and conversion techniques in C#](/learn/modules/csharp-convert-cast/) module can help you understand how to convert values from one data type to another.
+> There's a lot more to converting one data type into another. The [Convert data types using casting and conversion techniques in C#](/training/modules/csharp-convert-cast/) module can help you understand how to convert values from one data type to another.
 
 ### Step 3: Attempt a more advanced case of adding numbers and concatenating strings
 

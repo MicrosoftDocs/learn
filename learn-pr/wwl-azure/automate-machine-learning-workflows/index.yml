@@ -15,7 +15,7 @@ abstract: |
   - How to use Azure Pipelines and GitHub Actions to automate workflows.
 prerequisites: |
   Some familiarity with machine learning and Azure Machine Learning.
-iconUrl: /learn/achievements/automate-machine-learning-workflows.svg
+iconUrl: /training/achievements/automate-machine-learning-workflows.svg
 levels:
 - beginner
 roles:

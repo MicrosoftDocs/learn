@@ -19,9 +19,9 @@ abstract: |
   - Analyze linked data using Synapse SQL.
 prerequisites: |
   Before starting this module, you should have a basic knowledge of Azure Cosmos DB and Azure Synapse Analytics. Consider completing the following modules first:
-  - [Explore fundamentals of Azure Cosmos DB](/learn/modules/explore-non-relational-data-stores-azure?azure-portal=true)
-  - [Explore fundamentals of large-scale data warehousing](/learn/modules/examine-components-of-modern-data-warehouse?azure-portal=true)
-iconUrl: /learn/achievements/configure-azure-synapse-link-with-azure-cosmos-db.svg
+  - [Explore fundamentals of Azure Cosmos DB](/training/modules/explore-non-relational-data-stores-azure?azure-portal=true)
+  - [Explore fundamentals of large-scale data warehousing](/training/modules/examine-components-of-modern-data-warehouse?azure-portal=true)
+iconUrl: /training/achievements/configure-azure-synapse-link-with-azure-cosmos-db.svg
 levels:
 - intermediate
 roles:

@@ -24,8 +24,8 @@ Now that you have completed this module, you can:
 * [Change feed in Azure Cosmos DB][/azure/cosmos-db/change-feed]
 * [Transactional batch operations in Azure Cosmos DB that use the .NET SDK][/azure/cosmos-db/transactional-batch]
 
-[/azure/cosmos-db/relational-nosql]: https://docs.microsoft.com/azure/cosmos-db/relational-nosql
-[/azure/cosmos-db/modeling-data]: https://docs.microsoft.com/azure/cosmos-db/modeling-data
-[/azure/cosmos-db/how-to-model-partition-example]: https://docs.microsoft.com/azure/cosmos-db/how-to-model-partition-example
-[/azure/cosmos-db/change-feed]: https://docs.microsoft.com/azure/cosmos-db/change-feed
-[/azure/cosmos-db/transactional-batch]: https://docs.microsoft.com/azure/cosmos-db/transactional-batch
+[/azure/cosmos-db/relational-nosql]: /azure/cosmos-db/relational-nosql
+[/azure/cosmos-db/modeling-data]: /azure/cosmos-db/modeling-data
+[/azure/cosmos-db/how-to-model-partition-example]: /azure/cosmos-db/how-to-model-partition-example
+[/azure/cosmos-db/change-feed]: /azure/cosmos-db/change-feed
+[/azure/cosmos-db/transactional-batch]: /azure/cosmos-db/transactional-batch

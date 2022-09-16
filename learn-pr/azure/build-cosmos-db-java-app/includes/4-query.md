@@ -45,7 +45,7 @@ We'll use the user documents that you created for your online retailer applicati
 1. Copy and paste the following code to your `basicOperations` method, *before* the document deletion code.
 
     ```java
-    executeSimpleQuery("SELECT * FROM User WHERE User.lastName = 'Pindakova'")
+    executeSimpleQuery("SELECT * FROM User WHERE User.lastName = 'Pindakova'");
     ```
 
 1. Build and run **CosmosApp.java** in the IDE, or run the program in the terminal by using: 
@@ -83,7 +83,7 @@ We'll use the `WebCustomer` documents that you created for your online retailer 
 
 Spring Data Azure Cosmos DB includes a number of built-in *derived query methods* including `findById`. In this section, we will show how to implement new derived query methods.
 
-1. We will create a derived query method which queries all documents having a certain value for the `firstName` field. Navigate to **ReactiveWebCustomerRepository.java** and paste in the following method *declaration*:
+1. We will create a derived query method which queries all documents having a certain value for the `firstName` field. Navigate to **ReactiveWebCustomerRepository.java**. You will see the following method *declaration*:
 
     ```java
     Flux<WebCustomer> findByFirstName(String firstName);
@@ -116,21 +116,14 @@ Spring Data Azure Cosmos DB includes a number of built-in *derived query methods
     In the terminal, the output should look something like this:
 
     ```output
-    INFO: Database and container validation complete
-    INFO: User 1 already exists in the database
-    INFO: User 2 already exists in the database
-    INFO: Read User 1
-    INFO: Replaced last name for Suh
-    INFO: Running derived query...
     INFO: - WebCustomer is : maxaxam
-    INFO: Deleted User 1
     ```
 
 ## Create and call custom query methods
 
 *Custom query methods* are Spring Data repository methods with an `@Query` annotation specifying a query string - and the query string contains placeholders for the method arguments. This time, the method name has no impact on what query is performed. The `@Query` annotation signals Spring Data to issue a SQL-language query to the underlying database, *after* filling in the argument placeholders with the values of the method arguments.  
 
-1. We will create a custom query method which queries all documents having a certain value for the `lastName` field. Navigate to **ReactiveWebCustomerRepository.java** and paste in the following method declaration:
+1. We will create a custom query method which queries all documents having a certain value for the `lastName` field. Navigate to **ReactiveWebCustomerRepository.java**. You will see the following method declaration:
 
     ```java
     @Query(value = "SELECT * FROM User WHERE User.lastName = @lastName")
@@ -160,16 +153,10 @@ Spring Data Azure Cosmos DB includes a number of built-in *derived query methods
     In the terminal, the output should look something like this:
 
     ```output
-    INFO: Database and container validation complete
-    INFO: User 1 already exists in the database
-    INFO: User 2 already exists in the database
-    INFO: Read User 1
-    INFO: Replaced last name for Suh
     INFO: Running derived query...
     INFO: - WebCustomer is : maxaxam
     INFO: Running custom query...
     INFO: - WebCustomer is : maxaxam    
-    INFO: Deleted User 1
     ```
 
 ::: zone-end

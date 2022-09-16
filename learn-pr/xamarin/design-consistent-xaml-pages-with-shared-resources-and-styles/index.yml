@@ -16,7 +16,7 @@ abstract: |
   - Apply the user's accessibility choices by using built-in styles
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles-badge.svg
+iconUrl: /training/achievements/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles-badge.svg
 levels:
 - beginner
 roles:
