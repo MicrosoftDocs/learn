@@ -11,10 +11,8 @@ Now that you understand the basic concepts of external states and how to deal wi
 
 1. Select **Create** to open the **Create a resource group** pane.
 
-1. Enter *rg-ship-manager* for the **Resource group** name. Leave the default selections for **Subscription** and **Region**. 
+1. Enter *rg-ship-manager* for the **Resource group** name. Leave the default selections for **Subscription** and **Region**.
   
-   Make a note of your **Region** value (for example, *eastus*), for use in the next set of steps.
-
 1. Select **Review + create**, and then **Create**.
 
 ## Create the state
@@ -26,12 +24,11 @@ To solve that problem, we'll externalize the state to an application that specia
 > [!NOTE]
 > Although we're creating an Azure Cosmos DB instance as part of the required resources to run the application, Azure Kubernetes Service (AKS) and Azure Cosmos DB are *not* related to one another.
 
-1. Create Bash variables to store important information like the Azure Cosmos DB account name, the resource group name, and the region value that you saved:
+1. Create Bash variables to store important information like the Azure Cosmos DB account name and the resource group name:
 
     ```bash
     export RESOURCE_GROUP=rg-ship-manager
     export COSMOSDB_ACCOUNT_NAME=contoso-ship-manager-$RANDOM
-    export RG_REGION=<your region value>
     ```
 
 1. Create a new Azure Cosmos DB account:
@@ -75,7 +72,7 @@ Now you're going to deploy the AKS cluster so you can push your application imag
         --generate-ssh-keys \
         --node-vm-size Standard_B2s \
         --enable-managed-identity \
-        --location $RG_REGION \
+        --location eastus \
         --enable-addons http_application_routing
     ```
 
