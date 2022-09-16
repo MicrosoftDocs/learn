@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-space.describe-key-trends-of-the-space-industry
+title: Describe key trends of the space industry
+metadata:
+  title: Describe key trends of the space industry
+  description: TBD
+  ms.date: 09/16/2022
+  author: meaghanlewis
+  ms.author: mosagie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-key-trends-of-the-space-industry.md)]
