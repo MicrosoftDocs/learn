@@ -12,15 +12,15 @@ The team understands the _tradeoffs: added cost and complexity_. However, the co
 
 The existing application is already designed as per the quality pillars of Azure Well-Architected Framework. As an initial step, you have read through the guidance provided for [**Well-Architected mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview). You've **prioritized enhanced system resiliency and observability** as the key focus areas that will have the highest reliability impact on the system. 
 
-> [!IMPORTANT]
->
-> The exercises in this module does not cover all design areas of mission critical workloads. After completing this challenge, you're encouraged to continue exploring mission critical principles given in **Well-Architected mission-critical workloads**, so that you have a complete perspective for your own designs.
-
 ## What will you be doing?
 
 - Design a health endpoint in the application to check the health at the API level and its dependencies
 - Expand the solution into multiple regions to survive a regional outage
 - Build a health model and visualize the observability data through operational dashboards
+
+> [!IMPORTANT]
+>
+> The exercises do not cover all design areas of mission critical workloads. After completing this challenge, you're encouraged to continue exploring mission critical principles given in **Well-Architected mission-critical workloads**, so that you have a complete perspective for your own designs.
 
 ## What is the main goal?
 
