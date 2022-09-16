@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which of the following is **not** a key factor in the rapid expansion of the space industry?"
+  - content: "Which of the following options is **not** a key factor in the rapid expansion of the space industry?"
     choices:
     - content: "The cost to launch payload into space is decreasing."
       isCorrect: false

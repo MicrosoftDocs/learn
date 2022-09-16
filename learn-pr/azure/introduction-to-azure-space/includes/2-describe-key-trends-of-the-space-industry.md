@@ -22,4 +22,4 @@ Space used to be reserved for government applications, whether that was explorat
 
 There are more than 183,000 people employed in the space industry, running the gamut from massive corporations to smaller startups. In 2020 alone, around $8 billion was spent on space startup investments.
 
-The the next unit, we'll take a closer look at some of those key players in the industry.
+In the next unit, we'll take a closer look at some of those key players in the industry.
