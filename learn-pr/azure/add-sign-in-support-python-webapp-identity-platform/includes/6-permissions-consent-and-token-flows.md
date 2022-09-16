@@ -20,4 +20,4 @@ There are some situations, however, where you might need to force users to inter
 - Two-factor authentication is required.
 - The refresh token has been revoked by the server because of a change in credentials, user action, or admin action.
 
-Calling `acquireTokenPopup` opens a pop-up window (or `acquireTokenRedirect`) redirects users to the Microsoft identity platform. In that window, users need to interact by confirming their credentials, giving consent to the required resource, or completing the two-factor authentication.
+Calling `acquireTokenPopup` opens a pop-up window (or `acquireTokenRedirect`) redirects users to the Microsoft identity platform. In that window, users need to interact by confirming their credentials, giving consent to the required resource, or completing the two-factor authentication. After that, the pop-up window closes and the app receives the response. The response contains the requested tokens. The app can then use the tokens to call the Microsoft Graph API. The tokens are cached in the browser and are available for the next request. 

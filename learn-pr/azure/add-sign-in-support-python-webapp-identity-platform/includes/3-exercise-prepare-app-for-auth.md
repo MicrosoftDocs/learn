@@ -23,7 +23,8 @@ If you prefer following the module and building the Python Flask web app by your
 ```
 python-webapp/
 ├── templates
-│   ├── 
+│   ├── authenticated
+│   ├── public
 │   ├── 
 ├── app.py
 ├── default_settings.py
@@ -50,7 +51,7 @@ To make these dependencies available in your environment, run `pip install -r re
 
 #### Add application UI components
 
-Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three simple HTML templates for each of the routes we'll set up in the app.
+Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three simple HTML templates for each of the routes that'll be set up in the app.
 
 For the general template, create an HTML file named `layout.html` in the templates folder and paste the contents below: 
 
@@ -79,7 +80,7 @@ For the general template, create an HTML file named `layout.html` in the templat
   </body>
 </html>
 ```
-Next, create a folder named public and add an `index.html` template. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the `index.html` template.
+Next, create a new folder in templates and name it public. You should then add an `index.html` template to the public folder. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the `index.html` template.
 
 ```html
 # 📁 public/index.html
@@ -216,7 +217,7 @@ For this scenario, you'll use a client secret, also known as an application pass
 1. In the Azure portal, in **App registrations**, select your application.
 1. Under **Manage**, select **Certificates & secrets**.
 1. In the **Client secrets** section, select **New client secret**.
-1. Under **Add a client secret**, add a description for your client secret.
+1. Click**New client secret** and add a description for your client secret.
 1. Select an expiration for the secret or specify a custom lifetime.
    Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months. Microsoft recommends that you set an expiration value of less than 12 months.
 1. Select **Add**.

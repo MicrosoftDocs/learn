@@ -2,13 +2,13 @@ In this unit, you'll test whether the Python web application you created can sig
 
 ## Run the application
 
-To start the server, run the following commands from within the project directory:
+To start the server, run the following commands from a terminal in the project's root directory:
 
 ```python
 pip install -r requirements.txt
 flask run --host=localhost
 ```
-Open your browser and navigate to [http://localhost:5000](http://localhost:5000). If everything worked, the sample app should produce output similar to this:
+Open your browser and navigate to [http://localhost:5000](http://localhost:5000). If everything worked, the sample app should produce an output similar to this:
 
 :::image type="content" source="../media/6-python-webapp-homepage.png" border="false" alt-text="Python web app homepage":::
 
@@ -32,7 +32,7 @@ To get an access token with the necessary scopes, invoke the `acquire_token_flow
 
 Note the scope requested by the application by referring app.py. By default, this array is set to `["User.Read]`, the Microsoft Graph API scope for accessing basic user account information. The graph endpoint for accessing this info is `https://graph.microsoft.com/v1.0/me`. 
 
-Any valid requests made to this endpoint must bear an access token containing scope `User.Read` in the Authorization header. A complete cache miss will result in an error and indicates that a former auth code flow exchange didn't include this scope in the request.
+Any valid requests made to this endpoint must have an access token containing scope `User.Read` in the Authorization header. A complete cache miss will result in an error and indicates that a former auth code flow exchange didn't include this scope in the request.
 
 ```python
 # Invoke the acquire_token flow on the MSAL client for the requested
@@ -75,7 +75,7 @@ If after making a request, the API call result comes back with an error, the use
 
 ## Access protected routes 
 
-You can use application-defined roles to access protected app routes. The route users access in this section requires the application-defined, admin role assignment. If after signing in the user, performing a role check, and successfully verifying that their claim has this specific app role assigned, you can grant access to the admin view page of the application.
+You can use application-defined roles to access protected app routes. The route users access in this section requires the application-defined admin role assignment. If after signing in the user, performing a role check, and successfully verifying that their claim has this specific app role assigned, you can grant access to the admin view page of the application.
 
 ```Python
 # Upon successful authentication, show the "Admin" view

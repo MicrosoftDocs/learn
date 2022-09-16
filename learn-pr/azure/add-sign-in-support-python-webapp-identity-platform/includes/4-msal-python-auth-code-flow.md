@@ -17,7 +17,7 @@ MSAL Python provides multiple benefits over directly using the OAuth libraries a
 
 ## The Authorization code flow in MSAL Python
 
-To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform. In this training module, we'll use the authorization code grant flow for sign-in. The recommended calling pattern in webs apps using this flow is to:
+To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform. In this training module, we'll use the authorization code grant flow for sign-in. The recommended calling pattern in web apps using this flow is to:
 
 - Instantiate a client application. 
 - Acquire a token using the authorization code flow.
@@ -59,7 +59,7 @@ The Microsoft identity platform authenticates users and provides security tokens
 
 ### Access tokens
 
-An access token is a security token that's issued by an authorization server as part of an OAuth 2.0 flow. It contains information about the user and the resource for which the token is intended. This user information,such as permissions, can be used to access web APIs and other protected resources.
+An access token is a security token that's issued by an authorization server as part of an OAuth 2.0 flow. It contains information about the user and the resource for which the token is intended. This user information, such as permissions, can be used to access web APIs and other protected resources.
 
 ### Refresh tokens
 
@@ -67,4 +67,4 @@ The Microsoft identity platform issues refresh tokens that allow client applicat
 
 ### ID tokens
 
-The identity platform issues ID tokens are to the client application as part of an OpenID Connect flow. ID tokens can be sent alongside or instead of an access token. They are used by the client to authenticate and get basic information about users.
+The identity platform issues ID tokens are to the client application as part of an OpenID Connect flow. ID tokens can be sent alongside or in place of an access token. They are used by the client to authenticate and get basic information about users.
