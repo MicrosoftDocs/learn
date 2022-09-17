@@ -1,4 +1,4 @@
-The needs and goals of companies in the space industry can vary widely. The following sections discuss several key players in that industry.
+The needs and goals of companies in the space industry can vary widely. This unit discusses several key players in that industry.
 
 ## Space manufacturers
 
@@ -14,7 +14,7 @@ Satellite operators is a broad category that includes government, commercial, an
 
 ## Data analytics Independent Software Vendors (ISVs)
 
-Data analytics independent software vendors aggregate and analyze insights based on satellite data. These companies use proprietary data analysis and Artificial Intelligence (AI) offerings to help customers unlock insights from the data collected by earth observation satellites. 
+Data analytics independent software vendors aggregate and analyze insights based on satellite data. These companies use proprietary data analysis and Artificial Intelligence (AI) offerings to help customers unlock insights from the data collected by earth observation satellites.
 
 ## Ground station providers
 
