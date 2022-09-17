@@ -19,7 +19,9 @@ roles:
 products: 
 - azure
 subjects:
-- reliability
+- high-availability-system
+- workloads
+- solution-design
 modules:
 - learn.azure-mission-critical
 trophy:
