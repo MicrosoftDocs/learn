@@ -11,7 +11,7 @@ The following table describes three data types. Consider how these different typ
 | - Relational databases, such as medical records, phone books, and financial accounts <br> - Application data for an e-commerce website | - Hypertext Markup Language (HTML) files <br> - JavaScript Object Notation (JSON) files <br> - Extensible Markup Language (XML) files | - Media files like photos, videos, and audio <br> - Office files, such as Word documents and PowerPoint slides <br> - Text files like PDF, TXT, and RTF |
 
 > [!Note]
-> In this module, we review storage options for unstructured non-relational data. You can discover how to work with structured and relational data in the next module in this learning path, [Design a data storage solution for relational data](/training/modules/design-data-storage-solution-for-relational-data/).
+> In this module, we review storage options for unstructured non-relational data. You can discover how to work with structured and relational data in the module, [Design a data storage solution for relational data](/training/modules/design-data-storage-solution-for-relational-data/).
 
 ### Things to consider when choosing data storage
 

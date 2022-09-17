@@ -20,7 +20,7 @@ Review the following characteristics of data redundancy in Azure Storage.
 
 #### Redundancy in the primary region
 
-Azure Storage offers two options for how your data is replicated in the primary region.
+Azure Storage offers two options for how your data is replicated in the primary region: locally redundant storage and zone-redundant storage.
 
 :::image type="content" source="../media/data-redundancy.png" alt-text="Diagram of locally redundant storage with three copies in the data center, and zone-redundant storage with three copies in different data centers." border="false":::
 
