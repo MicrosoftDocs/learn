@@ -13,14 +13,14 @@ You must fully validate the health of both the application code and infrastructu
 
 Multiple application environments are needed to run mission-critical workloads. Some might reflect production on a permanent basis while others may be short lived with a reduced level of complexity. These environments should be staged as part of the continuous integration/continuous delivery (CI/CD) pipelines during the development and release cycle so that deployment is fully tested before going into the production environment.
 
-It's highly recommended that dev/test environments shouldn't share resources with the production environment. Each environment has its own set of requirements for reliability, capacity, and security requirements. Can you identify services in this architecture that are shared across the two environments? How will you change the design so align with that recommendation.
+It's highly recommended that **dev/test environments shouldn't share resources with the production environment**. Each environment has its own set of requirements for reliability, capacity, and security requirements. Can you identify services in this architecture that are shared across environments? How will you change the design to align with this recommendation.
 
 > **Learn more: [Application environments](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#application-environments)**
 
 
 ## Ephemeral deployment environments
 
-Using the blue/green deployment strategy is preferred for mission-critical workloads. This approach requires atleast two identical deployments running in parallel. Blue or the existing deployment serves user traffic while green or the new deployment is created, tested, and  prepared to receive traffic. If the green deployment is successful, it becomes the primary production environment and the blue deployment is decommissioned.
+Using **blue/green deployment** strategy is preferred for mission-critical workloads. This approach requires atleast two identical deployments running in parallel. Blue or the existing deployment serves user traffic while green or the new deployment is created, tested, and prepared to receive traffic. If the green deployment is successful, it becomes the primary production environment and the blue deployment is decommissioned.
 
 > **Learn more: [Ephemeral blue/green deployments](/azure/architecture/framework/mission-critical/mission-critical-deployment-testing#ephemeral-bluegreen-deployments)**
 
