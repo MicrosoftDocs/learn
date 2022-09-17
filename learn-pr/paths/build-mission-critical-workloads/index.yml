@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.build-mission-critical-workloads
 title: Build mission-critical workloads on Azure
-summary: Learn how to design highly reliable, available, and resilient workloads in Azure. Apply core principles to design areas applicable to solutions that typically target 99.999% uptime (commonly referred to as '5 9s').
+summary: Learn how to design highly reliable, available, and resilient workloads. Apply core principles to design areas applicable to solutions that typically target 99.999% uptime (commonly referred to as '5 9s').
 metadata:
   title: Build mission-critical workloads on Azure
   description: Learn how to design highly reliable, available, and resilient workloads in Azure. Apply core principles to design areas applicable to solutions that typically target 99.999% uptime (commonly referred to as '5 9s').
