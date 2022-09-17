@@ -46,20 +46,17 @@ Azure Database for MySQL supports common database tools, such as MySQL Workbench
 
 Azure Database for MySQL is available in two hosting options:
 
-- Azure Database for MySQL, for which there are two deployment modes:
-  - Single Server
-  - Flexible Server
+- Azure Database for MySQL - Flexible Server
 - MySQL on Azure VMs
 
 Let's examine these options more closely.
 
-### Azure Database for MySQL in Single Server mode
+### Azure Database for MySQL in Flexible Server mode
 
-This mode provides for a fully managed database service and requires minimal user configuration and control. This mode has the following characteristics:
+This mode also provides for a fully managed database service, but provides for more user configuration and control, when needed. This mode has the following characteristics:
 
 - Minimal requirements for customizations of the database
 - Designed to provide most of the database management functions, such as:
-
   - Patching
   - High availability
   - Backups
@@ -73,16 +70,11 @@ Consider this deployment mode to support cloud native apps that:
   - Granular control on the patching schedule.
   - Custom MySQL configuration settings.
 
-### Azure Database for MySQL in Flexible Server mode
-
-This mode also provides for a fully managed database service, but provides for more user configuration and control, when needed. This mode has the following characteristics:
-
 - It enables you to opt for high availability either:
-
   - Within a single availability zone
   - Across multiple availability zones
-- It provides better cost-optimization controls with the ability to:
 
+- It provides cost-optimization controls with the ability to:
   - Start and stop your server.
   - Implement burstable SKU.
 

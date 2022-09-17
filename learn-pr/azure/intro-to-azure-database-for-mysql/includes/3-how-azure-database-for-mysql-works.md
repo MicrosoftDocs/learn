@@ -3,17 +3,14 @@ In this unit, you'll explore how Azure Database for MySQL works. If you're using
 - PaaS, by using one of the two Azure Database for MySQL deployment options
 - IaaS, by using MySQL on Azure VMs
 
-If you choose to use Azure Database for MySQL, you'll also have to choose between the Single Server and Flexible Server deployment modes.
-
 In this unit, you'll learn more about the differences between these hosting options and deployment modes. You'll also learn about the functions and features they provide, along with their specific requirements.
 
 ## How are the hosting options and deployment modes different?
 
-You can deploy MySQL on Azure in three ways. The following table identifies the key characteristics of each of these approaches.
+You can deploy MySQL on Azure in different ways. The following table identifies the key characteristics of each of these approaches.
 
 | Hosting option / deployment mode                                          | Summary                                                      |
 | ------------------------------------------------ | ------------------------------------------------------------ |
-| Azure Database for MySQL in Single Server mode   | Fully managed DBaaS requiring minimal user configuration or control. |
 | Azure Database for MySQL in Flexible Server mode | Fully managed DBaaS, but providing more user configuration and control, if required. |
 | MySQL on Azure VMs                               | A database implementation that uses IaaS and is managed by you.                   |
 
@@ -22,17 +19,15 @@ Let's examine more closely the differences in features:
 - MySQL version:
 
   - All deployment options support versions 5.7 and 8.0.
-  - Single Server deployment currently supports version 5.6 (though this version is retired).
   - MySQL on Azure VMs supports any MySQL version you want to install.
 - Compute scaling. All options can scale as necessary to accommodate load changes.
 - Network connectivity:
   - All options support public endpoints with a server firewall.
-  - Private access with Private Link support is available for Single Server and MySQL on Azure VMs.
+  - Private access with Private Link support is available for MySQL on Azure VMs.
   - Private access with Virtual Network integration is available for Flexible Server.
 - SSL/TLS connectivity is supported on all platforms.
 - Storage:
   - Both Azure Database for MySQL deployment modes support storage sizes between 5 gibibytes (GiBs) to 16 tebibytes (TiBs). Both also support online storage scaling.
-  - Currently only Single Server supports automatic storage scaling.
   - MySQL on Azure VMs supports from 32 GiB to 32,767 GiB but doesn't support online storage scaling.
 
 - Updating and patching:
@@ -45,15 +40,12 @@ Let's examine more closely the differences in features:
     - Managed by end users for MySQL on Azure VMs.
 
 - High availability:
-  - Single Server supports built-in high availability within a single availability zone.
   - Flexible Server supports built-in high availability with multiple availability zones.
   - MySQL on Azure VMs requires that you custom-manage these settings.
 - Data encryption at rest:
-  - Single Server supports this with customer-managed keys.
   - Flexible Server supports this with service-managed keys.
   - MySQL on Azure VMs doesn't support this.
 - Backup:
-  - On Single Server, backups are automated with retention between 7 and 35 days.
   - On Flexible Server, backups are automated with retention between 1 and 35 days.
   - On MySQL on Azure VMs, backups are managed manually.
 
@@ -77,26 +69,13 @@ For Flexible Server, within the single availability zone, the following steps oc
 > [!NOTE]
 > If you have provisioned high availability across zones, the hot standby server is maintained in another availability zone in the same Azure region.
 
-Things are slightly different with Single Server after a hosting server failure:
-
-1. Azure provisions a new compute container.
-2. Azure maps the data files to the new container.
-3. Azure brings the database engine online.
-4. A gateway service redirects clients to the new instance.
-
 ### How backups work
 
-The backup process is the same for Single Server and Flexible Server deployment modes. The Azure Database for MySQL service automatically creates backups and stores them in locally redundant storage. You're then able to use the backups to restore your server to any point in time within the retention period (35 days).
+The backup process is the same for Flexible Server deployment modes. The Azure Database for MySQL service automatically creates backups and stores them in locally redundant storage. You're then able to use the backups to restore your server to any point in time within the retention period (35 days).
 
 ### How scaling works
 
-Scaling works in broadly the same way for both Single Server and Flexible Server deployment modes. However, how it works is determined by the specific SKU you select. Both deployment modes are available in three SKUs.
-
-For Single Server, these SKUs are:
-
-- Basic. Best suited for low-cost development and low-concurrency workloads.
-- General Purpose. Better suited for production workloads requiring high concurrency, scale, and predictable performance.
-- Memory Optimized. Better suited for production workloads requiring high concurrency, scale, and predictable performance.
+Scaling works in broadly the same way for Flexible Server deployment modes. However, how it works is determined by the specific SKU you select. Both deployment modes are available in three SKUs.
 
 For Flexible Server, the SKUs are:
 

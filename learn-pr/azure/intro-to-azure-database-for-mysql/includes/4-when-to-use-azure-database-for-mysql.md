@@ -1,4 +1,4 @@
-In this unit, we'll discuss how to determine if Azure Database for MySQL is a suitable solution for your internal developers. They don't want to focus on VM characteristics and capabilities, or database versioning, configuration, and security settings. Instead, they want to get on with app development and deployment. In this unit, we'll evaluate which of the following two solutions best addresses these needs: Azure Database for MySQL Single Server, or Azure Database for MySQL Flexible Server.
+In this unit, we'll discuss how to determine if Azure Database for MySQL is a suitable solution for your internal developers. They don't want to focus on VM characteristics and capabilities, or database versioning, configuration, and security settings. Instead, they want to get on with app development and deployment. In this unit, we'll evaluate what  addresses these needs with Azure Database for MySQL - Flexible Server.
 
 We'll evaluate these solutions against the following criteria:
 
@@ -6,7 +6,7 @@ We'll evaluate these solutions against the following criteria:
 - Cost
 - High-availability options
 
-Before deciding on using Azure Database for MySQL, consider whether MySQL for Azure VMs can help you meet your needs. Remember that this option is an IaaS solution. This means you'll need to maintain the VM, its OS, and the MySQL database engine instance. However, if you want a specific version of MySQL that isn't supported by Single Server or Flexible Server, then MySQL for Azure VMs will work for you. In most other circumstances, consider one of the Azure Database for MySQL deployment options.
+Before deciding on using Azure Database for MySQL, consider whether MySQL for Azure VMs can help you meet your needs. Remember that this option is an IaaS solution. This means you'll need to maintain the VM, its OS, and the MySQL database engine instance. However, if you want a specific version of MySQL that isn't supported by Flexible Server, then MySQL for Azure VMs will work for you. In most other circumstances, consider one of the Azure Database for MySQL deployment options.
 
 ## Decision criteria
 
@@ -15,8 +15,8 @@ To determine whether to use MySQL for Azure VMs or Azure Database for MySQL, use
 | Criteria              | Analysis |
 | --------------------- | -------- |
 | Administrative effort | Azure Database for MySQL is a fully managed service and requires only minimal, optional administrative effort. MySQL for Azure VMs requires that you manage the entire infrastructure and involves considerably more effort. |
-| Cost      | Azure Database for MySQL is currently available as a service in several tiers with different prices for resources. You can choose the most appropriate tier and SKU. |
-| High-availability options      | Azure Database for MySQL automatically provides high-availability options. |
+| Cost | Azure Database for MySQL is currently available as a service in several tiers with different prices for resources. You can choose the most appropriate tier and SKU. |
+| High-availability options | Azure Database for MySQL automatically provides high-availability options. |
 
 ## Apply the criteria
 
