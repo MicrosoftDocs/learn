@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  Answer these questions to demonstrate what you've learned:
 quiz:
   title: Check your knowledge
   questions:
