@@ -2,7 +2,7 @@ What happens when you get a new dataset? Before you can run complex queries and 
 
 ## Characterize the data
 
-Suppose you're looking at an unfamiliar table of meterological data. At first, you'll want to answer questions like:
+Suppose you're looking at an unfamiliar table of meteorological data. At first, you'll want to answer questions like:
 
 - What information is part of this data? 
 - How many entries are in this table?
