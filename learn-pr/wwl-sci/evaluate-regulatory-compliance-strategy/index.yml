@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   *   Experience with compliance frameworks, processes and products.
   *   Experience implementing Azure Policy.
-iconUrl: /learn/achievements/evaluate-a-regulatory-compliance-strategy.svg
+iconUrl: /training/achievements/evaluate-a-regulatory-compliance-strategy.svg
 levels:
 - advanced
 roles:
