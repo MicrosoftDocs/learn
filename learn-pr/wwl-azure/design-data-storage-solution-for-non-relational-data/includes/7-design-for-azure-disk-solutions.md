@@ -16,7 +16,7 @@ Azure offers several types of data disks. The following table shows a [compariso
 | **Max throughput** | 2,000 Mbps| 900 Mbps| 750 Mbps| 500 Mbps |
 | **Max IOPS** | 160,000 | 20,000 | 6,000 | 2,000 |
 
-### Choose an encryption option
+#### Choose an encryption option
 
 There are several encryption types available for your managed disks.
 
