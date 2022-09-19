@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Challenge Project - Design a mission-critical workload
 summary: |
-  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities. The architecture is for an example workload for a fictitious company. You'll start with an existing architecture, given the high-level specifications, design principles, example solutions to complete the project.
+  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities. You'll be given the architecture of an example workload, its current state, tradeoffs, and business requirements for improvements. Based on the technical specification in each exercise, you'll apply mission-critical principles and evolve the design toward the target architecture. 
   > [!NOTE]
   > This module is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation. A recommended approach is given for each exercise to make sure you're aligned with the specification of the target architecture.
 abstract: |
