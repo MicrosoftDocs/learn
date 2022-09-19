@@ -52,21 +52,21 @@ quiz:
     choices:
     - content: "Microsoft Graph PowerShell acts as an API wrapper for all Microsoft Graph APIs, exposing the entire API set for use in PowerShell."
       isCorrect: true
-      explanation: "Every service that has an API in Microsoft Graph has a cmdlet in Microsoft Graph PowerShell. This makes it possible to automate a process across a set of services."
+      explanation: "Every service that has an API in Microsoft Graph has a cmdlet in Microsoft Graph PowerShell. This feature makes it possible to automate a process across a set of services."
     - content: "Microsoft Graph PowerShell supports rich, advanced queries via eventual consistency hence support for complex functions."
       isCorrect: false
-      explanation: "It's true that Microsoft Graph PowerShell supports advanced queries, but that does not make it possible to automate a process across a set of Microsoft services."
+      explanation: "It's true that Microsoft Graph PowerShell supports advanced queries, but that doesn't make it possible to automate a process across a set of Microsoft services."
     - content: "Microsoft Graph PowerShell is easy to learn and use and would be easy to connect several Microsoft services using the SDK."
       isCorrect: false
-      explanation: "Easy to learn and use is not stated as feature of Microsoft Graph PowerShell and does not make it possible to automate a process across a set of Microsoft services."
+      explanation: "Easy to learn and use isn't stated as feature of Microsoft Graph PowerShell and doesn't make it possible to automate a process across a set of Microsoft services."
   - content: "What makes Microsoft Graph PowerShell a cross-platform (Windows, Linux, and macOS) automation tool?"
     choices:
     - content: "Microsoft Graph PowerShell uses Microsoft Authentication Library that supports modern authentication."
       isCorrect: false
-      explanation: "Microsoft Graph PowerShell supports modern authentication through Microsoft Authentication Library, but this doesn't make it a cross-platform tool."
+      explanation: "Microsoft Graph PowerShell supports modern authentication through Microsoft Authentication Library, but this feature doesn't make it a cross-platform tool."
     - content: "Microsoft Graph PowerShell provides commands for the entire Microsoft Graph API."
       isCorrect: false
-      explanation: "Microsoft Graph PowerShell is PowerShell for the entire set of Microsoft Graph APIs, but this doesn't make it a cross-platform tool."
+      explanation: "Microsoft Graph PowerShell is PowerShell for the entire set of Microsoft Graph APIs, but this feature doesn't make it a cross-platform tool."
     - content: "Microsoft Graph PowerShell supports PowerShell 7, which is itself a cross-platform tool."
       isCorrect: true
       explanation: "PowerShell 7 is a cross-platform automation tool that is supported by Microsoft Graph PowerShell. This relation makes Microsoft Graph PowerShell a cross platform tool."
