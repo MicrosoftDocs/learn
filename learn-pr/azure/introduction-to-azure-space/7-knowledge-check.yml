@@ -3,17 +3,15 @@ uid: learn.introduction-to-azure-space.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: TBD
+  description: Knowledge check
   ms.date: 09/16/2022
   author: meaghanlewis
   ms.author: mosagie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
-content: |
-  [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: Knowledge check
+  title: Check your knowledge
   questions:
   - content: "Which of the following options is **not** a key factor in the rapid expansion of the space industry?"
     choices:
