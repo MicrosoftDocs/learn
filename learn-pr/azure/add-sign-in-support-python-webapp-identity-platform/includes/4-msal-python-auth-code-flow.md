@@ -27,7 +27,10 @@ The diagram below provides a high-level overview of the Microsoft identity platf
 
 :::image type="content" source="../media/4-auth-code-flow.png" border="false" alt-text="Web app sign in authentication flow":::
 
-As in the preceding diagram, the authorization code flow in MSAL Python consists of two main steps. In the first leg, the application requests an authorization code that the client redeems for an access token. In the second leg, the application uses the access token to call a protected web API.
+As in the preceding diagram, the authorization code flow in MSAL Python consists of two main steps:
+
+- In the first leg, the application requests an authorization code that the client redeems for an access token. 
+- In the second leg, the application uses the access token to call a protected web API.
 
 ### Configure app instance
 
@@ -51,7 +54,7 @@ app = msal.ConfidentialClientApplication(
         )
 ```
 
-When creating a confidential client application instance, you must add a client credential such as a certificate or client secret. The client ID is exposed through the web browser, but the secret is passed only in the back channel and never directly exposed.
+When creating an instance of a confidential client application, you must add a client credential, like a certificate or client secret. Unlike the client ID which is exposed in the web browser, the client secret is stored securely on your web app server. It is passed in back channel(non-browser) requests to your authorization server and never exposed directly. 
 
 ## Security tokens in the authorization code flow
 

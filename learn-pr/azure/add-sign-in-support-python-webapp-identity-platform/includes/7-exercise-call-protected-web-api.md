@@ -50,7 +50,7 @@ if token_cache.has_state_changed:
 session["msal_http_response_cache"] = http_cache
 ```
 
-Now that you have a token, you can call a protected web API. To call the Microsoft Graph API, update `app.py` with the following code. 
+Now that you have a token, you can call a protected web API. The following snippet in `app.py` calls the Microsoft Graph API and renders a template with the requested data.
 
 ```python
 # Simple HTTP Get to graph showing the usage of the retrieved access token
@@ -65,13 +65,11 @@ return render_template("authenticated/graph.html",
     graphAccessTokenExpiresInSeconds=result['expires_in'])
 ```
 
-A call to the Microsoft Graph API is a simple HTTP Get that contains the access token in the authorization header. After consenting to the requested permissions and signing in, the app displays that you've successfully logged in using your Azure AD credentials. The controller makes a call to `Microsoft Graph's /me` API endpoint for your user and received the following information. 
+A call to the Microsoft Graph API is a simple HTTP Get that contains the access token in the authorization header. After consenting to the requested permissions and signing in, the app displays that you've successfully logged in using your Azure AD credentials. The controller makes a call to `Microsoft Graph's /me` API endpoint for your user and receives the following information. 
 
 :::image type="content" source="../media/6-call-microsoft-graph-api.png" border="false" alt-text="Call Microsoft Graph API":::
 
-If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this module, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial auth code flow and performing on-demand, step-up authentication depending on your desired user experience. 
-
-
+If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this module, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial authorization code flow and performing on-demand, step-up authentication depending on your desired user experience. 
 
 ## Access protected routes 
 

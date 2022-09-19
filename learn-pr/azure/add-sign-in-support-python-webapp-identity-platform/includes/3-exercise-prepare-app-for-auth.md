@@ -83,7 +83,7 @@ For the general template, create an HTML file named `layout.html` in the templat
 Next, create a new folder in templates and name it public. You should then add an `index.html` template to the public folder. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the `index.html` template.
 
 ```html
-# 📁 public/index.html
+# 📁 templates/public/index.html
 
 {% extends "layout.html" %}
 {% block page_title %}Home{% endblock %}
@@ -99,12 +99,12 @@ Next, create a new folder in templates and name it public. You should then add a
 {% endblock %}
 ```
 
-Next, create a folder called `authenticated` and add two templates that your app will render when users sign in.
+Next, in the templates folder, create a sub-folder called `authenticated` where you'll add two templates that your app will render when users sign in.
 
 The first template, `graph.html` will render when all users sign in. Paste the following contents into this template:
 
 ```html
-# 📁 authenticated/graph.html
+# 📁 templates/authenticated/graph.html
 
 {% extends "layout.html" %}
 {% block page_title %}Graph Access{% endblock %}
@@ -136,6 +136,7 @@ The first template, `graph.html` will render when all users sign in. Paste the f
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 {% endblock %}
 ```
+
 Add a second template in the authenticated subfolder and name it `admin.html`. Your app will render this template when users with an application-defined role sign in. In our insurance data solution scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the `admin.html` template:
 
 ```html
@@ -175,13 +176,13 @@ Add a second template in the authenticated subfolder and name it `admin.html`. Y
 You're now done creating the presentation layer for your Flask web application. Your final `templates` directory should look like this:
 
 ```md
-templates/
-├── authenticated
-│   ├── admin.html
-│   ├── graph.html
-├── public
-│   ├── index.html
-├── layout.html
+# 📁 templates
+  ├── authenticated
+  │     ├── admin.html
+  │     ├── graph.html
+  ├── public
+  │     ├── index.html
+  ├── layout.html
 ```
 
 ## Register your application in the Azure portal
@@ -241,20 +242,20 @@ In this scenario, one route requires an application-defined app role that allows
 
 After adding app roles to your application registration, you can assign users and groups to the roles. To assign users and groups to the created `admin role` using the Azure portal UI:
 
-1. In the Azure portal, select Azure **Active Directory**. 
+1. In the Azure portal, select **Azure Active Directory**. 
 1. Under **Manage**, select **Enterprise applications**
 1. Select **All applications** to view a list of all your applications. If your Python web app doesn't appear in the list, search using the application name or ID. You can also use the filters at the top of the **All applications** list to restrict the list, or scroll down the list to locate your application. 
 1. Select the application you want to assign users or groups to roles. In this case, your Python web app.
 1. Under **Manage**, select **Users and groups**.
 1. Select **Add user/group** to open the **Add Assignment** pane.
 1. Select the **Users and groups** selector from the **Add Assignment** pane. A list of users and security groups is displayed. You can search for a certain user or group as well as select multiple users and groups that appear in the list. For this tutorial, add *yourself* and select the **Select** button to proceed.
-1. On the **Select a role** in the **Add assignment** pane, choose the `admin role` you previously created.
+1. In the **Add assignment** pane, you'll also choose a role to assign the selected users. In this case, the `admin role` is already selected by default. If you added several roles to the application, you'll have the option to choose the role you want.
 1. Select the **Assign button** to finish the assignment of users and groups to the app.
 1. Confirm that the users and groups you added appear in the **Users and groups** list.
 
 ## Update the application to use your app registration details
 
-In the `default_settings.py` file, add the following code. You'll also update the client ID, client secret, and tenant ID values with the configuration properties from your app's registration in the Azure portal.
+In the `default_settings.py` file, add the following code. 
 
 ```Python
 
@@ -278,3 +279,5 @@ CLIENT_CREDENTIAL = "enter-your-client-secret-value-here"
 # 'Tenant ID' of your Azure AD instance - this is a GUID
 TENANT_ID = "enter-your-tenant-id-here"
 ```
+
+After adding the code snippet above, update the client ID, tenant ID, and client secret values with the configuration properties from your application registration. The client id and tenant id values are listed in the **Overview** pane of your Azure portal app registration.

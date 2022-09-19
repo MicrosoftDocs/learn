@@ -279,7 +279,7 @@ In the code sample above, you verify that the user is authenticated and that the
 
 ## Sign out users
 
-To sign out users from the application, clear the user's session information from the app's state. Removing the `user`, `auth_code_flow`, and `token_cache` from the dictionary clears anything in the session that is tied to auth.
+To sign out users from the application, clear the user's session information from the application and the identity provider. Removing the `user`, `auth_code_flow`, and `token_cache` from the dictionary clears anything in the session that is tied to the authorization code flow. Add the following code to `app,py`: 
 
 ```python
 @app.get("/logout")
