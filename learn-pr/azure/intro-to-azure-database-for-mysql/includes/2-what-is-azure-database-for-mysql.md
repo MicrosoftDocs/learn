@@ -53,7 +53,7 @@ Let's examine these options more closely.
 
 ### Azure Database for MySQL in Flexible Server mode
 
-This mode also provides for a fully managed database service, but provides for more user configuration and control, when needed. This mode has the following characteristics:
+This mode provides for a fully managed database service, along with more user configuration and control, when needed. This mode has the following characteristics:
 
 - Minimal requirements for customizations of the database
 - Designed to provide most of the database management functions, such as:

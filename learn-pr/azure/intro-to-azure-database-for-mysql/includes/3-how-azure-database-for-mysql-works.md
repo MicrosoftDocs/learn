@@ -1,18 +1,18 @@
 In this unit, you'll explore how Azure Database for MySQL works. If you're using MySQL and are considering using Azure to host your MySQL apps, you must choose between one of the following hosting methods:
 
-- PaaS, by using one of the two Azure Database for MySQL deployment options
+- PaaS, by using Azure Database for MySQL - Flexible Server
 - IaaS, by using MySQL on Azure VMs
 
-In this unit, you'll learn more about the differences between these hosting options and deployment modes. You'll also learn about the functions and features they provide, along with their specific requirements.
+In this unit, you'll learn more about the differences between these hosting options. You'll also learn about the functions and features they provide, along with their specific requirements.
 
-## How are the hosting options and deployment modes different?
+## How are the hosting options different?
 
 You can deploy MySQL on Azure in different ways. The following table identifies the key characteristics of each of these approaches.
 
-| Hosting option / deployment mode                                          | Summary                                                      |
-| ------------------------------------------------ | ------------------------------------------------------------ |
-| Azure Database for MySQL in Flexible Server mode | Fully managed DBaaS, but providing more user configuration and control, if required. |
-| MySQL on Azure VMs                               | A database implementation that uses IaaS and is managed by you.                   |
+| Hosting option            | Summary                                                                              |
+| ---------------------------------------------------------------------------------------------------------------- |
+| Azure Database for MySQL | Fully managed DBaaS, but providing more user configuration and control, if required.  |
+| MySQL on Azure VMs       | A database implementation that uses IaaS and is managed by you.                       |
 
 Let's examine more closely the differences in features:
 
@@ -27,23 +27,23 @@ Let's examine more closely the differences in features:
   - Private access with Virtual Network integration is available for Flexible Server.
 - SSL/TLS connectivity is supported on all platforms.
 - Storage:
-  - Both Azure Database for MySQL deployment modes support storage sizes between 5 gibibytes (GiBs) to 16 tebibytes (TiBs). Both also support online storage scaling.
+  - Azure Database for MySQL support storage sizes between 5 gigabytes (GiBs) to 16 terabytes (TiBs). It also support online storage scaling.
   - MySQL on Azure VMs supports from 32 GiB to 32,767 GiB but doesn't support online storage scaling.
 
 - Updating and patching:
   - OS updates:
-    - Automatic for both Azure Database for MySQL deployment modes, although administrators have more control with Flexible Server.
+    - Automatic for Azure Database for MySQL - Flexible Server.
     - Managed by end users for MySQL on Azure VMs.
 
   - MySQL patching:
-    - Automatic for both Azure Database for MySQL deployment modes, although administrators have more control with Flexible Server.
+    - Automatic for Azure Database for MySQL - Flexible Server.
     - Managed by end users for MySQL on Azure VMs.
 
 - High availability:
-  - Flexible Server supports built-in high availability with multiple availability zones.
+  - Azure Database for MySQL supports built-in high availability with multiple availability zones.
   - MySQL on Azure VMs requires that you custom-manage these settings.
 - Data encryption at rest:
-  - Flexible Server supports this with service-managed keys.
+  - Azure Database for MySQL supports this with service-managed keys.
   - MySQL on Azure VMs doesn't support this.
 - Backup:
   - On Flexible Server, backups are automated with retention between 1 and 35 days.
@@ -51,11 +51,11 @@ Let's examine more closely the differences in features:
 
 ## Azure Database for MySQL architecture
 
-Let's examine the Azure Database for MySQL architecture. We'll focus on the Flexible Server deployment mode. In the following diagram, an instance of Azure Database for MySQL is deployed. It's configured with Azure Premium Storage for data and logs. MySQL also has access to locally redundant storage for backup.
+Let's examine the Azure Database for MySQL architecture. In the following diagram, an instance of Azure Database for MySQL is deployed. It's configured with Azure Premium Storage for data and logs. MySQL also has access to locally redundant storage for backup.
 
-The MySQL instance is hosted in Availability zone 1. Other availability zones are present, and Flexible Server could use those as well. Various client apps are connected to the MySQL instance.
+The MySQL instance is hosted in Availability zone 1. Other availability zones are present, and Azure Database for MySQL could use those as well. Various client apps are connected to the MySQL instance.
 
-:::image type="content" source="../media/flexible-server.png" alt-text="This is a detailed architecture of Azure Database for MySQL Flexible Server in a typical organization as previously described.":::
+:::image type="content" source="../media/flexible-server.png" alt-text="This is a detailed architecture of Azure Database for MySQL in a typical organization as previously described.":::
 
 ### How high availability works
 
@@ -71,17 +71,17 @@ For Flexible Server, within the single availability zone, the following steps oc
 
 ### How backups work
 
-The backup process is the same for Flexible Server deployment modes. The Azure Database for MySQL service automatically creates backups and stores them in locally redundant storage. You're then able to use the backups to restore your server to any point in time within the retention period (35 days).
+You're then able to use the backups to restore your server to any point in time within the retention period (35 days).
 
 ### How scaling works
 
-Scaling works in broadly the same way for Flexible Server deployment modes. However, how it works is determined by the specific SKU you select. Both deployment modes are available in three SKUs.
+Azure Database for MySQL is available in three SKUs.
 
-For Flexible Server, the SKUs are:
+The SKUs are:
 
 - Burstable. Best suited for low-cost development and low concurrency workloads that don't need full compute capacity continuously.
 - General Purpose. Better suited for production workloads requiring high concurrency, scale, and predictable performance.
-- Memory Optimized. Better suited for production workloads requiring high concurrency, scale, and predictable performance.
+- Business Critical. Better suited for production workloads requiring high concurrency, scale, and predictable performance.
 
 Depending on the SKU, you can configure the desired settings, and then adjust the scale settings as required to meet your application needs.
 
