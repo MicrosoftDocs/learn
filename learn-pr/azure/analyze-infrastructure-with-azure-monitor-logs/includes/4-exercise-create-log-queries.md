@@ -9,7 +9,7 @@ In this exercise, you'll practice performing Azure log queries against a demo pr
 Let's use the **Azure Demo Logs pane** to practice writing queries. The demo project workspace is pre-populated with sample data. Azure offers an optimized SQL-like query with visualization options of its data in a language called KQL (Kusto Query Language.)
 
 1. Open the [Logs demo environment](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade?azure-portal=true). In the top left corner, under New Query 1, you'll find **Demo**, which identifies the workspace, or the scope of the query. The left side of this pane contains several tabs: Tables, Queries, Functions. The right side has a scratchpad for creating or editing queries.
-1. On the **New Query 1** tab, enter a basic query on the first line of the scratchpad. This query retrieves the details of the ten most recent security events.
+1. On the **New Query 1** tab, enter a basic query on the first line of the scratchpad. This query retrieves the details of the 10 most recent security events.
 
     ```kusto
     SecurityEvent
@@ -28,17 +28,17 @@ Let's use the **Azure Demo Logs pane** to practice writing queries. The demo pro
 1. Add a filter clause and a time range. Run this query to fetch records that are more than 30 minutes old, and that have a level of 10 or more.
 
     ```kusto
-        SecurityEvent
+    SecurityEvent
         | where TimeGenerated < ago(30m)
         | where toint(Level) >= 10
     ```
 
-1. Run the following query to search the `Events` table for records from the `Application` event log for the last `24` hours.
+1. Run the following query to search the `AppEvents` table for records of the `Clicked Schedule Button` event being invoked in the last `24` hours.
 
     ```kusto
-    Event
-    | where EventLog == "Application"
-    | where TimeGenerated > ago(24h)
+    AppEvents 
+        | where TimeGenerated > ago(24h)
+        | where Name == "Clicked Schedule Button"
     ```
 
 1. Run the following query to display the number of different computers that generated heartbeat events each week for the last three weeks. The results appear as a bar chart.
@@ -62,7 +62,7 @@ In addition to writing queries from scratch, the operations team can also take a
 1. In the search box, enter *Distinct missing updates cross computers*. Select **Run**. The **Logs** pane reappears, with the query returning a list of Windows updates missing from virtual machines that are sending logs to the workspace.
 
     > [!NOTE]
-    > You can also run this same query from the **Logs** pane. In the left pane, select the **Queries** tab, tehn select **Category** in the **Group by** dropdown list. Now scroll down the list, expand **IT & Management Tools**, and double-click **Distinct missing updates cross computers**. Select **Run** to run the query.
+    > You can also run this same query from the **Logs** pane. In the left pane, select the **Queries** tab, then select **Category** in the **Group by** dropdown list. Now scroll down the list, expand **IT & Management Tools**, and double-click **Distinct missing updates cross computers**. Select **Run** to run the query.
     > When you select a predefined query in the left pane, the query code is appended to whatever query exists in the scratchpad. Remember to clear the scratchpad before opening or adding a new query to run.
 
 1. In the left pane, select **Queries**, and then, in the **Group by** dropdown list, select **Category**. Expand **Azure Monitor**, and double-click **Computers availability today**. Select **Run**. This query creates a time series chart with the number of unique IP addresses sending logs into the workspace each hour for the last day.
