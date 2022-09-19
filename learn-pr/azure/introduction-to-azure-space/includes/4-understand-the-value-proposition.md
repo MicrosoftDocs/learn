@@ -4,7 +4,7 @@ With Azure Space, Microsoft is building a platform for space and non-space indus
 
 Our strategy is:
 
-- **Non-competitive:** We are building a powerful partner community that will enable innovation and collaboration across industry leaders using the Azure Space platform.
+- **Non-competitive:** We're building a powerful partner community that will enable innovation and collaboration across industry leaders using the Azure Space platform.
 
 - **Multi-orbit:** By using a multi-orbit strategy, we can provide the best information and connectivity from both orbits. Our platform operates with NGSO (non-geostationary orbit) satellites for global coverage and low latency and GEO (geostationary orbit) satellites for use cases in high-density places.
 

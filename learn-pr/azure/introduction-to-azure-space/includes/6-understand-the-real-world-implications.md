@@ -9,19 +9,19 @@ So how do these technologies affect the world around us? There are numerous scen
 
 ### Second Example: Connectivity
 
-- **Scenario**: I manage a first-responder network that takes personnel to both remote rural areas and highly connected, dense cities, and I need consistent connectivity in both.
+- **Scenario**: I manage a first-responder network that takes personnel to both remote rural areas and highly connected, dense cities. I need consistent connectivity in both.
 - **Outcome**: Space connectivity enables an ultra-reliable network across vastly different locales with less dependence on fiber pathways that can fail. First responders can access communications on any device in any environment, saving critical time.
 
 ## Operator scenarios
 
 ### First Example: Optimization
 
-- **Scenario**: I am a SATCOM operator, and I would like to virtualize my ground segment, lower costs, and expand my business through cloud.
-- **Outcome**: Operators can leverage co-location services, access networking services, and use a platform for virtualization.
+- **Scenario**: I'm a SATCOM operator, and I would like to virtualize my ground segment, lower costs, and expand my business through cloud.
+- **Outcome**: Operators can use co-location services, access networking services, and use a platform for virtualization.
 
 ### Second Example: Infrastructure savings
 
-- **Scenario**: I would like to have the capability to operate my satellite, downlink data, and process data without investing, building, and maintaining my own ground station antenna and data center.
-- **Outcome**: Operators can operate satellites and downlink data, transfer data to Azure cloud using Azure networking, process data to produce imagery, and use Azure AI/ML and analytics services to gain further insight from earth observation data.
+- **Scenario**: I'd like to operate my satellite, downlink data, and process data without investing, building, and maintaining my own ground station antenna and data center.
+- **Outcome**: Operators can operate satellites, downlink data, transfer data to Azure cloud using Azure networking, process data to produce imagery, and use Azure AI/ML and analytics services to gain further insight from earth observation data.
 
 In the next unit, you'll review what you've learned in this module.
