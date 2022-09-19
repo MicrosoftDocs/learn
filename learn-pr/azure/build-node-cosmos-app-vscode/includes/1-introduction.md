@@ -8,13 +8,14 @@ By the end of this module, you'll know how to use Node.js with Visual Studio Cod
 
 ## Learning objectives
 
-In this module, you'll:
+In this module, you'll use Visual Studio Code to:
 
 - Create a Cosmos DB instance for a Node.js app
-- Build a new Node.js app in Visual Studio Code
+- Build a new Node.js app 
 - Add JavaScript code to work with Cosmos DB
+- Run the app in a local development environment
 
 ## Prerequisites
 
 - Visual Studio Code with Azure extensions installed
-- Node.js installed
+- Node.js LTS installed
