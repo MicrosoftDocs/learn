@@ -23,13 +23,8 @@ Broadly speaking, the business opportunities for Azure Space serve two categorie
 Microsoft's Azure Space platform can be used by satellite operators and end customers in both government and enterprise. While the intended user for each product in the Azure Space portfolio varies, Microsoft's approach is to provide value for all users through these core principles:
 
 - Our global network and infrastructure
-
 - Support for classified environments
-
 - Differentiated AI and machine learning offerings
-
 - An approach rooted in partnership, not competition
-
 - Advanced go-to-market channels that enable digital transformation
-
 - A comprehensive space product portfolio that meets the needs of operators and enterprises
