@@ -55,9 +55,9 @@ Now that you have an idea of what kind of data exists in your table, you can sel
 
 ### Filter on a value
 
-You can also filter on a single value. In this case, let's view all events that happened in the state of Ohio.
+You can also filter on a single value. Let's view all events that happened in the state of Ohio.
 
-1. Select the hamburger menu to the right of the **State** column.
+1. Select the menu icon to the right of the **State** column.
 1. Select the funnel icon.
 1. While you could search for any type of string or integer match, we want to look for any column that contains the word **Ohio**. Note that you can also use this filter to find incomplete or empty data fields.
 
@@ -79,7 +79,7 @@ On the bottom right corner of the results grid, selected cells are summarized. W
 
 ### Expand a dynamic field
 
-Scroll all the way to the last column in the data table. Do you see the **StormSummary** column? This field contains a large amount of data, not all of which is visible. You can expand the cell to view all information inside the dynamic field.
+Scroll to the last column in the data table. Do you see the **StormSummary** column? This field contains a large amount of data, which isn't all visible. You can expand the cell to view all information inside the dynamic field.
 
 1. Select the **Expand view** icon on the top right of the results grid.
 1. Select **Right** to view the expanded results in the right pane.

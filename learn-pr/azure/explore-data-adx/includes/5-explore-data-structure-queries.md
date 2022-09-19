@@ -6,7 +6,7 @@ Now that you've answered basic questions about the data present in your dataset,
 
 For example, on the first pass, you can use simple queries to define the range of the dataset. While you've taken a broad look at the full data set, you can also use a query to investigate each column and its respective data type. You can then decide what columns you want to look at to summarize (aggregate) data. You can aggregate data by different subgroups to give counts and ranges (min/max) of certain fields. If you have dynamic data fields, you may want to expand them and see what kind of data is held within.
 
-On the second pass, you can zoom out and use queries to visualize your data as a whole. By looking at a selection of the data table in the last unit, you've seen that you have timeseries data, data grouped by state, and data with very specific location. You'll further use queries and the built-in visualizations to explore these different kinds of series and gain insights into their completeness and distribution.
+On the second pass, zoom out and use queries to visualize your data as a whole. By looking at a selection of the data table in the last unit, you've seen that you have timeseries data, data grouped by state, and data with very specific location. You'll further use queries and the built-in visualizations to explore these different kinds of series and gain insights into their completeness and distribution.
 
 ## Share insights
 
