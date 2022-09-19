@@ -14,7 +14,7 @@ In this module, you learn how to:
 
 - Design for data storage.
 
-- Design for Azure Storage accounts.
+- Design for Azure storage accounts.
 
 - Design for Azure Blob Storage.
 
@@ -22,7 +22,7 @@ In this module, you learn how to:
 
 - Design for Azure Files.
 
-- Design an Azure disk solution.
+- Design for Azure managed disks.
 
 - Design for storage security.
 

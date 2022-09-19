@@ -1,4 +1,4 @@
-Azure offers many disk solutions. In this module, we examine how to work with data disks.
+Azure offers many disk solutions. In this module, we examine how to work with data disks by using Azure managed disks.
 
 Data disks are used by virtual machines to store data like database files, website static content, or custom application code. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.
 
@@ -7,7 +7,7 @@ Data disks are used by virtual machines to store data like database files, websi
 
 ### Things to know about managed disks
 
-Azure offers several types of data disks. The following table shows a [comparison of four disk types](/azure/storage/common/nfs-comparison). 
+Azure offers several types of managed disks. The following table shows a [comparison of four data disk types](/azure/storage/common/nfs-comparison). 
 
 | Comparison | Ultra-disk | Premium SSD | Standard SSD | Standard HDD |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ There are several encryption types available for your managed disks.
 
 ### Things to consider when using managed disks
 
-Think about what disk types are needed for Tailwind Traders. Consider your scenarios, throughput, and IOPS.
+Think about what data disk types are needed for Tailwind Traders. Consider your scenarios, throughput, and IOPS.
 
 - **Consider your scenarios, throughput, and IOPS**. Compare disk types and choose the data disks that satisfy your business scenarios, and throughput and IOPS requirements. For more information, see [Select a disk type for Azure IaaS VMs - managed disks](/azure/virtual-machines/disks-types)
 

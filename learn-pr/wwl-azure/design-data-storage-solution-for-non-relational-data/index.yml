@@ -13,11 +13,11 @@ summary: Azure Architects design and recommend non-relational data storage solut
 abstract: |
   In this module, you learn how to:
   - Design for data storage.
-  - Design for Azure Storage accounts.
+  - Design for Azure storage accounts.
   - Design for Azure Blob Storage.
   - Design for data redundancy.
   - Design for Azure Files.
-  - Design an Azure disk solution.
+  - Design for Azure managed disks.
   - Design for storage security.
 prerequisites: |
   - Conceptual knowledge of storage accounts, blobs, files, disks, and data protection.
@@ -29,7 +29,8 @@ roles:
 - solution-architect
 products:
 - azure-blob-storage
-- azure-disk-storage
+- azure-files
+- azure-managed-disks
 - azure-storage
 - azure-storage-accounts
 subjects:
