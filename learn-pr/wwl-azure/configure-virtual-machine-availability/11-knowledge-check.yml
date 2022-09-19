@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/11/2022
+  ms.date: 09/19/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -39,14 +39,14 @@ quiz:
     - content: "Schedule-based rules"
       isCorrect: true
       explanation: "Correct. With schedule-based rules administrators proactively schedule the scale set to deploy one or any number of additional instances. This will accommodate a spike in demand and then scale back down when the spike ends."
-  - content: "Virtual machine scale sets deploy and manage which of the following?"
+  - content: "Rather than deploy new instances as load increases on the application hosted in a virtual machine scale set, you want to increase the CPU capacity of each existing instance. Which of the following types of scaling would you perform to achieve this goal?"
     choices:
-    - content: "A set of identical VM instances created from the same base OS image and configuration."
+    - content: "Vertical scaling."
       isCorrect: true
-      explanation: "Correct. This approach lets administrators easily manage hundreds of VMs without additional configuration tasks or network management."
-    - content: "A mix of virtual machines with different OS images and configurations."
+      explanation: "Correct. Vertical scaling increases the capacity of instances within a virtual machine scale set."
+    - content: "Horizontal scaling."
       isCorrect: false
-      explanation: "Incorrect. Virtual machine scale sets deploy and manage a set of identical VM instances."
-    - content: "Whatever is needed for the application, an identical set or a mixed set of virtual machines."
+      explanation: "Incorrect. Horizontal scaling increases the number of instances within a virtual machine scale set."
+    - content: "Load balancing."
       isCorrect: false
-      explanation: "Incorrect. Virtual machine scale sets deploy and manage a set of identical VM instances."
+      explanation: "Incorrect. Load balancing distributes traffic across instances in a virtual machine scale set. It doesn't alter the number or performance of instances within the virtual machine scale sets."
