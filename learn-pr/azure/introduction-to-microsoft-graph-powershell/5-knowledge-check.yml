@@ -48,7 +48,7 @@ quiz:
     - content: "Run `Find-MgGraphPermission` to discover the cmdlets associated with the particular domain."
       isCorrect: false
       explanation: "Find-MgGraphPermission helps find permissions and not cmdlets applicable to a certain domain, for example, user."
-  - content: "An IT admin has been tasked with automating a reporting process across a set of Microsoft Services. Each of these services has an API in Microsoft Graph. Which feature of Microsoft Graph PowerShell makes it a good tool to use to automate this process?"
+  - content: "An IT admin has been tasked with automating a reporting process across a set of Microsoft services. Each of these services has an API in Microsoft Graph. Which feature of Microsoft Graph PowerShell makes it a good tool to use to automate this process?"
     choices:
     - content: "Microsoft Graph PowerShell acts as an API wrapper for all Microsoft Graph APIs, exposing the entire API set for use in PowerShell."
       isCorrect: true
