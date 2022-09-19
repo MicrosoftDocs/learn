@@ -84,7 +84,7 @@ Find-MgGraphPermission user.read
 
 ### Using Select-MgProfile
 
-By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default.
+By default, the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default.
 
 To check your current profile, run:
 

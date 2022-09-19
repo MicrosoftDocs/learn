@@ -65,7 +65,7 @@ summary: Characterize the types of business processes that Microsoft Graph Power
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether Microsoft Graph PowerShell is appropriate to automate your business processes
-    - Describe how the features in Microsoft Graph PowerShell work together to automate your business processes..
+    - Describe how the features in Microsoft Graph PowerShell work together to automate your business processes
     
 ###########################################################################
 ###
@@ -91,7 +91,7 @@ abstract: |
 prerequisites: |
   - Basic familiarity with using command-line shell like Command Prompt or Git Bash
   - Basic knowledge PowerShell concepts such as command-naming conventions, parameters and variables
-  - Basic knowledge of REST services and APIs
+  - Basic knowledge of REST services and APIs to define how applications connect to and communicate with each other.
 ###########################################################################
 ###
 ### Do not edit: will be replaced by the module icon when available

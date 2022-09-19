@@ -19,7 +19,7 @@ Microsoft Graph PowerShell SDK
 
 - Basic familiarity with using command-line shell like Command Prompt or Git Bash
 - Basic knowledge PowerShell concepts such as command-naming conventions, parameters and variables
-- Basic knowledge of REST services and APIs
+- Basic knowledge of REST services and APIs to define how applications connect to and communicate with each other.
 
 ## Summary
 
