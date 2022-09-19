@@ -46,7 +46,7 @@ During the process, you'll:
 
 ### Deploy the template to Azure
 
-Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take a minute or two to complete, and then you'll see a successful deployment.
+Run the following code from the terminal in Visual Studio Code to deploy the Bicep template to Azure. This can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hardcoded, don't worry; it's safe to proceed, and the deployment will succeed.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -62,7 +62,7 @@ You'll see `Running...` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and you'll see a successful deployment. 
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. This can take a minute or two to complete, and you'll see a successful deployment. If you see a warning about the location being hardcoded, don't worry; it's safe to proceed, and the deployment will succeed.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
