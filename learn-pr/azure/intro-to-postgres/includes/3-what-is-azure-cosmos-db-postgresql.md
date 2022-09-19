@@ -4,7 +4,7 @@ You can extend the functionality of databases using [PostgreSQL extensions](http
 
 In fact, the distributed capabilities of Azure Cosmos DB for PostgreSQL are made possible through the [Citus extension](https://github.com/citusdata/citus). Other examples of extensions are [`pg_cron`](https://github.com/citusdata/pg_cron), a cron-based job scheduler that allows you to schedule PostgreSQL commands directly from the database, and [PostGIS](https://postgis.net/) that adds support for geographic objects, allowing location queries to be run in SQL.
 
-![Diagram showing three of the extensions you will use in this learning module, Citus, PostGIS, and pg_cron, being added to Azure Cosmos DB for PostgreSQL and used to extend the functionality of the database.](../media/cosmos-db-for-postgresql-extensions.png)
+![Diagram showing three of the extensions you will use in this learning module, Citus, PostGIS, and pg_cron, being added to Azure Cosmos DB for PostgreSQL and used to extend the functionality of the database.](../media/3a-cosmos-db-for-postgresql-extensions.png)
 
 In the Azure Cosmos Database for PostgreSQL module, you'll explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You'll examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
 
@@ -26,7 +26,7 @@ Citus provides the primary performance and scalability features of Azure Cosmos 
 
 [Citus](https://github.com/citusdata/citus) is an open-source extension for PostgreSQL that was created to allow data storage and computing capabilities to scale across a cluster of PostgreSQL servers without sacrificing traditional relational database functionality like transactions, joins, and foreign keys. The Citus extension enables this by transforming PostgreSQL into a highly-scalable distributed database with features like a distributed SQL engine, [sharding](https://docs.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#shards), [reference tables](https://docs.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables), and [distributed tables](https://docs.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-1-distributed-tables).
 
-![Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how additional nodes can be added to scale out.](../media/distributed-database.png)
+![Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how additional nodes can be added to scale out.](../media/3b-distributed-database.png)
 
 ## Scale compute across nodes
 

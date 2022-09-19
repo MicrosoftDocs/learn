@@ -32,7 +32,7 @@ subjects:
 units:
 - learn.create-azure-db-for-postgresql.1-introduction
 - learn.create-azure-db-for-postgresql.2-what-is-azure-database-for-postgresql
-- learn.create-azure-db-for-postgresql.3-what-is-azure-cosmos-db-postgresql
+- learn.create-azure-db-for-postgresql.3-what-is-azure-cosmos-db-for-postgresql
 - learn.create-azure-db-for-postgresql.4-how-azure-database-for-postgresql-works
 - learn.create-azure-db-for-postgresql.5-when-to-use-azure-database-for-postgresql
 - learn.create-azure-db-for-postgresql.6-knowledge-check
