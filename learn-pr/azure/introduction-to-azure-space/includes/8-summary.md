@@ -4,6 +4,6 @@ Now that you've completed this module and understand the current state of the sp
 
 ## Learn more
 
-- [Azure Space](https://azure.microsoft.com/solutions/space/)
-- [Why use Azure Orbital?](/azure/orbital/overview)
-- [Azure Orbital documentation](/azure/orbital/)
+- [Azure Space](https://azure.microsoft.com/solutions/space/?azure-portal=true)
+- [Why use Azure Orbital?](/azure/orbital/overview/?azure-portal=true)
+- [Azure Orbital documentation](/azure/orbital/?azure-portal=true)

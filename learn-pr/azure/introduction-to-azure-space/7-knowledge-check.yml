@@ -10,8 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
-content: |
-  Answer these questions to demonstrate what you've learned:
 quiz:
   title: Check your knowledge
   questions:

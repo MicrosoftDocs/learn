@@ -2,11 +2,11 @@ The space industry is rapidly expanding, with the size of the global space econo
 
 ## The barrier to entry is lowering
 
-Space has never been more accessible. For example, the cost to deliver payload to space has decreased significantly over the past few decades. When the Space Shuttle was launched in 1981, it cost $65,400 per kilogram, around $1.8 billion per launch. When SpaceX launched Falcon Heavy in 2018, it cost $1,500 per kilogram, about $95 million per launch.
+Space has never been more accessible. For example, the cost to deliver  a payload to space has decreased significantly over the past few decades. When the Space Shuttle was launched in 1981, it cost $65,400 per kilogram, around $1.8 billion per launch. When SpaceX launched Falcon Heavy in 2018, it cost $1,500 per kilogram, about $95 million per launch.
 
 As launch costs decrease, the size of satellites is also decreasing. Satellites have been reduced from roughly the size of a school bus to the size of a loaf of bread. The Hubble Telescope, launched in 1990, weighed 11,000 kilograms, but by 2014, Planet Labs' Dove satellites weighed as little as 5 kilograms.
 
-Together, these factors are resulting in an explosion in the number of satellites orbiting the earth. There were 1,713 satellites launched in 2021, a 40% increase over 2020, taking the number of total satellites circling the earth to 4,852 by the end of 2021.
+Together, these factors have resulted in an explosion in the number of satellites orbiting the earth. There were 1,713 satellites launched in 2021, a 40% increase over 2020, taking the number of total satellites circling the earth to 4,852 by the end of 2021.
 
 ## Technology is enabling more compelling use cases
 

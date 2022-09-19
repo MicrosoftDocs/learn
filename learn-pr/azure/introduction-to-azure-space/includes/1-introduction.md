@@ -1,6 +1,8 @@
-Azure Space combines the possibilities of space with the power of the cloud. It extends Azure capabilities and enables organizations to connect to the cloud from anywhere, analyze and disseminate space data, and build and test in the cloud from space.
+Space is one of the fastest growing industries today. There are more satellites orbiting the earth than ever before. These satellites can be categorized into two broad categories: satellites that enable space-based communication and satellites that collect valuable data that can be used on earth.
 
-This module will explore some of the ins and outs of the space industry and how it's quickly changing.
+As the future of cloud computing extends beyond our planet, Azure will play a major role in helping businesses unlock powerful connectivity, analytics, and development possibilities. Azure Space combines the possibilities of space with the power of the cloud. It enables organizations to connect to the cloud from anywhere, analyze and disseminate space data, and build and test in the cloud from space.
+
+In this module, you’ll learn more about the rapidly evolving space ecosystem and see how the Azure Space portfolio drives space-based innovation, creating new opportunities for space and non-space industries alike.  
 
 ## Learning objectives
 
@@ -12,4 +14,4 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-None.
+- Familiarity with cloud computing concepts

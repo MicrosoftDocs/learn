@@ -9,16 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Space
-summary: TBD
+summary: Explore some of the ins and outs of the space industry and how it's quickly changing.
 abstract: |
   After completing this module, you'll be able to:
   - Understand the current state of the space industry and the key players 
   - Articulate the business opportunities that space enables
   - Know the most important capabilities of the Azure Space portfolio 
 prerequisites: |
-  - TBD
-  - TBD
-  - TBD
+  - Familiarity with cloud computing concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
