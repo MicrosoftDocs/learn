@@ -29,17 +29,11 @@ quiz:
     - content: "All of the above"
       isCorrect: true
       explanation: "Correct. One of the main benefits of a PostgreSQL database is the functionality and flexibility to store different kinds of data."
-  - content: 'Suppose you want your Azure Database for PostgreSQL server to have high performance across several different regions. Which server option should you choose?'
+  - content: 'Is Azure Database for PostgreSQL suitable for hosting inside a mobile or desktop app?'
     choices:
-    - content: Single server
+    - content: Yes
       isCorrect: false
-      explanation: "Incorrect. Single server can have high performance, but isn't a distributed database solution."
-    - content: Flexible server
-      isCorrect: false
-      explanation: "Incorrect. Flexible server is customizable, but isn't a distributed database solution."
-    - content: Hyperscale
+      explanation: "Incorrect. Azure Database for PostgreSQL is a cloud-based solution, and is NOT suitable for hosting inside a mobile or desktop app."
+    - content: No
       isCorrect: true
-      explanation: "Correct. Hyperscale offers you to scale up, providing high performance, and scale out, allowing high performance across different regions."
-    - content: SQLite
-      isCorrect: false
-      explanation: "Incorrect. SQLite isn't a deployment option for Azure Database for PostgreSQL."
+      explanation: "Correct. Azure Database for PostgreSQL is a cloud-based solution, and is not suitable for hosting inside a mobile or desktop app."

@@ -6,7 +6,7 @@ In fact, the distributed capabilities of Azure Cosmos DB for PostgreSQL are made
 
 ![Diagram showing three of the extensions you will use in this learning module, Citus, PostGIS, and pg_cron, being added to Azure Cosmos DB for PostgreSQL and used to extend the functionality of the database.](../media/3a-cosmos-db-for-postgresql-extensions.png)
 
-In this module, you will explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You will examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
+In the Azure Cosmos Database for PostgreSQL module, you will explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You will examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
 
 ## Scenario: Scale and extend Azure Cosmos DB for PostgreSQL using extensions
 
@@ -62,4 +62,4 @@ The coordinator creates query fragments, targeting specific shards, and then sen
 
 ![The flow of a query arriving from an application is displayed, with the query being processed by the coordinator node using metadata tables and then the query fragments being sent to the work nodes for execution. The results of query execution on the worker nodes are passed back to the coordinator, aggregated, and returned to the application.](../media/3c-distributed-table.gif)
 
-However, for this module, we'll stay focused on the Azure Database for PostgreSQL capabilities.
+For this module, we'll stay focused on the Azure Database for PostgreSQL capabilities.
