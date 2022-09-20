@@ -11,7 +11,7 @@ In this unit, you'll learn more about how Azure Cosmos DB organizes data. You'll
 
 ## What is Azure Cosmos DB?
 
-Azure Cosmos DB is a cloud service that implements document databases. The data in a document must conform to JSON syntax. A JSON document can contain properties, subdocuments, and arrays of documents. The following example shows a JSON document that stores product information, as part of a retail application. The **tag** property is an example of a subdocument:
+Azure Cosmos DB is a cloud service that implements document databases. The data in a document must conform to JSON syntax. A JSON document can contain properties, subdocuments, and arrays of documents. The following example shows a JSON document that stores product information, as part of a retail application. The **tags** property is an example of a subdocument:
 
 ```JSON
 {

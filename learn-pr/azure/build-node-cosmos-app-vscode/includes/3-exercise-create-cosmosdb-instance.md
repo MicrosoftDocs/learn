@@ -11,7 +11,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 ## Install the Azure Databases extension for Visual Studio Code
 
-1. Start Visual Studio Code. Select **Continue without code**.
+1. Start Visual Studio Code.
 
 1. On the **Extensions** menu at the top, select **Manage Extensions** to open the extensions pane.
 
@@ -23,7 +23,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     Wait while the extension is installed.
 
-## Create an Azure Databases extension account
+## Sign in to Azure with sandbox subscription
 
 1. On the **View** menu, select **Command Palette**.
 
@@ -39,11 +39,16 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
 
-1. In the Azure Resources pane, select **Select subscriptions...**.
+1. In the Azure Resources pane, select **Select subscriptions...**. The Learn sandbox subscription has the following name and tenant ID:
+
+    * Name: Concierge Subscription
+    * Tenant ID: 604c1504-c6a3-4080-81aa-b33091104187
 
 1. Select **Concierge Subscription** and then **OK**.
 
 1. In the Azure Resources pane, expand **Concierge Subscription**.
+
+## Create a Cosmos DB account in Visual Studio Code
 
 1. Right-click **Azure CosmosDB** and then select **Create Server**.
 
@@ -54,7 +59,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the *Select an Azure Database Server* box, select **Core (SQL)**.
 
-1. In the *Account name* box, enter an account name. The name must be globally unique; we suggest using something like **\<*your name or initials*\>school**, and press <kbd>Enter</kbd>.
+1. In the *Account name* box, enter an account name. The name must be globally unique; we suggest using something like **\<*your name or initials*\>-contoso-retail**, and press <kbd>Enter</kbd>.
 
 1. In the *Select a capacity model* box, select **Provisioned Throughput**.
 
@@ -74,31 +79,49 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
 
-1. In the *Database Name* box, enter **SchoolDB**, and then press <kbd>Enter</kbd>.
+1. In the *Database Name* box, enter **ContosoRetail**, and then press <kbd>Enter</kbd>.
 
-1. In the *Enter an id for your Collection* box, enter **StudentCourseGrades**, and then press <kbd>Enter</kbd>.
+1. In the *Enter an id for your Collection* box, enter **Products**, and then press <kbd>Enter</kbd>.
 
-    This container will hold `StudentCourseGrades` documents. Course grades will be held as an array of subdocuments with each student.
+    This container will hold `Products` documents. Tags will be held as an array of subdocuments with each product.
 
-1. Leave the *Enter the partition key for the collection, or leave blank for fixed size* box blank, and press <kbd>Enter</kbd>.
+    ```json
+    {
+        "id": "08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2",
+        "categoryId": "75BF1ACB-168D-469C-9AA3-1FD26BB4EA4C",
+        "categoryName": "Bikes, Touring Bikes",
+        "sku": "BK-T79U-50",
+        "name": "Touring-1000 Blue, 50",
+        "description": "The product called \"Touring-1000 Blue, 50\"",
+        "price": 2384.0700000000002,
+        "tags": [
+            {
+                "_id": "27B7F8D5-1009-45B8-88F5-41008A0F0393",
+                "name": "Tag-61"
+            }
+        ]
+    }
+    ```
+
+1. In the *Enter the partition key for the collection, or leave blank for fixed size* box, enter **categoryName** and press <kbd>Enter</kbd>.
 
 1. In the *Initial throughput capacity* box, enter **1000**, and then press <kbd>Enter</kbd>.
 
-1. In the Azure Resources pane, verify that the **SchoolDB** database, containing the **StudentCourseGrades** container, appears.
+1. In the Azure Resources pane, verify that the **ContosoRetail** database, containing the **Products** container, appears.
 
     :::image type="content" source="../media/3-database-and-container.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code, showing the SchoolDB database and the StudentCourseGrades container." loc-scope="vs-code":::
 
 ## Create and view documents
 
-1. In the Azure Resources pane, expand the **StudentCourseGrades** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
+1. In the Azure Resources pane, expand the **Products** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
 
 1. Right-click the **Documents** folder, and then select **Create Document**.
 
     :::image type="content" source="../media/3-create-document.png" alt-text="Screenshot of the Azure Databases pane in Visual Studio Code. The user has selected the Create Document command in the StudentCourseGrades container." loc-scope="vs-code":::
 
-1. In the *Enter a document ID* box, enter **S101**, and then press <kbd>Enter</kbd>. This will be the ID of a student document.
+1. In the *Enter a document ID* box, enter `08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2`, and then press <kbd>Enter</kbd>. This will be the ID of a product document.
 
-1. Leave the *Partition key* box blank, and press <kbd>Enter</kbd>.
+1. Enter `Bikes, Touring Bikes` as the *Partition key*, and press <kbd>Enter</kbd>.
 
     The document will be created and appear in Visual Studio Code, in JSON format. The **id** and **_partitionKey** fields will be populated with the values you specified.
 
@@ -106,24 +129,35 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. In the Azure Resources pane, right-click the **Documents** folder again, and select **Create Document**.
 
-1. In the *Enter a document ID* box, enter **S102**, and then press <kbd>Enter</kbd>. This will be the ID of another student.
+1. In the *Enter a document ID* box, enter `0F124781-C991-48A9-ACF2-249771D44029`, and then press <kbd>Enter</kbd>. This will be the ID of another student.
 
-1. Leave the *Partition key* box blank, and press <kbd>Enter</kbd>.
+1. Enter `Bikes, Mountain Bikes` as the *Partition key*, and press <kbd>Enter</kbd>.
 
     The new document appears.
 
 ## Edit documents
 
-1. In the **Documents** list, select the **S101** document.
+1. In the **Documents** list, select the **08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2** document.
 
 1. In the JSON document that appears, move to the end of the **id** line, and press <kbd>Enter</kbd>.
 
 1. Add the following fields to the document.
 
     ```JSON
-    "Forename": "AAA",
-    "Lastname": "BBB",
+    "categoryId": "75BF1ACB-168D-469C-9AA3-1FD26BB4EA4C",
+    "sku": "BK-T79U-50",
+    "name": "Touring-1000 Blue, 50",
+    "description": "The product called \"Touring-1000 Blue, 50\"",
+    "price": 2384.0700000000002,
+    "tags": [
+        {
+            "_id": "27B7F8D5-1009-45B8-88F5-41008A0F0393",
+            "name": "Tag-61"
+        }
+    ]
     ```
+
+    The **tags** property is an array field that contains the tags associated with a product. Using an array makes it possible for a product to have several tags.
 
 1. On the **File** menu, select **Save**. 
 
@@ -131,51 +165,40 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     :::image type="content" source="../media/3-always-upload-message.png" alt-text="Screenshot of Visual Studio Code showing the edited document. The student has selected the Update to Cloud command to save the changes back to Azure." loc-scope="vs-code":::
 
-   The document will be updated in the cloud.
+   The document will be updated in the cloud. The node under the Products container is changed to the **name** property of the document.
 
-1. In the **Documents** list, select the **S102** document.
+1. In the **Documents** list, select the **0F124781-C991-48A9-ACF2-249771D44029** document.
 
 1. Add the following fields to the document after the **id** field.
 
     ```JSON
-    "Forename": "CCC",
-    "Lastname": "DDD",
+    "categoryId": "56400CF3-446D-4C3F-B9B2-68286DA3BB99",
+    "sku": "BK-M68B-42",
+    "name": "Mountain-200 Black, 42",
+    "description": "The product called \"Mountain-200 Black, 42\"",
+    "price": 2294.9899999999998,
+    "tags": [
+        {
+            "_id": "4F67013C-3B5E-4A3D-B4B0-8C597A491EB6",
+            "name": "Tag-82"
+        }
+    ]
     ```
 
 1. On the **File** menu, select **Save**.
 
-1. In the **Documents** list, select the **S101** document again.
+## Delete documents
 
-1. Add the following field to the document after the **Lastname** field.
+In the Azure explorer, right-click each of the product documents and delete them. You will upload the _entire_ products data set in the next section.
 
-    ```JSON
-    "CourseGrades": [
-        {
-            "Course": "Computer Science",
-            "Grade": "A"
-        },
-        {
-            "Course": "Applied Mathematics",
-            "Grade": "B"
-        }
-    ],
-    ```
+## Upload a data set into a container
 
-    This is an array field that contains the grades for each course that the student has taken. Each pair of **Course**/**Grade** fields is a subdocument. Using an array makes it possible to record the details of a variable number of courses for each student.
+1. To upload the entire **Products** data set, first copy and save the data from the [GitHub samples repository](https://raw.githubusercontent.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/main/data/products.json).
 
-1. Save the updated document.
+1. In the Azure explorer, right-click on the **Products** container and select **Import document into a collection**.
+1. In the file explorer, select the file you created for the products.json from the GitHub samples repository.
 
-1. Edit the **S102** document, add the following fields, and save the updated document.
+    :::image type="content" source="../media/3-import-documents-into-container.png" alt-text="Screenshot of Visual Studio Code showing the Import Document into a collection choice." loc-scope="vs-code":::
 
-    ```JSON
-    "CourseGrades": [
-        {
-            "Course": "Computer Science",
-            "Grade": "C"
-        }
-    ],
-    ```
 
-    This student has only taken the Computer Science course.
-
-You've now used the Azure Databases extension in Visual Studio Code to create an Cosmos DB database and container. You've added and viewed documents, and you've edited these documents.
+You've now used the Azure Databases extension in Visual Studio Code to create a Cosmos DB database and container. You've added and viewed documents, and you've edited these documents.
