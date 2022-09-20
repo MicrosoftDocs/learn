@@ -25,8 +25,7 @@ products:
 - dotnet
 - vs-ide
 prerequisites: |
-  - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
-  - [Visual Studio](https://visualstudio.com)
+  - [Visual Studio](https://visualstudio.com) with a .NET workload installed (for example, ASP.NET and web development workload)
 subjects:
 - development-tools
 units:
