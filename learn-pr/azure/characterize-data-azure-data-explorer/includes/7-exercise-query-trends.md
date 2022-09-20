@@ -1,4 +1,4 @@
-You've explored the raw data and range of an unfamiliar meterological dataset. 
+You've explored the raw data and range of an unfamiliar meteorological dataset. 
 In this unit, you'll use visualizations to see how the data is distributed.
 
 ## Timechart

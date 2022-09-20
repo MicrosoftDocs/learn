@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.explore-data-azure-data-explorer.knowledge-check
+uid: learn.azure.characterize-dataset-azure-data-explorer.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Learn how to characterize an unfamiliar dataset using Azure Data Explorer web UI and KQL queries."
   ms.date: 08/15/2022
   author: YaelSchuster
   ms.author: yaschust
@@ -18,33 +18,33 @@ quiz:
     choices:
     - content: "Use the `getschema` operator."
       isCorrect: true
-      explanation: "The `getschema` operator returns the schema of the dataset, which contains each column name and its data type."
+      explanation: "True. The `getschema` operator returns the schema of the dataset, which contains each column name and its data type."
     - content: "Use the `render` operator"
       isCorrect: false
-      explanation: "The `render` operator returns a visualization of the dataset."
+      explanation: "False. The `render` operator returns a visualization of the dataset."
     - content: "Highlight the columns and look at the summary in the results grid."
       isCorrect: false
-      explanation: "The highlighted cells will show a summary in the bottom right corner of the results grid. This is useful for integer values, but doesn't give a complete list of datatypes for each column."
+      explanation: "False. The highlighted cells will show a summary in the bottom right corner of the results grid. This is useful for integer values, but doesn't give a complete list of datatypes for each column."
   - content: "How can you easily find the min/max and average of a selection of integer cells in the results grid?"
     choices:
     - content: "Sort the results grid by the desired column."
       isCorrect: false
-      explanation: "Sorting by a column rearranges the rows according to the values in that column, but doesn't help with finding the min/max or average."
+      explanation: "False. Sorting by a column rearranges the rows according to the values in that column, but doesn't help with finding the min/max or average."
     - content: "Use the `render` operator to plot the column and eyeball the results."
       isCorrect: false
-      explanation: "This isn't a precise method to find the min/max or average."
+      explanation: "False. This isn't a precise method to find the min/max or average."
     - content: "Highlight the cells and look at the summary in the bottom corner of the results grid."
       isCorrect: true
-      explanation: ""
+      explanation: "True. The highlighted cells will show a summary in the bottom right corner of the results grid."
   - content: "How can you check if a time series is missing data?"
     choices:
     - content: "Count how many rows are present in the time series."
       isCorrect: false
-      explanation: "Count is only a meaningful test if you know how many rows to expect."
+      explanation: "False. Count is only a meaningful test if you know how many rows to expect."
     - content: "Take a sample of 10 rows of data."
       isCorrect: false
-      explanation: "Reducing the available data won't tell you if there's missing data."
+      explanation: "False. Reducing the available data won't tell you if there's missing data."
     - content: "Plot the count of events vs. time to see if any data is missing."
       isCorrect: true
-      explanation: "This visualization will help you determine if there's missing data."
+      explanation: "True. This visualization will help you determine if there's missing data."
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.explore-data-azure-data-explorer.explore-data-structure-queries
+uid: learn.azure.characterize-dataset-azure-data-explorer.explore-data-structure-queries
 title: Explore the data structure using queries
 metadata:
   unitType: introduction
   title: Explore the data structure using queries
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Explore the data structure using queries."
   ms.date: 08/14/2022
   author: YaelSchuster
   ms.author: yaschust
