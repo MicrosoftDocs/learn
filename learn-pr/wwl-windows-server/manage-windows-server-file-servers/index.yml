@@ -21,7 +21,7 @@ prerequisites: |
   To get the best experience from this module, you should have knowledge and experience of:
   - Windows Server 2012 or Windows Server 2016.
   - Core networking technologies.
-iconUrl: /learn/achievements/manage-windows-server-file-servers.svg
+iconUrl: /training/achievements/manage-windows-server-file-servers.svg
 levels:
 - beginner
 roles:

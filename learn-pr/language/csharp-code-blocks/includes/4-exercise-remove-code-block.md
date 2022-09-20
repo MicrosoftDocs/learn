@@ -82,7 +82,7 @@ else
     Console.WriteLine("Found Chuck");
 ```
 
-However, when you need to perform a comparison around a single value with multiple possible options, you may want to consider using the `switch` statement instead. We cover the `switch` statement in the [Branch the flow of code using the switch-case construct in C#](/learn/modules/csharp-switch-case/) module.
+However, when you need to perform a comparison around a single value with multiple possible options, you may want to consider using the `switch` statement instead. We cover the `switch` statement in the [Branch the flow of code using the switch-case construct in C#](/training/modules/csharp-switch-case/) module.
 
 ## Recap
 

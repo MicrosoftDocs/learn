@@ -58,9 +58,9 @@ Use these resources to discover more.
 
 **Skills readiness paths:**
 
-- [Azure fundamentals part 1: describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
-- [Microsoft certified: Azure solutions architect expert](/learn/certifications/azure-solutions-architect/?wt.mc_id=learningredirect_certs-web-wwl)
-- [Solutions architect: learning path](/learn/browse/?roles=solution-architect&resource_type=learning%20path)
+- [Azure fundamentals part 1: describe core Azure concepts](/training/paths/az-900-describe-cloud-concepts/)
+- [Microsoft certified: Azure solutions architect expert](/certifications/azure-solutions-architect/?wt.mc_id=learningredirect_certs-web-wwl)
+- [Solutions architect: learning path](/training/browse/?roles=solution-architect&resource_type=learning%20path)
 
 **Cloud migration:**
 

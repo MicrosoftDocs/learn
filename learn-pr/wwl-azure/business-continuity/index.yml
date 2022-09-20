@@ -19,7 +19,7 @@ prerequisites: |
   - Demonstrate an understanding of Azure CLI
   - Demonstrate an understanding of PowerShell
   - Know how to run Cloud Shell to run commands
-iconUrl: /learn/achievements/business-continuity.svg
+iconUrl: /training/achievements/business-continuity.svg
 levels:
 - intermediate
 roles:

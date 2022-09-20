@@ -19,7 +19,7 @@ prerequisites: |
   - Basic familiarity with Azure
   - Ability to navigate the Azure portal
   - Basic familiarity with Azure Cognitive Services
-iconUrl: /learn/achievements/anomaly-detector.svg
+iconUrl: /training/achievements/anomaly-detector.svg
 levels:
 - beginner
 roles:

@@ -16,7 +16,7 @@ abstract: |
   - Minimize coupling between your UI and code-behind to enable easy UI changes
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding-badge.svg
+iconUrl: /training/achievements/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding-badge.svg
 levels:
 - intermediate
 roles:

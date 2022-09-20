@@ -16,7 +16,7 @@ abstract: |
   - Describe ways to protect your network
   - Describe ways to securely connect to and communicate over a network
 prerequisites: ""
-iconUrl: /learn/achievements/4-describe-network-based-threats-and-mitigations.svg
+iconUrl: /training/achievements/4-describe-network-based-threats-and-mitigations.svg
 levels:
 - beginner
 roles:

@@ -22,7 +22,7 @@ prerequisites: |
   - Experience using the basic C# data types including `int` and `string`
   - Experience using the method `Console.WriteLine()`
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-call-methods.svg
+iconUrl: /training/achievements/csharp-call-methods.svg
 levels:
 - beginner
 roles:

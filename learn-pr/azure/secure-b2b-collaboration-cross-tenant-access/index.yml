@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free)
   - Basic understanding of Azure AD and B2B collaboration
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles: 

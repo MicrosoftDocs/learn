@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - AZ-104 certification or equivalent knowledge.
   - Knowledge of SAP products such as SAP HANA or SAP NetWeaver.
-iconUrl: /learn/achievements/sap-network-security-service.svg
+iconUrl: /training/achievements/sap-network-security-service.svg
 levels:
 - intermediate
 roles:

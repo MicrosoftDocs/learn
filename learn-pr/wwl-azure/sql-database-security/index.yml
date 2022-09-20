@@ -18,7 +18,7 @@ abstract: |
   - Encrypt and protect your data while is it stored in the database.
 prerequisites: |
   - None
-iconUrl: /learn/achievements/sql-database-security.svg
+iconUrl: /training/achievements/sql-database-security.svg
 levels:
 - intermediate
 roles:

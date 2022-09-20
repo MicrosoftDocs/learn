@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of Azure compute solutions.
   - Working experience with Azure PowerShell.
-iconUrl: /learn/achievements/3-azure-stack-hub-powershell.svg
+iconUrl: /training/achievements/3-azure-stack-hub-powershell.svg
 levels:
 - advanced
 roles:

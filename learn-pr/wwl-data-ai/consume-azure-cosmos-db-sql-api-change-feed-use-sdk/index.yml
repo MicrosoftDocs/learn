@@ -16,7 +16,7 @@ abstract: |
   - Author a delegate to handle a batch of changes in a client-side application
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-sql-api-consume-sdk.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-consume-sdk.svg
 levels:
 - intermediate
 roles:

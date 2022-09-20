@@ -16,7 +16,7 @@ prerequisites: |
   - Basic understanding of relational database concepts
 summary: |
   Analyze individual query performance and determine where improvements can be made. Explore performance-related Dynamic Management Objects. Investigate how indexes and database design affect queries.
-iconUrl: /learn/achievements/optimize-query-performance-in-sql-server.svg
+iconUrl: /training/achievements/optimize-query-performance-in-sql-server.svg
 levels:
 - intermediate
 roles:

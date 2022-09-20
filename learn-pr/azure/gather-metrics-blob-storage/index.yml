@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Knowledge of the Azure portal
   - Knowledge of Azure Blob Storage containers
-iconUrl: /learn/achievements/gather-metrics-from-blob-storage.svg
+iconUrl: /training/achievements/gather-metrics-from-blob-storage.svg
 levels:
 - beginner
 roles:

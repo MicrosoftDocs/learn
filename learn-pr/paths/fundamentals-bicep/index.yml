@@ -32,7 +32,7 @@ summary: |
 
   [!include[](../../includes/bicep-paths.md)]
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
-iconUrl: /learn/achievements/bicep/fundamentals-bicep.svg
+iconUrl: /training/achievements/bicep/fundamentals-bicep.svg
 levels:
 - beginner
 roles:

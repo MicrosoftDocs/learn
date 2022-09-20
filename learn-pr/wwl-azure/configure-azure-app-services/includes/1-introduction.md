@@ -8,7 +8,7 @@ Hosting your web application using Azure App Service makes deploying and managin
 
 ## Skills measured
 
-Configuring the Azure App Service is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configuring the Azure App Service is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 

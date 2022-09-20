@@ -57,12 +57,12 @@ The Calculator creates a match from Azure Services to create a high-level initia
 
 ## Learn about Azure with Microsoft Learn
 
-Many other Azure Learning paths on [Microsoft Learn](/learn?azure-portal=true) can help you to build your business case:
+Many other Azure Learning paths on [Microsoft Learn](/training?azure-portal=true) can help you to build your business case:
 
-* [Control Azure spending and manage bills with Microsoft Cost Management](/learn/paths/control-spending-manage-bills?azure-portal=true)
-* [Microsoft Azure Well-Architected Framework—Cost Optimization](/learn/modules/azure-well-architected-cost-optimization?azure-portal=true)
-* [Plan and manage your Azure costs](/learn/modules/plan-manage-azure-costs?azure-portal=true).
-* [Analyze costs and create budgets with Microsoft Cost Management](/learn/modules/analyze-costs-create-budgets-azure-cost-management?azure-portal=true)
-* [Save money with Azure Reserved Instances](/learn/modules/save-money-with-azure-reserved-instances?azure-portal=true)
-* [Optimize Azure costs with data analysis in Power BI](/learn/modules/optimize-costs-data-analysis-powerbi?azure-portal=true)
-* [Configure and manage costs as a Microsoft partner by using Microsoft Cost Management](/learn/modules/manage-costs-partner-cost-management?azure-portal=true)
+* [Control Azure spending and manage bills with Microsoft Cost Management](/training/paths/control-spending-manage-bills?azure-portal=true)
+* [Microsoft Azure Well-Architected Framework—Cost Optimization](/training/modules/azure-well-architected-cost-optimization?azure-portal=true)
+* [Plan and manage your Azure costs](/training/modules/plan-manage-azure-costs?azure-portal=true).
+* [Analyze costs and create budgets with Microsoft Cost Management](/training/modules/analyze-costs-create-budgets-azure-cost-management?azure-portal=true)
+* [Save money with Azure Reserved Instances](/training/modules/save-money-with-azure-reserved-instances?azure-portal=true)
+* [Optimize Azure costs with data analysis in Power BI](/training/modules/optimize-costs-data-analysis-powerbi?azure-portal=true)
+* [Configure and manage costs as a Microsoft partner by using Microsoft Cost Management](/training/modules/manage-costs-partner-cost-management?azure-portal=true)

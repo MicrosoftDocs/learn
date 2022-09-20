@@ -24,7 +24,7 @@ prerequisites: |
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
   - Describe how an IoT solution uses message routing and other message processing options to process message and event data.
   - Describe the hot and cold storage path options for an Azure IoT solution.
-iconUrl: /learn/achievements/azure-stream-analytics.svg
+iconUrl: /training/achievements/azure-stream-analytics.svg
 levels:
 - intermediate
 roles:

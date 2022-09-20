@@ -11,7 +11,7 @@ You can purchase Azure access directly from Microsoft by signing up on the [Azur
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWK1QU]
 
-For more information on how to create an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/?azure-portal=true) learning module.
+For more information on how to create an Azure account, see the [Create an Azure account](/training/modules/create-an-azure-account/?azure-portal=true) learning module.
 
 ## What is the Azure free account?
 
@@ -38,4 +38,3 @@ The [Azure free student account](https://azure.microsoft.com/free/students/?azur
 Many of the Learn exercises use a technology called the sandbox, which creates a temporary subscription that's added to your Azure account. This temporary subscription allows you to create Azure resources for the duration of a Learn module. Learn automatically cleans up the temporary resources for you after you've completed the module.
 
 When you're completing a Learn module, you're welcome to use your personal subscription to complete the exercises in a module. The sandbox is the preferred method to use though, because it allows you to create and test Azure resources at no cost to you.
-

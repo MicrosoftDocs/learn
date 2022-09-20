@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - An Azure account with an [active subscription](https://azure.microsoft.com/free)
   - Basic understanding of Azure AD
-iconUrl: /learn/achievements/enable-external-collaboration-with-b2b.svg
+iconUrl: /training/achievements/enable-external-collaboration-with-b2b.svg
 levels:
 - beginner
 roles:

@@ -21,7 +21,7 @@ prerequisites: |
   - Knowledge of Kubernetes and its concepts
   - Basic knowledge of creating Kubernetes YAML manifest files
   - Basic knowledge of executing commands by using kubectl
-iconUrl: /learn/achievements/aks-secrets-configure-app.svg
+iconUrl: /training/achievements/aks-secrets-configure-app.svg
 badge:
   uid: learn.aks-secrets-configure-app.badge
 levels:

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Ability to navigate the Azure portal
   - Access to deploy resources within their Azure subscription
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/microsoft-purview-deployment.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role

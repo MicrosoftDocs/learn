@@ -20,7 +20,7 @@ abstract: |
   - Implement encryption in Azure Synapse Analytics
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/secure-a-data-warehouse-in-azure-synapse-analytics.svg
+iconUrl: /training/achievements/secure-a-data-warehouse-in-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:

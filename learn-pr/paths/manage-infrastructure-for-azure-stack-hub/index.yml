@@ -15,7 +15,7 @@ prerequisites: |
 summary: |
   View the health state of components in the Azure Stack Hub administrator portal and through PowerShell.
   This learning path prepares you for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.
-iconUrl: /learn/achievements/manage-infrastructure-for-azure-stack-hub.svg
+iconUrl: /training/achievements/manage-infrastructure-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

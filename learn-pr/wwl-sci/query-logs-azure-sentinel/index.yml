@@ -16,7 +16,7 @@ abstract: |
   - Query the most used tables using Microsoft Sentinel
 prerequisites: |
   Basic knowledge of operational concepts such as monitoring, logging, and alerting
-iconUrl: /learn/achievements/query-logs-in-azure-sentinel.svg
+iconUrl: /training/achievements/query-logs-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:

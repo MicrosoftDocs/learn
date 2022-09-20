@@ -19,7 +19,7 @@ prerequisites: |
   *   Ability to navigate the Azure the portal.
   *   Understanding of the traditional Database Administration role.
   *   Experience with T-SQL programing language at a basic level.
-iconUrl: /learn/achievements/1-prepare-to-maintain-databases-on-azure.svg
+iconUrl: /training/achievements/1-prepare-to-maintain-databases-on-azure.svg
 levels:
 - intermediate
 roles:

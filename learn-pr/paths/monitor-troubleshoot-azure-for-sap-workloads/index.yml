@@ -12,7 +12,7 @@ title: Monitor and troubleshoot Azure for SAP workloads
 prerequisites: ""
 summary: |
   SAP professionals need to monitor and support Azure for SAP workloads. These modules explore monitoring Azure on SAP, and Azure virtual machine licensing, pricing, and support.
-iconUrl: /learn/achievements/monitor-and-troubleshoot-azure-for-sap-workloads.svg
+iconUrl: /training/achievements/monitor-and-troubleshoot-azure-for-sap-workloads.svg
 levels:
 - advanced
 roles:

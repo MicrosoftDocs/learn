@@ -18,7 +18,7 @@ abstract: |
   * Configure a new managed data disk to a Windows virtual machine for Azure Virtual Desktop.
   * Create file shares for a storages account for Azure Virtual Desktop.
 prerequisites: ""
-iconUrl: /learn/achievements/2-implement-and-manage-storage-for-azure-virtual-desktop.svg
+iconUrl: /training/achievements/2-implement-and-manage-storage-for-azure-virtual-desktop.svg
 levels:
 - intermediate
 roles:

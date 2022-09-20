@@ -16,7 +16,7 @@ abstract: |
   - Explore entities in Microsoft Sentinel
 prerequisites: |
   Knowledge of security incident management in Microsoft Sentinel
-iconUrl: /learn/achievements/azure-sentinel-behavior-analytics.svg
+iconUrl: /training/achievements/azure-sentinel-behavior-analytics.svg
 levels:
 - intermediate
 roles:

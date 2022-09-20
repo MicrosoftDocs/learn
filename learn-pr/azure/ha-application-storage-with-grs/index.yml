@@ -19,7 +19,7 @@ prerequisites: |
   - Basic knowledge of Azure storage accounts
   - Familiarity with C#
   - Ability to install software locally (Visual Studio, Fiddler, Git)
-iconUrl: /learn/achievements/ha-application-storage-with-grs.svg
+iconUrl: /training/achievements/ha-application-storage-with-grs.svg
 levels:
 - beginner
 roles:

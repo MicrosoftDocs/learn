@@ -14,7 +14,7 @@ prerequisites: |
   *   Experience with hybrid and cloud implementations.
 summary: |
   Learn how to design for infrastructure security, including architecture best practices, endpoint security and cloud security for different service models (SaaS, PaaS and IaaS).
-iconUrl: /learn/achievements/sc-100-design-security-for-infrastructure.svg
+iconUrl: /training/achievements/sc-100-design-security-for-infrastructure.svg
 levels:
 - advanced
 roles:

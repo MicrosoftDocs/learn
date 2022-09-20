@@ -6,4 +6,4 @@ While this module specifically focused on a Node.js app deployed to Azure App Se
 
 In this module, you worked with Node.js, which is just one of the many platforms Azure supports. To learn about support and tutorials for other development platforms, see [Build applications with Azure](https://azure.microsoft.com/developer/?azure-portal=true).
 
-In addition to supporting multiple platforms, Azure also provides various resources that can be used from Node.js applications. For an example that uses Visual Studio Code and Azure Cosmos DB, for more information, see [Build a Node.js app for Azure Cosmos DB in Visual Studio Code](/learn/modules/build-node-cosmos-app-vscode/?azure-portal=true).
+In addition to supporting multiple platforms, Azure also provides various resources that can be used from Node.js applications. For an example that uses Visual Studio Code and Azure Cosmos DB, for more information, see [Build a Node.js app for Azure Cosmos DB in Visual Studio Code](/training/modules/build-node-cosmos-app-vscode/?azure-portal=true).

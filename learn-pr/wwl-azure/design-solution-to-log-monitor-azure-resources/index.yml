@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Working experience with monitoring and logging cloud environments
   - Conceptual knowledge of monitoring and logging
-iconUrl: /learn/achievements/azure-resources-design-solution.svg
+iconUrl: /training/achievements/azure-resources-design-solution.svg
 levels:
 - advanced
 roles:

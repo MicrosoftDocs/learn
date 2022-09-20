@@ -27,7 +27,7 @@ prerequisites: |
   - Explain and create resource groups
   - Describe Azure Data Factory core components
   - Ingest data into Azure Data Factory using the Copy Activity
-iconUrl: /learn/achievements/perform-code-free-transformation-scale-azure-data-factory.svg
+iconUrl: /training/achievements/perform-code-free-transformation-scale-azure-data-factory.svg
 levels:
 - beginner
 roles:

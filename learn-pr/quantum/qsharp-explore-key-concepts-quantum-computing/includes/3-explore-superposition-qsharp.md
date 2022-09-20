@@ -2,7 +2,7 @@ Now you'll explore how to create, manage, and inspect superpositions in Q#. We i
 
 ## Create the project
 
-Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. 
+Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. 
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter *Q#: Create New Project*.
@@ -34,7 +34,7 @@ To add the library, you use the `open` directive. Modify *Program.qs* like this 
 
 ## Dump the state of the program
 
-In the module [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
+In the module [Create your first Q# program by using the Quantum Development Kit](/training/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
 you defined the `GenerateRandomBit` operation. You can use this operation to see how `DumpMachine` works.
 
 To do so, you simply call `DumpMachine` at every step where you want to see the state of the register.

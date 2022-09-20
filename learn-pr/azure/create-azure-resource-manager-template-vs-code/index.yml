@@ -22,7 +22,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true&view=azure-cli-latest) tools installed locally.
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true&view=azps-4.3.0) installed locally.
-iconUrl: /learn/achievements/create-azure-resource-manager-template-vs-code.svg
+iconUrl: /training/achievements/create-azure-resource-manager-template-vs-code.svg
 ratingEnabled: true
 levels:
 - beginner

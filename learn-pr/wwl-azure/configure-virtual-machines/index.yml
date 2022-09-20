@@ -18,7 +18,7 @@ abstract: |
   - Configure virtual machine storage.
 prerequisites: |
   None
-iconUrl: /learn/achievements/virtual-machines-configure.svg
+iconUrl: /training/achievements/virtual-machines-configure.svg
 levels:
 - intermediate
 roles:

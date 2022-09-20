@@ -23,4 +23,4 @@ In this module, you'll learn to:
 - The ability to navigate and edit files in GitHub
 - Familiarity with pull requests
 
-We recommend that you complete [Introduction to GitHub](/learn/modules/introduction-to-github) before beginning this module.
+We recommend that you complete [Introduction to GitHub](/training/modules/introduction-to-github) before beginning this module.

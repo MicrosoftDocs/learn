@@ -11,7 +11,7 @@ You can purchase Azure access directly from Microsoft by signing up on the Azure
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWK1QU]
 
-For more information on how to create an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/) learning module.
+For more information on how to create an Azure account, see the [Create an Azure account](/training/modules/create-an-azure-account/) learning module.
 
 ### What is the Azure free account?
 

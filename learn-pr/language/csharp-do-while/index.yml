@@ -20,7 +20,7 @@ prerequisites: |
   - Experience writing Boolean expressions
   - Experience generating random numbers using the `System.Random` class and the `Random.Next()` method
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-do-while.svg
+iconUrl: /training/achievements/csharp-do-while.svg
 levels:
 - beginner
 roles:

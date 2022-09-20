@@ -16,7 +16,7 @@ abstract: |
   - Describe how the features of the Azure Cosmos DB SQL API are appropriate for modern applications.
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-intro.svg
+iconUrl: /training/achievements/azure-cosmos-db-intro.svg
 levels:
 - intermediate
 roles:
