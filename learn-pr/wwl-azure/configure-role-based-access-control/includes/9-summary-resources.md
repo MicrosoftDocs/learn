@@ -1,27 +1,19 @@
-Azure role-based access control (RBAC) is a system that enables granular access management of Azure resources. Azure Administrators use Azure RBAC to segregate duties within a team, and grant users the specific access they need to perform their jobs.
+Azure RBAC is a system that provides fine-grained access management of Azure resources. Using Azure RBAC, you can segregate duties within your team and grant only the amount of access to users that they need to perform their jobs.
 
-In this module, you identified the features and use cases for RBAC. You discovered how to create role definitions and role assignments, and find and use built-in Azure RBAC roles. You explored how to use RBAC to manage access to subscriptions with RBAC. You reviewed the differences between Azure RBAC and Azure Active Directory (Azure AD) roles. 
+You should now be able to:
 
-## Learn more with Azure documentation
+ -  Identify the features and usage cases for role-based access control.
+ -  List and create role definitions.
+ -  Create role assignments.
+ -  Identify the differences between Azure role-based access control and Azure Active Directory roles.
+ -  Manage access to subscriptions using role-based access control.
+ -  Review the built-in Azure role-based access control roles. .
 
-- Get more information about [Azure RBAC](/azure/role-based-access-control/overview).
+## Learn more
 
-- Understand [Azure role definitions](/azure/role-based-access-control/role-definitions).
+You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise.
 
-- Search [Azure RBAC built-in role definitions](/azure/role-based-access-control/built-in-roles).
-
-- Explore [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference).
-
-- Define your own [Azure RBAC custom roles](/azure/role-based-access-control/custom-roles).
-
-- Peruse [Azure RBAC documentation](/azure/role-based-access-control/).
-
-## Learn more with self-paced training
-
-- Create [custom roles for Azure resources with RBAC](/learn/modules/create-custom-azure-roles-with-rbac/).
-
-- Manage access [to Azure subscriptions with RBAC](/learn/modules/manage-subscription-access-azure-rbac/).
-
-## Learn more with optional hands-on exercises
-
-- Secure [your Azure resources with RBAC (sandbox)](/learn/modules/secure-azure-resources-with-rbac/).
+ -  [Azure RBAC documentation](/azure/role-based-access-control/)
+ -  [Learn - Create custom roles for Azure resources with role-based access control](/learn/modules/create-custom-azure-roles-with-rbac/)
+ -  [Learn - Manage access to an Azure subscription by using Azure role-based access control](/learn/modules/manage-subscription-access-azure-rbac/)
+ -  [Learn - Secure your Azure resources with role-based access control (Sandbox)](/learn/modules/secure-azure-resources-with-rbac/)
