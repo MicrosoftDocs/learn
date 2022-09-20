@@ -21,11 +21,12 @@ To complete the component that sends messages about sales performance, complete 
 
     Between the quotation marks, paste the connection string you saved in the previous exercise.
 
-2. If you used a name different from **salesperformancemessages** for the queue name, update the value for `TopicName` property in the code.
+1. If you used a name different from **salesperformancemessages** for the queue name, update the value for `TopicName` property in the code.
 
     ```csharp
     const string TopicName = "salesperformancemessages";
     ```
+
 1. Find the `SendPerformanceMessageAsync()` method. (*Hint*: It's at or near line 26.) Within that method, find the following line of code:
 
     ```csharp
@@ -123,7 +124,7 @@ To complete the component that sends messages about sales performance, complete 
     ```
 
 1. Save the file using the editor's **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-2. Select the project file **performancemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
+1. Select the project file **performancemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 
 ## Send a message to the topic
 
@@ -331,7 +332,7 @@ To create the component that retrieves messages about sales performance, complet
     ```
 
 1. Save the file using either the **&#9776;** menu or use the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-2. Select the project file **performancemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
+1. Select the project file **performancemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 
 ## Retrieve a topic message for a subscription
 
