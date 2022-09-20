@@ -16096,6 +16096,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/intro-to-postgres/includes/what-is-hyperscale.md",
+      "redirect_url": "learn-pr/azure/intro-to-postgres/incudes/3-what-is-azure-cosmos-db-postgresql.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-postgres/what-is-hyperscale.yml",
+      "redirect_url": "learn-pr/azure/intro-to-postgres/3-what-is-azure-cosmos-db-postgresql.yml",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/5-integrate-azure-key-vault-azure-pipelines.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/manage-application-configuration-data/8-integrate-azure-key-vault-azure-pipelines",
       "redirect_document_id": true
