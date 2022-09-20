@@ -9,7 +9,7 @@ Azure virtual machine scale sets meet Adatum’s needs in the following applicat
 Adatum wouldn't choose to use a virtual machine scale set for the following applications:
 
 - **The application that is hosted on a single VM that doesn't experience variance in utilization and doesn't have an architecture that lets it be load balanced.**
-In this case, just hosting the IaaS VM normally in Azure is an appropriate option, though you should regularly check the VM to ensure that the its performance profile is commensurate with the VM size assigned.
+In this case, just hosting the IaaS VM normally in Azure is an appropriate option, though you should regularly check the VM to ensure that its performance profile is commensurate with the VM size assigned.
 
 - **The application hosted on an IaaS VM that is only used several hours per day by a limited number of people shouldn't be configured to use virtual machine scale sets.**
 In this case, you could use scheduled VM startup and shutdown to optimize costs, ensuring that the VM was available during business hours and offline when no one is at work.
