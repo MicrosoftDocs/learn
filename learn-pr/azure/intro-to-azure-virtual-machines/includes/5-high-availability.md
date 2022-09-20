@@ -28,7 +28,7 @@ Each Availability Zone has a distinct power source, network, and cooling. By des
 Virtual machines in a scale set can also be deployed into multiple availability zones, a single availability zone, or regionally. Availability zone deployment options may differ based on the [orchestration mode](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes).
 
 ## Load balancer
-Combine the [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) with an availability zone or availability set to get the most application resiliency. The Azure Load Balancer distributes traffic between multiple virtual machines. For our Standard tier virtual machines, the Azure Load Balancer is included. Not all virtual machine tiers include the Azure Load Balancer. For more information about load balancing your virtual machines, see **Load Balancing virtual machines** for [Linux](/azure/virtual-machines/linux/tutorial-load-balancer) or [Windows](/azure/virtual-machines/windows/tutorial-load-balancer).
+Combine the [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) with an availability zone or availability set to get the most application resiliency. The Azure Load Balancer distributes traffic between multiple virtual machines. For our Standard tier virtual machines, the Azure Load Balancer is included. Not all virtual machine tiers include the Azure Load Balancer. For more information about load balancing your virtual machines, see **Load Balancing virtual machines** for [Linux](https://learn.microsoft.com/azure/virtual-machines/linux/tutorial-load-balancer) or [Windows](https://learn.microsoft.com/azure/virtual-machines/linux/tutorial-load-balancer).
 
 
 ## Azure Storage redundancy
