@@ -27,6 +27,7 @@ roles:
 products:
 - azure
 - azure-functions
+- dotnet
 subjects:
 - cloud-computing
 - data-engineering
