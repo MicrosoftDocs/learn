@@ -61,12 +61,13 @@ You can get these values from the connection string.
 
    Paste the connection string between the quotation marks.
 
-2. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
+1. If you used a name different from **salesmessages** for the queue name, update the value for `QueueName` property in the code.
 
     ```csharp
     const string QueueName = "salesmessages";
     ```
-4. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
+
+1. To complete the component that sends messages about sales, you must add an `await` operator to suspend evaluation of the async method until the asynchronous operation completes. Find the `SendSalesMessageAsync()` method. Within that method, locate the following line of code:
 
     ```csharp
     // Create a Service Bus client here
@@ -187,7 +188,7 @@ You can get these values from the connection string.
     ```
 
 1. Save the *privatemessagesender/Program.cs* file using either the **...** icon or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-2. Select the project file **privatemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
+1. Select the project file **privatemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
 
 ## Send a message to the queue
@@ -419,7 +420,7 @@ You can get these values from the connection string.
     ```
 
 1. Save the file either through the **&#9776;** menu or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
-2. Select the project file **privatemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
+1. Select the project file **privatemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 1. In the upper-right corner of the editor, select **...**,  and then select **Close Editor**.
 
 ## Receive a message from the queue
@@ -436,7 +437,7 @@ You can get these values from the connection string.
     Received: $10,000 order for bicycle parts from retailer Adventure Works.
     ```
 
-1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. 
+1. When you see that the messages have been received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app.
 
 ### Check the message count
 
