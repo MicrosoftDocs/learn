@@ -8,7 +8,7 @@ You need to deploy highly available virtual machines. You decide to use virtual 
 
 ## Skills measured
 
-High availability and scaling of virtual machine is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
+High availability and scaling of virtual machine is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 

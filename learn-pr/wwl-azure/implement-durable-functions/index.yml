@@ -27,6 +27,7 @@ roles:
 products:
 - azure
 - azure-functions
+- dotnet
 units:
 - learn.wwl.implement-durable-functions.introduction
 - learn.wwl.implement-durable-functions.explore-app-patterns
