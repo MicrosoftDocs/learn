@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.share-dashboard
+uid: learn.create-dashboards-azure-data-explorer.share-dashboard
 title: Share dashboards
 metadata:
   unitType: exercise
-  title: learning-content
+  title: Share dashboards
   description: "Share Azure Data Explorer dashboards with a colleague."
   ms.date: 8/17/2022
   author: YaelSchuster

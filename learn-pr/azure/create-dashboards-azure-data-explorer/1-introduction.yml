@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.introduction
+uid: learn.create-dashboards-azure-data-explorer.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "Introduction to how to create dashboards in the Azure Data Explorer web UI."
   ms.date: 8/17/2022
   author: YaelSchuster

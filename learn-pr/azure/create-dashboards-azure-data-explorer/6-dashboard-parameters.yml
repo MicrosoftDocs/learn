@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.dashboard-parameters
+uid: learn.create-dashboards-azure-data-explorer.dashboard-parameters
 title: Dashboard parameters
 metadata:
   unitType: learning-content
-  title: learning-content
+  title: Dashboard parameters
   description: "Learn how to create dashboard parameters, which act as filters on the visuals."
   ms.date: 8/17/2022
   author: YaelSchuster

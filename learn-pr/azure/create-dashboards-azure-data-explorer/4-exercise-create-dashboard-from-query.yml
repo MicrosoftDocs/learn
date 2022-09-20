@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.exercise-create-dashboard-from-query
+uid: learn.create-dashboards-azure-data-explorer.exercise-create-dashboard-from-query
 title: "Exercise: Create a dashboard from a query"
 metadata:
   unitType: exercise
-  title: exercise
+  title: "Exercise: Create a dashboard from a query"
   description: "In this unit you create a dashboard directly from a query in Azure Data Explorer web UI."
   ms.date: 8/17/2022
   author: YaelSchuster

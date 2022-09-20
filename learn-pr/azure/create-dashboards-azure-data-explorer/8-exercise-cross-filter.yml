@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.exercise-cross-filter
+uid: learn.create-dashboards-azure-data-explorer.exercise-cross-filter
 title: "Exercise: Create a cross-filter"
 metadata:
   unitType: exercise

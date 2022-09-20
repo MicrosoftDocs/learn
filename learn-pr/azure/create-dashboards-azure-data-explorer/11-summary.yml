@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.summary
+uid: learn.create-dashboards-azure-data-explorer.summary
 title: Summary
 metadata:
   unitType: summary
-  title: summary
+  title: Summary
   description: "This section summarizes what you did in the module, creating dashboards in Azure Data Explorer."
   ms.date: 8/17/2022
   author: YaelSchuster

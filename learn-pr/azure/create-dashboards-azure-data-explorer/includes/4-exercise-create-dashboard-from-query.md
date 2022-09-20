@@ -1,6 +1,6 @@
 Dashboards are an excellent way to communicate data science insights visually.
 
-You've connected to resources containing a meterological dataset. In this unit, you'll create a dashboard from a query of this data. 
+You've connected to resources containing a meteorological dataset. In this unit, you'll create a dashboard from a query of this data. 
 
 ## Pin query to dashboard
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-dashboards-adx.exercise-add-new-tile
+uid: learn.create-dashboards-azure-data-explorer.exercise-add-new-tile
 title: "Exercise: Add a new tile"
 metadata:
   unitType: exercise
-  title: exercise
+  title: "Exercise: Add a new tile"
   description: "In this unit, you learn how to add a new tile to an existing dashboard in Azure Data Explorer web UI."
   ms.date: 8/17/2022
   author: YaelSchuster
