@@ -6,7 +6,7 @@ In this unit, you'll learn how to create a JavaScript application using Visual S
 
 You can create a new JavaScript application for Node.js from within Visual Studio Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
 
-Edit the **package.json** file and add a description to the **description** property. Also, replace the text **main.js** in the **main** property with the name of the JavaScript file that will hold your application code.
+Edit the **package.json** file and add a description to the **description** property. Also, replace the value for **main** with the name of the JavaScript file that will hold your application code, such as `index.js`.
 
 Create a new file for your application code. Save the file with the same name as the one you specified in the **package.json** file. Make sure you give the file a **.js** extension (for JavaScript)
 
@@ -34,13 +34,13 @@ Other IntelliSense features available in Visual Studio Code include:
   
 ## Run and debug a Node.js application
 
-The simplest way to run a Node.js application from Visual Studio Code is to use the `node` command from a terminal window. For example, to run the code in a file named **myapp.js**, run `node myapp.js`.
+The simplest way to run a Node.js application from Visual Studio Code is to use the `node` command from a terminal window. For example, to run the code in a file named **index.js**, run `node index.js`.
 
-You can use the native Node.js debugger (for example, `node inspect myapp`) from a terminal window, but Visual Studio Code provides an enhanced environment for stepping through and debugging Node.js applications.
+You can use the native Node.js debugger (for example, `node inspect index`) from a terminal window, but Visual Studio Code provides an enhanced environment for stepping through and debugging Node.js applications.
 
-Before you use the Visual Studio Code debugger, you should configure it. For example, the Visual Studio Code debugger displays output in its own **Output** window in the IDE. However, this window can't handle terminal input. If your app expects to receive keyboard input, you must configure the debugger to use an external terminal.
+Before you use the Visual Studio Code debugger, you should configure it. 
 
-To edit the debugger configuration settings, on the **Run** menu, select **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property, and set it to **externalTerminal**.
+To edit the debugger configuration settings, on the **Run** menu, select **Add configuration**. On the **Select debugger** option, select **Node.js**. The `./.vscode/launch.json` file displays your new configuration. 
 
 ```json
 {
@@ -53,14 +53,16 @@ To edit the debugger configuration settings, on the **Run** menu, select **Open 
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/myapp.js",
-            "console": "externalTerminal"
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/index.js"
         }
     ]
 }
 ```
 
-To begin a debug session, first, set one or more breakpoints in your application code. To do this, click in the left margin by the statement at which you want to pause execution. A red dot will appear.
+Before you begin to debug, set a breakpoint in your application code. To do this, click in the left margin by the statement at which you want to pause execution. A red dot will appear.
 
 Next, select **Start Debugging** on the **Run** menu. If you're using an external terminal, a new terminal window will appear. If your application expects any input, enter it into this window. Any messages output by your application will appear in this window:
 
