@@ -36,7 +36,7 @@ In this exercise you'll create a Linux virtual machine by performing the followi
         --name az204vm \
         --image UbuntuLTS \
         --generate-ssh-keys \
-        --admin-username azureuser
+        --admin-username azureuser \
         --public-ip-sku Standard
     ```
     

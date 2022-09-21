@@ -12,13 +12,13 @@ Parallel task execution controls how many tasks a single node can handle concurr
 
 In Batch, slots control parallel task execution. Tasks have a property called `RequiredSlots`, which denotes how resource intensive a task is. Resource-intensive tasks require more slots than resource-light tasks do.
 
-When you create a pool, you specify how many task slots are available per node by setting the `taskSlotsPerNode` property. This property governs how resource intensive the tasks are that can run concurrently on a node. 
+When you create a pool, you specify how many task slots are available per node by setting the `taskSlotsPerNode` property. This property governs the resource intensity of the tasks that can run concurrently on a node. 
 
 For example, if a pool's `taskSlotsPerNode` property is set to 16, the tasks running concurrently on a node will never require more than 16 slots. This setting means that, for example:
 
-- 2 nodes that require 8 slots can run at the same time because the number of slots equals 16 (2 * 8 = 16)
+- 2 tasks that require 8 slots can run at the same time because the number of slots equals 16 (2 * 8 = 16)
 - 3 tasks that require 5 slots can run at the same time because the number of slots is less than 16 (3 * 5 = 15)
-- 5 tasks that require 4 slots cannot run at the same time because the number of slots is more than 16 (5 * 4 = 20)
+- 5 tasks that require 4 slots can't run at the same time because the number of slots is more than 16 (5 * 4 = 20)
 
 At maximum, the `taskSlotsPerNode` property can be up to four times the number of vCPUs that a node has. To figure out how many vCPUs are available on a node, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
 

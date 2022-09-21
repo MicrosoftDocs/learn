@@ -45,7 +45,7 @@ Another way to look at data distribution is to group by event location, in this 
     
     :::image type="content" source="../media/6-damage-chart.png" alt-text="Screenshot of bar chart showing damage by state.":::
 
-1. Take a look at the resulting graph. There are 67 different kinds of states in the list- including those which are not official states in the US, such as "American Samoa" and "Hawaii waters". Does this type of geographical storm distribution make sense? 
+1. Take a look at the resulting graph. There are 67 different states in the list- including those which are not official states in the US, such as "American Samoa" and "Hawaii waters". Does this type of geographical storm distribution make sense? 
 1. You can look at the underlying data by selecting the **Table** icon above the chart. Do the actual numbers help you understand the data distribution better?
     
     :::image type="content" source="../media/6-underlying-data.png" alt-text="Screenshot of data table for damage chart.":::

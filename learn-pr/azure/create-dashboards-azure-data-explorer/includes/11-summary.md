@@ -2,5 +2,6 @@ In the scenario, you wanted to share visual data insights with a colleague. You 
 
 ## References
 
+* [Characterize an unfamiliar dataset in Azure Data Explorer](/training/modules/characterize-data-azure-data-explorer/)
 * [Visualize data with Azure Data Explorer dashboards](/azure/data-explorer/azure-data-explorer-dashboards)
 * [Use parameters in Azure Data Explorer dashboards](/azure/data-explorer/dashboard-parameters)
