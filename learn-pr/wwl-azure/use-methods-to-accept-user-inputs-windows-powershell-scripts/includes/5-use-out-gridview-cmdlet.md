@@ -1,8 +1,8 @@
 **Out-GridView** is primarily used to review data. However, you can also use **Out-GridView** to create a simple menu selection interface. When the user makes one or more selections in the window presented by **Out-GridView**, the data for those objects is either passed further through the pipeline or placed into a variable. The syntax for selecting an option in **Out-GridView** is:
 
-powershell
+```powershell
 $selection = $users | Out-GridView -PassThru 
-
+```
 
 In the previous example, an array of user accounts is piped to **Out-GridView**. **Out-GridView** displays the user accounts on screen, and the user can select one or more rows in the **Out-GridView** window. When the user selects **OK**, the selected rows are stored in the `$selection` variable. You can then perform further processing on the users’ accounts.
 
