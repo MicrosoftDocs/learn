@@ -1,6 +1,6 @@
 ## Built-in roles for Azure Resources (uses PowerShell)
 
-Azure AD provides several _built-in roles_ to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
+Azure AD provides several *built-in roles* to cover the most common security scenarios. To understand how the roles work, let's examine three roles that apply to all resource types:
 
 * **Owner**, which has full access to all resources, including the right to delegate access to others.
 * **Contributor**, which can create and manage all types of Azure resources but can’t grant access to others.
@@ -10,7 +10,7 @@ Azure AD provides several _built-in roles_ to cover the most common security sce
 
 Each role is a set of properties defined in a JavaScript Object Notation (JSON) file. This role definition includes a **Name**, **ID**, and **Description**. It also includes the allowable permissions (**Actions**), denied permissions (**NotActions**), and scope (for example, read access) for the role.
 
-For the Owner role that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
+For the Owner role, that means all actions, indicated by an asterisk (*); no denied actions; and all scopes, indicated by a forward slash (/).
 
 You can get this information using the PowerShell `Get-AzRoleDefinition Owner` cmdlet.
 
@@ -42,7 +42,7 @@ Next, let's explore some of the other built-in roles.
 
 1. On the Azure home page, under **Navigate**, select **Resource groups**.
 
-1. Select a resource group. Your *resource group* pane appears.
+1. Select a resource group. Your *Resource group* pane appears.
 
 1. In the left menu pane, select the **Access control (IAM)**. The **Access control (IAM)** pane appears for your resource group.
 
@@ -58,14 +58,14 @@ As previously described, a role definition has the following structure.
 
 | Name                 | Description |
 |----------------------|-------------|
-| `Id`                 | Unique identifier for the role, assigned by Azure. |
-| `IsCustom`           | True if a custom role, False if a built-in role. |
-| `Description`        | A readable description of the role. |
-| `Actions []`         | Allowed permissions, `*` indicates all.
-| `NotActions []`      | Denied permissions. |
+| `Id`                 | Unique identifier for the role, assigned by Azure |
+| `IsCustom`           | True if a custom role, False if a built-in role |
+| `Description`        | A readable description of the role |
+| `Actions []`         | Allowed permissions; `*` indicates all |
+| `NotActions []`      | Denied permissions |
 | `DataActions []`     | Specific allowed permissions as applied to data, for example `Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read` |
-| `NotDataActions []`  | Specific denied permissions as applied to data. |
-| `AssignableScopes []`| Scopes where this role applies. `/` indicates global, but can reach into a hierarchical tree. |
+| `NotDataActions []`  | Specific denied permissions as applied to data.|
+| `AssignableScopes []`| Scopes where this role applies; `/` indicates global, but can reach into a hierarchical tree |
 
 This structure is represented as JSON when used in role-based access control (RBAC) or from the underlying API. For example, here's the **Contributor** role definition in JSON format.
 
@@ -109,7 +109,7 @@ The operations under `NotActions` are subtracted from `Actions`. With the **Cont
 
 ### DataActions and NotDataActions
 
-Data operations are specified in the `DataActions` and `NotDataActions` properties. Data operations can be specified separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having access to data. Here are some data operations that can be specified in `DataActions` and `NotDataActions`:
+Data operations are specified in the `DataActions` and `NotDataActions` properties. Data operations can be specified separately from the management operations. This prevents current role assignments with wildcards (`*`) from suddenly having access to data. Here are some data operations that you can specify in `DataActions` and `NotDataActions`:
 
 * Read a list of blobs in a container
 * Write a storage blob in a container
@@ -117,7 +117,7 @@ Data operations are specified in the `DataActions` and `NotDataActions` properti
 
 Only data operations can be added to the `DataActions` and `NotDataActions` properties. Resource providers identify which operations are data operations by setting the `isDataAction` property to `true`.  Roles that do not have data operations can omit these properties from the role definition.
 
-These actions work exactly like their management cousins. You specify actions you want to allow (or `*` for all) and then provide a list of specific actions to remove in the `NotDataActions` collection. Here are some examples, you can find the [full list of actions and data actions in the resource provider documentation](/azure/role-based-access-control/resource-provider-operations):
+These actions work exactly like their management cousins. You can specify the actions you want to allow (or `*` for all), then provide a list of specific actions to remove in the `NotDataActions` collection. Here are some examples; you can find the [full list of actions and data actions in the resource provider documentation](/azure/role-based-access-control/resource-provider-operations):
 
 | Data operation | Description |
 |----------------|-------------|
@@ -137,24 +137,24 @@ Here are some examples.
 
 | To | Use Scope |
 |-|-|
-| Restrict to a subscription. | `"/subscriptions/{sub-id}"` |
-| Restrict to a specific resource group on a specific subscription. | `"/subscriptions/{sub-id}/resourceGroups/{rg-name}"` |
-| Restrict to a specific resource. | `"/subscriptions/{sub-id}/resourceGroups/{rg-name}/{resource-name}"` |
-| Make a role available for assignment in two subscriptions. | `"/subscriptions/{sub-id}", "/subscriptions/{sub-id}"` |
+| Restrict to a subscription | `"/subscriptions/{sub-id}"` |
+| Restrict to a specific resource group on a specific subscription | `"/subscriptions/{sub-id}/resourceGroups/{rg-name}"` |
+| Restrict to a specific resource | `"/subscriptions/{sub-id}/resourceGroups/{rg-name}/{resource-name}"` |
+| Make a role available for assignment in two subscriptions | `"/subscriptions/{sub-id}", "/subscriptions/{sub-id}"` |
 
 ## Create roles
 
-Azure AD comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It is preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
+Azure AD comes with built-in roles that are likely to cover 99% of what you'll ever want to do. It's preferable to use a built-in role if possible. However, you can create custom roles if you find it necessary.
 
 > [!NOTE]
-> Custom role creation requires Azure AD Premium P1 or P2 and cannot be done in the free tier.
+> Custom role creation requires Azure AD Premium P1 or P2, and cannot be done in the free tier.
 
-Creating a new role can be done through several mechanisms:
+You can create a new role through several mechanisms:
 
-* **Azure portal**. You can use the Azure portal to create a custom role - **Azure Active Directory > Roles and administrators > New custom role**.
+* **Azure portal**: You can use the Azure portal to create a custom role by selecting **Azure Active Directory > Roles and administrators > New custom role**.
 
-* **Azure PowerShell**. You can use the `New-AzRoleDefinition` cmdlet to define a new role.
+* **Azure PowerShell**: You can use the `New-AzRoleDefinition` cmdlet to define a new role.
 
-* **Azure Graph API**. You can use a REST call to the Graph API to programmatically create a new role.
+* **Azure Graph API**: You can use a REST call to the Graph API to programmatically create a new role.
 
 The summary includes a link to the documentation for all three approaches.
