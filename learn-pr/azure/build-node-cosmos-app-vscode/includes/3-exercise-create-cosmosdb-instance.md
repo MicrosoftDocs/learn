@@ -187,6 +187,8 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. On the **File** menu, select **Save**.
 
+    You have added and edited Cosmos DB documents. 
+
 ## Delete documents
 
 In the Azure explorer, right-click each of the product documents and delete them. You will upload the _entire_ products data set in the next section.
