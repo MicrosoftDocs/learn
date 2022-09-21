@@ -1,12 +1,14 @@
 Relational data is a type of structured data that has a shared schema. It's often stored in database tables with rows, columns, and keys, and used for application storage like e-commerce websites. As the CTO for Tailwind Traders, you're responsible for designing databases for Azure to support existing structured data on-premises. You're looking for a storage solution to support existing data and future relational data workloads initiated by the company.
 
-## Azure SQL deployment options
-
 Within the umbrella of the Azure SQL platform, there are many deployment options and choices to consider. We'll review five options that give you the flexibility to get and pay for exactly what you need in your storage solution. In this unit, we look at Azure SQL Database and SQL Database elastic pools. In the following units, we examine SQL Server on Azure Virtual Machines, along with Azure SQL Managed Instance and instance pools.
+
+## Azure SQL Database
+
+Azure SQL Database is a PaaS deployment option of Azure SQL that abstracts both the OS and the SQL Server instance. An Azure SQL database is a fully managed service. You don't have to deal with complex database tasks like configuring and managing high availability, tuning, and backups. The service automatically upgrades each SQL database to run the most recent version of SQL Server. You get the latest SQL Server capabilities without having to perform manual updates.
 
 ### Things to know about Azure SQL Database
 
-Azure SQL Database is a PaaS deployment option of Azure SQL that abstracts both the OS and the SQL Server instance. Consider the following characteristics of the SQL Database deployment option:
+Review the following characteristics of the SQL Database deployment option:
 
 - It's a highly scalable, intelligent, relational database service built for the cloud with the industry's highest availability SLA.
 
@@ -26,13 +28,13 @@ Azure SQL Database is a PaaS deployment option of Azure SQL that abstracts both 
 
 #### Business scenario
 
-Consider the following business scenario for Azure SQL Database. AccuWeather has been analyzing and predicting the weather for more than 55 years. The company chose the Azure platform for its big data, machine learning, and AI capabilities. AccuWeather wants to focus on building new models and applications, not on managing databases. The company chose SQL Database to use with other services, like Azure Data Factory and Azure Machine Learning to quickly and easily deploy new internal applications to make sales and customer predictions.
+Let's explore a business scenario for Azure SQL Database. AccuWeather has been analyzing and predicting the weather for more than 55 years. The company chose the Azure platform for its big data, machine learning, and AI capabilities. AccuWeather wants to focus on building new models and applications, not on managing databases. The company chose SQL Database to use with other services, like Azure Data Factory and Azure Machine Learning to quickly and easily deploy new internal applications to make sales and customer predictions.
 
 :::image type="content" source="../media/azure-sql-database.png" alt-text="Illustration that shows a business scenario for Azure SQL Database." border="false":::
 
 ### Things to consider when using Azure SQL Database 
 
-As you think about how Azure SQL Database can be included in your relational data storage plan, review these points:
+Consider how Azure SQL Database can be included in your relational data storage plan for Tailwind Traders:
 
 - **Consider vCore pricing**. (Microsoft recommended) Select compute and storage resources independently for multiple SQL databases or an elastic database pool. Use Azure Hybrid Benefit for SQL Server or reserved capacity (pay in advance) to save money. You control the compute and storage resources that you create and pay for. 
 

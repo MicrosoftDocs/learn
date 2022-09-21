@@ -1,10 +1,10 @@
-Azure SQL Managed Instance is a PaaS deployment option of Azure SQL. It provides an instance of SQL Server, but removes much of the overhead of managing a virtual machine. 
+Azure SQL Managed Instance is a PaaS deployment option of Azure SQL. As with Azure SQL Database, Azure SQL Managed Instance is a fully managed service. It provides an instance of SQL Server, but removes much of the overhead of managing a virtual machine. 
  
 ### Things to know about Azure SQL Managed Instance
 
-Examine some of the characteristics of SQL Managed Instance:
+Review the following characteristics of the SQL Managed Instance deployment option:
 
-- You can use SQL Managed Instance to migrate data to Azure without having to redesign your applications.
+- You can use SQL Managed Instance to do lift-and-shift migrations to Azure without having to redesign your applications.
 
 - Azure SQL Managed Instance is ideal for customers interested in instance-scoped features, such as SQL Server Agent, Common language runtime (CLR), Database Mail, Distributed transactions, and Machine Learning Services.
 
@@ -20,7 +20,7 @@ Let's explore a business scenario for Azure SQL Managed Instance. Komatsu is a m
 
 ### Things to consider when using Azure SQL Managed Instance
 
-Consider how Azure SQL Managed Instance can be included in your relational data storage plan, and review these points:
+Consider how Azure SQL Managed Instance can be included in your relational data storage plan for Tailwind Traders:
 
 - **Consider instance-scoped features**. Use instance-scoped features of Azure SQL Managed Instance like Service Broker, CLR, SQL Server Agent, and Linked servers. Migrate your relational and structured data to Azure without rearchitecting your applications. 
 
