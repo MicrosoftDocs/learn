@@ -155,7 +155,7 @@ Select the **Download** option to create a CSV or JSON file of the most recent 2
 
 Azure AD and the Azure portal both provide you with additional entry points to sign-in data:
 
- -  Identity Protection in Azure AD - Security
+ -  Identity Protection, found in Azure AD - Security - Identity Protection
  -  Users
  -  Groups
  -  Enterprise applications
