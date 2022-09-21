@@ -1,15 +1,16 @@
 
-Data catalog - discover data.
-
-The Microsoft Purview Data Catalog is one of two main pillars in Microsoft Purview that sits atop the Microsoft Purview Data Map. The data map scans resources, and houses metadata about the assets in those resources. The data catalog allows your users to browse those assets fo data they might need based on what kind of data it is, if it's sensitive, or even based on an aspect of your business. The data catalog helps to demistify your data estate so users can find the information they need, without sacrificing security, and while allowing you to curate your experience to match your business.
+The Microsoft Purview Data Catalog is one of two main pillars in Microsoft Purview that sits atop the Microsoft Purview Data Map.
 
 Once data sources have been registered and scanned in the Microsoft Purview Data Map, metadata about the data sources are stored in the data map. Assets will be things like a file in Azure Blob Storage, or a table in a SQL server. Metadata that is gathered about these assets will be information like: asset type, classifications of data types in the asset, schema (column names, data types), lineage (where the data came from), and related assets. However, the Microsoft Purview Data Map also hosts added metadata. Information like: description, associated glossary terms, and contacts for that asset.
 
 Though this metadata is stored in the data map, it's the Microsoft Purview Data Catalog that allows users to search and browse these assets to find information they may be looking for.
 
-You can think of it this way: The data map helps to MAP data sources to your organization and grant access to that information. The data map answers questions like: where is my data stored? Who has access to it? The data catalog allows you to find specific pieces of data and answer questions like:
+You can think of it this way: The data map helps to **map** data sources to your organization and grant access to that information. The data map answers basic data estate questions like: 
+- Where is my data stored?
+- Who has access to it?
 
-- what kind of data is this?
+The data catalog creates an index for these sources (a **catalog** for your sources) that allows you to find specific pieces of data and answer more complex questions like:
+- What kind of data is this?
 - What does that kind of data/attribute mean for my business?
 - Where does it come from?
 - Who can I contact if I have more questions?
@@ -18,7 +19,7 @@ You can think of it this way: The data map helps to MAP data sources to your org
 - Do we know where column X in table Y comes from?
 - Can I trust this data?
 
-There are three main attributes of the data catalog that contribute to each other:
+There are three main functions of the data catalog that contribute to each other:
 
 - Search and browse data assets
 - Manage and curate your data assets
