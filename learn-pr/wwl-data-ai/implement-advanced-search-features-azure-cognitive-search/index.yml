@@ -18,9 +18,9 @@ abstract: |
   - Enhance an index to include multiple languages
   - Improve search experience by ordering results by distance from a given reference point
 prerequisites: |
-  - Familiarity with Microsoft Azure
-  - Application development experience with C# or Python
-  - Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search](/learn/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
+  *   Familiarity with Microsoft Azure
+  *   Application development experience with C# or Python
+  *   Experience of building a basic search solution with Azure Cognitive Search. If you haven't completed the [Create an Azure Cognitive Search](/training/modules/create-azure-cognitive-search-solution) solution module, you should do so before starting this module
 iconUrl: /training/achievements/implement-advanced-search-features-azure-cognitive-search.svg
 levels:
 - intermediate
