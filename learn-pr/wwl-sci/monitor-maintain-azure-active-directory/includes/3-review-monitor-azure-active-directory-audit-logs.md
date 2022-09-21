@@ -47,7 +47,7 @@ You can filter the audit data on the following fields:
 The **Service** filter allows you to select from a drop-down list of the following services:
 
  -  All
- -  AAD Management UX
+ -  Azure AD Management UX
  -  Access Reviews
  -  Account Provisioning
  -  Application Proxy
@@ -69,7 +69,7 @@ The **Service** filter allows you to select from a drop-down list of the followi
 The **Category** filter enables you to select one of the following filters:
 
  -  All
- -  AdministrativeUnit
+ -  Administrative unit
  -  ApplicationManagement
  -  Authentication
  -  Authorization
@@ -156,7 +156,7 @@ With application-based audit reports, you can get answers to questions such as:
  -  Have the names of applications been changed?
  -  Who gave consent to an application?
 
-If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** blade. This entry point has **Enterprise applications** preselected as the **Application Type**.
+If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** screen. This entry point has **Enterprise applications** preselected as the **Application Type**.
 
 :::image type="content" source="../media/enterprise-applications-8cc2f932.png" alt-text="Screenshot of the Enterprise applications logs for auditing. You can and should audit all details.":::
 

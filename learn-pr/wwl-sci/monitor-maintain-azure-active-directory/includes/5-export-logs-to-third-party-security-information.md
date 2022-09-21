@@ -14,7 +14,7 @@ The table below indicates what you should do based on the SIEM tool(s) you're us
 | ------------- | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Splunk        | Begin migrating to the Azure Monitor Add-On for Splunk.                                                                     | Use the Azure Monitor Add-On for Splunk.                                                                                                                          |
 | IBM QRadar    | Begin migrating to the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website. | Use the Microsoft Azure DSM and Microsoft Azure Event Hubs Protocol, available from the IBM support website. You can learn more about the integration with Azure. |
-| ArcSight      | The ArcSight Azure Event Hub smart connector is available as part of the ArcSight smart connector collection.               |                                                                                                                                                                   |
+| ArcSight      | The ArcSight Azure Event Hubs smart connector is available as part of the ArcSight smart connector collection.              |                                                                                                                                                                   |
 
 ## Integration roadmap
 
