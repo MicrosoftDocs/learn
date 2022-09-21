@@ -16,7 +16,7 @@ When you create a pool, you specify how many task slots are available per node b
 
 For example, if a pool's `taskSlotsPerNode` property is set to 16, the tasks running concurrently on a node will never require more than 16 slots. This setting means that, for example:
 
-- 2 nodes that require 8 slots can run at the same time because the number of slots equals 16 (2 * 8 = 16)
+- 2 tasks that require 8 slots can run at the same time because the number of slots equals 16 (2 * 8 = 16)
 - 3 tasks that require 5 slots can run at the same time because the number of slots is less than 16 (3 * 5 = 15)
 - 5 tasks that require 4 slots cannot run at the same time because the number of slots is more than 16 (5 * 4 = 20)
 
