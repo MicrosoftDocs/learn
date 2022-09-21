@@ -60,7 +60,7 @@ The `Session(app)` object initializes a server side session that is used to coor
 
 ## Create the authorization code flow dictionary
 
-The web app we build in this training module uses the authorization code grant flow. The authorization code grant flow is the most secure and recommended flow for web apps. Add the following code to `app.py` to build the auth code flow dictionary using the MSAL client. 
+The web app we build in this training module uses the authorization code grant flow. This is the recommended flow for web apps as it is the most secure. Add the following code to *app.py* to build the auth code flow dictionary using the MSAL client. 
 
 ```python
 # Redirect unauthorized users through the auth code flow to sign in

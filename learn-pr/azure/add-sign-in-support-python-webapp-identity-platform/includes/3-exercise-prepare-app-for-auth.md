@@ -1,6 +1,6 @@
-Now that you've understood how the Microsoft identity platform works, you'll create a Python Flask web application and register it in the Azure portal. 
+Now that you understand how the Microsoft identity platform works, you'll create a Python Flask web application and register it in the Azure portal. 
 
-In this exercise, you'll also complete the following application-specific configurations on the Azure portal:
+In this exercise, you'll complete the following application-specific configurations on the Azure portal:
 
 - Add a redirect URI
 - Configure client credentials
@@ -15,12 +15,12 @@ To complete the rest of the module, you'll need to create a Python Flask web app
 
 If you prefer following the module and building the Python Flask web app by yourself, follow the steps below:
 
-1. Create a folder to host your application and name it `python-flask-webapp`, for example.
-1. Navigate to your project directory and create three files named `app.py`, `default_settings.py`, and `requirements.txt`
-1. In your project root directory, create a folder named `templates`. Flask will look for rendering templates in this subdirectory. 
+1. Create a folder to host your application and name it *python-flask-webapp*.
+1. Navigate to your project directory and create three files named *app.py*, *default_settings.py*, and *requirements.txt*
+1. In your project root directory, create a folder named *templates*. Flask will look for rendering templates in this subdirectory. 
 1. At the end of the module, your project's file and directory structure should look similar to this:
 
-```
+```md
 python-webapp/
 ├── templates
 │   ├── authenticated
@@ -33,7 +33,7 @@ python-webapp/
 
 #### Install dependencies
 
-For the sample app in this module, you'll use Flask and the Microsoft Authentication Library (MSAL) for Python. Update `requirements.txt` with these dependencies.
+For the sample app in this module, you'll use Flask and the Microsoft Authentication Library (MSAL) for Python. Update *requirements.txt* with these dependencies.
 
 ```python
 # Flask
@@ -53,7 +53,7 @@ To make these dependencies available in your environment, run `pip install -r re
 
 Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three simple HTML templates for each of the routes that'll be set up in the app.
 
-For the general template, create an HTML file named `layout.html` in the templates folder and paste the contents below: 
+For the general template, create an HTML file named *layout.html* in the templates folder and paste the contents below: 
 
 ```html
 # 📁 templates/layout.html
@@ -80,7 +80,7 @@ For the general template, create an HTML file named `layout.html` in the templat
   </body>
 </html>
 ```
-Next, create a new folder in templates and name it public. You should then add an `index.html` template to the public folder. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the `index.html` template.
+Next, create a new folder in *templates* and name it *public*. Then add an *index.html* template to the *public* folder. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the *index.html* template.
 
 ```html
 # 📁 templates/public/index.html
@@ -99,9 +99,9 @@ Next, create a new folder in templates and name it public. You should then add a
 {% endblock %}
 ```
 
-Next, in the templates folder, create a sub-folder called `authenticated` where you'll add two templates that your app will render when users sign in.
+Move into the *templates* folder, and create a new folder named *authenticated* where you'll add two templates that your app will render when users sign in.
 
-The first template, `graph.html` will render when all users sign in. Paste the following contents into this template:
+The first template, *graph.html* will render when all users sign in. Paste the following contents into this template:
 
 ```html
 # 📁 templates/authenticated/graph.html
@@ -173,7 +173,7 @@ Add a second template in the authenticated subfolder and name it `admin.html`. Y
 
 ```
 
-You're now done creating the presentation layer for your Flask web application. Your final `templates` directory should look like this:
+You're now done creating the presentation layer for your Flask web application. Your final *templates* folder should look like this:
 
 ```md
 # 📁 templates
@@ -193,12 +193,12 @@ The Microsoft identity platform performs identity and access management (IAM) on
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../media/2-portal-directory-subscription-filter.png" border="false"::: at the right of the top menu to switch to the tenant where you want to register the application.
 1. Search for and select **Azure Active Directory**.
 1. On the left side bar, under **Manage**, select **App registrations**, then **New registration**. 
-1. Enter a **Name** for your application, for example `python-flask-webapp`. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time.
+1. Enter a **Name** for your application, for example *python-flask-webapp*. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time.
 1. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**
 1. Don't enter anything for Redirect URI (optional). You'll configure a redirect URI in the next section
 1. Select **Register** to complete the initial app registration.
 
-When registration finishes, the Azure portal displays the app registration's Overview pane. You see the automatically generated Application (client) ID.
+When registration finishes, the Azure portal displays the app registration's **Overview** pane. You see the automatically generated **Application (client) ID**.
 
 ## Add a redirect URI
 
@@ -218,9 +218,9 @@ For this scenario, you'll use a client secret, also known as an application pass
 1. In the Azure portal, in **App registrations**, select your application.
 1. Under **Manage**, select **Certificates & secrets**.
 1. In the **Client secrets** section, select **New client secret**.
-1. Click**New client secret** and add a description for your client secret.
+1. Click **New client secret** and add a description for your client secret.
 1. Select an expiration for the secret or specify a custom lifetime.
-   Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months. Microsoft recommends that you set an expiration value of less than 12 months.
+   - Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months. Microsoft recommends that you set an expiration value of less than 12 months.
 1. Select **Add**.
 1. Record the client secret value (not its ID) for use in your application's code. This secret value is only shown once when you create it and never displayed after leaving this page.
 
@@ -231,10 +231,10 @@ In this scenario, one route requires an application-defined app role that allows
 1. In the Azure portal, in **App registrations**, select your application.
 1. Under **Manage**, select **App roles** and then **Create app role**.
 1. In the **Create app role** pane, enter the settings for the role.
-    - For the **Display name**, enter `admin`
+    - For the **Display name**, enter **admin**.
     - For **Allowed member types:**, select **Users/Groups**
-    - For **Value**, enter `admin`
-    - For **Description**, add a more detailed app role description such as `admin app role` 
+    - For **Value**, enter **admin**
+    - For **Description**, add a more detailed app role description such as **admin app role** 
 1. Select the checkbox under to enable this app role.
 1. Select **Apply** to complete creating the app role.
 
@@ -249,13 +249,13 @@ After adding app roles to your application registration, you can assign users an
 1. Under **Manage**, select **Users and groups**.
 1. Select **Add user/group** to open the **Add Assignment** pane.
 1. Select the **Users and groups** selector from the **Add Assignment** pane. A list of users and security groups is displayed. You can search for a certain user or group as well as select multiple users and groups that appear in the list. For this tutorial, add *yourself* and select the **Select** button to proceed.
-1. In the **Add assignment** pane, you'll also choose a role to assign the selected users. In this case, the `admin role` is already selected by default. If you added several roles to the application, you'll have the option to choose the role you want.
+1. In the **Add assignment** pane, you'll also choose a role to assign the selected users. In this case, the *admin role* is already selected by default. If you added several roles to the application, you'll have the option to choose the role you want.
 1. Select the **Assign button** to finish the assignment of users and groups to the app.
 1. Confirm that the users and groups you added appear in the **Users and groups** list.
 
 ## Update the application to use your app registration details
 
-In the `default_settings.py` file, add the following code. 
+In *default_settings.py*, add the following code. 
 
 ```Python
 
