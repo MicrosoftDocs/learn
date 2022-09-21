@@ -1,4 +1,4 @@
-## Scenario
+## Scenario 
 
 Your company needs to ensure virtual machine deployments are consistent across the organization.
 
@@ -18,7 +18,7 @@ Automate deployment of virtual machines (VMs) by using Azure Resource Manager te
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you'll learn how to:
 
  -  List the advantages of Azure templates.
  -  Identify the Azure template schema components.
