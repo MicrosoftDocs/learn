@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   * You should be familiar with virtual machine concepts and terminology.
   * An understanding of cloud computing and some experience with the Azure portal.
-iconUrl: /learn/achievements/virtual-machines-provisions.svg
+iconUrl: /training/achievements/virtual-machines-provisions.svg
 levels:
 - intermediate
 roles:
