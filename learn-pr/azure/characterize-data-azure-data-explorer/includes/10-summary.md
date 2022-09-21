@@ -6,3 +6,4 @@ Azure Data Explorer is a powerful tool that provides an end-to-end solution for 
 
 * [Quickstart: Query data in the Azure Data Explorer web UI](/azure/data-explorer/web-query-data)
 * [Kusto Query Language overview](/azure/data-explorer/kusto/query/)
+* [Create dashboards in Azure Data Explorer](/training/modules/create-dashboards-azure-data-explorer/)
