@@ -41,7 +41,7 @@ An organization (tenant) has one associated default Azure AD directory. However,
 
 1. On the Azure home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Identity**, and then search for an select **Azure Active Directory**. The **Azure Active Directory** pane appears.
+1. In the left menu pane, select **Identity**, and then search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
 
 1. Select **Create**. The **Create tenant** pane appears.
 
@@ -53,7 +53,7 @@ An organization (tenant) has one associated default Azure AD directory. However,
 
     - **Initial domain name**: Enter a domain name associated with your organization. Azure will give a validation error unless the domain isn't known. The default domain name will always have the suffix `.onmicrosoft.com`. You can't change the default domain. If you choose to, you can add a custom domain owned by your organization so defined users can use a traditional company email, such as `john@contoso.com`.
 
-    - **Country or region**: Select the country in which the directory should reside. The country will identify the region and data center where the Azure AD instance will live;  you can not change it later.
+    - **Country or region**: Select the country in which the directory should reside. The country will identify the region and data center where the Azure AD instance will live;  you can't change it later.
 
     ![Screenshot showing the AD creation process.](../media/2-create-directory.png)
 
