@@ -41,13 +41,10 @@ The above image shows SQL elastic pools and the scaling capability for the diffe
 
 Read more about [SQL elastic pools](/azure/azure-sql/database/elastic-pool-overview).
 
+
 ## Design Horizontal Scaling Solution
 
-There are two types of horizontal scaling. These are:
-
-- Read Scale-Out
-
-- Sharding
+There are two types of horizontal scaling: read scale-out and sharding.
 
  
 
@@ -59,16 +56,13 @@ An easy choice here is to use the pre-provisioned read scale-out feature for cer
 
 The following table shows Read Scale-out provisioning for Azure SQL Database and Azure SQL Managed Instance:
 
-| **Azure SQL Managed Instance**| **Azure SQL Database** |
-| - | - |
-| For the basic, standard and general purpose tier, read scale-out feature is unavailable| For the basic, standard and general purpose tier, read scale-out feature is unavailable |
-| For the Business Critical tier, read scale-out is auto-provisioned| For the Premium and Business Critical tier, read scale-out is auto-provisioned |
-| Hyperscale tier is unavailable in Azure Managed Instance| Read scale-out feature is available in Hyperscale tier if atleast one secondary replica is created |
+| Azure SQL Managed Instance | Azure SQL Database |
+| --- | --- |
+| Basic, Standard and General Purpose tiers: Read scale-out feature is unavailable | Basic, Standard and General Purpose tiers: Read scale-out feature is unavailable |
+| Business Critical tier: Read scale-out feature is auto-provisioned | Premium and Business Critical tiers: Read scale-out feature is auto-provisioned |
+| Hyperscale tier is unavailable | Hyperscale tier: Read scale-out feature is available if at least one secondary replica is created |
 
 
- 
-
- 
 
 The following image shows read scale-out in a business critical service tier:
 
@@ -119,8 +113,8 @@ Reasons for Sharding include:
 
 The following table identifies key points to remember before choosing Vertical/Horizontal scaling.
 
-| **Requirement**| **Description** |
-| - | - |
+| Requirement | Description |
+| --- | --- |
 | Do you have to manage and scale multiple Azure SQL Databases that have varying and unpredictable resource requirements?| **SQL elastic pools.** Vertical scale up is a good solution for this scenario. Elastic pools solve this problem by ensuring that databases get the performance resources they need when they need it. They provide a simple resource allocation mechanism within a predictable budget. There is no per-database charge for elastic pools. You are billed for each hour a pool exists at the highest eDTU or vCores, regardless of usage or whether the pool was active for less than an hour. |
 | Do you have different sections of the database residing in different parts of the world for compliance concerns?| **Horizontal scaling by Sharding** works best. Sharding enables you to split your data into several databases and scale them independently. The shard map manager is a special database that maintains global mapping information about all shards (databases) in a shard set. The metadata allows an application to connect to the correct database, based upon the value of the sharding key. |
 | Are there dependencies such as commercial BI or data integration tools where multiple databases contribute rows into a single overall result for use in Excel, Power BI, or Tableau?| Use **Elastic database tools** and elastic query feature within it to access data spread across multiple databases. Elastic query is available on standard tier, querying can be done in T-SQL that spans multiple databases in Azure SQL Database. Cross-database queries can be executed to access remote tables, and to connect Microsoft and third-party tools (Excel, Power BI, Tableau, etc.) to query across data tiers. Using this feature, you can scale out queries to large data tiers and visualize the results in business intelligence (BI) reports. |

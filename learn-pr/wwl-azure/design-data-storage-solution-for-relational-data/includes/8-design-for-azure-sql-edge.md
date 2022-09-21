@@ -48,11 +48,11 @@ Securing Azure SQL Edge deployments involves the steps described in the followin
 
 1. Platform and system security. This includes the physical docker host, the operating system on the host, and the networking systems connecting the physical device to applications and clients.
 
-2. Authentication and authorization. SQL authentication refers to the authentication of a user when connecting to Azure SQL Edge using username and password. Authorization refers to the permissions assigned to a user within a database in Azure SQL Edge 
+1. Authentication and authorization. SQL authentication refers to the authentication of a user when connecting to Azure SQL Edge using username and password. Authorization refers to the permissions assigned to a user within a database in Azure SQL Edge 
 
-3. Database object security. "Securables" are the server, database, and objects the database contains. Encryption enhances security. Data protection with Transparent Data Encryption (TDE) enables compliance with many security regulations. Always Encrypted provides separation between users who own the data and those who manage it 
+1. Database object security. "Securables" are the server, database, and objects the database contains. Encryption enhances security. Data protection with Transparent Data Encryption (TDE) enables compliance with many security regulations. Always Encrypted provides separation between users who own the data and those who manage it 
 
-4. Application security. Azure SQL Edge security best practices include writing secure client applications.
+1. Application security. Azure SQL Edge security best practices include writing secure client applications.
 
 ## Scenario - Real time ingestion of data
 
@@ -67,7 +67,7 @@ Azure SQL Edge is best suited to support the above requirement due to its small 
 Azure SQL Edge is ideal for:
 
 | Requirement| SQL Edge capability |
-| - | - |
+| --- | --- |
 | Connectivity limitations| Azure SQL Edge supports solutions that work with, or without, network connectivity. |
 | Slow or intermittent broadband connection| Azure SQL Edge provides a powerful, local database. It negates needing to forward all data to a cloud-based database, which eliminates latency. |
 | Data security and privacy concerns| Azure SQL Edge implements RBAC and ABAC, encryption, and data classification. This helps you secure and control access to your IoT apps' data. |
