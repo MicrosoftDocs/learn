@@ -17,17 +17,17 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: 'How would your solution change if your API was a monolith made of up many unrelated endpoints with different runtime requirements?'
+  - content: 'Why did you implement caching on the health endpoint?'
     choices:
-    - content: 'Choice 1.'
+    - content: 'To reduce cost of the health check.'
+      isCorrect: false
+      explanation: 'While less dependency calls can result in lower cost, thanks to the reduced load, it's not significant enough to be the primary motivation for caching.'
+    - content: 'To increase accuracy of the health check results.'
+      isCorrect: false
+      explanation: 'Caching actually makes health check results less accurate, because it may present old reality. Cache expiration duration must be tuned properly to address this.'
+    - content: 'To prevent overwhelming the downstream components.'
       isCorrect: true
-      explanation: 'Explanation 1.'
-    - content: 'Choice 2.'
-      isCorrect: false
-      explanation: 'Explanation 2.'
-    - content: 'Choice 3.'
-      isCorrect: false
-      explanation: 'Explanation 3.'
+      explanation: 'Various health probes, such as those on Azure Front Door, can call the health API frequently and sometimes even in parallel. Caching prevents excessive load on downstream services from those calls.'
   - content: 'Your API is protected by App Service Authentication, how did your health check endpoint address that?'
     choices:
     - content: 'Choice 1.'

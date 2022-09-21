@@ -21,9 +21,8 @@ Build the dedicated health service as an extension to the already-deployed code.
 
 - Make health check data available in Azure Monitor for future analysis.
 
-
 ## Recommended approach
-To get started on your design, we recommend these configurations settings.
+To get started on your design, we recommend this approach.
 
 ### 1&ndash;Health checks
 
