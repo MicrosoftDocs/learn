@@ -57,7 +57,7 @@ The Calculator creates a match from Azure Services to create a high-level initia
 
 ## Learn about Azure with Microsoft Learn
 
-Many other Azure Learning paths on [Microsoft Learn](/training?azure-portal=true) can help you to build your business case:
+Many other Azure training paths on [Microsoft Learn](/training?azure-portal=true) can help you to build your business case:
 
 * [Control Azure spending and manage bills with Microsoft Cost Management](/training/paths/control-spending-manage-bills?azure-portal=true)
 * [Microsoft Azure Well-Architected Framework—Cost Optimization](/training/modules/azure-well-architected-cost-optimization?azure-portal=true)
