@@ -13,7 +13,6 @@ This task will review conditional access policy settings and create a policy tha
 2.  Under **Manage,** select **Security**.
 3.  Under **Protect,** select **Conditional access**.
 4.  Click **New Policy**.
-    
      -  Name: **AZ500Policy1**
      -  Users and groups &gt; Select users and groups &gt; Users and Groups &gt; Select: **AZ500User1**
      -  Cloud apps or actions &gt; Select apps &gt; Select: **Microsoft Azure Management**
@@ -46,7 +45,6 @@ In this task, we will configure an access review.
 3.  Click **New Access Review**.
 4.  We will create an access review to ensure we validate the AZ500Admin group membership.
 5.  Complete the required information and discuss each setting. Configuration settings are added as you make your selections. For example, if you select a weekly access review, you will be prompted for the duration.
-    
      -  Review name: **AZ500Review**
      -  Start date: **current date**
      -  Frequency: **One-time**
