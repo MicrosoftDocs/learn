@@ -21,7 +21,7 @@ abstract: |
   *   Configure notifications
 prerequisites: |
   None
-iconUrl: /learn/achievements/monitor-and-maintain-azure-active-directory.svg
+iconUrl: /training/achievements/monitor-and-maintain-azure-active-directory.svg
 levels:
 - advanced
 roles:
