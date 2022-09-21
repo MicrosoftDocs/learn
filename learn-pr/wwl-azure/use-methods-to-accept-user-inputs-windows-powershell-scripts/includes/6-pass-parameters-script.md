@@ -2,18 +2,18 @@ You can configure your scripts to accept parameters in the same way that cmdlets
 
 To identify the variables that will store parameter values, you use a **Param()** block. The variable names are defined between the parentheses. The syntax for using a **Param()** block is:
 
-```powershell
+powershell
 Param(
-   [string]$ComputerName
+   [string]$ComputerName ,
    [int]$EventID
 )
-```
+
 
 The variable names defined in the **Param()** block are also the names of the parameters. In the previous example, the script containing this **Param()** block has the *-ComputerName* and *-EventID* parameters that can be used. When you enter the parameter names for the script, you can use tab completion just as you can for cmdlet parameters. The syntax for running a script with parameters is:
 
-```powershell
+powershell
 .\GetEvent.ps1 -ComputerName LON-DC1 -EventID 5772
-```
+
 
 > [!NOTE] 
 > Parameters are positional by default. If the parameter names aren't specified, then the parameter values are passed to the parameters in order. For example, the first value after the script name is placed in the first parameter variable.
@@ -35,11 +35,11 @@ You can define default values for parameters in the **Param()** block. The defau
 
 The following example depicts how to set a default value:
 
-```powershell
+powershell
 Param(
    [string]$ComputerName = "LON-DC1"
 )
-```
+
 
 ## Requesting user input
 
@@ -47,11 +47,11 @@ You can also prompt for input if the user doesn't provide a parameter value. Thi
 
 The following example depicts how to prompt users for input:
 
-```powershell
+powershell
 Param(
    [int]$EventID = Read-Host "Enter event ID"
 )
-```
+
 
 > [!NOTE] 
 > You can configure additional advanced options for parameters in a script, such as making a parameter mandatory, by using the **Parameter()** attribute in the **Param()** block.
