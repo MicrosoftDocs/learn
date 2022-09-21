@@ -47,4 +47,4 @@ quiz:
       explanation: "When a user session expires and the refresh token is invalid, they're prompted to sign in again"
     - content: "The application won't prompt users to reauthenticate every time they need to access a protected resource."
       isCorrect: true
-      explanation: ""
+      explanation: "The silent token acquisition flow looks for a valid access token from the cache, or if needed, finds a valid refresh token and redeems it for a new access token."

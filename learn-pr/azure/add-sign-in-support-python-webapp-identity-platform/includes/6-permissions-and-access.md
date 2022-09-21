@@ -6,6 +6,8 @@ One way that applications in Microsoft identity platform are granted permissions
 
 :::image type="content" source="../media/6-consent-to-permissions-request.png" border="false" alt-text=" Consent prompt to allow app's request for permissions":::
 
+When an application needs to get a new access token from the identity platform, it does not prompt the user for consent, if they had already consented to the specified permissions. This is because consent grants can outlast a token as they remain valid until a user or admin revokes them  manually. 
+
 ### Acquire token silently
 
 After a user signs in, your app shouldn't ask them to reauthenticate every time they need to access a protected resource. To prevent such re-authentication requests, you acquire an access token without user interaction by calling `acquire_token_silent`. This will first look for a valid access token from the cache, or if needed, find a valid refresh token and use it to redeem a new access token. 
@@ -16,8 +18,8 @@ There are some situations, however, where you might need to force users to inter
 
 - Users need to re-enter their credentials because the session has expired.
 - The refresh token has expired.
-- Your application is requesting access to a resource and you need the user's consent.
+- The application is requesting access to a resource that requires specific permissions that the user had not already consented to.
 - Two-factor authentication is required.
 - The refresh token has been revoked by the server because of a change in credentials, user action, or admin action.
 
-Calling `acquireTokenPopup` opens a pop-up window (or `acquireTokenRedirect`) redirects users to the Microsoft identity platform. In that window, users need to interact with the identity platform by confirming their credentials, consenting to the required permissions, or completing the two-factor authentication. After that, the pop-up window closes and the app receives the response. The response contains the requested tokens. The app can then use the tokens to call the Microsoft Graph API. The tokens are cached in the browser and are available for the next request. 
+Calling `acquireTokenPopup` opens a pop-up window (or `acquireTokenRedirect`) redirects users to the Microsoft identity platform. In that window, users need to interact with the identity platform by confirming their credentials, consenting to the required permissions, or completing the two-factor authentication. After that, the pop-up window closes and the app receives the response. The response contains the requested tokens. The app can then use the tokens to call the Microsoft Graph API. The tokens are cached in the browser and are available for the next request.
