@@ -37,3 +37,11 @@ quiz:
     - content: No
       isCorrect: true
       explanation: "Correct. Azure Database for PostgreSQL is a cloud-based solution, and is not suitable for hosting inside a mobile or desktop app."
+  - content: 'Does Azure Database for PostgreSQL offer distributed database capabilities?'
+    choices:
+    - content: No
+      isCorrect: true
+      explanation: "Correct. Azure Cosmos Database for PostgreSQL offers a distributed database experience, not Azure Database for PostgreSQL."
+    - content: Yes
+      isCorrect: false
+      explanation: "Incorrect. Azure Cosmos Database for PostgreSQL offers a distributed database experience."

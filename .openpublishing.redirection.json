@@ -8,7 +8,7 @@
     {
       "source_path": "learn-pr/startups/build-team/1-introduction.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-team/1-introduction",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/startups/build-team/2-ideal-startup-team.md",
