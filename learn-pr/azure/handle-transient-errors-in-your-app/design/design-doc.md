@@ -165,8 +165,8 @@ Detection should focus on simple strategies for recognizing exceptions/errors su
 
 Resources:
 
-https://docs.microsoft.com/azure/architecture/best-practices/transient-faults,  
-https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling 
+https://learn.microsoft.com/azure/architecture/best-practices/transient-faults,  
+https://learn.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling 
 
 Libraries:
 
