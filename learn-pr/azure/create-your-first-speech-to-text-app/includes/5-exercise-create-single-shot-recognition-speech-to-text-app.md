@@ -148,7 +148,7 @@ You'll use this WAVE file for the application in this exercise, and the applicat
 
     Make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the previous exercise.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 
 ## Run your application
 
