@@ -28,7 +28,7 @@ roles:
   - developer
 products:
 - azure
-- azure-cosmos-db-for-postgresql
+- azure-cosmos-db
 subjects:
   - cloud-computing
 units:

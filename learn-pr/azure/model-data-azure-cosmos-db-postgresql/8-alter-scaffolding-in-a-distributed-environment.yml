@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-alter-scaffolding-in-a-distributed-environment.md)]
+  [!include[](includes/8-alter-scaffolding-in-a-distributed-environment.md)]
