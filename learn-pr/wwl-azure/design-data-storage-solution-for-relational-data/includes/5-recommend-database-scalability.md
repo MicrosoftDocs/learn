@@ -43,7 +43,13 @@ Horizontal scaling is managed by using the SQL Database [Elastic Database client
 
 - **Sharding**: Partition data across a set of SQL databases that are identically structured. A set consists of a primary read-write replica and secondary read-only replicas. You can split large databases into smaller components to improve performance and make them easier to manage.
 
-- **Read scale-out**: Load-balance read-only workloads for a set of SQL databases. Offload read-only workloads by using the compute capacity of a read-only replica, instead of running workloads on the read-write replica. Isolate some read-only workloads from the read-write workloads and not affect performance.
+- **Read scale-out**: Load-balance read-only workloads for a set of SQL databases. Offload read-only workloads by using the compute capacity of a read-only replica, instead of running workloads on the read-write replica. Isolate some read-only workloads from the read-write workloads and not affect performance. The following table shows support for read scale-out provisioning in Azure SQL Database and Azure SQL Managed Instance:
+
+   | Azure SQL Managed Instance | Azure SQL Database |
+   | --- | --- |
+   | Basic, Standard, and General Purpose tiers: Read scale-out is unavailable | Basic, Standard, and General Purpose tiers: Read scale-out is unavailable  |
+   | Business Critical tier: Read scale-out is auto-provisioned | Business Critical and Premium tiers: Read scale-out is auto-provisioned | 
+   | n/a | Hyperscale tier: Read scale-out is available if at least one secondary replica is created |
 
 #### Business scenario: Sharding
 
@@ -77,15 +83,6 @@ You can disable and re-enable read scale-out on single databases and elastic poo
 
 > [!NOTE]
 > Data changes made on the primary replica propagate to read-only replicas asynchronously. Within a session connected to a read-only replica, reads are always transactionally consistent. However, because data propagation latency is variable, different replicas can return data at slightly different points in time relative to the primary replica and each other.
-
-The following table shows support for read scale-out provisioning in Azure SQL Database and Azure SQL Managed Instance:
-
-| Tier | Azure SQL Managed Instance | Azure SQL Database |
-| --- | --- | --- |
-| **Basic**, **Standard**, **General Purpose** | Read scale-out unavailable | Read scale-out unavailable |
-| **Business Critical** | Read scale-out auto-provisioned | Read scale-out auto-provisioned | 
-| **Premium** | n/a | Read scale-out auto-provisioned |
-| **Hyperscale** | n/a | Read scale-out is available if at least one secondary replica is created |
 
 ### Things to consider when choosing a scaling solution
 
