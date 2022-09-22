@@ -25,7 +25,7 @@ Create a key vault and allow deploy time access. To do so:
 
     Copy the value somewhere convenient for the next step.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 

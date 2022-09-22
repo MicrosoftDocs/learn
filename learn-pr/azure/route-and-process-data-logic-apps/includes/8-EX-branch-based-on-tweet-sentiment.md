@@ -29,7 +29,7 @@ When our workflow trigger receives a positive tweet, we want to save the tweet t
 
 ## Add a **Condition** control action
 
-This first step adds the **Condition** control action to the logic app workflow in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). In programming terms, we're adding an *if statement* that tests a condition.
+This first step adds the **Condition** control action to the logic app workflow in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true). In programming terms, we're adding an *if statement* that tests a condition.
 
 1. On your logic app resource menu, under **Development Tools**, return to the workflow designer by selecting **Logic app designer**.
 

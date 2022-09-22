@@ -12,7 +12,7 @@ During the process, you'll:
 
 ## Add a lab VM
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. Enter **DevTest Labs** in the search text box, and then select **DevTest Labs** from the list of services.
 

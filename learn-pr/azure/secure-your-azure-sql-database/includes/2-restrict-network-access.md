@@ -93,7 +93,7 @@ Let's grant access so we can connect.
 
 Because our VM has outbound internet access, we can use the **Allow access to Azure services** rule to allow access from our VM.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the **Search resources, services, and docs** box at the top, search for your database server name, `serverNNNN`. Select the SQL server.
 

@@ -4,7 +4,7 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
 ## Create a logic app workflow
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Integration**, then find and select **Logic App**.
 
@@ -52,7 +52,7 @@ We now have a basic logic app workflow. Let's add a custom connector so that we 
 
 ## Create a new Azure Logic Apps custom connector in the Azure portal
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the search box, find and select **Logic Apps Custom Connector**.
 
@@ -79,7 +79,7 @@ We now have a basic logic app workflow. Let's add a custom connector so that we 
 
 Now use the OpenAPI file that you previously saved to define the custom connector.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, select **All resources**, and then select **PrintFramerConnector**.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) or from the **Home** page, select **All resources**, and then select **PrintFramerConnector**.
 
 1. On the **Overview** page, select **Edit**.
 
@@ -111,7 +111,7 @@ The OpenAPI file tells the custom connector about the operations that are availa
 
 Now, you can use the custom connector in your logic app workflow.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) or from the **Home** page, under **Azure resources**, select **All resources**, and then select the logic app resource that you created in unit 3.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) or from the **Home** page, under **Azure resources**, select **All resources**, and then select the logic app resource that you created in unit 3.
 
 1. In the logic app resource menu, select **Overview**. On the **Overview** pane toolbar, select **Edit**.
 

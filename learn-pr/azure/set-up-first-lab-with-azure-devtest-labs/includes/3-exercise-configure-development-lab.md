@@ -11,7 +11,7 @@ During the process, you'll:
 
 ## Create a DevTest Labs resource
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. Enter **DevTest Labs** in the search text box at the top of the page, and then select **DevTest Labs** from the list of services.
 

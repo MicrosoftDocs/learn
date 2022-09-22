@@ -42,7 +42,7 @@ An example of a good place to start browsing is [where we use the service via RE
                 request.Method = HttpMethod.Post;
 
                 // For a complete list of options, see API reference.
-                // https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate
+                // https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate
                 request.RequestUri = new Uri(_options.Endpoint + Route + $"&to={languages}");
                 request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
                 request.Headers.Add("Ocp-Apim-Subscription-Key", _options.ApiKey);
@@ -64,7 +64,7 @@ Notice that we specify the languages on the end of the `request.RequestUri` and 
 
 ## Optional: Review the resource in the CLI or Azure portal
 
-You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
+You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
 
 Or if you prefer a command-line experience, you can use the Cloud Shell again to browse. You could start by listing the Cognitive Services resources:
 

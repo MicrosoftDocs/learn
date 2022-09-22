@@ -56,7 +56,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
 The next step in this exercise is to create an API gateway in the Azure portal. In the next section, you'll use this gateway to publish your API:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -108,7 +108,7 @@ Now, import the Census API into the API Management gateway:
 
 Let's see what data is returned in from the API by default:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then select your API gateway.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 
 1. In the left menu pane, Under **APIs**, select **APIs**, and in the middle pane, select **Census Data**.
 

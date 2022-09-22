@@ -2,7 +2,7 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
 
 ## Create a Data Science Virtual Machine using the Azure portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 
 1. Select the **Create a resource** option in the upper-left corner of the portal page. The Azure Marketplace pane opens.
 

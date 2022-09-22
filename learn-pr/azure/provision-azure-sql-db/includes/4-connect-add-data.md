@@ -138,7 +138,7 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
 
     If this happens, you will need to add another firewall rule for your client. To do so, perform the following steps:
 
-    - Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+    - Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
     - From the Azure **Home page**, under **Azure services**, select **All resources**. The **All resources** pane appears.
 

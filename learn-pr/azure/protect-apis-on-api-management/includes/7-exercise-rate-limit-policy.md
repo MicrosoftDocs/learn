@@ -8,7 +8,7 @@ In this unit, you will learn how to set limits on the frequency your census API 
 
 To apply a **throttling** policy within API Management, follow these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 

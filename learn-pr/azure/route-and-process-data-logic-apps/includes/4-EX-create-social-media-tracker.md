@@ -8,7 +8,7 @@ The first step is a Twitter trigger named "When a new tweet is posted. This trig
 
 First, we need to create the logic app resource in Azure. For this task, we need to find the **Logic App** resource type in the Azure portal.
 
-1. With the same account that you used to activate the sandbox, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. With the same account that you used to activate the sandbox, sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
    [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 

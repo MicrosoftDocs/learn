@@ -2,7 +2,7 @@ A Remote Rendering service resource must be created in Azure to get access to th
 
 ## Create a Remote Rendering service resource
 
-1. After the sandbox at the top of this page has completed activation, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. After the sandbox at the top of this page has completed activation, sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 1. The portal takes you to the **Marketplace** page. In the **Search the Marketplace** box, type **remote rendering** and press the Enter key.
 1. Select **Remote Rendering** from the results.

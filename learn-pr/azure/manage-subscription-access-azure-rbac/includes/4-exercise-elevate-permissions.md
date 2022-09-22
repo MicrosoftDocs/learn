@@ -6,7 +6,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 ## Elevate your access
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>) as Azure Active Directory (Azure AD) Global Administrator.
+1. Sign in to the [Azure portal](<https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true>) as Azure Active Directory (Azure AD) Global Administrator.
 
 1. Select **Azure Active Directory** > **Properties**.
 

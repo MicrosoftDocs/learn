@@ -63,7 +63,7 @@ Here you'll set up your database, which includes creating your logical server. Y
 
 Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. From **Home**, or in **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
 

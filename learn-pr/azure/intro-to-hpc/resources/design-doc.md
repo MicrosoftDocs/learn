@@ -134,6 +134,6 @@ Identify the subtasks of *Introduction to high performance computing (HPC) on Az
 
 Big compute landing page - https://azure.microsoft.com/solutions/big-compute/
 
-Batch documentation - https://docs.microsoft.com/azure/batch/ 
+Batch documentation - https://learn.microsoft.com/azure/batch/ 
 
 This module will likely not have hands on interactivity outside of knowledge checks, due to the resource requirements and unique use cases for HPC services.

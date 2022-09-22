@@ -6,7 +6,7 @@ Here, you'll create and configure an application registration. You must activate
 
 To start, you'll use the Azure portal to create a new Azure AD tenant.
 
-1. Log into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Log into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. From the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** page appears.
 

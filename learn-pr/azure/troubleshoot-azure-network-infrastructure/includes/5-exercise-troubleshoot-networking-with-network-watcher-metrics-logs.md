@@ -137,7 +137,7 @@ The TCP connection test fails after a few seconds.
 
 Now, let's use log analytics to view the NSG flow logs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) resource menu, select **All services**, select **Networking**, and then select **Network Watcher**. The **Network Watcher** pane appears.
+1. On the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) resource menu, select **All services**, select **Networking**, and then select **Network Watcher**. The **Network Watcher** pane appears.
 
 1. In the resource menu, under **Logs**, select **Traffic Analytics**. The **Network Watcher | Traffic Analytics** pane appears.
 

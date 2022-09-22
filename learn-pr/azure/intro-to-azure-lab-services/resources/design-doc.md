@@ -103,6 +103,6 @@ Identify the subtasks of *Introduction to Azure Lab Services*
 
 Useful links:
 
-- [An introduction to Azure Lab Services](https://docs.microsoft.com/azure/lab-services/lab-services-overview)
-- [Classroom Labs concepts](https://docs.microsoft.com/azure/lab-services/classroom-labs/classroom-labs-concepts)
+- [An introduction to Azure Lab Services](https://learn.microsoft.com/azure/lab-services/lab-services-overview)
+- [Classroom Labs concepts](https://learn.microsoft.com/azure/lab-services/classroom-labs/classroom-labs-concepts)
 - [Class types](/azure/lab-services/class-types)
