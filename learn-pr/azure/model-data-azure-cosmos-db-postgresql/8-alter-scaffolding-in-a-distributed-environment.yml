@@ -7,8 +7,8 @@ metadata:
   description: |
     As an Azure Cosmos DB for PostgreSQL cluster is created, there may be design decisions determined after the fact. Data definition language (DDL) and helper functions are used to help alter and update database structure post-creation.
   ms.date: 09/22/2022
-  author: sidandrews
-  ms.author: seesharprun
+  author: seesharprun
+  ms.author: sidandrews
   ms.reviewer: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

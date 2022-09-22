@@ -7,8 +7,8 @@ metadata:
   description: |
     Test your understanding of creating a database and altering its structure in Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
-  author: sidandrews
-  ms.author: seesharprun
+  author: seesharprun
+  ms.author: sidandrews
   ms.reviewer: jonels
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
