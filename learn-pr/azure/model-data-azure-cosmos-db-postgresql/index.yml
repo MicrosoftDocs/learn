@@ -15,12 +15,12 @@ title: Model data for Azure Cosmos DB for PostgreSQL
 summary: "Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. To effectively model data for distributed tables in Azure Cosmos DB for PostgreSQL, data usage and distribution must be taken into consideration."
 abstract: |
   In this module, you will:
-    - "Identify key considerations for modeling data for Azure Cosmos DB for PostgreSQL"
-    - "Classify tables in Azure Cosmos DB for PostgreSQL"
-    - "Create tables within an Azure Cosmos DB for PostgreSQL cluster"
-    - "Alter tables within an Azure Cosmos DB for PostgreSQL cluster"
+    - Identify key considerations for modeling data for Azure Cosmos DB for PostgreSQL
+    - Classify tables in Azure Cosmos DB for PostgreSQL
+    - Create tables within an Azure Cosmos DB for PostgreSQL cluster
+    - Alter tables within an Azure Cosmos DB for PostgreSQL cluster
 prerequisites: |
-  - "Basic familiarity with relational databases"
+  - Basic familiarity with relational databases
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
