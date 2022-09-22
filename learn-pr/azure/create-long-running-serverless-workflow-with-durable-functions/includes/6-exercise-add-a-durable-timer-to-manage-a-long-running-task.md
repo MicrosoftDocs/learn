@@ -6,7 +6,7 @@ In this exercise, you'll add a timer to control timeout during the execution of 
 
 Before changing our workflow, we'll add the **moment** npm package to our function app through the console.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**, and then select the function app that you created in the previous exercise. Your **Function App** pane appears.
 

@@ -6,7 +6,7 @@ You'll now create a B2C tenant, register an application, and put together a sign
 
 First, you create an Azure AD B2C tenant.
 
-1. [Sign in](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to the Azure portal as a global administrator. If you're the person who signed up for the Azure account, you'll be the global administrator.
+1. [Sign in](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) to the Azure portal as a global administrator. If you're the person who signed up for the Azure account, you'll be the global administrator.
 
 1. Create a new resource by selecting **Create a resource** on the left of the Azure portal.
 

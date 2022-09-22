@@ -100,7 +100,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows-cloud"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. On the Azure portal menu or from the **Home** page, select **Resource groups**, and then select the **<rgn>[Sandbox resource group name]</rgn>** resource group.
 

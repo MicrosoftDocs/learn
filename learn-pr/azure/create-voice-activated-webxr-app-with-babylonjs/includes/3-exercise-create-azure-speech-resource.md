@@ -6,7 +6,7 @@ Here, you will create an Azure Speech Resource in the Azure portal and retrieve 
 
 ## Create a Speech service resource
 
-Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
+Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
 1. The portal takes you to the **Marketplace** page. In the **Search the Marketplace** box, type **speech** and press the Enter key.

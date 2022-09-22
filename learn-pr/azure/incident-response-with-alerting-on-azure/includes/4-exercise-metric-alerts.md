@@ -38,7 +38,7 @@ This VM will run a specific configuration that stresses the CPU, and generates t
 
 You can use either the Azure portal or the CLI to create a metric alert. In this exercise we'll cover both, starting with the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
 1. On the Azure portal menu, select **More services**, then search for and select **Monitor**. The **Monitor | Overview** pane appears.
 
@@ -131,7 +131,7 @@ In this exercise, you set up an Ubuntu VM and configured it to stress test the C
 > [!NOTE]
 > It might take 10 minutes before you see the alerts show up in your portal.
 
-1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Return to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. On the Azure portal menu, select **Monitor**, and then select **Alerts** in the left menu pane.
 

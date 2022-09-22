@@ -363,7 +363,7 @@ For other unknown errors, quit the app.
 
 If the firewall is still switched on for the Azure Cosmos DB, the chat app can't connect to the database. Otherwise, if the chat app is still working then follow these steps to switch on the firewall.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, select **Azure Cosmos DB**.
 
@@ -460,4 +460,3 @@ Based on the `number-of-retries` setting in the **appsettings.json** file of our
     ```
 
 ::: zone-end
-

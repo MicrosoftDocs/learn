@@ -129,7 +129,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     The script will take 5-10 minutes to complete.
 
     > [!TIP]
-    > If you have any issues or want to confirm the resources were deployed, you can review in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+    > If you have any issues or want to confirm the resources were deployed, you can review in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true).
 
 1. When the script completes, the last output is the public IP address of your Azure Linux VM. Take note of this IP address.
 
@@ -156,7 +156,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. In your notes tool of choice document the connection string for your Azure SQL Database. It will be something like `Server=tcp:<your-server-name>.database.windows.net,1433;Database=iot-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
-1. Navigate in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) to your resource group for the exercises.
+1. Navigate in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true) to your resource group for the exercises.
 
 1. Select the **IoT Hub** service.
 
@@ -170,13 +170,13 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 1. Copy the *Event Hub-compatible endpoint* in your notes tool of choice. Make sure you label the two connection strings as one is used for the simulator and the other is used for Azure Functions.
 
-1. Navigate back to your resource group in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) and select the storage account that starts with **iotstorageaccount** followed by a series of numbers.
+1. Navigate back to your resource group in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true) and select the storage account that starts with **iotstorageaccount** followed by a series of numbers.
 
 1. Under *Security + networking*, select **Access keys**.
 
 1. Select **Show keys** and copy the *key1 Connection string* in your notes tool of choice.
 
-1. Navigate back to your resource group in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. Navigate back to your resource group in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true).
 
 1. Select the **Function App** service.
 
@@ -195,7 +195,7 @@ You have now deployed and configured the appropriate schema for the scenario.
 
 ## Deploy the Azure Function code with GitHub Actions
 
-1. In a separate browser window, navigate to the *Overview* pane of your Azure Functions app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. In a separate browser window, navigate to the *Overview* pane of your Azure Functions app in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true).
 
 1. Select **Get publish profile** to download the Azure Function publish profile. The publish profile acts as a connection string to the function.
 
@@ -276,7 +276,7 @@ You have now deployed and configured the appropriate schema for the scenario.
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 90, \"min\": 80}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
     ```
 
-1. To confirm everything is connected properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. To confirm everything is connected properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true).
 
 1. On the left-hand menu, select **Query editor (preview)**.
 
@@ -288,7 +288,7 @@ You have now deployed and configured the appropriate schema for the scenario.
     SELECT TOP(1000) * FROM dbo.events;
     ```
 
-1. To check the Azure Function App is processing events, in a different window navigate to your Azure Function App in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. To check the Azure Function App is processing events, in a different window navigate to your Azure Function App in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true).
 
 1. On the left-hand menu, under *Functions* select **Functions**.
 

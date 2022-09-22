@@ -15,7 +15,7 @@ The Consumption tier in API Management is intended for organizations that prefer
 
 Let's create a cache right away. This will allow the setup to run behind the scenes while we work on other steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Use the same ID that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true). Use the same ID that you used to activate the sandbox.
 
 1. On the Azure portal **Resource** menu, or on the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -137,7 +137,7 @@ You can configure the API Management instance to use your Redis cache as an exte
 
 We must apply a policy to enable users to access the API. However, before you can apply a policy, you must add the API to the API Management instance.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or on the **Home** page, select **All resources**. Then select the API Management service that you created earlier.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu, or on the **Home** page, select **All resources**. Then select the API Management service that you created earlier.
 
 1. In the **API Management service** menu, select **APIs**. The **APIs** pane for your API Management service appears. It offers numerous templates for you to choose from.
 

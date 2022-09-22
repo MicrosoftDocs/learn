@@ -148,4 +148,4 @@ Identify the subtasks of *Secure your identities with Azure Active Directory*
 
 This should be an overview module of what Azure AD is, differentiating it from traditional AD, and what the different features (B2C, B2B, etc.) are. If we can add in a hands-on exercise that adds value, then great, but this may be more topical in nature. Need to have a section on licensing, and would like to ensure we clarify terminology, and the architecture of AAD tenants/subscriptions/etc.
 
-https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis
+https://learn.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis

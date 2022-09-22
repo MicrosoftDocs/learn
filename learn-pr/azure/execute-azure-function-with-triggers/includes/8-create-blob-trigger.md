@@ -4,7 +4,7 @@ In this unit, we're going to create an Azure function that displays the name and
 
 Let's continue using your existing Azure Functions application and add a blob trigger.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **All resources**. The **All resources** pane appears.
 

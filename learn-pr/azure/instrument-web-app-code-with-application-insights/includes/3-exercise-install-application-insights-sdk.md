@@ -53,7 +53,7 @@ We've created our app and initialized the SDK in our code. Now we need a deploym
 
 We'll host our app in Azure App Service. Instead of manually creating an Application Insights resource and configuring its instrumentation key with an application setting, we'll enable Application Insights runtime instrumentation on the app. This will create the Application Insights resource for us and automatically add the `APPINSIGHTS_INSTRUMENTATIONKEY` application setting with the correct value.
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Go to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 

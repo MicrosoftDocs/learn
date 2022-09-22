@@ -40,7 +40,7 @@ After the script completes, copy the following fields from the script output for
 
 Now, you need to verify that the resources are set up correctly.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups** on the Left navigation page. The **Resource groups** pane appears.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select **Resource groups** on the Left navigation page. The **Resource groups** pane appears.
 
 2. Select the resource group: **learn-######-####-###** on the **Resource groups** pane appears.
 

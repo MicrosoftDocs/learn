@@ -6,7 +6,7 @@ Let’s start by creating an Azure Function App in the portal.
 
 ::: zone pivot="csharp"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
 
@@ -77,7 +77,7 @@ You've created an Azure function app with logic to print a message to the log wi
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
 

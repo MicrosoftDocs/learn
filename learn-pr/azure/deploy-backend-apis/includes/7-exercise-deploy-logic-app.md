@@ -39,7 +39,7 @@ The next step is to configure the Logic App to connect to your email address and
 1. Once your Logic App is deployed, navigate to your Resource Group in the Azure portal and select the **Logic App** you deployed.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 1. Under *Development Tools*, select **Logic app designer**. Review the flow.
 

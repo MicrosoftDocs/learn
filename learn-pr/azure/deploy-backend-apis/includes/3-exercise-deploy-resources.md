@@ -142,7 +142,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     If you have any issues or want to confirm the resources were deployed, you can review them in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
@@ -284,4 +284,4 @@ Now that your database and GitHub repository are configured, it's time to deploy
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)

@@ -18,7 +18,7 @@ In the previous exercise, you configured your `iot-db` using a script. Let's bre
 
 For this exercise, you'll use the Query Editor in the Azure portal to query the database from a browser.
 
-1. To confirm everything is configured properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+1. To confirm everything is configured properly, navigate to your Azure SQL Database called **iot-db** in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true).
 
 1. On the left-hand menu, select **Query editor (preview)**.
 
