@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-visual-studio-code.summary
+title: Summary
+metadata:
+  title: summary
+  description: "Characterize the types of programming scenarios for which Visual Studio Code is a good IDE choice. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
+  ms.date: 9/19/2022
+  author: kjo-msft
+  ms.author: karinjohnson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vs-code # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

@@ -1,0 +1,67 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-visual-studio-code.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Characterize the types of programming scenarios for which Visual Studio Code is a good IDE choice. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
+  ms.date: 9/19/2022
+  author: kjo-msft
+  ms.author: karinjohnson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-vs-code # Edit as appropriate for your portfolio area
+durationInMinutes: 2
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in a Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "Suppose you work for a company that manages a code repository on GitHub. Programmers are required to commit code regularly to this repository. Which feature of Visual Studio Code helps you meet this requirement?"
+    choices:
+    - content: "This feature isn't supported by Visual Studio Code."
+      isCorrect: false
+      explanation: "Visual Studio Code has built in support for Git."
+    - content: "You can install a code-formatting extension for Visual Studio Code."
+      isCorrect: false
+      explanation: "A code-formatting extension does not provide integration with source control management systems."
+    - content: "You can use the built-in source control feature of Visual Studio Code."
+      isCorrect: true
+      explanation: "Visual Studio Code has built in support for Git."
+    
+  - content: "Suppose you're developing an Android app. Should you use Visual Studio Code?"
+    choices:
+    - content: "Yes. Visual Studio Code supports Android development out-of-the-box."
+      isCorrect: false
+      explanation: "You would need to install extensions to provide Android support in Visual Studio Code."
+    - content: "Maybe. You can install extensions to support Android development in Visual Studio Code. However, a better choice might be the official Android development tools."
+      isCorrect: true
+      explanation: "In some cases, you may prefer to use the official IDE for a particular language or platform such as Android instead of Visual Studio Code."
+  - content: "Suppose your team is planning to develop applications in Rust. How would you determine if Visual Studio Code can support this need?"
+    choices:
+    - content: "You search the Extensions Marketplace to determine if there are Rust extensions."
+      isCorrect: true
+      explanation: "You can search the Extensions Marketplace for extensions that support hundreds of languages, including Rust."
+    - content: "You determine Visual Studio Code won't support your team's need because Visual Studio Code is a lightweight editor that supports only a few languages."
+      isCorrect: false
+      explanation: "You can search the Extensions Marketplace for extensions that support hundreds of languages, including Rust. More extensions are being developed and added all the time."
+  
