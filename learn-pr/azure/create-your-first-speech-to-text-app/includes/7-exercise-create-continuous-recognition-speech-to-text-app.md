@@ -147,7 +147,7 @@ In this exercise, you'll create an application that uses continuous recognition 
 
     As you did with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 
 ## Run your application
 
@@ -207,7 +207,7 @@ In the previous section, you'll notice that the results for the second line of t
 
 Azure Cognitive Services allow you to help improve your recognition results by specifying a list of phrases that might be unfamiliar to the speech recognition engine.
 
-To see this in action, use the following steps.
+To see an example of this type of improvement in action, use the following steps.
 
 1. In the Cloud Shell on the right, open the *Program.cs* file in Visual Studio Code.
 
@@ -232,9 +232,9 @@ To see this in action, use the following steps.
 
     These lines will enable the speech recognition engine to detect the old English phrase from Shakespeare's play.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 
-1. Re-run your application by using the following command.
+1. Rerun your application by using the following command.
 
     ```dotnetcli
     dotnet run
