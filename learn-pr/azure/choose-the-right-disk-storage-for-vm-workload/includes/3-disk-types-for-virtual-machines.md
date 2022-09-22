@@ -52,9 +52,9 @@ Premium SSD v2 is suited for a broad range of workloads such as SQL server, Orac
 
 Premium SSD managed disks are the next tier down from Premium SSD v2 managed disks in terms of performance, but they still provide high throughput and IOPS with low latency. Premium SSD don't have the current limitations of either Ultra Disks or Premium SSD v2. For example, they're available in all regions and can be used with virtual machines that are outside of availability zones.
 
-You can't adjust performance without detaching these disks from their virtual machine. Also, you can only use premium SSDs with virtual machine sizes that are compatible with premium storage.
+You can't adjust performance without detaching these disks from their virtual machine. Also, you can only use premium SSD managed disks with virtual machine sizes that are compatible with premium storage.
 
-This table has examples that illustrate the high performance of premium SSDs:
+This table has examples that illustrate the high performance of premium SSD managed disks:
 
 | Disk size name | Disk size | IOPS | Throughput (MBps) |
 | --- | --- | --- | --- |
@@ -66,9 +66,9 @@ This table has examples that illustrate the high performance of premium SSDs:
 
 With Premium SSD, these performance figures are guaranteed. There's no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
 
-If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSD. Also use Premium SSDs when you want the highest performance but can't use Ultra disks or Premium SSD v2 because of their current limitations. Premium SSDs are a good fit for mission-critical workloads in medium and large organizations.
+If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSD. Also use Premium SSD managed disks when you want the highest performance but can't use Ultra disks or Premium SSD v2 because of their current limitations. Premium SSD managed disks are a good fit for mission-critical workloads in medium and large organizations.
 
-You can migrate a disk to a Premium SSD at any time, if you've found that its performance isn't good enough.
+You can migrate a disk to a Premium SSD managed disk at any time, if you've found that its performance isn't good enough.
 
 ![Creating a premium SSD.](../media/3-create-premium-ssd.png)
 
