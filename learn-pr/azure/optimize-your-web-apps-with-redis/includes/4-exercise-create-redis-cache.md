@@ -2,7 +2,7 @@ Let's create an Azure Cache for Redis instance to store and return commonly used
 
 ## Create a Redis cache in Azure
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu, select **Create a resource**.
 

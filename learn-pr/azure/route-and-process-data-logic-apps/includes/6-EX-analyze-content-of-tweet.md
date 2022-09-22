@@ -36,7 +36,7 @@ The Azure Cognitive Services for Language API provides natural language processi
 
 Now, we'll add the **Sentiment** action to our workflow using the Azure portal.
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), return to the workflow designer. On the logic app resource menu, under **Development Tools**, select **Logic app designer**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), return to the workflow designer. On the logic app resource menu, under **Development Tools**, select **Logic app designer**.
 
 1. Under the Twitter trigger, select **New step**.
 

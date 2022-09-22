@@ -8,7 +8,7 @@ Here, you'll find the subscription key for your API. You'll then test access to 
 
 Partners are given their key as part of an onboarding process. In this exercise, you'll use the administrator key. Once you've got a key, you follow the same process for using the key in API calls.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your API gateway.
 

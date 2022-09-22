@@ -70,7 +70,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL for the web service.
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), verify that you are signed in to **Learn Module AAD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), verify that you are signed in to **Learn Module AAD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
 
 1. From the **Home** page or the resource menu, select **Azure Active Directory**. The **Learn Module AAD Tenant** Azure Active Directory Overview pane appears.
 

@@ -4,7 +4,7 @@ In this unit, you'll use an Azure Resource Manager template to decrypt your Wind
 
 You're going to use a template Microsoft has published on GitHub that is specifically designed to decrypt a running Windows VM.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) with the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 

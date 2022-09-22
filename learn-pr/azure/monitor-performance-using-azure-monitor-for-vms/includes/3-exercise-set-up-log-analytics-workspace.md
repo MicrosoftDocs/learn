@@ -8,7 +8,7 @@ In this unit, you'll:
 
 ## Create and configure a Log Analytics workspace
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), search for and select **Log Analytics workspaces**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Log Analytics workspaces**.
 
 1. Select **Create**.
 
@@ -63,7 +63,7 @@ In this unit, you'll:
 
 ## Onboard virtual machines to Azure Monitor VM Insights
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), search for and select **Virtual machines**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Virtual machines**.
 
 1. Select **SampleVM1**.
 

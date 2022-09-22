@@ -12,7 +12,7 @@ By default, TDE is enabled for all newly deployed Azure SQL databases. It's impo
 
 Let's take a look in the portal at where TDE is configured on our _marketplaceDb_ database.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the search bar at the top of the portal, search for **marketplaceDb**, then select the database in the portal.
 

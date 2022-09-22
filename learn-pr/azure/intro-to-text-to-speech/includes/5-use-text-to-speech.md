@@ -58,7 +58,7 @@ Notice that we're using the optional SSML, and we return a URL for the audio fil
 
 ## Optional: Review the resource in the CLI or Azure portal
 
-You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
+You can look at the resource created in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true#blade/HubsExtension/BrowseAll).
 
 Or if you prefer a command-line experience, you can use the Cloud Shell again to browse. You could start by listing the Cognitive Services resources:
 

@@ -31,7 +31,7 @@ In Database-v1, data is stored in individual containers. In that database, run q
 
 In Database-v1, run a query to get the customer entity and review the request charge.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 1. On the Azure portal menu, or from the **Home** page, select **Azure Cosmos DB**.
 1. Select the Azure Cosmos DB account with the name that starts with **cosmicworks**.
 1. Select **Data Explorer** on the left side.

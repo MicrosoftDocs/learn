@@ -29,7 +29,7 @@ The app is built with ASP.NET Core MVC. Follow the instructions below to execute
 If you'd like to follow along with the demos shown during the session, please switch to Azure portal. You can use our Learn Live Sandbox environment if you have activated it.
 
 > [!IMPORTANT]
-> Activate the Azure Sandbox to execute the lab instructions in a free subscription and open [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true)
+> Activate the Azure Sandbox to execute the lab instructions in a free subscription and open [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 
 ## Resources
 

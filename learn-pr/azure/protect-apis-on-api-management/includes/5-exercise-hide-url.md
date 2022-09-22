@@ -10,7 +10,7 @@ The following exercise will demonstrate how to apply the **Mask URL** transforma
 
 ![Overview of API management.](../media/3-remove-header.png)
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 

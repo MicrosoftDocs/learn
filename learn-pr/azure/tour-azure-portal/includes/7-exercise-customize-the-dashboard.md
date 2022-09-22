@@ -2,7 +2,7 @@ Dashboards are a flexible tool for managing different aspects of Azure services 
 
 ## Create a new dashboard
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), from the top left-hand side, select **Show portal menu** >  **Dashboard**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), from the top left-hand side, select **Show portal menu** >  **Dashboard**.
 
 1. Select the **New Dashboard** button, then select **Blank dashboard**.
 

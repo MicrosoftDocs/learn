@@ -49,7 +49,7 @@ We'll start by creating a SQL server for our fitness databases, and we'll add da
 
 We're ready to set up the resources for the SQL elastic pool. We'll switch to the portal to create the elastic pool.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. From the Azure portal menu or the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 

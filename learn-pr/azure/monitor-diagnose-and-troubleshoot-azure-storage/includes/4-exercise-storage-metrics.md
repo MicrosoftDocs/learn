@@ -2,7 +2,7 @@ In this exercise, we'll use Azure portal and PowerShell to configure storage met
 
 ## Create a storage account
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the same account with which you activated the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account with which you activated the sandbox.
 
 2. In the Azure portal, select **Create a resource**.
 

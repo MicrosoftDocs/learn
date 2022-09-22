@@ -56,7 +56,7 @@ To save time, let's start by running a script to host our RESTful API in Azure. 
 
 The final task in this exercise is to create an API gateway in the Azure portal. In the next exercise, you'll use this gateway to publish your API.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. In **Azure services**,  or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 

@@ -14,7 +14,7 @@ Your code is on GitHub. To get a deployed version of the API functions project t
 
 ### If you're using the Learn Live Sandbox
 
-1. Activate the Azure Sandbox to execute the lab instructions in a free subscription, and open [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
+1. Activate the Azure Sandbox to execute the lab instructions in a free subscription, and open [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Make sure to push your locally-working API function project into your GitHub account.
 

@@ -2,7 +2,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 ## Create a Function App
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using your MS Learn account.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your MS Learn account.
 
 1. Select **Create a resource**. The **Create a resource** pane appears.
 
