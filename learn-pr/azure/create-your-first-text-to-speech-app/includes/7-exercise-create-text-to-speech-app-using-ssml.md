@@ -103,7 +103,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     </speak>
     ```
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 
 ## Update the code for your text-to-speech application for SSML
 
@@ -190,7 +190,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     As you did with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
-1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
+1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 
 ## Run your application
 
