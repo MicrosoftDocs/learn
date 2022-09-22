@@ -92,7 +92,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. Open SQL Server Management Studio (SSMS), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *aw-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
     In the Azure portal, search for **AdventureWorks** to find your database and its associated logical server.
 
@@ -107,7 +107,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Configure auditing
 
-1. In the [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) search bar, enter **Log analytics**, and then select **Log Analytics workspaces** from the results. The **Log Analytics workspaces** pane appears.
+1. In the [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true) search bar, enter **Log analytics**, and then select **Log Analytics workspaces** from the results. The **Log Analytics workspaces** pane appears.
 
 1. Select **Create**. The **Create Log Analytics workspace** appears.
   

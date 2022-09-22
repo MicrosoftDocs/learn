@@ -10,7 +10,7 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 1. Sign in to the Azure portal by using the same account that you activated the sandbox with.
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 1. Select **Create a resource** > **Databases** > **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 

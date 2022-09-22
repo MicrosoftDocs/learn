@@ -115,7 +115,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 ## Deploy the Azure Function App using PowerShell
 
@@ -178,7 +178,7 @@ Next, you'll deploy an Azure Function App.
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 ## Deploy an Azure Logic App using an ARM template
 
@@ -214,7 +214,7 @@ The next step is to configure the Logic App and update the Application Setting f
 1. Once your Logic App is deployed, navigate to your Resource Group in the Azure portal and select the **Logic App** you deployed.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 1. Under *Development Tools*, select **Logic app designer**. Review the flow.
 
@@ -313,7 +313,7 @@ The main goal is to deploy an Azure Static Web App using Azure PowerShell. In a 
 If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
 > [!div class="nextstepaction"]
-> [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+> [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 <!-- Not sure this is needed 
 ::: zone pivot="python"

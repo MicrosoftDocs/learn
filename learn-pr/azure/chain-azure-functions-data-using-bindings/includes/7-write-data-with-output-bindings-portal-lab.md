@@ -17,7 +17,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 ## Create an HTTP-triggered function
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the function app that you created by selecting the name of the function app in the breadcrumb path at the top of the **HttpTrigger2** function page.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), go to the function app that you created by selecting the name of the function app in the breadcrumb path at the top of the **HttpTrigger2** function page.
 
 1. In the Function App menu, under **Functions**, select **Functions**. The **Functions** pane appears, listing the HTTP trigger functions that you created.
 
@@ -215,7 +215,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
     ```json
     {
         "id": "docs",
-        "url": "https://docs.microsoft.com/azure"
+        "url": "https://learn.microsoft.com/azure"
     }
     ```
 

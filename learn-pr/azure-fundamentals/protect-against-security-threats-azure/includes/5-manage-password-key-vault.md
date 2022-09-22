@@ -8,7 +8,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 ## Create a key vault
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).<br>
+1. Go to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).<br>
 2. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 3. In the search bar, enter *Key Vault*, and then select **Key Vault** from the results. **The Key Vault** pane appears.
 4. Select **Create**. The **Create a key vault** pane appears.

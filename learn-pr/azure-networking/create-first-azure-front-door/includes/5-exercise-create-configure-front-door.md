@@ -34,7 +34,7 @@ In this unit, you'll create a Front Door named `vehicleFrontDoor` with the follo
 
 ## Create origin groups and add origins
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to complete the setup of the Front Door profile. Make sure to use the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) to complete the setup of the Front Door profile. Make sure to use the same account you activated the sandbox with.
 
 1. Go to the `vehicleFrontDoor` Front Door profile you created and select **Origin Groups** from under *Settings* in the left menu pane.
 

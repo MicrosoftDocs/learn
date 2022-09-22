@@ -4,7 +4,7 @@ In this unit, you run the app in the Kudu console, view the application event lo
 
 You can run the app in Kudu console to discover useful information:
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Go to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. In the Azure portal, search for and select the **HotelApp-####** app you created, replacing #### with the name of your app.
 
@@ -44,7 +44,7 @@ Still in the Kudu debug console where you ran the app, complete these steps to v
 
 Next, view the application event log in the Azure portal:
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. Go to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. In the Azure portal, search for and select the **HotelApp-####** app you created, replacing #### with the name of your app.
 

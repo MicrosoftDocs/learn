@@ -106,7 +106,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     If you have any issues or want to confirm the resources were deployed, you can review in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 ## Configure database schema using GitHub Actions
 

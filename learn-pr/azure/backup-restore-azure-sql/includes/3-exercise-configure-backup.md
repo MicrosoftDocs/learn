@@ -44,7 +44,7 @@ Let's use the Azure CLI to create a SQL Database server and a database.
 
 In the portal, you can examine the default retention policy and adapt it to your needs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **erpserver-NNNN** database server that you created. Your database (SQL) server pane appears.
+1. On the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **erpserver-NNNN** database server that you created. Your database (SQL) server pane appears.
 
 1. In the middle menu pane, under **Data management**, select **Backups**. The **Backups** pane for your database server appears.
 

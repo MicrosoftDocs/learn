@@ -8,7 +8,7 @@ Observe two separate clients sending and receiving messages by using two unique 
 
 ### Open the first browser instance
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Within the **Azure services** category, select **More services**, select the **Databases** category and then select **Azure Cache for Redis**.
 
@@ -24,7 +24,7 @@ Observe two separate clients sending and receiving messages by using two unique 
 
 ### Open the second browser instance
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox and a separate browser window or tab.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox and a separate browser window or tab.
 
 1. Within the **Azure services** category, select **More services**, select the **Databases** category and then select **Azure Cache for Redis**.
 

@@ -6,7 +6,7 @@ In this unit, you'll create an Azure Batch and Azure Storage account using the A
 
 ## Create new storage account
 
-1. Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in your favorite browser.
+1. Navigate to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) in your favorite browser.
 
 1. On the Azure portal menu or from the Home page, select **Create a resource**.
 

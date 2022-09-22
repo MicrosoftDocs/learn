@@ -10,7 +10,7 @@ You decide to buffer uploaded content in an Azure Queue for processing and then 
 
 ## Create a storage account using Azure portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the resource menu, or from the **Home** page, select **Storage accounts**. The **Storage accounts** pane appears.
 

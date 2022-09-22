@@ -5,7 +5,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 1. In the Azure portal, go to your Azure SQL Database logical server.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 1. On the left pane, under **Security**, select **Microsoft Defender for Cloud**. Select **Configure**.
 

@@ -308,7 +308,7 @@ Query Store comes with a series of system catalog views to view performance data
 
 Let's use another method to view the resource usage of our workload. Azure Monitor provides performance metrics that you can view in various ways, including via the Azure portal.
 
-1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true), and then find your instance of the AdventureWorks SQL database. The default view on the **Overview** pane for the database, the default view in the **Monitoring** pane is  **Compute Utilization**:
+1. Open the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true), and then find your instance of the AdventureWorks SQL database. The default view on the **Overview** pane for the database, the default view in the **Monitoring** pane is  **Compute Utilization**:
 
     :::image type="content" source="../media/5-azure-portal-compute-slow-query.png" alt-text="Screenshot of the Azure portal with a slow query.":::
 

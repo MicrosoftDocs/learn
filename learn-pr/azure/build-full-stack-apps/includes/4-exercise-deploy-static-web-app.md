@@ -15,7 +15,7 @@ The main goal is to deploy an Azure Static Web App using the Azure portal.
 1. Navigate to the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
 2. In the search bar, type **static web app** and select **Static Web App** under *Marketplace*. This action will take you to the **create** page.
 
