@@ -55,9 +55,9 @@ The Calculator creates a match from Azure Services to create a high-level initia
 
 **Azure Migration Program**: Join the [Azure Migration Program](https://azure.microsoft.com/migration/migration-program?azure-portal=true) to get the guidance and expert help you need at every stage of the cloud migration journey. Migrate infrastructure, databases, and apps, and move forward with confidence.
 
-## Learn about Azure with Microsoft Learn
+## Learn about Azure
 
-Many other Azure training paths on [Microsoft Learn](/training?azure-portal=true) can help you to build your business case:
+Many other learning paths in [Microsoft Learn training](/training?azure-portal=true) can help you to build your business case:
 
 * [Control Azure spending and manage bills with Microsoft Cost Management](/training/paths/control-spending-manage-bills?azure-portal=true)
 * [Microsoft Azure Well-Architected Framework—Cost Optimization](/training/modules/azure-well-architected-cost-optimization?azure-portal=true)

@@ -50,6 +50,6 @@ Organize your resources into resource groups or subscriptions. They can serve as
 
 ## Budget for education
 
-Educating your engineers, developers, and users is an important piece of a successful cloud project. The cloud is a transformational shift for an organization, and is an ever-changing set of services and technologies. Your organization will need to ensure that your staff is properly trained to build and maintain resources on Azure. Microsoft provides full product documentation on Microsoft Docs, and it provides self-paced training on Microsoft Learn. Microsoft also has a large network of partners to deliver in-person and custom training for your staff.
+Educating your engineers, developers, and users is an important piece of a successful cloud project. The cloud is a transformational shift for an organization, and is an ever-changing set of services and technologies. Your organization will need to ensure that your staff is properly trained to build and maintain resources on Azure. Microsoft Learn provides full product documentation along with self-paced training. Microsoft also has a large network of partners to deliver in-person and custom training for your staff.
 
 Identify both the initial and ongoing training needs for your organization. Include this as part of the cost of your project.
