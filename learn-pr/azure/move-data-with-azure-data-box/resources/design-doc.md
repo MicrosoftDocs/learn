@@ -70,7 +70,7 @@ Identify the subtasks of *Move large amounts of data to the cloud by using Azure
         - Online devices have similar capabilities and limits:
             - Data Box Edge offers a dedicated appliance with 12TB of local SSD storage, which can pre-process data and run machine learning on data before upload to Azure.
             - Data Box Gateway is a virtual appliance. 
-    - Include a diagram to show the difference between the devices. Use this one or modify so it just includes Data Box family: <https://docs.microsoft.com/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json>. Diagram is going to be updated by SME. But we could use a version just comparing Data Box devices for now. May need to update it later when they publish a new version of diagram. 
+    - Include a diagram to show the difference between the devices. Use this one or modify so it just includes Data Box family: <https://learn.microsoft.com/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json>. Diagram is going to be updated by SME. But we could use a version just comparing Data Box devices for now. May need to update it later when they publish a new version of diagram. 
     - Finish the unit by explaining how Data Box Disk will work as a solution for the scenario. They can stick it in the car and upload data while the car sensors are generating data.
 
     **Knowledge check** - Learn about the Azure Data Box family of devices
