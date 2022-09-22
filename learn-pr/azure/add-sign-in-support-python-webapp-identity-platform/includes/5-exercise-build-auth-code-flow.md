@@ -107,9 +107,9 @@ In the code snippet above, when a user attempts to navigate to a location in the
 
 The first step of building the authorization code flow is creating an MSAL client using the app registration values (client ID and tenant ID). You then use the MSAL client to build the authorization code flow dictionary. In the snippet above, we also ask the user to consent to the scope `User.Read` that our application requires. 
 
-In the authorization code flow dictionary, we'll add an entry to store the post sign in url where users are redirected after going through the authorization code flow.
+In the authorization code flow dictionary, we'll add an entry to store the post sign-in url where users are redirected after going through the authorization code flow.
 
-Next, add the authorization code flow initiation to the session and update the MSAL http response cache. You also redirect users to Azure AD, where they can perform the necessary authorization code flow actions such as logging in and consenting to the required permissions, if they haven't already. 
+Next, add the authorization code flow initiation to the session and update the MSAL http response cache. You also redirect users to Azure AD, where they can perform the necessary authorization code flow actions. This could be logging in and consenting to the required permissions, if they haven't already. 
 
 ## Create app routes
 
@@ -117,7 +117,7 @@ You can add several routes to your web application to grant or prevent access to
 
  - Route 1: Accessible by all users as it requires no authentication or authorization. This route will render the `public/index.html` template you created in the previous exercise.
  - Route 2: Accessible by all authenticated users and doesn't require users to have any specific role assignments. This route will render the `authenticated/graph.html` template.
- - Route 3: Accessible by authenticated and authorized users with an application-defined, admin role assigned.This route will render the `authenticated/admin.html` template.
+ - Route 3: Accessible by authenticated and authorized users with an application-defined, admin role assigned. This route will render the `authenticated/admin.html` template.
 
 To create route one that allows access for all users, authenticated or not, add the following code to `app.py`.
 
@@ -275,7 +275,7 @@ def admin():
         "authenticated/admin.html", graphCallResponse=user_claims
 ```
 
-In the code sample above, you verify that the user is authenticated and that their session is still valid. If either of the two statements is false, raise an unauthorized error to trigger the auth code flow and redirect the user to the sign in page. After signing in, we perform a role check to verify that the user has the application-defined, admin-role assigned. If the user's claim doesn't exist or doesn't contain the `admin` role, prevent the user from accessing the page. If the required application-defined role exists, grant access to the page. 
+In the code sample above, you verify that the user is authenticated and that their session is still valid. If either of the two statements is false, raise an unauthorized error to trigger the auth code flow and redirect the user to the sign-in page. After signing in, we perform a role check to verify that the user has the application-defined, admin-role assigned. If the user's claim doesn't exist or doesn't contain the `admin` role, prevent the user from accessing the page. If the required application-defined role exists, grant access to the page. 
 
 ## Sign out users
 

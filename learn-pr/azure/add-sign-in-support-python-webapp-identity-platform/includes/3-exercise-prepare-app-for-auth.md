@@ -51,7 +51,7 @@ To make these dependencies available in your environment, run `pip install -r re
 
 #### Add application UI components
 
-Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three simple HTML templates for each of the routes that'll be set up in the app.
+Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three simple HTML templates for each of the routes that will be set up in the app.
 
 For the general template, create an HTML file named *layout.html* in the templates folder and paste the contents below: 
 
@@ -218,7 +218,7 @@ For this scenario, you'll use a client secret, also known as an application pass
 1. In the Azure portal, in **App registrations**, select your application.
 1. Under **Manage**, select **Certificates & secrets**.
 1. In the **Client secrets** section, select **New client secret**.
-1. Click **New client secret** and add a description for your client secret.
+1. In the **Add a client secret** pane, provide a description for your client secret.
 1. Select an expiration for the secret or specify a custom lifetime.
    - Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months. Microsoft recommends that you set an expiration value of less than 12 months.
 1. Select **Add**.

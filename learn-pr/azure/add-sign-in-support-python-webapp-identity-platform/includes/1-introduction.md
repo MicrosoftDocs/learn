@@ -24,4 +24,4 @@ You'll use the Microsoft identity platform to simplify authorization and authent
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to add sign-in support to a Python Flask web app using the Microsoft identity platform. The app you build can log in users and allow them to access protected data based on their roles.
+By the end of this session, you'll be able to add sign-in support to a Python Flask web app using the Microsoft identity platform. The app you build can sign in users and allow them to access protected data based on their roles.

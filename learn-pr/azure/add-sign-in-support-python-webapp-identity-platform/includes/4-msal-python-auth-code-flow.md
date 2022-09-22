@@ -54,7 +54,7 @@ app = msal.ConfidentialClientApplication(
         )
 ```
 
-When creating an instance of a confidential client application, you must add a client credential, like a certificate or client secret. Unlike the client ID which is exposed in the web browser, the client secret is stored securely on your web app server. It is passed in back channel(non-browser) requests to your authorization server and never exposed directly. 
+When creating an instance of a confidential client application, you must add a client credential, like a certificate or client secret. Unlike the client ID, which is exposed in the web browser, the client secret is stored securely on your web app server. It is passed in back channel(non-browser) requests to your authorization server and never exposed directly. 
 
 ## Security tokens in the authorization code flow
 
@@ -70,4 +70,4 @@ The Microsoft identity platform issues refresh tokens that allow client applicat
 
 ### ID tokens
 
-The identity platform issues ID tokens are to the client application as part of an OpenID Connect flow. ID tokens can be sent alongside or in place of an access token. They are used by the client to authenticate and get basic information about users.
+The identity platform issues ID tokens are to the client application as part of an OpenID Connect flow. ID tokens can be sent alongside or in place of an access token. They're used by the client to authenticate and get basic information about users.

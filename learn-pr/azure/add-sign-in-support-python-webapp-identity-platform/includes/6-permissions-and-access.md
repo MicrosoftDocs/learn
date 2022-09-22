@@ -6,19 +6,19 @@ One way that applications in Microsoft identity platform are granted permissions
 
 :::image type="content" source="../media/6-consent-to-permissions-request.png" border="false" alt-text=" Consent prompt to allow app's request for permissions":::
 
-When an application needs to get a new access token from the identity platform, it does not prompt the user for consent, if they had already consented to the specified permissions. This is because consent grants can outlast a token as they remain valid until a user or admin revokes them  manually. 
+When an application needs to get a new access token from the identity platform, it doesn't prompt the user for consent, if they had already consented to the specified permissions. This is because consent grants can outlast a token as they remain valid until a user or admin revokes them  manually. 
 
 ### Acquire token silently
 
-After a user signs in, your app shouldn't ask them to reauthenticate every time they need to access a protected resource. To prevent such re-authentication requests, you acquire an access token without user interaction by calling `acquire_token_silent`. This will first look for a valid access token from the cache, or if needed, find a valid refresh token and use it to redeem a new access token. 
+After a user signs in, your app shouldn't ask them to reauthenticate every time they need to access a protected resource. To prevent such reauthentication requests, you acquire an access token without user interaction by calling `acquire_token_silent`. This will first look for a valid access token from the cache, or if needed, find a valid refresh token and use it to redeem a new access token. 
 
 If the `acquire_token_flow` found an expired access token and had to use the refresh token, you update the session's token cache to reflect the new access token and refresh token. As such, the next invocation won't require exchanging the refresh token for an access token again.  
 
 There are some situations, however, where you might need to force users to interact with the Microsoft identity platform. For example:
 
-- Users need to re-enter their credentials because the session has expired.
+- Users need to reenter their credentials because the session has expired.
 - The refresh token has expired.
-- The application is requesting access to a resource that requires specific permissions that the user had not already consented to.
+- The application is requesting access to a resource that requires specific permissions that the user had not consented to.
 - Two-factor authentication is required.
 - The refresh token has been revoked by the server because of a change in credentials, user action, or admin action.
 
