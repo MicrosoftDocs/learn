@@ -44,7 +44,7 @@ Wait for the command to complete, and then continue with this exercise.
 
 In this task, you'll use the Azure portal to enable app logging for the file system and Azure Blob storage. You'll start by verifying that your Web app is running.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account used to activate the sandbox.
 
 1. On the Azure portal **Home** page, in the **Navigate** section, select **Subscriptions**. The **Subscriptions** pane for your *Microsoft Learn Sandbox* appears.
 

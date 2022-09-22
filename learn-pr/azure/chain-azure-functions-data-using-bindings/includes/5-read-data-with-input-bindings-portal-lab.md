@@ -17,7 +17,7 @@ You need to store the data somewhere. In the previous flowchart, the data store 
 
 A database account is a container for managing one or more databases. Before we can create a database, we need to create a database account.
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) resource menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) resource menu, or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Create a resource** menu, select **Databases**, and then search for and select **Azure Cosmos DB**. The **Select API option** pane appears. 
 

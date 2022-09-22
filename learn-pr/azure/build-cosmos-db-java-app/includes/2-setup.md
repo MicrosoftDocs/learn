@@ -4,7 +4,7 @@ In this unit, you'll create a basic console app by using an IDE of your choice t
 
 For completing this lab, Microsoft Learn provides a free Azure sandbox in which you can create accounts and resources. You'll set up an Azure Cosmos DB account in this subscription and then create a database and container.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 1. By using the Azure portal, create an Azure Cosmos DB account with the name of your choice. When the opportunity arrives to choose a resource group for your account, find the resource group <rgn>[Sandbox resource group]</rgn> and select that.
 1. In your Azure Cosmos DB account, create a database called **Users**.
 1. In the **Users** database, create a container called **WebCustomers** with a partition key of **/userId**. Provision **400 RU/s** for **WebCustomers**.
@@ -98,7 +98,7 @@ For completing this lab, Microsoft Learn provides a free Azure sandbox in which 
     private static String primaryKey = "<your-cosmosdb-master-key>";
     ```
 
-1. Return to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), go to the **Keys** pane, and copy/paste your Azure Cosmos DB endpoint URI and primary key into the preceding variable definitions. 
+1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the **Keys** pane, and copy/paste your Azure Cosmos DB endpoint URI and primary key into the preceding variable definitions. 
 
     For example, if your URI is `https://cosmosacct.documents.azure.com:443/`, your new variable assignment will look like this: `private static String endpointUri = "https://cosmosacct.documents.azure.com:443/";`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, your new variable assignment will look like this: `private static String primaryKey = "elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==";`.
 
@@ -230,7 +230,7 @@ In this unit, you set up the groundwork for your Azure Cosmos DB Java applicatio
 
     You are going to populate `${ACCOUNT_HOST}` and `${ACCOUNT_KEY}`, using a method of your choice - either copy-paste the values into **application.properties**, or define these environment variables in your IDE. In the next step you will find the values these variables should have.
 
-1. Return to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), go to the **Keys** pane, and copy the Azure Cosmos DB endpoint URI and primary key. As discussed in the previous step, use the method of your choice to assign your Azure Cosmos DB endpoint URI and primary key to the aforementioned variables.
+1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to the **Keys** pane, and copy the Azure Cosmos DB endpoint URI and primary key. As discussed in the previous step, use the method of your choice to assign your Azure Cosmos DB endpoint URI and primary key to the aforementioned variables.
 
     For example, if your URI is `https://cosmosacct.documents.azure.com:443/`, and you choose to paste the endpoint and primary key into **application.properties**, the line in **application.properties** will subsequently look like this: `cosmos.uri=https://cosmosacct.documents.azure.com:443/`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, then following the same process your new variable assignment will look like this: `cosmos.key=elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`.
 

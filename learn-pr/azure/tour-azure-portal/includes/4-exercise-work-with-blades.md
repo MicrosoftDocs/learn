@@ -4,7 +4,7 @@ In this unit, you'll learn how to work with panes in the Azure portal user inter
 
 1. Start by **activating the Azure sandbox above**.
 
-1. Once it's activated, sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
+1. Once it's activated, sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
 
 ## Explore the Marketplace
 

@@ -52,7 +52,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
 
 ## Create an Azure Automation account
 
-1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
+1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. On the Azure portal resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 

@@ -50,7 +50,7 @@ Here you'll continue the exercise from the point where you left off in a previou
 
     After the migration is complete, you'll continue to the **Migration Results** step.  
 
-8. Open the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) on a new tab on your local computer. Select **App Service** from the home page. From the list of deployed services, select the one that matches the name that you created earlier. This will display the settings for your new App Service account.
+8. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) on a new tab on your local computer. Select **App Service** from the home page. From the list of deployed services, select the one that matches the name that you created earlier. This will display the settings for your new App Service account.
 
     From here, you can explore the features of your new App Service account. You can experiment by changing settings and viewing the logs and other diagnostic information.
 
