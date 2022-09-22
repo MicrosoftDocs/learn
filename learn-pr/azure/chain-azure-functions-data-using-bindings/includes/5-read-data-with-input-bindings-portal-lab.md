@@ -90,7 +90,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
      ```json
      {
          "id": "docs",
-         "url": "https://docs.microsoft.com/azure"
+         "url": "https://learn.microsoft.com/azure"
      }
      ```
 
@@ -118,7 +118,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
     ```json
     {
         "id": "learn",
-        "url": "https://docs.microsoft.com/learn"
+        "url": "https://learn.microsoft.com/learn"
     }
     ```
 
@@ -140,7 +140,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
 
     :::image type="content" source="../media/5-db-bookmark-collection-small.png" alt-text="Screenshot of SQL API data showing collection of items in bookmarks container of the func-io-learn-db." lightbox="../media/5-db-bookmark-collection.png":::
 
-Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://docs.microsoft.com/azure`. Let's make an Azure function that looks up values in your Bookmarks container.
+Your **Bookmarks** container has five items. In this scenario, if a request arrives with "id=docs", it will look up that ID in your Bookmarks container, and return the URL `https://learn.microsoft.com/azure`. Let's make an Azure function that looks up values in your Bookmarks container.
 
 ## Create your function
 
@@ -398,7 +398,7 @@ Let's examine what this code is doing.
 
     ```json
     {
-      "url": "https://docs.microsoft.com/azure"
+      "url": "https://learn.microsoft.com/azure"
     }
     ```
 
