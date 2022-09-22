@@ -6,7 +6,7 @@ There are two pricing models for Azure SQL databases and managed instances: DTU 
 
 SQL databases and managed instances in the General Purpose (or Standard) service tier have the same availability architecture.
 
-:::image type="content" source="../media/general-purpose.png" alt-text="Diagram that shows SQL database high availability in the vCore General Purpose tier." lightbox="../media/general-purpose.png" border="false":::
+:::image type="content" source="../media/general-purpose.png" alt-text="Diagram that shows SQL database high availability in the vCore General Purpose tier." lightbox="../media/general-purpose-large.png" border="false":::
 
 The image illustrates the availability architecture for the vCore General Purpose (or DTU Standard) tier:
 
@@ -24,7 +24,7 @@ All of Azure SQL is built on Azure Service Fabric, which serves as the Azure bac
 
 In the Business Critical (or Premium) tier, you can generally achieve the highest performance and availability of all Azure SQL service tiers. This tier is meant for mission-critical applications that need low latency and minimal downtime.
 
-:::image type="content" source="../media/business-critical.png" alt-text="Diagram that shows SQL database high availability in the vCore Business Critical tier." lightbox="../media/business-critical.png" border="false":::
+:::image type="content" source="../media/business-critical.png" alt-text="Diagram that shows SQL database high availability in the vCore Business Critical tier." lightbox="../media/business-critical-large.png" border="false":::
 
 The image illustrates the availability architecture for the vCore Business Critical (or DTU Premium) tier:
 
@@ -38,7 +38,7 @@ The image illustrates the availability architecture for the vCore Business Criti
 
 The Hyperscale service tier is available only in Azure SQL Database. This service tier has a unique architecture because it uses a tiered layer of caches and page servers to expand the ability to quickly access database pages without having to access the data file directly.
 
-:::image type="content" source="../media/hyperscale-architecture.png" alt-text="Diagram that shows SQL database high availability in the vCore Hyperscale tier." lightbox="../media/hyperscale-architecture.png" border="false":::
+:::image type="content" source="../media/hyperscale-architecture.png" alt-text="Diagram that shows SQL database high availability in the vCore Hyperscale tier." lightbox="../media/hyperscale-architecture-large.png" border="false":::
 
 The image illustrates the availability architecture for the vCore Hyperscale tier:
 

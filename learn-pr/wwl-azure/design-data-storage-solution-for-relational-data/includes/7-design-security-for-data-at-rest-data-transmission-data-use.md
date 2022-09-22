@@ -17,9 +17,9 @@ There are different encryption methods for each of the data states. The followin
 
 | Data state | Encryption method | Encryption level |
 | --- | --- |
-| **Data at rest** | Transparent data encryption (TDE) | Always encrypted |
-| **Data in motion** | Secure Socket Layers and Transport Layer Security (SSL/TLS) | Always encrypted |
-| **Data in process** | Dynamic data masking | Specific data is unencrypted, Remaining data is encrypted |
+| **Data&nbsp;at&nbsp;rest** | Transparent data encryption (TDE) | Always encrypted |
+| **Data&nbsp;in&nbsp;motion** | Secure Socket Layers and Transport Layer Security (SSL/TLS) | Always encrypted |
+| **Data&nbsp;in&nbsp;process** | Dynamic data masking | Specific data is unencrypted, Remaining data is encrypted |
 
 Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process has yielded common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
 
@@ -54,7 +54,7 @@ Let's review how TDE is implemented for data at rest. Consider how data at rest 
 
 ### Things to know about data in motion and SSL/TLS
 
-Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics enforce SSL/TLS encryption always for all connections. This level of encryption ensures all data is encrypted "in transit" between the client and server. Transport Layer Security (TLS) is used by all drivers that Microsoft supplies or supports for connecting to databases in Azure SQL Database or Azure SQL Managed Instance. In some circumstances, you might want to isolate the entire communication channel between your on-premises and cloud infrastructures by using a VPN.
+Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics enforce Secure Socket Layers and Transport Layer Security (SSL/TLS) encryption always for all connections. This level of encryption ensures all data is encrypted "in transit" between the client and server. Transport Layer Security (TLS) is used by all drivers that Microsoft supplies or supports for connecting to databases in Azure SQL Database or Azure SQL Managed Instance. In some circumstances, you might want to isolate the entire communication channel between your on-premises and cloud infrastructures by using a VPN.
 
 ### Things to consider when protecting data in motion
 

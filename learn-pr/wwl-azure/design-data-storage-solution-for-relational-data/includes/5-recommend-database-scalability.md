@@ -71,13 +71,13 @@ Let's explore a business scenario for applying read scale-out provisioning. Your
 
 The following image shows how horizontal read scale-out provisioning is applied in the Business Critical service tier:
 
-:::image type="content" source="../media/business-critical-service-tier-read-scale-out.png" alt-text="Diagram that shows read scale-out provisioning in a business critical service tier." lightbox="../media/business-critical-service-tier-read-scale-out.png" border="false":::
+:::image type="content" source="../media/business-critical-read-scale-out-small.png" alt-text="Diagram that shows read scale-out provisioning in a business critical service tier." lightbox="../media/business-critical-service-tier-read-scale-out.png" border="false":::
 
 The data and log files all run on direct-attached SSD, which significantly reduces network latency. In this architecture group, there are three secondary replicas. If any type of failure occurs, failing over to a secondary replica is fast because the replica already exists and has the data attached to it.
 
 The Premium and Business Critical tiers for Azure SQL Database and Azure SQL Managed Instance have an **Always On Availability Group**. This group is for disaster recovery and high-availability of the application. There's a primary read-write replica, and several secondary read-only replicas. The secondary replicas are provisioned with the same compute size as the primary replica. You set the connection string option to decide whether the connection is routed to the write replica or to a read-only replica.
 
-:::image type="content" source="../media/business-critical-architecture.png" alt-text="Diagram that shows the Business Critical tier, where the data and log files all run on direct-attached SSD, which significantly reduces network latency." lightbox="../media/business-critical-architecture.png" border="false":::
+:::image type="content" source="../media/business-critical-architecture.png" alt-text="Diagram that shows the Business Critical tier, where the data and log files all run on direct-attached SSD, which significantly reduces network latency." lightbox="../media/business-critical-architecture-large.png" border="false":::
 
 You can disable and re-enable read scale-out on single databases and elastic pool databases in the Premium or Business Critical service tiers. These functions are available in the Azure portal, PowerShell, and the REST API.
 
