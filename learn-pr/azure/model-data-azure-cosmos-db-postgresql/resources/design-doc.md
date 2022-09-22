@@ -15,7 +15,7 @@ In this module, you will:
 1. Introduction
 1. Identify cases for distributed data
     1. Multi-tenants
-    1. Timeseries
+    1. Time series
     1. Operational analytics
 1. Classify tables
     1. Distributed tables

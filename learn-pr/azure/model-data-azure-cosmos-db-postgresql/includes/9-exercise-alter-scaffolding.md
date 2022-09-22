@@ -1,8 +1,8 @@
-Working with the Woodgrove Bank developers on getting their application's database scaffolded, this is what they loaded in the database:
+Working with the Woodgrove Bank developers on getting their application's database scaffolded, this diagram illustrates what they loaded in the database:
 
 ![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-erd.png)
 
-In this exercise, you will restructure their database to get to the following output:
+In this exercise, you'll restructure their database to get to the following output:
 
 ![Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.](../media/distributed-erd.png)
 
@@ -91,9 +91,9 @@ The non-events tables can be distributed or turned into reference tables. As the
     SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;
     ```
 
-    Notice that the distributed tables are implicitly colocated together. This is the output:
+    Notice that the distributed tables are implicitly colocated together. Here's an example of the output:
 
-    ```bash
+    ```output
         table_name     | citus_table_type | distribution_column | colocation_id 
     -------------------+------------------+---------------------+---------------
     event_types       | reference        | <none>              |             2
@@ -103,7 +103,7 @@ The non-events tables can be distributed or turned into reference tables. As the
 
 ## Update colocation settings
 
-The developers asked about updating colocation after a table is distributed, as `payment_merchants` should not be colocated. 
+The developers asked about updating colocation after a table is distributed, as `payment_merchants` shouldn't be colocated. 
 
 1. Run the following query:
 
@@ -119,7 +119,7 @@ The developers asked about updating colocation after a table is distributed, as 
 
     The users and merchants tables should have different `colocation_id` values. The output may look like this:
 
-    ```bash
+    ```output
         table_name     | citus_table_type | distribution_column | colocation_id 
     -------------------+------------------+---------------------+---------------
     event_types       | reference        | <none>              |             2
@@ -129,7 +129,7 @@ The developers asked about updating colocation after a table is distributed, as 
 
 ## Distribute the events table
 
-While talking through the design with the Woodgrove Bank developers, they asked why they should not distribute the events on the `event_id` field.
+While you work through the design with the Woodgrove Bank developers, they asked why they shouldn't distribute the events on the `event_id` field.
 
 1. Distribute the `payment_events` table on `event_id`.
     ```sql
@@ -143,7 +143,7 @@ While talking through the design with the Woodgrove Bank developers, they asked 
 
     The output will look like this:
 
-    ```bash
+    ```output
         table_name     | citus_table_type | distribution_column | colocation_id 
     -------------------+------------------+---------------------+---------------
     event_types       | reference        | <none>              |             2
@@ -164,16 +164,16 @@ Update the `payment_events` table to be distributed on `user_id`.
     SELECT alter_distributed_table('payment_events',distribution_column:='user_id');
     ```
 
-    When this query is run successfully, you will see output like this:
+    When this query is run successfully, you'll see output like this:
 
-    ```bash
+    ```output
     NOTICE:  creating a new table for public.payment_events
     NOTICE:  moving the data of public.payment_events
     NOTICE:  dropping the old public.payment_events
     NOTICE:  renaming the new table to public.payment_events
     ```
 
-    Note that this query will apply to all the partitions for this table.
+    This query will apply to all the partitions for this table.
 
 2. Confirm the change took effect by running:
 
@@ -183,7 +183,7 @@ Update the `payment_events` table to be distributed on `user_id`.
 
     The output is:
 
-    ```bash
+    ```output
         table_name     | citus_table_type | distribution_column | colocation_id 
     -------------------+------------------+---------------------+---------------
     event_types       | reference        | <none>              |             2
@@ -196,7 +196,7 @@ Update the `payment_events` table to be distributed on `user_id`.
 
 ## Adding a foreign key to a distributed table after creation
 
-In a case where there are two colocated distributed tables with a foreign key relationship, you will need to add the foreign key after both tables are distributed. A foreign key in this case must include the distribution column.
+In a case where there are two colocated distributed tables with a foreign key relationship, you'll need to add the foreign key after both tables are distributed. A foreign key in this case must include the distribution column.
 
 1. `payment_events` should have a foreign key relationship to `payment_users`. Add this relationship with the following command:
 
@@ -213,7 +213,7 @@ In a case where there are two colocated distributed tables with a foreign key re
 
     The output will look like this:
 
-    ```bash
+    ```output
                       Partitioned table "public.payment_events"
     Column     |            Type             | Collation | Nullable | Default 
     ---------------+-----------------------------+-----------+----------+---------
@@ -240,14 +240,14 @@ ALTER TABLE payment_events ADD CONSTRAINT events_merchants_fk
  FOREIGN KEY (merchant_id) REFERENCES payment_merchants(merchant_id);
 ```
 
-By running this command, you will see output along these lines:
+By running this command, you'll see output along these lines:
 
-```bash
+```output
 ERROR:  cannot create foreign key constraint
 DETAIL:  Foreign keys are supported in two cases, either in between two colocated tables including partition column in the same ordinal in the both tables or from distributed to reference tables
 ```
 
-This is something that we will have to sacrifice from the design when going from a single server to a distributed database.
+This foreign key is something that we'll have to sacrifice from the design when going from a single server to a distributed database.
 
 ## Convert from a distributed table to a reference table
 
@@ -275,7 +275,7 @@ Confirm whether tables are distributed by querying the `citus_tables` system vie
 SELECT table_name, citus_table_type, distribution_column FROM citus_tables;
 ```
 
-In the results from the query, note that the `citus_table_type` column will indicate whether a table is a distributed table or a reference table. The results will look like this:
+In the results from the query, the `citus_table_type` column will indicate whether a table is a distributed table or a reference table. The results will look like this:
 
 ```bash
    table_name     | citus_table_type | distribution_column 
@@ -286,13 +286,13 @@ In the results from the query, note that the `citus_table_type` column will indi
  payment_users     | distributed      | user_id
 ```
 
-Notice that reference tables do not have distribution columns.
+Notice that reference tables don't have distribution columns.
 
 
 ## Clean-up
 
-Once you are done in this module, clean up the resources created in order to minimize costs.
+Once you're done in this module, clean up the resources created in order to minimize costs.
 
-1. Log into the Azure portal.
+1. Sign-in to the Azure portal.
 2. Navigate to the resource group created for this module.
 3. Delete the resource group.

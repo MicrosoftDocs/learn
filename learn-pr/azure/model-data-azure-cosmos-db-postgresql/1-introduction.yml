@@ -4,12 +4,14 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "Azure Cosmos DB for PostgreSQL supports PostgreSQL at scale. Migrating from a single PostgreSQL to distributed environment may require structural changes to take advantage of the relational integrity while also relying on concurrent query processing at scale."
-  ms.date: 8/10/2022
-  author: sadukie
-  ms.author: {{msUser}}
+  description: |
+    Azure Cosmos DB for PostgreSQL supports PostgreSQL at scale. Migrating from a single PostgreSQL to distributed environment may require structural changes to take advantage of the relational integrity while also relying on concurrent query processing at scale.
+  ms.date: 09/22/2022
+  author: sidandrews
+  ms.author: seesharprun
+  ms.reviewer: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

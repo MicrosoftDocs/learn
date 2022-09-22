@@ -4,12 +4,14 @@ title: Exercise - Alter scaffolding in Azure Cosmos DB for PostgreSQL
 metadata:
   unitType: exercise
   title: Exercise - Alter scaffolding in Azure Cosmos DB for PostgreSQL
-  description: "Practice using data definition language (DDL) queries and helper functions in Azure Cosmos DB for PostgreSQL."
-  ms.date: 8/10/2022
-  author: sadukie
-  ms.author: {{msUser}}
+  description: |
+    Practice using data definition language (DDL) queries and helper functions in Azure Cosmos DB for PostgreSQL.
+  ms.date: 09/22/2022
+  author: sidandrews
+  ms.author: seesharprun
+  ms.reviewer: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/9-exercise-alter-scaffolding.md)]

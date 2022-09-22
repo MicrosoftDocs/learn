@@ -10,7 +10,7 @@ The `payment_events`, `event_types`, `payment_users`, and `payment_merchants` ta
 
 The initial tables are created on the coordinator node as local tables. Once created, they can be converted to reference tables and distributed tables.
 
-The `event_types` table is a smaller table, keeping track of a set of event types. It will be joined in queries with the distributed `payment_events` table, which means that the `event_types` table cannot be a local table. By storing a copy of the `event_types` table on each worker node, the worker node can query the reference data without having to attempt cross-node queries. As it is a small set of event types, it can be promoted to a reference table.
+The `event_types` table is a smaller table, keeping track of a set of event types. It will be joined in queries with the distributed `payment_events` table, which means that the `event_types` table can't be a local table. When the worker node stores a copy of the `event_types` table on each worker node, the worker node can query the reference data without having to attempt cross-node queries. As it's a small set of event types, it can be promoted to a reference table.
 
 The `payment_merchants` table is also a smaller table. The merchant information is also needed in queries with `payment_events`. The merchants table will also be a reference table.
 
@@ -22,13 +22,13 @@ The `payment_merchants` table is also a smaller table. The merchant information 
 
     The output will start with something like this:
 
-    ```bash
+    ```output
     NOTICE:  local tables that are added to metadata automatically by citus, but not chained with reference tables via foreign keys might be automatically converted back to postgres tables
 
     HINT:  Executing citus_add_local_table_to_metadata($$public.payment_events$$) prevents this for the given relation, and all of the connected relations
     ```
 
-    `payment_events` is currently a local table. It is chained to `event_types` via the foreign key relationship. This output is not concerning. This messaging will be repeated for all of the relationships. Due to the foreign keys already in place, creating the reference tables first should not present a problem.
+    `payment_events` is currently a local table. It's chained to `event_types` via the foreign key relationship. This output isn't concerning. This messaging will be repeated for all of the relationships. Due to the foreign keys already in place, creating the reference tables first shouldn't present a problem.
 
 
 2. Change the `payment_merchants` table from a local table to a reference table with the following command:
@@ -47,9 +47,9 @@ The events and users tables are going to be distributed based on their `user_id`
     SELECT create_distributed_table('payment_events','user_id');    
     ```
 
-    If the reference table query for creating `event_types` fails and you run this `create_distributed_table` query, you will get an error that the reference table `event_types` must be a distributed table or a reference table. This is the error:
+    If the reference table query for creating `event_types` fails and you run this `create_distributed_table` query, you'll get an error that the reference table `event_types` must be a distributed table or a reference table. This output is an example of the error you may see:
 
-    ```bash
+    ```output
     citus=>  SELECT create_distributed_table('payment_events','user_id');    
     ERROR:  referenced table "event_types" must be a distributed table or a reference table
     DETAIL:  To enforce foreign keys, the referencing and referenced rows need to be stored on the same node.
@@ -64,12 +64,12 @@ The events and users tables are going to be distributed based on their `user_id`
 
 ## Current design state
 
-At this point, you should have:
+Following along with the current exercise, you should have:
 
 * `event_types` as a reference table
 * `payment_merchants` as a reference table
 * `payment_events` as a distributed table with `user_id` as its distribution column and foreign key relationships with `event_types` and `payment_merchants`
-* `payment_users` as a distributed table with `user_id` as its distribution column, implictly colocated with `payment_events`
+* `payment_users` as a distributed table with `user_id` as its distribution column, implicity colocated with `payment_events`
 
 Confirm that the tables and distribution are set up as expected with the following query:
 
@@ -77,9 +77,9 @@ Confirm that the tables and distribution are set up as expected with the followi
 SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;
 ```
 
-The output should confirm the table types (`citus_table_type`) and distribution columns (`distribution_column`). Make note that `event_types` and `payment_merchants` have the value of &lt;none&gt; for their distribution columns, as reference tables do not have distribution columns. The `colocation_id` for `payment_events` and `payment_users` should match. This is the output:
+The output should confirm the table types (`citus_table_type`) and distribution columns (`distribution_column`). Make note that `event_types` and `payment_merchants` have the value of &lt;none&gt; for their distribution columns, as reference tables don't have distribution columns. The `colocation_id` for `payment_events` and `payment_users` should match. Here's an example of the output:
 
-```bash
+```output
     table_name     | citus_table_type | distribution_column | colocation_id 
 -------------------+------------------+---------------------+---------------
  event_types       | reference        | <none>              |             2

@@ -34,7 +34,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | Scale           | See configuration settings in the next step. |
     | PostgreSQL version | Leave the default version (14) selected. |
     | **Administrator account** | |
-    | Admin username  | This is set to `citus` and cannot be edited. |
+    | Admin username  | This username is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
     ![Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. The settings above are shown in the screenshot.](../media/cosmos-db-for-postgresql-basics-tab.png)
@@ -64,7 +64,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
     ![Screenshot of Azure Cosmos DB for PostgreSQL networking configuration. Public access (allowed IP addresses) is highlighted for the Connectivity method. Allow public access from Azure services is checked and highlighted.](../media/cosmos-db-for-postgresql-networking-tab.png)
 
-9. Select the **Review + create** button and on the review screen, select **Create** to provision your Azure Cosmos DB for PostgreSQL cluster.
+9. Select the **Review + create** button and on the review screen, select **Create** to create your Azure Cosmos DB for PostgreSQL cluster.
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
@@ -84,7 +84,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
     ![Screenshot of Azure Cloud Shell welcome wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
 
-6. Now, use the psql command-line utility to connect to Azure Cosmos DB for PostgreSQL. Copy the connection string from Step 2, and paste it into the Cloud Shell. Update the `password` part of the connection string to use the password set up when creating the Azure Cosmos DB for PostgreSQL cluster. Then, run the command.
+6. Now, use the psql command-line utility to connect to Azure Cosmos DB for PostgreSQL. Copy the connection string from Step 2, and paste it into the Cloud Shell. Update the `password` part of the connection string to use the password set-up when creating the Azure Cosmos DB for PostgreSQL cluster. Then, run the command.
 
 ## Create tables
 
@@ -138,7 +138,7 @@ CREATE TABLE payment_events
     \dt
     ```
 
-    This should show 4 rows, a row for each of the tables.
+    This query result should show four rows, a row for each of the tables.
 
     ```bash
                         List of relations
@@ -150,12 +150,12 @@ CREATE TABLE payment_events
     public | payment_users     | table             | citus
     ```
 
-2. Use the `citus_tables` view to ensure these newly created tables are not yet distributed. Run the following query:
+2. Use the `citus_tables` view to ensure these newly created tables aren't yet distributed. Run the following query:
 
     ```sql
     SELECT * FROM citus_tables;
     ```
 
-    This query's results should show 0 rows.
+    This query's results should show zero rows.
 
 Now that these tables are created, let's look at choosing distribution columns for the tables we want to distribute.
