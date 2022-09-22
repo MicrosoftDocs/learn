@@ -14,31 +14,31 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Select the **monitored-linux-vm** virtual machine that you created. The **monitored-linux-vm** virtual machine appears.
 
-1. On the left menu pane, scroll down, and select **Metrics**. The **Metrics** pane appears for the **monitored-linux-vm** virtual machine.
+1. On the left menu pane, scroll down to **Monitoring**, and select **Alerts**. The **Alerts** pane appears for the **monitored-linux-vm** virtual machine.
 
-1. To the right, select **New alert rule**. The **Create alert rule** pane appears.
+1. On the top menu, select **Create** > **Alert Rule**. The **Create an alert rule** pane appears with the **Select a signal** pane open on the right.
 
-    ![Screenshot that shows the button for a new alert rule on the metrics pane.](../media/8-metrics-new-alert-rule-button.png)
+    :::image type="content" source="../media/8-metrics-new-alert-rule-button.png" alt-text="Screenshot that shows the button for a new alert rule on the metrics pane.":::
 
 ### Select the resource
 
-1. Under **Scope**, select the **Select resource** link. The **Select a resource** pane appears.
+1. Under **Scope**, Choose **Select scope**. The **Select a resource** pane appears.
 
-1. In the **Filter by resource type** field, scroll down and select **Virtual machines**.
+1. In the **Filter by resource type** field, scroll down and select **Virtual machines** if it is not already selected.
 
 1. Under **Resource**, select **monitored-linux-vm**.
 
-    ![Screenshot that shows the VM selected on the pane for selecting a resource.](../media/8-alert-select-a-resource-vm.png)
+    :::image type="content" source="../media/8-alert-select-a-resource-vm.png" alt-text="Screenshot that shows the VM selected on the pane for selecting a resource.":::
 
 1. Select **Done**.
 
 ### Create the condition
 
-1. Under **Condition**, select the **Add condition** link. The **Select a signal** pane appears.
-1. In the search box, enter **Percentage CPU**.
+1. Select the **Condition** tab, and the **Select a signal** pane appears on the right.
+1. In the **Search by signal name** search box, enter **Percentage CPU**.
 1. Select **Percentage CPU**.
 
-    ![Screenshot that shows "Percentage CPU" selected as the signal name](../media/8-configure-signal-logic-percentage-cpu.png)
+    :::image type="content" source="../media/8-configure-signal-logic-percentage-cpu.png" alt-text="Screenshot that shows "Percentage CPU" selected as the signal name.":::
 
     The **Configure signal logic** pane appears.
 
@@ -46,19 +46,17 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
    | Setting | Value  |
    |---------|---------|
-   | Operator |    Greater than or equal to     |
    | Aggregation type   |  Average       |
+   | Operator |    Greater than or equal to     |
    | Threshold value   |    90     |
 
-    ![Screenshot that shows the section for alert logic filled out.](../media/8-alert-logic.png)
+    :::image type="content" source="../media/8-alert-logic.png" alt-text="Screenshot that shows the section for alert logic filled out.":::
 
 1. Select **Done**. The **Create alert rule** pane reappears.
 
 ### Add an action
 
-1. Under **Actions**, select the **Add action groups** link. The **Add action groups** pane appears.
-
-1. Select **Create action group**. The **Create action group** pane appears.
+1. Open the **Actions** tab, and select **Create action group**. The **Create an action group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -67,10 +65,11 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     | **Project details** |
     | Subscription  | Concierge Subscription |
     | Resource group  | <rgn>[sandbox resource group name]</rgn> |
+    | Region  | Global |
     | **Instance details** |
-    | Action group name | Enter *Email alerts* |
+    | Action group name | *Email alerts* |
 
-   ![Screenshot that shows the "Add action group" pane filled out.](../media/8-create-action-group-basics.png)
+    :::image type="content" source="../media/8-create-action-group-basics.png" alt-text="Screenshot that shows the 'Add action group' pane filled out.":::
 
 1. Select **Next: Notifications**, and enter the following values for each setting.
 
@@ -78,34 +77,32 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
     |---|---|
     | **Notifications** |
     | Notification type      | Email/SMS/Push/Voice |
-    | Name     | High CPU usage       |
+    | Name     | *High CPU usage*       |
 
-    ![Screenshot that shows the notifications pane filled out with the information from the following table.](../media/8-create-action-group-notifications.png)
+    :::image type="content" source="../media/8-create-action-group-notifications.png" alt-text="Screenshot that shows the notifications pane filled out with the information from the following table.":::
 
     The **Email/SMS message/Push/Voice** pane appears.
 
 1. Tick the **Email** checkbox, and enter your email address to receive the alert notification. If this pane doesn't appear, select **Edit** for the notification type.
   
-   ![Screenshot that shows the "Email/SMS/Push/Voice" pane](../media/8-create-action-group-notifications-email.png)
+    :::image type="content" source="../media/8-create-action-group-notifications-email.png" alt-text="Screenshot that shows the 'Email/SMS/Push/Voice' pane.":::
 
 1. Select **OK**.
 
-1. Select **Review + create**, and then select **Create**. The **Create alert rule** pane appears.
-
 ### Enter alert rule details
 
-1. Under **Alert rule details**, enter the following values for each setting.
+1. Select the **Details** tab, and enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
-    | Alert rule name | Enter *Web server CPU running hot*    |
-    | Description     | Enter *Email alert notifies when the CPU is over 90%* |
+    | Alert rule name | *Web server CPU running hot*    |
+    | Alert rule description | *Email alert notifies when the CPU is over 90%* |
 
-   ![Screenshot that shows the fields for alert details.](../media/8-alert-rule-details.png)
+    :::image type="content" source="../media/8-alert-rule-details.png" alt-text="Screenshot that shows the fields for alert details.":::
 
-1. Select **Create alert rule**.
+1. Select **Review + create**, and then select **Create**. 
 
-Wait a few minutes for this rule to activate.
+Wait for the  **Alert rule created** notification.
 
 ## Trigger the alert
 
@@ -113,7 +110,7 @@ Wait a few minutes for this rule to activate.
 
 1. In the upper menu bar, select **Connect**, and then select **SSH**. The **Connect** pane for your VM appears.
 
-   ![Screenshot that shows the "Connect" button on the VM overview pane](../media/8-vm-overview-connect-button.png)
+    :::image type="content" source="../media/8-vm-overview-connect-button.png" alt-text="Screenshot that shows the "Connect" button on the VM overview pane.":::
 
 1. Under step 4 on the **Connect** page, copy the **azureuser**@ and IP address that follows.
 
@@ -151,4 +148,4 @@ Wait a few minutes for this rule to activate.
 
 1. After a few minutes, the CPU should approach 100 percent, and you'll receive an alert email.
 
-    ![Screenshot of the alert email.](../media/8-alert-email.png)
+    :::image type="content" source="../media/8-alert-email.png" alt-text="Screenshot of the alert email.":::
