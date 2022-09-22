@@ -8,7 +8,7 @@ Here, you'll set up a virtual machine and create a logic app with an Event Grid 
 
 Let's start by creating a new virtual machine in the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) with the account that you used to activate the sandbox.
 
 1. In resource menu or on the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 

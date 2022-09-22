@@ -293,7 +293,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ### Install Windows Failover Clustering Service on myVM3
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and make sure you're in the sandbox subscription. In the Azure portal, i
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), and make sure you're in the sandbox subscription. In the Azure portal, i
 1. In the **search resources, services, and docs (G+/)** field, enter **virtual machines**, and then select **virtual machines.**
 1. Select the **myVM3** VM from the toolbar, select **Connect**, and then select **RDP**.
 1. Select **Download RDP File**, and then connect by using the following credentials:

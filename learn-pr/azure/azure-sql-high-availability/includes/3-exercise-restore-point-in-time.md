@@ -84,7 +84,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example, **aw-server\<unique ID>.database.windows.net**.  
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
 
     1. When you're in the Azure portal, you can enter **AdventureWorks** in the search box to find your database and its associated logical server.
 

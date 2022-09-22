@@ -7,7 +7,7 @@ Use the Learn Live Sandbox to create a function that says "hello" in response to
 ## Instructions
 
 > [!IMPORTANT]
-> Activate the Azure Sandbox to execute the lab instructions in a free subscription and open [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+> Activate the Azure Sandbox to execute the lab instructions in a free subscription and open [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 ### Create a Function App
 
