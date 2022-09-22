@@ -35,7 +35,7 @@ title: Introduction to Microsoft Graph PowerShell
 ###   Example 1: "Describe the function of (connectors, triggers, and actions) and show how you (combine them to create an app)."
 ###   Example 2: "Survey GitHub (notifications, branches, commits, and pull requests) that help you (collaborate, build, and deploy software)."
 ###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
+### Detailed guidance: https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
 summary: Characterize the types of business processes that Microsoft Graph PowerShell can automate. Describe the commands and permissions needed to automate processes with Microsoft Graph PowerShell.
 ###########################################################################
@@ -60,7 +60,7 @@ summary: Characterize the types of business processes that Microsoft Graph Power
 ###   - Start each objective with an upper-case letter.
 ###   - End each objective with a period.
 ###
-### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
+### Detailed guidance: https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
 ###
 abstract: |
   By the end of this module, you'll be able to:
@@ -81,7 +81,7 @@ abstract: |
 ###   - If needed, include software setup requirements with setup links.
 ###
 ### Detailed guidance:
-###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
+###   https://review.learn.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
 ###
 ### Example:
 ###   Module title: "Introduction to Azure Logic Apps"
@@ -96,7 +96,7 @@ prerequisites: |
 ###
 ### Do not edit: will be replaced by the module icon when available
 ###
-iconUrl: /learn/achievements/introduction-to-microsoft-graph-powershell-learn-module.svg
+iconUrl: /training/achievements/introduction-to-microsoft-graph-powershell-learn-module.svg
 ###########################################################################
 ###
 ### Do not edit: level must be 'beginner'
@@ -106,7 +106,7 @@ levels:
 ###########################################################################
 ###
 ### Specify the target roles.
-### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+### Use value(s) from the role taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
 ###
 roles:
   - administrator
@@ -114,14 +114,14 @@ roles:
 ###########################################################################
 ###
 ### Specify the covered products.
-### Use value(s) from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
+### Use value(s) from the product taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
 ###
 products:
   - microsoft-graph-powershell-sdk
 ###########################################################################
 ###
 ### Specify the subject areas.
-### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
+### Use value(s) from the subject taxonomy (https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
 ###
 subjects:
   - cloud-computing
