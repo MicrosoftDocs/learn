@@ -8,7 +8,7 @@ In this unit, you'll create an Azure Relay namespace and then store the primary 
 
 Let's start by creating a new Azure Relay namespace.
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), in the left pane, select **Create a resource**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left pane, select **Create a resource**.
 1. In the **Search the Marketplace** search box, search for and select **Relay**. The **Relay** panel appears.
 
 1. Read the information, and then select **Create**. The **Create namespace** panel appears.

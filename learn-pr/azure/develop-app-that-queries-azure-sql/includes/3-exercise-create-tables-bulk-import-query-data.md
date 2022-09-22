@@ -101,7 +101,7 @@ In this exercise, you'll create a database server and a single database by using
 
 Let's create the database and server to store the data for the app.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the account that you used to activate the sandbox.
 
 1. From the Azure portal menu, under **Azure services**, select **Create a resource**.
 

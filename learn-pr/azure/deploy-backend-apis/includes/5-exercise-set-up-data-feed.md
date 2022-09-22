@@ -84,7 +84,7 @@ Next, in order to publish the function to the Azure Function app you deployed in
 1. Navigate to your Resource Group in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 2. Select your **Function App**.
 
@@ -137,7 +137,7 @@ Now that everything is deployed, it's time to monitor the results in the Azure p
 1. Once the actions are completed, navigate back to the Azure portal to your Azure Function App.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. Select **Functions** under *Functions* > **GetBusData** > **Monitor**.
 

@@ -98,7 +98,7 @@ Now that you have configured your function for deployment, your next step is to 
 
 You will recall from the exercise that you completed in a previous unit, you were required to create the URL to test your function in a web browser. However, there is a much easier method to retrieve the URL for your Azure Function by using the Azure portal. To do so, use the following steps.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account that you used to activate the sandbox.
 
 1. Select **All resources** from the menu on the left.
 

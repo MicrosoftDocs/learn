@@ -18,7 +18,7 @@ Before jumping into hosting the website, we must first package our Node.js web p
 
 ## Create a storage account
 
-Navigate to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) and make sure that you're using the same account that you used to create the Azure Speech resource.
+Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and make sure that you're using the same account that you used to create the Azure Speech resource.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 1. After landing on the **Marketplace** page, in the **Search the Marketplace** box, type **storage account** and press the Enter key.

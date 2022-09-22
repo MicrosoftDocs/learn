@@ -167,7 +167,7 @@ Now let's add to the application the code to retrieve user data from the databas
 3. Leave the code editor open, and switch to the Azure portal in a new tab.
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 4. In the Azure portal menu, select **payment-server-demo**.
 

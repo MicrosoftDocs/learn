@@ -13,7 +13,7 @@ In this exercise, in the Azure portal, you'll create a Service Bus namespace tha
 
 Start by creating the namespace. In Azure Service Bus, a namespace is a container for queues and topics. Each namespace has a unique, fully qualified domain name, with primary and secondary shared access signature (SAS) encryption keys. A sending or receiving component must provide an SAS key to gain access to objects in a namespace.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) with the same credentials that you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same credentials that you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
 

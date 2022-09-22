@@ -24,7 +24,7 @@ You can enter this information into the RDP client, or download a pre-configured
 
 ### Download the RDP file
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), ensure the **Overview** pane for the virtual machine that you created earlier is open. You can also find the VM on the Azure **home** page under **All Resources** if you need to open it. The **Overview** pane has a lot of information about the VM.
 
     - You can see whether the VM is running.
     - Stop or restart it.

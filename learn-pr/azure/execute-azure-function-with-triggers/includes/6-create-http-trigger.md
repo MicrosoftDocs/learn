@@ -6,7 +6,7 @@ Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 ::: zone pivot="csharp"
 
-1. Make sure you're signed into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you're signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **All resources**.
 
@@ -26,7 +26,7 @@ Let's continue using our existing Azure Functions app and add an HTTP trigger.
 
 ::: zone pivot="powershell"
 
-1. Make sure you're signed into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Make sure you're signed into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 

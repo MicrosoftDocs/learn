@@ -26,7 +26,7 @@ To deploy the patient portal web application:
     bash create-high-availability-vm-with-sets.sh <rgn>[sandbox resource group name]</rgn>
     ```
 
-1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources that were created by the script.
+1. When the script finishes, on the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **Resource groups**, then select the **<rgn>[sandbox resource group name]</rgn>** resource group. Review the resources that were created by the script.
 
 ::: zone pivot="portal"
 
@@ -34,7 +34,7 @@ To deploy the patient portal web application:
 
 Now, let's create the load balancer.
 
-1. On the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the **Search services and marketplace** search box, enter *Load Balancer*, and then press <kbd>Enter</kbd>.
 
@@ -353,6 +353,6 @@ Let's test the load balancer setup to show how it can handle availability and he
 
 1. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both VMs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
 
 1. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.

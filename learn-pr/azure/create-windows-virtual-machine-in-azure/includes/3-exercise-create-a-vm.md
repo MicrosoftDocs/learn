@@ -4,7 +4,7 @@ Your company processes video content on Windows VMs. A new city has contracted w
 
 You can create Windows VMs with the Azure portal, Azure CLI, or Azure PowerShell. The best approach is to use the portal because the **Create a virtual machine** wizard collects all the required information and provides hints and validation messages throughout the process.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the Azure portal, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 

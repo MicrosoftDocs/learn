@@ -2,7 +2,7 @@ In this unit, you'll use the Azure portal to create a web app.
 
 ## Create a web app
 
-Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 ::: zone pivot="csharp"
 

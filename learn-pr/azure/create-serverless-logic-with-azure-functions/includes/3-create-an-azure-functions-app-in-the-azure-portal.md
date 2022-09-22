@@ -25,7 +25,7 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="javascript"
 
-1. Sign in to the <a href="https://portal.azure.com/learn.learn.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you used to activate the sandbox.
+1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
 
@@ -55,7 +55,7 @@ Let's create a function app in the Azure portal.
 
 ::: zone pivot="powershell"
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Under **Azure services**, select **Create a resource**.
 
