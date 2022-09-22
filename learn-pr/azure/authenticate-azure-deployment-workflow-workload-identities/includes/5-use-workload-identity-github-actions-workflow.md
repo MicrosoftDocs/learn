@@ -32,7 +32,7 @@ However, some organizations treat these identifiers as secret data or don't allo
 
 :::code language="yaml" source="code/5-workflow.yml" range="16-20" :::
 
-Throughout the Microsoft Learn learning paths for Bicep, we use secrets to store and manage these identifiers. You can decide which approach works best for your organization.
+Throughout the learning paths for Bicep, we use secrets to store and manage these identifiers. You can decide which approach works best for your organization.
 
 ## Deploy to Azure
 
