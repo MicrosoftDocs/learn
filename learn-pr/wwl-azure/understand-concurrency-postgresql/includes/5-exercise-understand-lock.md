@@ -5,7 +5,7 @@
 
 ### Deploy PostgreSQL server
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com).
 
 1. Select **Create a resource**.
     

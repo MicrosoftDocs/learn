@@ -35,7 +35,7 @@ The script takes a few minutes to run. When the script finishes, it will display
 
 You'll use the built-in Query editor in the Azure portal to connect to the database and query the data.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. In the portal, on the home page select **SQL databases**, and then select *Inventory* database located on the server you have just created.
 
@@ -159,7 +159,3 @@ You'll use the built-in Query editor in the Azure portal to connect to the datab
     The answer should be 29.
 
 You've now seen how to run SQL queries against a SQL database. If you have time, try to add some more rows into both tables using **INSERT** statements, modify the rows using **UPDATE** statements, and remove rows using **DELETE** statements.
-
-
-
-

@@ -15,7 +15,7 @@ In this exercise, you'll troubleshoot and resolve the connectivity issue.
 
 1. We're going to test the connection between the two VMs, by sending a ping request between them.
 
-1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in a new tab.
+1. Open the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) in a new tab.
 
 
 1. In the search bar, type **virtual machines** then, under Services, select **Virtual machines**.

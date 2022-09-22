@@ -165,7 +165,7 @@ Azure Data Studio will run on the Ubuntu virtual machine that you created. Howev
 
 Now that everything is installed, you'll connect to the virtual machine with RDP, so you can run Azure Data Studio.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) left menu, select **Virtual machines**, and then click your virtual machine.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) left menu, select **Virtual machines**, and then click your virtual machine.
 1. On the **Overview** page, click **Connect**, and then select **RDP**.
 1. Click **Download RDP File**, and open the file with your RDP client.
 1. If you're warned that the publisher can't be identified, click **Connect**. If you're warned that the identity of the remote computer can't be verified, click **Yes**.

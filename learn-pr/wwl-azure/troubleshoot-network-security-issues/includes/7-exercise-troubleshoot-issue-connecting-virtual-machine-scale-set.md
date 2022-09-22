@@ -24,7 +24,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 ## Check that Network Security Groups are configured correctly
 
-1. In another browser tab, navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. In another browser tab, navigate to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
 
 1. Search for **Network security groups**.
 

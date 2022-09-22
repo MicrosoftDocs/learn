@@ -4,7 +4,7 @@ In this exercise, you'll create and train two custom models that analyze differe
 
 To start the exercise, let's connect to Cloud Shell, which you'll use to run the setup script:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
     :::image type="content" source="../media/4-open-cloud-shell.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
 
@@ -155,7 +155,7 @@ The two custom models, which analyze 1040 and 1099 tax forms, are now complete. 
 
 Now that the composed model is complete, let's test it with an example form:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources** and then select the **formsrecstorage&lt;xxxxx&gt;** storage account, where &lt;xxxxx&gt; is a random number.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select **All resources** and then select the **formsrecstorage&lt;xxxxx&gt;** storage account, where &lt;xxxxx&gt; is a random number.
 1. Under **Data storage** select **Containers** and then select **TestDoc**.
 1. To the right of **f1040_7.pdf**, select **...** and then select **Download**.
 1. Save the PDF document to your local computer and make a note of the saved location.
@@ -172,7 +172,7 @@ Now that the composed model is complete, let's test it with an example form:
 
 Now that you've seen how composed models work, let's remove the resources you created in your Azure subscription.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **Resource groups**.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select **Resource groups**.
 1. In the list of **Resource groups**, select **FormsRecognizerResources**, and then select **Delete resource group**. 
 1. In the **TYPE THE RESOURCE GROUP NAME** textbox, type **FormsRecognizerResources** and then select **Delete**. Azure deletes the Form Recognizer resource and the storage account.
 

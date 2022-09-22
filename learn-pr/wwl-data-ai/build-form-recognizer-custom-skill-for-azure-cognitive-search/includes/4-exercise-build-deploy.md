@@ -4,7 +4,7 @@ In this exercise, you'll create and deploy a web service that acts as a custom s
 
 To start the exercise, let's connect to Cloud Shell, which you'll use to run the setup script:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
+1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select the **[>_]** (Cloud Shell) button at the top of the page to the right of the search box. This opens a Cloud Shell pane at the bottom of the portal.
 
     :::image type="content" source="../media/4-open-cloud-shell.png" alt-text="Screenshot showing how to open Cloud Shell in the Azure portal.":::
 

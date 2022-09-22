@@ -6,7 +6,7 @@ Your company obtains a custom domain name for a new website. You need to use Azu
 
 ## Skills measured
 
-Configuring Azure DNS is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Configuring Azure DNS is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 

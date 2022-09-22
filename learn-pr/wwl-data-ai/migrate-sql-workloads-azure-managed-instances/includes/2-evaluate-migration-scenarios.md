@@ -112,7 +112,7 @@ COPY_ONLY backup is the only manual method that's allowed. The transaction log m
 
 Create an Azure SQL Database managed instance by following these steps:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and then select **Create a resource** in the upper-left corner.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), and then select **Create a resource** in the upper-left corner.
 1. Search for **managed instance**, select **Azure SQL managed instance**, and then select **Create**.
 
     ![Image showing Create a managed instance in the Azure portal](../media/2-create-managed-instance.png)
