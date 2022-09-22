@@ -13,7 +13,7 @@ Data exists in three basic states: data at rest, data in motion, and data in pro
 
 - **Data in process** is data that's open and being changed. Data in motion includes writing an email message, saving your work files, or ordering from a website.
 
-There are different encryption methods for each of the data states. The following table summarizes the encryption methods. 
+There are different encryption methods for each of data state. The following table summarizes the methods. 
 
 | Data state | Encryption method | Encryption level |
 | --- | --- |
@@ -24,7 +24,7 @@ There are different encryption methods for each of the data states. The followin
 Large organizations, governments, and military entities use data classification to manage their data's integrity. The data classification process has yielded common metadata attributes that enable us to label data as _Public_, _Confidential_, or _Restricted_. After data is classified, you can implement data protection measures for highly classified data.
 
 > [!NOTE]
-> You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more about this state, see [Defense in Depth - Keys to Cybersecurity](https://cyber.org/find-curricula/defense-depth-keys-cybersecurity).
+> You might be familiar with another state called **Defense in depth**. This state is a cybersecurity strategy that employs a layered approach to slow the advance of an attack aimed at acquiring unauthorized access to information. To learn more, watch the video, [Defense in depth security in Azure](https://learn.microsoft.com/shows/azure-videos/defense-in-depth-security-in-azure).
 
 ### Things to know about data at rest and TDE
 

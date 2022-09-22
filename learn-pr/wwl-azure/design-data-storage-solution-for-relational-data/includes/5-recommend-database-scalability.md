@@ -28,8 +28,10 @@ Implement vertical scaling by using SQL Database elastic database pools. The dat
 you can allocate enough capacity in the pool to manage the spikes for the group.
 
 To properly configure SQL elastic database pools to reduce server costs, choose the appropriate purchasing model and service tier:
-- DTU model: Basic, Standard, and Premium tiers
-- vCore model: General Purpose and Business Critical tiers
+
+| DTU model | vCore model |
+| --- | --- |
+| **Basic**, **Standard**, and **Premium** tiers  | **General Purpose** and **Business Critical** tiers |
 
 #### Business scenario
 
