@@ -215,7 +215,7 @@ Now that we have multiple output bindings, testing becomes a little trickier. In
     ```json
     {
         "id": "docs",
-        "url": "https://docs.microsoft.com/azure"
+        "url": "https://learn.microsoft.com/azure"
     }
     ```
 

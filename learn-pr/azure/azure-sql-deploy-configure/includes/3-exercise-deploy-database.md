@@ -13,7 +13,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     * **Services**: If you select this, you can see your existing resources (that is, already deployed) all together. For example, if you selected Azure SQL, you would see all of your SQL virtual machines, databases, logical servers, managed instances, and pools.
     * **Resources**: This searches based on existing resource names. For example, if you searched for "adventureworks," any resources with "adventureworks" in the name would be returned here.
     * **Marketplace**: This allows you to deploy new resources from Azure Marketplace.
-    * **Documentation**: This searches `docs.microsoft.com` for relevant documentation.
+    * **Documentation**: This searches `learn.microsoft.com` for relevant documentation.
     * **Resource groups**: This allows you to search based on resource group name.
 
 1. Select **Azure SQL** under **Marketplace**. This step will bring you to the Azure SQL create experience.

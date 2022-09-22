@@ -568,7 +568,7 @@ This section demonstrates running the .NET Upgrade Assistant against a newly cre
    >
    [13:56:39 INF] Applying upgrade step Update source code
    [13:56:41 INF] Source updates complete with 1 diagnostics remaining which require manual updates
-   [13:56:41 WRN] Manual updates needed to address: UA0013_C@SourceFile(C:\Users\Jon\source\repos\AspNetMvcTest\App_Start\BundleConfig.cs[261..277)): Script and style bundling works    differently in ASP.NET Core. BundleCollection should be replaced by alternative bundling technologies. https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+   [13:56:41 WRN] Manual updates needed to address: UA0013_C@SourceFile(C:\Users\Jon\source\repos\AspNetMvcTest\App_Start\BundleConfig.cs[261..277)): Script and style bundling works    differently in ASP.NET Core. BundleCollection should be replaced by alternative bundling technologies. https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
    [13:56:41 INF] Upgrade step Update source code applied successfully
    Please press enter to continue...
    ```
