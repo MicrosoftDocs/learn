@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.model-data-azure-cosmos-db-postgresql.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "Test your understanding of creating a database and altering its structure in Azure Cosmos DB for PostgreSQL."
+  ms.date: 8/10/2022
+  author: sadukie
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "There is a distributed table to track the events. Suppose the app users want to categorize the events, and a small list of categories will be provided. What type of table would be used for these categories?"
+    choices:
+    - content: "Reference table"
+      isCorrect: true
+      explanation: "The categories table would be similar to the event_types and payment_merchants tables in this module."
+    - content: "Distributed table"
+      isCorrect: false
+      explanation: "Try again. A distributed table is meant for larger amounts of data."
+    - content: "Local table"
+      isCorrect: false
+      explanation: "Try again. A local table lives on the coordinator node and is not meant to be joined in queries with reference or distributed tables."
+  - content: "Which of these scenarios is incompatible for foreign keys in Azure Cosmos DB for PostgreSQL?"
+    choices:
+    - content: "From reference tables to distributed tables"
+      isCorrect: true
+      explanation: "In order for foreign keys to be enforced, the referencing and referenced rows need to be stored on the same node. Going from a reference table to a distributed table that spans multiple nodes is not supported."
+    - content: "Between reference tables and local tables"
+      isCorrect: false
+      explanation: "Try again. Azure Cosmos DB for PostgreSQL does support enforcing foreign keys between reference tables and local tables."
+    - content: "From a distributed table to a reference table"
+      isCorrect: false
+      explanation: "Try again. Azure Cosmos DB for PostgreSQL does support enforcing foreign keys starting a distributed table and going to a reference table. The data integrity is enforceable since each worker node has its own copy of a reference table."
+  - content: "The Woodgrove Bank developers added a payment_categories table. Which command will show the table and its distribution details?"
+    choices:
+    - content: "SELECT * FROM citus_tables;"
+      isCorrect: true
+      explanation: "The citus_tables query displays the table type, the distribution column, as well as the colocation id."
+    - content: "\dt"
+      isCorrect: false
+      explanation: "Try again. \dt lists all tables in the database. It does not include distribution information."
+    - content: "\d payment_categories"
+      isCorrect: false
+      explanation: "Try again. \d lists the table's schema information. It does not include distribution information."
