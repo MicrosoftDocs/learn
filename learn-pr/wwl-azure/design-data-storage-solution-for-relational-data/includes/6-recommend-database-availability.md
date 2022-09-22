@@ -38,7 +38,7 @@ The image illustrates the availability architecture for the vCore Business Criti
 
 The Hyperscale service tier is available only in Azure SQL Database. This service tier has a unique architecture because it uses a tiered layer of caches and page servers to expand the ability to quickly access database pages without having to access the data file directly.
 
-:::image type="content" source="../media/hyperscale-architecture.png" alt-text=""Diagram that shows SQL database high availability in the vCore Hyperscale tier." border="false":::
+:::image type="content" source="../media/hyperscale-architecture.png" alt-text="Diagram that shows SQL database high availability in the vCore Hyperscale tier." border="false":::
 
 The image illustrates the availability architecture for the vCore Hyperscale tier:
 
