@@ -6,7 +6,7 @@ Your next decision is how to support scalability for a relational database. You 
 
 Azure SQL Database supports dynamic scalability. You can easily change resources allocated to your databases, such as CPU power, memory, I/O throughput, and storage with minimal downtime. Use the Azure portal to scale an Azure SQL Database without changing the existing infrastructure or purchasing new hardware.
 
-### Things to know about Azure SQL Database dynamic scalability
+### Things to know about dynamic scalability
 
 Review the following characteristics of dynamic scalability for an Azure SQL database:
 
@@ -35,7 +35,7 @@ To properly configure SQL elastic database pools to reduce server costs, choose 
 
 Let's explore a business scenario for using vertical scaling. A small business experiences rapid growth globally. The company needs to maintain and scale separate SQL databases for each location. The rates of growth and database load vary significantly. Resource requirements are unpredictable. The ideal dynamic scaling solution is to use SQL elastic database pools with vertical scaling. You can scale, manage performance, and manage costs for a set of SQL databases. For more information, see [SQL elastic database pools](/azure/azure-sql/database/elastic-pool-overview).
 
-:::image type="content" source="../media/elastic-pools.png" alt-text="Diagram of SQL elastic database pools and the scaling capability for different service tiers." border="false":::
+:::image type="content" source="../media/elastic-pools.png" alt-text="Diagram of SQL elastic database pools and the scaling capability for different service tiers." lightbox="../media/elastic-pools.png" border="false":::
 
 ### Things to know about horizontal scaling
 
@@ -47,9 +47,9 @@ Horizontal scaling is managed by using the SQL Database [Elastic Database client
 
    | Azure SQL Managed Instance | Azure SQL Database |
    | --- | --- |
-   | Basic, Standard, and General Purpose tiers: Read scale-out is unavailable | Basic, Standard, and General Purpose tiers: Read scale-out is unavailable  |
-   | Business Critical tier: Read scale-out is auto-provisioned | Business Critical and Premium tiers: Read scale-out is auto-provisioned | 
-   | n/a | Hyperscale tier: Read scale-out is available if at least one secondary replica is created |
+   | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable | **Basic**, **Standard**, and **General Purpose** tiers: Read scale-out is unavailable  |
+   | **Business Critical** tier: Read scale-out is auto-provisioned | **Business Critical** and **Premium** tiers: Read scale-out is auto-provisioned | 
+   | No applicable tier | **Hyperscale** tier: Read scale-out is available if at least one secondary replica is created |
 
 #### Business scenario: Sharding
 
@@ -71,20 +71,20 @@ Let's explore a business scenario for applying read scale-out provisioning. Your
 
 The following image shows how horizontal read scale-out provisioning is applied in the Business Critical service tier:
 
-:::image type="content" source="../media/business-critical-service-tier-read-scale-out.png" alt-text="Diagram that shows read scale-out provisioning in a business critical service tier." border="false":::
+:::image type="content" source="../media/business-critical-service-tier-read-scale-out.png" alt-text="Diagram that shows read scale-out provisioning in a business critical service tier." lightbox="../media/business-critical-service-tier-read-scale-out.png" border="false":::
 
 The data and log files all run on direct-attached SSD, which significantly reduces network latency. In this architecture group, there are three secondary replicas. If any type of failure occurs, failing over to a secondary replica is fast because the replica already exists and has the data attached to it.
 
 The Premium and Business Critical tiers for Azure SQL Database and Azure SQL Managed Instance have an **Always On Availability Group**. This group is for disaster recovery and high-availability of the application. There's a primary read-write replica, and several secondary read-only replicas. The secondary replicas are provisioned with the same compute size as the primary replica. You set the connection string option to decide whether the connection is routed to the write replica or to a read-only replica.
 
-:::image type="content" source="../media/business-critical-architecture.png" alt-text="Diagram that shows the Business Critical tier, where the data and log files all run on direct-attached SSD, which significantly reduces network latency." border="false":::
+:::image type="content" source="../media/business-critical-architecture.png" alt-text="Diagram that shows the Business Critical tier, where the data and log files all run on direct-attached SSD, which significantly reduces network latency." lightbox="../media/business-critical-architecture.png" border="false":::
 
 You can disable and re-enable read scale-out on single databases and elastic pool databases in the Premium or Business Critical service tiers. These functions are available in the Azure portal, PowerShell, and the REST API.
 
 > [!NOTE]
 > Data changes made on the primary replica propagate to read-only replicas asynchronously. Within a session connected to a read-only replica, reads are always transactionally consistent. However, because data propagation latency is variable, different replicas can return data at slightly different points in time relative to the primary replica and each other.
 
-### Things to consider when choosing a scaling solution
+### Things to consider when choosing scalability solutions
 
 Review the following scaling scenarios, and think about which database scaling strategy can work for Tailwind Traders.
 

@@ -18,7 +18,7 @@ Review the following characteristics of the SQL Database deployment option:
 
 - There are two primary pricing options for SQL Database: DTU and vCore. A serverless option is also available for a single database.
 
-   :::image type="content" source="../media/select-azure-sql-database-pricing-model.png" alt-text="Diagram of the two primary Azure SQL Database pricing options, vCore and DTU." border="false":::
+   :::image type="content" source="../media/select-azure-sql-database-pricing-model.png" alt-text="Diagram of the two primary Azure SQL Database pricing options, vCore and DTU." lightbox="../media/select-azure-sql-database-pricing-model.png" border="false":::
 
    - **vCore**: A vCore is a virtual core. You choose the number of virtual cores and have greater control over your compute costs. This option supports the Azure Hybrid Benefit for SQL Server and reserved capacity (pay in advance).
 
