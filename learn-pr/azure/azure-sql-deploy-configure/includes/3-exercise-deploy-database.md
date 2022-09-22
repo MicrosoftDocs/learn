@@ -5,7 +5,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 1. Sign in to the Azure portal by using the same account that you activated the sandbox with.
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. In the top search bar, enter **Azure SQL** and wait for results so you can review what appears.  
 

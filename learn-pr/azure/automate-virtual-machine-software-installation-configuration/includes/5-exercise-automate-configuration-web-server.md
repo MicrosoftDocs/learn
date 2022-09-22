@@ -377,7 +377,7 @@ Now that you've created a PowerShell script that contains the configuration step
 
 1. Use the following steps to make your PowerShell script publicly accessible:
 
-    1. Open the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) in a new browser window using the same account that you used when you started this module.
+    1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in a new browser window using the same account that you used when you started this module.
 
     1. In the portal menu, select **Storage accounts**.
 

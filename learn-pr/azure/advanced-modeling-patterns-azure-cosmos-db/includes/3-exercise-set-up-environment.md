@@ -20,7 +20,7 @@ dotnet run --load-data
 
 In the **database-v2** container, where data is stored in individual containers, run a query to get the product category name, and then view the request charge for that query.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 1. On the left pane, select **Azure Cosmos DB**.
 1. Select the Azure Cosmos DB account with the name that starts with **cosmicworks**.
 1. On the left pane, select **Data Explorer**.

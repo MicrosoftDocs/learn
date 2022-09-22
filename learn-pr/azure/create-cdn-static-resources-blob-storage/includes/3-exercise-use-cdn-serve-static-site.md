@@ -6,7 +6,7 @@ Now, you'll create a CDN and connect that CDN to the website that you've created
 
 [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 

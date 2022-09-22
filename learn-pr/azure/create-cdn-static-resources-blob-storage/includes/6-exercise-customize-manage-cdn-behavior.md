@@ -10,11 +10,11 @@ If you haven't already, verify the CDN is delivering the same content as your so
 
 ### Change the Origin Website Files
 
-1. Open the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) if it isn't open already.
+1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) if it isn't open already.
 
 1. Open the CDN **endpoint**. In the middle pane, select **Overview**.
 
-1. In another tab, open a second copy of the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
+1. In another tab, open a second copy of the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. On the Azure portal menu or from the **Home** page, select **Storage accounts**.
 
@@ -52,7 +52,7 @@ In this next section, you'll configure the cache settings and show the effects o
 
 ### Change the Caching Settings
 
-1. Open the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) if it isn't open already.
+1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) if it isn't open already.
 
 1. Open the CDN **endpoint**. Under **Settings**, select **Caching rules**.
 

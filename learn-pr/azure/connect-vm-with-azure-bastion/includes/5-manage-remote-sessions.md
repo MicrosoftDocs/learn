@@ -11,7 +11,7 @@ To generate these logs, you must configure diagnostic settings on Azure Bastion.
 
 In the Azure Bastion resource, you add diagnostic settings under **Monitoring**. You need a storage account to stream the logs to. If you don't already have a storage account, create one before you try these steps in your own subscription.
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), search for or select **Bastions**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for or select **Bastions**.
 1. Select the Azure Bastion resource.
 1. Under **Monitoring**, select **Diagnostics settings**.
 1. Select **Add diagnostic setting**.

@@ -5,7 +5,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 1. In the Azure portal, go to your Azure SQL Database instance (not logical server).
 
     > [!div class="nextstepaction"]
-    > [Azure Portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. On the left pane, under **Security**, select **Data Discovery & Classification**.  
 

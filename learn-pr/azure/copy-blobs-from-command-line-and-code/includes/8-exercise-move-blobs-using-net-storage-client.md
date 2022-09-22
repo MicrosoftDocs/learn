@@ -189,7 +189,7 @@ We'll start by downloading and building an existing .NET Core application. You m
 
 ## Test the TransferBlobs application
 
-1. Using the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), move to your source (hot) storage account.
+1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source (hot) storage account.
 
 1. Under **Security + networking**, select **Access keys**. Make a copy of the connection string for **key** in a text file on your local computer.
 
@@ -233,7 +233,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. The application should list the name of each matching blob that it finds, and move them.
 
-1. When the application has finished, return to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
+1. When the application has finished, return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Move to your destination (cool) storage account.
 

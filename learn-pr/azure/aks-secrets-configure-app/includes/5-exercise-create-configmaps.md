@@ -9,7 +9,7 @@ The back-end part of the application is deployed and now you need to deploy the 
 
 1. Start by **activating the Azure sandbox above**.
 
-1. Once it's activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+1. Once it's activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
 
 -->
 

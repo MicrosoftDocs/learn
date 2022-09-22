@@ -7,7 +7,7 @@ Use the following procedure to deploy an Azure Database for MySQL flexible serve
 1. Navigate to the Azure portal for the sandbox
 
    > [!div class="nextstepaction"]
-   > [Azure portal for the sandbox](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true)
+   > [Azure portal for the sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 
 2. Use the **Search resources, services, and docs** text box at the top of the page to search for *MySQL* and select **Azure Database for MySQL servers**.
 

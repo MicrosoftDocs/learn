@@ -26,7 +26,7 @@ To create a resource group in the Azure portal:
 
 ## Create a storage account
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) in your favorite browser.
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in your favorite browser.
 
 1. On the Azure portal menu or from the home page, select **Create a resource**.
 

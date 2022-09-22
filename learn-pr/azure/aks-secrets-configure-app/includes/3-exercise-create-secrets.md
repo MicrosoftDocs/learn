@@ -9,7 +9,7 @@ As we mentioned in the ["Before We Start"](/learn/modules/aks-secrets-configure-
 
 1. Start by **activating the Azure sandbox.**
 
-1. When the sandbox is activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. When the sandbox is activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 -->
 

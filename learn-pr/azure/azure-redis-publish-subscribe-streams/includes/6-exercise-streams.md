@@ -6,7 +6,7 @@ In this exercise, you will implement Streams in an Azure Cache for Redis instanc
 
 Entries are added to a new or existing stream using the ``XADD`` command. The stream is automatically created if it does not already exists.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. Within the **Azure services** category, select **More services**, select the **Databases** category and then select **Azure Cache for Redis**.
 

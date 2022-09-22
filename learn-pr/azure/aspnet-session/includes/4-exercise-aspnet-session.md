@@ -230,7 +230,7 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
 
 ## View cache activity
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Select the menu button, and then select **All resources**.
 

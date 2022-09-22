@@ -361,7 +361,7 @@ The sample logger currently is set to write to a local file. Although this appro
 
 ## View the log data and examine the Application Insights telemetry
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. In the search box, enter **Storage**, select **Storage accounts**, and then press <kbd>Enter</kbd>.
 

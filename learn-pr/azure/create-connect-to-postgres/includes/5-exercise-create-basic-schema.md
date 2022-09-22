@@ -13,7 +13,7 @@ Azure has an automatic firewall for our server - preventing all external parties
 1. Go to the Azure portal. Select **All Resources** from the left-hand menu, and select your newly-created server. The **Overview** page for your server opens and provides options for further configuration.
 
     > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
     :::image type="content" source="../media/5a-firewall.png" alt-text="Azure Database for PostgreSQL - Search for server.":::
 
 1. In the left nav bar, under **Settings**, select **Connection security**.

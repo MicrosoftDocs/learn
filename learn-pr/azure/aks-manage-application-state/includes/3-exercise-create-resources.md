@@ -5,7 +5,7 @@ Now that you understand the basic concepts of external states and how to deal wi
 >[!NOTE]
 > The Learn sandbox system that enables you to complete these modules without using your own subscription is currently down for maintenance. This module can still be completed using a subscription you own, but please be aware that the steps might skip some instructions necessary for you to deploy, such as logging into your subscription or cleaning up the deployment at the end of the module. Let's go!
 
-1. Sign into [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using your own subscription.
+1. Sign into [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using your own subscription.
 
 1. Select **Resource groups** on the left.
 

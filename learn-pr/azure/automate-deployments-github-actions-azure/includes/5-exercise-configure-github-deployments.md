@@ -85,7 +85,7 @@ Next, to publish the function to the Azure Function app you deployed in the prev
 1. Navigate to your Resource Group in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 2. Select your **Function App**.
 
@@ -207,7 +207,7 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 2. Navigate to your Azure Static Web App in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 3. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
 
@@ -222,7 +222,7 @@ mssql://cloudadmin:[yourPassword]@[serverName].database.windows.net/bus-db?encry
 1. Navigate to your Azure Static Web App in the Azure portal.
 
 > [!div class="nextstepaction"]
-> [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+> [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 2. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
 

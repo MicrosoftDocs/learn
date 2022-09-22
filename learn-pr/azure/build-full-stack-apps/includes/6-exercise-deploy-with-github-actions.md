@@ -35,7 +35,7 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 2. Navigate to your Azure Static Web App in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 3. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **Configuration** under *Settings* on the left-hand menu.
 
@@ -80,7 +80,7 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 1. Navigate to your Azure Static Web App in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select the **URL**.
 
@@ -96,7 +96,7 @@ In order for your Azure Static Web App to access your Azure SQL Database, you mu
 1. Navigate to your Azure Static Web App in the Azure portal.
 
     > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.learn.microsoft.com/?azure-portal=true)
+    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. From the *Overview* pane of your Azure Static Web App in the Azure portal, select **GitHub Action runs** under *Deployment history*.
 
