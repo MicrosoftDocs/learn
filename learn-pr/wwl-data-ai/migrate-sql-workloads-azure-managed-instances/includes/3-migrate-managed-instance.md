@@ -203,7 +203,7 @@ The service uses the Data Migration Assistant to generate assessment reports tha
 
 Before using the Data Migration Assistant, you must register a resource provider in Azure:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select **All services**, and then select **Subscriptions**.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All services**, and then select **Subscriptions**.
 1. Select the subscription where you want to create the instance of the Azure Database Migration Service, and then select **Resource providers**.
 
     ![Viewing Resource providers in the Azure portal](../media/3-viewing-resource-providers.png)
@@ -237,7 +237,7 @@ To use the Azure Database Migration Service to migrate a database to Azure SQL D
 
 Now you have a migration service instance, you can add a migration project to it:
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select **All services**, search for **Azure Database Migration Service**, and then select **Azure Database Migration Services**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All services**, search for **Azure Database Migration Service**, and then select **Azure Database Migration Services**.
 1. On the Azure Database Migration Service screen, select the instance, and then select **+ New Migration Project**.
 1. On the **New migration project** screen, specify a name for the project, and in the **Source server type** text box, select **SQL Server**. In the **Target server type** text box, select **Azure SQL Database managed instance**, and then, for **Choose type of activity**, select **Online data migration**.
 

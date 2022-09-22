@@ -6,7 +6,7 @@ You need to evaluate using the Query Store to identify query plan regressions an
 
 If you've closed your RDP connection to the Ubuntu SQL Server, reconnect it now:
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), in the left menu, select **Virtual machines**, and then select your Ubuntu virtual machine.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, select **Virtual machines**, and then select your Ubuntu virtual machine.
 1. In the **Overview** page, select **Connect**, and then select **RDP**.
 1. Click **Download RDP File**, and open the file with your RDP client.
 1. If you're warned that the publisher can't be identified, click **Connect**. If you're warned that the identity of the remote computer can't be verified, click **Yes**.

@@ -4,7 +4,7 @@ In this exercise, you'll set up a Forms Recognizer resource in your Azure subscr
 
 Before you can call the Form Recognizer service, you must create a resource to host that service in Azure:
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), on the home page, select **Create a resource**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), on the home page, select **Create a resource**.
 1. In the **Search services and marketplace** textbox, type **Forms Recognizer** and then press <kbd>Enter</kbd>.
 1. Under **Forms Recognizer**, select **Create**.
 

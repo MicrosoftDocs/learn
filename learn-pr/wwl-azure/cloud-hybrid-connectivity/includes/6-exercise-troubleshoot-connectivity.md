@@ -13,7 +13,7 @@ There are three Azure virtual networks (VNets) in a hub and spoke topology.
 
 ## Verify the network topology
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com)  using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com)  using the same account you used to activate the sandbox.
 
 1. Familiarize yourself with the network topology and check it matches the diagram above.
 

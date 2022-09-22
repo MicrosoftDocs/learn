@@ -31,7 +31,7 @@ In this exercise, you'll use what you've learned to go through steps to troubles
 
 ## Check all the virtual machines are responding on port 80
 
-1. Navigate to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) in another browser tab.
+1. Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in another browser tab.
 
 1. Select **Virtual machines**.
 

@@ -2,7 +2,7 @@ In this unit, first you create an Azure Maps account. Then, navigate the Azure p
 
 ## Create an Azure Maps account
 
-1. Right click on [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), and select **Open in new window**.
+1. Right click on [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and select **Open in new window**.
 
 1. Click **+ Create a resource**. Type "Maps" into the search bar, and select **Azure Maps**.
 

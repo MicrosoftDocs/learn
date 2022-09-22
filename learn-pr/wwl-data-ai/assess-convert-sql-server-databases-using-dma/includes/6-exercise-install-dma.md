@@ -7,7 +7,7 @@ In this exercise, you'll install the Data Migration Assistant.
 
 ## Download the RDP connection file from Azure
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 1. In the portal menu, select **Virtual Machines**.
 1. In the list, select **SQL2019Server**.
 1. On the **Overview** page, at the top, select **Connect**.

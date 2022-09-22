@@ -2,7 +2,7 @@
 
 In this task, we will create a new storage account.
 
-1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true)
+1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
 1. Select Create a resource.
 1. Under Categories, select Storage.
 1. Unders Storage Account, select Create.

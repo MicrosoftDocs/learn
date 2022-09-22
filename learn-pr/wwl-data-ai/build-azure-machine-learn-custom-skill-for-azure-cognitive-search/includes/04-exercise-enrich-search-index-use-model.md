@@ -10,7 +10,7 @@ In this exercise, you'll create an Azure Machine Learning studio model, then tra
 
 Before you enrich your search index, create an Azure Machine Learning workspace. The workspace will give you access to the Azure Machine Learning studio, a graphical tool you can use to build AI models and deploy them for use.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true).
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 1. Select **+ Create a resource**.
 1. Search for machine learning, and then select **Azure Machine Learning**.
 1. Select **Create**.
@@ -221,7 +221,7 @@ Now create a new Cognitive Search service and enrich an index using a custom ski
 
 #### Create a test file
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select Resource groups.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select Resource groups.
 1. Select **aml-for-acs-enrichment**.
 
     :::image type="content" source="../media/navigate-storage-account.png" alt-text="A screenshot showing selecting a storage account in the Azure portal." lightbox="../media/navigate-storage-account.png":::

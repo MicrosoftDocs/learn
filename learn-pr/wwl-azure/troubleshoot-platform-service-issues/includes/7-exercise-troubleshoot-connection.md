@@ -20,7 +20,7 @@ Using the Cloud Shell on the right, run these commands to create the example top
 
 You need to find the causes of connectivity problems to an Azure virtual machine using SSH.
 
-Sign in to the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) with the same credentials you used to start the sandbox.
+Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same credentials you used to start the sandbox.
 
 1. In the resource menu, select All **Resources**.
 

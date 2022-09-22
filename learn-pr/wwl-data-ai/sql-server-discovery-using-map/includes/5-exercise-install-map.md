@@ -7,7 +7,7 @@ In this exercise, you'll install the MAP toolkit on a test computer, then restor
 
 ## Download the RDP connection file from Azure
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account with which you activated the sandbox.
 1. In the portal menu, select **Virtual Machines**.
 1. In the list, select **ReportingServer**.
 1. On the **Overview** page, at the top, select **Connect**.

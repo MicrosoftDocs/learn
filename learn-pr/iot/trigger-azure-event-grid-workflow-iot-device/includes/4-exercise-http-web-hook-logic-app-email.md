@@ -2,7 +2,7 @@ In this unit, you'll create a new logic app that will be triggered via an HTTP w
 
 ## Create the logic app
 
-1. In the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true), select **+Create a resource** to open Azure Marketplace.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **+Create a resource** to open Azure Marketplace.
 1. On the **New** page, in the **Search the Marketplace** box, enter and search for **Logic App**.
 1. In the search results, select the **Logic App** item.
 1. On the **Logic App** item, select **Create**.

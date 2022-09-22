@@ -4,7 +4,7 @@ In this exercise, you'll resolve the issue.
 
 ## Update load balancer rules
 
-1. Open the [Azure portal](https://portal.azure.com/learn.learn.microsoft.com?azure-portal=true) in a new tab, select **Load balancers**.
+1. Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) in a new tab, select **Load balancers**.
 
     :::image type="content" source="../media/5-load-balancer-search.png" alt-text="A screenshot showing searching for load balancers.":::
 
