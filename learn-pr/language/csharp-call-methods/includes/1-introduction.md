@@ -13,7 +13,7 @@ In this module, you'll:
 - Write code that calls stateless methods in the .NET Class Library.
 - Create a new instance of .NET Class Library classes to call methods that maintain state.
 - Use Intellisense to learn more about a method, including its overloaded versions, its return value type, and its input parameter data types.
-- Use Microsoft Docs to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more.
+- Use Microsoft Learn to research what a method does, its overloaded versions, its return value type, its input parameters and what each parameter represents, and more.
 
 ## Prerequisites
 

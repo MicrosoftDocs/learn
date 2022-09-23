@@ -102,9 +102,9 @@ Identify the subtasks of *module title*
 
     **Steps**:
 
-    1. Create subnet for Azure Firewall (AzureFirewallSubnet) on same Vnet as WVD(?) Resource: [Tutorial: Deploy & configure Azure Firewall using the Azure portal | Microsoft Docs](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#set-up-the-network)
+    1. Create subnet for Azure Firewall (AzureFirewallSubnet) on same Vnet as WVD(?) Resource: [Tutorial: Deploy and configure Azure Firewall using the Azure portal](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#set-up-the-network)
     1. [Deploy firewall](https://learn.microsoft.com/azure/firewall/tutorial-firewall-deploy-portal#deploy-the-firewall)
- 
+
 1. **Allow outbound network access for Windows Virtual Desktop**
 
     Allow outbound network access from the host pool to Windows Virtual Desktop:
