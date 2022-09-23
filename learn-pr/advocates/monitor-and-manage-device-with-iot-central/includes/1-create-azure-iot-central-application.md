@@ -1,8 +1,12 @@
-You'll begin by a creating a device in Azure IoT Central that defines the data and commands that can be exchanged with the IoT device.
+Azure IoT Central applications can be customized for each case.
+
+In the IoT enabled coffee machines example, there will be one application to monitor and manage your devices spread around the world.
+
+You'll begin by creating an Azure IoT Central application that defines the data and commands to be exchanged with the IoT device.
 
 ## Create the Coffee Maker application
 
-In this unit, you sign in to IoT Central and create a new custom application. An application created using a standard pricing plan.
+In this unit, you sign in to Azure IoT Central and create a new custom application. An application created using a standard pricing plan.
 
 1. Start by **activating the Azure sandbox above**.
 
@@ -29,7 +33,7 @@ In this unit, you sign in to IoT Central and create a new custom application. An
         | Application URL | Optionally edit the URL, which is required if the name you selected is already in use. |
         | Template | Select **Custom application** as the application template.
         | Region | Select a location that is close to you; see the information below this table for available regions. |
-        | Pricing plan | Select **Standard 0** to complete the exercises in this module. (To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/).) |
+        | Pricing plan | Select **Standard 0** (To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/)). |
 
         <!-- Resource selection -->  
         [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -42,3 +46,6 @@ In this unit, you sign in to IoT Central and create a new custom application. An
 
 1. Click the link for your **IoT Central Application URL**, such as https://coffee-maker-1234.azureiotcentral.com.
 
+### Check your work
+
+Your IoT Central custom application is now live and ready to connect to IoT Devices.
