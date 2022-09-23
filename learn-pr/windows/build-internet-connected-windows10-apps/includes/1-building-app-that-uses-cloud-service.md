@@ -177,7 +177,7 @@ We're now going to build the part of our English-language teaching app that focu
                     return imageUrl;
                 }
                 else
-                    return "https://docs.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
+                    return "https://learn.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
             }
     
             static SearchResult PerformBingImageSearch(string searchTerms)
@@ -345,7 +345,7 @@ We're now going to build the part of our English-language teaching app that focu
                 }
                 else
                 {
-                    return "https://docs.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
+                    return "https://learn.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
                 }
             }
     
@@ -506,7 +506,7 @@ We're now going to build the part of our English-language teaching app that focu
                     return imageUrl;
                 }
                 else
-                    return "https://docs.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
+                    return "https://learn.microsoft.com/learn/windows/build-internet-connected-windows10-apps/media/imagenotfound.png";
             }
     
             static SearchResult PerformBingImageSearch(string searchTerms)

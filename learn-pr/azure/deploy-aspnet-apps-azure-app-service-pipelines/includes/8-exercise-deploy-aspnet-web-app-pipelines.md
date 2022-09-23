@@ -63,7 +63,7 @@ Now, it's time to configure the Azure Pipeline you used to provision Azure resou
    # ASP.NET
    # Build and test ASP.NET projects.
    # Add steps that publish symbols, save build artifacts, deploy, and more:
-   # https://docs.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
+   # https://learn.microsoft.com/azure/devops/pipelines/apps/aspnet/build-aspnet-4
 
    variables: 
    - group: AzureResourcesVariableGroup

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-your-first-speech-to-text-app.exercise-create-single-shot-recognition-speech-to-text-app
+title: Exercise - Create a single-shot recognition speech-to-text application
+metadata:
+  title: Exercise - Create a single-shot recognition speech-to-text application
+  description: In this exercise, you'll create a single-shot recognition speech-to-text application.
+  ms.date: 10/01/2021
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: bash
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-exercise-create-single-shot-recognition-speech-to-text-app.md)]

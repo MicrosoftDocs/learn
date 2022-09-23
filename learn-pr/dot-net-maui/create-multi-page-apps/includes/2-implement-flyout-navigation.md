@@ -84,7 +84,7 @@ The position of `MenuItem` objects on the flyout is dependent upon their declara
     <MenuItem Text="Help"
               IconImageSource="help.png"
               Command="{Binding HelpCommand}"
-              CommandParameter="https://docs.microsoft.com/dotnet/maui/fundamentals/shell" />    
+              CommandParameter="https://learn.microsoft.com/dotnet/maui/fundamentals/shell" />    
 </Shell>
 ```
 

@@ -167,6 +167,6 @@ Identify the subtasks of *Design an IP addressing scheme for your Azure infrastr
 
 **Supporting resources**
 
-VNet planning: https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm
+VNet planning: https://learn.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm
 
-Public IP addressing prefix: https://docs.microsoft.com/azure/virtual-network/public-ip-address-prefix
+Public IP addressing prefix: https://learn.microsoft.com/azure/virtual-network/public-ip-address-prefix
