@@ -4,7 +4,7 @@ Supplemental Resources:
 
 - [Microsoft Learn training](/training/?azure-portal=true)
 
-- [Microsoft Learn documentation](/learn/?azure-portal=true)
+- [Microsoft Learn documentation](/docs/?azure-portal=true)
 
 - [Microsoft Whiteboard](https://aka.ms/whiteboard)
 

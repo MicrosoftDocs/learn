@@ -20,7 +20,7 @@ Cloud Shell offers an integrated graphical text editor based on the open-source 
 
 ### Integrated with Microsoft Learn
 
-You can use Cloud Shell directly in [Microsoft Learn](/?azure-portal=true), [Azure PowerShell](/powershell/azure/overview), and [Azure CLI documentation](/cli/azure). Click on the "Try It" button in a code snippet to open the immersive shell experience.
+You can use Cloud Shell directly in [Microsoft Learn](/?azure-portal=true), [Azure PowerShell](/powershell/azure/overview), and [Azure CLI documentation](/cli/azure). Click on the **Try It** button in a code snippet to open the immersive shell experience.
 
 ### Multiple access points
 
