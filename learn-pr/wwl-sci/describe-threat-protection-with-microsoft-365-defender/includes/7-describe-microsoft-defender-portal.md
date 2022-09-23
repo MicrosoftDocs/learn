@@ -69,7 +69,7 @@ There's a secure score for both Microsoft 365 Defender and Microsoft Defender fo
 
 ### Learning hub
 
-The Microsoft 365 Defender portal includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation on Microsoft Docs.
+The Microsoft 365 Defender portal includes a learning hub that bubbles up official guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation on Microsoft Learn.
 
 :::image type="content" source="../media/learning-hub-inline.png" lightbox="../media/learning-hub-expanded.png" alt-text="Screenshot showing the learning hub page.":::
 

@@ -34,7 +34,7 @@ Console.WriteLine(result);
 The expression `new string(valueArray)` creates a new empty instance of the `System.String` class (which is the same as the `string` data type in C#) and passes in the `char` array as a constructor.  
 
 > [!NOTE]
-> What is the `new` keyword? How is the `System.String` class related to the `string` data type in C#? What is a constructor? All great questions that unfortunately are out of scope for this module. We recommend you keep learning about the .NET Class Library, as well as classes and objects in C#, to fully understand what is going on behind the scenes with this expression of code. For now, we recommend you use a search engine and Microsoft Docs to find good examples you can use in situations where you know you want to perform a conversion but are not sure how to do it using C#.
+> What is the `new` keyword? How is the `System.String` class related to the `string` data type in C#? What is a constructor? All great questions that unfortunately are out of scope for this module. We recommend you keep learning about the .NET Class Library, as well as classes and objects in C#, to fully understand what is going on behind the scenes with this expression of code. For now, we recommend you use a search engine and Microsoft Learn to find good examples you can use in situations where you know you want to perform a conversion but are not sure how to do it using C#.
 
 If you run the code now, you'll get the following output:
 

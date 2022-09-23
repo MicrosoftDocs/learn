@@ -75,7 +75,7 @@ In this section, we finish most of the programming necessary for this unit, but 
                 apodTimelineCard = new AdaptiveCard("1.0")
                 {
                     // Select a good background image.
-                    BackgroundImage = new Uri("https://learn.microsoft.com/learn/media/wolf-moon.png")
+                    BackgroundImage = new Uri("https://learn.microsoft.com/training/media/wolf-moon.png")
                 };           
     
                 // Add a heading to the card, which allows the heading to wrap to the next line if necessary.
