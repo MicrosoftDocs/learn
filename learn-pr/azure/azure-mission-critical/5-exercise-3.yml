@@ -40,6 +40,6 @@ quiz:
       isCorrect: true
       explanation: 'Azure Log Analytics workspaces is used as the central store for logs and metrics from all application and infrastructure components.'
     - content: 'Azure Storage'
-      isCorrect: true
+      isCorrect: false
       explanation: 'Azure Storage can be used to offload telemetry for historical analysis, but it is not well-suited as the unified sink for telemetry.'
 
