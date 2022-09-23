@@ -1,16 +1,3 @@
----
-title: Introduction
-description: Describes the learning path of batch and hpc solutions on azure with introduction.
-author: gauharjunnarkar
-ms.author: gajunnar
-ms.service: virtual-machines
-ms.subservice: hpc
-ms.topic: learn #Required; leave this attribute/value as-is.
-ms.date: 08/10/2022
----
-
-# Introduction
-
 Some organizations have complex mathematical tasks that require high-performance compute resources. In Azure, you've a choice of several technologies to use for these types of tasks.
 
 Suppose you're an IT architect at a Biotech organization that uses cutting edge molecular biology techniques to create new therapeutics for the world's most challenging diseases. Your team supports different groups of scientist and researchers, each of whom work in a different stage of the drug discovery pipeline. All these groups share an internal High Performance Computing (HPC) cluster to do their computational analysis. The internal HPC cluster is heavily utilized and becoming over-subscribed. You've been tasked with determining which tasks would be a good fit for the HPC services that Microsoft Azure provides.
