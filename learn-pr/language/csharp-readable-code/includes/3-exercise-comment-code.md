@@ -127,7 +127,7 @@ But can you guess why this code exists? Wouldn't it be helpful if there was some
 
 There are two problems with this code:
 
-- The code comments unnecessarily explain the obvious functionality of individual lines of code. These are considered low-quality comments, because they merely explain how C# or methods of the .NET Class Library work. If the reader is unfamiliar with these ideas, they can look them up using Microsoft Docs or Intellisense.
+- The code comments unnecessarily explain the obvious functionality of individual lines of code. These are considered low-quality comments, because they merely explain how C# or methods of the .NET Class Library work. If the reader is unfamiliar with these ideas, they can look them up using Microsoft Learn or Intellisense.
 - The code comments don't provide any context to the problem the code is solving. These are considered low-quality comments, because the reader doesn't gain any insight into the purpose of this code, especially as it relates to the larger system.
 
 ### Step 7 - Remove the low-level descriptive comments

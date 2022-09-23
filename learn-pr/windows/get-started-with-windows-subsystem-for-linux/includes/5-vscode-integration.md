@@ -78,7 +78,7 @@ Git is an open-source distributed control system. Basically a tool for storing f
     block content
       h1 #{title}
       p I'm over the moon!
-      img(src="https://learn.microsoft.com/learn/media/crescent-timeline.png", alt="Moon Photo", srcset="")
+      img(src="https://learn.microsoft.com/training/media/crescent-timeline.png", alt="Moon Photo", srcset="")
     ```
 
    > [!NOTE]
