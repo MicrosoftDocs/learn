@@ -32,7 +32,7 @@ To verify, select the **Scope** tab on the **Create an alert rule** pane, and co
 
 To set a different resource, you would choose **Select scope** and make the setting in the **Select a resource** pane.
 
-:::image type="content" source="../media/8-alert-select-a-resource-vm.png" alt-text="Screenshot that shows the VM selected on the pane for selecting a resource.":::
+:::image type="content" source="../media/8-alert-select-a-resource-vm.png" alt-text="Screenshot that shows the Select a resource pane.":::
 
 ### Create the condition
 
@@ -40,7 +40,7 @@ To set a different resource, you would choose **Select scope** and make the sett
   
 1. In the **Search by signal name** search box, search for and select **Percentage CPU**.
 
-    :::image type="content" source="../media/8-configure-signal-logic-percentage-cpu.png" alt-text="Screenshot that shows "Percentage CPU" selected as the signal name.":::
+    :::image type="content" source="../media/8-configure-signal-logic-percentage-cpu.png" alt-text="Screenshot that shows 'Percentage CPU' selected as the signal name.":::
 
     The **Create an alert rule** pane reappears.
 
@@ -109,7 +109,7 @@ To set a different resource, you would choose **Select scope** and make the sett
 
 1. In the upper menu bar, select **Connect**, and then select **SSH**. The **Connect** pane for your VM appears.
 
-    :::image type="content" source="../media/8-vm-overview-connect-button.png" alt-text="Screenshot that shows the "Connect" button on the VM overview pane.":::
+    :::image type="content" source="../media/8-vm-overview-connect-button.png" alt-text="Screenshot that shows the 'Connect' button on the VM overview pane.":::
 
 1. Under step 4 on the **Connect** page, copy the **azureuser**@ and IP address that follows.
 
