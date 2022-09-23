@@ -1,16 +1,3 @@
----
-title: Summary
-description: Describes the summary of the learning path of batch and hpc solutions on azure.
-author: gauharjunnarkar
-ms.author: gajunnar
-ms.service: virtual-machines
-ms.subservice: hpc
-ms.topic: learn #Required; leave this attribute/value as-is.
-ms.date: 08/10/2022
----
-
-# Summary
-
 Azure high-performance computing (HPC) is a complete set of computing, networking, and storage resources integrated with workload orchestration services for HPC applications. With purpose-built infrastructure and optimized application services, Azure offers HPC customers a competitive price/performance against on premises with other additional benefits.
 
 As companies acquire larger volumes of data and more sophisticated methods to manipulate it, high-performance computing (HPC) becomes more popular. You've learned about the solutions available on Azure for HPC workloads: Azure Batch, HPC virtual machines, and the Microsoft HPC Pack. You can now choose the best option for your HPC workloads.
