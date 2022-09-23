@@ -35,11 +35,11 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 1. For **Data source type**, select **Performance Counters**.
 1. Leave the default for the **Basic** performance counters and Sample rate.
 
-    :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters" lightbox="../media/6-add-data-sources.png":::
+    :::image type="content" source="../media/6-add-data-sources.png" alt-text="Screenshot of the data collection rules performance counters." lightbox="../media/6-add-data-sources.png":::
 
 1. Select the **Destination** tab to view the default destination for Performance Counters, Azure Monitor Metrics.
 
-    :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination":::
+    :::image type="content" source="../media/6-add-dcr-destinations.png" alt-text="Screenshot of the data collection rules performance counters destination.":::
 
     Confirm your settings include a destination type of Azure Monitor metrics.
 
@@ -52,7 +52,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 1. Select the virtual machine you created in the previous exercise.
 1. On the VM overview page, under **Extensions**, you should see **AzureMonitorLinuxAgent** listed.
 
-    :::image type="content" source="../media/6-agent-on-vm.png" alt-text="Screenshot of the virtual machine overview page with the agent Installed":::
+    :::image type="content" source="../media/6-agent-on-vm.png" alt-text="Screenshot of the virtual machine overview page with the agent Installed.":::
 
 ## Create a custom KPI dashboard
 
@@ -78,7 +78,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. In the **Dashboard name** field, enter *KPI Dashboard*.
 
-   :::image type="content" source="../media/6-create-dashboard.png" alt-text="Screenshot that shows the 'Pin to another dashboard' pane filled out":::
+   :::image type="content" source="../media/6-create-dashboard.png" alt-text="Screenshot that shows the 'Pin to another dashboard' pane filled out.":::
 
 1. Select **Create and pin**. The **Metrics** pane reappears.
 

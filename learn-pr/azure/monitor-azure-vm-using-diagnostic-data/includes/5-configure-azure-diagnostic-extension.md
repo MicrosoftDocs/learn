@@ -20,14 +20,14 @@ Data collection rules define:
 
 Resources allow you to select which VM(s) to collect data from for monitoring. Data sources define the metrics and logs you want to collect and where that data will be sent and stored.
 
-:::image type="content" source="../media/5-dcr-definition.png" alt-text="Screenshot of the data collection rules definition" lightbox="../media/5-dcr-definition.png":::
+:::image type="content" source="../media/5-dcr-definition.png" alt-text="Screenshot of the data collection rules definition." lightbox="../media/5-dcr-definition.png":::
 
 Performance Counters to be collected can be selected from a **Basic** set or customized and filtered from an expanded **Custom** list.
 
-:::image type="content" source="../media/5-dcr-data-sources.png" alt-text="Screenshot of the data collection rules data sources" lightbox="../media/5-dcr-data-sources.png":::
+:::image type="content" source="../media/5-dcr-data-sources.png" alt-text="Screenshot of the data collection rules data sources." lightbox="../media/5-dcr-data-sources.png":::
 
 Performance counters can be sent to Azure Monitor Metrics and/or Azure Monitor Logs. Azure Monitor Metrics is a time-series data store optimized for near-real time visualizations and alerts. Azure Monitor Logs supports more sophisticated data analysis such as trending and pattern recognition using queries.
 
-:::image type="content" source="../media/5-dcr-destinations.png" alt-text="Screenshot of the data collection rules destinations" lightbox="../media/5-dcr-destinations.png":::
+:::image type="content" source="../media/5-dcr-destinations.png" alt-text="Screenshot of the data collection rules destinations." lightbox="../media/5-dcr-destinations.png":::
 
 The Azure Monitor Agent can collect metrics and logs and can send the data to Azure Monitor metrics and/or multiple Azure Monitor Logs workspaces. However, this unit only focuses on the metric collection capabilities of the Azure Monitor Agent.
