@@ -24,6 +24,6 @@ The existing application is already designed as per the quality pillars of Azure
 
 ## What is the main goal?
 
-By the end of this module, you'll have explored mission critical design content and apply some of those principles to this _example_ scenario. The goal is to gather the experience using the exercises in this module as a way to shape your thinking and ultimately be confident in applying the learnings to your own _real_ mission-critical solution.
+By the end of this module, you'll have demonstrated your ability to apply mission-critical design principles to an _example_ scenario. Based on your learnings, you'll be confident in evaluating similar designs and ultimately create your own production-ready mission-critical solution.
 
 

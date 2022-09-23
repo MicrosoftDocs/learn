@@ -31,7 +31,7 @@ Think through a failure scenario. Suppose Region 1 gets 75% of the traffic and R
 
 ### 2&ndash;Global routing
 
-In order for the clients to get transparently routed to either working region, add a global load balancer. The health checks that you added in the previous exercise should be used by the load balancer to determine whether a stamp is healthy. 
+In order for the clients to get transparently routed to either working region, add a global load balancer. The health checks that you added in the previous exercise should be used by the load balancer to determine whether a stamp is healthy. Can you think of ways to serve frequent and similar requests that can be fulfilled without reaching the backend?
 
 - Choose a native Azure service that integrates with the existing architecture and is able to fail over quickly.
 - Make sure that network ingress path has controls in place to deny unauthorized traffic. 

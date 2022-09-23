@@ -16,23 +16,23 @@ For you to complete this challenge, you need to have a good understanding of Con
 
 All components of this architecture are deployed to a single region. 
 
-- **App Service plan** Standard S2 provides the compute platform that hosts the app. Autoscaling is enabled. In the development environment, Basic B1 SKU is used.
+- [Azure App Service plan](/azure/app-service/overview-hosting-plans) Standard S2 provides the compute platform that hosts the app. Autoscaling is enabled. In the development environment, Basic B1 SKU is used.
 
-- **App Service** provides the application platform that runs the API code in a container. The App Service Authentication feature is enabled for authorization. 
+- [Azure App Service](/azure/app-service/overview) provides the application platform that runs the API code in a container. The App Service Authentication feature is enabled for authorization. 
 
-- **Deployment slots** let you stage a deployment and then swap it with the production deployment. They're used in production only.
+- [Deployment slots](/azure/app-service/deploy-staging-slots) let you stage a deployment and then swap it with the production deployment. They're used in production only.
 
-- **Azure Container Registry** stores the containerized API code and is pushed through Continuous Integration/Continuous Delivery (CI/CD) pipelines created and managed by the workload team. The container registry is used by both production and dev/test environments. 
+- [Azure Container Registry](/azure/container-registry/) stores the containerized API code and is pushed through Continuous Integration/Continuous Delivery (CI/CD) pipelines created and managed by the workload team. The container registry is used by both production and dev/test environments. 
 
-- **Azure Cosmos DB with SQL API** stores all state related to the workload. The Cosmos DB database account has a single database that contains a few containers in the Shared throughput model. The Azure Cosmos account uses the Serverless capacity mode. There's one instance for production and one for dev/test.
+- [Azure Cosmos DB](/azure/cosmos-db/) with SQL API** stores all state related to the workload. The Cosmos DB database account has a single database that contains a few containers in the Shared throughput model. The Azure Cosmos account uses the Serverless capacity mode. There's one instance for production and one for dev/test.
 
-- **Azure Key Vault** stores secrets needed for the API to make an HTTP POST call to an external, 3rd-party API as part of one request flow. The application accesses the secrets through a Key Vault reference in the Azure App Service’s app configuration. There's one Key Vault for production and one for dev/test.
+- [Azure Key Vault](/azure/key-vault/) stores secrets needed for the API to make an HTTP POST call to an external, 3rd-party API as part of one request flow. The application accesses the secrets through a Key Vault reference in the Azure App Service’s app configuration. There's one Key Vault for production and one for dev/test.
 
-- **Azure Log Analytics** is used as a unified sink to store logs and metrics for all Azure Diagnostics settings for all components used in the solution. There's one workspace for production and one for dev/test.
+- [Azure Log Analytics](/azure/azure-monitor/) is used as a unified sink to store logs and metrics for all Azure Diagnostics settings for all components used in the solution. There's one workspace for production and one for dev/test.
 
-- **Application Insights** is used for capturing telemetry and logs from the API. Application Insights uses the self-contained mode, not writing to a dedicated log analytics workspace. Production and dev/test don't share a common instance.
+- [Azure Application Insights](/azure/azure-monitor/) is used for capturing telemetry and logs from the API. Application Insights uses the self-contained mode, not writing to a dedicated log analytics workspace. Production and dev/test don't share a common instance.
 
-- **Azure Pipelines** is used for CI/CD that builds, tests, and deploys the workload in preproduction and production environments. The pipelines are managed by the workload team, which also manages all of the infrastructure in their solution. Bicep is the choice of technology for Infrastructure-as-Code (IaC).
+- [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) is used for CI/CD that builds, tests, and deploys the workload in preproduction and production environments. The pipelines are managed by the workload team, which also manages all of the infrastructure in their solution. Bicep is the choice of technology for Infrastructure-as-Code (IaC).
 
 ### Design choices
 
@@ -44,7 +44,7 @@ Separate environments are used for production and dev/test. The production envir
 
 The containerized API code is delivered in a single container image, that runs in App Service. The API has multiple HTTP endpoints that are used by various frontends for both reads and writes. The frontends are out of scope for this module. However, they're in scope in the big picture for the mission critical status of this solution. The code was instrumented with Application Insights to capture some basic telemetry. The development team of this code also manages the CI/CD pipeline for the API container image and the CI/CD pipelines.
 
-## Tradeoffs
+### Tradeoffs
 
 However, as with everything, there are tradeoffs with the current architecture. Business requirements prioritized cost optimization over reliability and operations. To keep within the cost limits, the architecture hasn't evolved. The components fall short when taking advantage of the reliability capabilities offered by the platform. For example, the choice of SKU for compute prevents the workload from using Availability Zones. For telemetry, an older version of Application Insights is used that isn't integrated with Log Analytics. 
 
@@ -56,12 +56,12 @@ Also, the dev/test environment is a single environment that is shared across all
 
 ## Project specification
 
-The company wants to add capabilities to their solution architecture and make it highly reliable. Here are the business requirements:
+The company wants to add capabilities to their solution architecture so that it's able to handle the expected increase in load. Here are the business requirements:
 
-- Extend the architecture to multiple regions
+- Build the ability to withstand regional failure by extending the architecture to multiple regions
 - Improve the customer experience by serving clients faster in a region geographically closer to them
-- Upgrade the Azure services so that they're aligned with the Azure roadmap
-- Build an overall health model to make sure issues are caught early in the development cycle
+- Take advantage of the latest reliability features offered by Azure services keeping alignment with the Azure roadmap
+- Catch issues early and detect their cascading impact by building an overall health model
 
 Those requirements are only the prioritized list of their improvement plans. The application team is aware that _all_ design areas must be considered to bring this solution's reliability up to mission critical standards. Rest assured, they won't stop improving their solution and operations after you help them with the aspects covered in the upcoming exercises. Welcome to the team, Contoso Shoes is looking forward to hearing your recommendations.
 
@@ -69,15 +69,5 @@ Those requirements are only the prioritized list of their improvement plans. The
 
 In this **_Challenge Project_**, you'll be taking on the role of an architect who will help Contoso shoes achieve their reliability outcomes, starting with the prioritized items above.
 	
-- This solution will heavily draw from the Azure Well-Architected Framework guidance for [**mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview), so you should familiarize yourself with all of the guidance, and linked reference architecture, so that you can efficiently reference them throughout the exercises.
 - We recommend that you use the architecture diagramming tool to visualize the architecture. 
-- You don't need an Azure subscription for this challenge if you're comfortable with the services and their features. For product documentation for used services, see:
-    - [Azure App Service plan](/azure/app-service/overview-hosting-plans) 
-    - [Azure App Service](/azure/app-service/overview) 
-    - [Deployment slots](/azure/app-service/deploy-staging-slots) 
-    - [Azure Container Registry](/azure/container-registry/)
-    - [Azure Cosmos DB](/azure/cosmos-db/)
-    - [Azure Key Vault](/azure/key-vault/)
-    - [Azure Log Analytics](/azure/azure-monitor/)
-    - [Azure Application Insights](/azure/azure-monitor/)
-    - [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines)
+- You don't need an Azure subscription for this challenge if you're comfortable with the services and their features. 

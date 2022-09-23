@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure-mission-critical
 metadata:
-  title: Challenge Project - Design a mission-critical workload
-  description: Learn to apply key principles in your architecture to achieve a highly reliable design that strives for maximum reliability and operational effectiveness.
+  title: Challenge Project - Design a mission-critical web application
+  description: Learn to apply key principles in your workload to achieve a highly reliable design with health monitoring checks.
   ms.date: 09/22/2022
   author: PageWriter-MSFT
   ms.author: prwilk
@@ -10,17 +10,15 @@ metadata:
   ms.prod: learning-azure
 title: Challenge Project - Design a mission-critical workload
 summary: |
-  You want to design a highly reliable, available, and resilient workload that uses Azure capabilities. You'll be given the architecture of an example workload, its current state, tradeoffs, and business requirements for improvements. Based on the technical specification in each exercise, you'll apply mission-critical principles and evolve the design toward the target architecture. 
+  You'll be given the architecture of an example web workload, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using Azure capabilities. 
   > [!NOTE]
-  > This module is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation. A recommended approach is given for each exercise to make sure you're aligned with the specification of the target architecture.
+  > This module is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation.
 abstract: |
   In this module, you'll demonstrate your ability to:
-   - Extend the current application to have a new API for health checks
-   - Define key strategies for multi-region deployment
-   - Design an overall health model
+   - Apply mission-critical design principles to an existing architecture to make it fault tolerant 
+   - Define key strategies for observing the overall health of the system
 prerequisites: |
-  - Experience designing a workload that includes core infrastructure technology such as data storage, compute, and networking
-  - Experience designing a workload that's deployed to multiple regions
+  - Extensive experience in designing cloud native applications that include core infrastructure technology such as data storage, compute, and networking
   - Good understanding of the design principles and design areas of a mission-critical workload provided in the Azure Well-Architected Framework
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -37,7 +35,6 @@ units:
 - learn.azure-mission-critical.3-exercise-1
 - learn.azure-mission-critical.4-exercise-2
 - learn.azure-mission-critical.5-exercise-3
-- learn.azure-mission-critical.6-end-state-design
-- learn.azure-mission-critical.7-summary
+- learn.azure-mission-critical.6-summary
 badge:
   uid: learn.azure-mission-critical.badge
