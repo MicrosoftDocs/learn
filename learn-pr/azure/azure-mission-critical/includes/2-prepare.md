@@ -42,7 +42,7 @@ In the stamp, App Services is configured to automatically scale based on load.
 
 Separate environments are used for production and dev/test. The production environment uses App Service plan Standard SKU. This choice was made to have the capability of prewarming the application to a slot before deploying it to production. In the dev/test environment, the SKU is lowered to the Basic SKU for cost optimization. Both environments have their own instances of services. Only **Container Registry** is shared between the environments.
 
-The containerized API code is delivered in a single container image, that runs in App Service. The API has multiple HTTP endpoints that are used by various frontends for both reads and writes. The frontends are out of scope for this module. However, they're in scope in the big picture for the mission critical status of this solution. The code was instrumented with Application Insights to capture some basic telemetry. The development team of this code also manages the CI/CD pipeline for the API container image and the CI/CD pipelines.
+The containerized API code is delivered in a single container image that runs in App Service. The API has multiple HTTP endpoints that are used by various frontends for both reads and writes. The frontends are out of scope for this module. However, they're in scope in the big picture for the mission critical status of this solution. The code was instrumented with Application Insights to capture some basic telemetry. The development team of this code also manages the CI/CD pipeline for the API container image and the CI/CD pipelines.
 
 ### Tradeoffs
 

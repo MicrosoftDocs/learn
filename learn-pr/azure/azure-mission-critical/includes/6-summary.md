@@ -2,7 +2,7 @@ Contoso Shoes is an online shoe store that wants to be highly available during a
 
 In the previous architecture, the application was deployed in a single region and **wasn't able to withstand a regional outage**. Azure App Service and the external monitoring tools **didn't have a way to check the health status** of the application itself. This gap led to traffic being routed to unhealthy App Service instances resulting in failed requests. The team wasn't able to see the **cascading impact of an issue** resulting from an API component affecting its platform dependencies.
 
-By completing this challenge, you've explored a mission critical design at a high level. You've applied your  experience by using the exercises to meet Contoso's needs: 
+By completing this challenge, you've explored a mission critical design at a high level. You've applied your experience by using the exercises to meet Contoso's needs: 
 
 The improved design **detects the degraded performance of one or more components using a health model** that might lead to a full outage. The SRE team can now quickly identify and resolve issues. Now that the solution is **deployed in multiple regions in an active-active model**, it can withstand a complete regional outage while giving more system health insights to their operations. Contoso has also improved their customer experience by **serving clients faster in a region geographically closer to them**.
 
@@ -10,7 +10,7 @@ Congratulations on completing this Challenge Project and validating yours skills
 
 ## Suggested next steps
 
-The exercises you've completed are a great start but they don't cover all aspects of a mission critical workload. Continue to explore the design principles and areas given in [**Well-Architected mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview). Here are the key value areas that we recommend you shoul explore  your own.
+The exercises you've completed are a great start but they don't cover all aspects of a mission critical workload. Continue to explore the design principles and areas given in [**Well-Architected mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview). Here are the key value areas that we recommend you should explore  your own.
 
 - Continuous validation and testing 
     You must fully validate the health of both the application code and infrastructure. The scope must cover the requirements set of reliability, performance, availability, security, quality, and scale. 
@@ -34,7 +34,7 @@ The exercises you've completed are a great start but they don't cover all aspect
 
 - Add resiliency with message brokers
 
-    Introduce a message broker to help with complex transactions that need to coordination with multiple endpoints. The requests can be queued for processing instead of risking the loss of a sale because of a signal component failure.
+    Introduce a message broker to help with complex transactions that need to coordination with multiple endpoints. Requests can be queued for processing instead of risking the loss of a sale because of a signal component failure.
 
     > **Learn more: [Loosely coupled event-driven architecture](/azure/architecture/framework/mission-critical/mission-critical-application-design#loosely-coupled-event-driven-architecture)**
 

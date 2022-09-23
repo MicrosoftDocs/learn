@@ -43,7 +43,7 @@ In order for the clients to get transparently routed to either working region, a
 
 ### 3&ndash;Deployment stamp changes
 
-The ideal state is an active-active configuration that doesn't require any active failover and client requests can be served from any region. Think about what that implies for your architecture. For example, do you have any state that stored in the regional stamp?
+The ideal state is an active-active configuration that doesn't require any manual failover and client requests can be served from any region. Think about what that implies for your architecture. For example, do you have any state that stored in the regional stamp?
 
 Certain services in the current architecture have geo-replication capabilities. Consider separating the services into different stamps. One stamp that contains global resources. The other regional stamp that shares resources in the global stamp. One of decision factors should be the lifecycle of those resources. What is the expected lifetime of the resource, relative to other resources in the architecture? Should the resource outlive or share the lifetime with the entire system or region, or should it be temporary?
 
@@ -59,7 +59,7 @@ Explore the reliability features of the Azure services used in the architecture.
 
 ## Check your work
 
-Here's are [**Application**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) and [**Data**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform) design choices for a similar architecture. Did you cover all aspects in your design?
+Here are the [**Application**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) and [**Data**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform) design choices for a similar architecture. Did you cover all aspects in your design?
 
 
 - Which other Azure region did you select for your multi-region topology, and why?

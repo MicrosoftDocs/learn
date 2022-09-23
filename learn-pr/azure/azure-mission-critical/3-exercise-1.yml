@@ -28,14 +28,14 @@ quiz:
     - content: 'To prevent overwhelming the downstream components.'
       isCorrect: true
       explanation: 'Various health probes, such as those on Azure Front Door, can call the health API frequently and sometimes even in parallel. Caching prevents excessive load on downstream services from those calls.'
-  - content: 'Your API is protected by App Service Authentication, how does the health check endpoint address that?'
+  - content: 'Your API is protected by App Service Authentication, will the App Service Health check feature work with your health check API endpoint?'
     choices:
-    - content: 'Choice 1.'
+    - content: 'No. Both App Service Authentication and Health check cannot be enabled at the same time on the service.'
       isCorrect: false
-      explanation: 'Explanation 1.'
-    - content: 'Choice 2.'
+      explanation: 'The Azure App Service health check probe request from the platform is done behind the Authentication service. The request accesses your health check endpoint anonymously, bypassing the Authorization service.'
+    - content: 'Yes. The health check is performed without traversing App Service Authentication, reaching your health check API as anonymous traffic. External health monitors would need to generate valid access tokens for their health probes.'
       isCorrect: true
-      explanation: 'Explanation 2.'
-    - content: 'Choice 3.'
+      explanation: 'The Azure App Service health check probe request from the platform is done behind the Authentication service and accesses your health check endpoint anonymously, bypassing the Authorization service. Requests originating from outside the service do not bypass the Authorization service and must be able to generate credentials for the request. External monitoring is encouraged, as it can also help in detecting faults of the App Service Authentication service.'
+    - content: 'Yes. You can configure Azure App Service to acquire the necessary access tokens to send with health probes.'
       isCorrect: false
-      explanation: 'Explanation 3.'
+      explanation: 'The App Service Health check feature only supports calling anonymous endpoints and does not have a way to generate authentication tokens.'

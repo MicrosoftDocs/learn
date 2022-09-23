@@ -8,7 +8,7 @@ metadata:
   ms.author: prwilk
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Challenge Project - Design a mission-critical workload
+title: Challenge Project - Design a mission-critical web application
 summary: |
   You'll be given the architecture of an example web workload, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using Azure capabilities. 
   > [!NOTE]

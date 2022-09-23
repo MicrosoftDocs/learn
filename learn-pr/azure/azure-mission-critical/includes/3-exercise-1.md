@@ -45,4 +45,3 @@ Here's an example [**Application Health Service**](/azure/architecture/reference
 - Did you cache the results of health checking to reduce performance overhead? 
 - Did you log events in your health checks? Note the successes and the failures?
 - Have you applied Azure Application Insights log sampling to the health check logs?
-
