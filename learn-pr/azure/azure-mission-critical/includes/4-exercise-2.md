@@ -2,7 +2,7 @@ Contoso Shoes needs a way to withstand regional outages. You want to deploy the 
 
 ## Current state and problem
 
-A single region has been sufficient for the application. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Scaling out within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
+A single region has been sufficient for the application. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Horizontal scaling within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
 
 DNS is held by an existing registrar for `api.contososhoes.com`. The DNS record resolves to the backend App Services endpoint (`apicontososhoes.azurewebsites.net`) with time-to-live (TTL) period 2 days. When the solution is deployed to multiple regions, DNS needs to be migrated.
 
@@ -60,7 +60,6 @@ Explore the reliability features of the Azure services used in the architecture.
 ## Check your work
 
 Here are the [**Application**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-app-platform) and [**Data**](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-data-platform) design choices for a similar architecture. Did you cover all aspects in your design?
-
 
 - Which other Azure region did you select for your multi-region topology, and why?
 - Did you enable two or more Azure Availability Zones in each Azure region to protect against datacenter outages?

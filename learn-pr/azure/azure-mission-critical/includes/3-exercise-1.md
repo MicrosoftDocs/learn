@@ -15,7 +15,7 @@ Build the dedicated health service as an extension to the already-deployed code.
     > [!TIP] 
     > Extend the health check to non-functional services, such as Azure Key Vault and Azure Container Registry. This step is important because if those services experience an outage, you might notice an impact in the ability to scale out or withstand an App Service instance restart.
 
-- The health check API endpoint must be called twice a minute, by multiple sources, and shouldn't degrade the performance of the API. For example, the Azure App Service plan must send requests to an endpoint and make informed decisions about which App Service instances to distribute traffic to. 
+- The health check API endpoint shall be called frequently, by multiple sources, and shouldn't degrade the performance of the API. For example, the Azure App Service plan must send requests to an endpoint twice a minute and make informed decisions about which App Service instances to distribute traffic to. 
 
 - Optimize the performance of the health check API by caching results in memory for 10 seconds. Not every query to the health check endpoint should result in a backend call. Some of those responses can be served from the cache.
 

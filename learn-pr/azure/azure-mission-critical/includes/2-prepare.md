@@ -58,12 +58,12 @@ Also, the dev/test environment is a single environment that is shared across all
 
 The company wants to add capabilities to their solution architecture so that it's able to handle the expected increase in load. Here are the business requirements:
 
-- Build the ability to withstand regional failure by extending the architecture to multiple regions
-- Improve the customer experience by serving clients faster in a region geographically closer to them
-- Take advantage of the latest reliability features offered by Azure services keeping alignment with the Azure roadmap
-- Catch issues early and detect their cascading impact by building an overall health model
+- Build the capability to withstand regional failures by extending the architecture to multiple regions
+- Improve customer experience by serving clients faster in a region geographically closer to them
+- Align with Azure roadmap and take advantage of the latest reliability features offered by Azure services
+- Catch issues early and detect their cascading impact in the system by building an overall health model
 
-Those requirements are only the prioritized list of their improvement plans. The application team is aware that _all_ design areas must be considered to bring this solution's reliability up to mission critical standards. Rest assured, they won't stop improving their solution and operations after you help them with the aspects covered in the upcoming exercises. Welcome to the team, Contoso Shoes is looking forward to hearing your recommendations.
+Those requirements are only the prioritized list of their improvement plans. The application team is aware that _all_ design areas must be considered to bring this solution's reliability up to mission critical standards. Rest assured, they won't stop improving their solution and operations after you've help them with the aspects covered in the upcoming exercises. Welcome to the team, Contoso Shoes is looking forward to hearing your recommendations.
 
 ## Setup
 

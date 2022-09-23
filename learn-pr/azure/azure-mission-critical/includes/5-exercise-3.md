@@ -1,4 +1,4 @@
-Contoso Shoes needs a way to detect, diagnose, and predict issues across this architecture. You want to build a health model that's measurable through a health status applied to user and system flows. The goal is to identify the potential failure points before they can cause an outage.
+Contoso Shoes needs a way to detect, diagnose, and predict issues across this architecture. You want to build a health model that's measurable through a health status applied to user and system flows. The goal is to identify potential failure points before they can cause an outage.
 
 ## Current state and problem
 
@@ -20,7 +20,7 @@ In a recent incident, the team wasn't able to see the cascading impact of an iss
 To get started on your design, we recommend that you follow these steps.
 
 > [!IMPORTANT] 
-> Health modeling is a comprehensive exercise. The approach given in this section is intended to help you get started. Do due dilligence in applying the model to all functional and non-functional flows in your mission critical design to get a holistic view of the system.
+> Health modeling is a comprehensive exercise. The approach given in this section is intended to help you get started. Be extensive in applying the model to all functional and non-functional flows in your mission critical design to get a holistic view of the system.
 
 ### 1&ndash;Start health modeling
 
@@ -32,12 +32,11 @@ Your graph should look something like this:
 
 ![Example of a dependency graph for a health model.](../media/health-model.png)
 
-
 > **Check your progress: [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health)**
 
 ### 2&ndash;Define the health scores
 
-For each component, collect metrics and metric thresholds and decide the value at which the component should be considered **healthy**, **degraded**, and **unhealthy**. That decision is should be influenced by expected the performance and non-functional business requirements. Categorize your metrics as:
+For each component, collect metrics and metric thresholds and then decide the value at which the component should be considered **healthy**, **degraded**, and **unhealthy**. That decision should be influenced by the expected performance and non-functional business requirements. Categorize your metrics as:
 
 - Application metrics&mdash;Data points from application code​, such as the exception count​.
 
@@ -71,23 +70,23 @@ The health score for a user flow should be represented by the lowest score acros
 
 ### 4&ndash;Collect monitoring data
 
-You'll need a unified data sink, in each region, which collects logs and metrics for all application and platform services deployed as part of the regional stamp. You'll  need another sink for storing metrics emitted from global resources, such as Azure Front Door and Cosmos DB. 
+You'll need a unified data sink, in each region, which collects logs and metrics for all application and platform services deployed as part of the regional stamp. You'll need another sink for storing metrics emitted from global resources, such as Azure Front Door and Cosmos DB. 
 
 ![Example of data collection from various application and platform services.](../media/data-collection.png)
 
 #### Technology choices
 
 - **Azure Application Insights** is used to collect all application telemetry. 
-- **Azure Monitor Logs** collects data sent by Application insights and platform metrics for the Azure services. 
-- **Azure Log Analytics** is used as the central store for logs and metrics from all application and infrastructure components. 
+- **Azure Monitor Logs** collects data sent by Application insights and platform metrics for Azure services.
+- **Azure Log Analytics** is used as the central tool for analyzing logs and metrics from all application and infrastructure components. 
 
 > **Check your progress: [Unified data sink for correlated analysis](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis)**
 
 ### 5&ndash;Set up queries for monitoring data
 
-Kusto Query Language (KQL) is well-integrated with Log Analytics. Implement custom KQL queries as functions to retrieve data from Log Analytics.
+Kusto Query Language (KQL) is well-integrated with Log Analytics. Implement custom KQL queries as functions to retrieve data from Azure Monitor.
 
-Store custom queries in the code repository so that they're imported and applied automatically as part of your continuous Integration/continuous Delivery (CI/CD) pipelines. 
+Store custom queries in the code repository so that they're imported and applied automatically as part of your continuous Integration/continuous delivery (CI/CD) pipelines. 
 
 ### 6&ndash;Visualize the health status
 
@@ -97,8 +96,9 @@ The dependency graph with health scores can be visualized with a traffic light r
 
 > **Check your progress: [Visualization](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#visualization)**
 
-### 7&ndash;Set up alerts
-Dashboards should be used with alerts to raise immediate attention for issues. You can use 
+### 7&ndash;Set up alerts on status change
+
+Dashboards should be used with alerts to raise immediate attention for issues.
 
 If the health state of a component changes to **Degraded** or **Unhealthy**, the operator should be immediately notified. Set the alert to the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
 
@@ -106,7 +106,7 @@ If the health state of a component changes to **Degraded** or **Unhealthy**, the
 
 ## Check your work
 
-Watch this video for a demo on monitoring and health modeling. Did you cover all aspects in your design?
+Watch this demo on monitoring and health modeling. Did you cover all aspects in your design?
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE55Nd9]
 
@@ -114,5 +114,5 @@ Watch this video for a demo on monitoring and health modeling. Did you cover all
 - Have you included application logs, platform metrics, and solution data points?
 - Have you set up dashboards to visualize the health status of all components?
 - Did you consider failure points at each service (or part of that service) that could cause an outage or prevent you from scaling, deploying, monitoring?
-- Did  you consider Query Packs for capturing key queries that would  triage of issues faster?
+- Did you consider Query Packs for capturing key queries that would  triage of issues faster?
 - Was your health check API helpful in this model? Did you need to alter that API to better suit the health model?

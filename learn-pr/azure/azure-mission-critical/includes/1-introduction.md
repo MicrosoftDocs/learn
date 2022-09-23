@@ -20,10 +20,10 @@ The existing application is already designed as per the quality pillars of Azure
 
 > [!IMPORTANT]
 >
-> The exercises do not cover all design areas of mission critical workloads. After completing this challenge, you're encouraged to continue exploring mission critical principles given in **Well-Architected mission-critical workloads**, so that you have a complete perspective for your own designs.
+> The exercises do not cover all design areas of mission critical workloads. After completing this challenge, you're encouraged to continue exploring mission critical principles given in [**Well-Architected mission-critical workloads**](/azure/architecture/framework/mission-critical/mission-critical-overview), so that you have a complete perspective for your own designs.
 
 ## What is the main goal?
 
-By the end of this module, you'll have demonstrated your ability to apply mission-critical design principles to an _example_ scenario. Based on your learnings, you'll be confident in evaluating similar designs and ultimately create your own production-ready mission-critical solution.
+By the end of this module, you'll have demonstrated your ability to apply mission-critical design principles to an _example_ scenario. Based on your learnings, you'll be able to evaluate similar designs and ultimately create your own production-ready mission-critical solution.
 
 
