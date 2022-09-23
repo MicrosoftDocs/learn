@@ -32,7 +32,7 @@ With either selection, you can edit the permissions, scopes, and the resulting J
 
 ### Create custom role by using Azure PowerShell
 
-The steps involved to create a role by using Azure PowerShell are similar to what we covered in the previous two units. After you defined the custom role in a JSON file, you used the following command in Azure CLI to create the custom role:
+The steps involved in creating a role by using Azure PowerShell are similar to what we covered in the previous two units. After you defined the custom role in a JSON file, you used the following command in Azure CLI to create the custom role:
 
 ```azurecli
 az role definition create --role-definition vm-operator-role.json
