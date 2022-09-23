@@ -8,7 +8,7 @@ Azure Active Directory (Azure AD) roles and Azure roles are often confused when 
 
 ![Diagram that shows relationship of Azure roles and Azure AD roles.](../media/2-azure-office-roles.svg)
 
-The following table shows the she subtle differences between how the two can be set up and managed:
+The following table shows the subtle differences between how the two can be set up and managed:
 
 Azure roles | Azure AD roles
 | --- | --- |
