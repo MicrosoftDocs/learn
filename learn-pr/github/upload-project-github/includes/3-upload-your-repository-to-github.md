@@ -228,4 +228,4 @@ We recommend [hg-fast-export](https://github.com/frej/fast-export) for convertin
 
 We recommend [git-tfs](https://github.com/git-tfs/git-tfs) for moving changes between TFVC and Git.
 
-For more information about moving from TFVC (a centralized version control system) to Git, see ["Plan your Migration to Git"](/devops/develop/git/centralized-to-git) from the Microsoft docs site.
+For more information about moving from TFVC (a centralized version control system) to Git, see [Plan your Migration to Git](/devops/develop/git/centralized-to-git).

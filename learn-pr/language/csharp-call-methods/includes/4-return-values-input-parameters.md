@@ -108,13 +108,13 @@ The second overloaded version of the method `2/3` informs that the `Next()` meth
 
 What is `maxValue` and `minValue`? Usually, we can derive the meaning of the parameter through its name. However, if it's not apparent, we may need to consult the method's documentation. In this case, the `maxValue` is the maximum, or "upper boundary" that we want the `Next()` method to generate. The `minValue` is the minimum or "lower boundary" that we want the `Next()` method to generate.
 
-### Use Microsoft Docs for information about overloaded methods
+### Use Microsoft Learn for information about overloaded methods
 
 The second way to learn about overloaded versions of the methods is to consult the method's documentation. The documentation will also help in understand exactly what each input parameter is intended for.
 
 To begin, use a search engine and search for the class name and method name. You may also want to include the term `C#` to make sure not to accidentally get results for other programming languages. In this case, try searching for: `C# Random.Next()`.
 
-One of the top search results should lead to a URL that begins with `https://learn.microsoft.com`. In our case, the link's title should appear as **Random.Next Method (System) | Microsoft Docs**.
+One of the top search results should lead to a URL that begins with `https://learn.microsoft.com`. In our case, the link's title should appear as **Random.Next Method (System) | Microsoft Learn**.
 
 Here's the link in case you have a problem finding it using a search engine:
 
@@ -138,7 +138,7 @@ In the *Parameters* section, we learn that the `maxValue` input parameter is the
 
 We can also learn in the next line: "`maxValue` must be greater than or equal to 0." What happens if we ignore this statement? We can find in the *Exceptions* section that the method will return an `ArgumentOutOfRangeException` when `maxValue` is less than 0.
 
-Like we described earlier, Microsoft Docs is the source of truth for the .NET Class Library. It's important to take the time to read the documentation to understand how a given method will work.
+Like we described earlier, Microsoft Learn is the source of truth for the .NET Class Library. It's important to take the time to read the documentation to understand how a given method will work.
 
 ## Recap
 
@@ -146,4 +146,4 @@ Like we described earlier, Microsoft Docs is the source of truth for the .NET Cl
 - Methods may return a value when they complete their task, or they may return nothing (void).
 - Overloaded methods support several implementations of the method, each with a unique method signature (the number of input parameters and the data type of each input parameter).
 - Intellisense can help write code more quickly. It provides a quick reference to methods, their return values, their overloaded versions, and the types of their input parameters.
-- Microsoft Docs is the "source of truth" when you want to learn how methods in the .NET Class Library work.
+- Microsoft Learn is the "source of truth" when you want to learn how methods in the .NET Class Library work.
