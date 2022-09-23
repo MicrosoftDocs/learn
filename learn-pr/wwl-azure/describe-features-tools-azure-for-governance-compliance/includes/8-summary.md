@@ -13,5 +13,5 @@ You should now be able to:
 
 The following resources provide more information on topics in this module or related to this module.
 
- -  [Intro to Azure blueprints](/training/modules/intro-to-azure-blueprints/) is a Microsoft Learn module that covers Azure Blueprints in greater detail.
- -  [Intro to Azure Policy](/training/modules/intro-to-azure-policy/) is a Microsoft Learn module that introduces you further to Azure Policy.
+ -  [Intro to Azure blueprints](/learn/modules/intro-to-azure-blueprints/) is a Microsoft Learn module that covers Azure Blueprints in greater detail.
+ -  [Intro to Azure Policy](/learn/modules/intro-to-azure-policy/) is a Microsoft Learn module that introduces you further to Azure Policy.
