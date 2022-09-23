@@ -18,9 +18,9 @@ abstract: |
   - Track data lineage in Azure Synapse Analytics pipelines activities.
 prerequisites: |
   Before starting this module, you should be familiar with both Azure Synapse Analytics and Microsoft Purview. Consider completing the following modules before starting this one:
-  - [Introduction to Azure Synapse Analytics](/learn/modules/introduction-azure-synapse-analytics?azure-portal=true)
-  - [Introduction to Microsoft Purview](/learn/modules/intro-to-microsoft-purview?azure-portal=true)
-iconUrl: /learn/achievements/integrate-microsoft-purview-azure-synapse-analytics.svg
+  *   [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics?azure-portal=true)
+  *   [Introduction to Microsoft Purview](/training/modules/intro-to-microsoft-purview?azure-portal=true)
+iconUrl: /training/achievements/integrate-microsoft-purview-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:
