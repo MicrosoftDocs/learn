@@ -118,7 +118,7 @@ You want to add data to your **Bookmarks** container. You'll use Data Explorer t
     ```json
     {
         "id": "learn",
-        "url": "https://learn.microsoft.com/learn"
+        "url": "https://learn.microsoft.com/training"
     }
     ```
 
