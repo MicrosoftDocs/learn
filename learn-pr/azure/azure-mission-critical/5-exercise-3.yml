@@ -33,11 +33,11 @@ quiz:
     - content: 'Azure Application Insights'
       isCorrect: false
       explanation: 'Azure Application Insights collects logs from the application code. It is not used as a unified data sink.'
-    - content: 'Azure Monitor'
-      isCorrect: false
+    - content: 'Azure Monitor Logs'
+      isCorrect: true
       explanation: 'Azure Monitor collects data sent by Application insights and platform metrics for the Azure services.'
     - content: 'Azure Log Analytics'
-      isCorrect: true
+      isCorrect: false
       explanation: 'Azure Log Analytics workspaces is used as the central store for logs and metrics from all application and infrastructure components.'
     - content: 'Azure Storage'
       isCorrect: false

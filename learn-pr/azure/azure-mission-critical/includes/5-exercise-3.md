@@ -78,7 +78,7 @@ You'll need a unified data sink, in each region, which collects logs and metrics
 #### Technology choices
 
 - **Azure Application Insights** is used to collect all application telemetry. 
-- **Azure Monitor** collects data sent by Application insights and platform metrics for the Azure services. 
+- **Azure Monitor Logs** collects data sent by Application insights and platform metrics for the Azure services. 
 - **Azure Log Analytics** is used as the central store for logs and metrics from all application and infrastructure components. 
 
 > **Check your progress: [Unified data sink for correlated analysis](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#unified-data-sink-for-correlated-analysis)**
