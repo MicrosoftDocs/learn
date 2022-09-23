@@ -38,7 +38,7 @@ To set a different resource, you would choose **Select scope** and make the sett
 
 1. On the **Create an alert rule** pane, open the **Condition** tab, the **Select a signal** pane opens on the right.
   
-1. In the **Search by signal name** search box, search for and select **Percentage CPU**.
+1. In the search box, search for and select **Percentage CPU**.
 
     :::image type="content" source="../media/8-configure-signal-logic-percentage-cpu.png" alt-text="Screenshot that shows 'Percentage CPU' selected as the signal name.":::
 

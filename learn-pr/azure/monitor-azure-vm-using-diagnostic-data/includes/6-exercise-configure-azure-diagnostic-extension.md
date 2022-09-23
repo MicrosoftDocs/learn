@@ -23,7 +23,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
     :::image type="content" source="../media/6-dcr-name-and-location.png" alt-text="Screenshot of the data collection rules basics":::
 
 1. On the **Resources** tab, select **Add resources**.
-1. On the **Select a scope** pane, select the VM you created **monitored-linux-vm**, and select **Apply**.
+1. On the **Select a scope** pane, select the **monitored-linux-vm** VM you created, and select **Apply**.
 1. Review the result on the **Resources** tab.
 
     :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
