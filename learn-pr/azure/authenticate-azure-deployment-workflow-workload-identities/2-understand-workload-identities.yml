@@ -6,8 +6,8 @@ metadata:
   title: Understand workload identities
   description: Learn what workload identities are, how they're different from user accounts, and how they work.
   ms.date: 07/27/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

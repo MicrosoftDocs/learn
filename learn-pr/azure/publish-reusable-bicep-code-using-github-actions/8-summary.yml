@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: Summary for publishing template specs and Bicep modules by using GitHub Actions.
   ms.date: 03/29/2022
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
