@@ -30,7 +30,7 @@ Place those components in a dependency graph that shows a hierarchical view of t
 
 Your graph should look something like this:
 
-![Example of a dependency graph for a health model.](../media/health-model.png)
+![Diagram that shows a dependency graph for a health model.](../media/health-model.png)
 
 > **Check your progress: [Layered application health](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#layered-application-health)**
 
@@ -72,7 +72,7 @@ The health score for a user flow should be represented by the lowest score acros
 
 You'll need a unified data sink, in each region, which collects logs and metrics for all application and platform services deployed as part of the regional stamp. You'll need another sink for storing metrics emitted from global resources, such as Azure Front Door and Cosmos DB. 
 
-![Example of data collection from various application and platform services.](../media/data-collection.png)
+![Diagram that shows data collection from various application and platform services.](../media/data-collection.png)
 
 #### Technology choices
 
@@ -92,7 +92,7 @@ Store custom queries in the code repository so that they're imported and applied
 
 The dependency graph with health scores can be visualized with a traffic light representation. Use tools such as Azure Dashboards, Monitor Workbooks, or Grafana. Here's an example:
 
-![Example of health score shown in the dependency graph.](../media/mission-critical-example-fault-states.png)
+![Diagram that shows an example health score in a dependency graph.](../media/mission-critical-example-fault-states.png)
 
 > **Check your progress: [Visualization](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#visualization)**
 

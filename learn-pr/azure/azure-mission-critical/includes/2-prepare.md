@@ -10,7 +10,7 @@ There have been some challenges when certain components aren't available. The sc
 
 For you to complete this challenge, you need to have a good understanding of Contoso Shoe's current architecture. The focus will be on their API layer. 
 
-![This image shows the basic architecture for a web application](../media/basic-architecture.png)
+![Diagram of the basic architecture for a web application.](../media/basic-architecture.png)
 
 ### Components
 
