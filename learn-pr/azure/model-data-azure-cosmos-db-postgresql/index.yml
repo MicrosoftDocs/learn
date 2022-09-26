@@ -12,7 +12,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Model data for Azure Cosmos DB for PostgreSQL
-summary: "Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. To effectively model data for distributed tables in Azure Cosmos DB for PostgreSQL, data usage and distribution must be taken into consideration."
+summary: |
+  Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. To effectively model data for distributed tables in Azure Cosmos DB for PostgreSQL, data usage and distribution must be taken into consideration.
 abstract: |
   In this module, you will:
     - Identify key considerations for modeling data for Azure Cosmos DB for PostgreSQL
@@ -27,21 +28,21 @@ levels:
 roles:
   - developer
 products:
-- azure
-- azure-cosmos-db
+  - azure
+  - azure-cosmos-db
 subjects:
   - cloud-computing
 units:
-- learn.model-data-azure-cosmos-db-postgresql.introduction
-- learn.model-data-azure-cosmos-db-postgresql.classify-tables-based-on-processing
-- learn.model-data-azure-cosmos-db-postgresql.exercise-create-tables
-- learn.model-data-azure-cosmos-db-postgresql.scaffold-data-for-distribution
-- learn.model-data-azure-cosmos-db-postgresql.exercise-create-scaffolding
-- learn.model-data-azure-cosmos-db-postgresql.partition-timeseries-data
-- learn.model-data-azure-cosmos-db-postgresql.exercise-create-timeseries-partitions
-- learn.model-data-azure-cosmos-db-postgresql.alter-scaffolding-in-a-distributed-environment
-- learn.model-data-azure-cosmos-db-postgresql.exercise-alter-scaffolding
-- learn.model-data-azure-cosmos-db-postgresql.knowledge-check
-- learn.model-data-azure-cosmos-db-postgresql.summary
+  - learn.model-data-azure-cosmos-db-postgresql.introduction
+  - learn.model-data-azure-cosmos-db-postgresql.classify-tables-based-on-processing
+  - learn.model-data-azure-cosmos-db-postgresql.exercise-create-tables
+  - learn.model-data-azure-cosmos-db-postgresql.scaffold-data-for-distribution
+  - learn.model-data-azure-cosmos-db-postgresql.exercise-create-scaffolding
+  - learn.model-data-azure-cosmos-db-postgresql.partition-timeseries-data
+  - learn.model-data-azure-cosmos-db-postgresql.exercise-create-timeseries-partitions
+  - learn.model-data-azure-cosmos-db-postgresql.alter-scaffolding-in-a-distributed-environment
+  - learn.model-data-azure-cosmos-db-postgresql.exercise-alter-scaffolding
+  - learn.model-data-azure-cosmos-db-postgresql.knowledge-check
+  - learn.model-data-azure-cosmos-db-postgresql.summary
 badge:
   uid: learn.model-data-azure-cosmos-db-postgresql.badge
