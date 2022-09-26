@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.create-speech-translator-mixed-reality-application-unity-azure-cognitive-services
+uid: learn.azure.create-language-translator-mixed-reality-application-unity-azure-cognitive-services
 metadata:
   title: Create a speech translator application with Unity and Azure Cognitive Services
   description: Create a speech translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.  You will also integrate MRTK features where appropriate.
