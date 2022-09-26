@@ -294,7 +294,7 @@ You'll now connect to your existing PostgreSQL VM using the Cloud Shell to expor
 1. On the **Select tables** page, select **Next: Configure migration settings\>\>**.
 1. On the **Configure migration settings** page, expand the **adventureworks** dropdown, expand the **Advanced online migration settings dropdown**, verify that **Maximum number of instances to load in parallel** is set to 5, and then select **Next: Summary\>\>**.
 1. On the **Summary** page, in the **Activity name** box type **AdventureWorks_Migration_Activity**, and then select **Start migration**.
-1. On the **AdventureWorks_Migration_Activity** page, select **Refresh** at 15 second intervals. You will see the status of the migration operation as it progresses. Wait until the **MIGRATION DETAILS** column changes to **Ready to cutover**.
+1. On the **AdventureWorks_Migration_Activity** page, select **Refresh** at 15 second intervals. You'll see the status of the migration operation as it progresses. Wait until the **MIGRATION DETAILS** column changes to **Ready to cutover**.
 1. Switch back to the Cloud Shell.
 1. Run the following command to recreate the foreign keys in the **azureadventureworks** database. You generated the **addkeys.sql** script earlier:
 
