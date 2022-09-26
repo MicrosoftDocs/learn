@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-orbital-ground-station.exercise-register-spacecraft
+title: "Exercise: Register a Spacecraft"
+metadata:
+  title: "Exercise: Register a Spacecraft"
+  description: TBD
+  ms.date: 09/26/2022
+  author: meaghanlewis
+  ms.author: mosagie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-exercise-register-spacecraft.md)]
