@@ -1,4 +1,4 @@
-Suppose you work for a large book publisher that's deploying Windows 10 to employees' laptops. Your organization uses Azure Active Directory (Azure AD) and Azure AD Multi-Factor Authentication. With these services, you can manage user identities and help protect the organization's resources. 
+Suppose you work for a large book publisher that's deploying Windows 11 to employees' laptops. Your organization uses Azure Active Directory (Azure AD) and Azure AD Multi-Factor Authentication. With these services, you can manage user identities and help protect the organization's resources. 
 
 You want to add another layer of security for devices. Specifically, you need to restrict access to the organization's resources to only devices that your organization manages and that your mobile device management (MDM) system considers compliant. You also want to improve your organization's experience when switching between devices.
 
@@ -6,9 +6,9 @@ You want to add another layer of security for devices. Specifically, you need to
 
 In this module, you'll:
 
-- Describe options to manage device identities in Azure AD
-- Configure Azure AD join to manage device identities
-- Configure Enterprise State Roaming to reduce the time that users need to configure a new device
+- Describe options to manage device identities in Azure AD.
+- Configure Azure AD join to manage device identities.
+- Configure Enterprise State Roaming to reduce the time that users need to configure a new device.
 
 ## Prerequisites
 
