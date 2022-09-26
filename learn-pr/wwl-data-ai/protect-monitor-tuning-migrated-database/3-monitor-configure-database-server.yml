@@ -4,12 +4,13 @@ title: Monitor and configure a database server
 metadata:
   title: Monitor and configure a database server
   description: "Monitor and configure a database server"
-  ms.date: 02/03/2021
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 11
 content: |
   [!include[](includes/3-monitor-configure-database-server.md)]

@@ -4,12 +4,13 @@ title: Protect a database and server
 metadata:
   title: Protect a database and server
   description: "Protect a database and server"
-  ms.date: 02/03/2021
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/2-protect-database-server.md)]

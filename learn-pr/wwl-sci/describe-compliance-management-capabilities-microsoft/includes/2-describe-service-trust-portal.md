@@ -66,3 +66,10 @@ If a document is part of a series, you'll be subscribed to the series, and will 
 
 :::image type="content" source="../media/stp-my-library.png" alt-text="Documents listed in the My Library page.":::
 
+## Interactive Guide
+In this interactive guide, you'll explore a few of the menu options available on the Service Trust Portal. Select the image below to get started and follow the prompts on the screen.
+
+> [!NOTE]
+> The user interface (UI) in Microsoft 365 is continually evolving so the UI shown in the interactive guide may not reflect the most recent updates.
+
+[![Interactive guide](../media/stp-interactive-guide-place-holder.png)](https://edxinteractivepage.blob.core.windows.net/edxpages/sc-900/c002-lp04m01-explore1the-service-trust-portal-sept2022/index.html?azure-portal=true)
