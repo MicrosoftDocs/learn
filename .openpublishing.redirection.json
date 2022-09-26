@@ -16096,13 +16096,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/intro-to-postgres/includes/3-what-is-hyperscale.md",
-      "redirect_url": "learn-pr/azure/intro-to-postgres/includes/3-what-is-azure-cosmos-db-postgresql.md",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/azure/intro-to-postgres/3-what-is-hyperscale.yml",
-      "redirect_url": "learn-pr/azure/intro-to-postgres/3-what-is-azure-cosmos-db-postgresql.yml",
+      "source_path": "learn-pr/azure/intro-to-postgres/3-what-is-hyperscale.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-postgres/3-what-is-azure-cosmos-db-postgresql",
       "redirect_document_id": false
     },
     {
