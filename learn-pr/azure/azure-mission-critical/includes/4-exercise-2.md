@@ -4,7 +4,7 @@ Contoso Shoes needs a way to withstand regional outages. You want to deploy the 
 
 A single region has been sufficient for the application. However, a recent regional outage that impacted networking caused the system to go offline from an end user perspective. Horizontal scaling within the region or even deploying a new stamp in that region wouldn’t have recovered the application from the failed state.
 
-DNS is held by an existing registrar for `api.contososhoes.com`. The DNS record resolves to the backend App Services endpoint (`apicontososhoes.azurewebsites.net`) with time-to-live (TTL) period 2 days. When the solution is deployed to multiple regions, DNS needs to be migrated.
+DNS is held by an existing registrar for `api.contososhoes.com`. The DNS record resolves to the backend App Services endpoint (`apicontososhoes.azurewebsites.net`) with time-to-live (TTL) period of 2 days. When the solution is deployed to multiple regions, DNS needs to be migrated.
 
 ## Specification
 
@@ -34,7 +34,7 @@ Think through a failure scenario. Suppose Region 1 gets 75% of the traffic and R
 In order for the clients to get transparently routed to either working region, add a global load balancer. The health checks that you added in the previous exercise should be used by the load balancer to determine whether a stamp is healthy. Can you think of ways to serve frequent and similar requests that can be fulfilled without reaching the backend?
 
 - Choose a native Azure service that integrates with the existing architecture and is able to fail over quickly.
-- Make sure that network ingress path has controls in place to deny unauthorized traffic. 
+- Make sure that the network ingress path has controls in place to deny unauthorized traffic. 
 - Minimize network latency by serving end users from an edge cache.
 - Migrate the existing DNS without affecting existing clients.
 - Have an automated way to indicate a regional failure to ensure traffic isn’t routed to the faulted region. Also, get notified  when the region is available again so that load balancer can resume routing to that region.
@@ -43,9 +43,9 @@ In order for the clients to get transparently routed to either working region, a
 
 ### 3&ndash;Deployment stamp changes
 
-The ideal state is an active-active configuration that doesn't require any manual failover and client requests can be served from any region. Think about what that implies for your architecture. For example, do you have any state that stored in the regional stamp?
+The ideal state is an active-active configuration that doesn't require any manual failover and client requests can be served from any region. Think about what that implies for your architecture. For example, do you have any state that is stored in the regional stamp?
 
-Certain services in the current architecture have geo-replication capabilities. Consider separating the services into different stamps. One stamp that contains global resources. The other regional stamp that shares resources in the global stamp. One of decision factors should be the lifecycle of those resources. What is the expected lifetime of the resource, relative to other resources in the architecture? Should the resource outlive or share the lifetime with the entire system or region, or should it be temporary?
+Certain services in the current architecture have geo-replication capabilities. Consider separating the services into different stamps. One stamp that contains global resources. The other regional stamp that shares resources with the global stamp. One of deciding factors should be the lifecycle of those resources. What is the expected lifetime of the resource, relative to other resources in the architecture? Should the resource outlive or share the lifetime with the entire system or region, or should it be temporary?
 
 Explore the reliability features of the Azure services used in the architecture. You can start with these features and explore further to maximize reliability. 
 
@@ -68,6 +68,6 @@ Here are the [**Application**](/azure/architecture/reference-architectures/conta
 - How did you use your health check API from the previous exercise?
 - Have you protected the application from DDoS attacks, especially preventing malicious clients from bypassing the load balancer and reaching regional instances?
 - How did you approach DNS migration? 
-- Did make any SKU changes to the existing component to support multi-region topology?
+- Did you make any SKU changes to the existing component to support multi-region topology?
 - Which Azure services did you leave as singletons? How have you justified your choice for each service? Did you make any configuration changes?
 - Are you logging resources? Do you think that will impact your ability to inspect the logs for the overall system?	

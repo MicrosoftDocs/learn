@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Challenge Project - Design a mission-critical web application
 summary: |
-  You'll be given the architecture of an example web workload, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using Azure capabilities. 
+  You'll be given the architecture of an example web workload, its current state, tradeoffs, and business requirements for improvements. You want to make it highly available and resilient using the capabilities of Azure. 
   > [!NOTE]
   > This module is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions for the actual implementation.
 abstract: |

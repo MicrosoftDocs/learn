@@ -96,11 +96,11 @@ The dependency graph with health scores can be visualized with a traffic light r
 
 > **Check your progress: [Visualization](/azure/architecture/framework/mission-critical/mission-critical-health-modeling#visualization)**
 
-### 7&ndash;Set up alerts on status change
+### 7&ndash;Set up alerts on status changes
 
 Dashboards should be used with alerts to raise immediate attention for issues.
 
-If the health state of a component changes to **Degraded** or **Unhealthy**, the operator should be immediately notified. Set the alert to the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
+If the health state of a component changes to **Degraded** or **Unhealthy**, the operator should be immediately notified. Set alerts at the root node because any change to this node indicates unhealthy state in the underlying user flows or resources. 
 
 > **Check your progress: [Alerting](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-health-modeling#alerting)**
 
@@ -114,5 +114,5 @@ Watch this demo on monitoring and health modeling. Did you cover all aspects in 
 - Have you included application logs, platform metrics, and solution data points?
 - Have you set up dashboards to visualize the health status of all components?
 - Did you consider failure points at each service (or part of that service) that could cause an outage or prevent you from scaling, deploying, monitoring?
-- Did you consider Query Packs for capturing key queries that would  triage of issues faster?
+- Did you consider Query Packs for capturing key queries that would help triage issues faster?
 - Was your health check API helpful in this model? Did you need to alter that API to better suit the health model?

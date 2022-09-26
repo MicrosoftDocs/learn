@@ -28,7 +28,7 @@ To get started on your design, we recommend this approach.
 
 All queries sent by the health check API must be performed asynchronously and in parallel. Design health checks against the critical components like the database. The API should periodically check read and write operations. Implement those functions as separate probes so that reads and writes are checked independently.
 
-Use requests that mimic real application behavior without putting too much load on the services just from the health probes. To test also write requests, you need to design a way to remove test data efficiently so that it doesn't get mixed up with real user data.
+Use requests that mimic real application behavior without putting too much load on the services just from the health probes. To also test write requests, you need to design a way to remove test data efficiently so that it doesn't get mixed  with real user data.
 
 ### 2&ndash;Caching pattern
 

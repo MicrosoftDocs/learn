@@ -1,4 +1,4 @@
-You'll be adding your own enhancements to an existing architecture that meets an organization's high reliability requirements. Here, we'll discuss the background context needed to be successful with the exercises.
+You'll be adding your own enhancements to an existing architecture that meets the organization's high reliability requirements. Here, we'll discuss the background context needed to be successful with the exercises.
 
 ## Problem context
 
@@ -36,13 +36,13 @@ All components of this architecture are deployed to a single region.
 
 ### Design choices
 
-In the list of components, the _deployment stamp_ consists of services that participate in processing of a request:  Those services include **App Services and the API code** and **Cosmos DB**. The stamp also includes non-functional components: **Key Vault**, **Container Registry**. The application has a third-party dependency on a performance and resilience framework. System-managed identities are used between components of stamp. 
+In the list of components, the _deployment stamp_ consists of services that participate in processing of a request:  Those services include **App Services and the API code** and **Cosmos DB**. The stamp also includes non-functional components: **Key Vault**, **Container Registry**. The application has a third-party dependency on a performance and resilience framework. System-managed identities are used between components of the stamp. 
 
 In the stamp, App Services is configured to automatically scale based on load. 
 
-Separate environments are used for production and dev/test. The production environment uses App Service plan Standard SKU. This choice was made to have the capability of prewarming the application to a slot before deploying it to production. In the dev/test environment, the SKU is lowered to the Basic SKU for cost optimization. Both environments have their own instances of services. Only **Container Registry** is shared between the environments.
+Separate environments are used for production and dev/test. The production environment uses App Service plan Standard SKU. This choice was made to have the capability of prewarming the application to a slot before deploying it to production. In the dev/test environment, the SKU is lowered to the Basic SKU for cost optimization. Both environments have their own instances of services. Only the **Container Registry** is shared between the environments.
 
-The containerized API code is delivered in a single container image that runs in App Service. The API has multiple HTTP endpoints that are used by various frontends for both reads and writes. The frontends are out of scope for this module. However, they're in scope in the big picture for the mission critical status of this solution. The code was instrumented with Application Insights to capture some basic telemetry. The development team of this code also manages the CI/CD pipeline for the API container image and the CI/CD pipelines.
+The containerized API code is delivered in a single container image that runs in App Service. The API has multiple HTTP endpoints that are used by various frontends for both reads and writes. The frontends are out of scope for this module. However, they're in scope in the big picture for the mission critical status of this solution. The code was instrumented with Application Insights to capture some basic telemetry. The team that developed this code also manages the CI/CD pipeline for the API container image and the CI/CD pipelines.
 
 ### Tradeoffs
 
@@ -63,7 +63,7 @@ The company wants to add capabilities to their solution architecture so that it'
 - Align with Azure roadmap and take advantage of the latest reliability features offered by Azure services
 - Catch issues early and detect their cascading impact in the system by building an overall health model
 
-Those requirements are only the prioritized list of their improvement plans. The application team is aware that _all_ design areas must be considered to bring this solution's reliability up to mission critical standards. Rest assured, they won't stop improving their solution and operations after you've help them with the aspects covered in the upcoming exercises. Welcome to the team, Contoso Shoes is looking forward to hearing your recommendations.
+Those requirements are only the prioritized list of their improvement plans. The application team is aware that _all_ design areas must be considered to bring this solution's reliability up to mission critical standards. Rest assured, they won't stop improving their solution and operations after you've helped them with the aspects covered in the upcoming exercises. Welcome to the team, Contoso Shoes is looking forward to hearing your recommendations.
 
 ## Setup
 

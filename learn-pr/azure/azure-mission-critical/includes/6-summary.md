@@ -14,7 +14,7 @@ The exercises you've completed are a great start but they don't cover all aspect
 
 - Continuous validation and testing 
 
-    You must fully validate the health of both the application code and infrastructure. The scope must cover the requirements set of reliability, performance, availability, security, quality, and scale. 
+    You must fully validate the health of both the application code and infrastructure. The scope must cover the requirements set for reliability, performance, availability, security, quality, and scale. 
 
     > [!VIDEO fc7842c3-7c7a-44dc-ad87-838aa51d0000]
 
@@ -41,9 +41,9 @@ The exercises you've completed are a great start but they don't cover all aspect
 
 ## Learn more
 
-For more information on architecting solutions on Azure, visit the [Azure Well-Architected Framework](/azure/architecture/framework) guide in the Azure Architecture Center.
+For more information on designing solutions on Azure, refer to the [Azure Well-Architected Framework](/azure/architecture/framework) guide.
 
-Explore these reference architectures as a way to expand your design:
+Explore these reference architectures in the Azure Architecture Center, as a way to expand your design:
 
 - [Mission-critical baseline architecture](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-intro)
 - [Mission-critical baseline architecture with network controls](/azure/architecture/reference-architectures/containers/aks-mission-critical/mission-critical-network-architecture)
