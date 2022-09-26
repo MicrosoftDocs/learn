@@ -19,6 +19,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
     ![Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.](../media/cosmos-db-select-api-option.png)
 
+    > [!NOTE]
     > The portal will display an Azure Cosmos DB for PostgreSQL configuration screen.
 
 4. On the **Basics** tab, enter the following information:
@@ -39,6 +40,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
     ![Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. The settings above are shown in the screenshot.](../media/cosmos-db-for-postgresql-basics-tab.png)
 
+    > [!TIP]
     > Note the server name and password for later use.
 
 5. For the **Scale** setting, select **Configure** and on the node configuration page, set the following:
