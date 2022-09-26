@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Set the `start-ip-address` parameter to 0.0.0.0, and the `end-ip-address` parameter to 255.255.255.255."
       isCorrect: false
-      explanation: "That's incorrect. Setting the `start-ip-address` parameter to 0.0.0.0, and the `end-ip-address` parameter to 255.255.255.255 will work, but is dangerous as it permits traffic from all IP addresses. There is a better answer."
+      explanation: "That's incorrect. Setting the `start-ip-address` parameter to 0.0.0.0, and the `end-ip-address` parameter to 255.255.255.255 will work, but is dangerous as it permits traffic from all IP addresses. There's a better answer."
     - content: "Set the `start-ip-address` and `end-ip-address` parameters to 0.0.0.0."
       isCorrect: true
       explanation: "That's correct. Set the `start-ip-address` and `end-ip-address` parameters to 0.0.0.0. , effectively disabling the firewall."
