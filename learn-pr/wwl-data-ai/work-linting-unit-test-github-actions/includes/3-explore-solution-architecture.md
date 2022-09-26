@@ -32,4 +32,4 @@ Let's explore the workflow for a data scientist:
 As a machine learning engineer, you'll need to create a GitHub Actions workflow that verifies the code by running a linter and unit tests whenever a pull request is created.
 
 > [!Tip]
-> Learn more about [how to work with source control for machine learning projects, including trunk-based development and verifying your code locally](/learn/modules/source-control-for-machine-learning-projects/).
+> Learn more about [how to work with source control for machine learning projects, including trunk-based development and verifying your code locally](/training/modules/source-control-for-machine-learning-projects/).

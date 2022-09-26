@@ -20,7 +20,7 @@ To check your code by using GitHub Actions you'll need to:
 - Run the tests by specifying the folders within your repo that need to be checked.
 
 > [!Tip]
-> You can verify code automatically with GitHub Actions, or manually in Visual Studio Code. Learn more about [how to verify your code locally](/learn/modules/source-control-for-machine-learning-projects/5-verify-your-code-locally).
+> You can verify code automatically with GitHub Actions, or manually in Visual Studio Code. Learn more about [how to verify your code locally](/training/modules/source-control-for-machine-learning-projects/5-verify-your-code-locally).
 
 ## Integrate code checks with pull requests.
 
