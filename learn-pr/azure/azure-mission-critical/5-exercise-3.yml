@@ -36,9 +36,6 @@ quiz:
     - content: 'Azure Monitor Logs'
       isCorrect: true
       explanation: 'Azure Monitor collects data sent by Application insights and platform metrics for the Azure services.'
-    - content: 'Azure Log Analytics'
-      isCorrect: false
-      explanation: 'Azure Log Analytics workspaces is used as the central store for logs and metrics from all application and infrastructure components.'
     - content: 'Azure Storage'
       isCorrect: false
       explanation: 'Azure Storage can be used to offload telemetry for historical analysis, but it is not well-suited as the unified sink for telemetry.'
