@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: No
       isCorrect: true
-      explanation: "Correct. Azure Cosmos Database for PostgreSQL offers a distributed database experience, not Azure Database for PostgreSQL."
+      explanation: "Correct. Azure Cosmos DB for PostgreSQL offers a distributed database experience, not Azure Database for PostgreSQL."
     - content: Yes
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos Database for PostgreSQL offers a distributed database experience."
+      explanation: "Incorrect. Azure Cosmos DB for PostgreSQL offers a distributed database experience."

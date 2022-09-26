@@ -19,7 +19,7 @@ Azure Database for PostgreSQL is available in three deployment modes, with each 
 :::row:::
 :::column span="3":::
 
-**Cosmos Database for PostgreSQL** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data. Cosmos Database for PostgreSQL can also be deployed and managed on-premises, on the edge, or on multi-cloud environments using Azure Arc.
+**Cosmos DB for PostgreSQL** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data. Cosmos DB for PostgreSQL can also be deployed and managed on-premises, on the edge, or on multi-cloud environments using Azure Arc.
 
 The Azure layer gives each deployment option four noticeable benefits:
 
