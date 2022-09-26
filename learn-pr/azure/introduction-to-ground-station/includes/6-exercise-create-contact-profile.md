@@ -6,7 +6,7 @@ A contact profile defines how the satellite and ground station will make contact
 
 Just like registering the spacecraft, creating a contact profile is a matter of inputting the right information into the Azure Orbital portal— satellite operators using their own fleet will have this information on hand.
 
-We’ll continue to use [NASA’s AQUA satellite](https://docs.microsoft.com/en-us/azure/orbital/downlink-aqua) to show you how to create a contact profile. If you’re following along in your own account, you’ll need to have an Azure event hub and virtual network established as the endpoint for the data. You can learn how to create an [event hub here](https://docs.microsoft.com/azure/event-hubs/event-hubs-create) and a [virtual network](https://docs.microsoft.com/en-us/azure/virtual-network/quick-create-portal) here.
+We’ll continue to use [NASA’s AQUA satellite](/azure/orbital/downlink-aqua) to show you how to create a contact profile. If you’re following along in your own account, you’ll need to have an Azure event hub and virtual network established as the endpoint for the data. You can learn how to create an [event hub here](/azure/event-hubs/event-hubs-create) and a [virtual network](/azure/virtual-network/quick-create-portal) here.
 
 Below you’ll see a table where we have gathered all the information needed to create your contact profile. If you’re unfamiliar with a term, look at the descriptions to help build your understanding.
 
@@ -15,7 +15,7 @@ Information needed to create a contact profile resource:
 | ***Field*** | ***Information needed*** | ***Description*** |
 |---|---|---|
 | **Name** | AQUA Downlink | The name of your satellite contact profile |
-| **Region** | West US 2 | The Azure region you want to use. Each Azure region features datacenters deployed within a latency-defined perimeter connected through a dedicated regional low-latency network. This design provides the best possible performance and security within each region. You can find more information on [Azure regions in Microsoft Docs](https://docs.microsoft.com/azure/availability-zones/az-overview).  |
+| **Region** | West US 2 | The Azure region you want to use. Each Azure region features datacenters deployed within a latency-defined perimeter connected through a dedicated regional low-latency network. This design provides the best possible performance and security within each region. You can find more information on [Azure regions in Microsoft Docs](/azure/availability-zones/az-overview).  |
 | **Minimum viable** **Contact duration** | PT1M | The minimum amount of time that the ground station and spacecraft can be in contact. A contact is the period of time that the ground station antenna and satellite are linked. |
 | **Minimum elevation in degrees** | 5.0 | The minimum elevation required for the contact. Elevation is the upward tilt to a satellite antenna measured in degrees. A higher value elevation can decrease the duration of the contact. |
 | **Auto track configuration** | Disabled | The frequency of the band that should be used for auto tracking during the contact. In Azure Orbital, you will select “x band”, “s band” or “disabled.” |
@@ -68,7 +68,7 @@ Now that you have the needed information on hand, we’ll walk through how to cr
 6. Once you’ve filled out the link information, select “Add Channel” and input the pertinent information on the AQUA satellite as well as the relevant information for your endpoint. 
 7. For the purposes of this exercise, skip the information on the “tags” page.
 
-**Note**: Tags are not required to register a spacecraft, but they can be [helpful for managing spend and use across all products in a company’s Azure account](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json).  
+**Note**: Tags are not required to register a spacecraft, but they can be [helpful for managing spend and use across all products in a company’s Azure account](/azure/azure-resource-manager/management/tag-resources?tabs=json).  
 
 8. Finally, go to “Review + create” to review the information you entered and create the contact profile.
 

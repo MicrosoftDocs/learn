@@ -11,7 +11,7 @@ Below you can see how Azure Orbital Ground Station can be used by Contoso to com
 1. Contoso transfers data to the Azure cloud via Azure networking.
 1. Contoso processes data to make it into an analysis ready data set. Then, Contoso can provide insights to their end customer through Azure Artificial Intelligence (AI) and Machine Learning (ML) capabilities.
 
-![Visualization of how Azure Orbital Ground Station works](../media/image2.svg)
+:::image type="content" source="../media/orbital-eos-diagram.png" alt-text="Visualization of how Azure Orbital Ground Station works.":::
 
 The Azure Orbital portal is extremely user friendly, and in the following units we’ll show you how to use Azure Orbital to execute these actions.
 
