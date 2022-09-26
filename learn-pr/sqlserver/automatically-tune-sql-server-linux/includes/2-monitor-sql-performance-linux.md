@@ -32,11 +32,11 @@ Many performance counters are included with SQL Server 2019. Each counter can gi
 
 - **Batch Requests/Sec**. This counter measures the rate at which SQL Server is receiving requests from clients. Use this counter to measure demand on the server.
 - **User Connections**. This counter measures the number of users currently connected to the database. Again, use this counter to measure demand on the server.
-- **Buffer Cache Hit Ratio**. This counter measures the proportion of requests that SQL Server can satisfy by returning data pages from its buffer cache in memory. When the proportion is high, most requests are returned without obtaining data from the hard drives, which respond more slowly than memory. That's why a high value indicates optimal performance.
+- **Buffer Cache Hit Ratio**. This counter measures the proportion of requests that SQL Server can satisfy by returning data pages from its buffer cache in memory. When the proportion is high, most requests are returned without obtaining data from the hard drives, which respond more slowly than memory. A high value indicates optimal performance.
 - **SQL Compilations/Sec**. This counter measures the rate at which SQL Server compiles execution plans. This process is resource-intensive. If this counter is more than 10% of the value of **Batch Requests/Sec**, then some complication may be lowering performance by rendering execution plans invalid.
 - **Page Life Expectancy**. This counter measures the average time a page remains in the buffer cache. In general, a page life expectancy of less than 300 seconds might indicate that your server would do better with extra physical memory.
 
-When diagnosing performance issues, it's often necessary to identify changes in demand or behavior over time. If your company is growing, for example, user demand on the database server might increase over months or years. That's why you should record values of common counters when you know that your server is doing well, as a baseline. Compare later measurements of these counters against the baseline to spot changes that might create bottlenecks.
+When diagnosing performance issues, it's often necessary to identify changes in demand or behavior over time. If your company is growing, for example, user demand on the database server might increase over months or years. You should record values of common counters when you know that your server is doing well, as a baseline. Compare later measurements of these counters against the baseline to spot changes that might create bottlenecks.
 
 ## Writing scripts to collect performance data
 
