@@ -7,10 +7,10 @@ In this unit, you’ll learn to describe how the space industry is changing as w
 The space industry is experiencing rapid growth accompanied by major changes:
 
 - **More and more satellites are launched** **into space**: Satellites are becoming much smaller in size _and_ the cost to launch them is decreasing. These combined changes have resulted in an increasing number of satellites in space—up 179% from 2016 to 2021.
-- **Sensors are generating more data:** Thanks to advancements, satellite sensors can generate increasing amounts of data. For example, a single NASA Earth Science mission can generate 7x more data than previously collected over the program’s lifetime. While these advancements are exciting, they require more processing and storage to handle. 
-- **Space is shifting to commercial opportunities:** Space data was traditionally reserved for government applications. However, as technology advances, there are more opportunities for commercial applications of earth observation data. The space economy reflects these changes and is growing at a rapid pace. Experts estimate that the space industry will grow to ~ $600B by 2030.
+- **Sensors are generating more data:** Thanks to advancements, satellite sensors can generate increasing amounts of data. For example, a single NASA Earth Science mission can generate 7x more data than previously collected over the program’s lifetime. While these advancements are exciting, they require more processing and storage to handle.
+- **Space is shifting to commercial opportunities:** Space data was traditionally reserved for government applications. However, as technology advances, there are more opportunities for commercial applications of earth observation data. The space economy reflects these changes and is growing at a rapid pace. Experts estimate that the space industry will grow to ~ \\$600B by 2030.
 
-While strong advancements are being made, common challenges remain. 
+While strong advancements are being made, common challenges remain.
 
 ## Common challenges
 
