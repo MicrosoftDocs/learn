@@ -12,5 +12,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Basic knowledge of Azure AD features such as Azure AD Connect, Azure AD Seamless Single Sign-On, and Multi-Factor Authentication
+- Basic knowledge of Azure AD features such as Azure AD Connect, Azure AD Seamless single sign-on, and Multi-Factor Authentication
 - Basic understanding of MDM software like Microsoft Intune
