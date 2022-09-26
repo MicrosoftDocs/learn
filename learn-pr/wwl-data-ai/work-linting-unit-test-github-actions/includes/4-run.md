@@ -12,7 +12,7 @@ You can use **linters** to check whether your code adheres to quality guidelines
 To check whether the code works as expected, you can create **unit tests**. To easily test specific parts of your code, your scripts should contain **functions**. You can test functions in your scripts by creating test files. A popular tool to test Python code is **Pytest**.
 
 > [!Tip]
-> Learn more about [how to run unit tests with Pytest](/learn/modules/test-python-with-pytest/).
+> Learn more about [how to run unit tests with Pytest](/training/modules/test-python-with-pytest/).
 
 To check your code by using GitHub Actions you'll need to:
 
