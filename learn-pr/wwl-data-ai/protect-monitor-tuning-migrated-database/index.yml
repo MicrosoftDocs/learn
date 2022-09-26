@@ -3,7 +3,7 @@ uid: learn.wwl.protecting-monitoring-tuning-migrated-database
 metadata:
   title: Protect, monitor, and tune a migrated database
   description: "Protect, monitor, and tune a migrated database"
-  ms.date: 02/03/2021
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -27,8 +27,8 @@ roles:
 products:
 - azure
 subjects:
-- migration
 - cloud-security
+- migration
 units:
 - learn.wwl.protecting-monitoring-tuning-migrated-database.introduction
 - learn.wwl.protecting-monitoring-tuning-migrated-database.protecting-database-server
