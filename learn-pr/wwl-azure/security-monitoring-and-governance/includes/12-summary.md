@@ -10,5 +10,5 @@ You learned how to describe the benefits and usage of:
 ## Learn more
 
  -  [What is Microsoft Defender for Identity?](/defender-for-identity/what-is).
- -  [What is Azure Policy?](/azure/governance/policy/overview).
- -  [What is Azure Blueprints?](/azure/governance/blueprints/overview).
+ -  [Overview of Azure Policy](/azure/governance/policy/overview).
+ -  [Overview of Azure Blueprints](/azure/governance/blueprints/overview).

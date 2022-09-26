@@ -154,14 +154,14 @@ Identify the subtasks of *Design a holistic monitoring strategy on Azure*
 
 This one may not have a ton of interactivity, but should be focused on selecting the right services, how each plays into an overall monitoring strategy, and integrating them together to create a solid monitoring strategy.
 
-https://docs.microsoft.com/azure/azure-monitor/continuous-monitoring
+https://learn.microsoft.com/azure/azure-monitor/continuous-monitoring
 
 During design investigation, the following URLs were considered.
 
-- Azure Application Insights: https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview
-- Azure Sentinel: https://docs.microsoft.com/azure/sentinel/overview
-- Azure Security Center: https://docs.microsoft.com/azure/security-center/security-center-intro
-- Permission in Azure Security Center: https://docs.microsoft.com/azure/security-center/security-center-permissions
+- Azure Application Insights: https://learn.microsoft.com/azure/azure-monitor/app/app-insights-overview
+- Azure Sentinel: https://learn.microsoft.com/azure/sentinel/overview
+- Azure Security Center: https://learn.microsoft.com/azure/security-center/security-center-intro
+- Permission in Azure Security Center: https://learn.microsoft.com/azure/security-center/security-center-permissions
 
 During the design, the following considerations were made
 
