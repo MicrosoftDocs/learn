@@ -41,7 +41,7 @@ Conditional Access uses many common signal types to make a decision on which out
 Signals include the following types:
 
 - **User or group membership** provides fine-grained access to resources.
-- **IP location information** uses an allow list of trusted IP addresses and a deny list of blocked or banned IP addresses.
+- **IP location information** uses an allowlist of trusted IP addresses and a blocklist of blocked or banned IP addresses.
 - **Device** allows you to specify the type of device and its state.
 - **Application** lets you control access to an application for a specific device.
 - **Real-time and calculated risk detection** allows Azure AD to identify behaviors not only during sign-in, but also throughout the user's session.
