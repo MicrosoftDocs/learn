@@ -7,27 +7,27 @@ In the previous exercise, you loaded data into two distributed tables and one re
 
 1. Once your cluster has finished provisioning, navigate to the resource in the Azure portal.
 
-2. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
+1. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
 
-    ![The Connection strings page of the Azure Cosmos DB Cluster resource is highlighted. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-postgresql-connection-strings-psql.png)
 
-3. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
+1. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
-4. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
+1. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    ![The Cloud Shell icon is highlighted on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    ![Screenshot of the Cloud Shell icon on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
     The Cloud Shell will open as an embedded panel at the bottom of your browser window.
 
-5. If necessary, select **Bash** as the environment in the Cloud Shell window.
+1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
-    ![The welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell is displayed. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
 
-6. If you have never opened Cloud Shell before, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
+1. If you have never opened Cloud Shell before, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
 
-    ![The Azure Cloud Shell wizard showing no storage mounted is displayed. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
 
-7. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following sample command:
+1. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following sample command:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password=P@ssword.123! sslmode=require"
@@ -41,7 +41,7 @@ In the previous exercise, you loaded data into two distributed tables and one re
     SELECT table_name, distribution_column FROM citus_tables;
     ```
 
-2. Note the distribution column for each table in the query output.
+1. Note the distribution column for each table in the query output.
 
     ```output
         table_name     | distribution_column 
@@ -63,7 +63,7 @@ In the previous exercise, you used the same column as the shard key for both the
     LEFT JOIN payment_users u ON e.user_id = u.user_id;
     ```
 
-2. Run the same query with `EXPLAIN` and review the output.
+1. Run the same query with `EXPLAIN` and review the output.
 
     ```sql
     EXPLAIN VERBOSE
@@ -72,7 +72,7 @@ In the previous exercise, you used the same column as the shard key for both the
         LEFT JOIN payment_users u ON e.user_id = u.user_id;
     ```
 
-3. The output of that query shows it was fragmented and executed across each of the 32 shards in the cluster.
+1. The output of that query shows it was fragmented and executed across each of the 32 shards in the cluster.
 
     ```output
     Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=100000 width=40)
@@ -90,7 +90,7 @@ In the previous exercise, you used the same column as the shard key for both the
     SELECT create_distributed_table('payment_merchants', 'merchant_id');
     ```
 
-2. Now that you have a table to work with that has a different distribution column, run the following query and observe the results.
+1. Now that you have a table to work with that has a different distribution column, run the following query and observe the results.
 
     ```sql
     SELECT name, event_id
@@ -99,13 +99,13 @@ In the previous exercise, you used the same column as the shard key for both the
     LIMIT 5;
     ```
 
-3. You'll receive the following error because complex joins (any joins other than an inner join) between non-colocated tables aren't supported.
+1. You'll receive the following error because complex joins (any joins other than an inner join) between non-colocated tables aren't supported.
 
     ```output
     ERROR: complex joins are only supported when all distributed tables are co-located and joined on their distribution columns
     ```
 
-4. Now, attempt the same query using an `INNER JOIN`.
+1. Now, attempt the same query using an `INNER JOIN`.
 
     ```sql
     SELECT name, event_id
@@ -119,13 +119,13 @@ In the previous exercise, you used the same column as the shard key for both the
     HINT: Set citus.enable_repartition_joins to on to enable repartitioning
     ```
 
-5. Based on the error and hint, you now know that this join requires dynamically repartitioning the tables so that the coordinator can execute the query. Run the following command to enable repartitioning joins.
+1. Based on the error and hint, you now know that this join requires dynamically repartitioning the tables so that the coordinator can execute the query. Run the following command to enable repartitioning joins.
 
     ```sql
     SET citus.enable_repartition_joins to on;
     ```
 
-6. Execute the `INNER JOIN` query again and observe the results.
+1. Execute the `INNER JOIN` query again and observe the results.
 
     ```sql
     SELECT name, event_id
@@ -136,7 +136,7 @@ In the previous exercise, you used the same column as the shard key for both the
 
     Notice that, while the query executes successfully, it takes a few seconds for the results to be returned.
 
-7. Run `EXPLAIN` on the `INNER JOIN` query to view the execution plan and try to identify why it took so long to execute:
+1. Run `EXPLAIN` on the `INNER JOIN` query to view the execution plan and try to identify why it took so long to execute:
 
     ```sql
     EXPLAIN
@@ -146,7 +146,7 @@ In the previous exercise, you used the same column as the shard key for both the
         LIMIT 5;
     ```
 
-8. In the `EXPLAIN` output, notice that tasks aren't supported for repartition queries. You can see the `MapMergeJob` tasks the coordinator used to dynamically repartition the tables to perform the join operation. This data shuffle between nodes helps to explain the slowness of the query.
+1. In the `EXPLAIN` output, notice that tasks aren't supported for repartition queries. You can see the `MapMergeJob` tasks the coordinator used to dynamically repartition the tables to perform the join operation. This data shuffle between nodes helps to explain the slowness of the query.
 
     ```output
      Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=100000 width=40)
@@ -180,7 +180,7 @@ You discovered in the previous task that you couldn't perform complex joins when
     ERROR: complex joins are only supported when all distributed tables are co-located and joined on their distribution columns
     ```
 
-2. The workaround is to include a CTE to bypass the limitation. Run the following query:
+1. The workaround is to include a CTE to bypass the limitation. Run the following query:
 
     ```sql
     WITH merchants AS (SELECT * FROM payment_merchants)
@@ -192,7 +192,7 @@ You discovered in the previous task that you couldn't perform complex joins when
 
     This approach allows you to successfully execute the join between your non-colocated tables. However, it's an expensive query to run, and you should avoid this approach.
 
-3. Run an `EXPLAIN` on the query to view the execution plan.
+1. Run an `EXPLAIN` on the query to view the execution plan.
 
     ```sql
     EXPLAIN
@@ -227,7 +227,7 @@ You discovered in the previous task that you couldn't perform complex joins when
                                  ->  Function Scan on read_intermediate_result intermediate_result  (cost=0.00..10.00 rows=1000 width=40)
     ```
 
-4. In the Cloud Shell, run the following command to disconnect from your database instance.
+1. In the Cloud Shell, run the following command to disconnect from your database instance.
 
     ```sql
     \q
@@ -241,8 +241,8 @@ It's crucial that you clean up any unused resources. You're charged for the conf
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
 
-2. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 3.
+1. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 3.
 
-3. In the **Overview** pane, select **Delete resource group**.
+1. In the **Overview** pane, select **Delete resource group**.
 
-4. Enter the name of the resource group you created to confirm and then select **Delete**.
+1. Enter the name of the resource group you created to confirm and then select **Delete**.

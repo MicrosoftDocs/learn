@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Examine anti-patterns for distributed queries
   description: |
-    Anti-patterns are query methods that can cause unintended consequences, such as slow performance, data shuffles, and other undesired behaviors. Understanding anti-patterns in Azure Cosmos DB for PostgreSQL can help you avoid poor query practices.
+    Understand the query anti-patterns that can cause unintended consequences, such as slow performance, data shuffles, and other undesired behaviors.
   ms.date: 09/26/2022
   author: seesharprun
   ms.author: sidandrews

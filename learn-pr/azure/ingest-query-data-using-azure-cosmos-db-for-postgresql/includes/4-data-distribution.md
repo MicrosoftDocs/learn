@@ -1,14 +1,14 @@
-Woodgrove Bank has asked you to review and optimize query execution for the distributed tables in their Azure Cosmos DB for PostgreSQL database. [Metadata tables](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata#coordinator-metadata) residing on the coordinator node can be queried to view detailed information about the nodes and shards in your distributed database. You can use these tables to gain insights into your database's structure, node utilization, data distribution, and performance.
+Woodgrove Bank has asked you to review and optimize query execution for the distributed tables in their Azure Cosmos DB for PostgreSQL database. [Metadata tables](/azure/postgresql/hyperscale/reference-metadata#coordinator-metadata) residing on the coordinator node can be queried to view detailed information about the nodes and shards in your distributed database. You can use these tables to gain insights into your database's structure, node utilization, data distribution, and performance.
 
 The coordinator maintains these tables and uses them to track statistics and information about the health and location of shards across nodes. These tables, prefixed with `pg_dist_*`, contain diverse metadata about your distributed database and are used by the coordinator when building query execution plans across the worker nodes.
 
-This unit highlights a few of the tables below, but you can view the complete list of metadata tables, learn more about them, and view their schemas by reading the [System tables and views documentation](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata).
+This unit highlights a few of the tables below, but you can view the complete list of metadata tables, learn more about them, and view their schemas by reading the [System tables and views documentation](/azure/postgresql/hyperscale/reference-metadata).
 
 ## Find the distribution column for a distributed table
 
 Each distributed table has a _distribution column_. When ingesting data and writing queries against your database, it's essential to know which column it is. For instance, when joining or filtering tables, you may see error messages with hints like, "add a filter to the distribution column."
 
-You can use the [distributed tables view](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata#distributed-tables-view), named `citus_tables`, on the coordinator node to view the distribution column name, along with other details about each distributed table in your database.
+You can use the [distributed tables view](/azure/postgresql/hyperscale/reference-metadata#distributed-tables-view), named `citus_tables`, on the coordinator node to view the distribution column name, along with other details about each distributed table in your database.
 
 Here's an example using the `payment_events` table from Woodgrove Bank's contactless payment app:
 
@@ -26,7 +26,7 @@ This `citus_tables` view also provides other helpful information, such as the sh
 
 ## Discover information about the nodes in your cluster
 
-Information about worker nodes in the cluster is contained in the worker node table, [`pg_dist_node`](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata#worker-node-table). To view information about the nodes in Woodgrove Bank's cluster, you can run the following command:
+Information about worker nodes in the cluster is contained in the worker node table, [`pg_dist_node`](/azure/postgresql/hyperscale/reference-metadata#worker-node-table). To view information about the nodes in Woodgrove Bank's cluster, you can run the following command:
 
 ```sql
 -- Turn on extended display to pivot results of wide tables
@@ -85,7 +85,7 @@ Reviewing the query output reveals details, including the ID, name, and port ass
 
 The team at Woodgrove is concerned that, over time, the distribution of data in their database will become skewed, resulting in decreased query performance. They've asked you to provide them with a query that will allow them to quickly assess data skew, and a way to address it when identified.
 
-Data skew refers to how evenly data is distributed across your worker nodes. Proper [selection of distribution columns](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-choose-distribution-column) should result in relatively consistent utilization of storage and compute resources across worker nodes. Clusters run most efficiently when data is placed evenly across nodes and related data are colocated on the same workers. You can use the `citus_shards` view to query the data size on each shard. This query provides insight into how evenly data is distributed across shards.
+Data skew refers to how evenly data is distributed across your worker nodes. Proper [selection of distribution columns](/azure/postgresql/hyperscale/howto-choose-distribution-column) should result in relatively consistent utilization of storage and compute resources across worker nodes. Clusters run most efficiently when data is placed evenly across nodes and related data are colocated on the same workers. You can use the `citus_shards` view to query the data size on each shard. This query provides insight into how evenly data is distributed across shards.
 
 Of the distributed tables associated with Woodgrove Bank's contactless payment app, the most likely to become skewed over time is the `payment_events` table. The merchants and users tables are distributed on their primary keys, so those tables will always have one row per distribution column. They should remain evenly distributed as new records are added. On the other hand, the events table could potentially see an uneven number of rows entered for each `user_id`, which is the distribution column you selected. If some users submit many more events than others, it will result in some shards containing larger amounts of data than others. When shard data sizes are different, it indicates you have _data skew_.
 
@@ -128,11 +128,11 @@ To provide a code-free method of assessing data skew to Woodgrove Bank, you can 
 
 If data is skewed between workers: You'll see the message,**Rebalancing is recommended** and a list of the size of each node. Otherwise, you'll see the message, **Rebalancing is not recommended at this time**.
 
-![The Shard rebalancer menu item is selected and highlighted, and the Shard rebalancer page for the database is displayed in the Azure portal.](../media/shard-rebalancer.png)
+![Screenshot of the Shard rebalancer menu item, and the Shard rebalancer page for the database is displayed in the Azure portal.](../media/shard-rebalancer.png)
 
-If data skew is found, you can start the Shard rebalancer by connecting to the coordinator node of the cluster and running the [`rebalance_table_shards`](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-functions#rebalance_table_shards) SQL function on distributed tables.
+If data skew is found, you can start the Shard rebalancer by connecting to the coordinator node of the cluster and running the [`rebalance_table_shards`](/azure/postgresql/hyperscale/reference-functions#rebalance_table_shards) SQL function on distributed tables.
 
-The function rebalances all tables in the [colocation](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-colocation) group of the table named in its argument. You don't have to call the function for every distributed table. Instead, call it on a representative table from each colocation group.
+The function rebalances all tables in the [colocation](/azure/postgresql/hyperscale/concepts-colocation) group of the table named in its argument. You don't have to call the function for every distributed table. Instead, call it on a representative table from each colocation group.
 
 For example, running the following against the `payment_events` table will also rebalance the `payment_users` table, as they're colocated.
 
@@ -144,7 +144,7 @@ You can then monitor the progress of the rebalancer from the Azure portal, where
 
 ## Identify shard placements
 
-Azure Cosmos DB for PostgreSQL assigns each row to a shard based on the value of the distribution column you specified. Every row will be in precisely one shard, and every shard can contain multiple rows. You can use the [`pg_dist_placement`](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata#shard-placement-table) table to view details of shard placements.
+Azure Cosmos DB for PostgreSQL assigns each row to a shard based on the value of the distribution column you specified. Every row will be in precisely one shard, and every shard can contain multiple rows. You can use the [`pg_dist_placement`](/azure/postgresql/hyperscale/reference-metadata#shard-placement-table) table to view details of shard placements.
 
 The shard placement table tracks the location of shard replicas on worker nodes. Each replica of a shard assigned to a specific node is called a _shard placement_. This table also stores information about the health and location of each shard placement. Determining which worker node has the rows for a specific distribution column can be helpful in many cases.
 
@@ -171,7 +171,7 @@ The query returns the `shardid` containing the data for the `user_id` with a val
 
 ## Useful diagnostic queries
 
-In addition to the metadata tables and views, there are many [useful diagnostic queries](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-useful-diagnostic-queries) that are beneficial for understanding how your database is performing and troubleshooting issues.
+In addition to the metadata tables and views, there are many [useful diagnostic queries](/azure/postgresql/hyperscale/howto-useful-diagnostic-queries) that are beneficial for understanding how your database is performing and troubleshooting issues.
 
 ### Active queries
 
@@ -197,4 +197,4 @@ ORDER BY number_of_occurrences DESC;
 
 ## View distributed query activity
 
-The Microsoft docs provide many examples of how metadata views can be used to watch queries and locks throughout the cluster. Read the [Distributed query activity documentation](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata#distributed-query-activity) to learn more about how you can use these views to better understand distributed queries in your database.
+The Microsoft docs provide many examples of how metadata views can be used to watch queries and locks throughout the cluster. Read the [Distributed query activity documentation](/azure/postgresql/hyperscale/reference-metadata#distributed-query-activity) to learn more about how you can use these views to better understand distributed queries in your database.

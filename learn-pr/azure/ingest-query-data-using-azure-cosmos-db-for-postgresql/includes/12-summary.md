@@ -16,14 +16,14 @@ Now that you've completed this module, you should be able to:
 It's important that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used. If you didn't delete your resource group in Unit 7 - Exercise - Data distribution, follow these instructions:
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
-2. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 4.
-3. In the **Overview** pane, select **Delete resource group**.
-4. Enter the name of the resource group you created to confirm and then select **Delete**.
+1. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 4.
+1. In the **Overview** pane, select **Delete resource group**.
+1. Enter the name of the resource group you created to confirm and then select **Delete**.
 
 ## Use these resources to discover more
 
 > [!TIP]
 > To open a hyperlink, right-click and choose **Open in new tab or window**. That way, you can see the resource and easily return to the module.
 
-- [Azure Cosmos DB for PostgreSQL documentation](https://learn.microsoft.com/azure/postgresql/hyperscale/)
-- [Run distributed queries in Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/postgresql/hyperscale/quickstart-run-queries)
+- [Azure Cosmos DB for PostgreSQL documentation](/azure/postgresql/hyperscale/)
+- [Run distributed queries in Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/quickstart-run-queries)

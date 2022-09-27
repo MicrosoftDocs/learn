@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: |
-    Working with distributed table data in Azure Cosmos DB for PostgreSQL requires a solid understanding of the underlying architecture of distributed tables. By splitting tables into smaller parts by spreading shards across available worker nodes, Azure Cosmos DB for PostgreSQL distributed tables take advantage of cross-machine parallelism.
+    Working with distributed table data in Azure Cosmos DB for PostgreSQL requires a solid understanding of the underlying architecture of distributed tables.
   ms.date: 09/26/2022
   author: seesharprun
   ms.author: sidandrews

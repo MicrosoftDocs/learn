@@ -1,8 +1,8 @@
 Woodgrove Bank has provided you with data loading requirements that dictate using several different ingestion methods. Individual transaction events arrive from the contactless payments application rapidly throughout the day and must be inserted as quickly as possible. The bank also provided CSV files containing historical transaction events and user data that must be bulk loaded into the database as efficiently as possible. In addition, they asked for a couple of new tables to be populated from their historical data once loaded.
 
-In Azure Cosmos DB for PostgreSQL, there are multiple approaches you can use to ingest data efficiently into a distributed database. Loading data into distributed tables is accomplished in the same manner as when loading data into non-distributed tables. The primary difference is that you must provide a value for the table's assigned [_distribution column_](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-choose-distribution-column) for every row being inserted.
+In Azure Cosmos DB for PostgreSQL, there are multiple approaches you can use to ingest data efficiently into a distributed database. Loading data into distributed tables is accomplished in the same manner as when loading data into non-distributed tables. The primary difference is that you must provide a value for the table's assigned [_distribution column_](/azure/postgresql/hyperscale/howto-choose-distribution-column) for every row being inserted.
 
-Each row in a distributed table is written to a [shard](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#shards) based on the value of its distribution column. To correctly identify the shard into which data should be inserted, the coordinator hashes the row's distribution column. The coordinator then compares the hashed value to the assigned hash range for each shard. Once the correct shard is identified, the coordinator routes the query to it, where the remote insert command is executed on all replicas of that shard.
+Each row in a distributed table is written to a [shard](/azure/postgresql/hyperscale/concepts-nodes#shards) based on the value of its distribution column. To correctly identify the shard into which data should be inserted, the coordinator hashes the row's distribution column. The coordinator then compares the hashed value to the assigned hash range for each shard. Once the correct shard is identified, the coordinator routes the query to it, where the remote insert command is executed on all replicas of that shard.
 
 ## Load individual rows using the INSERT command
 
@@ -10,7 +10,7 @@ Woodgrove Bank requires the ability to insert individual transaction records int
 
 To ensure the coordinator can accurately relay queries to the correct shards, you must specify a value for the _distribution column_ when loading data into distributed tables. In other words, each INSERT statement needs to include a non-null value for the row's distribution column.
 
-You can find a table's assigned distribution column using the [distributed tables view](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata#distributed-tables-view) on the coordinator node. For example, running the query, `SELECT distribution_column FROM citus_tables WHERE table_name = 'payment_events'::regclass;`, reveals the distribution column for the `payment_events` table is the `user_id` field.
+You can find a table's assigned distribution column using the [distributed tables view](/azure/postgresql/hyperscale/reference-metadata#distributed-tables-view) on the coordinator node. For example, running the query, `SELECT distribution_column FROM citus_tables WHERE table_name = 'payment_events'::regclass;`, reveals the distribution column for the `payment_events` table is the `user_id` field.
 
 In the below example, two transactions are being added to the `payment_events` table in Woodgrove Bank's database using individual INSERT commands.
 
@@ -84,7 +84,7 @@ The COPY command provides a practical and fast way of loading data directly from
 
 An alternative method for bulk loading file data is to use the `pg_azure_storage` extension. `pg_azure_storage` is a new PostgreSQL extension developed by Microsoft that allows you to work with and bulk load data stored in files hosted in [Azure Blob Storage](https://azure.microsoft.com/services/storage/blobs/#overview).
 
-Files need to be added or [migrated to an Azure Storage account](https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-migrate-on-premises-data) before you can take advantage of this extension's features. Moving files into Azure Blob Storage allows you to use a cloud-native, secure storage service.
+Files need to be added or [migrated to an Azure Storage account](/azure/storage/common/storage-use-azcopy-migrate-on-premises-data) before you can take advantage of this extension's features. Moving files into Azure Blob Storage allows you to use a cloud-native, secure storage service.
 
 To get started, you need to load the extension:
 
@@ -185,7 +185,7 @@ This method also allows you to use the [`ON CONFLICT DO UPDATE` clause](https://
 
 ### Using colocated source and destination tables
 
-The data required for populating the `user_events` table is contained in the `payment_events` and `payment_users` tables. The most efficient distribution column based on the proposed table schema will be the same field used by the `payment_events` and `payment_users` tables, `user_id`, as that column best meets the [four criteria for choosing an ideal distribution column](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-choose-distribution-column#general-tips).
+The data required for populating the `user_events` table is contained in the `payment_events` and `payment_users` tables. The most efficient distribution column based on the proposed table schema will be the same field used by the `payment_events` and `payment_users` tables, `user_id`, as that column best meets the [four criteria for choosing an ideal distribution column](/azure/postgresql/hyperscale/howto-choose-distribution-column#general-tips).
 
 ```sql
 SELECT create_distributed_table('user_events', 'user_id');
@@ -274,7 +274,7 @@ The `INSERT/SELECT method` line reveals the `pull to coordinator` method will be
 
 Given the data ingestion method required to load this table is the least efficient technique, and knowing that the table will be frequently joined with the `payment_events` table for analytical queries, it's a good idea to reevaluate how the table is distributed.
 
-After considering the options and Woodgrove Bank's common query patterns, you decide the `payment_merchants` table would be better defined as a [reference table](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables). Change a distributed table to a reference table involves running the `undistribution_table()` function against the table and then redefining it as a reference table, as follows:
+After considering the options and Woodgrove Bank's common query patterns, you decide the `payment_merchants` table would be better defined as a [reference table](/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables). Change a distributed table to a reference table involves running the `undistribution_table()` function against the table and then redefining it as a reference table, as follows:
 
 ```sql
 SELECT create_reference_table('payment_merchants');
@@ -290,12 +290,12 @@ In addition to ingesting data using SQL commands and PostgreSQL extensions, you 
 
 ### Azure Data Factory
 
-[Azure Data Factory](https://learn.microsoft.com/azure/data-factory/introduction) (ADF) is a cloud-based data integration service that offers a code-free visual environment for orchestrating and automating data movement. You can use ADF to [copy data from more than 85 possible sources into Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-ingest-azure-data-factory).
+[Azure Data Factory](/azure/data-factory/introduction) (ADF) is a cloud-based data integration service that offers a code-free visual environment for orchestrating and automating data movement. You can use ADF to [copy data from more than 85 possible sources into Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/howto-ingest-azure-data-factory).
 
 Woodgrove Bank's requirements asked for a mechanism for performing a one-time bulk load of their historical data. ADF is another alternative solution that could be considered, but this solution is more appropriate if there's a requirement for recurring, repeatable data movement and orchestration pipelines.
 
 ### Azure Stream Analytics
 
-Azure Cosmos DB for PostgreSQL shines at handling high throughput, real-time workloads, such as hosting [IoT](https://learn.microsoft.com/azure/postgresql/hyperscale/quickstart-build-scalable-apps-model-high-throughput) device input. [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/#features) (ASA) can act as a no-code, performant and scalable mechanism for [inserting data into Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-ingest-azure-stream-analytics).
+Azure Cosmos DB for PostgreSQL shines at handling high throughput, real-time workloads, such as hosting [IoT](/azure/postgresql/hyperscale/quickstart-build-scalable-apps-model-high-throughput) device input. [Azure Stream Analytics](https://azure.microsoft.com/services/stream-analytics/#features) (ASA) can act as a no-code, performant and scalable mechanism for [inserting data into Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/howto-ingest-azure-stream-analytics).
 
 This ingestion method isn't necessary given Woodgrove Bank's current requirements, but it would be helpful if they decided to start ingesting data from devices such as ATMs.

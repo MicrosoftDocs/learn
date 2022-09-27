@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Load data into Azure Cosmos DB for PostgreSQL distributed tables
   description: |
-    In Azure Cosmos DB for PostgreSQL, there are multiple techniques that can be used to efficiently ingest data into a distributed database. Loading data into distributed tables is accomplished in essentially the same manner as when loading data into non-distributed tables, but you're required to provide a value for the table's assigned distribution column.
+    In Azure Cosmos DB for PostgreSQL, there are multiple techniques that can be used to efficiently ingest data into a distributed database.
   ms.date: 09/26/2022
   author: seesharprun
   ms.author: sidandrews

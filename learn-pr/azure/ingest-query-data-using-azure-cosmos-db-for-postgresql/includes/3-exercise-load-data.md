@@ -9,17 +9,17 @@ To complete this exercise, you must create an Azure Cosmos DB for PostgreSQL clu
 
 1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser.
 
-2. In the Azure portal, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource.
+1. In the Azure portal, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource.
 
-    ![On the Azure portal's Create a resource screen, Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-for-postgresql-create.png)
+    ![Screenshot of the Azure portal's Create a resource screen, Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-postgresql-create.png)
 
-3. On the **Select API option** screen, select **Create** within the **PostgreSQL** tile.
+1. On the **Select API option** screen, select **Create** within the **PostgreSQL** tile.
 
-    ![The PostgreSQL tile is highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
+    ![Screenshot of the PostgreSQL tile on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
 
     After selecting **Create**, the portal will display a resource configuration screen.
 
-4. On the **Basics** tab, enter the following information:
+1. On the **Basics** tab, enter the following information:
 
     | Parameter       | Value |
     | --------------- | ----- |
@@ -35,11 +35,11 @@ To complete this exercise, you must create an Azure Cosmos DB for PostgreSQL clu
     | Admin username  | This username is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    ![The Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog is displayed, and the fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)
+    ![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog, and the fields are populated with the values specified in the exercise.](../media/cosmos-db-postgresql-basics-tab.png)
 
     Note the password for later use.
 
-5. For the **Scale** setting, select **Configure**, and on the node configuration page, set the following:
+1. For the **Scale** setting, select **Configure**, and on the node configuration page, set the following:
 
     | Parameter        | Value |
     | ---------------- | ----- |
@@ -51,45 +51,45 @@ To complete this exercise, you must create an Azure Cosmos DB for PostgreSQL clu
     | Coordinator compute | Select **4 vCores, 16 GiB RAM**. |
     | Coordinator storage | Select **512 GiBM**. |
 
-    The [high availability and automatic failover capabilities](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-high-availability) are out of scope for this exercise, so leave the **High availability** checkbox unchecked.
+    The [high availability and automatic failover capabilities](/azure/postgresql/hyperscale/concepts-high-availability) are out of scope for this exercise, so leave the **High availability** checkbox unchecked.
 
-    ![The node configuration specified in the exercise is selected on the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog.](../media/cosmos-db-for-postgresql-cluster-config.png)
+    ![Screenshot of the node configuration specified in the exercise on the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog.](../media/cosmos-db-postgresql-cluster-config.png)
 
-6. Select **Save** on the scale page to return to the cluster configuration.
+1. Select **Save** on the scale page to return to the cluster configuration.
 
-7. Select the **Next : Networking >** button to move on to the **Networking** tab of the configuration dialog.
+1. Select the **Next : Networking >** button to move on to the **Networking** tab of the configuration dialog.
 
-8. On the **Networking** tab, set the **Connectivity method** to **Public access (allowed IP addresses)**, and check the **Allow public access from Azure services and resources within Azure to this cluster** box.
+1. On the **Networking** tab, set the **Connectivity method** to **Public access (allowed IP addresses)**, and check the **Allow public access from Azure services and resources within Azure to this cluster** box.
 
-    ![The Create an Azure Cosmos DB - PostgreSQL cluster Networking tab is displayed. The "Public access" and "Allow public access from Azure services and resources within Azure to this cluster settings" are highlighted.](../media/cosmos-db-for-postgresql-networking-tab.png)
+    ![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster Networking tab. The "Public access" and "Allow public access from Azure services and resources within Azure to this cluster settings" are highlighted.](../media/cosmos-db-postgresql-networking-tab.png)
 
-9. Select the **Review + create** button, and on the review screen, select **Create** to create your cluster.
+1. Select the **Review + create** button, and on the review screen, select **Create** to create your cluster.
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
 1. Once your cluster has finished provisioning, navigate to the resource in the Azure portal.
 
-2. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
+1. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
 
-    ![The Connection strings page of the Azure Cosmos DB Cluster resource is highlighted. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-postgresql-connection-strings-psql.png)
 
-3. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
+1. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
-4. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
+1. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    ![The Cloud Shell icon is highlighted on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    ![Screenshot of the Cloud Shell icon on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
     The Cloud Shell will open as an embedded panel at the bottom of your browser window.
 
-5. If necessary, select **Bash** as the environment in the Cloud Shell window.
+1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
-    ![The welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell is displayed. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
 
-6. If you have never used Cloud Shell before, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
+1. If you have never used Cloud Shell before, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
 
-    ![The Azure Cloud Shell wizard showing no storage mounted is displayed. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
 
-7. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following command:
+1. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following command:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password=P@ssword.123! sslmode=require"
@@ -128,7 +128,7 @@ Now that you're connected to your database, you can begin populating the databas
 
     Based on your recommendation to choose the `user_id` field as the distribution column for both tables, the `PRIMARY KEY` assignment for the `payment_events` table was changed to a compound key. This compound key will allow the `user_id` field to be assigned as the distribution column.
 
-2. Next, create the merchants table.
+1. Next, create the merchants table.
 
     ```sql
     CREATE TABLE payment_merchants
@@ -152,7 +152,7 @@ Executing the `CREATE TABLE` commands results in local tables being created on t
 
     The `payment_events` and `payment_users` tables were assigned the same distribution column, resulting in related data for both tables being colocated on the same node. You don't need to use the `colocate with` parameter of the `create_distributed_table` function, as tables with the same shard key will be implicitly colocated.
 
-2. Now, define the `payment_merchant` table as a reference table.
+1. Now, define the `payment_merchant` table as a reference table.
 
     ```sql
     SELECT create_reference_table('payment_merchants');
@@ -170,7 +170,7 @@ Woodgrove Bank's payment transactions come as individual requests through the co
         (5050825788,'RequestFunds',1171503,11730342,'{"code": 11730342, "particulars": "vue", "reference": "vuejs"}','1/12/16 5:22');
     ```
 
-2. Execute the following command to view the two records inserted into the table.
+1. Execute the following command to view the two records inserted into the table.
 
     ```sql
     SELECT * FROM payment_events;
@@ -194,7 +194,7 @@ The `COPY` command can be used to fulfill this request. It allows you to bulk lo
 
     In the `COPY` command issued, the `FROM PROGRAM` clause informs the coordinator to retrieve the data files from an application running on the coordinator, in this case, `curl`. The `WITH CSV` option provides information about the format of the file being ingested.
 
-2. Execute the following commands to verify data was loaded into the `payment_users` and `payment_events` tables using the `COPY` command.
+1. Execute the following commands to verify data was loaded into the `payment_users` and `payment_events` tables using the `COPY` command.
 
     ```sql
     SELECT COUNT(*) FROM payment_users;
@@ -214,13 +214,13 @@ Woodgrove Bank has requested that you extract unique merchant data into a new ta
 
     The `EXPLAIN` output reveals that the inefficient `pull to coordinator` method will be used for the `INSERT ... SELECT` query execution. This inefficiency occurs because the coordinator is unable to determine the distribution column involved in the query and must pull the data from each worker node to execute the query locally.
 
-2. Now, load the distinct merchants into the `payment_merchants` table and use the `merchant_id` to assign a unique name and set the API URL.
+1. Now, load the distinct merchants into the `payment_merchants` table and use the `merchant_id` to assign a unique name and set the API URL.
 
     ```sql
     INSERT INTO payment_merchants SELECT DISTINCT merchant_id, CONCAT('merchant', '_', merchant_id), CONCAT('https://api.woodgrove.com/merchants/', merchant_id) FROM payment_events;
     ```
 
-3. Verify the data loaded correctly by executing the following `SELECT` statement to view the top five records in the table:
+1. Verify the data loaded correctly by executing the following `SELECT` statement to view the top five records in the table:
 
     ```sql
     SELECT * FROM payment_merchants LIMIT 5;
@@ -228,7 +228,7 @@ Woodgrove Bank has requested that you extract unique merchant data into a new ta
 
     **Congratulations**! You've successfully created a multi-node, distributed database using Azure Cosmos DB for PostgreSQL and used multiple data ingestion methods to populate your distributed tables.
 
-4. In the Cloud Shell, run the following command to disconnect from your database:
+1. In the Cloud Shell, run the following command to disconnect from your database:
 
     ```sql
     \q

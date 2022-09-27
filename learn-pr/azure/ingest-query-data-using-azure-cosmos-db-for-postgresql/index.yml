@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Ingest and query data using Azure Cosmos DB for PostgreSQL
   description: |
-    Azure Cosmos DB for PostgreSQL provides a highly scalable distributed database solution, reliably and securely managed on Azure. To efficiently ingest and querying data with distributed tables, it's essential to understand how data is distributed across shards in the cluster.
+    Understand how data is distributed across Azure Cosmos DB for PostgreSQL to efficiently ingest and query data across the cluster.
   ms.date: 09/26/2022
   author: seesharprun
   ms.author: sidandrews

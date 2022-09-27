@@ -12,7 +12,7 @@ For simple queries, such as `SELECT COUNT(*) FROM payment_users;`, the coordinat
 
 For the more complex aggregations and queries associated with Woodgrove Bank's analytical workloads, Azure Cosmos DB for PostgreSQL supports and parallelizes most aggregate functions supported by PostgreSQL, including custom user-defined aggregates.
 
-![The flow of a query arriving from an application is displayed, with the query being processed by the coordinator node using metadata tables and then the query fragments being sent to the work nodes for execution. The results of query execution on the worker nodes are passed back to the coordinator, aggregated, and returned to the application.](../media/distributed-query.gif)
+![Animation of the flow of a query arriving from an application is displayed, with the query being processed by the coordinator node using metadata tables and then the query fragments being sent to the work nodes for execution. The results of query execution on the worker nodes are passed back to the coordinator, aggregated, and returned to the application.](../media/distributed-query.gif)
 
 Aggregates execute using one of three methods, in this order of preference:
 
@@ -24,7 +24,7 @@ Aggregates execute using one of three methods, in this order of preference:
 
     This query runs quickly since the coordinator can push query execution down to each worker node. Push-down execution is possible because the `GROUP BY` clause contains the table's distribution column. Running the same query using the `EXPLAIN VERBOSE` statement allows you to see the query execution plan and how it's distributed across worker nodes to parallelize query execution.
 
-2. When the aggregate isn't grouped by a table's distribution column, the coordinator can still optimize on a case-by-case basis. Internal rules for specific aggregates like `sum()`, `avg()`, and `count(distinct)` allow queries to be rewritten for partial aggregation on workers. For instance, to calculate an average, the coordinator obtains a sum and a count from each worker, and then the coordinator node computes the final average.
+1. When the aggregate isn't grouped by a table's distribution column, the coordinator can still optimize on a case-by-case basis. Internal rules for specific aggregates like `sum()`, `avg()`, and `count(distinct)` allow queries to be rewritten for partial aggregation on workers. For instance, to calculate an average, the coordinator obtains a sum and a count from each worker, and then the coordinator node computes the final average.
 
     ```sql
     SELECT merchant_id, event_type, COUNT(*) FROM payment_events GROUP BY merchant_id, event_type;
@@ -32,7 +32,7 @@ Aggregates execute using one of three methods, in this order of preference:
 
     This query results in a partial aggregation occurring on workers, which is slightly less performant than the previous method. The `EXPLAIN VERBOSE` statement provides the details of the `HashAggregate` performed to retrieve each worker's count. The coordinator then computes the final count.
 
-3. For all other aggregation functions, the coordinator pulls all rows from the workers and performs the aggregation itself. If the previous two methods don't cover the aggregate, the coordinator falls back on this approach. However, it's critical to note that this method can cause network overhead and exhaust the coordinator's resources if the dataset to be aggregated is too large.
+1. For all other aggregation functions, the coordinator pulls all rows from the workers and performs the aggregation itself. If the previous two methods don't cover the aggregate, the coordinator falls back on this approach. However, it's critical to note that this method can cause network overhead and exhaust the coordinator's resources if the dataset to be aggregated is too large.
 
 ## Joins
 
@@ -83,7 +83,7 @@ LIMIT 5;
 
 ### Reference table joins
 
-[Reference Tables](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables) can be used as "dimension" tables to join efficiently with large "fact" tables. Reference tables are replicated across all worker nodes, allowing a reference join to be decomposed into local joins on each worker and performed in parallel. A reference join is like a more flexible version of a colocated join because reference tables aren't distributed on any particular column and are free to join on any of their columns.
+[Reference Tables](/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables) can be used as "dimension" tables to join efficiently with large "fact" tables. Reference tables are replicated across all worker nodes, allowing a reference join to be decomposed into local joins on each worker and performed in parallel. A reference join is like a more flexible version of a colocated join because reference tables aren't distributed on any particular column and are free to join on any of their columns.
 
 To populate a dashboard for Woodgrove Bank's contactless payment application, you've been asked to write a query to count the number of transactions by type for each merchant. This query requires joining the `payment_events` distributed table with the `payment_merchants` reference table on the `merchant_id` column.
 
@@ -99,7 +99,7 @@ LIMIT 5;
 
 Running the query with `EXPLAIN VERBOSE` shows how the coordinator can generate a plan that pushes query execution down to each of the 32 shards, where the reference table is joined locally on the worker nodes. In this case, changing the `payment_merchants` table to a reference table provides significant performance improvements over the same query executed against a non-colocated distributed table.
 
-Reference tables can also join with [local tables](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-3-local-tables) on the coordinator node.
+Reference tables can also join with [local tables](/azure/postgresql/hyperscale/concepts-nodes#type-3-local-tables) on the coordinator node.
 
 ## Modify data in distributed tables
 
