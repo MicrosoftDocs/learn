@@ -153,7 +153,7 @@ The products in this dataset have the following shape:
 1. On the **File** menu, select **Save As**. Save the new file with the name **1-contoso-products-upload-data.js**.
 1. Copy the following JavaScript and paste it into that file:
 
-    :::code language="javascript" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/1-contoso-products-upload-data.js" highlight="11,14,17,29,34,47-51":::
+    :::code language="javascript" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/1-contoso-products-upload-data.js" highlight="11,14,17,29,34,47-51":::
 
 1. Create a new file, named **products.json**, and copy the contents of the sample data file, [products.json](https://github.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/blob/main/training/build-node-cosmos-app-vscode/products.json) into it. 
 
