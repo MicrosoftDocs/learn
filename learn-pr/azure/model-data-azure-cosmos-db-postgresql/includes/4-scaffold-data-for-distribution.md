@@ -5,9 +5,9 @@ Understanding the high level of distributed query processing and recognizing the
 In moving from a single relational server to a distributed environment, you'll need to reevaluate relationships and identify how the tables and columns are used in queries. The primary key of a table in a standalone server may no longer make sense as the primary key in a distributed environment. For a primary key to be enforced in the Azure Cosmos DB for PostgreSQL environment, that key must be part of the distribution column. These considerations should be reviewed when choosing a distribution column.
 
 1. The column should be a central piece to the application. Examples include `device_id` in IoT workloads, `store_id` in eCommerce analytics, and `tenant_id` in multi-tenant applications.
-2. The column's values should be varied with a high cardinality and a balanced statistical distribution.
-3. The column should appear in the most common queries to allow parallelization of those queries.
-4. If there are tables that are commonly queried together, they can benefit from [_colocation_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-colocation). Colocation means that all data with the same distribution column value is stored on the same node.
+1. The column's values should be varied with a high cardinality and a balanced statistical distribution.
+1. The column should appear in the most common queries to allow parallelization of those queries.
+1. If there are tables that are commonly queried together, they can benefit from [_colocation_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-colocation). Colocation means that all data with the same distribution column value is stored on the same node.
 
 For the Woodgrove Bank application, `user_id` makes sense as the distribution column for the `payment_users` table because it's central to the application and appears in most queries.
 
@@ -23,11 +23,11 @@ However, for the Woodgrove application, the choice of distribution column on the
 
 Consider this event data for `user_id` 1894. When the events are distributed by `user_id`, these details are stored on the same node:
 
-![Diagram of event data sharded on user_id. All the data for a user_id value is stored in a shard on a worker node.](../media/events-distributed-by-user-id.png)
+![Diagram of event data sharded on user_id. All the data for a user_id value is stored in a shard on a worker node.](../media/events-distributed--user-id.png)
 
 If this data were sharded by `merchant_id`, the data would be split like this:
 
-![Diagram of event data sharded on merchant_id. All the data for a merchant_id value is stored in a shard on a worker node. Since user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.](../media/events-distributed-by-merchant-id.png)
+![Diagram of event data sharded on merchant_id. All the data for a merchant_id value is stored in a shard on a worker node. Since user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.](../media/events-distributed--merchant-id.png)
 
 Querying for events for `user_id` 1894 with `payment_events` distributed on `merchant_id` means that all shards would need to be queried for data where `user_id` is set to 1894. While this example is only two shards, know that the performance pain scales as more shards are involved.
 
@@ -64,7 +64,7 @@ The following screenshot shows what happens when the `colocate_with` parameter i
 
 By colocating merchants on `merchant_id` with the users and events tables distributed on `user_id`, the data would be stored like this:
 
-![Diagram of two worker nodes. Each worker node shows an event shard, a user shard, and a merchant shard where their distribution columns match on value.](../media/problem-with-implicit-colocation.png)
+![Diagram of two worker nodes. Each worker node shows an event shard, a user shard, and a merchant shard where their distribution columns match on value.](../media/problem-implicit-colocation.png)
 
 This distribution is concerning because the `merchant_id` and `user_id` fields don't represent the same entities. Be specific about colocation when distributing tables.
 
@@ -106,8 +106,8 @@ For Woodgrove Bank, here are some changes you'll need to make:
 
 The Woodgrove Bank application's database in a non-distributed environment looked like this:
 
-![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-erd.png)
+![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-entity-relationship-diagram.png)
 
 In terms of the relational diagram with distribution considerations, this diagram represents the final application for Woodgrove Bank:
 
-![Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.](../media/distributed-erd.png)
+![Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.](../media/distributed-entity-relationship-diagram.png)

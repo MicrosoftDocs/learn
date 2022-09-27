@@ -9,11 +9,11 @@ As the Woodgrove Bank development team needed a quick proof of concept,  they tr
 
 This diagram illustrates the initial database architecture:
 
-![Diagram of the relationship between payment_users and payment_events. payment_users has 4 fields - user_id, url, login, and avatar_url. user_id is the primary key on payment_users. payment_events has 6 fields - event_id, event_type, user_id, merchant_id, event_details, and created_at. event_id is the primary key on payment_events. payment_events has a foreign key relationship to payment_users on the user_id field.](../media/initial-database-erd.png)
+![Diagram of the relationship between payment_users and payment_events. payment_users has 4 fields - user_id, url, login, and avatar_url. user_id is the primary key on payment_users. payment_events has 6 fields - event_id, event_type, user_id, merchant_id, event_details, and created_at. event_id is the primary key on payment_events. payment_events has a foreign key relationship to payment_users on the user_id field.](../media/initial-database-entity-relationship-diagram.png)
 
 The Woodgrove Bank team realized they needed to normalize their data to store the data in a relational database. They migrated their event types and merchants to their own tables. This diagram illustrates the normalized architecture:
 
-![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-erd.png)
+![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-entity-relationship-diagram.png)
 
 This normalized data diagram is what they used for their trial. However, as Woodgrove Bank is growing and needing a distributed environment, the developers suspect that this data diagram will evolve. Before they can change their model, they need to understand what it means to distribute the data.
 
@@ -81,7 +81,7 @@ The three different types of tables are stored differently across the nodes.
 
 The diagram below shows this breakdown.
 
-![Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains 2 worker nodes, each with distributed shards and a reference table. There are arrows coming from the coordinator and pointed at each of the worker nodes.](../media/coordinator-workers-with-arrows-with-tables.png)
+![Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains 2 worker nodes, each with distributed shards and a reference table. There are arrows coming from the coordinator and pointed at each of the worker nodes.](../media/coordinator-workers-arrows-tables.png)
 
 ### Reference table versus distributed table
 

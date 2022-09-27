@@ -35,7 +35,7 @@ The `PARTITION BY` clause indicates how the data should be partitioned, but it d
     );
     ```
 
-2. To confirm that the partitions have been created, run the following command:
+1. To confirm that the partitions have been created, run the following command:
 
     ```sql
     \d+ payment_events
@@ -89,7 +89,7 @@ When data is no longer needed, `drop_old_time_partitions()` can be used to remov
     ```
 
 
-2. To confirm that the partitions have been dropped, run the following command:
+1. To confirm that the partitions have been dropped, run the following command:
 
     ```sql
     \d+ payment_events

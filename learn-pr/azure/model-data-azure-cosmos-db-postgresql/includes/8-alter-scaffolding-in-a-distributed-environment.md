@@ -1,6 +1,6 @@
 What if the Woodgrove Bank developers created their distributed database by starting with their relational design? Suppose this database was created in Azure Cosmos DB for PostgreSQL. 
 
-![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-erd.png)
+![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-entity-relationship-diagram.png)
 
 In a non-distributed environment, these relationships work. However, if the developers already loaded this structure in the database, there's some work needed for distributing tables. Data definition language (DDL) queries apply in a distributed environment, and there are functions to help update the distributed tables.
 
@@ -43,6 +43,6 @@ In order to change a table from a distributed table to a reference table, there 
 
 1. Undistribute the table with the `undistribute_table()` function. This operation will move all of the data from the distributed nodes to the coordinator node. This operation will fail if there's no space on the coordinator node.
 
-2. Change the table from a local table to a reference table, following the same pattern used to create the `event_types` table.
+1. Change the table from a local table to a reference table, following the same pattern used to create the `event_types` table.
 
 Once the table has been converted, then the foreign key relationship to the `payment_events` table can be added via ALTER TABLE.
