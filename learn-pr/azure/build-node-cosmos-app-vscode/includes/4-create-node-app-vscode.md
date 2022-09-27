@@ -1,6 +1,6 @@
 Visual Studio Code makes it easy to write JavaScript code and run it using Node.js. The Visual Studio Code editor has built-in support for JavaScript and JSON. You utilize the IntelliSense features of the editor to help you check syntax. IntelliSense also offers code-completion, helping to minimize any syntactic and semantic errors in your applications. You can use the integrated debugging tools to help test and verify your code.
 
-In this unit, you'll learn how to create a JavaScript application using Visual Studio Code. You'll see how to run the application using Node.js from within Visual Studio Code. Finally, you'll learn how to use the debugger to step through your code and examine variables as your code runs.
+In this unit, you'll learn how to create a JavaScript application using Visual Studio Code and Cosmos DB. You'll see how to run the application using Node.js from within Visual Studio Code. Finally, you'll learn how to use the debugger to step through your code and examine variables as your code runs.
 
 ## Create a JavaScript application for Node.js
 

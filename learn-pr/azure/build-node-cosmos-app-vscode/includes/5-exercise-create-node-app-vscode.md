@@ -181,4 +181,4 @@ The products in this dataset have the following shape:
 
     :::image type="content" source="../media/5-view-product-document.png" alt-text="Screenshot of the Visual Studio Code showing a newly added Cosmos DB Core document." loc-scope="vs-code":::
 
-You've now seen how to use Visual Studio Code to create, edit, and run a Node.js application.
+You've now seen how to use Visual Studio Code to create, and run a Node.js application for Cosmos DB.
