@@ -5,7 +5,7 @@ metadata:
   unitType: introduction
   title: Introduction
   description: |
-    Azure Cosmos DB for PostgreSQL supports PostgreSQL at scale. Migrating from a single PostgreSQL to distributed environment may require structural changes to take advantage of the relational integrity while also relying on concurrent query processing at scale.
+    Migrating from PostgreSQL to Azure Cosmos DB for PostgreSQL may require changes to take advantage of relational integrity and rely on query processing at scale.
   ms.date: 09/22/2022
   author: seesharprun
   ms.author: sidandrews

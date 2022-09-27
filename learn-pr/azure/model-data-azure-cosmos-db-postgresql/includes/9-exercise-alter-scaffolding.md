@@ -1,10 +1,10 @@
 Working with the Woodgrove Bank developers on getting their application's database scaffolded, this diagram illustrates what they loaded in the database:
 
-![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-erd.png)
+![Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.](../media/normalized-database-entity-relationship-diagram.png)
 
 In this exercise, you'll restructure their database to get to the following output:
 
-![Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.](../media/distributed-erd.png)
+![Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.](../media/distributed-entity-relationship-diagram.png)
 
 ## Reset the exercise database
 
@@ -17,7 +17,7 @@ In this exercise, you'll restructure their database to get to the following outp
         DROP TABLE event_types;
     ```
 
-2. Create the tables as the Woodgrove Bank developers created.
+1. Create the tables as the Woodgrove Bank developers created.
 
     ```sql
     CREATE TABLE event_types 
@@ -73,19 +73,19 @@ The non-events tables can be distributed or turned into reference tables. As the
     SELECT create_reference_table('event_types');
     ```
 
-2. Distribute `payment_users` on `user_id` with this query:
+1. Distribute `payment_users` on `user_id` with this query:
 
     ```sql
     SELECT create_distributed_table('payment_users','user_id');
     ```
 
-3. Distribute `payment_merchants` on `merchant_id` with this query:
+1. Distribute `payment_merchants` on `merchant_id` with this query:
 
     ```sql
     SELECT create_distributed_table('payment_merchants','merchant_id');
     ```
 
-4. Ensure the tables are distributed as expected with the following query:
+1. Ensure the tables are distributed as expected with the following query:
 
     ```sql
     SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;
@@ -111,7 +111,7 @@ The developers asked about updating colocation after a table is distributed, as 
     SELECT update_distributed_table_colocation('payment_merchants',colocate_with=>'none');
     ```
 
-2. Ensure that the users and merchants tables are no longer colocated with the following query:
+1. Ensure that the users and merchants tables are no longer colocated with the following query:
 
     ```sql
     SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;  
@@ -136,7 +136,7 @@ While you work through the design with the Woodgrove Bank developers, they asked
     SELECT create_distributed_table('payment_events','event_id');
     ```
 
-2. Query `citus_tables` to show co-location.
+1. Query `citus_tables` to show co-location.
     ```sql
     SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;  
     ```
@@ -175,7 +175,7 @@ Update the `payment_events` table to be distributed on `user_id`.
 
     This query will apply to all the partitions for this table.
 
-2. Confirm the change took effect by running:
+1. Confirm the change took effect by running:
 
     ```sql
     SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;  
@@ -205,7 +205,7 @@ In a case where there are two colocated distributed tables with a foreign key re
      FOREIGN KEY (user_id) REFERENCES payment_users(user_id);
     ```
 
-2. Confirm that the foreign key has been added by running the following command:
+1. Confirm that the foreign key has been added by running the following command:
 
     ```sql
     \d payment_events
@@ -260,7 +260,7 @@ The merchants table may not be as large as the developers suggested. Rather than
     SELECT create_reference_table('payment_merchants');
     ```
 
-2. Add the foreign key relationship from payment_events to payment_merchants with the following command:
+1. Add the foreign key relationship from payment_events to payment_merchants with the following command:
 
     ```sql
     ALTER TABLE payment_events ADD CONSTRAINT events_merchants_fk
@@ -294,5 +294,5 @@ Notice that reference tables don't have distribution columns.
 Once you're done in this module, clean up the resources created in order to minimize costs.
 
 1. Sign-in to the Azure portal.
-2. Navigate to the resource group created for this module.
-3. Delete the resource group.
+1. Navigate to the resource group created for this module.
+1. Delete the resource group.

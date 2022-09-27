@@ -1,6 +1,6 @@
 Azure Cosmos DB for PostgreSQL provides a highly scalable distributed database solution by grouping multiple PostgreSQL servers as [nodes within a cluster](/azure/postgresql/hyperscale/concepts-nodes#coordinator-and-workers). As tech lead at Woodgrove Bank, you're helping their developers move their application from PostgreSQL to Azure Cosmos DB for PostgreSQL. While the devs are used to working in a single relational database environment, they aren't familiar with working in a distributed environment. When going into modeling, it's important they understand the building blocks they have to work with in Azure Cosmos DB for PostgreSQL - local tables, reference tables, and distributed tables. They also will need to consider data usage, data distribution, and data relationships.
 
-## Scenario: Scaling Woodgrove Bank's Contactless Payment App
+## Scenario: Scaling Woodgrove Bank's contactless payment app
 
 ![Screenshot of Woodgrove Bank's logo - an icon of a factory with the words 'Woodgrove Bank' to the right of it.](../media/woodgrove-bank-logo.png)
 

@@ -4,7 +4,7 @@ title: Partition time series data
 metadata:
   title: Partition time series data
   description: |
-    Partitioning time series data in Azure Cosmos DB for PostgreSQL makes it easier to manage time series data in defined time intervals. Data can be more efficiently queried and expired with the assistance of these time series partitions.
+    Partitioning time series data in Azure Cosmos DB for PostgreSQL makes it easier to manage time series data in defined time intervals.
   ms.date: 09/22/2022
   author: seesharprun
   ms.author: sidandrews
