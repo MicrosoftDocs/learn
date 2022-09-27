@@ -175,7 +175,7 @@ The products in this dataset have the following shape:
 1. On the **File** menu, select **Save As**. Save the new file with the name **2-contoso-products-find.js**.
 1. Copy the following JavaScript and paste it into that file:
 
-        :::code language="javascript" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/2-contoso-products-find.js" highlight="11,14,17,29,56":::
+        :::code language="javascript" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/2-contoso-products-find.js" highlight="11,14,17,29,56":::
 
 1. In the Visual Studio Code terminal, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>, execute the JavaScript file to **find all bikes**:
 
@@ -240,17 +240,17 @@ The products in this dataset have the following shape:
 1. On the **File** menu, select **Save As**. Save the new file with the name **3-contoso-products-upsert.js**.
 1. Copy the following JavaScript and paste it into that file:
 
-    :::code language="javascript" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert.js" highlight="11,14,17,27,45,48":::
+    :::code language="javascript" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert.js" highlight="11,14,17,27,45,48":::
 
 1. Create a new file for the product, **3-contoso-products-upsert-insert.json**, and paste the following JSON object. 
 
-    :::code language="json" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-insert.json":::
+    :::code language="json" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-insert.json":::
 
 	Notice this object with ID `123` doesn't have any inventory. 
 
 1. Create a new file for the product, **3-contoso-products-upsert-update.json**, and paste the following JSON object. 
 
-    :::code language="json" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-update.json":::
+    :::code language="json" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-update.json":::
 
 	Notice this object does have inventory. 
 
