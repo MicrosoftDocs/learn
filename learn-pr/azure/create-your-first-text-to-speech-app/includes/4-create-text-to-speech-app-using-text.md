@@ -7,7 +7,7 @@ In this module, we're going to focus on two ways to pass text to Azure Cognitive
 | Text Format | Description |
 |---|---|
 | Plain text | Easier to produce, but inflexible if you want to customize your text-to-speech conversion. |
-| Speech Synthesis Markup Language (SSML) | An XML format that requires a bit of learning to produce, but very powerful when you want to customize your text-to-speech conversion. |
+| Speech Synthesis Markup Language (SSML) | An XML format that requires a bit of learning to produce, but powerful when you want to customize your text-to-speech conversion. |
 
 In the unit after the next exercise, we'll take an in-depth look at working with SSML, but for now we'll concentrate on working with plain text.
 

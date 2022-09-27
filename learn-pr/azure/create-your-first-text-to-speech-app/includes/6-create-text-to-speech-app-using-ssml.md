@@ -2,13 +2,13 @@ In the previous exercise, you learned how to create an application that read a t
 
 Fortunately for you, Azure Cognitive Services' text-to-speech features work with Speech Synthesis Markup Language (SSML), which you can use to customize the speech that your application will create.
 
-There is a wealth of information about SSML in the [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/cognitive-services/speech-service/speech-synthesis-markup) article, and far too much information to include in this unit. With that in mind, this unit will contain a brief overview of SSML that will help you get started.
+There's a wealth of information about SSML in the [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/cognitive-services/speech-service/speech-synthesis-markup) article, and far too much information to include in this unit. With that in mind, this unit will contain a brief overview of SSML that will help you get started.
 
 ## Creating SSML files
 
 ### Starting a new SSML file
 
-SSML files use XML syntax, and the root element for an SSML file is a `<speak>` element. When you add that element to a new file, that will look like the following excerpt.
+SSML files use XML syntax, and the root element for an SSML file is a `<speak>` element. When you add that element to a new file, it should look like the following excerpt.
 
 ```xml
 <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">

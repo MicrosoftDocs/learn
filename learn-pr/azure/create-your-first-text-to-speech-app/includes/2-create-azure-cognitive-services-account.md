@@ -12,7 +12,7 @@ In the next unit, you'll complete an exercise that uses the Azure Command Line I
 
 1. On the home page, select **Create a resource**.
 
-1. When the **Create a resource** page is displayed, enter **Cognitive Services** in the search box, and then select **Cognitive Services** when it is displayed.
+1. When the **Create a resource** page is displayed, enter **Cognitive Services** in the search box, and then select **Cognitive Services** when it's displayed.
 
     [![Screenshot showing the search for Cognitive Services in the Azure portal.](../media/2-search-for-cognitive-services-small.png)](../media/2-search-for-cognitive-services.png#lightbox)
 
@@ -32,10 +32,10 @@ In the next unit, you'll complete an exercise that uses the Azure Command Line I
 
     1. Choose a **Pricing tier** from the drop-down menu. (You can select the link for pricing details for the tiers.)
 
-    1. After you have reviewed the terms in the **Responsible AI Notice**, select the box to acknowledge that you have read and understood all the terms.
+    1. After you've reviewed the terms in the **Responsible AI Notice**, select the box to acknowledge that you've read and understood all the terms.
 
-    1. After you have entered the above information, select **Review + create**.
+    1. After you've entered the above information, select **Review + create**.
 
     [![Screenshot showing the options for creating a Cognitive Services account.](../media/2-configure-cognitive-services-options-small.png)](../media/2-configure-cognitive-services-options.png#lightbox)
 
-1. If the information that you have entered looks good and you see the **Validation Passed** notification, select **Create**.
+1. If the information that you've entered looks good and you see the **Validation Passed** notification, select **Create**.

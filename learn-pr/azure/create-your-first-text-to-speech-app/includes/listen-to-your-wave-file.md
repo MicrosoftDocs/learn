@@ -1,4 +1,4 @@
-In order to listen to the WAVE file that your application created, you will first need to download it. To do so, use the following steps.
+In order to listen to the WAVE file that your application created, you'll first need to download it. To do so, use the following steps.
 
 1. In the Cloud Shell on the right, use the following command to copy the WAVE file to your temporary cloud drive.
 

@@ -77,7 +77,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
     This code uses your key and location to initialize a connection to Azure Cognitive Services, then it reads the contents of the text file that you created earlier, then it uses the `SpeakTextAsync()` method of the speech synthesizer to convert the text to audio, and then it uses an audio stream to save the results to an audio file.
 
-1. When you have finished adding all of the code, your file should resemble the following example.
+1. When you've finished adding all of the code, your file should resemble the following example.
 
     ```csharp
     using System;

@@ -20,4 +20,4 @@ You created an Azure Cognitive Services account, which you used to create two sp
 
 - [Speech service phonetic sets](/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets)
 
-- [az cognitiveservices account](/cli/azure/cognitiveservices/account)
+- [`az cognitiveservices account`](/cli/azure/cognitiveservices/account)

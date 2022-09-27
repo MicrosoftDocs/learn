@@ -66,7 +66,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     Like the last two code excerpts, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch, and also contains `<break>` elements that add a pause between phrases. However, this excerpt also contains a `<phoneme>` element that helps the text-to-speech engine to pronounce an older English word that it might not know how to pronounce.
 
-1. When you have finished adding all of the code, your XML file should resemble the following example.
+1. When you've finished adding all of the code, your XML file should resemble the following example.
 
     ```xml
     <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
@@ -145,7 +145,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     This code excerpt is largely the same as the code from the previous exercise. The main differences are the lines that specify the XML file instead of the text file, and using the `SpeakSsmlAsync()` method to process the SSML code.
 
-1. When you have finished modifying the code, your file should resemble the following example.
+1. When you've finished modifying the code, your file should resemble the following example.
 
     ```csharp
     using System;
