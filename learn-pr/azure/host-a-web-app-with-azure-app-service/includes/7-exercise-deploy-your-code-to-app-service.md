@@ -32,7 +32,7 @@ Let's browse to our application to see it live. Navigate back to the open browse
 
  :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
  
-You have successfully hosted your new ASP.NET Core application on App Service!
+You've successfully hosted your new ASP.NET Core application on App Service!
 
 ::: zone-end
 
@@ -128,7 +128,7 @@ The deployment will take a few minutes, during which time you'll see status outp
 
 ## Verify the deployment
 
-Let's browse to your application to see it live. In the output, just above the JSON code block there is a line saying "You can launch the app at..." with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
+Let's browse to your application to see it live. In the output, just above the JSON code block, there's a line saying "You can launch the app at..." with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
 
 Once your program loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 
