@@ -9,7 +9,9 @@ Woodgrove Bank has expanded their audience to Europe. They have a team in Europe
 1. From the navigation, under **Server group management**, select **Replication**.
 1. On the Replication screen, select **Add replica**.
 
-    ![Screenshot of the Replication screen for the Azure Cosmos DB for PostgreSQL resource. 'Replication' in the navigation menu and 'Add replica' are highlighted.](../media/replication-add-replica.png)
+    :::image type="complex" source="../media/replication-add-replica.png" alt-text="Screenshot of the Replication screen for the resource.":::
+        Screenshot of the Replication dialog and relevant options for the Azure Cosmos DB for PostgreSQL resource. 'Replication' in the navigation menu and 'Add replica' are highlighted.
+    :::image-end:::
 
 1. On the PostgreSQL server group replica screen, enter the following settings:
     * **Server group name**: Enter a server group name for the read replicas. Our example shows `payment-server-demo-eur`.
@@ -18,15 +20,19 @@ Woodgrove Bank has expanded their audience to Europe. They have a team in Europe
     * **Location**: Select a desired region. This location doesn't need to match the region where your primary server group is located.
     * **Compute + storage**: Make note of the tier with compute and storage allocation. Be aware of the price.
 
-    ![Screenshot of the PostgreSQL server group replica screen. Server group name is for the read-only replicas. The sample server group name for the read only replicas is 'payment-server-demo-eur'. The Compute + storage shows the tier, the number of nodes, the compute + storage resources, and an estimated cost per month. The estimated cost in the screenshot is a placeholder for price.](../media/create-read-replica.png)
+    :::image type="complex" source="../media/create-read-replica.png" alt-text="Screenshot of the PostgreSQL server group replica screen.":::
+        Screenshot of the PostgreSQL server group replica screen. Server group name is for the read-only replicas. The sample server group name for the read only replicas is 'payment-server-demo-eur'. The Compute + storage shows the tier, the number of nodes, the compute + storage resources, and an estimated cost per month. The estimated cost in the screenshot is a placeholder for price.
+    :::image-end:::
 
 1. Select **OK**. Once the replicas are created and available, the server group for the read replicas should appear under the Replicas section on the Replication screen.
 
-    ![Screenshot of the PostgreSQL server group replica screen. The new server group for the replicas - payment-server-ro - appears in the Replicas section.](../media/replication-read-replicas.png)
+    :::image type="content" source="../media/replication-read-replicas.png" alt-text="Screenshot of the PostgreSQL server group replica screen. The new server group for the replicas - payment-server-ro - appears in the Replicas section.":::
 
 Once the replicas are created, you should see the replicas listed in the **Replicas** section on the primary server group's **Replication** screen.
 
-![Screenshot of the Replication screen for the learn-cosmosdb-postgresql primary server group. learn-cosmosdb-postgresql is in eastus, and the read replica learn-cosmosdb-postgresql-eur is in westeurope.](../media/replication-read-replicas.png)
+:::image type="complex" source="../media/replication-read-replicas.png" alt-text="Screenshot of the Replication screen for the learn-cosmosdb-postgresql primary server group.":::
+    Screenshot of the Replication screen for the learn-cosmosdb-postgresql primary server group. learn-cosmosdb-postgresql is in eastus, and the read replica learn-cosmosdb-postgresql-eur is in westeurope.
+:::image-end:::
 
 ## Get the connection string for the read replica
 

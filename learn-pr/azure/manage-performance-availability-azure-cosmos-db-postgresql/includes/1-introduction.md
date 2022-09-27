@@ -2,7 +2,7 @@ Azure Cosmos DB for PostgreSQL has the ability to grow with the applications tha
 
 ## Scenario: Scaling Woodgrove Bank's contactless payment app
 
-![Screenshot of Woodgrove Bank's logo - an icon of a factory with the words 'Woodgrove Bank' to the right of it.](../media/woodgrove-bank-logo.png)
+:::image type="content" source="../media/woodgrove-bank-logo.png" alt-text="Screenshot of Woodgrove Bank's logo - an icon of a factory with the words 'Woodgrove Bank' to the right of it.":::
 
 In this scenario, you're a database administrator for Woodgrove Bank. They have a contactless payment app that stores its data in an Azure Cosmos DB for PostgreSQL database. Woodgrove Bank decided to expand the app to customers across Europe and the United States after going through a successful trial of the app. As the Woodgrove Bank payment app grows in usage and demand, the cluster needs to grow to handle the load both in resources and in availability.
 

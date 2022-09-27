@@ -9,7 +9,7 @@ Woodgrove Bank wants to ensure that their data is highly available and that stan
 1. From the navigation, select **Scale**.
 1. Toggle the **Enable high availability** slider on the resource from No to *Yes*.
 
-    ![Screenshot of the Scale screen for the Azure Cosmos DB for PostgreSQL  resource. The 'Scale' navigation is highlighted. The 'Enable high availability' slider is highlighted.](../media/scale-enable-high-availability.png)
+    :::image type="content" source="../media/scale-enable-high-availability.png" alt-text="Screenshot of the Scale screen for the Azure Cosmos DB for PostgreSQL  resource. The 'Scale' navigation is highlighted. The 'Enable high availability' slider is highlighted.":::
 
     While enabling the feature is quick in the portal, it takes time to spin up or tear down the standby replicas. This feature will also have an effect on the cost due to having resources on standby.
 
@@ -17,7 +17,9 @@ Woodgrove Bank wants to ensure that their data is highly available and that stan
 
 As high availability is enabled, the High Availability state shows in the Nodes list on the **Overview** for the Azure Cosmos DB for PostgreSQL resource.
 
-![Screenshot of the Overview screen for the Azure Cosmos DB for PostgreSQL  resource. The 'High availability' column in the Nodes section is highlighted. The coordinator and all worker nodes have a high availibility state of Healthy.](../media/overview-high-availability-status.png)
+:::image type="complex" source="../media/overview-high-availability-status.png" alt-text="Screenshot of the Overview screen for the Azure Cosmos DB for PostgreSQL resource.":::
+    Screenshot of the Overview screen for the Azure Cosmos DB for PostgreSQL resource. The 'High availability' column in the Nodes section is highlighted. The coordinator and all worker nodes have a high availibility state of Healthy.
+:::image-end:::
 
 High availability is enabled when all nodes show a high availability state of Healthy.
 

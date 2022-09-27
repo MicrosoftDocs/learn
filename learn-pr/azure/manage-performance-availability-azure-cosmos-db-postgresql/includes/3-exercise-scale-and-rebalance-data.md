@@ -16,11 +16,13 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
 1. Next, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource.
 
-    ![Screenshot of Create an Azure Cosmos DB for PostgreSQL resource. Databases in the Categories navigation and Azure Cosmos DB in the Popular Azure services section are highlighted.](../media/cosmos-db-postgresql-create.png)
+    :::image type="complex" source="../media/cosmos-db-postgresql-create.png" alt-text="Screenshot of Create an Azure Cosmos DB for PostgreSQL resource.":::
+        Screenshot of Create an Azure Cosmos DB for PostgreSQL resource. Databases in the Categories navigation and Azure Cosmos DB in the Popular Azure services section are highlighted.
+    :::image-end:::
 
 1. On the **Select API option** screen, select **Create** within the **PostgreSQL** tile.
 
-    ![Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.](../media/cosmos-db-select-api-option.png)
+    :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.":::
 
     > [!NOTE]
     > The portal will display an Azure Cosmos DB for PostgreSQL configuration screen.
@@ -41,7 +43,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | Admin username | This username is set to `citus` and can't be edited. |
     | Password | Enter and confirm a strong password. |
 
-    ![Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. The settings above are shown in the screenshot.](../media/cosmos-db-postgresql-basics-tab.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-basics-tab.png" alt-text="Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. The settings above are shown in the screenshot.":::
 
     > [!NOTE]
     > Note the server name and password for later use.
@@ -59,7 +61,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | Coordinator storage | Select **512 GiBM**. |
     | High availability | Leave unchecked. |
 
-    ![Screenshot of the Azure Cosmos DB for PostgreSQL cluster configuration dialog. The settings above appear in the screenshot.](../media/cosmos-db-postgresql-cluster-config.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-cluster-config.png" alt-text="Screenshot of the Azure Cosmos DB for PostgreSQL cluster configuration dialog. The settings above appear in the screenshot.":::
 
 1. Select **Save** on the scale page to return to the cluster configuration.
 
@@ -67,7 +69,9 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
 1. On the **Networking** tab, set the **Connectivity method** to **Public access (allowed IP addresses)**, and check the **Allow public access from Azure services and resources within Azure to this cluster** box.
 
-    ![Screenshot of Azure Cosmos DB for PostgreSQL networking configuration. Public access (allowed IP addresses) is highlighted for the Connectivity method. Allow public access from Azure services is checked and highlighted.](../media/cosmos-db-postgresql-networking-tab.png)
+    :::image type="complex" source="../media/cosmos-db-postgresql-networking-tab.png" alt-text="Screenshot of Azure Cosmos DB for PostgreSQL networking configuration.":::
+        Screenshot of Azure Cosmos DB for PostgreSQL networking configuration. Public access (allowed IP addresses) is highlighted for the Connectivity method. Allow public access from Azure services is checked and highlighted.
+    :::image-end:::
 
 1. Select the **Review + create** button and on the review screen, select **Create** to create your Azure Cosmos DB for PostgreSQL cluster.
 
@@ -77,17 +81,19 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
 1. On the navigation, under **Settings**, select **Connection strings**. Copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. The 'Connection strings' navigation is highlighted. The psql connection string is also highlighted.](../media/psql-connection-string.png)
+    :::image type="complex" source="../media/psql-connection-string.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource.":::
+        Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. The 'Connection strings' navigation is highlighted. The psql connection string is also highlighted.
+    :::image-end:::
 
 1. Open [Azure Cloud Shell](https://shell.azure.com/) in a web browser.
 
 1. Select **Bash**.
 
-    ![Screenshot of Azure Cloud Shell welcome message with a prompt to choose an environment between Bash or PowerShell. Bash is selected.](../media/azure-cloud-shell-welcome.png)
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot of Azure Cloud Shell welcome message with a prompt to choose an environment between Bash or PowerShell. Bash is selected.":::
 
 1. If prompted, select the subscription you used for your Azure Cosmos DB for PostgreSQL account. Then select **Create storage**.
 
-    ![Screenshot of Azure Cloud Shell welcome wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot of Azure Cloud Shell welcome wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
 
 1. Now, use the psql command-line utility to connect to Azure Cosmos DB for PostgreSQL. Copy the connection string from Step 2, and paste it into the Cloud Shell. Update the `password` part of the connection string to use the password set-up when creating the Azure Cosmos DB for PostgreSQL cluster. Then, run the command.
 
@@ -140,7 +146,9 @@ As data is loaded to empty distributed tables, the data is distributed to the wo
 1. Navigate to the Azure Cosmos DB for PostgreSQL resource in the Azure portal.
 1. From the navigation menu, select **Shard rebalancer**.
 
-    ![Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer option in the Server group management section of the navigation menu is highlighted. There is 1 coordinator node and 2 worker nodes.](../media/shard-rebalancer-rebalancing-not-recommended.png)
+    :::image type="complex" source="../media/shard-rebalancer-rebalancing-not-recommended.png" alt-text="Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time.":::
+        Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer option in the Server group management section of the navigation menu is highlighted. There is 1 coordinator node and 2 worker nodes.
+    :::image-end:::
 
 ## Add a worker node
 
@@ -150,7 +158,9 @@ Since Woodgrove Bank is experiencing a growth in usage, we need to add a worker 
 1. From the navigation menu, select **Scale**.
 1. Increase the **Worker node count** from 2 to 3.
 
-    ![Screenshot of the Scale screen for the Azure Cosmos DB for PostgreSQL  resource. The 'Scale' navigation is highlighted. The Worker node count slider is highlighted.](../media/scale-three-worker-nodes.png)
+    :::image type="complex" source="../media/scale-three-worker-nodes.png" alt-text="Screenshot of the Scale screen for the Azure Cosmos DB for PostgreSQL resource.":::
+        Screenshot of the Scale screen for the Azure Cosmos DB for PostgreSQL resource. The 'Scale' navigation is highlighted. The Worker node count slider is highlighted.
+    :::image-end:::
 
 1. Select **Save**.
 
@@ -162,7 +172,9 @@ shard rebalancing is needed.
 1. Navigate to the Azure Cosmos DB for PostgreSQL cluster in the Azure portal.
 1. From the navigation menu, select **Shard rebalancer**. Shard rebalancing is recommended.
 
-    ![Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is recommended. The Shard rebalancer shows 1 coordinator node and 3 worker nodes.](../media/shard-rebalancer-recommending-rebalancing.png)
+    :::image type="complex" source="../media/shard-rebalancer-recommending-rebalancing.png" alt-text="Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is recommended.":::
+        Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is recommended. The Shard rebalancer shows 1 coordinator node and 3 worker nodes.
+    :::image-end:::
 
 ## Check the current rebalance strategy
 
@@ -205,6 +217,8 @@ NOTICE:  Moving shard 102011 from private-w1.learn-cosmosdb-postgresql.postgres.
 
 Refresh the Shard rebalancer in the portal. Notice that rebalancing is no longer recommended.
 
-![Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer shows 1 coordinator node and 3 worker nodes.](../media/shard-rebalancer-rebalancing-not-recommended-3-nodes.png)
+:::image type="complex" source="../media/shard-rebalancer-rebalancing-not-recommended-3-nodes.png" alt-text="Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time.":::
+    Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer shows 1 coordinator node and 3 worker nodes.
+:::image-end:::
 
 While this exercise shows how scaling and rebalancing works with one table, this pattern applies to each distributed and reference table. Rebalancing will balance data across all of the nodes in a cluster.
