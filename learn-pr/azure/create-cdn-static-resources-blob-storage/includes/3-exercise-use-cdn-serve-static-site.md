@@ -23,7 +23,7 @@ Now, you'll create a CDN and connect that CDN to the website that you've created
     :::image type="content" source="../media/3-cdn-new-profile.png" alt-text="Screenshot of the basics page of CDN profile creation.":::
 
     | Settings | Value |
-    | -- | -- |
+    |--|--|
     | Subscription | Select the sandbox environment subscription. |
     | Resource group | Select the existing Resource Group ("**<rgn>[sandbox resource group name]</rgn>**") from the drop-down list. |
     | Name | Enter a name for the CDN profile. |
@@ -40,15 +40,14 @@ You now need to create a CDN profile that connects to the source web server in t
 
 1. In the CDN Profile pane, select **+ Endpoint**.
 
-    :::image type="content" source="../media/3-add-an-endpoint.png" alt-text="Screenshot of the add an endpoint button from the CDN overview page.":::
+    :::image type="content" source="../media/3-add-an-endpoint.png" alt-text="Screenshot of add an endpoint button from the CDN overview page.":::
 
 1. On the **Add an endpoint** page, enter or select the following information:
 
     :::image type="content" source="../media/3-new-cdn-endpoint.png" alt-text="Screenshot of create a new CDN endpoint page in the Azure portal.":::
 
-
     | Settings | Value |
-    | -- | -- |
+    |--|--|
     | Name | Enter a unique name for the endpoint. |
     | Origin type | Select **Custom origin**. |
     | Origin hostname | Enter the URL from when you created the web site. Remove the **https://** and the final trailing slash character. |
