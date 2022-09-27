@@ -1,22 +1,22 @@
 In this exercise, use Visual Studio Code's customizable IDE to build, test, and run this Node.js application against the Azure sandbox containing your resources.
 
-* **Install node packages** that enable you to configure Node.js for use in Visual Studio Code. 
-* **Write an application** that creates and queries for data with an Azure SDK package. 
-* **Run application** to manage that data.
+* **Install npm packages** that enable you to configure Node.js for use in Visual Studio Code. 
+* **Write JavaScript code** that creates and queries for data with an Azure SDK package. 
+* **Run code** to manage that data.
 
 > [!NOTE]
 > This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer.
 
-## Configure Node.js
+## Create Node.js project 
 
 1. Start Visual Studio Code if it isn't already running.
 
-2. On the **Terminal** menu, select **New Terminal**.
+2. On the **Terminal** menu, select **New Terminal**, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
-3. In the **Terminal** window, run the following command to create a new folder named **contosoretail** for the Node application.
+3. In the **Terminal** window, run the following command to create a new folder named **contoso-retail** for the Node application.
   
     ```bash
-    mkdir contosoretail && cd contosoretail
+    mkdir contoso-retail && cd contoso-retail
     ```
 
 4. Enter the following commands to move to initialize a new Node application.
@@ -27,32 +27,73 @@ In this exercise, use Visual Studio Code's customizable IDE to build, test, and 
 
     The **npm init** command creates a **package.json** file and displays its contents. This file contains the initial metadata for the application, containing a default name, description, and entry point.
 
-5. On the **File** menu in Visual Studio Code, select **Open Folder**, and then open the **grades** folder.
+5. On the **File** menu in Visual Studio Code, select **Open Folder**, and then open the **contoso-retail** folder.
 
 6. In the **Explorer** window, select the **package.json** file.
 
-    :::image type="content" source="../media/5-edit-package.png" alt-text="Screenshot of Visual Studio Code. The user is editing the package.json file." loc-scope="vs-code":::
+7. In the editor pane, change the following: 
 
-7. In the editor pane, change the **description** property to **Contoso retail product maintenance**, and change the **main** property to **products.js**. The file should look like this.
+    |Property|Value|
+    |--|--|
+    |**description**|`Contoso retail product maintenance`|
+    |**type**|`module` - the JavaScript code uses ES6 syntax|
+
+
+    The file should look like this.
 
     ```text
     {
-        "name": "contosoretail",
+        "name": "contoso-retail",
         "version": "1.0.0",
         "description": "Student and course grades maintenance",
-        "main": "products.js",
+        "main": "index.js",
+        "type": module,
         "scripts": {
             "test": "echo \"Error: no test specified\" && exit 1"
         },
         "keywords": [],
         "author": "",
-        "license": "ISC"
+        "license": "MIT"
     }
     ```
 
-8. On the **File** menu, select **Save**.
+8. On the **File** menu, select **Save**. 
 
-9. Turn autosave on using **File > Preferences > Settings** then search for **files auto save**. Select *afterDelay* of *1000*.
+## Configure Visual Studio Code to autosave file changes
+
+1. Turn autosave on using **File > Preferences > Settings**, <kbd>Ctrl</kbd> + <kbd>,</kbd>.
+1. Search for **files auto save**. 
+1. Select *afterDelay* of *1000*.
+
+## Create .gitignore file
+
+The **.gitignore** file prevents you from checking in files to source control that shouldn't be added.
+
+Create a file, <kbd>Ctrl</kbd> + <kbd>N</kbd>, named `.gitignore` and add the following to it.
+
+```
+node_modules
+.env
+```
+
+
+## Create secrets environment file
+
+1. In Visual Studio Code, on the **File** menu, select **New Text File**.
+
+1. On the **File** menu, select **Save As**. Save the new file with the name **.env**.
+1. Add the following variables to the file:
+
+    ```text
+    COSMOS_CONNECTION_STRING=
+    COSMOS_DATABASE_NAME=ContosoRetail
+    COSMOS_CONTAINER_NAME=Products
+    COSMOS_CONTAINER_PARTITION_KEY=categoryName
+    ```
+
+1. From the Azure explorer, <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>, select your subscription, then the **Azure Cosmos DB** node to see the resources. 
+1. Right-click on your resource and select **Copy connection string**.
+1. Paste the connection string into the `.env` file for the **COSMOS_CONNECTION_STRING** variable.
 
 ## Install the Cosmos DB package 
 
@@ -62,145 +103,163 @@ In this exercise, use Visual Studio Code's customizable IDE to build, test, and 
     npm install @azure/cosmos
     ```
 
-1. At the integrated terminal, add the npm package to use the `.env` file for environment variables.
+1. At the integrated terminal, add the npm package to use the `.env` file for environment variables. This package reads the `.env` file and adds those values into the `process.env` runtime object.
 
     ```bash
     npm install dotenv
     ```
 
-## Create the products app
+## Product shape
+
+The products in this dataset have the following shape:
+
+```
+{
+      "id": "FEEFEE3B-6CB9-4A75-B896-5182531F661B",
+      "categoryId": "AE48F0AA-4F65-4734-A4CF-D48B8F82267F",
+      "categoryName": "Bikes, Road Bikes",
+      "sku": "BK-R19B-52",
+      "name": "Road-750 Black, 52",
+      "description": "The product called \"Road-750 Black, 52\"",
+      "price": 539.99,
+      "tags": [
+        { "id": "461ADE06-0903-4BAF-97AB-CC713E5B1DD4", "name": "Tag-174" },
+        { "id": "AC4CC3CC-4E6B-461D-9B0E-4218EDDF3142", "name": "Tag-122" },
+        { "id": "D56040DB-E5DF-40BE-9F2F-7E10F4340BCA", "name": "Tag-31" },
+        { "id": "D77B44A9-7951-4CC8-BB27-8B5D78CFDDF8", "name": "Tag-124" },
+        { "id": "E468DF53-4836-4546-9D05-C855AAC4B0AF", "name": "Tag-2" }
+      ],
+      "inventory": [
+        { "location": "Dallas", "inventory": 91 },
+        { "location": "Seattle", "inventory": 54 },
+        { "location": "Boston", "inventory": 7 },
+        { "location": "Miami", "inventory": 86 },
+        { "location": "San Diego", "inventory": 81 }
+      ]
+    }
+```
+
+|Property|Description|
+|--|--|
+|id|Cosmos DB uses the custom identifier, **id**, to uniquely identify each item. The ID can be any data type such as number, string, etc. If you don't provide the ID, Cosmos DB creates one for you.|
+|categoryName|This property has been specifically selected for this dataset as the partition key. The product category name provides a somewhat even distribution of the data, which is ideal for the partition key. The categoryName also won't change very often, which is also important for a partition key.|
+|tags and inventory|These represent subproperties that can be used to find and reshape the results of queries using the [JOIN]() keyword.|
+ 
+
+## Create the script to add products to a container
 
 1. In Visual Studio Code, on the **File** menu, select **New Text File**.
 
-1. On the **File** menu, select **Save As**. Save the new file with the name **products.js**.
+1. On the **File** menu, select **Save As**. Save the new file with the name **1-contoso-products-upload-data.js**.
+1. Copy the following JavaScript and paste it into that file:
 
-## Add JavaScript to use Cosmos DB SDK
+    :::code language="javascript" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/1-contoso-products-upload-data.js" highlight="11,14,17,29,34,47-51":::
 
-1. In the editor window, add the following lines to the top of the **products.js** file.
+1. Create a new file, named **products.json**, and copy the contents of the sample data file, [products.json](https://github.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/blob/main/training/build-node-cosmos-app-vscode/products.json) into it. 
 
+    This is an array of JSON objects. 
 
+1. In the Visual Studio Code terminal, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>, execute the JavaScript file to upload the data into the Cosmos DB container:
 
-4. After the **require** statement, add the following **class** definition to the file.
-
-    ```javascript
-    class Student {
-        constructor(ID, studentNumber, forename, lastname) {
-            this.id = ID;
-            this.StudentNumber = studentNumber;
-            this.Forename = forename;
-            this.Lastname = lastname;
-            this.CourseGrades = [];
-            this.addGrade = function (coursename, grade) {
-                this.CourseGrades.push({Course: coursename, Grade: grade});
-            };
-            this.toString = function () {
-                return `${this.StudentNumber}: ${this.Forename}, ${this.Lastname}\n`;
-            };
-            this.getGrades = function () {
-                let grades = "";
-                this.CourseGrades.forEach (function(coursegrade) {
-                    grades = `${grades}${coursegrade.Course}:${coursegrade.Grade}\n`;
-                });
-                return grades;
-            };
-        }
-    }
+    ```bash
+    node 1-contoso-products-upload-data.js
     ```
 
-    The **Student** class represents a student. It has the properties **id**, **StudentNumber**, **Forename**, **Lastname**, and **CourseGrades**. The **CourseGrades** property is an object. This object will contain course code/course grade key/value pairs for the student. The **addGrade** method enables a user to add a course code/course grade pair to this property. The **getGrades** function returns a formatted string listing the course codes and grades for the student. The **toString** function returns a string containing the other details of the student.
+1. Copy the container name displayed at the end of the execution in the terminal. In order for the remaining JavaScript files to run successfully, you need to set this name in the `.env` file. 
+1. Past the value into the `.env` file for the **COSMOS_CONTAINER_NAME** property. The container name has a timestamp postpended, such as `Products-1664304175357`. 
 
-    > [!NOTE]
-    > It's important to distinguish between the **id** field, which is used by Azure Cosmos DB to identify the document, and the **StudentNumber** field, which is used to reference a student. The data in the **id** field is immutable, whereas the **StudentNumber** field may change over time.
+## Create the script to find products in the container
 
-5. Add the **getStudentData** function shown below to the **studentgrades.js** file, after the **Student** class.
+1. In Visual Studio Code, on the **File** menu, select **New Text File**.
+
+1. On the **File** menu, select **Save As**. Save the new file with the name **2-contoso-products-find.js**.
+1. Copy the following JavaScript and paste it into that file:
+
+        :::code language="javascript" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/2-contoso-products-find.js" highlight="11,14,17,29,56":::
+
+1. In the Visual Studio Code terminal, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>, execute the JavaScript file to **find all bikes**:
+
+    ```bash
+    node 2-contoso-products-find.js find categoryName '%Bikes%'
+    ```
+
+    The `bikes` term is wrapped with percent signs, `%`, indicating partial matching. 
 
     ```javascript
-    function getStudentData () {
-        let ID = question("Please enter the student's document ID: ");
-        let studentNumber = question("Enter the student's number: ");
-        let forename = question("Enter the student's forename: ");
-        let lastname = question("Enter the student's last name: ");
-        let student = new Student(ID, studentNumber, forename, lastname);
-        return student;
+    // Build query
+    const querySpec = {
+        query: `select * from products p where p.${property} LIKE @propertyValue`,
+        parameters: [
+            {
+                name: "@propertyValue",
+                value: `${value}`,
+            },
+        ],
     };
     ```
 
-    This function prompts the user for the details of a student and creates a new **Student** object.
-
-6. Add the following function to the **studentgrades.js** file.
-
-    ```javascript
-    function test () {
-        let student1 = getStudentData();
-        student1.addGrade("Computer Science", "A");
-        student1.addGrade("Applied Mathematics", "C");
-
-        process.stdout.write(student1.toString());
-        process.stdout.write(student1.getGrades());
-
-        let student2 = getStudentData();
-        student2.addGrade("Computer Science", "A");
-
-        process.stdout.write(student2.toString());
-        process.stdout.write(student2.getGrades());
-    }
-    ```
-
-    This function is a test harness that asks the user to input information for two students. The function adds grades for each student and displays the results.
-
-7. Add the following statement at the end of the file.
-
-    ```javascript
-    test();
-    ```
-
-    This statement runs the test harness.
-
-## Test the studentgrades app
-
-You'll now run the app and verify that the **Student** class creates student objects and can assign grades correctly. You'll use the test harness to prompt the user for the details of two students. The details of the students and the course grades assigned by the test harness will appear.
-
-The application doesn't store student information in Azure Cosos DB. You'll see how to do that in the next exercise.
-
-1. In the **Terminal** window, start the **studentgrades** app using **node**.
+    The SQL query in the `executeSqlFind` method for the container uses the **LIKE** keyword and query parameters to find any items with the property name `categoryName` which contain `bikes`. 
+ 
+1. Run another query to find all products with the word `Blue` in the name.  
 
     ```bash
-    node studentgrades.js
+    node 2-contoso-products-find.js find name '%Blue%'
     ```
 
-2. At the prompts, enter the values shown in the following table.
+1. Run another query to find product inventory for bikes in Seattle.
 
-    | Prompt  | Value  |
-    |---|---|
-    | Please enter the student's document ID: | S001 |
-    | Enter the student's number: | 001 |
-    | Enter the student's forename: | EEE |
-    | Enter the student's lastname: | FFF |
-
-    The following messages should appear, output by the statements `process.stdout.write(student1.toString());` and `process.stdout.write(student1.getGrades());` in the `test` function.
-
-    ```text
-    001: EEE, FFF
-    Computer Science:A
-    Applied Mathematics:C
+    ```bash
+    node 2-contoso-products-find.js find-inventory categoryName '%Bikes%' Seattle
     ```
 
-3. At the next set of prompts, enter the following values.
-
-    | Prompt  | Value  |
-    |---|---|
-    | Please enter the student's document ID: | S002 |
-    | Enter the student's number: | 002 |
-    | Enter the student's forename: | GGG |
-    | Enter the student's lastname: | HHH |
-
-    The following messages should appear.
-
-    ```text
-    002: GGG, HHH
-    Computer Science:A
+    ```javascript
+    const querySpec = {
+        query: `select p.id, p.name, i.location, i.inventory as inventory from products p JOIN i IN p.inventory where p.${property} LIKE @propertyValue AND i.location=@location`,
+        parameters: [
+            {
+            name: "@propertyValue",
+            value: `${value}`,
+            },
+            { name: "@location", value: `${location}` },
+        ],
+    };
     ```
 
-    These are the details of the second student, and the grade for the only course that the student took.
+    The SQL query in the `executeSqlInventory` method for the container uses the **JOIN** keyword to find the location property in the subproperty `inventory`. By naming the inventory subproperty with `i` and joining to the subproperty, the result set can be reshaped to return the inventory as a flat object.  
+
+1. Run another query to find inventory for all products with the word `Blue` in the name in Dallas.  
+
+    ```bash
+    node 2-contoso-products-find.js find-inventory name '%Blue%' Dallas
+    ```
+
+## Create the script to upsert products to a container
+
+1. In Visual Studio Code, on the **File** menu, select **New Text File**.
+
+1. On the **File** menu, select **Save As**. Save the new file with the name **3-contoso-products-upsert.js**.
+1. Copy the following JavaScript and paste it into that file:
+
+    :::code language="javascript" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert.js" highlight="11,14,17,27,45,48":::
+
+1. Create a new file for the product, **3-contoso-products-upsert-insert.json**, and paste the following JSON object. 
+
+    :::code language="json" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-insert.json":::
+
+	Notice this object with ID `123` doesn't have any inventory. 
+
+1. Create a new file for the product, **3-contoso-products-upsert-update.json**, and paste the following JSON object. 
+
+    :::code language="json" source="~/cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/3-contoso-products-upsert-update.json":::
+
+	Notice this object does have inventory. 
+
+1. In the Visual Studio Code terminal, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>, execute the JavaScript file to upsert the new product. 
+
+    ```bash
+    3-contoso-products-upsert.js
+	```
+
+	Because the product with the ID doesn't exist, it's inserted. Then the script updates the product with inventory. Both the insert and the update functionality use the same code to upsert. 
 
 You've now seen how to use Visual Studio Code to create, edit, and run a Node.js application.
