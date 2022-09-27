@@ -11,11 +11,11 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
 
 2. In the Azure portal, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource.
 
-    ![Screenshot of the Azure portal's create a resource screen where Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-postgresql-create.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-create.png" alt-text="Screenshot of the Azure portal's create a resource screen where Databases and Azure Cosmos DB are highlighted.":::
 
 3. On the **Select API option** screen, select **Create** within the **PostgreSQL** tile.
 
-    ![Screenshot of the PostgreSQL tile that is highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
+    :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the PostgreSQL tile that is highlighted on the Azure Cosmos DB Select API option dialog.":::
 
     > [!NOTE]
     > After selecting **Create**, the portal will display a database configuration screen.
@@ -36,7 +36,7 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
     | Admin username  | This username is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    ![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The dialog is displayed and the fields are populated with the values specified in the exercise.](../media/cosmos-db-postgresql-basics-tab.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-basics-tab.png" alt-text="Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The dialog is displayed and the fields are populated with the values specified in the exercise.":::
 
     Note the password for later use.
 
@@ -54,7 +54,7 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
 
     The [high availability and automatic failover capabilities](/azure/postgresql/hyperscale/concepts-high-availability) are out of scope for this exercise, so leave the **High availability** checkbox unchecked.
 
-    ![Screenshot of the node configuration specified in the exercise which is selected on the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog.](../media/cosmos-db-postgresql-cluster-config.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-cluster-config.png" alt-text="Screenshot of the node configuration specified in the exercise, which is selected on the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog.":::
 
 6. Select **Save** on the scale page to return to the cluster configuration.
 
@@ -62,7 +62,7 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
 
 8. On the **Networking** tab, set the **Connectivity method** to **Public access (allowed IP addresses)**, and check the **Allow public access from Azure services and resources within Azure to this cluster** box.
 
-    ![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster Networking tab is displayed. The "Public access" and "Allow public access from Azure services and resources within Azure to this cluster settings" are highlighted.](../media/cosmos-db-postgresql-networking-tab.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-networking-tab.png" alt-text="Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster Networking tab is displayed. The Public access and Allow public access from Azure services and resources within Azure to these cluster settings are highlighted.":::
 
 9. Select the **Review + create** button, and on the review screen, select **Create** to create your cluster.
 
@@ -72,7 +72,7 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
 
 2. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-postgresql-connection-strings-psql.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
 3. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
@@ -80,11 +80,11 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
 
 5. Select **Bash** as the environment.
 
-    ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.":::
 
 6. If prompted, select the subscription you used for your Azure Cosmos DB for PostgreSQL account. Then select **Create storage**.
 
-    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted is displayed. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot of the Azure Cloud Shell wizard showing no storage mounted is displayed. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
 
 7. Now, use the psql command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following command:
 
@@ -151,7 +151,7 @@ The [coordinator metadata tables](/azure/postgresql/hyperscale/reference-metadat
 
     The node names and port numbers provided in the output can be used for connecting directly to workers, which is a common practice when [tuning query performance](/azure/postgresql/hyperscale/concepts-performance-tuning). Connecting directly to worker nodes requires the **Enable access to the worker nodes** checkbox to be selected on the **Networking** page of your Azure Cosmos DB for PostgreSQL resource in the Azure portal.
 
-    ![Screenshot of the enable access to the worker nodes option which is checked, and the setting is highlighted on the Networking page of the Azure Cosmos DB for PostgreSQL resource in the Azure portal. Networking is highlighted and selected in the left-hand navigation menu.](../media/enable-access-to-worker-nodes.png)
+    :::image type="content" source="../media/enable-access-to-worker-nodes.png" alt-text="Screenshot of the enable access to the worker nodes option in the Networking section. Networking is highlighted and selected in the left-hand navigation menu.":::
 
 ## Create distributed tables
 

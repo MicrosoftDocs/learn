@@ -14,7 +14,7 @@ Citus provides the primary performance and scalability features of Azure Cosmos 
 
 [Citus](https://github.com/citusdata/citus) is an open-source extension for PostgreSQL that was created to allow data storage and computing capabilities to scale across a cluster of PostgreSQL servers. Citus is designed to still provide traditional relational database functionality like transactions, joins, and foreign keys. The Citus extension enables this functionality by transforming PostgreSQL into a highly scalable distributed database with features like a distributed SQL engine, [sharding](/azure/postgresql/hyperscale/concepts-nodes#shards), [reference tables](/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables), and [distributed tables](/azure/postgresql/hyperscale/concepts-nodes#type-1-distributed-tables).
 
-![Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how additional nodes can be added to scale out.](../media/distributed-database.png)
+:::image type="content" source="../media/distributed-database.png" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how extra nodes can be added to scale out.":::
 
 ## Scale compute across nodes
 
@@ -36,4 +36,4 @@ Creating distributed tables in the Woodgrove Bank database allows you to spread 
 
 The coordinator creates query fragments, targeting specific shards, and then sends those fragments to the appropriate worker for execution. These query fragments are executed simultaneously on the worker nodes, allowing the system to parallelize the workload evenly among many servers.
 
-![Animation of the flow of a query arriving from an application is displayed, with the query being processed by the coordinator node using metadata tables and then the query fragments being sent to the work nodes for execution. The results of query execution on the worker nodes are passed back to the coordinator, aggregated, and returned to the application.](../media/distributed-table.gif)
+:::image type="content" source="../media/distributed-table.gif" alt-text="Animation of the flow of a query arriving from an application is displayed. In the animation, the query is processed by the coordinator node using metadata tables and then the query fragments being sent to the work nodes for execution. The results of query execution on the worker nodes are passed back to the coordinator, aggregated, and returned to the application.":::

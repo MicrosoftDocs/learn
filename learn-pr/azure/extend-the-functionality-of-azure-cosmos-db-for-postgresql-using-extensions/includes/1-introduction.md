@@ -4,7 +4,7 @@ You can extend the functionality of databases using [PostgreSQL extensions](/azu
 
 In fact, the distributed capabilities of Azure Cosmos DB for PostgreSQL are made possible through the [Citus extension](https://github.com/citusdata/citus). Other examples of extensions are [`pg_cron`](https://github.com/citusdata/pg_cron), a cron-based job scheduler that allows you to schedule PostgreSQL commands directly from the database, and [PostGIS](https://postgis.net/) that adds support for geographic objects, allowing location queries to be run in SQL.
 
-![Diagram showing three of the extensions you will use in this learning module, Citus, PostGIS, and pg_cron, being added to Azure Cosmos DB for PostgreSQL and used to extend the functionality of the database.](../media/cosmos-db-postgresql-extensions.png)
+:::image type="content" source="../media/cosmos-db-postgresql-extensions.png" alt-text="Diagram showing three of the extensions you'll use in this learning module. These extensions include Citus, PostGIS, and pg_cron. These extensions are added to Azure Cosmos DB for PostgreSQL and used to extend the functionality of the database.":::
 
 In this module, you'll explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You'll examine the Citus extension and how it enables data distribution. You'll also investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
 
