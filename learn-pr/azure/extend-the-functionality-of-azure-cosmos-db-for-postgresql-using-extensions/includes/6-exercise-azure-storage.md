@@ -99,7 +99,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
 9. To verify the files uploaded successfully, you can navigate to the **Containers** page of your storage account by selecting **Containers** from the left-hand navigation menu. Select the `historical-data` container from the list of containers and observe the container now contains files named `events.csv` and `users.csv`.
 
-    ![Screenshot of the events.csv and users.csv blobs  highlighted in the list of files in the historical-data container.](../media/storage-account-container-blobs.png)
+    ![Screenshot of the events.csv and users.csv blobs highlighted in the list of files in the historical-data container.](../media/storage-account-container-blobs.png)
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
