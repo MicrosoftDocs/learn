@@ -27,8 +27,8 @@ subjects:
   - cloud-computing
 modules:
   - learn.model-data-azure-cosmos-db-postgresql
-  - learn.ingest-query-data-using-azure-cosmos-db-for-postgresql
-  - learn.extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions
+  - learn.ingest-query-data-using-azure-cosmos-db-postgresql
+  - learn.extend-functionality-of-azure-cosmos-db-postgresql-using-extensions
   - learn.manage-performance-availability-azure-cosmos-db-postgresql
 trophy:
   uid: learn.azure-cosmos-db-for-postgresql.trophy
