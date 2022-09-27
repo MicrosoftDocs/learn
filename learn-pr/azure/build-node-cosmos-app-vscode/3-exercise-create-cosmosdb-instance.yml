@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Create a Cosmos DB instance using Visual Studio Code
   description: Create a Cosmos DB instance using the Azure Cosmos DB extension for Visual Studio Code
   ms.date: 11/18/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: seesharprun
+  ms.author: sidandrews
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

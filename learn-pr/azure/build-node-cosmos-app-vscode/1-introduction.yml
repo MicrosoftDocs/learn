@@ -5,8 +5,9 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 11/18/2019
-  author: nickwalkmsft
-  ms.author: nickwalk
+  author: seesharprun
+  ms.author: sidandrews
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
