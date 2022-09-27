@@ -1,10 +1,10 @@
 So how does it work? Let’s look at the high-level steps that Contoso will take when using Azure Orbital Ground Station.
 
-## Azure Orbital Ground Station Architecture
+## Azure Orbital Ground Station architecture
 
-With AO Ground Station, earth observation data is transferred to the cloud where it can be processed then analyzed. This enables Contoso’s customers to gain insights from space data with Azure’s advanced artificial intelligence (AI) and machine learning (ML) capabilities.
+With Azure Orbital Ground Station, earth observation data is transferred to the cloud where it can be processed then analyzed. Contoso’s customers then gain insights from space data with Azure’s advanced artificial intelligence (AI) and machine learning (ML) capabilities.
 
-Below you can see how Azure Orbital Ground Station can be used by Contoso to command, control, and downlink. Here are the steps:
+The following steps show how Azure Orbital Ground Station can be used by Contoso to command, control, and downlink. Here are the steps:
 
 1. Contoso operates a satellite via Azure Orbital Ground Station.
 1. Contoso downlinks data to a ground station provided by Microsoft or our partners.

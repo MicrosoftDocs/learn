@@ -3,8 +3,8 @@ uid: learn.introduction-to-azure-orbital-ground-station.describe-key-features-az
 title: Describe the key features of Azure Orbital Ground Station
 metadata:
   title: Describe the key features of Azure Orbital Ground Station
-  description: TBD
-  ms.date: 09/26/2022
+  description: Look at the high-level architecture of Azure Orbital Ground Station.
+  ms.date: 09/27/2022
   author: meaghanlewis
   ms.author: mosagie
   ms.topic: interactive-tutorial

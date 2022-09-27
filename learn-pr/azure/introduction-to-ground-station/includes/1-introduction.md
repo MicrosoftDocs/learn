@@ -1,6 +1,6 @@
 Azure Orbital Ground Station provides satellite operators with pay-as-you-go access to a global network of ground stations. In the past, downlinking data from satellites required expensive upfront investments.
 
-But now, with Azure Orbital Ground Station, satellite operators can avoid that up-front investment and create a new business model based on consumption, the OPEX model, rather than upfront costs ,the CAPEX model. Ultimately, this can make space data more accessible and impactful across a wide array of industries.
+But now, with Azure Orbital Ground Station, satellite operators can avoid that up-front investment and create a new business model based on consumption, the OPEX model, rather than upfront costs, the CAPEX model. Ultimately, this can make space data more accessible and impactful across a wide array of industries.
 
 ## Learning objectives
 

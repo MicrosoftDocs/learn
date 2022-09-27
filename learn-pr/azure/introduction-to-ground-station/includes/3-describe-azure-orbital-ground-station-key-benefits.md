@@ -1,6 +1,6 @@
-Azure Orbital Ground Station addresses the market challenges that create a high barrier to entry for Contoso. On top of that, AO Ground Station enables Contoso to create a new business model based on consumption (the OPEX model) rather than upfront cost (the CAPEX model).
+Azure Orbital Ground Station addresses the market challenges that create a high barrier to entry for Contoso. On top of that, Azure Orbital Ground Station enables Contoso to create a new business model based on consumption (the OPEX model) rather than upfront cost (the CAPEX model).
 
-## Key Differentiators and Benefits
+## Key differentiators and benefits
 
 Contoso decides to adopt Azure Orbital Ground Station. Let’s look at the key reasons why:
 
