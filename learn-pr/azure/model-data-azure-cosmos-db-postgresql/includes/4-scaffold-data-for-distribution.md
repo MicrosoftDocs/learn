@@ -23,11 +23,11 @@ However, for the Woodgrove application, the choice of distribution column on the
 
 Consider this event data for `user_id` 1894. When the events are distributed by `user_id`, these details are stored on the same node:
 
-![Diagram of event data sharded on user_id. All the data for a user_id value is stored in a shard on a worker node.](../media/events-distributed--user-id.png)
+![Diagram of event data sharded on user_id. All the data for a user_id value is stored in a shard on a worker node.](../media/events-distributed-user-id.png)
 
 If this data were sharded by `merchant_id`, the data would be split like this:
 
-![Diagram of event data sharded on merchant_id. All the data for a merchant_id value is stored in a shard on a worker node. Since user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.](../media/events-distributed--merchant-id.png)
+![Diagram of event data sharded on merchant_id. All the data for a merchant_id value is stored in a shard on a worker node. Since user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.](../media/events-distributed-merchant-id.png)
 
 Querying for events for `user_id` 1894 with `payment_events` distributed on `merchant_id` means that all shards would need to be queried for data where `user_id` is set to 1894. While this example is only two shards, know that the performance pain scales as more shards are involved.
 
