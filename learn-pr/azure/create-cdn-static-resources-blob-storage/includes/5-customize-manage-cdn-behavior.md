@@ -32,7 +32,7 @@ When you've configured the cdnverify subdomain and the CNAME for the domain mapp
 
 To add a custom domain, go to the CDN endpoint that you created, and under **Settings**, select **Custom domains**. In the **Custom domain** pane, select **Custom domain**, then in the **Add a custom domain**, under **Custom hostname**, enter the hostname that matches the CNAME record in your custom domain, such as www\.contoso.com.
 
-![Add a custom domain.](../media/5-custom-domain.png)
+:::image type="content" source="../media/5-custom-domain.png" alt-text="Screenshot of add a custom domain page for a CDN profile.":::
 
 When you enter the custom domain name, Azure will use DNS to attempt to resolve the address to the endpoint hostname. You'll see a tick next to the **Custom hostname field if they match. If you see a red exclamation mark, then you should check your DNS settings.
 
