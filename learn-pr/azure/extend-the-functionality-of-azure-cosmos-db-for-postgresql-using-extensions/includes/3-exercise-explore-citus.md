@@ -54,7 +54,7 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
 
     The [high availability and automatic failover capabilities](/azure/postgresql/hyperscale/concepts-high-availability) are out of scope for this exercise, so leave the **High availability** checkbox unchecked.
 
-    :::image type="content" source="../media/cosmos-db-postgresql-cluster-config.png" alt-text="Screenshot of the node configuration specified in the exercise which is selected on the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog.":::
+    :::image type="content" source="../media/cosmos-db-postgresql-cluster-config.png" alt-text="Screenshot of the node configuration specified in the exercise, which is selected on the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog.":::
 
 6. Select **Save** on the scale page to return to the cluster configuration.
 
@@ -62,7 +62,7 @@ To complete this exercise, you must create an Azure Cosmos DB for the PostgreSQL
 
 8. On the **Networking** tab, set the **Connectivity method** to **Public access (allowed IP addresses)**, and check the **Allow public access from Azure services and resources within Azure to this cluster** box.
 
-    :::image type="content" source="../media/cosmos-db-postgresql-networking-tab.png" alt-text="Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster Networking tab is displayed. The "Public access" and "Allow public access from Azure services and resources within Azure to this cluster settings" are highlighted.":::
+    :::image type="content" source="../media/cosmos-db-postgresql-networking-tab.png" alt-text="Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster Networking tab is displayed. The Public access and Allow public access from Azure services and resources within Azure to these cluster settings are highlighted.":::
 
 9. Select the **Review + create** button, and on the review screen, select **Create** to create your cluster.
 
@@ -151,7 +151,7 @@ The [coordinator metadata tables](/azure/postgresql/hyperscale/reference-metadat
 
     The node names and port numbers provided in the output can be used for connecting directly to workers, which is a common practice when [tuning query performance](/azure/postgresql/hyperscale/concepts-performance-tuning). Connecting directly to worker nodes requires the **Enable access to the worker nodes** checkbox to be selected on the **Networking** page of your Azure Cosmos DB for PostgreSQL resource in the Azure portal.
 
-    :::image type="content" source="../media/enable-access-to-worker-nodes.png" alt-text="Screenshot of the enable access to the worker nodes option which is checked, and the setting is highlighted on the Networking page of the Azure Cosmos DB for PostgreSQL resource in the Azure portal. Networking is highlighted and selected in the left-hand navigation menu.":::
+    :::image type="content" source="../media/enable-access-to-worker-nodes.png" alt-text="Screenshot of the enable access to the worker nodes option in the Networking section. Networking is highlighted and selected in the left-hand navigation menu.":::
 
 ## Create distributed tables
 

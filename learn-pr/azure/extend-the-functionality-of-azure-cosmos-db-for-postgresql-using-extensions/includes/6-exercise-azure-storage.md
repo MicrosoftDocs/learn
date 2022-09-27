@@ -50,7 +50,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
 4. You'll need the name and key associated with your storage account to upload the data files using the Azure CLI. In the left-hand navigation menu, select **Access keys** under **Security + networking**.
 
-    :::image type="content" source="../media/storage-account-access-keys.png" alt-text="Screenshot of Access Keys which is selected and highlighted in the left-hand menu of the Storage account page.":::
+    :::image type="content" source="../media/storage-account-access-keys.png" alt-text="Screenshot of Access Keys, which is selected and highlighted in the left-hand menu of the Storage account page.":::
 
 5. With the **Access keys** page open, select the **Cloud Shell** icon in the Azure portal toolbar to open a new Cloud Shell pane at the bottom of your browser window.
 
@@ -69,7 +69,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
     Copy your storage account name by selecting the **Copy to clipboard** button next to the storage account name on the Access keys page above your Cloud Shell:
 
-    :::image type="content" source="../media/storage-account-name.png" alt-text="Screenshot of the Copy to clipboard button next to the Storage account name value, and the ACCOUNT_NAME variable declaration line is highlighted in the Cloud Shell.":::
+    :::image type="content" source="../media/storage-account-name.png" alt-text="Screenshot of the Copy to clipboard button and the ACCOUNT_NAME variable declaration line in the Cloud Shell.":::
 
     Now, execute the following command to create a variable for your storage account name, replacing the `{your_storage_account_name}` token with your storage account name.
 
@@ -189,7 +189,7 @@ Before attempting to ingest data from any file, you must understand the structur
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to your Storage account resource, select **Storage browser** from the left-hand navigation menu, and then select **Blob containers** on the Storage browser page.
 
-    :::image type="content" source="../media/storage-browser-blob-containers.png" alt-text="Screnshot of the Storage browser menu item highlighted on the Storage account page. On the Storage browser window, Blob containers is highlighted in the navigation tree.":::
+    :::image type="content" source="../media/storage-browser-blob-containers.png" alt-text="Screnshot of the Storage browser menu item highlighted on the Storage account page. On the Storage browser window, Blob containers are highlighted in the navigation tree.":::
 
 2. From the list of containers, select **historical-data**`.
 
