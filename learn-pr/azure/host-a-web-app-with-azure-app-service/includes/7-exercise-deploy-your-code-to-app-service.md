@@ -124,7 +124,7 @@ cd ~/BestBikeApp
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
-The deployment will take a couple minutes, during which time you'll see status output.
+The deployment will take a few minutes, during which time you'll see status output.
 
 ## Verify the deployment
 
