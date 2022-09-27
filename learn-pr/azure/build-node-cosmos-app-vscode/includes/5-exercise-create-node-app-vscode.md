@@ -1,12 +1,8 @@
-Visual Studio Code provides a customizable IDE that enables you to build, test, and run Node.js applications.
+In this exercise, use Visual Studio Code's customizable IDE to build, test, and run this Node.js application against the Azure sandbox containing your resources.
 
-In the sample scenario, you want to use Visual Studio Code as the development environment for creating and testing your Node.js applications.
-
-In this exercise, you'll install node packages that enable you to configure Node.js for use in Visual Studio Code. You'll use this environment to write an application that prompts the user for details of students. The application then creates JavaScript objects that capture this information.
-
-In the next exercise, you'll see how to save these objects to a container in Azure Databases extension.
-
-This exercise runs on your desktop computer and uses an Azure sandbox for your resources.
+* **Install node packages** that enable you to configure Node.js for use in Visual Studio Code. 
+* **Write an application** that creates and queries for data with an Azure SDK package. 
+* **Run application** to manage that data.
 
 > [!NOTE]
 > This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer.
@@ -17,16 +13,15 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 2. On the **Terminal** menu, select **New Terminal**.
 
-3. In the **Terminal** window, run the following command to create a new folder named **grades** for the Node application.
+3. In the **Terminal** window, run the following command to create a new folder named **contosoretail** for the Node application.
   
     ```bash
-    mkdir grades
+    mkdir contosoretail && cd contosoretail
     ```
 
-4. Enter the following commands to move to the **grades** folder, and initialize a new Node application.
+4. Enter the following commands to move to initialize a new Node application.
 
     ```bash
-    cd grades
     npm init -y
     ```
 
@@ -38,14 +33,14 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     :::image type="content" source="../media/5-edit-package.png" alt-text="Screenshot of Visual Studio Code. The user is editing the package.json file." loc-scope="vs-code":::
 
-7. In the editor pane, change the **description** property to **Student and course grades maintenance**, and change the **main** property to **studentgrades.js**. The file should look like this.
+7. In the editor pane, change the **description** property to **Contoso retail product maintenance**, and change the **main** property to **products.js**. The file should look like this.
 
     ```text
     {
-        "name": "grades",
+        "name": "contosoretail",
         "version": "1.0.0",
         "description": "Student and course grades maintenance",
-        "main": "studentgrades.js",
+        "main": "products.js",
         "scripts": {
             "test": "echo \"Error: no test specified\" && exit 1"
         },
@@ -57,32 +52,33 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 8. On the **File** menu, select **Save**.
 
-9. In the **Terminal** window, run the following commands to install the **readline-sync**, and **\@types/node** packages.
+9. Turn autosave on using **File > Preferences > Settings** then search for **files auto save**. Select *afterDelay* of *1000*.
+
+## Install the Cosmos DB package 
+
+1. At the integrated terminal, add the Cosmos DB SDK. 
 
     ```bash
-    npm install readline-sync
-    npm install @types/node
+    npm install @azure/cosmos
     ```
 
-    The **readline-sync** package contains functions that enable you to gather user input from the command line. The **\@types/node** package contains additional type definitions for Node.js.
+1. At the integrated terminal, add the npm package to use the `.env` file for environment variables.
 
-    > [!NOTE]
-    > You can ignore any **No repository field** warnings that appear for now.
-
-## Create the studentgrades app
-
-1. In Visual Studio Code, on the **File** menu, select **New File**.
-
-2. On the **File** menu, select **Save As**. Save the new file with the name **studentgrades.js**.
-
-3. In the editor window, add the following lines to the top of the **studentgrades.js** file.
-
-    ```javascript
-    //@ts-check
-    var question = require('readline-sync').question;
+    ```bash
+    npm install dotenv
     ```
 
-    The **\@ts-check** directive enables advanced type checking, using the **\@types/node** module that you added to the application in the previous task. The **require** statement imports the **question** function from the **readline-sync** module. You'll use the **question** function to prompt the user for input later in this application.
+## Create the products app
+
+1. In Visual Studio Code, on the **File** menu, select **New Text File**.
+
+1. On the **File** menu, select **Save As**. Save the new file with the name **products.js**.
+
+## Add JavaScript to use Cosmos DB SDK
+
+1. In the editor window, add the following lines to the top of the **products.js** file.
+
+
 
 4. After the **require** statement, add the following **class** definition to the file.
 

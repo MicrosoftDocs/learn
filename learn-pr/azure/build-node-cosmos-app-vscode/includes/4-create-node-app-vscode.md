@@ -56,7 +56,11 @@ To edit the debugger configuration settings, on the **Run** menu, select **Add c
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/index.js"
+            "program": "${workspaceFolder}/index.js",
+            // add to use external terminal
+            "console": "externalTerminal",
+            // add to start with arguments pass in
+            "args": ["abc", "1"],
         }
     ]
 }
