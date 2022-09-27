@@ -1,4 +1,6 @@
-Azure Database for PostgreSQL - Hyperscale (Citus) is now [Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/training/modules/model-data-azure-cosmos-db-postgresql/)!
+Azure Database for PostgreSQL - Hyperscale (Citus) is now [Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/en-us/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/)!
+
+<https://learn.microsoft.com/training/modules/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/>
 
 [Azure Cosmos DB for PostgreSQL](https://docs.microsoft.com/azure/postgresql/hyperscale/overview) is a fully-managed database-as-a-service hosted on Azure that delivers the full functionality of PostgreSQL combined with the ability to distribute data across multiple servers in a cluster. It is a robust database with a wide range of built-in features. However, sometimes additional capabilities are required to solve complex real-world problems. Azure Cosmos DB for PostgreSQL inherits much of its capabilities from the service formally called Azure Database for PostgreSQL - Hyperscale (Citus).
 
