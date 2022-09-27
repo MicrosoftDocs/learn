@@ -165,7 +165,10 @@ The products in this dataset have the following shape:
     node 1-contoso-products-upload-data.js
     ```
 
-1. Copy the container name displayed at the end of the execution in the terminal. In order for the remaining JavaScript files to run successfully, you need to set this name in the `.env` file. 
+1. Copy the container name displayed at the end of the execution in the terminal. In order for the remaining JavaScript files to run successfully, you need to set this name in the `.env` file.
+
+    :::image type="content" source="../media/5-copy-container-name.png" alt-text="Screenshot of the Visual Studio Code terminal with the container name highlighted." loc-scope="vs-code":::
+ 
 1. Past the value into the `.env` file for the **COSMOS_CONTAINER_NAME** property. The container name has a timestamp postpended, such as `Products-1664304175357`. 
 
 ## View products in Azure explorer
@@ -174,5 +177,8 @@ The products in this dataset have the following shape:
 1. Find and expand your subscription node, then your **Azure Cosmos DB** resources node. 
 1. Find and expand your Cosmos DB database and its products container. 
 1. Expand the **Documents** node to see the products the Node.js script added. The node name for each document is the **name** property. 
+1. Select the first product to see the entire JSON. 
+
+    :::image type="content" source="../media/5-view-product-document.png" alt-text="Screenshot of the Visual Studio Code showing a newly added Cosmos DB Core document." loc-scope="vs-code":::
 
 You've now seen how to use Visual Studio Code to create, edit, and run a Node.js application.
