@@ -25,11 +25,11 @@ There are three main functions of the data catalog that contribute to each other
 - Manage and curate your data assets
 - Build a business glossary
 
-As we move through this unit, we'll explore each of these aspects so you can see how you can use the data catalog to understand your data landscape and discover trustworthy data within your organization.
+In this unit we'll explore each of these aspects so you can use the data catalog to understand your data landscape and discover trustworthy data within your organization.
 
 ## Search and browse
 
-Once your data sources have been scanned, the assets will be available to users who have permissions to find them. Your users will no longer need to track down individuals who own data sources, or use tribal knowledge to keep track of valuable information.
+Once your data sources have been scanned, the assets will be available to users who have permissions to find them. Your users will no longer need to track down individuals who own data sources or use team knowledge to keep track of valuable information.
 
 Users can search all available assets through the data catalog using keywords like name, data type, classifications, and glossary terms. And during the search, it also provides more filters that may help users narrow down their search for relevant data. For example, if you're looking for sales receipts that you know are stored in a file format, you can narrow your search to only include file-based repositories like Azure Data Lake Storage Gen2.
 
