@@ -2,7 +2,7 @@ Azure Cosmos DB for PostgreSQL provides a highly scalable distributed database s
 
 ## Scenario: Scaling Woodgrove Bank's contactless payment app
 
-![Screenshot of Woodgrove Bank's logo - an icon of a factory with the words 'Woodgrove Bank' to the right of it.](../media/woodgrove-bank-logo.png)
+:::image type="content" source="../media/woodgrove-bank-logo.png" alt-text="Screenshot of Woodgrove Bank's logo - an icon of a factory with the words 'Woodgrove Bank' to the right of it.":::
 
 Woodgrove Bank has a contactless payment app that works from six feet away, and the data is stored in a single, on-premises PostgreSQL database. Based on a successful trial of the app, Woodgrove Bank would like to release the app to customers across Europe and the United States. As the app needs to scale, the data will need to scale as well. Azure Cosmos DB for PostgreSQL is built to host PostgreSQL databases and support them at scale. The Woodgrove Bank development team is unfamiliar with a distributed environment, and as their tech lead, you have the most experience to lead them in this growth.
 
