@@ -33,7 +33,7 @@ SELECT azure_storage.account_add('{STORAGE_ACCOUNT_NAME}', '{STORAGE_ACCOUNT_ACC
 
 To provide access to Woodgrove Bank's storage account from the database, you need to retrieve its name and access key. You can get this information from the **Access keys** page associated with the storage account in the Azure portal.
 
-![Screenshot of the access keys option highlighted in the left-hand menu of the Storage account page.](../media/storage-account-access-keys.png)
+:::image type="content" source="../media/storage-account-access-keys.png" alt-text="Screenshot of the access keys option highlighted in the left-hand menu of the Storage account page.":::
 
 Provide the storage account name when running the following query and the access key will grant the `pg_azure_storage` extension access to the account:
 

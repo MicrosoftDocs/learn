@@ -11,7 +11,7 @@ To complete this exercise, you must create an Azure Storage account, retrieve it
 
 2. Select **Create a resource**, **Storage**, and **Storage account**. You can also use the **Search** functionality to find the resource.
 
-    ![Screenshot of the Azure portal's create a resource screen, Storage and Storage account are highlighted.](../media/create-resource-storage-account.png)
+    :::image type="content" source="../media/create-resource-storage-account.png" alt-text="Screenshot of the Azure portal's create a resource screen, Storage and Storage account are highlighted.":::
 
 3. On the **Basics** tab, enter the following information:
 
@@ -26,7 +26,7 @@ To complete this exercise, you must create an Azure Storage account, retrieve it
     | Performance          | Select **Standard**. |
     | Redundancy           | Select **Locally-redundant storage (LRS)**. |
 
-    ![Screenshot of the Basics tab of the Create a storage account dialog, and the fields are populated with the values specified in the exercise.](../media/create-storage-account-basics-tab.png)
+    :::image type="content" source="../media/create-storage-account-basics-tab.png" alt-text="Screenshot of the Basics tab of the Create a storage account dialog, and the fields are populated with the values specified in the exercise.":::
 
 4. The default settings will be used for the remaining tabs of the storage account configuration, so select the **Review** button.
 
@@ -40,21 +40,21 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
 2. In the left-hand navigation menu, select **Containers** under **Data storage**, and then select **+ Container** on the toolbar.
 
-    ![Screenshot of the Storage account page where Containers is selected and highlighted under Data storage in the left-hand navigation menu, and + Container is highlighted on the Containers page.](../media/storage-account-add-container.png)
+    :::image type="content" source="../media/storage-account-add-container.png" alt-text="Screenshot of the Storage account page where Containers is selected and highlighted under Data storage in the left-hand navigation menu, and + Container is highlighted on the Containers page.":::
 
 3. In the **New container** dialog, enter `historical-data` in the **Name** field and leave **Private (no anonymous access)** selected for the **Public access level** setting, then select **Create**.
 
-    ![Screenshot of the New container dialog, with the name set to historical-data and the public access level set to private (no anonymous access).](../media/storage-account-new-container.png)
+    :::image type="content" source="../media/storage-account-new-container.png" alt-text="Screenshot of the New container dialog, with the name set to historical-data and the public access level set to private (no anonymous access).":::
 
     By setting the container's access level to **Private (no anonymous access)**, you're preventing public access to the container and its contents. Below, you'll provide the `pg_azure_storage` extension with the account name and access key, allowing it to access the files securely.
 
 4. You'll need the name and key associated with your storage account to upload the data files using the Azure CLI. In the left-hand navigation menu, select **Access keys** under **Security + networking**.
 
-    ![Screenshot of Access Keys which is selected and highlighted in the left-hand menu of the Storage account page.](../media/storage-account-access-keys.png)
+    :::image type="content" source="../media/storage-account-access-keys.png" alt-text="Screenshot of Access Keys which is selected and highlighted in the left-hand menu of the Storage account page.":::
 
 5. With the **Access keys** page open, select the **Cloud Shell** icon in the Azure portal toolbar to open a new Cloud Shell pane at the bottom of your browser window.
 
-    ![Screenshot of the Cloud Shell icon in the Azure portal toolbar and a Cloud Shell window is open at the bottom of the browser window.](../media/portal-cloud-shell.png)
+    :::image type="content" source="../media/portal-cloud-shell.png" alt-text="Screenshot of the Cloud Shell icon in the Azure portal toolbar and a Cloud Shell window is open at the bottom of the browser window.":::
 
 6. At the Azure Cloud Shell prompt, execute the following `curl` commands to download the files provided by Woodgrove Bank.
 
@@ -69,7 +69,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
     Copy your storage account name by selecting the **Copy to clipboard** button next to the storage account name on the Access keys page above your Cloud Shell:
 
-    ![Screenshot of the Copy to clipboard button next to the Storage account name value, and the ACCOUNT_NAME variable declaration line is highlighted in the Cloud Shell.](../media/storage-account-name.png)
+    :::image type="content" source="../media/storage-account-name.png" alt-text="Screenshot of the Copy to clipboard button next to the Storage account name value, and the ACCOUNT_NAME variable declaration line is highlighted in the Cloud Shell.":::
 
     Now, execute the following command to create a variable for your storage account name, replacing the `{your_storage_account_name}` token with your storage account name.
 
@@ -79,7 +79,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
     Next, select the **Show** button next to the **Key** for **key1** and then select the **Copy to clipboard** button next to the key's value.
 
-    ![Screenshot of the Copy to clipboard button next to the key1 Key value, and the ACCOUNT_KEY variable declaration line is highlighted in the Cloud Shell.](../media/storage-account-key.png)
+    :::image type="content" source="../media/storage-account-key.png" alt-text="Screenshot of the Copy to clipboard button next to the key1 Key value, and the ACCOUNT_KEY variable declaration line is highlighted in the Cloud Shell.":::
 
     Then, run the following, replacing the `{your_storage_account_key}` token with the key value you copied.
 
@@ -99,7 +99,7 @@ Woodgrove Bank has provided you with their historical data files in CSV format. 
 
 9. To verify the files uploaded successfully, you can navigate to the **Containers** page of your storage account by selecting **Containers** from the left-hand navigation menu. Select the `historical-data` container from the list of containers and observe the container now contains files named `events.csv` and `users.csv`.
 
-    ![Screenshot of the events.csv and users.csv blobs  highlighted in the list of files in the historical-data container.](../media/storage-account-container-blobs.png)
+    :::image type="content" source="../media/storage-account-container-blobs.png" alt-text="Screenshot of the events.csv and users.csv blobs  highlighted in the list of files in the historical-data container.":::
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
@@ -109,7 +109,7 @@ With the files now securely stored in blob storage, it's time to set up the `pg_
 
 2. From the database's left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-postgresql-connection-strings-psql.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
 3. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
@@ -139,7 +139,7 @@ The next step is to grant access to your storage account after installing the `p
 
 2. In the left-hand navigation menu, select **Access keys** under **Security + networking**.
 
-    ![Screenshot of Access keys, which is selected and highlighted in the left-hand menu of the Storage account page.](../media/storage-account-access-keys.png)
+    :::image type="content" source="../media/storage-account-access-keys.png" alt-text="Screenshot of Access keys, which is selected and highlighted in the left-hand menu of the Storage account page.":::
 
 3. Execute the query below to give the `pg_azure_storage` extension access to your storage account, replacing the `{storage_account_name}` and `{storage_account_key}` tokens with your values, which you can copy from the **Access keys** page of your storage account.
 
@@ -189,13 +189,13 @@ Before attempting to ingest data from any file, you must understand the structur
 
 1. In the [Azure portal](https://portal.azure.com/), navigate to your Storage account resource, select **Storage browser** from the left-hand navigation menu, and then select **Blob containers** on the Storage browser page.
 
-    ![The Storage browser menu item is selected and highlighted on the Storage account page. On the Storage browser window, Blob containers is highlighted in the navigation tree.](../media/storage-browser-blob-containers.png)
+    :::image type="content" source="../media/storage-browser-blob-containers.png" alt-text="Screnshot of the Storage browser menu item highlighted on the Storage account page. On the Storage browser window, Blob containers is highlighted in the navigation tree.":::
 
 2. From the list of containers, select **historical-data**`.
 
 3. Select the ellipsis (...) button to the right of the `users.csv` file and select **Download** from the context menu.
 
-    ![Screenshot of the users.csv file in the historical-data container, and the ellipsis button is highlighted. In the context menu for the file, Download is highlighted.](../media/storage-browser-users-download.png)
+    :::image type="content" source="../media/storage-browser-users-download.png" alt-text="Screenshot of the users.csv file in the historical-data container, and the ellipsis button is highlighted. In the context menu for the file, Download is highlighted.":::
 
 4. After the download completes, open the file using Microsoft Excel or another text editor that can open CSV files and observe the structure of the data contained within the file, which resembles the following example of the first 10 rows of the `users.csv` file.
 
