@@ -16098,7 +16098,7 @@
     {
       "source_path": "learn-pr/azure/intro-to-postgres/3-what-is-hyperscale.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-postgres/3-what-is-azure-cosmos-db-postgresql/",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/5-integrate-azure-key-vault-azure-pipelines.md",
