@@ -30,8 +30,8 @@ There are some things to note about adjusting compute and storage for worker nod
 
 As Woodgrove Bank expands to Europe and the number of users is expected to increase, the database needs to expand to support this growth. The distributed PostgreSQL cluster scales horizontally by adding worker nodes. When worker nodes are added, the data doesn't automatically move. The data will need to be redistributed.
 
-:::image type="complex" source="../media/add-worker-node.png" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table.":::
-    Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains 2 worker nodes, each with distributed shards and reference tables. There are arrows coming from the coordinator and pointed at each of the worker nodes. There is a third worker node being added, denoted by a plus sign between it and the second worker node. There are no tables on the additional worker node.
+:::image type="complex" source="../media/add-worker-node.png" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables, a local table, and two worker nodes.":::
+    Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains two worker nodes, each with distributed shards and reference tables. There are arrows coming from the coordinator and pointed at each of the worker nodes. There is a third worker node being added, denoted by a plus sign between it and the second worker node. There are no tables on the additional worker node.
 :::image-end:::
 
 If you want to confirm that the data hasn't been distributed to the new worker node, try the following SQL query. This query checks shard placement and lists nodes that don't appear in the shard placement list.
@@ -93,8 +93,8 @@ Once the shards are balanced, the shard balancer will tell you that rebalancing 
 
 The new shards will have the reference and distributed tables as part of rebalancing.
 
-:::image type="complex" source="../media/3-worker-nodes-balanced.png" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table.":::
-    Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains 3 worker nodes, each with distributed shards and reference tables. There are arrows coming from the coordinator and pointed at each of the worker nodes.
+:::image type="complex" source="../media/3-worker-nodes-balanced.png" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables, a local table, and three worker nodes.":::
+    Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains three worker nodes, each with distributed shards and reference tables. There are arrows coming from the coordinator and pointed at each of the worker nodes.
 :::image-end:::
 
 Let's scale Woodgrove Bank's application for the growth.

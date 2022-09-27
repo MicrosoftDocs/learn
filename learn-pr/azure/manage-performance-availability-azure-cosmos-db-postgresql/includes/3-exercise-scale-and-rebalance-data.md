@@ -146,8 +146,8 @@ As data is loaded to empty distributed tables, the data is distributed to the wo
 1. Navigate to the Azure Cosmos DB for PostgreSQL resource in the Azure portal.
 1. From the navigation menu, select **Shard rebalancer**.
 
-    :::image type="complex" source="../media/shard-rebalancer-rebalancing-not-recommended.png" alt-text="Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time.":::
-        Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer option in the Server group management section of the navigation menu is highlighted. There is 1 coordinator node and 2 worker nodes.
+    :::image type="complex" source="../media/shard-rebalancer-rebalancing-not-recommended.png" alt-text="Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time with two worker nodes.":::
+        Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer option in the Server group management section of the navigation menu is highlighted. There is one coordinator node and two worker nodes.
     :::image-end:::
 
 ## Add a worker node
@@ -217,8 +217,8 @@ NOTICE:  Moving shard 102011 from private-w1.learn-cosmosdb-postgresql.postgres.
 
 Refresh the Shard rebalancer in the portal. Notice that rebalancing is no longer recommended.
 
-:::image type="complex" source="../media/shard-rebalancer-rebalancing-not-recommended-3-nodes.png" alt-text="Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time.":::
-    Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer shows 1 coordinator node and 3 worker nodes.
+:::image type="complex" source="../media/shard-rebalancer-rebalancing-not-recommended-3-nodes.png" alt-text="Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time with three worker nodes.":::
+    Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing is not recommended at this time. The Shard rebalancer shows one coordinator node and three worker nodes.
 :::image-end:::
 
 While this exercise shows how scaling and rebalancing works with one table, this pattern applies to each distributed and reference table. Rebalancing will balance data across all of the nodes in a cluster.
