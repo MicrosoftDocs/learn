@@ -9,23 +9,23 @@ In the previous exercise, you loaded data into two distributed tables and one re
 
 1. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-postgresql-connection-strings-psql.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
 1. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
 1. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    ![Screenshot of the Cloud Shell icon on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot of the Cloud Shell icon on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.":::
 
     The Cloud Shell will open as an embedded panel at the bottom of your browser window.
 
 1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
-    ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.":::
 
 1. If you have never opened Cloud Shell before, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
 
-    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
 
 1. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following sample command:
 

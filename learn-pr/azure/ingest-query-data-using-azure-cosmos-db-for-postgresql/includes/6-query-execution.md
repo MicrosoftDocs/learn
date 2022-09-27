@@ -1,6 +1,6 @@
 Before optimizing query performance for Woodgrove Bank, you must understand how distributed queries are run in Azure Cosmos DB for PostgreSQL. You must also understand the server parameters you can use to tune query execution. Every cluster consists of a single coordinator node and multiple worker nodes. This architecture enables compute, memory, and storage to scale across numerous PostgreSQL servers in the cloud but also adds complexity to query execution.
 
-![Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how additional nodes can be added to scale out.](../media/distributed-database.png)
+:::image type="content" source="../media/distributed-database.png" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how additional nodes can be added to scale out.":::
 
 The coordinator uses a query processing pipeline consisting of a distributed query planner and a distributed query executor. For each query issued to the cluster, the coordinator consults the metadata tables to build an execution plan and then passes that plan to the executor for execution.
 
@@ -14,7 +14,7 @@ Once the execution planner has identified the correct shard or shards, it rewrit
 
 The planner breaks the query into a coordinator query, which runs on the coordinator, and worker query fragments, which run on individual shards. Query fragments are assigned to workers to allow their resources to be used efficiently.
 
-![Diagram of a query that is taken by the coordinator node and rewritten into query fragments, which modify the table name in the original query to add an underscore followed by the shard ID. The query fragments are then sent to the worker nodes for execution.](../media/query-fragments.png)
+:::image type="content" source="../media/query-fragments.png" alt-text="Diagram of a query that is taken by the coordinator node and rewritten into query fragments, which modify the table name in the original query to add an underscore followed by the shard ID. The query fragments are then sent to the worker nodes for execution.":::
 
 The final step is for the coordinator to pass the distributed query plan on to the distributed executor for execution.
 
@@ -24,7 +24,7 @@ Azure Cosmos DB for PostgreSQL uses a distributed query executor to split up reg
 
 The distributed query executor is optimized for getting fast responses to queries involving filters, aggregations, and colocated joins and running single-tenant queries with full SQL coverage. Executing multi-shard queries requires balancing the gains from parallelism with the overhead of managing database connections. The query executor creates a connection pool for each session, opens one connection per shard to the workers as needed, and sends all fragment queries to them. It then fetches the results from each fragment query, merges them, and sends the final results back to the user.
 
-![Diagram of the query execution flow in Azure Cosmos DB for PostgreSQL. Query sessions are fragmented by the coordinator node and added to a task queue. Query fragments are then sent to session connection pools for execution on worker nodes.](../media/executor-overview.png)
+:::image type="content" source="../media/executor-overview.png" alt-text="Diagram of the query execution flow in Azure Cosmos DB for PostgreSQL. Query sessions are fragmented by the coordinator node and added to a task queue. Query fragments are then sent to session connection pools for execution on worker nodes.":::
 
 ## Use EXPLAIN to understand query execution
 
@@ -134,7 +134,7 @@ To learn more about how you can use the `EXPLAIN` statement to view queries with
 
 Various server parameters affect the behavior of your database. You can use these parameters to tune your cluster to achieve maximum performance. You can manipulate the values of server parameters using SQL statements or in the Azure portal. Under the **Settings** category, choose **Worker node parameters** or **Coordinator node parameters**. These pages allow you to set parameters for all worker nodes or just for the coordinator node.
 
-![Screenshot of the server parameters page in the Azure portal.](../media/coordinator-node-params.png)
+:::image type="content" source="../media/coordinator-node-params.png" alt-text="Screenshot of the server parameters page in the Azure portal.":::
 
 You can find detailed information about all the available server parameters in the [server parameters documentation](/azure/postgresql/hyperscale/reference-parameters). The [Azure Cosmos DB for PostgreSQL API documentation](/azure/postgresql/hyperscale/reference-overview#server-parameters) also provides logical groupings of server parameters by function.
 
@@ -143,7 +143,7 @@ The first step in the tuning process is to run the `EXPLAIN` command from the co
 > [!NOTE]
 > To connect directly to worker nodes requires the **Enable access to the worker nodes** checkbox to be selected on the **Networking** page of your Azure Cosmos DB for PostgreSQL resource in the Azure portal.
 >
-> ![Screenshot of the Enable access to the worker nodes option, and the setting is highlighted on the Networking page of the Azure Cosmos DB for PostgreSQL resource in the Azure portal. Networking is highlighted and selected in the left-hand navigation menu.](../media/enable-access-worker-nodes.png)
+> :::image type="content" source="../media/enable-access-worker-nodes.png" alt-text="Screenshot of the Enable access to the worker nodes option, and the setting is highlighted on the Networking page of the Azure Cosmos DB for PostgreSQL resource in the Azure portal. Networking is highlighted and selected in the left-hand navigation menu.":::
 
 Tuning server parameters requires experimentation and often requires multiple attempts to achieve acceptable performance. As you make changes, run `EXPLAIN` again from the coordinator, or directly on the worker to evaluate the effect of the modification. As a general recommendation, it's best to iteratively tune your database using only a tiny portion of your data. Once you've adjusted a worker to achieve the desired performance, you must manually apply those changes to the other workers in the cluster.
 

@@ -128,7 +128,7 @@ To provide a code-free method of assessing data skew to Woodgrove Bank, you can 
 
 If data is skewed between workers: You'll see the message,**Rebalancing is recommended** and a list of the size of each node. Otherwise, you'll see the message, **Rebalancing is not recommended at this time**.
 
-![Screenshot of the Shard rebalancer menu item, and the Shard rebalancer page for the database is displayed in the Azure portal.](../media/shard-rebalancer.png)
+:::image type="content" source="../media/shard-rebalancer.png" alt-text="Screenshot of the Shard rebalancer menu item, and the Shard rebalancer page for the database is displayed in the Azure portal.":::
 
 If data skew is found, you can start the Shard rebalancer by connecting to the coordinator node of the cluster and running the [`rebalance_table_shards`](/azure/postgresql/hyperscale/reference-functions#rebalance_table_shards) SQL function on distributed tables.
 

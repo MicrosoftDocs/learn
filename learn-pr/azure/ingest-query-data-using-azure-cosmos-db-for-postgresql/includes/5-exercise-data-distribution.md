@@ -9,23 +9,23 @@ In this exercise, you use the Azure portal and metadata tables on the coordinato
 
 1. From the left-hand navigation menu, select **Connection strings** under **Settings** and copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-postgresql-connection-strings-psql.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
 1. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
 
 1. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
-    ![Screenshot of the Cloud Shell icon on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot of the Cloud Shell icon on the Azure portal toolbar and a Cloud Shell dialog is open at the bottom of the browser window.":::
 
     The Cloud Shell will open as an embedded panel at the bottom of your browser window.
 
 1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
-    ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.":::
 
 1. If you have never used Cloud Shell before, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
 
-    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
 
 1. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following command:
 
@@ -39,7 +39,7 @@ While provisioning the database in Unit 3 - Exercise - Load data into distribute
 
 1. First, you can use the Azure portal. In the Azure portal panel of your browser window, select **Overview** from the left-hand navigation menu.
 
-    ![Screenshot of the overview is selected and highlighted in the left-hand navigation menu of the Azure portal. On the Overview page, the sizes of the coordinator and worker nodes are highlighted in the Essentials area, and the Nodes tab, where additional details about each node are displayed, is highlighted.](../media/cluster-nodes-azure-portal.png)
+    :::image type="content" source="../media/cluster-nodes-azure-portal.png" alt-text="Screenshot of the overview is selected and highlighted in the left-hand navigation menu of the Azure portal. On the Overview page, the sizes of the coordinator and worker nodes are highlighted in the Essentials area, and the Nodes tab, where additional details about each node are displayed, is highlighted.":::
 
     The Azure portal provides high-level details about nodes in the cluster. The **Essentials** area of the **Overview** page provides details about the sizes of the coordinator and worker nodes. Selecting either of these panes will take you to the **Scale** page, where you can change the configuration of your cluster.
 
@@ -106,7 +106,7 @@ While provisioning the database in Unit 3 - Exercise - Load data into distribute
 
     Querying the worker node metadata table provides you with much more information about cluster nodes than you can see in the Azure portal. Node names and port numbers can be used for connecting directly to nodes, which is a common practice when performing query optimization. Alternatively, you can retrieve connection strings for each node in your cluster from the Azure Cosmos DB for PostgreSQL resource's **Connection strings** page in the Azure portal. On the **Connection strings** page, you can select the desired node from the **Show connection strings for** drop-down list, and then copy the appropriate connection string, which you can then use to directly connect to individual nodes.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB for PostgreSQL resource is selected in the Azure portal. On the Connection strings page, the Show connection strings for drop down list is highlighted and a worked node is selected and highlighted. The psql connection string's copy to clipboard button is highlighted.](../media/cosmos-db-postgresql-connection-strings.png)
+    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB for PostgreSQL resource is selected in the Azure portal. On the Connection strings page, the Show connection strings for drop down list is highlighted and a worked node is selected and highlighted. The psql connection string's copy to clipboard button is highlighted.":::
 
 ## Inspect table distribution
 
@@ -206,7 +206,7 @@ Now, look at how the event data was distributed across shards by querying the `c
 
 1. To determine whether these differences are skewed enough to require running the Shard rebalancer, navigate to your Azure Cosmos DB for PostgreSQL instance in the [Azure portal](https://portal.azure.com/), and select **Shard rebalancer** from the left-hand navigation menu.
 
-    ![Screenshot of the Shard rebalancer menu item, and the Shard rebalancer page for the database is displayed in the Azure portal.](../media/shard-rebalancer.png)
+    :::image type="content" source="../media/shard-rebalancer.png" alt-text="Screenshot of the Shard rebalancer menu item, and the Shard rebalancer page for the database is displayed in the Azure portal.":::
 
     Based on the **Rebalancing is not recommended at this time** message displayed, the minor differences in shard data sizes aren't yet something that requires rebalancing the shards in your cluster.
 
