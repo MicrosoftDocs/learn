@@ -42,6 +42,8 @@ If the custom domain name resolves to the endpoint hostname, select **Add**. Now
 
 Azure CDN can improve performance by compressing the files before they're delivered. Files are then decompressed by the receiving browser. How this activity applies depends on whether the file is originally compressed on the origin server or not.
 
+:::image type="content" source="../media/5-compression.png" alt-text="Screenshot of the compression settings page for a CDN profile.":::
+
 Azure CDN passes along the compressed files unaltered if you enable compression on files hosted on your origin server. Azure CDN dynamically compresses uncompressed files on the origin server that is of a type that can be compressed. It then stores the compressed files on the POP. This process improves the client experience and site performance.
 
 Compression in Azure CDN Standard from Microsoft is on by default. You can't configure additional file types to compress or delete existing file types. However, you can add and modify file types to compress in the Akamai Standard and Verizon profiles.
@@ -60,6 +62,8 @@ With the Azure CDN Standard for Microsoft Tier, caching rules are as simple as t
 - Cache every unique URL. Every time a requesting client generates a unique URL, that URL is passed back to the origin server and the response cached with its own TTL. This final method is inefficient where each request is a unique URL, as the cache-hit ratio becomes low.
 
 To change these settings, in the Endpoint pane, select **Caching rules** and then select the caching option that you want to apply to the endpoint and select **Save**.
+
+:::image type="content" source="../media/5-cache-behavior.png" alt-text="Screenshot of the cache behavior page from CDN profile.":::
 
 ## Caching and time to live
 
@@ -87,7 +91,7 @@ You can purge content in several ways.
 - Specify a file, by including the path to that file or all assets on the selected endpoint by checking the **Purge All** checkbox.
 - Based on wildcards (*) or using the root (/).
 
-![Purge assets.](../media/5-purge-cache.png)
+:::image type="content" source="../media/5-purge-cache.png" alt-text="Screenshot of the purge cache page from CDN profile.":::
 
 When you've specified what content you want to purge, select the Purge button.
 
@@ -99,7 +103,7 @@ Geo-filtering enables you to allow or block content in specific countries, based
 
 To configure geo-filtering, in the properties of the respective endpoint, select Geo-filtering. On the Geo-filtering panel, select either allow or block, then in the Country codes list, select which countries you want to allow or block.
 
-![Geo-filtering.](../media/5-geo-filtering.png)
+:::image type="content" source="../media/5-geo-filtering.png" alt-text="Screenshot of the geo filtering page for a CDN profile.":::
 
 The **Allow** setting is more restrictive than Block. Allow allows access only for the selected countries. The logic for Block is to allow access from all countries, except for those countries blocked.
 
