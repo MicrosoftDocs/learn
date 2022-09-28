@@ -1,3 +1,4 @@
+In this unit, you'll create and run scripts which use SQL keywords such as LIKE, JOIN, and WHERE to find data with the Cosmos SDK.
 
 ## Create the script to find products in the container
 

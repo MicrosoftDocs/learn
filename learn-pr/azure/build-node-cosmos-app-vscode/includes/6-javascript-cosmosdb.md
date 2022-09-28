@@ -1,4 +1,4 @@
-In this unit, you'll learn how to use the JavaScript API for Azure Cosmos DB to query and upsert documents and containers.
+In this unit, you'll learn how to use SQL keywords such as LIKE, JOIN, and WHERE to data with the Cosmos SDK.
 
 ## Query for documents by name using LIKE in a container
 
@@ -162,3 +162,28 @@ Looking for name=%Blue%, location=Dallas
 5: 5308BAE7-B0CB-4883-9A93-192CB10DC94F: 'Touring-3000 Blue, 44': current inventory = 97
 ```
 
+## Upsert to insert or update data
+
+Using an upsert helps you ensure your data is add if it doesn't exist, and updated if the data does exist. 
+
+The following JavaScript uses a single function and the use of container.items().upsert(). 
+
+```javascript
+// Either insert or update item
+async function upsert(item) {
+
+  // Show request item
+  console.log("Request");
+  console.log(item);
+
+  // Process request
+  const result = await container.items.upsert(item);
+
+  // Show response item
+  console.log("\nResponse");
+  console.log(`activityId: ${result.activityId}, statusCode: ${result.statusCode}`);
+  console.log(result.resource);
+}
+```
+
+The statusCode property with a `200` value indicates the upsert was successful.
