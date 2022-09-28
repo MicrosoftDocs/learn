@@ -5,7 +5,7 @@ Performing a migration of on-premises servers to Azure requires planning and car
 An **Azure resource** is a manageable item in Azure. Just like a physical computer in your datacenter, VMs have several elements that are needed to do their job:
 
 - The VM itself
-- s for storage
+- Disks for storage
 - Virtual network
 - Network interface to communicate on the network
 - Network Security Group (NSG) to secure the network traffic
