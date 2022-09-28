@@ -59,7 +59,7 @@ Now that we've made an edit to an individual asset, let's add some information a
     - **Remove from bulk edit** - which you can use to deselect an asset from bulk editing
     - **View selected** - which you can use to see a full list of all your selected assets.
 
-    :::image type="content" source="../media/manage-assets-exercise/new-options.png" alt-text="Screenshot of the asset page.":::
+    :::image type="complex" source="../media/manage-assets-exercise/new-options.png" alt-text="Screenshot of the asset page.":::
         "Asset page with the Select for Bulk button has now changed to 'Remove from bulk' and the view selected button highlighted at the bottom."
     :::image-end:::
 
@@ -125,7 +125,7 @@ Now that we've made an edit to an individual asset, let's add some information a
 
 1. Your asset will now have a **Certified** label visible to all users.
 
-    :::image type="content" source="../media/manage-assets-exercise/certified-inline.png" alt-text="Screenshot of the asset page, now showing a 'certified' tag next to the name of the asset." lightbox="../media/manage-assets-exercise/certified.png":::
+    :::image type="content" source="../media/manage-assets-exercise/certified-inline.png" alt-text="Screenshot of the asset page, now showing a certified tag next to the name of the asset." lightbox="../media/manage-assets-exercise/certified.png":::
 
 ## Moving an asset
 
