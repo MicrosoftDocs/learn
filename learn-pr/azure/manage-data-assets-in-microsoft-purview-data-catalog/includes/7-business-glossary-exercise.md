@@ -64,7 +64,7 @@ A full sample CSV will be provided in the steps below.
 
 1. Select the term template you want to use. For now, let's choose **System default**.
 
-    :::image type="content" source="../media/business-glossary-exercise/select-default-term-template-for-bulk-inline.png" alt-text="Screenshot of the import terms page with the **Continue** button highlighted at the bottom." lightbox="../media/business-glossary-exercise/select-default-term-template-for-bulk.png":::
+    :::image type="content" source="../media/business-glossary-exercise/select-default-term-template-for-bulk-inline.png" alt-text="Screenshot of the import terms page with the Continue button highlighted at the bottom." lightbox="../media/business-glossary-exercise/select-default-term-template-for-bulk.png":::
 
 1. There's a sample .csv available for you to download and edit. Download the CSV and use it as a template to complete your terms.
 
