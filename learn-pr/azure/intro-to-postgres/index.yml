@@ -2,7 +2,7 @@
 uid: learn.create-azure-db-for-postgresql
 metadata:
   title: Introduction to PostgreSQL on Azure
-  description: Azure Database for PostgreSQL and Azure Cosmos DB for PostgreSQL are two options to host PostgreSQL workloads on Azure no matter how big or small.
+  description: Build cloud-native apps with Azure Database for PostgreSQL for the most compatibility and Azure Cosmos DB for PostgreSQL for highly-scalable/elastic workloads.
   ms.date: 10/23/2020
   author: tomreidnz
   ms.author: jasdeb
