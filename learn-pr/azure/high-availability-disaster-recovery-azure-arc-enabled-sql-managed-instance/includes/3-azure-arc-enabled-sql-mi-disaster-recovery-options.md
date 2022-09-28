@@ -10,9 +10,9 @@ Point-in-time restore (PITR) allows the restoration of a database to a point in 
 
 The example above shows the initial full backup, some of the transaction log backups taken every 5 minutes over a 12-hour period before the first differential backup, followed by the remaining transaction log backups taken every 5 minutes up to the point in time an issue is experienced.  
 
-The PITR process allows the recovery to any point in time that you choose within the set of backups held locally inside the configured retention period. You can complete this process using either the [`az sql midb-arc restore`](https://docs.microsoft.com/cli/azure/sql/midb-arc?view=azure-cli-latest) CLI command or Azure Data Studio.
+The PITR process allows the recovery to any point in time that you choose within the set of backups held locally inside the configured retention period. You can complete this process using either the [`az sql midb-arc restore`](/cli/azure/sql/midb-arc?view=azure-cli-latest&preserve-view=true) CLI command or Azure Data Studio.
 
-The retention period for the automated Azure SQL MI backups is configurable, allowing you to determine the duration you need to retain the automated backups. The retention period is configurable using this CLI command [`az sql mi-arc update`](https://docs.microsoft.com/cli/azure/sql/mi-arc?view=azure-cli-latest#az-sql-mi-arc-update) with the parameter --retention-days with the following values:
+The retention period for the automated Azure SQL MI backups is configurable, allowing you to determine the duration you need to retain the automated backups. The retention period is configurable using this CLI command [`az sql mi-arc update`](/cli/azure/sql/mi-arc?view=azure-cli-latest&preserve-view=true#az-sql-mi-arc-update) with the parameter --retention-days with the following values:
 
 -   0; disable automatic backups.
 -   1-35 days (7 is the default)
@@ -34,6 +34,6 @@ For example, if the deployment has 3 replicas in site 1, the Kubernetes cluster 
 
 Capacity resource planning is required to ensure both environments have duplicate capacity configured and available.
 
-The failover process from the primary site to the secondary site is achieved via a **[manual failover](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-disaster-recovery#manual-failover-from-primary-to-secondary-instance)** using the `az sql instance-failover-group-arc update` CLI command. This process allows for a gracious failover from the primary site to a secondary site ensuring all remaining transactions from the primary site are replicated and applied to the secondary site.
+The failover process from the primary site to the secondary site is achieved via a **[manual failover](/azure/azure-arc/data/managed-instance-disaster-recovery#manual-failover-from-primary-to-secondary-instance)** using the `az sql instance-failover-group-arc update` CLI command. This process allows for a gracious failover from the primary site to a secondary site ensuring all remaining transactions from the primary site are replicated and applied to the secondary site.
 
-If a gracious failover is not an option due to the primary site Arc-enabled SQL MI not being available, a **[forced failover](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-disaster-recovery#forced-failover)** is required, using the same CLI command with the `force-primary-allow-data-loss` command option. This has the potential for some data loss as the primary site is unavailable at the time of the failover.
+If a gracious failover is not an option due to the primary site Arc-enabled SQL MI not being available, a **[forced failover](/azure/azure-arc/data/managed-instance-disaster-recovery#forced-failover)** is required, using the same CLI command with the `force-primary-allow-data-loss` command option. This has the potential for some data loss as the primary site is unavailable at the time of the failover.

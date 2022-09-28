@@ -16,7 +16,7 @@ In cases where `load balancer` is the service type used in the Arc-enabled SQL M
 
 ## Business Critical Tier deployment
 
-In addition to what is natively provided by Kubernetes orchestration, Arc-enabled SQL MI utilizes [Contained Availability Groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/contained-availability-groups-overview?view=sql-server-ver16) to provide higher levels of availability. In this deployment tier, you can deploy your Arc-enabled SQL MI with 2 or 3 replicas.
+In addition to what is natively provided by Kubernetes orchestration, Arc-enabled SQL MI utilizes [Contained Availability Groups](/sql/database-engine/availability-groups/windows/contained-availability-groups-overview) to provide higher levels of availability. In this deployment tier, you can deploy your Arc-enabled SQL MI with 2 or 3 replicas.
 
 With two or more replicas deployed, one replica is automatically configured as a `readablesecondary` by default. A readable secondary allows for splitting workloads and using the provisioned resources appropriately. You can direct your read-only workloads to the readable secondary, thus allowing for your critical read/write workloads not to be impacted by reduced resources on the primary replica.
 
@@ -31,7 +31,7 @@ When deploying this tier, the Contained Availability Group is created automatica
 ## Azure Failover Groups
 
 Azure Failover Groups provide the ability to architect and configure duplicate custom resources in multiple data center locations. Utilizing Azure Failover Groups delivers the ability to mitigate against site-level issues and failures to allow for business continuity in the secondary site.
-Arc-enabled SQL MI utilizes [Distributed Availability Groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/distributed-availability-groups?view=sql-server-ver16) to provide disaster recovery from one site to another regardless of the tier implemented.
+Arc-enabled SQL MI utilizes [Distributed Availability Groups](/sql/database-engine/availability-groups/windows/distributed-availability-groups) to provide disaster recovery from one site to another regardless of the tier implemented.
 
 Azure Failover Groups Asynchronously transfers data from the primary site Arc-enabled SQL MI primary replica to the secondary site Arc-enabled SQL MI primary replica. The same as the primary site Arc-enabled SQL MI, the secondary site Arc-enabled SQL MI synchronously transfers data from the primary replica to the configured secondary replicas.
 

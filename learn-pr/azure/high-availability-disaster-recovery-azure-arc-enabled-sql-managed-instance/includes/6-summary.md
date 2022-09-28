@@ -10,6 +10,6 @@ In this module, you have:
 
 ## Learn more
 
-- [Contained Availability Groups](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-high-availability#contained-availability-groups)
-- [Failover Scenarios](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-high-availability#failover-scenarios)
-- [Distributed Availability Groups](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/distributed-availability-groups?view=sql-server-ver16)
+- [Contained Availability Groups](/azure/azure-arc/data/managed-instance-high-availability#contained-availability-groups)
+- [Failover Scenarios](/azure/azure-arc/data/managed-instance-high-availability#failover-scenarios)
+- [Distributed Availability Groups](/sql/database-engine/availability-groups/windows/distributed-availability-groups)

@@ -141,7 +141,7 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
   kubectl get pods -n $Env:MyNamespace
   ```
 
-![Image of SQL MI General Purpose Tier HA Pods 1](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-pods-1.png)
+![Image of SQL MI General Purpose Tier HA Pods kubectl results for this namespace.](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-pods-1.png)
 
 7. Simulate a pod failure by executing the following command:
 
@@ -342,7 +342,7 @@ For this exercise, we will be using the Automated backups already created for th
 10. Enter a point in time between the earliest point in time & the latest point in time to which you want to restore.
 11. Select restore.
 
-![Image of Arc-enabled SQL MI PITR restore GUI restore](../media/Arc-enabled-dataservices-module-4-exercise3-manage-sqlmi-pitr.3.png)
+![Configure point in time restore for Azure Data Studio.](../media/Arc-enabled-dataservices-module-4-exercise3-manage-sqlmi-pitr.3.png)
 
 12. To monitor the progress of the PITR execute the following command in the Azure Data Studio Terminal Window:
     ```powershell
@@ -542,7 +542,7 @@ Make sure to complete the following before proceeding:
 
 15. Open SQL Server Management Studio and connect to the primary external endpoint for the primary site instance. Expand the Always On High Availability Tree. You should now see the newly created Azure Failover Group.
 
-![Image of Arc-enabled SQL MI Primary Site Distributed AG](../media/Arc-enabled-dataservices-module-4-exercise5-primary-site-dag.png)
+![Image of Arc-enabled SQL MI Primary Site Distributed AG - SQL Server Management Studio](../media/Arc-enabled-dataservices-module-4-exercise5-primary-site-dag.png)
 
 16. In SQL Server Management Studio, connect to the primary external endpoint for the secondary site instance. Expand the Always On High Availability Tree. You should now see the newly created Azure Failover Group.
 
