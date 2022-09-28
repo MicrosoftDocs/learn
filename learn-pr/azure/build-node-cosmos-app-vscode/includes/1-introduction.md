@@ -1,21 +1,32 @@
-Node.js is a popular platform for building JavaScript applications that run outside the confines of a web browser. Visual Studio Code provides an development environment you can use to create and document applications written in a variety of languages, including JavaScript. Many Visual Studio Code extensions are available to support integration with popular frameworks and services, including Azure Databases. You can use the Azure Databases extension to create and manage Cosmos DB databases, containers, and documents. Connect to a Cosmos DB database from a Node.js application using the `@azure/cosmos` JavaScript module.
+In this module, you'll learn how to create and manage a Cosmos DB Core (SQL) database and container with the Azure JavaScript SDK for Cosmos DB. **Azure Cosmos DB Core (SQL)** provides for data management of JSON documents using  Structured Query Language (SQL) syntax.
 
-Imagine you work as a software developer that builds applications for the fictitious outdoor company **Contoso**. You've been asked to apply product discounts. Contoso uses Cosmos DB to store the information about their retail store including products. Use Visual Studio Code to develop your JavaScript application to apply the discounts to the products. 
+## Example scenario
 
-In this module, you'll learn how to work with a Cosmos DB from Visual Studio Code to work with the Contoso database. Finally, you'll learn how to insert, update, delete, and query products in a Cosmos DB container.
+Imagine you are a software developer for the fictitious outdoor equipment company **Contoso**. You've been asked to create a new Cosmos DB resource, and upload the products JSON dataset. Once the dataset is uploaded in a container, you need to be able to find products and their inventory levels, and update products. 
 
-By the end of this module, you'll know how to use Node.js with Visual Studio Code to create and run Cosmos DB applications.
+You'll learn how to work with a Cosmos DB resource, database, and container from Visual Studio Code and the JavaScript SDK to insert, find, and update products.
 
-## Learning objectives
+## What will you be doing? 
 
-In this module, you'll use Visual Studio Code to:
+You'll use Visual Studio Code and the Azure extension for Cosmos DB to create your database and add then delete some dummy data. Then you'll create the Node.js application and the learn how to programmatically accomplish those tasks.
 
-- Create a Cosmos DB instance for a Node.js app
-- Build a new Node.js app 
-- Add JavaScript code to work with Cosmos DB
-- Run the app in a local development environment
+These steps include:
+
+* Create Cosmos DB Core (SQL) resource.
+* Manually add, update, and delete documents from Azure explorer in Visual Studio Code.
+* Use JavaScript to automate data tasks with the @azure/cosmos npm package.
+
+## What is the main goal? 
+
+The main goal is to teach you how to interact with your Cosmos DB Core (SQL) container programmatically with the JavaScript SDK. The programmatic tasks are intermediary. 
+
+If you start the module and feel you aren't ready for these tasks, complete to the Cosmos DB Core (SQL) quickstart then return to this module. 
 
 ## Prerequisites
 
-- Visual Studio Code with Azure extensions installed
-- Node.js LTS installed
+Your local development machine should have the following installed before you continue:
+
+* Node.js LTS version
+* Visual Studio Code and the following extensions: 
+    * Azure Account
+    * Azure Resources

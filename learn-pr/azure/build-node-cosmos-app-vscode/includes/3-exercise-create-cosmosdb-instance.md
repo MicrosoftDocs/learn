@@ -1,10 +1,14 @@
-The Azure Databases extension enables you to create and manage Azure databases, containers, and documents from within Visual Studio Code.
+In this unit, you'll work in Visual Studio Code with the Databases extension to:
+
+* Install the Azure Databases extension for Visual Studio Code. 
+* Use the extension to connect to your Azure sandbox account.
+* Create a Cosmos DB account. 
+* Add a database and container.
+* Create some test documents in the container, then view and delete them.
 
 In the sample scenario, you want to work within Visual Studio Code, both as a development environment for building applications and as a tool for managing your Azure databases.
 
-In this exercise, you'll install the Azure Databases extension for Visual Studio Code. Then you'll use the extension to connect to your Azure account and create an Azure account. You'll add a database and container for holding students' course grade information to the Azure Databases extension account. Finally, you'll create some test documents in the container, then view and update them.
-
-This exercise runs on your desktop computer and uses an Azure sandbox for your resources.
+This exercise runs on your desktop computer and uses an Azure sandbox subscription where you create for your resources.
 
 > [!NOTE]
 > This exercise assumes that you've already installed **Visual Studio Code** on your desktop computer.
@@ -54,36 +58,36 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     :::image type="content" source="../media/3-add-comsosdb-account.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code. The user has selected the **Create Account** command." loc-scope="vs-code":::
 
-    A wizard starts and prompts you for the details of the new account.
+    A wizard starts and prompts you for the details of the new account. Use the following table to complete the prompts:
 
+    |Prompt|Answer|
+    |--|--|
+    |Select an Azure Database Server|**Core (SQL)**|
+    |Account name|Enter a globally unique account name; we suggest using something like **\<*your name or initials*\>-contoso-retail**.|
+    |Select a capacity model|**Provisioned Throughput** - Setting provisioned throughput on a container is the most frequently used option. You can elastically scale throughput for a container by provisioning any amount of throughput by using Request Units (RUs).|
+    |Select a resource group for new resources|Select **<rgn>[sandbox resource group]</rgn>** for the resource group created for you by the Learn sandbox.|
+    |Select a location for new resources|Select a location near you.|
 
-1. In the *Select an Azure Database Server* box, select **Core (SQL)**.
-
-1. In the *Account name* box, enter an account name. The name must be globally unique; we suggest using something like **\<*your name or initials*\>-contoso-retail**, and press <kbd>Enter</kbd>.
-
-1. In the *Select a capacity model* box, select **Provisioned Throughput**.
-
-1. In the *Select a resource group for new resources* box, select **<rgn>[sandbox resource group]</rgn>** for the resource group created for you by the Learn sandbox.
-
-1. In the *Select a location for new resources* box, select a location near you.
-
-    Wait while the Azure Databases account is created. This will take a few minutes.
-
-1. When the account has been created, in the Azure Resources pane, expand **Concierge Subscription** and **Azure CosmosDB**. Verify that the new Cosmos DB account appears.
+1. When the account has been created, in the Azure Resources pane, , expand **Concierge Subscription** and **Azure CosmosDB**. Verify that the new Cosmos DB account appears.
 
     :::image type="content" source="../media/3-new-comsosdb-account.png" alt-text="Screenshot of the Azure Resources extension pane in Visual Studio Code. The new Azure Databases extension account is listed under the user's Azure account." loc-scope="vs-code":::
 
 ## Create a database and container
 
-1. In the Azure Resources pane, right-click the database account you created, and then select **Create Database**.
+1. In the Azure explorer, <kbd>Shift<kbd> + <kbd>Alt<kbd> + <kbd>A<kbd>, right-click the database account you created, then select **Create Database**.
 
     :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
 
-1. In the *Database Name* box, enter **ContosoRetail**, and then press <kbd>Enter</kbd>.
+1. A wizard starts and prompts you for the details. Use the following table to complete the prompts:
 
-1. In the *Enter an id for your Collection* box, enter **Products**, and then press <kbd>Enter</kbd>.
+    |Prompt|Answer|
+    |--|--|
+    |Database Name|**ContosoRetail**|
+    |Enter an ID for your Collection|**Products**|
+    |Enter the partition key for the collection, or leave blank for fixed size|**categoryName**|
+    |Initial throughput capacity|**1000**|
 
-    This container will hold `Products` documents. Tags will be held as an array of subdocuments with each product.
+    This container will hold `Products` documents. Tags and inventory are held arrays of subdocuments with each product.
 
     ```json
     {
@@ -99,13 +103,16 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
                 "_id": "27B7F8D5-1009-45B8-88F5-41008A0F0393",
                 "name": "Tag-61"
             }
+        ],
+        "inventory": [
+            { "location": "Dallas", "inventory": 42 },
+            { "location": "Seattle", "inventory": 3 },
+            { "location": "Boston", "inventory": 15 },
+            { "location": "Miami", "inventory": 89 },
+            { "location": "San Diego", "inventory": 19 }
         ]
     }
     ```
-
-1. In the *Enter the partition key for the collection, or leave blank for fixed size* box, enter **categoryName** and press <kbd>Enter</kbd>.
-
-1. In the *Initial throughput capacity* box, enter **1000**, and then press <kbd>Enter</kbd>.
 
 1. In the Azure Resources pane, verify that the **ContosoRetail** database, containing the **Products** container, appears.
 
@@ -119,19 +126,25 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     :::image type="content" source="../media/3-create-document.png" alt-text="Screenshot of the Azure Databases pane in Visual Studio Code. The user has selected the Create Document command in the StudentCourseGrades container." loc-scope="vs-code":::
 
-1. In the *Enter a document ID* box, enter `08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2`, and then press <kbd>Enter</kbd>. This will be the ID of a product document.
+1. A wizard starts and prompts you for the details. Use the following table to complete the prompts:
 
-1. Enter `Bikes, Touring Bikes` as the *Partition key*, and press <kbd>Enter</kbd>.
+    |Prompt|Answer|
+    |--|--|
+    |Enter a document ID|**08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2**|
+    |Partition key|**Bikes, Touring Bikes**|
 
-    The document will be created and appear in Visual Studio Code, in JSON format. The **id** and **_partitionKey** fields will be populated with the values you specified.
+1. The document will be created and appear in Visual Studio Code, in JSON format. The **id** and **categoryName** fields will be populated with the values you specified.
 
     :::image type="content" source="../media/3-new-document.png" alt-text="Screenshot of Visual Studio Code showing the newly created document." loc-scope="vs-code":::
 
-1. In the Azure Resources pane, right-click the **Documents** folder again, and select **Create Document**.
+1. In the Azure explorer, right-click the **Documents** folder again, and select **Create Document**.
 
-1. In the *Enter a document ID* box, enter `0F124781-C991-48A9-ACF2-249771D44029`, and then press <kbd>Enter</kbd>. This will be the ID of another student.
+1. A wizard starts and prompts you for the details. Use the following table to complete the prompts:
 
-1. Enter `Bikes, Mountain Bikes` as the *Partition key*, and press <kbd>Enter</kbd>.
+    |Prompt|Answer|
+    |--|--|
+    |Enter a document ID|**0F124781-C991-48A9-ACF2-249771D44029**|
+    |Partition key|**Bikes, Mountain Bikes**|
 
     The new document appears.
 
@@ -154,7 +167,8 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
             "_id": "27B7F8D5-1009-45B8-88F5-41008A0F0393",
             "name": "Tag-61"
         }
-    ]
+    ],
+    "inventory": []
     ```
 
     The **tags** property is an array field that contains the tags associated with a product. Using an array makes it possible for a product to have several tags.
@@ -167,7 +181,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
    The document will be updated in the cloud. The node under the Products container is changed to the **name** property of the document.
 
-1. In the **Documents** list, select the **0F124781-C991-48A9-ACF2-249771D44029** document.
+1. In the **Documents** list, select the other document, named **0F124781-C991-48A9-ACF2-249771D44029**.
 
 1. Add the following fields to the document after the **id** field.
 
@@ -191,16 +205,9 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 ## Delete documents
 
-In the Azure explorer, right-click each of the product documents and delete them. You will upload the _entire_ products data set in the next section.
+In the Azure explorer, right-click each of the product documents and delete them. You'll upload the _entire_ products data set in the next section.
 
-## Upload a data set into a container
+## Check your work
 
-1. To upload the entire **Products** data set, first copy and save the data from the [GitHub samples repository](https://raw.githubusercontent.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/main/data/products.json).
-
-1. In the Azure explorer, right-click on the **Products** container and select **Import document into a collection**.
-1. In the file explorer, select the file you created for the products.json from the GitHub samples repository.
-
-    :::image type="content" source="../media/3-import-documents-into-container.png" alt-text="Screenshot of Visual Studio Code showing the Import Document into a collection choice." loc-scope="vs-code":::
-
-
-You've now used the Azure Databases extension in Visual Studio Code to create a Cosmos DB database and container. You've added and viewed documents, and you've edited these documents.
+* In Visual Studio Code, in the Azure Databases extension you see your Cosmos DB account, database, and container.
+* When you expand your container, you see zero items under the **Documents** node. 
