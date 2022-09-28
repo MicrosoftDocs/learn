@@ -7,21 +7,21 @@ Authentication is the process of proving the user is who they claim to be. Azure
 
 To enable and use AD authentication for Arc-enabled SQL MI, Arc-enabled data services leverages a Kubernetes-native [Custom Resource Definition](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) called an Active Directory Connector. This provides Arc-enabled SQL MI running on the same data controller the ability to perform AD authentication.
 
-With Arc-enabled SQL MI, you must use [keytab](https://docs.microsoft.com/sql/linux/sql-server-linux-ad-auth-understanding?view=sql-server-ver16#what-is-a-keytab-file) files. Keytab files are cryptographic files containing service principal names (SPNs), account names, and hostnames. Arc-enabled SQL MI uses a keytab file to authenticate itself with AD Domains.
+With Arc-enabled SQL MI, you must use [keytab](/sql/linux/sql-server-linux-ad-auth-understanding#what-is-a-keytab-file) files. Keytab files are cryptographic files containing service principal names (SPNs), account names, and hostnames. Arc-enabled SQL MI uses a keytab file to authenticate itself with AD Domains.
 
 There are two types of AD integration modes available:
 
 - Customer-managed keytab (CMK)
 - System-managed keytab (SMK)
 
-Review [comparing both AD integration modes](https://docs.microsoft.com/azure/azure-arc/data/active-directory-introduction#compare-ad-integration-modes) to understand which keytab is right for your requirements.
+Review [comparing both AD integration modes](/azure/azure-arc/data/active-directory-introduction#compare-ad-integration-modes) to understand which keytab is right for your requirements.
 
 To use AD authentication with your Arc-enabled SQL MI, follow these steps:
 
 1. Deploy data controller
 2. Deploy the appropriate keytab AD connector for your requirements:
-    - Deploy [CMK AD Connector](https://docs.microsoft.com/azure/azure-arc/data/deploy-customer-managed-keytab-active-directory-connector)
-    - Deploy [SMK AD Connector](https://docs.microsoft.com/azure/azure-arc/data/deploy-system-managed-keytab-active-directory-connector)
+    - Deploy [CMK AD Connector](/azure/azure-arc/data/deploy-customer-managed-keytab-active-directory-connector)
+    - Deploy [SMK AD Connector](/azure/azure-arc/data/deploy-system-managed-keytab-active-directory-connector)
 
 For either mode, you need a specific AD account, keytab AD connector, and Kubernetes secret for each Arc-enabled SQL MI.
 
@@ -34,7 +34,7 @@ Key management for TDE is crucial to ensure that your database is secure and you
 - Service-managed keys
 - Customer-managed keys
 
-See [Transparent Data Encryption](https://docs.microsoft.com/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql&tabs=azure-portal) for further information.
+See [Transparent Data Encryption](/azure/azure-sql/database/transparent-data-encryption-tde-overview?view=azuresql&preserve-view=true&tabs=azure-portal) for further information.
 
 <!--
 #### Service-managed keys
@@ -43,7 +43,7 @@ Using service-managed keys is the traditional approach to managing the keys requ
 
 #### Customer-managed keys
 
-To ensure the safety and recoverability of the keys, ensuring the ability to restore a database onto a new server requires the SQL Server certificate to be backed up. This backup is stored in a secure location. Another alternative is Hardware Security Modules (HSM) devices to store the encryption keys away from the encrypted data. See [Extensible Key Management](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/enable-tde-on-sql-server-using-ekm?view=sql-server-ver16) for further information.
+To ensure the safety and recoverability of the keys, ensuring the ability to restore a database onto a new server requires the SQL Server certificate to be backed up. This backup is stored in a secure location. Another alternative is Hardware Security Modules (HSM) devices to store the encryption keys away from the encrypted data. See [Extensible Key Management](https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/enable-tde-on-sql-server-using-ekm) for further information.
 -->
 
 ## Container level privileges

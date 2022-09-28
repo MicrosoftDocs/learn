@@ -16,7 +16,7 @@ Open Azure Data studio, expanding the Connections tab to reveal the deployed Arc
 
 ![Image of Azure Arc-enabled SQL MI – ADS Grafana](../media/Arc-enabled-dataservices-module-3-Arc-enabled-SQLMI-ADS-Grafana-endpoint-1.png)
 
-Previously we deployed an Arc data controller. We configured `Metrics and Logs Dashboard Credentials`, which we use to log into the Grafana dashboards to monitor the performance of our Arc-enabled SQL MI. To access the Grafana dashboards, we use the Grafana Dashboard Endpoint from within Azure Data Studio as seen above or using the [`az sql mi-arc endpoint list`](https://docs.microsoft.com/cli/azure/sql/mi-arc/endpoint?view=azure-cli-latest) CLI command.
+Previously we deployed an Arc data controller. We configured `Metrics and Logs Dashboard Credentials`, which we use to log into the Grafana dashboards to monitor the performance of our Arc-enabled SQL MI. To access the Grafana dashboards, we use the Grafana Dashboard Endpoint from within Azure Data Studio as seen above or using the [`az sql mi-arc endpoint list`](/cli/azure/sql/mi-arc/endpoint?view=azure-cli-latest&preserve-view=true) CLI command.
 
 ![Image of Azure Arc-enabled SQL MI – ADS Grafana SQLMI Metrics dashboard](../media/Arc-enabled-dataservices-module-3-Arc-enabled-SQLMI-ADS-Grafana-sqlmi-metrics-2.png)
 
@@ -41,7 +41,7 @@ Kibana is a free and open frontend application that sits on top of the Elastic S
 
 Like Grafana, if your Arc data controller deployment is in either directly or indirectly connected modes, Kibana is available locally for you to analyze the logs for the deployed environment.
 
-[Kibana Query Language (KQL)](https://www.elastic.co/guide/en/kibana/master/kuery-query.html), not to be confused with [Kusto Query Language (KQL)](https://docs.microsoft.com/azure/data-explorer/kusto/query/), is a simple syntax for filtering Elasticsearch data using free text search or field-based search.
+[Kibana Query Language (KQL)](https://www.elastic.co/guide/en/kibana/master/kuery-query.html), not to be confused with [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/), is a simple syntax for filtering Elasticsearch data using free text search or field-based search.
 
 ![Image of Azure Arc-enabled SQL MI – ADS Kibana discover](../media/Arc-enabled-dataservices-module-3-Arc-enabled-SQLMI-ADS-Kibana-discover-4.png)
 
@@ -49,7 +49,7 @@ Within Kibana, you can create dashboards and visualizations to cater to your env
 
 ### Azure Monitor
 
-[Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview) helps you maximize the availability and performance of your applications and services. It delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.
+[Azure Monitor](/azure/azure-monitor/overview) helps you maximize the availability and performance of your applications and services. It delivers a comprehensive solution for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments.
 
 In directly connected mode, you have the option to automatically export and import metrics and logs from the Arc data controller to Azure Monitor. In indirectly connected mode, you have the option to manually export and import metrics and logs to Azure Monitor.
 

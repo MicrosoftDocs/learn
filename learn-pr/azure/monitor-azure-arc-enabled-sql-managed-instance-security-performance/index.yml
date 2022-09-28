@@ -2,7 +2,7 @@
 uid: learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance
 metadata:
   title: Monitor Azure Arc-enabled SQL Managed Instance security performance
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Learn how to use the features of Azure Arc-enabled data service to monitor security and performance of Azure SQL Managed Instance."
   ms.date: 8/23/2022
   author: tchristiani
   ms.author: terrychr
