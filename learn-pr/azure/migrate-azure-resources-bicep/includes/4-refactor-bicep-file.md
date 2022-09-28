@@ -123,13 +123,13 @@ Single-line comments can be added as headers for sections of code or on individu
 Bicep provides the `@description` decorator that you can use to document the purpose of your parameters, variables, resources, modules, and outputs. You can add the description on the line above the item you are describing:
 
 ```bicep
-@description('The name of the App Service Plan.)
+@description('The name of the App Service Plan.')
 param appServicePlanName string
 ```
 
 ### Follow Bicep best practices
 
-Make sure that your Bicep file follows standard recommendations. Review [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices?azure-portal=true) for anything you might have missed.
+Make sure that your Bicep file follows standard recommendations. Review [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices) for anything you might have missed.
 
 ### The converted template
 
@@ -142,7 +142,7 @@ After you make the appropriate improvements, review the final template before yo
 */
 
 // Parameters
-@description('Location For all resources.')
+@description('Location for all resources.')
 param location string = resourceGroup().location
 
 @allowed([
@@ -167,11 +167,11 @@ param appServicePlanSku string = 'P1v3'
 param appServicePlanInstanceCount int = 1
 
 // Variables
-@description('The name of the App Service Plan.)
+@description('The name of the App Service plan.')
 var appServicePlanName = 'plan-${environment}-001'
 
 // Resource - App Service Plan
-@description(')
+@description('The App Service plan resource name.')
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
   name: appServicePlanName
   location: location
@@ -183,6 +183,6 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
 }
 
 // Outputs
-@description('The resource Id of the App Service Plan.)
+@description('The resource ID of the App Service plan.')
 output appServicePlanId string = appServicePlan.id
 ```
