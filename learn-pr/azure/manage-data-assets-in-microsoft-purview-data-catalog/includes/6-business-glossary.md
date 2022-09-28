@@ -4,8 +4,9 @@ A glossary provides vocabulary for business users.  It consists of business term
 
 A business glossary is a collection of terms. Each term represents an object in an organization and it's highly likely that there are multiple terms representing the same object. A customer could also be referred to as client, purchaser, or buyer. These multiple terms have a relationship with each other. The relationship between these terms could be one of the following:
 
-synonyms - different terms with the same definition
-related - different name with similar definition
+- Synonyms - different terms with the same definition
+- Related - different name with similar definition
+
 The same term can also imply multiple business objects. It's important that each term is well-defined and clearly understood within the organization.
 
 ## Why have business glossary?
@@ -26,10 +27,10 @@ Essentially, the business glossary allows users to search for and find data base
 
 We already have three kinds of labels for our data assets, so what's the difference?
 
-**Business glossary** terms define the business vocabulary for an organization and help in bridging the gap between various departments in your company.
-**Classifications** are annotations that can be assigned to entities. The flexibility of classifications enables you to use them for multiple scenarios such as understanding the nature of data stored in the data assets or defining access control policies.
-**Sensitivity labels** are a type of annotation that allows you to classify and protect your organization's data, without hindering productivity and collaboration. Sensitivity labels are used to identify the categories of classification types within your organizational data, and group the policies that you wish to apply to each category.
-**Managed attribute** A set of user-defined attributes that provide a business or organization level context to an asset. A managed attribute has a name and a value. For example, “Department” is an attribute name and “Finance” is its value.
+- **Business glossary** terms define the business vocabulary for an organization and help in bridging the gap between various departments in your company.
+- **Classifications** are annotations that can be assigned to entities. The flexibility of classifications enables you to use them for multiple scenarios such as understanding the nature of data stored in the data assets or defining access control policies.
+- **Sensitivity labels** are a type of annotation that allows you to classify and protect your organization's data, without hindering productivity and collaboration. Sensitivity labels are used to identify the categories of classification types within your organizational data, and group the policies that you wish to apply to each category.
+- **Managed attribute** A set of user-defined attributes that provide a business or organization level context to an asset. A managed attribute has a name and a value. For example, “Department” is an attribute name and “Finance” is its value.
 
 ## What's in a term?
 
@@ -52,10 +53,10 @@ However, these attributes may not be sufficient to completely define a term in a
 
 These status markers are metadata associated with the term. Currently you can set the following status on each term:
 
-Draft: This term isn't yet officially implemented.
-Approved: This term is official/standard/approved.
-Expired: This term should no longer be used.
-Alert: This term needs attention.
+- Draft: This term isn't yet officially implemented.
+- Approved: This term is official/standard/approved.
+- Expired: This term should no longer be used.
+- Alert: This term needs attention.
 
 ## Term templates
 
