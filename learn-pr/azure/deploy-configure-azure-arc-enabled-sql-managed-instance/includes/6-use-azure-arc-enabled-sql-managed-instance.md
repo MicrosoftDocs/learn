@@ -44,8 +44,8 @@ Optionally, you can automatically upload metrics and logs to your subscription i
 -->
 Exporting and importing the usage details, metrics, and logs are all undertaken using the following az arc data CLI commands:
 
-- [az arcdata dc export](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-export)
-- [az arcdata dc upload](https://docs.microsoft.com/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-upload)
+- [az arcdata dc export](/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-export)
+- [az arcdata dc upload](/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-upload)
 
 ## Azure Arc-enabled SQL Managed Instance Maintenance
 

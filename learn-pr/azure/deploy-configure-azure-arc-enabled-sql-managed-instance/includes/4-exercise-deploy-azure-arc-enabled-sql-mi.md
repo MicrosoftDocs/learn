@@ -35,7 +35,7 @@ This option is only available with environments configured in the directly conne
 12. Set the CPU vCore request.
 13. Set the CPU vCore limit.
 
-    ![Image of Azure Arc-enabled SQL MI - Azure Arc compute and storage resource details](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-compute-storage-details-5.png)
+    ![Image of Azure Arc-enabled SQL MI - Azure Arc compute and storage resource details. Configure service tier, and compute utilization.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-compute-storage-details-5.png)
 
 14. Enter 'Default' for the data storage class. 
 15. Set the data volume size in Gigabytes.
@@ -45,10 +45,10 @@ This option is only available with environments configured in the directly conne
 19. Set the logs volume size in Gigabytes.
 20. Your backup storage class needs to be ReadWriteMany (RWX) capable.
 21. Set the backup volume size in Gigabytes.
-22. Select 'I already have a SQL Server License' if you have [Azure Hybrid Benefits](https://docs.microsoft.com/en-us/azure/azure-sql/azure-hybrid-benefit?view=azuresql&tabs=azure-portal).
+22. Select 'I already have a SQL Server License' if you have [Azure Hybrid Benefits](/azure/azure-sql/azure-hybrid-benefit?view=azuresql&preserve-view=true&tabs=azure-portal).
 23. Click apply.
 
-    ![Image of Azure Arc-enabled SQL MI - Azure Arc compute and storage resource details](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-compute-storage-details-6.png)
+    ![Image of Azure Arc-enabled SQL MI - Azure Arc compute and storage resource details. Configure storage.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-compute-storage-details-6.png)
 
 24. Set the Admin username for the Arc-enabled SQL MI.
 25. Set the Admin user password for the Arc-enabled SQL MI. 
@@ -67,11 +67,11 @@ This option is only available with environments configured in the directly conne
 
 30. Confirm your Arc-enabled Azure SQL MI deployment.
 
-    ![Image of Azure Arc-enabled SQL MI - Deployed](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-10.png)
+    ![Image of Azure Arc-enabled SQL MI - deployment complete.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-10.png)
 
-    ![Image of Azure Arc-enabled SQL MI - Deployed](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-11.png)
+    ![Image of Azure Arc-enabled SQL MI - resource group.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-11.png)
 
-    ![Image of Azure Arc-enabled SQL MI - Deployed2](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-12.png)
+    ![Image of Azure Arc-enabled SQL MI - status](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-12.png)
 
 31. In Azure Data Studio, expand the Connection tab. Right-click on your Arc data controller and click refresh. Right-click on your Arc data controller and click manage. You can now manage your Arc-enabled SQL MI from Azure Data Studio.
 
@@ -95,7 +95,7 @@ This option is available with environments configured in either the directly or 
 6. Set the Admin username for the Arc-enabled SQL MI.
 7. Set the Admin user password for the Arc-enabled SQL MI.
 8. Choose your Service tier.
-9. Select 'I already have a SQL Server License' if you have [Azure Hybrid Benefits](https://docs.microsoft.com/en-us/azure/azure-sql/azure-hybrid-benefit?view=azuresql&tabs=azure-portal).
+9. Select 'I already have a SQL Server License' if you have [Azure Hybrid Benefits](/azure/azure-sql/azure-hybrid-benefit?view=azuresql&preserve-view=true&tabs=azure-portal).
 
     ![Image of Azure Arc-enabled SQL MI - ADS Azure Arc create details](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-ADS-details-3.png)
 
@@ -119,9 +119,9 @@ This option is available with environments configured in either the directly or 
     
 23.  Confirm your Arc-enabled Azure SQL MI deployment.
 
-![Image of Azure Arc-enabled SQL MI - Deployed](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-11.png)
+![Image of Azure Arc-enabled SQL MI - resource group details.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-11.png)
 
-![Image of Azure Arc-enabled SQL MI - Deployed2](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-12.png)
+![Image of Azure Arc-enabled SQL MI - status details.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-12.png)
 
 
 24. In Azure Data Studio, expand the Connection tab. Right-click on your Arc data controller and click refresh. Right-click on your Arc data controller and click manage. You can now manage your Arc-enabled SQL MI from Azure Data Studio.
@@ -161,7 +161,7 @@ This option is only available with environments configured in the directly conne
     $Env:MemoryLimit = '8Gi' ## Set your maximum memory limit appropriately in Gigabytes
     ```
 
-    ![Image of Azure Arc-enabled SQL MI - CLI Parameters](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-CLI-parameterts-13.png) 
+    ![Image of Azure Arc-enabled SQL MI - Local environment variables.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-CLI-parameterts-13.png) 
 
 3. Execute the following `az sql mi-arc create` command:
 
@@ -192,7 +192,7 @@ This option is only available with environments configured in the directly conne
 4. Enter your Arc-enabled SQL MI admin account and password when prompted.
 5. Confirm your Arc-enabled SQL MI deployment.
 
-    ![Image of Azure Arc-enabled SQL MI - Deployed](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-11.png)
+    ![Image of Azure Arc-enabled SQL MI - completely deployed resource group.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-11.png)
 
     ![Image of Azure Arc-enabled SQL MI - Deployed2](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-deployed-12.png)
 
@@ -233,7 +233,7 @@ This option is available with environments configured in either the directly or 
     $Env:MemoryLimit = '8Gi' ## Set your maximum memory limit appropriately in Gigabytes
     ```
 
-    ![Image of Azure Arc-enabled SQL MI - CLI Parameters](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-CLI-ADS-parameterts-14.png) 
+    ![Image of Azure Arc-enabled SQL MI - environment variables for console.](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-CLI-ADS-parameterts-14.png) 
 
 3. Execute the following `az sql mi-arc create` command:
 

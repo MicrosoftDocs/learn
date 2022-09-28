@@ -1,6 +1,6 @@
 ## Exercise 1: Scale up/down your SQL Managed Instance resources
 
-The number of resources required for your operational Arc-enabled SQL MI will be dependent on the tier chosen and the number of available resources available on your Kubernetes cluster. To scale up or down the resources (CPU/memory), we can use Azure Data Studio or [`az sql mi-arc update`](https://docs.microsoft.com/en-us/cli/azure/sql/mi-arc?view=azure-cli-latest#az-sql-mi-arc-update) commands for our directly connected or indirectly connected mode Arc-enabled SQL MI environments. We can use the Azure Portal, Azure Data Studio, or the `az sql mi-arc update` command in directly connected mode.
+The number of resources required for your operational Arc-enabled SQL MI will be dependent on the tier chosen and the number of available resources available on your Kubernetes cluster. To scale up or down the resources (CPU/memory), we can use Azure Data Studio or [`az sql mi-arc update`](/cli/azure/sql/mi-arc?view=azure-cli-latest&preserve-view=true#az-sql-mi-arc-update) commands for our directly connected or indirectly connected mode Arc-enabled SQL MI environments. We can use the Azure Portal, Azure Data Studio, or the `az sql mi-arc update` command in directly connected mode.
 
 ## Option 1 - Azure Data Studio GUI deployment
 
@@ -15,7 +15,7 @@ This option is available with environments configured in either the directly con
 4. Increase your CPU request value from 2 to 4
 5. Click Save.
 
-    ![Image of Azure Arc-enabled SQL MI increase cpu](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-2.png)
+    ![Image of Azure Arc-enabled SQL MI increase cpu - zoom in](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-2.png)
 
 ## Option 2 - Azure Data Studio CLI deployment
 
@@ -44,7 +44,7 @@ This option is available with environments configured in either the directly con
        --use-k8s
     ```
 
-    ![Image of Azure Arc-enabled SQL MI increase cpu](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-3.png)
+    ![PowerShell scale up resources](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-3.png)
 
 3. Execute the following command and search for the results as shown below:
 
@@ -52,7 +52,7 @@ This option is available with environments configured in either the directly con
     az sql mi-arc show -n $Env:SQLMIName --k8s-namespace $Env:MyNamespace --use-k8s
     ```
 
-    ![Image of Azure Arc-enabled SQL MI increase cpu](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-4.png)
+    ![Image of Azure Arc-enabled SQL MI increase cpu - yaml focus](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-4.png)
 
 ## Exercise 2: Enable SQL Agent
 

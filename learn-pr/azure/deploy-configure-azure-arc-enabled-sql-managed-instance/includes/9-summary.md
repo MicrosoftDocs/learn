@@ -11,8 +11,8 @@ In this module, you have:
 
 ## Learn more
 
-- [Storage Configuration](https://docs.microsoft.com/azure/azure-arc/data/storage-configuration#database-instance-storage-configuration)
-- [Sizing Guides](https://docs.microsoft.com/azure/azure-arc/data/sizing-guidance#sql-managed-instance-sizing-details)
-- [Reserved Capacity](https://docs.microsoft.com/azure/azure-arc/data/reserved-capacity-overview)
-- [Certificate Rotation](https://docs.microsoft.com/azure/azure-arc/data/rotate-user-tls-certificate)
-- [Migrate to Arc-enabled SQL MI](https://docs.microsoft.com/azure/azure-arc/data/migrate-to-managed-instance)
+- [Storage Configuration](/azure/azure-arc/data/storage-configuration#database-instance-storage-configuration)
+- [Sizing Guides](/azure/azure-arc/data/sizing-guidance#sql-managed-instance-sizing-details)
+- [Reserved Capacity](/azure/azure-arc/data/reserved-capacity-overview)
+- [Certificate Rotation](/azure/azure-arc/data/rotate-user-tls-certificate)
+- [Migrate to Arc-enabled SQL MI](/azure/azure-arc/data/migrate-to-managed-instance)

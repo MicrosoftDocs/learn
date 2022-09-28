@@ -1,16 +1,16 @@
-**[Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql)** is an intelligent, scalable cloud database service that combines the broadest SQL Server database engine compatibility with all the benefits of a fully managed and evergreen platform as a service.
+**[Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql&preserve-view=true)** is an intelligent, scalable cloud database service that combines the broadest SQL Server database engine compatibility with all the benefits of a fully managed and evergreen platform as a service.
 
 Azure Arc-enabled SQL Managed Instance (MI) provides nearly the same features, functionality, and user experience as Azure SQL MI, except it runs on your chosen hardware, on your version-supported kubernetes cluster inside your data center or multi-cloud environment.
 
 Arc-enabled SQL MI has the following Features and Capabilities:
--	**[Supported Features and Services](https://docs.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features)**
-    - **[RDBMS High Availability](https://docs.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features#RDBMSHA)**
-    - **[RDBMS Scalability and Performance](https://docs.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features#RDBMSSP)**
-    - **[RDBMS Security](https://docs.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features#RDBMSS)**
-    - **[RDBMS Manageability](https://docs.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features#RDBMSM)**
-    - **[Programmability](https://docs.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features#Programmability)**
-    - **[Tools](https://docs.microsoft.com/en-us/azure/azure-arc/data/managed-instance-features#tools)**
--	**[Unsupported Features and Services](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-features#Unsupported)**
+-	**[Supported Features and Services]((/azure/azure-arc/data/managed-instance-features)**
+    - **[RDBMS High Availability]((/azure/azure-arc/data/managed-instance-features#RDBMSHA)**
+    - **[RDBMS Scalability and Performance]((/azure/azure-arc/data/managed-instance-features#RDBMSSP)**
+    - **[RDBMS Security]((/azure/azure-arc/data/managed-instance-features#RDBMSS)**
+    - **[RDBMS Manageability]((/azure/azure-arc/data/managed-instance-features#RDBMSM)**
+    - **[Programmability]((/azure/azure-arc/data/managed-instance-features#Programmability)**
+    - **[Tools]((/azure/azure-arc/data/managed-instance-features#tools)**
+-	**[Unsupported Features and Services](/azure/azure-arc/data/managed-instance-features#Unsupported)**
 
 ## Service Tiers
 
@@ -130,7 +130,7 @@ Arc-enabled SQL MI provides all the same built-in capabilities as Azure SQL MI a
 
 At this time, there is a small subset of unsupported features when using Arc-enabled SQL MI. Microsoft is constantly working to improve feature parity, so these limitations may be resolved over time:
 
-- **[Backup and Restore](https://docs.microsoft.com/azure/azure-arc/data/limitations-managed-instance#backup-and-restore)** 
+- **[Backup and Restore](/azure/azure-arc/data/limitations-managed-instance#backup-and-restore)** 
 <!--    - **Automated backups**
         - User databases in Simple Recovery model are not backed up.
         - Model database is not backed up.
@@ -138,6 +138,6 @@ At this time, there is a small subset of unsupported features when using Arc-ena
         - Does not support database restores across Azure Arc-enabled SQL Managed Instances. Can only restore to the same Azure Arc-enabled SQL Managed Instance where the backup was created.
         - Restoring TDE-enabled databases is not supported.
         - Restoring a deleted database is not supported. -->
-- **[Data transfer technologies](https://docs.microsoft.com/azure/azure-arc/data/limitations-managed-instance#other-limitations)**
+- **[Data transfer technologies](/azure/azure-arc/data/limitations-managed-instance#other-limitations)**
 <!--    - Transactional replication is not supported.
     - Log shipping is currently blocked. -->

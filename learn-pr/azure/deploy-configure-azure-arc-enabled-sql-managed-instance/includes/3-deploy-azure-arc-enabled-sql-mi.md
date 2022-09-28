@@ -13,7 +13,7 @@ You can deploy an Azure Arc-enabled SQL Managed Instance (MI) to a Kubernetes en
 
 Before undertaking a deployment, ensure you have completed the following pre-requisites:
 
-- [Install client tools](https://docs.microsoft.com/azure/azure-arc/data/install-client-tools).
+- [Install client tools](/azure/azure-arc/data/install-client-tools).
 - Have access to a Kubernetes cluster (v1.21 and above).
 - Configured Arc data controller.
 - Determine your required service tier.
@@ -26,10 +26,10 @@ Before undertaking a deployment, ensure you have completed the following pre-req
     - Resource requirements:
         - Cores.
             - CPU vCore request is the number of vCores assigned to the Arc-enabled SQL MI.
-            - CPU vCore limit is the maximum number of vCores assigned to the Arc-enabled SQL MI and can't exceed the supported limits of the Tier chosen ([General Purpose (24 vCores) Vs Business Critical (unlimited)](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-2019?view=sql-server-ver16#Cross-BoxScaleLimits))
+            - CPU vCore limit is the maximum number of vCores assigned to the Arc-enabled SQL MI and can't exceed the supported limits of the Tier chosen ([General Purpose (24 vCores) Vs Business Critical (unlimited)](/sql/sql-server/editions-and-components-of-sql-server-2019#Cross-BoxScaleLimits))
         - Memory.
             - Memory request is the amount of memory allocated to the Arc-enabled SQL MI.
-            - Memory limit is the maximum amount of memory allocated to the Arc-enabled SQL MI and can't exceed the supported limits of the Tier chosen ([General Purpose (128 GB) Vs Business Critical (unlimited)](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-2019?view=sql-server-ver16#Cross-BoxScaleLimits))
+            - Memory limit is the maximum amount of memory allocated to the Arc-enabled SQL MI and can't exceed the supported limits of the Tier chosen ([General Purpose (128 GB) Vs Business Critical (unlimited)](/sql/sql-server/editions-and-components-of-sql-server-2019#Cross-BoxScaleLimits))
         - Backup storage class. (Location for your Automated backups. Requires to be ReadWriteMany (RWX) supported storage class)
         - Data storage class. (Location for your database data files)
         - Database Log storage class. (Location for your database transaction log files)

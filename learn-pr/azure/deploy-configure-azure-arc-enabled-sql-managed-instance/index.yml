@@ -2,14 +2,14 @@
 uid: learn.deploy-configure-azure-arc-enabled-sql-managed-instance
 metadata:
   title: Deploy and configure Azure Arc-enabled SQL Managed Instance
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Demonstrates how to configure Azure Arc-enabled SQL managed instance."
   ms.date: 8/22/2022
   author: tchristiani
   ms.author: terrychr
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Deploy and configure Azure Arc-enabled SQL Managed Instance
-summary: "Describe Azure Arc-enabled SQL Managed instance and how to connect to it to restore a SQL Server database backup and execute queries. Use the instance to deploy, configure, and apply service updates."
+summary: "Describe Azure Arc-enabled SQL Managed Instance and how to connect to it to restore a SQL Server database backup and execute queries. Use the instance to deploy, configure, and apply service updates."
 abstract: |
   By the end of this module, you'll be able to:
     - Compare the differences between Azure Arc-enabled SQL Managed Instance against other SQL Server products and services.
