@@ -34,7 +34,6 @@ subjects:
 - database
 - cloud-computing
 units:
-- learn.wwl.deploy-mariadb-mysql-postgresql-azure.introduction
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.knowledge-check
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.summary
 badge:
