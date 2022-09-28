@@ -3,7 +3,7 @@ uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "Introduction to the Microsoft Purview Data Catalog. We will cover a proof of concept scenario where users have already deployed Microsoft Purview, scanned a source, and are ready to use the Microsoft Purview Data Catalog to manage data assets and create a business glossary."
   ms.date: 9/21/2022
   author: whhender

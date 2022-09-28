@@ -3,7 +3,7 @@ uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.browse-and-searc
 title: Browse and search exercise
 metadata:
   unitType: exercise
-  title: exercise
+  title: Browse and search exercise
   description: "This guide will teach you how to browse and search for relevant data in the Microsoft Purview Data Catalog."
   ms.date: 9/21/2022
   author: whhender

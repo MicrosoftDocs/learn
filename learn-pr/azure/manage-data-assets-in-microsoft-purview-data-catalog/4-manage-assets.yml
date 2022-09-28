@@ -3,7 +3,7 @@ uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.manage-assets
 title: Manage assets
 metadata:
   unitType: learning-content
-  title: learning-content
+  title: Manage assets
   description: "This article describes how you can manage and modify data assets that have been scanned into your Microsoft Purview Data Catalog."
   ms.date: 9/21/2022
   author: whhender
