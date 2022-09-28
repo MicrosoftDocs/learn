@@ -101,7 +101,7 @@ Next, create a new folder in *templates* and name it *public*. Then add an *inde
 
 Move into the *templates* folder, and create a new folder named *authenticated* where you'll add two templates that your app will render when users sign in.
 
-The first template, *graph.html* will render when all users sign in. Paste the following contents into this template:
+The first template, *graph.html*, will render when all users sign in. Paste the following contents into this template:
 
 ```html
 # 📁 templates/authenticated/graph.html
@@ -222,7 +222,7 @@ For this scenario, you'll use a client secret, also known as an application pass
 1. Select an expiration for the secret or specify a custom lifetime.
    - Client secret lifetime is limited to two years (24 months) or less. You can't specify a custom lifetime longer than 24 months. Microsoft recommends that you set an expiration value of less than 12 months.
 1. Select **Add**.
-1. Record the client secret value (not its ID) for use in your application's code. This secret value is only shown once when you create it and never displayed after leaving this page.
+1. Record the client secret value (not its ID) for use in a later step. This secret value is only shown once when you create it and never displayed after leaving this page.
 
 ## Add app roles to your web application
 

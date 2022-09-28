@@ -15,7 +15,7 @@ MSAL Python provides multiple benefits over directly using the OAuth libraries a
 - Regularly updated, so you don't need to change your code when new security updates are rolled out.
 - Enables developers to integrate with various latest identity capabilities in the platform, including passwordless authentication and conditional access. 
 
-## The Authorization code flow in MSAL Python
+## The authorization code flow in MSAL Python
 
 To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform. In this training module, we'll use the authorization code grant flow for sign-in. The recommended calling pattern in web apps using this flow is to:
 

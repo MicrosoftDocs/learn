@@ -180,7 +180,7 @@ def authorized():
     return redirect(auth_code_flow["post_sign_in_url"])
 ```
 
-The route you create in the code snippet above isn't called by the user, but instead, Azure AD redirects the user's browser to this page when they sign in and consent to the required permissions.
+The route you create in the preceding code snippet isn't initiated directly by a user's action in the application. Instead, Azure AD redirects the user's browser to this page when they sign in and consent to the required permissions.
 
 The other two routes that require a specific level of authentication and authorization are covered in the next section of this unit, [sign in users](#sign-in-users).
 
