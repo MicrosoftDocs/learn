@@ -39,7 +39,7 @@ In this exercise, we'll use the data catalog to search and browse for data, and 
 
 1. When you browse by collection and select a collection, you'll see a list of all assets in that collection. You can narrow down results using the asset facets on the left hand menu, or return to the collection list using the collection list button at the top of the left menu.
 
-    :::image type="content" source="../media/browse-and-search-exercise/browsing-by-collection-inline.png" alt-text="Screenshot of the browse assets page, showing all assets in a particular collection. The 'view collection tree' button is highlighted in the left menu." lightbox="../media/browse-and-search-exercise/browsing-by-collection.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/browsing-by-collection-inline.png" alt-text="Screenshot of the browse assets page, showing all assets in a particular collection. The view collection tree button is highlighted in the left menu." lightbox="../media/browse-and-search-exercise/browsing-by-collection.png":::
 
 1. When you browse by data source type, you select a source type, and all the sources of that type that you have access to will be listed. Selecting the source will list all the assets available in that source, and you can use the breadcrumbs above the asset lists, and at the top of the source window to return to sources or browsing.
 
@@ -51,7 +51,7 @@ In this exercise, we'll use the data catalog to search and browse for data, and 
 
 1. To start a search for data in the data catalog, you can use the search bar in the home page using keywords for name, data type, classification, or glossary terms.
 
-    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="Screenshot of the data catalog home page, with the search bar highlighted in the middle and the search term 'country' typed in. Several results are shown." lightbox="../media/browse-and-search-exercise/search-from-home.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/search-from-home-inline.png" alt-text="Screenshot of the data catalog home page, with the search bar highlighted in the middle and the search term country typed in. Several results are shown." lightbox="../media/browse-and-search-exercise/search-from-home.png":::
 
 1. The search bar is also available throughout the Microsoft Purview governance portal. For example, here in the data map, the data catalog search bar is in the top middle of the screen:
 
@@ -59,7 +59,7 @@ In this exercise, we'll use the data catalog to search and browse for data, and 
 
 1. Microsoft Purview will suggest results, and you can select them, but if you select the **Enter** key to enter your search or select **View search results** at the bottom of the returned results, Microsoft Purview will return a full list of data assets and glossary terms that match your keywords, and provides a more in depth search experience.
 
-    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-search-page-inline.png" alt-text="Screenshot of a data catalog search with a full list of assets returned from a search for the keyword 'country'." lightbox="../media/browse-and-search-exercise/data-catalog-search-page.png":::
+    :::image type="content" source="../media/browse-and-search-exercise/data-catalog-search-page-inline.png" alt-text="Screenshot of a data catalog search with a full list of assets returned from a search for the keyword country." lightbox="../media/browse-and-search-exercise/data-catalog-search-page.png":::
 
 1. In the data catalog search, you can use the asset facets on the left side menu to filter results by other metadata, like collection, classification, and asset type. For some of these classifications, you can choose to filter options by **or** or **and** statements.
 
