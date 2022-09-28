@@ -68,7 +68,7 @@ A full sample CSV will be provided in the steps below.
 
 1. There's a sample .csv available for you to download and edit. Download the CSV and use it as a template to complete your terms.
 
-    >![TIP]
+    >[!TIP]
     >When using the sample CSV, remember to remove the first example row before uploading your CSV.
 
     :::image type="content" source="../media/business-glossary-exercise/download-sample-csv-inline.png" alt-text="Screenshot showing import terms page with the download a sample csv button highlighted." lightbox="../media/business-glossary-exercise/download-sample-csv.png":::
