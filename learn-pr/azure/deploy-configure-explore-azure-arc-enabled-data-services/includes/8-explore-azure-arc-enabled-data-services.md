@@ -17,4 +17,4 @@ Arc-enabled data services allow you to take advantage of Azure's industry-leadin
 
 Azure Arc-enabled data services bring your data estates together regardless of their location by using familiar tools, supported services, and any flavor of Kubernetes or hardware.
 
-![Image of Azure Arc-enabled data services](../media/Arc-enabled-dataservices-module-1-explore-arc-enabled-data-services-infrastructure-2.png)
+![Image of Azure Arc-enabled data services infrastructure](../media/Arc-enabled-dataservices-module-1-explore-arc-enabled-data-services-infrastructure-2.png)

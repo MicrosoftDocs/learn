@@ -12,9 +12,9 @@ In this module, you have:
 
 ## Learn more
 
-- [Plan a Deployment](https://docs.microsoft.com/azure/azure-arc/data/plan-azure-arc-data-services)
-- [IP Addresses, Ports, Encryption and Proxy server support](https://docs.microsoft.com/azure/azure-arc/data/connectivity#details-on-internet-addresses-ports-encryption-and-proxy-server-support)
-- [Storage Configuration](https://docs.microsoft.com/azure/azure-arc/data/storage-configuration)
-- [Sizing Guides](https://docs.microsoft.com/azure/azure-arc/data/sizing-guidance)
-- [Monitoring Certificates](https://docs.microsoft.com/azure/azure-arc/data/monitor-certificates)
+- [Plan a Deployment](/azure/azure-arc/data/plan-azure-arc-data-services)
+- [IP Addresses, Ports, Encryption and Proxy server support](/azure/azure-arc/data/connectivity#details-on-internet-addresses-ports-encryption-and-proxy-server-support)
+- [Storage Configuration](/azure/azure-arc/data/storage-configuration)
+- [Sizing Guides](/azure/azure-arc/data/sizing-guidance)
+- [Monitoring Certificates](/azure/azure-arc/data/monitor-certificates)
 - 

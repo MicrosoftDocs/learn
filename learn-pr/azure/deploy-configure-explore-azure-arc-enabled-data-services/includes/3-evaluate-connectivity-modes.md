@@ -22,13 +22,13 @@ Both directly and indirectly connected modes provide the ability to choose to up
 
 Aside from the previously mentioned capability differences between an Arc-enabled SQL MI and an Azure SQL MI (elastic / limitless scalability, automatic HA/DR and compliance certification) directly connected mode provides you with the same management capabilities as if you were running Azure SQL MI. 
 
-Directly connected mode allows you to manage and operate your Arc-enabled data services via [Azure Resource Manager APIs](https://docs.microsoft.com/rest/api/resources/), [Azure CLI](https://docs.microsoft.com/cli/azure/), [Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is-azure-data-studio?view=sql-server-ver15) or the [Azure portal](https://azure.microsoft.com/features/azure-portal/).
+Directly connected mode allows you to manage and operate your Arc-enabled data services via [Azure Resource Manager APIs](/rest/api/resources/), [Azure CLI](/cli/azure/), [Azure Data Studio](/sql/azure-data-studio/what-is-azure-data-studio) or the [Azure portal](https://azure.microsoft.com/features/azure-portal/).
 
 ## Indirectly connected mode
 
 Indirectly connected mode provides many of the benefits of Azure SQL MI in scenarios where your data services reside in a secure environment, or in an area that does not have direct connectivity to the internet. This is done by having the built-in management capabilities available to run locally inside the secure/disconnected environment.
 
-Indirectly connected mode allows you to manage and operate your Arc-enabled data services via Kubernetes native tools like [kubectl](https://kubernetes.io/docs/reference/kubectl/), [Azure CLI](https://docs.microsoft.com/cli/azure/) or [Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/what-is-azure-data-studio?view=sql-server-ver15) locally in your environment.
+Indirectly connected mode allows you to manage and operate your Arc-enabled data services via Kubernetes native tools like [kubectl](https://kubernetes.io/docs/reference/kubectl/), [Azure CLI](/cli/azure/) or [Azure Data Studio](/sql/azure-data-studio/what-is-azure-data-studio) locally in your environment.
 
 In this mode, you still have access to your Arc-enabled data services resources in the Azure portal but in a read-only view. All management actions required for your Arc-enabled data services you must be execute locally. 
 
