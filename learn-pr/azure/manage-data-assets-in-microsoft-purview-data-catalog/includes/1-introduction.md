@@ -4,7 +4,7 @@ Microsoft Purview (formerly Azure Purview) is a unified data governance service 
    "In the Microsoft Purview governance portal architecture, on-premises, cloud, and SAAS data sources are flowing into the Data Map, which is at the bottom of the stack inside the Microsoft Purview governance portal. Data Catalog and Data Estate Insights sit on top of the data map, and on top of those are Data producers and consumers. Azure Synapse Analytics, SQL Server, Power BI, and Azure SQL are all shown extracting data from all levels of the Microsoft Purview governance portal stack."
 :::image-end:::
 
-The Microsoft Purview Data Catalog is one of two main pillars in Microsoft Purview that sits atop the Microsoft Purview Data Map. The data map scans resources, and houses metadata about the assets in those resources. The data catalog makes this metadata accessible to your users without sacrificing security, and allows you to curate your experience to match your data. Users can search and browse data assets to find relevant information based on the kind of data it is or even its context in your business.
+The Microsoft Purview Data Catalog is one of two main pillars in Microsoft Purview that sits atop the Microsoft Purview Data Map. The data map scans resources, and houses metadata about the assets in those resources. The data catalog makes this metadata accessible to your users without sacrificing security, and allows you to curate your experience to match your data. Users can search and browse data assets to find relevant information based on the kind of data it's or even its context in your business.
 
 ## Scenario
 

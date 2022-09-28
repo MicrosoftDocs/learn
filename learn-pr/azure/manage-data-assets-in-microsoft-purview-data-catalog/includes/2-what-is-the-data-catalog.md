@@ -25,7 +25,7 @@ There are three main functions of the data catalog that contribute to each other
 - Manage and curate your data assets
 - Build a business glossary
 
-In this unit we'll explore each of these aspects so you can use the data catalog to understand your data landscape and discover trustworthy data within your organization.
+In this unit we'll, explore each of these aspects so you can use the data catalog to understand your data landscape and discover trustworthy data within your organization.
 
 ## Search and browse
 

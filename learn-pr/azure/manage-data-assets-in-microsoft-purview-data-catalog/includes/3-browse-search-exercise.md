@@ -72,16 +72,16 @@ In this exercise, we'll use the data catalog to search and browse for data, and 
     | OR | Specifies that an asset must have at least one of the two keywords. Must be in all caps. A white space is also an OR operator.  | The query `hive OR database` returns assets that contain 'hive' or 'database' or both. |
     | AND | Specifies that an asset must have both keywords. Must be in all caps | The query `hive AND database` returns assets that contain both 'hive' and 'database'. |
     | NOT | Specifies that an asset can't contain the keyword to the right of the NOT clause. Must be in all caps  | The query `hive NOT database` returns assets that contain 'hive', but not 'database'. |
-    | () | Groups a set of keywords and operators together. When combining multiple operators, parentheses specify the order of operations. | The query `hive AND (database OR warehouse)` returns assets that contain 'hive' and either 'database' or 'warehouse', or both. |
+    | () | Groups a set of keywords and operators together. When you combine multiple operators, parentheses specify the order of operations. | The query `hive AND (database OR warehouse)` returns assets that contain 'hive' and either 'database' or 'warehouse', or both. |
     | "" | Specifies exact content in a phrase that the query must match to. | The query `"hive database"` returns assets that contain the phrase "hive database" in their properties |
-    | field:keyword | Searches the keyword in a specific attribute of an asset. Field search is case insensitive and is limited to the following fields at this time:  name, description, entityType, assetType, classification, term, contact | The query `description: German` returns all assets that contain the word "German" in the description. The query `term:Customer` will return all assets with glossary terms that include "Customer" and all glossary terms that match to "Customer". |
+    | field: keyword | Searches the keyword in a specific attribute of an asset. Field search is case insensitive and is limited to the following fields at this time:  name, description, entityType, assetType, classification, term, contact | The query `description: German` returns all assets that contain the word "German" in the description. The query `term:Customer` will return all assets with glossary terms that include "Customer" and all glossary terms that match to "Customer". |
 
     > [!TIP]
     > Searching "*" will return all the assets and glossary terms in the catalog.
 
 ## Looking at an asset
 
-When you select an asset in the data catalog, there's a lot of information to look at. Using the chart below, we'll go through some of the basics:
+When you select an asset in the data catalog, there's much information to look at. Using the chart below, we'll go through some of the basics:
 
 :::image type="complex" source="../media/browse-and-search-exercise/asset-view-inline.png" alt-text="Screenshot of an asset in the Microsoft Purview Data Catalog, each of its parts labeled." lightbox="../media/browse-and-search-exercise/asset-view.png":::
    "1. The breadcrumb list of links at the top of the page. 2. A label that says certified next to the name of the asset. 3. The asset action bar in the middle of the page. 4. Tabs for the asset window. 5. The asset description on the overview page. 6. Classifications on the overview page. 7. Schema classifications on the overview page. 8. On the right side of the page, the navigational hierarchies. 9. On the bottom right of the page, the associated glossary terms."
