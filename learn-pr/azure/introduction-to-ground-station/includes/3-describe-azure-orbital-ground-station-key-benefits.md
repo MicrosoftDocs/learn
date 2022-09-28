@@ -14,4 +14,4 @@ Contoso decides to adopt Azure Orbital Ground Station. Let’s look at the key r
 
 - **AI/ML and geospatial data sets**: With AO Ground Station, the earth observation data collected by Contoso’s satellites can be stored on the cloud and processed via geospatial data sets on Azure.
 
-Azure Orbital Ground Station makes it possible for Contoso to downlink, process, and analyze space data from its satellite constellation without costly capital investments in their own ground stations. This then allows Contoso to provide a managed service to their end customers by leveraging and reselling Azure Orbital Ground Station and digital ground segments—unlocking an OPEX (operating expense) model.
+Azure Orbital Ground Station makes it possible for Contoso to downlink, process, and analyze space data from its satellite constellation without costly capital investments in their own ground stations. This then allows Contoso to provide a managed service to their end customers by leveraging and reselling Azure Orbital Ground Station and digital ground segments—unlocking an operating expense (OPEX) model.

@@ -12,7 +12,7 @@ Below you’ll see a table where we've gathered all the information needed to cr
 
 Information needed to create a contact profile resource:
 
-| ***Field*** | ***Information needed*** | ***Description*** |
+| **Field** | **Information needed** | **Description** |
 |---|---|---|
 | **Name** | AQUA Downlink | The name of your satellite contact profile |
 | **Region** | West US 2 | The Azure region you want to use. Each Azure region features datacenters within a latency-defined perimeter connected through a dedicated regional low-latency network. This design provides the best possible performance and security within each region. You can find more information on [Azure regions in Microsoft Docs](/azure/availability-zones/az-overview).  |
@@ -25,7 +25,7 @@ Information needed to create a contact profile resource:
 
 Information needed to set up the link:
 
-| ***Field*** | ***Information needed*** | ***Description*** |
+| **Field** | **Information needed** | **Description** |
 |---|---|---|
 | **Link Direction** | Downlink | The direction you want information to flow. Information can be uplinked (from the ground station to the satellite) or downlinked (from the satellite to the ground station). |
 | **EIRP (Equivalent Isotropic Radiated Power)** | NA for downlink | If you select “uplink”, you need to input the EIRP in dBW. EIRP is used to determine the transmitter power and beam verification. |
@@ -34,7 +34,7 @@ Information needed to set up the link:
 
 Information needed to set up the channel:
 
-| ***Field*** | ***Information needed*** | ***Description*** |
+| **Field** | **Information needed** | **Description** |
 |---|---|---|
 | **Center Frequency** | 8160 | The measure of central frequency between lower and upper cutoff frequencies. Frequency is the number of times that an alternating current goes through its complete cycle in one second. Higher frequency bands typically result in wider bandwidths but are more susceptible to signal degradation. |
 | **Bandwidth** | 15.0 | The amount of data that can be received, processed, and transmitted by a satellite. |
@@ -50,25 +50,23 @@ Now that you have the needed information on hand, we’ll walk through how to cr
 
 1. Navigate back to the Azure Orbital home page.
 
-:::image type="content" source="../media/AO-homepage.png" alt-text="Screenshot of the main Azure Orbital window, showing icons for register a space craft, create a contact profile, and schedule a contact.":::
+    :::image type="content" source="../media/AO-homepage.png" alt-text="Screenshot of the main Azure Orbital window, showing icons for register a space craft, create a contact profile, and schedule a contact.":::
 
 2. Select Create a Contact Profile.
 
-:::image type="content" source="../media/orbital-eos-contact-profile.png" alt-text="Screenshot of the Create Contact Profile resource page on the basics tab. There are blank fields that need to be filled out for the project details and instance details.":::
+    :::image type="content" source="../media/orbital-eos-contact-profile.png" alt-text="Screenshot of the Create Contact Profile resource page on the basics tab. There are blank fields that need to be filled out for the project details and instance details.":::
 
 3. Fill out the Basics tab using the information provided in the Getting started section above. Here you'll designate where the data should go once the satellite and ground station have made contact.
 4. Go to the Links tab and select Add new Link.
 
-:::image type="content" source="../media/orbital-eos-contact-link.png" alt-text="Screenshot of the Create Contact Profile resource page on the links tab with a red box around Add a new Link button." border="true":::
+    :::image type="content" source="../media/orbital-eos-contact-link.png" alt-text="Screenshot of the Create Contact Profile resource page on the links tab with a red box around Add a new Link button." border="true":::
 
 5. Use the information provided in the Getting started section above to create the link.  
 
-:::image type="content" source="../media/Orbital-eos-contact-channel.png" alt-text="Screenshot of the page that comes up when Add a new Link is selected. There's a red box around Add Channel." border="true":::
+    :::image type="content" source="../media/Orbital-eos-contact-channel.png" alt-text="Screenshot of the page that comes up when Add a new Link is selected. There's a red box around Add Channel." border="true":::
 
 6. Once you’ve filled out the link information, select Add Channel and input the pertinent information on the AQUA satellite and the relevant information for your endpoint.
-7. For the purposes of this exercise, skip the information on the Tags page.
-
-**Note**: Tags aren't required to register a spacecraft, but they can be [helpful for managing spend and use across all products in a company’s Azure account](/azure/azure-resource-manager/management/tag-resources?tabs=json).  
+7. For the purposes of this exercise, skip the information on the Tags page. Tags aren't required to register a spacecraft, but they can be [helpful for managing spend and use across all products in a company’s Azure account](/azure/azure-resource-manager/management/tag-resources?tabs=json).  
 
 8. Finally, go to Review + create to review the information you entered and create the contact profile.
 

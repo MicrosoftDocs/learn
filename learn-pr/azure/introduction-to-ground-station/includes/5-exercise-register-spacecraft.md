@@ -8,7 +8,7 @@ We’ll use [NASA’s AQUA satellite](/azure/orbital/downlink-aqua) as an exampl
 
 Because this satellite is publicly available, you can follow along in your Azure account to practice registering NASA’s AQUA satellite. If you don’t have one yet, [you can create an account for free](https://azure.microsoft.com/free/).
 
-Information needed to create a spacecraft resource:
+### Information needed to create a spacecraft resource
 
 | **Field** | **Information needed** | **Description** |
 |---|---|---|
@@ -19,7 +19,7 @@ Information needed to create a spacecraft resource:
 | **TLE line 1** | [Enter the TLE line 1 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | The first line of the TLE.  Example 1: 27424U 02022A   22250.53879010  .00000478  00000+0  11551-3 0  9993 |
 | **TLE line 2** | [Enter the TLE line 2 from Celestrak](https://celestrak.org/NORAD/elements/active.txt) | The second line of the TLE. Example 2: 27424  98.2510 191.6693 0001463  54.4662 357.4337 14.57372758 82148 |
 
-Information needed to set up the downlink:
+### Information needed to set up the downlink
 
 | **Field** | **Information needed** | **Description** |
 |---|---|---|
@@ -35,23 +35,23 @@ Now that you have the above information on hand, we’ll walk through how to reg
 1. Sign in to the Azure portal at https://portal.azure.com.
 2. Search for Azure Orbital in the search bar.
 
-:::image type="content" source="../media/AO-homepage.png" alt-text="Screenshot of the main Azure Orbital dashboard, showing icons for register a space craft, create a contact profile, and schedule a contact.":::
+    :::image type="content" source="../media/AO-homepage.png" alt-text="Screenshot of the main Azure Orbital dashboard, showing icons for register a space craft, create a contact profile, and schedule a contact.":::
 
 3. Select Register a Spacecraft to get started.
 
-:::image type="content" source="../media/orbital-eos-register-bird.png" alt-text="Screenshot of the Create a Spacecraft resource page on the basics tab. There are blank fields that need to be filled out for the project details and instance details.":::
+    :::image type="content" source="../media/orbital-eos-register-bird.png" alt-text="Screenshot of the Create a Spacecraft resource page on the basics tab. There are blank fields that need to be filled out for the project details and instance details.":::
 
 4. Start by filling out the information on the Basics tab using the AQUA satellite information provided in the Getting started section.
 
-> [!NOTE]
-> Two Line Elements are updated frequently, so you'll need to [reference the latest TLEs via Celestrak](https://celestrak.org/NORAD/elements/active.txt).
+    > [!NOTE]
+    > Two Line Elements are updated frequently, so you'll need to [reference the latest TLEs via Celestrak](https://celestrak.org/NORAD/elements/active.txt).
 5. Select Next: Links or go to the Links tab and select Add new Link.
 
-:::image type="content" source="../media/orbital-eos-register-links.png" alt-text="Screenshot of the Create a Spacecraft resource page on the links tab with a red box around Add a new Link. On the right side of the screen, there are blank fields that need to be filled out for the link details.":::
+    :::image type="content" source="../media/orbital-eos-register-links.png" alt-text="Screenshot of the Create a Spacecraft resource page on the links tab with a red box around Add a new Link. On the right side of the screen, there are blank fields that need to be filled out for the link details.":::
 
 6. Fill out the fields using the AQUA satellite information provided in the Getting started section. Then hit Submit.  
 7. Skip the information on the Tags page. Tags aren't required to register a spacecraft, but they can be [helpful for managing spend and use across all products in a company’s Azure account](/azure/azure-resource-manager/management/tag-resources?tabs=json).
 8. Finally, go to Review + create to review the information you entered and create the spacecraft resource.
 
-> [!NOTE]
-> You can't use this spacecraft to schedule a contact until it has been authorized, which takes about 24 hours. To request authorization for your spacecraft, use the [Azure Orbital Spacecraft Authorization Form](https://forms.office.com/r/QbUef0Cmjr). If you’re following along in your free account, you won’t be able to schedule the contact until the spacecraft has been authorized. However, you can proceed to the next step while you wait.
+    > [!NOTE]
+    > You can't use this spacecraft to schedule a contact until it has been authorized, which takes about 24 hours. To request authorization for your spacecraft, use the [Azure Orbital Spacecraft Authorization Form](https://forms.office.com/r/QbUef0Cmjr). However, you can proceed to the next step while you wait for authorization.
