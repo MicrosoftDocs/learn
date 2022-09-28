@@ -1,6 +1,4 @@
-Azure Database for PostgreSQL - Hyperscale (Citus) is now [Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/)!
-
-<https://learn.microsoft.com/training/modules/extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/>
+Azure Database for PostgreSQL - Hyperscale (Citus) is now [Azure Cosmos DB for PostgreSQL](../../../paths/azure-cosmos-db-for-postgresql/index.yml)!
 
 [Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/overview) is a fully managed database-as-a-service hosted on Azure that delivers the full functionality of PostgreSQL combined with the ability to distribute data across multiple servers in a cluster. It's a robust database with a wide range of built-in features. However, sometimes additional capabilities are required to solve complex real-world problems. Azure Cosmos DB for PostgreSQL inherits many of its capabilities from the service formally called Azure Database for PostgreSQL - Hyperscale (Citus).
 
@@ -10,7 +8,7 @@ In fact, the distributed capabilities of Azure Cosmos DB for PostgreSQL are made
 
 ![Diagram showing three of the extensions you will use in this learning module, Citus, PostGIS, and pg_cron, being added to Azure Cosmos DB for PostgreSQL and used to extend the functionality of the database.](../media/3a-cosmos-db-for-postgresql-extensions.png)
 
-In the Azure Cosmos DB for PostgreSQL module, you'll explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You'll examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
+In the [Extend functionality using extensions](../../extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/1-introduction.yml) module, you'll explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You'll examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
 
 ## Scenario: Scale and extend Azure Cosmos DB for PostgreSQL using extensions
 
