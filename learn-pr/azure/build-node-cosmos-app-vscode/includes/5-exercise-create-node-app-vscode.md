@@ -1,19 +1,23 @@
-In this exercise, use Visual Studio Code's customizable IDE to build, test, and run this Node.js application against the Azure sandbox containing your resources.
+In this unit, use Visual Studio Code to build and run a Node.js application against the Azure sandbox containing your resources.
 
-* **Install npm packages** that enable you to configure Node.js for use in Visual Studio Code. 
-* **Write JavaScript code** that creates and queries for data with an Azure SDK package. 
+* **Install npm packages** that enable you to programmatically work with your Cosmos DB Core (SQL) database. 
+* **Write JavaScript code** that uploads the Contoso products dataset to a container. 
 * **Run code** to manage that data.
 
 > [!NOTE]
-> This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer.
+> This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer and started your Learn sandbox.
 
 ## Create Node.js project 
 
-1. Start Visual Studio Code if it isn't already running.
+1. Use a terminal at a folder location where you want your Node.js application. Enter the following command to open Visual Studio Code at the location.
 
-2. On the **Terminal** menu, select **New Terminal**, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
+    ```bash
+    code .
+    ```
 
-3. In the **Terminal** window, run the following command to create a new folder named **contoso-retail** for the Node application.
+1. On the **Terminal** menu, select **New Terminal**, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
+
+3. In the **Terminal** window, run the following command to create a new folder named **contoso-retail** for the Node application and change into that folder.
   
     ```bash
     mkdir contoso-retail && cd contoso-retail
@@ -27,11 +31,11 @@ In this exercise, use Visual Studio Code's customizable IDE to build, test, and 
 
     The **npm init** command creates a **package.json** file and displays its contents. This file contains the initial metadata for the application, containing a default name, description, and entry point.
 
-5. On the **File** menu in Visual Studio Code, select **Open Folder**, and then open the **contoso-retail** folder.
+5. On the **File** menu in Visual Studio Code, select **Open folder**, and then open the **contoso-retail** folder.
 
 6. In the **Explorer** window, select the **package.json** file.
 
-7. In the editor pane, change the following: 
+7. In the editor pane, change the following for the **package.json** file: 
 
     |Property|Value|
     |--|--|
@@ -39,7 +43,7 @@ In this exercise, use Visual Studio Code's customizable IDE to build, test, and 
     |**type**|`module` - the JavaScript code uses ES6 syntax|
 
 
-    The file should look like this.
+    The file should look like this. The sample code uses ES6 syntax so you need to set the type of the application to **module**. 
 
     ```text
     {
@@ -124,17 +128,11 @@ The products in this dataset have the following shape:
       "price": 539.99,
       "tags": [
         { "id": "461ADE06-0903-4BAF-97AB-CC713E5B1DD4", "name": "Tag-174" },
-        { "id": "AC4CC3CC-4E6B-461D-9B0E-4218EDDF3142", "name": "Tag-122" },
-        { "id": "D56040DB-E5DF-40BE-9F2F-7E10F4340BCA", "name": "Tag-31" },
-        { "id": "D77B44A9-7951-4CC8-BB27-8B5D78CFDDF8", "name": "Tag-124" },
-        { "id": "E468DF53-4836-4546-9D05-C855AAC4B0AF", "name": "Tag-2" }
+        ...
       ],
       "inventory": [
         { "location": "Dallas", "inventory": 91 },
-        { "location": "Seattle", "inventory": 54 },
-        { "location": "Boston", "inventory": 7 },
-        { "location": "Miami", "inventory": 86 },
-        { "location": "San Diego", "inventory": 81 }
+        ...
       ]
     }
 ```
@@ -181,4 +179,7 @@ The products in this dataset have the following shape:
 
     :::image type="content" source="../media/5-view-product-document.png" alt-text="Screenshot of the Visual Studio Code showing a newly added Cosmos DB Core document." loc-scope="vs-code":::
 
-You've now seen how to use Visual Studio Code to create, and run a Node.js application for Cosmos DB.
+## Check your work
+
+* In Visual Studio Code, in the Azure Databases extension you see your Cosmos DB account, database, and container.
+* When you expand your container, you see many items under the **Documents** node. 

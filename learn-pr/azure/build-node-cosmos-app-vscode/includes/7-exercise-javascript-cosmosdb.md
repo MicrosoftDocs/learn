@@ -1,4 +1,4 @@
-In this unit, you'll create and run scripts which use SQL keywords such as LIKE, JOIN, and WHERE to find data with the Cosmos SDK.
+In this unit, you'll create and run scripts, which use SQL keywords such as LIKE, JOIN, and WHERE to find data with the Cosmos SDK.
 
 ## Create the script to find products in the container
 
@@ -94,4 +94,7 @@ In this unit, you'll create and run scripts which use SQL keywords such as LIKE,
 
 	Because the product with the ID doesn't exist, it's inserted. Then the script updates the product with inventory. Both the insert and the update functionality use the same code to upsert. 
 
-You've now seen how to use Visual Studio Code to create, edit, and run a Node.js application.
+## Check your work
+
+* In Visual Studio Code, in the Azure Databases extension you see your Cosmos DB account, database, and container.
+* When you run the scripts, you see products are returned in the console. 

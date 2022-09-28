@@ -203,9 +203,9 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
 
     You have added and edited Cosmos DB documents. 
 
-## Delete documents
+## Delete container
 
-In the Azure explorer, right-click each of the product documents and delete them. You'll upload the _entire_ products data set in the next section.
+1. In the Azure explorer, right-click each of the product container and delete it. You'll create a new container and upload the _entire_ products dataset in the next exercise.
 
 ## Check your work
 

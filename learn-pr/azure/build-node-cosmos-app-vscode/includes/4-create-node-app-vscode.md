@@ -1,16 +1,15 @@
-Visual Studio Code makes it easy to write JavaScript code and run it using Node.js. The Visual Studio Code editor has built-in support for JavaScript and JSON. You utilize the IntelliSense features of the editor to help you check syntax. IntelliSense also offers code-completion, helping to minimize any syntactic and semantic errors in your applications. You can use the integrated debugging tools to help test and verify your code.
+In this unit, you'll understand how to:
 
-In this unit, you'll learn how to create a JavaScript application using Visual Studio Code and Cosmos DB. You'll see how to run the application using Node.js from within Visual Studio Code. Finally, you'll learn how to use the debugger to step through your code and examine variables as your code runs.
+* Create a JavaScript application using Visual Studio Code and Cosmos DB.
+* Use intellisense to help with writing code.
+* Run the application using Node.js from within Visual Studio Code. 
+* Use integrated debugger to step through your code and examine variables as your code runs.
 
 ## Create a JavaScript application for Node.js
 
 You can create a new JavaScript application for Node.js from within Visual Studio Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
 
-Edit the **package.json** file and add a description to the **description** property. Also, replace the value for **main** with the name of the JavaScript file that will hold your application code, such as `index.js`.
-
-Create a new file for your application code. Save the file with the same name as the one you specified in the **package.json** file. Make sure you give the file a **.js** extension (for JavaScript)
-
-You're now ready to start writing your JavaScript code.
+Then you need to create a new file for your application code. When you save the file, make sure you give the file a **.js** extension (for JavaScript). You're now ready to start writing your JavaScript code.
 
 ## Use IntelliSense to help write your code
 
@@ -38,9 +37,9 @@ The simplest way to run a Node.js application from Visual Studio Code is to use 
 
 You can use the native Node.js debugger (for example, `node inspect index`) from a terminal window, but Visual Studio Code provides an enhanced environment for stepping through and debugging Node.js applications.
 
-Before you use the Visual Studio Code debugger, you should configure it. 
+## Configure debugger in launch.json file
 
-To edit the debugger configuration settings, on the **Run** menu, select **Add configuration**. On the **Select debugger** option, select **Node.js**. The `./.vscode/launch.json` file displays your new configuration. 
+Before you use the Visual Studio Code debugger, you should configure it. To edit the debugger configuration settings, on the **Run** menu, select **Add configuration**. On the **Select debugger** option, select **Node.js**. The `./.vscode/launch.json` file displays your new configuration. 
 
 ```json
 {
@@ -57,18 +56,42 @@ To edit the debugger configuration settings, on the **Run** menu, select **Add c
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/index.js",
-            // add to use external terminal
-            "console": "externalTerminal",
-            // add to start with arguments pass in
+        }
+    ]
+}
+```
+
+For this Contoso application, with several files, we'll add a couple of extra properties. Change the **program** property file name to `${file}`. This allows you to debug the currently active JavaScript file. Add the **args** property when you need to pass in parameters to the application. These values are available from the **process.argv** property available in the Node.js runtime.
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/${file}",
+            // these values are available as process.argv
             "args": ["abc", "1"],
         }
     ]
 }
 ```
 
-Before you begin to debug, set a breakpoint in your application code. To do this, click in the left margin by the statement at which you want to pause execution. A red dot will appear.
+## Set breakpoints
 
-Next, select **Start Debugging** on the **Run** menu. If you're using an external terminal, a new terminal window will appear. Debugger output will appear in the **Output** window in Visual Studio Code.
+Before you begin to debug, you should set a breakpoint in your application code. To do this, click in the left margin by the statement at which you want to pause execution. A red dot will appear.
+
+## Start debugging
+
+To start debugging, select **Start Debugging** on the **Run** menu. If you're using an external terminal, a new terminal window will appear. Debugger output will appear in the **Output** window in Visual Studio Code.
 
 When the debugger reaches a breakpoint in your application, execution will pause, and the breakpoint statement is highlighted. You'll see windows where you can examine and set the values of local and global variables, and the call stack. You can also add **Watch** expressions, which are evaluated and displayed as execution proceeds.
 
@@ -82,3 +105,5 @@ When the debugger reaches a breakpoint in your application, execution will pause
 |4- Breakpoints|All the breakpoints set in the application.|
 |5- Debug toolbar|This toolbar contains commands that enable you to single-step through your code. If a statement contains a function call, you can step into that function, or step over it. The step-out command continues execution until the function finishes. You can also continue running the application, either until the debugger reaches another breakpoint or the application finishes.|
 |6 - Debug console|See any console statement values.|
+
+As you add JavaScript code in the next few exercises, you may need to debug the code to determine what is wrong. Come back to this unit when necessary. 
