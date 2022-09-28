@@ -6,7 +6,9 @@ In this unit, we’ll return to the hypothetical satellite operator company, Con
 
 To use the data downlinked from their satellites, Contoso must first process it. Processing data transforms it from unusable, demodulated data into an analysis-ready data set. Every satellite constellation has its own set of tools to process data coming from its satellites; so, Contoso will use their unique tools and algorithms on Azure. With Azure’s vast storage and powerful compute, Contoso can process their data quickly and access all the compute and storage they could possibly need.
 
-There are four standard data levels—0 being unprocessed and four being model outputs or results. For data to be considered analysis ready, it needs to be at a level 2.
+### Data levels
+
+There are four standard data levels from 0-4. For data to be considered analysis ready, it needs to be at a level 2.
 
 **Level 0:** Data directly from the spacecraft. At this stage, it's reconstructed, unprocessed instrument and payload data at full resolution. All communication artifacts, such as duplicate data or synchronization frames, are removed.
 
@@ -18,11 +20,11 @@ There are four standard data levels—0 being unprocessed and four being model o
 
 **Level 4:** Model or output results from analyses of lower-level data.
 
-Once data has been processed to level 2, it can be analyzed then applied in various ways.
-
-## Analyze and apply data
+## Analyze data
 
 Contoso has a diverse range of customers across industries who want to use earth observation data for data-driven decision making. To provide the unique analysis needed for each end customer, Contoso can use solutions from members of the Azure Space partner community. The Azure Space partner community offers industry-leading AI and ML data analysis tools to support data-driven decision making. These offerings can be bundled into a larger managed service offering to provide increased value to Contoso’s end user.  
+
+## Possible data applications
 
 Let’s look at some possible use cases for how Contoso’s customers could use earth observation data that is collected on Contoso’s satellites, downlinked via Azure Orbital Ground Station, and further analyzed using Azure Space Partner community offerings:
 

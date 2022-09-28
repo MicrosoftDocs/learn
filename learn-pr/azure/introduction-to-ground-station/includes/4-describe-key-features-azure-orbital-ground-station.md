@@ -17,4 +17,4 @@ The Azure Orbital portal is extremely user friendly, and in the following units 
 
 However, rather than using the Azure Orbital portal, Contoso wants to manage the above steps from their own mission planning application to minimize the number of new platforms that their team needs to learn. Contoso can use Azure REST APIs to write their own scripts to command, control, and downlink using Azure Orbital Ground Station from their own app.
 
-In the next units we’ll use the example of NASA’s publicly available satellite AQUA to register a spacecraft, create a contact profile, schedule a contact, and downlink data within the Azure Orbital portal. You can follow along in your own free Azure account.
+In the next units we’ll use the example of NASA’s publicly available satellite AQUA to register a spacecraft, create a contact profile, schedule a contact, and downlink data within the Azure Orbital portal.

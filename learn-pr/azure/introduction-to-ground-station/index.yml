@@ -14,10 +14,11 @@ abstract: |
   After completing this module, you'll be able to:
   - Understand how Azure Orbital Ground Station fits into the space market  
   - Identify Azure Orbital Ground Station's key benefits 
-  - Articulate how Azure Orbital Ground Station works via each step in the AO Ground Station architecture 
-  - Know the steps to provision services, including registering a spacecraft, scheduling a contact, downlinking data, and processing data  
+  - Articulate how Azure Orbital Ground Station works at each step in the architecture
+  - Know the steps to provision services, including registering a spacecraft, scheduling a contact, downlinking data, and processing data
 prerequisites: |
-  - Familiarity with cloud computing concepts
+  - Familiarity with Azure Space.
+  - Ability to navigate the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
