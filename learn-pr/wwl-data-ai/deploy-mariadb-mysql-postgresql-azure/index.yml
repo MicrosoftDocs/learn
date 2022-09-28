@@ -37,7 +37,6 @@ units:
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.introduction
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.describe-open-source-offerings
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.explain-how-to-deploy-postgresql-to-azure
-- learn.wwl.deploy-mariadb-mysql-postgresql-azure.deploy-mysql-mariadb-to-azure
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.exercise-deploy-azure-database-postgresql
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.knowledge-check
 - learn.wwl.deploy-mariadb-mysql-postgresql-azure.summary
