@@ -21,8 +21,8 @@ A file is stored in an Azure blob storage account, and the file is consumed and 
 
 Sometimes, different sources connected to Microsoft Purview update the same data asset with similar, but slightly different qualified names. For example:
 
-You scan in an Azure Blob with the qualified name https://myaccount.file.core.windows.net/myshare/folderA/folderB/my-file.parquet. 
-This blob is also consumed by an Azure Data Factory pipeline that will then add lineage information to the asset. The ADF pipeline may be configured to read the file as https://myAccount.file.core.windows.net//myshare/folderA/folderB/my-file.parquet.
+You scan in an Azure Blob with the qualified name `https://myaccount.file.core.windows.net/myshare/folderA/folderB/my-file.parquet`. 
+This blob is also consumed by an Azure Data Factory pipeline that will then add lineage information to the asset. The ADF pipeline may be configured to read the file as `https://myAccount.file.core.windows.net//myshare/folderA/folderB/my-file.parquet`.
 
 The names are different, but ultimately the piece of data is the same, so Microsoft Purview uses a normalization process to ensure all metadata from both Azure Storage and Azure Data Factory is included under a single data asset.
 
