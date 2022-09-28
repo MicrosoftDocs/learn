@@ -28,7 +28,7 @@ Execute the query on the container to fetch the documents. The query's results a
 const { resources } = await container.items.query(querySpec).fetchAll();
 ```
 
-It iterate over the entire collection, use the for/of loop. 
+It iterates over the entire collection, use the for/of loop. 
 
 ```javascript
 let i = 0;
@@ -51,7 +51,7 @@ The output looks something like:
 
 ## Query for documents by string property using LIKE in a container
 
-Let's make query more flexible by wrapping it in a function take takes a document's property, and its value to find. This allows for partial matches to any string property. 
+To make the query more flexible by wrapping it in a function that takes a document's property, and its value to find. This allows for partial matches to any string property. 
 
 ```javascript
 // Find all products that match a property with a value like `value`
@@ -82,11 +82,13 @@ async function executeSqlFind(property, value) {
 }
 ```
 
+The property and value are passed into the function and used in the query for string values.
+
 ## Query for documents and return inventory subproperty using JOIN keyword in a container
 
-Let's report on the inventory of products by using the JOIN keyword to access this subproperty of the product document.
+To report on the inventory of products by using the JOIN keyword to access this **inventory** subproperty of the product.
 
-The product shape has two subproperties, tags and inventory. To query and/or return subproperty values, use the JOIN keyword. The following SQL query has been formatted for readability only.
+The product shape has two subproperties, tags and inventory. To query and/or return subproperty values, use the JOIN keyword. The following SQL query has been formatted for readability only and doesn't need to be used in JavaScript.
 
 ```sql
 SELECT
@@ -99,7 +101,64 @@ FROM
 JOIN 
     inventory i IN p.inventory 
 WHERE 
-    p.${property} LIKE @propertyValue 
+    p.name LIKE '%Blue%'
 AND 
-    i.location=@location
+    i.location='Dallas'
 ```
+
+The inventory variable, `i`:
+
+* Is named in the JOIN clause to access the subproperty data.
+* Is used in the WHERE clause to reduce the dataset.
+* Is used in the SELECT clause to return the inventory properties. 
+
+Keep the function flexible by passing in the 
+
+```javascript
+async function executeSqlInventory(propertyName, propertyValue, locationPropertyName, locationPropertyValue) {
+  // Build query
+  const querySpec = {
+    query: `select p.id, p.name, i.location, i.inventory from products p JOIN i IN p.inventory where p.${propertyName} LIKE @propertyValue AND i.${locationPropertyName}=@locationPropertyValue`,
+
+    parameters: [
+      {
+        name: "@propertyValue",
+        value: `${propertyValue}`,
+      },
+      { 
+        name: "@locationPropertyValue", 
+        value: `${locationPropertyValue}` },
+    ],
+  };
+
+  // Show query
+  console.log(querySpec);
+
+  // Get results
+  const { resources } = await container.items.query(querySpec).fetchAll();
+
+  let i = 0;
+
+  // Show results of query
+  console.log(`Looking for ${propertyName}=${propertyValue}, ${locationPropertyName}=${locationPropertyValue}`);
+  for (const item of resources) {
+    console.log(
+      `${++i}: ${item.id}: '${item.name}': current inventory = ${
+        item.inventory
+      }`
+    );
+  }
+}
+```
+
+This function returns output like:
+
+```
+Looking for name=%Blue%, location=Dallas
+1: 08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2: 'Touring-1000 Blue, 50': current inventory = 42
+2: 2C981511-AC73-4A65-9DA3-A0577E386394: 'Touring-1000 Blue, 46': current inventory = 12
+3: 44873725-7B3B-4B28-804D-963D2D62E761: 'Touring-1000 Blue, 60': current inventory = 83
+4: 4E4B38CB-0D82-43E5-89AF-20270CD28A04: 'Touring-2000 Blue, 60': current inventory = 90
+5: 5308BAE7-B0CB-4883-9A93-192CB10DC94F: 'Touring-3000 Blue, 44': current inventory = 97
+```
+
