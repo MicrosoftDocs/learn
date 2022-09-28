@@ -17709,6 +17709,11 @@
       "source_path": "learn-pr/wwl-data-ai/deploy-mariadb-mysql-postgresql-azure/6-exercise-deploy-azure-database-postgresql.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/deploy-mariadb-mysql-postgresql-azure/3-explain-how-deploy-postgresql-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-learn-azure-database-for-postgresql/",
+      "redirect_document_id": false
     }
   ]
 }
