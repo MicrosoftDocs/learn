@@ -1257,3 +1257,8 @@ achievements:
   title: Describe Azure Databricks Delta Lake architecture
   summary: Describe Azure Databricks Delta Lake architecture
   iconUrl: /training/achievements/describe-azure-databricks-delta-lake-architecture.svg
+- uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure.badge
+  type: badge
+  title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
+  summary: Deploy MariaDB, MySQL, and PostgreSQL on Azure
+  iconUrl: /training/achievements/deploy-mariadb-mysql-and-postgresql-on-azure.svg
