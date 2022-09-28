@@ -10,24 +10,6 @@ In fact, the distributed capabilities of Azure Cosmos DB for PostgreSQL are made
 
 In the [Extend functionality using extensions](../../extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/1-introduction.yml) module, you'll explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You'll examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
 
-## Scenario: Scale and extend Azure Cosmos DB for PostgreSQL using extensions
-
-Suppose you work as the tech lead for Woodgrove Bank and have developed, trialed, and deployed a contactless payment app that works from six feet away. Your app is currently using a single on-premises PostgreSQL server.
-
-After successfully releasing the payment app to customers, your team has noticed that the current on-premises PostgreSQL server is struggling under the bank's heavy analytical workload. To address this issue, you need the ability to scale the database solution for capacity and performance.
-
-By using the Citus extension, Azure Cosmos DB for PostgreSQL allows you to scale your database across multiple PostgreSQL servers, seamlessly distributing and managing your data. Transactions are spread across the servers in your cluster, resulting in better transaction times, lower latency, and more room for analytical workloads.
-
-In addition to introducing a more performant and scalable database platform, Woodgrove Bank has also requested the ability to extend the database's capabilities. They're interested in collecting details about the locations for which their payment transactions are occurring and need a way to store geospatial data in the database. They've also asked about being able to run scheduled jobs in the database to handle computing rollups for an analytical dashboard.
-
-Finally, the bank would like to securely store CSV files containing its historical user data in an Azure Storage account and perform a bulk load of the data from the files into the database.
-
-With this scenario in mind, the rest of the module is focused on using Azure Cosmos DB for PostgreSQL to accommodate Woodgrove Bank's requests. You'll create an Azure Cosmos DB for PostgreSQL cluster and look at how to install and use PostgreSQL extensions to extend the capabilities of the database.
-
-To provide a database platform that meets Woodgrove Bank's requirements, your team has decided to migrate the on-premises PostgreSQL server to a multi-node, distributed database using [Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/overview). Created by the Citus Data team, it combines the benefits of PostgreSQL, the [Citus extension to PostgreSQL](https://github.com/citusdata/citus), and a fully managed database-as-a-service on Azure.
-
-To enable the additional capabilities requested by Woodgrove Bank, you plan to use several PostgreSQL extensions supported by Azure Cosmos DB for PostgreSQL.
-
 ## What are PostgreSQL extensions?
 
 In PostgreSQL, an _extension_ is a package that bundles multiple related SQL objects to provide new data types, better monitoring, foreign data wrappers, advanced security capabilities, and even new languages for writing stored procedures. [Packaging related objects together](https://www.postgresql.org/docs/current/extend-extensions.html) in this manner can significantly simplify database management.
