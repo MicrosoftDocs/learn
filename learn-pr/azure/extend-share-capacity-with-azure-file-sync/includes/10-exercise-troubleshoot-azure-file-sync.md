@@ -51,7 +51,7 @@ In this exercise, you'll first check that file sync is working correctly. Then y
 
     ![Screenshot of two File Explorer windows side by side.](../media/10-side-by-side.png)
 
-1. In the left window, below **CADFolder**, right-click, and select **New** > **Text Document**.
+1. In the left window, below **CADFolder**, right-click and select **New** > **Text Document**.
 
 1. Rename the file to **test**.
 
@@ -111,7 +111,7 @@ Because the file sync problems just started, they're listed as transient. If the
 
 1. Return to the Remote Desktop connection.
 
-1. Remove the invalid characters from the filename. In the left File Explorer, rename the **invalid╘«nameÉ.txt** file to **valid-name**.
+1. Remove the invalid characters from the filename. In the left File Explorer, rename the **invalid╘«nameÉ.txt** file to **valid-name.txt**.
 
 1. The file should now sync. Confirm the sync works by running this command again:
 
