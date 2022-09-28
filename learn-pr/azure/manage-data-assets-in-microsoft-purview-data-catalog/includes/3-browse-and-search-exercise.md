@@ -83,7 +83,7 @@ In this exercise, we'll use the data catalog to search and browse for data, and 
 
 When you select an asset in the data catalog, there's a lot of information to look at. Using the chart below, we'll go through some of the basics:
 
-:::image type="content" source="../media/browse-and-search-exercise/asset-view-inline.png" alt-text="Screenshot of an asset in the Microsoft Purview Data Catalog, each of its parts labeled." lightbox="../media/browse-and-search-exercise/asset-view.png":::
+:::image type="complex" source="../media/browse-and-search-exercise/asset-view-inline.png" alt-text="Screenshot of an asset in the Microsoft Purview Data Catalog, each of its parts labeled." lightbox="../media/browse-and-search-exercise/asset-view.png":::
    "1. The breadcrumb list of links at the top of the page. 2. A label that says certified next to the name of the asset. 3. The asset action bar in the middle of the page. 4. Tabs for the asset window. 5. The asset description on the overview page. 6. Classifications on the overview page. 7. Schema classifications on the overview page. 8. On the right side of the page, the navigational hierarchies. 9. On the bottom right of the page, the associated glossary terms."
 :::image-end:::
 
