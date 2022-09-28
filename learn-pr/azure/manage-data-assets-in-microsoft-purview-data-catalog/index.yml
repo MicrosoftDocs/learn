@@ -13,9 +13,9 @@ title: Manage data assets in the Microsoft Purview Data Catalog
 summary: "TMicrosoft Purview is a data governance service that allows you to understand and manage data in your business by answering questions like: What kind of data do I have? Where is my sensitive data? Where did my data come from? The Microsoft Purview Data Catalog is an application in Microsoft Purview that allows you to categorize, define, search, and browse data assets across your entire data estate."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Use the Microsoft Purview Data Catalog to browse and search your data assets."
-    - "Manage and edit assets in the data catalog"
-    - "Create and manage a business glossary to organize and define your data assets"
+    - Use the Microsoft Purview Data Catalog to browse and search your data assets
+    - Manage and edit assets in the data catalog
+    - Create and manage a business glossary to organize and define your data assets
 prerequisites: |
   - Ability to navigate the Azure portal
   - Access to a Microsoft Purview account with a data source added and scanned. You can follow our [deployment learn module to deploy a Microsoft Purview resource and scan the data.](/learn/modules/deploy-microsoft-purview-scan-data-resources/)
