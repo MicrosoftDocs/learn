@@ -14,4 +14,4 @@ The following additional resources are intended to provide more information on t
 
  -  [Get started with Azure Advisor](/training/modules/get-started-azure-advisor/) is a Microsoft Learn module that helps you get started with Azure Advisor.
  -  [Intro to Azure Service Health](/training/modules/intro-to-azure-service-health/) is a Microsoft Learn module that provides additional information about Azure Service Health.
- -  [Monitor the usage, performance, and availability of resources with Azure Monitor](/training/paths/monitor-usage-performance-availability-resources-azure-monitor/) is a learning path on Microsoft Learn that dives deeper into Azure Monitor. It provides helpful guidance on setting up and getting the most from the Azure Monitor service.
+ -  [Monitor the usage, performance, and availability of resources with Azure Monitor](/training/paths/monitor-usage-performance-availability-resources-azure-monitor/) is a Microsoft Learn learning path that dives deeper into Azure Monitor. It provides helpful guidance on setting up and getting the most from the Azure Monitor service.
