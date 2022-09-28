@@ -5,7 +5,7 @@ metadata:
   unitType: learning-content
   title: Scaffold data for distribution
   description: |
-    Choosing a distribution column and locating tables can make or break performance in Azure Cosmos DB for PostgreSQL. Colocation can enhance queries by storing shards of the same distribution column on the same node. With the right scaffolding in place, distributed queries can perform efficiently.
+    The distribution column and tables can influence performance in Azure Cosmos DB for PostgreSQL. Colocation can help distributed queries to perform efficiently.
   ms.date: 09/22/2022
   author: seesharprun
   ms.author: sidandrews

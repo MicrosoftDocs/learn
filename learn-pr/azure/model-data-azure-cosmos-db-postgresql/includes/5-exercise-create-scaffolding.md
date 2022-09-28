@@ -1,6 +1,6 @@
 In this exercise, you work with Woodgrove Bank's developers on distributing tables for the distributed version of Woodgrove Bank payment app's database:
 
-![Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.](../media/distributed-erd.png)
+:::image type="content" source="../media/distributed-entity-relationship-diagram.png" alt-text="Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.":::
 
 ## Create tables
 
@@ -31,7 +31,7 @@ The `payment_merchants` table is also a smaller table. The merchant information 
     `payment_events` is currently a local table. It's chained to `event_types` via the foreign key relationship. This output isn't concerning. This messaging will be repeated for all of the relationships. Due to the foreign keys already in place, creating the reference tables first shouldn't present a problem.
 
 
-2. Change the `payment_merchants` table from a local table to a reference table with the following command:
+1. Change the `payment_merchants` table from a local table to a reference table with the following command:
 
     ```sql
     SELECT create_reference_table('payment_merchants');
@@ -56,7 +56,7 @@ The events and users tables are going to be distributed based on their `user_id`
     HINT:  You could use SELECT create_reference_table('event_types') to replicate the referenced table to all nodes or consider dropping the foreign key
     ```
 
-2. Distribute the `payment_users` table with implicit colocation using the following command:
+1. Distribute the `payment_users` table with implicit colocation using the following command:
 
     ```sql
     SELECT create_distributed_table('payment_users','user_id');
