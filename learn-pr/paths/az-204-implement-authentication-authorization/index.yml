@@ -12,10 +12,10 @@ title: 'AZ-204: Implement user authentication and authorization'
 prerequisites: |
   * At least one year of experience developing scalable solutions through all phases of software development.
   * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/learn/paths/az-900-describe-cloud-concepts/) course.
+  * If you are new to Azure or cloud computing it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
   Learn how to implement authentication and authorization to resources by using the Microsoft identity platform, Microsoft Authentication Library, shared access signatures, and use Microsoft Graph.
-iconUrl: /learn/achievements/authentication-authorization.svg
+iconUrl: /training/achievements/authentication-authorization.svg
 levels:
 - intermediate
 roles:
@@ -23,6 +23,8 @@ roles:
 products:
 - azure-sdks
 - microsoft-identity-web
+subjects:
+- identity-access
 modules:
 - learn.wwl.explore-microsoft-identity-platform
 - learn.wwl.implement-authentication-by-using-microsoft-authentication-library

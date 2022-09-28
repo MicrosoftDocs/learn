@@ -17,7 +17,7 @@ prerequisites: |
   - Ability to connect to an Azure Virtual Machine
   - Familiarity with Azure services
   - Familiarity with database concepts such as monitoring and querying
-iconUrl: /learn/achievements/deploy-iot-solution-azure-sql-database.svg
+iconUrl: /training/achievements/deploy-iot-solution-azure-sql-database.svg
 levels:
 - intermediate
 - advanced
@@ -34,6 +34,9 @@ products:
 - azure-virtual-machines
 - azure-functions
 - azure-log-analytics
+subjects:
+- iot
+- database
 units:
 - learn.azure.deploy-iot-solution-azure-sql-database.1-introduction
 - learn.azure.deploy-iot-solution-azure-sql-database.2-analyze-solution-architecture

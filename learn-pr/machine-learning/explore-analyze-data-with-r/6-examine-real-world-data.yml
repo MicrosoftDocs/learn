@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machine-learning.explore-analyze-data-r.examine-real-world-data
+title: Examine real-world data
+metadata:
+  title: Examine real-world data
+  description: In this unit, you'll examine real-world data.
+  ms.date: 03/10/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-examine-real-world-data.md)]

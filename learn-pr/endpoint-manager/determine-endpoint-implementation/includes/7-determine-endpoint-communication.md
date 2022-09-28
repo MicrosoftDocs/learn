@@ -1,4 +1,4 @@
-Good change management relies on clear and helpful communications about the upcoming changes. To smooth the path of your endpoint management deployment, your rollout communication plan should include four areas:
+Good change management relies on clear and helpful communications about the upcoming changes. To smooth the path of your endpoint-management deployment, your rollout communication plan should include four areas:
 
 - The information to communicate
 - The communication delivery methods
@@ -9,22 +9,22 @@ Let's review each area in more detail.
 
 ## Information to communicate
 
-Determining what information to be communicated depends on when in the endpoint management rollout process you are communicating. You might decide to communicate in waves to your organizational groups and users, starting with a Endpoint Manager rollout kickoff, followed by pre-enrollment, and follow up with post-enrollment. Let's discuss the type of information that could be communicated in each phase.
+Determining what information should be communicated depends on when in the endpoint-management rollout process you are communicating. You might decide to communicate in waves to your organizational groups and users, starting with an Endpoint Manager rollout kickoff, followed by pre-enrollment, and follow up with post-enrollment. Let's discuss the type of information that could be communicated in each phase.
 
-**Kickoff phase** <br/>Broad communications that introduce the Endpoint Manager project itself. It should answer questions like what is Endpoint Manager, why the organization is adopting Endpoint Manager (benefits to the organization and users), and provide a high-level plan of the deployment and rollout.
+**Kickoff phase** <br/>Broad communications that introduce the Endpoint Manager project itself. It should answer questions like what Endpoint Manager is and why the organization is adopting Endpoint Manager (benefits to the organization and users), and provide a high-level plan of the deployment and rollout.
 
-**Pre-enrollment phase**<br/> Broad communications that include additional information about Endpoint Manager and complementary offerings (for example, Office, Outlook, OneDrive), user resources, and specific timelines for when organization groups and users are scheduled be enrolled in Endpoint Manager.
+**Pre-enrollment phase**<br/> Broad communications that include additional information about Endpoint Manager and complementary offerings (for example, Office, Outlook, OneDrive), user resources, and specific timelines for when organization groups and users are scheduled for enrollment in Endpoint Manager.
 
-**Enrollment phase**<br/> Communications targeting organization groups and users that are scheduled to enroll in Endpoint Manager. These should inform the users that they are ready to receive Endpoint Manager and provide enrollment instructions along with contact information for getting assistance or asking questions.
+**Enrollment phase**<br/> Communications targeting the organization's groups and users that are scheduled to enroll in Endpoint Manager. These should inform the users that they are ready to receive Endpoint Manager and provide enrollment instructions, along with contact information for getting assistance or asking questions.
 
-**Post enrollment phase**<br/> Communications targeting organization groups and users that have enrolled in Endpoint Manager. These should provide additional resources that might be helpful to the user, and collect feedback about their experience during and after enrollment.
+**Post enrollment phase**<br/> Communications targeting the organization's groups and users that have enrolled in Endpoint Manager. These should provide additional resources that might be helpful to the user, and collect feedback about their experience during and after enrollment.
 
 > [!TIP]
 > If you're rolling out Intune, you may find the [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) helpful. You can use it as-is or modify for your organization.
 
 ## Communication delivery methods
 
-There are several delivery methods you can use to communicate Endpoint Manager rollout information to your targeted organizational groups and users. The following list shows some examples and the phase you can use the method with:
+There are several delivery methods you can use to communicate Endpoint Manager rollout information to your targeted organizational groups and users. The following list shows some examples and the phase with which you can use the method:
 
 - Organizational-wide in-person or Microsoft Teams meetings used for kickoff phase
 - Email used for pre-enrollment, enrollment, and post-enrollment phases
@@ -50,7 +50,7 @@ For example, the initial Endpoint Manager project kickoff communications can tar
 | Phase 5 | IT | Sales and Marketing | Retail | HR, Finance, and Executives |
 | Post-enrollment email | Fourth week | Fourth week | Fourth week | Fourth week |
 
-You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to develop your communication plan.
+You can [download a template of the above table](https://www.microsoft.com/en-us/download/details.aspx?id=103005) to develop your communication plan.
 
 ## Additional information
 

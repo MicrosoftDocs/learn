@@ -4,8 +4,8 @@ metadata:
   title: Determine the rocket launch questions to ask
   description: Find out how to analyze data about weather to predict if a rocket will launch
   ms.date: 05/19/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

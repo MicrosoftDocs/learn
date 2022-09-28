@@ -4,8 +4,8 @@ metadata:
   title: 'Exercise - Write a predictor function - Part 2'
   description: Write a function to predict the best date to view a meteor shower in a specified city.
   ms.date: 03/10/2021
-  author: sguthals
-  ms.author: sguthals 
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen

@@ -14,14 +14,14 @@ When to use a CDN:
 
 - You want custom domains, file compression, caching, and geo-filtering
 
-    :::image type="content" source="../media/content-delivery-network.png" alt-text="Content Delivery Network diagram":::
+    :::image type="content" source="../media/content-delivery-network.png" alt-text="Diagram of a Content Delivery Network.":::
 
 
 ## Azure Front Door Service
 
 Azure Front Door Service enables you to define, manage, and monitor the global routing for your web traffic by optimizing for best performance and instant global failover for high availability. With Front Door, you can transform your global (multi-region) consumer and enterprise applications into robust, high-performance personalized modern applications, APIs, and content that reaches a global audience with Azure.
 
-:::image type="content" source="../media/front-door.png" alt-text="Azure Front Door Diagram.":::
+:::image type="content" source="../media/front-door.png" alt-text="Diagram of Azure Front Door.":::
 
 
 
@@ -99,9 +99,9 @@ When selecting the load-balancing options, here are some factors that are consid
 
 **Availability**. What is the service [SLA](https://azure.microsoft.com/support/legal/sla/)?
 
-**Cost**. See [Azure pricing](https://azure.microsoft.com/pricing/). In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service.
+**Cost**. Visit [Azure pricing](https://azure.microsoft.com/pricing/). In addition to the cost of the service itself, consider the operations cost for managing a solution built on that service.
 
-**Features and limits**. What are the overall limitations of each service? See [Service limits](/azure/azure-subscription-service-limits).
+**Features and limits**. What are the overall limitations of each service? Visit [Service limits](/azure/azure-subscription-service-limits).
 
 The following flowchart will help you to choose a load-balancing solution for your application. The flowchart guides you through a set of key decision criteria to reach a recommendation.
 
@@ -109,4 +109,4 @@ The following flowchart will help you to choose a load-balancing solution for yo
 
 If your application consists of multiple workloads, evaluate each workload separately. A complete solution may incorporate two or more load-balancing solutions.
 
-:::image type="content" source="../media/load-balancer-decision-tree.png" alt-text="Load balancer decision tree.":::
+:::image type="content" source="../media/load-balancer-decision-tree.png" alt-text="Diagram of the load balancer decision tree.":::

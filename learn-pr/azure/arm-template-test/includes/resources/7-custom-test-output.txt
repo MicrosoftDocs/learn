@@ -1,33 +1,76 @@
-Validating deploy\azuredeploy.json
+Validating custom\azuredeploy.json
+  JSONFiles Should Be Valid
+    [+] JSONFiles Should Be Valid (56 ms)
+Pass  : 1
+Fail  : 0
+Total : 1
+
+
+
+  adminUsername Should Not Be A Literal
+    [+] adminUsername Should Not Be A Literal (68 ms)
+  apiVersions Should Be Recent In Reference Functions
+    [+] apiVersions Should Be Recent In Reference Functions (203 ms)
+  apiVersions Should Be Recent
+    [+] apiVersions Should Be Recent (137 ms)
+  artifacts parameter
+    [+] artifacts parameter (145 ms)
+  CommandToExecute Must Use ProtectedSettings For Secrets
+    [+] CommandToExecute Must Use ProtectedSettings For Secrets (171 ms)
   deploymentTemplate
-    [+] adminUsername Should Not Be A Literal (16 ms)
-    [+] apiVersions Should Be Recent (4 ms)
-    [+] artifacts parameter (1 ms)
-    [-] Custom ParameterNaming (2 ms)
+    [-] Custom ParameterNaming (354 ms)
         To be implemented
 
-    [+] DependsOn Best Practices (2 ms)
-    [+] Deployment Resources Must Not Be Debug (2 ms)
-    [+] DeploymentTemplate Must Not Contain Hardcoded Uri (4 ms)
-    [+] DeploymentTemplate Schema Is Correct (1 ms)
-    [+] Dynamic Variable References Should Not Use Concat (1 ms)
-    [+] IDs Should Be Derived From ResourceIDs (5 ms)
-    [+] Location Should Not Be Hardcoded (7 ms)
-    [+] ManagedIdentityExtension must not be used (1 ms)
-    [+] Min And Max Value Are Numbers (1 ms)
-    [+] Outputs Must Not Contain Secrets (2 ms)
-    [-] Parameters Must Be Referenced (2 ms)
-        Unreferenced parameter: location
-
-    [+] Parameters Property Must Exist (1 ms)
-    [+] providers apiVersions Is Not Permitted (1 ms)
-    [+] ResourceIds should not contain (2 ms)
-    [-] Resources Should Have Location (2 ms)
-        Resource  Location must be an expression or 'global'
-
-    [+] Secure String Parameters Cannot Have Default (1 ms)
-    [+] Template Should Not Contain Blanks (2 ms)
-    [+] Variables Must Be Referenced (1 ms)
-    [+] Virtual Machines Should Not Be Preview (6 ms)
-    [+] VM Images Should Use Latest Version (1 ms)
-    [+] VM Size Should Be A Parameter (5 ms)
+  DependsOn Best Practices
+    [+] DependsOn Best Practices (152 ms)
+  Deployment Resources Must Not Be Debug
+    [+] Deployment Resources Must Not Be Debug (152 ms)
+  DeploymentTemplate Must Not Contain Hardcoded Uri
+    [+] DeploymentTemplate Must Not Contain Hardcoded Uri (185 ms)
+  DeploymentTemplate Schema Is Correct
+    [+] DeploymentTemplate Schema Is Correct (197 ms)
+  Dynamic Variable References Should Not Use Concat
+    [+] Dynamic Variable References Should Not Use Concat (157 ms)
+  IDs Should Be Derived From ResourceIDs
+    [+] IDs Should Be Derived From ResourceIDs (69 ms)
+  Location Should Not Be Hardcoded
+    [+] Location Should Not Be Hardcoded (260 ms)
+  ManagedIdentityExtension must not be used
+    [+] ManagedIdentityExtension must not be used (70 ms)
+  Min And Max Value Are Numbers
+    [+] Min And Max Value Are Numbers (213 ms)
+  Outputs Must Not Contain Secrets
+    [+] Outputs Must Not Contain Secrets (76 ms)
+  Parameter Types Should Be Consistent
+    [+] Parameter Types Should Be Consistent (68 ms)
+  Parameters Must Be Referenced
+    [+] Parameters Must Be Referenced (93 ms)
+  Password params must be secure
+    [+] Password params must be secure (111 ms)
+  providers apiVersions Is Not Permitted
+    [+] providers apiVersions Is Not Permitted (68 ms)
+  ResourceIds should not contain
+    [+] ResourceIds should not contain (210 ms)
+  Resources Should Have Location
+    [+] Resources Should Have Location (113 ms)
+  Resources Should Not Be Ambiguous
+    [+] Resources Should Not Be Ambiguous (147 ms)
+  Secure Params In Nested Deployments
+    [+] Secure Params In Nested Deployments (242 ms)
+  Secure String Parameters Cannot Have Default
+    [+] Secure String Parameters Cannot Have Default (129 ms)
+  Template Should Not Contain Blanks
+    [+] Template Should Not Contain Blanks (201 ms)
+  URIs Should Be Properly Constructed
+    [+] URIs Should Be Properly Constructed (180 ms)
+  Variables Must Be Referenced
+    [+] Variables Must Be Referenced (132 ms)
+  Virtual Machines Should Not Be Preview
+    [+] Virtual Machines Should Not Be Preview (91 ms)
+  VM Images Should Use Latest Version
+    [+] VM Images Should Use Latest Version (114 ms)
+  VM Size Should Be A Parameter
+    [+] VM Size Should Be A Parameter (130 ms)
+Pass  : 31
+Fail  : 1
+Total : 32

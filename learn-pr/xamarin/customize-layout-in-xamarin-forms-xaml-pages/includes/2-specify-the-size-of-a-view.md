@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Designing a user interface that's consistent across multiple devices is difficult because devices can be different sizes and have different pixel densities. Think about the different devices that are available: mobile, tablet, desktop, TV, and so on. How do we create a user interface that looks similar on each?
 
 Xamarin.Forms provides layout panels to help us build consistent user interfaces. The layout panel is responsible for sizing and positioning its children views. In this unit, we'll learn how the layout system works in Xamarin.Forms. We'll look at how views are sized by default and how to request a specific size and position for a view at runtime.

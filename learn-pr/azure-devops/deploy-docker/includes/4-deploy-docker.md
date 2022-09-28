@@ -67,14 +67,14 @@ Replace the entire **Deploy** stage with the code below.
 
 ## Save the pipeline to trigger a build and release
 
-1. Select **Save** from the top right corner of the page. Confirm the **Save** to trigger a run.
-1. In Azure Pipelines, go to the build. Trace the build as it runs.
-1. After the build has succeeded, select the web app container's deploy task and select the URL to view the deployed site.
+1. Select **Save** from the top right corner of the page. Type your commit message and then select **Save** to confirm.
+1. Select **Run**, and make sure your branch is set to *main*. Select **Run** when you're done.
+1. Select your pipeline to view the logs. After the build has succeeded, select the *AzureWebAppContainer* task and then select the *App Service Application URL* to view your deployed web app.
 
-    :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines showing the location of the web site URL.":::
+    :::image type="content" source="../media/4-deploy-url.png" alt-text="Screenshot of Azure Pipelines showing the location of the website URL.":::
 
-1. You see the site running on App Service.
+1. You should see your web app running on App Service.
 
-    :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
+    :::image type="content" source="../media/4-space-game.png" alt-text="Screenshot of the Space Game website.":::
 
 **Andy:** This turned out great! I think adopting containers could be a huge win for everyone.

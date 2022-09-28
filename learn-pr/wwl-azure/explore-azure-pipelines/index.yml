@@ -17,7 +17,7 @@ abstract: |
   - Decide Pipeline automation responsibility
   - Understand Azure Pipeline key terms
 prerequisites: ""
-iconUrl: /learn/achievements/1-explore-azure-pipelines.svg
+iconUrl: /training/achievements/1-explore-azure-pipelines.svg
 levels:
 - advanced
 roles:
@@ -39,6 +39,8 @@ products:
 - azure-repos
 - azure-test-plans
 - github
+subjects:
+- devops
 units:
 - learn.wwl.explore-azure-pipelines.introduction
 - learn.wwl.explore-azure-pipelines.explore-concept-of-pipelines-devops

@@ -16,13 +16,15 @@ abstract: |
   - Configure diagnostic capabilities like IP Flow Verify, Next Hop, and Network Topology.
 prerequisites: |
   None
-iconUrl: /learn/achievements/network-watcher-configure.svg
+iconUrl: /training/achievements/network-watcher-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-network-watcher
+subjects:
+- networking
 units:
 - learn.wwl.configure-network-watcher.introduction
 - learn.wwl.configure-network-watcher.describe-features

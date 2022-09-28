@@ -19,7 +19,7 @@ prerequisites: |
   - Knowledge of basic networking concepts, including subnets and IP addressing
   - Familiarity with Azure virtual machines
   - Familiarity with Azure virtual networking
-iconUrl: /learn/achievements/integrate-vnets-with-vnet-peering.svg
+iconUrl: /training/achievements/integrate-vnets-with-vnet-peering.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,8 @@ roles:
 products:
 - azure
 - azure-virtual-network
+subjects:
+- networking
 units:
 - learn.integrate-vnets-with-vnet-peering.1-introduction
 - learn.integrate-vnets-with-vnet-peering.2-connect-services-using-vnet-peering

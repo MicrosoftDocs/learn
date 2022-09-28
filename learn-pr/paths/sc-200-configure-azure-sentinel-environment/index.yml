@@ -14,7 +14,7 @@ prerequisites: |
   - Ability to use KQL in Microsoft Sentinel like you could learn from learning path SC-200: Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
 summary: |
   Get started with Microsoft Sentinel by properly configuring the Microsoft Sentinel workspace. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
-iconUrl: /learn/achievements/configure-your-azure-sentinel-environment.svg
+iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
 levels:
 - intermediate
 roles:
@@ -22,6 +22,8 @@ roles:
 products:
 - azure
 - azure-sentinel
+subjects:
+- threat-protection
 modules:
 - learn.intro-to-azure-sentinel
 - learn.wwl.create-manage-azure-sentinel-workspaces

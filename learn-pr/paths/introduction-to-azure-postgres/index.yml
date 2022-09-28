@@ -13,7 +13,7 @@ prerequisites: |
   Basic familiarity with relational databases
 summary: |
   PostgreSQL is the world’s most advanced open source relational database. Learn how to seamlessly deploy community PostgreSQL to the Azure cloud, connect your database to apps, and scale horizontally across as many machines - and locations - as needed.
-iconUrl: /learn/achievements/azure-database-for-postgresql.svg
+iconUrl: /training/achievements/azure-database-for-postgresql.svg
 levels:
 - beginner
 roles:
@@ -24,6 +24,8 @@ roles:
 products:
 - azure
 - azure-database-postgresql
+subjects:
+- database
 modules:
 - learn.create-azure-db-for-postgresql
 - learn.azure.create-and-connect-to-azure-database-postgresql

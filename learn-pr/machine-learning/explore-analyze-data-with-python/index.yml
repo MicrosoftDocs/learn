@@ -17,13 +17,15 @@ abstract: |
 prerequisites: |
   - Knowledge of basic mathematics
   - Some experience programming in Python
-iconUrl: /learn/achievements/explore-and-analyze-data-with-python.svg
+iconUrl: /training/achievements/explore-and-analyze-data-with-python.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
 - vs-code
+subjects:
+- machine-learning
 units:
 - learn.wwl.explore-analyze-data-with-python.introduction
 - learn.wwl.explore-analyze-data-with-python.explore-data-numpy-pandas

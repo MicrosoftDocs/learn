@@ -17,7 +17,7 @@ abstract: |
  - Learn how to create accessible content with the Microsoft Word, PowerPoint, Excel, and Outlook apps.
  - Explore the built-in accessibility tools and features of each of these apps.
 prerequisites: None
-iconUrl: /learn/achievements/accessible-content-m365.svg
+iconUrl: /training/achievements/accessible-content-m365.svg
 levels:
 - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 - student
 products:
 - m365
+subjects:
+- business-applications
 units:
 - learn.accessible-content-m365.accessibility-checker
 - learn.accessible-content-m365.word

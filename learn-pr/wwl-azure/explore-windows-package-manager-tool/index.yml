@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with basic computing concepts and terminology such as operating systems, networking, and data processing
   - Ability to install and uninstall software on a Windows computer
   - Ability to execute commands from a command line prompt
-iconUrl: /learn/achievements/windows-package-manager-tools.svg
+iconUrl: /training/achievements/windows-package-manager-tools.svg
 levels:
 - beginner
 roles:
@@ -33,6 +33,8 @@ roles:
 - support-engineer
 products:
 - windows
+subjects:
+- process-workflow
 units:
 - learn.wwl.explore-windows-package-manager-tool.introduction
 - learn.wwl.explore-windows-package-manager-tool.explain-purpose-of

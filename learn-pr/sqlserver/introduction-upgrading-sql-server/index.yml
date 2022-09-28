@@ -21,13 +21,15 @@ prerequisites: |
   - Experience administering SQL Server databases
   - Knowledge of backups and failure methodologies
   - Understanding of query tuning and performance
-iconUrl: /learn/achievements/sqlserver/introduction-to-upgrading-sql-server.svg
+iconUrl: /training/achievements/sqlserver/introduction-to-upgrading-sql-server.svg
 levels:
 - beginner
 roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- database
 units:
 - learn-sqlserver.introduction-upgrading-sql-server.1-introduction
 - learn-sqlserver.introduction-upgrading-sql-server.2-decide-upgrade-right-your-task

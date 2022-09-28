@@ -4,7 +4,6 @@ There are several different implementations of persistent virtual desktop.
 
  -  **Traditional VMs**, where the VM has its own virtual disk file, starts up normally, and saves changes from one session to the next. The difference is how the user accesses this VM. There may be a web portal the user signs in to that automatically directs the user to one or more virtual desktop devices (VMs) assigned to them.
  -  **Image-based persistent VMs**, optionally with personal virtual disks (PVD). In this type of implementation, there is a base/gold image on one or more host servers. A VM is created, and one or more virtual disks are created and assigned to this disk for persistent storage.
-    
      -  When the VM is started, a copy of the base image is read into the memory space of that VM. At the same time, a persistent virtual disk assigned to that VM, with any previous OS deltas is merged through a complex process.
      -  Changes such as event log writes and log writes are redirected to the read/write virtual disk assigned to that VM.
      -  In this circumstance, OS and app servicing may operate normally, using traditional servicing software such as Windows Server Update Services, or other management technologies.

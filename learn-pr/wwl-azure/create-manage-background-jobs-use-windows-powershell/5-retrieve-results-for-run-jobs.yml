@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-background-jobs-use-windows-powershell.retrieve-results-for-run-jobs
+title: Retrieve results for running jobs in Windows PowerShell
+metadata:
+  title: Retrieve results for running jobs in Windows PowerShell
+  description: "Retrieve results for running jobs in Windows PowerShell"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-retrieve-results-for-run-jobs.md)]

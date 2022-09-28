@@ -13,7 +13,7 @@ title: "Develop a security and compliance plan"
 summary: |
   Build strategies around security and compliance that enable you to authenticate and authorize your users, handle sensitive information, and enforce proper governance.
 prerequisites: None
-iconUrl: /learn/achievements/az-400-develop-security-compliance-plan.svg
+iconUrl: /training/achievements/az-400-develop-security-compliance-plan.svg
 levels:
 - beginner
 roles:
@@ -28,6 +28,10 @@ products:
 - azure-key-vault
 - azure-api-management
 - azure-monitor
+subjects:
+- information-protection-governance
+- business-continuity
+- security
 modules:
 - learn.intro-to-azure-ad
 - learn.azure.create-users-and-groups-in-azure-active-directory

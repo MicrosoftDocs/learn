@@ -16,13 +16,16 @@ abstract: |
   - Configure your data retention requirements
   - Explore data ownership and sovereignty
 prerequisites: None
-iconUrl: /learn/achievements/configure-security-policies-to-manage-data.svg
+iconUrl: /training/achievements/configure-security-policies-to-manage-data.svg
 levels:
 - beginner
 roles:
 - security-engineer
 products:
 - azure
+subjects:
+- cloud-security
+- data-management
 units:
 - learn.azure-security.configure-security-policies-to-manage-data.introduction
 - learn.azure-security.configure-security-policies-to-manage-data.configure-data-classification

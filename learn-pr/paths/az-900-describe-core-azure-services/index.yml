@@ -24,17 +24,17 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" alt="The trophy for the Describe core Azure concepts learning path." role="presentation"></img>
+    <img src="/training/achievements/az-900-describe-cloud-concepts.svg" width="101" height="84" alt="The trophy for the Describe core Azure concepts learning path." role="presentation"></img>
 
     [Part 1: Describe core Azure concepts](../az-900-describe-cloud-concepts/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" alt="The trophy for the Describe core Azure services learning path." role="presentation"></img>
+    <img src="/training/achievements/az-900-describe-core-azure-services.svg" width="101" height="84" alt="The trophy for the Describe core Azure services learning path." role="presentation"></img>
 
     Part 2: Describe core Azure services
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"></img>
+    <img src="/training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg" width="75.23" height="84" alt="The trophy for the Describe core solutions and management tools on Azure learning path." role="presentation"></img>
 
     [Part 3: Describe core solutions and management tools on Azure](../az-900-describe-core-solutions-management-tools-azure/index.yml)
   :::column-end:::
@@ -42,19 +42,19 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" alt="The trophy for the Describe general security and network security features learning path." role="presentation"></img>
+    <img src="/training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg" width="101" height="84" alt="The trophy for the Describe general security and network security features learning path." role="presentation"></img>
 
     [Part 4: Describe general security and network security features](../az-900-describe-general-security-network-security-features/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"></img>
+    <img src="/training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg" width="75.23" height="84" alt="The trophy for the Describe identity, governance, privacy, and compliance features learning path." role="presentation"></img>
 
     [Part 5: Describe identity, governance, privacy, and compliance features](../az-900-describe-identity-governance-privacy-compliance-features/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Azure cost management and service level agreements learning path." role="presentation"></img>
+    <img src="/training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg" width="101" height="84" alt="The trophy for the Describe Microsoft Cost Management and service level agreements learning path." role="presentation"></img>
 
-    [Part 6: Describe Azure cost management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
+    [Part 6: Describe Microsoft Cost Management and service level agreements](../az-900-describe-azure-cost-management-service-level-agreements/index.yml)
   :::column-end:::
   :::row-end:::
 prerequisites: | 
@@ -63,7 +63,7 @@ prerequisites: |
 video:
   title: "Azure Fundamentals video: Describe core Azure services"
   url: https://www.microsoft.com/videoplayer/embed/RE4M4X7
-iconUrl: /learn/achievements/az-900-describe-core-azure-services.svg
+iconUrl: /training/achievements/az-900-describe-core-azure-services.svg
 levels:
 - beginner
 roles:
@@ -91,6 +91,10 @@ products:
 - azure-virtual-machines
 - azure-virtual-network
 - azure-vpn-gateway
+subjects:
+- digital-application-innovation
+- data-ai
+- infrastructure
 modules:
 - learn.azure.azure-compute-fundamentals
 - learn.azure.azure-networking-fundamentals

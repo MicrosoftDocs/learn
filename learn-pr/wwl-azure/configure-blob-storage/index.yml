@@ -19,13 +19,15 @@ abstract: |
   - Upload and price Blob storage.
 prerequisites: |
   None
-iconUrl: /learn/achievements/blob-storage-configure.svg
+iconUrl: /training/achievements/blob-storage-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-blob-storage
+subjects:
+- storage
 units:
 - learn.wwl.configure-blob-storage.introduction
 - learn.wwl.configure-blob-storage.implement

@@ -4,12 +4,13 @@ title: Protect Azure Stack HCI VMs by using Azure Site Recovery
 metadata:
   title: Protect Azure Stack HCI VMs by using Azure Site Recovery
   description: "Protect Azure Stack HCI VMs by using Azure Site Recovery"
-  ms.date: 06/09/2021
+  ms.date: 07/29/2022
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/3-protect-virtual-machines-by-using-azure-site-recovery.md)]

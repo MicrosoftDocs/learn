@@ -13,7 +13,7 @@ title: "Define and implement continuous integration"
 summary: |
   Create automated pipelines that continuously build, test, package, and deploy your applications.
 prerequisites: None
-iconUrl: /learn/achievements/az-400-define-implement-continuous-integration.svg
+iconUrl: /training/achievements/az-400-define-implement-continuous-integration.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,8 @@ products:
 - azure-devops
 - azure-virtual-machines
 - azure-automation
+subjects:
+- data-engineering
 modules:
 - learn.azdo.create-a-build-pipeline
 - learn.azdo.run-quality-tests-build-pipeline

@@ -4,7 +4,6 @@ Before you start using Azure Monitor for Azure Virtual Desktop, you'll need to s
 
  -  At least one configured Log Analytics Workspace. Use a designated Log Analytics workspace for your Azure Virtual Desktop session hosts to ensure that performance counters and events are only collected from session hosts in your Azure Virtual Desktop deployment.
  -  Enable data collection for the following things in your Log Analytics workspace:
-    
      -  Diagnostics from your Azure Virtual Desktop environment
      -  Recommended performance counters from your Azure Virtual Desktop session hosts
      -  Recommended Windows Event Logs from your Azure Virtual Desktop session hosts
@@ -28,4 +27,4 @@ You can open Azure Monitor for Azure Virtual Desktop by doing the following:
 
 ## Log Analytics settings
 
-To start using Azure Monitor for Azure Virtual Desktop, you'll need at least one Log Analytics workspace. Use a designated Log Analytics workspace for your Azure Virtual Desktop session hosts to ensure that performance counters and events are only collected form session hosts in your Azure Virtual Desktop deployment.
+To start using Azure Monitor for Azure Virtual Desktop, you'll need at least one Log Analytics workspace. Use a designated Log Analytics workspace for your Azure Virtual Desktop session hosts to ensure that performance counters and events are only collected from session hosts in your Azure Virtual Desktop deployment.

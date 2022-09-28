@@ -17,7 +17,7 @@ abstract: |
   - Understand the relationship between ESG scores and innovation.
   - Learn how coinnovating with external partners can help make it easier to adopt new technology quicker.
 prerequisites: Familiarity with successful implementations of AI
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
 - intermediate
 roles: 
@@ -25,7 +25,9 @@ roles:
 - business-user
 products: 
 - azure
-units: 
+subjects:
+- collaboration
+units:
 - learn-wwl.coinnovate-for-broader-impact.introduction
 - learn-wwl.coinnovate-for-broader-impact.implement-environmental-social-governance-strategies
 - learn-wwl.coinnovate-for-broader-impact.need-for-external-collaboration

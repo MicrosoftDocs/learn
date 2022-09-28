@@ -13,7 +13,7 @@ In an analytics solution, data from different sources are combined and prepared 
 Areas outlined in red in the image above highlight the pieces of the analytics solution that data analysts use to make sense of the data.
 
 > [!NOTE]
-> Learn more about [data storage in Azure](/learn/modules/choose-storage-approach-in-azure/) and [technology choices for analytical data stores](/azure/architecture/data-guide/technology-choices/analytical-data-stores).
+> Learn more about [data storage in Azure](/training/modules/choose-storage-approach-in-azure/) and [technology choices for analytical data stores](/azure/architecture/data-guide/technology-choices/analytical-data-stores).
 
 ## Data ingestion and processing
 
@@ -36,8 +36,3 @@ A fraud department would use stream processing to handle real-time fraud and ano
 > Stream processsing is ideal for projects that require real-time analysis, and is less suited for projects requiring complex analytics.
 
 While data processing typically occurs upstream of the analytical data store, it's critical that analysts understand how data are ingested and at what frequency, to build the appropriate analytics solution. 
-
-
-
-
-

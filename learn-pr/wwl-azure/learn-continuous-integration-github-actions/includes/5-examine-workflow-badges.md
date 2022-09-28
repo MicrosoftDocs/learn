@@ -4,7 +4,7 @@ They show if a workflow is currently passing or failing. While they can appear i
 
 Badges are added by using URLs. The URLs are formed as follows:
 
-https://github.com/AAAAA/RRRRR/workflows/WWWWW/badge.svg
+`https://github.com/AAAAA/RRRRR/workflows/WWWWW/badge.svg`
 
 Where:
 
@@ -12,7 +12,7 @@ Where:
  -  RRRRR is the repository name.
  -  WWWWW is the workflow name.
 
-:::image type="content" source="../media/badge-failing-12fd7192.png" alt-text="Badge Failing":::
+:::image type="content" source="../media/badge-failing-12fd7192.png" alt-text="Screenshot of the Badge failing in a color to represent an error.":::
 
 
 They usually indicate the status of the default branch but can be branch-specific. You do by adding a URL query parameter:

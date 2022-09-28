@@ -10,23 +10,23 @@ An audit log has a default list view that shows the:
  -  Status of the activity (success or failure)
  -  Target
  -  Initiator/actor (who) of an activity
-
-:::image type="content" source="../media/list-view-5be4e68a.png" alt-text="Audit logs" lightbox="../media/list-view-5be4e68a.png":::
-
+    
+    :::image type="content" source="../media/list-view-8a51a55e.png" alt-text="Screenshot of the available Audit logs you can review to ensure your systems are running effectively.":::
+    
 
 You can customize the list view by clicking **Columns** in the toolbar.
 
-:::image type="content" source="../media/columns-70808261.png" alt-text="Audit columns":::
+:::image type="content" source="../media/columns-9f0459b1.png" alt-text="Screenshot of the Audit columns, so you can pick the specific data you need to see in your report.":::
 
 
 This enables you to display additional fields or remove fields that are already displayed.
 
-:::image type="content" source="../media/column-select-cc344b43.png" alt-text="Remove fields":::
+:::image type="content" source="../media/column-select-45218a2c.png" alt-text="Screenshot of the Remove fields dialog. Set up the reports to show and review just the data you need.":::
 
 
 Select an item in the list view to get more detailed information.
 
-:::image type="content" source="../media/details-7f19dab4.png" alt-text="select item":::
+:::image type="content" source="../media/details-97df8e42.png" alt-text="Screenshot of the select item dialog. What detailed information do you need?":::
 
 
 ## Filtering audit logs
@@ -40,14 +40,14 @@ You can filter the audit data on the following fields:
  -  Target
  -  Initiated by (Actor)
  -  Date range
-
-:::image type="content" source="../media/filter-7d24361d.png" alt-text="Filter object":::
-
+    
+    :::image type="content" source="../media/filter-afb1bffe.png" alt-text="Screenshot of the Filter object dialog.  Use the filters to organize and review the data.":::
+    
 
 The **Service** filter allows you to select from a drop-down list of the following services:
 
  -  All
- -  AAD Management UX
+ -  Azure AD Management UX
  -  Access Reviews
  -  Account Provisioning
  -  Application Proxy
@@ -69,7 +69,7 @@ The **Service** filter allows you to select from a drop-down list of the followi
 The **Category** filter enables you to select one of the following filters:
 
  -  All
- -  AdministrativeUnit
+ -  Administrative unit
  -  ApplicationManagement
  -  Authentication
  -  Authorization
@@ -113,7 +113,7 @@ When you select a custom timeframe, you can configure a start time and an end ti
 
 You can also choose to download the filtered data, up to 250,000 records, by selecting the **Download** button. You can download the logs in either CSV or JSON format. The number of records you can download is constrained by the Azure AD report retention policies.
 
-:::image type="content" source="../media/download-7e9ea91a.png" alt-text="Download data":::
+:::image type="content" source="../media/download-5c371428.png" alt-text="Screenshot of the Download data. Get the data in a CSV or JSON file to help you work offline.":::
 
 
 ## Audit logs shortcuts
@@ -138,12 +138,12 @@ With user and group-based audit reports, you can get answers to questions such a
 
 If you want to review only auditing data that is related to users, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Users** tab. This entry point has **UserManagement** as preselected category.
 
-:::image type="content" source="../media/users-d9580718.png" alt-text="User":::
+:::image type="content" source="../media/users-f126cba8.png" alt-text="Screenshot of the User dialog.  You can pick specific users to manage.":::
 
 
 If you want to review only auditing data that is related to groups, you can find a filtered view under **Audit logs** in the **Monitoring** section of the **Groups** tab. This entry point has **GroupManagement** as preselected category.
 
-:::image type="content" source="../media/groups-bdbd0a4b.png" alt-text="Filter groups":::
+:::image type="content" source="../media/groups-efec763e.png" alt-text="Screenshot of the Filter groups. You can set up group management details for auditing.":::
 
 
 ### Enterprise applications audit logs
@@ -156,9 +156,9 @@ With application-based audit reports, you can get answers to questions such as:
  -  Have the names of applications been changed?
  -  Who gave consent to an application?
 
-If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** blade. This entry point has **Enterprise applications** preselected as the **Application Type**.
+If you want to review audit data related to your applications, you can find a filtered view under **Audit logs** in the **Activity** section of the **Enterprise applications** screen. This entry point has **Enterprise applications** preselected as the **Application Type**.
 
-:::image type="content" source="../media/enterprise-applications-4003945c.png" alt-text="Enterprise applications":::
+:::image type="content" source="../media/enterprise-applications-8cc2f932.png" alt-text="Screenshot of the Enterprise applications logs for auditing. You can and should audit all details.":::
 
 
 ## Microsoft 365 activity logs

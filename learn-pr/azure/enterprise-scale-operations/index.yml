@@ -20,13 +20,15 @@ prerequisites: |
   - Intermediate knowledge of Azure Log Analytics
   - Intermediate knowledge of Microsoft Defender for Cloud and Microsoft Sentinel
   - Advanced knowledge of Azure Policy
-iconUrl: /learn/achievements/enterprise-scale-operations.svg
+iconUrl: /training/achievements/enterprise-scale-operations.svg
 levels:
 - advanced
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- architecture
 units:
 - learn.azure.enterprise-scale-operations.1-introduction
 - learn.azure.enterprise-scale-operations.2-management-monitoring

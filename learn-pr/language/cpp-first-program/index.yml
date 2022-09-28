@@ -16,7 +16,7 @@ abstract: |
   - Write a program in C++ by using basic syntax.
   - Recognize C++ terminology, including data types, libraries, and functions.
   - Identify and correct common programming errors.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
   - vs
 prerequisites: None
+subjects:
+- development-tools
 units:
   - learn.cpp-write-your-first-program.introduction
   - learn.cpp-write-your-first-program.exercise-hello-world
@@ -34,4 +36,3 @@ units:
   - learn.cpp-write-your-first-program.summary
 badge:
   uid: learn.cpp-write-your-first-program.badge
-  

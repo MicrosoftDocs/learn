@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-concurrency-mysql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/20/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the effect of setting innodb_thread_concurrency to zero?"
+    choices:
+    - content: "No users can connect."
+      isCorrect: false
+      explanation: "That's incorrect. Setting innodb_thread_concurrency to zero doesn't prevent any users from connecting."
+    - content: "An infinite number of users can connect."
+      isCorrect: true
+      explanation: "That's correct. If you don't want to place a limit on the number of users connecting, set innodb_thread_concurrency to zero."
+    - content: "Thread concurrency doesn't define how many users can connect."
+      isCorrect: false
+      explanation: "That's incorrect. Innodb_thread_concurrency is the server parameter that defines how many users can connect."
+  - content: "What is an explicit transaction?"
+    choices:
+    - content: "An explicit transaction includes the START TRANSACTION and COMMIT keywords."
+      isCorrect: true
+      explanation: "That's correct. An explicit transaction starts with START TRANSACTION or BEGIN and doesn't conclude until either the COMMIT or ROLLBACK keywords. Everything between these keywords is one transaction that is either committed or rolled back - regardless of how many statements are included."
+    - content: "All transactions are explicit unless you add keywords."
+      isCorrect: false
+      explanation: "That's incorrect. All transactions are **autocommit** unless you add the START TRANSACTION or BEING and COMMIT or ROLLBACK keywords."
+    - content: "An explicit transaction is one with more than one statement that rollback at the same time."
+      isCorrect: false
+      explanation: "That's incorrect. Explicit transactions may have one or several statements that are rolled back at the same time, but that isn't the definition of an explicit transaction."
+  - content: "When might you consider using Thread Pool?"
+    choices:
+    - content: "Your workload often has between 400 and 600 simultaneous connections, with occasional bursts of high activity."
+      isCorrect: true
+      explanation: "That's correct. Thread Pool is suitable for workloads of more than 600 simultaneous connection."
+    - content: "Your workload requires low CPU utilization."
+      isCorrect: false
+      explanation: "That's incorrect. Thread pool is suitable for workload with high CPU utilization."
+    - content: "Your workload has long periods of inactivity followed by high activity."
+      isCorrect: false
+      explanation: "That's incorrect. Thread pool isn't suitable for this type of workload."
+  - content: "What type of statement does metadata locking prevent when a transaction is in progress?"
+    choices:
+    - content: "DML statement."
+      isCorrect: false
+      explanation: "That's incorrect. **Metadata locking** doesn't prevent data manipulation language (DML) statements acting on affected objects while a transaction is in progress."
+    - content: "Both DDL and DML statements."
+      isCorrect: false
+      explanation: "That's incorrect. **Metadata locking** doesn't prevent data manipulation language (DML) statements acting on affected objects while a transaction is in progress."
+    - content: "DDL statement."
+      isCorrect: true
+      explanation: "That's correct. **Metadata locking** prevents data definition language (DDL) statements acting on affected objects while a transaction is in progress."

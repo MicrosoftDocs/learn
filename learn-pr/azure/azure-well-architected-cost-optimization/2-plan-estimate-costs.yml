@@ -24,10 +24,10 @@ quiz:
     - content: 'Azure Policy'
       isCorrect: false
       explanation: 'Azure Policy is used to govern resources and is not used to estimate costs.'
-    - content: 'Azure Cost Management'
+    - content: 'Microsoft Cost Management'
       isCorrect: false
-      explanation: 'Azure Cost Management gives you visibility into existing resource costs, and the future costs for those resources. It is not used to estimate costs for a new application.'
-    - content: 'Azure Pricing Calculator'
+      explanation: 'Microsoft Cost Management gives you visibility into existing resource costs, and the future costs for those resources. It is not used to estimate costs for a new application.'
+    - content: 'Microsoft Pricing Calculator'
       isCorrect: true
       explanation: 'Azure Pricing Calculator can be used to estimate costs for services used for a new application on Azure.'
 

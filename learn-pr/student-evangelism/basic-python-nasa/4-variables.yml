@@ -4,12 +4,12 @@ metadata:
   title: Exercise - Create variables in Python Notebooks for future data analysis
   description: Variables in programming.
   ms.date: 06/18/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Exercise - Create variables in Python Notebooks for future data analysis
 durationInMinutes: 6
 sandbox: true
-notebook: /learn/modules/basic-python-nasa/notebooks/4-variables.ipynb
+notebook: /training/modules/basic-python-nasa/notebooks/4-variables.ipynb

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-azure-database-for-postgresql.exercise-configure-azure-active-directory-authentication
+title: 'Exercise: Configure Azure AD authentication with Azure Database for PostgreSQL'
+metadata:
+  title: 'Exercise: Configure Azure AD authentication with Azure Database for PostgreSQL'
+  description: "Exercise: Configure Azure AD authentication with Azure Database for PostgreSQL"
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 25
+content: |
+  [!include[](includes/7-exercise-configure-azure-active-directory-authentication.md)]

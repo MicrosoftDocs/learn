@@ -20,7 +20,7 @@ prerequisites: |
   - An active Azure account
   - Knowledge of Azure portal navigation
   - Knowledge of at least one programming language (C#, Python)
-iconUrl: /learn/achievements/read-text-images-documents-with-computer-vision-service.svg
+iconUrl: /training/achievements/read-text-images-documents-with-computer-vision-service.svg
 levels:
 - intermediate
 roles:
@@ -30,6 +30,8 @@ products:
 - azure
 - azure-cognitive-services
 - azure-form-recognizer
+subjects:
+- classification-analysis
 units:
 - learn.wwl.read-text-images-documents-with-computer-vision-service.introduction
 - learn.wwl.read-text-images-documents-with-computer-vision-service.options-for-reading-text

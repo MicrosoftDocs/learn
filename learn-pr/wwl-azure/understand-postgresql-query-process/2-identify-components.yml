@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-postgresql-query-process.identify-components
+title: Identify the query processing components
+metadata:
+  title: Identify the query processing components
+  description: "Identify the query processing components"
+  ms.date: 06/22/2022
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-identify-components.md)]

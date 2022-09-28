@@ -4,10 +4,10 @@ In this module, you learned about some of the ways you can secure network traffi
 
 Tailwind Traders now has a few tools and services that it can use to secure its networks. Here's a brief summary:
 
-* Azure Firewall is a managed, cloud-based network security service that helps protect resources in Azure virtual networks.
-* An Azure virtual network is similar to a traditional network that you'd operate in your own datacenter. It enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
-* A network security group (NSG) enables you to filter network traffic to and from Azure resources within a virtual network.
-* Azure DDoS Protection helps protect Azure resources from DDoS attacks.
+- Azure Firewall is a managed, cloud-based network security service that helps protect resources in Azure virtual networks.
+- An Azure virtual network is similar to a traditional network that you'd operate in your own datacenter. It enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+- A network security group (NSG) enables you to filter network traffic to and from Azure resources within a virtual network.
+- Azure DDoS Protection helps protect Azure resources from DDoS attacks.
 
 ## Azure Fundamentals learning path
 
@@ -20,4 +20,4 @@ Here are the learning paths in this series:
 - [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](../../../paths/az-900-describe-core-solutions-management-tools-azure/index.yml?azure-portal=true)
 - [Azure Fundamentals part 4: Describe general security and network security features](../../../paths/az-900-describe-general-security-network-security-features/index.yml?azure-portal=true)
 - [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](../../../paths/az-900-describe-identity-governance-privacy-compliance-features/index.yml?azure-portal=true)
-- [Azure Fundamentals part 6: Describe Azure cost management and service-level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true)
+- [Azure Fundamentals part 6: Describe Microsoft Cost Management and service-level agreements](../../../paths/az-900-describe-azure-cost-management-service-level-agreements/index.yml?azure-portal=true)

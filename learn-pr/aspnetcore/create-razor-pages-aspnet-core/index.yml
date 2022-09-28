@@ -29,6 +29,8 @@ roles:
 products:
 - dotnet
 - aspnet-core
+subjects:
+- development-tools
 units:
 - learn.create-razor-pages-aspnet-core.1-introduction
 - learn.create-razor-pages-aspnet-core.2-why-when-use-razor-pages
@@ -38,6 +40,6 @@ units:
 - learn.create-razor-pages-aspnet-core.6-create-pagemodel
 - learn.create-razor-pages-aspnet-core.7-exercise-create-pagemodel
 - learn.create-razor-pages-aspnet-core.10-summary
-iconUrl: /learn/achievements/aspnetcore/create-a-web-ui-with-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/create-a-web-ui-with-aspnet-core.svg
 badge:
   uid: learn.create-razor-pages-aspnet-core.badge

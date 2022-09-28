@@ -4,12 +4,12 @@ metadata:
   title: Exercise - Chunk code into functions for easy reusability and readability
   description: Learn about functions in Python.
   ms.date: 06/25/2021
-  author: drguthals
-  ms.author: sguthals
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Exercise - Chunk code into functions for easy reusability and readability
 durationInMinutes: 6
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/5-functions.ipynb
+notebook: /training/modules/intermediate-python-nasa/notebooks/5-functions.ipynb

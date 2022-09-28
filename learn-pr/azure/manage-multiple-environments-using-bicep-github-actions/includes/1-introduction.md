@@ -12,7 +12,7 @@ Now, the team has asked you for help with updating its deployment workflow. The 
 
 ## What will you be doing?
 
-In this module, you'll learn how you can extend a workflow to deploy Bicep code to multiple Azure environments in a consistent way. You'll create separate secrets and service principals for each environment to support higher security and isolation. 
+In this module, you'll learn how you can extend a workflow to deploy Bicep code to multiple Azure environments in a consistent way. You'll create separate workload identities for each environment to support higher security and isolation. 
 
 You'll use called workflows to define your deployment steps in a single place, and you'll use Bicep parameters to handle configuration differences between your environments. You'll also secure your parameter values so they don't accidentally leak secrets in your workflow's logs.
 
@@ -31,7 +31,7 @@ You should be familiar with using:
 
 To work through the exercises in the module, you'll need:
 
-- An Azure account that can create resource groups, Azure Active Directory applications, and service principals.
+- An Azure account that can create resource groups and Azure Active Directory applications.
 - A GitHub account.
 
 You'll also need the following installed locally:

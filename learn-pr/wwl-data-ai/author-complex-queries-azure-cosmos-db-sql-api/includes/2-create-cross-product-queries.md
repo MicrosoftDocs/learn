@@ -1,6 +1,6 @@
 A JOIN in Azure Cosmos DB SQL API is different from a JOIN in a relational database as its only scope is a single item. A JOIN creates a cross-product between different sections of a single item.
 
-Let’s take this example JSON object, which has a **name** property and an array with two objects that each have their own **group** property:
+Let’s take this example JSON object, which has a **name** property and an array with three objects that each have their own **group** property:
 
 ```json
 {

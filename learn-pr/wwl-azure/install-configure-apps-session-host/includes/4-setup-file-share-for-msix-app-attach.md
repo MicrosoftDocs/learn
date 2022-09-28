@@ -8,39 +8,11 @@ MSIX app attach image size limits for your system depend on the storage type you
 
 The following table gives an example of how many resources a single 1-GB MSIX image with one MSIX app inside of it requires for each VM:
 
-:::row:::
-  :::column:::
-    **Resource**
-  :::column-end:::
-  :::column:::
-    **Requirements**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Steady state IOPs
-  :::column-end:::
-  :::column:::
-    1 IOPs
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Machine boot sign-in
-  :::column-end:::
-  :::column:::
-    10 IOPs
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Latency
-  :::column-end:::
-  :::column:::
-    400 ms
-  :::column-end:::
-:::row-end:::
-
+| **Resource**         | **Requirements** |
+| -------------------- | ---------------- |
+| Steady state IOPs    | 1 IOPs           |
+| Machine boot sign-in | 10 IOPs          |
+| Latency              | 400 ms           |
 
 Requirements can vary widely depending how many MSIX-packaged applications are stored in the MSIX image. For larger MSIX images, you'll need to allocate more bandwidth.
 
@@ -57,14 +29,12 @@ Here are some other things we recommend you do to optimize MSIX app attach perfo
 
  -  The storage solution you use for MSIX app attach should be in the same datacenter location as the session hosts.
  -  To avoid performance bottlenecks, exclude the following VHD, VHDX, and CIM files from antivirus scans:
-    
      -  &lt;MSIXAppAttachFileShare\\&gt;\\\*.VHD
      -  &lt;MSIXAppAttachFileShare\\&gt;\\\*.VHDX
      -  \\\\storageaccount.file.core.windows.net\\share\*.VHD
      -  \\\\storageaccount.file.core.windows.net\\share\*.VHDX
      -  &lt;MSIXAppAttachFileShare&gt;.CIM
      -  \\\\storageaccount.file.core.windows.net\\share\*\*.CIM
- -  Separate the storage fabric for MSIX app attach from FSLogix profile containers.
  -  All VM system accounts and user accounts must have read-only permissions to access the file share.
  -  Any disaster recovery plans for Azure Virtual Desktop must include replicating the MSIX app attach file share in your secondary failover location.
 
@@ -74,51 +44,11 @@ The setup process for MSIX app attach file share is largely the same as the setu
 
 If you're storing your MSIX applications in Azure Files, then for your session hosts, you'll need to assign all session host VMs both storage account role-based access control (RBAC) and file share New Technology File System (NTFS) permissions on the share.
 
-:::row:::
-  :::column:::
-    **Azure object**
-  :::column-end:::
-  :::column:::
-    **Required role**
-  :::column-end:::
-  :::column:::
-    **Role function**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Session host (VM computer objects)
-  :::column-end:::
-  :::column:::
-    Storage File Data SMB Share Contributor
-  :::column-end:::
-  :::column:::
-    Read and Execute, Read, List folder contents.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Admins on File Share
-  :::column-end:::
-  :::column:::
-    Storage File Data SMB Share Elevated Contributor
-  :::column-end:::
-  :::column:::
-    Full control.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Users on File Share
-  :::column-end:::
-  :::column:::
-    Storage File Data SMB Share Contributor
-  :::column-end:::
-  :::column:::
-    Read and Execute, Read, List folder contents.
-  :::column-end:::
-:::row-end:::
-
+| **Azure object**                   | **Required role**                                | **Role function**                             |
+| ---------------------------------- | ------------------------------------------------ | --------------------------------------------- |
+| Session host (VM computer objects) | Storage File Data SMB Share Contributor          | Read and Execute, Read, List folder contents. |
+| Admins on File Share               | Storage File Data SMB Share Elevated Contributor | Full control.                                 |
+| Users on File Share                | Storage File Data SMB Share Contributor          | Read and Execute, Read, List folder contents. |
 
 To assign session host VMs permissions for the storage account and file share:
 

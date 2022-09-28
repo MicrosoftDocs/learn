@@ -141,4 +141,4 @@ about assigning management access with RBAC. That one plans to cover RBAC vs. AD
 - [Understand role definitions for Azure resources](/azure/role-based-access-control/role-definitions)
 - [Tutorial: Create a custom role for Azure resources using Azure PowerShell](/azure/role-based-access-control/tutorial-custom-role-powershell)
 - [Tutorial: Create a custom role for Azure resources using Azure CLI](/azure/role-based-access-control/tutorial-custom-role-cli)
-- Related module: [Secure your Azure resources with role-based access control (RBAC)](/learn/modules/secure-azure-resources-with-rbac)
+- Related module: [Secure your Azure resources with role-based access control (RBAC)](/training/modules/secure-azure-resources-with-rbac)

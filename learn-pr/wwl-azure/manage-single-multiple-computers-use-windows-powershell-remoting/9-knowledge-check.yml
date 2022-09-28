@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-single-multiple-computers-use-windows-powershell-remoting.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/01/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which of the following features distinguishes PowerShell Remoting over WinRM from PowerShell Remoting over SSH?"
+    choices:
+    - content: "The ability to use Just Enough Administration (JEA)"
+      isCorrect: true
+      explanation: "Correct. Just Enough Administration (JEA) isn't supported when using PowerShell Remoting over SSH but it's available when using PowerShell Remoting based on WinRM."
+    - content: "The ability to run the Invoke-Command cmdlet"
+      isCorrect: false
+      explanation: "Incorrect. The Invoke-Command cmdlet is supported when using PowerShell Remoting over WinRM and SSH."
+    - content: "Support for Windows Server operating systems"
+      isCorrect: false
+      explanation: "Incorrect. PowerShell Remoting over SSH is supported on Windows Server operating systems."
+  - content: "Which command is used to start one-to-one PowerShell remoting?"
+    choices:
+    - content: "The **Enter-PSSession** command without parameter"
+      isCorrect: false
+      explanation: "Incorrect. To start one-to-one PowerShell remoting, use the **Enter-PSSession** command combined with its *–ComputerName* parameter."
+    - content: "The **Enter-PSSession** command combined with its *–ComputerName* parameter"
+      isCorrect: true
+      explanation: "Correct. To start one-to-one PowerShell remoting, use the **Enter-PSSession** command combined with its *–ComputerName* parameter."
+    - content: "The **Get-Service** command"
+      isCorrect: false
+      explanation: "Incorrect. To start one-to-one PowerShell remoting, use the **Enter-PSSession** command combined with its *–ComputerName* parameter."

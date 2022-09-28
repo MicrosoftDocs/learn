@@ -19,7 +19,7 @@ Some high-level differences are highlighted in the following table.
 | Predictable performance | Variable latency |
 | Fixed pricing | Pay as you go variable pricing |
 | Ability to scale workload up and down | N/A |
-| Message size up to 1 MB. Support for message payloads up to 100 MB currently exists in preview. | Message size up to 256 KB |
+| Message size up to 100 MB | Message size up to 256 KB |
 
 
 ## Advanced features

@@ -1,89 +1,80 @@
-Azure networking services maximize flexibility, availability, resiliency, security, and integrity by design. Network connectivity is possible between resources located in Azure, between on-premises and Azure-hosted resources, and to and from the internet and Azure.
+By design, Azure networking services maximize flexibility, availability, resiliency, security, and integrity. Network connectivity is possible between resources that are located in Azure, between on-premises and Azure-hosted resources, and to and from the internet and Azure.
 
 ## Azure networking security recommendations
 
-Use the following security recommendations to set Azure networking policies in your Azure subscriptions. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps with your own subscription using your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+The following sections describe the Azure networking recommendations that are in CIS Microsoft Azure Foundations Security Benchmark v. 1.3.0. Included with each recommendation are the basic steps to complete in the Azure portal. You should complete these steps for your own subscription and by using your own resources to validate each security recommendation. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
-### Restrict RDP and SSH access from the Internet - Level 1
+### Restrict RDP and SSH access from the internet - Level 1
 
-It's possible to reach Azure virtual machines (VMs) by using **Remote Desktop Protocol (RDP)** and the **Secure Shell (SSH)** protocol. These protocols enable the management VMs from remote locations and are standard in datacenter computing.
+It's possible to reach Azure VMs by using Remote Desktop Protocol (RDP) and the Secure Shell (SSH) protocol. You can use these protocols to manage VMs from remote locations. The protocols are standard in datacenter computing.
 
-The potential security problem with using these protocols over the internet is that attackers can use brute force techniques to gain access to Azure VMs. After the attackers gain access, they can use your VM as a launching pad for compromising other machines on your virtual network or even attack networked devices outside Azure.
+The potential security problem with using RDP and SSH over the internet is that attackers can use brute-force techniques to gain access to Azure VMs. After the attackers gain access, they can use your VM as a launching pad to compromise other machines on your virtual network, or even attack networked devices outside Azure.
 
-We recommended that you disable direct RDP and SSH access to your Azure VMs from the internet.
+We recommended that you disable direct RDP and SSH access from the internet for your Azure VMs. Complete the following steps for each VM in your Azure subscription.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Virtual machines**.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Virtual machines*. The **Virtual machines** pane displays.
+1. In the left menu under **Settings**, select **Networking**.
 
-1. For each VM selection, in the middle menu pane, under **Settings**, select **Networking**. The **Networking** pane displays for the VM.
+1. In the **Networking** pane, verify that the **Inbound port rules** tab doesn't have a rule for RDP, for example: `port=3389, protocol = TCP, Source = Any or Internet`.
 
-1. Verify that the **Inbound port rules** tab doesn't have a rule for RDP, for example: `port=3389, protocol = TCP, Source = Any or Internet`
+1. Verify that the **Inbound port rules** tab doesn't have a rule for SSH, for example: `port=22, protocol = TCP, Source = Any or Internet`.
 
-1. Verify that the **Inbound port rules** tab doesn't have a rule for SSH, for example: `port=22, protocol = TCP, Source = Any or Internet`
+:::image type="content" source="../media/azure-networking/rdp.png" alt-text="Screenshot the VM networking pane." lightbox="../media/azure-networking/rdp.png#lightbox":::
 
-    :::image type="content" source="../media/7-rdp.png" alt-text="Screenshot the VM networking pane." lightbox="../media/7-rdp.png#lightbox":::
-
- After direct RDP and SSH access from the internet is disabled, you have other options that you can use to access these VMs for remote management:
+When direct RDP and SSH access from the internet are disabled, you have other options that you can use to access these VMs for remote management:
 
 - Point-to-site VPN
 - Site-to-site VPN
 - Azure ExpressRoute
 - Azure Bastion Host
 
-### Restrict SQL Server access from the Internet - Level 1
+### Restrict SQL Server access from the internet - Level 1
 
-Firewall systems help prevent unauthorized access to computer resources. If a firewall is turned on but not correctly configured, attempts to connect to SQL Server might be blocked.
+Firewall systems help prevent unauthorized access to computer resources. If a firewall is turned on but isn't correctly configured, attempts to connect to SQL Server might be blocked.
 
-To access an instance of the SQL Server through a firewall, you must configure the firewall on the computer that is running SQL Server. Allowing ingress for the IP range `0.0.0.0/0` (Start IP of `0.0.0.0` and End IP of `0.0.0.0`) allows open access to any/all traffic, potentially making the SQL database vulnerable to attacks. Ensure that no SQL databases allow ingress from the internet.
+To access an instance of SQL Server through a firewall, you must configure the firewall on the computer that is running SQL Server. Allowing ingress for the IP range `0.0.0.0/0` (Start IP of `0.0.0.0` and End IP of `0.0.0.0`) allows open access to any and all traffic, potentially making the SQL Server database vulnerable to attacks. Ensure that no SQL Server databases allow ingress from the internet. Complete the following steps for each SQL Server instance.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **SQL servers**.
 
-1. On the Azure **home** page, in the top search bar, search for and select *SQL servers*. The **SQL servers** pane displays.
+1. In the menu pane under **Security**, select **Networking**.
 
-1. For each SQL server selection, in the middle menu pane, under **Security**, select **Firewalls and virtual networks**. The **Firewalls and virtual networks** pane displays for the SQL server.
+1. In the **Networking** pane, on the **Public access** tab, ensure that a firewall rule exists. Ensure that no rule has a **Start IP** of `0.0.0.0` and **End IP** of `0.0.0.0` or another combination that allows access to wider public IP ranges.
 
-1. Ensure that the firewall rules exist, and no rule has a **Start IP** of `0.0.0.0` and **End IP** of `0.0.0.0` or other combinations that allow access to wider public IP ranges.
+1. If you change any settings, select **Save**.
 
-1. On the top menu bar, select **Save**.
-
-    :::image type="content" source="../media/7-firewall.png" alt-text="Screenshot of Firewalls and virtual networks pane." lightbox="../media/7-firewall.png#lightbox":::
-
-### Configure the NSG flow log retention period for more than 90 days - Level 2
-
-When you create or update a virtual network in your subscription, Network Watcher will be enabled automatically in your virtual network's region. There's no impact to your resources or associated charge for automatically enabling Network Watcher.
-
-Network security group (NSG) flow logs are a feature of Network Watcher that allows you to view information about ingress and egress IP traffic through an NSG. Flow logs are written in JSON format, and show:
-
-- Outbound and inbound flows on a per rule basis
-- Network interface (NIC) the flow applies to
-- 5-tuple information about the flow: source/destination IP, source/destination port, and protocol
-- If the traffic was allowed or denied
-- In Version 2, throughput information like bytes and packets
-
-Logs can be used to check for anomalies and give insight into suspected breaches.
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
-
-1. On the Azure **home** page, in the top search bar, search for and select *Network Watcher*. The **Network Watcher** pane displays.
-
-1. In the left menu pane, under **Logs**, select **NSG flow logs**. The **NSG flow logs** pane displays.
-
-1. Ensure **Retention (days)** setting is greater than 90 days.
-
-1. On the top menu bar, select **Save**.
-
-    :::image type="content" source="../media/7-nsg-flow.png" alt-text="Screenshot of the nsg flow log pane." lightbox="../media/7-nsg-flow.png":::
+:::image type="content" source="../media/azure-networking/firewall.png" alt-text="Screenshot that shows the Firewalls and virtual networks pane." lightbox="../media/azure-networking/firewall.png#lightbox":::
 
 ### Enable Network Watcher - Level 1
 
-Network security group (NSG) flow logs are a feature of Network Watcher that allows you to view information about ingress and egress IP traffic through an NSG.
+NSG flow logs are an Azure Network Watcher feature that gives you information about IP ingress and egress traffic through an NSG. Flow logs are written in JSON format and show:
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+- Outbound and inbound flows on a per-rule basis.
+- The network interface (NIC) the flow applies to.
+- 5-tuple information about the flow: source and destination IP addresses, source and destination ports, and the protocol that was used.
+- Whether the traffic was allowed or denied.
+- In version 2, throughput information like bytes and packets.
 
-1. On the Azure **home** page, in the top search bar, search for and select *Network Watcher*. The **Network Watcher** pane displays.
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Network Watcher**.
 
-1. Select the *Network watcher* from the appropriate subscription and location you choose. The **Network Watcher** pane displays for your subscription/location.
+1. Select **Network Watcher** for your subscription and location.
 
-> [!TIP]
-> Remember to select **Save** if you make changes to any of the settings.
+1. If no NSG flow logs exist for your subscription, create an NSG flow log.
+
+### Set NSG flow log retention period to more than 90 days - Level 2
+
+When you create or update a virtual network in your subscription, Network Watcher is automatically enabled in your virtual network's region. Your resources aren't affected and no charge is assessed when Network Watcher is automatically enabled.
+
+You can use NSG flow logs to check for anomalies and to gain insight into suspected breaches.
+
+1. Sign in to the [Azure portal](https://portal.azure.com). Search for and select **Network Watcher**.
+
+1. In the left menu under **Logs**, select **NSG flow logs**.
+
+   :::image type="content" source="../media/azure-networking/nsg-flow.png" alt-text="Screenshot that shows the N S G flow log pane." lightbox="../media/azure-networking/nsg-flow.png":::
+
+1. Select an NSG flow log.
+
+1. Ensure that **Retention (days)** is greater than 90 days.
+
+1. If you change any settings, in the menu bar, select **Save**.

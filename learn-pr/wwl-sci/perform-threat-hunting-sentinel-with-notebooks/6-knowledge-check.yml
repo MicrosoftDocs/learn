@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 11/05/2021
+  ms.date: 06/30/2022
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
@@ -21,18 +21,18 @@ quiz:
     choices:
     - content: "Data wrangling"
       isCorrect: false
-      explanation: "Incorrect. This is not a feature of the msticpy package."
+      explanation: "Incorrect. This isn't a feature of the msticpy package."
     - content: "Analyzing data"
       isCorrect: true
       explanation: "Correct. The msticpy package has several functions that help security investigators and hunters analyze data."
     - content: "Creating data"
       isCorrect: false
-      explanation: "Incorrect. The msticpy package can acquire and enrich data, but it can not create data."
+      explanation: "Incorrect. The msticpy package can acquire and enrich data, but it cannot create data."
   - content: "Which is a component of notebooks in Microsoft Sentinel?"
     choices:
     - content: "Telemetry analyzer"
       isCorrect: false
-      explanation: "Incorrect. This is not a component."
+      explanation: "Incorrect. This isn't a component."
     - content: "Kernel"
       isCorrect: true
       explanation: "Correct. Notebooks use the Kernel to parse and execute the code within the notebook"
@@ -46,7 +46,7 @@ quiz:
       explanation: "Correct. Python is the most commonly used coding language in the sample notebooks."
     - content: "C#"
       isCorrect: false
-      explanation: "Incorrect. C# is not commonly used in the sample notebooks."
+      explanation: "Incorrect. C# isn't commonly used in the sample notebooks."
     - content: "Java"
       isCorrect: false
-      explanation: "Incorrect. Java is not commonly used in the sample notebooks."
+      explanation: "Incorrect. Java isn't commonly used in the sample notebooks."

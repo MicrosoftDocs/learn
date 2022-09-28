@@ -1,8 +1,8 @@
-CDNs can improve the performance of static websites. Within the context of a global training business, your content needs to be easily accessible and up-to-date. In this unit, you'll learn how to make additional configuration changes so that CDNs work properly with static sites in production environments.
+CDNs can improve the performance of static websites. Within the context of a global training business, your content needs to be easily accessible and up-to-date. In this unit, you'll learn how to make other configuration changes so that CDNs work properly with static sites in production environments.
 
 ## Using Custom domains
 
-From the exercise, you saw how the CDN had a unique URL in the form of *endpointname.azureedge.net*. Regardless of where the user is in the world, this URL will point to the nearest POP, in that way improving performance. While this approach works fine, the URL isn't memorable and doesn't reflect your company's brand.
+From the exercise, you saw how the CDN had a unique URL in the form of *endpointname.azureedge.net*. Regardless of where the user is in the world, this URL will point to the nearest POP, in that way improving performance. While this approach works fine, the URL isn't memorable, and doesn't reflect your company's brand.
 
 Custom domain settings enable you to specify a Canonical Name (CNAME) record in Domain Name System (DNS) that points to the CDN URL. Suppose the user types in the custom domain name, for example _www.contoso.com_. The DNS maps that domain name to the POP endpoint URL and connects the user to that URL.
 

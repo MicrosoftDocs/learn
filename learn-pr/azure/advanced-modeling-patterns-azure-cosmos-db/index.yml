@@ -22,7 +22,7 @@ prerequisites: |
   - Familiarity with basic modeling and partitioning strategies, such as embedding or referencing data in entities.
   - Familiarity with Azure Cosmos DB .NET SDK v3.
   - Familiarity with Azure Cosmos DB change feed.
-iconUrl: /learn/achievements/advanced-modeling-patterns-azure-cosmos-db.svg
+iconUrl: /training/achievements/advanced-modeling-patterns-azure-cosmos-db.svg
 levels: 
   - intermediate
 roles: 
@@ -30,6 +30,9 @@ roles:
   - solution-architect
 products:  
   - azure-cosmos-db
+subjects:
+- database
+- data-modeling
 units:
 - learn.azure.advanced-modeling-patterns-azure-cosmos-db.introduction
 - learn.azure.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data

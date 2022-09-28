@@ -1,19 +1,31 @@
-In this exercise, you'll create a basic to do list component inside our Blazor app.
+In this exercise, you'll create a basic to-do list component inside our Blazor app.
 
 ## Create the ToDo page
 
-1. Create the ToDo page with the following command:
+1. Create the ToDo page:
 
-    ```dotnetcli
-    dotnet new razorcomponent -n Todo -o Pages
-    ```
+   ::: zone pivot="vscode"
 
-    The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
+   With Visual Studio Code and other text editors, you can create the razor component at the command line with this statement:
 
-    > [!IMPORTANT]
-    > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
+   ```dotnetcli
+   dotnet new razorcomponent -n Todo -o Pages
+   ```
 
-1. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
+   The `-n|--name` option in the preceding command specifies the name of the new Razor component. The new component is created in the project's `Pages` folder with the `-o|--output` option.
+
+   ::: zone-end
+
+   ::: zone pivot="vstudio"
+
+   In Visual Studio, you can right-click the `Pages` folder in **Solution Explorer**, then choose **Add** > **Razor Component...** and name the component `Todo.razor`
+
+   ::: zone-end
+
+   > [!IMPORTANT]
+   > Razor component file names require a capitalized first letter. Open the `Pages` folder and confirm that the `Todo` component file name starts with a capital letter `T`. The file name should be `Todo.razor`.
+
+2. Open the `Todo` component and add an `@page` Razor directive to the top of the file with a relative URL of `/todo`.
 
     ```cshtml
     @page "/todo"
@@ -25,7 +37,7 @@ In this exercise, you'll create a basic to do list component inside our Blazor a
     }
     ```
 
-1. Save the `Pages/Todo.razor` file
+3. Save the `Pages/Todo.razor` file.
 
 ## Add the Todo component to the navigation bar
 
@@ -64,7 +76,7 @@ Use the following C# code for the `TodoItem` class. Declare the `Title` as a nul
 public class TodoItem
 {
     public string? Title { get; set; }
-    public bool IsDone { get; set; }
+    public bool IsDone { get; set; } = false;
 }
 ```
 
@@ -72,7 +84,7 @@ You may need to stop and restart the `dotnet watch run` process if it does not d
 
 ## Bind a list of TodoItems
 
-You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. We'll accomplish this by making the following changes in the `Pages/Todo.razor` file.
+You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. To accomplish this, make the following changes in the `Pages/Todo.razor` file:
 
 - Add a field for the todo items in the `@code` block. The `Todo` component uses this field to maintain the state of the todo list.
 - Add unordered list markup and a `foreach` loop to render each todo item as a list item (`<li>`).
@@ -185,9 +197,9 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
     }
     ```
 
-1. Save the `Pages/Todo.razor` file. The app is automatically rebuilt in the command shell. The page reloads in the browser after the browser reconnects to the app.
+1. Save the `Pages/Todo.razor` file. The app automatically rebuilds in the command shell. The page reloads in the browser after the browser reconnects to the app.
 
-1. The title text for each todo item can be made editable, and a checkbox can help the user keep track of completed items. Add a checkbox input for each todo item and bind its value to the `IsDone` property. Change `@todo.Title` to an `<input>` element bound to `todo.Title` with `@bind`:
+1. You can make the title text for each todo item editable, and you can add a checkbox to help the user keep track of completed items. Add a checkbox input for each todo item and bind its value to the `IsDone` property. Change `@todo.Title` to an `<input>` element bound to `todo.Title` with `@bind`:
 
     ```razor
     <ul>
@@ -207,7 +219,7 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. W
     <h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
     ```
 
-1. Save the `Pages/Todo.razor` file. The app is automatically rebuilt in the command shell. The page reloads in the browser after the browser reconnects to the app.
+1. Save the `Pages/Todo.razor` file. The app automatically rebuilds in the command shell. The page reloads in the browser after the browser reconnects to the app.
 
 1. Add items, edit items, and mark todo items done to test the component.
 

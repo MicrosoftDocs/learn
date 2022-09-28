@@ -2,7 +2,8 @@
 uid: learn.azure.beginner-hololens-2-tutorials
 metadata:
   title: 'HoloLens 2 fundamentals: develop mixed reality applications'
-  description: 'Explore best practices for developing Azure-enabled mixed reality applications with the Mixed Reality Toolkit.'
+  description: Learn about the best practices for developing Azure-enabled mixed reality applications with the Mixed Reality Toolkit.
+  ms.custom: kr2b-contr-experiment
   ms.date: 09/13/2021
   author: Sean-Kerawala
   ms.author: sekerawa
@@ -16,7 +17,7 @@ prerequisites: |
  - Unity Hub with Unity 2020.3 LTS or Unity 2019.4 LTS installed (OpenXR requires 2020.3.8 or later to prevent bugs)
 summary: |
  Learn the techniques and best practices for developing mixed reality applications.You will identify and describe some of the core concepts like Mixed Reality Toolkit (MRTK), Azure Spatial Anchors, Azure Services, PC Holographic Remoting, and so on.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
@@ -29,6 +30,8 @@ products:
 - windows-mixed-reality
 - mrtk
 - hololens
+subjects:
+- mixed-reality
 modules:
 - learn.azure.learn-introduction-tutorials-mrtk
 - learn.azure.place-scene-objects-tutorials-mrtk

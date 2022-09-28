@@ -16,22 +16,26 @@ DNS plays a critical role in the functionality required, since the system access
     # Create new subnet for the SQL private endpoint
     sql_subnet_name=sql
     sql_subnet_prefix=192.168.3.0/24
-    az network vnet subnet create -g $rg --vnet-name $vnet_name -n $sql_subnet_name --address-prefix $sql_subnet_prefix
-    az network vnet subnet update -n $sql_subnet_name -g $rg --vnet-name $vnet_name --disable-private-endpoint-network-policies true
+    az network vnet subnet create --resource-group $rg --vnet-name $vnet_name \
+        --name $sql_subnet_name --address-prefix $sql_subnet_prefix \
+        --disable-private-endpoint-network-policies true
     # SQL Server private endpoint
     sql_endpoint_name=sqlep
-    sql_server_id=$(az sql server show -n $sql_server_name -g $rg -o tsv --query id)
-    az network private-endpoint create -n $sql_endpoint_name -g $rg \
-      --vnet-name $vnet_name --subnet $sql_subnet_name \
-      --private-connection-resource-id $sql_server_id --group-id sqlServer --connection-name sqlConnection
+    sql_server_id=$(az sql server show --name $sql_server_name --resource-group $rg --output tsv --query id)
+    az network private-endpoint create --name $sql_endpoint_name --resource-group $rg \
+        --vnet-name $vnet_name --subnet $sql_subnet_name \
+        --private-connection-resource-id $sql_server_id --group-id sqlServer \
+        --connection-name sqlConnection
     ```
 
 1. You can verify the IP address assigned to the private endpoint using the `az network nic` command, since private endpoints are represented in Azure as Network Interface Cards (NICs):
 
     ```azurecli
     # Get endpoint's private IP address
-    sql_nic_id=$(az network private-endpoint show -n $sql_endpoint_name -g $rg --query 'networkInterfaces[0].id' -o tsv)
-    sql_endpoint_ip=$(az network nic show --ids $sql_nic_id --query 'ipConfigurations[0].privateIpAddress' -o tsv) && echo $sql_endpoint_ip
+    sql_nic_id=$(az network private-endpoint show --name $sql_endpoint_name \
+        --resource-group $rg --query 'networkInterfaces[0].id' -o tsv)
+    sql_endpoint_ip=$(az network nic show --ids $sql_nic_id \
+        --query 'ipConfigurations[0].privateIpAddress' -o tsv) && echo $sql_endpoint_ip
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "nslookup ${sql_server_name}.database.windows.net"
     ```
 
@@ -42,9 +46,11 @@ DNS plays a critical role in the functionality required, since the system access
     ```azurecli
     # Create Azure DNS private zone and records
     dns_zone_name=privatelink.database.windows.net
-    az network private-dns zone create -n $dns_zone_name -g $rg 
-    az network private-dns link vnet create -g $rg -z $dns_zone_name -n myDnsLink --virtual-network $vnet_name --registration-enabled false
-    az network private-endpoint dns-zone-group create --endpoint-name $sql_endpoint_name -g $rg -n zonegroup --zone-name zone1 --private-dns-zone $dns_zone_name
+    az network private-dns zone create --name $dns_zone_name --resource-group $rg 
+    az network private-dns link vnet create --resource-group $rg --zone-name $dns_zone_name \
+        --name myDnsLink --virtual-network $vnet_name --registration-enabled false
+    az network private-endpoint dns-zone-group create --endpoint-name $sql_endpoint_name \
+        --resource-group $rg --name zonegroup --zone-name zone1 --private-dns-zone $dns_zone_name
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "nslookup ${sql_server_name}.database.windows.net"
     ```
 
@@ -54,14 +60,15 @@ DNS plays a critical role in the functionality required, since the system access
 
     ```azurecli
     # Deploy ACI if you had deleted it
-    az container create -g $rg --file $aci_yaml_file
+    az container create --resource-group $rg --file $aci_yaml_file
     ```
 
 1. You can verify that the Azure Container Instance is up and running with the `api/healthcheck` endpoint. You can verify the correct name resolution to a private IP address with the `api/dns` endpoint, and you can verify reachability to the database with the `api/sqlversion` and `api/sqlsrcip` endpoints.
 
     ```azurecli
     # Test
-    aci_ip=$(az container show -n $aci_name -g $rg --query 'ipAddress.ip' -o tsv) && echo $aci_ip
+    aci_ip=$(az container show --name $aci_name --resource-group $rg \
+        --query 'ipAddress.ip' --output tsv) && echo $aci_ip
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -ks https://$aci_ip/api/healthcheck"
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -ks https://$aci_ip/api/dns?fqdn=${sql_server_name}.database.windows.net"
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -ks https://$aci_ip/api/sqlversion"
@@ -75,7 +82,7 @@ DNS plays a critical role in the functionality required, since the system access
 
     ```azurecli
     # Cleanup unit 5
-    az container delete -n $aci_name -g $rg -y
+    az container delete --name $aci_name --resource-group $rg --yes
     ```
   
 ## Summary

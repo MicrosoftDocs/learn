@@ -18,13 +18,15 @@ abstract: |
   - Configure the Activity Log.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-monitor-configure.svg
+iconUrl: /training/achievements/azure-monitor-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-monitor
+subjects:
+- business-continuity
 units:
 - learn.wwl.configure-azure-monitor.introduction
 - learn.wwl.configure-azure-monitor.describe-key-capabilities

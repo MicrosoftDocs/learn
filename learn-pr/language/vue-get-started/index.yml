@@ -21,7 +21,7 @@ prerequisites: |
   - Git
   - npm
   - JavaScript
-iconUrl: /learn/achievements/vue-get-started.svg
+iconUrl: /training/achievements/vue-get-started.svg
 ratingEnabled: true
 levels:
 - intermediate

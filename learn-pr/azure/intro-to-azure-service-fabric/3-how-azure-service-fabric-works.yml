@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-service-fabric.how-azure-service-fabric-works
+title: How Azure Service Fabric works
+
+metadata:
+  title: How Azure Service Fabric works
+  description: How Azure Service Fabric works
+  ms.date: 4/11/2022
+  author: tomvcassidy
+  ms.author: tomcassidy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-azure-service-fabric-works.md)]

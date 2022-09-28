@@ -16,7 +16,7 @@ abstract: |
   - Understand what custom scenarios are. 
   - Build a health bot by using custom scenarios. 
   - Learn how to deploy a basic project by using the Azure Health Bot service. 
-iconUrl: /learn/achievements/student-evangelism/health-bot-basic-bot.svg
+iconUrl: /training/achievements/student-evangelism/health-bot-basic-bot.svg
 levels:
   - beginner
 roles:
@@ -25,6 +25,8 @@ roles:
 products:
   - vs
 prerequisites: Introduction to Azure Health Bot
+subjects:
+- chatbot
 units:
   - learn.health-bot-basic-bot.1-introduction
   - learn.health-bot-basic-bot.2-get-started-with-custom-scenario

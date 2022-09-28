@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Familiarity with Linux and Azure 
   - Basic-level understanding of using Red Hat and Java on-premises
-iconUrl: /learn/achievements/introduction-to-red-hat-azure.svg
+iconUrl: /training/achievements/introduction-to-red-hat-azure.svg
 levels:
   - beginner
 roles:
@@ -29,6 +29,9 @@ products:
   - azure
   - azure-linux-vm
   - azure-redhat-openshift
+subjects:
+- cloud-computing
+- development-tools
 units:
 - learn.azure.introduction-to-red-hat-azure.introduction
 - learn.azure.introduction-to-red-hat-azure.what

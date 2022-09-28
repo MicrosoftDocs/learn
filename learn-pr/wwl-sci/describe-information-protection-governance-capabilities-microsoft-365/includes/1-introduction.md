@@ -7,5 +7,5 @@ In this module, you’ll learn about how Microsoft Purview solutions and capabil
 After completing this module, you'll be able to:
 
 - Describe data classification capabilities.
-- Describe records management.
 - Describe data loss prevention.
+- Describe records management.

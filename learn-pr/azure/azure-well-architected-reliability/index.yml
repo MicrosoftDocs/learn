@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
-iconUrl: /learn/achievements/azure-well-architected-reliability.svg
+iconUrl: /training/achievements/azure-well-architected-reliability.svg
 levels:
 - intermediate
 roles:
@@ -35,6 +35,8 @@ products:
 - azure-load-balancer
 - azure-backup
 - azure-application-gateway
+subjects:
+- architecture
 units:
 - learn.azure-well-architected-reliability.1-introduction
 - learn.azure-well-architected-reliability.2-high-availability

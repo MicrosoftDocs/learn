@@ -17,13 +17,15 @@ abstract: |
  - Identify and develop themes, milestones, epics, and user stories for your product road map.
 prerequisites: |
  - Basic knowledge of Agile development concepts.
-iconUrl: /learn/achievements/build-product-road-maps.svg
+iconUrl: /training/achievements/build-product-road-maps.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - azure
+subjects:
+- devops
 units:
 - learn.build-product-road-maps.1-introduction
 - learn.build-product-road-maps.2-what-is-a-product-road-map

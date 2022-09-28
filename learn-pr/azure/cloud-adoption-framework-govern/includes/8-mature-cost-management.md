@@ -44,7 +44,7 @@ The following best practices typically are achieved by a member of the cloud-gov
 
 ### Workload cost management best practices
 
-Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload by using the [Azure Well-Architected Framework overview](/azure/architecture/framework/?azure-portal=true) and [introduction](/learn/modules/azure-well-architected-introduction/?azure-portal=true) to guide decisions about the following architectural changes:
+Before making architectural changes, consult the technical lead for the workload. Facilitate a review of the workload by using the [Azure Well-Architected Framework overview](/azure/architecture/framework/?azure-portal=true) and [introduction](/training/modules/azure-well-architected-introduction/?azure-portal=true) to guide decisions about the following architectural changes:
 
 - **Azure App Service**: Verify production requirements for any Premium tier App Service plan. Without an understanding of the business requirements for a workload and the underlying assets configuration, it's difficult to determine whether a Premium tier plan is required.
 - **Horizontal versus vertical scale**: Using multiple small instances can give you an easier scaling path than a single larger instance. Using small instances supports scale automation, which creates cost optimization. Before a workload can scale horizontally, the technical team must verify that the application is idempotent. Achieving horizontal scale might first require changes to the code and configuring various layers of the application.
@@ -63,15 +63,15 @@ Work with the central operations and workload teams to ensure proper ownership o
 
 After you align roles, establish recurring processes to meet and hold each other accountable for this important recurring task.
 
-## Azure Cost Management + Billing
+## Microsoft Cost Management
 
-Azure Cost Management + Billing is your default tool in Azure to bring together all the data for managing your cost strategy.
+Microsoft Cost Management is your default tool in Azure to bring together all the data for managing your cost strategy.
 
-Azure Cost Management + Billing brings together resource organization, Azure Advisor alerts, and your governance foundation to meet your cost management needs.
+Microsoft Cost Management brings together resource organization, Azure Advisor alerts, and your governance foundation to meet your cost management needs.
 
 ### Exercise: Create a budget
 
-To get started with Azure Cost Management + Billing, create your first budget with the [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true) tutorial.
+To get started with Microsoft Cost Management, create your first budget with the [Create and manage Azure budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?azure-portal=true) tutorial.
 
 ### Exercise: Find opportunities to optimize
 

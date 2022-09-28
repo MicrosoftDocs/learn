@@ -1,4 +1,4 @@
-To round out your understanding of offerings on the Azure data platform, consider Azure Databricks, Data Factory, and Azure Purview.
+To round out your understanding of offerings on the Azure data platform, consider Azure Databricks, Data Factory, and Microsoft Purview.
 
 ## Databricks
 
@@ -16,6 +16,6 @@ As a data engineer, you can create data-driven workflows in the cloud to orchest
 
 Data Factory processes and transforms data by using compute services such as Azure HDInsight, Hadoop, Spark, and Azure Machine Learning. Publish output data to data stores such as Azure Synapse Analytics so that business intelligence applications can consume the data. Ultimately, you use Data Factory to organize raw data into meaningful data stores and data lakes so your organization can make better business decisions.
 
-## Azure Purview
+## Microsoft Purview
 
-Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data. Easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. Empower data consumers to find valuable, trustworthy data.
+Microsoft Purview brings together the former **Azure Purview** and the former **Microsoft 365 Compliance** portfolio, to form a comprehensive set of solutions that help you govern, protect, and manage your entire data estate. This unified data governance service helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data. With Microsoft Purview, you can easily create a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage.

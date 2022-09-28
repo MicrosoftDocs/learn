@@ -16,13 +16,15 @@ abstract: |
   *   Configure integrated cache options
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-sql-api-integrated-cache-implement.svg
+iconUrl: /training/achievements/azure-cosmos-db-sql-api-integrated-cache-implement.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- database
 units:
 - learn.wwl.implement-integrated-cache.introduction
 - learn.wwl.implement-integrated-cache.review-workloads-that-benefit-from-cache

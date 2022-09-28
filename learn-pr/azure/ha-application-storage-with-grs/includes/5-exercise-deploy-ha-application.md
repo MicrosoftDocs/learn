@@ -1,18 +1,18 @@
-You're now ready to start implementing the design to deploy a highly available application. To test the application, you download and install Fiddler.
+You're now ready to start implementing the design to deploy a highly available application. To test the application, you'll download and install Fiddler.
 
-Recall that your application needs to automatically fail over and use the storage accounts at the secondary location if there's a failure connecting to the primary region that holds your data in Azure storage. The circuit breaker forces the application to behave in this manner. When the primary location is back online, the circuit breaker reroutes the application back to the primary region. 
+Recall that your application needs to automatically fail over and use the storage accounts at the secondary location if there's a failure connecting to the primary region that holds your data in Azure storage. The circuit breaker forces the application to behave in this manner. When the primary location is back online, the circuit breaker reroutes the application back to the primary region.
 
 Before you commit to full-blown development of the healthcare application, you want to test this approach by using a sample application with dummy data.
 
-In this exercise, you run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. When a problem is detected, the application switches to the secondary storage account, and it fails back to the primary location when it's available again. The application uploads a file to Blob storage and then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but it returns to the secondary location if the primary location is still unavailable.
+In this exercise, you'll run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. When a problem is detected, the application switches to the secondary storage account, and it fails back to the primary location when it's available again. The application uploads a file to Blob storage and then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but it returns to the secondary location if the primary location is still unavailable.
 
-![A scenario for configuring failover.](../media/5-exercise-failover-visual.png)
+![Diagram of a scenario for configuring failover.](../media/5-exercise-failover-visual.png)
 
 ## What is Fiddler?
 
-Fiddler is a third-party tool that's used to help debug applications, in particular web applications. It captures network traffic between computers and, based on the result, uses its event-based scripting subsystem to halt connections. 
+Fiddler is a third-party tool that's used to help debug applications, particularly web applications. It captures network traffic between computers and, based on the result, uses its event-based scripting subsystem to halt connections.
 
-In this unit, you use Fiddler Classic to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you'll see the traffic being directed to the various storage account endpoints.
+In this unit, you'll use Fiddler Classic to monitor the connection to the storage account for the healthcare application. When the application detects that consultants are no longer able to download blobs from storage, it starts a failover to the secondary storage account. When it detects that the primary connection is available again, it redirects the connections to the primary location. In Fiddler, you'll see the traffic being directed to the various storage account endpoints.
 
 If you don't have Fiddler Classic installed already, download and install it from the [Telerik Fiddler home page](https://www.telerik.com/download/fiddler?azure-portal=true).
 
@@ -21,7 +21,7 @@ If you don't have Fiddler Classic installed already, download and install it fro
 
 ## Install Visual Studio and download the sample code
 
-The application code runs locally on your desktop. You require Visual Studio to build the application.
+The application code runs locally on your desktop. You'll need Visual Studio to build the application.
 
 1. If you don't already have Visual Studio 2019 installed, you can download a free version from the [Visual Studio 2019 home page](https://visualstudio.microsoft.com/vs/?azure-portal=true).
 
@@ -41,7 +41,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. On the **HTTPS** tab, select **Decrypt HTTPS traffic**. If you're prompted to install additional certificates from Fiddler, accept them, and then close and restart Fiddler.
 
-    :::image type="content" source="../media/5-fiddler-options.png" alt-text="The Fiddler HTTPS configuration tab in the Options dialog box." loc-scope="third-party"::: <!--Fiddler, no-loc -->
+    :::image type="content" source="../media/5-fiddler-options.png" alt-text="Screenshot of the Fiddler HTTPS configuration tab in the Options dialog box." loc-scope="third-party"::: <!--Fiddler, no-loc -->
 
 ## Examine the sample application
 
@@ -154,7 +154,7 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     This code iterates for 1000 times, downloading the data from Blob storage. The first *if...else* statement displays the iteration number of the download attempt (starting at 0), together with a prefix (either "P" or "S"), indicating whether the blob was downloaded by using the primary or secondary storage location.
 
-1. Examine the following block. Some statements have been omitted, to focus on the logic of this code:
+1. Examine the following block. Some statements have been omitted to focus on the logic of this code:
 
     ```csharp
         // Set up an operation context for the downloading the blob.
@@ -254,11 +254,11 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
     The application starts by uploading a file to your Azure storage account. The application waits until the file has been replicated to the secondary storage account location, and then it loops, downloading the file repeatedly. The application displays a message containing an iteration number and a prefix that indicates that a file was downloaded from the primary location. For example, it displays *P0* for the first iteration, *P1* for the second iteration, and so on.
 
-    :::image type="content" source="../media/5-app-download.png" alt-text="The output from the sample application, showing the messages displayed as the data is repeatedly downloaded." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/5-app-download.png" alt-text="Screenshot of the output from the sample application, showing the messages displayed as the data is repeatedly downloaded." loc-scope="other"::: <!-- no-loc -->
 
 1. While the app is running, switch to Fiddler. Fiddler shows the HTTP traffic uploading the file to your storage account and then downloading the data again. The left pane displays a list of requests that are sent to your storage account, similar to the list shown in the following image:
 
-    :::image type="content" source="../media/5-fiddler-status.png" alt-text="[The Fiddler application, showing the traffic sent to your Azure storage account by the sample application." loc-scope="other"::: <!-- Fiddler, no-loc -->
+    :::image type="content" source="../media/5-fiddler-status.png" alt-text="Screenshot of the Fiddler application, showing the traffic sent to your Azure storage account by the sample application." loc-scope="other"::: <!-- Fiddler, no-loc -->
 
 1. Return to the application window, and press any key to pause it.
 
@@ -280,13 +280,13 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
    Fiddler displays the HTTP 503 errors that are being generated against the primary location. The application window displays the message *Retrying event because of error reading the primary*. After five retries, the circuit breaker in the application switches to the secondary location and starts reading from it instead. You'll see messages with the "S" prefix (for secondary) rather than "P" (for primary). After the circuit breaker reads from the secondary account for a short period, it attempts to switch back to the primary location. This fails, so the circuit breaker reverts to the secondary location for another period. This process continues until the primary location becomes available again, as shown in the following image:
 
-   :::image type="content" source="../media/5-app-switch.png" alt-text="The output from the sample application, showing the switch from the primary account to the secondary account." loc-scope="other"::: <!-- no-loc -->
+   :::image type="content" source="../media/5-app-switch.png" alt-text="Screenshot of the output from the sample application, showing the switch from the primary account to the secondary account." loc-scope="other"::: <!-- no-loc -->
 
 1. Press any key to pause the application once again.
 
 1. In Fiddler, remove the code that you added earlier to the **OnBeforeResponse** function, and save the script.
 
-1. Return to your application, and press any key to continue running it. The application now successfully reverts to the primary storage account location.
+1. Return to your application and press any key to continue running it. The application now successfully reverts to the primary storage account location.
 
 1. Close the application, and then close Visual Studio.
 
@@ -294,8 +294,8 @@ The application code runs locally on your desktop. You require Visual Studio to 
 
 1. In the **Options** pane, select the **HTTPS** tab.
 
-1. On the **HTTPS** tab, select **Actions**, and then select **Reset All Certificates**. Allow Fiddler to remove its certificates from the Trusted Root List and the Root Store. This action removes the HTTPS inspection certificate that was installed by Fiddler earlier.
+1. On the **HTTPS** tab, select **Actions**, then select **Reset All Certificates**. Allow Fiddler to remove its certificates from the Trusted Root List and the Root Store. This action removes the HTTPS inspection certificate that was installed by Fiddler earlier.
 
-1. Select **OK**, and then close Fiddler.
+1. Select **OK**, then close Fiddler.
 
 You've verified that the data uploaded to an Azure storage account is replicated across different regions. You've seen how an application can use the Circuit Breaker pattern to handle connection failures, and how it switches from the primary to the secondary storage account location. The application can revert back to the primary location when the connection becomes available again.

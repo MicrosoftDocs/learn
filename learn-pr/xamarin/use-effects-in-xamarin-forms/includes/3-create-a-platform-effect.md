@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 To use an effect in shared Xamarin.Forms code, there needs to be an implementation in platform-specific code.
 
 In this unit, you create an effect, implement the required methods, and expose it to Xamarin.Forms.

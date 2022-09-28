@@ -16,13 +16,16 @@ abstract: |
   - Create alert rules and action groups.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-alerts-configure.svg
+iconUrl: /training/achievements/azure-alerts-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-monitor
+subjects:
+- cloud-computing
+- communication
 units:
 - learn.wwl.configure-azure-alerts.introduction
 - learn.wwl.configure-azure-alerts.manage-azure-monitor-alerts

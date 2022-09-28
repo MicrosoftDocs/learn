@@ -13,7 +13,7 @@ title: "Develop an instrumentation strategy"
 summary: |
   Learn how logging, telemetry, and monitoring give you full visibility into what's happening in your environment.
 prerequisites: None
-iconUrl: /learn/achievements/az-400-develop-instrumentation-strategy.svg
+iconUrl: /training/achievements/az-400-develop-instrumentation-strategy.svg
 levels:
 - beginner
 roles:
@@ -38,10 +38,11 @@ products:
 - azure-functions
 - azure-kubernetes-service
 - azure-logic-apps
+subjects:
+- it-management-monitoring
 modules:
 - learn.azure.capture-application-logs-app-service
 - learn.control-and-organize-with-resource-manager
-- learn.azure.intro-to-app-center
 - learn.azure-well-architected-performance-efficiency
 - learn.azure-well-architected-operational-excellence
 - learn.analyze-infrastructure-with-azure-monitor-logs

@@ -20,13 +20,15 @@ prerequisites: |
   - Visual Studio Code, installed
   - A basic understanding of Git concepts and commands, such as working with repositories, forks, clones, and branches, staging and unstaging changes, and pushing commits.
   - You need a GitHub account.
-iconUrl: /learn/achievements/use-git-from-vs-code.svg
+iconUrl: /training/achievements/use-git-from-vs-code.svg
 levels:
 - beginner
 roles:
 - developer
 products:
 - vs-code
+subjects:
+- development-tools
 units:
 - learn.azure.use-git-from-vs-code.introduction
 - learn.azure.use-git-from-vs-code.clone-branch

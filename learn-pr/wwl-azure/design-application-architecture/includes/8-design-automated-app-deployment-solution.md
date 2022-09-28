@@ -26,18 +26,18 @@ There are many benefits to using templates for your resource provisioning. These
 
 [Bicep](/azure/azure-resource-manager/bicep/overview) is an Azure Resource Manager template language that's used to declaratively deploy Azure resources. Bicep is a domain-specific language, which means that it's designed for a specific scenario or domain. Bicep is used to create Azure Resource Manager templates. 
 
-:::image type="content" source="../media/bicep-to-json.png" alt-text="A graphic that depicts the process of authoring using a Bicep template via JSON template to Azure.":::
+:::image type="content" source="../media/bicep-to-json.png" alt-text="A graphic that depicts the process of authoring using a Bicep template via J S O N template to Azure.":::
 
 
 There are many reasons to choose Bicep as the main tool set for your infrastructure as code deployments. These benefits are described in the following table.
 
 | **Feature**| **Description** |
 | - | - |
-| Azure-native| Bicep is native to the Azure ecosystem. When new Azure resources are released or updated, Bicep will support those features on day one. |
-| Azure integration| Templates, both JSON and Bicep, are fully integrated within the Azure platform. With Resource Manager-based deployments, you can monitor the progress of your deployment in the Azure portal. |
-| Azure support| Bicep is a fully supported product with Microsoft Support. |
-| No state management| Bicep deployments compare the current state of your Azure resources with the state that you define in the template. Azure automatically keeps track of this state for you. |
-| Easy transition from JSON| If you're already using JSON templates as your declarative template language, it isn't difficult to transition to Bicep. You can use the Bicep CLI to decompile any template into a Bicep template. |
+| Azure-native | Bicep is native to the Azure ecosystem. When new Azure resources are released or updated, Bicep will support those features on day one. |
+| Azure integration | Templates, both JSON and Bicep, are fully integrated within the Azure platform. With Resource Manager-based deployments, you can monitor the progress of your deployment in the Azure portal. |
+| Azure support | Bicep is a fully supported product with Microsoft Support. |
+| No state or state files to manage	| All state is stored in Azure. Users can collaborate and have confidence their updates are handled as expected. |
+| Easy transition from JSON | If you're already using JSON templates as your declarative template language, it isn't difficult to transition to Bicep. You can use the Bicep CLI to decompile any template into a Bicep template. |
 
 
 ## What is Azure Automation?

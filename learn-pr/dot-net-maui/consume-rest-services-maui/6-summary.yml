@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-maui.consume-rest-services.summary
+title: Summary 
+metadata:
+  unitType: Summary
+  title: "Summary"
+  description: "Summary of the consuming REST services with .NET MAUI module"
+  ms.date: 04/29/2022
+  author: codemillmatt  
+  ms.author: masoucou 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-languages
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-summary.md)]

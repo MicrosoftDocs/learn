@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-client-server-communication-mysql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/24/2022
+  author: wwlpublish
+  ms.author: caroline
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "MySQL Workbench is a query interface tool. What tasks can be carried out in MySQL Workbench?"
+    choices:
+    - content: "Displaying context sensitive help related to queries you're trying to execute."
+      isCorrect: true
+      explanation: "That's correct. MySQL Workbench displays context sensitive help relating to queries you want to execute."
+    - content: "Compare and synchronize data and schemas."
+      isCorrect: false
+      explanation: "That's incorrect. MySQL Workbench can't compare and synchronize data and schemas."
+    - content: "Sending alerts to administrator's email accounts."
+      isCorrect: false
+      explanation: "That's incorrect. MySQL Workbench can't be used to send alerts by email."
+  - content: "For best performance on Azure Database for MySQL, how should you manage connection handling?"
+    choices:
+    - content: "Short-lived connections."
+      isCorrect: false
+      explanation: "That's incorrect. If you have many short-lived concurrent connections and experience connection failures, you may not be optimizing connection handling."
+    - content: "Connection pooling."
+      isCorrect: true
+      explanation: "That's correct. Connection pooling can improve performance when you have limited resources and many concurrent connections."
+    - content: "Set **max_connections** to the minimum possible value."
+      isCorrect: false
+      explanation: "That's incorrect. Setting max_connections to an appropriate value is part of connection handling, but won't directly improve performance."
+  - content: "How do you enable backups in Azure Database for MySQL?"
+    choices:
+    - content: "Do nothing, databases will automatically be backed up once a day."
+      isCorrect: true
+      explanation: "That's correct. Azure Database for MySQL flexible server takes full backups once daily. If a backup fails, the backup tries every 20 minutes until a successful backup is made."
+    - content: "Configure the backup parameters in **Server parameters**."
+      isCorrect: false
+      explanation: "That's incorrect. You don't need to configure a parameter in Server parameters to enable backups in Azure Database for MySQL."
+    - content: "Use the **mysqldump** utility."
+      isCorrect: false
+      explanation: "That's incorrect. MySQLdump is a utility that creates a logical backup for MySQL installations. You only need to use mySqldump if you want to retain backups beyond the 35 days currently supported by Azure Database for MySQL."
+  - content: "How are new connections handled by Azure Database for MySQL?"
+    choices:
+    - content: "Each new connection is responsible for creating a connection in the connection pool."
+      isCorrect: false
+      explanation: "That's incorrect. The client doesn't create a connection in the connection pool each time a new connection is made."
+    - content: "Each new connection must wait until the connection pool is available to create a new connection."
+      isCorrect: false
+      explanation: "That's incorrect. New connections don't have to wait for a new connection thread."
+    - content: "Each new connection uses a connection from the connection pool."
+      isCorrect: true
+      explanation: "That's correct. The connection pool maintains a number of connections available for new client connections."

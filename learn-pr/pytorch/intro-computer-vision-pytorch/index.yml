@@ -17,7 +17,7 @@ abstract: |
   - Understand how Convolutional Neural Networks (CNNs) work
   - Train a neural network to recognize handwritten digits and classify cats and dogs.
   - Learn how to use Transfer Learning to solve real-world classification problems with PyTorch
-iconUrl: /learn/achievements/pytorch-computer-vision.svg
+iconUrl: /training/achievements/pytorch-computer-vision.svg
 levels:
 - beginner
 roles:
@@ -32,6 +32,8 @@ prerequisites: |
   - Familiarity with PyTorch framework, including tensors, basics of back propagation and building models
   - Understanding machine learning concepts, such as classification, train/test dataset, accuracy, etc.
 
+subjects:
+- classification-analysis
 units:
 - learn.pytorch.intro-computer-vision.introduction
 - learn.pytorch.intro-computer-vision.image-data

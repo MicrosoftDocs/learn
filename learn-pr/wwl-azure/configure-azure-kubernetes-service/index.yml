@@ -19,13 +19,15 @@ abstract: |
   - Scale AKS including adding Azure Container Instances.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-kubernetes-configure.svg
+iconUrl: /training/achievements/azure-kubernetes-configure.svg
 levels:
 - intermediate
 roles:
 - administrator
 products:
 - azure-kubernetes-service
+subjects:
+- infrastructure
 units:
 - learn.wwl.configure-azure-kubernetes-service.introduction
 - learn.wwl.configure-azure-kubernetes-service.explore-aks-terminology

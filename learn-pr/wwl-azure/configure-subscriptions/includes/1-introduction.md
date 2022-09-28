@@ -1,33 +1,39 @@
-## Scenario
+Access to Azure resources and services is obtained through Azure subscriptions. Payment for services is done through Microsoft Cost Management and Billing. Azure Administrators must understand how to choose the Azure subscriptions that support the company's business needs. Financial controllers for the company need to know how to manage the costs of the subscription services for the organization.
 
-Your company is moving to Azure. As a first step, they need to obtain an Azure subscription.
-
-You are responsible for obtaining an Azure subscription for your company. You are also responsible for effective management of costs.
-
-## Skills measured
-
-Managing Azure subscriptions is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
-
-Manage Azure identities and governance (15-20%)
-
-Manage subscriptions and governance
-
- -  Apply tags.
- -  Manage subscriptions.
- -  Configure Cost Management.
+In this module, your company is moving to the Azure cloud platform. As a first step, you need to identify which Azure subscriptions are needed to support the work scenarios in the organization. You're responsible for obtaining the Azure subscriptions, and for providing input about how to effectively manage the service costs.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Determine the correct region to locate Azure services.
- -  Identify features and usage cases for Azure subscriptions.
- -  Identify how to obtain an Azure subscription.
- -  Understand billing and features for different Azure subscriptions.
- -  Use the Cost Management product for cost analysis.
- -  Determine when to use resource tagging.
- -  Identify ways to reduce costs.
+- Determine the correct region to locate Azure services.
+
+- Review features and use cases for Azure subscriptions.
+
+- Obtain an Azure subscription.
+
+- Understand billing and features for different Azure subscriptions.
+
+- Use Microsoft Cost Management and Billing for cost analysis.
+
+- Discover when to use Azure resource tagging.
+
+- Identify ways to reduce costs.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Manage identities and governance in Azure (15-20%)
+
+- Manage subscriptions and governance
+
+   - Apply resource tags
+
+   - Manage subscriptions
+
+   - Configure costs with Microsoft Cost Management
 
 ## Prerequisites
 
-None
+None.

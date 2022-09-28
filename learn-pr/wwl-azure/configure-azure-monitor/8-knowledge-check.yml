@@ -36,7 +36,7 @@ quiz:
       explanation: "That's correct. Azure Monitor collects data from many sources. Sources include the operating system, resources, and event logs."
     - content: "Azure billing details"
       isCorrect: false
-      explanation: "That's incorrect. Azure Monitor does not collect information related to billing. Azure Cost Management should be used to track this information."
+      explanation: "That's incorrect. Azure Monitor does not collect information related to billing. Microsoft Cost Management should be used to track this information."
     - content: "Backups of database transaction logs"
       isCorrect: false
       explanation: "That's incorrect. Azure Monitor does not backup database transaction logs. Use Azure Backup for system backup information."

@@ -2,7 +2,7 @@ A virtual network can be segmented into one or more subnets. Subnets provide log
 
 Each subnet contains a range of IP addresses that fall within the virtual network address space. The range must be unique within the address space for the virtual network. The range can't overlap with other subnet address ranges within the virtual network. The address space must be specified by using Classless Inter-Domain Routing (CIDR) notation.
 
-:::image type="content" source="../media/azure-subnets-a5c893d5.png" alt-text="The Create virtual network page of the Azure portal is shown. The Address space, 10.1.0.0 16, is highlighted. Connected to the address space are two subnets.":::
+:::image type="content" source="../media/azure-subnets-a5c893d5.png" alt-text="Screenshot of the Create virtual network page of the Azure portal. The address space, 10.1.0.0 16, is highlighted. Connected to the address space are two subnets.":::
 
 
 ## Considerations

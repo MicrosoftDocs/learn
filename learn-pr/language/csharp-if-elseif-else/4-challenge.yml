@@ -3,8 +3,8 @@ uid: learn.languages.csharp-if-elseif-else.challenge
 title: Challenge
 metadata:
   title: Challenge
-  description: Put into practice what you just learned about the if-elseif-else statement.
-  ms.date: 09/19/2019
+  description: Put into practice what you learned about `if`, `else`, and `else if` statements.
+  ms.date: 05/16/2022
   author: billwagner
   ms.author: wiwagn
   ms.topic: interactive-tutorial

@@ -1,6 +1,6 @@
 In the previous unit, we explored the capabilities of Azure Site Recovery. Our next step is to prepare for disaster recovery in our Azure environment.
 
-Using our organization's business continuity and disaster recovery (BCDR) plan, we can run through the Site Recovery configurations and set a preparation plan in motion that fits with our organization's BCDR goals. Let's assume we're using the East US Azure region for our existing solution, and we've decided to use the West US region for replication.
+Using our organization's business continuity and disaster recovery (BCDR) plan, we can run through the Site Recovery configurations and set a preparation plan in motion that fits with our organization's BCDR goals. Let's assume we're using the West US Azure region for our existing solution, and we've decided to use the East US region for replication.
 
 Here, we'll explore how to take advantage of the automated features in Site Recovery to prepare for a disaster recovery scenario.
 
@@ -11,7 +11,7 @@ We need to set up our environment for exercises in subsequent units. Because thi
 > [!NOTE]
 > If you want to complete the following setup, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
-Let's assume we have two VMs configured in the organization. We'll configure the following services in the East US region to simulate the configured VMs.
+Let's assume we have two VMs configured in the organization. We'll configure the following services in the West US region to simulate the configured VMs.
 
 - A virtual network
 - Two VMs
@@ -59,11 +59,11 @@ Site Recovery will manage and orchestrate our DR process for Azure VMs or on-pre
 
 ### What is a Recovery Services vault?
 
-A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, we will provision a recovery services vault using the portal or the Azure CLI.
+A Recovery Services vault enables Site Recovery to complete disaster recovery replication. These vaults use storage accounts to store data backups, VM configuration settings, and workloads. To meet Site Recovery requirements, we'll provision a recovery services vault using the portal or the Azure CLI.
 
 ### What are the target resources?
 
-Target resources are all the Azure services that are created after your existing resources replicate. In this scenario, the West US region (source environment) is where all your target resources get created. There are a few considerations to keep in mind when selecting the target resources region:
+Target resources are all the Azure services that are created after your existing resources replicate. In this scenario, the East US region (target environment) is where all your target resources get created. There are a few considerations to keep in mind when selecting the target resources region:
 
 - Target resources for Site Recovery replication have to be in a different Azure region.
 - Storage account that stores the backed-up data must also be in a different region than the resources being protected.

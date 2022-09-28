@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 You've learned the definition of the MVVM components. The model and the view were easier to define than the viewmodel, so let's explore how to use the viewmodel.
 
 ## Expose properties to the user interface

@@ -19,13 +19,16 @@ abstract:  |
 prerequisites: |
   - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
-iconUrl: /learn/achievements/azure-well-architected-operational-excellence.svg
+iconUrl: /training/achievements/azure-well-architected-operational-excellence.svg
 levels:
 - intermediate
 roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
+- architecture
 units:
 - learn.azure-well-architected-operational-excellence.1-introduction
 - learn.azure-well-architected-operational-excellence.2-design-build-orchestrate

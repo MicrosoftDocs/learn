@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-microsoft-teams-use-windows-powershell.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/02/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which parameter, if any, do you need to provide with the `Connect-MicrosoftTeams` cmdlet to connect to Microsoft Teams?"
+    choices:
+    - content: "`-MailNickName`"
+      isCorrect: false
+      explanation: "Incorrect. When you use the `Connect-MicrosoftTeams` cmdlet without any parameters, you're prompted for credentials, and then connected to Microsoft Teams."
+    - content: "You don't need to provide any parameters"
+      isCorrect: true
+      explanation: "Correct. When you use the `Connect-MicrosoftTeams` cmdlet without any parameters, you're prompted for credentials, and then connected to Microsoft Teams."
+    - content: "`-GroupId`"
+      isCorrect: false
+      explanation: "Incorrect. When you use the `Connect-MicrosoftTeams` cmdlet without any parameters, you're prompted for credentials, and then connected to Microsoft Teams."
+  - content: "Which parameter can you use with the `Set-MicrosoftTeam` cmdlet to set the primary SMTP address for the team?"
+    choices:
+    - content: "`-DisplayName`"
+      isCorrect: false
+      explanation: "Incorrect. The parameter `-MailNickName` is used to generate the primary SMTP address for the team."
+    - content: "`-User`"
+      isCorrect: false
+      explanation: "Incorrect. The parameter `-MailNickName` is used to generate the primary SMTP address for the team."
+    - content: "`-MailNickName`"
+      isCorrect: true
+      explanation: "Correct. The parameter `-MailNickName` is used to generate the primary SMTP address for the team."

@@ -4,8 +4,8 @@ metadata:
   title: "Display collections in Xamarin.Forms apps by using ListView"
   description: In this module, you'll populate the Xamarin.Forms ListView and customize each row to create an application that displays dynamic data in a scrollable container.
   ms.date: 2/27/2019
-  author: davidbritch
-  ms.author: dabritch
+  author: codemillmatt
+  ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
 title: "Display collections in Xamarin.Forms apps by using ListView"
@@ -17,7 +17,7 @@ abstract: |
   - Customize the appearance of a `ListView` row by using built-in cell types
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/display-collections-in-xamarin-forms-apps-with-listview-badge.svg
+iconUrl: /training/achievements/xamarin/display-collections-in-xamarin-forms-apps-with-listview-badge.svg
 levels: 
 - intermediate
 roles: 

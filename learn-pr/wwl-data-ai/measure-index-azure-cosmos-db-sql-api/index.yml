@@ -16,13 +16,15 @@ abstract: |
   *   Measure the cost for a query or operation
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-optimize-queries.svg
+iconUrl: /training/achievements/azure-cosmos-db-optimize-queries.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- cloud-computing
 units:
 - learn.wwl.measure-index-azure-cosmos-db-sql-api.introduction
 - learn.wwl.measure-index-azure-cosmos-db-sql-api.enable-indexing-metrics

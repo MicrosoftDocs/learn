@@ -18,7 +18,7 @@ abstract:  |
 prerequisites: |
   - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
-iconUrl: /learn/achievements/azure-well-architected-security.svg
+iconUrl: /training/achievements/azure-well-architected-security.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-active-directory
+subjects:
+- cloud-security
 units:
 - learn.azure-well-architected-security.1-introduction
 - learn.azure-well-architected-security.2-defense-in-depth

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-azure-security-center-azure-defender-for-iot.examine-features-requirements
-title: Examine Azure Defender for IoT features and requirements
+title: Examine Microsoft Defender for IoT features and requirements
 metadata:
-  title: Examine Azure Defender for IoT features and requirements
-  description: "Examine Azure Defender for IoT features and requirements"
-  ms.date: 02/24/2022
+  title: Examine Microsoft Defender for IoT features and requirements
+  description: "Examine Microsoft Defender for IoT features and requirements"
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

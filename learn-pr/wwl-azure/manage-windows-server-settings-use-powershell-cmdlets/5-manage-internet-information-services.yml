@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-windows-server-settings-use-powershell-cmdlets.manage-internet-information-services
+title: Manage Internet Information Services using PowerShell cmdlets
+metadata:
+  title: Manage Internet Information Services using PowerShell cmdlets
+  description: "Manage Internet Information Services using PowerShell cmdlets"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-manage-internet-information-services.md)]

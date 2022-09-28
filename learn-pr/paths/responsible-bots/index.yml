@@ -18,7 +18,7 @@ summary: |
   - Welcome diverse users.
 prerequisites:
   Ability to navigate the Azure portal
-iconUrl: /learn/achievements/responsible-bots.svg
+iconUrl: /training/achievements/responsible-bots.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,9 @@ roles:
 products:
 - azure-bot-service
 - azure-cognitive-services
+subjects:
+- natural-language-processing
+- chatbot
 modules:
 - learn.advocates.responsible-bots-introduction
 - learn.advocates.responsible-bots

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - A browser
   - Basic knowledge of HTML and CSS
-iconUrl: /learn/achievements/student-evangelism/web-development-101-accessibility.svg # TODO change
+iconUrl: /training/achievements/student-evangelism/web-development-101-accessibility.svg # TODO change
 ratingEnabled: true
 levels:
 - beginner
@@ -28,6 +28,8 @@ roles:
 - developer
 products:
 - microsoft-edge
+subjects:
+- accessibility
 units:
 - learn.student-evangelism.web-development-101.accessibility.introduction
 - learn.student-evangelism.web-development-101.accessibility.client-tools

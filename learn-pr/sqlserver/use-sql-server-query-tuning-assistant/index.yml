@@ -20,13 +20,15 @@ prerequisites: |
   - Experience of query tuning and performance
   - Knowledge of database properties and options
   - Understanding of query plans
-iconUrl: /learn/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
+iconUrl: /training/achievements/sqlserver/using-the-sql-server-query-tuning-assistant.svg
 levels:
 - beginner
 roles:
 - administrator
 products: 
 - sql-server
+subjects:
+- database
 units:
 - learn-sqlserver.use-sql-server-query-tuning-assistant.1-introduction
 - learn-sqlserver.use-sql-server-query-tuning-assistant.2-decide-qta-right

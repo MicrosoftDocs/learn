@@ -1,6 +1,6 @@
 It is common to define an indexing policy as part of deploying an Azure Cosmos DB account and its resources in an automated manner. Both the JSON and Bicep syntax for Azure Resource Manager templates supports defining indexing policies natively. However, the syntax can be tricky if you haven't tried it before.
 
-For the examples in this unit, let's assume that we want to deploy the following indexing policy to our **pro
+For the examples in this unit, let's assume that we want to deploy the following indexing policy to our **products** container.
 
 ## Defining an indexing policy in JSON templates
 
@@ -88,7 +88,7 @@ Let's assume that we want to deploy the following indexing policy to our **custo
 A few small changes are required to use this indexing policy in Bicep. These changes include:
 
 - Removing the double quotation from property names
-- Changing property values from single quotes to double quotes
+- Changing property values from double quotes to single quotes
 - Removing commas typically required in JSON
 
 ```bicep

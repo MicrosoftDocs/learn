@@ -16,7 +16,7 @@ abstract: |
   - Start and stop an Azure Spatial Anchors session, along with creating, uploading, and downloading spatial anchors on a single device.
   - Persist spatial anchors between app sessions and app restarts by saving an anchor ID to the local disk on HoloLens.
   - Share spatial anchors between multiple devices for a basic multiuser, static hologram shared experience.
-iconUrl: /learn/achievements/azure-spatial-anchors-tutorials-mrtk.svg
+iconUrl: /training/achievements/azure-spatial-anchors-tutorials-mrtk.svg
 levels:
 - beginner
 roles:
@@ -34,11 +34,13 @@ prerequisites: |
   - Windows 10 SDK 10.0.18362.0 or later
   - A HoloLens 2 device configured for development (optional) 
   - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
-  - [A mixed reality project set up in the Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [A mixed reality project set up in the Unity module](/training/modules/mixed-reality-toolkit-project-unity)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
   - Completion of the [Create a Spatial Anchors resource](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the tutorial about creating a Unity HoloLens app that uses Azure Spatial Anchors
-units: 
+subjects:
+- mixed-reality
+units:
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.1-introduction
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.2-get-started-with-azure-spatial-anchors
 - learn.azure.azure-spatial-anchors-tutorials-mrtk.3-exercise-get-started-with-azure-spatial-anchors

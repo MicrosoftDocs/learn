@@ -16,13 +16,15 @@ abstract: |
   - Migrate between standard and autoscale throughput
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-database-container.svg
+iconUrl: /training/achievements/azure-cosmos-database-container.svg
 levels:
 - intermediate
 roles:
 - developer
 products:
 - azure-cosmos-db
+subjects:
+- data-modeling
 units:
 - learn.wwl.configure-azure-cosmos-db-sql-api.introduction
 - learn.wwl.configure-azure-cosmos-db-sql-api.choose-between-provisioned-throughput-serverless

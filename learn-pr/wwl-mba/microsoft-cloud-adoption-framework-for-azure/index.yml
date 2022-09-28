@@ -5,7 +5,7 @@ metadata:
   description: "Learn how to use the Cloud Adoption Framework to develop best practices for cloud adoption in real-world scenarios."
   ms.date: 09/20/2020
   author: wwlpublish
-  ms.author: a-drapos
+  ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Cloud Adoption Framework for Azure
@@ -17,13 +17,16 @@ abstract: |
   - Recognize the components needed to develop a digital transformation strategy around your business, people, and technology.
 prerequisites: |
   None
-iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
+iconUrl: /training/achievements/microsoft-cloud-adoption-framework-for-azure.svg
 levels:
 - beginner
 roles:
 - business-user
 products:
 - azure
+subjects:
+- cloud-computing
+- knowledge-management
 units:
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.1-introduction
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1.2-cloud-adoption-framework-overview

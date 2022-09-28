@@ -15,7 +15,7 @@ summary: |
 prerequisites: |
   - Beginner-level knowledge of networking, including IP addresses, load balancer, reverse proxy, Web Application Firewall, CDN, DNS, and network packets.
   - Beginner-level knowledge of cloud computing, including scalability and availability.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - advanced
 roles:
@@ -23,6 +23,8 @@ roles:
 - solution-architect
 products:
 - azure
+subjects:
+- cloud-computing
 modules:
 - learn.azure.intro-to-azure-load-balancer
 - learn.distribute-load-with-traffic-manager

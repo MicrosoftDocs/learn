@@ -4,7 +4,7 @@ In this unit, you'll learn about how Bicep works with Azure Resource Manager.
 
 ## How does Bicep work?
 
-In the preceding unit, you learned that Bicep is a domain-specific language, which means that it's designed for a specific scenario or "domain." Bicep is built to make it easy to deploy and configure Azure resources.
+In the preceding unit, you learned that Bicep is a domain-specific language, which means that it's designed for a specific scenario or _domain_. Bicep is built to make it easy to deploy and configure Azure resources.
 
 When you deploy a resource or series of resources to Azure, you submit the Bicep template to Resource Manager, which still requires JSON templates. The tooling that's built into Bicep converts your Bicep template into a JSON template. This process is known as _transpilation_, which essentially treats the ARM template as an intermediate language. The conversion happens automatically when you submit your deployment, or you can do it manually.
 

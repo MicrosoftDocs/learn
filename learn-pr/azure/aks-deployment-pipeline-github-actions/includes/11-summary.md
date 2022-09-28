@@ -41,13 +41,13 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service and GitHub Actions, see the following articles and Microsoft Learn modules:
 
-- [AKS documentation on Microsoft Docs](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
+- [AKS documentation](/azure/aks/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
+- [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Integrate Azure Container Registry with AKS](/azure/aks/cluster-container-registry-integration?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster?WT.mc_id=deploycontainerapps_summary-learn-ludossan)
-- [Introduction to GitHub](/learn/modules/introduction-to-github/)
-- [Automating tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/)
-- [CI with GitHub Actions](/learn/modules/github-actions-ci/)
+- [Introduction to GitHub](/training/modules/introduction-to-github/)
+- [Automating tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/)
+- [CI with GitHub Actions](/training/modules/github-actions-ci/)
 - [What is a Docker image](https://docs.docker.com/storage/storagedriver/#images-and-layers)
 - [Helm official website](https://helm.sh)
 - [Helm official docs to create charts](https://helm.sh/docs/chart_template_guide/getting_started/)

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-security-operations-strategy.evaluate-for-technical-threat-intelligence
+title: Evaluate security operations for technical threat intelligence
+metadata:
+  title: Evaluate security operations for technical threat intelligence
+  description: "Evaluate security operations for technical threat intelligence"
+  ms.date: 06/08/2022
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-evaluate-for-technical-threat-intelligence.md)]

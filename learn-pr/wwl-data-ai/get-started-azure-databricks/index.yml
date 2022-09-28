@@ -18,13 +18,17 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with the Microsoft Azure portal and provisioning Azure resources.
   You'll get the most out of this module if you already have some experience of using Python in a notebook environment, such as Jupyter Notebooks.
-iconUrl: /learn/achievements/get-started-with-azure-databricks.svg
+iconUrl: /training/achievements/get-started-with-azure-databricks.svg
 levels:
 - intermediate
 roles:
 - data-scientist
 products:
 - azure-databricks
+subjects:
+- data-analytics
+- data-lake
+- artificial-intelligence
 units:
 - learn.wwl.get-started-azure-databricks.introduction
 - learn.wwl.get-started-azure-databricks.understand

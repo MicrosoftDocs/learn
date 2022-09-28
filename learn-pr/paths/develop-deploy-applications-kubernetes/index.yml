@@ -15,7 +15,7 @@ prerequisites: |
   - Ability to use the Azure CLI
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /learn/achievements/develop-and-deploy-applications-on-kubernetes.svg
+iconUrl: /training/achievements/develop-and-deploy-applications-on-kubernetes.svg
 levels:
 - intermediate
 roles:
@@ -24,6 +24,8 @@ roles:
 - technology-manager
 products:
 - azure
+subjects:
+- container
 modules:
 - learn.aks-deploy-container-app
 - learn.app-package-management-using-helm

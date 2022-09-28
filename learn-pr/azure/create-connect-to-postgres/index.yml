@@ -16,7 +16,7 @@ abstract: |
   - Develop and query the database in the Azure Cloud Shell using pgsql
   - Query the PostgreSQL database from an ASP.NET app
 prerequisites: Basic familiarity with relational databases
-iconUrl: /learn/achievements/create-connect-to-postgres.svg
+iconUrl: /training/achievements/create-connect-to-postgres.svg
 levels:
 - beginner
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-database-postgresql
+subjects:
+- data-engineering
 units:
 - learn.azure.create-and-connect-to-azure-database-postgresql.1-introduction
 - learn.azure.create-and-connect-to-azure-database-postgresql.2-create-database-azure-database-postgresql

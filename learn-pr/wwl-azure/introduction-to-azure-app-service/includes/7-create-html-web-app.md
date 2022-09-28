@@ -1,29 +1,19 @@
-After gathering information about App Service you've decided to create and update a simple web app to try it out. In this exercise you'll deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI `az  webapp up` command. You will then update the code and redeploy it by using the same command.
+[!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
+In this exercise, you'll deploy a basic HTML+CSS site to Azure App Service by using the Azure CLI `az  webapp up` command. You'll then update the code and redeploy it by using the same command.
 
 The `az webapp up` command makes it easy to create and update web apps. When executed it performs the following actions:
 
-* Create a default resource group.
+* Create a default resource group if one isn't specified.
 * Create a default app service plan.
 * Create an app with the specified name.
 * Zip deploy files from the current working directory to the web app.
 
-## Prerequisites
+## Download the sample app
 
-Before you begin make sure you have the following requirements in place:
+In this section you'll use the sandbox to download the sample app and set variables to make some of the commands easier to enter.
 
-* An Azure account with an active subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free).
-
-## Login to Azure and download the sample app
-
-1. Login to the [Azure portal](https://portal.azure.com) and open the Cloud Shell.
-
-    :::image type="content" source="../media/hdi-cloud-shell-menu.png" alt-text="The location of Cloud Shell launch button.":::
-
-1. After the shell opens be sure to select the **Bash** environment.
-
-    :::image type="content" source="../media/shell-bash-selection.png" alt-text="Selecting the Bash environment.":::
-
-1. In the Cloud Shell, create a directory and then navigate to it.
+1. In the sandbox create a directory and then navigate to it.
 
     ```bash
     mkdir htmlapp
@@ -37,17 +27,24 @@ Before you begin make sure you have the following requirements in place:
     git clone https://github.com/Azure-Samples/html-docs-hello-world.git
     ```
 
+1. Set variables to hold the resource group and app names by running the following commands.
+
+    ```bash
+    resourceGroup=$(az group list --query "[].{id:name}" -o tsv)
+    appName=az204app$RANDOM
+    ```
+
 ## Create the web app
 
-1. Change to the directory that contains the sample code and run the `az webapp up` command. In the following example, replace `<myAppName>` with a unique app name, and `<myLocation>` with a region near you.
+1. Change to the directory that contains the sample code and run the `az webapp up` command.
 
     ```bash
     cd html-docs-hello-world
 
-    az webapp up --location <myLocation> --name <myAppName> --html
+    az webapp up -g $resourceGroup -n $appName --html
     ```
 
-    This command may take a few minutes to run. While running, it displays information similar to the example below. Make a note of the `resourceGroup` value. You need it for the *Clean up resources* section later.
+    This command may take a few minutes to run. While running, it displays information similar to the example below. 
 
     ```json
     {
@@ -63,7 +60,10 @@ Before you begin make sure you have the following requirements in place:
     }
     ```
 
-1. Open a browser and navigate to the app URL (`http://<myAppName>.azurewebsites.net`) and verify the app is running - take note of the title at the top of the page. Leave the browser open on the app for the next section.
+1. Open a new tab in your browser and navigate to the app URL (`https://<myAppName>.azurewebsites.net`) and verify the app is running - take note of the title at the top of the page. Leave the browser open on the app for the next section.
+
+    > [!NOTE]
+    > You can copy `<myAppName>.azurewebsites.net` from the output of the previous command, or select the URL in the output to open the site in a new tab.
 
 ## Update and redeploy the app
 
@@ -71,10 +71,10 @@ Before you begin make sure you have the following requirements in place:
 
 1. Use the commands **ctrl-s** to save and **ctrl-q** to exit.
 
-1. Redeploy the app with the same `az webapp up` command. Be sure to use the same values for `<myLocation>` and `<myAppName>` as you used earlier. 
+1. Redeploy the app with the same `az webapp up` command you used earlier. 
 
     ```bash
-    az webapp up --location <myLocation> --name <myAppName> --html
+    az webapp up -g $resourceGroup -n $appName --html 
     ```
 
     > [!TIP]
@@ -82,10 +82,3 @@ Before you begin make sure you have the following requirements in place:
 
 1. Once deployment is completed switch back to the browser from step 2 in the "Create the web app" section above and refresh the page.
 
-## Clean up resources
-
-If you no longer need the resources you created in this exercise you can delete the resource group using the `az group delete` command below. Replace `<resource_group>` with resource group name you noted in step 1 of the "Create the web app" section above.
-
-```bash
-az group delete --name <resource_group> --no-wait
-```

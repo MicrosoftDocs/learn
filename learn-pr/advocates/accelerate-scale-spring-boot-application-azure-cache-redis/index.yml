@@ -20,7 +20,7 @@ abstract: |
 prerequisites:  |
   - Familiarity with developing and running Java applications
   - Beginner-level experience with cloud infrastructure
-iconUrl: /learn/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
+iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
 levels:
 - intermediate
 roles:
@@ -29,6 +29,8 @@ products:
 - azure
 - azure-cache-redis
 - azure-app-service
+subjects:
+- cache
 units:
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis.introduction
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis.setup

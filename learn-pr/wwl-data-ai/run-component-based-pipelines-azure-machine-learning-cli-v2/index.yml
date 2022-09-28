@@ -17,7 +17,7 @@ abstract: |
   - Create a component-based pipeline with the Designer in the Azure Machine Learning studio.
 prerequisites: |
   You should have some familiarity with the Azure Machine Learning service.
-iconUrl: /learn/achievements/machine-learning-component-pipelines.svg
+iconUrl: /training/achievements/machine-learning-component-pipelines.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure
 - azure-machine-learning
+subjects:
+- machine-learning
 units:
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.introduction
 - learn.wwl.run-component-based-pipelines-azure-machine-learning-cli-v2.create-component

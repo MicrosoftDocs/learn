@@ -13,7 +13,7 @@ metadata:
 title: Introduction to version control with Git
 summary: Git is the leading version control tool, and it's essential for developers. Learn how to use Git to track your own changes and collaborate with others.
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/intro-to-vc-git-badge.svg
+iconUrl: /training/achievements/student-evangelism/intro-to-vc-git-badge.svg
 levels:
 - beginner
 roles:
@@ -21,6 +21,8 @@ roles:
 products:
 - azure
 - github
+subjects:
+- devops
 modules:
 - learn.student-evangelism.introduction-to-git
 - learn.create-git-project

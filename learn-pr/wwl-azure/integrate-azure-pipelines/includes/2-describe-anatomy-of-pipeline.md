@@ -53,7 +53,7 @@ Most pipelines will have these components:
 
 The variable name is a bit misleading since the name is in the build number format. You'll get an integer number if you don't explicitly set a name format. It's a monotonically increasing number for run triggered off this pipeline, starting at 1. This number is stored in Azure DevOps. You can make use of this number by referencing $(Rev).
 
-To make a date-based number, you can use the format $(Date:yyyy-mm-dd-HH-mm) to get a build number like 2020-01-16-19-22.
+To make a date-based number, you can use the format `$(Date:yyyy-mm-dd-HH-mm)` to get a build number like 2020-01-16-19-22.
 
 To get a semantic number like 1.0.x, you can use something like 1.0.$(Rev:.r).
 
@@ -224,7 +224,7 @@ jobs:
 
 ```
 
-:::image type="content" source="../media/jobs-dependency-chart-7231b7f2.png" alt-text="Dependency Chart.":::
+:::image type="content" source="../media/jobs-dependency-chart-7231b7f2.png" alt-text="Diagram that shows a dependency chart. A to B and C to D and E.":::
 
 
 ## Checkout

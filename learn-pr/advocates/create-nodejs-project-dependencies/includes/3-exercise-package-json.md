@@ -10,15 +10,15 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
    git clone https://github.com/MicrosoftDocs/node-essentials/
    ```
 
-1. Go to your files by running this command:
+1. Change to the folder that has the cloned files for this exercise:
 
    ```bash
    cd node-essentials/node-dependencies/3-exercise-package-json
    ```
 
-   You should now have access to these files:
+   In this folder, you should see a **src** subfolder with an **index.js** file:
 
-   ```bash
+   ```output
    -| src/
    ---| index.js
    ```
@@ -29,11 +29,11 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     npm init -y
     ```
 
-   This command will generate a package.json file. It should look something like this one:
+   This command generates a **package.json** file that looks similar to this example:
 
     ```json
     {
-      "name": "",
+      "name": "<your project>",
       "version": "1.0.0",
       "description": "",
       "main": "script.js",
@@ -48,21 +48,21 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     }
     ```
 
-1. Add these values:
+1. Edit the package.json file and modify these property values:
 
-    - `name`. Enter `tailwind-trader-api`.
-    - `description`. Enter `An HTTP API that will manage items from Tailwind Traders database`.
-    - `main`. Enter `index.js`.
-    - `keywords`. Enter `api, database`.
-    - `author`. Enter `Sam`.
+    - `name`: "tailwind-trader-api"
+    - `description`: "HTTP API to manage items from the Tailwind Traders database"
+    - `main`: "index.js"
+    - `keywords`: ["api", "database"]
+    - `author`: "Sam"
 
-   Your package.json should now look like this code:
+   Your package.json file should now look like this code:
 
     ```json
     {
-      "name": "Tailwind-trader-API",
+      "name": "tailwind-trader-api",
       "version": "1.0.0",
-      "description": "An HTTP API that will fetch items from Tailwind Traders database",
+      "description": "HTTP API to manage items from the Tailwind Traders database",
       "main": "index.js",
       "dependencies": {},
       "devDependencies": {},
@@ -75,19 +75,15 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     }
     ```
 
-1. Add the following entry to the `scripts` section:
+1. In the `scripts` section, add this definition for the `start` action before the definition for the `test` action:
 
    ```json
    "start": "node ./src/index.js",
    ```
 
-1. Open src/index.js and add the following code to it:
+   Save your changes and close the package.json file.
 
-   ```javascript
-   console.log('Welcome to this application');
-   ```
-
-1. The previous entry will define how the project starts. You can now start it by running this command:
+1. Start your project with the `start` action by entering this command:
 
    ```bash
    npm start
@@ -99,4 +95,4 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
    Welcome to this application
    ```
 
-Your `start` action is working fine. You have a good file structure that you can build upon as your project grows larger. 
+You now have a good file structure that you can build upon as your project grows. 

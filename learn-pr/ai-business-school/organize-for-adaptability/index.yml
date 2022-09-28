@@ -17,7 +17,7 @@ abstract: |
   - Consider different innovation frameworks to apply to your organizational structure.
   - Describe the benefits of changing your business model 
 prerequisites: Familiarity with successful implementations of AI.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels: 
 - intermediate
 roles: 
@@ -25,7 +25,9 @@ roles:
 - business-user
 products: 
 - azure
-units: 
+subjects:
+- modern-work
+units:
 - learn-wwl.organize-for-adaptability.introduction
 - learn-wwl.organize-for-adaptability.understand-adaptability
 - learn-wwl.organize-for-adaptability.build-foundation-to-support-innovation

@@ -19,7 +19,7 @@ abstract: |
   - Perform site-to-site recovery by using Azure Site Recovery.
 prerequisites: |
   None
-iconUrl: /learn/achievements/virtual-machines-configure-backup.svg
+iconUrl: /training/achievements/virtual-machines-configure-backup.svg
 levels:
 - intermediate
 roles:
@@ -27,6 +27,8 @@ roles:
 products:
 - azure-backup
 - azure-virtual-machines
+subjects:
+- virtual-machine
 units:
 - learn.wwl.configure-virtual-machine-backups.introduction
 - learn.wwl.configure-virtual-machine-backups.protect-data

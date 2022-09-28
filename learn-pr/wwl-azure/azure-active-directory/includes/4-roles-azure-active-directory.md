@@ -10,7 +10,7 @@ Users who are assigned to the Global administrator role can read and modify ever
 
  -  **Application Administrator** \- Users in this role can create and manage all aspects of enterprise applications, application registrations, and application proxy settings.
  -  **Application Developer** \- Users in this role can create application registrations when the "Users can register applications" setting is set to Yes.
- -  **Authentication Administrator** \- Users with this role can set or reset non-password credentials for some users and can update passwords for all users.
+ -  **Authentication Administrator** \- Users with this role can set or reset any authentication method (including passwords) for non-administrators and some roles. Authentication Administrators can require users who are non-administrators or assigned to some roles to re-register against existing non-password credentials (for example, multi-factor authentication or Fast Identity Online), and can also revoke remember multi-factor authentication on the device, which prompts for multi-factor authentication on the next sign-in.
  -  **Azure DevOps Administrator** \- Users with this role can manage the Azure DevOps policy to restrict new Azure DevOps organization creation to a set of configurable users or groups.
  -  **Azure Information Protection Administrator** \- Users with this role have all permissions in the Azure Information Protection service.
  -  **B2C User Flow Administrator** \- Users with this role can create and manage B2C User Flows (also called "built-in" policies) in the Azure portal.
