@@ -18,7 +18,7 @@ Woodgrove Bank wants to ensure that their data is highly available and that stan
 As high availability is enabled, the High Availability state shows in the Nodes list on the **Overview** for the Azure Cosmos DB for PostgreSQL resource.
 
 :::image type="complex" source="../media/overview-high-availability-status.png" alt-text="Screenshot of the Overview screen for the Azure Cosmos DB for PostgreSQL resource.":::
-    Screenshot of the Overview screen for the Azure Cosmos DB for PostgreSQL resource. The 'High availability' column in the Nodes section is highlighted. The coordinator and all worker nodes have a high availibility state of Healthy.
+    Screenshot of the Overview screen for the Azure Cosmos DB for PostgreSQL resource. The 'High availability' column in the Nodes section is highlighted. The coordinator and all worker nodes have a high availability state of Healthy.
 :::image-end:::
 
 High availability is enabled when all nodes show a high availability state of Healthy.

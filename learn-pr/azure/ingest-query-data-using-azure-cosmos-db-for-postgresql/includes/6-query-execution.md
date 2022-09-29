@@ -1,6 +1,6 @@
 Before optimizing query performance for Woodgrove Bank, you must understand how distributed queries are run in Azure Cosmos DB for PostgreSQL. You must also understand the server parameters you can use to tune query execution. Every cluster consists of a single coordinator node and multiple worker nodes. This architecture enables compute, memory, and storage to scale across numerous PostgreSQL servers in the cloud but also adds complexity to query execution.
 
-:::image type="content" source="../media/distributed-database.png" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how additional nodes can be added to scale out.":::
+:::image type="content" source="../media/distributed-database.svg" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how more nodes can be added to scale out.":::
 
 The coordinator uses a query processing pipeline consisting of a distributed query planner and a distributed query executor. For each query issued to the cluster, the coordinator consults the metadata tables to build an execution plan and then passes that plan to the executor for execution.
 
@@ -14,7 +14,7 @@ Once the execution planner has identified the correct shard or shards, it rewrit
 
 The planner breaks the query into a coordinator query, which runs on the coordinator, and worker query fragments, which run on individual shards. Query fragments are assigned to workers to allow their resources to be used efficiently.
 
-:::image type="content" source="../media/query-fragments.png" alt-text="Diagram of a query that is taken by the coordinator node and rewritten into query fragments, which modify the table name in the original query to add an underscore followed by the shard ID. The query fragments are then sent to the worker nodes for execution.":::
+:::image type="content" source="../media/query-fragments.svg" alt-text="Diagram of a query that is taken by the coordinator node and rewritten into query fragments, which modify the table name in the original query to add an underscore followed by the shard ID. The query fragments are then sent to the worker nodes for execution.":::
 
 The final step is for the coordinator to pass the distributed query plan on to the distributed executor for execution.
 
@@ -24,7 +24,7 @@ Azure Cosmos DB for PostgreSQL uses a distributed query executor to split up reg
 
 The distributed query executor is optimized for getting fast responses to queries involving filters, aggregations, and colocated joins and running single-tenant queries with full SQL coverage. Executing multi-shard queries requires balancing the gains from parallelism with the overhead of managing database connections. The query executor creates a connection pool for each session, opens one connection per shard to the workers as needed, and sends all fragment queries to them. It then fetches the results from each fragment query, merges them, and sends the final results back to the user.
 
-:::image type="content" source="../media/executor-overview.png" alt-text="Diagram of the query execution flow in Azure Cosmos DB for PostgreSQL. Query sessions are fragmented by the coordinator node and added to a task queue. Query fragments are then sent to session connection pools for execution on worker nodes.":::
+:::image type="content" source="../media/executor-overview.svg" alt-text="Diagram of the query execution flow in Azure Cosmos DB for PostgreSQL. Query sessions are fragmented by the coordinator node and added to a task queue. Query fragments are then sent to session connection pools for execution on worker nodes.":::
 
 ## Use EXPLAIN to understand query execution
 

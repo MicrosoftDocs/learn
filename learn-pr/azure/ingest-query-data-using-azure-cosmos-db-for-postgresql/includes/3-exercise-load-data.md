@@ -61,7 +61,7 @@ To complete this exercise, you must create an Azure Cosmos DB for PostgreSQL clu
 
 1. On the **Networking** tab, set the **Connectivity method** to **Public access (allowed IP addresses)**, and check the **Allow public access from Azure services and resources within Azure to this cluster** box.
 
-    :::image type="content" source="../media/cosmos-db-postgresql-networking-tab.png" alt-text="Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster Networking tab. The Public access and Allow public access from Azure services and resources within Azure to this cluster settings are highlighted.":::
+    :::image type="content" source="../media/cosmos-db-postgresql-networking-tab.png" alt-text="Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster Networking tab. The Public access and Allow public access from Azure services and resources within Azure to these cluster settings are highlighted.":::
 
 1. Select the **Review + create** button, and on the review screen, select **Create** to create your cluster.
 

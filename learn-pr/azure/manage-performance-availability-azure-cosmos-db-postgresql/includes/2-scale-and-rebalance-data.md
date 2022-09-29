@@ -2,11 +2,11 @@ Woodgrove Bank had a successful trial of their contactless payment app, and they
 
 Horizontal scaling - used for more resources for distributing data and parallel query processing - is achieved by adding more worker nodes to the cluster. Horizontal scaling can be helpful for scaling the database as the number of Woodgrove Bank app users increases.
 
-:::image type="content" source="../media/horizontal-scaling.png" alt-text="Diagram of a cluster going from two worker nodes to three worker nodes.":::
+:::image type="content" source="../media/horizontal-scaling.svg" alt-text="Diagram of a cluster going from two worker nodes to three worker nodes.":::
 
 Vertical scaling is achieved by managing storage and compute for the coordinator node and the worker nodes. Vertical scaling can assist Woodgrove Bank in adjusting their resources to handle the load anticipated with the shopping season.
 
-:::image type="content" source="../media/vertical-scaling.png" alt-text="Diagram of a cluster with worker nodes going from 4 vCores compute and 0.5 TiB of storage to 8 vCores compute and 1 TiB of storage.":::
+:::image type="content" source="../media/vertical-scaling.svg" alt-text="Diagram of a cluster with worker nodes. The cores range from 4 vCores compute and 0.5 TiB of storage to 8 vCores compute and 1 TiB of storage.":::
 
 ## Scaling compute and storage for worker nodes
 
@@ -16,8 +16,8 @@ There are some things to note about adjusting compute and storage for worker nod
 
 * The settings for vCores and Storage apply to an individual node.
 
-    :::image type="complex" source="../media/scale-vcores-and-storage.png" alt-text="Screenshot of the worker node settings juxtaposed with the cluster diagram.":::
-        Screenshot of the worker node settings juxtaposed with the cluster diagram. The vCores setting is set for 8 vCores, and the Storage setting is set for 1 TiB. The diagram shows the coordinator node pointing at 2 worker nodes. Each worker node has 8 vCores of compute and 1 TiB of storage.
+    :::image type="complex" source="../media/scale-vcores-and-storage.svg" alt-text="Screenshot of the worker node settings juxtaposed with the cluster diagram.":::
+        Screenshot of the worker node settings juxtaposed with the cluster diagram. The vCores setting is set for 8 vCores, and the Storage setting is set for 1 TiB. The diagram shows the coordinator node pointing at two worker nodes. Each worker node has 8 vCores of compute and 1 TiB of storage.
     :::image-end:::
 
 * The amount of RAM for a node isn't adjustable. The RAM amount is tied to the selected number of vCores. [Learn more about compute resources.](/azure/postgresql/hyperscale/resources-compute)
@@ -30,8 +30,8 @@ There are some things to note about adjusting compute and storage for worker nod
 
 As Woodgrove Bank expands to Europe and the number of users is expected to increase, the database needs to expand to support this growth. The distributed PostgreSQL cluster scales horizontally by adding worker nodes. When worker nodes are added, the data doesn't automatically move. The data will need to be redistributed.
 
-:::image type="complex" source="../media/add-worker-node.png" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables, a local table, and two worker nodes.":::
-    Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains two worker nodes, each with distributed shards and reference tables. There are arrows coming from the coordinator and pointed at each of the worker nodes. There is a third worker node being added, denoted by a plus sign between it and the second worker node. There are no tables on the additional worker node.
+:::image type="complex" source="../media/add-worker-node.svg" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables, a local table, and two worker nodes.":::
+    Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains two worker nodes, each with distributed shards and reference tables. There are arrows coming from the coordinator and pointed at each of the worker nodes. There's a third worker node being added, denoted by a plus sign between it and the second worker node. There are no tables on the extra worker node.
 :::image-end:::
 
 If you want to confirm that the data hasn't been distributed to the new worker node, try the following SQL query. This query checks shard placement and lists nodes that don't appear in the shard placement list.
