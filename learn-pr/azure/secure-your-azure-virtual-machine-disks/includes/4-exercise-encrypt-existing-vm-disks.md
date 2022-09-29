@@ -74,7 +74,7 @@ To create and deploy a new Windows VM, use the Azure PowerShell.
         -VMName $vmName
     ```
 
-    You'll notice the disks are current *unencrypted*.
+    You'll notice the disks are currently *unencrypted*.
 
     ```output
     OsVolumeEncrypted          : NotEncrypted
@@ -129,11 +129,11 @@ To create an Azure Key Vault, we need to enable the service in our subscription.
     WARNING: Access policy is not set. No user or app have access permission to use this vault. This can happen if the vault was created by a service principal. To set access policies, use Set-AzKeyVaultAccessPolicy.
     ```
 
-    This is alright, because you're just using the vault to store the encryption keys for the VM, and users won't need to access this data.
+    This is fine, because you're just using the vault to store the encryption keys for the VM, and users won't need to access this data.
 
 ### Encrypt the disk
 
-You are almost ready to encrypt the disks. Before you do, here's a warning about creating backups.
+You're almost ready to encrypt the disks. Before you do, here's a warning about creating backups.
 
 > [!IMPORTANT]
 > If this was a production system, we'd need to perform a backup of the managed disks, either using Azure Backup or by creating a snapshot. You can create snapshots in the Azure portal, or through the command line. In PowerShell, you'd use the `New-AzSnapshot` cmdlet. Because this is a simple exercise and you'll be disposing of this data when you're done, you're going to skip this step.
@@ -148,7 +148,7 @@ You are almost ready to encrypt the disks. Before you do, here's a warning about
 
 1. Next, to encrypt the VM disks, run the `Set-AzVmDiskEncryptionExtension` cmdlet"
     - The `VolumeType` parameter allows you to specify which disks to encrypt: [*All* | *OS* | *Data*]. It'll default to *All*. You can only encrypt data disks for some distributions of Linux.
-    - You can supply the `SkipVmBackup` flag for managed disks if there is no snapshot.
+    - You can supply the `SkipVmBackup` flag for managed disks if there's no snapshot.
 
     ```powershell
     Set-AzVmDiskEncryptionExtension `
