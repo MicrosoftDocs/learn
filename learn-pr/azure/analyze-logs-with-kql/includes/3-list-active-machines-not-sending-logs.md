@@ -18,7 +18,14 @@ Azure Monitor uses Azure Monitor Agent to collect data about activities and oper
 
 Let's look at the columns of the `Heartbeat` table and the type of data each one of the columns holds.
     
-This screenshot shows the result set of a simple `take 10` query on the `Heartbeat` table (the table has other columns that aren't shown in the screenshot):    
+Let's run a simple `take 10` query on the `Heartbeat` table:
+
+<a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA%252FNITSwqSUpNLOGqUShJzE5VMDQAAFjdyScTAAAA/timespan/P1D" target="_blank">Click to run query in Log Analytics demo environment</a>
+
+```kusto
+Heartbeat
+| take 10
+```    
 
 :::image type="content" source="../media/kql-log-analytics-heartbeat-table-agent-version.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table-agent-version.png":::
 
