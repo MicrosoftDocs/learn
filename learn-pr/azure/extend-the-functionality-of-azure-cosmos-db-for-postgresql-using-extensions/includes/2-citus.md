@@ -14,7 +14,7 @@ Citus provides the primary performance and scalability features of Azure Cosmos 
 
 [Citus](https://github.com/citusdata/citus) is an open-source extension for PostgreSQL that was created to allow data storage and computing capabilities to scale across a cluster of PostgreSQL servers. Citus is designed to still provide traditional relational database functionality like transactions, joins, and foreign keys. The Citus extension enables this functionality by transforming PostgreSQL into a highly scalable distributed database with features like a distributed SQL engine, [sharding](/azure/postgresql/hyperscale/concepts-nodes#shards), [reference tables](/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables), and [distributed tables](/azure/postgresql/hyperscale/concepts-nodes#type-1-distributed-tables).
 
-:::image type="content" source="../media/distributed-database.png" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how extra nodes can be added to scale out.":::
+:::image type="content" source="../media/distributed-database.svg" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster, with multiple worker nodes and a single coordinator node. The diagram also features arrows on the right and left, showing how extra nodes can be added to scale out.":::
 
 ## Scale compute across nodes
 
