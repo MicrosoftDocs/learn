@@ -164,7 +164,12 @@ Looking for name=%Blue%, location=Dallas
 
 ## Upsert to insert or update data
 
-Using an upsert helps you ensure your data is add if it doesn't exist, and updated if the data does exist. 
+Using an upsert helps you ensure your data is added if it doesn't exist, and updated if the data does exist. The JavaScript SDK returns **statusCode** which signifies which action was taken:
+
+|Upsert statusCode|Meaning| 
+|--|--|
+|201|**Insert**|
+|200|**Update**|
 
 The following JavaScript uses a single function and the use of container.items().upsert(). 
 
@@ -172,18 +177,25 @@ The following JavaScript uses a single function and the use of container.items()
 // Either insert or update item
 async function upsert(item) {
 
-  // Show request item
-  console.log("Request");
-  console.log(item);
-
   // Process request
   const result = await container.items.upsert(item);
 
-  // Show response item
-  console.log("\nResponse");
-  console.log(`activityId: ${result.activityId}, statusCode: ${result.statusCode}`);
-  console.log(result.resource);
+  if(result.statusCode===201){
+    console.log("Inserted data");
+  } else if (result.statusCode===200){
+    console.log("Updated data");
+  } else {
+    console.log(`unexpected statusCode ${result.statusCode}`);
+  }
 }
 ```
 
-The statusCode property with a `200` value indicates the upsert was successful.
+## The operation's result object
+
+The result object returned from an operation is documented in the Cosmos DB SQL reference documentation. While the result can have information specific to the operation, each result will have some properties that are always returned and are helpful to determine what happened. 
+
+|Result property|Description|
+|--|--|
+|activityId|The unique event ID associated with the specific operation. If your operation fails and you need to contact support, this ID, along with your resource name and subscription is helpful to quickly find the issue.|
+|statusCode|The HTTP status code indicating the success or failure of the operation.|
+|resource|This is a JSON object of the final object, such as a JSON doc in a container.|

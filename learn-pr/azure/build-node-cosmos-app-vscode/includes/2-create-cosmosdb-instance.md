@@ -18,9 +18,9 @@ Azure Cosmos DB is a cloud service that implements document databases. The data 
 }
 ```
 
-Unlike a table in a relational database, documents in a Azure Cosmos DB don't follow a pre-defined schema. This allows the database to hold a variety of documents with different *shapes* and sizes. For example, you could store varying information about different customers in the same database. Perhaps you could record a complete address history as an array for a customer. You might record additional information, such as their credit worthiness.
+Unlike a table in a relational database, documents in an Azure Cosmos DB don't follow a pre-defined schema. This allows the database to hold various documents with different *shapes* and sizes. For example, you could store varying information about different customers in the same database. Perhaps you could record a complete address history as an array for a customer. You might record additional information, such as their credit worthiness.
 
-The Azure Cosmos DB cloud service is organized as a hierarchy. At the top is a Azure Cosmos DB account (your resource). The Azure Cosmos DB account is the unit of security for a set of databases. The Azure Cosmos DB account specifies the location of the databases together with the security information required to access those databases. Inside an account, you create one or more databases. You create one or more containers inside each database. You store documents in containers.
+The Azure Cosmos DB cloud service is organized as a hierarchy. At the top is an Azure Cosmos DB account (your resource). The Azure Cosmos DB account is the unit of security for a set of databases. The Azure Cosmos DB account specifies the location of the databases together with the security information required to access those databases. Inside an account, you create one or more databases. You create one or more containers inside each database. You store documents in containers.
 
 :::image type="content" source="../media/2-cosmos-db-resource-hierarchy.svg" alt-text="Conceptual image of parent-child relationship of account, database, and container in Cosmos D B.":::
 
@@ -28,7 +28,7 @@ The Azure Cosmos DB cloud service is organized as a hierarchy. At the top is a A
 
 Each container is organized as a series of partitions. Partitions *roughly* correspond to the physical files on disk. A large partition might have its file, but several small partitions could be combined into a single file. Each document has a partition key that defines the partition to which it belongs. You use partitioning to store related documents together, and to help optimize the way you access data.
 
-The following example shows a JSON document that stores product information, as part of the **Contoso** application. Since this data is coming from another system in the Contoso system of databases, the ids are already configured to be GUIDs. In your own container, you can bring your ID, or allow Cosmos DB to provide one. 
+The following example shows a JSON document that stores product information, as part of the **Contoso** application. Since this data is coming from another system in the Contoso system of databases, the IDs are already configured to be GUIDs. In your own container, you can bring your ID, or allow Cosmos DB to provide one. 
 
 ```JSON
 {
@@ -71,7 +71,7 @@ To keep your RU/s as low as possible, consider the following:
 
 * Item size: a larger item increases RUs
 * Item indexing: performant indexing can decrease RUs
-* Item property count: if you index all your properties, more properties increases RUs
+* Item property count: if you index all your properties, using more properties will increase RUs
 * Data consistency: strong and bounded consistency levels consume more RU than other relaxed consistency levels
 * Type of reads: point read using an item's ID cost significantly fewer RU than queries
 * Query patterns: the complexity of a query affects how many RUs are consumed
@@ -113,3 +113,13 @@ You install the extension from the Extensions Marketplace for Visual Studio Code
 The Databases extension, in the Azure explorer of Visual Studio Code, provides a graphical user interface that is integrated with Visual Studio Code. Using the extension, you can create, delete, and manage Azure Cosmos DB accounts, databases, containers, and documents.
 
 :::image type="content" source="../media/2-cosmosdb-extension.png" alt-text="Screenshot of the Azure Databases extension in Visual Studio Code as user right-clicks on the Documents node for a contextual menu to create a new document." loc-scope="vs-code":::
+
+## Access account in portal
+
+The extension also provides easy access to all the functionality for Cosmos DB by providing the ability to open your account in the Azure portal. You can access this when you right-click your account and select **Open in portal**.
+
+:::image type="content" source="../media/2-cosmosdb-extension-open-in-portal.png" alt-text="Screenshot of the Azure Databases extension in Visual Studio Code as user right-clicks on the account node to open account in Azure portal." loc-scope="vs-code":::
+
+The portal offers access to all the configurations for your Cosmos DB, and the **Data Explorer** for your databases and containers.
+
+:::image type="content" source="../media/2-portal-data-explorer.png" alt-text="Screenshot of the Azure portal with the Data Explorer showing the query window open with a JSON document displayed.":::
