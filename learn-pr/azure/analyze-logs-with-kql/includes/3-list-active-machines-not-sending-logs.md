@@ -1,12 +1,15 @@
-Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data to ensure you have full visibility of all active virtual machines.
 
 Here, you'll write KQL queries to retrieve and transform data from the `Heartbeat` table to obtain insights about the status of machines in your environment.  
 
-## Assess log data based on analysis goals
+## 1. Set goal
+
+Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data to ensure you have full visibility of all active virtual machines.
+
+## 2. Assess logs
 
 Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent send virtual machine health data to the `Heartbeat` table once a minute.
 
-### What are your analysis goals and what information do you need?
+### What information do you need?
 
 To determine which machines have stopped sending data, you need information about:
 
@@ -33,7 +36,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for Windows and Linux. | `summarize by... OSType`<br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator). |
 | `Version` | The version number of the agent monitoring the virtual machine. | Identify the agent version on each machine. | Rename the column to `AgentVersion` (`AgentVersion=Version`). |
 
-## Identify recently active machines that stopped logging data
+## Write a query: Identify recently active machines that stopped logging data
 
 Write a query that lists the machines that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
 
