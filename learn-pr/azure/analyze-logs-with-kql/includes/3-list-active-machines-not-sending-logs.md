@@ -23,9 +23,10 @@ Heartbeat
 | take 10
 ```    
 
+The `TimeGenerated`, `Computer`, `Category`, and `OSType` columns all have data that's relevant to our analysis.
+
 :::image type="content" source="../media/kql-log-analytics-heartbeat-table-agent-version.png" alt-text="Screenshot showing the results of a take 10 query on the Heartbeat table with the TimeGenerated, Computer, Category, and OSType columns highlighted." lightbox="../media/kql-log-analytics-heartbeat-table-agent-version.png":::
 
-The `TimeGenerated`, `Computer`, `Category`, and `OSType` columns all have data that's relevant to our analysis.
 
 Let's assess how we can use this data and which KQL operations can help extract and transform the data:
 
