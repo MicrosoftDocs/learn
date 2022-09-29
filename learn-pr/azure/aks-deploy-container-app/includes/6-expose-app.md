@@ -1,4 +1,4 @@
-An Azure Kubernetes Service (AKS) cluster blocks all inbound traffic from the internet to the cluster to assure network security. Deployed workloads in Kubernetes are, by default, not accessible by anyone but those inside the cluster. To expose the applications to the outside world, you need to open specific ports and forward them to your services.
+An Azure Kubernetes Service (AKS) cluster blocks all inbound traffic from the internet to the cluster to assure network security. Deployed workloads in Kubernetes are, by default, only accessible from inside the cluster. To expose the applications to the outside world, you need to open specific ports and forward them to your services.
 
 The configuration of ports and port forwarding in Kubernetes is different from what you might be used to in other environments. On a virtual machine (VM), you'll configure the OS-level firewall to allow inbound traffic to port 443 and allow HTTPS web traffic. In Kubernetes, the control plane manages network configuration based on declarative instructions you provide.
 
@@ -10,15 +10,15 @@ A deployment is a logical grouping of pods. It isn't considered a physical workl
 
 Kubernetes has two network availability abstractions that allow you to expose any app without worrying about the underlying infrastructure or assigned pod IP addresses.
 
-These abstractions are the *services* and *ingresses*. They're both responsible for allowing and redirecting the traffic from external sources to our cluster.
+These abstractions are the *services* and *ingresses*. They're both responsible for allowing and redirecting the traffic from external sources to the cluster.
 
 ## What is a Kubernetes service?
 
-A Kubernetes service is a workload that abstracts the IP address for networked workloads. A Kubernetes service acts as a load balancer and redirects traffic to the specific ports of specified ports by using port-forwarding rules.
+A Kubernetes service is a workload that abstracts the IP address for networked workloads. A Kubernetes service acts as a load balancer and redirects traffic to the specified ports by using port-forwarding rules.
 
 :::image type="content" source="../media/6-1-service-diagram.png" alt-text="A diagram that shows two Kubernetes services. The first service is applied to one pod. The second service is applied to two pods.":::
 
-You define a service in the same way as a deployment using a YAML manifest file. The service uses the same `selector` key as deployments to select and group resources with matching labels into one single IP.
+You define a service in the same way as a deployment, by using a YAML manifest file. The service uses the same `selector` key as deployments to select and group resources with matching labels into one single IP.
 
 A Kubernetes service needs four pieces of information to route traffic.
 
@@ -37,7 +37,7 @@ Services can be of several types. Each type changes the behavior of the applicat
 
 - **NodePort**: This value exposes the service externally. It assigns each node a static port that responds to that service. When accessed through `nodeIp:port`, the node automatically redirects the request to an internal service of the `ClusterIP` type. This service then forwards the request to the applications.
 
-- **LoadBalancer**: This value exposes the service externally by using Azure's load-balancing solution. When created, this resource spins up an Azure Load Balancer resource within your Azure subscription. Also, this type automatically creates a `NodePort` service to which the load balancer's traffic is redirected and a `ClusterIP` service to forward internally.
+- **LoadBalancer**: This value exposes the service externally by using Azure's load-balancing solution. When created, this resource spins up an Azure Load Balancer resource within your Azure subscription. Also, this type automatically creates a `NodePort` service to which the load balancer's traffic is redirected and a `ClusterIP` service to forward it internally.
 
 - **ExternalName**: This value maps the service by using a DNS resolution through a CNAME record. You use this service type to direct traffic to services that exist outside the Kubernetes cluster.
 
@@ -58,7 +58,7 @@ Kubernetes uses ingress controllers to manage the configuration of ingresses in 
 - Terminates SSL/TLS requests.
 - Offers name-based virtual hosting.
 
-In AKS, the ingress controller links to a _DNS Zone_ resource in your Azure subscription. The DNS Zone is automatically created as part of the cluster creation process on your behalf. The link makes it possible for the cluster to automatically generate a zone record that points to the DNS name to the exposed application's IP address and port.
+In AKS, the ingress controller links to a _DNS Zone_ resource in your Azure subscription. The DNS Zone is automatically created as part of the cluster creation process on your behalf. The link makes it possible for the cluster to automatically generate a zone record that points the DNS name to the exposed application's IP address and port.
 
 In AKS, the :::no-loc text="HTTP application routing"::: add-on allows you to create ingress controllers.
 
@@ -66,7 +66,7 @@ In AKS, the :::no-loc text="HTTP application routing"::: add-on allows you to cr
 
 Ingress rules define where traffic is coming from and where to direct it within a cluster. You define ingress rules in an ingress deployment manifest file.
 
-These rules are defined in the `rules` key of the manifest file. Each rule is a set of additional values that describes the rule.
+These rules are defined in the `rules` key of the manifest file. Each rule is a set of values that describes the rule.
 
 For example, assume you want to allow clients to access your website by using the URL `http://example.com/site`. You want to route traffic to your video rendering service website. Here's an example of the defined ingress rule to allow this behavior.
 

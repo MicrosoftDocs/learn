@@ -30,9 +30,9 @@ Kubernetes only allows you to deploy images hosted in a container registry. Crea
 
 ## What is a Kubernetes pod?
 
-A Kubernetes *pod* groups containers and applications into logical structure. These pods have no intelligence and are composed of one or more application containers. Each one has an IP address, network rules, and exposed ports.
+A Kubernetes *pod* groups containers and applications into a logical structure. These pods have no intelligence and are composed of one or more application containers. Each one has an IP address, network rules, and exposed ports.
 
-For example, if you wanted to search all workloads related to the `contoso-website`, you'll query the cluster for pods with the label `app` and the value `contoso-website`.
+For example, if you wanted to search all workloads related to the `contoso-website`, you'd query the cluster for pods with the label `app` and the value `contoso-website`.
 
 ## What is Kubernetes deployment?
 
