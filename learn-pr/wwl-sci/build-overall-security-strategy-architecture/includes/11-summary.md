@@ -39,8 +39,8 @@ able to:
 
 ## Learn more with self-paced training
 
--   [Build a cloud governance strategy on Azure - Learn](/learn/modules/build-cloud-governance-strategy-azure/)
+-   [Build a cloud governance strategy on Azure](/training/modules/build-cloud-governance-strategy-azure/)
 
--   [Describe core Azure architectural components - Learn](/learn/modules/azure-architecture-fundamentals/)
+-   [Describe core Azure architectural components](/training/modules/azure-architecture-fundamentals/)
 
--   [Microsoft Cloud Adoption Framework for Azure - Learn](/learn/modules/microsoft-cloud-adoption-framework-for-azure/)
+-   [Microsoft Cloud Adoption Framework for Azure](/training/modules/microsoft-cloud-adoption-framework-for-azure/)
