@@ -14,11 +14,7 @@ To determine which machines have stopped sending data, you need information abou
 
 Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent send virtual machine health data to the `Heartbeat` table once a minute.
 
-### Which log data and KQL operations can you use?
-
-Let's look at the columns of the `Heartbeat` table and the type of data each one of the columns holds.
-    
-Let's run a simple `take 10` query on the `Heartbeat` table:
+Let's run a simple `take 10` query on the `Heartbeat` table to see the type of data each one of its columns holds:
 
 <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA%252FNITSwqSUpNLOGqUShJzE5VMDQAAFjdyScTAAAA/timespan/P1D" target="_blank">Click to run query in Log Analytics demo environment</a>
 
