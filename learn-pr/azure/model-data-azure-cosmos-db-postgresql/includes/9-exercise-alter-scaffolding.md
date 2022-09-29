@@ -99,11 +99,11 @@ The non-events tables can be distributed or turned into reference tables. As the
     event_types       | reference        | <none>              |             2
     payment_merchants | distributed      | merchant_id         |             1
     payment_users     | distributed      | user_id             |             1
-    ```            
+    ```
 
 ## Update colocation settings
 
-The developers asked about updating colocation after a table is distributed, as `payment_merchants` shouldn't be colocated. 
+The developers asked about updating colocation after a table is distributed, as `payment_merchants` shouldn't be colocated.
 
 1. Run the following query:
 
@@ -132,11 +132,13 @@ The developers asked about updating colocation after a table is distributed, as 
 While you work through the design with the Woodgrove Bank developers, they asked why they shouldn't distribute the events on the `event_id` field.
 
 1. Distribute the `payment_events` table on `event_id`.
+
     ```sql
     SELECT create_distributed_table('payment_events','event_id');
     ```
 
 1. Query `citus_tables` to show co-location.
+
     ```sql
     SELECT table_name, citus_table_type, distribution_column, colocation_id FROM citus_tables;  
     ```
@@ -151,7 +153,7 @@ While you work through the design with the Woodgrove Bank developers, they asked
     payment_merchants | distributed      | merchant_id         |             4
     payment_users     | distributed      | user_id             |             1
     ```
-    
+
     Observe that Azure Cosmos DB for PostgreSQL colocated `payment_events` with `payment_users` implicitly, based on datatypes of their distribution columns. The developers are starting to see that the fields don't match and that it doesn't seem like a good distribution column, as they want to join the `payment_events` and `payment_users` tables on `user_id`.
 
 ## Update the events table to distribute based on user_id
@@ -287,7 +289,6 @@ In the results from the query, the `citus_table_type` column will indicate wheth
 ```
 
 Notice that reference tables don't have distribution columns.
-
 
 ## Clean-up
 

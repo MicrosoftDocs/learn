@@ -4,7 +4,7 @@ Users of the Woodgrove Bank app also have shown that they query data within a co
 
 In this exercise, you'll create the partitions for the `payment_events` table. These partitions will break up the data as seen in the diagram below.
 
-:::image type="content" source="../media/shards-partitions-illustrated.png" alt-text="Diagram of the cluster with the coordinator node and two worker nodes. The worker nodes have shards of the payment_events table, distributed on the user_id column. The payment_events table has been partitioned by the created_at field. One worker node has data for user 1894, and the other worker node shows data for user 2000. Both nodes have their data broken down into 7-day partitions.":::
+:::image type="content" source="../media/shards-partitions-illustrated.svg" alt-text="Diagram of the cluster with the coordinator node and two worker nodes. The worker nodes have shards of the payment_events table, distributed on the user_id column. The payment_events table has been partitioned by the created_at field. One worker node has data for user 1894, and the other worker node shows data for user 2000. Both nodes have their data broken down into seven-day partitions.":::
 
 ## Create the partitions for the time series in the events table
 
@@ -87,7 +87,6 @@ When data is no longer needed, `drop_old_time_partitions()` can be used to remov
     NOTICE:  dropping payment_events_p2022w35 with start time 2022-08-29 00:00:00 and end time 2022-09-05 00:00:00
     NOTICE:  dropping payment_events_p2022w36 with start time 2022-09-05 00:00:00 and end time 2022-09-12 00:00:00
     ```
-
 
 1. To confirm that the partitions have been dropped, run the following command:
 

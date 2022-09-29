@@ -6,7 +6,7 @@ Time-partitioning is a feature of PostgreSQL, allowing a table to be split by ti
 
 For Woodgrove Bank, the `payment_events` table is partitioned by the `created_at` field. The following query creates the table:
 
- ```sql 
+ ```sql
 CREATE TABLE payment_events
 (
     event_id bigint,
@@ -68,7 +68,7 @@ Partitions are different from shards in that partitions are vertical slicing whe
 
 Let's look at how these partitions are implemented in Woodgrove Bank's `payment_events` table.
 
-:::image type="content" source="../media/shards-partitions-illustrated.png" alt-text="Diagram of the cluster with the coordinator node and two worker nodes. The worker nodes have shards of the payment_events table, distributed on the user_id column. The payment_events table has been partitioned by the created_at field. One worker node has data for user 1894, and the other worker node shows data for user 2000. Both nodes have their data broken down into 7-day partitions.":::
+:::image type="content" source="../media/shards-partitions-illustrated.svg" alt-text="Diagram of the cluster with the coordinator node and two worker nodes. The worker nodes have shards of the payment_events table, distributed on the user_id column. The payment_events table has been partitioned by the created_at field. One worker node has data for user 1894, and the other worker node shows data for user 2000. Both nodes have their data broken down into seven-day partitions.":::
 
 This diagram shows how the `payment_events` table is horizontally scaled by the user_id. The transactions for a user are stored together on a single node. User 1894's payment events live on a worker. User 2000's payment events live on another worker. Other events for User 2000 will be stored on the same worker node where the existing events are stored.
 
