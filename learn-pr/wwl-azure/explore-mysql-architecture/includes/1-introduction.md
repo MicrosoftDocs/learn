@@ -1,4 +1,4 @@
-Azure Database for MySQL is a platform as a service database, available in two resource types: flexible server and single server. 
+Azure Database for MySQL is a platform as a service database. That means you can host data in Azure Database for MySQL and acheive high availability without managing hardware or virtual servers.
 
 In this module, you will learn to:
 
