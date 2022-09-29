@@ -155,9 +155,10 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
 
     async function main() {
     // Create a container (folder) if it does not exist
-    const containerName = 'photos';    
+    const containerName = 'photos';
     const containerClient = blobServiceClient.getContainerClient(containerName);
-    if ( !containerClient.exists()) {
+    const containerExists = await containerClient.exists()
+    if ( !containerExists) {
         const createContainerResponse = await containerClient.createIfNotExists();
         console.log(`Create container ${containerName} successfully`, createContainerResponse.succeeded);
     }
@@ -189,7 +190,7 @@ To work with blob objects in your Azure Storage container, you use a `BlockBlobC
     > Make sure you're in the PhotoSharingApp directory.
 
     ```bash
-    node --harmony index.js
+    node index.js
     ```
 
     > [!TIP]
