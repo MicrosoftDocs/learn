@@ -39,7 +39,7 @@ While provisioning the database in Unit 3 - Exercise - Load data into distribute
 
 1. First, you can use the Azure portal. In the Azure portal panel of your browser window, select **Overview** from the left-hand navigation menu.
 
-    :::image type="content" source="../media/cluster-nodes-azure-portal.png" alt-text="Screenshot of the overview is selected and highlighted in the left-hand navigation menu of the Azure portal. On the Overview page, the sizes of the coordinator and worker nodes are highlighted in the Essentials area, and the Nodes tab, where additional details about each node are displayed, is highlighted.":::
+    :::image type="content" source="../media/cluster-nodes-azure-portal.png" alt-text="Screenshot of the overview is selected and highlighted in the left-hand navigation menu of the Azure portal. On the Overview page, the sizes of the coordinator and worker nodes are highlighted in the Essentials area, and the Nodes tab, where more details about each node are displayed, is highlighted.":::
 
     The Azure portal provides high-level details about nodes in the cluster. The **Essentials** area of the **Overview** page provides details about the sizes of the coordinator and worker nodes. Selecting either of these panes will take you to the **Scale** page, where you can change the configuration of your cluster.
 
@@ -106,7 +106,7 @@ While provisioning the database in Unit 3 - Exercise - Load data into distribute
 
     Querying the worker node metadata table provides you with much more information about cluster nodes than you can see in the Azure portal. Node names and port numbers can be used for connecting directly to nodes, which is a common practice when performing query optimization. Alternatively, you can retrieve connection strings for each node in your cluster from the Azure Cosmos DB for PostgreSQL resource's **Connection strings** page in the Azure portal. On the **Connection strings** page, you can select the desired node from the **Show connection strings for** drop-down list, and then copy the appropriate connection string, which you can then use to directly connect to individual nodes.
 
-    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB for PostgreSQL resource is selected in the Azure portal. On the Connection strings page, the Show connection strings for drop down list is highlighted and a worked node is selected and highlighted. The psql connection string's copy to clipboard button is highlighted.":::
+    :::image type="content" source="../media/cosmos-db-postgresql-connection-strings.png" alt-text="Screenshot of the Connection strings page of the Azure Cosmos DB for PostgreSQL resource is selected in the Azure portal. On the Connection strings page, the 'Show connection strings for' drop-down list is highlighted and a worked node is selected and highlighted. The psql connection string's copy to clipboard button is highlighted.":::
 
 ## Inspect table distribution
 

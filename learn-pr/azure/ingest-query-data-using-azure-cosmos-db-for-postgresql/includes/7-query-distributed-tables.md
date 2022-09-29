@@ -12,7 +12,9 @@ For simple queries, such as `SELECT COUNT(*) FROM payment_users;`, the coordinat
 
 For the more complex aggregations and queries associated with Woodgrove Bank's analytical workloads, Azure Cosmos DB for PostgreSQL supports and parallelizes most aggregate functions supported by PostgreSQL, including custom user-defined aggregates.
 
-:::image type="content" source="../media/distributed-query.gif" alt-text="Animation of the flow of a query arriving from an application is displayed, with the query being processed by the coordinator node using metadata tables and then the query fragments being sent to the work nodes for execution. The results of query execution on the worker nodes are passed back to the coordinator, aggregated, and returned to the application.":::
+:::image type="complex" source="../media/distributed-query.gif" alt-text="Animation of the flow of a query arriving from an application is displayed.":::
+    Animation of the flow of a query arriving from an application is displayed. In the animation, the query being processed by the coordinator node using metadata tables. Then, the query fragments are sent to the work nodes for execution. The results of query execution on the worker nodes are passed back to the coordinator, aggregated, and returned to the application.
+:::image-end:::
 
 Aggregates execute using one of three methods, in this order of preference:
 
