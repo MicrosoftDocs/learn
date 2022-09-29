@@ -1,4 +1,4 @@
-In this unit, you'll work in Visual Studio Code with the Databases extension to:
+In this unit, you'll work in Visual Studio Code with the Databases extension:
 
 * Install the Azure Databases extension for Visual Studio Code. 
 * Use the extension to connect to your Azure sandbox account.
@@ -6,9 +6,7 @@ In this unit, you'll work in Visual Studio Code with the Databases extension to:
 * Add a database and container.
 * Create some test documents in the container, then view and delete them.
 
-In the sample scenario, you want to work within Visual Studio Code, both as a development environment for building applications and as a tool for managing your Azure databases.
-
-This exercise runs on your desktop computer and uses an Azure sandbox subscription where you create for your resources.
+In the sample scenario, you want to work within Visual Studio Code, both as a development environment for building applications and as a tool for managing your Azure databases. This exercise runs on your desktop computer and uses a free Azure sandbox subscription.
 
 > [!NOTE]
 > This exercise assumes that you've already installed **Visual Studio Code** on your desktop computer.
@@ -17,7 +15,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
 
 1. Start Visual Studio Code.
 
-1. On the **Extensions** menu at the top, select **Manage Extensions** to open the extensions pane.
+1. On the **View** menu at the top, select **Extensions** to open the extensions pane or use the keyboard shortcut, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd>.
 
 1. In the **Search** box, enter **Azure Databases**, and press <kbd>Enter</kbd>.
 
@@ -31,32 +29,34 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
 
 1. On the **View** menu, select **Command Palette**.
 
-1. In the command palette, enter **Azure**, and then select **Azure: Focus on Resources View**.
+1. In the command palette, enter **Azure**, and then select **Azure: Focus on Resources View**, or use the keyboard shortcut, <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
 
     :::image type="content" source="../media/3-command-palette-cosmosdb.png" alt-text="Screenshot of the command palette in Visual Studio Code. The user has selected the Focus on Azure Databases extension View command." loc-scope="vs-code":::
 
-    The Azure Resources pane appears (if not already visible).
+    The Azure explorer appears (if not already visible).
 
-    :::image type="content" source="../media/3-cosmosdb-pane.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-cosmosdb-pane.png" alt-text="Screenshot of the Azure explorer in Visual Studio Code." loc-scope="vs-code":::
 
 1. On the **View** menu, select **Command Palette**, and then select **Azure: Sign in**.
 
 1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
 
-1. In the Azure Resources pane, select **Select subscriptions...**. The Learn sandbox subscription has the following name and tenant ID:
+1. In the Azure explorer, select **Select subscriptions...**. The Learn sandbox subscription has the following name and tenant ID:
 
-    * Name: Concierge Subscription
+    **Troubleshooting**: If you are not able to find the Concierge Subscription, you may have to change tenants and sign in again. Use the following tenant ID to complete that:
+
     * Tenant ID: 604c1504-c6a3-4080-81aa-b33091104187
+    * Name: Concierge Subscription
 
 1. Select **Concierge Subscription** and then **OK**.
 
-1. In the Azure Resources pane, expand **Concierge Subscription**.
+1. In the Azure explorer, expand **Concierge Subscription**. 
 
 ## Create a Cosmos DB account in Visual Studio Code
 
 1. Right-click **Azure CosmosDB** and then select **Create Server**.
 
-    :::image type="content" source="../media/3-add-comsosdb-account.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code. The user has selected the **Create Account** command." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-add-comsosdb-account.png" alt-text="Screenshot of the Azure explorer in Visual Studio Code. The user has selected the **Create Account** command." loc-scope="vs-code":::
 
     A wizard starts and prompts you for the details of the new account. Use the following table to complete the prompts:
 
@@ -68,15 +68,15 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
     |Select a resource group for new resources|Select **<rgn>[sandbox resource group]</rgn>** for the resource group created for you by the Learn sandbox.|
     |Select a location for new resources|Select a location near you.|
 
-1. When the account has been created, in the Azure Resources pane, , expand **Concierge Subscription** and **Azure CosmosDB**. Verify that the new Cosmos DB account appears.
+1. When the account has been created, in the Azure explorer, expand **Concierge Subscription** and **Azure CosmosDB**. Verify that the new Cosmos DB account appears.
 
     :::image type="content" source="../media/3-new-comsosdb-account.png" alt-text="Screenshot of the Azure Resources extension pane in Visual Studio Code. The new Azure Databases extension account is listed under the user's Azure account." loc-scope="vs-code":::
 
 ## Create a database and container
 
-1. In the Azure explorer, <kbd>Shift<kbd> + <kbd>Alt<kbd> + <kbd>A<kbd>, right-click the database account you created, then select **Create Database**.
+1. In the Azure explorer, <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>, right-click the database account you created, then select **Create Database**.
 
-    :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure explorer in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
 
 1. A wizard starts and prompts you for the details. Use the following table to complete the prompts:
 
@@ -87,7 +87,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
     |Enter the partition key for the collection, or leave blank for fixed size|**categoryName**|
     |Initial throughput capacity|**1000**|
 
-    This container will hold `Products` documents. Tags and inventory are held arrays of subdocuments with each product.
+    This container will hold `Products` documents. Tags and inventory are arrays of subdocuments with each product. The following document is an example of a product.
 
     ```json
     {
@@ -114,13 +114,13 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
     }
     ```
 
-1. In the Azure Resources pane, verify that the **ContosoRetail** database, containing the **Products** container, appears.
+1. In the Azure explorer, verify that the **ContosoRetail** database, containing the **Products** container, appears.
 
-    :::image type="content" source="../media/3-database-and-container.png" alt-text="Screenshot of the Azure Resources pane in Visual Studio Code, showing the SchoolDB database and the StudentCourseGrades container." loc-scope="vs-code":::
+    :::image type="content" source="../media/3-database-and-container.png" alt-text="Screenshot of the Azure explorer in Visual Studio Code, showing the SchoolDB database and the StudentCourseGrades container." loc-scope="vs-code":::
 
 ## Create and view documents
 
-1. In the Azure Resources pane, expand the **Products** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
+1. In the Azure explorer, expand the **Products** container. Two subfolders should appear, named **Documents** and **Stored Procedures**.
 
 1. Right-click the **Documents** folder, and then select **Create Document**.
 
@@ -137,7 +137,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
 
     :::image type="content" source="../media/3-new-document.png" alt-text="Screenshot of Visual Studio Code showing the newly created document." loc-scope="vs-code":::
 
-1. In the Azure explorer, right-click the **Documents** folder again, and select **Create Document**.
+1. Add a second document. In the Azure explorer, right-click the **Documents** folder again, and select **Create Document**.
 
 1. A wizard starts and prompts you for the details. Use the following table to complete the prompts:
 
@@ -203,11 +203,9 @@ This exercise runs on your desktop computer and uses an Azure sandbox subscripti
 
     You have added and edited Cosmos DB documents. 
 
-## Delete container
-
-1. In the Azure explorer, right-click each of the product container and delete it. You'll create a new container and upload the _entire_ products dataset in the next exercise.
+1. The Documents list now shows readable names, using the `name` field of each object. When you work locally with documents, its helpful to find documents if they use the `name` property. 
 
 ## Check your work
 
-* In Visual Studio Code, in the Azure Databases extension you see your Cosmos DB account, database, and container.
-* When you expand your container, you see zero items under the **Documents** node. 
+* In Visual Studio Code, in the Azure Databases extension you see your Cosmos DB account, database and container.
+* When you expand the container node, you see two documents.

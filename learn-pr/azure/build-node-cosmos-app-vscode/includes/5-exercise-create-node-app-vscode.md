@@ -2,10 +2,9 @@ In this unit, use Visual Studio Code to build and run a Node.js application agai
 
 * **Install npm packages** that enable you to programmatically work with your Cosmos DB Core (SQL) database. 
 * **Write JavaScript code** that uploads the Contoso products dataset to a container. 
-* **Run code** to manage that data.
 
 > [!NOTE]
-> This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer and started your Learn sandbox.
+> This exercise assumes that you've already installed **Node.js** and **npm** on your desktop computer and started your Learn sandbox and connected to it in Visual Studio Code.
 
 ## Create Node.js project 
 
@@ -15,7 +14,7 @@ In this unit, use Visual Studio Code to build and run a Node.js application agai
     code .
     ```
 
-1. On the **Terminal** menu, select **New Terminal**, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
+1. On the **Terminal** menu, select **New Terminal**, or use keyboard shortcut, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>.
 
 3. In the **Terminal** window, run the following command to create a new folder named **contoso-retail** for the Node application and change into that folder.
   
@@ -39,8 +38,7 @@ In this unit, use Visual Studio Code to build and run a Node.js application agai
 
     |Property|Value|
     |--|--|
-    |**description**|`Contoso retail product maintenance`|
-    |**type**|`module` - the JavaScript code uses ES6 syntax|
+    |**type**|`module` - the module's JavaScript code uses ES6 syntax|
 
 
     The file should look like this. The sample code uses ES6 syntax so you need to set the type of the application to **module**. 
@@ -51,7 +49,7 @@ In this unit, use Visual Studio Code to build and run a Node.js application agai
         "version": "1.0.0",
         "description": "Student and course grades maintenance",
         "main": "index.js",
-        "type": module,
+        "type": "module",
         "scripts": {
             "test": "echo \"Error: no test specified\" && exit 1"
         },
@@ -85,7 +83,7 @@ node_modules
 
 1. In Visual Studio Code, on the **File** menu, select **New Text File**.
 
-1. On the **File** menu, select **Save As**. Save the new file with the name **.env**.
+1. On the **File** menu, select **Save As**. Save the new file with the name `.env`.
 1. Add the following variables to the file:
 
     ```text
@@ -96,7 +94,10 @@ node_modules
     ```
 
 1. From the Azure explorer, <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>, select your subscription, then the **Azure Cosmos DB** node to see the resources. 
-1. Right-click on your resource and select **Copy connection string**.
+1. Right-click on your Cosmos DB account and select **Copy connection string**.
+
+    :::image type="content" source="../media/3-copy-connection-string.png" alt-text="Screenshot of the Visual Studio Code with Cosmos D B account name selected and the submenu to Copy Connection String highlighted." loc-scope="vs-code":::
+
 1. Paste the connection string into the `.env` file for the **COSMOS_CONNECTION_STRING** variable.
 
 ## Install the Cosmos DB package 
@@ -114,6 +115,8 @@ node_modules
     ```
 
 ## Product shape
+
+Understanding the document JSON will help you understand the operations, their input and responses.
 
 The products in this dataset have the following shape:
 
@@ -141,7 +144,7 @@ The products in this dataset have the following shape:
 |--|--|
 |id|Cosmos DB uses the custom identifier, **id**, to uniquely identify each item. The ID can be any data type such as number, string, etc. If you don't provide the ID, Cosmos DB creates one for you.|
 |categoryName|This property has been specifically selected for this dataset as the partition key. The product category name provides a somewhat even distribution of the data, which is ideal for the partition key. The categoryName also won't change very often, which is also important for a partition key.|
-|tags and inventory|These represent subproperties that can be used to find and reshape the results of queries using the [JOIN]() keyword.|
+|tags and inventory|These represent subproperties that can be used to find and reshape the results of queries using the JOIN keyword.|
  
 
 ## Create the script to add products to a container
@@ -149,31 +152,38 @@ The products in this dataset have the following shape:
 1. In Visual Studio Code, on the **File** menu, select **New Text File**.
 
 1. On the **File** menu, select **Save As**. Save the new file with the name **1-contoso-products-upload-data.js**.
-1. Copy the following JavaScript and paste it into that file:
+1. Copy the following JavaScript and paste it into the file. 
 
     :::code language="javascript" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/1-contoso-products-upload-data.js" highlight="11,14,17,29,34,47-51":::
 
-1. Create a new file, named **products.json**, and copy the contents of the sample data file, [products.json](https://github.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/blob/main/training/build-node-cosmos-app-vscode/products.json) into it. 
+
+1. Create a new file, named **products.json**, and copy the contents of the sample data file, [products.json](https://raw.githubusercontent.com/Azure-Samples/cosmos-db-sql-api-javascript-samples/main/training/build-node-cosmos-app-vscode/products.json) into it. 
 
     This is an array of JSON objects. 
 
-1. In the Visual Studio Code terminal, <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd>, execute the JavaScript file to upload the data into the Cosmos DB container:
+1. In the Visual Studio Code terminal, execute the JavaScript file to upload the data into the Cosmos DB container:
 
     ```bash
     node 1-contoso-products-upload-data.js
     ```
 
-1. Copy the container name displayed at the end of the execution in the terminal. In order for the remaining JavaScript files to run successfully, you need to set this name in the `.env` file.
+    The terminal displays the item count, activityId, statusCode, and the item name. 
 
-    :::image type="content" source="../media/5-copy-container-name.png" alt-text="Screenshot of the Visual Studio Code terminal with the container name highlighted." loc-scope="vs-code":::
- 
-1. Past the value into the `.env` file for the **COSMOS_CONTAINER_NAME** property. The container name has a timestamp postpended, such as `Products-1664304175357`. 
+## The operation's result object
 
-## View products in Azure explorer
+The result object returned from an operation is documented in the Cosmos DB SQL reference documentation. While the result can have information specific to the operation, each result will have some properties that are always returned and are helpful to determine what happened. 
 
-1. In Visual Studio Code, open the Azure explorer, <kbd>Shift<kbd> + <kbd>Alt<kbd> + <kbd>A<kbd>.
-1. Find and expand your subscription node, then your **Azure Cosmos DB** resources node. 
-1. Find and expand your Cosmos DB database and its products container. 
+|Result property|Description|
+|--|--|
+|activityId|The unique event ID associated with the specific operation. If your operation fails and you need to contact support, this ID, along with your resource name and subscription is helpful to quickly find the issue.|
+|statusCode|The HTTP status code indicating the success or failure of the operation.|
+|resource|This is a JSON object of the final object, such as a JSON doc in a container.|
+
+## View Cosmos DB documents in Visual Studio Code
+
+1. In Visual Studio Code, open the Azure explorer, or use the keyboard shortcut, <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
+1. Find and expand the Concierge Subscription node, then your **Azure Cosmos DB** resources node. 
+1. Find and expand your **ContosoRetail** database and its **Products** container. 
 1. Expand the **Documents** node to see the products the Node.js script added. The node name for each document is the **name** property. 
 1. Select the first product to see the entire JSON. 
 

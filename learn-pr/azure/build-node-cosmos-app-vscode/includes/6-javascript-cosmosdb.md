@@ -1,8 +1,30 @@
-In this unit, you'll learn how to use SQL keywords such as LIKE, JOIN, and WHERE to data with the Cosmos SDK.
+In this unit, you'll learn how to use SQL keywords such as LIKE, JOIN, and WHERE to query data with the Cosmos SDK.
+
+## Query operations on the container
+
+Query operations are specific to the container. Because the query is executed on the container itself, it isn't necessary to use the correct name of the container, such as `products`. In the SDK reference documentation or portal, you may see the container name such as `root` or `c` to indicate the container. 
+
+## Query for all documents
+
+To find documents in a Cosmos DB Core (SQL) database's container, use the SDK **query** method on the container object, with a query specification. The query specification requires the `query` property and an option `parameters` property. 
+
+|Property|Purpose|
+|--|--|
+|**query** (required)|The SQL query text. A simple query  is `select * from products`. |
+|**parameters** (optional)|Variable substitution into the query. The name corresponds to the name used in the query, and the value is the actual substitution. You can provide up to 10 parameters.|
+
+```javascript
+const querySpecification = {
+    query: `select * from products`,
+    parameters: undefined
+};
+```
+
+This query returns all documents in the container.  
 
 ## Query for documents by name using LIKE in a container
 
-To find documents in a Cosmos DB Core (SQL) database's container, use the container's **query** with a query specification. 
+To refine the search but still provide some flexibility, use the LIKE keyword to allow for any matches on the document's property where the document's name property includes the value Blue. The name can start with Blue, end with Blue, or have Blue in the middle because the value is wrapped with the percent signs, `%`.
 
 ```javascript
 // SQL Query specification
@@ -20,6 +42,8 @@ const querySpec = {
     ]
 };
 ```
+
+Using the LIKE keyword
 
 Execute the query on the container to fetch the documents. The query's results are fetched with `fetchAll` and returned in the destructured property, `resources`. 
 
@@ -51,7 +75,7 @@ The output looks something like:
 
 ## Query for documents by string property using LIKE in a container
 
-To make the query more flexible by wrapping it in a function that takes a document's property, and its value to find. This allows for partial matches to any string property. 
+To make the query more flexible, wrap it in a function that takes a document's property, and its value to find. 
 
 ```javascript
 // Find all products that match a property with a value like `value`
@@ -86,9 +110,7 @@ The property and value are passed into the function and used in the query for st
 
 ## Query for documents and return inventory subproperty using JOIN keyword in a container
 
-To report on the inventory of products by using the JOIN keyword to access this **inventory** subproperty of the product.
-
-The product shape has two subproperties, tags and inventory. To query and/or return subproperty values, use the JOIN keyword. The following SQL query has been formatted for readability only and doesn't need to be used in JavaScript.
+The document shape includes two subproperties, tags and inventory. To access these subproperties, use the JOIN keyword. The following SQL query has been formatted for readability only and doesn't need to be used with the Cosmos DB SDK.
 
 ```sql
 SELECT
@@ -112,7 +134,7 @@ The inventory variable, `i`:
 * Is used in the WHERE clause to reduce the dataset.
 * Is used in the SELECT clause to return the inventory properties. 
 
-Keep the function flexible by passing in the 
+To find all inventory for a specific property in a specific location, use the following function. It uses parameter substitution to provide a document's top-level property and the subproperty value to match for a location.
 
 ```javascript
 async function executeSqlInventory(propertyName, propertyValue, locationPropertyName, locationPropertyValue) {
@@ -189,13 +211,3 @@ async function upsert(item) {
   }
 }
 ```
-
-## The operation's result object
-
-The result object returned from an operation is documented in the Cosmos DB SQL reference documentation. While the result can have information specific to the operation, each result will have some properties that are always returned and are helpful to determine what happened. 
-
-|Result property|Description|
-|--|--|
-|activityId|The unique event ID associated with the specific operation. If your operation fails and you need to contact support, this ID, along with your resource name and subscription is helpful to quickly find the issue.|
-|statusCode|The HTTP status code indicating the success or failure of the operation.|
-|resource|This is a JSON object of the final object, such as a JSON doc in a container.|

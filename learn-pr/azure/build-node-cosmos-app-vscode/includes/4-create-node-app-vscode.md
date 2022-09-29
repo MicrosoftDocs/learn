@@ -7,7 +7,7 @@ In this unit, you'll understand how to:
 
 ## Create a JavaScript application for Node.js
 
-You can create a new JavaScript application for Node.js from within Visual Studio Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application to the Node.js runtime.
+You can create a new JavaScript application for Node.js from within Visual Studio Code using a terminal window. The `npm init -y` command creates a new file, named **package.json** in the application folder. This file contains metadata that you use to describe your application for the Node.js runtime.
 
 Then you need to create a new file for your application code. When you save the file, make sure you give the file a **.js** extension (for JavaScript). You're now ready to start writing your JavaScript code.
 
@@ -26,8 +26,7 @@ Type checking enables IntelliSense to show the parameters that a function call c
 Other IntelliSense features available in Visual Studio Code include:
 
 - Detecting unreachable code and unused variables. Statements that can never be run, and variables that are never used, are shown faded out in the editor.
-- Organizing imports. IntelliSense can quickly sort the imports that occur in a code file, and remove imports that aren't used.
-- Peeking definitions and references. The peek facility enables you to quickly view the definition of an object or function, even if it's in another file. Right-click a variable or function, and select **Peek Definition** or **Peek References**. The definition or references appear in a pop-up window.
+- Peeking at definitions and references. The peek facility enables you to quickly view the definition of an object or function, even if it's in another file. Right-click a variable or function, and select **Peek Definition** or **Peek References**. The definition or references appear in a pop-up window.
 - Go to a variable, function, or type definition. This feature enables you to move directly to the definition of a variable, function, or type in your code. This is useful if you need to change the definition of an item or modify a function. Right-click the code that references your variable or type, or that calls your function. Select **Go To Definition**, or **Go To Type Definition**.
 - Suggesting possible refactoring of your code. An ellipsis (...) under an item indicates areas where IntelliSense has one or more suggestions. Select the ellipsis to view the suggestions. Select **Quick Fix** to implement the suggestion.
   
@@ -61,7 +60,7 @@ Before you use the Visual Studio Code debugger, you should configure it. To edit
 }
 ```
 
-For this Contoso application, with several files, we'll add a couple of extra properties. Change the **program** property file name to `${file}`. This allows you to debug the currently active JavaScript file. Add the **args** property when you need to pass in parameters to the application. These values are available from the **process.argv** property available in the Node.js runtime.
+For this Contoso application, with several code files to run, we'll add a couple of extra properties. Change the **program** property file name to `${file}`. This allows you to debug the currently active JavaScript file. Add the **args** property when you need to pass in parameters to the application. These values are available from the **process.argv** property available in the Node.js runtime.
 
 ```json
 {
@@ -77,6 +76,7 @@ For this Contoso application, with several files, we'll add a couple of extra pr
             "skipFiles": [
                 "<node_internals>/**"
             ],
+            // ${file} is replaced with active file's name
             "program": "${workspaceFolder}/${file}",
             // these values are available as process.argv
             "args": ["abc", "1"],
@@ -91,9 +91,9 @@ Before you begin to debug, you should set a breakpoint in your application code.
 
 ## Start debugging
 
-To start debugging, select **Start Debugging** on the **Run** menu. If you're using an external terminal, a new terminal window will appear. Debugger output will appear in the **Output** window in Visual Studio Code.
+To start debugging, select **Start Debugging** on the **Run** menu or launch the debugger, <kbd>F5</kbd>. If you're using an external terminal, a new terminal window will appear. Debugger output will appear in the **Output** window in Visual Studio Code.
 
-When the debugger reaches a breakpoint in your application, execution will pause, and the breakpoint statement is highlighted. You'll see windows where you can examine and set the values of local and global variables, and the call stack. You can also add **Watch** expressions, which are evaluated and displayed as execution proceeds.
+When the debugger reaches a breakpoint in your application, execution pauses, and the breakpoint statement is highlighted. Windows in the **Run and debug** explorer allow you to examine and set the values of local and global variables, and the call stack. You can also add **Watch** expressions, which are evaluated and displayed as execution proceeds.
 
 :::image type="content" source="../media/4-debugger-at-breakpoint.png" alt-text="Screenshot of the Visual Studio Code debugger in action pausing at a breakpoint on some sample JavaScript code." loc-scope="vs-code":::
 
@@ -107,3 +107,4 @@ When the debugger reaches a breakpoint in your application, execution will pause
 |6 - Debug console|See any console statement values.|
 
 As you add JavaScript code in the next few exercises, you may need to debug the code to determine what is wrong. Come back to this unit when necessary. 
+
