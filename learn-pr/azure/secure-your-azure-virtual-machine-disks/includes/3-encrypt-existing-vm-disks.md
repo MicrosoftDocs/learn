@@ -112,7 +112,7 @@ Set-AzVmDiskEncryptionExtension `
      -SkipVmBackup
 ```
 
-For the Azure CLI, to enable encryption, run the `az vm encryption enable` command and specify the volume you want to encrypt using the `--volume-type [all | os | data]` parameter. Here is an example of encrypting all volumes for a virtual machine.
+For the Azure CLI, to enable encryption, run the `az vm encryption enable` command and specify the volume you want to encrypt using the `--volume-type [all | os | data]` parameter. Here's an example of encrypting all volumes for a virtual machine.
 
 ```azurecli
 az vm encryption enable \
