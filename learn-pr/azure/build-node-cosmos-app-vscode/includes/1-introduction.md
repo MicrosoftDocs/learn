@@ -8,19 +8,19 @@ You'll learn how to work with a Cosmos DB resource, database, and container from
 
 ## What will you be doing? 
 
-You'll use Visual Studio Code and the Azure extension for Cosmos DB to create your database and add then delete some dummy data. Then you'll create the Node.js application and the learn how to programmatically accomplish those tasks.
+You'll use Visual Studio Code and the Azure Databases extension to create your account, database and container then add some dummy data to learn how to use the Databases extension. Then you'll create the Node.js application and learn how to programmatically insert, find, and update your data.
 
 These steps include:
 
-* Create Cosmos DB Core (SQL) resource.
+* Create Cosmos DB Core (SQL) account.
 * Manually add, update, and delete documents from Azure explorer in Visual Studio Code.
-* Use JavaScript to automate data tasks with the @azure/cosmos npm package.
+* Use JavaScript to automate add, update, and query operations with the @azure/cosmos npm package.
 
 ## What is the main goal? 
 
-The main goal is to teach you how to interact with your Cosmos DB Core (SQL) container programmatically with the JavaScript SDK. The programmatic tasks are intermediary. 
+The main goal is to teach you how to interact with your Cosmos DB Core (SQL) container programmatically with the JavaScript SDK from Visual Studio Code. 
 
-If you start the module and feel you aren't ready for these tasks, complete to the Cosmos DB Core (SQL) quickstart then return to this module. 
+If you start the module and feel you aren't ready for these tasks, complete the Cosmos DB Core (SQL) quickstart then return to this module. 
 
 ## Prerequisites
 
@@ -28,5 +28,4 @@ Your local development machine should have the following installed before you co
 
 * Node.js LTS version
 * Visual Studio Code and the following extensions: 
-    * Azure Account
-    * Azure Resources
+    * Azure Databases - this extension will install any other Azure extensions it needs

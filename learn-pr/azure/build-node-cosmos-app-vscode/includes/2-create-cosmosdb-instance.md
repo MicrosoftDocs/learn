@@ -1,4 +1,4 @@
-In this unit, you'll learn about Azure Cosmos DB an how it organizes data. You'll see how to use Visual Studio Code to create and maintain Azure Cosmos DB and containers.
+In this unit, you'll learn about Azure Cosmos DB and how it organizes data. You'll see how to use Visual Studio Code to create and maintain Azure Cosmos DB databases and containers.
 
 ## What is Azure Cosmos DB?
 
