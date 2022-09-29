@@ -5,16 +5,14 @@ Here, you'll write KQL queries to retrieve and transform data from the `Heartbea
 
 Your first log analysis goal is to ensure you're getting data about all active virtual machines in your network. You want to identify machines that stop sending data to ensure you have full visibility of all active virtual machines.
 
-## 2. Assess logs
-
-Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent send virtual machine health data to the `Heartbeat` table once a minute.
-
-### What information do you need?
-
 To determine which machines have stopped sending data, you need information about:
 
 - All machines that have recently logged data, but haven't logged data as expected in the past few minutes.
 - For deeper analysis, it's useful to know which virtual machine agent is running on each machine.
+
+## 2. Assess logs
+
+Azure Monitor uses Azure Monitor Agent to collect data about activities and operating system processes running inside virtual machines. Some of the older machines in your environment still use the legacy Log Analytics Windows and Linux agents, which Azure Monitor is deprecating. Azure Monitor Agent and Log Analytics Agent send virtual machine health data to the `Heartbeat` table once a minute.
 
 ### Which log data and KQL operations can you use?
 
