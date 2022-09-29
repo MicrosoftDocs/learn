@@ -37,7 +37,7 @@ Now let's assess how we can use this data and which KQL operations can help extr
 | `OSType` | The type of operating system running on the virtual machine. | Identify agent type for Log Analytics agents, which are different for Windows and Linux. | `summarize by... OSType`<br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator). |
 | `Version` | The version number of the agent monitoring the virtual machine. | Identify the agent version on each machine. | Rename the column to `AgentVersion` (`AgentVersion=Version`). |
 
-## 3. Write a query: Identify recently active machines that stopped logging data
+## 3. Write your query
 
 Write a query that lists the machines that have been active in the past 48 hours, but haven't logged data to the `Heartbeat` table in the last five minutes. 
 
