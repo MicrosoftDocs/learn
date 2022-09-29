@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.create.azure-cosmos-db-for-postgresql
+metadata:
+  title: Introduction to Azure Cosmos DB for PostgreSQL
+  description: Build cloud-native apps with Azure Cosmos DB for PostgreSQL for highly-scalable/elastic workloads.
+  ms.date: 09/28/2022
+  author: markingmyname
+  ms.author: maghan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Cosmos DB for PostgreSQL
+summary: This module is a no-code introduction to Azure Cosmos DB for PostgreSQL.
+abstract: |
+  In this module, you will:
+  - Describe the components of Azure Cosmos DB for PostgreSQL.
+  - Identify situations when to use Azure Cosmos DB for PostgreSQL.
+prerequisites: Some knowledge of relational databases
+iconUrl: /learn/achievements/intro-to-postgres-cosmos-.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-cosmos-db
+subjects:
+- database
+- cloud-computing
+units:
+- learn.create-azure-cosmos-db-for-postgresql.introduction
+- learn.create.azure-cosmos-db-for-postgresql.what-is-azure-cosmos-db-for-postgresql
+- learn.create.azure-cosmos-db-for-postgresql.knowledge-check
+- learn.create.azure-cosmos-db-for-postgresql.summary
+badge:
+  uid: learn.create.azure-cosmos-db-for-postgresql.badge

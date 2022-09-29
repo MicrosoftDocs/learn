@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-db-for-postgresql.4-how-azure-database-for-postgresql-works
+uid: learn.create-azure-db-for-postgresql.how-azure-database-for-postgresql-works
 title: How Azure Database for PostgreSQL works
 metadata:
   title: How Azure Database for PostgreSQL works
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-how-azure-database-postgres-works.md)]
+  [!include[](includes/3-how-azure-database-postgres-works.md)]

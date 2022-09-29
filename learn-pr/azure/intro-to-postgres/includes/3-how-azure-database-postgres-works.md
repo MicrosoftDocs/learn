@@ -14,9 +14,9 @@ And (optionally):
 * Whether you want a new database server, or to restore an existing one
 * Whether you require an older version of PostgreSQL
 
-![Screenshot of the Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Flexible server server highlighted.](../media/4a-portal.png)
+![Screenshot of the Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Flexible server server highlighted.](../media/3a-portal.png)
 
-![Screenshot of the form for creating flexible server, where you can input the server name, username, and password.](../media/4b-form.png)
+![Screenshot of the form for creating flexible server, where you can input the server name, username, and password.](../media/3b-form.png)
 
 The steps above create and deploy your PostgreSQL database with a flexible server. Your database is secure by default. If you add your current IP address to the firewall rules, you can connect to and query your database using your username and password.
 
