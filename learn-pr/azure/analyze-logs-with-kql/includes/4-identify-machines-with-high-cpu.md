@@ -94,6 +94,8 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
 
     The result set of this query consists of all computers for which the top 10% and 15% `% Processor Time` values are over 80.  
 
+    :::image type="content" source="../media/kql-log-analytics-perf-table-percentiles-over-80.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-percentiles-over-80.png":::
+
 ## Add operating system information from the Heartbeat table to the query results
 
 To get a better understanding of your query results, you can correlate information from a different table to your query results using the `join` operator. For more information, see [join operator](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer). 
@@ -116,6 +118,8 @@ Let's add information about the operating system running on each computer, which
 
     This iteration of the query adds the `Computer` and `OSType` columns from the `Heartbeat` table to the previous query results. 
 
+    :::image type="content" source="../media/kql-log-analytics-perf-table-union-heartbeat.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-union-heartbeat.png":::
+
     The `Computer` column now appears twice in the query results - once from the query on the `Perf` table and once from the query on the `Heartbeat` table. The `Computer` column from the `Heartbeat` table has been renamed `Computer1`, but the two tables contain identical data. Having both columns enables correlating the results from the two tables, but you can now filter away the duplicate column.
     
 1. Remove the `Computer1` column from the query results: 
@@ -134,3 +138,5 @@ Let's add information about the operating system running on each computer, which
     ```
 
     The result set of this query contains all of the computers that reached their full CPU capacity and includes information about the operating system on each computer, which will be helpful for further analysis.
+
+    :::image type="content" source="../media/kql-log-analytics-perf-table-union-heartbeat-project-away.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-union-heartbeat-project-away.png":::
