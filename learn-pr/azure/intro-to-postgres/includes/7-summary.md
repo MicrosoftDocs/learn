@@ -1,4 +1,4 @@
-In this module, you learned about Azure Database for PostgreSQL. You also learned a little about Cosmos DB for PostgreSQL, and other server deployment options.
+In this module, you learned about Azure Database for PostgreSQL. You also learned a little about Azure Cosmos DB for PostgreSQL, and other server deployment options.
 
 Now that you've reviewed this module, you should be able to:
 

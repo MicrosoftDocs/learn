@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-db-for-postgresql.what-is-azure-cosmos-db-for-postgresql
+uid: learn.create-azure-db-for-postgresql.3-what-is-azure-cosmos-db-for-postgresql
 title: What is Azure Cosmos DB for PostgreSQL? 
 metadata:
   title: What is Azure Cosmos DB for PostgreSQL? 
   description: An overview of Azure Cosmos DB for PostgreSQL? 
-  ms.date: 10/23/2020 
+  ms.date: 09/29/2022
   author: markingmyname
   ms.author: maghan
   ms.topic: interactive-tutorial

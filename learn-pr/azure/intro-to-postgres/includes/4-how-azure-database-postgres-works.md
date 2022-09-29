@@ -4,7 +4,7 @@ Separating your database engine from your data in the cloud allows automated mai
 
 ## How to get set up
 
-Azure Database for PostgreSQL can be quickly set up and configured from the Azure portal, CLI, or PowerShell. For a single server deployment, you only need to configure:
+Azure Database for PostgreSQL can be quickly set up and configured from the Azure portal, CLI, or PowerShell. For a flexible server deployment, you only need to configure:
 
 * Username and password
 * The location(s) closest to your users
@@ -14,11 +14,11 @@ And (optionally):
 * Whether you want a new database server, or to restore an existing one
 * Whether you require an older version of PostgreSQL
 
-![Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Single server highlighted.](../media/4b-portal.png)
+![Screenshot of the Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Flexible server server highlighted.](../media/4a-portal.png)
 
-![Form for creating single server, where you can input the server name, username, and password.](../media/4c-form.png)
+![Screenshot of the form for creating flexible server, where you can input the server name, username, and password.](../media/4b-form.png)
 
-The steps above create and deploy your PostgreSQL database with a single server. Your database is secure by default. If you add your current IP address to the firewall rules, you can connect to and query your database using your username and password.
+The steps above create and deploy your PostgreSQL database with a flexible server. Your database is secure by default. If you add your current IP address to the firewall rules, you can connect to and query your database using your username and password.
 
 You can connect using psql on the Azure Cloud Console, locally using your favorite programming language, or with free administrative tools such as pgAdmin.
 
