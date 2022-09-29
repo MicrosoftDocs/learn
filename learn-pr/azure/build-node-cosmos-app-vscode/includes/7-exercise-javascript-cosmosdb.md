@@ -7,7 +7,7 @@ In this unit, you'll create and run scripts, which use SQL keywords such as LIKE
 1. On the **File** menu, select **Save As**. Save the new file with the name **2-contoso-products-find.js**.
 1. Copy the following JavaScript and paste it into that file:
 
-        :::code language="javascript" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/2-contoso-products-find.js" highlight="11,14,17,29,56":::
+    :::code language="json" source="~/../cosmos-db-sql-api-javascript-samples/training/build-node-cosmos-app-vscode/2-contoso-products-find.js" highlight="11,14,17,29,56":::
 
 1. In the Visual Studio Code terminal, execute the JavaScript file to **find all bikes**:
 
