@@ -22,7 +22,7 @@ The service provides a relational database solution with horizontal scalability 
 :::column-end:::
 :::column span="2":::
 
-![Azure Postgres benefits: High availability, fully managed, intelligent performance.](../media/1a-azure-postgres-benefits.png)
+![Diagram explaining Azure Postgres benefits: High availability, fully managed, intelligent performance.](../media/1a-azure-postgres-benefits.png)
 
 :::column-end:::
 :::row-end:::

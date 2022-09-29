@@ -4,7 +4,7 @@ Azure Database for PostgreSQL is a managed database solution that provides highl
 
 The PostgreSQL layer is based on the popular open-source PostgreSQL Community Edition, giving you access to a wide range of extensions. PostgreSQL is designed to handle a range of workloads, from single machines to data warehouses or Web services with many concurrent users.
 
-![Extensions examples are Azure data studio extension, visual studio code extension, citus community extension, PLV8, PostGIS, and more. Languages include Python, PostGreSQL, Java, and php.](../media/2a-extensions-languages.png)
+![Diagram explaining the extensions examples are Azure data studio extension, visual studio code extension, citus community extension, PLV8, PostGIS, and more. Languages include Python, PostGreSQL, Java, and php.](../media/2a-extensions-languages.png)
 
 PostgreSQL has its own query language called pgsql. This language is a variant of the standard relational query language, SQL, with features that enable you to write stored procedures that run inside the database. However, Azure Database for PostgreSQL allows you to work with popular frameworks and languages such as Ruby on Rails, Python with Django, Java with Spring Boot, .NET, and Node.js.
 
@@ -12,9 +12,9 @@ PostgreSQL has its own query language called pgsql. This language is a variant o
 
 Azure Database for PostgreSQL is available in two deployment modes, with each deployment mode allowing different levels of customization and scale.
 
-**Single Server** deployments are suitable for most applications that don’t require high levels of customization or low latency performance across multiple regions. Single server deployments can be scaled down to only cost a few dollars per month. Workloads could include servers used for development and enterprise applications.
-
 **Flexible server** is suitable for production workloads that require zone resilient HA, predictable performance, maximum control, custom maintenance window, cost optimization controls and simplified developer experience. Ideal for workloads that don't need full compute capacity continuously.
+
+**Single Server** deployments are suitable for most applications that don’t require high levels of customization or low latency performance across multiple regions. Single server deployments can be scaled down to only cost a few dollars per month. Workloads could include servers used for development and enterprise applications.
 
 :::row:::
 :::column span="3":::
