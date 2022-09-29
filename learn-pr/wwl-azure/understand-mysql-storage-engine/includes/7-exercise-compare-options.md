@@ -1,6 +1,6 @@
 In these lab exercises you will compare two different MySQL storage engines:
 
-- InnoDb
+- InnoDB
 - Memory
 
 > [!IMPORTANT]
@@ -8,10 +8,13 @@ In these lab exercises you will compare two different MySQL storage engines:
 
 To complete these exercises, you must have:
 
-- Created a resource group (see Module 1, Unit 5)
-- Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5)
-- Downloaded and installed MySQL Workbench (see Module 2, Unit 5)
+- Created a resource group (see Module 1, Unit 5).
+- Created an Azure Database for MySQL Flexible Server (see Module 1, Unit 5).
+- Downloaded and installed MySQL Workbench (see Module 2, Unit 5).
 - Downloaded the scripts for this exercise from [GitHub](https://github.com/MicrosoftLearning/mslearn-mysql/tree/main/labfiles).
+
+> [!TIP]
+> If you stopped you Azure Database for MySQL server after completing the last lab, restart it now.
 
 ## Create a database
 
