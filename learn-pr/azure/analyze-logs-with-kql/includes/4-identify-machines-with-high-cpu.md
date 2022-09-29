@@ -58,7 +58,7 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
 
 1. Retrieve all logs generated in the past day that reported the `% Processor Time` performance counter:
     
-    <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAAz2PsWrDQBBE%252B3zFIDA4lfEHOE0gIU2sQr1ZSyPpgnQn760wAhf5Df%252BevyRnBQ62mp19M1tSW2C3Q9UTJueBWML8%252BL0rcZmpi%252FPdyw3Xnkmo3MhPeqoYG7xBurDdN68Q3%252BB4%252FmFt3zIShwOKUkPNGIMW6%252FY9zN6oeb1BNqzUf9eXjya%252BZradqmAyFM9%252BH25IgIg2XdCbOkZ0uYvzsPTAJNHQyALlsOoW0iQEphxnKQ4jJc7KMZHiH5uG0UEDAQAA" target="_blank">Click to run query in Log Analytics demo environment</a>    
+    <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAAz2PsWrDQBBE%252B3zFIDA4lfEHOE0gIU2sQr1ZSyPpgnQn760wAhf5Df%252BevyRnBQ62mp19M1tSW2C3Q9UTJueBWML8%252BL0rcZmpi%252FPdyw3Xnkmo3MhPeqoYG7xBurDdN68Q3%252BB4%252FmFt3zIShwOKUkPNGIMW6%252FY9zN6oeb1BNqzUf9eXjya%252BZradqmAyFM9%252BH25IgIg2XdCbOkZ0uYvzsPTAJNHQyALlsOoW0iQEphxnKQ4jJc7KMZHiH5uG0UEDAQAA" target="_blank">Click to run query in Log Analytics demo environment.</a>    
 
     ```kusto     
     Perf  // The table you’re querying
@@ -67,7 +67,7 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
     
     This query retrieves all logs related to total processor time measurements from the past day. 
 
-    :::image type="content" source="../media/kql-log-analytics-perf-1d.png" alt-text="Screenshot showing the results of a query on the Perf table." lightbox="../media/kql-log-analytics-perf-1d.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-table-1d.png" alt-text="Screenshot showing the results of a query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-1d.png":::
 
 1. Find the minimum, maximum and average counter values, and calculate the 90th and 99th percentile counter values for each computer: 
     
