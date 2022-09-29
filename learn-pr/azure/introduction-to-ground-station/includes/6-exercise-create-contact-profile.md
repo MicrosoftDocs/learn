@@ -8,8 +8,6 @@ Just like registering the spacecraft, creating a contact profile is a matter of 
 
 We’ll continue to use [NASA’s AQUA satellite](/azure/orbital/downlink-aqua) to show you how to create a contact profile. If you’re following along in your own account, you’ll need to have an Azure event hub and virtual network established as the endpoint for the data. You can learn how to create an [event hub here](/azure/event-hubs/event-hubs-create) and a [virtual network](/azure/virtual-network/quick-create-portal) here.
 
-Below you’ll see a table where we've gathered all the information needed to create your contact profile. If you’re unfamiliar with a term, look at the descriptions to help build your understanding.
-
 ## Create a Contact Profile
 
 Now that you have the needed information on hand, we’ll walk through how to create a contact profile in the Azure portal.
@@ -50,7 +48,7 @@ Now that you have the needed information on hand, we’ll walk through how to cr
 | **G/T(Gain/Temperature)** | 0 | If you select “downlink”, you'll need to input the G/T in db/K, which measures the quality of an antenna. The higher the G/T number, the better the system. |
 | **Polarization** | RHCP | The geometrical orientation of the oscillations of a transverse wave. Satellite frequencies are polarized so that satellite transponder frequencies can be reused without interfering with one another. For example, if half of a transponder’s signals are beamed to earth in a vertically polarized mode and the other half are beamed to earth in a horizontally polarized mode, then they're 90 degrees out of sync and won't interfere with each other. For visuals and additional information, [see this Wikipedia entry on polarization.](https://en.wikipedia.org/wiki/Polarization_(waves)) |  
 
-6. Once you’ve filled out the link information, select Add Channel and input the pertinent information on the AQUA satellite and the relevant information for your endpoint.
+6. After you’ve filled out the link information, select Add Channel, and then input the following information on the AQUA satellite and the relevant information for your endpoint.
 
 | **Field** | **Information needed** | **Description** |
 |---|---|---|
