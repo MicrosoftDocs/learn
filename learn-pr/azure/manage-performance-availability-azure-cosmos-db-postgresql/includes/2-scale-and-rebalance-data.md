@@ -93,7 +93,7 @@ Once the shards are balanced, the shard balancer will tell you that rebalancing 
 
 The new shards will have the reference and distributed tables as part of rebalancing.
 
-:::image type="complex" source="../media/3-worker-nodes-balanced.png" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables, a local table, and three worker nodes.":::
+:::image type="complex" source="../media/coordinator-workers-with-arrows-with-tables.svg" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables, a local table, and three worker nodes.":::
     Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains three worker nodes, each with distributed shards and reference tables. There are arrows coming from the coordinator and pointed at each of the worker nodes.
 :::image-end:::
 
