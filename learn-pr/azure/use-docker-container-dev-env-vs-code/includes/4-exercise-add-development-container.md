@@ -6,7 +6,7 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
 
 1. Return to VS Code and the project you cloned earlier
 1. Press <kbd>F1</kbd> to open the Command Palette.
-1. Type **add dev container** and select **Remote-Containers: Add Development Container Configuration Files**.
+1. Type **add dev container** and select **Dev Containers: Add Development Container Configuration Files**.
 1. Select the following options:
 
    | Option                                      | Value       |
@@ -16,7 +16,7 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
    | Install Node.js                             | none        |
    | Add Features                                | Select "OK" |
 
-A Remote Container configuration will be added to your project. Visual Studio Code will notify you that you can now open the project in a container. For now, dismiss this notification.
+A Dev Container configuration will be added to your project. Visual Studio Code will notify you that you can now open the project in a container. For now, dismiss this notification.
 
 ## Inspect configuration files
 
@@ -27,7 +27,7 @@ A Remote Container configuration will be added to your project. Visual Studio Co
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **reopen in container**.
-1. Select **Remote Containers: Reopen in Container** from the list of available options.
+1. Select **Dev Containers: Reopen in Container** from the list of available options.
 
 The container will begin building. The initial build might take a few minutes because a new image has to be pulled down and built on your machine. After the container has been built the first time, later builds will be much faster.
 
