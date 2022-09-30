@@ -18,7 +18,7 @@ abstract: |
   - Visualize results in Power BI
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/azure-stream-analytics-ingest-data-streams.svg
+iconUrl: /training/achievements/azure-stream-analytics-ingest-data-streams.svg
 levels:
 - intermediate
 roles:

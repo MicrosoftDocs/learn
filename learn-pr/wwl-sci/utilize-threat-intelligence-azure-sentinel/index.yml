@@ -16,7 +16,7 @@ abstract: |
   - Use KQL to access threat indicators in Microsoft Sentinel
 prerequisites: |
   Basic knowledge of security operational concepts such as monitoring, logging, and alerting.
-iconUrl: /learn/achievements/utilize-threat-intelligence-in-azure-sentinel.svg
+iconUrl: /training/achievements/utilize-threat-intelligence-in-azure-sentinel.svg
 levels:
 - intermediate
 roles:

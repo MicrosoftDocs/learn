@@ -39,7 +39,7 @@ Review this checklist in order to prepare for an Azure Stack Hub update. This un
     Optional: Configure automatic log collection.
   :::column-end:::
   :::column:::
-    It is recommended that you configure automatic log collection on your Azure Stack Hub environment to streamline the process of collecting system logs if you need to open a support ticket. To configure automatic log collection, see the instructions in [Send logs proactively](https://docs.microsoft.com/azure-stack/operator/diagnostic-log-collection?view=azs-2102#:~:text=You%20can%20share%20diagnostic%20logs,your%20Azure%20Stack%20Hub%20instance.).
+    It is recommended that you configure automatic log collection on your Azure Stack Hub environment to streamline the process of collecting system logs if you need to open a support ticket. To configure automatic log collection, see the instructions in [Send logs proactively](/azure-stack/operator/diagnostic-log-collection?view=azs-2102#:~:text=You%20can%20share%20diagnostic%20logs,your%20Azure%20Stack%20Hub%20instance.).
   :::column-end:::
 :::row-end:::
 :::row:::

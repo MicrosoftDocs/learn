@@ -186,6 +186,6 @@ Identify the subtasks of *Backup and restore your Azure SQL Database*
 
 Supporting documentation:
 
-https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups
+https://learn.microsoft.com/azure/sql-database/sql-database-recovery-using-backups
 
-https://docs.microsoft.com/azure/sql-database/sql-database-long-term-backup-retention-configure
+https://learn.microsoft.com/azure/sql-database/sql-database-long-term-backup-retention-configure

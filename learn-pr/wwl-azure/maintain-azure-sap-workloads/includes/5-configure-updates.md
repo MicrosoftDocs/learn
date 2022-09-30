@@ -1,4 +1,4 @@
-You can use the Update Management solution to manage updates and patches for your virtual machines. For details, refer to [https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview](https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview) 
+You can use the Update Management solution to manage updates and patches for your virtual machines. For details, refer to [Update Management overview](/azure/automation/update-management/update-mgmt-overview) 
 
 ## Update the monitoring configuration for SAP
 
@@ -19,4 +19,3 @@ To update monitoring settings, simply redeploy the Azure Enhanced Monitoring Ext
 ## SAP HANA on Azure (Large Instances)
 
 As mentioned earlier in the course, HANA Large Instances do not have direct internet connectivity. This limitation will prevent you from registering the operating system instances directly with the OS vendor. As a workaround, you need to use SUSE Linux Enterprise Server Subscription Management Tool or Red Hat Enterprise Linux Subscription Manager, depending on the OS of the HANA Large Instance.
-

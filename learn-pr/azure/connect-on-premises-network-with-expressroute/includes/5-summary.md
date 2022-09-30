@@ -4,7 +4,7 @@ In particular, you saw the benefits and use cases for the ExpressRoute service. 
 
 ## Learn more
 
-For more information on ExpressRoute, see the following articles on Microsoft Docs:
+For more information on ExpressRoute, see:
 
 - [Azure ExpressRoute for Office 365](/office365/enterprise/azure-expressroute)
 - [ExpressRoute routing requirements](/azure/expressroute/expressroute-routing)

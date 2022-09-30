@@ -108,9 +108,7 @@ Every pipeline has at least one stage. Use multiple stages to organize the
 pipeline into major divisions and mark the points in your pipeline where
 you can pause and perform checks.
 
-Pipelines can be as simple or as complex as desired. There are some
-excellent tutorials on pipeline construction and use on Microsoft Learn as
-part of the Build applications with Azure DevOps learning path.
+Pipelines can be as simple or as complex as desired. There are excellent tutorials on pipeline construction and use in the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
 ## Environment traceability
 

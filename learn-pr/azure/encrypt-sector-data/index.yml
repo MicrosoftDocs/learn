@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic understanding of data residency and encryption. 
   - Experience in network administration or cloud solutions is preferred. 
-iconUrl: /learn/achievements/encrypt-sector-data.svg
+iconUrl: /training/achievements/encrypt-sector-data.svg
 levels: 
 - intermediate
 roles: 

@@ -103,15 +103,15 @@ Identify the subtasks of *Expose hybrid services securely with Azure Relay*
 
     You can use a virtual private network or Azure ExpressRoute to create secure connections between cloud-hosted components and on-premises systems. However, these methods impose an extra layer of complexity and more administrative load on your team. Azure Relay is simple to configure and secure.
 
-    *[(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+    *[(Summary guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
 
 ## Notes
 
 You may need to use an Azure VNet that emulates a corporate network in order to do so. Focus should be on hybrid connections as opposed to WCF, though you can mention WCF in the learning content for awareness.
 
-https://docs.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-protocol
+https://learn.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-protocol
 
-https://docs.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-http-requests-dotnet-get-started
+https://learn.microsoft.com/azure/service-bus-relay/relay-hybrid-connections-http-requests-dotnet-get-started
 
 Other useful links:
 

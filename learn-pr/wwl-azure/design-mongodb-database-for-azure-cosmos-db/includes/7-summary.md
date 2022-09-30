@@ -14,4 +14,4 @@ For more information about the subjects discussed in this module, see:
 - [Azure #CosmosDB extends support for MongoDB aggregation pipeline, unique indexes, and more](https://azure.microsoft.com/blog/azure-cosmosdb-extends-support-for-mongodb-aggregation-pipeline-unique-indexes-and-more/)
 - [Aggregation Pipeline](https://www.mongodb.com/docs/v4.2/core/aggregation-pipeline/)
 - [Partitioning and horizontal scaling in Azure Cosmos DB](/azure/cosmos-db/partitioning-overview)
-- [Choose a partition key](/learn/modules/implement-non-relational-data-model/6-choose-partition-key)
+- [Choose a partition key](/training/modules/implement-non-relational-data-model/6-choose-partition-key)

@@ -15,13 +15,14 @@
 
 ## Prerequisites
 
-- A basic understanding of containerization (https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/). 
- 
-- A basic understanding of Azure Kubernetes Service (https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-kubernetes-service/).
+- A basic understanding of [containerization](/training/modules/intro-to-docker-containers/).
+
+- A basic understanding of [Azure Kubernetes Service](/training/modules/intro-to-azure-kubernetes-service/).
 
 ## Summary
 
 In this module, you learned to:
+
 - Identify when you need to upgrade your Azure Kubernetes cluster components to the latest version that is supported by Kubernetes 
 - Understand which Kubernetes versions Azure Kubernetes Services (AKS) supports and where to find them
 - Upgrade your Azure Kubernetes Service clusters to ensure your cluster components have the latest version updates 
@@ -29,10 +30,11 @@ In this module, you learned to:
 
 ## Learning objectives
 
-Upon completing this module, you should be able to: 
- - Understand what Kubernetes versions are supported by Azure Kubernetes Services (AKS) [https://docs.microsoft.com/en-us/azure/aks/supported-kubernetes-versions]
- - Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version
- - Understand how to adopt a Blue/Green deployment  to upgrade your Azure Kubernetes Services clusters in a production environment
+Upon completing this module, you should be able to:
+
+- Understand what Kubernetes versions are supported by [Azure Kubernetes Services (AKS)](/azure/aks/supported-kubernetes-versions)
+- Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version
+- Understand how to adopt a Blue/Green deployment  to upgrade your Azure Kubernetes Services clusters in a production environment
 
 ## Chunk your content into subtasks
 
@@ -87,24 +89,24 @@ Identify the subtasks of **Understand, upgrade and stay up to date with the late
 
 1. **What are Azure Kubernetes Service (AKS) versions?**
 
-    Help learners understand which Kubernetes versions Azure Kubernetes Service (AKS) supports: 
+    Help learners understand which Kubernetes versions Azure Kubernetes Service (AKS) supports:
 
-    - What is the "N-2" rule? [https://docs.microsoft.com/en-us/azure/aks/supported-kubernetes-versions#kubernetes-version-support-policy]
-    - What is the release and deprecation process? [https://docs.microsoft.com/en-us/azure/aks/supported-kubernetes-versions#release-and-deprecation-process]
-    - What are the updates and changes made to the latest version? [https://github.com/Azure/AKS/releases]
-    - How to test AKS version upgrades in production?
-        - Blue/Green Deployment with Azure Front Door [https://techcommunity.microsoft.com/t5/azure-architecture-blog/blue-green-deployment-with-azure-front-door/ba-p/1609178#:~:text=%20Blue%2FGreen%20Deployment%20with%20Azure%20Front%20Door%20, relatively%20unimportant.%20What%20you%20select%20here...%20More%20]
+    - What is the ["N-2" rule](/azure/aks/supported-kubernetes-versions#kubernetes-version-support-policy)?
+    - What is the [release and deprecation process](/azure/aks/supported-kubernetes-versions#release-and-deprecation-process)?
+    - What are the [updates and changes made](https://github.com/Azure/AKS/releases) to the latest version?
+    - How can AKS version upgrades in production be tested?
+      - [Blue/Green Deployment with Azure Front Door](https://techcommunity.microsoft.com/t5/azure-architecture-blog/blue-green-deployment-with-azure-front-door/ba-p/1609178)
 
 1. **Exercise - Create your Azure Kubernetes Service cluster**
-    
+
     1. First check for any existing resource group, e.g.,  az group list -o table 
         1. If resource group exists, create a variable to store the resource group name for example, rg={resource-group-name} and set a location variable to "westus"
         1. If no resource group exists, create one for example, az group create -n aks-rg -l $location (*which is set to "westus")
     1. Next, check for aks versions that are currently supported, e.g.,  az aks get-versions -l $location -o table
     1. Create an AKS cluster using the oldest version available e.g. az aks create -n myakscluster -g $rg --kubernetes-version $kv --generate-ssh-keys (*remember to set a variable, kv to the oldest kubernetes version)
-        1. Requirements: 
-            1. User must have at least "Azure Kubernetes Service Contributor Role" (https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#azure-kubernetes-service-contributor-role)
-            1. Subscription must be registered to use "Microsoft.ContainerService" for example. 
+        1. Requirements:
+            1. User must have at least [Azure Kubernetes Service Contributor Role](/azure/role-based-access-control/built-in-roles#azure-kubernetes-service-contributor-role)
+            1. Subscription must be registered to use "Microsoft.ContainerService" for example.
                 1. az provider register --namespace Microsoft.ContainerService (but need rights on the subscription)
 
     **Knowledge check**
@@ -168,12 +170,11 @@ Identify the subtasks of **Understand, upgrade and stay up to date with the late
 
 **You have now successfully resolved that concerning email about your Azure Kubernetes Service clusters going out of support by upgrading your Kubernetes components in your Azure Kubernetes Service clusters to the latest supported Kubernetes versions.**
 
-Azure Kubernetes Services depends on Kubernetes. This means when Kubernetes releases a new version, Azure Kubernetes Service will also follow suit. These new releases can range from bug fixes  are to ensure your Kubernetes cluster have the latest security patches and updates for your core Kubernetes components such as kubectl, kube-apiserver, kubelet, kube-scheduler, kube-proxy and so on. 
+Azure Kubernetes Services depends on Kubernetes. This means when Kubernetes releases a new version, Azure Kubernetes Service will also follow suit. These new releases can range from bug fixes  are to ensure your Kubernetes cluster have the latest security patches and updates for your core Kubernetes components such as kubectl, kube-apiserver, kubelet, kube-scheduler, kube-proxy, and so on.
 
-To make sure your cluster components are up to date with the latest version releases, you have the option to manually upgrade your Azure Kubernetes Service clusters which we practiced doing during the exercise There is also the option to configure auto-upgrade for your Azure Kubernetes Services cluster upgrades. To find out more about auto-upgrade, check out the Microsoft Docs on 'Set auto-upgrade channel [https://docs.microsoft.com/en-us/azure/aks/upgrade-cluster#set-auto-upgrade-channel].
+To make sure your cluster components are up to date with the latest version releases, you have the option to manually upgrade your Azure Kubernetes Service clusters which we practiced doing during the exercise There is also the option to configure auto-upgrade for your Azure Kubernetes Services cluster upgrades. To learn more about auto-upgrade, see [Set auto-upgrade channel](/azure/aks/upgrade-cluster#set-auto-upgrade-channel).
 
-Finally, setting up a Blue/Green deployment for your Azure Kubernetes Service clusters ensures a smooth transition from your previous clusters to your upgraded clusters and allows for you to easily roll back should you encounter any issues during or after the rollout of the upgraded clusters. 
-
+Finally, setting up a Blue/Green deployment for your Azure Kubernetes Service clusters ensures a smooth transition from your previous clusters to your upgraded clusters and allows for you to easily roll back should you encounter any issues during or after the rollout of the upgraded clusters.
 
 ## Notes
 

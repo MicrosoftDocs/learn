@@ -17,7 +17,7 @@ abstract: |
   - Learn to work with Azure ExpressRoute
 prerequisites: |
     [!include[](includes/prerequisites.md)]
-iconUrl: /learn/achievements/configure-network-for-azure-virtual-machines.svg
+iconUrl: /training/achievements/configure-network-for-azure-virtual-machines.svg
 levels:
 - intermediate
 roles:

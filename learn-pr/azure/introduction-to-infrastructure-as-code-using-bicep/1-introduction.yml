@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-infrastructure-code-using-bicep.introduction 
-title: Introduction  
+uid: learn.azure.introduction-infrastructure-code-using-bicep.introduction
+title: Introduction
 metadata:
-  unitType: introduction  
+  unitType: introduction
   title: Introduction
   description: Describe the benefits of using infrastructure as code, Azure Resource Manager, and Bicep to quickly and confidently scale your cloud deployments.
-  ms.date: 03/12/2021  
+  ms.date: 08/26/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?

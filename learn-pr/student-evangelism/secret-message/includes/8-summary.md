@@ -1,6 +1,6 @@
 With your <b>decrypt.py</b> file, you can now decode any secret message that uses the English alphabet. Your decoded messages will be in all lowercase, but that shouldn't take away from the meaning behind them.
 
-Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/people/audrey-stjohn?azure-portal=true) for the inspiration for this lesson! 
+Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/directory/faculty-staff/audrey-st-john) for the inspiration for this lesson! 
 
 > [!TIP]
 > Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of a similar program](https://youtu.be/VH_mU42lQkQ?azure-portal=true) in a new tab.
@@ -20,6 +20,6 @@ Now that you've decoded your first secret message, the natural next step is to d
 
 If Python has piqued your interest, check out the rest of the [Python for beginners](../../../paths/beginner-python/index.yml?azure-portal=true) learning path.
 
-After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](/learn/roles/student?azure-portal=true). 
+After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](/training/roles/student?azure-portal=true). 
 
-From [tracking global air quality with Azure Maps](/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping farmers protect their crops by using text weather alerts from Azure Functions](/learn/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!
+From [tracking global air quality with Azure Maps](/training/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping farmers protect their crops by using text weather alerts from Azure Functions](/training/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!

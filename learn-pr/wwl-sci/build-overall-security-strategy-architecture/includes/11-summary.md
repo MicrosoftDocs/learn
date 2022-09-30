@@ -1,5 +1,3 @@
-### Summary and Resources
-
 In this module, you've learned how to build an overall security
 strategy and architecture with zero trust in mind. You have learned
 different strategies for designing, defining, and recommending an
@@ -21,7 +19,7 @@ able to:
 
 -   Understand security for protocols
 
-#### Learn more with Azure documentation
+## Learn more with Azure documentation
 
 -   [Microsoft Cybersecurity Reference Architectures - Security
     documentation](https://docs.microsoft.com/security/cybersecurity-reference-architecture/mcra)
@@ -39,10 +37,10 @@ able to:
 -   [Recommended policies for Azure services - Azure Policy](/azure/governance/policy/concepts/recommended-policies)
 
 
-#### Learn more with self-paced training
+## Learn more with self-paced training
 
--   [Build a cloud governance strategy on Azure - Learn](/learn/modules/build-cloud-governance-strategy-azure/)
+-   [Build a cloud governance strategy on Azure](/training/modules/build-cloud-governance-strategy-azure/)
 
--   [Describe core Azure architectural components - Learn](/learn/modules/azure-architecture-fundamentals/)
+-   [Describe core Azure architectural components](/training/modules/azure-architecture-fundamentals/)
 
--   [Microsoft Cloud Adoption Framework for Azure - Learn](/learn/modules/microsoft-cloud-adoption-framework-for-azure/)
+-   [Microsoft Cloud Adoption Framework for Azure](/training/modules/microsoft-cloud-adoption-framework-for-azure/)

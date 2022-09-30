@@ -21,7 +21,7 @@ The perimeter network and internal zone have private IP addresses. In the perime
 
 - 10.0.0.0 to 10.255.255.255
 - 172.16.0.0 to 172.31.255.255
-- 192.168.0.1 to 192.168.255.255
+- 192.168.0.0 to 192.168.255.255
 
 The administrator can add or remove on-premises subnets to accommodate network devices and services. The number of subnets and IP addresses you can have in your on-premises network depends on the Classless Inter-Domain Routing (CIDR) for the IP address block.
 

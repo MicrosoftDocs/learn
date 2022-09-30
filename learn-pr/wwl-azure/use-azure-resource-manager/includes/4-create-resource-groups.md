@@ -2,7 +2,7 @@ Resources can be deployed to any new or existing resource group. Deployment of r
 
 ## Considerations
 
-Resource Groups are at their simplest a logical collection of resources. There are a couple of small rules for resource groups.
+Resource Groups are at their simplest a logical collection of resources. There are a few rules for resource groups.
 
  -  Resources can only exist in one resource group.
  -  Resource Groups cannot be renamed.

@@ -4,7 +4,7 @@ When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response
 
 The `Get-Member` cmdlet is meant to be _piped_ on top of the command you run so that you can filter the output. A typical command-line invocation of `Get-Member` might look like the following example:
 
-```bash
+```powershell
 Get-Process -Name 'name-of-process' | Get-Member
 ```
 
@@ -46,13 +46,13 @@ Take a look at a `Get-Member` response that includes many columns. By introducin
 
 When you use the `Select-Object` command in the context of `Select-Object Name, MemberType`, you specify only the columns you want. In this case, the columns are `Name` and `MemberType`. The command line would look like this:
 
-```bash
+```powershell
 Get-Process -Name 'name-of-process' | Get-Member | Select-Object Name, MemberType
 ```
 
 This filtering pattern returns an output that includes fewer columns. Here's an example of the result:
 
-```powershell
+```output
 Name                           MemberType
 ----                           ----------
 Handles                     AliasProperty

@@ -37,7 +37,7 @@ prerequisites: |
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
   - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines&azure-portal=true).
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
-iconUrl: /learn/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.svg
+iconUrl: /training/achievements/bicep/manage-end-end-deployment-scenarios-using-bicep-azure-pipelines.svg
 levels:
   - advanced
 roles:

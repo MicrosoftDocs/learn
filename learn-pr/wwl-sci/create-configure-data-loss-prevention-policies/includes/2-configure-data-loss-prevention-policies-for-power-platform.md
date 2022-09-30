@@ -1,5 +1,6 @@
 While DLP policies in the Microsoft Purview compliance portal protect data in Microsoft 365 services from being shared, DLP policies in Power Platform are used to restrict the communication between connectors. A connector in Power Platform is a wrapper or an API that allows predefined triggers and actions to access the data behind it.
 
+
 There are three groups you can use to categorize your connectors:
 
 | **Category**| **Actions**|

@@ -6,7 +6,7 @@ You decide to use role-based access control. You need to ensure assets are prote
 
 ## Skills measured
 
-Role- based access control is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Role- based access control is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Manage Azure identities and governance (15-20%)
 

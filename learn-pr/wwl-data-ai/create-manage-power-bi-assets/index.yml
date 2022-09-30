@@ -18,7 +18,7 @@ abstract: |
   * Use XMLA endpoint to connect datasets.
 prerequisites: |
   Intermediate experience with Power BI Desktop application and service.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

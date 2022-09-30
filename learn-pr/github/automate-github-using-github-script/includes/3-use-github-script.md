@@ -78,11 +78,11 @@ jobs:
 ```
 Each step includes a descriptive `name` element that also helps you track it from the Actions tab. 
 
-The `Add issue to project board` step also includes an `if` statement that specifies the issue should only be added to the project board if it is labeled `bug`.
+The `Add issue to project board` step also includes an `if` statement that specifies the issue should only be added to the project board if it's labeled `bug`.
 
-## Use the Nod.js environment
+## Use the Node.js environment
 
-The GitHub Script also grants you access to a full Node.js environment. While the GitHub Script isn't recommender for writing the logic for complex actions, you can use it to add additional functionality to the octo/rest.js API. 
+The GitHub Script also grants you access to a full Node.js environment. While the GitHub Script isn't recommender for writing the logic for complex actions, you can use it to add more functionality to the octo/rest.js API. 
 
 One example would be to use the Node.js to display a contribution guide whenever an issue is opened. You can use the Node.js File System to read a file and use it as the body of the issue comment. To access files within the repository, include the `actions/checkout` action as the first step in the workflow. 
 

@@ -34,7 +34,7 @@ Azure Cognitive Services are a set of high-level APIs you can use to quickly add
 
 ### Azure Functions
 
-Azure Functions lets you host code snippets that can respond to events or HTTP requests. Azure automatically handles scaling issues, and you only pay for what you use. As with anything on Microsoft Learn, we'll cover any costs for you in the learning environment.
+Azure Functions lets you host code snippets that can respond to events or HTTP requests. Azure automatically handles scaling issues, and you only pay for what you use. We'll cover any costs for you in the Microsoft Learn environment.
 
 > [!NOTE]
 > All code for The Mojifier is available on [GitHub](https://github.com/MicrosoftDocs/mslearn-the-mojifier?azure-portal=true).

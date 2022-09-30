@@ -1,10 +1,10 @@
-A code block is one or more C# statements that define an execution path.  Typically the statements outside of the code block affect when, if and how often that block of code is executed at run time.
+A code block is one or more C# statements that define an execution path. Typically, the statements outside of the code block affect when, if, and how often that block of code is executed at run time.
 
 Code blocks also affect variable scope, and the following exercise will help you understand how this affects your code.
 
 ## Code blocks impact the scope of a variable declaration
 
-*Variable scope* is the visibility of the variable to the other code in your application.  A locally scoped variable is only accessible inside of the code block in which it's defined.  If you attempt to access the variable outside of the code block, you'll get a compiler error.
+*Variable scope* is the visibility of the variable to the other code in your application. A locally scoped variable is only accessible inside of the code block in which it's defined. If you attempt to access the variable outside of the code block, you'll get a compiler error.
 
 ### Step 1 - Create a variable inside of a code block
 
@@ -18,13 +18,14 @@ if (flag)
     Console.WriteLine($"Inside of code block: {value}");
 }
 ```
-Now, run the code.  You should see the following output.
+
+Now, run the code.  You should get the following output.
 
 ```output
-Inside of the code block: 10
+Inside of code block: 10
 ```
 
-This is as expected.  But what if we want to access the variable `value` outside of if statement's code block?
+This is as expected.  But what if we want to access the variable `value` outside of the `if` statement's code block?
 
 ### Step 2 - Attempt to access the variable outside of the code block in which it was defined
 
@@ -45,19 +46,20 @@ if (flag)
 }
 Console.WriteLine($"Outside of code block: {value}");
 ```
+
 This time, when you attempt to run the application, you'll get a compilation error:
 
 ```output
 error CS0103: The name 'value' does not exist in the current context
 ```
 
-The problem is that a variable defined in a code block is only accessible (or rather, visible) within that code block.  The variable isn't accessible outside of the code block in which it's defined.
+The problem is that a variable defined in a code block is only accessible (or rather, visible) within that code block. The variable isn't accessible outside of the code block in which it's defined.
 
-A *local variable* is a variable defined in a method code block.  We'll talk about method code blocks in the next unit.
+A *local variable* is a variable defined in a method code block. We'll talk about method code blocks in the next unit.
 
 ### Step 3 - Move the variable outside
 
-To access a variable from both an outer and inner code block (like the `if` statement's code block), you'll need to move the variable declaration outside of the if statement's code block so that all the code has visibility to that variable.
+To access a variable from both an outer and inner code block (like the `if` statement's code block), you'll need to move the variable declaration outside of the `if` statement's code block so that all the code has visibility to that variable.
 
 Modify your code so that it matches the following code:
 
@@ -79,13 +81,13 @@ This time, when you attempt to run the application, you'll get a compilation err
 error CS0165: Use of unassigned local variable 'value'
 ```
 
-This is a simple problem to fix, however it gives us another insight into working with code blocks. 
+This is a simple problem to fix; however, it gives us another insight into working with code blocks.
 
-If the line of code `value = 10;` were outside of the if statement's code block, the compiler would compile our application.  However, since that line of code is inside the if statement's code block, there's a possibility that the variable will never be assigned a value, which the compiler won't allow.
+If the line of code `value = 10;` was outside of the `if` statement's code block, the compiler would compile our application. However, since that line of code is inside the `if` statement's code block, there's a possibility that the variable will never be assigned a value, which the compiler won't allow.
 
 ### Step 4 - Initialize the variable with a value
 
-To fix the "unassigned local variable" issue, we need to initialize the variable with a value.  Update variable declaration to include an initialization.
+To fix the "unassigned local variable" issue, we need to initialize the variable with a value. Update the variable declaration to include an initialization.
 
 ```csharp
 int value = 0;
@@ -105,7 +107,7 @@ if (flag)
 Console.WriteLine("Outside of code block: " + value);
 ```
 
-Now, when you run the application, you should see the following output.
+Now, when you run the application, you should get the following output.
 
 ```output
 Inside of code block: 10

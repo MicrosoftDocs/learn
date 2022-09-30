@@ -1,20 +1,20 @@
-﻿Sooner or later, you'll want to update to a new version of a library. Maybe a function is marked as deprecated. Or maybe there's a new feature in a later version of a package you're using. 
+﻿Sooner or later, you'll want to update to a new version of a library. Maybe a function is marked as deprecated, or maybe there's a new feature in a later version of a package you're using. 
 
 Take these considerations into account before you try to update a library:
 
 - **The type of update**. What type of update is available? Is it a small bug fix? Is it adding a new feature that you need? Will it break your code? You can communicate the type of update by using a system called *semantic versioning*. The way the version number of the library is expressed communicates to developers the type of update they're dealing with.
-- **Whether the project is configured correctly**. You can configure your .NET project so that you get only the types of updates you want. You'll perform an update only if a specific type of update is available. We recommend this approach because you don't risk running into surprises.
+- **Whether the project is configured correctly**. You can configure your .NET project so that you get only the types of updates you want. You'll perform an update only if a specific type of update is available. We recommend this approach, because you don't risk running into surprises.
 - **Security problems**. Managing your project dependencies over time involves being aware of problems that might happen. Problems arise as vulnerabilities are detected, for example. Ideally, patches will be released that you can download. The .NET Core tool helps you run an *audit* on your libraries to find out if you have packages that should be updated. It also helps you take the appropriate action to fix a problem.
 
 ## Use semantic versioning
 
-There's an industry standard called *semantic versioning*. Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring that a package has a version number and that the version number is divided into these sections:
+There's an industry standard called *semantic versioning*. Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring that a package has a version number, and that the version number is divided into these sections:
 
 - **Major version**. The leftmost number. For example, it's the 1 in 1.0.0. A change to this number means that you can expect breaking changes in code. You might need to rewrite part of your code.
 - **Minor version**. The middle number. For example, it's the 2 in 1.2.0. A change to this number means that features have been added. Your code should still work. It's generally safe to accept the update.
 - **Patch version**. The rightmost number. For example, it's the 3 in 1.2.3. A change to this number means that a change has been applied that fixes something in the code that should have worked. It should be safe to accept the update.
 
-This table illustrates how the version number changes for each version type:
+This table illustrates how the version-number changes for each version type:
 
 |Type              | What happens          |
 |------------------|----------------------|
@@ -22,7 +22,7 @@ This table illustrates how the version number changes for each version type:
 |Minor version     | 1.1.1 changes to 1.2.0 |
 |Patch version     | 1.0.1 changes to 1.0.2 |
 
-Many companies and developers have adopted this system. If you intend to publish packages and push them to the NuGet registry, you should follow semantic versioning. It's expected. Even if you only download packages from the NuGet registry, you can expect these packages to follow semantic versioning.
+Many companies and developers have adopted this system. If you intend to publish packages and push them to the NuGet registry, you should follow semantic versioning; it's expected. Even if you only download packages from the NuGet registry, you can expect these packages to follow semantic versioning.
 
 Changes to a package can introduce risk, including the risk that a bug might harm your business. Some risks might require you to rewrite part of your code. Rewriting code takes time and costs money.  
 
@@ -105,7 +105,7 @@ Here are the meanings of the names of the columns in the output:
 - `Resolved`. The actual version that has been downloaded for the project that matches the specified version.
 - `Latest`. The latest version available for update from NuGet.
 
-The recommended workflow is to run these commands, in this order:
+The recommended workflow is to run the following commands, in this order:
 
 1. Run `dotnet list package --outdated`. This command lists all the outdated packages. It provides information in the `Requested`, `Resolved`, and `Latest` columns.
 1. Run `dotnet add package <package name>`. If you run this command, it will try to update to the latest version. Optionally, you can pass in `--version=<version number/range>`.

@@ -33,7 +33,7 @@ prerequisites: |
   - Know what the different types of virtualization are
   - Understand CPU virtualization
   - Understand memory virtualization
-iconUrl: /learn/achievements/cmu-cloud-developer/resource-virtualization-input-output.svg
+iconUrl: /training/achievements/cmu-cloud-developer/resource-virtualization-input-output.svg
 hidden: true
 levels:
 - beginner

@@ -218,7 +218,7 @@ Next, create a resource group for each environment. This process also grants the
 1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure CLI commands in the Visual Studio Code terminal:
 
    ```bash
-   testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus --query id --output tsv)
+   testResourceGroupResourceId=$(az group create --name ToyWebsiteTest --location westus3 --query id --output tsv)
 
    az ad sp create --id $testApplicationRegistrationObjectId
    az role assignment create \
@@ -230,7 +230,7 @@ Next, create a resource group for each environment. This process also grants the
 1. Run a similar process to create the production environment's resource group:
 
    ```bash
-   productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location westus --query id --output tsv)
+   productionResourceGroupResourceId=$(az group create --name ToyWebsiteProduction --location westus3 --query id --output tsv)
 
    az ad sp create --id $productionApplicationRegistrationObjectId
    az role assignment create \
@@ -246,7 +246,7 @@ Next, create a resource group for each environment. This process also grants the
 1. To create the test environment's resource group and grant the workload identity access to it, run the following Azure PowerShell commands in the Visual Studio Code terminal:
 
    ```azurepowershell
-   $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus
+   $testResourceGroup = New-AzResourceGroup -Name ToyWebsiteTest -Location westus3
 
    New-AzADServicePrincipal -AppId $($testApplicationRegistration.AppId)
    New-AzRoleAssignment `
@@ -258,7 +258,7 @@ Next, create a resource group for each environment. This process also grants the
 1. Run a similar process to create the production environment's resource group:
 
    ```azurepowershell
-   $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location westus
+   $productionResourceGroup = New-AzResourceGroup -Name ToyWebsiteProduction -Location westus3
 
    New-AzADServicePrincipal -AppId $($productionApplicationRegistration.AppId)
    New-AzRoleAssignment `

@@ -15,14 +15,14 @@ abstract: |
   * Describe asset classification in Microsoft Purview.
 prerequisites: |
   *   Experience using the Azure data ecosystem.
-iconUrl: /learn/achievements/3-catalog-data-artifacts-azure-by-using-azure-purview.svg
+iconUrl: /training/achievements/3-catalog-data-artifacts-azure-by-using-azure-purview.svg
 levels:
 - beginner
 roles:
 - data-analyst
 - data-engineer
 products:
-- azure-purview
+- microsoft-purview
 subjects:
 - data-analytics
 - information-protection-governance

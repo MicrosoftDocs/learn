@@ -3,7 +3,7 @@ uid: learn.wwl.describe-performance-monitoring
 metadata:
   title: Describe performance monitoring
   description: "Describe performance monitoring"
-  ms.date: 04/29/2022
+  ms.date: 09/26/2022
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Ability to use Windows Performance Monitor to monitor system components such as CPU, I/O, network traffic.
-iconUrl: /learn/achievements/describe-performance-monitoring.svg
+iconUrl: /training/achievements/describe-performance-monitoring.svg
 levels:
 - intermediate
 roles:

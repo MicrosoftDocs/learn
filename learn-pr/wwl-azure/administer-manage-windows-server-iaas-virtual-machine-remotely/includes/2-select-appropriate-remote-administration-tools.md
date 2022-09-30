@@ -114,7 +114,7 @@ The following table describes the features of Azure Cloud Shell.
 |Choice of preferred shell experience|You can choose between Bash or PowerShell.|
 |Authenticated and configured Azure workstation|Cloud Shell is managed by Microsoft and provides popular command-line tools and language support. Cloud Shell also securely and automatically authenticates for access to your Azure resources through Azure CLI or Azure PowerShell cmdlets.|
 |Integrated Cloud Shell editor|Cloud Shell provides an integrated graphical text editor.|
-|Integrated with `docs.microsoft.com`|You can use Cloud Shell directly from documentation hosted on `docs.microsoft.com`. Cloud Shell is integrated in Microsoft Learn, Azure PowerShell, and Azure CLI documentation. Select the **Try It** button in a code snippet, and the shell opens for you to run the code in the **Focus mode** window.|
+|Integrated with `learn.microsoft.com`|You can use Cloud Shell directly from documentation hosted on `learn.microsoft.com`. Cloud Shell is integrated in Microsoft Learn, Azure PowerShell, and Azure CLI documentation. Select the **Try It** button in a code snippet, and the shell opens for you to run the code in the **Focus mode** window.|
 |Connect your Azure Files storage|When you run Cloud Shell for the first time, Cloud Shell prompts you to create a resource group, a storage account, and an Azure Files share on your behalf. This is a one-time step and these resources will be automatically attached for all future sessions.|
 
 > [!TIP]

@@ -141,7 +141,7 @@ Network security groups – Used to restrict access to the services in each VNet
 
 Resources:
 
-Reference architecture: <https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/shared-services>
+Reference architecture: <https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/shared-services>
 <https://techcommunity.microsoft.com/t5/Azure/Microsoft-Azure-Hub-Spoke-model-by-Enterprise-Design-1-of-4/td-p/277896>
 <http://francescomolfese.it/en/2018/08/azure-networking-introduzione-al-modello-hub-spoke/>
 <https://azure.microsoft.com/mediahandler/files/resourcefiles/6ce2454f-eead-4b86-9a45-7434f890fea8/Mesh_and_Hub-Spoke_Networking_on_Azure.pdf>

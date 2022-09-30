@@ -1,4 +1,4 @@
 ```csharp
 string connectionString = "<cosmos-connection-string>";
-using CosmosClient client = new (connectionString);
+using CosmosClient client = new(connectionString);
 ```

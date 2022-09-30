@@ -12,7 +12,7 @@ You can use **linters** to check whether your code adheres to quality guidelines
 To check whether the code works as expected, you can create **unit tests**. To easily test specific parts of your code, your scripts should contain **functions**. You can test functions in your scripts by creating test files. A popular tool to test Python code is **Pytest**.
 
 > [!Tip]
-> Learn more about [how to run unit tests with Pytest](/learn/modules/test-python-with-pytest/).
+> Learn more about [how to run unit tests with Pytest](/training/modules/test-python-with-pytest/).
 
 To check your code by using GitHub Actions you'll need to:
 
@@ -20,7 +20,7 @@ To check your code by using GitHub Actions you'll need to:
 - Run the tests by specifying the folders within your repo that need to be checked.
 
 > [!Tip]
-> You can verify code automatically with GitHub Actions, or manually in Visual Studio Code. Learn more about [how to verify your code locally](/learn/modules/source-control-for-machine-learning-projects/5-verify-your-code-locally).
+> You can verify code automatically with GitHub Actions, or manually in Visual Studio Code. Learn more about [how to verify your code locally](/training/modules/source-control-for-machine-learning-projects/5-verify-your-code-locally).
 
 ## Integrate code checks with pull requests.
 

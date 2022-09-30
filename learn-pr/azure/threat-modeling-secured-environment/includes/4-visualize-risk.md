@@ -5,7 +5,7 @@ The next step in the threat modeling process is to create a data-flow diagram.
 To build this diagram, we make the following assumptions:
 
 - **Zero trust** - data-flow begins in a zone that cannot be trusted.
-- **Context level** - data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. Check out the [Provide context with the right depth layer](https://docs.microsoft.com/learn/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](https://docs.microsoft.com/learn/paths/tm-threat-modeling-fundamentals/) learning path to learn more.
+- **Context level** - data-flow diagram begins with a high-level context diagram, followed by more in-depth diagrams as needed. Check out the [Provide context with the right depth layer](/training/modules/tm-provide-context-with-the-right-depth-layer/) module from the [Threat Modeling Security Fundamentals](/training/paths/tm-threat-modeling-fundamentals/) learning path to learn more.
 
 ## Elements
 
@@ -37,7 +37,7 @@ To build this diagram, we make the following assumptions:
 
 
 > [!NOTE]
-> Check out the [Create a threat model using data-flow diagram elements](https://docs.microsoft.com/learn/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/) module from our [Threat Modeling Security Fundamentals](https://docs.microsoft.com/learn/paths/tm-threat-modeling-fundamentals/) learning path for an in-depth review of each element.
+> Check out the [Create a threat model using data-flow diagram elements](/training/modules/tm-create-a-threat-model-using-foundational-data-flow-diagram-elements/) module from our [Threat Modeling Security Fundamentals](/training/paths/tm-threat-modeling-fundamentals/) learning path for an in-depth review of each element.
 
 ## Interactions
 

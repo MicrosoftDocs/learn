@@ -49,7 +49,7 @@ You can generate an IoT Central API token in two ways:
 
 To generate an API token using the REST API, you must already have an **Application administrator** API token or a bearer token to authorize the call.
 
-The [IoT Central REST API](/rest/api/iotcentral/2022-05-31dataplane/api-tokens) lets you:
+The [IoT Central REST API](/rest/api/iotcentral/2022-07-31dataplane/api-tokens) lets you:
 
 - Get the list of API tokens in an application.
 - Create a new API token in the application.

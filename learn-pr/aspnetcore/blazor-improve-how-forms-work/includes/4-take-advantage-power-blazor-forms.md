@@ -99,7 +99,7 @@ Blazor has its own set of components designed to work specifically with the `<Ed
 | `InputText`               | `<input>`                    |
 | `InputTextArea`           | `<textarea>`                 |
 
-Each of these elements has attributes that are recognized by Blazor, such as `DisplayName`, which is used to associate an input element with a label, and `@ref` which you can use to save a reference to a field in a C# variable. Any unrecognized non-Blazor attributes are passed unchanged to the HTML renderer. This means you can utilize HTML input element attributes. For example, you can add the `min`, `max`, and `step` attributes to an `InputNumber` component, and they will function correctly as part of the `<input type="number">` element that is rendered. In the previous example, you could specify the `TemperatureC` input field as:
+Each of these elements have attributes that are recognized by Blazor, such as `DisplayName`, which is used to associate an input element with a label, and `@ref` which you can use to save a reference to a field in a C# variable. Any unrecognized non-Blazor attributes are passed unchanged to the HTML renderer. This means you can utilize HTML input element attributes. For example, you can add the `min`, `max`, and `step` attributes to an `InputNumber` component, and they will function correctly as part of the `<input type="number">` element that is rendered. In the previous example, you could specify the `TemperatureC` input field as:
 
 ```razor
 <EditForm Model=@currentForecast>

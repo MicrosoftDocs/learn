@@ -20,4 +20,4 @@ In this module, you'll:
 - Familiarity with GitHub Actions
 - Familiarity with CI/CD
 
-We recommend that you complete [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) before beginning this module.
+We recommend that you complete [Automate development tasks by using GitHub Actions](/training/modules/github-actions-automate-tasks/) before beginning this module.

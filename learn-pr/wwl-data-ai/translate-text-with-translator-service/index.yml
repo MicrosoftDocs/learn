@@ -20,7 +20,7 @@ prerequisites: |
   Before starting this module, you will need
   - Familiarity with Microsoft Azure and the Azure portal.
   - Experience programming with C# or Python.
-iconUrl: /learn/achievements/translate-text-with-the-translator-service.svg
+iconUrl: /training/achievements/translate-text-with-the-translator-service.svg
 levels:
 - intermediate
 roles:

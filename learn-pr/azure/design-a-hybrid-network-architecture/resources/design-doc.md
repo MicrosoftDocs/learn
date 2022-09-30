@@ -153,9 +153,9 @@ Azure Virtual Network – Used to provide a location for gateways and for resour
 
 Resources:
 
-Reference architecture: <https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/>
+Reference architecture: <https://learn.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/>
 <https://blogs.msdn.microsoft.com/azurecat/2018/11/21/hybrid-cloud-architecture-on-azure-portal/>
-<https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways>
+<https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways>
 
 ## Feedback
 

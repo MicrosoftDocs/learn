@@ -10,7 +10,7 @@ SET CHANGE_TRACKING = ON
 (CHANGE_RETENTION = 2 DAYS, AUTO_CLEANUP = ON)
 ```
 
-You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can’t enable change tracking with SQL Server Management Studio.
+You can also enable change tracking in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box. If a database contains memory optimized tables, you can’t enable change tracking with SQL Server Management Studio.
 
 ### Enabling change tracking on your tables
 
@@ -22,7 +22,7 @@ ENABLE CHANGE_TRACKING
 WITH (TRACK_COLUMNS_UPDATED = ON)
 ```
 
-You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](https://docs.microsoft.com/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
+You can also enable change tracking for a table in SQL Server Management Studio by using the [Database Properties (ChangeTracking Page)](/sql/relational-databases/databases/database-properties-changetracking-page) dialog box.
 
 ### Update the record in table
 

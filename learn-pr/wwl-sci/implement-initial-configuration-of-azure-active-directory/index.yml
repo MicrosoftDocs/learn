@@ -18,7 +18,7 @@ abstract: |
   - Implement and manage hybrid identity
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-active-directory-configure-directory.svg
+iconUrl: /training/achievements/azure-active-directory-configure-directory.svg
 levels:
 - advanced
 roles:

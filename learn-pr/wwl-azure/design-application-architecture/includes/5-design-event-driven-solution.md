@@ -16,7 +16,7 @@ Let’s consider that music-sharing application again, this time with a Web API 
 
 The following illustration displays an Azure Event Grid positioned between multiple event sources and multiple event handlers. The event sources send events to the Event Grid and the Event Grid forwards relevant events to the subscribers. Event Grid use topics to decide which events to send to which handlers. Events sources tag each event with one or more topics, and event handlers subscribe to the topics they’re interested in.
 
-:::image type="content" source="../media/event-grid.png" alt-text="A graphic displays Event Sources linked to Event Handlers by topics, and event grid, and event subscriptions.":::
+:::image type="content" source="../media/event-grid.png" alt-text="A graphic displays Event Sources linked to Event Handlers by topics, and Event Grid, and event subscriptions.":::
 
 Event Grid sends an event to indicate something has happened or changed. However, the actual object that was changed isn’t part of the event data. Instead, a URL or identifier is often passed to reference the changed object.
 
@@ -37,4 +37,4 @@ Let’s take a few minutes to review the message and event solutions we have cov
 
 In some cases, you use the services side by side to fulfill distinct roles. For example, an e-commerce site can use Service Bus to process the order, Event Hubs to capture site telemetry, and Event Grid to respond to events like an item was shipped. In other cases, you link them together to form an event and data pipeline. You use Event Grid to respond to events in the other services. The following image shows the workflow for streaming the data.
 
-:::image type="content" source="../media/services-integration.png" alt-text="Event Hubs, Event Grid, Functions are working together.":::
+:::image type="content" source="../media/services-integration.png" alt-text="Diagram of Event Hubs, Event Grid, Functions working together.":::

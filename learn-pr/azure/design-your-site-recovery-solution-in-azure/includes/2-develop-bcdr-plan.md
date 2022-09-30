@@ -44,7 +44,7 @@ Backups protect applications from accidental deletion or corruption of data. Bac
 
 You can use Azure Backups as your backup process. Azure Backup is a built-in Azure service that provides secure backup for all Azure-managed data assets. It uses zero-infrastructure solutions to enable self-service backups and restores, with at-scale management at a lower and predictable cost. At present, Azure Backup offers specialized backup solutions for Azure and on-premises virtual machines (VMs). Azure Backup also enables workloads like SQL Server or SAP HANA running in Azure VMs to have enterprise-class backup and restore options.
 
-Both Azure Backup and Azure Site Recovery aim to make the system more resilient to faults and failures. However, while the primary goal of Azure Backup is to maintain copies of stateful data that allow you to go back in time, site-recovery replicates the data in almost real time and allows for a failover. [Learn more about Azure Backup](/learn/modules/protect-virtual-machines-with-azure-backup/).
+Both Azure Backup and Azure Site Recovery aim to make the system more resilient to faults and failures. However, while the primary goal of Azure Backup is to maintain copies of stateful data that allow you to go back in time, site-recovery replicates the data in almost real time and allows for a failover. [Learn more about Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/).
 
 ## Azure resilience features
 

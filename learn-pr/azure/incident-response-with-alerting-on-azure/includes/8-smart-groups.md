@@ -2,23 +2,23 @@ In a large environment, Azure Monitor can generate a large number of alerts. It 
 
 You want to explore the options available in Azure Monitor. Is there a mechanism that might reduce the alert noise and make the task of managing alerts easier?
 
-In this unit, you'll investigate how to use smart groups, and see how they can help you manage alerts in Azure Monitor.
+In this unit, you'll investigate how to use smart groups and see how they can help you manage alerts in Azure Monitor.
 
 ## What are smart groups?
 
-Smart groups are an automatic feature of Azure Monitor. By using machine learning algorithms, Azure Monitor joins alerts based on repeat occurrence or similarity. Smart groups enable you to address a group of alerts instead of each alert individually.
+Smart groups are an automatic feature of Azure Monitor. By using machine learning algorithms, Azure Monitor joins alerts based on repeat occurrence or similarity. Smart groups let you address a group of alerts instead of each alert individually.
 
-The name of the smart group (its taxonomy), is assigned automatically, and is the name of the first alert in the group. It's important to assign meaningful names to each alert that you create, because the name of the smart group can't be changed or amended.
+The name of the smart group (its taxonomy) is assigned automatically, and is the name of the first alert in the group. It's important to assign meaningful names to each alert that you create, because the name of the smart group can't be changed or amended.
 
 ## When to use smart groups
 
-Think of smart groups as a dynamic filter applied to all the alerts in Azure Monitor. The machine learning algorithm in Azure Monitor joins alerts based on information, such as historical patterns, similar properties, or structure. Using smart groups can reduce alert noise by more than 90 percent.
+Think of smart groups as a dynamic filter applied to all the alerts in Azure Monitor. The machine-learning algorithm in Azure Monitor joins alerts based on information, such as historical patterns, similar properties, or structure. Using smart groups can reduce alert noise by more than 90 percent.
 
 The power of smart groups is that they show you all related alerts and give improved analytics. They can often identify a previously unseen root cause.
 
 ## Manage smart groups
 
-There are two ways to get to your smart groups: from the **Alert Summary** pane, or from the **All Alerts** pane. Next, select **Alerts by Smart Group**.
+There are two ways to get to your smart groups: from the **Alert Summary** pane or from the **All Alerts** pane. Next, select **Alerts by Smart Group**.
 
 ![Screenshot that highlights how to access smart groups through the Alert Summary pane.](../media/8-smart-group-alerts-summary.jpg)
 

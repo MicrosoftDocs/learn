@@ -17,7 +17,7 @@ abstract:  |
   - Protect your data in transit and at rest
   - Audit and monitor your Azure SQL Database for access violations
 prerequisites: None
-iconUrl: /learn/achievements/secure-your-azure-sql-database.svg
+iconUrl: /training/achievements/secure-your-azure-sql-database.svg
 levels: 
 - intermediate
 roles: 

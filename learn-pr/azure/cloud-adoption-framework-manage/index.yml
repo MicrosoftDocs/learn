@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Foundational understanding of cloud adoption
   - Understanding of your organization's requirements for operations management
-iconUrl: /learn/achievements/cloud-adoption-framework-manage.svg
+iconUrl: /training/achievements/cloud-adoption-framework-manage.svg
 ratingEnabled: true
 levels:
 - intermediate

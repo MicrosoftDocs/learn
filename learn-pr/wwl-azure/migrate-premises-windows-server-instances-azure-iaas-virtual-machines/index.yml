@@ -28,7 +28,7 @@ prerequisites: |
   - Security-related technologies (firewalls, encryption, multi-factor authentication)
   - Windows PowerShell scripting
   - Automation and monitoring
-iconUrl: /learn/achievements/migrate-on-premises-windows-server-instances-to-azure-iaas-vms.svg
+iconUrl: /training/achievements/migrate-on-premises-windows-server-instances-to-azure-iaas-vms.svg
 levels:
 - intermediate
 roles:

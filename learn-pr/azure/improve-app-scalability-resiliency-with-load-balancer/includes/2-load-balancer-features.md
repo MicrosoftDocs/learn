@@ -39,7 +39,7 @@ An availability zone offers groups of one or more datacenters that have independ
 
 :::image type="content" source="../media/2-az-graphic-two.svg" alt-text="Screenshot showing an overview of availability zones in Azure." border="false":::
 
-Availability zones don't support all virtual machine sizes and aren't available in all Azure regions. Check that they are supported in your region before you use them in your architecture.
+Availability zones don't support all virtual machine sizes and aren't available in all Azure regions. Check that they're supported in your region before you use them in your architecture.
 
 ## Select the right Load Balancer product
 

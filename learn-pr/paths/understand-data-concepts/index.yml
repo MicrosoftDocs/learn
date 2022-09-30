@@ -3,7 +3,7 @@ uid: learn.wwl.understand-data-concepts
 metadata:
   title: Understand data concepts
   description: Understand data concepts
-  ms.date: 06/17/2022
+  ms.date: 09/16/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
 summary: |
   Data is key to most business operations and services and an understanding of data is essential in many roles. This learning path covers data concepts, data analytics, and data roles, services, and products
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/understand-data-concepts.svg
 levels:
 - beginner
 roles:

@@ -22,7 +22,7 @@ prerequisites: |
   - Understand what cloud computing is, including cloud service models, and common cloud providers
   - Know the technologies that enable cloud computing
   - Understand how cloud service providers pay for and bill for the cloud  
-iconUrl: /learn/achievements/cmu-cloud-developer/understand-data-centers.svg
+iconUrl: /training/achievements/cmu-cloud-developer/understand-data-centers.svg
 hidden: true
 levels:
 - beginner

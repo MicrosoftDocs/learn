@@ -10,39 +10,41 @@ In this unit, you'll create an event subscription within Azure IoT Hub to set up
 
 1. Select **+ Event Subscription** and create the event subscription with the following values:
 
-   * **Event Subscription Details**: Provide a descriptive name (for example: *MyDeviceCreatedEvent*) and select **Event Grid Schema**.
+   - **Event Subscription Details**: Provide a descriptive name (for example: *MyDeviceCreatedEvent*) and select **Event Grid Schema**.
 
-   * **Event Types**: In **Filter to Event Types**, clear all of the choices except **Device Created**.
+   - **System Topic Name**: The name of the topic to which events will be published.
 
-     [![Subscription event types.](../media/subscription-event-types.png)](../media/subscription-event-types.png#lightbox)
+   - **Event Types**: In **Filter to Event Types**, clear all of the choices except **Device Created**.
 
-   * **Endpoint Details**: Select **Endpoint Type** as **Web Hook**, choose **Select an endpoint**, and paste the URL that you copied from your logic app. Confirm the selection.
+     [![Screenshot that shows the subscription event types.](../media/subscription-event-types.png)](../media/subscription-event-types.png#lightbox)
+
+   - **Endpoint Details**: Select **Endpoint Type** as **Web Hook**, choose **Select an endpoint**, and paste the URL that you copied from your logic app. Confirm the selection.
 
    When you're done, the pane should look like the following example:
 
-   [![Sample event subscription form.](../media/subscription-form.png)](../media/subscription-form.png#lightbox)
+   :::image type="content" source="../media/6-azure-iot-event-subscription.png" alt-text="Screenshot that shows the Create Event Subscription pane in the Azure portal." lightbox="../media/6-azure-iot-event-subscription.png":::
 
 ## Configure the event filter
 
-You could save the event subscription here, and then receive notifications for every device that's created in your IoT hub. For this tutorial, though, let's use the optional fields to filter for specific devices. 
+You could save the event subscription here, and then receive notifications for every device that's created in your IoT hub. For this tutorial, though, let's use the optional fields to filter for specific devices.
 
 1. Select **Filters** at the top of the pane.
 
 1. Select **Add new filter**. Fill in the fields with these values:
 
-   * **Key**: Select `Subject`.
+   - **Key**: Enter `Subject`.
 
-   * **Operator**: Select `String begins with`.
+   - **Operator**: Select `String begins with`.
 
-   * **Value**:  Enter `devices/CheeseCave1_` to filter for device events in Cheese Cave 1.
+   - **Value**:  Enter `devices/CheeseCave1_` to filter for device events in Cheese Cave 1.
   
 1. Add another filter with these values:
 
-   * **Key**: Select `Subject`.
+   - **Key**: Enter `Subject`.
 
-   * **Operator**: Select `String ends with`.
+   - **Operator**: Select `String ends with`.
 
-   * **Value**: Enter `_Thermostat` to filter for device events related to temperature.
+   - **Value**: Enter `_Thermostat` to filter for device events related to temperature.
 
 1. Select **Create** to save the event subscription.
 

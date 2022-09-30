@@ -10,4 +10,4 @@ You can learn more by reviewing the following documents.
 
 - [Group Policy Objects](/previous-versions/windows/desktop/policy/group-policy-objects?azure-portal=true).
 - [Policy Processing](/previous-versions/windows/desktop/policy/policy-processing?azure-portal=true).
-- [Group Policy Analysis and Troubleshooting Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj134223(v=ws.11)?azure-portal=true).
+- [Group Policy Analysis and Troubleshooting Overview](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj134223(v=ws.11)?azure-portal=true).

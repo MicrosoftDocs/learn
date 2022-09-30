@@ -67,7 +67,7 @@ To illustrate, assume that you have the following four autoscale rules:
 * If CPU > 75%, scale out by 1
 * If Memory > 75%, scale out by 1
 
-Then the follow occurs:
+Then the following occurs:
 
 * If CPU is 76% and Memory is 50%, we scale out.
 * If CPU is 50% and Memory is 76% we scale out.

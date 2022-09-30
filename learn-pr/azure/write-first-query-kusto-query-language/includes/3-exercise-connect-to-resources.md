@@ -7,7 +7,8 @@ To complete the exercises in this module, you need an Azure account. If you don'
 You'll use the Azure Data Explorer web interface to connect to the data. However, the Kusto Query Language itself can also be used in Log Analytics, Azure Sentinel, and other services. You'll only need to connect once, and you'll continue to use this data connection for all queries in the following units.
 
 1. Use your Azure account to sign in to the [Azure Data Explorer web UI](https://dataexplorer.azure.com/).
-1. In the left pane, select **Add Cluster**.
+1. In the left pane, select **Query**.
+1. Select the **Add Cluster** button at the top of the tab.
 1. In the dialog box, under **Connection URI**, enter *help*.
 1. Select **Add**.
 

@@ -8,7 +8,7 @@ Follow these steps to see what roles are currently assigned to you.
 1. In the lab instructions menu, select the **Resources** tab.
 
     :::image type="content" source="../media/4-resources-tab.png" alt-text="Screenshot of Resources tab in lab instructions.":::
-1. Look for the Admin username like **LabAdmin-_XXXXXXX_** and the password.
+1. Look for the Admin username, like **LabAdmin-_XXXXXXX_**, and the password.
 1. Sign in to the Azure portal using the LabAdmin username and password.
 1. Close the Welcome popup, and in the upper-right corner of the Azure portal, select the profile picture to open the profile menu.
 1. Make sure you are signed in as the **LabAdmin-_XXXXXXX_** that was identified in the lab instructions' **Resources** tab. If you're signed in with a different account, sign out and sign in using the LabAdmin username and password on the **Resources** tab.
@@ -21,7 +21,7 @@ Follow these steps to see what roles are currently assigned to you.
 
     :::image type="content" source="../media/4-my-permissions-pane.png" alt-text="Screenshot of the My permissions pane.":::
 
-    You can see the roles that you have been assigned and the scope. Your list will look different.
+    You'll find the roles that you have been assigned and the scope. Your list will look different.
 
 ## List role assignments for a resource group
 
@@ -31,7 +31,7 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
     :::image type="content" source="../media/4-resource-groups.png" alt-text="Screenshot of the Azure portal showing Azure services and recent resources.":::
 
-1. Select the resource group **FirstUpConsultantsRG1-_XXXXXXX_** and on the left menu pane, select **Access control (IAM)**.
+1. Select the resource group **FirstUpConsultantsRG1-_XXXXXXX_**, then on the left menu pane select **Access control (IAM)**.
 
     :::image type="content" source="../media/4-resource-group-access-control.png" alt-text="Screenshot showing Access control (IAM) option on the resource group pane.":::
 
@@ -43,7 +43,7 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 ## List roles
 
-As you learned in the previous unit, a role is a collection of permissions. Azure has over 70 built-in roles that you can use in your role assignments. Follow this step to list the roles.
+As you learned in the previous unit, a role is a collection of permissions. Azure has more than 70 built-in roles that you can use in your role assignments. Follow this step to list the roles.
 
 - In the menu bar at the top of the pane, select the **Roles** tab to list of all the built-in and custom roles.
 
