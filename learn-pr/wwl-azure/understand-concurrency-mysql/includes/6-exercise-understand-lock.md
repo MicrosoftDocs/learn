@@ -10,7 +10,7 @@ In order to complete this exercise, you must have:
 - Downloaded the scripts for this exercise from [GitHub](https://github.com/MicrosoftLearning/mslearn-mysql/tree/main/labfiles).
 
 > [!TIP]
-> If you stopped you Azure Database for MySQL server after completing the last lab, restart it now.
+> If you stopped your Azure Database for MySQL server after completing the last lab, restart it now.
 
 ## Preparation - Configure MySQL Workbench
 
