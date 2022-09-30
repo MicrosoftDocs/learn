@@ -36,7 +36,7 @@ To complete these exercises, you must have:
 
     :::image type="content" source="../media/mysql-install-wizard-installation.png" alt-text="Screenshot showing the installation page of the MySQL setup wizard." lightbox="../media/mysql-install-wizard-installation.png":::
 
-1. When the installation in complete, select **Next**.
+1. When the installation is complete, select **Next**.
 1. On the **Installation Complete** page, select **Finish**. MySQL Workbench start.
 
 ## Connect to a server
