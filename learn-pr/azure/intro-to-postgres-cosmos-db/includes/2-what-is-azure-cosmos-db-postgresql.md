@@ -53,3 +53,19 @@ Citus extends the functionality of PostgreSQL by enabling multiple PostgreSQL se
 The Citus extension allows data to be distributed across nodes in the cluster by letting you create [distributed tables](/azure/postgresql/hyperscale/concepts-nodes#type-1-distributed-tables). Distributed tables improve performance by horizontally partitioning table rows across worker nodes. Each row is assigned to a logical group called a [_shard_](/azure/postgresql/hyperscale/concepts-nodes#shards). Every row will be in precisely one shard, and every shard can contain multiple rows. By distributing data across nodes, you can take advantage of more storage capacity than would be available on a single server.
 
 [Metadata tables](/azure/postgresql/hyperscale/reference-metadata#coordinator-metadata) located on the coordinator node stores information about which shards are stored on which node. The mapping of shards to worker nodes is referred to as [shard placement](/azure/postgresql/hyperscale/concepts-nodes#shard-placements). Shard placement enables performant query operations against distributed data in the database. These metadata tables track the DNS names and health of worker nodes in addition to data distribution across nodes. During query execution, the coordinator decides what action to take by referencing these metadata tables. The coordinator node checks the metadata tables to determine if data lives on a single node or multiple nodes and then routes queries to worker nodes as needed.
+
+## Workloads
+
+If you want a database to perform well, it’s important to design it methodically. When designing a database, especially a large database, you need to assess your workloads and application. There are, generally, two types of workloads for databases.
+
+### What are OLTP workloads?
+
+Workloads that generate standard CRUD—create, read, update, delete—operations can involve **small amounts of data**, but generally have a **large number of transactions**. The data being analyzed is usually text, numeric, time, or JSON data. These workloads are usually called online transactional processing, or more simply **OLTP**, and are the most common type of workload. An example of this kind of workload might be sending a text, or purchasing clothes online.
+
+Our contactless payment app will mostly have OLTP workloads - account-to-account transactions. The transactions will have small amounts of data, but occur in large numbers.
+
+### What are OLAP workloads?
+
+Workloads that generate reports can involve **large amounts of data**, but have a **low number of transactions**. The data being analyzed is generally event data or time series data. These workloads are usually called online analytical processing, or **OLAP**. Examples include applications that power customer-facing analytics dashboards, such as web and mobile analytics or anomaly and fraud detection.
+
+In our scenario, when customer and merchant queries are run on the contactless payment app, these will be OLAP workloads. An example might be a status dashboard, showing if services are running or undergoing maintenance.

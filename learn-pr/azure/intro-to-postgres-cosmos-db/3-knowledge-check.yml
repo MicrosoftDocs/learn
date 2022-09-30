@@ -1,47 +1,45 @@
 ### YamlMime:ModuleUnit
-uid: learn.create.azure-cosmos-db-for-postgresql.knowledge-check
+uid: learn.intro-to-hyperscale.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 09/29/2022
+  ms.date: 09/30/2022
   author: markingmyname
   ms.author: maghan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What can be stored and queried with Azure Cosmos for PostgreSQL?'
+  - content: 'What are the characteristics of OLTP workloads?'
     choices:
-    - content: "Code modules, which can be run by queries"
+    - content: "High numbers of transactions with large amounts of data"
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos for PostgreSQL can store code modules, but it can also store other data too."
-    - content: "Geometric data"
+      explanation: "Incorrect. Analytical workloads tend to have high amounts of data. OLTP workloads have high numbers of transactions, but not large amounts of data."
+    - content: "Business intelligence and analytical workloads"
       isCorrect: false
-      explanation: "Incorrect. Azure Database for PostgreSQL can store geometric data, but it can also store other data too."
-    - content: "Relational tables"
+      explanation: "Incorrect. OLTP workloads tend to be high numbers of transactions, not analytical workloads."
+    - content: "Time series data"
       isCorrect: false
-      explanation: "Incorrect. Azure Database for PostgreSQL can store relational tables, but it can also store other data too."
-    - content: "All of the above"
+      explanation: "Incorrect. Time series data is one of many data types usable in OLTP workloads."
+    - content: "High numbers of transactions with low amounts of data"
       isCorrect: true
-      explanation: "Correct. One of the main benefits of a PostgreSQL database is the functionality and flexibility to store different kinds of data."
-  - content: 'Is Azure Database for PostgreSQL suitable for hosting inside a mobile or desktop app?'
+      explanation: "Correct. OLTP workloads tend to have low amounts of data, with a high number of transactions, like text messages or purchasing items online."
+  - content: 'What is a benefit of sharding?'
     choices:
-    - content: Yes
+    - content: "OLAP workloads only need to access a single node to run queries"
       isCorrect: false
-      explanation: "Incorrect. Azure Database for PostgreSQL is a cloud-based solution, and is NOT suitable for hosting inside a mobile or desktop app."
-    - content: No
+      explanation: "Incorrect. Sharding can provide extra performance to OLAP workloads by combining the resources of multiple nodes, which reduces latency."
+    - content: "Sharding allows efficient distribution of your data to multiple servers, allowing a level of performance that is impossible to achieve on a single server."
       isCorrect: true
-      explanation: "Correct. Azure Database for PostgreSQL is a cloud-based solution, and isn't suitable for hosting inside a mobile or desktop app."
-  - content: 'Does Azure Database for PostgreSQL offer distributed database capabilities?'
-    choices:
-    - content: No
-      isCorrect: true
-      explanation: "Correct. Azure Cosmos DB for PostgreSQL offers a distributed database experience, not Azure Database for PostgreSQL."
-    - content: Yes
+      explanation: "Correct. Sharding allows your data to be distributed among nodes, which can leverage more resources than a single node."
+    - content: "Queries can be combined into a single, master query."
       isCorrect: false
-      explanation: "Incorrect. Azure Cosmos DB for PostgreSQL offers a distributed database experience."
+      explanation: "Incorrect. Sharding allows for intelligent distribution of data, not combining queries."
+    - content: "Sharding allows applications to directly query worker nodes, removing the need for a coordinator node."
+      isCorrect: false
+      explanation: "Incorrect. When sharding has distributed data to worker nodes, applications can't directly connect to worker nodes. Queries are routed through the coordinator node."
