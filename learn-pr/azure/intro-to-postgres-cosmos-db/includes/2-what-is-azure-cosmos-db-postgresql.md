@@ -17,7 +17,7 @@ Azure Database for PostgreSQL is available in two deployment modes, with each de
 **Single Server** deployments are suitable for most applications that don’t require high levels of customization or low latency performance across multiple regions. Single server deployments can be scaled down to only cost a few dollars per month. Workloads could include servers used for development and enterprise applications.
 
 >[!Note]
->To follow the training modules for Azure Database for PostgreSQL, visit [Introduction to Azure Database for PostgreSQL](../../../paths/introduction-to-azure-postgres/index.yml).
+>Visit [Introduction to Azure Database for PostgreSQL](../../../paths/introduction-to-azure-postgres/index.yml),To follow the training modules for Azure Database for PostgreSQL.
 
 :::row:::
 :::column span="3":::
@@ -35,6 +35,7 @@ They are constantly working behind the scenes, automated actions that can help y
 
 :::column-end:::
 :::column span="2":::
+
 > [!NOTE]
 > **Added benefits:**
 >
