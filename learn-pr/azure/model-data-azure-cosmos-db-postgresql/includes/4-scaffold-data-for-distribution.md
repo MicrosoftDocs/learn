@@ -23,11 +23,11 @@ However, for the Woodgrove application, the choice of distribution column on the
 
 Consider this event data for `user_id` 1894. When the events are distributed by `user_id`, these details are stored on the same node:
 
-:::image type="content" source="../media/events-distributed-user-id.png" alt-text="Diagram of event data sharded on user_id. All the data for a user_id value is stored in a shard on a worker node.":::
+:::image type="content" source="../media/events-distributed-user-id.svg" alt-text="Diagram of event data sharded on user_id. All the data for a user_id value is stored in a shard on a worker node.":::
 
 If this data were sharded by `merchant_id`, the data would be split like this:
 
-:::image type="content" source="../media/events-distributed-merchant-id.png" alt-text="Diagram of event data sharded on merchant_id. All the data for a merchant_id value is stored in a shard on a worker node. Since user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.":::
+:::image type="content" source="../media/events-distributed-merchant-id.svg" alt-text="Diagram of event data sharded on merchant_id. All the data for a merchant_id value is stored in a shard on a worker node. Since user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.":::
 
 Querying for events for `user_id` 1894 with `payment_events` distributed on `merchant_id` means that all shards would need to be queried for data where `user_id` is set to 1894. While this example is only two shards, know that the performance pain scales as more shards are involved.
 
@@ -48,11 +48,12 @@ Since the Woodgrove Bank application is querying on the user basis, the `payment
 ```sql
 SELECT create_distributed_table('payment_events','user_id');
 ```
+
 With the events and users tables having distribution columns of the same data type, Azure Cosmos DB for PostgreSQL will implicitly colocate their data. That means the events and user details for a single user ID will be stored on the same node.
 
 Consider this event data for `user_id` 1894 and 85147. When the `events` and the `users` tables are colocated and distributed on `user_id`, these details are stored on the same node:
 
-:::image type="content" source="../media/colocated-distribution.png" alt-text="Diagram of two worker nodes. Each worker node shows an event shard and a user shard where the user_id matches on both the event and user records.":::
+:::image type="content" source="../media/colocated-distribution.svg" alt-text="Diagram of two worker nodes. Each worker node shows an event shard and a user shard where the user_id matches on both the event and user records.":::
 
 ### Trouble with implicit colocation
 
@@ -60,11 +61,11 @@ Azure Cosmos DB for PostgreSQL does implicit colocation. Implicit colocation mea
 
 The following screenshot shows what happens when the `colocate_with` parameter is omitted while distributing `payment_events` and `payment_users` on `user_id` and distributing `payment_merchants` on `merchant_id`. All three tables are colocated in the same colocation group - as seen in the `colocation_id` on `citus_tables`.
 
-:::image type="content" source="../media/colocation-concerns.png" alt-text="Screenshot of the query of the citus_tables, highlighting colocation id. payment_events and payment_users are distributed on user_id. payment_merchants is distributed by merchant_id. All of these tables are colocated due to not specifying colocate_with on distribution.":::
+:::image type="content" source="../media/colocation-concerns.png" alt-text="Screenshot of the query of the citus_tables, highlighting colocation ID. payment_events and payment_users are distributed on user_id. payment_merchants is distributed by merchant_id. All of these tables are colocated due to not specifying colocate_with on distribution.":::
 
 By colocating merchants on `merchant_id` with the users and events tables distributed on `user_id`, the data would be stored like this:
 
-:::image type="content" source="../media/problem-implicit-colocation.png" alt-text="Diagram of two worker nodes. Each worker node shows an event shard, a user shard, and a merchant shard where their distribution columns match on value.":::
+:::image type="content" source="../media/problem-implicit-colocation.svg" alt-text="Diagram of two worker nodes. Each worker node shows an event shard, a user shard, and a merchant shard where their distribution columns match on value.":::
 
 This distribution is concerning because the `merchant_id` and `user_id` fields don't represent the same entities. Be specific about colocation when distributing tables.
 
@@ -75,6 +76,7 @@ If you distribute the `payment_merchants` table, colocation would have to be exp
 ```sql
 SELECT create_distributed_table('payment_merchants','merchant_id',colocate_with=>'none');
 ```
+
 Using `colocate_with=>'none'` explicitly tells Azure Cosmos DB for PostgreSQL to not colocate merchants with users and events.
 
 ## Foreign key implications in a distributed environment
@@ -106,8 +108,8 @@ For Woodgrove Bank, here are some changes you'll need to make:
 
 The Woodgrove Bank application's database in a non-distributed environment looked like this:
 
-:::image type="content" source="../media/normalized-database-entity-relationship-diagram.png" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
+:::image type="content" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
 
 In terms of the relational diagram with distribution considerations, this diagram represents the final application for Woodgrove Bank:
 
-:::image type="content" source="../media/distributed-entity-relationship-diagram.png" alt-text="Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.":::
+:::image type="content" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.":::

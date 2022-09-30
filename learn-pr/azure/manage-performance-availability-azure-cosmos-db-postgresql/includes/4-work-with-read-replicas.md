@@ -20,4 +20,4 @@ There are some things to consider when working with read replicas:
 
 Suppose the Woodgrove Bank's analysis team in the United States wanted to pull analytics for their app data. While the primary cluster is located locally, the users are also working from the primary cluster. The load from analysis can have an effect on the performance for the users. It may make sense to have a read replica for the local analysis team to offload their usage from the primary cluster. Use read replicas to help move the load for read-only options from a primary cluster to where the load is solely read access.
 
-:::image type="content" source="../media/primary-two-replicas.png" alt-text="Diagram of a primary cluster in the United States with read replicas in Europe and the United States.":::
+:::image type="content" source="../media/primary-two-replicas.svg" alt-text="Diagram of a primary cluster in the United States with read replicas in Europe and the United States.":::

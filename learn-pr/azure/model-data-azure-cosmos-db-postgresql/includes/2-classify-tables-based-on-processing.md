@@ -9,11 +9,11 @@ As the Woodgrove Bank development team needed a quick proof of concept,  they tr
 
 This diagram illustrates the initial database architecture:
 
-:::image type="content" source="../media/initial-database-entity-relationship-diagram.png" alt-text="Diagram of the relationship between payment_users and payment_events. payment_users has 4 fields - user_id, url, login, and avatar_url. user_id is the primary key on payment_users. payment_events has 6 fields - event_id, event_type, user_id, merchant_id, event_details, and created_at. event_id is the primary key on payment_events. payment_events has a foreign key relationship to payment_users on the user_id field.":::
+:::image type="content" source="../media/initial-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationship between payment_users and payment_events. payment_users has four fields - user_id, url, sign-in, and avatar_url. user_id is the primary key on payment_users. payment_events has six fields - event_id, event_type, user_id, merchant_id, event_details, and created_at. event_id is the primary key on payment_events. payment_events has a foreign key relationship to payment_users on the user_id field.":::
 
 The Woodgrove Bank team realized they needed to normalize their data to store the data in a relational database. They migrated their event types and merchants to their own tables. This diagram illustrates the normalized architecture:
 
-:::image type="content" source="../media/normalized-database-entity-relationship-diagram.png" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
+:::image type="content" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
 
 This normalized data diagram is what they used for their trial. However, as Woodgrove Bank is growing and needing a distributed environment, the developers suspect that this data diagram will evolve. Before they can change their model, they need to understand what it means to distribute the data.
 
@@ -23,11 +23,11 @@ Azure Cosmos DB for PostgreSQL operates as a group of individual PostgreSQL serv
 
 With a small trial base, Woodgrove Bank's analysts initially queried their events by merchant to see if merchants were a driving factor for app usage. Suppose Woodgrove Bank decided to shard its events data by the merchant ID. The following diagram shows what the `payment_events` table would look like if sharded across multiple nodes based on `merchant_id`.
 
-:::image type="content" source="../media/shards-illustrated.png" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster with a coordinator node and two worker nodes. The worker nodes show separate pieces of data for the same table, grouped by their 'merchant_id' field.":::
+:::image type="content" source="../media/shards-illustrated.svg" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster with a coordinator node and two worker nodes. The worker nodes show separate pieces of data for the same table, grouped by their 'merchant_id' field.":::
 
 The coordinator contains [metadata tables and views](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata) to track shard placement. When a query comes into the cluster, the coordinator node reviews the query, and uses the metadata tables and views to identify which worker nodes to engage. The worker nodes query their respective shards and return the results to the coordinator. The coordinator returns the collected results.
 
-:::image type="content" source="../media/distributed-query-processing.png" alt-text="Diagram of SQL query processing in the Azure Cosmos DB for PostgreSQL environment. The SQL query enters a cluster via the coordinator node. The coordinator node directs the query to the required worker nodes.":::
+:::image type="content" source="../media/distributed-query-processing.svg" alt-text="Diagram of SQL query processing in the Azure Cosmos DB for PostgreSQL environment. The SQL query enters a cluster via the coordinator node. The coordinator node directs the query to the required worker nodes.":::
 
 By splitting the data across nodes and distributing on a frequently used column, you gain performance by only engaging the worker nodes needed rather than engaging the entire dataset. For Woodgrove Bank, the query `SELECT * FROM payment_events WHERE merchant_id = '49605596';` would only engage one worker node - the node with that particular merchant_id value. The coordinator node knows which worker nodes to engage based on the shard placement, and only the engaged worker nodes process the query. The query is only querying the data that is needed, rather than the entire set of `payment_events` data.
 
@@ -81,7 +81,7 @@ The three different types of tables are stored differently across the nodes.
 
 The diagram below shows this breakdown.
 
-:::image type="content" source="../media/coordinator-workers-arrows-tables.png" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains 2 worker nodes, each with distributed shards and a reference table. There are arrows coming from the coordinator and pointed at each of the worker nodes.":::
+:::image type="content" source="../media/coordinator-workers-arrows-tables.svg" alt-text="Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains two worker nodes, each with distributed shards and a reference table. There are arrows coming from the coordinator and pointed at each of the worker nodes.":::
 
 ### Reference table versus distributed table
 

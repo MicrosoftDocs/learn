@@ -220,7 +220,7 @@ Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=0 width=0)
                                 ->  Seq Scan on payment_users_102264 u  (cost=0.00..231.08 rows=8308 width=18)
 ```
 
-The ` Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=0 width=0)` and `Task Count: 32` lines show that the query will be executed in parallel on each of the 32 shards. Running the query populates the new table, and you can run the following to view the results:
+The `Custom Scan (Citus Adaptive)  (cost=0.00..0.00 rows=0 width=0)` and `Task Count: 32` lines show that the query will be executed in parallel on each of the 32 shards. Running the query populates the new table, and you can run the following to view the results:
 
 ```sql
 SELECT * FROM user_events ORDER BY user_id LIMIT 5;
