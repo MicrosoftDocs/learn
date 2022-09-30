@@ -8,8 +8,8 @@ metadata:
   ms.author: maghan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to PostgreSQL on Azure
-summary: This module is a no-code introduction to PostgreSQL on Azure, including an explanation of particular problems that using Azure Database for PostgreSQL or Azure Cosmos DB for PostgreSQL can solve. At a high level, we show how the components fit together and identify situations where you should use Azure to host PostgreSQL workloads.
+title: Introduction to Azure Database for PostgreSQL
+summary: This module is a no-code introduction to PostgreSQL on Azure, including an explanation of particular problems that using Azure Database for PostgreSQL can solve. At a high level, we show how the components fit together and identify situations where you should use Azure to host PostgreSQL workloads.
 abstract: |
   In this module, you will:
   - Describe the components of Azure Database for PostgreSQL.

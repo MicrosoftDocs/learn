@@ -6,23 +6,12 @@ Azure Cosmos DB for PostgreSQL transforms PostgreSQL into a highly scalable dist
 
 The service provides a relational database solution with horizontal scalability across as many machines - and locations - as needed. You don’t have to give up transactions, joins, and foreign keys for the ability to scale.
 
+>[!Note]
+>Azure Cosmos DB for PostgreSQL inherits it's horizontal scaling capabilities from the service formally called Azure Database for PostgreSQL - Hyperscale (Citus).
+
 ## The Azure layer
 
-PostgreSQL in Azure has two services, Azure Database for PostgreSQL and Azure Cosmos DB for PostgreSQL.
-
-Azure Database for PostgreSQL is available in two deployment modes, with each deployment mode allowing different levels of customization and scale.
-
-**Flexible server** is suitable for production workloads that require zone resilient HA, predictable performance, maximum control, custom maintenance window, cost optimization controls and simplified developer experience. Ideal for workloads that don't need full compute capacity continuously.
-
-**Single Server** deployments are suitable for most applications that don’t require high levels of customization or low latency performance across multiple regions. Single server deployments can be scaled down to only cost a few dollars per month. Workloads could include servers used for development and enterprise applications.
-
->[!Note]
->Visit [Introduction to Azure Database for PostgreSQL](../../../paths/introduction-to-azure-postgres/index.yml),To follow the training modules for Azure Database for PostgreSQL.
-
-:::row:::
-:::column span="3":::
-
-**Azure Cosmos DB for PostgreSQL (formerly Azure Database for PostgreSQL - Hyperscale (Citus))** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data. Azure Cosmos DB for PostgreSQL can also be deployed and managed on-premises, on the edge, or on multi-cloud environments using Azure Arc.
+**Azure Cosmos DB for PostgreSQL (formerly Azure Database for PostgreSQL - Hyperscale)** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data. Azure Cosmos DB for PostgreSQL can also be deployed and managed on-premises, on the edge, or on multicloud environments using Azure Arc.
 
 The Azure layer gives each deployment option four noticeable benefits:
 
@@ -31,36 +20,23 @@ The Azure layer gives each deployment option four noticeable benefits:
 * Automated hardware and software maintenance
 * Advanced data and server security
 
-They are constantly working behind the scenes, automated actions that can help your business reduce administration costs, as well as complexity.
+They're constantly working behind the scenes, automated actions that can help your business reduce administration costs, and complexity.
 
-:::column-end:::
-:::column span="2":::
+>[!Note]
+>Cosmos DB for PostgreSQL shouldn't be confused with Azure Database for PostgreSQL, which is used for smaller workloads.
+>Visit [Introduction to Azure Database for PostgreSQL](../../../paths/introduction-to-azure-postgres/index.yml),To follow the training modules for Azure Database for PostgreSQL.
 
-> [!NOTE]
-> **Added benefits:**
->
-> * High availability
-> * Data protection
-> * Automated maintenance
-> * Predictable performance and pricing
-> * Elastic scaling within seconds
-> * Enterprise grade security
-> * Best-in-class compliance
-> * Monitoring and automation
-> * Industry-leading support experience
+## Distributed capabilities
 
-:::column-end:::
-:::row-end:::
+[Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/overview) is a fully managed database-as-a-service hosted on Azure that delivers the full functionality of PostgreSQL combined with the ability to distribute data across multiple PostgreSQL servers as nodes within a cluster. It's a robust database with a wide range of built-in features. Azure Cosmos DB for PostgreSQL inherits many of its capabilities from the service formally called Azure Database for PostgreSQL - Hyperscale (Citus).
 
-[Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/overview) is a fully managed database-as-a-service hosted on Azure that delivers the full functionality of PostgreSQL combined with the ability to distribute data across multiple PostgreSQL servers as nodes within a cluster. It's a robust database with a wide range of built-in features. However, sometimes additional capabilities are required to solve complex real-world problems. Azure Cosmos DB for PostgreSQL inherits many of its capabilities from the service formally called Azure Database for PostgreSQL - Hyperscale (Citus).
-
-Azure Cosmos DB for PostgreSQL transforms PostgreSQL into a highly scalable distributed database by clustering PostgreSQL servers. Distributed databases work by spreading table data across nodes in the cluster, horizontally partitioning rows across worker nodes. By dispersing data across [shards](/azure/postgresql/hyperscale/concepts-nodes#shards) on different worker nodes, they can take advantage of cross-machine parallelism, providing the key performance benefits of Azure Cosmos DB for PostgreSQL.
+Azure Cosmos DB for PostgreSQL transforms PostgreSQL into a highly scalable distributed database by clustering PostgreSQL servers. Distributed databases work by spreading table data across nodes in the cluster, horizontally partitioning rows across worker nodes. By dispersing data across [shards](/azure/postgresql/hyperscale/concepts-nodes#shards) on different worker nodes, the distributed databases can take advantage of cross-machine parallelism, providing the key performance benefits of Azure Cosmos DB for PostgreSQL.
 
 In fact, the distributed capabilities of Azure Cosmos DB for PostgreSQL are made possible through the [Citus extension](https://github.com/citusdata/citus). Other examples of extensions are [`pg_cron`](https://github.com/citusdata/pg_cron), a cron-based job scheduler that allows you to schedule PostgreSQL commands directly from the database and [PostGIS](https://postgis.net/) that adds support for geographic objects, allowing location queries to be run in SQL.
 
 ![Diagram showing three of the extensions you will use in this learning module, Citus, PostGIS, and pg_cron, being added to Azure Cosmos DB for PostgreSQL and used to extend the functionality of the database.](../media/2a-cosmos-db-for-postgresql-extensions.png)
 
-In the [Extend functionality using extensions](../../extend-the-functionality-of-azure-cosmos-db-for-postgresql-using-extensions/1-introduction.yml) module, you'll explore how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You'll examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
+In the Extend functionality using extensions module, you'll explore in more detail how extensions can be used to improve the productivity of Azure Cosmos DB for PostgreSQL. You'll examine the Citus extension and how it enables data distribution and investigate other supported extensions and the capabilities they can provide to improve the overall effectiveness of a database.
 
 ## What is Citus?
 
@@ -77,9 +53,3 @@ Citus extends the functionality of PostgreSQL by enabling multiple PostgreSQL se
 The Citus extension allows data to be distributed across nodes in the cluster by letting you create [distributed tables](/azure/postgresql/hyperscale/concepts-nodes#type-1-distributed-tables). Distributed tables improve performance by horizontally partitioning table rows across worker nodes. Each row is assigned to a logical group called a [_shard_](/azure/postgresql/hyperscale/concepts-nodes#shards). Every row will be in precisely one shard, and every shard can contain multiple rows. By distributing data across nodes, you can take advantage of more storage capacity than would be available on a single server.
 
 [Metadata tables](/azure/postgresql/hyperscale/reference-metadata#coordinator-metadata) located on the coordinator node stores information about which shards are stored on which node. The mapping of shards to worker nodes is referred to as [shard placement](/azure/postgresql/hyperscale/concepts-nodes#shard-placements). Shard placement enables performant query operations against distributed data in the database. These metadata tables track the DNS names and health of worker nodes in addition to data distribution across nodes. During query execution, the coordinator decides what action to take by referencing these metadata tables. The coordinator node checks the metadata tables to determine if data lives on a single node or multiple nodes and then routes queries to worker nodes as needed.
-
-## Scenario: Scaling Woodgrove Bank's contactless payment app
-
-Woodgrove Bank has a contactless payment app that works from six feet away, and the data is stored in a single, on-premises PostgreSQL database. Based on a successful trial of the app, Woodgrove Bank would like to release the app to customers across Europe and the United States. As the app needs to scale, the data will need to scale as well. Azure Cosmos DB for PostgreSQL is built to host PostgreSQL databases and support them at scale. The Woodgrove Bank development team is unfamiliar with a distributed environment, and as their tech lead, you have the most experience to lead them in this growth.
-
-For this module, we'll focus on the Azure Database for PostgreSQL capabilities.

@@ -1,6 +1,6 @@
 It's vital to consider different business needs before making a decision on a database implementation. Azure Database for PostgreSQL has the functionality, ease-of-use, and scalability for most business cases. With built-in database administrative functionality that is like DBA, the service is suitable for cloud architects and developers because it lowers the need for managing the underlying operating system and database.
 
-Flexible server options for small to medium-sized applications are available, starting at a few dollars per month. For larger applications or when high performance is needed, [Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/overview) provides a cost-effective distributed solution with no need for application rewrites. Importantly, this service provides flexibility after deployment, allowing the database solution to be tailored to changing business needs.
+Flexible server options for small to medium-sized applications are available, starting at a few dollars per month.
 
 ### Small-to-medium applications and proof of concepts
 
@@ -8,13 +8,7 @@ Flexible server deployments of Azure Database for PostgreSQL are well suited for
 
 ### Geospatial and logistics applications
 
-PostgreSQL has built-in support for geospatial data, which is ideal for logistics applications. Flexible server is ideal for most workloads, but [Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/overview) may be more suitable for larger or real-time applications.
-
-### Large workloads and performance over multiple regions
-
-When performance is desired across multiple regions, Azure Cosmos DB for PostgreSQL is a great choice to make PostgreSQL a high-performance distributed database. Azure Cosmos DB for PostgreSQL efficiently leverages multiple servers, making scaling out over multiple regions easy and cost-effective.
-
-Large databases (approaching 100 GB or more) also tend to suffer from poorer performance when hosted on a Flexible server, and so benefit greatly from Azure Cosmos DB for PostgreSQL.
+PostgreSQL has built-in support for geospatial data, which is ideal for logistics applications. Flexible server is ideal for most workloads.
 
 ### Protecting sensitive data
 
@@ -24,4 +18,4 @@ Azure Database for PostgreSQL provides business continuity features that include
 
 ### Mobile in-app databases
 
-Azure Database for PostgreSQL is a cloud-based solution, and is not suitable for hosting inside a mobile or desktop app. If you require mobile in-app functionality, you may want to consider an alternative solution, such as using the file system or SQLite.
+Azure Database for PostgreSQL is a cloud-based solution, and isn't suitable for hosting inside a mobile or desktop app. If you require mobile in-app functionality, you may want to consider an alternative solution, such as using the file system or SQLite.

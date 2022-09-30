@@ -13,10 +13,7 @@ Azure Database for PostgreSQL is available in two deployment modes, with each de
 :::row:::
 :::column span="3":::
 
-**Azure Cosmos DB for PostgreSQL (formerly Azure Database for PostgreSQL - Hyperscale (Citus))** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data.
-
->[!Note]
-
+**Azure Cosmos DB for PostgreSQL (formerly Azure Database for PostgreSQL - Hyperscale)** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data.
 
 The Azure layer gives each deployment option four noticeable benefits:
 
@@ -25,7 +22,7 @@ The Azure layer gives each deployment option four noticeable benefits:
 * Automated hardware and software maintenance
 * Advanced data and server security
 
-They are constantly working behind the scenes, automated actions that can help your business reduce administration costs, as well as complexity.
+They're constantly working behind the scenes, automated actions that can help your business reduce administration costs, and complexity.
 
 :::column-end:::
 :::column span="2":::
