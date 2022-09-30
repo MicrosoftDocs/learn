@@ -43,7 +43,7 @@ In the sample scenario, you want to work within Visual Studio Code, both as a de
 
 1. In the Azure explorer, select **Select subscriptions...**. The Learn sandbox subscription has the following name and tenant ID:
 
-    **Troubleshooting**: If you are not able to find the Concierge Subscription, you may have to change tenants and sign in again. Use the following tenant ID to complete that:
+    **Troubleshooting**: If you aren't able to find the Concierge Subscription, you may have to change tenants and sign in again. Use the following tenant ID to complete that:
 
     * Tenant ID: 604c1504-c6a3-4080-81aa-b33091104187
     * Name: Concierge Subscription
@@ -203,7 +203,7 @@ In the sample scenario, you want to work within Visual Studio Code, both as a de
 
     You have added and edited Cosmos DB documents. 
 
-1. The Documents list now shows readable names, using the `name` field of each object. When you work locally with documents, its helpful to find documents if they use the `name` property. 
+1. The Documents list now shows readable names, using the `name` field of each object. When you work locally with documents, it's helpful to find documents if they use the `name` property. 
 
 ## Check your work
 

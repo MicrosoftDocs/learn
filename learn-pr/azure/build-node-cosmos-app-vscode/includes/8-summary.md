@@ -1,10 +1,10 @@
 In this module, you learned how to use Node.js with Visual Studio Code to:
 
-- Create a Azure Cosmos DB instance for a Node.js app
+- Create an Azure Cosmos DB instance for a Node.js app
 - Build a new Node.js app in Visual Studio Code
 - Add JavaScript code to work with Azure Cosmos DB
 
-You can now use Node.js to build applications that create, query, and maintain data in a Azure Cosmos DB.
+You can now use Node.js to build applications that create, query, and maintain data in an Azure Cosmos DB.
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
