@@ -11,7 +11,7 @@ To complete these exercises, you must have:
 - Created the **zoodb** database (see Module 2, Unit 5).
 
 > [!TIP]
-> If you stopped you Azure Database for MySQL server after completing the last lab, restart it now.
+> If you stopped your Azure Database for MySQL server after completing the last lab, restart it now.
 
 ## Create a new user account in Azure Active Directory
 
@@ -112,7 +112,7 @@ To complete these exercises, you must have:
 	SELECT * FROM animal;
 	```
 
-1. To test whether you have the DROP privilege, execute this code. If there is an error, examine the erro code:
+1. To test whether you have the DROP privilege, execute this code. If there is an error, examine the error code:
 
     ```SQL
 	DROP TABLE animal;
