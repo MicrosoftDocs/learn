@@ -47,7 +47,7 @@ Remember, the Microsoft Purview Data Map, data sources are registered to collect
 
 ## Trustworthy data
 
-The data catalog also allows you to mark and manage trustworthy data sets, so your users know which sources are up to date and ready for use. You can do this using a **certified** flag, that can be applied by data stewards in Microsoft Purview, and allows users to find quality data on their own, without data stewards needing to field regular questions.
+The data catalog also allows you to mark and manage trustworthy data sets, so your users know which sources are up to date and ready for use. You can do this using a **certified** flag, that can be applied by data stewards in Microsoft Purview, and allows users to find quality data on their own without data stewards needing to field regular questions.
 
 ## Using the catalog across Azure
 
