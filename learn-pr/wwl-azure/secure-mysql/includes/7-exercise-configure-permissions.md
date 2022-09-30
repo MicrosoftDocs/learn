@@ -37,14 +37,14 @@ To complete these exercises, you must have:
 
 ## Test the Reader role
 
-1. In the top-right of the Azure Portal, select your user account and then select **Log out**.
+1. In the top-right of the Azure portal, select your user account and then select **Log out**.
 1. Log in as the new user, with the user principal name that you noted and the password **Pa$$w0rd**. Replace the default password if you are prompted to and make a note of the new one.
 1. In the portal home page, select **All resources** and then select your Azure Database for MySQL resource.
 1. Select **Stop**. An error is displayed, because the Reader role enables you to see the resource but not change it.
 
 ## Assign the Contributor role
 
-1. In the top-right of the Azure Portal, select Holly's user account and then select **Log out**.
+1. In the top-right of the Azure portal, select Holly's user account and then select **Log out**.
 1. Log in using your original Owner account.
 1. Navigate to your Azure Database for MySQL resource, and then select **Access Control (IAM)**.
 1. Select **+ Add** and then select **Add role assignment**.
@@ -55,12 +55,12 @@ To complete these exercises, you must have:
 
 ## Test the Contributor role
 
-1. In the top-right of the Azure Portal, select your user account and then select **Log out**.
+1. In the top-right of the Azure portal, select your user account and then select **Log out**.
 1. Log in as the Holly Rees, with the user principal name and password that you noted.
 1. In the portal home page, select **All resources** and then select your Azure Database for MySQL resource.
 1. Select **Stop** and then select **Yes**. This time, the server stops without errors because Holly has the necessary role assigned.
 1. Select **Start** to ensure that the MySQL resource is ready for the next steps.
-1. In the top-right of the Azure Portal, select Holly's user account and then select **Log out**.
+1. In the top-right of the Azure portal, select Holly's user account and then select **Log out**.
 1. Log in using your original Owner account.
 
 ## GRANT access to Azure Database for MySQL
