@@ -15,9 +15,9 @@ Postgres is used throughout the computing world, in everything from acting as th
 :::row:::
 :::column span="2":::
 
-Azure Cosmos DB for PostgreSQL transforms PostgreSQL into a highly scalable distributed database by clustering PostgreSQL servers. Distributed databases work by spreading table data across nodes in the cluster, horizontally partitioning rows across worker nodes. By dispersing data across shards on different worker nodes, they can take advantage of cross-machine parallelism, providing the key performance benefits of Azure Cosmos DB for PostgreSQL.
+The PostgreSQL layer is based on the popular open-source PostgreSQL Community Edition, giving you access to a wide range of extensions. PostgreSQL is designed to handle a range of workloads, from single machines to data warehouses or Web services with many concurrent users.
 
-The service provides a relational database solution with horizontal scalability across as many machines - and locations - as needed. You don’t have to give up transactions, joins, and foreign keys for the ability to scale.
+PostgreSQL has its own query language called pgsql. This language is a variant of the standard relational query language, SQL, with features that enable you to write stored procedures that run inside the database. However, Azure Cosmos for PostgreSQL allows you to work with popular frameworks and languages such as Ruby on Rails, Python with Django, Java with Spring Boot, .NET, and Node.js.
 
 :::column-end:::
 :::column span="2":::
