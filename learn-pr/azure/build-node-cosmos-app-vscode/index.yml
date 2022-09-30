@@ -16,6 +16,7 @@ abstract: |
   - Create a Cosmos DB Core (SQL) account
   - Build a new Node.js app in Visual Studio Code
   - Add JavaScript code to work with Cosmos DB Core (SQL)
+  - Use the SDK to insert, upsert, read, and query your data
 prerequisites: |
   - Visual Studio Code with Azure Databases extension installed
   - Node.js LTS installed
