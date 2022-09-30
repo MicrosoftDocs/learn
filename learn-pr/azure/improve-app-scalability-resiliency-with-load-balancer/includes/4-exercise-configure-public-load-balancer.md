@@ -36,11 +36,11 @@ Now, let's create the load balancer.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search services and marketplace** search box, enter **Load Balancer**, and then press <kbd>Enter</kbd>.
+1. In the **Search services and marketplace** search box, enter *Load Balancer*, and then press <kbd>Enter</kbd>.
 
 1. From the ensuing list, select *Load Balancer - Microsoft*. Then, select **Create**.
 
-    ![Create a Load Balancer instance in the Azure portal.](../media/4-create-lb.png)
+   :::image type="content" source="../media/4-create-lb.png" alt-text="Create a Load Balancer instance in the Azure portal.":::
 
 1. On the **Basics** tab, enter the following values for each setting:
 
@@ -56,53 +56,57 @@ Now, let's create the load balancer.
     | Type | **Public** |
     | Tier | **Regional** |
 
+   :::image type="content" source="../media/4-create-details-lb.png" alt-text="Screenshot that shows the Basics tab of the Create a Load Balancer screen in the Azure portal.":::
 
 ## Add a front-end IP configuration
 
 1. Select **Next : Frontend IP configuration**.
 
+1. Select **+ Add a frontend IP configuration**. The **Add frontend IP configuration** pane appears.
+
 1. Enter the following values for each setting.
 
     | Setting | Value |
     | ----- | ----------- |
-    | Select **Add a frontend IP**. The **Add frontend IP address** pane appears. |
-    | Name | Enter a unique name for the front-end IP address. |
+    | Name | Enter a unique name for the front-end IP configuration. |
     | IP version | IPv4 |
-    | Public IP address | Select **Create new** link. In the **Add a public IP address** dialog box that appears, enter a unique name for the public IP address. For example, *Pub-LB-PatientsPortal-IP*. |
+    | Public IP address | Select the **Create new** link. |
 
-1. To close the dialog box, select **OK**. The **Add frontend IP address** pane reappears. Select **Add**.
+1. In the **Add a public IP address** dialog box that appears, enter the following values for each setting.
 
-1. Select **Review + create**.
+    | Setting | Value |
+    | ----- | ----------- |
+    | Name | enter a unique name for the public IP address. For example, *Pub-LB-PatientsPortal-IP*. |
+    | SKU | Previously set to **Basic**. |
+    | Tier | Previously set to **Regional**. |
+    | Assignment | Select **Static** |
 
-1. When validation passes, select **Create**.
+   :::image type="content" source="../media/4-add-frontend-ip-config.png" alt-text="Screenshot that shows the completed settings for the Add frontend IP configuration.":::
 
-    ![Screenshot that shows how to enter details on the Create load balancer page.](../media/4-create-details-lb.png)
+1. To close the dialog box, select **OK**. The **Add frontend IP configuration** pane reappears. Select **Add**. The **Create load balancer** pane appears.
 
 ## Add a back-end pool
 
 1. Select **Next : Backend pools**.
 
+1. Select **+ Add a backend pool**. The **Add backend pool** pane appears.
+
 1. Enter the following values for each setting.
 
     | Setting | Value |
     | ----- | ----------- |
-    | Select **Add a backend pool**. The **Add backend pool** pane appears. |
     | Name | Enter a unique name for the back-end pool. For example, *bepool-http*. |
-    | Virtual network | **bePortalVnet** |
-    | Associated to | **Virtual machines** |
-    | IP Version | **IPv4** |
- 
-1. Select **Add**. The **Create load balancer** pane reappears.
+    | Virtual network | In the dropdown box, select **bePortalVnet (<rgn>[sandbox resource group name]</rgn>)** |
 
-1. In the **Virtual machines** section, select **Add**. The **Add virtual machines to backend pool** pane appears.
+1. Select **Add**. The **Add IP configurations to backend pool** pane appears.
 
-    ![Add a new back-end pool.](../media/4-backend-pool-create.png)
+1. Under **Virtual machine**, select the **webVM1** and **webVM2** virtual machines and select **Add**.
 
-1. Select the **webVM1** and **webVM2** virtual machines and the **ipconfig1** IP addresses for both VMs.
+   :::image type="content" source="../media/4-lb-add-ipconfig-backend-pool.png" alt-text="Screenshot that shows the settings on the Add IP configurations to backend pool pane.":::
 
-1. Select **Add**. The *bepool-http* pane reappears.
+1. The **Add backend pool** screen reappears. Under **IP configurations**, select the **webVM1** and **webVM2** virtual machines and select **Save**. The **Create load balancer** screen reappears.
 
-1. Select **Save**.
+   :::image type="content" source="../media/4-lb-add-backend-pool.png" alt-text="Screenshot that shows the settings completed on the Add backend pool screen.":::
 
 ## Add a load balancing rule
 
@@ -110,7 +114,7 @@ Finally, let's create a rule for the load balancer.
 
 1. Select **Next : Inbound rules**.
 
-1. In the **Load balancing rule** section, select **Add a load balancing rule**. The **Add load balancing rule** pane appears.
+1. In the **Load balancing rule** section, select **+ Add a load balancing rule**. The **Add load balancing rule** pane appears.
 
 1. Enter the following values for each setting.
 
@@ -118,12 +122,12 @@ Finally, let's create a rule for the load balancer.
     | ----- | ----------- |
     | Name | A name for the load balancing rule. For example, *lbrule-http*. |
     | IP Version | **IPv4** |
-    | Frontend IP address | Select the existing public IP address of the load balancer. |
+    | Frontend IP address | Select the Frontend IP address that you named earlier. It will be marked as (to be created). |
+    | Backend pool | Select the back-end pool that you named earlier. For example, *bepool-http*.|
     | Protocol | **TCP** |
     | Port | Enter **80** (default). |
-    | **Backend port** | Enter **80** (default). |
-    | **Backend pool** | Select the existing back-end pool. |
-    | **Health probe** | Select the **Create new** link. The **Add health probe** dialog box appears. |
+    | Backend port | Enter **80** (default). |
+    | Health probe | Select the **Create new** link. The **Add health probe** dialog box appears. |
 
 1. Enter the following values for each setting.
 
@@ -133,7 +137,6 @@ Finally, let's create a rule for the load balancer.
     | Protocol | **TCP** |
     | Port | Enter **80** (default). |
     | Interval | Enter 5 (default). This value is the amount of time between probes. |
-    | Unhealthy threshold | Enter 2 (default). This value is the number of consecutive probe failures that must occur before a VM is considered unhealthy. |
 
 1. Select **OK** to close the dialog box. The **Add load balancing rule** pane reappears.
 
@@ -141,16 +144,19 @@ Finally, let's create a rule for the load balancer.
 
     | Setting | Value |
     | ----- | ----------- |
-    | Session persistence*| **None** |
+    | Session persistence*| **None** (default) |
     | Idle timeout (minutes) | Select **4** (default). This value is the time to keep a TCP or HTTP connection open without relying on clients to send keep-alive messages. |
     | Floating IP | **Disabled** (default). |
-    | | |
 
-    ![Add a new load balancer rule.](../media/4-new-lb-rule.png)
+   :::image type="content" source="../media/4-new-lb-rule.png" alt-text="Add a new load balancing rule.":::
 
-1. Select **Add** to complete the load balancer configuration.
+1. Select **Add** to complete the load balancing rule configuration.
 
-1. Return to the **Overview** page. Copy the **Public IP address** for the load balancer.
+1. The **Create load balancer** screen reappears. Select **Review + create**.
+
+1. When validation passes, select **Create**. When done, select **Go to resource**.
+
+1. On the **Overview** page, copy and save the **Public IP address**. You may have to select **See more...** to view the Public IP address.
 
 ::: zone-end
 
@@ -347,6 +353,6 @@ Let's test the load balancer setup to show how it can handle availability and he
 
 1. Try a "force refresh" by pressing <kbd>Ctrl+F5</kbd> a few times to see that the response is returned randomly from both VMs.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1** > **Stop**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. Then select **webVM1**, and select **Stop**.
 
 1. Return to the tab that shows the website and force a refresh of the webpage. All requests are returned from **webVM2**.

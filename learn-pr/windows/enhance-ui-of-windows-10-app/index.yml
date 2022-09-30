@@ -21,7 +21,7 @@ prerequisites: |
  - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
  - [The latest version of Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
  - An understanding of basic UI elements of Windows apps.
-iconUrl: /learn/achievements/windows-ui-navigation-media.svg
+iconUrl: /training/achievements/windows-ui-navigation-media.svg
 levels:
 - beginner
 roles:

@@ -13,7 +13,7 @@ In this unit, you will:
 1. In the terminal, run the following command:
 
     ```bash
-    ./create-azure-redis.sh && \
+    ./create-azure-redis.sh
     ```
 
     The preceding command:

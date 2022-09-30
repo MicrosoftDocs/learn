@@ -19,7 +19,7 @@ prerequisites: |
        - *Web API*: An API that's accessible from servers that accept requests via HTTP.
        - *Web API endpoint*: The location of the code library.
        - *REST API*: The design of the URL style that's used to expose the API's functionality.
-iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
+iconUrl: /training/achievements/ai-machine-learning-fundamentals.svg
 levels:
 - beginner
 roles:

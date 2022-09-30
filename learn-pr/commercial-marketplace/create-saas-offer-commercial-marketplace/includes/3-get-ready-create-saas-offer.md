@@ -13,7 +13,7 @@ Regardless of whether you sell through Microsoft, you’ll need to provide the f
 - Details and descriptions of your offer and the value it provides for customers
 
 > [!TIP]
-> To help you provide the information listed, we’ve created a separate learning module that shares information and best practices that will help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete **["Go to market through the Microsoft commercial marketplace."](/learn/modules/go-to-market-commercial-marketplace/)**
+> To help you provide the information listed, we’ve created a separate learning module that shares information and best practices that will help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete **["Go to market through the Microsoft commercial marketplace."](/training/modules/go-to-market-commercial-marketplace/)**
 
 We’ll spend the rest of our time in this unit discussing considerations for publishers that sell their SaaS offers through Microsoft.
 

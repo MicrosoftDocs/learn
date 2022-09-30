@@ -72,7 +72,7 @@ You can think of a parent/child relationship as a transparent gateway, where the
 
 ## Specify DNS servers
 
-To improve robustness, it is highly recommended you specify the DNS server addresses used in your environment. To set your DNS server for IoT Edge, either set DNS server address in container engine settings or per module in the IoT Edge deployment. For more information, see the resolution for **Edge Agent module continually reports 'empty config file' and no modules start on device** in the troubleshooting article [https://docs.microsoft.com/azure/iot-edge/troubleshoot](/azure/iot-edge/troubleshoot).
+To improve robustness, it is highly recommended you specify the DNS server addresses used in your environment. To set your DNS server for IoT Edge, either set DNS server address in container engine settings or per module in the IoT Edge deployment. For more information, see the resolution for **Edge Agent module continually reports 'empty config file' and no modules start on device** in the troubleshooting article [Troubleshoot your IoT Edge device](/azure/iot-edge/troubleshoot).
 
 ## Optional offline settings
 

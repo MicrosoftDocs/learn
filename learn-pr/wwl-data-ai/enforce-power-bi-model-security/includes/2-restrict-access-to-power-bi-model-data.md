@@ -29,7 +29,7 @@ This model design supports examples presented in this unit.
 Rule expressions are evaluated within row context. Row context means the expression is evaluated for each row using the column values of that row. When the expression returns TRUE, the user can “see” the row.
 
 > [!TIP]
-> To learn more about row context, work through the [Add calculated tables and columns to Power BI Desktop models](/learn/modules/dax-power-bi-add-calculated-tables/) module. While this module describes adding model calculations, it includes a unit that introduces and describes row context.
+> To learn more about row context, work through the [Add calculated tables and columns to Power BI Desktop models](/training/modules/dax-power-bi-add-calculated-tables/) module. While this module describes adding model calculations, it includes a unit that introduces and describes row context.
 
 You can define rules that are either static or dynamic.
 

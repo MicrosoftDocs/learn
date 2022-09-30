@@ -16,7 +16,7 @@ abstract: |
   - Implement optimistic concurrency control for an operation
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-implement-cross-document.svg
+iconUrl: /training/achievements/azure-cosmos-db-implement-cross-document.svg
 levels:
 - intermediate
 roles:

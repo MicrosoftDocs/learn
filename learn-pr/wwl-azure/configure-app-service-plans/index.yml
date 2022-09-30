@@ -18,7 +18,7 @@ abstract: |
   - Scale out the App Service Plan.
 prerequisites: |
   None
-iconUrl: /learn/achievements/azure-app-services-configure-service-plans.svg
+iconUrl: /training/achievements/azure-app-services-configure-service-plans.svg
 levels:
 - intermediate
 roles:

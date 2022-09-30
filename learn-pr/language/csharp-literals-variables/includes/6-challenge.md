@@ -2,7 +2,7 @@ In this challenge, you'll write code that will combine literal and variable valu
 
 ### Step 1: Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor then select the `del` or `backspace` key to delete it.
 
 ### Step 2: Write code in the .NET Editor to display a message
 
@@ -13,6 +13,7 @@ Hello, Bob! You have 3 messages in your inbox. The temperature is 34.4 celsius.
 ```
 
 Store the following values from the output in variables:
+
 - Bob
 - 3
 - 34.4

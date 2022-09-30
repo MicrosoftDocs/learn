@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Analyze and summarize data in Python
 durationInMinutes: 5
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/notebooks/6-output-and-summarize-data.ipynb
+notebook: /training/modules/count-moon-rocks-python-nasa/notebooks/6-output-and-summarize-data.ipynb

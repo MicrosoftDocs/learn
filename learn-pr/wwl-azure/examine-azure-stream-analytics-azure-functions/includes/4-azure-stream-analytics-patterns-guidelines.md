@@ -38,4 +38,4 @@ There are two key things to monitor:
 
 Upon failure, activity logs and diagnostics logs are the best places to begin looking for errors.
 
-You can find more information on Azure Stream Analytics solution patterns here: [https://docs.microsoft.com/azure/stream-analytics/stream-analytics-solution-patterns](/azure/stream-analytics/stream-analytics-solution-patterns)
+You can find more information on Azure Stream Analytics solution patterns here: [Azure Stream Analytics solution patterns](/azure/stream-analytics/stream-analytics-solution-patterns)

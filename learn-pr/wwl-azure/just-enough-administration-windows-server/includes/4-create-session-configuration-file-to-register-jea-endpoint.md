@@ -20,5 +20,4 @@ You can also use session configuration files to define which cmdlets and functio
 
 - RunAsVirtualAccountGroup. This setting allows you to specify the groups that the virtual account is a member of, instead of the default Administrators or Domain Admins groups.
 
-For a list of all the options when creating session configuration files, refer to the [New-PSSessionConfigurationFile](/powershell/module/microsoft.powershell.core/new-pssessionconfigurationfile?view=powershell-7.1&preserve-view=true) documentation page on docs.microsoft.com.
-
+For a list of all the options when creating session configuration files, see [New-PSSessionConfigurationFile](/powershell/module/microsoft.powershell.core/new-pssessionconfigurationfile).

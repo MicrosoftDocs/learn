@@ -1,4 +1,4 @@
-As you are setting up your class, you will be assigning work to your students on Microsoft Learn. Microsoft Learn is a free online learning platform that provides interactive learning on Microsoft products and technologies. You and your students can access Microsoft Learn directly we have provided multiple services for you to use to more effectively leverage Microsoft Learn in your classroom.  
+As you are setting up your class, you will be assigning work to your students on Microsoft Learn. Microsoft Learn is a free online learning platform that provides interactive training on Microsoft products and technologies. You and your students can access Microsoft Learn directly. We have provided multiple services for you to use to more effectively leverage this resource in your classroom.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQdf] 
 
@@ -8,7 +8,7 @@ Microsoft Learn / LMS integration benefits:
 
 - **Learn Catalog API**: allows you to send a web-based query to Microsoft Learn and retrieve details about published content. It allows blended Learning and LMS Integration. There is more detailed information on [Microsoft Learn Catalog API - Blended Learning and LMS Integration](https://techcommunity.microsoft.com/t5/educator-developer-blog/microsoft-learn-catalog-api-blended-learning-and-lms-integration/ba-p/1270796). 
 
-- **Learn Organization reporting**: allows you to pull and report on your students' progress and completion information for Microsoft Learn content 
+- **Learn Organization reporting**: allows you to pull and report on your students' progress and completion information for Microsoft Learn training content.
 
 - **Learn LMS / LTI application**: integrate Microsoft Learn modules and learning paths into curricula and provide hands-on experience with Azure and other Microsoft technologies. 
 

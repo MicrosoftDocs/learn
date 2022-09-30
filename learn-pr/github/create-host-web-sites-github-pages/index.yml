@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
-iconUrl: /learn/achievements/github/create-host-web-sites-github-pages.svg
+iconUrl: /training/achievements/github/create-host-web-sites-github-pages.svg
 ratingEnabled: true
 levels:
 - beginner

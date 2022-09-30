@@ -19,7 +19,7 @@ App Service can also host web apps natively on Linux for supported application s
 The languages, and their supported versions, are updated on a regular basis. You can retrieve the current list by using the following command in the Cloud Shell.
 
 ```bash
-az webapp list-runtimes --linux
+az webapp list-runtimes --os-type linux
 ```
 
 ### Limitations

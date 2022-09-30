@@ -5,22 +5,22 @@ In this module, you learned:
 
 ## Check out the next module in this learning path
 
-- [Explore Azure Percept - Learn | Microsoft Docs](/learn/modules/explore-azure-percept/)
+- [Explore Azure Percept](/training/modules/explore-azure-percept/)
 
 You can learn more about IoT, AI and other Microsoft services from these resources:
 
 ## Azure IoT services
 
-- [Introduction to Azure IoT](/learn/modules/introduction-iot/)
-- [Introduction to Azure IoT Hub](/learn/modules/introduction-to-iot-hub/)
-- [Introduction to Azure IoT Edge](/learn/modules/introduction-iot-edge/)  
+- [Introduction to Azure IoT](/training/modules/introduction-iot/)
+- [Introduction to Azure IoT Hub](/training/modules/introduction-to-iot-hub/)
+- [Introduction to Azure IoT Edge](/training/modules/introduction-iot-edge/)  
 
 ## Azure AI services
 
-- [Get started with AI in Azure](/learn/modules/get-started-ai-fundamentals/)
-- [Explore Computer Vision](/learn/paths/explore-computer-vision-microsoft-azure/) 
+- [Get started with AI in Azure](/training/modules/get-started-ai-fundamentals/)
+- [Explore Computer Vision](/training/paths/explore-computer-vision-microsoft-azure/) 
 
 ## Other Microsoft services
 
-- [Azure Stream Analytics](/learn/paths/implement-data-streaming-with-asa/)
-- [Introduction to Power BI](/learn/modules/introduction-power-bi/)
+- [Azure Stream Analytics](/training/paths/implement-data-streaming-with-asa/)
+- [Introduction to Power BI](/training/modules/introduction-power-bi/)

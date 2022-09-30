@@ -2,7 +2,7 @@
 
 ## Setup
 
-Azure Stream Analytics supports multiple output sinks included Azure Cosmos DB SQL API.
+Azure Stream Analytics supports multiple output sinks including Azure Cosmos DB SQL API.
 
 > [!NOTE]
 > As of this time, only the SQL API is supported.

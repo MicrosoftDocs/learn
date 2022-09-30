@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Have access to an existing Azure DevOps project and the connected package feed from the previous demo [Create a package feed](/learn/modules/understand-package-management/10-create-package-feed).
+> Have access to an existing Azure DevOps project and the connected package feed from the previous demo [Create a package feed](/training/modules/understand-package-management/10-create-package-feed).
 
 ## Steps to demonstrate the views on package feeds in Azure Artifacts
 

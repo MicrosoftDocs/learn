@@ -48,7 +48,7 @@ Under the ellipsis, there are more chart controls to interact with the data.
  -  **Download as CSV**: Export your results as a comma-separated values (CSV) file. The CSV file contains data for each device. Results are exported by using the interval and timeframe specified.
  -  **Drop a Marker**: The **Drop a Marker** control lets you anchor certain data points on the chart. It's useful when you're trying to compare data for multiple lines across different time periods.
 
-For detailed information about using the IoT Central Data explorer and building analytics queries, see: [https://docs.microsoft.com/azure/iot-central/core/howto-create-analytics](/azure/iot-central/core/howto-create-analytics).
+For detailed information about using the IoT Central Data explorer and building analytics queries, see: [How to use data explorer to analyze device data](/azure/iot-central/core/howto-create-analytics).
 
 ## Transform and export data
 
@@ -74,14 +74,14 @@ Transformations in an IoT Central data export definition let you manipulate the 
 
 Use transformations to restructure JSON payloads, rename fields, filter out fields, and run simple calculations on telemetry values. For example, use a transformation to convert your messages into a tabular format that matches the schema of a destination such as an Azure Data Explorer table.
 
-For detailed information on setting up data transformations, see: [https://docs.microsoft.com/azure/iot-central/core/howto-transform-data-internally](/azure/iot-central/core/howto-transform-data-internally).
+For detailed information on setting up data transformations, see: [Transform data inside your IoT Central application for export](/azure/iot-central/core/howto-transform-data-internally).
 
 ### IoT Central data export destinations
 
 The IoT Central data export destination options include Azure Blob Storage, Azure Data Explorer, Azure Events Hubs, Azure Service Bus Queue, Azure Service Bus Topic, and Webhook. For detailed instructions on setting up and managing data exports, see the following reference locations:
 
- -  Export to Blob Storage: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-blob-storage](/azure/iot-central/core/howto-export-to-blob-storage).
- -  Export to Service Bus (queue or topic): [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-service-bus](/azure/iot-central/core/howto-export-to-service-bus).
- -  Export to Event Hubs: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-event-hubs](/azure/iot-central/core/howto-export-to-event-hubs)
- -  Export to Azure Data Explorer: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-azure-data-explorer](/azure/iot-central/core/howto-export-to-azure-data-explorer)
- -  Export to webhook: [https://docs.microsoft.com/azure/iot-central/core/howto-export-to-webhook](/azure/iot-central/core/howto-export-to-webhook)
+ -  Export to Blob Storage: [Export IoT data to Blob Storage](/azure/iot-central/core/howto-export-to-blob-storage).
+ -  Export to Service Bus (queue or topic): [Export IoT data to Service Bus](/azure/iot-central/core/howto-export-to-service-bus).
+ -  Export to Event Hubs: [Export IoT data to Event Hubs](/azure/iot-central/core/howto-export-to-event-hubs)
+ -  Export to Azure Data Explorer: [Export IoT data to Azure Data Explorer](/azure/iot-central/core/howto-export-to-azure-data-explorer)
+ -  Export to webhook: [Export IoT data to Webhook](/azure/iot-central/core/howto-export-to-webhook)

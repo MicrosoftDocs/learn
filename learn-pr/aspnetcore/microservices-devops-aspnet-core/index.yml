@@ -49,6 +49,6 @@ units:
   - learn.microservices-devops-aspnet-core.5-deploy-github-action
   - learn.microservices-devops-aspnet-core.6-knowledge-check
   - learn.microservices-devops-aspnet-core.7-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-devops-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-devops-aspnet-core.svg
 badge:
   uid: learn.microservices-devops-aspnet-core.badge

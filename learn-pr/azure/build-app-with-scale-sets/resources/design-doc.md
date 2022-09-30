@@ -253,7 +253,7 @@ Identify the subtasks of *Build a scalable application with virtual machine scal
 
 ## Notes
 
-Create virtual machine scale set - https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli  
-Install and upgrade an application on virtual machine scale set - https://docs.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-cli  
+Create virtual machine scale set - https://learn.microsoft.com/azure/virtual-machine-scale-sets/tutorial-create-and-manage-cli  
+Install and upgrade an application on virtual machine scale set - https://learn.microsoft.com/azure/virtual-machine-scale-sets/tutorial-install-apps-cli  
 
 We currently don't have scale sets enabled in the sandbox so the learner may have to use their own subscription. Design based upon scale sets becoming available in Azure.

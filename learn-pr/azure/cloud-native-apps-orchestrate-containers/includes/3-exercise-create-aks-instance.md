@@ -2,7 +2,7 @@ Azure Container Registry provides storage for Docker images in the cloud. In the
 
 The exercises in this module are designed to give you an overview of how to set up a scalable Cloud Native App using AKS. For more in-depth knowledge and tutorials on containers, Kubernetes, and AKS, you can visit:
 
-* [Introduction to Kubernetes on Azure](/learn/paths/intro-to-kubernetes-on-azure)
+* [Introduction to Kubernetes on Azure](/training/paths/intro-to-kubernetes-on-azure)
 * [Kubernetes Learning Path](https://azure.microsoft.com/resources/kubernetes-learning-path/)
 * [Azure DevOps Labs - Deploying a multi-container application to Azure Kubernetes Services](https://azuredevopslabs.com/labs/vstsextend/kubernetes/)
 

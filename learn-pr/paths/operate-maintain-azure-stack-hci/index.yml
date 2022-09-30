@@ -17,7 +17,7 @@ prerequisites: |
   - Familiarity with the concept of containerization and container orchestration
 summary: |
   This learning path explains how to manage Azure Stack HCI clusters, integrate Microsoft Azure services with Azure Stack HCI, manage Azure Stack HCI VM workloads, and manage Azure Kubernetes Service on Azure Stack HCI.
-iconUrl: /learn/achievements/operate-and-maintain-azure-stack-hci.svg
+iconUrl: /training/achievements/operate-and-maintain-azure-stack-hci.svg
 levels:
 - intermediate
 roles:

@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-dotnet-app-cosmos-db-sql-api.exercise-create-app
-title: Exercise - Create .NET app and import library
+title: Exercise - Create .NET app and reference SDK
 metadata:
   unitType: exercise
-  title: Exercise - Create .NET app and import library
+  title: Exercise - Create .NET app and reference SDK
   description: |
-    Create a .NET application and import the Microsoft.Azure.Cosmos SDK library.
+    Create a .NET application and add a package reference to the Microsoft.Azure.Cosmos SDK.
   sandbox: true
   interactive: bash-editor
   author: seesharprun

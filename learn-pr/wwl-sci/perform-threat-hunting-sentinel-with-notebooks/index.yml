@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
   - Basic experience with Azure services
-iconUrl: /learn/achievements/azure-sentinel-notebooks.svg
+iconUrl: /training/achievements/azure-sentinel-notebooks.svg
 levels:
 - intermediate
 roles:

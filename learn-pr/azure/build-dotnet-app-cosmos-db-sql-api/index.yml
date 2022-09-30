@@ -28,7 +28,7 @@ prerequisites: |
   - Ability to execute scripts with Azure CLI
   - Experience with top-level statement projects in .NET 6 or later
   - Ability to write C# at an intermediate level
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

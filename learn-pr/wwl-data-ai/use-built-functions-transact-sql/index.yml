@@ -20,7 +20,7 @@ abstract: |
   - Filter groups with HAVING
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve data from tables in a database.
-iconUrl: /learn/achievements/use-built-in-functions-in-transact-sql.svg
+iconUrl: /training/achievements/use-built-in-functions-in-transact-sql.svg
 levels:
 - beginner
 roles:

@@ -16,7 +16,7 @@ abstract: |
   - Navigate the Azure portal
   - Customize the dashboard
   - Learn how to opt in to preview services and features
-iconUrl: /learn/achievements/tour-azure-portal-features.svg
+iconUrl: /training/achievements/tour-azure-portal-features.svg
 hidden: false
 levels:
 - beginner

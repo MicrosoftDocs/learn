@@ -1,4 +1,4 @@
-The shipping company that you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you'll use activity log alerts.
+The shipping company you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you'll use activity log alerts.
 
 Your goal is to set up a Linux VM and create an activity log monitoring rule to detect when a VM is deleted. You'll then delete the VM to trigger this alert.
 
@@ -14,11 +14,11 @@ Your goal is to set up a Linux VM and create an activity log monitoring rule to 
 
 1. In the **Select a resource** pane, the **Filter by subscription** field should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, search for and select **Virtual machines**.
 
-1. You want an alert when any virtual machine in your resource group is deleted. Select the **<rgn>[sandbox resource group name]</rgn>** resource group, and then select **Done**.
+1. You want an alert when any virtual machine in your resource group is deleted. Select the box for the **<rgn>[sandbox resource group name]</rgn>** resource group, and then select **Done**.
 
    :::image type="content" source="../media/7-alert-select-resource.png" alt-text="Screenshot that shows the 'Select a scope' pane, with the sandbox resource group selected.":::
 
-1. The **Create an alert rule** pane reappears with the Scope target resource showing **All Virtual machines**. Select the **Condition** tab and the **Select a signal** pane appears.
+1. The **Create an alert rule** pane reappears with the Scope target resource showing **All Virtual machines**. Select the **Condition** tab. The **Select a signal** pane appears.
 
 1. In the **Search by signal name** box, enter **Delete**, and then select **Delete Virtual Machine (Microsoft.Compute/virtualMachines)**.
 
@@ -93,7 +93,7 @@ To trigger an alert, you need to delete the Linux VM machine that you created in
 
 1. Select **Delete** from the menu bar.
 
-1. To confirm the deletion, type **yes** in the confirmation box and select **Delete**.
+1. To confirm the deletion, check the box at the bottom of the pane to confirm, then select **Delete**.
 
 1. In the title bar, select the **Notifications** icon and wait until **vm1** is successfully deleted.
 

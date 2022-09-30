@@ -16,7 +16,7 @@ abstract: |
   - Write a program in C++ by using basic syntax.
   - Recognize C++ terminology, including data types, libraries, and functions.
   - Identify and correct common programming errors.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

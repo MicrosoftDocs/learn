@@ -16,7 +16,7 @@ abstract: |
   * Query relational data
 prerequisites: |
   None
-iconUrl: /learn/achievements/query-relational-data-azure.svg
+iconUrl: /training/achievements/query-relational-data-azure.svg
 levels:
 - beginner
 roles:

@@ -1,4 +1,4 @@
-:::image type="content" source="../media/file-share-backup.png" alt-text="File shares snapshots stored in a recovery service vault.":::
+:::image type="content" source="../media/file-share-backup.png" alt-text="Diagram of file shares snapshots stored in a recovery service vault.":::
 
 
 Azure Files provides the capability to take [share snapshots of file shares](/azure/storage/files/storage-snapshots-files). Share snapshots give you an extra level of security and help reduce the risk of data corruption or accidental deletion. You can also use them as a general backup for disaster recovery.
@@ -26,7 +26,7 @@ Azure Files provides the capability to take [share snapshots of file shares](/az
 
 It is recommended you use Azure Backup to automate and manage file share snapshots. 
 
-:::image type="content" source="../media/file-share-automated.png" alt-text="File shares snapshots are restored from the recovery services vault.":::
+:::image type="content" source="../media/file-share-automated.png" alt-text="Diagram of file shares snapshots restored from a recovery services vault.":::
 
 
 - Azure Backup keeps the metadata about the backup in the recovery services vault, but no data is transferred. This means a fast backup solution with built-in backup and reporting. 

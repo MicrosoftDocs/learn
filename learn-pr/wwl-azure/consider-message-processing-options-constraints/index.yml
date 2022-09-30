@@ -20,7 +20,7 @@ prerequisites: |
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the features and capabilities of IoT Hub.
   - Describe how an IoT solution uses message routing to process message and event data.
-iconUrl: /learn/achievements/messaging-processing-options.svg
+iconUrl: /training/achievements/messaging-processing-options.svg
 levels:
 - intermediate
 roles:

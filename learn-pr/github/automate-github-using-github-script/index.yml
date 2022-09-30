@@ -20,7 +20,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Familiarity with GitHub Actions
-iconUrl: /learn/achievements/github/automate-github-using-github-script.svg
+iconUrl: /training/achievements/github/automate-github-using-github-script.svg
 ratingEnabled: true
 levels:
 - beginner

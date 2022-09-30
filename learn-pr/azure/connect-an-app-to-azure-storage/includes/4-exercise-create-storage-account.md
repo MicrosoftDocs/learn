@@ -9,11 +9,11 @@ We'll use the `az storage account create` command to create a new storage accoun
  | `--name` | A **storage account name**. The name will be used to generate the public URL used to access the data in the account. It must be unique across all existing storage account names in Azure. It must be 3 to 24 characters long and can contain only lowercase letters and numbers. |
  | `--resource-group` | Use **<rgn>[sandbox resource group name]</rgn>** to place the storage account into the free sandbox. |
  | `--location` | Select a location near you (see below). |
- | `--sku` | This decides the storage account performance and replication model. Options include `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, and `Standard_ZRS`. |
+ | `--sku` | The storage account performance and replication model. Options include `Premium_LRS`, `Standard_GRS`, `Standard_LRS`, `Standard_RAGRS`, and `Standard_ZRS`. |
 
 Use this table to craft a command line in Cloud Shell on the right to create the account.
 
-- Use a unique name. We recommend something like "photostore" with your initials and a random number. You will get an error if it's not unique.
+- Use a unique name. We recommend something like "photostore" with your initials and a random number. You'll get an error if it's not unique.
 
 - Normally, you'd create a new resource group to hold your app resources, but in this case, use the provided sandbox resource group "**<rgn>[sandbox resource group name]</rgn>**".
 
@@ -40,6 +40,6 @@ Use this table to craft a command line in Cloud Shell on the right to create the
     ```
 
     > [!TIP]
-    > If you are interested in exploring the options for the storage account, review the [Create an Azure storage account](/learn/modules/create-azure-storage-account?azure-portal=true) module, where we go through all the options in depth.
+    > If you are interested in exploring the options for the storage account, review the [Create an Azure storage account](/training/modules/create-azure-storage-account?azure-portal=true) module, where we go through all the options in depth.
 
 It will take a few minutes to deploy the account. While Azure is working on that, let's look at how we interact with the Azure Storage APIs.

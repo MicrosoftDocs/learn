@@ -17,7 +17,7 @@ abstract: |
   - Describe how to create and manage machine learning models using MLOps processes.
   - Articulate processes to monitor models and respond to incidents. 
 prerequisites: None
-iconUrl: /learn/achievements/start-ml-lifecycle-mlops.svg
+iconUrl: /training/achievements/start-ml-lifecycle-mlops.svg
 levels: 
 - intermediate
 roles: 

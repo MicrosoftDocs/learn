@@ -150,9 +150,9 @@ Description of how the student resolved the module scenario problem.
 
 If known, add further learning reference links that will be helpful to students. Otherwise, add to the Summary unit during development.
 <!--LM: Please resolve the "double" bullets in the following list so it displays correctly.-->
--  https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr?view=o365-worldwide
-  •	https://docs.microsoft.com/en-us/legal/gdpr
+-  https://learn.microsoft.com/microsoft-365/compliance/gdpr?view=o365-worldwide
+  •	https://learn.microsoft.com/legal/gdpr
   •	https://www.microsoft.com/en-gb/trust-center/privacy/gdpr-faqs
-  •	https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-ccpa?view=o365-worldwide
-  •	https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-home?view=o365-worldwide
+  •	https://learn.microsoft.com/microsoft-365/compliance/offering-ccpa?view=o365-worldwide
+  •	https://learn.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide
   •	https://www.microsoft.com/en-us/trust-center/privacy/customer-data-definitions

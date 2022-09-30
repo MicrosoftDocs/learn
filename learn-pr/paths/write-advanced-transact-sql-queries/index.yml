@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with Transact-SQL
 summary: |
   Learn how to use advanced Transact-SQL features to fetch and transform data in your databases.
-iconUrl: /learn/achievements/transact-sql-write-queries.svg
+iconUrl: /training/achievements/transact-sql-write-queries.svg
 levels:
 - advanced
 roles:

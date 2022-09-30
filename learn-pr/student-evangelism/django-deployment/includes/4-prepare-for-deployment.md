@@ -30,14 +30,15 @@ The values you assign to two core settings, `ALLOWED_HOSTS` and `DATABASES`, dep
 
 `ALLOWED_HOSTS` controls the servers that are allowed to host or run your application. You'll configure it to allow the site to run from Azure and locally. `DATABASES` contains the list of available connection strings.
 
-A common way to configure the settings is to create a second Python file that contains the collection of settings for production. Then a flag in *manage.py* reads the appropriate file.
+A common way to configure the settings is to create a second Python file that contains the collection of settings for production. Then a check at the end of the *settings.py* determines whether to use the production settings.
 
-Now you'll create a production settings file. Then you'll update *manage.py* to load the file when your application is running in production:
+Now you'll create a production settings file and add the check to determine if your application is running in production:
 
 1. Create a new file inside *project*. Name it *azure.py*.
 1. Add the following code to import `os`.
 
     ```python
+    from .settings import *
     import os
     ```
 

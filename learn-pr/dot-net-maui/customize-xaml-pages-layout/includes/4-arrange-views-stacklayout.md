@@ -99,23 +99,9 @@ Every view has a `VerticalOptions` and `HorizontalOptions` property. You can use
 
 As noted above, with `StackLayout`, the behavior of the `LayoutOptions` properties depends on the `Orientation` property of the `StackLayout`. `StackLayout` uses the `LayoutOptions` property in the direction opposite to its `Orientation`. By default, an element in a stack layout won't be allocated any extra space in the same direction as the `Orientation` of the stack layout. Assigning a position for that direction in this default case won't change the rendering of the element. There's a change in the rendering, though, when position is combined with expansion.
 
-## What is expansion?
+## What about expansion?
 
-Recall from an earlier unit that the `LayoutOptions` struct contains a `bool` property called `Expands`. This property is designed specifically for `StackLayout` and allows a child view to request extra space if there's any available. Here's an example of how the `Expands` property works:
-
-:::image type="content" source="../media/4-expands-property.png" alt-text="Illustration showing a StackLayout expansion with three boxes: the top and bottom boxes request extra space and are given a split of the remaining vertical whitespace.":::
-
-Notice that there's extra space available in the `StackLayout`. The extra space will be divided evenly among all views that request additional space.
-
-## How to request extra space
-
-Every view has two `LayoutOptions` properties called `VerticalOptions` and `HorizontalOptions`. So far, you've seen four values for these properties: `Start`, `Center`, `End`, and `Fill`. If you want to request extra space, you replace the `LayoutOptions` value with one of these values: `StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, or `FillAndExpand`.
-
-Here's how each of these values works:
-
-:::image type="content" source="../media/4-layout-options-expands.png" alt-text="Illustration showing a box in StackLayout using four expansion settings: StartAndExpand, CenterAndExpand, EndAndExpand, and FillAndExpand.":::
-
-The orange box is the view and the gray rectangle represents the extra space given to it by the `Expands` property. The view fills the extra space only when you use the `FillAndExpand` value. When you use the other values, the extra space remains empty, but it can't be used by other views in the `StackLayout`.
+Recall from an earlier unit that the `LayoutOptions` struct contains a `bool` property called `Expands`, that is now obsolete in .NET MAUI. You will notice when you set the `VerticalOptions` and `HorizontalOptions` that there are additional `LayoutOptions` of `StartAndExpand`, `CenterAndExpand`, `EndAndExpand`, or `FillAndExpand`. If you set `LayoutOptions` to an option with `AndExpand`, it is ignored and the first part of the `LayoutOptions` is used such as `Start`, `Center`, `End`, or `Fill`. If you are migrating from Xamarin.Forms, you should remove all `AndExpand` from these properties. We will see how to achieve similar funcationality when we learn about `Grid`.
 
 ## Optimized StackLayouts
 

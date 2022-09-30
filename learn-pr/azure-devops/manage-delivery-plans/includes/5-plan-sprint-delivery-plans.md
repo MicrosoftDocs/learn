@@ -1,4 +1,4 @@
-Here you create a delivery plan and use it to plan a sprint in Azure DevOps.
+Here, you'll create a delivery plan and use it to plan a sprint in Azure DevOps.
 
 The Tailspin team is eager to see how Delivery Plans is going to work. They already have two teams with sprints set up in Azure DevOps, so now they can review and optimize the work schedules.
 

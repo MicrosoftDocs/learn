@@ -1,4 +1,4 @@
-After you've chosen whether to use managed or unmanaged disks, next you have to pick the best disk type for your virtual machines.
+After you've chosen whether to use managed or unmanaged disks, you'll next need to pick the best disk type for your virtual machines.
 
 Here, you'll learn about the performance and behavior of each disk type so that you can make the right choice.
 
@@ -70,11 +70,11 @@ If you need higher performance than standard disks provide, or if you can't sust
 
 You can migrate a disk to a Premium SSD managed disk at any time, if you've found that its performance isn't good enough.
 
-![Creating a premium SSD.](../media/3-create-premium-ssd.png)
+![Screenshot showing a premium SSD creation.](../media/3-create-premium-ssd.png)
 
 ## Standard SSD
 
-Standard SSDs in Azure are a cost-effective storage option for virtual machines that need consistent performance at lower speeds. Standard SSDs aren't as fast as premium or Ultra Disks, but they still have latencies in the range of 1 millisecond to 10 milliseconds and up to 6,000 IOPS. They're available to attach to any virtual machine, no matter what size it is.
+Standard SSDs in Azure are a cost-effective storage option for virtual machines that need consistent performance at lower speeds. Standard SSDs aren't as fast as Premium or Ultra Disks, but they still have latencies in the range of 1 millisecond to 10 milliseconds and up to 6,000 IOPS. They're available to attach to any virtual machine, no matter what size.
 
 This table has examples that illustrate the performance characteristics of Standard SSDs in several sizes:
 
@@ -86,15 +86,15 @@ This table has examples that illustrate the performance characteristics of Stand
 | E80 | 32,767 | 6,000 | 750 |
 | | | |
 
-These performance figures aren't guaranteed but are achieved 99% of the time.
+These performance figures aren't guaranteed, but are achieved 99% of the time.
 
 Use Standard SSDs when you have budgetary constraints and a workload that isn't disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
 
-![Selecting a size for a standard SSD.](../media/3-select-standard-ssd-size.png)
+![Screenshot of size selection for a standard SSD.](../media/3-select-standard-ssd-size.png)
 
 ## Standard HDD
 
-If you choose to use Standard HDDs, data is stored on conventional magnetic disk drives with moving spindles. Disks are slower and speeds are more variable than for SSDs, but latencies are under 10 ms for write operations and 20 ms for reads. As for Standard SSDs, you can use Standard HDDs for any virtual machine.
+If you choose to use Standard HDDs, data is stored on conventional magnetic disk drives with moving spindles. Disks are slower and speeds are more variable than for SSDs, but latencies are under 10 ms for write operations and 20 ms for reads. As with Standard SSDs, you can use Standard HDDs for any virtual machine.
 
 This table illustrates the performance characteristics of standard HDDs in several sizes:
 

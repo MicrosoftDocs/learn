@@ -20,7 +20,7 @@ abstract: |
     - Create an Azure Machine Learning Studio Datastore
 prerequisites: |
   - [Azure Free Trial Account](https://azure.microsoft.com/free/)
-iconUrl: /learn/achievements/setup-configure-nvidia-deepstream-development.svg
+iconUrl: /training/achievements/setup-configure-nvidia-deepstream-development.svg
 levels:
 - intermediate
 roles:

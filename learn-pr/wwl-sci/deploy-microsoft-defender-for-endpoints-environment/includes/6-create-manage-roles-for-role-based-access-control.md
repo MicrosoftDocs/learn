@@ -47,7 +47,7 @@ The permission options:
 
     - Start a live response session
 
-    - Perform read-only live response commands on remote device (excluding file copy and execution
+    - Perform read-only live response commands on remote device (excluding file copy and execution)
 
   - Advanced commands:
 

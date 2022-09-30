@@ -15,7 +15,7 @@ abstract: |
   - Discuss each threat category in the threat modeling framework
   - Learn about the security controls to help reduce or eliminate risk
 prerequisites: None
-iconUrl: /learn/achievements/use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.svg
+iconUrl: /training/achievements/use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.svg
 levels:
 - beginner
 roles:

@@ -30,9 +30,9 @@ The pilot can run in parallel to project planning and preparation. This phase ca
 
     * Enable Azure Write Accelerator for DBMS log drives with M-Series Azure VMs. Be aware of documented Write accelerator limits and usage restrictions (as described in the previous module)
 
-    * For DBMS-related storage information, refer to Microsoft doc Considerations for Azure Virtual Machines DBMS deployment for SAP workload at [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/dbms_guide_general](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/dbms_guide_general).
+    * For DBMS-related storage information, refer to Microsoft doc Considerations for Azure Virtual Machines DBMS deployment for SAP workload at [Considerations for Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_general).
 
-    * For SAP HANA deployments, refer to the Microsoft doc SAP HANA infrastructure configurations and operations on Azure at [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-vm-operations](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/hana-vm-operations).
+    * For SAP HANA deployments, refer to the Microsoft doc SAP HANA infrastructure configurations and operations on Azure at [SAP HANA infrastructure configurations and operations on Azure](/azure/virtual-machines/workloads/sap/hana-vm-operations).
 
     * Never mount Azure data disks to an Azure Linux VM by using the device ID. Instead, use the universally unique identifier (UUID). Be careful when you use graphical tools to mount Azure data disk. Double-check the entries in /etc/fstab to make sure that the disks are mounted using the UUID. 
 

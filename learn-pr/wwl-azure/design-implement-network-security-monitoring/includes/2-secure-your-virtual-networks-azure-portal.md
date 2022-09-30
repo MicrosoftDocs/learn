@@ -123,7 +123,7 @@ Also in the right pane is the Take action tab. Use this tab to take further acti
 
 ## Network Security
 
-Network Security covers controls to secure and protect Azure networks, including securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing DNS. Full description of the controls can be found at [Security Control V2: Network Security on Microsoft Docs](/security/benchmark/azure/security-controls-v2-network-security).
+Network Security covers controls to secure and protect Azure networks, including securing virtual networks, establishing private connections, preventing and mitigating external attacks, and securing DNS. Full description of the controls can be found at [Security Control V2: Network Security](/security/benchmark/azure/security-controls-v2-network-security).
 
 ### NS-1: Implement security for internal traffic
 

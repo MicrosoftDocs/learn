@@ -24,7 +24,7 @@ prerequisites: |
   - Active Directory Domain Services (AD DS) concepts and technologies.
   - Core networking technologies.
   - Basic security best practices.
-iconUrl: /learn/achievements/implement-remote-access.svg
+iconUrl: /training/achievements/implement-remote-access.svg
 levels:
 - intermediate
 roles:
