@@ -41,5 +41,5 @@ As you’re considering cloud-hosted database offerings, consider usability, sca
 
 In this module, you will:
 
-- Describe the components of Azure Database for PostgreSQL
-- Identify situations when to use Azure Database for PostgreSQL
+- Describe the components of Azure Cosmos DB for PostgreSQL
+- Identify situations when to use Azure Cosmos DB for PostgreSQL
