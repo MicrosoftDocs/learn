@@ -39,8 +39,8 @@ For a multi-class classification model (where there are more than two possible c
 
 Metrics can be derived from the confusion matrix include:
 - **Accuracy**: The ratio of correct predictions (true positives + true negatives) to the total number of predictions. 
-- **Precision**: The fraction of positive cases correctly identified (the number of true positives divided by the number of true positives plus false positives). 
-- **Recall**: The fraction of the cases classified as positive that are actually positive (the number of true positives divided by the number of true positives plus false negatives).
+- **Precision**: The fraction of the cases classified as positive that are actually positive (the number of true positives divided by the number of true positives plus false positives). 
+- **Recall**: The fraction of positive cases correctly identified (the number of true positives divided by the number of true positives plus false negatives).
 - **F1 Score**: An overall metric that essentially combines precision and recall.
 
 Of these metric, *accuracy* is the most intuitive. However, you need to be careful about using accuracy as a measurement of how well a model works. Suppose that only 3% of the population is diabetic. You could create a model that always predicts **0** and it would be 97% accurate, but it would not help correctly predict cases of diabetes. For this reason, most data scientists use other metrics like precision and recall to assess classification model performance.
