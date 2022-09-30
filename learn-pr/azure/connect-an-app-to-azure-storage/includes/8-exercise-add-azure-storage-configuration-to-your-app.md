@@ -81,20 +81,31 @@ Now that we've added the required libraries to enable reading the configuration,
 
 1. In the editor, select **Program.cs**.
 
-1. At the top of the file is a **using System;** line. Immediately below that line, add the following lines of code:
+1. At the top of the file is a commented line of code. Delete that line and add the following lines of code to the top of the file:
 
     ```csharp
+    using System;    
     using Microsoft.Extensions.Configuration;
     using System.IO;
     ```
 
-1. Replace the contents of the **Main** method (the line that contains "Hello World!") with the following code. 
+1. Replace the contents of the **Main** method (the line that contains "Hello World!") with the following code:
+
     ```csharp
-    var builder = new ConfigurationBuilder()
-        .SetBasePath(Directory.GetCurrentDirectory())
-        .AddJsonFile("appsettings.json");
-    
-    var configuration = builder.Build();
+    namespace PhotoSharingApp
+    {
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                var builder = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json");
+
+                var configuration = builder.Build();
+            }
+        }
+    }
     ```
     
     This code initializes the configuration system to read from the **appsettings.json** file.
@@ -123,7 +134,7 @@ Now that we've added the required libraries to enable reading the configuration,
     ```
 
 1. Save the file.
-    
+
 ::: zone-end
 
 ::: zone pivot="javascript"

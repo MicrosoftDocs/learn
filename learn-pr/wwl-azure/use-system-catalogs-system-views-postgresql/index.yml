@@ -3,7 +3,7 @@ uid: learn.wwl.use-system-catalogs-system-views-postgresql
 metadata:
   title: Use system catalogs and system views in PostgreSQL
   description: "Relational databases can store vast quantities of data, but they also need to hold information about the structure of that data. For an operational database management system (DBMS) information about the structure of tables, and all other objects, security, and concurrency, amongst many other settings and metrics, is required. This information is know as metadata and is stored in system catalogs in Azure Database for PostgreSQL. In addition to directly accessing system catalogs, you can access system views which present the data from system catalogs in more understandable or useful ways."
-  ms.date: 06/23/2022
+  ms.date: 09/29/2022
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Demonstrate an understanding of relational databases.
   - Demonstrate an understanding of basic SQL.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/use-system-catalogs-system-views-postgresql.svg
 levels:
 - intermediate
 roles:
