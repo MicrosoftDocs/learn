@@ -93,7 +93,8 @@ The **Azure Storage Blob client library for JavaScript** contains many client ob
     // Create a container (folder) if it does not exist
     const containerName = 'photos';
     const containerClient = blobServiceClient.getContainerClient(containerName);
-    if ( !containerClient.exists()) {  
+    const containerExists = await containerClient.exists()
+    if ( !containerExists) {
         const createContainerResponse = await containerClient.createIfNotExists();
         console.log(`Create container ${containerName} successfully`, createContainerResponse.succeeded);
     }
@@ -104,7 +105,7 @@ The **Azure Storage Blob client library for JavaScript** contains many client ob
 
 1. Save the changes you made to the *index.js* file.
 
-1. In the Cloud Shell command line, enter the following command to build and run your program, which creates the container in your storage account. 
+1. In the Cloud Shell command line, enter the following command to build and run your program, which creates the container in your storage account.
 
     ```bash
     node index.js
