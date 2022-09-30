@@ -15,11 +15,11 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What can be stored and queried with Azure Database for PostgreSQL?'
+  - content: 'What can be stored and queried with Azure Cosmos for PostgreSQL?'
     choices:
     - content: "Code modules, which can be run by queries"
       isCorrect: false
-      explanation: "Incorrect. Azure Database for PostgreSQL can store code modules, but it can also store other data too."
+      explanation: "Incorrect. Azure Cosmos for PostgreSQL can store code modules, but it can also store other data too."
     - content: "Geometric data"
       isCorrect: false
       explanation: "Incorrect. Azure Database for PostgreSQL can store geometric data, but it can also store other data too."
