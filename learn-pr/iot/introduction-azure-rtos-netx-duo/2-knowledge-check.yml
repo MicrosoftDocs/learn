@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.introduction-azure-rtos-netx-duo.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 07/20/2022
+  author: edlamie80
+  ms.author: liydu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+quiz:
+  questions:
+  - content: "How many layers are in the TCP/IP stack?"
+    choices:
+    - content: "Nine"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Two"
+      isCorrect: false
+      explanation: "Incorrect, inter-thread communication is the best choice."
+    - content: "Four"
+      isCorrect: false
+      explanation: "Incorrect, inter-thread communication is the best choice."
+    - content: "Five"
+      isCorrect: false
+      explanation: "Incorrect, inter-thread communication is the best choice."
