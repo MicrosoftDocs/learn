@@ -53,7 +53,7 @@ After you build and customize a virtual machine, you can save the new image as a
 
 You must reset these items back to a default state before you use the image to create more virtual machines. Otherwise, you might end up with multiple virtual machines that have the same identities. The process of resetting this data is called *generalization*, and the result is a *generalized image*.
 
-The tools for preparing a virtual machine for generalization vary according to the operating system that's being installed and configured. For Windows, use the Microsoft System Preparation (Sysprep) tool. For Linux, use the Windows Azure Linux Agent (waagent) tool.
+The tools for preparing a virtual machine for generalization vary according to the operating system that's being installed and configured. For Windows, use the Microsoft System Preparation (Sysprep) tool. For Linux, use the Microsoft Azure Linux Agent (waagent) tool.
 
 When you create a new virtual machine by using a generalized image, you have to supply items such as the host name, user account details, and other information that the generalization process removed.
 
