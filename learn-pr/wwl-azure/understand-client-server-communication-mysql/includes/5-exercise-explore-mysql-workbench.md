@@ -48,7 +48,7 @@ To complete these exercises, you must have:
 1. In **Hostname**, enter the fully qualified name of your Azure Database for MySQL flexible server that you created in Module 1. You can copy the name of the server from the Azure portal. Navigate to your Azure Database for MySQL flexible server, and from the **Overview** blade copy the server name. Paste this into the Hostname field.
 1. In **Username**, enter **demo** (the username used when you created the server).
 1. Select **Store in Vault**, and in **Password** enter **Pa$$w0rd** (the password you used when you created the server).
-1. Select **Test Connection**. If the details are correct, an acknowledgement is displayed.
+1. Select **Test Connection**. If the details are correct, an acknowledgment is displayed.
 1. Select **OK**. If the connection details are correct, MySQL Workbench connects to Azure Database for MySQL and displays the navigator window, an empty query window and other user interface elements.
 1. Leave MySQL Workbench open for the next exercise.
 
