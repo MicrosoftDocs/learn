@@ -32,6 +32,22 @@ To save time, start by running a script to host our test API in Azure. The scrip
 
    As the name suggests, **setup-exercise.sh** is the script that we'll run to create our lab environment. **PrintFramerAPI** contains the app that we want to deploy to Azure as a web app with a public API.
 
+   [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+
+1. Before running the script, you must add a location parameter to the `az appservice plan create` command in the setup script. Run the following command to open the **setup-exercise.sh** file in the Cloud Shell editor.
+
+   ```bash
+   . code setup-exercise.sh
+   ```
+
+1. Add a `location` parameter to the `az appservice plan create` command. Select a location from the previous list of sandbox regions. For example:
+
+   ```typescript
+   az appservice plan create --name $apiappname --resource-group $RESOURCE_GROUP --location eastus --sku FREE --verbose
+   ```
+
+1. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes, and then press <kbd>Ctrl</kbd> + <kbd>Q</kbd> to exit the editor.
+
 1. In the Cloud Shell, run the following command to execute the setup script:
 
    ```bash
