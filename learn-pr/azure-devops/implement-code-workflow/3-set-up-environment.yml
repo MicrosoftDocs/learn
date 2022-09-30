@@ -4,9 +4,10 @@ title: Exercise - Set up your Azure DevOps environment
 metadata:
   title: Exercise - Set up your Azure DevOps environment
   description: Run a template to set up your Azure DevOps environment.
-  ms.date: 05/25/2021
+  ms.date: 07/29/2022
   author: juliakm
   ms.author: jukullam
+  ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

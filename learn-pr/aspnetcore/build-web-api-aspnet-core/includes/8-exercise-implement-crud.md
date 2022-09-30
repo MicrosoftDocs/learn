@@ -2,7 +2,7 @@ Let's continue extending our web API controller to add the ability to create (`P
 
 ## Add a pizza
 
-Enable a pizza to be added through the web API by using a `POST` method.
+Let's enable a pizza to be added through the web API by using a `POST` method.
 
 Replace the `// POST action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
@@ -27,7 +27,7 @@ The first parameter in the `CreatedAtAction` method call represents an action na
 
 ## Modify a pizza
 
-Enable a pizza to be updated through the web API by using a `PUT` method.
+Now, let's enable a pizza to be updated through the web API by using a `PUT` method.
 
 Replace the `// PUT action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
@@ -52,14 +52,14 @@ The preceding action:
 
 * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
 * Requires that the `id` parameter's value is included in the URL segment after `pizza/`.
-* Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest`, `NotFound`, and `NoContent` methods return `BadRequestResult`, `NotFoundResult`, and `NoContentResult` types, respectively.
+* Returns `IActionResult`, because the `ActionResult` return type isn't known until runtime. The `BadRequest`, `NotFound`, and `NoContent` methods return `BadRequestResult`, `NotFoundResult`, and `NoContentResult` types, respectively.
 
 > [!NOTE]
 > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
 
 ## Remove a pizza
 
-Enable a pizza to be removed through the web API by using a `DELETE` method.
+Finally, let's enable a pizza to be removed through the web API by using a `DELETE` method.
 
 Replace the `// DELETE action` comment in *:::no-loc text="Controllers/PizzaController.cs":::* with the following code:
 
@@ -84,6 +84,8 @@ The preceding action:
 * Requires that the `id` parameter's value is included in the URL segment after `pizza/`.
 * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `NotFound` and `NoContent` methods return `NotFoundResult` and `NoContentResult` types, respectively.
 * Queries the in-memory cache for a pizza that matches the provided `id` parameter.
+
+Remember to save the *Controllers/PizzaController.cs* file before proceeding,
 
 ## Build and run the finished web API
 

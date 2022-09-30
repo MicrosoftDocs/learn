@@ -1,12 +1,12 @@
 Azure Active Directory (Azure AD) enables single sign-on to devices, apps, and services from anywhere. IT administrators must ensure corporate assets are protected and that devices meet standards for security and compliance.
 
-:::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="A device is shown connecting to Azure AD. Azure AD is shown connecting with On-premises AD.":::
+:::image type="content" source="../media/azure-joined-devices-27a1fc5f.png" alt-text="Diagram showing a device connecting to Azure AD. Azure AD is shown connecting with On-premises AD.":::
 
 
 Azure AD Join is designed to provide access to organizational apps and resources and to simplify Windows deployments of work-owned devices. AD Join has these benefits.
 
  -  **Single-Sign-On (SSO)** to your Azure-managed SaaS apps and services. Your users won't have additional authentication prompts when accessing work resources. The SSO functionality is available even when users are not connected to the domain network.
- -  **Enterprise state roaming** of user settings across joined devices. With Windows 10,users gain the ability to securely synchronize their user settings and application settings data to the cloud. This reduces the time to configure a new device. 
+ -  **Enterprise state roaming** of user settings across joined devices. With Windows 10, users gain the ability to securely synchronize their user settings and application settings data to the cloud. This reduces the time to configure a new device. 
  -  **Access to Microsoft Store for Business** using an Azure AD account. Your users can choose from an inventory of applications pre-selected by the organization.
  -  **Windows Hello** support for secure and convenient access to work resources.
  -  **Restriction of access** to apps from only devices that meet compliance policy.

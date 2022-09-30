@@ -23,7 +23,7 @@ Both these pieces of information are provided to the [ServiceBusClient](/dotnet/
 
 ## Call methods asynchronously
 
-The queue in Azure might be located thousands of miles away from sending and receiving components. Even if it is physically close, slow connections and bandwidth contention might cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
+The queue in Azure might be located thousands of miles away from sending and receiving components. Even if it's physically close, slow connections and bandwidth contention might cause delays when a component calls a method on the queue. For this reason, the Service Bus client library makes `async` methods available for interacting with queues. We'll use these methods to avoid blocking a thread while waiting for calls to complete.
 
 When you send a message to a queue, for example, use the [SendMessageAsync](/dotnet/api/azure.messaging.servicebus.servicebussender.sendmessageasync) method with the `await` keyword.
 

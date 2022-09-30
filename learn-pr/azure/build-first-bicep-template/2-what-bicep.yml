@@ -6,8 +6,8 @@ metadata:
   title: What is Bicep?
   description: Learn what Bicep is and how to install the Bicep tooling.
   ms.date: 11/25/2021  
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
 durationInMinutes: 2

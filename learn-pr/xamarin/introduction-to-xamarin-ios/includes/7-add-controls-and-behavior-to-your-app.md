@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 In the previous unit, you saw how to position a view. Now you look at how to build the tip calculator UI and add behavior by using standard iOS controls.
 
 UIKit includes a full set of common controls you can use to create your application UI. Look in the following table for the most popular iOS controls and their analogs in Android and Windows:

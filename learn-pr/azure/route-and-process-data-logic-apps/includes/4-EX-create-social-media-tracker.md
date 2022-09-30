@@ -1,101 +1,131 @@
-In this exercise, we'll create our social media logic app using the Azure portal. We'll add a Twitter trigger using the Logic Apps Designer. The following illustration shows a conceptual view of the app with the part that we'll work on highlighted.
+In this exercise, we'll create our social media monitoring logic app using the Azure portal. We'll add a Twitter trigger using the workflow designer. The following diagram shows a conceptual view for the app and highlights the part that we'll work on.
 
-:::image type="complex" source="../media/exercise-add-trigger.png" alt-text="An illustration showing the triggers and actions in the social media monitor logic app." lightbox="../media/exercise-add-trigger.png" border="false"::: 
-   The first step is a Twitter trigger labeled **When a new tweet is posted**. This trigger is highlighted to indicate that is the part of the app that will be completed in this exercise.
-:::image-end:::  
+:::image type="complex" source="../media/exercise-add-trigger.png" alt-text="Diagram shows triggers and actions in the social media monitoring logic app." lightbox="../media/exercise-add-trigger.png" border="false":::
+The first step is a Twitter trigger named "When a new tweet is posted. This trigger is highlighted to show the completed part in this exercise.
+:::image-end:::
 
-## Locate the Azure logic app resource
+## Create the logic app resource
 
-The first thing we need to do is create an Azure logic app. To do that, we need to locate the Azure Logic Apps resource type in the Azure portal.
+First, we need to create the logic app resource in Azure. For this task, we need to find the **Logic App** resource type in the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
+1. With the same account that you used to activate the sandbox, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu, select **All Services**, and in the **All services** menu, under **Integration**, select **Logic apps**. The **Logic apps** pane appears.
+   [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. In the top menu bar, select **Add**. The **Create Logic App** pane appears.
+1. On the Azure portal home page, select **Create a resource**. On the **Create a resource** menu, select **Integration** > **Logic App**.
 
-## Configure your Azure Logic App resource
+   The **Create Logic App** page appears.
 
-Let's configure basic settings, like resource group and location.
+1. Now configure the resource's basic settings, such as subscription, resource group, name, and location.
 
-1. On the **Basics** tab, enter the following values for each setting.
+   1. On the **Basics** tab, provide the following values for each setting:
 
-    | Setting | Value |
-    |---|---|
-    | **Project Details** |
-    | Subscription | Concierge Subscription |
-    | Resource group | From the dropdown list, select <rgn>[Sandbox resource group]</rgn> |
-    | **Instance Details** |
-    | Type | Consumption |
-    | Logic app name | Enter *ShoeTracker* |
-    | Region | Select a location closest to you from the dropdown list. |
+      | Setting | Value |
+      |---------|-------|
+      | **Project Details** |
+      | **Subscription** | Concierge Subscription |
+      | **Resource Group** | From the list, select <rgn>[Sandbox resource group]</rgn> |
+      | **Instance Details** |
+      | **Logic app name** | **ShoeTracker** |
+      | **Region** | Select a location nearest you. |
+      | **Type** | Consumption |
+  
+   1. Select **Review + create**, and then select **Create**.
 
-    [!INCLUDE [](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+   The deployment pane appears and shows the deployment progress with the resources that Azure creates.
+      
+1. Wait for deployment to successfully finish. 
 
-1. Select **Review + create** and then select **Create**. The Deployment pane displays the resources that are created. Wait for deployment to succeed.
+1. After deployment for your logic app resource completes, select **Go to resource**.
 
-## Use a template for your Azure logic app
+   The page with the common trigger and template galleries now appears.
 
-When you create a logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch.
+## Select a template for your logic app workflow
 
-1. After deployment completes, select **Go to resource**. The **Logic Apps Designer** appears for your *ShoeTracker* logic app.
+After you create and deploy a new logic app resource in the Azure portal, you can select a starter template. Let's select the blank template so that we can build our logic app workflow from scratch.
 
-1. Scroll down to the *Templates* section, and select the **Blank Logic App**  
+On the page with the common trigger and template galleries, scroll down to the **Templates** section, and select the **Blank Logic App** template.
 
-## Create a Twitter trigger
+The workflow designer surface opens for you to add a trigger.
 
-Now, let's create the trigger and provide values for all required parameters.
- 
-> [!NOTE]
-> If you do not have a Twitter account and prefer not to create one, use the following substitutions. Substitute the **When a feed item is published** in the search field, and then Select the RSS trigger in the bottom box. Set the **RSS feed URL** to `https://rss2.feedspot.com/https://www.reuters.com/technology`, the **Chosen property** to `UpdatedOn`, the **How often to check for items** to `1`, and the **Frequency** to `Minute`. The disadvantage of this approach is that new articles appear infrequently in RSS feeds so you may have to wait a while before this trigger activates.
+## Add a Twitter trigger
 
-1. In the *Search connectors and triggers* field, enter *When a new tweet is posted*. In the lower dialog box, select the Twitter **When a new tweet is posted**.
+Now, you'll add the Twitter trigger and provide values for all required parameters. If you don't have a Twitter account and prefer not to create one, follow the steps that substitute the RSS trigger instead. The downside to using the RSS trigger is that new articles appear infrequently in RSS feeds, so you might have to wait a while before this trigger activates.
 
-1. A **Twitter** dialog box prompts you to enter:
+1. On the designer, in the search box, enter **twitter**. From the triggers list, select the trigger named **When a new tweet is posted**.
 
-    | Setting | Value |
-    |---|---|
-    | Connection name | ShoeTrackerTwitterConnection |
-    | Authentication Type | Accept default (Use default shared application)|
+   *Substitution*: In the search box, enter **RSS**. From the triggers list, select the RSS trigger named **When a feed item is published**.
+   
+1. Provide the following information for creating a connection to your Twitter account. When you're done, select **Sign in**.
 
-1. Select **Sign in**. Sign in with your existing Twitter account and password, and select **Authorize app**. This action establishes the log in connection to your Twitter account.
+   | Property | Required | Value | Description |
+   |----------|----------|-------|-------------|
+   | **Connection name** | Yes | ShoeTrackerTwitterConnection | The name to give your Twitter connection |
+   | **Authentication Type** | Yes | Use default shared application | The authentication type for your connection |
 
-1. When the Twitter **When a new tweet is posted** dialog box reappears you have created a valid connection. The dialog box has three required parameters:
+   *Substitution*: This step doesn't apply to the RSS trigger.
 
-   - **Search text:** Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
-   - **Frequency:** Unit of time for search frequency. For example, `Second`, `Minute`, `Hour`, or `Day`.
-   - **Interval:** How often to search. For example, an interval of `3` and a frequency of `Hour` would check for new tweets every three hours.
+1. When the Twitter **When a new tweet is posted** trigger information box appears, you've created a valid connection.
 
-1. Enter the following values:
+1. When the authorization box appears, sign in with your Twitter account and password, select **Authorize app**, and authenticate your credentials if prompted.
 
-    | Setting | Value |
-    |---|---|
-    | Search text | Shoe |
-    | How often do you want to check for new items? | 1 |
-    | (Frequency) | Minute |
-    | Add new parameter | Accept default (blank). |
+   This step authorizes and establishes the connection to your Twitter account.
 
-1. In the command bar, select **Save**.
+   *Substitution*: This step doesn't apply to the RSS trigger.
 
-1. Enter the name of your logic app (ShoeTrackerNNN where NNN represents a unique ID, such as your initials and a number to provide a unique identifier.
+   After you create a valid connection, the trigger information box reappears. 
 
-1. Select **Run Trigger**.
+1. Provide the following trigger information:
 
-## Examine the results of your Twitter trigger
+   | Property | Required | Value | Description |
+   |----------|----------|-------|-------------|
+   | **Search text** | Yes | Shoe | The text to find in the tweet. To search for hashtags, include a hashtag (**#**) at the start of the search text. |
+   | (Interval) | Yes | 1 | The number of time units to wait until the next check. For example, an interval of **3** and a frequency of **Hour** checks for new tweets every three hours. |
+   | (Frequency) | Yes | Minute | The time unit to use for the polling interval, for example, **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. |
+   | **Add a new parameter** | No | None | Any parameters to add to the trigger. |
 
-At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the **Runs history** table.
+   *Substitution*: For the RSS trigger, provide the following information:
 
-1. Scroll to the left, and then in the Logic App  menu, select **Overview**. You may need to scroll to the left to see the navigation menu or you can use your browser's search function to find the word "overview" on the page.
+   | Property | Required | Value | Description |
+   |----------|----------|-------|-------------|
+   | **RSS feed URL** | Yes | **`https://rss2.feedspot.com/https://www.reuters.com/technology`** | The URL for the RSS feed to check |
+   | **Chosen property** | No | UpdatedOn | The property to use for determining which articles to return |
+   | (Interval) | Yes | 1 | The number of time units to wait until the next check. For example, an interval of **3** and a frequency of **Hour** checks for new articles every three hours. |
+   | (Frequency) | Yes | Minute | The time unit to use for the polling interval, for example, **Second**, **Minute**, **Hour**, **Day**, **Week**, or **Month**. |
+   | **Add a new parameter** | No | None | Any parameters to add to the trigger. |
 
-1. Select **Refresh** once a minute until you see a row in the **Runs history** table.
+1. When you're done, on the designer toolbar, select **Save**.
 
-1. While you are waiting, locate the section in **Overview** labeled **Trigger history**. Notice the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked; you should see this increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied; in our case, this number represents how many times the trigger found matching tweets.
+1. Enter the name for your logic app resource with a unique identifier, which is **ShoeTracker*NNN*** where *NNN* represents a unique ID, such as your initials and a number.
 
-1. Go back to **Runs history**. After you see a row appear, select the row. Selecting a row will navigate your view to something that looks like the designer you used to create the trigger. This view lets you see the data that flowed through each step of this run of your app.
+   When you save your workflow, Azure automatically publishes your changes to your deployed logic app resource, which is live and running. You can either wait for the trigger to fire, or you can manually activate the trigger.
 
-1. Select the Twitter trigger.
+   1. If you choose to wait, on the **Overview** pane, find section labeled **Trigger history** and the text that looks something like **Evaluated 12 times, fired 3 times in the last 24 hours**. The term *evaluated* means the condition in your trigger was checked. You should see this number increase once per minute since you're polling every minute. The term *fired* indicates the number of times the trigger conditions were satisfied. In our case, this number represents how many times the trigger found matching tweets.
 
-1. Examine the data in the **OUTPUTS** section. For example, locate the text of the matching tweet.
+   1. To manually activate the trigger, on the designer toolbar, select **Run Trigger** > **Run**.
 
-    > [!NOTE]
-    > Select **Show raw outputs** if you would like to see the entire response in JSON.
+      Your logic app workflow now checks Twitter every minute for tweets that contain your search text. If the workflow runs correctly and finishes successfully, a page similar to the designer opens but shows the status and time taken for each step in the workflow run. We'll review this page in more detail later.
+
+Now we'll review the trigger outputs and workflow's run history.
+
+## Review the output from the Twitter trigger
+
+1. Open the logic app resource's main menu, and select **Overview**.
+
+   You might have to scroll to the left to find the main menu, or you can use your browser's search to find the word **overview** on the page.
+
+1. On the **Oveview** pane toolbar, select **Refresh** every minute until the **Runs history** section shows at least one completed run.
+
+1. While you wait, you can review the trigger history. On the **Overview** pane, find the **Trigger history** section.
+
+   The **Fired** column shows whether the trigger activated because the trigger condition was met. In this example, the condition that trigger finds a matching tweet. So, the trigger fires for each matching tweet.
+
+1. Return to **Runs history** section. If at least one completed run appears, select a row for any successful run.
+
+   A page named **Logic app run** opens to show the status for each step in the workflow and the time taken to run each step. From this view, you can also review the data that flowed through each step.
+
+1. To view the trigger's inputs and outputs, select the Twitter trigger.
+
+   The trigger shape expands to show the **INPUTS** and **OUTPUTS** sections.
+   
+1. In the **OUTPUTS** section, under **Body**, find the text for the matching tweet. To review the complete response in JSON format, select **Show raw outputs**.

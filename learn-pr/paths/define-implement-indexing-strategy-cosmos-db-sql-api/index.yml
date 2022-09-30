@@ -13,7 +13,7 @@ prerequisites: |
   Before starting this learning path, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
 summary: |
   Create custom indexing policies for Azure Cosmos DB SQL API containers.
-iconUrl: /learn/achievements/azure-cosmos-db-define-implent-indexing-strategy.svg
+iconUrl: /training/achievements/azure-cosmos-db-define-implent-indexing-strategy.svg
 levels:
 - intermediate
 roles:

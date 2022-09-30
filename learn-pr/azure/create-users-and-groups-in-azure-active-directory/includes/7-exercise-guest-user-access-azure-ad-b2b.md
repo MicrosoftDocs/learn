@@ -10,7 +10,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. In the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
-1. On the top menu bar, select **New guest user**.
+1. On the top menu bar, select **New user**, then select **Invite external user**.
 
    :::image type="content" source="../media/7-new-guest-user.png" alt-text="Screenshot that shows the New guest user button.":::
 
@@ -96,7 +96,7 @@ If the guest user didn't receive the first email invitation, you can resend an i
 
 1. Select the user. The **Profile** pane for the user appears.
 
-1. Under the **Identity** section, select the **(manage)** link. The **Manage invitations** pane appears.
+1. Under the **B2B collaboration** section, select the **Manage (resend invitation / reset status)** link. The **Manage invitations** pane appears.
 
 1. Under **Email invitations** for **Resend invite**, select **Yes**, and then select **Yes** to confirm resending the invitation. The **Manage invitations** pane reappears.
 

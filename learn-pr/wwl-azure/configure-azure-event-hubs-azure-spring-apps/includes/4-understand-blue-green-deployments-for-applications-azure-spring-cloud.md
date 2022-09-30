@@ -37,17 +37,18 @@ In this unit, you'll update the **customers** microservice to receive events fro
 3.  From the Git Bash window, navigate to the spring petclinic root folder and rebuild the application.
     
     ```azurecli
+    cd ~/projects/spring-petclinic-microservices/
     mvn clean package -DskipTests
     ```
 
 4.  Redeploy your customers microservice to Azure Spring Apps by running the lines below.
     
     ```azurecli
-    az spring-cloud app deploy \
-        --service $SPRING_CLOUD_SERVICE \
+    az spring app deploy \
+        --service $SPRING_APPS_SERVICE \
         --resource-group $RESOURCE_GROUP \
         --name customers-service \
         --no-wait \
-        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.1.jar \
+        --artifact-path spring-petclinic-customers-service/target/spring-petclinic-customers-service-2.6.7.jar \
         --env SPRING_PROFILES_ACTIVE=mysql
     ```

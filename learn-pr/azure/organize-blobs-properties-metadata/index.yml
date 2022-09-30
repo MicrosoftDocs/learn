@@ -19,7 +19,7 @@ prerequisites: |
   - Experience in basic Azure web app development and deployment
   - Basic familiarity with Azure Storage and Blob objects
   - Basic familiarity with .NET Core
-iconUrl: /learn/achievements/organize-blobs-with-properties-and-metadata.svg
+iconUrl: /training/achievements/organize-blobs-with-properties-and-metadata.svg
 levels:
 - beginner
 roles:

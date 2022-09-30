@@ -2,8 +2,8 @@ We will cover implementation details of one of the SAP NetWeaver deployment scen
 
 This procedure is DBMS-independent. The process of installing non-HANA DBMS products is outside of the scope of this course. For more information regarding these installations, see:
 
- -  [SQL Server Azure Virtual Machines DBMS deployment for SAP NetWeaver](/azure/virtual-machines/workloads/sap/dbms_guide_sqlserver)
- -  [Oracle Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_oracle)
- -  [IBM Db2 Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_ibm)
- -  [SAP ASE Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_sapase)
- -  [SAP MaxDB, liveCache, and Content Server deployment on Azure VMs](/azure/virtual-machines/workloads/sap/dbms_guide_maxdb)
+- [SQL Server Azure Virtual Machines DBMS deployment for SAP NetWeaver](/azure/virtual-machines/workloads/sap/dbms_guide_sqlserver)
+- [Oracle Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_oracle)
+- [IBM Db2 Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_ibm)
+- [SAP ASE Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_sapase)
+- [SAP MaxDB, liveCache, and Content Server deployment on Azure VMs](/azure/virtual-machines/workloads/sap/dbms_guide_maxdb)

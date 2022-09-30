@@ -1,3 +1,5 @@
+[!include[](../../includes/xamarin-not-maintained.md)]
+
 Sometimes your data doesn't exactly match the data type of the UI control. For example, you might have a value of type `double` that you want to display as currency in a `Label`. A more complicated example is an image URL in your data that needs to show the actual image in the UI. Here, we look at two techniques to help you deal with these cases.
 
 ## String formatting in a binding

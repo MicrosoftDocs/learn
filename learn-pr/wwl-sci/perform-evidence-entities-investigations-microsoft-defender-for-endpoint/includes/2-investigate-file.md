@@ -1,6 +1,6 @@
 Investigate the details of a file associated with a specific alert, behavior, or event to help determine if the file exhibits malicious activities, identify the attack motivation, and understand the potential scope of the breach.
 
-:::image type="content" source="../media/file-page.png" alt-text="File page information":::
+:::image type="content" source="../media/file-page.png" alt-text="Screen shot of the Microsoft Defender for Endpoint File page information.":::
 
 There are many ways to access the detailed profile page of a specific file. For example, you can use the search feature, select a link from the Alert process tree, Incident graph, Artifact timeline, or select an event listed in the Device timeline.  You can get information from the following sections in the file view:
 
@@ -46,7 +46,7 @@ Use the slider or the range selector to quickly specify a time period that you w
 
 ### Deep analysis
 
-The Deep analysis tab allows you to submit the file for deep analysis to uncover more details about the file's behavior and its effect within your organizations. After you submit the file, the deep analysis report will appear in this tab once the results are available. If deep analysis did not find anything, the report will be empty, and the results space will remain blank.
+The Deep analysis tab allows you to submit the file for deep analysis to uncover more details about the file's behavior and its effect within your organizations. After you submit the file, the deep analysis report will appear in this tab once the results are available. If deep analysis didn't find anything, the report will be empty, and the results space will remain blank.
 
 ### File names
 
@@ -68,7 +68,7 @@ Use the deep analysis feature to investigate the details of any file, usually du
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
-Submit for deep analysis is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.  You can also manually submit a sample through the Microsoft Security Center Portal if the file was not observed on a Windows 10 device and wait for Submit for deep analysis button to become available.
+Submit for deep analysis is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.  You can also manually submit a sample through the Microsoft Security Center Portal if the file wasn't observed on a Windows 10 device and wait for Submit for deep analysis button to become available.
 
 When the sample is collected, Defender for Endpoint runs the file in  a secure environment and creates a detailed report of observed behaviors and associated artifacts, such as files dropped on devices, communication to IPs, and registry modifications.
 
@@ -108,11 +108,11 @@ If you encounter a problem when trying to submit a file, try each of the followi
 
 1. Ensure that the file in question is a PE file. PE files typically have .exe or .dll extensions (executable programs or applications).
 
-1. Ensure the service has access to the file, that it still exists, and has not been corrupted or modified.
+1. Ensure the service has access to the file, that it still exists, and hasn't been corrupted or modified.
 
 1. You can wait a short while and try to submit the file again if the queue is full or there was a temporary connection or communication error.
 
-1. If the sample collection policy is not configured, then the default behavior is to allow sample collection. If it is configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
+1. If the sample collection policy isn't configured, then the default behavior is to allow sample collection. If it's configured, then verify the policy setting allows sample collection before submitting the file again. When sample collection is configured, then check the following registry value:
 
     - Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
 
@@ -120,7 +120,7 @@ If you encounter a problem when trying to submit a file, try each of the followi
 
     - Type: DWORD
 
-    - Hexadecimal value :
+    - Hexadecimal value:
 
     - Value = 0 – block sample collection
 
@@ -150,7 +150,7 @@ You can only take this action if:
 
 - The device you're taking action on is running Windows 10, version 1703 or later
 
-- The file does not belong to trusted third-party publishers or not signed by Microsoft
+- The file doesn't belong to trusted third-party publishers or not signed by Microsoft
 
 - Microsoft Defender Antivirus must at least be running on Passive mode.
 
@@ -213,7 +213,7 @@ When you add an indicator hash for a file, you can choose to raise an alert and 
 
 ### Download file
 
-Selecting Download file from the response actions allows you to download a local, password-protected .zip archive containing your file.  When you select this action, a fly-out will appear. From the fly-out, you can record a reason as to why you are downloading the file. You can also set a password to open the file.  If a file is not already stored by Defender for Endpoint, you cannot download it. Instead, you will see a Collect file button in the same location. If a file has not been seen in the organization in the past 30 days, Collect file will be disabled.
+Selecting Download file from the response actions allows you to download a local, password-protected .zip archive containing your file.  When you select this action, a fly-out will appear. From the fly-out, you can record a reason as to why you're downloading the file. You can also set a password to open the file.  If a file isn't already stored by Defender for Endpoint, you can't download it. Instead, you'll see a Collect file button in the same location. If a file hasn't been seen in the organization in the past 30 days, Collect file will be disabled.
 
 ### Check activity details in the action center
 

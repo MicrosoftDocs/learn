@@ -2,10 +2,10 @@ Azure Resource Manager templates have a few features designed for template reuse
 
 In this module, you:
 
-- Created an expression for a unique value by using Azure Resource Manager template functions
-- Reused your expression by storing it in an Azure Resource Manager template variable
-- Organized and tracked your deployed Azure resources by using resource tags
-- Managed multiple deployment parameters by using Azure Resource Manager template parameter files
+- Created an expression for a unique value by using Azure Resource Manager template functions.
+- Reused your expression by storing it in an Azure Resource Manager template variable.
+- Organized and tracked your deployed Azure resources by using resource tags.
+- Managed multiple deployment parameters by using Azure Resource Manager template parameter files.
 
 <!-- ## Next steps
 

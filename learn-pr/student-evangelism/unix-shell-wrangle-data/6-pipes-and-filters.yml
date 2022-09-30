@@ -3,14 +3,14 @@ uid: learn.student-evangelism.unix-shell-wrangle-data.6-pipes-and-filters
 metadata:
   title: Use pipes and filters to put it all together
   description: In this unit, you'll be introduced to pipes. Pipes are handy operators that allow you to combine some of the commands we've checked before to build complex data processing pipelines.
-  ms.date: 12/09/2020
-  author: trallard
+  ms.date: 06/15/2022
+  author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Use pipes and filters to put it all together
-durationInMinutes: 2
+durationInMinutes: 7
 azureSandbox: true
 interactive: bash
 content: |

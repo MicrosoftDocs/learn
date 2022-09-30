@@ -22,7 +22,7 @@ prerequisites: |
   - General familiarity with Software-Defined Networking (SDN) on Microsoft Azure Stack HCI
   - Experience in implementing Azure Stack HCI
 
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - advanced
 roles:

@@ -41,6 +41,9 @@ The following table lists key features of Azure Firewall Standard.
 |Stateful     |Examines network packets in context, not just individually. If one or more packets arrive unexpectedly given current traffic, Azure Firewall treats the packets as malicious and denies them.         |
 |Forced tunneling     |Enables Azure Firewall to route all outbound traffic to a specified network resource rather than directly to the internet. The network resource might be an on-premises hardware firewall or a network virtual appliance that processes traffic before allowing it to pass through to the internet.         |
 |Tag support     |Azure Firewall supports service tags and FQDN tags for easier rule configuration. A *service tag* is a text entity that represents an Azure service. For example, **AzureCosmosDB** is the service tag for the Azure Cosmos DB service. An *FQDN tag* is a text entity that represents a group of domain names associated with popular Microsoft services. For example, **WindowsVirtualDesktop** is the FQDN tag for Azure Virtual Desktop traffic.   |
+|DNS proxy|With DNS proxy enabled, Azure Firewall can process and forward DNS queries from a Virtual Network(s) to your desired DNS server.|
+|Custom DNS|Allows you to configure Azure Firewall to use your own DNS server, while ensuring the firewall outbound dependencies are still resolved with Azure DNS.|
+|Web categories|Web categories lets administrators allow or deny user access to web site categories such as gambling websites, social media websites, and others.|
 |Monitoring     |Azure Firewall logs all incoming and outgoing network traffic, and you can analyze the resulting logs using Azure Monitor, Power BI, Excel, and other tools.         |
 
 ## What is Azure Firewall Premium?
@@ -58,7 +61,7 @@ The following table lists key features of Azure Firewall Premium.
 |TLS Inspection|Decrypts outbound traffic, processes the data, then encrypts the data and sends it to the destination.|
 |IDPS|A network intrusion detection and prevention system (IDPS) allows you to monitor network activities for malicious activity, log information about this activity, report it, and optionally attempt to block it.|
 |URL filtering|Extends Azure Firewall’s FQDN filtering capability to consider an entire URL. For example, `www.contoso.com/a/c` instead of `www.contoso.com`.
-|Web categories|Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others.|
+|Web categories|Administrators can allow or deny user access to website categories such as gambling websites, social media websites, and others. Web categories can be more fine-tuned in Azure Firewall Premium.|
 
 ## Overview of Azure Firewall Manager
 
@@ -93,6 +96,8 @@ The following table lists key features of Azure Firewall Manager.
 |Automated traffic routing     |Network traffic is automatically routed to the firewall (when used with Azure Virtual WAN Hub only).         |
 |Hierarchical policies     |Enables you to create so-called parent and child firewall policies. A *parent* policy contains the rules and settings you want to apply globally; a *child* policy inherits all the rules and settings of its parent.         |
 |Support for third-party security providers     |Enables you to integrate third-party security as a service (SECaaS) solutions to protect your network's internet connection.         |
+|DDoS protection plan|You can associate your virtual networks with a DDoS protection plan within Azure Firewall Manager.|
+|Manage Web Application Firewall policies|You can centrally create and associate Web Application Firewall (WAF) policies for your application delivery platforms, including Azure Front Door and Azure Application Gateway.|
 
 > [!NOTE]
 > By enabling you to integrate third-party SECaaS solutions, your network security strategy might be to use Azure Firewall to monitor local network traffic while using the third-party SECaaS provider to monitor internet traffic.

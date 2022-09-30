@@ -32,7 +32,7 @@ Let's browse to our application to see it live. Navigate back to the open browse
 
  :::image type="content" source="../media/7-web-app-in-browser.png" alt-text="Screenshot of welcome page.":::
  
-You have successfully hosted your new ASP.NET Core application on App Service!
+You've successfully hosted your new ASP.NET Core application on App Service!
 
 ::: zone-end
 
@@ -47,6 +47,7 @@ Instead of searching for those random values for each one of your apps, you can 
 The easiest way to create deployment credentials is from the Azure CLI. 
 
 1. Run the following command in the Cloud Shell to set deployment credentials, substituting `<username>` and `<password>` with values you choose.
+
     ```azurecli
     az webapp deployment user set --user-name <username> --password <password>
     ```
@@ -55,14 +56,14 @@ The easiest way to create deployment credentials is from the Azure CLI.
 
 Let's deploy our Java application with WAR deploy. WAR deploy is part of the Kudu REST API, an administrative service interface available on all App Service web apps, which can be accessed over HTTP. The simplest way to use WAR deploy is with the `curl` HTTP utility from the command line.
 
-Run the following commands to deploy your Java web app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created above, and replace `<your-app-name>` with the name of your web app.
+Run the following commands to deploy your Java web app with WAR deploy. Replace `<username>` and `<password>` with the Deployment User username and password you created earlier, and replace `<your-app-name>` with the name of the web app you created in the Azure portal.
 
 ```console
 cd ~/helloworld/target
-curl -v -X POST -u [username]:[password] https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
+curl -v -X POST -u <username>:<password> https://<your-app-name>.scm.azurewebsites.net/api/wardeploy --data-binary @helloworld.war
 ```
 
-When the command finishes running, open a new browser tab and navigate to `https://<your-app-name>.azurewebsites.net`. You'll see the greeting message from your app &mdash; you've deployed successfully!
+When the command finishes running, open a new browser tab and go to `https://<your-app-name>.azurewebsites.net`. You'll see the greeting message from your app. You've deployed successfully!
 
 ::: zone-end
 
@@ -123,11 +124,11 @@ cd ~/BestBikeApp
 az webapp up --name $APPNAME --resource-group $APPRG --plan $APPPLAN --sku $APPSKU --location "$APPLOCATION"
 ```
 
-The deployment will take a couple minutes, during which time you'll see status output.
+The deployment will take a few minutes, during which time you'll see status output.
 
 ## Verify the deployment
 
-Let's browse to your application to see it live. In the output, just above the JSON code block there is a line saying "You can launch the app at..." with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
+Let's browse to your application to see it live. In the output, just above the JSON code block, there's a line saying "You can launch the app at..." with a URL. Select that link to open your app in a new browser tab. The page may take a moment to load because the App Service is initializing your app for the first time.
 
 Once your program loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 

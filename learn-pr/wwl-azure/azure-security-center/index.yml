@@ -19,7 +19,7 @@ abstract: |
   - Enable Just-in-Time access and other security features
 prerequisites: |
   - None
-iconUrl: /learn/achievements/azure-security-center.svg
+iconUrl: /training/achievements/azure-security-center.svg
 levels:
 - intermediate
 roles:

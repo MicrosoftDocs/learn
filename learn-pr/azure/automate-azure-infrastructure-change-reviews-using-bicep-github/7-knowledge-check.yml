@@ -39,14 +39,14 @@ quiz:
     - content: You can see a list of the changes that Azure will make to your environment when you deploy to production.
       isCorrect: false
       explanation: Incorrect. The *what-if* operation provides a list of the resource changes that would take effect in a deployment.
-  - content: You're concerned that your workflow's service principal might accidentally make changes to your production environment. What should you do?
+  - content: You're concerned that your workflow's workload identity might accidentally make changes to your production environment. What should you do?
     choices:
-    - content: Deploy a dedicated subscription for your ephemeral environments, and grant the service principal access to that subscription only.
+    - content: Deploy a dedicated subscription for your ephemeral environments, and grant the workload identity access to that subscription only.
       isCorrect: true
-      explanation: Correct. By creating a narrowly scoped role assignment, you can ensure that your service principal is limited to working only with your ephemeral environments.
+      explanation: Correct. By creating a narrowly scoped role assignment, you can ensure that your workload identity is limited to working only with your ephemeral environments.
     - content: Use Microsoft Cost Management budgets to control access to your production environment.
       isCorrect: false
       explanation: Incorrect. Cost Management budgets are a useful cost management tool, but they don't help you manage access to your environments.
-    - content: Deploy resource locks to block the service principal from making changes to your production environment.
+    - content: Deploy resource locks to block the workload identity from making changes to your production environment.
       isCorrect: false
       explanation: Incorrect. Locks prevent any changes to a resource. Consider using narrowly scoped role assignments instead.

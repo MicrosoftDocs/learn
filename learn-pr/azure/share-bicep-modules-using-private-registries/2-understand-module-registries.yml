@@ -6,8 +6,8 @@ metadata:
   title: Understand module registries
   description: Learn what a module registry is and how you can use them in your organization.
   ms.date: 02/10/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

@@ -1,19 +1,19 @@
 ## Replicate backups to a second virtual machine
 
-One of the most rudimentary methods to provide a basic level of resiliency for SAP HANA is to use backups. You might have transaction log backups shipped from one Azure VM to another. In this setup, you are responsible for scripting the process of scheduled backups that are performed on the first VM and then copied to the second VM. If you need to use the second VM, you must restore the full, incremental/differential, and transaction log backups.
+One of the most rudimentary methods to provide a basic level of resiliency for SAP HANA is to use backups. You might have transaction log backups shipped from one Azure VM to another. In this setup, you're responsible for scripting the process of scheduled backups that are performed on the first VM and then copied to the second VM. If you need to use the second VM, you must restore the full, incremental/differential, and transaction log backups.
 
-This setup is not well suited for delivering optimal Recovery Point Objective (RPO) and Recovery Time Objective (RTO) times. RTO times especially would suffer due to the need to fully restore the complete database by using the copied backups. However, this setup is useful for recovery from unaccidental data deletions. With this setup, you can restore to a certain point in time, extract the data, and import the deleted data into your primary instance. Hence, it might make sense to use a backup copy method in combination with other high-availability methods.
+This setup isn't well suited for delivering optimal Recovery Point Objective (RPO) and Recovery Time Objective (RTO) times. RTO times especially would suffer due to the need to fully restore the complete database by using the copied backups. However, this setup is useful for recovery from unaccidental data deletions. With this setup, you can restore to a certain point in time, extract the data, and import the deleted data into your primary instance. Hence, it might make sense to use a backup copy method in combination with other high-availability methods.
 
 ## SAP HANA system replication without automatic failover
 
-The next few scenarios use SAP HANA system replication. Scenarios without automatic failover are not common for deployments within one Azure region. Configurations without automatic failover, while avoiding the need for Pacemaker, warrant additional monitoring and require manual failover. Most customers are relying on Azure service healing instead.
+The next few scenarios use SAP HANA system replication. Scenarios without automatic failover aren't common for deployments within one Azure region. Configurations without automatic failover, while avoiding the need for Pacemaker, warrant additional monitoring and require manual failover. Most customers are relying on Azure service healing instead.
 
 ### SAP HANA system replication without auto failover and without data preload
 
-In this scenario, you use SAP HANA system replication to transfer data synchronously to bring RPO down to 0. On the other hand, you have a long enough RTO that you don't need either failover or data preloading into the HANA instance cache. In such a case, you can realize additional benefits by taking the following actions:
+In this scenario, you use SAP HANA system replication to transfer data synchronously to bring RPO down to 0. On the other hand, you have a long enough RTO that you don't need either failover or data preloading into the HANA instance cache. In such a case, you can realize more benefits by taking the following actions:
 
- -  Run another SAP HANA instance in the second Azure VM. The SAP HANA instance in the second VM will likely use most of its memory. In case of a failover to the second VM, you need to shut down the running SAP HANA instance that has the data fully loaded in the second VM, so that the replicated data can be loaded into the cache of the targeted HANA instance in the second VM.
- -  Use a smaller VM size on the second VM. If a failover occurs, you have an additional step before the manual failover. In this step, you resize the VM to the size of the source VM.
+- Run another SAP HANA instance in the second Azure VM. The SAP HANA instance in the second VM will likely use most of its memory. If there's a failover to the second VM, you need to shut down the running SAP HANA instance that has the data fully loaded in the second VM, so that the replicated data can be loaded into the cache of the targeted HANA instance in the second VM.
+- Use a smaller VM size on the second VM. If a failover occurs, you have an additional step before the manual failover. In this step, you resize the VM to the size of the source VM.
 
 Even if you don't use data preload in the HANA system replication target, you need at least 64 GB of memory. You also need enough memory in addition to 64 GB to keep the rowstore data in the memory of the target instance.
 
@@ -31,6 +31,6 @@ You might choose this solution because it enables you to achieve an RPO = 0 and 
 
 ## SAP HANA scale-out configurations in Azure
 
-High availability for SAP HANA scale-out configurations is relying on service healing of Azure VMs and the restart of the SAP HANA instance as the VM is up and running again.
+High availability for SAP HANA scale-out configurations is relying on service healing of Azure VMs and the restart of the SAP HANA instance.
 
 At the time of authoring this content, the highly available NFS cluster is supported with SUSE Linux only.

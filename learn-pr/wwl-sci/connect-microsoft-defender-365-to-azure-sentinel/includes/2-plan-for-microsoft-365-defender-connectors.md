@@ -12,14 +12,13 @@ The Microsoft 365 security portal provides a purpose-driven user interface to mi
 
 - Microsoft 365 Defender for Cloud
 
-- Microsoft 365 Insider Risk Management (IRM) 
+- Microsoft Purview Insider Risk Management (IRM) 
 
 - Microsoft Defender for IoT
 
-The products each have a connector that will send alerts to the SecurityAlerts table in Sentinel, which then can generate an Incident.  The Microsoft 365 Defender connector allows for the raw normalized data to be ingested by Microsoft Sentinel.  You must decide if you want Microsoft 365 Defender products alerts in Microsoft Sentinel.  
 
-- Should those alerts generate incidents when the incidents are already being investigated in the Microsoft 365 Defender security portal?  
-- Should Microsoft Sentinel ingest the Microsoft Defender for Endpoints data?
+It's important to understand that data ingested by each connector.  Does the connector support bi-directional syncing of Incidents?  Should you ingest the raw log data for hunting and entity analysis? Once you've decided the required data from each log source, then enable the connectors.
 
-A security team needs to understand what raw log data is required, how alerts should be handled, and where incidents should be investigated.
+
+
 

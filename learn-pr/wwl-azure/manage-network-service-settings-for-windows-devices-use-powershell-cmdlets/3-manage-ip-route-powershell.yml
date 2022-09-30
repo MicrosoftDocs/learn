@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-network-service-settings-for-windows-devices-use-powershell-cmdlets.manage-ip-route-powershell
+title: Manage IP routing in PowerShell
+metadata:
+  title: Manage IP routing in PowerShell
+  description: "Manage IP routing in PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-manage-ip-route-powershell.md)]

@@ -12,3 +12,4 @@ Thanks to your efforts, anyone on your website team can automatically deploy cha
   - [Azure CLI action](https://github.com/marketplace/actions/azure-cli-action)
 - [Connecting to GitHub with SSH](https://docs.github.com/github/authenticating-to-github/connecting-to-github-with-ssh)
 - [Webhook event triggers](https://docs.github.com/actions/reference/events-that-trigger-workflows)
+- [Schedule workflows](https://docs.github.com/actions/using-workflows/events-that-trigger-workflows#schedule)

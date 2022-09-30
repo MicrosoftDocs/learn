@@ -19,7 +19,7 @@ abstract:  |
   - Test the model. Draw digits into a Windows InkCanvas to see whether the model recognizes what number we drew.
 prerequisites: |
  - A basic understanding of UWP app development with C#.
-iconUrl: /learn/achievements/machine-learning-using-windows.svg
+iconUrl: /training/achievements/machine-learning-using-windows.svg
 levels:
 - beginner
 roles:

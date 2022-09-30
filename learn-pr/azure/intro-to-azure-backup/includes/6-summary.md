@@ -13,4 +13,4 @@ Backup center simplifies data protection management at-scale by enabling you to 
 References
 
 * [Azure Backup website](https://azure.microsoft.com/services/backup/)
-* [Azure Backup compliance standards](https://docs.microsoft.com/azure/backup/compliance-offerings)
+* [Azure Backup compliance standards](/azure/backup/compliance-offerings)

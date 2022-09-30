@@ -4,7 +4,7 @@ While the Azure portal is easy to use for one-off tasks, navigating through the 
 
 With either of these tools, you can write scripts to check the status of cloud servers, deploy new configurations, open ports in the firewall, or connect to a virtual machine to change a setting. Windows admins tend to prefer Azure PowerShell, while developers and Linux admins often use the Azure CLI.
 
-This module focuses on using the Azure CLI to create and manage virtual machines hosted in Azure. If you'd like to get an overview of the Azure CLI, how to install it, and how to work with your Azure subscriptions, make sure to check out the [Control Azure services with the CLI](/learn/modules/control-azure-services-with-cli/) training module.
+This module focuses on using the Azure CLI to create and manage virtual machines hosted in Azure. If you'd like to get an overview of the Azure CLI, how to install it, and how to work with your Azure subscriptions, make sure to check out the [Control Azure services with the CLI](/training/modules/control-azure-services-with-cli/) training module.
 
 ## What is the Azure CLI?
 
@@ -23,4 +23,4 @@ In this module, you will:
 
 ## Prerequisites
 
-- Basic understanding of the Azure CLI tool from the [Control Azure services with the CLI](/learn/modules/control-azure-services-with-cli/) module.
+- Basic understanding of the Azure CLI tool from the [Control Azure services with the CLI](/training/modules/control-azure-services-with-cli/) module.

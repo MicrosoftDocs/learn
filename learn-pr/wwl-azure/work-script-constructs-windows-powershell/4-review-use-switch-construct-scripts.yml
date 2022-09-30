@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-script-constructs-windows-powershell.review-use-switch-construct-scripts
+title: Review and use the Switch construct in Windows PowerShell scripts
+metadata:
+  title: Review and use the Switch construct in Windows PowerShell scripts
+  description: "Review and use the Switch construct in Windows PowerShell scripts"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-review-use-switch-construct-scripts.md)]

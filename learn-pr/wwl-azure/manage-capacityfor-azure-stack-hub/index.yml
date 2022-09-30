@@ -22,7 +22,7 @@ prerequisites: |
   * Conceptual knowledge of Azure compute solutions.
   * Working experience with virtual machines, containers, and app service.
   * Working experience with database solutions.
-iconUrl: /learn/achievements/4-manage-capacity-for-azure-stack-hub.svg
+iconUrl: /training/achievements/4-manage-capacity-for-azure-stack-hub.svg
 levels:
 - advanced
 roles:

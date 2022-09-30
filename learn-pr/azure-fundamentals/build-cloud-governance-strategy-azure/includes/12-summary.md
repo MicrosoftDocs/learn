@@ -12,11 +12,11 @@ With these points in mind, you're ready to take the next step toward building a 
 
 ## Learn more
 
-The [Control and organize Azure resources with Azure Resource Manager](/learn/modules/control-and-organize-with-azure-resource-manager/) module is a good next step. There you'll go deeper on how to use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
+The [Control and organize Azure resources with Azure Resource Manager](/training/modules/control-and-organize-with-azure-resource-manager/) module is a good next step. There you'll go deeper on how to use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
 
 Here are additional resources to help you go further:
 
- -  Get started with the [Cloud Adoption Framework for Azure](/learn/modules/microsoft-cloud-adoption-framework-for-azure/).
+ -  Get started with the [Cloud Adoption Framework for Azure](/training/modules/microsoft-cloud-adoption-framework-for-azure/).
  -  Learn more about [Azure subscription and service limits, quotas, and constraints](/azure/azure-subscription-service-limits).
  -  Review the complete list of [Azure built-in roles](/azure/role-based-access-control/built-in-roles/) for Azure RBAC.
  -  To learn how Azure Policy can enforce tagging rules and conventions, see [Assign policies for tag compliance](/azure/azure-resource-manager/management/tag-policies/).

@@ -3,7 +3,7 @@ uid: learn.wwl.design-application-architecture
 metadata:
   title: Design an application architecture
   description: "Design an application architecture"
-  ms.date: 05/11/2022
+  ms.date: 08/19/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Working experience with developing cloud applications.
   - Conceptual knowledge of messaging, events, deployments, configurations, API, and caching.
-iconUrl: /learn/achievements/design-application-architecture.svg
+iconUrl: /training/achievements/design-application-architecture.svg
 levels:
 - advanced
 roles:

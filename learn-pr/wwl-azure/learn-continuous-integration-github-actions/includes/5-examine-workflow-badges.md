@@ -4,7 +4,7 @@ They show if a workflow is currently passing or failing. While they can appear i
 
 Badges are added by using URLs. The URLs are formed as follows:
 
-https://github.com/AAAAA/RRRRR/workflows/WWWWW/badge.svg
+`https://github.com/AAAAA/RRRRR/workflows/WWWWW/badge.svg`
 
 Where:
 

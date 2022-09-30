@@ -68,16 +68,14 @@ Azure VMs require additional provisions to implement operating system-dependent 
 
 * **High-availability architecture for an SAP ASCS/SCS instance on Linux (single-SID configuration)**. This architecture requires the use of Linux clustering (Pacemaker with STONITH) and a highly available NFS share, which can be provisioned by using Azure VMs in a separate cluster, Azure NetApp Files, or Red Hat GlusterFS. For more information, refer to:
 
-    * High availability for SAP NetWeaver on Azure VMs on SUSE Linux Enterprise Server for SAP applications [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-SUSE](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-suse) 
+    * [High availability for SAP NetWeaver on Azure VMs on SUSE Linux Enterprise Server for SAP applications](/azure/virtual-machines/workloads/sap/high-availability-guide-suse) 
 
-    * High availability for SAP NetWeaver on Azure VMs on SUSE Linux Enterprise Server with Azure NetApp Files for SAP applications [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-SUSE-netapp-files](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-suse-netapp-files) 
+    * [High availability for SAP NetWeaver on Azure VMs on SUSE Linux Enterprise Server with Azure NetApp Files for SAP applications](/azure/virtual-machines/workloads/sap/high-availability-guide-suse-netapp-files) 
 
-    * Azure Virtual Machines high availability for SAP NetWeaver on Red Hat Enterprise Linux [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-rhel](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/high-availability-guide-rhel) 
+    * [Azure Virtual Machines high availability for SAP NetWeaver on Red Hat Enterprise Linux](/azure/virtual-machines/workloads/sap/high-availability-guide-rhel) 
 
 * **High-availability architecture for an SAP ASCS/SCS instance on Windows (multi-SID configuration)**: Currently, multi-SID is supported only with WSFC. Multi-SID is supported using file share and shared disk. For more information, refer to:
 
-    * SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and shared disk on Azure [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-shared-disk](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-shared-disk) 
+    * [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and shared disk on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-shared-disk) 
 
-    * SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and file share on Azure [https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-file-share](https://docs.microsoft.com/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-file-share) 
-
-
+    * [SAP ASCS/SCS instance multi-SID high availability with Windows Server Failover Clustering and file share on Azure](/azure/virtual-machines/workloads/sap/sap-ascs-ha-multi-sid-wsfc-file-share) 

@@ -8,7 +8,7 @@ In this exercise, you'll deploy the newly created Web Sales aggregator BFF to th
 
 ## Web.Sales.HttpAggregator
 
-You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGateways/Aggregators/Web.Sales.HttpAggregator* directory. Locate that directory in the Azure Cloud Shell editor. Apply the following changes to the service:
+You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGateways/Aggregators/Web.Sales.HttpAggregator* directory. Locate that directory in the file explorer pane. Apply the following changes to the service:
 
 1. In *Controllers/SalesController*, replace `// Add the GetSalesOfTodayByBrand code` with the following code:
 
@@ -54,8 +54,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
     > [!NOTE]
     > You can review the implementation of `CatalogService` and `OrderingService` under the *Service* directory.
 
-
-1. In *Controllers/SalesController.cs*, replace `// Add the GetSalesData code` with the following code: 
+1. In *Controllers/SalesController.cs*, replace `// Add the GetSalesData code` with the following code:
 
     ```csharp
     
@@ -225,14 +224,24 @@ Configure *Identity.API*  with the Web Sales aggregator URL. Uncomment the follo
 ```yaml
 WebSalesAggClient: {{ .Values.protocol }}://{{ .Values.host }}/websalesagg
 ```
+
 ## Build the local images and push the changes to Azure Container Registry
 
 The setup script created an Azure Container Registry instance for you. Push your changes to the Container Registry instance by using the following steps:
 
+1. Make sure you've saved all your changes.
+1. In the terminal, build Web.Sales.HttpAggregator:
+
+    ```bash
+    dotnet build ../../src/ApiGateways/Aggregators/Web.Sales.HttpAggregator/
+    ```
+
+    The build completes with no warnings or errors.
+
 1. Push and build the `identity-api` image:
 
     ```bash
-    ./deploy/k8s/build-to-acr.sh --services identity-api
+    ./build-to-acr.sh --services identity-api
     ```
 
     The script starts a [Container Registry quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="Identity":::* app. A variation of the following line confirms that the Docker image was pushed to Container Registry:
@@ -241,13 +250,10 @@ The setup script created an Azure Container Registry instance for you. Push your
     2020/10/26 21:57:23 Successfully pushed image: eshoplearn202109999999999.azurecr.io/identity.api:linux-latest
     ```
 
-    > [!IMPORTANT]
-    > The *:::no-loc text="WebSPA":::* project is built in Container Registry, rather than being local to Cloud Shell, to take advantage of robust build hosts in Container Registry. If the Container Registry quick task fails, inspect the output for troubleshooting information. Run the preceding script again to try more builds.
-
 1. Push and build the *:::no-loc text="websalesagg":::* image:
 
     ```bash
-    ./deploy/k8s/build-to-acr.sh --services websalesagg
+    ./build-to-acr.sh --services websalesagg
     ```
 
     As with the previous step, a Container Registry quick task builds the *:::no-loc text="websalesagg":::* image.
@@ -259,12 +265,10 @@ Now that your modified images are published, you can deploy the affected contain
 1. Fetch the external IP address of the existing NGINX ingress load balancer:
 
     ```bash
-    kubectl get svc -n ingress-nginx 
+    kubectl get svc -n ingress-nginx
     ```
 
-    The following image shows an example.
-
-    :::image type="content" source="../media/nginx-ingress-external-ip.png" alt-text="Screenshot that shows the NGINX ingress external load balancer." lightbox="../media/nginx-ingress-external-ip.png":::
+    Note the IP address displayed on the **ingress-nginx-controller** row under **EXTERNAL-IP**.
 
     > [!NOTE]
     > In the next unit, you'll learn more about the ingress controllers in Kubernetes.
@@ -272,7 +276,7 @@ Now that your modified images are published, you can deploy the affected contain
 1. Replace `{nginx-ingress-ip-address}` with the external IP address of the NGINX ingress controller. Then run the following command to deploy the affected services to the cluster:
 
     ```bash
-    ./deploy/k8s/deploy-affected-services.sh --ipAddress {nginx-ingress-ip-address}
+    ./deploy-affected-services.sh --ipAddress {nginx-ingress-ip-address}
     ```
 
     The preceding script redeploys the following services:
@@ -293,9 +297,7 @@ To verify the *:::no-loc text="websalesagg":::* service from within the cluster,
     kubectl get pods --selector service=webspa
     ```
 
-    The pod name is highlighted in the following example.
-
-    :::image type="content" source="../media/web-spa-pod-name.png" alt-text="Screenshot that shows the pod name of WebSPA." lightbox="../media/web-spa-pod-name.png":::
+    The pod name is the string in the **NAME** column that begins with `webspa-`.
 
 1. Retrieve the cluster IP address of the *:::no-loc text="websalesagg":::* pod:
 
@@ -303,19 +305,13 @@ To verify the *:::no-loc text="websalesagg":::* service from within the cluster,
     kubectl get svc --selector service=websalesagg
     ```
 
-    The cluster IP address is highlighted in the following example.
+    The cluster IP address is located under the**CLUSTER-IP** column.
 
-    :::image type="content" source="../media/websalesagg-cluster-ip.png" alt-text="Screenshot that shows the cluster I P address of WebSalesAgg." lightbox="../media/websalesagg-cluster-ip.png":::
-
-1. Open a shell inside the pod. Replace `{webspa-pod-name}` with the pod name that you retrieved earlier.
+1. Deploy and open a shell on a new pod with a cURL image
 
     ```bash
-    kubectl exec -it {webspa-pod-name} /bin/bash
+    kubectl run mycurlpod --image=curlimages/curl -i --tty -- sh
     ```
-
-    The following screenshot shows an example.
-
-    :::image type="content" source="../media/webspa-container-pod-bash.png" alt-text="Screenshot that shows WebSPA inside a container pod." lightbox="../media/webspa-container-pod-bash.png":::
 
 1. Within the pod, use cURL to verify that the service is listening. Use the IP address that you retrieved earlier.
 
@@ -323,11 +319,9 @@ To verify the *:::no-loc text="websalesagg":::* service from within the cluster,
     curl http://<clusterip-of-websalesagg-pod>/websalesagg/swagger/index.html
     ```
 
-    We don't care about the contents of the response. We only care that the service is listening on port 80.
+    The contents of the *index.html* resource are displayed. We don't care about the contents of the response. We only care that the service is listening on port 80.
 
-    :::image type="content" source="../media/curl-of-internal-pod-request.png" alt-text="Screenshot that shows cURL for the internal websalesagg pod request." lightbox="../media/curl-of-internal-pod-request.png":::
-
-1. Use the following command to close the shell:
+1. Use the following command to close the connection to the cURL pod:
 
     ```bash
     exit

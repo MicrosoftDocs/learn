@@ -12,16 +12,16 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-[Diagnose an Azure virtual machine routing problem | Microsoft Docs](/azure/virtual-network/diagnose-network-routing-problem)
+[Diagnose a virtual machine routing problem](/azure/virtual-network/diagnose-network-routing-problem)
 
-[Troubleshoot Azure Load Balancer | Microsoft Docs](/azure/load-balancer/load-balancer-troubleshoot-backend-traffic)
+[Troubleshoot Azure Load Balancer backend traffic responses](/azure/load-balancer/load-balancer-troubleshoot-backend-traffic)
 
-[Troubleshoot Azure Front Door common issues | Microsoft Docs](/azure/frontdoor/troubleshoot-issues)
+[Troubleshoot Azure Front Door common issues](/azure/frontdoor/troubleshoot-issues)
 
-[Test Azure virtual machine network latency in an Azure virtual network | Microsoft Docs](/azure/virtual-network/virtual-network-test-latency)
+[Test VM network latency](/azure/virtual-network/virtual-network-test-latency)
 
-[Azure Virtual Network peering | Microsoft Docs](/azure/virtual-network/virtual-network-peering-overview)
+[Virtual network peering](/azure/virtual-network/virtual-network-peering-overview)
 
-[View BGP status and metrics - Azure VPN Gateway | Microsoft Docs](/azure/vpn-gateway/bgp-diagnostics)
+[View BGP metrics and status](/azure/vpn-gateway/bgp-diagnostics)
 
-[Create, change, or delete an Azure virtual network peering | Microsoft Docs](/azure/virtual-network/virtual-network-manage-peering)
+[Create, change, or delete a virtual network peering](/azure/virtual-network/virtual-network-manage-peering)

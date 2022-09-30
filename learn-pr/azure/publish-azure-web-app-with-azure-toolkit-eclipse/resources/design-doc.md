@@ -127,8 +127,8 @@ Why would a customer use the technology; that is, what type of problem does it s
 **Useful links**
 
 - Eclipse IDE : https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2019-06/R/eclipse-inst-win64.exe
-- Create a web app in eclipse IDE : https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app?view=azure-java-stable
-- Azure toolkit for eclipse : https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse?view=azure-java-stable
+- Create a web app in eclipse IDE : https://learn.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse-create-hello-world-web-app?view=azure-java-stable
+- Azure toolkit for eclipse : https://learn.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse?view=azure-java-stable
 - Deploying java web apps to azure using eclipse: https://azure.microsoft.com/blog/deploy-java-web-apps-to-azure-using-eclipse/
-- Install the JDK for Azure and Azure stack: https://docs.microsoft.com/java/azure/jdk/java-jdk-install?view=azure-java-stable
+- Install the JDK for Azure and Azure stack: https://learn.microsoft.com/java/azure/jdk/java-jdk-install?view=azure-java-stable
 - Java for Azure and Azure Stack: https://www.azul.com/downloads/azure-only/zulu/

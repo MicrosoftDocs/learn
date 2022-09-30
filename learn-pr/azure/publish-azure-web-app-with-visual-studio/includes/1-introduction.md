@@ -17,4 +17,4 @@ In this module, you'll:
 - Familiarity with web app concepts
 - Basic programming knowledge
 - Basic HTML knowledge
-- A local installation of [Visual Studio 2022 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022)
+- A local installation of [Visual Studio 2022 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022)

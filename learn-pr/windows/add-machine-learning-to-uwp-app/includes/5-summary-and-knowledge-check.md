@@ -11,14 +11,14 @@ We reviewed these basics:
 
 We encourage you to keep learning. More courses are coming soon. Meanwhile, consider these related courses on how to build your own machine learning models:
 
-- [Classify images with the Microsoft Custom Vision Service](/learn/modules/classify-images-with-custom-vision-service/)
-- [Process images with the Computer Vision Service](/learn/modules/create-computer-vision-service-to-classify-images/index)
+- [Classify images with the Microsoft Custom Vision Service](/training/modules/classify-images-with-custom-vision-service/)
+- [Process images with the Computer Vision Service](/training/modules/create-computer-vision-service-to-classify-images/index)
 
 ## Additional resources
 
 **Windows Machine Learning**
 - [Windows Machine Learning API reference](/windows/ai/api-reference)
-- [Windows Machine Learning Docs]( https://docs.microsoft.com/windows/ai/)
+- [Windows Machine Learning Docs](/windows/ai/)
 - [WinMLTools](/windows/ai/convert-model-winmltools): Convert models trained in other ML frameworks into ONNX format for use with the Windows ML API.
 
 ### APIs referenced in this course

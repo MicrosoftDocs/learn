@@ -19,11 +19,13 @@ Here you'll open the URLs for the origin server and the link to the CDN-publishe
 ## Change the Origin Files
 
 1. Navigate to the website source code in Cloud Shell if you're not there already:
+
 ```azurecli
-cd source/website-files
+cd ~/source/website-files
 ```
 
 1. Open the index.html file in the code editor.
+
 ```azurecli
 code index.html
 ```
@@ -35,7 +37,7 @@ code index.html
 1. Upload the changed index.html to the $web blob storage container.
 
 ```azurecli
-    az storage blob upload-batch -s . -d \$web --account-name $STORAGE_ACCOUNT_NAME
+az storage blob upload-batch -s . -d \$web --account-name $STORAGE_ACCOUNT_NAME --overwrite
 ```
 
 ## Verify site changes

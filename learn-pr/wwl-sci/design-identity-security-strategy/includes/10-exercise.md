@@ -1,7 +1,5 @@
 ## Case Study: Design an identity security solution
 
-![ Diagram showing Tailwind Traders logo which consists of a blue t with a house carved out of it.](../media/tailwind-traders-logo.png)
-
 Tailwind Traders is a fictitious home improvement retailer. It operates
 retail hardware stores across the globe and online. The Tailwind Traders
 CISO is aware of the opportunities offered by Azure but also understands
@@ -11,21 +9,19 @@ may have difficulty managing the Azure environment and costs, which are
 hard to track and control. The CISO is interested in understanding how
 Azure manages and enforces security standards.
 
-## Requirements
+## Requirements: Conditional Access
 
 Tailwind Traders is planning on making some significant changes to their
 Identity Security Strategy. They have asked for your assistance with
 recommendations and questions. Here are the specific requirements.
 
-**Conditional Access.** The company has a new security optimization project for customer environments. The CISO wants to ensure that all available Privileged Users are controlled in the cloud.
+The company has a new security optimization project for customer environments. The CISO wants to ensure that all available Privileged Users are controlled in the cloud.
 
-## Tasks
+## Design tasks
 
-**Question: Conditional Access** - What could Tailwind Traders do to enforce Privileged Users to require MFA for all cloud access?
-
-1. Evaluate a solution and explain your decision-making process.
-1. Create a Conditional Access Policy that enforces all Global Administrators to require MFA.
-1. What could Tailwind Traders do to review administrators' access regularly to ensure only the right people have continued access to Azure resources?
-1. Configure recurring access reviews to revoke unneeded permissions over time.
-
-**Question:** How are you enforcing Identity Security for all users to protect their data, applications, and other assets in Microsoft Azure?
+* What could Tailwind Traders do to enforce Privileged Users to require MFA for all cloud access?
+    * Evaluate a solution and explain your decision-making process.
+    * Create a Conditional Access Policy that enforces all Global Administrators to require MFA.
+* What could Tailwind Traders do to review administrators' access regularly to ensure only the right people have continued access to Azure resources?
+* Configure recurring access reviews to revoke unneeded permissions over time.
+* How are you enforcing Identity Security for all users to protect their data, applications, and other assets in Microsoft Azure?

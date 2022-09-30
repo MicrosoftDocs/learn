@@ -3,9 +3,9 @@ uid: learn.enable-external-collaboration-with-b2b.2-azure-ad-b2b-overview
 metadata:
   title: What is Azure AD B2B?
   description: What is Azure AD B2B?
-  ms.date: 03/12/2020
-  author: chrispine-chiedo
-  ms.author: cchiedo
+  ms.date: 06/29/2022
+  author: msmimart
+  ms.author: mimart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is Azure AD B2B?
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: How are guest users different from regular member users?
+  - content: What is one of the main advantages of using Azure AD B2B collaboration?
     choices:
-    - content: Guest users have fewer restrictions compared with regular member users.
-      isCorrect: false
-      explanation: Guest users have more restrictions than regular member users.
-    - content: Guest users have more restrictions compared with regular members users.
+    - content: You can allow people outside of your organization to use their own credentials to sign in to your apps.
       isCorrect: true
-      explanation: Guest user access is for external users, and guest user type accounts have fewer permissions.
-    - content: Guest users and regular member users have the same level of permissions.
+      explanation: Correct. A B2B collaboration user authenticates using credentials from their home organization or identity provider, so you don't need to provide or maintain credentials for them.
+    - content: You can collaborate with people outside of your organization by giving them a user ID and password.
       isCorrect: false
-      explanation: Guest users have more restrictions than regular member users.
-  - content: How can you add an additional layer of protection to the application?
+      explanation: Try again. A B2B collaboration user authenticates using their own credentials and their home organization or identity provider. You don't need to maintain a user ID or password for them.
+    - content: You can allow people outside of your organization to access your apps without adding a user object to your directory.
+      isCorrect: false
+      explanation: Try again. A user object for the B2B collaboration user is added to your directory, and you can manage it like other user objects in your directory. For example you can assign it permissions, add it to groups, and so on.
+  - content: How can you add a layer of protection to the application?
     choices:
     - content: Use unconditional access policies in Azure AD B2B.
       isCorrect: false
-      explanation: There's no such thing as unconditional access policies in Azure.
+      explanation: Try again. There's no such thing as unconditional access policies in Azure.
     - content: Use Conditional Access policies in Azure AD B2B.
       isCorrect: true
-      explanation: Conditional Access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
+      explanation: Correct. Conditional Access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
     - content: Use criteria access policies in Azure AD B2B.
       isCorrect: false
-      explanation: There's no such thing as criteria access policies in Azure.
+      explanation: Try again. There's no such thing as criteria access policies in Azure.

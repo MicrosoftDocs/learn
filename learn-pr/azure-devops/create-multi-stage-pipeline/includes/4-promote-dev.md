@@ -2,7 +2,7 @@ The team has a plan and is ready to begin implementing their release pipeline. Y
 
 At this point, remember that the team's pipeline has only two stages. The first stage produces the build artifact. The second stage deploys the _Space Game_ web app to App Service. Here, you follow along with Andy and Mara as they modify the pipeline. They'll deploy to the App Service environment that corresponds to the _Dev_ stage.
 
-The _Dev_ stage resembles the deployment stage that you made in the [Create a release pipeline in Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module. There, you used a CI trigger to start the build process. Here you do the same.
+The _Dev_ stage resembles the deployment stage that you made in the [Create a release pipeline in Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module. There, you used a CI trigger to start the build process. Here you do the same.
 
 ## Fetch the branch from GitHub
 
@@ -24,7 +24,7 @@ To fetch and switch to the branch:
 
 1. As an optional step, from Visual Studio Code, open *azure-pipelines.yml*. Familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one that you created in the [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true) module. It builds only the app's release configuration. For learning purposes, this configuration doesn't run the quality or security checks that you set up in previous modules.
+    The configuration resembles the basic one that you created in the [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true) module. It builds only the app's release configuration. For learning purposes, this configuration doesn't run the quality or security checks that you set up in previous modules.
 
     [!include[](../../shared/includes/pipeline-branches-note.md)]
 
@@ -38,7 +38,7 @@ Here, you modify your pipeline configuration to promote the build to the _Dev_ s
 
     This configuration resembles the one that you built in the previous module. There, you and the team built a proof of concept for continuous deployment. But note these differences, which are highlighted in the preceding code example:
 
-    * This configuration defines variables at the top of the file. The variables are used throughout the pipeline. They define which configuration to build (`Release`). They also define the name of your release branch (`release`).
+    * This configuration defines variables at the beginning of the file. The variables are used throughout the pipeline. They define which configuration to build (`Release`). They also define the name of your release branch (`release`).
     * The **Deploy** stage from the proof of concept is now named **Dev**.
     * The **Dev** stage uses a condition that directs the system to run the stage only when the previous stage succeeds and the current branch is `release`. This setup ensures that release features are deployed only to the _Dev_ environment.
     * The deployment step uses the `WebAppNameDev` variable to deploy to the App Service instance that's associated with the _Dev_ environment.
@@ -63,7 +63,7 @@ Here, you modify your pipeline configuration to promote the build to the _Dev_ s
     :::image type="content" source="../media/4-pipeline-dev-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing the completed stages.":::
 
     You see that the deployment finished successfully.
-1. From a web browser, navigate to the URL that's associated with the App Service instance for your _Dev_ environment.
+1. From a web browser, go to the URL that's associated with the App Service instance for your _Dev_ environment.
 
     If you still have the browser tab open, refresh the page. If you don't remember the URL, find it in the Azure portal, on the **App Service details** page.
 

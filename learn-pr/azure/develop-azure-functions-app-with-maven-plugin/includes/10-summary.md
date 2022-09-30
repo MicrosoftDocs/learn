@@ -10,6 +10,6 @@ The Maven Plugin for Azure Functions enables your development team to rely on th
 - [Azure Functions: Configuration Details](https://github.com/microsoft/azure-maven-plugins/wiki/Azure-Functions:-Configuration-Details)
 - [host.json reference for Azure Functions 2.x and later](/azure/azure-functions/functions-host-json)
 - [Maven Getting Started Guide](http://maven.apache.org/guides/getting-started/)
-- [Maven Plugin for Azure Functions](/learn/modules/develop-azure-functions-app-with-maven-plugin/)
+- [Maven Plugin for Azure Functions](/training/modules/develop-azure-functions-app-with-maven-plugin/)
 - [Maven archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html)
 - [Work with Azure Functions Core Tools](/azure/azure-functions/functions-run-local)

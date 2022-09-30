@@ -8,19 +8,19 @@ Resizing of Azure VMs can be performed from the Azure portal, via PowerShell, Az
 
 Key considerations for resizing include:
 
- -  The Azure region may not contain the hardware requirements to support the desired sizes
- -  Resizing without the need to restart the VM depending on the current hardware cluster
- -  New VM support or Premium Storage
- -  Updating the VM in an availability set
+- The Azure region may not contain the hardware requirements to support the desired sizes
+- Resizing without the need to restart the VM depending on the current hardware cluster
+- New VM support or Premium Storage
+- Updating the VM in an availability set
 
 ## Storage
 
 As explained earlier, the size of the virtual machine controls how many data disks you can attach. Attaching disks is an online operation. You can detach a data disk without stopping the Azure VM by using PowerShell or Azure CLI, but you should first make sure that the disk isn't being used. For details, refer to:
 
- -  [How to detach a data disk from a Windows virtual machine](/azure/virtual-machines/windows/detach-disk)
- -  [How to detach a data disk from a Linux virtual machine](/azure/virtual-machines/linux/detach-disk)
+- [How to detach a data disk from a Windows virtual machine](/azure/virtual-machines/windows/detach-disk)
+- [How to detach a data disk from a Linux virtual machine](/azure/virtual-machines/linux/detach-disk)
 
 You also have the option of expanding attached Azure VM disks. For details, refer to:
 
- -  [How to expand the OS drive of a virtual machine (Windows)](/azure/virtual-machines/windows/expand-os-disk)
- -  [Expand virtual hard disks on a Linux VM with the Azure CLI](/azure/virtual-machines/linux/expand-disks)
+- [How to expand virtual hard disks attached to a Windows virtual machine](/azure/virtual-machines/windows/expand-os-disk)
+- [Expand virtual hard disks on a Linux VM with the Azure CLI](/azure/virtual-machines/linux/expand-disks)

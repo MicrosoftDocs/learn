@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-synapse-analytics.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/21/2022
+  author: wwlpublish
+  ms.author: jamesh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "Which of the following descriptions matches a hybrid transactional/analytical processing (HTAP) architecture."
+    choices:
+    - content: "Business applications store data in an operational data store, which is also used to support analytical queries for reporting."
+      isCorrect: false
+      explanation: "Incorrect. One of the goals of an HTAP solution is to avoid the overhead of supporting analytical queries in an operational data source."
+    - content: "Business applications store data in an operational data store, which is synchronized with low latency to a separate analytical store for reporting and analysis."
+      isCorrect: true
+      explanation: "Correct. an HTAP solution replicates operational data to an analytical store, enabling you to perform analytics and reporting without impacting the performance of the operational system."
+    - content: "Business applications store operational data in an analytical data store that is optimized for queries to support reporting and analysis."
+      isCorrect: false
+      explanation: "Incorrect. One of the goals of an HTAP solution is to optimize operational storage for applications without it being impacted by analytical queries."
+  - content: "You want to use Azure Synapse Analytics to analyze operational data stored in a Cosmos DB core (SQL) API container. Which Azure Synapse Link service should you use?"
+    choices:
+    - content: "Azure Synapse Link for SQL"
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Link for SQL integrates with SQL Server or Azure SQL Database."
+    - content: "Azure Synapse Link for Dataverse"
+      isCorrect: false
+      explanation: "Incorrect. Azure Synapse Link for Dataverse integrates with the Dataverse Power Platform data store."
+    - content: "Azure Synapse Link for Cosmos DB"
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Link for Cosmos DB integrates with the Cosmos DB core (SQL) and MongoDB APIs."
+  - content: "You plan to use Azure Synapse Link for Dataverse to analyze business data in your Azure Synapse Analytics workspace. Where is the replicated data from Dataverse stored?"
+    choices:
+    - content: "In an Azure Synapse dedicated SQL pool"
+      isCorrect: false
+      explanation: "Incorrect. Dataverse data is not replicated to a dedicated Azure SQL pool."
+    - content: "In an Azure Data Lake Gen2 storage container."
+      isCorrect: true
+      explanation: "Correct. Azure Synapse Link for Dataverse replicates data to an Azure Data Lake Gen2 storage account."
+    - content: "In an Azure Cosmos DB container."
+      isCorrect: false
+      explanation: "Incorrect. Dataverse data is not replicated to Azure Cosmos DB."

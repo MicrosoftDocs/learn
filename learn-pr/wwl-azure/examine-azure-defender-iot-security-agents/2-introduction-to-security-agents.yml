@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.examine-azure-defender-for-iot-security-agents.agent-options
-title: Examine Azure Defender for IoT security agent options
+title: Examine Microsoft Defender for IoT security agent options
 metadata:
-  title: Examine Azure Defender for IoT security agent options
-  description: "Examine Azure Defender for IoT security agent options"
-  ms.date: 02/24/2022
+  title: Examine Microsoft Defender for IoT security agent options
+  description: "Examine Microsoft Defender for IoT security agent options"
+  ms.date: 07/14/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial

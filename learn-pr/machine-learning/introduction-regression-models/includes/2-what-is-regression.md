@@ -95,7 +95,7 @@ One of the most common ways to measure the loss is to square the individual resi
 
 For our validation data, the calculation looks like this example:
 
-|x          |y         |ŷ       |(y - ŷ)2        |
+|x          |y         |y - ŷ       |(y - ŷ)2        |
 |-----------|----------|--------|----------------|
 |**156**    |159.4     |-3.4    | 11.56          |
 |**114**    |111.8     |2.2     | 4.84           |

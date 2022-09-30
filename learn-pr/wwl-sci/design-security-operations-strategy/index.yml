@@ -4,7 +4,7 @@ metadata:
   title: Design a security operations strategy
   description: "Learn how to design a cybersecurity strategy for security operations (SecOps)."
   ms.date: 06/08/2022
-  author: wwlpublish
+  author: hrasheed-msft
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -22,7 +22,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments.
   - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - advanced
 roles:
@@ -45,3 +45,6 @@ units:
 - learn.wwl.design-security-operations-strategy.summary
 badge:
   uid: learn.wwl.design-security-operations-strategy.badge
+subjects:
+- security
+- architecture

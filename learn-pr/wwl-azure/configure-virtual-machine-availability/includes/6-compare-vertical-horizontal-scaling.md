@@ -2,7 +2,7 @@ Generally, there are two types of scaling: vertical scaling and horizontal scali
 
 ## Vertical scaling
 
-:::image type="content" source="../media/vertical-scaling-cdafa792.png" alt-text="Vertical scaling shows a single VM getting larger.":::
+:::image type="content" source="../media/vertical-scaling-cdafa792.png" alt-text="Vertical scaling shows a single virtual machine increasing.":::
 
 
 Vertical scaling, also known as scale up and scale down, means increasing or decreasing virtual machine sizes in response to a workload. Vertical scaling makes the virtual machines more (scale up) or less (scale down) powerful. Vertical scaling can be useful when:
@@ -12,7 +12,7 @@ Vertical scaling, also known as scale up and scale down, means increasing or dec
 
 ## Horizontal scaling
 
-:::image type="content" source="../media/horizontal-scaling-3e457e75.png" alt-text="Horizontal scaling shows more VMs being added.":::
+:::image type="content" source="../media/horizontal-scaling-3e457e75.png" alt-text="Horizontal scaling shows more virtual machines being added.":::
 
 
 Horizontal scaling, also referred to as scale out and scale in, where the number of VMs is altered depending on the workload. In this case, there is an increase (scale out) or decrease (scale in) in the number of virtual machine instances.

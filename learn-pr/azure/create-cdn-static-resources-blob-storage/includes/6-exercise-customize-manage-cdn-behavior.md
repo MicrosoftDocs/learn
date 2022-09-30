@@ -24,9 +24,11 @@ If you haven't already, verify the CDN is delivering the same content as your so
 
 1. In the **Static website** page, select the **$web** link.
 
-1. In the **$web** panes, under Settings, select **Editor (preview)**.
+1. In the **$web** panes, select **Overview**.
 
-1. In the **Editor (preview)** pane, select **index.html**.
+1. Check the box to select **index.html** and select **...** to open the context menu.
+
+1. On the context menu, select **View/edit**.
 
 1. In the **Index.html** tab, alter the page by adding text in the **H1** tag and select **Save**.
 
@@ -64,7 +66,9 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. Switch to the tab displaying the CDN cached copy of the website, add `/?Q=old` to the end of the URL, then press Enter. The page shouldn't change.
 
-1. Switch to the second copy of the Azure portal, and in the **Editor (preview)** pane, select **index.html**.
+1. Switch to the second copy of the Azure portal, and in the **Overview** pane, select **index.html**.
+
+1. Select **...** to open the context menu, and select **View/edit**.
 
 1. In the **Index.html** tab, add some more text to the file and then select **Save**.
 
@@ -74,7 +78,7 @@ After 10 minutes, the new settings should have updated on the CDN endpoint. Cont
 
 1. Switch back to the `/?Q=old` URL and notice that the older page reappears.
 
-1. Switch back to the copy of the Azure portal that shows the CDN Endpoint settings. Click **Caching rules** under **Settings**.
+1. Switch back to the copy of the Azure portal that shows the CDN Endpoint settings. Select **Caching rules** under **Settings**.
 
 1. In the Caching rules pane, in the **Query string caching behavior** drop-down, select **Bypass caching for query strings**, then select **Save**.
 

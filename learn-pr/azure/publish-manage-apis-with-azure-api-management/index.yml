@@ -18,7 +18,7 @@ abstract: |
   - Call an API with a subscription key
 prerequisites: | 
   - Familiarity with basic concepts of web APIs, such as operations and endpoints
-iconUrl: /learn/achievements/publish-manage-apis-with-azure-api-management.svg
+iconUrl: /training/achievements/publish-manage-apis-with-azure-api-management.svg
 levels:
 - beginner
 roles:

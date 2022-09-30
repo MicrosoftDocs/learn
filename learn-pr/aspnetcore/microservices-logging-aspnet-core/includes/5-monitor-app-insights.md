@@ -27,13 +27,7 @@ In the preceding image, notice the following things:
 
 Use the app to generate some telemetry data to examine. Open another browser tab to complete the following steps. While you're completing the steps, observe the results on the **Live Metrics** view.
 
-1. If needed, run the following command in the Cloud Shell to display the various app URLs:
-
-    ```bash
-    cat ~/clouddrive/aspnet-learn/deployment-urls.txt
-    ```
-
-1. Select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. Use the **:::no-loc text="Web SPA application":::** link in the terminal to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
@@ -84,7 +78,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
 The Application Map provides one way of exploring captured telemetry. You can also search for a request using known criteria. To search for a request and investigate the end-to-end transaction, complete the following steps:
 
-1. Select **Search** from the **Investigate** section to open the transaction search panel.
+1. Select **Transaction search** from the **Investigate** section to open the transaction search panel.
 1. In the **Search** text box, enter *:::no-loc text="GIVEMEFREESTUFF":::* and press <kbd>Enter</kbd>.
 
     A variation of the following page appears:

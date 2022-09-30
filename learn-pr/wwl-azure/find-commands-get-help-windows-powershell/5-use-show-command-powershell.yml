@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.find-commands-get-help-windows-powershell.use-show-command-powershell
+title: Use Show-Command and Get-Help in PowerShell
+metadata:
+  title: Use Show-Command and Get-Help in PowerShell
+  description: "Use Show-Command and Get-Help in PowerShell"
+  ms.date: 08/04/2022
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-use-show-command-powershell.md)]
