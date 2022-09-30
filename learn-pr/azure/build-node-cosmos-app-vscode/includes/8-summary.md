@@ -19,5 +19,5 @@ You can now use Node.js to build applications that create, query, and maintain d
 - [Tutorial: Build a console app with Cosmos DB](/azure/cosmos-db/sql-api-nodejs-get-started)
 - [Learn more about SQL queries on Cosmos DB](/azure/cosmos-db/sql/sql-query-getting-started)
 - [Request Units (RUs)](/azure/cosmos-db/request-units)
-- [@azure/cosmos reference documentation](/javascript/api/overview/azure/cosmos-readme?view=azure-node-latest)
+- [@azure/cosmos reference documentation](/javascript/api/overview/azure/cosmos-readme)
 - [Cosmos DB Core (SQL) JavaScript samples](https://github.com/Azure-Samples/cosmos-db-sql-api-javascript-samples)
