@@ -1,8 +1,7 @@
 Azure Database for PostgreSQL is a platform as a service (PaaS) database available in several versions, and different server configurations. Each server option offers a choice of versions for PostgreSQL community edition.
 
-Azure Database for PostgreSQL is current available in three different deployment options:
+Azure Database for PostgreSQL is available in three different deployment options:
 
-- **Single server** - with the option to install PostgreSQL version 10 or 11 over Windows. Azure Database for PostgreSQL Single server has a planned end of life and the replacement is Azure SQL Database for PostgreSQL Flexible server.
 - **Flexible server** - with the option to install PostgreSQL version 11, 12, or 13 over Linux.
 - **Hyperscale Citus** - with the option to install PostgreSQL version 11, 12, 13 or 14 with the Citus extension.
 - **Azure Arc-enabled PostgreSQL Hyperscale** (in preview) - PostgreSQL with the Citus extension that allows either a single node or multiple nodes on any infrastructure including on-premises or multi-cloud. For this option, Microsoft provides only the software, not the hardware infrastructure.
@@ -11,26 +10,6 @@ Azure Database for PostgreSQL flexible servers can be started and stopped, so th
 
 > [!NOTE]
 > When a PostgreSQL server is stopped, you are notified that it will restart within a certain number of days, if you do not restart it.
-
-## Single server
-
-Single server is a similar deployment option to PostgreSQL server that might be installed on-premises, but available as a service. Single server runs on Windows, but there is no access to the underlying operating system or file system.
-
-Available compute tiers are:
-
-- **Basic** - up to two vCores
-- **General purpose** - up to 64 vCores
-- **Memory optimized** - up to 32 memory- optimized vCores
-
-Single server is only suitable for organizations that:
-
-- Do not need a high level of control over the configuration of their PostgreSQL server.
-- Do not need zone-redundant high availability (Single server only supports high availability within a zone).
-- Want to run PostgreSQL version 10 or 11.
-- Will not need to scale up from the Basic tier once the server has been provisioned.
-
-> [!NOTE]
-> Azure Database for PostgreSQL Single server has a planned end of life and the replacement is Azure SQL Database for PostgreSQL Flexible server. Only choose single server if you need a feature that single server offers. For new installations, consider flexible server which has more control over server parameters.
 
 ## Flexible server
 
@@ -63,6 +42,4 @@ The available compute tiers are:
 
 ## Which server to choose
 
-If you require high scalability with multiple nodes, you should deploy Hyperscale Citus. In other scenarios you should deploy Flexible server and only deploy Single server for backwards compatibility.
-
-For comparisons between Single server and Flexible server, see [Comparison chart - Azure Database for PostgreSQL Single Server and Flexible Server](/azure/postgresql/flexible-server/concepts-compare-single-server-flexible-server)
+If you require high scalability with multiple nodes, you should deploy Hyperscale Citus. In other scenarios you should deploy Flexible server.
