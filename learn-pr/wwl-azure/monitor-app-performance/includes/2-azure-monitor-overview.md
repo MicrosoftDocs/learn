@@ -7,7 +7,7 @@ The following diagram is a high-level view of Azure Monitor.
 - On the left are the sources of monitoring data that populate the data stores.
 - On the right are the different functions that Azure Monitor performs with this collected data. This diagram includes such actions as analysis, alerting, and integration such as streaming to external systems.
 
-:::image type="content" source="../media/azure-monitor-overview-2022-10-15-add-prometheus-opt.svg" alt-text=Diagram that shows an overview of Azure Monitor." border="false" lightbox="../media/azure-monitor-overview-2022-10-15-add-prometheus-opt.svg":::
+:::image type="content" source="../media/azure-monitor-overview-2022-10-15-add-prometheus-opt.svg" alt-text="Diagram that shows an overview of Azure Monitor." border="false" lightbox="../media/azure-monitor-overview-2022-10-15-add-prometheus-opt.svg":::
 
 ## What data does Azure Monitor collect?
 
