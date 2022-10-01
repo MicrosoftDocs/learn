@@ -23,7 +23,7 @@ Let's run a simple query on the `Perf` table to retrieve logs from the past 24 h
 Perf  // The table you’re querying
 | where TimeGenerated > ago(1d) // Filters for entries generated in the past day 
 ```
-:::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot showing the results of a query on the Perf table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
+:::image type="content" source="../media/kql-log-analytics-perf-table.png" alt-text="Screenshot that shows the results of a query on the Perf table with the ObjectName, CounterName, InstanceName, and CounterValue columns highlighted." lightbox="../media/kql-log-analytics-perf-table.png":::
 
 You can see that the `TimeGenerated`, `Computer`, `ObjectName`, `CounterName`, `InstanceName`, and `CounterValue` columns hold data that's relevant to our analysis. 
 
@@ -38,7 +38,7 @@ Perf // The table you’re querying
 
 This screenshot shows the distinct combinations of `ObjectName` and `CounterName` values in the `CounterName` column in the past 24 hours:    
 
-:::image type="content" source="../media/kql-log-analytics-perf-table-cpu.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Percentage Processor Time value highlighted." lightbox="../media/kql-log-analytics-perf-table-cpu.png":::
+:::image type="content" source="../media/kql-log-analytics-perf-table-cpu.png" alt-text="Screenshot that shows the results of the distinct CounterName query on the Perf table with the Percentage Processor Time value highlighted." lightbox="../media/kql-log-analytics-perf-table-cpu.png":::
 
 The `% Processor Time` counter gives you an understanding of the utilization of the processor, or Central Processing Unit (CPU). This is information you need!
 
@@ -67,7 +67,7 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
     
     This query retrieves all logs related to total processor time measurements from the past day. 
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table-1d.png" alt-text="Screenshot showing the results of a query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-1d.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-table-1d.png" alt-text="Screenshot that shows the results of a query for all logs generated in the past day that reported the Percentage Processor Time performance counter." lightbox="../media/kql-log-analytics-perf-table-1d.png":::
 
 1. Find the minimum, maximum and average counter values, and calculate the 90th and 99th percentile counter values for each computer: 
     
@@ -80,7 +80,8 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
     ```
     The result set of this query shows the minimum, maximum, average, 90th and 99th percentile `% Processor Time` counter values for each computer for which there's data in your Log Analytics workspace.
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table-min-avg-max-percentiles.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-min-avg-max-percentiles.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-table-min-avg-max-percentiles.png" alt-text="Screenshot that shows the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-min-avg-max-percentiles.png":::
+
 1. Filter the query results for entries where the `% Processor Time` counter value is higher than 80 in the 90th and 99th percentile range:
     
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA4VSzUrDQBC%252B%252BxRDQWih0Hozh3oRFC%252FaQ%252FFapsk0WdmfuLMbjXjwNXw9n8TJJqS1UIQclplvvp%252BZrMnvARYL2FQEAXeaoHXx5%252BvbE7xG8q2y5cUnvFUkhY0ydE%252BWPAYq4AawdNOrYgZoC3javVAeHtEQrFYwWXuXE7Pzk9S9ddEG8mP7EkZAYu1RD5YD2pxG2HbjAupJ5%252B9OaSFg2MsE2eAVMZSjF2UhSIAaOUCBLXjSqR6cfEIB9SgXRA4MIUdPRpgYQAJyNAa9%252BpCWstPB7jPqSLM5YFOelgy%252Bn5Zq8rnwKU38pzWHbDnPshnsWtmDqaM0ukRrT5z0O%252Beiqkw0ibh%252FYCPZyjQdqrSeLJPHQQXyXgSaTmXYDOaV1AeR8XCHoe2xs222lCteLxP7WUzWY45uUHtqlIvc%252FyGybI469AbUcEIelLts%252FwVgQEFWqpQJGUArcr%252Bs8EsKmAIAAA%253D%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
@@ -94,7 +95,7 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
 
     The result set of this query consists of all computers for which the top 10% and 15% `% Processor Time` values are over 80.  
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table-percentiles-over-80.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-percentiles-over-80.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-table-percentiles-over-80.png" alt-text="Screenshot that shows the results of a query that filters for entries where the Percentage Processor Time counter value is higher than 80 in the 90th and 99th percentile range." lightbox="../media/kql-log-analytics-perf-table-percentiles-over-80.png":::
 
 ## Add operating system information from the Heartbeat table to the query results
 
@@ -118,7 +119,7 @@ Let's add information about the operating system running on each computer, which
 
     This iteration of the query adds the `Computer` and `OSType` columns from the `Heartbeat` table to the previous query results. 
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table-union-heartbeat.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-union-heartbeat.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-table-union-heartbeat.png" alt-text="Screenshot that shows the results of a query that adds operating system information from the Heartbeat table to the previous query results." lightbox="../media/kql-log-analytics-perf-table-union-heartbeat.png":::
 
     The `Computer` column now appears twice in the query results - once from the query on the `Perf` table and once from the query on the `Heartbeat` table. The `Computer` column from the `Heartbeat` table has been renamed `Computer1`, but the two tables contain identical data. Having both columns enables correlating the results from the two tables, but you can now filter away the duplicate column.
     
@@ -137,6 +138,6 @@ Let's add information about the operating system running on each computer, which
     | project-away Computer1 // Removes the "Computer1" column from the query results 
     ```
 
-    The result set of this query contains all of the computers that reached their full CPU capacity and includes information about the operating system on each computer, which will be helpful for further analysis.
+    The result set of this query lists all of the computers that reached their full CPU capacity and the operating system running on each computer, which will be helpful for further analysis.
 
-    :::image type="content" source="../media/kql-log-analytics-perf-table-union-heartbeat-project-away.png" alt-text="Screenshot showing the minimum, maximum, average, 90th and 99th percentile results of the query on the Perf table." lightbox="../media/kql-log-analytics-perf-table-union-heartbeat-project-away.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-table-union-heartbeat-project-away.png" alt-text="Screenshot that shows the results of a query that removes the Computer 1 column from the previous query results." lightbox="../media/kql-log-analytics-perf-table-union-heartbeat-project-away.png":::
