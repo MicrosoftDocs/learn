@@ -29,9 +29,9 @@ Perf // The table you’re querying
 
 The result set of this query includes all `ObjectName` values currently in the table:
 
-:::image type="content" source="../media/kql-log-analytics-perf-table-distinct-objectname.png" alt-text="Screenshot showing the results of the Distinct ObjectName query on the Perf table with the Logical Disk and LogicalDisk as one word values highlighted." lightbox="../media/kql-log-analytics-perf-table-distinct-objectname.png":::
+:::image type="content" source="../media/kql-log-analytics-perf-table-distinct-objectname.png" alt-text="Screenshot that shows the results of the Distinct Object Name query on the Perf table with the Logical Disk values highlighted." lightbox="../media/kql-log-analytics-perf-table-distinct-objectname.png":::
 
-In our scenario, we're interested in analyzing virtual machines, so the objects we want to look at are `LogicalDisk` and `Logical Disk` (to monitor the memory in a physical machine, you'd look at the `memory` object). The reason there are two similarly-named objects is that `LogicalDisk` is the object name in Windows records while `Logical Disk` is used in Linux records.
+In our scenario, we're interested in analyzing virtual machines, so the objects we want to look at are `LogicalDisk` and `Logical Disk` (to monitor the memory in a physical machine, you'd look at the `memory` object). The reason there are two similarly named objects is that `LogicalDisk` is the object name in Windows records while `Logical Disk` is used in Linux records.
  
 
 To list the distinct names of the counters Azure Monitor collects for the `LogicalDisk` and `Logical Disk` objects, run:
@@ -47,7 +47,7 @@ ObjectName == "Logical Disk" // The object name used in Linux records
 
 The result set of this query includes all performance counters collected for the `LogicalDisk` and `Logical Disk` objects:
 
-:::image type="content" source="../media/kql-log-analytics-perf-table-countername.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-table-countername.png":::
+:::image type="content" source="../media/kql-log-analytics-perf-table-countername.png" alt-text="Screenshot that shows the results of a query that lists the distinct names of the counters Azure Monitor collects for the LogicalDisk (written as one word) and Logical Disk (written as two words) objects." lightbox="../media/kql-log-analytics-perf-table-countername.png":::
 
 The performance counters that provide information about used and free space are `% Used Space`, `% Free Space`, and `Free Megabytes`. We have two similar counters - `% Free Space` and `% Used Space` - collected from Windows and Linux records, respectively. 
 
@@ -74,14 +74,14 @@ Let's assess how we can use this data and which KQL operations can help extract 
     | where ObjectName == "LogicalDisk" or // The object name used in Windows records
     ObjectName == "Logical Disk" // The object name used in Linux records
     | where CounterName == "Free Megabytes" or CounterName =="% Free Space" or CounterName == "% Used Space" // Filters for the performance counters Free Megabytes, % Free Space, and % Used Space performance counters
-    | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual disk  
+    | where InstanceName == "_Total"  // Retrieves data related to free space for all drives on a virtual machine  
     ```
 
     The result set of this query likely includes multiple records for each machine from which you collect performance counters related to free space.
 
-    :::image type="content" source="../media/kql-log-analytics-perf-free-space.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-free-space.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-free-space.png" alt-text="Screenshot that shows the results of a query for logs generated in the past day that report on virtual machine free space." lightbox="../media/kql-log-analytics-perf-free-space.png":::
 
-1. Filter for the last counter value collected for every combination of counter and computer for every virtual machine: 
+1. Filter for the last counter value collected for every counter reported by each virtual machine: 
 
     <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA32S3UoDMRCF732KQ0FoYaH4APVGqQj1B616Waab6Taan5Jkt6348E62dulC8XLnnJz5crLPHFYXP9iuOTDm2vIdOw6UWOEaVPnhlRp1%252BtPyk8v0SJYxmWAw85Uuydzq%252BDWADxiPMV8zfOuCy7Y6SpB2%252BNBO%252BW1E4NIHFS%252FOJ%252BEQ9U%252FOTLt616UcuW587RKHLm4amPHAFS33iWPL1rcMLtF6XjdU8hkdYnjLK%252F8MQjTVRvSIlZiT0G2kOB8suZJRHg5H9BcXOF1TgJzCae7ZjO5S9y6mrHRIi7lPZAbINC%252BcguaGIxQlkkJM%252B2TJt2wpG6UzqrjlJWOggs5270BodEi1OJTUDcjGWFtLQX8zKFQLS7th71cojvW8k6l5hOVeBnZTy6ToNdcjyySGYjpeDU0%252BLV%252FGyLsKbUZjKtedoR00HPYdoRVZO%252F4FivrG3KYCAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
     
@@ -96,7 +96,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
     ```
     You now have the last reported counter value for every free space-related counter of every machine.
 
-    :::image type="content" source="../media/kql-log-analytics-perf-free-space-summarize.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-free-space-summarize.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-free-space-summarize.png" alt-text="Screenshot that shows the results of a query that filters for the last counter value collected for each counter every virtual machine." lightbox="../media/kql-log-analytics-perf-free-space-summarize.png":::
     
 1. To facilitate analysis:
 
@@ -118,9 +118,9 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
         The result set of this query presents the percentage of free space on Windows and Linux machines in the same way, which makes further analysis clearer and easier. 
 
-        :::image type="content" source="../media/kql-log-analytics-perf-free-space-extend.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-free-space-extend.png":::    
+        :::image type="content" source="../media/kql-log-analytics-perf-free-space-extend.png" alt-text="Screenshot that shows the results of a query that converts the Percentage Used Space counter value to Percentage Free Space." lightbox="../media/kql-log-analytics-perf-free-space-extend.png":::    
 
-    1. Convert total `Free Megabytes` to Gigabytes (`Free Megabytes` value * 0.001 = Free Gigabytes) and relabel `Free Megabytes` to `OverallFreeSpaceInGB`:
+    1. Convert `Free Megabytes` to Gigabytes (`Free Megabytes` value * 0.001 = Free Gigabytes) and relabel `Free Megabytes` to `OverallFreeSpaceInGB`:
             
         <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42R0U6DMBSG7%252FcUJyQmzKCDB8CLaVyWTGci6uVS4MDqoF3a4pjx4S0lI5Rturum5%252Bt3%252FnP6giIb%252FcBujQIhoiXOkKEgClO4A5JzN0jHXX0Zf2KinkmJEIbgLHhOE1I8ULlxgAuYTCBaI3BDAWuwSmoRZfBBWcp3EgQmXKRydNoEreoPz4Kyqu4sh1z3vGIKRad7FIjwhDmJ9wqlyWYjzhUY5nVLEjxRBw28NS1boGs0Z1IRlmCHrSKuSNEAsipLIug3AhH5qiS1a23TO3R4J0WFY4j3%252BqLcVvrG6zfXJqwVstTiIQSaZW6PMzP0InoQ%252BP5N%252F82g45G4neF%252Fr70rK%252Byx9HzawZ944Frxrv1b3w8uyXyR3Fl%252B6b0XRVMwwedsNj0bXgMbPXFoDn31IM8vQBDU1y0DAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
         
@@ -140,7 +140,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
         
         You can now get a clear picture of the total free space on each machine in gigabytes and as a percentage of the machine's total memory. 
 
-        :::image type="content" source="../media/kql-log-analytics-perf-free-space-extend-free-megabytes.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-free-space-extend-free-megabytes.png":::    
+        :::image type="content" source="../media/kql-log-analytics-perf-free-space-extend-free-megabytes.png" alt-text="Screenshot that shows the results of a query that converts the Free Megabytes column to Overall Free Space In Gigabytes." lightbox="../media/kql-log-analytics-perf-free-space-extend-free-megabytes.png":::    
 
 1. Group together `CounterName, CounterValue` key-value pairs:
     
@@ -162,7 +162,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
     ```
     Grouping together `CounterName, CounterValue` key-value pairs lets you create a dictionary of free space statistics for each computer in the next step. 
 
-    :::image type="content" source="../media/kql-log-analytics-perf-free-space-extend-pack.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-free-space-extend-pack.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-free-space-extend-pack.png" alt-text="Screenshot that shows the results of a query that groups together Counter Name and Counter Value key-value pairs." lightbox="../media/kql-log-analytics-perf-free-space-extend-pack.png":::
     
 1. Create a property-bag (dictionary), called SpaceStats, of all free space statistics collected for each machine, summarize by computer, and filter for machines with less than 50% free space:
     
@@ -189,4 +189,4 @@ Let's assess how we can use this data and which KQL operations can help extract 
         
     The last line of the query filters for machines with less that 50% free space. You might want to monitor or analyze more closely, or reconfigure them to ensure they don't run out of space.
 
-    :::image type="content" source="../media/kql-log-analytics-perf-free-space-make-bag.png" alt-text="Screenshot showing the results of the distinct CounterName query on the Perf table with the Free Megabytes, Percentage of Free Space, and Percentage of Used Space values highlighted." lightbox="../media/kql-log-analytics-perf-free-space-make-bag.png":::
+    :::image type="content" source="../media/kql-log-analytics-perf-free-space-make-bag.png" alt-text="Screenshot that shows the results of a query that summarizes free space statistics by machine." lightbox="../media/kql-log-analytics-perf-free-space-make-bag.png":::
