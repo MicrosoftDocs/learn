@@ -18,6 +18,7 @@ Metrics, logs, and distributed traces are commonly referred to as the three pill
 | Metrics | Metrics are numerical values that describe some aspect of a system at a particular point in time. They're collected at regular intervals and are identified with a timestamp, a name, a value, and one or more defining labels. |
 | Logs    | Logs are events that occurred within the system. They can contain different kinds of data and may be structured or free-form text with a timestamp. |
 | Distributed traces | Traces are series of related events that follow a user request through a distributed system. |
+| Changes | Changes are a series of events that occur in your Azure application and resources. Change Analysis tracks changes and is a subscription-level observability tool that's built on the power of Azure Resource Graph. |
 
 ## Insights and curated visualizations
 
