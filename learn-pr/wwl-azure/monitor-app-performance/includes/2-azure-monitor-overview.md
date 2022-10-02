@@ -9,8 +9,6 @@ The following diagram is a high-level view of Azure Monitor.
 
 :::image type="content" source="/azure/azure-monitor/media/overview/azure-monitor-overview-2022-08-25-change-analysis-opt.svg" alt-text="Diagram that shows an overview of Azure Monitor." border="false" lightbox="/azure/azure-monitor/media/overview/azure-monitor-overview-2022-08-25-change-analysis-opt.svg":::
 
-:::image type="content" source="media/overview/azure-monitor-overview-2022-08-25-change-analysis-opt.svg" alt-text="Diagram that shows an overview of Azure Monitor." border="false" lightbox="media/overview/azure-monitor-overview-2022-08-25-change-analysis-opt.svg":::
-
 ## What data does Azure Monitor collect?
 
 Metrics, logs, and distributed traces are commonly referred to as the three pillars of observability.
