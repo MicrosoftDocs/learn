@@ -6,8 +6,8 @@ metadata:
   title: Handle similarities between environments by using reusable workflows
   description: Learn about caller and called workflows and named inputs.
   ms.date: 11/08/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
