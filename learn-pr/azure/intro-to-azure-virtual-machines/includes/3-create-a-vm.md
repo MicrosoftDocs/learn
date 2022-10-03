@@ -15,7 +15,7 @@ The **Azure portal** provides an easy-to-use browser-based user interface that e
 
 Let's assume you want to create a VM running a web server on Ubuntu. Setting up a site isn't difficult, but there are a couple of things to keep in mind. You need to install and configure an operating system, configure a website, install a database, and worry about things like firewalls. We're going to cover creating VMs in the next few modules, but let's create one here to see how easy it is. We won't go through all the options - check out one of the **Create a VM** modules to get complete details on each option.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the Azure home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears, displaying popular products for Azure services.
 
@@ -40,8 +40,10 @@ You need to configure the basic parameters of your virtual machine. If some of t
     | Virtual machine name  | Enter *test-ubuntu-cus-vm* |
     | Region | From the dropdown list, select a geographical location close to you. |
     | Availability options  | No infrastructure redundancy required |
+    | Security type  | Standard |
     | Image | Ubuntu Server 20.04 LTS - Gen2 |
-    | Azure Spot instance | Unchecked |
+    | VM architecture  | x64 |
+    | Run with Azure Spot discount | Unchecked |
     | Size | Standard D2s V3 |
     | **Administrator account** |
     | Authentication type | SSH public key |
@@ -49,7 +51,8 @@ You need to configure the basic parameters of your virtual machine. If some of t
     | SSH public key source | Generate a new key pair |
     | Key pair name | **test-ubuntu-cus-vm_key** |
     | **Inbound port rules** |
-    | Public inbound ports | SSH (22) |
+    | Public inbound ports | Allow selected ports |
+    | Select inbound ports | SSH (22) |
 
 1. There are several other tabs you can explore to see the settings you can influence during the VM creation. After you're finished exploring, select **Review + create** to review and validate the settings.
 
@@ -69,6 +72,6 @@ You need to configure the basic parameters of your virtual machine. If some of t
 
      :::image type="content" source="../media/3-public-ip-address.png" alt-text="Screenshot showing VM essentials and properties with the public IP address highlighted.":::
 
-    When you enabled SSH public key authentication in an earlier step, the user interface also gave an option to enable SSH. SSH allows 
+    When you enabled SSH public key authentication in an earlier step, the user interface also gave an option to enable SSH. SSH allows you to connect to your VM via the public IP using any SSH client.
 
 Congratulations! With a few steps, you deployed a VM that runs Linux. Let's explore some other ways we could have created a VM.

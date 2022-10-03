@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Set up your environment
   description: Configure your environment to deploy Azure template specs and Bicep modules in your deployment workflows.
   ms.date: 03/29/2022
-  author: pazdedav
-  ms.author: dapazd
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
