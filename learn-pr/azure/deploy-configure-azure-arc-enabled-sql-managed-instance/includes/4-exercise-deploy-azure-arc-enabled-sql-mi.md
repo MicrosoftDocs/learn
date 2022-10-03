@@ -1,17 +1,17 @@
 To deploy your Azure Arc-enabled SQL Managed Instance (MI), we have several options available to us:
 
 1. GUI deployment:
-    1. Azure Portal
+    1. Azure portal
     2. Azure Data Studio
 2. CLI deployment
-    1. Azure Portal Cloud Shell
+    1. Azure portal Cloud Shell
     2. Azure Data Studio terminal window
 
 Choose which option you wish to walk through. All exercise options below provide you with the same outcome. All scenarios in the below exercises utilize the General Purpose Tier (Standard Edition). The Business Critical Tier (Enterprise Edition) allows you to choose the number of replicas you require to meet your High Availability needs. 
 
 For all exercise options below, the Kubernetes cluster used is an AKS cluster. All options for storage classes used are associated with and supported on an AKS cluster.  The Kubernetes cluster implemented in your environment will dictate the types of provisioned and presented storage classes.  You will need to know your storage classes. The value `Default` used for the storage classes below means "use the storage class configured at the AKS cluster level". In this case premium storage.
 
-## Option 1: Azure Portal GUI deployment 
+## Option 1: Azure portal GUI deployment 
 
 This option is only available with environments configured in the directly connected mode.
 
@@ -128,11 +128,11 @@ This option is available with environments configured in either the directly or 
 
 ![Image of Azure Arc-enabled SQL MI - Manage in ADS](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-ADS-Manage-12.png) 
 
-## Option 3: Azure Portal Cloud Shell deployment
+## Option 3: Azure portal Cloud Shell deployment
 
 This option is only available with environments configured in the directly connected mode.
 
-1. In the Azure Portal open cloud shell.
+1. In the Azure portal open cloud shell.
 2. Prepare your Arc-enabled SQL MI creation parameters:
 
     ```PowerShell
@@ -204,7 +204,7 @@ This option is only available with environments configured in the directly conne
 
 This option is available with environments configured in either the directly or indirectly connected mode.
 
-1. In the Azure Portal open cloud shell.
+1. In the Azure portal open cloud shell.
 2. Prepare your Arc-enabled SQL MI creation parameters:
 
     ```PowerShell

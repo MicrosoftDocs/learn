@@ -1,4 +1,4 @@
-Azure Arc-enabled SQL Managed Instance (MI) provides nearly the same features, functionality, and user experience as Azure SQL MI, except it runs on your chosen hardware, on your version-supported Kubernetes cluster inside your data center or multi-cloud environment.
+Azure Arc-enabled SQL Managed Instance (MI) provides nearly the same features, functionality, and user experience as Azure SQL MI, except it runs on your chosen hardware, on your version-supported Kubernetes cluster inside your data center or multicloud environment.
 
 Working with Arc-enabled SQL MI is broken down into three categories:
 
@@ -29,7 +29,7 @@ Once the Arc-enabled SQL MI has been deployed, there are several configuration o
 Arc-enabled SQL MI, depending on which connectivity mode you have selected, dictates what tools you can use to manage your data services environment:
 
 - **Directly connected Mode** allows managing with the following tools:
-    - Azure Portal
+    - Azure portal
     - Azure Data Studio
     - az CLI with arcdata extension
     - kubernetes CLI
@@ -42,7 +42,8 @@ Arc-enabled SQL MI, depending on which connectivity mode you have selected, dict
 
 Optionally, you can automatically upload metrics and logs to your subscription in the Directly connected mode or manually on an as-required basis in Indirectly connected mode.
 -->
-Exporting and importing the usage details, metrics, and logs are all undertaken using the following az arc data CLI commands:
+
+Use the following `az arcdata` CLI commands to export and import usage details, metrics, and logs:
 
 - [az arcdata dc export](/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-export)
 - [az arcdata dc upload](/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-upload)
@@ -51,11 +52,11 @@ Exporting and importing the usage details, metrics, and logs are all undertaken 
 
 Azure Arc-enabled SQL MI provides the ability to have an evergreen environment the same as is available with an Azure SQL MI. To achieve this, the maintenance windows need to be configured for the data controller, which defines the time periods for when upgrades occur.
 
-When configuring a maintenance window for your data controller, the following options apply:
+When you configure a maintenance window for a data controller, the following options apply:
 
 - Only one maintenance window per data controller.
 - Duration window can be between 2-8 hours.
-- The re-occurring frequency of the maintenance window can be either:
+- The reoccurring frequency of the maintenance window can be either:
     - Weekly
     - Monthly
 - Start date and time
@@ -77,7 +78,7 @@ The downtime experienced during upgrades will be dependent on the tier level of 
 
 ## General Purpose Upgrade Process
 
-During an Arc-enabled SQL MI General Purpose upgrade, the containers in the pod will be upgraded and re-provisioned. As only a single pod is provisioned and utilized in this tier, you will experience a short amount of downtime while the new pod is created.
+During an Arc-enabled SQL MI General Purpose upgrade, the containers in the pod will be upgraded and reprovisioned. As only a single pod is provisioned and utilized in this tier, you will experience a short amount of downtime while the new pod is created.
 
 ## Business Critical Upgrade Process
 

@@ -1,13 +1,13 @@
 You can deploy an Azure Arc-enabled SQL Managed Instance (MI) to a Kubernetes environment, using directly or indirectly connected modes. To deploy an Arc-enabled SQL MI, we have several options available based on how we configured the Arc data controller:
 
 - **Directly connected data controller**
-    - Azure Portal GUI
-    - Azure Portal Cloud Shell (CLI)
-    - Powershell terminal window (CLI)
+    - Azure portal GUI
+    - Azure portal Cloud Shell (CLI)
+    - PowerShell terminal window (CLI)
     - Azure Data Studio GUI
     - Azure Data Studio terminal window (CLI)
 - **Indirectly connected data controller**
-    - Powershell terminal window (CLI)
+    - PowerShell terminal window (CLI)
     - Azure Data Studio GUI
     - Azure Data Studio terminal window (CLI)
 
@@ -26,10 +26,10 @@ Before undertaking a deployment, ensure you have completed the following pre-req
     - Resource requirements:
         - Cores.
             - CPU vCore request is the number of vCores assigned to the Arc-enabled SQL MI.
-            - CPU vCore limit is the maximum number of vCores assigned to the Arc-enabled SQL MI and can't exceed the supported limits of the Tier chosen ([General Purpose (24 vCores) Vs Business Critical (unlimited)](/sql/sql-server/editions-and-components-of-sql-server-2019#Cross-BoxScaleLimits))
+            - CPU vCore limit is the maximum number of vCores assigned to the Arc-enabled SQL MI and can't exceed the supported limits of the tier chosen ([General Purpose (24 vCores) versus Business Critical (unlimited)](/sql/sql-server/editions-and-components-of-sql-server-2019#Cross-BoxScaleLimits))
         - Memory.
             - Memory request is the amount of memory allocated to the Arc-enabled SQL MI.
-            - Memory limit is the maximum amount of memory allocated to the Arc-enabled SQL MI and can't exceed the supported limits of the Tier chosen ([General Purpose (128 GB) Vs Business Critical (unlimited)](/sql/sql-server/editions-and-components-of-sql-server-2019#Cross-BoxScaleLimits))
+            - Memory limit is the maximum amount of memory allocated to the Arc-enabled SQL MI and can't exceed the supported limits of the tier chosen ([General Purpose (128 GB) versus Business Critical (unlimited)](/sql/sql-server/editions-and-components-of-sql-server-2019#Cross-BoxScaleLimits))
         - Backup storage class. (Location for your Automated backups. Requires to be ReadWriteMany (RWX) supported storage class)
         - Data storage class. (Location for your database data files)
         - Database Log storage class. (Location for your database transaction log files)

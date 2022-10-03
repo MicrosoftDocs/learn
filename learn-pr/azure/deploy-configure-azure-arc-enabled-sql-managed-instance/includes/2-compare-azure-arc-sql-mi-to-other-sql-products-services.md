@@ -1,6 +1,6 @@
 **[Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql&preserve-view=true)** is an intelligent, scalable cloud database service that combines the broadest SQL Server database engine compatibility with all the benefits of a fully managed and evergreen platform as a service.
 
-Azure Arc-enabled SQL Managed Instance (MI) provides nearly the same features, functionality, and user experience as Azure SQL MI, except it runs on your chosen hardware, on your version-supported kubernetes cluster inside your data center or multi-cloud environment.
+Azure Arc-enabled SQL Managed Instance (MI) provides nearly the same features, functionality, and user experience as Azure SQL MI, except it runs on your chosen hardware, on your version-supported kubernetes cluster inside your data center or multicloud environment.
 
 Arc-enabled SQL MI has the following Features and Capabilities:
 -	**[Supported Features and Services]((/azure/azure-arc/data/managed-instance-features)**
@@ -36,11 +36,11 @@ Arc-enabled SQL MI provides all the same built-in capabilities as Azure SQL MI a
 |Basic availability groups|Not Applicable. Similar capabilities available.|
 |Minimum replica commit availability group|Business Critical service tier. 
 |Clusterless availability group|Yes|
-|Backup database | Yes - `COPY_ONLY`|
-|Backup compression|Yes|
-|Backup mirror |Yes|
-|Backup encryption|Yes|
-|Backup to Azure to (backup to URL)|Yes|
+|Back up database | Yes - `COPY_ONLY`|
+|Back up compression|Yes|
+|Back up mirror |Yes|
+|Back up encryption|Yes|
+|Back up to Azure to (backup to URL)|Yes|
 |Database snapshot|Yes|
 |Fast recovery|Yes|
 |Hot add memory and CPU|Yes|
@@ -130,7 +130,7 @@ Arc-enabled SQL MI provides all the same built-in capabilities as Azure SQL MI a
 
 At this time, there is a small subset of unsupported features when using Arc-enabled SQL MI. Microsoft is constantly working to improve feature parity, so these limitations may be resolved over time:
 
-- **[Backup and Restore](/azure/azure-arc/data/limitations-managed-instance#backup-and-restore)** 
+- **[Back up and Restore](/azure/azure-arc/data/limitations-managed-instance#backup-and-restore)** 
 <!--    - **Automated backups**
         - User databases in Simple Recovery model are not backed up.
         - Model database is not backed up.

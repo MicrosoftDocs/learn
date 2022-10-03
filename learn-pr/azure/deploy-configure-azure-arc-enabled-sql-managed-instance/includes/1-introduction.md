@@ -4,7 +4,7 @@ At Tailwind Traders, you are responsible for deploying, managing, and maintainin
 
 This module will allow you to learn the fundamentals of Azure Arc-enabled SQL Managed Instance, including deploying, configuring, and applying services updates.   
 
-Then, you will learn how to use Azure Arc-enabled SQL Managed Instance features, including connecting, restoring a database backup from SQL Server, and executing queries using tools and services, including the Azure CLI and portal.
+Then, you will learn how to use Azure Arc-enabled SQL Managed Instance features to, connect, restore a database backup from SQL Server, and query using tools and services, including the Azure CLI and portal.
 
 ## Learning objectives
 

@@ -3,7 +3,7 @@ uid: learn.deploy-configure-azure-arc-enabled-sql-managed-instance.knowledge-che
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Demonstrate how well you know how to deploy and configure Azure Arc-enabled SQL Managed Instance."
   ms.date: 8/23/2022
   author: tchristiani
   ms.author: terrychr
@@ -38,7 +38,7 @@ quiz:
     - content: "User database in Simple Recovery Model"
       isCorrect: true
       explanation: "That's correct. Databases in the Simple Recovery Model are not supported in the automated backup."
-  - content: "Which of the following options can be provided to an Azure subscription after deploying a directly-connected Arc-enabled SQL Managed Instance?"
+  - content: "Which of the following options can be provided to an Azure subscription after deploying a directly connected Arc-enabled SQL Managed Instance?"
     choices:
     - content: "Log data"
       isCorrect: true
@@ -49,7 +49,7 @@ quiz:
     - content: "Usage data"
       isCorrect: false
       explanation: "That's incorrect. Usage data is required to be uploaded for billing purposes."
-  - content: "Which of the following options are valid for obtaining usage data through an Azure subscription when using an indirectly-connected mode Arc-enabled SQL Managed Instance?"
+  - content: "Which of the following options are valid for obtaining usage data through an Azure subscription when using an indirectly connected mode Arc-enabled SQL Managed Instance?"
     choices:
     - content: "Create an Azure Active Directory security group"
       isCorrect: false

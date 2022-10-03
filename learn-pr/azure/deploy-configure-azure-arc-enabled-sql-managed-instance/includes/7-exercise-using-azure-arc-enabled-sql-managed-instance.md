@@ -1,6 +1,6 @@
 ## Exercise 1: Scale up/down your SQL Managed Instance resources
 
-The number of resources required for your operational Arc-enabled SQL MI will be dependent on the tier chosen and the number of available resources available on your Kubernetes cluster. To scale up or down the resources (CPU/memory), we can use Azure Data Studio or [`az sql mi-arc update`](/cli/azure/sql/mi-arc?view=azure-cli-latest&preserve-view=true#az-sql-mi-arc-update) commands for our directly connected or indirectly connected mode Arc-enabled SQL MI environments. We can use the Azure Portal, Azure Data Studio, or the `az sql mi-arc update` command in directly connected mode.
+The number of resources required for your operational Arc-enabled SQL MI will be dependent on the tier chosen and the number of available resources available on your Kubernetes cluster. To scale up or down the resources (CPU/memory), we can use Azure Data Studio or [`az sql mi-arc update`](/cli/azure/sql/mi-arc?view=azure-cli-latest&preserve-view=true#az-sql-mi-arc-update) commands for our directly connected or indirectly connected mode Arc-enabled SQL MI environments. We can use the Azure portal, Azure Data Studio, or the `az sql mi-arc update` command in directly connected mode.
 
 ## Option 1 - Azure Data Studio GUI deployment
 
@@ -56,11 +56,11 @@ This option is available with environments configured in either the directly con
 
 ## Exercise 2: Enable SQL Agent
 
-The SQL Agent allows you to create and schedule jobs that can run periodically against one or many databases to perform various actions, including maintenance tasks. The SQL Agent is not enabled on your Arc-enabled SQL MI by default. 
+The SQL Agent allows you to create and schedule jobs that can run periodically against one or many databases to perform various actions, including maintenance tasks. The SQL Agent isn't enabled on your Arc-enabled SQL MI by default. 
 
-To enable SQL Agent on your Arc-enabled SQL MI, undertake the following:
+To enable SQL Agent on your Arc-enabled SQL MI, follow these steps:
 
-1. In either the Azure Portal cloud shell or Azure Data Studio terminal window prepare your CLI parameters:
+1. In either the Azure portal Cloud Shell or Azure Data Studio terminal, prepare your CLI parameters:
 
     ```PowerShell
     $Env:SQLMIName = 'enter your arc-enabled sql managed instance name here'
@@ -74,7 +74,7 @@ To enable SQL Agent on your Arc-enabled SQL MI, undertake the following:
     az sql mi-arc show --name $Env:SQLMIName --resource-group $Env:MyResourceGroup
     ```
 
-3. Search for sqlagent in the output. It should show the following:
+3. Search for `sqlagent` in the output. It should include results like this example:
     
     ```
     "sqlagent": {
@@ -97,7 +97,7 @@ To enable SQL Agent on your Arc-enabled SQL MI, undertake the following:
     az sql mi-arc show --name $Env:SQLMIName --resource-group $Env:MyResourceGroup
     ```
 
-6. Search for sqlagent in the output. It should show the following:
+6. Search for `sqlagent` in the output. It should show the following:
     
     ```
     "sqlagent": {
@@ -107,9 +107,9 @@ To enable SQL Agent on your Arc-enabled SQL MI, undertake the following:
 
 ## Exercise 3: Configure Maintenance Window
 
-The maintenance window setting on the Arc data controller is essential to allow upgrades to be applied, allowing for the evergreen environment. To configure the maintenance window, we undertake the following:
+The maintenance window setting on the Arc data controller is essential to allow upgrades to be applied, allowing for the evergreen environment. To configure the maintenance window, follow these steps:
 
-1. In either the Azure Portal cloud shell or Azure Data Studio terminal window prepare your CLI parameters:
+1. In either the Azure portal Cloud Shell or Azure Data Studio terminal, prepare your CLI parameters:
 
     ```PowerShell
     $Env:MyNameSpace = 'enter your namespace where your SQL MI is deployed here'
@@ -153,7 +153,7 @@ The maintenance window setting on the Arc data controller is essential to allow 
     az sql mi-arc show --name $Env:SQLMIName --resource-group $Env:MyResourceGroup
     ```
 
-6. Search for desired-version in the output. It should show the following:
+6. Search for desired-version in the output. It should return results like this example:
     
     ```
     "update": {
@@ -184,11 +184,11 @@ The maintenance window setting on the Arc data controller is essential to allow 
 
     ![Image of Azure Arc-enabled data controller Upgraded](../media/Arc-enabled-dataservices-module-2-Arc-enabled-data-controller-ADS-upgraded-19.png)   
 
-6. You have successfully upgraded the data controller to the latest version.
+6. you've successfully upgraded the data controller to the latest version.
 
 ## Exercise 5: Export & Upload Metrics, Logs & Usage details
 
-A Service Principal is required to upload metric and usage data to your Azure Subscription. In this exercise, we will work through how to upload the data to your Azure subscription.
+A Service Principal is required to upload metric and usage data to your Azure Subscription. In this exercise, you'll upload the data to your Azure subscription.
 
 In directly connected mode, usage data for billing purposes is automatically uploaded. You also have the option to automatically or manually upload metrics and log data.
 
@@ -198,7 +198,7 @@ In indirectly connected mode, you must manually upload usage data regularly for 
 
 You can execute the steps for this exercise with any of the following options:
 
-- Azure Portal Cloud Shell
+- Azure portal Cloud Shell
 - Azure Data Studio Terminal window
 - Azure CLI window
 
