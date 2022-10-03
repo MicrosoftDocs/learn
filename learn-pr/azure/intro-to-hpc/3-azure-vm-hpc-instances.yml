@@ -36,4 +36,4 @@ quiz:
       explanation: "The problem is that HB-series VMs aren't supported in all Azure regions. This problem will be the same at a different time."
     - content: "Check that this VM is supported in your preferred region of deployment."
       isCorrect: true
-      explanation: "HB-series VMs are not supported in all Azure regions."
+      explanation: "HB-series VMs aren't supported in all Azure regions."
