@@ -17,7 +17,7 @@ abstract: |
   - Work with GitHub Codespaces
 prerequisites: |
   None
-iconUrl: /learn/achievements/7-work-with-azure-repos-and-github.svg
+iconUrl: /training/achievements/7-work-with-azure-repos-and-github.svg
 levels:
 - advanced
 roles:

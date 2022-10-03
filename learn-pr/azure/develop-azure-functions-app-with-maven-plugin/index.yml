@@ -20,7 +20,7 @@ abstract: |
 prerequisites: | 
   - Experience with Java development
   - Experience using Apache Maven to build projects
-iconUrl: /learn/achievements/develop-azure-functions-app-with-maven-plugin.svg
+iconUrl: /training/achievements/develop-azure-functions-app-with-maven-plugin.svg
 levels:
 - beginner
 roles:

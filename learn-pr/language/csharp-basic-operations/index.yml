@@ -21,7 +21,7 @@ prerequisites: |
   - Beginner level experience with creating literal values and declare variables of basic data types like `string`, `int`, and `decimal`
   - Beginner level experience with string concatenation and string interpolation
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-basic-operations.svg
+iconUrl: /training/achievements/csharp-basic-operations.svg
 levels:
 - beginner
 roles:

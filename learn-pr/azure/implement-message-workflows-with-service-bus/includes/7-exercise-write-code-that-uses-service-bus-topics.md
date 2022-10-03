@@ -21,11 +21,12 @@ To complete the component that sends messages about sales performance, complete 
 
     Between the quotation marks, paste the connection string you saved in the previous exercise.
 
-2. If you used a name different from **salesperformancemessages** for the queue name, update the value for `TopicName` property in the code.
+1. If you used a name different from **salesperformancemessages** for the queue name, update the value for `TopicName` property in the code.
 
     ```csharp
     const string TopicName = "salesperformancemessages";
     ```
+
 1. Find the `SendPerformanceMessageAsync()` method. (*Hint*: It's at or near line 26.) Within that method, find the following line of code:
 
     ```csharp
@@ -123,13 +124,14 @@ To complete the component that sends messages about sales performance, complete 
     ```
 
 1. Save the file using the editor's **&#9776;** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Select the project file **performancemessagesender.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 
 ## Send a message to the topic
 
 1. To run the component that sends a message about a sale, run the following command in Cloud Shell:
 
     ```bash
-    dotnet run -p performancemessagesender
+    dotnet run --project performancemessagesender
     ```
 
 1. As the program executes, watch for notifications in Cloud Shell that indicate that a message is being sent. Each time you run the app, another message is added to the topic, and a copy becomes available for each subscription.
@@ -330,13 +332,14 @@ To create the component that retrieves messages about sales performance, complet
     ```
 
 1. Save the file using either the **&#9776;** menu or use the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Cmd+S</kbd> on macOS).
+1. Select the project file **performancemessagereceiver.csproj** in the editor, update the `TargetFramework` value to `net6.0`, and then press <kbd>Ctrl+S</kbd> on Windows and Linux, or <kbd>Cmd+S</kbd> on macOS to save the file.
 
 ## Retrieve a topic message for a subscription
 
 1. To run the component that retrieves a message about sales performance for a subscription, run the following command:
 
     ```bash
-    dotnet run -p performancemessagereceiver
+    dotnet run --project performancemessagereceiver
     ```
 
     You'll see output similar to the following example:

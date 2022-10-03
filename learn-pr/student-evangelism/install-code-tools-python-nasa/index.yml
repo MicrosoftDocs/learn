@@ -25,7 +25,7 @@ abstract: |
 prerequisites: |
   - A Windows, Mac, or Linux computer
   - Knowledge of how to download programs from the Internet
-iconUrl: /learn/achievements/student-evangelism/install-code-tools-python-nasa.svg
+iconUrl: /training/achievements/student-evangelism/install-code-tools-python-nasa.svg
 levels:
 - beginner
 roles:

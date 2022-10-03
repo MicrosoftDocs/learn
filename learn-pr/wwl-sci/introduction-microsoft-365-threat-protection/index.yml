@@ -16,7 +16,7 @@ abstract: |
   - Understand Microsoft 365 Defender solution by domain
   - Understand Microsoft 365 Defender role in a Modern SOC
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

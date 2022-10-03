@@ -17,7 +17,7 @@ abstract: |
   - Send notifications between a Xamarin.Forms element and native controls
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/create-custom-controls-in-xamarin-forms-with-renderers-badge.svg
+iconUrl: /training/achievements/xamarin/create-custom-controls-in-xamarin-forms-with-renderers-badge.svg
 levels:
 - advanced
 roles:

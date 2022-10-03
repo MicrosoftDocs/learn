@@ -102,7 +102,7 @@ CosmosClient client = new CosmosClient("<account-endpoint>", servicePrincipal);
 
 ## Use data explorer
 
-The data explorer on your Azure Cosmos DB pane doesn't support the Azure Cosmos DB RBAC yet. To use your Azure AD identity when exploring your data, you must use the **Azure Cosmos DB Explorer** instead. When you access the Azure Cosmos DB Explorer with the specific `?feature.enableAadDataPlane=true` query parameter and sign in.
+The data explorer on your Azure Cosmos DB pane doesn't support the Azure Cosmos DB RBAC yet. To use your Azure AD identity when exploring your data, you must use the **Azure Cosmos DB Explorer** instead. Make sure you enable the property `?feature.enableAadDataPlane=true` in the Azure Cosmos DB Explorer to be able to sign in using RBAC.
 
 ## Audit data requests
 

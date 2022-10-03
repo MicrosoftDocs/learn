@@ -15,7 +15,7 @@ prerequisites: |
   - Foundational knowledge of computer networking
 summary: |
   Use Microsoft Defender for Cloud, for Azure, hybrid cloud, and on-premises workload protection and security. This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
-iconUrl: /learn/achievements/mitigate-threats-using-azure-defender.svg
+iconUrl: /training/achievements/mitigate-threats-using-azure-defender.svg
 levels:
 - intermediate
 roles:

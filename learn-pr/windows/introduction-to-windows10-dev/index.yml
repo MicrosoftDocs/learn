@@ -14,7 +14,7 @@ abstract:  |
   In this module, you will:
   - Learn about the key Windows development platforms.
   - Be introduced to the Windows Insider Program.
-iconUrl: /learn/achievements/introduction-to-windows-10-development.svg
+iconUrl: /training/achievements/introduction-to-windows-10-development.svg
 prerequisites: |
  - A computer that's running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
 levels:

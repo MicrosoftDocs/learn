@@ -1,11 +1,11 @@
 
 ## Replicate virtual machines
 
-To start replicating Azure VMs to the Azure region serving as the disaster recovery site, follow the guidance in Replicate a virtual machine to Azure available at [https://docs.microsoft.com/azure/site-recovery/azure-to-azure-walkthrough-enable-replication](https://docs.microsoft.com/azure/site-recovery/azure-to-azure-walkthrough-enable-replication) 
+To start replicating Azure VMs to the Azure region serving as the disaster recovery site, follow the guidance in Replicate a virtual machine to Azure available at [Tutorial: Set up disaster recovery for Azure VMs](/azure/site-recovery/azure-to-azure-walkthrough-enable-replication) 
 
-* For guidance on protecting Active Directory and DNS, refer to Protect Active Directory and DNS document at [https://docs.microsoft.com/azure/site-recovery/site-recovery-active-directory](https://docs.microsoft.com/azure/site-recovery/site-recovery-active-directory) 
+* For guidance on protecting Active Directory and DNS, refer to Protect Active Directory and DNS document at [Set up disaster recovery for Active Directory and DNS](/azure/site-recovery/site-recovery-active-directory) 
 
-* For guidance on protecting database tier running on SQL server, refer to Protect SQL Server document at [https://docs.microsoft.com/sql/relational-databases/security/securing-sql-server?view=sql-server-ver15](https://docs.microsoft.com/sql/relational-databases/security/securing-sql-server?view=sql-server-ver15) 
+* For guidance on protecting database tier running on SQL server, refer to Protect SQL Server document at [Securing SQL Server](/sql/relational-databases/security/securing-sql-server?view=sql-server-ver15) 
 
 ## Configure networking
 
@@ -13,7 +13,7 @@ If you use a static IP address, you can specify the IP address that you want the
 
 ## Create a recovery plan
 
-A recovery plan supports the sequencing of various tiers in a multi-tier application during a failover. Sequencing helps maintain application consistency. When you create a recovery plan for a multi-tier web application, complete the steps described in Create a recovery plan by using Site Recovery available at [https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans](https://docs.microsoft.com/azure/site-recovery/site-recovery-create-recovery-plans) 
+A recovery plan supports the sequencing of various tiers in a multi-tier application during a failover. Sequencing helps maintain application consistency. When you create a recovery plan for a multi-tier web application, complete the steps described in Create a recovery plan by using Site Recovery available at [Create and customize recovery plans](/azure/site-recovery/site-recovery-create-recovery-plans) 
 
 ## Add virtual machines to failover groups
 

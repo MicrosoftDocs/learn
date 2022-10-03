@@ -46,6 +46,6 @@ units:
 - learn.microservices-aspnet-core.7-update-aks-deployment
 - learn.microservices-aspnet-core.8-knowledge-check
 - learn.microservices-aspnet-core.9-summary
-iconUrl: /learn/achievements/aspnetcore/microservices-aspnet-core.svg
+iconUrl: /training/achievements/aspnetcore/microservices-aspnet-core.svg
 badge:
   uid: learn.microservices-aspnet-core.badge

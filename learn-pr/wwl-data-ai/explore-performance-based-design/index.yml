@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
   - Basic understanding of structure and usage of SQL Server indexes.
   - Basic understanding of relational database concepts.
-iconUrl: /learn/achievements/explore-performance-based-design.svg
+iconUrl: /training/achievements/explore-performance-based-design.svg
 levels:
 - intermediate
 roles:

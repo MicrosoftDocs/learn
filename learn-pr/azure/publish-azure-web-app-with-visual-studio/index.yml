@@ -22,7 +22,7 @@ prerequisites: |
   - Basic programming knowledge
   - Basic HTML knowledge
   - A local installation of Visual Studio 2022 on Windows
-iconUrl: /learn/achievements/publish-azure-web-app-with-visual-studio.svg
+iconUrl: /training/achievements/publish-azure-web-app-with-visual-studio.svg
 levels:
 - beginner
 roles:

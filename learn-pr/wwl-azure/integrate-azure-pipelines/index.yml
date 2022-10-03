@@ -16,7 +16,7 @@ abstract: |
   *   Detail templates and YAML resources
   *   Implement and use multiple repositories
 prerequisites: ""
-iconUrl: /learn/achievements/6-integrate-with-azure-pipelines.svg
+iconUrl: /training/achievements/6-integrate-with-azure-pipelines.svg
 levels:
 - advanced
 roles:

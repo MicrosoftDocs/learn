@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Learn how to harness the power of Apache Spark and powerful clusters running on the Azure Databricks platform to run large data engineering workloads in the cloud.
-iconUrl: /learn/achievements/data-engineer-azure-databricks.svg
+iconUrl: /training/achievements/data-engineer-azure-databricks.svg
 levels:
 - intermediate
 roles:

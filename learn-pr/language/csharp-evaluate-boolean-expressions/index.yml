@@ -21,7 +21,7 @@ prerequisites: |
   - Experience using the `if-elseif-else` construct
   - Experience using the `Random` class to generate a random number
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-evaluate-boolean-expressions.svg
+iconUrl: /training/achievements/csharp-evaluate-boolean-expressions.svg
 levels:
 - beginner
 roles:

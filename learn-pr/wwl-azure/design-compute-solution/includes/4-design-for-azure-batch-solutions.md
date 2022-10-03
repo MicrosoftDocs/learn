@@ -49,4 +49,4 @@ Best practices for Azure Batch are grouped into pools, nodes, and jobs.
 - **Jobs.** Uniquely name your jobs so you can accurately monitor and log the activity. Consider grouping your tasks into efficiently sized jobs. For example, it's more efficient to use a single job containing 1000 tasks rather than creating 100 jobs that contain 10 tasks each. 
 
 > [!TIP]
-> We’ve covered just a few best practices. Take a few minutes to read more about [Best practices - Azure Batch | Microsoft Docs](/azure/batch/best-practices).
+> We’ve covered just a few best practices. Take a few minutes to read more about [Azure Batch best practices](/azure/batch/best-practices).

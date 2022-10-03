@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Add multiple environments to your workflow
   description: Update a deployment workflow to deploy to two environments, and use a called workflow with parameters.
   ms.date: 11/08/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

@@ -19,7 +19,7 @@ abstract: |
   - Automate management tasks for access review
   - Configure recurring access reviews
 prerequisites: ""
-iconUrl: /learn/achievements/plan-implement-and-manage-access-review.svg
+iconUrl: /training/achievements/plan-implement-and-manage-access-review.svg
 levels:
 - advanced
 roles:

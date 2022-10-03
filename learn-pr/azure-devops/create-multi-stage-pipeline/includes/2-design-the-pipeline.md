@@ -15,7 +15,7 @@ In this section, you'll:
 
 ## The meeting
 
-The entire Tailspin web team is gathered together. In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), the team planned their tasks for the current sprint. Each task relates to building their release pipeline for the _Space Game_ website.
+The entire Tailspin web team is gathered together. In [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), the team planned their tasks for the current sprint. Each task relates to building their release pipeline for the _Space Game_ website.
 
 Recall that the team decided on these five tasks for their sprint:
 
@@ -265,7 +265,7 @@ Mara updates her drawing to show that the build moves from _Test_ to _Staging_ o
 
 A *release approval* is a way to pause the pipeline until an approver accepts or rejects the release. To define your release workflow, you can combine approvals, conditions, and triggers.
 
-Recall that in [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you defined an environment in your pipeline configuration to represent your deployment environment. Here's an example from your existing pipeline:
+Recall that in [Create a release pipeline with Azure Pipelines](/training/modules/create-release-pipeline?azure-portal=true), you defined an environment in your pipeline configuration to represent your deployment environment. Here's an example from your existing pipeline:
 
 [!code-yml[](code/2-azure-pipelines.yml?highlight=8)]
 

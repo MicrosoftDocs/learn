@@ -133,7 +133,7 @@ The variable `myDecimal` holds a value that has two places of precision. By addi
 
 If you're not sure whether you'll lose data or not, you can do one of two things.
 
-The definitive resource is the following article on Microsoft Docs:
+The definitive resource is the following article:
 
 [Type Conversion Tables in .NET](/dotnet/standard/base-types/conversion-tables?azure-portal=true)
 

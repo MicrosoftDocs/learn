@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path introduces the continuous feedback concept and describes how to implement it in your DevOps cycle.
-iconUrl: /learn/achievements/az-400-implement-continuous-feedback.svg
+iconUrl: /training/achievements/az-400-implement-continuous-feedback.svg
 levels:
 - advanced
 roles:

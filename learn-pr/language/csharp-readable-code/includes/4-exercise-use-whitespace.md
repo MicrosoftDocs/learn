@@ -57,7 +57,7 @@ Delete all of the code from the previous exercises and steps. The .NET Editor sh
 Let's illustrate how to add whitespace to create visual phrasing to help you comprehend what a passage of code is doing. We'll start by adding code without any whitespace.
 
 > [!NOTE]
-> The code in this step is from the [Add decision logic to your code using the if-elseif-else statement in C#](/learn/modules/csharp-if-elseif-else/) module. It is heavily modified here to make a point about how to increase the readability of your code. If you don't understand what this is code is doing, don't worry, it'll be covered in other modules. For now, focus on how we've removed the whitespace, and how that makes it difficult to read the code.
+> The code in this step is from the [Add decision logic to your code using the if-elseif-else statement in C#](/training/modules/csharp-if-elseif-else/) module. It is heavily modified here to make a point about how to increase the readability of your code. If you don't understand what this is code is doing, don't worry, it'll be covered in other modules. For now, focus on how we've removed the whitespace, and how that makes it difficult to read the code.
 
 Use the **Run** button or type the following code into the .NET Editor.
 

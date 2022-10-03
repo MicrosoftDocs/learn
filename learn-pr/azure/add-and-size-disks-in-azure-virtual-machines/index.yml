@@ -17,7 +17,7 @@ abstract: |
   - Determine whether you need premium disks
   - Resize disks for a VM
 prerequisites: None
-iconUrl: /learn/achievements/add-and-size-disks-in-azure-virtual-machines.svg
+iconUrl: /training/achievements/add-and-size-disks-in-azure-virtual-machines.svg
 levels:
 - intermediate
 roles:

@@ -7,7 +7,7 @@ You're finished with the tasks for this module. Here you'll clean up your Azure 
 
 Here you delete your Azure App Service instance. The easiest way to delete the instance is to delete the parent resource group. When you delete a resource group, you delete all resources in that group.
 
-You may manage resources using the Azure portal user interface or the Azure CLI. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
+You can manage resources by using the Azure portal user interface or the Azure CLI. Here you tear down your deployment by using the Azure CLI through Azure Cloud Shell. The steps are similar to the steps that you used when you created the resources.
 
 To clean up your resource group:
 
@@ -36,7 +36,7 @@ To clean up your resource group:
 
 This project is configured to automatically run the pipeline each time you push a change to your GitHub repository. The pipeline will now fail during the deployment stage because you deleted your Azure resources.
 
-You can leave the project as it is for future reference. If you prefer, choose one of the following options to disable or delete the pipeline now.
+You can leave the pipeline as it is for future reference. If you prefer, choose one of the following options to disable or delete the pipeline now.
 
 ### Option 1: Disable the pipeline
 
@@ -50,7 +50,7 @@ To disable the pipeline:
     :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
-    Your pipeline will no longer process build requests.
+Your pipeline will no longer process build requests.
 
 ### Option 2: Delete the Azure DevOps project
 
@@ -58,11 +58,11 @@ Delete your Azure DevOps project, including the build pipeline. Choose this opti
 
 To delete the project:
 
-1. In Azure DevOps, navigate to your project. This will be the name you entered when creating the project after installing the Azure Pipelines extension in GitHub.
+1. In Azure DevOps, navigate to your project. This will be the name you entered when creating the project after installing the Azure Pipelines extension in GitHub. This project has set ***nodejs-hello-world*** as project name.
 1. Select **Project settings** in the lower corner.
 1. In the **Project details** area, go to the bottom and select **Delete**.
 
     :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
-1. In the window that appears, enter the project name. Select **Delete** again.
+1. In the window that appears, enter the `project name`. Select **Delete** again.
 
-    Your project is now deleted.
+Your project is now deleted.

@@ -17,7 +17,7 @@ abstract: |
   - Configure the Azure Cosmos DB SQL API .NET SDK to use a specific region
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-configure-replication-manage-failovers.svg
+iconUrl: /training/achievements/azure-cosmos-db-configure-replication-manage-failovers.svg
 levels:
 - intermediate
 roles:

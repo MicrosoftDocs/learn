@@ -28,7 +28,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
-iconUrl: /learn/achievements/bicep/child-extension-bicep-templates.svg
+iconUrl: /training/achievements/bicep/child-extension-bicep-templates.svg
 levels:
   - intermediate
 roles:

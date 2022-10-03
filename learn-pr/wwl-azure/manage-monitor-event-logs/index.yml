@@ -20,7 +20,7 @@ prerequisites: |
   *   Working knowledge of common Windows Server management tools
   *   Some experience managing typical Windows Server workloads
   *   Familiarity with basic PowerShell commands and syntax
-iconUrl: /learn/achievements/5-managing-and-monitoring-event-logs.svg
+iconUrl: /training/achievements/5-managing-and-monitoring-event-logs.svg
 levels:
 - intermediate
 roles:

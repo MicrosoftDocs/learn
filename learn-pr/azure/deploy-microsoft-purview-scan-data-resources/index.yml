@@ -19,10 +19,10 @@ abstract: |
 prerequisites: |
   - Ability to navigate the Azure portal
   - Access to deploy resources within their Azure subscription
-iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level
+iconUrl: /training/achievements/microsoft-purview-deployment.svg
+levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role
+roles: # see role taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - business-owner
   - auditor
   - business-analyst
@@ -34,7 +34,7 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
   - security-operations-analyst
   - solution-architect
   - support-engineer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
+products: # see product taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
 - azure
 - microsoft-purview
 units:

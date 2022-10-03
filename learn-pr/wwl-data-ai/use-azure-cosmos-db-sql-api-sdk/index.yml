@@ -16,7 +16,7 @@ abstract: |
   - Connect to an Azure Cosmos DB SQL API account using the SDK and .NET
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-use.svg
+iconUrl: /training/achievements/azure-cosmos-db-use.svg
 levels:
 - intermediate
 roles:

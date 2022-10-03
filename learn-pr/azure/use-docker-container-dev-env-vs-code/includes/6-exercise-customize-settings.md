@@ -41,7 +41,7 @@ The container will automatically install dependencies whenever a container is cr
 ## Rebuild the new container
 
 1. Press <kbd>F1</kbd> to open the Command Palette.
-1. Type **rebuild** and select **Remote-Containers: Rebuild Container**.
+1. Type **rebuild** and select **Dev Containers: Rebuild Container**.
 
 The container will be rebuilt with the changes you've specified in the devcontainer.json file.
 
@@ -66,6 +66,6 @@ The container will be rebuilt with the changes you've specified in the devcontai
 
 1. Notice that you didn't have to install any dependencies. The application simply runs.
 
-The container is now customized and automated for your agency. Any developer who opens this project by using Remote - Containers can immediately run it and get to work writing code.
+The container is now customized and automated for your agency. Any developer who opens this project by using Dev Containers can immediately run it and get to work writing code.
 
 In the next unit, you'll learn how to install software in the dev container.

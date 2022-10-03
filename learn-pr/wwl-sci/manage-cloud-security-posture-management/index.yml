@@ -17,7 +17,7 @@ abstract: |
   - Explain the Microsoft Defender for Cloud security posture management protections for your resources.
 prerequisites: |
   None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

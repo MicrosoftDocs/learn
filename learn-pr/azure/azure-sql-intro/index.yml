@@ -18,7 +18,7 @@ abstract: |
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server
   - Experience with Azure, such as deploying and managing resources
-iconUrl: /learn/achievements/azure-sql-intro.svg
+iconUrl: /training/achievements/azure-sql-intro.svg
 levels:
 - beginner
 - intermediate

@@ -10,4 +10,4 @@ You should now be able to:
 You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
 
  -  [Virtual network peering documentation](/azure/virtual-network/virtual-network-peering-overview)
- -  [Learn - Distribute your services across Azure virtual networks and integrate them by using virtual network peering (Sandbox)](/learn/modules/integrate-vnets-with-vnet-peering/)
+ -  [Distribute your services across Azure virtual networks and integrate them by using virtual network peering (Sandbox)](/training/modules/integrate-vnets-with-vnet-peering/)

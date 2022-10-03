@@ -13,4 +13,4 @@ You should now be able to:
 
 The following resources provide more information on topics in this module or related to this module.
 
- -  [Implement resource management security](/learn/paths/implement-resource-mgmt-security/) in Azure is a Microsoft Learn learning path that provides more information on managing Azure resources.
+ -  [Implement resource management security](/training/paths/implement-resource-mgmt-security/) in Azure is a Microsoft Learn learning path that provides more information on managing Azure resources.

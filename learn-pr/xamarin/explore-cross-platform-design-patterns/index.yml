@@ -18,7 +18,7 @@ abstract: |
   - Use an inversion-of-control (IoC) container to automatically inject dependencies
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/explore-cross-platform-design-patterns-badge.svg
+iconUrl: /training/achievements/xamarin/explore-cross-platform-design-patterns-badge.svg
 levels:
 - beginner
 roles:

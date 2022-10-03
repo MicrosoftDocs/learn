@@ -20,16 +20,16 @@ You discovered how role-based access control and conditional access help to supp
 
 ## Learn more with self-paced training
 
-- Plan, implement, and administer [conditional access](/learn/modules/plan-implement-administer-conditional-access/).
+- Plan, implement, and administer [conditional access](/training/modules/plan-implement-administer-conditional-access/).
 
-- Design, develop, and manage [access reviews](/learn/modules/plan-implement-manage-access-review/).
+- Design, develop, and manage [access reviews](/training/modules/plan-implement-manage-access-review/).
 
-- Enable [secure external collaboration for your applications with Azure AD B2B](/learn/modules/enable-external-collaboration-with-b2b/).
+- Enable [secure external collaboration for your applications with Azure AD B2B](/training/modules/enable-external-collaboration-with-b2b/).
 
-- Support [secure access to your apps for external users with Azure AD B2C](/learn/modules/enable-external-access-with-b2c/).
+- Support [secure access to your apps for external users with Azure AD B2C](/training/modules/enable-external-access-with-b2c/).
 
-- Authenticate apps to Azure services with [service principals and managed identities for Azure resources](/learn/modules/authenticate-apps-with-managed-identities/).
+- Authenticate apps to Azure services with [service principals and managed identities for Azure resources](/training/modules/authenticate-apps-with-managed-identities/).
 
 ## Learn more with optional hands-on exercises
 
-- Learn how to [add and delete users in Azure AD](/learn/modules/create-users-and-groups-in-azure-active-directory/).
+- Learn how to [add and delete users in Azure AD](/training/modules/create-users-and-groups-in-azure-active-directory/).

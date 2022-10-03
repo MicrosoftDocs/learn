@@ -16,7 +16,7 @@ abstract: |
   - Understand the advantages of each cloud computing service model
   - Decide which deployment and service model you should use for your services
 prerequisites: None
-iconUrl: /learn/achievements/align-requirements-in-azure.svg
+iconUrl: /training/achievements/align-requirements-in-azure.svg
 levels:
 - beginner
 roles:

@@ -1,12 +1,14 @@
 In order to use these tactics like proactive and reactive detection to manage threats, you should have a central console to allow SOC administrators to detect, investigate, remediate, hunt, utilize threat intelligence, understand known vulnerabilities, lean on threat experts and block threats across any of the six Zero Trust technology pillars. The tools needed to support these phases work best if converged into a single workflow, providing a seamless experience that increases the effectiveness of the SOC analyst.
 
+:::image type="content" source="../media/modern-security-operation.png" alt-text="Diagram showing technology capabilities for modern security operations." lightbox="../media/modern-security-operation.png":::
+
 Security Operation Centers often deploy a combination of SIEM and SOAR technologies to collect, detect, investigate, and respond to threats. Microsoft offers Microsoft Sentinel as its SIEM-as-a-service offering. Microsoft Sentinel ingests all Microsoft Defender for Identity and third-party data.
 
 Microsoft 365 Defender, a key feed into Microsoft Sentinel, provides a unified enterprise defense suite that brings context-aware protection, detection, and response across all Microsoft 365 components. By being context-aware and coordinated, customers using Microsoft 365 can gain visibility and protection across endpoints, collaboration tools, identities, and applications.
 
 It is through this hierarchy that we enable our customers to maximize their focus. Through context-awareness and automated remediation, Microsoft 365 Defender can detect and stop many threats without adding additional alert-fatigue to already overloaded SOC personnel. Advanced hunting inside of Microsoft 365 Defender brings that context to the hunt to focus on many key attack points. And hunting and orchestration across the entire ecosystem through Microsoft Sentinel provides the ability to gain the right visibility into all aspects of a heterogeneous environment, all while minimizing the cognitive overload of the operator.
 
-:::image type="content" source="../media/modern-security-operation.png" alt-text="Diagram showing technology capabilities for modern security operations." lightbox="../media/modern-security-operation.png":::
+
 
 ## Visibility, automation, and orchestration Zero Trust deployment objectives
 

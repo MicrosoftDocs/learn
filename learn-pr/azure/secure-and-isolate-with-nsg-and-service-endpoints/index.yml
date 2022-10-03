@@ -20,7 +20,7 @@ prerequisites: |
   - Knowledge of basic networking concepts, including subnets and IP addressing
   - Basic familiarity with Azure services, specifically Azure SQL Database and Azure Storage
   - Familiarity with Azure virtual machines and virtual networking
-iconUrl: /learn/achievements/secure-and-isolate-with-nsg-and-service-endpoints.svg
+iconUrl: /training/achievements/secure-and-isolate-with-nsg-and-service-endpoints.svg
 levels:
 - beginner
 roles:

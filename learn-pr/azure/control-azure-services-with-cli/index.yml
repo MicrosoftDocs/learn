@@ -19,7 +19,7 @@ prerequisites: |
   - Experience with a command-line interface, such as PowerShell or Bash
   - Knowledge of basic Azure concepts, such as resource groups
   - Experience administering Azure resources using the Azure portal
-iconUrl: /learn/achievements/control-azure-services-with-cli.svg
+iconUrl: /training/achievements/control-azure-services-with-cli.svg
 levels: 
 - beginner
 roles: 

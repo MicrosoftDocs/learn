@@ -24,7 +24,7 @@ abstract: |
 
 prerequisites: |
   - None
-iconUrl: /learn/achievements/student-evangelism/basic-python-nasa.svg
+iconUrl: /training/achievements/student-evangelism/basic-python-nasa.svg
 levels:
 - beginner
 roles:

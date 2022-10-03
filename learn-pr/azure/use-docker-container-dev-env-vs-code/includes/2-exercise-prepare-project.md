@@ -1,6 +1,6 @@
-You'll be working with a Python project that shows a dashboard of products. To run this project in a container, you'll need the Remote Containers extension for Visual Studio Code.
+You'll be working with a Python project that shows a dashboard of products. To run this project in a container, you'll need the Dev Containers extension for Visual Studio Code.
 
-In this exercise, you'll clone one of the agency's projects: a Products Dashboard written in Python and install the Remote Containers extension for Visual Studio Code.
+In this exercise, you'll clone one of the agency's projects: a Products Dashboard written in Python and install the Dev Containers extension for Visual Studio Code.
 
 ## Clone the sample repo
 
@@ -23,15 +23,15 @@ The project should now be open in Visual Studio Code.
 > [!NOTE]
 > If you receive a warning in Visual Studio Code about selecting a Python interpreter, you can safely ignore it.
 
-## Install the Remote - Containers extension
+## Install the Dev Containers extension
 
 1. Select the "Extensions" icon in the Activity Bar to open the **Extensions** viewlet.
 
    :::image type="content" source="../media/extensions-icon.png" alt-text="Screenshot of the Visual Studio Code activity bar with Extension icon highlighted"::: <!-- no-loc -->
 
-1. Type **remote containers**.
-1. Locate the **Remote - Containers** extension and select the **Install** button.
+1. Type **dev containers**.
+1. Locate the **Dev Containers** extension and select the **Install** button.
 
-   :::image type="content" source="../media/install-remote-containers.png" alt-text="Screenshot of the Visual Studio Code extension gallery showing Remote Containers extension." loc-scope="other"::: <!-- no-loc -->
+   :::image type="content" source="../media/install-remote-containers.png" alt-text="Screenshot of the Visual Studio Code extension gallery showing Dev Containers extension." loc-scope="other"::: <!-- no-loc -->
 
-The Remote - Containers extension will be installed, and you'll have access to the commands that it adds to Visual Studio Code.
+The Dev Containers extension will be installed, and you'll have access to the commands that it adds to Visual Studio Code.

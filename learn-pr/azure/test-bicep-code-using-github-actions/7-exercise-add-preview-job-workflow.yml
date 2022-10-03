@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Add a preview job to your workflow
   description: Add a what-if preview job to your Bicep deployment workflow.
   ms.date: 10/19/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

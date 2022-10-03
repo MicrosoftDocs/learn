@@ -26,7 +26,7 @@ summary: |
 prerequisites: |
   - Knowledge of basic mathematics
   - Some experience programming in R
-iconUrl: /learn/achievements/machine-learning/machine-learning-with-r.svg
+iconUrl: /training/achievements/machine-learning/machine-learning-with-r.svg
 levels:
 - beginner
 roles:
@@ -42,5 +42,3 @@ modules:
 - learn.machine-learning.introduction-clustering-models
 trophy:
   uid: learn.machine-learning.machine-learning-with-r.trophy
-
-

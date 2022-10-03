@@ -1,9 +1,9 @@
 ---
-author: johndowns
+author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
 ms.date: 05/22/2021
-ms.author: jodowns
+ms.author: davidsmatlak
 ---
 # [Screenshot](#tab/screenshpt)
 

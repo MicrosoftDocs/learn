@@ -18,7 +18,7 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
-iconUrl: /learn/achievements/tensor-intro-trophy.svg
+iconUrl: /training/achievements/tensor-intro-trophy.svg
 levels:
 - beginner
 - intermediate

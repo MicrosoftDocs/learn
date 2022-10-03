@@ -4,6 +4,6 @@ OneDrive and Git provided source control solutions. We can use either solution t
 
 As your analytics environment expands, you'll have many opportunities to improve your strategy. Consider these related articles to familiarize yourself more with source control and deployment concepts:
 
-* [Introduction to source control - Microsoft Learn](/learn/modules/introduction-to-source-control/)
-* [Connect to Analytics with Power BI Data Connector - Microsoft Docs](/azure/devops/report/powerbi/data-connector-connect)
+* [Introduction to source control](/training/modules/introduction-to-source-control/)
+* [Connect to Analytics with Power BI Data Connector](/azure/devops/report/powerbi/data-connector-connect)
 * [Power BI - CI/CD using Azure DevOps - Power BI Community Blog](https://community.powerbi.com/t5/Community-Blog/PowerBI-CICD-using-Azure-DevOps/ba-p/769244)

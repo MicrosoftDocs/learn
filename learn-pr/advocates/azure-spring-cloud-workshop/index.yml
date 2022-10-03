@@ -24,7 +24,7 @@ prerequisites:  |
  - Azure CLI.
  - Java 11 and an IDE.
  - cURL or a similar HTTP utility.
-iconUrl: /learn/achievements/azure-spring-cloud-workshop.svg
+iconUrl: /training/achievements/azure-spring-cloud-workshop.svg
 levels:
 - intermediate
 roles:
