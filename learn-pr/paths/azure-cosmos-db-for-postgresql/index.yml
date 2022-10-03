@@ -26,7 +26,6 @@ products:
 subjects:
   - cloud-computing
 modules:
-  - learn.create-azure-db-for-postgresql
   - learn.model-data-azure-cosmos-db-postgresql
   - learn.ingest-query-data-using-azure-cosmos-db-postgresql
   - learn.extend-functionality-of-azure-cosmos-db-postgresql-using-extensions

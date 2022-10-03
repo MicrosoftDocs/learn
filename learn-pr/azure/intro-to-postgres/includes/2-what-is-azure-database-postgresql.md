@@ -1,14 +1,8 @@
 Azure Database for PostgreSQL is a managed database solution that provides highly available, massively scalable PostgreSQL in the cloud. The solution is made up of two tightly integrated layers: PostgreSQL, and specialized Azure services. You’re provided with all the features of the community edition of PostgreSQL, with the security, reliability, and performance you expect from Azure.
 
-## The PostgreSQL layer
-
-The PostgreSQL layer is based on the popular open-source PostgreSQL Community Edition, giving you access to a wide range of extensions. PostgreSQL is designed to handle a range of workloads, from single machines to data warehouses or Web services with many concurrent users.
-
-![Diagram explaining the extensions examples are Azure data studio extension, visual studio code extension, citus community extension, PLV8, PostGIS, and more. Languages include Python, PostGreSQL, Java, and php.](../media/2a-extensions-languages.png)
-
-PostgreSQL has its own query language called pgsql. This language is a variant of the standard relational query language, SQL, with features that enable you to write stored procedures that run inside the database. However, Azure Database for PostgreSQL allows you to work with popular frameworks and languages such as Ruby on Rails, Python with Django, Java with Spring Boot, .NET, and Node.js.
-
 ## The Azure layer
+
+PostgreSQL in Azure has two services, Azure Database for PostgreSQL and Azure Cosmos DB for PostgreSQL.
 
 Azure Database for PostgreSQL is available in two deployment modes, with each deployment mode allowing different levels of customization and scale.
 
@@ -19,6 +13,8 @@ Azure Database for PostgreSQL is available in two deployment modes, with each de
 :::row:::
 :::column span="3":::
 
+**Azure Cosmos DB for PostgreSQL (formerly Azure Database for PostgreSQL - Hyperscale)** delivers scale across multiple machines. It serves applications that require greater scale and performance, generally workloads that are approaching--or already exceed--100 GB of data.
+
 The Azure layer gives each deployment option four noticeable benefits:
 
 * High availability, with an SLA of up to 99.99% uptime
@@ -26,10 +22,11 @@ The Azure layer gives each deployment option four noticeable benefits:
 * Automated hardware and software maintenance
 * Advanced data and server security
 
-They are constantly working behind the scenes, automated actions that can help your business reduce administration costs, as well as complexity.
+They're constantly working behind the scenes, automated actions that can help your business reduce administration costs, and complexity.
 
 :::column-end:::
 :::column span="2":::
+
 > [!NOTE]
 > **Added benefits:**
 >
@@ -42,6 +39,8 @@ They are constantly working behind the scenes, automated actions that can help y
 > * Best-in-class compliance
 > * Monitoring and automation
 > * Industry-leading support experience
+>
+> Visit [Azure Cosmos DB for PostgreSQL](../../../paths/azure-cosmos-db-for-postgresql/index.yml), to follow the learning path for Azure Cosmos DB for PostgreSQL.
 
 :::column-end:::
 :::row-end:::

@@ -14,9 +14,9 @@ And (optionally):
 * Whether you want a new database server, or to restore an existing one
 * Whether you require an older version of PostgreSQL
 
-![Screenshot of the Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Flexible server server highlighted.](../media/4a-portal.png)
+![Screenshot of the Azure portal showing the Azure Database for PostgreSQL deployment options, with the create button for Flexible server server highlighted.](../media/3a-portal.png)
 
-![Screenshot of the form for creating flexible server, where you can input the server name, username, and password.](../media/4b-form.png)
+![Screenshot of the form for creating flexible server, where you can input the server name, username, and password.](../media/3b-form.png)
 
 The steps above create and deploy your PostgreSQL database with a flexible server. Your database is secure by default. If you add your current IP address to the firewall rules, you can connect to and query your database using your username and password.
 
@@ -24,7 +24,7 @@ You can connect using psql on the Azure Cloud Console, locally using your favori
 
 ## How the compute container works
 
-The service runs the standard Community PostgreSQL in the compute container. Compute containers can be scaled dynamically - meaning Azure only charges for the resources that are needed, when they are needed. This allows, for example, hosting of a small database for a few dollars a month that can then be scaled as needs grow. The compute container is easily configured via the Azure portal with firewall and security rules, performance insights, and configuration recommendations.
+The service runs the standard Community PostgreSQL in the compute container. Compute containers can be scaled dynamically - meaning Azure only charges for the resources that are needed, when they're needed. This allows, for example, hosting of a small database for a few dollars a month that can then be scaled as needs grow. The compute container is easily configured via the Azure portal with firewall and security rules, performance insights, and configuration recommendations.
 
 Scaling your database after deployment means that you can reduce costs for your proof-of-concept app, and scale up only when you need to.
 
@@ -34,7 +34,7 @@ Backup and restore are an essential part of any business continuity strategy bec
 
 Servers can also be replicated on up to 5 read-only ‘read replica’ servers, improving the performance and scale of read-intensive workloads. A common scenario is to have business intelligence and analytical workloads use the read replica as the data source for reporting.
 
-Storage ‘auto-grow’ is an option that prevents your server from running out of storage, automatically growing the storage without impacting the workload. This option allows you to keep storage costs to a minimum, only scaling up when absolutely necessary.
+Storage ‘auto-grow’ is an option that prevents your server from running out of storage, automatically growing the storage without impacting the workload. This option allows you to keep storage costs to a minimum, only scaling up when necessary.
 
 When you're assessing a trial of your payment app, creating a read-only server for analytics will be useful as you can show stakeholders analytics, without impacting the transaction times for users. Storage auto-grow will also keep costs down, while never running out of storage.
 
