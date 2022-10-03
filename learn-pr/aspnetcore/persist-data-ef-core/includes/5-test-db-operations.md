@@ -75,7 +75,7 @@ Now that you've connected with HttpRepl, let's try out our app. After each CRUD 
     post
     ```
 
-    A temporary JSON file opens in your registered JSON editor or a new tab is VS Code. The file contains a template for posting a new pizza. Paste in the following JSON, save, and close the tab/editor.
+    A temporary JSON file opens in your registered JSON editor or a new tab in VS Code. The file contains a template for posting a new pizza. Paste in the following JSON, save, and close the tab/editor.
 
     ```json
     {
