@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.iot.create-first-netx-duo-project.identify-netx-duo-components
 title: Identify NetX Duo protocols and services
 metadata:
@@ -11,3 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/3-identify-netx-duo-components.md)]
+  

@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.iot.create-first-netx-duo-project.exercise-bulid-run-project
 title: Building and running the project
 metadata:
@@ -11,3 +12,4 @@ metadata:
 durationInMinutes: 1
 content: |
   [!include[](includes/4-exercise-bulid-run-project.md)]
+  
