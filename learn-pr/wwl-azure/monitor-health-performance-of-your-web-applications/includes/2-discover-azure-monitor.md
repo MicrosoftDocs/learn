@@ -4,7 +4,7 @@ Using powerful tools you can make sense of the information. For example artifici
 
 There are also lots of possible integrations with DevOps tools, ticketing system, Security Information and Event Management (SIEM) systems, IT Security Management (ITSM) systems and more.
 
-## Azure Monitor Explained
+## Azure Monitor explained
 
 Azure Monitor is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments. Azure Monitor is used by IT Operations, DevOps, and developer teams to maximize the availability and performance of applications and services.
 

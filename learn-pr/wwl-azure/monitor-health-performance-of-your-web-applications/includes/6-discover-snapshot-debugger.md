@@ -4,7 +4,7 @@ This works well in many situations. But in some instances environmental factors 
 
 Snapshot Debugger was designed with this scenario in mind. It enables developers to debug live services with almost no interruption to the user's experience. In large deployments, there can be many servers running identical instances of an application. Infrequent issues that occur across these instances can show up only on specific servers. Snapshot Debugger will help you debug situations like these as it works against multiple instances of the application at once regardless of which server it's being executed on.
 
-## How Snapshot Debugger Works
+## How Snapshot Debugger works
 
 **Snappoints**. Snapshot Debugger allows you to create Snappoints. Snappoints work like breakpoints in a typical development environment. With breakpoints however, code execution stops when the breakpoint is hit (thus the name). Snappoints, however, don't stop code execution. When a Snappoint is hit the debugger gathers information about the state (call stack, variables, and object states) of the app at that moment. It then creates a log that you can inspect. Code execution continues as normal so the end user isn't impacted.
 
