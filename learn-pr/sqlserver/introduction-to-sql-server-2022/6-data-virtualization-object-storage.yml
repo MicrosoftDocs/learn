@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-sql-server-2022.data-virtualization-object-storage
-title: Use SQL Server 2022 as a data hub querying parquet and delta files and using backup/restore to object storage provides such as Azure Blob Storage, Azure Data Lake Storage, and S3 compatible providers.
+title: Use SQL Server 2022 as a data hub querying files and backup/restore to object storage providers
 metadata:
   unitType: learning-content
-  title: learning-content
+  title: Use SQL Server 2022 as a data hub querying files and backup/restore to object storage providers
   description: "Learn how to use T-SQL to access files types like parquet and delta stored in Azure Storage of S3 compatible storage. In addition, learn how to backup and restore SQL Server databases with S3 compatible storage."
   ms.date: 10/03/2022
   author: rgward
