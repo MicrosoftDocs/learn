@@ -6,8 +6,8 @@ metadata:
   title: Secure your repositories and pipelines
   description: Learn about areas of Azure DevOps and GitHub that have potential vulnerabilities, along with approaches for securing and controlling them.
   ms.date: 04/28/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
