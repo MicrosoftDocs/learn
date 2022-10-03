@@ -27,7 +27,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --admin-username azureuser
     ```
 
-1. Run the following command to install IIS and set up a default webpage.
+1. Run the following command to install IIS and set up a default webpage:
 
     ```azurecli
     az vm extension set \
@@ -37,7 +37,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --settings '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
 
-1. Run the following command to open port 80 to the web server.
+1. Run the following command to open port 80 to the web server:
 
     ```azurecli
     az vm open-port \
@@ -45,7 +45,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --port 80
     ```
 
-1. Run the following command to find the public IP address of the new virtual machine.
+1. Run the following command to find the public IP address of the new virtual machine:
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
@@ -54,7 +54,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
                  --output tsv)
     ```
 
-1. In the web browser, go to the public IP address of the virtual machine. Verify that a webpage that displays the name of the virtual machine, *MyWindowsVM*, appears.
+1. In the web browser, go to the public IP address of the virtual machine. Verify that a webpage that displays the name of the virtual machine (*MyWindowsVM*) appears.
 
     :::image type="content" source="../media/4-original-vm-web-page.png" alt-text="Screenshot of the webpage from the Windows virtual machine." loc-scope="other":::
 
@@ -81,7 +81,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
         --settings '{"commandToExecute":"apt-get -y update && apt-get -y install nginx && hostname > /var/www/html/index.html"}'
     ```
 
-1. Run the following command to find the public IP address of the new virtual machine.
+1. Run the following command to find the public IP address of the new virtual machine:
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
@@ -106,7 +106,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 1. Select the **MyWindowsVM** virtual machine.
 
-1. On the **MyWindowsVM** page, select **Connect**.
+1. On the **MyWindowsVM** page, select **Connect**, then select **RDP** in the drop-down.
 
 1. In the **Connect to virtual machine** window, select **Download RDP File**.
 
@@ -136,7 +136,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ![Opening the Windows command prompt as an administrator.](../media/4-open-command-prompt.png)
 
-1. In the Command Prompt window, use the following command to run the Sysprep tool.
+1. In the Command Prompt window, use the following command to run the Sysprep tool:
 
     ```command
     C:\windows\system32\sysprep\sysprep
@@ -156,14 +156,14 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     ![Screenshot of the Session Ended dialog box.](../media/4-session-ended.png)
 
-1. In the Cloud Shell window, run the following command to deallocate the virtual machine.
+1. In the Cloud Shell window, run the following command to deallocate the virtual machine:
 
     ```azurecli
     az vm deallocate \
         --name MyWindowsVM
     ```
 
-1. Run the following command to generalize the virtual machine.
+1. Run the following command to generalize the virtual machine:
 
     ```azurecli
     az vm generalize \
@@ -180,7 +180,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
     ssh -o StrictHostKeyChecking=no <ip address>
     ```
 
-1. Run the following command to prepare the virtual machine for generalization.
+1. Run the following command to prepare the virtual machine for generalization:
 
     ```bash
     sudo waagent -deprovision+user
@@ -188,20 +188,20 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
     At the **Do you want to proceed (y/n)** prompt, enter **y**.
 
-1. When the operation has finished, run the following command to end the connection to the virtual machine.
+1. When the operation has finished, run the following command to end the connection to the virtual machine:
 
     ```bash
     exit
     ```
 
-1. In Cloud Shell, run the following command to deallocate the virtual machine.
+1. In Cloud Shell, run the following command to deallocate the virtual machine:
 
     ```azurecli
     az vm deallocate \
         --name MyUbuntuVM
     ```
 
-1. Run the following command to generalize the virtual machine.
+1. Run the following command to generalize the virtual machine:
 
     ```azurecli
     az vm generalize \
@@ -214,7 +214,7 @@ In this task, you'll quickly create a virtual machine that runs a simple web app
 
 ::: zone pivot="windows-cloud"
 
-Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
+Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine:
 
 ```azurecli
 az image create \
@@ -226,7 +226,7 @@ az image create \
 
 ::: zone pivot="linux-cloud"
 
-1. Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine.
+1. Run the following command to create a virtual machine image named *MyVMImage* from the generalized virtual machine:
 
     ```azurecli
     az image create \
@@ -240,7 +240,7 @@ az image create \
 
 ::: zone pivot="linux-cloud"
 
-1. Run the following command to create a new virtual machine by using the *MyVMImage* image.
+1. Run the following command to create a new virtual machine by using the *MyVMImage* image:
 
     ```azurecli
     az vm create \
@@ -251,7 +251,7 @@ az image create \
       --generate-ssh-keys
     ```
 
-1. Run the following command to update the default web page with the server name.
+1. Run the following command to update the default web page with the server name:
 
     ```azurecli
         az vm extension set \
@@ -261,7 +261,7 @@ az image create \
         --settings '{"commandToExecute":"hostname > /var/www/html/index.html"}'
     ```
 
-1. Run the following command to open port 80 on the new virtual machine.
+1. Run the following command to open port 80 on the new virtual machine:
 
     ```azurecli
     az vm open-port \
@@ -269,7 +269,7 @@ az image create \
         --port 80
     ````
 
-1. Run the following command to find the public IP address of the new virtual machine.
+1. Run the following command to find the public IP address of the new virtual machine:
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
@@ -294,7 +294,7 @@ az image create \
       --admin-username azureuser
     ```
 
-1. Run the following command update the default web page with the server name.
+1. Run the following command update the default web page with the server name:
 
     ```azurecli
     az vm extension set \
@@ -304,7 +304,7 @@ az image create \
         --settings '{"commandToExecute":"powershell Clear-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\"; Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $(hostname)"}'
     ```
 
-1. Run the following command to open port 80 on the new virtual machine.
+1. Run the following command to open port 80 on the new virtual machine:
 
     ```azurecli
     az vm open-port \
@@ -312,7 +312,7 @@ az image create \
         --port 80
     ````
 
-1. Run the following command to find the public IP address of the new virtual machine.
+1. Run the following command to find the public IP address of the new virtual machine:
 
     ```azurecli
     echo http://$(az vm list-ip-addresses \
