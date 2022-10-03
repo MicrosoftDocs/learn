@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: Summary for testing your Bicep code by using GitHub Actions.
   ms.date: 10/19/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

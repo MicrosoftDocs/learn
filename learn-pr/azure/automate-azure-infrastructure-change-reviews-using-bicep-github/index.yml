@@ -5,8 +5,8 @@ metadata:
   title: Automate Azure infrastructure change reviews by using Bicep and GitHub
   description: Build an automated pull request workflow for Bicep code. Lint code automatically during every pull request, and deploy temporary ephemeral environments by using GitHub and GitHub Actions.
   ms.date: 03/30/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Automate Azure infrastructure change reviews by using Bicep and GitHub

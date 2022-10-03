@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Authorize your service principal for deployments
   description: Learn how to create an Azure role assignment for a service principal.
   ms.date: 06/13/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
   zone_pivot_groups: azure-shell-interface
