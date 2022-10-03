@@ -1,7 +1,7 @@
-uid: learn.iot.introduction-azure-rtos-netx-duo.introduction
+uid: learn.iot.azure-rtos-netx-duo-fundamentals.how-tcpip-works
 title: Introduction
 metadata:
-  title: Introduction
+  title: How TCP/IP Works
   description: Introduction to Azure RTOS NetX Duo.
   ms.date: 09/30/2022
   author: edlamie80
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/2-how-tcpip-works.md)]

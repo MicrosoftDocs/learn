@@ -1,13 +1,13 @@
-uid: learn.iot.introduction-azure-rtos-netx-duo.introduction
+uid: learn.iot.create-first-netx-duo-project.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to Azure RTOS NetX Duo.
+  description: Introduction to Hello World project.
   ms.date: 09/30/2022
   author: edlamie80
   ms.author: liydu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

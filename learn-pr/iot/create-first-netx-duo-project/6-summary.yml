@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.iot.introduction-azure-rtos-netx-duo.summary
+uid: learn.iot.create-first-netx-duo-project.summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-summary.md)]
+  [!include[](includes/6-summary.md)]
