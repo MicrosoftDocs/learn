@@ -22,7 +22,7 @@ In this module, you will:
 
 The TCP/IP stack is where everything happens. Do you want to send a message? Do you want to send a photo? If so, the TCP/IP stack is where these activities happen. The TCP/IP stack uses a four-layer model as illustrated in the following image.
 
-![Four layers of the TCP/IP stack.](../media/introduction-azure-rtos-netx-duo/tcp-ip-stack.png)
+   ![Four layers of the TCP/IP stack.](../introduction-azure-rtos-netx-duo/media/tcp-ip-stack.png)
 
 This illustration is an overview of the TCP/IP model, and we’ll get into more detail later. This four-layer model consists of a series of protocols, each performing a specific operation. Requests originate at the application layer and are processed through each successive layer until they reach the link layer. Responses to requests originate at the link layer and proceed through the successive layers until they reach the application layer. A request can take many different forms, such as sending an email, transmitting a photo, or requesting a web page.
 
