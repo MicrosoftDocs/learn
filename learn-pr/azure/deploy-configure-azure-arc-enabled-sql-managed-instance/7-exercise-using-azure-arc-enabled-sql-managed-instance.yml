@@ -3,7 +3,7 @@ uid: learn.deploy-configure-azure-arc-enabled-sql-managed-instance.exercise-usin
 title: Exercise - Using Azure Arc-enabled SQL Managed Instance
 metadata:
   title: Exercise - Using Azure Arc-enabled SQL Managed Instance
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Use Azure Arc-enabled SQL Managed Instance."
   ms.date: 8/23/2022
   author: tchristiani
   ms.author: terrychr
