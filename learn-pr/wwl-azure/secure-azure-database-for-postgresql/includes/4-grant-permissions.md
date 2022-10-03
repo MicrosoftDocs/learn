@@ -65,4 +65,4 @@ The optional parameters are:
 - **ADMIN role_name** - the ADMIN clause is like ROLE, but the named roles are added to the new role WITH ADMIN OPTION, giving them the right to grant membership in this role to others.
 
 > [!NOTE]
-> You can change attributes of a role with [ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html) and remove a role with [DROP ROLE](https://www.postgresql.org/docs/current/sql-droprole.html).
+> You can change attributes of a role with [ALTER ROLE](https://www.postgresql.org/docs/current/sql-alterrole.html) and remove a role with [DROP ROLE](https://www.postgresql.org/docs/current/sql-droprole.html). 
