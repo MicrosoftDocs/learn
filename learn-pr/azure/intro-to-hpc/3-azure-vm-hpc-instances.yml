@@ -3,9 +3,9 @@ uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
 metadata:
   title: Azure VM HPC instances
   description: In this unit, you'll learn about H-series Virtual Machines and the tasks you can use them for.
-  ms.date: 10/10/2019
-  author: lauradolan
-  ms.author: ladolan
+  ms.date: 10/03/2022
+  author: padmalathas
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure VM HPC instances
