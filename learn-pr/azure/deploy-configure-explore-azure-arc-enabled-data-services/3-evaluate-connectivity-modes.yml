@@ -3,7 +3,7 @@ uid: learn.deploy-configure-explore-azure-arc-enabled-data-services.evaluate-con
 title: Evaluate Azure Arc-enabled data services connectivity modes
 metadata:
   title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Understand connectivity modes for Azure Arc-enabled data services. The connectivity mode identifies how your data services communicate with Azure. This module reviews directly connected and indirectly connected modes."
   ms.date: 8/22/2022
   author: tchristiani
   ms.author: terrychr

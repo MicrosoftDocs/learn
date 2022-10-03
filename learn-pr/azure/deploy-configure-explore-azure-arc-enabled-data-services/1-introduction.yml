@@ -3,7 +3,7 @@ uid: learn.deploy-configure-explore-azure-arc-enabled-data-services.introduction
 title: Introduction
 metadata:
   title: introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Learn how to deploy and configure Azure Arc-enabled data services."
   ms.date: 8/22/2022
   author: tchristiani
   ms.author: terrychr
