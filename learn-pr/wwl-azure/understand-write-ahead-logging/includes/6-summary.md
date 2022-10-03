@@ -7,8 +7,6 @@ After completing this module, you're able to:
 
 For more information about the topics covered in this module, see:
 
-- [Optimize bulk inserts - Azure Database for PostgreSQL - Single Server](/azure/postgresql/howto-optimize-bulk-inserts)
-- [Logical replication and logical decoding - Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-logical)
-- [Overview of zone redundant high availability with Azure Database for PostgreSQL - Flexible Server](/azure/postgresql/flexible-server/concepts-high-availability)
-- [Manage read replicas - Azure portal - Azure Database for PostgreSQL - Single Server](/azure/postgresql/howto-read-replicas-portal)
+- [Logical replication and logical decoding - Azure Database for PostgreSQL - Flexible Server | Microsoft Docs](/azure/postgresql/flexible-server/concepts-logical)
+- [Overview of zone redundant high availability with Azure Database for PostgreSQL - Flexible Server | Microsoft Docs](/azure/postgresql/flexible-server/concepts-high-availability)
 - [Change data capture in Postgres: How to use logical decoding and wal2json - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-database-for-postgresql/change-data-capture-in-postgres-how-to-use-logical-decoding-and/ba-p/1396421#:~:text=Here%E2%80%99s%20what%20the%20logical%20decoding%20process%20looks%20like%3A,that%20change%20is%20passed%20to%20the%20output%20plugin.)

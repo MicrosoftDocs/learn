@@ -1,4 +1,4 @@
-You have a Web API called Print Framer API that calculates a cost for a picture frame based on the dimensions you send to it. Developers throughout your company want to use this in their Azure Logic Apps workflows, but there's currently no way to make that connection.
+You have a Web API called Print Framer API that calculates a cost for a picture frame based on the dimensions you send to it. Developers throughout your company want to use this API in their Azure Logic Apps workflows, but there's currently no way to make that connection.
 
 In this exercise, you'll create a custom connector for the Print Framer API and use it to send and receive data from a logic app workflow to a Web API. First, we need a logic app workflow.
 
@@ -147,7 +147,7 @@ Finally, the workflow needs a way to display the results. You can use the Respon
 
    ![Screenshot shows setup for the "Response" action.](../media/5-configure-http-response.png)
 
-1. When you're done, save your workflow.
+1. When you're done, select **Save** to save your workflow.
 
 ## Test the workflow
 
