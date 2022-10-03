@@ -132,7 +132,7 @@ This option is available with environments configured in either the directly or 
 
 This option is only available with environments configured in the directly connected mode.
 
-1. In the Azure portal open cloud shell.
+1. In the Azure portal open Cloud Shell.
 2. Prepare your Arc-enabled SQL MI creation parameters:
 
     ```PowerShell
@@ -204,7 +204,7 @@ This option is only available with environments configured in the directly conne
 
 This option is available with environments configured in either the directly or indirectly connected mode.
 
-1. In the Azure portal open cloud shell.
+1. In the Azure portal open Cloud Shell.
 2. Prepare your Arc-enabled SQL MI creation parameters:
 
     ```PowerShell
