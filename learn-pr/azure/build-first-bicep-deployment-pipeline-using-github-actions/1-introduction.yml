@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Introduction to building a basic deployment workflow for Bicep by using GitHub Actions.
   ms.date: 07/20/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

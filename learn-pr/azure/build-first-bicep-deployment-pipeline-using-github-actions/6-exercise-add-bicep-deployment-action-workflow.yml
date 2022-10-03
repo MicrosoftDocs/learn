@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Add a Bicep deployment action to the workflow
   description: Deploy a Bicep infrastructure as code template by using GitHub Actions.
   ms.date: 07/20/2022
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
