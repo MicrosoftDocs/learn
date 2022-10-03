@@ -4,7 +4,7 @@ metadata:
   moduleType: build-your-first-using-product # Do not edit: type must be 'build-your-first-using-product'
   title: Introduction to SQL Server 2022                     # Title must be "(verb) your first (thing) by using (product)"
   description: "TODO"                        # Copy your 'apply' Learning Objective here (see below)
-  ms.date: 7/27/2022                        # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 10/03/2022                     # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: rgward                             # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: bobward                     # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial             # Do not edit: value must be "interactive-tutorial"
@@ -122,11 +122,12 @@ subjects:
 ###
 units:
 - learn.introduction-to-sql-server-2022.introduction
-- learn.introduction-to-sql-server-2022.learning-content
-- learn.introduction-to-sql-server-2022.exercise
-- learn.introduction-to-sql-server-2022.learning-content
-- learn.introduction-to-sql-server-2022.exercise
-- learn.introduction-to-sql-server-2022.knowledge-check
+- learn.introduction-to-sql-server-2022.deploy-and-feature-diff
+- learn.introduction-to-sql-server-2022.cloud-connected
+- learn.introduction-to-sql-server-2022.built-in-query-intelligence
+- learn.introduction-to-sql-server-2022.security-scalability-availability
+- learn.introduction-to-sql-server-2022.data-virtualization-object-storage
+- learn.introduction-to-sql-server-2022.sql-language-enhancements
 - learn.introduction-to-sql-server-2022.summary
 ###########################################################################
 ###

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-sql-server-2022.sql-language-enhancements
+title: Learn how developers can use new T-SQL language enhancements to process JSON data, enhance core SQL engine capabilities, and to process time series data.
+metadata:
+  unitType: learning-content
+  title: learning-content
+  description: "xxxxx"
+  ms.date: 10/03/2022
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-sql-language-enhancements.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "xxxxx"
+    choices: 
+    - content: "xxxx"
+      isCorrect: false
+      explanation: "xxxx"
+    - content: "xxxx"
+      isCorrect: false
+      explanation: "xxxxx"
+    - content: "xxxxx"
+      isCorrect: true
+      explanation: "xxxx"
+  - content: "xxxxx"
+    choices: 
+    - content: "xxxxx"
+      isCorrect: false
+      explanation: "xxxxx"
+    - content: "xxxxx"
+      isCorrect: true
+      explanation: "xxxxx"
+    - content: "xxxxx"
+      isCorrect: false
+      explanation: "xxxxx"

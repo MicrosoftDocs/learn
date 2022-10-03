@@ -6,13 +6,17 @@ SQL Server 2022 is designed to help organizations looking to modernize their dat
 
 Organizations can accelerate performance for their applications with no code changes, protect data integrity with blockchain capabilities, and achieve increased scalability and availability for critical data.
 
-SQL Server 2022 also allows developers to build new applications connecting relational data with data lakes containing parquet files and delta tables using Azure or s3 compatible storage providers.
+SQL Server 2022 also allows developers to build new applications connecting relational data with data lakes containing parquet files and delta tables using Azure or S3 compatible storage providers.
+
+The following diagram shows the major capabilities of SQL Server 2022:
+
+<!-- TODO: Diagram of SQL22 will go here. -->
 
 ## What will we be doing?
 
 In this module you will learn an overview of the major capabilities of SQL Server 2022 including the follow areas:
 
-- **Deployment options**: You will learn the various methods to deploy SQL Server 2022 and some of the differences in features and deployment from previous releases of SQL Server.
+- **Deployment options and differences in SQL Server 2022**: You will learn the various methods to deploy SQL Server 2022 and some of the differences in features and deployment from previous releases of SQL Server.
 - **Cloud connected scenarios**: You'll learn scenarios for new hybrid capabilities for SQL Server 2022 and how you can connect to Azure for managed disaster recovery, near real-time analytics, and security access and assessments.
 - **Built-in query intelligence**: You'll learn new built-in engine capabilities that can help you gain performance with no code changes and gain deep insights into query performance.
 - **Security, scalability, and availability**: You'll learn new core database engine capabilities across security, scalability, and availability.
