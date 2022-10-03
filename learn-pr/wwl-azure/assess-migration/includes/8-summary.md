@@ -2,7 +2,7 @@ In this module, we explored moving an on-premises system to the cloud. Making a 
 
 In this module, you learned how to:
 
-* Describe why moving your app to Azure can be beneficial
-* Assess your app and estimate the costs of migration
-* Identify migration dependencies and priorities
-* Describe post-migration cost optimization and security
+* Describe why moving your app to Azure can be beneficial.
+* Assess your app and estimate the costs of migration.
+* Identify migration dependencies and priorities.
+* Describe post-migration cost optimization and security.

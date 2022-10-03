@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/30/2022
+  ms.date: 10/03/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Shorter deployments may have fewer users."
       isCorrect: false
-      explanation: "That's incorrect. Generally having less users can mean less of an impact on a migration."
+      explanation: "That's incorrect. Generally having fewer users can mean less of an impact on a migration."
     - content: "Longer deployments historically have cost more than shorter ones."
       isCorrect: false
       explanation: "That's incorrect. While \"sunk costs\" can be a factor, past costs generally have no impact on the complexity of a migration."

@@ -4,7 +4,7 @@ The way to frame an answer to the question is to think of the labor and monetary
 
 Remember that complex migrations like these don't happen all at once. There may be a lengthy list of tasks you'll have to complete to get a full migration done. But you'll be able to work in phases so you can learn-as-you-go and make decisions along the way.
 
-## Reasons to Migrate
+## Reasons to migrate
 
 Here are some common drivers that engineers and planners consider when thinking about migrating to Azure. Some you may have been thinking about and others you may not have considered. Together they make a compelling case for moving to the cloud.
 
@@ -18,7 +18,7 @@ Bringing on the technology stacks of acquisitions typically are time-consuming a
 
 ### Urgent capacity needs
 
-Scaling up and scaling out--particularly in urgent situations--can be challenging when you need to purchase hardware, infrastructure, and networking capacity. Moving to Azure reduces the friction when scaling up and out and has a pay-as-you go model so you pay only for what you use.
+Scaling up and scaling out, particularly in urgent situations, can be challenging when you need to purchase hardware, infrastructure, and networking capacity. Moving to Azure reduces the friction when scaling up and out and has a pay-as-you go model so you pay only for what you use.
 
 ### Software and hardware refresh
 

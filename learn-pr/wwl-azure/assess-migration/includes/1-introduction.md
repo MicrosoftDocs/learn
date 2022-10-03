@@ -8,7 +8,7 @@ Moving from an on-premise-based solution to a cloud-based solution isn't a step 
 
 After completing this module, you'll be able to:
 
-* Describe why moving your app to Azure can be beneficial
-* Assess your app and estimate the costs of migration
-* Identify migration dependencies and priorities
-* Describe post-migration cost optimization and security
+* Describe why moving your app to Azure can be beneficial.
+* Assess your app and estimate the costs of migration.
+* Identify migration dependencies and priorities.
+* Describe post-migration cost optimization and security.

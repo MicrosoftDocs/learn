@@ -3,7 +3,7 @@ uid: learn.wwl.create-app-migration-plan
 metadata:
   title: Create an app migration plan
   description: "Learn how to plan an app workload migration to Azure."
-  ms.date: 09/30/2022
+  ms.date: 10/03/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ subjects:
 units:
 - learn.wwl.create-app-migration-plan.introduction
 - learn.wwl.create-app-migration-plan.explore-reasons-migrate
-- learn.wwl.create-app-migration-plan.investigate-discovery-assessment
+- learn.wwl.create-app-migration-plan.assess-your-workload
 - learn.wwl.create-app-migration-plan.examine-migration-cost
 - learn.wwl.create-app-migration-plan.identify-priorities-dependencies
 - learn.wwl.create-app-migration-plan.discover-optimization-secure-manage
