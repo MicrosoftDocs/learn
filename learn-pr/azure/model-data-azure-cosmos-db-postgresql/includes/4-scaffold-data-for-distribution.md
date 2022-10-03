@@ -7,7 +7,7 @@ In moving from a single relational server to a distributed environment, you'll n
 1. The column should be a central piece to the application. Examples include `device_id` in IoT workloads, `store_id` in eCommerce analytics, and `tenant_id` in multi-tenant applications.
 1. The column's values should be varied with a high cardinality and a balanced statistical distribution.
 1. The column should appear in the most common queries to allow parallelization of those queries.
-1. If there are tables that are commonly queried together, they can benefit from [_colocation_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-colocation). Colocation means that all data with the same distribution column value is stored on the same node.
+1. If there are tables that are commonly queried together, they can benefit from [_colocation_](/azure/postgresql/hyperscale/concepts-colocation). Colocation means that all data with the same distribution column value is stored on the same node.
 
 For the Woodgrove Bank application, `user_id` makes sense as the distribution column for the `payment_users` table because it's central to the application and appears in most queries.
 
@@ -41,7 +41,7 @@ Suppose you need to see all events for a user in a dashboard and include the num
 
 However, if you need to see all events for a merchant and the `payment_events` is distributed by `user_id`, those queries are slower because there isn't a guarantee that the data will be grouped on a single node. Each shard on each node needs to be queried in order to find the records for a specific merchant_id.
 
-The key thing to understand with colocation is that rows with the same values for their distribution columns will be stored together on the same worker node. Azure Cosmos DB for PostgreSQL hashes the distribution values and uses those hashes for [shard placement](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#shards) and [colocation](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-colocation).
+The key thing to understand with colocation is that rows with the same values for their distribution columns will be stored together on the same worker node. Azure Cosmos DB for PostgreSQL hashes the distribution values and uses those hashes for [shard placement](/azure/postgresql/hyperscale/concepts-nodes#shards) and [colocation](/azure/postgresql/hyperscale/concepts-colocation).
 
 Since the Woodgrove Bank application is querying on the user basis, the `payment_events` table can also distribute by `user_id`.
 

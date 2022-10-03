@@ -19,13 +19,13 @@ This normalized data diagram is what they used for their trial. However, as Wood
 
 ## Distributing data across multiple servers
 
-Azure Cosmos DB for PostgreSQL operates as a group of individual PostgreSQL servers known as a _cluster_. The primary server - the _coordinator node_ - manages the cluster and coordinates with the _worker nodes_ to distribute data and process queries as needed. Data is broken into [_shards_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#shards) - partial tables of data, delineated by values in a [_distribution column_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#distribution-column).
+Azure Cosmos DB for PostgreSQL operates as a group of individual PostgreSQL servers known as a _cluster_. The primary server - the _coordinator node_ - manages the cluster and coordinates with the _worker nodes_ to distribute data and process queries as needed. Data is broken into [_shards_](/azure/postgresql/hyperscale/concepts-nodes#shards) - partial tables of data, delineated by values in a [_distribution column_](/azure/postgresql/hyperscale/concepts-nodes#distribution-column).
 
 With a small trial base, Woodgrove Bank's analysts initially queried their events by merchant to see if merchants were a driving factor for app usage. Suppose Woodgrove Bank decided to shard its events data by the merchant ID. The following diagram shows what the `payment_events` table would look like if sharded across multiple nodes based on `merchant_id`.
 
 :::image type="content" source="../media/shards-illustrated.svg" alt-text="Diagram of an Azure Cosmos DB for PostgreSQL cluster with a coordinator node and two worker nodes. The worker nodes show separate pieces of data for the same table, grouped by their 'merchant_id' field.":::
 
-The coordinator contains [metadata tables and views](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-metadata) to track shard placement. When a query comes into the cluster, the coordinator node reviews the query, and uses the metadata tables and views to identify which worker nodes to engage. The worker nodes query their respective shards and return the results to the coordinator. The coordinator returns the collected results.
+The coordinator contains [metadata tables and views](/azure/postgresql/hyperscale/reference-metadata) to track shard placement. When a query comes into the cluster, the coordinator node reviews the query, and uses the metadata tables and views to identify which worker nodes to engage. The worker nodes query their respective shards and return the results to the coordinator. The coordinator returns the collected results.
 
 :::image type="content" source="../media/distributed-query-processing.svg" alt-text="Diagram of SQL query processing in the Azure Cosmos DB for PostgreSQL environment. The SQL query enters a cluster via the coordinator node. The coordinator node directs the query to the required worker nodes.":::
 
@@ -51,11 +51,11 @@ Each of these tables starts on the coordinator node and are created using the re
 
 ### Local tables
 
-[_Local tables_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-3-local-tables) are tables of data that may be related to the application that consumes the data in the database. Local tables live solely on the coordinator node. An example of a local table could be a user authentication table. All tables start as local tables until they're distributed.
+[_Local tables_](/azure/postgresql/hyperscale/concepts-nodes#type-3-local-tables) are tables of data that may be related to the application that consumes the data in the database. Local tables live solely on the coordinator node. An example of a local table could be a user authentication table. All tables start as local tables until they're distributed.
 
 ### Reference tables
 
-[_Reference tables_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables) are smaller tables of data replicated across each of the worker nodes that are frequently linked to the distributed tables. As the reference table lives in duplicate on each worker node, a worker node can access the data of a reference table without needing to access extra records from another worker node. The `event_types` table contains 11 records of the types of the events supported in the system, so it's a smaller table and good candidate to be a reference table.
+[_Reference tables_](/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables) are smaller tables of data replicated across each of the worker nodes that are frequently linked to the distributed tables. As the reference table lives in duplicate on each worker node, a worker node can access the data of a reference table without needing to access extra records from another worker node. The `event_types` table contains 11 records of the types of the events supported in the system, so it's a smaller table and good candidate to be a reference table.
 
 A reference table is created by the `create_reference_table()` function. This query will convert the `event_types` table from a local table to a reference table:
 
@@ -67,7 +67,7 @@ Reference tables can be joined with local tables. They can also be joined with d
 
 ### Distributed tables
 
-[_Distributed tables_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#type-1-distributed-tables) are large tables of data that are broken up into smaller chunks known as [_shards_](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#shards). The tables are sharded - or distributed - by a field known as the **distribution column**. Examples of distributed tables for the Woodgrove Bank app are the `payment_users` and `payment_events` tables.
+[_Distributed tables_](/azure/postgresql/hyperscale/concepts-nodes#type-1-distributed-tables) are large tables of data that are broken up into smaller chunks known as [_shards_](/azure/postgresql/hyperscale/concepts-nodes#shards). The tables are sharded - or distributed - by a field known as the **distribution column**. Examples of distributed tables for the Woodgrove Bank app are the `payment_users` and `payment_events` tables.
 
 Distributed tables can be joined with reference tables. However, distributed tables can't be joined with local tables.
 
