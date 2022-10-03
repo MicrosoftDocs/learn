@@ -1,4 +1,4 @@
-Azure Arc-enabled data services provides two connectivity mode options for you to connect to Azure: 
+Azure Arc-enabled data services provide two connectivity mode options for you to connect to Azure: 
 
 - Directly connected
 - Indirectly connected 
@@ -12,7 +12,7 @@ The right connectivity mode for your Arc-enabled data services will be impacted 
 
 Depending on your requirements, you may be obliged to use indirectly connected mode. If you have a requirement, for example, of having an air-gapped environment to the internet, indirectly connected mode should be implemented. 
 
-Understanding your requirements, and your ability to have direct connectivity to your Azure subscription, is paramount in choosing which connectivity mode to use. Once you have deployed your Arc-enabled data services environment, you cannot change the connectivity mode. This requires a re-deployment to be undertaken. 
+Business requirements, and your ability to have direct connectivity to your Azure subscription, is paramount in choosing which connectivity mode to use. Once you have deployed your Arc-enabled data services environment, you cannot change the connectivity mode. This requires a re-deployment to be undertaken. 
 
 Usage data for billing purposes is the only data that is required to be uploaded to Azure. All other data may remain on-premises, or in a multicloud environment. Directly connected mode will automatically upload usage data whereas indirectly connected mode requires usage data to be uploaded via a manual process.
 

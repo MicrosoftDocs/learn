@@ -5,11 +5,11 @@ Azure Arc data controller is the Kubernetes operator that brings all of the Arc-
 To deploy an Arc data controller we have to have the following completed:
 - Install/Upgrade **[Azure CLI](/cli/azure/install-azure-cli)** to version >= 2.16.0 and <= 2.29.0.
 - Add **arcdata** and associated **k8s CLI extensions**:
-    - arcdata               : az extension add --name arcdata
-    - connectedk8s          : az extension add --name connectedk8s
-    - customlocation        : az extension add --name customlocation
-    - k8s-configuration     : az extension add --name k8s-configuration
-    - k8s-extension         : az extension add --name k8s-extension
+    - `arcdata`               : `az extension add --name arcdata`
+    - `connectedk8s`          : `az extension add --name connectedk8s`
+    - `customlocation`        : `az extension add --name customlocation`
+    - `k8s-configuration`     : `az extension add --name k8s-configuration`
+    - `k8s-extension`         : `az extension add --name k8s-extension`
 - Have access to your **Kubernetes Cluster** V1.21 and above.
 - **[Meet network requirements](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#meet-network-requirements)**.
 - **[Register providers for Azure Arc-enabled Kubernetes](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#register-providers-for-azure-arc-enabled-kubernetes)**.
@@ -45,27 +45,27 @@ Azure Arc-enabled data services are supported on Kubernetes platforms V1.21 and 
 - **[Azure Kubernetes Service (AKS)](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-azure-kubernetes-service-aks)**
 - **[AKS on Azure Stack HCI](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-aks-on-azure-stack-hci)**
 - **[Azure Red Hat OpenShift (ARO)](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-azure-red-hat-openshift-aro)**
-- **[Red Hat Openshift Container Platform (OCP)](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-red-hat-openshift-container-platform-ocp)**
+- **[Red Hat OpenShift Container Platform (OCP)](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-red-hat-openshift-container-platform-ocp)**
 - **[Open source, upstream Kubernetes (kubeadm)](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-red-hat-openshift-container-platform-ocp)**
 - **[AWS Elastic Kubernetes Service (EKS)](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-aws-elastic-kubernetes-service-eks)**
 - **[Google Cloud Kubernetes Engine Service (GKE)](/azure/azure-arc/data/create-data-controller-indirect-cli?tabs=linux#create-on-google-cloud-kubernetes-engine-service-gke)**
 
-For the deployment options below we are using an AKS deployed Kubernetes cluster. All options related to storage classes are associated with the AKS cluster supported storage classes. The choice of Service type is going to depend on the configuration of your Kubernetes cluster. The kubernetes cluster used in this exercise is configured as a load balanced service type. If you are configired in a node port type, use node port instead of load balancer appropriately in the exercise. The type of Kubernetes cluster implemented in your environment will dictate the types of provisioned and presented storage types. You will need to know your storage classes, talk to your infrastructure team or Kubernetes admin if you are unsure. 
+For the deployment options below we are using an AKS deployed Kubernetes cluster. All options related to storage classes are associated with the AKS cluster supported storage classes. The choice of Service type is going to depend on the configuration of your Kubernetes cluster. The kubernetes cluster used in this exercise is configured as a load balanced service type. If you are configured in a node port type, use node port instead of load balancer appropriately in the exercise. The type of Kubernetes cluster implemented in your environment will dictate the types of provisioned and presented storage types. You will need to know your storage classes, talk to your infrastructure team or Kubernetes admin if you are unsure. 
 
 ## Deploy in directly connected mode 
 
 To deploy your Arc data controller, we have several options available to us:
 
 1. GUI deployment:
-    1. Azure Portal
+    1. Azure portal
     2. Azure Data Studio
 2. CLI deployment:
-    1. Azure Portal Cloud Shell
+    1. Azure portal Cloud Shell
     2. Azure Data Studio terminal window
 
 Choose which of the options you wish to walk through. All provide you with the same outcome.
 
-## Option 1: Azure Portal GUI deployment
+## Option 1: Azure portal GUI deployment
 
 1. In the Azure portal, select + Create resource.
 2. Search for Azure Arc data controller.
@@ -143,19 +143,19 @@ Choose which of the options you wish to walk through. All provide you with the s
 
 In this deployment method we are using **[Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)** (ADS) and the associated ADS extensions **Azure Arc** & **Azure CLI**.
 
-Ensure that you have navigated to your .kube directory in the ADS terminal before executing any CLI commands.
+Ensure that you have navigated to your `.kube` directory in the ADS terminal before executing any CLI commands.
 
-- Before using ADS for the deployment, you will need to create a custom location in your chosen subscription and resource group where you will deploy your Arc data controller. In ADS, open the terminal window and connect to your subscription and download your kube config file.
+- Before using ADS for the deployment, you will need to create a custom location in your chosen subscription and resource group where you will deploy your Arc data controller. In ADS, open the terminal window and connect to your subscription and download your `kube` config file.
 
     ```PowerShell
-    $Env:MySuscriptionID = 'enter your subscription id here'
+    $Env:MySuscriptionID = 'enter your subscription ID here'
     $Env:MyResourceGroup = 'enter your resource group name here'
     $Env:MyCluster = 'enter your kubernetes cluster name here'
     az account set --subscription $Env:MySuscriptionID
     az aks get-credentials --resource-group $Env:MyResourceGroup --name $Env:MyCluster
     ```
 
-Create your custom location for your Azure Arc data controller that you will be deploying on your Azure Arc-enabled Kubernetes cluster. Using the Azure Portal Cloud shell, execute the following commands:
+Create your custom location for your Azure Arc data controller that you will be deploying on your Azure Arc-enabled Kubernetes cluster. Using the Azure portal cloud shell, execute the following commands:
 
  1. Create the Arc-enabled kubernetes cluster custom location extension using the following command: 
 
@@ -283,15 +283,15 @@ You can manage your Arc data controller by right-clicking on the data controller
 
 ![Azure Data Studio - manage data controller](../media/Arc-enabled-dataservices-module-1-ADS-Manage-DataController-17.png)
 
-## Option 3: Azure Portal Cloud Shell deployment
+## Option 3: Azure portal Cloud Shell deployment
 
-In this exercise option, you will be creating the Arc data controller via the CLI from the Azure Portal. Ensure you have walked through the prerequisites at the start of this exercise.
+In this exercise option, you will be creating the Arc data controller via the CLI from the Azure portal. Ensure you have walked through the prerequisites at the start of this exercise.
 
 1. In the Azure portal, open the Cloud Shell.
 2. Set your parameters to be used during this deployment.
 
     ```PowerShell
-    $Env:MySuscriptionID = 'enter your subscription id here'
+    $Env:MySuscriptionID = 'enter your subscription ID here'
     $Env:MyResourceGroup = 'enter resource group name here'
     $Env:MyCluster = 'enter kubernetes cluster name here'
     $Env:Mylocation = 'enter resource location here'
@@ -300,7 +300,7 @@ In this exercise option, you will be creating the Arc data controller via the CL
     $Env:MyNamespace = 'enter data controller name space here'
     ```
 
-3. Download the Kubernetes cluster kube config file.
+3. Download the Kubernetes cluster `kube` config file.
 
     ```PowerShell
     az account set --subscription $Env:MySuscriptionID
@@ -464,13 +464,13 @@ In this exercise option, you will be creating the Arc data controller via the CL
 
 In this deployment method we are using **[Azure Data Studio](/sql/azure-data-studio/download-azure-data-studio)** (ADS) and the associated ADS extensions **Azure Arc** & **Azure CLI**. We will be using the CLI from the Azure Data Studio Terminal. Ensure you have walked through the prerequisites at the start of this exercise and installed the Azure Arc and Azure CLI Azure Data Studio extensions.
 
-Ensure that you have navigated to your .kube directory in the ADS terminal before executing any CLI commands.
+Ensure that you have navigated to your `.kube` directory in the ADS terminal before executing any CLI commands.
 
 1. In the Azure portal, open the Cloud Shell.
 2. Set your parameters to be used during this deployment.
 
     ```PowerShell
-    $Env:MySuscriptionID= 'enter your subscription id here'
+    $Env:MySuscriptionID= 'enter your subscription ID here'
     $Env:MyResourceGroup= 'enter resource group name here'
     $Env:MyCluster= 'enter kubernetes cluster name here'
     $Env:Mylocation= 'enter resource location here'
@@ -479,7 +479,7 @@ Ensure that you have navigated to your .kube directory in the ADS terminal befor
     $Env:MyNamespace= 'enter data controller name space here'
     ```
 
-3. Download the Kubernetes cluster kube config file.
+3. Download the Kubernetes cluster `kube` config file.
 
     ```PowerShell
     az account set --subscription $Env:MySuscriptionID
@@ -621,7 +621,7 @@ Ensure that you have navigated to your .kube directory in the ADS terminal befor
         --cluster-name $Env:MyCluster
     ```
 
-16. You will be prompted for your Log Analytics Workspace ID and associated primary key. You can retrieve these from inside the portal, navigating to your Log Analytics workspace. The workspace id and primary key are available in the Settings | Agents management section.
+16. You will be prompted for your Log Analytics Workspace ID and associated primary key. You can retrieve these from inside the portal, navigating to your Log Analytics workspace. The workspace ID and primary key are available in the Settings | Agents management section.
 17. Monitor the deployment of you Arc data controller. Use the command: 
 
     ```PowerShell
@@ -686,7 +686,7 @@ Ensure that you have navigated to your .kube directory in the ADS terminal befor
 
 ![Image of Azure Data Studio Azure Arc Extension](../media/Arc-enabled-dataservices-module-1-ADS-Extensions-ARC-3.png)
 
-5. After installing both extensions, close and restart ADS.
+5. After you install both extensions, close and restart ADS.
 6. Once ADS has restarted, navigate to the Linked Accounts section and select Add an account.
 
 ![Image of Azure Data Studio Azure linked accounts](../media/Arc-enabled-dataservices-module-1-ADS-Linked-Accounts-4.png)
@@ -797,7 +797,7 @@ In this exercise option, you will be creating the data controller onto your Kube
 2. Set your parameters to be used during this deployment.
 
     ```PowerShell
-    $Env:MySuscriptionID= 'enter your subscription id here'
+    $Env:MySuscriptionID= 'enter your subscription ID here'
     $Env:MyResourceGroup= 'enter resource group name here'
     $Env:Mylocation= 'enter resource location here'
     $Env:MyNamespace= 'enter data controller name space here'
@@ -812,7 +812,7 @@ In this exercise option, you will be creating the data controller onto your Kube
     $ENV:AZDATA_METRICSUI_PASSWORD= 'enter Grafana dashboard password here'
     ```
 
-3. Download the kubernetes cluster kube config file.
+3. Download the Kubernetes cluster `kube` config file.
 
     ```PowerShell
     az account set --subscription $Env:MySuscriptionID`

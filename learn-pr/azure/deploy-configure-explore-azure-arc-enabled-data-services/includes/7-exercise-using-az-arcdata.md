@@ -1,8 +1,8 @@
-Az arcdata is a suite of CLI commands available for us to use to create, delete and manage your Arc-enabled resources either via the Azure Portal Cloud Shell or Azure Data Studio Terminal. In unit 5: Exercise - Deploy an Azure Arc data controller, we used some az arcdata CLI commands, allowing us to ensure our Arc-enabled environment was ready for us to use.
+Az arcdata is a suite of CLI commands available for us to use to create, delete and manage your Arc-enabled resources either via the Azure portal cloud shell or Azure Data Studio terminal. In unit 5: Exercise - Deploy an Azure Arc data controller, we used some az arcdata CLI commands, allowing us to ensure our Arc-enabled environment was ready for us to use.
 
 In this exercise, we will look at a few additional commands that have been covered in the previous unit.
 
-- Prior to running any of these commands ensure you have the most up-todate kube config file on your system. You can download the latest version with the following commands:
+- Prior to running any of these commands ensure you have the latest `kube` config file on your system. You can download the latest version with the following commands:
 
     ```PowerShell
     $Env:MyResourceGroup="<enter resource group name here>"
@@ -74,7 +74,7 @@ This command allows you to change the configurations around whether to auto-uplo
 
 ## Data controller copy debug logs
 
-- This command allows you to copy the debug logs from the Arc data controller for analysis. These logs will be copied to your local profile from which you are running the command. In your .kube folder, a logs folder will have the debug logs compressed and saved for your review.
+- This command allows you to copy the debug logs from the Arc data controller for analysis. These logs will be copied to your local profile from which you are running the command. In your `.kube` folder, a logs folder will have the debug logs compressed and saved for your review.
 
     ```PowerShell
     az arcdata dc debug copy-logs --k8s-namespace $Env:MyNamespace

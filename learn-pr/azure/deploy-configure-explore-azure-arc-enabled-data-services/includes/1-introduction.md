@@ -1,4 +1,4 @@
-Suppose your company, Tailwind Traders, has a number of SQL Server environments hosted on-premises. Your company has some business requirements preventing migrating to the Azure cloud, however, you have a remit to implement Azure Platform as a Service type offerings on-premises to assist in reducing administrative efforts around the SQL Server environments bringing them into line with industry activities.
+Suppose your company, Tailwind Traders, has a number of SQL Server environments hosted on-premises. Your company has some business requirements preventing migrating to the Azure cloud. You also have a requirement to implement Azure platform as a service types of offerings on-premises to assist in reducing administrative efforts around the SQL Server environments, and bring them into line with industry activities.
 
 ![Image of Tailwind Traders](../media/tailwind-traders-logo.png)
 
