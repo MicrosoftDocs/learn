@@ -11,7 +11,7 @@ In preparation for Point 2 - **Deploy the Arc-enabled data controller/control pl
 Point 2 provides multiple approaches for the deployment of the Arc data controller based on the connectivity mode and your preference of tools to use:
 
     - CLI commands utilizing both az arcdata and kubectl commands.
-    - GUI options in either the Azure Portal or Azure Data Studio.
+    - GUI options in either the Azure portal or Azure Data Studio.
 
 Point 3 - **Deploy an Azure Arc-enabled SQL MI** will be discussed in the next module.
 

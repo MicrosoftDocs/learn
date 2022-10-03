@@ -1,4 +1,4 @@
-Az arcdata is a suite of CLI commands available for us to use to create, delete and manage your Arc-enabled resources either via the Azure portal cloud shell or Azure Data Studio terminal. In unit 5: Exercise - Deploy an Azure Arc data controller, we used some az arcdata CLI commands, allowing us to ensure our Arc-enabled environment was ready for us to use.
+Az arcdata is a suite of CLI commands available for us to use to create, delete and manage your Arc-enabled resources either via the Azure portal Cloud Shell or Azure Data Studio terminal. In unit 5: Exercise - Deploy an Azure Arc data controller, we used some az arcdata CLI commands, allowing us to ensure our Arc-enabled environment was ready for us to use.
 
 In this exercise, we will look at a few additional commands that have been covered in the previous unit.
 

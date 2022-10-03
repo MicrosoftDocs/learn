@@ -155,7 +155,7 @@ Ensure that you have navigated to your `.kube` directory in the ADS terminal bef
     az aks get-credentials --resource-group $Env:MyResourceGroup --name $Env:MyCluster
     ```
 
-Create your custom location for your Azure Arc data controller that you will be deploying on your Azure Arc-enabled Kubernetes cluster. Using the Azure portal cloud shell, execute the following commands:
+Create your custom location for your Azure Arc data controller that you will be deploying on your Azure Arc-enabled Kubernetes cluster. Using the Azure portal Cloud Shell, execute the following commands:
 
  1. Create the Arc-enabled kubernetes cluster custom location extension using the following command: 
 

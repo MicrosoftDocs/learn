@@ -9,7 +9,7 @@ Azure Arc-enabled data services provide a similar experience either on-premises,
 
 Utilizing Kubernetes, you can achieve cloud-like elasticity of your resources in much the same way you do in Azure, only restricted by the available capacity of your infrastructure. This allows you to meet your burst scenarios by having all your volatile resource needs located on your infrastructure.
 
-Arc-enabled data services provide you with the unified management of all of your data services running on-premises or on any public cloud all from a single pane of glass. You can use familiar tools like the **Azure Portal**, **Azure Data Studio**, and **Azure CLI** to monitor and gain insights into all of your data services with Azure Monitor across your entire estate. 
+Arc-enabled data services provide you with the unified management of all of your data services running on-premises or on any public cloud all from a single pane of glass. You can use familiar tools like the **Azure portal**, **Azure Data Studio**, and **Azure CLI** to monitor and gain insights into all of your data services with Azure Monitor across your entire estate. 
 
 Arc-enabled data services allow you to take advantage of Azure's industry-leading security and governance capabilities on your on-premises or public cloud-hosted infrastructure by using **Azure Security Center**, **Azure Policy**, and **Azure RBAC** to protect your data.
 

@@ -2,7 +2,7 @@ Suppose your company, Tailwind Traders, has a number of SQL Server environments 
 
 ![Image of Tailwind Traders](../media/tailwind-traders-logo.png)
 
-Azure Arc-enabled data services allow you to meet these requirements and provide much more. In this module you will learn how to design, deploy, and configure Arc-enabled data services. This includes how to prepare for deployment, evaluating various connectivity modes, and  how to deploy the Arc data controller. This module also covers the capabilities of the Arc data controller itself and how to use Command Line Interfaces (CLI) such as az CLI, kubectl, Azure Data Studio and the Azure Portal to explore your Arc-enabled data services deployment.
+Azure Arc-enabled data services allow you to meet these requirements and provide much more. In this module you will learn how to design, deploy, and configure Arc-enabled data services. This includes how to prepare for deployment, evaluating various connectivity modes, and  how to deploy the Arc data controller. This module also covers the capabilities of the Arc data controller itself and how to use Command Line Interfaces (CLI) such as az CLI, kubectl, Azure Data Studio and the Azure portal to explore your Arc-enabled data services deployment.
 
 ## Learning objectives
 

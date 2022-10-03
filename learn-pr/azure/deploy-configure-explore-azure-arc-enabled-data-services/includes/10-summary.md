@@ -1,4 +1,4 @@
-In this module, you have learned how to design, deploy and configure Azure Arc-enabled data services. You learned how to prepare for deployment and evaluate various connected modes for Azure and how to deploy the Azure Arc data controller and explore its multiple capabilities. To assess your Azure Arc-enabled data services deployment, you examined how to use various Command Line Interfaces (CLI) such as azdata and the Azure Portal.
+In this module, you have learned how to design, deploy and configure Azure Arc-enabled data services. You learned how to prepare for deployment and evaluate various connected modes for Azure and how to deploy the Azure Arc data controller and explore its multiple capabilities. To assess your Azure Arc-enabled data services deployment, you examined how to use various Command Line Interfaces (CLI) such as azdata and the Azure portal.
 
 ## Learning objectives
 

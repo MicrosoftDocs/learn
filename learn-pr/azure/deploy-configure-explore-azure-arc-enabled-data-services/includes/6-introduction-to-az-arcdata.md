@@ -1,6 +1,6 @@
 Az arcdata is the Azure Command Line Interface (CLI) suite of commands available for you to manage and maintain your Azure Arc-enabled data services. You can execute these CLI commands in either:
 
-- **Azure Portal Cloud Shell**
+- **Azure portal Cloud Shell**
 - **Azure Data Studio Terminal Window**
 
 Here is a list of all current commands available for az arcdata: 
