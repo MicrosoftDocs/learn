@@ -3,7 +3,7 @@ uid: learn.wwl.move-application-data-to-cloud
 metadata:
   title: Move app data to the cloud
   description: "Learn about Azure's data solutions and perform a data migration."
-  ms.date: 09/30/2022
+  ms.date: 10/03/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial

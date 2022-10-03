@@ -21,9 +21,9 @@ Another OSS database option on Azure is **MariaDB**, which was created as a fork
 
 ## Azure SQL Database
 
-Azure SQL Database is a fully managed platform as a service. The SLA for availability is 99.99%. Many features of stand-alone SQL Server installations are available. If you need additional features, you can choose Azure SQL Database Managed Instance instead. Azure SQL database is also included in Azure Monitor for monitoring and alerts.
+Azure SQL Database is a fully managed platform as a service. The SLA for availability is 99.99%. Many features of stand-alone SQL Server installations are available. If you need other features, you can choose Azure SQL Managed Instance instead. Azure SQL database is also included in Azure Monitor for monitoring and alerts.
 
-### Elastic Pool
+### Elastic pool
 
 Elastic pool is a collection of single databases with a shared set of resources, such as CPU and memory.
 

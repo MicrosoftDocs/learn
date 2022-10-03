@@ -2,7 +2,7 @@ The SQL Server Query Store is a per-database feature. It automatically captures 
 
 Once Query Store is enabled on a database, the Query Store folder is visible for the database in Object Explorer. The Query Store views provide aggregated, quick insights into the performance aspects of a SQL Server database.
 
-## Using the Query Store to optimize performance
+## Using the SQL Query Store to optimize performance
 
 When the performance of a system begins to degrade, it makes sense to consult query wait statistics to potentially identify a cause. In addition to identifying queries that need tuning, it can also shed light on potential infrastructure upgrades that would be beneficial.
 

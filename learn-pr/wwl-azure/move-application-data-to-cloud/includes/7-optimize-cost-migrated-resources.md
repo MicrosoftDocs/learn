@@ -26,7 +26,7 @@ Your move to the cloud is a first step towards modernizing your infrastructure a
 
 Rehosting is also referred to as a lift-and-shift migration. The application is moved from an on-premises server into the IaaS environment of Azure, avoiding modifications to the system. With this approach, cloud benefits are quickly unlocked, and you can take advantage of advanced cloud capabilities, such as autoscaling and improved resiliency, while gradually modernizing afterwards. This is particularly true of database workloads.
 
-### End of Service opportunities
+### End of service opportunities
 
 Many companies will stop providing updates and service support for software they deliver to customer sites. This is no better time to move to the cloud. End of support means there will be no further updates, including regular security updates. With the increasing sophistication and frequency of cyberattacks, running apps and data on unsupported software can create significant security and compliance risks.
 

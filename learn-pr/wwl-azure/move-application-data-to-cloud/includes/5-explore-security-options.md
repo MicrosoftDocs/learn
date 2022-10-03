@@ -2,7 +2,7 @@ We all hear news about data breaches. Securing data is as important today as it 
 
 Let's take a brief look at some of the features Azure's database infrastructure provides. Many of these are available "out of the box" and require minimal setup from the customer.
 
-## IP Firewall
+## IP firewall
 
 A firewall is an initial line of defense. A firewall only allows certain trusted users or systems to access the database. Azure Cosmos DB, for example, supports policy driven IP-based access controls for inbound firewall support. Customer set specific IP addresses (or a range of addresses) that can access the data and the firewall will reject requests from any other address. Azure SQL Server databases also are protected in the same way.
 
