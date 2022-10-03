@@ -20,7 +20,7 @@ ERROR: cannot execute ALTER TABLE command involving partition column
 
 At Woodgrove Bank, the developers were eager to make the primary key the distribution column on the `payment_events` table. However, in discussing the situation with you, they realize that they need to change the distribution column. The `user_id` column makes more sense as the distribution column so that the data can be colocated with the `payment_users` table.
 
-The [`alter_distributed_table()` function](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-functions#alter_distributed_table) can be used to change the distribution column for a distributed table. For this purpose, this function takes two parameters - the name of the distributed table and the named parameter of `distribution_column`.
+The [`alter_distributed_table()` function](/azure/postgresql/hyperscale/reference-functions#alter_distributed_table) can be used to change the distribution column for a distributed table. For this purpose, this function takes two parameters - the name of the distributed table and the named parameter of `distribution_column`.
 
 ## Colocate tables
 

@@ -10,7 +10,7 @@ Part of the solution was to switch from a single relational database to a distri
 
 To learn more information about the subjects covered in this module, see:
 
-* [Table types for Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/postgresql/hyperscale/concepts-nodes#table-types)
-* [Classify application workloads in Azure Cosmos DB for PostgreSQL](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-build-scalable-apps-classify)
-* [Fundamental concepts for scaling](https://learn.microsoft.com/azure/postgresql/hyperscale/howto-build-scalable-apps-concepts#distribution-column-also-known-as-shard-key)
-* [Time series partitioning](https://learn.microsoft.com/azure/postgresql/hyperscale/reference-overview#timeseries-partitioning)
+* [Table types for Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/concepts-nodes#table-types)
+* [Classify application workloads in Azure Cosmos DB for PostgreSQL](/azure/postgresql/hyperscale/howto-build-scalable-apps-classify)
+* [Fundamental concepts for scaling](/azure/postgresql/hyperscale/howto-build-scalable-apps-concepts#distribution-column-also-known-as-shard-key)
+* [Time series partitioning](/azure/postgresql/hyperscale/reference-overview#timeseries-partitioning)
