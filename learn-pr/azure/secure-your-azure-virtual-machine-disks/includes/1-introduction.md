@@ -6,10 +6,9 @@ Your admin team already uses PowerShell for on-premises server management. You'l
 
 Here, you'll look at the types of protection available for VM disks, so you can decide if Azure Disk Encryption (ADE) is the best choice for a given scenario. You'll then enable ADE on existing VM disks, and use templates to enable ADE for new VM deployments.
 
-
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 - Determine which encryption method is best for your VM.
 - Encrypt existing VM disks using the Azure portal.
