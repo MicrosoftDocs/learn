@@ -49,10 +49,9 @@ The H-series and N-series VMs that are RDMA capable and can communicate over the
 
 #### VMs with accelerators
 
-|   <div style="width:250px">__CPU__</div>    |  <div style="width:250px">__GP-GPU__</div>    | <div style="width:250px">__VISUAL__</div>   |
+|   **CPU**    |  **GP-GPU**    | **VISUAL**   |
 | :------------------- | :-------------------  | :------------------- |
 | <p><ul><li>__HB-series__ VMs are optimized for applications that are memory intensive, such as fluid dynamics, explicit finite element analysis, and weather modeling</li> <li>__HC-series__ VMs are optimized for applications that are compute intensive, such as molecular dynamics, implicit finite element analysis, and computational chemistry</li> </ul><br><br></p>| <p><ul><li>__NC-series__ VMs are powered by the NVIDIA Tesla K80 card and the Intel Xeon E5-2690 v3 (Haswell) processor. Users can crunch through data faster by using CUDA for energy exploration applications, crash simulations, ray traced rendering, deep learning, and more.</li> <li> __ND-series__ VMs are a new addition to the GPU family designed for AI, and deep learning workloads. It offers configuration with a secondary low-latency, high-throughput network through RDMA, and InfiniBand connectivity enables running of large-scale training jobs spanning many GPUs.</li> </ul></p>| <p><ul><li>__NV-series__ VMs are made for desktop accelerated applications and virtual desktops where customers are able to visualize their data or simulations. Enables users to visualize their graphics intensive workflows on the NV instances to get a superior graphics capability and additionally run single precision workloads such as encoding and rendering.</li> </ul><br><br><br><br><br><br></p>|
-|  |  |  |
 
 ### Azure Storage Solutions
 
@@ -133,7 +132,7 @@ The H-series and N-series VMs that are RDMA capable and can communicate over the
       * Object storage - Object storage contains actual file data. Clients pull the location of files and directories from the metadata services, then access file storage directly.
     * The advantages of distributed storage and superior I/O performance make parallel file systems preferable to NFS in most HPC scenarios, particularly when it comes to shared working storage space
 
-    ![Azure visualization.](../media/10-azure-object-storage.png)
+    ![Azure object storage.](../media/10-azure-object-storage.png)
 
 * __Cray ClusterStor__
   * The Cray ClusterStor in Azure storage system is a high capacity and high throughput storage solution to accelerate your HPC simulations.
