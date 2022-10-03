@@ -40,7 +40,7 @@ They're constantly working behind the scenes, automated actions that can help yo
 > * Monitoring and automation
 > * Industry-leading support experience
 >
-> Visit [Introduction to Azure Cosmos DB for PostgreSQL](../../../paths/azure-cosmos-db-for-postgresql/index.yml), to follow the training modules for Azure Cosmos DB for PostgreSQL.
+> Visit [Azure Cosmos DB for PostgreSQL](../../../paths/azure-cosmos-db-for-postgresql/index.yml), to follow the learning path for Azure Cosmos DB for PostgreSQL.
 
 :::column-end:::
 :::row-end:::
