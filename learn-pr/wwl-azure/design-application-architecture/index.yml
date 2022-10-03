@@ -23,7 +23,7 @@ abstract: |
 prerequisites: |
   - Working experience with developing cloud applications.
   - Conceptual knowledge of messaging, events, deployments, configurations, API, and caching.
-iconUrl: /learn/achievements/design-application-architecture.svg
+iconUrl: /training/achievements/design-application-architecture.svg
 levels:
 - advanced
 roles:

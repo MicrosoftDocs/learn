@@ -206,15 +206,15 @@ Identify the subtasks of *Secure your data at rest with encryption on Azure*
 
 ## Notes
 
-Encryption at rest doc - <https://docs.microsoft.com/en-us/azure/security/azure-security-encryption-atrest>
+Encryption at rest doc - <https://learn.microsoft.com/azure/security/azure-security-encryption-atrest>
 
-Storage security guide - <https://docs.microsoft.com/en-us/azure/storage/common/storage-security-guide?toc=/azure/security/toc.json&bc=/azure/security/breadcrumb/toc.json#encryption-at-rest>
+Storage security guide - <https://learn.microsoft.com/azure/storage/common/storage-security-guide?toc=/azure/security/toc.json&bc=/azure/security/breadcrumb/toc.json#encryption-at-rest>
 
 This module may be limited on interactivity, as it's more of a tour of the encryption capabilities on Azure, and properly classifying data. If a good hands-on exercise is identified though, we can look at incorporating it.
 
 Resources:
 
-<https://docs.microsoft.com/en-us/azure/sql-database/sql-database-data-discovery-and-classification>
-<https://docs.microsoft.com/en-us/azure/architecture/data-guide/scenarios/securing-data-solutions>
-<https://docs.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview>
-<https://docs.microsoft.com/en-us/azure/security/azure-security-services-technologies>
+<https://learn.microsoft.com/azure/sql-database/sql-database-data-discovery-and-classification>
+<https://learn.microsoft.com/azure/architecture/data-guide/scenarios/securing-data-solutions>
+<https://learn.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview>
+<https://learn.microsoft.com/azure/security/azure-security-services-technologies>

@@ -1,4 +1,4 @@
-In [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true), you created a basic but complete build configuration for an ASP.NET Core web application.
+In [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline?azure-portal=true), you created a basic but complete build configuration for an ASP.NET Core web application.
 
 In this module, you'll extend this build configuration by implementing a code collaboration strategy that uses Git and GitHub.
 

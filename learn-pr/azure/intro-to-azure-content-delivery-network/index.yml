@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Understanding of basic networking concepts.
   - Familiarity with how web content is requested and delivered on the internet.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

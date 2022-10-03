@@ -19,7 +19,7 @@ abstract: |
   - Merge data based on multiple tables
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve data from tables in a database.
-iconUrl: /learn/achievements/modify-data-with-transact-sql.svg
+iconUrl: /training/achievements/modify-data-with-transact-sql.svg
 levels:
 - beginner
 roles:

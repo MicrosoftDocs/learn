@@ -104,4 +104,4 @@ Applying DevOps principles to machine learning projects means you want to create
 To repeat and automate the infrastructure needed to train and deploy your model, your team will use **Infrastructure as Code** (**IaC**). When you train and deploy models on Azure, IaC means that you define all Azure resources needed in the process in code and the code is stored in a repository.
 
 > [!TIP]
-> Get more familiar with DevOps by exploring the Microsoft Learn modules on [the DevOps transformation journey](/learn/paths/az-400-get-started-devops-transformation-journey/)
+> Get more familiar with DevOps by exploring the Microsoft Learn modules on [the DevOps transformation journey](/training/paths/az-400-get-started-devops-transformation-journey/)

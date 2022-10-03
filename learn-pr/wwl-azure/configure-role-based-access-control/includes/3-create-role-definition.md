@@ -12,7 +12,7 @@ IsCustom: False
 Description: Manage everything, including access to resources
 Actions: {*}
 NotActions: {}
-AssignableScopes: {/}
+AssignableScopes: {\}
 
 ```
 

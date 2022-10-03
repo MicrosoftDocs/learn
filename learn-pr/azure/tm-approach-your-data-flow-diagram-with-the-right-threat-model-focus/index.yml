@@ -15,7 +15,7 @@ abstract: |
     - Define a system focused threat modeling exercise
     - Explain the high-level differences between the system, asset, and attacker focused approaches
 prerequisites: None
-iconUrl: /learn/achievements/approach-your-data-flow-diagram-with-the-right-threat-model-focus.svg
+iconUrl: /training/achievements/approach-your-data-flow-diagram-with-the-right-threat-model-focus.svg
 levels:
 - beginner
 roles:

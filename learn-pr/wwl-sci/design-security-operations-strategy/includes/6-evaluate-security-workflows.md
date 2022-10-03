@@ -62,6 +62,6 @@ In Microsoft 365, if your organization is using Microsoft 365 Defender, you can 
 
 For more information on creating automated workflows with various combinations of technologies, see the following articles:
 
-* [Creating a workflow using Defender for Cloud and Azure Logic Apps](https://docs.microsoft.com/azure/defender-for-cloud/workflow-automation#create-a-logic-app-and-define-when-it-should-automatically-run)
-* [Improve threat protection by integrating security operations with Microsoft Graph Security & Azure Logic Apps](https://docs.microsoft.com/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
-* [Tutorial: Use playbooks with automation rules in Microsoft Sentinel](https://docs.microsoft.com/azure/sentinel/tutorial-respond-threats-playbook)
+* [Creating a workflow using Defender for Cloud and Azure Logic Apps](/azure/defender-for-cloud/workflow-automation#create-a-logic-app-and-define-when-it-should-automatically-run)
+* [Improve threat protection by integrating security operations with Microsoft Graph Security & Azure Logic Apps](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security)
+* [Tutorial: Use playbooks with automation rules in Microsoft Sentinel](/azure/sentinel/tutorial-respond-threats-playbook)

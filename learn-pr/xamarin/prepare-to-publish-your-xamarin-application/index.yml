@@ -17,7 +17,7 @@ abstract: |
   - Publish your app
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/prepare-to-publish-your-xamarin-application-badge.svg
+iconUrl: /training/achievements/xamarin/prepare-to-publish-your-xamarin-application-badge.svg
 levels:
 - beginner
 roles:

@@ -17,7 +17,7 @@ abstract: |
   - Add views and behavior to an iOS app
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/introduction-to-xamarin-ios-badge.svg
+iconUrl: /training/achievements/xamarin/introduction-to-xamarin-ios-badge.svg
 levels:
 - beginner
 roles:

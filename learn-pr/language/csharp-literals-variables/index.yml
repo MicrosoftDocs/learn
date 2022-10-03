@@ -20,7 +20,7 @@ prerequisites: |
   - Must understand basic C# syntax rules
   - Must understand how to use Console.WriteLine()
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-literals-variables.svg
+iconUrl: /training/achievements/csharp-literals-variables.svg
 levels:
 - beginner
 roles:

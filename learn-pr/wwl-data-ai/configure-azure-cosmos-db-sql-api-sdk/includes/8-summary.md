@@ -16,7 +16,7 @@ For more information about the topics discussed in this module, see:
 - [Performance tips for Azure Cosmos DB and .NET][/azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql]
 - [Diagnose and troubleshoot issues when using Azure Cosmos DB .NET SDK][/azure/cosmos-db/sql/troubleshoot-dot-net-sdk]
 
-[/azure/cosmos-db/local-emulator]: https://docs.microsoft.com/azure/cosmos-db/local-emulator
-[/azure/cosmos-db/sql/best-practice-dotnet]: https://docs.microsoft.com/azure/cosmos-db/sql/best-practice-dotnet
-[/azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql]: https://docs.microsoft.com/azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql
-[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-dot-net-sdk
+[/azure/cosmos-db/local-emulator]: /azure/cosmos-db/local-emulator
+[/azure/cosmos-db/sql/best-practice-dotnet]: /azure/cosmos-db/sql/best-practice-dotnet
+[/azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql]: /azure/cosmos-db/sql/performance-tips-dotnet-sdk-v3-sql
+[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk]: /azure/cosmos-db/sql/troubleshoot-dot-net-sdk

@@ -14,7 +14,7 @@ Your journey is just starting. Consider the following articles to kick-start you
 
 ## Additional reading
 
-1. [Introduction to mixed reality learn module](/learn/modules/intro-to-mixed-reality/)
+1. [Introduction to mixed reality learn module](/training/modules/intro-to-mixed-reality/)
 1. [Mixed Reality Toolkit standard shader](/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader)
 1. [Challenges with bright color on a large surface](/windows/mixed-reality/design/designing-content-for-holographic-display#challenges-with-bright-color-on-a-large-surface)
 1. [Hands and motion controllers](/windows/mixed-reality/design/hands-and-tools)

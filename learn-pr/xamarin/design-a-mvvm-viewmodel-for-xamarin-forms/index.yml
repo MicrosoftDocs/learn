@@ -17,7 +17,7 @@ abstract: |
   - Improve code testability through data-bindable properties
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms-badge.svg
+iconUrl: /training/achievements/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms-badge.svg
 levels:
 - intermediate
 roles:

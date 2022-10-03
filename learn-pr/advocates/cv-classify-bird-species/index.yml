@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - An Azure account
   - A basic understanding of how to create resources on Azure
-iconUrl: /learn/achievements/advocates/cv-classify-bird-species.svg
+iconUrl: /training/achievements/advocates/cv-classify-bird-species.svg
 levels:
   - beginner
 roles:

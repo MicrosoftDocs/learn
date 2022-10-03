@@ -2,7 +2,7 @@
 Now that your build agent is running and ready to receive build jobs, let's see it in action. In this unit, you modify a basic build configuration that we provide to build the _Space Game_ website by using your agent and not the Microsoft-hosted agent.
 
 > [!NOTE]
-> Run the following steps immediately after performing the steps in the previous module [Create a build agent  that runs on Azure](/learn/modules/host-build-agent/4-create-build-agent).
+> Run the following steps immediately after performing the steps in the previous module [Create a build agent  that runs on Azure](/training/modules/host-build-agent/4-create-build-agent).
 
 At the end of this unit, as an optional step, you can remove the agent pool from your Microsoft Azure DevOps organization.
 
@@ -26,7 +26,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
 1. Optionally, in Visual Studio Code, open the *azure-pipelines.yml* file, and familiarize yourself with the initial configuration.
 
-    The configuration resembles the basic one that you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's release configuration.
+    The configuration resembles the basic one that you created in the [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's release configuration.
 
 ## Modify the build configuration
 

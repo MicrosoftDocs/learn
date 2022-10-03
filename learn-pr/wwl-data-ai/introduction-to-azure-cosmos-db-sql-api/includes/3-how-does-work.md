@@ -66,4 +66,4 @@ If your container specifies a partition key **path** of ``/department/name``, th
 
 Selecting a partition key path for a container can be one of the most important design decisions for a new workload. Review the [choosing a partition key][azure/cosmos-db/partitioning-overview#choose-partitionkey] documentation for a deeper technical explanation and best practices.
 
-[azure/cosmos-db/partitioning-overview#choose-partitionkey]: https://docs.microsoft.com/azure/cosmos-db/partitioning-overview#choose-partitionkey
+[azure/cosmos-db/partitioning-overview#choose-partitionkey]: /azure/cosmos-db/partitioning-overview#choose-partitionkey

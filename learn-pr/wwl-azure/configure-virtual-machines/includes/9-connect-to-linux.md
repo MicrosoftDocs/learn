@@ -1,6 +1,6 @@
 When you create a Linux VM, you can decide to authenticate with an **SSH public key** or **Password**.
 
-:::image type="content" source="../media/shell-connections-e32af1d8.png" alt-text="Screenshot of connect to linux.":::
+:::image type="content" source="../media/shell-connections-e32af1d8.png" alt-text="Screenshot of a L I N U X connection.":::
 
 
 ## SSH connections

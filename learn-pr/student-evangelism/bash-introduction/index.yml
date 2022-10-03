@@ -21,7 +21,7 @@ abstract:  |
   - Learn how to find and terminate rogue processes.
   - Learn how to use Bash to filter Azure CLI output.
 prerequisites: None
-iconUrl: /learn/achievements/student-evangelism/bash-introduction-badge.svg
+iconUrl: /training/achievements/student-evangelism/bash-introduction-badge.svg
 levels:
 - beginner
 roles:

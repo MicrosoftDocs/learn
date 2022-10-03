@@ -2,7 +2,7 @@
 uid: learn.secure-collaboration-cross-tenant-access
 metadata:
   moduleType: standard
-  title: secure-collaboration-cross-tenant-access
+  title: Secure B2B collaboration by using cross-tenant access settings
   description: Index
   ms.date: 7/29/2022
   author: msmimart
@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free)
   - Basic understanding of Azure AD and B2B collaboration
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles: 

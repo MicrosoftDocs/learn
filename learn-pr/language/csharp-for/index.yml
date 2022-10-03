@@ -18,7 +18,7 @@ prerequisites: |
   - Experience with the `foreach` iteration statement.
   - Experience working with variables.
 ratingEnabled: true
-iconUrl: /learn/achievements/csharp-for.svg
+iconUrl: /training/achievements/csharp-for.svg
 levels:
 - beginner
 roles:

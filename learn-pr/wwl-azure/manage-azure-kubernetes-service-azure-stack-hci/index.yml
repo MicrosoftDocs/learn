@@ -25,7 +25,7 @@ prerequisites: |
   - Familiarity with the concept of virtualization
   - Familiarity with the architecture, core capabilities, and primary use cases of Azure Stack HCI
   - Familiarity with the concept of containerization and container orchestration
-iconUrl: /learn/achievements/manage-azure-kubernetes-service-on-azure-stack-hci.svg
+iconUrl: /training/achievements/manage-azure-kubernetes-service-on-azure-stack-hci.svg
 levels:
 - intermediate
 roles:

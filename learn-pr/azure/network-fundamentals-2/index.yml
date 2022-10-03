@@ -3,7 +3,7 @@ uid: learn.azure.network-fundamentals-2
 metadata:
   title: Fundamentals of network security
   description: Explore the fundamentals of computer networking security and monitoring.
-  ms.date: 01/09/2020
+  ms.date: 09/19/2022
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Fundamentals of network security
 summary: Explore the fundamentals of computer networking security and monitoring.
 abstract: | 
-  In this module, you will learn how to:
+  In this module, you'll learn how to:
   - Describe the client-server network model.
   - Describe the difference between authentication and authorization.
   - List the different network firewall types.
@@ -19,7 +19,7 @@ abstract: |
   - Map core network components to Azure networking.
 prerequisites: | 
   - Fundamentals of computer networking
-iconUrl: /learn/achievements/network-fundamentals-2.svg
+iconUrl: /training/achievements/network-fundamentals-2.svg
 levels:
 - beginner
 roles:

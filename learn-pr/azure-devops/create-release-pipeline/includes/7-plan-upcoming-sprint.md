@@ -6,7 +6,7 @@ Andy glances at Mara, and clears his throat.
 
 **Amita:** Andy is right. Irwin asked us to find a way to speed up deployments. I think that should be the focus of the next sprint. Remember our value stream map?
 
-Amita points to the value stream map, which you originally saw in the [Assess your existing software development process](/learn/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) module.
+Amita points to the value stream map, which you originally saw in the [Assess your existing software development process](/training/modules/assess-your-development-process/4-assess-process-efficiency?azure-portal=true) module.
 
 :::image type="content" source="../media/7-vsm-whiteboard1.png" alt-text="Diagram of a whiteboard showing the value stream map.":::
 

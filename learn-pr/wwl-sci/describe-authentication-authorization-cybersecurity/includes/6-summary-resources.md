@@ -10,5 +10,5 @@ Now that you've completed this module, you should be able to:
 
 ### Learn more
 
-- [Microsoft Security, Compliance, and Identity Fundamentals](/learn/paths/describe-concepts-of-security-compliance-identity/)
+- [Microsoft Security, Compliance, and Identity Fundamentals](/training/paths/describe-concepts-of-security-compliance-identity/)
 - [Executive Order on Improving the Nation’s Cybersecurity](https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/)

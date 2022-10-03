@@ -15,7 +15,7 @@ prerequisites: |
   - Basic experience with implementing and managing IaaS services in Microsoft Azure
 summary: |
   Learn to implement and manage Windows Server virtual machines (VMs) and container workloads using Windows Server Hyper-V. You’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads.
-iconUrl: /learn/achievements/manage-virtualization-and-containers-in-a-hybrid-environment.svg
+iconUrl: /training/achievements/manage-virtualization-and-containers-in-a-hybrid-environment.svg
 levels:
 - intermediate
 roles:

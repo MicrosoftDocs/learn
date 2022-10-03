@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
-iconUrl: /learn/achievements/explore-azure-service-level-agreements.svg
+iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
 levels:
 - beginner
 roles:

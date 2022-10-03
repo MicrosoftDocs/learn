@@ -38,7 +38,7 @@ The command generates a hash for the zipped VHD file. The hash should match thes
 
 After verifying the zipped VHD file is secure, extract the zipped file. Using Hyper-V Manager, import the VHD file. Specify a virtual network switch for the VM to use and create the Azure Migrate appliance VM.
 
-Before starting the appliance, configure network subnets in your existing on-premises environment so that the appliance can obtain the appropriate IP address. The appliance also connects to specific Azure URLs during discovery and assessment. Azure documentation lists the [URL](https://docs.microsoft.com/azure/migrate/migrate-appliance#url-access) and [port access](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v#port-access) requirements for the appliance VM. Review the list and make sure those are in place before deploying the appliance.
+Before starting the appliance, configure network subnets in your existing on-premises environment so that the appliance can obtain the appropriate IP address. The appliance also connects to specific Azure URLs during discovery and assessment. Azure documentation lists the [URL](/azure/migrate/migrate-appliance#url-access) and [port access](/azure/migrate/migrate-support-matrix-hyper-v#port-access) requirements for the appliance VM. Review the list and make sure those are in place before deploying the appliance.
 
 ### Configure the appliance VM
 

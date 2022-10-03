@@ -29,7 +29,7 @@ prerequisites: |
   *   Familiarity to use variables, arrays, hash tables, and scripting constructs in Windows PowerShell
   *   Familiarity to administer remote computers with Windows PowerShell
   *   Familiarity to manage Azure resources and Microsoft 365 services with Windows PowerShell
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
 roles:

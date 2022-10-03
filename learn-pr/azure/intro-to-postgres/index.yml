@@ -15,7 +15,7 @@ abstract: |
   - Describe the components of Azure Database for PostgreSQL.
   - Identify situations when to use Azure Database for PostgreSQL.
 prerequisites: Some knowledge of relational databases
-iconUrl: /learn/achievements/intro-to-postgres.svg
+iconUrl: /training/achievements/intro-to-postgres.svg
 levels:
 - beginner
 roles:

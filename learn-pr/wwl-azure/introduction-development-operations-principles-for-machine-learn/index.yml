@@ -17,7 +17,7 @@ abstract: |
   - How to connect Azure DevOps and GitHub with Azure Machine Learning.
 prerequisites: |
   Some familiarity with machine learning and Azure Machine Learning.
-iconUrl: /learn/achievements/introduction-development-operations-principles-for-machine-learn.svg
+iconUrl: /training/achievements/introduction-development-operations-principles-for-machine-learn.svg
 levels:
 - beginner
 roles:

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Basic understanding of SQL Server file storage.
-iconUrl: /learn/achievements/describe-high-availability-and-disaster-recovery-strategies.svg
+iconUrl: /training/achievements/describe-high-availability-and-disaster-recovery-strategies.svg
 levels:
 - intermediate
 roles:

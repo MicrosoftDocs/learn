@@ -17,5 +17,5 @@ In this module, you'll:
 
 <!-- Links -->
 
-[Rust-intro]: /learn/modules/rust-introduction/4-rust-playground?azure-portal=true
+[Rust-intro]: /training/modules/rust-introduction/4-rust-playground?azure-portal=true
 [RustPlay]: https://play.rust-lang.org?azure-portal=true

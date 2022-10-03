@@ -48,7 +48,7 @@ Use the `Get-Help` cmdlet to learn about cmdlets.
        by the target operating system can be used.
 
    RELATED LINKS
-       Online Version: https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-filehash?view=powe
+       Online Version: https://learn.microsoft.com/powershell/module/microsoft.powershell.utility/get-filehash?view=powe
        rshell-7.2&WT.mc_id=ps-gethelp
        Format-List 
 

@@ -22,7 +22,7 @@ In the following image, there are three workspaces for development, test, and pr
 > [!IMPORTANT]
 > Power BI deployment pipelines require a Premium or Premium Per User workspace.
 
-We go into greater detail in the module, [Create and manage a Power BI deployment pipeline](/learn/modules/power-bi-deployment-pipelines/).
+We go into greater detail in the module, [Create and manage a Power BI deployment pipeline](/training/modules/power-bi-deployment-pipelines/).
 
 ## Combining source control and deployment pipelines
 

@@ -21,7 +21,7 @@ abstract: |
   - Optimize common queries with result-set caching
 prerequisites: |
   - Before taking this module, it is recommended that you complete Data Fundamentals.
-iconUrl: /learn/achievements/optimize-data-warehouse-query-performance-in-azure-synapse-analytics.svg
+iconUrl: /training/achievements/optimize-data-warehouse-query-performance-in-azure-synapse-analytics.svg
 levels:
 - intermediate
 roles:

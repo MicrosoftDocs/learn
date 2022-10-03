@@ -17,7 +17,7 @@ abstract: |
   * Distinguish the network, database, and monitoring requirements.
 prerequisites: |
   Prior to taking this course, it is recommended that you have taken the Azure Administrator (AZ-103) exam, as well as SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/using-iaas-support-with-azure-for-sap-workloads.svg
+iconUrl: /training/achievements/using-iaas-support-with-azure-for-sap-workloads.svg
 levels:
 - advanced
 roles:

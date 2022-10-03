@@ -60,7 +60,7 @@ To generate the usage data, you should have resources that are running and activ
 
 Use the following PowerShell cmdlets to view the usage data:
 
-1.  [Install PowerShell for Azure Stack Hub](https://docs.microsoft.com/azure-stack/operator/powershell-install-az-module?&amp;preserve-view=true).
+1.  [Install PowerShell for Azure Stack Hub](/azure-stack/operator/powershell-install-az-module?&amp;preserve-view=true).
 2.  Configure the Azure Stack Hub user or the Azure Stack Hub operator PowerShell environment.
 3.  To retrieve the usage data, call the **Get-AzsSubscriberUsage** PowerShell cmdlet:
 

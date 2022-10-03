@@ -67,7 +67,7 @@ Having an older version also means that uploading a new version of a model doesn
 You can update these existing twins to the new model version by patching them.
 
 > [!NOTE]
-> If you aren't familiar with JSON Patch, you can read more here: [https://docs.microsoft.com/aspnet/core/web-api/jsonpatch](/aspnet/core/web-api/jsonpatch)
+> If you aren't familiar with JSON Patch, you can read more here: [JsonPatch in ASP.NET Core web API](/aspnet/core/web-api/jsonpatch)
 
 ## Remove models
 

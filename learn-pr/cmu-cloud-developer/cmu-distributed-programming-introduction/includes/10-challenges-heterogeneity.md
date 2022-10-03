@@ -17,7 +17,7 @@ Another serious heterogeneity problem that requires attention from distributed p
 ### References
 
 1. _M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). [Improving MapReduce Performance in Heterogeneous Environments](https://dl.acm.org/doi/10.5555/1855741.1855744) OSDI_
-2. _G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). [Distributed Systems: Concepts and Design](http://dinus.ac.id/repository/docs/ajar/George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition.pdf) Addison-Wesley_
+2. _G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). [Distributed Systems: Concepts and Design](https://repository.dinus.ac.id/view/setViewer/12/1196/36059/Distributed-Systems--Concepts-and-Design--5th-Edition-.pdf) Addison-Wesley_
 3. _B. Farley, V. Varadarajan, K. Bowers, A. Juels, T. Ristenpart, and M. Swift (2012). [More for Your Money: Exploiting Performance Heterogeneity in Public Clouds](https://dl.acm.org/doi/10.1145/2391229.2391249) SOCC_
 4. _M. S. Rehman and M. F. Sakr (Nov. 2010). [Initial Findings for Provisioning Variation in Cloud Computing](https://ieeexplore.ieee.org/document/5708489) CloudCom_
 5. _[Sizes for Linux virtual machines in Azure](/azure/virtual-machines/linux/sizes)_
@@ -25,7 +25,7 @@ Another serious heterogeneity problem that requires attention from distributed p
 7. _T. D. Braun, H. J. Siegel, N. Beck, L. L. Blni, M. Maheswaran, A. I. Reuther, J. P. Robertson, M. D. Theys, B. Yao, D Hensgen, and R. F. Freund (June 2001). [A Comparison of Eleven Static Heuristics for Mapping a Class of Independent Tasks onto Heterogeneous Distributed Computing Systems](http://www.eecs.ucf.edu/~lboloni/Research/Papers/braun01comparison.pdf) JPDC_
 
 [^1]: <https://dl.acm.org/doi/10.5555/1855741.1855744> "M. Zaharia, A. Konwinski, A. Joseph, R. Katz, and I. Stoica (2008). *Improving MapReduce Performance in Heterogeneous Environments* OSDI"
-[^2]: <http://dinus.ac.id/repository/docs/ajar/George-Coulouris-Distributed-Systems-Concepts-and-Design-5th-Edition.pdf> "G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). *Distributed Systems: Concepts and Design* Addison-Wesley"
+[^2]: <https://repository.dinus.ac.id/view/setViewer/12/1196/36059/Distributed-Systems--Concepts-and-Design--5th-Edition-.pdf> "G. Coulouris, J. Dollimore, T. Kindberg, and G. Blair (May 2011). *Distributed Systems: Concepts and Design* Addison-Wesley"
 [^3]: <https://dl.acm.org/doi/10.1145/2391229.2391249> "B. Farley, V. Varadarajan, K. Bowers, A. Juels, T. Ristenpart, and M. Swift (2012). *More for Your Money: Exploiting Performance Heterogeneity in Public Clouds* SOCC"
 [^4]: <https://ieeexplore.ieee.org/document/5708489> "M. S. Rehman and M. F. Sakr (Nov. 2010). *Initial Findings for Provisioning Variation in Cloud Computing* CloudCom"
 [^5]: /azure/virtual-machines/linux/sizes "Sizes for Linux virtual machines in Azure"

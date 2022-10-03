@@ -16,7 +16,7 @@ abstract: |
   - Display views in rows and columns using Grid
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
-iconUrl: /learn/achievements/xamarin/customize-layout-in-xamarin-forms-xaml-pages-badge.svg
+iconUrl: /training/achievements/xamarin/customize-layout-in-xamarin-forms-xaml-pages-badge.svg
 levels: 
 - beginner
 roles: 

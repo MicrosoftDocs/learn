@@ -17,7 +17,7 @@ abstract: |
   - Configure and use AZCopy.
 prerequisites: |
   None
-iconUrl: /learn/achievements/storage-tools-configure.svg
+iconUrl: /training/achievements/storage-tools-configure.svg
 levels:
 - intermediate
 roles:

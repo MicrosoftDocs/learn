@@ -16,7 +16,7 @@ abstract: |
     - Create storage resources to hold blobs
     - Store and retrieve data from Azure Blob Storage
 prerequisites: None
-iconUrl: /learn/achievements/store-app-data-with-azure-blob-storage.svg
+iconUrl: /training/achievements/store-app-data-with-azure-blob-storage.svg
 levels:
 - beginner
 roles:

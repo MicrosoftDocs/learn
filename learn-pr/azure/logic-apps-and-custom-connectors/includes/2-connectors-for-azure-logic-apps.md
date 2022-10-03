@@ -1,46 +1,45 @@
-As the senior lead developer at a picture framing company, you have been asked to research  Logic Apps and the types of connectors provided. You want to connect Logic Apps to use an in-house Web API that estimates framing prices.
+As the lead developer at a picture frame company, you've been asked to research Azure Logic Apps and the included connector types. Your goal is to connect from Azure Logic Apps to an in-house, custom-built Web API that estimates framing prices.
 
-Let's get started by learning about Logic Apps and their ability to monitor events and carry out actions.
+Let's get started by learning about Azure Logic Apps and this platform's ability to monitor events and carry out actions.
 
-## What are Logic Apps?
+## What is Azure Logic Apps?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4qhug]
 
-Azure Logic Apps is a cloud service that you can use to integrate apps, systems, data, and services within your enterprise or across organizations. They help to simplify how you design and build scalable solutions in the cloud, on-premises, or both.
+Azure Logic Apps is a cloud service that you can use to integrate apps, services, systems, and data within your enterprise or across organizations. This integration platform helps simplify how you design and build scalable solutions in the cloud, on premises, or both.
 
-## What can you do with a Logic App?
+## What can you do with Azure Logic Apps?
 
-You can use Logic Apps to connect and orchestrate multiple systems into a single workflow. For example, a workflow can:
+You can orchestrate data and tasks between multiple services and systems into a single workflow using Azure Logic Apps. For example, a workflow can perform the following tasks by connecting to common business systems using connectors or create your own connectors to access custom or unique systems through REST APIs:
 
 - Send an email notification when an event occurs.
 - Move files to Azure Storage from servers in your organization.
-- Monitor social media activity, perform sentiment analysis and create alerts when a post is critical to your business.
-- Connect to common business systems by using built-in connectors.
-- Connect to unusual or unique systems by using custom connectors that you create.
+- Monitor social media activity, analyze sentiment, and send alerts when a business-critical post is published.
 
-Logic Apps can do all of these things without the need to rebuild or redeploy code.
+Azure Logic Apps can do all these things without the need to rebuild or redeploy code.
 
-## Operations in Logic Apps
+## Components in Azure Logic Apps
 
-*Connectors* in Logic Apps enable you to communicate with an external service. Each connector has various operations available. Operations that can initiate a workflow are called *Triggers*. Operations that perform some task are called *Actions*.
+*Connectors* are components in Azure Logic Apps that help you communicate with an external service. Each connector has various operations, which can include *triggers* that launch a workflow, *actions* that perform tasks, or both.
 
-## Logic Apps triggers
+### Azure Logic Apps connectors
 
-Triggers start a Logic Apps workflow. For example, an HTTP trigger could start a workflow that uses an action to send an email, carry out operations on a data store, or post some content to a social media site.
+Azure Logic Apps offers hundreds of connectors, which fall into the following main groups:
 
-There are several categories of triggers, which reflect their usage in various scenarios:
+| Connector group | Description |
+|-----------------|-------------|
+| **Built-in** | Triggers and actions that natively run on the Azure Logic Apps runtime. Some integrate directly with specific Azure services without having to create a connection, for example, Azure Functions. |
+| **Managed** | Triggers and actions that call other services and systems. These operations usually require that you create a connection first. These connectors are hosted and run in Azure and are managed by Microsoft. Managed connectors can fall across the following subgroups: <br><br>- **Standard connectors**: Triggers and actions that integrate with Azure Storage, Office 365, Microsoft Dynamics, Microsoft Power BI, and more. <br><br>- **Enterprise connectors**: Triggers and actions that can access enterprise systems such as SAP, IBM Message Queue, and others for an extra cost. <br><br>- **On-premises connectors**: Triggers and actions that integration with on-premises SQL Server, SharePoint Server, Oracle, file shares, and more. <br><br>- **Integration account connectors**: Triggers and actions that transform and validate XML, encode and decode flat files, and process business-to-business (B2B) messages with AS2, EDIFACT, and X12 protocols. |
+|||
 
-- **Polling triggers** call your service at a specified frequency to check for new data. When new data is available, it causes a new execution of your workflow.
-- **Push triggers** listen for data on an endpoint and wait for an event to occur. When raised, the event causes a new run of your workflow instance.
-- **Recurrence triggers** create and run an instance of your logic app based on a schedule.
+### Triggers in Azure Logic Apps
 
-## Logic Apps connectors
+A trigger always starts a workflow in Azure Logic Apps. For example, you can use a Request trigger that waits for an inbound call or request from elsewhere to start a workflow. Subsequent actions can send an email, run operations on a data store, and post some content to a social media site.
 
-Logic Apps offers over 200 built-in connectors. They fall into various categories:
+Triggers have the following general types, which reflect their uses in various scenarios.
 
-- **Built-in connectors** have actions and triggers that integrate with Azure Apps and Functions.
-- **Managed connectors** have triggers and actions that call other services and systems. These connectors are organized into subcategories.
-- **Managed API connectors** have actions and triggers that integrate with Azure Blob Storage, Microsoft 365, Dynamics, Power BI, and more.
-- **On-premises connectors** have actions and triggers that integrate with on-premise installations of SQL Server, SharePoint Server, Oracle, and file shares.
-- **Integration account connectors** transform and validate XML, encode and decode flat files, and process business-to-business (B2B) messages with AS2, EDIFACT, and X12 protocols.
-- **Enterprise connectors** provide access to enterprise systems such as SAP, IBM Message Queue, etc.
+- *Polling* trigger: This trigger type runs on a schedule and sends an outbound call that checks for data or an event that meets specific conditions. Whenever data or an event meets the conditions, the trigger starts a new workflow execution.
+
+- *Push* trigger: This trigger type waits and listens for data or an event that meets specific conditions. Each time that data or an event meets the conditions, the trigger starts a new workflow execution.
+
+Triggers can be specific to a service or system, or they can be generic. For example, generic triggers include the Recurrence trigger and Request trigger, which you can use to start any workflow.
