@@ -16102,7 +16102,7 @@
     },
     {
       "source_path": "learn-pr/azure/intro-to-postgres/3-what-is-hyperscale.md",
-      "redirect_url": "/training/modules/intro-to-postgres-cosmos-db/2-what-is-azure-cosmos-db-postgresql/",
+      "redirect_url": "/training/modules/intro-to-postgres/2-what-is-azure-database-postgresql/",
       "redirect_document_id": false
     },
     {
@@ -16112,7 +16112,7 @@
     },
     {
       "source_path": "learn-pr/azure/intro-to-postgres/5-when-to-use-azure-database-postgres.md",
-      "redirect_url": "/training/modules/intro-to-postgres4-when-to-use-azure-database-postgres/",
+      "redirect_url": "/training/modules/intro-to-postgres/4-when-to-use-azure-database-postgres/",
       "redirect_document_id": false
     },
     {
