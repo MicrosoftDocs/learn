@@ -69,3 +69,4 @@ quiz:
         - content: 'Determine whether a network is operational.'
           isCorrect: false
           explanation: 'Incorrect, the ping request is used to check the reachability of a host.'
+          
