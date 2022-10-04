@@ -6,8 +6,8 @@ metadata:
   title: Understand environments
   description: Learn about the environments that you typically deploy your resources to. Also, learn about GitHub Actions environments and how to use them.
   ms.date: 11/08/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
