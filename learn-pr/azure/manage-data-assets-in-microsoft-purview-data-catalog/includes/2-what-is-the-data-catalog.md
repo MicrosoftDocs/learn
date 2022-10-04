@@ -6,7 +6,7 @@ Once data sources have been registered and scanned in the Microsoft Purview Data
 Though metadata is stored in the data map, the Microsoft Purview Data Catalog is the tool that allows users to search and browse the information to find the data assets they're looking for. It also allows users to add more metadata to provide context for data in your business.
 
 :::image type="complex" source="../media/what-is-the-data-catalog/microsoft-purview-data-catalog.png" alt-text="Diagram showing the Microsoft Purview governance portal architecture.":::
-   "In the Microsoft Purview governance portal architecture, Data Catalog and Data Estate Insights sit on top of the data map, and on top of those applications are data producers and consumers. The data catalog shows an image of a catalog which is connected to an image of a magnifying glass in the data map. The magnifying glass is looking over data source and data assets in the data map."
+   "In the Microsoft Purview governance portal architecture, Data Catalog and Data Estate Insights sit on top of the data map, and on top of those applications are data producers and consumers. The data catalog shows an image of a catalog, which is connected to an image of a magnifying glass in the data map. The magnifying glass is looking over data source and data assets in the data map."
 :::image-end:::
 
 You can think of it this way:
@@ -55,7 +55,7 @@ Users are assigned permissions in Microsoft Purview by collection, so users will
 
 ## Trustworthy data
 
-The data catalog also allows you to mark and manage trustworthy data sets, so your users know which sources are up to date and ready for use. You can do this using a **certified** flag, that can be applied by data stewards in Microsoft Purview, and allows users to find quality data on their own without data stewards needing to field regular questions.
+The data catalog also allows you to mark and manage trustworthy data sets, so your users know which sources are up to date and ready for use. You can do this using a **certified** flag that can be applied by data stewards in Microsoft Purview, and allows users to find quality data on their own without data stewards needing to field regular questions.
 
 :::image type="content" source="../media/what-is-the-data-catalog/certified.png" alt-text="Screenshot of a data asset, showing the certified flag next to the name.":::
 
@@ -63,9 +63,9 @@ The data catalog also allows you to mark and manage trustworthy data sets, so yo
 
 The Microsoft Purview Data Catalog also allows users to search for data where they need it. If you register your Microsoft Purview instance to an Azure Data Factory or an Azure Synapse Analytics workspace, your users can search the Microsoft Purview Data Catalog directly from those services to find the data they need.
 
-:::image type="content" source="../media/what-is-the-data-catalog/search-dataset-data-factory.png" alt-text="Screenshot of Azure Data Factory, showing a Microsoft Purview data catalog search bar at the top." lightbox="../media/what-is-the-data-catalog/search-dataset-data-factory.png":::
+:::image type="content" source="../media/what-is-the-data-catalog/search-dataset-data-factory.png" alt-text="Screenshot of Azure Data Factory, showing a Microsoft Purview Data Catalog search bar at the top." lightbox="../media/what-is-the-data-catalog/search-dataset-data-factory.png":::
 
-:::image type="content" source="../media/what-is-the-data-catalog/purview-access-synapse-analytics.png" alt-text="Screenshot of Azure Synapse Analytics, showing a Microsoft Purview data catalog search bar at the top." lightbox="../media/what-is-the-data-catalog/purview-access-synapse-analytics.png":::
+:::image type="content" source="../media/what-is-the-data-catalog/purview-access-synapse-analytics.png" alt-text="Screenshot of Azure Synapse Analytics, showing a Microsoft Purview Data Catalog search bar at the top." lightbox="../media/what-is-the-data-catalog/purview-access-synapse-analytics.png":::
 
 ## Next
 
