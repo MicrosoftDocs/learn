@@ -61,21 +61,21 @@ We'll start by creating a new storage account to host a static site. When we're 
 
 1. To upload the website files, execute the following commands:
 
-```azurecli
-git clone https://github.com/MicrosoftDocs/mslearn-create-cdn-static-resources-blob-storage source
-```
+    ```azurecli
+    git clone https://github.com/MicrosoftDocs/mslearn-create-cdn-static-resources-blob-storage source
+    ```
 
 1. Navigate to the `source/website-files` folder
 
-```azurecli
-cd source/website-files
-```
+    ```azurecli
+    cd source/website-files
+    ```
 
 1. Then upload those files to the $web blob storage container.
 
-```azurecli
-az storage blob upload-batch -s . -d \$web --account-name $STORAGE_ACCOUNT_NAME
-```
+    ```azurecli
+    az storage blob upload-batch -s . -d \$web --account-name $STORAGE_ACCOUNT_NAME
+    ```
 
 ### Check for Website Publication
 
