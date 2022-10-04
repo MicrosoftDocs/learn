@@ -12,7 +12,9 @@ In this section, we'll cover more of these aspects in detail. We'll talk about h
 
 ### Scanning
 
-Assets are ingested into the data catalog as part of the scanning process. The data map scans your resources, and adds the metadata about these sources where they can be browsed through using the data catalog. Only the metadata is added--data isn't moved or copied from your sources. This metadata includes information like column name, data type, and any classifications or security labels that can be applied.
+Assets are ingested into the data catalog as part of the scanning process. The data map scans your resources, and adds the metadata about these sources where they can be browsed using the data catalog. Only the metadata is added--data isn't moved or copied from your sources. This metadata includes information like column name, data type, and any classifications or security labels that can be applied.
+
+:::image type="content" source="../media/manage-assets/data-catalog-diagram.png" alt-text="Diagram showing assets housed under the data map and the data catalog searching the data map." border="false":::
 
 Metadata can also be gathered from multiple sources about a single data asset. For example:
 A file is stored in an Azure blob storage account and the file is consumed and transformed using Azure Data Factory. If both the Azure Storage account and Azure Data Factory are connected to Microsoft Purview, both will provide metadata about this file to give you a complete picture.
@@ -21,7 +23,7 @@ A file is stored in an Azure blob storage account and the file is consumed and t
 
 Sometimes, different sources connected to Microsoft Purview update the same data asset with similar, but slightly different qualified names. For example:
 
-You scan in an Azure Blob with the qualified name `https://myaccount.file.core.windows.net/myshare/folderA/folderB/my-file.parquet`. 
+You scan in an Azure Blob with the qualified name `https://myaccount.file.core.windows.net/myshare/folderA/folderB/my-file.parquet`.
 This blob is also consumed by an Azure Data Factory pipeline that will then add lineage information to the asset. The ADF pipeline may be configured to read the file as `https://myAccount.file.core.windows.net//myshare/folderA/folderB/my-file.parquet`.
 
 The names are different, but ultimately the piece of data is the same, so Microsoft Purview uses a normalization process to ensure all metadata from both Azure Storage and Azure Data Factory is included under a single data asset.
@@ -30,9 +32,9 @@ The names are different, but ultimately the piece of data is the same, so Micros
 
 Once an asset is ingested to the data catalog, it isn't static: they can be updated and enhanced to provide information that can be used to identify useful data sources. Things like adding a description, or updating glossary terms.
 
-Both column-level and asset-level updates such as adding a description, glossary term or classification don't impact scan updates. Scans will update new columns and classifications regardless if these changes are made.
+Both column-level and asset-level updates such as adding a description, glossary term or classification don't affect scan updates. Scans will update new columns and classifications regardless if these changes are made.
 
-Even so, Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column and later it's deleted from the source table. A scan will remove the column metadata from the asset in Microsoft Purview.
+Even so, Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column and later it's deleted from the source table, a scan will remove the column metadata from the asset in Microsoft Purview.
 
 You can also move an asset from one collection to a subcollection of the collection where the source is house. For example, if you have an ADLS Gen 2 account, but a research team only needs access to a subset of the files, you can create a subcollection for that team, and move the files they need into the subcollection.
 
