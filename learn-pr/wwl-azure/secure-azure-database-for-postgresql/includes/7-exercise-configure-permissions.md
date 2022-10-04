@@ -1,4 +1,4 @@
-In these lab exercises, you will assign RBAC roles to control access to Azure Database for PostgreSQL resources and PostgreSQL GRANTS to control access to database operations.
+In this lab exercises, you'll assign RBAC roles to control access to Azure Database for PostgreSQL resources and PostgreSQL GRANTS to control access to database operations.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete this exercise. If you do not have an Azure subscription, create an [Azure free trial](https://azure.microsoft.com/free).
@@ -11,7 +11,7 @@ To complete these exercises, you must have:
 - Created the **zoodb** database (see Module 2, Unit 4).
 
 > [!TIP]
-> If you stopped you Azure Database for PostgreSQL server after completing the last lab, restart it now.
+> If you stopped your Azure Database for PostgreSQL server after completing the last lab, restart it now.
 
 ## Create a new user account in Azure Active Directory
 
@@ -37,15 +37,15 @@ To complete these exercises, you must have:
 
 ## Test the Reader role
 
-1. In the top-right of the Azure Portal, select your user account and then select **Sign out**.
-1. Log in as the new user, with the user principal name that you noted and the password **Pa$$w0rd**. Replace the default password if you are prompted to and make a note of the new one.
+1. In the top-right of the Azure portal, select your user account and then select **Sign out**.
+1. Sign in as the new user, with the user principal name that you noted and the password **Pa$$w0rd**. Replace the default password if you're prompted to and make a note of the new one.
 1. In the portal home page, select **All resources** and then select your Azure Database for PostgreSQL resource.
 1. Select **Stop**. An error is displayed, because the Reader role enables you to see the resource but not change it.
 
 ## Assign the Contributor role
 
-1. In the top-right of the Azure Portal, select Holly's user account and then select **Sign out**.
-1. Log in using your original Owner account.
+1. In the top-right of the Azure portal, select Holly's user account and then select **Sign out**.
+1. Sign in using your original Owner account.
 1. Navigate to your Azure Database for PostgreSQL resource, and then select **Access Control (IAM)**.
 1. Select **+ Add** and then select **Add role assignment**.
 1. Select the **Contributor** role, and then select **Next**.
@@ -55,13 +55,13 @@ To complete these exercises, you must have:
 
 ## Test the Contributor role
 
-1. In the top-right of the Azure Portal, select your user account and then select **Sign out**.
-1. Log in as the Holly Rees, with the user principal name and password that you noted.
+1. In the top-right of the Azure portal, select your user account and then select **Sign out**.
+1. Sign in as the Holly Rees, with the user principal name and password that you noted.
 1. In the portal home page, select **All resources** and then select your Azure Database for MySQL resource.
 1. Select **Stop** and then select **Yes**. This time, the server stops without errors because Holly has the necessary role assigned.
 1. Select **Start** to ensure that the MySQL resource is ready for the next steps.
-1. In the top-right of the Azure Portal, select Holly's user account and then select **Sign out**.
-1. Log in using your original Owner account.
+1. In the top-right of the Azure portal, select Holly's user account and then select **Sign out**.
+1. Sign in using your original Owner account.
 
 ## GRANT access to Azure Database for PostgreSQL
 
@@ -90,7 +90,7 @@ To complete these exercises, you must have:
 
 1. In Azure Data Studio, in the list of **CONNECTIONS** select the new connection button.
 1. In the **Connection type** list, select **PostgreSQL**.
-1. In the **Server name** textbox, type the fully qualified server name for you Azure Database for PostgreSQL resource. You can copy this from the Azure portal.
+1. In the **Server name** textbox, type the fully qualified server name for your Azure Database for PostgreSQL resource. You can copy it from the Azure portal.
 1. In the **Authentication type** list, select **Password**.
 1. In the **Username** textbox, type **dbuser** and in the **Password** textbox type **Pa$$w0rd**.
 1. Select the **Remember password** checkbox and then select **Connect**.
@@ -107,7 +107,7 @@ To complete these exercises, you must have:
 	SELECT * FROM animal;
 	```
 
-1. To test whether you have the DROP privilege, execute this code. If there is an error, examine the erro code:
+1. To test whether you have the DROP privilege, execute this code. If there's an error, examine the error code:
 
     ```SQL
 	DROP TABLE animal;
