@@ -166,7 +166,7 @@ The maintenance window setting on the Arc data controller is essential to allow 
 1. Open Azure Data Studio, Navigate to your Arc Data Controller.
 2. Right-click on your Arc data controller and select Manage. Click Upgrade Management
 
-    ![Screenshot of Azure Arc-enabled data controller Upgrade Management](../media/ADS-upgrade-management-16.png)
+    ![Screenshot of Azure Arc-enabled data controller Upgrade Management](../media/azure-data-studio-upgrade-management-16.png)
 
 3. Choose the version you would like to upgrade to and select Upgrade.
 
