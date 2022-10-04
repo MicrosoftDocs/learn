@@ -4,13 +4,13 @@
 
 There are four major steps to create and implement a data-driven workflow in the Azure Data Factory architecture:
 
-1. **Connect and collect**: First, ingest the data to collect all the data from different sources into a centralized location.
+1. **Connect and collect**. First, ingest the data to collect all the data from different sources into a centralized location.
 
-1. **Transform and enrich**: Next, transform the data by using a compute service like Azure Databricks and Azure HDInsight Hadoop.
+1. **Transform and enrich**. Next, transform the data by using a compute service like Azure Databricks and Azure HDInsight Hadoop.
 
-1. **Continuous integration and delivery (CI/CD) and publish**: Support CI/CD by using GitHub and Azure DevOps to deliver the ETL process incrementally before publishing the data to the analytics engine.
+1. **Provide continuous integration and delivery (CI/CD) and publish**. Support CI/CD by using GitHub and Azure DevOps to deliver the ETL process incrementally before publishing the data to the analytics engine.
 
-1. **Monitor**: Finally, use the Azure portal to monitor the pipeline for scheduled activities and for any failures.
+1. **Monitor**. Finally, use the Azure portal to monitor the pipeline for scheduled activities and for any failures.
 
 The following diagram shows how Azure Data Factory orchestrates the ingestion of data from different data sources. Data is ingested into a Storage blob and stored in Azure Synapse Analytics. Analysis and visualization components are also connected to Azure Data Factory. Azure Data Factory provides a common management interface for all of your data integration needs.
 
