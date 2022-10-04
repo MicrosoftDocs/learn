@@ -243,6 +243,11 @@ Your app is finished, so let's deploy it and see it work. We'll use the Maven Pl
                 </appSettings>
          </configuration>
        </plugin>
+       <plugin>  
+         <groupId>org.apache.maven.plugins</groupId>  
+         <artifactId>maven-war-plugin</artifactId>  
+         <version>3.3.2</version>  
+       </plugin> 
      </plugins>
      ```
 
