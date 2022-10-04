@@ -36,7 +36,7 @@ This command's results will return a JSON file outlining the configuration detai
     az arcdata dc list-upgrades --k8s-namespace $Env:MyNamespace --use-k8s
     ```
 
-![Image of az arcdata dc list-upgrades](../media/Arc-enabled-dataservices-module-1-arcdata-listupgrades.png)
+![Image of az arcdata dc list-upgrades](../media/arcdata-listupgrades.png)
 
 - If you have a new version available, you can upgrade with the following command:
 
