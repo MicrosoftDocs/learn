@@ -5,7 +5,7 @@ Once data sources have been registered and scanned in the Microsoft Purview Data
 
 Though metadata is stored in the data map, the Microsoft Purview Data Catalog is the tool that allows users to search and browse the information to find the data assets they're looking for. It also allows users to add more metadata to provide context for data in your business.
 
-:::image type="complex" source="../media/what-is-the-data-catalog/microsoft-purview-data-catalog.png" alt-text="Diagram showing the Microsoft Purview governance portal architecture.":::
+:::image type="complex" source="../media/what-is-the-data-catalog/microsoft-purview-data-catalog.png" alt-text="Diagram showing the Microsoft Purview governance portal architecture." border="false":::
    "In the Microsoft Purview governance portal architecture, Data Catalog and Data Estate Insights sit on top of the data map, and on top of those applications are data producers and consumers. The data catalog shows an image of a catalog, which is connected to an image of a magnifying glass in the data map. The magnifying glass is looking over data source and data assets in the data map."
 :::image-end:::
 
@@ -49,7 +49,7 @@ Search and browse will only return results from collections that users have acce
 
 Remember, in the Microsoft Purview Data Map data sources are registered to collections, and when a scan is performed data assets from those sources are added into the same collections.
 
-:::image type="content" source="../media/what-is-the-data-catalog/purview-data-map.png" alt-text="Graphic of the data map, showing collections below, and access control and registered sources under collections.":::
+:::image type="content" source="../media/what-is-the-data-catalog/purview-data-map.png" alt-text="Graphic of the data map, showing collections below, and access control and registered sources under collections." border="false":::
 
 Users are assigned permissions in Microsoft Purview by collection, so users will be able to freely use Microsoft Purview Data Catalog's search and browse functions, while keeping data secure and allowing teams to manage their own information.
 
