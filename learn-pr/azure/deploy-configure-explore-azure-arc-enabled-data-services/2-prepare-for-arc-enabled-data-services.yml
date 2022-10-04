@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-configure-explore-azure-arc-enabled-data-services.prepare-for-arc-enabled-data-services
-title: Prepare for Azure Arc-enabled Data Services
+title: Prepare for Azure Arc-enabled data services
 metadata:
   title: learning-content
   description: "Learn how to prepare your Kubernetes environment to deploy and configure Azure Arc-enabled data services."

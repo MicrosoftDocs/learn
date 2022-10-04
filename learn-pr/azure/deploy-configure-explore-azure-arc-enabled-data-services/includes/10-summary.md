@@ -17,4 +17,3 @@ In this module, you have:
 - [Storage Configuration](/azure/azure-arc/data/storage-configuration)
 - [Sizing Guides](/azure/azure-arc/data/sizing-guidance)
 - [Monitoring Certificates](/azure/azure-arc/data/monitor-certificates)
-- 

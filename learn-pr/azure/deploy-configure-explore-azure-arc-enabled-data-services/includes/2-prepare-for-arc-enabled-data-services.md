@@ -4,7 +4,7 @@ A variety of factors (such as design decisions, regulatory compliance, latency i
 
 Utilizing Azure Arc-enabled data services gives you the benefits of cloud computing in a hybrid environment allowing you to take advantage of Azure's built-in data services management capabilities. The benefits and reduced administrative efforts can be seen in this comparison table by deployment model.
 
-![Image of Management capabilities comparison by deployment model](../media/management-capabilities-by-deployment-model.png)
+![Table of management capabilities comparison by deployment model](../media/management-capabilities-by-deployment-model.png)
 
 The biggest differences between Arc-enabled SQL Managed Instance (MI) and Azure SQL Managed Instance (MI) are due to the fact that the data services environment is running on your hardware vs. in Azure. This means that:  
 
@@ -14,13 +14,13 @@ The biggest differences between Arc-enabled SQL Managed Instance (MI) and Azure 
 
 Connectivity modes are essential to understand and dictate the deployment process one must follow. The following table outlines the differences in the management capabilities available under each connectivity mode. We will look at the two connectivity modes in the next section.
 
-![Image of Management capabilities comparison by connectivity mode](../media/management-capabilities-by-connectivity-mode.png)
+![Table of management capabilities comparison by connectivity mode](../media/management-capabilities-by-connectivity-mode.png)
 
 ## Database engine feature comparison
 
 Database engine feature set support plays a big part in determining the suitability of Azure Arc-enabled data services for your requirements. The following table shows the feature set comparisons between SQL Server, Arc-enabled SQL MI, and Azure SQL MI across all deployment model offerings.
 
-![Image of Database Engine feature comparison by deployment model](../media/dbengine-featureset-comparison-by-deployment-model.png)
+![Table of database engine feature comparison by deployment model](../media/dbengine-featureset-comparison-by-deployment-model.png)
 
 ## Supported regions
 

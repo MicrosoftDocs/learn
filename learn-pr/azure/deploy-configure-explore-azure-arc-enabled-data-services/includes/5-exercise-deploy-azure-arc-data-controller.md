@@ -20,13 +20,13 @@ To deploy an Arc data controller we have to have the following completed:
 - Create a destination **Resource Group** in your Azure subscription.
 - Your Kubernetes cluster is sized appropriately for your workload.
 
-## Arc-enable your Kubernetes Cluster
+## Arc-enable your Kubernetes cluster
 
 To Arc-enable your kubernetes cluster, or to connect your Kubernetes cluster to Azure, execute the **[az connectedk8s](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#connect-an-existing-kubernetes-cluster)** command. Before running this command, ensure you have downloaded your kubeconfig file. This prerequisite step is only required when you deploy in directly connected mode.
 
 Confirming your Arc-enabled Kubernetes cluster is ready and available to deploy your Arc data controller, you can view the shadow object (object representation of the Arc-enabled Kubernetes cluster) in the portal:
 
-![Image of Arc-enabled Kubernetes cluster in portal](../media/confirm-arc-enabled-cluster-1.png)
+![Screenshot of Arc-enabled Kubernetes cluster in portal](../media/confirm-arc-enabled-cluster-1.png)
 
 In the image above, the resource **Kubernetes-cluster** of resource type **Kubernetes service** is our Kubernetes cluster (which could be on-premises, any public cloud, or in this instance, located in Azure). The second highlighted resource of type **Kubernetes -Azure Arc** is our shadow resource for our Arc-enabled cluster that we can manage in the Azure portal.
 
@@ -34,7 +34,7 @@ Enable [custom locations](/azure/azure-arc/kubernetes/custom-locations#enable-cu
 
 Lastly, confirm **[Azure Arc agents for Kubernetes](/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli#view-azure-arc-agents-for-kubernetes)** have been deployed.
 
-![Image of Create Azure Arc Agents for Kubernetes Deployed](../media/azure-arc-agents-deployed-16-confirmation.png)
+![Screenshot of Create Azure Arc Agents for Kubernetes Deployed](../media/azure-arc-agents-deployed-16-confirmation.png)
 
 ## Deploy the Arc data controller
 
@@ -54,14 +54,14 @@ For the deployment options below we are using an AKS deployed Kubernetes cluster
 
 ## Deploy in directly connected mode 
 
-To deploy your Arc data controller, we have several options available to us:
+To deploy your Arc data controller, you have several options:
 
-1. GUI deployment:
-    1. Azure portal
-    2. Azure Data Studio
-2. CLI deployment:
-    1. Azure portal Cloud Shell
-    2. Azure Data Studio terminal window
+- GUI deployment:
+  - Azure portal
+  - Azure Data Studio
+- CLI deployment:
+  - Azure portal Cloud Shell
+  - Azure Data Studio terminal window
 
 Choose which of the options you wish to walk through. All provide you with the same outcome.
 
@@ -71,17 +71,17 @@ Choose which of the options you wish to walk through. All provide you with the s
 2. Search for Azure Arc data controller.
 3. Select Create.
 
-    ![Image of Create Azure Arc data controller in portal](../media/azure-arc-data-controller-1.png)
+    ![Screenshot of create Azure Arc data controller in portal](../media/azure-arc-data-controller-1.png)
     
 4. Select Azure Arc-enabled Kubernetes cluster (Directly connected mode) | Click Next: Data controller details.
 
-    ![Image of Create Azure Arc data controller direct connectivity mode in portal](../media/azure-arc-data-controller-2.png)
+    ![Screenshot of Create Azure Arc data controller direct connectivity mode in portal](../media/azure-arc-data-controller-2.png)
     
 5. Choose the Resource Group you created and into which you deployed your Azure Arc-enabled Kubernetes cluster.
 6. Name your Arc data controller appropriately.
 7. Select Create new custom location.
 
-    ![Create new custom location](../media/azure-arc-data-controller-3-custom-location.png)
+    ![Screenshot of create new custom location](../media/azure-arc-data-controller-3-custom-location.png)
 
 8. For the Kubernetes configuration template, choose the appropriate storage class. We are using an AKS cluster for this exercise, so we specify azure-arc-aks-premium-storage.
 
@@ -89,28 +89,28 @@ Choose which of the options you wish to walk through. All provide you with the s
 
     > Microsoft provides templates for various environments, such as GKE and OpenShift. If you see an option that matches your environment, Microsoft provides a configuration template for you. Otherwise, you need to specify a custom template.
 
-    ![Specify a custom template in the portal.](../media/azure-arc-data-controller-13-k8-custom-template.png)
+    ![Screenshot of setting a custom template in the portal.](../media/azure-arc-data-controller-13-k8-custom-template.png)
 
 9. For the Service type, select Load balancer. 
 10. Set a user name and password for Metrics and Logs Dashboards (Kibana and Grafana) that you view locally.
 
-    ![Image of Azure Arc data controller details](../media/azure-arc-data-controller-4-details.png)
+    ![Screenshot of Azure Arc data controller details](../media/azure-arc-data-controller-4-details.png)
     
 11. Select Next: Additional Settings>  
     
     You may already have a Log Analytics workspace configured, or you can create a new workspace specifically for your Arc data controller. You will find the Log Analytics workspace ID and primary key (both values are required) under Settings | Agents management of your Log Analytics workspace. 
 
-    ![Image of Azure Log Analytics workspace details](../media/azure-arc-data-controller-8-la-primary-key.png)
+    ![Screenshot of Azure Log Analytics workspace details](../media/azure-arc-data-controller-8-la-primary-key.png)
     
-    ![Image of Azure Arc data controller additional settings](../media/azure-arc-data-controller-5-additional-settings.png)
+    ![Screenshot of Azure Arc data controller additional settings](../media/azure-arc-data-controller-5-additional-settings.png)
 
 12. Add Tags for your Arc data controller.
 
-![Image of Azure Arc data controller Tags](../media/azure-arc-data-controller-9-tags.png)   
+   ![Screenshot of Azure Arc data controller Tags](../media/azure-arc-data-controller-9-tags.png)
 
 13. On Review + Create and confirm all details are correct. Select Create.
 
-![Image of Azure Arc data controller review and create](../media/azure-arc-data-controller-6-review-create.png)
+   ![Screenshot of Azure Arc data controller review and create](../media/azure-arc-data-controller-6-review-create.png)
 
 14. You can monitor the creation of the Arc data controller with this command:
 
@@ -118,25 +118,25 @@ Choose which of the options you wish to walk through. All provide you with the s
     kubectl get datacontroller --namespace <namespace>
     ```
 
-    ![Image of Azure Arc data controller successful deployment CloudShell](../media/azure-arc-data-controller-14-confirmation.png)
+    ![Screenshot of Azure Arc data controller successful deployment CloudShell](../media/azure-arc-data-controller-14-confirmation.png)
     
 15. Congratulations! You have successfully deployed your Arc data controller in directly connected mode.
 
-    ![Image of Azure Arc data controller successful deployment](../media/azure-arc-data-controller-7-deployment-success.png)
+    ![Screenshot of Azure Arc data controller successful deployment](../media/azure-arc-data-controller-7-deployment-success.png)
 
 16. Validate the deployment against the Kubernetes cluster. Execute kubectl get ns in the Cloud Shell
 
-    ![Image of Azure Arc data controller deployment validation](../media/azure-arc-data-controller-10-validate.png)
+    ![Screenshot of Azure Arc data controller deployment validation](../media/azure-arc-data-controller-10-validate.png)
     
 
 17. Confirm all packages deployed to the Kubernetes cluster as part of the deployment. Execute `Kubectl get crd` in the Cloud Shell.
 
-    ![Image of Azure Arc data controller deployment packages 1](../media/azure-arc-data-controller-11-packages.png)
+    ![Screenshot of Azure Arc data controller deployment packages 1](../media/azure-arc-data-controller-11-packages.png)
     
 
 18. Review all the resources created under the Custom location type resource. Execute `Kubectl get pods --namespace <namespace>` in the Cloud Shell.
 
-    ![Image of Azure Arc data controller deployment packages 2](../media/azure-arc-data-controller-12-packages-deployed.png)
+    ![Screenshot of Azure Arc data controller deployment packages 2](../media/azure-arc-data-controller-12-packages-deployed.png)
     
 
 ## Option 2: Azure Data Studio GUI deployment
@@ -197,29 +197,29 @@ Create your custom location for your Azure Arc data controller that you will be 
     az customlocation list -o table
     ```
 
-![Image of Create Azure Arc data controller custom location](../media/azure-arc-custom-location-15-confirmation.png)
+![Screenshot of Create Azure Arc data controller custom location](../media/azure-arc-custom-location-15-confirmation.png)
 
 6. Confirm you have Azure Data Studio downloaded and installed.
 7. Open ADS and navigate to the Extensions.
 
-![Image of Azure Data Studio Extensions](../media/azure-data-studio-extensions-1.png)
+   ![Screenshot of Azure Data Studio Extensions](../media/azure-data-studio-extensions-1.png)
 
 8. Search for AZURE CLI. Install the Azure CLI Extension.
 
-![Image of Azure Data Studio Azure CLI Extension](../media/azure-data-studio-extensions-cli-2.png)
+   ![Screenshot of Azure Data Studio Azure CLI Extension](../media/azure-data-studio-extensions-cli-2.png)
 
 9. Search for Azure Arc. Install the Azure Arc Extension.
 
-![Image of Azure Data Studio Azure Arc Extension](../media/azure-data-studio-extensions-3.png)
+   ![Screenshot of Azure Data Studio Azure Arc Extension](../media/azure-data-studio-extensions-3.png)
 
 10. After installing both extensions, close and restart ADS.
 11. Once ADS has restarted, navigate to the Linked Accounts section and select Add an account.
 
-![Image of Azure Data Studio Azure linked accounts](../media/azure-data-studio-linked-accounts-4.png)
+   ![Screenshot of Azure Data Studio Azure linked accounts](../media/azure-data-studio-linked-accounts-4.png)
 
 12. Sign in to your Azure subscription. You have successfully added a Linked Account to your Azure subscription. Select Close.
 
-![Image of Azure Data Studio Azure linked accounts success](../media/azure-data-studio-linked-accounts-added-5.png)
+   ![Screenshot of Azure Data Studio Azure linked accounts success](../media/azure-data-studio-linked-accounts-added-5.png)
 
 13. Open the terminal window and download your Arc-enabled Kubernetes Cluster config file to your workstation. You can use the command:
 
@@ -229,31 +229,30 @@ Create your custom location for your Azure Arc data controller that you will be 
         --file <download location>
     ```
 
-![Image of Azure Data Studio Azure kube.config download](../media/azure-data-studio-kube-config-download-15.png)
+   ![Screenshot of Azure Data Studio Azure kube.config download](../media/azure-data-studio-kube-config-download-15.png)
 
 14. Expand the ADS Connections tab, and expand the Azure Arc controllers dropdown.
         
-![Image of Azure Data Studio Azure Arc Connectors](../media/azure-data-studio-arc-connectors-6.png)
+   ![Screenshot of Azure Data Studio Azure Arc Connectors](../media/azure-data-studio-arc-connectors-6.png)
 
 15. Select + Create New Azure Arc Controller, ensure Azure Arc data controller is selected, and select Select.
-        
-![Image of Azure Data Studio Azure Arc Controller](../media/azure-data-studio-arc-data-controller-7.png)
+
+   ![Screenshot of Azure Data Studio Azure Arc Controller](../media/azure-data-studio-arc-data-controller-7.png)
 
 16. Confirm the deployment prerequisites are in-place. Click Next.
-        
-![Image of Azure Data Studio Azure Arc Controller pre-requisits](../media/azure-data-studio-arc-data-controller-pre-reqs-8.png)
+   ![Screenshot of Azure Data Studio Azure Arc Controller pre-requisits](../media/azure-data-studio-arc-data-controller-pre-reqs-8.png)
 
 17. With your downloaded Arc-enabled Kubernetes Cluster config file in the default location, confirm your Arc-enabled Kubernetes Cluster is selected. Ensure the chosen connectivity mode is Direct. Select Next.
     
-![Image of Azure Data Studio Azure Arc Data Controller Kubernertes Cluster details](../media/azure-data-studio-arc-data-controller-kubernetes-cluster-9.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Kubernetes Cluster details](../media/azure-data-studio-arc-data-controller-kubernetes-cluster-9.png)
 
 18. For the Kubernetes configuration template, choose the appropriate storage class. We are using an AKS cluster for this exercise, so we specify azure-arc-aks-premium-storage. Select Next.
     
-![Image of Azure Data Studio Azure Arc Data Controller Kubernetes Config Profile](../media/azure-data-studio-arc-data-controller-kubernetes-config-profile-10.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Kubernetes Config Profile](../media/azure-data-studio-arc-data-controller-kubernetes-config-profile-10.png)
 
 19. Step 11 above connected us to our subscription. Confirm the Azure account is correct and the subscription is connected to the correct subscription. Choose your Resource Group you previously configured in the prerequisites section at the top of this section. Choose the location you are deploying your Arc data controller to. Select Next.
     
-![Image of Azure Data Studio Azure Arc Data Controller Configuration](../media/azure-data-studio-arc-data-azure-configuration-11.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Configuration](../media/azure-data-studio-arc-data-azure-configuration-11.png)
 
 20. To create the Arc data controller, we need to prep with the following information:
     - Data Controller Name: Your custom name
@@ -269,11 +268,11 @@ Create your custom location for your Azure Arc data controller that you will be 
     - Log Analytics primary key: available from your Log Analytics workspace
     - Metrics and Logs Dashboard Credentials (Kibana and Grafana)
 
-![Azure data studio step 5 - data controller configuration](../media/azure-data-studio-arc-data-controller-configuration-13.png)
+   ![Screenshot of Azure Data Studio step 5 - data controller configuration](../media/azure-data-studio-arc-data-controller-configuration-13.png)
 
 21. Review the configuration details, and you are ready to deploy. Select Deploy.
     
-![Azure Data Studio Azure Arc Data Controller review](../media/azure-data-studio-arc-data-controller-review-14.png)
+   ![Azure Data Studio Azure Arc Data Controller review](../media/azure-data-studio-arc-data-controller-review-14.png)
 
 This opens up a notebook called *deploy.arc.data.controller*, which will automatically start executing each of the created cells. A prompt will request you to log in to your Azure subscription to allow the deployment to start. Once the deployment has completed, select Connect Controller in the connections tab. Enter the namespace for the data controller you just created and select connect.
 
@@ -622,7 +621,7 @@ Ensure that you have navigated to your `.kube` directory in the ADS terminal bef
     ```
 
 16. You will be prompted for your Log Analytics Workspace ID and associated primary key. You can retrieve these from inside the portal, navigating to your Log Analytics workspace. The workspace ID and primary key are available in the Settings | Agents management section.
-17. Monitor the deployment of you Arc data controller. Use the command: 
+17. Monitor the deployment of your Arc data controller. Use the command:
 
     ```PowerShell
     kubectl get datacontrollers --namespace $Env:MyNamespace
@@ -668,32 +667,32 @@ Ensure that you have navigated to your .kube directory in the ADS terminal befor
     kubectl config current-context
     ```
 
-![Image of results of kubectl cluster-info](../media/indirect-mode-kubernetes-cluster-info.png)
+![Screenshot of results of kubectl cluster-info](../media/indirect-mode-kubernetes-cluster-info.png)
 
-![Image of results kubectl current context](../media/indirect-mode-kubernetes-cluster-context.png)
+![Screenshot of results kubectl current context](../media/indirect-mode-kubernetes-cluster-context.png)
 
 
 1. Confirm you have Azure Data Studio downloaded and installed.
 2. Open ADS and navigate to the Extensions.
 
-![Image of Azure Data Studio Extensions](../media/azure-data-studio-extensions-1.png)
+   ![Screenshot of Azure Data Studio Extensions](../media/azure-data-studio-extensions-1.png)
 
 3. Search for "Azure CLI" and install the Azure CLI Extension.
 
-![Image of Azure Data Studio Azure CLI Extension](../media/azure-data-studio-extensions-cli-2.png)
+   ![Screenshot of Azure Data Studio Azure CLI Extension](../media/azure-data-studio-extensions-cli-2.png)
 
 4. Search for "Azure Arc" and install the Azure Arc Extension.
 
-![Image of Azure Data Studio Azure Arc Extension](../media/azure-data-studio-extensions-3.png)
+   ![Screenshot of Azure Data Studio Azure Arc Extension](../media/azure-data-studio-extensions-3.png)
 
 5. After you install both extensions, close and restart ADS.
 6. Once ADS has restarted, navigate to the Linked Accounts section and select Add an account.
 
-![Image of Azure Data Studio Azure linked accounts](../media/azure-data-studio-linked-accounts-4.png)
+   ![Screenshot of Azure Data Studio Azure linked accounts](../media/azure-data-studio-linked-accounts-4.png)
 
 7. Sign in to your Azure subscription. You have successfully added a Linked Account to your Azure subscription. Click Close.
 
-![Image of Azure Data Studio Azure linked accounts success](../media/azure-data-studio-linked-accounts-added-5.png)
+   ![Screenshot of Azure Data Studio Azure linked accounts success](../media/azure-data-studio-linked-accounts-added-5.png)
 
 8. Open the terminal window and download your Arc-enabled Kubernetes Cluster config file to your workstation. You can use the command:
 
@@ -703,31 +702,31 @@ Ensure that you have navigated to your .kube directory in the ADS terminal befor
         --file <download location>
     ```
 
-![Image of Azure Data Studio Azure kube.config download](../media/azure-data-studio-kube-config-download-15.png)
+![Screenshot of Azure Data Studio Azure kube.config download](../media/azure-data-studio-kube-config-download-15.png)
 
 9. Expand the ADS Connections tab, and expand the Azure Arc Controllers dropdown.
         
-![Image of Azure Data Studio Azure Arc Connectors](../media/azure-data-studio-arc-connectors-6.png)
+   ![Screenshot of Azure Data Studio Azure Arc Connectors](../media/azure-data-studio-arc-connectors-6.png)
 
 10. Select + Create New Azure Arc Controller, ensuring Azure Arc data controller is selected. Click Select.
         
-![Image of Azure Data Studio Azure Arc Controller](../media/azure-data-studio-arc-data-controller-7.png)
+   ![Screenshot of Azure Data Studio Azure Arc Controller](../media/azure-data-studio-arc-data-controller-7.png)
 
 11. Confirm the deployment prerequisites are in-place. Select Next.
         
-![Image of Azure Data Studio Azure Arc Controller pre-requisites](../media/azure-data-studio-arc-data-controller-pre-reqs-8.png)
+   ![Screenshot of Azure Data Studio Azure Arc Controller pre-requisites](../media/azure-data-studio-arc-data-controller-pre-reqs-8.png)
 
 12. With your downloaded Arc-enabled Kubernetes Cluster config file in the default location, confirm your Arc-enabled Kubernetes Cluster is selected. Ensure the chosen connectivity mode is Indirect. Select Next.
     
-![Image of Azure Data Studio Azure Arc Data Controller Kubernetes Cluster details](../media/azure-data-studio-arc-data-controller-kubernetes-cluster-Indirect-mode-1.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Kubernetes Cluster details](../media/azure-data-studio-arc-data-controller-kubernetes-cluster-Indirect-mode-1.png)
 
 13. For the Kubernetes configuration template, choose the appropriate storage class. We are using an AKS cluster for this exercise, so we specify azure-arc-aks-premium-storage. Select Next.
     
-![Image of Azure Data Studio Azure Arc Data Controller Kubernertes Config Profile](../media/azure-data-studio-arc-data-controller-kubernetes-config-profile-10.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Kubernertes Config Profile](../media/azure-data-studio-arc-data-controller-kubernetes-config-profile-10.png)
 
 14. Step 7 above connected us to our subscription. Confirm the Azure account is correct, and the subscription is connected to the right subscription. Choose the Resource Group you previously configured in the prerequisites section at the top of this section. Choose the location to which you are deploying your Arc data controller. Select Next.
     
-![Image of Azure Data Studio Azure Arc Data Controller Configuration](../media/azure-data-studio-arc-data-azure-configuration-11.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Configuration](../media/azure-data-studio-arc-data-azure-configuration-11.png)
 
 15. To create the Arc data controller, we need to prep the following information:
 
@@ -744,11 +743,11 @@ Ensure that you have navigated to your .kube directory in the ADS terminal befor
     - Log Analytics primary key: Only required for directly connected mode 
     - Metrics and Logs Dashboard Credentials (Kibana and Grafana)
 
-![Image of Azure Data Studio Azure Arc Data Controller Infrastructure Indirect mode](../media/azure-data-studio-arc-data-controller-configuration-indirect-connected-mode-2.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Infrastructure Indirect mode](../media/azure-data-studio-arc-data-controller-configuration-indirect-connected-mode-2.png)
 
 16. Review the configuration details, and you are ready to deploy. Select Deploy.
 
-![Image of Azure Data Studio - review configuration- indirect mode](../media/azure-data-studio-arc-data-controller-review-indirect-mode-3.png)
+   ![Screenshot of Azure Data Studio - review configuration- indirect mode](../media/azure-data-studio-arc-data-controller-review-indirect-mode-3.png)
 
 This opens up a notebook called *deploy.arc.data.controller*, which will automatically start executing each of the created cells. As this is an indirect mode deployment, you will not be requested to log into your Azure subscription. 
 
@@ -760,7 +759,7 @@ This opens up a notebook called *deploy.arc.data.controller*, which will automat
 
 This command will work through the following three (3) states during the deployment:
 
-![IPowerShell results - indirect deployment](../media/azure-data-studio-arc-data-controller-indirect-deployment-status-6.png)
+   ![Screenshot of PowerShell results - indirect deployment](../media/azure-data-studio-arc-data-controller-indirect-deployment-status-6.png)
 
 - The following command will show all the deployed services and the status of those services in the data controller namespace:
 
@@ -768,15 +767,15 @@ This command will work through the following three (3) states during the deploym
     kubectl get pods --namespace 'enter your namespace here'
     ```
 
-![Image of Azure Data Studio Azure Arc Data Controller Indirect Mode Status from kubectl get pods.](../media/azure-data-studio-arc-data-controller-indirect-deployment-pods-7.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Indirect Mode Status from kubectl get pods.](../media/azure-data-studio-arc-data-controller-indirect-deployment-pods-7.png)
 
 Once the deployment has completed, select Connect Controller in the connections tab. Enter the namespace for the data controller you just created and select connect.
 
-![Image of Azure Data Studio Azure Arc Data Controller Connect](../media/azure-data-studio-connect-data-controller-indirect-4.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Connect](../media/azure-data-studio-connect-data-controller-indirect-4.png)
 
 You can manage your Arc data controller by right-clicking on the data controller and selecting Manage.
 
-![Image of Azure Data Studio Azure Arc Data Controller Manage](../media/azure-data-studio-manage-data-controller-indirect-mode-5.png)
+   ![Screenshot of Azure Data Studio Azure Arc Data Controller Manage](../media/azure-data-studio-manage-data-controller-indirect-mode-5.png)
 
 ## Option 2: Azure Data Studio Terminal deployment
 
@@ -789,9 +788,9 @@ In this exercise option, you will be creating the data controller onto your Kube
     kubectl config current-context
     ```
 
-![Image of Kubernetes Cluster information](../media/indirect-mode-kubernetes-cluster-info-azure-data-studio-1.png)
+![Screenshot of Kubernetes Cluster information](../media/indirect-mode-kubernetes-cluster-info-azure-data-studio-1.png)
 
-![Image of Kubernetes Cluster Context](../media/indirect-mode-kubernetes-cluster-context-azure-data-studio-2.png)
+![Screenshot of Kubernetes Cluster Context](../media/indirect-mode-kubernetes-cluster-context-azure-data-studio-2.png)
 
 1. In the Azure portal, open the Cloud Shell.
 2. Set your parameters to be used during this deployment.
@@ -856,8 +855,8 @@ The deployment will go through three (3) states before it is finished:
 
 7. Select Connect Controller in the connections tab once the deployment has been successfully completed. Enter the namespace for the data controller you just created and select connect.
 
-![Image of Azure Data Studio Azure Arc Data Controller Connect](../media/azure-data-studio-connect-data-controller-indirect-4.png)
+![Screenshot of Azure Data Studio Azure Arc Data Controller Connect](../media/azure-data-studio-connect-data-controller-indirect-4.png)
 
 8. You can manage your Arc data controller by right-clicking on the data controller and selecting Manage.
 
-![Image of Azure Data Studio Azure Arc Data Controller Manage](../media/azure-data-studio-manage-data-controller-indirect-mode-5.png)
+![Screenshot of Azure Data Studio Azure Arc Data Controller Manage](../media/azure-data-studio-manage-data-controller-indirect-mode-5.png)

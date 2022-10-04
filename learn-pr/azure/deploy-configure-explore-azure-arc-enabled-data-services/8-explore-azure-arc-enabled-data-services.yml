@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.deploy-configure-explore-azure-arc-enabled-data-services.explore-azure-arc-enabled-data-services
-title: explore-azure-arc-enabled-data-services
+title: Explore Azure Arc-enabled data services
 metadata:
   title: explore-azure-arc-enabled-data-services
   description: "Learn about the data services that are enabled with Azure Arc."
