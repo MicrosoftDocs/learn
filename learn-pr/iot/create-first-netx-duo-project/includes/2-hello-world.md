@@ -2,11 +2,11 @@
 
 Finally, you get to work on a simple Hello World project that will provide you with hands-on experience with NetX Duo. The project will introduce you to some basic concepts including the fundamental structure of a NetX Duo project, the creation of packet pools, the use of address resolution protocol (ARP), internet control message protocol (ICMP), and ping requests.
 
-To get started, let’s look at the code in the Hello World project, and understand the purpose of each section. We will investigate the code based on the general template. Note that in this project, we will not have a section containing functions, but we will in subsequent modules.
+To get started, let’s look at the code in the Hello World project, and understand the purpose of each section. We'll investigate the code based on the general template. In this project, we won't have a section containing functions, but we'll in subsequent modules.
 
 ## Section 1 — Includes and definitions
 
-As you may recall from the NetX Duo general template, the first section comprises includes and definitions.
+As you may recall from the NetX Duo general template, the first section comprises the include directives and the definitions.
 
 Required C header files for ThreadX and NetX Duo containing system equates, data structures, and service prototypes are specified here.
 
@@ -15,7 +15,7 @@ Required C header files for ThreadX and NetX Duo containing system equates, data
 #include   "nx_api.h"
 ```
 
-Sample IP address and subnet mask that we will use in this project are defined here.
+Sample IP address and subnet mask that we'll use in this project are defined here.
 
 ```c
 /* Define sample IP address.  */
@@ -95,7 +95,7 @@ int main()
 }
 ```
 
-Note that any code following `tx_kernel_enter()` is unreachable.
+Any code following `tx_kernel_enter()` is unreachable.
 
 ## Section 3 — `tx_application_define`
 
@@ -109,7 +109,7 @@ void    tx_application_define(void *first_unused_memory)
 UINT    status;
 ```
 
-This is a macro to avoid a compiler warning concerning a parameter that is not used. It is not executed during runtime.
+This is a macro to avoid a compiler warning concerning a parameter that isn't used. It isn't executed during runtime.
 
 ```c
 NX_PARAMETER_NOT_USED(first_unused_memory);
@@ -166,4 +166,4 @@ NX_PARAMETER_NOT_USED(first_unused_memory);
 }
 ```
 
-We will not use the fourth component of the general template because we do not have any functions in the Hello World project.
+We won't use the fourth component of the general template because we don't have any functions in the Hello World project.

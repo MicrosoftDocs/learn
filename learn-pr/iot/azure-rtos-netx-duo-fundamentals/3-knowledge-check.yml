@@ -17,16 +17,16 @@ quiz:
       choices:
         - content: 'Using data packets is discouraged because it causes considerable overhead.'
           isCorrect: false
-          explanation: 'Incorrect, data may be quite large, so it is divided into fixed-size data packets.'
+          explanation: 'Incorrect, data may be quite large, so it's divided into fixed-size data packets.'
         - content: 'Data packets should only be used for sending images.'
           isCorrect: false
-          explanation: 'Incorrect, data may be quite large, so it is divided into fixed-size data packets.'
+          explanation: 'Incorrect, data may be quite large, so it's divided into fixed-size data packets.'
         - content: 'Data packets should only be used within small networks.'
           isCorrect: false
-          explanation: 'Incorrect, data may be quite large, so it is divided into fixed-size data packets.'
-        - content: 'Data may be quite large, so it is divided into fixed-size data packets.'
+          explanation: 'Incorrect, data may be quite large, so it's divided into fixed-size data packets.'
+        - content: 'Data may be quite large, so it's divided into fixed-size data packets.'
           isCorrect: true
-          explanation: 'Correct, data may be quite large, so it is divided into fixed-size data packets.'
+          explanation: 'Correct, data may be quite large, so it's divided into fixed-size data packets.'
     - content: 'Which of the following is a part of the general template for NetX Duo projects?'
       choices:
         - content: 'The `start_netx` function.'

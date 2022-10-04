@@ -30,7 +30,7 @@ quiz:
 
     - content: "Which statement about data packets is true?"
       choices:
-        - content: "Data packets are not necessary in NetX Duo."
+        - content: "Data packets aren't necessary in NetX Duo."
           isCorrect: false
           explanation: "Incorrect, all data packets must be the same size."
         - content: "Only one data packet is needed for each project."
@@ -60,15 +60,15 @@ quiz:
 
     - content: "What is the meaning of 'rtt' in the statistical output from your ping request?"
       choices:
-        - content: "It is the minimum time it takes to complete a ping request."
+        - content: "It's the minimum time it takes to complete a ping request."
           isCorrect: false
           explanation: "Incorrect, 'rtt' (round-trip time) is the total time between a data request and the completion of that request."
-        - content: "It is the maximum time it takes to complete a ping request."
+        - content: "It's the maximum time it takes to complete a ping request."
           isCorrect: false
           explanation: "Incorrect, 'rtt' (round-trip time) is the total time between a data request and the completion of that request."
-        - content: "It is the total time between a data request and the completion of that request."
+        - content: "It's the total time between a data request and the completion of that request."
           isCorrect: true
           explanation: "Correct, 'rtt' (round-trip time) is the total time between a data request and the completion of that request."
-        - content: "It is the mean deviation of time for a ping request."
+        - content: "It's the mean deviation of time for a ping request."
           isCorrect: false
           explanation: "Incorrect, 'rtt' (round-trip time) is the total time between a data request and the completion of that request."
