@@ -48,7 +48,7 @@ Use the following `az arcdata` CLI commands to export and import usage details, 
 - [az arcdata dc export](/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-export)
 - [az arcdata dc upload](/azure/azure-arc/data/reference/reference-az-arcdata-dc#az-arcdata-dc-upload)
 
-## Azure Arc-enabled SQL Managed Instance Maintenance
+## Azure Arc-enabled SQL Managed Instance maintenance
 
 Azure Arc-enabled SQL MI provides the ability to have an evergreen environment the same as is available with an Azure SQL MI. To achieve this, the maintenance windows need to be configured for the data controller, which defines the time periods for when upgrades occur.
 
@@ -64,7 +64,7 @@ When you configure a maintenance window for a data controller, the following opt
 
 To reduce the administrative overhead, all deployed Arc-enabled SQL MIs can be automatically upgraded when the Arc data controller is upgraded. To enable this behavior, you must set the `desired-version` property of the Arc-enabled SQL MI to auto.
 
-## Upgrade Images
+## Upgrade images
 
 The frequency, availability, and automation of upgraded images that get applied to your Arc-enabled data services environments will depend on the connectivity mode chosen for your Arc data controller.
 
@@ -72,15 +72,15 @@ For directly connected Arc data controllers, upgrade images are available from t
 
 For indirectly connected Arc data controllers, where there is no direct access to the MCR the upgraded images from the MCR need to be exported and imported into your private container registry. Once you import the images, you can apply them per your configured maintenance window and the desired-version property for each of your deployed Arc-enabled SQL MIs.
 
-## Upgrade Downtime
+## Upgrade downtime
 
 The downtime experienced during upgrades will be dependent on the tier level of the Arc-enabled SQL MI. 
 
-## General Purpose Upgrade Process
+## General purpose upgrade process
 
 During an Arc-enabled SQL MI General Purpose upgrade, the containers in the pod will be upgraded and reprovisioned. As only a single pod is provisioned and utilized in this tier, you will experience a short amount of downtime while the new pod is created.
 
-## Business Critical Upgrade Process
+## Business critical upgrade process
 
 During an Arc-enabled SQL MI Business Critical upgrade, you will experience minimal downtime. The upgrade process takes care of applying the upgrades and patches as follows:
 - Applying upgrades/patches on the secondary replica 1

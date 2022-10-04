@@ -19,7 +19,7 @@ Arc-enabled SQL MI is available in two (2) vCore Service tiers:
 - **General Purpose** is a budget-friendly tier designed for most workloads with common performance and availability features.
 - **Business Critical** is designed for performance-sensitive workloads with higher availability features.
 
-![Image of Azure Arc-enabled service tier comparison](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-service-tier-comparison-1.png)
+![Image of Azure Arc-enabled service tier comparison](../media/arc-enabled-sql-managed-instance-service-tier-comparison-1.png)
 
 <!-- As Azure Arc-enabled SQL Managed Instance runs on your hardware inside your chosen data center, no guaranteed SLAs are provided for storage or compute. You get the flexibility to bring your own performant hardware to meet your SLAs. -->
 

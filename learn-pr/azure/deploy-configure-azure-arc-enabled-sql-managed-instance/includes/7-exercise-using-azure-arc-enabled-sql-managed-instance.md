@@ -10,12 +10,12 @@ This option is available with environments configured in either the directly con
 2. Right-click on your Arc-enabled SQL MI and select Manage.
 3. Select Compute + Storage.
 
-    ![Image of Azure Arc-enabled SQL MI increase cpu](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-1.png)
+    ![Image of Azure Arc-enabled SQL MI increase cpu](../media/arc-enabled-sql-managed-instance-Core-increase-1.png)
 
 4. Increase your CPU request value from 2 to 4
 5. Click Save.
 
-    ![Image of Azure Arc-enabled SQL MI increase cpu - zoom in](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-2.png)
+    ![Image of Azure Arc-enabled SQL MI increase cpu - zoom in](../media/arc-enabled-sql-managed-instance-Core-increase-2.png)
 
 ## Option 2 - Azure Data Studio CLI deployment
 
@@ -25,7 +25,7 @@ This option is available with environments configured in either the directly con
 
     ```PowerShell
     $Env:MyNamespace= 'enter your arc-enabled namespace here'
-    $Env:SQLMIName= 'enter your arc-enabled sql managed instance name here'
+    $Env:sql-managed-instanceName= 'enter your arc-enabled sql managed instance name here'
     $Env:CoresRequest = '4' ## Adjust your core requirements
     $Env:CoresLimit = '4' ## Maximum number of cores
     $Env:MemoryRequest = '4Gi' ## Adjust your volume size appropriately in Gigabytes
@@ -39,20 +39,20 @@ This option is available with environments configured in either the directly con
        --cores-request $Env:CoresRequest `
        --memory-limit  $Env:MemoryLimit `
        --memory-request $Env:MemoryRequest `
-       -n $Env:SQLMIName `
+       -n $Env:sql-managed-instanceName `
        --k8s-namespace $Env:MyNamespace `
        --use-k8s
     ```
 
-    ![PowerShell scale up resources](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-3.png)
+    ![PowerShell scale up resources](../media/arc-enabled-sql-managed-instance-Core-increase-3.png)
 
 3. Execute the following command and search for the results as shown below:
 
     ```PowerShell
-    az sql mi-arc show -n $Env:SQLMIName --k8s-namespace $Env:MyNamespace --use-k8s
+    az sql mi-arc show -n $Env:sql-managed-instanceName --k8s-namespace $Env:MyNamespace --use-k8s
     ```
 
-    ![Image of Azure Arc-enabled SQL MI increase cpu - yaml focus](../media/Arc-enabled-dataservices-module-2-Arc-enabled-SQLMI-Core-increase-4.png)
+    ![Image of Azure Arc-enabled SQL MI increase cpu - yaml focus](../media/arc-enabled-sql-managed-instance-Core-increase-4.png)
 
 ## Exercise 2: Enable SQL Agent
 
@@ -63,7 +63,7 @@ To enable SQL Agent on your Arc-enabled SQL MI, follow these steps:
 1. In either the Azure portal Cloud Shell or Azure Data Studio terminal, prepare your CLI parameters:
 
     ```PowerShell
-    $Env:SQLMIName = 'enter your arc-enabled sql managed instance name here'
+    $Env:sql-managed-instanceName = 'enter your arc-enabled sql managed instance name here'
     $Env:MyNameSpace = 'enter your namespace where your SQL MI is deployed here'
     $Env:MyResourceGroup = 'enter your resource group name here'
     ```
@@ -71,7 +71,7 @@ To enable SQL Agent on your Arc-enabled SQL MI, follow these steps:
 2. Execute the following command to view the current configuration: 
 
     ```PowerShell
-    az sql mi-arc show --name $Env:SQLMIName --resource-group $Env:MyResourceGroup
+    az sql mi-arc show --name $Env:sql-managed-instanceName --resource-group $Env:MyResourceGroup
     ```
 
 3. Search for `sqlagent` in the output. It should include results like this example:
@@ -85,7 +85,7 @@ To enable SQL Agent on your Arc-enabled SQL MI, follow these steps:
 4. Execute the following command:
     
     ```PowerShell
-    az sql mi-arc update --name $Env:SQLMIName `
+    az sql mi-arc update --name $Env:sql-managed-instanceName `
         --k8s-namespace $Env:MyNamespace `
         --use-k8s `
         --agent-enabled true
@@ -94,7 +94,7 @@ To enable SQL Agent on your Arc-enabled SQL MI, follow these steps:
 5. Execute the following command to view the new configuration: 
 
     ```PowerShell
-    az sql mi-arc show --name $Env:SQLMIName --resource-group $Env:MyResourceGroup
+    az sql mi-arc show --name $Env:sql-managed-instanceName --resource-group $Env:MyResourceGroup
     ```
 
 6. Search for `sqlagent` in the output. It should show the following:
@@ -136,12 +136,12 @@ The maintenance window setting on the Arc data controller is essential to allow 
     kubectl describe datacontroller -n <your resource group>
     ```
 
-    ![Image of Azure Arc-enabled data controller maintenance window](../media/Arc-enabled-dataservices-module-2-Arc-enabled-data-controller-maint-window-15.png)
+    ![Image of Azure Arc-enabled data controller maintenance window](../media/arc-enabled-data-controller-maint-window-15.png)
 
 4. Execute the following command to set the desired-version allowing for automatic patching:
     
     ```PowerShell
-    az sql mi-arc upgrade --name $Env:SQLMIName `
+    az sql mi-arc upgrade --name $Env:sql-managed-instanceName `
         --desired-version auto  `
         --k8s-namespace $Env:MyNamespace `
         --use-k8s
@@ -150,7 +150,7 @@ The maintenance window setting on the Arc data controller is essential to allow 
 5. Execute the following command to view the new configuration: 
 
     ```PowerShell
-    az sql mi-arc show --name $Env:SQLMIName --resource-group $Env:MyResourceGroup
+    az sql mi-arc show --name $Env:sql-managed-instanceName --resource-group $Env:MyResourceGroup
     ```
 
 6. Search for desired-version in the output. It should return results like this example:
@@ -166,11 +166,11 @@ The maintenance window setting on the Arc data controller is essential to allow 
 1. Open Azure Data Studio, Navigate to your Arc Data Controller.
 2. Right-click on your Arc data controller and select Manage. Click Upgrade Management
 
-    ![Image of Azure Arc-enabled data controller Upgrade Management](../media/Arc-enabled-dataservices-module-2-Arc-enabled-data-controller-ADS-upgrade-management-16.png)
+    ![Image of Azure Arc-enabled data controller Upgrade Management](../media/arc-enabled-data-controller-ADS-upgrade-management-16.png)
 
 3. Choose the version you would like to upgrade to and select Upgrade.
 
-    ![Image of Azure Arc-enabled data controller Upgrade](../media/Arc-enabled-dataservices-module-2-Arc-enabled-data-controller-ADS-upgrade-17.png)
+    ![Image of Azure Arc-enabled data controller Upgrade](../media/arc-enabled-data-controller-azure-data-studio-upgrade-17.png)
 
 4. In the terminal window, execute the following to track the status of the upgrade:
 
@@ -178,11 +178,11 @@ The maintenance window setting on the Arc data controller is essential to allow 
     kubectl get datacontrollers -A
     ```
 
-    ![Image of Azure Arc-enabled data controller Upgrade monitoring](../media/Arc-enabled-dataservices-module-2-Arc-enabled-data-controller-ADS-upgrade-monitoring-18.png)
+    ![Image of Azure Arc-enabled data controller Upgrade monitoring](../media/arc-enabled-data-controller-azure-data-studio-upgrade-monitoring-18.png)
 
 5. The upgrade process upgrades the data controller first and then upgrades the monitoring stack. The status of the upgrade changes as follows:
 
-    ![Image of Azure Arc-enabled data controller Upgraded](../media/Arc-enabled-dataservices-module-2-Arc-enabled-data-controller-ADS-upgraded-19.png)   
+    ![Image of Azure Arc-enabled data controller Upgraded](../media/arc-enabled-data-controller-azure-data-studio-upgraded-19.png)   
 
 6. you've successfully upgraded the data controller to the latest version.
 
@@ -220,7 +220,7 @@ All statements have been executed in the Azure Data Studio Terminal window for t
     $Env:MyScope = "/subscriptions/$Env:MySuscriptionID/resourceGroups/$Env:MyResourceGroup"
     ```
 
-![Image of Service Principal creation parameters](../media/Arc-enabled-dataservices-module-2-Service-principal-parameters-1.png)  
+   ![Image of Service Principal creation parameters](../media/Arc-enabled-dataservices-service-principal-parameters-1.png)  
 
 3. Execute the following command:
 
@@ -230,7 +230,7 @@ All statements have been executed in the Azure Data Studio Terminal window for t
         --scopes $Env:MyScope
     ```
 
-![Image of Service Principal creation](../media/Arc-enabled-dataservices-module-2-Service-principal-creation-2.png)  
+    ![Image of Service Principal creation](../media/Arc-enabled-dataservices-service-principal-creation-2.png)  
 
 4. Take the appId from the create command results in the previous step. Execute the following commands:
 
@@ -241,7 +241,7 @@ All statements have been executed in the Azure Data Studio Terminal window for t
         --scope $Env:MyScope
     ```
 
-    ![Image of Service Principal role assignment](../media/Arc-enabled-dataservices-module-2-Service-principal-role-assignment-3.png)  
+    ![Image of Service Principal role assignment](../media/Arc-enabled-dataservices-service-principal-role-assignment-3.png)  
 
 5. Verify the Service Principal role with the following command:
 
