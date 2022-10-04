@@ -11,22 +11,22 @@ In this exercise, we will be using the AdventureWorks2019 sample database to fam
 6. Expand your Arc data controller.
 7. Right Click on your Arc-enabled SQL MI and select Manage.
 
-    ![Image of Azure Arc-enabled SQL MI - Manage](../media/arc-enabled-sql-managed-instance-Manage-1.png)
+    ![Screenshot of Azure Arc-enabled SQL MI - Manage](../media/Manage-1.png)
 
 8. The external Endpoint is what you need to connect to your Arc-enabled SQL MI. Copy this and open either SQL Server Manage Studio or Azure Data Studio. The primary external endpoint is available from ADS as can be seen above or via the [`az sql mi-arc list`](/azure/azure-arc/data/connect-managed-instance#view-azure-arc-enabled-sql-managed-instances) command.
 9. Connect to your external endpoint and name accordingly.
 10. Open a new Query window to perform your database restore.
 
-    ![Image of Azure Arc-enabled SQL MI - ADS query window](../media/arc-enabled-sql-managed-instance-azure-data-studio-querywindow-2.png)
+    ![Screenshot of Azure Arc-enabled SQL MI - ADS query window](../media/azure-data-studio-querywindow-2.png)
 
 11. Execute the [Restore Filelistonly](/sql/t-sql/statements/restore-statements-filelistonly-transact-sql) command to confirm you have access to the AdventureWorks2019 backup file. In this example, we are restoring from locally attached storage.
 12. Execute the [Restore Database](/sql/t-sql/statements/restore-statements-transact-sql) Command to restore to your Arc-enabled SQL MI.
 
-    ![Image of Azure Arc-enabled SQL MI - DB Restore](../media/arc-enabled-sql-managed-instance-database-restore-3.png)
+    ![Screenshot of Azure Arc-enabled SQL MI - DB Restore](../media/database-restore-3.png)
 
 13. Refresh your database list in the connections tab for your Arc-enabled SQL MI connection. 
 
-    ![Image of Azure Arc-enabled SQL MI - DB Restored](../media/arc-enabled-sql-managed-instance-database-restored-4.png)
+    ![Screenshot of Azure Arc-enabled SQL MI - DB Restored](../media/database-restored-4.png)
 
 ## Explore AdventureWorks2019  
 
@@ -43,7 +43,7 @@ Whether you deploy your Arc-enabled SQL MI to Azure, on-premises, or any public 
     Order By S.Name, T.Name;
     ```
 
-    ![Image of Azure Arc-enabled SQL MI - schema-table query and results](../media/arc-enabled-sql-managed-instance-database-Table-listing-5.png)
+    ![Screenshot of Azure Arc-enabled SQL MI - schema-table query and results](../media/database-Table-listing-5.png)
 
 3. Execute the following statement to retrieve all order details in the AdventureWorks2019 database:
 
@@ -56,4 +56,4 @@ Whether you deploy your Arc-enabled SQL MI to Azure, on-premises, or any public 
     Order By SOH.OrderDate Desc;
     ```
 
-    ![Image of Azure Arc-enabled SQL MI - sales query results](../media/arc-enabled-sql-managed-instance-database-Order-details-6.png)
+    ![Screenshot of Azure Arc-enabled SQL MI - sales query results](../media/database-Order-details-6.png)
