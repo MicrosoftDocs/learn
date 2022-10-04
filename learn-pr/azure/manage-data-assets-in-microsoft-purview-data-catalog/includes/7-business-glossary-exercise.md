@@ -1,6 +1,8 @@
-In this exercise we're going to, create a term in the business glossary, update our term, create a term template, and add a term to an asset.
+In this exercise we're going to create a term in the business glossary, update our term, add a term to an asset, and create a term template.
 
 ## Create terms
+
+You can create terms one at a time or in bulk! In this example, we'll do both.
 
 ### Single
 
@@ -12,11 +14,11 @@ In this exercise we're going to, create a term in the business glossary, update 
 
     :::image type="content" source="../media/business-glossary-exercise/select-new-term.png" alt-text="Screenshot of glossary terms page with new term button highlighted.":::
 
-1. We'll talk about creating term templates later in this exercise, for now, let's choose the **System default** template and select **Continue**.
+1. We'll talk about creating term templates later in this exercise. For now, let's choose the **System default** template and select **Continue**.
 
     :::image type="content" source="../media/business-glossary-exercise/select-default-term-template.png" alt-text="Screenshot of new term page with system default and continue buttons highlighted.":::
 
-1. Give your new term a name, which must be unique in the catalog, and is case sensitive.
+1. Give your new term a name, which must be unique in the catalog and is case sensitive.
 
     :::image type="content" source="../media/business-glossary-exercise/give-term-a-name.png" alt-text="Screenshot of new term page with the name box highlighted.":::
 
@@ -28,15 +30,15 @@ In this exercise we're going to, create a term in the business glossary, update 
 
     :::image type="content" source="../media/business-glossary-exercise/set-status.png" alt-text="Screenshot of the new term page with the status dropdown menu open, showing all options.":::
 
-1. Add resources, an approved Acronym, and a parent term if applicable.
+1. Add resources, an approved Acronym, and a parent term, if applicable.
 
     :::image type="content" source="../media/business-glossary-exercise/add-parent-acronym-resources.png" alt-text="Screenshot of new term page with parent, acronym, and resources highlighted.":::
 
-1. Open the **Related** tab, and apply related terms and synonyms if applicable.
+1. Open the **Related** tab, and add any related terms and synonyms.
 
     :::image type="content" source="../media/business-glossary-exercise/related.png" alt-text="Screenshot of the new term page with the related tab selected and highlighted.":::
 
-1. Open the **Contacts** tab to add experts and stewards to your term, if applicable.
+1. Open the **Contacts** tab to add experts and stewards to your term. These will be the users that will manage the term, or that others can contact if they have questions.
 
     :::image type="content" source="../media/business-glossary-exercise/contacts.png" alt-text="Screenshot of the new term page with the contacts tab selected and highlighted.":::
 
@@ -101,6 +103,35 @@ A full sample CSV will be provided in the steps below.
 
     :::image type="content" source="../media/business-glossary-exercise/export-or-delete-bulk-inline.png" alt-text="Screenshot of the glossary with multiple terms selected, showing the now-available export and delete actions." lightbox="../media/business-glossary-exercise/export-or-delete-bulk.png":::
 
+## Add term to an asset
+
+1. To add a term to a data asset, open the data catalog and search or browse for your asset.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-asset-inline.png" alt-text="Screenshot of a selected asset in the data catalog." lightbox="../media/business-glossary-exercise/select-asset.png":::
+
+1. Select your asset and select **Edit**
+
+    :::image type="content" source="../media/business-glossary-exercise/select-edit-inline.png" alt-text="Screenshot of an asset page with the edit button highlighted in the action menu." lightbox="../media/business-glossary-exercise/select-edit.png":::
+
+    >[!TIP]
+    >You can also add a glossary term to multiple assets using bulk editing, like we discussed in the last section.
+
+1. You can add your term to an entire data asset by selecting it under **Glossary terms** on the **Overview** page.
+
+    :::image type="content" source="../media/business-glossary-exercise/add-glossary-term-inline.png" alt-text="Screenshot of the edit asset page on the overview tab, with the glossary terms dropdown highlighted and a single term selected." lightbox="../media/business-glossary-exercise/add-glossary-term.png":::
+
+1. You can also add your term to a specific column in the data asset under **Glossary terms** for that column on the **Schema** page.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-schema-glossary-term-inline.png" alt-text="Screenshot of the edit asset page on the schema tab, with the glossary terms dropdown highlighted in one row and a single term selected." lightbox="../media/business-glossary-exercise/select-schema-glossary-term.png":::
+
+1. Select **Save** to save your changes.
+
+    :::image type="content" source="../media/business-glossary-exercise/select-save-inline.png" alt-text="Screenshot of the edit asset page with the save button highlighted at the bottom." lightbox="../media/business-glossary-exercise/select-save.png":::
+
+1. Now you can see your term listed on the asset description.
+
+    :::image type="content" source="../media/business-glossary-exercise/see-added-glossary-term-inline.png" alt-text="Screenshot of the asset page, showing the newly applied term under glossary terms." lightbox="../media/business-glossary-exercise/see-added-glossary-term.png":::
+
 ## Create a term template
 
 1. Open the data catalog and select **Manage term templates** in the top menu.
@@ -150,32 +181,3 @@ A full sample CSV will be provided in the steps below.
 1. Now your new term template will be available when others create terms in the business glossary. You can use these to define terms that provide the best information for your business.
 
     :::image type="content" source="../media/business-glossary-exercise/new-term-template-created-inline.png" alt-text="Screenshot of the glossary page with new term selected, and the newly created term template available to select." lightbox="../media/business-glossary-exercise/new-term-template-created.png":::
-
-## Add term to an asset
-
-1. To add a term to a data asset, open the data catalog and search or browse for your asset.
-
-    :::image type="content" source="../media/business-glossary-exercise/select-asset-inline.png" alt-text="Screenshot of a selected asset in the data catalog." lightbox="../media/business-glossary-exercise/select-asset.png":::
-
-1. Select your asset and select **Edit**
-
-    :::image type="content" source="../media/business-glossary-exercise/select-edit-inline.png" alt-text="Screenshot of an asset page with the edit button highlighted in the action menu." lightbox="../media/business-glossary-exercise/select-edit.png":::
-
-    >[!TIP]
-    >You can also add a glossary term to multiple assets using bulk editing, like we discussed in the last section.
-
-1. You can add your term to an entire data asset by selecting it under **Glossary terms** on the **Overview** page.
-
-    :::image type="content" source="../media/business-glossary-exercise/add-glossary-term-inline.png" alt-text="Screenshot of the edit asset page on the overview tab, with the glossary terms dropdown highlighted and a single term selected." lightbox="../media/business-glossary-exercise/add-glossary-term.png":::
-
-1. You can also add your term to a specific column in the data asset under **Glossary terms** for that column on the **Schema** page.
-
-    :::image type="content" source="../media/business-glossary-exercise/select-schema-glossary-term-inline.png" alt-text="Screenshot of the edit asset page on the schema tab, with the glossary terms dropdown highlighted in one row and a single term selected." lightbox="../media/business-glossary-exercise/select-schema-glossary-term.png":::
-
-1. Select **Save** to save your changes.
-
-    :::image type="content" source="../media/business-glossary-exercise/select-save-inline.png" alt-text="Screenshot of the edit asset page with the save button highlighted at the bottom." lightbox="../media/business-glossary-exercise/select-save.png":::
-
-1. Now you can see your term listed on the asset description.
-
-    :::image type="content" source="../media/business-glossary-exercise/see-added-glossary-term-inline.png" alt-text="Screenshot of the asset page, showing the newly applied term under glossary terms." lightbox="../media/business-glossary-exercise/see-added-glossary-term.png":::

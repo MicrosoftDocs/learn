@@ -6,15 +6,7 @@ You can edit assets both individually and in bulk. We'll do both in this example
 
 ### Individual
 
-1. In the [Azure portal](https://portal.azure.com/), open your Microsoft Purview account and select **Open Microsoft Purview Governance Portal**.
-
-    :::image type="content" source="../media/manage-assets-exercise/azure-portal.png" alt-text="Screenshot of Microsoft Purview account page in the Azure portal, with the Open Microsoft Purview Governance Portal button highlighted.":::
-
-1. The Microsoft Purview Governance Portal opens automatically to the home page of the Microsoft Purview Data Catalog.
-
-    :::image type="content" source="../media/manage-assets-exercise/data-catalog-homepage-inline.png" alt-text="Screenshot of the Microsoft Purview governance portal open to the home page, which is the data catalog." lightbox="../media/manage-assets-exercise/data-catalog-homepage.png":::
-
-1. Search for one of your data assets. If you completed the 'Deploy Microsoft Purview and Scan ADLS Gen 2' exercise before this one, and uploaded the dataset, you can use the same one as we're using in our example. We searched for the keyword 'country' and will select the **Queries by Country** asset.
+1. In the data catalog, search for one of your data assets. If you completed the 'Deploy Microsoft Purview and Scan ADLS Gen 2' exercise before this one, and uploaded the dataset, you can use the same one as we're using in our example. We searched for the keyword 'country' and will select the **Queries by Country** asset.
 
 1. Once you've opened your data asset, select the **Edit** option in the asset action bar.
 
@@ -30,7 +22,7 @@ You can edit assets both individually and in bulk. We'll do both in this example
 
     :::image type="content" source="../media/manage-assets-exercise/edit-asset-inline.png" alt-text="Screenshot of the edit asset page with the Overview tab highlighted." lightbox="../media/manage-assets-exercise/edit-asset.png":::
 
-1. In the schema tab, you can:
+1. In the **Schema** tab, you can:
     1. Update the column names to friendly names
     1. Add column-level classifications
     1. Add column-level glossary terms
@@ -39,9 +31,9 @@ You can edit assets both individually and in bulk. We'll do both in this example
 
     :::image type="content" source="../media/manage-assets-exercise/edit-asset-schema.png" alt-text="Screenshot of the edit asset page with the Schema tab highlighted.":::
 
-1. In the contacts tab, you can add experts who can answer questions for others about the data asset, or owners who can manage the life cycle of the data asset.
+1. In the **Contacts** tab, you can add experts who can answer questions for others about the data asset, or owners who can manage the life cycle of the data asset.
 
-    :::image type="content" source="../media/manage-assets-exercise/edit-asset-schema.png" alt-text="Screenshot of the edit asset page with the Contacts tab highlighted.":::
+    :::image type="content" source="../media/manage-assets-exercise/edit-asset-contacts.png" alt-text="Screenshot of the edit asset page with the Contacts tab highlighted.":::
 
 1. Once you have made any changes or updates, be sure to save them using the **Save** button at the bottom of the page.
 
@@ -105,7 +97,9 @@ Now that we've made an edit to an individual asset, let's add some information a
 
 ## Asset certification
 
-1. You'll need to have the data curator role in the collection where a data asset lives in order to be able to certify an asset.
+Certifying an asset tells users it's trustworthy data that's ready to use, and will boost the asset in search results in the data catalog.
+
+1. You'll need to have the data curator role in the collection where the data asset lives to certify an asset.
 
     :::image type="content" source="../media/manage-assets-exercise/data-curators.png" alt-text="Screenshot of a collection in Microsoft Purview with data curators shown in the role assignments menu." :::
 
@@ -128,6 +122,8 @@ Now that we've made an edit to an individual asset, let's add some information a
     :::image type="content" source="../media/manage-assets-exercise/certified-inline.png" alt-text="Screenshot of the asset page, now showing a certified tag next to the name of the asset." lightbox="../media/manage-assets-exercise/certified.png":::
 
 ## Moving an asset
+
+You can also move an asset into any subcollections below the collection where it was originally scanned.
 
 1. Open the details of your asset to the overview page.
 
