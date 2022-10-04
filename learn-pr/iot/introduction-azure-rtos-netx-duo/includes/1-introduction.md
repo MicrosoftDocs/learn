@@ -16,7 +16,7 @@ In this module, you will:
 
 - Completion of the [Azure RTOS ThreadX learning path](https://docs.microsoft.com/learn/paths/azure-rtos-threadx/).
 - Set up your [GitHub Codespaces](https://github.com/features/codespaces) development environment for your projects in this learning path.
-- Working knowledge of C or C++ and GitHub
+- Working knowledge of C or C++, and GitHub
 
 ## TCP/IP Stack
 
