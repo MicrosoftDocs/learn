@@ -12,7 +12,7 @@ The path to the Hello World project in Codespace is:
 
 **courses –> netxduo –> ProjectHelloWorld -> main.c**
 
-When you get to the main, you are ready to build and run your project.
+When you get to the main, you're ready to build and run your project.
 
 ## Step 3 — Build Project Hello World
 
@@ -20,7 +20,7 @@ Follow the instructions in the image below to build your project.
 
 ![Build Step 1 - build project](../media/03-build-project.png)
 
-Your project will start building. When it is finished, you are ready to run the project. Follow the instructions in the image in the next step to run your project.
+Your project will start building. When it's finished, you're ready to run the project. Follow the instructions in the image in the next step to run your project.
 
 ## Step 4 — Run Project Hello World
 
