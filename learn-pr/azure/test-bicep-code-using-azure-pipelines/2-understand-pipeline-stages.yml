@@ -6,8 +6,8 @@ metadata:
   title: Understand pipeline stages
   description: Learn about multistage pipelines in Azure Pipelines. Also, learn about the typical deployment stages for Bicep code.
   ms.date: 09/15/2021
-  author: vermegi
-  ms.author: givermei
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
