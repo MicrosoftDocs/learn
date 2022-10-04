@@ -2,7 +2,7 @@ Now that you've created a custom connector for the Printer Framer API, you want 
 
 ## Share a connector with your organization
 
-If you have created and used a custom connector in a logic app workflow, by default, that connector is available to other Azure Logic Apps users in your organization. They can add the connector to workflows in logic app regions if they meet the following criteria:
+If you've created and used a custom connector in a logic app workflow, by default, that connector is available to other Azure Logic Apps users in your organization. They can add the connector to workflows in logic app regions if they meet the following criteria:
 
 - They share the same Azure Active Directory (Azure AD) tenant with you.
 - They share the same Azure subscription with you.
@@ -11,7 +11,7 @@ Azure Logic Apps automatically shares custom connectors, which other users can s
 
 ## Share a connector with the community
 
-If external users can call your API, consider publishing your custom connector to the Azure community. Publishing makes building workflows with Azure Logic Apps and accessing your data through the API much easier. Makeing your custom connector more widely available also helps promote your API and drive community adoption.
+If external users can call your API, consider publishing your custom connector to the Azure community. Publishing makes building workflows with Azure Logic Apps and accessing your data through the API much easier. Making your custom connector more widely available also helps promote your API and drive community adoption.
 
 The Print Framer API is a good example. Anyone who has a subscription and can write code that makes REST API calls can access your API. However, if you publish your custom connector, people who use Azure Logic Apps can call your API from their workflows without writing any code. Some people might not know about your API. So, if they find your connector through the Azure Logic Apps connector gallery, they might decide to try the API and even buy a subscription.
 
@@ -38,7 +38,7 @@ Fully test your connector before submission for certification. Make sure you're 
 
 ### Submit a connector for certification
 
-The certification process takes around two weeks, but this timeline depends on how well your connector meets the previous criteria. The process runs similiarly to the following steps:
+The certification process takes around two weeks, but this timeline depends on how well your connector meets the previous criteria. The process runs similarly to the following steps:
 
 1. **Nomination**: Visit the nomination form to submit your connector. Microsoft will send a Partner Agreement.
 
