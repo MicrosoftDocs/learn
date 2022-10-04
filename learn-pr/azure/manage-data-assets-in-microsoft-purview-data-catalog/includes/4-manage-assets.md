@@ -6,16 +6,16 @@ In the Microsoft Purview governance portal a **data asset**, or an **asset**, is
 - Lineage
 - etc.
 
-In this section, we'll cover more of these aspects in detail, and talk about how we can edit and manage these aspects in the Data catalog, and the importance of maintaining and updating data assets in your environment.
+In this section, we'll cover more of these aspects in detail. We'll talk about how we can edit and manage these aspects in the Data catalog, and the importance of maintaining and updating data assets in your environment.
 
 ## Capture and maintain assets
 
 ### Scanning
 
-Assets are ingested into the data catalog as part of the scanning process. The data map scans your resources, and adds the metadata about these sources into the data catalog. Only the metadata is added--data isn't moved or copied from your sources. This metadata includes information like column name, data type, and any classifications or security labels that can be applied.
+Assets are ingested into the data catalog as part of the scanning process. The data map scans your resources, and adds the metadata about these sources where they can be browsed through using the data catalog. Only the metadata is added--data isn't moved or copied from your sources. This metadata includes information like column name, data type, and any classifications or security labels that can be applied.
 
 Metadata can also be gathered from multiple sources about a single data asset. For example:
-A file is stored in an Azure blob storage account, and the file is consumed and transformed using Azure Data Factory. If both the Azure Storage account and Azure Data Factory are connected to Microsoft Purview, both will provide metadata about this file to give you a complete picture.
+A file is stored in an Azure blob storage account and the file is consumed and transformed using Azure Data Factory. If both the Azure Storage account and Azure Data Factory are connected to Microsoft Purview, both will provide metadata about this file to give you a complete picture.
 
 ### Asset normalization
 
@@ -28,16 +28,13 @@ The names are different, but ultimately the piece of data is the same, so Micros
 
 ### Editing assets
 
-Once an asset is ingested to the data catalog, it isn't static: they can be updated and enhanced to provide information that can be used to identify useful data sources.
-Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column and later it's deleted from the source table. A scan will remove the column metadata from the asset in Microsoft Purview.
-
-You can also move an asset from one collection to a subcollection of the collection where the source is house. For example, if you have an ADLS Gen 2 account, but a research team only needs access to a subset of the files, you can create a subcollection for that team, and move the files they need into the subcollection.
+Once an asset is ingested to the data catalog, it isn't static: they can be updated and enhanced to provide information that can be used to identify useful data sources. Things like adding a description, or updating glossary terms.
 
 Both column-level and asset-level updates such as adding a description, glossary term or classification don't impact scan updates. Scans will update new columns and classifications regardless if these changes are made.
 
-If you update a classification, Microsoft Purview won't replace this updated classification when you rescan the data.
+Even so, Microsoft Purview works to reflect the truth of the source system whenever possible. For example, if you edit a column and later it's deleted from the source table. A scan will remove the column metadata from the asset in Microsoft Purview.
 
-If you update the name or data type of a column, subsequent scans won't update the asset schema. New columns and classifications won't be detected.
+You can also move an asset from one collection to a subcollection of the collection where the source is house. For example, if you have an ADLS Gen 2 account, but a research team only needs access to a subset of the files, you can create a subcollection for that team, and move the files they need into the subcollection.
 
 Here are the currently editable aspects of an asset:
 
@@ -56,7 +53,7 @@ Here are the currently editable aspects of an asset:
 :::image type="content" source="../media/manage-assets/editing-assets-schema-inline.png" alt-text="Screenshot of the asset editing schema page." lightbox="../media/manage-assets/editing-assets-schema.png":::
 
 1. **Column name** - imported during the scanning process, but can be updated to a friendly name.
-1. **Column-level classifications** - Exactly like classifications applied to an asset in general, but they can be applied to a specific column of data.
+1. **Column-level classifications** - exactly like classifications applied to an asset in general, but they can be applied to a specific column of data.
 1. **Glossary terms** - glossary terms can also be directly applied to a specific data column.
 1. **Data type** - imported during the scanning process, but can be updated.
 1. **Asset description** - allows a description on the column level of the asset to provide information about use or context to improve data understanding.
@@ -72,6 +69,8 @@ Contacts should be users that are responsible for maintaining a data asset, or k
 Once data is ingested into the Microsoft Purview Data Catalog, it needs to be regularly updated and maintained to ensure it's useful, accurate, and findable by people in the organization.
 
 A well-maintained data catalog won't only give your organization an accurate picture of the data that is stored across the data estate, but will promote better use and security of data across the estate.
+
+Here's what you can do to ensure a good asset lifecycle:
 
 1. Plan your collection structure and permissions well, so users have access to all the data they need, but only the data they need.
 1. Define and create classification rules and scan rule sets specific to your organization's needs.

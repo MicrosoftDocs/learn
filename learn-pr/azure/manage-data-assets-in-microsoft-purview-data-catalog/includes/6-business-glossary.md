@@ -1,13 +1,6 @@
-The business glossary is a definition of terms specific to a domain of knowledge that is commonly used, communicated, and shared in organizations as they're conducting business.
+The business glossary is a collection of terms and their definitions specific to your data estate and its operations. It provides a vocabulary for your business users to navigate your data and organization.
 
-A glossary provides vocabulary for business users.  It consists of business terms that can be related to each other and allows them to be categorized so that they can be understood in different contexts. These terms can be then mapped to assets like a database, tables, columns etc. This helps in abstracting the technical jargon associated with the data repositories and allows the business user to discover and work with data in the vocabulary that is more familiar to them.
-
-A business glossary is a collection of terms. Each term represents an object in an organization and it's highly likely that there are multiple terms representing the same object. A customer could also be referred to as client, purchaser, or buyer. These multiple terms have a relationship with each other. The relationship between these terms could be one of the following:
-
-- Synonyms - different terms with the same definition
-- Related - different name with similar definition
-
-The same term can also imply multiple business objects. It's important that each term is well-defined and clearly understood within the organization.
+The glossary contains business terms that can be related to each other and allows them to be categorized so that they can be understood in different contexts. These terms can be then mapped to assets like a database, tables, columns etc, and even related to each other. This allows your data catalog to be a relatable, searchable representation of your data estate, rather than a repository full of technical jargon.
 
 ## Why have business glossary?
 
@@ -60,7 +53,7 @@ These status markers are metadata associated with the term. Currently you can se
 
 ## Term templates
 
-Term Templates provides glossary custom attributes to be logically grouped together in catalog. The feature allows you to group all the relevant custom attributes together in a template and then apply the template while creating the glossary term. For example, all finance- related custom attributes like cost center, profit center, accounting code can be grouped in a term template Finance Template and the Finance template can be used to create financial glossary terms.
+Term Templates allow you to create custom definitions for your terms in Microsoft Purview that can be used across your organization. For example, all finance-related custom attributes like cost center, profit center, accounting code can be grouped in a term template called Finance Template and the new Finance Template can be used to create all financial glossary terms so that they'll all contain these custom attributes.
 
 All the standard attributes are grouped in a system default template. Any term template that you create will contain these attributes along with any other custom attributes created as part of template creation process.
 
