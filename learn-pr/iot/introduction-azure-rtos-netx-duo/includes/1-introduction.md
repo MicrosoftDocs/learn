@@ -70,4 +70,4 @@ The link level is handled by the network driver. This level is typically targete
 
 ## Reference documentation for NetX Duo
 
-We cover the basics of NetX in this learning path, but detailed information can be found in the [NetX Duo user guide](https://docs.microsoft.com/azure/rtos/netx-duo/).
+We cover the basics of NetX in this learning path, but detailed information about NetX protocols and services can be found in the [NetX Duo user guide](https://docs.microsoft.com/azure/rtos/netx-duo/).
