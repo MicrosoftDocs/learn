@@ -718,7 +718,7 @@ Ensure that you have navigated to your .kube directory in the ADS terminal befor
 
 12. With your downloaded Arc-enabled Kubernetes Cluster config file in the default location, confirm your Arc-enabled Kubernetes Cluster is selected. Ensure the chosen connectivity mode is Indirect. Select Next.
     
-   ![Screenshot of Azure Data Studio Azure Arc Data Controller Kubernetes Cluster details](../media/azure-data-studio-arc-data-controller-kubernetes-cluster-Indirect-mode-1.png)
+   ![Screenshot of Azure Data Studio Azure Arc specify Kubernetes cluster.](../media/azure-data-studio-arc-data-controller-kubernetes-cluster-indirect-mode-1.png)
 
 13. For the Kubernetes configuration template, choose the appropriate storage class. We are using an AKS cluster for this exercise, so we specify azure-arc-aks-premium-storage. Select Next.
     
