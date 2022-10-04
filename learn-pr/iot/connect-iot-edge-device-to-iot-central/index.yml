@@ -3,7 +3,6 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central
 metadata:
   title: Connect an IoT Edge device to your IoT Central application
   description: In this module, you'll learn how to connect an IoT Edge device to your IoT Central application
-  ms.date: 06/16/2021
   author: dominicbetts
   ms.author: dobett
   ms.topic: interactive-tutorial
@@ -13,6 +12,7 @@ summary: In this module, you'll prepare an IoT Central application to connect an
 abstract:  | 
   In this module, you will:
   - Create an IoT Central application
+  - Import and IoT Edge deployment manifest into IoT Central
   - Add an IoT Edge device template to your application
   - Add dashboards to the device template
   - Publish the device template
