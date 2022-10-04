@@ -51,7 +51,7 @@ The Calculator creates a match from Azure Services to create a high-level initia
 
 **Partner toolsets**: Microsoft Partners have access to tools in the [Azure Marketplace](https://azuremarketplace.microsoft.com/home?azure-portal=true) that can help create a migration cost analysis.
 
-**Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/solutionassessments.aspx?rtc=1?azure-portal=true).
+**Solution assessments**: Get assistance from a Microsoft Solution Assessment expert or qualified partner as part of a [Solution Assessment engagement](https://www.microsoft.com/solutionassessments/).
 
 **Azure Migration Program**: Join the [Azure Migration Program](https://azure.microsoft.com/migration/migration-program?azure-portal=true) to get the guidance and expert help you need at every stage of the cloud migration journey. Migrate infrastructure, databases, and apps, and move forward with confidence.
 

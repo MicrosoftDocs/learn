@@ -17,7 +17,7 @@ The content in Learn repos is developed, organized, and displayed differently th
 
 ### Home, landing, and browse pages
 
-* [Microsoft Learn home page](https://learn.microsoft.com/training/) (*Also available via `https://microsoft.com/learn` and `https://docs.com/learn`)
+* [Microsoft Learn training home page](/training/)
 * [Browse all training resources](https://learn.microsoft.com/training/browse/)
 
 To view all of the available landing pages, you can navigate to them from the header of the home page.

@@ -6,8 +6,8 @@ metadata:
   title: Understand service principals
   description: Learn what service principals are, how they're different from user accounts, and how they work.
   ms.date: 06/13/2022
-  author: johndowns
-  ms.author: jodowns
+  author: davidsmatlak
+  ms.author: davidsmatlak
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 8
