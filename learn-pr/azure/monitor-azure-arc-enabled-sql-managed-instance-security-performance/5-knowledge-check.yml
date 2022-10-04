@@ -29,7 +29,7 @@ quiz:
   questions:
   - content: "Arc-enabled SQL Managed Instance allows which Authentication types?"
     choices:
-    - content: "Azure Active Directory (AAD)"
+    - content: "Azure Active Directory"
       isCorrect: false
       explanation: "Incorrect. Azure Active Directory isn't currently supported."
     - content: "Active Directory"
@@ -45,10 +45,10 @@ quiz:
       explanation: "Incorrect. Arc-enabled SQL Managed Instance in an indirectly connected mode deployment isn't supported."
     - content: "Grafana Dashboards"
       isCorrect: true
-      explanation: "Correct. Grafana provides local, out-of-the-box dashboards to assist in performance monitoring."
+      explanation: "Correct. Grafana provides local, out-of-the-box dashboards to help you monitor performance."
     - content: "SQL Insights"
       isCorrect: false
-      explanation: "Incorrect. SQL Insights do not support Arc-enabled SQL Managed Instance."
+      explanation: "Incorrect. SQL Insights don't support Arc-enabled SQL Managed Instance."
   - content: "An organization has an application database in its Arc-enabled SQL Managed Instance that contains sensitive data. They need to protect this sensitive data while in transit; the solution isn't to reveal the encryption keys to the database engine. Which security options can be used?"
     choices:
     - content: "Transparent Data Encryption (TDE)"
