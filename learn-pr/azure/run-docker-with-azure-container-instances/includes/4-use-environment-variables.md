@@ -115,7 +115,7 @@ In this section, you'll learn how to prevent sensitive information, such as conn
 
     Secure environment variables prevent clear text output. To use secure environment variables, you'll use the `--secure-environment-variables` argument instead of the `--environment-variables` argument.
 
-1. Run the following command to create a second container, named **aci-demo-secure**, that makes use of secured environment variables:
+1. Run the following command to create a second container named **aci-demo-secure** that makes use of secured environment variables:
 
     ```azurecli
     az container create \
