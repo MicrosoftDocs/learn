@@ -35,7 +35,7 @@ There are millions of computers, phones, tablets, and other devices that use the
 The application layer establishes the connection between data and the application. Following is a table describing several typical protocols.
 
 | Protocol                                    | Description                                                                                               |
-|:--------------------------------------------|:----------------------------------------------------------------------------------------------------------|
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | `Hyper Text Transfer Protocol (HTTP)`       | Underlying protocol for the world wide web; defines how hypermedia messages are formatted and transmitted |
 | `File Transfer Protocol (FTP)`              | Client-server based protocol for transfer of files between client and server over the network             |
 | `Simple Mail Transfer Protocol (SMTP)`      | Rules and semantics for sending and receiving emails                                                      |
