@@ -13,8 +13,8 @@ Arc-enabled data services provide you with the unified management of all of your
 
 Arc-enabled data services allow you to take advantage of Azure's industry-leading security and governance capabilities on your on-premises or public cloud-hosted infrastructure by using **Azure Security Center**, **Azure Policy**, and **Azure RBAC** to protect your data.
 
-![Image of Azure Arc-enabled data services](../media/explore-arc-enabled-data-services-1.png)
+![Diagram of Azure Arc-enabled data services.](../media/explore-arc-enabled-data-services-1.png)
 
 Azure Arc-enabled data services bring your data estates together regardless of their location by using familiar tools, supported services, and any flavor of Kubernetes or hardware.
 
-![Image of Azure Arc-enabled data services infrastructure](../media/explore-arc-enabled-data-services-infrastructure-2.png)
+![Diagram of Azure Arc-enabled data services infrastructure](../media/explore-arc-enabled-data-services-infrastructure-2.png)

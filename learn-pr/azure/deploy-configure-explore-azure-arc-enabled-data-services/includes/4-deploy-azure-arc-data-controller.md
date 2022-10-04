@@ -1,6 +1,6 @@
 The Azure Arc data controller is a Kubernetes operator that performs all orchestration to ensure you achieve your desired state. it's the main component in the Azure Arc infrastructure that links the data services with the Arc-enabled hardware located either on-premises, in Azure, or in any public cloud data center and your Azure subscription. The Arc data controller allows you to deploy, manage, secure, and monitor your data services estate using familiar tools while having the same experience from the Azure portal.
 
-![Diagram of Azure Arc-enabled services architecture](../media/arc-enabled-data-services-infrastructure-1.png)
+![Diagram of Azure Arc-enabled services architecture.](../media/arc-enabled-data-services-infrastructure-1.png)
 
 In units 2 (Prepare for Azure Arc-enabled Data Services) and 3 (Evaluate Azure Arc-enabled data services connectivity modes) of this module, you looked at the capabilities and connectivity modes to prepare us to decide what type of deployment you need to implement for the Azure Arc data controller.
 
