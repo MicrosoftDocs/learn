@@ -35,15 +35,15 @@ quiz:
       explanation: "Incorrect - A glossary term is a way of describing assets by linking them with business terms that allow your assets to be understood in context."
   - content: "What does the Microsoft Purview Data Catalog do?"
     choices:
-    - content: "Allows your users to browse data assets for useful, relevant data based on what kind of data it is, or even an aspect of your business."
-      isCorrect: true
-      explanation: "Correct - The data catalog creates a searchable library of your data, so users can find the information they need."
     - content: "Scans resources and houses metadata about the assets in those resources."
       isCorrect: false
       explanation: "Incorrect - The Microsoft Purview Data Map scans sources and houses metadata. The catalog is an index you can use to search the stored information in the data map."
     - content: "Provides a dashboard actionable insights about your data estate, adoption, and processes."
       isCorrect: false
       explanation: "Incorrect - Microsoft Purview Data Estate Insights has a dashboard that provides information about your data catalog, data security, and usage of Microsoft Purview!"
+    - content: "Allows your users to browse data assets for useful, relevant data based on what kind of data it is, or even an aspect of your business."
+      isCorrect: true
+      explanation: "Correct - The data catalog creates a searchable library of your data, so users can find the information they need."
   - content: "What's a data asset?"
     choices:
     - content: "Any single object that is stored within a Microsoft Purview Data Catalog."
@@ -57,12 +57,12 @@ quiz:
       explanation: "Incorrect - Classifications, glossary terms, and sensitivity labels are applied to assets to define and provide context."
   - content: "What's a certified asset?"
     choices:
-    - content: "An asset that has been reviewed by a data steward and marked as certified for use."
-      isCorrect: true
-      explanation: "Correct - Currently, the certification process only involves being marked by a data steward, and certification is up to those individuals."
     - content: "An asset that has been vetted and marked as certified by the Microsoft Purview Data Catalog."
       isCorrect: false
       explanation: "Incorrect - The Microsoft Purview Data Catalog is only an index and doesn't evaluate the quality of your data assets or their annotations."
+    - content: "An asset that has been reviewed by a data steward and marked as certified for use."
+      isCorrect: true
+      explanation: "Correct - Currently, the certification process only involves being marked by a data steward, and certification is up to those individuals."
     - content: "An asset that has lineage data for both source and destination of the asset."
       isCorrect: false
       explanation: "Incorrect - Lineage data is useful, but not required, and an asset won't be automatically certified when lineage information is added."
