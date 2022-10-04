@@ -63,7 +63,7 @@ With the Azure CDN Standard for Microsoft Tier, caching rules are as simple as t
 
 To change these settings, in the Endpoint pane, select **Caching rules** and then select the caching option that you want to apply to the endpoint and select **Save**.
 
-:::image type="content" source="../media/5-cache-behavior.png" alt-text="Screenshot of the cache behavior page from CDN profile.":::
+:::image type="content" source="../media/5-caching-behaviors.png" alt-text="Screenshot of the cache behavior page from CDN profile.":::
 
 ## Caching and time to live
 
