@@ -1,6 +1,6 @@
 The business glossary is a collection of terms and their definitions specific to your data estate and its operations. It provides a vocabulary for your business users to navigate your data and organization.
 
-These terms can be then mapped to assets like a database, tables, columns etc, and even related to each other. This allows your data catalog to be a relatable, searchable representation of your data estate, rather than a repository full of technical jargon.
+These terms can be then mapped to assets like a database, tables, columns etc., and even related to each other. This allows your data catalog to be a relatable, searchable representation of your data estate, rather than a repository full of technical jargon.
 
 ## Why have business glossary?
 
@@ -20,7 +20,7 @@ Essentially, the business glossary allows users to search for and find data base
 
 We already have three kinds of labels for our data assets, so what's the difference?
 
-- **Business glossary terms** - define the business vocabulary for an organization and help bridge the gap between technical data and it's everyday context in your organization. For example: Fabrikam Monthly Financial Reporting, which can be attached to all data sources used to build the report to make it clear where the data is gathered or how data is being used.
+- **Business glossary terms** - define the business vocabulary for an organization and help bridge the gap between technical data and its everyday context in your organization. For example: Fabrikam Monthly Financial Reporting, which can be attached to all data sources used to build the report to make it clear where the data is gathered or how data is being used.
 - **Classifications** - descriptors that can be assigned to assets to tell what kind of data it is. Some examples of classifications are: passport number, driver's license number, credit card number.
 - **Sensitivity labels** - a type of descriptor that allows you to identify and protect your organization's sensitive data. Sensitivity labels are used to identify the categories of classification types within your organizational data, and group security policies that you want to apply to each category. For example, a security policy to protect all data recognized as credit card numbers.
 - **Managed attributes** - a set of user-defined attributes that provide more description or context for assets. A managed attribute has a name and a value. For example, “Department” is an attribute name and “Finance” is its value, so assets can be aligned with a department.
