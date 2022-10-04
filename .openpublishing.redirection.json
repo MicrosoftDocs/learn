@@ -16052,78 +16052,78 @@
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/index.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },  
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/2-how-hyperscale-works.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/3-exercise-create-hyperscale.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/4-design-a-distributed-database.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/5-exercise-distributed-tables.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/6-scale-up-scale-out.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/7-exercise-scale-and-rebalance-hyperscale.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/8-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-hyperscale/9-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
+      "redirect_url": "/training/modules/ingest-query-data-using-azure-cosmos-db-for-postgresql/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-postgres/3-what-is-hyperscale.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-postgres-cosmos-db/2-what-is-azure-cosmos-db-postgresql/",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-postgres/2-what-is-azure-database-postgresql/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-postgres/4-how-azure-database-postgres-works.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-postgres/3-how-azure-database-postgres-works/",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-postgres/3-how-azure-database-postgres-works/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-postgres/5-when-to-use-azure-database-postgres.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-postgres4-when-to-use-azure-database-postgres/",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-postgres/4-when-to-use-azure-database-postgres/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-postgres/6-knowledge-check.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-postgres/5-knowledge-check/",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-postgres/5-knowledge-check/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/intro-to-postgres/7-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-postgres/6-summary/",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/intro-to-postgres/6-summary/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/manage-application-configuration-data/5-integrate-azure-key-vault-azure-pipelines.md",
