@@ -47,7 +47,7 @@ On your existing virtual network, add a subnet named *AzureBastionSubnet*.
 
 :::image type="content" source="../media/3-virtual-network-add-subnet.png" alt-text="Screenshot of the page for adding a subnet, where the subnet name is AzureBastionSubnet.":::
 
-To provision Azure Bastion, in the portal on the VM, select **Connect** > **Bastion** > **I want to configure Azure Basstion on my own**. Enter a name for the Azure Bastion resource, select the subnet, create a public IP, and so on. After Azure Bastion deploys, you can connect to the VM.
+To provision Azure Bastion, in the portal on the VM, select **Connect** > **Bastion** > **I want to configure Azure Bastion on my own**. Enter a name for the Azure Bastion resource, select the subnet, create a public IP, and so on. After Azure Bastion deploys, you can connect to the VM.
 
 :::image type="content" source="../media/3-operations-bastion.png" alt-text="Screenshot of the Connect using Azure Bastion page with fields filled out by default, like Azure Bastion resource name, subnet, and create public IP address.":::
 
