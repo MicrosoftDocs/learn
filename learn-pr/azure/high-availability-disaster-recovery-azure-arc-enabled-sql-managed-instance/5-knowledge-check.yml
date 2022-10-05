@@ -42,13 +42,13 @@ quiz:
     choices:
     - content: "Performing a manual failover to a secondary replica in the primary site."
       isCorrect: false
-      explanation: "Incorrect. This will not recover a database to a point in time prior to the identified issue."
+      explanation: "Incorrect. A manual failover does not recover a database to a point in time prior to the identified issue."
     - content: "Performing a point in time restore to just before the identified incident."
       isCorrect: true
       explanation: "Correct. Doing so will revert the state of the data to what it was prior to the identified issue."
     - content: "Performing a manual failover to a secondary site."
       isCorrect: false
-      explanation: "Incorrect. This will not recover a database to a point in time prior to the identified issue."
+      explanation: "Incorrect. A manual failover will not recover a database to a point in time prior to the identified issue."
   - content: "Which command performs a failover to the secondary site when the primary site Kubernetes cluster is lost?"
     choices:
     - content: "az sql instance-failover-group-arc update --role secondary"
@@ -59,4 +59,4 @@ quiz:
       explanation: "Correct. This command forces the chosen secondary to become the primary and allows data loss to occur to bring the new primary replica online."
     - content: "az sql mi-arc update --preferred-primary-replica"
       isCorrect: false
-      explanation: "Incorrect. This command is used to set the new primary replica in the primary site. This does not allow for failover to a secondary site."
+      explanation: "Incorrect. This command is used to set the new primary replica in the primary site. This action does not allow for failover to a secondary site."
