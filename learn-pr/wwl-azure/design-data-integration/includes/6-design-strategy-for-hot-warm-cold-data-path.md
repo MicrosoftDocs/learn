@@ -34,7 +34,7 @@ Examine the scenario where you need to build machine learning models for Tailwin
 
 ### Hot data path
 
-The hot data path is typically used for processing or displaying data in real time. This path is employed for real-time alerting and streaming operations. A hot path is where latency-sensitive data results need to be ready in seconds or less, and where data flows for rapid consumption by analytics clients.
+A hot data path is typically used for processing or displaying data in real time. This path is employed for real-time alerting and streaming operations. A hot path is where latency-sensitive data results need to be ready in seconds or less, and where data flows for rapid consumption by analytics clients.
 
 #### Business scenario
 
@@ -44,8 +44,8 @@ Tailwind Traders wants to implement data analysis for its customer portal. They 
 
 The following table compares scenarios for the three path solutions. Review the scenarios and consider which solutions are required for Tailwind Traders.
 
-| Scenario | Path solution |
+| Scenario | Path&nbsp;solution |
 | --- | --- |
-| _Flexible support for data requirements that change frequently. Enable processing or displaying data in real time_. | Hot data path |
-| _Support data that's rarely used, such as data that's stored for compliance or legal reasons. Enable consumption of data for long term analytics and batch processing_. | Cold data path |
-| _Store or display a recent subset of data. Enable consumption of data for small analytical and batch processing_. | Warm data path |
+| _Flexible support for data requirements that change frequently. Enable processing or displaying data in real time_. | **Hot** data path |
+| _Support data that's rarely used, such as data that's stored for compliance or legal reasons. Enable consumption of data for long term analytics and batch processing_. | **Cold** data path |
+| _Store or display a recent subset of data. Enable consumption of data for small analytical and batch processing_. | **Warm** data path |

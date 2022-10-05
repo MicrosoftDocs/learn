@@ -16,7 +16,7 @@ Azure Synapse Analytics implements a massively parallel processing (MPP) archite
 
 #### Components of Azure Synapse Analytics
 
-Azure Synapse Analytics is composed of the following elements:
+Azure Synapse Analytics is composed of the five elements:
 
 :::image type="content" source="../media/azure-synapse-analytics-overview.png" alt-text="Diagram that shows an overview of Azure Synapse Analytics capabilities." border="false":::
 
@@ -30,11 +30,11 @@ Azure Synapse Analytics is composed of the following elements:
 
 - **Azure Synapse Studio**: This element is a web-based IDE that can be used centrally to work with all capabilities of Azure Synapse Analytics. You can use Azure Synapse Studio to create SQL and Spark pools, define and run pipelines, and configure links to external data sources.
 
-#### Analysis scenarios
+#### Analytical options
 
 Azure Synapse Analytics supports a range of analytical scenarios. As you review the table, consider how the scenarios apply to the Tailwind Traders organization.
 
-| Analysis type | Scenario | Description |
+| Analysis | Scenario | Description |
 | --- | --- |
 | _Descriptive_ | What is happening? | Azure Synapse applies the dedicated SQL pool capability that enables you to create a persisted data warehouse to analyze _what now_ questions. You can make use of the serverless SQL pool to prepare data from files stored in a data lake to create a data warehouse interactively. |
 | _Diagnostic_ - | Why is it happening? | You can use the serverless SQL pool capability within Azure Synapse to interactively explore data within a data lake. Serverless SQL pools can quickly enable a user to search for other data that might help them to understand _why_ questions. |
