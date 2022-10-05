@@ -4,7 +4,7 @@ So how do you know which IDE is right for you? It depends on what your needs are
 
 ## Example scenario
 
-Suppose you're building a web site for a restaurant in your hometown. You know that you'll need to create the pages using HTML, CSS, and JavaScript. In addition, you'd like to be able to debug your code and view your site locally on your computer as you're testing. You also want incorporate a version control system to manage changes to your web pages.
+Suppose you're building a website for a restaurant in your hometown. You know that you'll need to create the pages using HTML, CSS, and JavaScript. In addition, you'd like to be able to debug your code and view your site locally on your computer as you're testing. You also want incorporate a version control system to manage changes to your webpages.
 
 In addition, suppose the restaurant needs to create an inventory management system in C++ that can be used by employees from desktops in the kitchen and back office. You want to make sure that your IDE supports C++ syntax, libraries, compilers, and debuggers.
 

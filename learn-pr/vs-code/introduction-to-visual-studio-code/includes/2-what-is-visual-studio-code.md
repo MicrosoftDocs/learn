@@ -1,5 +1,5 @@
 
-Visual Studio Code is a free, lightweight, open-source integrated development environment (IDE) that can be customized through extensions to support many different programming needs.
+Visual Studio Code is a free, lightweight, open-source IDE that can be customized through extensions to support many different programming needs.
 
 ## What are the main features of Visual Studio Code?
 
@@ -9,7 +9,11 @@ Let's take a look at the key features of Visual Studio Code:
 
 ### Cross-platform support
 
-Visual Studio Code's user interface (UI) is based on Electron, a cross-platform technology for building desktop applications. This technology lets Visual Studio Code run on Linux, MacOs, or Windows. The following screenshot shows the Windows, Linux, and MacOS downloads available on the Visual Studio Code home page:
+Visual Studio Code's user interface (UI) is based on Electron, a cross-platform technology for building desktop applications. This technology lets Visual Studio Code run on Linux, MacOs, or Windows. The benefit of this versatility is that you can use the same, familiar coding environment on whatever platform you're using.
+
+For example, you can use Visual Studio Code as you work on a web application on Windows. Later, if you need to work from a Linux host, you can install and use Visual Studio Code there to edit Python scripts. You don't have to learn how to use different IDEs to work on different operating systems.
+
+The following screenshot shows the Windows, Linux, and MacOS downloads available on the Visual Studio Code home page:
 
 :::image type="content" source="../media/2-download-visual-studio-code-cross-platform.png" alt-text="Screenshot of Visual Studio Code website showing downloads available in Linux, MacOS, and Windows":::
 
