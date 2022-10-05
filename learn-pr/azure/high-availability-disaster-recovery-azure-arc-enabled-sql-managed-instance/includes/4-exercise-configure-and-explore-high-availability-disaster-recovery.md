@@ -111,15 +111,14 @@ In this exercise, we will be looking at how to configure and use readable second
    ![Screenshot of SQL Managed Instance readable secondary connection.](../media/exercise1-managed-instance-readable-secondary-2.png)
 
 
-## Exercise 2 - Discovering Arc-enabled SQL Managed Instance General Purpose Tier
+## Exercise 2 - Discovere Azure Arc-enabled SQL Managed Instance General Purpose tier
 
-High Availability
-For this exercise, we will be simulating the failure or loss of the Kubernetes pod hosting and running the General Purpose Tier Arc-enabled SQL Managed Instance container. 
+For this exercise, we will be simulating the failure or loss of the Kubernetes pod hosting and running the General Purpose tier Arc-enabled SQL Managed Instance container. 
 
 1. Open Azure Data Studio.
 2. Expand the Connections Tab.
-3. Right-click on your General Purpose Tier SQL Managed Instance and select New Query.
-4. Execute the following query to show access to the Instance of SQL Server and the AdventureWorks2019 database:
+3. Right-click on your General Purpose tier SQL Managed Instance and select New Query.
+4. Execute the following query to show access to the instance of SQL Server and the AdventureWorks2019 database:
 
    ```sql
    Select @@ServerName;
@@ -131,7 +130,7 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
    From HumanResources.Employee;
    ```
 
-   ![Screenshot of SQL Managed Instance General Purpose Tier high availability connectivity 1.](../media/exercise2-manage-general-purpose-high-availability-1.png)
+   ![Screenshot of SQL Managed Instance General Purpose tier high availability connectivity 1.](../media/exercise2-manage-general-purpose-high-availability-1.png)
 
 5. Open the Terminal window.
 6. Execute the following commands to view the Kubernetes pods:
@@ -150,7 +149,7 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
    kubectl delete pod $Env:MyGPPod -n $Env:MyNamespace 
    ```
 
-   ![Screenshot of SQL Managed Instance General Purpose Tier HA Pods 2.](../media/exercise2-manage-general-purpose-pods-2.png)
+   ![Screenshot of SQL Managed Instance General Purpose tier HA Pods 2.](../media/exercise2-manage-general-purpose-pods-2.png)
 
 8. Execute the following command to view the status of the pods:
 
@@ -158,7 +157,7 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
    kubectl get pods -n $Env:MyNamespace
    ```
 
-   ![Screenshot of SQL Managed Instance General Purpose Tier HA Pods 3.](../media/exercise2-manage-general-purpose-pods-3.png)
+   ![Screenshot of SQL Managed Instance General Purpose tier HA Pods 3.](../media/exercise2-manage-general-purpose-pods-3.png)
 
 9. Re-execute step 8 to monitor the redeployment of the pod. Once the pod is back in a running state, you can perform standard checks to ensure the Instance of SQL Server is available and functioning as required.
 
@@ -166,7 +165,7 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
 
 10. Re-execute step 4 to see if the instance is available again. This proves your instance is back available and accessible.
 
-   ![Screenshot of SQL Managed Instance General Purpose Tier HA successful query.](../media/exercise2-manage-general-purpose-high-availability-1.png)
+   ![Screenshot of SQL Managed Instance General Purpose tier HA successful query.](../media/exercise2-manage-general-purpose-high-availability-1.png)
 
 ## Exercise 3 - Discovering Arc-enabled SQL Managed Instance Business Critical Tier High Availability
 
@@ -340,7 +339,7 @@ For this exercise, we will be using the automated backups already created for th
 10. Enter a point in time between the earliest point in time & the latest point in time to which you want to restore.
 11. Select restore.
 
-   ![Configure point in time restore for Azure Data Studio.](../media/exercise3-manage-point-in-time-restore-3.png)
+   ![Screenshot of how to configure point in time restore for Azure Data Studio.](../media/exercise3-manage-point-in-time-restore-3.png)
 
 12. To monitor the progress of the point in time restore execute the following command in the Azure Data Studio Terminal Window:
 
