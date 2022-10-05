@@ -6,7 +6,7 @@ Currently, full backups are taken once a week, differential backups every 12 hou
 
 Point-in-time restore (PITR) allows the restoration of a database to a point in time from a database backup within the configured retention period to the same Arc-enabled SQL MI on which the backup was taken.
 
-![Image of Automated Backup Schedule example](../media/Arc-enabled-dataservices-module-4-pitr-overview-4.png)
+![Diagram of automated backup schedule example.](../media/point-in-time-restore-overview-4.png)
 
 The example above shows the initial full backup, some of the transaction log backups taken every 5 minutes over a 12-hour period before the first differential backup, followed by the remaining transaction log backups taken every 5 minutes up to the point in time an issue is experienced.  
 

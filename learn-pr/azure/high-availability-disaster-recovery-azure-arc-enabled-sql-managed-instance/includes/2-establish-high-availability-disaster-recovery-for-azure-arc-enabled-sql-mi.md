@@ -1,4 +1,4 @@
-Azure Arc-enabled SQL Managed Instance (MI) provides High Availability capabilities out of the box. Deployed on Kubernetes as a containerized application, it uses Kubernetes constructs, such as stateful sets and persistent storage, to provide built-in health monitoring, failure detection, and failover mechanisms.
+Azure Arc-enabled SQL Managed Instance (MI) provides High Availability capabilities out of the box. As a containerized application, it uses Kubernetes constructs, such as stateful sets and persistent storage to provide built-in health monitoring, failure detection, and failover mechanisms.
 
 In this module, we will look at the capabilities of each deployment tier:
 
@@ -12,7 +12,7 @@ In this tier, only one replica is available, and we achieve high availability vi
 
 In cases where `load balancer` is the service type used in the Arc-enabled SQL MI deployment, applications can reconnect to the same primary endpoint, and Kubernetes will redirect the connection to the new primary. If `nodeport` is the service type used, the applications must reconnect to the new IP Address.
 
-![Image of General Purpose Tier High Availability Architecture](../media/Arc-enabled-dataservices-module-4-general-purpose-tier-architecture-1.png)
+![Diagram of General Purpose Tier high availability architecture.](../media/general-purpose-tier-architecture-1.png)
 
 ## Business Critical Tier deployment
 
@@ -22,11 +22,11 @@ With two or more replicas deployed, one replica is automatically configured as a
 
 Each replica in the deployed environment is configured with its own persistent storage. All data is maintained and kept in sync with each replica using Availability Groups' synchronous data transfer technology. 
 
-Using Contained Availability Groups, if any pod or node containing the managed instance container image crashes, the failure is transparent to the application as there is at least one other pod that contains all of the data from the primary and is ready to take on connections. The application will need to issue a reconnect, providing a much smaller interruption and greater uptime than the General Purpose tier deployment. Application connectivity to the Arc-enabled SQL MI has the same caveats as the General Purpose tier deployment with the configuration of the service tier being either `load balancer` (connecting to the primary endpoint) or `nodeport` (connecting to the new IP Address after a failover).
+Using contained availability groups, if any pod or node containing the managed instance container image crashes, the failure is transparent to the application. At least one other pod contains all of the data from the primary and is ready to take on connections. The application will need to reconnect, providing a much smaller interruption and greater uptime than the General Purpose tier deployment. Application connectivity to the Arc-enabled SQL MI has the same caveats as the General Purpose tier deployment with the configuration of the service tier being either `load balancer` (connecting to the primary endpoint) or `nodeport` (connecting to the new IP Address after a failover).
 
-When deploying this tier, the Contained Availability Group is created automatically when multiple replicas are chosen. All databases are automatically added to the Contained Availability Group, including users and system databases. The deployment automatically provisions an external endpoint for connecting to the databases within the Contained Availability Group that plays the role of the Availability Group Listener.
+When you deploy this tier, the contained availability group is created automatically when multiple replicas are chosen. All databases are automatically added to the Contained Availability Group, including users and system databases. The deployment automatically provisions an external endpoint for connecting to the databases within the Contained Availability Group that plays the role of the Availability Group Listener.
 
-![Image of Business Critical Tier High Availability Architecture](../media/Arc-enabled-dataservices-module-4-business-critical-tier-architecture-2.png)
+![Diagram of Business Critical Tier high availability architecture.](../media/business-critical-tier-architecture-2.png)
 
 ## Azure Failover Groups
 
@@ -42,4 +42,4 @@ To deploy an Azure Failover Group, the Arc-enabled SQL MI has the following conf
 - Supports both General Purpose and Business Critical Tiers
 - Manual failover between sites
 
-![Image of Azure Failover Groups Architecture](../media/Arc-enabled-dataservices-module-4-failover-group-architecture-3.png)
+![Diagram of Azure failover groups architecture.](../media/failover-group-architecture-3.png)

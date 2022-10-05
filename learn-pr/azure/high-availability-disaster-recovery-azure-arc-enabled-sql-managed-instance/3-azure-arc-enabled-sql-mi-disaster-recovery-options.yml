@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.high-availability-disaster-recovery-azure-arc-enabled-sql-managed-instance.azure-arc-enabled-sql-mi-disaster-recovery-options
-title: Azure Arc-enabled SQL Managed Instance Disaster Recovery options
+title: Azure Arc-enabled SQL Managed Instance disaster recovery options
 metadata:
-  title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Plan disaster recovery for Azure Arc-enabled SQL Managed Instance
+  description: "Learn how to plan disaster recovery for Azure Arc-enabled SQL Managed Instance."
   ms.date: 8/24/2022
   author: tchristiani
   ms.author: terrychr

@@ -6,15 +6,15 @@ In this exercise, we will be looking at how to configure and use readable second
 2. Expand the Connections Tab.
 3. Expand Azure Arc Controllers.
 4. Expand the data controller.
-5. Setup the following details for the Business Critical Tier Arc-enabled SQL MI:
+5. Setup the following details for the Business Critical Tier Arc-enabled SQL Managed Instance:
 
     ```powershell
-    $Env:SQLMIName = 'enter Business Critical Tier SQL MI Name here'
+    $Env:SQLMIName = 'enter Business Critical Tier SQL Managed Instance Name here'
     $Env:MyNamespace = 'enter data controller namespace here'
     $Env:MyReadableSecondaries = 2
     ```
 
-6. Execute the following command to review the current Arc-enabled SQL MI configuration. Search for replicas to review the current configuration:
+6. Execute the following command to review the current Arc-enabled SQL Managed Instance configuration. Search for replicas to review the current configuration:
 
     ```powershell
     az sql mi-arc show -n $Env:SQLMIName `
@@ -58,7 +58,7 @@ In this exercise, we will be looking at how to configure and use readable second
         --use-k8s
     ```
 
-![Image of configure readable secondaries](../media/Arc-enabled-dataservices-module-4-exercise1-configure-readable-secondaries.1.png)
+![Screenshot of configure readable secondaries.](../media/exercise1-configure-readable-secondaries-1.png)
 
 8. Re-execute step 6 to view the new configuration. You can see that both `ae-msl-sqlmi2-1` and `ae-msl-sqlmi2-2` are now configured as readable secondaries.
 
@@ -94,7 +94,7 @@ In this exercise, we will be looking at how to configure and use readable second
 9. Search the results from the CLI command executed in step 8. Search for endpoints. Retrieve the secondary endpoint value.
 10. In the connections Tab, select New Connection. Enter the connection details for your secondary endpoint. Select Connect.
 
-![Image of SQL MI secondary endpoint connection](../media/Arc-enabled-dataservices-module-4-exercise1-sqlmi-secondary-endpoint-1.png)
+![Screenshot of Managed Instance secondary endpoint connection.](../media/exercise1-managed-instance-secondary-endpoint-1.png)
 
 11. Open a new query window for the new secondary endpoint connection and execute the following commands. Your servername should not be the current primary replica:
 
@@ -108,17 +108,17 @@ In this exercise, we will be looking at how to configure and use readable second
   From HumanResources.Employee;
   ```
 
-![Image of SQL MI Readable secondary connection](../media/Arc-enabled-dataservices-module-4-exercise1-sqlmi-readable-secondary-2.png)
+![Screenshot of SQL Managed Instance readable secondary connection.](../media/exercise1-managed-instance-readable-secondary-2.png)
 
 
-## Exercise 2 - Discovering Arc-enabled SQL MI General Purpose Tier
+## Exercise 2 - Discovering Arc-enabled SQL Managed Instance General Purpose Tier
 
 High Availability
-For this exercise, we will be simulating the failure or loss of the Kubernetes pod hosting and running the General Purpose Tier Arc-enabled SQL MI container. 
+For this exercise, we will be simulating the failure or loss of the Kubernetes pod hosting and running the General Purpose Tier Arc-enabled SQL Managed Instance container. 
 
 1. Open Azure Data Studio.
 2. Expand the Connections Tab.
-3. Right-click on your General Purpose Tier SQL MI and select New Query.
+3. Right-click on your General Purpose Tier SQL Managed Instance and select New Query.
 4. Execute the following query to show access to the Instance of SQL Server and the AdventureWorks2019 database:
 
   ```sql
@@ -131,7 +131,7 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
   From HumanResources.Employee;
   ```
 
-![Image of SQL MI General Purpose Tier HA Connectivity 1](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-1.png)
+![Screenshot of SQL Managed Instance General Purpose Tier high availability connectivity 1.](../media/exercise2-manage-general-purpose-high-availability-1.png)
 
 5. Open the Terminal window.
 6. Execute the following commands to view the Kubernetes pods:
@@ -141,16 +141,16 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
   kubectl get pods -n $Env:MyNamespace
   ```
 
-![Image of SQL MI General Purpose Tier HA Pods kubectl results for this namespace.](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-pods-1.png)
+![Screenshot of SQL Managed Instance General Purpose tier high availability pods kubectl results for this namespace.](../media/exercise2-manage-general-purpose-pods-1.png)
 
 7. Simulate a pod failure by executing the following command:
 
   ```powershell
-  $Env:MyGPPod = 'enter SQL MI Name here-0'
+  $Env:MyGPPod = 'enter SQL Managed Instance Name here-0'
   kubectl delete pod $Env:MyGPPod -n $Env:MyNamespace 
   ```
 
-![Image of SQL MI General Purpose Tier HA Pods 2](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-pods-2.png)
+![Screenshot of SQL Managed Instance General Purpose Tier HA Pods 2.](../media/exercise2-manage-general-purpose-pods-2.png)
 
 8. Execute the following command to view the status of the pods:
 
@@ -158,78 +158,76 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
   kubectl get pods -n $Env:MyNamespace
   ```
 
-![Image of SQL MI General Purpose Tier HA Pods 3](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-pods-3.png)
+![Screenshot of SQL Managed Instance General Purpose Tier HA Pods 3.](../media/exercise2-manage-general-purpose-pods-3.png)
 
 9. Re-execute step 8 to monitor the redeployment of the pod. Once the pod is back in a running state, you can perform standard checks to ensure the Instance of SQL Server is available and functioning as required.
 
-![Image of SQL MI General Purpose Tier HA Pods 1](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-pods-4.png)
+   ![Screenshot of SQL Managed Instance General Purpose tier high availability pods 4.](../media/exercise2-manage-general-purpose-pods-4.png)
 
 10. Re-execute step 4 to see if the instance is available again. This proves your instance is back available and accessible.
 
-![Image of SQL MI General Purpose Tier HA successfull query](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-gp-ha-1.png)
-
+   ![Screenshot of SQL Managed Instance General Purpose Tier HA successful query.](../media/exercise2-manage-general-purpose-high-availability-1.png)
 
 ## Exercise 3 - Discovering Arc-enabled SQL Managed Instance Business Critical Tier High Availability
 
-For this exercise, we will be simulating the failure or loss of the Kubernetes pod hosting and running the Business Critical Tier Arc-enabled SQL MI container.
+For this exercise, we will be simulating the failure or loss of the Kubernetes pod hosting and running the Business Critical Tier Arc-enabled SQL Managed Instance container.
 
 1. Open Azure Data Studio.
 2. Expand the Connections Tab.
-3. Right-click on your Business Critical tier SQL MI and select New Query.
+3. Right-click on your Business Critical tier SQL Managed Instance and select New Query.
 4. Execute the following query to show access to the Instance of SQL Server and the AdventureWorks2019 database:
 
-  ```sql
-  Select @@ServerName;
+   ```sql
+   Select @@ServerName;
+ 
+   Use AdventureWorks2019
+   GO
 
-  Use AdventureWorks2019
-  GO
+   Select *
+   From HumanResources.Employee;
+   ```
 
-  Select *
-  From HumanResources.Employee;
-  ```
-
-![Image of SQL MI Business Critical Tier HA Connectivity 1](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-bc-ha-1.png)
+   ![Screenshot of SQL Managed Instance Business Critical Tier high availability connectivity 1.](../media/exercise2-manage-business-critical-high-availability-1.png)
 
 5. Open the Terminal window.
 6. Execute the following commands to view the Kubernetes pods:
 
-  ```powershell
-  $Env:MyNamespace = 'enter your data controller namespace here'
-  kubectl get pods -n $Env:MyNamespace
-  ```
+   ```powershell
+   $Env:MyNamespace = 'enter your data controller namespace here'
+   kubectl get pods -n $Env:MyNamespace
+   ```
 
-![Image of SQL MI Business Critical Tier HA Pods 1](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-bc-ha-pods-1.png)
-
+   ![Screenshot of SQL Managed Instance Business Critical Tier high availability pods 1.](../media/exercise2-manage-business-critical-pods-1.png)
 
 7. Simulate a pod failure by executing the following command:
 
-  ```powershell
-  $Env:MyBCPod = 'enter SQL MI Name here-0'
-  kubectl delete pod $Env:MyBCPod -n $Env:MyNamespace 
-  ```
+   ```powershell
+   $Env:MyBCPod = 'enter SQL Managed Instance Name here-0'
+   kubectl delete pod $Env:MyBCPod -n $Env:MyNamespace 
+   ```
 
-![Image of SQL MI Business Critical Tier HA Pods 2](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-bc-ha-pods-2.png)
+   ![Screenshot of delete pod command.](../media/exercise2-manage-business-critical-pods-2.png)
 
 8. Execute the following command to view the status of the pods:
 
-  ```powershell
-  kubectl get pods -n $Env:MyNamespace
-  ```
+   ```powershell
+   kubectl get pods -n $Env:MyNamespace
+   ```
 
-![Image of SQL MI Business Critical Tier HA Pods 3](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-BC-ha-pods-3.png)
+   ![Screenshot of pods, showing newly started pod.](../media/exercise2-manage-business-critical-pods-3.png)
 
 9. Re-execute step 4 to see if the instance is available, running on 'SQLMI-1'. Service disruption should be minimal, and your applications need re-connect functionality.
 
-![Image of SQL MI Business Critical Tier HA successful query](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-bc-ha-2.png)
+   ![Screenshot of SQL Managed Instance Business Critical tier high availability successful query.](../media/exercise2-manage-business-critical-high-availability-2.png)
 
 10. Execute the following command to view the status of the Contained Availability Group:
 
-  ```powershell
-  $Env:MyResource-group = 'enter your resource group name here'
-  az sql mi-arc list --k8s-namespace $Env:MyNamespace --use-k8s
-  ```
+   ```powershell
+   $Env:MyResource-group = 'enter your resource group name here'
+   az sql mi-arc list --k8s-namespace $Env:MyNamespace --use-k8s
+   ```
 
-![Image of SQL MI Business Critical Tier HA failed query](../media/Arc-enabled-dataservices-module-4-exercise2-manage-sqlmi-bc-ag-status-1.png)
+   ![Screenshot of SQL Managed Instance Business Critical tier high availability failed query.](../media/exercise2-manage-business-critical-availability-group-status-1.png)
 
 11. Check the status of all replicas in the Contained Availability Group with the following command. Search for `highAvailability` in the output:
 
@@ -272,57 +270,56 @@ For this exercise, we will be simulating the failure or loss of the Kubernetes p
 
 12. Prepare for a manual failover from the existing primary replica - `'your sqlmi name-1'` back to the original primary replica - `'your sqlmi name-0'.` In the terminal window, execute the following commands to set the preferred primary replica:
 
-  ```PowerShell
-  $Env:MyPreferredPrimaryReplica = 'your sqlmi name-1'
-  az sql mi-arc update --name $Env:SQLMIName `
-    --k8s-namespace $Env:MyNamespace `
-    --use-k8s `
-    --preferred-primary-replica $Env:MyPreferredPrimaryReplica
-  ```
+   ```PowerShell
+   $Env:MyPreferredPrimaryReplica = 'your sqlmi name-1'
+   az sql mi-arc update --name $Env:SQLMIName `
+     --k8s-namespace $Env:MyNamespace `
+     --use-k8s `
+     --preferred-primary-replica $Env:MyPreferredPrimaryReplica
+   ```
 
-![Image of SQL MI Business Critical Tier HA Manual Failover](../media/Arc-enabled-dataservices-module-4-exercise3-manage-sqlmi-bc-manual-failover-1.png)
+   ![Screenshot of SQL Managed Instance Business Critical tier high availability manual failover.](../media/exercise3-manage-business-critical-manual-failover-1.png)
 
-13. Re-execute the `az sql mi-arc update` CLI command in step 12 to perform the actual failover.
+13. Run the `az sql mi-arc update` CLI command from step 12 again to perform the actual failover.
 
-14. Re-execute step 11 and confirm the changed primary replica roles.
+14. Run step 11 again to confirm the changed primary replica roles.
 
-  ```
-  "highAvailability": {
-          "healthState": "Healthy",
-          "lastUpdateTime": "2022-06-07T00:39:38.927189Z",
-          "mirroringCertificate": "-----BEGIN CERTIFICATE-----\n \n-----END CERTIFICATE-----\n",
-          "replicas": [
-            {
-              "availabilityMode": "SYNCHRONOUS_COMMIT",
-              "connectedState": "CONNECTED",
-              "replicaName": "ae-msl-sqlmi2-0",
-              "role": "PRIMARY",
-              "secondaryRoleAllowConnections": "ALL",
-              "synchronizationState": "HEALTHY"
-            },
-            {
-              "availabilityMode": "SYNCHRONOUS_COMMIT",
-              "connectedState": "CONNECTED",
-              "replicaName": "ae-msl-sqlmi2-1",
-              "role": "SECONDARY",
-              "secondaryRoleAllowConnections": "ALL",
-              "synchronizationState": "HEALTHY"
-            },
-            {
-              "availabilityMode": "SYNCHRONOUS_COMMIT",
-              "connectedState": "CONNECTED",
-              "replicaName": "ae-msl-sqlmi2-2",
-              "role": "SECONDARY",
-              "secondaryRoleAllowConnections": "ALL",
-              "synchronizationState": "HEALTHY"
-            }
-          ]
-        }
-  ```
-
+   ```
+   "highAvailability": {
+           "healthState": "Healthy",
+           "lastUpdateTime": "2022-06-07T00:39:38.927189Z",
+           "mirroringCertificate": "-----BEGIN CERTIFICATE-----\n \n-----END CERTIFICATE-----\n",
+           "replicas": [
+             {
+               "availabilityMode": "SYNCHRONOUS_COMMIT",
+               "connectedState": "CONNECTED",
+               "replicaName": "ae-msl-sqlmi2-0",
+               "role": "PRIMARY",
+               "secondaryRoleAllowConnections": "ALL",
+               "synchronizationState": "HEALTHY"
+             },
+             {
+               "availabilityMode": "SYNCHRONOUS_COMMIT",
+               "connectedState": "CONNECTED",
+               "replicaName": "ae-msl-sqlmi2-1",
+               "role": "SECONDARY",
+               "secondaryRoleAllowConnections": "ALL",
+               "synchronizationState": "HEALTHY"
+             },
+             {
+               "availabilityMode": "SYNCHRONOUS_COMMIT",
+               "connectedState": "CONNECTED",
+               "replicaName": "ae-msl-sqlmi2-2",
+               "role": "SECONDARY",
+               "secondaryRoleAllowConnections": "ALL",
+               "synchronizationState": "HEALTHY"
+             }
+           ]
+         }
+   ```
 
 ## Exercise 4 - Point-in-time Restores
-For this exercise, we will be using the Automated backups already created for the AdventureWorks2019 database restored to the Arc-enabled SQL MI environment previously.
+For this exercise, we will be using the Automated backups already created for the AdventureWorks2019 database restored to the Arc-enabled SQL Managed Instance environment previously.
 
 1. Open Azure Data Studio.
 2. Expand the Connections Tab.
@@ -330,35 +327,36 @@ For this exercise, we will be using the Automated backups already created for th
 4. Expand the Arc data controller.
 5. Right Click on your Arc-enabled SQL Managed Instance and select Manage.
 
-![Image of Manage Arc-enabled SQL MI](../media/Arc-enabled-dataservices-module-4-exercise3-manage-sqlmi.1.png)
+   ![Screenshot of Azure Arc-enabled SQL Managed Instance management control in Azure Data Studio.](../media/exercise3-managed-instance-1.png)
 
 6. Select Backups.
 7. Review the earliest point in time & latest point in time for the AdventureWorks2019 sample database.
-8. Click the restore icon to initiate the Point-in-time Restore (PITR) process
+8. Click the restore icon to initiate the point in time restore process
 
-![Image of Arc-enabled SQL MI PITR restore points](../media/Arc-enabled-dataservices-module-4-exercise3-manage-sqlmi-pitr.2.png)
+   ![Screenshot of Arc-enabled SQL Managed Instance point in time restore points.](../media/exercise3-manage-point-in-time-restore-2.png)
 
 9. Enter a name for the newly restored database.
 10. Enter a point in time between the earliest point in time & the latest point in time to which you want to restore.
 11. Select restore.
 
-![Configure point in time restore for Azure Data Studio.](../media/Arc-enabled-dataservices-module-4-exercise3-manage-sqlmi-pitr.3.png)
+   ![Configure point in time restore for Azure Data Studio.](../media/exercise3-manage-point-in-time-restore-3.png)
 
-12. To monitor the progress of the PITR execute the following command in the Azure Data Studio Terminal Window:
+12. To monitor the progress of the point in time restore execute the following command in the Azure Data Studio Terminal Window:
+
     ```powershell
     kubectl get sqlmirestoretask -n 'enter your data controller namespace here'
     ```
-13. This may take a while, depending on the time chosen for the PITR.
+
+13. This may take a while, depending on the time chosen for the point in time restore.
 14. Refresh the database list on the Backups tab.
 
-![Image of Arc-enabled SQL MI PITR restore GUI restore](../media/Arc-enabled-dataservices-module-4-exercise3-manage-sqlmi-pitr.4.png)
+   ![Screenshot of Arc-enabled SQL Managed Instance point in time restore GUI.](../media/exercise3-manage-point-in-time-restore-4.png)
 
 15. Connect to your Instance of SQL Server and confirm the database exists, and you can query the data.
 
-
 ## Exercise 5 - Deploying Arc-enabled SQL Managed Instance Azure Failover Groups
 
-We will use an Arc-enabled SQL MI Business Critical environment for this exercise. The environment consists of an Arc-enabled SQL MI located at our primary site and a duplicate Arc-enabled SQL MI located at our secondary site.
+We will use an Arc-enabled SQL Managed Instance Business Critical environment for this exercise. The environment consists of an Arc-enabled SQL Managed Instance located at our primary site and a duplicate Arc-enabled SQL Managed Instance located at our secondary site.
 
 ### Pre-requisites
 
@@ -366,26 +364,26 @@ Make sure to complete the following before proceeding:
 
 1. Have access to a supported Kubernetes cluster in your primary site.
 2. Completed Module 1, Exercise - Deploy an Azure Arc Data Controller (For your primary site).
-3. Completed Module 2, Exercise - Deploy an Azure Arc-enabled SQL MI (For your primary site).
-4. Completed Module 2, Exercise – Restore AdventureWorks2019 to your primary site Arc-enabled SQL MI.
+3. Completed Module 2, Exercise - Deploy an Azure Arc-enabled SQL Managed Instance (For your primary site).
+4. Completed Module 2, Exercise – Restore AdventureWorks2019 to your primary site Arc-enabled SQL Managed Instance.
 5. Have access to a supported Kubernetes cluster in your secondary site.
 6. Completed Module 1, Exercise - Deploy an Azure Arc Data Controller (For your secondary site).
-7. Completed Module 2, Exercise - Deploy an Azure Arc-enabled SQL MI (For your secondary site).
+7. Completed Module 2, Exercise - Deploy an Azure Arc-enabled SQL Managed Instance (For your secondary site).
 8. Ensure to set your license type: Disaster Recovery.
-9. Have access to a shared local storage location to which both Azure Arc-enabled SQL MIs have access.
+9. Have access to a shared local storage location to which both Azure Arc-enabled SQL Managed Instances have access.
 
-### Deploy Arc-enabled SQL MI Failover Groups
+### Deploy Arc-enabled SQL Managed Instance Failover Groups
 
 1. In Azure Data Studio, open the Terminal Window.
 2. Ensure you are connected to your Azure Subscription.
-3. Prepare your Arc-enabled SQL MI primary site parameter values:
+3. Prepare your Arc-enabled SQL Managed Instance primary site parameter values:
 
   ```Powershell
-  ## Primary Site Arc-enabled SQL MI parameter details
+  ## Primary Site Arc-enabled SQL Managed Instance parameter details
   $Env:MySubscription = 'enter your subscription id here'
   $Env:MyPrimaryResourceGroup = 'enter your primary site resource group name'
   $Env:MyPrimaryNamespace = 'enter your primary site data controller namespace'
-  $Env:MyPrimaryInstance = 'enter your primary site SQL MI name'
+  $Env:MyPrimaryInstance = 'enter your primary site SQL Managed Instance name'
   $Env:MyCertFullPath = 'enter you local path/sqlcerts'
   $Env:MyPrimaryCertFile = 'sqlprimary.pem'  ## Use anyname you wish
   $Env:MyAFG = 'aemsldag' ## Use any name you wish
@@ -393,7 +391,7 @@ Make sure to complete the following before proceeding:
   $Env:MyPrimaryCluster = 'enter your primary site kubernetes cluster name here'
   ```
 
-![Image of Arc-enabled SQL MI DR Primary Site Prep](../media/Arc-enabled-dataservices-module-4-exercise5-prepare-primarysite-parameters-1.png)
+   ![Screenshot of Arc-enabled SQL Managed Instance DR Primary Site Prep.](../media/exercise5-prepare-primary-site-parameters-1.png)
 
 4. Ensure you are connected to your primary site Kubernetes Cluster.
 
@@ -401,7 +399,7 @@ Make sure to complete the following before proceeding:
   Kubectl config use-context $Env:MyPrimaryCluster
   ```
 
-![Image of Arc-enabled SQL MI Primary Site Cluster Context](../media/Arc-enabled-dataservices-module-4-exercise5-prepare-primarysite-cluster-context-1.png)
+   ![Screenshot of Arc-enabled SQL Managed Instance Primary Site Cluster Context.](../media/exercise5-prepare-primary-site-cluster-context-1.png)
 
 5. Retrieve the mirroring certificate for the primary site. This is required to be accessible to both sites. In this example, we are using the local user account home location. Ensure you set this appropriately for your environment. You can confirm the creation of the `sqlprimary.pem` certificate file in your configured local location.
 
@@ -413,7 +411,7 @@ Make sure to complete the following before proceeding:
     --use-k8s
   ```
 
-6. Retrieve the SQL MI Mirroring Endpoint IP address for the primary site:
+6. Retrieve the SQL Managed Instance Mirroring Endpoint IP address for the primary site:
 
   ```PowerShell
   $PrimaryMirroringEndpoint = $(
@@ -426,18 +424,18 @@ Make sure to complete the following before proceeding:
   $Env:MyPrimaryMirroringIP = "tcp://$PrimaryMirroringEndpoint"
   ```
 
-7. Prepare your Arc-enabled SQL MI secondary site parameter values:
+7. Prepare your Arc-enabled SQL Managed Instance secondary site parameter values:
 
   ```Powershell
   $Env:MySecondaryResourceGroup = 'enter your secondary site resource group name'
   $Env:MySecondaryNamespace = 'enter your secondary site data controller namespace'
-  $Env:MySecondaryInstance = 'enter your secondary site SQL MI name'
+  $Env:MySecondaryInstance = 'enter your secondary site SQL Managed Instance name'
   $Env:MySecondaryCertFile = 'sqlsecondary.pem'  ## Use anyname you wish
   $Env:MySecondaryDAG = 'sqlsecondary-dag'  ## Use anyname you wish
   $Env:MySecondaryCluster = 'enter your secondary site kubernetes cluster name here'
   ```
 
-![Image of Arc-enabled SQL MI DR Secondary Site Prep](../media/Arc-enabled-dataservices-module-4-exercise5-prepare-secondarysite-parameters-2.png)
+![Screenshot of Arc-enabled SQL Managed Instance DR Secondary Site Prep.](../media/exercise5-prepare-secondary-site-parameters-2.png)
 
 8. Ensure you are connected to your secondary site Kubernetes Cluster.
 
@@ -445,7 +443,7 @@ Make sure to complete the following before proceeding:
   Kubectl config use-context $Env:MySecondaryCluster
   ```
 
-![Image of Arc-enabled SQL MI Secondary Site Cluster Context](../media/Arc-enabled-dataservices-module-4-exercise5-prepare-secondarysite-cluster-context-1.png)
+   ![Screenshot of Arc-enabled SQL Managed Instance Secondary Site Cluster Context.](../media/exercise5-prepare-secondary-site-cluster-context-1.png)
 
 9. Retrieve the mirroring certificate for the secondary site. This is required to be accessible to both sites. In this example, we are using the local user account home location. Ensure you set this appropriately for your environment. You can confirm the creation of the `sqlsecondary.pem` certificate file in your configured local location.
 
@@ -457,7 +455,7 @@ Make sure to complete the following before proceeding:
     --use-k8s
   ```
 
-10. Retrieve the SQL MI Mirroring Endpoint IP address for the secondary site:
+10. Retrieve the SQL Managed Instance Mirroring Endpoint IP address for the secondary site:
 
   ```PowerShell
   $SecondaryMirroringEndpoint = $(
@@ -542,10 +540,10 @@ Make sure to complete the following before proceeding:
 
 15. Open SQL Server Management Studio and connect to the primary external endpoint for the primary site instance. Expand the Always On High Availability Tree. You should now see the newly created Azure Failover Group.
 
-![Image of Arc-enabled SQL MI Primary Site Distributed AG - SQL Server Management Studio](../media/Arc-enabled-dataservices-module-4-exercise5-primary-site-dag.png)
+   ![Screenshot of Arc-enabled SQL Managed Instance Primary Site Distributed AG - SQL Server Management Studio.](../media/exercise5-primary-site-distributed-availability-group.png)
 
 16. In SQL Server Management Studio, connect to the primary external endpoint for the secondary site instance. Expand the Always On High Availability Tree. You should now see the newly created Azure Failover Group.
 
-![Image of Arc-enabled SQL MI Primary Site Distributed AG](../media/Arc-enabled-dataservices-module-4-exercise5-secondary-site-dag.png)
+   ![Screenshot of Arc-enabled SQL Managed Instance Primary Site Distributed AG.](../media/exercise5-secondary-site-distributed-availability-group.png)
 
 17. Expand the database tree on the secondary site instance. You should see the AdventureWorks2019 database that was restored to your primary site instance previously. Notice you did not have to perform any tasks to get your primary site database onto your secondary site instance. With the creation of the Azure Failover Group (Distributed Availability Group), all databases on the primary instance will automatically be seeded to the secondary site. Depending on the size of the database, the network bandwidth between the primary and secondary sites will dictate the time for the databases to be synchronized. 
