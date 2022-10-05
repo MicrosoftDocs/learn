@@ -29,6 +29,5 @@ subjects:
 modules:
 - learn.create-azure-db-for-postgresql
 - learn.azure.create-and-connect-to-azure-database-postgresql
-- learn.intro-to-hyperscale
 trophy:
   uid: learn.azure.azure-database-for-postgresql.trophy
