@@ -12,6 +12,8 @@ In this module, you learned about Azure data integration and data analysis solut
 
 - Get an [overview of Azure Synapse Link for Azure Cosmos DB](/azure/cosmos-db/synapse-link).
 
+- Understand [Analytics end-to-end with Azure Synapse](/azure/architecture/example-scenario/dataplate2e/data-platform-end-to-end).
+
 - Understand [Transact-SQL features supported in Azure Synapse SQL](/azure/synapse-analytics/sql/overview-features).
 
 - Understand [stream processing](/training/modules/ingest-data-streams-with-azure-stream-analytics/2-understand-stream-processing).

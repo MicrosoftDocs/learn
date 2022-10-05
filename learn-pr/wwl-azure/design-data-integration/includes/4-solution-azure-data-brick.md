@@ -20,7 +20,7 @@ Azure Databricks offers three environments for developing data intensive applica
 
 #### Business scenario
 
-Let's analyze a situation for Tailwind Traders in the heavy machinery manufacturing division. Tailwind Traders is using Azure cloud services for their big data needs. They're working with both batch data and streaming data. The division employs data engineers, data scientists, and data analysts who collaborate to produce quick insightful reporting for many stakeholders. To fulfill the big data requirements, you plan to recommend Azure Databricks and implement the Data Science and Engineering environment.
+Let's analyze a scenario for Tailwind Traders in the heavy machinery manufacturing division. Tailwind Traders is using Azure cloud services for their big data needs. They're working with both batch data and streaming data. The division employs data engineers, data scientists, and data analysts who collaborate to produce quick insightful reporting for many stakeholders. To fulfill the big data requirements, you plan to recommend Azure Databricks and implement the Data Science and Engineering environment.
 
 Let's review why Azure Databricks can be the right choice to meet these requirements.
 
@@ -40,7 +40,7 @@ Let's review why Azure Databricks can be the right choice to meet these requirem
 
 - Azure Databricks Machine Learning is also not the right environment choice because machine learning isn't a requirement in this scenario.
 
-### Things to consider when Azure Databricks
+### Things to consider when using Azure Databricks
 
 You can use Azure Databricks as a solution for multiple scenarios. Consider how the service can benefit your data integration solution for Tailwind Traders.
 
