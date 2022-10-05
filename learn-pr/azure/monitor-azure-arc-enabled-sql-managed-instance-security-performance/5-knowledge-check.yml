@@ -3,7 +3,7 @@ uid: learn.monitor-azure-arc-enabled-sql-managed-instance-security-performance.k
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Demonstrate your knowledge of Azure Arc-enabled SQL Managed Instance."
   ms.date: 8/23/2022
   author: tchristiani
   ms.author: terrychr

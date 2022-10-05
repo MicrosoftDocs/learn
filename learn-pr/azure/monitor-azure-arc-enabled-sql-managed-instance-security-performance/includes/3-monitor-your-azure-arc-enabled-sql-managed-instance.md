@@ -1,16 +1,16 @@
 For production workloads running on your Arc-enabled SQL Managed Instance (MI) environments, it is very important to continuously understand the resource consumption and any potential performance issues to allow for your business operations to continue running smoothly.
 
 Arc-enabled SQL MI provides out of the box the following monitoring capabilities:
+
 - **Grafana**: Provides pre-built metrics dashboards for us to easily understand what is happening in our environment.
 - **Kibana**: Provides easy access to the collected logs and easy search capabilities of the logs
 - **Azure Monitor**: Provides pre-built in-sights to assist with understanding the overall health of our environment.
-
 
 ## Grafana
 
 Grafana is an open-source analytics and monitoring solution for databases provided out of the box with Arc-enabled SQL MI. Whether your deployment is in directly or indirectly connected modes, Grafana is available locally for you to monitor your environment.
 
-### Accessing Grafana Dashboards
+### Accessing Grafana dashboards
 
 Open Azure Data studio, expanding the Connections tab to reveal the deployed Arc data controller. Right-click on an Arc-enabled SQL MI and select Manage.
 
