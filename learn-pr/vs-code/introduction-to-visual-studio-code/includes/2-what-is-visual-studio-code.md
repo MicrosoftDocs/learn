@@ -51,13 +51,13 @@ Visual Studio Code integrates with many debuggers so that you can run and debug 
 
 ### Integrated source control
 
-Visual Studio Code lets you manage your code with Git-compatible tools. You can perform actions such as committing changes to  repositories that reside in a remote Source Control Management provider such as GitHub. You can run Git commands in the Visual Studio Code's integrated terminal or use the GUI-based Git tools in the Source Control view.
+Visual Studio Code lets you manage your code with Git-compatible tools. You can perform actions such as committing changes to repositories that reside in a remote Source Control Management provider such as GitHub. You can run Git commands in the Visual Studio Code's integrated terminal or use the GUI-based Git tools in the Source Control view.
 
 :::image type="content" source="../media/2-integration-with-source-control.png" alt-text="Screenshot of Visual Studio Code in with the Source Control view displayed":::
 
 ### Extensibility through extensions
 
-You can add more features and functionality beyond what's in the initial download of Visual Studio Code.  You can add support for additional languages, frameworks, themes, and tools. For example, a few of the many C++ extensions available in the martketplace are displayed in the following screen shot:
+You can add more features and functionality beyond what's in the initial download of Visual Studio Code. You can add support for additional languages, frameworks, themes, and tools. For example, a few of the many C++ extensions available in the martketplace are displayed in the following screen shot:
 
 :::image type="content" source="../media/2-extensions-marketplace.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed":::
 
