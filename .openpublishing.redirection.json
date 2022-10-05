@@ -17739,6 +17739,16 @@
       "source_path": "learn-pr/wwl-azure/secure-mysql/7-exercise-configure-azure-active-directory-authentication-mysql.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/secure-mysql/",
       "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/6-configure-azure-active-directory-authentication.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
+      "redirect_document_id": false
+    },
+      {
+      "source_path": "learn-pr/wwl-azure/secure-azure-database-for-postgresql/7-exercise-configure-azure-active-directory-authentication.md",
+      "redirect_url": "/training/modules/secure-azure-database-for-postgresql/",
+      "redirect_document_id": false
     }
   ]
 }
