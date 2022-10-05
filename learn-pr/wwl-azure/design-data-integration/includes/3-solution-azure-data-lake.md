@@ -45,7 +45,7 @@ Tailwind Traders has multiple sources of data, including websites, Point of Sale
 
 Let's review how Azure Data Lake Storage can be the right choice for the organization's big data requirements.
 
-| Requirement | Description |
+| Scenario | Solution |
 | --- | --- |
 | _Provide a data warehouse on the cloud for managing large volumes of data_. | Azure Data Lake Storage runs on virtual hardware on the Azure platform. Storage is scalable, fast, and reliable without incurring massive charges. It separates storage costs from compute costs. As your data volume grows, only your storage requirements change. |
 | _Support a diverse collection of data types, such as JSON files, CSV, log files, or other formats_. | Azure Data Lake Storage enables data democratization for your organization by storing all your data formats (including raw data) in a single location. By eliminating data silos, your users can use tools like Azure Data Explorer to access and work with every data item in their storage account. |
