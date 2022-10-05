@@ -29,7 +29,7 @@ For optimization solutions, these are the available providers you can choose fro
 
 ## Azure subscription
 
-The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account to access and manage Azure resources.
+The cloud is a powerful place that hosts many moving parts. To use the Microsoft cloud platform, Azure, your crew needs to first have an account with an active subscription to access and manage Azure resources.
 
 A *subscription* represents a grouping of Azure resources. An invoice is generated at the subscription scope. A subscription has its own payment methods that are used to pay its invoice. [Learn how to create an Azure account.](/training/modules/create-an-azure-account/?azure-portal=true)
 
