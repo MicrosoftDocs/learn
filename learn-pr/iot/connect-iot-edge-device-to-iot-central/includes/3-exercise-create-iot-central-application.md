@@ -124,9 +124,11 @@ You're now ready to publish the template and add a device:
 
 1. Select **Publish**, and then in the **Publish this device template to the application** dialog, select **Publish**.
 
-1. Go to the **Devices** page in your IoT Central application. Then select **+ New**.
+1. Go to the **Devices** page in your IoT Central application.
 
-1. In the **Create a new device** dialog, enter *store-001* as the device ID. Make sure that the device template is **Unassigned**. Set **Azure IoT Edge device?** to **Yes**. Then select the **Environmental Sensor** deployment manifest.
+1. Select the **Environmental Sensor Edge** device template and then select **+ New**.
+
+1. In the **Create a new device** dialog, enter *store-001* as the device ID. Make sure that the device template is **Environmental Sensor Edge**. The **Azure IoT Edge device?** is already set to **Yes**. Then select the **Environmental Sensor** deployment manifest.
 
 1. Still in the **Create a new device** dialog, select the **Environmental Sensor Edge Device** device template. Select **Create**.
 
@@ -134,7 +136,7 @@ You're now ready to publish the template and add a device:
 
     :::image type="content" source="../media/3-registered-device.png" alt-text="Screenshot that shows the registered device in the device list.":::
 
-1. In the list of devices, click on the device name **store-001**. You can see the available views for the device, including **Store information** and **View IoT Edge device telemetry**.
+1. In the list of devices, click on the device name **Environmental Sensor Edge Device - store-001**. You can see the available views for the device, including **Store information** and **View IoT Edge device telemetry**.
 
 1. Select **Connect**. Make a note of the **ID scope**  and **Primary key**. You'll use these values later to configure your IoT Edge device to connect to your application.
 

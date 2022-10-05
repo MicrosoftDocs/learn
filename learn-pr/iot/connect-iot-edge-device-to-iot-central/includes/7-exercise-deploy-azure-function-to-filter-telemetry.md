@@ -97,14 +97,13 @@ To upload the new deployment manifest:
 
 1. The **Review and finish** page shows the new **filterfunction** module. Select **Save**.
 
-1. Navigate to the **store-001** device from the **Devices** page and select **Modules**.
+1. Navigate to the **Environmental Sensor Edge Device - store-001** device from the **Devices** page and select **Modules**.
 
 1. On the **Modules** page, select **Manage manifest > Assign edge manifest**. Select the **Environmental Sensor** manifest.
 
 1. The list of modules now includes the running **filterfunction** module:
 
 :::image type="content" source="../media/7-filterfunction-running.png" alt-text="Screenshot that shows the FilterFunction module running on the IoT Edge device.":::
-
 
 ## Update the device template to use the new module
 

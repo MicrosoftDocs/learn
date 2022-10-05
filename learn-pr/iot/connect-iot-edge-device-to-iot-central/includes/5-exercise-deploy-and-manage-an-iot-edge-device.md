@@ -39,7 +39,7 @@ az deployment group create \
   --parameters deviceKey="$DEVICE_KEY"
 ```
 
-Navigate to the **Devices** page in your IoT Central application. If you've forgotten the URL, run the following command:
+Navigate to the **Environmental Sensor Edge Device** devices on the **Devices** page in your IoT Central application. If you've forgotten the URL, run the following command:
 
 ```azurecli
 echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/devices"
