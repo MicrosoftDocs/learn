@@ -54,7 +54,7 @@ The transport layer is responsible for managing the flow of data between hosts o
 
 ## Network layer
 
-The network layer is sometimes called the Internet layer and it's responsible for sending and receiving simple packets across the network. Following is a table describing the more commonly used protocols.
+The network layer is sometimes called the Internet layer and it's responsible for sending and receiving simple packets across the network. Following is a table describing some of the more commonly used protocols.
 
 | Protocol                                     | Description                                                                                                                |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
