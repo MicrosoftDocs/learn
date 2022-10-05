@@ -50,7 +50,7 @@ Let's review how the Azure Data Factory components are involved in a data prepar
 
 ### Things to consider when using Azure Data Factory
 
-Evaluate Azure Data Factory against the following decision criteria and consider how the service can benefit your data ingestion solution for Tailwind Traders.
+Evaluate Azure Data Factory against the following decision criteria and consider how the service can benefit your data integration solution for Tailwind Traders.
 
 - **Consider requirements for data integration**. Azure Data Factory serves two communities: the big data community and the relational data warehousing community that uses SQL Server Integration Services (SSIS). Depending on your organization's data needs, you can set up pipelines in the cloud by using Azure Data Factory. You can access data from both cloud and on-premises data services. 
 
