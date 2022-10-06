@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.azure.release-ignite-azure-commercial
+metadata:
+  title: 'Purchase Azure savings plan for compute'
+  description: Purchase Azure savings plan for compute helps customers minimize their operational costs.
+  ms.date: 10/06/2022
+  author: mpolicht
+  ms.author: kyleikeda
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Purchase Azure savings plan for compute '
+summary: Purchase Azure savings plan for compute.
+abstract:  | 
+  After completing this module, you’ll be able to:
+  - Evaluate, manage, and optimize the Purchase Azure savings plan for compute.
+  
+prerequisites: |
+  To get the best learning experience from this module, you should have:
+  - A basic understanding of Azure cost management.
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- solution-architect
+- data-engineer
+- technology-manager
+- procurement-manager 
+products:
+- azure
+units:
+- learn.azure.release-ignite-azure-commercial.introduction
+- learn.azure.release-ignite-azure-commercial.what-azure-savings-plan-for-compute
+- learn.azure.release-ignite-azure-commercial.optimize-benefits-azure-savings-plan-for-compute
+- learn.azure.release-ignite-azure-commercial.prepare-purchasing-azure-savings-plan-for-compute
+- learn.azure.release-ignite-azure-commercial.purchase-azure-savings-plan-for-compute
+- learn.azure.release-ignite-azure-commercial.manage-monitor-azure-savings-plan-for-compute
+- learn.azure.release-ignite-azure-commercial.knowledge-check
+- learn.azure.release-ignite-azure-commercial.summary
+badge:
+  uid: learn.azure.release-ignite-azure-commercial.badge
