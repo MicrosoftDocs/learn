@@ -3,4 +3,4 @@ In this module, you've learned how you can leverage Azure savings plan for compu
 #### References
 
 - [Savings plan for compute](https://partner.microsoft.com/resources/collection/azure-savings-plan-for-compute) 
-- [Usage Details API](https://docs.microsoft.com/en-us/rest/api/consumption/usagedetails/list)
+- [Usage Details API](/en-us/rest/api/consumption/usagedetails/list)
