@@ -108,7 +108,7 @@ roles:
 ### Use value(s) from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
 ###
 products:
-  - SQL Server
+  - sql-server
 ###########################################################################
 ###
 ### Specify the subject areas.
