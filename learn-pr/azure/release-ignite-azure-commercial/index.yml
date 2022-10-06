@@ -26,7 +26,7 @@ roles:
 - solution-architect
 - data-engineer
 - technology-manager
-- procurement-manager 
+### - procurement-manager 
 products:
 - azure
 units:
