@@ -51,7 +51,7 @@ In the example above, you're setting the time element in the query. You also can
 
 1. Run the query. The results for this query should return the same number as the query that included the time element.
     
-    ![Image showing the popup with the date and time settings.](../media/time-range-monitoring-logs.png)
+    ![Screenshot showing the popup with the date and time settings.](../media/time-range-monitoring-logs.png)
 
 1. Now change the query to the following and run the query
     `AppRequests | where Name contains "SmartRequest"`
