@@ -1,16 +1,16 @@
 Because Contoso uses Microsoft Sentinel, you already understand many of its capabilities. However, the Microsoft Sentinel solution isn’t integrated with your SAP system. You need to understand the components of the Microsoft Sentinel solution for SAP. You also need to understand which cross-functional team members to involve in the planning process.
 
-With the Microsoft Sentinel solution for SAP, you can monitor, detect, and respond to suspicious activities and guard your SAP environment. You can protect business-critical data and systems against sophisticated cyberattacks. 
+With the Microsoft Sentinel solution for SAP, you can monitor, detect, and respond to suspicious activities and guard your SAP environment. You can protect business-critical data and systems against sophisticated cyberattacks.
 Microsoft designed the solution specifically for SAP systems. The solution connects to SAP and brings operational data into Microsoft Sentinel. The solution helps you:
 
 - Gain visibility across SAP business logic, application, database, and operating system layers by using built-in investigation and threat-detection tools.
-- Discover suspicious activity—including privilege escalation, unauthorized changes, sensitive transactions, and suspicious data downloads—by using out-of-the-box detection capabilities.
+- Discover suspicious activity including privilege escalation, unauthorized changes, sensitive transactions, and suspicious data downloads by using out-of-the-box detection capabilities.
 - Accurately detect SAP threats by using data correlation from all sources and SAP infrastructure.
 
 In addition, you can extend built-in security content by building your own threat-detection solutions to monitor, analyze, and display data related to specific business risks. You can:
 
 - Customize playbooks by using automation rules, so you can automatically take action from an alert or incident.
-- Use the built-in Microsoft Sentinel watchlists—or create your own—to detect specific types of activities in your SAP systems.
+- Use the built-in Microsoft Sentinel watchlists or create your own—to detect specific types of activities in your SAP systems.
 - Conduct ad-hoc threat hunting with custom queries across all your SAP signals.
 - Create Microsoft Sentinel workbooks for interactive data visualization.
 
