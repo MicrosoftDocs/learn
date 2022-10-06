@@ -18,7 +18,7 @@ To purchase a savings plan for a management group, you require at least the read
 
 ### Savings plan and reservations trade-in
 
-You can purchase a savings plan by making a new commitment, or you can trade in one or more active reservations for a savings plan. When you purchase a savings plan via reservation trade-in, the reservation will be cancelled, and the monetary value of the unused reservation benefits will be converted to the equivalent hourly commitment for the savings plan. If the resulting commitment is not sufficient for your needs, you can increase it, but you do not have the option of reducing it.
+You can purchase a savings plan by making a new commitment, or you can trade in one or more active reservations for a savings plan. When you purchase a savings plan via reservation trade-in, the reservation will be canceled, and the monetary value of the unused reservation benefits will be converted to the equivalent hourly commitment for the savings plan. If the resulting commitment is not sufficient for your needs, you can increase it, but you do not have the option of reducing it.
 
 You can trade in one or more eligible reservations (including VM, Dedicated Host, and App Service resources) for a savings plan. When you trade in reservations, the hourly commitment of the new savings plan must be greater than the leftover payments that are canceled for the returned reservation(s). There are no other limits or fees for trade ins. You can trade in a reservation that's paid for up front to purchase a new savings plan that's billed monthly. However, the lifetime value of the new savings plan must be greater than the prorated value of the reservations traded in.
 
