@@ -10,7 +10,7 @@ Microsoft supports one of the largest network backbones in the world, with over 
 
 Any traffic between datacenters - within Microsoft Azure or between Microsoft services such as Virtual Machines, Microsoft 365, Xbox, SQL Database, Storage, and virtual networks - are routed within the global network and never over the public internet, to ensure optimal performance and integrity.
 
-![Datacenters, edges, and networks.](../media/image5.png)
+![Graphic illustration showing datacenters, edges, and networks.](../media/cloud-networking.png)
 
 ## Networking services and product offerings
 

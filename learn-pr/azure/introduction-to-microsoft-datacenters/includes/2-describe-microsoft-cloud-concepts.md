@@ -1,6 +1,4 @@
-Your research projects typically start with a big-picture overview.
-
-You already know that datacenters are the main physical building blocks that enable the Microsoft Cloud, its services, and partner offerings.
+Your research projects typically start with a big-picture overview. You already know that datacenters are the main physical building blocks that enable the Microsoft Cloud, its services, and partner offerings.
 
 What are these different types of cloud services running in datacenters? There are three general types available:
 
@@ -10,7 +8,7 @@ What are these different types of cloud services running in datacenters? There a
 
 - Infrastructure as a service (IaaS), a type of cloud computing service that offers compute, storage, and networking resources on demand. IaaS offerings enable organizations to remove the cost and complexity of buying and managing physical servers and datacenter infrastructure. Organizations pay for each resource for as long as it is needed, on a pay-as-you-go basis. A [cloud computing service provider](https://azure.microsoft.com/resources/cloud-computing-dictionary/choosing-a-cloud-service-provider/) like [Azure](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/) manages the infrastructure, while you purchase, install, configure, and manage your own software - including operating systems, middleware, and applications.
 
-![Saas/PaaS/Iaas cloud services.](../media/image1.png)
+![Graphic illustration showing cloud service types.](../media/cloud-service-types.png)
 
 Microsoft offers all three solution types in its datacenters around the world through a broad range of offerings, including: 
 

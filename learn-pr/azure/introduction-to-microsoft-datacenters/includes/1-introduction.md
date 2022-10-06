@@ -1,4 +1,4 @@
-Your Chief Information Officer (CIO) has asked you, the IT ops manager at global manufacturer Contoso, to help explain the basics of Microsoft Azure infrastructure. Contoso uses Microsoft Cloud software as a service (SaaS) offerings - including Microsoft 365 - and is exploring moving on-premises workloads to the cloud and developing new applications.  
+Your Chief Information Officer (CIO) has asked you, the IT ops manager at global manufacturer Contoso, to help explain the basics of Microsoft Azure infrastructure. Contoso uses Microsoft Cloud software as a service (SaaS) offerings - including Microsoft 365 - and is exploring moving on-premises workloads to the cloud and developing new applications.
 
 The CIO wants you to discover how Microsoft Cloud datacenters work and help your IT team understand decision points for selecting Azure services.
 

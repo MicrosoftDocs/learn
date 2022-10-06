@@ -17,6 +17,7 @@ abstract: |
   - Explain Azure geographies, regions, availability zones, and networking
   - Explain how Microsoft internal operations support Azure customers 
 prerequisites: |
+  For the best learning experience from this module, you should already have the following knowledge and experience:
   - IT experience with infrastructure
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

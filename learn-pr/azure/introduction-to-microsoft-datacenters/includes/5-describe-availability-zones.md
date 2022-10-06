@@ -8,7 +8,7 @@ You'll recall that regions reside within geographies. Availability zones reside 
 
 To help ensure resiliency and tolerance to failure, Microsoft offers a minimum of three separate availability zones in all availability zone-enabled regions. Each zone is composed of one or more datacenters equipped with independent power, cooling, and networking infrastructure. Even if one zone is affected, the other two zones can deliver regional services, capacity, and high availability. 
 
-![Geography of Azure regions.](../media/image4.png)
+![Graphic illustration showing Azure availability zones.](../media/availability-zones.png)
 
 Availability zones and associated datacenters are connected by a high-performance network with a round-trip latency of less than 2 ms. This low latency design requirement helps keep data synchronized and accessible when things go wrong. With availability zones, you can design and operate applications and databases that automatically transition between zones to avoid interruption. Azure availability zones are highly available, fault-tolerant, and more scalable than traditional single- or multiple-datacenter infrastructures.
 

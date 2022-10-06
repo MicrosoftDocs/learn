@@ -38,7 +38,7 @@ A TEE is an environment that enforces execution of only authorized code. Any dat
 
 As a result, the confidential computing threat model minimizes the ability of a cloud provider and other actors in the tenant's domain to access code and data as it's being executed.
 
-![Graphic of three states of data protection, with confidential computing's data in use highlighted.](../media/image6.png)
+![Graphic illustration showing three states of data protection, with confidential computing's data in use highlighted.](../media/data-protection-states.png)
 
 When used with data encryption at rest and in transit, confidential computing protects sensitive or highly regulated datasets and application workloads in a secure public cloud platform. Confidential computing extends beyond generic data protection. TEEs are also being used to protect proprietary business logic, analytics functions, machine-learning algorithms, and entire applications.
 

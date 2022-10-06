@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "Which of the following best describes the Microsoft global network (WAN)?"
     choices:
-    - content: "The Microsoft global network contains over 175 thousand miles of cables and more than 190 access points. "
+    - content: "The Microsoft global network contains over 175 thousand miles of cables and more than 190 access points."
       isCorrect: true
-      explanation: "Correct. The Microsoft global network is one of the largest in the world."
+      explanation: "Correct. The Microsoft global network is one of the largest networks in the world."
     - content: "The Microsoft global network spans the United States and Europe."
       isCorrect: false
       explanation: "Incorrect. The Microsoft global network is a global implementation."
