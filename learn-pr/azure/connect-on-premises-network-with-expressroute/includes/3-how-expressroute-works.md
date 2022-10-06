@@ -25,7 +25,7 @@ ExpressRoute works by peering your on-premises networks with networks running in
 
 - Ensure that BGP sessions for routing domains have been configured. Depending on your partner, this might be their or your responsibility. Additionally, for each ExpressRoute circuit, Microsoft requires redundant BGP sessions between Microsoft’s routers and your peering routers.
 - You or your providers need to translate the private IP addresses used on-premises to public IP addresses by using a NAT service. Microsoft will reject anything except public IP addresses through Microsoft peering.
-- Reserve several blocks of IP addresses in your network for routing traffic to the Microsoft cloud. You'll configure these blocks as either a /29 subnet or two /30 subnets in your IP address space. One of these subnets is used to configure the primary link to the Microsoft cloud, and the other implements a secondary link. The first address in these subnets represent your end of the BGP peer, and the second address is Microsoft's BGP peer IP.
+- Reserve several blocks of IP addresses in your network for routing traffic to the Microsoft cloud. You'll configure these blocks as either a /29 subnet or two /30 subnets in your IP address space. One of these subnets is used to configure the primary link to the Microsoft cloud, and the other implements a secondary link. The first address in these subnets represents your end of the BGP peer, and the second address is Microsoft's BGP peer IP.
 
 ExpressRoute supports two peering schemes:
 
@@ -65,7 +65,7 @@ When you're using the Azure portal, select **+ Create a resource** and search fo
 | **Provider** | The ExpressRoute provider with which you've registered your subscription.  |
 | **Peering location** | A location enabled by the ExpressRoute provider in which to create your circuit. |
 | **Bandwidth** | Select your bandwidth, from 50 Mbps up to 10 Gbps. Start with a low value. You can increase it later with no interruption to service. However, you can't reduce the bandwidth if you set it too high initially. |
-| **SKU** | Select **Local** (if available) if you only need to connect to Azure resource in 1 or 2 Azure regions in the same metro. Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geographical region. Otherwise, select **Premium** which will allows you to connect more than 10 virtual networks and global connectivity to Azure resources. |
+| **SKU** | Select **Local** (if available) if you only need to connect to Azure resource in 1 or 2 Azure regions in the same metro. Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geographical region. Otherwise, select **Premium** which allows you to connect more than 10 virtual networks and global connectivity to Azure resources. |
 | **Billing model** | Select **Unlimited** to pay a flat fee regardless of usage. Or select **Metered** to pay according to the volume of traffic that enters and exits the circuit. |
 | **Allow classic operations** | Select **Yes** allows classic virtual networks to connect to the circuit. Otherwise, select **No**. |
 
