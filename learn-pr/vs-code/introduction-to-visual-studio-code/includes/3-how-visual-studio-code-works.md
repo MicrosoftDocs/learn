@@ -42,11 +42,11 @@ Here's what you do:
 
 1. First, you download and install Visual Studio Code on your computer.
 
-1. Next, you launch Visual Studio Code and using the built-in terminal, you install a Node.js package that will help you scaffold a basic Node.js application. Scaffolding creates the basic files needed to run a Node.js application.
+1. Next, you launch Visual Studio Code and using the built-in terminal, you install a Node.js package that will help you scaffold a basic Node.js application. Scaffolding creates several files needed to run a basic Node.js application.
 
 1. Using the editor workspace, you edit these files. The IntelliSense built-in to the editor assists you as you write and edit code by providing hints for code completion. This feature helps you save time and ensure your code's syntax is correct.
 
-1. As you work, you can check your files into GitHub using the built-in Source Control view or by issuing Git commands from the integrated terminal.
+1. As you work, you can check your files into GitHub using the built-in Source Control view or by issuing Git commands from the integrated terminal. By integrating with GitHub, you can maintain versions of your work that help you better manage changes to your code over time.
 
 1. Now that you're getting comfortable with Visual Studio Code, you decide to install a Visual Studio Code extension that will add to your productivity by making your code's format easier to read. You search for and install the Prettier extension.
 

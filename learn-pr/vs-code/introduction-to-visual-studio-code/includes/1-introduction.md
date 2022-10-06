@@ -1,10 +1,10 @@
-Whether you're a beginning or experienced developer, you'll need an integrated development environment (IDE) to create, edit, manage, run, and debug code. There are many different IDEs available. Some are essentially simple text editors. Others can have many advanced features and built-in support for multiple languages. But these full-featured IDEs often have a large installation footprint and a steeper learning curve than simpler IDEs.
+Whether you're a beginning or an experienced developer, you'll need an integrated development environment (IDE) to create, edit, manage, run, and debug code. There are many different IDEs available. Some are essentially simple text editors. Others can have many advanced features and built-in support for multiple languages. But these full-featured IDEs often have a large installation footprint and a steeper learning curve than simpler IDEs.
 
 So how do you know which IDE is right for you? It depends on what your needs are. For example, what programming languages are you using? Do you need to integrate with a source control management (SCM) provider such as GitHub?
 
 ## Example scenario
 
-Suppose you're building a website for a restaurant in your hometown. You know that you'll need to create the pages using HTML, CSS, and JavaScript. In addition, you'd like to be able to debug your code and view your site locally on your computer as you're testing. You also want incorporate a version control system to manage changes to your webpages.
+Suppose you're building a website for a restaurant in your hometown. You know that you'll need to create the pages using HTML, CSS, and JavaScript. In addition, you'd like to be able to debug your code and view your site locally on your computer as you're testing. You also want to incorporate a version control system to manage changes to your webpages.
 
 In addition, suppose the restaurant needs to create an inventory management system in C++ that can be used by employees from desktops in the kitchen and back office. You want to make sure that your IDE supports C++ syntax, libraries, compilers, and debuggers.
 
@@ -16,4 +16,4 @@ In this module, we'll evaluate if Visual Studio Code is the right IDE for variou
 
 ## What is the main goal?
 
-By the end of this module, you'll evaluate if Visual Studio Code meets your set of programming requirements.
+By the end of this module, you'll have the knowledge to be able to evaluate if Visual Studio Code meets your set of programming requirements.
