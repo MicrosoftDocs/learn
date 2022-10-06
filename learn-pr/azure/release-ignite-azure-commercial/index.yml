@@ -20,15 +20,21 @@ prerequisites: |
   
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
+- beginner
 - intermediate
 roles:
 - administrator
+- developer
 - solution-architect
 - data-engineer
 - technology-manager
 ### - procurement-manager 
 products:
 - azure
+- azure-cost-management
+subjects:
+- cloud-computing
+- finance-accounting
 units:
 - learn.azure.release-ignite-azure-commercial.introduction
 - learn.azure.release-ignite-azure-commercial.what-azure-savings-plan-for-compute
