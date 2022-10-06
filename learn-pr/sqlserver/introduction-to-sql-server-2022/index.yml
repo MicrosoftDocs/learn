@@ -108,7 +108,7 @@ roles:
 ### Use value(s) from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
 ###
 products:
-  {{products}}
+  - SQL Server
 ###########################################################################
 ###
 ### Specify the subject areas.
@@ -121,14 +121,14 @@ subjects:
 ### The units will be populated automatically during scaffold generation.
 ###
 units:
-- learn.introduction-to-sql-server-2022.introduction
-- learn.introduction-to-sql-server-2022.deploy-and-feature-diff
-- learn.introduction-to-sql-server-2022.cloud-connected
-- learn.introduction-to-sql-server-2022.built-in-query-intelligence
-- learn.introduction-to-sql-server-2022.security-scalability-availability
-- learn.introduction-to-sql-server-2022.data-virtualization-object-storage
-- learn.introduction-to-sql-server-2022.sql-language-enhancements
-- learn.introduction-to-sql-server-2022.summary
+- learn.introduction-to-sql-server-2022.1-introduction
+- learn.introduction-to-sql-server-2022.2-deploy-and-feature-diff
+- learn.introduction-to-sql-server-2022.3-cloud-connected
+- learn.introduction-to-sql-server-2022.4-built-in-query-intelligence
+- learn.introduction-to-sql-server-2022.5-security-scalability-availability
+- learn.introduction-to-sql-server-2022.6-data-virtualization-object-storage
+- learn.introduction-to-sql-server-2022.7-sql-language-enhancements
+- learn.introduction-to-sql-server-2022.8-summary
 ###########################################################################
 ###
 ### TODO verify your badge
