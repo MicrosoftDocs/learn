@@ -146,9 +146,9 @@ To review savings plan costs, you can use the Cost Analysis page of Cost Manag
 
 ![Note]: The Actual cost and Amortized cost views represent the  Actual Cost and Amortized Cost datasets, respectively.
 
-:::image type="content" source="../media/6-amortized-and-actual-costs.svg" alt-text="Screenshot depicting the actual costs and amortized costs view." border="false":::
+:::image type="content" source="../media/6-amortized-and-actual-costs.png" alt-text="Screenshot depicting the actual costs and amortized costs view." border="false":::
 
-:::image type="content" source="../media/6-amortized-costs-resource-groups.svg" alt-text="Screenshot depicting the amortized costs resource groups." border="false":::
+:::image type="content" source="../media/6-amortized-costs-resource-groups.png" alt-text="Screenshot depicting the amortized costs resource groups." border="false":::
 
 To review a break-down of usage, purchases, and refunds, group by *Charge Type* or, for a break-down of savings plan and on-demand costs, group by *Pricing Model*. You can also group by *Benefit* and use the *BenefitId* and *BenefitName* associated with your savings plan to identify the costs related to specific savings plan purchases. Note that the only savings plan costs that will be listed as the actual cost are purchases, but costs will be allocated to the individual resources that used the benefit when reviewing the amortized cost. The amortized cost view will also include an *UnusedBenefit* plan charge type.
 
