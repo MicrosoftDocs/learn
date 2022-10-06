@@ -7,7 +7,7 @@ Visual Studio Code has a lightweight footprint. Out-of-the-box, Visual Studio Co
 - Integration with Git for source control
 - Integration with Node.js for running and debugging JavaScript
 
-For some developers, all that is needed is this initial install to get started on their web application projects. But most developers will want to add more tools as well as support for other languages by installing extensions.
+For some developers, all that is needed is this initial install to get started on their web application projects. But most developers will want to add more tools and support for other languages by installing extensions.
 
 ## What are extensions?
 
@@ -15,14 +15,14 @@ Extensions are code packages that plug into the Visual Studio Code UI and add su
 
 - Themes to change the look-and-feel of the UI color scheme or the style of file icons displayed in the Explorer
 - Productivity tools such as Linters or code beautifiers
-- Additional programming languages, such as C++, Python, and hundreds more
+- Other programming languages, such as C++, Python, and hundreds more
 - Debugging runtimes
 
 You can add what you need to Visual Studio Code quickly and leave out what you don't.
 
 ### Where do you get the extensions?
 
-You can search for, download, and install extensions from the Extensions Marketplace within Visual Studio Code. For example, you can search by categories such as formatters, programming languages, or themes. The following screen shot displays a few of the many extensions available in the "formatters" category. When you find an extension you want to install, simply select <kbd>Install</kbd>.
+You can search for, download, and install extensions from the Extensions Marketplace within Visual Studio Code. For example, you can search by categories such as formatters, programming languages, or themes. The following screenshot displays a few of the many extensions available in the "formatters" category. When you find an extension you want to add, select <kbd>Install</kbd>.
 
 :::image type="content" source="../media/3-extensions-marketplace-prettier.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed and the Prettier extension in view":::
 
@@ -36,13 +36,13 @@ Microsoft publishes many popular extensions, including C/C++, Python, and Docker
 
 Now that we've seen how Visual Studio Code works, let's apply this knowledge and see how we might set up Visual Studio Code in our scenario.
 
-Recall that in the first part of the scenario, you want to build a website for a local restaurant. You've decided to build a simple Node.js application.
+Recall that in the first part of the scenario, you want to build a website for a local restaurant. You've decided to build a Node.js application.
 
 Here's what you do:
 
 1. First, you download and install Visual Studio Code on your computer.
 
-1. Next, you launch Visual Studio Code and using the built-in terminal, you install a Node.js package that will help you scaffold a basic Node.js application. Scaffolding creates several files needed to run a basic Node.js application.
+1. Next, you launch Visual Studio Code and using the built-in terminal, you install a Node.js package that will help you scaffold a basic Node.js application. Scaffolding creates several files needed to run a Node.js application.
 
 1. Using the editor workspace, you edit these files. The IntelliSense built-in to the editor assists you as you write and edit code by providing hints for code completion. This feature helps you save time and ensure your code's syntax is correct.
 
@@ -52,10 +52,10 @@ Here's what you do:
 
 1. When you're ready, you can test your application and see how it looks by using the built-in debugger.
 
-What's great is that you can continue to use Visual Studio Code for the other projects you're working on for the restaurant, such as the inventory application and the data analytics project.
+After you've launched the restaurant's website, you can continue using Visual Studio Code for the other projects you're working on for the restaurant.
 
 To prepare for developing the inventory application, you download and install the Microsoft C/C++ extension and the Microsoft Visual C++ (MSVC) compiler toolset. This setup will enable you to run and debug C++ code on your computer.
 
 To configure Visual Studio Code for performing data analytics for the restaurant, you download and install the Python extension, which also contains the Jupyter notebook extension. In addition, if you don't already have Python installed on your computer, you'd need to download and install a Python interpreter.
 
-After installing a few extensions, a compiler, and an interpreter, you've set up Visual Studio Code so that you can develop a variety of applications. Furthermore, you've kept your IDE lightweight by adding only those features you need.
+After installing a few extensions, a compiler, and an interpreter, you've set up Visual Studio Code so that you can develop several different applications. Furthermore, you've kept your IDE lightweight by adding only those features you need.

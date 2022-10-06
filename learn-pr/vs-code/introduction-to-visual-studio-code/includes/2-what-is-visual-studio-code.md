@@ -3,19 +3,19 @@ Visual Studio Code is a free, lightweight, open-source IDE that can be customize
 
 ## What are the main features of Visual Studio Code?
 
-Among all your choices of code editors and IDEs, Visual Studio Code provides some of the best features of both types of tools. Like many code editors, it has a small installation footprint so it starts up quickly and provides a fast, responsive editing experience. Like many IDEs, Visual Studio Code supports debugging tools, source control integration, and hundreds of languages. However, Visual Studio Code does this without the overhead that full-featured IDEs often have that make them slow to load and work with.
+Among all your choices of code editors and IDEs, Visual Studio Code provides some of the best features of both types of tools. Like many code editors, it has a small installation footprint so it starts up quickly and provides a fast, responsive editing experience. Like many IDEs, Visual Studio Code supports debugging tools, source control integration, and hundreds of languages. And Visual Studio Code provides these capabilities without the overhead that full-featured IDEs often have that make them slow to load and work with.
 
 Let's take a look at the key features of Visual Studio Code:
 
 ### Cross-platform support
 
-Visual Studio Code's user interface (UI) is based on Electron, a cross-platform technology for building desktop applications. This technology lets Visual Studio Code run on Linux, MacOs, or Windows. The benefit of this versatility is that you can use the same familiar coding environment on whatever platform you're using.
+Visual Studio Code's user interface (UI) is based on Electron, a cross-platform technology for building desktop applications. This technology lets Visual Studio Code run on Linux, macOS, or Windows. The benefit of this versatility is that you can use the same familiar coding environment on whatever platform you're using.
 
 For example, you can use Visual Studio Code as you work on a web application on Windows. Later, if you need to work from a Linux host, you can install and use Visual Studio Code there to edit Python scripts. You don't have to learn how to use different IDEs to work on different operating systems.
 
-The following screenshot shows the Windows, Linux, and MacOS downloads available on the Visual Studio Code home page:
+The following screenshot shows the Windows, Linux, and macOS downloads available on the Visual Studio Code home page:
 
-:::image type="content" source="../media/2-download-visual-studio-code-cross-platform.png" alt-text="Screenshot of Visual Studio Code website showing downloads available in Linux, MacOS, and Windows":::
+:::image type="content" source="../media/2-download-visual-studio-code-cross-platform.png" alt-text="Screenshot of Visual Studio Code website showing downloads available in Linux, macOS, and Windows":::
 
 ### Full-featured code editor
 
@@ -57,7 +57,7 @@ Visual Studio Code lets you manage your code with Git-compatible tools. You can 
 
 ### Extensibility through extensions
 
-You can add more features and functionality beyond what's in the initial download of Visual Studio Code. You can add support for additional languages, frameworks, themes, and tools. For example, a few of the many C++ extensions available in the martketplace are displayed in the following screen shot:
+You can add more features and functionality beyond what's in the initial download of Visual Studio Code. You can add support for other languages, frameworks, themes, and tools. For example, a few of the many C++ extensions available in the marketplace are displayed in the following screenshot:
 
 :::image type="content" source="../media/2-extensions-marketplace.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed":::
 
