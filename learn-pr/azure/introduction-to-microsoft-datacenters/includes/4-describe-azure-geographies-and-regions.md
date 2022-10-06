@@ -6,8 +6,8 @@ Each geography includes one or more regions. For example, the United States has 
 
 _Regions_ can include multiple datacenters connected through a dedicated, regional, low-latency network.  All regional datacenters lie within a perimeter defined to meet Microsoft’s required network response time. This design ensures that services within any region offer the best possible performance and security. It also helps ensure that organizations have options for how to implement redundancy and failover in case an entire datacenter goes down. Inside each datacenter, local redundancy is built into the storage systems and applications can be created to take advantage of multiple servers inside a single datacenter. 
 
-![Map  Description automatically generated](../media/image2.png)
+![Azure regions and availability zones - map 1.](../media/image2.png)
 
-![Map  Description automatically generated](../media/image3.png)
+![Azure regions and availability zones - map 2.](../media/image3.png)
 
 From experience, you know how vulnerable your operation can be if you run apps in a single datacenter. Imagine if that datacenter were hit with flooding that caused an outage. You might wonder what Microsoft offers to address the problems caused when a single datacenter goes down. This is where _availability zones_ come into play. Understanding Azure geographies and regions (and availability zones) can help Contoso operate in regions that support its business continuity and business expansion goals. And when it’s no longer beneficial to pursue operations in a particular geography, cloud operations make it easy to decommission applications rather than an entire datacenter.

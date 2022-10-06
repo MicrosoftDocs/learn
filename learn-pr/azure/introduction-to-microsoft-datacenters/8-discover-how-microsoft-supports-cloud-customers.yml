@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-discover-how-microsoft-supports-cloud-customers.md)]
+  [!include[](includes/8-discover-how-microsoft-supports-cloud-customers.md)]
 quiz:
   title: Check your knowledge
   questions:

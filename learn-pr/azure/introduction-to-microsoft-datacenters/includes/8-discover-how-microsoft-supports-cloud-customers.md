@@ -6,7 +6,7 @@ _Equipment refresh_ refers to a datacenter’s ability to replace servers, disk 
 
 Managing hardware refreshes and upgrades in a large-scale computing environment is complex, as you know. To support massive numbers of customer transactions, the Microsoft Cloud contains around 130 million virtual cores and supporting infrastructure from over 200 suppliers. The company installs approximately 1 million servers per year, and it decommissioned over 1 million servers in fiscal 2022. Microsoft investments in supply chain efficiencies have led to being the winner of Gartner’s 2022 Supply Chain Award for Social Impact. Microsoft is on a mission to become carbon-negative, zero-waste, and water-positive by 2030. Circularity enables this mission by creating regenerative and restorative cycles for everything it produces. Microsoft Circular Centers offer a proven approach, achieving circularity at scale with a zero-waste plan for every part.
 
-![Timeline  Description automatically generated](../media/image7.png)
+![Timeline description automatically generated.](../media/image7.png)
 
 The other major area of concern is SLAs across both the online services and customer support:
 

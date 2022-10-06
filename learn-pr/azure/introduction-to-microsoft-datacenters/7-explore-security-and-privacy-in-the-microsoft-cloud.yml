@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/6-explore-security-and-privacy-in-the-microsoft-cloud.md)]
+  [!include[](includes/7-explore-security-and-privacy-in-the-microsoft-cloud.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -8,9 +8,9 @@ What are these different types of cloud services running in datacenters? There a
 
 - Platform as a service (PaaS), a complete development and deployment environment in the cloud. Resources enable you to deliver everything from simple cloud-based apps to sophisticated, cloud-enabled enterprise applications. Purchase the resources you need from a [cloud service provider](https://azure.microsoft.com/resources/cloud-computing-dictionary/choosing-a-cloud-service-provider/) on a pay-as-you-go basis and access them over a secure internet connection.
 
-- Infrastructure as a service (IaaS), a type of cloud computing service that offers compute, storage, and networking resources on demand. IaaS offerings enable organizations to remove the cost and complexity of buying and managing physical servers and datacenter infrastructure. Organizations pay for each resource for as long as it is needed, on a pay-as-you-go basis. A [cloud computing service provider](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/choosing-a-cloud-service-provider/) like [Azure](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/) manages the infrastructure, while you purchase, install, configure, and manage your own software—including operating systems, middleware, and applications.
+- Infrastructure as a service (IaaS), a type of cloud computing service that offers compute, storage, and networking resources on demand. IaaS offerings enable organizations to remove the cost and complexity of buying and managing physical servers and datacenter infrastructure. Organizations pay for each resource for as long as it is needed, on a pay-as-you-go basis. A [cloud computing service provider](https://azure.microsoft.com/resources/cloud-computing-dictionary/choosing-a-cloud-service-provider/) like [Azure](https://azure.microsoft.com/resources/cloud-computing-dictionary/what-is-azure/azure-iaas/) manages the infrastructure, while you purchase, install, configure, and manage your own software—including operating systems, middleware, and applications.
 
-![](../media/image1.png)
+![Saas/PaaS/Iaas cloud services.](../media/image1.png)
 
 Microsoft offers all three solution types in its datacenters around the world through a broad range of offerings, including: 
 
