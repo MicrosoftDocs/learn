@@ -1,17 +1,10 @@
 Congratulations! In this module, you used Azure Service Bus to decouple your sender and receiver Spring Boot applications.
 
 ## Clean up resources
+In this module, you created a Service Bus namespace and a queue in your Azure subscription. 
 
- The following command will delete and clean up the resources you created for the purposes of this module.
+[!include [Azure sandbox cleanup](../../../includes/azure-sandbox-cleanup.md)]
 
-```bash
-az servicebus namespace delete \
-   --resource-group $AZ_RESOURCE_GROUP \
-   --name $AZ_SB_PREMIUM_NAMESPACE
-
-az group delete \
-   --name $AZ_RESOURCE_GROUP
-```
 
 ## Extra resources
 
