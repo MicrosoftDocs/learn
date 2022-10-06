@@ -25,7 +25,7 @@ quiz:
       explanation: "Correct. Some geographies are countries or groups of countries, and regions reside in those geographies."
     - content: "Geographies and regions are the same."
       isCorrect: false
-      explanation: "Incorrect. They’re different concepts."
+      explanation: "Incorrect. They're different concepts."
     - content: "A geography always includes more than one region."
       isCorrect: false
       explanation: "Incorrect. In some cases, a geography contains a single region."

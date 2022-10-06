@@ -1,10 +1,10 @@
-Your CIO is especially interested in Microsoft support operations for Azure datacenters. When Contoso applications and workloads don’t work, whether they’re on-premises or in the cloud, the CIO is accountable.
+Your CIO is especially interested in Microsoft support operations for Azure datacenters. When Contoso applications and workloads don't work, whether they're on-premises or in the cloud, the CIO is accountable.
 
 That heavy responsibility requires you to investigate how Microsoft delivers support and supports its own datacenters and infrastructure. You consider the metrics that count with on-premises datacenters: equipment refresh rates and customer support service-level agreements (SLAs).
 
-_Equipment refresh_ refers to a datacenter’s ability to replace servers, disk drives, networking gear, and other supporting areas on a timely basis before the technology becomes obsolete. You learn that Microsoft is on a two-year refresh cycle for servers, and the company is constantly adding new servers, storage, and networking gear as datacenters expand, or when it adds new capabilities or even new geographies, regions, or entire datacenters. 
+_Equipment refresh_ refers to a datacenter's ability to replace servers, disk drives, networking gear, and other supporting areas on a timely basis before the technology becomes obsolete. You learn that Microsoft is on a two-year refresh cycle for servers, and the company is constantly adding new servers, storage, and networking gear as datacenters expand, or when it adds new capabilities or even new geographies, regions, or entire datacenters. 
 
-Managing hardware refreshes and upgrades in a large-scale computing environment is complex, as you know. To support massive numbers of customer transactions, the Microsoft Cloud contains around 130 million virtual cores and supporting infrastructure from over 200 suppliers. The company installs approximately 1 million servers per year, and it decommissioned over 1 million servers in fiscal 2022. Microsoft investments in supply chain efficiencies have led to being the winner of Gartner’s 2022 Supply Chain Award for Social Impact. Microsoft is on a mission to become carbon-negative, zero-waste, and water-positive by 2030. Circularity enables this mission by creating regenerative and restorative cycles for everything it produces. Microsoft Circular Centers offer a proven approach, achieving circularity at scale with a zero-waste plan for every part.
+Managing hardware refreshes and upgrades in a large-scale computing environment is complex, as you know. To support massive numbers of customer transactions, the Microsoft Cloud contains around 130 million virtual cores and supporting infrastructure from over 200 suppliers. The company installs approximately 1 million servers per year, and it decommissioned over 1 million servers in fiscal 2022. Microsoft investments in supply chain efficiencies have led to being the winner of Gartner's 2022 Supply Chain Award for Social Impact. Microsoft is on a mission to become carbon-negative, zero-waste, and water-positive by 2030. Circularity enables this mission by creating regenerative and restorative cycles for everything it produces. Microsoft Circular Centers offer a proven approach, achieving circularity at scale with a zero-waste plan for every part.
 
 ![Timeline description automatically generated.](../media/image7.png)
 
@@ -22,11 +22,11 @@ The other major area of concern is SLAs across both the online services and cust
 
 These free resources can help you at every point in your cloud journey. 
 
-**Documentation and** **Microsoft** **Learn.** These foundational resources help you understand Microsoft cloud technologies. Documentation and self-serve skilling modules cover key aspects of Azure products and services.
+**Documentation and Microsoft Learn.** These foundational resources help you understand Microsoft cloud technologies. Documentation and self-serve skilling modules cover key aspects of Azure products and services.
 
 **Cloud Adoption Framework.** Find guidance and best practices to help you adopt the cloud and achieve business outcomes. Download information, tools, and assessments to help you understand your readiness for cloud adoption. Get guidance to help you define strategies for eight critical design areas, including identity and access management, management group and subscription organization, network topology, and connectivity.
 
-**Azure** **Well-Architected Framework**. Guiding tenets help you improve the quality of a workload. The framework contains information covering the five pillars of architectural excellence: reliability, security, cost optimization, operational excellence, and performance efficiency. 
+**Azure** **Well-Architected Framework.** Guiding tenets help you improve the quality of a workload. The framework contains information covering the five pillars of architectural excellence: reliability, security, cost optimization, operational excellence, and performance efficiency. 
 
 **Azure Architecture Center.** Find guidance for architecting solutions on Azure by using established patterns and practices. The site contains detailed guidance for specific technology areas including AI and machine learning, analytics, databases, high-performance computing, IoT, VMs, SAP solutions, and more. 
 

@@ -20,7 +20,7 @@ quiz:
     - content: "Availability zones reside in a single datacenter."
       isCorrect: false
       explanation: "Incorrect. Availability zones require more than one datacenter to support redundancy."
-    - content: "Availability zones aren’t used for redundancy."
+    - content: "Availability zones aren't used for redundancy."
       isCorrect: false
       explanation: "Incorrect. Availability zones help customers achieve redundancy and high availability."
     - content: "Availability zones are physically separate datacenter locations within each Azure region. "

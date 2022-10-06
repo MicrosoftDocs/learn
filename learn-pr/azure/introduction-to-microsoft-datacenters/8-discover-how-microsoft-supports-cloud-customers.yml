@@ -25,4 +25,4 @@ quiz:
       explanation: "Incorrect. There is significant free information to help customers with cloud adoption, migration, architecture and ongoing operations."
     - content: "Basic customer support limits the number of support requests."
       isCorrect: true
-      explanation: "Correct. Microsoft doesn’t limit the number of support requests a customer can open to resolve issues."
+      explanation: "Correct. Microsoft doesn't limit the number of support requests a customer can open to resolve issues."

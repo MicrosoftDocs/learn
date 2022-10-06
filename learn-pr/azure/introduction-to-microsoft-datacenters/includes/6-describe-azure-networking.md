@@ -6,9 +6,9 @@ Next, you want to learn about Microsoft Cloud networking. You find there are two
 
 ## Infrastructure
 
-Microsoft supports one of the largest network backbones in the world, with over 175 thousand miles of fiber optic and subsea cables and more than 190 network access points across the globe. Contoso can use that infrastructure to communicate between cloud datacenters. Your employees, partners, and customers can connect via the global network access points to use cloud services—or even hybrid and on-premises applications—from anywhere in the world. Because Contoso has a large traveling sales force and worldwide partners, you begin to see some surprising benefits. You consider, for example, how to consolidate your network vendors using the Microsoft global network (WAN), while gaining lower latency and better application response time.
+Microsoft supports one of the largest network backbones in the world, with over 175 thousand miles of fiber optic and subsea cables and more than 190 network access points across the globe. Contoso can use that infrastructure to communicate between cloud datacenters. Your employees, partners, and customers can connect via the global network access points to use cloud services - or even hybrid and on-premises applications - from anywhere in the world. Because Contoso has a large traveling sales force and worldwide partners, you begin to see some surprising benefits. You consider, for example, how to consolidate your network vendors using the Microsoft global network (WAN), while gaining lower latency and better application response time.
 
-Any traffic between datacenters—within Microsoft Azure or between Microsoft services such as Virtual Machines, Microsoft 365, Xbox, SQL Database, Storage, and virtual networks—are routed within the global network and never over the public internet, to ensure optimal performance and integrity.
+Any traffic between datacenters - within Microsoft Azure or between Microsoft services such as Virtual Machines, Microsoft 365, Xbox, SQL Database, Storage, and virtual networks - are routed within the global network and never over the public internet, to ensure optimal performance and integrity.
 
 ![Datacenters, edges, and networks.](../media/image5.png)
 
@@ -28,4 +28,4 @@ Azure networking services and products break into four major categories:
 
 Organizations typically deploy Azure networking services to help optimize performance and security for PaaS and IaaS models. With SaaS offerings, including Microsoft 365, Microsoft offers guidance and tools to help you implement and optimize a secure and efficient network architecture. 
 
-Contoso’s network architecture for its Microsoft 365 apps is already in place. If you’re planning to host applications in Azure that work with your Microsoft 365 solution, you might want to choose Azure regions and services that are closer to your Microsoft 365 regions. The Azure regions you select can help you optimize app performance and reduce latency.
+Contoso's network architecture for its Microsoft 365 apps is already in place. If you're planning to host applications in Azure that work with your Microsoft 365 solution, you might want to choose Azure regions and services that are closer to your Microsoft 365 regions. The Azure regions you select can help you optimize app performance and reduce latency.

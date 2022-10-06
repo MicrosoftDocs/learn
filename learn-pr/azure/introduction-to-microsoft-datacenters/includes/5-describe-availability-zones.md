@@ -1,10 +1,10 @@
-You’ve had to manage the crisis of having an entire datacenter fail. You know this can happen in areas with intermittent power or extreme weather. It costs significant time and money to plan for and deal with such outages. In fact, this has kept Contoso from expanding into geographies that might otherwise be good for business.
+You've had to manage the crisis of having an entire datacenter fail. You know this can happen in areas with intermittent power or extreme weather. It costs significant time and money to plan for and deal with such outages. In fact, this has kept Contoso from expanding into geographies that might otherwise be good for business.
 
-That’s why you’re especially interested in any Microsoft datacenter capabilities that help you address issues around redundancy, uptime of applications, and availability of data. You want to make sure that a single datacenter failure won’t bring down Contoso’s operations.
+That's why you're especially interested in any Microsoft datacenter capabilities that help you address issues around redundancy, uptime of applications, and availability of data. You want to make sure that a single datacenter failure won't bring down Contoso's operations.
 
 ## How do availability zones work?
 
-You’ll recall that regions reside within geographies. Availability zones reside within regions. Availability zones are physically separate datacenter locations within each Azure region that are tolerant to local failures, which can range from software and hardware failures to events such as earthquakes, floods, fires, or other disasters. Overall, datacenters deliver tolerance to failures through redundancy and logical isolation of services. Not all regions contain availability zones, but many do, and more are planned.
+You'll recall that regions reside within geographies. Availability zones reside within regions. Availability zones are physically separate datacenter locations within each Azure region that are tolerant to local failures, which can range from software and hardware failures to events such as earthquakes, floods, fires, or other disasters. Overall, datacenters deliver tolerance to failures through redundancy and logical isolation of services. Not all regions contain availability zones, but many do, and more are planned.
 
 To help ensure resiliency and tolerance to failure, Microsoft offers a minimum of three separate availability zones in all availability zone-enabled regions. Each zone is composed of one or more datacenters equipped with independent power, cooling, and networking infrastructure. Even if one zone is affected, the other two zones can deliver regional services, capacity, and high availability. 
 
@@ -20,4 +20,4 @@ You can configure these services in two ways: _zone redundant_, with automatic r
 
 Some organizations, including Contoso, might also require protection from disasters that could take down an entire region. Cross-region replication and disaster recovery add another layer of capability that help ensure that data and applications are available even in the event of major disruptions to an entire region.
 
-With what you’ve learned, you can help Contoso co-locate compute, storage, networking, and data resources across an availability zone and replicate this arrangement in other availability zones.
+With what you've learned, you can help Contoso co-locate compute, storage, networking, and data resources across an availability zone and replicate this arrangement in other availability zones.
