@@ -39,7 +39,7 @@ quiz:
   - content: 'What is the largest scope to which Azure savings plan for compute can be applied?'
     choices:
     - content: 'Management group'
-      isCorrect: falsefalse
+      isCorrect: false
       explanation: 'Incorrect. Although Azure savings plan for compute can be applied to a management group, this is not the largest supported scope.'
     - content: 'Shared'
       isCorrect: true
