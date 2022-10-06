@@ -144,7 +144,8 @@ For customers with individual subscriptions:
 
 To review savings plan costs, you can use the Cost Analysis page of Cost Management in the Azure portal. By default, this page displays the **Actual cost** view, which matches the way costs will appear on your bill. To review savings plan purchases broken down by and associated with the resources that used the plan, switch to the **Amortized cost** view.
 
-![Note]: The Actual cost and Amortized cost views represent the  Actual Cost and Amortized Cost datasets, respectively.
+> [!Note]
+> The Actual cost and Amortized cost views represent the  Actual Cost and Amortized Cost datasets, respectively.
 
 :::image type="content" source="../media/6-amortized-and-actual-costs.png" alt-text="Screenshot depicting the actual costs and amortized costs view." border="false":::
 
@@ -192,7 +193,8 @@ If you're an EA admin, you can download the CSV file that contains cost data. Th
 5. Select **Download**.
 6. In **Usage Details Version** , select **Amortized charges**.
 
-![Note]: The CSV files that you download contain actual costs and amortized costs.
+> [!Note]
+> The CSV files that you download contain actual costs and amortized costs.
 
 ##### Charge back Azure savings plan costs
 
