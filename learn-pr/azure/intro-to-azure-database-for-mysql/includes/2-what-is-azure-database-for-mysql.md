@@ -42,6 +42,8 @@ These features require little administrative effort and are all considered stand
 
 Azure Database for MySQL supports common tools such as MySQL Workbench and others. You can continue working with familiar tools and platforms by implementing Azure Database for MySQL.
 
+Azure Database for MySQL also supports the MySQL extension in Azure Data Studio.
+
 ## How to choose a suitable hosting option
 
 Azure Database for MySQL is available in two hosting options:
