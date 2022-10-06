@@ -26,7 +26,7 @@ You have four options to scope a savings plan, depending on your expected resour
 
 - Single resource group scope. Applies savings to the matching resources in the selected resource group only.
 
-:::image type="content" source="../media/4-savings-plan-scopes.svg" alt-text="Screenshot depicting the scope description for a shared scope, a management group, a subscription, or a resource group." border="false":::
+:::image type="content" source="../media/4-savings-plan-scopes.png" alt-text="Screenshot depicting the scope description for a shared scope, a management group, a subscription, or a resource group." border="false":::
 
 In case there are multiple savings plans with different scopes, Azure processes them in the following order:
 
