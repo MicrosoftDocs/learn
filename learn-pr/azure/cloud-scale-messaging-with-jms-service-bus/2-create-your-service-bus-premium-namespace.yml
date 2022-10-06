@@ -9,6 +9,7 @@ metadata:
   ms.author: aschhab
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+azureSandbox: true
+durationInMinutes: 10
 content: |
   [!include[](includes/2-create-your-service-bus-premium-namespace.md)]
