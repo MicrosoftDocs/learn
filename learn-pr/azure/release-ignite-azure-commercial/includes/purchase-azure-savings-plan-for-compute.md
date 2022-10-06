@@ -1,6 +1,7 @@
 You can purchase savings plans by using the Azure portal. You have two available payment options—pay all upfront or monthly. The monthly payment option divides the total cost of the savings plan evenly over each month of the term. The total cost of up-front and monthly savings plans is the same, with no extra fees when you choose to pay monthly.
 
-![Note]: Savings plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers. For MCA/MCP customers transacting in currencies other than USD, billing follows standard currency rules based on the monthly invoice on which the charge is issued. Effectively, monthly payment amounts may vary, depending on the current month's market exchange rate for the customer’s local currency.
+> [!Note]
+> Savings plan commitments are priced in local currency for EA customers and in USD for MCA/MPA customers. For MCA/MCP customers transacting in currencies other than USD, billing follows standard currency rules based on the monthly invoice on which the charge is issued. Effectively, monthly payment amounts may vary, depending on the current month's market exchange rate for the customer’s local currency.
 
 ### Savings plans purchase permissions
 
@@ -10,7 +11,8 @@ Holders of any of the following roles can purchase a savings plan for a subscrip
 
 - MCA/MPA. Billing profile contributors, billing profile owners, billing account contributors, billing account owners, and subscription-level owners (MCA). Partners with MPA can purchase Azure savings plans for their customers.
 
-![Note]: EA customers can limit purchases to EA admins only by disabling the **Add Savings Plan** option in the **Policies** menu in the Azure portal. In the case of MCA customers, the qualified billing profile role holders can use the **Azure Savings Plan** option in the **Policies** menu to disallow savings plan purchases.
+> [!Note]
+> EA customers can limit purchases to EA admins only by disabling the **Add Savings Plan** option in the **Policies** menu in the Azure portal. In the case of MCA customers, the qualified billing profile role holders can use the **Azure Savings Plan** option in the **Policies** menu to disallow savings plan purchases.
 
 To purchase a savings plan for a management group, you require at least the read permission on the management group, along with the savings plan owner role on the billing subscription.
 
