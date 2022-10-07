@@ -1,5 +1,3 @@
-# Hello World project
-
 Finally, you get to work on a simple Hello World project that will provide you with hands-on experience with NetX Duo. The project will introduce you to some basic concepts including the fundamental structure of a NetX Duo project, the creation of packet pools, the use of address resolution protocol (ARP), internet control message protocol (ICMP), and ping requests.
 
 To get started, let’s look at the code in the Hello World project, and understand the purpose of each section. We'll investigate the code based on the general template. In this project, we won't have a section containing functions, but we'll in subsequent modules.
@@ -107,13 +105,13 @@ void    tx_application_define(void *first_unused_memory)
 {
 
 UINT    status;
+
+NX_PARAMETER_NOT_USED(first_unused_memory);
 ```
 
 This is a macro to avoid a compiler warning concerning a parameter that isn't used. It isn't executed during runtime.
 
 ```c
-NX_PARAMETER_NOT_USED(first_unused_memory);
-
     /* Initialize the NetX system.  */
     nx_system_initialize();
 

@@ -1,5 +1,3 @@
-# Building and running the project
-
 We will use Codespace to build and run the Hello World project, and future projects in this learning path. There are five steps required to build and run this project, and these steps are described below.
 
 ## Step 1 — Go to Codespace

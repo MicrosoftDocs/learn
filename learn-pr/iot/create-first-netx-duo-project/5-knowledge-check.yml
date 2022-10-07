@@ -18,7 +18,7 @@ quiz:
         - content: "`tx_kernel_enter()`"
           isCorrect: false
           explanation: "Incorrect, `nx_system_initialize()` is most likely to be in 'tx_application_define()'."
-        - content: "`#include tx_api.h'"
+        - content: "`#include tx_api.h`"
           isCorrect: false
           explanation: "Incorrect, `nx_system_initialize()` is most likely to be in 'tx_application_define()'."
         - content: "`nx_system_initialize()`"

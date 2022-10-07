@@ -1,5 +1,3 @@
-## Overview
-
 Welcome to networking and Azure RTOS NetX Duo (from now on, NetX). In this module, you'll be introduced to NetX, which is a high-performance real-time implementation of the TCP/IP stack (or protocol suite) designed exclusively for embedded ThreadX-based applications.
 
 When you complete this series of modules, you'll have acquired a solid foundation of NetX concepts and techniques. You'll be prepared to apply what you have learned, and you'll be ready to expand your knowledge about the wonderful world of networking.
@@ -22,7 +20,7 @@ In this module, you will:
 
 The TCP/IP stack is where everything happens. Do you want to send a message? Do you want to send a photo? If so, the TCP/IP stack is where these activities happen. The TCP/IP stack uses a four-layer model as illustrated in the following image.
 
-   ![Four layers of the TCP/IP stack.](../../introduction-azure-rtos-netx-duo/media/tcp-ip-stack.png)
+![Four layers of the TCP/IP stack.](../../introduction-azure-rtos-netx-duo/media/tcp-ip-stack.png)
 
 This illustration is an overview of the TCP/IP model, and we’ll get into more detail later. This four-layer model consists of a series of protocols, each performing a specific operation. Requests originate at the application layer and are processed through each successive layer until they reach the link layer. Responses to requests originate at the link layer and proceed through the successive layers until they reach the application layer. A request can take many different forms, such as sending an email, transmitting a photo, or requesting a web page.
 
@@ -35,7 +33,7 @@ There are millions of computers, phones, tablets, and other devices that use the
 The application layer establishes the connection between data and the application. Following is a table describing several typical protocols.
 
 | Protocol                                    | Description                                                                                               |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | `Hyper Text Transfer Protocol (HTTP)`       | Underlying protocol for the world wide web; defines how hypermedia messages are formatted and transmitted |
 | `File Transfer Protocol (FTP)`              | Client-server based protocol for transfer of files between client and server over the network             |
 | `Simple Mail Transfer Protocol (SMTP)`      | Rules and semantics for sending and receiving emails                                                      |
