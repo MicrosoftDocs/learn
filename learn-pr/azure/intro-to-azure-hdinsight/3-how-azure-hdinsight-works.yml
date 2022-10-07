@@ -6,8 +6,8 @@ metadata:
   title: How Azure HDInsight works
   description: How Azure HDInsight works
   ms.date: 04/11/2021  
-  author: tchristiani
-  ms.author: terrychr
+  author: sreekzz
+  author: v-sreiyer
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 6
