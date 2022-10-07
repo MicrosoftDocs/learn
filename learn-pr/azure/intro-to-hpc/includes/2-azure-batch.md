@@ -1,4 +1,4 @@
-High Performance Computing "HPC" is the practice of using significant computing power that provides high performance compared to what we can get when using our laptop and/or workstation. It solves large problems that need to run on multiple cores simultaneously.
+High Performance Computing (HPC) is the practice of using significant computing power that provides high performance compared to what we can get when using our laptop and/or workstation. It solves large problems that need to run on multiple cores simultaneously.
 
 It's done by splitting up a problem into smaller computable units and distributing those units into a distributed
 system. It continuously communicates between them to reach the final solution way faster than running the same
