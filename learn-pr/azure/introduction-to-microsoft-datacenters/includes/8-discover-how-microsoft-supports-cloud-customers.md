@@ -10,7 +10,7 @@ Managing hardware refreshes and upgrades in a large-scale computing environment 
 
 The other major area of concern is SLAs across both the online services and customer support:
 
-- Online services SLAs: Microsoft provides SLAs with a commitment for uptime and connectivity for each service. Online service SLAs range from 99.9 to 99.99 % for paid services. Free tiers and preview products generally have no SLAs. 
+- Online services SLAs: Microsoft provides SLAs with a commitment for uptime and connectivity for each service. Online service SLAs range from 99.9% to 99.99% for paid services. Free tiers and preview products generally have no SLAs. 
 
 - Customer support SLAs: When issues arise, as happens in every datacenter, you want to be able to seek and receive support from Microsoft. The following levels of support are available:
 
@@ -28,6 +28,6 @@ These free resources can help you at every point in your cloud journey.
 
 **Azure Well-Architected Framework.** Guiding tenets help you improve the quality of a workload. The framework contains information covering the five pillars of architectural excellence: reliability, security, cost optimization, operational excellence, and performance efficiency. 
 
-**Azure Architecture Center.** Find guidance for architecting solutions on Azure by using established patterns and practices. The site contains detailed guidance for specific technology areas including AI and machine learning, analytics, databases, high-performance computing, IoT, VMs, SAP solutions, and more. 
+**Azure Architecture Center.** Find guidance for architecting solutions on Azure by using established patterns and practices. The site contains detailed guidance for specific technology areas, to include AI and machine learning, analytics, databases, high-performance computing, IoT, VMs, SAP solutions, and more. 
 
 When you understand Microsoft datacenter processes and support programs, and available resources, you can use them to support Contoso cloud migration, adoption, and operation. You can help executives more accurately assess the cost-benefit of moving on-premises workloads to Azure cloud infrastructure, avoiding the cost of new equipment.

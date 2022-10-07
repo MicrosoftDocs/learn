@@ -14,7 +14,7 @@ Any traffic between datacenters - within Microsoft Azure or between Microsoft se
 
 ## Networking services and product offerings
 
-Microsoft offers an extensive range of networking products and services. Because Contoso already has a global network that delivers applications around the globe, Azure networking capabilities are important to you. Some of them might enable entirely new models of application delivery, with higher security and better monitoring than you have now.
+Microsoft offers an extensive range of networking products and services. Because Contoso already has a global network that delivers applications around the globe, Azure networking capabilities are important to you. Some of them might enable entirely new models of application delivery, with higher security and better monitoring than you currently have.
 
 Azure networking services and products break into four major categories:
 

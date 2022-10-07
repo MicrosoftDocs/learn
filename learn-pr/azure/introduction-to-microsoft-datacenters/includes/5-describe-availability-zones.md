@@ -1,6 +1,6 @@
-You've had to manage the crisis of having an entire datacenter fail. You know this can happen in areas with intermittent power or extreme weather. It costs significant time and money to plan for and deal with such outages. In fact, this has kept Contoso from expanding into geographies that might otherwise be good for business.
+You've had to manage the crisis of having an entire datacenter fail, which can happen in areas with intermittent power or extreme weather. Outages cost significant time and money to plan for and deal with, which has kept Contoso from expanding into geographies that might otherwise be good for business.
 
-That's why you're especially interested in any Microsoft datacenter capabilities that help you address issues around redundancy, uptime of applications, and availability of data. You want to make sure that a single datacenter failure won't bring down Contoso's operations.
+Mitigating the risk of outages is one of the reasons why you're especially interested in any Microsoft datacenter capabilities that help you address issues around redundancy, uptime of applications, and availability of data. You want to make sure that a single datacenter failure won't bring down Contoso's operations.
 
 ## How do availability zones work?
 

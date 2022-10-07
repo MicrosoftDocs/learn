@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following does not reflect what is available with Microsoft support and guidance?"
+  - content: "Which of the following statements does *not* reflect what is available with Microsoft support and guidance?"
     choices:
     - content: "Microsoft provides online services service-level agreements (SLAs)."
       isCorrect: false
       explanation: "Incorrect. Microsoft provides SLAs on generally available online services."
     - content: "Customers gain free access to guidance around cloud adoption and migration."
       isCorrect: false
-      explanation: "Incorrect. There is significant free information to help customers with cloud adoption, migration, architecture and ongoing operations."
+      explanation: "Incorrect. There's significant free information to help customers with cloud adoption, migration, architecture and ongoing operations."
     - content: "Basic customer support limits the number of support requests."
       isCorrect: true
       explanation: "Correct. Microsoft doesn't limit the number of support requests a customer can open to resolve issues."
