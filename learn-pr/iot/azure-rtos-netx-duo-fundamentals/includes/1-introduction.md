@@ -30,6 +30,6 @@ Codespaces is the preferred environment because you won't need to install the to
   > [!TIP]
   > If you are using macOS or Linux and do not have the access to Codespaces in GitHub, then you can use [local devcontainer](https://code.visualstudio.com/docs/remote/containers) with the same repo.
 
-  ![Codespace](../media/codespace.png)
+  ![Codespace window](../media/codespace.png)
 
 1. Follow the Build and debug unit in each module for detailed steps.

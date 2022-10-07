@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.iot.azure-rtos-threadx
+uid: learn.iot.azure-rtos-netx-duo
 metadata:
   title: Azure RTOS NetX Duo
   description: Learn about basics of TCP/IP and related network concepts, and Azure RTOS NetX Duo, an industrial grade dual IPv4 and IPv6 TCP/IP network stack that is designed specifically for deeply embedded, real-time, and IoT applications.
