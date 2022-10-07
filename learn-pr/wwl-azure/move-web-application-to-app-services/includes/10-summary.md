@@ -1,6 +1,6 @@
-As you consider making the move to the cloud, carefully planning and exploring all the options can make that move efficient and smoother. In this module we've looked at some of the services available on Azure that can make your cloud implementation unified, powerful, and easier to manage than an on-prem installation.
+As you consider making the move to the cloud, carefully planning and exploring all the options can make that move efficient and smoother. In this module we've looked at some of the services available on Azure that can make your cloud implementation unified, powerful, and easier to manage than an on-premises installation.
 
-By moving to Azure's cloud, you will have the tools you need to build out a robust solution in one place. Azure gives you the security, scalability, and tools to manage even the most demanding workloads.
+By moving to Azure's cloud, you'll have the tools you need to build out a robust solution in one place. Azure gives you the security, scalability, and tools to manage even the most demanding workloads.
 
 In this module, you learned how to:
 

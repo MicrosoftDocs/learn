@@ -1,4 +1,4 @@
-Being able quickly to detect and address issues in your web application is made possible by [Azure Monitor](/azure/azure-monitor/overview)which is a set of services that give you insights into how your app is running and its relationship to other services in your solution. One service, Application Insights, is the topic of this unit since it provides the most direct and actionable data for your newly deployed web app.
+Being able quickly to detect and address issues in your web application is made possible by [Azure Monitor](/azure/azure-monitor/overview), which is a set of services that give you insights into how your app is running and its relationship to other services in your solution. One service, Application Insights, is the topic of this unit since it provides the most direct and actionable data for your newly deployed web app.
 
 ## What is Application Insights
 

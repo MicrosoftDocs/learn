@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-web-application-to-app-service.monitor-application-insights
-title: Monitor apps with Application insights
+title: Monitor apps with Application Insights
 metadata:
-  title: Monitor apps with Application insights
-  description: "Monitor apps with Application insights"
-  ms.date: 10/05/2022
+  title: Monitor apps with Application Insights
+  description: "Monitor apps with Application Insights"
+  ms.date: 10/07/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
