@@ -6,7 +6,7 @@ Mitigating the risk of outages is one of the reasons why you're especially inter
 
 You'll recall that regions reside within geographies. Availability zones reside within regions. Availability zones are physically separate datacenter locations within each Azure region that are tolerant to local failures, which can range from software and hardware failures to events such as earthquakes, floods, fires, or other disasters. Overall, datacenters deliver tolerance to failures through redundancy and logical isolation of services. Not all regions contain availability zones, but many do, and more are planned.
 
-To help ensure resiliency and tolerance to failure, Microsoft offers a minimum of three separate availability zones in all availability zone-enabled regions. Each zone is composed of one or more datacenters equipped with independent power, cooling, and networking infrastructure. Even if one zone is affected, the other two zones can deliver regional services, capacity, and high availability. 
+To help ensure resiliency and tolerance to failure, Microsoft offers a minimum of three separate availability zones in all availability zone-enabled regions. Each zone is comprised of one or more datacenters equipped with independent power, cooling, and networking infrastructure. Even if one zone is affected, the other two zones can deliver regional services, capacity, and high availability. 
 
 ![Graphic illustration showing Azure availability zones.](../media/availability-zones.png)
 
