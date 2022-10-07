@@ -1,8 +1,5 @@
 Congratulations! In this module, you used Azure Service Bus to decouple your sender and receiver Spring Boot applications.
 
-## Clean up resources
-In this module, you created a Service Bus namespace and a queue in your Azure subscription. 
-
 [!include [Azure sandbox cleanup](../../../includes/azure-sandbox-cleanup.md)]
 
 
