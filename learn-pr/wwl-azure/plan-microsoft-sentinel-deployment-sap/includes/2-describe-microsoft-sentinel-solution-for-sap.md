@@ -10,7 +10,7 @@ Microsoft designed the solution specifically for SAP systems. The solution conne
 In addition, you can extend built-in security content by building your own threat-detection solutions to monitor, analyze, and display data related to specific business risks. You can:
 
 - Customize playbooks by using automation rules, so you can automatically take action from an alert or incident.
-- Use the built-in Microsoft Sentinel watchlists or create your own—to detect specific types of activities in your SAP systems.
+- Use the built-in Microsoft Sentinel watchlists or create your own to detect specific types of activities in your SAP systems.
 - Conduct ad-hoc threat hunting with custom queries across all your SAP signals.
 - Create Microsoft Sentinel workbooks for interactive data visualization.
 

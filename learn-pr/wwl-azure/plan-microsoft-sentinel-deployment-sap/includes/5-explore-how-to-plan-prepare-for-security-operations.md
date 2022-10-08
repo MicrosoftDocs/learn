@@ -2,8 +2,8 @@ Because you need to carefully manage a cross-functional team to prepare for depl
 
 1. Define your architecture. From a purely architectural perspective, this will be an uncomplicated solution.
 
-    a. Determine where to run the data connector agent container. If your SAP systems are running in Azure, it might be convenient to create a virtual machine and install the Docker engine and required tools, or use AKS. If your SAP systems are on-premises or running in another cloud or hosted environment, you need to determine where to run the data connector agent.
-    b. Determine access for SAP team members. Your SAP people might need role-based access to a Microsoft Sentinel workspace, for example.
+    - Determine where to run the data connector agent container. If your SAP systems are running in Azure, it might be convenient to create a virtual machine and install the Docker engine and required tools, or use AKS. If your SAP systems are on-premises or running in another cloud or hosted environment, you need to determine where to run the data connector agent.
+    - Determine access for SAP team members. Your SAP people might need role-based access to a Microsoft Sentinel workspace, for example.
 
 2. Define governance policies. Determine user access controls and data retention policies. Depending on their user role, users will need different levels of access. The access needs will affect the rules you set up. Data retention policies might already be part of your compliance efforts, but be aware that the solution can ingest a large amount of data. This can affect pricing and how long it takes certain queries to run.
 
