@@ -5,10 +5,10 @@ For your toy launch website, you decide to first create a proof of concept by cr
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Create a template that defines a single storage account resource that includes hard-coded values.
-> * Provision your infrastructure and verify the result.
-> * Add an App Service plan and app to the template.
-> * Provision the infrastructure again to see the new resources.
+> - Create a template that defines a single storage account resource that includes hard-coded values.
+> - Provision your infrastructure and verify the result.
+> - Add an App Service plan and app to the template.
+> - Provision the infrastructure again to see the new resources.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
@@ -16,11 +16,11 @@ During the process, you'll:
 
 1. Open Visual Studio Code.
 
-1. Create a new file called *main.bicep*.
+1. Create a new file called _main.bicep_.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
- 
-   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *templates* folder in which to save the file.
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
+
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a _templates_ folder in which to save the file.
 
 1. Add the following content into the file. You'll deploy the template soon. It's a good idea to type this in yourself instead of copying and pasting, so you can see how the tooling helps you to write your Bicep files.
 
@@ -31,7 +31,7 @@ During the process, you'll:
 
    Notice that Visual Studio Code automatically suggests property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values that you can use.
 
-1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique, because every storage account needs a unique name. Make sure the name is all lowercase, without any special characters, and fewer than 24 characters.
+1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique, because every storage account needs a globaally unique name. Make sure the name includes only lowercase, numbers, no special characters, and has 3 to 24 characters.
 
    > [!IMPORTANT]
    > Don't skip this step. If you do, your Bicep file won't deploy successfully.
@@ -76,7 +76,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription:
 
-   1. Select your avatar in the upper-right corner of the page. 
+   1. Select your avatar in the upper-right corner of the page.
    1. Select **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left-side panel, select **Resource groups**.
@@ -133,7 +133,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 ::: zone pivot="cli"
 
-Run the following command in the terminal. This is the same command you ran before.
+Run the following command in the terminal. This is the same command you ran before. Again, you can ignore the warning messages about the hardcoded location.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -153,7 +153,7 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
 ### Check your deployment
 
-1. Return to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+1. Return to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 

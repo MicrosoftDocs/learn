@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Build your first Bicep template
   description: Learn how to create Bicep templates and create reusable infrastructure as code.
-  ms.date: 11/25/2021
+  ms.date: 10/10/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
@@ -36,7 +36,7 @@ roles:
   - administrator
 languages:
   - bicep
-products:  
+products:
   - azure-resource-manager
 subjects:
   - devops
@@ -52,5 +52,5 @@ units:
 - learn.azure.deploy-azure-resources-bicep.refactor-template-modules
 - learn.azure.deploy-azure-resources-bicep.knowledge-check
 - learn.azure.deploy-azure-resources-bicep.summary
-badge:  
+badge:
   uid: learn.azure.deploy-azure-resources-by-using-bicep-templates.badge

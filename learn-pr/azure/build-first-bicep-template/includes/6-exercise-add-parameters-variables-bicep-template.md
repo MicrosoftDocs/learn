@@ -5,19 +5,19 @@ In this exercise, you'll update the Bicep template you previously created so it:
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update the template to include a `location` parameter
-> * Update the template to include parameters and variables for the resource names
-> * Use expressions to set default values for the parameters
-> * Update the template to include variables for the SKU of each resource
-> * Test the deployment to ensure that the template is valid
+> - Update the template to include a `location` parameter
+> - Update the template to include parameters and variables for the resource names
+> - Use expressions to set default values for the parameters
+> - Update the template to include variables for the SKU of each resource
+> - Test the deployment to ensure that the template is valid
 
 ## Add the location and resource name parameters
 
-1. In the *main.bicep* file in Visual Studio Code, add the following code to the top of the file:
+1. In the _main.bicep_ file in Visual Studio Code, add the following code to the top of the file:
 
    :::code language="bicep" source="code/6-template-1.bicep" range="1-5":::
 
-   As you type, the Bicep linter adds yellow squiggly lines underneath each of the parameter and variable names to indicate they're not currently used. You'll fix this soon.
+   The Bicep linter adds yellow squiggly lines underneath each parameter and variable name to indicate they're not used in the template. You'll fix this issue soon.
 
    Notice that you're using expressions that include string interpolation and the `uniqueString()` function to define default parameter values. Someone deploying this template can override the default parameter values by specifying the values at deployment time, but they can't override the variable values.
 
@@ -33,7 +33,7 @@ During the process, you'll:
 
 ## Automatically set the SKUs for each environment type
 
-1. In the *main.bicep* file in Visual Studio Code, add the following Bicep parameter below the parameters that you created in the previous task:
+1. In the _main.bicep_ file in Visual Studio Code, add the following Bicep parameter below the parameters that you created in the previous task:
 
    :::code language="bicep" source="code/6-template-2.bicep" range="5-9":::
 
@@ -43,13 +43,13 @@ During the process, you'll:
 
    :::code language="bicep" source="code/6-template-2.bicep" range="12-13" :::
 
-   Notice that you're setting these variables' values by using the ternary operator to express some if/then/else logic.
+   Notice that you're setting these variables values by using the ternary operator to express some if/then/else logic.
 
 1. Find the places within the resource definitions where the `sku` properties are set and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
    :::code language="bicep" source="code/6-template-2.bicep" range="15-42" highlight="5, 17":::
 
-   Notice that you haven't parameterized everything. You've set some properties right in the resource definitions, where you know these aren't going to change between deployments.
+   Notice that you haven't parameterized everything. You've set some properties right in the resource definitions, where you know these values aren't going to change between deployments.
 
 1. Save the changes to the file.
 
@@ -57,7 +57,7 @@ During the process, you'll:
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. This is similar to the command you ran before.
+Run the following Azure CLI command in the terminal. This command is similar to the command you ran before.
 
 ```azurecli
 az deployment group create \
@@ -69,7 +69,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. This is similar to the command you ran before.
+Run the following Azure PowerShell command in the terminal. This command is similar to the command you ran before.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
