@@ -4,8 +4,8 @@ metadata:
   title: 'Govern data from Azure databases with Microsoft Purview'
   description: Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multi-cloud, and Software-as-a-Service (SaaS) data.
   ms.date: 4/19/2022
-  author: stamatm
-  ms.author: terrychr
+  author: whhender
+  ms.author: whhender
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
