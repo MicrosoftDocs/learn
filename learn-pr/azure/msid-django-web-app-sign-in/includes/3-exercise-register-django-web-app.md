@@ -1,4 +1,4 @@
-For a web app to use Microsoft identity to enable users to authenticate, you must register a new app with Azure AD. In the banking company example, the company intends to build a Django web app to allow its customers access services. Here, you'll register a single-tenant web app in Azure AD and configure a Django app to use the registration details. You'll also create a test user for testing purposes.
+You must register your web app with Azure AD to enable users to authenticate. In the banking company example, the company intends to build a Django web app to allow its customers access services. Here, you'll register a single-tenant web app in Azure AD and configure a Django app to use the registration details. You'll also create a test user for testing purposes.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
