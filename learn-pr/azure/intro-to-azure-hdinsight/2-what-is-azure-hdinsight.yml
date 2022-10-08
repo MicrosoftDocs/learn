@@ -7,7 +7,7 @@ metadata:
   description: What is Azure HDInsight?
   ms.date: 04/11/2021  
   author: sreekzz
-  author: v-sreiyer  
+  ms.author: v-sreiyer  
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 10
