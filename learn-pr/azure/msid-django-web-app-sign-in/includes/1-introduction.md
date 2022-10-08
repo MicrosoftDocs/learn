@@ -30,7 +30,7 @@ Microsoft identity platform helps you build applications your users and customer
  -->
 ## Example scenario
 
-Suppose you work at a banking company as a developer. Your company is looking to develop a web application to help customers access services and information. These services range from checking their account balances, making transactions and applying for loans. To ensure these services are accessed in a secure way, users need to authenticate before they can access these resources. Your company uses Python Django as the web framework to build its web apps. You've been tasked with the responsibility of building an authentication mechanism to authenticate users before they can access these resources.
+Suppose you work at a banking company as a developer. Your company is looking to develop a web application to help customers access services and information. These services range from checking their account balances, making transactions and applying for loans. To ensure these services are accessed in a secure way, users need to authenticate before they can access these resources. Your company uses Python Django as the web framework to build its web apps. You've been tasked with the responsibility of building a mechanism to authenticate users before they can access these resources.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 

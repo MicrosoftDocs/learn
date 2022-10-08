@@ -50,7 +50,7 @@ Apps using the Microsoft identity platform are registered and managed in Azure A
 
 The web app will also need a client secret to sign in with Azure AD to exchange the authorization code for an access token.
 
-1. In the app's registration screen, select **Certificates & secrets** blade in the left to open the page where we can generate secrets and upload certificates.
+1. In the app's registration screen, select **Certificates & secrets** blade on the left to open the page where we can generate secrets and upload certificates.
 1. In the **Client secrets** section, select *+ New client secret*:
 
     :::image type="content" source="../media/03-app-certificates-and-secrets.png" alt-text="Screenshot of Azure portal showing page to create certificates and secrets." :::
