@@ -6,7 +6,7 @@ You need to implement network security groups. You need to create network securi
 
 ## Skills measured
 
-Network security groups are part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
+Network security groups are part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
 
 Configure and manage virtual networking (25–30%)
 
