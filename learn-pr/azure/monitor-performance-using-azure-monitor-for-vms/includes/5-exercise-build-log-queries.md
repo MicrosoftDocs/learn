@@ -21,7 +21,7 @@ In this unit, you'll:
 
     :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-resource-type-virtual-machine-scale-set.png":::
 
-1. Select the **Chart CPU usage trends by computer** query, then select **Run**..
+1. Select the **Chart CPU usage trends by computer** query, then select **Run**.
 
      :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png" alt-text="Screenshot showing what query to select for charting CPU trends." lightbox="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png":::
 
