@@ -43,7 +43,7 @@ During the process, you'll:
 
    :::code language="bicep" source="code/6-template-2.bicep" range="12-13" :::
 
-   Notice that you're setting these variables values by using the ternary operator to express some if/then/else logic.
+   Notice that you're setting these variables values by using the ternary operator to express some `if/then/else` logic.
 
 1. Find the places within the resource definitions where the `sku` properties are set and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
@@ -57,7 +57,7 @@ During the process, you'll:
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. This command is similar to the command you ran before.
+Run the following Azure CLI command in the terminal.
 
 ```azurecli
 az deployment group create \
@@ -69,7 +69,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. This command is similar to the command you ran before.
+Run the following Azure PowerShell command in the terminal.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `

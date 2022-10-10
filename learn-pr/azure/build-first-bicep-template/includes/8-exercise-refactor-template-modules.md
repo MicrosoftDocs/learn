@@ -70,7 +70,7 @@ If either file doesn't match, copy the example, or adjust your template to match
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. This command is the same command you ran before.
+Run the following Azure CLI command in the terminal.
 
 ```azurecli
 az deployment group create \
@@ -82,7 +82,7 @@ az deployment group create \
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. This command is the same command you ran before.
+Run the following Azure PowerShell command in the terminal.
 
 ```azurepowershell
 New-AzResourceGroupDeployment `

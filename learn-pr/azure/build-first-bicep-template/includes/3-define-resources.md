@@ -4,6 +4,8 @@ Your toy company needs you to create a reusable Bicep template for product launc
 
 In this unit, you'll learn how to define a resource in a Bicep template, how resource names work, and how you can create resources that relate to each other.
 
+[!INCLUDE [Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Define a resource
 
 The main thing you'll do with Bicep templates is define your Azure resources. Here's an example of what a typical resource definition looks like in Bicep. This example creates a storage account named `toylaunchstorage`.

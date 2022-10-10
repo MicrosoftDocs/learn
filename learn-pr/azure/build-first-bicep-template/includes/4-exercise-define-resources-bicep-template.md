@@ -31,7 +31,7 @@ During the process, you'll:
 
    Notice that Visual Studio Code automatically suggests property names as you type. The Bicep extension for Visual Studio Code understands the resources you're defining in your template, and it lists the available properties and values that you can use.
 
-1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique, because every storage account needs a globally unique name. Make sure the name includes only lowercase, numbers, no special characters, and has 3 to 24 characters.
+1. Update the name of the storage account from `toylaunchstorage` to something that's likely to be unique, because every storage account needs a globally unique name. Make sure the name includes only lowercase letters, numbers, and has 3 to 24 characters.
 
    > [!IMPORTANT]
    > Don't skip this step. If you do, your Bicep file won't deploy successfully.
@@ -133,7 +133,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. You ran the same command earlier to deploy the template. You can ignore the warning messages about the hardcoded location.
+Run the following Azure CLI command in the terminal. You can ignore the warning messages about the hardcoded location. You'll fix the location soon.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -143,7 +143,7 @@ az deployment group create --template-file main.bicep
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. You ran the same command earlier to deploy the template.
+Run the following Azure PowerShell command in the terminal. You can ignore the warning messages about the hardcoded location. You'll fix the location soon.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -161,4 +161,4 @@ New-AzResourceGroupDeployment -TemplateFile main.bicep
 
     :::image type="content" source="../media/4-addapp-details.png" alt-text="Screenshot that shows the Azure portal interface for the specific deployment, with storage account and App Service resources listed." border="true":::
 
-1. Notice that the App Service plan and app have been deployed.
+1. Notice that the App Service plan and app were deployed.
