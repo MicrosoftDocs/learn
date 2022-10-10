@@ -5,6 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Explore how Citus distributes tables
   description: |
+
+  ms.custom:
+    - ignite-2022
     In this exercise, you create a multi-node Azure Cosmos DB for PostgreSQL cluster and explore how the Citus extension handles data distribution using metadata tables and views.
   ms.date: 09/27/2022
   author: seesharprun

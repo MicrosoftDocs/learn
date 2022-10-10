@@ -5,6 +5,9 @@ metadata:
   unitType: learning-content
   title: Alter scaffolding in a distributed environment
   description: |
+
+  ms.custom:
+    - ignite-2022
     There may be design decisions to determine after an Azure Cosmos DB for PostgreSQL cluster is created.
   ms.date: 09/22/2022
   author: seesharprun

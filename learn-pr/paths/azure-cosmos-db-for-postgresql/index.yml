@@ -6,6 +6,9 @@ summary: |
 metadata:
   title: Azure Cosmos DB for PostgreSQL learning path
   description: |
+
+  ms.custom:
+    - ignite-2022
     Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure.
   ms.date: 09/22/2022
   author: seesharprun

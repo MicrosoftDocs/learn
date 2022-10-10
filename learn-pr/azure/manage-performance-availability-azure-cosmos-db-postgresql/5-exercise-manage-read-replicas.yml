@@ -5,6 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Manage read replicas
   description: |
+
+  ms.custom:
+    - ignite-2022
     Practice creating read replicas for Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
   author: seesharprun

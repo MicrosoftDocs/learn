@@ -5,6 +5,9 @@ metadata:
   unitType: learning-content
   title: Scale and rebalance data in Azure Cosmos DB for PostgreSQL
   description: |
+
+  ms.custom:
+    - ignite-2022
     Azure Cosmos DB for PostgreSQL can scale compute or storage horizontally and vertically to adjust for customers' growth and demands.
   ms.date: 09/22/2022
   author: seesharprun

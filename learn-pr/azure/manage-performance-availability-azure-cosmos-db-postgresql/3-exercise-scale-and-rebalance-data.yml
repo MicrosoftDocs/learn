@@ -5,6 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Scale and rebalance data
   description: |
+
+  ms.custom:
+    - ignite-2022
     Practice scaling and rebalancing data in Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
   author: seesharprun

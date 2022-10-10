@@ -4,6 +4,9 @@ title: Exercise - Create time series partitions
 metadata:
   title:  Exercise - Create time series partitions
   description: |
+
+  ms.custom:
+    - ignite-2022
     Practice partitioning time series data in Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
   author: seesharprun

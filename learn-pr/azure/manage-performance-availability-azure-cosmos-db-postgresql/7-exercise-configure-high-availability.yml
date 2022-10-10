@@ -5,6 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Configure high availability
   description: |
+
+  ms.custom:
+    - ignite-2022
     Practice configuring high availability in Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
   author: seesharprun

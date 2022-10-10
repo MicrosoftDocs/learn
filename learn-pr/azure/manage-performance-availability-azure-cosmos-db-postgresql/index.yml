@@ -4,6 +4,9 @@ metadata:
   moduleType: standard
   title: Manage performance and availability in Azure Cosmos DB for PostgreSQL
   description: |
+
+  ms.custom:
+    - ignite-2022
     Learn how to scale and rebalance data, create read replicas, and enable high availability on an Azure Cosmos DB for PostgreSQL cluster.
   ms.date: 09/22/2022
   author: seesharprun

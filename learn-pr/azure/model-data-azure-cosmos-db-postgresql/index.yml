@@ -4,6 +4,9 @@ metadata:
   moduleType: standard
   title: Model data for Azure Cosmos DB for PostgreSQL
   description: |
+
+  ms.custom:
+    - ignite-2022
     In this module, you'll learn how to model, build, and alter a scalable, distributed, relational database in Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
   author: seesharprun

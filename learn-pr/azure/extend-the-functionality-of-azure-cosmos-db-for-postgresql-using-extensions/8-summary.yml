@@ -5,6 +5,9 @@ metadata:
   unitType: summary
   title: Summary
   description: |
+
+  ms.custom:
+    - ignite-2022
     In this module, you learned how to extend the functionality of Azure Cosmos DB for PostgreSQL using extensions.
   ms.date: 09/27/2022
   author: seesharprun

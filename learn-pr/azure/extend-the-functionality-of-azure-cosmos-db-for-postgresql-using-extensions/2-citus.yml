@@ -5,6 +5,9 @@ metadata:
   unitType: learning-content
   title: Examine distributed capabilities provided by Citus
   description: |
+
+  ms.custom:
+    - ignite-2022
     The scalability and performance benefits of Azure Cosmos DB for PostgreSQL are primarily provided by the Citus extension. In this unit, you examine the capabilities provided by the Citus extension for PostgreSQL.
   ms.date: 09/27/2022
   author: seesharprun

@@ -4,6 +4,9 @@ title: Partition time series data
 metadata:
   title: Partition time series data
   description: |
+
+  ms.custom:
+    - ignite-2022
     Partitioning time series data in Azure Cosmos DB for PostgreSQL makes it easier to manage time series data in defined time intervals.
   ms.date: 09/22/2022
   author: seesharprun

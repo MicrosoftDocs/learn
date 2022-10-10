@@ -5,6 +5,9 @@ metadata:
   unitType: learning-content
   title: learning-content
   description: |
+
+  ms.custom:
+    - ignite-2022
     Examine unsupported features.
   ms.date: 09/26/2022
   author: seesharprun

@@ -5,6 +5,9 @@ metadata:
   unitType: introduction
   title: introduction
   description: |
+
+  ms.custom:
+    - ignite-2022
     Azure Cosmos DB for PostgreSQL can scale compute, storage, and nodes to support increased usage and demands of a growing user base.
   ms.date: 09/22/2022
   author: seesharprun

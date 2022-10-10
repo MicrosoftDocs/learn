@@ -5,6 +5,9 @@ metadata:
   unitType: learning-content
   title: Query distributed tables in Azure Cosmos DB for PostgreSQL
   description: |
+
+  ms.custom:
+    - ignite-2022
     Examine the differences when you run queries against distributed tables in Azure Cosmos DB for PostgreSQL.
   ms.date: 09/26/2022
   author: seesharprun

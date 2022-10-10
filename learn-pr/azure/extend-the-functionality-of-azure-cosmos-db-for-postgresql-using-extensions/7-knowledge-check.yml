@@ -5,6 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: |
+
+  ms.custom:
+    - ignite-2022
     Test your understanding of adding functionality to Azure Cosmos DB for PostgreSQL with extensions.
   ms.date: 09/27/2022
   author: seesharprun

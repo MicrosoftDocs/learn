@@ -5,6 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Work with data files in Azure Blob Storage directly from Azure Cosmos DB for PostgreSQL
   description: |
+
+  ms.custom:
+    - ignite-2022
     In this exercise, you work with data files in Azure Blob Storage directly from Azure Cosmos DB for PostgreSQL using the pg_azure_storage extension.
   ms.date: 09/27/2022
   author: seesharprun

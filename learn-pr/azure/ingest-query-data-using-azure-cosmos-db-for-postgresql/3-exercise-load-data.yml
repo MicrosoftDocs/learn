@@ -5,6 +5,9 @@ metadata:
   unitType: exercise
   title: Exercise - Load data into distributed tables with Azure Cosmos DB for PostgreSQL
   description: |
+
+  ms.custom:
+    - ignite-2022
     Practice data ingestion techniques using Azure Cosmos DB for PostgreSQL.
   ms.date: 09/26/2022
   author: seesharprun

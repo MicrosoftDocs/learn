@@ -5,6 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: |
+
+  ms.custom:
+    - ignite-2022
     Test your understanding of creating a database and altering its structure in Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
   author: seesharprun
