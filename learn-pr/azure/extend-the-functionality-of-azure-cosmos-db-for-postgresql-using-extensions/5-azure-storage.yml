@@ -4,11 +4,9 @@ title: Understand the Azure Storage extension
 metadata:
   unitType: learning-content
   title: Understand the Azure Storage extension
-  description: |
-
+  description: The pg_azure_storage extension for PostgreSQL allows you to interact with files stored in Azure Blob Storage directly from your Azure Cosmos DB for PostgreSQL database.
   ms.custom:
     - ignite-2022
-    The pg_azure_storage extension for PostgreSQL allows you to interact with files stored in Azure Blob Storage directly from your Azure Cosmos DB for PostgreSQL database.
   ms.date: 09/27/2022
   author: seesharprun
   ms.author: sidandrews

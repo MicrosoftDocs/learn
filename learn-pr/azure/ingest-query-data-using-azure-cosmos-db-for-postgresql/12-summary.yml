@@ -4,11 +4,9 @@ title: Summary
 metadata:
   unitType: summary
   title: summary
-  description: |
-
+  description: In this module, you learned how to efficiently query and ingest data in distributed tables using Azure Cosmos DB for PostgreSQL.
   ms.custom:
     - ignite-2022
-    In this module, you learned how to efficiently query and ingest data in distributed tables using Azure Cosmos DB for PostgreSQL.
   ms.date: 09/26/2022
   author: seesharprun
   ms.author: sidandrews

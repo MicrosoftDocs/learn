@@ -4,11 +4,9 @@ title: Scaffold data for distribution
 metadata:
   unitType: learning-content
   title: Scaffold data for distribution
-  description: |
-
+  description: The distribution column and tables can influence performance in Azure Cosmos DB for PostgreSQL. Colocation can help distributed queries to perform efficiently.
   ms.custom:
     - ignite-2022
-    The distribution column and tables can influence performance in Azure Cosmos DB for PostgreSQL. Colocation can help distributed queries to perform efficiently.
   ms.date: 09/22/2022
   author: seesharprun
   ms.author: sidandrews

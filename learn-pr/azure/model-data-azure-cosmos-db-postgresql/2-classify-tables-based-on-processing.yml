@@ -4,11 +4,9 @@ title: Classify tables based on processing
 metadata:
   unitType: learning-content
   title: Classify tables based on processing
-  description: |
-
+  description: Knowing the types of tables available and how the database stores the data will set you up for modeling a database for Azure Cosmos DB for PostgreSQL.
   ms.custom:
     - ignite-2022
-    Knowing the types of tables available and how the database stores the data will set you up for modeling a database for Azure Cosmos DB for PostgreSQL.
   ms.date: 09/22/2022
   author: seesharprun
   ms.author: sidandrews

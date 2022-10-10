@@ -4,11 +4,9 @@ title: Configure high availability in Azure Cosmos DB for PostgreSQL
 metadata:
   unitType: learning-content
   title: Configure high availability in Azure Cosmos DB for PostgreSQL
-  description: |
-
+  description: When data needs to be available all the time, high availability can be enabled on an Azure Cosmos DB for PostgreSQL cluster.
   ms.custom:
     - ignite-2022
-    When data needs to be available all the time, high availability can be enabled on an Azure Cosmos DB for PostgreSQL cluster.
   ms.date: 09/22/2022
   author: seesharprun
   ms.author: sidandrews

@@ -4,11 +4,9 @@ title: Apply PostgreSQL extensions
 metadata:
   unitType: Apply PostgreSQL extensions
   title: learning-content
-  description: |
-
+  description: PostgreSQL extensions can be used to extend the functionality of an Azure Cosmos DB for PostgreSQL database, but they must be installed in the database before they can be used.
   ms.custom:
     - ignite-2022
-    PostgreSQL extensions can be used to extend the functionality of an Azure Cosmos DB for PostgreSQL database, but they must be installed in the database before they can be used.
   ms.date: 09/27/2022
   author: seesharprun
   ms.author: sidandrews

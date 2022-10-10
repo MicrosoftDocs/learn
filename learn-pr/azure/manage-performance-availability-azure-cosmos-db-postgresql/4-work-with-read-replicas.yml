@@ -4,11 +4,9 @@ title: Work with read replicas in Azure Cosmos DB for PostgreSQL
 metadata:
   unitType: learning-content
   title: Work with read replicas in Azure Cosmos DB for PostgreSQL
-  description: |
-
+  description: Read-only replicas can be created to handle demand for read-intensive workloads with tolerance for some data lag such as analytical workloads.
   ms.custom:
     - ignite-2022
-    Read-only replicas can be created to handle demand for read-intensive workloads with tolerance for some data lag such as analytical workloads.
   ms.date: 09/22/2022
   author: seesharprun
   ms.author: sidandrews

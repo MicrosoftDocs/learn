@@ -3,11 +3,9 @@ uid: learn.ingest-query-data-using-azure-cosmos-db-postgresql
 metadata:
   moduleType: standard
   title: Ingest and query data using Azure Cosmos DB for PostgreSQL
-  description: |
-
+  description: Understand how data is distributed across Azure Cosmos DB for PostgreSQL to efficiently ingest and query data across the cluster.
   ms.custom:
     - ignite-2022
-    Understand how data is distributed across Azure Cosmos DB for PostgreSQL to efficiently ingest and query data across the cluster.
   ms.date: 09/26/2022
   author: seesharprun
   ms.author: sidandrews

@@ -4,11 +4,9 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: |
-
+  description: Test your understanding of loading and querying data in Azure Cosmos DB for PostgreSQL distributed databases.
   ms.custom:
     - ignite-2022
-    Test your understanding of loading and querying data in Azure Cosmos DB for PostgreSQL distributed databases.
   ms.date: 09/26/2022
   author: seesharprun
   ms.author: sidandrews
