@@ -49,4 +49,4 @@ Let's examine the scope of durability and availability for the different replica
 
 | Node in data center unavailable | Entire data center unavailable | Region-wide outage | Read access during region-wide outage | Supported storage accounts |
 | --- | --- | --- | --- | --- 
-| - **LRS** <br> - **ZRS** <br> - **GRS** & **RA-GRS** <br> - **GZRS** & **RA-GZRS** | - **ZRS** <br> - **GRS** & **RA-GRS** <br> - **GZRS** & **RA-GZRS** | - **GRS** & **RA-GRS** <br> - **GZRS** & **RA-GZRS** | - **RA-GRS** <br> - **RA-GZRS** | - **LRS**: GPv1, GPv2, Blob <br> - **ZRS**: GPv2 <br> - **GRS** & **RA-GRS**: GPv1, GPv2, Blob <br> - **GZRS** & **RA-GZRS**: GPv2 |
+| - **LRS** <br> - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **ZRS** <br> - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **GRS** <br> - **RA-GRS** <br> - **GZRS** <br> - **RA-GZRS** | - **RA-GRS** <br> - **RA-GZRS** | - **LRS**: _GPv1_, _GPv2_, _Blob_ <br> - **ZRS**: _GPv2_ <br> - **GRS**: _GPv1_, _GPv2_, _Blob_ <br> - **RA-GRS**: _GPv1_, _GPv2_, _Blob_ <br> - **GZRS**: _GPv2_ <br> - **RA-GZRS**: _GPv2_ |
