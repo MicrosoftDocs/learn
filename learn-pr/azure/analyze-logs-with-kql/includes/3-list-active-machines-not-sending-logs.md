@@ -123,7 +123,7 @@ Consider this:
 - Which additional information do you need to extract from your logs? 
 - Which KQL operation can you use to group machines by the agent version they're running? 
 
-Solution:
+**Solution:**
 
 1. Copy the first five lines from the query and add the `Version` column to the `summarize` line of the query to extract agent version information: 
 

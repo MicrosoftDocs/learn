@@ -1,19 +1,17 @@
-To address performance issues, mitigate potential issues, and identify opportunities to operate more efficiently, you want to analyze the  CPU usage of virtual machines in your IT environment. 
-
 Here, you'll write KQL queries to retrieve and transform data from the `Perf` table to gain an understanding of which machines have reached or are nearing their total compute capacity and which machines are being underused.  
 
-## Assess log data based on analysis goals
+## 1. Set goals
 
-Windows and Linux agents send performance counters of hardware components, operating systems, and applications running on monitored machines to the `Perf` table in Azure Monitor.
+To address performance issues, mitigate potential issues, and identify opportunities to operate more efficiently, you want to analyze the central processing unit (CPU) usage of virtual machines in your IT environment. 
 
-### What are your analysis goals and what information do you need?
+To identify CPU-related performance issues and opportunities to become more efficient, you need information about:
 
-To analyze the compute usage of machines running in your IT environment, you need information about:
-
-- Central processing unit (CPU) usage of each active machine.
+- CPU usage trends of each active machine.
 - CPU usage of machines at peak and quiet times.
 
-### Which log data and KQL operations can you use?
+## 2. Assess logs
+
+Windows and Linux agents send performance counters of hardware components, operating systems, and applications running on monitored machines to the `Perf` table in Azure Monitor.
 
 Let's run a simple query on the `Perf` table to retrieve logs from the past 24 hours and get a sense of the table schema and the data the table holds:
 
@@ -52,7 +50,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `CounterName` | Holds the names of all of the performance counters in the table. | Monitor the `% Processor Time` performance counter. | `where CounterName == "% Processor Time"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | `where InstanceName == "_Total"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Processor Time` performance counter. | `summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99)` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator), and the [min()](/azure/data-explorer/kusto/query/min-aggfunction), [max()](/azure/data-explorer/kusto/query/max-aggfunction), [avg()](/azure/data-explorer/kusto/query/avg-aggfunction), and [percentiles()](/azure/data-explorer/kusto/query/percentiles-aggfunction) aggregation functions. |
-## Identify machines with high CPU usage
+## Write your query
 
 Write a query that summarizes the average, minimum and maximum CPU usage of all machines over the past day. 
 
@@ -97,11 +95,13 @@ Write a query that summarizes the average, minimum and maximum CPU usage of all 
 
     :::image type="content" source="../media/kql-log-analytics-perf-table-percentiles-over-80.png" alt-text="Screenshot that shows the results of a query that filters for entries where the Percentage Processor Time counter value is higher than 80 in the 90th and 99th percentile range." lightbox="../media/kql-log-analytics-perf-table-percentiles-over-80.png":::
 
-## Add operating system information from the Heartbeat table to the query results
+## Challenge: Add operating system information from the Heartbeat table to the query results
 
-To get a better understanding of your query results, you can correlate information from a different table to your query results using the `join` operator. For more information, see [join operator](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer). 
+You can often get a better understanding of your query results by correlating information from a different table to your query results using the `join` operator. For more information, see [join operator](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer). 
 
-Let's add information about the operating system running on each computer, which is available in the `Heartbeat` table, as we saw in the first exercise:
+Can you use the `join` operator to add information about the operating system running on each computer, which is available in the `Heartbeat` table, as we saw in the first exercise?
+
+**Solution:**
 
 1. Add information from the `Heartbeat` table about the operating system running on each of the computers in your query results:
     
