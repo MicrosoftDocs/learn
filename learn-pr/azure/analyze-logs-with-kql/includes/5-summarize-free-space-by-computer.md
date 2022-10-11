@@ -1,12 +1,8 @@
-Recall that your IT team has noticed recurring issues related to insufficient free space on virtual machines. 
-
 Here, you'll retrieve and transform data from the `Perf` table, using KQL queries, to analyze the free space of the machines logging data to your Log Analytics workspace. 
 
-## Assess log data based on analysis goals
+## 1. Set goals
 
-As we've seen the previous exercise, the `Perf` table provides information about the performance of hardware components, operating systems, and applications.
-
-### What are your analysis goals and what information do you need?
+Recall that your IT team has noticed recurring issues related to insufficient free space on virtual machines. 
 
 To analyze free space usage of machines running in your IT environment, you need information about:
 
@@ -14,9 +10,11 @@ To analyze free space usage of machines running in your IT environment, you need
 - Total space used on each machine.
 - Percentage of space used on each machine.
 
-### Which log data and KQL operations can you use?
+## 2. Assess logs
+
+As we saw the previous exercise, the `Perf` table provides information about the performance of hardware components, operating systems, and applications.
  
-In the previous exercise, we saw that the `Perf` table's `ObjectName` column lists the names of all of the objects being monitored and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
+We noted that the `Perf` table's `ObjectName` column lists the names of all of the objects being monitored and the `CounterName` column holds the names of the various performance counters that Azure Monitor collects. We also saw that both of these columns hold lots of values, many of which appear multiple times. 
 
 Let's run a query on the `Perf` table to list distinct `ObjectName` values:
 
@@ -62,7 +60,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all drives on the virtual machine. | `InstanceName == "_Total"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters.  | <ul><li>`CounterValue = iff(CounterName=="% Used Space", 100-CounterValue, CounterValue)`</li><li>`CounterValue = iff(CounterName=="Free Megabytes", (CounterValue)*0.001, CounterValue)`</li></ul>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator).|
       
-## Summarize free space statistics by computer
+## Write your query
 
 1. Retrieve all logs generated in the past day that reported the `% Used Space`, `% Free Space`, and `Free Megabytes` performance counters for the `LogicalDisk` and `Logical Disk` objects:
 
