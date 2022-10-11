@@ -34,7 +34,7 @@ In this module, we focus on authenticating a work or school accounts provisioned
 
 In order for a web app to use Microsoft identity to enable users to authenticate, you must register a new app with Azure AD. This can be done on the [Azure portal](https://portal.azure.com/). Your web app should live in an Azure AD tenant.
 
-When registering a web app in Azure AD, ensure the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URL provided by the app when the authentication process is started. The authorization code will be sent to this endpoint, which means you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
+When registering a web app in Azure AD, ensure the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URI provided by the app when the authentication process is started. The authorization code will be sent to this endpoint, which means you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
 
 A sign-out URL should also be specified so the authentication libraries and/or middleware deletes any cached tokens or other data that is only needed for signed in users.
 

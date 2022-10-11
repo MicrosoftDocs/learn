@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct"
     - content: "The app sends an authorization code to Azure AD."
       isCorrect: false
-      explanation: "Azure AD sends an authorization code to the `/redirect` endpoint after a successful sign-in attempt."
+      explanation: "The first step in the user sign-in process for a web application is to send a request to the `/authorize` endpoint on Azure AD. Azure AD sends an authorization code to the `/redirect` endpoint after a successful sign-in attempt."
     - content: "The user is presented with a sign-in prompt by Azure AD."
       isCorrect: false
       explanation: "The sign-in prompt is presented to the user after the request to the `/authorize` endpoint has been sent."
@@ -50,4 +50,3 @@ quiz:
     - content: "Application ID, application secret, and the redirect URI."
       isCorrect: false
       explanation: "The tenant ID is also required when setting the authority in the Azure AD configuration."
-      
