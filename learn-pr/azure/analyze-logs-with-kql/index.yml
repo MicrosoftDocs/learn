@@ -46,4 +46,4 @@ units:
 - learn.resources.knowledge-check
 - learn.resources.summary
 badge:
-  uid: learn.resources.badge
+  uid: learn.analyze-logs-with-kql.badge
