@@ -1,15 +1,16 @@
 In this exercise, you'll update the Bicep template you previously created so it:
-- Accepts parameters for the resource locations and names
-- Uses your business rules to select the right SKUs for the resources being deployed
+- Accepts parameters for the resource locations and names.
+- Uses your business rules to select the right SKUs for the resources being deployed.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> - Update the template to include a `location` parameter
-> - Update the template to include parameters and variables for the resource names
-> - Use expressions to set default values for the parameters
-> - Update the template to include variables for the SKU of each resource
-> - Test the deployment to ensure that the template is valid
+>
+> - Update the template to include a `location` parameter.
+> - Update the template to include parameters and variables for the resource names.
+> - Use expressions to set default values for the parameters.
+> - Update the template to include variables for the SKU of each resource.
+> - Test the deployment to ensure that the template is valid.
 
 ## Add the location and resource name parameters
 
@@ -79,7 +80,7 @@ New-AzResourceGroupDeployment `
 
 ::: zone-end
 
-Notice that you're explicitly specifying the value for the `environmentType` parameter when you execute the deployment. You don't need to specify all of the other parameter values, because they have defaults that make sense.
+Notice that you're explicitly specifying the value for the `environmentType` parameter when you execute the deployment. You don't need to specify the other parameter values, because they have valid default values.
 
 ### Check your deployment
 

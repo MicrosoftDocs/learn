@@ -18,7 +18,7 @@ abstract: |
     - Create and deploy a Bicep template that includes modules
 prerequisites: |
   You should be familiar with:
-  - What infrastructure as code is, and what its benefits are.
+  - Infrastructure as code and its benefits.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
   To follow along with the exercises in the module, you'll need the following installed locally:

@@ -3,6 +3,7 @@ In this exercise, you'll update the Bicep template you previously created so it 
 During the process, you'll:
 
 > [!div class="checklist"]
+>
 > - Add a new module and move the App Service resources into it.
 > - Reference the module from the main Bicep template.
 > - Add an output for the App Service app's host name, and emit it from the module and template deployments.
@@ -62,7 +63,7 @@ After you've completed all of the preceding changes, your _main.bicep_ file shou
 
 Your _appService.bicep_ file should look like this example:
 
-:::code language="bicep" source="code/8-app-service.bicep" highlight="30" :::
+:::code language="bicep" source="code/8-app-service.bicep" :::
 
 If either file doesn't match, copy the example, or adjust your template to match the example.
 

@@ -43,7 +43,7 @@ Let's look at how each part of this definition works:
 
 ### Provide default values
 
-You can optionally provide a _default value_ for a parameter. When you specify a default value the parameter becomes optional. The person who's deploying the template can specify a value if they want, but if they don't, Bicep uses the default value.
+You can optionally provide a _default value_ for a parameter. When you specify a default value, the parameter becomes optional. The person who's deploying the template can specify a value if they want, but if they don't, Bicep uses the default value.
 
 Here's how you can add a default value:
 
@@ -60,7 +60,7 @@ After you've declared a parameter, you can refer to it throughout the rest of th
 
 :::code language="bicep" source="code/5-parameter-value.bicep" highlight="2":::
 
-Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
+Notice that the template now uses the parameter value to set the resource name for the app resource, instead of a hard-coded value.
 
 > [!TIP]
 > The Bicep extension for Visual Studio Code shows you visual indicators to let you know when you're not following recommended practices. For example, it warns you if you define a parameter that you don't use. The _Bicep linter_ continuously runs these checks while you work.
@@ -87,7 +87,7 @@ _Expressions_ in Bicep are a powerful feature that helps you handle all sorts of
 
 ### Resource locations
 
-When you're writing and deploying a template, you often don't want to have to specify the location of every resource individually. Instead, you might have a simple business rule that says, _By default, deploy all resources into the same location the resource group was created in_.
+When you're writing and deploying a template, you often don't want to have to specify the location of every resource individually. Instead, you might have a simple business rule that says, _by default, deploy all resources into the same location the resource group was created in_.
 
 In Bicep, you can create a parameter called `location`, then use an expression to set its value:
 
@@ -95,7 +95,7 @@ In Bicep, you can create a parameter called `location`, then use an expression t
 param location string = resourceGroup().location
 ```
 
-Look at the default value of that parameter. It uses a _function_ called `resourceGroup()`, which gives you access to information about the resource group the template is being deployed into. In this example, the template uses the `location` property. It's common to use this approach to deploy your resources into the same Azure region as the resource group.
+Look at the default value of that parameter. It uses a _function_ called `resourceGroup()` that gives you access to information about the resource group the template is being deployed into. In this example, the template uses the `location` property. It's common to use this approach to deploy your resources into the same Azure region as the resource group.
 
 If someone is deploying this template, they might choose to override the default value here and use a different location.
 
@@ -120,7 +120,7 @@ param storageAccountName string = uniqueString(resourceGroup().id)
 
 This parameter's default value uses the `resourceGroup()` function again, like you did when you set the resource location. This time, though, you're getting the ID for a resource group. Here's what a resource group ID looks like:
 
-```
+```Output
 /subscriptions/3e57e557-826f-460b-8f1c-4ce38fd53b32/resourceGroups/MyResourceGroup
 ```
 
@@ -145,7 +145,7 @@ param storageAccountName string = 'toylaunch${uniqueString(resourceGroup().id)}'
 
 The default value for the `storageAccountName` parameter now has two parts to it:
 
-- `toylaunch` is a hard-coded string that helps anyone looking at the deployed resource in Azure to understand what this storage account is for.
+- `toylaunch` is a hard-coded string that helps anyone who looks at the deployed resource in Azure to understand what the storage account's purpose.
 - `${uniqueString(resourceGroup().id)}` is a way of telling Bicep to evaluate the output of the `uniqueString(resourceGroup().id)` function, then concatenate it into the string.
 
 > [!TIP]
@@ -160,7 +160,7 @@ One of your colleagues has suggested that you create non-production environments
 - In production environments, storage accounts will be deployed at the `Standard_GRS` (geo-redundant storage) SKU for high resiliency. App Service plans will be deployed at the `P2v3` SKU for high performance.
 - In non-production environments, storage accounts will be deployed at the `Standard_LRS` (locally redundant storage) SKU. App Service plans will be deployed at the free `F1` SKU.
 
-One way to implement these business requirements is to use parameters to specify each SKU. However, specifying every SKU as a parameter can get difficult to manage, especially when you have larger templates. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.
+One way to implement these business requirements is to use parameters to specify each SKU. However, specifying every SKU as a parameter can become difficult to manage, especially when you have larger templates. Another option is to embed the business rules into the template by using a combination of parameters, variables, and expressions.
 
 First, you can specify a parameter that indicates whether the deployment is for a production or non-production environment:
 
@@ -184,7 +184,7 @@ var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
 Notice some new syntax here, too. Let's break it down:
 
 - `(environmentType == 'prod')` evaluates to a Boolean (true/false) value, depending on what the `environmentType` parameter has been set to.
-- `?` is called the _ternary operator_, and it evaluates an _if/then_ statement. The part after this operator is what's used if the expression is true. If the expression evaluates to false, the value after the colon (`:`) is used.
+- `?` is called the _ternary operator_, and it evaluates an `if/then` statement. The part after this operator is what's used if the expression is true. If the expression evaluates to false, the value after the colon (`:`) is used.
 
 These rules can be translated to:
 

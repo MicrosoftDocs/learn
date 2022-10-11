@@ -31,7 +31,7 @@ Let's look closely at some key parts of this resource definition:
 - `Microsoft.Storage/storageAccounts@2022-05-01` is the _resource type_ and _API version_ of the resource. `Microsoft.Storage/storageAccounts` tells Bicep that you're declaring an Azure storage account. The date `2022-05-01` is the version of the Azure Storage API that Bicep uses when it creates the resource.
 
   > [!TIP]
-  > The [Visual Studio Code extension for Bicep](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) helps you find the resource types and API versions for the resources you create. If you're familiar with ARM templates, note that the API version matches the version you'd use there too.
+  > The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) helps you find the resource types and API versions for the resources you create. If you're familiar with ARM templates, note that the API version matches the version you'd use there too.
 
 - You have to declare a _resource name_, which is the name the storage account will be assigned in Azure. You'll set a resource name using the `name` keyword.
 -

@@ -47,7 +47,7 @@ output ipFqdn string = publicIPAddress.properties.dnsSettings.fqdn
 
 ## Define a module
 
-Bicep modules allow you to organize and reuse your Bicep code by creating smaller units that can be composed into a template. Any Bicep template can be used as a module by another template. Throughout this learning module, you've been creating Bicep templates. That means you've already created files that can be used as Bicep modules!
+Bicep modules allow you to organize and reuse your Bicep code by creating smaller units that can be composed into a template. Any Bicep template can be used as a module by another template. Throughout this learning module, you've created Bicep templates. That means you've already created files that can be used as Bicep modules!
 
 Imagine you have a Bicep template that deploys application, database, and networking resources for _solution A_. You might split this template into three modules, each of which is focused on its own set of resources. As a bonus, you can now reuse the modules in other templates for other solutions too. So when you develop a template for _solution B_, which has similar networking requirements to _solution A_, you can reuse the network module.
 
@@ -69,7 +69,7 @@ Let's look closely at some key parts of this module definition:
 - The `module` keyword tells Bicep you're about to use another Bicep file as a module.
 - Just like resources, modules need a _symbolic name_ like `myModule`. You'll use the symbolic name when you refer to the module's outputs in other parts of the template.
 - `modules/mymodule.bicep` is the path to the module file, relative to the template file. Remember, a module file is just a regular Bicep file.
-- Just like resources, the _name_ property is mandatory. Azure uses the name of the module because it creates a separate deployment for each module within the template file. Those deployments have names you can use to identify them.
+- Just like resources, the `name` property is mandatory. Azure uses the name of the module because it creates a separate deployment for each module within the template file. Those deployments have names you can use to identify them.
 - You can specify any _parameters_ of the module by using the `params` keyword. When you set the values of each parameter within the template, you can use expressions, template parameters, variables, properties of resources deployed within the template, and outputs from other modules. Bicep will automatically understand the dependencies between the resources.
 
 ## Modules and outputs
@@ -78,7 +78,7 @@ Just like templates, Bicep modules can define outputs. It's common to chain modu
 
 ## Design your modules
 
-A good Bicep module follows a few key principles:
+A good Bicep module follows some key principles:
 
 > [!div class="checklist"]
 >
@@ -86,7 +86,7 @@ A good Bicep module follows a few key principles:
 >
 > - **Don't put every resource into its own module.** You shouldn't create a separate module for every resource you deploy. If you have a resource that has lots of complex properties, it might make sense to put that resource into its own module. But in general, it's better for modules to combine multiple resources.
 >
-> - **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should be manipulating parameter values, or whether the parent template should handle that and then pass a single value through to the module. Similarly, think about the outputs a module should return, and make sure they're useful to the templates that will use the module.
+> - **A module should have clear parameters and outputs that make sense.** Consider the purpose of the module. Think about whether the module should manipulate parameter values, or whether the parent template should handle that, and then pass a single value through to the module. Similarly, think about the outputs a module should return, and make sure they're useful to the templates that will use the module.
 >
 > - **A module should be as self-contained as possible.** If a module needs to use a variable to define a part of a module, the variable should generally be included in the module file rather than in the parent template.
 >

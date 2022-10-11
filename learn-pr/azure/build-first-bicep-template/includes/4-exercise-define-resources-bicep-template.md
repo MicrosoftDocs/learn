@@ -5,6 +5,7 @@ For your toy launch website, you decide to first create a proof of concept by cr
 During the process, you'll:
 
 > [!div class="checklist"]
+>
 > - Create a template that defines a single storage account resource that includes hard-coded values.
 > - Provision your infrastructure and verify the result.
 > - Add an App Service plan and app to the template.
@@ -46,7 +47,7 @@ During the process, you'll:
 
 ### Deploy the template to Azure
 
-Run the following command from the terminal in Visual Studio Code to deploy the Bicep template to Azure. The command can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hardcoded, don't worry; it's safe to proceed, and the deployment will succeed.
+Run the following command from the terminal in Visual Studio Code to deploy the Bicep template to Azure. The command can take a minute or two to complete, and then you'll see a successful deployment. If you see a warning about the location being hard-coded, don't worry; it's safe to proceed, and the deployment will succeed.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -62,7 +63,7 @@ You'll see `Running...` in the terminal.
 
 ### Deploy the template to Azure
 
-Deploy the template to Azure by using the following Azure PowerShell command in the terminal. The command can take a minute or two to complete, and you'll see a successful deployment. If you see a warning about the location being hardcoded, don't worry; it's safe to proceed, and the deployment will succeed.
+Deploy the template to Azure by using the following Azure PowerShell command in the terminal. The command can take a minute or two to complete, and you'll see a successful deployment. If you see a warning about the location being hard-coded, don't worry; it's safe to proceed, and the deployment will succeed.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
@@ -133,7 +134,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. You can ignore the warning messages about the hardcoded location. You'll fix the location soon.
+Run the following Azure CLI command in the terminal. You can ignore the warning messages about the hard-coded location. You'll fix the location soon.
 
 ```azurecli
 az deployment group create --template-file main.bicep
@@ -143,7 +144,7 @@ az deployment group create --template-file main.bicep
 
 ::: zone pivot="powershell"
 
-Run the following Azure PowerShell command in the terminal. You can ignore the warning messages about the hardcoded location. You'll fix the location soon.
+Run the following Azure PowerShell command in the terminal. You can ignore the warning messages about the hard-coded location. You'll fix the location soon.
 
 ```azurepowershell
 New-AzResourceGroupDeployment -TemplateFile main.bicep
