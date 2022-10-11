@@ -50,7 +50,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 | `CounterName` | Holds the names of all of the performance counters in the table. | Monitor the `% Processor Time` performance counter. | `where CounterName == "% Processor Time"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `InstanceName` | Lists the monitored instances of the monitored object. | Monitor all processor cores. | `where InstanceName == "_Total"` <br/>For more information, see [where operator](/azure/data-explorer/kusto/query/whereoperator) and [== (equals) operator](/azure/data-explorer/kusto/query/equals-cs-operator). |
 | `CounterValue` | The measurement collected for the counter.  | Retrieve performance measurements for the `% Processor Time` performance counter. | `summarize min(CounterValue), avg(CounterValue), max(CounterValue), percentiles(CounterValue, 90,99)` <br/>For more information, see [summarize operator](/azure/data-explorer/kusto/query/summarizeoperator), and the [min()](/azure/data-explorer/kusto/query/min-aggfunction), [max()](/azure/data-explorer/kusto/query/max-aggfunction), [avg()](/azure/data-explorer/kusto/query/avg-aggfunction), and [percentiles()](/azure/data-explorer/kusto/query/percentiles-aggfunction) aggregation functions. |
-## Write your query
+## 3. Write your query
 
 Write a query that summarizes the average, minimum and maximum CPU usage of all machines over the past day. 
 
