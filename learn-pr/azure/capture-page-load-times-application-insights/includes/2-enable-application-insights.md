@@ -45,7 +45,7 @@ In this module, you'll enable runtime instrumentation and client-side instrument
 
 ### Web app requirements
 
-Runtime instrumentation and automatic client-side instrumentation is supported only on Windows web apps. These features rely on capabilities of IIS, the web server technology that powers Windows apps on App Service. The use of Application Insights in Linux apps is fully supported, but you need to modify application code to reference the Application Insights SDK.
+Runtime instrumentation and automatic client-side instrumentation are supported only on Windows web apps. These features rely on capabilities of IIS, the web server technology that powers Windows apps on App Service. The use of Application Insights in Linux apps is fully supported, but you need to modify application code to reference the Application Insights SDK.
 
 Any Windows App Service web app can benefit from the runtime instrumentation techniques described in this module. But web apps created with the ASP.NET or ASP.NET Core frameworks have the best integration with Application Insights. They automatically record framework-specific data, like stack traces and dependency information, in Application Insights.
 
