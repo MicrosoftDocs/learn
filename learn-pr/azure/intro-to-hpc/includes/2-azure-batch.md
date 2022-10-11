@@ -5,7 +5,7 @@ system. It continuously communicates between them to reach the final solution wa
 computation on fewer cores.
 
 There are several HPC and batch processing choices available on Azure. You talk with an Azure expert who advises you to
-focus on three options: Azure Batch, Azure VM HPC Instances, and Microsoft HPC Pack. You'll look at each in the
+focus on three options: Azure Batch, Azure CycleCloud, and Microsoft HPC Pack. You'll look at each in the
 following units. It's important to note that these choices aren't mutually exclusive. They build upon one other and can
 be thought of as different tools in a toolbox.
 
