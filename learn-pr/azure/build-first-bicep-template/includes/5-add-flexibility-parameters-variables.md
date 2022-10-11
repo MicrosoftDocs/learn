@@ -8,7 +8,7 @@ In this unit, you'll learn about _parameters_ and _variables_, which are two Bic
 
 ## Parameters and variables
 
-A _parameter_ lets you bring in values from outside the template file. For example, if someone is manually deploying the template by using the Azure CLI or PowerShell, they'll be asked to provide values for each parameter. They can also create a _parameter file_, which lists all of the parameters and values they want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
+A _parameter_ lets you bring in values from outside the template file. For example, if someone is manually deploying the template by using the Azure CLI or Azure PowerShell, they'll be asked to provide values for each parameter. They can also create a _parameter file_, which lists all of the parameters and values they want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
 
 A _variable_ is defined and set within the template. Variables let you store important information in one place and refer to it throughout the template without having to copy and paste it.
 
@@ -183,8 +183,8 @@ var appServicePlanSkuName = (environmentType == 'prod') ? 'P2V3' : 'F1'
 
 Notice some new syntax here, too. Let's break it down:
 
-- `(environmentType == 'prod')` evaluates to a Boolean (true/false) value, depending on what the `environmentType` parameter has been set to.
-- `?` is called the _ternary operator_, and it evaluates an `if/then` statement. The part after this operator is what's used if the expression is true. If the expression evaluates to false, the value after the colon (`:`) is used.
+- `(environmentType == 'prod')` evaluates to a Boolean (true or false) value, depending on which allowed value is used for `environmentType` parameter.
+- `?` is called a _ternary operator_ and it evaluates an `if/then` statement. The value after the `?` operator is used if the expression is true. If the expression evaluates to false, the value after the colon (`:`) is used.
 
 These rules can be translated to:
 

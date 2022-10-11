@@ -92,7 +92,7 @@ The first time you deploy a Bicep template, you might want to use the Azure port
 
     :::image type="content" source="../media/4-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed and a succeeded status." border="true":::
 
-1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
+1. Select the deployment called **main** to see which resources were deployed, and then select **Deployment details** to expand it. In this case, there's one storage account with the name that you specified.
 
     :::image type="content" source="../media/4-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with one storage account resource listed." border="true":::
 
@@ -126,7 +126,7 @@ In the previous task, you learned how to create a template that contains a singl
 
    :::code language="bicep" source="code/4-template.bicep" range="13-29":::
 
-1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
+1. Update the name of the App Service app from `toy-product-launch-1` to something that's likely to be unique. Make sure the name is all lowercase letters, contains only alphanumerics and hyphens, doesn't start or end with a hyphen, and has 2 to 60 characters.
 
 1. Save the changes to the file.
 
@@ -134,7 +134,7 @@ In the previous task, you learned how to create a template that contains a singl
 
 ::: zone pivot="cli"
 
-Run the following Azure CLI command in the terminal. You can ignore the warning messages about the hard-coded location. You'll fix the location soon.
+Run the following Azure CLI command in the terminal. You can ignore the warnings about the hard-coded location. You'll fix the location soon.
 
 ```azurecli
 az deployment group create --template-file main.bicep

@@ -2,7 +2,7 @@
 author: davidsmatlak
 ms.prod: learning-azure
 ms.topic: include
-ms.date: 04/20/2022
+ms.date: 10/10/2022
 ms.author: davidsmatlak
 ---
 1. In the **Terminal** menu, select **New Terminal**. The terminal window usually opens in the lower half of your screen.
@@ -22,5 +22,5 @@ ms.author: davidsmatlak
 1. In the terminal, go to the directory where you saved your template. For example, if you saved your template in the *templates* folder, you can use this command:
 
    ```azurepowershell
-   cd templates
+   Set-Location -Path templates
    ```

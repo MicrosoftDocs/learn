@@ -34,7 +34,7 @@ Let's look closely at some key parts of this resource definition:
   > The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) helps you find the resource types and API versions for the resources you create. If you're familiar with ARM templates, note that the API version matches the version you'd use there too.
 
 - You have to declare a _resource name_, which is the name the storage account will be assigned in Azure. You'll set a resource name using the `name` keyword.
--
+
   > [!IMPORTANT]
   > Symbolic names are used only within the Bicep template, and don't appear in Azure. Resource names _do_ appear in Azure.
 
@@ -74,7 +74,7 @@ resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
 }
 ```
 
-This template instructs Azure to host the app on the plan you created. Notice that the definition of the plan includes the symbolic name of the App Service plan on this line: `serverFarmId: appServicePlan.id`. This line means that Bicep will get the plan's _resource ID_ using the `.id` property. It's effectively saying, _This app's server farm ID is the ID of the App Service plan defined earlier_.
+This template instructs Azure to host the app on the plan you created. Notice that the definition of the plan includes the symbolic name of the App Service plan on this line: `serverFarmId: appServicePlan.id`. This line means that Bicep will get the App Service plan's _resource ID_ using the `id` property. It's effectively saying, _this app's server farm ID is the ID of the App Service plan defined earlier_.
 
 > [!TIP]
 > In Azure, a _resource ID_ is a unique identifier for each resource. The resource ID includes the Azure subscription ID, the resource group name, and the resource name, along with some other information.
