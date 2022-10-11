@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.partner-center.introduction
+title: Introduction to Microsoft Partner Center
+metadata:
+  unitType: introduction
+  title: Introduction to Microsoft Partner Center
+  description: Overview of Microsoft Partner Center. This includes information on the account settings, billing, customers, incentives, insights, referrals, and pricing workspaces.
+  ms.date: 10/03/2022
+  author: JulCsc
+  ms.author: juliacawthra
+  ms.topic: interactive-tutorial
+  ms.prod: partner-center # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
