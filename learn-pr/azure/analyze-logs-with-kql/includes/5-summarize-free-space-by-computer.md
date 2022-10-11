@@ -6,8 +6,7 @@ Recall that your IT team has noticed recurring issues related to insufficient fr
 
 To analyze free space usage of machines running in your IT environment, you need information about:
 
-- Total space available on each machine.
-- Total space used on each machine.
+- Total free space available on each machine.
 - Percentage of space used on each machine.
 
 ## 2. Assess logs
@@ -120,7 +119,7 @@ Let's assess how we can use this data and which KQL operations can help extract 
 
     1. Convert `Free Megabytes` to Gigabytes (`Free Megabytes` value * 0.001 = Free Gigabytes) and relabel `Free Megabytes` to `OverallFreeSpaceInGB`:
             
-        <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42R0U6DMBSG7%252FcUJyQmzKCDB8CLaVyWTGci6uVS4MDqoF3a4pjx4S0lI5Rturum5%252Bt3%252FnP6giIb%252FcBujQIhoiXOkKEgClO4A5JzN0jHXX0Zf2KinkmJEIbgLHhOE1I8ULlxgAuYTCBaI3BDAWuwSmoRZfBBWcp3EgQmXKRydNoEreoPz4Kyqu4sh1z3vGIKRad7FIjwhDmJ9wqlyWYjzhUY5nVLEjxRBw28NS1boGs0Z1IRlmCHrSKuSNEAsipLIug3AhH5qiS1a23TO3R4J0WFY4j3%252BqLcVvrG6zfXJqwVstTiIQSaZW6PMzP0InoQ%252BP5N%252F82g45G4neF%252Fr70rK%252Byx9HzawZ944Frxrv1b3w8uyXyR3Fl%252B6b0XRVMwwedsNj0bXgMbPXFoDn31IM8vQBDU1y0DAAA%253D" target="_blank">Click to run query in Log Analytics demo environment</a>
+        <a href="https://portal.azure.com#@ec7cb332-9a0a-4569-835a-ce7658e8444e/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA42RXU%252BDMBSG7%252FcrTkhMmEEHPwAvpnFZMp2JqJdLgQOr0nbph2PGH29hGaFs6m57nj7v29MnlMXoG7ZrlAgJZThDjpJozOEGSCn8KB9382X6jpl%252BJAwhjsFbiJJmpLqj6sMDIWEygWSNIFoKeIMZZUWUwxvludgqkJgJmavRaRPsVX94FpSburMcet0KwzXKTncvEeEBS5LuNKq2m4t4F9AyzxuS4Yk5WOClidwDXdCcK014hh22SoQmVQMowxiR9AuByHLFSO072wwOCa%252BkMjiGdGcP2MbYk6Afbk1Ya%252BS5w0MMtCj8Hte%252BoVcxgCgMr%252Fp3BolH4v0b%252Fve6u3LKHkt%252Fbzv4kwB8p95leB2G0Tmdz5J7y0%252B796pqBm3xOZ9NB%252BV%252FADMcqLH7AgAA" target="_blank">Click to run query in Log Analytics demo environment</a>
         
         ```kusto
         Perf
@@ -139,6 +138,19 @@ Let's assess how we can use this data and which KQL operations can help extract 
         You can now get a clear picture of the total free space on each machine in gigabytes and as a percentage of the machine's total memory. 
 
         :::image type="content" source="../media/kql-log-analytics-perf-free-space-extend-free-megabytes.png" alt-text="Screenshot that shows the results of a query that converts the Free Megabytes column to Overall Free Space In Gigabytes." lightbox="../media/kql-log-analytics-perf-free-space-extend-free-megabytes.png":::    
+
+## Challenge: Bundle together free space statistics for each computer
+
+The result set of our query so far includes two lines for each computer - one line shows the overall free space in Gigabytes and the other shows the percentage of free space available.
+
+Can you create a dictionary that bundles these two free space statistics together for each virtual machine?
+
+**Hint:** 
+
+- Use the [bag_pack() function](/azure/data-explorer/kusto/query/packfunction) to create key-value pairs for each of the two performance counters.
+- Use the [make_bag() aggregation function](/azure/data-explorer/kusto/query/make-bag-aggfunction) to bundle both key-value values for each computer.
+
+**Solution:**
 
 1. Group together `CounterName, CounterValue` key-value pairs:
     
