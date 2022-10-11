@@ -29,7 +29,7 @@ prerequisites: |
   -	An Azure subscription
   -	A Microsoft account or an Azure Active Directory (Azure AD) account with the Owner role in the Azure subscription.
   
-iconUrl: /learn/achievements/configure-application-kubernetes-arc.svg
+iconUrl: /training/achievements/configure-application-kubernetes-arc.svg
 levels:
 - advanced
 roles:

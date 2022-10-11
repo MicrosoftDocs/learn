@@ -48,7 +48,7 @@ For example, say you're developing a website. Your smoke test might use `curl` t
 
 ### Unit testing
 
-You worked with unit tests in the [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module.
+You worked with unit tests in the [Run quality tests in your build pipeline using Azure Pipelines](/training/modules/run-quality-tests-build-pipeline?azure-portal=true) module.
 
 In short, _unit testing_ verifies the most fundamental components of your program or library, such as an individual function or method. You specify one or more inputs along with the expected results. The test runner performs each test and checks to see whether the actual results match the expected results.
 

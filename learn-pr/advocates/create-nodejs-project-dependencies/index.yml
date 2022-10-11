@@ -17,7 +17,7 @@ abstract: |
   - Understand what the manifest file package.json consists of and use it to your advantage
   - Add packages to and remove packages from your Node.js project
   - Manage your package dependencies and update them in a predictable way
-iconUrl: /learn/achievements/create-nodejs-project-dependencies.svg
+iconUrl: /training/achievements/create-nodejs-project-dependencies.svg
 levels:
 - beginner
 roles:

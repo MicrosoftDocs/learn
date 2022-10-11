@@ -24,7 +24,7 @@ abstract: |
 prerequisites: |
   - Understand what cloud computing is, including cloud service models, and common cloud providers
   - Know the technologies that enable cloud computing
-iconUrl: /learn/achievements/cmu-cloud-developer/economics-of-the-cloud.svg
+iconUrl: /training/achievements/cmu-cloud-developer/economics-of-the-cloud.svg
 hidden: true
 levels:
 - beginner

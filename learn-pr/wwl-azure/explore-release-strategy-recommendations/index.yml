@@ -17,7 +17,7 @@ abstract: |
   - Create a release approval plan
   - Implement release gates
 prerequisites: ""
-iconUrl: /learn/achievements/2-explore-release-strategy-recommendations.svg
+iconUrl: /training/achievements/2-explore-release-strategy-recommendations.svg
 levels:
 - advanced
 roles:

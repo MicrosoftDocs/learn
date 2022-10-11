@@ -2,10 +2,10 @@
 uid: learn.azure.introduction-infrastructure-code-using-bicep.what-azure-resource-manager
 title: What is Azure Resource Manager?
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: What is Azure Resource Manager?
   description: Learn about Azure Resource Manager and how it helps you deploy and manage your Azure resources.
-  ms.date: 03/12/2021  
+  ms.date: 08/26/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?

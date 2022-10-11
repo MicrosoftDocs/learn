@@ -17,7 +17,7 @@ abstract: |
   - Filter searches based on event time, severity, domain, and other relevant data using KQL
 prerequisites: |
   none
-iconUrl: /learn/achievements/construct-kql-statements.svg
+iconUrl: /training/achievements/construct-kql-statements.svg
 levels:
 - intermediate
 roles:

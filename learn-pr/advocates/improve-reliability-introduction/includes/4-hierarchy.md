@@ -62,7 +62,7 @@ There are two additional levels in the hierarchy that are not addressed in
 the _Improve your Reliability_ learning path: the development process and
 the work that goes into making a good user experience (UX). We won't be
 discussing these two subjects in the _Improve your Reliability_ learning
-path, Microsoft Learn offers other good modules on these topics.
+path, but other good Learn modules on these topics are available.
 
 We have created a separate Learn module for each level in this hierarchy
 described above. We hope you will join us for all five modules in this

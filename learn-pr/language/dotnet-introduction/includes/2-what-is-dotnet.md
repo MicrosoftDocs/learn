@@ -69,7 +69,7 @@ The following table features a few great resources you might want to bookmark an
 
 | Resource | Purpose |
 |---|---|---|
-| [Microsoft Docs](/?azure-portal=true)  | Provides quick-start tutorials and definitive reference documentation. |  
+| [Microsoft Learn](/?azure-portal=true) | Provides quick-start tutorials and definitive reference documentation. |  
 | [Patterns and Practices](/azure/architecture/?azure-portal=true) | Helps developers and software architects find solutions to common application development needs. Resources often transcend the low-level details of writing code and delve into choosing products and services that enable seemingly infinite scalable architectures. |
 | [.NET Videos](https://dotnet.microsoft.com/learn/videos?azure-portal=true) | Provides video tutorials from the .NET team. These videos walk developers through common usage scenarios. |
 | [Microsoft Learn](../../../paths/csharp-first-steps/index.yml?azure-portal=true) | Provides hands-on labs to help you build your skills by combining instruction, exercises, media, knowledge checks, and a means of tracking your progress. |

@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Understanding of basic networking concepts
   - Understanding of basic high availability and disaster recovery concepts
-iconUrl: /learn/achievements/intro-to-azure-site-recovery.svg
+iconUrl: /training/achievements/intro-to-azure-site-recovery.svg
 levels:
 - beginner
 roles:

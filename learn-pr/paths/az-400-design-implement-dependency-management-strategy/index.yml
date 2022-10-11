@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path examines dependency management in software development, how to identify them in your codebase and how to package and manage dependencies in package feeds.
-iconUrl: /learn/achievements/az-400-design-and-implement-a-dependency-management-strategy.svg
+iconUrl: /training/achievements/az-400-design-and-implement-a-dependency-management-strategy.svg
 levels:
 - advanced
 roles:

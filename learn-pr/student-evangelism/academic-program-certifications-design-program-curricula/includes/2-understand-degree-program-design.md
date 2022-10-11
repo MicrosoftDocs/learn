@@ -4,7 +4,7 @@ The following figure shows the modular courses that make up the first year of an
 
 :::image type="content" source="../media/year-one-courses-example.png" alt-text="Diagram of courses that make up the first year of a typical computer science program.":::
 
-In this unit, you'll learn how to enhance standard program development by embedding certification courses in program courses for academic credit. For example, you can embed the [Microsoft Azure Fundamentals Course](/learn/certifications/exams/az-900?azure-portal=true) with the certification exam in a Cloud Computing course, as shown in the next figure. In the same example, the Cloud Computing course might have an academic weighting of 15 credits. The course is split into 10 credits for academic assessment and 5 credits for the certification exam component of the Microsoft Azure Fundamentals course.
+In this unit, you'll learn how to enhance standard program development by embedding certification courses in program courses for academic credit. For example, you can embed the [Microsoft Azure Fundamentals Course](/certifications/exams/az-900?azure-portal=true) with the certification exam in a Cloud Computing course, as shown in the next figure. In the same example, the Cloud Computing course might have an academic weighting of 15 credits. The course is split into 10 credits for academic assessment and 5 credits for the certification exam component of the Microsoft Azure Fundamentals course.
 
 :::image type="content" source="../media/year-one-courses-example-with-certification.png" alt-text="Diagram that shows first-year courses of a first-year computer science program, with a Microsoft certification and exam embedded in the Cloud Computing course.":::
 

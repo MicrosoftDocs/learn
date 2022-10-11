@@ -12,10 +12,10 @@ The criteria help you evaluate how Microsoft Purview can help your business-cata
 
 ## References for more information
 
-[Introduction to Microsoft Purview - Microsoft Purview | Microsoft Docs](/azure/purview/overview)
+[Introduction to Microsoft Purview](/azure/purview/overview)
 
-[Map your data estate with Microsoft Purview - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-purview/map-your-data-estate-with-azure-purview/ba-p/1958197)
+[Map your data estate with Microsoft Purview](https://techcommunity.microsoft.com/t5/azure-purview/map-your-data-estate-with-azure-purview/ba-p/1958197)
 
-[Microsoft Purview for Unified Data Governance | Microsoft Azure](https://azure.microsoft.com/services/purview/)
+[Microsoft Purview for Unified Data Governance](https://azure.microsoft.com/services/purview/)
 
-[Enable unified data governance with Microsoft Purview | Azure Friday](https://youtu.be/W2bsj3ULw0Y)
+[Enable unified data governance with Microsoft Purview (video)](https://youtu.be/W2bsj3ULw0Y)

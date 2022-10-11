@@ -118,7 +118,7 @@ In Visual Studio Code, your terminal window points to the root directory of the 
 
 ## Create the pipeline in Azure Pipelines
 
-You learned how to set up Azure Pipelines in an earlier module. If you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline?azure-portal=true).
+You learned how to set up Azure Pipelines in an earlier module. If you need a refresher, head over to [Create a build pipeline with Azure Pipelines](/training/modules/create-a-build-pipeline?azure-portal=true).
 
 Here's how to set up a second pipeline to build the package, and upload that package to Azure Artifacts.
 

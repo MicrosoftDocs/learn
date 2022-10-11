@@ -13,7 +13,7 @@ summary: Learn how to develop, test, and deploy Windows 10 applications.
 prerequisites:  |
  - A computer running the current release of Windows 10. To verify that you are running the latest version, go to Settings > Windows Update.
  - Basic knowledge of C# or similar programming language.
-iconUrl: /learn/achievements/develop-windows10-apps.svg
+iconUrl: /training/achievements/develop-windows10-apps.svg
 levels:
 - beginner
 roles:

@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - An understanding of Linux administration
   - An understanding of relational databases
-iconUrl: /learn/achievements/sqlserver/deploying-on-sql-server-on-linux.svg
+iconUrl: /training/achievements/sqlserver/deploying-on-sql-server-on-linux.svg
 levels:
 - beginner
 roles:

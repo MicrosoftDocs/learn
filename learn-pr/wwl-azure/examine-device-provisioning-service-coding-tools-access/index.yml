@@ -19,7 +19,7 @@ prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
   - Describe the phases of device provisioning, the concept of device enrollment and attestation, and the high-level processes for device provisioning.
-iconUrl: /learn/achievements/provisioning-device-service.svg
+iconUrl: /training/achievements/provisioning-device-service.svg
 levels:
 - intermediate
 roles:

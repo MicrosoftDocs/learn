@@ -25,7 +25,7 @@ prerequisites: |
   - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   - Pull requests in GitHub, including creating, reviewing, and merging pull requests.
   - Basic GitHub Actions workflows, including triggers and secrets for connecting to your Azure environment.
-iconUrl: /learn/achievements/2-migrate-spring-cloud-application-to-azure.svg
+iconUrl: /training/achievements/2-migrate-spring-cloud-application-to-azure.svg
 levels:
 - advanced
 roles:

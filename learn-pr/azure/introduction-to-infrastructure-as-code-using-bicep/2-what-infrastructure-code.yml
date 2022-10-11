@@ -2,10 +2,10 @@
 uid: learn.azure.introduction-infrastructure-code-using-bicep.what-infrastructure-code
 title: What is infrastructure as code?
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: What is infrastructure as code?
   description: Learn about infrastructure as code and how it helps you quickly and confidently scale your cloud deployments.
-  ms.date: 03/12/2021  
+  ms.date: 08/26/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?

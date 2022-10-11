@@ -18,13 +18,13 @@ You can use the same single public-private key pair to access multiple Azure VMs
 
 ## Create the SSH key pair
 
-On Windows 10, Linux, and macOS, you can use the built-in `ssh-keygen` command to generate the SSH public and private key files.
+On Windows 10, Windows 11, Linux, and macOS, you can use the built-in `ssh-keygen` command to generate the SSH public and private key files.
 
-Windows 10 includes an SSH client with the **Fall Creators Update**. Earlier versions of Windows require additional software to use SSH; [check the documentation for full details](/azure/virtual-machines/linux/ssh-from-windows). Alternatively, you can install the Linux subsystem for Windows and get the same functionality.
+Windows 10 includes an SSH client with the **Fall Creators Update**. Windows 11 includes an SSH client by default. Earlier versions of Windows require additional software to use SSH; [check the documentation for full details](/azure/virtual-machines/linux/ssh-from-windows). Alternatively, you can install the Linux subsystem for Windows and get the same functionality.
 
 We'll use Azure Cloud Shell, which stores the generated keys in Azure in your private storage account. You can also type these commands directly into your local shell if you prefer. You'll need to adjust the instructions throughout this module to reflect a local session if you take this approach.
 
-Here's the minimum command necessary to generate the key pair for an Azure VM. This creates an SSH protocol 2 (SSH-2) RSA public-private key pair. The minimum length is 2048, but for the sake of this learning module we'll use 4096.
+Here's the minimum command necessary to generate the key pair for an Azure VM. This creates an SSH protocol 2 (SSH-2) RSA public-private key pair. The minimum length is 2048, but for the sake of this learning module, we'll use 4096.
 
 1. Run the following command in Cloud Shell.
 
@@ -44,7 +44,7 @@ You can provide a passphrase while generating your private key. This is a passwo
 
 When you add a passphrase to your SSH key, it encrypts the private key using 128-bit AES so that the private key is useless without the passphrase to decrypt it.
 
-We strongly recommended that you add a passphrase. If an attacker stole your private key and that key didn't have a passphrase, they would be able to use that private key to log in to any servers that have the corresponding public key. If a passphrase protects a private key, it can't be used by that attacker. This provides an additional layer of security for your infrastructure on Azure.
+We strongly recommended that you add a passphrase. If an attacker stole your private key and that key didn't have a passphrase, they would be able to use that private key to log in to any servers that have the corresponding public key. If a passphrase protects a private key, that attacker can't use it. This provides an additional layer of security for your infrastructure on Azure.
 
 ## Use the SSH key pair with an Azure Linux VM
 
@@ -62,7 +62,7 @@ It will look something like the following output:
 ssh-rsa XXXXXXXXXXc2EAAAADAXABAAABAXC5Am7+fGZ+5zXBGgXS6GUvmsXCLGc7tX7/rViXk3+eShZzaXnt75gUmT1I2f75zFn2hlAIDGKWf4g12KWcZxy81TniUOTjUsVlwPymXUXxESL/UfJKfbdstBhTOdy5EG9rYWA0K43SJmwPhH28BpoLfXXXXXGX/ilsXXXXXKgRLiJ2W19MzXHp8z3Lxw7r9wx3HaVlP4XiFv9U4hGcp8RMI1MP1nNesFlOBpG4pV2bJRBTXNXeY4l6F8WZ3C4kuf8XxOo08mXaTpvZ3T1841altmNTZCcPkXuMrBjYSJbA8npoXAXNwiivyoe3X2KMXXXXXdXXXXXXXXXXCXXXXX/ azureuser@myserver
 ```
 
-Copy this value, so you can use it in the next exercise.
+Copy this value so you can use it in the next exercise.
 
 ### Use the SSH key when creating a Linux VM
 

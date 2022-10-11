@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Windows Server administration basics
   - Experience with managing Active Directory Domain Services
-iconUrl: /learn/achievements/3-active-directory-domain-services-migration.svg
+iconUrl: /training/achievements/3-active-directory-domain-services-migration.svg
 levels:
 - intermediate
 roles:

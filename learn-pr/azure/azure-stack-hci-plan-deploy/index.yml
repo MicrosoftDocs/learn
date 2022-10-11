@@ -23,7 +23,7 @@ prerequisites: |
   - Windows Server Hyper-V
   - Windows Server software-defined storage 
   - Windows Server software-defined networking
-iconUrl: /learn/achievements/azure-stack-hci-plan-deploy.svg
+iconUrl: /training/achievements/azure-stack-hci-plan-deploy.svg
 levels:
 - beginner
 roles:

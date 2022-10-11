@@ -6,7 +6,7 @@ You need to automate the process. Virtual machine extensions will allow you to a
 
 ## Skills measured
 
-Automating virtual machine deployments is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
+Automating virtual machine deployments is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 

@@ -2,12 +2,12 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
 
 ### Get the public IP address of the VM
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) from the previous exercise, select **Go to resource**. The **Overview** pane for the virtual machine that you just created appears. Alternatively, you can find the VM under **All Resources** if you need to open it. The overview pane enables you to:
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) from the previous exercise, select **Go to resource**. The **Overview** pane for the virtual machine that you just created appears. Alternatively, you can find the VM under **All Resources** if you need to open it. The overview pane allows you to:
 
-    - See if the VM is running
-    - Stop or restart the VM
-    - Get the public IP address of the VM
-    - See the activity of the CPU, disk, and network
+    - See if the VM is running.
+    - Stop or restart the VM.
+    - Get the public IP address of the VM.
+    - See the activity of the CPU, disk, and network.
 
 1. Select **Connect** > **SSH** at the top of the pane.
 
@@ -42,7 +42,7 @@ Let's connect to our Linux VM with SSH, and configure Apache, so we have a runni
     - `dmesg`: Lists all the kernel messages
     - `lsblk`: Lists all the block devices - here you'll see your drives
 
-    The more interesting thing to observe in the list of drives is what is _missing_. Notice that our **Data** drive (`sdc`) is present but not mounted into the file system. Azure added a VHD but didn't initialize it.
+    The more interesting thing to observe in the list of drives is what is *missing*. Notice that our **Data** drive (`sdc`) is present but not mounted into the file system. Azure added a VHD, but didn't initialize it.
 
 ## Initialize data disks
 
@@ -68,11 +68,11 @@ Any additional drives you create from scratch need to be initialized and formatt
     sudo mkdir /data && sudo mount /dev/sdc1 /data
     ```
 
-We initialized the disk, and mounted it. If you want more details on this process, see the **Add and size disks in Azure virtual machines** module. This task is covered in more detail there.
+We initialized the disk, and mounted it. If you want more details on this process, see the **[Add and size disks in Azure virtual machines](/training/modules/add-and-size-disks-in-azure-virtual-machines/)** module. This task is covered in more detail there.
 
 ## Install software onto the VM
 
-As you can see, SSH enables you to work with the Linux VM just like a local computer. You can administer this VM as you would any other Linux computer: installing software, configuring roles, adjusting features, and other everyday tasks. Let's focus on installing software for a moment.
+As you can see, SSH allows you to work with the Linux VM just like a local computer. You can administer this VM as you would any other Linux computer: installing software, configuring roles, adjusting features, and other everyday tasks. Let's focus on installing software for a moment.
 
 You can also install software from the internet when you're connected to the VM via SSH. Azure machines are, by default, internet connected. You can use standard commands to install popular software packages directly from standard repositories. Let's use this approach to install Apache.
 
@@ -80,25 +80,25 @@ You can also install software from the internet when you're connected to the VM 
 
 Apache is available within Ubuntu's default software repositories, so we'll install it using conventional package management tools:
 
-1. Start by updating the local package index to reflect the latest upstream changes.
+1. Start by updating the local package index to reflect the latest upstream changes:
 
     ```bash
     sudo apt-get update
     ```
 
-1. Next, install Apache.
+1. Next, install Apache:
 
     ```bash
     sudo apt-get install apache2 -y
     ```
 
-1. It should start automatically - we can check the status using `systemctl`.
+1. It should start automatically. We can check the status using `systemctl`:
 
     ```bash
     sudo systemctl status apache2 --no-pager
     ```
 
-    The `systemctl` command returns something like the following output.
+    The `systemctl` command returns something like the following output:
 
     ```output
     apache2.service - The Apache HTTP Server

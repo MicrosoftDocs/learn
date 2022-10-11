@@ -39,6 +39,6 @@ units:
   - learn.github.manage-github-actions-enterprise.exercise
   - learn.github.manage-github-actions-enterprise.knowledge-check
   - learn.github.manage-github-actions-enterprise.summary
-iconUrl: /learn/achievements/github/manage-github-actions-enterprise.svg
+iconUrl: /training/achievements/github/manage-github-actions-enterprise.svg
 badge:
   uid: learn.github.manage-github-actions-enterprise.badge

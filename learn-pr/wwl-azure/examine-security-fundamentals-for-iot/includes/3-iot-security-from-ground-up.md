@@ -50,5 +50,5 @@ By default, IoT Hub's hostnames map to a public endpoint with a publicly routabl
 
 For detailed information on securing network access, see the following resources:
 
- -  IoT Hub IP filtering: [https://docs.microsoft.com/azure/iot-hub/iot-hub-ip-filtering](/azure/iot-hub/iot-hub-ip-filtering).
- -  Virtual network support: [https://docs.microsoft.com/azure/iot-hub/virtual-network-support](/azure/iot-hub/virtual-network-support)
+ -  IoT Hub IP filtering: [Use IP filters](/azure/iot-hub/iot-hub-ip-filtering).
+ -  Virtual network support: [IoT Hub support for virtual networks with Private Link and Managed Identity](/azure/iot-hub/virtual-network-support)

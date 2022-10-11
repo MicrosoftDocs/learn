@@ -19,7 +19,7 @@ prerequisites: |
   Before taking this training, you should complete:
   - Azure Administrator (AZ-104) or Azure Architect Technologies (AZ-303) exam.
   - SAP HANA or NetWeaver training.
-iconUrl: /learn/achievements/8-monitor-and-troubleshoot-sap-hana-on-azure-large-instances.svg
+iconUrl: /training/achievements/8-monitor-and-troubleshoot-sap-hana-on-azure-large-instances.svg
 levels:
 - advanced
 roles:

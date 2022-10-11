@@ -10,7 +10,7 @@ Here are some of the things you covered:
 ## Next steps
 
 To continue learning about Microsoft Endpoint Manager, see the next learning module in this series:
-- [Protect your endpoint environment with Microsoft Endpoint Manager](/learn/modules/protect-endpoints-with-endpoint-manager/)
+- [Protect your endpoint environment with Microsoft Endpoint Manager](/training/modules/protect-endpoints-with-endpoint-manager/)
 
 To evaluate Microsoft Intune and the Microsoft technologies available with Microsoft's Enterprise Mobility + Security (EMS), continue with the free trial:
 - [Get a free trial, evaluate Enterprise Mobility + Security (EMS)](https://go.microsoft.com/fwlink/?linkid=845167)

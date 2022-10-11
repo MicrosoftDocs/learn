@@ -87,7 +87,7 @@ Identify the subtasks of *Migrate your relational data stored in SQL Server to A
 
 1. **Exercise - Assess database with the Data Migration Assistant**
 
-    Perform an assessment to ensure the source database is compatible with Azure SQL Database. Steps to follow should reference https://docs.microsoft.com/en-us/azure/dms/tutorial-sql-server-to-azure-sql#assess-your-on-premises-database.
+    Perform an assessment to ensure the source database is compatible with Azure SQL Database. Steps to follow should reference https://learn.microsoft.com/azure/dms/tutorial-sql-server-to-azure-sql#assess-your-on-premises-database.
 
     1. Download and install the [Data Migration Assistant](https://www.microsoft.com/download/details.aspx?id=53595)
     1. Create an assessment
@@ -125,7 +125,7 @@ Identify the subtasks of *Migrate your relational data stored in SQL Server to A
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    *Add your summary [(Guidance)](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
+    *Add your summary [(Guidance)](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit)*
 
 ## Notes
 

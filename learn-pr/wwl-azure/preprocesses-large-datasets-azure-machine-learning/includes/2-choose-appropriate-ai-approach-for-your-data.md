@@ -33,7 +33,7 @@ Some examples of what deep learning can be used for:
 - **Real-time language translation**: translate text in real time for automatic subtitles.
 
 > [!NOTE]
-> If you're new to deep learning, explore it in more depth by going through Microsoft's learn module about how to [train and evaluate deep learning models](/learn/modules/train-evaluate-deep-learn-models/) and NVIDIA's course on [building a brain in 10 minutes](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-01+V1/about).
+> If you're new to deep learning, explore it in more depth by going through Microsoft's learn module about how to [train and evaluate deep learning models](/training/modules/train-evaluate-deep-learn-models/) and NVIDIA's course on [building a brain in 10 minutes](https://courses.nvidia.com/courses/course-v1:DLI+T-FX-01+V1/about).
 
 Whether working with machine learning or deep learning algorithms, it's important to have a good *quality* dataset to improve your model's performance. Next to quality, data scientists also strive for large datasets as more data *can* result in a more representative model. 
 

@@ -14,7 +14,7 @@ prerequisites: |
   - Basic understanding of Microsoft 365
 summary: |
   Analyze threat data across domains and rapidly remediate threats with built-in orchestration and automation in Microsoft 365 Defender.  This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
-iconUrl: /learn/achievements/mitigate-threats-using-microsoft-365-defender.svg
+iconUrl: /training/achievements/mitigate-threats-using-microsoft-365-defender.svg
 levels:
 - intermediate
 roles:

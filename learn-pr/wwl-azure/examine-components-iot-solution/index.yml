@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of the IoT solution architecture and the data workflows within an IoT solution.
-iconUrl: /learn/achievements/iot-components-of-solution.svg
+iconUrl: /training/achievements/iot-components-of-solution.svg
 levels:
 - intermediate
 roles:

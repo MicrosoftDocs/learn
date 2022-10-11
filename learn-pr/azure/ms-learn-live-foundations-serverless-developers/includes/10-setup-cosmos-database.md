@@ -110,4 +110,4 @@ Configuration data for locally running projects is stored in a file called `loca
 
 ## Resources
 
-- Microsoft Learn Modules about [CosmosDB](/learn/browse/?products=azure-cosmos-db)
+- Learn modules for [CosmosDB](/training/browse/?products=azure-cosmos-db)

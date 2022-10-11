@@ -15,7 +15,7 @@ summary:  |
 prerequisites: | 
   - Knowledge of personal computer operating systems.
   - Fundamentals of cloud computing.
-iconUrl: /learn/achievements/manage-hybrid-infrastructure-with-azure-arc.svg
+iconUrl: /training/achievements/manage-hybrid-infrastructure-with-azure-arc.svg
 levels:
 - beginner
 roles:

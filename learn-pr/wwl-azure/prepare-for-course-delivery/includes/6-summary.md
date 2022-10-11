@@ -8,12 +8,12 @@ Supplemental Resources:
 
 - [Microsoft Learn for Educators Portal](https://aka.ms/MSLEPort) 
 
-- [Microsoft Learn for Educators course planning module](/learn/modules/microsoft-learn-educators-course-plan/) 
+- [Microsoft Learn for Educators course planning module](/training/modules/microsoft-learn-educators-course-plan/) 
 
-- [Microsoft Learn for Educators Training and Tools](/learn/educator-center/programs/msle/training)  
+- [Microsoft Learn for Educators Training and Tools](/training/educator-center/programs/msle/training)  
 
-- [MSLE Teams community ](https://aka.ms/JoinEdTeams)
+- [MSLE Teams community](https://aka.ms/JoinEdTeams)
 
-- [MOC Virtual Educator Prep Sessions (VEPS) ](https://aka.ms/msletrainingtools)
+- [MOC Virtual Educator Prep Sessions (VEPS)](https://aka.ms/msletrainingtools)
 
 - [Student Certification](https://aka.ms/studentcertification)  

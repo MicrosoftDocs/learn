@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN
   - Basic knowledge of network concepts, such as Classless Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP) routing, Dynamic Host Configuration Protocol (DHCP), and subnets
-iconUrl: /learn/achievements/deploy-azure-vmware-solution.svg
+iconUrl: /training/achievements/deploy-azure-vmware-solution.svg
 badge:
   uid: learn.deploy-azure-vmware-solution.badge
 levels: 
