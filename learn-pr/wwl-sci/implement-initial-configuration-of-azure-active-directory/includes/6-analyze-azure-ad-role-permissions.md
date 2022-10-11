@@ -9,7 +9,8 @@ What is a permission? The dictionary definition of permission is the **consent o
 | Can create Security and Microsoft 365 Groups | Can search for non-hidden groups by name                  |
 | Register new applications                    | Read properties of registered and enterprise applications |
 
-\[!Note\] This is just a small subset, to show differences. If you want a full list of the [Default User Permissions](/azure/active-directory/fundamentals/users-default-permissions)
+> [!NOTE]
+> This is just a small subset, to show differences. If you want a full list of the [Default User Permissions](/azure/active-directory/fundamentals/users-default-permissions)
 
 ### Controlling permissions - add and restrict
 

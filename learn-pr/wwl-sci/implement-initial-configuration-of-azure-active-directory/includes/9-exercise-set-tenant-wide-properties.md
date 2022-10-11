@@ -33,7 +33,7 @@ Azure subscriptions have a trust relationship with Azure Active Directory (Azure
 1. In the **Azure Active Directory** screen, in the Manage section, select **Properties**.
 1. Under **Tenant properties**, locate **Tenant ID**. Tenant ID is your unique tenant identifier.
     
-    :::image type="content" source="../media/portal-tenant-identifier-38cf4c18.png" alt-text="Screenshot of the Tenant properties page with the Tenant I D box highlighted.":::
+    :::image type="content" source="../media/portal-tenant-identifier-38cf4c18.png" alt-text="Screenshot of the Tenant properties page with the Tenant ID box highlighted.":::
     
 
 ### Change the Technical contact, add your privacy info, Global privacy contact, and Privacy statement URL

@@ -103,4 +103,4 @@ To maintain access to your identity management store when issue arises, prepare 
 
 ## Secure your administrator roles
 
-Attackers who get control of privileged accounts can do tremendous damage. Always protect these accounts first. Use the Security Defaults feature, that is available to all Azure AD organizations. Security Defaults enforces multifactor authentication on privileged Azure AD accounts.
+Attackers who get control of privileged accounts can do tremendous damage. Always protect these accounts first. Use the Security Defaults feature that is available to all Azure AD organizations. Security Defaults enforces multifactor authentication on privileged Azure AD accounts.
