@@ -22,7 +22,7 @@ prerequisites: |
   - A Log Analytics workspace with log data.
   - Knowledge of database structures like tables, columns, and rows.
   - Ability to write Kusto Query Language queries at a novice to intermediate level.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/analyze-logs-with-kql.svg
 levels: 
   - intermediate
 roles:
