@@ -8,10 +8,10 @@ In this unit, you'll learn how to navigate the data in the Application Insights 
 
 Now that you've enabled an Application Insights resource to gather metrics from the web app, you can view and analyze that data to diagnose issues if they arise. There are several tools you can use to display that data:
 
-- **The Azure portal.** You can find a variety of tools by going to the Application Insights resource in the portal. These tools include a set of common performance charts on the **Overview** page, an **Application map**, and **Performance** and **Failures** pages. There's also an Application Insights dashboard that contains a common set of charts. You can use the **Metrics** page to design new charts and add them to dashboards.
-- **Power BI.** This tool is often used by business analysts to investigate business values like sales and profit margins. You can connect Power BI to an Application Insights resource and use it to display web app telemetry data.
-- **Visual Studio.** Developers can connect Visual Studio to Application Insights to view the same charts and visualizations that are shown in the Azure portal. It's convenient to see code and performance data in one tool.
-- **Custom tools.** Application Insights includes a comprehensive API for accessing telemetry and analytics. Custom tools and applications can use the API to power their own visualizations. For example, if you have a custom mobile app that your business decision makers use to view sales data, you can add a visualization of web site performance statistics to the app.
+- **The Azure portal**: You can find a variety of tools by going to the Application Insights resource in the portal. These tools include a set of common performance charts on the **Overview** page, an **Application map**, and **Performance** and **Failures** pages. There's also an Application Insights dashboard that contains a common set of charts. You can use the **Metrics** page to design new charts and add them to dashboards.
+- **Power BI**: Business analysts often use this tool to investigate business values like sales and profit margins. You can connect Power BI to an Application Insights resource and use it to display web app telemetry data.
+- **Visual Studio**: Developers can connect Visual Studio to Application Insights to view the same charts and visualizations that are shown in the Azure portal. It's convenient to see code and performance data in one tool.
+- **Custom tools**: Application Insights includes a comprehensive API for accessing telemetry and analytics. Custom tools and applications can use the API to power their own visualizations. For example, if you have a custom mobile app that your business decision makers use to view sales data, you can add a visualization of web site performance statistics to the app.
 
 In this module, we'll view data in the Azure portal.
 
@@ -19,11 +19,11 @@ In this module, we'll view data in the Azure portal.
 
 There are many useful charts and diagrams in an Application Insights resource and in the dashboard, but sometimes you'll need to create a custom chart. On the Application Insights resource pane, you can create your own chart on the **Metrics** page. For example, you can:
 
-- Specify a time period for the chart. This could be the last 30 minutes or the last 30 days, or somewhere in between. You can also specify a start and end time for the period that interests you.
-- Specify the type of chart. You can choose line, area, bar, or scatter.
-- Specify a metric to display. This metric will be shown on the vertical axis.
-- Specify an aggregation method. This option specifies whether the chart will show the average, minimum, maximum, sum, or count for the chosen metric at each plotted point.
-- Specify a filter. Data that doesn't satisfy the filter won't be displayed. Use filters when you need to focus on a specific data set.
+- **Specify a time period for the chart**: This could be the last 30 minutes or the last 30 days, or somewhere in between. You can also specify a start and end time for the period that interests you.
+- **Specify the type of chart**: You can choose line, area, bar, or scatter.
+- **Specify a metric to display**: This metric will be shown on the vertical axis.
+- **Specify an aggregation method**: This option specifies whether the chart will show the average, minimum, maximum, sum, or count for the chosen metric at each plotted point.
+- **Specify a filter**: Data that doesn't satisfy the filter won't be displayed. Use filters when you need to focus on a specific data set.
 
    ![Screenshot of the Application Insights Metrics pane with a callout highlighting the details required to add a new metric.](../media/4-custom-chart-creation.png)
 
