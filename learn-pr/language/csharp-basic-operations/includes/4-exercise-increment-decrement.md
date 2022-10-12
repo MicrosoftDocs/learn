@@ -25,7 +25,7 @@ These techniques can be used for subtraction, multiplication and more. The follo
 > [!NOTE]
 > Operators like `+=`, `-=`, `*=`, `++`, and `--` are known as *compound assignment* operators, because they compound some operation in addition to assigning the result to the variable. The `+=` operator is specifically termed the *addition assignment* operator.
 
-### Step 1 - Write code to increment and decrement a value.
+### Step 1 - Write code to increment and decrement a value
 
 Enter the following code in the code editor:
 
@@ -63,13 +63,13 @@ Third decrement: 1
 ```
 
 > [!Note]
-> In the "second increment", we used `value += 1;`. However, weI could have used any literal `int` value (or a variable) to increment that amount. The same holds true for the "second decrement": `value -= 1;`.
+> In the "second increment", we used `value += 1;`. However, we could have used any literal `int` value (or a variable) to increment that amount. The same holds true for the "second decrement": `value -= 1;`.
 
 ## Positioning the increment and decrement operators
 
 Both the increment and decrement operators have an interesting quality: depending on their position, they perform their operation before or after they retrieve their value. In other words, if you use the operator before the value (as in `++value`), the increment will happen *before* the value is retrieved. Likewise, `value++` will increment the value after the value has been retrieved.
 
-### Step 2 - Use the increment operator before and after the value.
+### Step 2 - Use the increment operator before and after the value
 
 Delete or comment out the code in the previous example, then add the following lines of code:
 
