@@ -1,14 +1,14 @@
-After an evaluation of Azure DDoS Protection Standard for Contoso, your recommendation is to proceed with the upgrade.
+After an evaluation of Azure DDoS Protection for Contoso, your recommendation is to proceed with the upgrade.
 
-Your decision is based on the fact that Azure DDoS Protection Standard provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your applications and resources deployed in your virtual networks. Additionally, it provides a customer-defined SLA and access to the DDoS rapid response team, which provides access to DDoS experts during an active attack.
+Your decision is based on the fact that Azure DDoS Protection provides countermeasures against the most sophisticated DDoS threats. The service provides enhanced DDoS mitigation capabilities for your applications and resources deployed in your virtual networks. Additionally, it provides a customer-defined SLA and access to the DDoS rapid response team, which provides access to DDoS experts during an active attack.
 
 ## Learn more
 
 You can learn more by reviewing the following articles:
 
-- [Azure DDoS Protection Standard overview](/azure/ddos-protection/ddos-protection-overview?azure-portal=true)
+- [Azure DDoS Protection overview](/azure/ddos-protection/ddos-protection-overview?azure-portal=true)
 
-- [Azure DDoS Protection Standard features](/azure/ddos-protection/ddos-protection-standard-features?azure-portal=true)
+- [Azure DDoS Protection features](/azure/ddos-protection/ddos-protection-standard-features?azure-portal=true)
 
 - [View and configure DDoS protection telemetry](/azure/ddos-protection/telemetry-monitoring-alerting?azure-portal=true)
 
