@@ -3,7 +3,7 @@ To use the Language Understanding service to develop an NLP solution, you'll nee
 The Language service has various features, including sentiment analysis, key phrase extraction, entity recognition, intent recognition, and text classification. Some of these features can be used without configuration of your Language resource, such as language detection or sentiment analysis. Other features, such as conversational language understanding and custom named entity recognition will require a model to be built for prediction.
 
 > [!TIP]
-> This module's lab covers building a model for conversational language understanding. For more focused modules on custom text classification and custom named entity recognition, see the [Build custom text analytics](/training/paths/build-custom-text-analytics?azure-portal=true) learning path.
+> This module's lab covers building a model for conversational language understanding. For more focused modules on custom text classification and custom named entity recognition, see the [Build custom text analytics](/learn/paths/build-custom-text-analytics?azure-portal=true) learning path.
 
 ## Building your Language Understanding model
 
