@@ -2,7 +2,7 @@ In this exercise, you’ll create a resource and configure a resource lock. Stor
 
 This exercise is a Bring your own subscription exercise, meaning you’ll need to provide your own Azure subscription to complete the exercise. Don’t worry though, the entire exercise can be completed for free with the 12 month free services when you sign up for an Azure account.
 
-For help with signing up for an Azure account, see the [Create an Azure account](/training/modules/create-an-azure-account/) learning module.
+For help with signing up for an Azure account, see the [Create an Azure account](/learn/modules/create-an-azure-account/) learning module.
 
 Once you’ve created your free account, follow the steps below. If you don’t have an Azure account, you can review the steps to see the process for adding a simple resource lock to a resource.
 
@@ -109,7 +109,7 @@ In the final task, you remove the resource lock and delete the storage account f
     
     :::image type="content" source="../media/storage-account-delete-f4d60c3b.png" alt-text="Screenshot of the deletion confirmation message before deleting a storage account.":::
     
-1. You should receive a message that the storage account was deleted. If you go Home > Storage accounts, you should see that the storage account you created for this exercise is gone.
+1. You should receive a message that the storage account was deleted. If you go Home &gt; Storage accounts, you should see that the storage account you created for this exercise is gone.
 
 Congratulations! You've completed configuring, updating, and removing a resource lock on an Azure resource.
 
