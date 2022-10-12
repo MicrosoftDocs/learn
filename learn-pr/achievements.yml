@@ -1262,3 +1262,8 @@ achievements:
   title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
   summary: Deploy MariaDB, MySQL, and PostgreSQL on Azure
   iconUrl: /training/achievements/deploy-mariadb-mysql-and-postgresql-on-azure.svg
+- uid: learn.intro-to-hyperscale.badge
+  type: badge
+  title: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
+  summary: Introduction to Hyperscale (Citus) on Azure Database for PostgreSQL
+  iconUrl: /learn/achievements/intro-to-hyperscale.svg

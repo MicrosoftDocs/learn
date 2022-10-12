@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-microsoft-sentinel-deployment-sap.describe-deployment-process
+title: Describe the deployment process
+metadata:
+  title: Describe the deployment process
+  description: "Describe the deployment process"
+  ms.date: 10/08/2022
+  author: wwlpublish
+  ms.author: eric
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-describe-deployment-process.md)]

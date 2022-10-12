@@ -1,4 +1,4 @@
-To prevent any unauthorized network traffic in your Azure Virtual Desktop environment, limit network traffic by using Azure Firewall. In this unit, you'll learn how Azure Firewall filters this traffic.
+To prevent any unauthorized network traffic in your Azure Virtual Desktop environment, you can limit network traffic by using Azure Firewall. In this unit, you'll learn how Azure Firewall filters this traffic.
 
 ## What is Azure Firewall?
 
@@ -12,7 +12,7 @@ Azure Firewall works not only for traffic to and from the internet, but also int
 
 ## What is Azure Virtual Desktop?
 
-Azure Virtual Desktop is a desktop and app virtualization service that runs in the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
+Azure Virtual Desktop is a desktop and app virtualization service that runs in the cloud. Azure Virtual Desktop works across devices like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
 
 ## How does Azure Firewall filter traffic for Azure Virtual Desktop?
 

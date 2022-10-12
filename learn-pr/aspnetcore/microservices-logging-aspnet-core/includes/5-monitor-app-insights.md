@@ -113,7 +113,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
             :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/services/couponservice.cs" id="snippet_CheckCouponByCodeNumberAsync2" highlight="3":::
 
-        - A **WARNING** log entry with the text `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"` is logged. That message is logged because of the following code in the `GetCouponByCodeAsync` action method of *:::no-loc text="src/Services/Catalog/Catalog.API/Controllers/CouponController.cs":::*:
+        - A **WARNING** log entry with the text `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"` is logged. That message is logged because of the following code in the `GetCouponByCodeAsync` action method of *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::*:
 
             :::code language="csharp" source="../code/src/services/catalog/catalog.api/controllers/couponcontroller.cs" id="snippet_GetCouponByCodeAsync" highlight="13-15":::
 
