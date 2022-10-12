@@ -4,7 +4,7 @@ You've been tasked to assess how Microsoft Azure implements networking, and to i
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Create an Azure Virtual Network
 - Create an Azure VPN Gateway
