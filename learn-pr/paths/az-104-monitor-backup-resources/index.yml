@@ -14,9 +14,9 @@ prerequisites: |
   - [Azure Fundamentals: Describe Azure architecture and services](/training/paths/azure-fundamentals-describe-azure-architecture-services/)
   - [Azure Fundamentals: Describe Azure management and governance](/training/paths/describe-azure-management-governance/)
 summary: |
-  Learn how to manage storage accounts, data in Azure Storage, and Azure File and Blob storage. 
-  
-  Here are the learning paths in the AZ-104 Azure Administrator series:
+  Learn how to monitor resources by using Azure Monitor and implement backup and recover in Azure. 
+
+    Here are the learning paths in the AZ-104 Azure Administrator series:
 
   :::row:::
   :::column:::
@@ -32,7 +32,7 @@ summary: |
   :::column:::
     <img src="/training/achievements/az-104-manage-storage.svg" width="113" height="84" alt="The trophy for the AZ-104 Implement and manage storage in Azure learning path." role="presentation"></img>
 
-    AZ-104: Implement and manage storage in Azure
+    [AZ-104: Implement and manage storage in Azure](/training/paths/az-104-manage-storage/)
   :::column-end:::
   :::row-end:::
 
@@ -52,7 +52,7 @@ summary: |
   :::column:::
     <img src="/training/achievements/az-104-monitor-backup-resources.svg" width="101" height="84" alt="The trophy for the AZ-104 Monitor and back up Azure resources learning path." role="presentation"></img>
 
-    [AZ-104: Monitor and back up Azure resources](/training/paths/az-104-monitor-backup-resources/)
+    AZ-104: Monitor and back up Azure resources
   :::column-end:::
   :::row-end:::
 iconUrl: /training/achievements/az-104-monitor-backup-resources.svg
