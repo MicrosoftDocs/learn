@@ -1,5 +1,4 @@
-
-In this unit, you'll create the firewall in its own virtual network. Then you peer that virtual network with the virtual network used by your Azure Virtual Desktop.
+In this unit, you'll create the firewall in its own virtual network. Then, you'll peer that virtual network with the virtual network used by your Azure Virtual Desktop.
 
 ## Create a virtual network and subnet for Azure Firewall
 
@@ -25,7 +24,7 @@ Create a virtual network that acts as the central connectivity point or hub for 
     |---------|---------|
     |Subnet name    |  AzureFirewallSubnet    |
 
-    Leave the rest of the values as they are.
+    Leave the rest of the values as the defaults.
 1. Select **Save**.
 1. Select **Review + create** and wait for validation to pass.
 1. Select **Create**.

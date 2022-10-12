@@ -2,13 +2,13 @@
 
 Raw data, however, is often noisy and unreliable and may contain missing values and outliers. Using such data for **Machine Learning** can produce misleading results. Thus, data cleaning of the raw data is one of the most important steps in preparing data for Machine Learning. As Machine Learning algorithm learns the rules from data, having clean and consistent data is an important factor in influencing the predictive abilities of the underlying algorithms.
 
-The most common type of data available for machine learning is in tabular format. The tabular data is typically available in the form of rows and columns. In tabular data, the row describes a single observation, and each column describes different properties of the observation. Column values can be continuous (numerical), discrete (categorical), datetime (time-series), or text. Columns that are chosen as inputs to the Machine Learning models are also known as model features. 
+The most common type of data available for machine learning is in tabular format. The tabular data is typically available in the form of rows and columns. In tabular data, the row describes a single observation, and each column describes different properties of the observation. Column values can be continuous, discrete, datetime, or text. Columns that are chosen as inputs to the Machine Learning models are also known as model features. 
 
 Data cleaning deals with issues in the data quality such as errors, missing values and outliers. There are several techniques in dealing with data quality issues and we will discuss some of the common approaches below.
 
 ## Imputation of null values
 
-Null values refer to unknown or missing data as well as irrelevant responses. Strategies for dealing with this scenario include:
+Null values refer to unknown or missing data. Strategies for dealing with this scenario include:
 
 - Dropping these records: Works when you do not need to use the information for downstream workloads.
 - Adding a placeholder (for example, -1): Allows you to see missing data later on without violating a schema.
