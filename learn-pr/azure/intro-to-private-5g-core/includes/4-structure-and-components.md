@@ -1,176 +1,44 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Intro
 
-    Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
+## Key components
 
-    Pattern:
-        One paragraph of 2 sentences:
-            Sentence 1: State that this unit addresses ("when to use it").
-            Sentence 2: State that this unit targets this learning objective: "Evaluate whether (product) is appropriate to (general product use case)."
-        Decision criteria as a bulleted list.
+The following diagram shows the key components of Azure Private 5G Core: 
 
-    Heading: none
+:::image type="content" source="media/azure-private-5g-core-components.png" alt-text="Diagram showing the components of Azure Private 5G Core" border="false":::
 
-    Example: "Here, we'll discuss how you can decide whether Logic Apps is the right choice for a workflow. We'll list some criteria that indicate whether Logic Apps will meet your performance and functional goals.
-        * Integration
-        * Performance
-        * Conditionals
-        * Connectors"
--->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+Diagram showing the components of Azure Private 5G Core. They're split between cloud components and components provided on premises. The cloud components include Azure portal, ARM APIs, Azure Monitor, SIM Manager, Service Manager, and RAN Monitor. The on-premises components include Subscriber Database and Policy Control, 4G Interworking Function, 5G Core Control Plane, 5G User Plane, Arc-enabled Kubernetes, and Azure Stack Edge.
 
-<!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
+## Packet core architecture
 
-    Goal: Lead-in to the criteria discussion.
+Azure Private 5G Core instantiates a single private mobile network distributed across one or more enterprise sites across the world. Each site contains a packet core instance, which is a cloud-native implementation of the 3GPP standards-defined 5G Next Generation Core (5G NGC or 5GC). A packet core instance authenticates end devices and aggregates their data traffic over 5G Standalone wireless and access technologies. Each packet core instance includes the following components:
 
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: describing the negative ("when not to use") at a high level.
-            Sentence 3: transition/lead-in to the detailed discussion.
+- A high performance (25 Gbps rated load) and highly programmable 5G User Plane Function (UPF).
+- Core control plane functions including policy and subscriber management.
+- A portfolio of service-based architecture elements.
+- Management components for network monitoring.
 
-    Heading: "## Decision criteria"
+You can also deploy packet core instances in 4G mode to support Private Long-Term Evolution (LTE) use cases. For example, you can use the 4G Citizens Broadband Radio Service (CBRS) spectrum. 4G mode uses the same cloud-native components as 5G mode (such as the UPF). This is in contrast to other solutions that need to revert to a legacy 4G stack.
 
-    Example:
-        "Decision criteria"
-         "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
--->
-## Decision criteria
-TODO: add your 3 lead-in sentences
+The following diagram shows the network functions supported by a packet core instance. It also shows the interfaces these network functions use to interoperate with third-party components.
 
-<!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
+:::image type="content" source="media/packet-core-architecture.png" alt-text="Diagram of the packet core architecture displaying each of the supported network functions and their interfaces":::
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for simple criteria where the analysis is brief and does not require a visual element.
+Each packet core instance is connected to the local RAN network to provide coverage for cellular wireless devices. You can choose to limit these devices to local connectivity. Alternatively, you can provide multiple routes to the cloud, internet, or other enterprise data centers running IoT and automation applications.
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
+## Azure Private 5G Core resources
 
-    Heading: none, this content will be the 'body' for the "Decision criteria" heading above.
+The following diagram shows the key resources you'll use to manage your private mobile network through Azure.
 
-    Pattern:
-        No heading.
-        Place both the criteria and analysis into a table.
+:::image type="content" source="media/private-5g-core-resources.png" alt-text="Diagram displaying the resources used to manage a private mobile network":::
 
-    Example:
-        | | |
-        | --- | --- |
-        | **Criteria** | **Analysis**|
-        | **Integration** | The key question to ask when you're considering Logic Apps is "do I need to integrate services?".... |
-        | **Performance** | The next consideration is performance. The Logic Apps execution engine scales your apps automatically.... |
-        | **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops.... |
-        | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
-        |   |   |
--->
-TODO: add your topic sentences(s)
+- The *mobile network* resource represents the private mobile network as a whole.
+- Each *SIM* resource represents a physical SIM or eSIM. The physical SIMs and eSIMs are used by UEs that will be served by the private mobile network.
+- *SIM group* resources serve as containers for SIM resources and allow you to sort SIMs into categories for easier management. Each SIM must be a member of a SIM group, but can't be a member of more than one. If you only have a small number of SIMs, you may want to add them all to the same SIM group. Alternatively, you can create multiple SIM groups to sort your SIMs. For example, you could categorize your SIMs by their purpose (such as SIMs used by specific UE types like cameras or cellphones), or by their on-site location.
+- *SIM policy* resources are a key component of Azure Private 5G Core's customizable policy control, which allows you to provide flexible traffic handling. You can determine exactly how your packet core instance applies quality of service (QoS) characteristics to service data flows (SDFs) to meet your deployment's needs. You can also use policy control to block or limit certain flows.
 
-<!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
+    Each SIM policy defines a set of policies and interoperability settings. You'll need to assign a SIM policy to a SIM before the UE using that SIM can access the private mobile network.
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for complex criteria where the analysis of each criterion needs both and a visual element.
+    A SIM policy will also reference one or more *services*. Each service is a representation of a set of QoS characteristics that you want to offer to UEs on SDFs that match particular properties, such as their destination, or the protocol used. You can also use services to limit or block particular SDFs based on these properties.
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
-
-    Pattern:
-        For each criterion, repeat this pattern:
-            1. H3 of the criterion.
-            2. 1-3 paragraphs of discussion/analysis.
-            3. Visual like an image, table, list, code sample, or blockquote.
-            
-    Example:
-        H3: "Integration"
-        Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
-        Visual: (image preferred)
--->
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-
-<!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
-
-    Goal: Lead-in to the example applications of the criteria.
-
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: Acknowledge that there are cases for which (product) won't work and/or there are edge cases that are difficult to decide.
-            Sentence 3: transition/lead-in to the detailed discussion.
-
-    Heading: "## Apply the criteria"
-
-    Example:
-        "Apply the criteria"
-         "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
-## Apply the criteria
-TODO: add your 3 lead-in sentences
-
-<!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
-
-    Goal: Apply the criteria to the 2-3 customer tasks in the scenario described in your introduction unit.
-
-    Pattern:
-        For each customer task, repeat this pattern:
-            1. "### Should (scenario subtask) use (product)?".
-            2. 1-3 paragraphs of discussion/analysis (first sentence should answer yes/no about whether the product is suitable).
-            3. Visual like an image, table, list, code sample, or blockquote.
-
-    Example:
-        H3: "Should the video-archive utility use Logic Apps?"
-        Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
-        Visual: (image preferred)
--->
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- 6. Guidance summary (optional) ------------------------------------------------
-
-    Goal: Job-aid for future use to help customers evaluate their own tasks against the criteria.
-
-    Pattern:
-        1. Heading "## Guidance summary"
-        2. Lead-in sentence acknowledging that this is a summary/repeat of previous material.
-        3. Visual like a flowchart (as an image) or rubric (as a table).
-
-    Example:
-        "The following flowchart summarizes the key questions to ask when you're considering using Logic Apps."
-        <flowchart image>
--->
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+- The *mobile network site* and *packet core* resources allow you to manage the sites in your private mobile network and the packet core instances that run in them.
+- Each *attached data network* resource allows you to manage how its associated packet core instance will connect to the data network.
