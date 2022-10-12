@@ -67,7 +67,7 @@ To use Azure PowerShell to enable analytical store support in n Azure Cosmos DB 
 New-AzCosmosDBSqlContainer -ResourceGroupName "my-rg" -AccountName "my-cosmos-db" -DatabaseName "my-db" -Name "my-container" -PartitionKeyKind "hash" -PartitionKeyPath "/productID" -AnalyticalStorageTtl -1
 ```
 
-For n Azure Cosmos DB for MongoDB API account, use the `New-AzCosmosDBMongoDBCollection` or `Update-AzCosmosDBMongoDBCollection` cmdlet with the `-AnalyticalStorageTtl` parameter.
+For an Azure Cosmos DB for MongoDB API account, use the `New-AzCosmosDBMongoDBCollection` or `Update-AzCosmosDBMongoDBCollection` cmdlet with the `-AnalyticalStorageTtl` parameter.
 
 ### Considerations for enabling analytical store support
 
