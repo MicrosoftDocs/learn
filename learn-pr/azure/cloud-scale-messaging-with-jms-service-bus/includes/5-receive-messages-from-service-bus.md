@@ -26,7 +26,7 @@ In the `pom.xml` file in your `spring-receiver-application`, add the following c
 
 ### Add the configuration parameters
 
-1. 1. In the `spring-receiver-application\src\main\resources` folder, edit the `application.properties` file, add the following parameters:
+1. In the `spring-receiver-application\src\main\resources` folder, edit the `application.properties` file, add the following parameters:
 
     ```java
     server.port=9090
