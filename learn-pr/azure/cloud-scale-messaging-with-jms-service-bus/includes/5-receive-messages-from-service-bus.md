@@ -17,40 +17,25 @@ Here again, we'll add the dependency and configuration.
 In the `pom.xml` file in your `spring-receiver-application`, add the following command under dependencies:
 
 ```xml
-<dependencies>
-    ...
-        <dependency>
-            <groupId>com.microsoft.azure</groupId>
-            <artifactId>azure-servicebus-jms-spring-boot-starter</artifactId>
-            <version>2.3.3</version>
-        </dependency>
-    ...
-</dependencies>
+            <dependency>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-servicebus-jms-spring-boot-starter</artifactId>
+                <version>2.3.3</version>
+            </dependency>
 ```
 
 ### Add the configuration parameters
 
-In the `application.properties` file in your `spring-receiver-application`, add the following parameters:
+1. 1. In the `spring-receiver-application\src\main\resources` folder, edit the `application.properties` file, add the following parameters:
 
-```java
-server.port=9090
+    ```java
+    server.port=9090
+    
+    spring.jms.servicebus.connection-string=<xxxxx>
+    spring.jms.servicebus.idle-timeout=20000
+    ```
+2. Set the `spring.jms.servicebus.connection-string` property to the connection string to your Service Bus namespace, which you saved earlier.
 
-spring.jms.servicebus.connection-string=<xxxxx>
-spring.jms.servicebus.idle-timeout=20000
-```
-
-> [!NOTE]
-> Be sure to insert custom values for the configuration.
->
-> To obtain the Service Bus connection string, run the following command on the Azure CLI and use the `Primary Connection String`.
->
->   ```bash
->    az servicebus namespace authorization-rule keys list \
->    --name RootManageSharedAccessKey \
->    --namespace-name $AZ_SB_PREMIUM_NAMESPACE \
->    --resource-group $AZ_RESOURCE_GROUP
->   ```
->
 
 ### Add code to receive messages from Service Bus
 
@@ -76,21 +61,20 @@ public class ReceiveController {
 
 ## Run the application locally
 
-You can now run your Spring Boot application by running the following command:
+1. Switch back to the root of the sample `spring-receiver-application` folder where the `pom.xml` file is located, and run the following command to start your Spring Boot application. This step assumes that you have `mvn` installed on your Windows computer, and it's in the `PATH`. 
 
-```bash
-./mvnw spring-boot:run
-```
+    ```bash
+    mvn spring-boot:run
+    ```
+2. After the application startup completes, you'll see the following log statements in the console where you ran the `./mvnw spring-boot:run` command.
 
-After the application startup completes, you'll see the following log statements in the console where you ran the `./mvnw spring-boot:run` command.
+    ```bash
+    Received <Hello>
+    Received <HelloAgain>
+    Received <HelloOnceAgain>
+    ```
 
-```bash
-Received <Hello>
-Received <HelloAgain>
-Received <HelloOnceAgain>
-```
-
-The appearance of the statements indicates that the Spring Boot application has successfully received messages from the Service Bus queue.
+    The appearance of the statements indicates that the Spring Boot application has successfully received messages from the Service Bus queue.
 
 ## See the entire workflow in action
 
