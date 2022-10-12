@@ -68,7 +68,7 @@ ULONG                   ip_stack[IP_STACK_SIZE >> 2];
 ULONG                   arp_area[ARP_POOL_SIZE >> 2];
 ```
 
-> The purpose of the shift right operator (>>) in the three examples below is for byte alignment.
+> The purpose of the shift right operator (>>) in the three examples above is for byte alignment.
 
 Error counter defined here
 

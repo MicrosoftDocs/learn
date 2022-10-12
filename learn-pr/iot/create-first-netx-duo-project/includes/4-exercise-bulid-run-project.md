@@ -2,7 +2,11 @@ We will use Codespace to build and run the Hello World project, and future proje
 
 ## Step 1 — Go to Codespace
 
-Click on this link to open your Codespace, and then click on `netxduo`.
+1. Launch browser and go to the forked samples repository which you have done in the [previous step](/training/modules/azure-rtos-netx-duo-fundamentals/1-introduction). The link should look like https://github.com/[your_github_id]/azure-rtos-learn-samples
+
+1. Select **Code** and open the Codespace you have created.
+
+1. Once the Codespace is launched, in the Explorer pane file tree, expand and open `courses/netxduo` folder.
 
 ## Step 2 — Go to `main.c`
 
