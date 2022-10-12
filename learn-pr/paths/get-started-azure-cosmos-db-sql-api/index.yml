@@ -11,7 +11,7 @@ metadata:
 title: Get started with Azure Cosmos DB for NoSQL
 prerequisites: |
   Before starting this learning path, you should already have:
-  *   Familiarity with Azure and the Azure portal.
+  *   Familiarity with Azure and the Azure Portal.
   *   Experience programming with C#.
   If you have no previous programming experience, we recommend you complete the Take your first steps with C# learning path before starting this one.
 summary: |
