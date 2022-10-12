@@ -109,4 +109,4 @@ You can proceed to view the messages in the Service Bus explorer in the Azure po
     :::image type="content" source="../media/service-bus-explorer-peek-view.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/service-bus-explorer-peek-view.png":::
 1. Select a message to see the message body in the bottom pane. 
 
-    :::image type="content" source="../media/peek-messages.png" alt-text="Screenshot of the Service Bus explorer peek experience." lightbox="../media/peek-messages.png":::
+    :::image type="content" source="../media/peek-messages.png" alt-text="Screenshot of the Service Bus explorer with peeked messages." lightbox="../media/peek-messages.png":::
