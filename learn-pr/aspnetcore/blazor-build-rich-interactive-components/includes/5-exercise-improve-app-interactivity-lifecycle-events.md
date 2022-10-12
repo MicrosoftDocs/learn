@@ -119,7 +119,7 @@ Currently, the price is correct, but the size is showing as the default 12 inche
     ```
 
 1. Now when the component loads, if the pizza is the family size, we can set it to 24.
-1. At the top of the `OnAfterRenderAsync` method, add this code.
+1. Modify the `OnAfterRenderAsync` method in **ConfigurePizzaDialog.razor** as follows:
 
     ```razor
     protected override async Task OnAfterRenderAsync(bool firstRender)
@@ -148,7 +148,7 @@ Currently, the price is correct, but the size is showing as the default 12 inche
 
 The problem is that the code setting the pizza size is happening at the wrong time in the lifecycle. Let's move the code to `OnInitializedAsync`.
 
-1. In the file explorer, expand **Shared**, then select **ConfigurePizzaDialog.razor**.
+1. In the file explorer, expand **Shared**, then select **ConfigurePizzaDialog.razor**. Modify the `OnInitializedAsync()` method as follows:
 
     ```razor
     protected override async Task OnInitializedAsync() {
