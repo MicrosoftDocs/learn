@@ -3,7 +3,7 @@ uid: learn.student-evangelism.optimize-basketball-player-rest-breaks
 metadata:
   title: Create a web app that uses data to make decisions on the basketball court
   description: "Create a web app by using JavaScript, Azure, GitHub, and Visual Studio Code to help the Tune Squad coach use data to make decisions on the basketball court, inspired by SPACE JAM: A NEW LEGACY."
-  ms.date: 03/10/2021
+  ms.date: 10/12/2022
   author: drguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
