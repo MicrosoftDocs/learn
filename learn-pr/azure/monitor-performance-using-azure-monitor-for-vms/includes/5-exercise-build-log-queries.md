@@ -1,5 +1,4 @@
-
-Remember from the previous units that you need to explore Azure native monitoring tools for resources deployed in Azure. To further your knowledge, you'll need to know how to use, edit, and create log queries.
+Remember from the previous units that you need to explore Azure-native monitoring tools for resources deployed in Azure. To further your knowledge, you'll need to know how to use, edit, and create log queries.
 
 In this unit, you'll:
 
@@ -14,19 +13,17 @@ In this unit, you'll:
 
     :::image type="content" source="../media/4-queries-logs-pane.png" alt-text="Screenshot showing where to select Queries from within the log editor pane." lightbox="../media/4-queries-logs-pane.png":::
 
-1. Locate **Category** on the upper left.
+1. Locate **Group by: Category** on the upper left.
 
-    :::image type="content" source="../media/5-locate-category.png" alt-text="Screenshot of where Category shows up in the queries pane." lightbox="../media/5-locate-category.png":::
+    :::image type="content" source="../media/5-locate-category.png" alt-text="Screenshot of where Group by: Category shows up in the queries pane." lightbox="../media/5-locate-category.png":::
 
 1. Change the filter on the top left from **Category** to **Resource Type** and select **Virtual Machine Scale Sets** on the far left under **All Queries**.
 
     :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set.png" alt-text="Screenshot of Virtual Machine Scale Set queries." lightbox="../media/5-resource-type-virtual-machine-scale-set.png":::
 
-1. Select the **Chart CPU usage trends by computer** query.
+1. Select the **Chart CPU usage trends by computer** query, then select **Run**.
 
      :::image type="content" source="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png" alt-text="Screenshot showing what query to select for charting CPU trends." lightbox="../media/5-resource-type-virtual-machine-scale-set-chart-cpu.png":::
-
-1. Select **Run**.
 
 1. Examine the query in the editor after it runs. Read through the comments that indicate what the query extracts.
 
@@ -51,7 +48,7 @@ Let's take the query you just used and make an edit to build a different data vi
     1. Returns the rounded maximum value in 5-minute intervals for both machines.
     :::image type="content" source="../media/5-cpu-trends-max.png" alt-text="Screenshot showing maximum value for CPU usage trends." lightbox="../media/5-cpu-trends-max.png":::
 
-    Each of these visualizations can be pinned to a dashboard by selecting **Pin to dashboard** at the top. Then specify the following details:
+    You can pin each of these visualizations to a dashboard by selecting **Pin to dashboard** at the top. Then, specify the following details:
 
     - Create a new dashboard, or add to an existing dashboard.
     - If existing, deploy the new visualization to the appropriate shared or private dashboard.
