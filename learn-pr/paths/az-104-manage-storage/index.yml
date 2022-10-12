@@ -57,6 +57,8 @@ products:
 - azure-storage-accounts
 - azure-storage-explorer
 - azure-virtual-machines
+subjects:
+- storage
 modules:
 - learn.wwl.configure-storage-accounts
 - learn.wwl.configure-blob-storage
