@@ -27,7 +27,7 @@ quiz:
     - content: 'Microsoft Cost Management'
       isCorrect: false
       explanation: 'Microsoft Cost Management gives you visibility into existing resource costs, and the future costs for those resources. It is not used to estimate costs for a new application.'
-    - content: 'Azyre Pricing Calculator'
+    - content: 'Azure Pricing Calculator'
       isCorrect: true
       explanation: 'Azure Pricing Calculator can be used to estimate costs for services used for a new application on Azure.'
 
