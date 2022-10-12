@@ -66,7 +66,7 @@ public class ReceiveController {
     ```bash
     mvn spring-boot:run
     ```
-2. After the application startup completes, you'll see the following log statements in the console where you ran the `./mvnw spring-boot:run` command.
+2. After the application startup completes, you'll see the following log statements in the console window.
 
     ```bash
     Received <Hello>
