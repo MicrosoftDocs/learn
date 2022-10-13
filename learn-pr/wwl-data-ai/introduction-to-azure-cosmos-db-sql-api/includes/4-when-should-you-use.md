@@ -42,5 +42,5 @@ One key part of your store's success is the ability for company to notify users 
 
 This example is similar to the example from the introduction of this module. To build on the first example, your team has decided to introduce Azure Cosmos DB for NoSQL as the database of choice. Now, your team can use Azure Synapse Link to prepare and aggregate data for deeper analysis using Azure Synapse Analytics. Your team can also use services such as Azure Functions to react to data events with Azure Cosmos DB, and then trigger an Azure Logic Apps workflow that will send notifications to mobile devices.
 
-[azure/cosmos-db/synapse-link]: https://docs.microsoft.com/azure/cosmos-db/synapse-link
+[azure/cosmos-db/synapse-link]: /azure/cosmos-db/synapse-link
 [azure.microsoft.com/support/legal/sla/cosmos-db]: https://azure.microsoft.com/support/legal/sla/cosmos-db/
