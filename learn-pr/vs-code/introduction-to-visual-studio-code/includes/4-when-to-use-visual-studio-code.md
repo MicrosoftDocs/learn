@@ -7,10 +7,13 @@ We've created a table containing  criteria to help you decide whether Visual Stu
 
 | Factor | Description |
 | ----| ---- |
-| Is there an official IDE for the language or framework I'm using? | There may be many different editors available for the language you want to work in. For example, you can edit HTML in just about any code editor or IDE. However, for some specialized use cases such as iOS and Android development, you may want to choose an official editor. |
-| Does the IDE support the language I want to use? | Out-of-the-box, Visual Studio code supports HTML, CSS, JavaScript, TypeScript, and few other languages. With hundreds of different language extensions to choose from, Visual Studio Code can be configured to meet most programming needs. Language support means that Visual Studio Code can provide features such as code completion (IntelliSense) as you're editing and debugging capabilities for code written in that language. |
-| Do I want an IDE with a small download? | The installation footprint of Visual Studio Code is very small, letting you download, install, and get started working quickly. Visual Studio Code is lightweight. You install only those extensions that you need to work and don't have to load any unnecessary components that can slow you down. |
-| Do I want source control integrated with my IDE? | Visual Studio Code has integrated source control management (SCM) and includes Git and GitHub support out-of-the-box. You can integrate with other SCM providers such as Subversion or Bitbucket by installing extensions from the marketplace. |
+| Is there an official code editor or IDE for the language or framework I'm using? | There may be many different editors and IDEs available for the language you want to work in. For example, you can edit HTML in just about any code editor or IDE. However, for some specialized use cases such as iOS and Android development, you may want to choose an official editor. |
+| Does the code editor or IDE support the language I want to use? | Out-of-the-box, Visual Studio Code supports HTML, CSS, JavaScript, TypeScript, and few other languages. With hundreds of different language extensions to choose from, Visual Studio Code can be configured to meet most programming needs. Language support means that Visual Studio Code can provide features such as code completion (IntelliSense) as you're editing and debugging capabilities for code written in that language. |
+| Do I want a code editor or an IDE with a small download? | The installation footprint of Visual Studio Code is very small, letting you download, install, and get started working quickly. Visual Studio Code is lightweight. You install only those extensions that you need to work and don't have to load any unnecessary components that can slow you down. |
+| Do I want source control integrated with my code editor or IDE? | Visual Studio Code has integrated source control management (SCM) and includes Git and GitHub support out-of-the-box. You can integrate with other SCM providers such as Subversion or Bitbucket by installing extensions from the marketplace. |
+
+> [!NOTE]
+> Depending on what operating system you're using on the computer where you're programming, your choices of code editor or IDE may be limited. Fortunately, Visual Studio Code runs on Windows, Linux, and macOS platforms.
 
 ## Apply the criteria
 
@@ -20,10 +23,12 @@ Let's add one more requirement to our scenario. The restaurant manager likes the
 
 | Factor | Web development | C++ development | Data science | iOS/Android Development |
 | ---- | ----| ---- | ----| ---- |
-| Is there an official IDE for this language or framework? | No | No | No | Yes |
+| Is there an official code editor or IDE for this language or framework? | No | No | No | Yes |
 | Does Visual Studio Code support the language or framework I'm using? | Yes | Yes | Yes | Yes |
-| Do I want an IDE with a small footprint? | Yes | Yes | Yes | Yes |
-| Do I need source control integration with my IDE? | Yes | Yes | Maybe | Yes |
+| Do I want a code editor or an IDE with a small footprint? | Yes | Yes | Yes | Yes |
+| Do I need source control integration with my code editor or IDE? | Yes | Yes | Maybe | Yes |
 | Use Visual Studio Code? | Yes | Yes | Yes | Maybe |
 
 After applying the criteria, you determine that Visual Studio Code is a good choice for your web development, C++, and data science projects for the restaurant. Although Visual Studio Code does have extensions to support iOS and Android development, you may prefer to use the full-featured official iOS (XCode) and Android (Android Studio) IDEs for mobile app development.
+
+You can revisit the criteria as your needs change. For example, in the future, you may decide you want to develop the inventory application in .NET and C# instead of C++. You also determine that having a lightweight editor is no longer a priority. In this case, you may want to consider using Visual Studio instead. Visual Studio provides better built-in support and richer features for developing in .NET and C#.

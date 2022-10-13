@@ -1,5 +1,5 @@
 
-Visual Studio Code is a free, lightweight, open-source IDE that can be customized through extensions to support many different programming needs.
+Visual Studio Code is a free, lightweight source code editor that can be customized through extensions to support many different programming needs.
 
 ## What are the main features of Visual Studio Code?
 
@@ -11,7 +11,7 @@ Let's take a look at the key features of Visual Studio Code:
 
 Visual Studio Code's user interface (UI) is based on Electron, a cross-platform technology for building desktop applications. This technology lets Visual Studio Code run on Linux, macOS, or Windows. The benefit of this versatility is that you can use the same familiar coding environment on whatever platform you're using.
 
-For example, you can use Visual Studio Code as you work on a web application on Windows. Later, if you need to work from a Linux host, you can install and use Visual Studio Code there to edit Python scripts. You don't have to learn how to use different IDEs to work on different operating systems.
+For example, you can use Visual Studio Code as you work on a web application on Windows. Later, if you need to work from a Linux host, you can install and use Visual Studio Code there to edit Python scripts. You don't have to learn how to use different editors to work on different operating systems.
 
 The following screenshot shows the Windows, Linux, and macOS downloads available on the Visual Studio Code home page:
 
@@ -31,7 +31,7 @@ Visual Studio Code has an explorer to organize and manage files and folders cont
  
 ### Search
 
-You can use Visual Studio Code's search capability to look for terms within a file or across multiple files. The search feature also provides advanced options for matching patterns. For example, you could exclude HTML file types from your search by specifying the pattern <kbd>**/*.html</kbd>.
+You can use Visual Studio Code's search capability to look for terms within a file or across multiple files. The search feature also provides advanced options for matching patterns. For example, you could exclude HTML file types from your search by specifying the pattern `**/*.html`.
 
 In addition, you can search for and replace terms within a file or multiple files as shown in the following screenshot:
 
@@ -57,7 +57,7 @@ Visual Studio Code lets you manage your code with Git-compatible tools. You can 
 
 ### Extensibility through extensions
 
-You can add more features and functionality beyond what's in the initial download of Visual Studio Code. You can add support for other languages, frameworks, themes, and tools. For example, a few of the many C++ extensions available in the marketplace are displayed in the following screenshot:
+You can add more features and functionality beyond what's in the initial download of Visual Studio Code. You can add support for other languages, frameworks, themes, and tools. For example, a few of the many C++ extensions available in the Marketplace are displayed in the following screenshot:
 
 :::image type="content" source="../media/2-extensions-marketplace.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed":::
 

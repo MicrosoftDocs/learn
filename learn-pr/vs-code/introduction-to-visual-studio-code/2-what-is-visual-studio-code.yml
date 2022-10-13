@@ -3,7 +3,7 @@ uid: learn.introduction-to-visual-studio-code.what-is-visual-studio-code
 title: What is Visual Studio Code?
 metadata:
   title: what-is-visual-studio-code
-  description: "Characterize the types of programming scenarios for which Visual Studio Code is a good IDE choice. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
+  description: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a source code editor with IDE features. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
   ms.date: 9/19/2022
   author: kjo-msft
   ms.author: karinjohnson

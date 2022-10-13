@@ -1,6 +1,6 @@
-Whether you're a beginning or an experienced developer, you'll need an integrated development environment (IDE) to create, edit, manage, run, and debug code. There are many different IDEs available. Some are essentially simple text editors. Others can have many advanced features and built-in support for multiple languages. But these full-featured IDEs often have a large installation footprint and a steeper learning curve than simpler IDEs.
+Whether you're a beginning or an experienced developer, you'll need the right coding tool to create, edit, manage, run, and debug code. There are many different tools available. Some are essentially simple text editors. Others, such as Integrated Development Environments (IDEs), can have many advanced features and built-in support for multiple languages. But these full-featured IDEs often have a large installation footprint and a steeper learning curve than simpler code editors.
 
-So how do you know which IDE is right for you? It depends on what your needs are. For example, what programming languages are you using? Do you need to integrate with a source control management (SCM) provider such as GitHub?
+So how do you know which coding tool is right for you? It depends on what your needs are. For example, what programming languages are you using? Do you need to integrate with a source control management (SCM) provider such as GitHub?
 
 ## Example scenario
 
@@ -8,12 +8,15 @@ Suppose you're building a website for a restaurant in your hometown. You know th
 
 In addition, suppose the restaurant needs to create an inventory management system in C++ that can be used by employees from desktops in the kitchen and back office. You want to make sure that your IDE supports C++ syntax, libraries, compilers, and debuggers.
 
-Furthermore, suppose the restaurant's chef has asked if you can help them with data analytics. The chef would like you to examine trends in sales of pizza when the local sports clubs win matches or games. You're comfortable using Python and Jupyter notebooks for your data science work and want an IDE that supports that language and tool.
+Furthermore, suppose the restaurant's chef has asked if you can help them with data analytics. The chef would like you to examine trends in sales of pizza when the local sports clubs win matches or games. You're comfortable using Python and Jupyter notebooks for your data science work and want a code editor that supports that language and tool.
 
 ## What will we be doing?
 
-In this module, we'll evaluate if Visual Studio Code is the right IDE for various scenarios. You'll also learn about the Visual Studio Code features that you can customize and configure to support many different types of development work.
+In this module, we'll evaluate if Visual Studio Code is the right code editor for various scenarios. You'll also learn about the Visual Studio Code features that you can customize and configure to support many different types of development work.
 
 ## What is the main goal?
 
 By the end of this module, you'll have the knowledge to be able to evaluate if Visual Studio Code meets your set of programming requirements.
+
+> [!NOTE]
+> You may have heard about another product called Visual Studio and wonder if it's related to Visual Studio Code. They are different products. Visual Studio is a full-featured IDE, which means that major language support, debugging, and testing are built into the tool. For more information, see [Introduction to Visual Studio](/training/modules/visual-studio-intro).

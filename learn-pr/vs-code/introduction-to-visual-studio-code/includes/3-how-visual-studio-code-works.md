@@ -1,9 +1,9 @@
-Now that you're familiar with the key features of Visual Studio Code, let's see how Visual Studio code works—what capabilities you get out of the box and what you can add through the extensions marketplace.
+Now that you're familiar with the key features of Visual Studio Code, let's see how Visual Studio code works—what capabilities you get out of the box and what you can add through the Extensions Marketplace.
 
 Visual Studio Code has a lightweight footprint. Out-of-the-box, Visual Studio Code provides:
 
 - UI with the Editor, Explorer, Search, Debugger, Source Control, Terminal, and Extensions features
-- Support for several languages including HTML, CSS, and JavaScript
+- Support for several languages including HTML, CSS, JavaScript, and TypeScript
 - Integration with Git for source control
 - Integration with Node.js for running and debugging JavaScript
 
@@ -28,7 +28,7 @@ You can search for, download, and install extensions from the Extensions Marketp
 
 ### Who built the extensions?
 
-Microsoft publishes many popular extensions, including C/C++, Python, and Docker. Third-parties such as individuals or companies like Red Hat also create and publish extensions for the marketplace. Most extensions are free. However, some providers charge a fee to download and use their extensions. The publisher is listed below the extension name.
+Microsoft publishes many popular extensions, including C/C++, Python, and Docker. Third-parties such as individuals or companies like Red Hat also create and publish extensions for the Marketplace. Most extensions are free. However, some providers charge a fee to download and use their extensions. The publisher is listed below the extension name.
 
 :::image type="content" source="../media/3-marketplace-python.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed and the Python extension published by Microsoft in view":::
 
