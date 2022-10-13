@@ -23,18 +23,18 @@ quiz:
       explanation: "Using `TryParse` is a valid technique to use."
     - content: "`(decimal)`"
       isCorrect: true
-      explanation: "Correct!  You can't cast a string into a decimal."
-  - content: "You need to change a `float` into an `int`.  How would you describe this action?"
+      explanation: "Correct! You can't cast a string into a decimal."
+  - content: "You need to change a `float` into an `int`. How would you describe this action?"
     choices:
     - content: "This is a narrowing conversion."
       isCorrect: true
       explanation: "Correct!"
     - content: "This is a widening conversion."
       isCorrect: false
-      explanation: "Changing a `float` into an `int` isn't a widening conversion because `float` can store more precision data than `int`."
+      explanation: "Changing a `float` into an `int` isn't a widening conversion, because `float` can store more precision data than `int`."
     - content: "This is an illegal conversion."
       isCorrect: false
-      explanation: "Changing a `float` into an `int` isn't an illegal conversion.  You can accomplish this (albeit, with the loss of precision data)."
+      explanation: "Changing a `float` into an `int` isn't an illegal conversion. You can accomplish this (albeit with the loss of precision data)."
     - content: "This is a parsing conversion."
       isCorrect: false
       explanation: "There's no such thing as a 'parsing conversion'."

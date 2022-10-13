@@ -1,14 +1,14 @@
 As the solution architect for your organization's healthcare system, you want to start preparing the foundations for your highly available healthcare application deployment.
 
-In this exercise, you create an Azure storage account and configure the account for RA-GRS. By default, the storage account is set to LRS when you create it. Because you want the application to be highly available, you'll change the mode to RA-GRS. The storage account will be used as a disaster recovery feature to ensure that the application is always running.
+In this exercise, you'll create an Azure storage account and configure the account for RA-GRS. By default, the storage account is set to LRS when you create it. Because you want the application to be highly available, you'll change the mode to RA-GRS. The storage account will be used as a disaster-recovery feature to ensure that the application is always running.
 
-First, you create an Azure storage account to store the application data.
+First, you'll create an Azure storage account to store the application data.
 
-![The storage account configuration.](../media/3-storage-account-overview.png)
+![Diagram of the storage account configuration.](../media/3-storage-account-overview.png)
 
 ## Create an Azure storage account to host healthcare application
 
-In this step, you create a storage account. The storage account hosts the healthcare application.
+In this step, you'll create a storage account. The storage account hosts the healthcare application.
 
 1. In Cloud Shell, run the following commands:
 
@@ -23,7 +23,7 @@ In this step, you create a storage account. The storage account hosts the health
     echo $STORAGEACCT
     ```
 
-    Make a note of the value of the **\$STORAGEACCT** variable, if you need to re-create it in a later exercise.
+    Make a note of the value of the **\$STORAGEACCT** variable if you need to re-create it in a later exercise.
 
     This step sets the replication policy of the storage account to RA-GRS, which enables the application to fail over to the secondary region if there's an outage.
 
@@ -47,11 +47,11 @@ In this step, you create a storage account. The storage account hosts the health
             --resource-group <rgn>[Sandbox resource group]</rgn>
     ```
 
-1. Copy the output connection string, and save it for reference later in this module.
+1. Copy the output connection string and save it for reference later in this module.
 
 ## Fail over Azure storage account
 
-In this step, you use Cloud Shell to view the replication status of your storage account. To view the status of the primary and secondary locations, run the following command:
+In this step, you'll use Cloud Shell to view the replication status of your storage account. To view the status of the primary and secondary locations, run the following command:
 
 ```azurecli
     az storage account show \
@@ -62,4 +62,4 @@ In this step, you use Cloud Shell to view the replication status of your storage
 
 The output shows useful information that's related to the primary endpoint, the secondary endpoint, and the last time data was synchronized across regions.
 
-If the command returns the error *Last sync time is unavailable for account healthcareappnnnn*, wait a few minutes, and then repeat the command.
+If the command returns the error *Last sync time is unavailable for account healthcareappnnnn*, wait a few minutes and repeat the command.

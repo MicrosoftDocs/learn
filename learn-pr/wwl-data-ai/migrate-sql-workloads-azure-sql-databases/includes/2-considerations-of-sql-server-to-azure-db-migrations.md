@@ -84,7 +84,7 @@ Read scale-out allows for read-only SQL workloads to be serviced by a secondary 
 
 When you access any cloud service, it's important to understand the requirements for retry logic so an application can recover from temporary issues and problems.
 
-[Retry Service Specific](https://docs.microsoft.com/azure/architecture/best-practices/retry-service-specific)
+[Retry Service Specific](/azure/architecture/best-practices/retry-service-specific)
 
 ## Create an Azure SQL Database
 

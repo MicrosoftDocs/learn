@@ -5,4 +5,4 @@ In this module, you learned how to use regression to create a machine learning m
 - Tune some hyperparameters.
 - Make better predictions.
 
-Tidymodels and scikit-learn (Python) are popular frameworks for writing code to train regression models. You can also create machine learning solutions for regression by using the graphical tools in Azure Machine Learning. To learn more about no-code development of regression models by using Machine Learning, see [Create a regression model with Azure Machine Learning designer](/learn/modules/create-regression-model-azure-machine-learning-designer/).
+Tidymodels and scikit-learn (Python) are popular frameworks for writing code to train regression models. You can also create machine learning solutions for regression by using the graphical tools in Azure Machine Learning. To learn more about no-code development of regression models by using Machine Learning, see [Create a regression model with Azure Machine Learning designer](/training/modules/create-regression-model-azure-machine-learning-designer/).

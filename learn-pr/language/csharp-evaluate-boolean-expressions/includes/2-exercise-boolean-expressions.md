@@ -128,7 +128,7 @@ True
 Some methods return a Boolean value. You can think of these types of methods as queries. In the following exercise, we'll use a built-in method on the String class to determine whether or not a larger string contains a specific word or phrase that may be interesting to us.
 
 > [!NOTE]
-> Some data types have methods that perform helpful utility tasks. The String data type has many of these. Several return a Boolean value, including `Contains()`, `StartsWith()`, and `EndsWith()`. You can learn more about them in the Microsoft Learn module [Format alphanumeric data for presentation in C#](/learn/modules/csharp-format-strings/).
+> Some data types have methods that perform helpful utility tasks. The String data type has many of these. Several return a Boolean value, including `Contains()`, `StartsWith()`, and `EndsWith()`. You can learn more about them in the Microsoft Learn module [Format alphanumeric data for presentation in C#](/training/modules/csharp-format-strings/).
 
 ### Step 5 - Use a method invocation expression
 

@@ -16,7 +16,7 @@ abstract: |
   - Understand the app management lifecycle.
   - Learn about the data protection framework using app protection policies.
 prerequisites: None
-iconUrl: /learn/achievements/app-management-with-microsoft-endpoint-manager.svg
+iconUrl: /training/achievements/app-management-with-microsoft-endpoint-manager.svg
 ratingEnabled: true
 levels:
 - beginner

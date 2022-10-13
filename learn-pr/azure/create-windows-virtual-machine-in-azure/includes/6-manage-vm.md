@@ -40,7 +40,7 @@ For inbound traffic, Azure processes the security group associated to the subnet
 
 The rules are evaluated in *priority order*, starting with the **lowest priority** rule. Deny rules always **stop** the evaluation. For example, if an outbound request is blocked by a network interface rule, any rules applied to the subnet will not be checked. In order for traffic to be allowed through the security group, it must pass through *all* applied groups.
 
-The last rule is always a **Deny All** rule. This is a default rule added to every security group for both inbound and outbound traffic with a priority of 65500. That means to have traffic pass through the security group, *you must have an allow rule* or it will be blocked by the default final rule.
+The last rule is always a **Deny All** rule. This is a default rule added to every security group for both inbound and outbound traffic with a priority of 65500. That means to have traffic pass through the security group, *you must have an allow rule* or it will be blocked by the default final rule. [Learn more about security rules](/azure/virtual-network/network-security-groups-overview#security-rules).
 
 > [!NOTE]
 > SMTP (port 25) is a special case. Depending on your subscription level and when your account was created, outbound SMTP traffic may be blocked. You can make a request to remove this restriction with business justification.

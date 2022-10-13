@@ -19,7 +19,7 @@ abstract: |
   - Configure rules for maintenance notifications
 prerequisites: |
   None
-iconUrl: /learn/achievements/monitor-and-manage-device-with-iot-central.svg
+iconUrl: /training/achievements/monitor-and-manage-device-with-iot-central.svg
 levels: 
 - beginner
 roles: 

@@ -6,7 +6,7 @@
 
     Example: "You are writing the instruction manual for a new model fire extinguisher. The instructions must be quickly read and understood by a wide variety of people."
 
-    [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
+    [Summary unit guidance](https://review.learn.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=main)
 -->
 To improve sign-in security, you needed to roll out a low-cost sign-in strategy to help users switch from signing in with less secure methods like Voice calls or SMS to a more secure method. 
 
@@ -67,9 +67,9 @@ You helped your company take an important step to prevent security breaches from
 
     Example:
         "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
+          * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
+          * [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
+          * [Manage access to billing information for Azure](/azure/billing/billing-manage-access)"
  -->
 ## References 
 

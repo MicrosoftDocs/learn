@@ -24,7 +24,7 @@ prerequisites: |
   - Core networking technologies.
   - Basic security best practices.
   - Windows PowerShell basics.
-iconUrl: /learn/achievements/secure-windows-server-dns.svg
+iconUrl: /training/achievements/secure-windows-server-dns.svg
 levels:
 - intermediate
 roles:

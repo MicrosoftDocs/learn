@@ -2,7 +2,7 @@ Functions are the next step after you've learned Python's programming basics. In
 
 When you start writing code that duplicates other parts of the program, it becomes a perfect opportunity to extract the code out into a function. Although sharing common code through functions is useful, you can also limit the size of code by extracting parts out into smaller (and readable) functions.
 
-Programs that avoid duplication and prevent large functions by using smaller functions are more readable and maintainable. They're also easier to debug when things aren't working quite right.
+Programs that avoid duplication and prevent large functions by using smaller functions are more readable and maintainable. They're also easier to debug when things aren't working right.
 
 Several rules about function inputs are critical for you to fully take advantage of everything that functions have to offer.
 

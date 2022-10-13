@@ -1,17 +1,19 @@
-Azure AD helps you give access to your organization's resources by providing access rights to a single user or to an entire Azure AD group.
+Azure Administrators must be familiar with configuring user and group accounts in Azure Active Directory.
 
-You should now be able to:
+In this module, you learned that every user who wants access to Azure resources needs an Azure user account. Azure AD supports access to your organization's resources by assigning access rights to users and groups. You discovered how user and group accounts are created in Azure AD. You explored how to configure and manage user and group accounts, including bulk configuration. You reviewed how your organization can support group account organization, and manage accounts across multiple directories.
 
- -  Configure users accounts and user account properties.
- -  Create new user accounts.
- -  Import bulk user accounts with a template.
- -  Configure group accounts and assignment types.
- -  Manage multiple directories and identify usage cases for multiple directories.
+## Learn more with Azure documentation
 
-## Learn more
+- Discover the fundamentals of [Azure Active Directory](/azure/active-directory/fundamentals/).
 
-You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
+- Read about [Azure built-in roles](/azure/role-based-access-control/built-in-roles).
 
- -  [Azure Active Directory fundamentals documentation](/azure/active-directory/fundamentals/)
- -  [Learn - Manage users and groups in Azure Active Directory (Sandbox)](/learn/modules/manage-users-and-groups-in-aad/)
- -  [Learn - Create Azure users and groups in Azure Active Directory](/learn/modules/create-users-and-groups-in-azure-active-directory/)
+- Manage your resources with [Azure custom roles](/azure/role-based-access-control/custom-roles).
+
+## Learn more with self-paced training
+
+- Explore how to [create users and groups in Azure AD](/training/modules/create-users-and-groups-in-azure-active-directory/).
+
+## Learn more with optional hands-on exercises
+
+- Manage users and groups in [Azure AD (sandbox)](/training/modules/manage-users-and-groups-in-aad/).

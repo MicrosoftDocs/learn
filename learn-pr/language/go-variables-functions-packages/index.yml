@@ -24,7 +24,7 @@ prerequisites: |
   - The ability to create and modify `.go` files.
   - The ability to run Go applications by using the terminal.
   
-iconUrl: /learn/achievements/go/go-variables-functions-packages.svg
+iconUrl: /training/achievements/go/go-variables-functions-packages.svg
 levels:
 - beginner
 roles:

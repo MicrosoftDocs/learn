@@ -35,4 +35,4 @@ In the image below, we explore a single workspace *Microsoft Learn Data* in line
 In summary, when using lineage view, you can quickly identify dependencies across a workspace for your assets. This view gives you easy administration especially when you have many items in a single workspace.
 
 > [!TIP]
-> While we are able to see datasets in other workspaces, lineage view only applies to Power BI service. For better understanding of your data estate relationships, refer to the module on **Microsoft/Azure Purview (what's it called? need a link).**
+> While we are able to see datasets in other workspaces, lineage view only applies to Power BI service. For better understanding of your data estate relationships, refer to the module on [Microsoft Purview](/training/modules/intro-to-microsoft-purview/).

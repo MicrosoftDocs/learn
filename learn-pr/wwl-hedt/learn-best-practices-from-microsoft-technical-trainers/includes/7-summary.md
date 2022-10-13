@@ -6,11 +6,11 @@ Each module in the course materials maps to the domain objectives and the exam s
 
 Supplemental resources: 
 
-- [Microsoft Learn ](https://aka.ms/learn)
+- [Microsoft Learn](https://aka.ms/learn)
 
 - [Microsoft Learn for Educators](https://aka.ms/msle)  
 
-- [Accessibility Technology & Tools ](https://aka.ms/microsoftaccessibility)
+- [Accessibility Technology & Tools](https://aka.ms/microsoftaccessibility)
 
 - [Microsoft's accessibility commitment](https://aka.ms/MSAccessibilityCommitment) 
 

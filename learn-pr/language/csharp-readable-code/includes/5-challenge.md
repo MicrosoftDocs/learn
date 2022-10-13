@@ -2,11 +2,11 @@ Code challenges throughout these modules will reinforce what you've learned and 
 
 ## Challenge instructions
 
-In this challenge, you'll use the techniques you learned in this module.  Your goal is to make improvements to some poorly formatted and commented code to increase its readability.
+In this challenge, you'll use the techniques you learned in this module. Your goal is to make improvements to some poorly formatted and commented code to increase its readability.
 
 ### Step 1 - Delete all of the code in the .NET Editor from the earlier exercise
 
-Select all of the code in the .NET Editor then select the `del` or backspace key to delete it.
+Select all of the code in the .NET Editor, then select the `del` or `backspace` key to delete it.
 
 ### Step 2 - Start with the following unreadable code in the .NET Editor
 

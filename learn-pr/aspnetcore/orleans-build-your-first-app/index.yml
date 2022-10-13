@@ -16,7 +16,7 @@ abstract: |
   - Work with core Orleans components such as grains and silo
   - Integrate Orleans into web service endpoints
   - Persist and manage state with Orleans
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

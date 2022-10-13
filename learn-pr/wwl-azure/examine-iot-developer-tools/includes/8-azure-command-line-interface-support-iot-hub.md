@@ -167,7 +167,7 @@ When you run the previous command, you will see a message displayed that is simi
 ```text
 Command
     az iot hub create : Create an Azure IoT hub.
-        For an introduction to Azure IoT Hub, see https://docs.microsoft.com/azure/iot-hub/.
+        For an introduction to Azure IoT Hub, see https://learn.microsoft.com/azure/iot-hub/.
 
 Arguments
     --name -n                              [Required] : IoT Hub name.

@@ -16,7 +16,7 @@ abstract: |
   - Design a long-running approval process workflow
   - Implement a long-running approval process workflow using Durable Functions
 prerequisites: None
-iconUrl: /learn/achievements/azure-create-long-running-serverless-workflow-with-durable-functions.svg
+iconUrl: /training/achievements/azure-create-long-running-serverless-workflow-with-durable-functions.svg
 levels: 
 - beginner
 roles: 

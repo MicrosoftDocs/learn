@@ -14,20 +14,20 @@ In this module, you learned how to design with governance in mind. You discovere
 
 ### Learn more with self-paced training
 
-- Build a [cloud governance strategy on Azure](/learn/modules/build-cloud-governance-strategy-azure/).
+- Build a [cloud governance strategy on Azure](/training/modules/build-cloud-governance-strategy-azure/).
 
-- Describe [core Azure architectural components](/learn/modules/azure-architecture-fundamentals/).
+- Describe [core Azure architectural components](/training/modules/azure-architecture-fundamentals/).
 
-- Explore [Microsoft Cloud Adoption Framework for Azure](/learn/modules/microsoft-cloud-adoption-framework-for-azure/).
+- Explore [Microsoft Cloud Adoption Framework for Azure](/training/modules/microsoft-cloud-adoption-framework-for-azure/).
 
-- Get an [introduction to Azure Blueprints](/learn/modules/intro-to-azure-blueprints/).
+- Get an [introduction to Azure Blueprints](/training/modules/intro-to-azure-blueprints/).
 
-- Secure your [Azure resources with Azure RBAC](/learn/modules/secure-azure-resources-with-rbac/).
+- Secure your [Azure resources with Azure RBAC](/training/modules/secure-azure-resources-with-rbac/).
 
-- Learn about [enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure](/learn/modules/enterprise-scale-introduction/).
+- Learn about [enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure](/training/modules/enterprise-scale-introduction/).
 
-- Choose the best [Azure landing zone to support your requirements for cloud operations](/learn/modules/cloud-adoption-framework-ready/).
+- Choose the best [Azure landing zone to support your requirements for cloud operations](/training/modules/cloud-adoption-framework-ready/).
 
 ### Learn more with optional hands-on exercises
 
-- Learn how to configure [list access by using Azure RBAC and the Azure portal](/learn/modules/secure-azure-resources-with-rbac/4-list-access?source=learn).
+- Learn how to configure [list access by using Azure RBAC and the Azure portal](/training/modules/secure-azure-resources-with-rbac/4-list-access?source=learn).

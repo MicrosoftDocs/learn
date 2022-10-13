@@ -158,14 +158,14 @@ Next, create a workload identity in Azure AD for your deployment workflow.
 
    ```azurepowershell
    $applicationRegistration = New-AzADApplication -DisplayName 'toy-website-test'
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-test' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `
       -Audience 'api://AzureADTokenExchange' `
       -Subject "repo:$($githubOrganizationName)/$($githubRepositoryName):environment:Website"
 
-   New-AzADAppFederatedIdentityCredential `
+   New-AzADAppFederatedCredential `
       -Name 'toy-website-test-branch' `
       -ApplicationObjectId $applicationRegistration.Id `
       -Issuer 'https://token.actions.githubusercontent.com' `

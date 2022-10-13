@@ -16,7 +16,7 @@ abstract: |
   - Implement Microsoft Purview Advanced Message Encryption
 prerequisites: |
   Fundamental knowledge of encryption in Microsoft 365
-iconUrl: /learn/achievements/deploy-message-encryption-microsoft-365.svg
+iconUrl: /training/achievements/deploy-message-encryption-microsoft-365.svg
 levels:
 - intermediate
 roles:

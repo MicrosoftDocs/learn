@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-infrastructure-code-using-bicep.when-use-bicep
-title: When to use Bicep  
+title: When to use Bicep
 metadata:
-  unitType: learning-content  
+  unitType: learning-content
   title: When to use Bicep
   description: Evaluate whether Bicep is the right solution for your organization.
-  ms.date: 03/12/2021  
+  ms.date: 08/26/2022
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial # do we need ms.topic?

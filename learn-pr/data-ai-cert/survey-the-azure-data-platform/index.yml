@@ -16,7 +16,7 @@ abstract: |
   - Explore common Azure data platform technologies and learn when to use them.
   - Understand technologies that support the common Azure data platform technologies.
 prerequisites: None
-iconUrl: /learn/achievements/data-ai/survey-the-azure-data-platform-badge.svg
+iconUrl: /training/achievements/data-ai/survey-the-azure-data-platform-badge.svg
 levels:
 - beginner
 roles:

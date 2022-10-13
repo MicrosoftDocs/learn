@@ -12,7 +12,7 @@ Security monitoring and audit logging of Azure platform services are key compone
 
 Continue to learn about implementation options for Azure landing zones by reviewing the best practices in the [Ready methodology](/azure/cloud-adoption-framework/ready/) of the Cloud Adoption Framework. Those practices help you to choose how and when to refactor your landing zone to better fit your needs.
 
-Learn how Cloud Adoption Framework enterprise-scale landing zones can help your organization accelerate cloud adoption from months to weeks. See the [Create an enterprise-scale architecture in Azure](/learn/paths/enterprise-scale-architecture/) learning path.
+Learn how Cloud Adoption Framework enterprise-scale landing zones can help your organization accelerate cloud adoption from months to weeks. See the [Create an enterprise-scale architecture in Azure](/training/paths/enterprise-scale-architecture/) learning path.
 
 ## Security implementation best practices
 

@@ -1,130 +1,213 @@
-Microsoft provides APIs that enable you to access Azure Cosmos DB from application code. Behind the scenes, these APIs are wrappers around a series of REST calls that send and receive HTTP requests to and from the Azure Cosmos DB service. These APIs are available for a variety of programming languages, including JavaScript.
+In this unit, you'll learn how to use SQL keywords such as LIKE, JOIN, and WHERE to query data with the Cosmos SDK.
 
-In this unit, you'll learn how to use the JavaScript API for Azure Cosmos DB to query and manage documents and containers.
+## Query operations on the container
 
-## Install the JavaScript API for Azure Cosmos DB
+Query operations are specific to the container. Because the query is executed on the container itself, it isn't necessary to use the correct name of the container, such as `products`. In the SDK reference documentation or portal, you may see the container name such as `root` or `c` to indicate the container. 
 
-The JavaScript API for Azure Cosmos DB is supplied in a package named **\@azure/cosmos**. You install this package using the Node Package Manager (npm).
+## Query for all documents
 
-## Connect to an Azure Cosmos DB account
+To find documents in a Cosmos DB Core (SQL) database's container, use the SDK **query** method on the container object, with a query specification. The query specification requires the `query` property and an option `parameters` property. 
 
-The JavaScript API exposes a class named `CosmosClient` that acts as the access point to Azure Cosmos DB. You use a `CosmosClient` object to obtain a handle on databases and containers. When you have access to a container, you can query and manipulate documents.
-
-You use the constructor to create an `CosmosClient` object. The constructor takes an Azure Cosmos DB connection string as its parameter. The connection string contains the address of your Azure Cosmos DB account, and the security key needed to access the account. You obtain the connection string for an account using the Azure Databases extension pane in Visual Studio Code. Right-click the account, and select **Copy Connection String**.
-
-:::image type="content" source="../media/6-connection.png" alt-text="Screenshot of Azure Databases extension pane in Visual Studio Code. The user is copying the connection string for the Azure Cosmos DB account to the clipboard." loc-scope="vs-code":::
-
-In your JavaScript application, run the following code to connect to an Azure Cosmos DB account using the connection string.
+|Property|Purpose|
+|--|--|
+|**query** (required)|The SQL query text. A simple query  is `select * from products`. |
+|**parameters** (optional)|Variable substitution into the query. The name corresponds to the name used in the query, and the value is the actual substitution. You can provide up to 10 parameters.|
 
 ```javascript
-var cosmos = require("@azure/cosmos");
-
-const client = new cosmos.CosmosClient("Connection string goes here");
+const querySpecification = {
+    query: `select * from products`,
+    parameters: undefined
+};
 ```
 
-You can use the **client** object to retrieve, create, update, and delete documents in a container. These operations all require a reference to the container. You obtain this reference through the **database** function of a `CosmosClient` object, as follows.
+This query returns all documents in the container.  
+
+## Query for documents by name using LIKE in a container
+
+To refine the search but still provide some flexibility, use the LIKE keyword to allow for any matches on the document's property where the document's name property includes the value Blue. The name can start with Blue, end with Blue, or have Blue in the middle because the value is wrapped with the percent signs, `%`.
 
 ```javascript
-const databaseid = "Your database name";
-const containerid = "Your container name";
-const containerref = client.database(databaseid).container(containerid);
-const containerdata = containerref.items;
-```
-
-## Retrieve documents
-
-Azure Cosmos DB provides two ways to retrieve documents. You can run a query, or fetch a document directly using its ID.
-
-### Query documents
-
-The first technique is to run a query. Use the **query** function of a container and specify a **SELECT** statement that identifies the documents to fetch.
-
-This code walks down the hierarchy of Azure Cosmos DB objects described in unit 2. The **containerdata** object provides access to the documents (items) in the container.
-
-The following code snippet shows how to run a query against a container. The following example finds the documents for all students who have a specified academic year.
-
-```javascript
-var academicyear = ...;
-...
-const studentquery = {
-    query: "SELECT s.id, s.Name.Forename, s.Name.Lastname \
-            FROM students s  \
-            WHERE s.AcademicYear = @year",
+// SQL Query specification
+const querySpec = {
+    // SQL query text using LIKE keyword and parameter
+    query: `select * from products p where p.name LIKE @propertyValue`,
+    // Optional SQL parameters, to be used in query
     parameters: [
         {
-            name: "@year",
-            value: academicyear
+            // name of property to find in query text
+            name: "@propertyValue",
+            // value to insert in place of property
+            value: `%Blue%`,
         }
     ]
 };
+```
 
-const { resources } = await containerdata.query(studentquery).fetchAll();
-for (let queryResult of resources) {
-    let resultString = JSON.stringify(queryResult);
-    process.stdout.write(`\nQuery returned ${resultString}\n`);
+Using the LIKE keyword
+
+Execute the query on the container to fetch the documents. The query's results are fetched with `fetchAll` and returned in the destructured property, `resources`. 
+
+```javascript
+// Execute query
+const { resources } = await container.items.query(querySpec).fetchAll();
+```
+
+It iterates over the entire collection, use the for/of loop. 
+
+```javascript
+let i = 0;
+
+// Show results of query
+for (const item of resources) {
+    console.log(`${++i}: ${item.id}: ${item.name}, ${item.sku}`);
 }
 ```
 
-> [!NOTE]
-> Many of the functions in the JavaScript API for Cosmos DB operate asynchronously. You use JavaScript `Promise` objects to schedule tasks when a function completes successfully, and to handle exceptions. You can also use the JavaScript `await` operator (as shown in the previous code) to pause execution until the function has completed its work.
+The output looks something like:
 
-In this example, the text of the query is encapsulated in the **studentquery** variable. The query is parameterized; this is good practice, to avoid possible SQL Injection attacks. The **query** function of the **containerdata** variable runs the query and returns a result set. By default, a Cosmos DB query will only retrieve the first 100 documents. In this example, the **fetchAll** function is used to fetch every matching document. The result set is returned as the **resources** property of an object. The `for` loop iterates through the documents in the result set and displays the contents of each document as a JSON string.
-
-### Fetch a document by ID
-
-If you know the ID of a document, the quickest way to retrieve it is by reading directly from the container. You use the **read** function to do this. The parameters to **read** are the ID and the partition key of the document. The following example fetches a student document given the student ID and the academic year (the partition key in the sample scenario). The value returned by the **read** function is an object containing a copy of the document in the **resource** property and an HTTP status code.
-
-The status code indicates whether the read was successful. Codes in the 200-299 range indicate success; other values indicate a failure. If there's a failure, the **read** function will also throw an exception. To handle the failure manually, you should examine the HTTP status code in an exception handler. This process isn't included in the following sample.
-
-```javascript
-var id = ...;
-var year = ...;
-...
-const { resource, statusCode } = await containerref.item(id, year).read();
-process.stdout.write(`\nDetails: ${JSON.stringify(resource)}\n`);
+```text
+1: 08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2: Touring-1000 Blue, 50, BK-T79U-50      
+2: 2C981511-AC73-4A65-9DA3-A0577E386394: Touring-1000 Blue, 46, BK-T79U-46      
+3: 44873725-7B3B-4B28-804D-963D2D62E761: Touring-1000 Blue, 60, BK-T79U-60      
+4: 4E4B38CB-0D82-43E5-89AF-20270CD28A04: Touring-2000 Blue, 60, BK-T44U-60      
+5: 5308BAE7-B0CB-4883-9A93-192CB10DC94F: Touring-3000 Blue, 44, BK-T18U-44 
 ```
 
-## Create, update, and delete documents
+## Query for documents by string property using LIKE in a container
 
-To add a new document to a container, use the **create** function of the container, and provide the document as the parameter. If the create operation is successful, like the **read** function, it returns an object containing a copy of the new document, and the HTTP status code of the request.
-
-```javascript
-var student = {
-    id: "SU999",
-    AcademicYear: "2019",
-    Name: {
-        Forename: "...",
-        Lastname: "..."
-    },
-    CourseGrades: []
-};
-
-const { item, statusCode } = await containerdata.create(student)
-```
-
-You can use the **upsert** or **replace** functions to update a document. Strictly speaking, Azure Cosmos DB doesn't actually do an update operation. Rather, it deletes a document and replaces it with a new one that has the same ID. You'll have to supply the entire document as a parameter. The code below shows an example:
+To make the query more flexible, wrap it in a function that takes a document's property, and its value to find. 
 
 ```javascript
-var updatedstudent = {
-    id: "SU999",
-    ...
-};
+// Find all products that match a property with a value like `value`
+async function executeSqlFind(property, value) {
+  // Build query
+  const querySpec = {
+    query: `select * from products p where p.${property} LIKE @propertyValue`,
+    parameters: [
+      {
+        name: "@propertyValue",
+        value: `${value}`,
+      },
+    ],
+  };
 
-const { item, statusCode } = await containerdata.upsert(updatedstudent);
+  // Show query
+  console.log(querySpec);
+
+  // Get results
+  const { resources } = await container.items.query(querySpec).fetchAll();
+
+  let i = 0;
+
+  // Show results of query
+  for (const item of resources) {
+    console.log(`${++i}: ${item.id}: ${item.name}, ${item.sku}`);
+  }
+}
 ```
 
-The syntax for the **replace** function is similar. The main difference between **upsert** and **replace** concerns the case where a document with the specified ID doesn't already exist in the container. In this situation, the **replace** function will throw an exception, but **upsert** will just insert the new document.
+The property and value are passed into the function and used in the query for string values.
 
-Use the **delete** function to remove a document. As with **read**, you must provide the ID and the partition key of the document as parameters, as shown in the following code.
+## Query for documents and return inventory subproperty using JOIN keyword in a container
+
+The document shape includes two subproperties, tags and inventory. To access these subproperties, use the JOIN keyword. The following SQL query has been formatted for readability only and doesn't need to be used with the Cosmos DB SDK.
+
+```sql
+SELECT
+    p.id, 
+    p.name, 
+    i.location, 
+    i.inventory
+FROM 
+    products p 
+JOIN 
+    inventory i IN p.inventory 
+WHERE 
+    p.name LIKE '%Blue%'
+AND 
+    i.location='Dallas'
+```
+
+The inventory variable, `i`:
+
+* Is named in the JOIN clause to access the subproperty data.
+* Is used in the WHERE clause to reduce the dataset.
+* Is used in the SELECT clause to return the inventory properties. 
+
+To find all inventory for a specific property in a specific location, use the following function. It uses parameter substitution to provide a document's top-level property and the subproperty value to match for a location.
 
 ```javascript
-var student = {
-    id: "SU999",
-    AcademicYear: "2019",
-    ...
-};
+async function executeSqlInventory(propertyName, propertyValue, locationPropertyName, locationPropertyValue) {
+  // Build query
+  const querySpec = {
+    query: `select p.id, p.name, i.location, i.inventory from products p JOIN i IN p.inventory where p.${propertyName} LIKE @propertyValue AND i.${locationPropertyName}=@locationPropertyValue`,
 
-const { item, statusCode } = await containerref.item(student.id, student.AcademicYear).delete();
+    parameters: [
+      {
+        name: "@propertyValue",
+        value: `${propertyValue}`,
+      },
+      { 
+        name: "@locationPropertyValue", 
+        value: `${locationPropertyValue}` },
+    ],
+  };
+
+  // Show query
+  console.log(querySpec);
+
+  // Get results
+  const { resources } = await container.items.query(querySpec).fetchAll();
+
+  let i = 0;
+
+  // Show results of query
+  console.log(`Looking for ${propertyName}=${propertyValue}, ${locationPropertyName}=${locationPropertyValue}`);
+  for (const item of resources) {
+    console.log(
+      `${++i}: ${item.id}: '${item.name}': current inventory = ${
+        item.inventory
+      }`
+    );
+  }
+}
 ```
 
-If there's no document with a matching ID and partition key, the **delete** function will throw an exception.
+This function returns output like:
+
+```
+Looking for name=%Blue%, location=Dallas
+1: 08225A9E-F2B3-4FA3-AB08-8C70ADD6C3C2: 'Touring-1000 Blue, 50': current inventory = 42
+2: 2C981511-AC73-4A65-9DA3-A0577E386394: 'Touring-1000 Blue, 46': current inventory = 12
+3: 44873725-7B3B-4B28-804D-963D2D62E761: 'Touring-1000 Blue, 60': current inventory = 83
+4: 4E4B38CB-0D82-43E5-89AF-20270CD28A04: 'Touring-2000 Blue, 60': current inventory = 90
+5: 5308BAE7-B0CB-4883-9A93-192CB10DC94F: 'Touring-3000 Blue, 44': current inventory = 97
+```
+
+## Upsert to insert or update data
+
+Using an upsert helps you ensure your data is added if it doesn't exist, and updated if the data does exist. The JavaScript SDK returns **statusCode** which signifies which action was taken:
+
+|Upsert statusCode|Meaning| 
+|--|--|
+|201|**Insert**|
+|200|**Update**|
+
+The following JavaScript uses a single function and the use of container.items().upsert(). 
+
+```javascript
+// Either insert or update item
+async function upsert(item) {
+
+  // Process request
+  const result = await container.items.upsert(item);
+
+  if(result.statusCode===201){
+    console.log("Inserted data");
+  } else if (result.statusCode===200){
+    console.log("Updated data");
+  } else {
+    console.log(`unexpected statusCode ${result.statusCode}`);
+  }
+}
+```

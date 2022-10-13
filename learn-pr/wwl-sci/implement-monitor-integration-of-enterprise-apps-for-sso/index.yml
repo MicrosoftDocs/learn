@@ -20,7 +20,7 @@ abstract: |
   - Monitor and audit access/Sign-On to Azure Active Directory integrated enterprise applications
 prerequisites: |
   None
-iconUrl: /learn/achievements/implement-and-monitor-the-integration-of-enterprise-apps-for-sso.svg
+iconUrl: /training/achievements/implement-and-monitor-the-integration-of-enterprise-apps-for-sso.svg
 levels:
 - advanced
 roles:

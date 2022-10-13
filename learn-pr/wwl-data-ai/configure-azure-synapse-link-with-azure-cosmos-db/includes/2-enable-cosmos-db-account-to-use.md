@@ -6,15 +6,16 @@ In the diagram above, the following key features of the Azure Synapse Link for C
 
 1. An Azure Cosmos DB container provides a row-based transactional store that is optimized for read/write operations.
 2. The container also provides a column-based analytical store that is optimized for analytical workloads. A fully managed autosync process keeps the data stores in sync.
-3. Azure Synapse Link provides a linked service that connects the analytical store enabled container in Cosmos DB to an Azure Synapse Analytics workspace.
-4. Azure Synapse Analytics provides Synapse SQL and Apache Spark runtimes in which you can run code to retrieve, process, and analyze data from the Cosmos DB analytical store without impacting the transactional data store in Cosmos DB.
+3. Azure Synapse Link provides a linked service that connects the analytical store enabled container in Azure Cosmos DB to an Azure Synapse Analytics workspace.
+4. Azure Synapse Analytics provides Synapse SQL and Apache Spark runtimes in which you can run code to retrieve, process, and analyze data from the Azure Cosmos DB analytical store without impacting the transactional data store in Azure Cosmos DB.
 
 ## Enabling Azure Synapse Link in Azure Cosmos DB
 
 The first step in using Azure Synapse Link for Cosmos DB is to enable it in an Azure Cosmos DB account. Azure Synapse Link is supported in the following types of Azure Cosmos DB account:
 
-- Core (SQL) API
-- MongoDB API
+- Azure Cosmos DB for NoSQL
+- Azure Cosmos DB for MongoDB
+- Azure Cosmos DB for Apache Gremlin (*preview*)
 
 You can enable Azure Synapse Link in the Azure portal page for your Cosmos DB account, or by using the Azure CLI or Azure PowerShell from a command line or in a script.
 
@@ -22,10 +23,10 @@ You can enable Azure Synapse Link in the Azure portal page for your Cosmos DB ac
 
 In the Azure portal, you can configure features of Cosmos DB account on the **Features** page, as shown below.
 
-![A screenshot showing the option to enable Azure Synapse Link on the Features page for a core (SQL) API Cosmos DB account.](../media//enable-synapse-link.png)
+![A screenshot showing the option to enable Azure Synapse Link on the Features page for a Cosmos DB for NoSQL account.](../media//enable-synapse-link.png)
 
 > [!TIP]
-> For core (SQL) API accounts, there's also a link on the **Data Explorer** page.
+> For Azure Cosmos DB for NoSQL accounts, there's also a link on the **Data Explorer** page.
 
 ### Using the Azure CLI
 
@@ -34,6 +35,8 @@ To enable Azure Synapse Link using the Azure CLI, run the `az cosmosdb create` c
 ```
 az cosmosdb update --name my-cosmos-db --resource-group my-rg --enable-analytical-storage true
 ```
+
+To enable Azure Synapse Link for an Azure Cosmos DB for Apache Gremlin account, include the `--capabilities EnableGremlin` parameter.
 
 ### Using Azure PowerShell
 
@@ -49,7 +52,7 @@ When planning to enable Azure Synapse Link for a Cosmos DB account, consider the
 
 - After enabling Azure Synapse Link for an account, you can't disable it.
 - Enabling Azure Synapse Link doesn't start synchronization of operational data to an analytical store - you must also create or update a container with support for an analytical store.
-- When enabling Azure Synapse Link for a core (SQL) API account using the Azure CLI or PowerShell, you can use the `--analytical-storage-schema-type` (Azure CLI) or `-AnalyticalStorageSchemaType` (PowerShell) parameter to specify the schema type as `WellDefined` (default) or `FullFidelity`. For a MongoDB API account, the default (and only supported) schema type is `FullFidelity`.
+- When enabling Azure Synapse Link for a Cosmos DB for NoSQL account using the Azure CLI or PowerShell, you can use the `--analytical-storage-schema-type` (Azure CLI) or `-AnalyticalStorageSchemaType` (PowerShell) parameter to specify the schema type as `WellDefined` (default) or `FullFidelity`. For a Cosmos DB for MongoDB account, the default (and only supported) schema type is `FullFidelity`.
 - After a schema type has been assigned, you can't change it.
 
     > [!NOTE]

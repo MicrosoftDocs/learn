@@ -46,7 +46,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
 
 ## How to do it
 
-1.  Open the Command Prompt and create a new-working folder:
+1. Open the Command Prompt and create a new-working folder:
     
     ```Cmd
     mkdir myWebApp
@@ -54,14 +54,14 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     ```
 
-2.  In myWebApp, initialize a new Git repository:
+1. In myWebApp, initialize a new Git repository:
     
     ```Cmd
     git init
     
     ```
 
-3.  Configure global settings for the name and email address to be used when committing in this Git repository:
+1. Configure global settings for the name and email address to be used when committing in this Git repository:
     
     ```Cmd
     git config --global user.name "John Doe"
@@ -81,7 +81,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     ```
 
-4.  Create a new ASP.NET core application. The new command offers a collection of switches that can be used for language, authentication, and framework selection. More details can be found on [Microsoft docs](/dotnet/core/tools/dotnet-new).
+1. Create a new ASP.NET core application. The new command offers a collection of switches that can be used for language, authentication, and framework selection. More details can be found on [Microsoft docs](/dotnet/core/tools/dotnet-new).
     
     ```Cmd
     dotnet new mvc
@@ -95,7 +95,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     ```
 
-5.  When the project opens in Visual Studio Code, select **Yes** for the **Required assets to build and debug are missing from 'myWebApp.' Add them?** Warning message. Select **Restore** for the **There are unresolved dependencies** info message. Hit **F5** to debug the application, then myWebApp will load in the browser, as shown in the following screenshot:
+1. When the project opens in Visual Studio Code, select **Yes** for the **Required assets to build and debug are missing from 'myWebApp.' Add them?** Warning message. Select **Restore** for the **There are unresolved dependencies** info message. Hit **F5** to debug the application, then myWebApp will load in the browser, as shown in the following screenshot:
     
     :::image type="content" source="../media/web-app-from-visual-studio-code-578464bb.png" alt-text="Web App from Visual Studio Code.":::
     
@@ -115,7 +115,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     :::image type="content" source="../media/add-file-gitignore-a59fa521.png" alt-text="Add file to .gitignore.":::
     
 
-6.  To stage and commit the newly created myWebApp project to your Git repository from Visual Studio Code, navigate the Git icon from the left panel. Add a commit comment and commit the changes by clicking the checkmark icon. It will stage and commit the changes in one operation:
+1. To stage and commit the newly created myWebApp project to your Git repository from Visual Studio Code, navigate the Git icon from the left panel. Add a commit comment and commit the changes by clicking the checkmark icon. It will stage and commit the changes in one operation:
 
     :::image type="content" source="../media/commit-using-vscode-e38129f0.png" alt-text="Commit using VSCode.":::
 
@@ -125,7 +125,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     :::image type="content" source="../media/program-code-showing-class-decoration-318e7a26.png" alt-text="Program.cs code showing class decoration.":::
 
 
-7.  Now launch cmd in the context of the git repository and run `git branch --list`. It will show you that currently, only the `main` branch exists in this repository. Now run the following command to create a new branch called `feature-devops-home-page`.
+1. Now launch cmd in the context of the git repository and run `git branch --list`. It will show you that currently, only the `main` branch exists in this repository. Now run the following command to create a new branch called `feature-devops-home-page`.
     
     ```Cmd
     git branch feature-devops-home-page
@@ -136,7 +136,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     With these commands, you have created a new branch, checked it out. The `--list` keyword shows you a list of all branches in your repository. The green color represents the branch that is currently checked out.
 
-8.  Now navigate to the file `~\Views\Home\Index.cshtml` and replace the contents with the text below.
+1. Now navigate to the file `~\Views\Home\Index.cshtml` and replace the contents with the text below.
     
     ```csharp
     @{
@@ -151,12 +151,12 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     ```
 
-9.  Refresh the web app in the browser to see the changes.
+1. Refresh the web app in the browser to see the changes.
 
     :::image type="content" source="../media/localhost-welcome-page-d81bd903.png" alt-text="Localhost welcome page.":::
 
 
-10. In the context of the git repository, execute the following commands. These commands will stage the changes in the branch and then commit them.
+1. In the context of the git repository, execute the following commands. These commands will stage the changes in the branch and then commit them.
     
     ```Cmd
     git status
@@ -169,7 +169,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     
     ```
 
-11. To merge the changes from the feature-devops-home-page into main, run the following commands in the context of the git repository.
+1. To merge the changes from the feature-devops-home-page into main, run the following commands in the context of the git repository.
     
     ```Cmd
     
@@ -183,7 +183,7 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
     :::image type="content" source="../media/merge-feature-devops-home-page-output-window-4ee10ad1.png" alt-text="Merge feature-devops-home-page output window.":::
     
 
-12. Run the below command to delete the feature branch.
+1. Run the below command to delete the feature branch.
     
     ```Cmd
     
@@ -196,13 +196,13 @@ The Visual Studio Marketplace features several extensions for Visual Studio Code
 
 The easiest way to understand the outcome of the steps done earlier is to check the history of the operation. Let us have a look at how to do it.
 
-1.  In Git, committing changes to a repository is a two-step process. Running: `add .` The changes are staged but not committed. Finally, running commit promotes the staged changes into the repository.
-2.  To see the history of changes in the main branch, run the command `git log -v`
+1. In Git, committing changes to a repository is a two-step process. Running: `add .` The changes are staged but not committed. Finally, running commit promotes the staged changes into the repository.
+1. To see the history of changes in the main branch, run the command `git log -v`
 
     :::image type="content" source="../media/history-changes-master-branch-721b0c7f.png" alt-text="History of changes in the main branch.":::
 
 
-3.  To investigate the actual changes in the commit, you can run the command `git log -p`
+1. To investigate the actual changes in the commit, you can run the command `git log -p`
 
     :::image type="content" source="../media/command-line-showing-git-log-output-c8e1eec2.png" alt-text="Command line-showing git log -p output with file the changes.":::
 

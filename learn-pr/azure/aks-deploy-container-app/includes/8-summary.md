@@ -2,7 +2,7 @@ Your company is experiencing increased demand for its video rendering service be
 
 You created an AKS cluster and deployed your web application to the Kubernetes cluster. When you deployed the web app, you used the Kubernetes declarative paradigm to describe what you wanted to create. This way, you can keep the app's version history and make future deployments easily reproducible.
 
-Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to re-create your environment with each new deployment and configure additional services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
+Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to re-create your environment with each new deployment and configure more services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
 
 ## Clean up resources
 
@@ -37,12 +37,12 @@ In this module, you created resources by using your Azure subscription. The foll
 
 To learn more about Azure Kubernetes Service, see the following articles:
 
-- [AKS documentation on Microsoft Docs](/azure/aks/)
-- [Introduction to AKS](/learn/modules/intro-to-azure-kubernetes-service/)
+- [AKS documentation](/azure/aks/)
+- [Introduction to AKS](/training/modules/intro-to-azure-kubernetes-service/)
 - [Prepare an application for AKS](/azure/aks/tutorial-kubernetes-prepare-app)
 - [Deploy an AKS cluster](/azure/aks/tutorial-kubernetes-deploy-cluster)
 - [HTTP application routing](/azure/aks/http-application-routing)
-- [Azure CLI documentation on Microsoft Docs](/azure/aks/kubernetes-walkthrough)
+- [Azure CLI documentation](/azure/aks/kubernetes-walkthrough)
 - [Azure CLI command docs](/cli/azure/aks/#az-aks-create)
 - [AKS HTTPS ingress controller docs](/azure/aks/ingress-tls)
 - [Kubernetes ingress controllers](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)

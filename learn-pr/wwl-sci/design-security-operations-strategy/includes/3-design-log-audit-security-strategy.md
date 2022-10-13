@@ -90,7 +90,7 @@ Azure logs are categorized into the following types:
 
 -   **Data plane logs** provide information about events raised as part of Azure resource usage. Examples of this type of log are the Windows event system, security and application logs in a virtual machine (VM), and the [diagnostics logs](/azure/azure-monitor/essentials/platform-logs-overview) configured through Azure Monitor.
 
--   **Processed events** provide information about analyzed events/alerts. Examples of this type are [Microsoft Defender for Cloud alerts](https://docs.microsoft.com/azure/security-center/security-center-managing-and-responding-alerts), where [Microsoft Defender for Cloud](https://docs.microsoft.com/azure/security-center/security-center-introduction) has processed and analyzed subscriptions and provides concise security alerts.
+-   **Processed events** provide information about analyzed events/alerts. Examples of this type are [Microsoft Defender for Cloud alerts](/azure/security-center/security-center-managing-and-responding-alerts), where [Microsoft Defender for Cloud](/azure/security-center/security-center-introduction) has processed and analyzed subscriptions and provides concise security alerts.
 
 The following table lists the most important types of logs available in Azure:
 

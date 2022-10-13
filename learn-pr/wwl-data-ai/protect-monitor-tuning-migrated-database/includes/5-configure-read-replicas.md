@@ -16,7 +16,7 @@ Replicas can be in different regions from the master. You use replicas to place 
 Each replica is an instance of Azure Database for MySQL/PostgreSQL in its own right, but configured as read-only. If the connection to the master server is lost, or the master server is deleted, each replica becomes an independent read-write server. In this case, replicas are no longer synchronized with each other, so the data they hold might start to diverge.
 
 > [!NOTE]
-> If you're using Azure Database for MySQL, read replicas are only available in the General Purpose and Memory Optimized pricing tiers. Additionally, read replicas aren't available in Azure Database for PostgreSQL, Hyperscale (Citus).
+> If you're using Azure Database for MySQL, read replicas are only available in the General Purpose and Memory Optimized pricing tiers. Additionally, read replicas aren't available in Azure Database for PostgreSQL flexible servers.
 
 ### Create replicas
 

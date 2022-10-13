@@ -67,13 +67,13 @@ Image and site links use a very similar syntax.
 ![Link an image.](/learn/azure-devops/shared/media/mara.png)
 ```
 
-> ![Link an image.](/learn/azure-devops/shared/media/mara.png)
+> ![Link an image.](/training/azure-devops/shared/media/mara.png)
 
 ```markdown
 [Link to Microsoft Learn](/learn)
 ```
 
-> [Link to Microsoft Learn](/learn)
+> [Link to Microsoft Learn](/training)
 
 ### Making lists
 

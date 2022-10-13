@@ -16,7 +16,7 @@ abstract: |
   - Configure TTL for a specific item
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft C# or a similar programming language.
-iconUrl: /learn/achievements/azure-cosmos-db-implement-operations.svg
+iconUrl: /training/achievements/azure-cosmos-db-implement-operations.svg
 levels:
 - intermediate
 roles:

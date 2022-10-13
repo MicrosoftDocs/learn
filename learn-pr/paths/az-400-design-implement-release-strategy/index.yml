@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   This learning path explains the concepts of continuous delivery and releases strategy considerations for setting up deployment stages and your delivery and deployment cadence, and lastly, setting up your release approvals.
-iconUrl: /learn/achievements/az-400-design-and-implement-a-release-strategy.svg
+iconUrl: /training/achievements/az-400-design-and-implement-a-release-strategy.svg
 levels:
 - advanced
 roles:

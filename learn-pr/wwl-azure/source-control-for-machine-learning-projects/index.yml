@@ -16,7 +16,7 @@ abstract: |
   - How to develop locally with Visual Studio Code.
 prerequisites: |
   Some familiarity with machine learning and Azure Machine Learning.
-iconUrl: /learn/achievements/machine-learning-source-control.svg
+iconUrl: /training/achievements/machine-learning-source-control.svg
 levels:
 - beginner
 roles:

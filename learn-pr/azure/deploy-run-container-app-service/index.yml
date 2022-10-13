@@ -19,7 +19,7 @@ abstract:  |
 prerequisites: |
   - Basic experience with Docker, including the use of Docker commands to store and retrieve Docker images.
   - Experience with creating web apps by using Azure App Service.
-iconUrl: /learn/achievements/deploy-run-container-app-service.svg
+iconUrl: /training/achievements/deploy-run-container-app-service.svg
 levels:
 - beginner
 roles:
