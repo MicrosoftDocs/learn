@@ -36,7 +36,7 @@ title: Introduction to Visual Studio Code
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
-summary: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a source code editor with IDE features. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
+summary: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a source code editor. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -87,7 +87,7 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - Familiarity with integrated development environments (IDEs) and their features such as source control and debugging at the beginner level.
+  - Familiarity with code editors or integrated development environments (IDEs) and their features such as source control and debugging at the beginner level.
   - Understanding of the software plugins concept for extensions and customization at the beginner level.
 ###########################################################################
 ###
