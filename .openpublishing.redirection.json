@@ -17834,6 +17834,11 @@
       "source_path": "learn-pr/wwl-azure/tune-queries-azure-database-for-postgresql/5-exercise-visualize-performance-query-performance-insight.md",
       "redirect_url": "/training/modules/tune-queries-azure-database-for-postgresql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-pgadmin.md",
+      "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
+      "redirect_document_id": false
     }
   ]
 }
