@@ -17839,6 +17839,61 @@
       "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-pgadmin.md",
       "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/1-introduction.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/2-exercise-environment-setup.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/3-migration-overview.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/4-exercise-assess-database.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/5-migration-with-downtime.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/6-exercise-migrate-database-assistant.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/7-exercise-migrate-database-service.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/8-summary.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/index.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/migrate-sql-server-relational-data/resources/design-doc.md",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.migrate-sql-server-relational-data.badge.yml",
+      "redirect_url": "/training/modules/migrate-sql-workloads-azure-sql-databases/",
+      "redirect_document_id": false
     }
   ]
 }
