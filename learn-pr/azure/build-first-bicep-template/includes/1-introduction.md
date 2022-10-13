@@ -14,11 +14,11 @@ You decide to build the resources using infrastructure as code (IaC) techniques 
 
 In this module, you'll create a reusable Bicep template to deploy a set of Azure resources for new product launches. You'll use many elements of the Bicep language, including:
 
-- Resource definitions to deploy your Azure resources from your Bicep code
-- Parameters to make your template reusable
-- Variables and expressions to make it easier to write and deploy your template
-- Modules to help structure your template into multiple files
-- Outputs to send data from your template and modules back to whoever or whatever is deploying your infrastructure
+- Resource definitions to deploy your Azure resources from your Bicep code.
+- Parameters to make your template reusable.
+- Variables and expressions to make it easier to write and deploy your template.
+- Modules to help structure your template into multiple files.
+- Outputs to send data from your template and modules back to whoever or whatever is deploying your infrastructure.
 
 ## What is the main goal?
 
@@ -28,13 +28,14 @@ By the end of this module, you'll be able to create Bicep templates that define 
 
 You should be familiar with:
 
-- What infrastructure as code is, and what its benefits are
-- Azure, including the Azure portal, subscriptions, resource groups, and resources
+- Infrastructure as code and its benefits.
+- Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
-To follow along with the exercises in the module, you'll need the following installed locally:
+To follow along with the exercises in the module, you'll need the following software installed locally:
 
 - [Visual Studio Code](https://code.visualstudio.com).
 - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep).
 - Either the latest [Azure CLI](/cli/azure/install-azure-cli) tools, or the latest version of [Azure PowerShell](/powershell/azure/install-az-ps).
-  > [!TIP]
-  > You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).
+
+> [!TIP]
+> You can use either the Azure CLI or Azure PowerShell to complete this module. If you're not sure which to choose, we recommend you use the [Azure CLI](/cli/azure/install-azure-cli).

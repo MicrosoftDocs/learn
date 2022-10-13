@@ -4,7 +4,7 @@ In this unit, you'll learn about Enterprise State Roaming. You'll learn how to e
 
 ## Basics of Enterprise State Roaming
 
-Enterprise State Roaming enables users of Windows 10 devices to sync settings and application data with their organization's cloud service. When synchronization is enabled, it takes place automatically. You can enable all applicable device users, or select specific users or groups based on your organization's needs. With Enterprise State Roaming, users' settings and application data follow them when they switch devices.
+Enterprise State Roaming allows users of Windows 10 and newer devices to sync settings and application data with their organization's cloud service. When synchronization is enabled, it takes place automatically. You can enable all applicable device users, or select specific users or groups based on your organization's needs. With Enterprise State Roaming, users' settings and application data follow them when they switch devices.
 
 Key benefits of using Enterprise State Roaming are:
 
@@ -37,13 +37,13 @@ Enterprise State Roaming requires a device to authenticate with a known Azure AD
 
     ![Screenshot of Enterprise State Roaming options in the Azure portal.](../media/4-enable-enterprise-state-roaming.png)
 
-1. For **Users may sync settings and app data across devices**, select **All** or **Selected**. With **Selected**, you add the users or groups that will have Enterprise State Roaming available.
+1. For **Users may sync settings and app data across devices**, select **All** or **Selected**. With **Selected**, you'll add the users or groups that will have Enterprise State Roaming available.
 
     ![Screenshot that shows how you'd add members allowed to sync settings and app data.](../media/4-enterprise-state-roaming-selected.png)
 
 ## Data storage
 
-Enterprise State Roaming stores the user data in a geographical region that's nearest to your Azure AD instance. There are three geographic regions: North America (USA); Europe, the Middle East, and Africa (EMEA); and Asia-Pacific (APAC). Although tenant data will be hosted in the nearest region, user data can be hosted in one or more of these regions. 
+Enterprise State Roaming stores the user data in a geographical region that's nearest to your Azure AD instance. There are three geographic regions: North America (USA); Europe, the Middle East, and Africa (EMEA); and Asia-Pacific (APAC). Although tenant data will be hosted in the nearest region, user data can be hosted in one or more of these regions.
 
 The country or region for your tenant is defined when Azure AD is set up. It can't be changed.
 
@@ -59,7 +59,7 @@ Explicit data deletion occurs when an Azure administrator acts on a user or an o
 
 - **Azure AD organization deletion**: When the administrator removes a directory, all user settings or data stored in that directory is automatically discarded.
 
-- **On Request deletion**: Use this option to remove a specific user's roaming data. The administrator needs to raise an Azure support ticket for this option.
+- **On Request deletion**: You can use this option to remove a specific user's roaming data. The administrator needs to raise an Azure support ticket for this option.
 
 ### Stale data deletion
 
@@ -67,6 +67,6 @@ Any Enterprise State Roaming data that hasn't been accessed during the past year
 
 ### Deleted data recovery
 
-After the retention period elapses, data is permanently deleted from the cloud and can't be recovered. But you can restore the data from the device when it next connects to the cloud.
+After the retention period elapses, data is permanently deleted from the cloud and can't be recovered, but you can restore the data from the device when it next connects to the cloud.
 
-The data retention periods can't be changed.
+You can't change the data retention periods.

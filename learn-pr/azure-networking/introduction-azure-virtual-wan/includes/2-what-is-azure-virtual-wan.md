@@ -46,7 +46,7 @@ To get started with a virtual WAN:
 
 The classic hardware hub allows all network devices plugged into it to communicate directly with each other. A Virtual WAN hub is a sophisticated software-defined hub.
 
-An Azure Virtual WAN hub can be deployed in any Azure region, but only one per region, per subscription. Each hub can be connected to use standard Azure connection services.
+An Azure Virtual WAN hub can be deployed in any Azure region. Each hub can be connected to use standard Azure connection services.
 
 For example, a branch office in an Azure region in the UK can connect to a region in the USA. They connect using hub-to-hub connectivity through the Azure global network.
 

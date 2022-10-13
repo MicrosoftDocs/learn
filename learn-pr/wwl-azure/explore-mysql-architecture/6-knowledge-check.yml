@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2022
+  ms.date: 10/10/2022
   author: wwlpublish
   ms.author: caroline
   ms.topic: interactive-tutorial
@@ -19,16 +19,16 @@ quiz:
   questions:
   - content: "Your production application has a normally heavy workload with a requirement for high concurrency. Which implementation of Azure Database for MySQL should you select?"
     choices:
-    - content: "Single server - Memory Optimized (2 - 1. vCores)"
+    - content: "General purpose (2 - 1. vCores)"
       isCorrect: false
-      explanation: "That's incorrect. Flexible server provides more granular control and flexibility with configuration. Flexible server should be selected unless there's a specific reason to select Single server."
-    - content: "Flexible Server - Memory Optimized (2 - 1. vCores)"
+      explanation: "That's incorrect. The general purpose tier is designed for medium concurrency workloads."
+    - content: "Memory optimized (2 - 1. vCores)"
       isCorrect: true
-      explanation: "That's correct. Memory optimized is the best solution for high concurrency workloads."
-    - content: "Flexible Server - Burstable (1 - 2. vCores)"
+      explanation: "That's correct. Memory optimized is the best tier for high concurrency workloads."
+    - content: "Burstable (1 - 2. vCores)"
       isCorrect: false
-      explanation: "That's incorrect. Flexible server Burstable SKU is best suited to low-concurrency workloads, with occasional peaks."
-  - content: "MySQL supports a pluggable storage engine architecture. You're porting your database to Azure Database for MySQL Flexible Server, which storage engine should you select?"
+      explanation: "That's incorrect. The burstable tier is best suited to low-concurrency workloads, with occasional peaks."
+  - content: "MySQL supports a pluggable storage engine architecture. You're porting your database to Azure Database for MySQL. Which storage engine should you select?"
     choices:
     - content: "MyISAM"
       isCorrect: false

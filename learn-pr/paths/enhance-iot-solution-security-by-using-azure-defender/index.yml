@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.enhance-iot-solution-security-by-using-azure-defender
 metadata:
-  title: Enhance IoT solution security by using Azure Defender for IoT
-  description: Enhance IoT solution security by using Azure Defender for IoT
-  ms.date: 01/07/2022
+  title: Enhance IoT solution security by using Microsoft Defender for IoT
+  description: Enhance IoT solution security by using Microsoft Defender for IoT
+  ms.date: 10/13/2022
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enhance IoT solution security by using Azure Defender for IoT
+title: Enhance IoT solution security by using Microsoft Defender for IoT
 prerequisites: |
   Ability to:
   - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
@@ -25,12 +25,12 @@ roles:
 - developer
 products:
 - azure
-- azure-defender-iot
 - azure-iot-edge
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
-- azure-security-center
+- defender-for-cloud
+- defender-for-iot
 subjects:
 - security
 modules:
