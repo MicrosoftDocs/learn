@@ -1,4 +1,4 @@
-Azure Monitor Logs collects and organizes log data generated from Azure resources. Log data is stored in a Log Analytics workspace. Data living in the workspace can be queried for trend analysis, reporting, and alerting. Some examples of data captured include Windows event logs, Heartbeat logs, performance data, and Syslogs.
+Azure Monitor Logs collects and organizes log data generated from Azure resources. Log data is stored in a Log Analytics workspace. You can query data living in the workspace for trend analysis, reporting, and alerting. Some examples of data captured include Windows event logs, Heartbeat logs, performance data, and Syslogs.
 
 Azure Monitor VM Insights is a feature of Azure Monitor that relies on Azure Monitor Logs. Think of Azure Monitor VM Insights as a feature that provides a predefined, curated monitoring experience, with little configuration required. Azure Monitor VM Insights use a table named InsightsMetrics. Administrators can query performance and usage for virtual machines by using that table. The data generated allows you to display everything in a meaningful way. Administrators can also use Azure Monitor VM Insights to process log data without exposing the underlying queries.
 
@@ -6,15 +6,15 @@ Azure Monitor VM Insights is a feature of Azure Monitor that relies on Azure Mon
 
 There are a few different resources and services that complete the native monitoring toolkit in Azure. Azure Monitor becomes the service at the top, which spans across all monitoring tools, while everything else lives underneath. The service collects and analyzes data generated from Azure resources. Azure Monitor captures monitoring data from the following sources:
 
--    Application
--    Guest OS
--    Azure resources
--    Azure subscriptions
--    Azure tenant
+- Application
+- Guest OS
+- Azure resources
+- Azure subscriptions
+- Azure tenant
 
-Data collected by Azure Monitor is composed of metrics in Azure Monitor Metrics and logs in Azure Monitor Logs. Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near real time alerting. Some examples of metrics captured include IOPS percentages and CPU cycles.
+Data collected by Azure Monitor is composed of metrics in Azure Monitor Metrics and logs in Azure Monitor Logs. Azure Monitor Metrics are lightweight numerical values stored in a time-series database that can be used for near-real-time alerting. Some examples of metrics captured include IOPS percentages and CPU cycles.
 
-As we covered earlier, Azure Monitor Logs collects and organizes log data from Azure resources. The major difference between Azure Monitor Metrics and Azure Monitor Logs is the structure of data generated. Azure Monitor Metrics only store numeric data using a specific structure. Azure Monitor Logs can store Azure Monitor Metrics data and various other data types, each using their own structure.
+As we covered earlier, Azure Monitor Logs collects and organizes log data from Azure resources. The major difference between Azure Monitor Metrics and Azure Monitor Logs is the structure of data generated. Azure Monitor Metrics only stores numeric data using a specific structure. Azure Monitor Logs can store Azure Monitor Metrics data and various other data types, each using their own structure.
 
 The following image shows how applications, resources, workloads, tenant data, and custom sources flow into Azure Monitor (to either metrics or logs). When the data is in metrics or logs, there are many different ways to visualize, analyze, respond, integrate, and view overall resource health.
 

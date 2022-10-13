@@ -35,7 +35,7 @@ quiz:
     - content: "Subnet is **GatewaySubnet** and gateway type is **Vpn**"
       isCorrect: false
       explanation: "You must create a gateway subnet with the name **GatewaySubnet** in order for the VPN gateway to function properly. But when you create the VPN gateway with the cmdlet 'New-AzVirtualNetworkGateway', you specify the '-IpConfigurations' for that subnet."
-  - content: 'Which peering configuration would you use for your Express route circuit where you need to allow direct connections to Azure compute resources?'
+  - content: 'Which peering configuration would you use for your ExpressRoute circuit where you need to allow direct connections to Azure compute resources?'
     choices:
     - content: "Azure Virtual Network peering"
       isCorrect: false
