@@ -29,7 +29,7 @@ units:
   - learn.iot.create-first-netx-duo-project.introduction
   - learn.iot.create-first-netx-duo-project.hello-world
   - learn.iot.create-first-netx-duo-project.identify-netx-duo-components
-  - learn.iot.create-first-netx-duo-project.exercise-bulid-run-project
+  - learn.iot.create-first-netx-duo-project.exercise-build-run-project
   - learn.iot.create-first-netx-duo-project.knowledge-check
   - learn.iot.create-first-netx-duo-project.summary
 badge:
