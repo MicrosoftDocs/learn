@@ -8,7 +8,7 @@ In this unit, we'll use the Azure portal to enable runtime instrumentation on a 
 
 ## Create an Azure web app
 
-We'll start by creating a web app to monitor. 
+We'll start by creating a web app to monitor.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
@@ -46,8 +46,8 @@ Each web app needs a subscription, resource group, name, operating system, regio
 1. After deployment completes, select **Go to resource**. The App Service pane for your web app appears. Select **Essentials** to minimize the details.
 
     > [!NOTE]
-    > On the top row are 3 services you can select. In this module, the next procedure will show you how to enable Application Insights after the web app is created. You can choose to enable it here, and the end result would be the same.
- 
+    > On the top row are three services you can select. In this module, the next procedure will show you how to enable Application Insights after the web app is created. You can choose to enable it here, and the end result would be the same.
+
 1. Notice that, even without Application Insights, several statistics appear as charts, such as the frequency of HTTP 500 errors, request frequency, and response time.
 
 ## Enable Application Insights for the Web App
@@ -70,7 +70,6 @@ The limited set of statistics provided in the Azure portal isn't enough to help 
     |Location | Accept the default, using the location from when you created the web app resource. |
     |Log Analytics Workspace | Accept the default created by Azure. |
 
-
 1. Select **Apply**. If the **Apply monitoring settings** dialog box appears, select **Yes**.
 
 1. After the changes are applied, in the Azure portal left menu pane, under **Settings**, select **Application Insights**, The **Application Insights** pane appears.
@@ -91,7 +90,7 @@ Because you can inject the Application Insights JavaScript SDK into the video we
 
     ![Screenshot of the application settings tab with a callout highlighting the link to add a new application setting.](../media/3-enable-client-side-monitoring.png)
 
- 1. In the **Name** field, enter *APPINSIGHTS_JAVASCRIPT_ENABLED*.
+1. In the **Name** field, enter *APPINSIGHTS_JAVASCRIPT_ENABLED*.
 
 1. In the **Value** field, enter *true*.
 

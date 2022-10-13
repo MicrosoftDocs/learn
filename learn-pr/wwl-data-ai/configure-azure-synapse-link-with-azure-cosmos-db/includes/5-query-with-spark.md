@@ -1,8 +1,8 @@
-After you've added a linked service for your analytical store enabled Cosmos DB database, you can use it to query the data using a Spark pool in your Azure Synapse Analytics workspace.
+After you've added a linked service for your analytical store enabled Azure Cosmos DB database, you can use it to query the data using a Spark pool in your Azure Synapse Analytics workspace.
 
-## Loading Cosmos DB analytical data into a dataframe
+## Loading Azure Cosmos DB analytical data into a dataframe
 
-For initial exploration or quick analysis of data from a Cosmos DB linked service, it's often easiest to load data from a container into a dataframe using a Spark-supported language like PySpark (A Spark-specific implementation of Python) or Scala (a Java-based language often used on Spark).
+For initial exploration or quick analysis of data from an Azure Cosmos DB linked service, it's often easiest to load data from a container into a dataframe using a Spark-supported language like PySpark (A Spark-specific implementation of Python) or Scala (a Java-based language often used on Spark).
 
 For example, the following PySpark code could be used to load a dataframe named **df** from the data in the **my-container** container connected to using the **my_linked_service** linked service, and display the first 10 rows of data:
 
@@ -74,7 +74,7 @@ mydf.write.format("cosmos.oltp")\
 > [!NOTE]
 > Writing a dataframe to a container updates the *operational* store and can have an impact on its performance. The changes are then synchronized to the analytical store.
 
-## Using Spark SQL to query Cosmos DB analytical data
+## Using Spark SQL to query Azure Cosmos DB analytical data
 
 Spark SQL is a Spark API that provides SQL language syntax and relational database semantics in a Spark pool. You can use Spark SQL to define metadata for tables that can be queried using SQL.
 
@@ -102,4 +102,4 @@ FROM products;
 > [!TIP]
 > The `%%sql` keyword at the beginning of the code is a *magic* that instructs the Spark pool to run the code as SQL rather than the default language (which is usually set to PySpark).
 
-By using this approach, you can create a logical database in your Spark pool that you can then use to query the analytical data in Cosmos DB to support data analysis and reporting workloads without impacting the operational store in your Cosmos DB account.
+By using this approach, you can create a logical database in your Spark pool that you can then use to query the analytical data in Azure Cosmos DB to support data analysis and reporting workloads without impacting the operational store in your Azure Cosmos DB account.

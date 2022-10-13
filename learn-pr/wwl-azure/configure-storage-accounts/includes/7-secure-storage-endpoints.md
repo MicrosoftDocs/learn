@@ -1,10 +1,18 @@
-The steps necessary to restrict network access to Azure services varies across services. For accessing a storage account, you would use the **Firewalls and virtual networks** blade to add the virtual networks that will have access. Notice you can also configure to allow access to one or more public IP ranges.
+In the Azure portal, each Azure service has required steps to configure the service endpoints and restrict network access for the service.
 
-:::image type="content" source="../media/secure-storage-access-d32868ef.png" alt-text="Screenshot of the Storage Account Firewalls and virtual networks blade in the Azure portal. One virtual network is selected and the firewall has an I P address range.":::
+To access these settings for your storage account, you use the **Firewalls and virtual networks** settings. You add the virtual networks that should have access to the service for the account.
 
+:::image type="content" source="../media/secure-storage-access-d32868ef.png" alt-text="Screenshot of the Storage Account Firewalls and virtual networks settings in the Azure portal. One virtual network is selected and the firewall has an IP address range.":::
 
- -  Firewalls and Virtual Networks restricts access to the Storage Account from specific Subnets on Virtual Networks or public IPs.
- -  Subnets and Virtual Networks must exist in the same Azure Region or Region Pair as the Storage Account.
+### Things to know about configuring service endpoints
 
-> [!NOTE]
-> Be sure to test the service endpoint and verify the endpoint is limiting access as expected.
+Here are some points to consider about configuring service access settings:
+
+- The **Firewalls and virtual networks** settings restrict access to your storage account from specific subnets on virtual networks or public IPs.
+
+- You can configure the service to allow access to one or more public IP ranges.
+
+- Subnets and virtual networks must exist in the same Azure region or region pair as your storage account.
+
+> [!Important]
+> Be sure to test the service endpoint and verify the endpoint limits access as expected.
