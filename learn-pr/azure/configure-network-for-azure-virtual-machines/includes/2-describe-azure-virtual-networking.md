@@ -53,7 +53,7 @@ Azure virtual networks enable you to link resources together in your on-premises
 
 - **Azure ExpressRoute**
 
-    For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best approach. Azure ExpressRoute provides dedicated private connectivity to Azure that does not travel over the internet.
+    For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best approach. Azure ExpressRoute provides dedicated private connectivity to Azure that doesn't travel over the internet.
 
 ### Route network traffic
 
@@ -89,7 +89,7 @@ You can create and configure Azure virtual networks from the Azure portal, Azure
 
 ### Create a virtual network
 
-When you create an Azure virtual network, you configure a number of basic settings. You'll have the option to configure advanced settings, such as multiple subnets, distributed denial of service (DDoS) protection, and service endpoints.
+When you create an Azure virtual network, you configure many basic settings. You can also configure advanced settings, such as multiple subnets, distributed denial of service (DDoS) protection, and service endpoints.
 
 ![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/2-create-virtual-network.PNG)
 
@@ -97,7 +97,7 @@ You'll configure the following settings for a basic virtual network:
 
 - **Network name**
 
-    The network name must be unique in your subscription, but does not need to be globally unique. Make the name a descriptive one that is easy to remember and identified from other virtual networks.
+    The network name must be unique in your subscription, but doesn't need to be globally unique. Make the name a descriptive one that is easy to remember and identified from other virtual networks.
 
 - **Address space**
 
@@ -137,11 +137,11 @@ You'll configure the following settings for a basic virtual network:
 
     Here, you enable service endpoints, and then select from the list which Azure service endpoints you want to enable. Options include Azure Cosmos DB, Azure Service Bus, Azure Key Vault, and so on.
 
-When you have configured these settings, select **Create**.
+When you've configured these settings, select **Create**.
 
-### Define additional settings
+### Define other settings
 
-After creating a virtual network, you can then define further settings. These include:
+After creating a virtual network, you can then define further settings. These settings include:
 
 - **Network security group**
 
@@ -157,11 +157,11 @@ You can also amend the service endpoints.
 
 ### Configure virtual networks
 
-When you have created a virtual network, you can change any further settings from the **Virtual Networks** pane in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
+When you've created a virtual network, you can change any further settings from the **Virtual Networks** pane in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
 
 ![Screenshot of the Azure portal showing an example pane for configuring a virtual network.](../media/2-configure-virtual-network.PNG)
 
-You can then review and change settings in further sub-panes. These settings include:
+You can then review and change settings in further subpanes. These settings include:
 
 - Address spaces: You can add further address spaces to the initial definition.
 
