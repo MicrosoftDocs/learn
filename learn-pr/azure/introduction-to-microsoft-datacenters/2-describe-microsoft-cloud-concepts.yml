@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-microsoft-datacenters.describe-microsoft-cloud-concepts
+title: Describe Microsoft Cloud concepts
+metadata:
+  title: Describe Microsoft Cloud concepts
+  description: TBD
+  ms.date: 10/01/2022
+  author: TBD
+  ms.author: v-jenhor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-describe-microsoft-cloud-concepts.md)]

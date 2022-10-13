@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/20/2021
+  ms.date: 10/10/2022
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -18,21 +18,21 @@ quiz:
     choices:
     - content: "Datastore"
       isCorrect: false
-      explanation: "That is incorrect. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
+      explanation: "Incorrect. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
     - content: "OutputFileDatasetConfig"
       isCorrect: true
-      explanation: "That is correct. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
+      explanation: "Correct. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
     - content: "Dataset"
       isCorrect: false
-      explanation: "That is incorrect. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
+      explanation: "Incorrect. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
   - content: "You've published a pipeline that you want to run every week. You plan to use the Schedule.create method to create the schedule. What kind of object must you create first to configure how frequently the pipeline runs?"
     choices:
     - content: "Datastore"
       isCorrect: false
-      explanation: "That is incorrect. You need a ScheduleRecurrence object to create a schedule that runs at a regular interval."
+      explanation: "Incorrect. You need a ScheduleRecurrence object to create a schedule that runs at a regular interval."
     - content: "PipelineParameter"
       isCorrect: false
-      explanation: "That is incorrect. You need a ScheduleRecurrence object to create a schedule that runs at a regular interval."
+      explanation: "Incorrect. You need a ScheduleRecurrence object to create a schedule that runs at a regular interval."
     - content: "ScheduleRecurrence"
       isCorrect: true
-      explanation: "That is correct. You need a ScheduleRecurrence object to create a schedule that runs at a regular interval."
+      explanation: "Correct. You need a ScheduleRecurrence object to create a schedule that runs at a regular interval."
