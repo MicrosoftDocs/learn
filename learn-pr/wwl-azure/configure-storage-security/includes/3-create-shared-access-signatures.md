@@ -33,7 +33,7 @@ Let's review some characteristics of a SAS.
 
 In the Azure portal, you configure several settings to create a SAS. As you review these details, consider how you might implement shared access signatures in your storage security solution.
 
-:::image type="content" source="../media/configure-secure-signatures-be02fa89.png" alt-text="Screenshot of the Create a shared access signature key page.":::
+:::image type="content" source="../media/configure-secure-signatures-be02fa89.png" alt-text="Screenshot of the Create a shared access signature key page." border="false":::
 
 - **Signing method**: Choose the signing method: Account key or User delegation key.
 - **Signing key**: Select the signing key from your list of keys.
