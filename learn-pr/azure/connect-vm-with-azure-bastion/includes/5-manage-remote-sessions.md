@@ -1,15 +1,14 @@
-
 In this unit, you'll learn how to manage remote sessions by enabling diagnostic logs and monitoring remote sessions.
 
 ## Configure diagnostic settings to generate audit logs
- 
-Azure Bastion can log information about remote user sessions. Review the logs to see who connected to which workloads, at what time, from where, and other relevant logging information. 
+
+Azure Bastion can log information about remote user sessions. You can review the logs to see who connected to which workloads, at what time, from where, and other relevant logging information.
 
 To generate these logs, you must configure diagnostic settings on Azure Bastion. It can take several hours for the logs to stream to a storage account. The following sections show you how to configure Azure Bastion diagnostic settings so you can try this in your own subscription later.
 
 ### Enable diagnostics for Azure Bastion
 
-In the Azure Bastion resource, you add diagnostic settings under **Monitoring**. You need a storage account to stream the logs to. If you don't already have a storage account, create one before you try these steps in your own subscription.
+In the Azure Bastion resource, you can add diagnostic settings under **Monitoring**. You need a storage account to which to stream the logs. If you don't already have a storage account, create one before you try these steps in your own subscription.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for or select **Bastions**.
 1. Select the Azure Bastion resource.
@@ -28,7 +27,7 @@ In the Azure Bastion resource, you add diagnostic settings under **Monitoring**.
 
 ### View diagnostic logs
 
-The diagnostic logs take several hours to appear in your storage account. Find them in the storage account under **Containers**.
+The diagnostic logs take several hours to appear in your storage account. You can find them in the storage account under **Containers**.
 
 :::image type="content" source="../media/5-storage-container.png" alt-text="Screenshot of a storage account with a container called insights-logs-bastionauditlogs.":::
 
@@ -71,7 +70,7 @@ Download the .json file to view the session details. When you open the file, it 
 
 ## Manage current remote sessions
 
-Azure Bastion session monitoring lets you view which users are connected to which virtual machines. It shows the IP that the user connected from, how long they've been connected, and when they connected. You can select an ongoing session and force-disconnect the session to disconnect the user from the session.
+Azure Bastion session monitoring lets you view which users are connected to which virtual machines. It shows the IP from which the user connected, how long they've been connected, and when they connected. You can select an ongoing session and force-disconnect the session to disconnect the user from the session.
 
 :::image type="content" source="../media/5-delete-remote-session.png" alt-text="Screenshot of the Azure Bastion sessions page with the delete option selected for one of the two sessions.":::
 

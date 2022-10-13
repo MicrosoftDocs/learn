@@ -15,7 +15,7 @@ reg_param = PipelineParameter(name='reg_rate', default_value=0.01)
 
 step2 = PythonScriptStep(name = 'train model',
                          source_directory = 'scripts',
-                         script_name = 'data_prep.py',
+                         script_name = 'train_model.py',
                          compute_target = 'aml-cluster',
                          # Pass parameter as script argument
                          arguments=['--in_folder', prepped_data,
