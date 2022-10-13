@@ -46,7 +46,7 @@ function startNextQuarter() {
 }
 ```
 
-Although the interval functionality is beyond the scope of this module, a critical piece (especially when you're testing new functionality) is that you can modify the interval timing, which is the second parameter in the `setInterval()` function; in this case, it's set to 1000. You can set this to 100 if you want the quarters shorter to more quickly test new changes.
+Although the interval functionality is beyond the scope of this module, a critical piece (especially when you're testing new functionality) is that you can modify the interval timing, which is the second parameter in the `setInterval()` function; in this case, it's set to 1000. You can set it to 100 if you want the quarters shorter to more quickly test new changes.
 
 ## Test your new app
 
@@ -55,7 +55,7 @@ It's finally time! The app is finished! Now, we can test our app. Remember that 
 1. Choose five players.
 2. Press the **Start the Game!** button.
 3. When the timer stops, adjust (or not) the players on the court versus players taking a break.
-4. When your lineup is locked in, select the **Start Q2** button. 
+4. When your lineup is locked in, select the **Start Q2** button.
 
 :::image type="content" source="../media/final-test-third-quarter.png" alt-text="Screenshot that shows the test of the final web app.":::
 
@@ -67,7 +67,7 @@ Congratulations! You finished your web app!
 
 ## Deploy your final web app
 
-Now that you have finished your web app and you tested it locally, you can deploy it to the web! Deploying your app to the web is fairly easy. All you have to do is push your changes to your main branch! 
+Now that you've finished your web app and you tested it locally, you can deploy it to the web! Deploying your app to the web is fairly easy. All you have to do is push your changes to your main branch!
 
 To commit and push your changes, go to the source control extension, add a commit message, and select the check mark at the top. 
 
