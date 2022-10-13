@@ -239,7 +239,7 @@ In this task you will test the application rule to confirm that it works as expe
 9.  Open Internet Explorer and select **OK** in the **Set up Internet Explorer 11** dialog box.
 10. Browse to **https://www.microsoft.com**.
 11. In the **Security Alert** dialog box, select **OK**.
-12. Select **Close** on the Internet Explorer security alerts that may pop-up.
+12. Select **Close** on the Internet Explorer security alerts that may pop up.
 13. You should see the Microsoft home page. :::image type="content" source="../media/microsoft-home-page-e7403ee6.png" alt-text="RDP session browsing microsoft.com":::
     
 14. Browse to **https://www.google.com**.
