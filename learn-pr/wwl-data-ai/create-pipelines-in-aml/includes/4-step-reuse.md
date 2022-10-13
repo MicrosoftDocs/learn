@@ -2,7 +2,7 @@ Pipelines with multiple long-running steps can take a significant time to comple
 
 ## Managing step output reuse
 
-By default, the step output from a previous pipeline run is reused without rerunning the step provided the script, source directory, and other parameters for the step have not changed. Step reuse can reduce the time it takes to run a pipeline, but it can lead to stale results when changes to downstream data sources have not been accounted for.
+By default, the step output from a previous pipeline run is reused without rerunning the step provided the script, source directory, and other parameters for the step haven't changed. Step reuse can reduce the time it takes to run a pipeline, but it can lead to stale results when changes to downstream data sources haven't been accounted for.
 
 To control reuse for an individual step, you can set the **allow_reuse** parameter in the step configuration, like this:
 
