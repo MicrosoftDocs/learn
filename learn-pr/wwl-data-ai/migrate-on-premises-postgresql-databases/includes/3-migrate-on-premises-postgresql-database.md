@@ -22,7 +22,7 @@ Select **Create** on the **Flexible server** main blade, enter the details for t
 - **Admin username**. The name of a user account that you'll create with administrative privileges. Azure creates some accounts for its own use. You can't use **azure_superuser**, **azure_pg_admin**, **admin**, **administrator**, **root**, **guest**, **public**, or any name that starts with **pg_**.
 - **Password**. Must be between 8 and 128 characters. It must contain a mixture of uppercase and lowercase letters, numbers, and non-alphanumeric characters.
 
-[![Image showing a sample configuration for Azure Database for PostgreSQL flexible server in the Azure portal](../media/3-single-server-configuration.png)](../media/3-single-server-configuration.png#lightbox)
+[![Screenshot showing a sample configuration for Azure Database for PostgreSQL flexible server in the Azure portal.](../media/3-single-server-configuration.png)](../media/3-single-server-configuration.png#lightbox)
 
 Click **Review + Create** to deploy the service. Deployment will take several minutes.
 
