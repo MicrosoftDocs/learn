@@ -36,7 +36,7 @@ title: Introduction to Visual Studio Code
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
-summary: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a code editor with IDE features. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
+summary: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a source code editor with IDE features. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -63,7 +63,7 @@ summary: "Characterize the types of programming scenarios for which Visual Studi
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Visual Studio Code is appropriate for your development work.
+    - Evaluate whether Visual Studio Code is an appropriate source code editor for your development work.
     - Describe how Visual Studio Code can be customized with extensions to configure a development environment to meet your needs.
 ###########################################################################
 ###
