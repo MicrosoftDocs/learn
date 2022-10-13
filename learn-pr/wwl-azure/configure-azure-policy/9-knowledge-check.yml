@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/09/2022
+  ms.date: 10/13/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "There are several Azure policies that need to be applied to a new branch office. What's the best approach?"
     choices:
@@ -29,7 +28,6 @@ quiz:
     - content: "Create a policy definition"
       isCorrect: false
       explanation: "Incorrect. A policy definition expresses what to evaluate and what actions to take. Every policy definition has conditions under which it's enforced. The definition has an accompanying effect that takes place if the conditions are met. Policy definitions can be grouped into policy initiatives."
-  
   - content: "To satisfy the finance team's request for billing by department, multiple resource groups have been created and the resource tags applied. What's the next step?"
     choices:
     - content: "Create a management group"
@@ -41,7 +39,6 @@ quiz:
     - content: "Review the Azure Policy compliance page"
       isCorrect: false
       explanation: "Incorrect. The Azure Policy compliance page shows non-compliant initiatives, non-compliant policies, and non-compliant resources. Checking the page is useful after a policy is created and scoped."
-  
   - content: "How can you ensure that only cost-effective virtual machine SKU sizes are deployed?"
     choices:
     - content: "Periodically inspect the deployment to see which SKU sizes are used"
@@ -53,7 +50,6 @@ quiz:
     - content: "Create a policy in Azure Policy that specifies the allowed SKU sizes"
       isCorrect: true
       explanation: "Correct. There's a built-in Azure policy to specify the allowed virtual machine SKU sizes. After the policy is enabled, it's applied whenever a virtual machine is created or resized."
-  
   - content: "Which option can you use to manage governance across multiple Azure subscriptions?"
     choices:
     - content: "Azure initiatives"
