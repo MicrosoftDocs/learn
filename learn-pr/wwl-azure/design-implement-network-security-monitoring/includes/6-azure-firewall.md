@@ -1,6 +1,6 @@
 Azure Firewall is a managed, cloud-based network security service that protects your Azure Virtual Network resources. It is a fully stateful firewall as a service with built-in high availability and unrestricted cloud scalability.
 
-:::image type="content" source="../media/azure-sample-firewall-configuration-2762a7f8.png" alt-text="Diagram of sample firewall configuration":::
+:::image type="content" source="../media/firewall-standard.png" alt-text="Diagram of Azure firewall configuration":::
 
 
 ## Azure Firewall features
@@ -17,7 +17,7 @@ Azure Firewall includes the following features:
  -  **Outbound SNAT support** \- All outbound virtual network traffic IP addresses are translated to the Azure Firewall public IP (Source Network Address Translation (SNAT)). You can identify and allow traffic originating from your virtual network to remote Internet destinations.
  -  **Inbound DNAT support** \- Inbound Internet network traffic to your firewall public IP address is translated (Destination Network Address Translation) and filtered to the private IP addresses on your virtual networks.
  -  **Multiple public IP addresses** \- You can associate multiple public IP addresses (up to 250) with your firewall, to enable specific DNAT and SNAT scenarios.
- -  **Azure Monitor logging** \- All events are integrated with Azure Monitor, allowing you to archive logs to a storage account, stream events to your Event Hub, or send them to Azure Monitor logs.
+ -  **Azure Monitor logging** \- All events are integrated with Azure Monitor, allowing you to archive logs to a storage account, stream events to your Event Hubs, or send them to Azure Monitor logs.
  -  **Forced tunneling** \- You can configure Azure Firewall to route all Internet-bound traffic to a designated next hop instead of going directly to the Internet. For example, you may have an on-premises edge firewall or other network virtual appliance (NVA) to process network traffic before it is passed to the Internet.
  -  **Web categories (preview)** \- Web categories let administrators allow or deny user access to web site categories such as gambling websites, social media websites, and others. Web categories are included in Azure Firewall Standard, but it is more fine-tuned in Azure Firewall Premium Preview. As opposed to the Web categories capability in the Standard SKU that matches the category based on an FQDN, the Premium SKU matches the category according to the entire URL for both HTTP and HTTPS traffic.
  -  **Certifications** \- Azure Firewall is Payment Card Industry (PCI), Service Organization Controls (SOC), International Organization for Standardization (ISO), and ICSA Labs compliant.
