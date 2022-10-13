@@ -6,7 +6,7 @@ So how do you know which coding tool is right for you? It depends on what your n
 
 Suppose you're building a website for a restaurant in your hometown. You know that you'll need to create the pages using HTML, CSS, and JavaScript. In addition, you'd like to be able to debug your code and view your site locally on your computer as you're testing. You also want to incorporate a version control system to manage changes to your webpages.
 
-In addition, suppose the restaurant needs to create an inventory management system in C++ that can be used by employees from desktops in the kitchen and back office. You want to make sure that your IDE supports C++ syntax, libraries, compilers, and debuggers.
+In addition, suppose the restaurant needs to create an inventory management system in C++ that can be used by employees from desktops in the kitchen and back office. You want to make sure that your code editor supports C++ syntax, libraries, compilers, and debuggers.
 
 Furthermore, suppose the restaurant's chef has asked if you can help them with data analytics. The chef would like you to examine trends in sales of pizza when the local sports clubs win matches or games. You're comfortable using Python and Jupyter notebooks for your data science work and want a code editor that supports that language and tool.
 
