@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.resources.identify-machines-with-high-cpu
+uid: learn.analyze-logs-with-kql.identify-machines-with-high-cpu
 title: Exercise - Identify machines with high CPU usage
 metadata:
   unitType: exercise

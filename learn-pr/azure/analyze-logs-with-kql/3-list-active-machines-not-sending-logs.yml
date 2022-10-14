@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.resources.list-active-machines-not-sending-logs
+uid: learn.analyze-logs-with-kql.list-active-machines-not-sending-logs
 title: Exercise - List recently active virtual machines that stopped sending logs
 metadata:
   unitType: exercise

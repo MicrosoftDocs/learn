@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.resources.summarize-free-space-by-computer
+uid: learn.analyze-logs-with-kql.summarize-free-space-by-computer
 title: Exercise - Summarize free space statistics by computer
 metadata:
   unitType: exercise
