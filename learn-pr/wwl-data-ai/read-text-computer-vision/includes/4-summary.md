@@ -6,7 +6,7 @@ You can find out more about reading text with the Computer Vision service in the
 
 It's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. 
 
-If you are continuing on to other modules in this learning path you can keep your resources for use in other labs.
+If you're continuing on to other modules in this learning path, you can keep your resources for use in other labs.
 
 If you have finished learning, you can delete the resource group or individual resources from your Azure subscription:
 
