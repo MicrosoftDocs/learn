@@ -2,13 +2,22 @@ In this exercise, you'll migrate a PostgreSQL database to Azure. You'll migrate 
 
 You work as a database developer for the AdventureWorks organization. AdventureWorks has been selling bicycles and bicycle parts directly to end-consumer and distributors for over a decade. Their systems store information in a database that currently runs using PostgreSQL on an Azure VM. As part of a hardware rationalization exercise, AdventureWorks want to move the database to an Azure managed database. You have been asked to perform this migration.
 
+> [!IMPORTANT]
+> Azure Data Migration Service isn't supported in the free Azure sandbox environment. You can perform these steps in your own personal subscription, or just follow along to understand how to migrate your database.
+
 ### Setup the environment
 
 Run these Azure CLI commands in the Cloud Shell to create a virtual machine, running PostgreSQL, with a copy of the adventureworks database. The last commands will print the IP address of the new virtual machine.
 
 ```azurecli
+az account list-locations -o table
+
+az group create \
+    --name migrate-postgresql \
+    --location <CHOOSE A LOCATION FROM ABOVE NEAR YOU>
+
 az vm create \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-postgresql \
     --name postgresqlvm \
     --admin-username azureuser \
     --admin-password Pa55w.rdDemo \
@@ -19,7 +28,7 @@ az vm create \
     --nsg ""
 
 az vm run-command invoke \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-postgresql \
     --name postgresqlvm \
     --command-id RunShellScript \
     --scripts "
@@ -49,13 +58,13 @@ PGPASSWORD=Pa55w.rd psql -h localhost -U azureuser adventureworks -E -q -f /home
 "
 
 az vm open-port \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-postgresql \
     --name postgresqlvm \
     --priority 200 \
     --port '22'
 
 az vm open-port \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-postgresql \
     --name postgresqlvm \
     --priority 300 \
     --port '5432'
@@ -63,7 +72,7 @@ az vm open-port \
 echo Setup Complete
 
 SQLIP="$(az vm list-ip-addresses \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --resource-group migrate-postgresql \
     --name postgresqlvm \
     --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
     --output tsv)"
@@ -73,22 +82,19 @@ echo $SQLIP
 
 These commands will take approximately 5 minutes to complete. You don't need to wait, you can continue with the steps below.
 
-## Create the Azure Database for PostgreSQL server
+## Create the Azure Database for PostgreSQL flexible server
 
 1. Using a web browser, open a new tab and navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true).
-1. Select **+ Create a resource**.
-1. In the **Search the Marketplace** box, type **Azure Database for PostgreSQL**, and press enter.
-1. On the **Azure Database for PostgreSQL** page, select **Create**.
-1. On the **Select Azure Database for PostgreSQL deployment option** page, in the **Single server** box, select **Create**.
-1. On the **Single server** page, enter the following details, and then select **Review + create**:
+1. In the search bar, type  **Azure Database for PostgreSQL flexible servers**.
+1. On the **Azure Database for PostgreSQL flexible servers** page, select **+ Create**.
+1. On the **Flexible server** page, enter the following details, and then select **Review + create**:
 
     | Property  | Value  |
     |---|---|
-    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource group | **migrate-postgresql** |
     | Server name | **adventureworks*nnn***, where *nnn* is a suffix of your choice to make the server name unique |
-    | Data source | **None** |
     | Location | Select your nearest location |
-    | Version | **10** |
+    | PostgreSQL version | **13** |
     | Compute + storage | Select **Configure server**, select the **Basic** pricing tier, and then select **OK** |
     | Admin username | **awadmin** |
     | Password | **Pa55w.rdDemo** |
@@ -104,10 +110,9 @@ These commands will take approximately 5 minutes to complete. You don't need to 
 1. At the Cloud Shell prompt, run the following command to create a new database in your Azure Database for PostgreSQL service. Replace *[nnn]* with the suffix you used when you created the Azure Database for PostgreSQL service. Replace *[resource group]* with the name of the resource group you specified for the service:
 
     ```bash
-    az postgres db create \
+    az postgres flexible-server create \
       --name azureadventureworks \
-      --server-name adventureworks[nnn] \
-      --resource-group <rgn>[sandbox resource group name]</rgn>
+      --resource-group migrate-postgresql
     ```
 
     If the database is created successfully, you should see a message similar to the following:
@@ -116,9 +121,8 @@ These commands will take approximately 5 minutes to complete. You don't need to 
     {
       "charset": "UTF8",
       "collation": "English_United States.1252",
-      "id": "/subscriptions/nnnnnnnnnnnnnnnnnnnnnn/resourceGroups/nnnnnnnn/providers/Microsoft.DBforPostgreSQL/servers/adventureworksnnn/databases/azureadventureworks",
       "name": "azureadventureworks",
-      "resourceGroup": "<rgn>[sandbox resource group name]</rgn>",
+      "resourceGroup": "migrate-postgresql",
       "type": "Microsoft.DBforPostgreSQL/servers/databases"
     }
     ```
@@ -131,7 +135,7 @@ You'll now connect to your existing PostgreSQL VM using the Cloud Shell to expor
 
     ```bash
     SQLIP="$(az vm list-ip-addresses \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --resource-group migrate-postgresql \
         --name postgresqlvm \
         --query "[].virtualMachine.network.publicIpAddresses[*].ipAddress" \
         --output tsv)"
@@ -255,7 +259,7 @@ You'll now connect to your existing PostgreSQL VM using the Cloud Shell to expor
 
     | Property  | Value  |
     |---|---|
-    | Select a resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Select a resource group | **migrate-postgresql** |
     | Service name | **adventureworks_migration_service** |
     | Location | Select your nearest location |
     | Service mode | **Azure** |
@@ -299,7 +303,7 @@ You'll now connect to your existing PostgreSQL VM using the Cloud Shell to expor
 1. On the **Select tables** page, select **Next: Configure migration settings\>\>**.
 1. On the **Configure migration settings** page, expand the **adventureworks** dropdown, expand the **Advanced online migration settings dropdown**, verify that **Maximum number of instances to load in parallel** is set to 5, and then select **Next: Summary\>\>**.
 1. On the **Summary** page, in the **Activity name** box type **AdventureWorks_Migration_Activity**, and then select **Start migration**.
-1. On the **AdventureWorks_Migration_Activity** page, select **Refresh** at 15 second intervals. You will see the status of the migration operation as it progresses. Wait until the **MIGRATION DETAILS** column changes to **Ready to cutover**.
+1. On the **AdventureWorks_Migration_Activity** page, select **Refresh** at 15 second intervals. You'll see the status of the migration operation as it progresses. Wait until the **MIGRATION DETAILS** column changes to **Ready to cutover**.
 1. Switch back to the Cloud Shell.
 1. Run the following command to recreate the foreign keys in the **azureadventureworks** database. You generated the **addkeys.sql** script earlier:
 
@@ -369,3 +373,14 @@ You'll now connect to your existing PostgreSQL VM using the Cloud Shell to expor
     Both queries should return 0 rows.
 
 1. Close the *psql* utility with the **\q** command.
+
+### Clean up the resources you've created
+
+> [!IMPORTANT]
+> If you've performed these steps in your own personal subscription, you can delete the resources individually or delete the resource group to delete the entire set of resources. Resources left running can cost you money.
+
+1. Using the Cloud Shell run this command to delete the resource group:
+
+```azurecli
+az group delete --name migrate-postgresql
+```
