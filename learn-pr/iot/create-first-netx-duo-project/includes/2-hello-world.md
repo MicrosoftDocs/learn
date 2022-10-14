@@ -2,7 +2,7 @@ Finally, you get to work on a simple Hello World project that will provide you w
 
 To get started, let’s look at the code in the Hello World project, and understand the purpose of each section. We'll investigate the code based on the general template. In this project, we won't have a section containing functions, but we'll in subsequent modules.
 
-## Section 1 — Includes and definitions
+## Section 1—Includes and definitions
 
 As you may recall from the NetX Duo general template, the first section comprises the include directives and the definitions.
 
@@ -81,7 +81,7 @@ ULONG                   error_counter;
 extern  VOID _nx_linux_network_driver(NX_IP_DRIVER*);
 ```
 
-## Section 2 — Main
+## Section 2—Main
 
 The second part of the general template is the **main**, which is often the same in most projects.
 
@@ -96,7 +96,7 @@ int main()
 
 Any code following `tx_kernel_enter()` is unreachable.
 
-## Section 3 — `tx_application_define`
+## Section 3—`tx_application_define`
 
 The `tx_application_define` is devoted to NetX Duo initialization, creating packet pools, IP instance creation, enabling ARP and ICMP, and displaying output information.
 

@@ -28,7 +28,7 @@ Our purpose here is to start with a simple project to illustrate the basic featu
 
 The objective of this project is to create a networking example where you can test the network by using the ping command. The word ping derives from Packet InterNet Groper, but the actual command name is ping. The purpose of the ping command is to determine the reachability of a device. In our case, we will send a ping request to `192.168.1.2`, which is a private IP address. The following image illustrates the operation of the Hello World project.
 
-![View Hello World Project.](../media/00-sequence-diagram-showing-ping-results.svg)
+![Diagram showing hello world project.](../media/00-sequence-diagram-showing-ping-results.svg)
 
 After we build and run the project, we enter a ping command on the terminal, and we will receive output that contains information about the status of the device that was pinged. Our approach here is to first study the project code and understand what must be done in order to set up this project. The next steps are to use Codespace, and then build and run your project. Finally, you enter the ping command to test the device. You will receive multiple outputs that contain statistical information about the device. Depress `Ctrl+C` to terminate the application.
 
