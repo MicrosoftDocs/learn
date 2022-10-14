@@ -199,7 +199,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
             app: contoso-website
         spec:
           containers:
-            - image: {{ .Values.image.registry }}/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}
+            - image: {{ .Values.image.registry }}.azurecr.io/{{ .Values.image.name }}:{{ default "latest" .Values.image.tag }}
               name: contoso-website
               resources:
                 requests:
