@@ -4,7 +4,7 @@ title: Exercise - Call a protected web API
 metadata:
   unitType: exercise
   title: Exercise - Call a protected web API
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Get an access token to call a protected web API using the Microsoft identity platform."
   ms.date: 06/14/2022
   author: Dickson-Mwendia
   ms.author: dmwendia

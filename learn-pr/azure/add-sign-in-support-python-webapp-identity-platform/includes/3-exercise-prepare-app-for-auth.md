@@ -1,13 +1,9 @@
-Now that you understand how the Microsoft identity platform works, you'll create a Python Flask web application and register it in the Azure portal. 
-
-In this exercise, you'll complete the following application-specific configurations on the Azure portal:
+In this exercise, you create the presentation layer of your Python Flask web application and complete the following application-specific configurations on the Azure portal:
 
 - Add a redirect URI
 - Configure client credentials
 - Add app roles to your application registration
 - Assign app roles to users and groups
-
-After configuring these application-specific settings, you'll update your Python Flask web app to use the app registration details.
 
 ## Create your Python Flask web application
 
@@ -22,10 +18,13 @@ Alternatively, you can build the Python Flask web app from scratch by following 
 
 ```md
 python-webapp/
-├── templates
-│   ├── authenticated
-│   ├── public
-│   ├── 
+├── templates/
+│     ├── authenticated/
+│     │     ├── admin.html
+│     │     ├── graph.html
+│     ├── public/
+│     │     ├── index.html
+│     ├── layout.html
 ├── app.py
 ├── default_settings.py
 │── requirements.txt
@@ -51,12 +50,14 @@ To make these dependencies available in your environment, run `pip install -r re
 
 #### Add application UI components
 
-Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three simple HTML templates for each of the routes that will be set up in the app.
+Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three HTML templates for each of the routes that will be set up in the app.
 
 For the general template, create an HTML file named *layout.html* in the templates folder and paste the contents below: 
 
 ```html
-# 📁 templates/layout.html
+
+<!-- Purpose: General template that's used across all pages. Other templates will inherit this design. --> 
+<!-- Path: <project-root>/templates/layout.html -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -83,7 +84,8 @@ For the general template, create an HTML file named *layout.html* in the templat
 Next, create a new folder in *templates* and name it *public*. Then add an *index.html* template to the *public* folder. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the *index.html* template.
 
 ```html
-# 📁 templates/public/index.html
+<!-- Purpose: Template rendered when any user, authenticated or not, accesses the app --> 
+<!-- Path: <project-root>/templates/authenticated/index.html -->
 
 {% extends "layout.html" %}
 {% block page_title %}Home{% endblock %}
@@ -99,12 +101,13 @@ Next, create a new folder in *templates* and name it *public*. Then add an *inde
 {% endblock %}
 ```
 
-Move into the *templates* folder, and create a new folder named *authenticated* where you'll add two templates that your app will render when users sign in.
+Move into the *templates* folder and create a new folder named *authenticated* where you'll add two templates that your app will render when users sign in.
 
 The first template, *graph.html*, will render when all users sign in. Paste the following contents into this template:
 
 ```html
-# 📁 templates/authenticated/graph.html
+<!-- Purpose: Template rendered when any user signs in. --> 
+<!-- Path: <project-root>/templates/authenticated/graph.html -->
 
 {% extends "layout.html" %}
 {% block page_title %}Graph Access{% endblock %}
@@ -140,7 +143,8 @@ The first template, *graph.html*, will render when all users sign in. Paste the 
 Navigate to the *authenticated* folder and add a second template named *admin.html*. Your app will render this template when users with an application-defined role sign in. In our insurance company web application scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the *admin.html* template:
 
 ```html
-# 📁 authenticated/admin.html
+<!-- Purpose: Template rendered when a user with an application-defined role signs in. --> 
+<!-- Path: <project-root>/templates/authenticated/admin.html -->
 
 {% extends "layout.html" %}
 {% block page_title %}Graph Access as Admin{% endblock %}
@@ -175,7 +179,7 @@ Navigate to the *authenticated* folder and add a second template named *admin.ht
 
 You're now done creating the presentation layer for your Flask web application. Your final *templates* folder should look like this:
 
-```md
+```text
 # 📁 templates
   ├── authenticated
   │     ├── admin.html
@@ -194,7 +198,7 @@ The Microsoft identity platform performs identity and access management (IAM) on
 1. Search for and select **Azure Active Directory**.
 1. On the left side bar, under **Manage**, select **App registrations**, then **New registration**. 
 1. Enter a **Name** for your application, for example *python-flask-webapp*. Users of your application might see the display name when they use the app, for example during sign-in. You can change the display name at any time.
-1. Under **Supported account types**, select **Accounts in this organizational directory only (Single tenant)**
+1. Under **Supported account types**, select **Accounts in any organizational directory(Any Azure AD directory Multitenant)**
 1. Ignore the **Redirect URI (optional)** for now. You'll configure it in the next section
 1. Select **Register** to complete the initial app registration.
 
@@ -252,32 +256,3 @@ After adding app roles to your application registration, you can assign users an
 1. In the **Add assignment** pane, you'll also choose a role to assign the selected users. In this case, the *admin role* is already selected by default. If you added several roles to the application, you'll have the option to choose the role you want.
 1. Select the **Assign button** to finish the assignment of users and groups to the app.
 1. Confirm that the users and groups you added appear in the **Users and groups** list.
-
-## Update the application to use your app registration details
-
-In *default_settings.py*, add the following code. 
-
-```Python
-
-from environs import Env
-
-env = Env()
-env.read_env()
-
-ENV = env.str("FLASK_ENV", default="production")
-DEBUG = True
-
-# For local development purposes
-SESSION_TYPE = "filesystem"
-
-# 'Application (client) ID' of app registration in Azure portal - this value is a GUID
-CLIENT_ID = "enter-your-client-id-here"
-
-# Client secret 'Value' (not its ID) from 'Client secrets' in app registration in Azure portal
-CLIENT_CREDENTIAL = "enter-your-client-secret-value-here"
-
-# 'Tenant ID' of your Azure AD instance - this is a GUID
-TENANT_ID = "enter-your-tenant-id-here"
-```
-
-After adding the code snippet above, update the client ID, tenant ID, and client secret values with the configuration properties from your application registration. The client id and tenant id values are listed in the **Overview** pane of your Azure portal app registration.

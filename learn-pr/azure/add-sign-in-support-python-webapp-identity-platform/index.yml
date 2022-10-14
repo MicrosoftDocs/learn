@@ -21,15 +21,15 @@ prerequisites: |
   - An understanding of basic Python Flask terminology and concepts like routing and view functions.
   - Familiarity with OAuth 2.0 and OpenID Connect (OIDC).
   - Knowledge of what the Microsoft identity platform is and how it works at the beginner level.
-    - [Visual Studio Code](https://code.visualstudio.com/) or another code editor.
-    - [Python 3.8+](https://www.python.org/downloads/release/python-380/)
+  - [Visual Studio Code](https://code.visualstudio.com/) or another code editor.
+  - [Python 3.8+](https://www.python.org/downloads/release/python-380/)
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - beginner
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
   - developer
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-- azure-active-directory
+  - azure-active-directory
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - cloud-computing
 units:

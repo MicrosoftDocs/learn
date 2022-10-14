@@ -7,7 +7,7 @@ Here, you'll learn how MSAL Python enables developers to acquire security tokens
 
 ## Why use MSAL Python?
 
-MSAL Python provides multiple benefits over directly using the OAuth libraries and coding against the protocol by yourself, including:
+MSAL Python provides several benefits over directly using OAuth 2.0 flows and coding against the protocol by yourself, including:
 
 - Handles the protocol implementation details, so you don't need to manually send HTTP requests to execute OAuth 2.0 flows.
 - Handles token expiration by caching and automatically refreshing tokens when they're about to expire.
@@ -20,12 +20,12 @@ MSAL Python provides multiple benefits over directly using the OAuth libraries a
 To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform. In this training module, we'll use the authorization code grant flow for sign-in. The recommended calling pattern in web apps using this flow is to:
 
 - Instantiate a client application. 
-- Acquire a token using the authorization code flow.
-- Using the token, call a protected web API and fetch user data.
+- Acquire an access token using the authorization code flow.
+- Using the access token, call a protected web API and fetch user data.
 
 The diagram below provides a high-level overview of the Microsoft identity platform implementation of the authorization code flow to sign in users and access a protected web API.
 
-:::image type="content" source="../media/4-auth-code-flow.png" border="false" alt-text="Web app sign in authentication flow":::
+:::image type="content" source="../media/4-auth-code-flow.png" border="true" alt-text="Web app sign in authentication flow":::
 
 As in the preceding diagram, the authorization code flow in MSAL Python consists of two main steps:
 

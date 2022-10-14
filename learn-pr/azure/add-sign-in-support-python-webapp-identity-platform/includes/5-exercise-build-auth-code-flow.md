@@ -1,31 +1,53 @@
-The sign-in flow in MSAL Python takes these high level steps: 
-
-:::image type="content" source="../media/5-webapp-authentication-flow.png" border="false" alt-text="Web app sign in authentication flow":::
-
 In this exercise, you'll add code to sign in users, grant them access to resources, and sign them out. Follow these steps to build your core application logic:
 
+- Update the web app to use the Azure portal app registration details
 - Set up the Flask application
 - Create the authorization code flow dictionary
 - Create app routes
 - Add code to sign users
 - Add code to sign out users
 
+## Update your web app with the Azure portal app registration details
+
+The first step is configuring your Python web app to use the app registration details from the Azure portal. To do this, add the following code to *default_settings.py*.
+
+```Python
+
+from environs import Env
+
+env = Env()
+env.read_env()
+
+ENV = env.str("FLASK_ENV", default="production")
+DEBUG = True
+
+# For local development purposes
+SESSION_TYPE = "filesystem"
+
+# 'Application (client) ID' of app registration in Azure portal - this value is a GUID
+CLIENT_ID = "enter-your-client-id-here"
+
+# Client secret 'Value' (not its ID) from 'Client secrets' in app registration in Azure portal
+# Read your client credential value from an environment variable
+CLIENT_CREDENTIAL = "pass-your-client-secret-value-here"
+
+# 'Tenant ID' of your Azure AD instance - this is a GUID
+TENANT_ID = "enter-your-tenant-id-here"
+```
+
+After adding the code snippet above, update the client ID, tenant ID, and client secret values with the configuration properties from your application registration. The client id and tenant id values are listed in the **Overview** pane of your Azure portal app registration. For enhanced security, do not hardcode your client credential in the source code. Instead, pass the credentials securely by reading them from an environment variable. 
+
 ## Set up the Flask application
 
-You're now ready to start writing your core application logic. The `app.py` file in your project directory will hold the code. 
+You're now ready to start writing your core application logic. The *app.py* file in your project directory will hold the code we add in the remaining part of this unit. 
 
-For your application to sign in Azure AD users, start by importing the authentication library into your application. Add the following code to `app.py` to import the MSAL Python:
+For your application to sign in Azure AD users, start by importing the authentication library into your application. You'll also import Flask modules that your application will use to handle render templates and session access. Add the snippet below to *app.py*:
 
 ```python
-# 📁 app.py
+
 # Import MSAL Python
 import msal
 from msal.authority import (AuthorityBuilder, AZURE_PUBLIC)
-```
-
-Next, import Flask modules that your application will use to handle render templates and session access by adding the snippet below to `app.py`:
-
-```python
 # Flask imports to handle render templates and session access
 from werkzeug.middleware.proxy_fix import ProxyFix
 from werkzeug.exceptions import Forbidden, Unauthorized
@@ -56,11 +78,13 @@ def create_app():
 
 In addition to the Flask-specific configurations, ` app.config.from_object("default_settings")` gets the client ID, client credential, and tenant ID that will be used with the MSAL client.
 
-The `Session(app)` object initializes a server side session that is used to coordinate the authorization code flow and store the "user" object containing the id token and all associated claims. It also stores two MSAL client caches - the token cache and the http cache. The token cache contains access and refresh tokens while the http cache contains highly cacheable content like responses associated with HTTP requests.
+In the snippet above, `Session(app)` initializes a server side session that is used to coordinate the authorization code flow and store the "user" object containing the id token and all associated claims. It also stores two MSAL client caches - the token cache and the http cache. The token cache contains access and refresh tokens while the http cache contains highly cacheable content like responses associated with HTTP requests.
 
-## Create the authorization code flow dictionary
+## Create the authorization code flow
 
-The web app we build in this training module uses the authorization code grant flow. This is the recommended flow for web apps as it is the most secure. Add the following code to *app.py* to build the auth code flow dictionary using the MSAL client. 
+The web app we build in this training module uses the authorization code grant flow. This is the recommended flow for web apps as it is the most secure. 
+
+The first step of building the authorization code flow is creating an MSAL client using the app registration values (client ID and tenant ID). You then use the MSAL client to build the authorization code flow dictionary. Add the snippet below to *app.py* to build the authorization code flow dictionary using the MSAL client. You also request users to consent to the `User.Read` scope that our application requires.
 
 ```python
 # Redirect unauthorized users through the auth code flow to sign in
@@ -105,8 +129,6 @@ def initiate_auth_code_flow(error):
 
 In the code snippet above, when a user attempts to navigate to a location in the application that raises an `Unauthorized` error, the error handler will redirect them through the authorization code flow where they can sign in. An alternative to this user flow would be presenting the user with a sign in page or link where they can manually initiate the authorization code flow.
 
-The first step of building the authorization code flow is creating an MSAL client using the app registration values (client ID and tenant ID). You then use the MSAL client to build the authorization code flow dictionary. In the snippet above, we also ask the user to consent to the scope `User.Read` that our application requires. 
-
 In the authorization code flow dictionary, we'll add an entry to store the post sign-in url where users are redirected after going through the authorization code flow.
 
 Next, add the authorization code flow initiation to the session and update the MSAL http response cache. You also redirect users to Azure AD, where they can perform the necessary authorization code flow actions. This could be logging in and consenting to the required permissions, if they haven't already. 
@@ -119,7 +141,7 @@ You can add several routes to your web application to grant or prevent access to
  - Route 2: Accessible by all authenticated users and doesn't require users to have any specific role assignments. This route will render the `authenticated/graph.html` template.
  - Route 3: Accessible by authenticated and authorized users with an application-defined, admin role assigned. This route will render the `authenticated/admin.html` template.
 
-To create route one that allows access for all users, authenticated or not, add the following code to `app.py`.
+To create route one that allows access for all users, authenticated or not, add the following code to *app.py*.
 
 ```python
 @app.get("/")
@@ -186,7 +208,7 @@ The other two routes that require a specific level of authentication and authori
 
 ## Sign in users
 
-To create a route that authenticates users without specific role assignments, add the following code to `app.py`.
+To create a route that authenticates users without specific role assignments, add the following code to *app.py*.
 
 ```Python
 @app.get("/graph")
@@ -247,7 +269,7 @@ def graph():
 
 In the code snippet above, we start by checking whether the session contains a user entry and that the id token is valid. If not, raise an unauthorized error to trigger the authorization code flow and redirect the user to sign in. 
 
-To create the `@app.get("/admin")` route that requires the user to have an application-defined, admin role assigned, update `app.py` with the following code.
+To create the `@app.get("/admin")` route that requires the user to have an application-defined, admin role assigned, update *app.py* with the following code.
 
 ```Python
 # This route requires prior authentication and authorization. 

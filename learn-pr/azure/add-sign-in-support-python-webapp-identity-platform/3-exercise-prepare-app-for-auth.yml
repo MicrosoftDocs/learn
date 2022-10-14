@@ -4,8 +4,8 @@ title: Exercise - Create, register and configure a Python web application in the
 metadata:
   unitType: exercise
   title: Exercise - Create and register a Python web application in the Azure portal
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 06/14/2022
+  description: "Learn how to create a Python web app and register it in the Azure portal."
+  ms.date: 10/14/2022
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial

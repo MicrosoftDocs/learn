@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 06/14/2022
+  description: "Test your knowledge of the Microsoft identity platform and how it simplifies authentication and authorization in  a Python web app."
+  ms.date: 10/14/2022
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial

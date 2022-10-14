@@ -20,7 +20,7 @@ When a user navigates to any of the routes that require authentication, their br
 
 :::image type="content" source="../media/6-consent-to-permissions-request.png" border="false" alt-text="consent to the app's request for permissions":::
 
-Some Azure AD tenants have disabled user consent, which requires admins to consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent
+In Azure AD tenants, an admin could also choose to disable user consent and instead, consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent
 
 ## Call the Microsoft Graph API
 
@@ -53,7 +53,7 @@ session["msal_http_response_cache"] = http_cache
 Now that you have a token, you can call a protected web API. The following snippet in `app.py` calls the Microsoft Graph API and renders a template with the requested data.
 
 ```python
-# Simple HTTP Get to graph showing the usage of the retrieved access token
+# HTTP Get request to graph showing the usage of the retrieved access token
 response = requests.get(
     "https://graph.microsoft.com/v1.0/me",
     headers={"Authorization": f"Bearer {result['access_token']}"},
@@ -67,7 +67,7 @@ return render_template("authenticated/graph.html",
 
 A call to the Microsoft Graph API is a simple HTTP Get that contains the access token in the authorization header. After consenting to the requested permissions and signing in, the app displays that you've successfully logged in using your Azure AD credentials. The controller makes a call to `Microsoft Graph's /me` API endpoint for your user and receives the following information. 
 
-:::image type="content" source="../media/6-call-microsoft-graph-api.png" border="false" alt-text="Call Microsoft Graph API":::
+:::image type="content" source="../media/6-call-microsoft-graph-api.png" border="true" alt-text="Call Microsoft Graph API":::
 
 If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this module, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial authorization code flow and performing on-demand, step-up authentication depending on your desired user experience. 
 
@@ -84,8 +84,8 @@ return render_template(
 
 Accessing the Microsoft Graph API with the admin role assigned returns the protected app page, as shown below.
 
-:::image type="content" source="../media/6-call-graph-admin-role.png" border="false" alt-text="Call Microsoft Graph API with defined role assignment":::
+:::image type="content" source="../media/6-call-graph-admin-role.png" border="true" alt-text="Call Microsoft Graph API with defined role assignment":::
 
 When a signed in user tries to navigate to a protected route without the required role assigned, Microsoft identity prevents them from accessing the content, as shown below.
 
-:::image type="content" source="../media/6-required-admin-role-missing.png" border="false" alt-text="required app-defined role missing":::
+:::image type="content" source="../media/6-required-admin-role-missing.png" border="true" alt-text="required app-defined role missing":::
