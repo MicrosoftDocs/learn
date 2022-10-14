@@ -2,7 +2,7 @@
 
 Sharing information over the Internet is a straightforward, but somewhat complex process. We use the layers of the TCP/IP model to perform the transmission of data over the Internet. In order to provide you with an overview of this process, consider the following simplified diagram of the TCP/IP model. In this diagram, we have three routers that analyze and forward the data packets until they reach their destination.
 
-![TCP/IP Model](../media/1-tcp-ip-workflow-diagram-complete.png)
+![The TCP/IP Model.](../media/1-tcp-ip-workflow-diagram-complete.png)
 
 There are three main steps illustrated in this diagram. In Step 1, the amount of data to be sent may be quite large so it is divided into numbered fixed-size pieces called data packets. Each data packet contains its order number, the destination address, and other data. In Step 2, the data packets are sent using Internet protocol. The data packets may take different paths and may not be in any order as they are sent. In Step 3, the data packets are reassembled into one data file according to their numbering sequence. The receiver acknowledges the receipt of the data packets, and if any are missing, it requests that they be re-sent.
 
@@ -33,13 +33,13 @@ For a complete list of packet management services in the NetX Duo User Guide, cl
 
 The following image illustrates the structure of one packet header and packet payload. Note that the packet header is placed in front of the packet payload.
 
-![Packet Structure](../media/2-packet-pool-structure.png)
+![A packet structure.](../media/2-packet-pool-structure.png)
 
 ## General Template
 
 We’ll study the Hello World project in the next module, but first we need to introduce you to several important concepts that will be used. Following is a general template that illustrates the basic components of a NetX Duo project.
 
-![Project Structure](../media/3-netx-general-templatee.png)
+![The project structure.](../media/3-netx-general-template.png)
 
 Each NetX Duo project will have this basic structure, regardless of its size or complexity. We’ll discuss each of these features so that our discussion of the Hello World project will be meaningful.
 

@@ -1,5 +1,3 @@
-# Overview
-
 We discussed several important terms and concepts in this module, as they're related to NetX. Following are brief definitions of some key points.
 
 ## TCP/IP stack
