@@ -9,85 +9,40 @@ metadata:
   ms.author: michaelshan
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
-durationInMinutes: 5
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in a Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
-###
-###########################################################################
+durationInMinutes: 4
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "In which of the following situations should Azure Private 5G Core be used?"
     choices:
-    - content: ""
+    - content: "Artificial intelligence support in IoT devices."
+      isCorrect: false
+      explanation: "Try again. Azure Private 5G Core doesn't provide artificial intelligence functionalities for IoT devices."
+    - content: "Mobility and connectivity for disaster recovery operatives."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. To recover from disaster and respond to possible emergencies, recovery operatives typically require local mobile network connectivity and fast local data processing, which are functionalities that Azure Private 5G Core provide."
+    - content: "Virtual machine provisioning in private networks."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile networks but cannot use it to provision virtual machines in the network."
+  - content: "Which of the following feature does Azure Private 5G Core provide?"
     choices:
-    - content: ""
+    - content: "Docker-compatible containers to run business logic."
+      isCorrect: false
+      explanation: "Try again. Azure Private 5G Core can work together with applications that run business logic but doesn't provide containers for running business logic itself."
+    - content: "4G network functions"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. In addition to 5G network functions, Azure Private 5G Core provides 4G network functions such as Mobile management entity (MME)."
+    - content: "Threat protection for IoT devices."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile network that hosts IoT devices. However, Azure Private 5G Core doesn't provide threat protection for each IoT device."
+  - content: "How does Azure Private 5G Core provide integration with Azure private multi-access edge compute (MEC) partners?"
     choices:
-    - content: ""
+    - content: "It exposes an N2 and N3 interface respectively for the 5G control plane and user plane."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure Private 5G Core complies with 3GPP technical specifications for the N2 and N3 interface, which allows it to be integrated with a wide range of RAN models."
+    - content: "It uses a fully managed event-routing service with a publish-subscribe model."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Try again. Azure Private 5G Core doesn't use any event-routing service for integration."
+    - content: "It shares data with other applications through a central database server."
       isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Try again. Azure Private 5G Core doesn't use any database server to share data."
