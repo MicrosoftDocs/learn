@@ -4,8 +4,8 @@ metadata:
   title: Microsoft Azure Well-Architected Framework - Reliability
   description: Learn how to recover from infrastructure and service failure, loss of data, and disasters by incorporating reliability into your architecture.
   ms.date: 10/13/2022
-  author: robbyatmicrosoft
-  ms.author: robbymillsap
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Microsoft Azure Well-Architected Framework - Reliability
