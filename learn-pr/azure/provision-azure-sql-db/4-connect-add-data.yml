@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Connect to your database and add sample data
   description: Connect to your database and add sample data
   ms.date: 09/24/2018
-  author: rmcmurray
-  ms.author: robmcm
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
