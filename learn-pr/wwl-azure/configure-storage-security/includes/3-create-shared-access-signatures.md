@@ -1,4 +1,4 @@
-A shared access signature (SAS) is a uniform resource identifier (URI) URI that grants restricted access rights to Azure Storage resources. SAS is a secure way to share your storage resources without compromising your account keys.
+A shared access signature (SAS) is a uniform resource identifier (URI) that grants restricted access rights to Azure Storage resources. SAS is a secure way to share your storage resources without compromising your account keys.
 
 You can provide a SAS to clients who shouldn't have access to your storage account key. By distributing a SAS URI to these clients, you grant them access to a resource for a specified period of time. 
 
@@ -8,7 +8,7 @@ Let's review some characteristics of a SAS.
 
 - A SAS gives you granular control over the type of access you grant to clients who have the SAS. 
 
-- An account-level SAS can delegate access to multiple storage services, such as blobs, files, queues, and tables.
+- An account-level SAS can delegate access to multiple Azure Storage services, such as blobs, files, queues, and tables.
 
 - You can specify the time interval for which a SAS is valid, including the start time and the expiration time.
 

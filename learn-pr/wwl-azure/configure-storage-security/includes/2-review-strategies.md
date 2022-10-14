@@ -4,7 +4,7 @@ Administrators use different strategies to ensure their data is secure. Common a
 
 Let's look at some characteristics of Azure Storage security.
 
-- **Encryption**. All data written to Azure Storage is automatically encrypted by using Storage Service Encryption (SSE).
+- **Encryption**. All data written to Azure Storage is automatically encrypted by using Azure Storage encryption.
 
 - **Authentication**. Azure Active Directory (Azure AD) and role-based access control (RBAC) are supported for Azure Storage for both resource management operations and data operations.
     - Assign RBAC roles scoped to an Azure storage account to security principals, and use Azure AD to authorize resource management operations like key management.

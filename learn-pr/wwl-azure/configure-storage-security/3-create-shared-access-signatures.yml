@@ -3,7 +3,7 @@ uid: learn.wwl.configure-storage-security.create-shared-access-signatures
 title: Create shared access signatures
 metadata:
   title: Create shared access signatures
-  description: "Create shared access signatures"
+  description: "Create a shared access signature (SAS)."
   ms.date: 10/18/2022
   author: wwlpublish
   ms.author: cynthist

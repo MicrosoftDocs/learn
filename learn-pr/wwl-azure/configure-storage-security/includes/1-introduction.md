@@ -7,7 +7,7 @@ In this module, your company is storing sensitive data in Azure Storage, includi
 In this module, you learn how to:
 
 - Configure a shared access signature, including the uniform resource identifier (URI) and SAS parameters.
-- Configure Azure Storage service encryption.
+- Configure Azure Storage encryption.
 - Implement customer-managed keys.
 - Recommend opportunities to improve Azure Storage security.
 
