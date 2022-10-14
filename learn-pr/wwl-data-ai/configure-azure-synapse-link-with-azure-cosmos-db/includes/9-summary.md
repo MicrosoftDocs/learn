@@ -6,9 +6,9 @@ HTAP integration between Azure Cosmos DB and Azure Synapse Analytics enables a r
 
 In this module, you learned how to:
 
-- Configure a Cosmos DB Account to use Azure Synapse Link.
+- Configure an Azure Cosmos DB Account to use Azure Synapse Link.
 - Create an analytical store enabled container.
-- Create a linked service for Cosmos DB.
+- Create a linked service for Azure Cosmos DB.
 - Analyze linked data using Spark.
 - Analyze linked data using Synapse SQL.
 
