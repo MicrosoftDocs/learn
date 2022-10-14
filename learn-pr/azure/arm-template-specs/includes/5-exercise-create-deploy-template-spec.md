@@ -2,7 +2,7 @@
 
 At your toy company, your team has worked with Azure for a while now, and you've created lots of templates that you use on a daily basis. You decide to take one template and create a template spec. You're starting with the template that you use to create Azure Cosmos DB accounts.
 
-Your team has decided that continuous backup needs to be configured on all of your Azure Cosmos DB accounts. So you want to include this in the default configuration of Azure Cosmos DB accounts that are provisioned through the template spec.
+Your team has decided that continuous backup needs to be configured on all of your Azure Cosmos DB accounts. So you want to include backups in the default configuration of Azure Cosmos DB accounts that are provisioned through the template spec.
 
 In this exercise, you publish the Azure Cosmos DB template as a template spec.
 
@@ -68,7 +68,7 @@ You start with one of the templates that your team has already created. The temp
 
 ## Make the parameters easier to understand
 
-When you work with template specs, it's important to consider how others will use your template. This is especially important for parameters, because they're the main way that other people will interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be used, so you add this information here.
+When you work with template specs, it's important to consider how others will use your template. This review is especially important for parameters, because they're the main way that other people will interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be used, so you add this information here.
 
 ::: zone pivot="bicepcli,biceppowershell"
 
