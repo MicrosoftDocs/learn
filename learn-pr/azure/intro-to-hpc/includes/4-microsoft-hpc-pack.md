@@ -130,4 +130,4 @@ For full details on Azure Batch, additional capabilities, and how it works, see 
 
 Azure CycleCloud is an enterprise-friendly tool for orchestrating and managing High Performance Computing (HPC) environments on Azure. With CycleCloud, users can plan infrastructure for HPC systems, deploy familiar HPC schedulers, and automatically scale the infrastructure to run jobs efficiently at any scale. Through CycleCloud, users can create different types of file systems and mount them to the compute cluster nodes to support HPC workloads.
 
-For more information on Azure CycleCloud, see [Azure CycleCloud](https://docs.microsoft.com/azure/cyclecloud/)
+For more information on Azure CycleCloud, see [Azure CycleCloud](/azure/cyclecloud).
