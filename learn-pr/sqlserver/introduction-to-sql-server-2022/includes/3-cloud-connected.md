@@ -46,6 +46,24 @@ You can learn more about the Link feature for Azure SQL Managed Instance at http
 
 ## Near real-time analytics with Synapse Link for SQL Server
 
+Synapse link for SQL Server allows you to offload read workloads in Azure Synapse for near real-time analytics.
+
+## The challenge
+
+Azure Synapse has become a very popular service for analytics for data of all types. In addition, many customers are looking to offload their read intensive applications from their primary SQL Server to ensure the primary application has plenty of resources. In order to use Azure Synapse for this purpose you typically have to build Extract Transform Load (ETL) applications or scrips to copy data out of SQL Server to synchronize into Synapse. This method can introduce challenges because the data is often out of date in Synapse and it can be costly to build and maintain ETL applications.
+
+## The solution
+
+Synapse Link for SQL Server provides a seamless and tight integration between SQL Server 2022 and Synapse. You can now define a **linked service** for SQL Server in Synapse to setup a connection to SQL Server 2022 including the setup of the Self-hosted Integration Runtime (SHIR) on the network to discover and connect to SQL Server 2022. In addition, you can setup a linked service with an Azure Storage account called the **Landing Zone**.
+
+You can then use Synapse through Synapse Studio or PowerShell to create a **linked connection** using the linked services. This linked connection defines which tables you want to keep synchronized from SQL Server 2022 to Synapse and a **SQL dedicated pool** which will be the target of the data.
+
+When you start the linked connection, Synapse will coordinate with SHIR to start a synchronization with SQL Server using the specified tables to copy parquet files into the Landing Zone. Synapse will ingest the parquet files from the Landing Zone to create new tables in a SQL dedicated pool with a snapshot of SQL Server table data.
+
+Now when committed transactions are made in SQL Server 2022 for affected tables, the SQL Server engine will capture changes automatically with a process called **change feed** and place files in the Landing Zone to reflect incremental changes. Synapse will pick up these files and make the necessary changes in near real-time to tables in the SQL dedicated pool.
+
+You can now use the power of Synapse with PowerBI, Spark, or other analytics to read SQL Server 2022 data in near real-time offloaded from the primary SQL Server database.
+
 ## Central governance with Microsoft Purview
 
 ## Central authentication using Azure Active Directory
