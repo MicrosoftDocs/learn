@@ -6,6 +6,7 @@ metadata:
   ms.date: 07/11/2022
   author: rwestMSFT
   ms.author: randolphwest
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate your relational data stored in SQL Server to Azure SQL Database

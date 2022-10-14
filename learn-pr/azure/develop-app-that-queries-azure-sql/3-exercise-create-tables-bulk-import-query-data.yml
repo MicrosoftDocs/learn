@@ -4,8 +4,9 @@ metadata:
   title: Exercise - Create tables, bulk import, and query data
   description: Create tables, bulk import, and query data
   ms.date: 06/28/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: WilliamDAssafMSFT
+  ms.author: wiassaf
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Create tables, bulk import, and query data
