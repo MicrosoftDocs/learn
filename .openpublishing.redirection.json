@@ -17839,6 +17839,21 @@
       "source_path": "learn-pr/wwl-azure/understand-client-server-communication-postgresql/4-exercise-explore-pgadmin.md",
       "redirect_url": "/training/modules/understand-client-server-communication-postgresql/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-on-premises-postgresql-databases/4a-exercise-migrate-postgresql-azure-database.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-on-premises-postgresql-databases/5-exercise-migrate-postgresql-azure-database",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-on-premises-postgresql-databases/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-on-premises-postgresql-databases/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-on-premises-postgresql-databases/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-on-premises-postgresql-databases/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
