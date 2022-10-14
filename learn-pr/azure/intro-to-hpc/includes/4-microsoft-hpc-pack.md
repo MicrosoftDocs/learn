@@ -124,7 +124,7 @@ There are two basic strategies that schedulers can use to determine which job to
 
 Use Azure Batch to run large-scale parallel and high-performance computing (HPC) batch jobs efficiently in Azure. Azure Batch creates and manages a pool of compute nodes (virtual machines), installs the applications you want to run, and schedules jobs to run on the nodes. There's no cluster or job scheduler software to install, manage, or scale. Instead, you use Batch APIs and tools, command-line scripts, or the Azure portal to configure, manage, and monitor your jobs.
 
-For full details on Azure Batch, additional capabilities, and how it works, see [Azure Batch](https://docs.microsoft.com/azure/batch/)
+For full details on Azure Batch, additional capabilities, and how it works, see [Azure Batch](/azure/batch).
 
 ## Use Azure CycleCloud
 
