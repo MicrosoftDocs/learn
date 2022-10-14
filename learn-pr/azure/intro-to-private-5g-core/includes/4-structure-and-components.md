@@ -4,7 +4,7 @@ Intro
 
 The following diagram shows the key components of Azure Private 5G Core: 
 
-:::image type="content" source="media/azure-private-5g-core-components.png" alt-text="Diagram showing the components of Azure Private 5G Core" border="false":::
+:::image type="content" source="../media/azure-private-5g-core-components.png" alt-text="Diagram showing the components of Azure Private 5G Core" border="false":::
 
 Diagram showing the components of Azure Private 5G Core. They're split between cloud components and components provided on premises. The cloud components include Azure portal, ARM APIs, Azure Monitor, SIM Manager, Service Manager, and RAN Monitor. The on-premises components include Subscriber Database and Policy Control, 4G Interworking Function, 5G Core Control Plane, 5G User Plane, Arc-enabled Kubernetes, and Azure Stack Edge.
 

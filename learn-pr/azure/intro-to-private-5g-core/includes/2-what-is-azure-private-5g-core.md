@@ -2,7 +2,7 @@
 
 The following video introduces Azure Private 5G Core:
 
-![Azure Private 5G Core introduction](media/introduction-video.mp4)
+![Azure Private 5G Core introduction](../media/introduction-video.mp4)
 
 Azure Private 5G Core provides:
 

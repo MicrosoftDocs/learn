@@ -8,7 +8,7 @@ In this case, the company can use Azure Private 5G core to deploy a private mobi
 
 The following diagram illustrates an example configuration that the warehouse can use:
 
-:::image type="content" source="media/ap5gc-warehouse-example.png" alt-text="Warehouse IoT system":::
+:::image type="content" source="../media/ap5gc-warehouse-example.png" alt-text="Warehouse IoT system":::
 
 In this module, we will introduce Azure Private 5G Core and its role in private mobile network solutions. We will also take you through the key benefits and key features of the product. With the help of an introduction video and a knowledge check at the end of the module, you will have good understanding of Azure Private 5G Core and its role.
 
