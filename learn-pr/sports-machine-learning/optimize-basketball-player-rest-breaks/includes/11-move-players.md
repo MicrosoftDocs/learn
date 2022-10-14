@@ -1,14 +1,14 @@
 This web app won't be useful if the coach can't make a decision about which players should take a water break and which to put on the court. Now that the coach can see PER for each player for the first quarter, we want to help the coach visualize what the average PER for a starting lineup would be as they choose to move players between the court and the bench.
 
-## Write the functionality to move players 
+## Write the functionality to move players
 
-This unit fills in the `movePlayers()` function:
+This unit fills in the `movePlayer()` function:
 
 ```javascript
 // This function is called each time a player button is selected. A player
 // button being selected indicates that the player either is moving to the
 // court or moving to the bench for a water break.
-function movePlayers() {
+function movePlayer() {
 
 }
 ```
@@ -32,7 +32,7 @@ Now, we can use the HTML structure to figure out where the player currently isâ€
     if(parentDiv.id == 'playersOnBench') {
 ```
 
-In the `if` statement, we need to make one check before we do anything else: You can have only five players on the court at any one time, so we want to make sure the coach isn't trying to add additional players. In this case, we'll just alert the coach that adding more players right now isn't allowed, and not actually move the player.
+In the `if` statement, we need to make one check before we do anything else: You can have only five players on the court at any one time, so we want to make sure the coach isn't trying to add more players. In this case, we'll just alert the coach that adding more players right now isn't allowed, and not actually move the player.
 
 ```javascript
         // If there are already five players on the court, don't let the player
@@ -96,15 +96,15 @@ Next, we want to support the coach moving players from the bench back to the cou
     }
 ```
 
-## Review the final movePlayers code
+## Review the final movePlayer code
 
-The entire `movePlayers()` function should be like this code:
+The entire `movePlayer()` function should be like this code:
 
 ```javascript
 // This function is called each time a player button is selected. A player's
 // button being selected indicates that the player either moving to the
 // court or moving to the bench for a water break.
-function movePlayers() {
+function movePlayer() {
     // Don't let the coach change players during a quarter.
     if(quarterInPlay) {
         return;
