@@ -8,7 +8,7 @@ In this unit, you'll see how to create an instance of the Azure Database for Pos
 
 In the Azure portal, type **Azure Database for PostgreSQL flexible servers** in the search box, and select **Azure Database for PostgreSQL flexible servers**.
 
-[![Image showing the Azure Database for PostgreSQL flexible servers item in the Azure portal.](../media/3-azure-marketplace.png)](../media/3-azure-marketplace.png#lightbox)
+[![Screenshot showing the Azure Database for PostgreSQL flexible servers item in the Azure portal.](../media/3-azure-marketplace.png)](../media/3-azure-marketplace.png#lightbox)
 
 Select **Create** on the **Flexible server** main blade, enter the details for the service. These details include:
 
