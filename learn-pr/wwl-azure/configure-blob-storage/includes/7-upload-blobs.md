@@ -1,25 +1,34 @@
-A blob can be any type and size file. Azure Storage offers three types of blobs: *block* blobs, *page* blobs, and *append* blobs. You specify the blob type and access tier when you create the blob.
+A blob can be any type of data and any size file. Azure Storage offers three types of blobs: *block blob*, *page blob*, and *append blob*. You specify the blob type and Blob Storage access tier when you create the blob.
 
-:::image type="content" source="../media/upload-blobs-7ad73d30.png" alt-text="Screenshot of the Upload Blob page. The Advanced section with Authentication type, blob types, and block size.":::
+### Things to know about blob types
 
+Let's take a closer look at the characteristics of blob types. 
 
- -  **Block blobs (default)** consist of blocks of data assembled to make a blob. Most scenarios using Blob storage employ block blobs. Block blobs are ideal for storing text and binary data in the cloud, like files, images, and videos.
- -  **Append blobs** are like block blobs in that they are made up of blocks, but they are optimized for append operations, so they are useful for logging scenarios.
- -  **Page blobs** can be up to 8 TB in size and are more efficient for frequent read/write operations. Azure virtual machines use page blobs as OS and data disks.
+- **Block blobs**. A block blob consists of blocks of data that are assembled to make a blob. Most Blob Storage scenarios use block blobs. Block blobs are ideal for storing text and binary data in the cloud, like files, images, and videos.
 
-> [!NOTE]
-> Once the blob has been created, its type cannot be changed.
+- **Append blobs**. An append blob is similar to a block blob because the append blob also consists of blocks of data. The blocks of data in an append blob are optimized for _append_ operations. Append blobs are useful for logging scenarios, where the amount of data can increase as the logging operation continues.
 
-## Blob upload tools
+- **Page blobs**. A page blob can be up to 8 TB in size. Page blobs are more efficient for frequent read/write operations. Azure Virtual Machines uses page blobs for operating system disks and data disks.
 
-There are multiple methods to upload data to blob storage, including the following methods:
+- The block blob type is the default type for a new blob. When you're creating a new blob, if you don't choose a specific type, the new blob is created as a block blob.
 
- -  **AzCopy** is an easy-to-use command-line tool for Windows and Linux that copies data to and from Blob storage, across containers, or across storage accounts.
- -  The **Azure Storage Data Movement library** is a .NET library for moving data between Azure Storage services. The AzCopy utility is built with the Data Movement library.
- -  **Azure Data Factory** supports copying data to and from Blob storage by using the account key, shared access signature, service principal, or managed identities for Azure resources authentications.
- -  **Blobfuse** is a virtual file system driver for Azure Blob storage. You can use blobfuse to access your existing block blob data in your Storage account through the Linux file system.
- -  **Azure Data Box Disk** is a service for transferring on-premises data to Blob storage when large datasets or network constraints make uploading data over the wire unrealistic. You can use Azure Data Box Disk to request solid-state disks (SSDs) from Microsoft. You can then copy your data to those disks and ship them back to Microsoft to be uploaded into Blob storage.
- -  The **Azure Import/Export** service provides a way to export large amounts of data from your storage account to hard drives that you provide and that Microsoft then ships back to you with your data.
+- After you create a blob, you can't change its type.
 
-> [!NOTE]
-> And, you can always use Azure Storage Explorer.
+### Things to consider when using blob upload tools
+
+A common approach for uploading blobs to your Azure storage account is to use Azure Storage Explorer. Many other tools are also available. Review the following options and consider which tools would suit your configuration needs.
+
+| Upload tool | Description |
+| --- | --- |
+| **AzCopy** | An easy-to-use command-line tool for Windows and Linux. You can copy data to and from Blob Storage, across containers, and across storage accounts. |
+| **Azure Storage Data Movement library**| A .NET library for moving data between Azure Storage services. The AzCopy utility is built with the Data Movement library. |
+| **Azure Data Factory** | You can copy data to and from Blob Storage by using the account key, shared access signature, service principal, or managed identities for Azure resources authentications. |
+| **blobfuse** | A virtual file system driver for Azure Blob Storage. You can use blobfuse to access your existing block blob data in your storage account through the Linux file system. |
+| **Azure Data Box Disk** | A service for transferring on-premises data to Blob Storage when large datasets or network constraints make uploading data over the wire unrealistic. You can use Azure Data Box Disk to request solid-state disks (SSDs) from Microsoft. You can copy your data to those disks and ship them back to Microsoft to be uploaded into Blob Storage. |
+| **Azure Import/Export** | A service that helps you export large amounts of data from your storage account to hard drives that you provide and that Microsoft then ships back to you with your data. |
+
+#### Business scenario
+
+The following example shows how to upload blob data in Azure Storage Explorer. After you identify the files to upload, you choose the blob type and block size, and the container folder. You also set the authentication method and encryption scope.
+
+:::image type="content" source="../media/upload-blobs-7ad73d30.png" alt-text="Screenshot of the Upload Blob page that shows the Authentication type, blob types, and block size.":::
