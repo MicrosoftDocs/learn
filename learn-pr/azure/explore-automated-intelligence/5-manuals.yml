@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore.explore-automated-intelligence.manuals
+title: Ensure your bot is reliable
+metadata:
+  title: Ensure your bot is reliable
+  description: This unit discusses some key principles to ensuring your bot is reliable.
+  ms.date: 10/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-ensure-bot-reliability.md)] 

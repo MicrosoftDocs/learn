@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore.explore-automated-intelligence.math
+title: Examine risks introduced by AI
+metadata:
+  title: Examine risks introduced by AI
+  description: We review some things to keep in mind when introducing AI to conversational bots.
+  ms.date: 10/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-responsibility-imperatives.md)] 

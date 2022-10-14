@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.explore.explore-automated-intelligence.menus
+title: Build trust through transparency
+metadata:
+  title: Build trust through transparency
+  description: Gaining and maintaining your users' trust is important to building a successful and responsible conversational AI solution.
+  ms.date: 10/14/2022
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-transparent-trustworthy-bots.md)] 
