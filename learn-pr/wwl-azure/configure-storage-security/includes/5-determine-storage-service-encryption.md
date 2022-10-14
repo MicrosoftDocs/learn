@@ -18,4 +18,4 @@ Examine the following characteristics of Azure Storage encryption.
 
 In the Azure portal, you configure Azure Storage encryption by specifying how to manage the encryption keys. You can manage the keys yourself, or you can have the keys managed by Microsoft. Consider how you might implement Azure Storage encryption for your storage security.
 
-:::image type="content" source="../media/secure-encryption-e3b68445.png" alt-text="Screenshot that shows Azure Storage encryption, including keys managed by Microsoft and customer-managed keys.":::
+:::image type="content" source="../media/secure-encryption-e3b68445.png" alt-text="Screenshot that shows Azure Storage encryption, including keys managed by Microsoft and customer-managed keys." border="false":::
