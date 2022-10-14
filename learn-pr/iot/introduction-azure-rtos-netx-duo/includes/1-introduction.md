@@ -12,7 +12,7 @@ In this module, you will:
 
 ## Prerequisites
 
-- Completion of the [Azure RTOS ThreadX learning path](https://learn.microsoft.com/learn/paths/azure-rtos-threadx/).
+- Completion of the [Azure RTOS ThreadX learning path](/learn/paths/azure-rtos-threadx/).
 - Set up your [GitHub Codespaces](https://github.com/features/codespaces) development environment for your projects in this learning path.
 - Working knowledge of C or C++, and GitHub
 
@@ -68,4 +68,4 @@ The link level is handled by the network driver. This level is typically targete
 
 ## Reference documentation for NetX Duo
 
-We cover the basics of NetX in this learning path, but detailed information about NetX protocols and services can be found in the [NetX Duo user guide](https://learn.microsoft.com/azure/rtos/netx-duo/).
+We cover the basics of NetX in this learning path, but detailed information about NetX protocols and services can be found in the [NetX Duo user guide](/azure/rtos/netx-duo/).

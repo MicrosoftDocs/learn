@@ -29,7 +29,7 @@ A packet pool is created with the `nx_packet_pool_create(…)` service. The foll
 If **N = number** of packets desired, then
 total size of packet pool memory = **N \* (PAYLOAD_SIZE + sizeof(NX_PACKET))**
 
-For a complete list of packet management services in the NetX Duo User Guide, click on the following link: https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#packet-management
+For a complete list of packet management services in the NetX Duo User Guide, click on the following link: [https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#packet-management](/azure/rtos/netx-duo/appendix-a#packet-management)
 
 The following image illustrates the structure of one packet header and packet payload. Note that the packet header is placed in front of the packet payload.
 
@@ -63,7 +63,7 @@ The IP instance is created with the` nx_ip_create()` service. Following is an il
 | `stack_size`        | Helper thread stack size                |
 | `priority`          | Helper thread priority                  |
 
-For a complete list of Internet Protocol services in the NetX Duo User Guide, click on the following link: https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#internet-protocol-ip
+For a complete list of Internet Protocol services in the NetX Duo User Guide, click on the following link: [https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#internet-protocol-ip](/azure/rtos/netx-duo/appendix-a#internet-protocol-ip)
 
 Each IP instance needs a helper thread that must also be created. You’ll notice that several parameters of this service define several aspects of the helper thread, such as the thread stack and priority.
 
@@ -81,7 +81,7 @@ Following is a table showing the parameters of the `nx_arp_enable` service.
 | `arp_cache_memory` | Pointer to memory area to place ARP cache                                                                          |
 | `arp_cache_size`   | Each ARP entry is approximately 52 bytes, so the total number of ARP entries is, therefore, the size divided by 52 |
 
-For a complete list of ARP services in the NetX Duo User Guide, click on the following link: https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#address-resolution-protocol-arp
+For a complete list of ARP services in the NetX Duo User Guide, click on the following link: [https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#address-resolution-protocol-arp](/azure/rtos/netx-duo/appendix-a#address-resolution-protocol-arp)
 
 ### Internet Control Message Protocol (ICMP)
 
@@ -89,7 +89,7 @@ We will use the Internet Control Message Protocol for IPv4 (ICMPv4) in this modu
 
 Before ICMPv4 messages can be processed by NetX Duo, the application must call the `nx_icmp_enable` service to enable ICMPv4 processing. After this is done, the application can send ping requests and receive incoming ping packets.
 
-For a complete list of ICMP services in the NetX Duo User Guide, click on the following link: https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#internet-control-message-protocol-icmp
+For a complete list of ICMP services in the NetX Duo User Guide, click on the following link: [https://learn.microsoft.com/azure/rtos/netx-duo/appendix-a#internet-control-message-protocol-icmp](/azure/rtos/netx-duo/appendix-a#internet-control-message-protocol-icmp)
 
 ### Ping Request
 
