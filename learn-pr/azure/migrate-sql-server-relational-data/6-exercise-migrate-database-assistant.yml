@@ -6,6 +6,7 @@ metadata:
   ms.date: 02/21/2020
   author: rwestMSFT
   ms.author: randolphwest
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Migrate a database schema by using Data Migration Assistant
