@@ -62,7 +62,7 @@ CosmosClientOptions options = new ()
 
 ### Changing the current consistency level
 
-Every Azure Cosmos DB SQL API account has a default consistency level configured. Individual clients can configure a different consistency level for all read requests made with the client. This example illustrates a client configured to use **eventual** consistency.
+Every Azure Cosmos DB for NoSQL account has a default consistency level configured. Individual clients can configure a different consistency level for all read requests made with the client. This example illustrates a client configured to use **eventual** consistency.
 
 ```csharp
 CosmosClientOptions options = new ()
