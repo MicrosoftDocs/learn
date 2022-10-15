@@ -1,4 +1,4 @@
-A basic SQL query in Azure Cosmos DB SQL API would be similar to the same query in any other database platform; it would be composed of a few essential components:
+A basic SQL query in Azure Cosmos DB for NoSQL would be similar to the same query in any other database platform; it would be composed of a few essential components:
 
 - The ``SELECT`` keyword
 - Either an asterisk to indicate all possible fields or an inclusive list of fields
