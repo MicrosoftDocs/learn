@@ -60,7 +60,7 @@ An Azure Active Directory identity will be needed to grant the Azure Cosmos DB S
     1. In **Key permissions**, select **Get**, **List**, **Unwrap Key**, **Wrap Key**, **Verify, and **Sign**.
     1. In **Select principal**, search for the Azure AD application you've created before.
 
-[/azure/active-directory/develop/quickstart-register-app]: /azure/active-directory/develop/quickstart-register-app
+[/azure/active-directory/develop/quickstart-register-app]: https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app
 
 ### Initialize the SDK
 
