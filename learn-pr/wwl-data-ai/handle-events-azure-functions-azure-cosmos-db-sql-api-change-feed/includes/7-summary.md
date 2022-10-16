@@ -8,5 +8,8 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Azure Cosmos DB trigger and bindings for Azure Functions overview](/azure/azure-functions/functions-bindings-cosmosdb-v2)
-- [Azure Cosmos DB trigger for Azure Functions](/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger)
+- [Azure Cosmos DB trigger and bindings for Azure Functions overview][docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2]
+- [Azure Cosmos DB trigger for Azure Functions][docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger]
+
+[docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2]: https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2
+[docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger]: https://docs.microsoft.com/azure/azure-functions/functions-bindings-cosmosdb-v2-trigger?tabs=csharp-script
