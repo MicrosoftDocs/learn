@@ -6,6 +6,8 @@ The strengths of Automated methods will complement Autonomous Intelligence techn
 
 Note: To learn about Autonomous Intelligence technologies, their strengths and weaknesses, review Module 2 – Introduction to Autonomous Intelligence.
 
+The table image summarizes the limitations of automated intelligence methods and explain when to use them. 
+
 |                                       | **What is it?**                                              | **When should you use it?**                                  | **What are the limitations?**                                |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Control Theory**                    | Uses math to calculate what to do next                       | •	When you need reliable, predictable control of processes that you can measure well. <br/>• When you understand the system dynamics well and can express them in mathematical terms. | •	It won't work when you can't model the system well with math.<br/>	•	It won't work when there are nonlinear relationships between the variables.<br/>• Will not change its behavior unless human experts retune the constants. |
