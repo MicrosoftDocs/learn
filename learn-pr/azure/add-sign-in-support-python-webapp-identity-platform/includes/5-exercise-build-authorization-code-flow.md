@@ -35,7 +35,7 @@ CLIENT_CREDENTIAL = "pass-your-client-secret-value-here"
 TENANT_ID = "enter-your-tenant-id-here"
 ```
 
-After adding the code snippet above, update the client ID, tenant ID, and client secret values with the configuration properties from your application registration. The client id and tenant id values are listed in the **Overview** pane of your Azure portal app registration. For enhanced security, do not hardcode your client credential in the source code. Instead, pass the credentials securely by reading them from an environment variable. 
+After adding the code snippet above, update the client ID, tenant ID, and client secret values with the configuration properties from your application registration. The client ID and tenant ID values are listed in the **Overview** pane of your Azure portal app registration. For enhanced security, don't hardcode your client credential in the source code. Instead, pass the credentials securely by reading them from an environment variable. 
 
 ## Set up the Flask application
 
@@ -78,7 +78,7 @@ def create_app():
 
 In addition to the Flask-specific configurations, ` app.config.from_object("default_settings")` gets the client ID, client credential, and tenant ID that will be used with the MSAL client.
 
-In the snippet above, `Session(app)` initializes a server side session that is used to coordinate the authorization code flow and store the "user" object containing the id token and all associated claims. It also stores two MSAL client caches - the token cache and the http cache. The token cache contains access and refresh tokens while the http cache contains highly cacheable content like responses associated with HTTP requests.
+In the snippet above, `Session(app)` initializes a server side session that is used to coordinate the authorization code flow and store the "user" object containing the ID token and all associated claims. It also stores two MSAL client caches - the token cache and the http cache. The token cache contains access and refresh tokens while the http cache contains highly cacheable content like responses associated with HTTP requests.
 
 ## Create the authorization code flow
 
@@ -127,7 +127,7 @@ def initiate_auth_code_flow(error):
     return redirect(session["auth_code_flow"]["auth_uri"])
 ```
 
-In the code snippet above, when a user attempts to navigate to a location in the application that raises an `Unauthorized` error, the error handler will redirect them through the authorization code flow where they can sign in. An alternative to this user flow would be presenting the user with a sign in page or link where they can manually initiate the authorization code flow.
+In the code snippet above, when a user attempts to navigate to a location in the application that raises an `Unauthorized` error, the error handler will redirect them through the authorization code flow where they can sign in. An alternative to this user flow would be presenting the user with a sign-in page or link where they can manually initiate the authorization code flow.
 
 In the authorization code flow dictionary, we'll add an entry to store the post sign-in url where users are redirected after going through the authorization code flow.
 
@@ -267,7 +267,7 @@ def graph():
 
 ```
 
-In the code snippet above, we start by checking whether the session contains a user entry and that the id token is valid. If not, raise an unauthorized error to trigger the authorization code flow and redirect the user to sign in. 
+In the code snippet above, we start by checking whether the session contains a user entry and that the ID token is valid. If not, raise an unauthorized error to trigger the authorization code flow, and redirect the user to sign in. 
 
 To create the `@app.get("/admin")` route that requires the user to have an application-defined, admin role assigned, update *app.py* with the following code.
 

@@ -10,7 +10,7 @@ flask run --host=localhost
 ```
 Open your browser and navigate to [http://localhost:5000](http://localhost:5000). If everything worked, the sample app should produce an output similar to this:
 
-:::image type="content" source="../media/6-python-webapp-homepage.png" border="false" alt-text="Python web app homepage":::
+:::image type="content" source="../media/7-python-webapp-homepage.png" border="false" alt-text="Python web app homepage":::
 
 The application's homepage is accessible by all users as it requires no authentication or authorization, as created in the previous unit.
 
@@ -18,7 +18,7 @@ The application's homepage is accessible by all users as it requires no authenti
 
 When a user navigates to any of the routes that require authentication, their browser is redirected to the Azure AD sign-in page. After signing into your app for the first time, they'll be prompted by Microsoft identity to consent to the app's request for permission to access their data.
 
-:::image type="content" source="../media/6-consent-to-permissions-request.png" border="false" alt-text="consent to the app's request for permissions":::
+:::image type="content" source="../media/6-consent-to-permissions-request.png" border="false" alt-text="consent to the app's request for permissions.":::
 
 In Azure AD tenants, an admin could also choose to disable user consent and instead, consent on behalf of all users. To support this scenario, you'll either need to create your own tenant or receive admin consent
 
@@ -26,7 +26,7 @@ In Azure AD tenants, an admin could also choose to disable user consent and inst
 
 Before making a call to an API, such as Microsoft Graph, you'll need to acquire an access token.
 
-:::image type="content" source="../media/6-acquire-token-interactively.png" border="false" alt-text="Acquire token flow diagram":::
+:::image type="content" source="../media/7-acquire-token-interactively.png" border="false" alt-text="Acquire token flow diagram.":::
 
 To get an access token with the necessary scopes, invoke the `acquire_token_flow` on the MSAL client. Based on the requested scopes, Azure AD presents a consent dialogue to the user upon signing in. If the user consents to one or more scopes and obtains a token, the scopes are encoded into the resulting access token.
 
@@ -67,7 +67,7 @@ return render_template("authenticated/graph.html",
 
 A call to the Microsoft Graph API is a simple HTTP Get that contains the access token in the authorization header. After consenting to the requested permissions and signing in, the app displays that you've successfully logged in using your Azure AD credentials. The controller makes a call to `Microsoft Graph's /me` API endpoint for your user and receives the following information. 
 
-:::image type="content" source="../media/6-call-microsoft-graph-api.png" border="true" alt-text="Call Microsoft Graph API":::
+:::image type="content" source="../media/7-call-microsoft-graph-api.png" border="true" alt-text="Call Microsoft Graph API.":::
 
 If after making a request, the API call result comes back with an error, the user will need to go through the authorization code grant flow again. In this module, we asked the user to consent to all app permissions upfront. You could also handle this situation by requesting for no specific scopes in the initial authorization code flow and performing on-demand, step-up authentication depending on your desired user experience. 
 
@@ -84,8 +84,8 @@ return render_template(
 
 Accessing the Microsoft Graph API with the admin role assigned returns the protected app page, as shown below.
 
-:::image type="content" source="../media/6-call-graph-admin-role.png" border="true" alt-text="Call Microsoft Graph API with defined role assignment":::
+:::image type="content" source="../media/7-call-graph-administrator-role.png" border="true" alt-text="Call Microsoft Graph API with defined role assignment.":::
 
 When a signed in user tries to navigate to a protected route without the required role assigned, Microsoft identity prevents them from accessing the content, as shown below.
 
-:::image type="content" source="../media/6-required-admin-role-missing.png" border="true" alt-text="required app-defined role missing":::
+:::image type="content" source="../media/7-required-administrator-role-missing.png" border="true" alt-text="Screenshot showing Graph response when a required app role is missing.":::

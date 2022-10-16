@@ -54,7 +54,7 @@ Add more units as needed for your content
 
  Provide a scenario of a real-world job task that shows how the technology is used in practice:
 
-   Suppose you work at insurance company ABC as a software developer. You're developing an insurance data solution that signs in your agency's employees and clients. The company wants the solution to allow clients access their data while allowing employees to derive insights from the customer data for decision-making processes. You need to build a confidential client application that signs in all company users and allows them to access data based on their roles in the company.
+   Suppose you work at insurance company ABC as a software developer. You're developing an insurance data solution that signs in your agency's employees and clients. The company wants the solution to allow clients to access their data while allowing employees to derive insights from the customer data for decision-making processes. You need to build a confidential client application that signs in all company users and allows them to access data based on their roles in the company.
 
 1. Create a Python webapp and register it in the Azure portal
 

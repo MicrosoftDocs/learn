@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.add-sign-in-support-python-webapp-identity-platform.msal-python-auth-code-flow
+uid: learn.add-sign-in-support-python-webapp-identity-platform.microsoft-authentication-library-python-auth-code-flow
 title: Authorization code flow in MSAL Python
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure 
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-msal-python-auth-code-flow.md)]
+  [!include[](includes/4-microsoft-authentication-library-python-auth-code-flow.md)]

@@ -2,7 +2,7 @@ The Microsoft identity platform helps you build applications your users and cust
 
 In this module, you'll learn how to add core authentication and authorization features to a Python web app using the Microsoft identity platform.
 
-:::image type="content" source="../media/1-python-webapp-integrate-msid.png" border="false" alt-text="Integrate Microsoft identity platform to a Python web app":::
+:::image type="content" source="../media/1-python-webapp-integrate-msid.png" border="false" alt-text="Integrate Microsoft identity platform to a Python web app.":::
 
 ## Example scenario
 
@@ -13,7 +13,7 @@ Suppose you work at insurance company as a software developer. You're developing
 You'll use the Microsoft identity platform to simplify authorization and authentication in your Python web app. After creating the app, you'll use the identity platform as a centralized identity provider in the cloud that controls how users sign in and access data. The tasks required to implement this solution are:
 
 - Create a Python web application using the Flask framework
-- Install the Microsoft authentication library and other dependencies
+- Install the Microsoft Authentication Library and other dependencies
 - Register the application with your Azure AD tenant
 - Configure platform settings and credentials
 - Add app roles to your application
