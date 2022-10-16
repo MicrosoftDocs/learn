@@ -13,15 +13,15 @@ Let us explain this with an example. There is an equation that describes how muc
 
 This is an open loop control system because the control is based on the equation and there is no feedback that tells you if the actions worked. 
 
-Open loop control systems are easy to use and unexpensive to develop. However, if the mathematical equation is not an exact fit for the problem, it does not work well.
+Open loop control systems are easy to use and unexpensive to develop. However, if the mathematical equation is not an exact fit for the problem, it doesn't work well.
 
 ## 2. Closed loop control
 
 Closed loop control uses feedback from the previous action.
 
-The challenge with the example above is that the Ideal Gas Law does not model high pressure or low temperature gases, dense gases, or heavy gases. Therefore, most control systems take feedback after they make each control decision. Closed loop control tells what needs to be done to adjust the system.
+The challenge with the example above is that the Ideal Gas Law doesn't model high pressure or low temperature gases, dense gases, or heavy gases. Therefore, most control systems take feedback after they make each control decision. Closed loop control tells what needs to be done to adjust the system.
 
-Now we will look at several types of closed loop control systems: Proportional-Integral-Derivative (PID) Control, Feed Forward Control, and Model Predictive Control (MPC).
+Now we'll look at several types of closed loop control systems: Proportional-Integral-Derivative (PID) Control, Feed Forward Control, and Model Predictive Control (MPC).
 
 ### a. Proportional-Integral-Derivative (PID) Control
 
@@ -41,7 +41,7 @@ Above image (Figure 1) shows the effect of the “P”, the “I” and the “D
 
 #### PID Strengths & Weaknesses
 
-The PID controllers are highly effective, and you can find it in almost every modern factory and machine, but it can confuse disturbances and noise for events that it needs to respond to. For example, if a PID controller controls the gas pedal on your car, it might confuse a speed bump (which is a minor and temporary disturbance) for a hill which requires significant acceleration. In this case, the controller might over accelerate and exceed the commanded speed, and then needs to slow down. 
+The PID controllers are highly effective, and you can find it in almost every modern factory and machine, but it can confuse disturbances and noise for events that it needs to respond to. For example, if a PID controller controls the gas pedal on your car, it might confuse a speed bump (which is a minor and temporary disturbance) for a hill that requires significant acceleration. In this case, the controller might over accelerate and exceed the commanded speed, and then needs to slow down. 
 
 ### b. Feedforward Control
 
@@ -51,7 +51,7 @@ Feed forward adds the ability to better identify noise and disturbances in the f
 
 #### Feedforward Control Strengths & Weaknesses 
 
-The feed forward controllers are also widely used in the industry and are unexpensive. Regarding the limitations, both PID and feedforward controllers can only control one variable at a time, for one goal, per feedback loop. You would need two feedback/feed forward loops if you needed to control both the gas pedal and the steering wheel of the car. And neither of those loops can maximize gas mileage and maintain constant speed at the same time. Like in this example, what happens if you need to control more than one variable or pursue more than one goal? There are ways to solve this, but in real life we often see people create separate feedback loops that cannot talk to each other or coordinate actions. In the same way that humans duplicate work and miscalculate what to do when they do not coordinate with each other, separate control loops do not manage multiple goals well and often waste energy.
+The feed forward controllers are also widely used in the industry and are unexpensive. Regarding the limitations, both PID and feedforward controllers can only control one variable at a time, for one goal, per feedback loop. You would need two feedback/feed forward loops if you needed to control both the gas pedal and the steering wheel of the car. And neither of those loops can maximize gas mileage and maintain constant speed at the same time. Like in this example, what happens if you need to control more than one variable or pursue more than one goal? There are ways to solve this, but in real life we often see people create separate feedback loops that can't talk to each other or coordinate actions. In the same way that humans duplicate work and miscalculate what to do when they don't coordinate with each other, separate control loops don't manage multiple goals well and often waste energy.
 
 ### c. Model Predictive Control (MPC)
 
@@ -59,12 +59,12 @@ Model Predictive Control, or MPC, extends the capability of PID and Feedforward 
 
 #### MPC Strengths & Weaknesses
 
-MPC is the most advanced control method used in the industry currently. It is accurate and stable, right after it is developed.
+MPC is the most advanced control method used in the industry currently. It's accurate and stable, right after it's developed.
 
 MPC has three major limitations:
 
-- The first limitation of MPC is that it is highly dependent on the system model's accuracy. Normally the system is accurate right after it is being developed, however its accuracy decreases over time with the wear of the machine or system. For example, if the brakes of a car are worn, you need to apply the brakes earlier to stop in time or if the tires wear, you cannot drive as fast or turn as sharply without losing control. The real system changes make the system model inaccurate over time. Since MPC uses the system model to look ahead and try potential actions, an outdated model will mislead it to choose actions that will not work well on the current system. Because of this, many MPC systems were installed, then later decommissioned when the system drifted from the system model.
+- The first limitation of MPC is that it's highly dependent on the system model's accuracy. Normally the system is accurate right after it's being developed, however its accuracy decreases over time with the wear of the machine or system. For example, if the brakes of a car are worn, you need to apply the brakes earlier to stop in time or if the tires wear, you cannot drive as fast or turn as sharply without losing control. The real system changes make the system model inaccurate over time. Since MPC uses the system model to look ahead and try potential actions, an outdated model will mislead it to choose actions that won't work well on the current system. Because of this, many MPC systems were installed, then later decommissioned when the system drifted from the system model.
 
-- The second limitation is that it is expensive to develop an accurate model of the machine or process and therefore they are not widely spread in the industry.
+- The second limitation is that it's expensive to develop an accurate model of the machine or process and therefore they aren't widely spread in the industry.
 
-- The third limitation is that it is very time consuming to obtain the next best decision because of the processing time of the underlying optimization algorithm. For real-time problems, sometimes we do not have that much time to decide, therefore the decision chosen is not optimal, which has a potential huge business impact.
+- The third limitation is that it's very time consuming to obtain the next best decision because of the processing time of the underlying optimization algorithm. For real-time problems, sometimes we do not have that much time to decide, therefore the decision chosen is not optimal, which has a potential huge business impact.

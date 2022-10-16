@@ -1,8 +1,8 @@
 The third category of automated decision methods is manuals. Manuals document expertise from previous exploration, using expert systems and expert rules.
 
-People use **expert rules** very often to learn and teach. Manuals are particularly useful to teach a machine how to make decisions.  There are two main ways that people in industrial settings are accessing and transferring the skills. The first way to transfer skills is with procedures and manuals. Operators refer to procedures when they follow step-by-step instructions or to get guidance that they improvise from. The second way to transfer skills is with strategies. Strategies are labeled courses of action that start with expert rules. Expert rules are bite sized pieces of expertise that transform into skills with practice. As you practice an expert rule it builds into a strategy as you identify exceptions to the rule and learn how to accomplish the task well under lots of different conditions. 
+People use **expert rules** very often to learn and teach. Manuals are particularly useful to teach a machine how to make decisions.  There are two main ways that people in industrial settings are accessing and transferring the skills. The first way to transfer skills is with procedures and manuals. Operators refer to procedures when they follow step-by-step instructions or to get guidance that they improvise from. The second way to transfer skills is with strategies. Strategies are labeled courses of action that start with expert rules. Expert rules are bite sized pieces of expertise that transform into skills with practice. As you practice an expert rule, it builds into a strategy as you identify exceptions to the rule and learn how to accomplish the task well under lots of different conditions. 
 
-**An expert system** is a computer program emulating the decision-making ability of a human expert. It is a method for making automated decisions based on human experience acquired by many years of training and on the job.  Expert systems leverage understanding of the system dynamics and effective strategies to control the system based on previous human trial and error.
+**An expert system** is a computer program emulating the decision-making ability of a human expert. It's a method for making automated decisions based on human experience acquired by many years of training and on the job.  Expert systems leverage understanding of the system dynamics and effective strategies to control the system based on previous human trial and error.
 
 For example, the Heat, Ventilation and Air Conditioning (HVAC) systems that control the temperature of office buildings. The system uses a damper valve that can be opened to let in fresh air in or closed to recycle air. The system can save energy by recycling air at times of day when the price of energy is high or when the air is very cold and needs to be heated up. However, recycling too much air, especially when there are many people in the building, decreases air quality as carbon dioxide builds up.
 
@@ -25,10 +25,10 @@ Even though the first two rules in our system are simple to understand and manag
 
 For example, the first rule tells us that we should recycle air when the energy is expensive and when the air temperature is extreme (hot or cold). How expensive should the energy be to justify recycling air? And how much should you close the damper valve to recycle air?
 
-That depends on the carbon dioxide levels in the rooms and on the outdoor temperature. It is fuzzy—and the right answer depends on the surface of the landscape defined by the relationships between energy prices, outdoor air temperatures, and number of people in the building.
+That depends on the carbon dioxide levels in the rooms and on the outdoor temperature. It's fuzzy—and the right answer depends on the surface of the landscape defined by the relationships between energy prices, outdoor air temperatures, and number of people in the building.
 
 ## Expert Systems & Expert Rules Strengths & Weaknesses
 
-We should use expert systems or rules when we have a lot of expert knowledge available or when there are constraints to the system that must be complied with. They are reliable and explainable.
+We should use expert systems or rules when we have a lot of expert knowledge available or when there are constraints to the system that must be complied with. They're reliable and explainable.
 
-The main drawback is the tediousness of managing exceptions and maintaining the rules. It is prone to errors as it is a manual process. It is also fixed; it does not learn on its own.
+The main drawback is the tediousness of managing exceptions and maintaining the rules. It's prone to errors as it's a manual process. It's also fixed; it doesn't learn on its own.

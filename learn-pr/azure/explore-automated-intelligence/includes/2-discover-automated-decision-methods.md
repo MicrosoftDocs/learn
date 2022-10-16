@@ -1,4 +1,4 @@
-Automated decision-making calculates the best next action to take by a device or industrial process. It is used mostly in machines, vehicles and industrial settings. It is very well understood and reliable.
+Automated decision-making calculates the best next action to take by a device or industrial process. It's used mostly in machines, vehicles and industrial settings. It's well understood and reliable.
 
 Automated systems use three primary methods to make decisions:
 
