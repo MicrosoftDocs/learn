@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.explore.explore-automated-intelligence.math
-title: Examine risks introduced by AI
+uid: learn.oxford.explore-automated-intelligence.math
+title: Math - Making the predictable decisions with control theory
 metadata:
-  title: Examine risks introduced by AI
-  description: We review some things to keep in mind when introducing AI to conversational bots.
+  title: Math - Making the predictable decisions with control theory
+  description: We explain math when introducing Automated decision methods.
   ms.date: 10/14/2022
   author: softchris
   ms.author: chnoring
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-responsibility-imperatives.md)] 
+  [!include[](includes/3-math.md)]

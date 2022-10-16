@@ -1,42 +1,41 @@
 ### YamlMime:Module
-uid: learn.oxford.explore.explore-automated-intelligence
+uid: learn.oxford.explore-automated-intelligence
 metadata:
-  title: Discover Microsoft guidelines for responsible conversational AI development
-  description: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
-  ms.date: 02/20/2020
-  author: Adriamen
-  ms.author: japerena
+  title: Explore Automated Intelligence
+  description: Learn Automated intelligence methods and evaluate when to use it.
+  ms.date: 10/14/2022
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: barlan
-title: Discover Microsoft guidelines for responsible conversational AI development
-summary: Learn Microsoft guidelines for the development of responsible conversational AI, such as chat bots and voice-controlled systems.
+title: Explore Automated Intelligence
+summary: In this module, you’ll learn about several automated methods such as math (control theory), menus (optimization algorithms) and manuals (expert systems and expert rules), which are components of Machine Teaching. In addition, you’ll learn automated intelligence strengths and limitations, when to best use these technologies and when Autonomous Intelligence methods will be the best choice.
 abstract: | 
-  In this module, you will:
-  - Identify the different types of conversational AI bots and common stakeholders
-  - Learn the benefits of making bots transparent and trustworthy
-  - Discover guidelines to ensure bots are reliable and accessible 
+  In this module, you will learn how to:
+  - Describe automated methods included in Automated Intelligence
+  - Describe automated methods strengths and weaknesses
+  - Decide when automated methods are best used
+
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: None
-iconUrl: /learn/achievements/responsible-conversational-ai.svg
+iconUrl: http://via.placeholder.com/120x120
 levels: 
 - beginner
 roles: 
-- functional-consultant
 - business-user
 products: 
 - azure
-- dynamics-365
 subjects:
 - artificial-intelligence
-- chatbot
 units:
-- learn-wwl.responsible-conversational-ai.introduction
-- learn-wwl.responsible-conversational-ai.conversational-ai-bot-types
-- learn-wwl.responsible-conversational-ai.responsibility-imperatives
-- learn-wwl.responsible-conversational-ai.transparent-trustworthy-bots
-- learn-wwl.responsible-conversational-ai.ensure-bot-reliability
-- learn-wwl.responsible-conversational-ai.make-your-bot-accessible
-- learn-wwl.responsible-conversational-ai.knowledge-check
-- learn-wwl.responsible-conversational-ai.summary-and-resources
+- learn.oxford.explore-automated-intelligence.introduction
+- learn.oxford.explore-automated-intelligence.discover-methods
+- learn.oxford.explore-automated-intelligence.math
+- learn.oxford.explore-automated-intelligence.menus
+- learn.oxford.explore-automated-intelligence.manuals
+- learn.oxford.explore-automated-intelligence.evaluate
+- learn.oxford.explore-automated-intelligence.knowledge-check
+- learn.oxford.explore-automated-intelligence.summary
+
 badge: 
-  uid: learn-wwl.responsible-conversational-ai.badge #add the uid for your achievement badge.
+  uid: learn.oxford.explore-automated-intelligence.badge #add the uid for your achievement badge.

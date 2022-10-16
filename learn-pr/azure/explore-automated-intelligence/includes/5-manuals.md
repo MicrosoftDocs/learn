@@ -13,7 +13,9 @@ The HVAC can be controlled with two simple rules (Figure 4):
 
 These rules represent two fundamental strategies for controlling the system.
 
-Figure 4. Two strategies to control HVAC systems.
+The image below shows two strategies to control HVAC systems.
+
+![The image shows two strategies to control HVAC systems.](../media/strategies.png)
 
 The first control strategy, close the damper and recycle air, is perfect for saving money when energy is expensive, and temperatures are extreme. It works best when building occupancy is lower. If you let in fresh air in when the air is cold or hot, it will take a lot of resources to cool the hot air down or heat the cold air up.
 
@@ -25,6 +27,8 @@ For example, the first rule tells us that we should recycle air when the energy 
 
 That depends on the carbon dioxide levels in the rooms and on the outdoor temperature. It is fuzzy—and the right answer depends on the surface of the landscape defined by the relationships between energy prices, outdoor air temperatures, and number of people in the building.
 
-## Expert Systems & Expert Rules Strengths & Weaknesses 
+## Expert Systems & Expert Rules Strengths & Weaknesses
+
 We should use expert systems or rules when we have a lot of expert knowledge available or when there are constraints to the system that must be complied with. They are reliable and explainable.
+
 The main drawback is the tediousness of managing exceptions and maintaining the rules. It is prone to errors as it is a manual process. It is also fixed; it does not learn on its own.

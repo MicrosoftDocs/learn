@@ -45,7 +45,8 @@ The PID controllers are highly effective, and you can find it in almost every mo
 
 ### b. Feedforward Control
 
-Feedback control systems process the feedback and apply math in several ways to calculate the next best control action. Even when we control responding to feedback, limitations of the mathematical model sometimes lead to good decisions but might also lead to bad decisions. 
+Feedback control systems process the feedback and apply math in several ways to calculate the next best control action. Even when we control responding to feedback, limitations of the mathematical model sometimes lead to good decisions but might also lead to bad decisions.
+
 Feed forward adds the ability to better identify noise and disturbances in the feedback and ignore them when calculating the next control action. This works well for controlling machines and machine components but can fail for more complex systems and processes.
 
 #### Feedforward Control Strengths & Weaknesses 

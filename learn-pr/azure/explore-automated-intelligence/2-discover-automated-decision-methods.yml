@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.explore.explore-automated-intelligence.discover-methods
-title: Identify the four types of Conversational AI bots and common stakeholders
+uid: learn.oxford.explore-automated-intelligence.discover-methods
+title: Discover Automated decision methods
 metadata:
-  title: Identify the four types of Conversational AI bots and common stakeholders
-  description: An introduction to the different types of conversational AI bots and common stakeholders we must take into account when designing a bot.
+  title: Discover Automated decision methods
+  description: An introduction to the different types of automated decision methods when designing Autonomous AI.
   ms.date: 10/14/2022
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
-  [!include[](includes/2-conversational-ai-bot-types.md)] 
+  [!include[](includes/2-discover-automated-decision-methods.md)] 
