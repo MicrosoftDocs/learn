@@ -1,5 +1,7 @@
 Intro
 
+Private network solution, including network hierarchy of enterprises and sites
+
 ## Key components
 
 The following diagram shows the key components of Azure Private 5G Core: 
