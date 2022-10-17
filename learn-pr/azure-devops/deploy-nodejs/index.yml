@@ -22,10 +22,9 @@ prerequisites: |
   - A GitHub account
 iconUrl: /training/achievements/azure-devops/deploy-nodejs.svg
 levels:
-- beginner
+- intermediate
 roles:
 - devops-engineer
-- administrator
 - developer
 - solution-architect
 products:

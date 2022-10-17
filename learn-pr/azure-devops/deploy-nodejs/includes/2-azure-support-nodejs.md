@@ -1,4 +1,4 @@
-In this part, you'll learn some of the ways Azure and Azure DevOps support Node.js applications.
+In this section, you'll learn how Azure and Azure DevOps support Node.js applications.
 
 **Node.js** is an open-source JavaScript runtime environment, designed for server-side execution. It runs outside the context of a web browser. You can learn more at [nodejs.org](https://nodejs.org?azure-portal=true).
 
@@ -20,8 +20,8 @@ Here's an example that shows starter code templates for a Node.js application:
 
 Azure Pipelines provides built-in tasks that support the build, test, and deployment jobs you need to deploy source code from GitHub or anywhere else.
 
-In Azure Pipelines, pipeline code is expressed through YAML configuration files. This example shows the built-in `NodeTool@0` task, which installs the version of Node.js that you need to build your application.
+In Azure Pipelines, pipeline code is expressed through YAML configuration files. This example shows the `NodeTool@0` task, which installs the version of Node.js that you need to build your application.
 
 :::image type="content" source="../media/2-starter-code-nodejs.png" alt-text="A screenshot of Azure Pipelines showing starter code for the Node.js project.":::
 
-If Azure Pipelines doesn't provide a specific task that you need, you can provide scripts that fill in the gaps. The `script` task in the previous example uses `npm` to install dependencies, build the application, and run any associated tests.
+If Azure Pipelines doesn't provide a specific task that you need, you can write scripts that fill in the gaps. The `script` task in the previous example uses `npm` to install dependencies, build the application, and run any associated tests.
