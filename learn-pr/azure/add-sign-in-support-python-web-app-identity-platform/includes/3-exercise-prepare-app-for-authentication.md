@@ -50,7 +50,7 @@ To make these dependencies available in your environment, run `pip install -r re
 
 #### Add application UI components
 
-Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three HTML templates for each of the routes that will be set up in the app. Follow the steps  below to create the templates for you app's user interface: 
+Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three HTML templates for each of the routes that will be set up in the app. Follow the steps below to create the templates for your app's user interface: 
 
 1. For the general template, create an HTML file named *layout.html* in the templates folder and paste the contents below: 
 
@@ -103,7 +103,7 @@ Flask uses the helper function `render_template()` for rendering HTML templates 
 
 3. Move into the *templates* folder and create a new folder named *authenticated* where you'll add two templates that your app will render when users sign in. 
 
-4. In the  *authenticated* folder, add the first template, *graph.html*,which will render when all users sign in. Paste the following contents into this template:
+4. In the  *authenticated* folder, add the first template, *graph.html*, which will render when all users sign in. Paste the following contents into this template:
     
     ```html
     <!-- Purpose: Template rendered when any user signs in. --> 
