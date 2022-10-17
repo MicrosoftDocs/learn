@@ -15,7 +15,7 @@ The content in the module will help you prepare for the certification exam SC-10
 
 ## Ransomware overview
 
-*Ransomware* is a type of cyber security attack that destroys or encrypts files and folders, preventing the owner of the effected device from accessing their data. The cybercriminal can then extort money from the business owner in exchange for a key to unlock the encrypted data. But, even when paid, cybercriminals may not provide the key to return access to the business owner.
+*Ransomware* is a type of cyber security attack that destroys or encrypts files and folders, preventing the owner of the affected device from accessing their data. The cybercriminal can then extort money from the business owner in exchange for a key to unlock the encrypted data. But, even when paid, cybercriminals may not provide the key to return access to the business owner.
 
 ### Automated ransomware attacks
 
@@ -25,9 +25,9 @@ Commodity ransomware attacks are usually automated. These cyber attacks can spre
 
 *Human-operated ransomware* is the result of an **active attack** by cybercriminals that infiltrate an organization’s on-premises or cloud IT infrastructure, elevate their privileges, and deploy ransomware to critical data.
 
-These “hands-on-keyboard” attacks target an organization rather than a single device. *Human-operated* means there is a human attacker using their  insights into common system and security misconfigurations to infiltrate the organization, navigate the network, and adapt to the environment and its weaknesses as they go.
+These “hands-on-keyboard” attacks target an organization rather than a single device. *Human-operated* means there's a human attacker using their  insights to infiltrate the organization, navigate the network, and adapt to the environment.
 
-Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with a elevation of the privileges in stolen accounts. Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
+Hallmarks of these human-operated ransomware attacks typically include **credential theft** and **lateral movement** with an elevation of the privileges in stolen accounts. Activities might take place during maintenance windows and involve security configuration gaps discovered by cybercriminals. The goal is the **deployment of a ransomware payload** to whatever *high business impact resources* the attackers choose.
 
 These attacks can be catastrophic to business operations and are difficult to clean up, requiring complete adversary eviction to protect against future attacks. Unlike commodity ransomware that usually only requires malware remediation, human-operated ransomware will continue to threaten your business operations after the initial encounter.
 
