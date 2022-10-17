@@ -140,7 +140,7 @@ Flask uses the helper function `render_template()` for rendering HTML templates 
     {% endblock %}
     ```
 
-5. In the *authenticated* folder, add a second template named *admin.html*. Your app will render this template when users with an application-defined role sign in. In our insurance company web application scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the *admin.html* template:
+5. In the *authenticated* folder, add a second template named *admin.html*. Your app will render this template when users with an application-defined role sign-in. In our insurance company web application scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the *admin.html* template:
 
     ```html
     <!-- Purpose: Template rendered when a user with an application-defined role signs in. --> 
