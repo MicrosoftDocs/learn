@@ -23,7 +23,7 @@ You can also deploy packet core instances in 4G mode to support Private Long-Ter
 
 The following diagram shows the network functions supported by a packet core instance. It also shows the interfaces these network functions use to interoperate with third-party components.
 
-:::image type="content" source="media/packet-core-architecture.png" alt-text="Diagram of the packet core architecture displaying each of the supported network functions and their interfaces":::
+:::image type="content" source="../media/packet-core-architecture.png" alt-text="Diagram of the packet core architecture displaying each of the supported network functions and their interfaces":::
 
 Each packet core instance is connected to the local RAN network to provide coverage for cellular wireless devices. You can choose to limit these devices to local connectivity. Alternatively, you can provide multiple routes to the cloud, internet, or other enterprise data centers running IoT and automation applications.
 
@@ -31,7 +31,7 @@ Each packet core instance is connected to the local RAN network to provide cover
 
 The following diagram shows the key resources you'll use to manage your private mobile network through Azure.
 
-:::image type="content" source="media/private-5g-core-resources.png" alt-text="Diagram displaying the resources used to manage a private mobile network":::
+:::image type="content" source="../media/private-5g-core-resources.png" alt-text="Diagram displaying the resources used to manage a private mobile network":::
 
 - The *mobile network* resource represents the private mobile network as a whole.
 - Each *SIM* resource represents a physical SIM or eSIM. The physical SIMs and eSIMs are used by UEs that will be served by the private mobile network.
