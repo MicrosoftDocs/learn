@@ -21,7 +21,7 @@ prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
   - An Azure Active Directory (Azure AD) tenant that you manage as a Global administrator.
   - A user account in your own Azure AD tenant.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/msid-django-web-app-sign-in.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
