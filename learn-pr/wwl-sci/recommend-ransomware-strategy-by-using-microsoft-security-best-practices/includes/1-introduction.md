@@ -48,7 +48,7 @@ For a comprehensive view of ransomware and extortion and how to protect your org
     2. Limit the scope of damage of a ransomware attack by protecting privileged roles.
     3. Make it harder for an attacker to get into your environment by incrementally removing risks.
 
-[![The three phases to protecting against ransomware and extortion](../media/protect-against-ransomware-phases.png)](protect-against-ransomware.md)
+[![The three phases to protecting against ransomware and extortion](../media/protect-against-ransomware-phases.png)
 
 Download the [Protect your organization from ransomware poster](https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf) for an overview of the three phases as layers of protection against ransomware attackers.
 
