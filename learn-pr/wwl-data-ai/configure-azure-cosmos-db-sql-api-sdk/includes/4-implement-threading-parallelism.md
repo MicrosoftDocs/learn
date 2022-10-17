@@ -44,7 +44,7 @@ When issuing a query from the SDK, the **QueryRequestOptions** includes a set of
 
 ### Max item count
 
-All query results in Azure Cosmos DB SQL API are returned as "pages" of results. This property indicates the number of items you would like to return in each "page". The service default is 100 items per page of results. You can set this value to **-1** to set a dynamic page size.
+All query results in Azure Cosmos DB for NoSQL are returned as "pages" of results. This property indicates the number of items you would like to return in each "page". The service default is 100 items per page of results. You can set this value to **-1** to set a dynamic page size.
 
 In this example, the **MaxItemCount** property is set to a value of **500**.
 
@@ -85,4 +85,4 @@ QueryRequestOptions options = new ()
 ```
 
 > [!NOTE]
-> These settings are explored much deeper in other Azure Cosmos DB SQL API modules on issuing queries using the SDK.
+> These settings are explored much deeper in other Azure Cosmos DB for NoSQL modules on issuing queries using the SDK.
