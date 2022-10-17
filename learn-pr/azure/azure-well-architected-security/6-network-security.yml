@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: 'Communication between Azure virtual machines and the internet'
       isCorrect: false
-      explanation: 'Network security groups can be used to secure this communication flow, but it isn't the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but it isn\'t the only correct choice.'
     - content: 'Communication between Azure virtual machines within a virtual network'
       isCorrect: false
-      explanation: 'Network security groups can be used to secure this communication flow, but it isn't the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but it isn\'t the only correct choice.'
     - content: 'Communication between Azure virtual machines and systems in an on-premises network'
       isCorrect: false
-      explanation: 'Network security groups can be used to secure this communication flow, but it isn't the only correct choice.'
+      explanation: 'Network security groups can be used to secure this communication flow, but it isn\'t the only correct choice.'
     - content: 'All of the above'
       isCorrect: true
       explanation: 'Network security groups are fully customizable, and they give you the ability to fully lock down network communication to and from your virtual machines.'
