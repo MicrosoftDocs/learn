@@ -5,6 +5,7 @@ In this unit, you'll tackle the last step in the diagram—the deploy steps.
 :::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy step in a pipeline.":::
 
 For staging, the steps include:
+
 - Add a deploy job
 - Install Helm
 - Get the AKS credentials
@@ -13,6 +14,7 @@ For staging, the steps include:
 - Test the deployment
 
 To deploy to production, we'll:
+
 - Create the production deploy job
 - Test the deployment
 

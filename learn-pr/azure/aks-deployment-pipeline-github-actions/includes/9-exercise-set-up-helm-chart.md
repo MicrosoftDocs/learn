@@ -361,7 +361,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
     ```yaml
     image:
-      registry: <acr-name>
+      registry: <your-acr-name>
       name: contoso-website
       tag: latest
 
