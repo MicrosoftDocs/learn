@@ -21,32 +21,32 @@ quiz:
     choices:
     - content: "Administrative"
       isCorrect: true
-      explanation: "That's correct. The administrative category create, update, delete, and action operations."
+      explanation: "Correct. The administrative category would have this information."
     - content: "Service Health"
       isCorrect: false
-      explanation: "That's incorrect. The service health category contains service health incidents."
+      explanation: "Incorrect. The service health category contains service health incidents."
     - content: "Policy"
       isCorrect: false
-      explanation: "That's incorrect. The policy category contains records for Azure policy actions."
+      explanation: "Incorrect. The policy category contains records for Azure policy actions."
   - content: "What data does Azure Monitor collect?"
     choices:
-    - content: "Data from a many different sources, such as the application event log."
+    - content: "Data from a many different sources, such as the Application event log."
       isCorrect: true
-      explanation: "That's correct. Azure Monitor collects data from many sources. Sources include the operating system, resources, and event logs."
+      explanation: "Correct. Azure Monitor collects data from many sources. Sources include the operating system, resources, and event logs."
     - content: "Azure billing details"
       isCorrect: false
-      explanation: "That's incorrect. Azure Monitor does not collect information related to billing.  Microsoft Cost Management should be used to track this information."
-    - content: "Backups of database transaction logs"
+      explanation: "Incorrect. Azure Monitor does not collect information related to billing.  Microsoft Cost Management should be used to track this information."
+    - content: "Backup of database transaction logs"
       isCorrect: false
-      explanation: "That's incorrect. Azure Monitor does not backup database transaction logs. Use Azure Backup for system backup information."
+      explanation: "Incorrect. Azure Monitor doesn't back up database transaction logs. Use Azure Backup for system backup information."
   - content: "How long are activity logs kept?"
     choices:
     - content: "30 days"
       isCorrect: false
-      explanation: "That's incorrect. Activity logs are kept for a longer period of time."
+      explanation: "Incorrect. Activity logs are kept 90 days."
     - content: "90 days"
       isCorrect: true
-      explanation: "That's correct. Activity logs are kept for 90 days."
+      explanation: "Correct. Activity logs are kept for 90 days."
     - content: "120 days"
       isCorrect: false
-      explanation: "That's incorrect. Activity logs are not kept for that long."
+      explanation: "Incorrect. Activity logs are kept 90 days."
