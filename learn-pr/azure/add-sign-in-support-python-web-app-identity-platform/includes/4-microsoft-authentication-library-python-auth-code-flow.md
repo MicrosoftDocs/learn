@@ -38,12 +38,12 @@ When using MSAL Python, you first create an instance of the client application. 
 
 - Public client applications
 
-Public client applications are apps that run on mobile devices, desktop computers, or in a web browser. They're not trusted to securely maintain the confidentiality of their client credentials and can only access web APIs on behalf of the user. Public clients can't hold configuration-time secrets.
+    Public client applications are apps that run on mobile devices, desktop computers, or in a web browser. They're not trusted to securely maintain the confidentiality of their client credentials and can only access web APIs on behalf of the user. Public clients can't hold configuration-time secrets.
 
 - Confidential client applications
 
-Confidential client applications are apps that run on servers, such as web apps, web API apps, or even service/daemon apps. They're considered difficult to access and can maintain the confidentiality of their application credentials.
-
+    Confidential client applications are apps that run on servers, such as web apps, web API apps, or even service/daemon apps. They're considered difficult to access and can maintain the confidentiality of their application credentials.
+    
 In this scenario, we'll create an instance of a confidential client application. The following code snippet shows how to instantiate a confidential client application object: 
 
 ```python

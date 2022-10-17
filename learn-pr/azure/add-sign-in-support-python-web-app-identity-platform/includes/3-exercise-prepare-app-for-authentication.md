@@ -50,144 +50,144 @@ To make these dependencies available in your environment, run `pip install -r re
 
 #### Add application UI components
 
-Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three HTML templates for each of the routes that will be set up in the app.
+Flask uses the helper function `render_template()` for rendering HTML templates containing both static and dynamic content. For this module, you'll create a general design template that's reused across all pages. You'll also add three HTML templates for each of the routes that will be set up in the app. Follow the steps below to create the templates for your app's user interface: 
 
-For the general template, create an HTML file named *layout.html* in the templates folder and paste the contents below: 
+1. For the general template, create an HTML file named *layout.html* in the templates folder and paste the contents below: 
 
-```html
-
-<!-- Purpose: General template that's used across all pages. Other templates will inherit this design. --> 
-<!-- Path: <project-root>/templates/layout.html -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>{% block page_title %}{% endblock %} - Python Flask</title>
-    {% block css %}{% endblock %}
-  </head>
-  <body>
-    {% block body %}
+    ```html
     
-    <h1> Authentication and authorization in Python Flask web app using the Microsoft identity platform </h1>
+    <!-- Purpose: General template that's used across all pages. Other templates will inherit this design. --> 
+    <!-- Path: <project-root>/templates/layout.html -->
+    
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <title>{% block page_title %}{% endblock %} - Python Flask</title>
+        {% block css %}{% endblock %}
+      </head>
+      <body>
+        {% block body %}
+        
+        <h1> Authentication and authorization in Python Flask web app using the Microsoft identity platform </h1>
+    
+        <main role="main">
+          {% block content %}{% endblock %}
+        </main>
+    
+        {% block js %}{% endblock %}
+    
+        {% endblock %}    
+      </body>
+    </html>
+    ```
+2. Next, create a new folder in *templates* and name it *public*. Then add an *index.html* template to the *public* folder. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the *index.html* template.
 
-    <main role="main">
-      {% block content %}{% endblock %}
-    </main>
+    ```html
+    <!-- Purpose: Template rendered when any user, authenticated or not, accesses the app --> 
+    <!-- Path: <project-root>/templates/authenticated/index.html -->
+    
+    {% extends "layout.html" %}
+    {% block page_title %}Home{% endblock %}
+    {% block content %}
+        <div>This page can be accessed by all users, authenticated or not.</div>
+        <div>
+          <p>The following links will all require you to sign into the application before they can be used. Navigating to them while not logged in will automatically initiate the login process.</p>
+          <ul>
+            <li><a href="/graph">This link</a> doesn't require that your user has any specific application roles assigned, and will access Microsoft Graph on your behalf.</li>
+            <li><a href="/admin">This link</a> requires that your user has the application-defined, <code>admin</code> role assigned.</li>
+          </ul>
+        </div>
+    {% endblock %}
+    ```
 
-    {% block js %}{% endblock %}
+3. Move into the *templates* folder and create a new folder named *authenticated* where you'll add two templates that your app will render when users sign in. 
 
-    {% endblock %}    
-  </body>
-</html>
-```
-Next, create a new folder in *templates* and name it *public*. Then add an *index.html* template to the *public* folder. Your app will render this template when serving the page that all users, authenticated or not, can access. Paste the contents below into the *index.html* template.
+4. In the  *authenticated* folder, add the first template, *graph.html*, which will render when all users sign in. Paste the following contents into this template:
+    
+    ```html
+    <!-- Purpose: Template rendered when any user signs in. --> 
+    <!-- Path: <project-root>/templates/authenticated/graph.html -->
+    
+    {% extends "layout.html" %}
+    {% block page_title %}Graph Access{% endblock %}
+    
+    {% block css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% endblock %}
+    
+    {% block content %}
+    <div>This page can be accessed by only logged-in users.</div>
+    <div>
+      <p>Before rendering the page, the controller was able to make a call to Microsoft Graph's <code>/me</code> API for your user and received the following:</p>
+      <p><pre><code class="language-js">{{ graphCallResponse | tojson(indent=2) }}</code></pre></p>
+      <p>Refreshing this page will continue to use the cached access token acquired for Microsoft Graph, which is valid for another {{ graphAccessTokenExpiresInSeconds }} second(s) and future page views will attempt to refresh this token as it nears its expiration.</p>
+    </div>
+    <div>
+      <p>The following links will all require you to sign into the application before they can be used. Navigating to them while not logged in will automatically initiate the login process.</p>
+      <ul>
+        <li><a href="/graph">This link</a> doesn't require that your user has any specific application roles assigned, and will access Microsoft Graph on your behalf. <em>(That's this page.)</em></li>
+        <li><a href="/admin">This link</a> requires that your user has the application-defined, <code>admin</code> role assigned.</li>
+      </ul>
+    </div>
+    <div>
+      <p><a href="/">Return to home.</a></p>
+    </div>
+    {% endblock %}
+    
+    {% block js %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {% endblock %}
+    ```
 
-```html
-<!-- Purpose: Template rendered when any user, authenticated or not, accesses the app --> 
-<!-- Path: <project-root>/templates/authenticated/index.html -->
+5. In the *authenticated* folder, add a second template named *admin.html*. Your app will render this template when users with an application-defined role sign in. In our insurance company web application scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the *admin.html* template:
 
-{% extends "layout.html" %}
-{% block page_title %}Home{% endblock %}
-{% block content %}
-    <div>This page can be accessed by all users, authenticated or not.</div>
+    ```html
+    <!-- Purpose: Template rendered when a user with an application-defined role signs in. --> 
+    <!-- Path: <project-root>/templates/authenticated/admin.html -->
+    
+    {% extends "layout.html" %}
+    {% block page_title %}Graph Access as Admin{% endblock %}
+    
+    {% block css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% endblock %}
+    
+    {% block content %}
+    <div>This page can be accessed by only logged-in users that have the <strong>admin</strong> role assigned.</div>
+    <div>
+      <p>This is based on the <strong>roles</strong> in your id token stored in your user session.</p>
+      <p><pre><code class="language-js">{{ graphCallResponse | tojson(indent=2) }}</code></pre></p>
+    </div>
     <div>
       <p>The following links will all require you to sign into the application before they can be used. Navigating to them while not logged in will automatically initiate the login process.</p>
       <ul>
         <li><a href="/graph">This link</a> doesn't require that your user has any specific application roles assigned, and will access Microsoft Graph on your behalf.</li>
-        <li><a href="/admin">This link</a> requires that your user has the application-defined, <code>admin</code> role assigned.</li>
+        <li><a href="/admin">This link</a> requires that your user has the application-defined, <code>admin</code> role assigned. <em>(That's this page.)</em></li>
       </ul>
     </div>
-{% endblock %}
-```
+    <div>
+      <p><a href="/">Return to home.</a></p>
+    </div>
+    {% endblock %}
+    
+    {% block js %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    {% endblock %}
+    
+    ```
 
-Move into the *templates* folder and create a new folder named *authenticated* where you'll add two templates that your app will render when users sign in.
+6. You're now done creating the presentation layer for your Flask web application. Your final *templates* folder should look like this:
 
-The first template, *graph.html*, will render when all users sign in. Paste the following contents into this template:
-
-```html
-<!-- Purpose: Template rendered when any user signs in. --> 
-<!-- Path: <project-root>/templates/authenticated/graph.html -->
-
-{% extends "layout.html" %}
-{% block page_title %}Graph Access{% endblock %}
-
-{% block css %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-{% endblock %}
-
-{% block content %}
-<div>This page can be accessed by only logged-in users.</div>
-<div>
-  <p>Before rendering the page, the controller was able to make a call to Microsoft Graph's <code>/me</code> API for your user and received the following:</p>
-  <p><pre><code class="language-js">{{ graphCallResponse | tojson(indent=2) }}</code></pre></p>
-  <p>Refreshing this page will continue to use the cached access token acquired for Microsoft Graph, which is valid for another {{ graphAccessTokenExpiresInSeconds }} second(s) and future page views will attempt to refresh this token as it nears its expiration.</p>
-</div>
-<div>
-  <p>The following links will all require you to sign into the application before they can be used. Navigating to them while not logged in will automatically initiate the login process.</p>
-  <ul>
-    <li><a href="/graph">This link</a> doesn't require that your user has any specific application roles assigned, and will access Microsoft Graph on your behalf. <em>(That's this page.)</em></li>
-    <li><a href="/admin">This link</a> requires that your user has the application-defined, <code>admin</code> role assigned.</li>
-  </ul>
-</div>
-<div>
-  <p><a href="/">Return to home.</a></p>
-</div>
-{% endblock %}
-
-{% block js %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{% endblock %}
-```
-
-Navigate to the *authenticated* folder and add a second template named *admin.html*. Your app will render this template when users with an application-defined role sign in. In our insurance company web application scenario, the admin role would represent a company employee with privileges to access specific customer data. Paste the following contents into the *admin.html* template:
-
-```html
-<!-- Purpose: Template rendered when a user with an application-defined role signs in. --> 
-<!-- Path: <project-root>/templates/authenticated/admin.html -->
-
-{% extends "layout.html" %}
-{% block page_title %}Graph Access as Admin{% endblock %}
-
-{% block css %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-{% endblock %}
-
-{% block content %}
-<div>This page can be accessed by only logged-in users that have the <strong>admin</strong> role assigned.</div>
-<div>
-  <p>This is based on the <strong>roles</strong> in your id token stored in your user session.</p>
-  <p><pre><code class="language-js">{{ graphCallResponse | tojson(indent=2) }}</code></pre></p>
-</div>
-<div>
-  <p>The following links will all require you to sign into the application before they can be used. Navigating to them while not logged in will automatically initiate the login process.</p>
-  <ul>
-    <li><a href="/graph">This link</a> doesn't require that your user has any specific application roles assigned, and will access Microsoft Graph on your behalf.</li>
-    <li><a href="/admin">This link</a> requires that your user has the application-defined, <code>admin</code> role assigned. <em>(That's this page.)</em></li>
-  </ul>
-</div>
-<div>
-  <p><a href="/">Return to home.</a></p>
-</div>
-{% endblock %}
-
-{% block js %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-{% endblock %}
-
-```
-
-You're now done creating the presentation layer for your Flask web application. Your final *templates* folder should look like this:
-
-```text
-# 📁 templates
-  ├── authenticated
-  │     ├── admin.html
-  │     ├── graph.html
-  ├── public
-  │     ├── index.html
-  ├── layout.html
-```
+    ```text
+    # 📁 templates
+      ├── authenticated
+      │     ├── admin.html
+      │     ├── graph.html
+      ├── public
+      │     ├── index.html
+      ├── layout.html
+    ```
 
 ## Register your application in the Azure portal
 
