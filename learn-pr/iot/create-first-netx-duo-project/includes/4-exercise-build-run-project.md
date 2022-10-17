@@ -4,9 +4,12 @@ We will use Codespace to build and run the Hello World project, and future proje
 
 1. Launch browser and go to the forked samples repository which you have done in the [previous step](/training/modules/azure-rtos-netx-duo-fundamentals/1-introduction). The link should look like https://github.com/[your_github_id]/azure-rtos-learn-samples
 
+   > [!TIP]
+   > Replace [your_github_id] with your own GitHub ID that will use your forked repository of the samples to create the Codespace.
+
 1. Select **Code** and open the Codespace you have created.
 
-   ![Open a Codespace.](../media/01-link-to-codespace.png)
+   ![Screenshot of opening a Codespace.](../media/01-link-to-codespace.png)
 
 1. Once the Codespace is launched, in the Explorer pane file tree, expand and open `courses/netxduo` folder.
 
@@ -16,7 +19,7 @@ The path to the Hello World project in Codespace is:
 
 **courses –> netxduo –> ProjectHelloWorld -> main.c**
 
-![Open main.c file.](../media/02-main-appears.png)
+![Screenshot of opening main.c file.](../media/02-main-appears.png)
 
 When you get to the main, you're ready to build and run your project.
 
@@ -24,13 +27,13 @@ When you get to the main, you're ready to build and run your project.
 
 Follow the instructions in the image below to build your project.
 
-![Build Step 1 - build project.](../media/03-build-project.png)
+![Screenshot of step 1 - build project.](../media/03-build-project.png)
 
 Your project will start building. When it's finished, you're ready to run the project. Follow the instructions in the image in the next step to run your project.
 
 ## Step 4—Run Project Hello World
 
-![Build Step 2 - run project.](../media/04-run-project.png)
+![Screenshot of step 2 - run project.](../media/04-run-project.png)
 
 Following is the output produced when the project is running.
 
@@ -46,13 +49,13 @@ At this point, NetX Duo is waiting to receive commands, such as a ping request.
 
 Open a new terminal by selecting the **"+"** in the terminal window.
 
-![Open new terminal.](../media/05-open-new-terminal.png)
+![Screenshot of opening new terminal.](../media/05-open-new-terminal.png)
 
 ## Send a ping request
 
 We will now send a ping request to **192.168.1.2**, which is a private IP address.
 
-![Ping request submitted.](../media/06-send-ping-request.png)
+![Screenshot of ping request submitted.](../media/06-send-ping-request.png)
 
 Following is sample output produced by this ping request. The application will terminate and output will stop when you press `Ctrl+C`.
 
