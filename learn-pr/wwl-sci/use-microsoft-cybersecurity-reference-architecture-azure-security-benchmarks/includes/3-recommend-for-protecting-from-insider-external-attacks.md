@@ -54,7 +54,7 @@ Prepare-Enter-Traverse-Execute (PETE) model that Microsoft developed to
 improve communications with business leaders and non-security
 professionals.
 
-![A visual illustration of how MITRE ATT&CK, PETE, and Lockheed Martin kill chain map to each other.](./media/mitre-attack-pete-lockheed-kill-chains.png)
+![A visual illustration of how MITRE ATT&CK, PETE, and Lockheed Martin kill chain map to each other.](../media/mitre-attack-pete-lockheed-kill-chains.png)
 
 Attackers can frequently choose from using different types of techniques
 (phishing, credential theft, exploiting software vulnerability) to
