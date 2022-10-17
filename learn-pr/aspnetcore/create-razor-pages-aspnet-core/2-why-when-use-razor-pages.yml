@@ -7,7 +7,7 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Understand when and why to use Razor Pages
 durationInMinutes: 5
 content: |
