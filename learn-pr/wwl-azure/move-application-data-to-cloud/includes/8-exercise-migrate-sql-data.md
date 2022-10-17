@@ -2,4 +2,4 @@ In this exercise, you'll practice migrating a local SQL Server database (in a vi
 
 To complete this exercise, you'll need an Azure subscription. If you don't have one, the exercise provides instructions for signing up for a free or student account. Bookmark this page or open the link below in a new tab or browser window so when you're done with the exercise, you can return to this module.
 
-Follow this link to get started [Migrate your relational data stored in SQL Server to Azure SQL Database](/learn/modules/migrate-sql-server-relational-data/).
+Follow this link to get started [Migrate SQL workloads to Azure SQL Databases](/training/modules/migrate-sql-workloads-azure-sql-databases/).

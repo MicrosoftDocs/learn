@@ -4,8 +4,9 @@ metadata:
   title: Secure your Azure SQL Database
   description: Secure an Azure SQL database to keep the information safe and diagnose potential security concerns as they happen.
   ms.date: 07/05/2022
-  author: rmcmurray
-  ms.author: robmcm
+  author: VanMSFT
+  ms.author: vanto
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your Azure SQL Database

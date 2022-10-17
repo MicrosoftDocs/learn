@@ -64,7 +64,7 @@ Now, you're ready to start exploring and cleansing your data!
 
 ## Check local setup with the Azure Static Web Apps extension
 
-Before continuing, make sure that you're signed in to Azure and you have access to your subscriptions in the Azure Static Web Apps extension. 
+Before continuing, make sure that you're signed in to Azure and that you have access to your subscriptions in the Azure Static Web Apps extension.
 
 In the left icon menu, select the Azure extension. Look for a section for Static Web Apps. In this section, you'll see all of your Azure subscriptions, including, for example, a Pay-As-You-Go subscription. If you haven't created a static web app in Azure before, nothing should be listed under the subscription. Make sure that at the bottom of your Visual Studio Code window, you are signed in to the Azure account that you want to use to create this resource.
 

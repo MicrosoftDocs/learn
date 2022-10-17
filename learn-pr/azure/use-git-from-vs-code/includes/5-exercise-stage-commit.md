@@ -70,7 +70,7 @@ Selecting this link displays all commits in this branch, and the commit you crea
 
 ## Next steps
 
-When you work on a real open-source project, you might want to create a pull request (PR) to add the commits in your fork to the project source code that's stored in the upstream repository.  For more information, see [About pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests?azure-portal=true).
+When you work on a real open-source project, you might want to create a pull request (PR) to add the commits in your fork to the project source code that's stored in the upstream repository.  For more information, see [About pull requests](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
 
 ## Recap
 
