@@ -1,10 +1,10 @@
-DevSecOps applies [innovation security](./innovation-security.md) by integrating security processes and tools into the DevOps development process.
+DevSecOps applies [innovation security](/azure/cloud-adoption-framework/secure/innovation-security) by integrating security processes and tools into the DevOps development process.
 
 Because DevOps itself is an emerging discipline with a high degree of process variations, successful DevSecOps hinges on understanding and thoughtfully integrating security into the development process. Adding security should start with low-friction changes to the code, the development processes, and the infrastructure that hosts the workload. Focus first on changes with the highest positive effect on security while placing a low burden on DevOps processes and skills.
 
 This documentation reviews each stage of a continuous integration and continuous delivery (CI/CD) DevOps process and what security controls we recommend integrating first.
 
-![DevSecOps controls](./media/devsecops-controls.png)
+![DevSecOps controls](../media/devsecops-controls.png)
 
 ## Plan and develop
 
@@ -147,12 +147,8 @@ The tools and techniques in this guidance offer a holistic security model for or
 
 ### Feedback loops
 
-:::image type="content" source="./media/continuous-security.png" alt-text="Screenshot showing the Continuous security model." lightbox="./media/continuous-security.png":::
+:::image type="content" source="../media/continuous-security.png" alt-text="Screenshot showing the Continuous security model." lightbox="../media/continuous-security.png":::
 
 All these techniques and tools empower teams to find and flag risks and vulnerabilities that require investigation and potential resolution. Operations teams who receive an alert, or discover a potential issue when they investigate a support ticket, need a route back to the development team to flag items for review. A smooth, collaborative, feedback loop is vital to address issues quickly and minimize the risk of a vulnerability as much as possible. 
 
 A common pattern for feedback is to integrate it into a developer work management system, such as Azure DevOps or GitHub. An organization can link alerts or incidents to work items for developers to plan and action. This process provides an effective way for developers to resolve issues within their standard workflow, including development, testing, and release.
-
-## Securing the pipeline and CI/CD workflow
-
-https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/best-practices/secure-devops
