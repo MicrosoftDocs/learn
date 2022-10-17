@@ -20,9 +20,9 @@ Manage identities and governance in Azure (15-20%)
 
 - Manage subscriptions and governance
 
-   - Configure Azure policies
+  - Configure Azure policies
 
-   - Configure management groups
+  - Configure management groups
 
 ## Prerequisites
 
