@@ -152,3 +152,7 @@ The tools and techniques in this guidance offer a holistic security model for or
 All these techniques and tools empower teams to find and flag risks and vulnerabilities that require investigation and potential resolution. Operations teams who receive an alert, or discover a potential issue when they investigate a support ticket, need a route back to the development team to flag items for review. A smooth, collaborative, feedback loop is vital to address issues quickly and minimize the risk of a vulnerability as much as possible. 
 
 A common pattern for feedback is to integrate it into a developer work management system, such as Azure DevOps or GitHub. An organization can link alerts or incidents to work items for developers to plan and action. This process provides an effective way for developers to resolve issues within their standard workflow, including development, testing, and release.
+
+## Securing the pipeline and CI/CD workflow
+
+https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/secure/best-practices/secure-devops

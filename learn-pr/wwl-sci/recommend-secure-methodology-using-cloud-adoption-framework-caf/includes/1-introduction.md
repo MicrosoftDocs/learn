@@ -1,8 +1,8 @@
 In this module, you'll learn how to:
 
-- A
-- B
-- C
+- Recommend a DevSecOps process
+- Recommend a methodology for asset protection
+- Recommend strategies for managing and minimizing risk
 
 The content in the module will help you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.
 
