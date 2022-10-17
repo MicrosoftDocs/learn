@@ -6,11 +6,7 @@ Consider the following points if your application is built using SQL API or Tabl
 
 * For many real-world scenarios, session consistency is optimal and it's the recommended option. 
 
-* If your application requires strong consistency, it is recommended that you use bounded staleness consistency level.
-
-* If you need stricter consistency guarantees than the ones provided by session consistency and single-digit-millisecond latency for writes, it is recommended that you use bounded staleness consistency level.
-
-* If your application requires eventual consistency, it is recommended that you use consistent prefix consistency level.
+* If you need stricter consistency guarantees than the ones provided by session consistency it is recommended that you use bounded staleness consistency level.
 
 * If you need less strict consistency guarantees than the ones provided by session consistency, it is recommended that you use consistent prefix consistency level.
 
