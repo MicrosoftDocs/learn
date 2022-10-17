@@ -1,39 +1,4 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
-
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise
-
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+You must register your web app with Azure AD to enable users to authenticate. In the banking company example, the company intends to build a Django web app to allow its customers access services. Here, you'll register a single-tenant web app in Azure AD and configure a Django app to use the registration details. You'll also create a test user for testing purposes.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,23 +21,119 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Register a single-tenant web application
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Apps using the Microsoft identity platform are registered and managed in Azure AD tenants.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Sign in to the [Azure portal](https://portal.azure.com/). If your account is present in more than one Azure AD tenant, select your profile at the top right corner in the menu on top of the page, and then switch directory to change your portal session to the desired Azure AD tenant.
+1. Navigate to the Microsoft identity platform for developers [App registrations page](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
+1. Select **+ New registration**.
+
+    :::image type="content" source="../media/03-app-registration-page.png" alt-text="Screenshot of Azure portal showing app registrations page." :::
+
+1. In the **Register an application** page that appears, enter your application's registration information:
+
+    1. In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example *python-django-webapp-auth*.
+    1. Under **Supported account types**, select *Accounts in this organizational directory only*.
+    1. In the **Redirect URI (optional)** section, select *Web* and enter the following redirect URI: *http://localhost:8000/auth/redirect*.
+
+    :::image type="content" source="../media/03-app-registration-form.png" alt-text="Screenshot of Azure portal showing app registrations form." :::
+
+1. Select **Register** to create the application.
+1. In the app's registration screen, find and note the **Application (client) ID** and **Directory (tenant) ID**. You use this value in your app's configuration file(s) later in your code.
+
+    :::image type="content" source="../media/03-app-registration-details.png" alt-text="Screenshot of Azure portal showing app ID and tenant ID." :::
+
+1. Select **Save** to save your changes.
+
+## Create a client secret for the app registration
+
+The web app will also need a client secret to sign in with Azure AD to exchange the authorization code for an access token.
+
+1. In the app's registration screen, select **Certificates & secrets** blade on the left to open the page where we can generate secrets and upload certificates.
+1. In the **Client secrets** section, select *+ New client secret*:
+
+    :::image type="content" source="../media/03-app-certificates-and-secrets.png" alt-text="Screenshot of Azure portal showing page to create certificates and secrets." :::
+
+    1. Type a key description. For example, *Django web app secret*.
+    1. Select one of the available key durations as per your security concerns. 
+    1. The generated key value will be displayed when you select the *Add* button. Copy the generated value for use in the steps later. You'll need this key later in your code's configuration files. **This key value won't be displayed again**, and isn't retrievable by any other means, so make sure to note it from the Azure portal before navigating to any other screen or blade.
+
+    :::image type="content" source="../media/03-app-registration-secret-value.png" alt-text="Screenshot of Azure portal showing app secrets details." :::
+
+## Create a test user
+
+We'll now create a test user account to use with our test app.
+
+1. Navigate to your tenant's overview page and select *Users* on the left navigation panel.
+
+    :::image type="content" source="../media/03-tenant-users-page.png" alt-text="Screenshot of Azure portal showing tenant users page." :::
+
+1. On the users page, select *+ New user*.
+
+    :::image type="content" source="../media/03-add-new-user-page.png" alt-text="Screenshot of Azure portal showing page to add a new user to a tenant." :::
+
+1. In the form that appears, fill in the required fields then select *Create*.
+
+## Configure Django web app to use app registration details
+
+To configure your Django web app to use the Azure AD app registration details, ensure you have a running Django project.
+
+1. Install the `ms-identity-web` library. The `ms-identity-web` library is a wrapper for MSAL python. It handles much of the required MSAL for Python configurations.
+
+    ```bash
+        pip install git+https://github.com/azure-samples/ms-identity-python-utilities@main
+    ```
+
+1. Create the Azure AD JSON config file that stores the registration details. This file is created at the base of the project. Same directory as the *manage.py* file. Name the file *aad.config.json* and add the following content.
+
+    1. Find the string `{enter-your-tenant-id-here}` and replace the existing value with your Azure AD tenant ID.
+    1. Find the string `{enter-your-client-id-here}` and replace the existing value with the application ID (clientId).
+    1. Find the string `{enter-your-client-secret-here}` and replace the existing value with the client secret value.
+
+    ```json
+        {
+            "type": {
+                "client_type": "CONFIDENTIAL",
+                "authority_type": "SINGLE_TENANT",
+                "framework": "DJANGO"
+            },
+            "client": {
+                "client_id": "{enter-your-client-id-here}",
+                "client_credential": "{enter-your-client-secret-here}",
+                "authority": "https://login.microsoftonline.com/{enter-your-tenant-id-here}"
+            },
+            "auth_request": {
+                "redirect_uri": null,
+                "scopes": [],
+                "response_type": "code"
+            },
+            "flask": null,
+            "django": {
+                "id_web_configs": "MS_ID_WEB_CONFIGS",
+                "auth_endpoints": {
+                    "prefix": "auth",
+                    "sign_in": "sign_in",
+                    "edit_profile": "edit_profile",
+                    "redirect": "redirect",
+                    "sign_out": "sign_out",
+                    "post_sign_out": "post_sign_out"
+                }
+            }
+        }
+    ```
+
+1. In the project's settings file, add the *MsalMiddleware* class from the *ms_identity_web* library to the project's middleware. The Azure AD configuration object is created from the JSON config file. This Azure AD configuration object is used to instantiate *IdentityWebPython*. This must be named *MS_IDENTITY_WEB* as shown in the code below.
+
+    ```python
+        from ms_identity_web.configuration import AADConfig
+        from ms_identity_web import IdentityWebPython
+ 
+        AAD_CONFIG = AADConfig.parse_json(file_path='aad.config.json')
+        MS_IDENTITY_WEB = IdentityWebPython(AAD_CONFIG)
+        ERROR_TEMPLATE = 'auth/{}.html' # for rendering 401 or other errors from msal_middleware
+        MIDDLEWARE.append('ms_identity_web.django.middleware.MsalMiddleware')
+    ```
 
 <!-- 5. Validation -------------------------------------------------------------------------------------------
 
@@ -93,11 +154,14 @@ TODO: describe the end-state
 -->
 
 ## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+
+At this point, we have registered a single-tenant web app in Azure AD. We have then configured our Django web app to use the app registration details.
+
+Run your Django project using the following command to confirm it's working well.
+
+```bash
+    python manage.py runserver
+```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 

@@ -17,7 +17,8 @@ Enable user sign-in to your Django web app using Azure AD
 
 ## Prerequisites
 
-- Beginner level Python 3.8+ and Django web framework.
+- Ability to write Python at a beginner level.
+- Experience working with Django web framework at beginner level.
 - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
 - An Azure Active Directory (Azure AD) tenant that you manage as a Global administrator.
 - A user account in your own Azure AD tenant.
