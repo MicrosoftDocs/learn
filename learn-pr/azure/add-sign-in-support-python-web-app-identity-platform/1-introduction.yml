@@ -3,7 +3,7 @@ uid: learn.add-sign-in-support-python-webapp-identity-platform.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: "Add core authentication and authorization features to a Python web app using the Microsoft identity platform"
   ms.date: 10/14/2022
   author: Dickson-Mwendia
