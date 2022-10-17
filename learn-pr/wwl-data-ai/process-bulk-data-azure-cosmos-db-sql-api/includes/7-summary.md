@@ -10,4 +10,4 @@ For more information about the topics discussed in this module, see:
 
 - [Bulk import data to Azure Cosmos DB for NoSQL account by using the .NET SDK][/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import]
 
-[/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import]: https://docs.microsoft.com/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import
+[/azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import]: /azure/cosmos-db/sql/tutorial-sql-api-dotnet-bulk-import
