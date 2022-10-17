@@ -33,10 +33,10 @@ quiz:
     choices:
     - content: "Optimization algorithms"
       isCorrect: false
-      explanation: "Optimization algorithms don't learn strategies but query the approximator function of the model to find the best action that maximises the target goal."
+      explanation: "Optimization algorithms don't learn strategies but query the approximator function of the model to find the best action that maximizes the target goal."
     - content: "Expert systems"
       isCorrect: false
-      explanation: "Expert Systems include a set of predefined rules to control the environment. Strategies are hardcoded into the algorithm, not learnt."
+      explanation: "Expert Systems include a set of predefined rules to control the environment. Strategies are hardcoded into the algorithm, not learned."
     - content: "Machine Learning"
       isCorrect: false
       explanation: "Machine Learning doesn't find strategies. Unsupervised learning structures the data and finds patterns. Supervised learning learns to replicate human-like outputs based on labels used to train the model."

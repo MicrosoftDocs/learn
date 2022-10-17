@@ -14,16 +14,16 @@ Reinforcement Learning was originally don't as an evolution of control theory in
 
 In Reinforcement Learning, an agent is controlled by the machine learning algorithm. At each step, the agent observes states and interacts with the environment and learns the consequences of its actions via trial and error. The agent learns to alter its behaviour in response to the reward received due to its actions.
 
-![The image shows the diagram of reinforcement learning.](../media/deep-reinforcement-learning.png)
+![The screenshot shows the diagram of reinforcement learning.](../media/deep-reinforcement-learning.png)
 
 The DRL agent observes the environment, decides on an action that is executed in the environment, and gets positively rewarded if the action favours a goal, otherwise it gets negatively rewarded.
 
 Deep Reinforcement Learning has some unique qualities that we describe below.
 
-1. **Change behavior in response to changing conditions**: In response to changes in the process being modelled, DRL can learn and change its behavior by practicing over many scenarios.
-2. **Control through fuzzy, non-linear correlations**. By virtue of being based on neural networks, DRLs can learn complex, non-linear relationships that require decisions to be made across fuzzy, non-linear correlations difficult or impossible to be made by even experts on the matter.
-3. **Act on complex perception**. DRLs can act on complex perception such as visual perception, sound perception, understanding of categories or classifications to control the system well.
-4. **Respond to environment changes that aren't directly measured**. Rarely is every key system variable measured, yet human operators control systems well. Automated systems don't control systems and processes when the system inputs or the system itself changes in unknown ways, yet control under these conditions is often required in real-world systems. DRL algorithms can handle these situations where system changes can't be measured.
-5. **Learn Strategy**. Human operators frequently use strategy to decide and teach which control actions to pursue. Deep Reinforcement Learning can automatically learn strategies.
+- **Change behavior in response to changing conditions**: In response to changes in the process being modelled, DRL can learn and change its behavior by practicing over many scenarios.
+- **Control through fuzzy, non-linear correlations**. By virtue of being based on neural networks, DRLs can learn complex, non-linear relationships that require decisions to be made across fuzzy, non-linear correlations difficult or impossible to be made by even experts on the matter.
+- **Act on complex perception**. DRLs can act on complex perception such as visual perception, sound perception, understanding of categories or classifications to control the system well.
+- **Respond to environment changes that aren't directly measured**. Rarely is every key system variable measured, yet human operators control systems well. Automated systems don't control systems and processes when the system inputs or the system itself changes in unknown ways, yet control under these conditions is often required in real-world systems. DRL algorithms can handle these situations where system changes can't be measured.
+- **Learn Strategy**. Human operators frequently use strategy to decide and teach which control actions to pursue. Deep Reinforcement Learning can automatically learn strategies.
 
 When any or all previous conditions are identified in industrial machinery or processes, it's a sign that the use of these AI technologies that we call Autonomous Intelligence as components of Machine Teaching will help us outperform the current methods used to control the industrial system.
