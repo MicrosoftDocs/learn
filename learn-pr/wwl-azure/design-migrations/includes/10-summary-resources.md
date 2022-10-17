@@ -40,7 +40,7 @@ Now that you've completed this module, you should be able to:
 
 - [Applications and infrastructure migration and modernization](/training/modules/app-and-infra-migration-and-modernization/)
 
-- [Migrate your relational data stored in SQL Server to Azure SQL Database](/training/modules/migrate-sql-server-relational-data/)
+- [Migrate SQL workloads to Azure SQL Databases](/training/modules/migrate-sql-workloads-azure-sql-databases/)
 
 - [Prepare on-premises workloads for migration to Azure](/training/modules/prepare-onpremises-workloads-migration-azure/)
 

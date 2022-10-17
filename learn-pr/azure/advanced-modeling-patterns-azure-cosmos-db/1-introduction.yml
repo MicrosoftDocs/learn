@@ -6,8 +6,9 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 6/11/2021  
-  author: markjbrown  
-  ms.author: mjbrown  
+  author: seesharprun  
+  ms.author: sidandrews  
+  manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 durationInMinutes: 02
