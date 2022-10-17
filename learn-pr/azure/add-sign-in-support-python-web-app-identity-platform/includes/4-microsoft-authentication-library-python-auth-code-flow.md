@@ -25,7 +25,7 @@ To sign in users securely, you need to build an authorization flow using one of 
 
 The diagram below provides a high-level overview of the Microsoft identity platform implementation of the authorization code flow to sign in users and access a protected web API.
 
-:::image type="content" source="../media/4-authorization-code-flow.png" border="true" alt-text="Web app sign in authentication flow":::
+:::image type="content" source="../media/4-authorization-code-flow.png" border="true" alt-text="Diagram that shows the sign in authentication flow in web apps.":::
 
 As in the preceding diagram, the authorization code flow in MSAL Python consists of two main steps:
 

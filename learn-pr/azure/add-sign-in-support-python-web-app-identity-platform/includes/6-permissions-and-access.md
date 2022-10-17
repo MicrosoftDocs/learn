@@ -4,7 +4,7 @@ For your web application to access protected resources like user data, it requir
 
 One way that applications in Microsoft identity platform are granted permissions to access user data is through consent. Consent is a process where users or admins authorize an application to access a protected resource. For example, when a user attempts to sign into an application for the first time, the application can request permission to sign in the user, read their profile, and maintain access to the data. The user sees a consent prompt with the publisher information and a list of permissions the app is requesting, as shown below:
 
-:::image type="content" source="../media/6-consent-to-permissions-request.png" border="true" alt-text=" Consent prompt to allow app's request for permissions":::
+:::image type="content" source="../media/6-consent-to-permissions-request.png" border="true" alt-text=" Screenshot of the consent prompt window requesting users to accept the app's request for permissions.":::
 
 When an application needs to get a new access token from the identity platform, it doesn't prompt the user for consent, if they had already consented to the specified permissions. This is because consent grants can outlast a token as they remain valid until a user or admin revokes them  manually. 
 

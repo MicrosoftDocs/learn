@@ -2,7 +2,7 @@ The Microsoft identity platform helps you build applications your users and cust
 
 In this module, you'll learn how to add core authentication and authorization features to a Python web app using the Microsoft identity platform.
 
-:::image type="content" source="../media/1-python-webapp-integrate-msid.png" border="false" alt-text="Integrate Microsoft identity platform to a Python web app.":::
+:::image type="content" source="../media/1-python-web-app-integrate-identity-platform.png" alt-text="Diagram that shows the integration of Microsoft identity platform into a Python web app.":::
 
 ## Example scenario
 
