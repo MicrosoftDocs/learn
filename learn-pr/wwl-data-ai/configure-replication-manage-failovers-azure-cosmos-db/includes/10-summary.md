@@ -10,8 +10,8 @@ Now that you have completed this module, you can:
 
 For more information about the topics discussed in this module, see:
 
-- [Distribute your data globally with Azure Cosmos DB][docs.microsoft.com/azure/cosmos-db/distribute-data-globally]
-- [Manage an Azure Cosmos account using the Azure portal][docs.microsoft.com/azure/cosmos-db/how-to-manage-database-account]
+- [Distribute your data globally with Azure Cosmos DB][learn.microsoft.com/azure/cosmos-db/distribute-data-globally]
+- [Manage an Azure Cosmos account using the Azure portal][learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account]
 
-[docs.microsoft.com/azure/cosmos-db/distribute-data-globally]: https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally
-[docs.microsoft.com/azure/cosmos-db/how-to-manage-database-account]: https://docs.microsoft.com/azure/cosmos-db/how-to-manage-database-account
+[learn.microsoft.com/azure/cosmos-db/distribute-data-globally]: https://learn.microsoft.com/azure/cosmos-db/distribute-data-globally
+[learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account]: https://learn.microsoft.com/azure/cosmos-db/how-to-manage-database-account
