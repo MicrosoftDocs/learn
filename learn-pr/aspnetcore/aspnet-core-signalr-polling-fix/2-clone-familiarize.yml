@@ -9,7 +9,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 durationInMinutes: 10
 content: |
   [!include[](includes/2-clone-familiarize.md)]

@@ -9,7 +9,7 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 durationInMinutes: 4
 content: |
   [!include[](includes/2-what-is-signalr.md)]
