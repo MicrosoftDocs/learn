@@ -15,14 +15,7 @@ Privilege. These principles apply across the whole technical estate and
 are usually applied to a Zero Trust transformation through a series of
 modernization initiatives.
 
-Figure 10-4 depicts how these Zero Trust principles apply across these
-initiatives![](media/image4.png){width="6.077083333333333in"
-height="2.9006944444444445in"}
-
-**Figure 10-4**  Zero Trust Principles and Initiatives
-
-F10XX04: A diagram depicting the three Zero Trust principles and the
-five security modernization initiatives.
+![A diagram depicting the three Zero Trust principles and the five security modernization initiatives.](../media/zero-trust-principles-initiatives.png)
 
 The initiatives include:
 

@@ -9,14 +9,7 @@ security modernization. This RaMP identifies the most effective controls
 for the most relevant and common attacks that require the least amount
 of investment of time, effort, and resources.
 
-Figure 10-5 is a screenshot of the Zero Trust RaMP in the MCRA
-
-![](media/image5.png){width="6.077083333333333in"
-height="3.4319444444444445in"}**Figure 10-5**  Zero Trust Rapid
-Modernization Plan (RaMP)
-
-F10XX05: A diagram depicting the three Zero Trust principles and the
-five security modernization initiatives.
+![A diagram depicting the three Zero Trust principles and the five security modernization initiatives.](../media/zero-trust-rapid-modernization-plan.png)
 
 The Zero Trust RaMP aligns to the recommended security modernization
 initiatives
