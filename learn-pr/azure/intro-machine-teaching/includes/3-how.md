@@ -1,8 +1,8 @@
-Machine Teaching consists of decomposing a challenge into different skills/modules to be learnt individually. That decomposition is guided by subject matter experts, i.e., those expert operators that have dedicated decades to mastering how to best operate a machine or an industrial process. Each skill/module is then implemented using the simplest technology that solves the problem, selecting them from the pool of Automated Intelligence methods and Autonomous Intelligence methods to leverage strengths and compensate for weaknesses. Then you’ll orchestrate these learnt skills and integrate them into the industrial processes.
+Machine Teaching consists of decomposing a challenge into different skills/modules to be learned individually. That decomposition is guided by subject matter experts, i.e., those expert operators that have dedicated decades to mastering how to best operate a machine or an industrial process. Each skill/module is then implemented using the simplest technology that solves the problem, selecting them from the pool of Automated Intelligence methods and Autonomous Intelligence methods to leverage strengths and compensate for weaknesses. Then you’ll orchestrate these learned skills and integrate them into the industrial processes.
 
 ## Steps to create a brain design
 
-These are the 3 steps you follow to design a brain using the new AI paradigm of Machine Teaching:
+These are the three steps you follow to design a brain using the new AI paradigm of Machine Teaching:
 
 1. **Decompose** your task into skills/modules
 2. **Orchestrate** how your skills/modules work together
@@ -24,15 +24,15 @@ Next, you set a goal for each of the three skills. Each gait phase has distinct 
 | Plant leg           | Plant the leg with enough impulse (force at the moment of impact) to support the weight of the robot. |
 | Swing leg           | This is the gait phase that generates most of the forward motion. |
 
-The first gait phase is about pushing off and picking up enough speed to vault over the other leg when you plant it. In the second phase, velocity doesn’t matter nearly as much. Walkers succeed in the second phase when they plant their leg with enough force to support the weight of the body. Otherwise, the walker will collapse to the ground. The final phase has yet another primary objective: forward motion. This phase is the big mover of the three gaits. During the first and second phase, the body doesn’t move forward very much even when the phases are very successful.
+The first gait phase is about pushing off and picking up enough speed to vault over the other leg when you plant it. In the second phase, velocity doesn’t matter nearly as much. Walkers succeed in the second phase when they plant their leg with enough force to support the weight of the body. Otherwise, the walker will collapse to the ground. The final phase has yet another primary objective: forward motion. This phase is the significant mover of the three gaits. During the first and second phase, the body doesn’t move forward very much even when the phases are very successful.
 
 #### Types of skills
 
-There are 3 types of skills that you will use in the visual language of brain design:
+There are three types of skills that you'll use in the visual language of brain design:
 
-- **Perception skills** process sensory information to perceive, predict, classify, detect or filter. They include advance perception (computer vision, sound processing, etc.), prediction and classification. It is normally implemented using Machine Learning algorithms.
-- **Action skills** that make real-time human-like decisions. They can be implemented with any of the Automated Intelligence set of technologies (control theory, optimization algorithms, expert systems, expert rules) when these technologies are the simplest that solve the task. And it can also be implemented using Deep Reinforcement Learning when the strategy has to be automatically learnt.
-- **Selector skills** that act as supervisors deciding what action skill is best fit for each particular scenario. If the decision is straightforward, the selector is programmable (implemented with regular if-then lines of code). If the decision is fuzzy and difficult to make, it has to be learnt and it will be implemented with Deep Reinforcement Learning.
+- **Perception skills** process sensory information to perceive, predict, classify, detect or filter. They include advance perception (computer vision, sound processing, etc.), prediction and classification. It's normally implemented using Machine Learning algorithms.
+- **Action skills** that make real-time human-like decisions. They can be implemented with any of the Automated Intelligence set of technologies (control theory, optimization algorithms, expert systems, expert rules) when these technologies are the simplest that solve the task. And it can also be implemented using Deep Reinforcement Learning when the strategy has to be automatically learned.
+- **Selector skills** that act as supervisors deciding what action skill is best fit for each particular scenario. If the decision is straightforward, the selector is programmable (implemented with regular if-then lines of code). If the decision is fuzzy and difficult to make, it has to be learned and it will be implemented with Deep Reinforcement Learning.
 
 ### 2. How to orchestrate skills/modules
 
@@ -45,9 +45,9 @@ When you orchestrate the skills, you should ask a few questions to guide your th
 - Are there any skills that can or should be performed in parallel?
 - Are there strategies that should be arranged in a hierarchy?
 
-For the hammer-head walking robot example, we decomposed the task of walking into three skills: lift leg, plant leg and swing leg. Now, we will orchestrate these skills together into a brain design. The gait pattern for walking cycles the skills in a sequence: lift leg, plant leg, swing leg, lift (the opposite) leg, plant (the opposite leg), swing (the opposite) leg.
+For the hammer-head walking robot example, we decomposed the task of walking into three skills: lift leg, plant leg and swing leg. Now, we'll orchestrate these skills together into a brain design. The gait pattern for walking cycles the skills in a sequence: lift leg, plant leg, swing leg, lift (the opposite) leg, plant (the opposite leg), swing (the opposite) leg.
 
-Here is how the brain design for the walking cycles looks like:
+Here's how the brain design for the walking cycles looks like:
 
 The oval yellow shapes represent input and output to the brain. The leftmost oval in a brain design diagram is the input which contains the state environment captured by sensors placed in the environment. The rightmost oval in the brain design diagram is the output that contains the control actions or decisions that the autonomous AI is making to modify the environment.
 
@@ -81,19 +81,19 @@ Review the table of strengths and weaknesses of these technologies to determine 
 
 #### Visual Language of brain Design
 
-In the visual language of brain design, you will color each module of your brain according to the technology used (Figure 2):
+In the visual language of brain design, you'll color each module of your brain according to the technology used (Figure 2):
 
-- Blue: Learnt concept using Reinforcement Learning or Deep Reinforcement Learning
+- Blue: Learned concept using Reinforcement Learning or Deep Reinforcement Learning
 - Green: Machine Learning for Advance Perception
 - White: Programmable concept using a regular step by step algorithm
 - Orange: Math or control theory
 - Purple: Menus or optimization algorithms
-- Red: Manuals or expert systems and expert rules 
+- Red: Manuals or expert systems and expert rules
 
 The brain design for the example of the hammer-head walking robot looks like this:
 
-The action modules are Deep Reinforcement Learning modules as each one of the skills are difficult to learn. The selector is also a Deep Reinforcement Learning selector as it is fuzzy or difficult to decide when the robot is in each one of the gate phases.
+The action modules are Deep Reinforcement Learning modules as each one of the skills are difficult to learn. The selector is also a Deep Reinforcement Learning selector as it's fuzzy or difficult to decide when the robot is in each one of the gate phases.
 
-Remember to always use the shape and colors as depicted above as it is a convention among the Autonomous AI Architects, and it is easy to understand once you learn it.
+Remember to always use the shape and colors as depicted above as it's a convention among the Autonomous AI Architects, and it's easy to understand once you learn it.
 
-Remember to always include the legend to better communicate with other stakeholders who are not trained in the Machine Teaching paradigm.
+Remember to always include the legend to better communicate with other stakeholders who aren't trained in the Machine Teaching paradigm.
