@@ -22,13 +22,13 @@ If you start on the perimeter of the network, you're focused on limiting and eli
 
 You can look for this information in Microsoft Defender for Cloud, which will identify internet-facing resources that don't have network security groups associated with them. It will also identify resources that aren't secured behind a firewall.
 
-There are a couple of ways to provide inbound protection at the perimeter. Azure Application Gateway is a Layer 7 load balancer that also includes a web application firewall (WAF) to provide advanced security for your HTTP-based services. The WAF is based on rules from the OWASP 3.0 or 2.2.9 core rule sets. It provides protection from commonly known vulnerabilities such as cross-site scripting and SQL injection.
+There are a couple of ways to provide inbound protection at the perimeter. Azure Application Gateway is a Layer 7 load balancer that also includes a web application firewall (WAF) to provide advanced security for your HTTP-based services. The WAF is based on rules from the OWASP 3.2, 3.1, 3.0, or 2.2.9 core rule sets. It provides protection from commonly known vulnerabilities such as cross-site scripting and SQL injection.
 
 In the following diagram, the WAF feature of the application gateway protects the system from malicious attacks. The load balancer distributes the legitimate requests among virtual machines.
 
 ![Illustration that shows a single application gateway filtering all external requests made to the virtual machines located at two different sites.](../media/6-app-gateway-waf.png)
 
-For protection of non-HTTP-based services or for increased customization, you can use network virtual appliances (NVAs) to secure your network resources. NVAs are similar to firewall appliances that you might find in on-premises networks, and are available from popular network security vendors. NVAs can provide greater customization of security for those applications that require it. But they increase complexity, so we recommend that you carefully consider your requirements.
+For non-HTTP-based services protection or for increased customization, you can use Azure Firewall to secure your network resources. Azure Firewall is a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection. It can provide greater security customization for those applications that require it. This can increase complexity, so you should carefully consider your requirements.
 
 Any resource exposed to the internet is at risk for a denial-of-service attack. These types of attacks try to overwhelm a network resource by sending so many requests that the resource becomes slow or unresponsive.
 
