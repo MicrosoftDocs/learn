@@ -4,17 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/08/2021
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-sandbox: false
 labModal: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
   questions:
@@ -36,7 +35,7 @@ quiz:
       explanation: "That's correct. Azure Monitor collects data from many sources. Sources include the operating system, resources, and event logs."
     - content: "Azure billing details"
       isCorrect: false
-      explanation: "That's incorrect. Azure Monitor does not collect information related to billing. Microsoft Cost Management should be used to track this information."
+      explanation: "That's incorrect. Azure Monitor does not collect information related to billing.  Microsoft Cost Management should be used to track this information."
     - content: "Backups of database transaction logs"
       isCorrect: false
       explanation: "That's incorrect. Azure Monitor does not backup database transaction logs. Use Azure Backup for system backup information."
