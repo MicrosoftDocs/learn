@@ -6,7 +6,7 @@ metadata:
   author: scottaddie
   ms.author: scaddie
   ms.date: 08/04/2020
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Review resiliency concepts
 durationInMinutes: 10
