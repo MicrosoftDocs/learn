@@ -28,7 +28,7 @@ In the following diagram, the WAF feature of the application gateway protects th
 
 ![Illustration that shows a single application gateway filtering all external requests made to the virtual machines located at two different sites.](../media/6-app-gateway-waf.png)
 
-For protection of non-HTTP-based services or for increased customization, you can use network virtual appliances (NVAs) to secure your network resources. NVAs are similar to firewall appliances that you might find in on-premises networks, and are available from popular network security vendors. NVAs can provide greater customization of security for those applications that require it. But they increase complexity, so we recommend that you carefully consider your requirements.
+For protection of non-HTTP-based services or for increased customization, you can use Azure Firewall to secure your network resources. Azure Firewall is a fully stateful, firewall as a service with built-in high availability and unrestricted cloud scalability. It provides both east-west and north-south traffic inspection. It can provide greater customization of security for those applications that require it. This can increase complexity, so you should carefully consider your requirements.
 
 Any resource exposed to the internet is at risk for a denial-of-service attack. These types of attacks try to overwhelm a network resource by sending so many requests that the resource becomes slow or unresponsive.
 
