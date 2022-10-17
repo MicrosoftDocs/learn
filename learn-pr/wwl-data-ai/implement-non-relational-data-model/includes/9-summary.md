@@ -25,6 +25,6 @@ Now that you have completed this module, you can:
 
 [/azure/cosmos-db/relational-nosql]: /azure/cosmos-db/relational-nosql
 [/azure/cosmos-db/modeling-data]: /azure/cosmos-db/modeling-data
-[/azure/cosmos-db/how-to-model-partition-example]: h/azure/cosmos-db/how-to-model-partition-example
+[/azure/cosmos-db/how-to-model-partition-example]: /azure/cosmos-db/how-to-model-partition-example
 [/azure/cosmos-db/partitioning-overview]: /azure/cosmos-db/partitioning-overview
 [/azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs]: /azure/cosmos-db/optimize-cost-throughput#partitioning-strategy-and-provisioned-throughput-costs
