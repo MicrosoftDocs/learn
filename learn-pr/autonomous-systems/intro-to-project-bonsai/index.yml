@@ -8,7 +8,7 @@ metadata:
   author: warrenaj
   ms.author: v-anwarr
   ms.topic: interactive-tutorial
-  ms.prod: learning-bonsai
+  ms.service: bonsai
 title: Introduction to Microsoft Project Bonsai
 summary: Microsoft Project Bonsai enables you to more quickly and easily implement AI-powered automation development. It can simplify machine teaching so you can train and deploy smarter autonomous systems.
 abstract: |
