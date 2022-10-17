@@ -19,11 +19,14 @@ abstract: |
     - Create and configure Azure resources for an Express.js + MongoDB app.
     - Deploy app and data to Azure.
 prerequisites: |
-  - Conceptual understanding of cloud development and deployment
-  - JavaScript server web development experience
+  - GitHub user account and experience such as forking and cloning
+  - Visual Studio Code
+  - Visual Studio Code extension - Azure App Service extension 
+  - JavaScript server web development experience such as Express.js
+  - Familiarity with deployment concepts such as deploying from local computer
+  - Configuring web app such as configuring logging
+  - Finding and resolving cloud app runtime issues 
   - MongoDB database experience
-  - GitHub experience
-  - Visual Studio Code for the local development environment
 iconUrl: /training/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.learn.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
