@@ -33,9 +33,9 @@ Apps using the Microsoft identity platform are registered and managed in Azure A
 
 1. In the **Register an application** page that appears, enter your application's registration information:
 
-    - In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example *python-django-webapp-auth*.
-    - Under **Supported account types**, select *Accounts in this organizational directory only*.
-    - In the **Redirect URI (optional)** section, select *Web* and enter the following redirect URI: *http://localhost:8000/auth/redirect*.
+    1. In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example *python-django-webapp-auth*.
+    1. Under **Supported account types**, select *Accounts in this organizational directory only*.
+    1. In the **Redirect URI (optional)** section, select *Web* and enter the following redirect URI: *http://localhost:8000/auth/redirect*.
 
     :::image type="content" source="../media/03-app-registration-form.png" alt-text="Screenshot of Azure portal showing app registrations form." :::
 
@@ -55,9 +55,9 @@ The web app will also need a client secret to sign in with Azure AD to exchange 
 
     :::image type="content" source="../media/03-app-certificates-and-secrets.png" alt-text="Screenshot of Azure portal showing page to create certificates and secrets." :::
 
-    - Type a key description. For example, *Django web app secret*.
-    - Select one of the available key durations as per your security concerns. 
-    - The generated key value will be displayed when you select the *Add* button. Copy the generated value for use in the steps later. You'll need this key later in your code's configuration files. **This key value won't be displayed again**, and isn't retrievable by any other means, so make sure to note it from the Azure portal before navigating to any other screen or blade.
+    1. Type a key description. For example, *Django web app secret*.
+    1. Select one of the available key durations as per your security concerns. 
+    1. The generated key value will be displayed when you select the *Add* button. Copy the generated value for use in the steps later. You'll need this key later in your code's configuration files. **This key value won't be displayed again**, and isn't retrievable by any other means, so make sure to note it from the Azure portal before navigating to any other screen or blade.
 
     :::image type="content" source="../media/03-app-registration-secret-value.png" alt-text="Screenshot of Azure portal showing app secrets details." :::
 
@@ -87,9 +87,9 @@ To configure your Django web app to use the Azure AD app registration details, e
 
 1. Create the Azure AD JSON config file that stores the registration details. This file is created at the base of the project. Same directory as the *manage.py* file. Name the file *aad.config.json* and add the following content.
 
-    - Find the string `{enter-your-tenant-id-here}` and replace the existing value with your Azure AD tenant ID.
-    - Find the string `{enter-your-client-id-here}` and replace the existing value with the application ID (clientId).
-    - Find the string `{enter-your-client-secret-here}` and replace the existing value with the client secret value.
+    1. Find the string `{enter-your-tenant-id-here}` and replace the existing value with your Azure AD tenant ID.
+    1. Find the string `{enter-your-client-id-here}` and replace the existing value with the application ID (clientId).
+    1. Find the string `{enter-your-client-secret-here}` and replace the existing value with the client secret value.
 
     ```json
         {

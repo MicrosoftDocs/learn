@@ -1,17 +1,5 @@
 Organizations often want to keep their data safe from unauthenticated and unauthorized users. Developers can use Microsoft identity to add authentication to web apps, enabling users to sign in and obtain tokens. In our banking company example, users need to authenticate themselves to access protected data. In order for a web app to use Microsoft's identity platform, you must register a new app with Azure Active Directory (Azure AD). In this unit, you'll learn about registering a web app in an Azure AD tenant.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
 ## Azure AD tenants and user accounts
 
 An Azure AD tenant is used to represent an organization. An Azure AD tenant is also the context within which you will register and manage your apps.
