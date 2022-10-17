@@ -19,9 +19,9 @@ MSAL Python provides several benefits over directly using OAuth 2.0 flows and co
 
 To sign in users securely, you need to build an authorization flow using one of the grants and token flows supported by the identity platform. In this training module, we'll use the authorization code grant flow for sign-in. The recommended calling pattern in web apps using this flow is to:
 
-    - Instantiate a client application. 
-    - Acquire an access token using the authorization code flow.
-    - Using the access token, call a protected web API and fetch user data.
+- Instantiate a client application. 
+- Acquire an access token using the authorization code flow.
+- Using the access token, call a protected web API and fetch user data.
 
 The diagram below provides a high-level overview of the Microsoft identity platform implementation of the authorization code flow to sign in users and access a protected web API.
 
