@@ -1,18 +1,27 @@
-There are many options for securing Azure storage. These options include shared access signatures, storage service encryption, and customer-managed keys.
+Azure Administrators must be familiar with how to configure storage security.
 
-You should now be able to:
-
- -  Configure shared access signatures including URI and SAS parameters.
- -  Configure storage service encryption.
- -  Implement customer-managed keys.
- -  Recommend opportunities to improve storage security.
+In this module, you examined several options for securing Azure Storage. You discovered how to configure shared access signatures (SAS), including the uniform resource identifier (URI) and SAS parameters. You reviewed how to implement customer-managed keys and define stored access policies to configure Azure Storage encryption. You explored opportunities for improving your Azure Storage security solution.
 
 ## Learn more
 
-You can learn more by reviewing the following. A *sandbox* indicates a hands-on exercise. 
+- Grant [limited access to Azure Storage resources with shared access signatures](/azure/storage/common/storage-dotnet-shared-access-signature-part-1).
 
- -  [What is a shared access signature?](/azure/storage/common/storage-dotnet-shared-access-signature-part-1?toc=/azure/storage/blobs/toc.json).
- -  [Azure Storage encryption for data at rest](/azure/storage/common/storage-service-encryption)
- -  [Secure your Azure Storage](/training/modules/secure-azure-storage-account/)
- -  [Control access to Azure Storage with shared access signatures (Sandbox)](/training/modules/control-access-to-azure-storage-with-sas/)
- -  [Implement storage security](/training/modules/storage-security/)
+- Read about [Azure Storage encryption for data at rest](/azure/storage/common/storage-service-encryption).
+
+- Create a [SAS for your Azure storage account](/rest/api/storageservices/create-account-sas).
+
+- Create a [service-level SAS](/rest/api/storageservices/create-service-sas).
+
+- Construct a [user delegation SAS](/rest/api/storageservices/create-user-delegation-sas#construct-a-user-delegation-sas).
+
+- Use [customer-managed keys for Azure Storage encryption](/azure/storage/common/customer-managed-keys-overview).
+
+## Learn more with self-paced training
+
+- Secure your [Azure storage account](/training/modules/secure-azure-storage-account/).
+
+- Implement [Azure Storage security](/training/modules/storage-security/).
+
+## Learn more with optional hands-on exercises
+
+- Control [access to Azure Storage with shared access signatures (sandbox)](/training/modules/control-access-to-azure-storage-with-sas/).

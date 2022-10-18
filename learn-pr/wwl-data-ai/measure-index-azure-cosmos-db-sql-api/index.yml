@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.measure-index-azure-cosmos-db-sql-api
 metadata:
-  title: Measure index performance in Azure Cosmos DB SQL API
-  description: "Measure the performance of an indexing policy in Azure Cosmos DB SQL API."
-  ms.date: 03/03/2022
+  title: Measure index performance in Azure Cosmos DB for NoSQL
+  description: "Measure the performance of an indexing policy in Azure Cosmos DB for NoSQL."
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Measure index performance in Azure Cosmos DB SQL API
-summary: Measure the performance of an indexing policy in Azure Cosmos DB SQL API.
+title: Measure index performance in Azure Cosmos DB for NoSQL
+summary: Measure the performance of an indexing policy in Azure Cosmos DB for NoSQL.
 abstract: |
   After completing this module, you'll be able to:
   *   Tune an indexing policy for specific queries
