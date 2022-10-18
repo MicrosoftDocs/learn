@@ -5,7 +5,7 @@ external attacks. There are many common elements across attacks, but each one ca
 
 The MCRA includes an attack chain diagram that depicts common techniques related to both external attacks and insider risks, as shown below.
 
-![An attack chain slide from MCRA depicting both external attacks and insider risks.](../media/mcra-attack-chain.png)
+![Diagram of an attack chain M C R A depicting both external attacks and insider risks.](../media/mcra-attack-chain.png)
 
 The top portion of this diagram represents common steps seen in many
 external attacks and the Microsoft capabilities that map to each step.
@@ -27,7 +27,7 @@ Prepare-Enter-Traverse-Execute (PETE) model that Microsoft developed to
 improve communications with business leaders and non-security
 professionals.
 
-![A visual illustration of how MITRE ATT&CK, PETE, and Lockheed Martin kill chain map to each other.](../media/mitre-attack-pete-lockheed-kill-chains.png)
+![Diagram of how M I T R E ATT&CK, P E T E, and Lockheed Martin kill chain map to each other.](../media/mitre-attack-pete-lockheed-kill-chains.png)
 
 Attackers can choose different techniques to achieve each goal of prepare, enter, traverse, and execute objectives.
 Attackers may also use a combination of techniques or the same technique over and over again iteratively to achieve their objectives.
