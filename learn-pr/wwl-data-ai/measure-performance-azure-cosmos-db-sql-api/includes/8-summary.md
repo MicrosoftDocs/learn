@@ -31,6 +31,6 @@ For more information about the topics discussed in this module, see:
 [/azure/cosmos-db/sql/troubleshoot-request-rate-too-large]: /azure/cosmos-db/sql/troubleshoot-request-rate-too-large
 [/azure/cosmos-db/cosmosdb-monitor-logs-basic-queries]: /azure/cosmos-db/cosmosdb-monitor-logs-basic-queries
 [/azure/cosmos-db/cosmosdb-monitor-resource-logs]: /azure/cosmos-db/cosmosdb-monitor-resource-logs
-[/azure/azure-monitor/essentials/diagnostic-settings]: crosoft.com/azure/azure-monitor/essentials/diagnostic-settings
+[/azure/azure-monitor/essentials/diagnostic-settings]: /azure/azure-monitor/essentials/diagnostic-settings
 [/azure/data-explorer/kusto/query/tutorial]: /azure/data-explorer/kusto/query/tutorial?pivots=azuremonitor
 
