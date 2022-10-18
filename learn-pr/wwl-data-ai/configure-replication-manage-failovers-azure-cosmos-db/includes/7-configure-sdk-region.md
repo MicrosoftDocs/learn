@@ -1,4 +1,4 @@
-The .NET SDK for Azure Cosmos DB SQL API includes configuration classes that can be used with the **CosmosClient** class to configure which region you want the SDK to target for requests.
+The .NET SDK for Azure Cosmos DB for NoSQL includes configuration classes that can be used with the **CosmosClient** class to configure which region you want the SDK to target for requests.
 
 There are two ways to configure the SDK client:
 
