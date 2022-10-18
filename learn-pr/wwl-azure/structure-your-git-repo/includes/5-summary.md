@@ -10,5 +10,5 @@ You learned how to describe the benefits and usage of:
 ## Learn more
 
  -  [Understand source control - Azure DevOps](/azure/devops/user-guide/source-control).
- -  [Build Azure Repos Git or TFS Git repositories](/azure/devops/pipelines/repos/azure-repos-git).
- -  [Check out multiple repositories in your pipeline](/azure/devops/pipelines/repos/multi-repo-checkout).
+ -  [Build Azure Repos Git repositories - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/repos/azure-repos-git).
+ -  [Check out multiple repositories in your pipeline - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/repos/multi-repo-checkout).
