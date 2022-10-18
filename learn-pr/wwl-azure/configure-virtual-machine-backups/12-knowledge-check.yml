@@ -17,18 +17,18 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "A company has several Azure VMs that are currently running production workloads. There is a mix of production Windows Server and Linux servers. Which of the following is the best choice for production backups?"
+  - content: "A company has several Azure VMs that are currently running production workloads. There's a mix of production Windows Server and Linux servers. Which option is the best choice for production backups?"
     choices:
     - content: "Managed snapshots"
       isCorrect: false
-      explanation: "Incorrect. An Azure Snapshot is a read-only copy of the existing disk in the Microsoft Azure Cloud. This snapshot can be used as a backup or to create a virtual machine. However, the snapshot is only for a single point in time and is not the best choice for production environments."
+      explanation: "Incorrect. An Azure Snapshot is a read-only copy of the existing disk in the Microsoft Azure Cloud. This snapshot can be used as a backup or to create a virtual machine. However, the snapshot is only for a single point in time and isn't the best choice for production environments."
     - content: "Azure Backup"
       isCorrect: true
       explanation: "Correct. Azure Backup is the best option for production workloads."
     - content: "Azure Site Recovery"
       isCorrect: false
       explanation: "Incorrect. Azure Site Recovery would be better for scenarios involving replication, failover, and fallback."
-  - content: "Which of these options is recommended to backup a database disk used for development?"
+  - content: "Which of these options is recommended to back up a database disk used for development?"
     choices:
     - content: "Virtual machine backup"
       isCorrect: false
@@ -41,12 +41,12 @@ quiz:
       explanation: "Correct. Snapshots can be taken at any time and used to quickly restore the database data disk."
   - content: "A malware attack has deleted several virtual machine backups. How long are items available in the soft delete state?"
     choices:
-    - content: "7 days"
+    - content: "Seven days"
       isCorrect: false
       explanation: "Incorrect. Soft delete provides for longer backup recovery."
     - content: "14 days"
       isCorrect: true
-      explanation: "Correct. Backup data is retained for 14 additional days, allowing the recovery of that backup item with no data loss."
+      explanation: "Correct. Backup data is retained for 14 more days, allowing the recovery of that backup item with no data loss."
     - content: "30 days"
       isCorrect: false
-      explanation: "Incorrect. Soft delete does not provide for a 30 day recovery period."
+      explanation: "Incorrect. Soft delete doesn't provide for a 30 day recovery period."

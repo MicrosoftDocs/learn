@@ -1,7 +1,7 @@
 ## Lab scenario
 
-Your organization has decided to use Azure back and recovery services. As the Azure Administrator you need to:
-+ Determine how to backup and restore files hosted on Azure virtual machines and on-premises computers. 
+Your organization has decided to use Azure backup and recovery services. As the Azure Administrator you need to:
++ Determine how to back up and restore files hosted on Azure virtual machines and on-premises computers. 
 + Identify methods for protecting data stored in the Recovery Services vault.
 
 ## Architecture diagram
@@ -17,12 +17,12 @@ Your organization has decided to use Azure back and recovery services. As the Az
     + Create a recovery services vault in the same region you deployed the virtual machines.
     + Configure the recovery services vault for geo-redundant storage and soft delete. 
 + **Task 3**: Implement Azure virtual machine-level backup.
-    + Configure the recovery services vault to backup Azure virtual machines.
+    + Configure the recovery services vault to back up Azure virtual machines.
     + Create a backup policy that will run daily at 12:00 AM.
     + Enable backup for one of the virtual machines. 
 + **Task 4**: Implement file and folder backup.
     + Connect through remote desktop to a virtual machine and access the Azure portal.
-    + Configure the recovery services vault to backup on-premises files and folders. 
+    + Configure the recovery services vault to back up on-premises files and folders. 
     + Install the download agent for Windows Server or Windows Client.
     + Register the agent with the recovery services vault.
     + Create a backup schedule and back up local files.
