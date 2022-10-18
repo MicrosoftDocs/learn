@@ -2,5 +2,5 @@ As your application matures, you can customize your indexing policy to better ma
 
 After completing this module, you'll be able to:
 
-- Customize an indexing policy in Azure Cosmos DB SQL API
+- Customize an indexing policy in Azure Cosmos DB for NoSQL
 - Evaluate whether a composite index is appropriate for a solution
