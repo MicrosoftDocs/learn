@@ -10,6 +10,9 @@ Your organization has decided to use Azure backup and recovery services. As the 
 
 ## Objectives
 
+> [!NOTE]
+> Task 2 and Task 3 focus on virtual machine backup. 
+
 + **Task 1**: Provision the lab environment. 
     + Review an [Azure Resource Manager template]( https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/10/az104-10-vms-edge-template.json).
     + Use the template to deploy two virtual machines. These virtual machines will be used to test different backup scenarios.
