@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Recommend a ransomware strategy by using Microsoft Security Best Practices"
   questions:
-  - content: "In developing a ransomware recovery plan, which role is responsible for driving results and cross team collaboration?"
+  - content: "In phase 1 of developing a ransomware recovery plan, which role is responsible for driving results and cross team collaboration?"
     choices:
     - content: "Security Architecture."
       isCorrect: false
@@ -28,9 +28,9 @@ quiz:
     - content: "Security compliance management."
       isCorrect: false
       explanation: "Incorrect. Security compliance management is responsible for monitoring the initiative to ensure compliance."
-  - content: "Which of the following is a goal of phase two of ransomware protection, 'limit the damage'?"
+  - content: "Which of the following items is a goal of phase 2 of ransomware protection, 'limit the damage'?"
     choices:
-    - content: "Ensure additional protection for critical data assets."
+    - content: "Ensure more protection for critical data assets."
       isCorrect: false
       explanation: "Incorrect. While data assets are important to protect, this phase of ransomware protection focuses on the identities with access to critical assets."
     - content: "Protect privileged roles."

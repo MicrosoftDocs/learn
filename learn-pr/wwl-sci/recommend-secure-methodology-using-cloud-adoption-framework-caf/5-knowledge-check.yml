@@ -24,29 +24,29 @@ quiz:
       explanation: "Incorrect. These security controls are used in the 'Commit the code' phase."
     - content: "1) Threat modeling, 2) IDE security plug-ins and pre-commit hooks and 3) peer reviews and securing coding standards."
       isCorrect: true
-      explanation: "Correct. These are all security controls which should be applied the plan and develop stage."
+      explanation: "Correct. These are all security controls, which should be applied the plan and develop stage."
     - content: "1) Dynamic application security testing 2) Cloud configuration validation 3) Infrastructure scanning."
       isCorrect: false
-      explanation: "Incorrect. These security controls are used in the 'Build and test' phase"
+      explanation: "Incorrect. These items are security controls that used in the 'Build and test' phase"
   - content: "What should be the first step to get started with asset protection?"
     choices:
     - content: "Start with industry baselines."
       isCorrect: false
-      explanation: "Incorrect. This is actually the second step for getting started with asset protection."
+      explanation: "Incorrect. This is technique is actually the second step for getting started with asset protection."
     - content: "Focus on well known resources."
       isCorrect: true
       explanation: "Correct."
     - content: "Make a list of accountable and responsible teams."
       isCorrect: false
-      explanation: "This is key information in the asset protection process, but is not the first step."
+      explanation: "This best practice is key information in the asset protection process, but is not the first step."
   - content: "The goal of a mature security program should be which of the following?"
     choices:
     - content: "Search for and eliminate risk."
       isCorrect: false
-      explanation: "Incorrect. It may be difficult or impossible to completely eliminate all risk from an organizations systems."
+      explanation: "Incorrect. It may be difficult or impossible to completely eliminate all risk from an organization's systems."
     - content: "Expose and mitigate risks."
       isCorrect: true
       explanation: "Correct."
-    - content: "Prevent risks from ocurring."
+    - content: "Prevent risks from occurring."
       isCorrect: false
       explanation: "Incorrect. In situations where a security program is being created after systems already exist, the goal should be to handle existing risks."
