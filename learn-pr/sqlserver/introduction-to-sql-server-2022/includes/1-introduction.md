@@ -10,7 +10,7 @@ SQL Server 2022 also allows developers to build new applications connecting rela
 
 The following diagram shows the major capabilities of SQL Server 2022:
 
-<!-- TODO: Diagram of SQL22 will go here. -->
+**TODO: Diagram of SQL22 will go here**
 
 ## What will we be doing?
 

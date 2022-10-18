@@ -4,7 +4,7 @@ SQL Server 2022 enables rich hybrid data platform capabilities to connect to the
 
 SQL Server 2022 connects to the cloud with the following Azure services as seen in the following figure:
 
-<!-- TODO: Put in image here showing overall hybrid data platform story -->
+**TODO: Put in image here showing overall hybrid data platform story**
 
 The SQL Server 2022 engine has been enhanced to integrate with all of these Azure services but also can require additional software or configuration:
 
@@ -64,6 +64,8 @@ Now when committed transactions are made in SQL Server 2022 for affected tables,
 
 You can now use the power of Synapse with PowerBI, Spark, or other analytics to read SQL Server 2022 data in near real-time offloaded from the primary SQL Server database.
 
+You can learn more about Synapse link for SQL Server at https://aka.ms/synapselinksql
+
 ## Central governance with Microsoft Purview
 
 Microsoft Purview provides services for central governance by allowing you to create policies for authentication and authorization to SQL Server 2022.
@@ -88,6 +90,8 @@ You do not need to create a login or user account for the AAD account to apply t
 
 You can delete the access policy from Microsoft Purview to remove the authentication and authorization of the AAD account at any time. You can also apply an access policy across multiple SQL Server 2022 instances thereby providing a central governance method.
 
+You can learn more about Microsoft Purview access policies for SQL Server 2022 at https://aka.ms/purviewsqlaccesspolicies.
+
 ## Central authentication using Azure Active Directory (AAD)
 
 Azure Active Directory (AAD) provides a cloud-based central authentication authority for any organization and advanced authentication methods. SQL Server 2022 supports logins or users based on AAD account.
@@ -109,4 +113,28 @@ One of the benefits of AAD is support for advanced authentication methods such a
 - Azure Active Directory Universal with Multi-Factor Authentication
 - Azure Active Directory access token
 
+You can learn more about SQL Server and Azure Active Directory (AAD) authentication at https://aka.ms/sqlserveraad.
+
 ## Stay protected with Microsoft Defender for SQL
+
+Microsoft Defender for SQL, part of the Microsoft Defender for Cloud, supports Defender for SQL Server on machines including an Azure Arc-enabled SQL Server.
+
+## The challenge
+
+Ensuring your SQL Server and data is protected is critical to any business. Security professionals are always looking to find ways to stay ahead of security threats to SQL Server in a robust and reliable fashion.
+
+## The solution
+
+Microsoft Defender for SQL provides a reliable and industry-proven method to detect security vulnerabilities and provide advanced threat protection for SQL Server. You can enable Microsoft Defender for SQL by registering SQL Server 2022 using the Azure extension for SQL Server to make the instance an Azure Arc-enabled SQL Server.
+
+Microsoft Defender for SQL Server provides two main capabilities:
+
+### Vulnerability Assessment
+
+Microsoft Defender will scan your SQL Server configuration and provide recommendations on possible security vulnerabilities based industry standards such as CIS and FedRAMP.
+
+### Advanced Threat Protection
+
+Microsoft Defender will monitor possible security threats to your SQL Server instance and alert you including SQL injection attacks, suspicious login activity, and brute force attacks among others.
+
+You can learn more about Microsoft Defender for SQL at https://aka.ms/defendersqlserver.
