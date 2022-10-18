@@ -63,9 +63,9 @@ quiz:
       explanation: "Correct. Reduce compromise isn't a key security strategy principle."
   - content: "Microsoft has built capabilities and resources to help accelerate your implementation of this security guidance on Microsoft Azure. Which tool is responsible for continuous assessment of the workloads and provides security visibility via Secure Score?"
     choices:
-    - content: "Azure Security Benchmark"
+    - content: "Microsoft cloud security benchmark"
       isCorrect: false
-      explanation: "Incorrect. ASB is a set of security recommendations."
+      explanation: "Incorrect. MCSB is a set of security recommendations."
     - content: "Microsoft Defender for Cloud"
       isCorrect: true
       explanation: "Correct. Defender for Cloud performs continuous assessment, and it has the Secure Score capability built-in."

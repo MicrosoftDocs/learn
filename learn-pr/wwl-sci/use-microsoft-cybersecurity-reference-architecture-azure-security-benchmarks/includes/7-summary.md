@@ -6,8 +6,8 @@
 -   **Follow best practices unless you have a reason not to.**
     Organizations should follow well defined and well-reasoned best
     practices unless there is a specific reason not to. Best practices
-    are not unquestionably perfect and applicable to all situations, but
-    they have been proven to work elsewhere so you should not ignore
+    aren't unquestionably perfect and applicable to all situations, but
+    they have been proven to work elsewhere so you shouldn't ignore
     them without good reason.
 
 -   **Apply and integrate best practices.** Like any guidance or advice,
@@ -44,10 +44,10 @@
     Azure native security controls, and security roles and
     responsibilities.
 
--   **Azure Security Benchmark (ASB)** provides security best practices
+-   **Microsoft cloud security benchmark (MCSB)** provides security best practices
     for infrastructure and development platforms across a hybrid of
     Microsoft Azure, on-premises datacenters, and other cloud providers
-    like AWS and GCP. The ASB includes two types of guidance:
+    like AWS and GCP. The MCSB includes two types of guidance:
 
     -   **Security controls:** Security recommendations that are
         generally applicable across environment
@@ -67,7 +67,7 @@
     Effective security programs must protect against both insider risk
     as well as attacks by external threat actors. You can find best
     practices for protecting from insider and external attacks
-    throughout the MCRA and ASB. You should have an understanding of the
+    throughout the MCRA and MCSB. You should have an understanding of the
     **attack chain** concept that adapts of the 'kill chain' concept
     from military conflict to cybersecurity. This helps you understand
     attacks and plan security controls by viewing them as a sequential
@@ -78,7 +78,7 @@
     to keep up with changing threats, changes to cloud platforms, and
     changes in business models (which are responding to a rapidly
     evolving world). You can find best practices for adopting a Zero
-    Trust approach to security throughout the MCRA and ASB.
+    Trust approach to security throughout the MCRA and MCSB.
 
 -   **Zero Trust Rapid Modernization Plan (RaMP)** outlines quick wins
     across different initiatives in the Zero Trust transformation of a
