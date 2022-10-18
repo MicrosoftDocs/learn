@@ -3,13 +3,13 @@
 Azure Arc-enabled SQL Managed Instance (MI) provides nearly the same features, functionality, and user experience as Azure SQL MI, except it runs on your chosen hardware, on your version-supported kubernetes cluster inside your data center or multicloud environment.
 
 Arc-enabled SQL MI has the following Features and Capabilities:
--	**[Supported Features and Services]((/azure/azure-arc/data/managed-instance-features)**
-    - **[RDBMS High Availability]((/azure/azure-arc/data/managed-instance-features#RDBMSHA)**
-    - **[RDBMS Scalability and Performance]((/azure/azure-arc/data/managed-instance-features#RDBMSSP)**
-    - **[RDBMS Security]((/azure/azure-arc/data/managed-instance-features#RDBMSS)**
-    - **[RDBMS Manageability]((/azure/azure-arc/data/managed-instance-features#RDBMSM)**
-    - **[Programmability]((/azure/azure-arc/data/managed-instance-features#Programmability)**
-    - **[Tools]((/azure/azure-arc/data/managed-instance-features#tools)**
+-	**[Supported Features and Services](/azure/azure-arc/data/managed-instance-features)**
+    - **[RDBMS High Availability](/azure/azure-arc/data/managed-instance-features#RDBMSHA)**
+    - **[RDBMS Scalability and Performance](/azure/azure-arc/data/managed-instance-features#RDBMSSP)**
+    - **[RDBMS Security](/azure/azure-arc/data/managed-instance-features#RDBMSS)**
+    - **[RDBMS Manageability](/azure/azure-arc/data/managed-instance-features#RDBMSM)**
+    - **[Programmability](/azure/azure-arc/data/managed-instance-features#Programmability)**
+    - **[Tools](/azure/azure-arc/data/managed-instance-features#tools)**
 -	**[Unsupported Features and Services](/azure/azure-arc/data/managed-instance-features#Unsupported)**
 
 ## Service Tiers
