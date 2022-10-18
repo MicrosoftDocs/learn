@@ -2,7 +2,7 @@ In this section, we'll diagnose and troubleshoot Azure Cosmos DB service unavail
 
 ## Required ports are blocked
 
-Verify that the following ports are enabled for the NoSQL API.
+Verify that the following ports are enabled for the SQL API.
 
 | **Connection mode** | **Supported protocol** | **Supported SDKs** | **API/Service port** |
 | :--- | :--- | :--- | :--- |
@@ -23,7 +23,6 @@ This error should be troubleshot like a [request timeout error][/azure/cosmos-db
 
 Check the [Azure status][/status] page to see if there's an ongoing issue.
 
-[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]: https://docs.microsoft.com/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout#troubleshooting-steps
+[/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]: /azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout#troubleshooting-steps
 [/status]: https://status.azure.com/status
-
 
