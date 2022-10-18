@@ -37,6 +37,6 @@ The results from the Read API are arranged into the following hierarchy:
 
 - **Pages** - One for each page of text, including information about the page size and orientation.
 - **Lines** - The lines of text on a page.
-- **Words** - The words in a line of text.
+- **Words** - The words in a line of text, including the bounding box coordinates and text itself.
 
 Each line and word includes bounding box coordinates indicating its position on the page.
