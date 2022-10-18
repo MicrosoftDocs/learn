@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.implement-azure-cosmos-db-sql-api-point-operations
 metadata:
-  title: Implement Azure Cosmos DB SQL API point operations
-  description: "Write code to create, read, update, and delete items in Azure Cosmos DB SQL API."
-  ms.date: 08/18/2022
+  title: Implement Azure Cosmos DB for NoSQL point operations
+  description: "Write code to create, read, update, and delete items in Azure Cosmos DB for NoSQL."
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement Azure Cosmos DB SQL API point operations
-summary: Write code to create, read, update, and delete items in Azure Cosmos DB SQL API.
+title: Implement Azure Cosmos DB for NoSQL point operations
+summary: Write code to create, read, update, and delete items in Azure Cosmos DB for NoSQL.
 abstract: |
   After completing this module, you'll be able to:
   - Perform CRUD operations using the SDK

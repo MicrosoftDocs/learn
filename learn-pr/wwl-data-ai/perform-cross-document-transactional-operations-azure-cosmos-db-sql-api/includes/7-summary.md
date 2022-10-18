@@ -3,7 +3,7 @@ In this module, you explored how to create a transactional batch using client-si
 Now that you have completed this module, you can:
 
 - Create a transactional batch and review results
-- Implement optimistic concurrency control in the Azure Cosmos DB SQL API
+- Implement optimistic concurrency control in the Azure Cosmos DB for NoSQL
 
 ## Learn more
 
