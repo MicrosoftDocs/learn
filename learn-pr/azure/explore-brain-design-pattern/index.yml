@@ -38,8 +38,8 @@ units:
 - learn.oxford.explore-design-brain-patterns.functional-pattern
 - learn.oxford.explore-design-brain-patterns.strategy-pattern
 - learn.oxford.explore-design-brain-patterns.when-choose-specific-pattern
-- learn.oxford.explore-autonomous-intelligence.knowledge-check
-- learn.oxford.explore-autonomous-intelligence.summary
+- learn.oxford.explore-design-brain-patterns.knowledge-check
+- learn.oxford.explore-design-brain-patterns.summary
 
 badge: 
   uid: learn.oxford.explore-design-brain-patterns.badge
