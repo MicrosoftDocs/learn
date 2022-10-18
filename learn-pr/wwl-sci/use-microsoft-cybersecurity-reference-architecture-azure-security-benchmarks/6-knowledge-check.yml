@@ -27,26 +27,26 @@ quiz:
       explanation: "Correct."
     - content: "Patch selection further erodes trust in software vendors."
       isCorrect: false
-      explanation: "Incorrect. While this may be an outcome of this practice, it is not the primary negative outcome."
+      explanation: "Incorrect. While the erosion of trust may be an outcome of this practice, it is not the primary negative outcome."
   - content: "After being introduced, XDR systems became widely popular for what reason?"
     choices:
     - content: "They provided broad visibility and correlation across all tools and technology."
       isCorrect: false
-      explanation: "Incorrect. This is the strength of SIEM systems."
+      explanation: "Incorrect. This property is the strength of SIEM systems."
     - content: "They provide greater coverage that SIEM systems do."
       isCorrect: false
       explanation: "Incorrect. SIEM systems provide greater coverage than XDR systems."
     - content: "They reduced false positives."
       isCorrect: true
       explanation: "Correct."
-  - content: "Which of the following is an example of the best practice 'Integrate security operations signals with access decisions'?"
+  - content: "Which of the following statements is an example of the best practice 'Integrate security operations signals with access decisions'?"
     choices:
     - content: "Assume breach and explicitly validate telemetry during access requests."
       isCorrect: false
-      explanation: "Incorrect. This is an example of the best practice 'Apply Zero Trust principles to modernizing access control'."
+      explanation: "Incorrect. This statement is an example of the best practice 'Apply Zero Trust principles to modernizing access control'."
     - content: "Use a single identity and implement single sign-on."
       isCorrect: false
-      explanation: "Incorrect. This is an example of the best practice 'Simplify identity and access management architecture'."
+      explanation: "Incorrect. This statement is an example of the best practice 'Simplify identity and access management architecture'."
     - content: "Block access to a compromised asset while it is being restored."
       isCorrect: true
       explanation: "Correct."
