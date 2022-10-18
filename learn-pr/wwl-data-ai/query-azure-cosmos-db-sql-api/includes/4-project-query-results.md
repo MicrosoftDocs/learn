@@ -1,6 +1,6 @@
 When developing middle-tier and API applications, there is a tendency to build highly complex solutions to translate database results to something that the business application can understand and use. This workaround often occurs because the database platform is inflexible and must store the data in some fixed schema that can never be changed.
 
-One of the great things about JSON is that it’s compatible with various developer platforms making it highly flexible. Azure Cosmos DB SQL API extends the SQL query language by adding functionality to manipulate the JSON results of your query so you can change the query result to map to the schema and shape that your developer team needs.
+One of the great things about JSON is that it’s compatible with various developer platforms making it highly flexible. Azure Cosmos DB for NoSQL extends the SQL query language by adding functionality to manipulate the JSON results of your query so you can change the query result to map to the schema and shape that your developer team needs.
 
 Let’s look at an example.
 
