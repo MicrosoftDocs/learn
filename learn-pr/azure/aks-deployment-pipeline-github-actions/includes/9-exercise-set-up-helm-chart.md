@@ -68,7 +68,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 1. To open the editor in the current directory, run `code .` .
 
-1. In the left menu, go to the `kubernetes` folder and open the `Chart.yaml` file.
+1. In the left menu, expand the `kubernetes` folder, open the `contoso-website` folder,  and open the `Chart.yaml` file.
 
     `Chart.yaml` is the file that names the chart. This file is where Helm looks for information about the chart itself. You should have a file that looks like this example:
 
@@ -250,7 +250,7 @@ Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Value
 
 ## Create a service
 
-1. Find and open the `service.yaml` file.
+1. Find and open the `service.yaml` file in the `templates` folder.
 
 1. In the `metadata` section of the file, add a new key called `namespace`. Use the same value that you used in the `deployment.yaml` file.
 

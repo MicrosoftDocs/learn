@@ -262,7 +262,9 @@ Next, you use an action that uses the Azure CLI to get the AKS credentials. Then
 
 You've set the credential secret, but the secret isn't created yet. Let's create it.
 
-1. In a new browser tab, go to your fork of the repository. Select **Settings** > **Secrets**.
+1. In a new browser tab, go to your fork of the repository. Select the **Settings** tab. In the menu under **Security**, select **Secrets** and choose **Actions**. The **Actions Secrets** pane opens.
+
+1. Select **New repository secret**.
 
 1. Create a new secret called `AZURE_CREDENTIALS`. The value of this secret will be the output of the following command, a JSON object:
 
@@ -276,7 +278,7 @@ You've set the credential secret, but the secret isn't created yet. Let's create
 
 Now, you have access to your cluster and you have Helm installed. The next step is to deploy the application. For this step, you use the command instructions that are native to GitHub Actions.
 
-1.  In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`.
+1. In the YAML file, below the latest step, create a new `- name:` key. Name the key `Run Helm Deploy`. Then, below this key, create another key called `run`.
 
     The YAML should look like this example:
 
