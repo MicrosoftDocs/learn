@@ -7,7 +7,7 @@ metadata:
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-  ms.prod: learning-aspnetcore
+  ms.prod: aspnet-core
 title: Exercise - Review the code and verify deployment
 durationInMinutes: 12
 content: |
