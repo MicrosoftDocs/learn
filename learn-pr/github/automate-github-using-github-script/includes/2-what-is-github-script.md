@@ -1,6 +1,6 @@
 Here, we'll discuss how GitHub Script lets you automate common GitHub processes using GitHub Actions workflows.
 
-## What is GitHub Script? 
+## What is GitHub Script?
 
 [GitHub Script](https://github.com/actions/github-script?azure-portal=true) is an action that provides an authenticated [octokit](https://octokit.github.io/rest.js/?azure-portal=true) client and allows JavaScript to be written directly in a workflow file. It runs in [Node.js](https://nodejs.org/?azure-portal=true), so you have the power of that platform available when writing scripts.
 
@@ -14,11 +14,11 @@ You've always been able to automate the GitHub API via octokit/rest.js, although
 
 The short answer is that it can do virtually anything with respect to automating GitHub. Not only do you have access to commits, pull requests, and issues, but you also have access to users, projects, and organizations. You can retrieve lists of commonly used files, like popular licenses or `.gitignore` files. You can even render Markdown.
 
-If you're building something that integrates GitHub, the odds are good that you will find what you're looking for in [the full octokit/rest.js documentation](https://octokit.github.io/rest.js/?azure-portal=true).
+If you're building something that integrates GitHub, the odds are good that you'll find what you're looking for in [the full octokit/rest.js documentation](https://octokit.github.io/rest.js/?azure-portal=true).
 
 ### How is using GitHub Script different from octokit/rest.js?
 
-The main difference in usage is that GitHub Script provides you with a pre-authenticated octokit/rest.js client named `github`. 
+The main difference in usage is that GitHub Script provides you with a pre-authenticated octokit/rest.js client named `github`.
 
 So instead of:
 
@@ -57,7 +57,7 @@ jobs:
     steps:
 ```
 
-In this case, there is only one step: the GitHub Script action.
+In this case, there's only one step: the GitHub Script action.
 
 ```yaml
       - uses: actions/github-script@0.8.0
@@ -71,7 +71,8 @@ In this case, there is only one step: the GitHub Script action.
               body: "🎉 You've created this issue comment using GitHub Script!!!"
             })
 ```
-Using GitHub Actions can really help automate the events that take place in your repositories. Imagine a repository visitor opened a new issue containing information about a critical bug. You may want to thank them for bringing that to your attention, however this simple task can become overwhelming as your repository attracts more visitors. By automating an issue comment you could automate the process of thanking visitors every single time.
+
+Using GitHub Actions can really help automate the events that take place in your repositories. Imagine a repository visitor opened a new issue containing information about a critical bug. You may want to thank them for bringing that to your attention; however, this simple task can become overwhelming as your repository attracts more visitors. By automating an issue comment, you could automate the process of thanking visitors every single time.
 
 ### Using actions/github-script@0.8.0
 
@@ -83,13 +84,13 @@ The `script` parameter can be virtually any JavaScript that will use the octokit
 
 After the workflow is run, GitHub Script will log the code it executed for review on the **Actions** tab.
 
-![A completed workflow using GitHub Script.](../media/2-completed-workflow.png)
+![Screenshot of a completed workflow using GitHub Script.](../media/2-completed-workflow.png)
 
 ### Running from a separate file
 
-Sometimes, you may need to use a lot of code to fulfill your GitHub Script scenario. When that happens, you can keep the script in a separate file and reference it from the workflow instead of putting all the script inline.
+Sometimes, you may need to use significant code to fulfill your GitHub Script scenario. When that happens, you can keep the script in a separate file and reference it from the workflow instead of putting all the script inline.
 
-Here is an example of a simple workflow that does this:
+Here's an example of a simple workflow that does this:
 
 ```yaml
 on: push
