@@ -2,7 +2,7 @@ While most of your requests are fine, there are some scenarios where a request c
 
 ## Built-in retry
 
-A transient error is an error that has an underlying cause that soon resolves itself. Applications that connect to your database should be built to expect these transient errors. The Azure Cosmos DB SQL API SDK for .NET has built-in logic to handle common transient failures for read and query requests. The SDK does NOT automatically retry write requests as they are not idempotent.
+A transient error is an error that has an underlying cause that soon resolves itself. Applications that connect to your database should be built to expect these transient errors. The Azure Cosmos DB for NoSQL SDK for .NET has built-in logic to handle common transient failures for read and query requests. The SDK does NOT automatically retry write requests as they are not idempotent.
 
 > [!TIP]
 > Try to always use the latest version of the SDK. The retry logic that is built-in is constantly being improved in newer releases.
