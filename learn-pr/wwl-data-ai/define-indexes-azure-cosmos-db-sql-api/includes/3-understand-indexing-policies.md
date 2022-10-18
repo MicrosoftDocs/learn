@@ -36,7 +36,7 @@ The default indexing policy, in JSON, contains the following content:
 
 There are two primary indexing mode options for most Azure Cosmos DB for NoSQL containers.
 
-The **consistent** indexing mode updates the index synchronously as your perform individual operations that modify an item (create, update, or delete). This indexing mode will be the standard choice for most containers to ensure the index is updated as items change.
+The **consistent** indexing mode updates the index synchronously as you perform individual operations that modify an item (create, update, or delete). This indexing mode will be the standard choice for most containers to ensure the index is updated as items change.
 
 The **none** indexing mode completely disables indexing on a container. This indexing mode is a scenario-specific mode where the indexing operation is either unnecessary or could impact the solution's overall performance. Two examples include:
 
