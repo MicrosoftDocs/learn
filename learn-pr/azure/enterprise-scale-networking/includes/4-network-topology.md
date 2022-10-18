@@ -10,7 +10,7 @@ Virtual WAN simplifies end-to-end network connectivity in Azure and cross-premis
 
 :::image type="content" source="../media/4-virtual-wan-topology.png" alt-text="Diagram that illustrates a Virtual WAN network topology." lightbox="../media/4-virtual-wan-topology-large.png":::
 
-The preceding diagram shows a fully deployed enterprise-scale landing zone. The connectivity subscription contains Virtual WAN, and the landing zone subscription has specific applications and their components.
+The preceding diagram shows a fully deployed Azure landing zone. The connectivity subscription contains Virtual WAN, and the landing zone subscription has specific applications and their components.
 
 ### Recommendations
 
