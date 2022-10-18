@@ -10,11 +10,11 @@ By asking many questions to the subject matter, specially to the expert operator
 
 Being curious is one of the most important abilities of the Autonomous AI Architect.
 
-The most efficient way to obtain the strategies that will become the skills or modules of our brain design is to be able to fill up the following 3-column table that include:
+The most efficient way to obtain the strategies that will become the skills or modules of our brain design is to be able to fill up the following 3-column table that includes:
 
 - The scenario or situation that happens in the environment.
 - What the expert operator thinks it means when the scenario happens.
-- What the expert operator does when the scenario happens. A strategy is a labelled course of action that describes what to do in a specific scenario. It's an action, therefore expressed with a verb and it will be the name of the skill or module of our brain design.
+- What the expert operator does when the scenario happens. A strategy is a labeled course of action that describes what to do in a specific scenario. It's an action, therefore expressed with a verb and it will be the name of the skill or module of our brain design.
 
 For the soap extruder example here's the 3-column table:
 

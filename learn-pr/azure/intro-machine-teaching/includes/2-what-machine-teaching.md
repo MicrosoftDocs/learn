@@ -10,7 +10,7 @@ By using expert domain knowledge, we break down the problem to achieve the final
 
 ## Differences between Machine Teaching and Machine Learning
 
-In Machine Teaching, you divide the learning task into subtasks. Each subtask is learnt separately and then combined to be executed in the right moment or scenario. In contrast, in Machine Learning, you expose the algorithm to lots of data and expect it to learn associations or find patterns on its own. For many of the most common applications of AI technologies today, such as simple text or image recognition, this approach is effective. However, for complex systems in dynamic environments, this standard approach to Machine Learning isn't enough.
+In Machine Teaching, you divide the learning task into subtasks. Each subtask is learned separately and then combined to be executed in the right moment or scenario. In contrast, in Machine Learning, you expose the algorithm to lots of data and expect it to learn associations or find patterns on its own. For many of the most common applications of AI technologies today, such as simple text or image recognition, this approach is effective. However, for complex systems in dynamic environments, this standard approach to Machine Learning isn't enough.
 
 ## Benefits of Machine Teaching
 
