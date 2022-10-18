@@ -1,4 +1,4 @@
-User-defined functions (UDFs) are used to extend the Azure Cosmos DB SQL API’s query language grammar and implement custom business logic. UDFs can only be called from inside queries as they enhance and extend the SQL query language.
+User-defined functions (UDFs) are used to extend the Azure Cosmos DB for NoSQL’s query language grammar and implement custom business logic. UDFs can only be called from inside queries as they enhance and extend the SQL query language.
 
 > [!NOTE]
 > UDFs do not have access to the context object and are meant to be used as compute-only code
