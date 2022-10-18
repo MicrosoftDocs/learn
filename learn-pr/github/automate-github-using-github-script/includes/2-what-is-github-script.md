@@ -57,7 +57,7 @@ jobs:
     steps:
 ```
 
-In this case, there is only one step: the GitHub Script action.
+In this case, there's only one step: the GitHub Script action.
 
 ```yaml
       - uses: actions/github-script@0.8.0
@@ -88,9 +88,9 @@ After the workflow is run, GitHub Script will log the code it executed for revie
 
 ### Running from a separate file
 
-Sometimes, you may need to use a lot of code to fulfill your GitHub Script scenario. When that happens, you can keep the script in a separate file and reference it from the workflow instead of putting all the script inline.
+Sometimes, you may need to use significant code to fulfill your GitHub Script scenario. When that happens, you can keep the script in a separate file and reference it from the workflow instead of putting all the script inline.
 
-Here is an example of a simple workflow that does this:
+Here's an example of a simple workflow that does this:
 
 ```yaml
 on: push
