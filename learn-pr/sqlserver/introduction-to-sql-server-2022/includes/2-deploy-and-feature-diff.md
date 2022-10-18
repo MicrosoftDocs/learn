@@ -80,4 +80,4 @@ Stretch Database is deprecated in SQL Server 2022. This feature will be removed 
 
 ### New deployment experiences in SQL Server 2022
 
-In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. You will learn in this module more details about the capabilities of an Azure Arc-enabled SQL Server.
+In SQL Server 2022, the Azure extension for SQL Server configuration is part of the SQL Server 2022 setup experience. The Azure extension for SQL Server can be used to configure SQL Server 2022 as an Azure Arc-enabled SQL Server. There is no subscription charge to setup an Azure Arc-enabled SQL Server. You only incur subscription charges when you use specific Azure services such as Azure Active Directory (AAD) Authentication, Microsoft Purview, or Microsoft Defender for SQL.
