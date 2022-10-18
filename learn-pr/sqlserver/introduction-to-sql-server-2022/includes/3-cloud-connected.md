@@ -66,6 +66,47 @@ You can now use the power of Synapse with PowerBI, Spark, or other analytics to 
 
 ## Central governance with Microsoft Purview
 
-## Central authentication using Azure Active Directory
+Microsoft Purview provides services for central governance by allowing you to create policies for authentication and authorization to SQL Server 2022.
+
+## The challenge
+
+SQL Server provides a rich system to create logins and users for authentication to connect and roles and permissions for authorization for specific tasks or access to data. One challenge is to integrate the SQL Server security system with other aspects for an organization's security policies and also to establish SQL Server security policies across multiple SQL Server instances.
+
+## The solution
+
+Microsoft Purview allows you to create **access policies** against one or more SQL Server 2022 instances. You must have the proper Azure Role-Based Access Control (RBAC) permissions with a Microsoft Purview Account to create access policies. An access policy defines specific permissions for an Azure Active Directory (AAD) account for a SQL Server instance. Access policies include two different types:
+
+- **Data**
+
+A data access policy allows an Azure Active Directory (AAD) account to login to SQL Server and have access to **read** data from user tables in any database for the instance.
+
+- **DevOps**
+
+A DevOps access policy allows an Azure Active Directory (AAD) account to login to SQL Server and perform specific tasks such as **Performance Monitoring** or **Security Auditing**.
+
+You do not need to create a login or user account for the AAD account to apply the access policy. SQL Server 2022 must be configured as an Azure Arc-enabled SQL Server to use Microsoft Purview access policies. The Azure extension for SQL Server stores information on SQL Server that allows the database engine to connect to Microsoft Purview to retrieve access policies, cache them inside SQL Server, and apply a policy when an AAD account attempts to login to SQL Server.
+
+You can delete the access policy from Microsoft Purview to remove the authentication and authorization of the AAD account at any time. You can also apply an access policy across multiple SQL Server 2022 instances thereby providing a central governance method.
+
+## Central authentication using Azure Active Directory (AAD)
+
+Azure Active Directory (AAD) provides a cloud-based central authentication authority for any organization and advanced authentication methods. SQL Server 2022 supports logins or users based on AAD account.
+
+## The challenge
+
+SQL Server supports authentication for SQL Server or Windows accounts. Many users are looking to centralize their authentication systems using the cloud and to support advanced authentication methods like Multi-Factor Authentication (MFA).
+
+## The solution
+
+SQL Server 2022 now supports AAD account based logins and users. SQL Server 2022 must be configured as an Azure Arc-enabled SQL Server to use AAD. The Azure extension for SQL Server stores information on SQL Server that allows the database engine to authenticate an AAD account.
+
+Like Azure SQL Managed Instance and Azure SQL Database, SQL Server 2022 supports a new syntax for CREATE LOGIN to support an EXTERNAL PROVIDER which is an AAD account. In addition, the CREATE USER T-SQL statement supports an EXTERNAL PROVIDER with an AAD account to provide authentication to users in a database without the need for a login. In addition. AAD groups are also supported.
+
+One of the benefits of AAD is support for advanced authentication methods such as Multi-factor authentication. SQL Server 2022 supports the following AAD authentication methods:
+
+- Azure Active Directory Password
+- Azure Active Directory Integrated
+- Azure Active Directory Universal with Multi-Factor Authentication
+- Azure Active Directory access token
 
 ## Stay protected with Microsoft Defender for SQL
