@@ -86,7 +86,7 @@ The **ConsistencyLevel** enumeration has multiple potential values including:
 
 By default, the client will use the first writable region for requests. This is typically referred to as the primary region. You can use either the **CosmosClientOptions.ApplicationRegion** or **CosmosClientOptions.ApplicationPreferredRegions** to override this behavior.
 
-The **ApplicationRegion** property sets the single preferred region that the client will connect to for operations. It the configured region is unavailable, the client will default to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
+The **ApplicationRegion** property sets the single preferred region that the client will connect to for operations. If the configured region is unavailable, the client will default to the fallback priority list set on the account to determine the next region to use. In this example, the preferred region is configured to **West US**.
 
 ```csharp
 CosmosClientOptions options = new ()
