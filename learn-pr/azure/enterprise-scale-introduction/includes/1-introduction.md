@@ -18,10 +18,10 @@ Landing zones help with cloud adoption by creating better ways to organize resou
 
 After you complete this module, you'll be able to:
 
-- Explain the vision for architecture in the Cloud Adoption Framework
+- Explain the vision for enterprise-scale architecture in the Cloud Adoption Framework
 - Describe the top customer challenges that are addressed by Azure landing zones
 - Define the Cloud Adoption Framework approach for Azure landing zones
-- Explain the architecture design principles
+- Explain the enterprise-scale architecture design principles
 
 ## Prerequisites
 
