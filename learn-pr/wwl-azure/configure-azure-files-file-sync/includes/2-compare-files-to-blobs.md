@@ -1,61 +1,41 @@
-[File storage](/azure/storage/files/storage-files-introduction) offers shared storage for applications using the industry standard [SMB protocol](https://msdn.microsoft.com/library/windows/desktop/aa365233.aspx). Microsoft Azure virtual machines and cloud services can share file data across application components via mounted shares, and on-premises applications can also access file data in the share.
+[Azure Files](/azure/storage/files/storage-files-introduction) offers shared storage for applications by using the industry standard [Server Message Block protocol](https://msdn.microsoft.com/library/windows/desktop/aa365233.aspx). Microsoft Azure Virtual Machines and cloud services can share file data across application components by using mounted shares. On-premises applications can also access file data in the share.
 
-Applications running in Azure virtual machines or cloud services can mount a file storage share to access file data. This process is similar to how a desktop application would mount a typical SMB share. Any number of Azure virtual machines or roles can mount and access the File storage share simultaneously.
+### Things to know about Azure Files
 
-## Common uses of file storage
+Let's examine some charactieristics of Azure Files.
 
- -  **Replace and supplement**. Azure Files can be used to completely replace or supplement traditional on-premises file servers or NAS devices.
- -  **Access anywhere**. Popular operating systems such as Windows, macOS, and Linux can directly mount Azure File shares wherever they are in the world.
- -  **Lift and shift**. Azure Files makes it easy to "lift and shift" applications to the cloud that expect a file share to store file application or user data.
- -  **Azure File Sync**. Azure File shares can also be replicated with Azure File Sync to Windows Servers, either on-premises or in the cloud, for performance and distributed caching of the data where it's being used.
- -  **Shared applications**. Storing shared application settings, for example in configuration files.
- -  **Diagnostic data**. Storing diagnostic data such as logs, metrics, and crash dumps in a shared location.
- -  **Tools and utilities**. Storing tools and utilities needed for developing or administering Azure virtual machines or cloud services.
+- Azure Files stores data as true directory objects in file shares.
 
-## Files and blobs comparison
+- Azure Files provides shared access to files across multiple virtual machines. Any number of Azure virtual machines or roles can mount and access an Azure Files storage share simultaneously.
 
-Sometimes it is difficult to decide when to use file shares instead of blobs or disk shares. Take a minute to review this table that compares the different features.
+- Applications that run in Azure Virtual Machines or cloud services can mount an Azure Files storage share to access file data. This process is similar to how a desktop application mounts a typical SMB share. 
 
-:::row:::
-  :::column:::
-    **Feature**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-  :::column:::
-    **When to use**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Azure Files**
-  :::column-end:::
-  :::column:::
-    Provides SMB, NFS, client libraries, and a REST interface that allows access from anywhere to stored files.
-  :::column-end:::
-  :::column:::
-    You want to "lift and shift" an application to the cloud that already uses the native file system APIs to share data between it and other applications running in Azure. You want to store development and debugging tools that need to be accessed from many virtual machines.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    **Azure Blobs**
-  :::column-end:::
-  :::column:::
-    Provides client libraries and a REST interface that allows unstructured data to be stored and accessed at a massive scale in block blobs.
-  :::column-end:::
-  :::column:::
-    You want your application to support streaming and random-access scenarios. You want to be able to access application data from anywhere.
-  :::column-end:::
-:::row-end:::
+- Azure Files offers fully managed file shares in the cloud that are accessible via SMB. Azure File shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS.
 
+### Things to consider when using Azure Files
 
-Other distinguishing features, when selecting Azure files.
+There are many common scenarios for using Azure Files storage. As you review the following suggestions, think about how Azure Files storage can provide solutions for your organization.
 
- -  Azure files are true directory objects. Azure blobs are a flat namespace.
- -  Azure files are accessed through file shares. Azure blobs are accessed through a container.
- -  Azure files provide shared access across multiple virtual machines. Azure disks are exclusive to a single virtual machine.
+- **Consider replacement and supplement options**. Replace or supplement traditional on-premises file servers or NAS devices by using Azure Files.
 
-> [!NOTE]
-> Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol. Azure File shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS.
+- **Consider global access**. Directly access Azure Files shares by using most operating systems, such as Windows, macOS, and Linux from anywhere in the world.
+
+- **Consider lift and shift support**. _Lift and shift_ applications to the cloud with Azure Files for apps that expect a file share to store file application or user data.
+
+- **Consider the Azure File Sync agent**. Replicate Azure Files shares to Windows Servers by using the Azure File Sync agent. You can replicate on-premises or in the cloud for performance and distributed caching of the data where it's being used.
+
+- **Consider shared applications**. Store shared application settings in Azure Files, such as configuration files.
+
+- **Consider diagnostic data**. Use Azure Files to store diagnostic data such as logs, metrics, and crash dumps in a shared location.
+
+- **Consider tools and utilities**. Azure Files is a good option for storing tools and utilities that are needed for developing or administering Azure virtual machines or cloud services.
+
+## Compare Azure Files and Azure Blob Storage (blobs)
+
+It can be difficult to determine exactly when to use Azure Files shares rather than Azure Blob Storage or Azure Disks (page blobs) shares. The following table compares different features of these services and common implementation scenarios.
+
+| Azure Files | Azure Blob Storage or Azure Disks |
+| --- | --- | 
+| Azure Files provides the SMB and NFS protocols, client libraries, and a REST interface that allows access from anywhere to stored files. | Azure Blob Storage provides client libraries and a REST interface that allows unstructured data to be stored and accessed at a massive scale in block blobs. 
+| - Files in an Azure Files share are true directory objects. <br> - Data in Azure Files is accessed through file shares. <br> - Data stored in Azure Files is shared access across multiple virtual machines. | - Blobs in Azure Blob Storage are a flat namespace. <br> - Blob data in Azure Blob Storage is accessed through a container. <br> - Data stored in Azure Disks is exclusive to a single virtual machine. |
+| _Azure Files is ideal to **lift and shift** an application to the cloud that already uses the native file system APIs. You can share data between the application and other applications running in Azure._ <br> _Azure Files is a good option when you want to store development and debugging tools that need to be accessed from many virtual machines._ | _Azure Blob Storage is ideal for applications that need to support streaming and random-access scenarios._ <br> _Azure Blob Storage is a good option when you want to be able to access application data from anywhere._ |

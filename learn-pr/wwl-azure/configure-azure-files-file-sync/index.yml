@@ -13,7 +13,7 @@ summary: Learn how to configure Azure Files and Azure File Sync.
 abstract: |
   In this module, you learn how to:
   - Identify when to use Azure Files versus Azure Blob Storage.
-  - Configure Azure file shares and file share snapshots.
+  - Configure Azure Files shares and file share snapshots.
   - Identify features and usage cases of Azure File Sync.
   - Identify Azure File Sync components and configuration steps.
 prerequisites: |
