@@ -17,7 +17,7 @@ content: |
 quiz:
   title: "Recommend security best practices"
   questions:
-  - content: "Why is over customizing patch selection an antipattern?"
+  - content: "Why is over-customizing patch selection an antipattern?"
     choices:
     - content: "It delays the deployment of critical patches."
       isCorrect: false
@@ -41,7 +41,7 @@ quiz:
       explanation: "Correct."
   - content: "Which of the following is an example of the best practice 'Integrate security operations signals with access decisions'?"
     choices:
-    - content: "Assume breach, explicitly validate telemetry and signals during access requests."
+    - content: "Assume breach and explicitly validate telemetry during access requests."
       isCorrect: false
       explanation: "Incorrect. This is an example of the best practice 'Apply Zero Trust principles to modernizing access control'."
     - content: "Use a single identity and implement single sign-on."
