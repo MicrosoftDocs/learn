@@ -29,7 +29,7 @@ Your organization has decided to use Azure backup and recovery services. As the 
     + Install the download agent for Windows Server or Windows Client.
     + Register the agent with the recovery services vault.
     + Create a backup schedule and back up local files.
-    + Confirm the backed up files are in the recovery services vault. 
+    + Confirm the backed-up files are in the recovery services vault. 
 + **Task 5**: Perform file recovery by using Azure Recovery Services agent.
     + Remove files that were backed up in the previous task.
     + Use the Recover Data Wizard to retrieve the deleted files.
