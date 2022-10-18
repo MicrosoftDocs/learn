@@ -5,7 +5,7 @@ Cosmos DB monitors its server-side counters using:
 - **Azure Monitor to monitor metrics:** Azure Monitor collects Cosmos DB metrics by default. Metrics are collected every minute. The default retention period is 30 days. The collection includes throughput, storage availability, latency, consistency, and system level metrics. The dimension values for the metrics such as container name are case-insensitive.
 - **Azure Monitor to monitor diagnostic logs:** Telemetries like events and traces are stored as logs.  For example, changing the throughput properties of a container will be a logged event.  Queries can then be run against these logs to analyze the data collected.
 - **The Azure Cosmos DB portal:** The throughput, storage availability, latency, consistency, and system level metrics can be found under the **Metrics** tab of the Azure Cosmos DB account.  The default retention period for these metrics is seven days.
-- **The Cosmos DB SQL API SDKs to programmatically monitor the account:** Use the .NET, Java, Python, Node.js SDKs, and the headers in REST API to programmatically monitor a Cosmos DB account.
+- **The Cosmos DB NoSQL API SDKs to programmatically monitor the account:** Use the .NET, Java, Python, Node.js SDKs, and the headers in REST API to programmatically monitor a Cosmos DB account.
 
     :::image type="content" source="../media/2-monitor-cosmos-db.png" alt-text="Diagram that shows the options available to monitor Azure Cosmos DB.":::
 
@@ -34,4 +34,4 @@ Azure Monitor Logs data is stored into tables.  Queries can be run against these
 Azure Monitor can trigger alerts based on defined conditions.  These alerts can be set on metrics, logs, and the activity log. For example, you can get an alert when a container or a database has exceeded the provisioned throughput limit.
 
 ## Monitor Azure Cosmos DB programmatically
-The SQL APIs don't include account level metrics like storage usage and total requests. The SQL APIs however, provide collection level metrics either using the REST API or the .NET SDK.
+The NoSQL APIs don't include account level metrics like storage usage and total requests. The NoSQL APIs however, provide collection level metrics either using the REST API or the .NET SDK.
