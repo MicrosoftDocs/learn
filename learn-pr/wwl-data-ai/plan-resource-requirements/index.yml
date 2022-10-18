@@ -2,14 +2,14 @@
 uid: learn.wwl.plan-resource-requirements
 metadata:
   title: Plan Resource Requirements
-  description: "Familiarize yourself with the various configuration options for a new Azure Cosmos DB SQL API account."
-  ms.date: 08/31/2022
+  description: "Familiarize yourself with the various configuration options for a new Azure Cosmos DB for NoSQL account."
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan Resource Requirements
-summary: Familiarize yourself with the various configuration options for a new Azure Cosmos DB SQL API account.
+summary: Familiarize yourself with the various configuration options for a new Azure Cosmos DB for NoSQL account.
 abstract: |
   After completing this module, you'll be able to:
   - Evaluate various requirements of your application

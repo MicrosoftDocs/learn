@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.expand-query-transaction-functionality-azure-cosmos-db-sql-api
 metadata:
-  title: Expand query and transaction functionality in Azure Cosmos DB SQL API
-  description: "Author user-defined functions and triggers using JavaScript in Azure Cosmos DB SQL API."
-  ms.date: 08/24/2022
+  title: Expand query and transaction functionality in Azure Cosmos DB for NoSQL
+  description: "Author user-defined functions and triggers using JavaScript in Azure Cosmos DB for NoSQL."
+  ms.date: 10/17/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Expand query and transaction functionality in Azure Cosmos DB SQL API
-summary: Author user-defined functions and triggers using JavaScript in Azure Cosmos DB SQL API.
+title: Expand query and transaction functionality in Azure Cosmos DB for NoSQL
+summary: Author user-defined functions and triggers using JavaScript in Azure Cosmos DB for NoSQL.
 abstract: |
   After completing this module, you'll be able to:
   - Create user-defined functions
