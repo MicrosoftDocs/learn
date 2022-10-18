@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/16/2022
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ quiz:
       explanation: "That's incorrect. Event Grid will provide this value."
     - content: "Data"
       isCorrect: false
-      explanation: "That's incorrect. A value is not required in this property."
+      explanation: "That's incorrect. A value isn't required in this property."
     - content: "Subject"
       isCorrect: true
       explanation: "That's correct. The subject property specifies the publisher-defined path to the event subject and is required."

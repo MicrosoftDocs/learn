@@ -13,7 +13,7 @@ A security engineer uses Azure Active Directory to manage identities, you will w
 
 ## Skills measured
 
-Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Azure Active Directory is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Manage identity and access (30-35%)
 
