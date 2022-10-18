@@ -5,6 +5,7 @@ After you determine your policy definitions, the next step is to create an initi
 
 ## Add a new initiative definition
 
+
 When you create an initiative definition, be sure the definition uses the specific JSON format required by Azure. For more information, see [Azure Policy initiative definition structure](/azure/governance/policy/concepts/initiative-definition-structure).
 
 Here's an example of how to create a new initiative definition in the Azure portal:
@@ -19,6 +20,6 @@ Here are some examples of built-in initiative definitions:
 
 - **Audit machines with insecure password security settings**: Use this initiative to deploy an audit policy to specified resources in your organization. The definition evaluates the resources to check for insecure password security settings. This initiative is located under the Guest Configuration category.
 
-- **Configure Windows machines to run Azure Monitor Agent and associate them to a Data Collection Rule**: Use this initiative to monitor and secure your Windows VMs, virtual machine scale sets, and Arc machines. The definition deploys the Azure Monitor Agent extension and associates the resources with a specified Data Collection Rule. This initiative is located under the Monitoring category.
+- **Configure Windows machines to run Azure Monitor Agent and associate them to a Data Collection Rule**: Use this initiative to monitor and secure your Windows VMs, Virtual Machine Scale Sets, and Arc machines. The definition deploys the Azure Monitor Agent extension and associates the resources with a specified Data Collection Rule. This initiative is located under the Monitoring category.
 
 - **ISO 27001:2013**: Use this initiative to apply policies for a subset of ISO 27001:2013 controls. This initiative is located under the Regulatory Compliance category.

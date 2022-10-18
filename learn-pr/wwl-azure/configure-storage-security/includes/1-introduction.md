@@ -1,29 +1,26 @@
-## Scenario
+Azure Storage provides a comprehensive set of security capabilities that work together to enable developers to build secure applications.
 
-Your company has sensitive data including personal information. The data is used internally and by external application developers.
-
-You need to ensure the data is secured. You provide ways to grant secure access to the information.
-
-## Skills measured
-
-Providing secure access to Azure storage is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
-
-Implement and manage storage (15–20%)
-
-Secure storage
-
- -  Generate shared access signature (SAS) tokens.
- -  Manage access keys.
- -  Configure Azure AD authentication for a storage account.
+In this module, your company is storing sensitive data in Azure Storage, including personal information. The data is used internally and by external application developers. You're responsible for ensuring the data is secure for all users. You're tasked with providing configuration solutions to grant secure access to the information.
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you learn how to:
 
- -  Configure shared access signatures including URI and SAS parameters.
- -  Configure storage service encryption.
- -  Implement customer-managed keys.
- -  Recommend opportunities to improve storage security.
+- Configure a shared access signature, including the uniform resource identifier (URI) and SAS parameters.
+- Configure Azure Storage encryption.
+- Implement customer-managed keys.
+- Recommend opportunities to improve Azure Storage security.
+
+## Skills measured
+
+The content in the module helps you prepare for [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104). The module concepts are covered in:
+
+Implement and manage storage (15–20%)
+
+- Secure storage
+   - Generate shared access signature (SAS) tokens
+   - Manage access keys
+   - Configure Azure Active Directory authentication for an Azure storage account
 
 ## Prerequisites
 
