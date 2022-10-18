@@ -9,7 +9,7 @@ Let's take a look at the key features of Visual Studio Code:
 
 ### Cross-platform support
 
-Visual Studio Code's user interface (UI) is based on Electron, a cross-platform technology for building desktop applications. This technology lets Visual Studio Code run on Linux, macOS, or Windows. The benefit of this versatility is that you can use the same familiar coding environment on whatever platform you're using.
+Visual Studio Code's user interface (UI) is based on [Electron](https://www.electronjs.org/), a cross-platform technology for building desktop applications. This technology lets Visual Studio Code run on Linux, macOS, or Windows. The benefit of this versatility is that you can use the same familiar coding environment on whatever platform you're using.
 
 For example, you can use Visual Studio Code as you work on a web application on Windows. Later, if you need to work from a Linux host, you can install and use Visual Studio Code there to edit Python scripts. You don't have to learn how to use different editors to work on different operating systems.
 
@@ -19,7 +19,7 @@ The following screenshot shows the Windows, Linux, and macOS downloads available
 
 ### Full-featured code editor
 
-Visual Studio Code's editor is based on the Monaco technology that provides a workspace to create and edit code. The editor has rich features such as code syntax coloring, bracket matching, and IntelliSense as shown in the following screenshot. These features help you write and refactor your code more efficiently.
+Visual Studio Code's editor is based on the [Monaco Editor](https://microsoft.github.io/monaco-editor/index.html) technology that provides a workbench to create and edit code. The editor has rich features such as code syntax coloring, bracket matching, and IntelliSense as shown in the following screenshot. These features help you write and refactor your code more efficiently.
 
 :::image type="content" source="../media/2-intellisense.png" alt-text="Screenshot of Visual Studio Code interface showing code syntax coloring, bracket matching, and IntelliSense":::
 
@@ -39,7 +39,7 @@ In addition, you can search for and replace terms within a file or multiple file
 
 ### Integrated terminal
 
-Visual Studio Code integrates your system terminal within the UI so that you can run commands within your working directory without having to switch to another window or application. For example, while working on a web application, you can run Node package manager (npm) commands without having to open a separate terminal window.
+Visual Studio Code integrates your system terminal within the UI so that you can run commands within your working directory without having to switch to another window or application. For example, while working on a web application, you can run Node.js package manager (npm) commands without having to open a separate terminal window.
 
 :::image type="content" source="../media/2-terminal-view.png" alt-text="Screenshot of Visual Studio Code with Terminal window displayed at bottom of UI":::
 

@@ -1,4 +1,4 @@
-Whether you're a beginning or an experienced developer, you'll need the right coding tool to create, edit, manage, run, and debug code. There are many different tools available. Some are essentially simple text editors. Others, such as Integrated Development Environments (IDEs), can have many advanced features and built-in support for multiple languages. But these full-featured IDEs often have a large installation footprint and a steeper learning curve than simpler code editors.
+Whether you're a beginning or an experienced developer, you'll need the right coding tool to create, edit, manage, run, and debug code. There are many different tools available. Some are essentially simple text editors. Others, such as Integrated Development Environments (IDEs), can have many advanced features and built-in support for multiple programming languages. The trade off for full-featured IDEs is that they often have a larger installation footprint and a steeper learning curve than simpler code editors.
 
 So how do you know which coding tool is right for you? It depends on what your needs are. For example, what programming languages are you using? Do you need to integrate with a source control management (SCM) provider such as GitHub?
 
@@ -19,4 +19,4 @@ In this module, we'll evaluate if Visual Studio Code is the right code editor fo
 By the end of this module, you'll have the knowledge to be able to evaluate if Visual Studio Code meets your set of programming requirements.
 
 > [!NOTE]
-> You may have heard about another product called Visual Studio and wonder if it's related to Visual Studio Code. They are different products. Visual Studio is a full-featured IDE, which means that major language support, debugging, and testing are built into the tool. For more information, see [Introduction to Visual Studio](/training/modules/visual-studio-intro).
+> You may have heard about other products in the [Visual Studio family](https://visualstudio.microsoft.com/), such as Visual Studio and Visual Studio for Mac, and wonder if they're related to Visual Studio Code. They are different products. Visual Studio is a full-featured IDE for Windows development, and Visual Studio for Mac is an IDE that runs on macOS and is used for developing .NET applications.
