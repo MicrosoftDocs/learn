@@ -6,7 +6,7 @@ You are not required to provide the partition key for many of the operations on 
 
 ## Use stream API in serialize-deserialize scenarios
 
-If you are building an API, avoid unnecessary serialization and deserialization. For example, you are sometimes forced to deserialize and serialize going to and from some database platforms. With Azure Cosmos DB SQL API, you can use the Stream variants of common item operations to avoid unnecessary performance overhead. This is especially true when using the bulk features of the SDK.
+If you're building an API, avoid unnecessary serialization and deserialization. For example, you are sometimes forced to deserialize and serialize going to and from some database platforms. With Azure Cosmos DB for NoSQL, you can use the Stream variants of common item operations to avoid unnecessary performance overhead. This is especially true when using the bulk features of the SDK.
 
 ## Configure worker task per partition key
 
