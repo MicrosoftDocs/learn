@@ -1,6 +1,6 @@
 Zero Trust is a major transformation of a security program, so it's critical to start with the most impactful items that get you the most security and productivity increases with the least amount of time and resources.
 
-The Zero Trust Rapid Modernization Plan (RaMP) is included in the Microsoft Cybersecurity Reference Architecture (MCRA) and is focused on providing best practices that help you prioritize your security modernization. This RaMP identifies the most effective controls for the most relevant and common attacks that require the least amount of investment of time, effort, and resources.
+The Zero Trust Rapid Modernization Plan (RaMP) is included in the Microsoft Cybersecurity Reference Architecture (MCRA) and provides best practices that help you prioritize your security modernization. This RaMP identifies the most effective controls for the most relevant and common attacks that require the least amount of investment of time, effort, and resources.
 
 ![A diagram depicting the three Zero Trust principles and the five security modernization initiatives.](../media/zero-trust-rapid-modernization-plan.png)
 
