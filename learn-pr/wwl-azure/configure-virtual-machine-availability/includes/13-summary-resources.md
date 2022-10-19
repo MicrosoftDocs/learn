@@ -4,7 +4,7 @@ You should now be able to:
 
  -  Implement availability sets and availability zones.
  -  Implement update and fault domains.
- -  Implement virtual machine scale sets.
+ -  Implement Virtual Machine Scale Sets.
  -  Autoscale virtual machines.
 
 ## Learn more
@@ -12,5 +12,5 @@ You should now be able to:
 You can learn more by reviewing the following. 
 
  -  [Availability options for Azure Virtual Machines](/azure/virtual-machines/availability)
- -  [Learn - Build a scalable application with virtual machine scale sets ](/training/modules/build-app-with-scale-sets/)
+ -  [Learn - Build a scalable application with Virtual Machine Scale Sets](/training/modules/build-app-with-scale-sets/)
  -  [Learn - Implement scale and high availability with Windows Server VM](/training/modules/implement-high-availability-of-windows-server-vms/)
