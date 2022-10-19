@@ -1,8 +1,8 @@
 ## Lab scenario
 
-Your organization is migrating on-premises web apps to Azure. As the Azure Adminstrator you need to:
+Your organization is migrating on-premises web apps to Azure. As the Azure Administrator you need to:
 + Hosting web sites running on Windows servers using the PHP runtime stack. 
-+ How to implement DevOps practices by leveraging Azure web apps deployment slots.
++ How to implement DevOps practices by using Azure web apps deployment slots.
 
 ## Architecture diagram
 
@@ -25,7 +25,7 @@ Your organization is migrating on-premises web apps to Azure. As the Azure Admin
     + Display the default web page in a new browser tab.
     + Push the sample web app code from the local repository to the Azure web app staging deployment slot.
 + **Task 5**: Swap the staging slots.
-    + Swap the deploymnt slots.
+    + Swap the deployment slots.
     + Verify the default web page has been replaced with the Hello World page.
 + **Task 6**: Configure and test autoscaling of the Azure web app.
     + Configure a custom autoscale rule on the production deployment slot.
