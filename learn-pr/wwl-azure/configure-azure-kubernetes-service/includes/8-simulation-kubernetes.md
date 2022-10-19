@@ -1,6 +1,6 @@
 ## Lab scenario
 
-Your organization has several multi-tier applications that are not suitable to run by using Azure Container Instances. As the Azure Administrator you need to:
+Your organization has several multi-tier applications that aren't suitable for Azure Container Instances. As the Azure Administrator you need to:
 + Evaluate using Azure Kubernetes as the container orchestrator. 
 + Test the Azure Kubernetes Service, including its deployment experience and scaling capabilities.
 
@@ -19,7 +19,7 @@ Your organization has several multi-tier applications that are not suitable to r
 + **Task 3**: Deploy pods into the Azure Kubernetes Service cluster.
     + Verify that the cluster consists of a single pool with one node.
     + Verify connectivity to the AKS cluster and deploy the nginx image from the Docker Hub.
-    + Verify that a Kubernetes pod has been created and make the pod available from Internet.
+    + Verify that a Kubernetes pod has been created and is accessible. 
     + Confirm that a browser page displays the Welcome to nginx message.
 + **Task 4**: Scale containerized workloads in the Azure Kubernetes service cluster.
     + Scale the deployment by increasing of the number of pods.

@@ -35,7 +35,7 @@ quiz:
       explanation: "Incorrect. LoadBalancer creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers traffic to reach the application, load-balancing rules are created on the desired ports."
     - content: "ClusterIP"
       isCorrect: true
-      explanation: "Correct. ClusterIP creates an internal IP address for use within the AKS cluster. This is good for internal-only applications that support other workloads within the cluster."
+      explanation: "Correct. ClusterIP creates an internal IP address for use within the AKS cluster."
     - content: "NodePort"
       isCorrect: false
       explanation: "Incorrect. NodePort creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port."
