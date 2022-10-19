@@ -41,7 +41,7 @@ Replace the default contents of the ColorDescriptor.cs file with the preceding c
 
 To display the color list, we'll use a new XAML page. Right-click the `DatabindingSample` project in **Solution Explorer**, and select **Add / New Item**. Choose **Blank Page** from the list of available items, and then enter `ColorList` as the name. Select **Add** to create the page.
 
-![Screenshot that shows Package Layout selected under Visual C Sharp, in the Add New Item dialog box.](../media/create-colorlist-page.png)
+![Screenshot that shows Blank Page selected under Visual C Sharp, in the Add New Item dialog box.](../media/create-colorlist-page.png)
 
 #### 3. Set the startup page
 

@@ -10,7 +10,7 @@ In this lesson, you'll learn how to create an app that shows the current time. Y
 
 If it's not running already, open Visual Studio. Create a new C# Windows Universal project by using the **Blank App (Universal Windows)** template. Call it **DatabindingSample**. This is the project you will work with during the entire UI and Data module.
 
-![Screenshot of Visual Studio 2017 New Project dialog box.](../media/createproject.png)
+![Screenshot of the Visual Studio Create a new project dialog box.](../media/createproject.png)
 
 When you click **OK**, Visual Studio prompts you to enter the target and minimum Windows versions. This is just an exercise project, and you're not planning on deploying it to computers running an older version of Windows. Therefore, you can select the most recent version of Windows for both the minimum and the target version, and then click **OK**.
 
@@ -176,7 +176,7 @@ You now know how to use `{x:Bind`} to create a fast and automatic way of getting
 
 If it's not running already, open Visual Studio. Create a new C# Windows Universal project by using the **WPF App (.NET Framework)** template. Call it **DatabindingSampleWPF**, and then select **OK**. This is the project you will work with during the entire UI and Data module.
 
-![Screenshot of Visual Studio 2017 New Project dialog box.](../media/createproject_wpf.png)
+![Screenshot of the Visual Studio Create a new project dialog box.](../media/createproject_wpf.png)
 
 #### 2. Create the Clock class
 
