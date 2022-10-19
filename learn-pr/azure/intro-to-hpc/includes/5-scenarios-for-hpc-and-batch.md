@@ -49,11 +49,11 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
 
 - Cloud optimized is a strategy for migrating to the cloud by refactoring an application to take advantage of cloud-native features and capabilities.
 
-![Azure Candidate Service Decision.](../media/11-service-criteria.png)
+![Diagram of Azure Candidate Service Decision.](../media/11-service-criteria.png)
 
 ### Which Azure HPC Storage Service Do I Use?
 
-![Azure HPC Storage Decision Tree.](../media/12-azure-hpc-storage-decision.png)
+![Diagram of Azure HPC Storage Decision Tree.](../media/12-azure-hpc-storage-decision.png)
 
 #### CPU-based vs GPU-based Computing
 
@@ -74,14 +74,14 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
       - Which are high utilization, servers are used 80+%  
       - Where we have no working VM configuration
 
-![CPU storage utilization.](../media/13-cpu-storage-utilization.png)
+![Diagram of CPU storage utilization.](../media/13-cpu-storage-utilization.png)
 
 * __GPU__  
 
   - A GPU uses thousands of smaller and more efficient cores for a massively parallel architecture aimed at handling multiple functions at the same time
   - Modern GPUs provide superior processing power, memory bandwidth and efficiency over their CPU counterparts. They're 50–100 times faster in tasks that require multiple parallel processes
 
-![GPU visualization.](../media/14-gpu-vizuatlization.png)
+![Diagram of GPU visualization.](../media/14-gpu-vizuatlization.png)
 
 ### Why low-latency networking is important for tightly coupled jobs?
 
@@ -93,4 +93,4 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
 
 - Nodes require significant crosstalk (**chat**) with each other to operate properly.  
 
-![Low latency networking.](../media/15-low-latency-network.png)
+![Diagram of Low latency networking.](../media/15-low-latency-network.png)
