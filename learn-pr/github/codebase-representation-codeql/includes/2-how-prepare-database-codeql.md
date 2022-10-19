@@ -24,6 +24,7 @@ Use the following steps to set up the CodeQL CLI.
 ### 1. Download the CodeQL CLI zip package
 
 You will need two things to begin using the CodeQL CLI:
+
 - The CLI 
 - The query libraries, which includes the local CodeQL queries in that repo
 
@@ -88,10 +89,12 @@ codeql database create <database> --language=<language-identifier>
 >
 
 You need to specify the following information in the command. Here are the definitions for the terms used in the command:
+
 - `<database>` is a path to the new database to be created
-- `--langauge` is the identifier for the language used to create the database. This can be used with the `--db-cluster` to accept comma-separated lists, or can be specified more than once
+- `--language` is the identifier for the language used to create the database. This can be used with the `--db-cluster` to accept comma-separated lists, or can be specified more than once
 
 You can also specify additional options. These options depend on the location of the source file, if your code needs to be compiled, or if you want to create CodeQL databases for more than one language.
+
 - `--source-root` is the root folder for the primary source files used in the database creation
 - `--db-cluster` is used for multiple-language codebases when you want to create databases for more than one language
 - `--command` is used when you create a database for one or more compiled languages. This option is not needed if you are only using Python and Javascript
