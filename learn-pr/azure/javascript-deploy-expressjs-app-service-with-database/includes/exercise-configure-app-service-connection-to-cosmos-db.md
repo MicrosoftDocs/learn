@@ -18,8 +18,7 @@ Connect your App Service resource to your Cosmos DB resource with a connection s
 
 Open the app in a browser. 
 
-1. In Visual Studio Code, in the Azure explorer.
-1. In the **Resources > Concierge Subscription > App services** section, right-click your web app resource and select **Browse Website**.
+1. In Visual Studio Code, in the Azure explorer, in the **Resources > Concierge Subscription > App services** section, right-click your web app resource and select **Browse Website**.
 1. Use the web app to add, edit, and delete rental properties. 
 
 ## Check your work
