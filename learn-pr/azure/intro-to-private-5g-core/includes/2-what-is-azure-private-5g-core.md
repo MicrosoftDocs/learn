@@ -23,11 +23,8 @@ As shown in the diagram, the packet core instance runs on a Kubernetes cluster d
   
   UEs use SIMs or eSIMs to connect to RAN. SIM vendors offering physical SIM and eSIM services can integrate directly with Azure Private 5G Core through the SIM manager to securely provision physical SIMs and eSIMs.
 
-- **IP networking**
-  TBD: Need more information about cloud connection, ports, and VLAN.
-
 ## Video: Introduction to Azure Private 5G Core
 
 The following video introduces Azure Private 5G Core and its role in typical private MEC solutions:
 
-![A video that introduces Azure Private 5G Core and its role in typical private MEC solutions](../media/introduction-video.mp4)
+TBD: A video that introduces Azure Private 5G Core and its role in typical private MEC solutions

@@ -22,7 +22,7 @@ Azure Private 5G Core provides the following key benefits:
 
 The following videos introduce several private MEC application scenarios, in which Azure Private 5G Core plays a key role:
 
-![A video that introduces several private MEC application scenarios](../media/introduction-video.mp4)
+TBD: A video that introduces several private MEC application scenarios
 
 As discussed in the video, you can typically use private MEC solutions with Azure Private 5G Core in these areas:
 

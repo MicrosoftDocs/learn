@@ -1,4 +1,6 @@
-Intro
+Azure Private 5G Core provides 5G and 4G network functions for enterprise private mobile network. It allows you to manage the network functions centrally from the Azure portal. While providing the convenience of central management through the cloud, the private MEC solution powered by Azure Private 5G Core can ensure data security and low latency levels with local data processing.
+
+This unit introduces the key features of Azure Private 5G Core.
 
 ## Supported 5G network functions
 
@@ -12,23 +14,36 @@ Intro
 
 ## Supported 4G network functions
 
-Azure Private 5G Core uses the following network functions when supporting 4G UEs, in addition to the 5G network functions listed above.
+Azure Private 5G Core uses the following network functions when supporting 4G UEs.
 
 - Mobile Management Entity (MME)
 - MME-Proxy - The MME-Proxy works to allow 4G UEs to be served by 5G network functions.
 
-The following 5G network functions perform specific roles when supporting 4G UEs.
+To support the 4G UEs, the 5G UDR operates as a Home Subscriber Store (HSS), and the 5G UPF operates as a System Architecture Evolution Gateway (SAEGW-U).
 
-- The UDR operates as a Home Subscriber Store (HSS).
-- The UPF operates as a System Architecture Evolution Gateway (SAEGW-U).
+## Azure centralized service management
 
-## Supported 5G and 4G procedures
+Azure Private 5G Core is available as a native Azure service, offering the same levels of reliability, security, and availability for deployment and management as all Azure services. This allows you to use Azure as a central access point to manage individual instances of private mobile networks across multiple enterprise sites.
 
-TBD
+You can use the Azure portal or Azure Resource Manager (ARM) APIs to perform tasks like:
 
-## User equipment (UE) authentication and security context management
+- Deploy and configure a packet core instance on your Azure Stack Edge device.
+- Provision SIM resources to authenticate devices in the network, while also supporting redundancy.
+- Employ Log Analytics and other observability services to view the health of your network and take corrective action through Azure.
+- Use Azure role-based access control (RBAC) to allow granular access to the private mobile network.
+- Access the large ecosystem of Microsoft independent software vendor (ISV) partners for applications and network functions.
 
-Azure Private 5G Core supports the following authentication methods:
+## Flexible integration with Azure private MEC partners
+
+Each packet core instance is standards-compliant and compatible with several RAN partners in the Azure private MEC ecosystem.
+
+Azure Private 5G Core exposes an N2 and N3 interface for the 5G control plane and user plane respectively. It complies with the relevant 3GPP Technical Specifications, allowing you to integrate with a wide range of RAN models. For 4G, it exposes S1-MME and S1-U interfaces to interoperate with 4G RAN models.
+
+Azure Private 5G Core also employs a simple, scalable provisioning model to allow you to bring the SIM partner of your choice to Azure.
+
+## UE authentication and security context management
+
+Azure Private 5G Core supports authentication methods like:
 
 - Authentication using Subscription Permanent Identifiers (SUPI) and 5G Globally Unique Temporary Identities (5G-GUTI) for 5G user equipment (UEs).
 - Authentication using International Mobile Subscriber Identities (IMSI) and Globally Unique Temporary Identities (GUTI) for 4G UEs.
@@ -36,12 +51,6 @@ Azure Private 5G Core supports the following authentication methods:
 - Evolved Packet System based Authentication and Key Agreement (EPS-AKA) for mutual authentication between 4G UEs and the network.
 
 The packet core instance performs ciphering and integrity protection of 5G non-access stratum (NAS). During UE registration, the UE includes its security capabilities for 5G NAS with 128-bit keys.
-
-Azure Private 5G Core supports the following algorithms for ciphering and integrity protection:
-
-- 5GS null encryption algorithm
-- 128-bit Snow3G
-- 128-bit Advanced Encryption System (AES) encryption
 
 ## UE-to-UE traffic
 
@@ -55,37 +64,4 @@ The packet core instance can provide a RAN with an RFSP Index. The RAN can match
 
 ## Multi-Operator Core Network (MOCN)
 
-Multi-operator Core Network (MOCN) aims to maximize resource usage by sharing a RAN between multiple core networks. Azure Private 5G Core supports MOCN, allowing multiple public land mobile networks (PLMNs) to be shared by a gNodeB (for 5G deployments) or eNodeB (for 4G deployments).
-
-In the context of private mobile networks, a single RAN can connect to both a private and a standard macro network, with traffic automatically routed to the appropriate core network based on the PLMN ID.
-
-## Flexible integration with Azure private multi-access edge compute (MEC) partners
-
-Each packet core instance is standards-compliant and compatible with several radio access network (RAN) partners in the Azure private MEC ecosystem.
-
-Azure Private 5G Core exposes an N2 and N3 interface for the 5G control plane and user plane respectively. It complies with the following 3GPP Technical Specifications, allowing you to integrate with a wide range of RAN models:
-
-- [TS 38.413](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3223) for the N2 interface.
-- [TS 29.281](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1699) for the N3 interface.
-
-For 4G, it exposes S1-MME and S1-U interfaces to interoperate with 4G RAN models.
-
-It also employs a simple, scalable provisioning model to allow you to bring the SIM partner of your choice to Azure.
-
-## Azure centralized service management
-
-Azure Private 5G Core is available as a native Azure service, offering the same levels of reliability, security, and availability for deployment and management that are key tenets of all Azure services. This allows you to use Azure as a central access point to manage individual instances of private mobile networks across multiple enterprise sites. You can use the Azure portal (accessible from a choice of any Azure region in the world) or Azure Resource Manager (ARM) APIs to do any of the following tasks:
-
-- Deploy and configure a packet core instance on your Azure Stack Edge device in minutes.
-- Create a virtual representation of your physical mobile network through Azure using mobile network and site resources.
-- Provision SIM resources to authenticate devices in the network, while also supporting redundancy.
-- Employ Log Analytics and other observability services to view the health of your network and take corrective action through Azure.
-- Use Azure role-based access control (RBAC) to allow granular access to the private mobile network to different personnel or teams within your organization, or even a managed service provider.
-- Use an Azure Stack Edge device's compute capabilities to run applications that can benefit from low-latency networks.
-- Seamlessly connect your existing Azure deployments to your new private mobile network using Azure hybrid compute, networking, and IoT services.
-- Access the large ecosystem of Microsoft independent software vendor (ISV) partners for applications and network functions.
-- Utilize Azure Lighthouse and the Azure Expert Managed Services Provider (MSP) program to simplify the end-to-end deployment of a private mobile network through Azure.
-
-## Azure centralized monitoring
-
-Azure Private 5G Core is integrated with Log Analytics in Azure Monitor. You can write queries to retrieve records or visualize data in charts. This lets you monitor and analyze activity in your private mobile network directly from the Azure portal.
+Multi-operator Core Network (MOCN) aims to maximize resource usage by sharing a RAN between multiple core networks. Azure Private 5G Core supports MOCN, allowing multiple public land mobile networks (PLMNs) to be shared by a gNodeB (for 5G deployments) or eNodeB (for 4G deployments). In the context of private mobile networks, a single RAN can connect to both a private and a standard macro network, with traffic automatically routed to the appropriate core network based on the PLMN ID.
