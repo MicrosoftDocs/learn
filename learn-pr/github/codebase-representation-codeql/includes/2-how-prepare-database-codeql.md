@@ -26,7 +26,7 @@ Use the following steps to set up the CodeQL CLI.
 You'll need two things to begin using the CodeQL CLI:
 
 - The CLI 
-- The query libraries, which includes the local CodeQL queries in that repo
+- The query libraries, which include the local CodeQL queries in that repo
 
 The CodeQL CLI download package is a zip archive containing tools, scripts, and various CodeQL-specific files. You can download the `codeql-PLATFORM.zip` file for the specific CLI platform you want to use. Alternatively, you can download the `codeql.zip` file that contains the CLI for all supported platforms.
 
