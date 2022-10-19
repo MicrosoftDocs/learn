@@ -1,13 +1,13 @@
 There are a couple of ways you can do capacity planning for your Azure Cosmos DB workloads:
 
-- If you're migrating your existing database workload but you only know your number of vcores and servers in your existing cluster, you'll need to estimate requests units using [vCores or vCPUs](/azure/cosmos-db/convert-vcore-to-request-unit). We'll discuss this topic in more detail under the *migration* module.
-- If you know your current database workloads typical request rates, you can estimate request units by using the [Azure Cosmos DB capacity planner][/capacitycalculator/].
+- If you're migrating your existing database workload but you only know your number of vcores and servers in your existing cluster, you'll need to estimate requests units using [vCores or vCPUs(/azure/cosmos-db/convert-vcore-to-request-unit). We'll discuss this subject in more detail under the *migration* module.
+- If you know your current database workloads typical request rates, you can estimate request units by using the [Azure Cosmos DB capacity planner](https://cosmos.azure.com/capacitycalculator/).
 
-To optimize cost and performance in Azure Cosmos DB, we must provide the  databases and collections workloads with the right amount of throughput (Request Units per second or RU/s for short). The [Azure Cosmos DB capacity planner][/capacitycalculator/] will help us estimate the required RU/s for our Azure Cosmos DB API for MongoDB workloads. Let's take a look at this tool in more details.
+To optimize cost and performance in Azure Cosmos DB, we must provide the  databases and collections workloads with the right amount of throughput (Request Units per second or RU/s for short). The [Azure Cosmos DB capacity planner](https://cosmos.azure.com/capacitycalculator/) will help us estimate the required RU/s for our Azure Cosmos DB for MongoDB workloads. Let's take a look at this tool in more details.
 
 ## Azure Cosmos DB capacity planner
 
-The [*Azure Cosmos DB capacity planner*][/capacitycalculator/] is an online tool that will estimate the amount of RU/s your workload will need based on multiple parameters that define the workload itself. The capacity planner offers two modes, Basic and Advanced.  Let's take a look at the different workload parameters we'll define for each of these modes. 
+The [*Azure Cosmos DB capacity planner*](https://cosmos.azure.com/capacitycalculator/) is an online tool that will estimate the amount of RU/s your workload will need based on multiple parameters that define the workload itself. The capacity planner offers two modes, Basic and Advanced.  Let's take a look at the different workload parameters we'll define for each of these modes.
 
 ### Basic mode
 
@@ -16,7 +16,7 @@ The *Basic mode* provides a quick cost and throughput estimation for your worklo
 Let's review the diffent workload parameters and the values to input.
 
 - **API** -	Select *Cosmos DB API for MongoDB*.
-- **Number of regions**	- Azure Cosmos DB API for MongoDB is available in all Azure regions. Select the number of regions required for your workload.
+- **Number of regions**	- Azure Cosmos DB for MongoDB is available in all Azure regions. Select the number of regions required for your workload.
 - **Multi-region writes** - If *Enabled*, your application can read and write to any Azure region. If *Disabled*, your application can write data to only a single region, but can read from any selected region. 
     - Enable it when you expect to have an active-active workload that requires low latency writes in different regions.
     - Multi-region writes guarantees 99.999% read and write availability. 
@@ -31,7 +31,8 @@ Let's review the diffent workload parameters and the values to input.
     - When you choose automatic indexing, the estimated RU/s for the update operation is calculated as one property being changed per an update.
 - **Deletes/sec** - Number of delete operations expected per second per region.
 
-[![Diagram showing the Azure Cosmos DB capacity calculator - basic mode](../media/5-azure-cosmos-db-capacity-calculator-basic.png)](../media/5-azure-cosmos-db-capacity-calculator-basic.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Screenshot showing the Azure Cosmos DB capacity calculator - basic mode.](../media/5-azure-cosmos-db-capacity-calculator-basic.png)](../media/5-azure-cosmos-db-capacity-calculator-basic.png#lightbox)
 
 Once you select **Calculate**, the **Cost Estimate** tab will show the total cost for storage and provisioned throughput.  Notice that by default it will show you the **EST. THROUGHPUT REQUIRED**, but you can select **Show Details** to see the estimated cost of the different types of CRUD and query requests.
 
@@ -42,16 +43,16 @@ Once you select **Calculate**, the **Cost Estimate** tab will show the total cos
 
 The *Advanced mode* requires a more detailed view of your workload. You'll need to provide more settings that will yield a more precise estimate on the cost and throughput of your workload. To choose the Advanced mode of the capacity planner, you'll need to sign in to the tool with an account you use to connect to Azure. You can find the **Sign In** option on the upper right hand corner of the tool. 
 
-Once you signed in, you'll notice a more detailed set of parameters than the Basic mode. Let's review the diffent workload parameters and the values to input.
+Once you signed in, you'll notice a more detailed set of parameters than the Basic mode. Let's review the different workload parameters and the values to input.
 
 - **API** -	Select *Cosmos DB API for MongoDB*.
-- **Number of regions**	- Azure Cosmos DB API for MongoDB is available in all Azure regions. Select the number of regions required for your workload.
-- **Multi-region writes** - If *Enabled*, your application can read and write to any Azure region. If *Disabled*, your application can write data to only a single region, but can read from any selected region. 
+- **Number of regions**	- Azure Cosmos DB for MongoDB is available in all Azure regions. Select the number of regions required for your workload.
+- **Multi-region writes** - If *Enabled*, your application can read and write to any Azure region. If *Disabled*, your application can write data to only a single region, but can read from any selected region.
     - Enable it when you expect to have an active-active workload that requires low latency writes in different regions.
     - Multi-region writes guarantees 99.999% read and write availability. 
     - Multi-region writes require more throughput when compared to the single write regions.
-- **Default consistency** - Azure Cosmos DB API for MongoDB supports 4 [consistency levels](/azure/cosmos-db/mongodb/consistency-mapping), to allow developers to balance the tradeoff between consistency, availability, and latency tradeoffs. We'll discuss consistency levels in more details in the *Replication, Monitor and Optimize* module.
- - **Indexing policy** - This setting defines how your workload plans to use its indexes. We'll discuss indexes in more detail in the *Design MongoDB Databases for Azure Cosmos DB* module. To learn more, see [index management](/azure/cosmos-db/mongodb/mongodb-indexing) in API for MongoDB.
+- **Default consistency** - Azure Cosmos DB for MongoDB supports 4 [consistency levels](/azure/cosmos-db/monogdb/consistency-mapping), to allow developers to balance the tradeoff between consistency, availability, and latency tradeoffs. We'll discuss consistency levels in more details in the *Replication, Monitor and Optimize* module.
+ - **Indexing policy** - This setting defines how your workload plans to use its indexes. We'll discuss indexes in more detail in the *Design MongoDB Databases for Azure Cosmos DB* module. To learn more, see [index management](azure/cosmos-db/monogdb/monogdb-indexing) in API for MongoDB.
     - If you choose *Off* option, none of the properties are indexed that results in the lowest RU charge for writes. You'll need to query using the _id field and the shard key for every query, any other query will scan all partitions.
     - If you choose the *Automatic* option, will index all fields/properties in your documents that in turn allows flexible and efficient queries.
     - If you choose the *Custom* option, you can define the properties that are indexed with multi-key indexes or compound indexes. 
@@ -71,15 +72,13 @@ Once you signed in, you'll notice a more detailed set of parameters than the Bas
 - **Request unit (RU) charge per call** - The estimated RU/s charge to execute the selected operation type.
 - **Calls/sec per region** - Number selected operation types executed per second per region.
 
-[![Diagram showing the Azure Cosmos DB capacity calculator - Advanced mode](../media/5-azure-cosmos-db-capacity-calculator-advanced.png)](../media/5-azure-cosmos-db-capacity-calculator-advanced.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Screenshot showing the Azure Cosmos DB capacity calculator - Advanced mode.](../media/5-azure-cosmos-db-capacity-calculator-advanced.png)](../media/5-azure-cosmos-db-capacity-calculator-advanced.png#lightbox)
 
 Once you select **Calculate**, the **Cost Estimate** tab will show the total cost for storage and provisioned throughput.  Notice that by default it will show you the **EST. THROUGHPUT REQUIRED**, but you can select **Show Details** to see the estimated cost of the different types of CRUD and query requests.
 
-> [!TIP]
+> [!TIP] 
 > Don't forget to select **Calculate** again if you change any of the parameters to get a new estimation.
 
-> [!NOTE]
-> All prices are shown in US dollars. Refer to the [Azure Cosmos DB pricing page][/pricing/details/cosmos-db/] to see all rates by region.
-
-[/capacitycalculator/]: https://cosmos.azure.com/capacitycalculator/
-[/pricing/details/cosmos-db/]: https://azure.microsoft.com/pricing/details/cosmos-db/
+> [!NOTE] 
+> All prices are shown in US dollars. Refer to the [Azure Cosmos DB pricing page](https://azure.microsoft.com/pricing/details/cosmos-db/) to see all rates by region.
