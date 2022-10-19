@@ -97,7 +97,7 @@ You can also specify additional options. These options depend on the location of
 
 - `--source-root` is the root folder for the primary source files used in the database creation
 - `--db-cluster` is used for multiple-language codebases when you want to create databases for more than one language
-- `--command` is used when you create a database for one or more compiled languages. This option isn't needed if you're only using Python and Javascript
+- `--command` is used when you create a database for one or more compiled languages. This option isn't needed if you're only using Python and JavaScript
 - `--no-run-unnecessary-builds` is used along with `--db-cluster` to suppress the build command for languages where the CodeQL CLI doesn't need to monitor the build
 
 Additionally, you can create a new directory that can include the CLI and any queries you want to use. The CLI's built-in search operations automatically look in all of the directory's sibling directories for the files used in the database creation.
