@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-machine-learning-model-training-solution.choose-service-to-train
+title: Choose a service to train a machine learning model
+metadata:
+  title: Choose a service to train a machine learning model
+  description: "Choose a service to train a machine learning model"
+  ms.date: 10/19/2022
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-choose-service-to-train.md)]
