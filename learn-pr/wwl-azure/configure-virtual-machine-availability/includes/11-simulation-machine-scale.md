@@ -3,7 +3,7 @@
 Your organization is deploying virtual machines in Azure. As the Azure Administrator you need to:
 
 + Determine different virtual machine compute and storage options.
-+ Implement virtual machine scale sets, including storage resiliency and scalability options.
++ Implement Virtual Machine Scale Sets, including storage resiliency and scalability options.
 + Explore using Azure Virtual Machine Custom Script extensions to automatically configure virtual machines.
 
 ## Architecture diagram
@@ -20,25 +20,25 @@ Your organization is deploying virtual machines in Azure. As the Azure Administr
     + Upload an [Azure PowerShell script](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/az104-08-install_IIS.ps1). This script will install the Windows Server Web Server role on a virtual machine. 
     + Use the custom script extension feature to run the script on a virtual machine. Export the template.
     + Configure the exported [template](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/blob/master/Allfiles/Labs/08/az104-08-custom_script_extension.json) to install the role on a different virtual machine. 
-+ **Task 3**: Scale compute and storage for Azure virtual machines. In this task, you will scale compute for Azure virtual machines by changing their size and scale their storage by attaching and configuring their data disks.
++ **Task 3**: Scale compute and storage for Azure virtual machines. In this task, you'll scale compute for Azure virtual machines by changing their size and scale their storage by attaching and configuring their data disks.
     + Resize the virtual machine.
     + Create and attach a new disk to the virtual machine.
     + Use Azure PowerShell to initialize and partition the new disk.
     + Customize the template to resize the virtual machine and change the disk configuration. 
 + **Task 4**: Register the Microsoft Insights and Microsoft Alerts Management resource providers.
-+ **Task 5**: Deploy zone-resilient Azure virtual machine scale sets by using the Azure portal.
-    + Use the Azure portal to create a virtual machine scale set. 
++ **Task 5**: Deploy zone-resilient Azure Virtual Machine Scale Sets by using the Azure portal.
+    + Use the Azure portal to create a Virtual Machine Scale Set. 
     + Configure the virtual network to include an inbound rule to allow HTTP.
     + Configure load balancing and manual scaling.
     * Deploy the virtual scale set. 
-+ **Task 6**: Configure Azure virtual machine scale sets by using virtual machine extensions.
-    + Upload a Azure PowerShell script to install the install Windows Server Web Server role. 
++ **Task 6**: Configure Azure Virtual Machine Scale Sets by using virtual machine extensions.
+    + Upload an Azure PowerShell script to install the install Windows Server Web Server role. 
     + Run the script on the virtual machines using the custom script extension feature. 
     + Confirm the IIS is now available on the virtual machines. 
-+ **Task 7**: Scale compute and storage for Azure virtual machine scale sets. 
++ **Task 7**: Scale compute and storage for Azure Virtual Machine Scale Sets. 
     + Confirm the virtual machines in the scale set are in different regions.
     + Configure autoscale based on a metric.
-    + Use Azure PowerShell to start an infinite loop that sends the HTTP requests to the web sites hosted on the instances of Azure virtual machine scale set.
+    + Use Azure PowerShell to start an infinite loop that sends the HTTP requests to the web sites hosted on the instances of Azure Virtual Machine Scale Sets
     + Verify a new resource is provisioned. 
 
 > [!NOTE]

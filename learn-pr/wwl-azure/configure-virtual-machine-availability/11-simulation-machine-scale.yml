@@ -13,4 +13,4 @@ azureSandbox: false
 labModal: false
 durationInMinutes: 40
 content: |
-  [!include[](includes/11-simulation-machine-scaling.md)]
+  [!include[](includes/11-simulation-machine-scale.md)]
