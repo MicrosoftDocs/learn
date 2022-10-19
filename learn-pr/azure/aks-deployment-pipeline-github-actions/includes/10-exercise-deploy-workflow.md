@@ -158,7 +158,7 @@ In this exercise, you use Helm version `v3.3.1`. Azure has a built action that d
               version: v3.3.1
       ```
 
-1. Sign in to your AKS cluster by using the Azure CLI through another action that Azure provides. In the search bar, enter **Set Context**. In the search results, select **Azure Kubernetes Set Context** published by **Azure**.
+1. Sign in to your AKS cluster by using the Azure CLI through another action that Azure provides. In the search bar, enter *set context*. In the search results, select **Azure Kubernetes set context** published by **Azure**.
 
     :::image type="content" source="../media/10-azure-kubernetes-set-context.png" alt-text="Screenshot that shows the results for a Set Context search.":::
 
@@ -378,7 +378,9 @@ Now, you have access to your cluster and you have Helm installed. The next step 
                 --set dns.name=${{ secrets.DNS_NAME }}
     ```
 
-1. In a new browser tab, in your fork of the repository, select **Settings** > **Secrets**.
+1. In a new browser tab, go to your fork of the repository. Select the **Settings** tab. In the menu under **Security**, select **Secrets** and choose **Actions**. The **Actions Secrets** pane opens.
+
+1. Select **New repository secret**.
 
 1. Create a new secret called `DNS_NAME`. You can get the value to use for this secret by running the following command in Cloud Shell:
 
