@@ -1,4 +1,4 @@
-Azure File Sync enables you to cache several Azure Files shares on an on-premises Windows Server or cloud virtual machine. You can use the Azure File Sync agent to centralize your organization's file shares in Azure Files, while keeping the flexibility, performance, and compatibility of an on-premises file server. 
+Azure File Sync enables you to cache several Azure Files shares on an on-premises Windows Server or cloud virtual machine. You can use the Azure File Sync to centralize your organization's file shares in Azure Files, while keeping the flexibility, performance, and compatibility of an on-premises file server. 
 
 :::image type="content" source="../media/file-sync-1d3fd2e7.png" alt-text="Illustration that depicts how Azure File Sync can be used to cache an organization's file shares in Azure Files." border="false":::
 
@@ -24,7 +24,7 @@ Cloud tiering is an optional feature of Azure File Sync. Frequently accessed fil
 
 ### Things to consider when using Azure File Sync
 
-There are many advantages to using Azure File Sync. Consider the following scenarios, and think about how you can use the Azure File Sync agent with your Azure Files shares.
+There are many advantages to using Azure File Sync. Consider the following scenarios, and think about how you can use the Azure File Sync with your Azure Files shares.
 
 - **Consider application lift and shift**. Use Azure File Sync to move applications that require access between Azure and on-premises systems. Provide write access to the same data across Windows Servers and Azure Files. 
 

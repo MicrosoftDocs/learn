@@ -2,7 +2,7 @@
 
 ### Things to know about Azure Files
 
-Let's examine some charactieristics of Azure Files.
+Let's examine some characteristics of Azure Files.
 
 - Azure Files stores data as true directory objects in file shares.
 
@@ -22,7 +22,7 @@ There are many common scenarios for using Azure Files storage. As you review the
 
 - **Consider lift and shift support**. _Lift and shift_ applications to the cloud with Azure Files for apps that expect a file share to store file application or user data.
 
-- **Consider the Azure File Sync agent**. Replicate Azure Files shares to Windows Servers by using the Azure File Sync agent. You can replicate on-premises or in the cloud for performance and distributed caching of the data where it's being used.
+- **Consider the Azure File Sync agent**. Replicate Azure Files shares to Windows Servers by using the Azure File Sync agent. You can replicate on-premises or in the cloud for performance and distributed caching of the data where it's being used. We'll take a closer look at the agent in a later unit.
 
 - **Consider shared applications**. Store shared application settings in Azure Files, such as configuration files.
 
