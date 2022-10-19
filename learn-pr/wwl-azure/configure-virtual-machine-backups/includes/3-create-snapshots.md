@@ -11,7 +11,7 @@ A recovery point is considered created only after both steps are completed. As a
  -  Reduces backup and restore times by retaining snapshots locally, for two days by default. This default snapshot retention value is configurable to any value between 1 to 5 days.
  -  Supports disk sizes up to 32 TB. Resizing of disks is not recommended by Azure Backup.
  -  Supports Standard SSD disks along with Standard HDD disks and Premium SSD disks.
- -  Incremental snapshots are stored as page blobs. All the users using unmanaged disks are charged for the snapshots stored in their local storage account. Since the restore point collections used by Managed VM backups use blob snapshots at the underlying storage level, for managed disks you will see costs corresponding to blob snapshot pricing and they are incremental.
+ -  Incremental snapshots are stored as page blobs. 
  -  For premium storage accounts, the snapshots taken for instant recovery points count towards the 10-TB limit of allocated space.
  -  You get an ability to configure the snapshot retention based on the restore needs. Depending on the requirement, you can set the snapshot retention to a minimum of one day in the backup policy blade as explained below. This will help you save cost for snapshot retention if you don’t perform restores frequently.
 
