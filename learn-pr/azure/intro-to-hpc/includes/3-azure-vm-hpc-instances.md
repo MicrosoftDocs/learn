@@ -8,7 +8,7 @@ High-performance computing resources are offered at nearly unlimited scale on Az
 * __N-series virtual machines__ for graphic intensive and CUDA/OpenCL based applications
 * __Cray__ for a fully dedicated and customized supercomputer delivered as a managed service
 
-![Azure computing.](../media/6-azure-computing.png)
+![Diagram of Azure computing.](../media/6-azure-computing.png)
 
 ## Storage
 
@@ -18,7 +18,7 @@ The highly secure cloud storage is available to customers at a massive scale and
 * Access large amounts of I/O with a submillisecond latency with __Azure NetApp Files__, delivered as an Azure service natively within an Azure datacenter
 * For a high throughput storage solution, use __Cray ClusterSor__, a Lustre-based, bare-metal HPC storage solution that’s fully integrated with Azure
 
-![Azure storage.](../media/7-azure-storage.png)
+![Diagram of Azure storage.](../media/7-azure-storage.png)
 
 ## Networking
 
@@ -27,7 +27,7 @@ Azure allows you to create private virtual networks in the cloud, which simplifi
 * Establish private, secure tunnels for hybrid cloud connectivity using Azure ExpressRoute
 * Take advantage of Linux remote direct memory access (RDMA) with InfiniBand for message passing interface (MPI) workloads within your datacenter
 
-![Azure networking.](../media/8-azure-networking.png)
+![Diagram of Azure networking.](../media/8-azure-networking.png)
 
 ## Visualization
 
@@ -37,7 +37,7 @@ Run visualization workloads with HPC and Azure Virtual Machines that boost produ
 * For the most extreme GPU-accelerated graphics applications, such as 3D CAD modeling, 3D rendering, and scientific visualization, use high-performance __NVv3-series VMs__  
   * NVv3 VMs support premium storage and come with twice the system memory (RAM) as earlier NV VMs
 
-![Azure visualization.](../media/9-azure-visualization.png)
+![Diagram of Azure visualization.](../media/9-azure-visualization.png)
 
 ## Mapping Azure VM and Storage products to components in an HPC system
 
@@ -132,7 +132,7 @@ The H-series and N-series VMs that are RDMA capable and can communicate over the
       * Object storage - Object storage contains actual file data. Clients pull the location of files and directories from the metadata services, then access file storage directly.
     * The advantages of distributed storage and superior I/O performance make parallel file systems preferable to NFS in most HPC scenarios, particularly when it comes to shared working storage space
 
-    ![Azure object storage.](../media/10-azure-object-storage.png)
+    ![Diagram of Azure object storage.](../media/10-azure-object-storage.png)
 
 * __Cray ClusterStor__
   * The Cray ClusterStor in Azure storage system is a high capacity and high throughput storage solution to accelerate your HPC simulations.
