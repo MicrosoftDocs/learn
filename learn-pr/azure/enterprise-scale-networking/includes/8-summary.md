@@ -6,7 +6,7 @@ To Learn more about networking design principles for enterprise-scale architectu
 
 ### Landing zone
 
-- [Full enterprise-scale landing zone networking documentation](/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity?azure-portal=true)
+- [Azure landing zone networking documentation](/azure/cloud-adoption-framework/ready/landing-zone/design-area/network-topology-and-connectivity)
 
 ### DNS
 
