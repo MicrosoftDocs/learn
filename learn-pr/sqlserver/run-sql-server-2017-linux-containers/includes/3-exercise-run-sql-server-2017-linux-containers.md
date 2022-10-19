@@ -29,6 +29,7 @@ Let's start by creating an Ubuntu Virtual Machine (VM) in Azure. Later, we can i
         --name UbuntuServer \
         --query publicIps --output tsv \
         --resource-group <rgn>[sandbox resource group name]</rgn>)
+    echo $IPADDRESS
     echo $UBUNTUPASSWORD
     ```
 
