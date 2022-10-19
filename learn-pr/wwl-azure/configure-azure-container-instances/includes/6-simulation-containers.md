@@ -6,7 +6,7 @@ Your organization needs a new platform for its virtualized workloads. As the Azu
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab9b.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab09b.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
