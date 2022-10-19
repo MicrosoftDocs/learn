@@ -26,4 +26,3 @@ Check the [Azure status][/status] page to see if there's an ongoing issue.
 [/azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout]: /azure/cosmos-db/sql/troubleshoot-dot-net-sdk-request-timeout#troubleshooting-steps
 [/status]: https://status.azure.com/status
 
-
