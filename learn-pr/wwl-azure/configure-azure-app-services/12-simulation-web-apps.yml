@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-app-services.interactive-simulation-web-apps
+title: Interactive lab simulation
+metadata:
+  title: Interactive lab simulation
+  description: "Interactive lab simulation"
+  ms.date: 10/19/2022
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 25
+content: |
+  [!include[](includes/12-simulation-web-apps.md)]
