@@ -7,7 +7,7 @@ Your organization wants insight into the performance and configuration of Azure 
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab11.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-11.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
