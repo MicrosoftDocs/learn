@@ -18,6 +18,7 @@ abstract: |
     - Identify the correct options for deploying a Node.js application to Azure.
     - Deploy an Express.js web application to Azure.
     - Understand how to access logs and debug Azure App Service.
+    - Find additional information in Summary
 prerequisites: |
   - GitHub user account and experience such as forking and cloning
   - Visual Studio Code
