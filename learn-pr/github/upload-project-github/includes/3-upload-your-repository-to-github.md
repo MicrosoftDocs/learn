@@ -187,6 +187,7 @@ Follow the steps below to add a local repository using Git:
     ```
 
 7. At the top of your repository on GitHub.com's Quick Setup page, click the **Copy** button to copy the remote repository URL.
+
     :::image type="content" source="../media/7-copy-remote-repository-url-quick-setup.png" alt-text="screenshot copy remote repository url quick setup":::
 
 8. In the Command prompt, [add the URL for the remote repository](https://docs.github.com/get-started/getting-started-with-git/managing-remote-repositories) where your local repository will be pushed.
