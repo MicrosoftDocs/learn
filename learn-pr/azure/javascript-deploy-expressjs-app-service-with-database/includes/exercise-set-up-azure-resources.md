@@ -37,7 +37,7 @@ Find the free sandbox subscription in Visual Studio Code.
 
 1. Open Visual Studio Code.
 1. To open the **Azure** pane on the left, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
-1. In the **App Service** section, right-click the sandbox subscription name. Select **Create New Web App (Advanced)**. By selecting the advanced creation process, you can select _all_ your choices.
+1. In the **Resources**, select the Learn subscription. Right-click on **App Service** then select **Create New Web App (Advanced)**. By selecting the advanced creation process, you can select _all_ your choices.
 1. Use the following table to answer the creation steps:
 
     | Step | Value|
@@ -51,7 +51,7 @@ Find the free sandbox subscription in Visual Studio Code.
     |Pricing tier|Confirm the tier is Free, F1.|
     |Application Insights|Create a new Application Insights resource and select the default name.|
 
-1. When you're finished, the new web app appears in the **App Service** section of the **Azure** pane on the left.
+1. When you're finished, the new web app appears in the **App Service** section of the **Azure** explorer's **Resources** section.
 1. Expand the web app to see the subnodes:
 
     |Subnode|Purpose|
@@ -76,7 +76,7 @@ When you created the resource, you also created and connected Application Insigh
 
 ## Deploy the sample from your local computer to App Service
 
-1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
+1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left and expand the **Concierge Subscription** subscription in the **Resources** section.
 1. In the **App Service** section, find and expand the subscription's App Service resource.
 1. The app you created in the previous exercise, such as `jimb-rentals`, should be listed.
    
