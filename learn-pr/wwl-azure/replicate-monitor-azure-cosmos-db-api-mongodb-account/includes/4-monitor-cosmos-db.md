@@ -89,10 +89,10 @@ Azure Monitor allows us to filter further by specific **CollectionName**, **Data
 
 ## Observe rate-limiting events
 
-Operations running in an Azure Cosmos DB API for MongoDB, might return a **16500** *status code error*. This error code, indicates that a **Request rate too large** exception has occurred. This exception means that Azure Cosmos DB requests are being rate limited.
+Operations running in an Azure Cosmos DB for MongoDB, might return a **16500** *status code error*. This error code, indicates that a **Request rate too large** exception has occurred. This exception means that Azure Cosmos DB requests are being rate limited.
 
 > [!NOTE]
-> In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB API for MongoDB account.
+> In a production environment we ***shouldn't*** see any 16500 errors. In a production environment ***Server Side retries*** should always be enabled by default in your Azure Cosmos DB for MongoDB account.
 
 When provisioned throughput is used, the request units per second (RU/s) is set for the workload.  Operations (read, writes, queries) against the service consume request units(RUs). If in any given second the operations consume more RUs than the provisioned RU/s, Azure Cosmos DB will return a 16500 exception.
 
@@ -117,6 +117,6 @@ To verify if the database access is coming across a hot shard, in the Azure port
 > [![Screenshot that shows the charts by throughput of a hot shard.](../media/4-monitor-hot-shard.png)](../media/4-monitor-hot-shard.png#lightbox)
 
 > [!NOTE]
-> Besides rate-limiting exceptions, some other exceptions can also be raised by Azure Cosmos DB. To review some of those exceptions, please see the *[Troubleshoot common issues in Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/error-codes-solutions#common-errors-and-solutions)* article.
+> Besides rate-limiting exceptions, some other exceptions can also be raised by Azure Cosmos DB. To review some of those exceptions, please see the *[Troubleshoot common issues in Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/monogdb/error-codes-solutions#common-errors-and-solutions)* article.
 
 Now that we've seen how to use the Azure Monitor tool to observe the Azure Cosmos DB account operations, in the next unit, let's query the *Azure diagnostic logs* to help us further monitor our Azure Cosmos DB account.
