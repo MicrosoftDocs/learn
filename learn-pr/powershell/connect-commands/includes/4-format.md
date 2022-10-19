@@ -91,4 +91,4 @@ Formatting commands should be the last thing you use in your statement because t
 
 ### Formatting commands
 
-The most common cmdlets to use to format your output are `Format-Table` and `Format-List`. By default, most cmdlets format output as a table. If you want your output to display properties in columns, use the `Format-List` cmdlet to reformat them as a list.
+The most common cmdlets to use to format your output are `Format-Table` and `Format-List`. By default, most cmdlets format output as a table. If you don't want your output to display properties in columns, use the `Format-List` cmdlet to reformat them as a list.
