@@ -47,7 +47,7 @@ One of the benefits of using infrastructure as code is the level of confidence y
 
 - **Avoid configuration drift**: _Idempotence_ is a term that's frequently associated with infrastructure as code. When an operation is idempotent, it means that it provides the same result each time it's run. If you choose tooling that uses idempotent operations, you can avoid configuration drift.
 
-The following Azure CLI command is an example of idempotence. The command creates an Azure resource group named `storage-resource-group` in the East US region.
+As an example of idempotence, consider the following Azure CLI command. The command creates an Azure resource group named `storage-resource-group` in the East US region.
 
 ```azurecli
 az group create \
@@ -115,7 +115,7 @@ az storage account create \
   --https-only true
 ```
 
-The first command creates a resource group named `storage-resource-group` in the East US region. The second command creates a storage account named `mystorageaccount` in the `storage-resource-group` resource group, that was created in the first command. The second command also configures some properties for the storage account, including the kind of storage account and its access tier.
+The first command creates a resource group named `storage-resource-group` in the East US region. The second command creates a storage account named `mystorageaccount` in the `storage-resource-group` resource group that was created in the first command. The second command also configures some properties for the storage account, including the kind of storage account and its access tier.
 
 You can use an imperative approach to fully automate resource provisioning, but the approach has some disadvantages. As your architecture matures, scripts can become complex to manage. Commands may be updated or deprecated, which requires reviews of existing scripts.
 
