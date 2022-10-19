@@ -6,9 +6,9 @@ Azure Private 5G Core works with other components to power private mobile networ
 
 The following diagram shows the key components of a single site powered by an Azure Private 5G Core packet core instance:
 
-:::image type="content" source="media/site-physical-components.png" alt-text="Diagram displaying the main components of a site in a private mobile network":::
+:::image type="content" source="../media/site-physical-components.png" alt-text="Diagram displaying the main components of a site in a private mobile network":::
 
-As shown in the diagram, the packet core instance runs on a Kubernetes cluster deployed on an ASE device. The IoT user equipment (UE) connects to Azure Private 5G Core through RAN. To process the data from UEs, you'll also need to deploy data processing and logic definition applications. For example, in the warehouse camera example discussed in the [introduction unit](1-introduction.md), they use computer vision applications to process the data collected from each camera.
+As shown in the diagram, the packet core instance runs on a Kubernetes cluster deployed on an ASE device. The IoT user equipment (UE) connects to Azure Private 5G Core through RAN. To process the data from UEs, you'll also need to deploy data processing and logic definition applications. For example, in the warehouse camera example discussed in the introduction unit, they use computer vision applications to process the data collected from each camera.
 
 ## Key components in typical private MEC solutions
 
