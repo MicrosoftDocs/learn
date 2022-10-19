@@ -7,7 +7,7 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 ## Indexes and pipeline aggregations
 
-In this exercise, we'll use the Azure portal to see some examples on how indexes influence the cost of our queries.  We'll use both the *db.collection.find* and *db.collection.aggregation* functions.  Let's start by using the Azure portal to create our Azure Cosmos DB API for MongoDB account if it doesn't already exist.
+In this exercise, we'll use the Azure portal to see some examples on how indexes influence the cost of our queries.  We'll use both the *db.collection.find* and *db.collection.aggregation* functions.  Let's start by using the Azure portal to create our Azure Cosmos DB for MongoDB account if it doesn't already exist.
 
 ### Prepare your development environment
 
@@ -18,27 +18,27 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
     1. *If you are using the Sandbox*, a resource group has already been created for you so run the following script.
 
         ```bash
-        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
+        # Create an Azure Cosmos DB for MongoDB account and add the customer collection
         git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
         GitRepositoryRoot=$(pwd)
-        bash $GitRepositoryRoot/mslearn-cosmosdb/api-for-mongodb/02-indexes-and-aggregation-pipelines/init.sh
+        bash "$GitRepositoryRoot/mslearn-cosmosdb/api-for-mongodb/02-indexes-and-aggregation-pipelines/init.sh"
         ```
 
     1. If you already have a resource group you want to use in your environment, replace the string ***YOURRESOURCEGROUPNAMEHERE*** below for the name of your resource group. *If you are not using the Sandbox, you will need to run the ***az login*** command before running the ***init*** bash script below*.
 
         ```bash
-        # Create an Azure Cosmos DB API for MongoDB account and add the customer collection
+        # Create an Azure Cosmos DB for MongoDB account and add the customer collection
         git clone https://github.com/MicrosoftLearning/mslearn-cosmosdb.git
         GitRepositoryRoot=$(pwd)
         # Replace YOURRESOURCEGROUPNAMEHERE for the name of your Resource Group
-        bash $GitRepositoryRoot/mslearn-cosmosdb/api-for-mongodb/02-indexes-and-aggregation-pipelines/init.sh -r YOURRESOURCEGROUPNAMEHERE
+        bash "$GitRepositoryRoot/mslearn-cosmosdb/api-for-mongodb/02-indexes-and-aggregation-pipelines/init.sh" -r YOURRESOURCEGROUPNAMEHERE
         ```
 
     > [!Tip]
     > If you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call.
 
     > [!NOTE]
-    > This bash script will create the Azure Cosmos DB API for MongoDB account and copy the customer collection into that account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
+    > This bash script will create the Azure Cosmos DB for MongoDB account and copy the customer collection into that account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
 
 1. Since we'll be using the Azure portal with the Sandbox, don't forget to switch the directory on the Azure portal to use the Resource Group created by the Sandbox.
 
@@ -120,7 +120,7 @@ We'll use the Azure portal to run a few queries and review their impact.
 
 1. Select the ***Indexing Policy*** tab.
 
-1. Notice that there's only one index for the ***_id*** field, which is always created for any collection in an Azure Cosmos DB API for MongoDB collection, but there are no extra indexes.  The lack of indexes perfectly explains our problem.  Because we have no index for the ***lastName*** column, we're scanning all the documents to find the three documents that met our criteria. Let's go ahead and add the needed index.
+1. Notice that there's only one index for the ***_id*** field, which is always created for any collection in an Azure Cosmos DB for MongoDB collection, but there are no extra indexes.  The lack of indexes perfectly explains our problem.  Because we have no index for the ***lastName*** column, we're scanning all the documents to find the three documents that met our criteria. Let's go ahead and add the needed index.
 
 1. To add the index, just put the column name, **lastName** under the *Definition* column and select **Single Field** from the *Type* pulldown. Now select ***Save*** under the menu to create the index. You could also create multiple Single Field indexes at the same time.
 
