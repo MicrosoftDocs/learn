@@ -46,7 +46,7 @@ Now you have an Ubuntu VM, ready to install Docker on, connect to it using Secur
     ```
 
 1. When asked if you're sure, type **yes**, and then press Enter.
-1. For the password, use displayed password from above,, and then press Enter. SSH connects to the VM and shows a bash shell.
+1. For the password, use displayed password from above, and then press Enter. SSH connects to the VM and shows a bash shell.
 
 ## Install prerequisites
 
