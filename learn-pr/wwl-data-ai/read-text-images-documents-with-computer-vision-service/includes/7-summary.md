@@ -1,4 +1,4 @@
-In this module, you have learned how to:
+In this module, you've learned how to:
 
 - Read text from images with the Read API
 - Use the Computer Vision service with SDKs and the REST API
