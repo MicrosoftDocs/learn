@@ -8,7 +8,7 @@ You need to manage storage, scaling, network connections, and upgrades for the A
 
 ## Skills measured
 
-The Azure Kubernetes Service is part of [Exam AZ-104: Microsoft Azure Administrator](/certifications/exams/az-104).
+The Azure Kubernetes Service is part of [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104).
 
 Deploy and manage Azure compute resources (20–25%)
 
