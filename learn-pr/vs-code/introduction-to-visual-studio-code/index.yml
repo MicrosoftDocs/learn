@@ -11,7 +11,7 @@ metadata:
 
 title: Introduction to Visual Studio Code
 
-summary: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a source code editor. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
+summary: "Evaluate development scenarios in which you could choose Visual Studio Code as your source code editor. Examine the features of Visual Studio Code such as the editor, debugger, and source control."
 
 abstract: |
   By the end of this module, you'll be able to:
