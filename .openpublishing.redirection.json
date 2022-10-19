@@ -17909,6 +17909,26 @@
       "source_path": "learn-pr/wwl-data-ai/migrate-on-premises-postgresql-databases/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/migrate-on-premises-postgresql-databases/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-file-folder-backups/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-file-folder-backups/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-file-folder-backups/9-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/11-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-machine-backups/12-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-virtual-machine-backups/12-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-virtual-machine-backups/13-summary-resources",
+      "redirect_document_id": false
     }
   ]
 }
