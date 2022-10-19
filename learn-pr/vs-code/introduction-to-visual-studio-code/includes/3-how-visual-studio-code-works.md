@@ -40,7 +40,7 @@ Recall that in the first part of the scenario, you want to build a website for a
 
 Here's what you do:
 
-1. First, you [download and install the Visual Studio Code version](https://code.visualstudio.com/Download) appropriate for your computer's platform (Windows, macOS, or Linux).
+1. First, you [download and install the Visual Studio Code version](https://code.visualstudio.com/Download?azure-portal=true) appropriate for your computer's platform (Windows, macOS, or Linux).
 
 1. Next, you launch Visual Studio Code and using the built-in terminal, you install a Node.js package that will help you scaffold a basic Node.js application. Scaffolding creates several files needed to run a Node.js application.
 

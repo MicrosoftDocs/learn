@@ -3,8 +3,8 @@ uid: learn.introduction-to-visual-studio-code.when-to-use-visual-studio-code
 title: When to use Visual Studio Code
 metadata:
   title: when-to-use-visual-studio-code
-  description: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a source code editor with IDE features. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
-  ms.date: 9/19/2022
+  description: "Use decision criteria to determine if Visual Studio Code is the right code editor for your programming needs."
+  ms.date: 10/20/2022
   author: kjo-msft
   ms.author: karinjohnson
   ms.topic: interactive-tutorial

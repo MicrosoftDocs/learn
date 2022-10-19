@@ -3,8 +3,8 @@ uid: learn.introduction-to-visual-studio-code.how-visual-studio-code-works
 title: How Visual Studio Code works
 metadata:
   title: how-visual-studio-code-works
-  description: "Characterize the types of programming scenarios for which Visual Studio Code is a good choice as a source code editor with IDE features. Examine the development capabilities of Visual Studio Code such as the editor, debugger, and source control."
-  ms.date: 9/19/2022
+  description: "Learn how to customize and extend the functionality of Visual Studio Code through extensions."
+  ms.date: 10/20/2022
   author: kjo-msft
   ms.author: karinjohnson
   ms.topic: interactive-tutorial

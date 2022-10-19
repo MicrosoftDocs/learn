@@ -19,4 +19,4 @@ In this module, we'll evaluate if Visual Studio Code is the right code editor fo
 By the end of this module, you'll have the knowledge to be able to evaluate if Visual Studio Code meets your set of programming requirements.
 
 > [!NOTE]
-> You may have heard about other products in the [Visual Studio family](https://visualstudio.microsoft.com/), such as Visual Studio and Visual Studio for Mac, and wonder if they're related to Visual Studio Code. They are different products. Visual Studio is a full-featured IDE for Windows development, and Visual Studio for Mac is an IDE that runs on macOS and is used for developing .NET applications.
+> You may have heard about other products in the [Visual Studio family](https://visualstudio.microsoft.com?azure-portal=true), such as Visual Studio and Visual Studio for Mac, and wonder if they're related to Visual Studio Code. They are different products. Visual Studio is a full-featured IDE for Windows development, and Visual Studio for Mac is an IDE that runs on macOS and is used for developing .NET applications.
