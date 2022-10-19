@@ -7,7 +7,7 @@ You should now be able to:
 - Configure deployment settings, specifically deployment slots.
 - Secure the App Service.
 - Configure custom domain names
-- Backup the App Service.
+- Back up the App Service.
 - Configure Application Insights.
 
 ## Learn more
