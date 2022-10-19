@@ -4,7 +4,7 @@ To access your files, you need an Azure storage account. After you have a storag
 
 ### Things to consider when using Azure Files shares
 
-There are two important characteristics of Azure Files to be aware of when creating and configuring file shares.
+There are two important settings for Azure Files that you need to be aware of when creating and configuring file shares.
 
 - **Open port 445**. Azure Files uses the SMB protocol. SMB communicates over TCP port 445. Be sure port 445 is open. Also, make sure your firewall isn't blocking TCP port 445 from the client machine.
 
