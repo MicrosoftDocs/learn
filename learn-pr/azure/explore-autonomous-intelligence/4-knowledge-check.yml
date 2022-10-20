@@ -3,7 +3,7 @@ uid: learn.oxford.explore-autonomous-intelligence.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: A knowledge check for the discover Autonomous Intelligence.
+  description: We give knowledge checks to evaluate the students to discover Autonomous Intelligence and decide when to use it.
   ms.date: 10/17/2022
   author: softchris
   ms.author: chnoring
@@ -53,7 +53,7 @@ quiz:
       explanation: "Machine Learning isn't optimal for searching across possible options. That is what optimization algorithms do well."
     - content: "Advance Perception, Prediction, and Classification."
       isCorrect: true
-      explanation: "You’ll use ML in our Autonomous AI brain design when we need advanced perception (computer vision, natural language understanding) or we need to predict or classify large sets of data."
+      explanation: "You'll use ML in our Autonomous AI brain design when we need advanced perception (computer vision, natural language understanding) or we need to predict or classify large sets of data."
     - content: "Outstanding technology to learn human-like strategies."
       isCorrect: false
       explanation: "The technology that learns strategy isn't Machine Learning, it's Reinforcement Learning."
