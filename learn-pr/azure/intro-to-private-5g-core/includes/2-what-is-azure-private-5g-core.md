@@ -6,9 +6,15 @@ Azure Private 5G Core works with other components to power private mobile networ
 
 The following diagram shows the key components of a single site powered by an Azure Private 5G Core packet core instance:
 
-:::image type="content" source="../media/site-physical-components.png" alt-text="Diagram displaying the main components of a site in a private mobile network":::
+:::image type="content" source="../media/site-physical-components.png" alt-text="a diagram displaying the main components of a site in a private mobile network":::
 
 As shown in the diagram, the packet core instance runs on a Kubernetes cluster deployed on an ASE device. The IoT user equipment (UE) connects to Azure Private 5G Core through RAN. To process the data from UEs, you'll also need to deploy data processing and logic definition applications. For example, in the warehouse camera example discussed in the introduction unit, they use computer vision applications to process the data collected from each camera.
+
+## Video: Introduction to Azure Private 5G Core
+
+The following video introduces Azure Private 5G Core and its role in typical private MEC solutions:
+
+TBD: A video that introduces Azure Private 5G Core and its role in typical private MEC solutions
 
 ## Key components in typical private MEC solutions
 
@@ -23,8 +29,12 @@ As shown in the diagram, the packet core instance runs on a Kubernetes cluster d
   
   UEs use SIMs or eSIMs to connect to RAN. SIM vendors offering physical SIM and eSIM services can integrate directly with Azure Private 5G Core through the SIM manager to securely provision physical SIMs and eSIMs.
 
-## Video: Introduction to Azure Private 5G Core
+## Enterprise network structure
 
-The following video introduces Azure Private 5G Core and its role in typical private MEC solutions:
+Azure Private 5G Core enables a single private mobile network distributed across one or more sites around the world, with each site containing a packet core instance deployed on an Azure Stack Edge device.
 
-TBD: A video that introduces Azure Private 5G Core and its role in typical private MEC solutions
+The following diagram illustrates the structure of a typical private mobile network:
+
+:::image type="content" source="../media/site-structure.png" alt-text="A diagram that illustrates the sites of a private mobile network":::
+
+An enterprise can set up multiple sites at different geographical locations based on its business needs. They can centrally manage all the sites in the private mobile network from the Azure cloud. Azure Private 5G Core powers each site with a packet core instance, which provides 5G or 4G network functions for the site.

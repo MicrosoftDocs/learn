@@ -1,4 +1,4 @@
-Deploying a private mobile network using Azure Private 5G Core at the enterprise edge ensures that the enterprise has complete ownership of all data. It also positions the packet core instance as close as possible to the devices it serves, removing any reliance on cloud connectivity. Additionally, local data processing can ensure low latency levels for IoT applications.
+Deploying a private mobile network using Azure Private 5G Core at the enterprise edge ensures that the enterprise has complete ownership of all data. It also positions the packet core instance as close as possible to the devices it serves, removing any reliance on cloud connectivity. Additionally, local data processing can ensure low latency levels and reduced backhaul for IoT applications.
 
 ## Key benefits
 

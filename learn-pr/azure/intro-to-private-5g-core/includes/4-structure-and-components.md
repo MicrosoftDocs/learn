@@ -48,7 +48,3 @@ Each packet core instance includes the following components:
 - Management components for network monitoring.
 
 You can also deploy packet core instances in 4G mode to support Private Long-Term Evolution (LTE) use cases. For example, you can use the 4G Citizens Broadband Radio Service (CBRS) spectrum. 4G mode uses the same cloud-native components as 5G mode (such as the UPF). This is in contrast to other solutions that need to revert to a legacy 4G stack.
-
-## Enterprise network structure
-
-TBD: Need more info
