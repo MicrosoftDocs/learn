@@ -181,7 +181,7 @@ We'll use the Azure Monitor to monitor our Azure Cosmos DB account.
 
 Let's open the Azure Monitor and run a few scenarios.
 
-1. On tha Azure portal, search for **Monitor** and select it.
+1. On the Azure portal, search for **Monitor** and select it.
 
 1. Select **Metrics**.
 
