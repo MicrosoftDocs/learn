@@ -113,7 +113,7 @@ One of the benefits of AAD is support for advanced authentication methods such a
 - Azure Active Directory Universal with Multi-Factor Authentication
 - Azure Active Directory access token
 
-You can learn more about SQL Server and Azure Active Directory (AAD) authentication at https://aka.ms/sqlserveraad.
+You can learn more about SQL Server and Azure Active Directory (AAD) authentication at https://aka.ms/aadsqlserver.
 
 ## Stay protected with Microsoft Defender for SQL
 
