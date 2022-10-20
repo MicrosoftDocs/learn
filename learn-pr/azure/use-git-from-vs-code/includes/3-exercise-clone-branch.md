@@ -25,7 +25,7 @@ At this time, don't worry about what the code in this repository does or how it 
 
 Next, select **Fork** near the upper right of the webpage.
 
-:::image type="content" source="../media/3-github-fork-branch.png" alt-text="Screenshot that shows the GitHub Fork button.":::
+:::image type="content" source="../media/3-github-fork-branch.png" alt-text="Screenshot that shows the GitHub Fork button." lightbox="../media/3-github-fork-branch.png":::
 
 After a moment or two, the repository is forked to your GitHub account.
 
