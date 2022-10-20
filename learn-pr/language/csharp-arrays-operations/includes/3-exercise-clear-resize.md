@@ -156,9 +156,9 @@ foreach (var pallet in pallets)
 }
 ```
 
-Focus on the line `Array.Resize(ref pallets, 6);`. Here, we're calling the `Resize()` method passing in the `pallets` array by reference, using the `ref` keyword. In some cases, methods require that you pass arguments by value (the default) or by reference (using the ref keyword). The reasons this is necessary would require a lot of explanation about of how objects are managed in .NET; unfortunately, that's beyond the scope of this module. When in doubt, we recommend looking at Intellisense or Microsoft Learn for examples on how to properly call a given method.
+Focus on the line `Array.Resize(ref pallets, 6);`. Here, we're calling the `Resize()` method passing in the `pallets` array by reference, using the `ref` keyword. In some cases, methods require that you pass arguments by value (the default) or by reference (using the ref keyword). The reasons this is necessary would require significant explanation of how objects are managed in .NET; unfortunately, that's beyond the scope of this module. When in doubt, we recommend looking at Intellisense or Microsoft Learn for examples on how to properly call a given method.
 
-In this case, we're resizing the `pallets` array from four elements to `6`. The new elements are added at the end of the current elements.  he two new elements will be null until we assign a value to them.
+In this case, we're resizing the `pallets` array from four elements to `6`. The new elements are added at the end of the current elements. The two new elements will be null until we assign a value to them.
 
 When you run the code, you should get the following output:
 

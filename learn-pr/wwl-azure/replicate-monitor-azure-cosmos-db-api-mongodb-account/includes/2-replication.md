@@ -118,6 +118,6 @@ Out of the box, Azure Cosmos DB’s multi-region write feature has automatic con
 | **Replace** | Replace conflicts occur when multiple client applications update the same document concurrently in separate regions |
 | **Delete** | Delete conflicts occurs when a client is attempting to update a document that has been deleted in another region at the same time |
 
-The conflict resolution policy in Azure Cosmos DB API for MongoDB is **Last Write Wins**. This policy uses the timestamp (_ts) to determine which document wrote last. In simple terms, if multiple documents are in conflict, the document with the largest value for the **_ts** property will win. If a delete conflict occurs, the operation to delete a document will always win out over any other operation.
+The conflict resolution policy in Azure Cosmos DB for MongoDB is **Last Write Wins**. This policy uses the timestamp (_ts) to determine which document wrote last. In simple terms, if multiple documents are in conflict, the document with the largest value for the **_ts** property will win. If a delete conflict occurs, the operation to delete a document will always win out over any other operation.
 
 Now that we have introduced multi-region writes, let's discuss the consistency levels in the next unit.

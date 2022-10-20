@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/22/2022
+  ms.date: 10/18/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
@@ -35,4 +35,4 @@ quiz:
       explanation: "That's correct. This method is a member of the **ChangeFeedProcessor** class and is invoked to start consuming changes from the change feed."
     - content: "``Build``"
       isCorrect: false
-      explanation: "That's incorrect. This method is invoked at the end of building a change feed processor (or estimator) and is not a method of the **ChangeFeedProcessor** class."
+      explanation: "That's incorrect. This method is invoked at the end of building a change feed processor (or estimator) and isn't a method of the **ChangeFeedProcessor** class."

@@ -32,5 +32,5 @@ Node.js release types:
 
 The V8 JavaScript engine:
 
-- [V8 JavaScript engine](https://nodejs.dev/learn/the-v8-javascript-engine?azure-portal=true)
+- [V8 JavaScript engine](https://nodejs.dev/en/learn/the-v8-javascript-engine/)
 - [V8 documentation](https://v8.dev/docs?azure-portal=true)

@@ -82,7 +82,7 @@ In routing terms, a hop is a waypoint on the overall route. Therefore, the next 
  -  **Internet:** Routes traffic specified by the address prefix to the Internet. The system default route specifies the 0.0.0.0/0 address prefix. Azure routes traffic for any address not specified by an address range within a virtual network to the Internet, unless the destination address is for an Azure service. Azure routes any traffic destined for its service directly to the service over the backbone network, rather than routing the traffic to the Internet. You can override Azure's default system route for the 0.0.0.0/0 address prefix with a custom route.
  -  **None:** Traffic routed to the None next hop type is dropped, rather than routed outside the subnet. Azure automatically creates default routes for the following address prefixes:
     
-     -  10.0.0.0/8 and 192.168.0.0/16: Reserved for private use in RFC 1918.
+     -  10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16: Reserved for private use in RFC 1918.
      -  100.64.0.0/10: Reserved in RFC 6598.
 
 If you assign any of the previous address ranges within the address space of a virtual network, Azure automatically changes the next hop type for the route from None to Virtual network. If you assign an address range to the address space of a virtual network that includes, but isn't the same as, one of the four reserved address prefixes, Azure removes the route for the prefix and adds a route for the address prefix you added, with Virtual network as the next hop type.
