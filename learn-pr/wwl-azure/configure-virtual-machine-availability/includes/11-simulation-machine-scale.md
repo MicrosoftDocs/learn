@@ -8,7 +8,7 @@ Your organization is deploying virtual machines in Azure. As the Azure Administr
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab08.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-08.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 

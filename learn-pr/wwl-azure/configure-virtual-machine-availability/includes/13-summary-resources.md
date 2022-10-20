@@ -1,4 +1,4 @@
-Azure provides several high availability options for virtual machines. These options include availability sets, availability zones, and virtual machine scale sets.
+Azure provides several high availability options for virtual machines. These options include availability sets, availability zones, and Virtual Machine Scale Sets.
 
 You should now be able to:
 
