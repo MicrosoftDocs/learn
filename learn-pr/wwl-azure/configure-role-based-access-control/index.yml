@@ -3,7 +3,7 @@ uid: learn.wwl.configure-role-based-access-control
 metadata:
   title: Configure role-based access control
   description: "Learn how to use role-based access control (RBAC) to ensure resources are protected, but users can still access the resources they need."
-  ms.date: 10/14/2022
+  ms.date: 10/20/2022
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -37,6 +37,7 @@ units:
 - learn.wwl.configure-role-based-access-control.compare-azure-rbac-roles-to-azure-ad-roles
 - learn.wwl.configure-role-based-access-control.apply-rbac-authentication
 - learn.wwl.configure-role-based-access-control.determine-rbac-roles
+- learn.wwl.configure-role-based-access-control.interactive-lab-simualtion-role-based
 - learn.wwl.configure-role-based-access-control.knowledge-check
 - learn.wwl.configure-role-based-access-control.summary-resources
 badge:
