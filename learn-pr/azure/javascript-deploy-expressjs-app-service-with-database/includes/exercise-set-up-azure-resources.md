@@ -37,7 +37,7 @@ Find the free sandbox subscription in Visual Studio Code.
 
 1. Open Visual Studio Code.
 1. To open the **Azure** pane on the left, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd>.
-1. In the **App Service** section, right-click the sandbox subscription name. Select **Create New Web App (Advanced)**. By selecting the advanced creation process, you can select _all_ your choices.
+1. In the **Resources**, select the Learn subscription. Right-click on **App Service** then select **Create New Web App (Advanced)**. By selecting the advanced creation process, you can select _all_ your choices.
 1. Use the following table to answer the creation steps:
 
     | Step | Value|
@@ -51,7 +51,7 @@ Find the free sandbox subscription in Visual Studio Code.
     |Pricing tier|Confirm the tier is Free, F1.|
     |Application Insights|Create a new Application Insights resource and select the default name.|
 
-1. When you're finished, the new web app appears in the **App Service** section of the **Azure** pane on the left.
+1. When you're finished, the new web app appears in the **Azure** explorer's **Resources > Concierge sandbox > App Service** section.
 1. Expand the web app to see the subnodes:
 
     |Subnode|Purpose|
@@ -69,23 +69,16 @@ Find the free sandbox subscription in Visual Studio Code.
 When you created the resource, you also created and connected Application Insights, but it isn't enabled.
 
 1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. In the **App Service** section, right-click your App Service resource. Select **Open in Portal**.
+1. In the **Resources > Concierge sandbox > App Service** section, right-click your App Service resource. Select **Open in Portal**.
 1. In the web browser, select **Settings** > **Application Insights**.
 1. Select **Turn on Application Insights**.
 1. Select **Apply** to send metrics and log collections to Application Insights.
 
 ## Deploy the sample from your local computer to App Service
 
-1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane on the left.
-1. In the **App Service** section, find and expand the subscription's App Service resource.
-1. The app you created in the previous exercise, such as `jimb-rentals`, should be listed.
-   
-   If the app isn't listed, try the following steps:
-   
-   1. At the top of this Learn unit, check that you still have time for your sandbox.
-   1. In Visual Studio Code, sign out of Azure. Then sign in again to make sure all subscriptions are displayed.
-1. Right-click the app and select **Deploy to Web App**.
-1. Select the **3-Add-cosmosdb-mongodb** and select it.
+1. In Visual Studio Code, select <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd> to open the **Azure** pane.
+1. In the **Resources > Concierge sandbox > App Service** section, right-click your app and select **Deploy to Web App**.
+1. Select the directory **3-Add-cosmosdb-mongodb** and select it.
 1. When you're asked if you want to deploy, select **Deploy**.
 1. Select the **output window** option when it appears.
 1. Notice that the deployment status appears with date/time stamps and actions.
@@ -99,7 +92,7 @@ When you created the resource, you also created and connected Application Insigh
 
 ## View your web app
 
-1. In Visual Studio Code, using the **Azure** pane, right-click the **js-rentals** web app and select **Browse website**.
+1. In Visual Studio Code, using the **Azure** pane, in the **Resources > Concierge sandbox > App Service** section, right-click the **js-rentals** web app and select **Browse website**.
 1. The deployed web app opens in a browser. The web app should display the same error message that the database isn't connected. This is the correct state of the app.
 
 ## Check your work
