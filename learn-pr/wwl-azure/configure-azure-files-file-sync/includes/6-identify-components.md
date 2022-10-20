@@ -2,7 +2,7 @@ Azure File Sync is composed of four main components that work together to provid
 
 The following illustration shows how the components of Azure File Sync provide a cache for a storage account that has Accounting and Sales data stored in Azure Files shares.
 
-:::image type="content" source="../media/file-sync-components-c6561274.png" alt-text="Diagram that shows the components of the Azure File Sync architecture with servers and server endpoints.":::
+:::image type="content" source="../media/file-sync-components-c6561274.png" alt-text="Diagram that shows the components of the Azure File Sync architecture with servers and server endpoints." border="false":::
 
 Let's examine the details of the Azure File Sync components.
 
