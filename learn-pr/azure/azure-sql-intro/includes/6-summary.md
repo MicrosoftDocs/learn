@@ -2,7 +2,7 @@ In this module, you learned about Azure SQL, including the deployment options, p
 
 ## Learn more
 
-To learn more about the history of Azure SQL and the options, models, and management tools, see the following references.
+To learn more about the history of Azure SQL and the options, models, and management tools, check out the following references.
 
 ### Video series: Azure SQL for beginners
 
@@ -14,7 +14,7 @@ You can watch the 2008 [Microsoft Professional Developers Conference](https://ww
 
 ### SQL Server on Azure Virtual Machines
 
-To learn more about what you can get from infrastructure as a service (IaaS) services, see [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/?azure-portal=true). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
+To learn more about what you can get from infrastructure as a service (IaaS) services, check out [What is IaaS?](https://azure.microsoft.com/overview/what-is-iaas/?azure-portal=true). Here are some considerations specific to optimally deploying and managing SQL Server on Azure Virtual Machines:  
 
 - Install from [Azure gallery images](/azure/virtual-machines/shared-image-galleries) or take advantage of the [resource provider](/azure/azure-sql/virtual-machines/windows/sql-server-iaas-agent-extension-automate-management) (also referred to as the SQL IaaS Extension) for licensing flexibility and to enable automatic backups and updates.
 - Consider memory-optimized or storage-optimized virtual machine [sizes](https://azure.microsoft.com/pricing/details/virtual-machines/series/?azure-portal=true) for maximum performance.
@@ -33,8 +33,7 @@ There are many companies that have moved to Azure SQL. You can learn more about 
 
 - [Allscripts: SQL Server on Azure Virtual Machines](https://customers.microsoft.com/story/allscripts-partner-professional-services-azure?azure-portal=true)
 - [Komatsu: Azure SQL Managed Instance](https://customers.microsoft.com/story/komatsu-australia-manufacturing-azure?azure-portal=true)
-- [AccuWeather: Azure SQL Database](https://customers.microsoft.com/story/accuweather-partner-professional-services-azure?azure-portal=true)
-- [Paychex: Azure SQL Database elastic pools](https://customers.microsoft.com/story/paychex-azure-sql-database-us?azure-portal=true)
+- [AccuWeather: Azure SQL Database](https://customers.microsoft.com/story/1346767190324538120-accu-weather-media-azure-en-us)
 
 ### Platform as a service (PaaS) capabilities
 
