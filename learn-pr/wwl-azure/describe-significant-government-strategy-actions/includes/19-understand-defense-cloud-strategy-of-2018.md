@@ -10,7 +10,7 @@
 
         In December 2018, the DoD examined the landscape of cloud service providers, and [published a strategy](https://media.defense.gov/2019/Feb/04/2002085866/-1/-1/1/DOD-CLOUD-STRATEGY.PDF) that addresses how the cloud will be used to meet its mission.
 
-        The strategy document first calls out a number of issues the DoD has had to date.
+        The strategy document first calls out many issues the DoD has had to date.
 
         The strategy notes that the Department has experienced “inadequate efficiency and security in information technology” and that the cloud can help it to address those deficiencies.
 
@@ -19,7 +19,7 @@
     :::column-end:::
 :::row-end:::
 
-It notes that the DoD has stood up a number of cloud implementations, but that the workloads have not been architected for the cloud nor are Enterprise ready. As a result, the workloads have cost the same or more to operate in the cloud, and it’s only third party contractors who have been brought in to show them how to modernize them for the cloud. It also notes that the DoD workforce has not been up-skilled enough to understand how to apply cloud capabilities to aging on premises or data center workloads.
+It notes that the DoD has stood up many cloud implementations, but that the workloads have not been architected for the cloud nor are Enterprise ready. As a result, the workloads have cost the same or more to operate in the cloud, and it’s only third party contractors who have been brought in to show them how to modernize them for the cloud. It also notes that the DoD workforce has not been up-skilled enough to understand how to apply cloud capabilities to aging on premises or data center workloads.
 
 Lastly, it notes that in order to benefit from AI technologies and fulfill the goal of a Joint Artificial Intelligence Center, enterprise cloud infrastructure must be in place, and it is not.
 
@@ -27,7 +27,7 @@ Lastly, it notes that in order to benefit from AI technologies and fulfill the g
 
 The strategy document then pivots and talks about what it must do.
 
-The strategy states that the Department must address the unique mission requirements through a multi-cloud, multi-vendor strategy that incorporates a General Purpose cloud and Fit For Purpose clouds.
+The strategy states that the Department must address the unique mission requirements through a multicloud, multi-vendor strategy that incorporates a General Purpose cloud and Fit For Purpose clouds.
 
 A general purpose cloud provides a wide range of capabilities, including IaaS, PaaS, SaaS, and Serverless capabilities.
 
@@ -37,7 +37,7 @@ The strategy states that the DoD’s cloud computing capabilities must enable ex
 
 The strategy must scale for the episodic nature of the DoD mission through elasticity. That is, when the nation is at war, the cloud must scale up to meet its requirements. When the nation is at peace, it must scale itself back.
 
-The strategy must proactively address cyber challenges by leveraging standard cloud-based cyber security solutions that include infrastructure, applications, and data. The DoD must also remain evergreen on security and technology. The strategy is very complimentary about the cyber security capabilities that commercial cloud providers employ to stay ahead of the cybersecurity curve.
+The strategy must proactively address cyber challenges by applying standard cloud-based cyber security solutions that include infrastructure, applications, and data. The DoD must also remain evergreen on security and technology. The strategy is complimentary about the cyber security capabilities that commercial cloud providers employ to stay ahead of the cybersecurity curve.
 
 The strategy must enable AI and data transparency, meaning that data should be maintained in data lakes and data hubs within a single Enterprise cloud instead of multiple cloud subscriptions or multiple cloud providers, so that it may be queried in real time. The strategy also states that while it must make data available for these on-demand, massive queries, all of the data must remain secure by utilizing modern data management techniques.
 
@@ -65,8 +65,8 @@ The DoD must:
 
 - Leverage commercial technology, capability, and innovation
 - Maximize competition to ensure best technology and value
-- Leverage open standrds to avoid lock-in
-- Independently asses services to ensure data security
+- Leverage open standards to avoid lock-in
+- Independently assess services to ensure data security
 
 #### Create a Culture Better Suited for Modern Technology Evolution
 
