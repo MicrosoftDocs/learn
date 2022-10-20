@@ -48,6 +48,8 @@ In this module you will learn about all the new features and capabilities in SQL
 
 You may also want to learn more about differences for features that have been removed, deprecated, or enhanced from SQL Server in SQL Server 2022 from a perspective of deployment.
 
+Stay up to date with all the latest release notes for SQL Server 2022 at https://aka.ms/sqlserver2022releasenotes.
+
 ### Features removed or deprecated in SQL Server 2022
 
 The following features have been removed from SQL Server 2022 that were available in previous releases:
