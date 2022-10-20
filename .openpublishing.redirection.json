@@ -17969,6 +17969,11 @@
       "source_path": "learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/6-exercise-create-mongodb-db-app-use-api-for-mongodb.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/get-started-mongodb-api-azure-cosmos-db/6-exercise-create-cosmos-db-mongodb-application",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/3-use-ocr-api.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/read-text-images-documents-with-computer-vision-service/",
+      "redirect_document_id": false
     }
   ]
 }
