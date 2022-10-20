@@ -1,7 +1,7 @@
 Azure Cosmos DB is a fully managed platform-as-a-service (PaaS). To use this service, we'll need to first create an Azure Cosmos DB account under our subscription. Once our account has been created, we can then add database, collections and documents within it.
 
 > [!div class="mx-imgBorder"]
-> [![Diagram showing the Azure Cosmos DB Resource Model](../media/3-database-containers-items.png)](../media/3-database-containers-items.png#lightbox)
+> [![Diagram showing the Azure Cosmos DB Resource Model.](../media/3-database-containers-items.png)](../media/3-database-containers-items.png#lightbox)
 
 We'll take a look at a couple of ways to create the different Azure Cosmos DB for MongoDB model elements.
 
