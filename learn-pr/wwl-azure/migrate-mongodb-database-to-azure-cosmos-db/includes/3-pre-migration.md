@@ -45,7 +45,7 @@ The spreadsheets would be similar to the one below.
 
 ## Pre-migration assessment
 
-Once you've completed your discovery, you need to find out what features your current MongoDB environment uses that might not be supported by the [current MongoDB version](/azure/cosmos-db/monogdb/feature-support-42) Azure Cosmos DB for MongoDB supports. You also need to keep in mind the Azure Cosmos DB [limits and quotas](/azure/cosmos-db/concepts-limits#per-account-limits). Once you make this assessment, you'll be able to address those findings as needed during rest of the migration planning.
+Once you've completed your discovery, you need to find out what features your current MongoDB environment uses that might not be supported by the [current MongoDB version](/azure/cosmos-db/mongodb/feature-support-42) Azure Cosmos DB for MongoDB supports. You also need to keep in mind the Azure Cosmos DB [limits and quotas](/azure/cosmos-db/concepts-limits#per-account-limits). Once you make this assessment, you'll be able to address those findings as needed during rest of the migration planning.
 
 Again, we'll use the DMA to help us collect the data needed from this stage. The DMA will run against the resources from the source MongoDB and list the required and recommended changes needed to proceed with the migration.  This data will be written to the **assessment_result.csv** file.
 
@@ -152,6 +152,6 @@ Steps to take:
 - **Plan your post migration configurations** - Subjects like indexing, global distribution, and consistency should be planned. Note that these settings can usually be changed on the fly and will most likely change during the lifespan of your collections, but you should plan where those setting will sit right after the migration is done.
 
     > [!TIP]
-    > For further information about post-migrations, see the *[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/monogdb/post-migration-optimization)* guide.
+    > For further information about post-migrations, see the *[Post-migration optimization steps when using Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/post-migration-optimization)* guide.
 
 Migrating a MongoDB database isn't a point and click operation. You should spend some time planning for that migration. In the next couple of chapters, we'll discuss further the actual migration step itself.
