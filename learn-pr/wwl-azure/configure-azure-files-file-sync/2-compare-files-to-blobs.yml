@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-files-file-sync.compare-files-to-blobs
-title: Compare Azure Files to Azure Blob Storage
+title: Compare storage for file shares and blob data
 metadata:
-  title: Compare Azure Files to Azure Blob Storage
-  description: "Compare features of Azure Files to Azure Blob Storage and Azure Disks"
+  title: Compare storage for file shares and blob data
+  description: "Compare features of Azure Files to Azure Blob Storage and Azure Disks to store file shares and blob data."
   ms.date: 10/20/2022
   author: wwlpublish
   ms.author: cynthist
@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-compare-files-to-blobs.md)]

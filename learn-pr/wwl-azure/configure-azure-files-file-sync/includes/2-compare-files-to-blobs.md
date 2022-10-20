@@ -30,9 +30,9 @@ There are many common scenarios for using Azure Files storage. As you review the
 
 - **Consider tools and utilities**. Azure Files is a good option for storing tools and utilities that are needed for developing or administering Azure Virtual Machines or cloud services.
 
-## Compare Azure Files and Azure Blob Storage (blobs)
+## Compare Azure Files to Blob Storage and Azure Disks
 
-It can be difficult to determine exactly when to use Azure Files shares rather than Azure Blob Storage or Azure Disks (page blobs) shares. The following table compares different features of these services and common implementation scenarios.
+It can be difficult to determine exactly when to use Azure Files to store data as file shares rather than Azure Blob Storage or Azure Disks to store data as blobs. The following table compares different features of these services and common implementation scenarios.
 
 | Azure Files (file shares) | Azure Blob Storage (blobs) | Azure Disks (page blobs) |
 | --- | --- | --- |
