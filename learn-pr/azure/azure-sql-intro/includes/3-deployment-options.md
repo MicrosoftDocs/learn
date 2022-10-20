@@ -20,7 +20,7 @@ Here are some considerations for optimally deploying and managing SQL Server on 
 
 - Always On Failover Cluster Instances is supported with Azure premium file share.
 
-- Always On availability groups is supported, including Cloud Witness.
+- Always On availability groups are supported, including Cloud Witness.
 
 Companies around the world have used SQL Server on virtual machines. One example is Allscripts. Allscripts is a leading manufacturer of healthcare software, serving physician practices, hospitals, health plans, and the pharmaceutical industry. To transform its applications frequently and host them securely and reliably, Allscripts wanted to move to Azure quickly. In just three weeks, the company used Azure Site Recovery to migrate dozens of acquired applications running on approximately 1,000 virtual machines to Azure.
 
