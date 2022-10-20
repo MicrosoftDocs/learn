@@ -53,7 +53,7 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
 
 ### Which Azure HPC Storage Service Do I Use?
 
-![Diagram of Azure HPC Storage Decision Tree.](../media/12-azure-hpc-storage-decision.png#lightbox)
+[![Diagram of Azure HPC Storage Decision Tree.](../media/12-azure-hpc-storage-decision.png)](../media/12-azure-hpc-storage-decision.png#lightbox)
 
 #### CPU-based vs GPU-based Computing
 
