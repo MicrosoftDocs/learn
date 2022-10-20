@@ -66,7 +66,7 @@ The DoD must:
 - Leverage commercial technology, capability, and innovation
 - Maximize competition to ensure best technology and value
 - Leverage open standrds to avoid lock-in
-- Independently asses services to ensure data security
+- Independently assess services to ensure data security
 
 #### Create a Culture Better Suited for Modern Technology Evolution
 
