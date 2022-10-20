@@ -22,7 +22,7 @@ You can add what you need to Visual Studio Code quickly and leave out what you d
 
 ### Where do you get the extensions?
 
-You can search for, download, and install extensions from the Extensions Marketplace within Visual Studio Code, which integrates with the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode). For example, you can search by categories such as formatters, programming languages, or themes. The following screenshot displays a few of the many extensions available in the "formatters" category. When you find an extension you want to add, select <kbd>Install</kbd>.
+You can search for, download, and install extensions from the Extensions Marketplace within Visual Studio Code, which integrates with the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode?azure-portal=true). For example, you can search by categories such as formatters, programming languages, or themes. The following screenshot displays a few of the many extensions available in the "formatters" category. When you find an extension you want to add, select <kbd>Install</kbd>.
 
 :::image type="content" source="../media/3-extensions-marketplace-prettier.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed and the Prettier extension in view":::
 
