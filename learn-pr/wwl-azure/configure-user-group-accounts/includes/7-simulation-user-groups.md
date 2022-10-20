@@ -1,8 +1,8 @@
 ## Lab scenario
 
-Your organization will be using Azure AD authentication. You have been tasked with provisioning the required user and group accounts. Membership of the groups should be updated automatically based on the user job titles. You also need to invite guest users from another tenant. These guest users should have only limited permissions to resources in your subscription.
+Your organization will be using Azure AD authentication. You've been tasked with provisioning the required user and group accounts. Membership of the groups should be updated automatically based on the user job titles. You also need to invite guest users from another tenant. These guest users should have only limited permissions to resources in your subscription.
 
-Your organization has these specfic requirements: 
+Your organization has these specific requirements: 
 
 + Any user with the Cloud Administrator job title should be assigned to the IT Cloud Administrator group.
 + Any user with the System Administrator job title should be assigned to the IT System Administrator group. 
