@@ -1,4 +1,4 @@
-It's time to programmatically check out how to create our Azure Cosmos DB API for MongoDB databases, collections and add some data.
+It's time to programmatically check out how to create our Azure Cosmos DB for MongoDB databases, collections and add some data.
 
 This exercise can be completed using a Microsoft Learn *sandbox*, which provides a temporary Azure subscription. To activate the sandbox subscription, you must sign in using a Microsoft account. The sandbox subscription will be automatically deleted when you complete this module. After the sandbox has been activated, [sign into the Azure portal using the credentials for your sandbox subscription](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Ensure you're working in the **Microsoft Learn Sandbox** directory - indicated at the top right of the portal under your user ID. If not, select the user icon and switch directory.
 
@@ -7,9 +7,9 @@ This exercise can be completed using a Microsoft Learn *sandbox*, which provides
 
 ::: zone pivot="node"
 
-## Create MongoDB app using ***Node.js*** Azure Cosmos DB API for MongoDB
+## Create MongoDB app using ***Node.js*** Azure Cosmos DB for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
 
 ### Prepare your development environment
 
@@ -30,14 +30,17 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
     # Check if the node version is now v14.0.0
     node --version
     
-    # Create an Azure Cosmos DB API for MongoDB account
+    # Create an Azure Cosmos DB for MongoDB account
     bash ../init.sh
     ```
 
-    > [!NOTE] 
-    > This bash script will create the Azure Cosmos DB API for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
+    > [!Tip]
+    > If you are not using the sandbox for the lab, and you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call. Additionally, if you would like to specify a resource group, add a ***-r YOURRRESOURCEGROUPNAMEHERE*** parameter to the *init.sh* call.
 
-    > [!TIP] 
+    > [!NOTE]
+    > This bash script will create the Azure Cosmos DB for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
+
+    > [!TIP]
     > If you come back and your cloud shell has reset, run the following commands in the cloud shell to use Node version 14, otherwise the code in the next section will fail.
 
     >1. source ~/.nvm/nvm.sh
@@ -47,7 +50,7 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
 1. When the bash *init.sh* file completes running, copy somewhere the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** returned, we'll need them in the next section. You can also review the JSON  returned by the account creation script that is located before the connection string.  If you look somewhere in the middle of the JSON, you should see the property **"kind": "MongoDB"**.
 
     > [!NOTE] 
-    > The ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
+    > The ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure portal.
 
 ### Add the code to create the databases, collection and document to the App.js file
 
@@ -192,11 +195,11 @@ It's now time to add our JavaScript code to create a Database, a Collection and 
     }
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
-While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB API for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
+While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
 
 By using the Azure Cosmos DB’s API for MongoDB, you can enjoy the benefits of Cosmos DB such as global distribution, automatic sharding, high availability, latency guarantees, automatic, encryption at rest, backups, and many more, while preserving your investments in your MongoDB app. You can communicate with the Azure Cosmos DB’s API for MongoDB by using any of the open-source MongoDB client drivers. The Azure Cosmos DB’s API for MongoDB enables the use of existing client drivers by adhering to the MongoDB wire protocol.
 
@@ -367,9 +370,9 @@ This code illustrated the power of using extended commands in our code, which al
 
 ::: zone pivot="java"
 
-## Create MongoDB app using ***Java*** Azure Cosmos DB API for MongoDB
+## Create MongoDB app using ***Java*** Azure Cosmos DB for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. To use the Java engine, we'll create and compile an App running *Maven*. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. To use the Java engine, we'll create and compile an App running *Maven*. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
 
 ### Prepare your development environment
 
@@ -385,17 +388,20 @@ If you haven't already prepared the environment and the Azure Cosmos DB account 
     # Replace the projects pom.xml file with the github one that has the MongoDB definition
     mv pom.xml1 ./AzureApp/pom.xml
 
-    # Create an Azure Cosmos DB API for MongoDB account
+    # Create an Azure Cosmos DB for MongoDB account
     bash ../init.sh
     ```
 
+    > [!Tip]
+    > If you are not using the sandbox for the lab, and you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call. Additionally, if you would like to specify a resource group, add a ***-r YOURRRESOURCEGROUPNAMEHERE*** parameter to the *init.sh* call.
+
     > [!NOTE] 
-    > This bash script will create the Azure Cosmos DB API for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
+    > This bash script will create the Azure Cosmos DB for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
 
 1. When the bash *init.sh* file completes running, copy somewhere the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** returned, we'll need them in the next section. You can also review the JSON  returned by the account creation script that is located before the connection string.  If you look somewhere in the middle of the JSON, you should see the property **"kind": "MongoDB"**.
 
     > [!NOTE] 
-    > Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
+    > Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure portal.
 
 ### Add the code to create the databases, collection and document to the App.java file
 
@@ -551,11 +557,11 @@ It's now time to add our Java code to create a Database, a Collection and add a 
     INFO: Closed connection [connectionId{localValue:3, serverValue:74678510}] to learn-account-cosmos-665601-westus.mongo.cosmos.azure.com:10255 because the pool has been closed.
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
-While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB API for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
+While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
 
 By using the Azure Cosmos DB’s API for MongoDB, you can enjoy the benefits of Cosmos DB such as global distribution, automatic sharding, high availability, latency guarantees, automatic, encryption at rest, backups, and many more, while preserving your investments in your MongoDB app. You can communicate with the Azure Cosmos DB’s API for MongoDB by using any of the open-source MongoDB client drivers. The Azure Cosmos DB’s API for MongoDB enables the use of existing client drivers by adhering to the MongoDB wire protocol.
 
@@ -755,9 +761,9 @@ This code illustrated the power of using extended commands in our code, which al
 
 ::: zone pivot="python"
 
-## Create MongoDB app using ***Python*** Azure Cosmos DB API for MongoDB
+## Create MongoDB app using ***Python*** Azure Cosmos DB for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database.  You'll then create a collection using extension commands that allow you to define the throughput in Request Units/sec (RUs) for the collection.
 
 ### Prepare your development environment
 
@@ -770,17 +776,20 @@ If you haven't already prepared the Azure Cosmos DB account and environment wher
     cd ~/mslearn-cosmosdb/api-for-mongodb/01-create-mongodb-objects/python
     # Install the MongoDB Python drivers
     python -m pip install pymongo
-    # Create an Azure Cosmos DB API for MongoDB account
+    # Create an Azure Cosmos DB for MongoDB account
     bash ../init.sh
     ```
 
+    > [!Tip]
+    > If you are not using the sandbox for the lab, and you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call. Additionally, if you would like to specify a resource group, add a ***-r YOURRRESOURCEGROUPNAMEHERE*** parameter to the *init.sh* call.
+
     > [!NOTE] 
-    > This bash script will create the Azure Cosmos DB API for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea. 
+    > This bash script will create the Azure Cosmos DB for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea. 
 
 1. When the bash *init.sh* file completes running, copy somewhere the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** returned, we'll need them in the next section. You can also review the JSON  returned by the account creation script that is located before the connection string.  If you look somewhere in the middle of the JSON, you should see the property **"kind": "MongoDB"**.
 
     > [!NOTE] 
-    > The ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
+    > The ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure portal.
 
 ### Add the code to create the databases, collection and document to the App.py file
 
@@ -902,11 +911,11 @@ It's now time to add our Python code to create a Database, a Collection and add 
     {'_id': ObjectId('62afecc3a04e32b92451ac5d'), 'ProductId': 1, 'name': 'bread'}
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
-While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB API for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
+While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
 
 By using the Azure Cosmos DB’s API for MongoDB, you can enjoy the benefits of Cosmos DB such as global distribution, automatic sharding, high availability, latency guarantees, automatic, encryption at rest, backups, and many more, while preserving your investments in your MongoDB app. You can communicate with the Azure Cosmos DB’s API for MongoDB by using any of the open-source MongoDB client drivers. The Azure Cosmos DB’s API for MongoDB enables the use of existing client drivers by adhering to the MongoDB wire protocol.
 
@@ -1050,9 +1059,9 @@ This code illustrated the power of using extended commands in our code, which al
 
 ::: zone pivot="csharp"
 
-## Create MongoDB app using ***C#*** Azure Cosmos DB API for MongoDB
+## Create MongoDB app using ***C#*** Azure Cosmos DB for MongoDB
 
-In this exercise, you'll create an Azure Cosmos DB API for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
+In this exercise, you'll create an Azure Cosmos DB for MongoDB account, a database, a collection and add a couple of documents to the collection. You'll notice that this code will be identical to how you would connect to any MongoDB database. You'll then create a collection using extension commands that allow you to define the throughput in Request Units (RUs) for the collection.
 
 ### Prepare your development environment
 
@@ -1067,17 +1076,20 @@ If you haven't already prepared the environment and the Azure Cosmos DB account 
     # Add MongoDB driver to DotNet
     dotnet add package MongoDB.Driver --version 2.16.0
 
-    # Create an Azure Cosmos DB API for MongoDB account
+    # Create an Azure Cosmos DB for MongoDB account
     bash ../init.sh
     ```
 
+    > [!Tip]
+    > If you are not using the sandbox for the lab, and you want to specify the location where you would like to create your database and storage objects, add a ***-l LOCATIONNAME*** parameter to the *init.sh* call. Additionally, if you would like to specify a resource group, add a ***-r YOURRRESOURCEGROUPNAMEHERE*** parameter to the *init.sh* call.
+
     > [!NOTE] 
-    > This bash script will create the Azure Cosmos DB API for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
+    > This bash script will create the Azure Cosmos DB for MongoDB account. *It can take 5-10 minutes to create this account* so it might be a good time to get a cup of coffee or tea.
 
 1. When the bash *init.sh* file completes running, copy somewhere the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** returned, we'll need them in the next section. You can also review the JSON  returned by the account creation script that is located before the connection string.  If you look somewhere in the middle of the JSON, you should see the property **"kind": "MongoDB"**.
 
     > [!NOTE] 
-    > Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure Portal.
+    > Note that  the ***Connection String***, ***Cosmos DB Account name*** and ***Resource Group name*** can also be found using the Azure portal.
 
 ### Add the code to create the databases, collection and document to the app.cs file
 
@@ -1213,11 +1225,11 @@ It's now time to add our C# code to create a Database, a Collection and add a do
     Id: 62affed8147b5206db146298, ProductId: 1, name: 'bread'
     ```
 
-As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB API for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
+As you should have noticed, this code is the same code you would run to create a database, collection and document on a MongoDB database. So programming for Azure Cosmos DB for MongoDB should be transparent to you if you're already familiar with creating apps that connect to MongoDB.
 
 ### Using extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
-While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB API for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
+While the code above, except for the connection string, would be identical between connecting to a MongoDB Server then connection to our Azure Cosmos DB for MongoDB account, this might not take advantage of Azure Cosmos DB features. What this means is using the default driver methods to create our collections, will also use the default Azure Cosmos DB Account parameters  to create those collections. So we won't be able to define creation parameters like our throughput, sharding key or autoscaling settings using those methods.
 
 By using the Azure Cosmos DB’s API for MongoDB, you can enjoy the benefits of Cosmos DB such as global distribution, automatic sharding, high availability, latency guarantees, automatic, encryption at rest, backups, and many more, while preserving your investments in your MongoDB app. You can communicate with the Azure Cosmos DB’s API for MongoDB by using any of the open-source MongoDB client drivers. The Azure Cosmos DB’s API for MongoDB enables the use of existing client drivers by adhering to the MongoDB wire protocol.
 

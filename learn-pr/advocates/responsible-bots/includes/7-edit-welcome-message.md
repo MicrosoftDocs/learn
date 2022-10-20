@@ -29,7 +29,7 @@ Let's change our bot behavior in a small way by updating the welcome message. To
 1. Locate the definition of the `welcomeText` variable at the beginning of that method. Try replacing the simple greeting with a longer message. You can start with the following sample.
 
    ```csharp
-   var welcomeText = "Hello. I am a teaching assistant bot that will help you learn geography. If you enter a country, I can tell you its capital.";
+   var welcomeText = "Hello. I am a teaching assistant bot that will help you learn geography. If you enter a country/region, I can tell you its capital/major city.";
    ```
 
 1. Save your changes.  
@@ -58,7 +58,7 @@ To see whether your bot works, rebuild your code and run your bot:
 
 1. Try sending a message to your bot, and see how the bot responds.
 
-   :::image type="content" source="../media/bot-framework-emulator-basic-message-exchange.png" alt-text="Screenshot of the Live Chat tab of Bot Framework Emulator. Messages show that the bot returns a capital when a user enters a country.":::
+   :::image type="content" source="../media/bot-framework-emulator-basic-message-exchange.png" alt-text="Screenshot of the Live Chat tab of Bot Framework Emulator. Messages show that the bot returns a capital when a user enters a country/region.":::
 
 Your bot now greets you with a helpful message. When you enter the name of a country/region, your bot responds with the country's capital/major city.
 
