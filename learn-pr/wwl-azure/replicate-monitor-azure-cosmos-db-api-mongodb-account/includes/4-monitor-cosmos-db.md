@@ -117,6 +117,6 @@ To verify if the database access is coming across a hot shard, in the Azure port
 > [![Screenshot that shows the charts by throughput of a hot shard.](../media/4-monitor-hot-shard.png)](../media/4-monitor-hot-shard.png#lightbox)
 
 > [!NOTE]
-> Besides rate-limiting exceptions, some other exceptions can also be raised by Azure Cosmos DB. To review some of those exceptions, please see the *[Troubleshoot common issues in Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/monogdb/error-codes-solutions#common-errors-and-solutions)* article.
+> Besides rate-limiting exceptions, some other exceptions can also be raised by Azure Cosmos DB. To review some of those exceptions, please see the *[Troubleshoot common issues in Azure Cosmos DB's API for MongoDB](/azure/cosmos-db/mongodb/error-codes-solutions#common-errors-and-solutions)* article.
 
 Now that we've seen how to use the Azure Monitor tool to observe the Azure Cosmos DB account operations, in the next unit, let's query the *Azure diagnostic logs* to help us further monitor our Azure Cosmos DB account.

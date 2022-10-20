@@ -13,7 +13,7 @@ For more information about the subjects discussed in this module, see:
 - [Global data distribution with Azure Cosmos DB - under the hood](/azure/cosmos-db/global-dist-under-the-hood)
 - [Design and implement a replication strategy for Azure Cosmos DB SQL API](/learn/paths/design-implement-replication-strategy-cosmos-db-sql-api/)
 - [Consistency levels in Azure Cosmos DB](/azure/cosmos-db/consistency-levels)
-- [Consistency levels for Azure Cosmos DB and the API for MongoDB](/azure/cosmos-db/monogdb/consistency-mapping)
+- [Consistency levels for Azure Cosmos DB and the API for MongoDB](/azure/cosmos-db/mongodb/consistency-mapping)
 - [Azure Monitor overview](/azure/azure-monitor/overview)
 - [Monitor Azure Cosmos DB](/azure/cosmos-db/monitor-cosmos-db)
 - [Monitoring Azure Cosmos DB data reference](/azure/cosmos-db/monitor-cosmos-db-reference)
