@@ -17939,6 +17939,41 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-monitor/9-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-monitor/10-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/1-introduction-mongodb-api-azure-cosmos-db.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-mongodb-api-azure-cosmos-db/1-introduction-azure-cosmos-db-mongodb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/2-api-for-mongodb-api-versions.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-mongodb-api-azure-cosmos-db/2-mongodb-application-program-interface-versions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/3-create-account-database-collection-use-api-for-mongodb.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-mongodb-api-azure-cosmos-db/3-create-account-database-collection-azure-cosmos-db-mongodb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/4-connect-query-api-for-mongodb.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-mongodb-api-azure-cosmos-db/4-connect-query-azure-cosmos-db-mongodb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-use-calculator.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-mongodb-api-azure-cosmos-db/5-capacity-estimation-calculator",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/get-started-mongodb-api-azure-cosmos-db/6-exercise-create-mongodb-db-app-use-api-for-mongodb.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/get-started-mongodb-api-azure-cosmos-db/6-exercise-create-cosmos-db-mongodb-application",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/read-text-images-documents-with-computer-vision-service/3-use-ocr-api.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/read-text-images-documents-with-computer-vision-service/",
+      "redirect_document_id": false
     }
   ]
 }
