@@ -1,6 +1,6 @@
 With an active Azure subscription, you and your crew are ready to create an Azure Quantum workspace. An Azure Quantum workspace resource, or workspace for short, is a collection of assets associated with running quantum or optimization applications.
 
-First-time users automatically get $500 (USD) free [Azure Quantum Credits](xref:microsoft.quantum.credits) for use with each participating quantum hardware provider (see the [full quantum provider list](xref:microsoft.quantum.reference.qc-target-list)). Your free Azure Quantum Credits become available once you create a new Azure Quantum workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](xref:microsoft.quantum.credits.credits-faq).
+First-time users automatically get $500 (USD) free [Azure Quantum Credits](/azure/quantum/azure-quantum-credits) for use with each participating quantum hardware provider (see the [full quantum provider list](/azure/quantum/qc-target-list)). Your free Azure Quantum Credits become available once you create a new Azure Quantum workspace. If you need more credits, you can apply to the [Azure Quantum Credits program](/azure/quantum/credits-faq).
 
 If you don't have an Azure account with an active subscription, choose from one of the following subscriptions or see [Microsoft Azure Offer Details](https://azure.microsoft.com/support/legal/offer-details/) for a full list.
 
