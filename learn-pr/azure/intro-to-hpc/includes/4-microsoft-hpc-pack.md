@@ -57,11 +57,11 @@ Azure HPC workloads offer machine learning, visualization, and rendering, all of
 The following best practices can help you get the expected performance, and value.
 
 - **Distribute Deployments Across Cloud Services:** 
-Distributing large deployments across cloud services can help you avoid limitations created by overloading or relying on a single service. By splitting your deployment into smaller segments, you can:
-    1. Stop idle instances after job completion without interrupting other processes
-    2. Flexibly start and stop node clusters
-    3. More easily find available nodes in your clusters
-    4. Use multiple data centers to ensure disaster recovery
+Distributing large deployments across cloud services can help you avoid limitations created by overloading or relying on a single service. By splitting your deployment into smaller segments, you can:<br>
+    - Stop idle instances after job completion without interrupting other processes
+    - Flexibly start and stop node clusters
+    - More easily find available nodes in your clusters
+    - Use multiple data centers to ensure disaster recovery
 
 - **Use Multiple Azure Storage Accounts for Node Deployments:** 
 Similar to spreading deployments across services, it’s recommended to attach multiple storage accounts to each deployment. It can provide better performance for large deployments, applications restricted by input/output operations, and custom applications. When setting up your storage accounts, you should have one account for node provisioning and another for moving job or task data to ensure consistency and low latency.
