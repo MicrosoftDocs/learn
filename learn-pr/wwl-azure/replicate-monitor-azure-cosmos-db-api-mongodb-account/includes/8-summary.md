@@ -17,4 +17,4 @@ For more information about the subjects discussed in this module, see:
 - [Azure Monitor overview](/azure/azure-monitor/overview)
 - [Monitor Azure Cosmos DB](/azure/cosmos-db/monitor-cosmos-db)
 - [Monitoring Azure Cosmos DB data reference](/azure/cosmos-db/monitor-cosmos-db-reference)
-- [Monitor and troubleshoot an Azure Cosmos DB SQL API solution](/learn/paths/monitor-troubleshoot-azure-cosmos-db-sql-api-solution/)
+- [Monitor and troubleshoot an Azure Cosmos DB SQL API solution](/training/paths/monitor-troubleshoot-azure-cosmos-db-sql-api-solution/)
