@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you will be able to:
   - Implement availability sets and availability zones.
   - Implement update and fault domains.
-  - Implement virtual machine scale sets.
+  - Implement Virtual Machine Scale Sets.
   - Autoscale virtual machines.
 prerequisites: |
   None
