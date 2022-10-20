@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.design-mongodb-database-for-azure-cosmos-db
 metadata:
-  title: Design an Azure Cosmos DB API for MongoDB database
+  title: Design an Azure Cosmos DB for MongoDB database
   description: "Learn about indexes, shard keys, modeling and the aggregation pipeline."
-  ms.date: 07/08/2022
+  ms.date: 10/20/2022
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Design an Azure Cosmos DB API for MongoDB database
-summary: This module will introduce Azure Cosmos DB modeling, shard keys and indexing concepts. We will also discuss Azure Cosmos DB API for MongoDB collection's support for MongoDB aggregation pipelines.
+title: Design an Azure Cosmos DB for MongoDB database
+summary: This module will introduce Azure Cosmos DB modeling, shard keys and indexing concepts. We will also discuss Azure Cosmos DB for MongoDB collection's support for MongoDB aggregation pipelines.
 abstract: |
   *   Modeling and shard keys.
-  *   Azure Cosmos DB API for MongoDB Indexes.
+  *   Azure Cosmos DB for MongoDB Indexes.
   *   Aggregation pipeline
 prerequisites: |
   Before starting this module, you should have experience of building cloud applications with Microsoft JavaScript, Java, Python, C# or a similar programming language.
