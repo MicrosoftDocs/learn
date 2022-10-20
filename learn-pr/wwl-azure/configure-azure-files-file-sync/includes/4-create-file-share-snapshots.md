@@ -8,15 +8,15 @@ Let's review some characteristics of file share snapshots.
 
 - The Azure Files share snapshot capability is provided at the file share level.
 
-- Share snapshots are incremental in nature. Only the data that's changed since the most recent share snapshot is saved.
+- Share snapshots are incremental in nature. Only data changed since the most recent share snapshot is saved.
 
 - Incremental snapshots minimize the time required to create share snapshots and saves on storage costs.
 
-- Even though share snapshots are saved incrementally, you need to retain only the most recent share snapshot in order to restore the share.
+- Even though share snapshots are saved incrementally, you only need to retain the most recent share snapshot to restore the share.
 
-- You can retrieve a share snapshot for an individual file. This level of support helps with restoring individual files.
+- You can retrieve a share snapshot for an individual file. This level of support helps with restoring individual files rather than having to restore to the entire file share.
 
-- If you want to delete a share that has share snapshots, you must delete all of its' snapshots.
+- If you want to delete a share that has share snapshots, you must first delete all of its' snapshots.
 
 ### Things to consider when using file share snapshots
 

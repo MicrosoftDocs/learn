@@ -1,6 +1,6 @@
-Azure Administrators are familiar with Azure Files and the Azure File Sync agent. They know how to implement fully managed file shares in the cloud by using industry standard protocols. They understand how to use Azure File Sync to cache Azure file shares on an on-premises Windows Server or cloud virtual machine.
+Azure Administrators are familiar with Azure Files and the Azure File Sync agent. They know how to implement fully managed file shares in the cloud by using industry standard protocols. They understand how to use Azure File Sync to cache Azure Files shares on an on-premises Windows Server or cloud virtual machine.
 
-In this module, you learned how to determine when to use Azure Files versus Azure Blob Storage. You discovered how to configure Azure Files shares and file share snapshots. You explored features and use case scenarios for the Azure File Sync agent. You reviewed Azure File Sync components and configuration steps.
+In this module, you learned how to determine when to use Azure Files versus Azure Blob Storage or Azure Disks. You discovered how to configure Azure Files shares and file share snapshots. You explored features and use case scenarios for the Azure File Sync agent. You reviewed the Azure File Sync components and configuration steps.
 
 ## Learn more
 

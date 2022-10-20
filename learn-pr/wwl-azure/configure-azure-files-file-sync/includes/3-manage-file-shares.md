@@ -8,14 +8,14 @@ There are two important settings for Azure Files that you need to be aware of wh
 
 - **Open port 445**. Azure Files uses the SMB protocol. SMB communicates over TCP port 445. Be sure port 445 is open. Also, make sure your firewall isn't blocking TCP port 445 from the client machine.
 
-- **Enable secure transfer required**. The Secure transfer required setting enhances the security of your storage account by limiting requests to your storage account from secure connections only. Consider the scenario where you use REST APIs to access your storage account. If you attempt to connect and secure transfer required is enabled, you must connect by using HTTPS. If you try to connect to your account by using HTTP and secure transfer required is enabled, the connection is rejected.
+- **Enable secure transfer**. The `Secure transfer required` setting enhances the security of your storage account by limiting requests to your storage account from secure connections only. Consider the scenario where you use REST APIs to access your storage account. If you attempt to connect, and secure transfer required is enabled, you must connect by using HTTPS. If you try to connect to your account by using HTTP, and secure transfer required is enabled, the connection is rejected.
 
-## Map Azure Files shares on Windows
+## Map Azure Files share on Windows
 
-Connect your Azure Files share with Windows or Windows Server in the Azure portal.
+You can connect your Azure Files share with Windows or Windows Server in the Azure portal. Specify the **Drive** where you want to map the share, and choose the **Authentication method**. The system supplies you with PowerShell commands to run when you're ready to work with the file share.
 
 :::image type="content" source="../media/map-file-shares-windows-a1aa8f59.png" alt-text="Screenshot that shows how to connect to an Azure Files share with Windows or Windows Server in the Azure portal.":::
 
-## Mount Azure Files shares on Linux
+## Mount Azure Files share on Linux
 
-Azure Files shares can also be connected with Linux machines. From your virtual machine page, select **Connect**. Azure Files shares can be mounted in Linux distributions by using the CIFS kernel client. File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
+You can also connect Azure Files shares with Linux machines. From your virtual machine page, select **Connect**. Azure Files shares can be mounted in Linux distributions by using the CIFS kernel client. File mounting can be done on-demand with the `mount` command or on-boot (persistent) by creating an entry in /etc/fstab.
