@@ -1,6 +1,6 @@
-MongoDB app developers don't have to learn new ways to communicate with the Azure Cosmos DB for MongoDB. The Azure Cosmos DB for MongoDB uses existing MongoDB [client drivers](https://www.mongodb.com/docs/drivers/) by adhering to the MongoDB [wire protocol](https://www.mongodb.com/docs/manual/reference/monogdb-wire-protocol/). 
+MongoDB app developers don't have to learn new ways to communicate with the Azure Cosmos DB for MongoDB. The Azure Cosmos DB for MongoDB uses existing MongoDB [client drivers](https://www.mongodb.com/docs/drivers/) by adhering to the MongoDB [wire protocol](https://www.mongodb.com/docs/manual/reference/mongodb-wire-protocol/). 
 
-Azure Cosmos DB for MongoDB is compatible with multiple MongoDB Server versions: versions [4.2](/azure/cosmos-db/monogdb/feature-support-42), [4.0](/azure/cosmos-db/monogdb/feature-support-40), [3.6](/azure/cosmos-db/monogdb/feature-support-36) and [3.2](/azure/cosmos-db/monogdb/feature-support-32).
+Azure Cosmos DB for MongoDB is compatible with multiple MongoDB Server versions: versions [4.2](/azure/cosmos-db/mongodb/feature-support-42), [4.0](/azure/cosmos-db/mongodb/feature-support-40), [3.6](/azure/cosmos-db/mongodb/feature-support-36) and [3.2](/azure/cosmos-db/mongodb/feature-support-32).
 
 ## Protocol Support
 

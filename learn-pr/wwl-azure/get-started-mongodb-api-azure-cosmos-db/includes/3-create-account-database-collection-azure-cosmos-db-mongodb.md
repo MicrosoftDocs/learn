@@ -291,7 +291,7 @@ In the next unit, we'll see how exactly did we created our connection string.
 
 ## Use MongoDB extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB
 
-As we discussed earlier, Azure Cosmos DB for MongoDB gives us the ability to use the same drivers and code we used to access and create our objects in a MongoDB server for our Azure Cosmos DB account.  However, using that code to create our databases and collections will use the default Azure Cosmos DB creation parameters.  To take advantage of Azure Cosmos DB features, we'll need to be able to control our database and collection creation parameters like throughput, autoscaling, assigning shard keys, and defining indexes. Azure Cosmos DB for MongoDB gives us this ability by using [extended commands](/azure/cosmos-db/monogdb/custom-commands) to define those parameters. These commands allow us to code more precise instructions on how to create or modify our databases and collections specifically for Azure Cosmos DB.
+As we discussed earlier, Azure Cosmos DB for MongoDB gives us the ability to use the same drivers and code we used to access and create our objects in a MongoDB server for our Azure Cosmos DB account.  However, using that code to create our databases and collections will use the default Azure Cosmos DB creation parameters.  To take advantage of Azure Cosmos DB features, we'll need to be able to control our database and collection creation parameters like throughput, autoscaling, assigning shard keys, and defining indexes. Azure Cosmos DB for MongoDB gives us this ability by using [extended commands](/azure/cosmos-db/mongodb/custom-commands) to define those parameters. These commands allow us to code more precise instructions on how to create or modify our databases and collections specifically for Azure Cosmos DB.
 
 Azure Cosmos DB for MongoDB provides extension commands for the following request types:
 
@@ -350,4 +350,4 @@ The MongoDB drivers provide a function to run a command against a database, we'l
 
 ::: zone-end
 
-In a similar fashion we can modify a collection or create or modify a database.  Review the [Use MongoDB extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB](/azure/cosmos-db/monogdb/custom-commands) article for more information.
+In a similar fashion we can modify a collection or create or modify a database.  Review the [Use MongoDB extension commands to manage data stored in Azure Cosmos DB’s API for MongoDB](/azure/cosmos-db/mongodb/custom-commands) article for more information.

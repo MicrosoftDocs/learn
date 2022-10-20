@@ -51,8 +51,8 @@ Once you signed in, you'll notice a more detailed set of parameters than the Bas
     - Enable it when you expect to have an active-active workload that requires low latency writes in different regions.
     - Multi-region writes guarantees 99.999% read and write availability. 
     - Multi-region writes require more throughput when compared to the single write regions.
-- **Default consistency** - Azure Cosmos DB for MongoDB supports 4 [consistency levels](/azure/cosmos-db/monogdb/consistency-mapping), to allow developers to balance the tradeoff between consistency, availability, and latency tradeoffs. We'll discuss consistency levels in more details in the *Replication, Monitor and Optimize* module.
- - **Indexing policy** - This setting defines how your workload plans to use its indexes. We'll discuss indexes in more detail in the *Design MongoDB Databases for Azure Cosmos DB* module. To learn more, see [index management](azure/cosmos-db/monogdb/monogdb-indexing) in API for MongoDB.
+- **Default consistency** - Azure Cosmos DB for MongoDB supports 4 [consistency levels](/azure/cosmos-db/mongodb/consistency-mapping), to allow developers to balance the tradeoff between consistency, availability, and latency tradeoffs. We'll discuss consistency levels in more details in the *Replication, Monitor and Optimize* module.
+ - **Indexing policy** - This setting defines how your workload plans to use its indexes. We'll discuss indexes in more detail in the *Design MongoDB Databases for Azure Cosmos DB* module. To learn more, see [index management](/azure/cosmos-db/mongodb/mongodb-indexing) in API for MongoDB.
     - If you choose *Off* option, none of the properties are indexed that results in the lowest RU charge for writes. You'll need to query using the _id field and the shard key for every query, any other query will scan all partitions.
     - If you choose the *Automatic* option, will index all fields/properties in your documents that in turn allows flexible and efficient queries.
     - If you choose the *Custom* option, you can define the properties that are indexed with multi-key indexes or compound indexes. 

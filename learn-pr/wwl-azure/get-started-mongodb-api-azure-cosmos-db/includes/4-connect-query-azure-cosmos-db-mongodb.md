@@ -12,7 +12,7 @@ There are tabs for different programming languages. Each of these tabs will alre
 Let's review and example of the connection string format we would use to connect to an Azure Cosmos DB for MongoDB account.
 
 ```JavaScript
-    "mongodb://monogdb00420mongodb01:P8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6goz==@mongodb00420mongodb01.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@mongodb00420mongodb01@";
+    "mongodb://mongodb00420mongodb01:P8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6goz==@mongodb00420mongodb01.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@mongodb00420mongodb01@";
 ```
 
 This code snippet tells us that the Azure Cosmos DB for MongoDB account name is *mongodb00420mongodb01* and its password is *P8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6gozP8XEmc2Z6goz==*.  The port used will be 10255, which is the standard Azure Cosmos DB for MongoDB account port. Finally note that our host address will be *mongodb00420mongodb01.mongo.cosmos.azure.com*.
