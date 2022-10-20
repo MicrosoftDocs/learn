@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 10/04/2022
+  ms.date: 10/20/2022
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -35,4 +35,4 @@ quiz:
       explanation: "Correct. You can store CSV files in a data lake without having any capacity constraints."
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: "Incorrect. A CSV file can't be stored in an Azure SQL Database, you'd have to convert the file to a SQL table to store the data."
+      explanation: "Incorrect. A CSV file can't be directly stored in an Azure SQL Database, you'd have to convert the file to a SQL table to store the data."
