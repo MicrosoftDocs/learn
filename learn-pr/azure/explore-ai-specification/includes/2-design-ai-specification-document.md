@@ -2,7 +2,7 @@ Now, let’s review an example of an AI spec document for Project Moab.
 
 We will be explaining the different sections that are included in any AI specification document, using the Moab specification document as an example.
 
-For this initial review of an AI Spec document, assume that you are the head of the funding team at your company. The adoption team is trying to bring a new technology to the company: Bonsai. The team has put together a deck for you to understand the problem that they are trying to solve and the benefits it brings to the company. At this stage, your only objective is to learn about the problem and make a preliminary decision about the value this project could bring to your company.
+For this initial review of an AI Spec document, assume that you're the head of the funding team at your company. The adoption team is trying to bring a new technology to the company: Bonsai. The team has put together a deck for you to understand the problem that they're trying to solve and the benefits it brings to the company. At this stage, your only objective is to learn about the problem and make a preliminary decision about the value this project could bring to your company.
 
 ## Section 1 - Project Objective
 
@@ -50,7 +50,7 @@ There are three limitations:
 
 ***In this section, you’ll include the brain design.***
 
-To find the strategies, we will conduct interviews with subject matter experts filling up the three-column exercise as it is shown below.
+To find the strategies, we'll conduct interviews with subject matter experts filling up the three-column exercise as it's shown below.
 
 ## Section 7 – Control Actions
 
@@ -69,7 +69,7 @@ Note, the ranges for pitch and roll have already been identified and limited on 
 
 ***What information do you need to pass to the Brain about the system and its environment for the Brain to learn to control or optimize the system?***
 
-Note, this section refers to sensors that collect information from the environment, corresponding to the input in the brain design. Additionally, you will surely want to include: the data type (decimal), the source where you’ll find the data (simulator), units (meters & meters/second), measurement frequency, and operating range are the parameters that you’ll find in this section of the AI spec.
+Note, this section refers to sensors that collect information from the environment, corresponding to the input in the brain design. Additionally, you'll surely want to include: the data type (decimal), the source where you’ll find the data (simulator), units (meters & meters/second), measurement frequency, and operating range are the parameters that you’ll find in this section of the AI spec.
 
 For the Moab, there are four environment states:
 
@@ -83,7 +83,7 @@ For the Moab, there are four environment states:
 - What action is that concept taking?  
 - How does the environment change?  
 - What is the reward signal to train that concept?  
-- What configuration variables are used to describe the scenario? (these are the lessons you are going to give the Brain to learn the task)
+- What configuration variables are used to describe the scenario? (these are the lessons you're going to give the Brain to learn the task)
 
 ## Section 11 – Configuration Scenarios
 
@@ -91,7 +91,7 @@ For the Moab, there are four environment states:
 
 Note, this section refers to the first column (Configuration Variable) of the three columns table defined above within the heuristics subsection: "When this happens in the environment…(scenario)" can potentially be identifying scenarios that your SMEs care about. In other cases, it relates to the decomposition agreed upon: steady-state control could be one scenario, and machine startup could be another one. Each scenario is represented by a unique set of initial conditions, and a set of final ones (including both for failure as well as success).
 
-Our Moab use case consists of only 1 scenario:
+Our Moab use case consists of only one scenario:
 
 - From a given set of initial conditions* where the ball is already on the plate, we seek to drive the ball to the center**.
 
@@ -124,8 +124,8 @@ Many questions need to be answered for the simulation:
 - Who's building it?  
 What’s the validation plan?  
 - When is the simulator going to be ready?  
-- What is the simulation written in? In the case of the Moab example, it is a custom simulator written in python.  
-- How fast is it? For Moab it is 30 Hz.
+- What is the simulation written in? In the case of the Moab example, it's a custom simulator written in python.  
+- How fast is it? For Moab, it's 30 Hz.
 - Is this a physics-based first principles model? For Moab, yes. 
 - Is this a discrete event model? For Moab, yes. 
 - Does that simulator have an API that you can connect to?  
@@ -133,7 +133,7 @@ What’s the validation plan?  
 
 There are several types of simulators:
 
-- A first-principle simulator is the most accurate representation of the machine or process. It is also the most time-consuming to build and it might be too slow to train the brain.
+- A first-principle simulator is the most accurate representation of the machine or process. It's also the most time-consuming to build and it might be too slow to train the brain.
 - A surrogate model built using an existing high-resolution first-principles simulation model will be less precise and faster and more appropriate to run millions of tests to train the brain.
 - A data-driven simulation model is the fastest and simplest way to simulate the behavior of your machine or industrial process.  It uses raw data to build a Machine Learning model that predicts what will happen based on specific actions. The inner loop is the control frequency. In other words, whenever the brain says, "This is what I want to do," the simulator needs to respond with "This is what will happen." The drawback of the Data-Driven Simulator is that the brain is limited to the practice of what is already known by the data generated by the ML model.
 
@@ -147,9 +147,9 @@ Parallelization depends on whether you can run in a container in a Virtual Machi
 
 ***Will Machine Learning (ML) models or other decision-making technology be used to supplement the environment state from the simulator?***
 
-Sometimes there are supplementary decision-making models, such as Machine Learning models for advanced perception, classification, or prediction. These models should be included here. There will not always be ML models in your Autonomous AI brain design. Sometimes an optimizer or another control system will be built in. All non-AI components that are part of your modular brain design should be listed here.  
+Sometimes there are supplementary decision-making models, such as Machine Learning models for advanced perception, classification, or prediction. These models should be included here. There won't always be ML models in your Autonomous AI brain design. Sometimes an optimizer or another control system will be built in. All non-AI components that are part of your modular brain design should be listed here.  
 
-And there should be delivery dates associated with each module. The project may be impacted if you need a perception model that has not been built yet.  
+And there should be delivery dates associated with each module. The project may be impacted if you need a perception model that hasn't been built yet.  
 
 ## Section 15 - Deployment
 
@@ -161,7 +161,7 @@ This section answers how the brain will be deployed to control the production sy
 
 ***This section is to ensure that people with the skill sets needed are included.***
 
-We have arrived at the last section of the AI specification document.
-In this module, we have seen an example of all the sections included in the AI specification document of Project Moab. The Moab brain is monolithic, i.e. it only has a learnt module, move to center.
+We've arrived at the last section of the AI specification document.
+In this module, we've seen an example of all the sections included in the AI specification document of Project Moab. The Moab brain is monolithic, i.e. it only has a learned module, move to center.
 
 In industrial processes, you’ll find more complex scenarios and a modular brain design will be necessary.
