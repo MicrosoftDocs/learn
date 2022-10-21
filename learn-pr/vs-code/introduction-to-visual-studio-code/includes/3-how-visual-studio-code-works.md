@@ -24,13 +24,13 @@ You can add what you need to Visual Studio Code quickly and leave out what you d
 
 You can search for, download, and install extensions from the Extensions Marketplace within Visual Studio Code, which integrates with the [Visual Studio Marketplace](https://marketplace.visualstudio.com/vscode?azure-portal=true). For example, you can search by categories such as formatters, programming languages, or themes. The following screenshot displays a few of the many extensions available in the "formatters" category. When you find an extension you want to add, select <kbd>Install</kbd>.
 
-:::image type="content" source="../media/3-extensions-marketplace-prettier.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed and the Prettier extension in view":::
+:::image type="content" source="../media/3-extensions-marketplace-prettier.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed and the Prettier extension in view.":::
 
 ### Who built the extensions?
 
 Microsoft publishes many popular extensions, including C/C++, Python, and Docker. Third-parties such as individuals or companies like Red Hat also create and publish extensions for the Marketplace. Most extensions are free. However, some providers charge a fee to download and use their extensions. The publisher is listed below the extension name.
 
-:::image type="content" source="../media/3-marketplace-python.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed and the Python extension published by Microsoft in view":::
+:::image type="content" source="../media/3-marketplace-python.png" alt-text="Screenshot of Visual Studio Code with the Extensions Marketplace view displayed and the Python extension published by Microsoft in view.":::
 
 ## Scenario
 
