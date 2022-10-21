@@ -1,4 +1,42 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+
+
+
+
+Reference the new AMA ansible playbook?
+
+
+
+
+Ansible onboarding capabilities
+
+You can onboard Ansible-managed Linux nodes to Azure Arc at scale using Ansible playbooks. To do so, you'll need to download, modify, and then run the appropriate Ansible playbook. Once the playbook is run and the Linux machines are onboarded, you can verify their connection to Azure and manage them using the Azure portal, just as you would other Azure resources.
+
+
+
+Azure Policy
+
+Azure Automanage best practices
+
+
+Azure Automanage Machine Configuration
+
+
+
+
+
+
+
+
+<!--
+
+It would be good to reference to the new AMA ansible playbook, as well as Ansible onboarding capabilities.
+
+Another call out would be that Azure Policy, Azure Automanage: Best Practices + Machine Configuration also all support Azure Arc-enabled Linux machines.
+
+
+
+
+ 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
 

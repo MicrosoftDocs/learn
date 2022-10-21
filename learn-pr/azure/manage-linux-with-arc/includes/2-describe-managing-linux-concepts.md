@@ -6,6 +6,19 @@ Once your Linux machines are onboarded to Azure Arc, you can:
 - Manage the machines using automation runbooks or solutions like Update Management
 - Use other Azure services such as Microsoft Defender for Cloud
 
+## Supported Linux distributions
+
+The following Linux distributions are officially supported for the Azure Connected Machine agent:
+
+- Ubuntu 16.04, 18.04, 20.04, and 22.04 LTS
+- Debian 10 and 11
+- CentOS Linux 7 and 8
+- Rocky Linux 8
+- SUSE Linux Enterprise Server (SLES) 12 and 15
+- Red Hat Enterprise Linux (RHEL) 7 and 8
+- Amazon Linux 2
+- Oracle Linux 7 and 8
+
 ## Azure Automation
 
 Linux machines onboarded to Azure Arc can use Azure Automation for frequent, time-consuming tasks.
@@ -27,95 +40,19 @@ Your onboarded Linux machines can use Update Management to manage operating syst
 
 
 
+## Security
 
-<!--
-Contoso is currently using Azure Arc to manage Windows servers in many locations, including multiple clouds. You have been tasked by management to learn about Azure Arc capabilities for managing Linux. You need to understand how to manage small numbers of Linux machines and also determine options for managing large populations of Linux devices. Several Linux systems have been onboarded to your Azure Arc solution and now you need to understand how to manage them.
+Arc-enabled Linux machines enjoy the same security features as all Azure resources, including Microsoft Defender for Cloud and Azure Monitor agent.
 
-After completing this unit, you should be able to describe how to manage Linux systems with Azure Arc and the cross-team coordination required to deploy the solution. 
- 
-Key content per learning objective 
-Describe Linux with Azure Arc. 
-When to use 
-Key components 
-Describe how managing Linux with Azure Arc relates to the scenario 
-New capabilities gained with Azure Arc that are not otherwise available 
+### Microsoft Defender for Cloud
 
+Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP). Defender for cloud can monitor the security posture of your Arc-enabled Linux machines and fills three vital needs as you manage the security of your Linux resources and workloads:
 
--- 1. Topic sentence(s) --------------------------------------------------------------------------------
+- Continuous assessment of your security posture so you can track new security opportunities and precisely report on the progress of your security efforts.
+- Secures your workloads with step-by-step actions that protect your workloads from known security risks.
+- Provides alerts to defend your workloads in real-time so you can react immediately and prevent security events from developing.
 
-    Goal: briefly summarize the key skill this unit will teach
+### Azure Monitor Agent (AMA)
 
-    Heading: none
+Azure Monitor Agent (AMA) collects monitoring data from the guest operating system of Azure and hybrid virtual machines and delivers it to Azure Monitor for use by features, insights, and other services, such as Microsoft Defender for Cloud. AMA uses data collection rules that let you define the types of data you want each agent you install to collect. This allows you to create unique, scoped configurations for subsets of your Linux machines. These rules are independent of the workspace and the virtual machine, which means you can define a rule once and reuse it across machines and environments.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

@@ -6,7 +6,13 @@ SSH for Arc provides SSH-based connections to Arc-enabled Linux machines without
 
 To use SSH for your Arc-enabled Linux machines, you'll need the following:
 
-??
+- Access as an [Azure user](/azure/active-directory/devices/howto-vm-sign-in-azure-ad-linux)
 
+## Supported Linux enviroments
+
+- CentOS: CentOS 7, CentOS 8
+- RedHat Enterprise Linux (RHEL): RHEL 7.4 to RHEL 7.10, RHEL 8.3+
+- SUSE Linux Enterprise Server (SLES): SLES 12, SLES 15.1+
+- Ubuntu Server: Ubuntu Server 16.04 to Ubuntu Server 20.04
 
 

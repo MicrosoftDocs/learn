@@ -1,10 +1,11 @@
-Contoso is currently using Azure Arc to manage Windows servers in many locations, including multiple clouds. You have been tasked by management to learn about Azure Arc capabilities for managing Linux. You need to understand how to manage small numbers of Linux machines and also determine options for managing large populations of Linux devices. Several Linux systems have been onboarded to your Azure Arc solution and now you need to understand how to manage them.
+Contoso has deployed and evaluated Azure Arc-enabled servers for their on-premise Windows servers. Given their positive experience with Azure Arc on their Windows estate, you've been tasked by management to learn about Azure Arc-enabled server capabilities for similarly managing Linux workloads.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
 - Describe the use of of Azure Arc-enabled servers to manage Linux machines.
+- Describe how to use SSH with Azure Arc-enabled Linux machines.
 
 ## Prerequisites
 
