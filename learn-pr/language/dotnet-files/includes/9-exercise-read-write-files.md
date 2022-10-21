@@ -14,13 +14,13 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Preparation for sales data
 
-1. At the top of `Program.cs`, add `using Newtonsoft.Json`.
+1. At the top of `Program.cs`, add `using Newtonsoft.Json`:
 
     ```csharp
     using Newtonsoft.Json;
     ```
 
-1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that will model the *sales.json* data.
+1. In `Program.cs` directly under the `FindFiles` method, [add a new `record`](/dotnet/csharp/language-reference/builtin-types/record/) that will model the *sales.json* data:
 
     ```csharp
     record SalesData (double Total);
@@ -41,7 +41,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     }
     ```
 
-1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles`, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file.
+1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles`, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file:
 
     ```csharp
     double CalculateSalesTotal(IEnumerable<string> salesFiles)
@@ -67,7 +67,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Call the CalculateSalesTotals method
 
-1. In the `Program.cs` file, add a call to the `CalculateSalesTotal` function just above the `File.WriteAllText` call.
+1. In the `Program.cs` file, add a call to the `CalculateSalesTotal` function just above the `File.WriteAllText` call:
 
     ```csharp
     var currentDirectory = Directory.GetCurrentDirectory();
@@ -105,13 +105,13 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Run the program
 
-1. Run the program from the terminal.
+1. Run the program from the terminal:
 
     ```bash
     dotnet run
     ```
 
-   There's no output from the program. If you look in the *salesTotalDir/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotalDir/totals.txt* file, you'll find the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 
@@ -127,7 +127,7 @@ Outstanding work! You've written a smart, robust, and handy tool that Tailwind T
 
 ## Got stuck?
 
-If you got stuck during this exercise, here's the full code for this project.
+If you got stuck during this exercise, here's the full code for this project:
 
 ```csharp
 using Newtonsoft.Json; 
