@@ -8,7 +8,7 @@ Your organization's is piloting a new infrastructure project. The CTO wants to k
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab02b.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-02b.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
