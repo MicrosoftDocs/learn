@@ -41,7 +41,6 @@ As a starting point for our data, let's use the World Cities Database from Simpl
    "city","city_ascii","lat","lng","country","iso2","iso3","admin_name","capital","population","id"
    "Tokyo","Tokyo","35.6897","139.6922","Japan","JP","JPN","Tōkyō","primary","37977000","1392685764"
    "New York","New York","40.6943","-73.9249","United States","US","USA","New York","","18713220","1840034016"
-   "Bangalore","Bangalore","12.9699","77.5980","India","IN","IND","Karnātaka","admin","13707000","1356410365"
    ```
 
 ### Create classes to store the data

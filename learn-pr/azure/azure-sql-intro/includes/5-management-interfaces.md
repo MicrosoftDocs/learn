@@ -24,7 +24,7 @@ Because all Azure SQL services are based on the SQL Server engine, Azure SQL sup
 
 Azure SQL also supports REST APIs for the management of SQL managed instances and SQL databases.
 
-### Command-line interfaces 
+### Command-line interfaces
 
 Popular command-line interfaces like sqlcmd and bcp are supported with Azure SQL services.
 
