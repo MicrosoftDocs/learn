@@ -6,9 +6,9 @@ Having made a change to the source code in the preceding exercise, you now have 
 
 ### Step 1 - Open the Source Control view to view unstaged changes
 
-In Visual Studio Code, select the Source Control icon in the left column.  The Source Control view shows both staged and unstaged changes.  Your goal is to create a commit, which you can also do from this view.  But first you must decide which changes should be added to your commit.
+In Visual Studio Code, select the Source Control icon in the left column. The Source Control view shows both staged and unstaged changes. Your goal is to create a commit, which you can also do from this view.  But first you must decide which changes should be added to your commit.
 
-:::image type="content" source="../media/5-exercise-stage-commit-01.png" alt-text="Screenshot of the Visual Studio Code Source Control view with the file containing changes listed in the Changes section.":::
+:::image type="content" source="../media/5-visual-studio-code-source-control.png" alt-text="Screenshot of the Visual Studio Code Source Control view with the file containing changes shown in the working tree." lightbox="../media/5-visual-studio-code-source-control.png":::
 
 You can see that your *index.js* file is listed under **Changes**.  To the right of the file name are four icons:
 

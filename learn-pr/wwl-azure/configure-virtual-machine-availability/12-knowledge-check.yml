@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-machine-availability.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 10/20/2022
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Another administrator creates an Azure Virtual Machine Scale Set with five virtual machines. Later, alerts show the VMs are all running at max capacity with the CPU being fully consumed. However, more VMs are not deploying in the scale set. What should be done to ensure that more VMs are deployed when the CPU is 75% consumed?"
+    choices:
+    - content: "Enable the autoscale option."
+      isCorrect: true
+      explanation: "Correct. To meet the scenario requirements, enable the autoscale option so that more VMs are created when the CPU is 75% consumed."
+    - content: "Manually increase the instance count."
+      isCorrect: false
+      explanation: "Incorrect. Manually increases the instance count is time consuming and error prone."
+    - content: "Change the CPU percentage to 50%."
+      isCorrect: false
+      explanation: "Incorrect. There's no need to change the CPU percentage requirement."
+  - content: "The DevOps team for a large food delivery company is configuring a Virtual Machine Scale Set. Friday night is typically the busiest time. Conversely, 7 AM on Wednesday is generally the quietest time. Which of the following Virtual Machine Scale Set features should be configured to add more machines during that time?"
+    choices:
+    - content: "Autoscale"
+      isCorrect: false
+      explanation: "Incorrect. Autoscale will automatically increase or decrease the number of VM instances that run the application. Is there a better solution based on demand?"
+    - content: "Metric-based rules"
+      isCorrect: false
+      explanation: "Incorrect. Metric-based rules are better for situations like CPU usage or storage disk capacity."
+    - content: "Schedule-based rules"
+      isCorrect: true
+      explanation: "Correct. With schedule-based rules, administrators proactively schedule the scale set to deploy one or any number of instances."
+  - content: "Rather than deploy new instances as load increases on the application hosted in a Virtual Machine Scale Set, you want to increase the CPU capacity of each existing instance. Which of the following types of scaling would you perform?"
+    choices:
+    - content: "Vertical scaling."
+      isCorrect: true
+      explanation: "Correct. Vertical scaling increases the capacity of instances within a Virtual Machine Scale Set."
+    - content: "Horizontal scaling."
+      isCorrect: false
+      explanation: "Incorrect. Horizontal scaling increases the number of instances within a Virtual Machine Scale Set."
+    - content: "Load balancing."
+      isCorrect: false
+      explanation: "Incorrect. Load balancing distributes traffic across instances in a Virtual Machine Scale Set. It doesn't alter the number or performance of instances within the Virtual Machine Scale Sets."
