@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.iot.azure-rtos-netx-duo-fundamentals.how-tcpip-works
-title: Introduction
+title: How TCP/IP works
 metadata:
-  title: How TCP/IP Works
+  title: How TCP/IP works
   description: Introduction to Azure RTOS NetX Duo.
   ms.date: 09/30/2022
   author: edlamie80
