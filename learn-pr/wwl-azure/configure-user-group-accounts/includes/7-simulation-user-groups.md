@@ -11,7 +11,7 @@ Your organization has these specific requirements:
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab01.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-01.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
