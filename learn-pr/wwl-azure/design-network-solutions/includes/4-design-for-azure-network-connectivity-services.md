@@ -140,7 +140,7 @@ When you have competing entries in a routing table, Azure selects the next hop b
 
 Common reasons for overriding Azure's default routing are:
 
-- Because you want traffic between subnets to flow through an NVA. To learn more about how to [configure route tables to force traffic through an NVA](/azure/virtual-network/tutorial-create-route-table-portal).
+- Because you want traffic between subnets to flow through a Network Virtual Appliance (NVA). To learn more about how to [configure route tables to force traffic through an NVA](/azure/virtual-network/tutorial-create-route-table-portal).
 
 - Because you want to force all internet-bound traffic through an NVA, or on-premises, through an Azure VPN gateway. Forcing internet traffic on-premises for inspection and logging is often referred to as forced tunneling. Learn more about how to configure [forced tunneling](/azure/vpn-gateway/vpn-gateway-forced-tunneling-rm?toc=/azure/virtual-network/toc.json).
 
