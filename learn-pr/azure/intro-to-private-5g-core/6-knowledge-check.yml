@@ -3,7 +3,7 @@ uid: learn.intro-to-private-5g-core.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Checks that you have grasped what is taught about Azure Private 5G Core."
+  description: "Checks that you've grasped what is taught about Azure Private 5G Core."
   ms.date: 10/10/2022
   author: michael-weizhong-shan
   ms.author: michaelshan
@@ -20,10 +20,10 @@ quiz:
       explanation: "Try again. Azure Private 5G Core doesn't provide artificial intelligence functionalities for IoT devices."
     - content: "Mobility and connectivity for disaster recovery operatives."
       isCorrect: true
-      explanation: "Correct. To recover from disaster and respond to possible emergencies, recovery operatives typically require local mobile network connectivity and fast local data processing, which are functionalities that Azure Private 5G Core provide."
+      explanation: "Correct. To recover from disaster and respond to possible emergencies, recovery operatives typically require local mobile network connectivity and fast local data processing. Azure Private 5G Core provides functionalities that satisfy these requirements."
     - content: "Virtual machine provisioning in private networks."
       isCorrect: false
-      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile networks but cannot use it to provision virtual machines in the network."
+      explanation: "Try again. Enterprises can use Azure Private 5G Core to deploy private mobile networks but can't use it to provision virtual machines in the network."
   - content: "Which of the following feature does Azure Private 5G Core provide?"
     choices:
     - content: "Docker-compatible containers to run business logic."

@@ -19,7 +19,7 @@ Azure Private 5G Core uses the following network functions when supporting 4G UE
 - Mobile Management Entity (MME)
 - MME-Proxy - The MME-Proxy works to allow 4G UEs to be served by 5G network functions.
 
-To support the 4G UEs, the 5G UDR operates as a Home Subscriber Store (HSS), and the 5G UPF operates as a System Architecture Evolution Gateway (SAEGW-U).
+To support 4G UEs, the 5G UDR operates as a Home Subscriber Store (HSS), and the 5G UPF operates as a System Architecture Evolution Gateway (SAEGW-U).
 
 ## Azure centralized service management
 
@@ -28,7 +28,7 @@ Azure Private 5G Core is available as a native Azure service, offering the same 
 You can use the Azure portal or Azure Resource Manager (ARM) APIs to perform tasks like:
 
 - Deploy and configure a packet core instance on your Azure Stack Edge device.
-- Provision SIM resources to authenticate devices in the network, while also supporting redundancy.
+- Provision SIM resources to authenticate devices in the network.
 - Employ Log Analytics and other observability services to view the health of your network and take corrective action through Azure.
 - Use Azure role-based access control (RBAC) to allow granular access to the private mobile network.
 - Access the large ecosystem of Microsoft independent software vendor (ISV) partners for applications and network functions.
