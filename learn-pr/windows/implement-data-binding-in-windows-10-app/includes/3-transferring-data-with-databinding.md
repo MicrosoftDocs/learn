@@ -245,7 +245,7 @@ In the previous lesson, we created a dedicated `Clock` class, that has been inst
 
 Luckily, `DataContext` is designed so that you can apply it to the entire XAML tree - or just a part of it. A key property of `DataContext` is that it is inherited throughout the XAML tree, but it can be overwritten at any point for a specific subtree.
 
-Let's see this in practice. Create a new class called `MainWindowDataContext`, and make sure it's constructor is public:
+Let's see this in practice. Create a new class called `MainWindowDataContext`, and make sure its constructor is public:
 
 ```cs
 namespace DatabindingSampleWPF

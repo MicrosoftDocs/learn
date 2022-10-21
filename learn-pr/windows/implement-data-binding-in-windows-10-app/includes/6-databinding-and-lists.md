@@ -118,7 +118,7 @@ If you run the app now, it shows the colors in a `ListBox`! But it's not too nic
 
 #### 6. Define a template for the items
 
-It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and it's name. Something like this:
+It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and its name. Something like this:
 
 ![Screenshot of template.](../media/colortemplate-plan.png)
 
@@ -329,7 +329,7 @@ If you run the app now, it shows the colors in a `ListBox`! But it's not too nic
 
 #### 6. Define a template for the items
 
-It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and it's name. Something like this:
+It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and its name. Something like this:
 
 ![Screenshot fo template.](../media/colortemplate-plan.png)
 

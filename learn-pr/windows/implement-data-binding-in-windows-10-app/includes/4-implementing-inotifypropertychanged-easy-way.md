@@ -379,7 +379,7 @@ To raise the `PropertyChanged` event, we've created a convenience function in th
 _timer.Tick += (sender, o) => RaisePropertyChanged(nameof(CurrentTime));
 ```
 
-The `Clock` class has already became simpler. But let's see what we can do with the more complex `MainWindowDataContext` class.
+The `Clock` class already became simpler. But let's see what we can do with the more complex `MainWindowDataContext` class.
 
 #### 6. Modify the `MainWindowDataContext` class to take advantage of `ObservableObject`
 

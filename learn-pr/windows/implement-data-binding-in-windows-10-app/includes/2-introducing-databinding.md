@@ -35,7 +35,7 @@ The `Text={x:Bind CurrentTime}` part is your first encounter with data binding. 
 
 *XamlCompiler error WMC1110: Invalid binding path 'CurrentTime' : Property 'CurrentTime' can't be found on type 'MainPage'*
 
-This indicates that the compiler is missing a `CurrentTime` property from the `MainPage`. Once we create that property, it's content should be displayed by the `TextBlock` in the top right-hand corner.
+This indicates that the compiler is missing a `CurrentTime` property from the `MainPage`. Once we create that property, its content should be displayed by the `TextBlock` in the top right-hand corner.
 
 > [!NOTE]
 > UWP also supports an older data binding method, which looks like this: `Text={Bind CurrentTime}`. This older method works somewhat differently than `{x:Bind}`. Most notably, it doesn't offer compile time errors if you have a typo. In this module, we focus exclusively on the new `{x:Bind}` way of binding, which does provide compile-time error checking. However, `{x:Bind}` is less mature than `{Bind}`, and receives new features, which is why we've chosen to go with the latest Windows version for creating the project.

@@ -10,11 +10,11 @@ Proper separation of logic and UI also enables you to write separate automated u
 
 Finally, in this module you've seen how you can take advantage of a base class to simplify the coding of data binding-friendly classes. This was the first step in applying the industry best practice of the **Model-View-ViewModel** (MVVM) architecture.
 
-The Model, in our small sample, is well exemplified by the `ColorDescriptor` class. The data stored about a real-world object or concept is, in this case, color.
+The model, in our small sample, is well exemplified by the `ColorDescriptor` class. The data stored about a real-world object or concept is, in this case, color.
 
-The View is our XAML code, **MainPage.xaml** (UWP) / **MainWindow.xaml** (WPF) and **ColorList.xaml**, along with their codebehind files, **MainPage.xaml.cs** (UWP) / **MainWindow.xaml** (WPF) and **ColorList.xaml.cs**.
+The view is our XAML code, **MainPage.xaml** (UWP) / **MainWindow.xaml** (WPF) and **ColorList.xaml**, along with their codebehind files, **MainPage.xaml.cs** (UWP) / **MainWindow.xaml** (WPF) and **ColorList.xaml.cs**.
 
-The ViewModel is the actual business logic driving the UI, making decisions (for example, whether a button should be enabled). In our UWP sample, the `MainPageLogic` and `ColorListLogic` classes are essentially ViewModel classes. In the WPF sample, the `MainWindowDataContext`, the `Clock`, and the `ColorListDataContext` classes are the ViewModels.
+The viewmodel is the actual business logic driving the UI, making decisions (for example, whether a button should be enabled). In our UWP sample, the `MainPageLogic` and `ColorListLogic` classes are essentially viewmodel classes. In the WPF sample, the `MainWindowDataContext`, the `Clock`, and the `ColorListDataContext` classes are the viewmodels.
 
 MVVM is the most widely used architecture pattern for UI frameworks that support data binding. There are many MVVM toolkits and frameworks available that can jumpstart your development in UWP and WPF, or even Windows App SDK and .NET MAUI. Some of the most popular are:
 
