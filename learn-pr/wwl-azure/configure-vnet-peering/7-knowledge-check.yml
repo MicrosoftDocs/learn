@@ -28,7 +28,7 @@ quiz:
     - content: "Peered"
       isCorrect: false
       explanation: "Incorrect. Peered isn't a virtual network status."
-  - content: "Which of the following allows peered virtual networks to share the gateway and get access to resources?"
+  - content: "Which allows peered virtual networks to share the gateway and get access to resources?"
     choices:
     - content: "Gateway transit"
       isCorrect: true
@@ -39,11 +39,11 @@ quiz:
     - content: "Transitivity"
       isCorrect: false
       explanation: "Incorrect. Transitivity refers to virtual networks communicating with the peers of their peers."
-  - content: "Which of the following best describes virtual network peering?"
+  - content: "Which best describes virtual network peering?"
     choices:
     - content: "Creating a virtual network disrupts other resources."
       isCorrect: false
-      explanation: "Incorrect. There is no downtime to resources in either virtual network."
+      explanation: "Incorrect. There's no downtime to resources in either virtual network."
     - content: "Traffic between the virtual networks is kept on the Microsoft backbone network."
       isCorrect: true
       explanation: "Correct. The Azure backbone handles traffic between virtual networks."
