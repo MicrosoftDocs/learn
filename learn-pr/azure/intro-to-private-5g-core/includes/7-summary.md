@@ -9,4 +9,4 @@ Enterprises that deploy a private mobile network with Azure Private 5G Core has 
 ## References
 
 - [Azure Private 5G Core documentation](/azure/private-5g-core/)
-- [Azure private 5G product information](https://azure.microsoft.com/en-us/products/private-5g-core/)
+- [Azure private 5G product information](https://azure.microsoft.com/products/private-5g-core/)
