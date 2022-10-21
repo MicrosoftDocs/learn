@@ -1,6 +1,6 @@
 ## Lab scenario
 
-Your organization is setting up a new Help Desk. You have been tasked to configure the appropriate user account permissions. The specific requirements are: 
+Your organization is setting up a new Help Desk. You've been tasked to configure the appropriate user account permissions. The specific requirements are: 
 
 + As the organization grows, ensure it will be easy to manage multiple subscriptions. 
 + Ensure the Help Desk members can create support requests. 
@@ -8,7 +8,7 @@ Your organization is setting up a new Help Desk. You have been tasked to configu
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab02a.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-02a.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
