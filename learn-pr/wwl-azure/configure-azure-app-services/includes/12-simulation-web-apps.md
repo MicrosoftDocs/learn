@@ -6,7 +6,7 @@ Your organization is migrating on-premises web apps to Azure. As the Azure Admin
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab09a.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-09a.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
