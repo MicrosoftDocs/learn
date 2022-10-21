@@ -10,7 +10,7 @@ By default, new VMs are locked down.
 
 Apps can make outgoing requests, but the only inbound traffic allowed is from the virtual network (for example, other resources on the same local network), and from Azure's Load Balancer (probe checks).
 
-There are two steps to adjusting the configuration to support FTP. When you create a new VM, you have an opportunity to open a few common ports (RDP, HTTP, HTTPS, and SSH). However, if you require other changes to the firewall, you will need to do them yourself.
+There are two steps to adjusting the configuration to support FTP. When you create a new VM, you have an opportunity to open a few common ports (RDP, HTTP, HTTPS, and SSH). However, if you require other changes to the firewall, you will need to make them yourself.
 
 The process for this involves two steps:
 
@@ -29,7 +29,7 @@ NSGs use *rules* to allow or deny traffic moving through the network. Each rule 
 
 ![An illustration showing the architecture of network security groups in two different subnets. In one subnet, there are two virtual machines, each with their own network interface rules. The subnet itself has a set of rules that applies to both the virtual machines.](../media/7-nsg-rules.png)
 
-Each security group has a set of default security rules to apply the default network rules described above. These default rules cannot be modified, but *can* be overridden.
+Each security group has a set of default security rules to apply the default network rules described above. These default rules can't be modified, but *can* be overridden.
 
 #### How Azure uses network rules
 
