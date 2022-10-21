@@ -6,7 +6,7 @@ Your organization has several multi-tier applications that aren't suitable for A
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab09c.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-09c.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
