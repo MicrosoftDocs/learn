@@ -77,7 +77,7 @@ Follow these steps to build a database:
 
 1. To resolve the error, select the link that includes the IP address. Then select **OK**. You'll see this message: **Successfully updated server firewall rules**.
 
-   :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Screenshot showing how to add a single I P address to an allowlist." lightbox="../media/2-whitelist-ip.png":::
+   :::image type="content" source="../media/2-allowlist-ip.png" alt-text="Screenshot showing how to add a single I P address to an allowlist." lightbox="../media/2-allowlist-ip.png":::
 
 1. Enter the credentials again and then select **Login**.
 

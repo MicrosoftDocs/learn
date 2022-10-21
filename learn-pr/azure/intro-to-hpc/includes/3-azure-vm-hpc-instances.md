@@ -1,47 +1,148 @@
-The 3D models used in your engineering organization require many calculations to render and use memory resources intensively. You find that standard virtual machines (VMs) render these models relatively slowly. These delays affect the productivity of your engineers, and you'd like to avoid them.
+There are four main components to the HPC system: Compute, Storage, Networking, and Visualization.
 
-For high-intensity tasks with specialized requirements, you might need to use specialized VMs. Here, you'll learn about VM tiers in Azure that support specialized, high-performance tasks.
+## Compute
 
-## H-series VMs
+High-performance computing resources are offered at nearly unlimited scale on Azure. You can use the different H-series, N-series and Cray for memory, graphic and managed applications.
 
-As the solution architect for the engineering organization, you've already seen how Azure Batch orchestrates hundreds and thousands of nodes working together in parallel. The emphasis is on the sheer number of VMs that can be orchestrated in parallel. This process means that work is achieved in a fraction of the time. Sometimes, though, you need especially powerful VMs with exceptional CPU, memory, and networking capabilities. In these cases, use Azure VM HPC Instances. HPC Instances is a series of Azure VMs expressly designed for challenging HPC scenarios.
+* __H-series virtual machines__ for memory-bound applications
+* __N-series virtual machines__ for graphic intensive and CUDA/OpenCL based applications
+* __Cray__ for a fully dedicated and customized supercomputer delivered as a managed service
 
-Azure *H-series* VMs are a family of the most powerful and fastest CPU-based VMs on Azure. These VMs are optimized for applications that require high CPU frequencies or large amounts of memory per core. The basic H-series is well suited to genomic research, seismic and reservoir simulation, financial risk modeling, and molecular modeling.
+![Diagram of Azure computing.](../media/6-azure-computing.png)
 
-The VMs feature the Intel Xeon E5-2667 v3 Haswell 3.2 GHz CPU with DDR4 memory. Configurations range from 8 cores and 56 GB at the lower end (the H8 SKU) to 16 cores and 224 GB at the higher end (the H16m SKU).
+## Storage
 
-You can use all of these HPC instances with Azure Batch. When you set up a Batch pool, you can specify that H-series VMs should be used.
+The highly secure cloud storage is available to customers at a massive scale and it allows HPC applications to use it efficiently customizing with either HPC Cache or Azure NetApp files or Cray ClusterSor.
 
-### HB-series VMs
+* Burst your HPC applications into Azure using data stored in on-premises NAS devices with __HPC Cache__
+* Access large amounts of I/O with a submillisecond latency with __Azure NetApp Files__, delivered as an Azure service natively within an Azure datacenter
+* For a high throughput storage solution, use __Cray ClusterSor__, a Lustre-based, bare-metal HPC storage solution that’s fully integrated with Azure
 
-*HB-series* VMs specifically target applications requiring extreme memory bandwidth, particularly fluid dynamics, explicit finite element analysis, and weather modeling. HB VMs have 60 AMD EPYC 7551 processor cores, with 4 GB of RAM per CPU core and 240 GB of memory overall. HB-series VMs provide more than 260 GB/sec of memory bandwidth. This bandwidth is 33 percent faster than x86 alternatives and 2.5 times faster than is standard for most current HPC customers.
+![Diagram of Azure storage.](../media/7-azure-storage.png)
 
-### HC-series VMs
+## Networking
 
-*HC-series* VMs are optimized for applications driven by dense computation, such as implicit finite element analysis, reservoir simulation, and computational chemistry. HC VMs have 44 Intel Xeon Platinum 8168 processor cores, with 8 GB of RAM per CPU core and 352 GB of memory overall. This CPU has 22 cores and 44 threads (when hyper-threading (HT) is enabled). HC-series VMs support Intel software tools such as the Intel Math Kernel Library, and feature an all-cores clock speed greater than 3 GHz for most workloads.
+Azure allows you to create private virtual networks in the cloud, which simplifies the network architecture and secures the connection between endpoints by disabling the data exposure to the public internet.
 
-## Remote Direct Memory Access
+* Establish private, secure tunnels for hybrid cloud connectivity using Azure ExpressRoute
+* Take advantage of Linux remote direct memory access (RDMA) with InfiniBand for message passing interface (MPI) workloads within your datacenter
 
-The H16r and H16mr SKUs of the H-series, and both the HB- and HC-series VMs, use a second, low-latency, high-throughput network interface. It's called Remote Direct Memory Access (RDMA). RDMA enables direct memory access between systems without the involvement of the operating system. On Azure, network connections over an InfiniBand network enable this high-speed access.
+![Diagram of Azure networking.](../media/8-azure-networking.png)
 
-Message Passing Interface (MPI) is a protocol for communication between computers as they run complex HPC tasks in parallel. To use it, your developers must use an implementation of the protocol, which is usually a library of routines in a .dll. RDMA can give a significant boost to the performance of MPI applications.
+## Visualization
 
-Ask your developers if they're using MPI. If the answer is yes, you should ensure that the VM tier and size you select supports the protocol. Otherwise, your nodes won't communicate at the highest possible speed.
+Run visualization workloads with HPC and Azure Virtual Machines that boost productivity, reduces costs, and has flexible deployments.
 
-## InfiniBand interconnects
+* Visualize simulation data and run streaming, gaming, encoding, and VDI scenarios on GPU-powered __Azure NV-series Virtual Machines (VMs)__
+* For the most extreme GPU-accelerated graphics applications, such as 3D CAD modeling, 3D rendering, and scientific visualization, use high-performance __NVv3-series VMs__  
+  * NVv3 VMs support premium storage and come with twice the system memory (RAM) as earlier NV VMs
 
-InfiniBand is a data interconnect hardware standard for HPC. It's often used to accelerate communications between components, both within a single server and between servers. It has been designed to support the highest speeds and the lowest latency for messages between CPUs, and between processors and storage components.
+![Diagram of Azure visualization.](../media/9-azure-visualization.png)
 
-Both HC- and HB-series VMs use a router offering 100 GB/sec Mellanox EDR InfiniBand interconnect in a non-blocking tree configuration to boost hardware performance.
+## Mapping Azure VM and Storage products to components in an HPC system
 
-## N-series VMs
+### Azure Compute Virtual Machine Solutions  
 
-Some HPC tasks are both compute-intensive and graphics-intensive. Suppose, for example, you're modeling the behavior of a wing in a wind tunnel, and you want to show a live visualization to help engineers understand that behavior. For these applications, consider using N-service VMs, which include single or multiple NVIDIA GPUs. 
+#### VMs with low latency (HPC SKUs)
 
-### NC-series VMs
+The H-series and N-series VMs that are RDMA capable and can communicate over the low latency and high bandwidth InfiniBand network. The RDMA capability over such an interconnect is critical to boost the scalability and performance of distributed-node HPC and AI workloads
 
-*NC-series* VMs use the NVIDIA Tesla K80 GPU card and Intel Xeon E5-2690 v3 processors. This series is the lowest cost of the N-series tiers, but VMs in this tier are capable of graphics-intensive applications. They also support NVIDIA's CUDA platform, so that you can use the GPUs to run compute instructions.
+#### VMs with accelerators
 
-### ND-series VMs
+|   **CPU**    |  **GP-GPU**    | **VISUAL**   |
+| :------------------- | :-------------------  | :------------------- |
+| __HB-series__ VMs are optimized for applications that are memory intensive, such as fluid dynamics, explicit finite element analysis, and weather modeling <br><br>__HC-series__ VMs are optimized for applications that are compute intensive, such as molecular dynamics, implicit finite element analysis, and computational chemistry <br><br><br>| __NC-series__ VMs are powered by the NVIDIA Tesla K80 card and the Intel Xeon E5-2690 v3 (Haswell) processor. Users can crunch through data faster by using CUDA for energy exploration applications, crash simulations, ray traced rendering, deep learning, and more. <br><br> __ND-series__ VMs are a new addition to the GPU family designed for AI, and deep learning workloads. It offers configuration with a secondary low-latency, high-throughput network through RDMA, and InfiniBand connectivity enables running of large-scale training jobs spanning many GPUs.| __NV-series__ VMs are made for desktop accelerated applications and virtual desktops where customers are able to visualize their data or simulations. Enables users to visualize their graphics intensive workflows on the NV instances to get a superior graphics capability and additionally run single precision workloads such as encoding and rendering.<br><br><br><br><br><br><br>|
 
-*ND-series* VMs are optimized for AI and deep learning workloads. They use the NVIDIA Tesla P40 GPU card and Intel Xeon E5-2690 v4 processors. They are fast at running single-precision floating point operations, which are used by AI frameworks including Microsoft Cognitive Toolkit, TensorFlow, and Caffe.
+### Azure Storage Solutions
+
+* __Azure Blob Storage__
+  * Allows massively scalable and secure object storage for cloud-native workloads, archives, data lakes, high-performance computing, and machine learning. It's scalable and optimized for data lakes with comprehensive data management.
+
+  * Key design includes features
+    * Serving images or documents directly to a browser.
+    * Storing files for distributed access.
+    * Streaming video and audio.
+    * Writing to log files.
+    * Storing data for backup and restore, disaster recovery, and archiving.
+    * Storing data for analysis by an on-premises or Azure-hosted service.
+
+* __Azure Netapp Files__
+  * Makes it easy for enterprise line-of-business and storage professionals to migrate and run complex, file-based applications with no code change. It's used as the underlying shared file-storage service in various scenarios such as, lift-shift migration of POSIX compliant Linux and Windows applications, SAP HANA, databases, and enterprise web applications.
+
+  * Key benefits include
+    * 99.99% availability, High-performance, Secure.  
+    * PaaS service – easy to use and manage.  
+    * Online scale up/down size and/or service levels.  
+    * Data protection using Cross-Region replication.  
+    * Advanced Enterprise Data Management features.
+
+* __Azure Files__
+  * Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol or Network File System (NFS) protocol
+    * Can be mounted concurrently by cloud or on-premises deployments.
+    * Azure Files SMB file shares are accessible from Windows, Linux, and macOS clients.
+    * Azure Files NFS file shares are accessible from Linux or macOS clients.
+    * Also, Azure Files SMB file shares can be cached on Windows Servers with Azure File Sync for fast access near where the data is being used.
+
+  * Useful for
+    * Replace or supplement on-premises file servers
+    * Lift and shift applications
+    * Simplify cloud development
+    * Containerization
+
+  * Key benefits include:
+    * Shared access
+    * Fully Managed
+    * Scripting and Tooling
+    * Resiliency
+    * Familiar Programmability
+
+* __Azure HPC Cache__
+  * Azure HPC Cache speeds access to your data for high-performance computing (HPC) tasks.
+    * By caching files in Azure, Azure HPC Cache brings the scalability of cloud computing to your existing workflow.
+    * Can be used even for workflows where your data is stored across WAN links, such as in your local datacenter network-attached storage (NAS) environment.
+
+  * When to use:
+    * Read-heavy file access workflow
+    * Data stored in NFS-accessible storage, Azure Blob, or both
+    * Compute farms of up to 75,000 CPU cores
+
+  * Key benefits include:
+    * Easy to launch and monitor from the Azure portal. Existing NFS storage or new Blob containers can become part of its aggregated namespace, which makes client access simple even if you change the back-end storage target.
+    * High performance with up to 8 GB/s throughput, reducing latency for cacheable workloads
+    * Scalable to meet changing compute demand
+    * Aggregated namespace bringing together multiple file sources
+
+* __VM-based file systems__
+  * Single VM NAS
+    * Cloud-based Network Attached Storage (NAS) helps you address storage needs in the cloud using the same constructs as an on-premises NAS system.
+    * Gives organizations storage that’s as performant as their on-premises NAS with the added ability to scale in the cloud—and all without having to make major changes to their existing application interfaces and processes.
+      * NAS is a centralized storage appliance that allows applications and services to access data from a centralized location in the network.
+      * Virtual NAS is the virtual appliance version of NAS systems that can run on virtualization platforms such as VMware, Hyper-V, etc.
+
+  * Key benefits include:  
+    * Network devices accessing Virtual NAS storage can continue to do so using the same protocols without any reconfiguration.
+    * Capacity management is also easier since any required storage can be allocated from the underlying virtualization layer.
+
+  * Multi-node parallel file systems
+    * Parallel file systems distribute block level storage across multiple networked storage nodes.
+    * File data is spread among these nodes, meaning file data is spread among multiple storage devices. It pools any individual storage I/O requests across multiple storage nodes that are accessible through a common namespace.
+    * Multiple storage devices and multiple paths to data are utilized to provide a high degree of parallelism, reducing bottlenecks imposed by accessing only a single node at a time.
+    * Parallel file systems are broken up into two main pieces:
+      * Metadata services - Store namespace metadata, such as filenames, directories, access permissions, and file layout. Based on the parallel file system, metadata services are provided as an integrated part of an overall storage node distribution or through a separate server cluster.
+      * Object storage - Object storage contains actual file data. Clients pull the location of files and directories from the metadata services, then access file storage directly.
+    * The advantages of distributed storage and superior I/O performance make parallel file systems preferable to NFS in most HPC scenarios, particularly when it comes to shared working storage space
+
+    ![Diagram of Azure object storage.](../media/10-azure-object-storage.png)
+
+* __Cray ClusterStor__
+  * The Cray ClusterStor in Azure storage system is a high capacity and high throughput storage solution to accelerate your HPC simulations.
+
+  * It's a bare metal appliance that is fully integrated in the Azure fabric and accessible by a large selection of other Azure services.
+
+  * Cray ClusterStor in Azure offers a Lustre-based, single-tenant, bare metal and fully managed HPC environment in Microsoft Azure.
+
+  * Key benefits include:
+    * Can be used with Cray XC and CS series supercomputers and also now supports data processing of HPC jobs executed on H-series virtual machines from Azure.  
+    * Can move your data within Azure from high-performance scratch, to warm Azure blob storage and cold archive storage.  
+    * Get access to high performance and capacity during simulation. Move post-simulation data to a redundant, less-expensive cloud storage solution, to either be easily distributed or made available for your next simulation.
+    * Enables more than three times the throughput in GB/sec per Lustre Object Storage Servers (OSS) than the currently available Lustre offer.
