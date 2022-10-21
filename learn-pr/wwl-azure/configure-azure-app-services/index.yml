@@ -12,13 +12,13 @@ title: Configure Azure App Services
 summary: You'll learn how to configure and monitor the Azure App Service including deployment slots.
 abstract: |
   After completing this module, you'll be able to:
-  - Identify features and usage cases for the Azure App Service.
-  - Create an App Service.
-  - Configure deployment settings, specifically deployment slots.
-  - Secure the App Service.
-  - Configure custom domain names.
-  - Backup the App Service.
-  - Configure Application Insights.
+  *   Identify features and usage cases for the Azure App Service.
+  *   Create an App Service.
+  *   Configure deployment settings, specifically deployment slots.
+  *   Secure the App Service.
+  *   Configure custom domain names.
+  *   Back up the App Service.
+  *   Configure Application Insights.
 prerequisites: |
   None
 iconUrl: /training/achievements/azure-app-services-configure.svg
