@@ -18049,6 +18049,41 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-kubernetes-service/9-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/configure-azure-kubernetes-service/10-summary-resources",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vnet-peering/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-vnet-peering/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vnet-peering/7-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/configure-vnet-peering/8-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-azure-cost-management-service-level-agreements/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-core-azure-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-core-solutions-management-tools-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-general-security-network-security-features/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-identity-governance-privacy-compliance-features/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
