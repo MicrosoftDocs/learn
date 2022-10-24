@@ -32,7 +32,7 @@ Git makes no technical distinction between the main branch and feature branches,
 
 ## Create a branch
 
-:::image type="content" source="../media/create-branch-8f64a7d3.png" alt-text="Create a branch.":::
+:::image type="content" source="../media/create-branch.png" alt-text="Create a branch.":::
 
 
 When you're working on a project, you're going to have many different features or ideas in progress at any given time – some of which are ready to go and others that aren't.
@@ -51,7 +51,7 @@ Your branch name should be descriptive (for example, refactor-authentication, us
 
 ## Add commits
 
-:::image type="content" source="../media/add-commits-061f8ae4.png" alt-text="Add commits.":::
+:::image type="content" source="../media/add-commits.png" alt-text="Add commits.":::
 
 
 Once your branch has been created, it's time to start making changes. Whenever you add, edit, or delete a file, you're making a commit and adding them to your branch.
@@ -70,7 +70,7 @@ By writing clear commit messages, you can make it easier for other people to fol
 
 ## Open a pull request
 
-:::image type="content" source="../media/open-pull-request-5c5ad0c7.png" alt-text="Open a Pull Request.":::
+:::image type="content" source="../media/open-pull-request.png" alt-text="Open a Pull Request.":::
 
 
 Pull Requests start discussion about your commits. Because they're tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.
@@ -85,13 +85,13 @@ Using the @mention system in your Pull Request message, you can ask for feedback
 
 Pull Requests help contribute to projects and for managing changes to shared repositories.
 
-If you're using a Fork &amp; Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider.
+If you're using a Fork & Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider.
 
 If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the main branch.
 
 ## Discuss and review your code
 
-:::image type="content" source="../media/discuss-review-your-code-f489fed4.png" alt-text="Discuss and review your code.":::
+:::image type="content" source="../media/discuss-review-your-code.png" alt-text="Discuss and review your code.":::
 
 
 Once a Pull Request has been opened, the person or team reviewing your changes may have questions or comments.
@@ -110,7 +110,7 @@ Pull Request comments are written in Markdown, so you can embed images and emoji
 
 ## Deploy
 
-:::image type="content" source="../media/deploy-branch-ee2cd423.png" alt-text="Deploy.":::
+:::image type="content" source="../media/deploy-branch.png" alt-text="Deploy.":::
 
 
 With Git, you can deploy from a branch for final testing in an environment before merging to main.
@@ -119,7 +119,7 @@ Once your pull request has been reviewed and the branch passes your tests, you c
 
 ## Merge
 
-:::image type="content" source="../media/merge-branch-640aa393.png" alt-text="Merge.":::
+:::image type="content" source="../media/merge-branch.png" alt-text="Merge.":::
 
 
 Now that your changes have been verified, it's time to merge your code into the main branch.
