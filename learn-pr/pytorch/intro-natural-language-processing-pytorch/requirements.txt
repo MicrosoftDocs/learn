@@ -1,0 +1,16 @@
+gensim==4.2.0 
+huggingface==0.0.1 
+matplotlib 
+nltk==3.5 
+numpy 
+opencv-python==4.5.1.48 
+Pillow 
+scikit-learn 
+scipy 
+torch==1.12.0 
+torchaudio==0.12.0 
+torchinfo==0.0.8 
+torchtext==0.13.0 
+torchdata==0.4.0 
+torchvision==0.13.0 
+transformers==4.3.3
