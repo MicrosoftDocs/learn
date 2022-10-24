@@ -11,10 +11,9 @@ Lastly, you learned how activity log alerts enable notifications when a named Az
 
 ## Learn more
 
-For more info about Azure Monitor, each of the alert types, and smart groups, see:
+For more info about Azure Monitor and each of the alert types, see:
 
 - [Azure Monitor](/azure/azure-monitor/platform/alerts-overview)
 - [Metric alerts](/azure/azure-monitor/alerts/alerts-types#metric-alerts)
 - [Log alerts](/azure/azure-monitor/alerts/alerts-types#log-alerts)
 - [Activity log alerts](/azure/azure-monitor/alerts/alerts-types#activity-log-alerts)
-- [Smart groups](/azure/azure-monitor/alerts/alerts-types#smart-detection-alerts)
