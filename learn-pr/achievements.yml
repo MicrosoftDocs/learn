@@ -1287,3 +1287,8 @@ achievements:
   title: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
   summary: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
   iconUrl: /training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
+- uid: learn.az-900-describe-general-security-network-security-features.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe general security and network security features'
+  summary: 'Microsoft Azure Fundamentals: Describe general security and network security features'
+  iconUrl: /training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
