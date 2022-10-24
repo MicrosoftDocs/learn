@@ -1272,3 +1272,28 @@ achievements:
   title: Migrate your relational data stored in SQL Server to Azure SQL Database
   summary: Migrate your relational data stored in SQL Server to Azure SQL Database
   iconUrl: /learn/achievements/migrate-sql-server-relational-data.svg
+- uid: learn.az-900-describe-azure-cost-management-service-level-agreements.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
+  summary: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
+  iconUrl: /training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
+- uid: learn.az-900-describe-core-azure-services.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe core Azure services'
+  summary: 'Microsoft Azure Fundamentals: Describe core Azure services'
+  iconUrl: /training/achievements/az-900-describe-core-azure-services.svg
+- uid: learn.az-900-describe-core-solutions-management-tools-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
+  summary: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
+  iconUrl: /training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
+- uid: learn.az-900-describe-general-security-network-security-features.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe general security and network security features'
+  summary: 'Microsoft Azure Fundamentals: Describe general security and network security features'
+  iconUrl: /training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
+- uid: learn.az-900-describe-identity-governance-privacy-compliance-features.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
+  summary: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
+  iconUrl: /training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg
