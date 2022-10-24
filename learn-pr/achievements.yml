@@ -1282,3 +1282,8 @@ achievements:
   title: 'Microsoft Azure Fundamentals: Describe core Azure services'
   summary: 'Microsoft Azure Fundamentals: Describe core Azure services'
   iconUrl: /training/achievements/az-900-describe-core-azure-services.svg
+- uid: learn.az-900-describe-core-solutions-management-tools-azure.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
+  summary: 'Microsoft Azure Fundamentals: Describe core solutions and management tools on Azure'
+  iconUrl: /training/achievements/azure-fundamentals-describe-core-solutions-and-management-tools-on-azure.svg
