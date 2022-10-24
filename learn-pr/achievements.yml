@@ -1277,3 +1277,8 @@ achievements:
   title: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
   summary: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
   iconUrl: /training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
+- uid: learn.az-900-describe-core-azure-services.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe core Azure services'
+  summary: 'Microsoft Azure Fundamentals: Describe core Azure services'
+  iconUrl: /training/achievements/az-900-describe-core-azure-services.svg
