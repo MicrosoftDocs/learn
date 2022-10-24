@@ -20,7 +20,7 @@ def load_dataset(ngrams=1,min_freq=1):
     counter = collections.Counter()
     for (label, line) in train_dataset:
         counter.update(torchtext.data.utils.ngrams_iterator(tokenizer(line),ngrams=ngrams))
-    vocab = torchtext.vocab.Vocab(counter, min_freq=min_freq)
+    vocab = torchtext.vocab.vocab(counter, min_freq=min_freq)
     return train_dataset,test_dataset,classes,vocab
 
 def encode(x,voc=None,unk=0,tokenizer=tokenizer):
