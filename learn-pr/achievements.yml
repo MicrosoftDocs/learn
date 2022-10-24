@@ -1272,3 +1272,8 @@ achievements:
   title: Migrate your relational data stored in SQL Server to Azure SQL Database
   summary: Migrate your relational data stored in SQL Server to Azure SQL Database
   iconUrl: /learn/achievements/migrate-sql-server-relational-data.svg
+- uid: learn.az-900-describe-azure-cost-management-service-level-agreements.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
+  summary: 'Microsoft Azure Fundamentals: Describe Microsoft Cost Management and service level agreements'
+  iconUrl: /training/achievements/review-microsoft-azure-pricing-slas-lifecycles.svg
