@@ -1292,3 +1292,8 @@ achievements:
   title: 'Microsoft Azure Fundamentals: Describe general security and network security features'
   summary: 'Microsoft Azure Fundamentals: Describe general security and network security features'
   iconUrl: /training/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
+- uid: learn.az-900-describe-identity-governance-privacy-compliance-features.trophy
+  type: trophy
+  title: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
+  summary: 'Microsoft Azure Fundamentals: Describe identity, governance, privacy, and compliance features'
+  iconUrl: /training/achievements/az-900-describe-identity-governance-privacy-compliance-features.svg
