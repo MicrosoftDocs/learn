@@ -8,7 +8,7 @@ Your organization has three datacenters connected with a mesh wide-area network.
 
 ## Architecture diagram
 
-:::image type="content" source="../media/lab05.png" alt-text="Architecture diagram as explained in the text.":::
+:::image type="content" source="../media/lab-05.png" alt-text="Architecture diagram as explained in the text.":::
 
 ## Objectives
 
