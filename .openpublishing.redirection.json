@@ -18079,6 +18079,11 @@
       "source_path": "learn-pr/paths/az-900-describe-general-security-network-security-features/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/az-900-describe-identity-governance-privacy-compliance-features/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
